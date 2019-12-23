@@ -4,7 +4,6 @@ const gulp = require('gulp');
 const {
     series
 } = require('gulp');
-const browserSync = require("browser-sync").create();
 const del = require('del');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
@@ -17,9 +16,9 @@ var paths = {
     dest: 'dist'
 };
 
-function reload(done) {
-    browserSync.reload();
-    done();
+function clean(cb) {
+    del('dist/**');
+    cb();
 }
 
 function compileSass() {
@@ -32,22 +31,8 @@ function compileSass() {
         }))
         .pipe(headerComment(`Generated on <%= moment().format() %>`))
         .pipe(gulp.dest(paths.dest))
-        .pipe(browserSync.stream())
     );
 }
 
-function watch() {
-    browserSync.init({
-        open: 'external',
-        proxy: 'atc-dev.outsystemsenterprise.com/StyleguideBo_UI',
-    });
-    gulp.watch(paths.src, series(clean, compileSass));
-}
-
-function clean(cb) {
-    del('dist/**');
-    cb();
-}
 
 exports.default = series(clean, compileSass);
-exports.watch = watch;
