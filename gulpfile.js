@@ -11,6 +11,7 @@ const sass = require('gulp-sass');
 const bump = require('gulp-bump');
 const headerComment = require('gulp-header-comment');
 const log = require('fancy-log');
+var git = require('gulp-git');
 var fs = require('fs');
 
 var paths = {
@@ -49,16 +50,23 @@ function bumpVersion() {
     )
 }
 
+function addFiles(cb) {
+    exec(`git add .`, cb);
+};
+
+function commitFiles(cb) {
+    exec(`git commit -am.`, cb);
+};
+
 function createTag(cb) {
     var pkg = JSON.parse(fs.readFileSync('./package.json'));
     exec(`git tag ${pkg.version}`, cb);
 };
 
-// function createTag() {
-// var pkg = JSON.parse(fs.readFileSync('./package.json'));
-// return gulp.src('./**/**').pipe(exec(`git tag ${pkg.version}`))
-//}
-
+function pushTag(cb) {
+    var pkg = JSON.parse(fs.readFileSync('./package.json'));
+    exec(`git push origin ${pkg.version}`, cb);
+};
 
 exports.default = series(clean, compileSass);
-exports.newtag = series(bumpVersion, compileSass, createTag);
+exports.newtag = series(bumpVersion, compileSass, addFiles, commitFiles, createTag, pushTag);
