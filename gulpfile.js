@@ -7,8 +7,8 @@ const {
 const del = require('del');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
+const bump = require('gulp-bump');
 const headerComment = require('gulp-header-comment');
-
 
 var paths = {
     modules: 'src/modules.scss',
@@ -29,10 +29,25 @@ function compileSass() {
         .pipe(rename({
             basename: 'styles'
         }))
-        .pipe(headerComment(`Generated on <%= moment().format() %>`))
+        .pipe(headerComment(`
+        Version: <%= pkg.version %>
+        Generated on <%= moment().format() %>
+        `))
         .pipe(gulp.dest(paths.dest))
     );
 }
 
+function bumpVersion() {
+    return (
+        gulp
+        .src('./package.json')
+        .pipe(bump({
+            type: 'patch',
+            key: 'version'
+        }))
+        .pipe(gulp.dest('./'))
+    )
+}
 
 exports.default = series(clean, compileSass);
+exports.bumpVersion = bumpVersion;
