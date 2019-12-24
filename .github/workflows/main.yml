@@ -1,0 +1,6 @@
+name: NEWTAG
+
+on:
+  push:
+    tags:
+    - '*'
