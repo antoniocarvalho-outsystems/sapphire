@@ -6,6 +6,7 @@ const {
 } = require('gulp');
 const del = require('del');
 const exec = require('child_process').exec;
+const gulpExec = require('gulp-exec');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const bump = require('gulp-bump');
