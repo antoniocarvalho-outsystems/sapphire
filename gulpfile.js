@@ -52,7 +52,7 @@ function bumpVersion() {
 function sendTag() {
     return (
         gulp.src('./**/**')
-        .pipe(exec('git push --tags'))
+        .pipe(exec(`git push origin ${pkg.version}`))
     )
 }
 
