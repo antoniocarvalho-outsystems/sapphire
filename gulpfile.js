@@ -6,14 +6,11 @@ const {
 } = require('gulp');
 const del = require('del');
 const exec = require('child_process').exec;
-const gulpExec = require('gulp-exec');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const bump = require('gulp-bump');
 const headerComment = require('gulp-header-comment');
-const log = require('fancy-log');
-var git = require('gulp-git');
-var fs = require('fs');
+const fs = require('fs');
 
 var paths = {
     imports: 'src/imports.scss',
