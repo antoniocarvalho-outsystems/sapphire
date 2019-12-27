@@ -252,7 +252,7 @@
 
 @font-face {
     font-family: 'globeregular';
-    src: url('fonts/glober_regular-webfont.woff') format('woff');
+    src: url('/V3_Pat/fonts/glober_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
