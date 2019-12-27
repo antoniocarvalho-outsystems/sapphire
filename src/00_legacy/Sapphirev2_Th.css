@@ -244,13 +244,16 @@
 
 */
 
+/*------------------------------------*\
+        $0. Fonts
+\*-------------------------------------*/
 
+/* Fonts > Import Font */
 
 /*
-
 @font-face {
     font-family: 'globeregular';
-    src: url('/V3_Pat/fonts/glober_regular-webfont.woff') format('woff');
+    src: url('fonts/glober_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -279,8 +282,8 @@
     font-weight: normal;
     font-style: normal;
 }
-
 */
+
 
 
 /*------------------------------------*\
@@ -4421,7 +4424,10 @@ td.RowWithAddAction a {
     border-top: 1px solid #dadbde;
 }
 
-
+.FA .TableRecords_Header,
+.AR .TableRecords_Header {
+    padding: 5px 10px 10px 0;
+}
 
 
 
@@ -6131,6 +6137,19 @@ body .triggerTimeBack {
 .FileUpload>div {
     transform: scale(-1, 1);
 }
+
+.FA .FileUpload_Button:before,
+.AR .FileUpload_Button:before {
+    left:-34px;
+}
+
+
+.FA .FileUpload_Button .Button,
+.AR .FileUpload_Button .Button {
+    text-align: left;
+}
+
+
 
 .ConsentFormContainer .FileUpload {
     padding: 0;
@@ -8779,6 +8798,10 @@ a.Button.twoLines > div {
     margin-right: 30px;
 }
 
+.FA .AvailabilityCardRightDate  div,
+.AR .AvailabilityCardRightDate  div{
+    text-align:left !important;
+}
 
 .AvailabilityCardLeftRed {
     background-color: #f3c7c8;
@@ -12657,6 +12680,11 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
     padding-left: 10px;
     padding-right: 0;
 }
+.FA .SectionExpandableInside .PlaceHolderActions>div:not(:first-child),
+.AR .SectionExpandableInside .PlaceHolderActions>div:not(:first-child) {
+    margin-left: auto;
+    margin-right:10px;
+}
 
 .SectionExpandableInside .PlaceHolderActions>div:not(:first-child) {
     margin-left: 10px;
@@ -12821,6 +12849,11 @@ input::-webkit-inner-spin-button {
 
 .SpinnerInput_Container .Plus:before {
     content: "\e698";
+}
+
+.FA .SpinnerInput_Container .SpinnerInput input.Mandatory,
+.AR .SpinnerInput_Container .SpinnerInput input.Mandatory {
+    border-right: none;
 }
 
 .tablet .SpinnerInput_Container .Plus,
@@ -13986,6 +14019,12 @@ input::-webkit-inner-spin-button {
 
 .BorderRight {
     border-right: 1px solid #d2d1d0;
+}
+
+.FA .BorderRight,
+.AR .BorderRight {
+    border-left: 1px solid #d2d1d0;
+    border-right: none;
 }
 
 .BorderTop {
@@ -28542,7 +28581,7 @@ a.Button.Small.Cancel:before {
 
 .SelectableList-ExpandControls div:nth-child(1) {
     text-align: right;
-    line-height: 32px;
+    line-height: 24px; /*32px*/
 }
 .FA .SelectableList-ExpandControls div:nth-child(1),
 .AR .SelectableList-ExpandControls div:nth-child(1) {
@@ -33440,6 +33479,14 @@ div.template-item{
     text-transform: none;
     top: 1px;
     speak: none;
+}
+
+.FA .DateInput_Container:after,
+.FA .DateTimeInput_Container:after,
+.AR .DateInput_Container:after,
+.AR .DateTimeInput_Container:after {
+    left:12px;
+    right: auto;
 }
 
 input[type].TextInput[readonly],

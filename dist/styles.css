@@ -1,10 +1,9 @@
 /**
- * Version 0.0.59
- * Generated on 2019-12-27T08:33:54+00:00
+ * Version 0.0.60
+ * Generated on 2019-12-27T09:01:04+00:00
  */
 
 @charset "UTF-8";
-@import url("//atc-dev.outsystemsenterprise.com/WebPatterns/Theme.Patterns_SilkUI.css");
 /*
 
     To override a style copy and paste it to
@@ -250,11 +249,14 @@
     $15 Templates Sapphire
 
 */
+/*------------------------------------*\
+        $0. Fonts
+\*-------------------------------------*/
+/* Fonts > Import Font */
 /*
-
 @font-face {
     font-family: 'globeregular';
-    src: url('/V3_Pat/fonts/glober_regular-webfont.woff') format('woff');
+    src: url('fonts/glober_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -283,7 +285,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 */
 /*------------------------------------*\
     $1. General Properties
@@ -3614,6 +3615,10 @@ td.RowWithAddAction a {
 .TableRecords > tbody > tr:first-child td {
   border-top: 1px solid #dadbde; }
 
+.FA .TableRecords_Header,
+.AR .TableRecords_Header {
+  padding: 5px 10px 10px 0; }
+
 .TableRecords.TableRecordsNotes tbody td {
   padding-left: 10px;
   padding-right: 10px;
@@ -4975,6 +4980,14 @@ body .triggerTimeBack {
 
 .FileUpload > div {
   transform: scale(-1, 1); }
+
+.FA .FileUpload_Button:before,
+.AR .FileUpload_Button:before {
+  left: -34px; }
+
+.FA .FileUpload_Button .Button,
+.AR .FileUpload_Button .Button {
+  text-align: left; }
 
 .ConsentFormContainer .FileUpload {
   padding: 0; }
@@ -7142,6 +7155,10 @@ a.Button.twoLines > div {
 .AR .ScheduleAction {
   margin-left: 0;
   margin-right: 30px; }
+
+.FA .AvailabilityCardRightDate div,
+.AR .AvailabilityCardRightDate div {
+  text-align: left !important; }
 
 .AvailabilityCardLeftRed {
   background-color: #f3c7c8;
@@ -10199,6 +10216,11 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
   padding-left: 10px;
   padding-right: 0; }
 
+.FA .SectionExpandableInside .PlaceHolderActions > div:not(:first-child),
+.AR .SectionExpandableInside .PlaceHolderActions > div:not(:first-child) {
+  margin-left: auto;
+  margin-right: 10px; }
+
 .SectionExpandableInside .PlaceHolderActions > div:not(:first-child) {
   margin-left: 10px; }
 
@@ -10324,6 +10346,10 @@ input::-webkit-inner-spin-button {
 
 .SpinnerInput_Container .Plus:before {
   content: "\e698"; }
+
+.FA .SpinnerInput_Container .SpinnerInput input.Mandatory,
+.AR .SpinnerInput_Container .SpinnerInput input.Mandatory {
+  border-right: none; }
 
 .tablet .SpinnerInput_Container .Plus,
 .tablet .SpinnerInput_Container .Plus:hover,
@@ -11235,6 +11261,11 @@ input::-webkit-inner-spin-button {
 
 .BorderRight {
   border-right: 1px solid #d2d1d0; }
+
+.FA .BorderRight,
+.AR .BorderRight {
+  border-left: 1px solid #d2d1d0;
+  border-right: none; }
 
 .BorderTop {
   border-top: 1px solid #d2d1d0; }
@@ -23140,7 +23171,8 @@ a.Button.Small.Cancel:before {
 
 .SelectableList-ExpandControls div:nth-child(1) {
   text-align: right;
-  line-height: 32px; }
+  line-height: 24px;
+  /*32px*/ }
 
 .FA .SelectableList-ExpandControls div:nth-child(1),
 .AR .SelectableList-ExpandControls div:nth-child(1) {
@@ -27081,6 +27113,13 @@ div.template-item{
   text-transform: none;
   top: 1px;
   speak: none; }
+
+.FA .DateInput_Container:after,
+.FA .DateTimeInput_Container:after,
+.AR .DateInput_Container:after,
+.AR .DateTimeInput_Container:after {
+  left: 12px;
+  right: auto; }
 
 input[type].TextInput[readonly],
 input[type].TextInput:read-only {
