@@ -1,6 +1,6 @@
 /**
- * Version 0.0.61
- * Generated on 2019-12-27T10:25:14+00:00
+ * Version 0.0.62
+ * Generated on 2019-12-27T10:36:09+00:00
  */
 
 @charset "UTF-8";
@@ -5460,7 +5460,8 @@ a .ListItem:after {
   border-radius: 4px; }
 
 .WizardStep {
-  font-weight: 400; }
+  font-weight: 400;
+  display: table-cell; }
 
 .WizardStep a,
 .WizardStep a:link,

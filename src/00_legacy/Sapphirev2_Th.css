@@ -6750,6 +6750,7 @@ a .ListItem:after {
 
 .WizardStep {
     font-weight: 400;
+    display: table-cell;
 }
 
 
