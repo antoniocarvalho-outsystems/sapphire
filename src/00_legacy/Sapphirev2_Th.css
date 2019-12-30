@@ -1,5 +1,8 @@
 /*
 
+    VIVO BENFICA!!!!
+
+
     To override a style copy and paste it to
     the application theme and then modify it
 
@@ -4164,7 +4167,6 @@ textarea[disabled="disabled"],
 textarea[readonly="readonly"],
 select[disabled="disabled"] {
     background-color: #f5f5f5;
-    background-image: url(/Sapphirev2_Th/img/dropdown_bg.png?301693&82460);
     background-position: right 14px center;
     background-repeat: no-repeat;
     border-radius: 2px;
@@ -6300,9 +6302,9 @@ body .triggerTimeBack {
     font-size: 14px;
 }
 
+
 .select2-container .select2-choice .select2-arrow b {
     background-color: #fff;
-    background-image: url(/Sapphirev2_Th/img/dropdown_bg.png?301693&82460);
     background-position: right 6px center;
     background-repeat: no-repeat;
     border: 0;
@@ -6314,6 +6316,7 @@ body .triggerTimeBack {
     top: 40%;
     width: 40px;
 }
+
 
 
 
@@ -11261,9 +11264,9 @@ a.Button.twoLines > div {
     right: auto;
 }
 
+
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
     background-color: #fff;
-    background-image: url(/Sapphirev2_Th/img/dropdown_bg.png?301693&82460);
     background-position: right 6px center;
     background-repeat: no-repeat;
     border: 0;
@@ -11276,13 +11279,13 @@ a.Button.twoLines > div {
     width: 40px;
 }
 
+
 .isTouch .select2-container--default .select2-selection--single .select2-selection__arrow b {
     height: 43px;
 }
 
 .AR .select2-container--default .select2-selection--single .select2-selection__arrow b,
 .FA .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    background-image: url('/Sapphirev2_Th/img/dropdown_bg_rtl.png?301693&82460&413216&413260');
     margin-left: -19px;
 }
 
@@ -19350,12 +19353,16 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
     pointer-events: visible;
     position: absolute;
     width: auto;
-    z-index: 10;
+    z-index: 80;
     min-width: 250px;
 }
 
-body.LayoutBase .tooltipster-base {
+body.LayoutBase .tooltipster-base--Default {
     z-index: 80;
+}
+
+body.LayoutBase .tooltipster-base.tooltipster-base--Content {
+    z-index: 10;
 }
 
 .tooltipster-base .tooltipster-content {
@@ -20432,7 +20439,6 @@ body.LayoutBase .tooltipster-base {
     border-radius: 2px;
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    background-image: url(/Sapphirev2_Th/img/dropdown_bg.png?301693&82460);
     background-position: right 14px center;
     background-repeat: no-repeat;
     border-radius: 2px;
@@ -20444,6 +20450,7 @@ body.LayoutBase .tooltipster-base {
     padding-right: 45px;
     line-height: 18px;
 }
+
 
 .isTouch .Dropdown:hover,
 .isTouch .Dropdown {
@@ -20471,7 +20478,6 @@ body.LayoutBase .tooltipster-base {
 
 .FA .Dropdown,
 .AR .Dropdown {
-    background-image: url(/Sapphirev2_Th/img/dropdown_bg_rtl.png?301693&82460);
     background-position: left 14px center;
     background-repeat: no-repeat;
     font-size: 15px;
@@ -24815,7 +24821,6 @@ span.select2-container.select2-container--default.select2-container--open {
 .ms-choice>div,
 .ms-choice>div.open {
     background-color: #fff;
-    background-image: url('img/dropdown_bg2.png?163653&57882&57882&57882&201883&202694&223072&223072&223072&224613&230290&231614');
     background-position: right 10px center;
     background-repeat: no-repeat;
     border-radius: 2px;
@@ -24828,7 +24833,6 @@ span.select2-container.select2-container--default.select2-container--open {
 
 .AR .ms-choice>div,
 .FA .ms-choice>div {
-    background-image: url('img/dropdown_bg_rtl.png?301693&82460&413216');
     left: 15px;
     padding-right: 30px;
     right: auto;
@@ -35190,6 +35194,13 @@ screen and (min-width: 1200px) {
 .ResizeIframeTooltip {
     width: fit-content;
 }
+
+
+.DisplayBlock,
+a.Button.DisplayBlock {
+    display: block;
+}
+
 
 
 
