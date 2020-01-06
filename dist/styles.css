@@ -1,6 +1,6 @@
 /**
  * Version 0.0.70
- * Generated on 2020-01-06T13:08:33+00:00
+ * Generated on 2020-01-06T13:32:58+00:00
  */
 
 @charset "UTF-8";
@@ -350,7 +350,7 @@ li {
 a,
 a:link,
 a:visited {
-  color: #16979F;
+  color: #0da2aa;
   text-decoration: none;
   font-family: 'globeregular';
   -webkit-transition: color 100ms ease;
