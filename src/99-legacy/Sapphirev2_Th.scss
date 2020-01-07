@@ -6828,7 +6828,7 @@ a .ListItem:after {
 /* 8.1 Usefull Classes > Text Classes *************************/
 /*------------------------------------------------------------*/
 
-.Heading1 {
+/* .Heading1 {
     color: #262525;
     font-family: "globerbold";
     font-size: 2em;
@@ -6866,7 +6866,7 @@ a .ListItem:after {
     font-size: 1.1em;
     font-weight: 400;
     line-height: 1.4;
-}
+} */
 
 .Label {
     border-radius: 10px;
@@ -23417,11 +23417,11 @@ body.confirmation-opened {
     cursor: pointer;
 }
 
-.LineDetailsExpandBox .ExpandableLinkWrapper:not(.Active)>.ExpandableLinkWrapper_content {
+.LineDetailsExpandBox .ExpandableLinkWrapper:not(.active)>.ExpandableLinkWrapper_content {
     display: none;
 }
 
-.LineDetailsExpandBox .ExpandableLinkWrapper.Active>.ExpandableLinkWrapper_content {
+.LineDetailsExpandBox .ExpandableLinkWrapper.active>.ExpandableLinkWrapper_content {
     display: block;
 }
 

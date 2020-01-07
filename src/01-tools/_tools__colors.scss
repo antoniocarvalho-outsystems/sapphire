@@ -1,8 +1,12 @@
-@function color($name, $opacity:1, $schema:$color-map) {
+@function color($name, $opacity:1, $schema:$sapphire__colors) {
   @if map-has-key($schema, $name) {
-    @return rgba(map-get($schema, $name),$opacity);
-  } @else {
+    @return rgba(map-get($schema, $name), $opacity);
+  }
+
+  @else {
     @warn "The value #{$name} is not in the map '$schema'";
     @return null;
   }
-};
+}
+
+;

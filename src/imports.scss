@@ -1,14 +1,17 @@
 @import '_config__project';
 
 @import '00-settings/_settings__colors';
+@import '00-settings/_settings__sizes';
 
 @import '01-tools/_tools__colors';
 
 @import '02-generic/_generic__fonts';
+@import '02-generic/_generic__reset';
 
 @import '03-elements/_elements__a';
 
 @import '05-components/_components__button';
+@import '05-components/_components__headings';
 
 @import '06-trumps/_trumps__bordercolor';
 @import '06-trumps/_trumps__borderwidth';

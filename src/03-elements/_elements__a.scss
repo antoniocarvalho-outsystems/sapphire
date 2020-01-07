@@ -3,7 +3,7 @@ a:link,
 a:visited {
     color: #16979F;
     text-decoration: none;
-    font-family: 'globeregular';
+    font-family: $sapphire__font--regular;
     -webkit-transition: color 100ms ease;
     transition: color 100ms ease;
 }
