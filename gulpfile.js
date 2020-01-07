@@ -25,7 +25,11 @@ function clean(cb) {
 function compileSass() {
     return (
         gulp.src(paths.imports)
-        .pipe(sass())
+        .pipe(sass({
+            outputStyle: 'nested',
+            sourceComments: true
+
+        }))
         .pipe(rename({
             basename: 'styles'
         }))
