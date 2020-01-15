@@ -1,0 +1,39 @@
+.onlyborder--top {
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.onlyborder--right {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.onlyborder--bottom {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.onlyborder--left {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.noborder--top {
+    border-top: none;
+}
+
+.noborder--right {
+    border-right: none;
+}
+
+.noborder--bottom {
+    border-bottom: none;
+}
+
+.noborder--left {
+    border-left: none;
+}

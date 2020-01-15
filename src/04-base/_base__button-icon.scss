@@ -72,7 +72,7 @@ a.Button.DiseasesInfectious:before,
 a.Button.Disposable:before,
 a.Button.Doctor:before,
 a.Button.DoctorNotes:before,
-a.Button.Documents:before, 
+a.Button.Documents:before,
 a.Button.Drag:before,
 a.Button.Drinker:before,
 a.Button.Drops:before,
@@ -86,7 +86,7 @@ a.Button.EmptyBed:before,
 a.Button.EndVisit:before,
 a.Button.EnglishToArabic:before,
 a.Button.Eraser:before,
-a.Button.Error:before, 
+a.Button.Error:before,
 a.Button.Evening:before,
 a.Button.ExpandArrow:before,
 a.Button.FamilyHistory:before,
@@ -282,11 +282,14 @@ a.Button.Warning:before {
     content: "\e60b";
 }
 
+
+
 a.Button.Administration:before {
     content: "\e606";
 }
+
 a.Button.Label:before {
-     content: "\e665";
+    content: "\e665";
 }
 
 a.Button.Check:before {
@@ -379,7 +382,7 @@ a.Button.AvailabilityWhite:before {
     content: "\e641"
 }
 
-a.Button.AddNoteWhite:before{ 
+a.Button.AddNoteWhite:before {
     content: "\e630"
 }
 
@@ -442,28 +445,6 @@ a.Button.End:before {
 a.Button.Pause:before {
     content: "\e635"
 }
-
-a.Button.Cancel {
-    color: #000;
-}
-
-a.Button.Cancel:before {
-    content: "\e60c";
-    color: #000;
-}
-
-a.Button.Second.Cancel,
-a.Button.Second.Cancel:before {
-    color:#fff;
-}
-
-
-a.Button.Second.Cancel:focus,
-a.Button.Second:hover.Cancel:before,
-a.Button.Second:focus.Cancel:before {
-    color:#333;
-}
-
 
 a.Button.Add:before {
     content: "\e604"
@@ -635,134 +616,172 @@ a.Button.DoctorUnit:before {
 a.Button.Success:before {
     content: "\e646";
 }
+
 a.Button.Accounting:before {
     content: "\e603";
 }
+
 a.Button.Admissions:before {
     content: "\e653";
 }
+
 a.Button.Allergies:before {
     content: "\e659";
 }
+
 a.Button.Ambulatory:before {
     content: "\e90e";
 }
+
 a.Button.Ampoule:before {
     content: "\e608";
 }
+
 a.Button.Appointment:before {
     content: "\e609";
 }
+
 a.Button.ArabicToEnglish:before {
     content: "\e601";
 }
+
 a.Button.Assessment:before {
     content: "\e679";
 }
+
 a.Button.AddPatient:before {
     content: "\e605";
 }
+
 a.Button.ArabicToEnglish:before {
     content: "\e601";
 }
+
 a.Button.AllUnits:before {
     content: "\e695";
 }
+
 a.Button.Attention:before {
     content: "\e939";
 }
+
 a.Button.Barcode:before {
     content: "\e672";
 }
+
 a.Button.Biometrics:before {
     content: "\e667";
 }
+
 a.Button.Blood:before {
     content: "\e685";
 }
- a.Button.BloodBag:before {
+
+a.Button.BloodBag:before {
     content: "\e943";
 }
+
 a.Button.BloodTransfusion:before {
     content: "\e90a";
 }
+
 a.Button.BloodTubes:before {
     content: "\e944";
 }
+
 a.Button.BloodType:before {
     content: "\e677";
 }
+
 a.Button.Bottle:before {
     content: "\e60a";
 }
+
 a.Button.CallNextTicket:before {
     content: "\e68c";
 }
+
 a.Button.Capsule:before {
     content: "\e60d";
 }
+
 a.Button.CashKD:before {
     content: "\e60e";
 }
+
 a.Button.Camera:before {
     content: "\e670";
 }
+
 a.Button.Campaign:before {
     content: "\e93e";
 }
+
 a.Button.ChangeDown:before {
     content: "\e610";
 }
+
 a.Button.ChangeLeft:before {
     content: "\e69c";
 }
+
 a.Button.ChangeRight:before {
     content: "\e69d";
 }
+
 a.Button.ChangeUp:before {
     content: "\e611";
 }
+
 a.Button.ChangeUpDown:before {
-   content: "\e612";
+    content: "\e612";
 }
+
 a.Button.Checklist:before {
     content: "\e66d";
 }
+
 a.Button.ChronicDiseases:before {
     content: "\e68e";
 }
+
 a.Button.Circle:before {
     content: "\e68a";
 }
+
 a.Button.CircleOpen:before {
     content: "\e92a";
 }
 
-a.Button.CircleQuestionMark{
-    position:relative;
+a.Button.CircleQuestionMark {
+    position: relative;
 }
+
 a.Button.CircleQuestionMark:before {
     content: "\e68a";
 }
+
 a.Button.CircleQuestionMark:after {
     content: "?";
     font-family: 'globeregular';
     position: absolute;
     left: 10%;
-    bottom:0%;
+    bottom: 0%;
     color: #fff;
 }
 
 a.Button.Clear:before {
     content: "\e604";
-     display: inline-block;
+    display: inline-block;
     -ms-transform: rotateZ(45deg);
     -webkit-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
 }
+
 a.Button.Collaboration:before {
     content: "\e613";
-}   
+}
+
 a.Button.CollapseArrow:before {
     content: "\e65f";
     display: inline-block;
@@ -772,460 +791,612 @@ a.Button.CollapseArrow:before {
     -o-transform: rotateX(180deg);
     transform: rotateX(180deg);
 }
+
 a.Button.Comment:before {
     content: "\e614";
 }
+
 a.Button.ConfigureMedicationLabel:before {
     content: "\e67f";
 }
+
 a.Button.ConfigWardDashboard:before {
     content: "\e91c";
 }
+
 a.Button.CreateFromThis:before {
     content: "\e615";
 }
+
 a.Button.CreditCard:before {
     content: "\e616";
 }
+
 a.Button.Dashed:before {
     content: "\e92b";
 }
+
 a.Button.Delete:before {
     content: "\e617";
 }
+
 a.Button.DiabetesChart:before {
     content: "\e909";
 }
+
 a.Button.Diagnosis:before {
     content: "\e661";
 }
+
 a.Button.Diet:before {
     content: "\e696";
 }
+
 a.Button.DiseasesInfectious:before {
     content: "\e658";
 }
+
 a.Button.Disposable:before {
     content: "\e619";
 }
+
 a.Button.Doctor:before {
     content: "\e61a";
 }
+
 a.Button.DoctorNotes:before {
     content: "\e61b";
 }
+
 a.Button.Documents:before {
     content: "\e61c";
 }
+
 a.Button.Drag:before {
     content: "\e919";
 }
+
 a.Button.Drinker:before {
     content: "\e662";
 }
+
 a.Button.Drops:before {
     content: "\e61d";
 }
+
 a.Button.Drugs:before {
     content: "\e660";
 }
+
 a.Button.EmergencyPrescription:before {
     content: "\e689";
 }
+
 a.Button.EmergencyTreatment:before {
     content: "\e688";
 }
+
 a.Button.EmptyBed:before {
     content: "\e61f";
 }
+
 a.Button.EndVisit:before {
     content: "\e621";
 }
+
 a.Button.EnglishToArabic:before {
     content: "\e602";
 }
+
 a.Button.Eraser:before {
     content: "\e924";
 }
+
 a.Button.Error:before {
     content: "\e622";
 }
+
 a.Button.Evening:before {
     content: "\e903";
 }
+
 a.Button.ExpandArrow:before {
     content: "\e65f";
 }
+
 a.Button.FastForward:before {
     content: "\e65f";
     transform: rotate(-90deg);
 }
+
 a.Button.FamilyHistory:before {
     content: "\e68d";
 }
+
 a.Button.FileTracking:before {
     content: "\e623";
 }
+
 a.Button.FindPatient:before {
     content: "\e64b";
 }
+
 a.Button.FlowSheet:before {
     content: "\e908";
 }
+
 a.Button.FluidBalance:before {
     content: "\e901";
 }
+
 a.Button.FollowUp:before {
     content: "\e684";
 }
+
 a.Button.FontBalance:before {
     content: "\e936";
 }
+
 a.Button.FontCareplan:before {
     content: "\e93c";
 }
+
 a.Button.FontDNR:before {
     content: "\e937";
 }
+
 a.Button.FontGoal:before {
     content: "\e93f";
 }
+
 a.Button.FontIntervention:before {
     content: "\e93a";
 }
+
 a.Button.FontPriority:before {
     content: "\e93d";
 }
+
 a.Button.FontProblem:before {
     content: "\e93b";
 }
+
 a.Button.Fontrefresh:before {
     content: "\e938";
 }
+
 a.Button.Forward:before {
     content: "\e912";
 }
+
 a.Button.Gel:before {
     content: "\e624";
 }
- a.Button.GetRide:before {
+
+a.Button.GetRide:before {
     content: "\e945";
 }
+
 a.Button.GeneralInfo:before {
     content: "\e625";
 }
+
 a.Button.Glass:before {
     content: "\e626";
 }
+
 a.Button.GroupOfActions:before {
     content: "\e627";
 }
+
 a.Button.HandleDrag:before {
     content: "\e656";
 }
+
 a.Button.Home:before {
     content: "\e629";
 }
+
 a.Button.Hours:before {
     content: "\e62a";
 }
+
 a.Button.IconTemp:before {
     content: "\e686";
 }
+
 a.Button.Image:before {
     content: "\e92d";
 }
+
 a.Button.Inbox:before {
     content: "\e671";
 }
+
 a.Button.Injection:before {
     content: "\e62b";
 }
+
 a.Button.Insurance:before {
     content: "\e923";
 }
+
 a.Button.LabExamination:before {
     content: "\e668";
 }
+
 a.Button.LastItemSeen:before {
     content: "\e600";
 }
+
 a.Button.Line:before {
     content: "\e92e";
 }
+
 a.Button.lines_thickness:before {
     content: "\e935";
 }
+
 a.Button.LocationPin:before {
     content: "\e941";
 }
+
 a.Button.Lock:before {
     content: "\e65b";
 }
+
 a.Button.Logout:before {
     content: "\e62d";
 }
+
 a.Button.Management:before {
     content: "\e62e";
 }
+
 a.Button.Maximize:before {
     content: "\e694";
 }
+
 a.Button.MedCommittee:before {
     content: "\e91a";
 }
+
 a.Button.MedicalEpisode:before {
     content: "\e67e";
 }
+
 a.Button.MedicalFile:before {
     content: "\e652";
 }
+
 a.Button.MedicationReconciliation:before {
     content: "\e680";
 }
+
 a.Button.MedicineAdministration:before {
     content: "\e66e";
 }
+
 a.Button.Message:before {
     content: "\e66f";
 }
+
 a.Button.Minimize:before {
     content: "\e693";
 }
+
 a.Button.Morning:before {
     content: "\e905";
 }
+
 a.Button.MoveDown:before {
     content: "\e914";
 }
+
 a.Button.MoveUp:before {
     content: "\e913";
 }
+
 a.Button.MyInfo:before {
     content: "\e673";
 }
+
 a.Button.Night:before {
     content: "\e904";
 }
+
 a.Button.Nobed:before {
     content: "\e940";
 }
- a.Button.NewBorn:before {
+
+a.Button.NewBorn:before {
     content: "\e946";
 }
+
 a.Button.Note:before {
     content: "\e630";
 }
+
 a.Button.Notification:before {
     content: "\e650";
 }
+
 a.Button.NursingCarePlan:before {
     content: "\e900";
 }
+
 a.Button.OccupiedBed:before {
     content: "\e631";
 }
+
 a.Button.OpenNewWindow:before {
     content: "\e90b";
 }
+
 a.Button.OrderSet:before {
     content: "\e683";
 }
+
 a.Button.OutOnPass:before {
     content: "\e632";
 }
+
 a.Button.PatientDiet:before {
     content: "\e696";
 }
+
 a.Button.PatientDirections:before {
     content: "\e634";
 }
+
 a.Button.Pencil:before {
     content: "\e925";
 }
+
 a.Button.PhysicalExam:before {
     content: "\e90c";
 }
+
 a.Button.Powder:before {
     content: "\e637";
 }
+
 a.Button.Pregnancy:before {
     content: "\e929";
 }
+
 a.Button.PreMedCommittee:before {
     content: "\e90d";
 }
+
 a.Button.PreMedCommitteeFollowUp:before {
     content: "\e91b";
 }
+
 a.Button.Preparation:before {
     content: "\e638";
 }
+
 a.Button.Print:before {
     content: "\e63a";
 }
+
 a.Button.Procedure:before {
     content: "\e63b";
 }
+
 a.Button.RecallTicket:before {
     content: "\e68b";
 }
+
 a.Button.ReferralLetter:before {
     content: "\e682";
 }
+
 a.Button.Remarks:before {
     content: "\e65d";
 }
+
 a.Button.Remove:before {
     content: "\e63c";
 }
+
 a.Button.Reopen:before {
     content: "\e678";
 }
+
 a.Button.Reports:before {
     content: "\e63d";
 }
+
 a.Button.ResetQueue:before {
     content: "\e687";
 }
+
 a.Button.ReturnStock:before {
     content: "\e910";
 }
+
 a.Button.Room:before {
     content: "\e63e";
 }
+
 a.Button.Sachet:before {
     content: "\e63f";
 }
+
 a.Button.SapphireLogo:before {
     content: "\e654";
 }
+
 a.Button.SapphireLogoVertical_v2:before {
     content: "\e666";
 }
+
 a.Button.SapphireSymbol:before {
     content: "\e655";
 }
+
 a.Button.Search:before {
     content: "\e690";
 }
+
 a.Button.Selection:before {
     content: "\e92f";
 }
+
 a.Button.Serum:before {
     content: "\e642";
 }
+
 a.Button.ShapesIcon:before {
     content: "\e932";
 }
+
 a.Button.Share:before {
     content: "\e902";
 }
+
 a.Button.Sickleave:before {
     content: "\e681";
 }
+
 a.Button.Similar:before {
     content: "\e664";
 }
+
 a.Button.Smartphone:before {
     content: "\e67b";
 }
+
 a.Button.Smoker:before {
     content: "\e65c";
 }
+
 a.Button.SocialServices:before {
     content: "\e643";
 }
+
 a.Button.SquareFillIcon:before {
     content: "\e933";
 }
+
 a.Button.SquareLineIcon:before {
     content: "\e934";
 }
+
 a.Button.Star:before {
     content: "\e691";
 }
+
 a.Button.StarFull:before {
     content: "\e697";
 }
+
 a.Button.StartVisit:before {
     content: "\e644";
 }
+
 a.Button.StatisticalData:before {
     content: "\e645";
 }
+
 a.Button.Suppository:before {
     content: "\e647";
 }
+
 a.Button.Surgery:before {
     content: "\e648";
 }
+
 a.Button.SurgeryManagement:before {
     content: "\e64f";
 }
+
 a.Button.SurgeryReport:before {
     content: "\e67d";
 }
+
 a.Button.Symptoms:before {
     content: "\e669";
 }
+
 a.Button.Tablet:before {
     content: "\e649";
 }
+
 a.Button.Tasks:before {
     content: "\e64a";
 }
+
 a.Button.Telephone:before {
     content: "\e67c";
 }
+
 a.Button.Text:before {
     content: "\e930";
 }
+
 a.Button.ToolbarArrowLeft:before {
     content: "\e906";
 }
+
 a.Button.ToolbarArrowRight:before {
     content: "\e907";
 }
+
 a.Button.TreatmentPlan:before {
     content: "\e674";
 }
+
 a.Button.Triage:before {
     content: "\e911";
 }
+
 a.Button.TrolleyEmpty:before {
     content: "\e917";
 }
+
 a.Button.TrolleyFull:before {
     content: "\e916";
 }
+
 a.Button.Unavailability:before {
     content: "\e663";
 }
+
 a.Button.Undo:before {
     content: "\e926";
 }
+
 a.Button.Unlock:before {
     content: "\e64c";
 }
+
 a.Button.Unmerge:before {
     content: "\e65e";
 }
+
 a.Button.Upload:before {
     content: "\e931";
 }
+
 a.Button.Validate:before {
     content: "\e64d";
 }
+
 a.Button.VitalSigns:before {
     content: "\e675";
 }
+
 a.Button.Wheelchair:before {
     content: "\e918";
 }
- a.Button.WristBand:before {
-      content: "\e947";
+
+a.Button.WristBand:before {
+    content: "\e947";
 }
+
 a.Button.XRay:before {
     content: "\e66a";
 }
@@ -1242,7 +1413,7 @@ a.Button.XRay:before {
 .AR a.Button.AssignFile:before,
 .AR a.Button.Attachment:before,
 .AR a.Button.AvailabilityWhite:before,
-.AR a.Button.accounting:before, 
+.AR a.Button.accounting:before,
 .AR a.Button.Allergies:before,
 .AR a.Button.Admissions:before,
 .AR a.Button.Ambulatory:before,
@@ -1305,7 +1476,7 @@ a.Button.XRay:before {
 .AR a.Button.Disposable:before,
 .AR a.Button.Doctor:before,
 .AR a.Button.DoctorNotes:before,
-.AR a.Button.Documents:before, 
+.AR a.Button.Documents:before,
 .AR a.Button.Drag:before,
 .AR a.Button.Drinker:before,
 .AR a.Button.Drops:before,
@@ -1318,7 +1489,7 @@ a.Button.XRay:before {
 .AR a.Button.EndVisit:before,
 .AR a.Button.EnglishToArabic:before,
 .AR a.Button.Eraser:before,
-.AR a.Button.Error:before, 
+.AR a.Button.Error:before,
 .AR a.Button.Evening:before,
 .AR a.Button.ExpandArrow:before,
 .AR a.Button.FamilyHistory:before,
@@ -1509,7 +1680,7 @@ a.Button.XRay:before {
 .FA a.Button.Label:before,
 .FA a.Button.Attachment:before,
 .FA a.Button.AvailabilityWhite:before,
-.FA a.Button.accounting:before, 
+.FA a.Button.accounting:before,
 .FA a.Button.Allergies:before,
 .FA a.Button.Admissions:before,
 .FA a.Button.Ambulatory:before,
@@ -1572,7 +1743,7 @@ a.Button.XRay:before {
 .FA a.Button.Disposable:before,
 .FA a.Button.Doctor:before,
 .FA a.Button.DoctorNotes:before,
-.FA a.Button.Documents:before, 
+.FA a.Button.Documents:before,
 .FA a.Button.Drag:before,
 .FA a.Button.Drinker:before,
 .FA a.Button.Drops:before,
@@ -1585,7 +1756,7 @@ a.Button.XRay:before {
 .FA a.Button.EndVisit:before,
 .FA a.Button.EnglishToArabic:before,
 .FA a.Button.Eraser:before,
-.FA a.Button.Error:before, 
+.FA a.Button.Error:before,
 .FA a.Button.Evening:before,
 .FA a.Button.ExpandArrow:before,
 .FA a.Button.FamilyHistory:before,
@@ -1773,53 +1944,4 @@ a.Button.XRay:before {
 .AR a.Button.Next:before {
     float: left;
     margin-right: 10px;
-}
-
-a.Button.Small.Cancel:hover,
-a.Button.Small.Cancel:active,
-a.Button.Small.Cancel:focus,
-a.Button.Small.Cancel {
-    font-size: 12px !important;
-}
-
-a.Button.Small.Cancel:before {
-    font-size: 12px !important;
-}
-
-
-
-
-
-.Button.Second.SearchMagnifier:hover,
-.Button.Second.SearchMagnifier:hover:active,
-.Button.Second.SearchMagnifier:focus,
-.Button.Second.SearchMagnifier:active,
-.Button.Second.SearchMagnifier{
-    min-width:auto;
-}
-.Button.Second.SearchMagnifier:after{
-    content: "\e690";
-    font-family: 'Sapphire-Icon-Font';    
-}
-
-.Page.isTouch  .Button.Second.SearchMagnifier:focus,
-.Page.isTouch  .Button.Second.SearchMagnifier:active,
-.Page.isTouch  .Button.Second.SearchMagnifier:hover:active,
-.Page.isTouch  .Button.Second.SearchMagnifier:hover,
-.Page.isTouch  .Button.Second.SearchMagnifier{
-    min-width: 50px;
-    font-weight: 400;
-}
-
-
-.Page.isTouch  .Button.Second.SearchMagnifier:after{
-    content: "\e690";
-    font-family: 'Sapphire-Icon-Font';    
-  
-}
-
-.isTouch  .ButtonSquare .icon-plus{
-    font-size: 2em;
-    width: 1.1em;
-    height: 1.1em;
 }

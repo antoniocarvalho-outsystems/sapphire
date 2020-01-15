@@ -1,0 +1,72 @@
+.ListBoard {
+    display: flex;
+}
+
+.ListBoard-properties,
+.ListBoard-columns {
+    flex: 1 1 auto;
+}
+
+.ListBoard-properties {
+    max-width: 200px;
+    min-width: 150px;
+}
+
+.ListBoard-columns {
+    overflow-y: scroll;
+}
+
+.ListBoard-columns::-webkit-scrollbar {
+    box-sizing: border-box;
+    height: 5px;
+}
+
+.ListBoard-columns::-webkit-scrollbar-track {
+    background: transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid white;
+    height: 1px;
+}
+
+.ListBoard-columns::-webkit-scrollbar-thumb {
+    background: #6FCDCA;
+    border-radius: 10px;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.ListBoard-columns>.ListRecords {
+    display: flex;
+}
+
+.ListBoard-columns>.ListRecords .ListRecords>div {
+    display: block;
+}
+
+.ListBoard-column {
+    flex: 1 1 0;
+    max-width: 170px;
+    min-width: 140px;
+}
+
+.ListBoard-column .ListBoard-item {
+    border-left: solid 1px #ccc;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ListBoard-item {
+    display: block;
+    white-space: nowrap;
+    font-size: 1rem;
+    line-height: 2rem;
+    height: 2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.FA .ListBoard-column .ListBoard-item,
+.AR .ListBoard-column .ListBoard-item {
+    border-right: solid 1px #ccc;
+    border-left: none;
+}

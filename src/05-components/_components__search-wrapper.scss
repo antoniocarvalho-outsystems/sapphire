@@ -1,0 +1,101 @@
+/* Search inside header */
+.Search_wrapper input[type="text"] {
+    background-color: #fff;
+    border-radius: 100px;
+    border: 1px solid #C9CDCE;
+    box-shadow: none;
+    font-weight: 700;
+    height: 36px;
+    padding-left: 40px;
+    padding-right: 15px;
+}
+
+.isTouch .Search_wrapper input[type="text"] {
+    height: 50px;
+    font-size: 18px;
+}
+
+.Search_wrapper input[type="text"]:focus {
+    box-sizing: border-box;
+    border-radius: 100px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px #16979F;
+    border: 1px solid #16979F;
+}
+
+.Search_wrapper input[type="text"]:hover {
+    box-sizing: border-box;
+    border: 1px solid #B1B5B6;
+    border-radius: 100px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.Search_wrapper input[type="text"]:active {
+    box-sizing: border-box;
+    border: 1px solid #16979F;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 #9DC6D0;
+}
+
+.Search_wrapper input[type="text"]:disabled,
+.Search_wrapper input[type="text"].disabled {
+    box-sizing: border-box;
+    border: 1px solid #C9CDCE;
+    border-radius: 100px;
+    background-color: #E9E9E9;
+}
+
+
+.Search_wrapper:after {
+    color: #16979f;
+    content: '\e690';
+    font-family: 'Sapphire-Icon-Font';
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    padding-right: 10px;
+    pointer-events: none;
+    position: absolute;
+    speak: none;
+    text-transform: none;
+    transform: rotateY(180deg);
+    z-index: 1;
+    -mox-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform: rotateY(180deg);
+    left: 10px;
+    top: 12px;
+}
+
+.isTouch .Search_wrapper:after {
+    top: 19px;
+}
+
+.Header .Search_wrapper input[type="text"] {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    color: #fff;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    width: 100px;
+}
+
+.Header .Search_wrapper input[type="text"]:focus {
+    border: 1px solid rgba(255, 255, 255, .3);
+    width: 200px;
+}
+
+.Header .Search_wrapper:after {
+    color: #cdcdcd;
+    left: 10px;
+    pointer-events: none;
+}
+
+.phone .Application_Menu .Others_Menu .Header_Search {
+    margin-left: 30px;
+    margin-right: 0;
+}

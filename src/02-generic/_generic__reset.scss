@@ -4,8 +4,8 @@ form,
 .Page {
     height: 100%;
     position: relative;
-    font-family: $sapphire__font--regular;
-    font-size: 12px;
+    font-family: $sapphire__font__face--regular;
+    font-size: $sapphire__font__size--regular;
 }
 
 body {
@@ -22,4 +22,30 @@ input {
     color: #333;
     font-weight: normal;
     line-height: 1.43;
+}
+
+html,
+body,
+div,
+span,
+a,
+select,
+form,
+fieldset,
+img,
+input,
+button,
+select,
+table,
+tbody,
+thead,
+tr,
+th,
+td,
+textarea,
+optgroup,
+option,
+ul,
+li {
+    outline: 0 !important;
 }

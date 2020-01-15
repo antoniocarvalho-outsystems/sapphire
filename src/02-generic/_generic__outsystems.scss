@@ -1,0 +1,30 @@
+.OSAutoMarginTop {
+    margin-top: 10px;
+}
+
+.OSInlineClear {
+    /* This style will never be used in runtime.
+    When applied in Service Studio, it will prevent the style 'OSInline' from being
+    automatically applied to divs and tables with widths != (fill parent) */
+}
+
+/* ExcludeFromPickers: ActionAdd, ActionChange, ActionDelete, ActionEdit, Actions, Application_Menu, Badge, 
+Breadcrumbs, BreadcrumbsContainer, Content, ControlActions, desktop, EditableTable, EditRecord, EditRecord_Buttons, 
+fa, Feedback_AjaxWait, Feedback_Message_Error, Feedback_Message_Info, Feedback_Message_Success, Feedback_Message_Warning, 
+Feedback_Message_Wrapper, Feedback_Message_Wrapper_Close, Filters_Wrapper, 
+Footer, Form, Header, Header__activity, Header__loginInfo, Header_buttonMenu, Header_search, 
+Header_title, Header_user, HeaderPage, ie, ie10, ie11, ie8, InEditMode, ListNavigation_CurrentPageNumber, 
+ListNavigation_DisabledNext, ListNavigation_DisabledPrevious, ListNavigation_Ellipsis, ListNavigation_Next, ListNavigation_PageNumber, 
+ListNavigation_Previous, Loader, Login__Form, Login__Logo, Login_Box, Login_Footer, Login_Text, LoginInfo, LoginInfo_username, MainContent, 
+MainPopup, Menu, Menu_DropDownArrow, Menu_DropDownButton, Menu_DropDownPanel, Menu_SubItemsPlaceholder, Menu_SubMenuItem, 
+Menu_SubMenuItemActive, Menu_TopMenu, Menu_TopMenuActive, Menu_TopMenus, menuOpen, MenuSlider_Toggler, mini, Not_Valid, OnEdit, open, 
+OSAutoMarginTop, OSInlineClear, Page, phone, portait, Responsive, RowControlGroup, RowWithAddAction, select2-choice, select2-container, 
+Selected, ShowRecord, SmartInput_Undo, TableRecords, TableRecords_EvenLine, TableRecords_Header, TableRecords_OddLine, tablet, 
+ThemeGrid_Container, ThemeGrid_MarginGutter, ThemeGrid_Width12, ThemeGrid_Wrapper, Title, Title_Section, 
+MultiPaddingLeft5, MultiPaddingLeft10, MultiPaddingLeft15, MultiPaddingLeft20, MultiPaddingLeft25, MultiPaddingLeft30, 
+MultiPaddingLeft40, MultiPaddingRight5, MultiPaddingRight10, MultiPaddingRight15, MultiPaddingRight20, MultiPadding25, 
+MultiPaddingRight30, MultiPaddingRight40, MultiPadding5, MultiPadding10, MultiPadding15, MultiPadding20, MultiPadding25, 
+MultiPadding30, MultiPadding40, MultiPaddingTop5, MultiPaddingTop10, MultiPaddingTop15, MultiPaddingTop20, MultiPadding25, 
+MultiPaddingBottom5, MultiPaddingBottom10, MultiPaddingBottom15, MultiPaddingBottom20, MultiPaddingBottom25, MarginBottom5, 
+MarginBottom10, MarginBottom20, MultiMarginLeft3, MultiMarginLeft5, MultiMarginLeft10, MultiMarginLeft15, MultiMarginLeft20, 
+MultiMarginRight5, MultiMarginRight10, MultiMarginRight15, MultiMarginRight20,DeviceFullWidth,DeviceMiddleWidth*/

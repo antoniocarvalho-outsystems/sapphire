@@ -1,0 +1,35 @@
+
+.showWires div[id$="wtActions"],
+.showWires div[id$="wtBody"],
+.showWires div[id$="wtCaption"],
+.showWires div[id$="wtComplementary"],
+.showWires div[id$="wtContainer"],
+.showWires div[id$="wtField"],
+.showWires div[id$="wtFooter"],
+.showWires div[id$="wtHeaderActions"],
+.showWires div[id$="wtHeaderAside"],
+.showWires div[id$="wtHeaderContent"],
+.showWires div[id$="wtIntro"],
+.showWires div[id$="wtSectionActions"],
+.showWires div[id$="wtSectionContent"],
+.showWires div[id$="wtSectionHeader"],
+.showWires div[id$="wtSubHeaderActions"],
+.showWires div[id$="wtSubHeaderContent"],
+.showWires div[id$="wtSubtitle"],
+.showWires div[id$="wtTitle"] {
+    background: #EAFAF1;
+    border: solid 1px #ABEBC6;
+}
+
+.showWires div[class*="ThemeGrid_Width"] {
+    border: solid 1px #f00;
+}
+
+.showWires .Columns .Column {
+    border: solid 1px #0f0;
+}
+
+.showWires .DateTimeRangePicker-placeholder {
+    line-height: normal;
+    height: auto;
+}

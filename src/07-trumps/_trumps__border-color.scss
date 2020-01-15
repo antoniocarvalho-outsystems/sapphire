@@ -1,0 +1,44 @@
+.bordercolor--lightgrey {
+    border-color: #f2f2f2;
+}
+
+.bordercolor--grey {
+    border-color: #d9d9d9;
+}
+
+.bordercolor--darkgrey {
+    border-color: #7C7F7F;
+}
+
+.bordercolor--black {
+    border-color: #333;
+}
+
+.bordercolor--red {
+    border-color: #d01a1a;
+}
+
+.bordercolor--darkred {
+    border-color: #b10000;
+}
+
+.bordercolor--orange {
+    border-color: #da6802;
+}
+
+.bordercolor--primary {
+    border-color: #11455D;
+}
+
+.bordercolor--secondary {
+    border-color: #16979F;
+}
+
+@each $color in $sapphire__colors {
+    $label: nth($color, 1);
+    $value: nth($color, 2);
+
+    .bordercolor--#{$label} {
+        border-color: #{$value} !important;
+    }
+}
