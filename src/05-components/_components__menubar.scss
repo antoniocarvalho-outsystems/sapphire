@@ -1,0 +1,330 @@
+.Menubar {
+    background-color: color(primary);
+    background-image: none;
+    font-weight: 700;
+    height: 50px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.Menubar_logo {
+    display: inline-block;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    color: color(white);
+    position: relative;
+    height: 100%;
+}
+
+.Menubar_logo .icon {
+    line-height: 50px;
+}
+
+.Menubar_logo:hover {
+    transition: all 0.2s ease-in;
+    /*text-shadow: 0px 0px 3px #8dbecc;*/
+    color: color(white);
+}
+
+.Menubar_logo:after {
+    content: "";
+    background: color(primary);
+    position: absolute;
+    right: 0;
+    height: 70%;
+    width: 1px;
+    bottom: 20%;
+}
+
+
+
+
+.Menubar_item {
+    display: inline-block;
+    width: calc(100% - 130px);
+}
+
+.Menubar_extraItem {
+    display: none;
+    color: color(secondary);
+    font-size: 20px;
+    height: 100%;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 55px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Menubar_extraItem.show {
+    display: inline-block;
+}
+
+.Menubar__extraItemIcon {
+    height: 48px;
+}
+
+.Menubar__extraContainer {}
+
+.MenuItem {
+    color: color(secondary);
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0 15px 0 10px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Menubar__extraContainer .MenuItem {
+    padding: 0;
+}
+
+.MenuItem.active,
+.MenuItem.activeIndicator {
+    background-color: color(primary);
+    color: color(white);
+}
+
+.MenuItem.active .MenuItem_icon a,
+.MenuItem.activeIndicator .MenuItem_icon a,
+.MenuItem.active .MenuItem_label a,
+.MenuItem.activeIndicator .MenuItem_label a {
+    color: color(white) !important;
+}
+
+
+
+.MenuItem.activeIndicator.shadow {
+    background-color: transparent;
+}
+
+.MenuItem:hover,
+.MenuItem.active:hover,
+.MenuItem:active:hover {
+    background-color: color(primary);
+    color: color(white);
+}
+
+.MenuItem:hover .MenuItem_icon a,
+.MenuItem:hover .MenuItem_label a {
+    color: color(white) !important;
+}
+
+
+.MenuItem_icon {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.MenuItem_label {
+    font-size: 14px;
+}
+
+.MenuItem_icon a,
+.MenuItem_label a {
+    color: color(secondary) !important;
+}
+
+
+.Menubar_extraItem:hover,
+.Menubar_extraItem.active:hover,
+.Menubar_extraItem:active:hover {
+    transition: all 0.2s ease-in;
+    /*text-shadow: 0px 0px 1px #66AFC1;*/
+    color: color(secondary);
+}
+
+.MenuItem_subItems {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    min-width: 206px;
+    overflow-y: auto;
+    background: color(primary);
+    // box-shadow: rgba(14, 64, 86, 0.2) 0 2px 2px;
+    // border-bottom-left-radius: 3px;
+    // border-bottom-right-radius: inherit fvdescsadcv 3px;
+    top: 48px;
+    max-height: 0;
+    transition: all .1s ease-out;
+    overflow: hidden;
+    line-height: normal;
+}
+
+.MenuItem_subItems.show {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+
+.Menubar__extraContainer .MenuItem_subItems.show {
+    top: 0;
+}
+
+
+
+.Menubar__extraContainer .MenuItem_label {
+    padding: 0 15px;
+}
+
+.Menubar__extraContainer .MenuItem_subItems {
+    padding: 0 15px;
+    padding: 0;
+}
+
+
+.MenuItem_subItems a,
+.MenuItem_subItems a:link {
+    background-color: color(primary);
+    border-bottom: 1px solid color(primary-light);
+    color: color(white) !important;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    height: auto;
+    line-height: 19px;
+    padding: 10px 15px;
+    position: relative;
+    transition: all .2s ease-in;
+    width: 100%;
+}
+
+.Menubar__extraContainer .MenuItem_subItems a {
+    padding: 0 30px;
+}
+
+
+.Menubar__extraContainer {
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    min-width: 206px;
+    max-height: 500px;
+    overflow-y: auto;
+    background: pink;
+    line-height: 40px;
+    // box-shadow: rgba(14, 64, 86, 0.2) 0 2px 2px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    top: 48px;
+    max-height: 0;
+    transition: max-height 0.4s ease-in;
+}
+
+.Menubar__extraContainer.show {
+    max-height: 500px;
+    transition: max-height 0.4s ease-in;
+}
+
+
+
+
+.Menubar__extraContainer:empty {
+    display: none;
+}
+
+.Menubar__extraContainer .MenuItem {
+    display: block;
+    text-align: left;
+    height: auto;
+}
+
+.Menubar__extraContainer .MenuItem_subItems {
+    position: relative;
+}
+
+.Menubar__extraContainer .MenuItem_icon {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.Menubar ::-webkit-scrollbar {
+    width: 12px;
+    border: 5px solid #fff;
+
+}
+
+.Menubar ::-webkit-scrollbar-thumb {
+    background-color: #194968;
+    background-clip: padding-box;
+    border: 1px solid #0a2d40;
+}
+
+.Menubar ::-webkit-scrollbar-track {
+    background-color: #0a2d40;
+}
+
+
+
+
+
+
+
+
+.MenuItem_subItems a:hover,
+.MenuItem_subItems a:link:hover {
+    background-color: color(primary) !important;
+    color: color(white) !important;
+}
+
+
+
+.AR .MenuItem_icon {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.AR .Menubar__extraContainer {
+    left: 0;
+    right: auto;
+}
+
+/******************* Service Studio CSS************************************/
+
+.MenuItem {
+    -servicestudio-width: 60px;
+}
+
+.Menubar {
+    -servicestudio-display: inline-block;
+    -servicestudio-position: relative;
+    -servicestudio-width: 100% !important;
+    -servicestudio-z-index: 0;
+}
+
+.Menubar span {
+    -servicestudio-display: inline-block;
+    -servicestudio-width: 50px;
+}
+
+.Menubar span span {
+    -servicestudio-display: inline-block;
+}
+
+.Menubar .ListRecords {
+    display: inline;
+    -servicestudio-display: none;
+    -servicestudio-position: relative;
+}
+
+.Menubar .ListRecords .MenuItem {
+    -servicestudio-position: relative;
+    -servicestudio-display: inline-block;
+}

@@ -3361,13 +3361,13 @@ input[type="number"] {
 
 input[type="email"]:focus,
 input[type="text"]:focus {
-    border: 1px solid #16979F;
-    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px #16979F;
+    border: 1px solid color(secondary);
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px color(secondary);
 }
 
 input[type="text"]:active {
     box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 #9DC6D0;
-    border: 1px solid #16979F;
+    border: 1px solid color(secondary);
 }
 
 input[type="text"]:hover {
@@ -3877,7 +3877,7 @@ td.RowWithAddAction a {
 }
 
 .TableRecords.TableRecordsNotes .TableRecords_Header {
-    color: #16979F;
+    color: color(secondary);
     line-height: 22px;
     font-size: 13px;
 }
@@ -3887,7 +3887,7 @@ td.RowWithAddAction a {
 }
 
 .TableRecords.TableRecordsNotes tbody tr:first-child td {
-    border-top: 1px solid #16979F;
+    border-top: 1px solid color(secondary);
 }
 
 .TableRecords.TableRecordsNotes tbody td:last-child {
@@ -4611,19 +4611,19 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
-    border-top: 1px solid #16979F;
+    border-top: 1px solid color(secondary);
 }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
-    border-bottom: 1px solid #16979F;
+    border-bottom: 1px solid color(secondary);
 }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:first-child {
-    border-left: 1px solid #16979F;
+    border-left: 1px solid color(secondary);
 }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:last-child {
-    border-right: 1px solid #16979F;
+    border-right: 1px solid color(secondary);
 }
 
 
@@ -5423,7 +5423,7 @@ body .triggerTimeBack {
 .FileUpload_Button:before {
     content: "\e604";
     font-family: 'Sapphire-Icon-Font';
-    color: #16979F;
+    color: color(secondary);
     font-size: 18px;
     line-height: 20px;
     position: relative;
@@ -7443,7 +7443,7 @@ a .ListItem:after {
 .CardBox.CardMedium.Selected,
 .CardBox.CardSmall.Selected {
     color: #fff;
-    background-color: #16979f;
+    background-color: color(secondary);
     border: 1px solid #00B4BF;
 }
 
@@ -8315,7 +8315,7 @@ a .ListItem:after {
 }
 
 .LineCardList.active {
-    border: 2px solid #16979f;
+    border: 2px solid color(secondary);
 }
 
 .LineCardList_checkbox {
@@ -8364,7 +8364,7 @@ a .ListItem:after {
 .LineCardList_checkbox label:after {
     font-family: Sapphire-Icon-Font;
     content: '\e68a';
-    color: #16979F;
+    color: color(secondary);
     position: absolute;
     top: -1px;
     left: 4px;
@@ -8388,7 +8388,7 @@ a .ListItem:after {
 }
 
 .LineCardList_checkbox input[type=checkbox]:checked~label {
-    border: 1px solid #16979F;
+    border: 1px solid color(secondary);
     background-color: #fff;
 }
 
@@ -9333,14 +9333,14 @@ a .ListItem:after {
 }
 
 .DateNavigatior.isSquare .CircledArrow .icon {
-    color: #16979F;
+    color: color(secondary);
 }
 
 .DateNavigatior.isSquare .DateNavigation_Date {
     width: auto;
     font-family: 'globeregular';
     font-weight: bold;
-    color: #16979F;
+    color: color(secondary);
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
@@ -10051,7 +10051,7 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
 /*-------------------------------------------------------------------------------*/
 
 .SectionExpandableCustom .SectionExpandable__icon {
-    color: #16979F;
+    color: color(secondary);
 }
 
 .SectionExpandableCustom .PlaceHolderTitle {
@@ -10158,7 +10158,7 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
 }
 
 .SectionExpandableInside .HeaderIcon span {
-    color: #16979F;
+    color: color(secondary);
     font-size: 12px;
     margin: 10px;
 }
@@ -10252,7 +10252,7 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
 }
 
 .SectionExpandableInside .PlaceHolderActions span {
-    color: #16979F;
+    color: color(secondary);
 }
 
 .SectionExpandableInside.expanded .HeaderIcon {
@@ -15968,8 +15968,8 @@ a.ButtonSquare.White>span.icon:hover,
 
 .CalendarDateTimeInput input[type="text"]:focus,
 .CalendarDateInput input[type="text"]:focus {
-    border: 1px solid #16979F;
-    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px #16979F;
+    border: 1px solid color(secondary);
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px color(secondary);
 }
 
 .CalendarDateTimeInput.Small input[type="text"],
@@ -16150,7 +16150,7 @@ a.ButtonSquare.White>span.icon:hover,
 
 .iconHorizontal_icon,
 .iconVertical_icon {
-    color: #16979f;
+    color: color(secondary);
     font-weight: 600;
 }
 
@@ -16183,7 +16183,7 @@ a.ButtonSquare.White>span.icon:hover,
 
 .iconVertical_label.LabelGreen,
 .iconHorizontal_label.LabelGreen {
-    color: #16979F;
+    color: color(secondary);
     font-weight: 600;
 }
 
@@ -16246,7 +16246,7 @@ a.ButtonSquare.White>span.icon:hover,
 
 .iconHorizontal_icon.AllGreenIcon .icon,
 .iconVertical_icon.AllGreenIcon .icon {
-    color: #16979f;
+    color: color(secondary);
 }
 
 .InvertIconLabel .iconHorizontal {
@@ -17127,7 +17127,7 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 
 .Dropdown:focus {
     box-sizing: border-box;
-    border: 1px solid #16979F;
+    border: 1px solid color(secondary);
     border-radius: 2px;
     box-shadow: 0 1px 2px 0 #7BB2BF;
 }
@@ -17822,7 +17822,7 @@ body.confirmation-opened {
 
 .MenuItemWrapper.Active .MenuItemWrapper_Container,
 .Toolbar.Fix .MenuItemWrapper.Active .MenuItemWrapper__Label {
-    color: #16979f;
+    color: color(secondary);
 }
 
 .Toolbar.Fix {
@@ -18060,7 +18060,7 @@ body.confirmation-opened {
 }
 
 .PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover .icon {
-    color: #16979f;
+    color: color(secondary);
 }
 
 .PatientHeaderActions__subMenu {
@@ -18725,7 +18725,7 @@ body.confirmation-opened {
 .LineTimeLine__showMore {
     background-color: #e6f3f5;
     border-bottom: 1px solid #d9d9d9;
-    color: #16979f;
+    color: color(secondary);
     font-size: 14px;
     font-weight: 600;
     line-height: 35px;
@@ -18961,7 +18961,7 @@ body.confirmation-opened {
 }
 
 .ExpandableInvestigations .fa-angle-down:before {
-    color: #16979f;
+    color: color(secondary);
     content: "\e65f";
     font-family: "Sapphire-Icon-Font";
     font-size: 7px;
@@ -19138,7 +19138,7 @@ body.confirmation-opened {
 }
 
 .ExpandableLinkWrapper__icon {
-    color: #16979f;
+    color: color(secondary);
 
 }
 
@@ -19526,7 +19526,7 @@ body.confirmation-opened {
     display: inline-block;
     width: auto;
     padding: 0 16px;
-    color: #16979F;
+    color: color(secondary);
     font-size: 12px;
     height: 100%;
     display: table-cell;
@@ -19621,7 +19621,7 @@ body.confirmation-opened {
 
 .ClinicianSecondarySummary .SectionExpandable .SectionExpandable_header .Heading2.SectionExpandable__icon {
     border: none;
-    color: #16979f;
+    color: color(secondary);
     font-size: 16px;
     line-height: 46px;
     padding-left: 0;
@@ -19667,7 +19667,7 @@ body.confirmation-opened {
 }
 
 .ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2 {
-    color: #16979f;
+    color: color(secondary);
     display: inline-block;
     float: left;
 }
@@ -20081,7 +20081,7 @@ body.confirmation-opened {
 
 .SelectListNoNotifyWrap___icon {
     width: auto;
-    color: #16979f;
+    color: color(secondary);
     font-size: 20px;
     line-height: 35px;
     transform: scale(-1, 1);
@@ -20625,7 +20625,7 @@ span.select2-container.select2-container--default.select2-container--open {
 }
 
 .select2-selection.select2-selection--multiple.SelectTagsDropDown:before {
-    color: #16979f;
+    color: color(secondary);
     content: "\e690";
     font-family: "Sapphire-Icon-Font";
     font-size: 16px;
@@ -21125,7 +21125,7 @@ span.select2-container.select2-container--default.select2-container--open {
 .WizardStep.Past a:link,
 .WizardParent_Container .WizardStep,
 .WizardParent_Container .WizardStep a {
-    color: #16979f;
+    color: color(secondary);
     font-size: 14px;
     font-weight: 600;
 }
@@ -21582,8 +21582,8 @@ span.select2-container.select2-container--default.select2-container--open {
 }
 
 .ms-drop input[type="checkbox"]:checked:before {
-    background-color: #16979f;
-    border-color: #16979f;
+    background-color: color(secondary);
+    border-color: color(secondary);
 }
 
 .ms-drop .ms-no-results {
@@ -21631,7 +21631,7 @@ span.select2-container.select2-container--default.select2-container--open {
 
 .Page .Text_sapphireBlue2,
 .mainBlue2-tx {
-    color: #16979F;
+    color: color(secondary);
 }
 
 .Page .Text_sapphireInactive,
@@ -21733,7 +21733,7 @@ span.select2-container.select2-container--default.select2-container--open {
 
 .Page .SapphireBlue2,
 .mainBlue2-bg {
-    background-color: #16979F;
+    background-color: color(secondary);
 }
 
 .Page .SapphireInactive,
@@ -22172,7 +22172,7 @@ div.ForwardAction {
 
 .ForwardContainer {
     background-color: white;
-    border: 2px solid #16979f;
+    border: 2px solid color(secondary);
     border-radius: 5px;
     display: table;
     height: 49px;
@@ -22231,7 +22231,7 @@ div.ForwardAction {
 
 .MultipleLocation {
     background-color: white;
-    border: 2px solid #16979f;
+    border: 2px solid color(secondary);
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
     left: -2px;
@@ -23692,9 +23692,9 @@ a.NoLink {
 .PopupTimeLine .Tabs__tab.active {
 
     border-top: 0;
-    color: #16979F;
+    color: color(secondary);
     font-weight: bold;
-    border-bottom: 5px solid #16979F;
+    border-bottom: 5px solid color(secondary);
     border-left: 0;
     border-right: 0;
     line-height: 34px;
@@ -25483,7 +25483,7 @@ html .AR.tablet .ThemeGrid_Width12 {
 
 .FA .ButtonGroup_button.Button:first-child,
 .AR .ButtonGroup_button.Button:first-child {
-    border-right: 1px solid #16979F;
+    border-right: 1px solid color(secondary);
     border-left: none;
 }
 
@@ -27832,12 +27832,12 @@ div.NoPrompt>span>div.template-item-input-block {
 /* START */
 input[type].SavedInput,
 textarea.SavedInput {
-    border-color: #16979f !important;
+    border-color: color(secondary) !important;
     border-width: 2px !important;
 }
 
 span.SavedFeedback {
-    background-color: #16979f;
+    background-color: color(secondary);
     color: white;
     font-size: 12px;
     font-weight: bold;
@@ -28564,7 +28564,7 @@ input[type].TextInput[readonly] {
 }
 
 .fontSelect2Availability {
-    color: #16979F;
+    color: color(secondary);
     font-size: 1em;
     text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     width: 49%;
@@ -28671,14 +28671,14 @@ div.List-Star {
 }
 
 div.List-Star.Selected {
-    color: #16979f;
+    color: color(secondary);
     padding: 16px;
     width: 100%;
 }
 
 div.List-Star:hover {
 
-    color: #16979f;
+    color: color(secondary);
 }
 
 div.List-Star.Selected:hover {
@@ -28856,7 +28856,7 @@ div.List-Star.Selected>div[unselected] {
 .PatientCardAction .iconHorizontal_label {
     font-size: 12px;
     font-family: 'globeregular';
-    color: #16979F;
+    color: color(secondary);
     font-weight: 600;
 }
 

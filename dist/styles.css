@@ -1,6 +1,6 @@
 /**
- * Version 0.0.72
- * Generated on 2020-01-15T16:14:25+00:00
+ * Version 0.0.73
+ * Generated on 2020-01-16T16:58:45+00:00
  */
 
 @charset "UTF-8";
@@ -1881,9 +1881,9 @@ a.Button {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  border: 1px solid red;
+  border: 1px solid #340034;
   border-radius: 2px;
-  background-color: red;
+  background-color: purple;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   height: 3rem;
   font-family: 'globerbold';
@@ -1926,8 +1926,8 @@ a.ButtonDefault:active,
 a.Button.Is_Default:active,
 input.Button:active,
 a.Button:active {
-  border: 1px solid red;
-  background-color: red;
+  border: 1px solid purple;
+  background-color: #cd00cd;
   text-decoration: none; }
 
 .Button.ButtonDefault:focus,
@@ -1937,9 +1937,9 @@ a.Button.Is_Default:focus,
 input.Button:focus,
 a.Button:focus,
 .desktop a.Button:focus {
-  border: 1px solid red;
-  background: linear-gradient(180deg, red 0%, red 100%);
-  box-shadow: inset 0 2px 0 0 red, 0 0 0 2px #FFFFFF, 0 0 1px 3px red;
+  border: 1px solid purple;
+  background: linear-gradient(180deg, #ff1aff 0%, #cd00cd 100%);
+  box-shadow: inset 0 2px 0 0 #ff1aff, 0 0 0 2px #FFFFFF, 0 0 1px 3px #ff1aff;
   text-decoration: none; }
 
 input.Button:active,
@@ -1953,8 +1953,8 @@ a.Button:hover:active,
 .desktop .Button.Is_Default:hover,
 .desktop .Button.ButtonDefault:hover:active,
 .desktop .Button.Is_Default:hover:active {
-  border: 1px solid red;
-  background: linear-gradient(180deg, red 0%, red 100%);
+  border: 1px solid purple;
+  background: linear-gradient(180deg, #ff1aff 0%, #cd00cd 100%);
   box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
   text-decoration: none; }
@@ -1986,8 +1986,8 @@ a.Button.Small:focus,
 /*******/
 input.Button.Second,
 a.Button.Second {
-  background: linear-gradient(180deg, brown 0%, brown 100%);
-  border: 1px solid brown;
+  background: linear-gradient(180deg, pink 0%, white 100%);
+  border: 1px solid #ff748c;
   border-radius: 2px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -2003,7 +2003,7 @@ a.Button.Second:focus {
   border: 1px solid #0A939C;
   border-radius: 2px;
   border-radius: 2px;
-  background: brown;
+  background: white;
   font-size: 14px;
   color: #fff;
   font-weight: bold;
@@ -2015,9 +2015,9 @@ a.Button.Second:hover,
 .desktop a.Button.Second:hover,
 a.Button.Second:hover:active,
 .desktop a.Button.Second:hover:active {
-  background: brown;
+  background: white;
   border-radius: 2px;
-  border: 1px solid brown;
+  border: 1px solid pink;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
   font-size: 14px;
@@ -2085,7 +2085,7 @@ a.Button.Cancel:active:hover,
 input.Button.Third:focus,
 a.Button.Third:focus,
 a.Button.Cancel:focus {
-  border: 2px solid brown;
+  border: 2px solid #ff274d;
   border-radius: 2px;
   background: #FFFFFF;
   box-shadow: 0 0 6px 0 #7BB2BF;
@@ -2208,7 +2208,7 @@ a.Button.Second.Small.Cancel:focus {
 
 .Button.Link,
 a.Button.Link {
-  color: brown;
+  color: #ff274d;
   font-size: 14px;
   font-weight: bold;
   background: transparent;
@@ -2226,7 +2226,7 @@ a.Button.Link:active,
 .Button.Link.active,
 .Button.Link:focus,
 a.Button.Link:focus {
-  color: brown;
+  color: #ff274d;
   font-size: 14px;
   font-weight: bold;
   background: transparent;
@@ -2293,8 +2293,8 @@ a.Button.Big:active,
   color: #fff; }
 
 a.Button.Big:hover {
-  border: 1px solid red;
-  background: linear-gradient(180deg, red 0%, red 100%);
+  border: 1px solid purple;
+  background: linear-gradient(180deg, #ff1aff 0%, #cd00cd 100%);
   box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   font-size: 30px;
   height: 50px;
@@ -2574,23 +2574,23 @@ a.ActionDelete {
 
 .ButtonCheckboxInp.active > .ButtonCheckboxInput_CheckBox ~ label:hover,
 .ButtonCheckboxInp.active > .ButtonCheckboxInput_CheckBox ~ label {
-  background-color: brown;
-  border: 1px solid brown;
+  background-color: pink;
+  border: 1px solid pink;
   border-radius: 5px;
   color: #fff; }
 
 .ButtonCheckboxInp > .ButtonCheckboxInput_CheckBox ~ label {
   background-color: #fff;
-  border: 1px solid brown;
+  border: 1px solid pink;
   border-radius: 5px;
-  color: brown;
+  color: pink;
   cursor: pointer;
   font-size: 14px;
   padding: 6px 10px 6px 35px; }
 
 .ButtonCheckboxInp > .ButtonCheckboxInput_CheckBox ~ label:hover {
   background-color: #e6f3f5;
-  color: brown; }
+  color: pink; }
 
 .ButtonCheckboxInp.disabled > .ButtonCheckboxInput_CheckBox:hover,
 .ButtonCheckboxInp.disabled > .ButtonCheckboxInput_CheckBox ~ label {
@@ -2607,11 +2607,11 @@ a.ActionDelete {
 
 .ButtonGroup_button.Button {
   background-color: #fff;
-  border-bottom: 1px solid brown;
-  border-left: 1px solid brown;
-  border-top: 1px solid brown;
+  border-bottom: 1px solid pink;
+  border-left: 1px solid pink;
+  border-top: 1px solid pink;
   box-shadow: none;
-  color: brown;
+  color: pink;
   display: inline-block;
   font-family: 'globeregular', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -2628,10 +2628,10 @@ a.ActionDelete {
   color: #fff; }
 
 .ButtonGroup_button * {
-  color: brown; }
+  color: pink; }
 
 .phone .ButtonGroup_button.Button {
-  border-right: 1px solid brown;
+  border-right: 1px solid pink;
   margin-bottom: 2px; }
 
 .phone .ButtonGroup_button,
@@ -2649,15 +2649,15 @@ a.ActionDelete {
   border-right: 1px solid #11455d; }
 
 .ButtonGroup_button.Button > span {
-  color: brown; }
+  color: pink; }
 
 .ButtonGroup_button.Button:first-child {
-  border-left: 1px solid brown;
+  border-left: 1px solid pink;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px; }
 
 .ButtonGroup_button.Button:last-child {
-  border-right: 1px solid brown;
+  border-right: 1px solid pink;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px; }
 
@@ -2665,8 +2665,8 @@ a.ActionDelete {
   border-radius: 4px 0 0 4px;
   background-color: #fff;
   /*box-shadow: 0 0 6px 0 #7BB2BF;*/
-  border: 2px solid brown;
-  color: brown;
+  border: 2px solid pink;
+  color: pink;
   line-height: 31px; }
 
 .desktop .ButtonGroup_button.Button.disabled,
@@ -2704,7 +2704,7 @@ a.ActionDelete {
 .desktop .ButtonGroup_button.active:hover,
 .ButtonGroup_button.Button.active:hover {
   background: none;
-  background-color: brown;
+  background-color: pink;
   box-shadow: inset 2px 1px 3px rgba(100, 100, 100, 0.4);
   color: #fff; }
 
@@ -2759,6 +2759,19 @@ a.ActionDelete {
 
 .ButtonGroupDark .ButtonGroup > label:first-child.active > * {
   color: #fff; }
+
+.ClinicalBadge {
+  border-radius: 4px;
+  color: #fff;
+  height: 50px;
+  padding: 3px 5px; }
+
+.ClinicalBadge.Transparent {
+  border: solid 1px #C9CDCE;
+  color: #ccc; }
+
+.ClinicalBadge-label {
+  min-height: 17px; }
 
 .FullScreenTabsDashboard .MultiFloatRight {
   float: right; }
@@ -3001,7 +3014,7 @@ a.ActionDelete {
 
 .iconHorizontal_icon,
 .iconVertical_icon {
-  color: brown;
+  color: pink;
   font-weight: 600; }
 
 .iconVertical_icon {
@@ -3025,7 +3038,7 @@ a.ActionDelete {
 
 .iconVertical_label.LabelGreen,
 .iconHorizontal_label.LabelGreen {
-  color: brown; }
+  color: pink; }
 
 .iconBorder {
   border-left: solid 1px #d8d8d8;
@@ -3079,7 +3092,7 @@ a.ActionDelete {
 
 .iconHorizontal_icon.AllGreenIcon .icon,
 .iconVertical_icon.AllGreenIcon .icon {
-  color: brown; }
+  color: pink; }
 
 .InvertIconLabel .iconHorizontal {
   transform: scale(-1, 1);
@@ -3170,7 +3183,7 @@ a.ActionDelete {
   border: 1px solid #d9d9d9; }
 
 .MainInteractiveCard.isEnabled {
-  border-color: brown;
+  border-color: pink;
   background-color: white;
   margin-top: -1px; }
 
@@ -3178,7 +3191,7 @@ a.ActionDelete {
   margin-top: -1px; }
 
 .MainInteractiveCard:before {
-  background: brown;
+  background: pink;
   content: '';
   height: 3px;
   left: 0;
@@ -3190,7 +3203,7 @@ a.ActionDelete {
 
 .MainInteractiveCard .MainInteractiveCard-gradient {
   background-position-y: top;
-  background: linear-gradient(180deg, brown 0%, white 100%);
+  background: linear-gradient(180deg, #ff748c 0%, white 100%);
   height: 50px;
   left: 0;
   opacity: 0;
@@ -3258,7 +3271,7 @@ a.ActionDelete {
   display: block;
   cursor: pointer;
   pointer-events: all;
-  color: brown; }
+  color: pink; }
 
 .MainInteractiveCard-header-selectable-trigger span.icon {
   font-size: 1.5em; }
@@ -3434,7 +3447,7 @@ a.ActionDelete {
   font-size: 1.2em; }
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline {
-  border-top: 1px solid brown;
+  border-top: 1px solid pink;
   padding-top: 16px; }
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline:first-child {
@@ -3509,6 +3522,252 @@ a.ActionDelete {
   display: inline-block;
   vertical-align: middle;
   margin: 0 8px; }
+
+.Menubar {
+  background-color: purple;
+  background-image: none;
+  font-weight: 700;
+  height: 50px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4; }
+
+.Menubar_logo {
+  display: inline-block;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  color: white;
+  position: relative;
+  height: 100%; }
+
+.Menubar_logo .icon {
+  line-height: 50px; }
+
+.Menubar_logo:hover {
+  transition: all 0.2s ease-in;
+  /*text-shadow: 0px 0px 3px #8dbecc;*/
+  color: white; }
+
+.Menubar_logo:after {
+  content: "";
+  background: purple;
+  position: absolute;
+  right: 0;
+  height: 70%;
+  width: 1px;
+  bottom: 20%; }
+
+.Menubar_item {
+  display: inline-block;
+  width: calc(100% - 130px); }
+
+.Menubar_extraItem {
+  display: none;
+  color: pink;
+  font-size: 20px;
+  height: 100%;
+  padding: 0 10px;
+  text-align: center;
+  line-height: 55px;
+  cursor: pointer;
+  position: relative; }
+
+.Menubar_extraItem.show {
+  display: inline-block; }
+
+.Menubar__extraItemIcon {
+  height: 48px; }
+
+.MenuItem {
+  color: pink;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0 15px 0 10px;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  position: relative; }
+
+.Menubar__extraContainer .MenuItem {
+  padding: 0; }
+
+.MenuItem.active,
+.MenuItem.activeIndicator {
+  background-color: purple;
+  color: white; }
+
+.MenuItem.active .MenuItem_icon a,
+.MenuItem.activeIndicator .MenuItem_icon a,
+.MenuItem.active .MenuItem_label a,
+.MenuItem.activeIndicator .MenuItem_label a {
+  color: white !important; }
+
+.MenuItem.activeIndicator.shadow {
+  background-color: transparent; }
+
+.MenuItem:hover,
+.MenuItem.active:hover,
+.MenuItem:active:hover {
+  background-color: purple;
+  color: white; }
+
+.MenuItem:hover .MenuItem_icon a,
+.MenuItem:hover .MenuItem_label a {
+  color: white !important; }
+
+.MenuItem_icon {
+  margin-right: 5px;
+  font-size: 16px; }
+
+.MenuItem_label {
+  font-size: 14px; }
+
+.MenuItem_icon a,
+.MenuItem_label a {
+  color: pink !important; }
+
+.Menubar_extraItem:hover,
+.Menubar_extraItem.active:hover,
+.Menubar_extraItem:active:hover {
+  transition: all 0.2s ease-in;
+  /*text-shadow: 0px 0px 1px #66AFC1;*/
+  color: pink; }
+
+.MenuItem_subItems {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 4;
+  min-width: 206px;
+  overflow-y: auto;
+  background: purple;
+  top: 48px;
+  max-height: 0;
+  transition: all .1s ease-out;
+  overflow: hidden;
+  line-height: normal; }
+
+.MenuItem_subItems.show {
+  max-height: 500px;
+  overflow-y: auto; }
+
+.Menubar__extraContainer .MenuItem_subItems.show {
+  top: 0; }
+
+.Menubar__extraContainer .MenuItem_label {
+  padding: 0 15px; }
+
+.Menubar__extraContainer .MenuItem_subItems {
+  padding: 0 15px;
+  padding: 0; }
+
+.MenuItem_subItems a,
+.MenuItem_subItems a:link {
+  background-color: purple;
+  border-bottom: 1px solid #cd00cd;
+  color: white !important;
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  height: auto;
+  line-height: 19px;
+  padding: 10px 15px;
+  position: relative;
+  transition: all .2s ease-in;
+  width: 100%; }
+
+.Menubar__extraContainer .MenuItem_subItems a {
+  padding: 0 30px; }
+
+.Menubar__extraContainer {
+  position: absolute;
+  right: 0;
+  z-index: 4;
+  min-width: 206px;
+  max-height: 500px;
+  overflow-y: auto;
+  background: pink;
+  line-height: 40px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  top: 48px;
+  max-height: 0;
+  transition: max-height 0.4s ease-in; }
+
+.Menubar__extraContainer.show {
+  max-height: 500px;
+  transition: max-height 0.4s ease-in; }
+
+.Menubar__extraContainer:empty {
+  display: none; }
+
+.Menubar__extraContainer .MenuItem {
+  display: block;
+  text-align: left;
+  height: auto; }
+
+.Menubar__extraContainer .MenuItem_subItems {
+  position: relative; }
+
+.Menubar__extraContainer .MenuItem_icon {
+  display: none; }
+
+.Menubar ::-webkit-scrollbar {
+  width: 12px;
+  border: 5px solid #fff; }
+
+.Menubar ::-webkit-scrollbar-thumb {
+  background-color: #194968;
+  background-clip: padding-box;
+  border: 1px solid #0a2d40; }
+
+.Menubar ::-webkit-scrollbar-track {
+  background-color: #0a2d40; }
+
+.MenuItem_subItems a:hover,
+.MenuItem_subItems a:link:hover {
+  background-color: purple !important;
+  color: white !important; }
+
+.AR .MenuItem_icon {
+  margin-left: 5px;
+  margin-right: 0; }
+
+.AR .Menubar__extraContainer {
+  left: 0;
+  right: auto; }
+
+/******************* Service Studio CSS************************************/
+.MenuItem {
+  -servicestudio-width: 60px; }
+
+.Menubar {
+  -servicestudio-display: inline-block;
+  -servicestudio-position: relative;
+  -servicestudio-width: 100% !important;
+  -servicestudio-z-index: 0; }
+
+.Menubar span {
+  -servicestudio-display: inline-block;
+  -servicestudio-width: 50px; }
+
+.Menubar span span {
+  -servicestudio-display: inline-block; }
+
+.Menubar .ListRecords {
+  display: inline;
+  -servicestudio-display: none;
+  -servicestudio-position: relative; }
+
+.Menubar .ListRecords .MenuItem {
+  -servicestudio-position: relative;
+  -servicestudio-display: inline-block; }
 
 body.PanelById.PanelOpened {
   overflow: hidden;
@@ -5542,34 +5801,34 @@ a.Button.DisplayBlock {
   border-color: #d01a1a !important; }
 
 .bordercolor--primary-darker {
-  border-color: red !important; }
+  border-color: black !important; }
 
 .bordercolor--primary-dark {
-  border-color: red !important; }
+  border-color: #340034 !important; }
 
 .bordercolor--primary {
-  border-color: red !important; }
+  border-color: purple !important; }
 
 .bordercolor--primary-light {
-  border-color: red !important; }
+  border-color: #cd00cd !important; }
 
 .bordercolor--primary-lighter {
-  border-color: red !important; }
+  border-color: #ff1aff !important; }
 
 .bordercolor--secondary-darker {
-  border-color: brown !important; }
+  border-color: #ff274d !important; }
 
 .bordercolor--secondary-dark {
-  border-color: brown !important; }
+  border-color: #ff748c !important; }
 
 .bordercolor--secondary {
-  border-color: brown !important; }
+  border-color: pink !important; }
 
 .bordercolor--secondary-light {
-  border-color: brown !important; }
+  border-color: white !important; }
 
 .bordercolor--secondary-lighter {
-  border-color: brown !important; }
+  border-color: white !important; }
 
 .bordercolor--white {
   border-color: #fff !important; }
@@ -8475,12 +8734,12 @@ input[type="number"] {
 
 input[type="email"]:focus,
 input[type="text"]:focus {
-  border: 1px solid #16979F;
-  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px #16979F; }
+  border: 1px solid pink;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px pink; }
 
 input[type="text"]:active {
   box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 #9DC6D0;
-  border: 1px solid #16979F; }
+  border: 1px solid pink; }
 
 input[type="text"]:hover {
   border: 1px solid #B1B5B6;
@@ -8904,7 +9163,7 @@ td.RowWithAddAction a {
   border-bottom: 1px solid #ebebeb; }
 
 .TableRecords.TableRecordsNotes .TableRecords_Header {
-  color: #16979F;
+  color: pink;
   line-height: 22px;
   font-size: 13px; }
 
@@ -8912,7 +9171,7 @@ td.RowWithAddAction a {
   border-left: none; }
 
 .TableRecords.TableRecordsNotes tbody tr:first-child td {
-  border-top: 1px solid #16979F; }
+  border-top: 1px solid pink; }
 
 .TableRecords.TableRecordsNotes tbody td:last-child {
   border-right: none; }
@@ -9473,16 +9732,16 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   border-right: 1px solid #B1B5B6; }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
-  border-top: 1px solid #16979F; }
+  border-top: 1px solid pink; }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
-  border-bottom: 1px solid #16979F; }
+  border-bottom: 1px solid pink; }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:first-child {
-  border-left: 1px solid #16979F; }
+  border-left: 1px solid pink; }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:last-child {
-  border-right: 1px solid #16979F; }
+  border-right: 1px solid pink; }
 
 .TableRecords_Wrapper.NoResponsive .TableRecords_Header {
   background-color: transparent;
@@ -10134,7 +10393,7 @@ body .triggerTimeBack {
 .FileUpload_Button:before {
   content: "\e604";
   font-family: 'Sapphire-Icon-Font';
-  color: #16979F;
+  color: pink;
   font-size: 18px;
   line-height: 20px;
   position: relative;
@@ -11738,7 +11997,7 @@ a .ListItem:after {
 .CardBox.CardMedium.Selected,
 .CardBox.CardSmall.Selected {
   color: #fff;
-  background-color: #16979f;
+  background-color: pink;
   border: 1px solid #00B4BF; }
 
 .CardBox.Selected,
@@ -12429,7 +12688,7 @@ a .ListItem:after {
   cursor: pointer; }
 
 .LineCardList.active {
-  border: 2px solid #16979f; }
+  border: 2px solid pink; }
 
 .LineCardList_checkbox {
   display: inline-block;
@@ -12471,7 +12730,7 @@ a .ListItem:after {
 .LineCardList_checkbox label:after {
   font-family: Sapphire-Icon-Font;
   content: '\e68a';
-  color: #16979F;
+  color: pink;
   position: absolute;
   top: -1px;
   left: 4px;
@@ -12490,7 +12749,7 @@ a .ListItem:after {
   opacity: 1; }
 
 .LineCardList_checkbox input[type=checkbox]:checked ~ label {
-  border: 1px solid #16979F;
+  border: 1px solid pink;
   background-color: #fff; }
 
 /*------------------------------------------------------------*/
@@ -13230,13 +13489,13 @@ a .ListItem:after {
   text-align: center; }
 
 .DateNavigatior.isSquare .CircledArrow .icon {
-  color: #16979F; }
+  color: pink; }
 
 .DateNavigatior.isSquare .DateNavigation_Date {
   width: auto;
   font-family: 'globeregular';
   font-weight: bold;
-  color: #16979F;
+  color: pink;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600; }
@@ -13767,7 +14026,7 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
 /* 9.28 Sapphire Patterns > Controls_Custom_Patterns > SectionExpandable *********/
 /*-------------------------------------------------------------------------------*/
 .SectionExpandableCustom .SectionExpandable__icon {
-  color: #16979F; }
+  color: pink; }
 
 .SectionExpandableCustom .PlaceHolderTitle {
   font-size: 18px;
@@ -13849,7 +14108,7 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
   position: absolute; }
 
 .SectionExpandableInside .HeaderIcon span {
-  color: #16979F;
+  color: pink;
   font-size: 12px;
   margin: 10px; }
 
@@ -13918,7 +14177,7 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
   margin-left: 10px; }
 
 .SectionExpandableInside .PlaceHolderActions span {
-  color: #16979F; }
+  color: pink; }
 
 .SectionExpandableInside.expanded .HeaderIcon {
   position: relative;
@@ -18400,8 +18659,8 @@ a.ButtonSquare.White > span.icon:hover,
 
 .CalendarDateTimeInput input[type="text"]:focus,
 .CalendarDateInput input[type="text"]:focus {
-  border: 1px solid #16979F;
-  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px #16979F; }
+  border: 1px solid pink;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px pink; }
 
 .CalendarDateTimeInput.Small input[type="text"],
 .CalendarDateInput.Small input[type="text"],
@@ -18562,7 +18821,7 @@ a.ButtonSquare.White > span.icon:hover,
 
 .iconHorizontal_icon,
 .iconVertical_icon {
-    color: #16979f;
+    color: color(secondary);
     font-weight: 600;
 }
 
@@ -18595,7 +18854,7 @@ a.ButtonSquare.White > span.icon:hover,
 
 .iconVertical_label.LabelGreen,
 .iconHorizontal_label.LabelGreen {
-    color: #16979F;
+    color: color(secondary);
     font-weight: 600;
 }
 
@@ -18658,7 +18917,7 @@ a.ButtonSquare.White > span.icon:hover,
 
 .iconHorizontal_icon.AllGreenIcon .icon,
 .iconVertical_icon.AllGreenIcon .icon {
-    color: #16979f;
+    color: color(secondary);
 }
 
 .InvertIconLabel .iconHorizontal {
@@ -19332,7 +19591,7 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 
 .Dropdown:focus {
   box-sizing: border-box;
-  border: 1px solid #16979F;
+  border: 1px solid pink;
   border-radius: 2px;
   box-shadow: 0 1px 2px 0 #7BB2BF; }
 
@@ -19896,7 +20155,7 @@ body.confirmation-opened {
 
 .MenuItemWrapper.Active .MenuItemWrapper_Container,
 .Toolbar.Fix .MenuItemWrapper.Active .MenuItemWrapper__Label {
-  color: #16979f; }
+  color: pink; }
 
 .Toolbar.Fix {
   background-color: #f7f4ef;
@@ -20084,7 +20343,7 @@ body.confirmation-opened {
   padding: 9px; }
 
 .PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover .icon {
-  color: #16979f; }
+  color: pink; }
 
 .PatientHeaderActions__subMenu {
   background-color: #fff;
@@ -20633,7 +20892,7 @@ body.confirmation-opened {
 .LineTimeLine__showMore {
   background-color: #e6f3f5;
   border-bottom: 1px solid #d9d9d9;
-  color: #16979f;
+  color: pink;
   font-size: 14px;
   font-weight: 600;
   line-height: 35px;
@@ -20819,7 +21078,7 @@ body.confirmation-opened {
   width: 20px; }
 
 .ExpandableInvestigations .fa-angle-down:before {
-  color: #16979f;
+  color: pink;
   content: "\e65f";
   font-family: "Sapphire-Icon-Font";
   font-size: 7px;
@@ -20959,7 +21218,7 @@ body.confirmation-opened {
   cursor: pointer; }
 
 .ExpandableLinkWrapper__icon {
-  color: #16979f; }
+  color: pink; }
 
 .ExpandableLinkWrapper__link {
   margin-left: 10px; }
@@ -21246,7 +21505,7 @@ body.confirmation-opened {
   display: inline-block;
   width: auto;
   padding: 0 16px;
-  color: #16979F;
+  color: pink;
   font-size: 12px;
   height: 100%;
   display: table-cell;
@@ -21319,7 +21578,7 @@ body.confirmation-opened {
 
 .ClinicianSecondarySummary .SectionExpandable .SectionExpandable_header .Heading2.SectionExpandable__icon {
   border: none;
-  color: #16979f;
+  color: pink;
   font-size: 16px;
   line-height: 46px;
   padding-left: 0;
@@ -21355,7 +21614,7 @@ body.confirmation-opened {
   padding-right: 10px; }
 
 .ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2 {
-  color: #16979f;
+  color: pink;
   display: inline-block;
   float: left; }
 
@@ -21690,7 +21949,7 @@ body.confirmation-opened {
 
 .SelectListNoNotifyWrap___icon {
   width: auto;
-  color: #16979f;
+  color: pink;
   font-size: 20px;
   line-height: 35px;
   transform: scale(-1, 1); }
@@ -22135,7 +22394,7 @@ span.select2-container.select2-container--default.select2-container--open {
   border-top-right-radius: 2px; }
 
 .select2-selection.select2-selection--multiple.SelectTagsDropDown:before {
-  color: #16979f;
+  color: pink;
   content: "\e690";
   font-family: "Sapphire-Icon-Font";
   font-size: 16px;
@@ -22530,7 +22789,7 @@ span.select2-container.select2-container--default.select2-container--open {
 .WizardStep.Past a:link,
 .WizardParent_Container .WizardStep,
 .WizardParent_Container .WizardStep a {
-  color: #16979f;
+  color: pink;
   font-size: 14px;
   font-weight: 600; }
 
@@ -22895,8 +23154,8 @@ span.select2-container.select2-container--default.select2-container--open {
   width: 9px; }
 
 .ms-drop input[type="checkbox"]:checked:before {
-  background-color: #16979f;
-  border-color: #16979f; }
+  background-color: pink;
+  border-color: pink; }
 
 .ms-drop .ms-no-results {
   display: none; }
@@ -22923,7 +23182,7 @@ span.select2-container.select2-container--default.select2-container--open {
 
 .Page .Text_sapphireBlue2,
 .mainBlue2-tx {
-  color: #16979F; }
+  color: pink; }
 
 .Page .Text_sapphireInactive,
 .inactiveButton-tx {
@@ -23003,7 +23262,7 @@ span.select2-container.select2-container--default.select2-container--open {
 
 .Page .SapphireBlue2,
 .mainBlue2-bg {
-  background-color: #16979F; }
+  background-color: pink; }
 
 .Page .SapphireInactive,
 .inactiveButton-bg {
@@ -23355,7 +23614,7 @@ div.ForwardAction {
 
 .ForwardContainer {
   background-color: white;
-  border: 2px solid #16979f;
+  border: 2px solid pink;
   border-radius: 5px;
   display: table;
   height: 49px;
@@ -23407,7 +23666,7 @@ div.ForwardAction {
 
 .MultipleLocation {
   background-color: white;
-  border: 2px solid #16979f;
+  border: 2px solid pink;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   left: -2px;
@@ -24541,9 +24800,9 @@ a.NoLink {
 
 .PopupTimeLine .Tabs__tab.active {
   border-top: 0;
-  color: #16979F;
+  color: pink;
   font-weight: bold;
-  border-bottom: 5px solid #16979F;
+  border-bottom: 5px solid pink;
   border-left: 0;
   border-right: 0;
   line-height: 34px; }
@@ -25996,7 +26255,7 @@ html .AR.tablet .ThemeGrid_Width12 {
 
 .FA .ButtonGroup_button.Button:first-child,
 .AR .ButtonGroup_button.Button:first-child {
-  border-right: 1px solid #16979F;
+  border-right: 1px solid pink;
   border-left: none; }
 
 .FA.phone .ButtonGroup_button.Button,
@@ -27906,11 +28165,11 @@ div.NoPrompt > span > div.template-item-input-block {
 /* START */
 input[type].SavedInput,
 textarea.SavedInput {
-  border-color: #16979f !important;
+  border-color: pink !important;
   border-width: 2px !important; }
 
 span.SavedFeedback {
-  background-color: #16979f;
+  background-color: pink;
   color: white;
   font-size: 12px;
   font-weight: bold;
@@ -28452,7 +28711,7 @@ input[type].TextInput[readonly] {
   float: right; }
 
 .fontSelect2Availability {
-  color: #16979F;
+  color: pink;
   font-size: 1em;
   text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   width: 49%;
@@ -28539,12 +28798,12 @@ div.List-Star {
   width: 100%; }
 
 div.List-Star.Selected {
-  color: #16979f;
+  color: pink;
   padding: 16px;
   width: 100%; }
 
 div.List-Star:hover {
-  color: #16979f; }
+  color: pink; }
 
 div.List-Star.Selected:hover {
   background-color: transparent;
@@ -28679,7 +28938,7 @@ div.List-Star.Selected > div[unselected] {
 .PatientCardAction .iconHorizontal_label {
   font-size: 12px;
   font-family: 'globeregular';
-  color: #16979F;
+  color: pink;
   font-weight: 600; }
 
 /*DropZone icon alignment*/

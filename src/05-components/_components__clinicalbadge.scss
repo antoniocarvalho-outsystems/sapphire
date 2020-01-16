@@ -1,0 +1,15 @@
+.ClinicalBadge {
+    border-radius: 4px;
+    color: #fff;
+    height: 50px;
+    padding: 3px 5px;
+}
+
+.ClinicalBadge.Transparent {
+    border: solid 1px #C9CDCE;
+    color: #ccc;
+}
+
+.ClinicalBadge-label {
+    min-height: 17px;
+}
