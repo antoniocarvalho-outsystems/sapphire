@@ -19137,6 +19137,10 @@ body.confirmation-opened {
     cursor: pointer;
 }
 
+.ExpandableLinkWrapper_Header > div {
+    min-height: 50px;
+}
+
 .ExpandableLinkWrapper__icon {
     color: color(secondary);
 
@@ -19925,7 +19929,7 @@ body.confirmation-opened {
 }
 
 .ExpandableLinkWrapper_content .LineDetailsExpandBox .ExpandableLinkWrapper_Header {
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 
 /** 9.145 Sapphire Patterns > LineDetailsExpandBox **/
