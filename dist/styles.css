@@ -1,6 +1,6 @@
 /**
- * Version 0.0.74
- * Generated on 2020-01-17T09:22:00+00:00
+ * Version 0.0.75
+ * Generated on 2020-01-17T09:28:41+00:00
  */
 
 @charset "UTF-8";
@@ -1986,7 +1986,7 @@ a.Button.Small:focus,
 /*******/
 input.Button.Second,
 a.Button.Second {
-  background: linear-gradient(180deg, yellow 0%, white 100%);
+  background: linear-gradient(180deg, pink 0%, white 100%);
   border: 1px solid #ff748c;
   border-radius: 2px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
@@ -2017,7 +2017,7 @@ a.Button.Second:hover:active,
 .desktop a.Button.Second:hover:active {
   background: white;
   border-radius: 2px;
-  border: 1px solid yellow;
+  border: 1px solid pink;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
   font-size: 14px;
@@ -2574,23 +2574,23 @@ a.ActionDelete {
 
 .ButtonCheckboxInp.active > .ButtonCheckboxInput_CheckBox ~ label:hover,
 .ButtonCheckboxInp.active > .ButtonCheckboxInput_CheckBox ~ label {
-  background-color: yellow;
-  border: 1px solid yellow;
+  background-color: pink;
+  border: 1px solid pink;
   border-radius: 5px;
   color: #fff; }
 
 .ButtonCheckboxInp > .ButtonCheckboxInput_CheckBox ~ label {
   background-color: #fff;
-  border: 1px solid yellow;
+  border: 1px solid pink;
   border-radius: 5px;
-  color: yellow;
+  color: pink;
   cursor: pointer;
   font-size: 14px;
   padding: 6px 10px 6px 35px; }
 
 .ButtonCheckboxInp > .ButtonCheckboxInput_CheckBox ~ label:hover {
   background-color: #e6f3f5;
-  color: yellow; }
+  color: pink; }
 
 .ButtonCheckboxInp.disabled > .ButtonCheckboxInput_CheckBox:hover,
 .ButtonCheckboxInp.disabled > .ButtonCheckboxInput_CheckBox ~ label {
@@ -2607,11 +2607,11 @@ a.ActionDelete {
 
 .ButtonGroup_button.Button {
   background-color: #fff;
-  border-bottom: 1px solid yellow;
-  border-left: 1px solid yellow;
-  border-top: 1px solid yellow;
+  border-bottom: 1px solid pink;
+  border-left: 1px solid pink;
+  border-top: 1px solid pink;
   box-shadow: none;
-  color: yellow;
+  color: pink;
   display: inline-block;
   font-family: 'globeregular', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -2628,10 +2628,10 @@ a.ActionDelete {
   color: #fff; }
 
 .ButtonGroup_button * {
-  color: yellow; }
+  color: pink; }
 
 .phone .ButtonGroup_button.Button {
-  border-right: 1px solid yellow;
+  border-right: 1px solid pink;
   margin-bottom: 2px; }
 
 .phone .ButtonGroup_button,
@@ -2649,15 +2649,15 @@ a.ActionDelete {
   border-right: 1px solid #11455d; }
 
 .ButtonGroup_button.Button > span {
-  color: yellow; }
+  color: pink; }
 
 .ButtonGroup_button.Button:first-child {
-  border-left: 1px solid yellow;
+  border-left: 1px solid pink;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px; }
 
 .ButtonGroup_button.Button:last-child {
-  border-right: 1px solid yellow;
+  border-right: 1px solid pink;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px; }
 
@@ -2665,8 +2665,8 @@ a.ActionDelete {
   border-radius: 4px 0 0 4px;
   background-color: #fff;
   /*box-shadow: 0 0 6px 0 #7BB2BF;*/
-  border: 2px solid yellow;
-  color: yellow;
+  border: 2px solid pink;
+  color: pink;
   line-height: 31px; }
 
 .desktop .ButtonGroup_button.Button.disabled,
@@ -2704,7 +2704,7 @@ a.ActionDelete {
 .desktop .ButtonGroup_button.active:hover,
 .ButtonGroup_button.Button.active:hover {
   background: none;
-  background-color: yellow;
+  background-color: pink;
   box-shadow: inset 2px 1px 3px rgba(100, 100, 100, 0.4);
   color: #fff; }
 
@@ -3014,7 +3014,7 @@ a.ActionDelete {
 
 .iconHorizontal_icon,
 .iconVertical_icon {
-  color: yellow;
+  color: pink;
   font-weight: 600; }
 
 .iconVertical_icon {
@@ -3038,7 +3038,7 @@ a.ActionDelete {
 
 .iconVertical_label.LabelGreen,
 .iconHorizontal_label.LabelGreen {
-  color: yellow; }
+  color: pink; }
 
 .iconBorder {
   border-left: solid 1px #d8d8d8;
@@ -3092,7 +3092,7 @@ a.ActionDelete {
 
 .iconHorizontal_icon.AllGreenIcon .icon,
 .iconVertical_icon.AllGreenIcon .icon {
-  color: yellow; }
+  color: pink; }
 
 .InvertIconLabel .iconHorizontal {
   transform: scale(-1, 1);
@@ -3183,7 +3183,7 @@ a.ActionDelete {
   border: 1px solid #d9d9d9; }
 
 .MainInteractiveCard.isEnabled {
-  border-color: yellow;
+  border-color: pink;
   background-color: white;
   margin-top: -1px; }
 
@@ -3191,7 +3191,7 @@ a.ActionDelete {
   margin-top: -1px; }
 
 .MainInteractiveCard:before {
-  background: yellow;
+  background: pink;
   content: '';
   height: 3px;
   left: 0;
@@ -3271,7 +3271,7 @@ a.ActionDelete {
   display: block;
   cursor: pointer;
   pointer-events: all;
-  color: yellow; }
+  color: pink; }
 
 .MainInteractiveCard-header-selectable-trigger span.icon {
   font-size: 1.5em; }
@@ -3447,7 +3447,7 @@ a.ActionDelete {
   font-size: 1.2em; }
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline {
-  border-top: 1px solid yellow;
+  border-top: 1px solid pink;
   padding-top: 16px; }
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline:first-child {
@@ -3566,7 +3566,7 @@ a.ActionDelete {
 
 .Menubar_extraItem {
   display: none;
-  color: yellow;
+  color: pink;
   font-size: 20px;
   height: 100%;
   padding: 0 10px;
@@ -3582,7 +3582,7 @@ a.ActionDelete {
   height: 48px; }
 
 .MenuItem {
-  color: yellow;
+  color: pink;
   font-size: 14px;
   font-weight: normal;
   padding: 0 15px 0 10px;
@@ -3630,14 +3630,14 @@ a.ActionDelete {
 
 .MenuItem_icon a,
 .MenuItem_label a {
-  color: yellow !important; }
+  color: pink !important; }
 
 .Menubar_extraItem:hover,
 .Menubar_extraItem.active:hover,
 .Menubar_extraItem:active:hover {
   transition: all 0.2s ease-in;
   /*text-shadow: 0px 0px 1px #66AFC1;*/
-  color: yellow; }
+  color: pink; }
 
 .MenuItem_subItems {
   position: absolute;
@@ -4828,7 +4828,7 @@ body.PanelById.PanelOpened {
 .StatusBadges.InvertBackground.BadgeSapphireBlue2 {
   background-color: #fff;
   color: #00b3bd;
-  border: 1px solid yellow; }
+  border: 1px solid pink; }
 
 /*SmallHeight*/
 /*IconTextColor*/
@@ -5822,7 +5822,7 @@ a.Button.DisplayBlock {
   border-color: #ff748c !important; }
 
 .bordercolor--secondary {
-  border-color: yellow !important; }
+  border-color: pink !important; }
 
 .bordercolor--secondary-light {
   border-color: white !important; }
@@ -8734,12 +8734,12 @@ input[type="number"] {
 
 input[type="email"]:focus,
 input[type="text"]:focus {
-  border: 1px solid yellow;
-  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px yellow; }
+  border: 1px solid pink;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px pink; }
 
 input[type="text"]:active {
   box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 #9DC6D0;
-  border: 1px solid yellow; }
+  border: 1px solid pink; }
 
 input[type="text"]:hover {
   border: 1px solid #B1B5B6;
@@ -9163,7 +9163,7 @@ td.RowWithAddAction a {
   border-bottom: 1px solid #ebebeb; }
 
 .TableRecords.TableRecordsNotes .TableRecords_Header {
-  color: yellow;
+  color: pink;
   line-height: 22px;
   font-size: 13px; }
 
@@ -9171,7 +9171,7 @@ td.RowWithAddAction a {
   border-left: none; }
 
 .TableRecords.TableRecordsNotes tbody tr:first-child td {
-  border-top: 1px solid yellow; }
+  border-top: 1px solid pink; }
 
 .TableRecords.TableRecordsNotes tbody td:last-child {
   border-right: none; }
@@ -9732,16 +9732,16 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   border-right: 1px solid #B1B5B6; }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
-  border-top: 1px solid yellow; }
+  border-top: 1px solid pink; }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
-  border-bottom: 1px solid yellow; }
+  border-bottom: 1px solid pink; }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:first-child {
-  border-left: 1px solid yellow; }
+  border-left: 1px solid pink; }
 
 .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:last-child {
-  border-right: 1px solid yellow; }
+  border-right: 1px solid pink; }
 
 .TableRecords_Wrapper.NoResponsive .TableRecords_Header {
   background-color: transparent;
@@ -10393,7 +10393,7 @@ body .triggerTimeBack {
 .FileUpload_Button:before {
   content: "\e604";
   font-family: 'Sapphire-Icon-Font';
-  color: yellow;
+  color: pink;
   font-size: 18px;
   line-height: 20px;
   position: relative;
@@ -11997,7 +11997,7 @@ a .ListItem:after {
 .CardBox.CardMedium.Selected,
 .CardBox.CardSmall.Selected {
   color: #fff;
-  background-color: yellow;
+  background-color: pink;
   border: 1px solid #00B4BF; }
 
 .CardBox.Selected,
@@ -12688,7 +12688,7 @@ a .ListItem:after {
   cursor: pointer; }
 
 .LineCardList.active {
-  border: 2px solid yellow; }
+  border: 2px solid pink; }
 
 .LineCardList_checkbox {
   display: inline-block;
@@ -12730,7 +12730,7 @@ a .ListItem:after {
 .LineCardList_checkbox label:after {
   font-family: Sapphire-Icon-Font;
   content: '\e68a';
-  color: yellow;
+  color: pink;
   position: absolute;
   top: -1px;
   left: 4px;
@@ -12749,7 +12749,7 @@ a .ListItem:after {
   opacity: 1; }
 
 .LineCardList_checkbox input[type=checkbox]:checked ~ label {
-  border: 1px solid yellow;
+  border: 1px solid pink;
   background-color: #fff; }
 
 /*------------------------------------------------------------*/
@@ -13489,13 +13489,13 @@ a .ListItem:after {
   text-align: center; }
 
 .DateNavigatior.isSquare .CircledArrow .icon {
-  color: yellow; }
+  color: pink; }
 
 .DateNavigatior.isSquare .DateNavigation_Date {
   width: auto;
   font-family: 'globeregular';
   font-weight: bold;
-  color: yellow;
+  color: pink;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600; }
@@ -14026,7 +14026,7 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
 /* 9.28 Sapphire Patterns > Controls_Custom_Patterns > SectionExpandable *********/
 /*-------------------------------------------------------------------------------*/
 .SectionExpandableCustom .SectionExpandable__icon {
-  color: yellow; }
+  color: pink; }
 
 .SectionExpandableCustom .PlaceHolderTitle {
   font-size: 18px;
@@ -14108,7 +14108,7 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
   position: absolute; }
 
 .SectionExpandableInside .HeaderIcon span {
-  color: yellow;
+  color: pink;
   font-size: 12px;
   margin: 10px; }
 
@@ -14177,7 +14177,7 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
   margin-left: 10px; }
 
 .SectionExpandableInside .PlaceHolderActions span {
-  color: yellow; }
+  color: pink; }
 
 .SectionExpandableInside.expanded .HeaderIcon {
   position: relative;
@@ -18659,8 +18659,8 @@ a.ButtonSquare.White > span.icon:hover,
 
 .CalendarDateTimeInput input[type="text"]:focus,
 .CalendarDateInput input[type="text"]:focus {
-  border: 1px solid yellow;
-  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px yellow; }
+  border: 1px solid pink;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px pink; }
 
 .CalendarDateTimeInput.Small input[type="text"],
 .CalendarDateInput.Small input[type="text"],
@@ -19591,7 +19591,7 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 
 .Dropdown:focus {
   box-sizing: border-box;
-  border: 1px solid yellow;
+  border: 1px solid pink;
   border-radius: 2px;
   box-shadow: 0 1px 2px 0 #7BB2BF; }
 
@@ -20155,7 +20155,7 @@ body.confirmation-opened {
 
 .MenuItemWrapper.Active .MenuItemWrapper_Container,
 .Toolbar.Fix .MenuItemWrapper.Active .MenuItemWrapper__Label {
-  color: yellow; }
+  color: pink; }
 
 .Toolbar.Fix {
   background-color: #f7f4ef;
@@ -20343,7 +20343,7 @@ body.confirmation-opened {
   padding: 9px; }
 
 .PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover .icon {
-  color: yellow; }
+  color: pink; }
 
 .PatientHeaderActions__subMenu {
   background-color: #fff;
@@ -20892,7 +20892,7 @@ body.confirmation-opened {
 .LineTimeLine__showMore {
   background-color: #e6f3f5;
   border-bottom: 1px solid #d9d9d9;
-  color: yellow;
+  color: pink;
   font-size: 14px;
   font-weight: 600;
   line-height: 35px;
@@ -21078,7 +21078,7 @@ body.confirmation-opened {
   width: 20px; }
 
 .ExpandableInvestigations .fa-angle-down:before {
-  color: yellow;
+  color: pink;
   content: "\e65f";
   font-family: "Sapphire-Icon-Font";
   font-size: 7px;
@@ -21221,7 +21221,7 @@ body.confirmation-opened {
   min-height: 50px; }
 
 .ExpandableLinkWrapper__icon {
-  color: yellow; }
+  color: pink; }
 
 .ExpandableLinkWrapper__link {
   margin-left: 10px; }
@@ -21508,7 +21508,7 @@ body.confirmation-opened {
   display: inline-block;
   width: auto;
   padding: 0 16px;
-  color: yellow;
+  color: pink;
   font-size: 12px;
   height: 100%;
   display: table-cell;
@@ -21581,7 +21581,7 @@ body.confirmation-opened {
 
 .ClinicianSecondarySummary .SectionExpandable .SectionExpandable_header .Heading2.SectionExpandable__icon {
   border: none;
-  color: yellow;
+  color: pink;
   font-size: 16px;
   line-height: 46px;
   padding-left: 0;
@@ -21617,7 +21617,7 @@ body.confirmation-opened {
   padding-right: 10px; }
 
 .ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2 {
-  color: yellow;
+  color: pink;
   display: inline-block;
   float: left; }
 
@@ -21952,7 +21952,7 @@ body.confirmation-opened {
 
 .SelectListNoNotifyWrap___icon {
   width: auto;
-  color: yellow;
+  color: pink;
   font-size: 20px;
   line-height: 35px;
   transform: scale(-1, 1); }
@@ -22397,7 +22397,7 @@ span.select2-container.select2-container--default.select2-container--open {
   border-top-right-radius: 2px; }
 
 .select2-selection.select2-selection--multiple.SelectTagsDropDown:before {
-  color: yellow;
+  color: pink;
   content: "\e690";
   font-family: "Sapphire-Icon-Font";
   font-size: 16px;
@@ -22792,7 +22792,7 @@ span.select2-container.select2-container--default.select2-container--open {
 .WizardStep.Past a:link,
 .WizardParent_Container .WizardStep,
 .WizardParent_Container .WizardStep a {
-  color: yellow;
+  color: pink;
   font-size: 14px;
   font-weight: 600; }
 
@@ -23157,8 +23157,8 @@ span.select2-container.select2-container--default.select2-container--open {
   width: 9px; }
 
 .ms-drop input[type="checkbox"]:checked:before {
-  background-color: yellow;
-  border-color: yellow; }
+  background-color: pink;
+  border-color: pink; }
 
 .ms-drop .ms-no-results {
   display: none; }
@@ -23185,7 +23185,7 @@ span.select2-container.select2-container--default.select2-container--open {
 
 .Page .Text_sapphireBlue2,
 .mainBlue2-tx {
-  color: yellow; }
+  color: pink; }
 
 .Page .Text_sapphireInactive,
 .inactiveButton-tx {
@@ -23265,7 +23265,7 @@ span.select2-container.select2-container--default.select2-container--open {
 
 .Page .SapphireBlue2,
 .mainBlue2-bg {
-  background-color: yellow; }
+  background-color: pink; }
 
 .Page .SapphireInactive,
 .inactiveButton-bg {
@@ -23617,7 +23617,7 @@ div.ForwardAction {
 
 .ForwardContainer {
   background-color: white;
-  border: 2px solid yellow;
+  border: 2px solid pink;
   border-radius: 5px;
   display: table;
   height: 49px;
@@ -23669,7 +23669,7 @@ div.ForwardAction {
 
 .MultipleLocation {
   background-color: white;
-  border: 2px solid yellow;
+  border: 2px solid pink;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   left: -2px;
@@ -24803,9 +24803,9 @@ a.NoLink {
 
 .PopupTimeLine .Tabs__tab.active {
   border-top: 0;
-  color: yellow;
+  color: pink;
   font-weight: bold;
-  border-bottom: 5px solid yellow;
+  border-bottom: 5px solid pink;
   border-left: 0;
   border-right: 0;
   line-height: 34px; }
@@ -26258,7 +26258,7 @@ html .AR.tablet .ThemeGrid_Width12 {
 
 .FA .ButtonGroup_button.Button:first-child,
 .AR .ButtonGroup_button.Button:first-child {
-  border-right: 1px solid yellow;
+  border-right: 1px solid pink;
   border-left: none; }
 
 .FA.phone .ButtonGroup_button.Button,
@@ -28168,11 +28168,11 @@ div.NoPrompt > span > div.template-item-input-block {
 /* START */
 input[type].SavedInput,
 textarea.SavedInput {
-  border-color: yellow !important;
+  border-color: pink !important;
   border-width: 2px !important; }
 
 span.SavedFeedback {
-  background-color: yellow;
+  background-color: pink;
   color: white;
   font-size: 12px;
   font-weight: bold;
@@ -28714,7 +28714,7 @@ input[type].TextInput[readonly] {
   float: right; }
 
 .fontSelect2Availability {
-  color: yellow;
+  color: pink;
   font-size: 1em;
   text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   width: 49%;
@@ -28801,12 +28801,12 @@ div.List-Star {
   width: 100%; }
 
 div.List-Star.Selected {
-  color: yellow;
+  color: pink;
   padding: 16px;
   width: 100%; }
 
 div.List-Star:hover {
-  color: yellow; }
+  color: pink; }
 
 div.List-Star.Selected:hover {
   background-color: transparent;
@@ -28941,7 +28941,7 @@ div.List-Star.Selected > div[unselected] {
 .PatientCardAction .iconHorizontal_label {
   font-size: 12px;
   font-family: 'globeregular';
-  color: yellow;
+  color: pink;
   font-weight: 600; }
 
 /*DropZone icon alignment*/
