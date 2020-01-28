@@ -1,6 +1,16 @@
 .HourPicker {
 	font-size: 12px;
 
+	&:not(&--textTrigger) &__InputContainer:before {
+		color: #16979f;
+		content: '\e62a';
+		font-family: 'Sapphire-Icon-Font';
+		position: absolute;
+		right: 9px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
 	&--textTrigger & {
 		&__LabelValue {
 			color: #16979f;
@@ -14,16 +24,6 @@
 		&__InputContainer {
 			display: none;
 		}
-	}
-
-	&:not(&--textTrigger) &__InputContainer:before {
-		color: #16979f;
-		content: '\e62a';
-		font-family: 'Sapphire-Icon-Font';
-		position: absolute;
-		right: 9px;
-		top: 50%;
-		transform: translateY(-50%);
 	}
 
 	&__InputValue {
