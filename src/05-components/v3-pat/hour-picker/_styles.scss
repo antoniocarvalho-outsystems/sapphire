@@ -1,8 +1,8 @@
 .HourPicker {
 	font-size: 12px;
 
-	&--textTrigger {
-		.HourPicker__LabelValue {
+	&--textTrigger & {
+		&__LabelValue {
 			color: #16979f;
 			cursor: pointer;
 			display: inline-block;
@@ -11,12 +11,12 @@
 			vertical-align: baseline;
 		}
 
-		.HourPicker__InputContainer {
+		&__InputContainer {
 			display: none;
 		}
 	}
 
-	&:not(.HourPicker--textTrigger) &__InputContainer:before {
+	&:not(&--textTrigger) &__InputContainer:before {
 		color: #16979f;
 		content: '\e62a';
 		font-family: 'Sapphire-Icon-Font';
@@ -69,6 +69,12 @@
 			transform: rotateZ(45deg);
 		}
 	}
+
+	/* RTL Adjustments - HourPicker */
+	.AR &:before {
+		left: 9px;
+		right: auto;
+	}
 }
 
 /* UI TimePicker CSS - HourPicker */
@@ -93,25 +99,18 @@
 	.ui-timepicker-viewport {
 		@include component-scroll;
 	}
-}
 
-/* RTL Adjustments - HourPicker */
-.AR {
-	.HourPicker:before {
-		left: 9px;
-		right: auto;
+	/* RTL Adjustments - UI Timepicker */
+	&.rtl {
+		.ui-timepicker-viewport {
+			list-style: none;
+		}
 	}
-}
 
-.rtl.ui-timepicker-container {
-	.ui-timepicker-viewport {
-		list-style: none;
-	}
-}
-
-.rtl.ui-timepicker-no-scrollbar {
-	.ui-timepicker-viewport {
-		padding-left: 40px;
-		padding-right: 0 !important;
+	&.rtl.ui-timepicker-no-scrollbar {
+		.ui-timepicker-viewport {
+			padding-left: 40px;
+			padding-right: 0 !important;
+		}
 	}
 }
