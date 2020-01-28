@@ -1,73 +1,87 @@
 'use strict';
 
 const gulp = require('gulp');
-const {
-    series
-} = require('gulp');
-const del = require('del');
-const exec = require('child_process').exec;
-const rename = require('gulp-rename');
-const sass = require('gulp-sass');
+const { series, watch } = require('gulp');
 const bump = require('gulp-bump');
+const sass = require('gulp-sass');
+const rename = require('gulp-rename');
 const headerComment = require('gulp-header-comment');
 const fs = require('fs');
+const del = require('del');
+const exec = require('child_process').exec;
+const app = require('https-localhost')();
 
-var paths = {
-    imports: 'src/imports.scss',
-    dest: 'dist'
+const PATHS = {
+	imports: 'src/imports.scss',
+	dest: 'dist',
 };
 
-function clean(cb) {
-    del('dist/**');
-    cb();
-}
+const clean = cb => {
+	del('dist/**');
 
-function compileSass() {
-    return (
-        gulp.src(paths.imports)
-        .pipe(sass({
-            outputStyle: 'nested',
-            sourceComments: false
-        }))
-        .pipe(rename({
-            basename: 'styles'
-        }))
-        .pipe(headerComment(`
+	cb();
+};
+
+const compileSass = () =>
+	gulp
+		.src(PATHS.imports)
+		.pipe(
+			sass({
+				outputStyle: 'nested',
+				sourceComments: false,
+			})
+		)
+		.pipe(
+			rename({
+				basename: 'styles',
+			})
+		)
+		.pipe(
+			headerComment(`
         Version <%= pkg.version %>
         Generated on <%= moment().format() %>
-        `))
-        .pipe(gulp.dest(paths.dest))
-    );
-}
+    `)
+		)
+		.pipe(gulp.dest(PATHS.dest));
 
-function bumpVersion() {
-    return (
-        gulp.src(['./package.json'])
-        .pipe(bump({
-            type: 'patch',
-            key: 'version'
-        }))
-        .pipe(gulp.dest('./'))
-    )
-}
+const bumpVersion = () =>
+	gulp
+		.src(['./package.json'])
+		.pipe(
+			bump({
+				type: 'patch',
+				key: 'version',
+			})
+		)
+		.pipe(gulp.dest('./'));
 
-function addFiles(cb) {
-    exec(`git add .`, cb);
+const addFiles = cb => exec(`git add .`, cb);
+const commitFiles = cb => exec(`git commit -am.`, cb);
+
+const createTag = cb => {
+	const pkg = JSON.parse(fs.readFileSync('./package.json'));
+	exec(`git tag ${pkg.version}`, cb);
 };
 
-function commitFiles(cb) {
-    exec(`git commit -am.`, cb);
+const pushTag = cb => {
+	const pkg = JSON.parse(fs.readFileSync('./package.json'));
+	exec(`git push origin ${pkg.version}`, cb);
 };
 
-function createTag(cb) {
-    var pkg = JSON.parse(fs.readFileSync('./package.json'));
-    exec(`git tag ${pkg.version}`, cb);
+const watchSass = () => watch('src/**/*.scss', series(clean, compileSass));
+
+const server = cb => {
+	app.serve('dist/');
+
+	cb();
 };
 
-function pushTag(cb) {
-    var pkg = JSON.parse(fs.readFileSync('./package.json'));
-    exec(`git push origin ${pkg.version}`, cb);
-};
-
-exports.default = series(clean, compileSass);
-exports.newtag = series(bumpVersion, compileSass, addFiles, commitFiles, createTag, pushTag);
+exports.default = series(clean, compileSass, server, watchSass);
+exports.newtag = series(
+	bumpVersion,
+	compileSass,
+	addFiles,
+	commitFiles,
+	createTag,
+	pushTag
+);

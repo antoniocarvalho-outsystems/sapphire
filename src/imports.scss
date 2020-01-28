@@ -1,63 +1,10 @@
-@import '_config__project';
-
-@import '00-settings/_settings__colors';
-@import '00-settings/_settings__sizes';
-
-@import '01-tools/_tools__colors';
-
-// @import '02-generic/_generic__fonts';
-@import '02-generic/_generic__outsystems';
-@import '02-generic/_generic__reset';
-@import '02-generic/_generic__typography';
-
-@import '03-elements/_elements__a';
-@import '03-elements/_elements__div';
-@import '03-elements/_elements__select';
-
-@import '04-base/_base__button-base';
-@import '04-base/_base__button-icon';
-@import '04-base/_base__button-refactor';
-@import '04-base/_base__container';
-
-@import '05-components/_components__buttoncheckboxinp';
-@import '05-components/_components__buttongroup';
-@import '05-components/_components__fullscreentabsdashboard';
-@import '05-components/_components__header';
-@import '05-components/_components__headings';
-@import '05-components/_components__iconlabel';
-@import '05-components/_components__listboard';
-@import '05-components/_components__listrecords';
-@import '05-components/_components__maininteractivecard';
-@import '05-components/_components__panelbyid';
-@import '05-components/_components__sapphiretabs';
-@import '05-components/_components__search-wrapper';
-@import '05-components/_components__select2';
-@import '05-components/_components__statusbadges';
-@import '05-components/_components__tooltipster';
-
-@import '06-helpers/_helpers__display';
-@import '06-helpers/_helpers__multimargin';
-@import '06-helpers/_helpers__multipadding';
-@import '06-helpers/_helpers__responsive-visibility';
-@import '06-helpers/_helpers__showwires';
-@import '06-helpers/_helpers__validation';
-@import '06-helpers/_helpers__vertical-align';
-
-@import '07-trumps/_trumps__background-color';
-@import '07-trumps/_trumps__border-color';
-@import '07-trumps/_trumps__border-style';
-@import '07-trumps/_trumps__border-width';
-@import '07-trumps/_trumps__box-shadow';
-@import '07-trumps/_trumps__color';
-@import '07-trumps/_trumps__max-width';
-@import '07-trumps/_trumps__min-height';
-@import '07-trumps/_trumps__no-border';
-@import '07-trumps/_trumps__no-margin';
-@import '07-trumps/_trumps__others';
-@import '07-trumps/_trumps__padding';
-@import '07-trumps/_trumps__pointer-events';
-@import '07-trumps/_trumps__rotate';
-@import '07-trumps/_trumps__shadow';
-
+@import '00-settings/import';
+@import '01-tools/import';
+@import '02-generic/import';
+@import '03-elements/import';
+@import '04-base/import';
+@import '05-components/import';
+@import '06-helpers/import';
+@import '07-trumps/import';
 
 @import '99-legacy/Sapphirev2_Th';
