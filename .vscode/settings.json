@@ -4,5 +4,8 @@
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true,
 		"source.fixAll.stylelint": true
-	}
+	},
+	"html.format.enable": true,
+	"html.format.indentHandlebars": true,
+	"html.format.maxPreserveNewLines": 0
 }

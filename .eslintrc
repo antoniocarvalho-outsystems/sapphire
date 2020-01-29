@@ -1,10 +1,8 @@
 {
-	"extends": [
-		"plugin:prettier/recommended"
-	],
+	"extends": ["plugin:prettier/recommended"],
 	"plugins": ["prettier"],
 	"rules": {
-		"prettier/prettier": "error",
-		"comma-dangle": ["error", "always"]
+		"comma-dangle": ["error", "always"],
+		"prettier/prettier": "error"
 	}
 }
