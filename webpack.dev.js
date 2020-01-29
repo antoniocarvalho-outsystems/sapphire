@@ -6,8 +6,16 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
 	mode: 'development',
+	output: {
+		filename: 'dev.scripts.js',
+	},
+	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
+		new MiniCssExtractPlugin({
+			filename: 'dev.styles.css',
+		}),
+	],
 	devtool: 'inline-source-map',
-	plugins: [new webpack.HotModuleReplacementPlugin()],
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
 		https: true,

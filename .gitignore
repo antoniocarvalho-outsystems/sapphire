@@ -1,5 +1,5 @@
 node_modules
 
 dist/*
-!dist/scripts.js
-!dist/styles.css
+!dist/sapphire.scripts.js
+!dist/sapphire.styles.css
