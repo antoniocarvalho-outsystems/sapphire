@@ -1,10 +1,10 @@
 # Sapphire
 
----------
+---
 
 ## Getting Started
 
----------
+---
 
 ### Prerequisites
 
@@ -32,9 +32,9 @@ npm run dev
 Building and publishing a new version
 
 ```
-npm run build
+npm run push:version
 ```
 
 ## Deployment
 
----------
+---
