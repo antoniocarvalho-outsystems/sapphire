@@ -2,20 +2,31 @@ const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
 	mode: 'development',
+	output: {
+		filename: 'dev.scripts.js',
+	},
+	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
+		new MiniCssExtractPlugin({
+			filename: 'dev.styles.css',
+		}),
+		new BrowserSyncPlugin(
+			{
+				files: ['./src/components/**/*.scss', './src/components/**/*.hbs'],
+				proxy: 'http://localhost:8080/',
+			},
+			{
+				reload: false,
+			}
+		),
+	],
 	devtool: 'inline-source-map',
-	plugins: [new webpack.HotModuleReplacementPlugin(),new BrowserSyncPlugin({
-		files:['./src/components/**/*.scss','./src/components/**/*.hbs'],
-		proxy: 'http://localhost:8080/'
-		},
-		{
-				reload:false
-		}
-		
-)],
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
 		writeToDisk: true,

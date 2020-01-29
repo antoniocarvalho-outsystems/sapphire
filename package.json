@@ -1,14 +1,14 @@
 {
 	"name": "sapphire",
-	"version": "0.0.71",
+	"version": "0.0.79",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"dev": "webpack-dev-server --config webpack.dev.js",
 		"prod": "webpack --config webpack.prod.js",
-		"version": "npm version patch",
-		"push": "git add . && git commit -am. && git push origin %npm_package_version%",
-		"build": "npm run prod && npm run version && npm run push"
+		"new:build": "npm run prod && git add . && git commit -m \"feat: new version\" --allow-empty && git push origin master",
+		"new:tag": "npm version patch && git push -f --tags",
+		"push:version": "npm run new:build && npm run new:tag"
 	},
 	"author": "",
 	"license": "ISC",
