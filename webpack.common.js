@@ -4,16 +4,16 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-	entry: path.resolve(__dirname, './src/scripts.js'),
+	entry: path.resolve(__dirname, './src/components/index.js'),
 	output: {
-		filename: 'scripts.js',
+		filename: 'sapphire.scripts.js',
 		path: path.join(__dirname, 'dist'),
 		publicPath: '/dist/',
 	},
 	plugins: [
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({
-			filename: 'styles.css',
+			filename: 'sapphire.styles.css',
 		}),
 	],
 	node: {
