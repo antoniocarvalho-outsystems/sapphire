@@ -1,4 +1,4 @@
-require('./styles.scss');
+require('./index.scss');
 
 const SapphireWidgets = (window.SapphireWidgets = window.SapphireWidgets || {});
 
