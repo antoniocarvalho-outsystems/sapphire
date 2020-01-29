@@ -10,7 +10,6 @@ module.exports = merge(common, {
 	plugins: [new webpack.HotModuleReplacementPlugin()],
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
-		https: true,
 		writeToDisk: true,
 	},
 	optimization: {
