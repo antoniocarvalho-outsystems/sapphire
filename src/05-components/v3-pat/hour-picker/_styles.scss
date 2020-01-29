@@ -1,0 +1,116 @@
+.HourPicker {
+	font-size: 12px;
+
+	&:not(&--textTrigger) &__InputContainer:before {
+		color: #16979f;
+		content: '\e62a';
+		font-family: 'Sapphire-Icon-Font';
+		position: absolute;
+		right: 9px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&--textTrigger & {
+		&__LabelValue {
+			color: #16979f;
+			cursor: pointer;
+			display: inline-block;
+			font-size: inherit;
+			font-weight: 700;
+			vertical-align: baseline;
+		}
+
+		&__InputContainer {
+			display: none;
+		}
+	}
+
+	&__InputValue {
+		font-size: inherit;
+		padding-right: 26px;
+		text-align: center;
+		transition: all 0.3s ease;
+		width: 100%;
+	}
+
+	&__Placeholder {
+		height: 0 !important;
+		visibility: hidden;
+		width: 0 !important;
+	}
+
+	&__Displayed {
+		align-items: center;
+		display: flex;
+		width: 100%;
+	}
+
+	&__InputContainer {
+		position: relative;
+		width: 100%;
+	}
+
+	&__ButtonClear {
+		color: #16979f;
+		cursor: pointer;
+		font-family: 'Sapphire-Icon-Font';
+		font-size: inherit;
+		-webkit-font-smoothing: antialiased;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		margin: 0 10px;
+		text-transform: none;
+
+		&:before {
+			content: '\e604';
+			display: inline-block;
+			transform: rotateZ(45deg);
+		}
+	}
+
+	/* RTL Adjustments - HourPicker */
+	.AR &:before {
+		left: 9px;
+		right: auto;
+	}
+}
+
+/* UI TimePicker CSS - HourPicker */
+.ui-timepicker-container {
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	font-size: 14px;
+	min-width: 130px;
+
+	.ui-state-hover {
+		background-color: #16979f;
+		border-color: transparent;
+		color: #ffffff;
+	}
+
+	.ui-corner-all {
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	.ui-timepicker-viewport {
+		@include component-scroll;
+	}
+
+	/* RTL Adjustments - UI Timepicker */
+	&.rtl {
+		.ui-timepicker-viewport {
+			list-style: none;
+		}
+	}
+
+	&.rtl.ui-timepicker-no-scrollbar {
+		.ui-timepicker-viewport {
+			padding-left: 40px;
+			padding-right: 0 !important;
+		}
+	}
+}
