@@ -6,9 +6,9 @@
 	"scripts": {
 		"dev": "webpack-dev-server --config webpack.dev.js",
 		"prod": "webpack --config webpack.prod.js",
-		"version": "npm version patch",
+		"version": "npm version patch && git push —-tags origin master",
 		"push": "git add . && git commit -am. && git push origin %npm_package_version%",
-		"build": "npm run prod && npm run version && npm run push"
+		"build": "npm run prod && npm run version"
 	},
 	"author": "",
 	"license": "ISC",
