@@ -8,7 +8,7 @@
 		"prod": "webpack --config webpack.prod.js",
 		"new-commit": "git add . && git commit -am \"tag: new version\"",
 		"new-version": "npm version patch",
-		"build": "npm run prod && npm run new-version && git push origin %npm_package_version%"
+		"build": "npm run prod && npm run new-version && git push --force origin %npm_package_version%"
 	},
 	"author": "",
 	"license": "ISC",
