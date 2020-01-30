@@ -11,6 +11,7 @@ module.exports = merge(common, {
 	output: {
 		filename: 'dev.scripts.js',
 	},
+	watch:false,
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new MiniCssExtractPlugin({
@@ -27,17 +28,6 @@ module.exports = merge(common, {
 		),
 	],
 	devtool: 'inline-source-map',
-	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-		new BrowserSyncPlugin({
-		files:['./src/components/**/*.scss','./src/components/**/*.hbs','./src/helpersHandleBar/*.js'],
-		proxy: 'http://localhost:8080/'
-		},
-		{
-				reload:false
-		}
-		
-)],
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
 		writeToDisk: true
