@@ -27,10 +27,20 @@ module.exports = merge(common, {
 		),
 	],
 	devtool: 'inline-source-map',
+	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
+		new BrowserSyncPlugin({
+		files:['./src/components/**/*.scss','./src/components/**/*.hbs','./src/helpersHandleBar/*.js'],
+		proxy: 'http://localhost:8080/'
+		},
+		{
+				reload:false
+		}
+		
+)],
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
-		https: true,
-		writeToDisk: true,
+		writeToDisk: true
 	},
 	optimization: {
 		splitChunks: {

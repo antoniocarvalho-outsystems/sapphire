@@ -1,5 +1,16 @@
-$sapphire__colors: (
-	background: #f7f4e1,
+//Colors
+//
+// Colors Collection
+//
+//Markup: _colors.hbs
+//
+//
+//
+// 
+// 
+//Style guide: Colors
+
+$sapphire__colors: (background: #f7f4e1,
 	black: #000,
 	gray-dark: #7c7f7f,
 	gray-darker: #333,
@@ -32,5 +43,5 @@ $sapphire__colors: (
     secondary-light: #0EBEC8,
     secondary-lighter: #7BB2BF,
     */
-		white: #fff,
+	white: #fff,
 );
