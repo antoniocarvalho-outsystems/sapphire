@@ -1,47 +1,64 @@
-//Colors
+// Colors
 //
-// Colors Collection
+//  Colors Collection
 //
 //Markup: _colors.hbs
 //
-//
-//
-// 
-// 
-//Style guide: Colors
-
+//  Style guide: Colors
 $sapphire__colors: (background: #f7f4e1,
-	black: #000,
 	gray-dark: #7c7f7f,
 	gray-darker: #333,
 	gray-light: #d9d9d9,
 	gray-lighter: #f2f2f2,
-	orange: #da6802,
-	red-dark: #b10000,
-	red: #d01a1a,
-	primary-darker: red,
-	primary-dark: red,
-	primary: red,
-	primary-light: red,
-	primary-lighter: red,
-	secondary-darker: brown,
-	secondary-dark: brown,
-	secondary: brown,
-	secondary-light: brown,
-	secondary-lighter: brown,
-	/*
-    primary-darker: #0A2D40,
-    primary-dark: #0E4056,
-    primary: #11455D,
-    primary-light: #006185,
-    primary-lighter: #00698E,
-
-
-    secondary-darker: #16979F,
-    secondary-dark: #08A6AF,
-    secondary: #0CB3BF,
-    secondary-light: #0EBEC8,
-    secondary-lighter: #7BB2BF,
-    */
-	white: #fff,
+	regular-gray:#79868a,
+	regular-red: #d01a1a,
+	dark-red:#b10000,
+	primary-darker: #0a2d40,
+	primary-dark: #0e4056,
+	primary: #11455d,
+	primary-light: #006185,
+	primary-lighter: #00698e,
+	secondary-darker: #16979f,
+	secondary-dark: #08a6af,
+	secondary: #0cb3bf,
+	secondary-light: #0ebec8,
+	secondary-lighter: #7bb2bf,
+	regular-beige: #e6e2aa,
+	dark-beige: #928d09,
+	regular-black: #131819,
+	blue-light: #d3eff0,
+	blue-navy: #edf7f9,
+	regular-blue: #0074c1,
+	dark-blue:#194968,
+	dark-plum:#970263,
+	regular-green:#388e3c,
+	light-green:#c2dea8,
+	light-red:#f9d5d5,
+	light-yellow:#feffc9,
+	pink-light:#fff7f7,
+	regular-orange:#da6802,
+	light-orange:#fcc891,
+	dark-orange:#cd7d00,
+	regular-plum:#c32b87,
+	regular-silver:#dadbde,
+	sapphire-silver:#f3f3f3,
+	sapphire-blue:#11455D,
+	sapphire-blue2:#16979F,
+	sapphire-clinician:#DAE0E4,
+	sapphire-darkblue1:#0C1D22,
+	sapphire-darkblue2:#113041,
+	sapphire-darkgrey:#7C7F7F,
+	sapphire-male:#11394F,
+	sapphire-warning:#CD0005,
+	sapphire-female:#6F4065,
+	sapphire-inactive:#B1B5B6,
+	sapphire-lightboard:#C9CDCE,
+	sapphire-lightcontainer:#EBEBEB,
+	sapphire-lighttext:#F2F2F2,
+	sapphire-darktext:#262626,
+	regular-turquoise:#00b0c1,
+	light-turquoise:#e6f4f5,
+	regular-white:#fff,
+	regular-yellow:#eabd30,
+	body-color:#f7f4ef,
 );
