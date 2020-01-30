@@ -19,7 +19,7 @@ module.exports = merge(common, {
 		new BrowserSyncPlugin(
 			{
 				files: ['./src/components/**/*.scss', './src/components/**/*.hbs'],
-				proxy: 'http://localhost:8080/',
+				proxy: 'https://localhost:8080/',
 			},
 			{
 				reload: false,
@@ -44,5 +44,4 @@ module.exports = merge(common, {
 			},
 		},
 	},
-	watch: true,
 });
