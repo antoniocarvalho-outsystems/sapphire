@@ -1,105 +1,164 @@
 .Beige {
-    background-color: #E6E2AA;
+    background-color: color('regular-beige')
 }
 
 .DarkBeige {
-    background-color: #928D09;
+    background-color: color('dark-beige');
 }
 
-
 .Black {
-    background-color: #131819;
+    background-color: color('regular-black');
 }
 
 .BlueLight {
-    background-color: #d3eff0;
+    background-color: color('blue-light');
 }
 
 .BlueNavy {
-    background-color: #EDF7F9;
+    background-color: color('blue-navy');
 }
 
 .Blue {
-    background-color: #0074c1;
+    background-color: color('regular-blue');
 }
 
 .DarkBlue {
-    background-color: #194968;
+    background-color: color("dark-blue");
 }
 
 .DarkPlum {
-    background-color: #970263;
+    background-color: color("dark-plum");
 }
 
 .DarkRed {
-    background-color: #b10000;
+    background-color: color("dark-red");
 }
 
 .Grey,
 .Gray {
-    background-color: #79868a;
+    background-color: color("regular-red");
 }
 
 .Green {
-    background-color: #388e3c;
+    background-color: color("regular-green");
 }
 
 .LightGreen {
-    background-color: #C2DEA8;
+    background-color: color("light-green");
 }
 
 .LightRed {
-    background-color: #f9d5d5;
+    background-color: color("light-red");
 }
 
 .LightYellow {
-    background-color: #feffc9;
+    background-color: color("light-yellow");
 }
 
 .PinkLight {
-    background-color: #FFF7F7;
+    background-color: color("pink-light");
 }
 
 .Orange {
-    background-color: #da6802;
+    background-color: color("regular-orange");
 }
 
 .LightOrange {
-    background-color: #fcc891;
+    background-color: color("light-orange");
 }
 
 .DarkOrange {
-    background-color: #cd7d00;
+    background-color: color("dark-orange");
 }
 
 .Plum {
-    background-color: #c32b87;
+    background-color: color("regular-plum");
 }
 
 .Red {
-    background-color: #d01a1a;
+    background-color: color("regular-red");
 }
 
 .Silver {
-    background-color: #dadbde;
+    background-color: color("regular-silver");
 }
 
 .SapphireSilver {
-    background-color: #F3F3F3;
+    background-color: color("sapphire-silver");
 }
 
 .Turquoise {
-    background-color: #00b0c1;
+    background-color: color("regular-turquoise");
 }
 
 .LightTurquoise {
-    background-color: #E6F4F5;
+    background-color: color("light-turquoise");
 }
 
 .White {
-    background-color: #fff;
+    background-color: color("regular-white");
 }
 
 .Yellow {
-    background-color: #EABD30;
+    background-color: color("regular-yellow");
+}
+
+.BodyColor {
+    background-color: color("body-color");
+}
+
+.SapphireBlue {
+    background-color: color("sapphire-blue");
+}
+
+.SapphireBlue2 {
+    background-color: color("sapphire-blue2");
+}
+
+.SapphireClinician {
+    background-color: color("sapphire-clinician");
+}
+
+.SapphireDarkBlue1 {
+    background-color: color("sapphire-darkblue1");
+}
+
+.SapphireDarkBlue2 {
+    background-color: color("sapphire-darkblue2");
+}
+
+.SapphireDarkGrey {
+    background-color: color("sapphire-darkgrey");
+}
+
+.SapphireDarkText {
+    background-color: color("sapphire-darktext");
+}
+
+.SapphireMale {
+    background-color: color("sapphire-male");
+}
+
+.SapphireFemale {
+    background-color: color("sapphire-female");
+}
+
+.SapphireInactive {
+    background-color: color("sapphire-inactive");
+}
+
+.SapphireLightBoard {
+    background-color: color("sapphire-lightboard");
+}
+
+.SapphireLightContainer {
+    background-color: color("sapphire-lightcontainer");
+}
+
+.SapphireLightText {
+    background-color: color("sapphire-lighttext");
+}
+
+.SapphireWarning {
+    background-color: color("sapphire-warning");
 }

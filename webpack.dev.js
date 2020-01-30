@@ -11,6 +11,7 @@ module.exports = merge(common, {
 	output: {
 		filename: 'dev.scripts.js',
 	},
+	watch:false,
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new MiniCssExtractPlugin({
@@ -29,8 +30,7 @@ module.exports = merge(common, {
 	devtool: 'inline-source-map',
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
-		https: true,
-		writeToDisk: true,
+		writeToDisk: true
 	},
 	optimization: {
 		splitChunks: {
