@@ -1,0 +1,9 @@
+.TextInput {
+	&.Mandatory {
+    border-left: 3px solid #08a6af;
+    
+    &:focus {
+      border-left: 3px solid #08a6af;
+    }
+	}
+}

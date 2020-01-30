@@ -1,17 +1,21 @@
-a,
-a:link,
-a:visited {
-	color: #16979f;
-	font-family: $sapphire__font__face--regular;
-	text-decoration: none;
-	-webkit-transition: color 100ms ease;
-	transition: color 100ms ease;
+a {
+	&:link,
+	&:visited {
+		color: #16979f;
+		font-family: 'globeregular';
+		text-decoration: none;
+		transition: color 100ms ease;
+	}
 }
 
-.desktop a:not([disabled='disabled']):hover,
-.desktop a:link:hover,
-.desktop a:visited:hover {
-	color: #08a6af;
-	cursor: pointer;
-	text-decoration: none;
+.desktop {
+	a:link,
+	a:visited,
+	a:not([disabled='disabled']) {
+		&:hover {
+			color: #08a6af;
+			cursor: pointer;
+			text-decoration: none;
+		}
+	}
 }

@@ -1,0 +1,14 @@
+.Dropdown {
+	> div {
+		width: auto;
+	}
+}
+
+.isTouch {
+	.Dropdown,
+	.Dropdown:hover {
+		font-size: 1.1em;
+		height: 50px;
+		line-height: 1.3em;
+	}
+}
