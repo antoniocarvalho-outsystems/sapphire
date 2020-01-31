@@ -43,6 +43,10 @@
 }
 
 .Form {
+	&:not(.ReadOnly) {
+		cursor: text;
+	}
+
 	[disabled='disabled'].ReadOnly,
 	[disabled='disabled'].ReadOnly,
 	[disabled='disabled'].ReadOnly:not(.Not_Valid),

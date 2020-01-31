@@ -284,113 +284,25 @@
 }
 */
 
-
-
-
 /*------------------------------------*\
     $1. General Properties
 \*-------------------------------------*/
-
-html,
-body,
-form,
-.Page {
-    height: 100%;
-    position: relative;
-    font-family: 'globeregular', Helvetica, Arial, sans-serif;
-    font-size: 12px;
-}
-
-body {
-    background-color: #f7f4ef;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    overflow-x: hidden;
-}
-
-body,
-select,
-textarea,
-input {
-    font-family: 'globeregular', Helvetica, Arial, sans-serif;
-    color: #333;
-    font-weight: normal;
-    line-height: 1.43;
-}
-
-html,
-body,
-div,
-span,
-a,
-select,
-form,
-fieldset,
-img,
-input,
-button,
-select,
-table,
-tbody,
-thead,
-tr,
-th,
-td,
-textarea,
-optgroup,
-option,
-ul,
-li {
-    outline: 0 !important;
-}
-
-.TileIcon_text,
-.TileNumber_text,
-.TileIconText_label,
-.Heading1,
-.Heading2,
-.Heading3,
-.Heading4,
-.Header_title a,
-.EditableTable thead td,
-.TableRecords_Header {
-    font-family: 'globerbold', Helvetica, Arial, sans-serif;
-}
 
 .isTouch {
     font-size: 18px;
 }
 
-
-
 /*------------------------------------------------------------*/
 /* 1.1 General Properties > a links ***************************/
 /*------------------------------------------------------------*/
-
-div[onclick] {
-    cursor: pointer;
-    /* add a pointer cursor when the div has a click event */
-}
 
 /*------------------------------------------------------------*/
 /* 1.2 General Properties > Margins ***************************/
 /*------------------------------------------------------------*/
 
-.OSAutoMarginTop {
-    margin-top: 10px;
-}
-
-.OSInlineClear {
-    /* This style will never be used in runtime.
-    When applied in Service Studio, it will prevent the style 'OSInline' from being
-    automatically applied to divs and tables with widths != (fill parent) */
-}
-
-
-
 /*------------------------------------*\
               $2. Structure
 \*-------------------------------------*/
-
 
 /*------------------------------------------------------------*/
 /* 2.1 Structure > Header *************************************/
@@ -3819,62 +3731,9 @@ label.MandatoryLabel:after {
     left:5px;
 }
 
-
-/*------------------------------------------------------------*/
-/* 3.3 Forms > ReadOnly & Disabled ****************************/
-/*------------------------------------------------------------*/
-
-.Form:not(.ReadOnly) {
-    cursor: text;
-}
-
-.ValidationMessageContainer {
-    position: relative;
-}
-/*
-.tablet .ValidationMessageContainer span.ValidationMessage {
-    margin-left: 12%;
-}
-
-.phone .ValidationMessageContainer span.ValidationMessage {
-    margin-left: 31%;
-}*/
-
-.ValidationMessageContainer span.ValidationMessage {
-    background-color: #a55555;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    bottom: auto;
-    color: #fff;
-    font-size: .92rem;
-    font-weight: 400;
-    line-height: 14px;
-    padding: 5px;
-    pointer-events: none;
-    position: absolute;
-    left: 0;
-    text-align: right;
-    z-index: 1;
-}
-
 /*------------------------------------------------------------*/
 /* 3.4 Forms > Not Valid **************************************/
 /*------------------------------------------------------------*/
-
-.ValidationMessage {
-    position: relative;
-    text-align: right;
-}
-
-.ValidationMessageContainer input.Not_Valid {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.TextInput.Mandatory.Not_Valid {
-    border-left: 3px solid #a55555;
-}
-
 
 /*------------------------------------*\
     $4. Buit-in widgets

@@ -3,12 +3,12 @@ a.Button {
 }
 
 a.Button.Cancel {
-    color: color(black);
+    color: color(regular-black);
 }
 
 a.Button.Cancel:before {
-    content: "\e60c";
     color: #000;
+    content: "\e60c";
 }
 
 a.Button.Second.Cancel,
@@ -51,8 +51,8 @@ a.Button.Small.Cancel:before {
 .Page.isTouch .Button.Second.SearchMagnifier:hover:active,
 .Page.isTouch .Button.Second.SearchMagnifier:hover,
 .Page.isTouch .Button.Second.SearchMagnifier {
-    min-width: 50px;
     font-weight: 400;
+    min-width: 50px;
 }
 
 .Page.isTouch .Button.Second.SearchMagnifier:after {
@@ -63,8 +63,8 @@ a.Button.Small.Cancel:before {
 
 .isTouch .ButtonSquare .icon-plus {
     font-size: 2em;
-    width: 1.1em;
     height: 1.1em;
+    width: 1.1em;
 }
 
 /** width auxiliar classes **/

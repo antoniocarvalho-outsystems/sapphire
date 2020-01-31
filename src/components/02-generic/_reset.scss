@@ -2,50 +2,53 @@ html,
 body,
 form,
 .Page {
+	font-family: 'globeregular', Helvetica, Arial, sans-serif;
+	font-size: 12px;
 	height: 100%;
 	position: relative;
-	font-family: $sapphire__font__face--regular;
-	font-size: $sapphire__font__size--regular;
 }
 
 body {
-	background-color: color('background');
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background-color: #f7f4ef;
 	overflow-x: hidden;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body,
 select,
 textarea,
 input {
-	font-family: 'globeregular', Helvetica, Arial, sans-serif;
 	color: #333;
+	font-family: 'globeregular', Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	line-height: 1.43;
 }
 
-html,
-body,
-div,
-span,
 a,
-select,
-form,
+body,
+button,
+div,
 fieldset,
+form,
+html,
 img,
 input,
-button,
-select,
-table,
-tbody,
-thead,
-tr,
-th,
-td,
-textarea,
+li,
 optgroup,
 option,
-ul,
-li {
+select,
+span,
+table,
+tbody,
+td,
+textarea,
+th,
+thead,
+tr,
+ul {
 	outline: 0 !important;
+}
+
+div[onclick] {
+	cursor: pointer;
 }
