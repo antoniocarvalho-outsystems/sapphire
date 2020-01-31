@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
+
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -11,7 +12,7 @@ module.exports = merge(common, {
 	output: {
 		filename: 'dev.scripts.js',
 	},
-	watch:false,
+	watch: false,
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new MiniCssExtractPlugin({
@@ -20,7 +21,7 @@ module.exports = merge(common, {
 		new BrowserSyncPlugin(
 			{
 				files: ['./src/components/**/*.scss', './src/components/**/*.hbs'],
-				proxy: 'http://localhost:8080/',
+				proxy: 'https://localhost:8080/',
 			},
 			{
 				reload: true,
@@ -30,7 +31,9 @@ module.exports = merge(common, {
 	devtool: 'inline-source-map',
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
-		writeToDisk: true
+		https: true,
+		watchContentBase: true,
+		writeToDisk: true,
 	},
 	optimization: {
 		splitChunks: {

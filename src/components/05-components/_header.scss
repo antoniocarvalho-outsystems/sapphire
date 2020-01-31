@@ -1,0 +1,83 @@
+.Header {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	height: 50px;
+	line-height: 50px;
+	-servicestudio-overflow: hidden;
+	-servicestudio-position: relative;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+
+	&_center {
+		position: relative;
+	}
+
+	&_background {
+		background-color: #0f4e67;
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0%, #0f4e67),
+			color-stop(30%, #115672),
+			color-stop(100%, #115672)
+		);
+		background-image: -webkit-linear-gradient(
+			bottom,
+			#0f4e67 0%,
+			#115672 30%,
+			#115672 100%
+		);
+		background-image: linear-gradient(
+			to top,
+			#0f4e67 0%,
+			#115672 30%,
+			#115672 100%
+		);
+		border-bottom: 1px solid #174a65;
+		color: #fff;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+
+	&_Title {
+		float: left;
+		overflow: hidden;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&_Search {
+		display: inline-block;
+		margin-right: 20px;
+		min-width: 100px;
+	}
+
+	&_Menu {
+		display: inline-block;
+	}
+
+	&_ButtonMenu {
+		color: #fff;
+		display: none;
+		float: left;
+		font-size: 20px;
+		text-align: center;
+		width: 50px;
+	}
+
+	&_ButtonSidebar {
+		color: #fff;
+		display: none;
+		float: right;
+		font-size: 20px;
+		text-align: center;
+		width: 40px;
+	}
+}

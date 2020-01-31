@@ -1,0 +1,66 @@
+// Dropdown
+//
+// Custom select.
+//
+// .Dropdown  - Regular dropdown.
+// .Dropdown.Mandatory - Mandatory class
+// .Dropdown.Mandatory.Not_Valid - Not valid and Mandatory classes
+//
+// Markup: _dropdown.hbs
+//
+// Style guide: Components.Dropdown
+
+.Dropdown {
+	background-color: #fff;
+	// @TODO: how do we host images?
+	background-image: url('https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/dropdown_bg.png?520541');
+	background-position: right 14px center;
+	background-repeat: no-repeat;
+	border: 1px solid #c9cdce;
+	border-radius: 2px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+	color: #262626;
+	font-size: 14px;
+	height: 36px;
+	line-height: 18px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 45px;
+	padding-top: 8px;
+
+	&:hover {
+		background-color: #eff4f6;
+		border: 1px solid #b1b5b6;
+		border-radius: 2px;
+	}
+
+	&:focus {
+		border: 1px solid #16979f;
+		border-radius: 2px;
+		box-shadow: 0 1px 2px 0 #7bb2bf;
+		box-sizing: border-box;
+	}
+
+	&.Mandatory {
+		border-left: 3px solid #08a6af;
+
+		&.Not_Valid {
+			border: solid 1px #a55555;
+			border-bottom-right-radius: 0;
+			border-left: 3px solid #a55555 !important;
+			border-top-right-radius: 0;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.Dropdown {
+		background-position: left 14px center;
+		background-repeat: no-repeat;
+		font-size: 15px;
+		line-height: 19px;
+		padding: 5px 5px 5px 36px;
+	}
+}

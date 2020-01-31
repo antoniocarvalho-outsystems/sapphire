@@ -5,9 +5,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const KssConfig = {
 	title: 'Sapphire StyleGuide',
+	css: '../dev.styles.css',
 	source: path.resolve(__dirname, './src/components'),
 	destination: path.resolve(__dirname, 'dist/styleguide'),
-	css: '../dev.styles.css',
 	extend: path.resolve(__dirname, './src/helpersHandleBar'),
 };
 
@@ -37,14 +37,26 @@ module.exports = {
 			},
 			{
 				test: /\.s?[ac]ss$/,
-				use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+				use: [
+					MiniCssExtractPlugin.loader,
+					'css-loader',
+					'postcss-loader',
+					'sass-loader',
+				],
 			},
 			{
-			  test: /\.(woff|woff2|eot|ttf|otf)$/,
-			  use: [
-			    'file-loader',
-			  ],
+				test: /\.(png|jpg|gif)$/,
+				use: {
+					loader: 'file-loader',
+					options: {
+						name: '[name].[ext]',
+					},
+				},
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				use: ['file-loader'],
 			},
 		],
-	}
+	},
 };
