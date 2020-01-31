@@ -308,68 +308,6 @@
 /* 2.1 Structure > Header *************************************/
 /*------------------------------------------------------------*/
 
-.Header {
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
-    height: 50px;
-    line-height: 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 20;
-}
-
-.Header_center {
-    position: relative;
-}
-
-.tablet .Header_center.ThemeGrid_Container,
-.phone .Header_center.ThemeGrid_Container {
-    padding: 0;
-}
-
-/* Structure > Header Background */
-.Header_background {
-    background-color: #0f4e67;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0f4e67), color-stop(30%, #115672), color-stop(100%, #115672));
-    background-image: -webkit-linear-gradient(bottom, #0f4e67 0%, #115672 30%, #115672 100%);
-    background-image: linear-gradient(to top, #0f4e67 0%, #115672 30%, #115672 100%);
-    border-bottom: 1px solid #174a65;
-    color: #fff;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-.Page.UseHeaderFade .Header .Header_background {
-    display: none;
-}
-
-/* Structure > Header Title */
-.Header_Title {
-    float: left;
-    overflow: hidden;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.phone .Header_Title {
-    left: 60px;
-    position: absolute;
-    right: 60px;
-    text-align: center;
-}
-
-/* Structure > Header Search */
-.Header_Search {
-    display: inline-block;
-    margin-right: 20px;
-    min-width: 100px;
-}
-
 /* Search inside header */
 .Search_wrapper input[type="text"] {
     background-color: #fff;
@@ -446,52 +384,10 @@
     top: 19px;
 }
 
-.Header .Search_wrapper input[type="text"] {
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 30px;
-    color: #fff;
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
-    width: 100px;
-}
-
-.Header .Search_wrapper input[type="text"]:focus {
-    border: 1px solid rgba(255, 255, 255, .3);
-    width: 200px;
-}
-
-.Header .Search_wrapper:after {
-    color: #cdcdcd;
-    left: 10px;
-    pointer-events: none;
-}
-
 .phone .Application_Menu .Others_Menu .Header_Search {
     margin-left: 30px;
     margin-right: 0;
 }
-
-/* Structure > Header Menu */
-.Header_Menu,
-.Header_Menu .ListRecords {
-    display: inline-block;
-
-}
-
-.Header_Menu a,
-.Header_Menu a:link,
-.Header_Menu a:visited {
-    color: #8dbecc;
-}
-
-.Header_Menu a:hover,
-.Header_Menu a:link:hover,
-.Header_Menu a:visited:hover {
-    background-color: #0a2d40;
-    color: #fff;
-}
-
 
 /* Structure > Header Others Menu */
 .Others_Menu {
@@ -542,31 +438,6 @@
 .phone .Application_Menu .Others_Menu .Login_Info .Logout_Icon {
     position: absolute;
     right: 15px;
-}
-
-
-/* Structure > Header Button Menu */
-a.Header_ButtonMenu {
-    color: #fff;
-    display: none;
-    float: left;
-    font-size: 20px;
-    text-align: center;
-    width: 50px;
-}
-
-.desktop a.Header_ButtonMenu {
-    color: #dab702;
-}
-
-.tablet a.Header_ButtonMenu,
-.phone a.Header_ButtonMenu {
-    display: block;
-    width: 50px;
-}
-
-.Page.active .Header_ButtonMenu {
-    color: #fff;
 }
 
 
@@ -623,11 +494,6 @@ a.Login_Info_Username:visited {
     color: #fff;
     padding-right: 10px;
     text-decoration: none;
-}
-
-.Header .Application_Title img {
-    max-height: 30px;
-    vertical-align: middle;
 }
 
 /* Responsive Context */
@@ -993,20 +859,6 @@ body.ResizeParentIframe .MainContent {
 /*------------------------------------------------------------*/
 /* 2.5 Structure > Sidebar ************************************/
 /*------------------------------------------------------------*/
-
-a.Header_ButtonSidebar {
-    color: #fff;
-    display: none;
-    float: right;
-    font-size: 20px;
-    text-align: center;
-    width: 40px;
-}
-
-.desktop.small.UseSidebar a.Header_ButtonSidebar,
-.tablet.UseSidebar a.Header_ButtonSidebar {
-    display: block;
-}
 
 .Sidebar {
     border-left: 1px solid #ddd;
@@ -20165,8 +20017,6 @@ body.confirmation-opened {
     height: auto;
 }
 
-/*Header*/
-
 .HospitalizationPlan_Header {
 
     border-bottom: 1px solid #EBEBEB;
@@ -30590,63 +30440,6 @@ html .AR.tablet .ThemeGrid_Width12 {
     right: 260px;
 }
 
-.FA.Header_title,
-.AR.Header_title {
-    padding-left: 0;
-    padding-right: 30px;
-    left: auto;
-    right: 0;
-    border-right: none;
-    border-left: 1px solid #D5DBDE;
-}
-
-.FA.tablet .Header_title,
-.FA.phone .Header_title,
-.AR.tablet .Header_title,
-.AR.phone .Header_title {
-    border-left: none;
-}
-
-.FA.phone .Header_title,
-.AR.phone .Header_title {
-    margin-left: auto;
-    margin-right: 40px;
-}
-
-.FA .Header_title a img,
-.AR .Header_title a img {
-    margin-right: auto;
-    margin-left: 5px;
-}
-
-.FA .Header_title a,
-.FA .Header_title a:link,
-.FA .Header_title a:visited,
-.FA .Header_title a:hover,
-.AR .Header_title a,
-.AR .Header_title a:link,
-.AR .Header_title a:visited,
-.AR .Header_title a:hover {
-    margin-right: auto;
-    margin-left: 10px;
-}
-
-.FA .Header_search,
-.AR .Header_search {
-    left: auto;
-    right: 300px;
-    padding-right: 20px;
-    padding-left: 420px;
-}
-
-.FA .Header_user,
-.AR .Header_user {
-    right: auto;
-    left: 0;
-    padding-right: auto;
-    padding-left: 20px;
-}
-
 .FA .LoginInfo_username img,
 .AR .LoginInfo_username img {
     margin-right: auto;
@@ -31531,11 +31324,6 @@ div.LineInfo {
 
 .Panel {
     -servicestudio-display: none !important;
-}
-
-.Header {
-    -servicestudio-overflow: hidden;
-    -servicestudio-position: relative;
 }
 
 .MainContent {
@@ -34408,29 +34196,3 @@ a.Button.DisplayBlock {
 .zindex-150 {
     z-index: 150!important;
 }
-
-
-
-
-
-
-/* ExcludeFromPickers: ActionAdd, ActionChange, ActionDelete, ActionEdit, Actions, Application_Menu, Badge, 
-Breadcrumbs, BreadcrumbsContainer, Content, ControlActions, desktop, EditableTable, EditRecord, EditRecord_Buttons, 
-fa, Feedback_AjaxWait, Feedback_Message_Error, Feedback_Message_Info, Feedback_Message_Success, Feedback_Message_Warning, 
-Feedback_Message_Wrapper, Feedback_Message_Wrapper_Close, Filters_Wrapper, 
-Footer, Form, Header, Header__activity, Header__loginInfo, Header_buttonMenu, Header_search, 
-Header_title, Header_user, HeaderPage, ie, ie10, ie11, ie8, InEditMode, ListNavigation_CurrentPageNumber, 
-ListNavigation_DisabledNext, ListNavigation_DisabledPrevious, ListNavigation_Ellipsis, ListNavigation_Next, ListNavigation_PageNumber, 
-ListNavigation_Previous, Loader, Login__Form, Login__Logo, Login_Box, Login_Footer, Login_Text, LoginInfo, LoginInfo_username, MainContent, 
-MainPopup, Menu, Menu_DropDownArrow, Menu_DropDownButton, Menu_DropDownPanel, Menu_SubItemsPlaceholder, Menu_SubMenuItem, 
-Menu_SubMenuItemActive, Menu_TopMenu, Menu_TopMenuActive, Menu_TopMenus, menuOpen, MenuSlider_Toggler, mini, Not_Valid, OnEdit, open, 
-OSAutoMarginTop, OSInlineClear, Page, phone, portait, Responsive, RowControlGroup, RowWithAddAction, select2-choice, select2-container, 
-Selected, ShowRecord, SmartInput_Undo, TableRecords, TableRecords_EvenLine, TableRecords_Header, TableRecords_OddLine, tablet, 
-ThemeGrid_Container, ThemeGrid_MarginGutter, ThemeGrid_Width12, ThemeGrid_Wrapper, Title, Title_Section, 
-MultiPaddingLeft5, MultiPaddingLeft10, MultiPaddingLeft15, MultiPaddingLeft20, MultiPaddingLeft25, MultiPaddingLeft30, 
-MultiPaddingLeft40, MultiPaddingRight5, MultiPaddingRight10, MultiPaddingRight15, MultiPaddingRight20, MultiPadding25, 
-MultiPaddingRight30, MultiPaddingRight40, MultiPadding5, MultiPadding10, MultiPadding15, MultiPadding20, MultiPadding25, 
-MultiPadding30, MultiPadding40, MultiPaddingTop5, MultiPaddingTop10, MultiPaddingTop15, MultiPaddingTop20, MultiPadding25, 
-MultiPaddingBottom5, MultiPaddingBottom10, MultiPaddingBottom15, MultiPaddingBottom20, MultiPaddingBottom25, MarginBottom5, 
-MarginBottom10, MarginBottom20, MultiMarginLeft3, MultiMarginLeft5, MultiMarginLeft10, MultiMarginLeft15, MultiMarginLeft20, 
-MultiMarginRight5, MultiMarginRight10, MultiMarginRight15, MultiMarginRight20,DeviceFullWidth,DeviceMiddleWidth*/

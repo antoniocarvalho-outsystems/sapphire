@@ -1,14 +1,34 @@
-//Inputs
+// Controls
 //
 // Basic HTML controls such as inputs, radio, checkbox, select and textarea.
 //
-//Markup: _input.hbs
+//Style guide: Controls
+
+// Input
 //
+// Input element
 //
+// .Mandatory - (class)
 //
+// Markup: _input.hbs
 //
+//Style guide: Controls.Input
+
+// Checkbox
 //
-//Style guide: Inputs
+// Checkbox element
+//
+// Markup: _checkbox.hbs
+//
+//Style guide: Controls.Checbox
+
+// Radio
+//
+// Radio element
+//
+// Markup: _radio.hbs
+//
+//Style guide: Controls.Radio
 
 input {
 	&::-webkit-outer-spin-button,

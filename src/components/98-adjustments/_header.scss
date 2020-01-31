@@ -1,0 +1,151 @@
+.Header {
+	&_Menu {
+		a,
+		a:link,
+		a:visited {
+			color: #8dbecc;
+
+			&:hover {
+				background-color: #0a2d40;
+				color: #fff;
+			}
+		}
+
+		.ListRecords {
+			display: inline-block;
+		}
+	}
+
+	.Search_wrapper {
+		&:after {
+			color: #cdcdcd;
+			left: 10px;
+			pointer-events: none;
+		}
+
+		input[type='text'] {
+			background-color: transparent;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			border-radius: 30px;
+			color: #fff;
+			transition: all 300ms ease;
+			width: 100px;
+
+			&:focus {
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				width: 200px;
+			}
+		}
+	}
+
+	.Application_Title img {
+		max-height: 30px;
+		vertical-align: middle;
+	}
+}
+
+.tablet,
+.phone {
+	.Header_center {
+		&.ThemeGrid_Container {
+			padding: 0;
+		}
+	}
+
+	a.Header_ButtonMenu {
+		display: block;
+		width: 50px;
+	}
+}
+
+.desktop,
+.tablet {
+	&.UseSidebar,
+	&.small.UseSidebar {
+		a.Header_ButtonSidebar {
+			display: block;
+		}
+	}
+}
+
+.phone {
+	.Header_Title {
+		left: 60px;
+		position: absolute;
+		right: 60px;
+		text-align: center;
+	}
+}
+
+.desktop {
+	a.Header_ButtonMenu {
+		color: #dab702;
+	}
+}
+
+.Page {
+	&.active {
+		.Header_ButtonMenu {
+			color: #fff;
+		}
+	}
+
+	&.UseHeaderFade {
+		.Header .Header_background {
+			display: none;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.Header_title {
+		border-left: 1px solid #d5dbde;
+		border-right: none;
+		left: auto;
+		padding-left: 0;
+		padding-right: 30px;
+		right: 0;
+
+		a img {
+			margin-left: 5px;
+			margin-right: auto;
+		}
+
+		a,
+		a:link,
+		a:visited,
+		a:hover {
+			margin-left: 10px;
+			margin-right: auto;
+		}
+	}
+
+	.Header_user {
+		left: 0;
+		padding-left: 20px;
+		padding-right: auto;
+		right: auto;
+	}
+
+	.Header_search {
+		left: auto;
+		padding-left: 420px;
+		padding-right: 20px;
+		right: 300px;
+	}
+
+	.tablet,
+	.phone {
+		.Header_title {
+			border-left: none;
+		}
+	}
+
+	.phone {
+		.Header_Title {
+			margin-left: auto;
+			margin-right: 40px;
+		}
+	}
+}
