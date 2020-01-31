@@ -1,3 +1,15 @@
+// Dropdown
+//
+// Custom select.
+//
+// .Dropdown  - Regular dropdown.
+// .Dropdown.Mandatory - Mandatory class
+// .Dropdown.Mandatory.Not_Valid - Not valid and Mandatory classes
+//
+// Markup: _dropdown.hbs
+//
+// Style guide: Components.Dropdown
+
 .Dropdown {
 	background-color: #fff;
 	// @TODO: how do we host images?
@@ -32,7 +44,6 @@
 
 	&.Mandatory {
 		border-left: 3px solid #08a6af;
-
 
 		&.Not_Valid {
 			border: solid 1px #a55555;
