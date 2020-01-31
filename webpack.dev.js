@@ -23,7 +23,7 @@ module.exports = merge(common, {
 				proxy: 'http://localhost:8080/',
 			},
 			{
-				reload: false,
+				reload: true,
 			}
 		),
 	],
@@ -44,5 +44,4 @@ module.exports = merge(common, {
 			},
 		},
 	},
-	watch: true,
 });

@@ -1,4 +1,5 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const KssWebpackPlugin = require('kss-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -10,13 +11,21 @@ const KssConfig = {
 	extend: path.resolve(__dirname, './src/helpersHandleBar'),
 };
 
+const outputPath = path.join(__dirname, 'dist');
+
 module.exports = {
 	entry: path.resolve(__dirname, './src/components/index.js'),
 	output: {
-		path: path.join(__dirname, 'dist'),
+		path: outputPath,
 		publicPath: '/dist/',
 	},
-	plugins: [new KssWebpackPlugin(KssConfig)],
+	plugins: [
+		new CleanWebpackPlugin({
+			cleanOnceBeforeBuildPatterns: [`${outputPath}/*.hot-update.*`],
+    	dry: false,
+    	dangerouslyAllowCleanPatternsOutsideProject: true
+		}),
+		new KssWebpackPlugin(KssConfig)],
 	node: {
 		fs: 'empty',
 	},
