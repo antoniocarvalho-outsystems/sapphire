@@ -248,42 +248,6 @@
         $0. Fonts
 \*-------------------------------------*/
 
-/* Fonts > Import Font */
-
-/*
-@font-face {
-    font-family: 'globeregular';
-    src: url('fonts/glober_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'globerbold';
-    src: url('fonts/glober_bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'droidsansbold';
-    src: url('fonts/droidSans_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sapphire-Icon-Font';
-    src: url('fonts/Sapphire-Icon-Font.eot');
-    src: url('fonts/Sapphire-Icon-Font.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Sapphire-Icon-Font.woff') format('woff'),
-        url('fonts/Sapphire-Icon-Font.ttf') format('truetype'),
-        url('fonts/Sapphire-Icon-Font.svg?#Sapphire-Icon-Font') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
-
 /*------------------------------------*\
     $1. General Properties
 \*-------------------------------------*/
@@ -855,51 +819,9 @@ body.ResizeParentIframe .MainContent {
     pointer-events: none;
 }
 
-
 /*------------------------------------------------------------*/
 /* 2.5 Structure > Sidebar ************************************/
 /*------------------------------------------------------------*/
-
-.Sidebar {
-    border-left: 1px solid #ddd;
-    height: 100%;
-    padding: 20px 10px;
-    position: fixed;
-    right: -320px;
-    top: 50px;
-    width: 300px;
-}
-
-.desktop .Sidebar,
-.desktop.hd .Sidebar,
-.desktop.big .Sidebar {
-    right: 0;
-}
-
-.desktop.small .Sidebar,
-.tablet .Sidebar {
-    background-color: #edf1f3;
-    right: -300px;
-    -webkit-transition: -webkit-transform 300ms ease;
-    transition: transform 300ms ease;
-}
-
-.desktop.small .Sidebar.open,
-.tablet .Sidebar.open {
-    -webkit-transform: translateX(-300px);
-    transform: translateX(-300px);
-}
-
-.ie8.desktop.small .Sidebar.open {
-    right: 0px;
-}
-
-.phone .Sidebar {
-    position: relative;
-    right: 0;
-    width: 100%;
-}
-
 
 /*------------------------------------------------------------*/
 /* 2.6 Structure > Title Section ******************************/
@@ -6140,70 +6062,6 @@ a .ListItem:after {
 /*------------------------------------------------------------*/
 /* 8.1 Usefull Classes > Text Classes *************************/
 /*------------------------------------------------------------*/
-
-.Heading1 {
-    color: #262525;
-    font-family: "globerbold";
-    font-size: 2em;
-    font-weight: 400;
-    line-height: 1.4;
-}
-
-.Heading2 {
-    color: #262525;
-    font-family: "globerbold";
-    font-size: 1.8em;
-    font-weight: 400;
-    line-height: 1.4;
-}
-
-.Heading3 {
-    color: #11455D;
-    font-family: "globerbold";
-    font-size: 1.5em;
-    font-weight: 400;
-    line-height: 1.4;
-}
-
-.Heading4 {
-    color: #262525;
-    font-family: "globerbold";
-    font-size: 1.3em;
-    font-weight: 400;
-    line-height: 1.4;
-}
-
-.Heading5 {
-    color: #707070;
-    font-family: "globerbold";
-    font-size: 1.1em;
-    font-weight: 400;
-    line-height: 1.4;
-}
-
-.Label {
-    border-radius: 10px;
-    padding: 2px 8px;
-    background-color: transparent;
-    max-height:20px;
-}
-
-.Text_Note {
-    color: #5f6f79;
-    font-size: 12px;
-}
-
-.Uppercase {
-    text-transform: uppercase;
-}
-
-.VerticalInputLabel {
-    color: #868687;
-    font-family: globeregular;
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 1;
-}
 
 /*------------------------------------------------------------*/
 /* 8.2 Usefull Classes > Buttons ******************************/
@@ -17912,191 +17770,6 @@ a.ButtonSquare.White>span.icon:hover,
 /*-------------------------------------------------------------------------------------*/
 /* 9.99 Sapphire Patterns > SapphireWidgets > iconLabel *********/
 /*-------------------------------------------------------------------------------------*/
-
-/*
-
-.icon:after {
-    content: "N/A";
-}
-
-.IconVertical:hover,
-.IconHorizontal:hover {
-    text-decoration: none;
-}
-
-.IconVertical {
-    margin-right: 5px;
-    min-width: 50px;
-}
-
-.IconVertical.iconBorder {
-    padding: 0 5px 0 10px;
-}
-
-
-.FA .IconVertical,
-.AR .IconVertical {
-    padding: 0 10px 0 5px;
-}
-
-.iconHorizontal {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-}
-
-.iconHorizontal.iconBorder {
-    padding: 0 5px 0 10px;
-}
-
-.FA .iconHorizontal,
-.AR .iconHorizontal {
-    padding: 0 10px 0 5px;
-}
-
-.iconHorizontal_icon {
-    text-align: center;
-}
-
-.iconHorizontal_icon span.icon {
-    display: inline-block;
-    margin-right: 4px;
-}
-
-.iconHorizontal_icon span.icon.icon-lg {
-    margin-right: 4px;
-}
-
-.iconHorizontal_icon span.icon.icon-1x {
-    margin-right: 4px;
-}
-
-.iconHorizontal_icon span.icon.icon-2x {
-    margin-right: 7px;
-}
-
-.iconHorizontal_icon span.icon.icon-3x {
-    margin-right: 5px;
-}
-
-.iconHorizontal_icon span.icon.icon-4x {
-    margin-right: 5px;
-}
-
-
-
-.iconHorizontal_icon,
-.iconVertical_icon {
-    color: #16979f;
-    font-weight: 600;
-}
-
-.iconVertical_icon {
-    margin-bottom: 5px;
-}
-
-
-
-.InvertIconLabel .iconHorizontal_icon {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.FA .iconHorizontal_icon,
-.AR .iconHorizontal_icon {
-    margin-right: 0;
-    margin-left: 10px !important;
-}
-
-.iconHorizontal_label,
-.iconVertical_label {
-    font-weight: 400;
-    text-decoration: none;
-    color: #262525;
-    font-family: 'globeregular', Helvetica, Arial, sans-serif;
-}
-
-
-.iconVertical_label.LabelGreen,
-.iconHorizontal_label.LabelGreen {
-    color: #16979F;
-    font-weight: 600;
-}
-
-.FA .iconVertical_label.LabelGreen,
-.FA .iconHorizontal_label.LabelGreen,
-.AR .iconVertical_label.LabelGreen,
-.AR .iconHorizontal_label.LabelGreen {
-    color: #262525;
-    font-weight: 600;
-}
-
-
-.iconBorder {
-    border-left: solid 1px #d8d8d8;
-    border-right: 0;
-}
-
-.FA .iconBorder,
-.AR .iconBorder {
-    border-right: solid 1px #d8d8d8;
-    border-left: 0;
-}
-
-
-.iconHorizontal_icon.IconGreenColor {
-    color: #00BFA5;
-
-}
-
-.iconHorizontal_icon.IconYellowColor {
-    color: #FFA000;
-}
-
-.iconHorizontal_icon.IconRedColor {
-    color: #FF3E2D;
-}
-
-.iconHorizontal_icon.IconBlackColor {
-    color: #11455D;
-    font-weight: bold;
-}
-
-.iconVertical_icon.IconGreenColor {
-    color: #00BFA5;
-
-}
-
-.iconVertical_icon.IconYellowColor {
-    color: #FFA000;
-}
-
-.iconVertical_icon.IconRedColor {
-    color: #FF3E2D;
-}
-
-.iconVertical_icon.IconBlackColor {
-    color: #11455D;
-}
-
-
-.iconHorizontal_icon.AllGreenIcon .icon,
-.iconVertical_icon.AllGreenIcon .icon {
-    color: #16979f;
-}
-
-.InvertIconLabel .iconHorizontal {
-    transform: scale(-1, 1);
-    text-align: left;
-}
-
-.InvertIconLabel .iconHorizontal>div {
-    transform: scale(-1, 1);
-}
-
-*/
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.100 Sapphire Patterns > SapphireWidgets > ImagePlaceholder *********/
@@ -31247,20 +30920,6 @@ div.UnitDropContainer div.DoctorName.Dragging {
 .AR .PatientAgeMonthContainer {
     margin-top: -5px;
 }
-
-
-/* Usefull Classes */
-.VerticalAlignMiddle {
-    vertical-align: middle !important;
-}
-
-.VerticalAlignMiddle .Columns .Column {
-    vertical-align: middle;
-}
-
-
-
-
 
 .AutoHeight {
     height: auto !important;

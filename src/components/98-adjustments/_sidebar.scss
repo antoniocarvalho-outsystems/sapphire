@@ -1,0 +1,38 @@
+.desktop {
+	&,
+	&.hd,
+	&.big {
+		.Sidebar {
+			right: 0;
+		}
+	}
+}
+
+.desktop.small,
+.tablet {
+	.Sidebar {
+		background-color: #edf1f3;
+		right: -300px;
+		transition: transform 300ms ease;
+
+		&.open {
+			transform: translateX(-300px);
+		}
+	}
+}
+
+.phone {
+	.Sidebar {
+		position: relative;
+		right: 0;
+		width: 100%;
+	}
+}
+
+.ie8 {
+	&.desktop.small {
+		.Sidebar.open {
+			right: 0px;
+		}
+	}
+}
