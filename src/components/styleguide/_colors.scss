@@ -1,0 +1,254 @@
+// Colors
+//
+// Colors:
+// .Beige                 : #e6e2aa  
+// .Black                 : #131819  
+// .Blue                  : #0074c1        
+// .BlueLight             : #d3eff0    
+// .BlueNavy              : #EDF7F9      
+// .BodyColor             : #f7f4ef    
+// .Brown                 : #ca2c92
+// .DarkBeige             : #928D09
+// .DarkBlue              : #194968
+// .DarkGrey              : #ca2c92
+// .DarkOrange            : #cd7d00
+// .DarkPlum              : #970263
+// .DarkRed               : #b10000
+// .Gray                  : #79868a
+// .Green                 : #388e3c
+// .Grey                  : #79868a
+// .Light                 : #ca2c92
+// .LightBlue             : #ca2c92
+// .LightGreen            : #C2DEA8
+// .LightGrey             : #ca2c92
+// .LightOrange           : #fcc891
+// .LightRed              : #f9d5d5
+// .LightTurquoise        : #E6F4F5
+// .LightYellow           : #feffc9
+// .Orange                : #da6802
+// .Pink                  : #ca2c92
+// .PinkLight             : #fff7f7
+// .Plum                  : #c32b87
+// .Red                   : #d01a1a
+// .SapphireBackground    : #ca2c92
+// .SapphireBlue          : #11455D
+// .SapphireBlue2         : #16979F
+// .SapphireClinician     : #DAE0E4
+// .SapphireDarkBlue1     : #0C1D22
+// .SapphireDarkBlue2     : #113041
+// .SapphireDarkGrey      : #7C7F7F
+// .SapphireDarkText      : #262626
+// .SapphireFemale        : #6F4065
+// .SapphireInactive      : #B1B5B6
+// .SapphireLight         : #E6F3F5
+// .SapphireLightBoard    : #C9CDCE
+// .SapphireLightContainer: #EBEBEB
+// .SapphireLightText     : #F2F2F2
+// .SapphireLightText2    : #ca2c92
+// .SapphireMale          : #11394F
+// .SapphireSilver        : #F3F3F3
+// .SapphireWarning       : #CD0005
+// .SapphireWhite         : #FFFFFF
+// .Silver                : #dadbde
+// .Transparent           : #ca2c92
+// .Turquoise             : #00b0c1
+// .White                 : #fff
+// .Yellow                : #EABD30
+//
+// Style guide: Colors
+
+$regular-beige: #e6e2aa;
+$regular-black: #131819;
+$regular-blue: #0074c1;
+$blue-light:#d3eff0;
+$blue-navy:#EDF7F9;
+$body-color:#f7f4ef;
+$regular-brow:#ca2c92;
+$dark-beige:#928D09;
+$dark-blue:#194968;
+$dark-grey:#ca2c92;
+$dark-orange:#cd7d00;
+$dark-plum:#970263;
+$dark-red:#b10000;
+$regular-gray:#79868a;
+$regular-green:#388e3c;
+$regular-grey:#79868a;
+$regular-light:#ca2c92;
+$light-blue:#ca2c92;
+$light-green:#c2dea8;
+$light-orange:#fcc891;
+$light-red:#f9d5d5;
+$light-turquoise:#e6f4f5;
+$light-yellow:#feffc9;
+$regular-orange:#da6802;
+$regular-pink:#ca2c92;
+$pink-light:#fff7f7;
+$regular-plum:#c32b87;
+$regular-red: #d01a1a;
+$sapphire-background:#ca2c92;
+$sapphire-blue:#11455D;
+$sapphire-blue2:#16979F;
+$sapphire-clinician:#DAE0E4;
+$sapphire-darkblue1:#0C1D22;
+$sapphire-darkblue2:#113041;
+$sapphire-darkgrey:#7C7F7F;
+$sapphire-dark-text:#262626;
+$sapphire-female:#6F4065;
+$sapphire-inactive:#B1B5B6;
+$sapphire-light:#E6F3F5;
+$sapphire-light-board:#C9CDCE;
+$sapphire-light-container:#EBEBEB;
+$sapphire-light-text:#F2F2F2;
+$sapphire-light-text2:#ca2c92;
+$sapphire-male:#11394F;
+$sapphire-silver:#f3f3f3;
+$sapphire-warning:#CD0005;
+$regular-silver:#dadbde;
+$transparent:#ca2c92;
+$regular-turquoise:#00b0c1;
+$regular-white:#fff;
+$regular-yellow:#eabd30;
+
+
+$sapphire__colors: (regular-beige: #e6e2aa,
+    regular-black: #131819,
+    regular-blue: #0074c1,
+    blue-light:#d3eff0,
+    blue-navy:#EDF7F9,
+    body-color:#f7f4ef,
+    regular-brow:#ca2c92,
+    dark-beige:#928D09,
+    dark-blue:#194968,
+    dark-grey:#ca2c92,
+    dark-orange:#cd7d00,
+    dark-plum:#970263,
+    dark-red:#b10000,
+    regular-gray:#79868a,
+    regular-green:#388e3c,
+    regular-grey:#79868a,
+    regular-light:#ca2c92,
+    light-blue:#ca2c92,
+    light-green:#c2dea8,
+    light-orange:#fcc891,
+    light-red:#f9d5d5,
+    light-turquoise:#e6f4f5,
+    light-yellow:#feffc9,
+    regular-orange:#da6802,
+    regular-pink:#ca2c92,
+    pink-light:#fff7f7,
+    regular-plum:#c32b87,
+    regular-red: #d01a1a,
+    sapphire-background:#ca2c92,
+    sapphire-blue:#11455D,
+    sapphire-blue2:#16979F,
+    sapphire-clinician:#DAE0E4,
+    sapphire-darkblue1:#0C1D22,
+    sapphire-darkblue2:#113041,
+    sapphire-darkgrey:#7C7F7F,
+    sapphire-dark-text:#262626,
+    sapphire-female:#6F4065,
+    sapphire-inactive:#B1B5B6,
+    sapphire-light:#E6F3F5,
+    sapphire-light-board:#C9CDCE,
+    sapphire-light-container:#EBEBEB,
+    sapphire-light-text:#F2F2F2,
+    sapphire-light-text2:#ca2c92,
+    sapphire-male:#11394F,
+    sapphire-silver:#f3f3f3,
+    sapphire-warning:#CD0005,
+    regular-silver:#dadbde,
+    transparent:#ca2c92,
+    regular-turquoise:#00b0c1,
+    regular-white:#fff,
+    regular-yellow:#eabd30,
+    gray-darker: #333,
+    gray-light: #d9d9d9,
+    gray-lighter: #f2f2f2,
+    primary-darker: #0a2d40,
+    primary-dark: #0e4056,
+    primary-light: #006185,
+    primary-lighter: #00698e,
+    secondary-dark: #08a6af,
+    secondary-darker:#16979f,
+    secondary: #0cb3bf,
+    secondary-light: #0ebec8,
+    secondary-lighter: #7bb2bf,
+
+);
+
+
+
+
+$gray-darker: #333;
+$gray-light: #d9d9d9;
+$gray-lighter: #f2f2f2;
+$primary-darker: #0a2d40;
+$primary-dark: #0e4056;
+$primary-light: #006185;
+$primary-lighter: #00698e;
+$secondary-dark: #08a6af;
+$secondary-darker:#16979f;
+$secondary: #0cb3bf;
+$secondary-light: #0ebec8;
+$secondary-lighter: #7bb2bf;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $color-black:#262525;
+// $color-dark-blue:#124A61;
+// $color-green:#a9ba37;
+// $color-red:#C23E32;
+// $color-text-red:#c7331f;
+// $color-turquoise:#14A7AF;
+// $color-turquoise2:#08A6AF;
+// $color-yellow:#edca0a;
+// $text-black:#262525;
+// $text-blue:#2980b9;
+// $text-dark-blue:#2c3e50;
+// $text-Dark-blue:#0D1D22;
+// $text-dark-plum:#970263;
+// $text-dark-red:#c0392b;
+// $text-gray:#7f8c8d;
+// $text-green:#27ae60;
+// $text-light-green:#C2DEA8;
+// $text-orange:#f39c12;
+// $text-plum:#9b59b6;
+// $text-red:#e74c3c;
+// $text-sapphire-background:#F5F1EB;
+// $text-sapphire-blue:#11455D;
+// $text-sapphire-blue2: #16979F;
+// $text-sapphire-clinician:#DAE0E4;
+// $text-sapphire-dark-blue1:#0C1D22;
+// $text-sapphire-dark-blue2:#113041;
+// $text-sapphire-dark-grey:#7C7F7F;
+// $text-sapphire-dark-text:#262626;
+// $text-sapphire-male:#11394F;
+// $text-sapphire-female:#6F4065;
+// $text-sapphire-inactive:#B1B5B6;
+// $text-sapphire-lighness-text:#F2F2F2;
+// $text-sapphire-light-board:#C9CDCE;
+// $text-sapphire-light-container:#EBEBEB;
+// $text-sapphire-light-text:#4D5C66;
+// $text-sapphire-warning:#CD0005;
+// $text-sapphire-white:#fff;
+// $text-silver:#bdc3c7;
+// $text-turquoise:#1abc9c;
+// $text-yellow:#EAB62B;

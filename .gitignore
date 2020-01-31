@@ -3,3 +3,4 @@ node_modules
 dist/*
 !dist/sapphire.scripts.js
 !dist/sapphire.styles.css
+GB/*

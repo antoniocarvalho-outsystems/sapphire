@@ -21,7 +21,7 @@ a.Button {
     display: inline-block;
     border: 1px solid color(primary-dark);
     border-radius: 2px;
-    background-color: color(primary);
+    background-color: color(sapphire-blue);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     height: 3rem;
     font-family: 'globerbold';
@@ -68,7 +68,7 @@ a.ButtonDefault:active,
 a.Button.Is_Default:active,
 input.Button:active,
 a.Button:active {
-    border: 1px solid color(primary);
+    border: 1px solid color(sapphire-blue);
     background-color: color(primary-light);
     text-decoration: none;
 }
@@ -80,7 +80,7 @@ a.Button.Is_Default:focus,
 input.Button:focus,
 a.Button:focus,
 .desktop a.Button:focus {
-    border: 1px solid color(primary);
+    border: 1px solid color(sapphire-blue);
     background: linear-gradient(180deg, color(primary-lighter) 0%, color(primary-light) 100%);
     box-shadow: inset 0 2px 0 0 color(primary-lighter), 0 0 0 2px #FFFFFF, 0 0 1px 3px color(primary-lighter);
     text-decoration: none;
@@ -97,7 +97,7 @@ a.Button:hover:active,
 .desktop .Button.Is_Default:hover,
 .desktop .Button.ButtonDefault:hover:active,
 .desktop .Button.Is_Default:hover:active {
-    border: 1px solid color(primary);
+    border: 1px solid color(sapphire-blue);
     background: linear-gradient(180deg, color(primary-lighter) 0%, color(primary-light) 100%);
     box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     color: #fff;
@@ -486,7 +486,7 @@ a.Button.Big:active,
 }
 
 a.Button.Big:hover {
-    border: 1px solid color(primary);
+    border: 1px solid color(sapphire-blue);
     background: linear-gradient(180deg, color(primary-lighter) 0%, color(primary-light) 100%);
     box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     font-size: 30px;
