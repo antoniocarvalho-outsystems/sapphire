@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
+
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -11,7 +12,7 @@ module.exports = merge(common, {
 	output: {
 		filename: 'dev.scripts.js',
 	},
-	watch:false,
+	watch: false,
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new MiniCssExtractPlugin({
@@ -31,6 +32,7 @@ module.exports = merge(common, {
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
 		https: true,
+		watchContentBase: true,
 		writeToDisk: true,
 	},
 	optimization: {

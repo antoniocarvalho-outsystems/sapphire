@@ -1,6 +1,5 @@
 const path = require('path');
 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const KssWebpackPlugin = require('kss-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -18,7 +17,7 @@ module.exports = {
 		path: path.join(__dirname, 'dist'),
 		publicPath: '/dist/',
 	},
-	plugins: [new CleanWebpackPlugin(), new KssWebpackPlugin(KssConfig)],
+	plugins: [new KssWebpackPlugin(KssConfig)],
 	node: {
 		fs: 'empty',
 	},
@@ -47,11 +46,9 @@ module.exports = {
 				},
 			},
 			{
-			  test: /\.(woff|woff2|eot|ttf|otf)$/,
-			  use: [
-			    'file-loader',
-			  ],
+				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				use: ['file-loader'],
 			},
 		],
-	}
+	},
 };

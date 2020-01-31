@@ -3690,14 +3690,6 @@ label.MandatoryLabel:after {
 
 /*----------------------InputIconSapphire Input---------------------------------------*/
 
-.BigInput,
-.BigInput input,
-.BigInput select {
-    font-size: 24px;
-    height: 45px;
-    width: 100%;
-}
-
 .InputIconSapphire {
     position: relative;
 }
@@ -31893,18 +31885,6 @@ div.LineInfo {
 .GraphStructure>div:last-child div {
     -servicestudio-background-color: #fff;
     -servicestudio-width: 100% !important;
-}
-
-
-.BigInput div {
-    -servicestudio-width: 100%;
-    -servicestudio-white-space: nowrap;
-    -servicestudio-margin-bottom: 40px;
-}
-
-.BigInput select,
-.BigInput input {
-    -servicestudio-margin-left: 100px;
 }
 
 .FileContainer {
