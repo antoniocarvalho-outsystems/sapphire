@@ -6,8 +6,9 @@
 // Markup: _headings.hbs
 //
 //Style guide: Typography.Headings
+
 .Heading1 {
-	font-family: $sapphire__font__face--bold;
+	font-family: $font-family;
 	font-size: 2em;
 	font-weight: 400;
 	line-height: 1.4;
@@ -15,32 +16,32 @@
 
 .Heading2 {
 	color: #262525;
-	font-family: 'globerbold';
-	font-size: 1.8em;
+	font-family: $font-family;
+	font-size: 1.667em;
 	font-weight: 400;
 	line-height: 1.4;
 }
 
 .Heading3 {
 	color: #11455d;
-	font-family: 'globerbold';
-	font-size: 1.5em;
+	font-family: $font-family;
+	font-size: 1.333em;
 	font-weight: 400;
 	line-height: 1.4;
 }
 
 .Heading4 {
 	color: #262525;
-	font-family: 'globerbold';
-	font-size: 1.3em;
+	font-family: $font-family;
+	font-size: 1.25em;
 	font-weight: 400;
 	line-height: 1.4;
 }
 
 .Heading5 {
 	color: #707070;
-	font-family: 'globerbold';
-	font-size: 1.1em;
+	font-family: $font-family;
+	font-size: 1.167em;
 	font-weight: 400;
 	line-height: 1.4;
 }

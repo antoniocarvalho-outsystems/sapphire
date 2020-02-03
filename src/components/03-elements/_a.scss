@@ -2,7 +2,7 @@ a {
 	&:link,
 	&:visited {
 		color: #16979f;
-		font-family: 'globeregular';
+		font-family: $font-family;
 		text-decoration: none;
 		transition: color 100ms ease;
 	}

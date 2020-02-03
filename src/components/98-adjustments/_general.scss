@@ -1,11 +1,7 @@
 .EditableTable thead td,
 .Header_title a,
-.Heading1,
-.Heading2,
-.Heading3,
-.Heading4,
 .TableRecords_Header .TileIcon_text,
 .TileIconText_label,
 .TileNumber_text {
-	font-family: 'globerbold', Helvetica, Arial, sans-serif;
+	font-family: $font-family;
 }

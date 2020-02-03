@@ -1,5 +1,5 @@
 .isTouch {
-    font-size: $sapphire__font__size--touch;
+	font-size: $font-size-heading2;
 }
 
 .TileIcon_text,
@@ -8,36 +8,34 @@
 .Header_title a,
 .EditableTable thead td,
 .TableRecords_Header {
-    font-family: $sapphire__font__face--bold;
+	font-family: $font-family;
 }
-
-
 
 .BaseFont40 {
-    font-size: 40px;
-}
+	font-size: 40px;
 
-.BaseFont40 input[type="text"],
-.BaseFont40 select,
-.BaseFont40 a.Button {
-    font-size: 40px;
-    line-height: normal;
-    height: 80px;
-}
+	select,
+	a.Button,
+	input[type='text'] {
+		font-size: 40px;
+		height: 80px;
+		line-height: normal;
+	}
 
-.BaseFont40 a.Button {
-    line-height: 80px !important;
-    white-space: nowrap;
-}
+	a.Button {
+		line-height: 80px !important;
+		white-space: nowrap;
+	}
 
-.BaseFont40 .SegmentedControl {
-    font-size: 1em;
-}
+	.SegmentedControl {
+		font-size: 1em;
 
-.BaseFont40 .SegmentedControl .SegmentedControlItem {
-    font-size: 1em;
-}
+		.SegmentedControlItem {
+			font-size: 1em;
 
-.BaseFont40 .SegmentedControl .SegmentedControlItem label {
-    line-height: unset;
+			label {
+				line-height: unset;
+			}
+		}
+	}
 }
