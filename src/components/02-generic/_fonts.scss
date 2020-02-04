@@ -1,49 +1,13 @@
-/*
 @font-face {
-    font-family: $sapphire__font__face--regular;
-    src: url($sapphire__font__file-path + 'glober_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: $font-family-regular;
+	font-style: normal;
+	font-weight: normal;
+	src: url($font-url+'Lato-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: $sapphire__font__face--bold;
-    src: url($sapphire__font__file-path + 'glober_bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+	font-family: $font-family-bold;
+	font-style: normal;
+	font-weight: bold;
+	src: url($font-url+'Lato-Regular.ttf') format('truetype');
 }
-
-@font-face {
-    font-family: 'droidsansbold';
-    src: url($sapphire__font__file-path + 'droidSans_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sapphire-Icon-Font';
-    src: url($sapphire__font__file-path + 'Sapphire-Icon-Font.eot');
-    src: url($sapphire__font__file-path + 'Sapphire-Icon-Font.eot?#iefix') format('embedded-opentype'),
-        url($sapphire__font__file-path + 'Sapphire-Icon-Font.woff') format('woff'),
-        url($sapphire__font__file-path + 'Sapphire-Icon-Font.ttf') format('truetype'),
-        url($sapphire__font__file-path + 'Sapphire-Icon-Font.svg?#Sapphire-Icon-Font') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
-
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap');
-
-// @font-face {
-//     font-family: $sapphire__font__face--regular;
-//     font-style: normal;
-//     font-weight: normal;
-//     src: ('../assets/fonts/Glober_Regular.otf') format('opentype');
-// }
-
-// @font-face {
-//     font-family: $sapphire__font__face--bold;
-//     font-style: normal;
-//     font-weight: bold;
-//     src: url('../assets/fonts/Glober_Bold.otf') format('opentype');
-// }

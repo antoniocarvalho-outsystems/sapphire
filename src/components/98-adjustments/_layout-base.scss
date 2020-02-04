@@ -1,0 +1,171 @@
+.LayoutBase {
+	&-Wrapper {
+		.LayoutBase-Content .PatientDetails__MainWorkArea,
+		.LayoutBase-Content .PatientDetails_content,
+		.LayoutBase-Content .ClinicianWorkArea_wrapper {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	&-Content {
+		.LayoutBase-primary-menu {
+			background-color: $sapphire-grey-blue;
+			padding-left: 16px;
+		}
+
+		.LayoutBase-secondary {
+			display: flex;
+			position: static;
+
+			&.isFixed {
+				position: fixed;
+				z-index: 6;
+			}
+
+			&.noToolbar {
+				height: 1px;
+			}
+
+			&.isFixed .hide-on-scroll {
+				display: none;
+			}
+
+			.hide-on-scroll {
+				white-space: nowrap;
+			}
+		}
+
+		.LayoutBase-emergency.isFixed {
+			position: fixed;
+			z-index: 7;
+		}
+	}
+
+	&.Page .LayoutBase-Content {
+		position: static;
+	}
+
+	&.Page .ClinicianWorkArea-columns {
+		padding-left: 16px;
+		width: 100%;
+	}
+
+	&.Page .ClinicianWorkArea-columns-big {
+		display: inline-block;
+		padding: 0 5px 0 0;
+		vertical-align: top;
+		width: 67%;
+	}
+
+	&.Page .ClinicianWorkArea-columns-small {
+		background-color: #eeeae3;
+		display: inline-block;
+		padding: 0 10px 0 5px;
+		vertical-align: top;
+		width: 33%;
+	}
+
+	&.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-big {
+		display: block;
+		padding: 0;
+		width: 100%;
+	}
+
+	&.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-small {
+		display: none;
+	}
+}
+
+.AR,
+.FA {
+	.LayoutBase.Page .ClinicianWorkArea-columns-big {
+		padding: 0 0 0 5px;
+	}
+
+	.LayoutBase.Page .ClinicianWorkArea-columns-small {
+		padding: 0 5px 0 0;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.LayoutBase.Page .ClinicianWorkArea-columns {
+		padding-left: 0;
+	}
+	.LayoutBase.Page .ClinicianWorkArea-columns-big,
+	.LayoutBase.Page .ClinicianWorkArea-columns-small {
+		width: 100%;
+	}
+	.LayoutBase-Content .LayoutBase-secondary .hide-on-scroll {
+		display: none;
+	}
+	.LayoutBase-Content .LayoutBase-secondary .TopInfo .ContextButtons .Cell2 {
+		display: none;
+	}
+}
+
+// @TODO: wat
+.LayoutBase.Page .LayoutBase-Content-MainWorkArea .Content,
+.LayoutBase.Page
+	.SystemWideSidebar
+	~ .PatientDetails_content
+	.PatientDetails__MainWorkArea
+	.Content,
+.LayoutBase.Page
+	.PatientDetailsLayout
+	.PatientDetails_content
+	.PatientDetails__MainWorkArea
+	> .Content {
+	margin: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 40px;
+	padding-top: 0;
+}
+
+.AR.LayoutBase.Page .LayoutBase-Content-MainWorkArea .Content,
+.AR.LayoutBase.Page
+	.SystemWideSidebar
+	~ .PatientDetails_content
+	.PatientDetails__MainWorkArea
+	.Content,
+.AR.LayoutBase.Page
+	.PatientDetailsLayout
+	.PatientDetails_content
+	.PatientDetails__MainWorkArea
+	> .Content {
+	padding-left: 40px;
+	padding-right: 0;
+}
+
+.LayoutBase.Page
+	.LayoutBase-iframesidebar.notExpandable
+	~ .LayoutBase-Content
+	.LayoutBase-Content-MainWorkArea
+	.Content {
+	padding-right: 250px !important;
+}
+
+.AR.LayoutBase.Page
+	.LayoutBase-iframesidebar.notExpandable
+	~ .LayoutBase-Content
+	.LayoutBase-Content-MainWorkArea
+	.Content {
+	padding-left: 250px !important;
+	padding-right: 0 !important;
+}
+
+.LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
+	padding-right: 250px;
+}
+
+.AR .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
+	padding-left: 250px;
+	padding-right: 0;
+}
+
+html .Page .PatientDetailsLayout {
+	padding-top: 0;
+}

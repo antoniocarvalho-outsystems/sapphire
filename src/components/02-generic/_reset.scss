@@ -2,14 +2,14 @@ body,
 form,
 html,
 .Page {
-	font-family: $font-family;
+	font-family: $font-family-regular;
 	font-size: 12px;
 	height: 100%;
 	position: relative;
 }
 
 body {
-	background-color: #f7f4ef;
+	background-color: $body-color;
 	overflow-x: hidden;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -18,8 +18,8 @@ body,
 input,
 select,
 textarea {
-	color: #333;
-	font-family: $font-family;
+	color: $dark-grey;
+	font-family: $font-family-regular;
 	font-weight: normal;
 	line-height: 1.43;
 }

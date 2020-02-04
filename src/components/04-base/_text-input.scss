@@ -1,13 +1,13 @@
 .TextInput {
 	&.Mandatory {
-		border-left: 3px solid #08a6af;
+		border-left: 3px solid $regular-alpha;
 
 		&.Not_Valid {
-			border-left: 3px solid #a55555;
+			border-left: 3px solid $regular-red;
 		}
 
 		&:focus {
-			border-left: 3px solid #08a6af;
+			border-left: 3px solid $regular-alpha;
 		}
 	}
 }

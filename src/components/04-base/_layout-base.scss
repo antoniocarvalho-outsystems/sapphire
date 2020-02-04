@@ -1,0 +1,304 @@
+.LayoutBase {
+	&-Wrapper {
+		margin-bottom: 150px;
+
+		&.hasFixedBottom .LayoutBase-bottomfixedcontent {
+			background-color: $regular-white;
+			bottom: 0;
+			box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+			left: 0;
+			padding-left: 16px;
+			padding-right: 16px;
+			position: fixed;
+			z-index: 1;
+		}
+	}
+
+	&-MainMenu,
+	&-MainMenu.PatientDetails_Header {
+		height: $default-menubar-height;
+		margin-top: 0;
+		position: fixed;
+		z-index: 30;
+	}
+
+	&-spacer {
+		display: block;
+	}
+
+	&-topfixedcontent {
+		background-color: $body-color;
+		position: fixed;
+		z-index: 2;
+	}
+
+	&-bottomfixedcontent {
+		background-color: $body-color;
+		padding-left: 16px;
+	}
+
+	&-iframesidebar {
+		-servicestudio-display: none !important;
+		height: 100vh;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 70;
+
+		&.notExpandable {
+			width: 250px;
+		}
+
+		&.notExpandable:before {
+			width: 250px;
+		}
+
+		&.isExpandable {
+			width: 40px;
+		}
+
+		.iframeContainer {
+			overflow: hidden !important;
+		}
+
+		.iframeContainer iframe {
+			background: transparent;
+		}
+	}
+
+	&-header {
+		display: block;
+		padding-right: 40px;
+		position: fixed;
+		top: 50px;
+		width: 100%;
+		z-index: 20;
+	}
+}
+
+.AR,
+.FA {
+	.LayoutBase-iframesidebar,
+	.LayoutBase-iframesidebar:before {
+		left: 0;
+		right: auto;
+	}
+
+	.LayoutBase-header {
+		padding-left: 40px;
+		padding-right: 0;
+	}
+}
+
+// REMOVENDO
+
+// .LayoutBase .LayoutBase-iframesidebar:before {
+// 	background-color: #0c262f;
+// 	content: '';
+// 	display: block;
+// 	height: 100vh;
+// 	position: absolute;
+// 	right: 0;
+// 	top: 0;
+// 	width: 40px;
+// }
+
+.LayoutBase-Content
+	.LayoutBase-secondary.isFixed
+	.PatientHeaderActions
+	.PatientHeaderActions_menuItem
+	.PatientHeaderActions__actions
+	.WhiteContainer {
+	height: 25px;
+	padding: 4px;
+	width: 25px;
+}
+
+.LayoutBase-Content
+	.LayoutBase-secondary
+	.LayoutBase-secondary-aside
+	> a
+	.DisplayInlineBlock {
+	display: block;
+}
+
+.LayoutBase-Content .LayoutBase-secondary-menu {
+	background-color: #f7f4ef;
+	width: 67%;
+}
+
+.LayoutBase-Content .LayoutBase-secondary-aside {
+	background-color: #f7f4ef;
+	width: 33%;
+}
+
+.LayoutBase-Content .LayoutBase-secondary.isFixed .Circle.Large {
+	height: 25px;
+	width: 25px;
+}
+
+.LayoutBase-Content .LayoutBase-secondary.isFixed .Circle.Large .icon {
+	font-size: 12px;
+	line-height: 1;
+	vertical-align: middle;
+}
+
+.LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar_container {
+	margin-top: 0;
+}
+
+.LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar__Items a {
+	line-height: 46px;
+}
+
+.LayoutBase-Content .LayoutBase-secondary.isFixed .LayoutBase-secondary-menu,
+.LayoutBase-Content .LayoutBase-secondary.isFixed .LayoutBase-secondary-aside {
+	border-bottom: 4px #c9cdce solid;
+	height: 50px;
+}
+
+.LayoutBase-Content .LayoutBase-secondary.noToolbar .LayoutBase-secondary-menu,
+.LayoutBase-Content
+	.LayoutBase-secondary.isFixed.noToolbar
+	.LayoutBase-secondary-menu {
+	border-bottom: none;
+}
+
+.LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .MenuItemWrapper {
+	border-top: none;
+	padding: 0 10px;
+}
+
+.LayoutBase-Content
+	.LayoutBase-secondary.isFixed
+	.Toolbar
+	.MenuItemWrapper
+	.MenuItemWrapper__icon {
+	display: none;
+}
+
+.LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .Toolbar__leftBtn,
+.LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .Toolbar__rightBtn {
+	height: 42px;
+}
+
+.LayoutBase-Content
+	.LayoutBase-secondary.isFixed
+	.Toolbar
+	.Toolbar__leftBtn:before,
+.LayoutBase-Content
+	.LayoutBase-secondary.isFixed
+	.Toolbar
+	.Toolbar__rightBtn:before {
+	line-height: 42px;
+}
+
+.LayoutBase-Content .LayoutBase-emergency {
+	background-color: #eee3e3;
+}
+
+.LayoutBase-Content .ClinicianWorkArea____workItems {
+	background-color: #ebebeb;
+}
+
+.ClinicianWorkArea.FullWidth .ClinicianWorkArea____workItems {
+	background-color: #f7f4ef;
+}
+
+.LayoutBase-padding {
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 16px;
+}
+
+.LayoutBase .select2-container--open .select2-dropdown--below {
+	z-index: 101;
+}
+
+.LayoutBase-Content-MainWorkArea.PatientDetails__MainWorkArea
+	.LayoutBase-primary-menu
+	.FullScreenTabsWrapper__Tabs {
+	position: static;
+}
+
+.LayoutBase.Page.tablet .PatientDetails_content {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.LayoutBase.Page .Toolbar {
+	padding-left: 16px;
+}
+
+.LayoutBase.Page .Toolbar.Fix {
+	margin-left: 0;
+	padding-right: 8px;
+}
+
+.ClinicianWorkArea____painLevel {
+	display: block;
+}
+
+.LayoutBase .LayoutBase-secondary-aside .ResumeDetails {
+	padding: 7px 10px !important;
+}
+
+.LayoutBase-secondary-aside .PendingItemsContainer.OSInline,
+.LayoutBase-secondary-aside .PendingItemsContainer.OSInline .OSInline,
+.LayoutBase-secondary-aside > div.OSInline,
+.LayoutBase-secondary-aside a .OSInline,
+.LayoutBase-secondary-aside .ToggleButton.OSInline,
+.LayoutBase-secondary-aside > span > a > .DisplayInlineBlock,
+.LayoutBase-secondary-aside > span > span > a > .DisplayInlineBlock {
+	display: block;
+}
+
+.LayoutBase-secondary-aside a .Circle.OSInline {
+	display: table-cell;
+}
+
+.lds-ring {
+	display: inline-block;
+	height: 32px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 32px;
+}
+
+.lds-ring div {
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border: 3px solid #fff;
+	border-color: #0da2aa transparent transparent transparent;
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: block;
+	height: 16px;
+	margin: 8px;
+	position: absolute;
+	width: 16px;
+}
+
+.lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

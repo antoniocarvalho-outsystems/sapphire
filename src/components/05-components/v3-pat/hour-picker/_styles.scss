@@ -79,6 +79,8 @@
 
 /* UI TimePicker CSS - HourPicker */
 .ui-timepicker-container {
+	@include component-scroll;
+
 	background-color: #ffffff;
 	border: 1px solid #dddddd;
 	border-radius: 4px;
@@ -94,10 +96,6 @@
 	.ui-corner-all {
 		cursor: pointer;
 		text-decoration: none;
-	}
-
-	.ui-timepicker-viewport {
-		@include component-scroll;
 	}
 
 	/* RTL Adjustments - UI Timepicker */
