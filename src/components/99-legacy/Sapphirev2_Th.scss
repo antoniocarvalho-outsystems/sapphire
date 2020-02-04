@@ -248,29 +248,239 @@
         $0. Fonts
 \*-------------------------------------*/
 
+/* Fonts > Import Font */
+
+/*
+@font-face {
+    font-family: 'globeregular';
+    src: url('fonts/glober_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'globerbold';
+    src: url('fonts/glober_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'droidsansbold';
+    src: url('fonts/droidSans_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sapphire-Icon-Font';
+    src: url('fonts/Sapphire-Icon-Font.eot');
+    src: url('fonts/Sapphire-Icon-Font.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Sapphire-Icon-Font.woff') format('woff'),
+        url('fonts/Sapphire-Icon-Font.ttf') format('truetype'),
+        url('fonts/Sapphire-Icon-Font.svg?#Sapphire-Icon-Font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+
+
+
 /*------------------------------------*\
     $1. General Properties
 \*-------------------------------------*/
+
+html,
+body,
+form,
+.Page {
+    height: 100%;
+    position: relative;
+    font-family: 'globeregular', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    background-color: #f7f4ef;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow-x: hidden;
+}
+
+body,
+select,
+textarea,
+input {
+    font-family: 'globeregular', Helvetica, Arial, sans-serif;
+    color: #333;
+    font-weight: normal;
+    line-height: 1.43;
+}
+
+html,
+body,
+div,
+span,
+a,
+select,
+form,
+fieldset,
+img,
+input,
+button,
+select,
+table,
+tbody,
+thead,
+tr,
+th,
+td,
+textarea,
+optgroup,
+option,
+ul,
+li {
+    outline: 0 !important;
+}
+
+.TileIcon_text,
+.TileNumber_text,
+.TileIconText_label,
+.Heading1,
+.Heading2,
+.Heading3,
+.Heading4,
+.Header_title a,
+.EditableTable thead td,
+.TableRecords_Header {
+    font-family: 'globerbold', Helvetica, Arial, sans-serif;
+}
 
 .isTouch {
     font-size: 18px;
 }
 
+
+
 /*------------------------------------------------------------*/
 /* 1.1 General Properties > a links ***************************/
 /*------------------------------------------------------------*/
+
+a,
+a:link,
+a:visited {
+    color: #16979F;
+    text-decoration: none;
+    font-family: 'globeregular';
+    -webkit-transition: color 100ms ease;
+    transition: color 100ms ease;
+    /* font-weight:bold;*/
+}
+
+.desktop a:not([disabled="disabled"]):hover,
+.desktop a:link:hover,
+.desktop a:visited:hover {
+    color: #08a6af;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div[onclick] {
+    cursor: pointer;
+    /* add a pointer cursor when the div has a click event */
+}
+
+.tablet select,
+.phone select {
+    line-height: 18px;
+}
 
 /*------------------------------------------------------------*/
 /* 1.2 General Properties > Margins ***************************/
 /*------------------------------------------------------------*/
 
+.OSAutoMarginTop {
+    margin-top: 10px;
+}
+
+.OSInlineClear {
+    /* This style will never be used in runtime.
+    When applied in Service Studio, it will prevent the style 'OSInline' from being
+    automatically applied to divs and tables with widths != (fill parent) */
+}
+
+
+
 /*------------------------------------*\
               $2. Structure
 \*-------------------------------------*/
 
+
 /*------------------------------------------------------------*/
 /* 2.1 Structure > Header *************************************/
 /*------------------------------------------------------------*/
+
+.Header {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.Header_center {
+    position: relative;
+}
+
+.tablet .Header_center.ThemeGrid_Container,
+.phone .Header_center.ThemeGrid_Container {
+    padding: 0;
+}
+
+/* Structure > Header Background */
+.Header_background {
+    background-color: #0f4e67;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0f4e67), color-stop(30%, #115672), color-stop(100%, #115672));
+    background-image: -webkit-linear-gradient(bottom, #0f4e67 0%, #115672 30%, #115672 100%);
+    background-image: linear-gradient(to top, #0f4e67 0%, #115672 30%, #115672 100%);
+    border-bottom: 1px solid #174a65;
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.Page.UseHeaderFade .Header .Header_background {
+    display: none;
+}
+
+/* Structure > Header Title */
+.Header_Title {
+    float: left;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.phone .Header_Title {
+    left: 60px;
+    position: absolute;
+    right: 60px;
+    text-align: center;
+}
+
+/* Structure > Header Search */
+.Header_Search {
+    display: inline-block;
+    margin-right: 20px;
+    min-width: 100px;
+}
 
 /* Search inside header */
 .Search_wrapper input[type="text"] {
@@ -348,10 +558,52 @@
     top: 19px;
 }
 
+.Header .Search_wrapper input[type="text"] {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    color: #fff;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    width: 100px;
+}
+
+.Header .Search_wrapper input[type="text"]:focus {
+    border: 1px solid rgba(255, 255, 255, .3);
+    width: 200px;
+}
+
+.Header .Search_wrapper:after {
+    color: #cdcdcd;
+    left: 10px;
+    pointer-events: none;
+}
+
 .phone .Application_Menu .Others_Menu .Header_Search {
     margin-left: 30px;
     margin-right: 0;
 }
+
+/* Structure > Header Menu */
+.Header_Menu,
+.Header_Menu .ListRecords {
+    display: inline-block;
+
+}
+
+.Header_Menu a,
+.Header_Menu a:link,
+.Header_Menu a:visited {
+    color: #8dbecc;
+}
+
+.Header_Menu a:hover,
+.Header_Menu a:link:hover,
+.Header_Menu a:visited:hover {
+    background-color: #0a2d40;
+    color: #fff;
+}
+
 
 /* Structure > Header Others Menu */
 .Others_Menu {
@@ -402,6 +654,31 @@
 .phone .Application_Menu .Others_Menu .Login_Info .Logout_Icon {
     position: absolute;
     right: 15px;
+}
+
+
+/* Structure > Header Button Menu */
+a.Header_ButtonMenu {
+    color: #fff;
+    display: none;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    width: 50px;
+}
+
+.desktop a.Header_ButtonMenu {
+    color: #dab702;
+}
+
+.tablet a.Header_ButtonMenu,
+.phone a.Header_ButtonMenu {
+    display: block;
+    width: 50px;
+}
+
+.Page.active .Header_ButtonMenu {
+    color: #fff;
 }
 
 
@@ -458,6 +735,11 @@ a.Login_Info_Username:visited {
     color: #fff;
     padding-right: 10px;
     text-decoration: none;
+}
+
+.Header .Application_Title img {
+    max-height: 30px;
+    vertical-align: middle;
 }
 
 /* Responsive Context */
@@ -819,9 +1101,65 @@ body.ResizeParentIframe .MainContent {
     pointer-events: none;
 }
 
+
 /*------------------------------------------------------------*/
 /* 2.5 Structure > Sidebar ************************************/
 /*------------------------------------------------------------*/
+
+a.Header_ButtonSidebar {
+    color: #fff;
+    display: none;
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    width: 40px;
+}
+
+.desktop.small.UseSidebar a.Header_ButtonSidebar,
+.tablet.UseSidebar a.Header_ButtonSidebar {
+    display: block;
+}
+
+.Sidebar {
+    border-left: 1px solid #ddd;
+    height: 100%;
+    padding: 20px 10px;
+    position: fixed;
+    right: -320px;
+    top: 50px;
+    width: 300px;
+}
+
+.desktop .Sidebar,
+.desktop.hd .Sidebar,
+.desktop.big .Sidebar {
+    right: 0;
+}
+
+.desktop.small .Sidebar,
+.tablet .Sidebar {
+    background-color: #edf1f3;
+    right: -300px;
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+}
+
+.desktop.small .Sidebar.open,
+.tablet .Sidebar.open {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+}
+
+.ie8.desktop.small .Sidebar.open {
+    right: 0px;
+}
+
+.phone .Sidebar {
+    position: relative;
+    right: 0;
+    width: 100%;
+}
+
 
 /*------------------------------------------------------------*/
 /* 2.6 Structure > Title Section ******************************/
@@ -1644,6 +1982,12 @@ body.ResizeParentIframe .MainContent {
     -webkit-transition: transform .5s;
     -moz-transition: transform .5S;
     transition: transform .5s;
+}
+
+
+input[type="text"].small {
+    min-height: 26px;
+    height: 26px;
 }
 
 .PanelNotify .Link {
@@ -3300,6 +3644,22 @@ html .PatientDetailsLayout {
     border-bottom-left-radius: 5px;
 }
 
+.SegmentedControl input {
+    margin: 0 5px 0 0;
+    padding: 0;
+    position: absolute;
+    left: -20px;
+    opacity: 0;
+
+
+}
+
+.FA .SegmentedControl input,
+.AR .SegmentedControl input {
+    left: auto;
+    right: -20px;
+}
+
 .SegmentedControlItem label {
     width: 100%;
     min-width: 54px;
@@ -3449,9 +3809,150 @@ html .PatientDetailsLayout {
 /* 3.1 Forms > Radio Button & Checkbox ************************/
 /*------------------------------------------------------------*/
 
+html input[type="radio"],
+html input[type="checkbox"] {
+    background-color: transparent;
+    box-shadow: none !important;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-top: -3px;
+}
+
+input[type="checkbox"]:after {
+    border: 3px solid #0da2aa;
+    border-right: 0;
+    border-top: 0;
+    height: 5px;
+    left: 20%;
+    top: 24%;
+    width: 11px;
+}
+
+
+input[type="checkbox"]:hover:before,
+input[type="checkbox"]:focus:before {
+    border: 1px solid #0da2aa;
+}
+
+input[type="radio"]:before,
+input[type="checkbox"]:before {
+    box-shadow: none;
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    border: 0;
+}
+
+input[type="checkbox"]:hover:disabled:before {
+    border: 1px solid #ccc;
+}
+
+.ie input[type="radio"],
+.ie input[type="checkbox"],
+.ie .Form input[type="radio"],
+.ie .Form input[type="checkbox"] {
+    border-radius: 0;
+}
+
+input[type="radio"]:after {
+    background: #0da2aa;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    content: " ";
+    display: table;
+    height: 6px;
+    left: 7px;
+    position: absolute;
+    top: 7px;
+    width: 6px;
+}
+
+input[type="radio"]:hover:before,
+input[type="radio"]:focus:before {
+    border: 1px solid #0da2aa;
+    border-radius: 50%;
+}
+
+/*check Mandatory input*/
+.CheckMandatory input[type="checkbox"]:before {
+    border: 1px solid red;
+    box-shadow: none;
+}
+
+/*for affect text only*/
+.CheckMandatory {}
+
 /*------------------------------------------------------------*/
 /* 3.2 Forms > Inputs, Selects & Textarea *********************/
 /*------------------------------------------------------------*/
+
+textarea,
+select,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    border: 1px solid #C9CDCE;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    height: 36px;
+    box-sizing: border-box;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.phone input[type="number"],
+.tablet input[type="number"],
+.phone input[type="text"],
+.tablet input[type="text"] {
+    height: 36px;
+}
+
+
+.isTouch textarea,
+.isTouch select,
+.isTouch input[type="text"] {
+    height: 50px;
+    font-size: 1em;
+}
+
+input[type="number"] {
+    text-align: right;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
+    border: 1px solid #16979F;
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px #16979F;
+}
+
+input[type="text"]:active {
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 #9DC6D0;
+    border: 1px solid #16979F;
+}
+
+input[type="text"]:hover {
+    border: 1px solid #B1B5B6;
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
 
 label.MandatoryLabel:after {
     content: "*";
@@ -3462,7 +3963,81 @@ label.MandatoryLabel:after {
     font-weight: normal;
 }
 
+textarea.Mandatory,
+input[type].Mandatory,
+input[type].Mandatory:focus {
+    border-left: solid 3px #0da2aa;
+}
+
+.AR textarea.Mandatory,
+.AR input[type].Mandatory {
+    border-left: solid 1px #bdbdbd;
+    border-right: solid 3px #0da2aa;
+}
+
+.Dropdown.Mandatory.Not_Valid,
+input[type].Mandatory.Not_Valid {
+    border: solid 1px #a55555;
+    border-left: 3px solid #a55555 !important;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+input[type="text"].Not_Valid {
+    border: solid 1px #a55555;
+    border-left-width: 3px;
+}
+
+input[type="text"].Not_Valid:focus {
+    box-shadow: none;
+    border: solid 1px #a55555;
+}
+
+
+input[type="radio"]:disabled:before {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    content: " ";
+    display: block;
+    background-color: #fff;
+    top: 1px;
+    right: 14px;
+}
+
+textarea,
+select,
+input {
+    font-size: 14px;
+}
+
+textarea:focus,
+select:focus,
+input:focus {
+    border-color: #aaa;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+textarea {
+    height: auto;
+    min-height: 36px;
+    resize: none;
+    /*Resize boxes*/
+}
+
+
+
+
 /*----------------------InputIconSapphire Input---------------------------------------*/
+
+.BigInput,
+.BigInput input,
+.BigInput select {
+    font-size: 24px;
+    height: 45px;
+    width: 100%;
+}
 
 .InputIconSapphire {
     position: relative;
@@ -3497,9 +4072,225 @@ label.MandatoryLabel:after {
     left:5px;
 }
 
+select {
+    box-shadow: none;
+    height: 36px;
+    line-height: 20px;
+    padding: 4px 6px;
+}
+
+.ie8 select {
+    padding: 6px;
+}
+
+
+/*------------------------------------------------------------*/
+/* 3.3 Forms > ReadOnly & Disabled ****************************/
+/*------------------------------------------------------------*/
+
+.Form:not(.ReadOnly) {
+    cursor: text;
+}
+
+select.ReadOnly {
+    cursor: pointer;
+}
+
+.Form input.ReadOnly,
+.Form textarea.ReadOnly,
+.Form select.ReadOnly {
+    font-size: 12px;
+}
+
+.ValidationMessageContainer {
+    position: relative;
+}
+/*
+.tablet .ValidationMessageContainer span.ValidationMessage {
+    margin-left: 12%;
+}
+
+.phone .ValidationMessageContainer span.ValidationMessage {
+    margin-left: 31%;
+}*/
+
+.ValidationMessageContainer span.ValidationMessage {
+    background-color: #a55555;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    bottom: auto;
+    color: #fff;
+    font-size: .92rem;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 5px;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    text-align: right;
+    z-index: 1;
+}
+
+.Form input.ReadOnly:not(.Not_Valid),
+.Form textarea.ReadOnly:not(.Not_Valid),
+.Form select.ReadOnly:not(.Not_Valid) {
+    border-radius: 2px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.Form input.ReadOnly:not(.Not_Valid):focus,
+.Form textarea.ReadOnly:not(.Not_Valid):focus,
+.Form select.ReadOnly:not(.Not_Valid):focus {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    font-size: 12px;
+}
+
+.Form input.ReadOnly:not(.Not_Valid),
+.Form textarea.ReadOnly:not(.Not_Valid),
+.Form select.ReadOnly:not(.Not_Valid) {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.Form textarea.ReadOnly[readonly="readonly"],
+.Form textarea.ReadOnly[disabled="disabled"],
+.Form select.ReadOnly[disabled="disabled"],
+.Form input.ReadOnly[readonly="readonly"],
+.Form input.ReadOnly[disabled="disabled"],
+.Form input[disabled="disabled"].ReadOnly:not(.Not_Valid),
+.Form input[readonly="readonly"].ReadOnly:not(.Not_Valid),
+.Form textarea[disabled="disabled"].ReadOnly:not(.Not_Valid),
+.Form textarea[readonly="readonly"].ReadOnly:not(.Not_Valid),
+.Form select[disabled="disabled"].ReadOnly:not(.Not_Valid),
+.Form select[readonly="readonly"].ReadOnly:not(.Not_Valid),
+textarea[disabled="disabled"],
+textarea[readonly="readonly"],
+select[disabled="disabled"] {
+    background-color: #f5f5f5;
+    background-position: right 14px center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    color: #0b374a;
+    cursor: not-allowed;
+    font-size: 14px;
+}
+
+input[disabled="disabled"][type="text"]:focus,
+input[disabled="disabled"][type="password"]:focus,
+textarea[disabled="disabled"]:focus,
+textarea[readonly="readonly"]:focus,
+select[disabled="disabled"]:focus,
+input[readonly="readonly"]:focus,
+input[disabled="disabled"]:focus,
+.Form input[readonly="readonly"].ReadOnly:not(.Not_Valid):focus,
+.Form input[disabled="disabled"].ReadOnly:not(.Not_Valid):focus,
+.Form textarea[readonly="readonly"].ReadOnly:not(.Not_Valid):focus,
+.Form textarea[disabled="disabled"].ReadOnly:not(.Not_Valid):focus,
+.Form select[readonly="readonly"].ReadOnly:not(.Not_Valid):focus,
+.Form select[disabled="disabled"].ReadOnly:not(.Not_Valid):focus {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+input[type="radio"].ReadOnly,
+input[type="checkbox"].ReadOnly,
+.Form input.ReadOnly[disabled="disabled"][type="radio"],
+.Form input.ReadOnly[readonly="readonly"][type="radio"],
+.Form input.ReadOnly[disabled="disabled"][type="checkbox"],
+.Form input.ReadOnly[readonly="readonly"][type="checkbox"],
+.Form input[type="radio"].ReadOnly,
+.Form input[type="checkbox"].ReadOnly {
+    background-color: transparent;
+    border-width: 0;
+}
+
+select[disabled="disabled"],
+input[disabled="disabled"],
+input[readonly="readonly"],
+select[disabled="disabled"]:hover,
+input[disabled="disabled"]:hover,
+input[readonly="readonly"]:hover {
+    background-color: transparent;
+    background-image: none;
+    background-position: right 14px center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    color: #BDBDBD;
+    cursor: not-allowed;
+}
+
+
+input[readonly="readonly"].DateInput{
+    background-color:#fff;
+    color:#333;
+}
+
+input[readonly="readonly"].DateInput:hover{
+    cursor:default;
+}
+
+
 /*------------------------------------------------------------*/
 /* 3.4 Forms > Not Valid **************************************/
 /*------------------------------------------------------------*/
+
+.Form input.Not_Valid,
+.Form select.Not_Valid,
+.Form textarea.Not_Valid,
+input.Not_Valid,
+select.Not_Valid,
+textarea.Not_Valid {
+    border-radius: 4px;
+}
+
+.ValidationMessage {
+    position: relative;
+    text-align: right;
+}
+
+.ValidationMessageContainer input.Not_Valid {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.Form textarea.Not_Valid:focus,
+.Form textarea.Not_Valid,
+textarea.Not_Valid:focus,
+textarea.Not_Valid {
+    font-size: 14px;
+    padding: 10px;
+}
+
+select.Not_Valid:focus,
+input.Not_Valid:focus,
+textarea.Not_Valid:focus {
+    border: 1px solid #bf1601;
+}
+
+.Form input[type="checkbox"].Not_Valid,
+.Form input[type="radio"].Not_Valid,
+input[type="checkbox"].Not_Valid,
+input[type="radio"].Not_Valid {
+    border: transparent;
+    padding: 0;
+}
+
+.Form input.ReadOnly,
+.Form textarea.ReadOnly {
+    background: #fff;
+}
+
+.TextInput.Mandatory.Not_Valid {
+    border-left: 3px solid #a55555;
+}
+
 
 /*------------------------------------*\
     $4. Buit-in widgets
@@ -3787,17 +4578,18 @@ td.RowWithAddAction a {
     line-height: 50px;
 }
 
-.LayoutBlank.SidebarIframe ~ .Feedback_AjaxWait {
+.LayoutBlank.SidebarIframe.phone ~ .Feedback_AjaxWait {
     color: transparent;
 }
 
-.LayoutBlank.SidebarIframe ~ .Feedback_AjaxWait,
-.LayoutBlank.SidebarIframe ~ .Feedback_AjaxWait .Loader {
+.LayoutBlank.SidebarIframe.phone ~ .Feedback_AjaxWait,
+.LayoutBlank.SidebarIframe.phone ~ .Feedback_AjaxWait .Loader {
     width: 10px;
 }
 
-.LayoutBlank.SidebarIframe ~ .Feedback_AjaxWait .Loader:before {
+.LayoutBlank.SidebarIframe.phone ~ .Feedback_AjaxWait .Loader:before {
     font-size: 15px;
+    line-height: 20px;
     margin-left: -10px;
 }
 
@@ -5415,6 +6207,18 @@ body .triggerTimeBack {
     border-top-left-radius: 1px;
 }
 
+.Dropdown.Mandatory:not([disabled="disabled"]),
+.TextInput.Mandatory {
+    border-left: 3px solid #08A6AF;
+}
+
+.Dropdown.Mandatory:focus,
+.TextInput.Mandatory:focus {
+    border-left: 3px solid #08A6AF;
+    /*line-height: 16px;*/
+}
+
+
 /* SILK Patterns > RangeSlider */
 .SliderRange .ui-slider-range {
     background-color: #0da2aa;
@@ -6062,6 +6866,70 @@ a .ListItem:after {
 /*------------------------------------------------------------*/
 /* 8.1 Usefull Classes > Text Classes *************************/
 /*------------------------------------------------------------*/
+
+.Heading1 {
+    color: #262525;
+    font-family: "globerbold";
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.Heading2 {
+    color: #262525;
+    font-family: "globerbold";
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.Heading3 {
+    color: #11455D;
+    font-family: "globerbold";
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.Heading4 {
+    color: #262525;
+    font-family: "globerbold";
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.Heading5 {
+    color: #707070;
+    font-family: "globerbold";
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.Label {
+    border-radius: 10px;
+    padding: 2px 8px;
+    background-color: transparent;
+    max-height:20px;
+}
+
+.Text_Note {
+    color: #5f6f79;
+    font-size: 12px;
+}
+
+.Uppercase {
+    text-transform: uppercase;
+}
+
+.VerticalInputLabel {
+    color: #868687;
+    font-family: globeregular;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1;
+}
 
 /*------------------------------------------------------------*/
 /* 8.2 Usefull Classes > Buttons ******************************/
@@ -11762,6 +12630,13 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
 
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 .SpinnerInput_Container>a {
     display: inline-block;
     width: 36px;
@@ -13401,14 +14276,14 @@ span:not(:last-of-type) .CompLine {
 }
 
 .tablet .CompLine__icon,
-.phone .CompLine__icon {
+.phone:not(.PopupGenericFlex) .CompLine__icon {
     display: block;
     text-align: center;
     width: 100%;
 }
 
 .tablet .CompLine_headText,
-.phone .CompLine_headText {
+.phone:not(.PopupGenericFlex)  .CompLine_headText {
     padding: 0 8px;
     text-align: center;
     width: 100%;
@@ -13543,42 +14418,42 @@ span:not(:last-of-type) .CompLine {
    /* margin-left: 10px;*/
 }
 
-.phone .CompLineExpandable.expanded .CompLine_actions {
+.phone:not(.PopupGenericFlex)  .CompLineExpandable.expanded .CompLine_actions {
     display: initial;
     width: 100%;
 
 }
 
-.phone .CompLine_headLine {
+.phone:not(.PopupGenericFlex) .CompLine_headLine {
     display: inline-block;
 }
 
-.phone .CompLine_headLine .CompLine_head>div {
+.phone:not(.PopupGenericFlex) .CompLine_headLine .CompLine_head>div {
     display: inline-block;
     width: auto;
 }
 
-.phone .CompLine_headLine .CompLine_doctor {
+.phone:not(.PopupGenericFlex)  .CompLine_headLine .CompLine_doctor {
     display: inline;
 }
 
 
 
-.phone .CompLine_headLine .CompLine__expandIcon {
+.phone:not(.PopupGenericFlex)  .CompLine_headLine .CompLine__expandIcon {
     bottom: 36%;
     left: 90%;
 }
 
-.phone .CompLine_headLine span.verticalAlignHelper {
+.phone:not(.PopupGenericFlex)  .CompLine_headLine span.verticalAlignHelper {
     display: none;
 }
 
 
-.phone .CompLine_headLine .CompLine_actions :first-child {
+.phone:not(.PopupGenericFlex)  .CompLine_headLine .CompLine_actions :first-child {
     border: none;
 }
 
-.phone .CompLine_actions {
+.phone:not(.PopupGenericFlex)  .CompLine_actions {
     display: block;
     margin-top: 10px;
 }
@@ -16507,7 +17382,7 @@ canvas.Sketch_Canvas {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    //cursor: url("pencil.cur"), auto;
+    cursor: url("pencil.cur"), auto;
     height: 100%;
     width: 100%;
 }
@@ -16576,6 +17451,10 @@ canvas.Sketch_Canvas {
 .Sketch_Tickness>div:first-child,
 .Sketch_Tool_Link>div:first-child {
     text-align: center;
+}
+
+.Dropdown>div {
+    width: auto;
 }
 
 .OtherActions>div {
@@ -17770,6 +18649,191 @@ a.ButtonSquare.White>span.icon:hover,
 /*-------------------------------------------------------------------------------------*/
 /* 9.99 Sapphire Patterns > SapphireWidgets > iconLabel *********/
 /*-------------------------------------------------------------------------------------*/
+
+/*
+
+.icon:after {
+    content: "N/A";
+}
+
+.IconVertical:hover,
+.IconHorizontal:hover {
+    text-decoration: none;
+}
+
+.IconVertical {
+    margin-right: 5px;
+    min-width: 50px;
+}
+
+.IconVertical.iconBorder {
+    padding: 0 5px 0 10px;
+}
+
+
+.FA .IconVertical,
+.AR .IconVertical {
+    padding: 0 10px 0 5px;
+}
+
+.iconHorizontal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.iconHorizontal.iconBorder {
+    padding: 0 5px 0 10px;
+}
+
+.FA .iconHorizontal,
+.AR .iconHorizontal {
+    padding: 0 10px 0 5px;
+}
+
+.iconHorizontal_icon {
+    text-align: center;
+}
+
+.iconHorizontal_icon span.icon {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.iconHorizontal_icon span.icon.icon-lg {
+    margin-right: 4px;
+}
+
+.iconHorizontal_icon span.icon.icon-1x {
+    margin-right: 4px;
+}
+
+.iconHorizontal_icon span.icon.icon-2x {
+    margin-right: 7px;
+}
+
+.iconHorizontal_icon span.icon.icon-3x {
+    margin-right: 5px;
+}
+
+.iconHorizontal_icon span.icon.icon-4x {
+    margin-right: 5px;
+}
+
+
+
+.iconHorizontal_icon,
+.iconVertical_icon {
+    color: #16979f;
+    font-weight: 600;
+}
+
+.iconVertical_icon {
+    margin-bottom: 5px;
+}
+
+
+
+.InvertIconLabel .iconHorizontal_icon {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.FA .iconHorizontal_icon,
+.AR .iconHorizontal_icon {
+    margin-right: 0;
+    margin-left: 10px !important;
+}
+
+.iconHorizontal_label,
+.iconVertical_label {
+    font-weight: 400;
+    text-decoration: none;
+    color: #262525;
+    font-family: 'globeregular', Helvetica, Arial, sans-serif;
+}
+
+
+.iconVertical_label.LabelGreen,
+.iconHorizontal_label.LabelGreen {
+    color: #16979F;
+    font-weight: 600;
+}
+
+.FA .iconVertical_label.LabelGreen,
+.FA .iconHorizontal_label.LabelGreen,
+.AR .iconVertical_label.LabelGreen,
+.AR .iconHorizontal_label.LabelGreen {
+    color: #262525;
+    font-weight: 600;
+}
+
+
+.iconBorder {
+    border-left: solid 1px #d8d8d8;
+    border-right: 0;
+}
+
+.FA .iconBorder,
+.AR .iconBorder {
+    border-right: solid 1px #d8d8d8;
+    border-left: 0;
+}
+
+
+.iconHorizontal_icon.IconGreenColor {
+    color: #00BFA5;
+
+}
+
+.iconHorizontal_icon.IconYellowColor {
+    color: #FFA000;
+}
+
+.iconHorizontal_icon.IconRedColor {
+    color: #FF3E2D;
+}
+
+.iconHorizontal_icon.IconBlackColor {
+    color: #11455D;
+    font-weight: bold;
+}
+
+.iconVertical_icon.IconGreenColor {
+    color: #00BFA5;
+
+}
+
+.iconVertical_icon.IconYellowColor {
+    color: #FFA000;
+}
+
+.iconVertical_icon.IconRedColor {
+    color: #FF3E2D;
+}
+
+.iconVertical_icon.IconBlackColor {
+    color: #11455D;
+}
+
+
+.iconHorizontal_icon.AllGreenIcon .icon,
+.iconVertical_icon.AllGreenIcon .icon {
+    color: #16979f;
+}
+
+.InvertIconLabel .iconHorizontal {
+    transform: scale(-1, 1);
+    text-align: left;
+}
+
+.InvertIconLabel .iconHorizontal>div {
+    transform: scale(-1, 1);
+}
+
+*/
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.100 Sapphire Patterns > SapphireWidgets > ImagePlaceholder *********/
@@ -19288,6 +20352,59 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 /*-------------------------------------------------------------*/
 /* 9.121 Sapphire Patterns > Dropdown *********/
 /*------------------------------------------------------------*/
+
+.Dropdown {
+    border: 1px solid #c9cdce;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    background-position: right 14px center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    color: #262626;
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 45px;
+    line-height: 18px;
+}
+
+
+.isTouch .Dropdown:hover,
+.isTouch .Dropdown {
+    height: 50px;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+
+
+.Dropdown:hover {
+    border: 1px solid #B1B5B6;
+    border-radius: 2px;
+    background-color: #EFF4F6;
+}
+
+.Dropdown:focus {
+    box-sizing: border-box;
+    border: 1px solid #16979F;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 #7BB2BF;
+}
+
+
+
+.FA .Dropdown,
+.AR .Dropdown {
+    background-position: left 14px center;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    padding: 5px 5px 5px 36px;
+    line-height:19px;
+}
+
 .FA .LineContent .Dropdown,
 .AR .LineContent .Dropdown {
     padding: 5px 5px 5px 5px;
@@ -19689,6 +20806,8 @@ body.confirmation-opened {
     width: 1080px;
     height: auto;
 }
+
+/*Header*/
 
 .HospitalizationPlan_Header {
 
@@ -22162,9 +23281,14 @@ body.confirmation-opened {
     padding: 5px;
 }
 
-.LineDetailsExpandBox .ExpandableLinkWrapper_Header .LineDetailsExpandBox_action>div {
+.LineDetailsExpandBox .ExpandableLinkWrapper_Header .LineDetailsExpandBox_action > div {
     /* display: table-cell;*/
 }
+
+.LineDetailsExpandBox .ExpandableLinkWrapper_Header .LineDetailsExpandBox_action .IconVertical {
+    margin: 3px;
+}
+
 
 .LineDetailsExpandBox .ExpandableLinkWrapper_Header {
     cursor: default;
@@ -25644,6 +26768,7 @@ a.Button.MedicalEpisode:before,
 a.Button.MedicalFile:before,
 a.Button.MedicationReconciliation:before,
 a.Button.MedicineAdministration:before,
+a.Button.MedInteractions:before,
 a.Button.Message:before,
 a.Button.Minimize:before,
 a.Button.Morning:before,
@@ -26416,7 +27541,7 @@ a.Button.Forward:before {
 a.Button.Gel:before {
     content: "\e624";
 }
- a.Button.GetRide:before {
+a.Button.GetRide:before {
     content: "\e945";
 }
 a.Button.GeneralInfo:before {
@@ -26736,6 +27861,10 @@ a.Button.Wheelchair:before {
 }
 a.Button.XRay:before {
     content: "\e66a";
+}
+
+a.Button.MedInteractions:before {
+    content: "\e948";
 }
 
 .AR a.Button.Add:before,
@@ -29298,6 +30427,30 @@ html .AR.tablet .ThemeGrid_Width12 {
     padding-left: 40px;
 }
 
+.FA select,
+.AR select {
+    background-position:5px center;
+    padding-right: 5px;
+}
+
+.FA input[type=radio],
+.FA .Arinput[type=checkbox],
+.AR input[type=radio],
+.AR .Arinput[type=checkbox] {
+    margin-right: 5px;
+}
+
+.FA input[type="checkbox"]:after,
+.AR input[type="checkbox"]:after {
+    left: 20%;
+    border-right: 0;
+}
+
+.FA input[type="radio"]:after,
+.AR input[type="radio"]:after {
+    left: 25%;
+}
+
 .FA .Search_wrapper:after,
 .AR .Search_wrapper:after {
     right: 15px;
@@ -30113,6 +31266,63 @@ html .AR.tablet .ThemeGrid_Width12 {
     right: 260px;
 }
 
+.FA.Header_title,
+.AR.Header_title {
+    padding-left: 0;
+    padding-right: 30px;
+    left: auto;
+    right: 0;
+    border-right: none;
+    border-left: 1px solid #D5DBDE;
+}
+
+.FA.tablet .Header_title,
+.FA.phone .Header_title,
+.AR.tablet .Header_title,
+.AR.phone .Header_title {
+    border-left: none;
+}
+
+.FA.phone .Header_title,
+.AR.phone .Header_title {
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.FA .Header_title a img,
+.AR .Header_title a img {
+    margin-right: auto;
+    margin-left: 5px;
+}
+
+.FA .Header_title a,
+.FA .Header_title a:link,
+.FA .Header_title a:visited,
+.FA .Header_title a:hover,
+.AR .Header_title a,
+.AR .Header_title a:link,
+.AR .Header_title a:visited,
+.AR .Header_title a:hover {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.FA .Header_search,
+.AR .Header_search {
+    left: auto;
+    right: 300px;
+    padding-right: 20px;
+    padding-left: 420px;
+}
+
+.FA .Header_user,
+.AR .Header_user {
+    right: auto;
+    left: 0;
+    padding-right: auto;
+    padding-left: 20px;
+}
+
 .FA .LoginInfo_username img,
 .AR .LoginInfo_username img {
     margin-right: auto;
@@ -30590,6 +31800,15 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
     margin-right: 20px;
 }
 
+.FA input[type=radio],
+.FA input[type=checkbox],
+.AR input[type=radio],
+.AR input[type=checkbox] {
+    margin-right: 0;
+    margin-left: 5px;
+    padding: 0;
+}
+
 /*Login AR and FA */
 .FA .PatientDetailsLayout___loginInfo .User,
 .AR .PatientDetailsLayout___loginInfo .User{
@@ -30921,6 +32140,20 @@ div.UnitDropContainer div.DoctorName.Dragging {
     margin-top: -5px;
 }
 
+
+/* Usefull Classes */
+.VerticalAlignMiddle {
+    vertical-align: middle !important;
+}
+
+.VerticalAlignMiddle .Columns .Column {
+    vertical-align: middle;
+}
+
+
+
+
+
 .AutoHeight {
     height: auto !important;
 }
@@ -30983,6 +32216,11 @@ div.LineInfo {
 
 .Panel {
     -servicestudio-display: none !important;
+}
+
+.Header {
+    -servicestudio-overflow: hidden;
+    -servicestudio-position: relative;
 }
 
 .MainContent {
@@ -31332,6 +32570,18 @@ div.LineInfo {
 .GraphStructure>div:last-child div {
     -servicestudio-background-color: #fff;
     -servicestudio-width: 100% !important;
+}
+
+
+.BigInput div {
+    -servicestudio-width: 100%;
+    -servicestudio-white-space: nowrap;
+    -servicestudio-margin-bottom: 40px;
+}
+
+.BigInput select,
+.BigInput input {
+    -servicestudio-margin-left: 100px;
 }
 
 .FileContainer {
@@ -31733,6 +32983,11 @@ div.NoPrompt>span>div.template-item-input-block {
 
 
 /* START */
+input[type].SavedInput,
+textarea.SavedInput {
+    border-color: #16979f !important;
+    border-width: 2px !important;
+}
 
 span.SavedFeedback {
     background-color: #16979f;
@@ -32161,6 +33416,26 @@ div.template-item{
 .AR .DateTimeInput_Container:after {
     left:12px;
     right: auto;
+}
+
+input[type].TextInput[readonly],
+input[type].TextInput:read-only {
+    background-color: #e9e9e9;
+    color: #bababa;
+    cursor: not-allowed;
+}
+
+/*for receive stock*/
+input[type].TextInput[readonly] {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: #333;
+  /*  border-left: 3px solid transparent;*/
+    font-weight: bold;
+    text-align: center;
+    /* width: 100%; */
+    /*border: 1px solid #C9CDCE;*/
 }
 
 .DateTimeRangePicker-input input {
@@ -33840,9 +35115,6 @@ screen and (min-width: 1200px) {
     min-height: 130px;
 }
 
-.ResizeIframeTooltip {
-    width: fit-content;
-}
 
 
 .DisplayBlock,
@@ -33855,3 +35127,29 @@ a.Button.DisplayBlock {
 .zindex-150 {
     z-index: 150!important;
 }
+
+
+
+
+
+
+/* ExcludeFromPickers: ActionAdd, ActionChange, ActionDelete, ActionEdit, Actions, Application_Menu, Badge, 
+Breadcrumbs, BreadcrumbsContainer, Content, ControlActions, desktop, EditableTable, EditRecord, EditRecord_Buttons, 
+fa, Feedback_AjaxWait, Feedback_Message_Error, Feedback_Message_Info, Feedback_Message_Success, Feedback_Message_Warning, 
+Feedback_Message_Wrapper, Feedback_Message_Wrapper_Close, Filters_Wrapper, 
+Footer, Form, Header, Header__activity, Header__loginInfo, Header_buttonMenu, Header_search, 
+Header_title, Header_user, HeaderPage, ie, ie10, ie11, ie8, InEditMode, ListNavigation_CurrentPageNumber, 
+ListNavigation_DisabledNext, ListNavigation_DisabledPrevious, ListNavigation_Ellipsis, ListNavigation_Next, ListNavigation_PageNumber, 
+ListNavigation_Previous, Loader, Login__Form, Login__Logo, Login_Box, Login_Footer, Login_Text, LoginInfo, LoginInfo_username, MainContent, 
+MainPopup, Menu, Menu_DropDownArrow, Menu_DropDownButton, Menu_DropDownPanel, Menu_SubItemsPlaceholder, Menu_SubMenuItem, 
+Menu_SubMenuItemActive, Menu_TopMenu, Menu_TopMenuActive, Menu_TopMenus, menuOpen, MenuSlider_Toggler, mini, Not_Valid, OnEdit, open, 
+OSAutoMarginTop, OSInlineClear, Page, phone, portait, Responsive, RowControlGroup, RowWithAddAction, select2-choice, select2-container, 
+Selected, ShowRecord, SmartInput_Undo, TableRecords, TableRecords_EvenLine, TableRecords_Header, TableRecords_OddLine, tablet, 
+ThemeGrid_Container, ThemeGrid_MarginGutter, ThemeGrid_Width12, ThemeGrid_Wrapper, Title, Title_Section, 
+MultiPaddingLeft5, MultiPaddingLeft10, MultiPaddingLeft15, MultiPaddingLeft20, MultiPaddingLeft25, MultiPaddingLeft30, 
+MultiPaddingLeft40, MultiPaddingRight5, MultiPaddingRight10, MultiPaddingRight15, MultiPaddingRight20, MultiPadding25, 
+MultiPaddingRight30, MultiPaddingRight40, MultiPadding5, MultiPadding10, MultiPadding15, MultiPadding20, MultiPadding25, 
+MultiPadding30, MultiPadding40, MultiPaddingTop5, MultiPaddingTop10, MultiPaddingTop15, MultiPaddingTop20, MultiPadding25, 
+MultiPaddingBottom5, MultiPaddingBottom10, MultiPaddingBottom15, MultiPaddingBottom20, MultiPaddingBottom25, MarginBottom5, 
+MarginBottom10, MarginBottom20, MultiMarginLeft3, MultiMarginLeft5, MultiMarginLeft10, MultiMarginLeft15, MultiMarginLeft20, 
+MultiMarginRight5, MultiMarginRight10, MultiMarginRight15, MultiMarginRight20,DeviceFullWidth,DeviceMiddleWidth*/
