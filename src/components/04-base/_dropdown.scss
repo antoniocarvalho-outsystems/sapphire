@@ -11,44 +11,40 @@
 // Style guide: Components.Dropdown
 
 .Dropdown {
-	background-color: #fff;
+	background-color: $regular-white;
 	// @TODO: how do we host images?
 	background-image: url('https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/dropdown_bg.png?520541');
 	background-position: right 14px center;
 	background-repeat: no-repeat;
-	border: 1px solid #c9cdce;
+	border: 1px solid $light-grey;
 	border-radius: 2px;
 	border-radius: 2px;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-	color: #262626;
+	color: $dark-grey;
 	font-size: 14px;
 	height: 36px;
 	line-height: 18px;
-	padding-bottom: 8px;
-	padding-left: 10px;
-	padding-right: 45px;
-	padding-top: 8px;
+	padding: 8px 45px 8px 10px;
 
 	&:hover {
-		background-color: #eff4f6;
-		border: 1px solid #b1b5b6;
+		background-color: $regular-eta;
+		border: 1px solid $light-grey;
 		border-radius: 2px;
 	}
 
 	&:focus {
-		border: 1px solid #16979f;
+		border: 1px solid $dark-grey;
 		border-radius: 2px;
-		box-shadow: 0 1px 2px 0 #7bb2bf;
 		box-sizing: border-box;
 	}
 
 	&.Mandatory {
-		border-left: 3px solid #08a6af;
+		border-left: 3px solid $regular-alpha;
 
 		&.Not_Valid {
-			border: solid 1px #a55555;
+			border: solid 1px $regular-red;
 			border-bottom-right-radius: 0;
-			border-left: 3px solid #a55555 !important;
+			border-left: 3px solid $regular-red !important;
 			border-top-right-radius: 0;
 		}
 	}
@@ -62,5 +58,9 @@
 		font-size: 15px;
 		line-height: 19px;
 		padding: 5px 5px 5px 36px;
+	}
+
+	.LineContent .Dropdown {
+    padding: 5px 5px 5px 5px;
 	}
 }

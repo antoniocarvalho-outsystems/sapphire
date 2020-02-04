@@ -22,10 +22,11 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin({
 			cleanOnceBeforeBuildPatterns: [`${outputPath}/*.hot-update.*`],
-    	dry: false,
-    	dangerouslyAllowCleanPatternsOutsideProject: true
+			dry: false,
+			dangerouslyAllowCleanPatternsOutsideProject: true,
 		}),
-		new KssWebpackPlugin(KssConfig)],
+		new KssWebpackPlugin(KssConfig),
+	],
 	node: {
 		fs: 'empty',
 	},
@@ -41,7 +42,19 @@ module.exports = {
 					MiniCssExtractPlugin.loader,
 					'css-loader',
 					'postcss-loader',
-					'sass-loader',
+					{
+						loader: 'sass-loader',
+						options: {
+							prependData: () => {
+								const path =
+									process.env.NODE_ENV === 'production'
+										? '/Sapphirev2_Th/fonts/'
+										: 'https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/fonts/';
+
+								return `$font-url: '${path}';`;
+							},
+						},
+					},
 				],
 			},
 			{

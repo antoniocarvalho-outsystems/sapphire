@@ -291,57 +291,57 @@
     $1. General Properties
 \*-------------------------------------*/
 
-html,
-body,
-form,
-.Page {
-    height: 100%;
-    position: relative;
-    font-family: 'globeregular', Helvetica, Arial, sans-serif;
-    font-size: 12px;
-}
+// html,
+// body,
+// form,
+// .Page {
+//     height: 100%;
+//     position: relative;
+//     font-family: 'globeregular', Helvetica, Arial, sans-serif;
+//     font-size: 12px;
+// }
 
-body {
-    background-color: #f7f4ef;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    overflow-x: hidden;
-}
+// body {
+//     background-color: #f7f4ef;
+//     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+//     overflow-x: hidden;
+// }
 
-body,
-select,
-textarea,
-input {
-    font-family: 'globeregular', Helvetica, Arial, sans-serif;
-    color: #333;
-    font-weight: normal;
-    line-height: 1.43;
-}
+// body,
+// select,
+// textarea,
+// input {
+//     font-family: 'globeregular', Helvetica, Arial, sans-serif;
+//     color: #333;
+//     font-weight: normal;
+//     line-height: 1.43;
+// }
 
-html,
-body,
-div,
-span,
-a,
-select,
-form,
-fieldset,
-img,
-input,
-button,
-select,
-table,
-tbody,
-thead,
-tr,
-th,
-td,
-textarea,
-optgroup,
-option,
-ul,
-li {
-    outline: 0 !important;
-}
+// html,
+// body,
+// div,
+// span,
+// a,
+// select,
+// form,
+// fieldset,
+// img,
+// input,
+// button,
+// select,
+// table,
+// tbody,
+// thead,
+// tr,
+// th,
+// td,
+// textarea,
+// optgroup,
+// option,
+// ul,
+// li {
+//     outline: 0 !important;
+// }
 
 .TileIcon_text,
 .TileNumber_text,
@@ -385,10 +385,10 @@ a:visited {
     cursor: pointer;
 }
 
-div[onclick] {
-    cursor: pointer;
-    /* add a pointer cursor when the div has a click event */
-}
+// div[onclick] {
+//     cursor: pointer;
+//     /* add a pointer cursor when the div has a click event */
+// }
 
 .tablet select,
 .phone select {
@@ -3975,13 +3975,13 @@ input[type].Mandatory:focus {
     border-right: solid 3px #0da2aa;
 }
 
-.Dropdown.Mandatory.Not_Valid,
-input[type].Mandatory.Not_Valid {
-    border: solid 1px #a55555;
-    border-left: 3px solid #a55555 !important;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-}
+// .Dropdown.Mandatory.Not_Valid,
+// input[type].Mandatory.Not_Valid {
+//     border: solid 1px #a55555;
+//     border-left: 3px solid #a55555 !important;
+//     border-bottom-right-radius: 0;
+//     border-top-right-radius: 0;
+// }
 
 
 input[type="text"].Not_Valid {
@@ -6207,16 +6207,16 @@ body .triggerTimeBack {
     border-top-left-radius: 1px;
 }
 
-.Dropdown.Mandatory:not([disabled="disabled"]),
-.TextInput.Mandatory {
-    border-left: 3px solid #08A6AF;
-}
+// .Dropdown.Mandatory:not([disabled="disabled"]),
+// .TextInput.Mandatory {
+//     border-left: 3px solid #08A6AF;
+// }
 
-.Dropdown.Mandatory:focus,
-.TextInput.Mandatory:focus {
-    border-left: 3px solid #08A6AF;
-    /*line-height: 16px;*/
-}
+// .Dropdown.Mandatory:focus,
+// .TextInput.Mandatory:focus {
+//     border-left: 3px solid #08A6AF;
+//     /*line-height: 16px;*/
+// }
 
 
 /* SILK Patterns > RangeSlider */
@@ -6907,29 +6907,29 @@ a .ListItem:after {
     line-height: 1.4;
 }
 
-.Label {
-    border-radius: 10px;
-    padding: 2px 8px;
-    background-color: transparent;
-    max-height:20px;
-}
+// .Label {
+//     border-radius: 10px;
+//     padding: 2px 8px;
+//     background-color: transparent;
+//     max-height:20px;
+// }
 
-.Text_Note {
-    color: #5f6f79;
-    font-size: 12px;
-}
+// .Text_Note {
+//     color: #5f6f79;
+//     font-size: 12px;
+// }
 
-.Uppercase {
-    text-transform: uppercase;
-}
+// .Uppercase {
+//     text-transform: uppercase;
+// }
 
-.VerticalInputLabel {
-    color: #868687;
-    font-family: globeregular;
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 1;
-}
+// .VerticalInputLabel {
+//     color: #868687;
+//     font-family: globeregular;
+//     font-size: 1em;
+//     font-weight: bold;
+//     line-height: 1;
+// }
 
 /*------------------------------------------------------------*/
 /* 8.2 Usefull Classes > Buttons ******************************/
@@ -17382,7 +17382,7 @@ canvas.Sketch_Canvas {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    cursor: url("pencil.cur"), auto;
+    //cursor: url("pencil.cur"), auto;
     height: 100%;
     width: 100%;
 }
@@ -17453,9 +17453,9 @@ canvas.Sketch_Canvas {
     text-align: center;
 }
 
-.Dropdown>div {
-    width: auto;
-}
+// .Dropdown>div {
+//     width: auto;
+// }
 
 .OtherActions>div {
     line-height: 27px;
@@ -20353,62 +20353,62 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 /* 9.121 Sapphire Patterns > Dropdown *********/
 /*------------------------------------------------------------*/
 
-.Dropdown {
-    border: 1px solid #c9cdce;
-    height: 36px;
-    border-radius: 2px;
-    background-color: #fff;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    background-position: right 14px center;
-    background-repeat: no-repeat;
-    border-radius: 2px;
-    color: #262626;
-    font-size: 14px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-    padding-right: 45px;
-    line-height: 18px;
-}
+// .Dropdown {
+//     border: 1px solid #c9cdce;
+//     height: 36px;
+//     border-radius: 2px;
+//     background-color: #fff;
+//     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+//     background-position: right 14px center;
+//     background-repeat: no-repeat;
+//     border-radius: 2px;
+//     color: #262626;
+//     font-size: 14px;
+//     padding-top: 8px;
+//     padding-bottom: 8px;
+//     padding-left: 10px;
+//     padding-right: 45px;
+//     line-height: 18px;
+// }
 
 
-.isTouch .Dropdown:hover,
-.isTouch .Dropdown {
-    height: 50px;
-    font-size: 1.1em;
-    line-height: 1.3em;
-}
-
-
-
-.Dropdown:hover {
-    border: 1px solid #B1B5B6;
-    border-radius: 2px;
-    background-color: #EFF4F6;
-}
-
-.Dropdown:focus {
-    box-sizing: border-box;
-    border: 1px solid #16979F;
-    border-radius: 2px;
-    box-shadow: 0 1px 2px 0 #7BB2BF;
-}
+// .isTouch .Dropdown:hover,
+// .isTouch .Dropdown {
+//     height: 50px;
+//     font-size: 1.1em;
+//     line-height: 1.3em;
+// }
 
 
 
-.FA .Dropdown,
-.AR .Dropdown {
-    background-position: left 14px center;
-    background-repeat: no-repeat;
-    font-size: 15px;
-    padding: 5px 5px 5px 36px;
-    line-height:19px;
-}
+// .Dropdown:hover {
+//     border: 1px solid #B1B5B6;
+//     border-radius: 2px;
+//     background-color: #EFF4F6;
+// }
 
-.FA .LineContent .Dropdown,
-.AR .LineContent .Dropdown {
-    padding: 5px 5px 5px 5px;
-}
+// .Dropdown:focus {
+//     box-sizing: border-box;
+//     border: 1px solid #16979F;
+//     border-radius: 2px;
+//     box-shadow: 0 1px 2px 0 #7BB2BF;
+// }
+
+
+
+// .FA .Dropdown,
+// .AR .Dropdown {
+//     background-position: left 14px center;
+//     background-repeat: no-repeat;
+//     font-size: 15px;
+//     padding: 5px 5px 5px 36px;
+//     line-height:19px;
+// }
+
+// .FA .LineContent .Dropdown,
+// .AR .LineContent .Dropdown {
+//     padding: 5px 5px 5px 5px;
+// }
 
 
 .SmallDrop select {
@@ -32142,13 +32142,13 @@ div.UnitDropContainer div.DoctorName.Dragging {
 
 
 /* Usefull Classes */
-.VerticalAlignMiddle {
-    vertical-align: middle !important;
-}
+// .VerticalAlignMiddle {
+//     vertical-align: middle !important;
+// }
 
-.VerticalAlignMiddle .Columns .Column {
-    vertical-align: middle;
-}
+// .VerticalAlignMiddle .Columns .Column {
+//     vertical-align: middle;
+// }
 
 
 
@@ -34846,12 +34846,12 @@ div.List-Star.Selected>div[unselected] {
     height: auto;
 }
 
-.VerticalCenter:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
+// .VerticalCenter:before {
+//   content: '';
+//   display: inline-block;
+//   height: 100%;
+//   vertical-align: middle;
+// }
 
 
 

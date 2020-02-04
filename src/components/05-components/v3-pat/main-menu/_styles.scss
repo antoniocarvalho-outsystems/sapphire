@@ -1,0 +1,271 @@
+.Menubar {
+	@include component-scroll(true, 0);
+
+	background-color: $sapphire-blue;
+	-servicestudio-display: inline-block;
+	font-weight: 700;
+	height: $default-menubar-height;
+	left: 0;
+	-servicestudio-position: relative;
+	position: fixed;
+	top: 0;
+	-servicestudio-width: 100% !important;
+	width: 100%;
+	-servicestudio-z-index: 0;
+	z-index: 4;
+
+	span {
+		-servicestudio-display: inline-block;
+		-servicestudio-width: 50px;
+	}
+
+	span span {
+		-servicestudio-display: inline-block;
+	}
+
+	.ListRecords {
+		-servicestudio-display: none;
+		display: inline;
+		-servicestudio-position: relative;
+	}
+
+	.ListRecords .MenuItem {
+		-servicestudio-display: inline-block;
+		-servicestudio-position: relative;
+	}
+
+	&_logo {
+		color: $regular-white;
+		display: inline-block;
+		font-size: 25px;
+		height: 100%;
+		position: relative;
+		text-align: center;
+		width: 50px;
+
+		&:hover {
+			color: $regular-white;
+			text-shadow: 0px 0px 3px $regular-white;
+			transition: all 0.2s ease-in;
+		}
+
+		.icon {
+			color: $regular-white;
+			line-height: $default-menubar-height;
+		}
+	}
+
+	&_item {
+		display: inline-block;
+		width: calc(100% - 130px);
+	}
+
+	&_extraItem {
+		color: $regular-white;
+		cursor: pointer;
+		display: none;
+		font-size: 20px;
+		height: 100%;
+		line-height: 55px;
+		padding: 0 10px;
+		position: relative;
+		text-align: center;
+
+		&.show {
+			display: inline-block;
+		}
+
+		&:hover,
+		&:active:hover {
+			background-color: $sapphire-dark-blue2;
+			color: $regular-white;
+			transition: all 0.2s ease-in;
+		}
+	}
+
+	&__extraContainer {
+		background-color: $sapphire-dark-blue2;
+		line-height: 40px;
+		max-height: 0;
+		min-width: 206px;
+		overflow-y: auto;
+		position: absolute;
+		right: 0;
+		top: $default-menubar-height;
+		transition: max-height 0.4s ease-in;
+		z-index: 4;
+
+		&:empty {
+			display: none;
+		}
+
+		&.show {
+			max-height: 500px;
+			transition: max-height 0.4s ease-in;
+		}
+
+		.MenuItem {
+			display: block;
+			height: auto;
+			padding: 0;
+			text-align: left;
+
+			&:hover a {
+				color: $regular-alpha !important;
+			}
+		}
+
+		.MenuItem_subItems {
+			padding: 0;
+			position: relative;
+
+			&.show {
+				top: 0;
+			}
+
+			a {
+				padding: 0 30px;
+			}
+		}
+
+		.MenuItem_icon {
+			display: none;
+		}
+
+		.MenuItem_label {
+			padding: 0 15px;
+		}
+	}
+}
+
+.MenuItem {
+	color: $regular-white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+	height: $default-menubar-height;
+	line-height: $default-menubar-height;
+	padding: 0 15px 0 10px;
+	position: relative;
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+	-servicestudio-width: 60px;
+
+	&:hover {
+		.MenuItem_icon a,
+		.MenuItem_label a {
+			color: $regular-white;
+		}
+	}
+
+	&,
+	&.active,
+	&:active {
+		&:hover {
+			background-color: $sapphire-dark-blue2;
+			color: $regular-white;
+		}
+	}
+
+	&.activeIndicator {
+		&.shadow {
+			background-color: transparent;
+		}
+	}
+
+	&.active,
+	&.activeIndicator {
+		background-color: $sapphire-dark-blue2;
+		color: $regular-white;
+
+		.MenuItem_icon a,
+		.MenuItem_label a {
+			color: $regular-white !important;
+		}
+	}
+
+	&_icon {
+		font-size: 16px;
+		margin-right: 5px;
+	}
+
+	&_label {
+		font-size: 14px;
+	}
+
+	&_icon a,
+	&_label a {
+		color: $regular-white !important;
+	}
+
+	&_subItems {
+		background: $sapphire-dark-blue2;
+		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: inherit fvdescsadcv 3px;
+		box-shadow: rgba(14, 64, 86, 0.2) 0 2px 2px;
+		left: 0;
+		line-height: normal;
+		max-height: 0;
+		min-width: 206px;
+		overflow: hidden;
+		overflow-y: auto;
+		position: absolute;
+		right: 0;
+		top: $default-menubar-height;
+		transition: all 0.1s ease-out;
+		z-index: 4;
+
+		&.show {
+			max-height: 500px;
+			overflow-y: auto;
+		}
+
+		a,
+		a:link {
+			background-color: $sapphire-dark-blue2;
+			border: 1px solid $sapphire-dark-blue2;
+			color: $regular-white !important;
+			display: block;
+			font-size: 13px;
+			font-weight: normal;
+			height: auto;
+			line-height: 19px;
+			margin: 5px 5px;
+			padding: 5px 10px;
+			position: relative;
+			transition: all 0.2s ease-in;
+
+			&:focus {
+				border: 1px solid $regular-white;
+			}
+
+			&:hover {
+				color: $regular-alpha !important;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.Menubar__extraContainer {
+		left: 0;
+		right: auto;
+	}
+
+	.MenuItem_icon {
+		margin-left: 5px;
+		margin-right: 0;
+	}
+}
+
+// .mostly-customized-scrollbar::-webkit-scrollbar {
+// 	background-color: $mid-light-grey;
+// 	height: 8px;
+// 	width: 5px;
+// }
+
+// .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+// 	background: $regular-black;
+// }
