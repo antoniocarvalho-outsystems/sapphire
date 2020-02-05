@@ -28412,32 +28412,32 @@ a.Button.MedInteractions:before {
     margin-right: 10px;
 }
 
-a.Button.Small.Cancel:hover,
-a.Button.Small.Cancel:active,
-a.Button.Small.Cancel:focus,
-a.Button.Small.Cancel {
-    font-size: 12px !important;
-}
+// a.Button.Small.Cancel:hover,
+// a.Button.Small.Cancel:active,
+// a.Button.Small.Cancel:focus,
+// a.Button.Small.Cancel {
+//     font-size: 12px !important;
+// }
 
-a.Button.Small.Cancel:before {
-    font-size: 12px !important;
-}
+// a.Button.Small.Cancel:before {
+//     font-size: 12px !important;
+// }
 
 
 /*Button Magnifier*/
 
 
-.Button.Second.SearchMagnifier:hover,
-.Button.Second.SearchMagnifier:hover:active,
-.Button.Second.SearchMagnifier:focus,
-.Button.Second.SearchMagnifier:active,
-.Button.Second.SearchMagnifier{
-    min-width:auto;
-}
-.Button.Second.SearchMagnifier:after{
-    content: "\e690";
-    font-family: 'Sapphire-Icon-Font';    
-}
+// .Button.Second.SearchMagnifier:hover,
+// .Button.Second.SearchMagnifier:hover:active,
+// .Button.Second.SearchMagnifier:focus,
+// .Button.Second.SearchMagnifier:active,
+// .Button.Second.SearchMagnifier{
+//     min-width:auto;
+// }
+// .Button.Second.SearchMagnifier:after{
+//     content: "\e690";
+//     font-family: 'Sapphire-Icon-Font';    
+// }
 
 .Page.isTouch  .Button.Second.SearchMagnifier:focus,
 .Page.isTouch  .Button.Second.SearchMagnifier:active,

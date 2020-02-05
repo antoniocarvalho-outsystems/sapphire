@@ -1,0 +1,227 @@
+// Buttons
+//
+// Buttons
+//
+//
+// Markup: _buttons.hbs
+//
+//Style guide: Buttons
+
+/**** BUTTON REFACTOR 06/09/2018 ****/
+
+@mixin default-button($bgColor: regular-alpha) {
+	background-color: color($bgColor);
+	border: none;
+	border-radius: 18px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: bold;
+	height: 3rem;
+	line-height: 3rem;
+	min-width: 10rem;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+@mixin disabled-button {
+	background-image: none;
+	border: 1px solid color(light-grey);
+	color: color(light-grey);
+	cursor: default;
+	pointer-events: none;
+	text-shadow: none;
+}
+
+@mixin button-state-size {
+	font-size: 22px !important;
+	height: 50px;
+	line-height: 50px;
+}
+
+@mixin focus-border($bdColor: dark-grey) {
+	border: 1px solid color($bdColor) !important;
+}
+
+@mixin setLinkStyleAll {
+	&:hover,
+	&:link,
+	&:active {
+		@content;
+	}
+}
+
+a.Button {
+	//Important use due to Theme Patterns Silk UI
+	@include default-button;
+
+	&:focus {
+		@include focus-border();
+	}
+
+	&:active,
+	&:hover {
+		background-color: color(primary-light) !important;
+	}
+
+	&:disabled,
+	&[disabled] {
+		background-color: color(sapphire-white);
+		cursor: not-allowed;
+
+		@include disabled-button();
+
+		&:before {
+			color: #4a9bbc;
+			opacity: 0.45;
+		}
+	}
+
+	/* **************************************** Button Second ********************************************* */
+	&.Second {
+		//Important use due to Theme Patterns Silk UI
+		background-color: color(mid-dark-grey);
+
+		&:active,
+		&:hover {
+			background-color: color(regular-grey) !important;
+		}
+
+		&:focus {
+			@include focus-border(dark-grey);
+		}
+
+		&:disabled,
+		&[disabled] {
+			background-color: color(sapphire-white);
+			@include disabled-button();
+
+			&:before {
+				color: #6fa0a3;
+			}
+		}
+
+		&:before {
+			color: #fff;
+		}
+
+		&.SearchMagnifier {
+			min-width: auto;
+			@include setLinkStyleAll {
+				min-width: auto;
+			}
+
+			&:after {
+				content: '\e690';
+				font-family: 'Sapphire-Icon-Font';
+			}
+		}
+	}
+
+	/* **************************************** Button Third ********************************************* */
+	&.Third,
+	&.Cancel {
+		background-color: color(sapphire-white);
+		//Important use due to Theme Patterns Silk UI
+		color: color(dark-grey);
+		@include focus-border(light-grey);
+
+		&:before {
+			color: #262626;
+		}
+
+		&:active,
+		&:hover {
+			background-color: color(sapphire-light-container) !important;
+		}
+
+		&:focus {
+			@include focus-border();
+		}
+
+		&:disabled,
+		&[disabled] {
+			@include disabled-button();
+
+			&:before {
+				color: #b1b5b6;
+			}
+		}
+	}
+
+	/* **************************************** Button Link ********************************************* */
+
+	&.Link {
+		background: none;
+		border: none !important;
+		//Important use due to Theme Patterns Silk UI
+		color: color(regular-beta);
+
+		&:active,
+		&hover,
+		&focus,
+		&:disabled {
+			background: none !important;
+		}
+
+		&:focus {
+			@include focus-border;
+			border-radius: unset;
+		}
+
+		&:active,
+		&:hover {
+			background: none !important;
+			color: color(regular-alpha) !important;
+		}
+
+		&:disabled,
+		&[disabled] {
+			@include disabled-button();
+			border: none;
+		}
+	}
+
+	&.Small {
+		font-size: 0.9em;
+		height: 26px;
+		line-height: 24px;
+		min-width: 76px;
+	}
+
+	&.Big {
+		border-radius: 10px;
+		font-size: 2em;
+		height: 50px;
+		line-height: 44px;
+		min-width: 55px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&.XBig {
+		border-radius: 10px;
+		box-sizing: border-box;
+		font-size: 2em;
+		height: 50px;
+		line-height: 0;
+		min-width: 206px;
+		padding: 40px 10px;
+	}
+
+	&.Button.twoLines {
+		border-radius: 2px;
+		height: auto;
+		line-height: 15px;
+		padding: 5px 15px 5px 15px;
+
+		&:before {
+			line-height: 5px;
+			margin-top: 12px;
+		}
+		> div {
+			text-align: right;
+		}
+	}
+}
