@@ -66,7 +66,7 @@
 		display: none;
 		font-size: 20px;
 		height: 100%;
-		line-height: 55px;
+		line-height: $default-menubar-height;
 		padding: 0 10px;
 		position: relative;
 		text-align: center;
@@ -110,8 +110,13 @@
 			padding: 0;
 			text-align: left;
 
-			&:hover a {
-				color: $regular-alpha !important;
+			&:hover {
+				.MenuItem_icon,
+				.MenuItem_label,
+				.MenuItem_icon a,
+				.MenuItem_label a {
+					color: $regular-alpha !important;
+				}
 			}
 		}
 
@@ -123,7 +128,8 @@
 				top: 0;
 			}
 
-			a {
+			a,
+			a:link {
 				padding: 0 30px;
 			}
 		}
@@ -221,8 +227,8 @@
 			overflow-y: auto;
 		}
 
-		a,
-		a:link {
+		> a,
+		> a:link {
 			background-color: $sapphire-dark-blue2;
 			border: 1px solid $sapphire-dark-blue2;
 			color: $regular-white !important;

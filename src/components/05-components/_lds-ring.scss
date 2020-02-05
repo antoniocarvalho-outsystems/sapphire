@@ -1,3 +1,17 @@
+// Loading
+//
+// Loading lds-ring.
+//
+// Markup:
+// <div class="lds-ring">
+//  <div></div>
+//  <div></div>
+//  <div></div>
+//  <div></div>
+// </div>
+//
+// Style guide: Components.Loading
+
 .lds-ring {
 	display: inline-block;
 	height: 32px;
@@ -9,8 +23,8 @@
 
 	div {
 		animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-		border: 3px solid #fff;
-		border-color: #0da2aa transparent transparent transparent;
+		border: 3px solid $regular-white;
+		border-color: $regular-alpha transparent transparent transparent;
 		border-radius: 50%;
 		box-sizing: border-box;
 		display: block;

@@ -52,7 +52,7 @@
 
 			&.isFixed .LayoutBase-secondary-menu,
 			&.isFixed .LayoutBase-secondary-aside {
-				border-bottom: 4px #c9cdce solid;
+				border-bottom: 4px solid $light-grey;
 				height: 50px;
 			}
 
@@ -86,17 +86,17 @@
 		}
 
 		.LayoutBase-secondary-menu {
-			background-color: #f7f4ef;
+			background-color: $light-beige;
 			width: 67%;
 		}
 
 		.LayoutBase-secondary-aside {
-			background-color: #f7f4ef;
+			background-color: $light-beige;
 			width: 33%;
 		}
 
 		.LayoutBase-emergency {
-			background-color: #eee3e3;
+			background-color: $sapphire-light-container;
 
 			&.isFixed {
 				position: fixed;
@@ -109,42 +109,72 @@
 		padding: 16px;
 	}
 
-	&.Page .LayoutBase-Content {
-		position: static;
+	&-secondary-aside {
+		.ResumeDetails {
+			padding: 7px 10px !important;
+		}
+
+		a .Circle.OSInline {
+			display: table-cell;
+		}
 	}
 
-	&.Page .ClinicianWorkArea-columns {
-		padding-left: 16px;
-		width: 100%;
-	}
+	&.Page {
+		&.tablet .PatientDetails_content {
+			padding-left: 0;
+			padding-right: 0;
+		}
 
-	&.Page .ClinicianWorkArea-columns-big {
-		display: inline-block;
-		padding: 0 5px 0 0;
-		vertical-align: top;
-		width: 67%;
-	}
+		.LayoutBase-Content {
+			position: static;
+		}
 
-	&.Page .ClinicianWorkArea-columns-small {
-		background-color: #eeeae3;
-		display: inline-block;
-		padding: 0 10px 0 5px;
-		vertical-align: top;
-		width: 33%;
-	}
+		.ClinicianWorkArea-columns {
+			padding-left: 16px;
+			width: 100%;
+		}
 
-	&.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-big {
-		display: block;
-		padding: 0;
-		width: 100%;
-	}
+		.ClinicianWorkArea-columns-big {
+			display: inline-block;
+			padding: 0 5px 0 0;
+			vertical-align: top;
+			width: 67%;
+		}
 
-	&.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-small {
-		display: none;
+		.ClinicianWorkArea-columns-small {
+			background-color: $sapphire-light-container;
+			display: inline-block;
+			padding: 0 10px 0 5px;
+			vertical-align: top;
+			width: 33%;
+		}
+
+		.ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-big {
+			display: block;
+			padding: 0;
+			width: 100%;
+		}
+
+		.ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-small {
+			display: none;
+		}
+
+		.Toolbar {
+			padding-left: 16px;
+		}
+
+		.Toolbar.Fix {
+			margin-left: 0;
+			padding-right: 8px;
+		}
 	}
 
 	.ClinicianWorkArea____workItems {
-		background-color: #ebebeb;
+		background-color: $sapphire-light-container;
+	}
+
+	.ClinicianWorkArea____painLevel {
+		display: block;
 	}
 
 	.select2-container--open .select2-dropdown--below {
@@ -179,7 +209,7 @@
 	}
 }
 
-// @TODO: wat
+// @TODO: is it possible to change this?
 .LayoutBase.Page .LayoutBase-Content-MainWorkArea .Content,
 .LayoutBase.Page
 	.SystemWideSidebar
@@ -213,14 +243,6 @@
 	padding-right: 0;
 }
 
-.LayoutBase.Page
-	.LayoutBase-iframesidebar.notExpandable
-	~ .LayoutBase-Content
-	.LayoutBase-Content-MainWorkArea
-	.Content {
-	padding-right: 250px !important;
-}
-
 .AR.LayoutBase.Page
 	.LayoutBase-iframesidebar.notExpandable
 	~ .LayoutBase-Content
@@ -230,15 +252,23 @@
 	padding-right: 0 !important;
 }
 
-.LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
-.LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
-	padding-right: 250px;
-}
-
 .AR .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
 .AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
 	padding-left: 250px;
 	padding-right: 0;
+}
+
+.LayoutBase.Page
+	.LayoutBase-iframesidebar.notExpandable
+	~ .LayoutBase-Content
+	.LayoutBase-Content-MainWorkArea
+	.Content {
+	padding-right: 250px !important;
+}
+
+.LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
+	padding-right: 250px;
 }
 
 html .Page .PatientDetailsLayout {
@@ -265,5 +295,21 @@ html .Page .PatientDetailsLayout {
 }
 
 .ClinicianWorkArea.FullWidth .ClinicianWorkArea____workItems {
-	background-color: #f7f4ef;
+	background-color: $light-beige;
+}
+
+.LayoutBase-Content-MainWorkArea.PatientDetails__MainWorkArea
+	.LayoutBase-primary-menu
+	.FullScreenTabsWrapper__Tabs {
+	position: static;
+}
+
+.LayoutBase-secondary-aside .PendingItemsContainer.OSInline,
+.LayoutBase-secondary-aside .PendingItemsContainer.OSInline .OSInline,
+.LayoutBase-secondary-aside > div.OSInline,
+.LayoutBase-secondary-aside a .OSInline,
+.LayoutBase-secondary-aside .ToggleButton.OSInline,
+.LayoutBase-secondary-aside > span > a > .DisplayInlineBlock,
+.LayoutBase-secondary-aside > span > span > a > .DisplayInlineBlock {
+	display: block;
 }

@@ -45,6 +45,17 @@
 		top: 0;
 		z-index: 70;
 
+		&:before {
+			background-color: $sapphire-grey-blue;
+			content: '';
+			display: block;
+			height: 100vh;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 40px;
+		}
+
 		&.notExpandable {
 			width: 250px;
 		}
@@ -88,59 +99,4 @@
 		padding-left: 40px;
 		padding-right: 0;
 	}
-}
-
-// REMOVENDO
-
-// .LayoutBase .LayoutBase-iframesidebar:before {
-// 	background-color: #0c262f;
-// 	content: '';
-// 	display: block;
-// 	height: 100vh;
-// 	position: absolute;
-// 	right: 0;
-// 	top: 0;
-// 	width: 40px;
-// }
-
-.LayoutBase-Content-MainWorkArea.PatientDetails__MainWorkArea
-	.LayoutBase-primary-menu
-	.FullScreenTabsWrapper__Tabs {
-	position: static;
-}
-
-.LayoutBase.Page.tablet .PatientDetails_content {
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.LayoutBase.Page .Toolbar {
-	padding-left: 16px;
-}
-
-.LayoutBase.Page .Toolbar.Fix {
-	margin-left: 0;
-	padding-right: 8px;
-}
-
-.ClinicianWorkArea____painLevel {
-	display: block;
-}
-
-.LayoutBase .LayoutBase-secondary-aside .ResumeDetails {
-	padding: 7px 10px !important;
-}
-
-.LayoutBase-secondary-aside .PendingItemsContainer.OSInline,
-.LayoutBase-secondary-aside .PendingItemsContainer.OSInline .OSInline,
-.LayoutBase-secondary-aside > div.OSInline,
-.LayoutBase-secondary-aside a .OSInline,
-.LayoutBase-secondary-aside .ToggleButton.OSInline,
-.LayoutBase-secondary-aside > span > a > .DisplayInlineBlock,
-.LayoutBase-secondary-aside > span > span > a > .DisplayInlineBlock {
-	display: block;
-}
-
-.LayoutBase-secondary-aside a .Circle.OSInline {
-	display: table-cell;
 }

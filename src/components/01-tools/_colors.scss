@@ -7,13 +7,10 @@
 //
 //Style guide: Functions.Color
 
-
 @function color($name, $opacity: 1, $schema: $sapphire__colors) {
 	@if map-has-key($schema, $name) {
 		@return rgba(map-get($schema, $name), $opacity);
-	}
-
-	@else {
+	} @else {
 		@warn "The value #{$name} is not in the map '$schema'";
 		@return null;
 	}
