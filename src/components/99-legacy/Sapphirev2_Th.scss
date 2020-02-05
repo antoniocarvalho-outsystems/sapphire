@@ -6936,30 +6936,30 @@ a .ListItem:after {
 /*------------------------------------------------------------*/
 
 /**** BUTTON REFACTOR 06/09/2018 ****/
-a.Button.Is_Default.Cancel,
-.Button.Is_Default.Cancel,
-.Button.ButtonDefault,
-.Button.Is_Default,
-a.ButtonDefault,
-a.Button.Is_Default,
-input.Button,
-a.Button {
-    -webkit-transition: none;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    border: 1px solid #0E4056;
-    border-radius: 2px;
-    background-color: #295A6E;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    height: 3rem;
-    font-family: 'globerbold';
-    font-size: 1.2rem;
-    line-height: 3rem;
-    min-width: 10rem;
-    text-decoration: none;
-    white-space: nowrap;
-}
+// a.Button.Is_Default.Cancel,
+// .Button.Is_Default.Cancel,
+// .Button.ButtonDefault,
+// .Button.Is_Default,
+// a.ButtonDefault,
+// a.Button.Is_Default,
+// input.Button,
+// a.Button {
+//     -webkit-transition: none;
+//     color: #fff;
+//     cursor: pointer;
+//     display: inline-block;
+//     border: 1px solid #0E4056;
+//     border-radius: 2px;
+//     background-color: #295A6E;
+//     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+//     height: 3rem;
+//     font-family: 'globerbold';
+//     font-size: 1.2rem;
+//     line-height: 3rem;
+//     min-width: 10rem;
+//     text-decoration: none;
+//     white-space: nowrap;
+// }
 
 .isTouch .Button.ButtonDefault,
 .isTouch .Button.Is_Default,
@@ -6989,226 +6989,226 @@ a.Button {
     font-size: 22px !important;
 }
 
-.Button.ButtonDefault:active,
-.Button.Is_Default:active,
-a.ButtonDefault:active,
-a.Button.Is_Default:active,
-input.Button:active,
-a.Button:active {
-    border: 1px solid #255569;
-    background-color: #00729B;
-    text-decoration: none;
-}
+// .Button.ButtonDefault:active,
+// .Button.Is_Default:active,
+// a.ButtonDefault:active,
+// a.Button.Is_Default:active,
+// input.Button:active,
+// a.Button:active {
+//     border: 1px solid #255569;
+//     background-color: #00729B;
+//     text-decoration: none;
+// }
 
-.Button.ButtonDefault:focus,
-.Button.Is_Default:focus,
-a.ButtonDefault:focus,
-a.Button.Is_Default:focus,
-input.Button:focus,
-a.Button:focus,
-.desktop a.Button:focus {
-    border: 1px solid #255569;
-    background: linear-gradient(180deg, #00698E 0%, #006185 100%);
-    box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 0 0 2px #FFFFFF, 0 0 1px 3px #7BB2BF;
-    text-decoration: none;
-}
+// .Button.ButtonDefault:focus,
+// .Button.Is_Default:focus,
+// a.ButtonDefault:focus,
+// a.Button.Is_Default:focus,
+// input.Button:focus,
+// a.Button:focus,
+// .desktop a.Button:focus {
+//     border: 1px solid #255569;
+//     background: linear-gradient(180deg, #00698E 0%, #006185 100%);
+//     box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 0 0 2px #FFFFFF, 0 0 1px 3px #7BB2BF;
+//     text-decoration: none;
+// }
 
-input.Button:active,
-input.Button:hover,
-input.Button:hover:active,
-a.Button:hover,
-a.Button:hover:active,
-.desktop a.Button:hover,
-.desktop a.Button:hover:active,
-.desktop .Button.ButtonDefault:hover,
-.desktop .Button.Is_Default:hover,
-.desktop .Button.ButtonDefault:hover:active,
-.desktop .Button.Is_Default:hover:active{
-    border: 1px solid #255569;
-    background: linear-gradient(180deg, #00698E 0%, #006185 100%);
-    box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    color: #fff;
-    text-decoration: none;
-}
+// input.Button:active,
+// input.Button:hover,
+// input.Button:hover:active,
+// a.Button:hover,
+// a.Button:hover:active,
+// .desktop a.Button:hover,
+// .desktop a.Button:hover:active,
+// .desktop .Button.ButtonDefault:hover,
+// .desktop .Button.Is_Default:hover,
+// .desktop .Button.ButtonDefault:hover:active,
+// .desktop .Button.Is_Default:hover:active{
+//     border: 1px solid #255569;
+//     background: linear-gradient(180deg, #00698E 0%, #006185 100%);
+//     box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+//     color: #fff;
+//     text-decoration: none;
+// }
 
-a.Button.Small,
-.Button.Small {
-    min-width: 76px;
-    border-radius: 2px;
-    font-size: 12px;
-    font-weight: bold;
-    height: 26px;
-    line-height: 24px;
-    text-decoration: none;
-}
+// a.Button.Small,
+// .Button.Small {
+//     min-width: 76px;
+//     border-radius: 2px;
+//     font-size: 12px;
+//     font-weight: bold;
+//     height: 26px;
+//     line-height: 24px;
+//     text-decoration: none;
+// }
 
-a.Button.Small:hover,
-a.Button.Small:hover:active,
-desktop a.Button.Small:hover,
-.desktop a.Button.Small:hover:active,
-a.Button.Small:focus,
-.desktop a.Button.Small:focus {
-    min-width: 76px;
-    border-radius: 2px;
-    font-size: 12px;
-    font-weight: bold;
-    height: 26px;
-    line-height: 24px;
-    text-decoration: none;
-}
+// a.Button.Small:hover,
+// a.Button.Small:hover:active,
+// desktop a.Button.Small:hover,
+// .desktop a.Button.Small:hover:active,
+// a.Button.Small:focus,
+// .desktop a.Button.Small:focus {
+//     min-width: 76px;
+//     border-radius: 2px;
+//     font-size: 12px;
+//     font-weight: bold;
+//     height: 26px;
+//     line-height: 24px;
+//     text-decoration: none;
+// }
 
 /*******/
 
-input.Button.Second,
-a.Button.Second {
-    background: linear-gradient(180deg, #08A6AF 0%, #08A4AE 100%);
-    border: 1px solid #0A939C;
-    border-radius: 2px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-}
+// input.Button.Second,
+// a.Button.Second {
+//     background: linear-gradient(180deg, #08A6AF 0%, #08A4AE 100%);
+//     border: 1px solid #0A939C;
+//     border-radius: 2px;
+//     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+//     color: #fff;
+//     font-size: 14px;
+//     font-weight: bold;
+//     text-decoration: none;
+// }
 
-a.Button.Second:before {
-    color: #fff;
-}
+// a.Button.Second:before {
+//     color: #fff;
+// }
 
-input.Button.Second:focus,
-a.Button.Second:focus {
-    box-shadow: 0 0 0 2px #FFFFFF, 0 0 1px 3px #7BB2BF;
-    border: 1px solid #0A939C;
-    border-radius: 2px;
-    border-radius: 2px;
-    background: linear-gradient(180deg, #0EBEC8 0%, #0CB3BF 100%);
-    font-size: 14px;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-}
+// input.Button.Second:focus,
+// a.Button.Second:focus {
+//     box-shadow: 0 0 0 2px #FFFFFF, 0 0 1px 3px #7BB2BF;
+//     border: 1px solid #0A939C;
+//     border-radius: 2px;
+//     border-radius: 2px;
+//     background: linear-gradient(180deg, #0EBEC8 0%, #0CB3BF 100%);
+//     font-size: 14px;
+//     color: #fff;
+//     font-weight: bold;
+//     text-decoration: none;
+// }
 
-input.Button.Second:hover,
-input.Button.Second:hover:active,
-a.Button.Second:hover,
-.desktop a.Button.Second:hover,
-a.Button.Second:hover:active,
-.desktop a.Button.Second:hover:active {
-    background: linear-gradient(180deg, #0EBEC8 0%, #0CB3BF 100%);
-    border-radius: 2px;
-    border: 1px solid #0A939C;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-}
+// input.Button.Second:hover,
+// input.Button.Second:hover:active,
+// a.Button.Second:hover,
+// .desktop a.Button.Second:hover,
+// a.Button.Second:hover:active,
+// .desktop a.Button.Second:hover:active {
+//     background: linear-gradient(180deg, #0EBEC8 0%, #0CB3BF 100%);
+//     border-radius: 2px;
+//     border: 1px solid #0A939C;
+//     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+//     color: #fff;
+//     font-size: 14px;
+//     font-weight: bold;
+//     text-decoration: none;
+// }
 
-input.Button.Second:active,
-a.Button.Second:active {
-    background-color: #0DB7C2;
-    border-radius: 2px;
-    border: 1px solid #0A939C;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-}
+// input.Button.Second:active,
+// a.Button.Second:active {
+//     background-color: #0DB7C2;
+//     border-radius: 2px;
+//     border: 1px solid #0A939C;
+//     color: #FFFFFF;
+//     font-size: 14px;
+//     font-weight: bold;
+//     text-decoration: none;
+// }
 
-input.Button.Second[disabled],
-a.Button.Second[disabled],
-a.Button.Second:disabled {
-    border: 1px solid #9EC0C2;
-    border-radius: 2px;
-    background: #BFD2D3;
-    font-size: 14px;
-    color: #6FA0A3;
-    font-weight: bold;
-    text-decoration: none;
-}
+// input.Button.Second[disabled],
+// a.Button.Second[disabled],
+// a.Button.Second:disabled {
+//     border: 1px solid #9EC0C2;
+//     border-radius: 2px;
+//     background: #BFD2D3;
+//     font-size: 14px;
+//     color: #6FA0A3;
+//     font-weight: bold;
+//     text-decoration: none;
+// }
 
-input.Button.Second[disabled]:before,
-a.Button.Second[disabled]:before,
-a.Button.Second:disabled:before {
-    color: #6FA0A3;
-}
+// input.Button.Second[disabled]:before,
+// a.Button.Second[disabled]:before,
+// a.Button.Second:disabled:before {
+//     color: #6FA0A3;
+// }
 
-input.Button.Third,
-a.Button.Third,
-a.Button.Cancel {
-    border: 1px solid #C8D8DC;
-    border-radius: 2px;
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
-    color: #262626;
-    text-decoration: none;
-}
+// input.Button.Third,
+// a.Button.Third,
+// a.Button.Cancel {
+//     border: 1px solid #C8D8DC;
+//     border-radius: 2px;
+//     background-color: #FFFFFF;
+//     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+//     color: #262626;
+//     text-decoration: none;
+// }
 
-input.Button.Third:before,
-a.Button.Third:before,
-a.Button.Cancel:before {
-    color: #262626;
-}
+// input.Button.Third:before,
+// a.Button.Third:before,
+// a.Button.Cancel:before {
+//     color: #262626;
+// }
 
-input.Button.Third:hover,
-input.Button.Third:active:hover,
-a.Button.Third:hover,
-a.Button.Third:active:hover,
-.desktop a.Button.Third:hover,
-.desktop a.Button.Third:active:hover,
-a.Button.Cancel:hover,
-a.Button.Cancel:active:hover,
-.desktop a.Button.Cancel:hover,
-.desktop a.Button.Cancel:active:hover {
-    border: 1px solid #C8D8DC;
-    border-radius: 2px;
-    background: #EFF4F6;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
-    color: #262626;
-    text-decoration: none;
-}
+// input.Button.Third:hover,
+// input.Button.Third:active:hover,
+// a.Button.Third:hover,
+// a.Button.Third:active:hover,
+// .desktop a.Button.Third:hover,
+// .desktop a.Button.Third:active:hover,
+// a.Button.Cancel:hover,
+// a.Button.Cancel:active:hover,
+// .desktop a.Button.Cancel:hover,
+// .desktop a.Button.Cancel:active:hover {
+//     border: 1px solid #C8D8DC;
+//     border-radius: 2px;
+//     background: #EFF4F6;
+//     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+//     color: #262626;
+//     text-decoration: none;
+// }
 
-input.Button.Third:focus,
-a.Button.Third:focus,
-a.Button.Cancel:focus {
-    border: 2px solid #16979F;
-    border-radius: 2px;
-    background: #FFFFFF;
-    box-shadow: 0 0 6px 0 #7BB2BF;
-    color: #262626;
-    text-decoration: none;
-    line-height: 35px;
-}
+// input.Button.Third:focus,
+// a.Button.Third:focus,
+// a.Button.Cancel:focus {
+//     border: 2px solid #16979F;
+//     border-radius: 2px;
+//     background: #FFFFFF;
+//     box-shadow: 0 0 6px 0 #7BB2BF;
+//     color: #262626;
+//     text-decoration: none;
+//     line-height: 35px;
+// }
 
-input.Button.Third:active,
-a.Button.Third:active,
-a.Button.Cancel:active {
-    border: 1px solid #DAE0E4;
-    border-radius: 2px;
-    background-color: #DDE9EE;
-    color: #0D1D22;
-    text-decoration: none;
-}
+// input.Button.Third:active,
+// a.Button.Third:active,
+// a.Button.Cancel:active {
+//     border: 1px solid #DAE0E4;
+//     border-radius: 2px;
+//     background-color: #DDE9EE;
+//     color: #0D1D22;
+//     text-decoration: none;
+// }
 
-input.Button.Third[disabled],
-a.Button.Third[disabled],
-a.Button.Third:disabled,
-a.Button.Cancel:disabled,
-a.Button.Cancel[disabled] {
-    border: 1px solid #DCDDDD;
-    border-radius: 2px;
-    background-color: #E9E9E9;
-    color: #B1B5B6;
-    text-decoration: none;
-}
+// input.Button.Third[disabled],
+// a.Button.Third[disabled],
+// a.Button.Third:disabled,
+// a.Button.Cancel:disabled,
+// a.Button.Cancel[disabled] {
+//     border: 1px solid #DCDDDD;
+//     border-radius: 2px;
+//     background-color: #E9E9E9;
+//     color: #B1B5B6;
+//     text-decoration: none;
+// }
 
-input.Button.Third[disabled]:before,
-a.Button.Third[disabled]:before,
-a.Button.Third:disabled:before,
-a.Button.Cancel:disabled:before,
-a.Button.Cancel[disabled]:before {
-    color: #B1B5B6;
-}
+// input.Button.Third[disabled]:before,
+// a.Button.Third[disabled]:before,
+// a.Button.Third:disabled:before,
+// a.Button.Cancel:disabled:before,
+// a.Button.Cancel[disabled]:before {
+//     color: #B1B5B6;
+// }
 
 a.Button.Third.Small {
     font-size: 12px;
@@ -7229,12 +7229,12 @@ a.Button.Third.Small:active:hover {
 }
 
 /*Button IsDefault Cancel*/
-.Button.Is_Default.Cancel,
- a.Button.Is_Default.Cancel {
-    border: 1px solid #0E4056;
-    background-color: #295A6E;
-    color:#fff;
-}
+// .Button.Is_Default.Cancel,
+//  a.Button.Is_Default.Cancel {
+//     border: 1px solid #0E4056;
+//     background-color: #295A6E;
+//     color:#fff;
+// }
 .Button.Is_Default.Small.Cancel{
    min-width: 76px;
     border-radius: 2px;
@@ -7253,23 +7253,23 @@ a.Button.Is_Default.Cancel:before {
     content: "\e60c";
     color: #fff;
 }
-a.Button.Is_Default.Cancel:hover{
-    border: 1px solid #255569;
-    background: linear-gradient(180deg, #00698E 0%, #006185 100%);
-    box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    color: #fff;
-    text-decoration: none;
-}
-a.Button.Is_Default.Cancel:focus{
-    box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 0 0 2px #FFFFFF, 0 0 1px 3px #7BB2BF;
-}
-a.Button.Is_Default.Cancel:hover:active,
-a.Button.Is_Default.Cancel:active{
-    border: 1px solid #255569;
-    background-color: #00729B;
-    text-decoration: none;
-    color:#fff;
-}
+// a.Button.Is_Default.Cancel:hover{
+//     border: 1px solid #255569;
+//     background: linear-gradient(180deg, #00698E 0%, #006185 100%);
+//     box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+//     color: #fff;
+//     text-decoration: none;
+// }
+// a.Button.Is_Default.Cancel:focus{
+//     box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 0 0 2px #FFFFFF, 0 0 1px 3px #7BB2BF;
+// }
+// a.Button.Is_Default.Cancel:hover:active,
+// a.Button.Is_Default.Cancel:active{
+//     border: 1px solid #255569;
+//     background-color: #00729B;
+//     text-decoration: none;
+//     color:#fff;
+// }
 
 
 a.Button.Second.Small.Cancel:hover{
@@ -7423,73 +7423,73 @@ a.ActionDelete {
 
 /* Styles for Link Button */
 
-.Button.Link,
-a.Button.Link {
-    color: #16979F;
-    font-size: 14px;
-    font-weight: bold;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    font-weight: bold;
-}
+// .Button.Link,
+// a.Button.Link {
+//     color: #16979F;
+//     font-size: 14px;
+//     font-weight: bold;
+//     background: transparent;
+//     box-shadow: none;
+//     border: none;
+//     font-weight: bold;
+// }
 
-.desktop .Button.Link:hover,
-.desktop a.Button.Link:hover,
-a.Button.Link:hover,
-.Button.Link:hover,
-a.Button.Link:active,
-.Button.Link:active,
-.a.Button.Link.active,
-.Button.Link.active,
-.Button.Link:focus,
-a.Button.Link:focus {
-    color: #16979F;
-    font-size: 14px;
-    font-weight: bold;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    text-decoration: underline;
+// .desktop .Button.Link:hover,
+// .desktop a.Button.Link:hover,
+// a.Button.Link:hover,
+// .Button.Link:hover,
+// a.Button.Link:active,
+// .Button.Link:active,
+// .a.Button.Link.active,
+// .Button.Link.active,
+// .Button.Link:focus,
+// a.Button.Link:focus {
+//     color: #16979F;
+//     font-size: 14px;
+//     font-weight: bold;
+//     background: transparent;
+//     box-shadow: none;
+//     border: none;
+//     text-decoration: underline;
 
-}
+// }
 
-a.Button.Link[disabled],
-.Button.Link:disabled {
-    color: #B1B5B6;
-    font-weight: bold;
-    font-size: 14px;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    text-decoration: none;
-}
+// a.Button.Link[disabled],
+// .Button.Link:disabled {
+//     color: #B1B5B6;
+//     font-weight: bold;
+//     font-size: 14px;
+//     background: transparent;
+//     box-shadow: none;
+//     border: none;
+//     text-decoration: none;
+// }
 
 /* Styles for Disabled Buttons  */
-.Button[disabled],
-.Button:disabled,
-.Button.Is_Default[disabled],
-.Button.ButtonDefault[disabled],
-.Button.Is_Default:disabled,
-.Button.ButtonDefault:disabled,
-.Button.Danger[disabled],
-.Button.Danger:disabled,
-.Button.Success[disabled],
-.Button.Success:disabled {
-    background-color: #a4c6d2;
-    background-image: none;
-    border-color: #79b0c6;
-    box-shadow: none;
-    color: #4a9bbc;
-    cursor: default;
-    text-shadow: none;
-}
+// .Button[disabled],
+// .Button:disabled,
+// .Button.Is_Default[disabled],
+// .Button.ButtonDefault[disabled],
+// .Button.Is_Default:disabled,
+// .Button.ButtonDefault:disabled,
+// .Button.Danger[disabled],
+// .Button.Danger:disabled,
+// .Button.Success[disabled],
+// .Button.Success:disabled {
+//     background-color: #a4c6d2;
+//     background-image: none;
+//     border-color: #79b0c6;
+//     box-shadow: none;
+//     color: #4a9bbc;
+//     cursor: default;
+//     text-shadow: none;
+// }
 
-body a.Button[disabled]:before,
-body a.Button:disabled:before {
-    color: #4a9bbc;
-    opacity: .45;
-}
+// body a.Button[disabled]:before,
+// body a.Button:disabled:before {
+//     color: #4a9bbc;
+//     opacity: .45;
+// }
 
 
 .Panel__Actions .Button,
@@ -7502,17 +7502,17 @@ body a.Button:disabled:before {
     padding-right: 10px;
 }
 
-a.Button.Big.Is_Default,
-a.Button.Big:hover:active,
-a.Button.Big:active,
-.Button.Big {
-    font-size: 30px;
-    height: 50px;
-    line-height: 44px;
-    min-width: 55px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+// a.Button.Big.Is_Default,
+// a.Button.Big:hover:active,
+// a.Button.Big:active,
+// .Button.Big {
+//     font-size: 30px;
+//     height: 50px;
+//     line-height: 44px;
+//     min-width: 55px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
 
 .ButtonBig .ButtonGroup_button.active{ 
     background-color: #0da2aa;
