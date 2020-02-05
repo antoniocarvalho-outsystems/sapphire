@@ -37,7 +37,7 @@
 	&_logo {
 		color: $regular-white;
 		display: inline-block;
-		font-size: 20px;
+		font-size: $font-size-heading2;
 		height: 100%;
 		position: relative;
 		text-align: center;
@@ -64,7 +64,7 @@
 		color: $regular-white;
 		cursor: pointer;
 		display: none;
-		font-size: 20px;
+		font-size: $font-size-heading2;
 		height: 100%;
 		line-height: $default-menubar-height;
 		padding: 0 10px;
@@ -233,7 +233,7 @@
 			border: 1px solid $sapphire-dark-blue2;
 			color: $regular-white !important;
 			display: block;
-			font-size: 13px;
+			font-size: $font-size-small;
 			font-weight: normal;
 			height: auto;
 			line-height: 19px;
