@@ -1,0 +1,237 @@
+$IconLabel-color-border: $mid-light-grey;
+$IconLabel-color-disabled: $mid-light-grey;
+$IconLabel-color-link: $regular-beta;
+$IconLabel-color-text: $dark-grey;
+
+
+
+
+
+.icon:after {
+  content: "N/A";
+}
+
+.IconVertical:hover,
+.IconHorizontal:hover {
+  text-decoration: none;
+}
+
+.IconVertical {
+  margin-right: 5px;
+  min-width: 50px;
+}
+
+.IconVertical.iconBorder {
+  padding: 0 5px 0 10px;
+}
+
+.FA .IconVertical,
+.AR .IconVertical {
+  padding: 0 10px 0 5px;
+}
+
+.iconHorizontal {
+  align-items: center;
+  display: inline-flex;
+  font-size: 1.2em;
+  justify-content: center;
+}
+
+.iconHorizontal.iconBorder {
+  padding: 0 5px 0 10px;
+}
+
+.iconHorizontal_icon {
+  max-width: unset;
+  text-align: center;
+}
+
+
+.iconHorizontal_icon span.icon {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.FA .iconHorizontal_icon span.icon,
+.AR .iconHorizontal_icon span.icon {
+  margin-left: 4px;
+}
+
+.iconHorizontal_icon span.icon.icon-lg {
+  margin-right: 4px;
+}
+
+.AR .iconHorizontal_icon span.icon.icon-lg {
+  margin-left: 4px;
+}
+
+.iconHorizontal_icon span.icon.icon-1x {
+  margin-right: 4px;
+}
+
+.iconHorizontal_icon span.icon.icon-1x {
+  margin-left: 4px;
+}
+
+.iconHorizontal_icon span.icon.icon-2x {
+  margin-right: 7px;
+}
+
+.AR .iconHorizontal_icon span.icon.icon-2x {
+  margin-left: 7px;
+}
+
+.iconHorizontal_icon span.icon.icon-3x {
+  margin-right: 5px;
+}
+
+.AR .iconHorizontal_icon span.icon.icon-3x {
+  margin-left: 5px;
+}
+
+.iconHorizontal_icon span.icon.icon-4x {
+  margin-right: 5px;
+}
+
+.AR .iconHorizontal_icon span.icon.icon-4x {
+  margin-left: 5px;
+}
+
+
+
+
+
+
+.iconHorizontal_icon,
+.iconVertical_icon {
+  color: $IconLabel-color-link;
+  font-weight: 600;
+}
+
+.iconVertical_icon {
+  margin-bottom: 5px;
+}
+
+.InvertIconLabel .iconHorizontal_icon {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.FA .iconHorizontal_icon,
+.AR .iconHorizontal_icon {
+  margin-right: 0 !important;
+}
+
+.iconHorizontal_label,
+.iconVertical_label {
+  color: $IconLabel-color-text;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+
+.iconVertical_label.LabelGreen,
+.iconHorizontal_label.LabelGreen {
+  color: $IconLabel-color-link;
+}
+
+.iconBorder {
+  border-left: solid 1px $IconLabel-color-border;
+  border-right: 0;
+}
+
+.FA .iconBorder,
+.AR .iconBorder {
+  border-left: 0;
+  border-right: solid 1px $IconLabel-color-border;
+}
+
+/*IconHorizontal*/
+.iconHorizontal_label.LabelColorGreen,
+.iconHorizontal_icon.IconGreenColor {
+  color: $IconLabel-color-link;
+
+}
+
+.iconHorizontal_label.LabelColorYellow,
+.iconHorizontal_icon.IconYellowColor {
+  color: #FFA000;
+}
+
+.iconHorizontal_label.LabelColorRed,
+.iconHorizontal_icon.IconRedColor {
+  color: #FF3E2D;
+}
+
+.iconHorizontal_label.LabelColorSapphireWarning,
+.iconHorizontal_icon.IconSapphireWarningColor {
+  color: #CD0005;
+}
+
+.iconHorizontal_label.LabelColorOrange,
+.iconHorizontal_icon.IconOrangeColor {
+  color: #da6802;
+}
+
+.iconHorizontal_icon.IconBlackColor {
+  color: #11455D;
+  font-weight: bold;
+}
+
+/*IconVertical*/
+.iconVertical_label.LabelColorGreen,
+.iconVertical_icon.IconGreenColor {
+  color: $IconLabel-color-link;
+
+}
+
+.iconVertical_label.LabelColorYellow,
+.iconVertical_icon.IconYellowColor {
+  color: #FFA000;
+}
+
+.iconVertical_label.LabelColorRed,
+.iconVertical_icon.IconRedColor {
+  color: #FF3E2D;
+}
+
+.iconVertical_label.LabelColorSapphireWarning,
+.iconVertical_icon.IconSapphireWarningColor {
+  color: #CD0005;
+}
+
+.iconVertical_label.LabelColorOrange,
+.iconVertical_icon.IconOrangeColor {
+  color: #da6802;
+}
+
+.iconVertical_icon.IconBlackColor {
+  color: #11455D;
+}
+
+.iconHorizontal_icon.AllGreenIcon .icon,
+.iconVertical_icon.AllGreenIcon .icon {
+  color: $IconLabel-color-link;
+}
+
+.InvertIconLabel .iconHorizontal {
+  text-align: left;
+  transform: scale(-1, 1);
+}
+
+.InvertIconLabel .iconHorizontal>div {
+  transform: scale(-1, 1);
+}
+
+.iconLabel-disabled,
+.iconLabel-disabled .iconVertical_label.LabelGreen,
+.iconLabel-disabled .iconHorizontal_label.LabelGreen,
+.iconLabel-disabled .iconHorizontal_icon,
+.iconLabel-disabled .iconVertical_icon,
+.iconLabel-disabled .iconHorizontal_icon.AllGreenIcon .icon,
+.iconLabel-disabled .iconVertical_icon.AllGreenIcon .icon {
+  color: $IconLabel-color-disabled !important;
+  cursor: auto;
+  pointer-events: none;
+}
