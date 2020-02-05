@@ -79,7 +79,7 @@
 	color: $regular-beta;
 	cursor: pointer;
 	display: flex;
-	font-size: 15px;
+	font-size: $font-size-heading4;
 	font-weight: bold;
 	height: $default-menubar-height;
 	min-width: 100px;
@@ -107,7 +107,7 @@
 	}
 
 	.TabWrapper_icon {
-		font-size: 20px;
+		font-size: $font-size-heading2;
 		margin-left: 10px;
 		margin-right: 0;
 		vertical-align: middle;
