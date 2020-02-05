@@ -1,0 +1,139 @@
+.FullScreenTabsWrapper {
+	-servicestudio-width: 100% !important;
+
+	&_Container {
+		background-color: $regular-white;
+		min-height: 39px;
+		position: relative;
+		-servicestudio-width: 100% !important;
+
+		&.Dashboard {
+			background-color: $regular-white;
+			min-height: 44px;
+
+			.TabWrapper {
+				cursor: pointer;
+				font-size: $font-size-normal;
+				min-width: 100px;
+				padding: 0 24px;
+			}
+		}
+
+		&.Emergency {
+			.TabWrapper.Active {
+				background-color: $light-red;
+				border-top: $regular-red;
+				color: $regular-red;
+			}
+
+			.TabWrapper.Active .TabWrapper_tab a {
+				color: $regular-red;
+			}
+		}
+	}
+
+	&__Tabs {
+		//bottom: 0;
+		display: inline-flex;
+		//position: absolute;
+
+		a {
+			-servicestudio-display: inline-block !important;
+			display: flex;
+			height: 100%;
+		}
+	}
+
+	&__Actions {
+		position: absolute;
+		right: 21px;
+		top: 2px;
+	}
+
+	a {
+		font-weight: 400;
+		position: relative;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.FullScreenTabs_tabCounter {
+	background-color: $regular-red;
+	border-radius: 100%;
+	color: $regular-white;
+	font-size: $font-size-tiny;
+	height: 18px;
+	line-height: 18px;
+	position: absolute;
+	right: 5px;
+	text-align: center;
+	top: 13px;
+	width: 18px;
+}
+
+.TabWrapper {
+	align-items: center;
+	border-bottom: 3px solid transparent;
+	color: $regular-beta;
+	cursor: pointer;
+	display: flex;
+	font-size: 15px;
+	font-weight: bold;
+	height: $default-menubar-height;
+	min-width: 100px;
+	-servicestudio-position: relative !important;
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		// background-color: #7c8488;
+		// border-top-left-radius: 3px;
+		// border-top-right-radius: 3px;
+		border-bottom: 3px solid $regular-alpha;
+	}
+
+	&.Active {
+		background-color: $body-color;
+		border-top: 3px solid $regular-alpha;
+		color: $dark-grey;
+		pointer-events: none;
+
+		a,
+		a:hover {
+			color: #0da2aa;
+		}
+	}
+
+	&_tab a {
+		color: $regular-white;
+	}
+
+	.TabWrapper_icon {
+		font-size: 20px;
+		margin-left: 10px;
+		margin-right: 0;
+		vertical-align: middle;
+	}
+}
+
+.AR,
+.FA {
+	.FullScreenTabsWrapper__Actions {
+		left: 24px;
+		right: auto;
+	}
+
+	.FullScreenTabs_tabCounter {
+		left: 2px;
+		right: auto;
+	}
+
+	.TabWrapper {
+		.TabWrapper_icon {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
+}

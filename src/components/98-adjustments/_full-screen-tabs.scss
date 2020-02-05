@@ -1,0 +1,41 @@
+.tablet {
+	&.portrait {
+		.FullScreenTabsWrapper {
+			padding-left: 10px;
+		}
+
+		.TabWrapper {
+			line-height: 20px;
+			padding: 0px 15px;
+		}
+	}
+
+	.FullScreenTabsWrapper_Container {
+		height: 43px;
+	}
+
+	.TabWrapper {
+		text-align: center;
+
+		&.Active {
+			display: block;
+		}
+
+		a,
+		a:link:hover,
+		a:hover {
+			padding: 0 20px;
+		}
+	}
+}
+
+.desktop {
+	.TabWrapper {
+		a,
+		a:link:hover,
+		a:hover {
+			color: $regular-white;
+			padding: 0 20px;
+		}
+	}
+}

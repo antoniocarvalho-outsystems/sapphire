@@ -343,18 +343,18 @@
 //     outline: 0 !important;
 // }
 
-.TileIcon_text,
-.TileNumber_text,
-.TileIconText_label,
-.Heading1,
-.Heading2,
-.Heading3,
-.Heading4,
-.Header_title a,
-.EditableTable thead td,
-.TableRecords_Header {
-    font-family: 'globerbold', Helvetica, Arial, sans-serif;
-}
+// .TileIcon_text,
+// .TileNumber_text,
+// .TileIconText_label,
+// .Heading1,
+// .Heading2,
+// .Heading3,
+// .Heading4,
+// .Header_title a,
+// .EditableTable thead td,
+// .TableRecords_Header {
+//     font-family: 'globerbold', Helvetica, Arial, sans-serif;
+// }
 
 .isTouch {
     font-size: 18px;
@@ -6867,45 +6867,45 @@ a .ListItem:after {
 /* 8.1 Usefull Classes > Text Classes *************************/
 /*------------------------------------------------------------*/
 
-.Heading1 {
-    color: #262525;
-    font-family: "globerbold";
-    font-size: 2em;
-    font-weight: 400;
-    line-height: 1.4;
-}
+// .Heading1 {
+//     color: #262525;
+//     font-family: "globerbold";
+//     font-size: 2em;
+//     font-weight: 400;
+//     line-height: 1.4;
+// }
 
-.Heading2 {
-    color: #262525;
-    font-family: "globerbold";
-    font-size: 1.8em;
-    font-weight: 400;
-    line-height: 1.4;
-}
+// .Heading2 {
+//     color: #262525;
+//     font-family: "globerbold";
+//     font-size: 1.8em;
+//     font-weight: 400;
+//     line-height: 1.4;
+// }
 
-.Heading3 {
-    color: #11455D;
-    font-family: "globerbold";
-    font-size: 1.5em;
-    font-weight: 400;
-    line-height: 1.4;
-}
+// .Heading3 {
+//     color: #11455D;
+//     font-family: "globerbold";
+//     font-size: 1.5em;
+//     font-weight: 400;
+//     line-height: 1.4;
+// }
 
-.Heading4 {
-    color: #262525;
-    font-family: "globerbold";
-    font-size: 1.3em;
-    font-weight: 400;
-    line-height: 1.4;
-}
+// .Heading4 {
+//     color: #262525;
+//     font-family: "globerbold";
+//     font-size: 1.3em;
+//     font-weight: 400;
+//     line-height: 1.4;
+// }
 
-.Heading5 {
-    color: #707070;
-    font-family: "globerbold";
-    font-size: 1.1em;
-    font-weight: 400;
-    line-height: 1.4;
-}
+// .Heading5 {
+//     color: #707070;
+//     font-family: "globerbold";
+//     font-size: 1.1em;
+//     font-weight: 400;
+//     line-height: 1.4;
+// }
 
 // .Label {
 //     border-radius: 10px;
@@ -21466,178 +21466,178 @@ body.confirmation-opened {
 
 /* 9.133 Sapphire Patterns > FullScreenTabs ****/
 
-.FullScreenTabsWrapper_Container {
-    background-color: #5d686f;
-    padding: 10px 5px 0 0;
-    position: relative;
-    min-height: 39px;
+// .FullScreenTabsWrapper_Container {
+//     background-color: #5d686f;
+//     padding: 10px 5px 0 0;
+//     position: relative;
+//     min-height: 39px;
 
-}
+// }
 
-.FullScreenTabsWrapper_Container.Dashboard {
-    background-color: #113041;
-    min-height: 44px;
-}
+// .FullScreenTabsWrapper_Container.Dashboard {
+//     background-color: #113041;
+//     min-height: 44px;
+// }
 
-.FullScreenTabsWrapper__Tabs {
-    bottom: 0;
-    position: absolute;
-    display: inline-flex;
-}
+// .FullScreenTabsWrapper__Tabs {
+//     bottom: 0;
+//     position: absolute;
+//     display: inline-flex;
+// }
 
-.FullScreenTabsWrapper__Actions {
-    position: absolute;
-    right: 21px;
-    top: 2px;
-}
+// .FullScreenTabsWrapper__Actions {
+//     position: absolute;
+//     right: 21px;
+//     top: 2px;
+// }
 
-.FA  .FullScreenTabsWrapper__Actions,
-.AR .FullScreenTabsWrapper__Actions {
-     left: 24px;
-     right:auto;
-}
+// .FA  .FullScreenTabsWrapper__Actions,
+// .AR .FullScreenTabsWrapper__Actions {
+//      left: 24px;
+//      right:auto;
+// }
 
 
-.FullScreenTabsWrapper_Container.Emergency .TabWrapper.Active {
-    background-color: #eee3e3;
-    border-top: #cd0005;
-    color: #cd0005;
-}
+// .FullScreenTabsWrapper_Container.Emergency .TabWrapper.Active {
+//     background-color: #eee3e3;
+//     border-top: #cd0005;
+//     color: #cd0005;
+// }
 
-.FullScreenTabsWrapper_Container.Emergency .TabWrapper.Active .TabWrapper_tab a {
-    color: #cd0005;
-}
+// .FullScreenTabsWrapper_Container.Emergency .TabWrapper.Active .TabWrapper_tab a {
+//     color: #cd0005;
+// }
 
-.tablet .FullScreenTabsWrapper_Container {
-    height: 43px;
-}
+// .tablet .FullScreenTabsWrapper_Container {
+//     height: 43px;
+// }
 
 
 /* 9.134 Sapphire Patterns > FullScreenTabs_Tab ****/
 
-.TabWrapper {
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-    line-height: 34px;
-    min-height: 37px;
-    min-width: 100px;
-}
+// .TabWrapper {
+//     color: #fff;
+//     cursor: pointer;
+//     font-size: 15px;
+//     line-height: 34px;
+//     min-height: 37px;
+//     min-width: 100px;
+// }
 
-.TabWrapper:hover {
-    background-color: #7c8488;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-}
+// .TabWrapper:hover {
+//     background-color: #7c8488;
+//     border-top-left-radius: 3px;
+//     border-top-right-radius: 3px;
+// }
 
 
-.desktop .TabWrapper a,
-.desktop .TabWrapper a:link:hover,
-.desktop .TabWrapper a:hover {
-    color: #fff;
-    padding: 0 20px;
-}
+// .desktop .TabWrapper a,
+// .desktop .TabWrapper a:link:hover,
+// .desktop .TabWrapper a:hover {
+//     color: #fff;
+//     padding: 0 20px;
+// }
 
-.TabWrapper.Active a,
-.TabWrapper.Active a:hover {
-    color: #0da2aa;
-}
+// .TabWrapper.Active a,
+// .TabWrapper.Active a:hover {
+//     color: #0da2aa;
+// }
 
-.FullScreenTabsWrapper_Container.Dashboard .TabWrapper {
-    cursor: pointer;
-    font-size: 15px;
-    line-height: 32px;
-    min-height: 32px;
-    min-width: 100px;
-    padding: 0 24px;
+// .FullScreenTabsWrapper_Container.Dashboard .TabWrapper {
+//     cursor: pointer;
+//     font-size: 15px;
+//     line-height: 32px;
+//     min-height: 32px;
+//     min-width: 100px;
+//     padding: 0 24px;
 
-}
+// }
 
-.FullScreenTabsWrapper_Container.Dashboard .TabWrapper:hover {
-    background-color: transparent;
-}
+// .FullScreenTabsWrapper_Container.Dashboard .TabWrapper:hover {
+//     background-color: transparent;
+// }
 
-.TabWrapper.Active {
-    background-color: #f7f4ef;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    color: #0da2aa;
-    pointer-events: none;
-    /*padding: 0 20px;*/
-}
+// .TabWrapper.Active {
+//     background-color: #f7f4ef;
+//     border-top-left-radius: 5px;
+//     border-top-right-radius: 5px;
+//     color: #0da2aa;
+//     pointer-events: none;
+//     /*padding: 0 20px;*/
+// }
 
-.TabWrapper .TabWrapper_icon {
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 0;
-    vertical-align: middle;
-}
-.FA .TabWrapper .TabWrapper_icon,
-.AR .TabWrapper .TabWrapper_icon {
-    margin-right: 10px;
-    margin-left: 0;
-}
+// .TabWrapper .TabWrapper_icon {
+//     font-size: 20px;
+//     margin-left: 10px;
+//     margin-right: 0;
+//     vertical-align: middle;
+// }
+// .FA .TabWrapper .TabWrapper_icon,
+// .AR .TabWrapper .TabWrapper_icon {
+//     margin-right: 10px;
+//     margin-left: 0;
+// }
 
-.FullScreenTabs_tabCounter {
-    background-color: #cd0005;
-    border-radius: 100%;
-    color: #fff;
-    font-size: 10px;
-    height: 15px;
-    line-height: 15px;
-    position: absolute;
-    right: 2px;
-    text-align: center;
-    top: 2px;
-    width: 15px;
-}
+// .FullScreenTabs_tabCounter {
+//     background-color: #cd0005;
+//     border-radius: 100%;
+//     color: #fff;
+//     font-size: 10px;
+//     height: 15px;
+//     line-height: 15px;
+//     position: absolute;
+//     right: 2px;
+//     text-align: center;
+//     top: 2px;
+//     width: 15px;
+// }
 
-.FA .FullScreenTabs_tabCounter,
-.AR .FullScreenTabs_tabCounter {
-     left: 2px; 
-     right:auto;
-    }
+// .FA .FullScreenTabs_tabCounter,
+// .AR .FullScreenTabs_tabCounter {
+//      left: 2px; 
+//      right:auto;
+//     }
 
-.TabWrapper_tab a {
-    color: #fff;
-}
+// .TabWrapper_tab a {
+//     color: #fff;
+// }
 
 /*Should be design by UX/UI behavior*/
 
-.tablet .TabWrapper {
-    /*  display: none;*/
-}
+// .tablet .TabWrapper {
+//     /*  display: none;*/
+// }
 
-.tablet .TabWrapper.Active {
-    display: block;
-}
+// .tablet .TabWrapper.Active {
+//     display: block;
+// }
 
-.tablet.portrait .FullScreenTabsWrapper {
-    padding-left: 10px;
-}
+// .tablet.portrait .FullScreenTabsWrapper {
+//     padding-left: 10px;
+// }
 
-.tablet.portrait .TabWrapper {
-    padding: 0px 15px;
-}
+// .tablet.portrait .TabWrapper {
+//     padding: 0px 15px;
+// }
 
-.tablet .TabWrapper {
-    text-align: center;
-}
-.tablet .TabWrapper a, 
-.tablet .TabWrapper a:link:hover,
-.tablet .TabWrapper a:hover {
-    padding: 0 20px;
-}
+// .tablet .TabWrapper {
+//     text-align: center;
+// }
+// .tablet .TabWrapper a, 
+// .tablet .TabWrapper a:link:hover,
+// .tablet .TabWrapper a:hover {
+//     padding: 0 20px;
+// }
 
 
-.FullScreenTabsWrapper a {
-    font-weight: 400;
-    position: relative;
-}
+// .FullScreenTabsWrapper a {
+//     font-weight: 400;
+//     position: relative;
+// }
 
-.FullScreenTabsWrapper a:first-child {
-    margin-left: 0;
-}
+// .FullScreenTabsWrapper a:first-child {
+//     margin-left: 0;
+// }
 
 /* 9.135 Sapphire Patterns > Timeline ****/
 
@@ -32771,31 +32771,31 @@ div.LineInfo {
 }
 
 
-.FullScreenTabsWrapper,
-.FullScreenTabsWrapper_Container {
-    -servicestudio-width: 100% !important;
-}
+// .FullScreenTabsWrapper,
+// .FullScreenTabsWrapper_Container {
+//     -servicestudio-width: 100% !important;
+// }
 
-.FullScreenTabsWrapper__Tabs a {
-    height: 100%;
-    /*display: table-cell;*/
-    display: flex;
-    /*padding:0 24px; DE63641 */
-    -servicestudio-display: inline-block !important;
-}
+// .FullScreenTabsWrapper__Tabs a {
+//     height: 100%;
+//     /*display: table-cell;*/
+//     display: flex;
+//     /*padding:0 24px; DE63641 */
+//     -servicestudio-display: inline-block !important;
+// }
 
-.TabWrapper {
-    -servicestudio-position: relative !important;
-}
+// .TabWrapper {
+//     -servicestudio-position: relative !important;
+// }
 
-.TabWrapper_tab {
-    height: 100%;
-}
+// .TabWrapper_tab {
+//     height: 100%;
+// }
 
 /*FullScreenTabs Responsive */
-.tablet.portrait .TabWrapper {
-    line-height: 20px;
-}
+// .tablet.portrait .TabWrapper {
+//     line-height: 20px;
+// }
 /*------------------------------------*\
         $15 Templates Sapphire
 \*-------------------------------------*/

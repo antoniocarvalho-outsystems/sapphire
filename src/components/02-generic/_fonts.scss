@@ -1,13 +1,13 @@
 @font-face {
-	font-family: $font-family-regular;
+	font-family: $font-family;
 	font-style: normal;
 	font-weight: normal;
-	src: url($font-url+'Lato-Regular.ttf') format('truetype');
+	src: url($font-url) format('truetype');
 }
 
 @font-face {
-	font-family: $font-family-bold;
+	font-family: $font-family;
 	font-style: normal;
 	font-weight: bold;
-	src: url($font-url+'Lato-Regular.ttf') format('truetype');
+	src: url($font-url) format('truetype');
 }

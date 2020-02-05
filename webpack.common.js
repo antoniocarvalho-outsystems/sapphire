@@ -48,8 +48,8 @@ module.exports = {
 							prependData: () => {
 								const path =
 									process.env.NODE_ENV === 'production'
-										? '/Sapphirev2_Th/fonts/'
-										: 'https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/fonts/';
+										? '/Sapphirev2_Th/fonts/Lato-Regular.ttf'
+										: 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap';
 
 								return `$font-url: '${path}';`;
 							},
