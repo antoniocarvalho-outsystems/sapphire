@@ -366,16 +366,16 @@
 /* 1.1 General Properties > a links ***************************/
 /*------------------------------------------------------------*/
 
-a,
-a:link,
-a:visited {
-    color: #16979F;
-    text-decoration: none;
-    font-family: 'globeregular';
-    -webkit-transition: color 100ms ease;
-    transition: color 100ms ease;
-    /* font-weight:bold;*/
-}
+// a,
+// a:link,
+// a:visited {
+//     color: #16979F;
+//     text-decoration: none;
+//     font-family: 'globeregular';
+//     -webkit-transition: color 100ms ease;
+//     transition: color 100ms ease;
+//     /* font-weight:bold;*/
+// }
 
 .desktop a:not([disabled="disabled"]):hover,
 .desktop a:link:hover,
