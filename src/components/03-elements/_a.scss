@@ -1,21 +1,21 @@
-// a {
-// 	&:link,
-// 	&:visited {
-// 		color: #16979f;
-// 		font-family: $font-family;
-// 		text-decoration: none;
-// 		transition: color 100ms ease;
-// 	}
-// }
+a {
+	&:link,
+	&:visited {
+		//color: #16979f;
+		font-family: $font-family;
+		text-decoration: none;
+		transition: color 100ms ease;
+	}
+}
 
-// .desktop {
-// 	a:link,
-// 	a:visited,
-// 	a:not([disabled='disabled']) {
-// 		&:hover {
-// 			color: #08a6af;
-// 			cursor: pointer;
-// 			text-decoration: none;
-// 		}
-// 	}
-// }
+.desktop {
+	a:link,
+	a:visited,
+	a:not([disabled='disabled']) {
+		&:hover {
+			//color: #08a6af;
+			cursor: pointer;
+			text-decoration: none;
+		}
+	}
+}

@@ -37,7 +37,7 @@
 	&_logo {
 		color: $regular-white;
 		display: inline-block;
-		font-size: 25px;
+		font-size: 20px;
 		height: 100%;
 		position: relative;
 		text-align: center;
@@ -148,7 +148,7 @@
 	color: $regular-white;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 14px;
+	font-size: $font-size-small;
 	font-weight: normal;
 	height: $default-menubar-height;
 	line-height: $default-menubar-height;
@@ -192,12 +192,12 @@
 	}
 
 	&_icon {
-		font-size: 16px;
+		font-size: $font-size-normal;
 		margin-right: 5px;
 	}
 
 	&_label {
-		font-size: 14px;
+		font-size: $font-size-small;
 	}
 
 	&_icon a,
