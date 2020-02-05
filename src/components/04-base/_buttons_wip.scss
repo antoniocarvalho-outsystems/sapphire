@@ -188,42 +188,22 @@ a.Button {
 		min-width: 206px;
 		padding: 40px 10px;
 	}
+
+	&.Button.twoLines {
+		border-radius: 2px;
+		height: auto;
+		line-height: 15px;
+		padding: 5px 15px 5px 15px;
+
+		&:before {
+			line-height: 5px;
+			margin-top: 12px;
+		}
+		> div {
+			text-align: right;
+		}
+	}
 }
-
-// a.Button.Is_Default.Cancel,
-// .Button.Is_Default.Cancel,
-// .Button.ButtonDefault,
-// .Button.Is_Default,
-// a.ButtonDefault,
-// a.Button.Is_Default,
-// input.Button,
-// a.Button {
-//     @include default-button
-// }
-
-// .Button.ButtonDefault:focus,
-// .Button.Is_Default:focus,
-// a.ButtonDefault:focus,
-// a.Button.Is_Default:focus,
-// input.Button:focus,
-// a.Button:focus,
-// .desktop a.Button:focus {
-//     @include focus-border()
-// }
-
-// input.Button:active,
-// input.Button:hover,
-// input.Button:hover:active,
-// a.Button:hover,
-// a.Button:hover:active,
-// .desktop a.Button:hover,
-// .desktop a.Button:hover:active,
-// .desktop .Button.ButtonDefault:hover,
-// .desktop .Button.Is_Default:hover,
-// .desktop .Button.ButtonDefault:hover:active,
-// .desktop .Button.Is_Default:hover:active {
-//     background-color: color(primary-light);
-// }
 
 .isTouch .Button.ButtonDefault,
 .isTouch .Button.Is_Default,
@@ -249,225 +229,13 @@ a.Button {
 	@include button-state-size;
 }
 
-// .Button.ButtonDefault:active,
-// .Button.Is_Default:active,
-// a.ButtonDefault:active,
-// a.Button.Is_Default:active,
-// input.Button:active,
-// a.Button:active {
-//     border: 1px solid #255569;
-//     background-color: #00729B;
-//     text-decoration: none;
-// }
-
-/* a.Button.Is_Default.Cancel:hover {
-    border: 1px solid #255569;
-    background: linear-gradient(180deg, #00698E 0%, #006185 100%);
-    box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    color: #fff;
-    text-decoration: none;
-}
-
-a.Button.Is_Default.Cancel:focus {
-    box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 0 0 2px #FFFFFF, 0 0 1px 3px #7BB2BF;
-}
-
-a.Button.Is_Default.Cancel:hover:active,
-a.Button.Is_Default.Cancel:active {
-    border: 1px solid #255569;
-    background-color: #00729B;
-    text-decoration: none;
-    color: #fff;
-} */
-
-/* Styles for Disabled Buttons  */
-// .Button[disabled],
-// .Button:disabled,
-// .Button.Is_Default[disabled],
-// .Button.ButtonDefault[disabled],
-// .Button.Is_Default:disabled,
-// .Button.ButtonDefault:disabled,
-// .Button.Danger[disabled],
-// .Button.Danger:disabled,
-// .Button.Success[disabled],
-// .Button.Success:disabled {
-//     background-color: color(sapphire-white);
-//     @include disabled-button()
-// }
-
-// body a.Button[disabled]:before,
-// body a.Button:disabled:before {
-//     color: #4a9bbc;
-//     opacity: .45;
-// }
-
 /* **************************************** Button Second ********************************************* */
-
-// input.Button.Second,
-// a.Button.Second {
-//     background-color: color(mid-dark-grey);
-// }
-
-// a.Button.Second:before {
-//     color: #fff;
-// }
-
-// input.Button.Second:focus,
-// a.Button.Second:focus {
-//     @include focus-border(dark-grey)
-// }
-
-// input.Button.Second:active,
-// input.Button.Second:hover,
-// input.Button.Second:hover:active,
-// a.Button.Second:hover,
-// .desktop a.Button.Second:hover,
-// a.Button.Second:active,
-// a.Button.Second:hover:active,
-// .desktop a.Button.Second:hover:active {
-//     background-color: color(regular-grey);
-// }
-
-// input.Button.Second[disabled],
-// a.Button.Second[disabled],
-// a.Button.Second:disabled {
-//     background-color: color(sapphire-white);
-//     @include disabled-button()
-// }
-
-// input.Button.Second[disabled]:before,
-// a.Button.Second[disabled]:before,
-// a.Button.Second:disabled:before {
-//     color: #6FA0A3;
-// }
 
 /* **************************************** Button Third ********************************************* */
 
-// input.Button.Third,
-// a.Button.Third,
-// a.Button.Cancel {
-//     color: color(dark-grey);
-//     @include focus-border(light-grey);
-//     background-color: color(sapphire-white);
-
-//     &:before {
-//         color: #262626;
-//     }
-
-//     &:active,
-//     &:hover {
-//         background-color: color(sapphire-light-container);
-//     }
-
-//     &:focus {
-//         @include focus-border()
-//     }
-
-//     &:disabled,
-//     &[disabled] {
-//         @include disabled-button();
-
-//         &:before {
-//             color: #B1B5B6;
-//         }
-//     }
-// }
-
-// input.Button.Third:active,
-// a.Button.Third:active,
-// a.Button.Cancel:active,
-// input.Button.Third:hover,
-// input.Button.Third:active:hover,
-// a.Button.Third:hover,
-// a.Button.Third:active:hover,
-// .desktop a.Button.Third:hover,
-// .desktop a.Button.Third:active:hover,
-// a.Button.Cancel:hover,
-// a.Button.Cancel:active:hover,
-// .desktop a.Button.Cancel:hover,
-// .desktop a.Button.Cancel:active:hover {
-//     background-color: color(sapphire-light-container);
-// }
-
-// input.Button.Third:focus,
-// a.Button.Third:focus,
-// a.Button.Cancel:focus {
-//     @include focus-border()
-// }
-
-// input.Button.Third[disabled],
-// a.Button.Third[disabled],
-// a.Button.Third:disabled,
-// a.Button.Cancel:disabled,
-// a.Button.Cancel[disabled] {
-//     @include disabled-button()
-// }
-
-// input.Button.Third[disabled]:before,
-// a.Button.Third[disabled]:before,
-// a.Button.Third:disabled:before,
-// a.Button.Cancel:disabled:before,
-// a.Button.Cancel[disabled]:before {
-//     color: #B1B5B6;
-// }
-
 /* **************************************** Button Small ********************************************* */
 
-// a.Button.Small,
-// .Button.Small {
-//     min-width: 76px;
-//     font-size: 12px;
-//     height: 26px;
-//     line-height: 24px;
-// }
-
-// a.Button.Small:hover,
-// a.Button.Small:hover:active,
-// desktop a.Button.Small:hover,
-// .desktop a.Button.Small:hover:active,
-// a.Button.Small:focus,
-// .desktop a.Button.Small:focus {
-//     min-width: 76px;
-//     border-radius: 2px;
-//     font-size: 12px;
-//     font-weight: bold;
-//     height: 26px;
-//     line-height: 24px;
-//     text-decoration: none;
-// }
-
 /* **************************************** Button Link ********************************************* */
-
-// .desktop .Button.Link:hover,
-// .desktop a.Button.Link:hover,
-// a.Button.Link:hover,
-// .Button.Link:hover,
-// a.Button.Link:active,
-// .Button.Link:active,
-// .a.Button.Link.active,
-// .Button.Link.active,
-// .Button.Link:focus,
-// a.Button.Link:focus {
-//     color: #16979F;
-//     font-size: 14px;
-//     font-weight: bold;
-//     background: transparent;
-//     box-shadow: none;
-//     border: none;
-//     text-decoration: underline;
-
-// }
-
-// a.Button.Link[disabled],
-// .Button.Link:disabled {
-//     color: red;
-//     font-weight: bold;
-//     font-size: 14px;
-//     background: transparent;
-//     box-shadow: none;
-//     border: none;
-//     text-decoration: none;
-// }
 
 a.Button.Third.Small {
 	font-size: 12px;
@@ -669,74 +437,9 @@ a.ActionDelete {
 	padding-right: 10px;
 }
 
-/* **************************************** Button Big ********************************************* */
-
-// a.Button.Big.Is_Default,
-// a.Button.Big:hover:active,
-// a.Button.Big:active,
-// .Button.Big {
-//     font-size: 30px;
-//     height: 50px;
-//     line-height: 44px;
-//     min-width: 55px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-// }
-
-// .ButtonBig .ButtonGroup_button.active {
-//     background-color: #0da2aa;
-//     color: #fff;
-// }
-
-// a.Button.Big:hover {
-//     border: 1px solid #255569;
-//     background: linear-gradient(180deg, #00698E 0%, #006185 100%);
-//     box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-//     font-size: 30px;
-//     height: 50px;
-//     line-height: 44px;
-//     min-width: 55px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-// }
-
-// a.Button.Big:focus {
-//     box-shadow: 0 0 0 2px #FFFFFF, 0 0 1px 3px #7BB2BF;
-//     border: 1px solid #0A939C;
-//     border-radius: 2px;
-//     border-radius: 2px;
-//     background: linear-gradient(180deg, #0EBEC8 0%, #0CB3BF 100%);
-//     color: #fff;
-//     font-weight: bold;
-//     text-decoration: none;
-//     font-size: 30px;
-//     height: 50px;
-//     line-height: 44px;
-//     min-width: 55px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-// }
-
 .Button.Icon {
 	min-width: inherit;
 }
-
-// a.Button.XBig:hover:active,
-// a.Button.XBig:focus,
-// a.Button.XBig:active,
-// a.Button.XBig,
-// a.Button.Second.XBig,
-// a.Button.Second.XBig:hover,
-// a.Button.Second.XBig:hover:active {
-//     font-size: 24px;
-//     height: 50px;
-//     line-height: 0;
-//     min-width: 206px;
-//     padding: 40px 10px;
-//     border-radius: 4px !important;
-
-//     box-sizing: border-box;
-// }
 
 /*For when is only icon in button*/
 .desktop a.Button.Icon:hover:active,
@@ -786,48 +489,48 @@ a.Button.Icon:hover {
 	display: none;
 }
 
-.Button.twoLines {
-	border: 1px solid #c8d8dc;
-	border-radius: 2px;
-	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
-	font-weight: normal;
-	height: auto;
-	line-height: 15px;
-	padding: 5px 15px 5px 15px;
-	text-decoration: none;
-}
+/***********************************TwoLine*************************************/
 
-a.Button.twoLines:before {
-	line-height: 5px;
-	margin-top: 12px;
-}
+// .Button.twoLines {
+// 	border-radius: 2px;
+// 	height: auto;
+// 	line-height: 15px;
+// 	padding: 5px 15px 5px 15px;
+// }
 
-a.Button.twoLines:focus {
-	font-weight: normal;
-	height: auto;
-	line-height: 15px;
-}
+// a.Button.twoLines:before {
+// 	line-height: 5px;
+// 	margin-top: 12px;
+// }
 
-a.Button.twoLines:hover:active {
-	font-weight: normal;
-	height: auto;
-	line-height: 15px;
-}
+// a.Button.twoLines:focus {
+// 	font-weight: normal;
+// 	height: auto;
+// 	line-height: 15px;
+// }
 
-a.Button.twoLines:hover {
-	font-weight: normal;
-	height: auto;
-	line-height: 15px;
-	text-decoration: none;
-}
+// a.Button.twoLines:hover:active {
+// 	font-weight: normal;
+// 	height: auto;
+// 	line-height: 15px;
+// }
 
-a.Button.twoLines {
-	padding-right: 10px;
-}
+// a.Button.twoLines:hover {
+// 	font-weight: normal;
+// 	height: auto;
+// 	line-height: 15px;
+// 	text-decoration: none;
+// }
 
-a.Button.twoLines > div {
-	text-align: right;
-}
+// a.Button.twoLines {
+// 	padding-right: 10px;
+// }
+
+// a.Button.twoLines > div {
+// 	text-align: right;
+// }
+
+/* *********************************************************************************************** */
 
 .tablet.landscape a.Button.twoLines {
 	font-weight: normal;
