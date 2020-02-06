@@ -171,8 +171,9 @@
 		display: inline-block;
 		font-weight: bold;
 		line-height: 37px;
+		margin-right: 10px;
 		min-width: 100px;
-		padding: 0 10px 0 0;
+		padding: 0;
 		position: relative;
 		text-align: center;
 
@@ -181,7 +182,7 @@
 		}
 
 		&:not(:first-child) {
-			padding: 0 10px;
+			margin: 0 10px;
 		}
 
 		&.active {

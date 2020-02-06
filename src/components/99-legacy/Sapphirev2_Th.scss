@@ -390,10 +390,10 @@
 //     /* add a pointer cursor when the div has a click event */
 // }
 
-.tablet select,
-.phone select {
-    line-height: 18px;
-}
+// .tablet select,
+// .phone select {
+//     line-height: 18px;
+// }
 
 /*------------------------------------------------------------*/
 /* 1.2 General Properties > Margins ***************************/
@@ -1985,10 +1985,10 @@ a.Header_ButtonSidebar {
 }
 
 
-input[type="text"].small {
-    min-height: 26px;
-    height: 26px;
-}
+// input[type="text"].small {
+//     min-height: 26px;
+//     height: 26px;
+// }
 
 .PanelNotify .Link {
     padding: 0 5px;
@@ -3644,21 +3644,21 @@ html .PatientDetailsLayout {
     border-bottom-left-radius: 5px;
 }
 
-.SegmentedControl input {
-    margin: 0 5px 0 0;
-    padding: 0;
-    position: absolute;
-    left: -20px;
-    opacity: 0;
+// .SegmentedControl input {
+//     margin: 0 5px 0 0;
+//     padding: 0;
+//     position: absolute;
+//     left: -20px;
+//     opacity: 0;
 
 
-}
+// }
 
-.FA .SegmentedControl input,
-.AR .SegmentedControl input {
-    left: auto;
-    right: -20px;
-}
+// .FA .SegmentedControl input,
+// .AR .SegmentedControl input {
+//     left: auto;
+//     right: -20px;
+// }
 
 .SegmentedControlItem label {
     width: 100%;
@@ -3809,150 +3809,150 @@ html .PatientDetailsLayout {
 /* 3.1 Forms > Radio Button & Checkbox ************************/
 /*------------------------------------------------------------*/
 
-html input[type="radio"],
-html input[type="checkbox"] {
-    background-color: transparent;
-    box-shadow: none !important;
-    vertical-align: middle;
-    margin-right: 6px;
-    margin-top: -3px;
-}
+// html input[type="radio"],
+// html input[type="checkbox"] {
+//     background-color: transparent;
+//     box-shadow: none !important;
+//     vertical-align: middle;
+//     margin-right: 6px;
+//     margin-top: -3px;
+// }
 
-input[type="checkbox"]:after {
-    border: 3px solid #0da2aa;
-    border-right: 0;
-    border-top: 0;
-    height: 5px;
-    left: 20%;
-    top: 24%;
-    width: 11px;
-}
+// input[type="checkbox"]:after {
+//     border: 3px solid #0da2aa;
+//     border-right: 0;
+//     border-top: 0;
+//     height: 5px;
+//     left: 20%;
+//     top: 24%;
+//     width: 11px;
+// }
 
 
-input[type="checkbox"]:hover:before,
-input[type="checkbox"]:focus:before {
-    border: 1px solid #0da2aa;
-}
+// input[type="checkbox"]:hover:before,
+// input[type="checkbox"]:focus:before {
+//     border: 1px solid #0da2aa;
+// }
 
-input[type="radio"]:before,
-input[type="checkbox"]:before {
-    box-shadow: none;
-}
+// input[type="radio"]:before,
+// input[type="checkbox"]:before {
+//     box-shadow: none;
+// }
 
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-    border: 0;
-}
+// input[type="radio"]:focus,
+// input[type="checkbox"]:focus {
+//     border: 0;
+// }
 
-input[type="checkbox"]:hover:disabled:before {
-    border: 1px solid #ccc;
-}
+// input[type="checkbox"]:hover:disabled:before {
+//     border: 1px solid #ccc;
+// }
 
-.ie input[type="radio"],
-.ie input[type="checkbox"],
-.ie .Form input[type="radio"],
-.ie .Form input[type="checkbox"] {
-    border-radius: 0;
-}
+// .ie input[type="radio"],
+// .ie input[type="checkbox"],
+// .ie .Form input[type="radio"],
+// .ie .Form input[type="checkbox"] {
+//     border-radius: 0;
+// }
 
-input[type="radio"]:after {
-    background: #0da2aa;
-    border-radius: 8px;
-    border: 1px solid transparent;
-    content: " ";
-    display: table;
-    height: 6px;
-    left: 7px;
-    position: absolute;
-    top: 7px;
-    width: 6px;
-}
+// input[type="radio"]:after {
+//     background: #0da2aa;
+//     border-radius: 8px;
+//     border: 1px solid transparent;
+//     content: " ";
+//     display: table;
+//     height: 6px;
+//     left: 7px;
+//     position: absolute;
+//     top: 7px;
+//     width: 6px;
+// }
 
-input[type="radio"]:hover:before,
-input[type="radio"]:focus:before {
-    border: 1px solid #0da2aa;
-    border-radius: 50%;
-}
+// input[type="radio"]:hover:before,
+// input[type="radio"]:focus:before {
+//     border: 1px solid #0da2aa;
+//     border-radius: 50%;
+// }
 
 /*check Mandatory input*/
-.CheckMandatory input[type="checkbox"]:before {
-    border: 1px solid red;
-    box-shadow: none;
-}
+// .CheckMandatory input[type="checkbox"]:before {
+//     border: 1px solid red;
+//     box-shadow: none;
+// }
 
 /*for affect text only*/
-.CheckMandatory {}
+// .CheckMandatory {}
 
 /*------------------------------------------------------------*/
 /* 3.2 Forms > Inputs, Selects & Textarea *********************/
 /*------------------------------------------------------------*/
 
-textarea,
-select,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
-    border: 1px solid #C9CDCE;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 2px;
-    background-color: #FFFFFF;
-    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-    height: 36px;
-    box-sizing: border-box;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-}
+// textarea,
+// select,
+// input[type="text"],
+// input[type="password"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="date"],
+// input[type="month"],
+// input[type="time"],
+// input[type="week"],
+// input[type="number"],
+// input[type="email"],
+// input[type="url"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="color"] {
+//     border: 1px solid #C9CDCE;
+//     padding-left: 10px;
+//     padding-right: 10px;
+//     border-radius: 2px;
+//     background-color: #FFFFFF;
+//     box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+//     height: 36px;
+//     box-sizing: border-box;
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+// }
 
-.phone input[type="number"],
-.tablet input[type="number"],
-.phone input[type="text"],
-.tablet input[type="text"] {
-    height: 36px;
-}
+// .phone input[type="number"],
+// .tablet input[type="number"],
+// .phone input[type="text"],
+// .tablet input[type="text"] {
+//     height: 36px;
+// }
 
 
-.isTouch textarea,
-.isTouch select,
-.isTouch input[type="text"] {
-    height: 50px;
-    font-size: 1em;
-}
+// .isTouch textarea,
+// .isTouch select,
+// .isTouch input[type="text"] {
+//     height: 50px;
+//     font-size: 1em;
+// }
 
-input[type="number"] {
-    text-align: right;
-}
+// input[type="number"] {
+//     text-align: right;
+// }
 
-input[type="email"]:focus,
-input[type="text"]:focus {
-    border: 1px solid #16979F;
-    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px #16979F;
-}
+// input[type="email"]:focus,
+// input[type="text"]:focus {
+//     border: 1px solid #16979F;
+//     box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 2px 1px #16979F;
+// }
 
-input[type="text"]:active {
-    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 #9DC6D0;
-    border: 1px solid #16979F;
-}
+// input[type="text"]:active {
+//     box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 #9DC6D0;
+//     border: 1px solid #16979F;
+// }
 
-input[type="text"]:hover {
-    border: 1px solid #B1B5B6;
-    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-}
+// input[type="text"]:hover {
+//     border: 1px solid #B1B5B6;
+//     box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+// }
 
-input[type="text"]::placeholder {
-    color: #999;
-}
+// input[type="text"]::placeholder {
+//     color: #999;
+// }
 
 label.MandatoryLabel:after {
     content: "*";
@@ -3963,17 +3963,17 @@ label.MandatoryLabel:after {
     font-weight: normal;
 }
 
-textarea.Mandatory,
-input[type].Mandatory,
-input[type].Mandatory:focus {
-    border-left: solid 3px #0da2aa;
-}
+// textarea.Mandatory,
+// input[type].Mandatory,
+// input[type].Mandatory:focus {
+//     border-left: solid 3px #0da2aa;
+// }
 
-.AR textarea.Mandatory,
-.AR input[type].Mandatory {
-    border-left: solid 1px #bdbdbd;
-    border-right: solid 3px #0da2aa;
-}
+// .AR textarea.Mandatory,
+// .AR input[type].Mandatory {
+//     border-left: solid 1px #bdbdbd;
+//     border-right: solid 3px #0da2aa;
+// }
 
 // .Dropdown.Mandatory.Not_Valid,
 // input[type].Mandatory.Not_Valid {
@@ -3984,47 +3984,47 @@ input[type].Mandatory:focus {
 // }
 
 
-input[type="text"].Not_Valid {
-    border: solid 1px #a55555;
-    border-left-width: 3px;
-}
+// input[type="text"].Not_Valid {
+//     border: solid 1px #a55555;
+//     border-left-width: 3px;
+// }
 
-input[type="text"].Not_Valid:focus {
-    box-shadow: none;
-    border: solid 1px #a55555;
-}
+// input[type="text"].Not_Valid:focus {
+//     box-shadow: none;
+//     border: solid 1px #a55555;
+// }
 
 
-input[type="radio"]:disabled:before {
-    box-shadow: none;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    content: " ";
-    display: block;
-    background-color: #fff;
-    top: 1px;
-    right: 14px;
-}
+// input[type="radio"]:disabled:before {
+//     box-shadow: none;
+//     border: 1px solid #ccc;
+//     border-radius: 50%;
+//     content: " ";
+//     display: block;
+//     background-color: #fff;
+//     top: 1px;
+//     right: 14px;
+// }
 
-textarea,
-select,
-input {
-    font-size: 14px;
-}
+// textarea,
+// select,
+// input {
+//     font-size: 14px;
+// }
 
-textarea:focus,
-select:focus,
-input:focus {
-    border-color: #aaa;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-}
+// textarea:focus,
+// select:focus,
+// input:focus {
+//     border-color: #aaa;
+//     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+// }
 
-textarea {
-    height: auto;
-    min-height: 36px;
-    resize: none;
-    /*Resize boxes*/
-}
+// textarea {
+//     height: auto;
+//     min-height: 36px;
+//     resize: none;
+//     /*Resize boxes*/
+// }
 
 
 
@@ -4072,16 +4072,16 @@ textarea {
     left:5px;
 }
 
-select {
-    box-shadow: none;
-    height: 36px;
-    line-height: 20px;
-    padding: 4px 6px;
-}
+// select {
+//     box-shadow: none;
+//     height: 36px;
+//     line-height: 20px;
+//     padding: 4px 6px;
+// }
 
-.ie8 select {
-    padding: 6px;
-}
+// .ie8 select {
+//     padding: 6px;
+// }
 
 
 /*------------------------------------------------------------*/
@@ -4092,15 +4092,15 @@ select {
     cursor: text;
 }
 
-select.ReadOnly {
-    cursor: pointer;
-}
+// select.ReadOnly {
+//     cursor: pointer;
+// }
 
-.Form input.ReadOnly,
-.Form textarea.ReadOnly,
-.Form select.ReadOnly {
-    font-size: 12px;
-}
+// .Form input.ReadOnly,
+// .Form textarea.ReadOnly,
+// .Form select.ReadOnly {
+//     font-size: 12px;
+// }
 
 .ValidationMessageContainer {
     position: relative;
@@ -4131,124 +4131,124 @@ select.ReadOnly {
     z-index: 1;
 }
 
-.Form input.ReadOnly:not(.Not_Valid),
-.Form textarea.ReadOnly:not(.Not_Valid),
-.Form select.ReadOnly:not(.Not_Valid) {
-    border-radius: 2px;
-    box-shadow: none;
-    cursor: pointer;
-    font-size: 12px;
-}
+// .Form input.ReadOnly:not(.Not_Valid),
+// .Form textarea.ReadOnly:not(.Not_Valid),
+// .Form select.ReadOnly:not(.Not_Valid) {
+//     border-radius: 2px;
+//     box-shadow: none;
+//     cursor: pointer;
+//     font-size: 12px;
+// }
 
-.Form input.ReadOnly:not(.Not_Valid):focus,
-.Form textarea.ReadOnly:not(.Not_Valid):focus,
-.Form select.ReadOnly:not(.Not_Valid):focus {
-    background-color: #fff;
-    border: 1px solid #aaa;
-    border-radius: 2px;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-    font-size: 12px;
-}
+// .Form input.ReadOnly:not(.Not_Valid):focus,
+// .Form textarea.ReadOnly:not(.Not_Valid):focus,
+// .Form select.ReadOnly:not(.Not_Valid):focus {
+//     background-color: #fff;
+//     border: 1px solid #aaa;
+//     border-radius: 2px;
+//     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+//     font-size: 12px;
+// }
 
-.Form input.ReadOnly:not(.Not_Valid),
-.Form textarea.ReadOnly:not(.Not_Valid),
-.Form select.ReadOnly:not(.Not_Valid) {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-}
+// .Form input.ReadOnly:not(.Not_Valid),
+// .Form textarea.ReadOnly:not(.Not_Valid),
+// .Form select.ReadOnly:not(.Not_Valid) {
+//     background-color: #fff;
+//     border: 1px solid #ccc;
+//     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+// }
 
-.Form textarea.ReadOnly[readonly="readonly"],
-.Form textarea.ReadOnly[disabled="disabled"],
-.Form select.ReadOnly[disabled="disabled"],
-.Form input.ReadOnly[readonly="readonly"],
-.Form input.ReadOnly[disabled="disabled"],
-.Form input[disabled="disabled"].ReadOnly:not(.Not_Valid),
-.Form input[readonly="readonly"].ReadOnly:not(.Not_Valid),
-.Form textarea[disabled="disabled"].ReadOnly:not(.Not_Valid),
-.Form textarea[readonly="readonly"].ReadOnly:not(.Not_Valid),
-.Form select[disabled="disabled"].ReadOnly:not(.Not_Valid),
-.Form select[readonly="readonly"].ReadOnly:not(.Not_Valid),
-textarea[disabled="disabled"],
-textarea[readonly="readonly"],
-select[disabled="disabled"] {
-    background-color: #f5f5f5;
-    background-position: right 14px center;
-    background-repeat: no-repeat;
-    border-radius: 2px;
-    color: #0b374a;
-    cursor: not-allowed;
-    font-size: 14px;
-}
+// .Form textarea.ReadOnly[readonly="readonly"],
+// .Form textarea.ReadOnly[disabled="disabled"],
+// .Form select.ReadOnly[disabled="disabled"],
+// .Form input.ReadOnly[readonly="readonly"],
+// .Form input.ReadOnly[disabled="disabled"],
+// .Form input[disabled="disabled"].ReadOnly:not(.Not_Valid),
+// .Form input[readonly="readonly"].ReadOnly:not(.Not_Valid),
+// .Form textarea[disabled="disabled"].ReadOnly:not(.Not_Valid),
+// .Form textarea[readonly="readonly"].ReadOnly:not(.Not_Valid),
+// .Form select[disabled="disabled"].ReadOnly:not(.Not_Valid),
+// .Form select[readonly="readonly"].ReadOnly:not(.Not_Valid),
+// textarea[disabled="disabled"],
+// textarea[readonly="readonly"],
+// select[disabled="disabled"] {
+//     background-color: #f5f5f5;
+//     background-position: right 14px center;
+//     background-repeat: no-repeat;
+//     border-radius: 2px;
+//     color: #0b374a;
+//     cursor: not-allowed;
+//     font-size: 14px;
+// }
 
-input[disabled="disabled"][type="text"]:focus,
-input[disabled="disabled"][type="password"]:focus,
-textarea[disabled="disabled"]:focus,
-textarea[readonly="readonly"]:focus,
-select[disabled="disabled"]:focus,
-input[readonly="readonly"]:focus,
-input[disabled="disabled"]:focus,
-.Form input[readonly="readonly"].ReadOnly:not(.Not_Valid):focus,
-.Form input[disabled="disabled"].ReadOnly:not(.Not_Valid):focus,
-.Form textarea[readonly="readonly"].ReadOnly:not(.Not_Valid):focus,
-.Form textarea[disabled="disabled"].ReadOnly:not(.Not_Valid):focus,
-.Form select[readonly="readonly"].ReadOnly:not(.Not_Valid):focus,
-.Form select[disabled="disabled"].ReadOnly:not(.Not_Valid):focus {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-}
+// input[disabled="disabled"][type="text"]:focus,
+// input[disabled="disabled"][type="password"]:focus,
+// textarea[disabled="disabled"]:focus,
+// textarea[readonly="readonly"]:focus,
+// select[disabled="disabled"]:focus,
+// input[readonly="readonly"]:focus,
+// input[disabled="disabled"]:focus,
+// .Form input[readonly="readonly"].ReadOnly:not(.Not_Valid):focus,
+// .Form input[disabled="disabled"].ReadOnly:not(.Not_Valid):focus,
+// .Form textarea[readonly="readonly"].ReadOnly:not(.Not_Valid):focus,
+// .Form textarea[disabled="disabled"].ReadOnly:not(.Not_Valid):focus,
+// .Form select[readonly="readonly"].ReadOnly:not(.Not_Valid):focus,
+// .Form select[disabled="disabled"].ReadOnly:not(.Not_Valid):focus {
+//     background-color: #f5f5f5;
+//     border: 1px solid #ccc;
+//     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+// }
 
-input[type="radio"].ReadOnly,
-input[type="checkbox"].ReadOnly,
-.Form input.ReadOnly[disabled="disabled"][type="radio"],
-.Form input.ReadOnly[readonly="readonly"][type="radio"],
-.Form input.ReadOnly[disabled="disabled"][type="checkbox"],
-.Form input.ReadOnly[readonly="readonly"][type="checkbox"],
-.Form input[type="radio"].ReadOnly,
-.Form input[type="checkbox"].ReadOnly {
-    background-color: transparent;
-    border-width: 0;
-}
+// input[type="radio"].ReadOnly,
+// input[type="checkbox"].ReadOnly,
+// .Form input.ReadOnly[disabled="disabled"][type="radio"],
+// .Form input.ReadOnly[readonly="readonly"][type="radio"],
+// .Form input.ReadOnly[disabled="disabled"][type="checkbox"],
+// .Form input.ReadOnly[readonly="readonly"][type="checkbox"],
+// .Form input[type="radio"].ReadOnly,
+// .Form input[type="checkbox"].ReadOnly {
+//     background-color: transparent;
+//     border-width: 0;
+// }
 
-select[disabled="disabled"],
-input[disabled="disabled"],
-input[readonly="readonly"],
-select[disabled="disabled"]:hover,
-input[disabled="disabled"]:hover,
-input[readonly="readonly"]:hover {
-    background-color: transparent;
-    background-image: none;
-    background-position: right 14px center;
-    background-repeat: no-repeat;
-    border-radius: 2px;
-    color: #BDBDBD;
-    cursor: not-allowed;
-}
+// select[disabled="disabled"],
+// input[disabled="disabled"],
+// input[readonly="readonly"],
+// select[disabled="disabled"]:hover,
+// input[disabled="disabled"]:hover,
+// input[readonly="readonly"]:hover {
+//     background-color: transparent;
+//     background-image: none;
+//     background-position: right 14px center;
+//     background-repeat: no-repeat;
+//     border-radius: 2px;
+//     color: #BDBDBD;
+//     cursor: not-allowed;
+// }
 
 
-input[readonly="readonly"].DateInput{
-    background-color:#fff;
-    color:#333;
-}
+// input[readonly="readonly"].DateInput{
+//     background-color:#fff;
+//     color:#333;
+// }
 
-input[readonly="readonly"].DateInput:hover{
-    cursor:default;
-}
+// input[readonly="readonly"].DateInput:hover{
+//     cursor:default;
+// }
 
 
 /*------------------------------------------------------------*/
 /* 3.4 Forms > Not Valid **************************************/
 /*------------------------------------------------------------*/
 
-.Form input.Not_Valid,
-.Form select.Not_Valid,
-.Form textarea.Not_Valid,
-input.Not_Valid,
-select.Not_Valid,
-textarea.Not_Valid {
-    border-radius: 4px;
-}
+// .Form input.Not_Valid,
+// .Form select.Not_Valid,
+// .Form textarea.Not_Valid,
+// input.Not_Valid,
+// select.Not_Valid,
+// textarea.Not_Valid {
+//     border-radius: 4px;
+// }
 
 .ValidationMessage {
     position: relative;
@@ -4260,36 +4260,36 @@ textarea.Not_Valid {
     border-bottom-left-radius: 0;
 }
 
-.Form textarea.Not_Valid:focus,
-.Form textarea.Not_Valid,
-textarea.Not_Valid:focus,
-textarea.Not_Valid {
-    font-size: 14px;
-    padding: 10px;
-}
+// .Form textarea.Not_Valid:focus,
+// .Form textarea.Not_Valid,
+// textarea.Not_Valid:focus,
+// textarea.Not_Valid {
+//     font-size: 14px;
+//     padding: 10px;
+// }
 
-select.Not_Valid:focus,
-input.Not_Valid:focus,
-textarea.Not_Valid:focus {
-    border: 1px solid #bf1601;
-}
+// select.Not_Valid:focus,
+// input.Not_Valid:focus,
+// textarea.Not_Valid:focus {
+//     border: 1px solid #bf1601;
+// }
 
-.Form input[type="checkbox"].Not_Valid,
-.Form input[type="radio"].Not_Valid,
-input[type="checkbox"].Not_Valid,
-input[type="radio"].Not_Valid {
-    border: transparent;
-    padding: 0;
-}
+// .Form input[type="checkbox"].Not_Valid,
+// .Form input[type="radio"].Not_Valid,
+// input[type="checkbox"].Not_Valid,
+// input[type="radio"].Not_Valid {
+//     border: transparent;
+//     padding: 0;
+// }
 
-.Form input.ReadOnly,
-.Form textarea.ReadOnly {
-    background: #fff;
-}
+// .Form input.ReadOnly,
+// .Form textarea.ReadOnly {
+//     background: #fff;
+// }
 
-.TextInput.Mandatory.Not_Valid {
-    border-left: 3px solid #a55555;
-}
+// .TextInput.Mandatory.Not_Valid {
+//     border-left: 3px solid #a55555;
+// }
 
 
 /*------------------------------------*\
@@ -12630,11 +12630,11 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
 
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//     -webkit-appearance: none;
+//     margin: 0;
+// }
 
 
 .SpinnerInput_Container>a {
@@ -30427,29 +30427,29 @@ html .AR.tablet .ThemeGrid_Width12 {
     padding-left: 40px;
 }
 
-.FA select,
-.AR select {
-    background-position:5px center;
-    padding-right: 5px;
-}
+// .FA select,
+// .AR select {
+//     background-position:5px center;
+//     padding-right: 5px;
+// }
 
-.FA input[type=radio],
-.FA .Arinput[type=checkbox],
-.AR input[type=radio],
-.AR .Arinput[type=checkbox] {
-    margin-right: 5px;
-}
+// .FA input[type=radio],
+// .FA .Arinput[type=checkbox],
+// .AR input[type=radio],
+// .AR .Arinput[type=checkbox] {
+//     margin-right: 5px;
+// }
 
-.FA input[type="checkbox"]:after,
-.AR input[type="checkbox"]:after {
-    left: 20%;
-    border-right: 0;
-}
+// .FA input[type="checkbox"]:after,
+// .AR input[type="checkbox"]:after {
+//     left: 20%;
+//     border-right: 0;
+// }
 
-.FA input[type="radio"]:after,
-.AR input[type="radio"]:after {
-    left: 25%;
-}
+// .FA input[type="radio"]:after,
+// .AR input[type="radio"]:after {
+//     left: 25%;
+// }
 
 .FA .Search_wrapper:after,
 .AR .Search_wrapper:after {
@@ -31800,14 +31800,14 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
     margin-right: 20px;
 }
 
-.FA input[type=radio],
-.FA input[type=checkbox],
-.AR input[type=radio],
-.AR input[type=checkbox] {
-    margin-right: 0;
-    margin-left: 5px;
-    padding: 0;
-}
+// .FA input[type=radio],
+// .FA input[type=checkbox],
+// .AR input[type=radio],
+// .AR input[type=checkbox] {
+//     margin-right: 0;
+//     margin-left: 5px;
+//     padding: 0;
+// }
 
 /*Login AR and FA */
 .FA .PatientDetailsLayout___loginInfo .User,
@@ -32983,11 +32983,11 @@ div.NoPrompt>span>div.template-item-input-block {
 
 
 /* START */
-input[type].SavedInput,
-textarea.SavedInput {
-    border-color: #16979f !important;
-    border-width: 2px !important;
-}
+// input[type].SavedInput,
+// textarea.SavedInput {
+//     border-color: #16979f !important;
+//     border-width: 2px !important;
+// }
 
 span.SavedFeedback {
     background-color: #16979f;
@@ -33418,25 +33418,25 @@ div.template-item{
     right: auto;
 }
 
-input[type].TextInput[readonly],
-input[type].TextInput:read-only {
-    background-color: #e9e9e9;
-    color: #bababa;
-    cursor: not-allowed;
-}
+// input[type].TextInput[readonly],
+// input[type].TextInput:read-only {
+//     background-color: #e9e9e9;
+//     color: #bababa;
+//     cursor: not-allowed;
+// }
 
 /*for receive stock*/
-input[type].TextInput[readonly] {
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    color: #333;
-  /*  border-left: 3px solid transparent;*/
-    font-weight: bold;
-    text-align: center;
-    /* width: 100%; */
-    /*border: 1px solid #C9CDCE;*/
-}
+// input[type].TextInput[readonly] {
+//     border: none;
+//     box-shadow: none;
+//     background-color: transparent;
+//     color: #333;
+//   /*  border-left: 3px solid transparent;*/
+//     font-weight: bold;
+//     text-align: center;
+//     /* width: 100%; */
+//     /*border: 1px solid #C9CDCE;*/
+// }
 
 .DateTimeRangePicker-input input {
     width: 100%;
