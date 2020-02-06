@@ -1,0 +1,331 @@
+.ISidebar {
+	display: flex;
+
+	.SearchSideBarFields {
+		.SegmentedControl {
+			.ButtonGroup_button.Button {
+				background-color: color(sapphire-grey-blue);
+				border: none;
+				border-radius: 4px;
+				&:active,
+				&.active {
+					background-color: color(regular-alpha);
+					color: color(sapphire-white);
+					font-weight: bold;
+				}
+				label {
+					color: color(light-grey) !important;
+				}
+			}
+		}
+
+		.SliderWrapper {
+			.Dropdown {
+				background-image: url('https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/sidebarArrow.png');
+				cursor: pointer;
+			}
+			.TextInput,
+			.Dropdown {
+				background-color: color(sapphire-grey-blue);
+				border: none;
+				color: color(light-grey);
+			}
+			.TextInput {
+				&:focus {
+					box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
+						0px 0px 2px 1px color(regular-alpha);
+				}
+				&::placeholder {
+					color: color(light-grey);
+				}
+			}
+		}
+	}
+}
+
+.ISidebar-menu {
+	background-color: #0c262f;
+	height: 100vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	z-index: 1;
+}
+
+.AR .ISidebar-menu {
+	left: 0;
+	right: auto;
+}
+
+.ISidebar-user {
+	background-color: #0c262f;
+	border-top: 2px solid #08a6af;
+	bottom: 0;
+	height: 60px;
+	max-width: 40px;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.AR .ISidebar-user {
+	left: 0;
+	right: auto;
+}
+
+.ISidebar.open .ISidebar-user {
+	max-width: 250px;
+}
+
+.ISidebar-user-login {
+	display: block;
+	height: 60px;
+	opacity: 0;
+	padding: 3px 8px;
+	transition: all 0.5s ease;
+	white-space: nowrap;
+	width: calc(100% - 40px);
+}
+
+.ISidebar-user-login .VersionInfo {
+	display: none;
+	position: absolute;
+	top: -25px;
+}
+
+.ISidebar-user-logout {
+	background-color: #0c262f;
+	height: 58px;
+	line-height: 58px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40px;
+}
+
+.AR .ISidebar-user-logout {
+	left: 0;
+	right: auto;
+}
+
+.ISidebar-user-logout a {
+	color: #8dbecc;
+	cursor: pointer;
+	font-size: 16px;
+	height: 30px;
+	margin: 0;
+	text-align: right;
+	width: 40px;
+}
+
+.ISidebar-shield {
+	background-color: #000;
+	flex-basis: 100%;
+	opacity: 0.2;
+}
+
+.ISidebar-content {
+	background-color: color(sapphire-dark-blue);
+	height: 100vh;
+}
+
+.ISidebar.open .ISidebar-content {
+	max-width: 250px;
+	min-width: 250px;
+	padding-left: 10px;
+	padding-right: 50px;
+}
+
+.AR .ISidebar.open .ISidebar-content {
+	padding-left: 50px;
+	padding-right: 10px;
+}
+
+.ISidebar-content-panel {
+	display: none;
+	width: 190px;
+}
+
+.ISidebar-content-panel-title {
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 50px;
+}
+
+.ISidebar-content-panel-content {
+	height: calc(100vh - 150px);
+	overflow: auto;
+}
+
+.ISidebar-content-panel-content::-webkit-scrollbar {
+	background-color: transparent;
+	width: 5px;
+}
+
+.ISidebar-content-panel-content::-webkit-scrollbar-thumb {
+	background-color: #08a6af;
+}
+
+.ISidebar input[type='number'] {
+	text-align: center;
+}
+
+.ISidebar .SearchSideBar > .SearchSideBarLabel {
+	color: unset;
+	font-size: unset;
+	font-weight: 400;
+	height: auto;
+}
+
+.ISidebar .SearchSideBar > .SearchSideBarLabel > div:first-of-type {
+	font-size: unset;
+}
+
+.ISidebar
+	.SearchSideBar
+	> .SearchSideBarFields
+	> div.SliderWrapper
+	> div.FieldsSlider
+	> div {
+	width: 100%;
+}
+
+.ISidebar .SearchSideBar > .SearchSideBarFields {
+	margin-top: 0;
+}
+
+.ISidebar.notExpandable .ISidebar-content {
+	min-width: 250px;
+}
+
+.ISidebar.open .ISidebar-menu {
+	background-color: #0f4e67;
+}
+
+.ISidebar.open .ISidebar-user-login {
+	opacity: 1;
+}
+
+.ISidebar.open .ISidebar-user-login .VersionInfo {
+	color: #8dbecc;
+	display: block;
+}
+
+.ISidebar.open .ISidebar-user-login-name {
+	color: #8dbecc;
+	margin: 4px 0 2px 0;
+}
+
+.ISidebar.open .ISidebar-user-login-name .UserLink {
+	color: #8dbecc;
+}
+
+.ISidebar .wbTasks .ISidebar-content-panel-content > div {
+	margin-bottom: 10px;
+}
+
+.ISidebar
+	.SearchSideBar
+	> .SearchSideBarFields
+	> div.SliderWrapper
+	> div.FieldsSlider,
+.ISidebar
+	.SearchSideBar
+	> .SearchSideBarFields
+	> div.SliderWrapper
+	> div.FieldsSlider.Tab1,
+.ISidebar
+	.SearchSideBar
+	> .SearchSideBarFields
+	> div.SliderWrapper
+	> div.FieldsSlider.Tab2 {
+	display: block;
+	margin: 0;
+	padding: 0;
+	transition: none;
+	white-space: normal;
+}
+
+.ISidebar
+	.SearchSideBar
+	> .SearchSideBarFields
+	> div.SliderWrapper
+	> div.FieldsSlider.Tab1
+	> div:last-child
+	input,
+.ISidebar
+	.SearchSideBar
+	> .SearchSideBarFields
+	> div.SliderWrapper
+	> div.FieldsSlider.Tab2
+	> div:first-child
+	input {
+	display: block;
+}
+
+.ISidebar-age-format {
+	margin-left: 10px;
+	margin-top: 0;
+	width: 125px;
+}
+
+.AR .ISidebar-age-format {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+.ISidebar .TextInput_Container.OSInline {
+	display: inline-block;
+}
+
+.ISidebar .FieldsSlider.Tab1 .FieldsSliderTab1 {
+	display: block;
+}
+
+.ISidebar .FieldsSlider.Tab1 .FieldsSliderTab2 {
+	display: none;
+}
+
+.ISidebar .FieldsSlider.Tab2 .FieldsSliderTab1 {
+	display: none;
+}
+
+.ISidebar .FieldsSlider.Tab2 .FieldsSliderTab2 {
+	display: block;
+}
+
+.ISidebar .SearchSideBar .ButtonGroup_button.Button {
+	width: 50% !important;
+}
+
+.Page.FA
+	.SearchSideBar
+	> .SearchSideBarFields
+	> div.SliderWrapper
+	> div.FieldsSlider.Tab2,
+.Page.AR
+	.SearchSideBar
+	> .SearchSideBarFields
+	> div.SliderWrapper
+	> div.FieldsSlider.Tab2 {
+	margin: 0;
+}
+
+.ISidebar-content .FieldsSlider input + span.ValidationMessage {
+	background-color: #a55555;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: #fff;
+	font-size: 0.92rem;
+	font-weight: 400;
+	line-height: 14px;
+	padding: 5px;
+	text-align: right;
+	width: fit-content;
+}

@@ -33,6 +33,7 @@
 // .LightBeige            : #F5F4E0
 // .LightGrey             : #D6D6D6
 // .LightOrange           : #FCC891
+// .LightPink             : #ca2c92 - Deprecated
 // .LightRed              : #FAD5D5
 // .LightTurquoise        : #C4F0EB - Changed to C4F0EB  LightBlue Deprecated
 // .LightYellow           : #FFEAB5
@@ -104,6 +105,7 @@ $light-green: #c2dea8;
 $light-beige: #f5f4e0;
 $light-grey: #d6d6d6;
 $light-orange: #fcc891;
+$light-pink: #ca2c92;
 $light-red: #fad5d5;
 $light-turquoise: #c4f0eb;
 $light-yellow: #ffeab5;
@@ -186,6 +188,7 @@ $sapphire__colors: (
 	light-beige: #f5f4e0,
 	light-grey: #d6d6d6,
 	light-orange: #fcc891,
+	light-pink: #ca2c92,
 	light-red: #fad5d5,
 	light-turquoise: #c4f0eb,
 	light-yellow: #ffeab5,
@@ -205,6 +208,7 @@ $sapphire__colors: (
 	sapphire-dark-blue2: #30384a,
 	sapphire-dark-grey: #858585,
 	sapphire-dark-text: #333333,
+	sapphire-grey-blue: #494f5c,
 	sapphire-female: #c892b3,
 	sapphire-inactive: #adadad,
 	sapphire-light: #ebebeb,
