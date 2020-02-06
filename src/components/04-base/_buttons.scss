@@ -107,9 +107,15 @@ a.Button {
 		}
 
 		&.SearchMagnifier {
+			background-color: color(regular-alpha);
+			border-radius: 0;
 			min-width: auto;
 			@include setLinkStyleAll {
 				min-width: auto;
+			}
+			&:active,
+			&:hover {
+				background-color: color(primary-light) !important;
 			}
 
 			&:after {
