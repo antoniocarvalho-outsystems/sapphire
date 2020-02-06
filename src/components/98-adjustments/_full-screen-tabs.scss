@@ -1,3 +1,21 @@
+.FullScreenTabsWrapper {
+	-servicestudio-width: 100% !important;
+
+	&_Container {
+		-servicestudio-width: 100% !important;
+	}
+
+	&__Tabs {
+		a {
+			-servicestudio-display: inline-block !important;
+		}
+	}
+}
+
+.TabWrapper {
+	-servicestudio-position: relative !important;
+}
+
 .tablet {
 	&.portrait {
 		.FullScreenTabsWrapper {

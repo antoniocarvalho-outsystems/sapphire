@@ -1,0 +1,29 @@
+.Menubar {
+	-servicestudio-display: inline-block;
+	-servicestudio-position: relative;
+	-servicestudio-width: 100% !important;
+	-servicestudio-z-index: 0;
+
+	span {
+		-servicestudio-display: inline-block;
+		-servicestudio-width: 50px;
+	}
+
+	span span {
+		-servicestudio-display: inline-block;
+	}
+
+	.ListRecords {
+		-servicestudio-display: none;
+		-servicestudio-position: relative;
+	}
+
+	.ListRecords .MenuItem {
+		-servicestudio-display: inline-block;
+		-servicestudio-position: relative;
+	}
+}
+
+.MenuItem {
+	-servicestudio-width: 60px;
+}

@@ -2,36 +2,16 @@
 	@include component-scroll(true, 0);
 
 	background-color: $sapphire-blue;
-	-servicestudio-display: inline-block;
 	font-weight: 700;
 	height: $default-menubar-height;
 	left: 0;
-	-servicestudio-position: relative;
 	position: fixed;
 	top: 0;
-	-servicestudio-width: 100% !important;
 	width: 100%;
-	-servicestudio-z-index: 0;
 	z-index: 4;
 
-	span {
-		-servicestudio-display: inline-block;
-		-servicestudio-width: 50px;
-	}
-
-	span span {
-		-servicestudio-display: inline-block;
-	}
-
 	.ListRecords {
-		-servicestudio-display: none;
 		display: inline;
-		-servicestudio-position: relative;
-	}
-
-	.ListRecords .MenuItem {
-		-servicestudio-display: inline-block;
-		-servicestudio-position: relative;
 	}
 
 	&_logo {
@@ -156,7 +136,6 @@
 	position: relative;
 	text-decoration: none;
 	transition: all 0.2s ease-in;
-	-servicestudio-width: 60px;
 
 	&:hover {
 		.MenuItem_icon a,
