@@ -13,7 +13,7 @@
 
 			.TabWrapper {
 				cursor: pointer;
-				font-size: $font-size-normal;
+				font-size: 1em;
 				line-height: 40px;
 				min-width: 100px;
 				padding: 0 24px;
@@ -63,7 +63,7 @@
 	background-color: $regular-red;
 	border-radius: 100%;
 	color: $regular-white;
-	font-size: $font-size-tiny;
+	font-size: 0.786em;
 	height: 18px;
 	line-height: 18px;
 	position: absolute;
@@ -79,7 +79,7 @@
 	color: $regular-beta;
 	cursor: pointer;
 	display: flex;
-	font-size: $font-size-heading4;
+	font-size: 1.071em;
 	font-weight: bold;
 	height: $default-menubar-height;
 	min-width: 100px;
@@ -107,7 +107,7 @@
 	}
 
 	.TabWrapper_icon {
-		font-size: $font-size-heading2;
+		font-size: 1.429em;
 		margin-left: 10px;
 		margin-right: 0;
 		vertical-align: middle;

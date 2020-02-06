@@ -8,7 +8,7 @@ const KssConfig = {
 	css: '../dev.styles.css',
 	source: path.resolve(__dirname, './src/components'),
 	destination: path.resolve(__dirname, 'dist/styleguide'),
-	extend: path.resolve(__dirname, './src/helpersHandleBar'),
+	extend: path.resolve(__dirname, './src/helpers-handlebar'),
 };
 
 const outputPath = path.join(__dirname, 'dist');

@@ -37,7 +37,7 @@
 	&_logo {
 		color: $regular-white;
 		display: inline-block;
-		font-size: $font-size-heading2;
+		font-size: 1.429em;
 		height: 100%;
 		position: relative;
 		text-align: center;
@@ -64,7 +64,7 @@
 		color: $regular-white;
 		cursor: pointer;
 		display: none;
-		font-size: $font-size-heading2;
+		font-size: 1.429em;
 		height: 100%;
 		line-height: $default-menubar-height;
 		padding: 0 10px;
@@ -148,7 +148,7 @@
 	color: $regular-white;
 	cursor: pointer;
 	display: inline-block;
-	font-size: $font-size-small;
+	font-size: 14px;
 	font-weight: normal;
 	height: $default-menubar-height;
 	line-height: $default-menubar-height;
@@ -192,12 +192,12 @@
 	}
 
 	&_icon {
-		font-size: $font-size-normal;
+		font-size: 1em;
 		margin-right: 5px;
 	}
 
 	&_label {
-		font-size: $font-size-small;
+		font-size: 0.857em;
 	}
 
 	&_icon a,
@@ -233,7 +233,7 @@
 			border: 1px solid $sapphire-dark-blue2;
 			color: $regular-white !important;
 			display: block;
-			font-size: $font-size-small;
+			font-size: 0.857em;
 			font-weight: normal;
 			height: auto;
 			line-height: 19px;
