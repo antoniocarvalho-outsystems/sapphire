@@ -13,7 +13,7 @@
 .Dropdown {
 	background-color: $regular-white;
 	// @TODO: how do we host images?
-	background-image: url('https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/dropdown_bg.png?520541');
+	background-image: url('https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/dropdown_bg.png');
 	background-position: right 14px center;
 	background-repeat: no-repeat;
 	border: 1px solid $light-grey;
@@ -61,6 +61,6 @@
 	}
 
 	.LineContent .Dropdown {
-    padding: 5px 5px 5px 5px;
+		padding: 5px 5px 5px 5px;
 	}
 }
