@@ -1,8 +1,8 @@
 .HourPicker {
-	font-size: 12px;
+	font-size: 0.857em;
 
 	&:not(&--textTrigger) &__InputContainer:before {
-		color: #16979f;
+		color: $regular-alpha;
 		content: '\e62a';
 		font-family: 'Sapphire-Icon-Font';
 		position: absolute;
@@ -13,7 +13,7 @@
 
 	&--textTrigger & {
 		&__LabelValue {
-			color: #16979f;
+			color: $regular-alpha;
 			cursor: pointer;
 			display: inline-block;
 			font-size: inherit;
@@ -52,7 +52,7 @@
 	}
 
 	&__ButtonClear {
-		color: #16979f;
+		color: $regular-alpha;
 		cursor: pointer;
 		font-family: 'Sapphire-Icon-Font';
 		font-size: inherit;
@@ -78,19 +78,19 @@
 }
 
 /* UI TimePicker CSS - HourPicker */
-.ui-timepicker-container {
+div.ui-timepicker-container {
 	@include component-scroll;
 
-	background-color: #ffffff;
-	border: 1px solid #dddddd;
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
 	border-radius: 4px;
-	font-size: 14px;
+	font-size: 1em;
 	min-width: 130px;
 
 	.ui-state-hover {
-		background-color: #16979f;
+		background-color: $regular-alpha;
 		border-color: transparent;
-		color: #ffffff;
+		color: $regular-white;
 	}
 
 	.ui-corner-all {
