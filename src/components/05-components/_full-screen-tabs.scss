@@ -1,11 +1,8 @@
 .FullScreenTabsWrapper {
-	-servicestudio-width: 100% !important;
-
 	&_Container {
 		background-color: $regular-white;
 		min-height: 39px;
 		position: relative;
-		-servicestudio-width: 100% !important;
 
 		&.Dashboard {
 			background-color: $regular-white;
@@ -37,7 +34,6 @@
 		display: inline-flex;
 
 		a {
-			-servicestudio-display: inline-block !important;
 			display: flex;
 			height: 100%;
 		}
@@ -83,7 +79,6 @@
 	font-weight: bold;
 	height: $default-menubar-height;
 	min-width: 100px;
-	-servicestudio-position: relative !important;
 	transition: all 0.2s ease-in;
 
 	&:hover {
@@ -98,7 +93,7 @@
 
 		a,
 		a:hover {
-			color: #0da2aa;
+			color: $regular-alpha;
 		}
 	}
 

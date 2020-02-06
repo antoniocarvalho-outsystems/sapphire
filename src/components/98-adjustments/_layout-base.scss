@@ -37,7 +37,7 @@
 			}
 
 			&.isFixed .Circle.Large .icon {
-				font-size: 12px;
+				font-size: 0.857em;
 				line-height: 1;
 				vertical-align: middle;
 			}
@@ -117,6 +117,10 @@
 		a .Circle.OSInline {
 			display: table-cell;
 		}
+	}
+
+	&-iframesidebar {
+		-servicestudio-display: none !important;
 	}
 
 	&.Page {
