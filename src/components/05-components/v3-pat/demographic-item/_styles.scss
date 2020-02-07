@@ -1,0 +1,22 @@
+.Demographic-item {
+  display: block;
+  text-align: left;
+
+}
+
+.AR .Demographic-item {
+  text-align: right;
+
+}
+
+.Demographic-item-label {
+  color: color(mid-light-grey);
+  display: block;
+  font-size: 0.9rem;
+}
+
+.Demographic-item-value {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+}
