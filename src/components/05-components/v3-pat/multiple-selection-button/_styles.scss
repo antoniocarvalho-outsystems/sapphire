@@ -1,0 +1,65 @@
+.MultipleSelectionButton-label {
+  display: block;
+}
+
+.ButtonCheckboxInp {
+  height: 34px;
+  margin-right: 6px;
+  padding: 0;
+  position: relative;
+}
+
+.ButtonCheckboxInp.isFullWidth {
+  display: block;
+}
+
+.ButtonCheckboxInput_CheckBox {
+  left: 8px;
+  position: absolute;
+  top: 8px;
+}
+
+.ButtonCheckboxInp input[type="checkbox"] {}
+
+.ButtonCheckboxInp.active>.ButtonCheckboxInput_CheckBox~label:hover,
+.ButtonCheckboxInp.active>.ButtonCheckboxInput_CheckBox~label {
+  background-color: #0da2aa;
+  border: 1px solid #0da2aa;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.ButtonCheckboxInp>.ButtonCheckboxInput_CheckBox~label {
+  background-color: #fff;
+  border: 1px solid #0da2aa;
+  border-radius: 5px;
+  color: #0da2aa;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 10px 6px 35px;
+}
+
+.ButtonCheckboxInp.isFullWidth>.ButtonCheckboxInput_CheckBox~label {
+  display: inline-block;
+  width: 100%;
+}
+
+.ButtonCheckboxInp>.ButtonCheckboxInput_CheckBox~label:hover {
+  background-color: #e6f3f5;
+  color: #0da2aa;
+}
+
+.ButtonCheckboxInp.disabled>.ButtonCheckboxInput_CheckBox:hover,
+.ButtonCheckboxInp.disabled>.ButtonCheckboxInput_CheckBox~label {
+  background: #e9e9e9;
+  color: #73929f;
+  cursor: default;
+  pointer-events: none;
+}
+
+.ButtonCheckboxInp.disabled>.ButtonCheckboxInput_CheckBox~label {
+  background: #e9e9e9;
+  color: #73929f;
+  cursor: default;
+  pointer-events: none;
+}
