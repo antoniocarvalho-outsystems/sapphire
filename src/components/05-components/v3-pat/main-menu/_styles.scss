@@ -243,6 +243,16 @@
 		margin-left: 5px;
 		margin-right: 0;
 	}
+
+	a.Menu_SubMenuItem {
+		&,
+		&:link,
+		&:hover,
+		&:visited {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
 }
 
 // .mostly-customized-scrollbar::-webkit-scrollbar {
