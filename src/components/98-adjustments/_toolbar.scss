@@ -1,0 +1,36 @@
+.tablet {
+	&.portrait {
+		.Toolbar.Fix {
+			margin: 0;
+			position: sticky !important;
+
+			.MenuItemWrapper__icon {
+				display: block;
+			}
+
+			.Toolbar__leftBtn,
+			.Toolbar__rightBtn {
+				height: 60px;
+			}
+
+			.Toolbar__leftBtn:before,
+			.Toolbar__rightBtn:before {
+				line-height: 60px;
+			}
+		}
+	}
+
+	.Toolbar.Fix {
+		top: 0px !important;
+	}
+}
+
+.desktop {
+	.Toolbar__Items {
+		a:link:hover,
+		a:visited:hover,
+		a:not([disabled='disabled']):hover {
+			text-decoration: none;
+		}
+	}
+}

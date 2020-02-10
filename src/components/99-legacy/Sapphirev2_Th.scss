@@ -12,14 +12,14 @@
      1.2 General Properties > Margins
 
     $2. Structure
-     2.1 Structure > Header     
+     2.1 Structure > Header
      2.2 Structure > Menu
      2.3 Structure > Footer
      2.4 Structure > Content
      2.5 Structure > Sidebar
      2.6 Structure > Title Section
-     
-    
+
+
     $3. Forms
      3.1 Forms > Radio Button & Checkbox
      3.2 Forms > Inputs, Selects & Textarea
@@ -55,7 +55,7 @@
 
     $9. Sapphire Patterns
      9.1 Sapphire Patterns > Calendar > CalendarPanel
-     9.2 Sapphire Patterns > Calendar > CalendarWB 
+     9.2 Sapphire Patterns > Calendar > CalendarWB
      9.3 Sapphire Patterns > Cards > AppointmentLine
      9.4 Sapphire Patterns > Cards > Availability_Card
      9.5 Sapphire Patterns > Cards > Card_All
@@ -75,7 +75,7 @@
      9.19 Sapphire Patterns > Contents > SectionRegister
      9.20 Sapphire Patterns > Contents > SmallContainer
      9.21 Sapphire Patterns > Contents > StretchedContainer_Content
-          Sapphite Patterns > Contents > TruncatedContent    
+          Sapphite Patterns > Contents > TruncatedContent
      9.22 Sapphire Patterns > Controls_Custom_Patterns > DateNavigation
      9.23 Sapphire Patterns > Controls_Custom_Patterns > DropDownCAtegoriesv4_0_3
      9.24 Sapphire Patterns > Controls_Custom_Patterns > Expandable_Content
@@ -87,7 +87,7 @@
      9.30 Sapphire Patterns > Controls_Custom_Patterns > SpinnerHorizontal
      9.31 Sapphire Patterns > Controls_Custom_Patterns > SpinnerVertical
      9.32 Sapphire Patterns > Controls_Custom_Patterns > ToggleButonsFullWidth
-     9.33 Sapphire Patterns > Custom_Patterns > AppointmentIcon 
+     9.33 Sapphire Patterns > Custom_Patterns > AppointmentIcon
      9.34 Sapphire Patterns > Custom_Patterns > BadgeClassification
      9.35 Sapphire Patterns > Custom_Patterns > BedInformation
      9.36 Sapphire Patterns > Custom_Patterns > BedSlotBox
@@ -131,7 +131,7 @@
      9.74 Sapphire Patterns > Draggable > DragableArea
      9.75 Sapphire Patterns > Draggable > DragContainer
      9.76 Sapphire Patterns > Draggable > DraggableLines
-     9.77 Sapphire Patterns > FileManipulation > MultipleFileUpload 
+     9.77 Sapphire Patterns > FileManipulation > MultipleFileUpload
      9.78 Sapphire Patterns > FlowDraw > Sketch
      9.79 Sapphire Patterns > Form > Horizontal
      9.80 Sapphire Patterns > Form > Vertical
@@ -220,7 +220,7 @@
      9.163 Sapphire Patterns > SessionList
      9.164 Sapphire Patterns > MultiSelect
      PatientCallCancel
-     
+
     $10. Custom Classes
      10.1 Sapphire Text Colors
      10.2 Sapphire Background Colors
@@ -233,13 +233,13 @@
      10.9 Sapphire Custom Classes
 
     $11. Studio Preview
-    
+
     $12. Print
-    
+
     $13. Arabic Sapphire Css
-    
-    $14 Service Studio Css 
-    
+
+    $14 Service Studio Css
+
     $15 Templates Sapphire
 
 */
@@ -1077,16 +1077,16 @@ body.ResizeParentIframe .MainContent {
     width: 100%;
 }
 
-.tablet .Toolbar.Fix {
-    /* position:sticky !important; */
-    top: 0px !important;
-}
+// .tablet .Toolbar.Fix {
+//     /* position:sticky !important; */
+//     top: 0px !important;
+// }
 
-.tablet.portrait .Toolbar.Fix {
-    margin: 0;
-    position: sticky !important;
+// .tablet.portrait .Toolbar.Fix {
+//     margin: 0;
+//     position: sticky !important;
 
-}
+// }
 
 
 
@@ -3272,13 +3272,13 @@ html .PatientDetailsLayout {
 
 /**************************Clinician & Emergency Layout **************************/
 
-.MenuItemWrapper {
-    background-color: #f7f4ef;
-    padding: 5px 10px 10px 10px;
-    position: relative;
-    text-align: center;
-    white-space: nowrap;
-}
+// .MenuItemWrapper {
+//     background-color: #f7f4ef;
+//     padding: 5px 10px 10px 10px;
+//     position: relative;
+//     text-align: center;
+//     white-space: nowrap;
+// }
 
 .MainContent>.ClinicianWorkArea {
     /*margin-top:-42px !important;*/
@@ -7555,7 +7555,7 @@ a.ActionDelete {
 }
 
 //  a.Button.XBig:hover:active,
-//  a.Button.XBig:focus, 
+//  a.Button.XBig:focus,
 //  a.Button.XBig:active,
 //  a.Button.XBig,
 //  a.Button.Second.XBig,
@@ -15517,7 +15517,7 @@ span:not(:last-of-type) .CompLine {
 }
 
 .tablet.portrait .PageHead>div {
-    /*display: block; 
+    /*display: block;
     white-space: nowrap;
     text-align: left;
     width: 100%;*/
@@ -21091,103 +21091,103 @@ body.confirmation-opened {
 
 /* 9.130 Sapphire Patterns > HorizontalToolbar_MenuItem ****/
 
-.MenuItemWrapper {
-    background-color: #f7f4ef;
-    border-top: 3px solid transparent;
-    padding: 5px 10px 8px 10px;
-    position: relative;
-    text-align: center;
-    white-space: nowrap;
+// .MenuItemWrapper {
+//     background-color: #f7f4ef;
+//     border-top: 3px solid transparent;
+//     padding: 5px 10px 8px 10px;
+//     position: relative;
+//     text-align: center;
+//     white-space: nowrap;
 
-}
+// }
 
-.MenuItemWrapper_Container {
-    color: #7c7f7f;
-    font-size: 12px;
-}
+// .MenuItemWrapper_Container {
+//     color: #7c7f7f;
+//     font-size: 12px;
+// }
 
-.MenuItemWrapper__icon,
-.MenuItemWrapper__icon .icon {
-    font-size: 22px;
-}
+// .MenuItemWrapper__icon,
+// .MenuItemWrapper__icon .icon {
+//     font-size: 22px;
+// }
 
-.MenuItemWrapper__Label {
-    font-size: 13px;
-    font-weight: 600;
-}
+// .MenuItemWrapper__Label {
+//     font-size: 13px;
+//     font-weight: 600;
+// }
 
-.MenuItemWrapper_Badge {
-    background-color: #cd0005;
-    border-radius: 100%;
-    color: #fff;
-    font-size: 10px;
-    height: 15px;
-    line-height: 15px;
-    position: absolute;
-    right: 1px;
-    top: 1px;
-    width: 15px;
-}
+// .MenuItemWrapper_Badge {
+//     background-color: #cd0005;
+//     border-radius: 100%;
+//     color: #fff;
+//     font-size: 10px;
+//     height: 15px;
+//     line-height: 15px;
+//     position: absolute;
+//     right: 1px;
+//     top: 1px;
+//     width: 15px;
+// }
 
-.FA .MenuItemWrapper_Badge,
-.AR .MenuItemWrapper_Badge {
-    left: 1px;
-    right: auto;
-}
+// .FA .MenuItemWrapper_Badge,
+// .AR .MenuItemWrapper_Badge {
+//     left: 1px;
+//     right: auto;
+// }
 
-.MenuItemWrapper.Active {
-    background-color: #ebebeb;
-    border-top: 3px solid #0da2aa;
-    color: #0da2aa;
-}
+// .MenuItemWrapper.Active {
+//     background-color: #ebebeb;
+//     border-top: 3px solid #0da2aa;
+//     color: #0da2aa;
+// }
 
-.MenuItemWrapper.Active .MenuItemWrapper_Container,
-.Toolbar.Fix .MenuItemWrapper.Active .MenuItemWrapper__Label {
-    color: #16979f;
-}
+// .MenuItemWrapper.Active .MenuItemWrapper_Container,
+// .Toolbar.Fix .MenuItemWrapper.Active .MenuItemWrapper__Label {
+//     color: #16979f;
+// }
 
-.Toolbar.Fix {
-    background-color: #f7f4ef;
-    border-bottom: 4px #c9cdce solid;
-    left: 0;
-    margin-left: 10px;
-    position: fixed;
-    z-index: 4
-        /*2 because ssd*/
-    ;
-}
+// .Toolbar.Fix {
+//     background-color: #f7f4ef;
+//     border-bottom: 4px #c9cdce solid;
+//     left: 0;
+//     margin-left: 10px;
+//     position: fixed;
+//     z-index: 4
+//         /*2 because ssd*/
+//     ;
+// }
 
-.FA .Toolbar.Fix,
-.AR .Toolbar.Fix {
-    left: auto;
-    right: 0;
-}
+// .FA .Toolbar.Fix,
+// .AR .Toolbar.Fix {
+//     left: auto;
+//     right: 0;
+// }
 
-.Toolbar.Fix .MenuItemWrapper.Active {
-    background-color: #ebebeb;
-    /* border-radius: 4px; */
-    border-top: 0;
-    /* padding-top: 4px; */
-    line-height: 24px;
-    padding-bottom: 4px;
-}
+// .Toolbar.Fix .MenuItemWrapper.Active {
+//     background-color: #ebebeb;
+//     /* border-radius: 4px; */
+//     border-top: 0;
+//     /* padding-top: 4px; */
+//     line-height: 24px;
+//     padding-bottom: 4px;
+// }
 
-.Toolbar.Fix .MenuItemWrapper {
-    padding-bottom: 4px;
-    padding-top: 4px;
-}
+// .Toolbar.Fix .MenuItemWrapper {
+//     padding-bottom: 4px;
+//     padding-top: 4px;
+// }
 
-.Toolbar.Fix .MenuItemWrapper__Label {
-    padding: 6px 0;
-}
+// .Toolbar.Fix .MenuItemWrapper__Label {
+//     padding: 6px 0;
+// }
 
-.Toolbar.Fix .Toolbar__Items {
-    padding-top: 2px;
-}
+// .Toolbar.Fix .Toolbar__Items {
+//     padding-top: 2px;
+// }
 
-.Toolbar.Fix .MenuItemWrapper {
-    padding-bottom: 1px;
-}
+// .Toolbar.Fix .MenuItemWrapper {
+//     padding-bottom: 1px;
+// }
 
 
 .CTTASLevelAssessmentMainContainer.Fix {
@@ -21205,118 +21205,118 @@ body.confirmation-opened {
 
 /* 9.131 Sapphire Patterns > HorizontalToolbar ****/
 
-.Toolbar {
-    width: 100%;
-}
+// .Toolbar {
+//     width: 100%;
+// }
 
-.Toolbar.Fix .MenuItemWrapper__icon {
-    display: none;
-}
+// .Toolbar.Fix .MenuItemWrapper__icon {
+//     display: none;
+// }
 
-.Toolbar.Fix .MenuItemWrapper__Label {
-    margin-top: 0;
-}
+// .Toolbar.Fix .MenuItemWrapper__Label {
+//     margin-top: 0;
+// }
 
-.Toolbar_container {
-    background-color: #f7f4ef;
-    margin-top: 15px;
-    position: relative;
-}
+// .Toolbar_container {
+//     background-color: #f7f4ef;
+//     margin-top: 15px;
+//     position: relative;
+// }
 
-.Toolbar__Items {
-    display: block;
-    overflow: hidden;
-    padding: 0 25px;
-}
+// .Toolbar__Items {
+//     display: block;
+//     overflow: hidden;
+//     padding: 0 25px;
+// }
 
-.desktop .Toolbar__Items a:not([disabled="disabled"]):hover,
-.desktop .Toolbar__Items a:link:hover,
-.desktop .Toolbar__Items a:visited:hover {
-    text-decoration: none;
-}
+// .desktop .Toolbar__Items a:not([disabled="disabled"]):hover,
+// .desktop .Toolbar__Items a:link:hover,
+// .desktop .Toolbar__Items a:visited:hover {
+//     text-decoration: none;
+// }
 
-.Toolbar__Items .ListRecords {
-    display: inline-flex;
+// .Toolbar__Items .ListRecords {
+//     display: inline-flex;
 
-}
+// }
 
-.Toolbar__leftBtn {
-    background-color: #fff;
-    border: 1px solid #c8d8dc;
-    cursor: pointer;
-    height: 60px;
-    left: 0;
-    position: absolute;
-    text-align: center;
-    top: 2px;
-    width: 23px;
-}
+// .Toolbar__leftBtn {
+//     background-color: #fff;
+//     border: 1px solid #c8d8dc;
+//     cursor: pointer;
+//     height: 60px;
+//     left: 0;
+//     position: absolute;
+//     text-align: center;
+//     top: 2px;
+//     width: 23px;
+// }
 
-.Toolbar__leftBtn:before {
-    color: #08a6b6;
-    content: "\e906";
-    font-family: "Sapphire-Icon-Font";
-    line-height: 60px;
-}
+// .Toolbar__leftBtn:before {
+//     color: #08a6b6;
+//     content: "\e906";
+//     font-family: "Sapphire-Icon-Font";
+//     line-height: 60px;
+// }
 
-.Toolbar__rightBtn {
-    background-color: #fff;
-    border: 1px solid #c8d8dc;
-    cursor: pointer;
-    height: 60px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 2px;
-    width: 23px;
-
-
-}
-
-.Toolbar__rightBtn:before {
-    color: #08a6b6;
-    content: "\e907";
-    font-family: "Sapphire-Icon-Font";
-    line-height: 60px;
-}
+// .Toolbar__rightBtn {
+//     background-color: #fff;
+//     border: 1px solid #c8d8dc;
+//     cursor: pointer;
+//     height: 60px;
+//     position: absolute;
+//     right: 0;
+//     text-align: center;
+//     top: 2px;
+//     width: 23px;
 
 
+// }
 
-.Toolbar__leftBtn.Disabled,
-.Toolbar__rightBtn.Disabled {
-    background-color: transparent;
-    pointer-events: none;
-}
+// .Toolbar__rightBtn:before {
+//     color: #08a6b6;
+//     content: "\e907";
+//     font-family: "Sapphire-Icon-Font";
+//     line-height: 60px;
+// }
 
-.Toolbar.Fix .Toolbar_container {
-    margin-top: 0;
-}
 
-.Toolbar.Fix .Toolbar__rightBtn,
-.Toolbar.Fix .Toolbar__leftBtn {
-    height: 36px;
-    top: 5px;
-}
 
-.Toolbar.Fix .Toolbar__rightBtn:before,
-.Toolbar.Fix .Toolbar__leftBtn:before {
-    line-height: 36px;
+// .Toolbar__leftBtn.Disabled,
+// .Toolbar__rightBtn.Disabled {
+//     background-color: transparent;
+//     pointer-events: none;
+// }
 
-}
+// .Toolbar.Fix .Toolbar_container {
+//     margin-top: 0;
+// }
 
-.tablet.portrait .Toolbar.Fix .MenuItemWrapper__icon {
-    display: block;
-}
+// .Toolbar.Fix .Toolbar__rightBtn,
+// .Toolbar.Fix .Toolbar__leftBtn {
+//     height: 36px;
+//     top: 5px;
+// }
 
-.tablet.portrait .Toolbar.Fix .Toolbar__rightBtn,
-.tablet.portrait .Toolbar.Fix .Toolbar__leftBtn {
-    height: 60px;
-}
+// .Toolbar.Fix .Toolbar__rightBtn:before,
+// .Toolbar.Fix .Toolbar__leftBtn:before {
+//     line-height: 36px;
 
-.tablet.portrait .Toolbar.Fix .Toolbar__rightBtn:before,
-.tablet.portrait .Toolbar.Fix .Toolbar__leftBtn:before {
-    line-height: 60px;
-}
+// }
+
+// .tablet.portrait .Toolbar.Fix .MenuItemWrapper__icon {
+//     display: block;
+// }
+
+// .tablet.portrait .Toolbar.Fix .Toolbar__rightBtn,
+// .tablet.portrait .Toolbar.Fix .Toolbar__leftBtn {
+//     height: 60px;
+// }
+
+// .tablet.portrait .Toolbar.Fix .Toolbar__rightBtn:before,
+// .tablet.portrait .Toolbar.Fix .Toolbar__leftBtn:before {
+//     line-height: 60px;
+// }
 
 /* 9.132 Sapphire Patterns > ActionsSubMenu ****/
 
@@ -21605,7 +21605,7 @@ body.confirmation-opened {
 
 // .FA .FullScreenTabs_tabCounter,
 // .AR .FullScreenTabs_tabCounter {
-//      left: 2px; 
+//      left: 2px;
 //      right:auto;
 //     }
 
@@ -21634,7 +21634,7 @@ body.confirmation-opened {
 // .tablet .TabWrapper {
 //     text-align: center;
 // }
-// .tablet .TabWrapper a, 
+// .tablet .TabWrapper a,
 // .tablet .TabWrapper a:link:hover,
 // .tablet .TabWrapper a:hover {
 //     padding: 0 20px;
@@ -22533,7 +22533,7 @@ body.confirmation-opened {
     font-weight: 400;
 }
 
-/**** scale inverticon 
+/**** scale inverticon
 
 .SelectableListWrapper___actionNotExpand .iconHorizontal{
     transform:scale(-1,1);
@@ -24683,7 +24683,7 @@ span.select2-container.select2-container--default.select2-container--open {
 }
 
 
-/*** 9.164 Sapphire Patterns > MultiSelect ** / 
+/*** 9.164 Sapphire Patterns > MultiSelect ** /
 /**
  * Multi Select
  */
@@ -25178,15 +25178,15 @@ span.select2-container.select2-container--default.select2-container--open {
 
 /*
 .OrangeTag{
-    background-color:#eab62b;   
+    background-color:#eab62b;
 }
 
 .GreenTag{
-    background-color:#169c20;   
+    background-color:#169c20;
 }
 
 .GreyTag{
-    background-color:#c9cdce;   
+    background-color:#c9cdce;
 }
 */
 
@@ -28650,7 +28650,7 @@ a.Button.MedInteractions:before {
 // }
 // .Button.Second.SearchMagnifier:after{
 //     content: "\e690";
-//     font-family: 'Sapphire-Icon-Font';    
+//     font-family: 'Sapphire-Icon-Font';
 // }
 
 .Page.isTouch .Button.Second.SearchMagnifier:focus,
@@ -28678,7 +28678,7 @@ a.Button.MedInteractions:before {
 }
 
 /*------------------------------------*\
-        $10.5. Sapphire Graphic Blocks 
+        $10.5. Sapphire Graphic Blocks
 \*-------------------------------------*/
 
 .GraphStructure>div:last-child {
@@ -28698,7 +28698,7 @@ a.Button.MedInteractions:before {
 
 
 /*------------------------------------------------------*\
-        $10.6. Sapphire Structure Presentation Classes 
+        $10.6. Sapphire Structure Presentation Classes
 \*------------------------------------------------------*/
 
 .tablet .ClinicProceduresListOPd>.SmallLeftColumns>.Column.ColFirst,
@@ -28707,7 +28707,7 @@ a.Button.MedInteractions:before {
 }
 
 /*------------------------------------------------------*\
-        $10.7. Sapphire Page Css Fix 
+        $10.7. Sapphire Page Css Fix
 \*------------------------------------------------------*/
 
 
@@ -32431,7 +32431,7 @@ div.LineInfo {
 
 
 /*------------------------------------*\
-        $14. Service Studio Css  
+        $14. Service Studio Css
 \*-------------------------------------*/
 * {
     -servicestudio-position: relative !important;
@@ -35390,23 +35390,23 @@ a.Button.DisplayBlock {
 
 
 
-/* ExcludeFromPickers: ActionAdd, ActionChange, ActionDelete, ActionEdit, Actions, Application_Menu, Badge, 
-Breadcrumbs, BreadcrumbsContainer, Content, ControlActions, desktop, EditableTable, EditRecord, EditRecord_Buttons, 
-fa, Feedback_AjaxWait, Feedback_Message_Error, Feedback_Message_Info, Feedback_Message_Success, Feedback_Message_Warning, 
-Feedback_Message_Wrapper, Feedback_Message_Wrapper_Close, Filters_Wrapper, 
-Footer, Form, Header, Header__activity, Header__loginInfo, Header_buttonMenu, Header_search, 
-Header_title, Header_user, HeaderPage, ie, ie10, ie11, ie8, InEditMode, ListNavigation_CurrentPageNumber, 
-ListNavigation_DisabledNext, ListNavigation_DisabledPrevious, ListNavigation_Ellipsis, ListNavigation_Next, ListNavigation_PageNumber, 
-ListNavigation_Previous, Loader, Login__Form, Login__Logo, Login_Box, Login_Footer, Login_Text, LoginInfo, LoginInfo_username, MainContent, 
-MainPopup, Menu, Menu_DropDownArrow, Menu_DropDownButton, Menu_DropDownPanel, Menu_SubItemsPlaceholder, Menu_SubMenuItem, 
-Menu_SubMenuItemActive, Menu_TopMenu, Menu_TopMenuActive, Menu_TopMenus, menuOpen, MenuSlider_Toggler, mini, Not_Valid, OnEdit, open, 
-OSAutoMarginTop, OSInlineClear, Page, phone, portait, Responsive, RowControlGroup, RowWithAddAction, select2-choice, select2-container, 
-Selected, ShowRecord, SmartInput_Undo, TableRecords, TableRecords_EvenLine, TableRecords_Header, TableRecords_OddLine, tablet, 
-ThemeGrid_Container, ThemeGrid_MarginGutter, ThemeGrid_Width12, ThemeGrid_Wrapper, Title, Title_Section, 
-MultiPaddingLeft5, MultiPaddingLeft10, MultiPaddingLeft15, MultiPaddingLeft20, MultiPaddingLeft25, MultiPaddingLeft30, 
-MultiPaddingLeft40, MultiPaddingRight5, MultiPaddingRight10, MultiPaddingRight15, MultiPaddingRight20, MultiPadding25, 
-MultiPaddingRight30, MultiPaddingRight40, MultiPadding5, MultiPadding10, MultiPadding15, MultiPadding20, MultiPadding25, 
-MultiPadding30, MultiPadding40, MultiPaddingTop5, MultiPaddingTop10, MultiPaddingTop15, MultiPaddingTop20, MultiPadding25, 
-MultiPaddingBottom5, MultiPaddingBottom10, MultiPaddingBottom15, MultiPaddingBottom20, MultiPaddingBottom25, MarginBottom5, 
-MarginBottom10, MarginBottom20, MultiMarginLeft3, MultiMarginLeft5, MultiMarginLeft10, MultiMarginLeft15, MultiMarginLeft20, 
+/* ExcludeFromPickers: ActionAdd, ActionChange, ActionDelete, ActionEdit, Actions, Application_Menu, Badge,
+Breadcrumbs, BreadcrumbsContainer, Content, ControlActions, desktop, EditableTable, EditRecord, EditRecord_Buttons,
+fa, Feedback_AjaxWait, Feedback_Message_Error, Feedback_Message_Info, Feedback_Message_Success, Feedback_Message_Warning,
+Feedback_Message_Wrapper, Feedback_Message_Wrapper_Close, Filters_Wrapper,
+Footer, Form, Header, Header__activity, Header__loginInfo, Header_buttonMenu, Header_search,
+Header_title, Header_user, HeaderPage, ie, ie10, ie11, ie8, InEditMode, ListNavigation_CurrentPageNumber,
+ListNavigation_DisabledNext, ListNavigation_DisabledPrevious, ListNavigation_Ellipsis, ListNavigation_Next, ListNavigation_PageNumber,
+ListNavigation_Previous, Loader, Login__Form, Login__Logo, Login_Box, Login_Footer, Login_Text, LoginInfo, LoginInfo_username, MainContent,
+MainPopup, Menu, Menu_DropDownArrow, Menu_DropDownButton, Menu_DropDownPanel, Menu_SubItemsPlaceholder, Menu_SubMenuItem,
+Menu_SubMenuItemActive, Menu_TopMenu, Menu_TopMenuActive, Menu_TopMenus, menuOpen, MenuSlider_Toggler, mini, Not_Valid, OnEdit, open,
+OSAutoMarginTop, OSInlineClear, Page, phone, portait, Responsive, RowControlGroup, RowWithAddAction, select2-choice, select2-container,
+Selected, ShowRecord, SmartInput_Undo, TableRecords, TableRecords_EvenLine, TableRecords_Header, TableRecords_OddLine, tablet,
+ThemeGrid_Container, ThemeGrid_MarginGutter, ThemeGrid_Width12, ThemeGrid_Wrapper, Title, Title_Section,
+MultiPaddingLeft5, MultiPaddingLeft10, MultiPaddingLeft15, MultiPaddingLeft20, MultiPaddingLeft25, MultiPaddingLeft30,
+MultiPaddingLeft40, MultiPaddingRight5, MultiPaddingRight10, MultiPaddingRight15, MultiPaddingRight20, MultiPadding25,
+MultiPaddingRight30, MultiPaddingRight40, MultiPadding5, MultiPadding10, MultiPadding15, MultiPadding20, MultiPadding25,
+MultiPadding30, MultiPadding40, MultiPaddingTop5, MultiPaddingTop10, MultiPaddingTop15, MultiPaddingTop20, MultiPadding25,
+MultiPaddingBottom5, MultiPaddingBottom10, MultiPaddingBottom15, MultiPaddingBottom20, MultiPaddingBottom25, MarginBottom5,
+MarginBottom10, MarginBottom20, MultiMarginLeft3, MultiMarginLeft5, MultiMarginLeft10, MultiMarginLeft15, MultiMarginLeft20,
 MultiMarginRight5, MultiMarginRight10, MultiMarginRight15, MultiMarginRight20,DeviceFullWidth,DeviceMiddleWidth*/

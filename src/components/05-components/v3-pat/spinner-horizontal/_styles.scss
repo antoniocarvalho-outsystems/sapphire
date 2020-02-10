@@ -6,7 +6,7 @@
 		cursor: pointer;
 		display: inline-block;
 		height: 36px;
-		transition: none;
+		transition: all 0.2s ease-in;
 		width: 36px;
 
 		&:not([disabled]):hover {
