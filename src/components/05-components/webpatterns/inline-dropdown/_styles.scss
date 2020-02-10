@@ -1,0 +1,13 @@
+.InlineDropdown .InlineDropdown_text {
+  color: $regular-alpha;
+  font-weight: 700;
+}
+
+.InlineDropdown .InlineDropdown_icon {
+  color: $regular-alpha;
+}
+
+.FA .InlineDropdown+.InlineDropdown,
+.AR .InlineDropdown+.InlineDropdown {
+  margin-left: 20px;
+}

@@ -7,7 +7,22 @@
 /* SapphireTheme Components */
 @import 'sapphire-theme/layout/style';
 
-/* V3Pat Components */
+
+/* RichWidgets Components */
+@import 'richwidgets/input-autocomplete/styles';
+
+
+/* WebPatterns Components */
+@import 'webpatterns/button-dropdown/styles';
+@import 'webpatterns/button-group/styles';
+@import 'webpatterns/icon-dropdown/styles';
+@import 'webpatterns/inline-dropdown/styles';
+@import 'webpatterns/search/styles';
+@import 'webpatterns/dropdown-menu/styles';
+
+
+
+/* V3_Pat Components */
 @import 'v3-pat/card-box/styles';
 @import 'v3-pat/clinical-badge/styles';
 @import 'v3-pat/demographic-item/styles';
@@ -20,10 +35,8 @@
 @import 'v3-pat/main-interactive-card/styles';
 @import 'v3-pat/main-menu/styles';
 @import 'v3-pat/multiple-selection-button/styles';
+@import 'v3-pat/navigation-control/styles';
+@import 'v3-pat/sapphire-radio-button/styles';
 @import 'v3-pat/sidebar/styles';
 @import 'v3-pat/spinner-horizontal/styles';
 @import 'v3-pat/tabs-extended/styles';
-
-/* RichWidgets Components */
-
-/* WebPatterns Components */

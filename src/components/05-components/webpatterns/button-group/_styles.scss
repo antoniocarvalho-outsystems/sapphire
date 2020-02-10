@@ -1,0 +1,173 @@
+$ButtonGroup-color-active: $regular-alpha;
+$ButtonGroup-color-hover: $regular-zeta;
+
+.ButtonGroupDark .ButtonGroup>label {
+  border-bottom: 1px solid #11455d;
+  border-left: 1px solid #11455d;
+  border-top: 1px solid #11455d;
+  color: #11455d;
+  display: inline-block;
+  font-size: 13px;
+  min-height: 35px;
+  overflow: hidden;
+  padding: 0 15px;
+  position: relative;
+  vertical-align: top;
+}
+
+.ButtonGroupDark.ButtonGroup_button.active,
+.desktop .ButtonGroup_button.active:hover {
+  background-color: $ButtonGroup-color-active;
+}
+
+.ButtonGroupDark .ButtonGroup_button:hover {
+  background-color: $ButtonGroup-color-hover;
+}
+
+.ButtonGroupDark .ButtonGroup_button>div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ButtonGroupDark .ButtonGroup_button span {
+  font-size: 14px;
+}
+
+.phone .ButtonGroupDark:not(.NoResponsive)>.ButtonGroup .ButtonGroup_button.Button:last-child,
+.phone .ButtonGroupDark:not(.NoResponsive)>.ButtonGroup .ButtonGroup_button.Button {
+  width: 0;
+}
+
+.ButtonGroupDark .ButtonGroup>label:first-child.active>* {
+  color: #fff;
+}
+
+.ButtonGroup_button.Button {
+  background-color: #fff;
+  border-bottom: 1px solid $ButtonGroup-color-active;
+  border-left: 1px solid $ButtonGroup-color-active;
+  border-top: 1px solid $ButtonGroup-color-active;
+  box-shadow: none;
+  color: $ButtonGroup-color-active;
+  display: inline-block;
+  font-family: LatoRegular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 33px;
+  min-height: 36px;
+  overflow: hidden;
+  position: relative;
+  text-shadow: none;
+  vertical-align: top;
+  width: auto;
+}
+
+.ButtonGroup_button.Button>span {
+  color: $ButtonGroup-color-active;
+}
+
+.ButtonGroup_button.Button:first-child {
+  border-bottom-left-radius: 4px;
+  border-left: 1px solid $ButtonGroup-color-active;
+  border-top-left-radius: 4px;
+}
+
+.ButtonGroup_button.Button:last-child {
+  border-bottom-right-radius: 4px;
+  border-right: 1px solid $ButtonGroup-color-active;
+  border-top-right-radius: 4px;
+}
+
+.ButtonGroup_button.Button:focus {
+  background-color: #fff;
+  border: 2px solid $ButtonGroup-color-active;
+  border-radius: 4px 0 0 4px;
+  color: #16979F;
+  line-height: 31px;
+}
+
+.ButtonGroup_button.active,
+.desktop .ButtonGroup_button.active:hover,
+.ButtonGroup_button.active:hover {
+  background-color: $ButtonGroup-color-hover;
+  border-bottom-width: 1px;
+  color: #fff;
+}
+
+
+.ButtonGroup_button.active span.fa,
+.desktop .ButtonGroup_button.active:hover span.fa {
+  color: #fff;
+}
+
+.ButtonGroup_button.Button:not(.active):hover {
+  background-color: $ButtonGroup-color-hover;
+}
+
+.ButtonGroup_button.active,
+.desktop .ButtonGroup_button.active:hover,
+.ButtonGroup_button.Button.active:hover {
+  background: none;
+  background-color: $ButtonGroup-color-active;
+  color: #fff;
+}
+
+.ButtonGroup_button.active a {
+  color: #fff;
+}
+
+.FileContainer .ButtonGroup_button.Button {
+  font-size: 24px;
+  height: 45px;
+  line-height: 45px;
+}
+
+.FA .ButtonGroup_button.Button,
+.AR .ButtonGroup_button.Button {
+  margin-right: 0;
+}
+
+.FA .ButtonGroup_button.Button:first-child,
+.AR .ButtonGroup_button.Button:first-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+}
+
+.FA .ButtonGroup_button.Button:last-child,
+.AR .ButtonGroup_button.Button:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+}
+
+.FA .ButtonGroup_button.Button:first-child,
+.AR .ButtonGroup_button.Button:first-child {
+  border-right-width: 1px;
+}
+
+.FA .ButtonGroup_button.Button:first-child,
+.AR .ButtonGroup_button.Button:first-child {
+  border-left: none;
+  border-right: 1px solid $ButtonGroup-color-active;
+}
+
+.FA.phone .ButtonGroup_button.Button,
+.FA.phone .ButtonGroup_button a.Button,
+.FA.mini.tablet .ButtonGroup_button.Button,
+.FA.mini.tablet .ButtonGroup_button a.Button,
+.AR.phone .ButtonGroup_button.Button,
+.AR.phone .ButtonGroup_button a.Button,
+.AR.mini.tablet .ButtonGroup_button.Button,
+.AR.mini.tablet .ButtonGroup_button a.Button {
+  border-right-width: 1px;
+}
+
+.FA .phone .ButtonGroup_button.Button,
+.FA .mini.tablet .ButtonGroup_button.Button,
+.AR .phone .ButtonGroup_button.Button,
+.AR .mini.tablet .ButtonGroup_button.Button {
+  border-right-width: 1px;
+}

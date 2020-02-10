@@ -1,0 +1,46 @@
+.DropdownMenu .PH>a {
+  color: #c3a300;
+}
+
+.DropdownMenu .PH>span a:hover {
+  background-color: #efefef;
+}
+
+.DropdownMenu .PH>span a {
+  display: block;
+  line-height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.DropdownMenu {
+  background-color: #fff;
+  top: 100%;
+  z-index: 2;
+}
+
+.desktop .DropdownMenu a,
+.tablet .DropdownMenu a,
+.phone .DropdownMenu a {
+  color: rgb(11, 55, 74);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.desktop .DropdownMenu a:hover,
+.desktop .DropdownMenu a:focus,
+.tablet .DropdownMenu a:hover,
+.tablet .DropdownMenu a:focus,
+.phone .DropdownMenu a:hover,
+.phone .DropdownMenu a:focus {
+  color: #0da2aa;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.FA .DropdownMenu,
+.AR .DropdownMenu {
+  left: auto;
+  right: 0;
+}
