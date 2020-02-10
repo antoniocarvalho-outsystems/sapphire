@@ -6416,43 +6416,43 @@ body .triggerTimeBack {
 
 /* SILK Patterns > ToggleButton */
 
-.ToggleButton {
-    background-color: transparent;
-    border: 0;
-    height: auto;
-    outline: 0;
-    transition: none;
-    width: auto;
-}
+// .ToggleButton {
+//     background-color: transparent;
+//     border: 0;
+//     height: auto;
+//     outline: 0;
+//     transition: none;
+//     width: auto;
+// }
 
-.ToggleButton.changed {
-    background-color: transparent;
-}
+// .ToggleButton.changed {
+//     background-color: transparent;
+// }
 
-.ToggleButton_label:after {
-    background-color: #0da2aa;
-    border-radius: 20px;
-    box-shadow: none;
-    right: 27px;
-    top: 5px;
-}
+// .ToggleButton_label:after {
+//     background-color: #0da2aa;
+//     border-radius: 20px;
+//     box-shadow: none;
+//     right: 27px;
+//     top: 5px;
+// }
 
-.ToggleButton_label.changed:after {
-    border-radius: 20px;
-    box-shadow: none;
-    left: 27px;
-    top: 5px;
-}
+// .ToggleButton_label.changed:after {
+//     border-radius: 20px;
+//     box-shadow: none;
+//     left: 27px;
+//     top: 5px;
+// }
 
-.ToggleButton_label {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 100px;
-}
+// .ToggleButton_label {
+//     background-color: #fff;
+//     border: 1px solid #ccc;
+//     border-radius: 100px;
+// }
 
-.ToggleButton_label.changed {
-    background-color: #0da2aa;
-}
+// .ToggleButton_label.changed {
+//     background-color: #0da2aa;
+// }
 
 
 
@@ -30968,21 +30968,21 @@ html .AR.tablet .ThemeGrid_Width12 {
     left: 11px;
 }
 
-.FA .ToggleButton_label,
-.AR .ToggleButton_label {
-    transition: right 0.15s ease-out;
-}
+// .FA .ToggleButton_label,
+// .AR .ToggleButton_label {
+//     transition: right 0.15s ease-out;
+// }
 
-.FA .ToggleButton_label:after,
-.AR .ToggleButton_label:after {
-    left: auto;
-    right: 5px;
-}
+// .FA .ToggleButton_label:after,
+// .AR .ToggleButton_label:after {
+//     left: auto;
+//     right: 5px;
+// }
 
-.FA .ToggleButton_label.changed:after,
-.AR .ToggleButton_label.changed:after {
-    right: 22px;
-}
+// .FA .ToggleButton_label.changed:after,
+// .AR .ToggleButton_label.changed:after {
+//     right: 22px;
+// }
 
 .FA .Badge,
 .AR .Badge {

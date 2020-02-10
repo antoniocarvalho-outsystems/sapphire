@@ -1,0 +1,77 @@
+.ToggleButton {
+	background-color: transparent;
+	border: 0;
+	box-sizing: border-box;
+	height: auto;
+	outline: 0;
+	transition: none;
+	width: auto;
+
+	&.changed {
+		background-color: transparent;
+	}
+
+	&_label {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 15px;
+		cursor: pointer;
+		display: block;
+		height: 30px;
+		position: relative;
+		transition: left 0.15s ease-out;
+		width: 50px;
+
+		&:after {
+			background-color: $regular-alpha;
+			border: none;
+			border-radius: 15px;
+			box-shadow: none;
+			content: ' ';
+			display: block;
+			height: 18px;
+			left: 5px;
+			position: absolute;
+			top: 5px;
+			transition: left 0.15s ease-out;
+			width: 18px;
+		}
+
+		&:hover {
+			background-color: $regular-eta;
+		}
+
+		&:focus {
+			border: 1px solid $dark-grey !important;
+		}
+
+		&.changed {
+			background-color: $regular-alpha;
+			border: 1px solid $regular-alpha;
+
+			&:after {
+				background-color: $regular-white;
+				height: 18px;
+				left: 25px;
+				width: 18px;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.ToggleButton_label,
+	.ToggleButton_label {
+		transition: right 0.15s ease-out;
+
+		&:after {
+			left: auto;
+			right: 5px;
+		}
+
+		&.changed:after {
+			right: 22px;
+		}
+	}
+}
