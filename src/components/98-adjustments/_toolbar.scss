@@ -2,20 +2,10 @@
 	&.portrait {
 		.Toolbar.Fix {
 			margin: 0;
-			position: sticky !important;
+			position: sticky;
 
 			.MenuItemWrapper__icon {
 				display: block;
-			}
-
-			.Toolbar__leftBtn,
-			.Toolbar__rightBtn {
-				height: 60px;
-			}
-
-			.Toolbar__leftBtn:before,
-			.Toolbar__rightBtn:before {
-				line-height: 60px;
 			}
 		}
 	}
