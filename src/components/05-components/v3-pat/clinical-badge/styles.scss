@@ -1,0 +1,30 @@
+.ClinicalBadge {
+  color: $gray-lighter;
+  height: 45px;
+  padding: 3px 5px;
+  position: relative;
+  width: 32px;
+
+  &.Transparent {
+    border: solid 1px #C9CDCE;
+    color: #ccc;
+  }
+
+  &-label {
+    bottom: 2px;
+    font-size: 12px;
+    left: 50%;
+    min-height: 16px;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  .icon {
+    font-size: 14px;
+    left: 50%;
+    position: absolute;
+    top: 6px;
+    transform: translateX(-50%);
+  }
+
+}

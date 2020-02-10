@@ -2,7 +2,7 @@ body,
 form,
 html,
 .Page {
-  font-family: $font-family;
+  font-family: $font-family-regular;
   font-size: 14px;
   height: 100%;
   position: relative;
@@ -18,12 +18,10 @@ body,
 input,
 select,
 textarea {
-  background-color: red;
   color: $dark-grey;
-  font-family: $font-family;
+  font-family: $font-family-regular;
   font-weight: normal;
   line-height: 1.43;
-  ;
 }
 
 a,

@@ -28,6 +28,11 @@
   white-space: nowrap;
 }
 
+.AR .SapphireHeader-demographics,
+.AR .SapphireHeader-demographics>div {
+  text-align: right;
+}
+
 .SapphireHeader-information,
 .SapphireHeader-information>div {
   display: block;
@@ -54,7 +59,7 @@
 .SapphireHeader-actions>div .ClinicalBadge,
 .SapphireHeader-actions>div .PatientMedicalFile {
   display: inline-block;
-  margin: 0 3px;
+  margin: 0 1px;
 }
 
 .SapphireHeader-actions>div .icon-cashkd {
