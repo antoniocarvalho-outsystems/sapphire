@@ -1,22 +1,9 @@
 @mixin common-toolbar-button-style($rotate-degree: 270deg) {
-	background-color: transparent;
-	border: 1px solid $regular-beta;
-	border-radius: 50%;
-	cursor: pointer;
-	height: 22px;
+	@include arrow-button;
 	position: absolute;
-	text-align: center;
+
 	top: 50%;
 	transform: translateY(-50%) rotate($rotate-degree);
-	width: 22px;
-	z-index: 1;
-
-	&:before {
-		color: $regular-beta;
-		content: '\e611';
-		font-family: 'Sapphire-Icon-Font';
-		font-size: 0.857em;
-	}
 }
 
 div.Toolbar {

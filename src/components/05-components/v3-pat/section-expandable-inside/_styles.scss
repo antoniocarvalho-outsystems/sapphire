@@ -1,0 +1,112 @@
+@mixin animation-arrow-button($rotate-degree: 0) {
+	transform: rotate($rotate-degree);
+	transition: all 0.5s;
+}
+
+.SectionExpandableInside {
+	background-color: $regular-white;
+
+	&.expanded {
+		.HeaderIcon {
+			@include animation-arrow-button(180deg);
+
+			position: relative;
+		}
+
+		.SectionExpandableInside_content {
+			border-bottom: 1px solid $light-grey;
+			height: auto;
+		}
+	}
+
+	.SectionExpandableInside_content {
+		height: 0;
+		overflow: hidden;
+		padding: 0;
+		visibility: initial;
+	}
+
+	.SectionExpandableInside_header {
+		border-bottom: 1px solid $light-grey;
+		color: $dark-grey;
+		cursor: pointer;
+		display: table;
+		height: 35px;
+		padding: 0;
+		position: relative;
+		width: 100%;
+
+		.HeaderIcon.open {
+			@include animation-arrow-button(0deg);
+		}
+
+		.HeaderIcon.closed {
+			@include animation-arrow-button(180deg);
+		}
+	}
+
+	.HeaderIcon {
+		@include animation-arrow-button(0deg);
+
+		cursor: pointer;
+		font-size: 0.857em;
+		position: relative;
+
+		span {
+			color: $regular-beta;
+			font-size: 0.7em;
+			line-height: 24px;
+			margin: 18px;
+		}
+	}
+
+	.RightAllPlaceDiv {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.ExapandablePlaceholder {
+		color: $dark-grey;
+		font-size: 1.071em;
+		font-weight: bold;
+		line-height: 30px;
+		margin-left: 10px;
+	}
+
+	.PlaceHolderActions {
+		display: table-cell;
+		padding-right: 5px;
+		vertical-align: middle;
+
+		> div:not(:first-child) {
+			margin-left: 10px;
+		}
+
+		span {
+			color: $regular-beta;
+		}
+	}
+
+	.SectionExpandable .SectionExpandableInside_header > div {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.AR,
+.FA {
+	.SectionExpandableInside .ExapandablePlaceholder {
+		margin-left: auto;
+		margin-right: 15px;
+	}
+
+	.SectionExpandableInside .PlaceHolderActions > div {
+		padding-left: 10px;
+		padding-right: 0;
+
+		&:not(:first-child) {
+			margin-left: auto;
+			margin-right: 10px;
+		}
+	}
+}

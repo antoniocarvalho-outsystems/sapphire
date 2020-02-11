@@ -3,235 +3,222 @@ $IconLabel-color-disabled: $mid-light-grey;
 $IconLabel-color-link: $regular-beta;
 $IconLabel-color-text: $dark-grey;
 
-
-
-
-
-.icon:after {
-  content: "N/A";
+// .IconVertical and .IconHorizontal
+@mixin common-icons-default-style {
+	&:hover {
+		text-decoration: none;
+	}
 }
 
-.IconVertical:hover,
-.IconHorizontal:hover {
-  text-decoration: none;
+// .iconVertical and .iconHorizontal
+@mixin common-icons-second-style {
+	&_icon {
+		color: $IconLabel-color-link;
+		font-weight: 600;
+
+		&.IconGreenColor {
+			color: $IconLabel-color-link;
+		}
+
+		&.IconYellowColor {
+			color: $regular-orange;
+		}
+
+		&.IconRedColor {
+			color: $regular-red;
+		}
+
+		&.IconSapphireWarningColor {
+			color: $dark-red;
+		}
+
+		&.IconOrangeColor {
+			color: $dark-orange;
+		}
+
+		&.AllGreenIcon .icon {
+			color: $IconLabel-color-link;
+		}
+	}
+
+	&_label {
+		color: $IconLabel-color-text;
+		font-weight: normal;
+		text-decoration: none;
+
+		&.LabelGreen {
+			color: $IconLabel-color-link;
+		}
+
+		&.LabelColorGreen {
+			color: $IconLabel-color-link;
+		}
+
+		&.LabelColorYellow {
+			color: $regular-orange;
+		}
+
+		&.LabelColorRed {
+			color: $regular-red;
+		}
+
+		&.LabelColorSapphireWarning {
+			color: $dark-red;
+		}
+
+		&.LabelColorOrange {
+			color: $dark-orange;
+		}
+	}
 }
 
 .IconVertical {
-  margin-right: 5px;
-  min-width: 50px;
+	@include common-icons-default-style;
+
+	margin-right: 5px;
+	min-width: 50px;
+
+	&.iconBorder {
+		padding: 0 5px 0 10px;
+	}
 }
 
-.IconVertical.iconBorder {
-  padding: 0 5px 0 10px;
+.iconVertical {
+	@include common-icons-second-style;
+
+	&_icon {
+		margin-bottom: 5px;
+
+		&.IconBlackColor {
+			color: $dark-grey;
+		}
+	}
 }
 
-.FA .IconVertical,
-.AR .IconVertical {
-  padding: 0 10px 0 5px;
+.IconHorizontal {
+	@include common-icons-default-style;
 }
 
 .iconHorizontal {
-  align-items: center;
-  display: inline-flex;
-  font-size: 1.2em;
-  justify-content: center;
+	@include common-icons-second-style;
+
+	align-items: center;
+	display: inline-flex;
+	font-size: 1em;
+	justify-content: center;
+
+	&.iconBorder {
+		padding: 0 5px 0 10px;
+	}
+
+	&_icon {
+		max-width: unset;
+		text-align: center;
+
+		&.IconBlackColor {
+			color: $dark-grey;
+			font-weight: bold;
+		}
+
+		span.icon {
+			display: inline-block;
+			margin-right: 4px;
+		}
+
+		span.icon.icon-lg {
+			margin-right: 4px;
+		}
+
+		span.icon.icon-1x {
+			margin-right: 4px;
+		}
+
+		span.icon.icon-2x {
+			margin-right: 7px;
+		}
+
+		span.icon.icon-3x {
+			margin-right: 5px;
+		}
+
+		span.icon.icon-4x {
+			margin-right: 5px;
+		}
+	}
 }
 
-.iconHorizontal.iconBorder {
-  padding: 0 5px 0 10px;
-}
+.InvertIconLabel {
+	.iconHorizontal {
+		text-align: left;
+		transform: scale(-1, 1);
 
-.iconHorizontal_icon {
-  max-width: unset;
-  text-align: center;
-}
+		&_icon {
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
 
-
-.iconHorizontal_icon span.icon {
-  display: inline-block;
-  margin-right: 4px;
-}
-
-.FA .iconHorizontal_icon span.icon,
-.AR .iconHorizontal_icon span.icon {
-  margin-left: 4px;
-}
-
-.iconHorizontal_icon span.icon.icon-lg {
-  margin-right: 4px;
-}
-
-.AR .iconHorizontal_icon span.icon.icon-lg {
-  margin-left: 4px;
-}
-
-.iconHorizontal_icon span.icon.icon-1x {
-  margin-right: 4px;
-}
-
-.iconHorizontal_icon span.icon.icon-1x {
-  margin-left: 4px;
-}
-
-.iconHorizontal_icon span.icon.icon-2x {
-  margin-right: 7px;
-}
-
-.AR .iconHorizontal_icon span.icon.icon-2x {
-  margin-left: 7px;
-}
-
-.iconHorizontal_icon span.icon.icon-3x {
-  margin-right: 5px;
-}
-
-.AR .iconHorizontal_icon span.icon.icon-3x {
-  margin-left: 5px;
-}
-
-.iconHorizontal_icon span.icon.icon-4x {
-  margin-right: 5px;
-}
-
-.AR .iconHorizontal_icon span.icon.icon-4x {
-  margin-left: 5px;
-}
-
-
-
-
-
-
-.iconHorizontal_icon,
-.iconVertical_icon {
-  color: $IconLabel-color-link;
-  font-weight: 600;
-}
-
-.iconVertical_icon {
-  margin-bottom: 5px;
-}
-
-.InvertIconLabel .iconHorizontal_icon {
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.FA .iconHorizontal_icon,
-.AR .iconHorizontal_icon {
-  margin-right: 0 !important;
-}
-
-.iconHorizontal_label,
-.iconVertical_label {
-  color: $IconLabel-color-text;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-
-.iconVertical_label.LabelGreen,
-.iconHorizontal_label.LabelGreen {
-  color: $IconLabel-color-link;
+		> div {
+			transform: scale(-1, 1);
+		}
+	}
 }
 
 .iconBorder {
-  border-left: solid 1px $IconLabel-color-border;
-  border-right: 0;
+	border-left: solid 1px $IconLabel-color-border;
+	border-right: 0;
 }
 
-.FA .iconBorder,
-.AR .iconBorder {
-  border-left: 0;
-  border-right: solid 1px $IconLabel-color-border;
+.iconLabel-disabled {
+	&,
+	.iconVertical_icon,
+	.iconHorizontal_icon,
+	.iconVertical_label.LabelGreen,
+	.iconHorizontal_label.LabelGreen,
+	.iconVertical_icon.AllGreenIcon .icon,
+	.iconHorizontal_icon.AllGreenIcon .icon {
+		color: $IconLabel-color-disabled !important;
+		cursor: auto;
+		pointer-events: none;
+	}
 }
 
-/*IconHorizontal*/
-.iconHorizontal_label.LabelColorGreen,
-.iconHorizontal_icon.IconGreenColor {
-  color: $IconLabel-color-link;
-
+.icon:after {
+	content: 'N/A';
 }
 
-.iconHorizontal_label.LabelColorYellow,
-.iconHorizontal_icon.IconYellowColor {
-  color: #FFA000;
-}
+.AR,
+.FA {
+	.IconVertical {
+		padding: 0 10px 0 5px;
+	}
 
-.iconHorizontal_label.LabelColorRed,
-.iconHorizontal_icon.IconRedColor {
-  color: #FF3E2D;
-}
+	.iconHorizontal_icon {
+		margin-right: 0 !important;
 
-.iconHorizontal_label.LabelColorSapphireWarning,
-.iconHorizontal_icon.IconSapphireWarningColor {
-  color: #CD0005;
-}
+		span.icon {
+			margin-left: 4px;
+		}
 
-.iconHorizontal_label.LabelColorOrange,
-.iconHorizontal_icon.IconOrangeColor {
-  color: #da6802;
-}
+		span.icon.icon-lg {
+			margin-left: 4px;
+		}
 
-.iconHorizontal_icon.IconBlackColor {
-  color: #11455D;
-  font-weight: bold;
-}
+		span.icon.icon-2x {
+			margin-left: 7px;
+		}
 
-/*IconVertical*/
-.iconVertical_label.LabelColorGreen,
-.iconVertical_icon.IconGreenColor {
-  color: $IconLabel-color-link;
+		span.icon.icon-3x {
+			margin-left: 5px;
+		}
 
-}
+		span.icon.icon-4x {
+			margin-left: 5px;
+		}
+	}
 
-.iconVertical_label.LabelColorYellow,
-.iconVertical_icon.IconYellowColor {
-  color: #FFA000;
-}
-
-.iconVertical_label.LabelColorRed,
-.iconVertical_icon.IconRedColor {
-  color: #FF3E2D;
-}
-
-.iconVertical_label.LabelColorSapphireWarning,
-.iconVertical_icon.IconSapphireWarningColor {
-  color: #CD0005;
-}
-
-.iconVertical_label.LabelColorOrange,
-.iconVertical_icon.IconOrangeColor {
-  color: #da6802;
-}
-
-.iconVertical_icon.IconBlackColor {
-  color: #11455D;
-}
-
-.iconHorizontal_icon.AllGreenIcon .icon,
-.iconVertical_icon.AllGreenIcon .icon {
-  color: $IconLabel-color-link;
-}
-
-.InvertIconLabel .iconHorizontal {
-  text-align: left;
-  transform: scale(-1, 1);
-}
-
-.InvertIconLabel .iconHorizontal>div {
-  transform: scale(-1, 1);
-}
-
-.iconLabel-disabled,
-.iconLabel-disabled .iconVertical_label.LabelGreen,
-.iconLabel-disabled .iconHorizontal_label.LabelGreen,
-.iconLabel-disabled .iconHorizontal_icon,
-.iconLabel-disabled .iconVertical_icon,
-.iconLabel-disabled .iconHorizontal_icon.AllGreenIcon .icon,
-.iconLabel-disabled .iconVertical_icon.AllGreenIcon .icon {
-  color: $IconLabel-color-disabled !important;
-  cursor: auto;
-  pointer-events: none;
+	.iconBorder {
+		border-left: 0;
+		border-right: solid 1px $IconLabel-color-border;
+	}
 }

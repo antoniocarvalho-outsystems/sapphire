@@ -7,10 +7,8 @@
 /* SapphireTheme Components */
 @import 'sapphire-theme/layout/style';
 
-
 /* RichWidgets Components */
 @import 'richwidgets/input-autocomplete/styles';
-
 
 /* WebPatterns Components */
 @import 'webpatterns/button-dropdown/styles';
@@ -19,8 +17,6 @@
 @import 'webpatterns/inline-dropdown/styles';
 @import 'webpatterns/search/styles';
 @import 'webpatterns/dropdown-menu/styles';
-
-
 
 /* V3_Pat Components */
 @import 'v3-pat/card-box/styles';
@@ -37,6 +33,8 @@
 @import 'v3-pat/multiple-selection-button/styles';
 @import 'v3-pat/navigation-control/styles';
 @import 'v3-pat/sapphire-radio-button/styles';
+@import 'v3-pat/section-expandable/styles';
+@import 'v3-pat/section-expandable-inside/styles';
 @import 'v3-pat/segmented-control/styles';
 @import 'v3-pat/sidebar/styles';
 @import 'v3-pat/spinner-horizontal/styles';

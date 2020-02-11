@@ -1,0 +1,23 @@
+.desktop:not(.hd) {
+	.SectionExpandableInside {
+		.RightAllPlaceDiv {
+			white-space: nowrap;
+
+			> div {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+
+		.RightAllPlaceDiv,
+		.PlaceHolderActions {
+			width: 50%;
+		}
+	}
+}
+
+.ListRecords {
+	.SectionExpandableInside.expanded .SectionExpandableInside_content {
+		border-bottom: none;
+	}
+}
