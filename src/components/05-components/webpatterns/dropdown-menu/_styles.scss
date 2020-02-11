@@ -1,9 +1,11 @@
 .DropdownMenu .PH>a {
-  color: #c3a300;
+  color: $sapphire-color-text-regular;
+  font-family: $font-family-bold;
 }
 
-.DropdownMenu .PH>span a:hover {
-  background-color: #efefef;
+.DropdownMenu .PH>a:hover {
+  background-color: $regular-eta;
+  color: $regular-beta;
 }
 
 .DropdownMenu .PH>span a {
@@ -20,24 +22,24 @@
   z-index: 2;
 }
 
-.desktop .DropdownMenu a,
-.tablet .DropdownMenu a,
-.phone .DropdownMenu a {
-  color: rgb(11, 55, 74);
-  font-size: 14px;
-  font-weight: 400;
-}
+// .desktop .DropdownMenu a,
+// .tablet .DropdownMenu a,
+// .phone .DropdownMenu a {
+//   color: $sapphire-color-text-regular;
+//   font-size: 14px;
+//   font-weight: 400;
+// }
 
-.desktop .DropdownMenu a:hover,
-.desktop .DropdownMenu a:focus,
-.tablet .DropdownMenu a:hover,
-.tablet .DropdownMenu a:focus,
-.phone .DropdownMenu a:hover,
-.phone .DropdownMenu a:focus {
-  color: #0da2aa;
-  font-size: 14px;
-  font-weight: 400;
-}
+// .desktop .DropdownMenu a:hover,
+// .desktop .DropdownMenu a:focus,
+// .tablet .DropdownMenu a:hover,
+// .tablet .DropdownMenu a:focus,
+// .phone .DropdownMenu a:hover,
+// .phone .DropdownMenu a:focus {
+//   color: $regular-beta;
+//   font-size: 14px;
+//   font-weight: 400;
+// }
 
 .FA .DropdownMenu,
 .AR .DropdownMenu {
