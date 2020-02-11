@@ -106,7 +106,8 @@
 	}
 
 	.ExpandableHeader {
-		display: table;
+		display: table-cell;
+		vertical-align: middle;
 
 		> div {
 			display: table-cell;

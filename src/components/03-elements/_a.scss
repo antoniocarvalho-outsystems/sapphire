@@ -1,7 +1,7 @@
 a {
 	&:link,
 	&:visited {
-		//color: #16979f;
+		color: $regular-beta;
 		font-family: $font-family-regular;
 		text-decoration: none;
 		transition: color 100ms ease;
