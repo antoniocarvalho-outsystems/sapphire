@@ -4,7 +4,7 @@ $MainInteractiveCard-color-disabled-background: $light-grey;
 $MainInteractiveCard-color-disabled: $mid-light-grey;
 $MainInteractiveCard-color-header: $dark-grey;
 $MainInteractiveCard-color-subtitle: $mid-dark-grey;
-$MainInteractiveCard-color-text: $dark-grey;
+$MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 
 
 .MainInteractiveCard-iframe-actions {
@@ -183,7 +183,7 @@ $MainInteractiveCard-color-text: $dark-grey;
 }
 
 .MainInteractiveCard-header-text-title {
-  color: $MainInteractiveCard-color-text;
+  color: $MainInteractiveCard-color-text-regular;
   font-size: 1.5em;
   line-height: 1.5;
   max-width: 99%;

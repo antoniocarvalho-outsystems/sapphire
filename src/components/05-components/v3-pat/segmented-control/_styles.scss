@@ -1,4 +1,6 @@
 $SegmentedControl-color-active: $regular-alpha;
+$SegmentedControl-color-hover: $regular-eta;
+
 
 
 .SegmentedControl {
@@ -35,7 +37,7 @@ $SegmentedControl-color-active: $regular-alpha;
 
 .SegmentedControlItem label:hover,
 .SegmentedControlItem label:focus {
-  background: #E6F3F5;
+  background: $SegmentedControl-color-hover;
 }
 
 .SegmentedControlItem>input[type="radio"]:checked~label,
@@ -90,7 +92,7 @@ $SegmentedControl-color-active: $regular-alpha;
 .Vertical .SegmentedControlItem,
 .SegmentedControlItem:last-child {
   border-bottom-right-radius: 5px;
-  border-right: solid 1px #0DA2AA;
+  border-right: solid 1px $SegmentedControl-color-active;
   border-top-right-radius: 5px;
 }
 
