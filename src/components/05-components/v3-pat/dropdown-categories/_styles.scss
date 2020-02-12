@@ -386,9 +386,9 @@ $font-size-18px: 1.2857em;
 			&[aria-disabled='true'] {
 				color: #999;
 			}
-			&[aria-selected='true'] {
-				background-color: #ddd;
-			}
+			// &[aria-selected='true'] {
+			// 	background-color: #ddd;
+			// }
 
 			.select2-results__option {
 				padding-left: 1em;

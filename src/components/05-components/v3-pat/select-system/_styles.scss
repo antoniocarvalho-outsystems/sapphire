@@ -5,6 +5,9 @@
 		.select2-selection--multiple.tagCustom {
 			border: 1px solid color(light-grey);
 			font-family: 'LatoBold';
+			&:focus {
+				border: 1px solid color(light-grey);
+			}
 		}
 		.select2-selection--single {
 			height: 36px;
@@ -44,7 +47,7 @@
 				&:before {
 					color: color(sapphire-dark-grey);
 					content: '\e690';
-					font-family: $font-family-icons;
+					font-family: 'Sapphire-Icon-Font';
 					font-size: 16px;
 					font-style: normal;
 					font-variant: normal;
@@ -208,7 +211,7 @@
 			&:after {
 				color: color(regular-grey);
 				content: '\e690';
-				font-family: $font-family-icons;
+				font-family: 'Sapphire-Icon-Font';
 				font-size: 18px;
 				position: absolute;
 				right: 10px;
@@ -256,8 +259,8 @@
 				background-color: color(regular-eta);
 
 				&:before {
-					background-color: color(regular-eta);
-					color: color(dark-grey);
+					background-color: color(sapphire-white);
+					color: color(regular-beta);
 					content: '\f00c';
 					display: inline-block;
 					font-family: FontAwesome;
