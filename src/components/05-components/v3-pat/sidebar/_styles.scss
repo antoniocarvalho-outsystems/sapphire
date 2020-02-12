@@ -26,7 +26,7 @@ $font-size-11px: 0.7857em;
 		}
 
 		.Dropdown {
-			background-image: url('https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/sidebarArrow.png');
+			background-image: url($icon-arrow-sideBar);
 			cursor: pointer;
 		}
 		.TextInput,

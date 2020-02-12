@@ -12,8 +12,7 @@
 
 .Dropdown {
 	background-color: $regular-white;
-	// @TODO: how do we host images?
-	background-image: url('https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/dropdown_bg.png');
+	background-image: url($icon-arrow-up-down);
 	background-position: right 14px center;
 	background-repeat: no-repeat;
 	border: 1px solid $light-grey;
@@ -24,6 +23,8 @@
 	height: 36px;
 	line-height: 18px;
 	padding: 8px 45px 8px 10px;
+	// @TODO: how do we host images?
+	//@include upDownArrows;
 
 	&:hover {
 		background-color: $regular-eta;

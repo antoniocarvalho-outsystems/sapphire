@@ -329,8 +329,9 @@ $font-size-18px: 1.2857em;
 		}
 
 		&.select2-container--focus {
+			.select2-selection--single,
 			.select2-selection--multiple {
-				border: solid black 1px;
+				border: 1px solid color(regular-beta);
 				outline: 0;
 			}
 		}
