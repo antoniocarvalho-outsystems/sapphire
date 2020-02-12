@@ -1,0 +1,152 @@
+.Counter {
+	&.Highlight {
+		background-color: $regular-red;
+		border-radius: 50%;
+		color: $regular-white;
+		font-size: 0.857em;
+		font-weight: normal;
+		height: 20px;
+		line-height: 19px;
+		text-align: center;
+		width: 20px;
+	}
+
+	&.Min {
+		background-color: $light-green;
+		border-top: 2px solid $dark-green;
+		color: $dark-green;
+	}
+
+	&.Med {
+		background-color: #e6e2aa;
+		border-top: 2px solid #928d09;
+		color: #928d09;
+	}
+
+	&.Maj {
+		background-color: #ffdede;
+		border-top: 2px solid #9f000f;
+		color: #9f000f;
+	}
+
+	&.Vacant {
+		background: #c2dea8;
+		border-top: 3px solid #859765;
+		color: #426a20;
+	}
+
+	&.Reserved {
+		background: #e6e2a3;
+		border-top: 3px solid #8c8b53;
+		color: #75742e;
+	}
+
+	&.Planned {
+		background: #dde2e6;
+		border-top: 3px solid #8a99a3;
+		color: #758792;
+	}
+
+	&.SapphireColor,
+	.Tile.SapphireColor {
+		background-color: $regular-white;
+		border-bottom: 0;
+		border-top: 2px solid #00b3bd;
+	}
+
+	&.Black,
+	.Tile.Black {
+		background-color: $regular-white;
+		border-bottom-color: #131819;
+	}
+
+	&.Blue,
+	.Tile.Blue {
+		background-color: $regular-white;
+		border-bottom-color: #0074c1;
+	}
+
+	&.DarkBlue,
+	.Tile.DarkBlue {
+		background-color: $regular-white;
+		border-bottom-color: #194968;
+	}
+
+	&.DarkPlum,
+	.Tile.DarkPlum {
+		background-color: $regular-white;
+		border-bottom-color: #970263;
+	}
+
+	&.DarkRed,
+	.Tile.DarkRed {
+		background-color: $regular-white;
+		border-bottom-color: #b10000;
+	}
+
+	&.Gray,
+	.Tile.Gray {
+		background-color: $regular-white;
+		border-bottom-color: #79868a;
+	}
+
+	&.Green,
+	.Tile.Green {
+		background-color: $regular-white;
+		border-bottom-color: #388e3c;
+	}
+
+	&.LightGreen,
+	.Tile.LightGreen {
+		background-color: $regular-white;
+		border-bottom-color: #c2dea8;
+	}
+
+	&.Orange,
+	.Tile.Orange {
+		background-color: $regular-white;
+		border-bottom-color: #da6802;
+	}
+
+	&.Plum,
+	.Tile.Plum {
+		background-color: $regular-white;
+		border-bottom-color: #c32b87;
+	}
+
+	&.Red,
+	.Tile.Red {
+		background-color: $regular-white;
+		border-bottom-color: #d01a1a;
+	}
+
+	&.Silver,
+	.Tile.Silver {
+		background-color: $regular-white;
+		border-bottom-color: #dadbde;
+	}
+
+	&.Transparent,
+	.Tile.Transparent {
+		background-color: $regular-white;
+		border-bottom-color: transparent;
+	}
+
+	&.Turquoise,
+	.Tile.Turquoise {
+		background-color: $regular-white;
+		border-bottom-color: #00b0c1;
+	}
+
+	&.White,
+	.Tile.White {
+		background-color: $regular-white;
+		border-bottom-color: $regular-white;
+	}
+
+	&.Yellow,
+	.Tile.Yellow {
+		background-color: $regular-white;
+		border-bottom-color: #eabd30;
+	}
+}
