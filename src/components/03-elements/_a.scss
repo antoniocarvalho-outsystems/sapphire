@@ -1,11 +1,10 @@
 a {
-
-  &:link,
-  &:visited {
-    color: $regular-beta;
-    font-family: $font-family-regular;
-    text-decoration: none;
-  }
+	&:link,
+	&:visited {
+		color: $regular-beta;
+		font-family: $font-family-regular;
+		text-decoration: none;
+	}
 }
 
 // .desktop {

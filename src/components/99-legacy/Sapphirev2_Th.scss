@@ -21720,6 +21720,7 @@ body.confirmation-opened {
 /* 9.135 Sapphire Patterns > Timeline ****/
 
 /* wb TimelineDaySparator */
+<<<<<<< HEAD
 .TimelineDetail_content {
 	background-color: #ebebeb;
 	color: #113041;
@@ -21729,6 +21730,17 @@ body.confirmation-opened {
 	min-height: 40px;
 	padding-left: 20px;
 }
+=======
+// .TimelineDetail_content {
+//     background-color: #ebebeb;
+//     color: #113041;
+//     font-size: 16px;
+//     font-weight: 700;
+//     line-height: 40px;
+//     min-height: 40px;
+//     padding-left: 20px;
+// }
+>>>>>>> 5e0f7fa081bf9b20a2c234fac6e17c7b17d93c73
 
 .VisitDetailLogsListRecords {
 	border-bottom: 1px solid #c9cdce;
@@ -21738,11 +21750,19 @@ body.confirmation-opened {
 	border: 0;
 }
 
+<<<<<<< HEAD
 .FA .TimelineDetail_content,
 .AR .TimelineDetail_content {
 	padding-left: auto;
 	padding-right: 20px;
 }
+=======
+// .FA .TimelineDetail_content,
+// .AR .TimelineDetail_content {
+//     padding-left: auto;
+//     padding-right: 20px;
+// }
+>>>>>>> 5e0f7fa081bf9b20a2c234fac6e17c7b17d93c73
 
 /* wb TimelineDescriptionBlock */
 .TimelineDescription {
@@ -21851,14 +21871,15 @@ body.confirmation-opened {
 }
 
 /* wb TimelineHospitalizationDetail */
-.TimelineDetail {
-    background-color: transparent;
-    display: table;
-    min-height: 40px;
-    padding: 10px 0;
-    width: 100%;
-}
+// .TimelineDetail {
+//     background-color: transparent;
+//     display: table;
+//     min-height: 40px;
+//     padding: 10px 0;
+//     width: 100%;
+// }
 
+<<<<<<< HEAD
 .TimelineDetail:not(:first-child) {
 	border-top: 1px solid #c9cdce;
 }
@@ -21903,6 +21924,54 @@ body.confirmation-opened {
 .AR .TimelineDetail_rightContent {
 	padding: 15px 10px 15px 20px;
 }
+=======
+// .TimelineDetail:not(:first-child) {
+//     border-top: 1px solid #c9cdce;
+// }
+
+// .TimelineDetail:last-child {
+//     border-bottom: 1px solid #c9cdce;
+// }
+
+// .TimelineDetail_leftContent {
+//     color: #262626;
+//     display: table-cell;
+//     font-weight: 700;
+//     min-width: 90px;
+//     text-align: center;
+//     width: 1%;
+//     /*  vertical-align:  middle;*/
+// }
+
+
+
+// .FA .TimelineDetail_leftContent,
+// .AR .TimelineDetail_leftContent {
+//     margin-left: auto;
+//     margin-right: 5px;
+//     padding-left: auto;
+//     padding-right: 10px;
+// }
+
+// .TimelineDetail__time {
+//     font-size: 14px;
+//     margin-bottom: 10px;
+// }
+
+// .TimelineDetail__label {
+//     text-align: center;
+// }
+
+// .TimelineDetail_rightContent {
+//     display: table-cell;
+//     /*padding: 10px;*/
+// }
+
+// .FA .TimelineDetail_rightContent,
+// .AR .TimelineDetail_rightContent {
+//     padding: 15px 10px 15px 20px;
+// }
+>>>>>>> 5e0f7fa081bf9b20a2c234fac6e17c7b17d93c73
 
 /* wb TimelineItemLineLeftContent */
 .TimelineItemLineLeftContent {
@@ -22279,9 +22348,15 @@ body.confirmation-opened {
 }
 
 /** ImeLine in VisitDetails **/
+<<<<<<< HEAD
 .VisitDetails .TimelineDetail_leftContent {
 	vertical-align: middle;
 }
+=======
+// .VisitDetails .TimelineDetail_leftContent {
+//     vertical-align: middle;
+// }
+>>>>>>> 5e0f7fa081bf9b20a2c234fac6e17c7b17d93c73
 
 /*
 .VisitDetails .TimelineDetail_leftContent div:nth-child(2){

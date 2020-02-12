@@ -20,6 +20,8 @@
       position: static;
 
       &.isFixed {
+        border-bottom: solid 2px $light-grey;
+        border-top: solid 2px $regular-alpha;
         position: fixed;
         z-index: 6;
       }
@@ -49,16 +51,18 @@
 
       &.isFixed .Toolbar_container {
         margin-top: 0;
+        padding-top: 0;
       }
 
       &.isFixed .Toolbar__Items a {
-        line-height: 31px;
+        display: block;
+        height: 44px;
+        line-height: 41px;
       }
 
       &.isFixed .LayoutBase-secondary-menu,
       &.isFixed .LayoutBase-secondary-aside {
-        // border-bottom: 4px solid $light-grey;
-        height: 50px;
+        height: 44px;
       }
 
       &.noToolbar .LayoutBase-secondary-menu,
@@ -67,7 +71,6 @@
       }
 
       &.isFixed .Toolbar .MenuItemWrapper {
-        border-top: none;
         padding: 0 10px;
       }
 
@@ -81,7 +84,7 @@
     }
 
     .LayoutBase-secondary-menu {
-      background-color: #fff;
+      background-color: #fff !important;
       width: 67%;
     }
 

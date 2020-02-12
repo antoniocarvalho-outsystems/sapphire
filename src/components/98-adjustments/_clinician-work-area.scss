@@ -4,30 +4,19 @@
 			margin-top: 0 !important;
 
 			.ExpandableContent:hover {
-				background-color: #eeeae3;
+				background-color: $body-color;
 			}
 
 			.SeparatorBorder:first-of-type {
 				display: none;
 			}
-
-			// .MultiMarginBottomSmall {
-			// 	&::after {
-			// 		background-color: $regular-white;
-			// 		content: ' ';
-			// 		display: inline-block;
-			// 		height: 2px;
-			// 		margin: 18px -15px 15px -15px;
-			// 		width: 110%;
-			// 	}
-			// }
 		}
 
 		.SectionExpandableCustom {
 			&.expanded {
 				.SectionExpandableCustom_content:empty {
-					color: #5f6f79;
-					font-size: 14px;
+					color: $sapphire-grey-blue;
+					font-size: 1em;
 					padding: 42px;
 					text-align: center;
 
@@ -37,9 +26,33 @@
 				}
 			}
 
+			&--backgroundTransparent {
+				.BottomBorderGrey {
+					border-bottom: 1px solid transparent;
+				}
+			}
+
+			.SectionExpandable___icon {
+				padding: 0;
+			}
+
+			.SectionExpandable_headerCustom {
+				height: 42px;
+			}
+
 			.SectionExpandableCustom_content:empty {
 				height: auto !important;
 				padding: 0;
+			}
+
+			.SectionExpandableInside {
+				.HeaderIcon span {
+					margin: 5px;
+				}
+
+				.ExapandablePlaceholder {
+					color: $regular-beta;
+				}
 			}
 		}
 	}
