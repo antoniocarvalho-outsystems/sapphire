@@ -38,6 +38,9 @@
 			&.select2-selection--multiple {
 				.select2-selection__rendered {
 					padding: 0 10px;
+					> li:nth-child(n + 2) {
+						display: none;
+					}
 				}
 			}
 		}
