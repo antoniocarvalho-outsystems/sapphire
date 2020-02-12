@@ -4,7 +4,7 @@
 	&:not(&--textTrigger) &__InputContainer:before {
 		color: $regular-alpha;
 		content: '\e62a';
-		font-family: 'Sapphire-Icon-Font';
+		font-family: $font-family-icons;
 		position: absolute;
 		right: 9px;
 		top: 50%;
@@ -54,7 +54,7 @@
 	&__ButtonClear {
 		color: $regular-alpha;
 		cursor: pointer;
-		font-family: 'Sapphire-Icon-Font';
+		font-family: $font-family-icons;
 		font-size: inherit;
 		-webkit-font-smoothing: antialiased;
 		font-style: normal;

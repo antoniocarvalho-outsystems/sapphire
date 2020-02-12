@@ -120,7 +120,7 @@ a.Button {
 
 			&:after {
 				content: '\e690';
-				font-family: 'Sapphire-Icon-Font';
+				font-family: $font-family-icons;
 			}
 		}
 	}

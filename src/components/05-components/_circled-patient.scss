@@ -1,0 +1,21 @@
+.CircledPatient {
+	background-color: $light-grey;
+	border-radius: 50%;
+	color: $mid-dark-grey;
+	font-size: 10px;
+	height: 30px;
+	line-height: 30px;
+	padding: 3px 0px;
+	text-align: center;
+	width: 30px;
+
+	&.Male {
+		background-color: #ccd7dc;
+		color: $sapphire-male;
+	}
+
+	&.Female {
+		background-color: #dcccdb;
+		color: $sapphire-female;
+	}
+}
