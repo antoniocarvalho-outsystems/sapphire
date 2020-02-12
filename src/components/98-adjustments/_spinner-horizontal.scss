@@ -1,0 +1,12 @@
+.phone,
+.tablet {
+	.SpinnerInput_Container {
+		.Plus,
+		.Minus {
+			&,
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.DropdownMenu .PH>a {
+  color: $sapphire-color-text-regular;
+  font-family: $font-family-bold;
+}
+
+.DropdownMenu .PH>a:hover {
+  background-color: $regular-eta;
+  color: $regular-beta;
+}
+
+.DropdownMenu .PH>span a {
+  display: block;
+  line-height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.DropdownMenu {
+  background-color: #fff;
+  top: 100%;
+  z-index: 2;
+}
+
+// .desktop .DropdownMenu a,
+// .tablet .DropdownMenu a,
+// .phone .DropdownMenu a {
+//   color: $sapphire-color-text-regular;
+//   font-size: 14px;
+//   font-weight: 400;
+// }
+
+// .desktop .DropdownMenu a:hover,
+// .desktop .DropdownMenu a:focus,
+// .tablet .DropdownMenu a:hover,
+// .tablet .DropdownMenu a:focus,
+// .phone .DropdownMenu a:hover,
+// .phone .DropdownMenu a:focus {
+//   color: $regular-beta;
+//   font-size: 14px;
+//   font-weight: 400;
+// }
+
+.FA .DropdownMenu,
+.AR .DropdownMenu {
+  left: auto;
+  right: 0;
+}

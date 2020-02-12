@@ -2,26 +2,26 @@ body,
 form,
 html,
 .Page {
-	font-family: $font-family;
-	font-size: 14px;
-	height: 100%;
-	position: relative;
+  font-family: $font-family-regular;
+  font-size: 14px;
+  height: 100%;
+  position: relative;
 }
 
 body {
-	background-color: $body-color;
-	overflow-x: hidden;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: $body-color;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body,
 input,
 select,
 textarea {
-	color: $dark-grey;
-	font-family: $font-family;
-	font-weight: normal;
-	line-height: 1.43;
+  color: $dark-grey;
+  font-family: $font-family-regular;
+  font-weight: normal;
+  line-height: 1.43;
 }
 
 a,
@@ -46,9 +46,9 @@ th,
 thead,
 tr,
 ul {
-	outline: 0 !important;
+  outline: 0 !important;
 }
 
 div[onclick] {
-	cursor: pointer;
+  cursor: pointer;
 }

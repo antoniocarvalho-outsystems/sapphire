@@ -1,0 +1,26 @@
+.tablet {
+	&.portrait {
+		.Toolbar.Fix {
+			margin: 0;
+			position: sticky;
+
+			.MenuItemWrapper__icon {
+				display: block;
+			}
+		}
+	}
+
+	.Toolbar.Fix {
+		top: 0px !important;
+	}
+}
+
+.desktop {
+	.Toolbar__Items {
+		a:link:hover,
+		a:visited:hover,
+		a:not([disabled='disabled']):hover {
+			text-decoration: none;
+		}
+	}
+}

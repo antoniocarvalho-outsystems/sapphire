@@ -1,0 +1,85 @@
+.SpinnerInput_Container {
+	& > a {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		color: $regular-alpha;
+		cursor: pointer;
+		display: inline-block;
+		height: 36px;
+		transition: all 0.2s ease-in;
+		width: 36px;
+
+		&:not([disabled]):hover {
+			background-color: $regular-eta;
+			border: 1px solid $regular-beta;
+		}
+
+		&:not([disabled]):focus {
+			border: 1px solid $dark-grey;
+		}
+
+		&:not([disabled]):active {
+			border: 1px solid $regular-alpha;
+		}
+
+		&[disabled] {
+			background-color: $sapphire-light;
+			border: 1px solid $light-grey;
+			color: $light-grey;
+			cursor: default;
+		}
+
+		&.Plus:before,
+		&.Minus:before {
+			display: block;
+			font-family: Sapphire-Icon-Font;
+			font-size: 1.429em;
+			line-height: 34px;
+			text-align: center;
+		}
+	}
+
+	.SpinnerInput input[type] {
+		padding: 0 2px;
+		width: 36px;
+
+		&:not(:focus),
+		&:disabled {
+			border-left: none !important;
+			border-right: none !important;
+		}
+	}
+
+	.Minus {
+		border-radius: 3px 0 0 3px;
+
+		&:before {
+			content: '\e68f';
+		}
+	}
+
+	.Plus {
+		border-radius: 0 3px 3px 0;
+
+		&:before {
+			content: '\e698';
+		}
+	}
+}
+
+.FA,
+.AR {
+	.SpinnerInput_Container {
+		.SpinnerInput input.Mandatory {
+			border-right: none;
+		}
+
+		.Minus {
+			border-radius: 0 3px 3px 0;
+		}
+
+		.Plus {
+			border-radius: 3px 0 0 3px;
+		}
+	}
+}

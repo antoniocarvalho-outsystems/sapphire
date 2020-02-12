@@ -1,0 +1,60 @@
+$ButtonCheckbox-color-active: $regular-alpha;
+$ButtonCheckbox-color-hover: $regular-zeta;
+
+
+.MultipleSelectionButton-label {
+  display: block;
+}
+
+.ButtonCheckboxInp {
+  height: 34px;
+  margin-right: 6px;
+  padding: 0;
+  position: relative;
+}
+
+.ButtonCheckboxInp.isFullWidth {
+  display: block;
+}
+
+.ButtonCheckboxInput_CheckBox {
+  left: 8px;
+  position: absolute;
+  top: 6px;
+}
+
+.ButtonCheckboxInp.active>.ButtonCheckboxInput_CheckBox~label:hover,
+.ButtonCheckboxInp.active>.ButtonCheckboxInput_CheckBox~label {
+  background-color: $ButtonCheckbox-color-active;
+  border: 1px solid $ButtonCheckbox-color-active;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.ButtonCheckboxInp>.ButtonCheckboxInput_CheckBox~label {
+  background-color: #fff;
+  border: 1px solid $ButtonCheckbox-color-active;
+  border-radius: 5px;
+  color: $ButtonCheckbox-color-active;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 10px 6px 35px;
+}
+
+.ButtonCheckboxInp.isFullWidth>.ButtonCheckboxInput_CheckBox~label {
+  display: inline-block;
+  width: 100%;
+}
+
+.ButtonCheckboxInp>.ButtonCheckboxInput_CheckBox~label:hover {
+  background-color: $ButtonCheckbox-color-hover;
+}
+
+.ButtonCheckboxInp.disabled>.ButtonCheckboxInput_CheckBox:hover,
+.ButtonCheckboxInp.disabled>.ButtonCheckboxInput_CheckBox~label {
+  background: $sapphire-color-disabled-background;
+  border-color: $sapphire-color-disabled-border;
+  color: $sapphire-color-disabled-text;
+  cursor: default;
+  pointer-events: none;
+}

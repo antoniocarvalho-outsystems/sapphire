@@ -1,0 +1,164 @@
+.HeaderIdentification {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+
+  &-photo {
+    background-color: #fafafa;
+    position: relative;
+  }
+
+  &-names {
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+}
+
+.AR .HeaderIdentification {
+  padding-left: 100px;
+  padding-right: 0;
+
+  .HeaderIdentification-names {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+}
+
+
+
+
+.HeaderIdentification-photo .PhotoFrameMonths {
+  display: flex;
+  height: 50px;
+  position: static;
+  width: 60px;
+
+  .Canvas .PhotoFrame {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    height: 50px;
+    padding: 0;
+    position: static;
+    width: 60px;
+
+    .PatientGender {
+      height: auto;
+      left: 50%;
+      line-height: 30px;
+      position: absolute;
+      transform: translateX(-50%);
+      width: auto;
+
+      &.Unidentified {
+        background-color: #ededed;
+        color: #d2d2d2;
+      }
+
+      &.Male {
+        background-color: #ccd7dc;
+        color: #11394f;
+      }
+
+      &.Female {
+        background-color: #dcccdb;
+        color: #6f4065;
+      }
+    }
+
+    .PatientGender img {
+      border-radius: 50%;
+      left: 50%;
+      max-height: 45px;
+      max-width: 45px;
+      position: absolute;
+      top: 5px;
+      transform: translateX(-50%);
+    }
+  }
+
+  .PatientHeaderPhotoAge {
+    bottom: 2px;
+    font-weight: 700;
+    left: 50%;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    position: absolute;
+    transform: translateX(-50%);
+
+    .AgeDisplaySingleValue {
+      background-color: #eee;
+      border-radius: 15px;
+      font-size: .8rem;
+      min-width: 40px;
+      text-align: center;
+    }
+
+    .age-range {
+      font-size: .8rem;
+      line-height: normal;
+    }
+  }
+
+}
+
+
+.HeaderIdentification-primary {
+  align-items: center;
+  display: flex;
+
+  &-name {
+    font-family: 'LatoBold';
+    font-size: 1.5rem;
+  }
+}
+
+
+.HeaderIdentification-primary-otherinformation {
+  margin-left: 5px;
+}
+
+.AR .HeaderIdentification-primary-otherinformation {
+  margin-left: 0;
+  margin-right: 5px;
+
+  .ActionsMenu-label {
+    margin: 0;
+  }
+
+}
+
+.HeaderIdentification-secondary {
+  align-items: center;
+  display: flex;
+}
+
+.HeaderIdentification-secondary-name {
+  flex-basis: 100%;
+  font-size: 15px;
+
+  >div {
+    display: block;
+  }
+}
+
+.HeaderIdentification-secondary .FlagWrapper {
+  margin-left: 5px;
+  vertical-align: middle;
+
+  .FlagContainer {
+    height: 16px;
+    line-height: normal;
+    width: 22px;
+
+    .flag {
+      bottom: auto;
+      position: static;
+    }
+  }
+
+
+}
