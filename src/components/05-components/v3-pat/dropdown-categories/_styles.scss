@@ -388,6 +388,7 @@ $font-size-18px: 1.2857em;
 	}
 	.select2-results {
 		> .select2-results__options {
+			border-top: 1px solid color(light-grey);
 			max-height: 200px;
 			overflow-y: auto;
 		}
