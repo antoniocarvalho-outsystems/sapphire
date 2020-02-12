@@ -22,3 +22,20 @@
 		background-color: $regular-eta;
 	}
 }
+
+@mixin upDownArrows {
+	background-color: color(sapphire-white);
+	background-image: url('https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/upDownArrows.png');
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	border: none;
+	content: '';
+	height: 30px;
+	left: auto;
+	margin: 0;
+	position: absolute;
+	right: 20px;
+	top: 1px;
+	width: 10px;
+}
