@@ -173,7 +173,7 @@ input[type]:not([type='checkbox']):not([type='radio']) {
   background-color: $regular-white;
   border: 1px solid $light-grey;
   border-radius: 2px;
-  box-shadow: inset 0 1px 3px 0 $body-color;
+  // box-shadow: inset 0 1px 3px 0 $body-color;
   box-sizing: border-box;
   font-size: 1em;
   height: 36px;

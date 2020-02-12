@@ -1,143 +1,140 @@
 .SapphireHeader {
-	background-color: #fff;
-	position: relative;
+  background-color: #fff;
+  position: relative;
 }
 
 .SapphireHeader-body {
-	align-items: center;
-	// border-bottom: solid 1px #ddd;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	min-height: 80px;
-	padding: 10px 16px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 80px;
+  padding: 10px 16px;
 }
 
 .PatientDetails___topPatientHeader.TopPatientHeader .SapphireHeader-body {
-	min-height: 74px;
+  min-height: 74px;
 }
 
 .SapphireHeader-identification {
-	height: 50px;
+  height: 50px;
 }
 
 .SapphireHeader-demographics,
-.SapphireHeader-demographics > div {
-	flex-grow: 2;
-	text-align: left;
-	white-space: nowrap;
+.SapphireHeader-demographics>div {
+  flex-grow: 2;
+  text-align: left;
+  white-space: nowrap;
 }
 
 .AR .SapphireHeader-demographics,
-.AR .SapphireHeader-demographics > div {
-	text-align: right;
+.AR .SapphireHeader-demographics>div {
+  text-align: right;
 }
 
 .SapphireHeader-information,
-.SapphireHeader-information > div {
-	display: block;
+.SapphireHeader-information>div {
+  display: block;
 }
 
-.SapphireHeader-information > div .ClinicalInformation {
-	margin-left: 3px;
-	margin-right: 3px;
+.SapphireHeader-information>div .ClinicalInformation {
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
-.SapphireHeader-actions > div {
-	align-items: center;
-	display: flex;
-	white-space: nowrap;
+.SapphireHeader-actions>div {
+  align-items: center;
+  display: flex;
+  white-space: nowrap;
 }
 
-.SapphireHeader-actions > div > div,
-.SapphireHeader-actions > div > span {
-	display: block;
-	margin: 0;
-	padding: 0;
+.SapphireHeader-actions>div>div,
+.SapphireHeader-actions>div>span {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-.SapphireHeader-actions > div .ClinicalBadge,
-.SapphireHeader-actions > div .PatientMedicalFile {
-	display: inline-block;
-	margin: 0 1px;
+.SapphireHeader-actions>div .ClinicalBadge,
+.SapphireHeader-actions>div .PatientMedicalFile {
+  display: inline-block;
+  margin: 0 1px;
 }
 
-.SapphireHeader-actions > div .icon-cashkd {
-	margin: 0 1px 0 4px;
+.SapphireHeader-actions>div .icon-cashkd {
+  margin: 0 1px 0 4px;
 }
 
-.SapphireHeader-actions > div .ActionsMenu .ActionsMenu-label {
-	margin: 0;
+.SapphireHeader-actions>div .ActionsMenu .ActionsMenu-label {
+  margin: 0;
 }
 
 .SapphireHeader-additional-trigger {
-	background-color: #fff;
-	border: solid 1px #eee;
-	border-radius: 20px;
-	cursor: pointer;
-	display: none;
-	font-size: 10px;
-	left: 50%;
-	margin-top: -10px;
-	padding: 3px 20px 3px 6px;
-	position: absolute;
-	transform: translateX(-50%);
+  background-color: #fff;
+  border: solid 1px #eee;
+  border-radius: 20px;
+  cursor: pointer;
+  display: none;
+  font-size: 10px;
+  left: 50%;
+  margin-top: -10px;
+  padding: 3px 20px 3px 6px;
+  position: absolute;
+  transform: translateX(-50%);
 }
 
 .SapphireHeader-additional-trigger:after {
-	color: #999;
-	content: '\e610';
-	font-family: $font-family-icons;
-	font-size: 9px;
-	position: absolute;
-	right: 6px;
-	top: 5px;
-	transition: all 0.5s ease;
+  color: #999;
+  content: '\e610';
+  font-family: $font-family-icons;
+  font-size: 9px;
+  position: absolute;
+  right: 6px;
+  top: 5px;
+  transition: all 0.5s ease;
 }
 
 .SapphireHeader.isOpen .SapphireHeader-additional-trigger:after {
-	top: 3px;
-	transform: rotate(180deg);
+  top: 3px;
+  transform: rotate(180deg);
 }
 
 .SapphireHeader-additional-content {
-	border-bottom: solid 1px #ddd;
-	display: none;
-	min-height: 50px;
-	padding-left: 16px;
-	padding-right: 16px;
-	padding-top: 10px;
-	transition: all 0.4s ease;
+  border-bottom: solid 1px #ddd;
+  display: none;
+  min-height: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  transition: all 0.4s ease;
 }
 
 .SapphireHeader.isOpen .SapphireHeader-additional-content {
-	display: block;
+  display: block;
 }
 
 .SapphireHeader .Demographic-item {
-	display: inline-block;
-	display: none;
-	margin: 0 10px;
-	vertical-align: middle;
+  display: inline-block;
+  display: none;
+  margin: 0 10px;
+  vertical-align: middle;
 }
 
 .SapphireHeader .SapphireHeader-additional-content .Demographic-item {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.SapphireHeader
-	.SapphireHeader-additional-content
-	.Demographic-item:first-child {
-	margin-left: 0;
+.SapphireHeader .SapphireHeader-additional-content .Demographic-item:first-child {
+  margin-left: 0;
 }
 
 @media (max-width: 1280px) {
-	.SapphireHeader-information {
-		order: 1;
-		width: 100%;
-	}
+  .SapphireHeader-information {
+    order: 1;
+    width: 100%;
+  }
 
-	.SapphireHeader-information > div {
-		display: block;
-	}
+  .SapphireHeader-information>div {
+    display: block;
+  }
 }
