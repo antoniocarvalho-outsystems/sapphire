@@ -107,10 +107,10 @@
 	.BedImage {
 		color: $mid-dark-grey;
 		line-height: normal;
-		margin-right: 7px;
 
 		.icon {
 			font-size: 1.4em;
+			margin-right: 7px;
 		}
 	}
 
@@ -143,6 +143,7 @@
 	.SlotText {
 		@include flex-center-vertically;
 
+		margin-right: 10px;
 		white-space: nowrap;
 
 		.BedNumber {
@@ -153,13 +154,14 @@
 
 .AR,
 .FA {
-	.BedBoxContainer {
-		min-height: 55px;
+	.SlotText {
+		margin-left: 10px;
+		margin-right: 0;
 	}
 
 	.SlotAvailabilityText {
-		margin-left: 8px;
-		margin-right: auto;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.BedImage {
