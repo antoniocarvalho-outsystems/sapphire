@@ -1,0 +1,6 @@
+@mixin absolute-center($axisX: 50%, $axisY: 50%) {
+  left: $axisX;
+  position: absolute;
+  top: $axisY;
+  transform: translate(-$axisX, -$axisY);
+}

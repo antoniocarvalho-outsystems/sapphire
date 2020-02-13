@@ -1,0 +1,68 @@
+.Feedback_AjaxWait {
+  background-color: $regular-alpha;
+  border-radius: 3px;
+  bottom: 10px;
+  color: #fff;
+  font-size: 9px;
+  padding: 10px;
+  position: fixed;
+  right: 10px;
+  text-transform: uppercase;
+  z-index: 10000;
+}
+
+.FA .Feedback_AjaxWait,
+.AR .Feedback_AjaxWait {
+  left: 250px;
+  right: auto;
+}
+
+.Feedback_AjaxWait .Loader {
+  -webkit-animation-duration: 1000ms;
+  -moz-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+  margin-bottom: 0;
+  vertical-align: bottom;
+  width: 55px;
+}
+
+.Feedback_AjaxWait .Loader:before {
+  color: #fff;
+  content: '\e655';
+  display: inline-block;
+  font-family: 'Sapphire-Icon-Font';
+  font-size: 45px;
+  line-height: 1.2;
+  line-height: 50px;
+}
+
+.LayoutBlank.SidebarIframe.phone~.Feedback_AjaxWait {
+  color: transparent;
+}
+
+.LayoutBlank.SidebarIframe.phone~.Feedback_AjaxWait,
+.LayoutBlank.SidebarIframe.phone~.Feedback_AjaxWait .Loader {
+  width: 10px;
+}
+
+.LayoutBlank.SidebarIframe.phone~.Feedback_AjaxWait .Loader:before {
+  font-size: 15px;
+  line-height: 20px;
+  margin-left: -10px;
+}
+
+.FA .Feedback_AjaxWait,
+.AR .Feedback_AjaxWait {
+  left: 10px;
+  right: auto;
+}
