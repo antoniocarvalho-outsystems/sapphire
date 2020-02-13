@@ -7149,77 +7149,77 @@ a .ListItem:after {
 // }
 
 /* SILK Patterns > Wizard */
-.WizardParent {
-	border: 1px solid #e2e2e2;
-	border-radius: 4px;
-}
+// .WizardParent {
+// 	border: 1px solid #e2e2e2;
+// 	border-radius: 4px;
+// }
 
-.WizardStep {
-	display: table-cell;
-	font-weight: 400;
-}
+// .WizardStep {
+// 	display: table-cell;
+// 	font-weight: 400;
+// }
 
-.WizardStep a,
-.WizardStep a:link,
-.WizardStep a[disabled='disabled'],
-.WizardStep a[disabled='disabled']:hover {
-	color: #79868a;
-	font-size: 12px;
-	font-weight: 400;
-}
+// .WizardStep a,
+// .WizardStep a:link,
+// .WizardStep a[disabled='disabled'],
+// .WizardStep a[disabled='disabled']:hover {
+// 	color: #79868a;
+// 	font-size: 12px;
+// 	font-weight: 400;
+// }
 
-.WizardStep:before {
-	border-bottom-width: 19px;
-	border-top-width: 19px;
-}
+// .WizardStep:before {
+// 	border-bottom-width: 19px;
+// 	border-top-width: 19px;
+// }
 
-.WizardStep.Past a,
-.WizardStep.Past a:link,
-.WizardStep.Past a[disabled='disabled'],
-.WizardStep.Past a[disabled='disabled']:hover {
-	color: #fff;
-	font-size: 12px;
-	font-weight: normal;
-}
+// .WizardStep.Past a,
+// .WizardStep.Past a:link,
+// .WizardStep.Past a[disabled='disabled'],
+// .WizardStep.Past a[disabled='disabled']:hover {
+// 	color: #fff;
+// 	font-size: 12px;
+// 	font-weight: normal;
+// }
 
-.WizardStep.Past {
-	background-color: #355264;
-	color: #fff;
-}
+// .WizardStep.Past {
+// 	background-color: #355264;
+// 	color: #fff;
+// }
 
-.WizardStep.Past:before {
-	border-bottom-color: #355264;
-	border-top-color: #355264;
-}
+// .WizardStep.Past:before {
+// 	border-bottom-color: #355264;
+// 	border-top-color: #355264;
+// }
 
-.WizardStep.Past:after {
-	border-right-color: #fff;
-	border-top-color: #fff;
-}
+// .WizardStep.Past:after {
+// 	border-right-color: #fff;
+// 	border-top-color: #fff;
+// }
 
-.WizardStep.ActiveStep {
-	background-color: #253b4a;
-	color: #fff;
-	font-size: 12px;
-	font-weight: normal;
-}
+// .WizardStep.ActiveStep {
+// 	background-color: #253b4a;
+// 	color: #fff;
+// 	font-size: 12px;
+// 	font-weight: normal;
+// }
 
-.WizardStep.ActiveStep a,
-.WizardStep.ActiveStep a:link,
-.WizardStep.ActiveStep a[disabled='disabled'],
-.WizardStep.ActiveStep a[disabled='disabled']:hover {
-	color: #fff;
-}
+// .WizardStep.ActiveStep a,
+// .WizardStep.ActiveStep a:link,
+// .WizardStep.ActiveStep a[disabled='disabled'],
+// .WizardStep.ActiveStep a[disabled='disabled']:hover {
+// 	color: #fff;
+// }
 
-.WizardStep.ActiveStep:before {
-	border-bottom-color: #253b4a;
-	border-top-color: #253b4a;
-}
+// .WizardStep.ActiveStep:before {
+// 	border-bottom-color: #253b4a;
+// 	border-top-color: #253b4a;
+// }
 
-.WizardStep:after {
-	height: 35px;
-	right: 7px;
-}
+// .WizardStep:after {
+// 	height: 35px;
+// 	right: 7px;
+// }
 
 /*------------------------------------*\
       $8. Usefull Classes
@@ -15173,53 +15173,53 @@ span:not(:last-of-type) .CompLine {
 /* 9.48 Sapphire Patterns > Custom_Patterns > Icon_Wizard ******************************/
 /*-------------------------------------------------------------------------------------*/
 
-.IconWizard {
-	border: 1px solid #355264;
-	border-color: #355264;
-	border-radius: 50%;
-	color: #355264;
-	font-family: globeregular;
-	font-size: 12px;
-	height: 21px;
-	line-height: 18px;
-	margin-right: 10px;
-	text-align: center;
-	vertical-align: middle;
-	width: 21px;
-}
+// .IconWizard {
+// 	border: 1px solid #355264;
+// 	border-color: #355264;
+// 	border-radius: 50%;
+// 	color: #355264;
+// 	font-family: globeregular;
+// 	font-size: 12px;
+// 	height: 21px;
+// 	line-height: 18px;
+// 	margin-right: 10px;
+// 	text-align: center;
+// 	vertical-align: middle;
+// 	width: 21px;
+// }
 
-.AR .IconWizard,
-.FA .IconWizard {
-	margin-left: 4px;
-	margin-right: auto;
-}
+// .AR .IconWizard,
+// .FA .IconWizard {
+// 	margin-left: 4px;
+// 	margin-right: auto;
+// }
 
-.WizardStep.ActiveStep .IconWizard {
-	background-color: #21afb7;
-	border: 1px solid rgb(141, 190, 204);
-	color: #fff;
-}
+// .WizardStep.ActiveStep .IconWizard {
+// 	background-color: #21afb7;
+// 	border: 1px solid rgb(141, 190, 204);
+// 	color: #fff;
+// }
 
-.WizardStep.Past .IconWizard {
-	background-color: #21afb7;
-	border: 1px solid rgb(141, 190, 204);
-	color: #fff;
-}
+// .WizardStep.Past .IconWizard {
+// 	background-color: #21afb7;
+// 	border: 1px solid rgb(141, 190, 204);
+// 	color: #fff;
+// }
 
 /*IconWizardWhite*/
-.IconWizard.IconWizardWhite {
-	background-color: #fff;
-	border: 1px solid #e2e2e2;
-	color: #21afb7;
-	font-weight: 600;
-}
+// .IconWizard.IconWizardWhite {
+// 	background-color: #fff;
+// 	border: 1px solid #e2e2e2;
+// 	color: #21afb7;
+// 	font-weight: 600;
+// }
 
-.WizardStep.ActiveStep .IconWizard.IconWizardWhite,
-.WizardStep.Past .IconWizard.IconWizardWhite {
-	background-color: #fff;
-	border: 1px solid #e2e2e2;
-	color: #21afb7;
-}
+// .WizardStep.ActiveStep .IconWizard.IconWizardWhite,
+// .WizardStep.Past .IconWizard.IconWizardWhite {
+// 	background-color: #fff;
+// 	border: 1px solid #e2e2e2;
+// 	color: #21afb7;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.49 Sapphire Patterns > Custom_Patterns > Interaction ******************************/
@@ -24922,40 +24922,40 @@ span.select2-container.select2-container--default.select2-container--open {
 /*9.159 Sapphire Patterns > MultipleSelectionButton */
 
 /* 9.160 Sapphire Patterns > WizardParent_Extended */
-.WizardStep.Past a,
-.WizardStep.Past a:link,
-.WizardParent_Container .WizardStep,
-.WizardParent_Container .WizardStep a {
-	color: #16979f;
-	font-size: 14px;
-	font-weight: 600;
-}
+// .WizardStep.Past a,
+// .WizardStep.Past a:link,
+// .WizardParent_Container .WizardStep,
+// .WizardParent_Container .WizardStep a {
+// 	color: #16979f;
+// 	font-size: 14px;
+// 	font-weight: 600;
+// }
 
-.WizardParent_Container .WizardStep.Past,
-.WizardParent_Container .WizardStep.Past a {
-	background-color: #e6f3f5;
-}
+// .WizardParent_Container .WizardStep.Past,
+// .WizardParent_Container .WizardStep.Past a {
+// 	background-color: #e6f3f5;
+// }
 
-.WizardParent_Container .WizardStep.Past:before {
-	border-bottom-color: #e6f3f5;
-	border-top-color: #e6f3f5;
-}
+// .WizardParent_Container .WizardStep.Past:before {
+// 	border-bottom-color: #e6f3f5;
+// 	border-top-color: #e6f3f5;
+// }
 
-.WizardParent_Container .WizardStep.Past:after {
-	border-right-color: #c2e1e7;
-	border-top-color: #c2e1e7;
-}
+// .WizardParent_Container .WizardStep.Past:after {
+// 	border-right-color: #c2e1e7;
+// 	border-top-color: #c2e1e7;
+// }
 
-.WizardParent_Container .WizardStep.ActiveStep,
-.WizardParent_Container .WizardStep.ActiveStep a {
-	background-color: #c2e1e7;
-	color: #333;
-}
+// .WizardParent_Container .WizardStep.ActiveStep,
+// .WizardParent_Container .WizardStep.ActiveStep a {
+// 	background-color: #c2e1e7;
+// 	color: #333;
+// }
 
-.WizardParent_Container .WizardStep.ActiveStep:before {
-	border-bottom-color: #c2e1e7;
-	border-top-color: #c2e1e7;
-}
+// .WizardParent_Container .WizardStep.ActiveStep:before {
+// 	border-bottom-color: #c2e1e7;
+// 	border-top-color: #c2e1e7;
+// }
 
 /* 9.161 Sapphire Patterns > IconLink */
 
@@ -31418,17 +31418,17 @@ html .AR.tablet .ThemeGrid_Width12 {
 
 /*wizard*/
 
-.WizardStep.LastStep:after,
-.WizardStep.ActiveStep:after,
-.WizardStep.HideArrow:after {
-	border-right: 1px solid #e2e2e2;
+// .WizardStep.LastStep:after,
+// .WizardStep.ActiveStep:after,
+// .WizardStep.HideArrow:after {
+// 	border-right: 1px solid #e2e2e2;
 
-	border-top: 1px solid #e2e2e2;
-}
+// 	border-top: 1px solid #e2e2e2;
+// }
 
-.WizardStep:last-child:after {
-	border: 0;
-}
+// .WizardStep:last-child:after {
+// 	border: 0;
+// }
 
 .FA .Button,
 .FA .Ara.Button,
@@ -31758,36 +31758,36 @@ html .AR.tablet .ThemeGrid_Width12 {
 	transform: scaleX(-1);
 }
 
-.FA .WizardStep a,
-.FA .WizardStep a:link,
-.AR .WizardStep a,
-.AR .WizardStep a:link {
-	padding-left: 20px;
-}
+// .FA .WizardStep a,
+// .FA .WizardStep a:link,
+// .AR .WizardStep a,
+// .AR .WizardStep a:link {
+// 	padding-left: 20px;
+// }
 
-.FA .WizardStep:after,
-.AR .WizardStep:after {
-	border-left: 1px solid #e2e2e2;
-	border-right: none;
-	left: 8px;
-	right: auto;
-	transform: rotate(315deg);
-}
+// .FA .WizardStep:after,
+// .AR .WizardStep:after {
+// 	border-left: 1px solid #e2e2e2;
+// 	border-right: none;
+// 	left: 8px;
+// 	right: auto;
+// 	transform: rotate(315deg);
+// }
 
-.FA .WizardStep:before,
-.AR .WizardStep:before {
-	border-right: 20px solid transparent;
-	right: -20px;
-}
+// .FA .WizardStep:before,
+// .AR .WizardStep:before {
+// 	border-right: 20px solid transparent;
+// 	right: -20px;
+// }
 
-.FA .WizardStep.LastStep:after,
-.FA .WizardStep.ActiveStep:after,
-.FA .WizardStep.HideArrow:after,
-.AR .WizardStep.LastStep:after,
-.AR .WizardStep.ActiveStep:after,
-.AR .WizardStep.HideArrow:after {
-	border: none;
-}
+// .FA .WizardStep.LastStep:after,
+// .FA .WizardStep.ActiveStep:after,
+// .FA .WizardStep.HideArrow:after,
+// .AR .WizardStep.LastStep:after,
+// .AR .WizardStep.ActiveStep:after,
+// .AR .WizardStep.HideArrow:after {
+// 	border: none;
+// }
 
 .FA .PatternsIndex img,
 .AR .PatternsIndex img {
@@ -33273,9 +33273,9 @@ div.LineInfo {
 	-servicestudio-width: 30% !important;
 }
 
-.WizardStep {
-	-servicestudio-width: 40%;
-}
+// .WizardStep {
+// 	-servicestudio-width: 40%;
+// }
 
 .BadgeClassification {
 	-servicestudio-background: red;
