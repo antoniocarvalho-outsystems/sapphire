@@ -1,6 +1,7 @@
 .ClinicalBadge {
+  border-radius: 2px;
   color: $gray-lighter;
-  height: 45px;
+  height: 50px;
   padding: 3px 5px;
   position: relative;
   width: 32px;
@@ -11,7 +12,7 @@
   }
 
   &-label {
-    bottom: 2px;
+    bottom: 5px;
     font-size: 12px;
     left: 50%;
     min-height: 16px;
@@ -23,8 +24,19 @@
     font-size: 14px;
     left: 50%;
     position: absolute;
-    top: 6px;
+    top: 10px;
     transform: translateX(-50%);
+  }
+
+}
+
+.PatientHabitsContainer {
+
+  height: 50px;
+
+  >.OSInline {
+    display: inline-block;
+    vertical-align: middle;
   }
 
 }

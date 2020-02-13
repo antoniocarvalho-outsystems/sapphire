@@ -5,424 +5,432 @@ $font-size-13px: 0.92em;
 $font-size-11px: 0.7857em;
 
 .ISidebar {
-	display: flex;
+  display: flex;
 
-	.ISidebar-content {
-		.SegmentedControl {
-			.ButtonGroup_button.Button {
-				background-color: color(sapphire-grey-blue);
-				border: none;
-				border-radius: 4px;
-				&:active,
-				&.active {
-					background-color: color(regular-alpha);
-					color: color(sapphire-white);
-					font-weight: bold;
-				}
-				label {
-					color: color(light-grey) !important;
-				}
-			}
-		}
+  .ISidebar-content {
+    .SegmentedControl {
+      .ButtonGroup_button.Button {
+        background-color: $sapphire-grey-blue;
+        border: none;
+        border-radius: 4px;
 
-		.Dropdown {
-			background-image: url('https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/sidebarArrow.png');
-			cursor: pointer;
-		}
-		.TextInput,
-		.Dropdown {
-			background-color: color(sapphire-grey-blue);
-			border: none;
-			color: color(light-grey);
-		}
-		.TextInput {
-			&:focus {
-				box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
-					0px 0px 2px 1px color(regular-alpha);
-			}
-			&::placeholder {
-				color: color(light-grey);
-			}
-		}
-	}
+        &:active,
+        &.active {
+          background-color: $regular-alpha;
+          color: $sapphire-white;
+          font-weight: bold;
+        }
 
-	.DepartmentName {
-		color: color(light-grey);
-		font-size: $font-size-11px;
-		line-height: 1em;
-		margin-top: 5px;
-		max-width: 180px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		&:hover,
-		&:active,
-		&:focus {
-			box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
-				0px 0px 2px 1px color(regular-alpha);
-		}
-	}
+        label {
+          color: $light-grey !important;
+        }
+      }
+    }
 
-	&.open {
-		.ISidebar-user {
-			max-width: 250px;
-		}
-		.ISidebar-menu {
-			background-color: color(sapphire-grey-blue);
-		}
-		.ISidebar-content {
-			max-width: 250px;
-			min-width: 250px;
-			padding-left: 10px;
-			padding-right: 50px;
-		}
-		.ISidebar-user-login {
-			opacity: 1;
+    .Dropdown {
+      background-color: $sapphire-grey-blue;
+      background-image: url($icon-arrow-sideBar);
+      border: none;
+      color: $light-grey;
+      cursor: pointer;
 
-			.VersionInfo {
-				color: color(light-grey);
-				display: block;
-			}
-		}
-		.ISidebar-user-login-name {
-			color: color(light-grey);
-			margin: 4px 0 2px 0;
+      &:hover {
+        box-shadow: none;
+      }
+    }
 
-			.UserLink {
-				color: color(sapphire-white);
-				&:hover,
-				&:active,
-				&:focus {
-					box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
-						0px 0px 2px 1px color(regular-alpha);
-				}
-				.UserName {
-					display: inline;
-					margin: 0;
-				}
-			}
-		}
+    .TextInput {
+      background-color: $sapphire-grey-blue;
+      border: none;
+      color: $light-grey;
 
-		.ISidebar-user-login-name
-			.ISidebar
-			.wbTasks
-			.ISidebar-content-panel-content
-			> div {
-			margin-bottom: 10px;
-		}
-	}
+      &:focus {
+        box-shadow: none;
+      }
 
-	.TextInput_Container.OSInline {
-		display: inline-block;
-	}
-	.FieldsSlider.Tab1 {
-		.FieldsSliderTab1 {
-			display: block;
-		}
-	}
-	.FieldsSlider.Tab1 {
-		.FieldsSliderTab2 {
-			display: none;
-		}
-	}
-	.FieldsSlider.Tab2 {
-		.FieldsSliderTab1 {
-			display: none;
-		}
-	}
-	.FieldsSlider.Tab2 {
-		.FieldsSliderTab2 {
-			display: block;
-		}
-	}
-	.SearchSideBar {
-		.ButtonGroup_button.Button {
-			width: 50% !important;
-		}
-	}
-	input[type='number'] {
-		text-align: center;
-	}
+      &:hover {}
 
-	.SearchSideBar {
-		> .SearchSideBarFields {
-			margin-top: 0;
-		}
+      &::placeholder {
+        color: $sapphire-dark-grey;
+      }
+    }
+  }
 
-		> .SearchSideBarLabel {
-			color: unset;
-			font-size: unset;
-			font-weight: 400;
-			height: auto;
-		}
-		> .SearchSideBarLabel {
-			> div:first-of-type {
-				font-size: unset;
-			}
-		}
-	}
+  .DepartmentName {
+    color: $light-grey;
+    font-size: $font-size-11px;
+    line-height: 1em;
+    margin-top: 5px;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    // &:hover,
+    // &:active,
+    // &:focus {
+    //   box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
+    //     0px 0px 2px 1px $regular-alpha;
+    // }
+  }
+
+  &.open {
+    .ISidebar-user {
+      max-width: 250px;
+    }
+
+    .ISidebar-menu {
+      background-color: $sapphire-grey-blue;
+    }
+
+    .ISidebar-content {
+      max-width: 250px;
+      min-width: 250px;
+      padding-left: 10px;
+      padding-right: 50px;
+    }
+
+    .ISidebar-user-login {
+      opacity: 1;
+
+      .VersionInfo {
+        color: $light-grey;
+        display: block;
+      }
+    }
+
+    .ISidebar-user-login-name {
+      color: $light-grey;
+      margin: 4px 0 2px 0;
+
+      .UserLink {
+        color: $sapphire-white;
+
+        &:hover,
+        &:active,
+        &:focus {
+          box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
+            0px 0px 2px 1px $regular-alpha;
+        }
+
+        .UserName {
+          display: inline;
+          margin: 0;
+        }
+      }
+    }
+
+    .ISidebar-user-login-name .ISidebar .wbTasks .ISidebar-content-panel-content>div {
+      margin-bottom: 10px;
+    }
+  }
+
+  .TextInput_Container.OSInline {
+    display: inline-block;
+  }
+
+  .FieldsSlider.Tab1 {
+    .FieldsSliderTab1 {
+      display: block;
+    }
+  }
+
+  .FieldsSlider.Tab1 {
+    .FieldsSliderTab2 {
+      display: none;
+    }
+  }
+
+  .FieldsSlider.Tab2 {
+    .FieldsSliderTab1 {
+      display: none;
+    }
+  }
+
+  .FieldsSlider.Tab2 {
+    .FieldsSliderTab2 {
+      display: block;
+    }
+  }
+
+  .SearchSideBar {
+    .ButtonGroup_button.Button {
+      width: 50% !important;
+    }
+  }
+
+  input[type='number'] {
+    text-align: center;
+  }
+
+  .SearchSideBar {
+    >.SearchSideBarFields {
+      margin-top: 0;
+    }
+
+    >.SearchSideBarLabel {
+      color: unset;
+      font-size: unset;
+      font-weight: 400;
+      height: auto;
+    }
+
+    >.SearchSideBarLabel {
+      >div:first-of-type {
+        font-size: unset;
+      }
+    }
+  }
 }
 
 .department-selector-container {
-	//tooltipster
-	.department-menu.department-menu-scrollbar {
-		background-color: color(sapphire-grey-blue);
-	}
+
+  //tooltipster
+  .department-menu.department-menu-scrollbar {
+    background-color: $sapphire-grey-blue;
+  }
 }
 
 .ISidebar-menu {
-	background-color: color(sapphire-grey-blue);
-	height: 100vh;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 40px;
-	z-index: 1;
+  background-color: $sapphire-grey-blue;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  z-index: 1;
+
+
+  .verticalAlignHelper {
+    display: none;
+  }
+
 }
 
 .AR {
-	.ISidebar-menu {
-		left: 0;
-		right: auto;
-	}
-	.ISidebar-user {
-		left: 0;
-		right: auto;
-	}
-	.ISidebar-user-logout {
-		left: 0;
-		right: auto;
-	}
-	.ISidebar.open .ISidebar-content {
-		padding-left: 50px;
-		padding-right: 10px;
-	}
-	.ISidebar-age-format {
-		margin-left: 0;
-		margin-right: 10px;
-	}
+  .ISidebar-menu {
+    left: 0;
+    right: auto;
+  }
+
+  .ISidebar-user {
+    left: 0;
+    right: auto;
+  }
+
+  .ISidebar-user-logout {
+    left: 0;
+    right: auto;
+  }
+
+  .ISidebar.open .ISidebar-content {
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+
+  .ISidebar-age-format {
+    margin-left: 0;
+    margin-right: 10px;
+  }
 }
 
 .ISidebar-user {
-	background-color: color(sapphire-dark-blue);
-	border-top: 1px solid color(sapphire-grey-blue);
-	bottom: 0;
-	height: 60px;
-	max-width: 40px;
-	position: absolute;
-	right: 0;
-	width: 100%;
-	z-index: 2;
+  background-color: $sapphire-dark-blue;
+  border-top: 1px solid $sapphire-grey-blue;
+  bottom: 0;
+  height: 60px;
+  max-width: 40px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 2;
 
-	.icon-myinfo {
-		display: none;
-	}
+  .icon-myinfo {
+    display: none;
+  }
 }
 
 .ISidebar-user-login {
-	display: block;
-	height: 60px;
-	opacity: 0;
-	padding: 3px 8px;
-	transition: all 0.5s ease;
-	white-space: nowrap;
-	width: calc(100% - 40px);
+  display: block;
+  height: 60px;
+  opacity: 0;
+  padding: 3px 8px;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+  width: calc(100% - 40px);
 
-	.VersionInfo {
-		display: none;
-		position: absolute;
-		top: -25px;
-	}
+  .VersionInfo {
+    display: none;
+    position: absolute;
+    top: -25px;
+  }
 }
 
 .ISidebar-user-logout {
-	background-color: color(sapphire-grey-blue);
-	height: 58px;
-	line-height: 58px;
-	position: absolute;
-	right: 0;
-	text-align: center;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 40px;
+  background-color: $sapphire-grey-blue;
+  height: 58px;
+  line-height: 58px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
 
-	a {
-		color: color(light-grey);
-		cursor: pointer;
-		font-size: $font-size-16px;
-		height: 30px;
-		margin: 0;
-		text-align: right;
-		width: 40px;
+  a {
+    color: $light-grey;
+    cursor: pointer;
+    font-size: $font-size-16px;
+    height: 30px;
+    margin: 0;
+    text-align: right;
+    width: 40px;
 
-		&:hover {
-			color: color(regular-alpha);
-		}
-	}
+    &:hover {
+      color: $regular-alpha;
+    }
+  }
 }
 
 .ISidebar-shield {
-	background-color: color(dark-grey);
-	flex-basis: 100%;
-	opacity: 0.2;
+  background-color: $dark-grey;
+  flex-basis: 100%;
+  opacity: 0.2;
 }
 
 .ISidebar-content {
-	background-color: color(sapphire-dark-blue);
-	height: 100vh;
+  background-color: $sapphire-dark-blue;
+  height: 100vh;
 }
 
 .ISidebar-content-panel {
-	display: none;
-	width: 190px;
+  display: none;
+  width: 190px;
 }
 
 .ISidebar-content-panel-title {
-	color: #fff;
-	display: block;
-	font-size: $font-size-20px;
-	font-weight: 700;
-	line-height: 50px;
+  color: #fff;
+  display: block;
+  font-size: $font-size-20px;
+  font-weight: 700;
+  line-height: 50px;
 }
 
 .ISidebar-content-panel-content {
-	height: calc(100vh - 150px);
-	overflow: auto;
+  height: calc(100vh - 150px);
+  overflow: auto;
 }
 
 .ISidebar-content-panel-content::-webkit-scrollbar {
-	background-color: transparent;
-	width: 5px;
+  background-color: transparent;
+  width: 5px;
 }
 
 .ISidebar-content-panel-content::-webkit-scrollbar-thumb {
-	background-color: #08a6af;
+  background-color: #08a6af;
 }
 
-.ISidebar
-	.SearchSideBar
-	> .SearchSideBarFields
-	> div.SliderWrapper
-	> div.FieldsSlider
-	> div {
-	width: 100%;
+.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider>div {
+  width: 100%;
 }
 
 .ISidebar.notExpandable .ISidebar-content {
-	min-width: 250px;
+  min-width: 250px;
 }
 
-.ISidebar
-	.SearchSideBar
-	> .SearchSideBarFields
-	> div.SliderWrapper
-	> div.FieldsSlider,
-.ISidebar
-	.SearchSideBar
-	> .SearchSideBarFields
-	> div.SliderWrapper
-	> div.FieldsSlider.Tab1,
-.ISidebar
-	.SearchSideBar
-	> .SearchSideBarFields
-	> div.SliderWrapper
-	> div.FieldsSlider.Tab2 {
-	display: block;
-	margin: 0;
-	padding: 0;
-	transition: none;
-	white-space: normal;
+.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider,
+.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab1,
+.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab2 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  transition: none;
+  white-space: normal;
 }
 
-.ISidebar
-	.SearchSideBar
-	> .SearchSideBarFields
-	> div.SliderWrapper
-	> div.FieldsSlider.Tab1
-	> div:last-child
-	input,
-.ISidebar
-	.SearchSideBar
-	> .SearchSideBarFields
-	> div.SliderWrapper
-	> div.FieldsSlider.Tab2
-	> div:first-child
-	input {
-	display: block;
+.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab1>div:last-child input,
+.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab2>div:first-child input {
+  display: block;
 }
 
 .ISidebar-age-format {
-	margin-left: 10px;
-	margin-top: 0;
-	width: 125px;
+  margin-left: 10px;
+  margin-top: 0;
+  width: 125px;
 }
 
-.ISidebar
-	.Page.FA
-	.SearchSideBar
-	> .SearchSideBarFields
-	> div.SliderWrapper
-	> div.FieldsSlider.Tab2,
-.Page.AR
-	.SearchSideBar
-	> .SearchSideBarFields
-	> div.SliderWrapper
-	> div.FieldsSlider.Tab2 {
-	margin: 0;
+.ISidebar .Page.FA .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab2,
+.Page.AR .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab2 {
+  margin: 0;
 }
 
-.ISidebar-content .FieldsSlider input + span.ValidationMessage {
-	background-color: #a55555;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	color: #fff;
-	font-size: $font-size-13px;
-	font-weight: 400;
-	line-height: 14px;
-	padding: 5px;
-	text-align: right;
-	width: fit-content;
+.ISidebar-content .FieldsSlider input+span.ValidationMessage {
+  background-color: #a55555;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  font-size: $font-size-13px;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 5px;
+  text-align: right;
+  width: fit-content;
 }
 
 .SidebarMenuItem {
-	color: #fff;
-	cursor: pointer;
-	height: 55px;
-	overflow: hidden;
-	padding: 8px;
-	text-align: center;
-	transition: all 0.2s ease-out;
-	width: 40px;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  width: 40px;
 
-	&:hover {
-		background-color: color(sapphire-dark-blue);
-	}
-	&.active,
-	&.active:hover {
-		background-color: color(sapphire-dark-blue);
-	}
-	&.withBadge {
-		line-height: 62px;
-	}
-	.SidebarMenuItem_tabIcon {
-		position: relative;
-		.BadgeNotifications {
-			background-color: color(sapphire-warning);
-			border-radius: 40px;
-			bottom: 0;
-			box-shadow: 0 0 0 1px #0c262f;
-			color: #fff;
-			font-size: $font-size-15px;
-			font-weight: bold;
-			height: 22px;
-			left: 7px;
-			line-height: 22px;
-			margin: 0 auto;
-			position: absolute;
-			right: -7px;
-			text-align: center;
-			text-shadow: 0 0 1px #000;
-			top: -3px;
-		}
-	}
+  &:hover {
+    background-color: $sapphire-dark-blue;
+  }
+
+  &.active,
+  &.active:hover {
+    background-color: $sapphire-dark-blue;
+  }
+
+  &.withBadge {
+    line-height: 62px;
+  }
+
+  .SidebarMenuItem_tabIcon {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: unset;
+
+    .icon.icon-2x {
+      font-size: 20px;
+    }
+
+    .BadgeNotifications {
+      background-color: $sapphire-warning;
+      border: none;
+      border-radius: 50%;
+      box-shadow: none;
+      color: #fff;
+      font-family: $font-family-bold;
+      font-size: .8rem;
+      font-weight: normal;
+      height: 16px;
+      left: 50%;
+      line-height: normal;
+      margin: -10px -5px auto auto;
+      position: absolute;
+      text-align: center;
+      text-shadow: none;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+    }
+  }
 }

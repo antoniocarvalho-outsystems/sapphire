@@ -167,12 +167,13 @@ textarea {
 
 select,
 textarea,
-input[type]:not([type='checkbox']):not([type='radio']) {
+input[type='text'] {
+	// input[type]:not([type='checkbox']):not([type='radio']) {
 	appearance: none;
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
 	border-radius: 2px;
-	box-shadow: inset 0 1px 3px 0 $body-color;
+	// box-shadow: inset 0 1px 3px 0 $body-color;
 	box-sizing: border-box;
 	font-size: 1em;
 	height: 36px;
@@ -197,7 +198,7 @@ input[type]:not([type='checkbox']):not([type='radio']) {
 	&:hover {
 		background-color: $regular-eta;
 		border: 1px solid $sapphire-light;
-		box-shadow: inset 0 1px 3px 0 $body-color;
+		// box-shadow: inset 0 1px 3px 0 $body-color;
 	}
 
 	&[disabled='disabled'],

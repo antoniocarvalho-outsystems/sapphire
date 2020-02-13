@@ -24,8 +24,8 @@
 }
 
 @mixin upDownArrows {
-	background-color: color(sapphire-white);
-	background-image: url('https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/upDownArrows.png');
+	background-color: $sapphire-white;
+	background-image: url($icon-arrow-up-down);
 	background-position-x: center;
 	background-position-y: center;
 	background-repeat: no-repeat;

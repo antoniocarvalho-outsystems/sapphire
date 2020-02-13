@@ -111,7 +111,7 @@ $tab-height: 44px;
 
 
 .FullScreenTabsWrapper_Container {
-  background-color: color(regular-alpha);
+  background-color: $regular-alpha;
   height: $tab-height;
   padding: 0;
   position: relative;
@@ -124,14 +124,14 @@ $tab-height: 44px;
 }
 
 .TabWrapper {
-  border-top: solid 3px color(regular-alpha);
+  border-top: solid 3px $regular-alpha;
   height: $tab-height;
   min-width: 100px;
   position: relative;
 
   &:hover {
-    background-color: color(regular-beta);
-    border-top-color: color(regular-beta);
+    background-color: $regular-beta;;
+    border-top-color: $regular-beta;;
   }
 
   .TabWrapper_tab a {
