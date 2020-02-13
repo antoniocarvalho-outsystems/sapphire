@@ -1,143 +1,142 @@
 .SectionExpandableCustom {
-	&:not(.expanded) .SectionExpandable_headerCustom .icon {
-		transition: all 0.5s;
-	}
+  &:not(.expanded) .SectionExpandable_headerCustom .icon {
+    transition: all 0.5s;
+  }
 
-	&.expanded {
-		.SectionExpandableCustom_content {
-			background-color: $regular-white;
-			border: 1px solid $light-grey;
-			border-top: none;
-			height: auto !important;
-		}
+  &.expanded {
+    .SectionExpandableCustom_content {
+      background-color: $regular-white;
+      border: 1px solid $light-grey;
+      border-top: none;
+      height: auto !important;
+    }
 
-		.SectionExpandable_headerCustom .SectionExpandable___icon,
-		.SectionExpandable_headerCustom .SectionExpandable__icon .fa {
-			transform: rotate(180deg);
-			transition: all 0.5s;
-		}
-	}
+    .SectionExpandable_headerCustom .SectionExpandable___icon,
+    .SectionExpandable_headerCustom .SectionExpandable__icon .fa {
+      transform: rotate(180deg);
+      transition: all 0.5s;
+    }
+  }
 
-	&--backgroundTransparent {
-		div.SectionExpandable {
-			&_headerCustom {
-				background-color: transparent;
-				border: 1px solid transparent;
-			}
-		}
+  &--backgroundTransparent {
+    div.SectionExpandable {
+      &_headerCustom {
+        background-color: transparent;
+        border: 1px solid transparent;
+      }
+    }
 
-		&.expanded {
-			.SectionExpandableCustom_content {
-				background-color: transparent;
-				border: 1px solid transparent;
-			}
-		}
+    &.expanded {
+      .SectionExpandableCustom_content {
+        background-color: transparent;
+        border: 1px solid transparent;
+      }
+    }
 
-		.SectionExpandableInside {
-			background-color: transparent;
-		}
-	}
+    .SectionExpandableInside {
+      background-color: transparent;
+    }
+  }
 
-	&_content--empty {
-		display: block;
-		font-size: 1em;
-		padding: 10px;
-	}
+  &_content--empty {
+    display: block;
+    font-size: 1em;
+    padding: 10px;
+  }
 
-	.PlaceHolderTitle {
-		font-size: 1.143em;
-		font-weight: bold;
-		padding-left: 10px;
-	}
+  .PlaceHolderTitle {
+    font-size: 1.143em;
+    font-weight: bold;
+    padding-left: 10px;
+  }
 
-	.SectionExpandable {
-		&__icon {
-			color: $regular-alpha;
-		}
+  .SectionExpandable {
+    &__icon {
+      color: $regular-alpha;
+    }
 
-		&___icon {
-			padding: 0 12px;
+    &___icon {
+      padding: 0 12px;
 
-			span {
-				@include arrow-button;
+      span {
+        @include arrow-button;
 
-				transform: rotate(0) scale(0.85);
+        transform: rotate(0) scale(0.85);
 
-				&:before {
-					font-size: 0.75em;
-				}
-			}
-		}
+        &:before {
+          font-size: 0.75em;
+        }
+      }
+    }
 
-		&_headerCustom {
-			background-color: $regular-white;
-			border: 1px solid $light-grey;
-			color: $dark-grey;
-			cursor: pointer;
-			display: table;
-			height: 62px;
-			padding: 8px 0;
-			width: 100%;
+    &_headerCustom {
+      background-color: $regular-white;
+      border: 1px solid $light-grey;
+      cursor: pointer;
+      display: table;
+      height: 62px;
+      padding: 8px 0;
+      width: 100%;
 
-			.icon {
-				font-size: 16px;
-				transition: transform 0.5s;
-			}
+      .icon {
+        font-size: 16px;
+        transition: transform 0.5s;
+      }
 
-			.SectionExpandable___icon,
-			.SectionExpandable__icon .fa {
-				transform: rotate(0);
-				transition: all 0.5s;
-			}
-		}
-	}
+      .SectionExpandable___icon,
+      .SectionExpandable__icon .fa {
+        transform: rotate(0);
+        transition: all 0.5s;
+      }
+    }
+  }
 
-	.SectionExpandable_contentCustom {
-		border-bottom-left-radius: 4px;
-		border-bottom-right-radius: 4px;
-		border-top: none;
-		box-sizing: content-box;
-		height: 0;
-		margin-top: 0;
-		overflow: hidden;
-		padding: 0 10px;
-		transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
-		visibility: visible;
-	}
+  .SectionExpandable_contentCustom {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top: none;
+    box-sizing: content-box;
+    height: 0;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+    visibility: visible;
+  }
 
-	.ExpandableHeader {
-		display: table-cell;
-		vertical-align: middle;
+  .ExpandableHeader {
+    display: table-cell;
+    vertical-align: middle;
 
-		> div {
-			display: table-cell;
-			padding-right: 15px;
-			text-transform: lowercase;
-			vertical-align: middle;
+    >div {
+      display: table-cell;
+      padding-right: 15px;
+      text-transform: lowercase;
+      vertical-align: middle;
 
-			&:first-line {
-				text-transform: capitalize;
-			}
-		}
-	}
+      &:first-line {
+        text-transform: capitalize;
+      }
+    }
+  }
 }
 
 .AR,
 .FA {
-	.SectionExpandableCustom {
-		.PlaceHolderTitle {
-			padding-left: 0;
-			padding-right: 20px;
-		}
+  .SectionExpandableCustom {
+    .PlaceHolderTitle {
+      padding-left: 0;
+      padding-right: 20px;
+    }
 
-		.SectionExpandable__icon {
-			padding-left: 0;
-			padding-right: 20px;
-		}
+    .SectionExpandable__icon {
+      padding-left: 0;
+      padding-right: 20px;
+    }
 
-		.ExpandableHeader > div {
-			padding-left: 10px;
-			padding-right: 0;
-		}
-	}
+    .ExpandableHeader>div {
+      padding-left: 10px;
+      padding-right: 0;
+    }
+  }
 }

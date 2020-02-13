@@ -402,10 +402,7 @@ $font-size-11px: 0.7857em;
   }
 
   .SidebarMenuItem_tabIcon {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    @include absolute-center();
     vertical-align: unset;
 
     .icon.icon-2x {
