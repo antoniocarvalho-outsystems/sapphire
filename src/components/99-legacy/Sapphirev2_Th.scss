@@ -12130,46 +12130,46 @@ a.Button.twoLines > div {
 /* 9.25 Sapphire Patterns > Controls_Custom_Patterns > OTRoom *********/
 /*--------------------------------------------------------------------*/
 
-.RoomBoxOT {
-	background-color: #fff;
-	border: 1px solid #cbc9c8;
-	border-radius: 2px;
-	-moz-box-shadow: 0 1px 2px rgba(167, 166, 166, 0.65);
-	box-shadow: 0 1px 2px rgba(167, 166, 166, 0.65);
-	text-align: center;
-	width: 140px;
-}
+// .RoomBoxOT {
+// 	background-color: #fff;
+// 	border: 1px solid #cbc9c8;
+// 	border-radius: 2px;
+// 	-moz-box-shadow: 0 1px 2px rgba(167, 166, 166, 0.65);
+// 	box-shadow: 0 1px 2px rgba(167, 166, 166, 0.65);
+// 	text-align: center;
+// 	width: 140px;
+// }
 
-.RoomBoxOT .Counter {
-	border-bottom: none;
-}
+// .RoomBoxOT .Counter {
+// 	border-bottom: none;
+// }
 
-.RoomBoxOT.Selected {
-	border: 2px solid #00b4bf;
-	-webkit-box-shadow: inset 0 2px 4px #aaa;
-	-moz-box-shadow: inset 0 2px 4px #aaa;
-	box-shadow: none;
-	box-shadow: inset 0 2px 4px #aaa;
-}
+// .RoomBoxOT.Selected {
+// 	border: 2px solid #00b4bf;
+// 	-webkit-box-shadow: inset 0 2px 4px #aaa;
+// 	-moz-box-shadow: inset 0 2px 4px #aaa;
+// 	box-shadow: none;
+// 	box-shadow: inset 0 2px 4px #aaa;
+// }
 
-.RoomBoxOT .RoomNameSmall {
-	font-weight: bold;
-	padding-top: 10px;
-}
+// .RoomBoxOT .RoomNameSmall {
+// 	font-weight: bold;
+// 	padding-top: 10px;
+// }
 
-.RoomBoxOT .RoomTypeSmall {
-	color: #73929f;
-	font-size: 12px;
-	padding-bottom: 10px;
-}
+// .RoomBoxOT .RoomTypeSmall {
+// 	color: #73929f;
+// 	font-size: 12px;
+// 	padding-bottom: 10px;
+// }
 
-.RoomBoxOT .Counter {
-	border-top: 1px solid #818181;
-	color: #818181;
-	font-size: 24px;
-	height: 68px;
-	padding: 8px;
-}
+// .RoomBoxOT .Counter {
+// 	border-top: 1px solid #818181;
+// 	color: #818181;
+// 	font-size: 24px;
+// 	height: 68px;
+// 	padding: 8px;
+// }
 
 // .Counter.Min {
 // 	background-color: #c2dea8;
@@ -12189,9 +12189,9 @@ a.Button.twoLines > div {
 // 	color: #9f000f;
 // }
 
-.RoomBoxOT .Columns .Column {
-	margin-bottom: 0;
-}
+// .RoomBoxOT .Columns .Column {
+// 	margin-bottom: 0;
+// }
 
 /*------------------------------------------------------------------------------------*/
 /* 9.26 Sapphire Patterns > Controls_Custom_Patterns > PrescriptionExpandable *********/
@@ -15656,116 +15656,116 @@ span:not(:last-of-type) .CompLine {
 	width: 100%;
 }
 
-.DisableRoom {
-	display: block;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	width: 100%;
-}
+// .DisableRoom {
+// 	display: block;
+// 	height: 100%;
+// 	margin: 0;
+// 	padding: 0;
+// 	position: absolute;
+// 	width: 100%;
+// }
 
-.DisableRoom.On {
-	border: 2px solid #00b4bf;
-	-webkit-box-shadow: inset 0 2px 4px #aaa;
-	-moz-box-shadow: inset 0 2px 4px #aaa;
-	box-shadow: inset 0 2px 4px #aaa;
-}
+// .DisableRoom.On {
+// 	border: 2px solid #00b4bf;
+// 	-webkit-box-shadow: inset 0 2px 4px #aaa;
+// 	-moz-box-shadow: inset 0 2px 4px #aaa;
+// 	box-shadow: inset 0 2px 4px #aaa;
+// }
 
-.RoomBox {
-	background-color: white;
-	border: 1px solid #d2d1d0;
-	border-radius: 3px;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-	display: inline-block;
-	font-family: 'globeregular';
-	margin-bottom: 10px;
-	position: relative;
-	text-align: center;
-	/*font-size: 12px;*/
-	/*height: 72px;*/
-	/*width: 140px;*/
-}
+// .RoomBox {
+// 	background-color: white;
+// 	border: 1px solid #d2d1d0;
+// 	border-radius: 3px;
+// 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+// 	display: inline-block;
+// 	font-family: 'globeregular';
+// 	margin-bottom: 10px;
+// 	position: relative;
+// 	text-align: center;
+// 	/*font-size: 12px;*/
+// 	/*height: 72px;*/
+// 	/*width: 140px;*/
+// }
 
-.GalleryItem .RoomBox {
-	width: 100%;
-}
+// .GalleryItem .RoomBox {
+// 	width: 100%;
+// }
 
-.AR .RoomBox,
-.FA .RoomBox {
-	margin: 0 0 15px 15px;
-}
+// .AR .RoomBox,
+// .FA .RoomBox {
+// 	margin: 0 0 15px 15px;
+// }
 
-.RoomBox.Selected {
-	border: 1px solid #00b4bf;
-}
+// .RoomBox.Selected {
+// 	border: 1px solid #00b4bf;
+// }
 
-.RoomHeader {
-	height: 47px;
-	padding: 4px;
-}
+// .RoomHeader {
+// 	height: 47px;
+// 	padding: 4px;
+// }
 
-.RoomGenderBar {
-	background-color: #fff;
-	border: 1px solid #fff;
-	border-radius: 3px;
-	height: 3px;
-	line-height: 0;
-	margin: 0;
-}
+// .RoomGenderBar {
+// 	background-color: #fff;
+// 	border: 1px solid #fff;
+// 	border-radius: 3px;
+// 	height: 3px;
+// 	line-height: 0;
+// 	margin: 0;
+// }
 
-.RoomBox.Male .RoomHeader {
-	background-color: #e6f3f8;
-}
+// .RoomBox.Male .RoomHeader {
+// 	background-color: #e6f3f8;
+// }
 
-.RoomBox.Male .RoomGenderBar {
-	background-color: #004963;
-	border: 1px solid #004963;
-}
+// .RoomBox.Male .RoomGenderBar {
+// 	background-color: #004963;
+// 	border: 1px solid #004963;
+// }
 
-.RoomBox.Female .RoomHeader {
-	background-color: #fceaf9;
-}
+// .RoomBox.Female .RoomHeader {
+// 	background-color: #fceaf9;
+// }
 
-.RoomBox.Female .RoomGenderBar {
-	background-color: #92537a;
-	border: 1px solid #92537a;
-}
+// .RoomBox.Female .RoomGenderBar {
+// 	background-color: #92537a;
+// 	border: 1px solid #92537a;
+// }
 
-.RoomName {
-	font-size: 16px;
-}
+// .RoomName {
+// 	font-size: 16px;
+// }
 
-.WardName {
-	color: #4e87a2;
-	font-family: globeregular;
-	font-size: 10px;
-	font-weight: bold;
-}
+// .WardName {
+// 	color: #4e87a2;
+// 	font-family: globeregular;
+// 	font-size: 10px;
+// 	font-weight: bold;
+// }
 
-.RoomStatus {
-	display: table;
-	min-height: 20px;
-	overflow: hidden;
-	text-align: center;
-	width: 100%;
-}
+// .RoomStatus {
+// 	display: table;
+// 	min-height: 20px;
+// 	overflow: hidden;
+// 	text-align: center;
+// 	width: 100%;
+// }
 
-.RoomStatus.Free {
-	background-color: #b6d882;
-	border-top: 1px solid #7c9e4a;
-	color: #526a2c;
-}
+// .RoomStatus.Free {
+// 	background-color: #b6d882;
+// 	border-top: 1px solid #7c9e4a;
+// 	color: #526a2c;
+// }
 
-.RoomStatus.Full {
-	background-color: #ccc;
-	border-top: 1px solid #5b5b5b;
-}
+// .RoomStatus.Full {
+// 	background-color: #ccc;
+// 	border-top: 1px solid #5b5b5b;
+// }
 
-.RoomStatus .RoomStatusMessage {
-	display: table-cell;
-	vertical-align: middle;
-}
+// .RoomStatus .RoomStatusMessage {
+// 	display: table-cell;
+// 	vertical-align: middle;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.55 Sapphire Patterns > Custom_Patterns > MedicalFileOptions ***********************/
