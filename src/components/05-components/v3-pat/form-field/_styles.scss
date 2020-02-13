@@ -1,0 +1,217 @@
+.LayoutBase .FormField {
+	&-field {
+		display: block;
+	}
+
+	&-flex {
+		align-items: center;
+		display: flex;
+	}
+
+	&-horizontal {
+		display: flex;
+	}
+
+	&-vertical {
+		.FormField-caption {
+			display: block;
+			margin-bottom: 6px;
+			margin-right: 0;
+			min-height: 18px;
+			width: 100%;
+		}
+	}
+
+	&-caption {
+		font-size: 1em;
+		margin-bottom: 0;
+		margin-right: 6px;
+	}
+
+	&-fullwidth {
+		width: 100%;
+
+		.FormField-field {
+			width: 100%;
+		}
+	}
+
+	&-alignY-Middle {
+		.FormField-field,
+		.FormField-caption {
+			align-self: center;
+			vertical-align: middle;
+		}
+	}
+
+	&-alignY-Bottom {
+		.FormField-field,
+		.FormField-caption {
+			vertical-align: bottom;
+		}
+	}
+
+	&-alignX-Center {
+		.FormField-caption {
+			text-align: center;
+		}
+	}
+
+	&-alignX-Right {
+		.FormField-caption {
+			text-align: right;
+		}
+	}
+
+	&-caption-maxwidth-XSmall {
+		.FormField-caption {
+			max-width: 50px;
+		}
+	}
+
+	&-caption-maxwidth-Small {
+		.FormField-caption {
+			max-width: 100px;
+		}
+	}
+
+	&-caption-maxwidth-Medium {
+		.FormField-caption {
+			max-width: 150px;
+		}
+	}
+
+	&-caption-maxwidth-Large {
+		.FormField-caption {
+			max-width: 200px;
+		}
+	}
+
+	&-caption-maxwidth-XLarge {
+		.FormField-caption {
+			max-width: 300px;
+		}
+	}
+
+	&-caption-minwidth-XSmall {
+		.FormField-caption {
+			min-width: 50px;
+		}
+	}
+
+	&-caption-minwidth-Small {
+		.FormField-caption {
+			min-width: 100px;
+		}
+	}
+
+	&-caption-minwidth-Medium {
+		.FormField-caption {
+			min-width: 150px;
+		}
+	}
+
+	&-caption-minwidth-Large {
+		.FormField-caption {
+			min-width: 200px;
+		}
+	}
+
+	&-caption-minwidth-XLarge {
+		.FormField-caption {
+			min-width: 300px;
+		}
+	}
+
+	&-field-maxwidth-XSmall {
+		.FormField-field {
+			max-width: 50px;
+		}
+	}
+
+	&-field-maxwidth-Small {
+		.FormField-field {
+			max-width: 100px;
+		}
+	}
+
+	&-field-maxwidth-Medium {
+		.FormField-field {
+			max-width: 150px;
+		}
+	}
+
+	&-field-maxwidth-Large {
+		.FormField-field {
+			max-width: 200px;
+		}
+	}
+
+	&-field-maxwidth-XLarge {
+		.FormField-field {
+			max-width: 300px;
+		}
+	}
+
+	&-field-minwidth-XSmall {
+		.FormField-field {
+			min-width: 50px;
+		}
+	}
+
+	&-field-minwidth-Small {
+		.FormField-field {
+			min-width: 100px;
+		}
+	}
+
+	&-field-minwidth-Medium {
+		.FormField-field {
+			min-width: 150px;
+		}
+	}
+
+	&-field-minwidth-Large {
+		.FormField-field {
+			min-width: 200px;
+		}
+	}
+
+	&-field-minwidth-XLarge {
+		.FormField-field {
+			min-width: 300px;
+		}
+	}
+
+	&.IsRequiredField {
+		.FormField-caption:before {
+			color: $regular-alpha;
+			content: '*';
+			font-size: 1.143em;
+			line-height: 12px;
+			padding-right: 5px;
+			vertical-align: inherit;
+		}
+	}
+
+	select {
+		@extend .Dropdown;
+	}
+}
+
+.AR,
+.FA {
+	.FormField.IsRequiredField {
+		.FormField-caption:before {
+			padding-left: 5px;
+			padding-right: 0;
+		}
+	}
+
+	.FormField-caption {
+		font-size: 1em;
+		margin-bottom: 0;
+		margin-left: 6px;
+		margin-right: 0;
+	}
+}

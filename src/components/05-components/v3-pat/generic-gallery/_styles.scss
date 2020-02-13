@@ -1,0 +1,85 @@
+.GenericGallery-content>.ListRecords>span {
+  animation: all .5s ease-in;
+  display: block;
+  opacity: 0;
+}
+
+.GenericGallery-item {
+  box-sizing: border-box;
+  display: inline-block;
+  opacity: 0;
+  vertical-align: top;
+}
+
+.GenericGallery.isEqualHeight .GenericGallery-item>div {
+  height: 100%;
+}
+
+.GenericGallery-margin--None .GenericGallery-item {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.GenericGallery-margin--XSmall .GenericGallery-item {
+  margin-bottom: 6px;
+  margin-left: 6px;
+}
+
+.GenericGallery-margin--Small {
+  margin-left: -10px;
+}
+
+.GenericGallery-margin--Small .GenericGallery-item {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.GenericGallery-margin--Medium {
+  margin-left: -16px;
+}
+
+.GenericGallery-margin--Medium .GenericGallery-item {
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+.GenericGallery-margin--Large {
+  margin-left: -26px;
+}
+
+.GenericGallery-margin--Large .GenericGallery-item {
+  margin-bottom: 26px;
+  margin-left: 26px;
+}
+
+.GenericGallery-border--None {
+  border: none;
+}
+
+.GenericGallery-border--None .GenericGallery-item {
+  border: none;
+}
+
+.GenericGallery-border--All .GenericGallery-item {
+  border: solid 1px #ccc;
+}
+
+.GenericGallery-border--Left .GenericGallery-item {
+  border-left: solid 2px #ccc;
+}
+
+.GenericGallery-border--Right .GenericGallery-item {
+  border-right: solid 2px #ccc;
+}
+
+.GenericGallery-border--Bottom .GenericGallery-item {
+  border-bottom: solid 2px #ccc;
+}
+
+.GenericGallery-padding--Medium .GenericGallery-item {
+  padding: 16px;
+}
+
+.GenericGallery-padding--Large .GenericGallery-item {
+  padding: 26px;
+}

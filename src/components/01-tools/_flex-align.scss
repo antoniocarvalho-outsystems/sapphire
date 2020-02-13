@@ -1,0 +1,10 @@
+@mixin flex-center-total {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+@mixin flex-center-vertically {
+	align-items: center;
+	display: flex;
+}

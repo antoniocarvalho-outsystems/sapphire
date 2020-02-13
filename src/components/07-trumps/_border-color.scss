@@ -1,44 +1,44 @@
 .bordercolor--lightgrey {
-    border-color: #f2f2f2;
+    border-color: $mid-light-grey;
 }
 
 .bordercolor--grey {
-    border-color: #d9d9d9;
+    border-color: $regular-grey;
 }
 
 .bordercolor--darkgrey {
-    border-color: #7C7F7F;
+    border-color: $mid-dark-grey;
 }
 
 .bordercolor--black {
-    border-color: #333;
+    border-color: $regular-black;
 }
 
 .bordercolor--red {
-    border-color: #d01a1a;
+    border-color: $regular-red;
 }
 
 .bordercolor--darkred {
-    border-color: #b10000;
+    border-color: $dark-red;
 }
 
 .bordercolor--orange {
-    border-color: #da6802;
+    border-color: $regular-orange;
 }
 
 .bordercolor--primary {
-    border-color: #11455D;
+    border-color: $regular-gamma;
 }
 
 .bordercolor--secondary {
-    border-color: #16979F;
+    border-color: $regular-alpha;
 }
 
-@each $color in $sapphire__colors {
-    $label: nth($color, 1);
-    $value: nth($color, 2);
+// @each $color in $sapphire__colors {
+//     $label: nth($color, 1);
+//     $value: nth($color, 2);
 
-    .bordercolor--#{$label} {
-        border-color: #{$value} !important;
-    }
-}
+//     .bordercolor--#{$label} {
+//         border-color: #{$value} !important;
+//     }
+// }

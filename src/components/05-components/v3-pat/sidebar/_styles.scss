@@ -4,55 +4,70 @@ $font-size-15px: 1.0714em;
 $font-size-13px: 0.92em;
 $font-size-11px: 0.7857em;
 
+.Sidebar {
+  border-left: 1px solid #ddd;
+  height: 100%;
+  padding: 20px 10px;
+  position: fixed;
+  right: -320px;
+  top: 50px;
+  width: 300px;
+}
+
 .ISidebar {
   display: flex;
 
   .ISidebar-content {
     .SegmentedControl {
       .ButtonGroup_button.Button {
-        background-color: color(sapphire-grey-blue);
+        background-color: $sapphire-grey-blue;
         border: none;
         border-radius: 4px;
 
         &:active,
         &.active {
-          background-color: color(regular-alpha);
-          color: color(sapphire-white);
+          background-color: $regular-alpha;
+          color: $sapphire-white;
           font-weight: bold;
         }
 
         label {
-          color: color(light-grey) !important;
+          color: $light-grey !important;
         }
       }
     }
 
     .Dropdown {
+      background-color: $sapphire-grey-blue;
       background-image: url($icon-arrow-sideBar);
-      cursor: pointer;
-    }
-
-    .TextInput,
-    .Dropdown {
-      background-color: color(sapphire-grey-blue);
       border: none;
-      color: color(light-grey);
+      color: $light-grey;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: none;
+      }
     }
 
     .TextInput {
+      background-color: $sapphire-grey-blue;
+      border: none;
+      color: $light-grey;
+
       &:focus {
-        box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
-          0px 0px 2px 1px color(regular-alpha);
+        box-shadow: none;
       }
 
+      &:hover {}
+
       &::placeholder {
-        color: color(light-grey);
+        color: $sapphire-dark-grey;
       }
     }
   }
 
   .DepartmentName {
-    color: color(light-grey);
+    color: $light-grey;
     font-size: $font-size-11px;
     line-height: 1em;
     margin-top: 5px;
@@ -61,12 +76,12 @@ $font-size-11px: 0.7857em;
     text-overflow: ellipsis;
     white-space: nowrap;
 
-    &:hover,
-    &:active,
-    &:focus {
-      box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
-        0px 0px 2px 1px color(regular-alpha);
-    }
+    // &:hover,
+    // &:active,
+    // &:focus {
+    //   box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
+    //     0px 0px 2px 1px $regular-alpha;
+    // }
   }
 
   &.open {
@@ -75,7 +90,7 @@ $font-size-11px: 0.7857em;
     }
 
     .ISidebar-menu {
-      background-color: color(sapphire-grey-blue);
+      background-color: $sapphire-grey-blue;
     }
 
     .ISidebar-content {
@@ -89,23 +104,23 @@ $font-size-11px: 0.7857em;
       opacity: 1;
 
       .VersionInfo {
-        color: color(light-grey);
+        color: $light-grey;
         display: block;
       }
     }
 
     .ISidebar-user-login-name {
-      color: color(light-grey);
+      color: $light-grey;
       margin: 4px 0 2px 0;
 
       .UserLink {
-        color: color(sapphire-white);
+        color: $sapphire-white;
 
         &:hover,
         &:active,
         &:focus {
           box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
-            0px 0px 2px 1px color(regular-alpha);
+            0px 0px 2px 1px $regular-alpha;
         }
 
         .UserName {
@@ -182,12 +197,12 @@ $font-size-11px: 0.7857em;
 
   //tooltipster
   .department-menu.department-menu-scrollbar {
-    background-color: color(sapphire-grey-blue);
+    background-color: $sapphire-grey-blue;
   }
 }
 
 .ISidebar-menu {
-  background-color: color(sapphire-grey-blue);
+  background-color: $sapphire-grey-blue;
   height: 100vh;
   position: absolute;
   right: 0;
@@ -230,8 +245,8 @@ $font-size-11px: 0.7857em;
 }
 
 .ISidebar-user {
-  background-color: color(sapphire-dark-blue);
-  border-top: 1px solid color(sapphire-grey-blue);
+  background-color: $sapphire-dark-blue;
+  border-top: 1px solid $sapphire-grey-blue;
   bottom: 0;
   height: 60px;
   max-width: 40px;
@@ -262,7 +277,7 @@ $font-size-11px: 0.7857em;
 }
 
 .ISidebar-user-logout {
-  background-color: color(sapphire-grey-blue);
+  background-color: $sapphire-grey-blue;
   height: 58px;
   line-height: 58px;
   position: absolute;
@@ -273,7 +288,7 @@ $font-size-11px: 0.7857em;
   width: 40px;
 
   a {
-    color: color(light-grey);
+    color: $light-grey;
     cursor: pointer;
     font-size: $font-size-16px;
     height: 30px;
@@ -282,19 +297,19 @@ $font-size-11px: 0.7857em;
     width: 40px;
 
     &:hover {
-      color: color(regular-alpha);
+      color: $regular-alpha;
     }
   }
 }
 
 .ISidebar-shield {
-  background-color: color(dark-grey);
+  background-color: $dark-grey;
   flex-basis: 100%;
   opacity: 0.2;
 }
 
 .ISidebar-content {
-  background-color: color(sapphire-dark-blue);
+  background-color: $sapphire-dark-blue;
   height: 100vh;
 }
 
@@ -375,20 +390,21 @@ $font-size-11px: 0.7857em;
 .SidebarMenuItem {
   color: #fff;
   cursor: pointer;
-  height: 55px;
+  height: 50px;
   overflow: hidden;
   padding: 8px;
+  position: relative;
   text-align: center;
   transition: all 0.2s ease-out;
   width: 40px;
 
   &:hover {
-    background-color: color(sapphire-dark-blue);
+    background-color: $sapphire-dark-blue;
   }
 
   &.active,
   &.active:hover {
-    background-color: color(sapphire-dark-blue);
+    background-color: $sapphire-dark-blue;
   }
 
   &.withBadge {
@@ -396,25 +412,32 @@ $font-size-11px: 0.7857em;
   }
 
   .SidebarMenuItem_tabIcon {
-    position: relative;
+    @include absolute-center();
+    vertical-align: unset;
+
+    .icon.icon-2x {
+      font-size: 20px;
+    }
 
     .BadgeNotifications {
-      background-color: color(sapphire-warning);
-      border-radius: 40px;
-      bottom: 0;
-      box-shadow: 0 0 0 1px #0c262f;
+      background-color: $sapphire-warning;
+      border: none;
+      border-radius: 50%;
+      box-shadow: none;
       color: #fff;
-      font-size: $font-size-15px;
-      font-weight: bold;
-      height: 22px;
-      left: 7px;
-      line-height: 22px;
-      margin: 0 auto;
+      font-family: $font-family-bold;
+      font-size: .8rem;
+      font-weight: normal;
+      height: 16px;
+      left: 50%;
+      line-height: normal;
+      margin: -10px -5px auto auto;
       position: absolute;
-      right: -7px;
       text-align: center;
-      text-shadow: 0 0 1px #000;
-      top: -3px;
+      text-shadow: none;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
     }
   }
 }

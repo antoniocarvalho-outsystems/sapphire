@@ -1,0 +1,169 @@
+@mixin bed-box-status-style($color: transparent) {
+	background-color: $color;
+	border: 2px solid $color;
+}
+
+.BedBoxContainer {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 4px;
+	color: $dark-grey;
+	cursor: help;
+	padding: 10px 12px 5px;
+	// margin: 5px;
+	// width: 168px;
+
+	&.AvailableSlotStatus {
+		cursor: pointer;
+	}
+
+	&.Male {
+		background-color: $sapphire-light-male;
+
+		&.Occupied,
+		&.Reserved {
+			.SlotStatus {
+				@include bed-box-status-style($sapphire-male);
+			}
+
+			span {
+				color: $sapphire-male;
+			}
+		}
+	}
+
+	&.Female {
+		background-color: $sapphire-light-female;
+
+		&.Occupied,
+		&.Reserved {
+			.SlotStatus {
+				@include bed-box-status-style($sapphire-female);
+			}
+
+			span {
+				color: $sapphire-female;
+			}
+		}
+	}
+
+	&.Reserved {
+		background-color: $light-beige;
+
+		.SlotStatus {
+			@include bed-box-status-style($regular-grey);
+		}
+	}
+
+	&.Disabled,
+	&.BedOverBooked {
+		background-color: transparent;
+	}
+
+	&.Disabled,
+	&.Collision {
+		.SlotStatus {
+			@include bed-box-status-style($light-grey);
+		}
+	}
+
+	&.SlotSelected {
+		background-color: $regular-alpha;
+		border: 1px solid $regular-alpha;
+		color: $regular-white;
+		cursor: auto;
+		display: block;
+
+		.BedImage,
+		.SlotAvailabilityText .SlotBedBox {
+			color: $regular-white;
+		}
+
+		.SlotStatus {
+			@include bed-box-status-style($regular-white);
+		}
+	}
+
+	&.Booked,
+	&.BedOverBooked {
+		.SlotStatus {
+			@include bed-box-status-style($regular-red);
+		}
+	}
+
+	&.SelectRoomBeds .ListRecords span {
+		display: inline-flex;
+	}
+
+	&.isClickable {
+		cursor: pointer;
+		pointer-events: auto;
+	}
+
+	&.notClickable {
+		pointer-events: none;
+	}
+
+	.BedImage {
+		color: $mid-dark-grey;
+		line-height: normal;
+		margin-right: 7px;
+
+		.icon {
+			font-size: 1.4em;
+		}
+	}
+
+	.SlotContent {
+		@include flex-center-vertically;
+
+		padding: 3px 1px 0;
+		width: 100%;
+	}
+
+	.SlotBedBox {
+		color: $regular-gray;
+		font-size: 1em;
+		white-space: nowrap;
+	}
+
+	.SlotContainer {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		padding: 10px;
+	}
+
+	.SlotStatus {
+		@include bed-box-status-style($regular-green);
+
+		border-radius: 1px;
+		height: 2px;
+	}
+
+	.SlotText {
+		@include flex-center-vertically;
+
+		white-space: nowrap;
+
+		.BedNumber {
+			font-size: 1em;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.BedBoxContainer {
+		min-height: 55px;
+	}
+
+	.SlotAvailabilityText {
+		margin-left: 8px;
+		margin-right: auto;
+	}
+
+	.BedImage {
+		margin-left: 5px;
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,27 @@
+.FormField .ValidationMessageContainer span.ValidationMessage {
+	position: relative;
+}
+
+.FormField-fullwidth .FormField-field .DateTimeRangePicker,
+.FormField-fullwidth .FormField-field .DateTimeRangePicker > div,
+.FormField-fullwidth
+	.FormField-field
+	.DateTimeRangePicker
+	.DateTimeRangePicker-input,
+.FormField-fullwidth
+	.FormField-field
+	.DateTimeRangePicker
+	.DateTimeRangePicker-input
+	input[type='text'],
+.FormField-fullwidth
+	.FormField-field
+	.DateTimeRangePicker
+	.DateTimeRangePicker-displayed,
+.FormField-fullwidth
+	.FormField-field
+	.DateTimeRangePicker
+	.DateTimeRangePicker-displayed
+	input[type='text'] {
+	display: block;
+	width: 100%;
+}
