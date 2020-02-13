@@ -64,7 +64,6 @@
 }
 
 .RoomHeader {
-	//height: 47px;
 	padding: 10px;
 
 	> :nth-child(1) {
@@ -83,7 +82,7 @@
 	@include flex-center-total;
 	font-family: $font-family-bold;
 
-	min-height: 20px;
+	min-height: 22px;
 	overflow: hidden;
 	width: 100%;
 
@@ -115,10 +114,6 @@
 	padding: 0;
 	position: absolute;
 	width: 100%;
-
-	// &.On {
-	// 	border: 2px solid $regular-alpha;
-	// }
 }
 
 .AR,

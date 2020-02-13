@@ -12721,227 +12721,227 @@ SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExp
 /*-------------------------------------------------------------------------------------*/
 /* 9.36 Sapphire Patterns > Custom_Patterns > BedSlotBox *******************************/
 /*-------------------------------------------------------------------------------------*/
-.SlotContainer {
-  background-color: #fff;
-  border: 1px solid #d2d1d0;
-  padding: 10px;
-}
+// .SlotContainer {
+//   background-color: #fff;
+//   border: 1px solid #d2d1d0;
+//   padding: 10px;
+// }
 
-.SlotContainer .ListRecords .tooltip {
-  margin: 0 5px;
-}
+// .SlotContainer .ListRecords .tooltip {
+//   margin: 0 5px;
+// }
 
-.BedBoxContainer {
-  background-color: #fff;
-  border: 1px solid #dfdedd;
-  border-radius: 3px;
-  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-  cursor: help;
-  margin: 5px;
-  width: 168px;
-}
+// .BedBoxContainer {
+//   background-color: #fff;
+//   border: 1px solid #dfdedd;
+//   border-radius: 3px;
+//   -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+//   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+//   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+//   cursor: help;
+//   margin: 5px;
+//   width: 168px;
+// }
 
-.BedBoxContainer.Disabled {
-  background-color: #fff;
-}
+// .BedBoxContainer.Disabled {
+//   background-color: #fff;
+// }
 
-.FA .BedBoxContainer {
-  min-height: 55px;
-}
+// .FA .BedBoxContainer {
+//   min-height: 55px;
+// }
 
 .tooltipster.NoCursor {
   cursor: auto;
 }
 
-.BedBoxContainer.isClickable {
-  cursor: pointer;
-  pointer-events: auto;
-}
+// .BedBoxContainer.isClickable {
+//   cursor: pointer;
+//   pointer-events: auto;
+// }
 
-.BedBoxContainer.notClickable {
-  pointer-events: none;
-}
+// .BedBoxContainer.notClickable {
+//   pointer-events: none;
+// }
 
-.Disabled .SlotStatus,
-.Collision .SlotStatus,
-.BedBoxContainer .SlotStatus {
-  background-color: #bacbd3;
-  border: 1px solid #bacbd3;
-}
+// .Disabled .SlotStatus,
+// .Collision .SlotStatus,
+// .BedBoxContainer .SlotStatus {
+//   background-color: #bacbd3;
+//   border: 1px solid #bacbd3;
+// }
 
-.SlotText {
-  font-family: 'globeregular';
-  font-size: 13px;
-  white-space: nowrap;
-}
+// .SlotText {
+//   font-family: 'globeregular';
+//   font-size: 13px;
+//   white-space: nowrap;
+// }
 
-.FA .SlotText,
-.AR .SlotText {}
+// .FA .SlotText,
+// .AR .SlotText {}
 
-.SlotBedBox {
-  color: #939393;
-  font-family: 'globeregular';
-  font-size: 12px;
-  white-space: nowrap;
-}
+// .SlotBedBox {
+//   color: #939393;
+//   font-family: 'globeregular';
+//   font-size: 12px;
+//   white-space: nowrap;
+// }
 
-.BedBoxContainer .SlotContent {
-  padding: 0 8px;
-}
+// .BedBoxContainer .SlotContent {
+//   padding: 0 8px;
+// }
 
-.SlotAvailabilityText {}
+// .SlotAvailabilityText {}
 
-.BedBoxContainer .SlotContent {
-  display: table;
-  width: 100%;
-}
+// .BedBoxContainer .SlotContent {
+//   display: table;
+//   width: 100%;
+// }
 
-.BedBoxContainer .SlotContent>div {
-  display: table-cell;
-}
+// .BedBoxContainer .SlotContent>div {
+//   display: table-cell;
+// }
 
-.FA .SlotAvailabilityText,
-.AR .SlotAvailabilityText {
-  margin-left: 8px;
-  margin-right: auto;
-}
+// .FA .SlotAvailabilityText,
+// .AR .SlotAvailabilityText {
+//   margin-left: 8px;
+//   margin-right: auto;
+// }
 
-.AvailableSlotStatus {
-  cursor: pointer;
-}
+// .AvailableSlotStatus {
+//   cursor: pointer;
+// }
 
-.AvailableSlotStatus .SlotStatus,
-.SlotStatus {
-  background-color: #b6d881;
-  border: 1px solid #b6d881;
-  border-radius: 3px;
-  height: 3px;
-  line-height: 0;
-  margin: 5px;
-}
+// .AvailableSlotStatus .SlotStatus,
+// .SlotStatus {
+//   background-color: #b6d881;
+//   border: 1px solid #b6d881;
+//   border-radius: 3px;
+//   height: 3px;
+//   line-height: 0;
+//   margin: 5px;
+// }
 
-.BedNumber {
-  font-family: globeregular;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 20px;
-}
+// .BedNumber {
+//   font-family: globeregular;
+//   font-size: 14px;
+//   font-weight: bold;
+//   line-height: 20px;
+// }
 
-.SlotText .BedNumber {
-  font-size: 10px;
-  font-weight: normal;
-}
+// .SlotText .BedNumber {
+//   font-size: 10px;
+//   font-weight: normal;
+// }
 
-.BedImage {
-  color: #7d929d;
-  height: 19px;
-  margin-right: 5px;
-  vertical-align: bottom;
-}
+// .BedImage {
+//   color: #7d929d;
+//   height: 19px;
+//   margin-right: 5px;
+//   vertical-align: bottom;
+// }
 
-.FA .BedImage,
-.AR .BedImage {
-  margin-left: 5px;
-  margin-right: 0;
-}
+// .FA .BedImage,
+// .AR .BedImage {
+//   margin-left: 5px;
+//   margin-right: 0;
+// }
 
-.Male {
-  background-color: #e6f3f8;
-}
+// .Male {
+//   background-color: #e6f3f8;
+// }
 
-.Female {
-  background-color: #fceaf9;
-}
+// .Female {
+//   background-color: #fceaf9;
+// }
 
-.Male.Reserved .SlotStatus {
-  background-color: #004963;
-  border: 1px solid #004963;
-}
+// .Male.Reserved .SlotStatus {
+//   background-color: #004963;
+//   border: 1px solid #004963;
+// }
 
-.Male.Reserved span {
-  color: #10465e;
-}
+// .Male.Reserved span {
+//   color: #10465e;
+// }
 
-.Male.Occupied .SlotStatus {
-  background-color: #004963;
-  border: 1px solid #004963;
-}
+// .Male.Occupied .SlotStatus {
+//   background-color: #004963;
+//   border: 1px solid #004963;
+// }
 
-.Male.Occupied span {
-  color: #10465e;
-}
+// .Male.Occupied span {
+//   color: #10465e;
+// }
 
-.Female.Occupied .SlotStatus {
-  background-color: #92537a;
-  border: 1px solid #92537a;
-}
+// .Female.Occupied .SlotStatus {
+//   background-color: #92537a;
+//   border: 1px solid #92537a;
+// }
 
-.Female.Occupied span {
-  color: #92537a;
-}
+// .Female.Occupied span {
+//   color: #92537a;
+// }
 
-.Female.Reserved .SlotStatus {
-  background-color: #92537a;
-  border: 1px solid #92537a;
-}
+// .Female.Reserved .SlotStatus {
+//   background-color: #92537a;
+//   border: 1px solid #92537a;
+// }
 
-.Female.Reserved span {
-  color: #92537a;
-}
+// .Female.Reserved span {
+//   color: #92537a;
+// }
 
-.Reserved {
-  background-color: #e6e3a0;
-}
+// .Reserved {
+//   background-color: #e6e3a0;
+// }
 
-.Reserved .SlotStatus {
-  background-color: #9a9a9a;
-  border: 1px solid #9a9a9a;
-}
+// .Reserved .SlotStatus {
+//   background-color: #9a9a9a;
+//   border: 1px solid #9a9a9a;
+// }
 
-.Disabled {
-  background-color: #eaeaea;
-}
+// .Disabled {
+//   background-color: #eaeaea;
+// }
 
-.BedOverBooked {
-  background-color: transparent;
-  border: 1px solid #dfdedd;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
+// .BedOverBooked {
+//   background-color: transparent;
+//   border: 1px solid #dfdedd;
+//   -webkit-box-shadow: none;
+//   box-shadow: none;
+// }
 
-.Booked .SlotStatus,
-.BedOverBooked .SlotStatus {
-  background-color: #cd3e38;
-  border: 1px solid #cd3e38;
-}
+// .Booked .SlotStatus,
+// .BedOverBooked .SlotStatus {
+//   background-color: #cd3e38;
+//   border: 1px solid #cd3e38;
+// }
 
-.SlotSelected {
-  background-color: #10465e;
-  color: white;
-  cursor: auto;
-  display: block;
-}
+// .SlotSelected {
+//   background-color: #10465e;
+//   color: white;
+//   cursor: auto;
+//   display: block;
+// }
 
-.SlotSelected .BedImage,
-.SlotSelected .SlotAvailabilityText .SlotBedBox {
-  color: white;
-}
+// .SlotSelected .BedImage,
+// .SlotSelected .SlotAvailabilityText .SlotBedBox {
+//   color: white;
+// }
 
-.SlotSelected .SlotStatus {
-  background-color: #b6d881;
-  border: 1px solid #b6d881;
-}
+// .SlotSelected .SlotStatus {
+//   background-color: #b6d881;
+//   border: 1px solid #b6d881;
+// }
 
-.SelectRoomBeds .ListRecords span {
-  display: inline-flex;
-}
+// .SelectRoomBeds .ListRecords span {
+//   display: inline-flex;
+// }
 
-.SelectOverbook .SlotStatus {
-  background-color: #cd3e38;
-  border: 1px solid #cd3e38;
-}
+// .SelectOverbook .SlotStatus {
+//   background-color: #cd3e38;
+//   border: 1px solid #cd3e38;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.37 Sapphire Patterns > Custom_Patterns > BlockedPatientStatus *********************/
