@@ -10,244 +10,250 @@
 /**** BUTTON REFACTOR 06/09/2018 ****/
 
 @mixin default-button($bgColor: regular-alpha) {
-	background-color: color($bgColor);
-	border: none;
-	border-radius: 18px;
-	color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 1.2rem;
-	font-weight: bold;
-	height: 3rem;
-	line-height: 3rem;
-	min-width: 10rem;
-	text-decoration: none;
-	white-space: nowrap;
+  background-color: $bgColor;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 3rem;
+  line-height: 3rem;
+  min-width: 10rem;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 @mixin disabled-button {
-	background-image: none;
-	border: 1px solid color(light-grey);
-	color: color(light-grey);
-	cursor: default;
-	pointer-events: none;
-	text-shadow: none;
+  background-image: none;
+  border: 1px solid $light-grey;
+  color: $light-grey;
+  cursor: default;
+  pointer-events: none;
+  text-shadow: none;
 }
 
 @mixin button-state-size {
-	font-size: 22px !important;
-	height: 50px;
-	line-height: 50px;
+  font-size: 22px !important;
+  height: 50px;
+  line-height: 50px;
 }
 
 @mixin focus-border($bdColor: dark-grey) {
-	border: 1px solid color($bdColor) !important;
+  border: 1px solid $bdColor !important;
 }
 
 @mixin setLinkStyleAll {
-	&:hover,
-	&:link,
-	&:active {
-		@content;
-	}
+
+  &:hover,
+  &:link,
+  &:active {
+    @content;
+  }
 }
 
 a.Button {
-	//Important use due to Theme Patterns Silk UI
-	@include default-button;
+  //Important use due to Theme Patterns Silk UI
+  @include default-button;
 
-	&:focus {
-		@include focus-border();
-	}
+  &:focus {
+    @include focus-border();
+  }
 
-	&:active,
-	&:hover {
-		background-color: color(primary-light) !important;
-	}
+  &:active,
+  &:hover {
+    background-color: $primary-light !important;
+  }
 
-	&:disabled,
-	&[disabled] {
-		background-color: color(sapphire-white);
-		cursor: not-allowed;
+  &:disabled,
+  &[disabled] {
+    background-color: $sapphire-white;
+    cursor: not-allowed;
 
-		@include disabled-button();
+    @include disabled-button();
 
-		&:before {
-			color: #4a9bbc;
-			opacity: 0.45;
-		}
-	}
+    &:before {
+      color: #4a9bbc;
+      opacity: 0.45;
+    }
+  }
 
-	/* **************************************** Button Second ********************************************* */
-	&.Second {
-		//Important use due to Theme Patterns Silk UI
-		background-color: color(mid-dark-grey);
+  /* **************************************** Button Second ********************************************* */
+  &.Second {
+    //Important use due to Theme Patterns Silk UI
+    background-color: $mid-dark-grey;
 
-		&:active,
-		&:hover {
-			background-color: color(regular-grey) !important;
-		}
+    &:active,
+    &:hover {
+      background-color: $regular-grey !important;
+    }
 
-		&:focus {
-			@include focus-border(dark-grey);
-		}
+    &:focus {
+      @include focus-border(dark-grey);
+    }
 
-		&:disabled,
-		&[disabled] {
-			background-color: color(sapphire-white);
-			@include disabled-button();
+    &:disabled,
+    &[disabled] {
+      background-color: $sapphire-white;
+      @include disabled-button();
 
-			&:before {
-				color: #6fa0a3;
-			}
-		}
+      &:before {
+        color: #6fa0a3;
+      }
+    }
 
-		&:before {
-			color: #fff;
-		}
+    &:before {
+      color: #fff;
+    }
 
-		&.SearchMagnifier {
-			background-color: color(regular-alpha);
-			border-radius: 0;
-			min-width: auto;
-			@include setLinkStyleAll {
-				min-width: auto;
-			}
-			&:active,
-			&:hover {
-				background-color: color(primary-light) !important;
-			}
+    &.SearchMagnifier {
+      background-color: $regular-alpha;
+      border-radius: 0;
+      min-width: auto;
 
-			&:after {
-				content: '\e690';
-				font-family: $font-family-icons;
-			}
-		}
-	}
+      @include setLinkStyleAll {
+        min-width: auto;
+      }
 
-	/* **************************************** Button Third ********************************************* */
-	&.Third,
-	&.Cancel {
-		background-color: color(sapphire-white);
-		//Important use due to Theme Patterns Silk UI
-		color: color(dark-grey);
-		@include focus-border(light-grey);
+      &:active,
+      &:hover {
+        background-color: $primary-light !important;
+      }
 
-		&:before {
-			color: #262626;
-		}
+      &:after {
+        content: '\e690';
+        font-family: $font-family-icons;
+      }
+    }
+  }
 
-		&:active,
-		&:hover {
-			background-color: color(sapphire-light-container) !important;
-		}
+  /* **************************************** Button Third ********************************************* */
+  &.Third,
+  &.Cancel {
+    background-color: $sapphire-white;
+    //Important use due to Theme Patterns Silk UI
+    color: $dark-grey;
+    @include focus-border(light-grey);
 
-		&:focus {
-			@include focus-border();
-		}
+    &:before {
+      color: #262626;
+    }
 
-		&:disabled,
-		&[disabled] {
-			@include disabled-button();
+    &:active,
+    &:hover {
+      background-color: $sapphire-light-container !important;
+    }
 
-			&:before {
-				color: #b1b5b6;
-			}
-		}
-	}
+    &:focus {
+      @include focus-border();
+    }
 
-	/* **************************************** Button Link ********************************************* */
+    &:disabled,
+    &[disabled] {
+      @include disabled-button();
 
-	&.Link {
-		background: none;
-		border: none !important;
-		//Important use due to Theme Patterns Silk UI
-		color: color(regular-beta);
+      &:before {
+        color: #b1b5b6;
+      }
+    }
+  }
 
-		&:active,
-		&hover,
-		&focus,
-		&:disabled {
-			background: none !important;
-		}
+  /* **************************************** Button Link ********************************************* */
 
-		&:focus {
-			@include focus-border;
-			border-radius: unset;
-		}
+  &.Link {
+    background: none;
+    border: none !important;
+    //Important use due to Theme Patterns Silk UI
+    color: $regular-beta;
+    ;
 
-		&:active,
-		&:hover {
-			background: none !important;
-			color: color(regular-alpha) !important;
-		}
+    &:active,
+    &hover,
+    &focus,
+    &:disabled {
+      background: none !important;
+    }
 
-		&:disabled,
-		&[disabled] {
-			@include disabled-button();
-			border: none;
-		}
-	}
+    &:focus {
+      @include focus-border;
+      border-radius: unset;
+    }
 
-	&.Small {
-		font-size: 0.9em;
-		height: 26px;
-		line-height: 24px;
-		min-width: 76px;
-	}
+    &:active,
+    &:hover {
+      background: none !important;
+      color: $regular-alpha !important;
+    }
 
-	&.Big {
-		border-radius: 10px;
-		font-size: 2em;
-		height: 50px;
-		line-height: 44px;
-		min-width: 55px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
+    &:disabled,
+    &[disabled] {
+      @include disabled-button();
+      border: none;
+    }
+  }
 
-	&.XBig {
-		border-radius: 10px;
-		box-sizing: border-box;
-		font-size: 2em;
-		height: 50px;
-		line-height: 0;
-		min-width: 206px;
-		padding: 40px 10px;
-	}
+  &.Small {
+    font-size: 0.9em;
+    height: 26px;
+    line-height: 24px;
+    min-width: 76px;
+  }
 
-	&.Button.twoLines {
-		border-radius: 2px;
-		height: auto;
-		line-height: 15px;
-		padding: 5px 15px 5px 15px;
+  &.Big {
+    border-radius: 10px;
+    font-size: 2em;
+    height: 50px;
+    line-height: 44px;
+    min-width: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-		&:before {
-			line-height: 5px;
-			margin-top: 12px;
-		}
-		> div {
-			text-align: right;
-		}
-	}
+  &.XBig {
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 2em;
+    height: 50px;
+    line-height: 0;
+    min-width: 206px;
+    padding: 40px 10px;
+  }
 
-	&.ClinicalKey_button {
-		background: #ff8200;
-		border: solid 1px #ff8200;
-		border: solid 1px #ff8200;
-		border-color: #ff8200;
-		box-shadow: inset 0 1px 0 #ff8200, 0 2px 2px #ff8200;
-		color: #ffffff;
-		font-family: Arial, sans-serif;
-		font-size: 12px;
-		font-weight: bold;
-		&:hover {
-			background-color: #ff9b71 !important;
-			border: solid 1px rgba(255, 130, 0, 0.9);
-			border: solid 1px rgba(255, 130, 0, 0.9);
-			border-color: rgba(255, 130, 0, 0.9);
-			box-shadow: inset 0 1px 0 rgba(255, 130, 0, 0.9),
-				0 2px 2px rgba(255, 130, 0, 0.9);
-		}
-	}
+  &.Button.twoLines {
+    border-radius: 2px;
+    height: auto;
+    line-height: 15px;
+    padding: 5px 15px 5px 15px;
+
+    &:before {
+      line-height: 5px;
+      margin-top: 12px;
+    }
+
+    >div {
+      text-align: right;
+    }
+  }
+
+  &.ClinicalKey_button {
+    background: #ff8200;
+    border: solid 1px #ff8200;
+    border: solid 1px #ff8200;
+    border-color: #ff8200;
+    box-shadow: inset 0 1px 0 #ff8200, 0 2px 2px #ff8200;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #ff9b71 !important;
+      border: solid 1px rgba(255, 130, 0, 0.9);
+      border: solid 1px rgba(255, 130, 0, 0.9);
+      border-color: rgba(255, 130, 0, 0.9);
+      box-shadow: inset 0 1px 0 rgba(255, 130, 0, 0.9),
+        0 2px 2px rgba(255, 130, 0, 0.9);
+    }
+  }
 }

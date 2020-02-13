@@ -34,11 +34,11 @@
     border-color: #16979F;
 }
 
-@each $color in $sapphire__colors {
-    $label: nth($color, 1);
-    $value: nth($color, 2);
+// @each $color in $sapphire__colors {
+    //     $label: nth($color, 1);
+    //     $value: nth($color, 2);
 
-    .bordercolor--#{$label} {
-        border-color: #{$value} !important;
-    }
-}
+    //     .bordercolor--#{$label} {
+    //         border-color: #{$value} !important;
+    //     }
+    // }

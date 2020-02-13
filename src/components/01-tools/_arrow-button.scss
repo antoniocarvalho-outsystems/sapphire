@@ -24,7 +24,7 @@
 }
 
 @mixin upDownArrows {
-	background-color: color(sapphire-white);
+	background-color: $sapphire-white;
 	background-image: url($icon-arrow-up-down);
 	background-position-x: center;
 	background-position-y: center;
