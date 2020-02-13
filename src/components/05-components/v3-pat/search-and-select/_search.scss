@@ -1,0 +1,588 @@
+/*----------------------- SearchSD Styles --------------------------*/
+/*
+* This is the css for the search component SSD  
+*/
+
+.SearchSD {
+	position: relative;
+	&.Open {
+		.SearchSD___remove {
+			background-color: $sapphire-white;
+			border: 1px solid $light-grey;
+			border-radius: 50%;
+			cursor: pointer;
+			display: block !important;
+			height: 28px;
+			position: absolute;
+			right: 10px;
+			text-align: center;
+			top: 22%;
+			visibility: visible;
+			width: 28px;
+			z-index: 2;
+		}
+
+		.SearchSD__inputWrapper {
+			.icon {
+				color: $regular-beta;
+				font-size: 15px;
+				line-height: 28px;
+			}
+		}
+
+		.SearchSD_search {
+			> a:first-child {
+				background-color: red;
+			}
+		}
+
+		.SearchSD_content {
+			background-color: #fff;
+			display: block;
+		}
+	}
+
+	&.hasFavorite {
+		// .SearchSD__star {
+		// 	border-right: 1px solid red;
+		// 	display: table-cell;
+		// 	font-size: 8px;
+		// 	padding: 0 16px;
+		// 	vertical-align: middle;
+		// 	width: 48px;
+		// }
+
+		.SearchSD__inputWrapper {
+			display: table-cell !important;
+			position: relative;
+			vertical-align: middle !important;
+			width: calc(100% - 48px);
+		}
+	}
+
+	&.hasClone {
+		.SearchSD__cloneWrapper {
+			background-color: $regular-eta;
+			border-bottom-right-radius: 23px;
+			border-top-right-radius: 23px;
+			cursor: pointer;
+			display: table-cell;
+			font-size: 16px;
+			padding: 0;
+			vertical-align: middle;
+			width: 248px;
+
+			&:before {
+				color: $regular-alpha;
+				content: '\e615';
+				font-family: 'Sapphire-Icon-Font';
+				font-size: 20px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: normal;
+				padding-right: 10px;
+				pointer-events: none;
+				position: absolute;
+				text-transform: none;
+				top: 10px;
+				transform: rotateY(180deg);
+				z-index: 1;
+			}
+		}
+
+		.SearchSD___cloneTitle {
+			color: #7c7f7f;
+			display: inline-block;
+			font-size: 16px;
+			height: 100%;
+			line-height: 46px;
+			padding-left: 40px;
+			width: 100%;
+		}
+
+		.SearchSD__inputWrapper {
+			border-right: 1px solid #c9cdce;
+			width: 100%;
+		}
+
+		&.showClone {
+			.SearchSD__cloneWrapper {
+				background-color: #fff;
+			}
+			.SearchSD__inputWrapper {
+				/* pointer-events:none; */
+				background-color: #ecf6f8;
+				cursor: pointer;
+
+				input {
+					background-color: #ecf6f8;
+					pointer-events: none;
+				}
+			}
+		}
+
+		.SearchSD_search {
+			.SearchSD_search_favoriteLink {
+				background-color: #ecf6f8;
+			}
+		}
+	}
+
+	&.showFavorite {
+		.SearchSD_search {
+			.SearchSD_search_favoriteLink {
+				background-color: #fff;
+				border-right: none;
+			}
+		}
+
+		.SearchSD__inputWrapper {
+			border-right: none;
+		}
+
+		.SearchSD__cloneWrapper {
+			display: none;
+		}
+	}
+
+	.MultiSelectActive {
+		.SearchSD__FavoriteActions {
+			opacity: 1;
+			transition: visibility 0.3s, opacity 0.3s linear;
+			visibility: visible;
+		}
+	}
+
+	&.MultiSelectActive {
+		.SelectSD_contentWrapper + a {
+			filter: alpha(opacity=30);
+			opacity: 0.3;
+		}
+	}
+
+	span.ListRecords {
+		> span {
+			border-bottom: 1px solid $light-grey;
+			> span {
+				border-bottom: 1px solid $light-grey;
+				display: table;
+				width: 100%;
+			}
+
+			&:last-child {
+				border: 0;
+			}
+		}
+	}
+
+	.SelectSD_contentWrapper + a {
+		transition: opacity 0.3s ease-in-out;
+	}
+}
+
+.SearchSD_search {
+	background-color: $sapphire-white;
+	border: 1px solid $light-grey;
+	border-radius: 23px;
+	display: table;
+	height: 48px;
+	position: relative;
+	width: 100%;
+
+	.SearchSD_search_favoriteLink {
+		background-color: $regular-eta;
+		border-bottom-left-radius: 23px;
+		border-right: 1px solid $light-grey;
+		border-top-left-radius: 23px;
+		color: $regular-alpha;
+		cursor: pointer;
+		display: table-cell;
+		font-size: 8px;
+		padding: 0 16px;
+		text-decoration: none;
+		vertical-align: middle;
+		width: 48px;
+	}
+}
+
+.SearchSD__inputWrapper {
+	display: table-cell !important;
+	position: relative;
+	vertical-align: middle !important;
+
+	.SearchSD__return {
+		display: inline-block;
+		height: 100%;
+		left: 0;
+		pointer-events: auto;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+
+.SearchSD___remove {
+	font-size: 0;
+	visibility: hidden;
+}
+
+.SearchSD___input {
+	width: 100%;
+
+	input[type='text'] {
+		border: 0 !important;
+
+		border-bottom-left-radius: 23px !important;
+		border-bottom-right-radius: 23px !important;
+		border-top-left-radius: 23px !important;
+		border-top-right-radius: 23px !important;
+		box-shadow: none;
+		font-size: $font-size-heading3 !important;
+		padding-left: 40px !important;
+		padding-right: 50px !important;
+
+		&::placeholder {
+			color: $regular-beta !important;
+			font-family: 'LatoBold';
+			font-size: $font-size-heading3;
+		}
+
+		&:hover,
+		&:focus,
+		&:focus {
+			background-color: $sapphire-white !important;
+			border: none !important;
+			box-shadow: none !important;
+		}
+	}
+
+	&:before {
+		color: $regular-alpha;
+		content: '\e690';
+		font-family: 'Sapphire-Icon-Font';
+		font-size: 20px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		padding-right: 10px;
+		pointer-events: none;
+		position: absolute;
+		text-transform: none;
+		top: 10px;
+		transform: rotateY(180deg);
+		z-index: 1;
+	}
+}
+
+/**
+* When the sdd widget input hasFavorite is set to true
+* the .SearchSD div class gets a extra class called 
+* .hasFavorite
+*
+* The hasFavorite input the will add star icon/link 
+*
+*/
+
+.SearchSD__FavoriteCounter {
+	color: #7c7f7f;
+	display: table-cell;
+	font-size: 16px;
+	vertical-align: middle;
+	width: 30%;
+}
+
+.SearchSD__FavoriteActions {
+	display: table-cell;
+	opacity: 0;
+	padding: 0 16px;
+	text-align: right;
+	transition: visibility 0.3s, opacity 0.3s linear;
+	vertical-align: middle;
+	visibility: hidden;
+}
+
+.SearchSD__FavoriteActionsCancel,
+.SearchSD__FavoriteActionsAdd {
+	display: inline-block;
+
+	a,
+	a:link {
+		cursor: pointer;
+		display: inline-block;
+		font-size: 14px;
+		line-height: 34px;
+		padding: 0 15px;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+
+.SearchSD__FavoriteActionsCancel {
+	a,
+	a:link {
+		color: #16979f;
+		font-weight: 600;
+	}
+}
+
+.SearchSD__FavoriteActionsAdd {
+	a,
+	a:link {
+		background-color: #08a5af;
+		border: 1px solid #0a939c;
+		border-radius: 2px;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+		color: #fff;
+		font-weight: 600;
+		height: 34px;
+	}
+}
+
+.desktop .SearchSD__FavoriteActionsAdd a:hover,
+.desktop .SearchSD__FavoriteActionsAdd a:link:hover,
+.desktop .SearchSD__FavoriteActionsAdd a:hover:active,
+.desktop .SearchSD__FavoriteActionsAdd a:link:hover:active,
+.SearchSD__FavoriteActionsAdd a:hover,
+.SearchSD__FavoriteActionsAdd a:link:hover,
+.SearchSD__FavoriteActionsAdd a:hover:active,
+.SearchSD__FavoriteActionsAdd a:link:hover:active {
+	background: linear-gradient(180deg, #0ebec8 0%, #0cb3bf 100%);
+	border: 1px solid #0a939c;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.SearchSD__FavoriteRemove {
+	background-color: #ecf6f8;
+	border-left: 1px solid #c9cdce;
+	border-radius: 3px 0 0 0;
+	color: #7c7f7f;
+	display: table-cell;
+	font-size: 16px;
+	padding: 0;
+	vertical-align: middle;
+	width: 248px;
+
+	&:before {
+		color: #16979f;
+		content: '\e690';
+		font-family: 'Sapphire-Icon-Font';
+		font-size: 20px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		padding-right: 10px;
+		pointer-events: none;
+		position: absolute;
+		text-transform: none;
+		top: 10px;
+		transform: rotateY(180deg);
+		z-index: 1;
+	}
+}
+
+.SearchSD___BackToSearch {
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	color: #7c7f7f;
+	font-size: 16px;
+	height: 100%;
+	line-height: 46px;
+	padding-left: 40px;
+	width: 100%;
+}
+
+.SearchSD_content {
+	border: 1px solid $light-grey;
+	border-top: none;
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	.EmptySelectableList {
+		background-color: $sapphire-white;
+		border-bottom: 1px solid $light-grey;
+		display: block;
+		font-size: 16px;
+		font-weight: bold;
+		height: 50px;
+		line-height: 30px;
+		padding: 10px;
+
+		> span {
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		&.NoMessage {
+			height: auto;
+			padding: 0;
+		}
+
+		&.NoBorder {
+			border: none;
+		}
+	}
+
+	span.ListRecords span.selected .SelectSD {
+		background-color: #ecf6f8;
+		box-shadow: inset 0px 0px 0px 1px $regular-beta,
+			0px 0px 5px 0px $regular-beta;
+		position: relative;
+	}
+}
+
+/**
+* ListRecords inside SearchSD_content must have EmptySelectableList class
+* inside "Empty Message Style" ListRecords parameter
+* 
+* 
+* 
+*/
+
+.SearchSD__actionInput {
+	width: 100%;
+}
+
+.SearchSD_showMore {
+	background-color: #fff;
+	/* border-top: 1px solid #C9CDCE; */
+	border-radius: 0 0 4px 4px;
+	display: table;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+
+	> span {
+		display: table-cell;
+		height: 44px;
+		vertical-align: middle;
+		width: 100%;
+
+		&:empty {
+			display: none;
+		}
+	}
+	a {
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+.SSDPopupWrapper {
+	display: none;
+}
+
+.SSDOverLay {
+	align-items: center;
+	background-image: radial-gradient(
+		circle at 50% 100%,
+		rgba(0, 0, 0, 0.05),
+		rgba(0, 0, 0, 0.2)
+	);
+	bottom: 0;
+	color: #252525;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition: all 0.14s ease;
+	width: 100%;
+	z-index: 20;
+}
+
+.SSDConfirmBox {
+	background-color: #fff;
+	border: solid 1px #e4e4e4;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	width: auto;
+}
+
+.SelectSD__contentTitle .lasa-term b {
+}
+
+/*********************************************************************************************/
+
+.SearchSD__loading {
+	background-color: #fff;
+	color: rgba(0, 0, 0, 0.3);
+	/* font-weight: 600; */
+	/* text-transform: uppercase; */
+	color: #7c7f7f;
+	font-size: 16px;
+	padding: 16px 18px;
+	position: relative;
+	width: 100%;
+
+	&:before {
+		animation: loading 2s infinite;
+		content: attr(data-text);
+		max-width: 7em;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+	}
+}
+
+@keyframes loading {
+	0% {
+		max-width: 0;
+	}
+	100% {
+		max-width: 150px;
+	}
+}
+
+/*AR and FA*/
+
+.AR,
+.FA {
+	.SearchSD {
+		&.hasClone {
+			.SearchSD__cloneWrapper {
+				border-bottom-left-radius: 23px;
+				border-top-left-radius: 23px;
+			}
+		}
+	}
+
+	.SearchSD___input {
+		input[type='text'] {
+			&:hover,
+			&:active,
+			&:focus {
+				border: none !important;
+				box-shadow: none !important;
+			}
+		}
+
+		&:before {
+			padding-left: 10px;
+			padding-right: 0;
+		}
+	}
+
+	.SearchSD.Open {
+		.SearchSD___remove {
+			left: 10px;
+			right: auto;
+		}
+	}
+
+	.SearchSD_search {
+		.SearchSD_search_favoriteLink {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 23px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 23px;
+		}
+	}
+}
