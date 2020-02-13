@@ -584,7 +584,7 @@ body.PanelOpened .daterangepicker {
 .Page .DateTimeRangePicker-displayed input[type='text'].Not_Valid {
 	font-size: $font-size-regular;
 	line-height: 20px;
-	padding-right: 23px;
+	padding-right: 25px;
 	width: 180px;
 }
 
@@ -622,8 +622,9 @@ body.PanelOpened .daterangepicker {
 	color: $DateTimeRangePicker-color-active;
 	content: '\e60b';
 	font-family: $font-family-icons;
+	font-size: 1.143em;
 	position: absolute;
-	right: 9px;
+	right: 10px;
 	top: 50%;
 	transform: translateY(-50%);
 }

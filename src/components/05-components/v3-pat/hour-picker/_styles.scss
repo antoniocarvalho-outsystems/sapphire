@@ -1,12 +1,13 @@
 .HourPicker {
-	font-size: 0.857em;
+	font-size: 1em;
 
 	&:not(&--textTrigger) &__InputContainer:before {
 		color: $regular-alpha;
 		content: '\e62a';
 		font-family: $font-family-icons;
+		font-size: 1.143em;
 		position: absolute;
-		right: 9px;
+		right: 10px;
 		top: 50%;
 		transform: translateY(-50%);
 	}

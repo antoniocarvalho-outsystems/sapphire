@@ -1,4 +1,4 @@
-@mixin component-scroll($dark-bar: false, $border-radius: 9px) {
+@mixin component-scroll($dark-bar: false, $border-radius: 4px) {
 	& ::-webkit-scrollbar {
 		box-sizing: border-box;
 		height: 7px;
