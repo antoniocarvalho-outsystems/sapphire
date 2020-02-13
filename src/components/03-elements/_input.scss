@@ -251,8 +251,9 @@ input[type='text'] {
 .AR,
 .FA {
 	select,
-	textarea,
-	input[type]:not([type='checkbox']):not([type='radio']) {
+  textarea,
+  //input[type]:not([type='checkbox']):not([type='radio']) 
+  input[type='text'] {
 		&:focus {
 			border: 1px solid $dark-grey !important;
 		}

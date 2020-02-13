@@ -1,0 +1,196 @@
+/*----------------------- SelectSD Styles --------------------------*/
+/*
+* This is the css for the select component SSD  
+*/
+
+$font-size-8px: 0.5714em;
+
+.SelectSD-searched-term {
+	color: $dark-grey;
+	font-family: $font-family-bold;
+}
+
+.SelectSD {
+	background-color: $sapphire-white;
+	display: table;
+	min-height: 58px;
+	width: 100%;
+
+	&.hasFavorite {
+		.SelectSD_contentWrapper {
+			padding: 16px 0;
+		}
+	}
+
+	&:last-child {
+		border: 0;
+	}
+
+	&:hover {
+		background-color: $regular-eta;
+		cursor: pointer;
+	}
+
+	.SelectSD__multiple {
+		display: table-cell;
+		font-size: $font-size-8px;
+		padding: 16px 0;
+		vertical-align: middle;
+		width: 38px;
+
+		> input[type='checkbox'] {
+			height: 18px;
+			margin: 0;
+			width: 18px;
+
+			&:after {
+				border: 3px solid #0da2aa;
+				border-right: 0;
+				border-top: 0;
+				height: 5px;
+				left: 20%;
+				top: 24%;
+				transition: visibility 0.15s, opacity 0.15s linear;
+				width: 10px;
+			}
+		}
+	}
+	&.MultiSelectActive {
+		.SelectSD_contentWrapper,
+		.SelectSD_contentWrapper + a {
+			pointer-events: none;
+		}
+	}
+}
+
+.SelectSD__starLink {
+	color: $light-grey;
+	display: table-cell;
+	font-size: $font-size-8px;
+	padding: 16px 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 48px;
+}
+
+.SelectSD__starWrapper {
+	height: 100%;
+	width: 100%;
+
+	&.startActive {
+		&:hover {
+			.icon {
+				color: $regular-alpha;
+			}
+		}
+		.icon {
+			color: #c9cdce;
+		}
+	}
+
+	&.starDisabled {
+		.icon {
+			color: #c9cdce;
+		}
+	}
+
+	&.starSelected {
+		.icon {
+			color: $regular-alpha;
+		}
+	}
+}
+
+.SelectSD_contentWrapper {
+	display: table-cell;
+	padding: 5px 16px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.SelectSD__contentTitle {
+	color: #898989;
+	font-size: 16px;
+	line-height: 25px;
+	margin-right: 10px;
+}
+
+.SelectSD__contentICD {
+	color: #7c7f7f;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.SelectSD__tags {
+	display: inline-block;
+}
+
+.SelectSD__tags .StatusBadges {
+	margin-right: 10px;
+}
+
+.SelectSD_actionLink {
+	display: table-cell;
+	padding-top: 2px;
+	text-align: center;
+	vertical-align: middle;
+	width: 68px;
+}
+
+.SelectSD__action {
+	height: 100%;
+	width: 100%;
+
+	.icon {
+		background-color: $sapphire-white;
+		border: 1px solid $light-grey;
+		border-radius: 2px;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+		box-sizing: border-box;
+		color: $regular-beta;
+		height: 26px;
+		text-align: center;
+		width: 26px;
+	}
+}
+
+.SelectSD_actionLink:focus .SelectSD__action .icon {
+	border: none;
+	box-shadow: inset 0px 0px 0px 1px $regular-beta, 0px 0px 8px 0px $regular-beta;
+}
+
+.SelectSD--disabled {
+	pointer-events: none;
+}
+
+.SelectSD--disabled .SelectSD_actionLink {
+	opacity: 0.5;
+}
+
+.SelectSD--disabled .SelectSD__starLink {
+	pointer-events: all;
+}
+
+.SelectSD__contentTags {
+	line-height: 22px;
+}
+
+.SelectSD__contentTitle .Text_Note {
+	color: #5f6f79;
+}
+
+.SelectableList-EmptyMessage {
+	background-color: $sapphire-white;
+}
+
+/*AR and FA*/
+.FA .SelectSD_contentWrapper,
+.AR .SelectSD_contentWrapper {
+	text-align: right;
+}
+
+.FA .SelectSD__contentTitle,
+.AR .SelectSD__contentTitle {
+	margin-left: 10px;
+	margin-right: auto;
+}
