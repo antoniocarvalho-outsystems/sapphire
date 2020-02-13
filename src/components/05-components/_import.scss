@@ -1,10 +1,6 @@
 @import 'circled-patient';
-@import 'header';
 @import 'lds-ring';
-@import 'sidebar';
-@import 'timeline-detail';
 @import 'toggle-button';
-@import 'toolbar';
 @import 'wizard';
 
 /* SapphireTheme Components */
@@ -28,13 +24,13 @@
 @import 'v3-pat/clinical-badge/styles';
 @import 'v3-pat/datetime-range-picker/styles';
 @import 'v3-pat/demographic-item/styles';
-@import 'v3-pat/form-field/styles';
 @import 'v3-pat/dropdown-categories/styles';
+@import 'v3-pat/form-field/styles';
 @import 'v3-pat/fullscreen-tabs-wrapper/styles';
 @import 'v3-pat/generic-gallery/styles';
 @import 'v3-pat/generic-structure/styles';
-@import 'v3-pat/header-identification/styles';
 @import 'v3-pat/header/styles';
+@import 'v3-pat/header-identification/styles';
 @import 'v3-pat/hour-picker/styles';
 @import 'v3-pat/icon-label/styles';
 @import 'v3-pat/location-box/styles';
@@ -42,12 +38,15 @@
 @import 'v3-pat/main-menu/styles';
 @import 'v3-pat/multiple-selection-button/styles';
 @import 'v3-pat/navigation-control/styles';
+@import 'v3-pat/patient-medical-file/styles';
 @import 'v3-pat/person-card/styles';
 @import 'v3-pat/sapphire-radio-button/styles';
-@import 'v3-pat/section-expandable-inside/styles';
 @import 'v3-pat/section-expandable/styles';
+@import 'v3-pat/section-expandable-inside/styles';
 @import 'v3-pat/segmented-control/styles';
 @import 'v3-pat/select-system/styles';
 @import 'v3-pat/sidebar/styles';
 @import 'v3-pat/spinner-horizontal/styles';
 @import 'v3-pat/tabs-extended/styles';
+@import 'v3-pat/timeline-detail/styles';
+@import 'v3-pat/toolbar/styles';

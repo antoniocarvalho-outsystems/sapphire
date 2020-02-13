@@ -4,6 +4,16 @@ $font-size-15px: 1.0714em;
 $font-size-13px: 0.92em;
 $font-size-11px: 0.7857em;
 
+.Sidebar {
+  border-left: 1px solid #ddd;
+  height: 100%;
+  padding: 20px 10px;
+  position: fixed;
+  right: -320px;
+  top: 50px;
+  width: 300px;
+}
+
 .ISidebar {
   display: flex;
 
