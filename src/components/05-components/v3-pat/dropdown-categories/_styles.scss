@@ -207,7 +207,7 @@ $font-size-18px: 1.2857em;
 				width: 20px;
 
 				b {
-					@include upDownArrows;
+					@include up-down-arrows;
 				}
 			}
 		}

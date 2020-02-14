@@ -1,0 +1,36 @@
+.FlagLineWrapper {
+	position: relative;
+	z-index: 0;
+}
+
+.FlagLine {
+	border-left: 1px solid $regular-red;
+	bottom: 0;
+	position: absolute;
+	top: 15px;
+	width: 2px;
+	z-index: 1;
+
+	&_time {
+		background-color: $regular-red;
+		border-radius: 2px;
+		color: $regular-white;
+		font-size: 0.786em;
+		left: -1px;
+		padding: 3px 5px;
+		position: absolute;
+		top: -3px;
+		white-space: nowrap;
+	}
+}
+
+.AR,
+.FA {
+	.FlagLine {
+		transform: scale(-1, 1);
+
+		&_time {
+			direction: ltr;
+		}
+	}
+}

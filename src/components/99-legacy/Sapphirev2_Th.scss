@@ -22831,41 +22831,41 @@ body.confirmation-opened {
 }
 
 /** 9.149 Sapphire Patterns > FlagLine **/
-.FlagLineWrapper {
-  position: relative;
-  z-index: 0;
-}
+// .FlagLineWrapper {
+//   position: relative;
+//   z-index: 0;
+// }
 
-.FlagLine {
-  border-left: 1px solid #e53935;
-  bottom: 0;
-  position: absolute;
-  top: 9px;
-  width: 2px;
-  z-index: 1;
-}
+// .FlagLine {
+//   border-left: 1px solid #e53935;
+//   bottom: 0;
+//   position: absolute;
+//   top: 9px;
+//   width: 2px;
+//   z-index: 1;
+// }
 
-.AR .FlagLine,
-.FA .FlagLine {
-  transform: scale(-1, 1);
-}
+// .AR .FlagLine,
+// .FA .FlagLine {
+//   transform: scale(-1, 1);
+// }
 
-.FlagLine_time {
-  background-color: #e53935;
-  border-radius: 2px 2px 2px 0;
-  color: #fff;
-  font-size: 1rem;
-  left: -1px;
-  padding: 3px 5px;
-  position: absolute;
-  top: -3px;
-  white-space: nowrap;
-}
+// .FlagLine_time {
+//   background-color: #e53935;
+//   border-radius: 2px 2px 2px 0;
+//   color: #fff;
+//   font-size: 1rem;
+//   left: -1px;
+//   padding: 3px 5px;
+//   position: absolute;
+//   top: -3px;
+//   white-space: nowrap;
+// }
 
-.AR .FlagLine_time,
-.FA .FlagLine_time {
-  direction: ltr;
-}
+// .AR .FlagLine_time,
+// .FA .FlagLine_time {
+//   direction: ltr;
+// }
 
 /** 9.150 Sapphire Patterns > FloatingBadge **/
 .FloatingBadge {

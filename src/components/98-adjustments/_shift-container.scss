@@ -1,0 +1,119 @@
+.tablet {
+	.ShiftContainer {
+		overflow: auto;
+		width: auto;
+
+		&_header {
+			+ .PH {
+				display: inline-block;
+				position: relative;
+				vertical-align: middle;
+				white-space: normal;
+				width: auto;
+			}
+		}
+	}
+
+	.ShiftCellContent {
+		max-width: 135px;
+		min-width: 135px;
+		width: 135px;
+	}
+
+	.ShiftCard {
+		&__title {
+			white-space: normal;
+		}
+
+		&_timeLine {
+			display: inline-flex;
+			width: calc(100% - 300px);
+
+			> span {
+				background-color: $regular-white;
+				height: 100%;
+			}
+		}
+
+		&_description {
+			display: inline-block;
+		}
+	}
+
+	.ShiftExpandable {
+		+ div .FlagLine {
+			border-left: 1px solid $regular-red;
+			bottom: 0;
+			position: absolute;
+			top: 9px;
+			top: -10px;
+			width: 2px;
+			z-index: 30;
+		}
+
+		+ div .FlagLine_time {
+			background-color: $regular-red;
+			border-radius: 2px 2px 2px 0;
+			color: $regular-white;
+			font-size: 1em;
+			left: -1px;
+			padding: 3px 5px;
+			position: absolute;
+			top: -15px;
+			white-space: nowrap;
+		}
+	}
+}
+
+.ShiftCellContent {
+	.tooltip.tooltipstered {
+		cursor: pointer;
+	}
+}
+
+.ShiftExpandable_header:not(.NoTitle).Expanded
+	+ div
+	.ShiftExpandable_container
+	.CardShiftWrapper.Overdue
+	.CardShift_content,
+.ShiftExpandable_header:not(.NoTitle).Expanded
+	+ div
+	.ShiftExpandable_container
+	.CardShiftWrapper.Neutral
+	.CardShift_content {
+	border-radius: 4px;
+}
+
+.ShiftExpandable_header:not(.NoTitle).Expanded
+	+ div
+	.ShiftExpandable_container
+	.CardShiftWrapper.Overdue
+	.CardShiftWrapperContainer
+	.CardShift_cardStatus,
+.ShiftExpandable_header:not(.NoTitle).Expanded
+	+ div
+	.ShiftExpandable_container
+	.CardShiftWrapper.Neutral
+	.CardShiftWrapperContainer
+	.CardShift_cardStatus {
+	padding: 0 0 5px 0;
+}
+
+.ShiftExpandable_header:not(.NoTitle).Expanded
+	+ div
+	.ShiftExpandable_container
+	.CardShiftWrapper.Overdue
+	.CardShift_content,
+.ShiftExpandable_header:not(.NoTitle).Expanded
+	+ div
+	.ShiftExpandable_container
+	.CardShiftWrapper.Neutral
+	.CardShift_content,
+.ShiftExpandable_header:not(.NoTitle).Expanded
+	+ div
+	.ShiftExpandable_container
+	.CardShiftWrapper.Disabled
+	.CardShift_content {
+	border-radius: 4px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}

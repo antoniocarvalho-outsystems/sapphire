@@ -1,30 +1,39 @@
-@mixin component-scroll($dark-bar: false, $border-radius: 9px) {
-  & ::-webkit-scrollbar {
-    box-sizing: border-box;
-    height: 7px;
-    width: 7px;
-  }
+@mixin component-scroll($dark-bar: false, $border-radius: 4px) {
+	& ::-webkit-scrollbar {
+		box-sizing: border-box;
+		height: 7px;
+		width: 7px;
+	}
 
-  & ::-webkit-scrollbar-track {
-    @if $dark-bar {
-      border: none;
-    }
+	& ::-webkit-scrollbar-track {
+		@if $dark-bar {
+			border: none;
+		} @else {
+			border-left: 5px solid $regular-white;
+			border-right: 5px solid $regular-white;
+		}
+	}
 
-    @else {
-      border-left: 5px solid $regular-white;
-      border-right: 5px solid $regular-white;
-    }
-  }
+	& ::-webkit-scrollbar-thumb {
+		@if $dark-bar {
+			border: 5px solid $regular-white;
+		} @else {
+			border: 5px solid $regular-alpha;
+		}
 
-  & ::-webkit-scrollbar-thumb {
-    @if $dark-bar {
-      border: 5px solid $regular-white;
-    }
+		border-radius: $border-radius;
+	}
+}
 
-    @else {
-      border: 5px solid $regular-alpha;
-    }
+@mixin component-scroll-root {
+	&::-webkit-scrollbar {
+		background-color: $regular-white;
+		height: 7px;
+		width: 7px;
+	}
 
-    border-radius: $border-radius;
-  }
+	&::-webkit-scrollbar-thumb {
+		border: 5px solid $regular-alpha;
+		border-radius: 4px;
+	}
 }
