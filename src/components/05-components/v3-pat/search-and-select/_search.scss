@@ -452,15 +452,6 @@
 	}
 }
 
-/**
-* When the sdd widget input hasFavorite is set to true
-* the .SearchSD div class gets a extra class called 
-* .hasFavorite
-*
-* The hasFavorite input the will add star icon/link 
-*
-*/
-
 .desktop .SearchSD__FavoriteActionsAdd a:hover,
 .desktop .SearchSD__FavoriteActionsAdd a:link:hover,
 .desktop .SearchSD__FavoriteActionsAdd a:hover:active,
@@ -537,7 +528,9 @@
 		&.hasClone {
 			.SearchSD__cloneWrapper {
 				border-bottom-left-radius: 23px;
+				border-bottom-right-radius: 0;
 				border-top-left-radius: 23px;
+				border-top-right-radius: 0;
 			}
 		}
 
