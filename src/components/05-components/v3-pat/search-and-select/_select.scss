@@ -72,13 +72,14 @@ $font-size-8px: 0.5714em;
 		vertical-align: middle;
 
 		.SelectSD__contentTitle {
-			color: #898989;
-			font-size: 16px;
+			color: $dark-grey;
+			font-size: $font-size-normal;
 			line-height: 25px;
 			margin-right: 10px;
+			text-transform: uppercase;
 
 			.Text_Note {
-				color: #5f6f79;
+				color: $mid-light-grey;
 			}
 		}
 
@@ -87,7 +88,7 @@ $font-size-8px: 0.5714em;
 		}
 
 		.SelectSD__contentICD {
-			color: #7c7f7f;
+			color: $mid-light-grey;
 			font-size: 14px;
 			line-height: 20px;
 		}
