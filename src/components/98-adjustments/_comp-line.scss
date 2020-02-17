@@ -1,0 +1,209 @@
+.CompLine_actions .PatientHeaderActions__subMenu > div:not(:first-child) {
+	margin-top: 0;
+}
+
+.AdmitPatiePopUp .CompLine_headLine .verticalAlignHelper {
+	display: none;
+}
+
+.TableRecords_Wrapper .CompLine {
+	margin-bottom: 0;
+}
+
+span:not(:last-of-type) .CompLine {
+	border-bottom: none;
+}
+
+.ie7,
+.ie8 {
+	.CompLineExpandable.expanded .CompLine__expandIcon {
+		filter: progid:dximagetransform.Microsoft.BasicImage(rotation=6);
+	}
+}
+
+.tablet {
+	&.portrait {
+		.ComplineForInvestig .CompLine_doctor .ThemeGrid_Width3,
+		.ComplineForInvestig .CompLine_doctor .ThemeGrid_Width9 {
+			width: 50%;
+		}
+
+		.ComplineForInvestig .CompLine_doctor {
+			width: 60%;
+		}
+
+		.ComplineForInvestig .CompLine__title {
+			white-space: normal;
+			width: 80px;
+		}
+
+		.ComplineForInvestig .CompLine .CompLine_head,
+		.ComplineForInvestig .CompLine.IsHeader .CompLine_head {
+			vertical-align: middle;
+			width: 24%;
+		}
+
+		.CompLine_doctor {
+			margin-bottom: 10px;
+		}
+
+		.CompLine_headText,
+		.CompLine__icon {
+			display: table-cell;
+		}
+
+		.CompLine_doctor {
+			padding: 10px 16px;
+		}
+	}
+
+	.CompLine_actions .PatientHeaderActions__menuPlaceholder:empty {
+		display: none;
+	}
+
+	.ComplineForInvestig .CompLine_doctor .ThemeGrid_Width3,
+	.ComplineForInvestig .CompLine_doctor .ThemeGrid_Width9 {
+		width: 50%;
+	}
+
+	.ComplineForInvestig .CompLine .CompLine_head,
+	.ComplineForInvestig .CompLine.IsHeader .CompLine_head {
+		width: 20%;
+	}
+
+	.ComplineForInvestig .CompLine__title {
+		white-space: normal;
+		width: 150px;
+	}
+
+	.CompLine_other {
+		display: block;
+		margin: 5px;
+		width: 100%;
+	}
+
+	.CompLine__title {
+		white-space: nowrap;
+	}
+
+	.CompLine_actions {
+		display: block;
+		padding: 5px 0;
+		width: 100%;
+	}
+
+	.CompLine_actions:last-child {
+		display: table-cell;
+		width: auto;
+	}
+
+	.CompLine_other {
+		display: block;
+		width: 100%;
+	}
+
+	.CompLine_moreActions a,
+	.ComPline_moreActions a:link {
+		display: none;
+	}
+
+	.CompLine_actions > div,
+	.CompLine_actions > span {
+		margin: 0;
+	}
+
+	.CompLine_other.PH:empty,
+	.CompLine_actions.PH:empty {
+		display: none;
+	}
+}
+
+.tablet,
+.phone:not(.PopupGenericFlex) {
+	.CompLine__icon {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	.CompLine_headText {
+		padding: 0 8px;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.desktop {
+	&.hd .CompLine_other {
+		width: 42%;
+	}
+
+	&.small {
+		.CompLine_other {
+			padding: 5px 20px;
+			width: 20%;
+		}
+
+		.CompLine_actions > div,
+		.CompLine_actions > span {
+			display: inline-block;
+			margin: 0 10px 0 0;
+			text-align: center;
+			vertical-align: middle;
+			width: max-content;
+		}
+
+		.CompLine_actions > div > div {
+			margin: 10px 0;
+		}
+	}
+
+	.CompLine_other {
+		width: 30%;
+	}
+}
+
+.phone:not(.PopupGenericFlex) {
+	.CompLineExpandable.expanded .CompLine_actions {
+		display: initial;
+		width: 100%;
+	}
+
+	.CompLine_headLine {
+		display: inline-block;
+	}
+
+	.CompLine_headLine .CompLine_head > div {
+		display: inline-block;
+		width: auto;
+	}
+
+	.CompLine_headLine .CompLine_doctor {
+		display: inline;
+	}
+
+	.CompLine_headLine .CompLine__expandIcon {
+		bottom: 36%;
+		left: 90%;
+	}
+
+	.CompLine_headLine span.verticalAlignHelper {
+		display: none;
+	}
+
+	.CompLine_headLine .CompLine_actions:first-child {
+		border: none;
+	}
+
+	.CompLine_actions {
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+.AR,
+.FA {
+	.desktop .CompLine_other {
+		width: 20%;
+	}
+}

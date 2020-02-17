@@ -76,7 +76,6 @@
 				cursor: default;
 				font-family: $font-family-bold;
 				padding: 0 20px;
-				text-align: left;
 
 				.isLinkEpandable {
 					height: 36px;
@@ -183,6 +182,8 @@
 
 	.SectionExpandable {
 		&__icon {
+			color: $regular-alpha;
+
 			.fa-fw {
 				font-weight: bold;
 			}
@@ -201,14 +202,24 @@
 .AR,
 .FA {
 	.SectionPrescriptionExpandableArea {
-		&.isLinkEpandable .PrescriptionExpandable_header {
-			padding-right: 15px;
-			text-align: right;
+		&.isLinkEpandable {
+			.PrescriptionExpandable_header {
+				padding-right: 15px;
+
+				> div:nth-child(2) {
+					margin-left: 6px;
+					margin-right: 0;
+				}
+			}
 		}
 
 		.PrescriptionExpandable_icon {
-			margin-left: 20px;
+			margin-left: 15px;
 			margin-right: 0;
+		}
+
+		.PrescriptionExpandable_header__IconDiv {
+			margin-right: 25px;
 		}
 	}
 }

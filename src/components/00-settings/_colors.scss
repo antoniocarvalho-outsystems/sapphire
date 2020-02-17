@@ -13,7 +13,7 @@
 // .Blue                  : #039BE5
 // .BlueLight             : #C4F0EB - Changed to C4F0EB    LightBlue Deprecated
 // .BlueNavy              : #C4F0EB - Changed to C4F0EB    LightBlue  Deprecated
-// .BodyColor             : #F3F3F3
+// .BodyColor             : #F3F3F3 - $body-color
 // .Brown                 : #ca2c92 - Deprecated
 // .DarkBeige             : #928D09
 // .DarkBlue              : #194968
@@ -32,14 +32,14 @@
 // .LightBlue2            : #F0FAF9 - $blue-light-2
 // .LightGreen            : #C2DEA8
 // .LightBeige            : #F5F4E0
-// .LightGrey             : #D6D6D6
+// .LightGrey             : #D6D6D6 - $light-grey
 // .LightOrange           : #FCC891
 // .LightPink             : #ca2c92 - Deprecated
 // .LightRed              : #FAD5D5
 // .LightTurquoise        : #C4F0EB - Changed to C4F0EB  LightBlue Deprecated
 // .LightYellow           : #FFEAB5
 // .MidLightGrey          : #ADADAD
-// .MidDarkGrey           : #5C5C5C
+// .MidDarkGrey           : #5C5C5C - $mid-dark-grey
 // .Orange                : #FFA000
 // .Pink                  : #C32B87
 // .PinkLight             : #C892B3
@@ -208,8 +208,6 @@ $secondary-lighter: #c4f0eb;
 // $text-silver:#D6D6D&;
 // $text-turquoise:#039BE5;
 // $text-yellow:#FBc02D;
-
-
 
 // $sapphire-color-text-dark: #2A7221;
 // $sapphire-color-text-regular:#119822;

@@ -8,7 +8,7 @@
 
 	&.expanded {
 		.HeaderIcon {
-			@include animation-arrow-button(180deg);
+			@include animation-arrow-button(0deg);
 
 			position: relative;
 		}
@@ -37,16 +37,16 @@
 		width: 100%;
 
 		.HeaderIcon.open {
-			@include animation-arrow-button(0deg);
+			@include animation-arrow-button(180deg);
 		}
 
 		.HeaderIcon.closed {
-			@include animation-arrow-button(180deg);
+			@include animation-arrow-button(0deg);
 		}
 	}
 
 	.HeaderIcon {
-		@include animation-arrow-button(0deg);
+		@include animation-arrow-button(180deg);
 
 		cursor: pointer;
 		font-size: 0.857em;
