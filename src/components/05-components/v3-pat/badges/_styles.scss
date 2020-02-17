@@ -46,39 +46,42 @@
 		@include badges($sapphire-white, $light-green);
 	}
 
+	&.IconTextRed {
+		color: $regular-red;
+	}
+	&.IconTextBlack {
+		color: $dark-grey;
+	}
+
 	/*New Parameters StatusBadge*/
 
 	/*NoBackground*/
 	&.InvertBackground {
 		.BadgeRed {
-			@include badges($sapphire-white, $regular-red, false);
+			@include badges($regular-red, false);
 		}
 		.BadgeGreen {
-			@include badges($sapphire-white, $regular-green, false);
+			@include badges($regular-green, false);
 		}
 		.BadgeYellow {
-			@include badges($sapphire-white, $regular-yellow, false);
+			@include badges($regular-yellow, false);
 		}
 		.BadgeGrey {
-			@include badges($sapphire-white, $light-grey, false);
+			@include badges($light-grey, false);
 		}
 		.BadgeBlue {
-			@include badges($sapphire-white, $dark-blue, false);
+			@include badges($dark-blue, false);
 		}
 		.BadgeSapphireBlue2 {
-			@include badges($sapphire-white, $regular-blue, false);
+			@include badges($regular-blue, false);
 		}
-	}
+		&.IconTextRed {
+			color: $regular-red;
+		}
 
-	/*IconTextColor*/
-	.StatusBadges.InvertBackground.IconTextRed,
-	.StatusBadges.IconTextRed {
-		color: $regular-red;
-	}
-
-	.StatusBadges.InvertBackground.IconTextBlack,
-	.StatusBadges.IconTextBlack {
-		color: $dark-grey;
+		&.IconTextBlack {
+			color: $dark-grey;
+		}
 	}
 
 	.tablet .StatusBadges .Badges_Icon + div {
