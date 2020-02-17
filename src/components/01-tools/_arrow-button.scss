@@ -1,21 +1,25 @@
-@mixin arrow-button {
+@mixin arrow-button(
+	$color-base: $regular-beta,
+	$size-base: 22px,
+	$font-size: 0.857em
+) {
 	align-items: center;
 	background-color: transparent;
-	border: 2px solid $regular-beta;
+	border: 2px solid $color-base;
 	border-radius: 50%;
 	cursor: pointer;
 	display: flex;
-	height: 22px;
+	height: $size-base;
 	justify-content: center;
 	text-align: center;
-	width: 22px;
+	width: $size-base;
 	z-index: 1;
 
 	&:before {
-		color: $regular-beta;
+		color: $color-base;
 		content: '\e611';
 		font-family: $font-family-icons;
-		font-size: 0.857em;
+		font-size: $font-size;
 	}
 
 	&:hover {

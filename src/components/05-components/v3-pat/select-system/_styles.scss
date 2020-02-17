@@ -54,7 +54,7 @@
 					color: $sapphire-dark-grey;
 					content: '\e690';
 					font-family: 'Sapphire-Icon-Font';
-					font-size: 16px;
+					font-size: $font-size-heading3;
 					font-style: normal;
 					font-variant: normal;
 					font-weight: normal;
@@ -89,7 +89,7 @@
 					color: $dark-grey;
 					cursor: pointer;
 					display: inline-block;
-					font-size: 22px;
+					font-size: $font-size-heading2;
 					font-weight: bold;
 					line-height: 22px;
 					margin: 0;
@@ -138,7 +138,7 @@
 					color: $dark-grey;
 					cursor: pointer;
 					display: inline-block;
-					font-size: 22px;
+					font-size: $font-size-heading2;
 					font-weight: bold;
 					line-height: 22px;
 					margin: 0;
@@ -150,7 +150,7 @@
 				}
 
 				.select2-selection__clear {
-					font-size: 22px;
+					font-size: $font-size-heading2;
 				}
 
 				.select2-selection__arrow {
@@ -225,7 +225,7 @@
 				color: $regular-grey;
 				content: '\e690';
 				font-family: 'Sapphire-Icon-Font';
-				font-size: 18px;
+				font-size: $font-size-heading3;
 				position: absolute;
 				right: 10px;
 				top: 6px;
@@ -301,7 +301,7 @@
 
 .select2-container .tagCustom .select2-search--inline > input {
 	display: inline-block;
-	font-size: 14px;
+	font-size: $font-size-normal;
 	margin-top: 8px;
 }
 

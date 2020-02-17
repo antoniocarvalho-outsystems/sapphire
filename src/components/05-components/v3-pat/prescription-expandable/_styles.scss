@@ -1,0 +1,214 @@
+.SectionPrescriptionExpandableArea {
+	&.expanded {
+		&:not(.isLinkEpandable) {
+			.PrescriptionExpandable_content {
+				border: 1px solid $regular-red;
+				border-top: none;
+			}
+		}
+
+		.PrescriptionExpandable {
+			&_header {
+				border-bottom: transparent;
+
+				&.NotExpandable {
+					color: $dark-grey;
+					height: auto;
+					justify-content: left;
+					padding: 15px;
+
+					&.Moderate {
+						border-bottom: none;
+						border-radius: 0;
+					}
+				}
+			}
+
+			&_content {
+				display: block;
+				height: auto;
+				overflow: visible;
+
+				.PrescriptionCardList {
+					.PrescriptionCard {
+						&:last-of-type {
+							border-radius: unset;
+							border-top: none;
+						}
+
+						&:not(:last-of-type) {
+							border-top: none;
+							padding: 20px 25px;
+						}
+					}
+				}
+			}
+		}
+
+		.SectionExpandable {
+			&__icon {
+				.PrescriptionExpandable_header__IconDiv .icon {
+					transform: rotate(0deg);
+				}
+			}
+		}
+	}
+
+	&.autoheight {
+		.PrescriptionExpandable_content {
+			display: block;
+			height: auto !important;
+			transition: 0;
+		}
+	}
+
+	&.isLinkEpandable {
+		&.expanded .PrescriptionExpandable_content {
+			padding: 18px 54px;
+		}
+
+		.PrescriptionExpandable {
+			&_header {
+				@include flex-custom-align(center, unset);
+
+				background-color: $pink-light-2;
+				border: none;
+				cursor: default;
+				font-family: $font-family-bold;
+				padding: 0 20px;
+				text-align: left;
+
+				.isLinkEpandable {
+					height: 36px;
+					padding: 10px 15px;
+				}
+
+				.isLinkEpandable + .PrescriptionExpandable_content {
+					padding-left: 40px;
+					padding-top: 17px;
+				}
+
+				> div:nth-child(2) {
+					margin-right: 6px;
+					word-break: break-word;
+				}
+			}
+
+			&_header__LinksDiv {
+				cursor: pointer;
+
+				> div:first-child {
+					display: none;
+				}
+
+				> div:last-child {
+					color: $regular-beta;
+				}
+			}
+
+			&_content {
+				padding: 0;
+			}
+		}
+	}
+
+	.PrescriptionExpandable {
+		&_header {
+			@include flex-custom-align(center, center);
+
+			background-color: $regular-white;
+			border: 1px solid $regular-red;
+			border-radius: 1px;
+			color: $regular-red;
+			cursor: pointer;
+			font-family: $font-family-regular;
+			font-size: 1em;
+			height: 49px;
+
+			&.Critical {
+				background-color: $pink-light-2;
+			}
+
+			&.High {
+				background-color: $light-orange;
+				color: $dark-orange;
+			}
+		}
+
+		&_content {
+			background-color: $regular-white;
+			border-top: none;
+			box-sizing: content-box;
+			font-size: 1em;
+			height: 0;
+			margin-top: 0;
+			overflow: hidden;
+			transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+
+			.PrescriptionCardList {
+				border-radius: 0px;
+
+				.PrescriptionCard {
+					border-radius: 0;
+
+					.SeeMore {
+						color: $regular-beta;
+						font-family: $font-family-bold;
+						font-size: 1em;
+						text-decoration: none;
+					}
+
+					.PrescriptionText {
+						color: $dark-grey;
+					}
+
+					.InformationContent {
+						margin-top: 2px;
+					}
+
+					.InformationText,
+					.InteractionText {
+						color: $regular-red;
+						font-size: 1em;
+					}
+				}
+			}
+		}
+
+		&_icon {
+			color: $dark-red;
+			margin-right: 20px;
+		}
+	}
+
+	.SectionExpandable {
+		&__icon {
+			.fa-fw {
+				font-weight: bold;
+			}
+
+			.PrescriptionExpandable_header__IconDiv .icon {
+				@include arrow-button($regular-red, 20px, 0.8em);
+
+				margin-left: 20px;
+				transform: rotate(180deg);
+				transition: all 500ms ease-in;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.SectionPrescriptionExpandableArea {
+		&.isLinkEpandable .PrescriptionExpandable_header {
+			padding-right: 15px;
+			text-align: right;
+		}
+
+		.PrescriptionExpandable_icon {
+			margin-left: 20px;
+			margin-right: 0;
+		}
+	}
+}
