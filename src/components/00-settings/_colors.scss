@@ -13,7 +13,7 @@
 // .Blue                  : #039BE5
 // .BlueLight             : #C4F0EB - Changed to C4F0EB    LightBlue Deprecated
 // .BlueNavy              : #C4F0EB - Changed to C4F0EB    LightBlue  Deprecated
-// .BodyColor             : #F3F3F3
+// .BodyColor             : #F3F3F3 - $body-color
 // .Brown                 : #ca2c92 - Deprecated
 // .DarkBeige             : #928D09
 // .DarkBlue              : #194968
@@ -32,14 +32,14 @@
 // .LightBlue2            : #F0FAF9 - $blue-light-2
 // .LightGreen            : #C2DEA8
 // .LightBeige            : #F5F4E0
-// .LightGrey             : #D6D6D6
+// .LightGrey             : #D6D6D6 - $light-grey
 // .LightOrange           : #FCC891
 // .LightPink             : #ca2c92 - Deprecated
 // .LightRed              : #FAD5D5
 // .LightTurquoise        : #C4F0EB - Changed to C4F0EB  LightBlue Deprecated
 // .LightYellow           : #FFEAB5
 // .MidLightGrey          : #ADADAD
-// .MidDarkGrey           : #5C5C5C
+// .MidDarkGrey           : #5C5C5C - $mid-dark-grey
 // .Orange                : #FFA000
 // .Pink                  : #C32B87
 // .PinkLight             : #C892B3
@@ -75,21 +75,21 @@
 //
 // Style guide: Colors
 
-// $regular-alpha: red;
-// $regular-beta: #C84B56;
-// $regular-gamma: #DE5360;
-// $regular-delta: #F45B69;
-// $regular-epsilon: #F78791;
-// $regular-zeta: #F8969F;
-// $regular-eta: #F9A5AD;
+$regular-alpha: red;
+$regular-beta: #C84B56;
+$regular-gamma: #DE5360;
+$regular-delta: #F45B69;
+$regular-epsilon: #F78791;
+$regular-zeta: #F8969F;
+$regular-eta: #F9A5AD;
 
-$regular-alpha: #00bfa5;
-$regular-beta: #009884;
-$regular-gamma: #006758;
-$regular-delta: #00433a;
-$regular-epsilon: #56d3c2;
-$regular-zeta: #c4f0eb;
-$regular-eta: #f2fffd;
+// $regular-alpha: #00bfa5;
+// $regular-beta: #009884;
+// $regular-gamma: #006758;
+// $regular-delta: #00433a;
+// $regular-epsilon: #56d3c2;
+// $regular-zeta: #c4f0eb;
+// $regular-eta: #f2fffd;
 
 $regular-beige: #e6e2aa;
 $regular-black: #131819;
@@ -209,15 +209,14 @@ $secondary-lighter: #c4f0eb;
 // $text-turquoise:#039BE5;
 // $text-yellow:#FBc02D;
 
+$sapphire-color-text-dark: #5A7684;
+$sapphire-color-text-regular:#92AFD7;
+$sapphire-color-text-light: #C5D1EB;
 
+// $sapphire-color-text-dark: $regular-black;
+// $sapphire-color-text-regular: $dark-grey;
+// $sapphire-color-text-light: $mid-dark-grey;
 
-// $sapphire-color-text-dark: #2A7221;
-// $sapphire-color-text-regular:#119822;
-// $sapphire-color-text-light: #31CB00;
-
-$sapphire-color-text-dark: $regular-black;
-$sapphire-color-text-regular: $dark-grey;
-$sapphire-color-text-light: $mid-dark-grey;
 $sapphire-color-text-lighter: $mid-light-grey;
 $sapphire-color-text-lightest: $light-grey;
 $sapphire-color-disabled-background: $sapphire-light;

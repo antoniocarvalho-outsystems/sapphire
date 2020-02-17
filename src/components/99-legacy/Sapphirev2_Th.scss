@@ -14185,493 +14185,493 @@ a.Button.twoLines > div {
 /* 9.43 Sapphire Patterns > Custom_Patterns > CompLine *********************************/
 /*-------------------------------------------------------------------------------------*/
 
-.CompLine {
-	background-color: #fff;
-	border: 1px solid #d3d6d7;
-	border-radius: 2px;
-	color: #262525;
-	margin-bottom: 10px;
-}
+// .CompLine {
+// 	background-color: #fff;
+// 	border: 1px solid #d3d6d7;
+// 	border-radius: 2px;
+// 	color: #262525;
+// 	margin-bottom: 10px;
+// }
 
 /*No Margin in Records*/
-.TableRecords_Wrapper .CompLine {
-	margin-bottom: 0;
-}
+// .TableRecords_Wrapper .CompLine {
+// 	margin-bottom: 0;
+// }
 
-.CompLineExpandable.expanded .CompLine__expandIcon {
-	-webkit-transform: rotate(-180deg);
-	-ms-transform: rotate(-180deg);
-	transform: rotate(-180deg);
-}
+// .CompLineExpandable.expanded .CompLine__expandIcon {
+// 	-webkit-transform: rotate(-180deg);
+// 	-ms-transform: rotate(-180deg);
+// 	transform: rotate(-180deg);
+// }
 
-.ie7 .CompLineExpandable.expanded .CompLine__expandIcon,
-.ie8 .CompLineExpandable.expanded .CompLine__expandIcon {
-	filter: progid:dximagetransform.Microsoft.BasicImage(rotation=6);
-}
+// .ie7 .CompLineExpandable.expanded .CompLine__expandIcon,
+// .ie8 .CompLineExpandable.expanded .CompLine__expandIcon {
+// 	filter: progid:dximagetransform.Microsoft.BasicImage(rotation=6);
+// }
 
-.CompLine__expandIcon {
-	background-color: transparent;
-	display: table-cell;
-	height: 100%;
-	margin-left: -14px;
-	margin-right: 0;
-	margin-top: 0;
-	padding: 0;
-	position: absolute;
-	text-align: center;
-	width: 28px;
-}
+// .CompLine__expandIcon {
+// 	background-color: transparent;
+// 	display: table-cell;
+// 	height: 100%;
+// 	margin-left: -14px;
+// 	margin-right: 0;
+// 	margin-top: 0;
+// 	padding: 0;
+// 	position: absolute;
+// 	text-align: center;
+// 	width: 28px;
+// }
 
-.AR .CompLine__expandIcon,
-.FA .CompLine__expandIcon {
-	background-color: transparent;
-	display: table-cell;
-	height: 100%;
-	margin-left: 0;
-	margin-right: -14px;
-	margin-top: 0;
-	padding: 0;
-	position: absolute;
-	text-align: center;
-	width: 28px;
-}
+// .AR .CompLine__expandIcon,
+// .FA .CompLine__expandIcon {
+// 	background-color: transparent;
+// 	display: table-cell;
+// 	height: 100%;
+// 	margin-left: 0;
+// 	margin-right: -14px;
+// 	margin-top: 0;
+// 	padding: 0;
+// 	position: absolute;
+// 	text-align: center;
+// 	width: 28px;
+// }
 
-.CompLine__pointerIcon {
-	background-color: #efefef;
-	border: 1px solid #ddd;
-	border-radius: 50%;
-	color: #7f949f;
-	cursor: pointer;
-	display: block;
-	font-size: 20px;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
+// .CompLine__pointerIcon {
+// 	background-color: #efefef;
+// 	border: 1px solid #ddd;
+// 	border-radius: 50%;
+// 	color: #7f949f;
+// 	cursor: pointer;
+// 	display: block;
+// 	font-size: 20px;
+// 	position: relative;
+// 	top: 50%;
+// 	transform: translateY(-50%);
+// }
 
-.CompLine_headLine {
-	cursor: default;
-	display: table;
-	margin-top: 0;
-	min-height: 54px;
-	padding: 0;
-	position: relative;
-	width: 100%;
-}
+// .CompLine_headLine {
+// 	cursor: default;
+// 	display: table;
+// 	margin-top: 0;
+// 	min-height: 54px;
+// 	padding: 0;
+// 	position: relative;
+// 	width: 100%;
+// }
 
-.CompLine_Expand.White {
-	background-color: #fff;
-}
+// .CompLine_Expand.White {
+// 	background-color: #fff;
+// }
 
-.CompLine_icon {
-	display: table-cell;
-	vertical-align: middle;
-}
+// .CompLine_icon {
+// 	display: table-cell;
+// 	vertical-align: middle;
+// }
 
-.CompLine__icon {
-	padding: 5px;
-	text-align: center;
-}
+// .CompLine__icon {
+// 	padding: 5px;
+// 	text-align: center;
+// }
 
-.CompLine_head {
-	background-color: #efefef;
-	border-right: 1px solid #ddd;
-	display: table-cell;
-	padding: 8px;
-	vertical-align: middle;
-	white-space: nowrap;
-}
+// .CompLine_head {
+// 	background-color: #efefef;
+// 	border-right: 1px solid #ddd;
+// 	display: table-cell;
+// 	padding: 8px;
+// 	vertical-align: middle;
+// 	white-space: nowrap;
+// }
 
-.CompLine_headText {
-	text-align: left;
-}
+// .CompLine_headText {
+// 	text-align: left;
+// }
 
-.AR .CompLine_headText,
-.FA .CompLine_headText {
-	text-align: right;
-}
+// .AR .CompLine_headText,
+// .FA .CompLine_headText {
+// 	text-align: right;
+// }
 
-.CompLine__title {
-	font-weight: bold;
-}
+// .CompLine__title {
+// 	font-weight: bold;
+// }
 
-.Heading2.CompLine__expandIcon {
-	display: inline-table;
-	text-align: left;
-	vertical-align: middle;
-	width: 16px;
-}
+// .Heading2.CompLine__expandIcon {
+// 	display: inline-table;
+// 	text-align: left;
+// 	vertical-align: middle;
+// 	width: 16px;
+// }
 
-.AR .Heading2.CompLine__expandIcon,
-.FA .Heading2.CompLine__expandIcon {
-	display: inline-table;
-	text-align: right;
-	vertical-align: middle;
-	width: 16px;
-}
+// .AR .Heading2.CompLine__expandIcon,
+// .FA .Heading2.CompLine__expandIcon {
+// 	display: inline-table;
+// 	text-align: right;
+// 	vertical-align: middle;
+// 	width: 16px;
+// }
 
-.CompLine_doctor {
-	display: table-cell;
-	height: 46px;
-	padding: 5px 25px;
-	vertical-align: middle !important;
-	width: 65%;
-}
+// .CompLine_doctor {
+// 	display: table-cell;
+// 	height: 46px;
+// 	padding: 5px 25px;
+// 	vertical-align: middle !important;
+// 	width: 65%;
+// }
 
-.CompLine_other {
-	display: table-cell;
-	font-size: 14px;
-	height: 46px;
-	line-height: 18px;
-	padding: 5px 25px;
-	vertical-align: middle !important;
-}
+// .CompLine_other {
+// 	display: table-cell;
+// 	font-size: 14px;
+// 	height: 46px;
+// 	line-height: 18px;
+// 	padding: 5px 25px;
+// 	vertical-align: middle !important;
+// }
 
-.CompLine_actions {
-	display: table-cell;
-	height: 46px;
-	padding-left: 0;
-	padding-right: 10px;
-	text-align: right;
-	vertical-align: middle !important;
-}
+// .CompLine_actions {
+// 	display: table-cell;
+// 	height: 46px;
+// 	padding-left: 0;
+// 	padding-right: 10px;
+// 	text-align: right;
+// 	vertical-align: middle !important;
+// }
 
-.AR .CompLine_actions,
-.FA .CompLine_actions {
-	padding-left: 10px;
-	padding-right: 0;
-	text-align: left;
-}
+// .AR .CompLine_actions,
+// .FA .CompLine_actions {
+// 	padding-left: 10px;
+// 	padding-right: 0;
+// 	text-align: left;
+// }
 
-.CompLine_actions a > div {
-	vertical-align: middle;
-}
+// .CompLine_actions a > div {
+// 	vertical-align: middle;
+// }
 
-span:not(:last-of-type) .CompLine {
-	border-bottom: none;
-}
+// span:not(:last-of-type) .CompLine {
+// 	border-bottom: none;
+// }
 
-.CompLine_moreActions {
-	display: table-cell;
-	height: 46px;
-	text-align: right;
-	vertical-align: middle !important;
-}
+// .CompLine_moreActions {
+// 	display: table-cell;
+// 	height: 46px;
+// 	text-align: right;
+// 	vertical-align: middle !important;
+// }
 
-.AR .CompLine_moreActions,
-.FA .CompLine_moreActions {
-	display: table-cell;
-	height: 46px;
-	text-align: left;
-	vertical-align: middle !important;
-}
+// .AR .CompLine_moreActions,
+// .FA .CompLine_moreActions {
+// 	display: table-cell;
+// 	height: 46px;
+// 	text-align: left;
+// 	vertical-align: middle !important;
+// }
 
-.CompLine_actions a:not(.Button),
-.CompLine_actions a:not(.Button):link,
-.CompLine_actions a:not(.Button):visited {
-	color: #262525;
-	text-align: center;
-	vertical-align: middle;
-}
+// .CompLine_actions a:not(.Button),
+// .CompLine_actions a:not(.Button):link,
+// .CompLine_actions a:not(.Button):visited {
+// 	color: #262525;
+// 	text-align: center;
+// 	vertical-align: middle;
+// }
 
-.CompLine_Expand {
-	background-color: #e1e6e9;
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
-	border-top: none;
-	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-	box-sizing: content-box;
-	height: 0;
-	margin-top: 0;
-	overflow: hidden;
-	padding: 0 10px;
-	-webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
-	transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
-	visibility: visible;
-}
+// .CompLine_Expand {
+// 	background-color: #e1e6e9;
+// 	border-bottom-left-radius: 4px;
+// 	border-bottom-right-radius: 4px;
+// 	border-top: none;
+// 	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+// 	box-sizing: content-box;
+// 	height: 0;
+// 	margin-top: 0;
+// 	overflow: hidden;
+// 	padding: 0 10px;
+// 	-webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+// 	transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+// 	visibility: visible;
+// }
 
-.CompLineExpandable.autoheight .CompLine_Expand {
-	display: block;
-	height: auto !important;
-	-webkit-transition: 0;
-	transition: 0;
-}
+// .CompLineExpandable.autoheight .CompLine_Expand {
+// 	display: block;
+// 	height: auto !important;
+// 	-webkit-transition: 0;
+// 	transition: 0;
+// }
 
-.CompLineExpandable.expanded .CompLine_Expand {
-	display: block;
-	height: auto;
-	overflow: visible;
-	padding: 5px 10px;
-	visibility: visible;
-}
+// .CompLineExpandable.expanded .CompLine_Expand {
+// 	display: block;
+// 	height: auto;
+// 	overflow: visible;
+// 	padding: 5px 10px;
+// 	visibility: visible;
+// }
 
-.CompLine_actions > div,
-.CompLine_actions > span {
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
-}
+// .CompLine_actions > div,
+// .CompLine_actions > span {
+// 	display: inline-block;
+// 	text-align: center;
+// 	vertical-align: middle;
+// }
 
-/*IsHeader*/
-.CompLine.IsHeader {
-	background-color: transparent;
-	border: none;
-	margin: 0;
-}
+// /*IsHeader*/
+// .CompLine.IsHeader {
+// 	background-color: transparent;
+// 	border: none;
+// 	margin: 0;
+// }
 
-.CompLine.IsHeader .CompLineExpandable .CompLine_head {
-	background-color: transparent;
-	border: none;
-}
+// .CompLine.IsHeader .CompLineExpandable .CompLine_head {
+// 	background-color: transparent;
+// 	border: none;
+// }
 
-.CompLine.IsHeader .CompLine__pointerIcon {
-	display: none;
-}
+// .CompLine.IsHeader .CompLine__pointerIcon {
+// 	display: none;
+// }
 
-.CompLine.IsHeader .CompLine_doctor {
-	vertical-align: bottom !important;
-}
+// .CompLine.IsHeader .CompLine_doctor {
+// 	vertical-align: bottom !important;
+// }
 
-/*Investigation tab CompLine*/
-.CompLine_actions .PatientHeaderActions_menuItem {
-	min-height: unset;
-	width: unset;
-}
+// /*Investigation tab CompLine*/
+// .CompLine_actions .PatientHeaderActions_menuItem {
+// 	min-height: unset;
+// 	width: unset;
+// }
 
-.CompLine_actions > .MultiAlignRight {
-	text-align: right;
-}
+// .CompLine_actions > .MultiAlignRight {
+// 	text-align: right;
+// }
 
-.CompLine_actions .PatientHeaderActions__subMenu div {
-	line-height: 26px;
-	margin: 0;
-	text-align: left;
-}
+// .CompLine_actions .PatientHeaderActions__subMenu div {
+// 	line-height: 26px;
+// 	margin: 0;
+// 	text-align: left;
+// }
 
-.tablet .CompLine_actions .PatientHeaderActions__menuPlaceholder:empty {
-	display: none;
-}
+// .tablet .CompLine_actions .PatientHeaderActions__menuPlaceholder:empty {
+// 	display: none;
+// }
 
-/*Investigations Tablet*/
-.tablet.portrait .ComplineForInvestig .CompLine .CompLine_head,
-.tablet.portrait .ComplineForInvestig .CompLine.IsHeader .CompLine_head {
-	vertical-align: middle;
-	width: 24%;
-}
+// /*Investigations Tablet*/
+// .tablet.portrait .ComplineForInvestig .CompLine .CompLine_head,
+// .tablet.portrait .ComplineForInvestig .CompLine.IsHeader .CompLine_head {
+// 	vertical-align: middle;
+// 	width: 24%;
+// }
 
-.tablet .ComplineForInvestig .CompLine_doctor .ThemeGrid_Width3,
-.tablet.portrait .ComplineForInvestig .CompLine_doctor .ThemeGrid_Width3 {
-	width: 50%;
-}
+// .tablet .ComplineForInvestig .CompLine_doctor .ThemeGrid_Width3,
+// .tablet.portrait .ComplineForInvestig .CompLine_doctor .ThemeGrid_Width3 {
+// 	width: 50%;
+// }
 
-.tablet .ComplineForInvestig .CompLine_doctor .ThemeGrid_Width9,
-.tablet.portrait .ComplineForInvestig .CompLine_doctor .ThemeGrid_Width9 {
-	width: 50%;
-}
+// .tablet .ComplineForInvestig .CompLine_doctor .ThemeGrid_Width9,
+// .tablet.portrait .ComplineForInvestig .CompLine_doctor .ThemeGrid_Width9 {
+// 	width: 50%;
+// }
 
-.tablet.portrait .ComplineForInvestig .CompLine_doctor {
-	width: 60%;
-}
+// .tablet.portrait .ComplineForInvestig .CompLine_doctor {
+// 	width: 60%;
+// }
 
-.tablet.portrait .ComplineForInvestig .CompLine__title {
-	white-space: normal;
-	width: 80px;
-}
+// .tablet.portrait .ComplineForInvestig .CompLine__title {
+// 	white-space: normal;
+// 	width: 80px;
+// }
 
-.tablet .ComplineForInvestig .CompLine .CompLine_head,
-.tablet .ComplineForInvestig .CompLine.IsHeader .CompLine_head {
-	width: 20%;
-}
+// .tablet .ComplineForInvestig .CompLine .CompLine_head,
+// .tablet .ComplineForInvestig .CompLine.IsHeader .CompLine_head {
+// 	width: 20%;
+// }
 
-.tablet .ComplineForInvestig .CompLine__title {
-	white-space: normal;
-	width: 150px;
-}
+// .tablet .ComplineForInvestig .CompLine__title {
+// 	white-space: normal;
+// 	width: 150px;
+// }
 
-.CompLine_actions .PatientHeaderActions__subMenu > div:not(:first-child) {
-	margin-top: 0;
-}
+// .CompLine_actions .PatientHeaderActions__subMenu > div:not(:first-child) {
+// 	margin-top: 0;
+// }
 
-.AdmitPatiePopUp .CompLine_headLine .verticalAlignHelper {
-	display: none;
-}
+// .AdmitPatiePopUp .CompLine_headLine .verticalAlignHelper {
+// 	display: none;
+// }
 
-.AR .CompLine_actions > div,
-.AR .CompLine_actions > span,
-.FA .CompLine_actions > div,
-.FA .CompLine_actions > span {
-	display: inline-block;
-	margin: 0 0 0 10px;
-	text-align: center;
-	vertical-align: middle;
-}
+// .AR .CompLine_actions > div,
+// .AR .CompLine_actions > span,
+// .FA .CompLine_actions > div,
+// .FA .CompLine_actions > span {
+// 	display: inline-block;
+// 	margin: 0 0 0 10px;
+// 	text-align: center;
+// 	vertical-align: middle;
+// }
 
 .BillingListContainer {
 	padding: 15px;
 }
 
-.tablet .CompLine__icon,
-.phone:not(.PopupGenericFlex) .CompLine__icon {
-	display: block;
-	text-align: center;
-	width: 100%;
-}
+// .tablet .CompLine__icon,
+// .phone:not(.PopupGenericFlex) .CompLine__icon {
+// 	display: block;
+// 	text-align: center;
+// 	width: 100%;
+// }
 
-.tablet .CompLine_headText,
-.phone:not(.PopupGenericFlex) .CompLine_headText {
-	padding: 0 8px;
-	text-align: center;
-	width: 100%;
-}
+// .tablet .CompLine_headText,
+// .phone:not(.PopupGenericFlex) .CompLine_headText {
+// 	padding: 0 8px;
+// 	text-align: center;
+// 	width: 100%;
+// }
 
-.desktop.hd .CompLine_other {
-	width: 42%;
-}
+// .desktop.hd .CompLine_other {
+// 	width: 42%;
+// }
 
-.desktop .CompLine_other {
-	width: 30%;
-}
+// .desktop .CompLine_other {
+// 	width: 30%;
+// }
 
-.AR .desktop .CompLine_other,
-.FA .desktop .CompLine_other {
-	width: 20%;
-}
+// .AR .desktop .CompLine_other,
+// .FA .desktop .CompLine_other {
+// 	width: 20%;
+// }
 
-.desktop.small .CompLine_other {
-	padding: 5px 20px;
-	width: 20%;
-}
+// .desktop.small .CompLine_other {
+// 	padding: 5px 20px;
+// 	width: 20%;
+// }
 
 .desktop .InlineBlock + div .Button,
 .desktop.small .InlineBlock + div .Button {
 	margin-left: 0;
 }
 
-.desktop.small .CompLine_actions > div,
-.desktop.small .CompLine_actions > span {
-	display: inline-block;
-	margin: 0 10px 0 0;
-	text-align: center;
-	vertical-align: middle;
-	width: max-content;
-}
+// .desktop.small .CompLine_actions > div,
+// .desktop.small .CompLine_actions > span {
+// 	display: inline-block;
+// 	margin: 0 10px 0 0;
+// 	text-align: center;
+// 	vertical-align: middle;
+// 	width: max-content;
+// }
 
-.CompLine.notCollapsable .CompLine__expandIcon,
-.CompLine.notCollapsable .CompLine_Expand {
-	display: none;
-}
+// .CompLine.notCollapsable .CompLine__expandIcon,
+// .CompLine.notCollapsable .CompLine_Expand {
+// 	display: none;
+// }
 
-.CompLine_other > div {
-	vertical-align: middle;
-}
+// .CompLine_other > div {
+// 	vertical-align: middle;
+// }
 
-.CompLine_other > div > a {
-	margin-top: 0;
-}
+// .CompLine_other > div > a {
+// 	margin-top: 0;
+// }
 
-.desktop.small .CompLine_actions > div > div {
-	margin: 10px 0;
-}
+// .desktop.small .CompLine_actions > div > div {
+// 	margin: 10px 0;
+// }
 
-.tablet .CompLine_other {
-	display: block;
-	margin: 5px;
-	width: 100%;
-}
+// .tablet .CompLine_other {
+// 	display: block;
+// 	margin: 5px;
+// 	width: 100%;
+// }
 
-.tablet .CompLine__title {
-	white-space: nowrap;
-}
+// .tablet .CompLine__title {
+// 	white-space: nowrap;
+// }
 
-.tablet .CompLine_actions {
-	display: block;
-	padding: 5px 0;
-	width: 100%;
-}
+// .tablet .CompLine_actions {
+// 	display: block;
+// 	padding: 5px 0;
+// 	width: 100%;
+// }
 
-.tablet .CompLine_actions:last-child {
-	display: table-cell;
-	width: auto;
-	/* margin-top: 20px; */
-}
+// .tablet .CompLine_actions:last-child {
+// 	display: table-cell;
+// 	width: auto;
+// 	/* margin-top: 20px; */
+// }
 
-.tablet .CompLine_other {
-	display: block;
-	width: 100%;
-}
+// .tablet .CompLine_other {
+// 	display: block;
+// 	width: 100%;
+// }
 
-.tablet .CompLine_moreActions a,
-.tablet .ComPline_moreActions a:link {
-	display: none;
-}
+// .tablet .CompLine_moreActions a,
+// .tablet .ComPline_moreActions a:link {
+// 	display: none;
+// }
 
 // .tablet .Tabs__content.active .CompLine_actions>div:nth-child(2) {
 //     margin: 0px;
 // }
 
-.tablet .CompLine_actions > div,
-.tablet .CompLine_actions > span {
-	margin: 0;
-}
+// .tablet .CompLine_actions > div,
+// .tablet .CompLine_actions > span {
+// 	margin: 0;
+// }
 
-.tablet .CompLine_other.PH:empty,
-.tablet .CompLine_actions.PH:empty {
-	display: none;
-}
+// .tablet .CompLine_other.PH:empty,
+// .tablet .CompLine_actions.PH:empty {
+// 	display: none;
+// }
 
-.tablet.portrait .CompLine_doctor {
-	margin-bottom: 10px;
-}
+// .tablet.portrait .CompLine_doctor {
+// 	margin-bottom: 10px;
+// }
 
-.tablet.portrait .CompLine_headText,
-.tablet.portrait .CompLine__icon {
-	display: table-cell;
-}
+// .tablet.portrait .CompLine_headText,
+// .tablet.portrait .CompLine__icon {
+// 	display: table-cell;
+// }
 
-.tablet.portrait .CompLine_doctor {
-	/* display: inherit; */
-	padding: 10px 16px;
-}
+// .tablet.portrait .CompLine_doctor {
+// 	/* display: inherit; */
+// 	padding: 10px 16px;
+// }
 
-.tablet.portrait .BadgeClassification {
-	/* margin-left: 10px;*/
-}
+// .tablet.portrait .BadgeClassification {
+// 	/* margin-left: 10px;*/
+// }
 
-.phone:not(.PopupGenericFlex) .CompLineExpandable.expanded .CompLine_actions {
-	display: initial;
-	width: 100%;
-}
+// .phone:not(.PopupGenericFlex) .CompLineExpandable.expanded .CompLine_actions {
+// 	display: initial;
+// 	width: 100%;
+// }
 
-.phone:not(.PopupGenericFlex) .CompLine_headLine {
-	display: inline-block;
-}
+// .phone:not(.PopupGenericFlex) .CompLine_headLine {
+// 	display: inline-block;
+// }
 
-.phone:not(.PopupGenericFlex) .CompLine_headLine .CompLine_head > div {
-	display: inline-block;
-	width: auto;
-}
+// .phone:not(.PopupGenericFlex) .CompLine_headLine .CompLine_head > div {
+// 	display: inline-block;
+// 	width: auto;
+// }
 
-.phone:not(.PopupGenericFlex) .CompLine_headLine .CompLine_doctor {
-	display: inline;
-}
+// .phone:not(.PopupGenericFlex) .CompLine_headLine .CompLine_doctor {
+// 	display: inline;
+// }
 
-.phone:not(.PopupGenericFlex) .CompLine_headLine .CompLine__expandIcon {
-	bottom: 36%;
-	left: 90%;
-}
+// .phone:not(.PopupGenericFlex) .CompLine_headLine .CompLine__expandIcon {
+// 	bottom: 36%;
+// 	left: 90%;
+// }
 
-.phone:not(.PopupGenericFlex) .CompLine_headLine span.verticalAlignHelper {
-	display: none;
-}
+// .phone:not(.PopupGenericFlex) .CompLine_headLine span.verticalAlignHelper {
+// 	display: none;
+// }
 
-.phone:not(.PopupGenericFlex) .CompLine_headLine .CompLine_actions:first-child {
-	border: none;
-}
+// .phone:not(.PopupGenericFlex) .CompLine_headLine .CompLine_actions:first-child {
+// 	border: none;
+// }
 
-.phone:not(.PopupGenericFlex) .CompLine_actions {
-	display: block;
-	margin-top: 10px;
-}
+// .phone:not(.PopupGenericFlex) .CompLine_actions {
+// 	display: block;
+// 	margin-top: 10px;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.44 Sapphire Patterns > Custom_Patterns > DashboardWidget **************************/
@@ -22356,9 +22356,9 @@ body.confirmation-opened {
 	padding: 10px;
 }
 
-.CompLineExpandable.expanded .CompLine_headLine {
-	/*  border-bottom: 1px solid #d3d6d7;*/
-}
+// .CompLineExpandable.expanded .CompLine_headLine {
+// 	/*  border-bottom: 1px solid #d3d6d7;*/
+// }
 
 .ExpandableInvestigations___linesContent {
 	border: 1px dotted #ccc;

@@ -9,6 +9,11 @@
   &.Transparent {
     border: solid 1px #C9CDCE;
     color: #ccc;
+
+    .Text_white {
+      color: inherit;
+    }
+
   }
 
   &-label {

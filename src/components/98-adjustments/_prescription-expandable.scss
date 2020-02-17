@@ -324,22 +324,6 @@
 			border-radius: 0;
 		}
 	}
-
-	&.isLinkEpandable {
-		.PrescriptionExpandable_header__LinksDiv > div:last-child,
-		.SectionPrescriptionExpandableArea.expanded.isLinkEpandable
-			.PrescriptionExpandable_header__LinksDiv
-			> div:first-child {
-			display: none;
-		}
-
-		.PrescriptionExpandable_header__LinksDiv > div:first-child,
-		.SectionPrescriptionExpandableArea.expanded.isLinkEpandable
-			.PrescriptionExpandable_header__LinksDiv
-			> div:last-child {
-			display: block;
-		}
-	}
 }
 
 .phone {
@@ -364,27 +348,6 @@
 				text-align: center;
 				width: 100%;
 			}
-		}
-	}
-}
-
-.tablet {
-	.SectionPrescriptionExpandableArea.isLinkEpandable
-		.PrescriptionExpandable_header {
-		line-height: 28px;
-	}
-}
-
-.phone,
-.tablet {
-	.SectionPrescriptionExpandableArea {
-		&.isLinkEpandable .PrescriptionExpandable_header {
-			height: auto;
-		}
-
-		&.isLinkEpandable .PrescriptionExpandable_header .SectionExpandable__icon {
-			text-align: left;
-			width: 100%;
 		}
 	}
 }
