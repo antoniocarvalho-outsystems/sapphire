@@ -1,5 +1,4 @@
 /* select2 v 4.0.3 */
-$font-size-18px: 1.2857em;
 
 .LayoutBase {
 	.select2-container {
@@ -717,7 +716,7 @@ $font-size-18px: 1.2857em;
 		.select2-selection--single
 		.select2-selection__rendered {
 		float: right;
-		font-size: $font-size-18px;
+		font-size: $font-size-heading3;
 		margin-right: 10px;
 	}
 }
