@@ -1,0 +1,695 @@
+.LayoutBase .ShiftExpandable {
+	&_header {
+		@include flex-custom-align(center, flex-start);
+
+		background-color: $regular-eta;
+		border-bottom: 1px solid $light-grey;
+		color: $dark-grey;
+		min-height: 68px;
+		padding: 0 24px;
+
+		&.Expanded {
+			.ShiftExpandable__arrow {
+				transform: rotate(0deg);
+			}
+		}
+
+		&.NoTitle {
+			display: none;
+		}
+
+		.ShiftExpandable__arrow {
+			cursor: pointer;
+			transform: rotate(180deg);
+			transition: all 0.1s;
+
+			span.icon {
+				@include arrow-button;
+
+				font-size: 0.857em;
+				height: 20px;
+				width: 20px;
+			}
+		}
+	}
+
+	&_container {
+		max-height: 620px;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	&__title {
+		font-family: $font-family-bold;
+		font-size: 1.143em;
+		margin-left: 24px;
+		width: 12%;
+	}
+
+	&__infoTitle {
+		flex: 1;
+		font-size: 1em;
+	}
+}
+
+.LayoutBase .ShiftContainer {
+	@include component-scroll;
+	@include component-scroll-root;
+
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 1px;
+
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+
+	&_header {
+		display: flex;
+		min-height: 33px;
+		width: 100%;
+
+		.InlineDropdown {
+			&_icon,
+			&_text {
+				color: $regular-beta;
+				font-family: $font-family-bold;
+			}
+		}
+	}
+
+	&__headerEmpty {
+		@include flex-custom-align(center, flex-end);
+
+		border-right: 1px solid $light-grey;
+		min-width: 400px;
+		padding: 2px 5px;
+		width: 400px;
+	}
+
+	&__headerShiftHours {
+		align-items: center;
+		display: flex;
+		flex: 1;
+		flex-wrap: nowrap;
+		justify-content: left;
+
+		> span {
+			display: flex;
+			width: 100%;
+		}
+	}
+
+	&_Wrapper {
+		border-top: 1px solid $light-grey;
+	}
+
+	.FlagLine {
+		animation: fadein 1s;
+		display: none;
+	}
+}
+
+.LayoutBase .ShiftCard {
+	border-top: 1px solid $light-grey;
+	color: $dark-grey;
+	display: flex;
+	min-height: 110px;
+
+	&.IsMarked {
+		.ShiftCard_description {
+			border-left: 1px solid $regular-beta;
+			border-right: 1px solid $light-grey;
+		}
+
+		.ShiftCard_timeLine {
+			border-left: none;
+			border-right: 1px solid $regular-beta;
+		}
+
+		.ShiftCard_timeLine,
+		.ShiftCard_description {
+			border-bottom: 1px solid $regular-beta;
+			border-top: 1px solid $regular-beta;
+		}
+	}
+
+	&_description {
+		background-color: $regular-white;
+		border-right: 1px solid $light-grey;
+		min-width: 400px;
+		padding: 30px 10px 15px 22px;
+		position: relative;
+		width: 400px;
+
+		.ShiftCardTag {
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	&__title {
+		display: inline-block;
+		font-family: $font-family-bold;
+		font-size: 1em;
+		width: 80%;
+
+		&.TitleFullWidth {
+			width: 100%;
+		}
+	}
+
+	&__actions {
+		display: inline-block;
+		height: 24px;
+		text-align: right;
+		vertical-align: top;
+		width: 20%;
+	}
+
+	&__informations {
+		margin-bottom: 3px;
+	}
+
+	&__scheduleInfo {
+		width: 70%;
+
+		&.InfoFullWidth {
+			width: 100%;
+		}
+	}
+
+	&__scheduleStatus {
+		font-style: italic;
+		text-align: right;
+		width: 30%;
+	}
+
+	&__scheduleInfo,
+	&__scheduleStatus {
+		color: $regular-gray;
+		display: inline-block;
+	}
+
+	&_timeLine {
+		align-items: center;
+		display: flex;
+		flex: 1 1 0;
+		flex-wrap: nowrap;
+		justify-content: left;
+		position: relative;
+
+		> span {
+			display: flex;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.ShiftCardInfo {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.ShiftCardIconText {
+		display: inline-block;
+		height: auto;
+		margin-bottom: 5px;
+		vertical-align: top;
+		width: 100%;
+
+		span.icon {
+			font-size: 1.143em;
+			margin-right: 10px;
+		}
+	}
+}
+
+.LayoutBase .CardShiftWrapper {
+	height: auto;
+	padding: 5px 6px;
+	position: relative;
+
+	&.BlankCard {
+		height: 100%;
+		width: 100%;
+
+		.CardShift_content {
+			background: transparent;
+			border: 0;
+			border-radius: 0;
+			float: left;
+			height: 100%;
+			padding: 0;
+		}
+	}
+
+	&.Done {
+		.CardShift_content {
+			border-left: 5px solid $dark-green;
+			min-height: 76px;
+		}
+
+		.CardShift_cardStatus span:first-of-type {
+			color: $dark-green;
+		}
+
+		.CardShift_responsability {
+			display: block;
+		}
+	}
+
+	&.NotDone {
+		.CardShift_content {
+			background-color: $regular-white;
+			border-left: 5px solid $dark-red;
+			min-height: 76px;
+		}
+
+		.CardShift_cardStatus span:first-of-type {
+			color: $dark-red;
+		}
+
+		.CardShift_responsability {
+			display: block;
+		}
+	}
+
+	&.PartiallyDone {
+		.CardShift_content {
+			background-color: $regular-white;
+			border-left: 5px solid $dark-yellow;
+			min-height: 76px;
+		}
+
+		.CardShift_cardStatus span:first-of-type {
+			color: $dark-yellow;
+		}
+
+		.CardShift_responsability {
+			display: block;
+		}
+	}
+
+	&.Overdue {
+		.CardShift_content {
+			background-color: $regular-white;
+			border: 1px solid $regular-white;
+		}
+
+		.CardShift_cardStatus {
+			color: $dark-red;
+		}
+	}
+
+	&.Disabled {
+		background-color: $regular-white;
+		pointer-events: none;
+
+		.ActionsMenu {
+			pointer-events: auto;
+		}
+
+		.CardShift_actions {
+			pointer-events: auto;
+		}
+
+		.CardShift__markStatus {
+			background: $light-grey;
+			pointer-events: none;
+		}
+
+		.CardShiftWrapperContainer {
+			&_note {
+				pointer-events: visible;
+			}
+		}
+	}
+
+	&.Done,
+	&.NotDone {
+		.CardShift_hours {
+			text-align: left;
+		}
+	}
+
+	&.ToMark,
+	&.ToPlan {
+		.icon {
+			font-size: 1.429em;
+
+			&,
+			+ div {
+				color: $regular-beta;
+				font-weight: normal;
+			}
+		}
+
+		.CardShift_content {
+			background-color: transparent;
+			border: none;
+		}
+
+		.CardShift_cardStatus {
+			color: $mid-light-grey;
+			font-size: 0.857em;
+			font-weight: 600;
+			line-height: 18px;
+		}
+
+		.CardShiftWrapperContainer {
+			top: 45%;
+		}
+
+		.CardShift_cardStatus {
+			text-align: center;
+
+			span.icon {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.CardShiftWrapperContainer {
+		max-width: 170px;
+		position: relative;
+		width: 100%;
+
+		&_note {
+			background-color: $regular-beta;
+			border-radius: 2px;
+			color: $regular-white;
+			font-size: 0.857em;
+			height: 16px;
+			left: -2px;
+			line-height: 15px;
+			position: absolute;
+			text-align: center;
+			top: -2px;
+			width: 18px;
+
+			&:after {
+				border: 6px solid transparent;
+				border-bottom: 0;
+				border-right: 0;
+				border-top-color: $regular-beta;
+				bottom: 0;
+				content: '';
+				height: 0;
+				left: 50%;
+				margin-bottom: -6px;
+				margin-left: -5px;
+				position: absolute;
+				width: 0;
+			}
+		}
+
+		&_tag {
+			border-radius: 2px;
+			bottom: -7px;
+			color: $regular-white;
+			font-size: 0.786em;
+			position: absolute;
+			right: -4px;
+			text-align: center;
+			z-index: 1;
+
+			&.Orange {
+				background-color: $regular-orange;
+				padding: 2px 8px;
+			}
+
+			.IconSignal {
+				border: 2px solid $regular-white;
+				border-radius: 50%;
+
+				.icon {
+					font-size: 0.786em;
+					line-height: 20px;
+				}
+			}
+		}
+
+		&_note:empty,
+		&_tag:empty {
+			display: none;
+		}
+	}
+
+	.CardShift {
+		&_content {
+			background-color: $regular-white;
+			border: 1px solid $light-grey;
+			border-radius: 4px;
+			padding: 8px 10px;
+			width: 100%;
+		}
+
+		&_cardStatus {
+			color: $mid-dark-grey;
+			font-family: $font-family-bold;
+			white-space: nowrap;
+
+			span.icon {
+				margin-right: 5px;
+			}
+		}
+
+		&_hours {
+			color: $dark-grey;
+			font-size: 0.857em;
+			text-align: left;
+			white-space: nowrap;
+		}
+
+		&_actions {
+			color: $regular-beta;
+			font-size: 1em;
+			text-align: right;
+		}
+
+		&_responsability {
+			color: $regular-gray;
+			display: none;
+			font-size: 0.786em;
+			max-width: 145px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		&__markStatus {
+			background-color: $regular-beta;
+			border-radius: 0 0 4px 4px;
+			color: $regular-white;
+			cursor: pointer;
+			font-family: $font-family-bold;
+			font-size: 0.857em;
+			margin-top: -2px;
+			padding: 5px 0;
+			text-align: center;
+			transition: all 0.2s ease-in;
+
+			&:hover {
+				background: $regular-alpha;
+			}
+
+			> div {
+				width: 100%;
+			}
+		}
+
+		&_cardStatus,
+		&_responsability {
+			text-align: left;
+		}
+	}
+
+	.ActionsMenu-icon {
+		color: $regular-beta;
+	}
+}
+
+.LayoutBase .ShiftCount12 {
+	.CardShift {
+		&_cardStatus {
+			font-size: 0.786em;
+		}
+
+		&_responsability {
+			max-width: 85px;
+		}
+	}
+}
+
+.LayoutBase .ShiftCellContent {
+	border-right: 1px solid $light-grey;
+	flex: 1 1 0;
+	height: 100%;
+	min-width: 124px;
+
+	&:last-child {
+		border-right: 0;
+	}
+
+	&.IsPastCurrent {
+		background-color: $body-color;
+	}
+
+	&.IsTimer {
+		@include flex-center-total;
+
+		background-color: $regular-white;
+		color: $regular-gray;
+		font-family: $font-family-bold;
+		font-size: 0.857em;
+	}
+
+	&.IsFullWidth {
+		background-color: $regular-white;
+		display: inline-flex;
+		flex-direction: column;
+		flex-grow: 6;
+		text-align: center;
+		width: auto;
+
+		&.IsPastCurrent {
+			background-color: $body-color;
+		}
+
+		.icon {
+			font-size: 1.429em;
+		}
+
+		.CardShift_cardStatus {
+			color: $mid-light-grey;
+			font-family: $font-family-bold;
+			font-size: 0.857em;
+			line-height: 18px;
+		}
+
+		.CardShiftWrapperContainer {
+			left: 0;
+			top: 25%;
+			transform: none;
+			width: 100%;
+		}
+	}
+}
+
+.LayoutBase.AR,
+.LayoutBase.FA {
+	.ShiftCard {
+		&.IsMarked {
+			.ShiftCard_timeLine {
+				border-left: 1px solid $regular-beta;
+				border-right: none;
+			}
+
+			.ShiftCard_description {
+				border-left: none;
+				border-right: 1px solid $regular-beta;
+			}
+		}
+
+		&__actions {
+			text-align: left;
+		}
+
+		&__scheduleStatus {
+			text-align: left;
+		}
+	}
+
+	.ShiftCardTag {
+		left: auto;
+		right: 0;
+	}
+
+	.ShiftContainer {
+		&__headerEmpty {
+			justify-content: flex-start;
+		}
+	}
+
+	.ShiftExpandable {
+		&__title {
+			margin-left: 0;
+			margin-right: 24px;
+		}
+	}
+
+	.ShiftCardIconText {
+		span.icon {
+			margin-left: 10px;
+			margin-right: 0;
+		}
+	}
+
+	.CardShift {
+		&_actions {
+			text-align: left;
+		}
+
+		&_cardStatus {
+			text-align: right;
+		}
+
+		&_hours {
+			text-align: right;
+		}
+
+		&_cardStatus,
+		&_responsability {
+			text-align: right;
+		}
+	}
+
+	.CardShiftWrapper {
+		&.Done,
+		&.NotDone {
+			.CardShift_hours {
+				text-align: right;
+			}
+		}
+
+		&.Done {
+			.CardShift_content {
+				border-left: none;
+				border-right: 5px solid $dark-green;
+			}
+		}
+
+		&.NotDone {
+			.CardShift_content {
+				border-left: none;
+				border-right: 5px solid $dark-red;
+			}
+		}
+
+		&.PartiallyDone {
+			.CardShift_content {
+				border-left: none;
+				border-right: 5px solid $dark-yellow;
+			}
+		}
+	}
+
+	.CardShiftWrapperContainer {
+		&_tag {
+			left: 0;
+			right: auto;
+		}
+
+		&_note {
+			left: auto;
+			right: 0;
+			transform: scale(-1, 1);
+
+			> div {
+				transform: scale(-1, 1);
+			}
+		}
+	}
+}

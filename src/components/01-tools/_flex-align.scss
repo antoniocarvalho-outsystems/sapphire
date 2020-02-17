@@ -8,3 +8,9 @@
 	align-items: center;
 	display: flex;
 }
+
+@mixin flex-custom-align($align: center, $justify: center) {
+	align-items: $align;
+	display: flex;
+	justify-content: $justify;
+}
