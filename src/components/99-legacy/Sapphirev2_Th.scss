@@ -11658,237 +11658,237 @@ a.Button.twoLines>div {
 /*------------------------------------------------------------------------------------*/
 /* 9.26 Sapphire Patterns > Controls_Custom_Patterns > PrescriptionExpandable *********/
 /*------------------------------------------------------------------------------------*/
-.SectionPrescriptionExpandableArea .PrescriptionExpandable_header {
-  background-color: #fffafb;
-  border: 1px solid rgba(222, 0, 61, 0.5);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  color: #cf113c;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  height: 36px;
-  height: 36px;
-  line-height: 36px;
-  line-height: 36px;
-  vertical-align: middle;
-}
+// .SectionPrescriptionExpandableArea .PrescriptionExpandable_header {
+//   background-color: #fffafb;
+//   border: 1px solid rgba(222, 0, 61, 0.5);
+//   border-bottom-left-radius: 4px;
+//   border-bottom-right-radius: 4px;
+//   border-top-left-radius: 4px;
+//   border-top-right-radius: 4px;
+//   color: #cf113c;
+//   cursor: pointer;
+//   font-size: 14px;
+//   font-weight: 600;
+//   height: 36px;
+//   height: 36px;
+//   line-height: 36px;
+//   line-height: 36px;
+//   vertical-align: middle;
+// }
 
-.SectionPrescriptionExpandableArea .SectionExpandable__icon .fa-fw {
-  font-weight: bold;
-}
+// .SectionPrescriptionExpandableArea .SectionExpandable__icon .fa-fw {
+//   font-weight: bold;
+// }
 
-.PrescriptionExpandable_icon {
-  margin-right: 5px;
-}
+// .PrescriptionExpandable_icon {
+//   margin-right: 5px;
+// }
 
 /* Expanded*/
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header {
-  border-bottom: none;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header {
+//   border-bottom: none;
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+//   border-top-left-radius: 4px;
+//   border-top-right-radius: 4px;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content {
-  display: block;
-  height: auto;
-  overflow: visible;
-  visibility: visible;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content {
+//   display: block;
+//   height: auto;
+//   overflow: visible;
+//   visibility: visible;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fffafb;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   background-color: #fffafb;
+//   border-radius: 0;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #cf113c;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
+//   color: #cf113c;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList {
-  border-color: rgba(222, 0, 61, 0.5);
-  border-radius: 0px;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList {
+//   border-color: rgba(222, 0, 61, 0.5);
+//   border-radius: 0px;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCardList {
-  border-color: rgba(222, 0, 61, 0.5);
-  border-radius: 0px;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCardList {
+//   border-color: rgba(222, 0, 61, 0.5);
+//   border-radius: 0px;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-radius: 0px;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   border-radius: 0px;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:last-of-type) {
-  border-top: none;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:last-of-type) {
+//   border-top: none;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-top: none;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList {
+//   border-bottom-left-radius: 4px;
+//   border-bottom-right-radius: 4px;
+//   border-top: none;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-top: none;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
+//   border-bottom-left-radius: 4px;
+//   border-bottom-right-radius: 4px;
+//   border-top: none;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content {
-  display: block;
-  height: auto;
-  overflow: visible;
-  visibility: visible;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content {
+//   display: block;
+//   height: auto;
+//   overflow: visible;
+//   visibility: visible;
+// }
 
 /* not Expanded*/
 
-.SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList {
-  border-color: rgba(222, 0, 61, 0.5);
-  border-radius: 0px;
-}
+// .SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList {
+//   border-color: rgba(222, 0, 61, 0.5);
+//   border-radius: 0px;
+// }
 
-.SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList {
-  border-top: none;
-}
+// .SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList {
+//   border-top: none;
+// }
 
-.SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fffafb;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   background-color: #fffafb;
+//   border-radius: 0;
+// }
 
-.SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #cf113c;
-}
+// .SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
+//   color: #cf113c;
+// }
 
-.PrescriptionExpandable_content {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-top: none;
-  box-sizing: content-box;
-  height: 0;
-  margin-top: 0;
-  overflow: hidden;
-  -webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
-  visibility: visible;
-}
+// .PrescriptionExpandable_content {
+//   border-bottom-left-radius: 4px;
+//   border-bottom-right-radius: 4px;
+//   border-top: none;
+//   box-sizing: content-box;
+//   height: 0;
+//   margin-top: 0;
+//   overflow: hidden;
+//   -webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+//   transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+//   visibility: visible;
+// }
 
-.SectionPrescriptionExpandableArea.autoheight .PrescriptionExpandable_content {
-  display: block;
-  height: auto !important;
-  -webkit-transition: 0;
-  transition: 0;
-}
+// .SectionPrescriptionExpandableArea.autoheight .PrescriptionExpandable_content {
+//   display: block;
+//   height: auto !important;
+//   -webkit-transition: 0;
+//   transition: 0;
+// }
 
 /* AR */
 
-.AR .PrescriptionExpandable_icon,
-.FA .PrescriptionExpandable_icon {
-  margin-left: 5px;
-  margin-right: 0;
-}
+// .AR .PrescriptionExpandable_icon,
+// .FA .PrescriptionExpandable_icon {
+//   margin-left: 5px;
+//   margin-right: 0;
+// }
 
 /*Merge with ExpandableListNoCSS for Clinician*/
 
-.SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header__LinksDiv>div:last-child,
-.SectionPrescriptionExpandableArea.isLinkEpandable.expanded .PrescriptionExpandable_header__LinksDiv>div:first-child {
-  display: none;
-}
+// .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header__LinksDiv>div:last-child,
+// .SectionPrescriptionExpandableArea.isLinkEpandable.expanded .PrescriptionExpandable_header__LinksDiv>div:first-child {
+//   display: none;
+// }
 
-.SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header__LinksDiv>div:first-child,
-.SectionPrescriptionExpandableArea.isLinkEpandable.expanded .PrescriptionExpandable_header__LinksDiv>div:last-child {
-  color: #08a6af;
-  display: block;
-}
+// .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header__LinksDiv>div:first-child,
+// .SectionPrescriptionExpandableArea.isLinkEpandable.expanded .PrescriptionExpandable_header__LinksDiv>div:last-child {
+//   color: #08a6af;
+//   display: block;
+// }
 
-.SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
-  background-color: #ffe0df;
-  border: none;
-  color: #cd1d02;
-  cursor: default;
-  font-size: 14px;
-  font-weight: 500;
-  height: auto;
-  padding-left: 15px;
-  text-align: left;
-}
+// .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
+//   background-color: #ffe0df;
+//   border: none;
+//   color: #cd1d02;
+//   cursor: default;
+//   font-size: 14px;
+//   font-weight: 500;
+//   height: auto;
+//   padding-left: 15px;
+//   text-align: left;
+// }
 
-.SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header__LinksDiv {
-  cursor: pointer;
-}
+// .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header__LinksDiv {
+//   cursor: pointer;
+// }
 
-.SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header>div:nth-child(2) {
-  word-break: break-word;
-}
+// .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header>div:nth-child(2) {
+//   word-break: break-word;
+// }
 
-.SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_content {
-  background-color: #fff7f7;
-  font-size: 14px;
-  padding-left: 40px;
-  padding-top: 17px;
-}
+// .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_content {
+//   background-color: #fff7f7;
+//   font-size: 14px;
+//   padding-left: 40px;
+//   padding-top: 17px;
+// }
 
-.SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_content {
-  padding-top: 0;
-}
+// .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_content {
+//   padding-top: 0;
+// }
 
-.SectionPrescriptionExpandableArea.isLinkEpandable.expanded .PrescriptionExpandable_content {
-  padding: 17px 40px;
-}
+// .SectionPrescriptionExpandableArea.isLinkEpandable.expanded .PrescriptionExpandable_content {
+//   padding: 17px 40px;
+// }
 
-.SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_content {
-  padding-left: 40px;
-  padding-right: 40px;
-}
+// .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_content {
+//   padding-left: 40px;
+//   padding-right: 40px;
+// }
 
 /*PrescriptionExpandable Responsive */
-.phone .SectionPrescriptionExpandableArea:not(isLinkEpandable) .PrescriptionExpandable_header {
-  height: auto;
-}
+// .phone .SectionPrescriptionExpandableArea:not(isLinkEpandable) .PrescriptionExpandable_header {
+//   height: auto;
+// }
 
 /*PrescriptionExpandable Responsive Merge*/
-.phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header,
-.tablet .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
-  height: auto;
-}
+// .phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header,
+// .tablet .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
+//   height: auto;
+// }
 
-.tablet .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
-  line-height: 28px;
-}
+// .tablet .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
+//   line-height: 28px;
+// }
 
-.phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
-  height: auto;
-  padding: 0;
-}
+// .phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
+//   height: auto;
+//   padding: 0;
+// }
 
-.phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header>div:not(.PrescriptionExpandable_icon) {
-  height: auto;
-  line-height: 20px;
-  padding: 5px 20px;
-}
+// .phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header>div:not(.PrescriptionExpandable_icon) {
+//   height: auto;
+//   line-height: 20px;
+//   padding: 5px 20px;
+// }
 
-.phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_icon {
-  text-align: center;
-  width: 100%;
-}
+// .phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_icon {
+//   text-align: center;
+//   width: 100%;
+// }
 
-.phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header .SectionExpandable__icon,
-.tablet .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header .SectionExpandable__icon {
-  text-align: left;
-  width: 100%;
-}
+// .phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header .SectionExpandable__icon,
+// .tablet .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header .SectionExpandable__icon {
+//   text-align: left;
+//   width: 100%;
+// }
 
-.FA .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header,
-.AR .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
-  padding-right: 15px;
-  text-align: right;
-}
+// .FA .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header,
+// .AR .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
+//   padding-right: 15px;
+//   text-align: right;
+// }
 
 /******************ToolTip/PopUp exapandable style************************/
 /*Disable expandable always*/
@@ -11898,230 +11898,230 @@ a.Button.twoLines>div {
 }
 
 /*PopUp/tooltip Style */
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable {
-  border-radius: unset;
-  height: auto;
-  padding: 15px 15px;
-  text-align: left;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable {
+//   border-radius: unset;
+//   height: auto;
+//   padding: 15px 15px;
+//   text-align: left;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-radius: unset;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
+//   border-radius: unset;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable {
-  color: black;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable {
+//   color: black;
+// }
 
 /*Moderate*/
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #f97d00;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList {
+//   border: 1px solid #f97d00;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fffdfa;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate,
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   background-color: #fffdfa;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate {
-  border: 1px solid #f97d00;
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate {
+//   border: 1px solid #f97d00;
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #f97d00;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
+//   border-top: 1px solid #f97d00;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: Orange;
-  /* change for the right color*/
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
+//   color: Orange;
+//   /* change for the right color*/
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   border-left: none;
+//   border-right: none;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
 /*Critical*/
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #cf113c;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList {
+//   border: 1px solid #cf113c;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fffafb;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical,
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   background-color: #fffafb;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical {
-  border: 1px solid #cf113c;
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical {
+//   border: 1px solid #cf113c;
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #cf113c;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
+//   border-top: 1px solid #cf113c;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #cf113c;
-  /* change for the right color*/
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
+//   color: #cf113c;
+//   /* change for the right color*/
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   border-left: none;
+//   border-right: none;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
-/*High*/
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #ff4326;
-}
+// /*High*/
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList {
+//   border: 1px solid #ff4326;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fffafa;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High,
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   background-color: #fffafa;
+// }
 
-.SectionPrescriptionExpandableArea.expanded.CursorPointerNone .PrescriptionExpandable_header.High {
-  border: 1px solid #ff4326;
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded.CursorPointerNone .PrescriptionExpandable_header.High {
+//   border: 1px solid #ff4326;
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #ff4326;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
+//   border-top: 1px solid #ff4326;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #ff4326;
-  /* change for the right color*/
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
+//   color: #ff4326;
+//   /* change for the right color*/
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   border-left: none;
+//   border-right: none;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
-/*Low*/
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #ffdc2c;
-}
+// /*Low*/
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList {
+//   border: 1px solid #ffdc2c;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fffefa;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low,
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   background-color: #fffefa;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low {
-  border: 1px solid #ffdc2c;
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low {
+//   border: 1px solid #ffdc2c;
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #ffdc2c;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
+//   border-top: 1px solid #ffdc2c;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #ffdc2c;
-  /* change for the right color*/
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
+//   color: #ffdc2c;
+//   /* change for the right color*/
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   border-left: none;
+//   border-right: none;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
-/*Information*/
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #0a2f88;
-}
+// /*Information*/
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList {
+//   border: 1px solid #0a2f88;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fafbff;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information,
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   background-color: #fafbff;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information {
-  border: 1px solid #0a2f88;
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information {
+//   border: 1px solid #0a2f88;
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #0a2f88;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
+//   border-top: 1px solid #0a2f88;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #0a2f88;
-  /* change for the right color*/
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
+//   color: #0a2f88;
+//   /* change for the right color*/
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   border-left: none;
+//   border-right: none;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
-/*Unknown*/
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #808080;
-}
+// /*Unknown*/
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList {
+//   border: 1px solid #808080;
+// }
 
-SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fcfcfc;
-}
+// SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown,
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   background-color: #fcfcfc;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown {
-  border: 1px solid #808080;
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown {
+//   border: 1px solid #808080;
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #808080;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
+//   border-top: 1px solid #808080;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #808080;
-  /* change for the right color*/
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
+//   color: #808080;
+//   /* change for the right color*/
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
+//   border-left: none;
+//   border-right: none;
+// }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0;
-}
+// .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown+.PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
+//   border-bottom: none;
+//   border-radius: 0;
+// }
 
 /*--------------------------------------------------------------------------------------*/
 /* 9.27 Sapphire Patterns > Contorls_Custom_Patterns > ReopenHospitalizationTag *********/
