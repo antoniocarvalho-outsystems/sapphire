@@ -116,4 +116,49 @@
 			}
 		}
 	}
+
+	.BadgeClassification {
+		border-radius: 2px;
+		color: $sapphire-white;
+		display: inline-block;
+		font-family: $font-family-bold;
+		font-size: 1em;
+		padding: 1px 4px;
+		white-space: nowrap;
+	}
+
+	.IconBadgeClassification {
+		margin-right: 5px;
+	}
+
+	.FA,
+	.AR {
+		.IconBadgeClassification {
+			margin-left: 5px;
+			margin-right: auto;
+		}
+	}
+
+	.NumberCircle {
+		align-items: center;
+		border: 1px solid $mid-dark-grey;
+		border-radius: 50%;
+		color: $mid-dark-grey;
+		display: flex;
+		font-size: $font-size-heading3;
+		height: 25px;
+		justify-content: center;
+		width: 25px;
+	}
+
+	.StatusTag {
+		border-radius: 2px 0 2px 2px;
+		color: $sapphire-white;
+		font-family: $font-family-bold;
+		font-size: $font-size-small;
+		line-height: 15px;
+		padding: 2px 8px;
+		text-align: center;
+		text-transform: uppercase;
+	}
 }
