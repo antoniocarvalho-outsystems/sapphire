@@ -9090,10 +9090,10 @@ a.Button.twoLines > div {
 
 /*AR*/
 
-.FA .StatusContainer .Appointemtn_Icon,
-.AR .StatusContainer .Appointment_Icon {
-	margin-left: 10px;
-}
+// .FA .StatusContainer .Appointemtn_Icon,
+// .AR .StatusContainer .Appointment_Icon {
+// 	margin-left: 10px;
+// }
 
 .FA .InformationContainer div:nth-child(3),
 .AR .InformationContainer div:nth-child(3) {
@@ -13170,60 +13170,60 @@ a.Button.twoLines > div {
 /* 9.33 Sapphire Patterns > Custom_Patterns > AppointmentIcon  *************************/
 /*-------------------------------------------------------------------------------------*/
 
-.Appointment_Icon {
-	border: 2px solid;
-	border-radius: 50%;
-	height: 15px;
-	width: 15px;
-}
+// .Appointment_Icon {
+// 	border: 2px solid;
+// 	border-radius: 50%;
+// 	height: 15px;
+// 	width: 15px;
+// }
 
-.Appointment_Icon.circleSuccess {
-	background-color: #0c4654;
-	border-color: #14a7af;
-	color: #fff;
-	height: 17px;
-	line-height: 1;
-	text-align: left;
-	width: 17px;
-}
+// .Appointment_Icon.circleSuccess {
+// 	background-color: #0c4654;
+// 	border-color: #14a7af;
+// 	color: #fff;
+// 	height: 17px;
+// 	line-height: 1;
+// 	text-align: left;
+// 	width: 17px;
+// }
 
-.FA .Appointment_Icon.circleSuccess,
-.AR .Appointment_Icon.circleSuccess {
-	text-align: right;
-}
+// .FA .Appointment_Icon.circleSuccess,
+// .AR .Appointment_Icon.circleSuccess {
+// 	text-align: right;
+// }
 
-.Appointment_Icon.circleSuccess:before {
-	content: '\e64d';
-	font-family: Sapphire-Icon-Font;
-}
+// .Appointment_Icon.circleSuccess:before {
+// 	content: '\e64d';
+// 	font-family: Sapphire-Icon-Font;
+// }
 
-.Appointment_Icon.redCircle {
-	border-color: #bf1209;
-}
+// .Appointment_Icon.redCircle {
+// 	border-color: #bf1209;
+// }
 
-.Appointment_Icon.blueCircle {
-	border: 2px solid #14a7af;
-}
+// .Appointment_Icon.blueCircle {
+// 	border: 2px solid #14a7af;
+// }
 
-.Appointment_Icon.greenCircle {
-	border: 2px solid #c2dea8;
-}
+// .Appointment_Icon.greenCircle {
+// 	border: 2px solid #c2dea8;
+// }
 
-.Appointment_Icon.nopresence {
-	border: none;
-	color: #ccc;
-	display: inline-block;
-	font-size: 16px;
-	line-height: 16px;
-	-webkit-transform: rotateZ(180deg);
-	-moz-transform: rotateZ(180deg);
-	transform: rotateZ(180deg);
-}
+// .Appointment_Icon.nopresence {
+// 	border: none;
+// 	color: #ccc;
+// 	display: inline-block;
+// 	font-size: 16px;
+// 	line-height: 16px;
+// 	-webkit-transform: rotateZ(180deg);
+// 	-moz-transform: rotateZ(180deg);
+// 	transform: rotateZ(180deg);
+// }
 
-.Appointment_Icon.nopresence:before {
-	content: '\e699';
-	font-family: Sapphire-Icon-Font;
-}
+// .Appointment_Icon.nopresence:before {
+// 	content: '\e699';
+// 	font-family: Sapphire-Icon-Font;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.34 Sapphire Patterns > Custom_Patterns > BadgeClassification **********************/
