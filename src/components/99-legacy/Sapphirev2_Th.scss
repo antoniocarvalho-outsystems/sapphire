@@ -13956,16 +13956,16 @@ a.Button.twoLines > div {
 /* 9.40 Sapphire Patterns > Custom_Patterns > CircledIcon ******************************/
 /*-------------------------------------------------------------------------------------*/
 
-.CircleElement {
-	background-color: #fff;
-	border-radius: 50%;
-	color: #08a6af;
-	font-size: 14px;
-	height: 14px;
-	line-height: 14px;
-	vertical-align: middle;
-	width: 14px;
-}
+// .CircleElement {
+// 	background-color: #fff;
+// 	border-radius: 50%;
+// 	color: #08a6af;
+// 	font-size: 14px;
+// 	height: 14px;
+// 	line-height: 14px;
+// 	vertical-align: middle;
+// 	width: 14px;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.41 Sapphire Patterns > Custom_Patterns > Circle_Semaphore *************************/
@@ -15747,167 +15747,167 @@ a.Button.twoLines > div {
 /*-------------------------------------------------------------------------------------*/
 /* 9.62 Sapphire Patterns > Custom_Patterns > PrescriptionBadges *********/
 /*-------------------------------------------------------------------------------------*/
-.PrescriptionBadges {
-	background-color: transparent;
-	border: 2px solid transparent;
-	border-radius: 100px;
-	color: #11394f;
-	font-size: 14px;
-	font-weight: bold;
-	height: 34px;
-	line-height: 30px;
-	min-width: 157px;
-	padding: 0 14px;
-	position: relative;
-	vertical-align: middle;
-}
+// .PrescriptionBadges {
+// 	background-color: transparent;
+// 	border: 2px solid transparent;
+// 	border-radius: 100px;
+// 	color: #11394f;
+// 	font-size: 14px;
+// 	font-weight: bold;
+// 	height: 34px;
+// 	line-height: 30px;
+// 	min-width: 157px;
+// 	padding: 0 14px;
+// 	position: relative;
+// 	vertical-align: middle;
+// }
 
-.PrescriptionBadges > div:nth-child(1) {
-	width: auto;
-}
+// .PrescriptionBadges > div:nth-child(1) {
+// 	width: auto;
+// }
 
-.PrescriptionBadges .QuantityLabel {
-	margin-left: 6px;
-}
+// .PrescriptionBadges .QuantityLabel {
+// 	margin-left: 6px;
+// }
 
-.PrescriptionBadges .BadgeArrow {
-	font-size: 12px;
-	line-height: 34px;
-	position: absolute;
-	right: 14px;
-}
+// .PrescriptionBadges .BadgeArrow {
+// 	font-size: 12px;
+// 	line-height: 34px;
+// 	position: absolute;
+// 	right: 14px;
+// }
 
-/*NotSelected*/
+// /*NotSelected*/
 
-.PrescriptionBadges.DarkRed {
-	border-color: #cf113c;
-}
+// .PrescriptionBadges.DarkRed {
+// 	border-color: #cf113c;
+// }
 
-.PrescriptionBadges.Red {
-	border-color: #ff4326;
-}
+// .PrescriptionBadges.Red {
+// 	border-color: #ff4326;
+// }
 
-.PrescriptionBadges.Orange {
-	border-color: #f97d00;
-}
+// .PrescriptionBadges.Orange {
+// 	border-color: #f97d00;
+// }
 
-.PrescriptionBadges.Yellow {
-	border-color: #ffdc2c;
-}
+// .PrescriptionBadges.Yellow {
+// 	border-color: #ffdc2c;
+// }
 
-.PrescriptionBadges.Blue {
-	border-color: #0a2f88;
-}
+// .PrescriptionBadges.Blue {
+// 	border-color: #0a2f88;
+// }
 
-.PrescriptionBadges.DarkGrey {
-	border-color: #808080;
-}
+// .PrescriptionBadges.DarkGrey {
+// 	border-color: #808080;
+// }
 
-.PrescriptionBadges.LightGrey {
-	background-color: #c9cdce;
-}
+// .PrescriptionBadges.LightGrey {
+// 	background-color: #c9cdce;
+// }
 
-.PrescriptionBadges.Green {
-	background-color: #2d9f36;
-}
+// .PrescriptionBadges.Green {
+// 	background-color: #2d9f36;
+// }
 
-/*IsSelected*/
+// /*IsSelected*/
 
-.BadgeArrow.IsSelected {
-	color: white;
-}
+// .BadgeArrow.IsSelected {
+// 	color: white;
+// }
 
-.BadgeArrow.IsSmallBadge.IsSelected {
-	display: none;
-}
+// .BadgeArrow.IsSmallBadge.IsSelected {
+// 	display: none;
+// }
 
-.PrescriptionBadges.DarkRed.IsSelected {
-	background-color: #cf113c;
-	border-color: #cf113c;
-	color: #ffffff;
-}
+// .PrescriptionBadges.DarkRed.IsSelected {
+// 	background-color: #cf113c;
+// 	border-color: #cf113c;
+// 	color: #ffffff;
+// }
 
-.PrescriptionBadges.Red.IsSelected {
-	background-color: #ff4326;
-	border-color: #ff4326;
-	color: #ffffff;
-}
+// .PrescriptionBadges.Red.IsSelected {
+// 	background-color: #ff4326;
+// 	border-color: #ff4326;
+// 	color: #ffffff;
+// }
 
-.PrescriptionBadges.Orange.IsSelected {
-	background-color: #f97d00;
-	border-color: #f97d00;
-	color: #ffffff;
-}
+// .PrescriptionBadges.Orange.IsSelected {
+// 	background-color: #f97d00;
+// 	border-color: #f97d00;
+// 	color: #ffffff;
+// }
 
-.PrescriptionBadges.Yellow.IsSelected {
-	background-color: #ffdc2c;
-	border-color: #ffdc2c;
-	color: #fff;
-}
+// .PrescriptionBadges.Yellow.IsSelected {
+// 	background-color: #ffdc2c;
+// 	border-color: #ffdc2c;
+// 	color: #fff;
+// }
 
-.PrescriptionBadges.Blue.IsSelected {
-	background-color: #0a2f88;
-	border-color: #0a2f88;
-	color: #ffffff;
-}
+// .PrescriptionBadges.Blue.IsSelected {
+// 	background-color: #0a2f88;
+// 	border-color: #0a2f88;
+// 	color: #ffffff;
+// }
 
-.PrescriptionBadges.DarkGrey.IsSelected {
-	background-color: #808080;
-	border-color: #808080;
-	color: #ffffff;
-}
+// .PrescriptionBadges.DarkGrey.IsSelected {
+// 	background-color: #808080;
+// 	border-color: #808080;
+// 	color: #ffffff;
+// }
 
-.PrescriptionBadges.LightGrey.IsSelected {
-	background-color: #c9cdce;
-	border-color: #c9cdce;
-	color: #ffffff;
-}
+// .PrescriptionBadges.LightGrey.IsSelected {
+// 	background-color: #c9cdce;
+// 	border-color: #c9cdce;
+// 	color: #ffffff;
+// }
 
-.PrescriptionBadges.Green.IsSelected {
-	background-color: #2d9f36;
-	border-color: #2d9f36;
-	color: #ffffff;
-}
+// .PrescriptionBadges.Green.IsSelected {
+// 	background-color: #2d9f36;
+// 	border-color: #2d9f36;
+// 	color: #ffffff;
+// }
 
-/* SmallBadge */
+// /* SmallBadge */
 
-.IsSmallBadge {
-	min-width: auto;
-}
+// .IsSmallBadge {
+// 	min-width: auto;
+// }
 
-.IsSmallBadgeArrow {
-	display: none;
-}
+// .IsSmallBadgeArrow {
+// 	display: none;
+// }
 
-/* AR */
+// /* AR */
 
-.AR .PrescriptionBadges,
-.FA .PrescriptionBadges {
-	padding-left: 0;
-	padding-right: 22px;
-}
+// .AR .PrescriptionBadges,
+// .FA .PrescriptionBadges {
+// 	padding-left: 0;
+// 	padding-right: 22px;
+// }
 
-.FA .IsSmallBadge,
-.AR .IsSmallBadge {
-	padding: 0 12px;
-}
+// .FA .IsSmallBadge,
+// .AR .IsSmallBadge {
+// 	padding: 0 12px;
+// }
 
-.FA .PrescriptionBadges.IsSmallBadge > div,
-.AR .PrescriptionBadges.IsSmallBadge > div {
-	width: auto;
-}
+// .FA .PrescriptionBadges.IsSmallBadge > div,
+// .AR .PrescriptionBadges.IsSmallBadge > div {
+// 	width: auto;
+// }
 
-.FA .PrescriptionBadges .BadgeArrow,
-.AR .PrescriptionBadges .BadgeArrow {
-	left: 14px;
-	position: absolute;
-}
+// .FA .PrescriptionBadges .BadgeArrow,
+// .AR .PrescriptionBadges .BadgeArrow {
+// 	left: 14px;
+// 	position: absolute;
+// }
 
-.FA .PrescriptionBadges .QuantityLabel,
-.AR .PrescriptionBadges .QuantityLabel {
-	margin-left: 0;
-	margin-right: 6px;
-}
+// .FA .PrescriptionBadges .QuantityLabel,
+// .AR .PrescriptionBadges .QuantityLabel {
+// 	margin-left: 0;
+// 	margin-right: 6px;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.63 Sapphire Patterns > Custom_Patterns > PrescriptionCardList *********/
@@ -25260,135 +25260,135 @@ span.select2-container.select2-container--default.select2-container--open {
 /*------------------------------------------------------------*/
 /* 10.2 Sapphire Background Colors  ***************************/
 /*------------------------------------------------------------*/
-.Page .BodyColor {
-	background-color: #f7f4ef;
-}
+// .Page .BodyColor {
+// 	background-color: #f7f4ef;
+// }
 
-.Page .Transparent {
-	background-color: transparent;
-}
+// .Page .Transparent {
+// 	background-color: transparent;
+// }
 
-.Page .SapphireBlue,
-.mainBlue1-bg {
-	background-color: #11455d;
-}
+// .Page .SapphireBlue,
+// .mainBlue1-bg {
+// 	background-color: #11455d;
+// }
 
-.Page .SapphireBlue2,
-.mainBlue2-bg {
-	background-color: #16979f;
-}
+// .Page .SapphireBlue2,
+// .mainBlue2-bg {
+// 	background-color: #16979f;
+// }
 
-.Page .SapphireInactive,
-.inactiveButton-bg {
-	background-color: #b1b5b6;
-}
+// .Page .SapphireInactive,
+// .inactiveButton-bg {
+// 	background-color: #b1b5b6;
+// }
 
-.Page .SapphireDarkBlue1,
-.darkBlue1-bg {
-	background-color: #0c1d22;
-}
+// .Page .SapphireDarkBlue1,
+// .darkBlue1-bg {
+// 	background-color: #0c1d22;
+// }
 
-.Page .SapphireDarkBlue2,
-.darkBlue2-bg {
-	background-color: #113041;
-}
+// .Page .SapphireDarkBlue2,
+// .darkBlue2-bg {
+// 	background-color: #113041;
+// }
 
-.Page .SapphireDarkText,
-.darkText-bg {
-	background-color: #262626;
-}
+// .Page .SapphireDarkText,
+// .darkText-bg {
+// 	background-color: #262626;
+// }
 
-.Page .SapphireLightText,
-.lightText-bg {
-	background-color: #4d5c66;
-}
+// .Page .SapphireLightText,
+// .lightText-bg {
+// 	background-color: #4d5c66;
+// }
 
-.Page .SapphireFemale,
-.female-bg {
-	background-color: #6f4065;
-}
+// .Page .SapphireFemale,
+// .female-bg {
+// 	background-color: #6f4065;
+// }
 
-.Page .SapphireLight,
-.SapphireLight {
-	background-color: #e6f3f5;
-}
+// .Page .SapphireLight,
+// .SapphireLight {
+// 	background-color: #e6f3f5;
+// }
 
-.Page .SapphireMale,
-.male-bg {
-	background-color: #11394f;
-}
+// .Page .SapphireMale,
+// .male-bg {
+// 	background-color: #11394f;
+// }
 
-.Page .SapphireDarkGrey,
-.darkGreyText-bg {
-	background-color: #7c7f7f;
-}
+// .Page .SapphireDarkGrey,
+// .darkGreyText-bg {
+// 	background-color: #7c7f7f;
+// }
 
-.Page .SapphireLightBoard,
-.lightBoard-bg {
-	background-color: #c9cdce;
-}
+// .Page .SapphireLightBoard,
+// .lightBoard-bg {
+// 	background-color: #c9cdce;
+// }
 
-.Page .SapphireLightContainer,
-.lightContainer-bg {
-	background-color: #ebebeb;
-}
+// .Page .SapphireLightContainer,
+// .lightContainer-bg {
+// 	background-color: #ebebeb;
+// }
 
-.Page .SapphireBackground,
-.background-bg {
-	background-color: #f5f1eb;
-}
+// .Page .SapphireBackground,
+// .background-bg {
+// 	background-color: #f5f1eb;
+// }
 
-.Page .SapphireWarning,
-.warning.bg {
-	background-color: #cd0005;
-}
+// .Page .SapphireWarning,
+// .warning.bg {
+// 	background-color: #cd0005;
+// }
 
-.Page .SapphireWhite,
-.whiteBackground-bg {
-	background-color: #ffffff;
-}
+// .Page .SapphireWhite,
+// .whiteBackground-bg {
+// 	background-color: #ffffff;
+// }
 
-.Page .SapphireClinician,
-.clinicianBackground-bg {
-	background-color: #dae0e4;
-}
+// .Page .SapphireClinician,
+// .clinicianBackground-bg {
+// 	background-color: #dae0e4;
+// }
 
-.Page .SapphireLightText,
-.light-bg {
-	background-color: #f2f2f2;
-}
+// .Page .SapphireLightText,
+// .light-bg {
+// 	background-color: #f2f2f2;
+// }
 
-.Page .ColorRed {
-	color: #c23e32;
-}
+// .Page .ColorRed {
+// 	color: #c23e32;
+// }
 
-.Page .ColorGreen {
-	color: #a9ba37;
-}
+// .Page .ColorGreen {
+// 	color: #a9ba37;
+// }
 
-.Page .ColorYellow {
-	color: #edca0a;
-}
+// .Page .ColorYellow {
+// 	color: #edca0a;
+// }
 
-.Page .ColorTextRed {
-	color: #c7331f;
-}
+// .Page .ColorTextRed {
+// 	color: #c7331f;
+// }
 
-.Page .ColorDarkBlue {
-	color: #124a61;
-}
+// .Page .ColorDarkBlue {
+// 	color: #124a61;
+// }
 
-.Page .ColorTurquoise {
-	color: #14a7af;
-}
+// .Page .ColorTurquoise {
+// 	color: #14a7af;
+// }
 
-.Page .ColorTurquoise2 {
-	color: #08a6af;
-}
+// .Page .ColorTurquoise2 {
+// 	color: #08a6af;
+// }
 
-.ColorBlack {
-	color: #262525;
-}
+// .ColorBlack {
+// 	color: #262525;
+// }
 
 /*
 .OrangeTag{
