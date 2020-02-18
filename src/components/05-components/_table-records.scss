@@ -1,0 +1,249 @@
+.LayoutBase .TableRecords {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-bottom: none;
+	border-radius: 1px;
+	margin-top: 0;
+	padding: 0;
+
+	> tbody > tr:first-child td {
+		border-top: 1px solid $light-grey;
+	}
+
+	&.TableRecordsNotes {
+		tbody {
+			td {
+				font-size: 0.857em;
+			}
+
+			tr:first-child td {
+				border-top: 1px solid $regular-alpha;
+			}
+		}
+
+		.TableRecords_Header {
+			color: $regular-alpha;
+			line-height: 22px;
+		}
+
+		.NewMessage_Warning td {
+			background-color: $light-beige;
+		}
+
+		.TableRecords_OddLine {
+			background-color: unset;
+		}
+	}
+
+	&_Header {
+		border-bottom: none;
+	}
+
+	&_OddLine,
+	&_EvenLine {
+		background-color: $regular-white;
+		border-bottom: none;
+		padding: 10px;
+		vertical-align: top;
+	}
+
+	&_Wrapper {
+		&.NoResponsive {
+			.TableRecords.ExpandableRows td .ExpandLink {
+				span {
+					@include arrow-down-simple;
+
+					&:after,
+					&:before {
+						content: '';
+					}
+				}
+			}
+
+			tr {
+				td:first-child {
+					border-left: 1px solid transparent;
+				}
+			}
+
+			tr.TableRowExpandable {
+				&.open {
+					td {
+						border-bottom: 1px solid $light-grey;
+					}
+				}
+			}
+
+			tr.ActiveRow {
+				td {
+					border-bottom: 1px solid $regular-alpha;
+					border-top: 1px solid $regular-alpha;
+
+					&:first-child {
+						border-left: 1px solid $regular-alpha;
+					}
+
+					&:last-child {
+						border-right: 1px solid $regular-alpha;
+					}
+				}
+			}
+
+			.ActiveRow {
+				.TableRecords_OddLine:first-child span,
+				.TableRecords_EvenLine:first-child span {
+					transform: rotate(0deg);
+				}
+			}
+
+			.TableRecords {
+				> tbody > tr:hover {
+					background: $regular-white;
+				}
+
+				&_Header {
+					color: $mid-dark-grey;
+					font-size: 0.857em;
+					font-weight: normal;
+					min-height: 48px;
+					padding: 8px 10px;
+					text-align: left;
+					text-transform: uppercase;
+
+					a,
+					a:link,
+					a:visited {
+						color: $mid-dark-grey;
+					}
+				}
+
+				&_OddLine,
+				&_EvenLine {
+					border-bottom: 1px solid $light-grey;
+					color: $dark-grey;
+					min-height: 48px;
+					text-align: left;
+
+					&:first-child span {
+						transform: rotate(180deg);
+					}
+				}
+
+				&_Header:first-child,
+				&_OddLine:first-child,
+				&_EvenLine:first-child {
+					padding-left: 15px;
+				}
+			}
+		}
+	}
+
+	th.SortColumns_Sortable {
+		color: inherit;
+	}
+
+	.LightGreen {
+		color: $dark-grey;
+	}
+}
+
+.TableRowExpandable {
+	height: 0;
+	line-height: 0;
+	transition: height 500ms;
+	visibility: hidden;
+
+	&.open {
+		height: 48px;
+		visibility: visible;
+	}
+}
+
+.LayoutBase .AR,
+.LayoutBase .FA {
+	.TableRecords {
+		&_Header {
+			padding: 5px 10px 10px 0;
+		}
+
+		&_Header,
+		&_OddLine,
+		&_EvenLine {
+			&,
+			div {
+				text-align: right !important;
+			}
+
+			&:last-child {
+				padding-right: 15px;
+			}
+
+			&:first-child {
+				padding-left: 0;
+				padding-right: 20px;
+			}
+		}
+
+		&_OddLine,
+		&_EvenLine {
+			&:first-child span {
+				transform: rotate(90deg);
+			}
+
+			&:last-child {
+				border-left: 1px solid transparent;
+				border-right: none;
+			}
+
+			&:first-child {
+				border-left: none;
+				border-right: 1px solid transparent;
+			}
+		}
+
+		&_Wrapper {
+			&.NoResponsive {
+				.TableRecords_Header {
+					text-align: right;
+				}
+
+				.TableRecords_OddLine,
+				.TableRecords_EvenLine {
+					text-align: right;
+				}
+
+				tr.ActiveRow {
+					td {
+						&:first-child {
+							border-left: none;
+							border-right: 1px solid $regular-alpha;
+						}
+
+						&:last-child {
+							border-left: 1px solid $regular-alpha;
+							border-right: none;
+						}
+					}
+				}
+
+				tr.TableRowExpandable .TableRowExpandable_Content.Column,
+				tr.TableRowExpandable.open .TableRowExpandable_Content.Column {
+					padding-right: 10px;
+					text-align: right;
+				}
+			}
+
+			.TableRecords_Header {
+				padding: 10px;
+			}
+		}
+	}
+
+	tr td:last-child {
+		border-right: 1px solid transparent;
+	}
+
+	tr td:first-child {
+		border-left: 1px solid transparent;
+	}
+}
