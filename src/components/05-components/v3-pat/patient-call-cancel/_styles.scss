@@ -1,4 +1,6 @@
 $PatientCallCancel-color-active: $regular-alpha;
+$PatientCallCancel-color-disabled: $sapphire-color-disabled-text;
+
 
 
 
@@ -8,6 +10,7 @@ $PatientCallCancel-color-active: $regular-alpha;
 }
 
 .PatientCallCancel>div {
+  align-items: center;
   display: flex;
   position: relative;
 }
@@ -22,7 +25,6 @@ $PatientCallCancel-color-active: $regular-alpha;
 .PatientCallCancel-label {
   display: flex;
   flex-direction: column;
-  font-family: 'globerbold';
   font-size: 1.3em;
   justify-content: center;
   margin-right: 10px;
@@ -32,8 +34,6 @@ $PatientCallCancel-color-active: $regular-alpha;
 .FA .PatientCallCancel-label {
   margin-left: 10px;
 }
-
-
 
 .PatientCallCancel-counter {
   display: flex;
@@ -92,11 +92,8 @@ $PatientCallCancel-color-active: $regular-alpha;
 
 .PatientCallCancel .js-calling .PatientCallCancel-label,
 .PatientCallCancel .js-calling .PatientCallCancel-icon {
-  color: #999;
+  color: $PatientCallCancel-color-disabled;
 }
-
-
-
 
 .PatientCallCancel-List>div {
   min-height: 27px;
@@ -110,8 +107,6 @@ $PatientCallCancel-color-active: $regular-alpha;
   color: $PatientCallCancel-color-active;
 }
 
-/* overrides for Header implementation */
-
 .PatientCallCancel-Header>div {
   min-height: 80px;
 }
@@ -120,6 +115,7 @@ $PatientCallCancel-color-active: $regular-alpha;
   background-color: $PatientCallCancel-color-active;
   color: #fff;
   flex-direction: column;
+  min-height: 70px;
   min-width: 120px;
   padding-top: 23px;
   position: relative;
@@ -182,21 +178,21 @@ $PatientCallCancel-color-active: $regular-alpha;
 }
 
 .PatientCallCancel-Header .js-calling .PatientCallCancel-icon {
-  color: #ccc;
+  color: $PatientCallCancel-color-disabled;
 }
 
 .PatientCallCancel-Header .js-calling .PatientCallCancel-label {
-  color: #ccc;
+  color: $PatientCallCancel-color-disabled;
   font-weight: 700;
 }
 
 .PatientCallCancel-disabled .PatientCallCancel-box {
-  background-color: #ccc !important;
+  background-color: $PatientCallCancel-color-disabled;
 }
 
 .PatientCallCancel-disabled.PatientCallCancel-List .PatientCallCancel-icon,
 .PatientCallCancel-disabled.PatientCallCancel-List .PatientCallCancel-label {
-  color: #ccc;
+  color: $PatientCallCancel-color-disabled;
 }
 
 .PatientCallCancel-disabled .PatientCallCancel-label,
@@ -205,16 +201,13 @@ $PatientCallCancel-color-active: $regular-alpha;
   pointer-events: none !important;
 }
 
-
 .PatientCallCancel-right>div {
   display: inline-flex;
 }
 
-
 .PatientCallCancel-right .PatientCallCancel-other:not(:empty) {
   margin-right: 10px;
 }
-
 
 .AR .PatientCallCancel-right .PatientCallCancel-other:not(:empty),
 .FA .PatientCallCancel-right .PatientCallCancel-other:not(:empty) {
