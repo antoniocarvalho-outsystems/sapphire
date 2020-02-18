@@ -1,0 +1,181 @@
+.desktop {
+	&.landscape {
+		&,
+		&.small {
+			.TableRecords_Wrapper.NoResponsive {
+				max-width: 100%;
+				overflow-x: auto;
+				white-space: nowrap;
+			}
+		}
+
+		&.hd .TableRecords_Wrapper.NoResponsive {
+			min-width: 100%;
+			overflow-x: auto;
+			white-space: nowrap;
+		}
+	}
+
+	.TableRecords > tbody > tr:hover,
+	.TableRecords > tbody > tr:hover td,
+	.EditableTable > tbody > tr:hover td {
+		background-color: $regular-white;
+	}
+
+	.TableRecords.TableRecordsNotes > tbody > tr.LightYellow:hover,
+	.TableRecords.TableRecordsNotes
+		> tbody
+		> tr.LightYellow:hover
+		.TableRecords_OddLine {
+		background-color: $light-yellow;
+	}
+}
+
+.phone,
+.tablet {
+	table tbody tr.searchable td > div:nth-child(n) {
+		width: 100% !important;
+	}
+
+	table tbody tr.searchable td > div:last-child {
+		text-align: right;
+	}
+}
+
+.phone {
+	table tbody tr.searchable td > div:nth-child(1) {
+		width: 15% !important;
+	}
+
+	table tbody tr.searchable td > div:nth-child(2) {
+		width: 85% !important;
+	}
+
+	.TableRecords_Wrapper.NoResponsive .TableRecords_Wrapper.NoResponsive {
+		max-width: 100%;
+		overflow-x: auto;
+	}
+
+	.TableRecords_Wrapper.NoResponsive
+		.TableRecords_Wrapper.NoResponsive
+		.TableRecords.NoResponsive
+		.TableRecords_Header {
+		white-space: nowrap;
+	}
+
+	.TableRecords_Wrapper.NoResponsive {
+		min-width: 326px;
+		overflow-x: scroll;
+		white-space: nowrap;
+	}
+}
+
+.tablet {
+	table tbody tr.searchable td > div:nth-child(1) {
+		width: 5% !important;
+	}
+
+	table tbody tr.searchable td > div:nth-child(2) {
+		width: 95% !important;
+	}
+
+	.TableRecords_Wrapper.NoResponsive {
+		overflow-x: auto;
+		white-space: nowrap;
+		width: auto;
+	}
+}
+
+.TableRecords_Wrapper {
+	-servicestudio-display: block;
+	-servicestudio-margin: 0 !important;
+	-servicestudio-width: 100% !important;
+}
+
+.TableRecords_Wrapper.NoResponsive
+	tr.TableRowExpandable
+	.TableRowExpandable_Content.Column,
+.TableRecords_Wrapper.NoResponsive
+	tr.TableRowExpandable.open
+	.TableRowExpandable_Content.Column {
+	color: $dark-grey;
+	padding: 0;
+	text-align: left;
+}
+
+.TableRecords_Wrapper.NoResponsive tr.ActiveRow td,
+.desktop
+	.TableRecords_Wrapper.NoResponsive
+	.TableRecords
+	> tbody
+	> tr.ActiveRow:hover,
+.desktop
+	.TableRecords_Wrapper.NoResponsive
+	.TableRecords
+	> tbody
+	> tr.ActiveRow:hover
+	td {
+	background: $regular-white;
+}
+
+.TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td,
+.desktop
+	.TableRecords_Wrapper.NoResponsive
+	.TableRecords
+	> tbody
+	> tr.TableRowExpandable.open:hover,
+.desktop
+	.TableRecords_Wrapper.NoResponsive
+	.TableRecords
+	> tbody
+	> tr.TableRowExpandable.open:hover
+	td {
+	background-color: $body-color;
+	line-height: 48px;
+	padding: 0 10px;
+}
+
+.FA
+	.TableRecords_Wrapper.NoResponsive
+	.ActiveRow
+	.TableRecords_OddLine:first-child
+	span,
+.FA
+	.TableRecords_Wrapper.NoResponsive
+	.ActiveRow
+	.TableRecords_EvenLine:first-child
+	span
+	.AR
+	.TableRecords_Wrapper.NoResponsive
+	.ActiveRow
+	.TableRecords_OddLine:first-child
+	span,
+.AR
+	.TableRecords_Wrapper.NoResponsive
+	.ActiveRow
+	.TableRecords_EvenLine:first-child
+	span {
+	transform: rotate(360deg);
+}
+
+.FA.desktop .TableRecords_OddLine:first-child,
+.FA.desktop .TableRecords_EvenLine:first-child,
+.FA.desktop .TableRecords_Header:first-child,
+.FA.tablet .TableRecords_OddLine:first-child,
+.FA.tablet .TableRecords_EvenLine:first-child,
+.FA.tablet .TableRecords_Header:first-child,
+.AR.desktop .TableRecords_OddLine:first-child,
+.AR.desktop .TableRecords_EvenLine:first-child,
+.AR.desktop .TableRecords_Header:first-child,
+.AR.tablet .TableRecords_OddLine:first-child,
+.AR.tablet .TableRecords_EvenLine:first-child,
+.AR.tablet .TableRecords_Header:first-child {
+	padding-left: 20px;
+}
+
+.FA.phone .prumo_TableRecords_Label,
+.FA.mini.tablet .prumo_TableRecords_Label,
+.AR.phone .prumo_TableRecords_Label,
+.AR.mini.tablet .prumo_TableRecords_Label {
+	left: 15px;
+}

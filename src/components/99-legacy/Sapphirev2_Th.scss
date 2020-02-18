@@ -562,30 +562,30 @@
 //     z-index: 1;
 // }
 
-.isTouch .Search_wrapper:after {
-	top: 19px;
-}
+// .isTouch .Search_wrapper:after {
+// 	top: 19px;
+// }
 
-.Header .Search_wrapper input[type='text'] {
-	background-color: transparent;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 30px;
-	color: #fff;
-	-webkit-transition: all 300ms ease;
-	transition: all 300ms ease;
-	width: 100px;
-}
+// .Header .Search_wrapper input[type='text'] {
+// 	background-color: transparent;
+// 	border: 1px solid rgba(255, 255, 255, 0.2);
+// 	border-radius: 30px;
+// 	color: #fff;
+// 	-webkit-transition: all 300ms ease;
+// 	transition: all 300ms ease;
+// 	width: 100px;
+// }
 
-.Header .Search_wrapper input[type='text']:focus {
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	width: 200px;
-}
+// .Header .Search_wrapper input[type='text']:focus {
+// 	border: 1px solid rgba(255, 255, 255, 0.3);
+// 	width: 200px;
+// }
 
-.Header .Search_wrapper:after {
-	color: #cdcdcd;
-	left: 10px;
-	pointer-events: none;
-}
+// .Header .Search_wrapper:after {
+// 	color: #cdcdcd;
+// 	left: 10px;
+// 	pointer-events: none;
+// }
 
 .phone .Application_Menu .Others_Menu .Header_Search {
 	margin-left: 30px;
@@ -4642,164 +4642,164 @@ td.RowWithAddAction a {
 /* 4.3 Buit-in widgets > TableRecords *************************/
 /*------------------------------------------------------------*/
 
-.TableRecords {
-	background-color: transparent;
-	border: none;
-	box-shadow: 0 1px 2px rgba(211, 255, 211, 0.5);
-	margin-top: 0;
-}
+// .TableRecords {
+// 	background-color: transparent;
+// 	border: none;
+// 	box-shadow: 0 1px 2px rgba(211, 255, 211, 0.5);
+// 	margin-top: 0;
+// }
 
-.TableRecords_Header {
-	border-bottom: 1px solid #dadbde;
-	font-size: 1.1em;
-	text-transform: none;
-}
+// .TableRecords_Header {
+// 	border-bottom: 1px solid #dadbde;
+// 	font-size: 1.1em;
+// 	text-transform: none;
+// }
 
-.desktop .TableRecords > tbody > tr:hover,
-.desktop .TableRecords > tbody > tr:hover td,
-.desktop .EditableTable > tbody > tr:hover td {
-	background-color: #fff;
-}
+// .desktop .TableRecords > tbody > tr:hover,
+// .desktop .TableRecords > tbody > tr:hover td,
+// .desktop .EditableTable > tbody > tr:hover td {
+// 	background-color: #fff;
+// }
 
-.TableRecords_OddLine,
-.TableRecords_EvenLine {
-	border-bottom: none;
-}
+// .TableRecords_OddLine,
+// .TableRecords_EvenLine {
+// 	border-bottom: none;
+// }
 
-.TableRecords_EvenLine:first-child,
-.TableRecords_OddLine:first-child {
-	border-left: 1px solid #dadbde;
-}
+// .TableRecords_EvenLine:first-child,
+// .TableRecords_OddLine:first-child {
+// 	border-left: 1px solid #dadbde;
+// }
 
-.TableRecords_EvenLine:last-child,
-.TableRecords_OddLine:last-child {
-	border-right: 1px solid #dadbde;
-}
+// .TableRecords_EvenLine:last-child,
+// .TableRecords_OddLine:last-child {
+// 	border-right: 1px solid #dadbde;
+// }
 
-.TableRecords_EvenLine,
-.TableRecords_OddLine {
-	background-color: #fff;
-	border-bottom: 1px solid #dadbde;
-}
+// .TableRecords_EvenLine,
+// .TableRecords_OddLine {
+// 	background-color: #fff;
+// 	border-bottom: 1px solid #dadbde;
+// }
 
-.TableRecords_OddLine,
-.TableRecords_EvenLine {
-	padding: 10px;
-	vertical-align: top;
-}
+// .TableRecords_OddLine,
+// .TableRecords_EvenLine {
+// 	padding: 10px;
+// 	vertical-align: top;
+// }
 
-/*
-.TableRecords_OddLine > div,
-.TableRecords_EvenLine > div {
-    line-height:36px;
-}
-*/
+// /*
+// .TableRecords_OddLine > div,
+// .TableRecords_EvenLine > div {
+//     line-height:36px;
+// }
+// */
 
-.AR .TableRecords_Header,
-.FA .TableRecords_Header,
-.AR .TableRecords_Header div,
-.FA .TableRecords_Header div,
-.AR .TableRecords_OddLine,
-.FA .TableRecords_OddLine,
-.AR .TableRecords_EvenLine,
-.FA .TableRecords_EvenLine,
-.AR .TableRecords_EvenLine div,
-.FA .TableRecords_EvenLine div,
-.AR .TableRecords_OddLine div,
-.FA .TableRecords_OddLine div {
-	text-align: right !important;
-}
+// .AR .TableRecords_Header,
+// .FA .TableRecords_Header,
+// .AR .TableRecords_Header div,
+// .FA .TableRecords_Header div,
+// .AR .TableRecords_OddLine,
+// .FA .TableRecords_OddLine,
+// .AR .TableRecords_EvenLine,
+// .FA .TableRecords_EvenLine,
+// .AR .TableRecords_EvenLine div,
+// .FA .TableRecords_EvenLine div,
+// .AR .TableRecords_OddLine div,
+// .FA .TableRecords_OddLine div {
+// 	text-align: right !important;
+// }
 
-.TableRecords > tbody > tr:first-child td {
-	border-top: 1px solid #dadbde;
-}
+// .TableRecords > tbody > tr:first-child td {
+// 	border-top: 1px solid #dadbde;
+// }
 
-.FA .TableRecords_Header,
-.AR .TableRecords_Header {
-	padding: 5px 10px 10px 0;
-}
+// .FA .TableRecords_Header,
+// .AR .TableRecords_Header {
+// 	padding: 5px 10px 10px 0;
+// }
 
-.TableRecords.TableRecordsNotes tbody td {
-	border-bottom: 1px solid #ebebeb;
-	color: #0d1d22;
-	font-size: 13px;
-	height: 40px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-}
+// .TableRecords.TableRecordsNotes tbody td {
+// 	border-bottom: 1px solid #ebebeb;
+// 	color: #0d1d22;
+// 	font-size: 13px;
+// 	height: 40px;
+// 	padding-bottom: 10px;
+// 	padding-left: 10px;
+// 	padding-right: 10px;
+// 	padding-top: 10px;
+// }
 
-.TableRecords.TableRecordsNotes .TableRecords_Header {
-	color: #16979f;
-	font-size: 13px;
-	line-height: 22px;
-}
+// .TableRecords.TableRecordsNotes .TableRecords_Header {
+// 	color: #16979f;
+// 	font-size: 13px;
+// 	line-height: 22px;
+// }
 
-.TableRecords.TableRecordsNotes tbody td:first-child {
-	border-left: none;
-}
+// .TableRecords.TableRecordsNotes tbody td:first-child {
+// 	border-left: none;
+// }
 
-.TableRecords.TableRecordsNotes tbody tr:first-child td {
-	border-top: 1px solid #16979f;
-}
+// .TableRecords.TableRecordsNotes tbody tr:first-child td {
+// 	border-top: 1px solid #16979f;
+// }
 
-.TableRecords.TableRecordsNotes tbody td:last-child {
-	border-right: none;
-}
+// .TableRecords.TableRecordsNotes tbody td:last-child {
+// 	border-right: none;
+// }
 
-.TableRecords.TableRecordsNotes .NewMessage_Warning td {
-	background-color: #ffffcc;
-}
+// .TableRecords.TableRecordsNotes .NewMessage_Warning td {
+// 	background-color: #ffffcc;
+// }
 
-.TableRecords.TableRecordsNotes .TableRecords_OddLine {
-	background-color: unset;
-}
+// .TableRecords.TableRecordsNotes .TableRecords_OddLine {
+// 	background-color: unset;
+// }
 
-.desktop .TableRecords.TableRecordsNotes > tbody > tr.LightYellow:hover,
-.desktop
-	.TableRecords.TableRecordsNotes
-	> tbody
-	> tr.LightYellow:hover
-	.TableRecords_OddLine {
-	background-color: #feffc9;
-}
+// .desktop .TableRecords.TableRecordsNotes > tbody > tr.LightYellow:hover,
+// .desktop
+// 	.TableRecords.TableRecordsNotes
+// 	> tbody
+// 	> tr.LightYellow:hover
+// 	.TableRecords_OddLine {
+// 	background-color: #feffc9;
+// }
 
-/***** TableRecords Responsive *****/
+// /***** TableRecords Responsive *****/
 
-.phone table tbody tr.searchable td > div:nth-child(n),
-.tablet table tbody tr.searchable td > div:nth-child(n) {
-	width: 100% !important;
-}
+// .phone table tbody tr.searchable td > div:nth-child(n),
+// .tablet table tbody tr.searchable td > div:nth-child(n) {
+// 	width: 100% !important;
+// }
 
-.phone table tbody tr.searchable td > div:nth-child(1) {
-	width: 15% !important;
-}
+// .phone table tbody tr.searchable td > div:nth-child(1) {
+// 	width: 15% !important;
+// }
 
-.tablet table tbody tr.searchable td > div:nth-child(1) {
-	width: 5% !important;
-}
+// .tablet table tbody tr.searchable td > div:nth-child(1) {
+// 	width: 5% !important;
+// }
 
-.phone table tbody tr.searchable td > div:nth-child(2) {
-	width: 85% !important;
-}
+// .phone table tbody tr.searchable td > div:nth-child(2) {
+// 	width: 85% !important;
+// }
 
-.tablet table tbody tr.searchable td > div:nth-child(2) {
-	width: 95% !important;
-}
+// .tablet table tbody tr.searchable td > div:nth-child(2) {
+// 	width: 95% !important;
+// }
 
-.phone table tbody tr.searchable td > div:last-child,
-.tablet table tbody tr.searchable td > div:last-child {
-	text-align: right;
-}
+// .phone table tbody tr.searchable td > div:last-child,
+// .tablet table tbody tr.searchable td > div:last-child {
+// 	text-align: right;
+// }
 
-.TableRecords .LightGreen {
-	color: #333;
-}
+// .TableRecords .LightGreen {
+// 	color: #333;
+// }
 
-.TableRecords th.SortColumns_Sortable {
-	color: inherit;
-}
+// .TableRecords th.SortColumns_Sortable {
+// 	color: inherit;
+// }
 
 /*------------------------------------------------------------*/
 /* 5.1 RichWidgets > Feedback Ajax Loading ********************/
@@ -5396,329 +5396,329 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 /* SILK Patterns > ExpandableTable */
 
-.TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink {
-	color: #5f6f79;
-}
+// .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink {
+// 	color: #5f6f79;
+// }
 
-.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable
-	.TableRowExpandable_Content {
-	box-sizing: content-box;
-	height: 0;
-	overflow: hidden;
-	padding: 0 40px;
-	-webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-	transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-}
+// .TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable
+// 	.TableRowExpandable_Content {
+// 	box-sizing: content-box;
+// 	height: 0;
+// 	overflow: hidden;
+// 	padding: 0 40px;
+// 	-webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+// 	transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+// }
 
-.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable.open
-	.TableRowExpandable_Content {
-	height: auto;
-	overflow: visible;
-	padding: 20px 40px;
-}
+// .TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable.open
+// 	.TableRowExpandable_Content {
+// 	height: auto;
+// 	overflow: visible;
+// 	padding: 20px 40px;
+// }
 
-.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable
-	.TableRowExpandable_Content.Column {
-	padding: 0 5px;
-}
+// .TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable
+// 	.TableRowExpandable_Content.Column {
+// 	padding: 0 5px;
+// }
 
-.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable
-	.TableRowExpandable_Content.Column,
-.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable.open
-	.TableRowExpandable_Content.Column {
-	color: #5f6f79;
-	/*font-size: 16px;*/
-	font-weight: 400;
-	padding: 0;
-	text-align: left;
-}
+// .TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable
+// 	.TableRowExpandable_Content.Column,
+// .TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable.open
+// 	.TableRowExpandable_Content.Column {
+// 	color: #5f6f79;
+// 	/*font-size: 16px;*/
+// 	font-weight: 400;
+// 	padding: 0;
+// 	text-align: left;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr.ActiveRow td,
-.desktop
-	.TableRecords_Wrapper.NoResponsive
-	.TableRecords
-	> tbody
-	> tr.ActiveRow:hover,
-.desktop
-	.TableRecords_Wrapper.NoResponsive
-	.TableRecords
-	> tbody
-	> tr.ActiveRow:hover
-	td {
-	background: white;
-}
+// .TableRecords_Wrapper.NoResponsive tr.ActiveRow td,
+// .desktop
+// 	.TableRecords_Wrapper.NoResponsive
+// 	.TableRecords
+// 	> tbody
+// 	> tr.ActiveRow:hover,
+// .desktop
+// 	.TableRecords_Wrapper.NoResponsive
+// 	.TableRecords
+// 	> tbody
+// 	> tr.ActiveRow:hover
+// 	td {
+// 	background: white;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr td:first-child {
-	border-left: 1px solid #c9cdce;
-}
+// .TableRecords_Wrapper.NoResponsive tr td:first-child {
+// 	border-left: 1px solid #c9cdce;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr td:last-child {
-	background: white;
-	border-right: 1px solid #c9cdce;
-}
+// .TableRecords_Wrapper.NoResponsive tr td:last-child {
+// 	background: white;
+// 	border-right: 1px solid #c9cdce;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td,
-.desktop
-	.TableRecords_Wrapper.NoResponsive
-	.TableRecords
-	> tbody
-	> tr.TableRowExpandable.open:hover,
-.desktop
-	.TableRecords_Wrapper.NoResponsive
-	.TableRecords
-	> tbody
-	> tr.TableRowExpandable.open:hover
-	td {
-	background: #e4e4e4;
-	padding: 10px 0 0 10px;
-}
+// .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td,
+// .desktop
+// 	.TableRecords_Wrapper.NoResponsive
+// 	.TableRecords
+// 	> tbody
+// 	> tr.TableRowExpandable.open:hover,
+// .desktop
+// 	.TableRecords_Wrapper.NoResponsive
+// 	.TableRecords
+// 	> tbody
+// 	> tr.TableRowExpandable.open:hover
+// 	td {
+// 	background: #e4e4e4;
+// 	padding: 10px 0 0 10px;
+// }
 
-/* Expandable Table responsive */
-.phone .TableRecords_Wrapper.NoResponsive .TableRecords_Wrapper.NoResponsive {
-	max-width: 100%;
-	overflow-x: auto;
-}
+// /* Expandable Table responsive */
+// .phone .TableRecords_Wrapper.NoResponsive .TableRecords_Wrapper.NoResponsive {
+// 	max-width: 100%;
+// 	overflow-x: auto;
+// }
 
-.phone
-	.TableRecords_Wrapper.NoResponsive
-	.TableRecords_Wrapper.NoResponsive
-	.TableRecords.NoResponsive
-	.TableRecords_Header {
-	white-space: nowrap;
-}
+// .phone
+// 	.TableRecords_Wrapper.NoResponsive
+// 	.TableRecords_Wrapper.NoResponsive
+// 	.TableRecords.NoResponsive
+// 	.TableRecords_Header {
+// 	white-space: nowrap;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td {
-	border-bottom: 1px solid #b1b5b6;
-}
+// .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td {
+// 	border-bottom: 1px solid #b1b5b6;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td:first-child {
-	border-left: 1px solid #b1b5b6;
-}
+// .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td:first-child {
+// 	border-left: 1px solid #b1b5b6;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td:last-child {
-	border-right: 1px solid #b1b5b6;
-}
+// .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td:last-child {
+// 	border-right: 1px solid #b1b5b6;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
-	border-top: 1px solid #16979f;
-}
+// .TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
+// 	border-top: 1px solid #16979f;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
-	border-bottom: 1px solid #16979f;
-}
+// .TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
+// 	border-bottom: 1px solid #16979f;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr.ActiveRow td:first-child {
-	border-left: 1px solid #16979f;
-}
+// .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:first-child {
+// 	border-left: 1px solid #16979f;
+// }
 
-.TableRecords_Wrapper.NoResponsive tr.ActiveRow td:last-child {
-	border-right: 1px solid #16979f;
-}
+// .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:last-child {
+// 	border-right: 1px solid #16979f;
+// }
 
-.TableRecords_Wrapper.NoResponsive .TableRecords_Header {
-	background-color: transparent;
-	color: #6f7071;
-	font-size: 12px;
-	font-weight: 400;
-	height: 32px;
-	height: 35px;
-	line-height: 24px;
-	text-align: left;
-	text-transform: initial;
-}
+// .TableRecords_Wrapper.NoResponsive .TableRecords_Header {
+// 	background-color: transparent;
+// 	color: #6f7071;
+// 	font-size: 12px;
+// 	font-weight: 400;
+// 	height: 32px;
+// 	height: 35px;
+// 	line-height: 24px;
+// 	text-align: left;
+// 	text-transform: initial;
+// }
 
-.TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr:hover {
-	background-color: White;
-}
+// .TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr:hover {
+// 	background-color: White;
+// }
 
-.TableRecords_Wrapper.NoResponsive .TableRecords_Header a,
-.TableRecords_Wrapper.NoResponsive .TableRecords_Header a:link,
-.TableRecords_Wrapper.NoResponsive .TableRecords_Header a:visited {
-	color: #999;
-}
+// .TableRecords_Wrapper.NoResponsive .TableRecords_Header a,
+// .TableRecords_Wrapper.NoResponsive .TableRecords_Header a:link,
+// .TableRecords_Wrapper.NoResponsive .TableRecords_Header a:visited {
+// 	color: #999;
+// }
 
-.TableRecords_Wrapper.NoResponsive .TableRecords {
-	background: transparent;
-	text-align: center;
-}
+// .TableRecords_Wrapper.NoResponsive .TableRecords {
+// 	background: transparent;
+// 	text-align: center;
+// }
 
-.TableRecords_Wrapper.NoResponsive .TableRecords_OddLine,
-.TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine {
-	background: white;
-	border-bottom: 1px solid #c9cdce;
-	color: #5f6f79;
-	font-weight: 400;
-	height: 54px;
-	text-align: left;
-}
+// .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine,
+// .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine {
+// 	background: white;
+// 	border-bottom: 1px solid #c9cdce;
+// 	color: #5f6f79;
+// 	font-weight: 400;
+// 	height: 54px;
+// 	text-align: left;
+// }
 
-.TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child,
-.TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child,
-.TableRecords_Wrapper.NoResponsive .TableRecords_Header:first-child {
-	padding-left: 26px;
-}
+// .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child,
+// .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child,
+// .TableRecords_Wrapper.NoResponsive .TableRecords_Header:first-child {
+// 	padding-left: 26px;
+// }
 
-/*seta animation*/
+// /*seta animation*/
 
-.TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child span,
-.TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child span {
-	transform: rotate(270deg);
-}
+// .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child span,
+// .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child span {
+// 	transform: rotate(270deg);
+// }
 
-.TableRecords_Wrapper.NoResponsive
-	.ActiveRow
-	.TableRecords_OddLine:first-child
-	span,
-.TableRecords_Wrapper.NoResponsive
-	.ActiveRow
-	.TableRecords_EvenLine:first-child
-	span {
-	transform: rotate(360deg);
-}
+// .TableRecords_Wrapper.NoResponsive
+// 	.ActiveRow
+// 	.TableRecords_OddLine:first-child
+// 	span,
+// .TableRecords_Wrapper.NoResponsive
+// 	.ActiveRow
+// 	.TableRecords_EvenLine:first-child
+// 	span {
+// 	transform: rotate(360deg);
+// }
 
-/*Responsive */
+// /*Responsive */
 
-.landscape.desktop .TableRecords_Wrapper.NoResponsive {
-	max-width: 100%;
-	overflow-x: auto;
-	white-space: nowrap;
-}
+// .landscape.desktop .TableRecords_Wrapper.NoResponsive {
+// 	max-width: 100%;
+// 	overflow-x: auto;
+// 	white-space: nowrap;
+// }
 
-.landscape.desktop.small .TableRecords_Wrapper.NoResponsive {
-	max-width: 100%;
-	overflow-x: auto;
-	white-space: nowrap;
-}
+// .landscape.desktop.small .TableRecords_Wrapper.NoResponsive {
+// 	max-width: 100%;
+// 	overflow-x: auto;
+// 	white-space: nowrap;
+// }
 
-.tablet .TableRecords_Wrapper.NoResponsive {
-	overflow-x: auto;
-	white-space: nowrap;
-	width: auto;
-}
+// .tablet .TableRecords_Wrapper.NoResponsive {
+// 	overflow-x: auto;
+// 	white-space: nowrap;
+// 	width: auto;
+// }
 
-.landscape.desktop.hd .TableRecords_Wrapper.NoResponsive {
-	min-width: 100%;
-	overflow-x: auto;
-	white-space: nowrap;
-}
+// .landscape.desktop.hd .TableRecords_Wrapper.NoResponsive {
+// 	min-width: 100%;
+// 	overflow-x: auto;
+// 	white-space: nowrap;
+// }
 
-.phone .TableRecords_Wrapper.NoResponsive {
-	min-width: 326px;
-	overflow-x: scroll;
-	white-space: nowrap;
-}
+// .phone .TableRecords_Wrapper.NoResponsive {
+// 	min-width: 326px;
+// 	overflow-x: scroll;
+// 	white-space: nowrap;
+// }
 
-/* AR */
+// /* AR */
 
-.FA .TableRecords_Wrapper.NoResponsive tr td:last-child,
-.AR .TableRecords_Wrapper.NoResponsive tr td:last-child {
-	border-right: 1px solid transparent;
-}
+// .FA .TableRecords_Wrapper.NoResponsive tr td:last-child,
+// .AR .TableRecords_Wrapper.NoResponsive tr td:last-child {
+// 	border-right: 1px solid transparent;
+// }
 
-.FA .TableRecords_Wrapper.NoResponsive tr td:first-child,
-.AR .TableRecords_Wrapper.NoResponsive tr td:first-child {
-	border-left: 1px solid transparent;
-}
+// .FA .TableRecords_Wrapper.NoResponsive tr td:first-child,
+// .AR .TableRecords_Wrapper.NoResponsive tr td:first-child {
+// 	border-left: 1px solid transparent;
+// }
 
-.FA .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child span,
-.FA .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child span,
-.AR .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child span,
-.AR .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child span {
-	transform: rotate(90deg);
-}
+// .FA .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child span,
+// .FA .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child span,
+// .AR .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child span,
+// .AR .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child span {
+// 	transform: rotate(90deg);
+// }
 
-.FA
-	.TableRecords_Wrapper.NoResponsive
-	.ActiveRow
-	.TableRecords_OddLine:first-child
-	span,
-.FA
-	.TableRecords_Wrapper.NoResponsive
-	.ActiveRow
-	.TableRecords_EvenLine:first-child
-	span
-	.AR
-	.TableRecords_Wrapper.NoResponsive
-	.ActiveRow
-	.TableRecords_OddLine:first-child
-	span,
-.AR
-	.TableRecords_Wrapper.NoResponsive
-	.ActiveRow
-	.TableRecords_EvenLine:first-child
-	span {
-	transform: rotate(360deg);
-}
+// .FA
+// 	.TableRecords_Wrapper.NoResponsive
+// 	.ActiveRow
+// 	.TableRecords_OddLine:first-child
+// 	span,
+// .FA
+// 	.TableRecords_Wrapper.NoResponsive
+// 	.ActiveRow
+// 	.TableRecords_EvenLine:first-child
+// 	span
+// 	.AR
+// 	.TableRecords_Wrapper.NoResponsive
+// 	.ActiveRow
+// 	.TableRecords_OddLine:first-child
+// 	span,
+// .AR
+// 	.TableRecords_Wrapper.NoResponsive
+// 	.ActiveRow
+// 	.TableRecords_EvenLine:first-child
+// 	span {
+// 	transform: rotate(360deg);
+// }
 
-.FA
-	.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable.open
-	td:first-child,
-.AR
-	.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable.open
-	td:first-child {
-	border-left: 1px solid transparent;
-}
+// .FA
+// 	.TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable.open
+// 	td:first-child,
+// .AR
+// 	.TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable.open
+// 	td:first-child {
+// 	border-left: 1px solid transparent;
+// }
 
-.FA .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td:last-child,
-.AR
-	.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable.open
-	td:last-child {
-	border-right: 1px solid transparent;
-}
+// .FA .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td:last-child,
+// .AR
+// 	.TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable.open
+// 	td:last-child {
+// 	border-right: 1px solid transparent;
+// }
 
-.AR .TableRecords_Wrapper.NoResponsive .TableRecords_Header,
-.FA .TableRecords_Wrapper.NoResponsive .TableRecords_Header {
-	text-align: right;
-}
+// .AR .TableRecords_Wrapper.NoResponsive .TableRecords_Header,
+// .FA .TableRecords_Wrapper.NoResponsive .TableRecords_Header {
+// 	text-align: right;
+// }
 
-.FA .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine,
-.FA .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine,
-.AR .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine,
-.AR .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine {
-	text-align: right;
-}
+// .FA .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine,
+// .FA .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine,
+// .AR .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine,
+// .AR .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine {
+// 	text-align: right;
+// }
 
-.FA .TableRecords_Wrapper .TableRecords_Header,
-.AR .TableRecords_Wrapper .TableRecords_Header {
-	padding: 10px;
-}
+// .FA .TableRecords_Wrapper .TableRecords_Header,
+// .AR .TableRecords_Wrapper .TableRecords_Header {
+// 	padding: 10px;
+// }
 
-.FA
-	.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable
-	.TableRowExpandable_Content.Column,
-.FA
-	.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable.open
-	.TableRowExpandable_Content.Column,
-.AR
-	.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable
-	.TableRowExpandable_Content.Column,
-.AR
-	.TableRecords_Wrapper.NoResponsive
-	tr.TableRowExpandable.open
-	.TableRowExpandable_Content.Column {
-	padding-right: 10px;
-	text-align: right;
-}
+// .FA
+// 	.TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable
+// 	.TableRowExpandable_Content.Column,
+// .FA
+// 	.TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable.open
+// 	.TableRowExpandable_Content.Column,
+// .AR
+// 	.TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable
+// 	.TableRowExpandable_Content.Column,
+// .AR
+// 	.TableRecords_Wrapper.NoResponsive
+// 	tr.TableRowExpandable.open
+// 	.TableRowExpandable_Content.Column {
+// 	padding-right: 10px;
+// 	text-align: right;
+// }
 
-.TableRowExpandable {
-	display: none;
-}
+// .TableRowExpandable {
+// 	display: none;
+// }
 
-.TableRowExpandable.open {
-	display: table-row;
-	height: 40px;
-}
+// .TableRowExpandable.open {
+// 	display: table-row;
+// 	height: 40px;
+// }
 
 /* SILK Patterns > Separator */
 
@@ -8003,60 +8003,60 @@ a.Button.Icon:hover {
 	line-height: 26px;
 }
 
-.Button.twoLines {
-	border: 1px solid #c8d8dc;
-	border-radius: 2px;
-	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
-	font-weight: normal;
-	height: auto;
-	line-height: 15px;
-	padding: 5px 15px 5px 15px;
-	text-decoration: none;
-}
+// .Button.twoLines {
+// 	border: 1px solid #c8d8dc;
+// 	border-radius: 2px;
+// 	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+// 	font-weight: normal;
+// 	height: auto;
+// 	line-height: 15px;
+// 	padding: 5px 15px 5px 15px;
+// 	text-decoration: none;
+// }
 
-a.Button.twoLines:before {
-	line-height: 5px;
-	margin-top: 12px;
-}
+// a.Button.twoLines:before {
+// 	line-height: 5px;
+// 	margin-top: 12px;
+// }
 
-a.Button.twoLines:focus {
-	font-weight: normal;
-	height: auto;
-	line-height: 15px;
-}
+// a.Button.twoLines:focus {
+// 	font-weight: normal;
+// 	height: auto;
+// 	line-height: 15px;
+// }
 
-a.Button.twoLines:hover:active {
-	font-weight: normal;
-	height: auto;
-	line-height: 15px;
-}
+// a.Button.twoLines:hover:active {
+// 	font-weight: normal;
+// 	height: auto;
+// 	line-height: 15px;
+// }
 
-a.Button.twoLines:hover {
-	font-weight: normal;
-	height: auto;
-	line-height: 15px;
-	text-decoration: none;
-}
+// a.Button.twoLines:hover {
+// 	font-weight: normal;
+// 	height: auto;
+// 	line-height: 15px;
+// 	text-decoration: none;
+// }
 
-a.Button.twoLines {
-	padding-right: 10px;
-}
+// a.Button.twoLines {
+// 	padding-right: 10px;
+// }
 
-a.Button.twoLines > div {
-	text-align: right;
-}
+// a.Button.twoLines > div {
+// 	text-align: right;
+// }
 
-.tablet.landscape a.Button.twoLines {
-	font-weight: normal;
-	height: auto;
-	line-height: 15px;
-	text-decoration: none;
-}
+// .tablet.landscape a.Button.twoLines {
+// 	font-weight: normal;
+// 	height: auto;
+// 	line-height: 15px;
+// 	text-decoration: none;
+// }
 
-.FA a.Button.twoLines > div,
-.AR a.Button.twoLines > div {
-	text-align: left;
-}
+// .FA a.Button.twoLines > div,
+// .AR a.Button.twoLines > div {
+// 	text-align: left;
+// }
 
 .FA a.Button.DoctorUnit:before,
 .AR a.Button.DoctorUnit:before {
@@ -30795,36 +30795,36 @@ html .AR.tablet .ThemeGrid_Width12 {
 //     padding-left: 35px;
 // }
 
-.FA.desktop .TableRecords_OddLine:first-child,
-.FA.desktop .TableRecords_EvenLine:first-child,
-.FA.desktop .TableRecords_Header:first-child,
-.FA.tablet .TableRecords_OddLine:first-child,
-.FA.tablet .TableRecords_EvenLine:first-child,
-.FA.tablet .TableRecords_Header:first-child,
-.AR.desktop .TableRecords_OddLine:first-child,
-.AR.desktop .TableRecords_EvenLine:first-child,
-.AR.desktop .TableRecords_Header:first-child,
-.AR.tablet .TableRecords_OddLine:first-child,
-.AR.tablet .TableRecords_EvenLine:first-child,
-.AR.tablet .TableRecords_Header:first-child {
-	padding-left: 20px;
-}
+// .FA.desktop .TableRecords_OddLine:first-child,
+// .FA.desktop .TableRecords_EvenLine:first-child,
+// .FA.desktop .TableRecords_Header:first-child,
+// .FA.tablet .TableRecords_OddLine:first-child,
+// .FA.tablet .TableRecords_EvenLine:first-child,
+// .FA.tablet .TableRecords_Header:first-child,
+// .AR.desktop .TableRecords_OddLine:first-child,
+// .AR.desktop .TableRecords_EvenLine:first-child,
+// .AR.desktop .TableRecords_Header:first-child,
+// .AR.tablet .TableRecords_OddLine:first-child,
+// .AR.tablet .TableRecords_EvenLine:first-child,
+// .AR.tablet .TableRecords_Header:first-child {
+// 	padding-left: 20px;
+// }
 
-.FA .TableRecords_OddLine:last-child,
-.FA .Ar.TableRecords_EvenLine:last-child,
-.FA .TableRecords_Header:last-child,
-.AR .TableRecords_OddLine:last-child,
-.AR .Ar.TableRecords_EvenLine:last-child,
-.AR .TableRecords_Header:last-child {
-	padding-right: 20px;
-}
+// .FA .TableRecords_OddLine:last-child,
+// .FA .Ar.TableRecords_EvenLine:last-child,
+// .FA .TableRecords_Header:last-child,
+// .AR .TableRecords_OddLine:last-child,
+// .AR .Ar.TableRecords_EvenLine:last-child,
+// .AR .TableRecords_Header:last-child {
+// 	padding-right: 20px;
+// }
 
-.FA.phone .prumo_TableRecords_Label,
-.FA.mini.tablet .prumo_TableRecords_Label,
-.AR.phone .prumo_TableRecords_Label,
-.AR.mini.tablet .prumo_TableRecords_Label {
-	left: 15px;
-}
+// .FA.phone .prumo_TableRecords_Label,
+// .FA.mini.tablet .prumo_TableRecords_Label,
+// .AR.phone .prumo_TableRecords_Label,
+// .AR.mini.tablet .prumo_TableRecords_Label {
+// 	left: 15px;
+// }
 
 .FA .AccordionVertical___title > div,
 .AR .AccordionVertical___title > div {
@@ -31398,14 +31398,14 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
 	padding-right: 20px;
 }
 
-.FA .TableRecords_OddLine:first-child,
-.FA .TableRecords_EvenLine:first-child,
-.FA .TableRecords_Header:first-child,
-.AR .TableRecords_OddLine:first-child,
-.AR .TableRecords_EvenLine:first-child,
-.AR .TableRecords_Header:first-child {
-	padding-right: 20px;
-}
+// .FA .TableRecords_OddLine:first-child,
+// .FA .TableRecords_EvenLine:first-child,
+// .FA .TableRecords_Header:first-child,
+// .AR .TableRecords_OddLine:first-child,
+// .AR .TableRecords_EvenLine:first-child,
+// .AR .TableRecords_Header:first-child {
+// 	padding-right: 20px;
+// }
 
 .FA div.Feedback_Message_Info:before,
 .FA .Ardiv.Feedback_Message_Success:before,
@@ -31906,15 +31906,15 @@ html .AR.tablet .ThemeGrid_Width12 {
 	padding-right: 20px;
 }
 
-.FA .TableRecords_OddLine:first-child,
-.FA .TableRecords_EvenLine:first-child,
-.FA .TableRecords_Header:first-child,
-.AR .TableRecords_OddLine:first-child,
-.AR .TableRecords_EvenLine:first-child,
-.AR .TableRecords_Header:first-child {
-	padding-left: 0;
-	padding-right: 20px;
-}
+// .FA .TableRecords_OddLine:first-child,
+// .FA .TableRecords_EvenLine:first-child,
+// .FA .TableRecords_Header:first-child,
+// .AR .TableRecords_OddLine:first-child,
+// .AR .TableRecords_EvenLine:first-child,
+// .AR .TableRecords_Header:first-child {
+// 	padding-left: 0;
+// 	padding-right: 20px;
+// }
 
 .FA div.Feedback_Message_Info:before,
 .FA div.Feedback_Message_Success:before,
@@ -32454,29 +32454,29 @@ div.UnitDropContainer div.DoctorName.Dragging {
 	padding: 10px 15px;
 }
 
-.FA .TableRecords_EvenLine:last-child,
-.FA .TableRecords_OddLine:last-child,
-.FA .TableRecords_EvenLine:last-child,
-.FA .TableRecords_OddLine:last-child,
-.AR .TableRecords_EvenLine:last-child,
-.AR .TableRecords_OddLine:last-child,
-.AR .TableRecords_EvenLine:last-child,
-.AR .TableRecords_OddLine:last-child {
-	border-left: 1px solid #dadbde;
-	border-right: none;
-}
+// .FA .TableRecords_EvenLine:last-child,
+// .FA .TableRecords_OddLine:last-child,
+// .FA .TableRecords_EvenLine:last-child,
+// .FA .TableRecords_OddLine:last-child,
+// .AR .TableRecords_EvenLine:last-child,
+// .AR .TableRecords_OddLine:last-child,
+// .AR .TableRecords_EvenLine:last-child,
+// .AR .TableRecords_OddLine:last-child {
+// 	border-left: 1px solid #dadbde;
+// 	border-right: none;
+// }
 
-.FA .TableRecords_EvenLine:first-child,
-.FA .TableRecords_OddLine:first-child,
-.FA .TableRecords_EvenLine:first-child,
-.FA .TableRecords_OddLine:first-child,
-.AR .TableRecords_EvenLine:first-child,
-.AR .TableRecords_OddLine:first-child,
-.AR .TableRecords_EvenLine:first-child,
-.AR .TableRecords_OddLine:first-child {
-	border-left: none;
-	border-right: 1px solid #dadbde;
-}
+// .FA .TableRecords_EvenLine:first-child,
+// .FA .TableRecords_OddLine:first-child,
+// .FA .TableRecords_EvenLine:first-child,
+// .FA .TableRecords_OddLine:first-child,
+// .AR .TableRecords_EvenLine:first-child,
+// .AR .TableRecords_OddLine:first-child,
+// .AR .TableRecords_EvenLine:first-child,
+// .AR .TableRecords_OddLine:first-child {
+// 	border-left: none;
+// 	border-right: 1px solid #dadbde;
+// }
 
 .ScaleCard .Box {
 	background-color: transparent;
@@ -32595,11 +32595,11 @@ div.LineInfo {
 	-servicestudio-display: none;
 }
 
-.TableRecords_Wrapper {
-	-servicestudio-display: block;
-	-servicestudio-margin: 0 !important;
-	-servicestudio-width: 100% !important;
-}
+// .TableRecords_Wrapper {
+// 	-servicestudio-display: block;
+// 	-servicestudio-margin: 0 !important;
+// 	-servicestudio-width: 100% !important;
+// }
 
 .PatientDetails_Header {
 	-servicestudio-display: inline-block;

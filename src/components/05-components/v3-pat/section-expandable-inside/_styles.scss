@@ -53,11 +53,15 @@
 		position: relative;
 
 		span {
-			color: $regular-beta;
-			font-size: 0.7em;
-			font-weight: bold;
-			line-height: 24px;
-			margin: 18px;
+			@include arrow-down-simple;
+
+			&:after,
+			&:before {
+				content: '';
+			}
+
+			display: block;
+			margin: 0 18px;
 		}
 	}
 
