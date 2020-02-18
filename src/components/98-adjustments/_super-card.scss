@@ -1,0 +1,65 @@
+.SuperCard_Left {
+	-servicestudio-width: auto !important;
+}
+
+.ListRecords {
+	span .SuperCard {
+		border: solid 1px $light-grey;
+		border-bottom: none;
+	}
+
+	span:last-of-type .SuperCard {
+		border-bottom: solid 1px $light-grey;
+	}
+}
+
+.desktop {
+	&.small {
+		.SuperCard_Right_Actions {
+			line-height: 24px;
+			width: 17%;
+		}
+
+		.SuperCard_Right_Content {
+			width: 83%;
+		}
+	}
+}
+
+.tablet {
+	.SuperCard_Left {
+		display: block;
+		width: 100%;
+
+		> div:empty {
+			display: none;
+		}
+	}
+
+	.SuperCard_Right,
+	.SuperCard_Right > div {
+		display: block;
+		width: 100%;
+	}
+}
+
+.phone {
+	.SuperCard_Right_Content {
+		width: 100%;
+
+		> div {
+			display: inline-table;
+		}
+	}
+
+	.SuperCard_Right_Actions {
+		margin-top: 6px;
+		width: 100%;
+	}
+
+	.SuperCard_Right,
+	.SuperCard_Left {
+		display: block;
+		width: 100%;
+	}
+}

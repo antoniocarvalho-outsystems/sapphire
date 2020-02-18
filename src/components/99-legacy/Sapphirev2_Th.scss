@@ -13566,356 +13566,356 @@ a.Button.Icon:hover {
 /* 9.38 Sapphire Patterns > Custom_Patterns > Card *************************************/
 /*-------------------------------------------------------------------------------------*/
 
-.SuperCard {
-	background-color: transparent;
-	border: solid 1px #d3d6d7;
-	border-radius: 2px;
-	color: #262525;
-	display: table;
-	min-height: 50px;
-	width: 100%;
-}
-
-.SuperCard_Left,
-.SuperCard_Right {
-	display: table-cell;
-	height: 100%;
-	vertical-align: middle;
-}
-
-.SuperCard_Left {
-	background-color: #efefef;
-	width: 0;
-	/*This width is very important in terms of scalability of pattern*/
-}
-
-.SuperCard_Left > div {
-	vertical-align: middle;
-}
-
-.SuperCard_Right_Content {
-	padding: 5px 15px;
-	width: 70%;
-}
-
-.SuperCard_Right_Actions {
-	display: inline-flex;
-	justify-content: flex-end;
-	width: 30%;
-}
-
-.ListRecords span .SuperCard {
-	border: solid 1px #d3d6d7;
-	border-bottom: none;
-}
-
-.ListRecords span:last-of-type .SuperCard {
-	border-bottom: solid 1px #d3d6d7;
-}
-
-.desktop.small .SuperCard_Right_Actions {
-	line-height: 24px;
-	width: 20%;
-}
-
-/*Left Side Size*/
-
-.SuperCard_Left.ExtraTiny {
-	padding: 5px 15px;
-	width: 55px;
-}
-
-.SuperCard_Left.Tiny {
-	padding: 5px 15px;
-	width: 100px;
-}
-
-.SuperCard_Left.ExtraSmall {
-	padding: 5px 15px;
-	width: 150px;
-}
-
-.SuperCard_Left.Small {
-	padding: 5px 15px;
-	width: 200px;
-}
-
-.SuperCard_Left.SmallMedium {
-	padding: 5px 15px;
-	width: 250px;
-}
-
-.SuperCard_Left.Medium {
-	padding: 5px 15px;
-	width: 300px;
-}
-
-.SuperCard_Left.MediumLarge {
-	padding: 5px 15px;
-	width: 350px;
-}
-
-.SuperCard_Left.Large {
-	padding: 5px 15px;
-	width: 400px;
-}
-
-.SuperCard_Left.ExtraLarge {
-	padding: 5px 15px;
-	width: 450px;
-}
-
-.SuperCard_Left.Gigantic {
-	padding: 5px 15px;
-	width: 500px;
-}
-
-.SuperCard_Left.ExtraGigantic {
-	padding: 5px 15px;
-	width: 550px;
-}
-
-.SuperCard_Left.Colossal {
-	padding: 5px 15px;
-	width: 600px;
-}
-
-/*Right Side Colors*/
-.SuperCard_Right.BgWhite {
-	background-color: #fff;
-}
-
-.SuperCard_Right.BgGrey {
-	background-color: #efefef;
-}
-
-/*Left Side Colors*/
-.SuperCard_Left.BgWhite {
-	background-color: #fff;
-}
-
-.SuperCard_Left.BgYellow {
-	background-color: #ffc;
-}
-
-.SuperCard_Left.BgRed {
-	background-color: #ffdede;
-}
-
-.SuperCard_Left.BgDarkRed {
-	background-color: #f3c7c8;
-}
-
-.SuperCard_Left.BgGrey {
-	background-color: #efefef;
-}
-
-.SuperCard_Left.BgLightGrey {
-	background-color: #f2f5f6;
-}
-
-.SuperCard_Left.BgGreen {
-	background-color: #c2dea8;
-}
-
-.SuperCard_Left.BgBlue {
-	background-color: #e6f3f8;
-}
-
-.SuperCard_Left.BgPink {
-	background-color: #fceaf9;
-}
-
-.SuperCard_Left.BgBrown {
-	background-color: #e6e2aa;
-}
-
-/*Border and Icon Color*/
-
-.SuperCard_Left.BorderBlue {
-	border-left: 2px solid #004963;
-	border-right: 0;
-}
-
-.AR .SuperCard_Left-BorderBlue,
-.FA .SuperCard_Left-BorderBlue {
-	border-left: 0;
-	border-right: 2px solid #004963;
-}
-
-.BorderBlue span {
-	color: #004963;
-}
-
-.SuperCard_Left.BorderGreen {
-	border-left: 2px solid #4c762b;
-	border-right: 0;
-}
-
-.AR .SuperCard_Left.BorderGreen,
-.FA .SuperCard_Left.BorderGreen {
-	border-left: 0;
-	border-right: 2px solid #4c762b;
-}
-
-.BorderGreen span {
-	color: #4c762b;
-}
-
-.SuperCard_Left.BorderRed {
-	border-left: 2px solid #9f000f;
-	border-right: 0;
-}
-
-.AR .SuperCard_Left.BorderRed,
-.FA .SuperCard_Left.BorderRed {
-	border-left: 0;
-	border-right: 2px solid #9f000f;
-}
-
-.BorderRed span {
-	color: #9f000f;
-}
-
-.SuperCard_Left.BorderDarkRed {
-	border-left: 2px solid #c23e32;
-	border-right: 0;
-}
-
-.AR .SuperCard_Left.BorderDarkRed,
-.FA .SuperCard_Left.BorderDarkRed {
-	border-left: 0;
-	border-right: 2px solid #c23e32;
-}
-
-.BorderDarkRed span {
-	color: #c23e32;
-}
-
-.SuperCard_Left.BorderPink {
-	border-left: 2px solid #92537a;
-	border-right: 0;
-}
-
-.AR .SuperCard_Left.BorderPink,
-.FA .SuperCard_Left.BorderPink {
-	border-left: 0;
-	border-right: 2px solid #92537a;
-}
-
-.BorderPink span {
-	color: #92537a;
-}
-
-.SuperCard_Left.BorderBrown {
-	border-left: 2px solid #928d09;
-	border-right: 0;
-}
-
-.AR .SuperCard_Left.BorderBrown,
-.FA .SuperCard_Left.BorderBrown {
-	border-left: 0;
-	border-right: 2px solid #928d09;
-}
-
-.SuperCard_Left.BorderGrey {
-	border-left: 2px solid #ddd;
-	border-right: 0;
-}
-
-.SuperCard_Left.BorderGrey {
-	border-left: 0;
-	border-right: 2px solid #ddd;
-}
-
-/*Define if has border*/
-
-.SuperCard_Left.NoLeftBorder {
-	border-color: transparent;
-}
-
-.SuperCard_Left.FirstPHBorderRight {
-	border-left: 0;
-	border-right: 1px solid #ddd;
-}
-
-.AR .SuperCard_Left.FirstPHBorderRight,
-.FA .SuperCard_Left.FirstPHBorderRight {
-	border-left: 1px solid #ddd;
-	border-right: 0;
-}
-
-.SuperCard.Dashed {
-	border: 1px solid #d2d1d0;
-	border-style: dashed;
-}
-
-.SuperCard.BorderNone {
-	border-color: transparent;
-}
-
-/*Define Text Color*/
-
-.SuperCard_Left.TextBlack {
-	color: #333;
-}
-
-.SuperCard_Left.TextRed {
-	color: #9f000f;
-}
-
-/* Responsive Behavior*/
-.desktop.small .SuperCard_Right_Content {
-	width: 83%;
-}
-
-.desktop.small .SuperCard_Right_Actions {
-	width: 17%;
-}
-
-.tablet .SuperCard_Left {
-	display: block;
-	width: 100%;
-}
-
-.tablet .SuperCard_Left > div:empty {
-	display: none;
-}
-
-.phone .SuperCard_Right_Content {
-	width: 100%;
-}
-
-.phone .SuperCard_Right_Actions {
-	margin-top: 6px;
-	width: 100%;
-}
-
-.phone .SuperCard_Right_Content > div {
-	display: inline-table;
-}
-
-.phone .SuperCard_Right,
-.phone .SuperCard_Left {
-	display: block;
-	width: 100%;
-}
-
-.tablet .SuperCard_Right > div,
-.tablet .SuperCard_Right {
-	display: block;
-	width: 100%;
-}
-
-.FA .SuperCard_Right,
-.AR .SuperCard_Right {
-	font-size: 16px;
-}
-
-.FA .SuperCard_Left,
-.AR .SuperCard_Left {
-	font-size: 14px;
-}
+// .SuperCard {
+// 	background-color: transparent;
+// 	border: solid 1px #d3d6d7;
+// 	border-radius: 2px;
+// 	color: #262525;
+// 	display: table;
+// 	min-height: 50px;
+// 	width: 100%;
+// }
+
+// .SuperCard_Left,
+// .SuperCard_Right {
+// 	display: table-cell;
+// 	height: 100%;
+// 	vertical-align: middle;
+// }
+
+// .SuperCard_Left {
+// 	background-color: #efefef;
+// 	width: 0;
+// 	/*This width is very important in terms of scalability of pattern*/
+// }
+
+// .SuperCard_Left > div {
+// 	vertical-align: middle;
+// }
+
+// .SuperCard_Right_Content {
+// 	padding: 5px 15px;
+// 	width: 70%;
+// }
+
+// .SuperCard_Right_Actions {
+// 	display: inline-flex;
+// 	justify-content: flex-end;
+// 	width: 30%;
+// }
+
+// .ListRecords span .SuperCard {
+// 	border: solid 1px #d3d6d7;
+// 	border-bottom: none;
+// }
+
+// .ListRecords span:last-of-type .SuperCard {
+// 	border-bottom: solid 1px #d3d6d7;
+// }
+
+// .desktop.small .SuperCard_Right_Actions {
+// 	line-height: 24px;
+// 	width: 20%;
+// }
+
+// /*Left Side Size*/
+
+// .SuperCard_Left.ExtraTiny {
+// 	padding: 5px 15px;
+// 	width: 55px;
+// }
+
+// .SuperCard_Left.Tiny {
+// 	padding: 5px 15px;
+// 	width: 100px;
+// }
+
+// .SuperCard_Left.ExtraSmall {
+// 	padding: 5px 15px;
+// 	width: 150px;
+// }
+
+// .SuperCard_Left.Small {
+// 	padding: 5px 15px;
+// 	width: 200px;
+// }
+
+// .SuperCard_Left.SmallMedium {
+// 	padding: 5px 15px;
+// 	width: 250px;
+// }
+
+// .SuperCard_Left.Medium {
+// 	padding: 5px 15px;
+// 	width: 300px;
+// }
+
+// .SuperCard_Left.MediumLarge {
+// 	padding: 5px 15px;
+// 	width: 350px;
+// }
+
+// .SuperCard_Left.Large {
+// 	padding: 5px 15px;
+// 	width: 400px;
+// }
+
+// .SuperCard_Left.ExtraLarge {
+// 	padding: 5px 15px;
+// 	width: 450px;
+// }
+
+// .SuperCard_Left.Gigantic {
+// 	padding: 5px 15px;
+// 	width: 500px;
+// }
+
+// .SuperCard_Left.ExtraGigantic {
+// 	padding: 5px 15px;
+// 	width: 550px;
+// }
+
+// .SuperCard_Left.Colossal {
+// 	padding: 5px 15px;
+// 	width: 600px;
+// }
+
+// /*Right Side Colors*/
+// .SuperCard_Right.BgWhite {
+// 	background-color: #fff;
+// }
+
+// .SuperCard_Right.BgGrey {
+// 	background-color: #efefef;
+// }
+
+// /*Left Side Colors*/
+// .SuperCard_Left.BgWhite {
+// 	background-color: #fff;
+// }
+
+// .SuperCard_Left.BgYellow {
+// 	background-color: #ffc;
+// }
+
+// .SuperCard_Left.BgRed {
+// 	background-color: #ffdede;
+// }
+
+// .SuperCard_Left.BgDarkRed {
+// 	background-color: #f3c7c8;
+// }
+
+// .SuperCard_Left.BgGrey {
+// 	background-color: #efefef;
+// }
+
+// .SuperCard_Left.BgLightGrey {
+// 	background-color: #f2f5f6;
+// }
+
+// .SuperCard_Left.BgGreen {
+// 	background-color: #c2dea8;
+// }
+
+// .SuperCard_Left.BgBlue {
+// 	background-color: #e6f3f8;
+// }
+
+// .SuperCard_Left.BgPink {
+// 	background-color: #fceaf9;
+// }
+
+// .SuperCard_Left.BgBrown {
+// 	background-color: #e6e2aa;
+// }
+
+// /*Border and Icon Color*/
+
+// .SuperCard_Left.BorderBlue {
+// 	border-left: 2px solid #004963;
+// 	border-right: 0;
+// }
+
+// .AR .SuperCard_Left-BorderBlue,
+// .FA .SuperCard_Left-BorderBlue {
+// 	border-left: 0;
+// 	border-right: 2px solid #004963;
+// }
+
+// .BorderBlue span {
+// 	color: #004963;
+// }
+
+// .SuperCard_Left.BorderGreen {
+// 	border-left: 2px solid #4c762b;
+// 	border-right: 0;
+// }
+
+// .AR .SuperCard_Left.BorderGreen,
+// .FA .SuperCard_Left.BorderGreen {
+// 	border-left: 0;
+// 	border-right: 2px solid #4c762b;
+// }
+
+// .BorderGreen span {
+// 	color: #4c762b;
+// }
+
+// .SuperCard_Left.BorderRed {
+// 	border-left: 2px solid #9f000f;
+// 	border-right: 0;
+// }
+
+// .AR .SuperCard_Left.BorderRed,
+// .FA .SuperCard_Left.BorderRed {
+// 	border-left: 0;
+// 	border-right: 2px solid #9f000f;
+// }
+
+// .BorderRed span {
+// 	color: #9f000f;
+// }
+
+// .SuperCard_Left.BorderDarkRed {
+// 	border-left: 2px solid #c23e32;
+// 	border-right: 0;
+// }
+
+// .AR .SuperCard_Left.BorderDarkRed,
+// .FA .SuperCard_Left.BorderDarkRed {
+// 	border-left: 0;
+// 	border-right: 2px solid #c23e32;
+// }
+
+// .BorderDarkRed span {
+// 	color: #c23e32;
+// }
+
+// .SuperCard_Left.BorderPink {
+// 	border-left: 2px solid #92537a;
+// 	border-right: 0;
+// }
+
+// .AR .SuperCard_Left.BorderPink,
+// .FA .SuperCard_Left.BorderPink {
+// 	border-left: 0;
+// 	border-right: 2px solid #92537a;
+// }
+
+// .BorderPink span {
+// 	color: #92537a;
+// }
+
+// .SuperCard_Left.BorderBrown {
+// 	border-left: 2px solid #928d09;
+// 	border-right: 0;
+// }
+
+// .AR .SuperCard_Left.BorderBrown,
+// .FA .SuperCard_Left.BorderBrown {
+// 	border-left: 0;
+// 	border-right: 2px solid #928d09;
+// }
+
+// .SuperCard_Left.BorderGrey {
+// 	border-left: 2px solid #ddd;
+// 	border-right: 0;
+// }
+
+// .SuperCard_Left.BorderGrey {
+// 	border-left: 0;
+// 	border-right: 2px solid #ddd;
+// }
+
+// /*Define if has border*/
+
+// .SuperCard_Left.NoLeftBorder {
+// 	border-color: transparent;
+// }
+
+// .SuperCard_Left.FirstPHBorderRight {
+// 	border-left: 0;
+// 	border-right: 1px solid #ddd;
+// }
+
+// .AR .SuperCard_Left.FirstPHBorderRight,
+// .FA .SuperCard_Left.FirstPHBorderRight {
+// 	border-left: 1px solid #ddd;
+// 	border-right: 0;
+// }
+
+// .SuperCard.Dashed {
+// 	border: 1px solid #d2d1d0;
+// 	border-style: dashed;
+// }
+
+// .SuperCard.BorderNone {
+// 	border-color: transparent;
+// }
+
+// /*Define Text Color*/
+
+// .SuperCard_Left.TextBlack {
+// 	color: #333;
+// }
+
+// .SuperCard_Left.TextRed {
+// 	color: #9f000f;
+// }
+
+// /* Responsive Behavior*/
+// .desktop.small .SuperCard_Right_Content {
+// 	width: 83%;
+// }
+
+// .desktop.small .SuperCard_Right_Actions {
+// 	width: 17%;
+// }
+
+// .tablet .SuperCard_Left {
+// 	display: block;
+// 	width: 100%;
+// }
+
+// .tablet .SuperCard_Left > div:empty {
+// 	display: none;
+// }
+
+// .phone .SuperCard_Right_Content {
+// 	width: 100%;
+// }
+
+// .phone .SuperCard_Right_Actions {
+// 	margin-top: 6px;
+// 	width: 100%;
+// }
+
+// .phone .SuperCard_Right_Content > div {
+// 	display: inline-table;
+// }
+
+// .phone .SuperCard_Right,
+// .phone .SuperCard_Left {
+// 	display: block;
+// 	width: 100%;
+// }
+
+// .tablet .SuperCard_Right > div,
+// .tablet .SuperCard_Right {
+// 	display: block;
+// 	width: 100%;
+// }
+
+// .FA .SuperCard_Right,
+// .AR .SuperCard_Right {
+// 	font-size: 16px;
+// }
+
+// .FA .SuperCard_Left,
+// .AR .SuperCard_Left {
+// 	font-size: 14px;
+// }
 
 /*EmergencyInfo*/
 
@@ -32728,9 +32728,9 @@ div.LineInfo {
 	-servicestudio-width: auto;
 }
 
-.SuperCard_Left {
-	-servicestudio-width: auto !important;
-}
+// .SuperCard_Left {
+// 	-servicestudio-width: auto !important;
+// }
 
 .modalPopup {
 	-servicestudio-background-color: #fff;
