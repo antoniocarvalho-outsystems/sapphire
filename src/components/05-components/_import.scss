@@ -1,7 +1,10 @@
 @import 'circled-patient';
 @import 'comp-line';
+@import 'dropdown';
 @import 'flag-line';
 @import 'lds-ring';
+@import 'super-card';
+@import 'table-records';
 @import 'toggle-button';
 @import 'ward-box';
 @import 'wizard';
@@ -19,11 +22,13 @@
 @import 'webpatterns/feedback-ajax-wait/styles';
 @import 'webpatterns/icon-dropdown/styles';
 @import 'webpatterns/inline-dropdown/styles';
-@import 'webpatterns/search/styles';
+@import 'webpatterns/search-wrapper/styles';
 
 /* V3_Pat Components */
 @import 'v3-pat/actions-menu/styles';
+@import 'v3-pat/appointment-icon/styles';
 @import 'v3-pat/badges/styles';
+@import 'v3-pat/bed-information/styles';
 @import 'v3-pat/bed-slot-box/styles';
 @import 'v3-pat/card-box/styles';
 @import 'v3-pat/clinical-badge/styles';
@@ -63,3 +68,4 @@
 @import 'v3-pat/tabs-extended/styles';
 @import 'v3-pat/timeline-detail/styles';
 @import 'v3-pat/toolbar/styles';
+@import 'v3-pat/circle-icon/styles';

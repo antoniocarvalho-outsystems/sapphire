@@ -27,6 +27,14 @@
 	}
 }
 
+@mixin arrow-down-simple($color-base: $regular-beta, $size-base: 5px) {
+	border-bottom: $size-base solid $color-base;
+	border-left: $size-base solid transparent;
+	border-right: $size-base solid transparent;
+	height: 0;
+	width: 0;
+}
+
 @mixin up-down-arrows {
 	background-color: $sapphire-white;
 	background-image: url($icon-arrow-up-down);

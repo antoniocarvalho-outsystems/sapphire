@@ -1,0 +1,51 @@
+.Page .Search_wrapper {
+	&:after {
+		color: $regular-beta;
+		content: '\e690';
+		font-family: $font-family-icons;
+		font-size: 1.071em;
+		left: 1px;
+		padding-right: 10px;
+		pointer-events: none;
+		position: absolute;
+		top: 11px;
+		transform: rotateY(180deg);
+		z-index: 1;
+	}
+
+	input[type='text'] {
+		border: 1px solid $light-grey;
+		border-radius: 100px;
+		box-shadow: none;
+		height: 36px;
+		line-height: 36px;
+		padding: 0 10px 0 35px;
+
+		&:not([disabled]):focus {
+			border: 1px solid $dark-grey;
+		}
+
+		&:not([disabled]):hover {
+			border: 1px solid $sapphire-light;
+		}
+
+		&:not([disabled]):active {
+			border: 1px solid $regular-alpha;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.Page .Search_wrapper {
+		&:after {
+			left: auto;
+			right: 15px;
+		}
+
+		input[type='text'] {
+			padding-left: 0;
+			padding-right: 35px;
+		}
+	}
+}

@@ -7,25 +7,27 @@
 //
 //Style guide: Buttons
 
-/**** BUTTON REFACTOR 06/09/2018 ****/
-
 @mixin default-button($bgColor: $regular-alpha, $fontSize: $font-size-normal) {
 	background-color: $bgColor;
-	border: none;
-	border-radius: 18px;
+	border: 1px solid transparent;
+	border-radius: 1.286em;
 	color: $sapphire-white;
 	cursor: pointer;
 	display: inline-block;
 	font-family: 'LatoBold';
 	font-size: $fontSize;
-	height: 3em;
-	line-height: 3em;
-	min-width: 10em;
+	height: 2.571em;
+	line-height: 2.4em;
+	min-width: 6.714em;
+	padding: 0 15px;
+	text-align: center;
 	text-decoration: none;
+	transition: all 0.1s ease-in;
 	white-space: nowrap;
 }
 
-@mixin disabled-button {
+@mixin disabled-button($bgColor: transparent) {
+	background-color: $bgColor;
 	background-image: none;
 	border: 1px solid $light-grey;
 	color: $light-grey;
@@ -34,11 +36,11 @@
 	text-shadow: none;
 }
 
-@mixin focus-border($bdColor: dark-grey) {
+@mixin focus-border($bdColor: $dark-grey) {
 	border: 1px solid $bdColor !important;
 }
 
-@mixin setLinkStyleAll {
+@mixin link-style-all {
 	&:hover,
 	&:link,
 	&:active {
@@ -46,8 +48,7 @@
 	}
 }
 
-a.Button {
-	//Important use due to Theme Patterns Silk UI
+.LayoutBase a.Button {
 	@include default-button;
 
 	&:focus {
@@ -61,19 +62,16 @@ a.Button {
 
 	&:disabled,
 	&[disabled] {
-		background-color: $sapphire-white;
-		cursor: not-allowed;
-
 		@include disabled-button();
+
+		cursor: not-allowed;
 
 		&:before {
 			color: $light-grey;
 		}
 	}
 
-	/* **************************************** Button Second ********************************************* */
 	&.Second {
-		//Important use due to Theme Patterns Silk UI
 		background-color: $mid-dark-grey;
 
 		&:active,
@@ -87,7 +85,6 @@ a.Button {
 
 		&:disabled,
 		&[disabled] {
-			background-color: $sapphire-white;
 			@include disabled-button();
 
 			&:before {
@@ -101,10 +98,11 @@ a.Button {
 
 		&.SearchMagnifier {
 			background-color: $regular-alpha;
-			border-radius: 0;
+			border-radius: 2px;
 			min-width: auto;
+			padding: 0 10px;
 
-			@include setLinkStyleAll {
+			@include link-style-all {
 				min-width: auto;
 			}
 
@@ -120,13 +118,11 @@ a.Button {
 		}
 	}
 
-	/* **************************************** Button Third ********************************************* */
 	&.Third,
 	&.Cancel {
 		background-color: $sapphire-white;
-		//Important use due to Theme Patterns Silk UI
-		color: $dark-grey !important;
-		@include focus-border(light-grey);
+		border: 1px solid $light-grey;
+		color: $dark-grey;
 
 		&:before {
 			color: $dark-grey;
@@ -136,10 +132,12 @@ a.Button {
 		&:active,
 		&:hover {
 			background-color: $sapphire-light-container !important;
+			border: 1px solid transparent;
+			color: $dark-grey;
 		}
 
 		&:focus {
-			@include focus-border();
+			@include focus-border($dark-grey);
 		}
 
 		&:disabled,
@@ -152,18 +150,17 @@ a.Button {
 		}
 	}
 
-	/* **************************************** Button Link ********************************************* */
-
 	&.Link {
 		background: none;
-		border: none !important;
-		//Important use due to Theme Patterns Silk UI
+		border: 1px solid transparent;
 		color: $regular-beta;
+
+		&:hover,
+		&:focus,
 		&:active,
-		&hover,
-		&focus,
 		&:disabled {
 			background: none !important;
+			border-color: transparent;
 		}
 
 		&:focus {
@@ -180,15 +177,18 @@ a.Button {
 		&:disabled,
 		&[disabled] {
 			@include disabled-button();
+
 			border: none;
 		}
 	}
 
 	&.Small {
+		border-radius: 13px;
 		font-size: $font-size-small;
 		height: 26px;
 		line-height: 24px;
 		min-width: 76px;
+		padding: 0 13px;
 	}
 
 	&.Big {
@@ -215,7 +215,7 @@ a.Button {
 		border-radius: 2px;
 		height: auto;
 		line-height: 15px;
-		padding: 5px 15px 5px 15px;
+		padding: 8px 10px;
 
 		&:before {
 			line-height: 5px;

@@ -1,0 +1,19 @@
+.isTouch {
+	.Search_wrapper {
+		&:after {
+			top: 19px;
+		}
+
+		input[type='text'] {
+			font-size: 1.143em;
+			height: 50px;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.SearchNavigation_frame .Search_wrapper input[type='text'] {
+		padding-left: 35px;
+	}
+}
