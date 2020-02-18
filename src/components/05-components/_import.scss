@@ -23,12 +23,16 @@
 @import 'webpatterns/search/styles';
 
 /* V3_Pat Components */
+@import 'v3-pat/actions-menu/styles';
+@import 'v3-pat/appointment-icon/styles';
+@import 'v3-pat/badges/styles';
 @import 'v3-pat/bed-slot-box/styles';
 @import 'v3-pat/card-box/styles';
 @import 'v3-pat/clinical-badge/styles';
 @import 'v3-pat/datetime-range-picker/styles';
 @import 'v3-pat/demographic-item/styles';
 @import 'v3-pat/dropdown-categories/styles';
+@import 'v3-pat/expiry-card/styles';
 @import 'v3-pat/form-field/styles';
 @import 'v3-pat/fullscreen-tabs-wrapper/styles';
 @import 'v3-pat/generic-gallery/styles';
@@ -42,9 +46,12 @@
 @import 'v3-pat/main-menu/styles';
 @import 'v3-pat/multiple-selection-button/styles';
 @import 'v3-pat/navigation-control/styles';
+@import 'v3-pat/patient-call-cancel/styles';
 @import 'v3-pat/patient-medical-file/styles';
 @import 'v3-pat/person-card/styles';
 @import 'v3-pat/prescription-expandable/styles';
+@import 'v3-pat/progress-bar/styles';
+@import 'v3-pat/progress-bar/styles';
 @import 'v3-pat/sapphire-radio-button/styles';
 @import 'v3-pat/search-and-select/styles';
 @import 'v3-pat/section-expandable-inside/styles';

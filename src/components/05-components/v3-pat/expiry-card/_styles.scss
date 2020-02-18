@@ -1,0 +1,26 @@
+.ExpiryCard {
+	border-radius: 2px;
+	display: inline-block;
+	font-size: $font-size-normal;
+	line-height: 20px;
+	min-width: 80px;
+	padding: 2px 8px;
+	text-align: center;
+}
+
+.ExpiryCard.Expired {
+	// important used due to Theme Sapphire
+	background-color: $light-red !important;
+	color: $regular-red !important;
+}
+
+.ExpiryCard.NearExpiry {
+	// important used due to Theme Sapphire
+	background-color: $light-orange !important;
+	color: $dark-orange !important;
+}
+
+.ExpiryCard .ExpiryCard_data {
+	text-align: center;
+	white-space: nowrap;
+}

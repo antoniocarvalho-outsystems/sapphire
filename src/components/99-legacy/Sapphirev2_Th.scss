@@ -9090,10 +9090,10 @@ a.Button.twoLines > div {
 
 /*AR*/
 
-.FA .StatusContainer .Appointemtn_Icon,
-.AR .StatusContainer .Appointment_Icon {
-	margin-left: 10px;
-}
+// .FA .StatusContainer .Appointemtn_Icon,
+// .AR .StatusContainer .Appointment_Icon {
+// 	margin-left: 10px;
+// }
 
 .FA .InformationContainer div:nth-child(3),
 .AR .InformationContainer div:nth-child(3) {
@@ -13170,87 +13170,87 @@ a.Button.twoLines > div {
 /* 9.33 Sapphire Patterns > Custom_Patterns > AppointmentIcon  *************************/
 /*-------------------------------------------------------------------------------------*/
 
-.Appointment_Icon {
-	border: 2px solid;
-	border-radius: 50%;
-	height: 15px;
-	width: 15px;
-}
+// .Appointment_Icon {
+// 	border: 2px solid;
+// 	border-radius: 50%;
+// 	height: 15px;
+// 	width: 15px;
+// }
 
-.Appointment_Icon.circleSuccess {
-	background-color: #0c4654;
-	border-color: #14a7af;
-	color: #fff;
-	height: 17px;
-	line-height: 1;
-	text-align: left;
-	width: 17px;
-}
+// .Appointment_Icon.circleSuccess {
+// 	background-color: #0c4654;
+// 	border-color: #14a7af;
+// 	color: #fff;
+// 	height: 17px;
+// 	line-height: 1;
+// 	text-align: left;
+// 	width: 17px;
+// }
 
-.FA .Appointment_Icon.circleSuccess,
-.AR .Appointment_Icon.circleSuccess {
-	text-align: right;
-}
+// .FA .Appointment_Icon.circleSuccess,
+// .AR .Appointment_Icon.circleSuccess {
+// 	text-align: right;
+// }
 
-.Appointment_Icon.circleSuccess:before {
-	content: '\e64d';
-	font-family: Sapphire-Icon-Font;
-}
+// .Appointment_Icon.circleSuccess:before {
+// 	content: '\e64d';
+// 	font-family: Sapphire-Icon-Font;
+// }
 
-.Appointment_Icon.redCircle {
-	border-color: #bf1209;
-}
+// .Appointment_Icon.redCircle {
+// 	border-color: #bf1209;
+// }
 
-.Appointment_Icon.blueCircle {
-	border: 2px solid #14a7af;
-}
+// .Appointment_Icon.blueCircle {
+// 	border: 2px solid #14a7af;
+// }
 
-.Appointment_Icon.greenCircle {
-	border: 2px solid #c2dea8;
-}
+// .Appointment_Icon.greenCircle {
+// 	border: 2px solid #c2dea8;
+// }
 
-.Appointment_Icon.nopresence {
-	border: none;
-	color: #ccc;
-	display: inline-block;
-	font-size: 16px;
-	line-height: 16px;
-	-webkit-transform: rotateZ(180deg);
-	-moz-transform: rotateZ(180deg);
-	transform: rotateZ(180deg);
-}
+// .Appointment_Icon.nopresence {
+// 	border: none;
+// 	color: #ccc;
+// 	display: inline-block;
+// 	font-size: 16px;
+// 	line-height: 16px;
+// 	-webkit-transform: rotateZ(180deg);
+// 	-moz-transform: rotateZ(180deg);
+// 	transform: rotateZ(180deg);
+// }
 
-.Appointment_Icon.nopresence:before {
-	content: '\e699';
-	font-family: Sapphire-Icon-Font;
-}
+// .Appointment_Icon.nopresence:before {
+// 	content: '\e699';
+// 	font-family: Sapphire-Icon-Font;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.34 Sapphire Patterns > Custom_Patterns > BadgeClassification **********************/
 /*-------------------------------------------------------------------------------------*/
 
-.BadgeClassification {
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	color: #fff;
-	display: inline-block;
-	font-family: globerbold;
-	font-size: 1rem;
-	font-weight: normal;
-	padding: 1px 4px;
-	white-space: nowrap;
-}
+// .BadgeClassification {
+// 	-webkit-border-radius: 2px;
+// 	-moz-border-radius: 2px;
+// 	border-radius: 2px;
+// 	color: #fff;
+// 	display: inline-block;
+// 	font-family: globerbold;
+// 	font-size: 1rem;
+// 	font-weight: normal;
+// 	padding: 1px 4px;
+// 	white-space: nowrap;
+// }
 
-.IconBadgeClassification {
-	margin-right: 5px;
-}
+// .IconBadgeClassification {
+// 	margin-right: 5px;
+// }
 
-.FA .IconBadgeClassification,
-.AR .IconBadgeClassification {
-	margin-left: 5px;
-	margin-right: auto;
-}
+// .FA .IconBadgeClassification,
+// .AR .IconBadgeClassification {
+// 	margin-left: 5px;
+// 	margin-right: auto;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.35 Sapphire Patterns > Custom_Patterns > BedInformation ***************************/
@@ -16262,111 +16262,111 @@ a.Button.twoLines > div {
 /* 9.67 Sapphire Patterns > Custom_Patterns > StatusBadges *********/
 /*-------------------------------------------------------------------------------------*/
 
-.StatusBadges {
-	background-color: #f7f7f7;
-	border-radius: 15px;
-	color: #00b3bd;
-	font-family: globerbold;
-	font-size: 12px;
-	line-height: 12px;
-	max-height: 20px;
-	padding: 3px 10px;
-	vertical-align: middle;
-}
+// .StatusBadges {
+// 	background-color: #f7f7f7;
+// 	border-radius: 15px;
+// 	color: #00b3bd;
+// 	font-family: globerbold;
+// 	font-size: 12px;
+// 	line-height: 12px;
+// 	max-height: 20px;
+// 	padding: 3px 10px;
+// 	vertical-align: middle;
+// }
 
-.StatusBadges.BadgeYellow {
-	background-color: #e6e2aa;
-	border: 1px solid #e6e2aa;
-	color: #928d09;
-}
+// .StatusBadges.BadgeYellow {
+// 	background-color: #e6e2aa;
+// 	border: 1px solid #e6e2aa;
+// 	color: #928d09;
+// }
 
-.StatusBadges.BadgeRed {
-	background-color: #ffdede;
-	border: 1px solid #ffdede;
-	color: #ff9496;
-}
+// .StatusBadges.BadgeRed {
+// 	background-color: #ffdede;
+// 	border: 1px solid #ffdede;
+// 	color: #ff9496;
+// }
 
-.StatusBadges.BadgeGreen {
-	background-color: #c2dea8;
-	border: 1px solid #c2dea8;
-	color: #4c762b;
-}
+// .StatusBadges.BadgeGreen {
+// 	background-color: #c2dea8;
+// 	border: 1px solid #c2dea8;
+// 	color: #4c762b;
+// }
 
-.StatusBadges.BadgeGrey {
-	background-color: #c9cdce;
-	border: 1px solid #c9cdce;
-	color: #9a9a9a;
-}
+// .StatusBadges.BadgeGrey {
+// 	background-color: #c9cdce;
+// 	border: 1px solid #c9cdce;
+// 	color: #9a9a9a;
+// }
 
-.StatusBadges.BadgeBlue {
-	background-color: #31708f;
-	border: 1px solid #31708f;
-	color: #fff;
-}
+// .StatusBadges.BadgeBlue {
+// 	background-color: #31708f;
+// 	border: 1px solid #31708f;
+// 	color: #fff;
+// }
 
-.StatusBadges.BadgeWhite {
-	background-color: #fff;
-	border: 1px solid #b6d882;
-	color: #b6d882;
-}
+// .StatusBadges.BadgeWhite {
+// 	background-color: #fff;
+// 	border: 1px solid #b6d882;
+// 	color: #b6d882;
+// }
 
-/*New Parameters StatusBadge*/
+// /*New Parameters StatusBadge*/
 
-/*NoBackground*/
-.StatusBadges.InvertBackground.BadgeRed {
-	background-color: #fff;
-	border: 1px solid #cd1d02;
-	color: #cd1d02;
-}
+// /*NoBackground*/
+// .StatusBadges.InvertBackground.BadgeRed {
+// 	background-color: #fff;
+// 	border: 1px solid #cd1d02;
+// 	color: #cd1d02;
+// }
 
-.StatusBadges.InvertBackground.BadgeGreen {
-	background-color: #fff;
-	border: 1px solid #169c20;
-	color: #169c20;
-}
+// .StatusBadges.InvertBackground.BadgeGreen {
+// 	background-color: #fff;
+// 	border: 1px solid #169c20;
+// 	color: #169c20;
+// }
 
-.StatusBadges.InvertBackground.BadgeYellow {
-	background-color: #fff;
-	border: 1px solid #eab62b;
-	color: #eab62b;
-}
+// .StatusBadges.InvertBackground.BadgeYellow {
+// 	background-color: #fff;
+// 	border: 1px solid #eab62b;
+// 	color: #eab62b;
+// }
 
-.StatusBadges.InvertBackground.BadgeGrey {
-	background-color: #fff;
-	border: 1px solid #dae0e4;
-	color: #dae0e4;
-}
+// .StatusBadges.InvertBackground.BadgeGrey {
+// 	background-color: #fff;
+// 	border: 1px solid #dae0e4;
+// 	color: #dae0e4;
+// }
 
-.StatusBadges.InvertBackground.BadgeBlue {
-	background-color: #fff;
-	border: 1px solid #31708f;
-	color: #31708f;
-}
+// .StatusBadges.InvertBackground.BadgeBlue {
+// 	background-color: #fff;
+// 	border: 1px solid #31708f;
+// 	color: #31708f;
+// }
 
-.StatusBadges.InvertBackground.BadgeSapphireBlue2 {
-	background-color: #fff;
-	border: 1px solid #00b3bd;
-	color: #00b3bd;
-}
+// .StatusBadges.InvertBackground.BadgeSapphireBlue2 {
+// 	background-color: #fff;
+// 	border: 1px solid #00b3bd;
+// 	color: #00b3bd;
+// }
 
-/*SmallHeight*/
-.StatusBadges.SmallHeight {
-}
+// /*SmallHeight*/
+// .StatusBadges.SmallHeight {
+// }
 
-/*IconTextColor*/
-.StatusBadges.InvertBackground.IconTextRed,
-.StatusBadges.IconTextRed {
-	color: #cd1d02;
-}
+// /*IconTextColor*/
+// .StatusBadges.InvertBackground.IconTextRed,
+// .StatusBadges.IconTextRed {
+// 	color: #cd1d02;
+// }
 
-.StatusBadges.InvertBackground.IconTextBlack,
-.StatusBadges.IconTextBlack {
-	color: #0c1d22;
-}
+// .StatusBadges.InvertBackground.IconTextBlack,
+// .StatusBadges.IconTextBlack {
+// 	color: #0c1d22;
+// }
 
-.tablet .StatusBadges .Badges_Icon + div {
-	white-space: nowrap;
-}
+// .tablet .StatusBadges .Badges_Icon + div {
+// 	white-space: nowrap;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.68 Sapphire Patterns > Custom_Patterns > Structure *********/
@@ -24474,37 +24474,37 @@ span.select2-container.select2-container--default.select2-container--open {
 
 /* 9.157 Sapphire Patterns > Badges_Extended */
 
-.BadgesExtendedWrapper .PrescriptionBadges {
-	font-size: 12px;
-	font-weight: 600;
-	line-height: 16px;
-	max-height: 20px;
-	padding: 0 10px;
-}
+// .BadgesExtendedWrapper .PrescriptionBadges {
+// 	font-size: 12px;
+// 	font-weight: 600;
+// 	line-height: 16px;
+// 	max-height: 20px;
+// 	padding: 0 10px;
+// }
 
-.BadgesExtendedWrapper .PrescriptionBadges.Green.IsSelected {
-	background-color: #169c20;
-	border-color: #169c20;
-	color: #fff;
-}
+// .BadgesExtendedWrapper .PrescriptionBadges.Green.IsSelected {
+// 	background-color: #169c20;
+// 	border-color: #169c20;
+// 	color: #fff;
+// }
 
-.BadgesExtendedWrapper .PrescriptionBadges.Red.IsSelected {
-	background-color: #cd1d02;
-	border-color: #cd1d02;
-	color: #fff;
-}
+// .BadgesExtendedWrapper .PrescriptionBadges.Red.IsSelected {
+// 	background-color: #cd1d02;
+// 	border-color: #cd1d02;
+// 	color: #fff;
+// }
 
-.BadgesExtendedWrapper .PrescriptionBadges.Yellow.IsSelected {
-	background-color: #eab62b;
-	border-color: #eab62b;
-	color: #fff;
-}
+// .BadgesExtendedWrapper .PrescriptionBadges.Yellow.IsSelected {
+// 	background-color: #eab62b;
+// 	border-color: #eab62b;
+// 	color: #fff;
+// }
 
-.BadgesExtendedWrapper .PrescriptionBadges.LightGrey.IsSelected {
-	background-color: #c9cdce;
-	border-color: #c9cdce;
-	color: #fff;
-}
+// .BadgesExtendedWrapper .PrescriptionBadges.LightGrey.IsSelected {
+// 	background-color: #c9cdce;
+// 	border-color: #c9cdce;
+// 	color: #fff;
+// }
 
 /* 9.158 Sapphire Patterns > MultiDropdown */
 
@@ -25430,14 +25430,14 @@ span.select2-container.select2-container--default.select2-container--open {
 	margin: 10px 0;
 }
 
-.StatusTag {
-	border-radius: 2px 0 2px 2px;
-	color: #fff;
-	font-size: 10px;
-	line-height: 14px;
-	padding: 2px 8px;
-	text-align: center;
-}
+// .StatusTag {
+// 	border-radius: 2px 0 2px 2px;
+// 	color: #fff;
+// 	font-size: 10px;
+// 	line-height: 14px;
+// 	padding: 2px 8px;
+// 	text-align: center;
+// }
 
 /**************/
 
@@ -25943,17 +25943,17 @@ div.ForwardableContainer {
 }
 
 /* Used on HospitalizationPlan*/
-.NumberCircle {
-	border: 1px solid #808080;
-	border-radius: 50%;
-	color: #11394f;
-	font-size: 16px;
-	font-weight: bold;
-	height: 25px;
-	text-align: center;
-	vertical-align: middle;
-	width: 25px;
-}
+// .NumberCircle {
+// 	border: 1px solid #808080;
+// 	border-radius: 50%;
+// 	color: #11394f;
+// 	font-size: 16px;
+// 	font-weight: bold;
+// 	height: 25px;
+// 	text-align: center;
+// 	vertical-align: middle;
+// 	width: 25px;
+// }
 
 .NoMargin {
 	margin: 0 !important;
@@ -29770,31 +29770,31 @@ a.Button.MedInteractions:before {
 }
 
 /*Alert Class*/
-.ExpiryCard {
-	border-radius: 2px;
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 20px;
-	min-width: 80px;
-	padding: 2px 8px;
-	text-align: center;
-}
+// .ExpiryCard {
+// 	border-radius: 2px;
+// 	display: inline-block;
+// 	font-size: 14px;
+// 	font-weight: 700;
+// 	line-height: 20px;
+// 	min-width: 80px;
+// 	padding: 2px 8px;
+// 	text-align: center;
+// }
 
-.ExpiryCard.Expired {
-	background-color: #ffdede;
-	color: #f75c5f;
-}
+// .ExpiryCard.Expired {
+// 	background-color: #ffdede;
+// 	color: #f75c5f;
+// }
 
-.ExpiryCard.NearExpiry {
-	background-color: #ffc891;
-	color: #dd740b;
-}
+// .ExpiryCard.NearExpiry {
+// 	background-color: #ffc891;
+// 	color: #dd740b;
+// }
 
-.ExpiryCard .ExpiryCard_data {
-	text-align: center;
-	white-space: nowrap;
-}
+// .ExpiryCard .ExpiryCard_data {
+// 	text-align: center;
+// 	white-space: nowrap;
+// }
 
 /*Fluid Balance Estructure Columns responsive dekstops*/
 .desktop.small
