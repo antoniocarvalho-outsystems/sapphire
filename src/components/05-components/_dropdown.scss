@@ -11,32 +11,11 @@
 // Style guide: Components.Dropdown
 
 .Dropdown {
-	background-color: $regular-white;
 	background-image: url($icon-arrow-up-down);
 	background-position: right 14px center;
 	background-repeat: no-repeat;
-	border: 1px solid $light-grey;
-	border-radius: 2px;
-	border-radius: 2px;
-	color: $dark-grey;
-	font-size: 14px;
-	height: 36px;
-	line-height: 18px;
 	padding: 0 35px 0 10px;
-	// @TODO: how do we host images?
 	//@include up-down-arrows;
-
-	&:hover {
-		background-color: $regular-eta;
-		border: 1px solid $light-grey;
-		border-radius: 2px;
-	}
-
-	&:focus {
-		border: 1px solid $dark-grey;
-		border-radius: 2px;
-		box-sizing: border-box;
-	}
 
 	&.Mandatory {
 		border-left: 3px solid $regular-alpha;
@@ -57,7 +36,7 @@
 		background-repeat: no-repeat;
 		font-size: 15px;
 		line-height: 19px;
-		padding: 5px 5px 5px 36px;
+		padding: 5px 10px 5px 36px;
 	}
 
 	.LineContent .Dropdown {
