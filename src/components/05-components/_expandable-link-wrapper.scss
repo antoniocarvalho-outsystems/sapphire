@@ -1,0 +1,75 @@
+.ExpandableLinkWrapper {
+	&.active {
+		.ExpandableLinkWrapper {
+			&_content {
+				display: block;
+			}
+
+			&__icon {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+
+	&_Header {
+		cursor: pointer;
+
+		&.IsTriggerRight {
+			display: flex;
+			transform: scale(-1, 1);
+
+			> div > div {
+				transform: scale(-1, 1);
+			}
+
+			.ExpandableLinkWrapper__link {
+				display: flex;
+				flex-basis: 100%;
+				flex-wrap: nowrap;
+
+				> div:last-of-type {
+					flex-basis: 100%;
+					margin-left: 10px;
+				}
+			}
+
+			.ExpandableLinkWrapper__icon,
+			.ExpandableLinkWrapper__link > div {
+				align-self: center;
+				justify-content: center;
+			}
+		}
+
+		> div {
+			min-height: auto;
+		}
+	}
+
+	&_content {
+		display: none;
+		margin-top: 10px;
+
+		.LineDetailsExpandBox .ExpandableLinkWrapper_Header {
+			padding: 5px 10px;
+		}
+	}
+
+	&__icon {
+		color: $regular-beta;
+		transition: transform 0.5s;
+	}
+
+	&__link {
+		margin-left: 10px;
+	}
+}
+
+.AR,
+.FA {
+	.ExpandableLinkWrapper {
+		&__link {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
+}

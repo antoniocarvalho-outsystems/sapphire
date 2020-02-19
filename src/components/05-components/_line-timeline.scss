@@ -1,0 +1,269 @@
+.Page .LineTimeLine {
+	border: 1px solid $light-grey;
+	border-bottom: none;
+	border-radius: 2px;
+
+	&_header {
+		background: $sapphire-light;
+		border-bottom: 1px solid $light-grey;
+		color: $dark-grey;
+	}
+
+	&_content {
+		background: $regular-white;
+		height: 100%;
+
+		&:not(.TimeLineHideLogs) > .LineTimeLine__showMore {
+			display: none;
+		}
+	}
+
+	&__content {
+		.ExpandableLinkWrapper {
+			&_Header {
+				border-bottom: 1px solid $light-grey;
+				color: $mid-dark-grey;
+				font-family: $font-family-bold;
+				height: 55px;
+				line-height: 55px;
+				padding: 0 55px;
+			}
+
+			&_content {
+				border-bottom: 1px solid $light-grey;
+				margin: 0;
+			}
+
+			&__icon {
+				padding: 16px 0;
+
+				.icon {
+					@include arrow-button();
+				}
+			}
+
+			&__link {
+				font-size: 1.429em;
+				margin-left: 68px;
+			}
+		}
+
+		.TimelineDetail {
+			padding: 0 22px;
+
+			.TimelineDetail_content {
+				padding: 0 16px;
+			}
+
+			.TimelineDetail_leftContent,
+			.TimelineDetail_rightContent {
+				padding: 10px 0;
+			}
+
+			.TimelineDetail_rightContent .PrintDocument {
+				min-width: 80px;
+			}
+		}
+
+		.TimelineLogsList {
+			border-bottom: 1px solid $light-grey;
+		}
+	}
+
+	&__row {
+		display: flex;
+		height: 80px;
+		position: relative;
+	}
+
+	&__showMore {
+		border-bottom: 1px solid $regular-white;
+		color: $regular-beta;
+		font-family: $font-family-bold;
+		font-size: 1em;
+		line-height: 35px;
+		text-align: center;
+	}
+
+	&___date {
+		@include flex-center-total;
+
+		background-color: $regular-alpha;
+		color: $regular-white;
+		font-family: $font-family-bold;
+		font-size: 1.429em;
+		width: 130px;
+	}
+
+	&___actions {
+		@include flex-center-vertically;
+
+		min-width: 80px;
+		padding: 0 15px;
+		text-align: right;
+		white-space: nowrap;
+	}
+
+	&___desktop {
+		@include flex-center-vertically;
+
+		flex: 1;
+	}
+
+	&____day {
+		margin-right: 8px;
+		margin-top: 25px;
+	}
+
+	&____month {
+		margin-top: 25px;
+	}
+
+	&____desktopIcon {
+		color: $regular-white;
+		font-size: 0.7em;
+		left: 55px;
+		position: absolute;
+		top: 15px;
+	}
+
+	&____desktopLabel {
+		font-family: $font-family-bold;
+		font-size: 1.429em;
+		line-height: 1.429em;
+		padding: 0 15px;
+	}
+}
+
+.LineSubTimeLine {
+	min-height: 60px;
+	padding: 0 20px;
+
+	&_left {
+		min-width: 140px;
+		width: 200px;
+	}
+
+	&_right {
+		width: calc(100% - 200px);
+
+		&.blueText {
+			color: $dark-blue;
+		}
+
+		&.grayText {
+			color: $regular-gray;
+		}
+
+		&.ItalicText {
+			font-size: 1em;
+			font-style: italic;
+		}
+	}
+
+	&__leftContent {
+		color: $dark-grey;
+		font-family: $font-family-bold;
+		margin: 10px;
+	}
+
+	&__rightContent {
+		margin: 10px;
+	}
+
+	.TimelineItemLineLeftContent {
+		display: inline-flex;
+		width: 100%;
+	}
+
+	.ItemRemoved {
+		color: $regular-gray;
+		text-decoration: line-through;
+	}
+}
+
+.TimelineItemLineLeftContent {
+	&_icon,
+	&_title,
+	&_number {
+		display: inline-block;
+	}
+
+	&___icoLineContent {
+		margin-left: 5px;
+	}
+
+	&__iconBgColor {
+		background-color: $regular-red;
+		border-radius: 10%;
+		color: $regular-white;
+		height: 30px;
+		line-height: 20px;
+		margin-left: 10px;
+		width: 30px;
+	}
+}
+
+.TimelineDescription {
+	font-size: 1em;
+	margin-left: 15px;
+
+	&_title {
+		color: $regular-gray;
+	}
+
+	&_description {
+		color: $dark-grey;
+		font-family: $font-family-bold;
+		margin-top: 3px;
+	}
+}
+
+.TimeLineHideLogs {
+	.LineSubTimeLineHidden {
+		display: none;
+	}
+}
+
+.TimelineShowMore {
+	font-size: 20px;
+	width: 100%;
+}
+
+.AR,
+.FA {
+	.LineTimeLine {
+		&___actions {
+			padding: 5px 0 5px 15px;
+			text-align: left;
+		}
+
+		&___date {
+			border-right: none;
+		}
+
+		&____day {
+			margin-left: 8px;
+			margin-right: 0;
+		}
+
+		&____desktopIcon {
+			right: 55px;
+			width: fit-content;
+		}
+
+		&____desktopLabel {
+			border-right: none;
+			padding: 5px 10px 5px 15px;
+		}
+
+		&____desktopDescription {
+			padding: 0 15px 0 25px;
+		}
+	}
+
+	.TimelineDescription {
+		margin-left: auto;
+		margin-right: 10px;
+	}
+}

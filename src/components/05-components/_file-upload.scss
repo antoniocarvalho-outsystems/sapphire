@@ -1,0 +1,48 @@
+.FileUpload {
+	@include flex-center-total;
+
+	background-color: transparent;
+	border: 1px dashed $regular-gray;
+	border-radius: 4px;
+	min-height: 72px;
+	transform: scale(-1, 1);
+	transition: all 0.2s;
+
+	&:hover {
+		background-color: $regular-eta;
+		border: 1px dashed $regular-alpha;
+	}
+
+	> div {
+		transform: scale(-1, 1);
+	}
+
+	&_Label {
+		color: $dark-grey;
+		font-family: $font-family-bold;
+		font-size: 1em;
+	}
+
+	&_Button {
+		.Button {
+			@extend a.Button;
+			@extend .Plus;
+
+			&:before {
+				margin-left: -6px;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.FileUpload_Button {
+		.Button {
+			&:before {
+				margin-left: auto;
+				margin-right: -6px;
+			}
+		}
+	}
+}

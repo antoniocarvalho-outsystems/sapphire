@@ -47,6 +47,7 @@
 		border: 1px solid $light-grey;
 		border-radius: $border-radius;
 		box-shadow: none;
+		box-sizing: border-box;
 		content: ' ';
 		display: block;
 		height: 100%;
@@ -135,16 +136,14 @@ input {
 		@include common-radio-checkbox-style(20px);
 
 		&::after {
+			@include absolute-center();
 			background: $regular-alpha;
 			border: 1px solid transparent;
-			border-radius: 8px;
+			border-radius: 50%;
 			content: ' ';
-			display: table;
+			display: block;
 			height: 6px;
-			left: 7px;
 			opacity: 0;
-			position: absolute;
-			top: 7px;
 			width: 6px;
 		}
 

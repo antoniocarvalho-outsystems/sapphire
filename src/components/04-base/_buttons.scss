@@ -37,7 +37,7 @@
 }
 
 @mixin focus-border($bdColor: $dark-grey) {
-	border: 1px solid $bdColor !important;
+	border: 1px solid $bdColor;
 }
 
 @mixin link-style-all {
@@ -48,7 +48,7 @@
 	}
 }
 
-.LayoutBase a.Button {
+.Page a.Button {
 	@include default-button;
 
 	&:focus {
@@ -57,7 +57,7 @@
 
 	&:active,
 	&:hover {
-		background-color: $primary-light !important;
+		background-color: $primary-light;
 	}
 
 	&:disabled,
@@ -76,11 +76,7 @@
 
 		&:active,
 		&:hover {
-			background-color: $regular-grey !important;
-		}
-
-		&:focus {
-			@include focus-border(dark-grey);
+			background-color: $regular-grey;
 		}
 
 		&:disabled,
@@ -108,12 +104,17 @@
 
 			&:active,
 			&:hover {
-				background-color: $primary-light !important;
+				background-color: $primary-light;
 			}
 
 			&:after {
 				content: '\e690';
 				font-family: $font-family-icons;
+			}
+
+			&:disabled,
+			&[disabled] {
+				@include disabled-button();
 			}
 		}
 	}
@@ -131,7 +132,7 @@
 
 		&:active,
 		&:hover {
-			background-color: $sapphire-light-container !important;
+			background-color: $sapphire-light-container;
 			border: 1px solid transparent;
 			color: $dark-grey;
 		}
@@ -159,7 +160,6 @@
 		&:focus,
 		&:active,
 		&:disabled {
-			background: none !important;
 			border-color: transparent;
 		}
 
@@ -170,8 +170,8 @@
 
 		&:active,
 		&:hover {
-			background: none !important;
-			color: $regular-alpha !important;
+			background: none;
+			color: $regular-alpha;
 		}
 
 		&:disabled,

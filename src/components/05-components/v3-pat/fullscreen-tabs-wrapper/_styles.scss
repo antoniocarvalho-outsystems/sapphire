@@ -1,78 +1,94 @@
 $tab-height: 44px;
 
-
 .FullScreenTabsDashboard .MultiFloatRight {
-  float: right;
+	float: right;
 }
 
 .FA .FullScreenTabsDashboard .MultiFloatRight,
 .AR .FullScreenTabsDashboard .MultiFloatRight {
-  float: left;
+	float: left;
 }
 
-.FullScreenTabsDashboard>div:first-child {
-  background-color: #113041;
-  height: 3.667rem;
+.FullScreenTabsDashboard > div:first-child {
+	background-color: #113041;
+	height: 3.667rem;
 }
 
-.FullScreenTabsDashboard>div:first-child>div[buttons] {
-  height: 100%;
+.FullScreenTabsDashboard > div:first-child > div[buttons] {
+	height: 100%;
 }
 
-.FullScreenTabsDashboard>div:first-child>div[buttons] a.Button[tab] {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 1.4rem;
-  height: 100%;
-  line-height: 2.4em;
+.FullScreenTabsDashboard > div:first-child > div[buttons] a.Button[tab] {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	font-size: 1.4rem;
+	height: 100%;
+	line-height: 2.4em;
 }
 
-.FullScreenTabsDashboard>div:first-child>div[tabs] {
-  padding: .89rem 5px 0;
+.FullScreenTabsDashboard > div:first-child > div[tabs] {
+	padding: 0.89rem 5px 0;
 }
 
-.FullScreenTabsDashboard>div:first-child div.FullScreenTabsDashboard-Tab {
-  color: #fff;
-  display: inline-block;
-  font-size: 1.25rem;
-  min-width: 100px;
-  padding: .37rem 25px;
-  text-align: center;
-  user-select: none;
+.FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab {
+	color: #fff;
+	display: inline-block;
+	font-size: 1.25rem;
+	min-width: 100px;
+	padding: 0.37rem 25px;
+	text-align: center;
+	user-select: none;
 }
 
-.FullScreenTabsDashboard>div:first-child div.FullScreenTabsDashboard-Tab.Active {
-  background-color: #F7F4EF;
-  border-bottom: 1px solid #F7F4EF;
-  pointer-events: none;
+.FullScreenTabsDashboard
+	> div:first-child
+	div.FullScreenTabsDashboard-Tab.Active {
+	background-color: #f7f4ef;
+	border-bottom: 1px solid #f7f4ef;
+	pointer-events: none;
 }
 
-.FullScreenTabsDashboard>div:first-child div.FullScreenTabsDashboard-Tab>div[icon] {
-  margin-left: -10px;
-  margin-right: 10px;
+.FullScreenTabsDashboard
+	> div:first-child
+	div.FullScreenTabsDashboard-Tab
+	> div[icon] {
+	margin-left: -10px;
+	margin-right: 10px;
 }
 
-.FA .FullScreenTabsDashboard>div:first-child div.FullScreenTabsDashboard-Tab>div[icon],
-.AR .FullScreenTabsDashboard>div:first-child div.FullScreenTabsDashboard-Tab>div[icon] {
-  margin-left: 10px;
-  margin-right: -10px;
+.FA
+	.FullScreenTabsDashboard
+	> div:first-child
+	div.FullScreenTabsDashboard-Tab
+	> div[icon],
+.AR
+	.FullScreenTabsDashboard
+	> div:first-child
+	div.FullScreenTabsDashboard-Tab
+	> div[icon] {
+	margin-left: 10px;
+	margin-right: -10px;
 }
 
-.FullScreenTabsDashboard>div:first-child div.FullScreenTabsDashboard-Tab.Active>div[icon] {
-  color: #835478;
+.FullScreenTabsDashboard
+	> div:first-child
+	div.FullScreenTabsDashboard-Tab.Active
+	> div[icon] {
+	color: #835478;
 }
 
-.FullScreenTabsDashboard>div:last-child div.FullScreenTabsDashboard-Content div.TabContentDashboard-Loading {
-  color: rgba(51, 51, 51, 0.2);
-  font-size: 3rem;
-  padding: 60px 10px;
-  text-align: center;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(255, 255, 255, 0.1);
+.FullScreenTabsDashboard
+	> div:last-child
+	div.FullScreenTabsDashboard-Content
+	div.TabContentDashboard-Loading {
+	color: rgba(51, 51, 51, 0.2);
+	font-size: 3rem;
+	padding: 60px 10px;
+	text-align: center;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1),
+		1px 1px 0 rgba(255, 255, 255, 0.1);
 }
-
-
-
 
 /*
 
@@ -98,183 +114,160 @@ $tab-height: 44px;
 
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
 .FullScreenTabsWrapper_Container {
-  background-color: $regular-alpha;
-  height: $tab-height;
-  padding: 0;
-  position: relative;
+	background-color: $regular-alpha;
+	height: $tab-height;
+	padding: 0;
+	position: relative;
 
-  .FullScreenTabsWrapper__Tabs {
-    bottom: 0;
-    display: inline-flex;
-    position: absolute;
-  }
+	.FullScreenTabsWrapper__Tabs {
+		bottom: 0;
+		display: inline-flex;
+		position: absolute;
+	}
 }
 
 .TabWrapper {
-  border-top: solid 3px $regular-alpha;
-  height: $tab-height;
-  min-width: 100px;
-  position: relative;
+	border-top: solid 3px $regular-alpha;
+	height: $tab-height;
+	min-width: 100px;
+	position: relative;
 
-  &:hover {
-    background-color: $regular-beta;;
-    border-top-color: $regular-beta;;
-  }
+	&:hover {
+		background-color: $regular-beta;
+		border-top-color: $regular-beta;
+	}
 
-  .TabWrapper_tab a {
-    color: #fff;
-    display: block;
-    font-family: 'LatoBold';
-    font-size: 1rem;
-    line-height: calc(#{$tab-height} - 5px);
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+	.TabWrapper_tab a {
+		color: #fff;
+		display: block;
+		font-family: 'LatoBold';
+		font-size: 1rem;
+		line-height: calc(#{$tab-height} - 5px);
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 
-  .TabWrapper_icon {
-    left: 5px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+	.TabWrapper_icon {
+		left: 5px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 
-    .icon {
-      color: #fff;
-      display: block;
-    }
-  }
+		.icon {
+			color: #fff;
+			display: block;
+		}
+	}
 }
 
 .TabWrapper.Active {
-  background-color: #fff;
-  color: $regular-alpha;
-  pointer-events: none;
+	background-color: #fff;
+	color: $regular-alpha;
+	pointer-events: none;
 
-  a,
-  a:hover {
-    color: $sapphire-color-text-regular;
-  }
+	a,
+	a:hover {
+		color: $sapphire-color-text-regular;
+	}
 
-  .TabWrapper_icon .icon {
-    color: $sapphire-color-text-regular;
-
-  }
-
+	.TabWrapper_icon .icon {
+		color: $sapphire-color-text-regular;
+	}
 }
 
 .FullScreenTabs_tabCounter {
-  background-color: $regular-red;
-  border-radius: 100%;
-  color: #fff;
-  font-size: 10px;
-  height: 15px;
-  line-height: 15px;
-  margin-left: -15px;
-  margin-top: 6px;
-  text-align: center;
-  width: 15px;
-  z-index: 1;
+	background-color: $regular-red;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 10px;
+	height: 15px;
+	line-height: 15px;
+	margin-left: -15px;
+	margin-top: 6px;
+	text-align: center;
+	width: 15px;
+	z-index: 1;
 }
 
 .FA .FullScreenTabs_tabCounter,
 .AR .FullScreenTabs_tabCounter {
-  left: 2px;
-  right: auto;
+	left: 2px;
+	right: auto;
 }
 
 .FullScreenTabsWrapper_Container.Dashboard {
-  background-color: #fff;
+	background-color: #fff;
 
-  a {
-    position: relative;
+	a {
+		position: relative;
+	}
 
-    .TabWrapper {
-      background-color: #fff;
-      border-bottom: solid 3px #fff;
-      border-top-color: #fff;
-      color: $regular-alpha;
-      display: block;
-      font-family: 'LatoBold';
-      font-size: 1rem;
-      line-height: calc(#{$tab-height} - 5px);
-      padding-left: 25px;
-      padding-right: 25px;
+	.TabWrapper {
+		background-color: #fff;
+		border-bottom: solid 3px #fff;
+		border-top-color: #fff;
+		color: $regular-alpha;
+		display: block;
+		font-family: 'LatoBold';
+		font-size: 1rem;
+		line-height: calc(#{$tab-height} - 5px);
+		padding-left: 25px;
+		padding-right: 25px;
 
-      &:hover {
-        border-bottom-color: $regular-alpha;
-      }
+		&:hover {
+			border-bottom-color: $regular-alpha;
+		}
 
-      &.Active {
-        background-color: $gray-lighter;
-        border-bottom-color: $gray-lighter;
-        border-top-color: $regular-alpha;
-        color: $sapphire-color-text-regular;
-      }
-    }
+		&.Active {
+			background-color: $gray-lighter;
+			border-bottom-color: $gray-lighter;
+			border-top-color: $regular-alpha;
+			color: $sapphire-color-text-regular;
+		}
+	}
 
-    .FullScreenTabs_tabCounter {
-      position: absolute;
-      right: 3px;
-      top: 0;
-    }
-  }
+	.FullScreenTabs_tabCounter {
+		position: absolute;
+		right: 3px;
+		top: 0;
+	}
 }
 
 .FullScreenTabsWrapper_Container.Emergency {
-  .TabWrapper.Active {
-    background-color: $light-red;
-    border-top: $regular-red;
-    color: $regular-red;
+	.TabWrapper.Active {
+		background-color: $light-red;
+		border-top: $regular-red;
+		color: $regular-red;
 
-    .TabWrapper_tab a {
-      color: $regular-red;
-    }
-  }
+		.TabWrapper_tab a {
+			color: $regular-red;
+		}
+	}
 }
 
-
-
-
-
-
-
-
-
-
 .tablet .TabWrapper.Active {
-  display: block;
+	display: block;
 }
 
 .tablet.portrait .FullScreenTabsWrapper {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 
 .tablet.portrait .TabWrapper {
-  padding: 0px 15px;
+	padding: 0px 15px;
 }
 
 .tablet .TabWrapper {
-  text-align: center;
+	text-align: center;
 }
 
 .tablet .TabWrapper a,
 .tablet .TabWrapper a:link:hover,
 .tablet .TabWrapper a:hover {
-  padding: 0 20px;
+	padding: 0 20px;
 }
 
 .tablet .FullScreenTabsWrapper_Container {
-  height: 43px;
+	height: 43px;
 }

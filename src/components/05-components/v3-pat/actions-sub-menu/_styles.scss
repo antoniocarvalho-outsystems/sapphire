@@ -1,0 +1,159 @@
+$PatientHeaderActions-color-active: $regular-alpha;
+
+
+.PatientHeaderActions {
+  position: relative;
+}
+
+.PatientHeaderActions_menuItem {
+  background-color: #fff;
+  border: 1px solid #c8d8dc;
+  border-radius: 2px;
+  font-size: 15px;
+  min-height: 47px;
+  padding: 0 8px;
+  position: relative;
+  text-align: right;
+  width: fit-content;
+}
+
+.PatientHeaderActions_menuItem.NoBorder {
+  background-color: transparent;
+  border: 0;
+}
+
+.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions {
+  line-height: 30px;
+}
+
+.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions {
+  padding-top: 0px;
+}
+
+.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__menuPlaceholder {
+  min-height: 0;
+}
+
+.PatientHeaderActions__actions {
+  color: $PatientHeaderActions-color-active;
+  cursor: pointer;
+  height: 30px;
+  min-width: 30px;
+  padding-right: 7px;
+  padding-top: 5px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover {
+  background-color: #e6f3f5;
+  border-radius: 100px;
+  height: 30px;
+  min-width: 30px;
+}
+
+.PatientHeaderActions__actions .WhiteContainer {
+  height: 36px;
+  line-height: 0;
+  padding: 9px;
+  width: 36px;
+}
+
+.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover .icon {
+  color: $PatientHeaderActions-color-active;
+}
+
+.Page .PatientHeaderActions__subMenu {
+  background-color: #fff;
+  border: 1px solid #e0e1e3;
+  border-radius: 3px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  display: none;
+  min-width: 180px;
+  padding: 16px 20px;
+  position: absolute;
+  right: 5px;
+  text-align: left;
+  top: 56px;
+  white-space: nowrap;
+  z-index: 2;
+
+  &.SubMenuBlock {
+    display: block;
+  }
+}
+
+.PatientHeaderActions__subMenu .iconHorizontal {
+  cursor: pointer;
+  display: block;
+}
+
+.SubMenuBlock {
+  display: block;
+}
+
+.PatientHeaderActions__subMenu>div:not(:first-child) {
+  margin-top: 10px;
+}
+
+.PatientHeaderActions__subMenu .iconHorizontal_label {
+  font-size: 12px;
+}
+
+.PatientHeaderActions__subMenu .iconHorizontal_icon {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.PatientHeaderActions__subMenu:before {
+  border: solid 10px transparent;
+  border-bottom: solid 10px #ccc;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 83%;
+  position: absolute;
+  top: -21px;
+  width: 1px;
+}
+
+.PatientHeaderActions__subMenu:after {
+  border: solid 10px transparent;
+  border-bottom: solid 10px #fff;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 83%;
+  position: absolute;
+  top: -20px;
+  width: 1px;
+}
+
+.PatientHeaderActions__menuPlaceholder .icon-medicalfile {
+  color: #c9d8dd;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.PatientHeaderActions__menuPlaceholder {
+  line-height: 45px;
+  min-height: 45px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.PatientHeaderActions__menuPlaceholder.borderRight {
+  border-right: 1px solid #c8d8dc;
+}
+
+.FA .PatientHeaderActions__menuPlaceholder.borderRight,
+.AR .PatientHeaderActions__menuPlaceholder.borderRight {
+  border-left: 1px solid #c8d8dc;
+  border-right: none;
+}
+
+.FA .PatientHeaderActions__menuPlaceholder,
+.AR .PatientHeaderActions__menuPlaceholder {
+  padding-left: 5px;
+  padding-right: 0;
+}

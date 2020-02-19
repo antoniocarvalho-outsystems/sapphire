@@ -587,7 +587,14 @@ body.PanelOpened .daterangepicker {
   line-height: 20px;
   padding-right: 23px;
   width: 180px;
+
+  &::placeholder {
+    color: $regular-gray;
+    font-size: 0.9rem;
+  }
+
 }
+
 
 .isTouch .DateTimeRangePicker-input input[type='text'] {
   width: 230px;

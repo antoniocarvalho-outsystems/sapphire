@@ -1,10 +1,17 @@
+@import 'button-click';
 @import 'circled-patient';
 @import 'comp-line';
 @import 'dropdown';
+@import 'expandable-link-wrapper';
+@import 'file-upload';
 @import 'flag-line';
+@import 'input-icon-sapphire';
 @import 'lds-ring';
+@import 'line-timeline';
+@import 'section-expandable';
 @import 'super-card';
 @import 'table-records';
+@import 'timeline-item';
 @import 'toggle-button';
 @import 'ward-box';
 @import 'wizard';
@@ -14,6 +21,7 @@
 
 /* RichWidgets Components */
 @import 'richwidgets/input-autocomplete/styles';
+@import 'richwidgets/feedback-message/styles';
 
 /* WebPatterns Components */
 @import 'webpatterns/button-dropdown/styles';
@@ -23,9 +31,11 @@
 @import 'webpatterns/icon-dropdown/styles';
 @import 'webpatterns/inline-dropdown/styles';
 @import 'webpatterns/search-wrapper/styles';
+@import 'webpatterns/date-picker/styles';
 
 /* V3_Pat Components */
 @import 'v3-pat/actions-menu/styles';
+@import 'v3-pat/actions-sub-menu/styles';
 @import 'v3-pat/appointment-icon/styles';
 @import 'v3-pat/badges/styles';
 @import 'v3-pat/bed-information/styles';
@@ -35,6 +45,7 @@
 @import 'v3-pat/datetime-range-picker/styles';
 @import 'v3-pat/demographic-item/styles';
 @import 'v3-pat/dropdown-categories/styles';
+@import 'v3-pat/dropzone/stylus';
 @import 'v3-pat/expiry-card/styles';
 @import 'v3-pat/form-field/styles';
 @import 'v3-pat/fullscreen-tabs-wrapper/styles';
@@ -57,8 +68,8 @@
 @import 'v3-pat/progress-bar/styles';
 @import 'v3-pat/sapphire-radio-button/styles';
 @import 'v3-pat/search-and-select/styles';
+@import 'v3-pat/section-expandable-custom/styles';
 @import 'v3-pat/section-expandable-inside/styles';
-@import 'v3-pat/section-expandable/styles';
 @import 'v3-pat/segmented-control/styles';
 @import 'v3-pat/select-system/styles';
 @import 'v3-pat/shift-container/styles';
