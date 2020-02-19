@@ -1,0 +1,83 @@
+.TimelineItem {
+	min-height: 75px;
+	position: relative;
+
+	&:hover .TimelineItem_circleIcon {
+		background-color: $regular-alpha;
+		color: $regular-white;
+	}
+
+	&.Line {
+		&:after {
+			border-left: 1px solid $light-grey;
+			bottom: 0;
+			content: '';
+			left: 23px;
+			position: absolute;
+			top: 0;
+			z-index: 0;
+		}
+	}
+
+	&_circleIcon {
+		background-color: $regular-white;
+		border-radius: 50%;
+		display: inline-block;
+		height: 46px;
+		left: 0;
+		line-height: 46px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		transition: all 0.2s;
+		width: 46px;
+		z-index: 2;
+	}
+
+	&_content {
+		margin-left: 75px;
+	}
+
+	&__date {
+		color: $regular-gray;
+		font-size: 1em;
+	}
+
+	&__description {
+		color: $regular-beta;
+		font-family: $font-family-bold;
+		font-size: 1.143em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+.TimelineHistoryContent_header {
+	font-family: $font-family-bold;
+	font-size: 1.429em;
+
+	a:link {
+		color: $dark-grey;
+		font-family: inherit;
+	}
+}
+
+.AR,
+.FA {
+	.TimelineItem {
+		&.Line:after {
+			left: auto;
+			right: 23px;
+		}
+
+		&_circleIcon {
+			left: auto;
+			right: 0;
+		}
+
+		&_content {
+			margin-left: auto;
+			margin-right: 75px;
+		}
+	}
+}
