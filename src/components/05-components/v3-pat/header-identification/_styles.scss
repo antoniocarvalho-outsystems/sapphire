@@ -26,9 +26,6 @@
 
 }
 
-
-
-
 .HeaderIdentification-photo .PhotoFrameMonths {
   display: flex;
   height: 50px;
@@ -119,6 +116,13 @@
   &-name {
     font-family: 'LatoBold';
     font-size: 1.5rem;
+
+    .patient-en-fullname span {
+      display: inline-block;
+      max-width: 400px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 }
 

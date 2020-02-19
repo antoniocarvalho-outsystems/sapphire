@@ -131,10 +131,23 @@
       position: static;
     }
 
-    .ClinicianWorkArea-columns {
-      padding-left: 16px;
-      width: 100%;
+    .ClinicianWorkArea {
+      .ClinicianWorkArea-columns {
+        background-color: $body-color;
+        padding-left: 16px;
+        width: 100%;
+      }
+
+      &.FullWidth {
+        .ClinicianWorkArea-columns {
+          background: #fff;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 0) 200px);
+        }
+      }
+
     }
+
+
 
     .ClinicianWorkArea-columns-big {
       display: inline-block;
@@ -169,10 +182,6 @@
       margin-left: 0;
       padding-right: 8px;
     }
-  }
-
-  .ClinicianWorkArea____workItems {
-    background-color: $sapphire-light-container;
   }
 
   .ClinicianWorkArea____painLevel {
@@ -264,10 +273,6 @@ html .Page .PatientDetailsLayout {
 
 .LayoutBase-Content .LayoutBase-secondary .LayoutBase-secondary-aside>a .DisplayInlineBlock {
   display: block;
-}
-
-.ClinicianWorkArea.FullWidth .ClinicianWorkArea____workItems {
-  background-color: $light-beige;
 }
 
 .LayoutBase-Content-MainWorkArea.PatientDetails__MainWorkArea .LayoutBase-primary-menu .FullScreenTabsWrapper__Tabs {
