@@ -6018,44 +6018,44 @@ body .triggerTimeBack {
 // }
 
 /* SILK Patterns > FileUpload */
-.FileUpload {
-  background-color: transparent;
-  border: 1px dashed gray;
-  min-height: 50px;
-  text-align: center;
-  transform: scale(-1, 1);
-}
+// .FileUpload {
+//   background-color: transparent;
+//   border: 1px dashed gray;
+//   min-height: 50px;
+//   text-align: center;
+//   transform: scale(-1, 1);
+// }
 
-.FileUpload_Button .Button {
-  line-height: 32px;
-  text-align: right;
-  width: 150px;
-}
+// .FileUpload_Button .Button {
+//   line-height: 32px;
+//   text-align: right;
+//   width: 150px;
+// }
 
-.FileUpload_Button:before {
-  color: #16979f;
-  content: '\e604';
-  font-family: 'Sapphire-Icon-Font';
-  font-size: 18px;
-  left: 34px;
-  line-height: 20px;
-  position: relative;
-  top: 4px;
-}
+// .FileUpload_Button:before {
+//   color: #16979f;
+//   content: '\e604';
+//   font-family: 'Sapphire-Icon-Font';
+//   font-size: 18px;
+//   left: 34px;
+//   line-height: 20px;
+//   position: relative;
+//   top: 4px;
+// }
 
-.FileUpload>div {
-  transform: scale(-1, 1);
-}
+// .FileUpload>div {
+//   transform: scale(-1, 1);
+// }
 
-.FA .FileUpload_Button:before,
-.AR .FileUpload_Button:before {
-  left: -34px;
-}
+// .FA .FileUpload_Button:before,
+// .AR .FileUpload_Button:before {
+//   left: -34px;
+// }
 
-.FA .FileUpload_Button .Button,
-.AR .FileUpload_Button .Button {
-  text-align: left;
-}
+// .FA .FileUpload_Button .Button,
+// .AR .FileUpload_Button .Button {
+//   text-align: left;
+// }
 
 .ConsentFormContainer .FileUpload {
   padding: 0;
@@ -15946,33 +15946,33 @@ a.Button.Icon:hover {
 /* 9.69 Sapphire Patterns > Custom_Patterns > TimelineNoItems *********/
 /*-------------------------------------------------------------------------------------*/
 
-.TimelineNoItems {
-  background-color: #ebebeb;
-  border: 1px solid #c9cdce;
-  color: #11455d;
-  display: table;
-  font-size: larger;
-  padding: 5px;
-  width: 100%;
-}
+// .TimelineNoItems {
+//   background-color: #ebebeb;
+//   border: 1px solid #c9cdce;
+//   color: #11455d;
+//   display: table;
+//   font-size: larger;
+//   padding: 5px;
+//   width: 100%;
+// }
 
-.TimelineNoItems_icon {
-  display: table-cell;
-  font-size: 24px;
-  text-align: left;
-  vertical-align: middle;
-  width: 40px;
-}
+// .TimelineNoItems_icon {
+//   display: table-cell;
+//   font-size: 24px;
+//   text-align: left;
+//   vertical-align: middle;
+//   width: 40px;
+// }
 
-.TimelineNoItems_icon .icon {
-  font-size: 24px;
-}
+// .TimelineNoItems_icon .icon {
+//   font-size: 24px;
+// }
 
-.TimelineNoItems_message {
-  display: table-cell;
-  font-size: 18px;
-  vertical-align: middle;
-}
+// .TimelineNoItems_message {
+//   display: table-cell;
+//   font-size: 18px;
+//   vertical-align: middle;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.70 Sapphire Patterns > Custom_Patterns > VerticalCarousel *********/
@@ -21363,39 +21363,39 @@ body.confirmation-opened {
 // }
 
 /* wb TimelineNoItems */
-.TimelineNoItems {
-  background-color: #ebebeb;
-  border: 1px solid #c9cdce;
-  color: #11455d;
-  display: table;
-  font-size: inherit;
-  width: 100%;
-}
+// .TimelineNoItems {
+//   background-color: #ebebeb;
+//   border: 1px solid #c9cdce;
+//   color: #11455d;
+//   display: table;
+//   font-size: inherit;
+//   width: 100%;
+// }
 
-.TimelineNoItems_row {
-  display: table-row;
-  width: 100%;
-}
+// .TimelineNoItems_row {
+//   display: table-row;
+//   width: 100%;
+// }
 
-.TimelineNoItems__icon {
-  display: table-cell;
-  vertical-align: middle;
-  width: 1%;
-}
+// .TimelineNoItems__icon {
+//   display: table-cell;
+//   vertical-align: middle;
+//   width: 1%;
+// }
 
-.TimelineNoItems__message {
-  display: table-cell;
-  font-size: 18px;
-  line-height: 22px;
-  padding-left: 10px;
-  vertical-align: middle;
-}
+// .TimelineNoItems__message {
+//   display: table-cell;
+//   font-size: 18px;
+//   line-height: 22px;
+//   padding-left: 10px;
+//   vertical-align: middle;
+// }
 
-.FA .TimelineNoItems__message,
-.AR .TimelineNoItems__message {
-  padding-left: auto;
-  padding-right: 10px;
-}
+// .FA .TimelineNoItems__message,
+// .AR .TimelineNoItems__message {
+//   padding-left: auto;
+//   padding-right: 10px;
+// }
 
 /* wb TimelineSeparator */
 .TimeSeparator {
