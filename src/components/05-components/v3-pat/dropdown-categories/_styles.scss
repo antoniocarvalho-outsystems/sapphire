@@ -1,6 +1,8 @@
 /* select2 v 4.0.3 */
 
-.LayoutBase {
+.LayoutBase,
+.GenericPopupFlex,
+.LayoutBlank {
 	.select2-container {
 		box-sizing: border-box;
 		display: inline-block;
