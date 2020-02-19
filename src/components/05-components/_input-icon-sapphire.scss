@@ -1,0 +1,28 @@
+.InputIconSapphire {
+	position: relative;
+
+	> div {
+		position: absolute;
+		right: 35px;
+		top: 0;
+	}
+
+	a > span,
+	span a > span {
+		color: $dark-grey;
+		font-size: 20px;
+		line-height: 36px;
+		position: absolute;
+		right: -20px;
+		text-transform: none;
+	}
+}
+
+.AR,
+.FA {
+	.InputIconSapphire a > span,
+	.InputIconSapphire span a > span {
+		left: 5px;
+		right: auto;
+	}
+}
