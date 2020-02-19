@@ -1,0 +1,77 @@
+$WebPattersDatePicker-color-active: $regular-alpha;
+
+
+.CalendarDateTimeInput,
+.CalendarDateInput {
+  border: none;
+  box-shadow: none;
+  font-size: 1rem;
+  line-height: 24px;
+  min-height: 34px;
+  min-width: 180px;
+  padding: 0;
+  position: relative;
+}
+
+.CalendarDateTimeInput input[type='text'],
+.CalendarDateInput input[type='text'] {
+  box-shadow: none;
+  width: -webkit-fill-available;
+}
+
+.CalendarDateTimeInput.Small input[type='text'],
+.CalendarDateInput.Small input[type='text'],
+.CalendarDateTimeInput.Small,
+.CalendarDateInput.Small {
+  font-size: 13px;
+  line-height: 17px;
+  min-height: 27px;
+}
+
+.CalendarDateTimeInput:after,
+.CalendarDateInput:after {
+  color: $WebPattersDatePicker-color-active;
+  content: '\e60b';
+  font-family: 'Sapphire-Icon-Font';
+  font-size: 1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 34px;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  text-transform: none;
+  top: 0;
+}
+
+.FA .CalendarDateTimeInput:after,
+.FA .CalendarDateInput:after,
+.AR .CalendarDateTimeInput:after,
+.AR .CalendarDateInput:after {
+  left: 10px;
+  right: inherit;
+}
+
+.CalendarDateInput input.Mandatory,
+.CalendarDateTimeInput input.Mandatory {
+  border-left: 3px solid $WebPattersDatePicker-color-active;
+  border-radius: 0;
+}
+
+.FA .CalendarDateInput input.Mandatory,
+.AR .CalendarDateInput input.Mandatory {
+  border-left: none;
+  border-right: 3px solid $WebPattersDatePicker-color-active;
+}
+
+.tablet .CalendarDateTimeInput.Small:after,
+.tablet .CalendarDateInput.Small:after,
+.tablet .CalendarDateTimeInput:afte,
+.tablet .CalendarDateInput:after,
+.phone .CalendarDateTimeInput:after,
+.phone .CalendarDateInput:after,
+.phone .CalendarDateTimeInput.Small:after,
+.phone .CalendarDateInput.Small:after {
+  line-height: 40px;
+}
