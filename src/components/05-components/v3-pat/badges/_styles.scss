@@ -71,23 +71,25 @@ $prescriptionRadius: 18px;
 		}
 
 		&.InvertBackground {
-			.BadgeRed {
-				@include badges($regular-red, false);
+			&.BadgeRed {
+				@include badges($textColor: $regular-red, $notInverted: false);
 			}
-			.BadgeGreen {
-				@include badges($regular-green, false);
+			&.BadgeGreen {
+				@include badges($textColor: $regular-green, $notInverted: false);
 			}
-			.BadgeYellow {
-				@include badges($regular-yellow, false);
+
+			&.BadgeYellow {
+				@include badges($textColor: $regular-yellow, $notInverted: false);
 			}
-			.BadgeGrey {
-				@include badges($light-grey, false);
+			&.BadgeGrey {
+				@include badges($textColor: $light-grey, $notInverted: false);
 			}
-			.BadgeBlue {
-				@include badges($dark-blue, false);
+
+			&.BadgeBlue {
+				@include badges($textColor: $dark-blue, $notInverted: false);
 			}
-			.BadgeSapphireBlue2 {
-				@include badges($regular-blue, false);
+			&.BadgeSapphireBlue2 {
+				@include badges($textColor: $regular-blue, $notInverted: false);
 			}
 			&.IconTextRed {
 				color: $regular-red;
