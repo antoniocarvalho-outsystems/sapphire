@@ -1,240 +1,245 @@
-div.Feedback_Message_Wrapper {
-  left: 0;
-  margin-top: 102px;
-}
+html body {
 
-div.Feedback_Message_Error,
-div.Feedback_Message_Success,
-div.Feedback_Message_Warning,
-div.Feedback_Message_Info {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 3px;
-  box-shadow: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  line-height: normal;
-  max-width: 100%;
-  min-width: 300px;
-  padding: 10px 40px 10px 40px;
-  word-break: break-word;
-}
+  div.Feedback_Message_Wrapper {
+    left: 0;
+    margin-top: 102px;
+  }
 
-div.Feedback_Message_Info:before,
-div.Feedback_Message_Success:before,
-div.Feedback_Message_Error:before,
-div.Feedback_Message_Warning:before {
-  font-size: 20px;
-  left: 15px;
-  top: 9px;
-}
+  div.Feedback_Message_Error,
+  div.Feedback_Message_Success,
+  div.Feedback_Message_Warning,
+  div.Feedback_Message_Info {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: normal;
+    max-width: 100%;
+    min-width: 300px;
+    padding: 10px 40px 10px 40px;
+    word-break: break-word;
+  }
 
-a.Feedback_Message_Wrapper_Close {
-  color: #000;
-  opacity: 0.3;
-  right: 10px;
-  top: 8px;
-}
+  div.Feedback_Message_Info:before,
+  div.Feedback_Message_Success:before,
+  div.Feedback_Message_Error:before,
+  div.Feedback_Message_Warning:before {
+    font-size: 20px;
+    left: 15px;
+    top: 9px;
+  }
 
-a.Feedback_Message_Wrapper_Close:hover {
-  opacity: 0.6;
-}
+  a.Feedback_Message_Wrapper_Close {
+    color: #000;
+    opacity: 0.3;
+    right: 10px;
+    top: 8px;
+  }
 
-.tablet a.Feedback_Message_Wrapper_Close,
-.phone a.Feedback_Message_Wrapper_Close {
-  pointer-events: none;
-}
+  a.Feedback_Message_Wrapper_Close:hover {
+    opacity: 0.6;
+  }
 
-div.Feedback_Message_Error .Feedback_Message_Wrapper_Close:after,
-div.Feedback_Message_Warning .Feedback_Message_Wrapper_Close:after,
-div.Feedback_Message_Info .Feedback_Message_Wrapper_Close:after,
-div.Feedback_Message_Success .Feedback_Message_Wrapper_Close:after {
-  color: #000;
-  content: '\f00d';
-  font-family: FontAwesome;
-  text-align: right;
-}
+  .tablet a.Feedback_Message_Wrapper_Close,
+  .phone a.Feedback_Message_Wrapper_Close {
+    pointer-events: none;
+  }
 
-div.Feedback_Message_Success a.Feedback_Message_Wrapper_Close,
-div.Feedback_Message_Error a.Feedback_Message_Wrapper_Close,
-div.Feedback_Message_Warning a.Feedback_Message_Wrapper_Close,
-div.Feedback_Message_Info a.Feedback_Message_Wrapper_Close {
-  opacity: 1;
-}
+  div.Feedback_Message_Error .Feedback_Message_Wrapper_Close:after,
+  div.Feedback_Message_Warning .Feedback_Message_Wrapper_Close:after,
+  div.Feedback_Message_Info .Feedback_Message_Wrapper_Close:after,
+  div.Feedback_Message_Success .Feedback_Message_Wrapper_Close:after {
+    color: #000;
+    content: '\f00d';
+    font-family: FontAwesome;
+    text-align: right;
+  }
 
-/* RichWidgets > Feedback Message > Success */
-div.Feedback_Message_Success {
-  background-color: #dff0d8;
-  border: 1px solid #cbe0ba;
-  color: #346b35;
-}
+  div.Feedback_Message_Success a.Feedback_Message_Wrapper_Close,
+  div.Feedback_Message_Error a.Feedback_Message_Wrapper_Close,
+  div.Feedback_Message_Warning a.Feedback_Message_Wrapper_Close,
+  div.Feedback_Message_Info a.Feedback_Message_Wrapper_Close {
+    opacity: 1;
+  }
 
-div.Feedback_Message_Success:before {
-  color: #7dc62b;
-}
+  /* RichWidgets > Feedback Message > Success */
+  div.Feedback_Message_Success {
+    background-color: #dff0d8;
+    border: 1px solid #cbe0ba;
+    color: #346b35;
+  }
 
-div.Feedback_Message_Success a.Feedback_Message_Wrapper_Close:after {
-  color: #346b35;
-}
+  div.Feedback_Message_Success:before {
+    color: #7dc62b;
+  }
 
-/* RichWidgets > Feedback Message > Error */
-div.Feedback_Message_Error {
-  background-color: #f5e7e7;
-  border: 1px solid #ead8d8;
-  color: #843534;
-}
+  div.Feedback_Message_Success a.Feedback_Message_Wrapper_Close:after {
+    color: #346b35;
+    margin: 0;
+    padding: 0;
+  }
 
-div.Feedback_Message_Error:before {
-  color: #e58d8d;
-}
+  /* RichWidgets > Feedback Message > Error */
+  div.Feedback_Message_Error {
+    background-color: #f5e7e7;
+    border: 1px solid #ead8d8;
+    color: #843534;
+  }
 
-div.Feedback_Message_Error a.Feedback_Message_Wrapper_Close:after {
-  color: #843557;
-}
+  div.Feedback_Message_Error:before {
+    color: #e58d8d;
+  }
 
-/* RichWidgets > Feedback Message > Warning */
-div.Feedback_Message_Warning {
-  background-color: #fcf8e3;
-  border: 1px solid #f1deb6;
-  color: #8a6d3b;
-}
+  div.Feedback_Message_Error a.Feedback_Message_Wrapper_Close:after {
+    color: #843557;
+  }
 
-div.Feedback_Message_Warning:before {
-  color: #eabd30;
-}
+  /* RichWidgets > Feedback Message > Warning */
+  div.Feedback_Message_Warning {
+    background-color: #fcf8e3;
+    border: 1px solid #f1deb6;
+    color: #8a6d3b;
+  }
 
-div.Feedback_Message_Warning a.Feedback_Message_Wrapper_Close:after {
-  color: #8a6d3b;
-}
+  div.Feedback_Message_Warning:before {
+    color: #eabd30;
+  }
 
-/* RichWidgets > Feedback Message > Info */
-div.Feedback_Message_Info {
-  background-color: #fcf8e3;
-  border: 1px solid #f1deb6;
-  color: #8a6d3b;
-}
+  div.Feedback_Message_Warning a.Feedback_Message_Wrapper_Close:after {
+    color: #8a6d3b;
+  }
 
-div.Feedback_Message_Info:before {
-  color: #eabd30;
-}
+  /* RichWidgets > Feedback Message > Info */
+  div.Feedback_Message_Info {
+    background-color: #fcf8e3;
+    border: 1px solid #f1deb6;
+    color: #8a6d3b;
+  }
 
-div.Feedback_Message_Info a.Feedback_Message_Wrapper_Close:after {
-  color: #8a6d3b;
-}
+  div.Feedback_Message_Info:before {
+    color: #eabd30;
+  }
 
-.FA~span .Feedback_Message_Wrapper div.Feedback_Message_Error,
-.AR~span .Feedback_Message_Wrapper div.Feedback_Message_Error {
-  transform: scale(-1, 1);
-}
+  div.Feedback_Message_Info a.Feedback_Message_Wrapper_Close:after {
+    color: #8a6d3b;
+  }
 
-.FA~span .Feedback_Message_Wrapper div.Feedback_Message_Warning,
-.AR~span .Feedback_Message_Wrapper div.Feedback_Message_Warning {
-  transform: scale(-1, 1);
-}
+  .FA~span .Feedback_Message_Wrapper div.Feedback_Message_Error,
+  .AR~span .Feedback_Message_Wrapper div.Feedback_Message_Error {
+    transform: scale(-1, 1);
+  }
 
-.FA~span .Feedback_Message_Wrapper div.Feedback_Message_Success,
-.AR~span .Feedback_Message_Wrapper div.Feedback_Message_Success {
-  transform: scale(-1, 1);
-}
+  .FA~span .Feedback_Message_Wrapper div.Feedback_Message_Warning,
+  .AR~span .Feedback_Message_Wrapper div.Feedback_Message_Warning {
+    transform: scale(-1, 1);
+  }
 
-.FA~span .Feedback_Message_Wrapper div.Feedback_Message_Info,
-.AR~span .Feedback_Message_Wrapper div.Feedback_Message_Info {
-  transform: scale(-1, 1);
-}
+  .FA~span .Feedback_Message_Wrapper div.Feedback_Message_Success,
+  .AR~span .Feedback_Message_Wrapper div.Feedback_Message_Success {
+    transform: scale(-1, 1);
+  }
 
-.FA~span .Feedback_Message_Wrapper span.Feedback_Message_Text,
-.AR~span .Feedback_Message_Wrapper span.Feedback_Message_Text {
-  text-align: right;
-  transform: scale(-1, 1);
-}
+  .FA~span .Feedback_Message_Wrapper div.Feedback_Message_Info,
+  .AR~span .Feedback_Message_Wrapper div.Feedback_Message_Info {
+    transform: scale(-1, 1);
+  }
 
-.FA div.Feedback_Message_Info:before,
-.FA div.Feedback_Message_Success:before,
-.FA div.Feedback_Message_Error:before,
-.FA div.Feedback_Message_Warning:before,
-.AR div.Feedback_Message_Info:before,
-.AR div.Feedback_Message_Success:before,
-.AR div.Feedback_Message_Error:before,
-.AR div.Feedback_Message_Warning:before {
-  left: auto;
-  right: 15px;
-}
+  .FA~span .Feedback_Message_Wrapper span.Feedback_Message_Text,
+  .AR~span .Feedback_Message_Wrapper span.Feedback_Message_Text {
+    text-align: right;
+    transform: scale(-1, 1);
+  }
 
-.FA div.Feedback_Message_Wrapper,
-.AR div.Feedback_Message_Wrapper {
-  left: auto;
-  right: 0;
-}
+  .FA div.Feedback_Message_Info:before,
+  .FA div.Feedback_Message_Success:before,
+  .FA div.Feedback_Message_Error:before,
+  .FA div.Feedback_Message_Warning:before,
+  .AR div.Feedback_Message_Info:before,
+  .AR div.Feedback_Message_Success:before,
+  .AR div.Feedback_Message_Error:before,
+  .AR div.Feedback_Message_Warning:before {
+    left: auto;
+    right: 15px;
+  }
 
-.FA a.Feedback_Message_Wrapper_Close,
-.AR a.Feedback_Message_Wrapper_Close {
-  left: 10px;
-  right: auto;
-}
+  .FA div.Feedback_Message_Wrapper,
+  .AR div.Feedback_Message_Wrapper {
+    left: auto;
+    right: 0;
+  }
 
-.FA .Feedback_Message_Wrapper,
-.AR .Feedback_Message_Wrapper {
-  transform: scale(-1, 1);
-}
+  .FA a.Feedback_Message_Wrapper_Close,
+  .AR a.Feedback_Message_Wrapper_Close {
+    left: 10px;
+    right: auto;
+  }
 
-.FA .Feedback_Message_Wrapper span,
-.AR .Feedback_Message_Wrapper span {
-  transform: scale(-1, 1);
-}
+  .FA .Feedback_Message_Wrapper,
+  .AR .Feedback_Message_Wrapper {
+    transform: scale(-1, 1);
+  }
 
-.FA div.Feedback_Message_Info:before,
-.FA .Ardiv.Feedback_Message_Success:before,
-.FA .Ardiv.Feedback_Message_Error:before,
-.FA .Ardiv.Feedback_Message_Warning:before,
-.AR div.Feedback_Message_Info:before,
-.AR .Ardiv.Feedback_Message_Success:before,
-.AR .Ardiv.Feedback_Message_Error:before,
-.AR .Ardiv.Feedback_Message_Warning:before {
-  right: 15px;
-}
+  .FA .Feedback_Message_Wrapper span,
+  .AR .Feedback_Message_Wrapper span {
+    transform: scale(-1, 1);
+  }
 
-.FA div.Feedback_Message_Wrapper,
-.AR div.Feedback_Message_Wrapper {
-  right: 0;
-}
+  .FA div.Feedback_Message_Info:before,
+  .FA .Ardiv.Feedback_Message_Success:before,
+  .FA .Ardiv.Feedback_Message_Error:before,
+  .FA .Ardiv.Feedback_Message_Warning:before,
+  .AR div.Feedback_Message_Info:before,
+  .AR .Ardiv.Feedback_Message_Success:before,
+  .AR .Ardiv.Feedback_Message_Error:before,
+  .AR .Ardiv.Feedback_Message_Warning:before {
+    right: 15px;
+  }
 
-.FA a.Feedback_Message_Wrapper_Close,
-.AR a.Feedback_Message_Wrapper_Close {
-  left: 10px;
-}
+  .FA div.Feedback_Message_Wrapper,
+  .AR div.Feedback_Message_Wrapper {
+    right: 0;
+  }
 
-.FA div.Feedback_Message_Wrapper,
-.AR div.Feedback_Message_Wrapper {
-  left: 0;
-}
+  .FA a.Feedback_Message_Wrapper_Close,
+  .AR a.Feedback_Message_Wrapper_Close {
+    left: 10px;
+  }
 
-.FA a.Feedback_Message_Wrapper_Close,
-.AR a.Feedback_Message_Wrapper_Close {
-  right: 0;
-}
+  .FA div.Feedback_Message_Wrapper,
+  .AR div.Feedback_Message_Wrapper {
+    left: 0;
+  }
 
-.FA .Feedback_Message_Wrapper_Close:after,
-.AR .Feedback_Message_Wrapper_Close:after {
-  margin-left: 3px;
-}
+  .FA a.Feedback_Message_Wrapper_Close,
+  .AR a.Feedback_Message_Wrapper_Close {
+    right: 0;
+  }
 
-.FA .Feedback_Message_Error:before,
-.AR .Feedback_Message_Error:before {
-  left: 12px;
-}
+  .FA .Feedback_Message_Wrapper_Close:after,
+  .AR .Feedback_Message_Wrapper_Close:after {
+    margin-left: 3px;
+  }
 
-.FA .Feedback_Message_Success:before,
-.AR .Feedback_Message_Success:before {
-  left: 12px;
-}
+  .FA .Feedback_Message_Error:before,
+  .AR .Feedback_Message_Error:before {
+    left: 12px;
+  }
 
-.FA .Feedback_Message_Warning:before,
-.AR .Feedback_Message_Warning:before {
-  left: 12px;
-}
+  .FA .Feedback_Message_Success:before,
+  .AR .Feedback_Message_Success:before {
+    left: 12px;
+  }
 
-.FA .Feedback_Message_Info:before,
-.AR .Feedback_Message_Info:before {
-  left: 12px;
+  .FA .Feedback_Message_Warning:before,
+  .AR .Feedback_Message_Warning:before {
+    left: 12px;
+  }
+
+  .FA .Feedback_Message_Info:before,
+  .AR .Feedback_Message_Info:before {
+    left: 12px;
+  }
 }
