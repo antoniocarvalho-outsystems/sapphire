@@ -22981,188 +22981,188 @@ body.confirmation-opened {
 }
 
 /** 9.140 Sapphire Patterns > SummarySecondBlockExpand **/
-.ClinicianSecondarySummary .SectionExpandable .SectionExpandable_header {
-	background-color: transparent;
-	border: none;
-	border-top: 2px solid #5fc4be;
-	color: #262525;
-	font-size: 16px;
-	height: auto;
-	line-height: 46px;
-	min-height: 46px;
-	padding: 0;
-	position: relative;
-	vertical-align: middle;
-}
+// .ClinicianSecondarySummary .SectionExpandable .SectionExpandable_header {
+// 	background-color: transparent;
+// 	border: none;
+// 	border-top: 2px solid #5fc4be;
+// 	color: #262525;
+// 	font-size: 16px;
+// 	height: auto;
+// 	line-height: 46px;
+// 	min-height: 46px;
+// 	padding: 0;
+// 	position: relative;
+// 	vertical-align: middle;
+// }
 
-.ClinicianSecondarySummary .SectionExpandable_header .SectionExpandable__title {
-}
+// .ClinicianSecondarySummary .SectionExpandable_header .SectionExpandable__title {
+// }
 
-.ClinicianSecondarySummary .ClinicianSecondarySummary_icon,
-.ClinicianSecondarySummary .ClinicianSecondarySummary_title,
-.ClinicianSecondarySummary .ClinicianSecondarySummary_action {
-}
+// .ClinicianSecondarySummary .ClinicianSecondarySummary_icon,
+// .ClinicianSecondarySummary .ClinicianSecondarySummary_title,
+// .ClinicianSecondarySummary .ClinicianSecondarySummary_action {
+// }
 
-.ClinicianSecondarySummary .ClinicianSecondarySummary_selectAll {
-	font-size: 14px;
-	font-weight: 700;
-	position: absolute;
-	right: 0;
-	text-align: right;
-}
+// .ClinicianSecondarySummary .ClinicianSecondarySummary_selectAll {
+// 	font-size: 14px;
+// 	font-weight: 700;
+// 	position: absolute;
+// 	right: 0;
+// 	text-align: right;
+// }
 
-.AR .ClinicianSecondarySummary .ClinicianSecondarySummary_selectAll,
-.FA .ClinicianSecondarySummary .ClinicianSecondarySummary_selectAll {
-	left: 0;
-	right: auto;
-	text-align: left;
-}
+// .AR .ClinicianSecondarySummary .ClinicianSecondarySummary_selectAll,
+// .FA .ClinicianSecondarySummary .ClinicianSecondarySummary_selectAll {
+// 	left: 0;
+// 	right: auto;
+// 	text-align: left;
+// }
 
-.ClinicianSecondarySummary
-	.ClinicianSecondarySummary_icon
-	+ .ClinicianSecondarySummary_title {
-	margin-left: 5px;
-}
+// .ClinicianSecondarySummary
+// 	.ClinicianSecondarySummary_icon
+// 	+ .ClinicianSecondarySummary_title {
+// 	margin-left: 5px;
+// }
 
-.ClinicianSecondarySummary
-	.ClinicianSecondarySummary_icon:empty
-	+ .ClinicianSecondarySummary_title {
-	margin-left: auto;
-	padding-left: 15px;
-}
+// .ClinicianSecondarySummary
+// 	.ClinicianSecondarySummary_icon:empty
+// 	+ .ClinicianSecondarySummary_title {
+// 	margin-left: auto;
+// 	padding-left: 15px;
+// }
 
-.AR
-	.ClinicianSecondarySummary
-	.ClinicianSecondarySummary_icon
-	+ .ClinicianSecondarySummary_title,
-.FA
-	.ClinicianSecondarySummary
-	.ClinicianSecondarySummary_icon
-	+ .ClinicianSecondarySummary_title {
-	margin-left: auto;
-	margin-right: 5px;
-}
+// .AR
+// 	.ClinicianSecondarySummary
+// 	.ClinicianSecondarySummary_icon
+// 	+ .ClinicianSecondarySummary_title,
+// .FA
+// 	.ClinicianSecondarySummary
+// 	.ClinicianSecondarySummary_icon
+// 	+ .ClinicianSecondarySummary_title {
+// 	margin-left: auto;
+// 	margin-right: 5px;
+// }
 
-.AR
-	.ClinicianSecondarySummary
-	.ClinicianSecondarySummary_icon:empty
-	+ .ClinicianSecondarySummary_title,
-.FA
-	.ClinicianSecondarySummary
-	.ClinicianSecondarySummary_icon:empty
-	+ .ClinicianSecondarySummary_title {
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: auto;
-	padding-right: 15px;
-}
+// .AR
+// 	.ClinicianSecondarySummary
+// 	.ClinicianSecondarySummary_icon:empty
+// 	+ .ClinicianSecondarySummary_title,
+// .FA
+// 	.ClinicianSecondarySummary
+// 	.ClinicianSecondarySummary_icon:empty
+// 	+ .ClinicianSecondarySummary_title {
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	padding-left: auto;
+// 	padding-right: 15px;
+// }
 
-.ClinicianSecondarySummary .SectionExpandable_content {
-	padding: 0;
-}
+// .ClinicianSecondarySummary .SectionExpandable_content {
+// 	padding: 0;
+// }
 
-.ClinicianSecondarySummary.BorderTopNone
-	.SectionExpandable
-	.SectionExpandable_header.BorderTopNone {
-	border-top: none;
-}
+// .ClinicianSecondarySummary.BorderTopNone
+// 	.SectionExpandable
+// 	.SectionExpandable_header.BorderTopNone {
+// 	border-top: none;
+// }
 
-.ClinicianSecondarySummary
-	.SectionExpandable
-	.SectionExpandable_header
-	.Heading2.SectionExpandable__icon {
-	border: none;
-	color: #16979f;
-	font-size: 16px;
-	line-height: 46px;
-	padding-left: 0;
-	width: auto;
-}
+// .ClinicianSecondarySummary
+// 	.SectionExpandable
+// 	.SectionExpandable_header
+// 	.Heading2.SectionExpandable__icon {
+// 	border: none;
+// 	color: #16979f;
+// 	font-size: 16px;
+// 	line-height: 46px;
+// 	padding-left: 0;
+// 	width: auto;
+// }
 
-.ClinicianSecondarySummary:not(.CanExpand)
-	.SectionExpandable
-	.SectionExpandable_header
-	.Heading2.SectionExpandable__icon {
-	display: none;
-}
+// .ClinicianSecondarySummary:not(.CanExpand)
+// 	.SectionExpandable
+// 	.SectionExpandable_header
+// 	.Heading2.SectionExpandable__icon {
+// 	display: none;
+// }
 
-.ClinicianSecondarySummary
-	.SectionExpandable
-	.SectionExpandable_header
-	.Heading2,
-.ClinicianSecondarySummary
-	.SectionExpandable.expanded
-	.SectionExpandable_header
-	.Heading2 {
-	font-size: 15px;
-	line-height: 46px;
-}
+// .ClinicianSecondarySummary
+// 	.SectionExpandable
+// 	.SectionExpandable_header
+// 	.Heading2,
+// .ClinicianSecondarySummary
+// 	.SectionExpandable.expanded
+// 	.SectionExpandable_header
+// 	.Heading2 {
+// 	font-size: 15px;
+// 	line-height: 46px;
+// }
 
-.ClinicianSecondarySummary
-	.SectionExpandable
-	.SectionExpandable_header
-	.Heading2
-/*.SectionExpandable.expanded .SectionExpandable_header .Heading2*/ {
-	font-size: 14px;
-}
+// .ClinicianSecondarySummary
+// 	.SectionExpandable
+// 	.SectionExpandable_header
+// 	.Heading2
+// /*.SectionExpandable.expanded .SectionExpandable_header .Heading2*/ {
+// 	font-size: 14px;
+// }
 
-.ClinicianSecondarySummary
-	.SectionExpandable
-	.SectionExpandable_header
-	.Heading2.SectionExpandable__icon
-	span:before {
-	content: '\e610';
-	font-family: Sapphire-Icon-Font;
-	font-size: 14px;
-}
+// .ClinicianSecondarySummary
+// 	.SectionExpandable
+// 	.SectionExpandable_header
+// 	.Heading2.SectionExpandable__icon
+// 	span:before {
+// 	content: '\e610';
+// 	font-family: Sapphire-Icon-Font;
+// 	font-size: 14px;
+// }
 
-.ClinicianSecondarySummary:not(.CanExpand) .SectionExpandable__ico {
-	display: none;
-}
+// .ClinicianSecondarySummary:not(.CanExpand) .SectionExpandable__ico {
+// 	display: none;
+// }
 
-.ClinicianSecondarySummary.CanExpand .SectionExpandable__title.Heading2 {
-	display: inline-block;
-	padding-left: 10px;
-}
+// .ClinicianSecondarySummary.CanExpand .SectionExpandable__title.Heading2 {
+// 	display: inline-block;
+// 	padding-left: 10px;
+// }
 
-.AR .ClinicianSecondarySummary.CanExpand .SectionExpandable__title.Heading2,
-.FA .ClinicianSecondarySummary.CanExpand .SectionExpandable__title.Heading2 {
-	padding-left: auto;
-	padding-right: 10px;
-}
+// .AR .ClinicianSecondarySummary.CanExpand .SectionExpandable__title.Heading2,
+// .FA .ClinicianSecondarySummary.CanExpand .SectionExpandable__title.Heading2 {
+// 	padding-left: auto;
+// 	padding-right: 10px;
+// }
 
-.ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2 {
-	color: #16979f;
-	display: inline-block;
-	float: left;
-}
+// .ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2 {
+// 	color: #16979f;
+// 	display: inline-block;
+// 	float: left;
+// }
 
-.AR .ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2,
-.FA .ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2 {
-	float: right;
-}
+// .AR .ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2,
+// .FA .ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2 {
+// 	float: right;
+// }
 
-.ClinicianSecondarySummary.BorderTopNone .SectionExpandable_header {
-	border: none;
-}
+// .ClinicianSecondarySummary.BorderTopNone .SectionExpandable_header {
+// 	border: none;
+// }
 
-.ClinicianSecondarySummary .SectionExpandable {
-	padding-left: 15px;
-}
+// .ClinicianSecondarySummary .SectionExpandable {
+// 	padding-left: 15px;
+// }
 
-.AR .ClinicianSecondarySummary .SectionExpandable,
-.FA .ClinicianSecondarySummary .SectionExpandable {
-	padding-left: auto;
-	padding-right: 15px;
-}
+// .AR .ClinicianSecondarySummary .SectionExpandable,
+// .FA .ClinicianSecondarySummary .SectionExpandable {
+// 	padding-left: auto;
+// 	padding-right: 15px;
+// }
 
-.ClinicianSecondarySummary .SectionExpandable_content {
-	position: relative;
-}
+// .ClinicianSecondarySummary .SectionExpandable_content {
+// 	position: relative;
+// }
 
-.ClinicianSecondarySummary .SectionExpandable .SectionExpandable_content {
-	font-size: 16px;
-}
+// .ClinicianSecondarySummary .SectionExpandable .SectionExpandable_content {
+// 	font-size: 16px;
+// }
 
 /** 9.141 Sapphire Patterns > SectionBlock **/
 .SectionBlock {
@@ -33100,26 +33100,26 @@ div.LineInfo {
 	-servicestudio-position: static;
 }
 
-.ClinicianSecondarySummary .SectionExpandable_header .SectionExpandable__title {
-	-servicestudio-display: table;
-	-servicestudio-float: right;
-	-servicestudio-text-align: left;
-	-servicestudio-width: 95%;
-}
+// .ClinicianSecondarySummary .SectionExpandable_header .SectionExpandable__title {
+// 	-servicestudio-display: table;
+// 	-servicestudio-float: right;
+// 	-servicestudio-text-align: left;
+// 	-servicestudio-width: 95%;
+// }
 
-.ClinicianSecondarySummary .ClinicianSecondarySummary_icon,
-.ClinicianSecondarySummary .ClinicianSecondarySummary_title,
-.ClinicianSecondarySummary .ClinicianSecondarySummary_action {
-	-servicestudio-display: table-cell;
-	-servicestudio-float: left;
-	-servicestudio-width: 15%;
-}
+// .ClinicianSecondarySummary .ClinicianSecondarySummary_icon,
+// .ClinicianSecondarySummary .ClinicianSecondarySummary_title,
+// .ClinicianSecondarySummary .ClinicianSecondarySummary_action {
+// 	-servicestudio-display: table-cell;
+// 	-servicestudio-float: left;
+// 	-servicestudio-width: 15%;
+// }
 
-.ClinicianSecondarySummary .ClinicianSecondarySummary_selectAll {
-	-servicestudio-display: table-cell;
-	-servicestudio-float: left;
-	-servicestudio-width: 15%;
-}
+// .ClinicianSecondarySummary .ClinicianSecondarySummary_selectAll {
+// 	-servicestudio-display: table-cell;
+// 	-servicestudio-float: left;
+// 	-servicestudio-width: 15%;
+// }
 
 // .FullScreenTabsWrapper,
 // .FullScreenTabsWrapper_Container {

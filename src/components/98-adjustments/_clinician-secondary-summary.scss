@@ -1,0 +1,20 @@
+.ClinicianSecondarySummary .SectionExpandable_header .SectionExpandable__title {
+	-servicestudio-display: table;
+	-servicestudio-float: right;
+	-servicestudio-text-align: left;
+	-servicestudio-width: 95%;
+}
+
+.ClinicianSecondarySummary .ClinicianSecondarySummary_icon,
+.ClinicianSecondarySummary .ClinicianSecondarySummary_title,
+.ClinicianSecondarySummary .ClinicianSecondarySummary_action {
+	-servicestudio-display: table-cell;
+	-servicestudio-float: left;
+	-servicestudio-width: 15%;
+}
+
+.ClinicianSecondarySummary .ClinicianSecondarySummary_selectAll {
+	-servicestudio-display: table-cell;
+	-servicestudio-float: left;
+	-servicestudio-width: 15%;
+}
