@@ -1,21 +1,5 @@
-.Label {
-	background-color: transparent;
-	border-radius: 10px;
-	max-height: 20px;
-	padding: 2px 8px;
-}
-
-.Text_Note {
-	color: $sapphire-color-text-light;
-	font-size: 0.9em;
-}
-
-.Uppercase {
-	text-transform: uppercase;
-}
-
-/* Colors */
 .Page .Text {
+	/* Colors */
 	&_sapphireBlue {
 		color: $regular-alpha;
 	}
@@ -25,163 +9,278 @@
 	}
 
 	&_sapphireInactive {
-		color: #b1b5b6;
+		color: $light-grey;
 	}
 
 	&_sapphireDarkBlue1 {
-		color: #0c1d22;
+		color: $sapphire-dark-blue1;
 	}
 
 	&_sapphireDarkBlue2 {
-		color: #113041;
+		color: $sapphire-dark-blue2;
 	}
 
 	&_sapphireDarkText {
-		color: #262626;
+		color: $dark-grey;
 	}
 
 	&_sapphireLightText {
-		color: #4d5c66;
+		color: $regular-grey;
 	}
 
 	&_sapphireFemale {
-		color: #6f4065;
+		color: $sapphire-female;
 	}
 
 	&_sapphireMale {
-		color: #11394f;
+		color: $sapphire-male;
 	}
 
 	&_sapphireDarkGrey {
-		color: #7c7f7f;
+		color: $mid-dark-grey;
 	}
 
 	&_sapphireLightBoard {
-		color: #c9cdce;
+		color: $sapphire-light-board;
 	}
 
 	&_sapphireLightContainer {
-		color: #ebebeb;
+		color: $body-color;
 	}
 
 	&_sapphireBackground {
-		color: #f5f1eb;
+		color: $body-color;
 	}
 
 	&_sapphireWarning {
-		color: #cd0005;
+		color: $regular-red;
 	}
 
 	&_sapphireWhite {
-		color: #ffffff;
+		color: $regular-white;
 	}
 
 	&_sapphireClinician {
-		color: #dae0e4;
+		color: $sapphire-clinician;
 	}
 
 	&_sapphireLighnesstText {
-		color: #f2f2f2;
+		color: $light-grey;
 	}
 
 	&_DarkBlue {
-		color: #0d1d22;
+		color: $sapphire-dark-blue;
 	}
 
 	&_black {
-		color: #131819;
+		color: $regular-black;
 	}
 
 	&_blue {
-		color: #0074c1;
-	}
-
-	&_navyBlue {
-		color: #4d89a2;
+		color: $regular-blue;
 	}
 
 	&_darkBlue {
-		color: #194968;
+		color: $dark-blue;
+	}
+
+	&_navyBlue {
+		color: $blue-navy;
 	}
 
 	&_MiddleBlue {
-		color: #005675;
-	}
-
-	&_darkPlum {
-		color: #970263;
-	}
-
-	&_darkRed {
-		color: #b10000;
+		color: $sapphire-blue;
 	}
 
 	&_gray {
-		color: #79868a;
+		color: $regular-grey;
 	}
 
 	&_green {
-		color: #388e3c;
-	}
-
-	&_green_Sapphire {
-		color: #16979f;
+		color: $regular-green;
 	}
 
 	&_Darkgreen {
-		color: #4e87a2;
+		color: $dark-green;
+	}
+
+	&_green_Sapphire {
+		color: $regular-alpha;
 	}
 
 	&_lightGreen {
-		color: #c2dea8;
+		color: $light-green;
 	}
 
 	&_orange {
-		color: #f25300;
+		color: $regular-orange;
 	}
 
 	&_orangeDark {
-		color: #d45302;
+		color: $dark-orange;
 	}
 
 	&_plum {
-		color: #c32b87;
+		color: $regular-plum;
+	}
+
+	&_darkPlum {
+		color: $dark-plum;
 	}
 
 	&_red {
-		color: #d01a1a;
-	}
-
-	&_SapphireRed {
-		color: #cd1d02;
+		color: $regular-red;
 	}
 
 	&_darkRed {
-		color: #ba4d37;
+		color: $dark-red;
+	}
+
+	&_SapphireRed {
+		color: $regular-red;
 	}
 
 	&_silver {
-		color: #dadbde;
+		color: $light-grey;
 	}
 
 	&_turquoise {
-		color: #00b0c1;
+		color: $light-turquoise;
 	}
 
 	&_darkTurquoise {
-		color: #14a7af;
+		color: $regular-turquoise;
 	}
 
 	&_white {
-		color: #fff;
+		color: $regular-white;
 	}
 
 	&_yellow {
-		color: #eab62b;
+		color: $regular-yellow;
 	}
 
 	&_darkYellow {
-		color: #cbc59e;
+		color: $dark-yellow;
+	}
+
+	/* Sizes */
+	&_09em {
+		font-size: 0.9em;
+	}
+
+	&_1em {
+		font-size: 1em;
+	}
+
+	&_11em {
+		font-size: 1.1em;
+	}
+
+	&_12em {
+		font-size: 1.2em;
+	}
+
+	&_13em {
+		font-size: 1.3em;
+	}
+
+	&_14em {
+		font-size: 1.4em;
+	}
+
+	&_15em {
+		font-size: 1.5em;
+	}
+
+	&_09rem {
+		font-size: 0.9rem;
+	}
+
+	&_1rem {
+		font-size: 1rem;
+	}
+
+	&_11rem {
+		font-size: 1.1rem;
+	}
+
+	&_12rem {
+		font-size: 1.2rem;
+	}
+
+	&_13rem {
+		font-size: 1.3rem;
+	}
+
+	&_14rem {
+		font-size: 1.4rem;
+	}
+
+	&_15rem {
+		font-size: 1.5rem;
+	}
+
+	&_Size11 {
+		font-size: 11px;
+	}
+
+	&_Size12 {
+		font-size: 12px;
+	}
+
+	&_Size13 {
+		font-size: 13px;
+	}
+
+	&_Size14 {
+		font-size: 14px;
+	}
+
+	&_Size15 {
+		font-size: 15px;
+	}
+
+	&_Size16 {
+		font-size: 16px;
+	}
+
+	&_Size17 {
+		font-size: 17px;
+	}
+
+	&_Size18 {
+		font-size: 18px;
+	}
+
+	&_Size20 {
+		font-size: 20px;
+	}
+
+	&_Size22 {
+		font-size: 22px;
+	}
+
+	&_Size25 {
+		font-size: 25px;
+	}
+
+	&_Size30 {
+		font-size: 30px;
+	}
+
+	&_Size90 {
+		font-size: 90px;
+	}
+
+	/* General */
+	&_uppercase {
+		text-transform: uppercase;
+	}
+
+	&_Note {
+		color: $sapphire-color-text-light;
+		font-size: 0.9em;
 	}
 }
 
@@ -253,4 +352,15 @@
 	.light-tx {
 		@extend .Text_sapphireLighnesstText;
 	}
+}
+
+.Label {
+	background-color: transparent;
+	border-radius: 10px;
+	max-height: 20px;
+	padding: 2px 8px;
+}
+
+.Uppercase {
+	text-transform: uppercase;
 }
