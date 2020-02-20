@@ -31,6 +31,14 @@
 
 		&.Selected {
 			z-index: 2;
+			.SSD-Bar {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				border-bottom-right-radius: 0;
+				.ShortListSelector-Container {
+					border-bottom-left-radius: 0;
+				}
+			}
 		}
 	}
 	&.Selected {
@@ -67,7 +75,9 @@
 			}
 
 			.SSD-List {
-				border-top: 0.08333rem solid #c9cdce;
+				border: 1px solid $light-grey;
+				// border-top: 0.08333rem solid #c9cdce;
+				border-top: none;
 				height: auto;
 				min-height: 4rem;
 				overflow: initial;
@@ -232,7 +242,7 @@
 			}
 			&:hover {
 				> div {
-					border: 0.08333rem solid #16979f;
+					border: 0.08333rem solid $regular-alpha;
 				}
 			}
 		}
@@ -343,11 +353,8 @@
 
 .SSD-List {
 	background-color: $sapphire-white;
-	border: 1px solid $light-grey;
-	//border-bottom-left-radius: 0.2333rem;
-	//border-bottom-right-radius: 0.2333rem;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
 	height: 0;
-	margin-top: 10px;
 	overflow: hidden;
 
 	span.SSD_ListRecords > span {
@@ -361,6 +368,17 @@
 		&:hover {
 			background-color: $regular-eta;
 			cursor: pointer;
+		}
+	}
+
+	div.SSD_ListLine.ShowMore {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		min-height: 44px;
+		a {
+			font-family: $font-family-bold;
+			font-size: $font-size-normal !important;
 		}
 	}
 }
