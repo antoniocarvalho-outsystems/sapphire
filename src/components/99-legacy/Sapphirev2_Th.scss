@@ -8362,103 +8362,103 @@ a.Button.Icon:hover {
 /* 8.4 Usefull Classes > Text Colors **************************/
 /*------------------------------------------------------------*/
 
-.Text_black {
-	color: #131819;
-}
+// .Text_black {
+// 	color: #131819;
+// }
 
-.Text_blue {
-	color: #0074c1;
-}
+// .Text_blue {
+// 	color: #0074c1;
+// }
 
-.Text_navyBlue {
-	color: #4d89a2;
-}
+// .Text_navyBlue {
+// 	color: #4d89a2;
+// }
 
-.Text_darkBlue {
-	color: #194968;
-}
+// .Text_darkBlue {
+// 	color: #194968;
+// }
 
-.Text_MiddleBlue {
-	color: #005675;
-}
+// .Text_MiddleBlue {
+// 	color: #005675;
+// }
 
-.Text_darkPlum {
-	color: #970263;
-}
+// .Text_darkPlum {
+// 	color: #970263;
+// }
 
-.Text_darkRed {
-	color: #b10000;
-}
+// .Text_darkRed {
+// 	color: #b10000;
+// }
 
-.Text_gray {
-	color: #79868a;
-}
+// .Text_gray {
+// 	color: #79868a;
+// }
 
-.Text_green {
-	color: #388e3c;
-}
+// .Text_green {
+// 	color: #388e3c;
+// }
 
-.Text_green_Sapphire {
-	color: #16979f;
-}
+// .Text_green_Sapphire {
+// 	color: #16979f;
+// }
 
-.Text_Darkgreen {
-	color: #4e87a2;
-}
+// .Text_Darkgreen {
+// 	color: #4e87a2;
+// }
 
-.Page .Text_lightGreen,
-.Text_lightGreen {
-	color: #c2dea8;
-}
+// .Page .Text_lightGreen,
+// .Text_lightGreen {
+// 	color: #c2dea8;
+// }
 
-.Text_orange {
-	color: #f25300;
-}
+// .Text_orange {
+// 	color: #f25300;
+// }
 
-.Text_orangeDark {
-	color: #d45302;
-}
+// .Text_orangeDark {
+// 	color: #d45302;
+// }
 
-.Text_plum {
-	color: #c32b87;
-}
+// .Text_plum {
+// 	color: #c32b87;
+// }
 
-.Text_red {
-	color: #d01a1a;
-}
+// .Text_red {
+// 	color: #d01a1a;
+// }
 
-.Text_SapphireRed {
-	color: #cd1d02;
-}
+// .Text_SapphireRed {
+// 	color: #cd1d02;
+// }
 
-.Text_darkRed {
-	color: #ba4d37;
-}
+// .Text_darkRed {
+// 	color: #ba4d37;
+// }
 
-.Text_silver {
-	color: #dadbde;
-}
+// .Text_silver {
+// 	color: #dadbde;
+// }
 
-.Text_turquoise {
-	color: #00b0c1;
-}
+// .Text_turquoise {
+// 	color: #00b0c1;
+// }
 
-.Text_darkTurquoise {
-	color: #14a7af;
-}
+// .Text_darkTurquoise {
+// 	color: #14a7af;
+// }
 
-.Text_white {
-	color: #fff;
-}
+// .Text_white {
+// 	color: #fff;
+// }
 
-.Page .Text_yellow,
-.Text_yellow {
-	color: #eab62b;
-}
+// .Page .Text_yellow,
+// .Text_yellow {
+// 	color: #eab62b;
+// }
 
-.Text_darkYellow {
-	color: #cbc59e;
-}
+// .Text_darkYellow {
+// 	color: #cbc59e;
+// }
 
 /*------------------------------------*\
       $9. Sapphire Patterns
@@ -22853,17 +22853,17 @@ body.confirmation-opened {
 	/* border-top:1px solid #08a6af; */
 }
 
-.SelectableList-ListRecords {
-	border-bottom: 1px solid #08a6af;
-	border-left: 1px solid #08a6af;
-	border-right: 1px solid #08a6af;
-	border-top: 1px solid #08a6af;
-	display: block;
-}
+// .SelectableList-ListRecords {
+// 	border-bottom: 1px solid #08a6af;
+// 	border-left: 1px solid #08a6af;
+// 	border-right: 1px solid #08a6af;
+// 	border-top: 1px solid #08a6af;
+// 	display: block;
+// }
 
-.SelectableList-ListRecords .SelectableListWrapper {
-	border: none;
-}
+// .SelectableList-ListRecords .SelectableListWrapper {
+// 	border: none;
+// }
 
 /*When is not RL SelectableList-ListRecords  */
 .ListRecords .SelectableListWrapper:first-of-type {
@@ -22875,18 +22875,18 @@ body.confirmation-opened {
 }
 
 /* SelectableList-ListRecords on RL DE63998*/
-.SelectableList-ListRecords .SelectableListWrapper:not(:last-child) {
-	border-bottom: 1px solid #08a6af;
-}
+// .SelectableList-ListRecords .SelectableListWrapper:not(:last-child) {
+// 	border-bottom: 1px solid #08a6af;
+// }
 
-.SelectableList-ListRecords .SelectableListWrapper:last-of-type {
-	border-bottom: none;
-}
+// .SelectableList-ListRecords .SelectableListWrapper:last-of-type {
+// 	border-bottom: none;
+// }
 
-.SelectableList-ListRecords .SelectableListWrapper:last-of-type,
-.SelectableList-ListRecords .SelectableListWrapper:last-of-type {
-	border-top: none;
-}
+// .SelectableList-ListRecords .SelectableListWrapper:last-of-type,
+// .SelectableList-ListRecords .SelectableListWrapper:last-of-type {
+// 	border-top: none;
+// }
 
 /*Actions aligment auxiliar*/
 .SelectableListWrapper .SSDActionsAlignment {
@@ -25167,95 +25167,95 @@ span.select2-container.select2-container--default.select2-container--open {
 /* 10.1 Sapphire Text Colors  *********************************/
 /*------------------------------------------------------------*/
 
-.Page .Text_sapphireBlue,
-.Text_sapphireBlue,
-.mainBlue1-tx {
-	color: #11455d;
-}
+// .Page .Text_sapphireBlue,
+// .Text_sapphireBlue,
+// .mainBlue1-tx {
+// 	color: #11455d;
+// }
 
-.Page .Text_sapphireBlue2,
-.mainBlue2-tx {
-	color: #16979f;
-}
+// .Page .Text_sapphireBlue2,
+// .mainBlue2-tx {
+// 	color: #16979f;
+// }
 
-.Page .Text_sapphireInactive,
-.inactiveButton-tx {
-	color: #b1b5b6;
-}
+// .Page .Text_sapphireInactive,
+// .inactiveButton-tx {
+// 	color: #b1b5b6;
+// }
 
-.Page .Text_sapphireDarkBlue1,
-.darkBlue1-tx {
-	color: #0c1d22;
-}
+// .Page .Text_sapphireDarkBlue1,
+// .darkBlue1-tx {
+// 	color: #0c1d22;
+// }
 
-.Page .Text_sapphireDarkBlue2,
-.darkBlue2-tx {
-	color: #113041;
-}
+// .Page .Text_sapphireDarkBlue2,
+// .darkBlue2-tx {
+// 	color: #113041;
+// }
 
-.Page .Text_sapphireDarkText,
-.darkText-tx {
-	color: #262626;
-}
+// .Page .Text_sapphireDarkText,
+// .darkText-tx {
+// 	color: #262626;
+// }
 
-.Page .Text_sapphireLightText,
-.lightText-tx {
-	color: #4d5c66;
-}
+// .Page .Text_sapphireLightText,
+// .lightText-tx {
+// 	color: #4d5c66;
+// }
 
-.Page .Text_sapphireFemale,
-.female-tx {
-	color: #6f4065;
-}
+// .Page .Text_sapphireFemale,
+// .female-tx {
+// 	color: #6f4065;
+// }
 
-.Page .Text_sapphireMale,
-.male-tx {
-	color: #11394f;
-}
+// .Page .Text_sapphireMale,
+// .male-tx {
+// 	color: #11394f;
+// }
 
-.Page .Text_sapphireDarkGrey,
-.darkGreyText-tx {
-	color: #7c7f7f;
-}
+// .Page .Text_sapphireDarkGrey,
+// .darkGreyText-tx {
+// 	color: #7c7f7f;
+// }
 
-.Page .Text_sapphireLightBoard,
-.lightBorder-tx {
-	color: #c9cdce;
-}
+// .Page .Text_sapphireLightBoard,
+// .lightBorder-tx {
+// 	color: #c9cdce;
+// }
 
-.Page .Text_sapphireLightContainer,
-.lightContainer-tx {
-	color: #ebebeb;
-}
+// .Page .Text_sapphireLightContainer,
+// .lightContainer-tx {
+// 	color: #ebebeb;
+// }
 
-.Page .Text_sapphireBackground,
-.background-tx {
-	color: #f5f1eb;
-}
+// .Page .Text_sapphireBackground,
+// .background-tx {
+// 	color: #f5f1eb;
+// }
 
-.Page .Text_sapphireWarning,
-.warning-tx {
-	color: #cd0005;
-}
+// .Page .Text_sapphireWarning,
+// .warning-tx {
+// 	color: #cd0005;
+// }
 
-.Page .Text_sapphireWhite,
-.white-tx {
-	color: #ffffff;
-}
+// .Page .Text_sapphireWhite,
+// .white-tx {
+// 	color: #ffffff;
+// }
 
-.Page .Text_sapphireClinician,
-.clinician-tx {
-	color: #dae0e4;
-}
+// .Page .Text_sapphireClinician,
+// .clinician-tx {
+// 	color: #dae0e4;
+// }
 
-.Page .Text_sapphireLighnesstText,
-.light-tx {
-	color: #f2f2f2;
-}
+// .Page .Text_sapphireLighnesstText,
+// .light-tx {
+// 	color: #f2f2f2;
+// }
 
-.Page .Text_DarkBlue {
-	color: #0d1d22;
-}
+// .Page .Text_DarkBlue {
+// 	color: #0d1d22;
+// }
 
 /*------------------------------------------------------------*/
 /* 10.2 Sapphire Background Colors  ***************************/
@@ -26578,117 +26578,117 @@ div.ForwardableContainer {
 /* 10.3.8 Auxiliar Text Sizes ****************************/
 /*------------------------------------------------------------*/
 
-.Text_09em {
-	font-size: 0.9em;
-}
+// .Text_09em {
+// 	font-size: 0.9em;
+// }
 
-.Text_1em {
-	font-size: 1em;
-}
+// .Text_1em {
+// 	font-size: 1em;
+// }
 
-.Text_11em {
-	font-size: 1.1em;
-}
+// .Text_11em {
+// 	font-size: 1.1em;
+// }
 
-.Text_12em {
-	font-size: 1.2em;
-}
+// .Text_12em {
+// 	font-size: 1.2em;
+// }
 
-.Text_13em {
-	font-size: 1.3em;
-}
+// .Text_13em {
+// 	font-size: 1.3em;
+// }
 
-.Text_14em {
-	font-size: 1.4em;
-}
+// .Text_14em {
+// 	font-size: 1.4em;
+// }
 
-.Text_15em {
-	font-size: 1.5em;
-}
+// .Text_15em {
+// 	font-size: 1.5em;
+// }
 
-.Text_09rem {
-	font-size: 0.9rem;
-}
+// .Text_09rem {
+// 	font-size: 0.9rem;
+// }
 
-.Text_1rem {
-	font-size: 1rem;
-}
+// .Text_1rem {
+// 	font-size: 1rem;
+// }
 
-.Text_11rem {
-	font-size: 1.1rem;
-}
+// .Text_11rem {
+// 	font-size: 1.1rem;
+// }
 
-.Text_12rem {
-	font-size: 1.2rem;
-}
+// .Text_12rem {
+// 	font-size: 1.2rem;
+// }
 
-.Text_13rem {
-	font-size: 1.3rem;
-}
+// .Text_13rem {
+// 	font-size: 1.3rem;
+// }
 
-.Text_14rem {
-	font-size: 1.4rem;
-}
+// .Text_14rem {
+// 	font-size: 1.4rem;
+// }
 
-.Text_15rem {
-	font-size: 1.5rem;
-}
+// .Text_15rem {
+// 	font-size: 1.5rem;
+// }
 
-.Text_Size11 {
-	font-size: 11px;
-}
+// .Text_Size11 {
+// 	font-size: 11px;
+// }
 
-.Text_Size12 {
-	font-size: 12px;
-}
+// .Text_Size12 {
+// 	font-size: 12px;
+// }
 
-.Text_Size13 {
-	font-size: 13px;
-}
+// .Text_Size13 {
+// 	font-size: 13px;
+// }
 
-.Text_Size14 {
-	font-size: 14px;
-}
+// .Text_Size14 {
+// 	font-size: 14px;
+// }
 
-.Text_Size15 {
-	font-size: 15px;
-}
+// .Text_Size15 {
+// 	font-size: 15px;
+// }
 
-.Text_Size16 {
-	font-size: 16px;
-}
+// .Text_Size16 {
+// 	font-size: 16px;
+// }
 
-.Text_Size17 {
-	font-size: 17px;
-}
+// .Text_Size17 {
+// 	font-size: 17px;
+// }
 
-.Text_Size18 {
-	font-size: 18px;
-}
+// .Text_Size18 {
+// 	font-size: 18px;
+// }
 
-.Text_Size20 {
-	font-size: 20px;
-}
+// .Text_Size20 {
+// 	font-size: 20px;
+// }
 
-.Text_Size22 {
-	font-size: 22px;
-}
+// .Text_Size22 {
+// 	font-size: 22px;
+// }
 
-.Text_Size25 {
-	font-size: 25px;
-}
+// .Text_Size25 {
+// 	font-size: 25px;
+// }
 
-.Text_Size30 {
-	font-size: 30px;
-}
+// .Text_Size30 {
+// 	font-size: 30px;
+// }
 
-.Text_Size90 {
-	font-size: 90px;
-}
+// .Text_Size90 {
+// 	font-size: 90px;
+// }
 
-.Text_uppercase {
-	text-transform: uppercase;
-}
+// .Text_uppercase {
+// 	text-transform: uppercase;
+// }
 
 /*------------------------------------------------------------*/
 /* 10.3.9 Auxiliar Classes Others ****************************/
@@ -28888,30 +28888,30 @@ a.Button.MedInteractions:before {
 
 /*ManageDiagnosticsDetails_IFrame fix */
 
-.SelectableList-ExpandControls {
-	white-space: nowrap;
-	width: 100%;
-	/* width: 40%;*/
-}
+// .SelectableList-ExpandControls {
+// 	white-space: nowrap;
+// 	width: 100%;
+// 	/* width: 40%;*/
+// }
 
-.SelectableList-ExpandControls div:nth-child(1) {
-	line-height: 24px;
-	/*32px*/
-	text-align: right;
-}
+// .SelectableList-ExpandControls div:nth-child(1) {
+// 	line-height: 24px;
+// 	/*32px*/
+// 	text-align: right;
+// }
 
-.FA .SelectableList-ExpandControls div:nth-child(1),
-.AR .SelectableList-ExpandControls div:nth-child(1) {
-	text-align: left;
-}
+// .FA .SelectableList-ExpandControls div:nth-child(1),
+// .AR .SelectableList-ExpandControls div:nth-child(1) {
+// 	text-align: left;
+// }
 
 .SSD_ListLine-Modal.ModalResizeIframe .Padding15.Labels > div > div {
 	margin-left: 15px;
 }
 
-.SelectableList-ExpandControls > .MultiMarginLeft20 {
-	width: auto;
-}
+// .SelectableList-ExpandControls > .MultiMarginLeft20 {
+// 	width: auto;
+// }
 
 /* Pain assessment PopUp Select2  */
 
@@ -33562,9 +33562,9 @@ div.NoPrompt > div.template-item-input-block {
 	display: table-cell;
 }
 
-div.SelectableList-Line > span > div.ExpandableContent {
-	background-color: #fff;
-}
+// div.SelectableList-Line > span > div.ExpandableContent {
+// 	background-color: #fff;
+// }
 
 .SizeSmall {
 	height: 10px;
@@ -33592,9 +33592,9 @@ div.SelectableList-Line > span > div.ExpandableContent {
 
 /***** templates css *****/
 
-div.SelectableList-Line > span > div.ExpandableContent {
-	background-color: #fff;
-}
+// div.SelectableList-Line > span > div.ExpandableContent {
+// 	background-color: #fff;
+// }
 
 .ButtonCheckboxInput input {
 	margin: 0px 0px 10px 10px;
@@ -34588,15 +34588,15 @@ a.Button.FullWidth {
 }
 
 /* SelectableLists */
-.SelectableList-EmptyMessage {
-	border: 1px solid #c9cdce;
-	color: #7c7f7f;
-	display: block;
-	font-size: 1.2rem;
-	min-height: 4.417rem;
-	padding: 1.25rem;
-	text-align: center;
-}
+// .SelectableList-EmptyMessage {
+// 	border: 1px solid #c9cdce;
+// 	color: #7c7f7f;
+// 	display: block;
+// 	font-size: 1.2rem;
+// 	min-height: 4.417rem;
+// 	padding: 1.25rem;
+// 	text-align: center;
+// }
 
 .VerticalSeparatorHelper {
 	position: relative;

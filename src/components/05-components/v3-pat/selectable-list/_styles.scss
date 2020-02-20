@@ -1,0 +1,46 @@
+.SelectableList {
+	&-EmptyMessage {
+		@include blank-state;
+
+		&.NoBorder {
+			border: none;
+		}
+	}
+
+	&-ListRecords {
+		border: 1px solid $regular-alpha;
+		display: block;
+
+		.SelectableListWrapper {
+			border: none;
+
+			&:not(:last-child) {
+				border-bottom: 1px solid $regular-alpha;
+			}
+
+			&:last-of-type {
+				border-bottom: none;
+				border-top: none;
+			}
+		}
+	}
+
+	&-ExpandControls {
+		white-space: nowrap;
+		width: 100%;
+
+		div:nth-child(1) {
+			line-height: 24px;
+			text-align: right;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.SelectableList-ExpandControls {
+		div:nth-child(1) {
+			text-align: left;
+		}
+	}
+}
