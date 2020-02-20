@@ -22853,17 +22853,17 @@ body.confirmation-opened {
 	/* border-top:1px solid #08a6af; */
 }
 
-.SelectableList-ListRecords {
-	border-bottom: 1px solid #08a6af;
-	border-left: 1px solid #08a6af;
-	border-right: 1px solid #08a6af;
-	border-top: 1px solid #08a6af;
-	display: block;
-}
+// .SelectableList-ListRecords {
+// 	border-bottom: 1px solid #08a6af;
+// 	border-left: 1px solid #08a6af;
+// 	border-right: 1px solid #08a6af;
+// 	border-top: 1px solid #08a6af;
+// 	display: block;
+// }
 
-.SelectableList-ListRecords .SelectableListWrapper {
-	border: none;
-}
+// .SelectableList-ListRecords .SelectableListWrapper {
+// 	border: none;
+// }
 
 /*When is not RL SelectableList-ListRecords  */
 .ListRecords .SelectableListWrapper:first-of-type {
@@ -22875,18 +22875,18 @@ body.confirmation-opened {
 }
 
 /* SelectableList-ListRecords on RL DE63998*/
-.SelectableList-ListRecords .SelectableListWrapper:not(:last-child) {
-	border-bottom: 1px solid #08a6af;
-}
+// .SelectableList-ListRecords .SelectableListWrapper:not(:last-child) {
+// 	border-bottom: 1px solid #08a6af;
+// }
 
-.SelectableList-ListRecords .SelectableListWrapper:last-of-type {
-	border-bottom: none;
-}
+// .SelectableList-ListRecords .SelectableListWrapper:last-of-type {
+// 	border-bottom: none;
+// }
 
-.SelectableList-ListRecords .SelectableListWrapper:last-of-type,
-.SelectableList-ListRecords .SelectableListWrapper:last-of-type {
-	border-top: none;
-}
+// .SelectableList-ListRecords .SelectableListWrapper:last-of-type,
+// .SelectableList-ListRecords .SelectableListWrapper:last-of-type {
+// 	border-top: none;
+// }
 
 /*Actions aligment auxiliar*/
 .SelectableListWrapper .SSDActionsAlignment {
@@ -25167,95 +25167,95 @@ span.select2-container.select2-container--default.select2-container--open {
 /* 10.1 Sapphire Text Colors  *********************************/
 /*------------------------------------------------------------*/
 
-.Page .Text_sapphireBlue,
-.Text_sapphireBlue,
-.mainBlue1-tx {
-	color: #11455d;
-}
+// .Page .Text_sapphireBlue,
+// .Text_sapphireBlue,
+// .mainBlue1-tx {
+// 	color: #11455d;
+// }
 
-.Page .Text_sapphireBlue2,
-.mainBlue2-tx {
-	color: #16979f;
-}
+// .Page .Text_sapphireBlue2,
+// .mainBlue2-tx {
+// 	color: #16979f;
+// }
 
-.Page .Text_sapphireInactive,
-.inactiveButton-tx {
-	color: #b1b5b6;
-}
+// .Page .Text_sapphireInactive,
+// .inactiveButton-tx {
+// 	color: #b1b5b6;
+// }
 
-.Page .Text_sapphireDarkBlue1,
-.darkBlue1-tx {
-	color: #0c1d22;
-}
+// .Page .Text_sapphireDarkBlue1,
+// .darkBlue1-tx {
+// 	color: #0c1d22;
+// }
 
-.Page .Text_sapphireDarkBlue2,
-.darkBlue2-tx {
-	color: #113041;
-}
+// .Page .Text_sapphireDarkBlue2,
+// .darkBlue2-tx {
+// 	color: #113041;
+// }
 
-.Page .Text_sapphireDarkText,
-.darkText-tx {
-	color: #262626;
-}
+// .Page .Text_sapphireDarkText,
+// .darkText-tx {
+// 	color: #262626;
+// }
 
-.Page .Text_sapphireLightText,
-.lightText-tx {
-	color: #4d5c66;
-}
+// .Page .Text_sapphireLightText,
+// .lightText-tx {
+// 	color: #4d5c66;
+// }
 
-.Page .Text_sapphireFemale,
-.female-tx {
-	color: #6f4065;
-}
+// .Page .Text_sapphireFemale,
+// .female-tx {
+// 	color: #6f4065;
+// }
 
-.Page .Text_sapphireMale,
-.male-tx {
-	color: #11394f;
-}
+// .Page .Text_sapphireMale,
+// .male-tx {
+// 	color: #11394f;
+// }
 
-.Page .Text_sapphireDarkGrey,
-.darkGreyText-tx {
-	color: #7c7f7f;
-}
+// .Page .Text_sapphireDarkGrey,
+// .darkGreyText-tx {
+// 	color: #7c7f7f;
+// }
 
-.Page .Text_sapphireLightBoard,
-.lightBorder-tx {
-	color: #c9cdce;
-}
+// .Page .Text_sapphireLightBoard,
+// .lightBorder-tx {
+// 	color: #c9cdce;
+// }
 
-.Page .Text_sapphireLightContainer,
-.lightContainer-tx {
-	color: #ebebeb;
-}
+// .Page .Text_sapphireLightContainer,
+// .lightContainer-tx {
+// 	color: #ebebeb;
+// }
 
-.Page .Text_sapphireBackground,
-.background-tx {
-	color: #f5f1eb;
-}
+// .Page .Text_sapphireBackground,
+// .background-tx {
+// 	color: #f5f1eb;
+// }
 
-.Page .Text_sapphireWarning,
-.warning-tx {
-	color: #cd0005;
-}
+// .Page .Text_sapphireWarning,
+// .warning-tx {
+// 	color: #cd0005;
+// }
 
-.Page .Text_sapphireWhite,
-.white-tx {
-	color: #ffffff;
-}
+// .Page .Text_sapphireWhite,
+// .white-tx {
+// 	color: #ffffff;
+// }
 
-.Page .Text_sapphireClinician,
-.clinician-tx {
-	color: #dae0e4;
-}
+// .Page .Text_sapphireClinician,
+// .clinician-tx {
+// 	color: #dae0e4;
+// }
 
-.Page .Text_sapphireLighnesstText,
-.light-tx {
-	color: #f2f2f2;
-}
+// .Page .Text_sapphireLighnesstText,
+// .light-tx {
+// 	color: #f2f2f2;
+// }
 
-.Page .Text_DarkBlue {
-	color: #0d1d22;
-}
+// .Page .Text_DarkBlue {
+// 	color: #0d1d22;
+// }
 
 /*------------------------------------------------------------*/
 /* 10.2 Sapphire Background Colors  ***************************/
@@ -28888,30 +28888,30 @@ a.Button.MedInteractions:before {
 
 /*ManageDiagnosticsDetails_IFrame fix */
 
-.SelectableList-ExpandControls {
-	white-space: nowrap;
-	width: 100%;
-	/* width: 40%;*/
-}
+// .SelectableList-ExpandControls {
+// 	white-space: nowrap;
+// 	width: 100%;
+// 	/* width: 40%;*/
+// }
 
-.SelectableList-ExpandControls div:nth-child(1) {
-	line-height: 24px;
-	/*32px*/
-	text-align: right;
-}
+// .SelectableList-ExpandControls div:nth-child(1) {
+// 	line-height: 24px;
+// 	/*32px*/
+// 	text-align: right;
+// }
 
-.FA .SelectableList-ExpandControls div:nth-child(1),
-.AR .SelectableList-ExpandControls div:nth-child(1) {
-	text-align: left;
-}
+// .FA .SelectableList-ExpandControls div:nth-child(1),
+// .AR .SelectableList-ExpandControls div:nth-child(1) {
+// 	text-align: left;
+// }
 
 .SSD_ListLine-Modal.ModalResizeIframe .Padding15.Labels > div > div {
 	margin-left: 15px;
 }
 
-.SelectableList-ExpandControls > .MultiMarginLeft20 {
-	width: auto;
-}
+// .SelectableList-ExpandControls > .MultiMarginLeft20 {
+// 	width: auto;
+// }
 
 /* Pain assessment PopUp Select2  */
 
@@ -33562,9 +33562,9 @@ div.NoPrompt > div.template-item-input-block {
 	display: table-cell;
 }
 
-div.SelectableList-Line > span > div.ExpandableContent {
-	background-color: #fff;
-}
+// div.SelectableList-Line > span > div.ExpandableContent {
+// 	background-color: #fff;
+// }
 
 .SizeSmall {
 	height: 10px;
@@ -33592,9 +33592,9 @@ div.SelectableList-Line > span > div.ExpandableContent {
 
 /***** templates css *****/
 
-div.SelectableList-Line > span > div.ExpandableContent {
-	background-color: #fff;
-}
+// div.SelectableList-Line > span > div.ExpandableContent {
+// 	background-color: #fff;
+// }
 
 .ButtonCheckboxInput input {
 	margin: 0px 0px 10px 10px;
@@ -34588,15 +34588,15 @@ div.List-Star.Selected > div[unselected] {
 }
 
 /* SelectableLists */
-.SelectableList-EmptyMessage {
-	border: 1px solid #c9cdce;
-	color: #7c7f7f;
-	display: block;
-	font-size: 1.2rem;
-	min-height: 4.417rem;
-	padding: 1.25rem;
-	text-align: center;
-}
+// .SelectableList-EmptyMessage {
+// 	border: 1px solid #c9cdce;
+// 	color: #7c7f7f;
+// 	display: block;
+// 	font-size: 1.2rem;
+// 	min-height: 4.417rem;
+// 	padding: 1.25rem;
+// 	text-align: center;
+// }
 
 .VerticalSeparatorHelper {
 	position: relative;

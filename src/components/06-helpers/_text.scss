@@ -1,15 +1,256 @@
 .Label {
-  background-color: transparent;
-  border-radius: 10px;
-  max-height: 20px;
-  padding: 2px 8px;
+	background-color: transparent;
+	border-radius: 10px;
+	max-height: 20px;
+	padding: 2px 8px;
 }
 
 .Text_Note {
-  color: $sapphire-color-text-light;
-  font-size: .9em;
+	color: $sapphire-color-text-light;
+	font-size: 0.9em;
 }
 
 .Uppercase {
-  text-transform: uppercase;
+	text-transform: uppercase;
+}
+
+/* Colors */
+.Page .Text {
+	&_sapphireBlue {
+		color: $regular-alpha;
+	}
+
+	&_sapphireBlue2 {
+		color: $regular-beta;
+	}
+
+	&_sapphireInactive {
+		color: #b1b5b6;
+	}
+
+	&_sapphireDarkBlue1 {
+		color: #0c1d22;
+	}
+
+	&_sapphireDarkBlue2 {
+		color: #113041;
+	}
+
+	&_sapphireDarkText {
+		color: #262626;
+	}
+
+	&_sapphireLightText {
+		color: #4d5c66;
+	}
+
+	&_sapphireFemale {
+		color: #6f4065;
+	}
+
+	&_sapphireMale {
+		color: #11394f;
+	}
+
+	&_sapphireDarkGrey {
+		color: #7c7f7f;
+	}
+
+	&_sapphireLightBoard {
+		color: #c9cdce;
+	}
+
+	&_sapphireLightContainer {
+		color: #ebebeb;
+	}
+
+	&_sapphireBackground {
+		color: #f5f1eb;
+	}
+
+	&_sapphireWarning {
+		color: #cd0005;
+	}
+
+	&_sapphireWhite {
+		color: #ffffff;
+	}
+
+	&_sapphireClinician {
+		color: #dae0e4;
+	}
+
+	&_sapphireLighnesstText {
+		color: #f2f2f2;
+	}
+
+	&_DarkBlue {
+		color: #0d1d22;
+	}
+
+	&_black {
+		color: #131819;
+	}
+
+	&_blue {
+		color: #0074c1;
+	}
+
+	&_navyBlue {
+		color: #4d89a2;
+	}
+
+	&_darkBlue {
+		color: #194968;
+	}
+
+	&_MiddleBlue {
+		color: #005675;
+	}
+
+	&_darkPlum {
+		color: #970263;
+	}
+
+	&_darkRed {
+		color: #b10000;
+	}
+
+	&_gray {
+		color: #79868a;
+	}
+
+	&_green {
+		color: #388e3c;
+	}
+
+	&_green_Sapphire {
+		color: #16979f;
+	}
+
+	&_Darkgreen {
+		color: #4e87a2;
+	}
+
+	&_lightGreen {
+		color: #c2dea8;
+	}
+
+	&_orange {
+		color: #f25300;
+	}
+
+	&_orangeDark {
+		color: #d45302;
+	}
+
+	&_plum {
+		color: #c32b87;
+	}
+
+	&_red {
+		color: #d01a1a;
+	}
+
+	&_SapphireRed {
+		color: #cd1d02;
+	}
+
+	&_darkRed {
+		color: #ba4d37;
+	}
+
+	&_silver {
+		color: #dadbde;
+	}
+
+	&_turquoise {
+		color: #00b0c1;
+	}
+
+	&_darkTurquoise {
+		color: #14a7af;
+	}
+
+	&_white {
+		color: #fff;
+	}
+
+	&_yellow {
+		color: #eab62b;
+	}
+
+	&_darkYellow {
+		color: #cbc59e;
+	}
+}
+
+.Page {
+	.mainBlue1-tx {
+		@extend .Text_sapphireBlue;
+	}
+
+	.mainBlue2-tx {
+		@extend .Text_sapphireBlue2;
+	}
+
+	.inactiveButton-tx {
+		@extend .Text_sapphireInactive;
+	}
+
+	.darkBlue1-tx {
+		@extend .Text_sapphireDarkBlue1;
+	}
+
+	.darkBlue2-tx {
+		@extend .Text_sapphireDarkBlue2;
+	}
+
+	.darkText-tx {
+		@extend .Text_sapphireDarkText;
+	}
+
+	.lightText-tx {
+		@extend .Text_sapphireLightText;
+	}
+
+	.female-tx {
+		@extend .Text_sapphireFemale;
+	}
+
+	.male-tx {
+		@extend .Text_sapphireMale;
+	}
+
+	.darkGreyText-tx {
+		@extend .Text_sapphireDarkGrey;
+	}
+
+	.lightBorder-tx {
+		@extend .Text_sapphireLightBoard;
+	}
+
+	.lightContainer-tx {
+		@extend .Text_sapphireLightContainer;
+	}
+
+	.background-tx {
+		@extend .Text_sapphireBackground;
+	}
+
+	.warning-tx {
+		@extend .Text_sapphireWarning;
+	}
+
+	.white-tx {
+		@extend .Text_sapphireWhite;
+	}
+
+	.clinician-tx {
+		@extend .Text_sapphireClinician;
+	}
+
+	.light-tx {
+		@extend .Text_sapphireLighnesstText;
+	}
 }

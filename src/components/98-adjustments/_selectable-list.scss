@@ -1,0 +1,21 @@
+.SelectableList {
+	&-ListRecords {
+		div.SSD_ListLine.Active {
+			margin: 0;
+		}
+
+		div.SSD_ListLine:last-child {
+			border-bottom: 1px solid $regular-alpha;
+		}
+	}
+
+	&-ExpandControls {
+		> .MultiMarginLeft20 {
+			width: auto;
+		}
+	}
+}
+
+div.SelectableList-Line > span > div.ExpandableContent {
+	background-color: $regular-white;
+}

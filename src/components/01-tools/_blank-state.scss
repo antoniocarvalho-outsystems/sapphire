@@ -1,0 +1,10 @@
+@mixin blank-state {
+	@include flex-center-total;
+
+	background-color: transparent;
+	border: 1px solid $light-grey;
+	color: $mid-dark-grey;
+	font-size: 1em;
+	min-height: 48px;
+	width: 100%;
+}

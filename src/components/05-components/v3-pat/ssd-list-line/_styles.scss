@@ -266,28 +266,6 @@ div.SSD_ListLine.Active>div.ExpandableContent {
 }
 
 /* HELP CLASSES */
-.SelectableList-ListRecords div.SSD_ListLine.Active {
-  margin: 0;
-}
-
-.SelectableList-ListRecords div.SSD_ListLine:last-child {
-  border-bottom: 1px solid #08a6af;
-}
-
-.SelectableList-EmptyMessage {
-  border: 1px solid #C9CDCE;
-  color: #7C7F7F;
-  display: block;
-  font-size: 1.2rem;
-  min-height: 4.417rem;
-  padding: 1.25rem;
-  text-align: center;
-}
-
-.SelectableList-EmptyMessage.NoBorder {
-  border: none;
-}
-
 div.SSD_ListLine>div.ExpandableContent .iframe-loading {
   margin-top: 4.167rem;
 }
@@ -507,28 +485,7 @@ div.SSD_ListLine.Active>div.ExpandableContent {
   height: 100%;
 }
 
-/* HELP CLASSES */
-.SelectableList-ListRecords div.SSD_ListLine.Active {
-  margin: 0;
-}
 
-.SelectableList-ListRecords div.SSD_ListLine:last-child {
-  border-bottom: 1px solid #08a6af;
-}
-
-.SelectableList-EmptyMessage {
-  border: 1px solid #C9CDCE;
-  color: #7C7F7F;
-  display: block;
-  font-size: 1.2rem;
-  min-height: 4.417rem;
-  padding: 1.25rem;
-  text-align: center;
-}
-
-.SelectableList-EmptyMessage.NoBorder {
-  border: none;
-}
 
 div.SSD_ListLine>div.ExpandableContent .iframe-loading {
   margin-top: 4.167rem;
