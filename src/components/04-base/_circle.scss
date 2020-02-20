@@ -1,0 +1,36 @@
+.Circle {
+	border-radius: 10px;
+	height: 17px;
+	line-height: 17px;
+	width: 17px;
+
+	&.Large {
+		border-radius: 100%;
+		display: table-cell;
+		height: 37px;
+		line-height: 37px;
+		text-align: center;
+		vertical-align: middle;
+		width: 37px;
+	}
+
+	&.ColorSapphire {
+		background-color: $regular-beta;
+	}
+
+	&.ColorRed {
+		background-color: $regular-red;
+	}
+
+	&.ColorOrange {
+		background-color: $regular-orange;
+	}
+
+	&.ColorGreen {
+		background-color: $regular-green;
+	}
+
+	&.ColorYellow {
+		background-color: $regular-yellow;
+	}
+}

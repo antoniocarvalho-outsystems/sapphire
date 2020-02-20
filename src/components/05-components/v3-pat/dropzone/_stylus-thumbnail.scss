@@ -1,0 +1,98 @@
+.DropZoneContainer {
+	&_preview {
+		border: 1px solid $light-grey;
+
+		&:empty {
+			display: none;
+		}
+	}
+
+	&__preview.preview {
+		display: inline-block;
+		vertical-align: middle;
+		width: auto;
+	}
+
+	&__template {
+		padding: 15px;
+		width: 100%;
+	}
+
+	&__info {
+		display: inline-block;
+		margin-left: 16px;
+		vertical-align: middle !important;
+		white-space: nowrap;
+	}
+
+	&__infoFileName {
+		color: $regular-alpha;
+		font-size: 1.143em;
+	}
+
+	&__infoFileSize {
+		color: $regular-grey;
+		font-size: 1.143em;
+	}
+
+	&__infoFileDelete {
+		&.delete a {
+			&,
+			&:hover,
+			&:active,
+			&:hover:active {
+				color: $regular-red;
+				cursor: pointer;
+				font-size: 1.143em;
+				padding: 0;
+			}
+		}
+	}
+
+	&__btns {
+		margin-top: 20px;
+	}
+
+	.row {
+		display: table;
+		margin-top: 16px;
+		width: 100%;
+
+		> div > div {
+			display: table-cell;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+
+		.Button {
+			@extend a.Button;
+
+			margin-left: 0;
+		}
+	}
+
+	.ChooseFile {
+		padding: 0 10px;
+	}
+
+	.progress {
+		background-color: $light-grey;
+		border-radius: 10px;
+		display: flex;
+		font-size: 0.75rem;
+		height: 6px;
+		margin-top: 5px;
+		overflow: hidden;
+	}
+
+	.progress-bar {
+		background-color: $regular-alpha;
+		color: $regular-white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		transition: width 0.6s ease;
+		white-space: nowrap;
+	}
+}
