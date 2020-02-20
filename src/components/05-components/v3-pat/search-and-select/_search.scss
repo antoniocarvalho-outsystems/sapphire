@@ -12,7 +12,6 @@
 			border-radius: 50%;
 			cursor: pointer;
 			display: block !important;
-			height: 28px;
 			position: absolute;
 			right: 5px;
 			text-align: center;
@@ -49,6 +48,17 @@
 			font-size: 8px;
 			vertical-align: middle;
 			width: 48px;
+		}
+
+		&.Open {
+			.SearchSD_search {
+				border-bottom: 0;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+			.SearchSD_search_favoriteLink {
+				border-bottom-left-radius: 0;
+			}
 		}
 	}
 
@@ -175,6 +185,9 @@
 				border: 0;
 			}
 		}
+		> span:not(:first-child) {
+			border-top: none;
+		}
 	}
 
 	.SelectSD_contentWrapper + a {
@@ -220,18 +233,21 @@
 				width: 100%;
 			}
 			.SearchSD__actionInput {
+				height: 100%;
 				position: relative;
 				width: 100%;
 				.SearchSD___input {
-					padding: 0 10px;
+					height: 100%;
+					padding: 0;
 					width: 100%;
 
 					input[type='text'] {
 						border: 0;
 						box-shadow: none;
 						font-size: $font-size-heading3;
-						padding: 0 40px;
-
+						height: 100%;
+						padding: 0 50px;
+						width: 95%;
 						&::placeholder {
 							color: $regular-beta;
 							font-family: $font-family-bold;
@@ -246,18 +262,21 @@
 					}
 
 					&:before {
+						align-items: center;
+						align-items: center;
 						color: $regular-alpha;
 						content: '\e690';
+						display: flex;
 						font-family: 'Sapphire-Icon-Font';
 						font-size: $font-size-heading2;
 						font-style: normal;
 						font-variant: normal;
 						font-weight: normal;
-						padding-right: 10px;
+						height: 100%;
+						padding-right: 20px;
 						pointer-events: none;
 						position: absolute;
 						text-transform: none;
-						top: 5px;
 						transform: rotateY(180deg);
 						z-index: 1;
 					}
@@ -362,9 +381,9 @@
 		border: 1px solid $light-grey;
 		display: none;
 		position: relative;
-		top: 10px;
 		width: 100%;
 		z-index: 2;
+
 		.EmptySelectableList {
 			background-color: $sapphire-white;
 			border-bottom: 1px solid $light-grey;

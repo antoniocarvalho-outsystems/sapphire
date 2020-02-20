@@ -34541,46 +34541,46 @@ a.Button.FullWidth {
     +---------------------------------------------------+
 */
 /* START */
-div.List-Star {
-	color: #b1b5b6;
-	padding: 16px;
-	width: 100%;
-}
+// div.List-Star {
+// 	color: #b1b5b6;
+// 	padding: 16px;
+// 	width: 100%;
+// }
 
-div.List-Star.Selected {
-	color: #16979f;
-	padding: 16px;
-	width: 100%;
-}
+// div.List-Star.Selected {
+// 	color: #16979f;
+// 	padding: 16px;
+// 	width: 100%;
+// }
 
-div.List-Star:hover {
-	color: #16979f;
-}
+// div.List-Star:hover {
+// 	color: #16979f;
+// }
 
-div.List-Star.Selected:hover {
-	background-color: transparent;
-	color: #b1b5b6;
-}
+// div.List-Star.Selected:hover {
+// 	background-color: transparent;
+// 	color: #b1b5b6;
+// }
 
-div.List-Star > div[selected] {
-	display: none;
-}
+// div.List-Star > div[selected] {
+// 	display: none;
+// }
 
-div.List-Star > div[unselected] {
-	display: block;
-}
+// div.List-Star > div[unselected] {
+// 	display: block;
+// }
 
-div.List-Star.Selected > div[selected] {
-	display: block;
-}
+// div.List-Star.Selected > div[selected] {
+// 	display: block;
+// }
 
-div.List-Star.Selected > div[unselected] {
-	display: none;
-}
+// div.List-Star.Selected > div[unselected] {
+// 	display: none;
+// }
 
-.List-Star > div > .icon {
-	font-size: 16px;
-}
+// .List-Star > div > .icon {
+// 	font-size: 16px;
+// }
 
 .BorderLeftGrey {
 	border-left: 1px solid #79868a;
