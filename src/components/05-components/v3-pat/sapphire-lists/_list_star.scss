@@ -1,0 +1,37 @@
+div.List-Star {
+	color: $light-grey;
+	padding: 16px;
+	width: 100%;
+
+	&.Selected {
+		color: $regular-alpha;
+		padding: 16px;
+		width: 100%;
+		&:hover {
+			background-color: transparent;
+			color: $light-grey;
+		}
+
+		> div[selected] {
+			display: block;
+		}
+
+		> div[unselected] {
+			display: none;
+		}
+	}
+
+	&:hover {
+		color: $regular-alpha;
+	}
+	> div[selected] {
+		display: none;
+	}
+	> div[unselected] {
+		display: block;
+	}
+}
+
+.List-Star > div > .icon {
+	font-size: 16px;
+}
