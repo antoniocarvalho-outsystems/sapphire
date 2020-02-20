@@ -1,4 +1,5 @@
 const path = require('path');
+
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const KssWebpackPlugin = require('kss-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -12,6 +13,7 @@ const KssConfig = {
 };
 
 const outputPath = path.join(__dirname, 'dist');
+const isProduction = process.env.NODE_ENV === 'production ';
 
 module.exports = {
 	entry: path.resolve(__dirname, './src/components/index.js'),
@@ -40,19 +42,30 @@ module.exports = {
 				test: /\.s?[ac]ss$/,
 				use: [
 					MiniCssExtractPlugin.loader,
-					'css-loader',
-					'postcss-loader',
+					{
+						loader: 'css-loader',
+						options: {
+							importLoaders: 2,
+							sourceMap: !isProduction,
+						},
+					},
+					{
+						loader: 'postcss-loader',
+						options: {
+							sourceMap: !isProduction,
+						},
+					},
 					{
 						loader: 'sass-loader',
 						options: {
-							prependData: () => {
-								const path =
-									process.env.NODE_ENV === 'production'
-										? '/Sapphirev2_Th/fonts/Lato-Regular.ttf'
-										: 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap';
-
-								return `$font-url: '${path}';`;
-							},
+							sourceMap: !isProduction,
+							// prependData: () => {
+							// 	const path =
+							// 		isProduction
+							// 			? '/Sapphirev2_Th/fonts/Lato-Regular.ttf'
+							// 			: 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap';
+							// 	return `$font-url: '${path}';`;
+							// },
 						},
 					},
 				],
