@@ -20,6 +20,10 @@
 			visibility: visible;
 			width: 28px;
 			z-index: 2;
+
+			&:hover {
+				border: 1px solid $regular-alpha;
+			}
 		}
 
 		.SearchSD__inputWrapper {

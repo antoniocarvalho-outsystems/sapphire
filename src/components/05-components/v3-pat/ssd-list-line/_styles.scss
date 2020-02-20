@@ -20,6 +20,76 @@ div.SSD_ListLine {
 		border-top: 2px solid #00bfa5;
 		margin-bottom: 20px;
 		margin-top: 20px;
+
+		> div.LineHeader {
+			background: linear-gradient(rgba(8, 166, 175, 0.1), transparent);
+			pointer-events: none;
+
+			> div.Icon {
+				opacity: 0;
+				pointer-events: none;
+			}
+			> div.Label {
+				.label-text,
+				.detail-text {
+					pointer-events: all;
+					vertical-align: middle;
+				}
+
+				.label-text {
+					white-space: normal;
+				}
+
+				.other-information {
+					display: none;
+				}
+			}
+
+			> div {
+				&.ExpandControl,
+				&.OtherControl,
+				&.OtherControlLeft {
+					min-width: 10rem;
+					visibility: hidden;
+				}
+
+				&.ExpandControl > a,
+				&.ToggleActions > a {
+					display: block;
+					height: 4.167rem;
+					padding: 0.8333rem;
+					text-align: right;
+				}
+				&.Icon {
+					display: none;
+
+					+ .Label {
+						padding-left: 20px;
+					}
+				}
+
+				&.Label .detail-text {
+					display: block;
+					margin: 0;
+					max-width: 70% !important;
+				}
+			}
+		}
+
+		&.GreyedOut {
+			background-color: #fff;
+
+			> div.LineHeader {
+				background-color: transparent;
+			}
+		}
+
+		> div.ExpandableContent {
+			background-color: #fff;
+			display: block;
+			height: 100%;
+			padding: 20px 10px;
+		}
 	}
 
 	&.WithBorder.First.Active {
@@ -29,14 +99,22 @@ div.SSD_ListLine {
 	&.GreyedOut {
 		background-color: transparent;
 		border: 1px solid #ebebeb;
+
+		> div.LineHeader {
+			background-color: #f5f5f5;
+			> div {
+				&.OtherControl,
+				&.OtherControlLeft {
+					cursor: default;
+					font-size: 1.1rem;
+					padding: 12px;
+				}
+			}
+		}
 	}
 
 	&.NoControls.GreyedOut.WithBorder {
 		border: 1px solid #ebebeb;
-	}
-
-	&.Active.GreyedOut {
-		background-color: #fff;
 	}
 
 	&.GreaterMarginBottom,
@@ -44,26 +122,74 @@ div.SSD_ListLine {
 		margin-bottom: 30px;
 	}
 
-	&.GreyedOut > div.LineHeader {
-		background-color: #f5f5f5;
-	}
-
-	&.Active.GreyedOut > div.LineHeader {
-		background-color: transparent;
-	}
-
-	&.GreyedOut > div.LineHeader > div {
-		&.OtherControl,
-		&.OtherControlLeft {
-			cursor: default;
-			font-size: 1.1rem;
-			padding: 12px;
-		}
-	}
-
 	> div.LineHeader {
 		display: table;
 		width: 100%;
+		> div:empty {
+			display: none;
+		}
+		> div.Label {
+			span[description],
+			div[description] {
+				color: #7c7f7f;
+			}
+		}
+		> div {
+			&.ExpandControl > a,
+			&.ToggleActions > a {
+				display: block;
+				height: 4.167rem;
+				padding: 0.8333rem;
+			}
+
+			&.Label {
+				color: #0c1d22;
+				font-size: 1.4rem;
+				padding: 5px;
+				white-space: normal;
+				width: 73%;
+
+				span.Heading3 {
+					display: inline;
+				}
+			}
+
+			&.Icon:empty + div.Label {
+				padding-left: 10px;
+				width: 76%;
+			}
+			&.ExpandControl > a {
+				padding-right: 0;
+			}
+
+			&:nth-child(3) {
+				/*   width: 27%;
+			  float:right;
+			  height: 100%;*/
+				line-height: 32px;
+
+				.IconVertical {
+					line-height: 20px;
+				}
+			}
+
+			&.Icon {
+				&:empty {
+					display: none;
+				}
+
+				> a {
+					display: block;
+					height: 4.16rem;
+					text-align: center;
+				}
+			}
+		}
+		> div.Icon {
+			> div:empty {
+				width: 50px;
+			}
+		}
 
 		/*height: 4.167rem;*/
 	}
@@ -73,29 +199,11 @@ div.SSD_ListLine {
 		z-index: 1;
 	}
 
-	&.Active > div.LineHeader {
-		background: linear-gradient(rgba(8, 166, 175, 0.1), transparent);
-		pointer-events: none;
-	}
-
 	&.Disabled > div.LineHeader,
 	&:not(.Active):hover > div.LineHeader {
 		background-color: #ecf6f8;
 	}
-}
 
-// div.SSD_ListLine:not(.Active):not(.NoControls):hover {
-//   background-color: #E6F3F5;
-// }
-
-.KeyboardNav .SSD-List {
-	span.SSD_ListRecords > span.focus div.LineHeader,
-	.SSD_ListLine.ShowMore.focus > div.LineHeader {
-		background-color: #ecf6f8;
-	}
-}
-
-div.SSD_ListLine {
 	&.Disabled > div.LineHeader > div {
 		&.Label,
 		&.OtherControl,
@@ -153,14 +261,6 @@ div.SSD_ListLine {
 				width: 100%;
 			}
 		}
-	}
-
-	&.Active > div.LineHeader > div.Icon {
-		opacity: 0;
-		pointer-events: none;
-	}
-
-	> div.LineHeader > div {
 		&.Icon:empty {
 			display: none;
 		}
@@ -179,10 +279,90 @@ div.SSD_ListLine {
 			padding-left: 10px;
 		}
 	}
+
+	> div.ExpandableContent {
+		display: none;
+		.iframe-loading {
+			margin-top: 4.167rem;
+		}
+	}
+
+	&.SSD_ListLine-Iframe > div.ExpandableContent {
+		background-color: #fff;
+		position: relative;
+		z-index: 0;
+	}
 }
 
-div.SSD_ListLine > div.LineHeader > div:empty {
-	display: none;
+.SSD_ListLine {
+	.InlineMenu-Wrapper iframe {
+		height: 100%;
+		width: 100%;
+	}
+	.Label {
+		&.Clickable .detail-text.MultiMarginLeft10.Text_Size14 {
+			display: block;
+			margin: 0;
+			width: 100%;
+		}
+
+		.detail-text:empty {
+			display: none;
+		}
+	}
+}
+
+.KeyboardNav .SSD-List {
+	span.SSD_ListRecords > span.focus div.LineHeader,
+	.SSD_ListLine.ShowMore.focus > div.LineHeader {
+		background-color: #ecf6f8;
+	}
+}
+
+.label-text .CareList {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 700px;
+}
+
+.LineHeader .OtherControl .labelforStyle {
+	padding-left: 5px;
+}
+
+.OtherControl {
+	padding: 0;
+}
+
+.rtl div.SSD_ListLine > div.LineHeader > div.Icon:empty + div.Label {
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+.HospitalizationPlan_Content__Cards
+	.SSD_ListLine.Active
+	> div.LineHeader
+	> div.Label
+	.label-text {
+	max-width: 60%;
+}
+
+.SectionTitles.Area tr td {
+	width: 100%;
+}
+.template-item .FormVertical {
+	display: table;
+
+	display: initial;
+
+	.VerticalInputLabel {
+		display: table-cell;
+
+		+ div {
+			display: table-cell;
+			padding-left: 5px;
+		}
+	}
 }
 
 @media (max-width: 1368px) {
@@ -198,374 +378,9 @@ div.SSD_ListLine > div.LineHeader > div:empty {
 	}
 }
 
-.rtl div.SSD_ListLine > div.LineHeader > div.Icon:empty + div.Label {
-	padding-left: 0;
-	padding-right: 10px;
-}
-
-div.SSD_ListLine {
-	> div.LineHeader > div.Label {
-		span[description],
-		div[description] {
-			color: #7c7f7f;
-		}
-	}
-
-	&.Active > div.LineHeader > div.Label {
-		.label-text,
-		.detail-text {
-			pointer-events: all;
-			vertical-align: middle;
-		}
-	}
-}
-
-.label-text .CareList {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	width: 700px;
-}
-
-/*Wrap the text */
-
-div.SSD_ListLine {
-	&.Active {
-		> div.LineHeader > div.Label {
-			.label-text {
-				white-space: normal;
-			}
-
-			.other-information {
-				display: none;
-			}
-		}
-
-		> div.LineHeader > div {
-			&.ExpandControl,
-			&.OtherControl,
-			&.OtherControlLeft {
-				min-width: 10rem;
-				visibility: hidden;
-			}
-		}
-	}
-
-	> div.LineHeader > div {
-		&.ExpandControl > a,
-		&.ToggleActions > a {
-			display: block;
-			height: 4.167rem;
-			padding: 0.8333rem;
-		}
-	}
-
-	> div.ExpandableContent {
-		display: none;
-	}
-
-	&.SSD_ListLine-Iframe > div.ExpandableContent {
-		background-color: #fff;
-		position: relative;
-		z-index: 0;
-	}
-
-	&.Active > div.ExpandableContent {
-		background-color: #fff;
-		display: block;
-		height: 100%;
-		padding: 20px 10px;
-	}
-}
-
-/*
-  div.SSD_ListLine > div.LineHeader > div.OtherControlLeft,
-  div.SSD_ListLine.BigOtherControl > div.LineHeader > div.OtherControl {
-	width: auto;
-  }*/
-
-/* HELP CLASSES */
-div.SSD_ListLine>div.ExpandableContent .iframe-loading {
-  margin-top: 4.167rem;
-}
-
-	.LineHeader .OtherControl .labelforStyle {
-		padding-left: 5px;
-	}
-}
-
-/* Fix 31/01/18*/
-
-/* Fix 02/02/18*/
-
-.SSD_ListLine .InlineMenu-Wrapper iframe {
-	height: 100%;
-	width: 100%;
-}
-
-.SectionTitles.Area tr td {
-	width: 100%;
-}
-
-/*Templates Align*/
-
-.template-item .FormVertical {
-	display: table;
-
-	display: initial;
-
-	.VerticalInputLabel {
-		display: table-cell;
-
-		+ div {
-			display: table-cell;
-			padding-left: 5px;
-		}
-	}
-}
-
-.OtherControl {
-	padding: 0;
-}
-
-div.SSD_ListLine {
-	> div.LineHeader > div {
-		&.ExpandControl > a {
-			padding-right: 0;
-		}
-
-		&:nth-child(3) {
-			/*   width: 27%;
-		  float:right;
-		  height: 100%;*/
-			line-height: 32px;
-
-			.IconVertical {
-				line-height: 20px;
-			}
-		}
-
-		&.Icon {
-			&:empty {
-				display: none;
-			}
-
-			> a {
-				display: block;
-				height: 4.16rem;
-				text-align: center;
-			}
-		}
-	}
-
-	&.Active > div.LineHeader > div.Icon {
-		opacity: 0;
-		pointer-events: none;
-	}
-
-	> div.LineHeader > div {
-		&.Label {
-			color: #0c1d22;
-			font-size: 1.4rem;
-			padding: 5px;
-			white-space: normal;
-			width: 73%;
-
-			span.Heading3 {
-				display: inline;
-			}
-		}
-
-		&.Icon:empty + div.Label {
-			padding-left: 10px;
-			width: 76%;
-		}
-	}
-}
-
-/**** added more to align****/
-
-/*the code above doesnt work for icons, this will overwrite*/
-
-/**********************SOMOE IMPROVEMENTS TO MAKE UPDATE***************************************************/
-
-/*
-		SSD_ListLine webblock
-  */
-
-@media (max-width: 1368px) {
-	div.SSD_ListLine > div.LineHeader > div.Label {
-		color: #0c1d22;
-		font-size: 1.2rem;
-		line-height: 18px;
-		padding: 12px;
-	}
-}
-
-.rtl div.SSD_ListLine > div.LineHeader > div.Icon:empty + div.Label {
-	padding-left: 0;
-	padding-right: 10px;
-}
-
-div.SSD_ListLine {
-	> div.LineHeader > div.Label {
-		span[description],
-		div[description] {
-			color: #7c7f7f;
-		}
-	}
-
-	&.Active > div.LineHeader > div.Label {
-		.label-text,
-		.detail-text {
-			pointer-events: all;
-			vertical-align: middle;
-		}
-
-		.label-text {
-			max-width: 75%;
-
-			/*75%;*/
-			white-space: normal;
-
-			/*white-space: nowrap;
-		  text-overflow: ellipsis;
-		  overflow: hidden;*/
-		}
-	}
-}
-
-/*Wrap the text */
-/*DE63990 talked with UI/UX*/
-
-/*Inside HospitPlan*/
-
-.HospitalizationPlan_Content__Cards
-	.SSD_ListLine.Active
-	> div.LineHeader
-	> div.Label
-	.label-text {
-	max-width: 60%;
-}
-
-div.SSD_ListLine {
-	&.Active > div.LineHeader > div.Label .other-information {
-		display: none;
-	}
-
-	> div.LineHeader > div {
-		&.ExpandControl > a,
-		&.ToggleActions > a {
-			display: block;
-			height: 4.167rem;
-			padding: 0.8333rem;
-			text-align: right;
-		}
-	}
-}
-
-.FA div.SSD_ListLine > div.LineHeader > div.ExpandControl > a,
-.AR div.SSD_ListLine > div.LineHeader > div.ExpandControl > a {
-	text-align: left;
-}
-
-div.SSD_ListLine {
-	&.Active > div.LineHeader > div {
-		&.ExpandControl,
-		&.OtherControl,
-		&.OtherControlLeft {
-			min-width: 10rem;
-			visibility: hidden;
-		}
-	}
-
-	> div.ExpandableContent {
-		display: none;
-	}
-
-	&.SSD_ListLine-Iframe > div.ExpandableContent {
-		background-color: #fff;
-		position: relative;
-		z-index: 0;
-	}
-
-	&.Active > div.ExpandableContent {
-		background-color: #fff;
-		display: block;
-		height: 100%;
-	}
-}
-
-div.SSD_ListLine > div.ExpandableContent .iframe-loading {
-	margin-top: 4.167rem;
-}
-
-/* Fix 31/01/18*/
-
-/* Fix 02/02/18*/
-
-.SSD_ListLine .InlineMenu-Wrapper iframe {
-	/*    width: 100% !important;
-	  /*height: 100vh !important;*/
-	/*  height:100% !important;*/
-
-	height: 100%;
-	width: 100%;
-}
-
-.SectionTitles.Area tr td {
-	&:first-child {
-		/*  white-space:normal !important ;*/
-	}
-
-	width: 100%;
-}
-
-/*Templates Align*/
-
-.template-item .FormVertical {
-	display: table;
-
-	display: initial;
-
-	.VerticalInputLabel {
-		display: table-cell;
-
-		+ div {
-			display: table-cell;
-			padding-left: 5px;
-		}
-	}
-}
-
-div.SSD_ListLine > div.LineHeader > div.Icon > div:empty {
-	width: 50px;
-}
-
-.SSD_ListLine .Label {
-	&.Clickable .detail-text.MultiMarginLeft10.Text_Size14 {
-		display: block;
-		margin: 0;
-		width: 100%;
-	}
-
-	.detail-text:empty {
-		display: none;
-	}
-}
-
-div.SSD_ListLine.Active > div.LineHeader > div {
-	&.Icon {
-		display: none;
-
-		+ .Label {
-			padding-left: 20px;
-		}
-	}
-
-	&.Label .detail-text {
-		display: block;
-		margin: 0;
-		max-width: 70% !important;
+.FA,
+.AR {
+	div.SSD_ListLine > div.LineHeader > div.ExpandControl > a {
+		text-align: left;
 	}
 }
