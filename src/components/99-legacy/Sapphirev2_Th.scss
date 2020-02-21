@@ -16182,60 +16182,60 @@ a.Button.Icon:hover {
 /* 9.72 Sapphire Patterns > Custom_Patterns > WardTotalCounter *********/
 /*-------------------------------------------------------------------------------------*/
 
-.WardCounterAll,
-.WardCounterOccupied,
-.WardCounterVacant,
-.WardCounterReserved,
-.WardCounterPlanned {
-  font-size: 20px;
-  font-weight: 600;
-  padding-left: 10px;
-}
+// .WardCounterAll,
+// .WardCounterOccupied,
+// .WardCounterVacant,
+// .WardCounterReserved,
+// .WardCounterPlanned {
+//   font-size: 20px;
+//   font-weight: 600;
+//   padding-left: 10px;
+// }
 
-.FA .WardCounterAll,
-.AR .WardCounterAll {
-  padding-left: 10px;
-}
+// .FA .WardCounterAll,
+// .AR .WardCounterAll {
+//   padding-left: 10px;
+// }
 
-.WardState {
-  border-right: 1px solid #e0e1e3;
-  font-size: 14px;
-  font-weight: 400;
-  margin-left: 5px;
-  padding-right: 10px;
-  vertical-align: middle;
-}
+// .WardState {
+//   border-right: 1px solid #e0e1e3;
+//   font-size: 14px;
+//   font-weight: 400;
+//   margin-left: 5px;
+//   padding-right: 10px;
+//   vertical-align: middle;
+// }
 
-.WardCounterPlanned .WardState {
-  border-right: none;
-}
+// .WardCounterPlanned .WardState {
+//   border-right: none;
+// }
 
-.FA .WardState,
-.AR .WardState {
-  border-left: 1px solid #e0e1e3;
-  border-right: 0;
-  padding-left: 10px;
-}
+// .FA .WardState,
+// .AR .WardState {
+//   border-left: 1px solid #e0e1e3;
+//   border-right: 0;
+//   padding-left: 10px;
+// }
 
-.WardCounterOccupied .WardNumber {
-  border-top: 3px solid #a8a8a8;
-  color: #b1b1b1;
-}
+// .WardCounterOccupied .WardNumber {
+//   border-top: 3px solid #a8a8a8;
+//   color: #b1b1b1;
+// }
 
-.WardCounterVacant .WardNumber {
-  border-top: 3px solid #9dbb66;
-  color: #9dbb66;
-}
+// .WardCounterVacant .WardNumber {
+//   border-top: 3px solid #9dbb66;
+//   color: #9dbb66;
+// }
 
-.WardCounterReserved .WardNumber {
-  border-top: 3px solid #b9b740;
-  color: #b9b740;
-}
+// .WardCounterReserved .WardNumber {
+//   border-top: 3px solid #b9b740;
+//   color: #b9b740;
+// }
 
-.WardCounterPlanned .WardNumber {
-  border-top: 3px solid #758792;
-  color: #758792;
-}
+// .WardCounterPlanned .WardNumber {
+//   border-top: 3px solid #758792;
+//   color: #758792;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.73 Sapphire Patterns > ExpandableExtended > Section Expandable New *******/
