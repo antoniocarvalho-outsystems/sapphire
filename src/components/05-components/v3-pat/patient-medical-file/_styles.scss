@@ -1,71 +1,76 @@
 .PatientMedicalFile {
-  background-color: $gray-lighter;
-  border: none;
-  border-radius: 2px;
-  height: 100%;
-  height: 50px;
-}
+	background-color: $gray-lighter;
+	border-radius: 2px;
+	height: 100%;
+	height: 50px;
 
-.PatientMedicalFile>span.icon {
-  color: #c9d8dd;
-  font-size: 24px;
-  line-height: 42px;
-  padding-left: 10px;
-}
+	.Multiple & {
+		& .FileInfo {
+			line-height: 32px;
+		}
+	}
 
-.FA .PatientMedicalFile>span.icon,
-.AR .PatientMedicalFile>span.icon {
-  padding-left: 0;
-  padding-right: 10px;
-}
+	.med-file-requested & {
+		& > div:not(:last-of-type) {
+			height: 45px;
+		}
+	}
 
-.PatientMedicalFile>div:not(.RequestFiles-Menu) {
-  padding: 5px 10px;
-}
+	> span.icon {
+		color: $regular-grey;
+		font-size: 1.429em;
+		line-height: 50px;
+		padding-left: 10px;
+	}
 
-.PatientMedicalFile>div:not(:last-of-type) {
-  border-right: 1px solid #c9d8dd;
-  height: 100%;
-  line-height: 16px;
-}
+	> div:not(.RequestFiles-Menu) {
+		padding: 0 5px 0 10px;
+	}
 
-.FA .PatientMedicalFile>div:not(:last-of-type),
-.AR .PatientMedicalFile>div:not(:last-of-type) {
-  border-left: 1px solid #c9d8dd;
-  border-right: none;
-}
+	> div:not(:last-of-type) {
+		height: 100%;
+		line-height: 16px;
+	}
 
-.PatientMedicalFile>.FileInfo>div>.FileNumber,
-.PatientMedicalFile>.FileInfo>div>.FileNumber span {
-  font-family: 'globeregular';
-  font-weight: bold;
-}
+	> .FileInfo > div > .FileNumber {
+		&,
+		span {
+			font-family: $font-family-bold;
+			font-size: 1em;
+		}
+	}
 
-.PatientMedicalFile>.RequestFiles-Menu div[button-style] {
-  color: #08a6af;
-  font-size: 12px;
-  line-height: 24px;
-  padding: 10px;
+	> .RequestFiles-Menu div[button-style] {
+		@include flex-center-total;
+
+		height: 50px;
+		transform: rotate(180deg);
+		width: 30px;
+
+		.icon {
+			@include arrow-down-simple;
+		}
+	}
 }
 
 .MFile {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 .MFileSecond {
-  font-size: 16px;
+	font-size: 1.143em;
 }
 
-.Multiple .PatientMedicalFile .FileInfo {
-  line-height: 32px;
-}
+.AR,
+.FA {
+	.PatientMedicalFile {
+		> span.icon {
+			padding-left: 0;
+			padding-right: 10px;
+		}
 
-/* Line height of icon on medical file block when multiple file number */
-.Multiple .PatientMedicalFile>span.icon {
-  line-height: 45px;
-}
-
-/* Height of requested status on medical file block when single file number */
-.med-file-requested .PatientMedicalFile>div:not(:last-of-type) {
-  height: 45px;
+		> div:not(.RequestFiles-Menu) {
+			padding: 0 10px 0 5px;
+		}
+	}
 }

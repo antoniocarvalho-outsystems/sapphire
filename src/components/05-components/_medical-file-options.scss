@@ -1,0 +1,95 @@
+.MedicalFileOptionsLine {
+	display: flex;
+	padding: 5px 10px;
+
+	&.FirstLine {
+		padding-top: 0;
+	}
+
+	&.LastLine {
+		border-bottom: none;
+		padding-bottom: 15px;
+	}
+
+	&_option {
+		cursor: pointer;
+
+		.iconBorder {
+			border-left: 1px solid $light-grey;
+		}
+	}
+
+	&_options {
+		.IconVertical {
+			padding-right: 0;
+		}
+	}
+
+	> div {
+		display: table-cell;
+		padding: 5px;
+		text-align: right;
+		vertical-align: middle;
+
+		&:first-child {
+			flex: 1;
+		}
+
+		&:not(:first-child) {
+			text-align: center;
+			width: 60px;
+		}
+
+		> .VolumeName {
+			color: $dark-grey;
+			font-size: 0.857em;
+			line-height: 17px;
+		}
+	}
+
+	> .NoBorder {
+		border: none;
+	}
+
+	+ .Locations {
+		background-color: $body-color;
+		padding: 5px;
+	}
+}
+
+.MedicalFileOptions {
+	> div:first-child {
+		padding: 15px 20px;
+		text-align: center;
+
+		.EditFileNumber {
+			color: $regular-beta;
+			font-size: 1.143em;
+			margin-left: 10px;
+		}
+	}
+
+	> div:last-child {
+		border-top: 1px solid $light-grey;
+		padding: 15px 30px;
+		text-align: center;
+	}
+
+	> .VolumeList {
+		max-height: 180px;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+}
+
+.AR,
+.FA {
+	.MedicalFileOptions {
+		> div:first-child {
+			.EditFileNumber {
+				margin-left: 0;
+				margin-right: 10px;
+			}
+		}
+	}
+}

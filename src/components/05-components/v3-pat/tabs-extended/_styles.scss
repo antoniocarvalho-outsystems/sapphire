@@ -153,10 +153,8 @@
 
 	&_body {
 		background-color: $regular-white;
-		border-bottom: 1px solid $light-grey;
-		border-left: 1px solid $light-grey;
-		border-right: 1px solid $light-grey;
-		border-top: none;
+		border: 1px solid $light-grey;
+		margin-top: -1px !important;
 		padding: 20px;
 		position: initial;
 	}
@@ -165,15 +163,14 @@
 		background-color: transparent;
 		border-bottom: 0;
 		border-left: 0;
-		border-top: 2px solid transparent;
-		color: $dark-grey;
+		border-top: 3px solid transparent;
+		color: $regular-beta;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: bold;
+		font-family: $font-family-bold;
 		line-height: 37px;
-		margin-right: 10px;
 		min-width: 100px;
-		padding: 0;
+		padding: 0 15px;
 		position: relative;
 		text-align: center;
 
@@ -181,16 +178,12 @@
 			background: transparent;
 		}
 
-		&:not(:first-child) {
-			margin: 0 10px;
-		}
-
 		&.active {
 			border-bottom: $regular-white;
 			border-left: 1px solid $light-grey;
 			border-right: 1px solid $light-grey;
-			border-top: 2px solid $regular-alpha;
-			color: $dark-grey;
+			border-top: 3px solid $regular-alpha;
+			color: $mid-dark-grey;
 			cursor: default;
 			font-weight: 500;
 			position: relative;
