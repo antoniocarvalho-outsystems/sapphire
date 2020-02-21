@@ -18261,79 +18261,79 @@ canvas.Sketch_Canvas {
 /* 9.85 Sapphire Patterns > Panel > ConfirmationPanel *********/
 /*-------------------------------------------------------------------------------------*/
 
-.PanelOpened {
-	overflow: scroll;
-	position: static;
-}
+// .PanelOpened {
+// 	overflow: scroll;
+// 	position: static;
+// }
 
-.Panel.ConfirmWB {
-	display: none;
-	position: absolute;
-}
+// .Panel.ConfirmWB {
+// 	display: none;
+// 	position: absolute;
+// }
 
-.PanelBackground.ConfirmWB {
-	background-image: -webkit-radial-gradient(
-		50% 100%,
-		circle cover,
-		rgba(0, 0, 0, 0.05),
-		rgba(0, 0, 0, 0.2)
-	);
-	background-image: radial-gradient(
-		circle at 50% 100%,
-		rgba(0, 0, 0, 0.05),
-		rgba(0, 0, 0, 0.2)
-	);
-	bottom: 0;
-	color: #252525;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
+// .PanelBackground.ConfirmWB {
+// 	background-image: -webkit-radial-gradient(
+// 		50% 100%,
+// 		circle cover,
+// 		rgba(0, 0, 0, 0.05),
+// 		rgba(0, 0, 0, 0.2)
+// 	);
+// 	background-image: radial-gradient(
+// 		circle at 50% 100%,
+// 		rgba(0, 0, 0, 0.05),
+// 		rgba(0, 0, 0, 0.2)
+// 	);
+// 	bottom: 0;
+// 	color: #252525;
+// 	left: 0;
+// 	position: fixed;
+// 	right: 0;
+// 	top: 0;
 
-	-moz-transition: all 0.14s ease;
+// 	-moz-transition: all 0.14s ease;
 
-	-webkit-transition: all 0.14s ease;
-	transition: all 0.14s ease;
-	z-index: 20;
-}
+// 	-webkit-transition: all 0.14s ease;
+// 	transition: all 0.14s ease;
+// 	z-index: 20;
+// }
 
-.PanelContainer.ConfirmWB {
-	background: white;
-	border: solid 1px #e4e4e4;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-	display: none;
-	left: 50%;
-	max-width: 450px;
-	padding: 30px 20px;
-	position: fixed;
-	text-align: center;
-	top: 50%;
+// .PanelContainer.ConfirmWB {
+// 	background: white;
+// 	border: solid 1px #e4e4e4;
+// 	border-top-left-radius: 2px;
+// 	border-top-right-radius: 2px;
+// 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+// 	display: none;
+// 	left: 50%;
+// 	max-width: 450px;
+// 	padding: 30px 20px;
+// 	position: fixed;
+// 	text-align: center;
+// 	top: 50%;
 
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	width: 100%;
-	z-index: 51;
-}
+// 	-webkit-transform: translate(-50%, -50%);
+// 	-moz-transform: translate(-50%, -50%);
+// 	-ms-transform: translate(-50%, -50%);
+// 	-o-transform: translate(-50%, -50%);
+// 	transform: translate(-50%, -50%);
+// 	width: 100%;
+// 	z-index: 51;
+// }
 
-.PanelContainer.ConfirmWB .PanelTitle {
-	color: #005675;
-	font-family: globeregular;
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
+// .PanelContainer.ConfirmWB .PanelTitle {
+// 	color: #005675;
+// 	font-family: globeregular;
+// 	font-size: 18px;
+// 	font-weight: bold;
+// 	margin-bottom: 20px;
+// }
 
-.PanelContainer.ConfirmWB .PanelMessage {
-	font-size: 13px;
-	line-height: normal;
-	margin-bottom: 30px;
-	white-space: normal;
-}
+// .PanelContainer.ConfirmWB .PanelMessage {
+// 	font-size: 13px;
+// 	line-height: normal;
+// 	margin-bottom: 30px;
+// 	white-space: normal;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.86 Sapphire Patterns > Panel > ConfirmationPanel3Options *********/

@@ -48,7 +48,7 @@
 	}
 }
 
-a.Button,
+.LayoutBase a.Button,
 a.Button.IsDefault {
 	@include default-button;
 
@@ -59,6 +59,7 @@ a.Button.IsDefault {
 	&:active,
 	&:hover {
 		background-color: $primary-light;
+		border: none;
 	}
 
 	&:disabled,
