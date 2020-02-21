@@ -10,11 +10,7 @@
 .PanelBackground {
 	-servicestudio-position: static;
 	&.ConfirmWB {
-		background-image: radial-gradient(
-			circle at 50% 100%,
-			rgba(0, 0, 0, 0.05),
-			rgba(0, 0, 0, 0.2)
-		);
+		background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
 		bottom: 0;
 		color: #252525;
 		left: 0;
