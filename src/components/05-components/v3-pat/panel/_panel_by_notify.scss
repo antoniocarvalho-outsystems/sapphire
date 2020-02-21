@@ -3,9 +3,9 @@
 	position: static;
 }
 
-.Panel.ConfirmWB {
+.Panel {
 	display: none;
-	position: absolute;
+	position: relative;
 }
 .PanelBackground {
 	&.ConfirmWB {
@@ -27,17 +27,17 @@
 }
 
 .PanelContainer {
-	&.ConfirmWB {
+	&.Confirm {
 		-servicestudio--webkit-transform: translateX(0%);
-		background: $sapphire-white;
-		border: solid 1px $light-grey;
+		background: white;
+		border: solid 1px #e4e4e4;
 		border-top-left-radius: 2px;
 		border-top-right-radius: 2px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 		-servicestudio-display: block;
 		display: none;
 		left: 50%;
-		max-width: 450px;
+		max-width: 400px;
 		padding: 30px 20px;
 		-servicestudio-position: static;
 		position: fixed;
@@ -46,17 +46,16 @@
 		transform: translate(-50%, -50%);
 		width: 100%;
 		z-index: 51;
-
 		.PanelTitle {
-			color: $regular-beta;
-			font-family: $font-family-bold;
-			font-size: $font-size-heading2;
+			color: #005675;
+			font-family: 'globeregular';
+			font-size: 18px;
+			font-weight: bold;
 			margin-bottom: 20px;
 		}
-
 		.PanelMessage {
-			font-size: $font-size-normal;
-			line-height: normal;
+			color: #252525;
+			font-size: 13px;
 			margin-bottom: 30px;
 		}
 	}
