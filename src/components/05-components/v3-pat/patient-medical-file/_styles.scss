@@ -1,3 +1,7 @@
+$PatientMedicalFile-color-active: $regular-alpha;
+
+
+
 .PatientMedicalFile {
   background-color: $gray-lighter;
   border: none;
@@ -7,8 +11,8 @@
 }
 
 .PatientMedicalFile>span.icon {
-  color: #c9d8dd;
-  font-size: 24px;
+  color: $sapphire-color-text-regular;
+  font-size: $font-size-heading2;
   line-height: 42px;
   padding-left: 10px;
 }
@@ -24,25 +28,24 @@
 }
 
 .PatientMedicalFile>div:not(:last-of-type) {
-  border-right: 1px solid #c9d8dd;
+  border-right: none;
   height: 100%;
   line-height: 16px;
 }
 
 .FA .PatientMedicalFile>div:not(:last-of-type),
 .AR .PatientMedicalFile>div:not(:last-of-type) {
-  border-left: 1px solid #c9d8dd;
+  border-left: 1px solid $regular-grey;
   border-right: none;
 }
 
 .PatientMedicalFile>.FileInfo>div>.FileNumber,
 .PatientMedicalFile>.FileInfo>div>.FileNumber span {
-  font-family: 'globeregular';
-  font-weight: bold;
+  font-family: $font-family-bold;
 }
 
 .PatientMedicalFile>.RequestFiles-Menu div[button-style] {
-  color: #08a6af;
+  color: $PatientMedicalFile-color-active;
   font-size: 12px;
   line-height: 24px;
   padding: 10px;
@@ -60,12 +63,10 @@
   line-height: 32px;
 }
 
-/* Line height of icon on medical file block when multiple file number */
 .Multiple .PatientMedicalFile>span.icon {
   line-height: 45px;
 }
 
-/* Height of requested status on medical file block when single file number */
 .med-file-requested .PatientMedicalFile>div:not(:last-of-type) {
   height: 45px;
 }
