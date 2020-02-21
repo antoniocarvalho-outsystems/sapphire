@@ -1,0 +1,19 @@
+.phone .pika-single:not(.is-bound) .pika-next {
+	right: 10px;
+}
+
+.phone .pika-single:not(.is-bound) .pika-prev {
+	left: 10px;
+}
+
+.phone .pika-single:not(.is-bound) .Calendar-navBtn {
+	width: 50px;
+}
+
+.phone .pika-prev:after {
+	left: 20px;
+}
+
+.phone .pika-next:after {
+	left: -20px;
+}
