@@ -327,18 +327,24 @@ $font-size-11px: 0.7857em;
 }
 
 .ISidebar-content-panel-content {
+  @include component-scroll(true, 0);
+
+
+  //@include component-scroll(true, 0);
+  // @include component-scroll-root;
+  // @include component-scroll(true, 0);
   height: calc(100vh - 150px);
   overflow: auto;
 }
 
-.ISidebar-content-panel-content::-webkit-scrollbar {
-  background-color: transparent;
-  width: 5px;
-}
+// .ISidebar-content-panel-content::-webkit-scrollbar {
+//   background-color: transparent;
+//   width: 5px;
+// }
 
-.ISidebar-content-panel-content::-webkit-scrollbar-thumb {
-  background-color: #08a6af;
-}
+// .ISidebar-content-panel-content::-webkit-scrollbar-thumb {
+//   background-color: #08a6af;
+// }
 
 .ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider>div {
   width: 100%;

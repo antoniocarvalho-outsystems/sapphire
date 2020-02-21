@@ -12,6 +12,26 @@
   &-names {
     margin-left: 10px;
     white-space: nowrap;
+
+    .HeaderIdentification-primary {
+      align-items: center;
+      display: flex;
+
+      &-name {
+        font-family: 'LatoBold';
+        font-size: 1.5rem;
+
+        .patient-en-fullname span {
+          display: inline-block;
+          max-width: 400px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+
+
   }
 }
 

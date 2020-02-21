@@ -1,0 +1,91 @@
+html > body {
+	background-color: $sapphire-white;
+	overflow-y: hidden;
+}
+
+.PopupGenericFlex {
+	width: 100%;
+}
+
+body .Page.tablet .MainPopup,
+body .Page.desktop .MainPopup {
+	min-width: auto;
+	padding: 0;
+}
+
+.PopupGenericFlex__body {
+	display: flex;
+}
+
+.PopupGenericFlex__header {
+	display: block;
+	padding: 20px 20px 10px 20px;
+}
+
+.PopupGenericFlex__header__text {
+	color: #11455d;
+	width: 100%;
+}
+
+.PopupGenericFlex__header__text__title {
+	margin-bottom: 5px;
+}
+
+.PopupGenericFlex__header__text__subtitle {
+	font-size: $font-size-heading3;
+	line-height: 20px;
+}
+
+.PopupGenericFlex_wrapper {
+	width: 100%;
+}
+
+.PopupGenericFlex__intro {
+	padding: 10px 20px;
+}
+
+.PopupGenericFlex__body {
+	display: flex;
+	padding: 20px 20px;
+}
+
+.PopupGenericFlex.SmallPopup .PopupGenericFlex__body__sidebar {
+	display: none;
+}
+
+.PopupGenericFlex__body__sidebar {
+	padding-right: 20px;
+	width: 270px;
+}
+
+.PopupGenericFlex__body__content {
+	overflow-y: scroll; /*CountyPhone*/
+	width: 100%;
+}
+
+.PopupGenericFlex__body__content::-webkit-scrollbar {
+	box-sizing: border-box;
+	height: 7px;
+	width: 7px;
+}
+
+.PopupGenericFlex__body__content::-webkit-scrollbar-track {
+	border-left: 3px solid $sapphire-white;
+	border-right: 3px solid $sapphire-white;
+}
+
+.PopupGenericFlex__body__content::-webkit-scrollbar-thumb {
+	border: 5px #6fcdca solid;
+	border-radius: 9px !important;
+}
+
+.PopupGenericFlex__footer {
+	padding: 10px 20px;
+}
+
+.PopupGenericFlex__body__content > .MinHeightSmall {
+	min-height: 400px;
+}
+.PopupGenericFlex__body__content > .MinHeightMedium {
+	min-height: 500px;
+}

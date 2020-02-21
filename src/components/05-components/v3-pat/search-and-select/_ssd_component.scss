@@ -435,11 +435,13 @@
 // 	text-align: center;
 // 	width: 26px;
 // }
-
+div.SSD_ListLine > div.LineHeader div.List-ToggleButton {
+	margin-right: 12px;
+}
 div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div {
 	height: 100%;
+	margin-right: 12px;
 	width: 100%;
-
 	.icon {
 		background-color: $sapphire-white;
 		border: 1px solid $light-grey;

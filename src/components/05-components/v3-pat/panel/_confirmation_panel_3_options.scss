@@ -1,0 +1,45 @@
+.Panel {
+	-servicestudio-display: block !important;
+	-servicestudio-position: relative !important;
+}
+.PanelBackground {
+	-servicestudio-color: #252525 !important;
+	-servicestudio-display: none !important;
+	-servicestudio-position: relative !important;
+}
+
+.PanelContainer {
+	&.Confirm {
+		-servicestudio-background-color: $sapphire-white;
+		-servicestudio-left: auto;
+		-servicestudio-position: relative !important;
+		-servicestudio-top: auto;
+		-servicestudio-z-index: 0;
+
+		.PanelMessage {
+			font-size: $font-size-normal;
+			margin-bottom: 30px;
+		}
+
+		.PanelActions {
+			.ButtonLink {
+				&.Is_Default {
+					padding: 0;
+				}
+			}
+		}
+	}
+
+	.PanelTitle {
+		.PanelContainer {
+			&.Confirm {
+				.PanelTitle {
+					color: $dark-blue;
+					font-family: $font-family-bold;
+					font-size: $font-size-heading3;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

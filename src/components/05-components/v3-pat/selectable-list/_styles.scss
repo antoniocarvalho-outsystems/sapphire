@@ -1,6 +1,18 @@
 .SelectableList {
 	&-EmptyMessage {
-		@include blank-state;
+		align-items: baseline;
+		background-color: transparent;
+		color: $mid-dark-grey;
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 1em;
+		justify-content: center;
+		min-height: 48px;
+		width: 100%;
+
+		> span {
+			display: block;
+		}
 
 		&.NoBorder {
 			border: none;
