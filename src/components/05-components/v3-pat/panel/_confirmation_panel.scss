@@ -8,6 +8,7 @@
 	position: absolute;
 }
 .PanelBackground {
+	-servicestudio-position: static;
 	&.ConfirmWB {
 		background-image: radial-gradient(
 			circle at 50% 100%,
@@ -35,10 +36,12 @@
 		border-top-right-radius: 2px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 		-servicestudio-display: block;
+		-servicestudio-display: block;
 		display: none;
 		left: 50%;
 		max-width: 450px;
 		padding: 30px 20px;
+		-servicestudio-position: static;
 		-servicestudio-position: static;
 		position: fixed;
 		text-align: center;
