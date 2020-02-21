@@ -1,14 +1,14 @@
 div.SSD_ListLine {
-	background-color: #fff;
+	background-color: $sapphire-white;
 	border-bottom: 1px solid #c9cdce;
-	border-top: 0 solid #00bfa5;
+	border-top: 0 solid $regular-alpha;
 	position: relative;
 	-webkit-transition: border 200ms linear, margin 200ms linear;
 	-moz-transition: border 200ms linear, margin 200ms linear;
 	transition: border 200ms linear, margin 200ms linear;
 
 	&.WithBorder {
-		border: 1px solid #00bfa5;
+		border: 1px solid $regular-alpha;
 		margin-top: -1px;
 
 		&.First {
@@ -17,12 +17,11 @@ div.SSD_ListLine {
 	}
 
 	&.Active {
-		border-top: 2px solid #00bfa5;
+		border-top: 2px solid $regular-alpha;
 		margin-bottom: 20px;
 		margin-top: 20px;
 
 		> div.LineHeader {
-			background: linear-gradient(rgba(8, 166, 175, 0.1), transparent);
 			pointer-events: none;
 
 			> div.Icon {
@@ -77,7 +76,7 @@ div.SSD_ListLine {
 		}
 
 		&.GreyedOut {
-			background-color: #fff;
+			background-color: $sapphire-white;
 
 			> div.LineHeader {
 				background-color: transparent;
@@ -85,7 +84,7 @@ div.SSD_ListLine {
 		}
 
 		> div.ExpandableContent {
-			background-color: #fff;
+			background-color: $sapphire-white;
 			display: block;
 			height: 100%;
 			padding: 20px 10px;
@@ -288,7 +287,7 @@ div.SSD_ListLine {
 	}
 
 	&.SSD_ListLine-Iframe > div.ExpandableContent {
-		background-color: #fff;
+		background-color: $sapphire-white;
 		position: relative;
 		z-index: 0;
 	}
