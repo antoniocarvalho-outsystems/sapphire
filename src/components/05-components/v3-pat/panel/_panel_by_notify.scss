@@ -47,16 +47,19 @@
 		width: 100%;
 		z-index: 51;
 		.PanelTitle {
-			color: #005675;
-			font-family: 'globeregular';
-			font-size: 18px;
-			font-weight: bold;
+			color: $regular-beta;
+			font-family: $font-family-bold;
+			font-size: $font-size-heading2;
 			margin-bottom: 20px;
 		}
+
 		.PanelMessage {
-			color: #252525;
-			font-size: 13px;
+			font-size: $font-size-normal;
+			line-height: normal;
 			margin-bottom: 30px;
+		}
+		.PanelActions {
+			white-space: nowrap;
 		}
 	}
 }

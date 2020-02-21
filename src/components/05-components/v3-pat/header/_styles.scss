@@ -5,6 +5,7 @@
 
 .SapphireHeader-body {
   align-items: center;
+  border-bottom: solid 1px $sapphire-light-container;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -100,7 +101,7 @@
 }
 
 .SapphireHeader-additional-content {
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px $sapphire-light-container;
   display: none;
   min-height: 50px;
   padding-left: 16px;
