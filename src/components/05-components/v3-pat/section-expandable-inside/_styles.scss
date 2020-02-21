@@ -55,11 +55,6 @@
 		span {
 			@include arrow-down-simple;
 
-			&:after,
-			&:before {
-				content: '';
-			}
-
 			display: block;
 			margin: 0 18px;
 		}

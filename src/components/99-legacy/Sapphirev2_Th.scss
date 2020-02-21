@@ -15532,94 +15532,94 @@ a.Button.Icon:hover {
 /* 9.55 Sapphire Patterns > Custom_Patterns > MedicalFileOptions ***********************/
 /*-------------------------------------------------------------------------------------*/
 
-.MedicalFileOptionsLine {
-	border-bottom: 1px solid #e0e1e3;
-	display: table;
-	padding: 5px 0;
-	width: 100%;
-}
+// .MedicalFileOptionsLine {
+// 	border-bottom: 1px solid #e0e1e3;
+// 	display: table;
+// 	padding: 5px 0;
+// 	width: 100%;
+// }
 
-.MedicalFileOptionsLine:hover {
-	background: #f3f3f3;
-}
+// .MedicalFileOptionsLine:hover {
+// 	background: #f3f3f3;
+// }
 
-.MedicalFileOptionsLine.FirstLine {
-	padding-top: 0;
-}
+// .MedicalFileOptionsLine.FirstLine {
+// 	padding-top: 0;
+// }
 
-.MedicalFileOptionsLine.LastLine {
-	border-bottom: none;
-	padding-bottom: 15px;
-}
+// .MedicalFileOptionsLine.LastLine {
+// 	border-bottom: none;
+// 	padding-bottom: 15px;
+// }
 
-.MedicalFileOptionsLine > div {
-	display: table-cell;
-	padding: 5px;
-	text-align: right;
-	vertical-align: middle;
-}
+// .MedicalFileOptionsLine > div {
+// 	display: table-cell;
+// 	padding: 5px;
+// 	text-align: right;
+// 	vertical-align: middle;
+// }
 
-.MedicalFileOptionsLine > div:not(:first-child) {
-	text-align: center;
-	width: 60px;
-}
+// .MedicalFileOptionsLine > div:not(:first-child) {
+// 	text-align: center;
+// 	width: 60px;
+// }
 
-.FA .MedicalFileOptionsLine > div:not(:first-child),
-.AR .MedicalFileOptionsLine > div:not(:first-child) {
-	border-left: none;
-	border-right: 1px solid #e0e1e3;
-}
+// .FA .MedicalFileOptionsLine > div:not(:first-child),
+// .AR .MedicalFileOptionsLine > div:not(:first-child) {
+// 	border-left: none;
+// 	border-right: 1px solid #e0e1e3;
+// }
 
-.MedicalFileOptionsLine > .NoBorder {
-	border: none;
-}
+// .MedicalFileOptionsLine > .NoBorder {
+// 	border: none;
+// }
 
-.MedicalFileOptionsLine > div > .VolumeName {
-	color: #262525;
-	font-size: 12px;
-	line-height: 17px;
-}
+// .MedicalFileOptionsLine > div > .VolumeName {
+// 	color: #262525;
+// 	font-size: 12px;
+// 	line-height: 17px;
+// }
 
-.MedicalFileOptionsLine + .Locations {
-	background-color: #f3f3f3;
-	border-top: 1px solid #e0e1e3;
-	padding: 5px;
-}
+// .MedicalFileOptionsLine + .Locations {
+// 	background-color: #f3f3f3;
+// 	border-top: 1px solid #e0e1e3;
+// 	padding: 5px;
+// }
 
-.MedicalFileOptions_options .iconBorder {
-	border-left: 1px solid #e0e1e3;
-}
+// .MedicalFileOptions_options .iconBorder {
+// 	border-left: 1px solid #e0e1e3;
+// }
 
-.MedicalFileOptions_options .IconVertical {
-	padding-right: 0;
-}
+// .MedicalFileOptions_options .IconVertical {
+// 	padding-right: 0;
+// }
 
-.MedicalFileOptionsLine_option {
-	cursor: pointer;
-}
+// .MedicalFileOptionsLine_option {
+// 	cursor: pointer;
+// }
 
-.MedicalFileOptions > div:first-child {
-	color: #262525;
-	font-size: 14px;
-	padding: 15px 20px;
-	text-align: center;
-}
+// .MedicalFileOptions > div:first-child {
+// 	color: #262525;
+// 	font-size: 14px;
+// 	padding: 15px 20px;
+// 	text-align: center;
+// }
 
-.MedicalFileOptions > div:first-child .EditFileNumber {
-	color: #08a6af;
-}
+// .MedicalFileOptions > div:first-child .EditFileNumber {
+// 	color: #08a6af;
+// }
 
-.MedicalFileOptions > div:last-child {
-	background: #e0e1e3;
-	padding: 15px 30px;
-	text-align: center;
-}
+// .MedicalFileOptions > div:last-child {
+// 	background: #e0e1e3;
+// 	padding: 15px 30px;
+// 	text-align: center;
+// }
 
-.MedicalFileOptions > .VolumeList {
-	max-height: 180px;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
+// .MedicalFileOptions > .VolumeList {
+// 	max-height: 180px;
+// 	overflow-x: hidden;
+// 	overflow-y: auto;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.56 Sapphire Patterns > Custom_Patterns > MoreDetails ******************************/
@@ -20027,41 +20027,41 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 /*------------------------------------------------------------*/
 /* 9.115 Sapphire Patterns > PopupMenuNotify *********/
 /*------------------------------------------------------------*/
-.popup-wrapper > .popup-menu {
-	background-color: #fff;
-	border: 1px solid #ddd;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
-	-webkit-box-shadow: 0 1px 1px #c5cacd;
-	-moz-box-shadow: 0 1px 1px #c5cacd;
-	box-shadow: 0 1px 1px #c5cacd;
-	position: absolute;
-	z-index: 2;
-	/*top: 70px !important;*/
-}
+// .popup-wrapper > .popup-menu {
+// 	background-color: #fff;
+// 	border: 1px solid #ddd;
+// 	border-bottom-left-radius: 6px;
+// 	border-bottom-right-radius: 6px;
+// 	-webkit-box-shadow: 0 1px 1px #c5cacd;
+// 	-moz-box-shadow: 0 1px 1px #c5cacd;
+// 	box-shadow: 0 1px 1px #c5cacd;
+// 	position: absolute;
+// 	z-index: 2;
+// 	/*top: 70px !important;*/
+// }
 
-.popup-wrapper > .popup-menu > .popup-menu-balloon {
-	border: solid 12px transparent;
-	border-bottom: solid 12px #c5cacd;
-	display: block;
-	height: 1px;
-	left: 5px;
-	position: absolute;
-	top: -24px;
-	width: 1px;
-}
+// .popup-wrapper > .popup-menu > .popup-menu-balloon {
+// 	border: solid 12px transparent;
+// 	border-bottom: solid 12px #c5cacd;
+// 	display: block;
+// 	height: 1px;
+// 	left: 5px;
+// 	position: absolute;
+// 	top: -24px;
+// 	width: 1px;
+// }
 
-.popup-wrapper > .popup-menu > .popup-menu-balloon:after {
-	border: solid 11px transparent;
-	border-bottom: solid 10px #fff;
-	content: '';
-	display: block;
-	height: 1px;
-	left: -11px;
-	position: absolute;
-	top: -9px;
-	width: 1px;
-}
+// .popup-wrapper > .popup-menu > .popup-menu-balloon:after {
+// 	border: solid 11px transparent;
+// 	border-bottom: solid 10px #fff;
+// 	content: '';
+// 	display: block;
+// 	height: 1px;
+// 	left: -11px;
+// 	position: absolute;
+// 	top: -9px;
+// 	width: 1px;
+// }
 
 /*------------------------------------------------------------*/
 /* 9.116 Sapphire WebBlock > Triage *********/
@@ -20080,43 +20080,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .QueueColumn {
 	display: table-cell;
 	margin-left: 0;
-	margin-top: 0;
-	padding: 10px;
-}
-
-.QueueInfoColumn {
-	display: table-cell;
-	margin-left: 0px;
-	margin-top: 0px;
-	padding: 10px;
-}
-
-.QueueCallNext {
-	background: #08a6af;
-	color: white;
-	cursor: pointer;
-	display: table-cell;
-	margin-left: 0;
-	margin-top: 0;
-	padding: 10px;
-	text-align: center;
-	vertical-align: middle;
-	width: 8%;
-}
-
-.QueueCallNextDisabled {
-	background: #d3d6d7;
-	color: white;
-	display: table-cell;
-	font-size: 130%;
-	margin-left: 0px;
-	margin-top: 0px;
-	padding: 10px;
-	text-align: center;
-	vertical-align: middle;
-	width: 120px;
-}
-
 .QueueActions {
 	display: table-cell;
 	margin-left: 0px;
@@ -20152,7 +20115,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 	left: 0;
 	position: fixed;
 	top: 50px;
-	width: 98%;
 	z-index: 1;
 }
 

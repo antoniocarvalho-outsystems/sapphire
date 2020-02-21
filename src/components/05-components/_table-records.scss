@@ -80,11 +80,6 @@
 			.TableRecords.ExpandableRows td .ExpandLink {
 				span {
 					@include arrow-down-simple;
-
-					&:after,
-					&:before {
-						content: '';
-					}
 				}
 			}
 

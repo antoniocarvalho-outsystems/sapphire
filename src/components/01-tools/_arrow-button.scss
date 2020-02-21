@@ -1,8 +1,4 @@
-@mixin arrow-button(
-	$color-base: $regular-beta,
-	$size-base: 22px,
-	$font-size: 0.857em
-) {
+@mixin arrow-button($color-base: $regular-beta, $size-base: 22px, $font-size: 0.857em) {
 	align-items: center;
 	background-color: transparent;
 	border: 2px solid $color-base;
@@ -27,12 +23,19 @@
 	}
 }
 
-@mixin arrow-down-simple($color-base: $regular-beta, $size-base: 5px) {
+@mixin arrow-down-simple($color-base: $regular-beta, $size-base: 5px, $clean-icon: true) {
 	border-bottom: $size-base solid $color-base;
 	border-left: $size-base solid transparent;
 	border-right: $size-base solid transparent;
 	height: 0;
 	width: 0;
+
+	@if $clean-icon {
+		&:after,
+		&:before {
+			content: '';
+		}
+	}
 }
 
 @mixin up-down-arrows {

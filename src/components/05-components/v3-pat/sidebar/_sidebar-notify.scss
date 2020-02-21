@@ -1,0 +1,43 @@
+.SidebarNotify {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 26px;
+  padding: 1px 3px;
+}
+
+.SidebarNotify:hover {
+  background-color: $primary-dark;
+}
+
+.SidebarNotify_header,
+.SidebarNotify_content {
+  color: $mid-dark-grey;
+  word-break: break-word;
+}
+
+.SidebarNotify_dateWrapper {
+  color: $mid-light-grey;
+  font-size: 1rem;
+  min-height: 16px;
+  padding-top: 0;
+}
+
+.SidebarNotify__date {
+  display: inline-block;
+  margin-left: 0px;
+  width: 80%;
+}
+
+.SidebarNotify__Arrow {
+  display: inline-block;
+  font-size: 15px;
+  text-align: right;
+  visibility: hidden;
+  width: 20%;
+}
+
+.SidebarNotify:hover .SidebarNotify__Arrow {
+  color: #fff;
+  font-size: 15px;
+  visibility: visible;
+}
