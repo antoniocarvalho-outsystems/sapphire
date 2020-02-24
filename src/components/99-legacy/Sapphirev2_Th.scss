@@ -9945,166 +9945,166 @@ a.Button.Icon:hover {
 /* 9.10 Sapphire Patterns > Cards > Dynamic_Card **************/
 /*------------------------------------------------------------*/
 
-.Card_Container .Columns .Column > div {
-	height: 100%;
-}
+// .Card_Container .Columns .Column > div {
+// 	height: 100%;
+// }
 
-.Card_Container .TableVerticalAlign {
-	height: 100%;
-	width: 100%;
-}
+// .Card_Container .TableVerticalAlign {
+// 	height: 100%;
+// 	width: 100%;
+// }
 
-.Card_Container {
-	background-color: #fff;
-	border: solid 1px #d3d6d7;
-	border-radius: 2px;
-	color: #262525;
-	display: table;
-	min-height: 50px;
-	width: 100%;
-}
+// .Card_Container {
+// 	background-color: #fff;
+// 	border: solid 1px #d3d6d7;
+// 	border-radius: 2px;
+// 	color: #262525;
+// 	display: table;
+// 	min-height: 50px;
+// 	width: 100%;
+// }
 
-.Icon_Card {
-	color: #124a61;
-	margin-right: 5px;
-}
+// .Icon_Card {
+// 	color: #124a61;
+// 	margin-right: 5px;
+// }
 
-.Card_Description {
-	display: table-cell;
-	font-size: 13px;
-	height: 100%;
-	margin-bottom: 0;
-	padding: 5px 15px;
-}
+// .Card_Description {
+// 	display: table-cell;
+// 	font-size: 13px;
+// 	height: 100%;
+// 	margin-bottom: 0;
+// 	padding: 5px 15px;
+// }
 
-.Image_Detail {
-	background-color: #ffc;
-	border-left: none;
-	border-right: solid 1px #ddd;
-	display: table-cell;
-	height: 100%;
-	padding: 5px 15px;
-	vertical-align: middle;
-	white-space: nowrap;
-	width: 40px;
-}
+// .Image_Detail {
+// 	background-color: #ffc;
+// 	border-left: none;
+// 	border-right: solid 1px #ddd;
+// 	display: table-cell;
+// 	height: 100%;
+// 	padding: 5px 15px;
+// 	vertical-align: middle;
+// 	white-space: nowrap;
+// 	width: 40px;
+// }
 
-.FA .Image_Detail,
-.AR .Image_Detail {
-	border-left: solid 1px #ddd;
-	border-right: none;
-}
+// .FA .Image_Detail,
+// .AR .Image_Detail {
+// 	border-left: solid 1px #ddd;
+// 	border-right: none;
+// }
 
-.Actions_Details {
-	align-items: center;
-	display: inline-flex;
-	height: 100%;
-	padding: 6px;
-}
+// .Actions_Details {
+// 	align-items: center;
+// 	display: inline-flex;
+// 	height: 100%;
+// 	padding: 6px;
+// }
 
-.desktop .Card_Container .Column.ColFirst {
-	max-width: 10%;
-}
+// .desktop .Card_Container .Column.ColFirst {
+// 	max-width: 10%;
+// }
 
-.desktop .Card_Container .Column.ColLast {
-	min-width: 90%;
-}
+// .desktop .Card_Container .Column.ColLast {
+// 	min-width: 90%;
+// }
 
-.desktop .Card_Container .Columns {
-	display: initial;
-}
+// .desktop .Card_Container .Columns {
+// 	display: initial;
+// }
 
-.Card_Container .Column.ColLast {
-	margin-bottom: 0;
-}
+// .Card_Container .Column.ColLast {
+// 	margin-bottom: 0;
+// }
 
-.Card_Container .Columns {
-	margin-bottom: 0;
-}
+// .Card_Container .Columns {
+// 	margin-bottom: 0;
+// }
 
-.phone .Card_Container,
-.tablet .Card_Container {
-	display: block;
-	width: 100%;
-}
+// .phone .Card_Container,
+// .tablet .Card_Container {
+// 	display: block;
+// 	width: 100%;
+// }
 
-.phone .Image_Detail,
-.tablet .Image_Detail {
-	border-right: transparent;
-	display: inline-block;
-	min-width: 100%;
-}
+// .phone .Image_Detail,
+// .tablet .Image_Detail {
+// 	border-right: transparent;
+// 	display: inline-block;
+// 	min-width: 100%;
+// }
 
-.tablet .Card_Description {
-	display: table-cell;
-	width: 100%;
-}
+// .tablet .Card_Description {
+// 	display: table-cell;
+// 	width: 100%;
+// }
 
-.phone .Card_Description {
-	display: table;
-	width: 100%;
-}
+// .phone .Card_Description {
+// 	display: table;
+// 	width: 100%;
+// }
 
-.Title_Card {
-	font-size: 13px;
-}
+// .Title_Card {
+// 	font-size: 13px;
+// }
 
-.FA .Title_Card,
-.AR .Title_Card {
-	font-size: 15px;
-}
+// .FA .Title_Card,
+// .AR .Title_Card {
+// 	font-size: 15px;
+// }
 
-.FA .Title_Card .CardAll,
-.AR .Title_Card .CardAll {
-	margin-left: auto;
-	margin-right: 0;
-}
+// .FA .Title_Card .CardAll,
+// .AR .Title_Card .CardAll {
+// 	margin-left: auto;
+// 	margin-right: 0;
+// }
 
-.tablet .Actions_Details,
-.tablet .Others_Details,
-.phone .Others_Details,
-.phone .Actions_Details {
-	display: table-cell;
-}
+// .tablet .Actions_Details,
+// .tablet .Others_Details,
+// .phone .Others_Details,
+// .phone .Actions_Details {
+// 	display: table-cell;
+// }
 
-.Card_Actions {
-	background: #fff;
-	display: table-cell;
-	text-align: right;
-	vertical-align: middle;
-}
+// .Card_Actions {
+// 	background: #fff;
+// 	display: table-cell;
+// 	text-align: right;
+// 	vertical-align: middle;
+// }
 
-.FA .Card_Actions,
-.AR .Card_Actions {
-	text-align: left;
-}
+// .FA .Card_Actions,
+// .AR .Card_Actions {
+// 	text-align: left;
+// }
 
-.phone .Actions_Details :first-child {
-	border: none;
-}
+// .phone .Actions_Details :first-child {
+// 	border: none;
+// }
 
 /*AR*/
 
-.FA .Card_Actions,
-.AR .Card_Actions {
-	text-align: left;
-}
+// .FA .Card_Actions,
+// .AR .Card_Actions {
+// 	text-align: left;
+// }
 
-.FA .Card_Description > div:nth-child(2) > div,
-.AR .Card_Description > div:nth-child(2) > div {
-	margin-left: 10px;
-	vertical-align: middle;
-}
+// .FA .Card_Description > div:nth-child(2) > div,
+// .AR .Card_Description > div:nth-child(2) > div {
+// 	margin-left: 10px;
+// 	vertical-align: middle;
+// }
 
-.FA .Card_Description,
-.AR .Card_Description {
-	vertical-align: middle;
-}
+// .FA .Card_Description,
+// .AR .Card_Description {
+// 	vertical-align: middle;
+// }
 
-.FA .Image_Detail .Icon_Card,
-.AR .Image_Detail .Icon_Card {
-	margin-left: 10px;
-}
+// .FA .Image_Detail .Icon_Card,
+// .AR .Image_Detail .Icon_Card {
+// 	margin-left: 10px;
+// }
 
 /*------------------------------------------------------------*/
 /* 9.11 Sapphire Patterns > Cards > LineCardList **************/
@@ -32593,11 +32593,11 @@ div.LineInfo {
 	-servicestudio-width: 20% !important;
 }
 
-.SuperCard,
-.Card_Container {
-	-servicestudio-background-color: #fff;
-	-servicestudio-min-height: 100px;
-}
+// .SuperCard,
+// .Card_Container {
+// 	-servicestudio-background-color: #fff;
+// 	-servicestudio-min-height: 100px;
+// }
 
 .ServiceStudioDisplayNone {
 	-servicestudio-display: none !important;
