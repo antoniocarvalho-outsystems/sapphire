@@ -20079,7 +20079,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .QueueColumn {
 	display: table-cell;
-	margin-left: 0;
+  margin-left: 0;
+}
+
 .QueueActions {
 	display: table-cell;
 	margin-left: 0px;
@@ -26183,80 +26185,80 @@ div.ForwardableContainer {
 /* 10.3.3 Auxiliar Margins ****************************/
 /*------------------------------------------------------------*/
 
-.MarginBottom5 {
-	margin-bottom: 5px;
-}
+// .MarginBottom5 {
+// 	margin-bottom: 5px;
+// }
 
-.MarginBottom10 {
-	margin-bottom: 10px;
-}
+// .MarginBottom10 {
+// 	margin-bottom: 10px;
+// }
 
-.MarginBottom20 {
-	margin-bottom: 20px;
-}
+// .MarginBottom20 {
+// 	margin-bottom: 20px;
+// }
 
-.MultiMarginLeft3,
-.AR .MultiMarginLeft3,
-.FA .MultiMarginLeft3 {
-	margin-left: 3px;
-	margin-right: auto;
-}
+// .MultiMarginLeft3,
+// .AR .MultiMarginLeft3,
+// .FA .MultiMarginLeft3 {
+// 	margin-left: 3px;
+// 	margin-right: auto;
+// }
 
-.MultiMarginLeft5,
-.AR .MultiMarginRight5,
-.FA .MultiMarginRight5 {
-	margin-left: 5px;
-	margin-right: auto;
-}
+// .MultiMarginLeft5,
+// .AR .MultiMarginRight5,
+// .FA .MultiMarginRight5 {
+// 	margin-left: 5px;
+// 	margin-right: auto;
+// }
 
-.MultiMarginLeft10,
-.AR .MultiMarginRight10,
-.FA .MultiMarginRight10 {
-	margin-left: 10px;
-	margin-right: auto;
-}
+// .MultiMarginLeft10,
+// .AR .MultiMarginRight10,
+// .FA .MultiMarginRight10 {
+// 	margin-left: 10px;
+// 	margin-right: auto;
+// }
 
-.MultiMarginLeft15,
-.AR .MultiMarginRight15,
-.FA .MultiMarginRight15 {
-	margin-left: 15px;
-	margin-right: auto;
-}
+// .MultiMarginLeft15,
+// .AR .MultiMarginRight15,
+// .FA .MultiMarginRight15 {
+// 	margin-left: 15px;
+// 	margin-right: auto;
+// }
 
-.MultiMarginLeft20,
-.AR .MultiMarginRight20,
-.FA .MultiMarginRight20 {
-	margin-left: 20px;
-	margin-right: auto;
-}
+// .MultiMarginLeft20,
+// .AR .MultiMarginRight20,
+// .FA .MultiMarginRight20 {
+// 	margin-left: 20px;
+// 	margin-right: auto;
+// }
 
-.MultiMarginRight5,
-.AR .MultiMarginLeft5,
-.FA .MultiMarginLeft5 {
-	margin-left: auto;
-	margin-right: 5px;
-}
+// .MultiMarginRight5,
+// .AR .MultiMarginLeft5,
+// .FA .MultiMarginLeft5 {
+// 	margin-left: auto;
+// 	margin-right: 5px;
+// }
 
-.MultiMarginRight10,
-.AR .MultiMarginLeft10,
-.FA .MultiMarginLeft10 {
-	margin-left: auto;
-	margin-right: 10px;
-}
+// .MultiMarginRight10,
+// .AR .MultiMarginLeft10,
+// .FA .MultiMarginLeft10 {
+// 	margin-left: auto;
+// 	margin-right: 10px;
+// }
 
-.MultiMarginRight15,
-.AR .MultiMarginLeft15,
-.FA .MultiMarginLeft15 {
-	margin-left: auto;
-	margin-right: 15px;
-}
+// .MultiMarginRight15,
+// .AR .MultiMarginLeft15,
+// .FA .MultiMarginLeft15 {
+// 	margin-left: auto;
+// 	margin-right: 15px;
+// }
 
-.MultiMarginRight20,
-.AR .MultiMarginLeft20,
-.FA .MultiMarginLeft20 {
-	margin-left: auto;
-	margin-right: 20px;
-}
+// .MultiMarginRight20,
+// .AR .MultiMarginLeft20,
+// .FA .MultiMarginLeft20 {
+// 	margin-left: auto;
+// 	margin-right: 20px;
+// }
 
 /*------------------------------------------------------------*/
 /* 10.3.4 Auxiliar Border Radius ****************************/
@@ -33704,69 +33706,69 @@ div.template-item{
 /**********************/
 /** MultiMarginXXSmall **/
 
-.MultiMarginXXSmall {
-	margin: 3px;
-}
+// .MultiMarginXXSmall {
+// 	margin: 3px;
+// }
 
-.MultiMarginLeftXXSmall {
-	margin-left: 3px;
-}
+// .MultiMarginLeftXXSmall {
+// 	margin-left: 3px;
+// }
 
-.MultiMarginRightXXSmall {
-	margin-right: 3px;
-}
+// .MultiMarginRightXXSmall {
+// 	margin-right: 3px;
+// }
 
-.MultiMarginTopXXSmall {
-	margin-top: 3px;
-}
+// .MultiMarginTopXXSmall {
+// 	margin-top: 3px;
+// }
 
-.MultiMarginBottomXXSmall {
-	margin-bottom: 3px;
-}
+// .MultiMarginBottomXXSmall {
+// 	margin-bottom: 3px;
+// }
 
 /** MultiMarginXSmall **/
 
-.MultiMarginXSmall {
-	margin: 6px;
-}
+// .MultiMarginXSmall {
+// 	margin: 6px;
+// }
 
-.MultiMarginLeftXSmall {
-	margin-left: 6px;
-}
+// .MultiMarginLeftXSmall {
+// 	margin-left: 6px;
+// }
 
-.MultiMarginRightXSmall {
-	margin-right: 6px;
-}
+// .MultiMarginRightXSmall {
+// 	margin-right: 6px;
+// }
 
-.MultiMarginTopXSmall {
-	margin-top: 6px;
-}
+// .MultiMarginTopXSmall {
+// 	margin-top: 6px;
+// }
 
-.MultiMarginBottomXSmall {
-	margin-bottom: 6px;
-}
+// .MultiMarginBottomXSmall {
+// 	margin-bottom: 6px;
+// }
 
 /** MultiMarginSmall **/
 
-.MultiMarginSmall {
-	margin: 10px;
-}
+// .MultiMarginSmall {
+// 	margin: 10px;
+// }
 
-.MultiMarginLeftSmall {
-	margin-left: 10px;
-}
+// .MultiMarginLeftSmall {
+// 	margin-left: 10px;
+// }
 
-.MultiMarginRightSmall {
-	margin-right: 10px;
-}
+// .MultiMarginRightSmall {
+// 	margin-right: 10px;
+// }
 
-.MultiMarginTopSmall {
-	margin-top: 10px;
-}
+// .MultiMarginTopSmall {
+// 	margin-top: 10px;
+// }
 
-.MultiMarginBottomSmall {
-	margin-bottom: 10px;
-}
+// .MultiMarginBottomSmall {
+// 	margin-bottom: 10px;
+// }
 
 /** MultiPaddingXXSmall **/
 .MultiPaddingXXSmall {
@@ -33834,25 +33836,25 @@ div.template-item{
 
 /** MultiMarginMedium **/
 
-.MultiMarginMedium {
-	margin: 16px;
-}
+// .MultiMarginMedium {
+// 	margin: 16px;
+// }
 
-.MultiMarginLeftMedium {
-	margin-left: 16px;
-}
+// .MultiMarginLeftMedium {
+// 	margin-left: 16px;
+// }
 
-.MultiMarginRightMedium {
-	margin-right: 16px;
-}
+// .MultiMarginRightMedium {
+// 	margin-right: 16px;
+// }
 
-.MultiMarginTopMedium {
-	margin-top: 16px;
-}
+// .MultiMarginTopMedium {
+// 	margin-top: 16px;
+// }
 
-.MultiMarginBottomMedium {
-	margin-bottom: 16px;
-}
+// .MultiMarginBottomMedium {
+// 	margin-bottom: 16px;
+// }
 
 /** MultiPaddingMedium **/
 
@@ -33878,25 +33880,25 @@ div.template-item{
 
 /** multimarginLarge **/
 
-.MultiMarginLarge {
-	margin: 26px;
-}
+// .MultiMarginLarge {
+// 	margin: 26px;
+// }
 
-.MultiMarginLeftLarge {
-	margin-left: 26px;
-}
+// .MultiMarginLeftLarge {
+// 	margin-left: 26px;
+// }
 
-.MultiMarginRightLarge {
-	margin-right: 26px;
-}
+// .MultiMarginRightLarge {
+// 	margin-right: 26px;
+// }
 
-.MultiMarginTopLarge {
-	margin-top: 26px;
-}
+// .MultiMarginTopLarge {
+// 	margin-top: 26px;
+// }
 
-.MultiMarginBottomLarge {
-	margin-bottom: 26px;
-}
+// .MultiMarginBottomLarge {
+// 	margin-bottom: 26px;
+// }
 
 /** multPaddingLarge **/
 
@@ -33922,25 +33924,25 @@ div.template-item{
 
 /** multimarginLargest **/
 
-.MultiMarginLargest {
-	margin: 42px;
-}
+// .MultiMarginLargest {
+// 	margin: 42px;
+// }
 
-.MultiMarginLeftLargest {
-	margin-left: 42px;
-}
+// .MultiMarginLeftLargest {
+// 	margin-left: 42px;
+// }
 
-.MultiMarginRightLargest {
-	margin-right: 42px;
-}
+// .MultiMarginRightLargest {
+// 	margin-right: 42px;
+// }
 
-.MultiMarginTopLargest {
-	margin-top: 42px;
-}
+// .MultiMarginTopLargest {
+// 	margin-top: 42px;
+// }
 
-.MultiMarginBottomLargest {
-	margin-bottom: 42px;
-}
+// .MultiMarginBottomLargest {
+// 	margin-bottom: 42px;
+// }
 
 /** multPaddingLarge **/
 
@@ -33964,21 +33966,21 @@ div.template-item{
 	padding-bottom: 42px;
 }
 
-.NoMarginTop {
-	margin-top: 0px !important;
-}
+// .NoMarginTop {
+// 	margin-top: 0px !important;
+// }
 
-.NoMarginRight {
-	margin-right: 0px !important;
-}
+// .NoMarginRight {
+// 	margin-right: 0px !important;
+// }
 
-.NoMarginLeft {
-	margin-left: 0px !important;
-}
+// .NoMarginLeft {
+// 	margin-left: 0px !important;
+// }
 
-.NoMarginBottom {
-	margin-bottom: 0px !important;
-}
+// .NoMarginBottom {
+// 	margin-bottom: 0px !important;
+// }
 
 .NoEventPointer {
 	pointer-events: none;
@@ -33987,30 +33989,30 @@ div.template-item{
 /* MARGINS AND PADDINGS AR AND FA*/
 
 /** multimarginXSmall **/
-.FA .MultiMarginLeftXSmall,
-.AR .MultiMarginLeftXSmall {
-	margin-left: auto;
-	margin-right: 6px;
-}
+// .FA .MultiMarginLeftXSmall,
+// .AR .MultiMarginLeftXSmall {
+// 	margin-left: auto;
+// 	margin-right: 6px;
+// }
 
-.FA .MultiMarginRightXSmall,
-.AR .MultiMarginRightXSmall {
-	margin-left: 6px;
-	margin-right: auto;
-}
+// .FA .MultiMarginRightXSmall,
+// .AR .MultiMarginRightXSmall {
+// 	margin-left: 6px;
+// 	margin-right: auto;
+// }
 
 /** multimarginSmall **/
-.FA .MultiMarginLeftSmall,
-.AR .MultiMarginLeftSmall {
-	margin-left: auto;
-	margin-right: 10px;
-}
+// .FA .MultiMarginLeftSmall,
+// .AR .MultiMarginLeftSmall {
+// 	margin-left: auto;
+// 	margin-right: 10px;
+// }
 
-.FA .MultiMarginRightSmall,
-.AR .MultiMarginRightSmall {
-	margin-left: 10px;
-	margin-right: auto;
-}
+// .FA .MultiMarginRightSmall,
+// .AR .MultiMarginRightSmall {
+// 	margin-left: 10px;
+// 	margin-right: auto;
+// }
 
 /** multPaddingXSmall **/
 .FA .MultiPaddingLeftXSmall,
@@ -34039,17 +34041,17 @@ div.template-item{
 }
 
 /** multimarginMedium **/
-.FA .MultiMarginLeftMedium,
-.AR .MultiMarginLeftMedium {
-	margin-left: auto;
-	margin-right: 16px;
-}
+// .FA .MultiMarginLeftMedium,
+// .AR .MultiMarginLeftMedium {
+// 	margin-left: auto;
+// 	margin-right: 16px;
+// }
 
-.FA .MultiMarginRightMedium,
-.AR .MultiMarginRightMedium {
-	margin-left: 16px;
-	margin-right: auto;
-}
+// .FA .MultiMarginRightMedium,
+// .AR .MultiMarginRightMedium {
+// 	margin-left: 16px;
+// 	margin-right: auto;
+// }
 
 /** multPaddingMedium **/
 .FA .MultiPaddingLeftMedium,
@@ -34065,17 +34067,17 @@ div.template-item{
 }
 
 /** multimarginLarge **/
-.FA .MultiMarginLeftLarge,
-.AR .MultiMarginLeftLarge {
-	margin-left: auto;
-	margin-right: 26px;
-}
+// .FA .MultiMarginLeftLarge,
+// .AR .MultiMarginLeftLarge {
+// 	margin-left: auto;
+// 	margin-right: 26px;
+// }
 
-.FA .MultiMarginRightLarge,
-.AR .MultiMarginRightLarge {
-	margin-left: 26px;
-	margin-right: auto;
-}
+// .FA .MultiMarginRightLarge,
+// .AR .MultiMarginRightLarge {
+// 	margin-left: 26px;
+// 	margin-right: auto;
+// }
 
 /** multPaddingLarge **/
 .FA .MultiPaddingLeftLarge,
@@ -34091,17 +34093,17 @@ div.template-item{
 }
 
 /** multimarginLargest **/
-.FA .MultiMarginLeftLargest,
-.AR .MultiMarginLeftLargest {
-	margin-left: auto;
-	margin-right: 42px;
-}
+// .FA .MultiMarginLeftLargest,
+// .AR .MultiMarginLeftLargest {
+// 	margin-left: auto;
+// 	margin-right: 42px;
+// }
 
-.FA .MultiMarginRightLargest,
-.AR .MultiMarginRightLargest {
-	margin-left: 42px;
-	margin-right: auto;
-}
+// .FA .MultiMarginRightLargest,
+// .AR .MultiMarginRightLargest {
+// 	margin-left: 42px;
+// 	margin-right: auto;
+// }
 
 /** multPaddingLargest **/
 .FA .MultiPaddingLeftLargest,
@@ -34155,24 +34157,24 @@ a.Button.FullWidth {
 	z-index: 200;
 }
 
-.MaxWidthLarge {
-	max-width: 70%;
-}
+// .MaxWidthLarge {
+// 	max-width: 70%;
+// }
 
-.MaxWidth-70 {
-	display: inline-block;
-	max-width: 70%;
-}
+// .MaxWidth-70 {
+// 	display: inline-block;
+// 	max-width: 70%;
+// }
 
-.MaxWidth-80 {
-	display: inline-block;
-	max-width: 80%;
-}
+// .MaxWidth-80 {
+// 	display: inline-block;
+// 	max-width: 80%;
+// }
 
-.MaxWidth-90 {
-	display: inline-block;
-	max-width: 90%;
-}
+// .MaxWidth-90 {
+// 	display: inline-block;
+// 	max-width: 90%;
+// }
 
 /**** To Use on Pharma after MainArea *****/
 .PharmaContainer {
@@ -35020,101 +35022,101 @@ a.Button.FullWidth {
 //   border-color: #16979f;
 // }
 
-.borderwidth--small {
-	border-width: 1px;
-}
+// .borderwidth--small {
+// 	border-width: 1px;
+// }
 
-.borderwidth--medium {
-	border-width: 2px;
-}
+// .borderwidth--medium {
+// 	border-width: 2px;
+// }
 
-.borderwidth--large {
-	border-width: 3px;
-}
+// .borderwidth--large {
+// 	border-width: 3px;
+// }
 
-.borderwidth--xlarge {
-	border-width: 4px;
-}
+// .borderwidth--xlarge {
+// 	border-width: 4px;
+// }
 
-.shadow--xsmall {
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
+// .shadow--xsmall {
+// 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+// }
 
-.shadow--small {
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
+// .shadow--small {
+// 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+// }
 
-.shadow--medium {
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
+// .shadow--medium {
+// 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+// }
 
-.shadow--large {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
+// .shadow--large {
+// 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+// }
 
-.shadow--xlarge {
-	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
+// .shadow--xlarge {
+// 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+// }
 
-.borderstyle--dashed {
-	border-style: dashed;
-}
+// .borderstyle--dashed {
+// 	border-style: dashed;
+// }
 
-.borderstyle--dotted {
-	border-style: dotted;
-}
+// .borderstyle--dotted {
+// 	border-style: dotted;
+// }
 
-.borderstyle--double {
-	border-style: double;
-}
+// .borderstyle--double {
+// 	border-style: double;
+// }
 
-.borderstyle--none {
-	border-style: none;
-}
+// .borderstyle--none {
+// 	border-style: none;
+// }
 
-.borderstyle--solid {
-	border-style: solid;
-}
+// .borderstyle--solid {
+// 	border-style: solid;
+// }
 
-.onlyborder--top {
-	border-bottom: none;
-	border-left: none;
-	border-right: none;
-}
+// .onlyborder--top {
+// 	border-bottom: none;
+// 	border-left: none;
+// 	border-right: none;
+// }
 
-.onlyborder--right {
-	border-bottom: none;
-	border-left: none;
-	border-top: none;
-}
+// .onlyborder--right {
+// 	border-bottom: none;
+// 	border-left: none;
+// 	border-top: none;
+// }
 
-.onlyborder--bottom {
-	border-left: none;
-	border-right: none;
-	border-top: none;
-}
+// .onlyborder--bottom {
+// 	border-left: none;
+// 	border-right: none;
+// 	border-top: none;
+// }
 
-.onlyborder--left {
-	border-bottom: none;
-	border-right: none;
-	border-top: none;
-}
+// .onlyborder--left {
+// 	border-bottom: none;
+// 	border-right: none;
+// 	border-top: none;
+// }
 
-.noborder--top {
-	border-top: none;
-}
+// .noborder--top {
+// 	border-top: none;
+// }
 
-.noborder--right {
-	border-right: none;
-}
+// .noborder--right {
+// 	border-right: none;
+// }
 
-.noborder--bottom {
-	border-bottom: none;
-}
+// .noborder--bottom {
+// 	border-bottom: none;
+// }
 
-.noborder--left {
-	border-left: none;
-}
+// .noborder--left {
+// 	border-left: none;
+// }
 
 /* Visibility Classes */
 
@@ -35212,21 +35214,21 @@ a.Button.FullWidth {
 	padding: 0 !important;
 }
 
-.MinHeight-100 {
-	min-height: 100px;
-}
+// .MinHeight-100 {
+// 	min-height: 100px;
+// }
 
-.MinHeight-110 {
-	min-height: 110px;
-}
+// .MinHeight-110 {
+// 	min-height: 110px;
+// }
 
-.MinHeight-120 {
-	min-height: 120px;
-}
+// .MinHeight-120 {
+// 	min-height: 120px;
+// }
 
-.MinHeight-130 {
-	min-height: 130px;
-}
+// .MinHeight-130 {
+// 	min-height: 130px;
+// }
 
 .DisplayBlock,
 a.Button.DisplayBlock {

@@ -1,0 +1,284 @@
+.NoMarginTop {
+	margin-top: 0px !important;
+}
+
+.NoMarginRight {
+	margin-right: 0px !important;
+}
+
+.NoMarginLeft {
+	margin-left: 0px !important;
+}
+
+.NoMarginBottom {
+	margin-bottom: 0px !important;
+}
+
+/* Bottom */
+.MarginBottom5 {
+	margin-bottom: 5px;
+}
+
+.MarginBottom10 {
+	margin-bottom: 10px;
+}
+
+.MarginBottom20 {
+	margin-bottom: 20px;
+}
+
+/* Left */
+.MultiMarginLeft3,
+.AR .MultiMarginLeft3,
+.FA .MultiMarginLeft3 {
+	margin-left: 3px;
+	margin-right: auto;
+}
+
+.MultiMarginLeft5,
+.AR .MultiMarginRight5,
+.FA .MultiMarginRight5 {
+	margin-left: 5px;
+	margin-right: auto;
+}
+
+.MultiMarginLeft10,
+.AR .MultiMarginRight10,
+.FA .MultiMarginRight10 {
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+.MultiMarginLeft15,
+.AR .MultiMarginRight15,
+.FA .MultiMarginRight15 {
+	margin-left: 15px;
+	margin-right: auto;
+}
+
+.MultiMarginLeft20,
+.AR .MultiMarginRight20,
+.FA .MultiMarginRight20 {
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+/* Right */
+.MultiMarginRight5,
+.AR .MultiMarginLeft5,
+.FA .MultiMarginLeft5 {
+	margin-left: auto;
+	margin-right: 5px;
+}
+
+.MultiMarginRight10,
+.AR .MultiMarginLeft10,
+.FA .MultiMarginLeft10 {
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.MultiMarginRight15,
+.AR .MultiMarginLeft15,
+.FA .MultiMarginLeft15 {
+	margin-left: auto;
+	margin-right: 15px;
+}
+
+.MultiMarginRight20,
+.AR .MultiMarginLeft20,
+.FA .MultiMarginLeft20 {
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+/* XXSmall */
+.MultiMarginXXSmall {
+	margin: 3px;
+}
+
+.MultiMarginLeftXXSmall {
+	margin-left: 3px;
+}
+
+.MultiMarginRightXXSmall {
+	margin-right: 3px;
+}
+
+.MultiMarginTopXXSmall {
+	margin-top: 3px;
+}
+
+.MultiMarginBottomXXSmall {
+	margin-bottom: 3px;
+}
+
+/* XSmall */
+.MultiMarginXSmall {
+	margin: 6px;
+}
+
+.MultiMarginLeftXSmall {
+	margin-left: 6px;
+}
+
+.MultiMarginRightXSmall {
+	margin-right: 6px;
+}
+
+.MultiMarginTopXSmall {
+	margin-top: 6px;
+}
+
+.MultiMarginBottomXSmall {
+	margin-bottom: 6px;
+}
+
+.AR,
+.FA {
+	.MultiMarginLeftXSmall {
+		margin-left: auto;
+		margin-right: 6px;
+	}
+
+	.MultiMarginRightXSmall {
+		margin-left: 6px;
+		margin-right: auto;
+	}
+}
+
+/* Small */
+.MultiMarginSmall {
+	margin: 10px;
+}
+
+.MultiMarginLeftSmall {
+	margin-left: 10px;
+}
+
+.MultiMarginRightSmall {
+	margin-right: 10px;
+}
+
+.MultiMarginTopSmall {
+	margin-top: 10px;
+}
+
+.MultiMarginBottomSmall {
+	margin-bottom: 10px;
+}
+
+.AR,
+.FA {
+	.MultiMarginLeftSmall {
+		margin-left: auto;
+		margin-right: 10px;
+	}
+
+	.MultiMarginRightSmall {
+		margin-left: 10px;
+		margin-right: auto;
+	}
+}
+
+/* Medium */
+.MultiMarginMedium {
+	margin: 16px;
+}
+
+.MultiMarginLeftMedium {
+	margin-left: 16px;
+}
+
+.MultiMarginRightMedium {
+	margin-right: 16px;
+}
+
+.MultiMarginTopMedium {
+	margin-top: 16px;
+}
+
+.MultiMarginBottomMedium {
+	margin-bottom: 16px;
+}
+
+.AR,
+.FA {
+	.MultiMarginLeftMedium {
+		margin-left: auto;
+		margin-right: 16px;
+	}
+
+	.MultiMarginRightMedium {
+		margin-left: 16px;
+		margin-right: auto;
+	}
+}
+
+/* Large */
+.MultiMarginLarge {
+	margin: 26px;
+}
+
+.MultiMarginLeftLarge {
+	margin-left: 26px;
+}
+
+.MultiMarginRightLarge {
+	margin-right: 26px;
+}
+
+.MultiMarginTopLarge {
+	margin-top: 26px;
+}
+
+.MultiMarginBottomLarge {
+	margin-bottom: 26px;
+}
+
+.AR,
+.FA {
+	.MultiMarginLeftLarge {
+		margin-left: auto;
+		margin-right: 26px;
+	}
+
+	.MultiMarginRightLarge {
+		margin-left: 26px;
+		margin-right: auto;
+	}
+}
+
+/* Largest */
+.MultiMarginLargest {
+	margin: 42px;
+}
+
+.MultiMarginLeftLargest {
+	margin-left: 42px;
+}
+
+.MultiMarginRightLargest {
+	margin-right: 42px;
+}
+
+.MultiMarginTopLargest {
+	margin-top: 42px;
+}
+
+.MultiMarginBottomLargest {
+	margin-bottom: 42px;
+}
+
+.AR,
+.FA {
+	.MultiMarginLeftLargest {
+		margin-left: auto;
+		margin-right: 42px;
+	}
+
+	.MultiMarginRightLargest {
+		margin-left: 42px;
+		margin-right: auto;
+	}
+}

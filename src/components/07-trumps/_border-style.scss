@@ -1,19 +1,79 @@
+/* Style */
 .borderstyle--dashed {
-    border-style: dashed;
+	border-style: dashed;
 }
 
 .borderstyle--dotted {
-    border-style: dotted;
+	border-style: dotted;
 }
 
 .borderstyle--double {
-    border-style: double;
+	border-style: double;
 }
 
 .borderstyle--none {
-    border-style: none;
+	border-style: none;
 }
 
 .borderstyle--solid {
-    border-style: solid;
+	border-style: solid;
+}
+
+/* Positions */
+.onlyborder--top {
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+
+.onlyborder--right {
+	border-bottom: none;
+	border-left: none;
+	border-top: none;
+}
+
+.onlyborder--bottom {
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+.onlyborder--left {
+	border-bottom: none;
+	border-right: none;
+	border-top: none;
+}
+
+/* Without border */
+.noborder--top {
+	border-top: none;
+}
+
+.noborder--right {
+	border-right: none;
+}
+
+.noborder--bottom {
+	border-bottom: none;
+}
+
+.noborder--left {
+	border-left: none;
+}
+
+/* Width */
+.borderwidth--small {
+	border-width: 1px;
+}
+
+.borderwidth--medium {
+	border-width: 2px;
+}
+
+.borderwidth--large {
+	border-width: 3px;
+}
+
+.borderwidth--xlarge {
+	border-width: 4px;
 }
