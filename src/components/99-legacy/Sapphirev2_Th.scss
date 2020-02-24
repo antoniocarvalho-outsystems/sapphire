@@ -9308,239 +9308,239 @@ a.Button.Icon:hover {
 /*------------------------------------------------------------*/
 /* 9.7 Sapphire Patterns > Cards > CardPatient ****************/
 /*------------------------------------------------------------*/
-.PatientInfo {
-	background-color: #fff;
-	border-top: 1px solid #c9cdce;
-	display: table;
-	min-height: 56px;
-	width: 100%;
-}
+// .PatientInfo {
+// 	background-color: #fff;
+// 	border-top: 1px solid #c9cdce;
+// 	display: table;
+// 	min-height: 56px;
+// 	width: 100%;
+// }
 
-.PatientInfo:first-of-type {
-	border-top: 1px solid #c9cdce;
-}
+// .PatientInfo:first-of-type {
+// 	border-top: 1px solid #c9cdce;
+// }
 
-.PatientInfo,
-.ListRecords span .PatientInfo {
-	border-bottom: 1px solid #c9cdce;
-	border-left: 1px solid #c9cdce;
-	border-right: 1px solid #c9cdce;
-	margin-top: -1px;
-}
+// .PatientInfo,
+// .ListRecords span .PatientInfo {
+// 	border-bottom: 1px solid #c9cdce;
+// 	border-left: 1px solid #c9cdce;
+// 	border-right: 1px solid #c9cdce;
+// 	margin-top: -1px;
+// }
 
-.ListRecords .PatientInfo:last-of-type {
-	border-bottom: 1px solid #c9cdce;
-}
+// .ListRecords .PatientInfo:last-of-type {
+// 	border-bottom: 1px solid #c9cdce;
+// }
 
 /*PreTriage PopupAccompanier */
 .PopupAccompanier .PatientInfo:last-of-type {
 	border-bottom: 1px solid #c9cdce;
 }
 
-.SectionExpandable_content .ListRecords:not(.PatientInfo) {
-	/*  border-bottom: 1px solid #c9cdce;*/
-}
+// .SectionExpandable_content .ListRecords:not(.PatientInfo) {
+// 	/*  border-bottom: 1px solid #c9cdce;*/
+// }
 
-.ListRecords span:last-of-type .PatientInfo {
-	border-bottom: 1px solid #c9cdce;
-}
+// .ListRecords span:last-of-type .PatientInfo {
+// 	border-bottom: 1px solid #c9cdce;
+// }
 
-.PatientInfo_left {
-	display: table-cell;
-	padding: 10px;
-	vertical-align: middle;
-	width: 41%;
-}
+// .PatientInfo_left {
+// 	display: table-cell;
+// 	padding: 10px;
+// 	vertical-align: middle;
+// 	width: 41%;
+// }
 
-.PatientInfo_left .PatientInfo_Text {
-	margin-left: 10px;
-	margin-right: 0;
-}
+// .PatientInfo_left .PatientInfo_Text {
+// 	margin-left: 10px;
+// 	margin-right: 0;
+// }
 
-.PatientInfo_left.Female {
-	background-color: #fceaf9;
-	color: black;
-}
+// .PatientInfo_left.Female {
+// 	background-color: #fceaf9;
+// 	color: black;
+// }
 
-.PatientInfo_left.Female .PatientInfo__icon {
-	background-color: #fceaf9;
-	color: #6f4065;
-}
+// .PatientInfo_left.Female .PatientInfo__icon {
+// 	background-color: #fceaf9;
+// 	color: #6f4065;
+// }
 
-.PatientInfo_left.Male {
-	background-color: #e9f3f8;
-	color: #000;
-}
+// .PatientInfo_left.Male {
+// 	background-color: #e9f3f8;
+// 	color: #000;
+// }
 
-.PateintInfo_left.Male .PatientInfo__icon {
-	background-color: #e9f3f8;
-	color: #11394f;
-}
+// .PateintInfo_left.Male .PatientInfo__icon {
+// 	background-color: #e9f3f8;
+// 	color: #11394f;
+// }
 
-.PatientInfo_left.unidentified {
-	background-color: #efefef;
-	color: #000;
-}
+// .PatientInfo_left.unidentified {
+// 	background-color: #efefef;
+// 	color: #000;
+// }
 
-.PateintInfo_left .PatientInfo__flag {
-	vertical-align: bottom;
-}
+// .PateintInfo_left .PatientInfo__flag {
+// 	vertical-align: bottom;
+// }
 
-.PatientInfo_right {
-	display: table;
-	padding: 10px;
-	vertical-align: middle;
-	width: 100%;
-}
+// .PatientInfo_right {
+// 	display: table;
+// 	padding: 10px;
+// 	vertical-align: middle;
+// 	width: 100%;
+// }
 
-.PatientInfo_right > div {
-	align-items: center;
-	display: table-cell;
-}
+// .PatientInfo_right > div {
+// 	align-items: center;
+// 	display: table-cell;
+// }
 
-.PatientInfo_left.ExtraTiny {
-	width: 50px;
-}
+// .PatientInfo_left.ExtraTiny {
+// 	width: 50px;
+// }
 
-.PatientInfo_left.Tiny {
-	width: 100px;
-}
+// .PatientInfo_left.Tiny {
+// 	width: 100px;
+// }
 
-.PatientInfo_left.ExtraSmall {
-	width: 150px;
-}
+// .PatientInfo_left.ExtraSmall {
+// 	width: 150px;
+// }
 
-.PatientInfo_left.Small {
-	width: 200px;
-}
+// .PatientInfo_left.Small {
+// 	width: 200px;
+// }
 
-.PatientInfo_left.SmallMedium {
-	width: 250px;
-}
+// .PatientInfo_left.SmallMedium {
+// 	width: 250px;
+// }
 
-.PatientInfo_left.SmallMedium .PatientInfo_Text {
-	width: 180px;
-	word-break: break-word;
-}
+// .PatientInfo_left.SmallMedium .PatientInfo_Text {
+// 	width: 180px;
+// 	word-break: break-word;
+// }
 
-.PatientInfo_left.Medium {
-	width: 300px;
-}
+// .PatientInfo_left.Medium {
+// 	width: 300px;
+// }
 
-.PatientInfo_left.MediumLarge {
-	width: 350px;
-}
+// .PatientInfo_left.MediumLarge {
+// 	width: 350px;
+// }
 
-.tablet .PatientInfo_left.MediumLarge {
-	width: 205px;
-}
+// .tablet .PatientInfo_left.MediumLarge {
+// 	width: 205px;
+// }
 
-.PatientInfo_left.Large {
-	width: 400px;
-}
+// .PatientInfo_left.Large {
+// 	width: 400px;
+// }
 
-.PatientInfo_left.ExtraLarge {
-	width: 450px;
-}
+// .PatientInfo_left.ExtraLarge {
+// 	width: 450px;
+// }
 
-.PatientInfo_left.Gigantic {
-	width: 500px;
-}
+// .PatientInfo_left.Gigantic {
+// 	width: 500px;
+// }
 
-.PatientInfo_left.ExtraGigantic {
-	width: 550px;
-}
+// .PatientInfo_left.ExtraGigantic {
+// 	width: 550px;
+// }
 
-.PatientInfo_left.Colossal {
-	width: 600px;
-}
+// .PatientInfo_left.Colossal {
+// 	width: 600px;
+// }
 
-.PatientInfo div[class*='ThemeGrid_Width'] {
-	vertical-align: middle;
-}
+// .PatientInfo div[class*='ThemeGrid_Width'] {
+// 	vertical-align: middle;
+// }
 
-.PatientInfo .Columns .Column {
-	vertical-align: middle;
-}
+// .PatientInfo .Columns .Column {
+// 	vertical-align: middle;
+// }
 
-.tablet .PatientInfo_right .DoubleText > div {
-	margin-left: 6px;
-	margin-right: 0;
-}
+// .tablet .PatientInfo_right .DoubleText > div {
+// 	margin-left: 6px;
+// 	margin-right: 0;
+// }
 
-.tablet .PatientInfo_right > div:first-child {
-	margin-left: 0;
-}
+// .tablet .PatientInfo_right > div:first-child {
+// 	margin-left: 0;
+// }
 
-.tablet .PatientInfo {
-	margin-top: 0;
-}
+// .tablet .PatientInfo {
+// 	margin-top: 0;
+// }
 
-.tablet .PatientInfo_right > div {
-	display: table-cell;
-}
+// .tablet .PatientInfo_right > div {
+// 	display: table-cell;
+// }
 
-.tablet .CardPatientInfo_left,
-.tablet .PatientInfo .PatientInfo_left {
-	display: block;
-	width: 100%;
-}
+// .tablet .CardPatientInfo_left,
+// .tablet .PatientInfo .PatientInfo_left {
+// 	display: block;
+// 	width: 100%;
+// }
 
-.tablet
-	.PatientInfo
-	.DateTimeRangePicker.onlyDate
-	.DateTimeRangePicker-input
-	input[type='text'] {
-	width: 115px;
-}
+// .tablet
+// 	.PatientInfo
+// 	.DateTimeRangePicker.onlyDate
+// 	.DateTimeRangePicker-input
+// 	input[type='text'] {
+// 	width: 115px;
+// }
 
-.phone .PatientInfo {
-	display: block;
-}
+// .phone .PatientInfo {
+// 	display: block;
+// }
 
-.phone .PatientInfo > div {
-	display: block;
-	width: 100%;
-}
+// .phone .PatientInfo > div {
+// 	display: block;
+// 	width: 100%;
+// }
 
-.phone .PatientInfo .Badgeclassification {
-	display: block;
-	margin-right: 500px;
-	width: 100%;
-}
+// .phone .PatientInfo .Badgeclassification {
+// 	display: block;
+// 	margin-right: 500px;
+// 	width: 100%;
+// }
 
-.phone .PatientInfo_right > div {
-	display: inline-block;
-	margin-top: 10px;
-	width: 100%;
-}
+// .phone .PatientInfo_right > div {
+// 	display: inline-block;
+// 	margin-top: 10px;
+// 	width: 100%;
+// }
 
-.FA .PatientInfo .PatientInfo_right,
-.AR .PatientInfo .PatientInfo_right {
-	font-size: 15px;
-}
+// .FA .PatientInfo .PatientInfo_right,
+// .AR .PatientInfo .PatientInfo_right {
+// 	font-size: 15px;
+// }
 
-.FA .PatientInfo_left .PatientInfo__icon,
-.AR .PatientInfo_left .PatientInfo__icon {
-	margin-left: 10px;
-}
+// .FA .PatientInfo_left .PatientInfo__icon,
+// .AR .PatientInfo_left .PatientInfo__icon {
+// 	margin-left: 10px;
+// }
 
-.FA .PatientInfo_left .PatientInfo_Text,
-.AR .PatientInfo_left .PatientInfo_Text {
-	margin-left: 0;
-	margin-right: 10px;
-}
+// .FA .PatientInfo_left .PatientInfo_Text,
+// .AR .PatientInfo_left .PatientInfo_Text {
+// 	margin-left: 0;
+// 	margin-right: 10px;
+// }
 
-.FA.tablet .PatientInfo_right > div:first-child,
-.AR.tablet .PatientInfo_right > div:first-child {
-	margin-right: 0;
-}
+// .FA.tablet .PatientInfo_right > div:first-child,
+// .AR.tablet .PatientInfo_right > div:first-child {
+// 	margin-right: 0;
+// }
 
-.FA.tablet .PatientInfo_right .DoubleText > div,
-.AR.tablet .PatientInfo_right .DoubleText > div {
-	margin-left: 0;
-	margin-right: 6px;
-}
+// .FA.tablet .PatientInfo_right .DoubleText > div,
+// .AR.tablet .PatientInfo_right .DoubleText > div {
+// 	margin-left: 0;
+// 	margin-right: 6px;
+// }
 
 /*------------------------------------------------------------*/
 /* 9.8 Sapphire Patterns > Cards > CardPatientTable ***********/
@@ -12729,19 +12729,19 @@ a.Button.Icon:hover {
 //     width: 100%;
 // }
 
-.SectionExpandable_contentCustom {
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
-	border-top: none;
-	box-sizing: content-box;
-	height: 0;
-	margin-top: 0;
-	overflow: hidden;
-	padding: 0 10px;
-	-webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
-	transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
-	visibility: visible;
-}
+// .SectionExpandable_contentCustom {
+// 	border-bottom-left-radius: 4px;
+// 	border-bottom-right-radius: 4px;
+// 	border-top: none;
+// 	box-sizing: content-box;
+// 	height: 0;
+// 	margin-top: 0;
+// 	overflow: hidden;
+// 	padding: 0 10px;
+// 	-webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+// 	transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+// 	visibility: visible;
+// }
 
 // .SectionExpandableCustom.expanded .SectionExpandable_headerCustom .SectionExpandable__icon .fa {
 //     transform: rotate(180deg);
@@ -12753,10 +12753,10 @@ a.Button.Icon:hover {
 //     transition: all .5s;
 // }
 
-.phone .Expandable_actions {
-	min-width: 60px;
-	padding: 5px;
-}
+// .phone .Expandable_actions {
+// 	min-width: 60px;
+// 	padding: 5px;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.29 Sapphire Patterns > Controls_Custom_Patterns > SectionExpandableInside *********/
@@ -32554,13 +32554,13 @@ div.LineInfo {
 //     -servicestudio-text-align: center;
 // }
 
-.PatientInfo {
-	-servicestudio-width: 100% !important;
-}
+// .PatientInfo {
+// 	-servicestudio-width: 100% !important;
+// }
 
-.PatientInfo_left {
-	-servicestudio-min-width: 300px !important;
-}
+// .PatientInfo_left {
+// 	-servicestudio-min-width: 300px !important;
+// }
 
 .SmallContainer {
 	-servicestudio-background-color: #fff !important;
@@ -33659,21 +33659,21 @@ div.template-item{
 	width: 80px;
 }
 
-.PatientInfo_right .Expired,
-.PatientInfo_right .NearExpiry {
-	margin: 5px;
-}
+// .PatientInfo_right .Expired,
+// .PatientInfo_right .NearExpiry {
+// 	margin: 5px;
+// }
 
-.tablet .PatientInfo_right .Expired,
-.tablet .PatientInfo_right .ExpiryCard,
-.tablet .PatientInfo_right .NearExpiry {
-	margin: 0;
-	padding: 0;
-}
+// .tablet .PatientInfo_right .Expired,
+// .tablet .PatientInfo_right .ExpiryCard,
+// .tablet .PatientInfo_right .NearExpiry {
+// 	margin: 0;
+// 	padding: 0;
+// }
 
-.tablet.portrait .PatientInfo_right .ExpiryCard {
-	white-space: nowrap;
-}
+// .tablet.portrait .PatientInfo_right .ExpiryCard {
+// 	white-space: nowrap;
+// }
 
 /**** Display Auxiliar Styles *****/
 

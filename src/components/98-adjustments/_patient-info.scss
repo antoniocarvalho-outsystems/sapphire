@@ -1,0 +1,115 @@
+.PatientInfo {
+	-servicestudio-width: 100% !important;
+
+	&_left {
+		-servicestudio-min-width: 300px !important;
+	}
+
+	div[class*='ThemeGrid_Width'] {
+		vertical-align: middle;
+	}
+
+	.Columns .Column {
+		vertical-align: middle;
+	}
+}
+
+.ListRecords {
+	.PatientInfo:last-of-type {
+		border-bottom: 1px solid $light-grey;
+	}
+
+	span {
+		&:last-of-type .PatientInfo {
+			border-bottom: 1px solid $light-grey;
+		}
+
+		.PatientInfo {
+			border-bottom: 1px solid $light-grey;
+			border-left: 1px solid $light-grey;
+			border-right: 1px solid $light-grey;
+			margin-top: -1px;
+		}
+	}
+}
+
+.tablet {
+	&.AR,
+	&.FA {
+		.PatientInfo_right .DoubleText > div {
+			margin-left: 0;
+			margin-right: 6px;
+		}
+	}
+
+	&.portrait .PatientInfo_right .ExpiryCard {
+		white-space: nowrap;
+	}
+
+	.PatientInfo {
+		margin-top: 0;
+
+		&_left {
+			display: block;
+			width: 100%;
+
+			&.MediumLarge {
+				width: 205px;
+			}
+		}
+
+		&_right {
+			.DoubleText > div {
+				margin-left: 6px;
+				margin-right: 0;
+			}
+
+			div:first-child {
+				margin-left: 0;
+			}
+
+			> div {
+				display: table-cell;
+			}
+
+			.Expired,
+			.ExpiryCard,
+			.NearExpiry {
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.DateTimeRangePicker.onlyDate .DateTimeRangePicker-input input[type='text'] {
+			width: 115px;
+		}
+	}
+
+	.CardPatientInfo_left {
+		display: block;
+		width: 100%;
+	}
+}
+
+.phone {
+	.PatientInfo {
+		display: block;
+
+		&_right > div {
+			display: inline-block;
+			margin-top: 10px;
+			width: 100%;
+		}
+
+		> div {
+			display: block;
+			width: 100%;
+		}
+
+		.Badgeclassification {
+			display: block;
+			margin-right: 500px;
+			width: 100%;
+		}
+	}
+}

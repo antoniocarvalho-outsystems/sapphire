@@ -1,0 +1,145 @@
+.PatientInfo {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	display: table;
+	margin-top: -1px;
+	min-height: 56px;
+	width: 100%;
+
+	&:first-of-type {
+		border-top: 1px solid $light-grey;
+	}
+
+	&_left {
+		display: table-cell;
+		padding: 10px;
+		vertical-align: middle;
+		width: 41%;
+
+		&.Female {
+			background-color: $pink-light-2;
+			color: $sapphire-color-text-regular;
+
+			.PatientInfo__icon {
+				background-color: $pink-light-2;
+				color: $sapphire-female;
+			}
+		}
+
+		&.Male {
+			background-color: $blue-light-2;
+			color: $sapphire-color-text-regular;
+
+			.PatientInfo__icon {
+				background-color: $blue-light-2;
+				color: $sapphire-male;
+			}
+		}
+
+		&.unidentified {
+			background-color: $body-color;
+			color: $sapphire-color-text-regular;
+		}
+
+		&.ExtraTiny {
+			width: 50px;
+		}
+
+		&.Tiny {
+			width: 100px;
+		}
+
+		&.ExtraSmall {
+			width: 150px;
+		}
+
+		&.Small {
+			width: 200px;
+		}
+
+		&.SmallMedium {
+			width: 250px;
+
+			.PatientInfo_Text {
+				width: 180px;
+				word-break: break-word;
+			}
+		}
+
+		&.Medium {
+			width: 300px;
+		}
+
+		&.MediumLarge {
+			width: 350px;
+		}
+
+		&.Large {
+			width: 400px;
+		}
+
+		&.ExtraLarge {
+			width: 450px;
+		}
+
+		&.Gigantic {
+			width: 500px;
+		}
+
+		&.ExtraGigantic {
+			width: 550px;
+		}
+
+		&.Colossal {
+			width: 600px;
+		}
+
+		.PatientInfo_Text {
+			margin-left: 10px;
+			margin-right: 0;
+		}
+
+		.PatientInfo__flag {
+			vertical-align: bottom;
+		}
+	}
+
+	&_right {
+		display: table;
+		padding: 10px;
+		vertical-align: middle;
+		width: 100%;
+
+		> div {
+			align-items: center;
+			display: table-cell;
+		}
+
+		.Expired,
+		.NearExpiry {
+			margin: 5px;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.PatientInfo {
+		&_right {
+			font-size: 1.071em;
+
+			> div:first-child {
+				margin-right: 0;
+			}
+		}
+
+		&_Text {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+
+		&__icon {
+			margin-left: 10px;
+		}
+	}
+}
