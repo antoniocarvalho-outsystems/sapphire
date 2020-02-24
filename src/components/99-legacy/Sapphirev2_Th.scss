@@ -28897,145 +28897,145 @@ a.Button.MedInteractions:before {
 }
 
 /*StaffMng - To be reviewd*/
-.UnitDropContainer {
-	background-color: #fff;
-	border: 1px solid #d2d6d6;
-	border-radius: 4px;
-	margin-bottom: 15px;
-	min-height: 150px;
-	min-width: 200px;
-	padding: 10px;
-	position: relative;
-}
+// .UnitDropContainer {
+// 	background-color: #fff;
+// 	border: 1px solid #d2d6d6;
+// 	border-radius: 4px;
+// 	margin-bottom: 15px;
+// 	min-height: 150px;
+// 	min-width: 200px;
+// 	padding: 10px;
+// 	position: relative;
+// }
 
-.UnitDropContainer.NoDoctors:before {
-	color: #ddd;
-	content: 'Drag Doctors Here';
-	font-family: 'globeregular';
-	font-size: 1.6675rem;
-	font-weight: bold;
-	left: 20px;
-	position: absolute;
-	text-align: center;
-	top: 70px;
-	width: 160px;
-}
+// .UnitDropContainer.NoDoctors:before {
+// 	color: #ddd;
+// 	content: 'Drag Doctors Here';
+// 	font-family: 'globeregular';
+// 	font-size: 1.6675rem;
+// 	font-weight: bold;
+// 	left: 20px;
+// 	position: absolute;
+// 	text-align: center;
+// 	top: 70px;
+// 	width: 160px;
+// }
 
-.UnitDropContainer.AddUnit .DoctorName.UnitLessDoctor {
-	margin: 5px 0 0 0;
-}
+// .UnitDropContainer.AddUnit .DoctorName.UnitLessDoctor {
+// 	margin: 5px 0 0 0;
+// }
 
-.UnitDropContainer.AddUnit div.AddMessage > div,
-.UnitDropContainer.UnitLess div.NoDoctors {
-	color: #ddd;
-	font-family: 'globeregular';
-	font-size: 1.6675rem;
-	font-weight: bold;
-}
+// .UnitDropContainer.AddUnit div.AddMessage > div,
+// .UnitDropContainer.UnitLess div.NoDoctors {
+// 	color: #ddd;
+// 	font-family: 'globeregular';
+// 	font-size: 1.6675rem;
+// 	font-weight: bold;
+// }
 
-.UnitDropContainer.AddUnit div.AddMessage > div:first-child {
-	font-size: 68px;
-}
+// .UnitDropContainer.AddUnit div.AddMessage > div:first-child {
+// 	font-size: 68px;
+// }
 
-.UnitDropContainer.Over,
-.UnitDropContainer.AddUnit:hover {
-	background-color: #feffc9;
-}
+// .UnitDropContainer.Over,
+// .UnitDropContainer.AddUnit:hover {
+// 	background-color: #feffc9;
+// }
 
-.UnitDropContainer > div.UnitName {
-	border-bottom: 1px solid #d2d6d6;
-	font-family: 'globeregular';
-	font-size: 1.395rem;
-	font-weight: bold;
-	line-height: 2.75rem;
-	padding-bottom: 5px;
-}
+// .UnitDropContainer > div.UnitName {
+// 	border-bottom: 1px solid #d2d6d6;
+// 	font-family: 'globeregular';
+// 	font-size: 1.395rem;
+// 	font-weight: bold;
+// 	line-height: 2.75rem;
+// 	padding-bottom: 5px;
+// }
 
-.UnitDropContainer:not(.UnitLess) > div.UnitName {
-	margin-bottom: 5px;
-}
+// .UnitDropContainer:not(.UnitLess) > div.UnitName {
+// 	margin-bottom: 5px;
+// }
 
-.UnitDropContainer > div.DeleteUnit {
-	position: absolute;
-	right: 10px;
-	top: 10px;
-}
+// .UnitDropContainer > div.DeleteUnit {
+// 	position: absolute;
+// 	right: 10px;
+// 	top: 10px;
+// }
 
-.FA .UnitDropContainer > div.DeleteUnit,
-.AR .UnitDropContainer > div.DeleteUnit {
-	left: 10px;
-	right: auto;
-}
+// .FA .UnitDropContainer > div.DeleteUnit,
+// .AR .UnitDropContainer > div.DeleteUnit {
+// 	left: 10px;
+// 	right: auto;
+// }
 
-.UnitDropContainer > div.DeleteUnit:hover {
-	color: #03a8b1;
-}
+// .UnitDropContainer > div.DeleteUnit:hover {
+// 	color: #03a8b1;
+// }
 
-.UnitDropContainer div.DoctorName {
-	background-color: #fff;
-	border: 1px solid #d2d6d6;
-	border-radius: 2px;
-	font-size: 1.5rem;
-	line-height: 1.75rem;
-	margin-top: 5px;
-	position: relative;
-}
+// .UnitDropContainer div.DoctorName {
+// 	background-color: #fff;
+// 	border: 1px solid #d2d6d6;
+// 	border-radius: 2px;
+// 	font-size: 1.5rem;
+// 	line-height: 1.75rem;
+// 	margin-top: 5px;
+// 	position: relative;
+// }
 
-.UnitDropContainer div.DoctorName:hover,
-.UnitDropContainer div.DoctorName.Dragging {
-	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-}
+// .UnitDropContainer div.DoctorName:hover,
+// .UnitDropContainer div.DoctorName.Dragging {
+// 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+// }
 
-.UnitDropContainer div.DoctorName > div.DragHandler {
-	min-width: 140px;
-	padding: 5px 10px 5px 3px;
-}
+// .UnitDropContainer div.DoctorName > div.DragHandler {
+// 	min-width: 140px;
+// 	padding: 5px 10px 5px 3px;
+// }
 
-.FA .UnitDropContainer div.DoctorName > div.DragHandler,
-.AR .UnitDropContainer div.DoctorName > div.DragHandler {
-	padding: 5px 3px 5px 10px;
-}
+// .FA .UnitDropContainer div.DoctorName > div.DragHandler,
+// .AR .UnitDropContainer div.DoctorName > div.DragHandler {
+// 	padding: 5px 3px 5px 10px;
+// }
 
-.UnitDropContainer div.DoctorName > div.DragHandler:before {
-	content: '\e656';
-	cursor: move;
-	display: inline-block;
-	font-family: 'Sapphire-Icon-Font';
-	font-size: 26px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-	margin-right: 3px;
-	speak: none;
-	text-transform: none;
-	vertical-align: middle;
-}
+// .UnitDropContainer div.DoctorName > div.DragHandler:before {
+// 	content: '\e656';
+// 	cursor: move;
+// 	display: inline-block;
+// 	font-family: 'Sapphire-Icon-Font';
+// 	font-size: 26px;
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// 	font-style: normal;
+// 	font-variant: normal;
+// 	font-weight: normal;
+// 	margin-right: 3px;
+// 	speak: none;
+// 	text-transform: none;
+// 	vertical-align: middle;
+// }
 
-.FA .UnitDropContainer div.DoctorName > div.DragHandler:before,
-.AR .UnitDropContainer div.DoctorName > div.DragHandler:before {
-	margin-left: 3px;
-	margin-right: auto;
-}
+// .FA .UnitDropContainer div.DoctorName > div.DragHandler:before,
+// .AR .UnitDropContainer div.DoctorName > div.DragHandler:before {
+// 	margin-left: 3px;
+// 	margin-right: auto;
+// }
 
-.UnitDropContainer div.DoctorName > div.DragHandler + div {
-	line-height: 35px;
-	text-align: center;
-	width: 25px;
-}
+// .UnitDropContainer div.DoctorName > div.DragHandler + div {
+// 	line-height: 35px;
+// 	text-align: center;
+// 	width: 25px;
+// }
 
-.UnitDropContainer
-	div.DoctorName
-	> div.DragHandler
-	+ div:not(.UnitResponsible):not(:hover) {
-	color: #ddd;
-}
+// .UnitDropContainer
+// 	div.DoctorName
+// 	> div.DragHandler
+// 	+ div:not(.UnitResponsible):not(:hover) {
+// 	color: #ddd;
+// }
 
-.UnitDropContainer div.DoctorName.Dragging {
-	cursor: move;
-	transform: rotate(4deg);
-}
+// .UnitDropContainer div.DoctorName.Dragging {
+// 	cursor: move;
+// 	transform: rotate(4deg);
+// }
 
 /*Admission_UI Planned Admission*/
 
@@ -32051,145 +32051,145 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
 
 /** StaffMng**/
 
-.UnitDropContainer {
-	background-color: #fff;
-	border: 1px solid #d2d6d6;
-	border-radius: 4px;
-	margin-bottom: 15px;
-	min-height: 150px;
-	min-width: 200px;
-	padding: 10px;
-	position: relative;
-}
+// .UnitDropContainer {
+// 	background-color: #fff;
+// 	border: 1px solid #d2d6d6;
+// 	border-radius: 4px;
+// 	margin-bottom: 15px;
+// 	min-height: 150px;
+// 	min-width: 200px;
+// 	padding: 10px;
+// 	position: relative;
+// }
 
-.UnitDropContainer.NoDoctors:before {
-	color: #ddd;
-	content: 'Drag Doctors Here';
-	font-family: 'globeregular';
-	font-size: 23px;
-	font-weight: bold;
-	left: 20px;
-	position: absolute;
-	text-align: center;
-	top: 70px;
-	width: 160px;
-}
+// .UnitDropContainer.NoDoctors:before {
+// 	color: #ddd;
+// 	content: 'Drag Doctors Here';
+// 	font-family: 'globeregular';
+// 	font-size: 23px;
+// 	font-weight: bold;
+// 	left: 20px;
+// 	position: absolute;
+// 	text-align: center;
+// 	top: 70px;
+// 	width: 160px;
+// }
 
-.UnitDropContainer.AddUnit .DoctorName.UnitLessDoctor {
-	margin: 5px 0 0 0;
-}
+// .UnitDropContainer.AddUnit .DoctorName.UnitLessDoctor {
+// 	margin: 5px 0 0 0;
+// }
 
-.UnitDropContainer.AddUnit .AddMessage > div,
-.UnitDropContainer.UnitLess .NoDoctors {
-	color: #ddd;
-	font-family: 'globeregular';
-	font-size: 23px;
-	font-weight: bold;
-}
+// .UnitDropContainer.AddUnit .AddMessage > div,
+// .UnitDropContainer.UnitLess .NoDoctors {
+// 	color: #ddd;
+// 	font-family: 'globeregular';
+// 	font-size: 23px;
+// 	font-weight: bold;
+// }
 
-.UnitDropContainer.AddUnit .AddMessage > div:first-child {
-	font-size: 68px;
-}
+// .UnitDropContainer.AddUnit .AddMessage > div:first-child {
+// 	font-size: 68px;
+// }
 
-.UnitDropContainer.Over,
-.UnitDropContainer.AddUnit:hover {
-	background-color: #feffc9;
-}
+// .UnitDropContainer.Over,
+// .UnitDropContainer.AddUnit:hover {
+// 	background-color: #feffc9;
+// }
 
-.UnitDropContainer > .UnitName {
-	border-bottom: 1px solid #d2d6d6;
-	font-family: 'globeregular';
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 39px;
-	padding-bottom: 5px;
-}
+// .UnitDropContainer > .UnitName {
+// 	border-bottom: 1px solid #d2d6d6;
+// 	font-family: 'globeregular';
+// 	font-size: 20px;
+// 	font-weight: bold;
+// 	line-height: 39px;
+// 	padding-bottom: 5px;
+// }
 
-.UnitDropContainer:not(.UnitLess) > .UnitName {
-	margin-bottom: 5px;
-}
+// .UnitDropContainer:not(.UnitLess) > .UnitName {
+// 	margin-bottom: 5px;
+// }
 
-.UnitDropContainer > .DeleteUnit {
-	position: absolute;
-	right: 10px;
-	top: 10px;
-}
+// .UnitDropContainer > .DeleteUnit {
+// 	position: absolute;
+// 	right: 10px;
+// 	top: 10px;
+// }
 
-.FA .UnitDropContainer > .DeleteUnit,
-.AR .UnitDropContainer > .DeleteUnit {
-	left: 10px;
-	right: auto;
-}
+// .FA .UnitDropContainer > .DeleteUnit,
+// .AR .UnitDropContainer > .DeleteUnit {
+// 	left: 10px;
+// 	right: auto;
+// }
 
-.UnitDropContainer > .DeleteUnit:hover {
-	color: #03a8b1;
-}
+// .UnitDropContainer > .DeleteUnit:hover {
+// 	color: #03a8b1;
+// }
 
-.UnitDropContainer .DoctorName {
-	background-color: #fff;
-	border: 1px solid #d2d6d6;
-	border-radius: 2px;
-	font-size: 1.5rem;
-	line-height: 25px;
-	margin-top: 5px;
-	position: relative;
-}
+// .UnitDropContainer .DoctorName {
+// 	background-color: #fff;
+// 	border: 1px solid #d2d6d6;
+// 	border-radius: 2px;
+// 	font-size: 1.5rem;
+// 	line-height: 25px;
+// 	margin-top: 5px;
+// 	position: relative;
+// }
 
-.UnitDropContainer .DoctorName:hover,
-.UnitDropContainer .DoctorName.Dragging {
-	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-}
+// .UnitDropContainer .DoctorName:hover,
+// .UnitDropContainer .DoctorName.Dragging {
+// 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+// }
 
-.UnitDropContainer .DoctorName > .DragHandler {
-	min-width: 140px;
-	padding: 5px 10px 5px 3px;
-}
+// .UnitDropContainer .DoctorName > .DragHandler {
+// 	min-width: 140px;
+// 	padding: 5px 10px 5px 3px;
+// }
 
-.FA .UnitDropContainer .DoctorName > .DragHandler,
-.AR .UnitDropContainer .DoctorName > .DragHandler {
-	padding: 5px 3px 5px 10px;
-}
+// .FA .UnitDropContainer .DoctorName > .DragHandler,
+// .AR .UnitDropContainer .DoctorName > .DragHandler {
+// 	padding: 5px 3px 5px 10px;
+// }
 
-.UnitDropContainer .DoctorName > .DragHandler:before {
-	content: '\e656';
-	cursor: move;
-	display: inline-block;
-	font-family: 'Sapphire-Icon-Font';
-	font-size: 26px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-	margin-right: 3px;
-	speak: none;
-	text-transform: none;
-	vertical-align: middle;
-}
+// .UnitDropContainer .DoctorName > .DragHandler:before {
+// 	content: '\e656';
+// 	cursor: move;
+// 	display: inline-block;
+// 	font-family: 'Sapphire-Icon-Font';
+// 	font-size: 26px;
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// 	font-style: normal;
+// 	font-variant: normal;
+// 	font-weight: normal;
+// 	margin-right: 3px;
+// 	speak: none;
+// 	text-transform: none;
+// 	vertical-align: middle;
+// }
 
-.FA .UnitDropContainer .DoctorName > .DragHandler:before,
-.AR .UnitDropContainer .DoctorName > .DragHandler:before {
-	margin-left: 3px;
-	margin-right: auto;
-}
+// .FA .UnitDropContainer .DoctorName > .DragHandler:before,
+// .AR .UnitDropContainer .DoctorName > .DragHandler:before {
+// 	margin-left: 3px;
+// 	margin-right: auto;
+// }
 
-.UnitDropContainer div.DoctorName > .DragHandler + div {
-	line-height: 35px;
-	text-align: center;
-	width: 25px;
-}
+// .UnitDropContainer div.DoctorName > .DragHandler + div {
+// 	line-height: 35px;
+// 	text-align: center;
+// 	width: 25px;
+// }
 
-.UnitDropContainer
-	.DoctorName
-	> .DragHandler
-	+ div:not(.UnitResponsible):not(:hover) {
-	color: #ddd;
-}
+// .UnitDropContainer
+// 	.DoctorName
+// 	> .DragHandler
+// 	+ div:not(.UnitResponsible):not(:hover) {
+// 	color: #ddd;
+// }
 
-div.UnitDropContainer div.DoctorName.Dragging {
-	cursor: move;
-	transform: rotate(4deg);
-}
+// div.UnitDropContainer div.DoctorName.Dragging {
+// 	cursor: move;
+// 	transform: rotate(4deg);
+// }
 
 .select2.select2-container.select2-container--default.select2-container--disabled
 	select2-container--focus
