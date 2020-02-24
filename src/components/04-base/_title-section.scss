@@ -1,0 +1,113 @@
+.Title_Section {
+	background-color: $regular-white;
+	background-position: center center;
+	background-size: cover;
+	box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.15);
+	color: $dark-grey;
+	margin-top: 0;
+	padding: 20px 20px 30px 20px;
+
+	// Color
+	&.Black {
+		background-color: $regular-black;
+		color: $regular-white;
+	}
+
+	&.Blue {
+		background-color: $regular-blue;
+		color: $regular-white;
+	}
+
+	&.Transparent {
+		background-color: transparent;
+	}
+
+	&.White {
+		background-color: $regular-white;
+	}
+
+	&.Yellow {
+		background-color: $regular-yellow;
+		color: $regular-white;
+
+		.SectionWebsite_title {
+			color: $regular-white;
+		}
+	}
+
+	&.Orange {
+		background-color: $regular-orange;
+		color: $regular-white;
+	}
+
+	&.Red {
+		background-color: $regular-red;
+		color: $regular-white;
+	}
+
+	&.DarkRed {
+		background-color: $dark-red;
+		color: $regular-white;
+	}
+
+	&.Plum {
+		background-color: $regular-plum;
+		color: $regular-white;
+	}
+
+	&.DarkPlum {
+		background-color: $dark-plum;
+		color: $regular-white;
+	}
+
+	&.Green {
+		background-color: $regular-green;
+		color: $regular-white;
+	}
+
+	&.LightGreen {
+		background-color: $light-green;
+		color: $regular-white;
+	}
+
+	&.Turquoise {
+		background-color: $regular-blue;
+		color: $regular-white;
+	}
+
+	&.DarkBlue {
+		background-color: $dark-blue;
+		color: $regular-white;
+	}
+
+	&.Silver {
+		background-color: $regular-silver;
+	}
+
+	&.Gray {
+		background-color: $regular-grey;
+		color: $regular-white;
+	}
+
+	&.White,
+	&.Silver,
+	&.Transparent {
+		.SectionWebsite_title {
+			color: $dark-grey;
+		}
+	}
+
+	// General
+	&.BackgroundFixed {
+		background-attachment: fixed;
+	}
+
+	.Title {
+		line-height: 40px;
+		margin: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 50%;
+	}
+}

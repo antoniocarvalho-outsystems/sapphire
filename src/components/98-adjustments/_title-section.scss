@@ -1,0 +1,12 @@
+.phone .Title_Section .Title {
+	margin-bottom: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.phone,
+.tablet {
+	.Title_Section.BackgroundFixed {
+		background-attachment: scroll;
+	}
+}

@@ -1057,12 +1057,12 @@ body.ResizeParentIframe .MainContent {
 	padding: 0 !important;
 }
 
-/*
-.tablet .MainContent,
-.phone .MainContent{
-    padding:20px 60px 0 20px;
-}
-*/
+
+// .tablet .MainContent,
+// .phone .MainContent{
+//     padding:20px 60px 0 20px;
+// }
+
 .tablet .MainContent,
 .phone .MainContent {
 	padding: 0 30px 0 20px;
@@ -1173,127 +1173,127 @@ a.Header_ButtonSidebar {
 /* 2.6 Structure > Title Section ******************************/
 /*------------------------------------------------------------*/
 
-.Title_Section .Title {
-	line-height: 40px;
-	margin: 0;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	width: 50%;
-}
+// .Title_Section .Title {
+// 	line-height: 40px;
+// 	margin: 0;
+// 	overflow: hidden;
+// 	text-overflow: ellipsis;
+// 	white-space: nowrap;
+// 	width: 50%;
+// }
 
-.Title_Section {
-	background-color: #fff;
-	background-position: center center;
-	background-size: cover;
-	box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.15);
-	color: #333;
-	margin-top: 0;
-	padding: 20px 20px 30px 20px;
-}
+// .Title_Section {
+// 	background-color: #fff;
+// 	background-position: center center;
+// 	background-size: cover;
+// 	box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.15);
+// 	color: #333;
+// 	margin-top: 0;
+// 	padding: 20px 20px 30px 20px;
+// }
 
-.Title_Section.Black {
-	background-color: #131819;
-	color: #fff;
-}
+// .Title_Section.Black {
+// 	background-color: #131819;
+// 	color: #fff;
+// }
 
-.Title_Section.Blue {
-	background-color: #0074c1;
-	color: #fff;
-}
+// .Title_Section.Blue {
+// 	background-color: #0074c1;
+// 	color: #fff;
+// }
 
-.Title_Section.Transparent {
-	background-color: transparent;
-}
+// .Title_Section.Transparent {
+// 	background-color: transparent;
+// }
 
-.Title_Section.White {
-	background-color: #fff;
-}
+// .Title_Section.White {
+// 	background-color: #fff;
+// }
 
-.Title_Section.Yellow {
-	background-color: #dab702;
-	color: #fff;
-}
+// .Title_Section.Yellow {
+// 	background-color: #dab702;
+// 	color: #fff;
+// }
 
-.Title_Section.Orange {
-	background-color: #da6802;
-	color: #fff;
-}
+// .Title_Section.Orange {
+// 	background-color: #da6802;
+// 	color: #fff;
+// }
 
-.Title_Section.Red {
-	background-color: #d01a1a;
-	color: #fff;
-}
+// .Title_Section.Red {
+// 	background-color: #d01a1a;
+// 	color: #fff;
+// }
 
-.Title_Section.DarkRed {
-	background-color: #b10000;
-	color: #fff;
-}
+// .Title_Section.DarkRed {
+// 	background-color: #b10000;
+// 	color: #fff;
+// }
 
-.Title_Section.Plum {
-	background-color: #c32b87;
-	color: #fff;
-}
+// .Title_Section.Plum {
+// 	background-color: #c32b87;
+// 	color: #fff;
+// }
 
-.Title_Section.DarkPlum {
-	background-color: #970263;
-	color: #fff;
-}
+// .Title_Section.DarkPlum {
+// 	background-color: #970263;
+// 	color: #fff;
+// }
 
-.Title_Section.Green {
-	background-color: #388e3c;
-	color: #fff;
-}
+// .Title_Section.Green {
+// 	background-color: #388e3c;
+// 	color: #fff;
+// }
 
-.Title_Section.LightGreen {
-	background-color: #c2dea8;
-	color: #fff;
-}
+// .Title_Section.LightGreen {
+// 	background-color: #c2dea8;
+// 	color: #fff;
+// }
 
-.Title_Section.Turquoise {
-	background-color: #00b0c1;
-	color: #fff;
-}
+// .Title_Section.Turquoise {
+// 	background-color: #00b0c1;
+// 	color: #fff;
+// }
 
-.Title_Section.DarkBlue {
-	background-color: #194968;
-	color: #fff;
-}
+// .Title_Section.DarkBlue {
+// 	background-color: #194968;
+// 	color: #fff;
+// }
 
-.Title_Section.Silver {
-	background-color: #dadbde;
-}
+// .Title_Section.Silver {
+// 	background-color: #dadbde;
+// }
 
-.Title_Section.Gray {
-	background-color: #79868a;
-	color: #fff;
-}
+// .Title_Section.Gray {
+// 	background-color: #79868a;
+// 	color: #fff;
+// }
 
-.Title_Section.BackgroundFixed {
-	background-attachment: fixed;
-}
+// .Title_Section.BackgroundFixed {
+// 	background-attachment: fixed;
+// }
 
-.tablet .Title_Section.BackgroundFixed,
-.phone .Title_Section.BackgroundFixed {
-	background-attachment: scroll;
-}
+// .tablet .Title_Section.BackgroundFixed,
+// .phone .Title_Section.BackgroundFixed {
+// 	background-attachment: scroll;
+// }
 
 .UseSidebar .Title_Section {
 	margin: 70px 20px 0 20px;
 	padding: 20px;
 }
 
-.Title_Section.Silver .SectionWebsite_title,
-.Title_Section.Transparent .SectionWebsite_title,
-.Title_Section.White .SectionWebsite_title {
-	color: #333;
-}
+// .Title_Section.Silver .SectionWebsite_title,
+// .Title_Section.Transparent .SectionWebsite_title,
+// .Title_Section.White .SectionWebsite_title {
+// 	color: #333;
+// }
 
-.Title_Section.Yellow .SectionWebsite_title {
-	color: #fff;
-}
+// .Title_Section.Yellow .SectionWebsite_title {
+// 	color: #fff;
+// }
 
-/* Structure > Page Title Actions */
+// /* Structure > Page Title Actions */
 .Title_Section .Actions {
 	line-height: 32px;
 	text-align: right;
@@ -1326,11 +1326,11 @@ a.Header_ButtonSidebar {
 	margin-bottom: 0;
 }
 
-.phone .Title_Section .Title {
-	margin-bottom: 10px;
-	text-align: center;
-	width: 100%;
-}
+// .phone .Title_Section .Title {
+// 	margin-bottom: 10px;
+// 	text-align: center;
+// 	width: 100%;
+// }
 
 .phone .Title_Section .Actions,
 .phone .Title_Section a.ActionAdd,
