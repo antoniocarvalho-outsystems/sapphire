@@ -1,0 +1,68 @@
+.ExpandableHeader {
+	&_left {
+		display: table;
+		min-width: 120px;
+	}
+
+	&__right {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&___rightTitle {
+		display: block;
+	}
+
+	&__icon {
+		display: table-cell;
+		line-height: 100%;
+		vertical-align: middle;
+		width: 1%;
+	}
+
+	&__date {
+		display: table-cell;
+		padding-left: 10px;
+		text-align: center;
+		vertical-align: middle;
+		white-space: nowrap;
+		width: 1%;
+
+		&:empty {
+			display: none;
+
+			+ .ExpandableHeader__iconWrapper {
+				padding: 0 10px;
+			}
+		}
+	}
+
+	&__iconWrapper {
+		display: table-cell;
+		line-height: 100%;
+		padding: 0 25px;
+		vertical-align: middle;
+		width: 1px;
+	}
+
+	&___expandableIcon {
+		border: 1px solid $light-grey;
+		border-radius: 50%;
+		display: inline-block;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		transition: transform 0.5s;
+		width: 20px;
+	}
+}
+
+.AR,
+.FA {
+	.ExpandableHeader {
+		&__date {
+			padding-left: auto;
+			padding-right: 10px;
+		}
+	}
+}
