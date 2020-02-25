@@ -14837,125 +14837,125 @@ a.Button.Icon:hover {
 /* 9.52 Sapphire Patterns > Custom_Patterns > LineWarning ******************************/
 /*-------------------------------------------------------------------------------------*/
 
-.LineWarns .LineWarns_list {
-  border-radius: 2px;
-  color: #262525;
-  display: table;
-  display: table;
-  font-size: 14px;
-  overflow: hidden;
-  padding: 5px 10px;
-  white-space: nowrap;
-  width: 100%;
-}
+// .LineWarns .LineWarns_list {
+//   border-radius: 2px;
+//   color: #262525;
+//   display: table;
+//   display: table;
+//   font-size: 14px;
+//   overflow: hidden;
+//   padding: 5px 10px;
+//   white-space: nowrap;
+//   width: 100%;
+// }
 
-.LineWarns .LineWarns_list>div {
-  display: table-cell;
-  vertical-align: middle;
-}
+// .LineWarns .LineWarns_list>div {
+//   display: table-cell;
+//   vertical-align: middle;
+// }
 
-.LineWarns .LineWarns__icon {
-  color: rgba(50, 50, 50, 0.3);
-  font-size: initial;
-  margin-right: 6px;
-  min-width: 24px;
-}
+// .LineWarns .LineWarns__icon {
+//   color: rgba(50, 50, 50, 0.3);
+//   font-size: initial;
+//   margin-right: 6px;
+//   min-width: 24px;
+// }
 
-.LineWarns.BgYellow {
-  background-color: #feffc9;
-  border: 1px solid #d7d8a6;
-}
+// .LineWarns.BgYellow {
+//   background-color: #feffc9;
+//   border: 1px solid #d7d8a6;
+// }
 
-.LineWarns.BgRed {
-  background-color: #f9d5d5;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+// .LineWarns.BgRed {
+//   background-color: #f9d5d5;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+// }
 
-.desktop .LineWarningActions {
-  display: inline-block;
-  min-width: 10%;
-  text-align: right;
-}
+// .desktop .LineWarningActions {
+//   display: inline-block;
+//   min-width: 10%;
+//   text-align: right;
+// }
 
-.LayoutPopup .LineWarns .LineWarns_list {
-  white-space: normal;
-}
+// .LayoutPopup .LineWarns .LineWarns_list {
+//   white-space: normal;
+// }
 
-.phone .LineWarningActions .Button,
-.tablet .LineWarningActions .Button,
-.LineWarningActions .Button {
-  margin-top: 0;
-}
+// .phone .LineWarningActions .Button,
+// .tablet .LineWarningActions .Button,
+// .LineWarningActions .Button {
+//   margin-top: 0;
+// }
 
-.tablet .LineWarningActions,
-.phone .LineWarningActions {
-  display: block;
-}
+// .tablet .LineWarningActions,
+// .phone .LineWarningActions {
+//   display: block;
+// }
 
-.AR.desktop .LineWarningActions,
-.FA.desktop .LineWarningActions {
-  display: block;
-}
+// .AR.desktop .LineWarningActions,
+// .FA.desktop .LineWarningActions {
+//   display: block;
+// }
 
-.LineWarns.BgRed:hover {
-  box-shadow: none;
-}
+// .LineWarns.BgRed:hover {
+//   box-shadow: none;
+// }
 
-.desktop.small .LineWarns__message {
-  width: 66%;
-}
+// .desktop.small .LineWarns__message {
+//   width: 66%;
+// }
 
-.desktop.small .LayoutPopup .LineWarns__message {
-  width: 100%;
-}
+// .desktop.small .LayoutPopup .LineWarns__message {
+//   width: 100%;
+// }
 
-.tablet .LineWarns__message {
-  max-width: 100%;
-}
+// .tablet .LineWarns__message {
+//   max-width: 100%;
+// }
 
-.tablet .LineWarns .LineWarns__buttonContainer {
-  text-align: right;
-  width: 19%;
-}
+// .tablet .LineWarns .LineWarns__buttonContainer {
+//   text-align: right;
+//   width: 19%;
+// }
 
-.AR.tablet .LineWarns .LineWarns__buttonContainer,
-.FA.tablet .LineWarns .LineWarns__buttonContainer {
-  text-align: left;
-}
+// .AR.tablet .LineWarns .LineWarns__buttonContainer,
+// .FA.tablet .LineWarns .LineWarns__buttonContainer {
+//   text-align: left;
+// }
 
-.tablet.portrait .LineWarns_list,
-.phone .LineWarns_list {
-  display: table;
-  white-space: normal;
-}
+// .tablet.portrait .LineWarns_list,
+// .phone .LineWarns_list {
+//   display: table;
+//   white-space: normal;
+// }
 
-.tablet.portrait .LineWarns_list>div,
-.phone .LineWarns_list>div {
-  display: table-cell;
-  line-height: 2;
-  white-space: normal;
-}
+// .tablet.portrait .LineWarns_list>div,
+// .phone .LineWarns_list>div {
+//   display: table-cell;
+//   line-height: 2;
+//   white-space: normal;
+// }
 
-.tablet.portrait .LineWarns_list>span,
-.phone .LineWarns_list>span {
-  display: none;
-}
+// .tablet.portrait .LineWarns_list>span,
+// .phone .LineWarns_list>span {
+//   display: none;
+// }
 
-.phone .LineWarns .LineWarns__buttonContainer {
-  line-height: 18px;
-  width: 49%;
-}
+// .phone .LineWarns .LineWarns__buttonContainer {
+//   line-height: 18px;
+//   width: 49%;
+// }
 
-.LineWarns .LineWarns__buttonContainer {
-  text-align: right;
-  width: 11%;
-}
+// .LineWarns .LineWarns__buttonContainer {
+//   text-align: right;
+//   width: 11%;
+// }
 
-.AR .LineWarns .LineWarns__buttonContainer,
-.FA .LineWarns .LineWarns__buttonContainer {
-  text-align: left;
-}
+// .AR .LineWarns .LineWarns__buttonContainer,
+// .FA .LineWarns .LineWarns__buttonContainer {
+//   text-align: left;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /*  9.53 Sapphire Patterns > Custom_Patterns > ListSelectorBlockBasic ******************/

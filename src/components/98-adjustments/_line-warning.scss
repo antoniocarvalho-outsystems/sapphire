@@ -1,0 +1,73 @@
+.desktop.small .LineWarns__message {
+	width: 66%;
+}
+
+.tablet {
+	&.portrait {
+		.LineWarns_list {
+			display: table;
+			white-space: normal;
+
+			> div {
+				display: table-cell;
+				line-height: 2;
+				white-space: normal;
+			}
+
+			> span {
+				display: none;
+			}
+		}
+	}
+
+	.LineWarns__message {
+		max-width: 100%;
+	}
+
+	.LineWarns__buttonContainer {
+		text-align: right;
+		width: 19%;
+	}
+}
+
+.phone {
+	.LineWarns_list {
+		display: table;
+		white-space: normal;
+
+		> div {
+			display: table-cell;
+			line-height: 2;
+			white-space: normal;
+		}
+
+		> span {
+			display: none;
+		}
+	}
+
+	.LineWarns__buttonContainer {
+		line-height: 18px;
+		width: 49%;
+	}
+}
+
+.phone,
+.tablet {
+	.LineWarningActions {
+		display: block;
+
+		.Button {
+			margin-top: 0;
+		}
+	}
+}
+
+.AR,
+.FA {
+	&.tablet {
+		.LineWarns__buttonContainer {
+			text-align: left;
+		}
+	}
+}
