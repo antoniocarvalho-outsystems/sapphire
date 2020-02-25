@@ -8,7 +8,7 @@ DropDownCategories
 FormField
 FullScreenTabs
 GenericGallery
-GenericPopupFlex
+LayoutPopup
 GenericStructure
 GenericStructureSection
 HourPicker
