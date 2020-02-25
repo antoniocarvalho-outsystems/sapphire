@@ -9650,296 +9650,296 @@ a.Button.Icon:hover {
 /*------------------------------------------------------------*/
 /* 9.9 Sapphire Patterns > Cards > Card_Surgeries *************/
 /*------------------------------------------------------------*/
-.Card_Surgeries_Container {
-	background-color: #fff;
-	border: solid 1px #d3d6d7;
-	border-radius: 2px;
-	color: #262525;
-	display: table;
-	min-height: 56px;
-	width: 100%;
-}
+// .Card_Surgeries_Container {
+// 	background-color: #fff;
+// 	border: solid 1px #d3d6d7;
+// 	border-radius: 2px;
+// 	color: #262525;
+// 	display: table;
+// 	min-height: 56px;
+// 	width: 100%;
+// }
 
-.Card_Surgeries_Description {
-	display: table-cell;
-	padding: 0 15px;
-	vertical-align: middle;
-	width: 80%;
-}
+// .Card_Surgeries_Description {
+// 	display: table-cell;
+// 	padding: 0 15px;
+// 	vertical-align: middle;
+// 	width: 80%;
+// }
 
-.Card_Surgeries_Description > div {
-	margin-left: auto;
-	margin-right: 10px;
-}
+// .Card_Surgeries_Description > div {
+// 	margin-left: auto;
+// 	margin-right: 10px;
+// }
 
-.FA .Card_Surgeries_Description > div,
-.AR .Card_Surgeries_Description > div {
-	margin-left: 10px;
-	margin-right: auto;
-}
+// .FA .Card_Surgeries_Description > div,
+// .AR .Card_Surgeries_Description > div {
+// 	margin-left: 10px;
+// 	margin-right: auto;
+// }
 
-.Others {
-}
+// .Others {
+// }
 
-.Card_Surgeries_Container__Others {
-	display: flex;
-	justify-content: flex-end;
-}
+// .Card_Surgeries_Container__Others {
+// 	display: flex;
+// 	justify-content: flex-end;
+// }
 
-.Image_Surgeries_Detail {
-	border-left: 0;
-	border-right: solid 1px #ddd;
-	display: table-cell;
-	height: 100%;
-	min-width: 170px;
-	padding: 5px 15px;
-	vertical-align: middle;
-	white-space: nowrap;
-}
+// .Image_Surgeries_Detail {
+// 	border-left: 0;
+// 	border-right: solid 1px #ddd;
+// 	display: table-cell;
+// 	height: 100%;
+// 	min-width: 170px;
+// 	padding: 5px 15px;
+// 	vertical-align: middle;
+// 	white-space: nowrap;
+// }
 
-.tablet .Card_Surgeries_Container {
-	display: block;
-}
+// .tablet .Card_Surgeries_Container {
+// 	display: block;
+// }
 
-.FA .Image_Surgeries_Detail,
-.AR .Image_Surgeries_Detail {
-	border-left: solid 1px #ddd;
-	border-right: 0;
-	display: table-cell;
-	height: 100%;
-	min-width: 170px;
-	padding: 5px 15px;
-	vertical-align: middle;
-	white-space: nowrap;
-}
+// .FA .Image_Surgeries_Detail,
+// .AR .Image_Surgeries_Detail {
+// 	border-left: solid 1px #ddd;
+// 	border-right: 0;
+// 	display: table-cell;
+// 	height: 100%;
+// 	min-width: 170px;
+// 	padding: 5px 15px;
+// 	vertical-align: middle;
+// 	white-space: nowrap;
+// }
 
-.Actions_Surgeries_Details {
-	align-items: center;
-	display: inline-flex;
-	height: 100%;
-}
+// .Actions_Surgeries_Details {
+// 	align-items: center;
+// 	display: inline-flex;
+// 	height: 100%;
+// }
 
-.Icon_Surgeries_Card {
-	margin-left: auto;
-	margin-right: 10px;
-}
+// .Icon_Surgeries_Card {
+// 	margin-left: auto;
+// 	margin-right: 10px;
+// }
 
-.FA .Icon_Surgeries_Card,
-.AR .Icon_Surgeries_Card {
-	margin-left: 10px;
-	margin-right: auto;
-}
+// .FA .Icon_Surgeries_Card,
+// .AR .Icon_Surgeries_Card {
+// 	margin-left: 10px;
+// 	margin-right: auto;
+// }
 
-.Card_Surgeries_Red {
-	background-color: #ffdede;
-	border-left: 2px solid #9f000f;
-	border-right: 0;
-}
+// .Card_Surgeries_Red {
+// 	background-color: #ffdede;
+// 	border-left: 2px solid #9f000f;
+// 	border-right: 0;
+// }
 
-.FA .Card_Surgeries_Red,
-.AR .Card_Surgeries_Red {
-	border-left: 0;
-	border-right: 2px solid #9f000f;
-}
+// .FA .Card_Surgeries_Red,
+// .AR .Card_Surgeries_Red {
+// 	border-left: 0;
+// 	border-right: 2px solid #9f000f;
+// }
 
-.Card_Surgeries_Red span {
-	color: #9f000f;
-}
+// .Card_Surgeries_Red span {
+// 	color: #9f000f;
+// }
 
-.Card_Surgeries_Brown {
-	background-color: #e6e2aa;
-	border-left: 2px solid #928d09;
-	border-right: 0;
-}
+// .Card_Surgeries_Brown {
+// 	background-color: #e6e2aa;
+// 	border-left: 2px solid #928d09;
+// 	border-right: 0;
+// }
 
-.AR .Card_Surgeries_Brown,
-.FA .Card_Surgeries_Brown {
-	background-color: #e6e2aa;
-	border-left: 0;
-	border-right: 2px solid #928d09;
-}
+// .AR .Card_Surgeries_Brown,
+// .FA .Card_Surgeries_Brown {
+// 	background-color: #e6e2aa;
+// 	border-left: 0;
+// 	border-right: 2px solid #928d09;
+// }
 
-.Card_Surgeries_Brown span {
-	color: #928d09;
-	font-size: 14px;
-}
+// .Card_Surgeries_Brown span {
+// 	color: #928d09;
+// 	font-size: 14px;
+// }
 
-.Card_Surgeries_Green {
-	background-color: #c2dea8;
-	border-left: 2px solid #4c762b;
-	border-right: 0;
-}
+// .Card_Surgeries_Green {
+// 	background-color: #c2dea8;
+// 	border-left: 2px solid #4c762b;
+// 	border-right: 0;
+// }
 
-.FA .Card_Surgeries_Green,
-.AR .Card_Surgeries_Green {
-	background-color: #c2dea8;
-	border-left: 0;
-	border-right: 2px solid #4c762b;
-}
+// .FA .Card_Surgeries_Green,
+// .AR .Card_Surgeries_Green {
+// 	background-color: #c2dea8;
+// 	border-left: 0;
+// 	border-right: 2px solid #4c762b;
+// }
 
-.Card_Surgeries_Green span {
-	color: #4c762b;
-}
+// .Card_Surgeries_Green span {
+// 	color: #4c762b;
+// }
 
-.Card_Surgeries_Men {
-	background-color: #e6f3f8;
-	border-left: 2px solid #004963;
-	border-right: 0;
-}
+// .Card_Surgeries_Men {
+// 	background-color: #e6f3f8;
+// 	border-left: 2px solid #004963;
+// 	border-right: 0;
+// }
 
-.FA .Card_Surgeries_Men,
-.AR .Card_Surgeries_Men {
-	background-color: #e6f3f8;
-	border-left: 0;
-	border-right: 2px solid #004963;
-}
+// .FA .Card_Surgeries_Men,
+// .AR .Card_Surgeries_Men {
+// 	background-color: #e6f3f8;
+// 	border-left: 0;
+// 	border-right: 2px solid #004963;
+// }
 
-.Card_Surgeries_Men span {
-	color: #004963;
-}
+// .Card_Surgeries_Men span {
+// 	color: #004963;
+// }
 
-.Card_Surgeries_Woman {
-	background-color: #fceaf9;
-	border-left: 2px solid #92537a;
-	border-right: 0;
-}
+// .Card_Surgeries_Woman {
+// 	background-color: #fceaf9;
+// 	border-left: 2px solid #92537a;
+// 	border-right: 0;
+// }
 
-.FA .Card_Surgeries_Woman,
-.AR .Card_Surgeries_Woman {
-	background-color: #fceaf9;
-	border-left: 0;
-	border-right: 2px solid #92537a;
-}
+// .FA .Card_Surgeries_Woman,
+// .AR .Card_Surgeries_Woman {
+// 	background-color: #fceaf9;
+// 	border-left: 0;
+// 	border-right: 2px solid #92537a;
+// }
 
-.Card_Surgeries_Unidentified {
-	background-color: #efefef;
-	border-left: none;
-	border-right: 0;
-}
+// .Card_Surgeries_Unidentified {
+// 	background-color: #efefef;
+// 	border-left: none;
+// 	border-right: 0;
+// }
 
-.FA .Card_Surgeries_Unidentified,
-.AR .Card_Surgeries_Unidentified {
-	background-color: #efefef;
-	border-left: 0;
-	border-right: none;
-}
+// .FA .Card_Surgeries_Unidentified,
+// .AR .Card_Surgeries_Unidentified {
+// 	background-color: #efefef;
+// 	border-left: 0;
+// 	border-right: none;
+// }
 
-.isEmpty {
-	background-color: #efefef;
-	border-left: none;
-	border-right: none;
-}
+// .isEmpty {
+// 	background-color: #efefef;
+// 	border-left: none;
+// 	border-right: none;
+// }
 
-.FA .isEmpty,
-.AR .isEmpty {
-	background-color: #efefef;
-	border-left: none;
-	border-right: none;
-}
+// .FA .isEmpty,
+// .AR .isEmpty {
+// 	background-color: #efefef;
+// 	border-left: none;
+// 	border-right: none;
+// }
 
-.isEmpty span {
-	color: #004963;
-}
+// .isEmpty span {
+// 	color: #004963;
+// }
 
-.Card_Surgeries_Unidentified span,
-.Card_Surgeries_Woman span {
-	color: #92537a;
-}
+// .Card_Surgeries_Unidentified span,
+// .Card_Surgeries_Woman span {
+// 	color: #92537a;
+// }
 
-.Title_Surgeries_Card {
-	padding: 0 20px;
-	white-space: normal;
-}
+// .Title_Surgeries_Card {
+// 	padding: 0 20px;
+// 	white-space: normal;
+// }
 
-.Title_Surgeries_Card .CardAll {
-	margin-left: 20px;
-	margin-right: 0;
-}
+// .Title_Surgeries_Card .CardAll {
+// 	margin-left: 20px;
+// 	margin-right: 0;
+// }
 
-.Title_Surgeries_Card .CardAll {
-	margin-left: 0;
-	margin-right: 20px;
-}
+// .Title_Surgeries_Card .CardAll {
+// 	margin-left: 0;
+// 	margin-right: 20px;
+// }
 
-.SmallCardSurgerie {
-	width: 120px !important;
-}
+// .SmallCardSurgerie {
+// 	width: 120px !important;
+// }
 
-.SmallCardSurgerie:hover {
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-	z-index: 1;
-}
+// .SmallCardSurgerie:hover {
+// 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+// 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+// 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+// 	z-index: 1;
+// }
 
-.Card_Surgeries_Actions {
-	display: table-cell;
-	text-align: right;
-	vertical-align: middle;
-}
+// .Card_Surgeries_Actions {
+// 	display: table-cell;
+// 	text-align: right;
+// 	vertical-align: middle;
+// }
 
-.phone .Card_Surgeries_Actions {
-	display: inline-block;
-}
+// .phone .Card_Surgeries_Actions {
+// 	display: inline-block;
+// }
 
-.phone .Card_Surgeries_Description .BadgeClassification {
-	margin-top: 10px;
-}
+// .phone .Card_Surgeries_Description .BadgeClassification {
+// 	margin-top: 10px;
+// }
 
-.FA .Card_Surgeries_Actions,
-.AR .Card_Surgeries_Actions {
-	text-align: left;
-}
+// .FA .Card_Surgeries_Actions,
+// .AR .Card_Surgeries_Actions {
+// 	text-align: left;
+// }
 
-.phone .Image_Surgeries_Detail,
-.tablet .Image_Surgeries_Detail {
-	border-left: transparent;
-	border-right: 0;
-	display: block;
-	text-align: center;
-	width: 100% !important;
-}
+// .phone .Image_Surgeries_Detail,
+// .tablet .Image_Surgeries_Detail {
+// 	border-left: transparent;
+// 	border-right: 0;
+// 	display: block;
+// 	text-align: center;
+// 	width: 100% !important;
+// }
 
-.phone .Image_Surgeries_Detail,
-.tablet .Image_Surgeries_Detail {
-	border-left: transparent;
-	border-right: 0;
-}
+// .phone .Image_Surgeries_Detail,
+// .tablet .Image_Surgeries_Detail {
+// 	border-left: transparent;
+// 	border-right: 0;
+// }
 
-.tablet .Card_Surgeries_Description {
-	display: table-cell;
-	width: 100%;
-}
+// .tablet .Card_Surgeries_Description {
+// 	display: table-cell;
+// 	width: 100%;
+// }
 
-.tablet .Actions_Surgeries_Details,
-.tablet .others_surgeries_details,
-.phone .others_surgeries_details,
-.phone .Actions_Surgeries_Details {
-	display: table-cell;
-}
+// .tablet .Actions_Surgeries_Details,
+// .tablet .others_surgeries_details,
+// .phone .others_surgeries_details,
+// .phone .Actions_Surgeries_Details {
+// 	display: table-cell;
+// }
 
-.phone .Actions_Surgeries_Details :first-child {
-	border: none;
-}
+// .phone .Actions_Surgeries_Details :first-child {
+// 	border: none;
+// }
 
-.phone .Actions_Surgeries_Details {
-	display: block;
-}
+// .phone .Actions_Surgeries_Details {
+// 	display: block;
+// }
 
-.phone .Card_Surgeries_Actions {
-	display: block;
-}
+// .phone .Card_Surgeries_Actions {
+// 	display: block;
+// }
 
-.phone .Card_Surgeries_Description {
-	display: table;
-	text-align: center;
-	width: 100%;
-}
+// .phone .Card_Surgeries_Description {
+// 	display: table;
+// 	text-align: center;
+// 	width: 100%;
+// }
 
-.phone .Card_Surgeries_Description .iconHorizontal {
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
+// .phone .Card_Surgeries_Description .iconHorizontal {
+// 	margin-bottom: 10px;
+// 	margin-top: 10px;
+// }
 
 /*------------------------------------------------------------*/
 /* 9.10 Sapphire Patterns > Cards > Dynamic_Card **************/
