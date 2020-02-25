@@ -1,0 +1,34 @@
+.ListRecords {
+	.AvailabilityCardContainer {
+		border-bottom: none;
+
+		&:last-of-type {
+			border-bottom: 1px solid $light-grey;
+		}
+	}
+}
+
+.tablet {
+	.AvailabilityCardRightContainer {
+		border-left: 0;
+	}
+
+	.AvailabilityCardLeftContainer,
+	.AvailabilityCardRightContainer {
+		display: block;
+		width: 100%;
+	}
+}
+
+.desktop.small {
+	.AvailabilityCardRightDate {
+		display: initial;
+	}
+}
+
+.phone,
+.tablet {
+	.ScheduleDate {
+		min-width: inherit;
+	}
+}

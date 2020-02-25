@@ -1,0 +1,76 @@
+.AvailabilityCardContainer {
+	border: 1px solid $light-grey;
+	border-radius: 3px;
+	display: table;
+	min-height: 50px;
+	width: 100%;
+
+	.AvailabilityCardLeftContainer {
+		background-color: $body-color;
+		color: $dark-grey;
+		display: table-cell;
+		font-family: $font-family-bold;
+		font-size: 1.143em;
+		padding: 5px;
+		text-align: center;
+		vertical-align: middle;
+		width: 55px;
+
+		&.AvailabilityCardLeftRed {
+			background-color: $light-red;
+		}
+	}
+
+	.AvailabilityCardRightContainer {
+		background-color: $regular-white;
+		border-left: 1px solid $light-grey;
+		border-radius: 3px;
+		display: table-cell;
+		padding: 5px 15px;
+		vertical-align: middle;
+
+		.AvailabilityCardRightContent {
+			width: 30%;
+		}
+
+		.AvailabilityCardRightDate {
+			text-align: right;
+			vertical-align: middle;
+			width: 70%;
+
+			.ScheduleDate {
+				min-width: 35%;
+			}
+
+			.ScheduleDateBold {
+				color: $dark-red;
+				font-family: $font-family-bold;
+			}
+
+			.ScheduleAction {
+				margin-left: 30px;
+				margin-right: 0;
+			}
+		}
+
+		> div {
+			vertical-align: middle;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.AvailabilityCardRightDate {
+		text-align: left;
+	}
+
+	.ScheduleAction {
+		margin-left: 0;
+		margin-right: 30px;
+	}
+
+	.AvailabilityCardRightDate div {
+		text-align: left !important;
+	}
+}

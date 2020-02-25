@@ -9129,118 +9129,118 @@ a.Button.Icon:hover {
 /* 9.4 Sapphire Patterns > Cards > Availability_Card **********/
 /*------------------------------------------------------------*/
 
-.AvailabilityCardContainer {
-	border: 1px solid #d2d1d0;
-	border-radius: 3px;
-	display: table;
-	min-height: 50px;
-	width: 100%;
-}
+// .AvailabilityCardContainer {
+// 	border: 1px solid #d2d1d0;
+// 	border-radius: 3px;
+// 	display: table;
+// 	min-height: 50px;
+// 	width: 100%;
+// }
 
-.AvailabilityCardLeftContainer {
-	background-color: #e1e6e9;
-	color: #333;
-	display: table-cell;
-	padding: 5px;
-	text-align: center;
-	vertical-align: middle;
-	width: 45px;
-}
+// .AvailabilityCardLeftContainer {
+// 	background-color: #e1e6e9;
+// 	color: #333;
+// 	display: table-cell;
+// 	padding: 5px;
+// 	text-align: center;
+// 	vertical-align: middle;
+// 	width: 45px;
+// }
 
-.AvailabilityCardRightContainer {
-	background-color: #fff;
-	border-left: 1px solid #d2d1d0;
-	border-radius: 3px;
-	display: table-cell;
-	padding: 5px;
-	vertical-align: middle;
-}
+// .AvailabilityCardRightContainer {
+// 	background-color: #fff;
+// 	border-left: 1px solid #d2d1d0;
+// 	border-radius: 3px;
+// 	display: table-cell;
+// 	padding: 5px;
+// 	vertical-align: middle;
+// }
 
-.tablet .AvailabilityCardRightContainer {
-	border-left: 0;
-}
+// .tablet .AvailabilityCardRightContainer {
+// 	border-left: 0;
+// }
 
-.desktop.small .AvailabilityCardRightDate {
-	display: initial;
-}
+// .desktop.small .AvailabilityCardRightDate {
+// 	display: initial;
+// }
 
-.AvailabilityCardRightContainer > div {
-	vertical-align: middle;
-}
+// .AvailabilityCardRightContainer > div {
+// 	vertical-align: middle;
+// }
 
-.AvailabilityCardContainer:hover .AvailabilityCardRightContainer {
-	background-color: #f2f2f2;
-}
+// .AvailabilityCardContainer:hover .AvailabilityCardRightContainer {
+// 	background-color: #f2f2f2;
+// }
 
-.AvailabilityCardRightContent {
-	color: rgb(128, 128, 128);
-	line-height: 19px;
-	width: 30%;
-}
+// .AvailabilityCardRightContent {
+// 	color: rgb(128, 128, 128);
+// 	line-height: 19px;
+// 	width: 30%;
+// }
 
-.AvailabilityCardRightDate {
-	text-align: right;
-	vertical-align: middle;
-	width: 70%;
-}
+// .AvailabilityCardRightDate {
+// 	text-align: right;
+// 	vertical-align: middle;
+// 	width: 70%;
+// }
 
-.AvailabilityCardRightDate .ScheduleDate {
-	min-width: 35%;
-}
+// .AvailabilityCardRightDate .ScheduleDate {
+// 	min-width: 35%;
+// }
 
-.ScheduleDate {
-	font-size: 14px;
-}
+// .ScheduleDate {
+// 	font-size: 14px;
+// }
 
-.tablet .ScheduleDate,
-.Phone .ScheduleDate {
-	min-width: inherit;
-}
+// .tablet .ScheduleDate,
+// .Phone .ScheduleDate {
+// 	min-width: inherit;
+// }
 
-.ScheduleAction {
-	margin-left: 30px;
-	margin-right: 0;
-}
+// .ScheduleAction {
+// 	margin-left: 30px;
+// 	margin-right: 0;
+// }
 
-.ScheduleDateBold {
-	color: #c23835;
-	font-weight: 600;
-}
+// .ScheduleDateBold {
+// 	color: #c23835;
+// 	font-weight: 600;
+// }
 
-.ListRecords .AvailabilityCardContainer {
-	border-bottom: none;
-}
+// .ListRecords .AvailabilityCardContainer {
+// 	border-bottom: none;
+// }
 
-.ListRecords .AvailabilityCardContainer:last-of-type {
-	border-bottom: 1px solid #d2d1d0;
-}
+// .ListRecords .AvailabilityCardContainer:last-of-type {
+// 	border-bottom: 1px solid #d2d1d0;
+// }
 
-.FA .AvailabilityCardRightDate,
-.AR .AvailabilityCardRightDate {
-	text-align: left;
-}
+// .FA .AvailabilityCardRightDate,
+// .AR .AvailabilityCardRightDate {
+// 	text-align: left;
+// }
 
-.FA .ScheduleAction,
-.AR .ScheduleAction {
-	margin-left: 0;
-	margin-right: 30px;
-}
+// .FA .ScheduleAction,
+// .AR .ScheduleAction {
+// 	margin-left: 0;
+// 	margin-right: 30px;
+// }
 
-.FA .AvailabilityCardRightDate div,
-.AR .AvailabilityCardRightDate div {
-	text-align: left !important;
-}
+// .FA .AvailabilityCardRightDate div,
+// .AR .AvailabilityCardRightDate div {
+// 	text-align: left !important;
+// }
 
-.AvailabilityCardLeftRed {
-	background-color: #f3c7c8;
-	color: #c23835;
-}
+// .AvailabilityCardLeftRed {
+// 	background-color: #f3c7c8;
+// 	color: #c23835;
+// }
 
-.tablet .AvailabilityCardRightContainer,
-.tablet .AvailabilityCardLeftContainer {
-	display: block;
-	width: 100%;
-}
+// .tablet .AvailabilityCardRightContainer,
+// .tablet .AvailabilityCardLeftContainer {
+// 	display: block;
+// 	width: 100%;
+// }
 
 /*------------------------------------------------------------*/
 /* 9.5 Sapphire Patterns > Cards > Card_All *******************/
