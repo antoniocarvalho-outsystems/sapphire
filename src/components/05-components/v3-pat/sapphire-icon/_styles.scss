@@ -1,20 +1,16 @@
 .icon {
   font-family: 'Sapphire-Icon-Font';
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
-  speak: none;
   text-transform: none;
 }
 
 body .icon:after {
   content: "";
-  /* revert offline font:  fallback */
 }
 
 .icon-fonterasear:before {
@@ -52,7 +48,6 @@ body .icon:after {
 .icon-add:before {
   content: "\e604";
 }
-
 
 .icon-addpatient:before {
   content: "\e605";
@@ -421,10 +416,6 @@ body .icon:after {
 .icon-collapsearrow:before {
   content: "\e65f";
   display: inline-block;
-  -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -ms-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
 
@@ -1053,22 +1044,22 @@ body .icon-circle-questionmark:after {
 
 /*Regular icon sizes*/
 // .icon-lg {
-  //   font-size: 1.3333333333333333em;
-  //   line-height: 0.75em;
-  //   vertical-align: -15%;
-  // }
+//   font-size: 1.3333333333333333em;
+//   line-height: 0.75em;
+//   vertical-align: -15%;
+// }
 
 .icon-1x {
-  font-size: $font-size-heading3; // 1.33333em;
+  font-size: $font-size-heading3;
 }
 
 .icon-2x {
-  font-size: $font-size-heading2; // 2em;
+  font-size: $font-size-heading2;
 }
 
 .icon-lg,
 .icon-3x {
-  font-size: $font-size-heading1; // 3em;
+  font-size: $font-size-heading1;
 }
 
 .icon-4x {
@@ -1107,7 +1098,7 @@ body .icon-circle-questionmark:after {
 }
 
 .icon-border {
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em #eee;
   border-radius: .1em;
   padding: .2em .25em .15em;
 }

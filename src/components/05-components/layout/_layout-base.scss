@@ -1,0 +1,105 @@
+.LayoutBase {
+	&-Wrapper {
+		margin-bottom: 150px;
+
+		&.hasFixedBottom .LayoutBase-bottomfixedcontent {
+			background-color: $regular-white;
+			bottom: 0;
+			box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+			left: 0;
+			padding-left: 16px;
+			padding-right: 16px;
+			position: fixed;
+			z-index: 1;
+		}
+	}
+
+	&-MainMenu,
+	&-MainMenu.PatientDetails_Header {
+		height: $default-menubar-height;
+		margin-top: 0;
+		position: fixed;
+		z-index: 30;
+	}
+
+	&-spacer {
+		display: block;
+	}
+
+	&-topfixedcontent {
+		background-color: $body-color;
+		position: fixed;
+		z-index: 2;
+	}
+
+	&-bottomfixedcontent {
+		background-color: $body-color;
+		padding-left: 16px;
+	}
+
+	&-iframesidebar {
+		height: 100vh;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 70;
+
+		&:before {
+			background-color: $sapphire-grey-blue;
+			content: '';
+			display: block;
+			height: 100vh;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 40px;
+		}
+
+		&.notExpandable {
+			width: 250px;
+		}
+
+		&.notExpandable:before {
+			width: 250px;
+		}
+
+		&.isExpandable {
+			width: 40px;
+		}
+
+		.iframeContainer {
+			overflow: hidden !important;
+		}
+
+		.iframeContainer iframe {
+			background: transparent;
+		}
+	}
+
+	&-header {
+		display: block;
+		padding-right: 40px;
+		position: fixed;
+		top: 44px;
+		width: 100%;
+		z-index: 20;
+	}
+
+	.DischargeBackground {
+		background-color: transparent;
+	}
+}
+
+.AR,
+.FA {
+	.LayoutBase-iframesidebar,
+	.LayoutBase-iframesidebar:before {
+		left: 0;
+		right: auto;
+	}
+
+	.LayoutBase-header {
+		padding-left: 40px;
+		padding-right: 0;
+	}
+}
