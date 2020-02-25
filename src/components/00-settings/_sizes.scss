@@ -1,10 +1,19 @@
-$sapphire__sizes: (
-	'xsmall': '4px',
-	'small': '8px',
-	'medium': '12px',
-	'large': '16px',
-	'xlarge': '20px'
+$sapphire__sizes: ('XXSmall': '3px',
+  'XSmall': '6px',
+  'Small': '12px',
+  'Medium': '18px',
+  'Large': '24px',
+  'XLarge': '30px',
+  'XXLarge': '36px'
 );
+
+$sapphire__sizes__xxsmall: 3px;
+$sapphire__sizes__xsmall: 6px;
+$sapphire__sizes__small: 12px;
+$sapphire__sizes__medium: 18px;
+$sapphire__sizes__large: 24px;
+$sapphire__sizes__xlarge: 30px;
+$sapphire__sizes__xxlarge: 36px;
 
 /* Header */
 $default-menubar-height: 44px;
