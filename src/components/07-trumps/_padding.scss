@@ -1,8 +1,0 @@
-@each $size in $sapphire__sizes {
-    $label: nth($size, 1);
-    $value: nth($size, 2);
-
-    .padding--#{$label} {
-        padding: #{$value} !important;
-    }
-}
