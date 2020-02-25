@@ -18029,40 +18029,40 @@ canvas.Sketch_Canvas {
 /*-------------------------------------------------------------------------------------*/
 /* 9.91 Sapphire Patterns > Sapphire_Controls > ButtonSquare *********/
 /*-------------------------------------------------------------------------------------*/
-a.ButtonSquare>span.icon,
-.ButtonSquare>span.icon {
-  background: #fff;
-  background-color: #fff;
-  border: 1px solid #0a939c;
-  border-radius: 3px;
-  color: #08a6af;
-  display: block;
-  font-size: 24px;
-  height: 26px;
-  text-align: center;
-  width: 26px;
-}
+// a.ButtonSquare>span.icon,
+// .ButtonSquare>span.icon {
+//   background: #fff;
+//   background-color: #fff;
+//   border: 1px solid #0a939c;
+//   border-radius: 3px;
+//   color: #08a6af;
+//   display: block;
+//   font-size: 24px;
+//   height: 26px;
+//   text-align: center;
+//   width: 26px;
+// }
 
-a.ButtonSquare.White>span.icon,
-.ButtonSquare.White>span.icon {
-  background-color: #fff;
-  border: 1px solid #c8d8dc;
-  box-shadow: 0 2px 3px rgba(14, 64, 86, 0.1);
-  color: #08a6af;
-}
+// a.ButtonSquare.White>span.icon,
+// .ButtonSquare.White>span.icon {
+//   background-color: #fff;
+//   border: 1px solid #c8d8dc;
+//   box-shadow: 0 2px 3px rgba(14, 64, 86, 0.1);
+//   color: #08a6af;
+// }
 
-a.ButtonSquare.Disabled>span.icon,
-.ButtonSquare.Disabled>span.icon {
-  background-color: #f2f2f2;
-  border: 1px solid #c8d8dc;
-  box-shadow: 0 2px 3px rgba(14, 64, 86, 0.1);
-  color: #08a6af;
-}
+// a.ButtonSquare.Disabled>span.icon,
+// .ButtonSquare.Disabled>span.icon {
+//   background-color: #f2f2f2;
+//   border: 1px solid #c8d8dc;
+//   box-shadow: 0 2px 3px rgba(14, 64, 86, 0.1);
+//   color: #08a6af;
+// }
 
-a.ButtonSquare.White>span.icon:hover,
-.ButtonSquare.White>span.icon:hover {
-  background-color: #e6f3f5;
-}
+// a.ButtonSquare.White>span.icon:hover,
+// .ButtonSquare.White>span.icon:hover {
+//   background-color: #e6f3f5;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.92 Sapphire Patterns > Sapphire_Controls > CalendarDateTimeInput *********/
