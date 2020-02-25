@@ -14986,118 +14986,118 @@ a.Button.Icon:hover {
 /* 9.49 Sapphire Patterns > Custom_Patterns > Interaction ******************************/
 /*-------------------------------------------------------------------------------------*/
 
-.InteractionContainer {
-	padding: 20px 15px 1px 30px;
-}
+// .InteractionContainer {
+// 	padding: 20px 15px 1px 30px;
+// }
 
-.AR .InteractionContainer,
-.FA .InteractionContainer {
-	padding: 20px 30px 1px 15px;
-}
+// .AR .InteractionContainer,
+// .FA .InteractionContainer {
+// 	padding: 20px 30px 1px 15px;
+// }
 
-.InteractionItem {
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
-	border-style: solid;
-	border-width: 0 2px 2px;
-	margin-bottom: 20px;
-	padding: 3px 25px 15px;
-	position: relative;
-}
+// .InteractionItem {
+// 	border-bottom-left-radius: 2px;
+// 	border-bottom-right-radius: 2px;
+// 	border-style: solid;
+// 	border-width: 0 2px 2px;
+// 	margin-bottom: 20px;
+// 	padding: 3px 25px 15px;
+// 	position: relative;
+// }
 
-.InteractionItem.Precaution {
-	border-color: #ffc000;
-}
+// .InteractionItem.Precaution {
+// 	border-color: #ffc000;
+// }
 
-.InteractionItem.TakeAcc {
-	border-color: #edca0a;
-}
+// .InteractionItem.TakeAcc {
+// 	border-color: #edca0a;
+// }
 
-.InteractionItem.ConInd {
-	border-color: #dc7542;
-}
+// .InteractionItem.ConInd {
+// 	border-color: #dc7542;
+// }
 
-.InteractionItem.DisAsso {
-	border-color: #dc9642;
-}
+// .InteractionItem.DisAsso {
+// 	border-color: #dc9642;
+// }
 
-.InteractionItem.None {
-	border-color: black;
-}
+// .InteractionItem.None {
+// 	border-color: black;
+// }
 
-.InteractionItem:before {
-	border-radius: 50%;
-	border-style: solid;
-	border-width: 2px;
-	color: #d8903a;
-	content: '\e64e';
-	font-family: Sapphire-Icon-Font;
-	font-size: 18px;
-	height: 33px;
-	left: -18px;
-	line-height: 28px;
-	padding-top: 1px;
-	position: absolute;
-	text-align: center;
-	top: 0px;
-	width: 33px;
-}
+// .InteractionItem:before {
+// 	border-radius: 50%;
+// 	border-style: solid;
+// 	border-width: 2px;
+// 	color: #d8903a;
+// 	content: '\e64e';
+// 	font-family: Sapphire-Icon-Font;
+// 	font-size: 18px;
+// 	height: 33px;
+// 	left: -18px;
+// 	line-height: 28px;
+// 	padding-top: 1px;
+// 	position: absolute;
+// 	text-align: center;
+// 	top: 0px;
+// 	width: 33px;
+// }
 
-.InteractionItem.Precaution:before {
-	background-color: #faeec8;
-	border-color: #ffc000;
-	color: #d8903a;
-}
+// .InteractionItem.Precaution:before {
+// 	background-color: #faeec8;
+// 	border-color: #ffc000;
+// 	color: #d8903a;
+// }
 
-.InteractionItem.TakeAcc:before {
-	background-color: #feffc9;
-	border-color: #edca0a;
-	color: #c5a51a;
-}
+// .InteractionItem.TakeAcc:before {
+// 	background-color: #feffc9;
+// 	border-color: #edca0a;
+// 	color: #c5a51a;
+// }
 
-.InteractionItem.ConInd:before {
-	background-color: #e6d5cd;
-	border-color: #dc7542;
-	color: #ce845b;
-}
+// .InteractionItem.ConInd:before {
+// 	background-color: #e6d5cd;
+// 	border-color: #dc7542;
+// 	color: #ce845b;
+// }
 
-.InteractionItem.DisAsso:before {
-	background-color: #f8e8bf;
-	border-color: #dc9642;
-	color: #d48940;
-}
+// .InteractionItem.DisAsso:before {
+// 	background-color: #f8e8bf;
+// 	border-color: #dc9642;
+// 	color: #d48940;
+// }
 
-.InteractionItem.None:before {
-	background-color: gray;
-	border-color: black;
-	color: black;
-}
+// .InteractionItem.None:before {
+// 	background-color: gray;
+// 	border-color: black;
+// 	color: black;
+// }
 
-.InteractionItem > div {
-	margin: 0;
-}
+// .InteractionItem > div {
+// 	margin: 0;
+// }
 
-.InteractionItem .IntTitle,
-.InteractionItem .IntSubTitle {
-	color: rgb(89, 105, 114);
-	font-size: 24px;
-	margin-bottom: 10px;
-}
+// .InteractionItem .IntTitle,
+// .InteractionItem .IntSubTitle {
+// 	color: rgb(89, 105, 114);
+// 	font-size: 24px;
+// 	margin-bottom: 10px;
+// }
 
-.InteractionItem .IntSubTitle {
-	font-size: 14px;
-	margin-bottom: 3px;
-	text-transform: uppercase;
-}
+// .InteractionItem .IntSubTitle {
+// 	font-size: 14px;
+// 	margin-bottom: 3px;
+// 	text-transform: uppercase;
+// }
 
-.InteractionItem .IntDesc {
-	color: #262525;
-	font-size: 12px;
-}
+// .InteractionItem .IntDesc {
+// 	color: #262525;
+// 	font-size: 12px;
+// }
 
-.InteractionItem .IntDesc + .IntSubTitle {
-	margin-top: 15px;
-}
+// .InteractionItem .IntDesc + .IntSubTitle {
+// 	margin-top: 15px;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.50 Sapphire Patterns > Custom_Patterns > LineCheck ********************************/
