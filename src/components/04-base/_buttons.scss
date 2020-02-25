@@ -126,8 +126,8 @@ a.Button.IsDefault {
   &.Third,
   &.Cancel {
     background-color: $sapphire-white;
-    border: 1px solid $light-grey;
-    color: $dark-grey;
+    border: 1px solid $regular-alpha; // $light-grey;
+    color: $regular-beta; // $dark-grey;
 
     &:before {
       color: $dark-grey;
@@ -137,8 +137,8 @@ a.Button.IsDefault {
     &:active,
     &:hover {
       background-color: $sapphire-light-container;
-      border: 1px solid transparent;
-      color: $dark-grey;
+      // border: 1px solid transparent;
+      // color: $dark-grey;
     }
 
     &:focus {
