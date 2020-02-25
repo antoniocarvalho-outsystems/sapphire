@@ -496,7 +496,7 @@ body.PanelOpened .daterangepicker {
   position: relative;
 }
 
-.GenericPopupFlex .daterangepicker .calendar-table td,
+.LayoutPopup .daterangepicker .calendar-table td,
 .ResizeParentIframe .daterangepicker .calendar-table td {
   font-size: 12px;
   line-height: 14px;
@@ -504,10 +504,10 @@ body.PanelOpened .daterangepicker {
   padding: 3px;
 }
 
-.GenericPopupFlex .daterangepicker select.hourselect,
-.GenericPopupFlex .daterangepicker select.minuteselect,
-.GenericPopupFlex .daterangepicker select.secondselect,
-.GenericPopupFlex .daterangepicker select.ampmselect,
+.LayoutPopup .daterangepicker select.hourselect,
+.LayoutPopup .daterangepicker select.minuteselect,
+.LayoutPopup .daterangepicker select.secondselect,
+.LayoutPopup .daterangepicker select.ampmselect,
 .ResizeParentIframe .daterangepicker select.hourselect,
 .ResizeParentIframe .daterangepicker select.minuteselect,
 .ResizeParentIframe .daterangepicker select.secondselect,
@@ -521,22 +521,22 @@ body.PanelOpened .daterangepicker {
   width: 45px;
 }
 
-.GenericPopupFlex .daterangepicker select.yearselect,
-.GenericPopupFlex .daterangepicker select.monthselect,
+.LayoutPopup .daterangepicker select.yearselect,
+.LayoutPopup .daterangepicker select.monthselect,
 .ResizeParentIframe .daterangepicker select.yearselect,
 .ResizeParentIframe .daterangepicker select.monthselect {
   height: 24px;
 }
 
-.GenericPopupFlex .daterangepicker .calendar-table th,
+.LayoutPopup .daterangepicker .calendar-table th,
 .ResizeParentIframe .daterangepicker .calendar-table th {
   font-size: 12px;
   min-width: 25px;
   padding: 3px;
 }
 
-.GenericPopupFlex .daterangepicker .drp-calendar.left,
-.GenericPopupFlex .daterangepicker.show-calendar .drp-buttons,
+.LayoutPopup .daterangepicker .drp-calendar.left,
+.LayoutPopup .daterangepicker.show-calendar .drp-buttons,
 .ResizeParentIframe .daterangepicker .drp-calendar.left,
 .ResizeParentIframe .daterangepicker.show-calendar .drp-buttons {
   padding: 4px;
