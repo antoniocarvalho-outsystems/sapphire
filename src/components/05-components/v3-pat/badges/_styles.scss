@@ -1,7 +1,7 @@
 @mixin badges($bgColor: $sapphire-white,
   $textColor: $regular-blue,
   $notInverted: true,
-  $borderRadius: 0) {
+  $borderRadius: 2px) {
   @if ($notInverted) {
     border: 1px solid $bgColor;
   }
@@ -148,7 +148,7 @@ $prescriptionRadius: 18px;
     color: $sapphire-white;
     display: inline-block;
     font-family: $font-family-bold;
-    font-size: $font-size-normal;
+    font-size: $font-size-small;
     padding: 1px 4px;
     white-space: nowrap;
   }

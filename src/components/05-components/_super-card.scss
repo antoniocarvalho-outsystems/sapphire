@@ -1,3 +1,8 @@
+@mixin common-supercard-size-style($width: 0) {
+	padding: 5px 15px;
+	width: $width;
+}
+
 .LayoutBase .SuperCard {
 	border: 1px solid $light-grey;
 	border-radius: 1px;
@@ -16,7 +21,6 @@
 
 	&_Left {
 		background-color: $body-color;
-		padding: 5px 15px;
 		width: 0;
 
 		> div {
@@ -25,51 +29,51 @@
 
 		// Sizes
 		&.ExtraTiny {
-			width: 55px;
+			@include common-supercard-size-style(55px);
 		}
 
 		&.Tiny {
-			width: 100px;
+			@include common-supercard-size-style(100px);
 		}
 
 		&.ExtraSmall {
-			width: 150px;
+			@include common-supercard-size-style(150px);
 		}
 
 		&.Small {
-			width: 200px;
+			@include common-supercard-size-style(200px);
 		}
 
 		&.SmallMedium {
-			width: 250px;
+			@include common-supercard-size-style(250px);
 		}
 
 		&.Medium {
-			width: 300px;
+			@include common-supercard-size-style(300px);
 		}
 
 		&.MediumLarge {
-			width: 350px;
+			@include common-supercard-size-style(350px);
 		}
 
 		&.Large {
-			width: 400px;
+			@include common-supercard-size-style(400px);
 		}
 
 		&.ExtraLarge {
-			width: 450px;
+			@include common-supercard-size-style(450px);
 		}
 
 		&.Gigantic {
-			width: 500px;
+			@include common-supercard-size-style(500px);
 		}
 
 		&.ExtraGigantic {
-			width: 550px;
+			@include common-supercard-size-style(550px);
 		}
 
 		&.Colossal {
-			width: 600px;
+			@include common-supercard-size-style(600px);
 		}
 
 		// Colors

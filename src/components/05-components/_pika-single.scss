@@ -27,15 +27,15 @@
 
 		.pika-prev,
 		.pika-next {
-			width: 80px;
+			width: 45px;
 		}
 
 		.pika-next {
-			right: 80px;
+			right: 0;
 		}
 
 		.pika-prev {
-			left: 80px;
+			left: 0;
 		}
 	}
 
@@ -156,7 +156,7 @@
 		position: absolute;
 		top: 0;
 		white-space: nowrap;
-		width: 30px;
+		width: 15px;
 		z-index: 9999;
 
 		&:after {

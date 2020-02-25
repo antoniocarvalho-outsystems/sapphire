@@ -1,0 +1,79 @@
+.Card_Container {
+	.Column.ColLast {
+		margin-bottom: 0;
+	}
+
+	.Columns {
+		margin-bottom: 0;
+
+		.Column > div {
+			height: 100%;
+		}
+	}
+
+	.TableVerticalAlign {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.desktop {
+	.Card {
+		&_Container {
+			.Column.ColFirst {
+				max-width: 10%;
+			}
+
+			.Column.ColLast {
+				min-width: 90%;
+			}
+
+			.Columns {
+				display: initial;
+			}
+		}
+	}
+}
+
+.SuperCard,
+.Card_Container {
+	-servicestudio-background-color: $regular-white;
+	-servicestudio-min-height: 100px;
+}
+
+.tablet {
+	.Card_Description {
+		display: table-cell;
+		width: 100%;
+	}
+}
+
+.phone {
+	.Card_Description {
+		display: table;
+		width: 100%;
+	}
+
+	.Actions_Details :first-child {
+		border: none;
+	}
+}
+
+.phone,
+.tablet {
+	.Card_Container {
+		display: block;
+		width: 100%;
+	}
+
+	.Image_Detail {
+		border-right: transparent;
+		display: inline-block;
+		min-width: 100%;
+	}
+
+	.Others_Details,
+	.Actions_Details {
+		display: table-cell;
+	}
+}

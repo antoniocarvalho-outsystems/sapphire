@@ -1,0 +1,89 @@
+.Card {
+	&_Container {
+		background-color: $regular-white;
+		border: solid 1px $light-grey;
+		border-radius: 1px;
+		display: table;
+		min-height: 50px;
+		width: 100%;
+
+		.Icon_Card {
+			margin-right: 5px;
+		}
+
+		.Image_Detail {
+			background-color: $light-beige;
+			border-left: none;
+			border-right: solid 1px $light-grey;
+			color: $dark-beige;
+			display: table-cell;
+			height: 100%;
+			padding: 5px 15px;
+			vertical-align: middle;
+			white-space: nowrap;
+			width: 40px;
+		}
+
+		.Title_Card {
+			font-family: $font-family-bold;
+		}
+	}
+
+	&_Description {
+		display: table-cell;
+		height: 100%;
+		margin-bottom: 0;
+		padding: 5px 15px;
+	}
+
+	&_Actions {
+		display: table-cell;
+		padding-right: 15px;
+		text-align: right;
+		vertical-align: middle;
+
+		.Actions_Details {
+			align-items: center;
+			display: inline-flex;
+			height: 100%;
+			padding: 6px;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.Card_Description {
+		vertical-align: middle;
+
+		> div:nth-child(2) > div {
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+	}
+
+	.Card_Actions {
+		padding-left: 15px;
+		padding-right: 0;
+	}
+
+	.Image_Detail {
+		border-left: solid 1px $light-grey;
+		border-right: none;
+
+		.Icon_Card {
+			margin-left: 10px;
+		}
+	}
+
+	.Title_Card {
+		.CardAll {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+
+	.Card_Actions {
+		text-align: left;
+	}
+}

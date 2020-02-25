@@ -3,6 +3,7 @@
 @import 'clinician-secondary-summary';
 @import 'comp-line';
 @import 'dropdown';
+@import 'dynamic-card';
 @import 'expandable-link-wrapper';
 @import 'file-upload';
 @import 'flag-line';
@@ -39,6 +40,7 @@
 @import 'webpatterns/inline-dropdown/styles';
 @import 'webpatterns/search-wrapper/styles';
 @import 'webpatterns/date-picker/styles';
+@import 'webpatterns/columns-css/styles';
 
 /* V3_Pat Components */
 @import 'v3-pat/actions-menu/styles';
@@ -73,7 +75,7 @@
 @import 'v3-pat/person-card/styles';
 @import 'v3-pat/prescription-expandable/styles';
 @import 'v3-pat/progress-bar/styles';
-@import 'v3-pat/progress-bar/styles';
+@import 'v3-pat/sapphire-calendar/styles';
 @import 'v3-pat/sapphire-radio-button/styles';
 @import 'v3-pat/search-and-select/styles';
 @import 'v3-pat/section-expandable-custom/styles';
@@ -91,3 +93,4 @@
 @import 'v3-pat/circle-icon/styles';
 @import 'v3-pat/sapphire-lists/styles';
 @import 'v3-pat/panel/styles';
+@import 'v3-pat/sapphire-icon/styles';
