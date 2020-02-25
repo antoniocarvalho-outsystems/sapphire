@@ -1,0 +1,197 @@
+@each $size in $sapphire__sizes {
+    $label: nth($size, 1);
+    $value: nth($size, 2);
+
+    .padding--#{$label} {
+        padding: #{$value} !important;
+    }
+}
+
+
+
+
+
+
+.MultiPaddingXXSmall {
+    padding: 3px;
+}
+
+.MultiPaddingLeftXXSmall {
+    padding-left: 3px;
+}
+
+.MultiPaddingRightXXSmall {
+    padding-right: 3px;
+}
+
+.MultiPaddingTopXXSmall {
+    padding-top: 3px;
+}
+
+.MultiPaddingBottomXXSmall {
+    padding-bottom: 3px;
+}
+
+/** MultiPaddingXSmall **/
+.MultiPaddingXSmall {
+    padding: 6px;
+}
+
+.MultiPaddingLeftXSmall {
+    padding-left: 6px;
+}
+
+.MultiPaddingRightXSmall {
+    padding-right: 6px;
+}
+
+.MultiPaddingTopXSmall {
+    padding-top: 6px;
+}
+
+.MultiPaddingBottomXSmall {
+    padding-bottom: 6px;
+}
+
+/** MultiPaddingSmall **/
+
+.MultiPaddingSmall {
+    padding: 10px;
+}
+
+.MultiPaddingLeftSmall {
+    padding-left: 10px;
+}
+
+.MultiPaddingRightSmall {
+    padding-right: 10px;
+}
+
+.MultiPaddingTopSmall {
+    padding-top: 10px;
+}
+
+.MultiPaddingBottomSmall {
+    padding-bottom: 10px;
+}
+
+.MultiPaddingMedium {
+    padding: 16px;
+}
+
+.MultiPaddingLeftMedium {
+    padding-left: 16px;
+}
+
+.MultiPaddingRightMedium {
+    padding-right: 16px;
+}
+
+.MultiPaddingTopMedium {
+    padding-top: 16px;
+}
+
+.MultiPaddingBottomMedium {
+    padding-bottom: 16px;
+}
+
+.MultiPaddingLarge {
+    padding: 26px;
+}
+
+.MultiPaddingLeftLarge {
+    padding-left: 26px;
+}
+
+.MultiPaddingRightLarge {
+    padding-right: 26px;
+}
+
+.MultiPaddingTopLarge {
+    padding-top: 26px;
+}
+
+.MultiPaddingBottomLarge {
+    padding-bottom: 26px;
+}
+
+.MultiPaddingLargest {
+    padding: 42px;
+}
+
+.MultiPaddingLeftLargest {
+    padding-left: 42px;
+}
+
+.MultiPaddingRightLargest {
+    padding-right: 42px;
+}
+
+.MultiPaddingTopLargest {
+    padding-top: 42px;
+}
+
+.MultiPaddingBottomLargest {
+    padding-bottom: 42px;
+}
+
+.FA .MultiPaddingLeftXSmall,
+.AR .MultiPaddingLeftXSmall {
+    padding-left: auto;
+    padding-right: 6px;
+}
+
+.FA .MultiPaddingRightXSmall,
+.AR .MultiPaddingRightXSmall {
+    padding-left: 6px;
+    padding-right: auto;
+}
+
+/** multPaddingSmall **/
+.FA .MultiPaddingLeftSmall,
+.AR .MultiPaddingLeftSmall {
+    padding-left: auto;
+    padding-right: 10px;
+}
+
+.FA .MultiPaddingRightSmall,
+.AR .MultiPaddingRightSmall {
+    padding-left: 10px;
+    padding-right: auto;
+}
+
+.FA .MultiPaddingLeftMedium,
+.AR .MultiPaddingLeftMedium {
+    padding-left: auto;
+    padding-right: 16px;
+}
+
+.FA .MultiPaddingRightMedium,
+.AR .MultiPaddingRightMedium {
+    padding-left: 16px;
+    padding-right: auto;
+}
+
+.FA .MultiPaddingLeftLarge,
+.AR .MultiPaddingLeftLarge {
+    padding-left: auto;
+    padding-right: 26px;
+}
+
+.FA .MultiPaddingRightLarge,
+.AR .MultiPaddingRightLarge {
+    padding-left: 26px;
+    padding-right: auto;
+}
+
+.FA .MultiPaddingLeftLargest,
+.AR .MultiPaddingLeftLargest {
+    padding-left: auto;
+    padding-right: 42px;
+}
+
+.FA .MultiPaddingRightLargest,
+.AR .MultiPaddingRightLargest {
+    padding-left: 42px;
+    padding-right: auto;
+}
