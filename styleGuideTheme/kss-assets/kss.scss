@@ -2,13 +2,16 @@
 //   Variables - Colors, Fonts, etc.
 // ------------------------------------------------------------------------------
 $kss-colors-background: #fff;
-
+$kss-color-title: #333333;
 $kss-colors-foreground: #444;
-$kss-colors-heading: #111;
+$kss-colors-heading: #009884;
 $kss-colors-quotes: #666;
 
-$kss-colors-link: #0645ad;
-$kss-colors-link-visited: #0645ad;
+$kss-color-permalinks: $kss-colors-heading;
+$kss-color-heading-example: #f2fffd;
+
+$kss-colors-link: #00bfa5;
+$kss-colors-link-visited: #00bfa5;
 $kss-colors-link-hover: lighten($kss-colors-link, 20%);
 $kss-colors-link-active: #faa700;
 
@@ -24,9 +27,12 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 
 @font-face {
 	font-family: 'LatoRegular';
-	src: url(../../src/assets/fonts/Lato-Regular.ttf) format('truetype');
+	src: url(/assets/fonts/Lato-Regular.ttf) format('truetype');
 }
-
+@font-face {
+	font-family: 'LatoBold';
+	src: url(/assets/fonts/Lato-Bold.ttf) format('truetype');
+}
 .kss-style {
 	color: $kss-colors-foreground;
 	font-family: $kss-font-body;
@@ -270,10 +276,10 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 		border-bottom: 1px solid #ddd;
 
 		@media screen and (min-width: 769px) {
-			background-image: url(noise-low.png), -ms-radial-gradient(#fff, #eee);
-			background-image: url(noise-low.png), -o-radial-gradient(#fff, #eee);
-			background-image: url(noise-low.png), -webkit-radial-gradient(#fff, #eee);
-			background-image: url(noise-low.png), radial-gradient(#fff, #eee);
+			background-image: url(noise-low.png), -ms-radial-gradient(#fff, #c4f0eb);
+			background-image: url(noise-low.png), -o-radial-gradient(#fff, #c4f0eb);
+			background-image: url(noise-low.png), -webkit-radial-gradient(#fff, #c4f0eb);
+			background-image: url(noise-low.png), radial-gradient(#fff, #c4f0eb);
 			border-bottom: 0;
 			box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.7);
 			height: 100%;
@@ -328,7 +334,7 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 
 		&:before {
 			@media screen and (min-width: 769px) {
-				background-color: rgba(#000, 0);
+				background-color: rgba($kss-color-title, 0);
 				content: ' ';
 				height: 100%;
 				left: -20px;
@@ -338,7 +344,7 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 		}
 
 		&.is-in-viewport:before {
-			background-color: #000;
+			background-color: $kss-color-title;
 			transition: background-color 0.4s, width 0.6s;
 			width: 5px;
 		}
@@ -430,7 +436,7 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 		}
 	}
 	.kss-title__permalink {
-		color: #000;
+		color: $kss-color-permalinks;
 		display: block;
 		text-decoration: none;
 
@@ -486,10 +492,10 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 
 			&:focus,
 			&:hover {
-				border-color: #000;
+				border-color: $kss-color-title;
 
 				.kss-toolbar__icon-fill {
-					fill: #000;
+					fill: $kss-color-title;
 				}
 			}
 		}
@@ -500,7 +506,7 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 		bottom: 100%;
 		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 		clip: rect(1px, 1px, 1px, 1px);
-		color: #000;
+		color: $kss-color-title;
 		cursor: help;
 		display: inline-block;
 		// Visually hidden
@@ -606,14 +612,14 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 		padding-right: 0;
 	}
 	.kss-modifier__heading {
-		background-color: #eee;
-		border-bottom: 1px solid #ccc;
+		background-color: $kss-color-heading-example;
+		border-bottom: 1px solid #d6d6d6;
 		font-weight: bold;
 		margin: 0 -10px 10px -10px;
 		padding: 10px;
 	}
 	.is-fullscreen .kss-modifier__heading {
-		border: 1px solid #ccc;
+		border: 1px solid #d6d6d6;
 		margin: 0 20px 10px;
 	}
 	.kss-modifier__default-name {
@@ -653,7 +659,7 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 	&.kss-guides-mode .kss-modifier__example-footer {
 		&:before,
 		&:after {
-			border: 2px solid #000;
+			border: 2px solid $kss-color-title;
 			box-sizing: border-box;
 			content: '';
 			height: 5px;
@@ -663,7 +669,7 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 		}
 	}
 	&.kss-guides-mode .kss-modifier__example {
-		border-color: #000;
+		border-color: $kss-color-title;
 
 		&:before {
 			border-left: 0;

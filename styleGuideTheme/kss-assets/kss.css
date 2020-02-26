@@ -13,17 +13,17 @@
 	line-height: 24px;
 }
 .kss-style a {
-	color: #0645ad;
+	color: #00bfa5;
 	text-decoration: none;
 	transition-duration: 0.5s;
 	transition-property: color;
 }
 .kss-style a:visited {
-	color: #0645ad;
+	color: #00bfa5;
 }
 .kss-style a:hover,
 .kss-style a:focus {
-	color: #2272f7;
+	color: #26ffe1;
 }
 .kss-style a:active {
 	color: #faa700;
@@ -41,7 +41,7 @@
 .kss-style h4,
 .kss-style h5,
 .kss-style h6 {
-	color: #111;
+	color: #009884;
 	font-family: 'LatoRegular';
 	line-height: 1.15em;
 	margin: 24px 0 0 0;
@@ -88,7 +88,7 @@
 .kss-style code,
 .kss-style kbd,
 .kss-style samp {
-	color: #2b2b2b;
+	color: #226e64;
 	font-family: Menlo, 'Ubuntu Mono', 'Lucida Console', 'Courier New', Courier, monospace;
 	font-size: 1em;
 }
@@ -98,12 +98,12 @@
 }
 .kss-style ins {
 	background: #ff9;
-	color: #111;
+	color: #009884;
 	text-decoration: none;
 }
 .kss-style mark {
 	background: #ff0;
-	color: #111;
+	color: #009884;
 	font-weight: bold;
 }
 .kss-style sub,
@@ -224,10 +224,10 @@
 }
 @media screen and (min-width: 769px) {
 	#kss-node .kss-sidebar {
-		background-image: url(noise-low.png), -ms-radial-gradient(#fff, #eee);
-		background-image: url(noise-low.png), -o-radial-gradient(#fff, #eee);
-		background-image: url(noise-low.png), -webkit-radial-gradient(#fff, #eee);
-		background-image: url(noise-low.png), radial-gradient(#fff, #eee);
+		background-image: url(noise-low.png), -ms-radial-gradient(#fff, #c4f0eb);
+		background-image: url(noise-low.png), -o-radial-gradient(#fff, #c4f0eb);
+		background-image: url(noise-low.png), -webkit-radial-gradient(#fff, #c4f0eb);
+		background-image: url(noise-low.png), radial-gradient(#fff, #c4f0eb);
 		border-bottom: 0;
 		box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.7);
 		height: 100%;
@@ -273,7 +273,7 @@
 }
 @media screen and (min-width: 769px) {
 	#kss-node .kss-nav__menu-link:before {
-		background-color: rgba(0, 0, 0, 0);
+		background-color: rgba(51, 51, 51, 0);
 		content: ' ';
 		height: 100%;
 		left: -20px;
@@ -282,7 +282,7 @@
 	}
 }
 #kss-node .kss-nav__menu-link.is-in-viewport:before {
-	background-color: #000;
+	background-color: #333;
 	transition: background-color 0.4s, width 0.6s;
 	width: 5px;
 }
@@ -358,14 +358,14 @@
 	content: 'Section ';
 }
 #kss-node .kss-title__permalink {
-	color: #000;
+	color: #009884;
 	display: block;
 	text-decoration: none;
 }
 #kss-node .kss-title__permalink:hover,
 #kss-node .kss-title__permalink:focus,
 #kss-node .kss-title__permalink:active {
-	color: #0645ad;
+	color: #00bfa5;
 }
 @media screen and (min-width: 607px) {
 	#kss-node .kss-title__permalink:hover .kss-title__permalink-hash,
@@ -409,11 +409,11 @@
 }
 #kss-node .kss-toolbar a:focus,
 #kss-node .kss-toolbar a:hover {
-	border-color: #000;
+	border-color: #333;
 }
 #kss-node .kss-toolbar a:focus .kss-toolbar__icon-fill,
 #kss-node .kss-toolbar a:hover .kss-toolbar__icon-fill {
-	fill: #000;
+	fill: #333;
 }
 #kss-node .kss-toolbar__tooltip {
 	background: #fff;
@@ -421,7 +421,7 @@
 	bottom: 100%;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 	clip: rect(1px, 1px, 1px, 1px);
-	color: #000;
+	color: #333;
 	cursor: help;
 	display: inline-block;
 	height: 1px;
@@ -518,14 +518,14 @@
 	padding-right: 0;
 }
 #kss-node .kss-modifier__heading {
-	background-color: #eee;
-	border-bottom: 1px solid #ccc;
+	background-color: #f2fffd;
+	border-bottom: 1px solid #d6d6d6;
 	font-weight: bold;
 	margin: 0 -10px 10px -10px;
 	padding: 10px;
 }
 #kss-node .is-fullscreen .kss-modifier__heading {
-	border: 1px solid #ccc;
+	border: 1px solid #d6d6d6;
 	margin: 0 20px 10px;
 }
 #kss-node .kss-modifier__default-name {
@@ -564,7 +564,7 @@
 #kss-node.kss-guides-mode .kss-modifier__example-footer:before,
 #kss-node.kss-guides-mode .kss-modifier__example:after,
 #kss-node.kss-guides-mode .kss-modifier__example-footer:after {
-	border: 2px solid #000;
+	border: 2px solid #333;
 	box-sizing: border-box;
 	content: '';
 	height: 5px;
@@ -573,7 +573,7 @@
 	z-index: -1;
 }
 #kss-node.kss-guides-mode .kss-modifier__example {
-	border-color: #000;
+	border-color: #333;
 }
 #kss-node.kss-guides-mode .kss-modifier__example:before {
 	border-left: 0;
