@@ -1,0 +1,30 @@
+.DateInput_Container {
+  position: relative;
+}
+
+.DateInput_Container:after,
+.DateTimeInput_Container:after {
+  color: $regular-alpha;
+  content: '\e60b';
+  font-family: 'Sapphire-Icon-Font';
+  font-size: 1.1rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 2.833rem;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  text-transform: none;
+  top: 0;
+}
+
+.FA .DateInput_Container:after,
+.FA .DateTimeInput_Container:after,
+.AR .DateInput_Container:after,
+.AR .DateTimeInput_Container:after {
+  left: 12px;
+  right: auto;
+}
