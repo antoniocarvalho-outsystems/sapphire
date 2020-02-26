@@ -10,6 +10,7 @@ const KssConfig = {
 	source: path.resolve(__dirname, './src/components'),
 	destination: path.resolve(__dirname, 'dist/styleguide'),
 	extend: path.resolve(__dirname, './src/helpers-handlebar'),
+	builder: path.resolve(__dirname, './styleGuideTheme')
 };
 
 const outputPath = path.join(__dirname, 'dist');
