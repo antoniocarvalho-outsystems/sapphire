@@ -81,7 +81,7 @@ $font-size-11px: 0.7857em;
 
   &.open {
     .ISidebar-user {
-      max-width: 250px;
+      max-width: 262px;
     }
 
     .ISidebar-menu {
@@ -89,8 +89,8 @@ $font-size-11px: 0.7857em;
     }
 
     .ISidebar-content {
-      max-width: 250px;
-      min-width: 250px;
+      max-width: 262px;
+      min-width: 262px;
       padding-left: 18px;
       padding-right: 58px;
     }
@@ -314,7 +314,7 @@ $font-size-11px: 0.7857em;
 
 .ISidebar-content-panel {
   display: none;
-  width: 176px;
+  width: 190px;
 }
 
 .ISidebar-content-panel-title {
@@ -327,17 +327,9 @@ $font-size-11px: 0.7857em;
 
 .ISidebar-content-panel-content {
   height: calc(100vh - 150px);
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-
-// .ISidebar-content-panel-content::-webkit-scrollbar {
-//   background-color: transparent;
-//   width: 5px;
-// }
-
-// .ISidebar-content-panel-content::-webkit-scrollbar-thumb {
-//   background-color: #08a6af;
-// }
 
 .ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider>div {
   width: 100%;

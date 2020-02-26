@@ -1,0 +1,26 @@
+.NotificationLine {
+  border-bottom: solid 1px $sapphire-grey-blue;
+  font-family: $font-family-regular;
+  font-size: .9rem;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  position: relative;
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  >.OSInline>span.icon {
+    position: absolute;
+    top: 3px;
+  }
+
+  .medical-act {
+    font-size: 1rem;
+  }
+
+  .patient-name {
+    font-size: .8rem;
+  }
+
+}

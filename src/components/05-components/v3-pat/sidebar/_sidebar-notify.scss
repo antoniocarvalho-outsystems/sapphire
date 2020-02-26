@@ -1,49 +1,50 @@
 .SidebarNotify {
-  background-color: transparent;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-bottom: 12px;
-  padding: 6px;
-  position: relative;
+	background-color: transparent;
+	border-radius: 2px;
+	cursor: pointer;
+	margin-bottom: 6px;
+	padding: 6px;
+	position: relative;
 
-  &:hover {
-    background-color: $primary-dark;
+	&:hover {
+		background-color: $sapphire-grey-blue;
 
-    .SidebarNotify__Arrow {
-      display: inline-block;
-    }
-  }
+		.SidebarNotify__Arrow {
+			display: inline-block;
+		}
+	}
 
-  &_dateWrapper {
-    color: $mid-light-grey;
-    font-size: .9rem;
-    min-height: 16px;
-    padding-top: 0;
+	&_dateWrapper {
+		color: $mid-light-grey;
+		font-size: 0.9rem;
+		min-height: 16px;
+		padding-top: 0;
 
-    .StatusBadges {
-      margin: 0 0 3px 0;
-    }
+		.StatusBadges {
+			margin: 0 0 3px 0;
+		}
 
-    .SidebarNotify__Arrow {
-      color: #fff;
-      display: none;
-      font-size: 1rem;
-      position: absolute;
-      right: 3px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
+		.SidebarNotify__Arrow {
+			color: #fff;
+			display: none;
+			font-size: 1rem;
+			position: absolute;
+			right: 3px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
 
-  &__date {
-    display: inline-block;
-    margin-left: 0px;
-    width: 100%;
-  }
+	&__date {
+		display: inline-block;
+		margin-left: 0px;
+		padding-right: 5px;
+		width: 100%;
+	}
 }
 
 .SidebarNotify_header,
 .SidebarNotify_content {
-  color: #fff;
-  word-break: break-word;
+	color: #fff;
+	word-break: break-word;
 }
