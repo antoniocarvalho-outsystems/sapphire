@@ -2,12 +2,12 @@
   background-color: transparent;
   border-radius: 2px;
   cursor: pointer;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   padding: 6px;
   position: relative;
 
   &:hover {
-    background-color: $primary-dark;
+    background-color: $sapphire-grey-blue;
 
     .SidebarNotify__Arrow {
       display: inline-block;
@@ -38,6 +38,7 @@
   &__date {
     display: inline-block;
     margin-left: 0px;
+    padding-right: 5px;
     width: 100%;
   }
 }
