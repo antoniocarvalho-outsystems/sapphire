@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const KssConfig = {
 	title: 'Sapphire StyleGuide',
 	css: '../dev.styles.css',
+	base:'./styleGuideTheme',
 	source: path.resolve(__dirname, './src/components'),
 	destination: path.resolve(__dirname, 'dist/styleguide'),
 	extend: path.resolve(__dirname, './src/helpers-handlebar'),
