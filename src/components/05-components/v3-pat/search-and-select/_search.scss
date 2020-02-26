@@ -48,10 +48,10 @@
 
 	&.hasFavorite {
 		.SearchSD__star {
-			display: table-cell;
-			font-size: 8px;
+			// display: table-cell;
+			// font-size: 8px;
 			vertical-align: middle;
-			width: 48px;
+			//width: 48px;
 		}
 
 		&.Open {
@@ -215,8 +215,7 @@
 			color: $regular-alpha;
 			cursor: pointer;
 			display: table-cell;
-			font-size: 8px;
-			padding: 0 16px;
+			text-align: center;
 			text-decoration: none;
 			vertical-align: middle;
 			width: 48px;
@@ -414,8 +413,7 @@
 
 		span.ListRecords span.selected .SelectSD {
 			background-color: $sapphire-white;
-			box-shadow: inset 0px 0px 0px 1px $regular-beta,
-				0px 0px 5px 0px $regular-beta;
+			box-shadow: inset 0px 0px 0px 1px $regular-beta, 0px 0px 5px 0px $regular-beta;
 			position: relative;
 		}
 
@@ -498,11 +496,7 @@
 	display: none;
 	.SSDOverLay {
 		align-items: center;
-		background-image: radial-gradient(
-			circle at 50% 100%,
-			rgba(0, 0, 0, 0.05),
-			rgba(0, 0, 0, 0.2)
-		);
+		background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
 		bottom: 0;
 		color: $dark-grey;
 		display: flex;
