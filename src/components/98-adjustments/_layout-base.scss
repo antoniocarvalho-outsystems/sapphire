@@ -127,6 +127,10 @@
 
     a .Circle.OSInline {
       display: table-cell;
+
+      .icon {
+        font-size: 1.1rem;
+      }
     }
   }
 
