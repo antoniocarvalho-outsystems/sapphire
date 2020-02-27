@@ -1,6 +1,6 @@
 require('./index.scss');
 
-const SapphireWidgets = (window.SapphireWidgets = window.SapphireWidgets || {});
+//require('./05-components/v3-pat/spinner-horizontal/scripts.js');
 
 // Import all JS files
 const requireAll = r => r.keys().forEach(r);

@@ -34,8 +34,9 @@ module.exports = merge(common, {
 		https: true,
 		watchContentBase: true,
 		writeToDisk: true,
+		disableHostCheck: true,
 	},
-	optimization: {
+	/*optimization: {
 		splitChunks: {
 			cacheGroups: {
 				vendor: {
@@ -46,5 +47,5 @@ module.exports = merge(common, {
 				},
 			},
 		},
-	},
+	},*/
 });
