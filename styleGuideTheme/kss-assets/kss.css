@@ -6,6 +6,10 @@
 	font-family: 'LatoBold';
 	src: url(/assets/fonts/Lato-Bold.ttf) format('truetype');
 }
+@font-face {
+	font-family: 'Sapphire-Icon-Font';
+	src: url(/assets/fonts/Sapphire-Icon-Font.ttf) format('truetype');
+}
 .kss-style {
 	color: #444;
 	font-family: 'LatoRegular';
@@ -693,4 +697,27 @@
 }
 #kss-node pre.hljs code {
 	color: inherit;
+}
+#kssref-components-badges-prescriptionbadges .kss-modifier__wrapper .kss-modifier__container,
+#kssref-components-badges-badgeclassification .kss-modifier__wrapper .kss-modifier__container,
+#kssref-components-badges-regular .kss-modifier__wrapper .kss-modifier__container,
+#kssref-components-badges-extended .kss-modifier__wrapper .kss-modifier__container {
+	display: flex;
+	flex-wrap: wrap;
+}
+#kssref-components-badges-prescriptionbadges .kss-modifier__wrapper .kss-modifier__container .kss-modifier__element,
+#kssref-components-badges-badgeclassification .kss-modifier__wrapper .kss-modifier__container .kss-modifier__element,
+#kssref-components-badges-regular .kss-modifier__wrapper .kss-modifier__container .kss-modifier__element,
+#kssref-components-badges-extended .kss-modifier__wrapper .kss-modifier__container .kss-modifier__element {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	min-width: 200px;
+	padding: 10px 10px;
+}
+#kssref-components-badges-badgeclassification .kss-modifier__element .BadgeClassification {
+	background-color: red;
+	display: flex;
+	flex-direction: row-reverse;
+	width: 60px;
 }

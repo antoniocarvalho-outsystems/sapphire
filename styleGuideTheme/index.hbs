@@ -17,7 +17,11 @@
 
   <div class="kss-sidebar kss-style">
     <header class="kss-header">
-      <h1 class="kss-doc-title">{{options.title}}</h1>
+      <div style="display: flex;">
+        <span style="color: #009884; font-size:35px; margin-right:10px" class="icon icon-sapphiresymbol"></span>
+        <h1 class="kss-doc-title">{{options.title}}</h1>
+      </div>
+
     </header>
     <nav class="kss-nav" aria-label="Style Guide">
       <ul class="kss-nav__menu">
@@ -205,32 +209,37 @@
             Example{{#if modifiers}}s{{/if}}
           </div>
 
-          {{#if modifiers}}
+          {{!-- {{#if modifiers}}
           <div class="kss-modifier__default-name kss-style">
             Default styling
           </div>
-          {{/if}}
+          {{/if}} --}}
 
           <div class="kss-modifier__example">
             {{{example}}}
             <div class="kss-modifier__example-footer"></div>
           </div>
-
-          {{#each modifiers}}
-          <div class="kss-modifier__name kss-style">
+          <div class="kss-modifier__container">
+            {{#each modifiers}}
+            {{!-- <div class="kss-modifier__name kss-style">
             {{name}}
+          </div> --}}
+            <div class="kss-modifier__element">
+              <div class="kss-modifier__description kss-style">
+                {{{description}}}
+              </div>
+              <div class="kss-modifier__example">
+                {{{markup}}}
+                <div class="kss-modifier__example-footer"></div>
+              </div>
+            </div>
+
+            {{/each}}
           </div>
-          <div class="kss-modifier__description kss-style">
-            {{{description}}}
-          </div>
-          <div class="kss-modifier__example">
-            {{{markup}}}
-            <div class="kss-modifier__example-footer"></div>
-          </div>
-          {{/each}}
+
         </div>
 
-        {{#if markup}}
+        {{!-- {{#if markup}}
         <details class="kss-markup kss-style">
           <summary>
             {{#if markupFile }}
@@ -241,14 +250,14 @@
           </summary>
           <pre class="hljs"><code class="language-handlebars">{{{hljs markup 'handlebars'}}}</code></pre>
         </details>
-        {{/if}}
+        {{/if}} --}}
         {{/if}}
 
-        {{#if source.filename}}
+        {{!-- {{#if source.filename}}
         <div class="kss-source kss-style">
           Source: <code>{{source.filename}}</code>, line {{source.line}}
         </div>
-        {{/if}}
+        {{/if}} --}}
 
       </{{#if @first}}div{{else}}section{{/if}}>
       {{/each}}

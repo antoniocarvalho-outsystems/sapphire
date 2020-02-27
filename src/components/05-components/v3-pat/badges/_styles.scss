@@ -1,3 +1,5 @@
+@import 'styleguide-config';
+
 @mixin badges($bgColor: $sapphire-white, $textColor: $regular-blue, $notInverted: true, $borderRadius: 2px) {
 	@if ($notInverted) {
 		border: 1px solid $bgColor;
@@ -21,63 +23,6 @@
 }
 
 $prescriptionRadius: 18px;
-
-// Badges & Tags
-//
-// Badges and Tags .
-//
-//Style guide: Components.Badges
-
-// Badges
-//
-// Badges Regular.
-//
-// .StatusBadges - Regular
-// .StatusBadges.BadgeYellow - BadgeYellow
-// .StatusBadges.BadgeRed - BadgeRed
-// .StatusBadges.BadgeGreen - BadgeGreen
-// .StatusBadges.BadgeGrey - BadgeGrey
-// .StatusBadges.BadgeBlue - BadgeBlue
-// .StatusBadges.BadgeWhite - BadgeWhite
-// .StatusBadges.InvertBackground.BadgeYellow - Invert BadgeYellow
-// .StatusBadges.InvertBackground.BadgeRed - Invert BadgeRed
-// .StatusBadges.InvertBackground.BadgeGreen - Invert BadgeGreen
-// .StatusBadges.InvertBackground.BadgeGrey - Invert BadgeGrey
-// .StatusBadges.InvertBackground.BadgeBlue - Invert BadgeBlue
-// .StatusBadges.InvertBackground.BadgeWhite - Invert BadgeWhite
-//
-// Markup: _badges.hbs
-//
-// Style guide: Components.Badges.Regular
-
-// Badges Extended
-//
-// Badges Extended.
-//
-// .BadgesExtendedWrapper.PrescriptionBadges - Regular
-// .BadgesExtendedWrapper.PrescriptionBadges.Green.IsSelected  - Green
-//
-// Markup: _badges.hbs
-//
-// Style guide: Components.Badges.Extended
-
-// Prescription Badges
-//
-// Prescription Badges.
-//
-// .PrescriptionBadges - Regular
-// .PrescriptionBadges.DarkRed  - DarkRed
-// .PrescriptionBadges.Red  - Red
-// .PrescriptionBadges.Orange  - Orange
-// .PrescriptionBadges.Yellow  - Yellow
-// .PrescriptionBadges.Blue  - Blue
-// .PrescriptionBadges.DarkGrey  - DarkGrey
-// .PrescriptionBadges.LightGrey  - LightGrey
-// .PrescriptionBadges.Green  - Green
-//
-// Markup: _badges.hbs
-//
-// Style guide: Components.Badges.PrescriptionBadges
 
 .LayoutBlank,
 .LayoutBase,
@@ -198,10 +143,9 @@ $prescriptionRadius: 18px;
 		font-size: $font-size-small;
 		padding: 1px 4px;
 		white-space: nowrap;
-	}
-
-	.IconBadgeClassification {
-		margin-right: 5px;
+		.IconBadgeClassification {
+			margin-right: 5px;
+		}
 	}
 
 	.NumberCircle {

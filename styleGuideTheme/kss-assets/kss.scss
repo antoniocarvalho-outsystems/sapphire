@@ -3,6 +3,7 @@
 // ------------------------------------------------------------------------------
 $kss-colors-background: #fff;
 $kss-color-title: #333333;
+$kss-default-border-color: #d6d6d6;
 $kss-colors-foreground: #444;
 $kss-colors-heading: #009884;
 $kss-colors-quotes: #666;
@@ -32,6 +33,10 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 @font-face {
 	font-family: 'LatoBold';
 	src: url(/assets/fonts/Lato-Bold.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Sapphire-Icon-Font';
+	src: url(/assets/fonts/Sapphire-Icon-Font.ttf) format('truetype');
 }
 .kss-style {
 	color: $kss-colors-foreground;
@@ -815,4 +820,39 @@ $kss-vertical-rhythm: $kss-font-size * 1.5;
 	}
 
 	@import '../node_modules/highlight.js/styles/vs2015';
+}
+
+// ------------------------------------------------------------------------------
+// Custom
+// ------------------------------------------------------------------------------
+
+#kssref-components-badges-prescriptionbadges,
+#kssref-components-badges-badgeclassification,
+#kssref-components-badges-regular,
+#kssref-components-badges-extended {
+	.kss-modifier__wrapper {
+		.kss-modifier__container {
+			display: flex;
+			flex-wrap: wrap;
+
+			.kss-modifier__element {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				min-width: 200px;
+				padding: 10px 10px;
+			}
+		}
+	}
+}
+
+#kssref-components-badges-badgeclassification {
+	.kss-modifier__element {
+		.BadgeClassification {
+			background-color: red;
+			display: flex;
+			flex-direction: row-reverse;
+			width: 60px;
+		}
+	}
 }

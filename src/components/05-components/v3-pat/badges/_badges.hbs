@@ -6,5 +6,16 @@
 </style>
 
 <div class="container">
-    <div class="{{modifier_class}}">badges</div>
+    <div class="{{modifier_class}}">
+        {{#ifContains  "NumberCircle" modifier_class}}
+        1
+        {{else}}
+        badges
+        {{/ifContains}}
+        {{#ifContains  "BadgeClassification" modifier_class}}
+        <div class="IconBadgeClassification" style="color: #fff">
+            <span class="icon icon-label"></span>
+        </div>
+        {{/ifContains}}
+    </div>
 </div>

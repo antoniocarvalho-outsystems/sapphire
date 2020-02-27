@@ -1,0 +1,23 @@
+<style>
+    .container {
+        display: flex;
+        border: none;
+    }
+</style>
+
+<div class="container">
+    <div style="display: flex;" class="{{modifier_class}}">
+        <div>badges</div>
+        <div class=" BadgeArrow ">
+            {{#ifContains  "IsSelected" modifier_class}}
+            <span class="icon icon-changeup"></span>
+            {{else}}
+            <span class="icon icon-changedown"></span>
+            {{/ifContains}}
+        </div>
+        {{!-- {{#ifContains "IsSmallBadge" modifier_class}}
+        <div>olé</div>
+        {{/ifContains}} --}}
+    </div>
+
+</div>
