@@ -50,32 +50,20 @@
 		this.$sidebarShield.on('click', function() {
 			_this.close();
 		});
-		this.$sidebar.on(
-			'click',
-			'.SearchSideBarFields .ButtonGroup_button:first-child',
-			function() {
-				_this.$sidebar
-					.find('.FieldsSlider')
-					.addClass('Tab1')
-					.removeClass('Tab2');
-				_this.setFieldFocus(
-					_this.$sidebarContent.find('.TextInput:visible').eq(0)
-				);
-			}
-		);
-		this.$sidebar.on(
-			'click',
-			'.SearchSideBarFields .ButtonGroup_button:last-child',
-			function() {
-				_this.$sidebar
-					.find('.FieldsSlider')
-					.addClass('Tab2')
-					.removeClass('Tab1');
-				_this.setFieldFocus(
-					_this.$sidebarContent.find('.TextInput:visible').eq(0)
-				);
-			}
-		);
+		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:first-child', function() {
+			_this.$sidebar
+				.find('.FieldsSlider')
+				.addClass('Tab1')
+				.removeClass('Tab2');
+			_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));
+		});
+		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:last-child', function() {
+			_this.$sidebar
+				.find('.FieldsSlider')
+				.addClass('Tab2')
+				.removeClass('Tab1');
+			_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));
+		});
 	};
 
 	Sidebar.prototype.openMenuItem = function(selectedPosition) {

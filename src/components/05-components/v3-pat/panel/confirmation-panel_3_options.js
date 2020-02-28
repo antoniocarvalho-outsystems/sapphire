@@ -1,6 +1,6 @@
 /* Component ConfirmationPanel */
 
-SapphireWidgets.ConfirmationPanel =()=>{
+SapphireWidgets.ConfirmationPanel3Options =()=>{
 	function isAnyPanelOpened() {
 		return (
 			$('body').hasClass('PanelOpened') && $('.PanelContainer:visible').length
@@ -44,19 +44,20 @@ SapphireWidgets.ConfirmationPanel =()=>{
 				});
 		});
 	}	
-}
 
+	
 $(document).ready(function() {
-	SapphireWidgets.ConfirmationPanel.setPanelBehavior();
-
+	setPanelBehavior();
 	if (
 		osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf(
 			'setPanelBehavior'
 		) == -1
 	) {
-		osAjaxBackend.BindAfterAjaxRequest(	SapphireWidgets.ConfirmationPanel.setPanelBehavior);
+		osAjaxBackend.BindAfterAjaxRequest(	setPanelBehavior);
 	}
 });
+
+}
 
 
 
