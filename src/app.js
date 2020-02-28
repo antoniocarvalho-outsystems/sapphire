@@ -18,5 +18,6 @@ require('./components/05-components/v3-pat/location-box/scripts');
 require('./components/05-components/v3-pat/main-interactive-card/scripts');
 require('./components/05-components/v3-pat/menu-bar/scripts');
 require('./components/05-components/v3-pat/multiple-selection-button/scripts');
+require('./components/05-components/v3-pat/panel/scripts');
 // ...
 require('./components/05-components/v3-pat/spinner-horizontal/scripts');
