@@ -1,5 +1,5 @@
 /* Component SelectSystem */
-function Select2Setup(config) {
+SapphireWidgets.SelectSystem = config => {
 	$(function() {
 		var WidgetId = config.WidgetId; //Combo Box Id to be used.
 		var Class = config.Class; //All Combo boxes with this class will be be transformed.
@@ -40,14 +40,7 @@ function Select2Setup(config) {
 				'select2/dropdown/search',
 				'select2/dropdown/minimumResultsForSearch',
 			],
-			function(
-				Utils,
-				Dropdown,
-				AttachBody,
-				AttachContainer,
-				Search,
-				minimumResultsForSearch
-			) {
+			function(Utils, Dropdown, AttachBody, AttachContainer, Search, minimumResultsForSearch) {
 				let dropdownSearch = Utils.Decorate(Dropdown, Search);
 				dropdownSearch.prototype.render = function() {
 					var $rendered = Dropdown.prototype.render.call(this);
@@ -96,15 +89,10 @@ function Select2Setup(config) {
 			var $selectedOptionsValue = $WidgetIdentifier.find(':selected');
 			var selectedOptions = $selectedOptionsValue.length;
 			var totalOptions = $WidgetIdentifier.find('option').length;
-			var selectAllOpt = $WidgetIdentifier.find('option:first-child:selected')
-				.length;
+			var selectAllOpt = $WidgetIdentifier.find('option:first-child:selected').length;
 			var activeValues = '';
-			var allOptExceptAll = $WidgetIdentifier.find(
-				':selected:not(".SelectedAll")'
-			).length;
-			var $allOptExceptAllObj = $WidgetIdentifier.find(
-				':selected:not(".SelectedAll")'
-			);
+			var allOptExceptAll = $WidgetIdentifier.find(':selected:not(".SelectedAll")').length;
+			var $allOptExceptAllObj = $WidgetIdentifier.find(':selected:not(".SelectedAll")');
 
 			if (selectedOptions === totalOptions) {
 				if (totalOptions - 1 > 3) {
@@ -174,14 +162,9 @@ function Select2Setup(config) {
 				if (repo.loading) {
 					return repo.text;
 				}
-				var markup =
-					'<div class=""Clearfix"">' +
-					'<div class=""ThemeGrid_Width12"">' +
-					repo.text +
-					'</div>';
+				var markup = '<div class=""Clearfix"">' + '<div class=""ThemeGrid_Width12"">' + repo.text + '</div>';
 				if (repo.description) {
-					markup +=
-						'<div class=""OSAutoMarginTop"">' + repo.description + '</div>';
+					markup += '<div class=""OSAutoMarginTop"">' + repo.description + '</div>';
 				}
 				markup += '</div>';
 				return markup;
@@ -239,10 +222,7 @@ function Select2Setup(config) {
 			//Select2 with CheckBox
 
 			var isAllSelected = false;
-			if (
-				$WidgetIdentifier[0].options.length ===
-				$WidgetIdentifier[0].selectedOptions.length
-			) {
+			if ($WidgetIdentifier[0].options.length === $WidgetIdentifier[0].selectedOptions.length) {
 				isAllSelected = true;
 			}
 
@@ -257,9 +237,7 @@ function Select2Setup(config) {
 			Select2Options.tags = false;
 
 			if (HasSearch === 'True') {
-				Select2Options.dropdownAdapter = $.fn.select2.amd.require(
-					'SearchLikeSingle'
-				);
+				Select2Options.dropdownAdapter = $.fn.select2.amd.require('SearchLikeSingle');
 			} else {
 				Select2Options.minimumResultsForSearch = -1;
 			}
@@ -378,13 +356,9 @@ function Select2Setup(config) {
 						$WidgetIdentifier.select2(Select2Options);
 						$WidgetIdentifier.select2('open');
 					} else {
-						var selectedOptions = $WidgetIdentifier.find('option:selected')
-							.length;
+						var selectedOptions = $WidgetIdentifier.find('option:selected').length;
 						var totalOptions = $WidgetIdentifier.find('option').length;
-						if (
-							selectedOptions === totalOptions - 1 &&
-							$(idwidget + ' >  option:selected:first-child').length === 0
-						) {
+						if (selectedOptions === totalOptions - 1 && $(idwidget + ' >  option:selected:first-child').length === 0) {
 							var selectedItems = [];
 							var allOptions = $(idwidget + ' option');
 							allOptions.each(function() {
@@ -420,4 +394,4 @@ function Select2Setup(config) {
 			}
 		}
 	});
-}
+};
