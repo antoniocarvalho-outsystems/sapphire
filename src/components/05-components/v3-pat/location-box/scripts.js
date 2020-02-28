@@ -1,11 +1,5 @@
 /* Component LocationBox */
-/*
- *
- * @param string clickedElementId The ID of the element with '.DisableRoom' class that was clicked.
- * @param string roomVacantsElementId The ID of the element where the doctors schedules are presented.
- * @return void
- */
-function toggleDisableSlot(clickedElementId) {
+SapphireWidgets.LocationBox = function(clickedElementId) {
 	if ($('#' + clickedElementId + '').hasClass('On')) {
 		$('.DisableRoom').each(function() {
 			$(this)
@@ -40,4 +34,4 @@ function toggleDisableSlot(clickedElementId) {
 			})
 			.removeClass('Selected');
 	}
-}
+};

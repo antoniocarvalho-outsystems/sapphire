@@ -16,7 +16,7 @@ const outputPath = path.join(__dirname, 'dist');
 const isProduction = process.env.NODE_ENV === 'production ';
 
 module.exports = {
-	entry: path.resolve(__dirname, './src/components/index.js'),
+	entry: path.resolve(__dirname, './src/app.js'),
 	output: {
 		path: outputPath,
 		publicPath: '/dist/',

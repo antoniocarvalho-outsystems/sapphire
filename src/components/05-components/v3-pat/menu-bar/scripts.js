@@ -1,6 +1,5 @@
 /* Component MenuBar */
-// var MenuSapphire = (window.MenuSapphire = window.MenuSapphire || {});
-function MenuConf(config) {
+SapphireWidgets.MenuBar = function(config) {
 	$(function() {
 		var $menuWidget = $('#' + config.menuWidget);
 
@@ -18,13 +17,9 @@ function MenuConf(config) {
 				lastItem.prependTo($menuWidget.find('.Menubar__extraContainer'));
 				menuResider();
 			} else {
-				var firstMoreElement = $menuWidget
-					.find('.Menubar__extraContainer .MenuItem')
-					.first();
+				var firstMoreElement = $menuWidget.find('.Menubar__extraContainer .MenuItem').first();
 				if (navWidth + firstMoreElement.data('width') < availabeEspace) {
-					firstMoreElement.insertAfter(
-						$menuWidget.find('.Menubar_item .MenuItem').last()
-					);
+					firstMoreElement.insertAfter($menuWidget.find('.Menubar_item .MenuItem').last());
 					menuResider();
 				}
 			}
@@ -42,19 +37,13 @@ function MenuConf(config) {
 					.parent()
 					.hasClass('Menubar__extraContainer')
 			) {
-				if (
-					!$(this).hasClass('active') &&
-					!$(this).hasClass('activeIndicator')
-				) {
+				if (!$(this).hasClass('active') && !$(this).hasClass('activeIndicator')) {
 					$(this).addClass('active');
 					$menuWidget.find('.activeIndicator').addClass('shadow');
 					$(this)
 						.find('.MenuItem_subItems')
 						.toggleClass('show');
-				} else if (
-					!$(this).hasClass('active') &&
-					$(this).hasClass('activeIndicator')
-				) {
+				} else if (!$(this).hasClass('active') && $(this).hasClass('activeIndicator')) {
 					$(this).addClass('active');
 					$(this)
 						.find('.MenuItem_subItems')
@@ -84,10 +73,7 @@ function MenuConf(config) {
 				}
 			}
 
-			if (
-				!$moreOptions.is(e.target) &&
-				$moreOptions.has(e.target).length === 0
-			) {
+			if (!$moreOptions.is(e.target) && $moreOptions.has(e.target).length === 0) {
 				$moreOptions.find('.Menubar__extraContainer').removeClass('show');
 				$('.activeIndicator').removeClass('shadow');
 			}
@@ -97,4 +83,4 @@ function MenuConf(config) {
 			menuResider();
 		});
 	});
-}
+};

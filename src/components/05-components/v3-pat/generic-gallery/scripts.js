@@ -35,13 +35,9 @@
 		this.equalHeight = this.config.equalHeight;
 		if (
 			this.$widget.find('.GenericGallery-content > span').length === 1 &&
-			this.$widget
-				.find('.GenericGallery-content > span')
-				.hasClass('ListRecords')
+			this.$widget.find('.GenericGallery-content > span').hasClass('ListRecords')
 		) {
-			this.$gallery = this.$widget.find(
-				'.GenericGallery-content > span.ListRecords'
-			);
+			this.$gallery = this.$widget.find('.GenericGallery-content > span.ListRecords');
 		} else {
 			this.$gallery = this.$widget.find('.GenericGallery-content');
 		}
@@ -78,9 +74,7 @@
 
 			var itemWidth = 100 / perLine;
 
-			var marginLeft = _this.$gallery
-				.find('.GenericGallery-item')
-				.css('margin-left');
+			var marginLeft = _this.$gallery.find('.GenericGallery-item').css('margin-left');
 
 			_this.$gallery.find('.GenericGallery-item').each(function(index, el) {
 				if ($(el).find('.GenericGallery-item--triple').length > 0) {
@@ -139,9 +133,11 @@
 	};
 })(jQuery, window, document, SapphireWidgets);
 
-$(window).on('resize', function() {
-	var allGenericGalleries = SapphireWidgets.GenericGallery.all();
-	allGenericGalleries.forEach(function(element) {
-		element.calculate(200);
+$(window)
+	.off('resize.GenericGallery')
+	.on('resize.GenericGallery', function() {
+		var allGenericGalleries = SapphireWidgets.GenericGallery.all();
+		allGenericGalleries.forEach(function(element) {
+			element.calculate(200);
+		});
 	});
-});

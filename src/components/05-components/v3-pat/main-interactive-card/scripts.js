@@ -1,4 +1,4 @@
-/* Component LocationBox */
+/* Component MainInteractiveCard */
 (function($, window, document, SapphireWidgets) {
 	var allMainInteractiveCards = [];
 	var defaultDuration = 300;
@@ -12,10 +12,7 @@
 		window[config.widgetId] = new MainInteractiveCard(config);
 		allMainInteractiveCards.push(window[config.widgetId]);
 
-		if (
-			!!!SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded &&
-			!!osAjaxBackend
-		) {
+		if (!!!SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded && !!osAjaxBackend) {
 			osAjaxBackend.BindAfterAjaxRequest(function() {
 				var allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();
 				allMainInteractiveCards.forEach(function(element) {
@@ -42,19 +39,14 @@
 		this.hideTitleOnOpen = config.hideTitleOnOpen;
 		this.hideSubTitleOnOpen = config.hideSubTitleOnOpen;
 		this.headerHeightWhenOpen = config.headerHeightWhenOpen;
-		this.MainInteractiveCardFakeNotifyId =
-			config.mainInteractiveCardFakeNotifyId;
+		this.MainInteractiveCardFakeNotifyId = config.mainInteractiveCardFakeNotifyId;
 
 		this.$widget = $('#' + config.widgetId);
 		this.$widget.css('display', 'block');
 		this.$card = this.$widget.find('> .MainInteractiveCard');
-		this.$header = this.$widget.find(
-			'> .MainInteractiveCard > .MainInteractiveCard-header'
-		);
+		this.$header = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header');
 		this.$headerText = this.$header.find('.MainInteractiveCard-header-text');
-		this.$body = this.$widget.find(
-			'> .MainInteractiveCard > div > .MainInteractiveCard-body'
-		);
+		this.$body = this.$widget.find('> .MainInteractiveCard > div > .MainInteractiveCard-body');
 		this.$actions = this.$widget.find(
 			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-actions'
 		);
@@ -113,10 +105,7 @@
 
 	MainInteractiveCard.prototype.handleHeaderWithAbsoluteButtons = function() {
 		var _this = this;
-		if (
-			!!this.$body.find('> div .MainInteractiveCard-absolute-actions').length &&
-			this.isOpen
-		) {
+		if (!!this.$body.find('> div .MainInteractiveCard-absolute-actions').length && this.isOpen) {
 			var absoluteActionsWidth = Math.max.apply(
 				Math,
 				this.$body
@@ -131,9 +120,7 @@
 				this.$headerText.css({ maxWidth: headerMaxWidth + 'px' });
 			}
 			this.$body
-				.find(
-					'> div .MainInteractiveCard-absolute-actions .MainInteractiveCard--close'
-				)
+				.find('> div .MainInteractiveCard-absolute-actions .MainInteractiveCard--close')
 				.off('click')
 				.on('click', function(e) {
 					e.preventDefault();
@@ -147,12 +134,9 @@
 						!!_this.$widget.find('iframe')[0] &&
 						!!_this.$widget.find('iframe')[0].contentWindow &&
 						_this.$widget.find('iframe')[0].contentWindow.SapphireWidgets &&
-						_this.$widget.find('iframe')[0].contentWindow.SapphireWidgets
-							.ResizeParentIframe
+						_this.$widget.find('iframe')[0].contentWindow.SapphireWidgets.ResizeParentIframe
 					) {
-						_this.$widget
-							.find('iframe')[0]
-							.contentWindow.SapphireWidgets.ResizeParentIframe.resize();
+						_this.$widget.find('iframe')[0].contentWindow.SapphireWidgets.ResizeParentIframe.resize();
 					}
 				}, 500);
 			}
@@ -239,21 +223,14 @@
 				this.$body.css('display', 'block');
 			}
 		}
-		if (
-			this.$widget.find('iframe').length === 1 &&
-			!this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')
-		) {
+		if (this.$widget.find('iframe').length === 1 && !this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')) {
 			var iframeContents = this.$widget.find('iframe').contents();
-			iframeContents
-				.find('.MainInteractiveCard-iframe-actions')
-				.css('visibility', 'visible');
+			iframeContents.find('.MainInteractiveCard-iframe-actions').css('visibility', 'visible');
 		} else {
 			this.handleHeaderWithAbsoluteButtons();
 		}
 		if (!this.allowMultipleOpen) {
-			allMainInteractiveCards.forEach(item =>
-				item !== this && item.allowOpening ? item.close(duration) : null
-			);
+			allMainInteractiveCards.forEach(item => (item !== this && item.allowOpening ? item.close(duration) : null));
 		}
 	};
 
@@ -262,10 +239,7 @@
 		var duration = duration || defaultDuration;
 		this.isOpen = false;
 		this.$card.removeClass('isOpen');
-		if (
-			this.$widget.find('iframe').length === 1 &&
-			!this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')
-		) {
+		if (this.$widget.find('iframe').length === 1 && !this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')) {
 			this.$widget
 				.find('iframe')
 				.contents()

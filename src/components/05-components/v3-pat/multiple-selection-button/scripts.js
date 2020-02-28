@@ -1,5 +1,5 @@
 /* Component MultipleSelectionButton */
-function checkBoxVerify(WrapperId) {
+SapphireWidgets.MultipleSelectionButton = function(WrapperId) {
 	var $widget = $(WrapperId);
 	var $control = $widget.find('input[type="checkbox"]');
 
@@ -40,4 +40,4 @@ function checkBoxVerify(WrapperId) {
 			}
 		}, 10);
 	});
-}
+};

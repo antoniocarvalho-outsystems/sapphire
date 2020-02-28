@@ -20,21 +20,14 @@ var _createClass = (function() {
 
 function _possibleConstructorReturn(self, call) {
 	if (!self) {
-		throw new ReferenceError(
-			"this hasn't been initialised - super() hasn't been called"
-		);
+		throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 	}
-	return call && (typeof call === 'object' || typeof call === 'function')
-		? call
-		: self;
+	return call && (typeof call === 'object' || typeof call === 'function') ? call : self;
 }
 
 function _inherits(subClass, superClass) {
 	if (typeof superClass !== 'function' && superClass !== null) {
-		throw new TypeError(
-			'Super expression must either be null or a function, not ' +
-				typeof superClass
-		);
+		throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass);
 	}
 	subClass.prototype = Object.create(superClass && superClass.prototype, {
 		constructor: {
@@ -45,9 +38,7 @@ function _inherits(subClass, superClass) {
 		},
 	});
 	if (superClass)
-		Object.setPrototypeOf
-			? Object.setPrototypeOf(subClass, superClass)
-			: (subClass.__proto__ = superClass);
+		Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : (subClass.__proto__ = superClass);
 }
 
 function _classCallCheck(instance, Constructor) {
@@ -114,13 +105,7 @@ var Emitter = (function() {
 				var callbacks = this._callbacks[event];
 
 				if (callbacks) {
-					for (
-						var _len = arguments.length,
-							args = Array(_len > 1 ? _len - 1 : 0),
-							_key = 1;
-						_key < _len;
-						_key++
-					) {
+					for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
 						args[_key - 1] = arguments[_key];
 					}
 
@@ -518,23 +503,20 @@ var Dropzone = (function(_Emitter) {
 					/**
 					 * The text that replaces the default message text it the browser is not supported.
 					 */
-					dictFallbackMessage:
-						"Your browser does not support drag'n'drop file uploads.",
+					dictFallbackMessage: "Your browser does not support drag'n'drop file uploads.",
 
 					/**
 					 * The text that will be added before the fallback form.
 					 * If you provide a  fallback element yourself, or if this option is `null` this will
 					 * be ignored.
 					 */
-					dictFallbackText:
-						'Please use the fallback form below to upload your files like in the olden days.',
+					dictFallbackText: 'Please use the fallback form below to upload your files like in the olden days.',
 
 					/**
 					 * If the filesize is too big.
 					 * `{{filesize}}` and `{{maxFilesize}}` will be replaced with the respective configuration values.
 					 */
-					dictFileTooBig:
-						'File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.',
+					dictFileTooBig: 'File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.',
 
 					/**
 					 * If the file doesn't match the file type.
@@ -555,8 +537,7 @@ var Dropzone = (function(_Emitter) {
 					/**
 					 * If `addRemoveLinks` is true, the text to be used for confirmation when cancelling upload.
 					 */
-					dictCancelUploadConfirmation:
-						'Are you sure you want to cancel this upload?',
+					dictCancelUploadConfirmation: 'Are you sure you want to cancel this upload?',
 
 					/**
 					 * If `addRemoveLinks` is true, the text to be used to remove a file.
@@ -640,16 +621,13 @@ var Dropzone = (function(_Emitter) {
 					fallback: function fallback() {
 						// This code should pass in IE7... :(
 						var messageElement = void 0;
-						this.element.className =
-							this.element.className + ' dz-browser-not-supported';
+						this.element.className = this.element.className + ' dz-browser-not-supported';
 
 						for (
 							var _iterator2 = this.element.getElementsByTagName('div'),
 								_isArray2 = true,
 								_i2 = 0,
-								_iterator2 = _isArray2
-									? _iterator2
-									: _iterator2[Symbol.iterator]();
+								_iterator2 = _isArray2 ? _iterator2 : _iterator2[Symbol.iterator]();
 							;
 
 						) {
@@ -673,9 +651,7 @@ var Dropzone = (function(_Emitter) {
 							}
 						}
 						if (!messageElement) {
-							messageElement = Dropzone.createElement(
-								'<div class="dz-message"><span></span></div>'
-							);
+							messageElement = Dropzone.createElement('<div class="dz-message"><span></span></div>');
 							this.element.appendChild(messageElement);
 						}
 
@@ -770,10 +746,7 @@ var Dropzone = (function(_Emitter) {
 					 * to be invoked with the file when the transformation is done.
 					 */
 					transformFile: function transformFile(file, done) {
-						if (
-							(this.options.resizeWidth || this.options.resizeHeight) &&
-							file.type.match(/image.*/)
-						) {
+						if ((this.options.resizeWidth || this.options.resizeHeight) && file.type.match(/image.*/)) {
 							return this.resizeImage(
 								file,
 								this.options.resizeWidth,
@@ -850,21 +823,15 @@ var Dropzone = (function(_Emitter) {
 						}
 
 						if (this.previewsContainer) {
-							file.previewElement = Dropzone.createElement(
-								this.options.previewTemplate.trim()
-							);
+							file.previewElement = Dropzone.createElement(this.options.previewTemplate.trim());
 							file.previewTemplate = file.previewElement; // Backwards compatibility
 
 							this.previewsContainer.appendChild(file.previewElement);
 							for (
-								var _iterator3 = file.previewElement.querySelectorAll(
-										'[data-dz-name]'
-									),
+								var _iterator3 = file.previewElement.querySelectorAll('[data-dz-name]'),
 									_isArray3 = true,
 									_i3 = 0,
-									_iterator3 = _isArray3
-										? _iterator3
-										: _iterator3[Symbol.iterator]();
+									_iterator3 = _isArray3 ? _iterator3 : _iterator3[Symbol.iterator]();
 								;
 
 							) {
@@ -884,14 +851,10 @@ var Dropzone = (function(_Emitter) {
 								node.textContent = file.name;
 							}
 							for (
-								var _iterator4 = file.previewElement.querySelectorAll(
-										'[data-dz-size]'
-									),
+								var _iterator4 = file.previewElement.querySelectorAll('[data-dz-size]'),
 									_isArray4 = true,
 									_i4 = 0,
-									_iterator4 = _isArray4
-										? _iterator4
-										: _iterator4[Symbol.iterator]();
+									_iterator4 = _isArray4 ? _iterator4 : _iterator4[Symbol.iterator]();
 								;
 
 							) {
@@ -920,20 +883,14 @@ var Dropzone = (function(_Emitter) {
 								e.preventDefault();
 								e.stopPropagation();
 								if (file.status === Dropzone.UPLOADING) {
-									return Dropzone.confirm(
-										_this2.options.dictCancelUploadConfirmation,
-										function() {
-											return _this2.removeFile(file);
-										}
-									);
+									return Dropzone.confirm(_this2.options.dictCancelUploadConfirmation, function() {
+										return _this2.removeFile(file);
+									});
 								} else {
 									if (_this2.options.dictRemoveFileConfirmation) {
-										return Dropzone.confirm(
-											_this2.options.dictRemoveFileConfirmation,
-											function() {
-												return _this2.removeFile(file);
-											}
-										);
+										return Dropzone.confirm(_this2.options.dictRemoveFileConfirmation, function() {
+											return _this2.removeFile(file);
+										});
 									} else {
 										return _this2.removeFile(file);
 									}
@@ -941,14 +898,10 @@ var Dropzone = (function(_Emitter) {
 							};
 
 							for (
-								var _iterator5 = file.previewElement.querySelectorAll(
-										'[data-dz-remove]'
-									),
+								var _iterator5 = file.previewElement.querySelectorAll('[data-dz-remove]'),
 									_isArray5 = true,
 									_i5 = 0,
-									_iterator5 = _isArray5
-										? _iterator5
-										: _iterator5[Symbol.iterator]();
+									_iterator5 = _isArray5 ? _iterator5 : _iterator5[Symbol.iterator]();
 								;
 
 							) {
@@ -972,10 +925,7 @@ var Dropzone = (function(_Emitter) {
 
 					// Called whenever a file is removed.
 					removedfile: function removedfile(file) {
-						if (
-							file.previewElement != null &&
-							file.previewElement.parentNode != null
-						) {
+						if (file.previewElement != null && file.previewElement.parentNode != null) {
 							file.previewElement.parentNode.removeChild(file.previewElement);
 						}
 						return this._updateMaxFilesReachedClass();
@@ -987,14 +937,10 @@ var Dropzone = (function(_Emitter) {
 						if (file.previewElement) {
 							file.previewElement.classList.remove('dz-file-preview');
 							for (
-								var _iterator6 = file.previewElement.querySelectorAll(
-										'[data-dz-thumbnail]'
-									),
+								var _iterator6 = file.previewElement.querySelectorAll('[data-dz-thumbnail]'),
 									_isArray6 = true,
 									_i6 = 0,
-									_iterator6 = _isArray6
-										? _iterator6
-										: _iterator6[Symbol.iterator]();
+									_iterator6 = _isArray6 ? _iterator6 : _iterator6[Symbol.iterator]();
 								;
 
 							) {
@@ -1030,14 +976,10 @@ var Dropzone = (function(_Emitter) {
 								message = message.error;
 							}
 							for (
-								var _iterator7 = file.previewElement.querySelectorAll(
-										'[data-dz-errormessage]'
-									),
+								var _iterator7 = file.previewElement.querySelectorAll('[data-dz-errormessage]'),
 									_isArray7 = true,
 									_i7 = 0,
-									_iterator7 = _isArray7
-										? _iterator7
-										: _iterator7[Symbol.iterator]();
+									_iterator7 = _isArray7 ? _iterator7 : _iterator7[Symbol.iterator]();
 								;
 
 							) {
@@ -1079,14 +1021,10 @@ var Dropzone = (function(_Emitter) {
 					uploadprogress: function uploadprogress(file, progress, bytesSent) {
 						if (file.previewElement) {
 							for (
-								var _iterator8 = file.previewElement.querySelectorAll(
-										'[data-dz-uploadprogress]'
-									),
+								var _iterator8 = file.previewElement.querySelectorAll('[data-dz-uploadprogress]'),
 									_isArray8 = true,
 									_i8 = 0,
-									_iterator8 = _isArray8
-										? _iterator8
-										: _iterator8[Symbol.iterator]();
+									_iterator8 = _isArray8 ? _iterator8 : _iterator8[Symbol.iterator]();
 								;
 
 							) {
@@ -1103,9 +1041,7 @@ var Dropzone = (function(_Emitter) {
 
 								var node = _ref7;
 
-								node.nodeName === 'PROGRESS'
-									? (node.value = progress)
-									: (node.style.width = progress + '%');
+								node.nodeName === 'PROGRESS' ? (node.value = progress) : (node.style.width = progress + '%');
 							}
 						}
 					},
@@ -1162,9 +1098,7 @@ var Dropzone = (function(_Emitter) {
 			key: 'extend',
 			value: function extend(target) {
 				for (
-					var _len2 = arguments.length,
-						objects = Array(_len2 > 1 ? _len2 - 1 : 0),
-						_key2 = 1;
+					var _len2 = arguments.length, objects = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1;
 					_key2 < _len2;
 					_key2++
 				) {
@@ -1205,10 +1139,7 @@ var Dropzone = (function(_Emitter) {
 	function Dropzone(el, options) {
 		_classCallCheck(this, Dropzone);
 
-		var _this = _possibleConstructorReturn(
-			this,
-			(Dropzone.__proto__ || Object.getPrototypeOf(Dropzone)).call(this)
-		);
+		var _this = _possibleConstructorReturn(this, (Dropzone.__proto__ || Object.getPrototypeOf(Dropzone)).call(this));
 
 		var fallback = void 0,
 			left = void 0;
@@ -1216,10 +1147,7 @@ var Dropzone = (function(_Emitter) {
 		// For backwards compatibility since the version was in the prototype previously
 		_this.version = Dropzone.version;
 
-		_this.defaultOptions.previewTemplate = _this.defaultOptions.previewTemplate.replace(
-			/\n*/g,
-			''
-		);
+		_this.defaultOptions.previewTemplate = _this.defaultOptions.previewTemplate.replace(/\n*/g, '');
 
 		_this.clickableElements = [];
 		_this.listeners = [];
@@ -1244,24 +1172,15 @@ var Dropzone = (function(_Emitter) {
 		// Put the dropzone inside the element itself.
 		_this.element.dropzone = _this;
 
-		var elementOptions =
-			(left = Dropzone.optionsForElement(_this.element)) != null ? left : {};
+		var elementOptions = (left = Dropzone.optionsForElement(_this.element)) != null ? left : {};
 
-		_this.options = Dropzone.extend(
-			{},
-			_this.defaultOptions,
-			elementOptions,
-			options != null ? options : {}
-		);
+		_this.options = Dropzone.extend({}, _this.defaultOptions, elementOptions, options != null ? options : {});
 
 		// If the browser failed, just call the fallback and leave
 		if (_this.options.forceFallback || !Dropzone.isBrowserSupported()) {
 			var _ret;
 
-			return (
-				(_ret = _this.options.fallback.call(_this)),
-				_possibleConstructorReturn(_this, _ret)
-			);
+			return (_ret = _this.options.fallback.call(_this)), _possibleConstructorReturn(_this, _ret);
 		}
 
 		// @options.url = @element.getAttribute "action" unless @options.url?
@@ -1306,10 +1225,7 @@ var Dropzone = (function(_Emitter) {
 		// Display previews in the previewsContainer element or the Dropzone element unless explicitly set to false
 		if (_this.options.previewsContainer !== false) {
 			if (_this.options.previewsContainer) {
-				_this.previewsContainer = Dropzone.getElement(
-					_this.options.previewsContainer,
-					'previewsContainer'
-				);
+				_this.previewsContainer = Dropzone.getElement(_this.options.previewsContainer, 'previewsContainer');
 			} else {
 				_this.previewsContainer = _this.element;
 			}
@@ -1319,10 +1235,7 @@ var Dropzone = (function(_Emitter) {
 			if (_this.options.clickable === true) {
 				_this.clickableElements = [_this.element];
 			} else {
-				_this.clickableElements = Dropzone.getElements(
-					_this.options.clickable,
-					'clickable'
-				);
+				_this.clickableElements = Dropzone.getElements(_this.options.clickable, 'clickable');
 			}
 		}
 
@@ -1401,10 +1314,7 @@ var Dropzone = (function(_Emitter) {
 				value: function getActiveFiles() {
 					return this.files
 						.filter(function(file) {
-							return (
-								file.status === Dropzone.UPLOADING ||
-								file.status === Dropzone.QUEUED
-							);
+							return file.status === Dropzone.UPLOADING || file.status === Dropzone.QUEUED;
 						})
 						.map(function(file) {
 							return file;
@@ -1424,15 +1334,10 @@ var Dropzone = (function(_Emitter) {
 						this.element.setAttribute('enctype', 'multipart/form-data');
 					}
 
-					if (
-						this.element.classList.contains('dropzone') &&
-						!this.element.querySelector('.dz-message')
-					) {
+					if (this.element.classList.contains('dropzone') && !this.element.querySelector('.dz-message')) {
 						this.element.appendChild(
 							Dropzone.createElement(
-								'<div class="dz-default dz-message"><span>' +
-									this.options.dictDefaultMessage +
-									'</span></div>'
+								'<div class="dz-default dz-message"><span>' + this.options.dictDefaultMessage + '</span></div>'
 							)
 						);
 					}
@@ -1440,9 +1345,7 @@ var Dropzone = (function(_Emitter) {
 					if (this.clickableElements.length) {
 						var setupHiddenFileInput = function setupHiddenFileInput() {
 							if (_this3.hiddenFileInput) {
-								_this3.hiddenFileInput.parentNode.removeChild(
-									_this3.hiddenFileInput
-								);
+								_this3.hiddenFileInput.parentNode.removeChild(_this3.hiddenFileInput);
 							}
 
 							// var dropZoneInput = document.querySelector('.dz-hidden-input');
@@ -1450,25 +1353,16 @@ var Dropzone = (function(_Emitter) {
 
 							_this3.hiddenFileInput = document.createElement('input');
 							_this3.hiddenFileInput.setAttribute('type', 'file');
-							if (
-								_this3.options.maxFiles === null ||
-								_this3.options.maxFiles > 1
-							) {
+							if (_this3.options.maxFiles === null || _this3.options.maxFiles > 1) {
 								_this3.hiddenFileInput.setAttribute('multiple', 'multiple');
 							}
 							_this3.hiddenFileInput.className = 'dz-hidden-input';
 
 							if (_this3.options.acceptedFiles !== null) {
-								_this3.hiddenFileInput.setAttribute(
-									'accept',
-									_this3.options.acceptedFiles
-								);
+								_this3.hiddenFileInput.setAttribute('accept', _this3.options.acceptedFiles);
 							}
 							if (_this3.options.capture !== null) {
-								_this3.hiddenFileInput.setAttribute(
-									'capture',
-									_this3.options.capture
-								);
+								_this3.hiddenFileInput.setAttribute('capture', _this3.options.capture);
 							}
 
 							// Not setting `display="none"` because some browsers don't accept clicks
@@ -1479,45 +1373,38 @@ var Dropzone = (function(_Emitter) {
 							_this3.hiddenFileInput.style.left = '0';
 							_this3.hiddenFileInput.style.height = '0';
 							_this3.hiddenFileInput.style.width = '0';
-							document
-								.querySelector(_this3.options.hiddenInputContainer)
-								.appendChild(_this3.hiddenFileInput);
-							return _this3.hiddenFileInput.addEventListener(
-								'change',
-								function() {
-									var files = _this3.hiddenFileInput.files;
+							document.querySelector(_this3.options.hiddenInputContainer).appendChild(_this3.hiddenFileInput);
+							return _this3.hiddenFileInput.addEventListener('change', function() {
+								var files = _this3.hiddenFileInput.files;
 
-									if (files.length) {
-										for (
-											var _iterator10 = files,
-												_isArray10 = true,
-												_i10 = 0,
-												_iterator10 = _isArray10
-													? _iterator10
-													: _iterator10[Symbol.iterator]();
-											;
+								if (files.length) {
+									for (
+										var _iterator10 = files,
+											_isArray10 = true,
+											_i10 = 0,
+											_iterator10 = _isArray10 ? _iterator10 : _iterator10[Symbol.iterator]();
+										;
 
-										) {
-											var _ref9;
+									) {
+										var _ref9;
 
-											if (_isArray10) {
-												if (_i10 >= _iterator10.length) break;
-												_ref9 = _iterator10[_i10++];
-											} else {
-												_i10 = _iterator10.next();
-												if (_i10.done) break;
-												_ref9 = _i10.value;
-											}
-
-											var file = _ref9;
-
-											_this3.addFile(file);
+										if (_isArray10) {
+											if (_i10 >= _iterator10.length) break;
+											_ref9 = _iterator10[_i10++];
+										} else {
+											_i10 = _iterator10.next();
+											if (_i10.done) break;
+											_ref9 = _i10.value;
 										}
+
+										var file = _ref9;
+
+										_this3.addFile(file);
 									}
-									_this3.emit('addedfiles', files);
-									return setupHiddenFileInput();
 								}
-							);
+								_this3.emit('addedfiles', files);
+								return setupHiddenFileInput();
+							});
 						};
 						setupHiddenFileInput();
 					}
@@ -1531,9 +1418,7 @@ var Dropzone = (function(_Emitter) {
 						var _iterator11 = this.events,
 							_isArray11 = true,
 							_i11 = 0,
-							_iterator11 = _isArray11
-								? _iterator11
-								: _iterator11[Symbol.iterator]();
+							_iterator11 = _isArray11 ? _iterator11 : _iterator11[Symbol.iterator]();
 						;
 
 					) {
@@ -1608,8 +1493,7 @@ var Dropzone = (function(_Emitter) {
 									try {
 										efct = e.dataTransfer.effectAllowed;
 									} catch (error) {}
-									e.dataTransfer.dropEffect =
-										'move' === efct || 'linkMove' === efct ? 'move' : 'copy';
+									e.dataTransfer.dropEffect = 'move' === efct || 'linkMove' === efct ? 'move' : 'copy';
 
 									noPropagation(e);
 									return _this3.emit('dragover', e);
@@ -1642,10 +1526,7 @@ var Dropzone = (function(_Emitter) {
 									if (
 										clickableElement !== _this3.element ||
 										evt.target === _this3.element ||
-										Dropzone.elementInside(
-											evt.target,
-											_this3.element.querySelector('.dz-message')
-										)
+										Dropzone.elementInside(evt.target, _this3.element.querySelector('.dz-message'))
 									) {
 										_this3.hiddenFileInput.click(); // Forward the click
 									}
@@ -1667,11 +1548,7 @@ var Dropzone = (function(_Emitter) {
 				value: function destroy() {
 					this.disable();
 					this.removeAllFiles(true);
-					if (
-						this.hiddenFileInput != null
-							? this.hiddenFileInput.parentNode
-							: undefined
-					) {
+					if (this.hiddenFileInput != null ? this.hiddenFileInput.parentNode : undefined) {
 						this.hiddenFileInput.parentNode.removeChild(this.hiddenFileInput);
 						this.hiddenFileInput = null;
 					}
@@ -1693,9 +1570,7 @@ var Dropzone = (function(_Emitter) {
 							var _iterator12 = this.getActiveFiles(),
 								_isArray12 = true,
 								_i12 = 0,
-								_iterator12 = _isArray12
-									? _iterator12
-									: _iterator12[Symbol.iterator]();
+								_iterator12 = _isArray12 ? _iterator12 : _iterator12[Symbol.iterator]();
 							;
 
 						) {
@@ -1720,12 +1595,7 @@ var Dropzone = (function(_Emitter) {
 						totalUploadProgress = 100;
 					}
 
-					return this.emit(
-						'totaluploadprogress',
-						totalUploadProgress,
-						totalBytes,
-						totalBytesSent
-					);
+					return this.emit('totaluploadprogress', totalUploadProgress, totalBytes, totalBytesSent);
 				},
 
 				// @options.paramName can be a function taking one parameter rather than a string.
@@ -1737,11 +1607,7 @@ var Dropzone = (function(_Emitter) {
 					if (typeof this.options.paramName === 'function') {
 						return this.options.paramName(n);
 					} else {
-						return (
-							'' +
-							this.options.paramName +
-							(this.options.uploadMultiple ? '[' + n + ']' : '')
-						);
+						return '' + this.options.paramName + (this.options.uploadMultiple ? '[' + n + ']' : '');
 					}
 				},
 
@@ -1812,9 +1678,7 @@ var Dropzone = (function(_Emitter) {
 							var _iterator13 = elements,
 								_isArray13 = true,
 								_i13 = 0,
-								_iterator13 = _isArray13
-									? _iterator13
-									: _iterator13[Symbol.iterator]();
+								_iterator13 = _isArray13 ? _iterator13 : _iterator13[Symbol.iterator]();
 							;
 
 						) {
@@ -1841,11 +1705,7 @@ var Dropzone = (function(_Emitter) {
 					for (var _i14 = 0; _i14 < _arr.length; _i14++) {
 						var tagName = _arr[_i14];
 						var fallback;
-						if (
-							(fallback = getFallback(
-								this.element.getElementsByTagName(tagName)
-							))
-						) {
+						if ((fallback = getFallback(this.element.getElementsByTagName(tagName)))) {
 							return fallback;
 						}
 					}
@@ -1861,13 +1721,7 @@ var Dropzone = (function(_Emitter) {
 							var result = [];
 							for (var event in elementListeners.events) {
 								var listener = elementListeners.events[event];
-								result.push(
-									elementListeners.element.addEventListener(
-										event,
-										listener,
-										false
-									)
-								);
+								result.push(elementListeners.element.addEventListener(event, listener, false));
 							}
 							return result;
 						})();
@@ -1884,13 +1738,7 @@ var Dropzone = (function(_Emitter) {
 							var result = [];
 							for (var event in elementListeners.events) {
 								var listener = elementListeners.events[event];
-								result.push(
-									elementListeners.element.removeEventListener(
-										event,
-										listener,
-										false
-									)
-								);
+								result.push(elementListeners.element.removeEventListener(event, listener, false));
 							}
 							return result;
 						})();
@@ -1939,8 +1787,7 @@ var Dropzone = (function(_Emitter) {
 							var cutoff = Math.pow(this.options.filesizeBase, 4 - i) / 10;
 
 							if (size >= cutoff) {
-								selectedSize =
-									size / Math.pow(this.options.filesizeBase, 4 - i);
+								selectedSize = size / Math.pow(this.options.filesizeBase, 4 - i);
 								selectedUnit = unit;
 								break;
 							}
@@ -1949,12 +1796,7 @@ var Dropzone = (function(_Emitter) {
 						selectedSize = Math.round(10 * selectedSize) / 10; // Cutting of digits
 					}
 
-					return (
-						'<strong>' +
-						selectedSize +
-						'</strong> ' +
-						this.options.dictFileSizeUnits[selectedUnit]
-					);
+					return '<strong>' + selectedSize + '</strong> ' + this.options.dictFileSizeUnits[selectedUnit];
 				},
 
 				// Adds or removes the `dz-max-files-reached` class from the form.
@@ -1962,10 +1804,7 @@ var Dropzone = (function(_Emitter) {
 			{
 				key: '_updateMaxFilesReachedClass',
 				value: function _updateMaxFilesReachedClass() {
-					if (
-						this.options.maxFiles != null &&
-						this.getAcceptedFiles().length >= this.options.maxFiles
-					) {
+					if (this.options.maxFiles != null && this.getAcceptedFiles().length >= this.options.maxFiles) {
 						if (this.getAcceptedFiles().length === this.options.maxFiles) {
 							this.emit('maxfilesreached', this.files);
 						}
@@ -2043,9 +1882,7 @@ var Dropzone = (function(_Emitter) {
 							var _iterator14 = items,
 								_isArray14 = true,
 								_i15 = 0,
-								_iterator14 = _isArray14
-									? _iterator14
-									: _iterator14[Symbol.iterator]();
+								_iterator14 = _isArray14 ? _iterator14 : _iterator14[Symbol.iterator]();
 							;
 
 						) {
@@ -2063,10 +1900,7 @@ var Dropzone = (function(_Emitter) {
 							var item = _ref13;
 
 							var entry;
-							if (
-								item.webkitGetAsEntry != null &&
-								(entry = item.webkitGetAsEntry())
-							) {
+							if (item.webkitGetAsEntry != null && (entry = item.webkitGetAsEntry())) {
 								if (entry.isFile) {
 									result.push(_this6.addFile(item.getAsFile()));
 								} else if (entry.isDirectory) {
@@ -2111,9 +1945,7 @@ var Dropzone = (function(_Emitter) {
 									var _iterator15 = entries,
 										_isArray15 = true,
 										_i16 = 0,
-										_iterator15 = _isArray15
-											? _iterator15
-											: _iterator15[Symbol.iterator]();
+										_iterator15 = _isArray15 ? _iterator15 : _iterator15[Symbol.iterator]();
 									;
 
 								) {
@@ -2132,20 +1964,14 @@ var Dropzone = (function(_Emitter) {
 
 									if (entry.isFile) {
 										entry.file(function(file) {
-											if (
-												_this7.options.ignoreHiddenFiles &&
-												file.name.substring(0, 1) === '.'
-											) {
+											if (_this7.options.ignoreHiddenFiles && file.name.substring(0, 1) === '.') {
 												return;
 											}
 											file.fullPath = path + '/' + file.name;
 											return _this7.addFile(file);
 										});
 									} else if (entry.isDirectory) {
-										_this7._addFilesFromDirectory(
-											entry,
-											path + '/' + entry.name
-										);
+										_this7._addFilesFromDirectory(entry, path + '/' + entry.name);
 									}
 								}
 
@@ -2174,24 +2000,13 @@ var Dropzone = (function(_Emitter) {
 					if (file.size > this.options.maxFilesize * 1024 * 1024) {
 						return done(
 							this.options.dictFileTooBig
-								.replace(
-									'{{filesize}}',
-									Math.round(file.size / 1024 / 10.24) / 100
-								)
+								.replace('{{filesize}}', Math.round(file.size / 1024 / 10.24) / 100)
 								.replace('{{maxFilesize}}', this.options.maxFilesize)
 						);
 					} else if (!Dropzone.isValidFile(file, this.options.acceptedFiles)) {
 						return done(this.options.dictInvalidFileType);
-					} else if (
-						this.options.maxFiles != null &&
-						this.getAcceptedFiles().length >= this.options.maxFiles
-					) {
-						done(
-							this.options.dictMaxFilesExceeded.replace(
-								'{{maxFiles}}',
-								this.options.maxFiles
-							)
-						);
+					} else if (this.options.maxFiles != null && this.getAcceptedFiles().length >= this.options.maxFiles) {
+						done(this.options.dictMaxFilesExceeded.replace('{{maxFiles}}', this.options.maxFiles));
 						return this.emit('maxfilesexceeded', file);
 					} else {
 						return this.options.accept.call(this, file, done);
@@ -2211,10 +2026,7 @@ var Dropzone = (function(_Emitter) {
 						total: file.size,
 						bytesSent: 0,
 						filename: this._renameFile(file),
-						chunked:
-							this.options.chunking &&
-							(this.options.forceChunking ||
-								file.size > this.options.chunkSize),
+						chunked: this.options.chunking && (this.options.forceChunking || file.size > this.options.chunkSize),
 						totalChunkCount: Math.ceil(file.size / this.options.chunkSize),
 					};
 					this.files.push(file);
@@ -2248,9 +2060,7 @@ var Dropzone = (function(_Emitter) {
 						var _iterator16 = files,
 							_isArray16 = true,
 							_i17 = 0,
-							_iterator16 = _isArray16
-								? _iterator16
-								: _iterator16[Symbol.iterator]();
+							_iterator16 = _isArray16 ? _iterator16 : _iterator16[Symbol.iterator]();
 						;
 
 					) {
@@ -2285,9 +2095,7 @@ var Dropzone = (function(_Emitter) {
 							}, 0); // Deferring the call
 						}
 					} else {
-						throw new Error(
-							"This file can't be queued because it has already been processed or was rejected."
-						);
+						throw new Error("This file can't be queued because it has already been processed or was rejected.");
 					}
 				},
 			},
@@ -2362,9 +2170,7 @@ var Dropzone = (function(_Emitter) {
 						var _iterator17 = this.files.slice(),
 							_isArray17 = true,
 							_i18 = 0,
-							_iterator17 = _isArray17
-								? _iterator17
-								: _iterator17[Symbol.iterator]();
+							_iterator17 = _isArray17 ? _iterator17 : _iterator17[Symbol.iterator]();
 						;
 
 					) {
@@ -2394,61 +2200,32 @@ var Dropzone = (function(_Emitter) {
 			},
 			{
 				key: 'resizeImage',
-				value: function resizeImage(
-					file,
-					width,
-					height,
-					resizeMethod,
-					callback
-				) {
+				value: function resizeImage(file, width, height, resizeMethod, callback) {
 					var _this12 = this;
 
-					return this.createThumbnail(
-						file,
-						width,
-						height,
-						resizeMethod,
-						false,
-						function(dataUrl, canvas) {
-							if (canvas === null) {
-								// The image has not been resized
-								return callback(file);
-							} else {
-								var resizeMimeType = _this12.options.resizeMimeType;
+					return this.createThumbnail(file, width, height, resizeMethod, false, function(dataUrl, canvas) {
+						if (canvas === null) {
+							// The image has not been resized
+							return callback(file);
+						} else {
+							var resizeMimeType = _this12.options.resizeMimeType;
 
-								if (resizeMimeType == null) {
-									resizeMimeType = file.type;
-								}
-								var resizedDataURL = canvas.toDataURL(
-									resizeMimeType,
-									_this12.options.resizeQuality
-								);
-								if (
-									resizeMimeType === 'image/jpeg' ||
-									resizeMimeType === 'image/jpg'
-								) {
-									// Now add the original EXIF information
-									resizedDataURL = ExifRestore.restore(
-										file.dataURL,
-										resizedDataURL
-									);
-								}
-								return callback(Dropzone.dataURItoBlob(resizedDataURL));
+							if (resizeMimeType == null) {
+								resizeMimeType = file.type;
 							}
+							var resizedDataURL = canvas.toDataURL(resizeMimeType, _this12.options.resizeQuality);
+							if (resizeMimeType === 'image/jpeg' || resizeMimeType === 'image/jpg') {
+								// Now add the original EXIF information
+								resizedDataURL = ExifRestore.restore(file.dataURL, resizedDataURL);
+							}
+							return callback(Dropzone.dataURItoBlob(resizedDataURL));
 						}
-					);
+					});
 				},
 			},
 			{
 				key: 'createThumbnail',
-				value: function createThumbnail(
-					file,
-					width,
-					height,
-					resizeMethod,
-					fixOrientation,
-					callback
-				) {
+				value: function createThumbnail(file, width, height, resizeMethod, fixOrientation, callback) {
 					var _this13 = this;
 
 					var fileReader = new FileReader();
@@ -2464,14 +2241,7 @@ var Dropzone = (function(_Emitter) {
 							return;
 						}
 
-						return _this13.createThumbnailFromUrl(
-							file,
-							width,
-							height,
-							resizeMethod,
-							fixOrientation,
-							callback
-						);
+						return _this13.createThumbnailFromUrl(file, width, height, resizeMethod, fixOrientation, callback);
 					};
 
 					return fileReader.readAsDataURL(file);
@@ -2502,11 +2272,7 @@ var Dropzone = (function(_Emitter) {
 						var loadExif = function loadExif(callback) {
 							return callback(1);
 						};
-						if (
-							typeof EXIF !== 'undefined' &&
-							EXIF !== null &&
-							fixOrientation
-						) {
+						if (typeof EXIF !== 'undefined' && EXIF !== null && fixOrientation) {
 							loadExif = function loadExif(callback) {
 								return EXIF.getData(img, function() {
 									return callback(EXIF.getTag(this, 'Orientation'));
@@ -2518,13 +2284,7 @@ var Dropzone = (function(_Emitter) {
 							file.width = img.width;
 							file.height = img.height;
 
-							var resizeInfo = _this14.options.resize.call(
-								_this14,
-								file,
-								width,
-								height,
-								resizeMethod
-							);
+							var resizeInfo = _this14.options.resize.call(_this14, file, width, height, resizeMethod);
 
 							var canvas = document.createElement('canvas');
 							var ctx = canvas.getContext('2d');
@@ -2628,9 +2388,7 @@ var Dropzone = (function(_Emitter) {
 
 					if (this.options.uploadMultiple) {
 						// The files should be uploaded in one request
-						return this.processFiles(
-							queuedFiles.slice(0, parallelUploads - processingLength)
-						);
+						return this.processFiles(queuedFiles.slice(0, parallelUploads - processingLength));
 					} else {
 						while (i < parallelUploads) {
 							if (!queuedFiles.length) {
@@ -2659,9 +2417,7 @@ var Dropzone = (function(_Emitter) {
 						var _iterator18 = files,
 							_isArray18 = true,
 							_i19 = 0,
-							_iterator18 = _isArray18
-								? _iterator18
-								: _iterator18[Symbol.iterator]();
+							_iterator18 = _isArray18 ? _iterator18 : _iterator18[Symbol.iterator]();
 						;
 
 					) {
@@ -2718,9 +2474,7 @@ var Dropzone = (function(_Emitter) {
 							var _iterator19 = groupedFiles,
 								_isArray19 = true,
 								_i20 = 0,
-								_iterator19 = _isArray19
-									? _iterator19
-									: _iterator19[Symbol.iterator]();
+								_iterator19 = _isArray19 ? _iterator19 : _iterator19[Symbol.iterator]();
 							;
 
 						) {
@@ -2746,9 +2500,7 @@ var Dropzone = (function(_Emitter) {
 							var _iterator20 = groupedFiles,
 								_isArray20 = true,
 								_i21 = 0,
-								_iterator20 = _isArray20
-									? _iterator20
-									: _iterator20[Symbol.iterator]();
+								_iterator20 = _isArray20 ? _iterator20 : _iterator20[Symbol.iterator]();
 							;
 
 						) {
@@ -2770,10 +2522,7 @@ var Dropzone = (function(_Emitter) {
 						if (this.options.uploadMultiple) {
 							this.emit('canceledmultiple', groupedFiles);
 						}
-					} else if (
-						file.status === Dropzone.ADDED ||
-						file.status === Dropzone.QUEUED
-					) {
+					} else if (file.status === Dropzone.ADDED || file.status === Dropzone.QUEUED) {
 						file.status = Dropzone.CANCELED;
 						this.emit('canceled', file);
 						if (this.options.uploadMultiple) {
@@ -2791,9 +2540,7 @@ var Dropzone = (function(_Emitter) {
 				value: function resolveOption(option) {
 					if (typeof option === 'function') {
 						for (
-							var _len3 = arguments.length,
-								args = Array(_len3 > 1 ? _len3 - 1 : 0),
-								_key3 = 1;
+							var _len3 = arguments.length, args = Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1;
 							_key3 < _len3;
 							_key3++
 						) {
@@ -2842,10 +2589,7 @@ var Dropzone = (function(_Emitter) {
 								startedChunkCount++;
 
 								var start = chunkIndex * _this15.options.chunkSize;
-								var end = Math.min(
-									start + _this15.options.chunkSize,
-									file.size
-								);
+								var end = Math.min(start + _this15.options.chunkSize, file.size);
 
 								var dataBlock = {
 									name: _this15._getParamName(0),
@@ -2918,10 +2662,7 @@ var Dropzone = (function(_Emitter) {
 				key: '_getChunk',
 				value: function _getChunk(file, xhr) {
 					for (var i = 0; i < file.upload.totalChunkCount; i++) {
-						if (
-							file.upload.chunks[i] !== undefined &&
-							file.upload.chunks[i].xhr === xhr
-						) {
+						if (file.upload.chunks[i] !== undefined && file.upload.chunks[i].xhr === xhr) {
 							return file.upload.chunks[i];
 						}
 					}
@@ -2943,9 +2684,7 @@ var Dropzone = (function(_Emitter) {
 						var _iterator21 = files,
 							_isArray21 = true,
 							_i23 = 0,
-							_iterator21 = _isArray21
-								? _iterator21
-								: _iterator21[Symbol.iterator]();
+							_iterator21 = _isArray21 ? _iterator21 : _iterator21[Symbol.iterator]();
 						;
 
 					) {
@@ -3035,9 +2774,7 @@ var Dropzone = (function(_Emitter) {
 						var _iterator22 = files,
 							_isArray22 = true,
 							_i24 = 0,
-							_iterator22 = _isArray22
-								? _iterator22
-								: _iterator22[Symbol.iterator]();
+							_iterator22 = _isArray22 ? _iterator22 : _iterator22[Symbol.iterator]();
 						;
 
 					) {
@@ -3084,9 +2821,7 @@ var Dropzone = (function(_Emitter) {
 					var doneCounter = 0;
 
 					var _loop = function _loop(i) {
-						_this17.options.transformFile.call(_this17, files[i], function(
-							transformedFile
-						) {
+						_this17.options.transformFile.call(_this17, files[i], function(transformedFile) {
 							transformedFiles[i] = transformedFile;
 							if (++doneCounter === files.length) {
 								done(transformedFiles);
@@ -3107,14 +2842,10 @@ var Dropzone = (function(_Emitter) {
 					// Take care of other input elements
 					if (this.element.tagName === 'FORM') {
 						for (
-							var _iterator23 = this.element.querySelectorAll(
-									'input, textarea, select, button'
-								),
+							var _iterator23 = this.element.querySelectorAll('input, textarea, select, button'),
 								_isArray23 = true,
 								_i25 = 0,
-								_iterator23 = _isArray23
-									? _iterator23
-									: _iterator23[Symbol.iterator]();
+								_iterator23 = _isArray23 ? _iterator23 : _iterator23[Symbol.iterator]();
 							;
 
 						) {
@@ -3136,21 +2867,15 @@ var Dropzone = (function(_Emitter) {
 							if (inputType) inputType = inputType.toLowerCase();
 
 							// If the input doesn't have a name, we can't use it.
-							if (typeof inputName === 'undefined' || inputName === null)
-								continue;
+							if (typeof inputName === 'undefined' || inputName === null) continue;
 
-							if (
-								input.tagName === 'SELECT' &&
-								input.hasAttribute('multiple')
-							) {
+							if (input.tagName === 'SELECT' && input.hasAttribute('multiple')) {
 								// Possibly multiple values
 								for (
 									var _iterator24 = input.options,
 										_isArray24 = true,
 										_i26 = 0,
-										_iterator24 = _isArray24
-											? _iterator24
-											: _iterator24[Symbol.iterator]();
+										_iterator24 = _isArray24 ? _iterator24 : _iterator24[Symbol.iterator]();
 									;
 
 								) {
@@ -3171,11 +2896,7 @@ var Dropzone = (function(_Emitter) {
 										formData.append(inputName, option.value);
 									}
 								}
-							} else if (
-								!inputType ||
-								(inputType !== 'checkbox' && inputType !== 'radio') ||
-								input.checked
-							) {
+							} else if (!inputType || (inputType !== 'checkbox' && inputType !== 'radio') || input.checked) {
 								formData.append(inputName, input.value);
 							}
 						}
@@ -3206,25 +2927,19 @@ var Dropzone = (function(_Emitter) {
 							file.upload.total = 0;
 							file.upload.bytesSent = 0;
 							for (var i = 0; i < file.upload.totalChunkCount; i++) {
-								if (
-									file.upload.chunks[i] !== undefined &&
-									file.upload.chunks[i].progress !== undefined
-								) {
+								if (file.upload.chunks[i] !== undefined && file.upload.chunks[i].progress !== undefined) {
 									file.upload.progress += file.upload.chunks[i].progress;
 									file.upload.total += file.upload.chunks[i].total;
 									file.upload.bytesSent += file.upload.chunks[i].bytesSent;
 								}
 							}
-							file.upload.progress =
-								file.upload.progress / file.upload.totalChunkCount;
+							file.upload.progress = file.upload.progress / file.upload.totalChunkCount;
 						} else {
 							for (
 								var _iterator25 = files,
 									_isArray25 = true,
 									_i27 = 0,
-									_iterator25 = _isArray25
-										? _iterator25
-										: _iterator25[Symbol.iterator]();
+									_iterator25 = _isArray25 ? _iterator25 : _iterator25[Symbol.iterator]();
 								;
 
 							) {
@@ -3250,9 +2965,7 @@ var Dropzone = (function(_Emitter) {
 							var _iterator26 = files,
 								_isArray26 = true,
 								_i28 = 0,
-								_iterator26 = _isArray26
-									? _iterator26
-									: _iterator26[Symbol.iterator]();
+								_iterator26 = _isArray26 ? _iterator26 : _iterator26[Symbol.iterator]();
 							;
 
 						) {
@@ -3269,12 +2982,7 @@ var Dropzone = (function(_Emitter) {
 
 							var _file3 = _ref25;
 
-							this.emit(
-								'uploadprogress',
-								_file3,
-								_file3.upload.progress,
-								_file3.upload.bytesSent
-							);
+							this.emit('uploadprogress', _file3, _file3.upload.progress, _file3.upload.bytesSent);
 						}
 					} else {
 						// Called when the file finished uploading
@@ -3287,9 +2995,7 @@ var Dropzone = (function(_Emitter) {
 							var _iterator27 = files,
 								_isArray27 = true,
 								_i29 = 0,
-								_iterator27 = _isArray27
-									? _iterator27
-									: _iterator27[Symbol.iterator]();
+								_iterator27 = _isArray27 ? _iterator27 : _iterator27[Symbol.iterator]();
 							;
 
 						) {
@@ -3306,10 +3012,7 @@ var Dropzone = (function(_Emitter) {
 
 							var _file4 = _ref26;
 
-							if (
-								_file4.upload.progress !== 100 ||
-								_file4.upload.bytesSent !== _file4.upload.total
-							) {
+							if (_file4.upload.progress !== 100 || _file4.upload.bytesSent !== _file4.upload.total) {
 								allFilesFinished = false;
 							}
 							_file4.upload.progress = progress;
@@ -3325,9 +3028,7 @@ var Dropzone = (function(_Emitter) {
 							var _iterator28 = files,
 								_isArray28 = true,
 								_i30 = 0,
-								_iterator28 = _isArray28
-									? _iterator28
-									: _iterator28[Symbol.iterator]();
+								_iterator28 = _isArray28 ? _iterator28 : _iterator28[Symbol.iterator]();
 							;
 
 						) {
@@ -3344,12 +3045,7 @@ var Dropzone = (function(_Emitter) {
 
 							var _file5 = _ref27;
 
-							this.emit(
-								'uploadprogress',
-								_file5,
-								progress,
-								_file5.upload.bytesSent
-							);
+							this.emit('uploadprogress', _file5, progress, _file5.upload.bytesSent);
 						}
 					}
 				},
@@ -3367,10 +3063,7 @@ var Dropzone = (function(_Emitter) {
 						return;
 					}
 
-					if (
-						xhr.responseType !== 'arraybuffer' &&
-						xhr.responseType !== 'blob'
-					) {
+					if (xhr.responseType !== 'arraybuffer' && xhr.responseType !== 'blob') {
 						response = xhr.responseText;
 
 						if (
@@ -3392,9 +3085,7 @@ var Dropzone = (function(_Emitter) {
 						this._handleUploadError(files, xhr, response);
 					} else {
 						if (files[0].upload.chunked) {
-							files[0].upload.finishedChunkUpload(
-								this._getChunk(files[0], xhr)
-							);
+							files[0].upload.finishedChunkUpload(this._getChunk(files[0], xhr));
 						} else {
 							this._finished(files, response, e);
 						}
@@ -3422,9 +3113,7 @@ var Dropzone = (function(_Emitter) {
 						var _iterator29 = files,
 							_isArray29 = true,
 							_i31 = 0,
-							_iterator29 = _isArray29
-								? _iterator29
-								: _iterator29[Symbol.iterator]();
+							_iterator29 = _isArray29 ? _iterator29 : _iterator29[Symbol.iterator]();
 						;
 
 					) {
@@ -3443,11 +3132,7 @@ var Dropzone = (function(_Emitter) {
 
 						this._errorProcessing(
 							files,
-							response ||
-								this.options.dictResponseError.replace(
-									'{{statusCode}}',
-									xhr.status
-								),
+							response || this.options.dictResponseError.replace('{{statusCode}}', xhr.status),
 							xhr
 						);
 					}
@@ -3469,9 +3154,7 @@ var Dropzone = (function(_Emitter) {
 						var _iterator30 = files,
 							_isArray30 = true,
 							_i32 = 0,
-							_iterator30 = _isArray30
-								? _iterator30
-								: _iterator30[Symbol.iterator]();
+							_iterator30 = _isArray30 ? _iterator30 : _iterator30[Symbol.iterator]();
 						;
 
 					) {
@@ -3512,9 +3195,7 @@ var Dropzone = (function(_Emitter) {
 						var _iterator31 = files,
 							_isArray31 = true,
 							_i33 = 0,
-							_iterator31 = _isArray31
-								? _iterator31
-								: _iterator31[Symbol.iterator]();
+							_iterator31 = _isArray31 ? _iterator31 : _iterator31[Symbol.iterator]();
 						;
 
 					) {
@@ -3550,14 +3231,11 @@ var Dropzone = (function(_Emitter) {
 			{
 				key: 'uuidv4',
 				value: function uuidv4() {
-					return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(
-						/[xy]/g,
-						function(c) {
-							var r = (Math.random() * 16) | 0,
-								v = c === 'x' ? r : (r & 0x3) | 0x8;
-							return v.toString(16);
-						}
-					);
+					return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+						var r = (Math.random() * 16) | 0,
+							v = c === 'x' ? r : (r & 0x3) | 0x8;
+						return v.toString(16);
+					});
 				},
 			},
 		]
@@ -3630,9 +3308,7 @@ Dropzone.discover = function() {
 					var _iterator32 = elements,
 						_isArray32 = true,
 						_i34 = 0,
-						_iterator32 = _isArray32
-							? _iterator32
-							: _iterator32[Symbol.iterator]();
+						_iterator32 = _isArray32 ? _iterator32 : _iterator32[Symbol.iterator]();
 					;
 
 				) {
@@ -3716,14 +3392,7 @@ Dropzone.blacklistedBrowsers = [
 Dropzone.isBrowserSupported = function() {
 	var capableBrowser = true;
 
-	if (
-		window.File &&
-		window.FileReader &&
-		window.FileList &&
-		window.Blob &&
-		window.FormData &&
-		document.querySelector
-	) {
+	if (window.File && window.FileReader && window.FileList && window.Blob && window.FormData && document.querySelector) {
 		if (!('classList' in document.createElement('a'))) {
 			capableBrowser = false;
 		} else {
@@ -3732,9 +3401,7 @@ Dropzone.isBrowserSupported = function() {
 				var _iterator34 = Dropzone.blacklistedBrowsers,
 					_isArray34 = true,
 					_i36 = 0,
-					_iterator34 = _isArray34
-						? _iterator34
-						: _iterator34[Symbol.iterator]();
+					_iterator34 = _isArray34 ? _iterator34 : _iterator34[Symbol.iterator]();
 				;
 
 			) {
@@ -3778,11 +3445,7 @@ Dropzone.dataURItoBlob = function(dataURI) {
 	// write the bytes of the string to an ArrayBuffer
 	var ab = new ArrayBuffer(byteString.length);
 	var ia = new Uint8Array(ab);
-	for (
-		var i = 0, end = byteString.length, asc = 0 <= end;
-		asc ? i <= end : i >= end;
-		asc ? i++ : i--
-	) {
+	for (var i = 0, end = byteString.length, asc = 0 <= end; asc ? i <= end : i >= end; asc ? i++ : i--) {
 		ia[i] = byteString.charCodeAt(i);
 	}
 
@@ -3836,11 +3499,7 @@ Dropzone.getElement = function(el, name) {
 		element = el;
 	}
 	if (element == null) {
-		throw new Error(
-			'Invalid `' +
-				name +
-				'` option provided. Please provide a CSS selector or a plain HTML element.'
-		);
+		throw new Error('Invalid `' + name + '` option provided. Please provide a CSS selector or a plain HTML element.');
 	}
 	return element;
 };
@@ -3855,9 +3514,7 @@ Dropzone.getElements = function(els, name) {
 				var _iterator35 = els,
 					_isArray35 = true,
 					_i37 = 0,
-					_iterator35 = _isArray35
-						? _iterator35
-						: _iterator35[Symbol.iterator]();
+					_iterator35 = _isArray35 ? _iterator35 : _iterator35[Symbol.iterator]();
 				;
 
 			) {
@@ -3902,9 +3559,7 @@ Dropzone.getElements = function(els, name) {
 
 	if (elements == null || !elements.length) {
 		throw new Error(
-			'Invalid `' +
-				name +
-				'` option provided. Please provide a CSS selector, a plain HTML element or a list of those.'
+			'Invalid `' + name + '` option provided. Please provide a CSS selector, a plain HTML element or a list of those.'
 		);
 	}
 
@@ -3958,14 +3613,7 @@ Dropzone.isValidFile = function(file, acceptedFiles) {
 
 		validType = validType.trim();
 		if (validType.charAt(0) === '.') {
-			if (
-				file.name
-					.toLowerCase()
-					.indexOf(
-						validType.toLowerCase(),
-						file.name.length - validType.length
-					) !== -1
-			) {
+			if (file.name.toLowerCase().indexOf(validType.toLowerCase(), file.name.length - validType.length) !== -1) {
 				return true;
 			}
 		} else if (/\/\*$/.test(validType)) {
@@ -4063,18 +3711,7 @@ var detectVerticalSquash = function detectVerticalSquash(img) {
 
 // A replacement for context.drawImage
 // (args are for source and destination).
-var drawImageIOSFix = function drawImageIOSFix(
-	ctx,
-	img,
-	sx,
-	sy,
-	sw,
-	sh,
-	dx,
-	dy,
-	dw,
-	dh
-) {
+var drawImageIOSFix = function drawImageIOSFix(ctx, img, sx, sy, sw, sh, dx, dy, dw, dh) {
 	var vertSquashRatio = detectVerticalSquash(img);
 	return ctx.drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh / vertSquashRatio);
 };
@@ -4092,8 +3729,7 @@ var ExifRestore = (function() {
 		{
 			key: 'initClass',
 			value: function initClass() {
-				this.KEY_STR =
-					'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+				this.KEY_STR = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
 			},
 		},
 		{
@@ -4142,9 +3778,7 @@ var ExifRestore = (function() {
 				if (!origFileBase64.match('data:image/jpeg;base64,')) {
 					return resizedFileBase64;
 				}
-				var rawImage = this.decode64(
-					origFileBase64.replace('data:image/jpeg;base64,', '')
-				);
+				var rawImage = this.decode64(origFileBase64.replace('data:image/jpeg;base64,', ''));
 				var segments = this.slice2Segments(rawImage);
 				var image = this.exifManipulation(resizedFileBase64, segments);
 				return 'data:image/jpeg;base64,' + this.encode64(image);
@@ -4177,10 +3811,7 @@ var ExifRestore = (function() {
 		{
 			key: 'insertExif',
 			value: function insertExif(resizedFileBase64, exifArray) {
-				var imageData = resizedFileBase64.replace(
-					'data:image/jpeg;base64,',
-					''
-				);
+				var imageData = resizedFileBase64.replace('data:image/jpeg;base64,', '');
 				var buf = this.decode64(imageData);
 				var separatePoint = buf.indexOf(255, 3);
 				var mae = buf.slice(0, separatePoint);
@@ -4198,16 +3829,10 @@ var ExifRestore = (function() {
 				var segments = [];
 				while (true) {
 					var length;
-					if (
-						(rawImageArray[head] === 255) &
-						(rawImageArray[head + 1] === 218)
-					) {
+					if ((rawImageArray[head] === 255) & (rawImageArray[head + 1] === 218)) {
 						break;
 					}
-					if (
-						(rawImageArray[head] === 255) &
-						(rawImageArray[head + 1] === 216)
-					) {
+					if ((rawImageArray[head] === 255) & (rawImageArray[head + 1] === 216)) {
 						head += 2;
 					} else {
 						length = rawImageArray[head + 2] * 256 + rawImageArray[head + 3];
@@ -4343,18 +3968,14 @@ Dropzone._autoDiscoverFunction = function() {
 contentLoaded(window, Dropzone._autoDiscoverFunction);
 
 function __guard__(value, transform) {
-	return typeof value !== 'undefined' && value !== null
-		? transform(value)
-		: undefined;
+	return typeof value !== 'undefined' && value !== null ? transform(value) : undefined;
 }
 function __guardMethod__(obj, methodName, transform) {
-	if (
-		typeof obj !== 'undefined' &&
-		obj !== null &&
-		typeof obj[methodName] === 'function'
-	) {
+	if (typeof obj !== 'undefined' && obj !== null && typeof obj[methodName] === 'function') {
 		return transform(obj, methodName);
 	} else {
 		return undefined;
 	}
 }
+
+SapphireWidgets.Dropzone = Dropzone;
