@@ -1,6 +1,6 @@
 /* Component SSDListLine */
-var ssdListLine = {
-	toggle: function(lineId, lineHandler = '') {
+SapphireWidgets.SSDListLine = {
+	toggle: (lineId, lineHandler = '') => {
 		var _line = $(lineId).is('.SSD_ListLine')
 			? $(lineId)
 			: $(lineId)

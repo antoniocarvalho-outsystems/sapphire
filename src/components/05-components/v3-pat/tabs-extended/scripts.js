@@ -1,5 +1,5 @@
 /* Component TabsExtended */
-var setupTabsExtended = function() {
+SapphireWidgets.TabsExtended = function() {
 	$('.Tabs_Extended .Tabs_header > .Tabs__tab').each(function() {
 		if ($(this).text() === '') {
 			$(this).remove();
@@ -53,9 +53,7 @@ var setupTabsExtended = function() {
 	});
 };
 
-setupTabsExtended();
-
 $(document).ready(function() {
-	setupTabsExtended();
-	osAjaxBackend.BindAfterAjaxRequest(setupTabsExtended);
+	SapphireWidgets.TabsExtended();
+	osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.TabsExtended);
 });

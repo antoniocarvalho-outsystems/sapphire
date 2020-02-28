@@ -24,7 +24,7 @@ module.exports = merge(common, {
 				proxy: 'https://localhost:8080/',
 			},
 			{
-				reload: true,
+				reload: false,
 			}
 		),
 	],
