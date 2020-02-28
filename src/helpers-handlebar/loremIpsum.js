@@ -7,7 +7,7 @@ const LoremIpsum = require('lorem-ipsum').LoremIpsum;
  */
 
 module.exports = function(handlebars) {
-	handlebars.registerHelper('lorem', function(arg1, arg2, options) {
+	handlebars.registerHelper('lorem', arg1=> {
 		const lorem = new LoremIpsum({
 			sentencesPerParagraph: {
 				max: 8,

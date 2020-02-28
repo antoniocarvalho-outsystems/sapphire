@@ -1,43 +1,50 @@
 .SidebarNotify {
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 26px;
-  padding: 1px 3px;
-}
+	background-color: transparent;
+	border-radius: 2px;
+	cursor: pointer;
+	margin-bottom: 6px;
+	padding: 6px;
+	position: relative;
 
-.SidebarNotify:hover {
-  background-color: $primary-dark;
+	&:hover {
+		background-color: $sapphire-grey-blue;
+
+		.SidebarNotify__Arrow {
+			display: inline-block;
+		}
+	}
+
+	&_dateWrapper {
+		color: $mid-light-grey;
+		font-size: 0.9rem;
+		min-height: 16px;
+		padding-top: 0;
+
+		.StatusBadges {
+			margin: 0 0 3px 0;
+		}
+
+		.SidebarNotify__Arrow {
+			color: #fff;
+			display: none;
+			font-size: 1rem;
+			position: absolute;
+			right: 3px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__date {
+		display: inline-block;
+		margin-left: 0px;
+		padding-right: 5px;
+		width: 100%;
+	}
 }
 
 .SidebarNotify_header,
 .SidebarNotify_content {
-  color: #fff;
-  word-break: break-word;
-}
-
-.SidebarNotify_dateWrapper {
-  color: $mid-light-grey;
-  font-size: .9rem;
-  min-height: 16px;
-  padding-top: 0;
-}
-
-.SidebarNotify__date {
-  display: inline-block;
-  margin-left: 0px;
-  width: 80%;
-}
-
-.SidebarNotify__Arrow {
-  display: inline-block;
-  font-size: 1rem;
-  text-align: right;
-  visibility: hidden;
-  width: 20%;
-}
-
-.SidebarNotify:hover .SidebarNotify__Arrow {
-  color: #fff;
-  font-size: 1rem;
-  visibility: visible;
+	color: #fff;
+	word-break: break-word;
 }

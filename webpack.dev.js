@@ -20,7 +20,7 @@ module.exports = merge(common, {
 		}),
 		new BrowserSyncPlugin(
 			{
-				files: ['./src/components/**/*.scss', './src/components/**/*.hbs'],
+				files: ['./src/components/**/*.scss', './src/components/**/*.hbs', './styleGuideTheme/*.hbs'],
 				proxy: 'https://localhost:8080/',
 			},
 			{
