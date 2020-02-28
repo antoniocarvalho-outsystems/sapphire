@@ -30,15 +30,13 @@
 			const widgetOuterWidth = $widget.outerWidth();
 			const widgetMinWidth = +$widget.css('min-width').replace('px', '');
 			const isOutsideWindow =
-				labelLeft + labelOuterWidth >
-				$(window).scrollLeft() + $(window).width() - widgetOuterWidth;
+				labelLeft + labelOuterWidth > $(window).scrollLeft() + $(window).width() - widgetOuterWidth;
 
 			$widget.css({
 				left: () => {
 					let value = labelLeft - (widgetMinWidth - labelWidth) / 2;
 
-					if (isOutsideWindow)
-						value = labelLeft + labelWidth - widgetOuterWidth;
+					if (isOutsideWindow) value = labelLeft + labelWidth - widgetOuterWidth;
 					else if (value < 0) value = labelLeft;
 
 					return value;
@@ -81,14 +79,11 @@
 			let label = this.convertTimeFormatToMask(this.options.timeFormat);
 
 			if (value && !!value.trim()) {
-				model = this.options.is24hFormat
-					? value
-					: this.convertTime12to24(value);
+				model = this.options.is24hFormat ? value : this.convertTime12to24(value);
 				label = value;
 			}
 
-			if (this.options.isNotifyEnabled)
-				OsNotifyWidget(this.options.hourPickerFakeNotifyId, model);
+			if (this.options.isNotifyEnabled) OsNotifyWidget(this.options.hourPickerFakeNotifyId, model);
 			if (this.options.isTextTriggerable) this.$label.text(label);
 
 			this.$model.val(model);
@@ -99,12 +94,8 @@
 
 		onComponentInit() {
 			this.$component = $(`#${this.options.widgetId}`);
-			this.$model = this.$component.find(
-				'.HourPicker__Placeholder input[type="text"]'
-			);
-			this.$input = this.$component.find(
-				'.HourPicker__Displayed .HourPicker__InputValue'
-			);
+			this.$model = this.$component.find('.HourPicker__Placeholder input[type="text"]');
+			this.$input = this.$component.find('.HourPicker__Displayed .HourPicker__InputValue');
 			this.$element = this.$input;
 
 			this.options.timeFormat = this.defineTimeFormat();
@@ -116,14 +107,10 @@
 				if (this.options.isTextTriggerable) {
 					$container.addClass('HourPicker--textTrigger');
 
-					this.$label = $container.find(
-						'.HourPicker__Displayed .HourPicker__LabelValue'
-					);
+					this.$label = $container.find('.HourPicker__Displayed .HourPicker__LabelValue');
 					this.$element = this.$label;
 
-					this.$label.text(
-						this.convertTimeFormatToMask(this.options.timeFormat)
-					);
+					this.$label.text(this.convertTimeFormatToMask(this.options.timeFormat));
 
 					this.$label.on('click', () => {
 						this.$label.timepicker().open();
@@ -133,9 +120,7 @@
 				}
 
 				if (this.options.isClearable) {
-					this.$buttonClear = $container.find(
-						'.HourPicker__Displayed .HourPicker__ButtonClear'
-					);
+					this.$buttonClear = $container.find('.HourPicker__Displayed .HourPicker__ButtonClear');
 
 					this.$buttonClear.on('click', () => {
 						this.$input.val('');
@@ -145,18 +130,10 @@
 
 				this.$element.timepicker({
 					...this.options,
-					change: time =>
-						this.onChangeEvent(
-							time
-								? $().timepicker.formatTime(this.options.timeFormat, time)
-								: null
-						),
+					change: time => this.onChangeEvent(time ? $().timepicker.formatTime(this.options.timeFormat, time) : null),
 				});
 
-				this.setElementClass(
-					'.ui-timepicker-container',
-					this.options.currentLocale === 'AR' ? 'rtl' : 'ltr'
-				);
+				this.setElementClass('.ui-timepicker-container', this.options.currentLocale === 'AR' ? 'rtl' : 'ltr');
 
 				this.$input.prop('readonly', !this.options.isTypeEnabled);
 				this.$input.prop('placeholder', this.options.timeFormat);

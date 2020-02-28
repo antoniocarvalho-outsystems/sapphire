@@ -34,17 +34,9 @@ module.exports = merge(common, {
 		https: true,
 		watchContentBase: true,
 		writeToDisk: true,
-	},
-	optimization: {
-		splitChunks: {
-			cacheGroups: {
-				vendor: {
-					test: /node_modules/,
-					chunks: 'initial',
-					name: 'vendor',
-					enforce: true,
-				},
-			},
-		},
+		disableHostCheck: true,
+		hot: false,
+		inline: false,
+		liveReload: false,
 	},
 });

@@ -7,18 +7,16 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const KssConfig = {
 	title: 'Sapphire StyleGuide',
 	css: '../dev.styles.css',
-	base:'./styleGuideTheme',
 	source: path.resolve(__dirname, './src/components'),
 	destination: path.resolve(__dirname, 'dist/styleguide'),
 	extend: path.resolve(__dirname, './src/helpers-handlebar'),
-	builder: path.resolve(__dirname, './styleGuideTheme')
 };
 
 const outputPath = path.join(__dirname, 'dist');
 const isProduction = process.env.NODE_ENV === 'production ';
 
 module.exports = {
-	entry: path.resolve(__dirname, './src/components/index.js'),
+	entry: path.resolve(__dirname, './src/app.js'),
 	output: {
 		path: outputPath,
 		publicPath: '/dist/',
