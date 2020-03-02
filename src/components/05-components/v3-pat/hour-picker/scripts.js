@@ -1,10 +1,10 @@
 /* Component HourPicker */
-(function ($, window, SapphireWidgets) {
+(function($, window, SapphireWidgets) {
 	class HourPicker {
 		constructor(config) {
 			// Options used by jQuery Timerpicker (External Lib)
 			this.options = {
-				...config
+				...config,
 			};
 
 			this.onComponentInit();
@@ -146,6 +146,6 @@
 	const create = config => (window[config.widgetId] = new HourPicker(config));
 
 	SapphireWidgets.HourPicker = {
-		create
+		create,
 	};
 })(jQuery, window, SapphireWidgets);
