@@ -226,9 +226,10 @@
 		});
 		this.$input.on('hide.daterangepicker', function(event, picker) {
 			_this.$calendar.find('.DateTimeRangePicker-calendar-clear').remove();
-			if (typeof SapphireWidgets.LayoutPopup === 'object') {
-				SapphireWidgets.LayoutPopup.redrawDialogWindow();
-			} else if (typeof SapphireWidgets.ResizeParentIframe === 'object') {
+			// if (typeof SapphireWidgets.LayoutPopup === 'object') {
+			// 	SapphireWidgets.LayoutPopup.redrawDialogWindow();
+			// } else 
+			if (typeof SapphireWidgets.ResizeParentIframe === 'object') {
 				SapphireWidgets.ResizeParentIframe.resize();
 			}
 		});
