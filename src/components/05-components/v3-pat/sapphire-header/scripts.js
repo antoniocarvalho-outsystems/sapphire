@@ -18,12 +18,8 @@
 		this.$header = this.$widget.find('.SapphireHeader');
 		this.$demographic = this.$widget.find('.SapphireHeader-demographics');
 		this.$information = this.$widget.find('.SapphireHeader-information');
-		this.$additionalTrigger = this.$widget.find(
-			'.SapphireHeader-additional-trigger'
-		);
-		this.$additionalContent = this.$widget.find(
-			'.SapphireHeader-additional-content'
-		);
+		this.$additionalTrigger = this.$widget.find('.SapphireHeader-additional-trigger');
+		this.$additionalContent = this.$widget.find('.SapphireHeader-additional-content');
 		this.handleResize();
 		this.attachEvents();
 		$(function() {
@@ -93,8 +89,8 @@
 	};
 })(jQuery, window, document, SapphireWidgets);
 
-$(window).load(function() {
-	osAjaxBackend.BindAfterAjaxRequest(function() {
-		window[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();
-	});
-});
+// $(window).load(function() {
+// 	osAjaxBackend.BindAfterAjaxRequest(function() {
+// 		window[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();
+// 	});
+// });
