@@ -1,6 +1,6 @@
-/* Component ConfirmationPanel */
+/* Component ConfirmationPanel3Options ConfirmationPanel same javascript code*/
 
-SapphireWidgets.ConfirmationPanel3Options =()=>{
+SapphireWidgets.ConfirmationPanel =()=>{
 	function isAnyPanelOpened() {
 		return (
 			$('body').hasClass('PanelOpened') && $('.PanelContainer:visible').length
@@ -45,19 +45,21 @@ SapphireWidgets.ConfirmationPanel3Options =()=>{
 		});
 	}	
 
+	$(document).ready(function() {
+		setPanelBehavior();
+		if (
+			osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf(
+				'setPanelBehavior'
+			) == -1
+		) {
+			osAjaxBackend.BindAfterAjaxRequest(	setPanelBehavior);
+		}
+	});
 	
-$(document).ready(function() {
-	setPanelBehavior();
-	if (
-		osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf(
-			'setPanelBehavior'
-		) == -1
-	) {
-		osAjaxBackend.BindAfterAjaxRequest(	setPanelBehavior);
-	}
-});
 
 }
+
+	
 
 
 

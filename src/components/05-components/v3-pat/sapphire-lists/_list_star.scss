@@ -1,12 +1,13 @@
 div.List-Star {
 	color: $light-grey;
-	padding: 16px;
-	width: 100%;
+	width: 48px;
+	//padding: 16px;
+	//width: 100%;
 
 	&.Selected {
 		color: $regular-alpha;
-		padding: 16px;
-		width: 100%;
+		//padding: 16px;
+		//width: 100%;
 		&:hover {
 			background-color: transparent;
 			color: $light-grey;
@@ -33,5 +34,5 @@ div.List-Star {
 }
 
 .List-Star > div > .icon {
-	font-size: 16px;
+	//font-size: 16px;
 }
