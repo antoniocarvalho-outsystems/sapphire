@@ -1,5 +1,5 @@
 /* Component SapphireRadioButton */
-function setupButtonRadioInp(widgetId) {
+SapphireWidgets.SapphireRadioButton = widgetId => {
 	var $widget = $('#' + widgetId);
 	var $control = $widget.find('input[type="radio"]');
 	var name = $control.prop('name');
@@ -34,4 +34,4 @@ function setupButtonRadioInp(widgetId) {
 			$widget.removeClass('active');
 		}
 	});
-}
+};
