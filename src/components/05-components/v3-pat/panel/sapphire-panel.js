@@ -1,5 +1,6 @@
 /* Component SapphirePanel */
-function checkOpenPanel() {
+SapphireWidgets.SapphirePanel=()=>{
+	function checkOpenPanel() {
 	return (
 		$('body').hasClass('SapphirePanelOpen') &&
 		$('.SapphirePanel_Container:visible').length
@@ -57,3 +58,9 @@ $(document).ready(function() {
 		osAjaxBackend.BindAfterAjaxRequest(setPanelBehavior);
 	}
 });
+
+}
+
+
+
+
