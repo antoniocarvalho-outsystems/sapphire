@@ -1,0 +1,83 @@
+.TabularScroll {
+  display: flex;
+  width: 100%;
+}
+
+.TabularScroll table,
+.TabularScroll thead,
+.TabularScroll tr,
+.TabularScroll td {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.TabularScroll tr {
+  visibility: visible;
+}
+
+.TabularScroll td {
+  height: 50px;
+  min-width: 100px;
+  overflow: hidden;
+}
+
+.TabularScroll td>span,
+.TabularScroll td>div {
+  border-bottom: solid 1px #ccc;
+  box-sizing: border-box;
+  display: block;
+  height: 50px;
+  overflow: hidden;
+}
+
+.TabularScrollItem {
+  border-bottom: solid 1px #ccc;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.TabularScroll-left,
+.TabularScroll-right {
+  font-weight: 700;
+  min-width: 200px;
+}
+
+.TabularScroll-center {
+  flex-basis: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.TabularScroll-center thead {
+  font-weight: 700;
+}
+
+
+.wrapper1,
+.wrapper2 {
+  border: none 0px RED;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 300px;
+}
+
+.wrapper1 {
+  height: 20px;
+}
+
+.wrapper2 {
+  height: 200px;
+}
+
+.div1 {
+  height: 20px;
+  width: 1000px;
+}
+
+.div2 {
+  background-color: #88FF88;
+  height: 200px;
+  overflow: auto;
+  width: 1000px;
+}

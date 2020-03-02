@@ -21,8 +21,11 @@ require('./components/05-components/v3-pat/menu-bar/scripts');
 require('./components/05-components/v3-pat/multiple-selection-button/scripts');
 require('./components/05-components/v3-pat/panel/scripts');
 // ...
+require('./components/05-components/v3-pat/select-system/scripts');
 require('./components/05-components/v3-pat/shift-container/scripts');
 require('./components/05-components/v3-pat/sidebar/sidebar-structure');
 require('./components/05-components/v3-pat/spinner-horizontal/scripts');
 require('./components/05-components/v3-pat/ssd-list-line/scripts');
 require('./components/05-components/v3-pat/tabs-extended/scripts');
+// ...
+require('./components/styleguide/scripts');
