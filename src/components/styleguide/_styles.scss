@@ -1,0 +1,67 @@
+.design-system {
+  .main-content {
+    padding-left: 200px;
+  }
+}
+
+.design-system-aside {
+  background-color: #fefefe;
+  font-family: $font-family-regular;
+  height: 100vh;
+
+  padding: 70px 0 12px 12px;
+  position: relative;
+  position: fixed;
+  width: 200px;
+
+  input {
+    left: 12px;
+    position: absolute;
+    top: 12px;
+  }
+
+}
+
+.design-system-menu {
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+
+  .section {
+    margin-bottom: 36px;
+
+    &-title {
+      color: $regular-delta;
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .sub-section {
+      margin-bottom: 4px;
+
+      &-title {
+        color: $regular-gamma;
+        display: block;
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+
+      a {
+        padding-left: 6px;
+      }
+    }
+
+    a {
+      color: $regular-beta;
+      display: block;
+      font-family: $font-family-regular;
+      margin-bottom: 4px;
+
+      &:hover {
+        color: $regular-alpha;
+      }
+    }
+  }
+
+}
