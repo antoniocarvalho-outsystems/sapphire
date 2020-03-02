@@ -1,1 +1,1 @@
-SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};
+//SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};

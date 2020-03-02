@@ -1,55 +1,36 @@
-.design-system {
-	.main-content {
-		padding-left: 200px;
+.DesignSystem {
+	&__MainContent {
+		padding-left: 220px;
 	}
-}
 
-.design-system-aside {
-	background-color: #fefefe;
-	font-family: $font-family-regular;
-	height: 100vh;
+	&__Aside {
+		background-color: $regular-white;
+		font-family: $font-family-regular;
+		height: 100vh;
+		position: relative;
+		position: fixed;
+		width: 220px;
 
-	padding: 70px 0 12px 12px;
-	position: relative;
-	position: fixed;
-	width: 200px;
-
-	input {
-		left: 12px;
-		position: absolute;
-		top: 12px;
+		input {
+			width: 100%;
+		}
 	}
-}
 
-.design-system-menu {
-	height: calc(100vh - 70px);
-	overflow-y: auto;
+	&__Header {
+		padding: 10px;
+	}
 
-	.section {
-		margin-bottom: 36px;
+	&__Menu {
+		@include component-scroll-root;
 
-		&-title {
-			color: $regular-delta;
-			display: block;
-			font-size: 16px;
-			font-weight: 700;
-			margin-bottom: 4px;
-		}
+		height: calc(100vh - 70px);
+		margin-top: 15px;
+		overflow-y: auto;
+	}
 
-		.sub-section {
-			margin-bottom: 4px;
-
-			&-title {
-				color: $regular-gamma;
-				display: block;
-				font-size: 12px;
-				margin-bottom: 4px;
-			}
-
-			a {
-				padding-left: 6px;
-			}
-		}
+	&__MenuSection {
+		margin-bottom: 35px;
+		padding: 0 10px;
 
 		a {
 			color: $regular-beta;
@@ -61,5 +42,13 @@
 				color: $regular-alpha;
 			}
 		}
+	}
+
+	&__MenuTitle {
+		color: $regular-delta;
+		display: block;
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom: 4px;
 	}
 }
