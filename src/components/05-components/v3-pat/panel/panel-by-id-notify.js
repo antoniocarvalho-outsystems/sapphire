@@ -1,12 +1,16 @@
 /* Component PanelByNotify */
-var panelNotifyWidget;
+
+SapphireWidgets.PanelByIdNotify=()=>{
 
 function isAnyPanelOpenedDeprecated() {
 	return $('body').hasClass('PanelOpened');
 }
 
 if (typeof togglePanelNotifyById !== 'function') {
+		let panelNotifyWidget;
 	togglePanelNotifyById = function(Id) {
+		
+
 		$('body').toggleClass('PanelOpened');
 		$('#' + Id)
 			.parents('.ToggleButton')
@@ -75,3 +79,6 @@ function togglePanelByNotify(Id) {
 		}, 100);
 	}
 }
+}
+
+
