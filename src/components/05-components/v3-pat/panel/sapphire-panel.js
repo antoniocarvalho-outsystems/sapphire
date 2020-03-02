@@ -1,13 +1,13 @@
 /* Component SapphirePanel */
-SapphireWidgets.SapphirePanel=()=>{
-	function checkOpenPanel() {
+SapphireWidgets.SapphirePanel={
+	checkOpenPanel:function () {
 	return (
 		$('body').hasClass('SapphirePanelOpen') &&
 		$('.SapphirePanel_Container:visible').length
 	);
-}
+},
 
-function toggleSapphirePanel(PanelId) {
+toggleSapphirePanel:function (PanelId) {
 	if (!OsValidatorOnSubmit()) {
 		return;
 	}
@@ -22,9 +22,9 @@ function toggleSapphirePanel(PanelId) {
 				.slideToggle(150);
 		}, 100);
 	}
-}
+},
 
-function closeSapphirePanel(PanelId) {
+closeSapphirePanel:function (PanelId) {
 	$('body').removeClass('SapphirePanelOpen');
 	$('#' + PanelId).fadeOut(140);
 
@@ -33,9 +33,9 @@ function closeSapphirePanel(PanelId) {
 			.find('.SapphirePanel_Container')
 			.slideUp(150);
 	}, 100);
-}
+},
 
-function setPanelBehavior() {
+setPanelBehavior:function () {
 	$('.Panel[panel-trigger-elementid]').each(function() {
 		var this_panel = $(this);
 		$('#' + this_panel.attr('panel-trigger-elementid') + '')
@@ -46,20 +46,19 @@ function setPanelBehavior() {
 			});
 	});
 }
+}
 
 $(document).ready(function() {
-	setPanelBehavior();
+	SapphireWidgets.SapphirePanel.setPanelBehavior();
 
 	if (
 		osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf(
 			'setPanelBehavior'
 		) == -1
 	) {
-		osAjaxBackend.BindAfterAjaxRequest(setPanelBehavior);
+		osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.SapphirePanel.setPanelBehavior);
 	}
 });
-
-}
 
 
 

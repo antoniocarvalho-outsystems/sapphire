@@ -1,6 +1,7 @@
 /* Component PopUpMenu */
-SapphireWidgets.PopUpMenu = () => {
-	function menuPosition(id, Context) {
+
+SapphireWidgets.PopUpMenu={
+	menuPosition:function (id, Context) {
 		/* Hide any other menus on page and set button as collapsed. */
 		$('.popup-menu:visible').hide();
 
@@ -64,9 +65,8 @@ SapphireWidgets.PopUpMenu = () => {
 
 		/* Set position of the balloon effect. */
 		_balloonEl.css('left', _balloonPosXx + 'px');
-	}
-
-	function menuEvents(Context) {
+	},
+	menuEvents:function (Context) {
 		$('.popup-button')
 			.off('click')
 			.on('click', function(e) {
