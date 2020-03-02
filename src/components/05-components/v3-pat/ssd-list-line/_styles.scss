@@ -7,6 +7,10 @@ div.SSD_ListLine {
 	-moz-transition: border 200ms linear, margin 200ms linear;
 	transition: border 200ms linear, margin 200ms linear;
 
+	div.List-Star {
+		font-size: inherit;
+	}
+
 	&.WithBorder {
 		border: 1px solid $regular-alpha;
 		margin-top: -1px;
@@ -249,7 +253,7 @@ div.SSD_ListLine {
 			display: table-cell;
 			text-align: -webkit-center;
 			transition: opacity 500ms linear;
-			width: 6%;
+			// width: 6%;
 
 			> a {
 				display: block;
@@ -338,11 +342,7 @@ div.SSD_ListLine {
 	padding-right: 10px;
 }
 
-.HospitalizationPlan_Content__Cards
-	.SSD_ListLine.Active
-	> div.LineHeader
-	> div.Label
-	.label-text {
+.HospitalizationPlan_Content__Cards .SSD_ListLine.Active > div.LineHeader > div.Label .label-text {
 	max-width: 60%;
 }
 

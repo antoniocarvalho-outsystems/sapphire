@@ -1,4 +1,4 @@
-/* Component ConfirmationPanel */
+/* Component ConfirmationPanel3Options ConfirmationPanel same javascript code*/
 
 SapphireWidgets.ConfirmationPanel3Options =()=>{
 	function isAnyPanelOpened() {
