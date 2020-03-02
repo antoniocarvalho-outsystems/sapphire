@@ -20,7 +20,7 @@ require('./components/05-components/v3-pat/main-interactive-card/scripts');
 require('./components/05-components/v3-pat/menu-bar/scripts');
 require('./components/05-components/v3-pat/multiple-selection-button/scripts');
 require('./components/05-components/v3-pat/panel/scripts');
-require('./components/05-components/v3-pat/patient-call-cancel');
+require('./components/05-components/v3-pat/patient-call-cancel/scripts');
 // ...
 require('./components/05-components/v3-pat/sapphire-radio-button/scripts');
 require('./components/05-components/v3-pat/section-expandable-custom/scripts');

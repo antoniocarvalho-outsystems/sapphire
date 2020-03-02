@@ -1,11 +1,11 @@
 /* Component PanelByID */
-SapphireWidgets.PanelById =()=>{
-	function isAnyPanelOpenedDeprecated() {
+SapphireWidgets.PanelById ={
+	isAnyPanelOpenedDeprecated:function () {
 		return $('body').hasClass('PanelOpened');
-	}
+	},
 	
-	function togglePanelById(Id) {
-		if (!isAnyPanelOpenedDeprecated()) {
+	togglePanelById:function (Id) {
+		if (!this.isAnyPanelOpenedDeprecated()) {
 			$('body').addClass('PanelOpened');
 			$('body').css('overflow-y', 'hidden');
 	

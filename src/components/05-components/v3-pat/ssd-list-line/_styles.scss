@@ -230,30 +230,30 @@ div.SSD_ListLine {
 
 		display: table-cell;
 		vertical-align: middle;
-		width: 68%;
+		//width: 68%;
 
-		&:nth-child(1) {
-			width: 1%;
-		}
+		// &:nth-child(1) {
+		// 	width: 1%;
+		// }
 
-		&:nth-child(2) {
-			width: 55%;
-		}
+		// &:nth-child(2) {
+		// 	width: 55%;
+		// }
 
-		&:nth-child(3) {
-			width: 27%;
-		}
+		// &:nth-child(3) {
+		// 	width: 27%;
+		// }
 
 		&:nth-child(4) {
 			line-height: 32px;
-			width: 10%;
+			//width: 10%;
 		}
 
 		&.Icon {
 			display: table-cell;
 			text-align: -webkit-center;
 			transition: opacity 500ms linear;
-			// width: 6%;
+			width: 48px;
 
 			> a {
 				display: block;

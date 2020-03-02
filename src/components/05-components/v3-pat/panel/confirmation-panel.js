@@ -1,13 +1,13 @@
 /* Component ConfirmationPanel3Options ConfirmationPanel same javascript code*/
 
-SapphireWidgets.ConfirmationPanel =()=>{
-	function isAnyPanelOpened() {
+SapphireWidgets.ConfirmationPanel ={
+	isAnyPanelOpened:function () {
 		return (
 			$('body').hasClass('PanelOpened') && $('.PanelContainer:visible').length
 		);
-	}
+	},
 	
-	function togglePanel(PanelId) {
+	togglePanel:function (PanelId) {
 		if (!OsValidatorOnSubmit()) return;
 	
 		if (!isAnyPanelOpened()) {
@@ -20,9 +20,9 @@ SapphireWidgets.ConfirmationPanel =()=>{
 					.slideToggle(150);
 			}, 100);
 		}
-	}
+	},
 	
-	function closePanel(PanelId) {
+	closePanel:function (PanelId) {
 		$('body').removeClass('PanelOpened');
 		$('#' + PanelId).fadeOut(140);
 	
@@ -31,9 +31,9 @@ SapphireWidgets.ConfirmationPanel =()=>{
 				.find('.PanelContainer')
 				.slideUp(150);
 		}, 100);
-	}
+	},
 	
-	function setPanelBehavior() {
+	setPanelBehavior:function () {
 		$('.Panel[panel-trigger-elementid]').each(function() {
 			var this_panel = $(this);
 			$('#' + this_panel.attr('panel-trigger-elementid') + '')
@@ -43,21 +43,21 @@ SapphireWidgets.ConfirmationPanel =()=>{
 					return false;
 				});
 		});
-	}	
-
-	$(document).ready(function() {
-		setPanelBehavior();
-		if (
-			osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf(
-				'setPanelBehavior'
-			) == -1
-		) {
-			osAjaxBackend.BindAfterAjaxRequest(	setPanelBehavior);
-		}
-	});
-	
+	}		
 
 }
+
+
+$(document).ready(function() {
+	SapphireWidgets.ConfirmationPanel.setPanelBehavior();
+	if (
+		osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf(
+			'setPanelBehavior'
+		) == -1
+	) {
+		osAjaxBackend.BindAfterAjaxRequest(	SapphireWidgets.ConfirmationPanel.setPanelBehavior);
+	}
+});
 
 	
 
