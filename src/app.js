@@ -21,6 +21,7 @@ require('./components/05-components/v3-pat/menu-bar/scripts');
 require('./components/05-components/v3-pat/multiple-selection-button/scripts');
 require('./components/05-components/v3-pat/panel/scripts');
 // ...
+require('./components/05-components/v3-pat/sapphire-radio-button/scripts');
 require('./components/05-components/v3-pat/section-expandable-custom/scripts');
 require('./components/05-components/v3-pat/section-expandable-inside/scripts');
 require('./components/05-components/v3-pat/select-system/scripts');
