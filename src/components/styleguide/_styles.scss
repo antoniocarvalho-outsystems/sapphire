@@ -1,11 +1,13 @@
 .DesignSystem {
+	font-family: $font-family-regular;
+	font-size: 14px;
+
 	&__MainContent {
 		padding-left: 220px;
 	}
 
 	&__Aside {
 		background-color: $regular-white;
-		font-family: $font-family-regular;
 		height: 100vh;
 		position: relative;
 		position: fixed;
@@ -29,26 +31,39 @@
 	}
 
 	&__MenuSection {
-		margin-bottom: 35px;
-		padding: 0 10px;
+		margin-bottom: 25px;
 
 		a {
 			color: $regular-beta;
 			display: block;
 			font-family: $font-family-regular;
-			margin-bottom: 4px;
+			height: 32px;
+			line-height: 32px;
+			padding: 0 10px;
+			transition: all 500ms;
 
 			&:hover {
-				color: $regular-alpha;
+				background-color: $regular-eta;
 			}
 		}
 	}
 
+	&__MenuSubSection {
+		padding: 0 10px;
+
+		a {
+			margin: 0 -20px;
+			padding: 0 30px;
+		}
+	}
+
 	&__MenuTitle {
-		color: $regular-delta;
+		color: $dark-grey;
 		display: block;
-		font-size: 16px;
-		font-weight: 700;
-		margin-bottom: 4px;
+		font-family: $font-family-bold;
+		font-size: 1.143em;
+		margin-bottom: 10px;
+		padding: 0 10px;
+		text-transform: uppercase;
 	}
 }
