@@ -3,11 +3,13 @@ require('./styles.scss');
 (function($, window, SapphireWidgets) {
 	const create = config => {
 		const $filterInput = $('#' + config.filterInput);
+
 		$filterInput.on('keydown', evt => {
 			if (evt.key === 'Enter') {
 				return false;
 			}
 		});
+
 		$filterInput.on('keyup', evt => {
 			if (evt.target.value.length > 2) {
 				this.filterTerm(evt.target.value);
@@ -15,6 +17,12 @@ require('./styles.scss');
 				$('a, .sub-section-title').show();
 			}
 		});
+
+		this.bindEvents();
+	};
+
+	const setRTLmode = () => {
+		$('.DesignSystem__MainContent').toggleClass('AR');
 	};
 
 	filterTerm = term => {
@@ -32,7 +40,16 @@ require('./styles.scss');
 		});
 	};
 
+	bindEvents = () => {
+		$('.DesignSystem__MenuItemSection').click(e => {
+			$(e.target)
+				.parent()
+				.toggleClass('DesignSystem__MenuSubSection--expanded');
+		});
+	};
+
 	SapphireWidgets.DesignSystem = {
 		create,
+		setRTLmode,
 	};
 })(jQuery, window, SapphireWidgets);
