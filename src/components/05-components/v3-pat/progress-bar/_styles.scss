@@ -2,19 +2,6 @@
 	background-image: linear-gradient(270deg, $initialColor 0%, $endColor 100%);
 }
 
-// ProgressBar
-//
-// V3_Pat\Custom_Patterns\ProgressBar.
-//
-// .ProgressBar_structure.Success  - IsActive = False StatusColor = Green
-// .ProgressBar_structure.Error  - IsActive = False StatusColor = Red
-// .ProgressBar_structure.Sucess.Active  - IsActive = True StatusColor = Green
-// .ProgressBar__animation.Active  - IsActive = True StatusColor = Red
-//
-// Markup: _progressBar.hbs
-//
-// Style guide: Components.Badges.ProgressBar
-
 .ProgressBarWrap {
 	.ProgressBar {
 		width: 100%;

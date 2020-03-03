@@ -1,12 +1,3 @@
-// Buttons
-//
-// Buttons
-//
-//
-// Markup: _buttons.hbs
-//
-//Style guide: Buttons
-
 @mixin default-button($bgColor: $regular-alpha, $fontSize: $font-size-normal) {
 	background-color: $bgColor;
 	border: 1px solid transparent;

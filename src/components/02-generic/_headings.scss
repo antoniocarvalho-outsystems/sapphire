@@ -1,48 +1,33 @@
-// Headings
-//
-// Typography
-//
-//
-// Markup: _headings.hbs
-//
-//Style guide: Typography.Headings
-
 .Heading1 {
-  font-family: $font-family-bold;
-  font-size: 2em;
-  font-weight: normal;
-  line-height: 1.4;
+	font-family: $font-family-bold;
+	font-size: $font-size-heading1;
+	font-weight: normal;
+	line-height: 1.4;
 }
 
 .Heading2 {
-  font-family: $font-family-bold;
-  font-size: 1.667em;
-  font-weight: normal;
-  line-height: 1.4;
+	font-family: $font-family-bold;
+	font-size: $font-size-heading2;
+	font-weight: normal;
+	line-height: 1.4;
 }
 
 .Heading3 {
-  font-family: $font-family-bold;
-  font-size: 1.333em;
-  font-weight: normal;
-  line-height: 1.4;
+	font-family: $font-family-bold;
+	font-size: $font-size-heading3;
+	font-weight: normal;
+	line-height: 1.4;
 }
 
-.Heading4 {
-  font-family: $font-family-bold;
-  font-size: 1.25em;
-  font-weight: normal;
-  line-height: 1.4;
-}
-
+.Heading4,
 .Heading5 {
-  font-family: $font-family-bold;
-  font-size: 1.167em;
-  font-weight: normal;
-  line-height: 1.4;
+	font-family: $font-family-bold;
+	font-size: $font-size-heading4;
+	font-weight: normal;
+	line-height: 1.4;
 }
 
 .Text_large {
-  // Important used due to Theme Patterns SlikUI
-  font-size: 1.1em !important;
+	// Important used due to Theme Patterns SlikUI
+	font-size: 1.1em !important;
 }

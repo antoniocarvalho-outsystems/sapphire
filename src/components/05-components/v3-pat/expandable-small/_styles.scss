@@ -1,0 +1,41 @@
+.ExpandableSmaller {
+	width: 100%;
+
+	&_area {
+		height: auto;
+		width: 100%;
+	}
+
+	&_Title,
+	&_header {
+		color: $sapphire-color-text-regular;
+		display: inline-block;
+		font-family: $font-family-bold;
+	}
+
+	&__headerIcon {
+		cursor: pointer;
+		display: inline-flex;
+		margin: 0 10px;
+		transform: rotate(180deg);
+		transition: all 500ms;
+		vertical-align: middle;
+
+		&.HeaderIconReverse {
+			transform: rotate(0deg);
+		}
+
+		.icon {
+			@include arrow-down-simple;
+		}
+	}
+
+	&__headerContent,
+	&__headerContentClose {
+		font-family: $font-family-bold;
+	}
+
+	> div + span {
+		display: block !important;
+	}
+}
