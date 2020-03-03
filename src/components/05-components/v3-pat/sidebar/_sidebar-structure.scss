@@ -1,8 +1,8 @@
-$font-size-20px: 1.4285em;
-$font-size-16px: 1.1428em;
-$font-size-15px: 1.0714em;
-$font-size-13px: 0.92em;
-$font-size-11px: 0.7857em;
+$font-size-20px: $font-size-heading2;
+$font-size-16px: $font-size-heading3;
+$font-size-15px: $font-size-heading4;
+$font-size-13px: $font-size-small;
+$font-size-11px: $font-size-tiny;
 
 .Sidebar {
   border-left: 1px solid #ddd;
@@ -99,8 +99,15 @@ $font-size-11px: 0.7857em;
       opacity: 1;
 
       .VersionInfo {
-        color: $light-grey;
         display: block;
+
+        a {
+          color: $light-grey;
+
+          &:hover {
+            color: $regular-alpha;
+          }
+        }
       }
     }
 
@@ -114,13 +121,6 @@ $font-size-11px: 0.7857em;
         &:hover {
           color: $regular-alpha;
         }
-
-        // &:hover,
-        // &:active,
-        // &:focus {
-        //   box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15),
-        //     0px 0px 2px 1px $regular-alpha;
-        // }
 
         .UserName {
           display: inline;
@@ -320,8 +320,8 @@ $font-size-11px: 0.7857em;
 .ISidebar-content-panel-title {
   color: #fff;
   display: block;
+  font-family: $font-family-bold;
   font-size: $font-size-20px;
-  font-weight: 700;
   line-height: 50px;
 }
 
@@ -417,18 +417,16 @@ $font-size-11px: 0.7857em;
       box-shadow: none;
       color: #fff;
       font-family: $font-family-bold;
-      font-size: .8rem;
+      font-size: 10px;
       font-weight: normal;
-      height: 16px;
-      left: 50%;
+      height: 17px;
       line-height: normal;
-      margin: -10px -5px auto auto;
       position: absolute;
+      right: 0;
       text-align: center;
       text-shadow: none;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 16px;
+      top: 10px;
+      width: 17px;
     }
   }
 }
