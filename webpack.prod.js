@@ -7,11 +7,11 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
 	mode: 'production',
 	output: {
-		filename: 'sapphire.scripts.js',
+		filename: 'prod.[name].js',
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: 'sapphire.styles.css',
+			filename: 'prod.[name].css',
 		}),
 	],
 });

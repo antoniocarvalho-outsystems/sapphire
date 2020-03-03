@@ -1,22 +1,16 @@
 const path = require('path');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const KssWebpackPlugin = require('kss-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
-const KssConfig = {
-	title: 'Sapphire StyleGuide',
-	css: '../dev.styles.css',
-	source: path.resolve(__dirname, './src/components'),
-	destination: path.resolve(__dirname, 'dist/styleguide'),
-	extend: path.resolve(__dirname, './src/helpers-handlebar'),
-};
 
 const outputPath = path.join(__dirname, 'dist');
 const isProduction = process.env.NODE_ENV === 'production ';
 
 module.exports = {
-	entry: path.resolve(__dirname, './src/app.js'),
+	entry: {
+		app: path.resolve(__dirname, './src/app.js'),
+		styleguide: path.resolve(__dirname, './src/styleguide/scripts.js'),
+	},
 	output: {
 		path: outputPath,
 		publicPath: '/dist/',
@@ -24,10 +18,9 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin({
 			cleanOnceBeforeBuildPatterns: [`${outputPath}/*.hot-update.*`],
-			dry: false,
 			dangerouslyAllowCleanPatternsOutsideProject: true,
+			dry: false,
 		}),
-		new KssWebpackPlugin(KssConfig),
 	],
 	node: {
 		fs: 'empty',

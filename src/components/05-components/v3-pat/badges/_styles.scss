@@ -1,5 +1,3 @@
-@import 'styleguide-config';
-
 @mixin badges($bgColor: $sapphire-white, $textColor: $regular-blue, $notInverted: true, $borderRadius: 2px) {
 	@if ($notInverted) {
 		border: 1px solid $bgColor;

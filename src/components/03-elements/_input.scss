@@ -1,35 +1,3 @@
-// Controls
-//
-// Basic HTML controls such as inputs, radio, checkbox, select and textarea.
-//
-//Style guide: Controls
-
-// Input
-//
-// Input element
-//
-// .Mandatory - (class)
-//
-// Markup: _input.hbs
-//
-//Style guide: Controls.Input
-
-// Checkbox
-//
-// Checkbox element
-//
-// Markup: _checkbox.hbs
-//
-//Style guide: Controls.Checbox
-
-// Radio
-//
-// Radio element
-//
-// Markup: _radio.hbs
-//
-//Style guide: Controls.Radio
-
 @mixin common-radio-checkbox-style($border-radius: 4px) {
 	appearance: none;
 	border: 0;

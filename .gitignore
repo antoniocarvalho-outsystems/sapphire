@@ -1,6 +1,6 @@
 node_modules
 
 dist/*
-!dist/sapphire.scripts.js
-!dist/sapphire.styles.css
+!dist/prod.app.*
+!dist/prod.styleguide.*
 GB/*
