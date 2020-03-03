@@ -1,0 +1,923 @@
+/* DEPRACTED COMPONENT NOT IN USE*/
+.SSD-Widget {
+	height: 4rem;
+	position: relative;
+}
+.SSD-Wrapper {
+	-servicestudio-position: initial;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	&:not(.Selected) {
+		> .SSD-Component {
+			&:hover {
+				border: 0.08333rem solid #16979f;
+			}
+		}
+	}
+}
+.SSD-Background {
+	background-color: none;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	-webkit-transition: opacity 500ms;
+	transition: opacity 500ms;
+	z-index: 1;
+}
+.SSD-Component {
+	border: 0.08333rem solid #c9cdce;
+	border-radius: 0.3333rem;
+	-webkit-transition: border 500ms, box-shadow 300ms;
+	transition: border 500ms, box-shadow 300ms;
+}
+.SSD-Bar {
+	display: table;
+	width: 100%;
+	.InputPlaceholder {
+		input[type='text'] {
+			height: 34px;
+		}
+	}
+	> div {
+		background-color: #fff;
+		display: table-cell;
+		height: 3.83334rem;
+		vertical-align: middle;
+		&:not(:last-child) {
+			border-right: 0.08333rem solid #c9cdce;
+		}
+		&:first-child {
+			border-bottom-left-radius: 0.2333rem;
+			border-top-left-radius: 0.2333rem;
+		}
+		&:last-child {
+			border-bottom-right-radius: 0.2333rem;
+			border-top-right-radius: 0.2333rem;
+		}
+	}
+	> .ShortListSelector-Container {
+		width: 4rem;
+		> a {
+			display: block;
+			font-size: 1.333rem;
+			height: 100%;
+			text-align: center;
+			-webkit-transition: box-shadow linear 0.2s;
+			transition: box-shadow linear 0.2s;
+			width: 100%;
+		}
+	}
+	> .Tab1-Container {
+		-servicestudio-display: inline-block;
+		-servicestudio-height: 50px;
+		white-space: nowrap;
+		-servicestudio-width: 100px;
+		width: 1%;
+		> a {
+			display: block;
+			font-size: 1.333rem;
+			height: 100%;
+			text-align: center;
+			-webkit-transition: box-shadow linear 0.2s;
+			transition: box-shadow linear 0.2s;
+			width: 100%;
+		}
+	}
+	> .Tab2-Container {
+		-servicestudio-display: inline-block;
+		-servicestudio-height: 50px;
+		white-space: nowrap;
+		-servicestudio-width: 100px;
+		width: 1%;
+		> a {
+			display: block;
+			font-size: 1.333rem;
+			height: 100%;
+			text-align: center;
+			-webkit-transition: box-shadow linear 0.2s;
+			transition: box-shadow linear 0.2s;
+			width: 100%;
+		}
+	}
+	> .SearchInput-Container {
+		position: relative;
+		> .InputPlaceholder {
+			height: 100%;
+		}
+		.InputPlaceholder {
+			input[type='text'] {
+				background: transparent;
+				border: none;
+				box-shadow: none;
+				font-size: 1.333rem;
+				height: 100%;
+				padding: 0 4.167rem 0 3.333rem;
+				-webkit-transition: box-shadow linear 0.2s;
+				transition: box-shadow linear 0.2s;
+				width: 100%;
+			}
+		}
+		> .SearchIcon {
+			color: #16979f;
+			cursor: pointer;
+			font-size: 1.7rem;
+			height: 3.83334rem;
+			left: 0;
+			position: absolute;
+			text-align: center;
+			-ms-transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+			-webkit-transition: color 0.2s ease-in;
+			transition: color 0.2s ease-in;
+			vertical-align: middle;
+			width: 3.16634rem;
+		}
+		> .ClearControl {
+			display: none;
+			height: 3.83334rem;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 0px;
+			width: 4.00034rem;
+			z-index: 1;
+			> div {
+				background-color: #fff;
+				border: 0.08333rem solid #ccd7dc;
+				border-radius: 50%;
+				color: #16979f;
+				font-size: 0.9rem;
+				height: 1.833rem;
+				line-height: 2.1em;
+				-webkit-transition: border 0.2s ease-in, box-shadow 0.2s linear;
+				transition: border 0.2s ease-in, box-shadow 0.2s linear;
+				width: 1.833rem;
+			}
+			&:hover {
+				> div {
+					border: 0.08333rem solid #16979f;
+				}
+			}
+		}
+	}
+}
+.rtl {
+	.SSD-Bar {
+		> div {
+			&:not(:last-child) {
+				border-left: 0.08333rem solid #c9cdce;
+				border-right: none;
+			}
+			&:first-child {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0.2333rem;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0.2333rem;
+			}
+			&:last-child {
+				border-bottom-left-radius: 0.2333rem;
+				border-bottom-right-radius: 0;
+				border-top-left-radius: 0.2333rem;
+				border-top-right-radius: 0;
+			}
+		}
+		> .SearchInput-Container {
+			.InputPlaceholder {
+				input[type='text'] {
+					padding: 0 3.333rem 0 4.167rem;
+				}
+			}
+			> .SearchIcon {
+				left: auto;
+				right: 0;
+				transform: initial;
+			}
+			> .ClearControl {
+				left: 0;
+				right: auto;
+			}
+		}
+	}
+	.SSD-Wrapper.Selected {
+		.SSD-Component {
+			.SSD-Bar {
+				> div {
+					&:first-child {
+						border-bottom-right-radius: 0;
+					}
+					&:last-child {
+						border-bottom-left-radius: 0;
+					}
+				}
+			}
+		}
+	}
+	.SSDPopup {
+		.SSD-Bar {
+			> div {
+				&:not(:last-child) {
+					border-left: 0.08333rem solid #c9cdce;
+					border-right: none;
+				}
+				&:first-child {
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: 0.2333rem;
+					border-top-left-radius: 0;
+					border-top-right-radius: 0.2333rem;
+				}
+				&:last-child {
+					border-bottom-left-radius: 0.2333rem;
+					border-bottom-right-radius: 0;
+					border-top-left-radius: 0.2333rem;
+					border-top-right-radius: 0;
+				}
+			}
+			> .SearchInput-Container {
+				.InputPlaceholder {
+					input[type='text'] {
+						padding: 0 3.333rem 0 4.167rem;
+					}
+				}
+				> .SearchIcon {
+					left: auto;
+					right: 0;
+					transform: initial;
+				}
+				> .ClearControl {
+					left: 0;
+					right: auto;
+				}
+			}
+		}
+		.SSD-Wrapper.Selected {
+			.SSD-Component {
+				.SSD-Bar {
+					> div {
+						&:first-child {
+							border-bottom-right-radius: 0;
+						}
+						&:last-child {
+							border-bottom-left-radius: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.KeyboardNav {
+	.SSD-Bar {
+		> .ShortListSelector-Container {
+			> a {
+				&:focus {
+					box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+					position: relative;
+					z-index: 1;
+				}
+			}
+		}
+		.Tab1-Container {
+			> a {
+				&:focus {
+					box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+					position: relative;
+					z-index: 1;
+				}
+			}
+		}
+		.Tab2-Container {
+			> a {
+				&:focus {
+					box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+					position: relative;
+					z-index: 1;
+				}
+			}
+		}
+		> .SearchInput-Container {
+			.InputPlaceholder {
+				input[type='text'] {
+					&:focus {
+						box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+						position: relative;
+						z-index: 1;
+					}
+				}
+			}
+			> .ClearControl {
+				&:focus {
+					> div {
+						border: 0.08333rem solid #16979f;
+						box-shadow: 0px 0px 5px 1px #16979f;
+					}
+				}
+			}
+		}
+	}
+	.SSD-List {
+		span.SSD_ListRecords {
+			> span.focus {
+				-webkit-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+				-moz-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+				box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+				position: relative;
+				z-index: 2;
+			}
+		}
+		.SSD_ListLine.ShowMore.focus {
+			> div.LineHeader {
+				-webkit-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+				-moz-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+				box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+				position: relative;
+				z-index: 2;
+			}
+		}
+	}
+}
+.SSD-List {
+	background-color: #fff;
+	border-bottom-left-radius: 0.2333rem;
+	border-bottom-right-radius: 0.2333rem;
+	height: 0;
+	overflow: hidden;
+	span.SSD_ListRecords {
+		> span {
+			display: block;
+		}
+	}
+}
+.SSD-Wrapper.Positioned {
+	width: auto;
+	z-index: 1;
+	> .SSD-Background {
+		pointer-events: initial;
+	}
+	> .SSD-Component {
+		position: relative;
+		z-index: 2;
+	}
+}
+.SSD-Wrapper.Selected {
+	> .SSD-Component {
+		border: 0.08333rem solid #16979f;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+	}
+	.SSD-Component {
+		.SSD-Bar {
+			> div {
+				&:first-child {
+					border-bottom-left-radius: 0;
+				}
+				&:last-child {
+					border-bottom-right-radius: 0;
+				}
+			}
+		}
+		.SSD-List {
+			border-top: 0.08333rem solid #c9cdce;
+			height: auto;
+			min-height: 4rem;
+			overflow: initial;
+		}
+	}
+	.SSD-Bar {
+		> div {
+			&:not(.Selected) {
+				background-color: #ecf6f8;
+				&:not(:hover) {
+					> .SearchIcon {
+						color: #7bb2bf;
+					}
+				}
+				> a {
+					&:not(:hover) {
+						color: #7bb2bf;
+					}
+				}
+			}
+		}
+		> .SearchInput-Container {
+			> .ClearControl {
+				display: inline-block;
+			}
+		}
+	}
+	> .SSD-Component.Fixed {
+		> .SSD-Bar {
+			border-bottom: 1px solid #c9cdce;
+			-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+			-moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+			position: fixed;
+			z-index: 3;
+		}
+		> .SSD-List {
+			padding-top: 3.7rem;
+		}
+	}
+	.SSD-List {
+		div.SSD_ListLine {
+			> div.LineHeader {
+				> div.Icon {
+					> a {
+						&:focus {
+							span.icon {
+								-webkit-text-shadow: 0px 0px 10px rgba(22, 151, 159, 0.8);
+								text-shadow: 0px 0px 10px rgba(22, 151, 159, 0.8);
+							}
+						}
+					}
+				}
+			}
+		}
+		span {
+			&:not(.focus) {
+				> div.SSD_ListLine {
+					> div.LineHeader {
+						> div.ExpandControl {
+							> a {
+								&:focus {
+									> div {
+										-webkit-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+										-moz-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+										box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.SSD_ListLine.ShowMore {
+			border: none;
+		}
+	}
+}
+html {
+	.SSD-Wrapper.Selected {
+		.SSD-List {
+			div.SSD_ListLine {
+				> div.LineHeader {
+					> div.Icon {
+						width: 1%;
+					}
+				}
+			}
+		}
+	}
+	.SSDPopup {
+		.SSD-Wrapper.Selected {
+			.SSD-List {
+				div.SSD_ListLine {
+					> div.LineHeader {
+						> div.Icon {
+							width: 4rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+div.SSD_ListLine {
+	> div.LineHeader {
+		div.List-ToggleButton {
+			> div {
+				background: #fff;
+				border: solid 1px #c8d8dc;
+				border-radius: 3px;
+				box-shadow: 0 2px 3px rgba(14, 64, 86, 0.1);
+				display: block;
+				font-size: 2.4rem;
+				height: 2.5rem;
+				line-height: 1.833rem;
+				text-align: center;
+				width: 2.5rem;
+			}
+		}
+	}
+}
+div.SSD_ListLine.Active {
+	> div.LineHeader {
+		div.List-ToggleButton {
+			> div {
+				display: none;
+			}
+		}
+	}
+}
+.SSDPopup.SSD-Widget {
+	height: auto !important;
+	width: 100%;
+}
+.SSDPopup {
+	.SSD-Wrapper {
+		-servicestudio-position: initial;
+		position: static !important;
+		top: auto !important;
+		width: 100%;
+		&:not(.Selected) {
+			> .SSD-Component {
+				&:hover {
+					border: 0.08333rem solid #16979f;
+				}
+			}
+		}
+	}
+	.SSD-Background {
+		background-color: none;
+		bottom: 0;
+		display: none;
+		left: 0;
+		opacity: 0;
+		pointer-events: none;
+		right: 0;
+		top: 0;
+		-webkit-transition: opacity 500ms;
+		transition: opacity 500ms;
+		z-index: 1;
+	}
+	.SSD-Component {
+		border: 0.08333rem solid #c9cdce;
+		border-radius: 0.3333rem;
+		-webkit-transition: border 500ms, box-shadow 300ms;
+		transition: border 500ms, box-shadow 300ms;
+	}
+	.SSD-Bar {
+		display: table;
+		width: 100%;
+		> div {
+			background-color: #fff;
+			display: table-cell;
+			height: 3.83334rem;
+			vertical-align: middle;
+			&:not(:last-child) {
+				border-right: 0.08333rem solid #c9cdce;
+			}
+			&:first-child {
+				border-bottom-left-radius: 0.2333rem;
+				border-top-left-radius: 0.2333rem;
+			}
+			&:last-child {
+				border-bottom-right-radius: 0.2333rem;
+				border-top-right-radius: 0.2333rem;
+			}
+		}
+		> .ShortListSelector-Container {
+			width: 4rem;
+			> a {
+				display: block;
+				font-size: 1.333rem;
+				height: 100%;
+				text-align: center;
+				-webkit-transition: box-shadow linear 0.2s;
+				transition: box-shadow linear 0.2s;
+				width: 100%;
+			}
+		}
+		> .Tab1-Container {
+			-servicestudio-display: inline-block;
+			-servicestudio-height: 50px;
+			white-space: nowrap;
+			-servicestudio-width: 100px;
+			width: 1%;
+			> a {
+				display: block;
+				font-size: 1.333rem;
+				height: 100%;
+				text-align: center;
+				-webkit-transition: box-shadow linear 0.2s;
+				transition: box-shadow linear 0.2s;
+				width: 100%;
+			}
+		}
+		> .Tab2-Container {
+			-servicestudio-display: inline-block;
+			-servicestudio-height: 50px;
+			white-space: nowrap;
+			-servicestudio-width: 100px;
+			width: 1%;
+			> a {
+				display: block;
+				font-size: 1.333rem;
+				height: 100%;
+				text-align: center;
+				-webkit-transition: box-shadow linear 0.2s;
+				transition: box-shadow linear 0.2s;
+				width: 100%;
+			}
+		}
+		> .SearchInput-Container {
+			position: relative;
+			> .InputPlaceholder {
+				height: 100%;
+			}
+			.InputPlaceholder {
+				input[type='text'] {
+					background: transparent;
+					border: none;
+					box-shadow: none;
+					font-size: 1.333rem;
+					height: 100%;
+					padding: 0 4.167rem 0 3.333rem;
+					-webkit-transition: box-shadow linear 0.2s;
+					transition: box-shadow linear 0.2s;
+					width: 100%;
+				}
+			}
+			> .SearchIcon {
+				color: #16979f;
+				cursor: pointer;
+				font-size: 1.7rem;
+				height: 3.83334rem;
+				left: 0;
+				position: absolute;
+				text-align: center;
+				-ms-transform: rotateY(180deg);
+				-webkit-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+				-webkit-transition: color 0.2s ease-in;
+				transition: color 0.2s ease-in;
+				vertical-align: middle;
+				width: 3.16634rem;
+			}
+			> .ClearControl {
+				display: none;
+				height: 3.83334rem;
+				position: absolute;
+				right: 0;
+				text-align: center;
+				top: 0px;
+				width: 4.00034rem;
+				z-index: 1;
+				> div {
+					background-color: #fff;
+					border: 0.08333rem solid #ccd7dc;
+					border-radius: 50%;
+					color: #16979f;
+					font-size: 0.9rem;
+					height: 1.833rem;
+					line-height: 2.1em;
+					-webkit-transition: border 0.2s ease-in, box-shadow 0.2s linear;
+					transition: border 0.2s ease-in, box-shadow 0.2s linear;
+					width: 1.833rem;
+				}
+				&:hover {
+					> div {
+						border: 0.08333rem solid #16979f;
+					}
+				}
+			}
+		}
+	}
+	.KeyboardNav {
+		.SSD-Bar {
+			> .ShortListSelector-Container {
+				> a {
+					&:focus {
+						box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+						position: relative;
+						z-index: 1;
+					}
+				}
+			}
+			.Tab1-Container {
+				> a {
+					&:focus {
+						box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+						position: relative;
+						z-index: 1;
+					}
+				}
+			}
+			.Tab2-Container {
+				> a {
+					&:focus {
+						box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+						position: relative;
+						z-index: 1;
+					}
+				}
+			}
+			> .SearchInput-Container {
+				.InputPlaceholder {
+					input[type='text'] {
+						&:focus {
+							box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+							position: relative;
+							z-index: 1;
+						}
+					}
+				}
+				> .ClearControl {
+					&:focus {
+						> div {
+							border: 0.08333rem solid #16979f;
+							box-shadow: 0px 0px 5px 1px #16979f;
+						}
+					}
+				}
+			}
+		}
+		.SSD-List {
+			span.SSD_ListRecords {
+				> span.focus {
+					-webkit-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+					-moz-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+					box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+					position: relative;
+					z-index: 2;
+				}
+			}
+			.SSD_ListLine.ShowMore.focus {
+				> div.LineHeader {
+					-webkit-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+					-moz-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+					box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+					position: relative;
+					z-index: 2;
+				}
+			}
+		}
+	}
+	.SSD-List {
+		background-color: #fff;
+		border-bottom-left-radius: 0.2333rem;
+		border-bottom-right-radius: 0.2333rem;
+		height: 0;
+		overflow: hidden;
+		span.SSD_ListRecords {
+			> span {
+				display: block;
+			}
+		}
+	}
+	.SSD-Wrapper.Positioned {
+		width: auto;
+		z-index: 1;
+		> .SSD-Background {
+			pointer-events: initial;
+		}
+		> .SSD-Component {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	.SSD-Wrapper.Selected {
+		> .SSD-Component {
+			border: 0.08333rem solid #16979f;
+			box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+		}
+		.SSD-Component {
+			.SSD-Bar {
+				> div {
+					&:first-child {
+						border-bottom-left-radius: 0;
+					}
+					&:last-child {
+						border-bottom-right-radius: 0;
+					}
+				}
+			}
+			.SSD-List {
+				border-top: 0.08333rem solid #c9cdce;
+				height: auto;
+				min-height: 4rem;
+				overflow: initial;
+			}
+		}
+		.SSD-Bar {
+			> div {
+				&:not(.Selected) {
+					background-color: #ecf6f8;
+					&:not(:hover) {
+						> .SearchIcon {
+							color: #7bb2bf;
+						}
+					}
+					> a {
+						&:not(:hover) {
+							color: #7bb2bf;
+						}
+					}
+				}
+			}
+			> .SearchInput-Container {
+				> .ClearControl {
+					display: inline-block;
+				}
+			}
+		}
+		> .SSD-Component.Fixed {
+			> .SSD-Bar {
+				border-bottom: 1px solid #c9cdce;
+				-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+				-moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+				box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+				position: fixed;
+				z-index: 3;
+			}
+			> .SSD-List {
+				padding-top: 3.7rem;
+			}
+		}
+		.SSD-List {
+			div.SSD_ListLine {
+				> div.LineHeader {
+					> div.Icon {
+						> a {
+							&:focus {
+								span.icon {
+									-webkit-text-shadow: 0px 0px 10px rgba(22, 151, 159, 0.8);
+									text-shadow: 0px 0px 10px rgba(22, 151, 159, 0.8);
+								}
+							}
+						}
+					}
+				}
+			}
+			span {
+				&:not(.focus) {
+					> div.SSD_ListLine {
+						> div.LineHeader {
+							> div.ExpandControl {
+								> a {
+									&:focus {
+										> div {
+											-webkit-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+											-moz-box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+											box-shadow: inset 0px 0px 0px 1px #16979f, 0px 0px 8px 0px #16979f;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.SSD_ListLine.ShowMore {
+				border: none;
+				font-size: 1.2rem;
+				line-height: 18px;
+				margin: 0 auto;
+				padding: 12px;
+				width: 100%;
+			}
+		}
+	}
+	div.SSD_ListLine {
+		> div.LineHeader {
+			div.List-ToggleButton {
+				> div {
+					background: #fff;
+					border: solid 1px #c8d8dc;
+					border-radius: 3px;
+					box-shadow: 0 2px 3px rgba(14, 64, 86, 0.1);
+					display: block;
+					font-size: 2.4rem;
+					height: 2.5rem;
+					line-height: 1.833rem;
+					text-align: center;
+					width: 2.5rem;
+				}
+			}
+		}
+	}
+	div.SSD_ListLine.Active {
+		> div.LineHeader {
+			div.List-ToggleButton {
+				> div {
+					display: none;
+				}
+			}
+		}
+	}
+}
+.FA {
+	.SSD-Bar {
+		> .SearchInput-Container {
+			> .SearchIcon {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+}
+.AR {
+	.SSD-Bar {
+		> .SearchInput-Container {
+			> .SearchIcon {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+}

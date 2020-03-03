@@ -53,16 +53,16 @@
 			vertical-align: middle;
 			//width: 48px;
 		}
+	}
 
-		&.Open {
-			.SearchSD_search {
-				border-bottom: 0;
-				border-bottom-left-radius: 0;
-				border-bottom-right-radius: 0;
-			}
-			.SearchSD_search_favoriteLink {
-				border-bottom-left-radius: 0;
-			}
+	&.Open {
+		.SearchSD_search {
+			border-bottom: 0;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+		.SearchSD_search_favoriteLink {
+			border-bottom-left-radius: 0;
 		}
 	}
 
@@ -245,6 +245,7 @@
 					width: 100%;
 
 					input[type='text'] {
+						background-color: transparent !important;
 						border: 0;
 						box-shadow: none;
 						font-size: $font-size-heading3;
