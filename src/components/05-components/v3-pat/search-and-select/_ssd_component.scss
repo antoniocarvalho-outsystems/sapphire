@@ -17,6 +17,7 @@
 
 	.SSD-Component {
 		background-color: transparent;
+		border: none;
 		box-shadow: none !important;
 	}
 
@@ -186,6 +187,7 @@
 	}
 
 	> .SearchInput-Container {
+		background-color: transparent;
 		position: relative;
 
 		> .InputPlaceholder {
@@ -225,9 +227,10 @@
 			display: none;
 			height: 100%;
 			position: absolute;
-			right: 13px;
+			right: 0;
 			text-align: center;
 			top: 0px;
+			width: 68px;
 			z-index: 1;
 
 			> div {
@@ -364,6 +367,8 @@
 	.SSD_ListLine {
 		.LineHeader {
 			background-color: transparent !important;
+			height: 50px;
+			table-layout: fixed;
 		}
 		&:hover {
 			background-color: $regular-eta;
@@ -371,14 +376,50 @@
 		}
 	}
 
-	div.SSD_ListLine.ShowMore {
-		align-items: center;
-		display: flex;
-		justify-content: center;
-		min-height: 44px;
-		a {
-			font-family: $font-family-bold;
-			font-size: $font-size-normal !important;
+	.SSD_ListRecords {
+		.LineHeader {
+			.Label {
+				border-radius: 0;
+				color: $dark-grey;
+				font-size: $font-size-heading3;
+				padding: 5px 16px;
+				width: 100%;
+			}
+			.ExpandControl {
+				display: table-cell;
+				line-height: unset;
+				width: 68px;
+				a {
+					margin: 0;
+					padding: 0;
+
+					div {
+						align-items: center;
+						display: flex;
+						height: 100%;
+						justify-content: center;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	div.SSD_ListLine {
+		&.ShowMore {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			min-height: 44px;
+			a {
+				font-family: $font-family-bold;
+				font-size: $font-size-normal !important;
+			}
+			.LineHeader {
+				align-items: center;
+				display: inherit;
+				justify-content: center;
+			}
 		}
 	}
 }
@@ -436,12 +477,12 @@
 // 	width: 26px;
 // }
 div.SSD_ListLine > div.LineHeader div.List-ToggleButton {
-	margin-right: 12px;
+	//margin-right: 12px;
 }
 div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div {
-	height: 100%;
-	margin-right: 12px;
-	width: 100%;
+	// height: 100%;
+	// margin-right: 12px;
+	// width: 100%;
 	.icon {
 		background-color: $sapphire-white;
 		border: 1px solid $light-grey;
@@ -449,7 +490,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div {
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 		box-sizing: border-box;
 		color: $regular-beta;
-		font-size: 28px;
+		font-size: 20px;
 		text-align: center;
 	}
 }
