@@ -209,7 +209,9 @@
     }
 
     >a,
-    >a:link {
+    >a:link,
+    >.ListRecords>a,
+    >.ListRecords>a:link {
       background-color: $sapphire-dark-blue2;
       border: 1px solid $sapphire-dark-blue2;
       color: $regular-white !important;
