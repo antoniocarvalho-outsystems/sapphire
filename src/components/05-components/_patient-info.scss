@@ -17,21 +17,21 @@
 		width: 41%;
 
 		&.Female {
-			background-color: $pink-light-2;
+			background-color: $light-pink-2;
 			color: $sapphire-color-text-regular;
 
 			.PatientInfo__icon {
-				background-color: $pink-light-2;
+				background-color: $light-pink-2;
 				color: $sapphire-female;
 			}
 		}
 
 		&.Male {
-			background-color: $blue-light-2;
+			background-color: $light-blue-2;
 			color: $sapphire-color-text-regular;
 
 			.PatientInfo__icon {
-				background-color: $blue-light-2;
+				background-color: $light-blue-2;
 				color: $sapphire-male;
 			}
 		}

@@ -1,58 +1,56 @@
 // Colors
 //
-// Colors:
 // .Alpha                 : #00BFA5 - $regular-alpha
 // .Beta                  : #009884 - $regular-beta
-// .Gamma                 : #006758
-// .Delta                 : #00433A
-// .Epsilon               : #56D3C2
-// .Zeta                  : #C4F0EB
-// .Eta                   : #F2FFFD
+// .Gamma                 : #006758 - $regular-gamma
+// .Delta                 : #00433A - $regular-delta
+// .Epsilon               : #56D3C2 - $regular-epsilon
+// .Zeta                  : #C4F0EB - $regular-zeta
+// .Eta                   : #F2FFFD - $regular-eta
 
-// .Blue                  : #039BE5
-// .LightBlue             : #C4F0EB - Changed to C4F0EB
+// .Blue                  : #039BE5 - $regular-blue
+// .LightBlue             : #C4F0EB - $light-blue
+// .LightBlue2            : #F0FAF9 - $light-blue-2
 // .DarkBlue              : #194968 - $dark-blue
 
 // .Red                   : #FF3E2D - $regular-red
 // .LightRed              : #FAD5D5 - $light-red
 // .DarkRed               : #B10100 - $dark-red
 
-// .Green                 : #7CB342
+// .Green                 : #7CB342 - $regular-green
 // .LightGreen            : #C2DEA8 - $light-green
 // .DarkGreen             : #578329 - $dark-green
 
-// .Yellow                : #FBC02D
-// .LightYellow           : #FFEAB5
-// .DarkYellow            : #C19323
+// .Yellow                : #FBC02D - $regular-yellow
+// .LightYellow           : #FFEAB5 - $light-yellow
+// .DarkYellow            : #C19323 - $dark-yellow
 
-// .Orange                : #FFA000
-// .LightOrange           : #FCC891
-// .DarkOrange            : #C37B03
+// .Orange                : #FFA000 - $regular-orange
+// .LightOrange           : #FCC891 - $light-orange
+// .DarkOrange            : #C37B03 - $dark-orange
 
-// .Pink                  : #C32B87
-// .LightPink             : #C892B3
+// .Pink                  : #C32B87 - $regular-pink
+// .LightPink             : #C892B3 - $light-pink
+// .LightPink2            : #FEECED - $light-pink-2
 // .DarkPink              : #980263 - $dark-pink
 
 // .Beige                 : #E6E2AA - $regular-beige
 // .LightBeige            : #F5F4E0 - $light-beige
 // .DarkBeige             : #928D09 - $dark-beige
 
-// .White                 : #FFFFFF
+// .White                 : #FFFFFF - $regular-white
 // .BodyColor             : #F3F3F3 - $body-color
-// .SapphireLightContainer: #EBEBEB
+// .SapphireLightContainer: #EBEBEB - $sapphire-light
 // .LightGrey             : #D6D6D6 - $light-grey
-// .MidLightGrey          : #ADADAD
+// .MidLightGrey          : #ADADAD - $mid-light-grey
 // .Grey                  : #858585 - $regular-gray
 // .MidDarkGrey           : #5C5C5C - $mid-dark-grey
-// .DarkGrey              : #333333
-// .Black                 : #131819
-
-// .LightBlue2            : #F0FAF9 - $blue-light-2
-// .PinkLight2            : #FEECED - $pink-light-2
+// .DarkGrey              : #333333 - $dark-grey
+// .Black                 : #131819 - $regular-black
 
 // .SapphireBlue          : #2A5A6E - $sapphire-blue
-// .SapphireDarkBlue      : #30384A
-// .SapphireGreyBlue      : #494F5C
+// .SapphireDarkBlue      : #30384A - $sapphire-dark-blue
+// .SapphireGreyBlue      : #494F5C - $sapphire-grey-blue
 
 // ------------------------------------->
 
@@ -86,7 +84,6 @@
 // .Transparent           : #ca2c92 - Deprecated
 // .Turquoise             : #039BE5 - Changed to Blue Deprecated
 
-//
 // Style guide: Colors
 
 // $regular-alpha: red;
@@ -117,7 +114,7 @@ $regular-beige: #e6e2aa;
 $regular-black: #131819;
 $regular-blue: #039be5;
 $blue-light: #c4f0eb;
-$blue-light-2: #f0faf9;
+$light-blue-2: #f0faf9;
 $blue-navy: #c4f0eb;
 $body-color: #f3f3f3;
 $regular-brow: #ca2c92;
@@ -148,7 +145,7 @@ $mid-dark-grey: #5c5c5c;
 $regular-orange: #ffa000;
 $regular-pink: #c32b87;
 $pink-light: #c892b3;
-$pink-light-2: #feeced;
+$light-pink-2: #feeced;
 $regular-plum: #c32b87;
 $regular-red: #ff3e2d;
 $sapphire-background: #f3f3f3;
