@@ -9,7 +9,7 @@ SapphireWidgets.SapphirePanel = {
 			return;
 		}
 
-		if (!checkOpenPanel()) {
+		if (!SapphireWidgets.SapphirePanel.checkOpenPanel()) {
 			$('body').addClass('SapphirePanelOpen');
 			$('#' + PanelId).fadeIn(140);
 
