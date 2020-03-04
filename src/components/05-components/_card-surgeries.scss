@@ -53,11 +53,11 @@
 		}
 
 		&.Card_Surgeries_Men {
-			@include common-card-surgeries-color-style($blue-light-2, $dark-blue);
+			@include common-card-surgeries-color-style($light-blue-2, $dark-blue);
 		}
 
 		&.Card_Surgeries_Woman {
-			@include common-card-surgeries-color-style($pink-light-2, $dark-pink);
+			@include common-card-surgeries-color-style($light-pink-2, $dark-pink);
 		}
 
 		&.isEmpty,

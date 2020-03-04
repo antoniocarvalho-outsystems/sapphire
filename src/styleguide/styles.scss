@@ -167,25 +167,25 @@ $styleguide-main-content-padding: 50px;
 	}
 
 	&__Content {
+		background-color: $regular-white;
 		padding: $styleguide-main-content-padding;
 	}
 
 	// Colors
-	&__ColorCard {
+	&__ContentCard {
+		border: 1px solid $light-grey;
 		border-radius: 2px;
 		display: flex;
 		flex-direction: column;
 		height: 170px;
 		overflow: hidden;
-		width: 170px;
+		width: 175px;
 
 		> div:first-child {
 			flex: 1;
 		}
 
 		> div:last-child {
-			border: 1px solid $light-grey;
-			border-top: none;
 			font-family: $font-family-bold;
 			font-size: 0.857em;
 			padding: 8px;
