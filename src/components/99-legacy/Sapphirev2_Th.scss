@@ -1926,11 +1926,11 @@ a.Header_ButtonSidebar {
   padding: 0 5px;
 }
 
-.Rotation180 {
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+// .Rotation180 {
+//   -ms-transform: rotate(180deg);
+//   -webkit-transform: rotate(180deg);
+//   transform: rotate(180deg);
+// }
 
 .tablet .PatientDetailsLayout.header .PatientHeader+.patient-more-details .PatientMoreDetails,
 .phone .PatientDetailsLayout.header .PatientHeader+.patient-more-details .PatientMoreDetails {
@@ -5293,33 +5293,33 @@ div.DashboardWindow:hover .InfoTooltipDnD {
 }
 
 /* TOOLTIP FIX */
-.tooltipster-arrow-top .tooltipster-arrow-border,
-.tooltipster-arrow-top-right .tooltipster-arrow-border,
-.tooltipster-arrow-top-left .tooltipster-arrow-border,
-.tooltipster-arrow-top span,
-.tooltipster-arrow-top-right span,
-.tooltipster-arrow-top-left span {
-  bottom: -8px;
-}
+// .tooltipster-arrow-top .tooltipster-arrow-border,
+// .tooltipster-arrow-top-right .tooltipster-arrow-border,
+// .tooltipster-arrow-top-left .tooltipster-arrow-border,
+// .tooltipster-arrow-top span,
+// .tooltipster-arrow-top-right span,
+// .tooltipster-arrow-top-left span {
+//   bottom: -8px;
+// }
 
-.tooltipster-arrow-bottom span,
-.tooltipster-arrow-bottom-right span,
-.tooltipster-arrow-bottom-left span,
-.tooltipster-arrow-bottom .tooltipster-arrow-border,
-.tooltipster-arrow-bottom-right .tooltipster-arrow-border,
-.tooltipster-arrow-bottom-left .tooltipster-arrow-border {
-  top: -8px;
-}
+// .tooltipster-arrow-bottom span,
+// .tooltipster-arrow-bottom-right span,
+// .tooltipster-arrow-bottom-left span,
+// .tooltipster-arrow-bottom .tooltipster-arrow-border,
+// .tooltipster-arrow-bottom-right .tooltipster-arrow-border,
+// .tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+//   top: -8px;
+// }
 
-.tooltipster-arrow-left span,
-.tooltipster-arrow-left .tooltipster-arrow-border {
-  right: -8px;
-}
+// .tooltipster-arrow-left span,
+// .tooltipster-arrow-left .tooltipster-arrow-border {
+//   right: -8px;
+// }
 
-.tooltipster-arrow-right span,
-.tooltipster-arrow-right .tooltipster-arrow-border {
-  left: -8px;
-}
+// .tooltipster-arrow-right span,
+// .tooltipster-arrow-right .tooltipster-arrow-border {
+//   left: -8px;
+// }
 
 /*------------------------------------------------------------*/
 /* 7.2 SILK Patterns > Controls *******************************/
@@ -12824,9 +12824,9 @@ a.Button.Icon:hover {
 //   min-height: 55px;
 // }
 
-.tooltipster.NoCursor {
-  cursor: auto;
-}
+// .tooltipster.NoCursor {
+//   cursor: auto;
+// }
 
 // .BedBoxContainer.isClickable {
 //   cursor: pointer;
@@ -25592,29 +25592,29 @@ div.ForwardableContainer {
 /* 10.3.6 Auxiliar Rotation ****************************/
 /*------------------------------------------------------------*/
 
-.Rotation45 {
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+// .Rotation45 {
+//   -ms-transform: rotate(45deg);
+//   -webkit-transform: rotate(45deg);
+//   transform: rotate(45deg);
+// }
 
-.Rotation90 {
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
+// .Rotation90 {
+//   -ms-transform: rotate(90deg);
+//   -webkit-transform: rotate(90deg);
+//   transform: rotate(90deg);
+// }
 
-.Rotation180 {
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+// .Rotation180 {
+//   -ms-transform: rotate(180deg);
+//   -webkit-transform: rotate(180deg);
+//   transform: rotate(180deg);
+// }
 
-.Rotation270 {
-  -ms-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
-}
+// .Rotation270 {
+//   -ms-transform: rotate(270deg);
+//   -webkit-transform: rotate(270deg);
+//   transform: rotate(270deg);
+// }
 
 /*------------------------------------------------------------*/
 /* 10.3.7 Auxiliar Containers ****************************/
@@ -25899,12 +25899,12 @@ a.NoLink {
   height: 100%;
 }
 
-.Hidden,
-.OSInline.Hidden,
-[class*='ThemeGrid_Width'].Hidden,
-.dontshow {
-  display: none;
-}
+// .Hidden,
+// .OSInline.Hidden,
+// [class*='ThemeGrid_Width'].Hidden,
+// .dontshow {
+//   display: none;
+// }
 
 .TextOverflow_Ellipsis {
   overflow: hidden;
@@ -34299,88 +34299,88 @@ a.Button.FullWidth {
 
 /* Visibility Classes */
 
-@media screen and (max-width: 0),
-screen and (min-width: 640px) {
-  .show-for-small-only {
-    display: none !important;
-  }
-}
+// @media screen and (max-width: 0),
+// screen and (min-width: 640px) {
+//   .show-for-small-only {
+//     display: none !important;
+//   }
+// }
 
-@media screen and (min-width: 640px) {
-  .hide-for-medium {
-    display: none !important;
-  }
-}
+// @media screen and (min-width: 640px) {
+//   .hide-for-medium {
+//     display: none !important;
+//   }
+// }
 
-@media screen and (max-width: 639px) {
-  .show-for-medium {
-    display: none !important;
-  }
-}
+// @media screen and (max-width: 639px) {
+//   .show-for-medium {
+//     display: none !important;
+//   }
+// }
 
-@media screen and (min-width: 640px) and (max-width: 1024px) {
-  .hide-for-medium-only {
-    display: none !important;
-  }
-}
+// @media screen and (min-width: 640px) and (max-width: 1024px) {
+//   .hide-for-medium-only {
+//     display: none !important;
+//   }
+// }
 
-@media screen and (max-width: 639px),
-screen and (min-width: 1025px) {
-  .show-for-medium-only {
-    display: none !important;
-  }
-}
+// @media screen and (max-width: 639px),
+// screen and (min-width: 1025px) {
+//   .show-for-medium-only {
+//     display: none !important;
+//   }
+// }
 
-@media screen and (min-width: 1025px) {
-  .hide-for-large {
-    display: none !important;
-  }
-}
+// @media screen and (min-width: 1025px) {
+//   .hide-for-large {
+//     display: none !important;
+//   }
+// }
 
-@media screen and (max-width: 1024px) {
-  .show-for-large {
-    display: none !important;
-  }
-}
+// @media screen and (max-width: 1024px) {
+//   .show-for-large {
+//     display: none !important;
+//   }
+// }
 
-@media screen and (min-width: 1025px) and (max-width: 1199px) {
-  .hide-for-large-only {
-    display: none !important;
-  }
-}
+// @media screen and (min-width: 1025px) and (max-width: 1199px) {
+//   .hide-for-large-only {
+//     display: none !important;
+//   }
+// }
 
-@media screen and (max-width: 1024px),
-screen and (min-width: 1200px) {
-  .show-for-large-only {
-    display: none !important;
-  }
-}
+// @media screen and (max-width: 1024px),
+// screen and (min-width: 1200px) {
+//   .show-for-large-only {
+//     display: none !important;
+//   }
+// }
 
-@media only screen and (orientation: portrait) {
+// @media only screen and (orientation: portrait) {
 
-  .show-for-portrait,
-  .hide-for-landscape {
-    display: initial !important;
-  }
+//   .show-for-portrait,
+//   .hide-for-landscape {
+//     display: initial !important;
+//   }
 
-  .hide-for-portrait,
-  .show-for-landscape {
-    display: none !important;
-  }
-}
+//   .hide-for-portrait,
+//   .show-for-landscape {
+//     display: none !important;
+//   }
+// }
 
-@media only screen and (orientation: landscape) {
+// @media only screen and (orientation: landscape) {
 
-  .show-for-portrait,
-  .hide-for-landscape {
-    display: none !important;
-  }
+//   .show-for-portrait,
+//   .hide-for-landscape {
+//     display: none !important;
+//   }
 
-  .hide-for-portrait,
-  .show-for-landscape {
-    display: initial;
-  }
-}
+//   .hide-for-portrait,
+//   .show-for-landscape {
+//     display: initial;
+//   }
+// }
 
 .department-menu-scrollbar {
   max-height: 650px;
@@ -34393,10 +34393,10 @@ screen and (min-width: 1200px) {
   position: relative;
 }
 
-.tooltip_style .tooltipster-content {
-  margin: 0 !important;
-  padding: 0 !important;
-}
+// .tooltip_style .tooltipster-content {
+//   margin: 0 !important;
+//   padding: 0 !important;
+// }
 
 // .MinHeight-100 {
 // 	min-height: 100px;
