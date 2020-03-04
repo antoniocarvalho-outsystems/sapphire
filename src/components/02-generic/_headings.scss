@@ -27,7 +27,21 @@
 	line-height: 1.4;
 }
 
-.Text_large {
+.TextHuge {
+	font-size: 2.249em;
+}
+
+.TextBig {
+	font-size: 2.143em;
+}
+
+.Text_large,
+.TextLarge {
 	// Important used due to Theme Patterns SlikUI
 	font-size: 1.1em !important;
+}
+
+.Text_small,
+.TextSmall {
+	font-size: 0.8em;
 }

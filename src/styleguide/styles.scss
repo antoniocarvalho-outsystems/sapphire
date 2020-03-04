@@ -7,6 +7,7 @@
 
 // Reset
 body {
+	background-color: $regular-white;
 	margin: 0;
 }
 
@@ -150,6 +151,7 @@ $styleguide-main-content-padding: 50px;
 	&__MainHeader {
 		@include flex-custom-align(flex-start, center);
 
+		background-color: $body-color;
 		flex-direction: column;
 		padding: 10px $styleguide-main-content-padding 20px;
 
@@ -167,18 +169,20 @@ $styleguide-main-content-padding: 50px;
 	}
 
 	&__Content {
-		background-color: $regular-white;
 		padding: $styleguide-main-content-padding;
 	}
 
 	&__ListFlex {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(auto-fill, 175px);
+		justify-content: space-between;
+	}
 
-		.DesignSystem__ContentCard {
-			margin: 0 15px 15px 0;
-		}
+	&__DefaultSection {
+		border: 1px solid $light-grey;
+		border-radius: 1px;
+		padding: 20px;
 	}
 
 	// ContentCard
@@ -191,14 +195,26 @@ $styleguide-main-content-padding: 50px;
 		overflow: hidden;
 		width: 175px;
 
+		&--sizeAuto {
+			height: auto;
+			width: auto;
+
+			> div:first-child div {
+				width: 100%;
+			}
+		}
+
 		> div:first-child {
+			@include flex-center-total;
+
 			flex: 1;
+			padding: 20px 10px;
 		}
 
 		> div:last-child {
 			font-family: $font-family-bold;
 			font-size: 0.857em;
-			padding: 8px;
+			padding: 8px 10px;
 		}
 	}
 }
