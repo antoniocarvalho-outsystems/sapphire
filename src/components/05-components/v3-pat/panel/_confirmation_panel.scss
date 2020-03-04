@@ -61,6 +61,7 @@
 	}
 }
 
-.SapphirePanelOpen .PanelContainer.ConfirmWB {
-	display: block;
+body.LayoutBase.SapphirePanelOpen .PanelContainer.ConfirmWB,
+body.LayoutBase.SapphirePanelOpen .PanelContainer.Confirm {
+	display: block !important;
 }
