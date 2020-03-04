@@ -171,7 +171,17 @@ $styleguide-main-content-padding: 50px;
 		padding: $styleguide-main-content-padding;
 	}
 
-	// Colors
+	&__ListFlex {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		.DesignSystem__ContentCard {
+			margin: 0 15px 15px 0;
+		}
+	}
+
+	// ContentCard
 	&__ContentCard {
 		border: 1px solid $light-grey;
 		border-radius: 2px;
