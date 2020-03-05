@@ -182,7 +182,20 @@ $styleguide-main-content-padding: 50px;
 	&__DefaultSection {
 		border: 1px solid $light-grey;
 		border-radius: 1px;
+		display: flex;
 		padding: 20px;
+
+		> div:first-child {
+			@include flex-center-total;
+
+			flex: 1;
+		}
+
+		> div:last-child {
+			@include flex-custom-align(center, space-between);
+
+			min-width: 550px;
+		}
 	}
 
 	// ContentCard
