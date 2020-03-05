@@ -1,0 +1,40 @@
+.AlignFlex {
+	display: flex;
+
+	&--centerTotal {
+		@extend .AlignFlex;
+
+		align-items: center;
+		justify-content: center;
+	}
+
+	&--centerVertical {
+		@extend .AlignFlex;
+
+		align-items: center;
+	}
+
+	&--centerHorizontal {
+		@extend .AlignFlex;
+
+		justify-content: center;
+	}
+
+	&--spaceAround {
+		@extend .AlignFlex;
+
+		justify-content: space-around;
+	}
+
+	&--spaceBetween {
+		@extend .AlignFlex;
+
+		justify-content: space-between;
+	}
+
+	&--spaceEvenly {
+		@extend .AlignFlex;
+
+		justify-content: space-evenly;
+	}
+}

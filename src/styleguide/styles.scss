@@ -177,6 +177,12 @@ $styleguide-main-content-padding: 50px;
 		grid-gap: 1rem;
 		grid-template-columns: repeat(auto-fill, 175px);
 		justify-content: space-between;
+
+		&--medium {
+			@extend .DesignSystem__ListFlex;
+
+			grid-template-columns: repeat(auto-fill, 300px);
+		}
 	}
 
 	&__DefaultSection {
@@ -185,16 +191,35 @@ $styleguide-main-content-padding: 50px;
 		display: flex;
 		padding: 20px;
 
-		> div:first-child {
-			@include flex-center-total;
+		&--withCards {
+			@extend .DesignSystem__DefaultSection;
 
-			flex: 1;
+			display: inherit;
+			padding: 10px 20px;
+
+			.DesignSystem__ContentCard {
+				border: none;
+			}
 		}
 
-		> div:last-child {
-			@include flex-custom-align(center, space-between);
+		&--simple {
+			@extend .DesignSystem__DefaultSection;
 
-			min-width: 550px;
+			> * {
+				padding: 0 10px;
+			}
+
+			> div:first-child {
+				@include flex-custom-align(center, unset);
+
+				flex: 1;
+			}
+
+			> div:last-child {
+				@include flex-custom-align(center, space-between);
+
+				min-width: 550px;
+			}
 		}
 	}
 
@@ -229,5 +254,11 @@ $styleguide-main-content-padding: 50px;
 			font-size: 0.857em;
 			padding: 8px 10px;
 		}
+	}
+
+	&__FormField {
+		display: grid;
+		row-gap: 5px;
+		width: 100%;
 	}
 }
