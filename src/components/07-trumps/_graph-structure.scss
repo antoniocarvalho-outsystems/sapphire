@@ -1,20 +1,32 @@
 .GraphStructure {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
 	> div {
 		&:first-child {
+			flex: 1;
 			-servicestudio-width: 30% !important;
 
 			div {
+				background-color: green;
+
 				-servicestudio-width: 100% !important;
 			}
 		}
 
 		&:last-child {
 			-servicestudio-background-color: #fff;
+			flex: 5;
 			margin-left: 20px;
+			padding: 0;
 			-servicestudio-width: 75% !important;
-
 			div {
+				align-items: center;
 				-servicestudio-background-color: #fff;
+				display: flex;
+				justify-content: center;
+
 				-servicestudio-width: 100% !important;
 			}
 		}
