@@ -1,0 +1,47 @@
+.RequestEmptyLine {
+	font-family: $font-family-bold;
+	text-overflow: ellipsis;
+	width: 100%;
+	.RequestLeftEmptyLine,
+	.RequestRightEmptyLine {
+		border-bottom: 1px solid $regular-alpha;
+		display: inline-block;
+		margin: 0;
+		margin-bottom: 20px;
+		padding: 10px 0; /*22px 0*/
+	}
+	.RequestLeftEmptyLine {
+		text-align: left;
+	}
+
+	.RequestRightEmptyLine {
+		text-align: right;
+	}
+}
+
+.AR .RequestRightEmptyLine {
+	text-align: left;
+}
+
+.RequestActionsEmptyLine {
+	height: 100%;
+}
+
+.RequestTitleEmpty {
+	display: table;
+}
+
+.AR .RequestTitleEmpty {
+}
+
+.desktop .RequestLeftEmptyLine,
+.desktop.small .RequestLeftEmptyLine {
+}
+
+.tablet .RequestLeftEmptyLine {
+	min-width: 18%;
+}
+
+.phone .RequestLeftEmptyLine {
+	min-width: 70%;
+}

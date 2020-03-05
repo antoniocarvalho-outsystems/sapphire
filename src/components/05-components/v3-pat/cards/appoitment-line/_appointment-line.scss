@@ -4,21 +4,47 @@
 	border-bottom: 1px solid $light-grey;
 	border-top: none;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	color: $dark-grey;
 	display: table;
-	min-height: 52px;
+	min-height: 75px;
 	position: relative;
 	width: 100%;
 	.DateContainer {
 		background-color: $light-grey;
-		color: #0a3e5c;
+		color: $dark-grey;
 		display: table-cell;
+		font-size: $font-size-heading3;
 		padding: 5px;
 		vertical-align: middle;
-		width: 85px;
+	}
+	.DateContainer,
+	.StatusContainer {
+		min-width: 85px;
 	}
 	.InformationContainer {
 		display: table-cell;
 		vertical-align: middle;
+		width: 100%;
+		> div {
+			display: flex;
+			margin-left: 10px;
+			margin-right: auto;
+			div {
+				flex: 1;
+				height: 100%;
+				margin: 0;
+			}
+		}
+
+		.InfoContainer {
+			display: flex;
+			flex-direction: column;
+			float: right;
+		}
+
+		.MultiAlignLeft {
+			vertical-align: top;
+		}
 	}
 	.StatusContainer {
 		display: table-cell;
@@ -29,15 +55,13 @@
 			margin-right: 10px;
 		}
 	}
-}
-.InformationContainer {
-	> div {
-		margin-left: 10px;
-		margin-right: auto;
-		padding-bottom: 5px;
-		padding-top: 5px;
+
+	.icon-patient,
+	.icon-telephone {
+		color: $mid-dark-grey;
 	}
 }
+
 .SmallStretchedContiner.Dashed {
 	border: 1px dashed $light-grey;
 }
@@ -46,13 +70,13 @@
 		text-align: center;
 	}
 }
-.desktop.hd {
-	.SmallStretchedContainer {
-		.InformationContainer {
-			max-width: 75%;
-		}
-	}
-}
+// .desktop.hd {
+// 	.SmallStretchedContainer {
+// 		.InformationContainer {
+// 			max-width: 75%;
+// 		}
+// 	}
+// }
 .phone {
 	.SmallStretchedContainer {
 		display: grid;
