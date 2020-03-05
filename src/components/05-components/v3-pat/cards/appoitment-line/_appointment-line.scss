@@ -1,0 +1,163 @@
+.SmallStretchedContainer {
+	background-color: $sapphire-white;
+	border: 1px solid $light-grey;
+	border-bottom: 1px solid $light-grey;
+	border-top: none;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	display: table;
+	min-height: 52px;
+	position: relative;
+	width: 100%;
+	.DateContainer {
+		background-color: $light-grey;
+		color: #0a3e5c;
+		display: table-cell;
+		padding: 5px;
+		vertical-align: middle;
+		width: 85px;
+	}
+	.InformationContainer {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.StatusContainer {
+		display: table-cell;
+		text-align: right;
+		vertical-align: middle;
+		> div {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
+}
+.InformationContainer {
+	> div {
+		margin-left: 10px;
+		margin-right: auto;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+}
+.SmallStretchedContiner.Dashed {
+	border: 1px dashed $light-grey;
+}
+.DateContainer {
+	> div {
+		text-align: center;
+	}
+}
+.desktop.hd {
+	.SmallStretchedContainer {
+		.InformationContainer {
+			max-width: 75%;
+		}
+	}
+}
+.phone {
+	.SmallStretchedContainer {
+		display: grid;
+		.InformationContainer {
+			width: 100%;
+		}
+		.StatusContainer {
+			border-top: 1px solid $light-grey;
+		}
+		.Especialist {
+			padding-left: 0;
+			padding-right: 10px;
+		}
+		.DateContainer {
+			display: block;
+			width: 100%;
+		}
+		.Expandable_actions {
+			> div {
+				display: inline-block;
+			}
+		}
+	}
+	.Expandable_actions {
+		padding: 5px;
+	}
+}
+.tablet {
+	.SmallStretchedContainer {
+		border: 1px solid $light-grey;
+		.DateContainer {
+			display: block;
+			width: 100%;
+		}
+		.InformationContainer {
+			display: inline-block;
+			width: 50%;
+		}
+		.StatusContainer {
+			display: inline-block;
+			width: 50%;
+		}
+	}
+}
+.FA {
+	.InformationContainer {
+		div {
+			&:nth-child(3) {
+				margin-right: 10px;
+			}
+		}
+		> div {
+			margin-left: auto;
+			margin-right: 10px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+	}
+	.SmallStretchedContainer {
+		.StatusContainer {
+			> div {
+				margin-left: 10px;
+				margin-right: auto;
+			}
+			text-align: left;
+		}
+	}
+}
+.AR {
+	.InformationContainer {
+		div {
+			&:nth-child(3) {
+				margin-right: 10px;
+			}
+		}
+		> div {
+			margin-left: auto;
+			margin-right: 10px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+	}
+	.SmallStretchedContainer {
+		.StatusContainer {
+			> div {
+				margin-left: 10px;
+				margin-right: auto;
+			}
+			text-align: left;
+		}
+	}
+}
+.FA.phone {
+	.SmallStrectchedContainer {
+		.Especialist {
+			padding-left: 10px;
+			padding-right: 0;
+		}
+	}
+}
+.AR.phone {
+	.SmallStrectchedContainer {
+		.Especialist {
+			padding-left: 10px;
+			padding-right: 0;
+		}
+	}
+}
