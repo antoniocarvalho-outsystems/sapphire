@@ -1,74 +1,37 @@
 @each $size in $sapphire__sizes {
-    $label: nth($size, 1);
-    $value: nth($size, 2);
+	$label: nth($size, 1);
+	$value: nth($size, 2);
 
-    /* MultiPadding#{$label} */
+	.MultiPadding#{$label} {
+		padding: #{$value};
+	}
 
-    .MultiPadding#{$label} {
-        padding: #{$value};
-    }
+	.MultiPaddingLeft#{$label} {
+		padding-left: #{$value};
+	}
 
-    .MultiPaddingLeft#{$label} {
-        padding-left: #{$value};
-    }
+	.MultiPaddingRight#{$label} {
+		padding-right: #{$value};
+	}
 
-    .MultiPaddingRight#{$label} {
-        padding-right: #{$value};
-    }
+	.MultiPaddingTop#{$label} {
+		padding-top: #{$value};
+	}
 
-    .MultiPaddingTop#{$label} {
-        padding-top: #{$value};
-    }
+	.MultiPaddingBottom#{$label} {
+		padding-bottom: #{$value};
+	}
 
-    .MultiPaddingBottom#{$label} {
-        padding-bottom: #{$value};
-    }
+	.AR,
+	.FA {
+		.MultiPaddingLeft#{$label} {
+			padding-left: auto;
+			padding-right: #{$value};
+		}
 
-    .AR,
-    .FA {
-        .MultiPaddingLeft#{$label} {
-            padding-left: auto;
-            padding-right: #{$value};
-        }
-
-        .MultiPaddingRight#{$label} {
-            padding-left: #{$value};
-            padding-right: auto;
-        }
-    }
-
+		.MultiPaddingRight#{$label} {
+			padding-left: #{$value};
+			padding-right: auto;
+		}
+	}
 }
-
-
-
-// .MultiPaddingLargest {
-//     padding: 42px;
-// }
-
-// .MultiPaddingLeftLargest {
-//     padding-left: 42px;
-// }
-
-// .MultiPaddingRightLargest {
-//     padding-right: 42px;
-// }
-
-// .MultiPaddingTopLargest {
-//     padding-top: 42px;
-// }
-
-// .MultiPaddingBottomLargest {
-//     padding-bottom: 42px;
-// }
-
-// .FA .MultiPaddingLeftLargest,
-// .AR .MultiPaddingLeftLargest {
-//     padding-left: auto;
-//     padding-right: 42px;
-// }
-
-// .FA .MultiPaddingRightLargest,
-// .AR .MultiPaddingRightLargest {
-//     padding-left: 42px;
-//     padding-right: auto;
-// }

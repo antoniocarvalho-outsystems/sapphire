@@ -1,19 +1,23 @@
 .NoPadding {
-  padding: 0 !important;
+	padding: 0 !important;
 }
 
+.NoPaddingTop,
 .NoPadding--top {
-  padding-top: 0 !important;
+	padding-top: 0 !important;
 }
 
+.NoPaddingBottom,
 .NoPadding--bottom {
-  padding-bottom: 0 !important;
+	padding-bottom: 0 !important;
 }
 
+.NoPaddingLeft,
 .NoPadding--left {
-  padding-left: 0 !important;
+	padding-left: 0 !important;
 }
 
+.NoPaddingRight,
 .NoPadding--right {
-  padding-right: 0 !important;
+	padding-right: 0 !important;
 }

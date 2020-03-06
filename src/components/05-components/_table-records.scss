@@ -1,4 +1,4 @@
-.LayoutBase .TableRecords {
+.TableRecords {
 	background-color: transparent;
 	border-bottom: none;
 	border-radius: 1px;
@@ -179,8 +179,8 @@
 	}
 }
 
-.LayoutBase .AR,
-.LayoutBase .FA {
+.AR,
+.FA {
 	.TableRecords {
 		&_Header {
 			padding: 5px 10px 10px 0;
