@@ -1,5 +1,5 @@
 .CircledPatient {
-	background-color: $light-grey;
+	background-color: $sapphire-white;
 	border-radius: 50%;
 	color: $mid-dark-grey;
 	font-size: 10px;
@@ -10,12 +10,10 @@
 	width: 30px;
 
 	&.Male {
-		background-color: $light-blue-2;
 		color: $sapphire-male;
 	}
 
 	&.Female {
-		background-color: $light-pink-2;
 		color: $sapphire-female;
 	}
 }

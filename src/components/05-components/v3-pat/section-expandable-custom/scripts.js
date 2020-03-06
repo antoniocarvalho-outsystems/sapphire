@@ -172,7 +172,7 @@
 			});
 
 			// add click events
-			$('.SectionExpandable_headerCustom').on('click', function() {
+			$('.SectionExpandable_headerCustom').off("click").on('click', function() {
 				clickEvents(this);
 			});
 

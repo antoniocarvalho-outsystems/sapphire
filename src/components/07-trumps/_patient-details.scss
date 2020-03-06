@@ -1,7 +1,9 @@
 .PatientDetailsLayout {
 	.PersonCard__content.PH,
 	.PersonCard____title {
-		a {
+		a,
+		.DoubleText,
+		.Text_Note {
 			color: $mid-light-grey !important;
 		}
 	}

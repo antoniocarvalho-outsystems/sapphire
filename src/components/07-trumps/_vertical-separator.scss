@@ -1,0 +1,36 @@
+@mixin defaultSettings($borderDirection: border-left) {
+	#{$borderDirection}: 1.9px solid $mid-light-grey;
+	bottom: 0;
+	content: ' ';
+	top: 0;
+}
+@mixin verticalSeparator($after: true, $borderDirection: border-left) {
+	@if ($after) {
+		@include defaultSettings();
+		margin: 0px 8px;
+		position: absolute;
+	} @else {
+		@include defaultSettings();
+		margin-left: 7.5px !important;
+		padding-left: 7.5px;
+	}
+}
+
+.VerticalSeparatorHelper {
+	position: relative;
+}
+
+.VerticalSeparator:after {
+	@include verticalSeparator();
+}
+
+.VerticalSeparatorBefore {
+	@include verticalSeparator(false);
+}
+
+.AR .VerticalSeparatorBefore {
+	border-left: none;
+	margin-right: 7.5px !important;
+	padding-right: 7.5px;
+	@include verticalSeparator(false, border-right);
+}
