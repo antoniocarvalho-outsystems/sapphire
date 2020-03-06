@@ -1,78 +1,37 @@
 @each $size in $sapphire__sizes {
-  $label: nth($size, 1);
-  $value: nth($size, 2);
+	$label: nth($size, 1);
+	$value: nth($size, 2);
 
-  /* MultiMargin#{$label} */
+	.MultiMargin#{$label} {
+		margin: #{$value};
+	}
 
-  .MultiMargin#{$label} {
-    margin: #{$value};
-  }
+	.MultiMarginLeft#{$label} {
+		margin-left: #{$value};
+	}
 
-  .MultiMarginLeft#{$label} {
-    margin-left: #{$value};
-  }
+	.MultiMarginRight#{$label} {
+		margin-right: #{$value};
+	}
 
-  .MultiMarginRight#{$label} {
-    margin-right: #{$value};
-  }
+	.MultiMarginTop#{$label} {
+		margin-top: #{$value};
+	}
 
-  .MultiMarginTop#{$label} {
-    margin-top: #{$value};
-  }
+	.MultiMarginBottom#{$label} {
+		margin-bottom: #{$value};
+	}
 
-  .MultiMarginBottom#{$label} {
-    margin-bottom: #{$value};
-  }
+	.AR,
+	.FA {
+		.MultiMarginLeft#{$label} {
+			margin-left: auto;
+			margin-right: #{$value};
+		}
 
-  .AR,
-  .FA {
-    .MultiMarginLeft#{$label} {
-      margin-left: auto;
-      margin-right: #{$value};
-    }
-
-    .MultiMarginRight#{$label} {
-      margin-left: #{$value};
-      margin-right: auto;
-    }
-  }
-
+		.MultiMarginRight#{$label} {
+			margin-left: #{$value};
+			margin-right: auto;
+		}
+	}
 }
-
-
-/*
-
-.MultiMarginLargest {
-  margin: 42px;
-}
-
-.MultiMarginLeftLargest {
-  margin-left: 42px;
-}
-
-.MultiMarginRightLargest {
-  margin-right: 42px;
-}
-
-.MultiMarginTopLargest {
-  margin-top: 42px;
-}
-
-.MultiMarginBottomLargest {
-  margin-bottom: 42px;
-}
-
-.AR,
-.FA {
-  .MultiMarginLeftLargest {
-    margin-left: auto;
-    margin-right: 42px;
-  }
-
-  .MultiMarginRightLargest {
-    margin-left: 42px;
-    margin-right: auto;
-  }
-}
-
-*/

@@ -14,7 +14,9 @@ require('./styles.scss');
 			if (evt.target.value.length > 2) {
 				this.filterTerm(evt.target.value);
 			} else {
-				$('a, .sub-section-title').show();
+				const $menu = $('.DesignSystem__MenuSection');
+
+				$menu.find('a, .DesignSystem__MenuSubSection').show();
 			}
 		});
 
@@ -26,7 +28,9 @@ require('./styles.scss');
 	};
 
 	filterTerm = term => {
-		$('a, .sub-section-title').each((i, el) => {
+		const $menu = $('.DesignSystem__MenuSection');
+
+		$menu.find('a').each((i, el) => {
 			if (
 				$(el)
 					.text()
@@ -37,6 +41,11 @@ require('./styles.scss');
 			} else {
 				$(el).hide();
 			}
+		});
+
+		$menu.find('.DesignSystem__MenuSubSection').each((i, el) => {
+			if ($(el).children('a:visible').length === 0) $(el).hide();
+			else $(el).show();
 		});
 	};
 

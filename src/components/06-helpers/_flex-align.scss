@@ -1,39 +1,39 @@
-.AlignFlex {
+.Flex {
 	display: flex;
 
-	&--centerTotal {
-		@extend .AlignFlex;
+	&CenterFull {
+		@extend .Flex;
 
 		align-items: center;
 		justify-content: center;
 	}
 
-	&--centerVertical {
-		@extend .AlignFlex;
+	&CenterVertical {
+		@extend .Flex;
 
 		align-items: center;
 	}
 
-	&--centerHorizontal {
-		@extend .AlignFlex;
+	&CenterHorizontal {
+		@extend .Flex;
 
 		justify-content: center;
 	}
 
-	&--spaceAround {
-		@extend .AlignFlex;
+	&SpaceAround {
+		@extend .Flex;
 
 		justify-content: space-around;
 	}
 
-	&--spaceBetween {
-		@extend .AlignFlex;
+	&SpaceBetween {
+		@extend .Flex;
 
 		justify-content: space-between;
 	}
 
-	&--spaceEvenly {
-		@extend .AlignFlex;
+	&SpaceEvenly {
+		@extend .Flex;
 
 		justify-content: space-evenly;
 	}

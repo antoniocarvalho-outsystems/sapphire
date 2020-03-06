@@ -1,0 +1,23 @@
+.FileContainer .ButtonGroup_button.Button {
+	font-size: 24px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.FA.phone .ButtonGroup_button.Button,
+.FA.phone .ButtonGroup_button a.Button,
+.FA.mini.tablet .ButtonGroup_button.Button,
+.FA.mini.tablet .ButtonGroup_button a.Button,
+.AR.phone .ButtonGroup_button.Button,
+.AR.phone .ButtonGroup_button a.Button,
+.AR.mini.tablet .ButtonGroup_button.Button,
+.AR.mini.tablet .ButtonGroup_button a.Button {
+	border-right-width: 1px;
+}
+
+.FA .phone .ButtonGroup_button.Button,
+.FA .mini.tablet .ButtonGroup_button.Button,
+.AR .phone .ButtonGroup_button.Button,
+.AR .mini.tablet .ButtonGroup_button.Button {
+	border-right-width: 1px;
+}

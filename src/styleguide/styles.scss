@@ -221,6 +221,12 @@ $styleguide-main-content-padding: 50px;
 				min-width: 550px;
 			}
 		}
+
+		&--block {
+			@extend .DesignSystem__DefaultSection;
+
+			display: block;
+		}
 	}
 
 	// ContentCard
@@ -255,10 +261,30 @@ $styleguide-main-content-padding: 50px;
 			padding: 8px 10px;
 		}
 	}
+	// ContentCard
 
 	&__FormField {
 		display: grid;
 		row-gap: 5px;
 		width: 100%;
 	}
+
+	// Helpers Page
+	&__CardSpacing {
+		border: 1px dashed $mid-light-grey;
+
+		&--withBg {
+			@extend .DesignSystem__CardSpacing;
+
+			background-color: $regular-zeta;
+			box-sizing: border-box;
+		}
+
+		> div {
+			background-color: $regular-beta;
+			height: 50px;
+			width: auto !important;
+		}
+	}
+	// Helpers Page
 }

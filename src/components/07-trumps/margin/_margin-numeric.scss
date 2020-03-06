@@ -1,74 +1,93 @@
 .MarginBottom5 {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .MarginBottom10 {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .MarginBottom20 {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.MarginTop5 {
+	margin-top: 5px;
+}
+
+.MarginTop10 {
+	margin-top: 10px;
+}
+
+.MarginTop20 {
+	margin-top: 20px;
 }
 
 .MultiMarginLeft3,
-.AR .MultiMarginLeft3,
-.FA .MultiMarginLeft3 {
-  margin-left: 3px;
-  margin-right: auto;
+.AR .MultiMarginRight3,
+.FA .MultiMarginRight3 {
+	margin-left: 3px;
+	margin-right: auto;
 }
 
 .MultiMarginLeft5,
 .AR .MultiMarginRight5,
 .FA .MultiMarginRight5 {
-  margin-left: 5px;
-  margin-right: auto;
+	margin-left: 5px;
+	margin-right: auto;
 }
 
 .MultiMarginLeft10,
 .AR .MultiMarginRight10,
 .FA .MultiMarginRight10 {
-  margin-left: 10px;
-  margin-right: auto;
+	margin-left: 10px;
+	margin-right: auto;
 }
 
 .MultiMarginLeft15,
 .AR .MultiMarginRight15,
 .FA .MultiMarginRight15 {
-  margin-left: 15px;
-  margin-right: auto;
+	margin-left: 15px;
+	margin-right: auto;
 }
 
 .MultiMarginLeft20,
 .AR .MultiMarginRight20,
 .FA .MultiMarginRight20 {
-  margin-left: 20px;
-  margin-right: auto;
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+.MultiMarginRight3,
+.AR .MultiMarginLeft3,
+.FA .MultiMarginLeft3 {
+	margin-left: auto;
+	margin-right: 3px;
 }
 
 .MultiMarginRight5,
 .AR .MultiMarginLeft5,
 .FA .MultiMarginLeft5 {
-  margin-left: auto;
-  margin-right: 5px;
+	margin-left: auto;
+	margin-right: 5px;
 }
 
 .MultiMarginRight10,
 .AR .MultiMarginLeft10,
 .FA .MultiMarginLeft10 {
-  margin-left: auto;
-  margin-right: 10px;
+	margin-left: auto;
+	margin-right: 10px;
 }
 
 .MultiMarginRight15,
 .AR .MultiMarginLeft15,
 .FA .MultiMarginLeft15 {
-  margin-left: auto;
-  margin-right: 15px;
+	margin-left: auto;
+	margin-right: 15px;
 }
 
 .MultiMarginRight20,
 .AR .MultiMarginLeft20,
 .FA .MultiMarginLeft20 {
-  margin-left: auto;
-  margin-right: 20px;
+	margin-left: auto;
+	margin-right: 20px;
 }
