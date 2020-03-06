@@ -1,5 +1,5 @@
 /* Component LayoutPopup */
-(function($, window, document, SapphireWidgets) {
+(function ($, window, document, SapphireWidgets) {
 	var popupWidth;
 	var popupMinWidth;
 	var popupHeight;
@@ -14,19 +14,19 @@
 	var $overlay = window.parent.$('.os-internal-ui-widget-overlay');
 	var popupSize;
 
-	const create = function(config) {
+	const create = function (config) {
 		SapphireWidgets.LayoutPopup.config = config;
 		popupSize = SapphireWidgets.LayoutPopup.config.PopupSize;
 
-		$(function() {
+		$(function () {
 			$('body').addClass('LayoutPopup'); // because datetimerangepicker is attached to body
 			if (SapphireWidgets.LayoutPopup.config.isTouch) {
 				$popup.addClass('isTouch');
 				$('body').addClass('isTouch'); // because select2 is attached to body
 			}
 
-			var observer = new MutationObserver(function(mutations) {
-				mutations.forEach(function(mutation, index) {
+			var observer = new MutationObserver(function (mutations) {
+				mutations.forEach(function (mutation, index) {
 					redrawDialogWindow();
 				});
 			});
@@ -37,8 +37,8 @@
 				attributes: false,
 			});
 
-			var handleOutOfBoundsElement = function(inserted, propertyToAdjust, value) {
-				window.setTimeout(function() {
+			var handleOutOfBoundsElement = function (inserted, propertyToAdjust, value) {
+				window.setTimeout(function () {
 					if (propertyToAdjust === 'height') {
 						$osPopupContent.height($osPopupContent.height() + value + 10);
 					}
@@ -46,10 +46,10 @@
 						var pikadayInstance =
 							'cal_' +
 							$('.DateInput')
-								.eq(0)
-								.prop('id');
+							.eq(0)
+							.prop('id');
 						window[pikadayInstance].config({
-							onClose: function() {
+							onClose: function () {
 								redrawDialogWindow();
 							},
 						});
@@ -61,9 +61,12 @@
 			$('body').css('visibility', 'hidden');
 		});
 
-		$(window).load(function() {
-			$(this.frameElement).css({ width: '100%', height: '100%' });
-			setTimeout(function() {
+		$(window).load(function () {
+			$(this.frameElement).css({
+				width: '100%',
+				height: '100%'
+			});
+			setTimeout(function () {
 				resizeDialog();
 				resizeContent();
 				$('body').css('visibility', 'visible');
@@ -73,27 +76,29 @@
 
 		$(window.parent)
 			.off('resize.LayoutPopup')
-			.on('resize.LayoutPopup', function() {
+			.on('resize.LayoutPopup', function () {
 				redrawDialogWindow();
 			});
 	};
 
-	const redrawDialogWindow = function() {
+	const redrawDialogWindow = function () {
 		clearTimeout(popupGenericFlexResizeTimer);
-		popupGenericFlexResizeTimer = setTimeout(function() {
+		popupGenericFlexResizeTimer = setTimeout(function () {
 			resizeDialog();
 			resizeContent();
 			$('.Page').removeClass('phone tablet landscape portrait');
 		}, 300);
 	};
 
-	const resizeDialog = function() {
+	const resizeDialog = function () {
 		if (!SapphireWidgets.LayoutPopup.config.hasClose) {
 			window.parent.$('.os-internal-ui-dialog-titlebar-close-no-title').hide();
 		}
 
 		if (window.top.$('body').hasClass('LayoutBase')) {
-			window.top.$('body').css({ overflowY: 'hidden' });
+			window.top.$('body').css({
+				overflowY: 'hidden'
+			});
 		}
 
 		$overlay.width('100%');
@@ -123,13 +128,13 @@
 					popupWidthPercentage = 0.7;
 			}
 
-			popupWidth = SapphireWidgets.LayoutPopup.config.isTouch
-				? parseInt(windowWidth * 0.8)
-				: parseInt(windowWidth * popupWidthPercentage);
+			popupWidth = SapphireWidgets.LayoutPopup.config.isTouch ?
+				parseInt(windowWidth * 0.8) :
+				parseInt(windowWidth * popupWidthPercentage);
 			popupMinHeight = 200;
-			popupMaxHeight = SapphireWidgets.LayoutPopup.config.isTouch
-				? parseInt(windowHeight * 0.9)
-				: parseInt(windowHeight * 0.7);
+			popupMaxHeight = SapphireWidgets.LayoutPopup.config.isTouch ?
+				parseInt(windowHeight * 0.9) :
+				parseInt(windowHeight * 0.7);
 
 			if (SapphireWidgets.LayoutPopup.config.isFixedHeight) {
 				popupHeight = popupMaxHeight;
@@ -158,14 +163,16 @@
 		});
 	};
 
-	const resizeContent = function() {
+	const resizeContent = function () {
 		var $body = $('.LayoutPopup__body__content');
 		var contentScrollTop = $body.scrollTop();
 
 		if (popupSize === 'Small' && !!$('.daterangepicker:visible').length) {
 			// skip the reset of .LayoutPopup__body__content
 		} else {
-			$body.css({ height: 'auto' });
+			$body.css({
+				height: 'auto'
+			});
 		}
 
 		var headerHeight = $('.LayoutPopup__header').innerHeight() || 0;
@@ -215,7 +222,7 @@
 				var bodyHeight = $('.LayoutPopup__body__content').outerHeight(true);
 				$('.LayoutPopup__body__content').height(bodyHeight + difference);
 				$osPopupContent.height($('body')[0].scrollHeight + 10);
-				setTimeout(function() {
+				setTimeout(function () {
 					window[SapphireWidgets.DateTimeRangePicker.openedWidgetId].handleViewportPosition();
 				}, 500);
 			}
@@ -224,7 +231,7 @@
 		$body.scrollTop(contentScrollTop);
 	};
 
-	const increaseHeight = function(diference) {
+	const increaseHeight = function (diference) {
 		$osPopupContent.height($osPopupContent.height() + diference);
 	};
 
@@ -235,8 +242,11 @@
 		increaseHeight,
 		redrawDialogWindow,
 	};
+
 })(jQuery, window, document, SapphireWidgets);
 
-$(window).unload(function() {
-	window.top.$('body').css({ overflowY: 'scroll' });
+$(window).unload(function () {
+	window.top.$('body').css({
+		overflowY: 'scroll'
+	});
 });

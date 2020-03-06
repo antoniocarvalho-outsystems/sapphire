@@ -7,19 +7,19 @@
 	position: relative;
 	&.Open {
 		.SearchSD___remove {
+			align-items: center;
 			background-color: $sapphire-white;
 			border: 1px solid $light-grey;
 			border-radius: 50%;
 			cursor: pointer;
-			display: block !important;
+			display: flex !important;
+			height: 28px;
+			justify-content: center;
 			position: absolute;
 			right: 5px;
-			text-align: center;
 			top: 50%;
 			transform: translate(-50%, -50%);
-			visibility: visible;
 			width: 28px;
-			z-index: 2;
 
 			&:hover {
 				border: 1px solid $regular-alpha;
@@ -29,8 +29,6 @@
 		.SearchSD__inputWrapper {
 			.icon {
 				color: $regular-beta;
-				font-size: $font-size-heading3;
-				line-height: 28px;
 			}
 		}
 
@@ -48,10 +46,9 @@
 
 	&.hasFavorite {
 		.SearchSD__star {
-			// display: table-cell;
-			// font-size: 8px;
-			vertical-align: middle;
-			//width: 48px;
+			align-items: center;
+			display: flex;
+			justify-content: center;
 		}
 	}
 

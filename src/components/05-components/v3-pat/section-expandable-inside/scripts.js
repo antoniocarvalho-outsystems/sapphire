@@ -133,7 +133,7 @@
 			});
 
 			// add click events
-			$('.SectionExpandableInside .SectionExpandableInside_header').on('click', function() {
+			$('.SectionExpandableInside .SectionExpandableInside_header').off("click").on('click', function() {
 				clickEvents(this);
 			});
 

@@ -1,39 +1,40 @@
+.LayoutBlank .SectionExpandable,
 .LayoutBase .SectionExpandable {
-	background-color: $regular-white;
-	border: 1px solid $light-grey;
-	border-radius: 2px;
-	font-size: 14px;
+  background-color: $regular-white;
+  border: 1px solid $light-grey;
+  border-radius: 2px;
+  font-size: 14px;
 
-	&.expanded {
-		.SectionExpandable_content {
-			display: block;
-			height: auto;
-			overflow: visible;
-			padding: 0;
-			visibility: visible;
-		}
-	}
+  &.expanded {
+    .SectionExpandable_content {
+      display: block;
+      height: auto;
+      overflow: visible;
+      padding: 0;
+      visibility: visible;
+    }
+  }
 
-	&_header {
-		border-bottom: none;
-		color: $regular-beta;
-		font-family: $font-family-bold;
-		font-size: 1em;
-		padding: 15px 25px;
+  &_header {
+    border-bottom: none;
+    color: $regular-beta;
+    font-family: $font-family-bold;
+    font-size: 1em;
+    padding: 15px 25px;
 
-		.Heading2 {
-			color: inherit;
-			font-family: inherit;
-			font-size: 1.143em;
-			font-weight: inherit;
+    .Heading2 {
+      color: inherit;
+      font-family: inherit;
+      font-size: 1.143em;
+      font-weight: inherit;
 
-			&.SectionExpandable__icon {
-				span {
-					@include arrow-button;
+      &.SectionExpandable__icon {
+        span {
+          @include arrow-button;
 
-					font-size: 0.857em;
-				}
-			}
-		}
-	}
+          font-size: 0.857em;
+        }
+      }
+    }
+  }
 }
