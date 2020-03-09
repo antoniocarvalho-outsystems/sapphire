@@ -243,7 +243,7 @@ $styleguide-main-content-padding: 50px;
 			height: auto;
 			width: auto;
 
-			> div:first-child div {
+			> div:first-child > div {
 				width: 100%;
 			}
 		}
@@ -267,6 +267,10 @@ $styleguide-main-content-padding: 50px;
 		display: grid;
 		row-gap: 5px;
 		width: 100%;
+
+		input {
+			width: 100%;
+		}
 	}
 
 	// Helpers Page
