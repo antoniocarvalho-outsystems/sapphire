@@ -1,0 +1,134 @@
+.SessionList {
+	.SessionList_Header {
+		background-color: $sapphire-white;
+		border: 1px solid $mid-light-grey;
+		display: table;
+		height: 60px;
+		padding: 5px 10px;
+		width: 100%;
+	}
+	.SessionList__Wrapper {
+		display: table-cell;
+		vertical-align: middle;
+		width: calc(100% - 40px);
+		> div {
+			vertical-align: middle;
+		}
+	}
+	&:not(.IsDisable) {
+		.SessionList_Content {
+			border: 1px solid $mid-light-grey;
+			border-top: none;
+		}
+	}
+	.SessionList_Content {
+		.SessionList {
+			.SessionList_Content {
+				border: none;
+			}
+			&:first-of-type {
+				> .SessionList_Header {
+					&:first-of-type {
+						border-top: none;
+					}
+				}
+			}
+		}
+		.ListRecords {
+			span {
+				&:first-child {
+					.SessionList_Header {
+						border-top: none;
+					}
+				}
+			}
+			> div {
+				&:first-of-type {
+					> .SessionList {
+						> .SessionList_Header {
+							border-top: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.ListRecords {
+		.SessionList.IsDisable {
+			.SessionList_Header {
+				border-left: none;
+				border-right: none;
+				border-top: 1px solid $light-grey;
+			}
+			&:first-of-type {
+				border-top: 1px solid $light-grey;
+			}
+			&:last-of-type {
+				.SessionList_Header {
+					border-bottom: none;
+				}
+			}
+		}
+		.SessionList {
+			.SessionList_Header {
+				border-bottom: none;
+				border-left: none;
+				border-right: none;
+				height: 50px;
+			}
+			&:last-of-type {
+				.SessionList_Header {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+.SessionList_Header {
+	.SessionList__Icon {
+		color: $regular-alpha;
+		cursor: pointer;
+		display: table-cell;
+		text-align: center;
+		transform: rotate(0);
+		vertical-align: middle;
+		width: 40px;
+	}
+	.SessionList__Number {
+		color: $dark-grey;
+		display: table-cell;
+		font-size: 18px;
+		text-align: center;
+		vertical-align: middle;
+		width: 40px;
+	}
+	.SessionList___Detail {
+		color: $dark-grey;
+		font-size: 18px;
+	}
+	.SessionList___Actions {
+		text-align: right;
+		a {
+			display: inline-block;
+		}
+	}
+	.SessionList__Icon.Rotation {
+		transform: rotate(180deg);
+	}
+}
+.SessionList__ExtraInfo {
+	display: table-cell;
+	vertical-align: middle;
+}
+.SessionList.IsDisable {
+	.SessionList_Header {
+		background-color: $sapphire-white;
+		border: none;
+		border-color: $light-grey;
+	}
+}
+.SessionList_Content {
+	.SessionList_Header {
+		border: none;
+	}
+}
