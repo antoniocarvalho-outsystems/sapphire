@@ -9220,107 +9220,107 @@ a.Button.Icon:hover {
 /*------------------------------------------------------------*/
 /* 9.8 Sapphire Patterns > Cards > CardPatientTable ***********/
 /*------------------------------------------------------------*/
-.CardPatientInfo {
-	background-color: transparent;
-	display: table;
-	min-height: 25px;
-	width: 100%;
-}
+// .CardPatientInfo {
+// 	background-color: transparent;
+// 	display: table;
+// 	min-height: 25px;
+// 	width: 100%;
+// }
 
-.CardPatientInfo_left {
-	display: table-cell;
-	padding: 10px;
-	vertical-align: middle;
-	width: 41%;
-}
+// .CardPatientInfo_left {
+// 	display: table-cell;
+// 	padding: 10px;
+// 	vertical-align: middle;
+// 	width: 41%;
+// }
 
-.tablet .CardPatientInfo_left {
-	width: 32%;
-}
+// .tablet .CardPatientInfo_left {
+// 	width: 32%;
+// }
 
-.CardPatientInfo_left .PatientInfo_Text {
-	margin-left: 10px;
-	margin-right: auto;
-}
+// .CardPatientInfo_left .PatientInfo_Text {
+// 	margin-left: 10px;
+// 	margin-right: auto;
+// }
 
-.CardPatientInfo_left .PatientInfo_Text {
-	margin-left: auto;
-	margin-right: 10px;
-}
+// .CardPatientInfo_left .PatientInfo_Text {
+// 	margin-left: auto;
+// 	margin-right: 10px;
+// }
 
-.CardPatientInfo_right {
-	display: table;
-	padding: 10px;
-	vertical-align: middle;
-	width: 100%;
-}
+// .CardPatientInfo_right {
+// 	display: table;
+// 	padding: 10px;
+// 	vertical-align: middle;
+// 	width: 100%;
+// }
 
-.CardPatientInfo_right > div {
-	align-items: center;
-	display: table-cell;
-}
+// .CardPatientInfo_right > div {
+// 	align-items: center;
+// 	display: table-cell;
+// }
 
-/*Left Side Size*/
+// /*Left Side Size*/
 
-.CardPatientInfo_left.ExtraTiny {
-	width: 50px;
-}
+// .CardPatientInfo_left.ExtraTiny {
+// 	width: 50px;
+// }
 
-.CardPatientInfo_left.Tiny {
-	width: 100px;
-}
+// .CardPatientInfo_left.Tiny {
+// 	width: 100px;
+// }
 
-.CardPatientInfo_left.ExtraSmall {
-	width: 150px;
-}
+// .CardPatientInfo_left.ExtraSmall {
+// 	width: 150px;
+// }
 
-.CardPatientInfo_left.Small {
-	width: 200px;
-}
+// .CardPatientInfo_left.Small {
+// 	width: 200px;
+// }
 
-.CardPatientInfo_left.SmallMedium {
-	width: 250px;
-}
+// .CardPatientInfo_left.SmallMedium {
+// 	width: 250px;
+// }
 
-.CardPatientInfo_left.Medium {
-	width: 300px;
-}
+// .CardPatientInfo_left.Medium {
+// 	width: 300px;
+// }
 
-.CardPatientInfo_left.MediumLarge {
-	width: 350px;
-}
+// .CardPatientInfo_left.MediumLarge {
+// 	width: 350px;
+// }
 
-.tablet .CardPatientInfo_left.MediumLarge {
-	width: 250px;
-}
+// .tablet .CardPatientInfo_left.MediumLarge {
+// 	width: 250px;
+// }
 
-.CardPatientInfo_left.Large {
-	width: 400px;
-}
+// .CardPatientInfo_left.Large {
+// 	width: 400px;
+// }
 
-.CardPatientInfo_left.ExtraLarge {
-	width: 450px;
-}
+// .CardPatientInfo_left.ExtraLarge {
+// 	width: 450px;
+// }
 
-.CardPatientInfo_left.Gigantic {
-	width: 500px;
-}
+// .CardPatientInfo_left.Gigantic {
+// 	width: 500px;
+// }
 
-.CardPatientInfo_left.ExtraGigantic {
-	width: 550px;
-}
+// .CardPatientInfo_left.ExtraGigantic {
+// 	width: 550px;
+// }
 
-.CardPatientInfo_left.Colossal {
-	width: 600px;
-}
+// .CardPatientInfo_left.Colossal {
+// 	width: 600px;
+// }
 
-.tablet .CardPatientInfo_right > div {
-	flex-wrap: nowrap;
-}
+// .tablet .CardPatientInfo_right > div {
+// 	flex-wrap: nowrap;
+// }
 
-.tablet .CardPatientInfo_right > div:first-child {
-	margin-left: 0;
-}
+// .tablet .CardPatientInfo_right > div:first-child {
+// 	margin-left: 0;
+// }
 
 /*------------------------------------------------------------*/
 /* 9.9 Sapphire Patterns > Cards > Card_Surgeries *************/
@@ -24076,134 +24076,134 @@ span.select2-container.select2-container--default.select2-container--open {
 
 /* 9.163 Sapphire Patterns > SessionList */
 
-.SessionList .SessionList_Header {
-	background-color: #fff;
-	border: 1px solid #c9cdce;
-	display: table;
-	height: 60px;
-	padding: 5px 10px;
-	width: 100%;
-}
+// .SessionList .SessionList_Header {
+// 	background-color: #fff;
+// 	border: 1px solid #c9cdce;
+// 	display: table;
+// 	height: 60px;
+// 	padding: 5px 10px;
+// 	width: 100%;
+// }
 
-.SessionList_Header .SessionList__Icon {
-	color: #115874;
-	cursor: pointer;
-	text-align: center;
-}
+// .SessionList_Header .SessionList__Icon {
+// 	color: #115874;
+// 	cursor: pointer;
+// 	text-align: center;
+// }
 
-.SessionList_Header .SessionList__Number {
-	text-align: center;
-}
+// .SessionList_Header .SessionList__Number {
+// 	text-align: center;
+// }
 
-.SessionList__ExtraInfo {
-	display: table-cell;
-	vertical-align: middle;
-}
+// .SessionList__ExtraInfo {
+// 	display: table-cell;
+// 	vertical-align: middle;
+// }
 
-.SessionList .SessionList__Wrapper {
-	display: table-cell;
-	vertical-align: middle;
-	width: calc(100% - 40px);
-}
+// .SessionList .SessionList__Wrapper {
+// 	display: table-cell;
+// 	vertical-align: middle;
+// 	width: calc(100% - 40px);
+// }
 
-.SessionList .SessionList__Wrapper > div {
-	vertical-align: middle;
-}
+// .SessionList .SessionList__Wrapper > div {
+// 	vertical-align: middle;
+// }
 
-.SessionList_Header .SessionList__Icon,
-.SessionList_Header .SessionList__Number {
-	display: table-cell;
-	vertical-align: middle;
-	width: 40px;
-}
+// .SessionList_Header .SessionList__Icon,
+// .SessionList_Header .SessionList__Number {
+// 	display: table-cell;
+// 	vertical-align: middle;
+// 	width: 40px;
+// }
 
-.SessionList_Header .SessionList___Detail,
-.SessionList_Header .SessionList__Number {
-	color: #333;
-	font-size: 18px;
-}
+// .SessionList_Header .SessionList___Detail,
+// .SessionList_Header .SessionList__Number {
+// 	color: #333;
+// 	font-size: 18px;
+// }
 
-.SessionList_Header .SessionList___Actions {
-	text-align: right;
-}
+// .SessionList_Header .SessionList___Actions {
+// 	text-align: right;
+// }
 
-.SessionList_Header .SessionList___Actions a {
-	display: inline-block;
-}
+// .SessionList_Header .SessionList___Actions a {
+// 	display: inline-block;
+// }
 
-/* if expanded */
-.SessionList_Header .SessionList__Icon {
-	transform: rotate(180deg);
-}
+// /* if expanded */
+// .SessionList_Header .SessionList__Icon {
+// 	transform: rotate(180deg);
+// }
 
-.SessionList_Header .SessionList__Icon.Rotation {
-	transform: rotate(0);
-}
+// .SessionList_Header .SessionList__Icon.Rotation {
+// 	transform: rotate(0);
+// }
 
-.SessionList:not(.IsDisable) .SessionList_Content {
-	border: 1px solid #c9cdce;
-	border-top: none;
-}
+// .SessionList:not(.IsDisable) .SessionList_Content {
+// 	border: 1px solid #c9cdce;
+// 	border-top: none;
+// }
 
-.SessionList .SessionList_Content .SessionList .SessionList_Content {
-	border: none;
-}
+// .SessionList .SessionList_Content .SessionList .SessionList_Content {
+// 	border: none;
+// }
 
-/*IsDisable*/
-.SessionList.IsDisable .SessionList_Header {
-	background-color: #f8f8f8;
-	border: none;
-	border-color: #e9eaea;
-}
+// /*IsDisable*/
+// .SessionList.IsDisable .SessionList_Header {
+// 	background-color: #f8f8f8;
+// 	border: none;
+// 	border-color: #e9eaea;
+// }
 
-.SessionList .ListRecords .SessionList.IsDisable .SessionList_Header {
-	border-left: none;
-	border-right: none;
-	border-top: 1px solid #e9eaea;
-}
+// .SessionList .ListRecords .SessionList.IsDisable .SessionList_Header {
+// 	border-left: none;
+// 	border-right: none;
+// 	border-top: 1px solid #e9eaea;
+// }
 
-.SessionList .ListRecords .SessionList.IsDisable:first-of-type {
-	border-top: 1px solid #e9eaea;
-}
+// .SessionList .ListRecords .SessionList.IsDisable:first-of-type {
+// 	border-top: 1px solid #e9eaea;
+// }
 
-.SessionList .ListRecords .SessionList.IsDisable:last-of-type .SessionList_Header {
-	border-bottom: none;
-}
+// .SessionList .ListRecords .SessionList.IsDisable:last-of-type .SessionList_Header {
+// 	border-bottom: none;
+// }
 
-.SessionList .ListRecords .SessionList .SessionList_Header {
-	border-left: none;
-	border-right: none;
-}
+// .SessionList .ListRecords .SessionList .SessionList_Header {
+// 	border-left: none;
+// 	border-right: none;
+// }
 
-/*In RL*/
-.SessionList .ListRecords .SessionList .SessionList_Header {
-	height: 50px;
-}
+// /*In RL*/
+// .SessionList .ListRecords .SessionList .SessionList_Header {
+// 	height: 50px;
+// }
 
-.SessionList .ListRecords .SessionList .SessionList_Header {
-	border-bottom: none;
-}
+// .SessionList .ListRecords .SessionList .SessionList_Header {
+// 	border-bottom: none;
+// }
 
-.SessionList .ListRecords .SessionList:last-of-type .SessionList_Header {
-	border-bottom: none;
-}
+// .SessionList .ListRecords .SessionList:last-of-type .SessionList_Header {
+// 	border-bottom: none;
+// }
 
-/*If RL in RL*/
+// /*If RL in RL*/
 
-.SessionList .SessionList_Content .ListRecords span:first-child .SessionList_Header,
-.SessionList .SessionList_Content .SessionList:first-of-type > .SessionList_Header:first-of-type {
-	border-top: none;
-}
+// .SessionList .SessionList_Content .ListRecords span:first-child .SessionList_Header,
+// .SessionList .SessionList_Content .SessionList:first-of-type > .SessionList_Header:first-of-type {
+// 	border-top: none;
+// }
 
-/*div exists for refresh*/
-.SessionList .SessionList_Content .ListRecords > div:first-of-type > .SessionList > .SessionList_Header {
-	border-top: none;
-}
+// /*div exists for refresh*/
+// .SessionList .SessionList_Content .ListRecords > div:first-of-type > .SessionList > .SessionList_Header {
+// 	border-top: none;
+// }
 
-/*SessionList inside other SessionList*/
-.SessionList_Content .SessionList_Header {
-	border: none;
-}
+// /*SessionList inside other SessionList*/
+// .SessionList_Content .SessionList_Header {
+// 	border: none;
+// }
 
 /*** 9.164 Sapphire Patterns > MultiSelect ** /
 /**

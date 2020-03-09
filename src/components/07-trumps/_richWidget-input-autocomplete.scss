@@ -1,0 +1,39 @@
+input.os-internal-ui-autocomplete-loading {
+	cursor: progress;
+}
+ul.os-internal-ui-autocomplete {
+	background-color: $sapphire-white;
+	border: 1px solid $light-grey;
+	list-style: none;
+	margin: 0;
+	max-height: 180px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0;
+	position: absolute;
+	z-index: 9999;
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		a {
+			display: block;
+			font-family: $font-family-regular !important;
+			font-weight: normal;
+			outline: none;
+			padding: 2px;
+		}
+	}
+	a {
+		background-color: $sapphire-white;
+		border-bottom: 1px solid transparent;
+		border-top: 1px solid transparent;
+		color: $mid-dark-grey !important;
+	}
+	a.os-internal-ui-state-hover {
+		background-color: $regular-eta !important;
+		border: none;
+		color: $dark-grey !important;
+		cursor: pointer;
+	}
+}

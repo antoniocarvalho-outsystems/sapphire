@@ -3,6 +3,18 @@
 .LayoutPopup,
 .DesignSystem {
 	.select2-container--default {
+		.select2-selection {
+			height: 36px;
+
+			.select2-selection__rendered,
+			.select2-search {
+				height: 100%;
+			}
+			.select2-selection__rendered {
+				padding-left: 0;
+			}
+		}
+
 		.select2-selection--single,
 		.select2-selection--multiple,
 		.select2-selection--multiple.tagCustom {
@@ -15,7 +27,6 @@
 		}
 
 		.select2-selection--single {
-			height: 36px;
 			line-height: 18px;
 			padding: 2px 10px;
 		}
@@ -35,23 +46,11 @@
 		.select2-selection--multiple {
 			border-radius: 2px;
 			font-family: $font-family-bold;
-			min-height: 36px !important;
 
 			&.tagCustom {
 				align-items: center;
 				border-radius: 18px;
 				display: flex;
-
-				input {
-					border: none;
-					display: inline;
-					margin: 0;
-					max-height: 31px;
-
-					&:hover {
-						background-color: transparent;
-					}
-				}
 
 				&:before {
 					color: $sapphire-dark-grey;
@@ -64,28 +63,11 @@
 					line-height: 20px;
 					padding-right: 10px;
 					pointer-events: none;
-					position: absolute;
 					text-transform: none;
 					top: 8px;
 					-webkit-transform: rotateY(180deg);
 					transform: rotateY(180deg);
 					z-index: 1;
-				}
-
-				.select2-selection__rendered {
-					box-sizing: border-box;
-					display: inline-block;
-					line-height: 1.43;
-					list-style: none;
-					margin: 0;
-					max-width: 90%;
-					overflow: hidden;
-					padding: 0;
-					padding-bottom: 2px;
-					padding-left: 40px;
-					text-overflow: ellipsis;
-					white-space: nowrap;
-					width: 100%;
 				}
 
 				.select2-selection__choice__remove {
@@ -160,7 +142,7 @@
 					height: 26px;
 					position: absolute;
 					right: 4px;
-					top: 1px;
+					top: 2px;
 					width: 20px;
 				}
 
@@ -190,7 +172,8 @@
 
 		.select2-search--inline {
 			.select2-search__field {
-				display: none;
+				height: 100%;
+				margin: 0;
 			}
 		}
 
@@ -296,10 +279,6 @@
 	}
 }
 
-// .select2.select2-container.select2-container--default .select2-search input {
-//   width: auto !important;
-// }
-
 .select2-container .tagCustom .select2-search--inline > input {
 	display: inline-block;
 	font-size: $font-size-normal;
@@ -308,8 +287,15 @@
 
 /*********** RTL *************/
 
-.select2-selection.select2-selection--multiple.MultipleSelect .select2-search--inline {
-	display: none;
+.AR,
+.FA {
+	.select2-selection {
+		direction: rtl;
+
+		.select2-selection__rendered {
+			padding-left: 36px;
+		}
+	}
 }
 
 .AR .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
@@ -381,9 +367,9 @@
 	font-weight: 400;
 }
 
-.select2-container .select2-selection--multiple {
-	min-height: 36px !important;
-}
+// .select2-container .select2-selection--multiple {
+// 	min-height: 36px !important;
+// }
 
 .Mandatory + .select2.select2-container .select2-selection--single,
 .Mandatory + .select2.select2-container .select2-selection--single.customSelect,
