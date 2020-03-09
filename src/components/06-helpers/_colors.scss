@@ -1,419 +1,455 @@
 .ColorAlpha {
-	&--text {
+	&Text {
 		color: $regular-alpha;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-alpha;
+	}
+
+	&Border {
+		border-color: $regular-alpha;
 	}
 }
 
 .ColorBeta {
-	&--text {
+	&Text {
 		color: $regular-beta;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-beta;
 	}
 }
 
 .ColorGamma {
-	&--text {
+	&Text {
 		color: $regular-gamma;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-gamma;
+	}
+
+	&Border {
+		border-color: $regular-gamma;
 	}
 }
 
 .ColorDelta {
-	&--text {
+	&Text {
 		color: $regular-delta;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-delta;
 	}
 }
 
 .ColorEpsilon {
-	&--text {
+	&Text {
 		color: $regular-epsilon;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-epsilon;
 	}
 }
 
 .ColorZeta {
-	&--text {
+	&Text {
 		color: $regular-zeta;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-zeta;
 	}
 }
 
 .ColorEta {
-	&--text {
+	&Text {
 		color: $regular-eta;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-eta;
 	}
 }
 
 .ColorBlue {
-	&--text {
+	&Text {
 		color: $regular-blue;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-blue;
 	}
 }
 
 .ColorLightBlue {
-	&--text {
+	&Text {
 		color: $light-blue;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $light-blue;
 	}
 }
 
 .ColorLightBlue2 {
-	&--text {
+	&Text {
 		color: $light-blue-2;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $light-blue-2;
 	}
 }
 
 .ColorDarkBlue {
-	&--text {
+	&Text {
 		color: $dark-blue;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $dark-blue;
 	}
 }
 
 .ColorRed {
-	&--text {
+	&Text {
 		color: $regular-red;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-red;
+	}
+
+	&Border {
+		border-color: $regular-red;
 	}
 }
 
 .ColorLightRed {
-	&--text {
+	&Text {
 		color: $light-red;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $light-red;
 	}
 }
 
 .ColorDarkRed {
-	&--text {
+	&Text {
 		color: $dark-red;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $dark-red;
+	}
+
+	&Border {
+		border-color: $dark-red;
 	}
 }
 
 .ColorGreen {
-	&--text {
+	&Text {
 		color: $regular-green;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-green;
 	}
 }
 
 .ColorLightGreen {
-	&--text {
+	&Text {
 		color: $light-green;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $light-green;
 	}
 }
 
 .ColorDarkGreen {
-	&--text {
+	&Text {
 		color: $dark-green;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $dark-green;
 	}
 }
 
 .ColorYellow {
-	&--text {
+	&Text {
 		color: $regular-yellow;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-yellow;
 	}
 }
 
 .ColorLightYellow {
-	&--text {
+	&Text {
 		color: $light-yellow;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $light-yellow;
 	}
 }
 
 .ColorDarkYellow {
-	&--text {
+	&Text {
 		color: $dark-yellow;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $dark-yellow;
 	}
 }
 
 .ColorOrange {
-	&--text {
+	&Text {
 		color: $regular-orange;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-orange;
+	}
+
+	&Border {
+		border-color: $regular-orange;
 	}
 }
 
 .ColorLightOrange {
-	&--text {
+	&Text {
 		color: $light-orange;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $light-orange;
 	}
 }
 
 .ColorDarkOrange {
-	&--text {
+	&Text {
 		color: $dark-orange;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $dark-orange;
 	}
 }
 
 .ColorPink {
-	&--text {
+	&Text {
 		color: $regular-pink;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-pink;
 	}
 }
 
 .ColorLightPink {
-	&--text {
+	&Text {
 		color: $light-pink;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $light-pink;
 	}
 }
 
 .ColorLightPink2 {
-	&--text {
+	&Text {
 		color: $light-pink-2;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $light-pink-2;
 	}
 }
 
 .ColorDarkPink {
-	&--text {
+	&Text {
 		color: $dark-pink;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $dark-pink;
 	}
 }
 
 .ColorBeige {
-	&--text {
+	&Text {
 		color: $regular-beige;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-beige;
 	}
 }
 
 .ColorLightBeige {
-	&--text {
+	&Text {
 		color: $light-beige;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $light-beige;
 	}
 }
 
 .ColorDarkBeige {
-	&--text {
+	&Text {
 		color: $dark-beige;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $dark-beige;
 	}
 }
 
 .ColorWhite {
-	&--text {
+	&Text {
 		color: $regular-white;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-white;
 	}
 }
 
 .ColorBody {
-	&--text {
+	&Text {
 		color: $body-color;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $body-color;
 	}
 }
 
 .ColorLightContainer {
-	&--text {
+	&Text {
 		color: $sapphire-light;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $sapphire-light;
 	}
 }
 
 .ColorLightGrey {
-	&--text {
+	&Text {
 		color: $light-grey;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $light-grey;
 	}
 }
 
 .ColorMidLightGrey {
-	&--text {
+	&Text {
 		color: $mid-light-grey;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $mid-light-grey;
+	}
+
+	&Border {
+		border-color: $mid-light-grey;
 	}
 }
 
 .ColorGrey {
-	&--text {
+	&Text {
 		color: $regular-gray;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-gray;
+	}
+
+	&Border {
+		border-color: $regular-gray;
 	}
 }
 
 .ColorMidDarkGrey {
-	&--text {
+	&Text {
 		color: $mid-dark-grey;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $mid-dark-grey;
+	}
+
+	&Border {
+		border-color: $mid-dark-grey;
 	}
 }
 
 .ColorDarkGrey {
-	&--text {
+	&Text {
 		color: $dark-grey;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $dark-grey;
 	}
 }
 
 .ColorBlack {
-	&--text {
+	&Text {
 		color: $regular-black;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $regular-black;
+	}
+
+	&Border {
+		border-color: $regular-black;
 	}
 }
 
 .ColorSapphireBlue {
-	&--text {
+	&Text {
 		color: $sapphire-blue;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $sapphire-blue;
 	}
 }
 
 .ColorSapphireDarkBlue {
-	&--text {
+	&Text {
 		color: $sapphire-dark-blue;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $sapphire-dark-blue;
 	}
 }
 
 .ColorSapphireGreyBlue {
-	&--text {
+	&Text {
 		color: $sapphire-grey-blue;
 	}
 
-	&--bg {
+	&BG {
 		background-color: $sapphire-grey-blue;
 	}
 }

@@ -273,6 +273,12 @@ $styleguide-main-content-padding: 50px;
 	&__CardSpacing {
 		border: 1px dashed $mid-light-grey;
 
+		> div {
+			background-color: $regular-beta;
+			height: 50px;
+			width: auto;
+		}
+
 		&--withBg {
 			@extend .DesignSystem__CardSpacing;
 
@@ -280,10 +286,20 @@ $styleguide-main-content-padding: 50px;
 			box-sizing: border-box;
 		}
 
-		> div {
-			background-color: $regular-beta;
-			height: 50px;
-			width: auto !important;
+		&--withoutBg {
+			@extend .DesignSystem__CardSpacing;
+
+			border: inherit;
+
+			> div {
+				background-color: transparent;
+			}
+		}
+
+		&--withoutBorder {
+			@extend .DesignSystem__CardSpacing;
+
+			border: none;
 		}
 	}
 	// Helpers Page
