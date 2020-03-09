@@ -1,3 +1,36 @@
+// Transformation
+.TextUppercase {
+	text-transform: uppercase;
+}
+
+.TextLowercase {
+	text-transform: lowercase;
+}
+
+.TextBold {
+	font-family: $font-family-bold;
+}
+
+.TextItalic {
+	font-style: italic;
+}
+
+.TextUnderline {
+	text-decoration: underline;
+}
+
+.TextLineThrough {
+	text-decoration: line-through;
+}
+
+.TextOverflow {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// Go to 06-helpers/_colors.scss to see the new classes
 .Page .Text {
 	/* Colors */
 	&_sapphireBlue {
@@ -363,36 +396,4 @@
 
 .Uppercase {
 	text-transform: uppercase;
-}
-
-// Transformation
-.TextUppercase {
-	text-transform: uppercase;
-}
-
-.TextLowercase {
-	text-transform: lowercase;
-}
-
-.TextBold {
-	font-family: $font-family-bold;
-}
-
-.TextItalic {
-	font-style: italic;
-}
-
-.TextUnderline {
-	text-decoration: underline;
-}
-
-.TextLineThrough {
-	text-decoration: line-through;
-}
-
-.TextOverflow {
-	display: block;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 }

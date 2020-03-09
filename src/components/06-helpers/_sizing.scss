@@ -1,0 +1,43 @@
+// Minimum Height
+.MinHeight100,
+.MinHeight-100 {
+	min-height: 100px;
+}
+
+.MinHeight110,
+.MinHeight-110 {
+	min-height: 110px;
+}
+
+.MinHeight120,
+.MinHeight-120 {
+	min-height: 120px;
+}
+
+.MinHeight130,
+.MinHeight-130 {
+	min-height: 130px;
+}
+
+// Maximum Width
+.MaxWidth70,
+.MaxWidth-70 {
+	display: inline-block;
+	max-width: 70%;
+}
+
+.MaxWidth80,
+.MaxWidth-80 {
+	display: inline-block;
+	max-width: 80%;
+}
+
+.MaxWidth90,
+.MaxWidth-90 {
+	display: inline-block;
+	max-width: 90%;
+}
+
+.MaxWidthLarge {
+	max-width: 70%;
+}

@@ -1,79 +1,134 @@
-/* Style */
+// Style
+.BorderStyleDashed,
 .borderstyle--dashed {
 	border-style: dashed;
 }
 
+.BorderStyleDotted,
 .borderstyle--dotted {
 	border-style: dotted;
 }
 
+.BorderStyleDouble,
 .borderstyle--double {
 	border-style: double;
 }
 
+.BorderStyleNone,
 .borderstyle--none {
 	border-style: none;
 }
 
+.BorderStyleSolid,
 .borderstyle--solid {
 	border-style: solid;
 }
 
-/* Positions */
+// Positions
+.OnlyBorderTop,
 .onlyborder--top {
 	border-bottom: none;
 	border-left: none;
 	border-right: none;
 }
 
+.OnlyBordeRight,
 .onlyborder--right {
 	border-bottom: none;
 	border-left: none;
 	border-top: none;
 }
 
+.OnlyBordeBottom,
 .onlyborder--bottom {
 	border-left: none;
 	border-right: none;
 	border-top: none;
 }
 
+.OnlyBordeLeft,
 .onlyborder--left {
 	border-bottom: none;
 	border-right: none;
 	border-top: none;
 }
 
-/* Without border */
+// Without Border
+.NoBorderTop,
 .noborder--top {
 	border-top: none;
 }
 
+.NoBorderRight,
 .noborder--right {
 	border-right: none;
 }
 
+.NoBorderBottom,
 .noborder--bottom {
 	border-bottom: none;
 }
 
+.NoBorderLeft,
 .noborder--left {
 	border-left: none;
 }
 
-/* Width */
+// Width
+.BorderWidthSmall,
 .borderwidth--small {
 	border-width: 1px;
 }
 
+.BorderWidthMedium,
 .borderwidth--medium {
 	border-width: 2px;
 }
 
+.BorderWidthLarge,
 .borderwidth--large {
 	border-width: 3px;
 }
 
+.BorderWidthXLarge,
 .borderwidth--xlarge {
 	border-width: 4px;
+}
+
+// Color
+// Go to 06-helpers/_colors.scss
+.bordercolor--lightgrey {
+	border-color: $mid-light-grey;
+}
+
+.bordercolor--grey {
+	border-color: $regular-grey;
+}
+
+.bordercolor--darkgrey {
+	border-color: $mid-dark-grey;
+}
+
+.bordercolor--black {
+	border-color: $regular-black;
+}
+
+.bordercolor--red {
+	border-color: $regular-red;
+}
+
+.bordercolor--darkred {
+	border-color: $dark-red;
+}
+
+.bordercolor--orange {
+	border-color: $regular-orange;
+}
+
+.bordercolor--primary {
+	border-color: $regular-gamma;
+}
+
+.bordercolor--secondary {
+	border-color: $regular-alpha;
 }
