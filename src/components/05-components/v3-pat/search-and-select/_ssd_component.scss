@@ -164,6 +164,7 @@
 		display: table-cell;
 		font-size: 8px;
 		height: 100%;
+		min-width: 48px;
 		text-align: center;
 		vertical-align: middle;
 		width: 48px;
@@ -367,8 +368,17 @@
 	.SSD_ListLine {
 		.LineHeader {
 			background-color: transparent !important;
+			display: table;
 			height: 50px;
 			table-layout: fixed;
+
+			> div:nth-child(3) {
+				display: table-cell;
+				padding-top: 2px;
+				text-align: center;
+				vertical-align: middle;
+				width: 68px;
+			}
 		}
 		&:hover {
 			background-color: $regular-eta;

@@ -1,5 +1,5 @@
 @mixin defaultSettings($borderDirection: border-left) {
-	#{$borderDirection}: 1.9px solid $mid-light-grey;
+	#{$borderDirection}: 1.9px solid $light-grey;
 	bottom: 0;
 	content: ' ';
 	top: 0;

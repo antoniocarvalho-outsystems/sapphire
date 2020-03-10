@@ -124,12 +124,6 @@
 			}
 		}
 
-		.SearchSD_search {
-			.SearchSD_search_favoriteLink {
-				background-color: $sapphire-white;
-			}
-		}
-
 		&.hasFavorite {
 			&.showFavorite {
 				&.Open {
@@ -212,6 +206,7 @@
 			color: $regular-alpha;
 			cursor: pointer;
 			display: table-cell;
+			min-width: 48px;
 			text-align: center;
 			text-decoration: none;
 			vertical-align: middle;

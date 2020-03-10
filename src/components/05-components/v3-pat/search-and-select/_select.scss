@@ -155,14 +155,17 @@ $font-size-8px: 0.5714em;
 
 			.icon {
 				background-color: $sapphire-white;
-				border: 1px solid $light-grey;
+				border: 1px solid $regular-alpha;
 				border-radius: 2px;
 				box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 				box-sizing: border-box;
-				color: $regular-beta;
-				height: 26px;
+				color: $regular-alpha;
 				text-align: center;
-				width: 26px;
+
+				&::before {
+					position: relative;
+					top: 2px;
+				}
 			}
 		}
 
