@@ -2,7 +2,8 @@
 	background-image: url($icon-arrow-up-down);
 	background-position: right 14px center;
 	background-repeat: no-repeat;
-	font-family: $font-family-bold;
+	color: $dark-grey;
+	font-family: $font-family-regular;
 	line-height: inherit;
 	padding: 0 35px 0 10px;
 	//@include up-down-arrows;
@@ -27,6 +28,10 @@
 		font-size: 15px;
 		line-height: 19px;
 		padding: 5px 10px 5px 36px;
+
+		&:disabled {
+			background-position: left 0 center;
+		}
 	}
 
 	.LineContent .Dropdown {

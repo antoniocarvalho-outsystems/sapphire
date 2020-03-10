@@ -1,4 +1,7 @@
 .Page .Search_wrapper {
+	line-height: 1;
+	position: relative;
+
 	&:after {
 		color: $regular-beta;
 		content: '\e690';
@@ -14,24 +17,11 @@
 	}
 
 	input[type='text'] {
-		border: 1px solid $light-grey;
 		border-radius: 100px;
 		box-shadow: none;
 		height: 36px;
 		line-height: 36px;
 		padding: 0 10px 0 35px;
-
-		&:not([disabled]):focus {
-			border: 1px solid $dark-grey;
-		}
-
-		&:not([disabled]):hover {
-			border: 1px solid $sapphire-light;
-		}
-
-		&:not([disabled]):active {
-			border: 1px solid $regular-alpha;
-		}
 	}
 }
 
@@ -44,6 +34,7 @@
 		}
 
 		input[type='text'] {
+			border: 1px solid $light-grey;
 			padding-left: 0;
 			padding-right: 35px;
 		}

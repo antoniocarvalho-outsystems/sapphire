@@ -28,3 +28,22 @@
 	position: relative;
 	text-align: right;
 }
+
+.MandatoryLabel {
+	&:before {
+		color: $regular-alpha;
+		content: '*';
+		font-family: $font-family-bold;
+		font-size: 1em;
+		padding: 0px 5px 5px 0;
+	}
+}
+
+.AR,
+.FA {
+	.MandatoryLabel {
+		&:before {
+			padding: 0 0 5px 5px;
+		}
+	}
+}
