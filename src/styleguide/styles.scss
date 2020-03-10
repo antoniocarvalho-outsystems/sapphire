@@ -190,6 +190,7 @@ $styleguide-main-content-padding: 50px;
 		border-radius: 1px;
 		display: flex;
 		padding: 20px;
+		position: relative;
 
 		&--withCards {
 			@extend .DesignSystem__DefaultSection;
@@ -227,6 +228,22 @@ $styleguide-main-content-padding: 50px;
 
 			display: block;
 		}
+
+		&--withWebBlock {
+			@extend .DesignSystem__DefaultSection;
+
+			padding-top: 45px;
+		}
+	}
+
+	&__AlertInfoSection {
+		background-color: $regular-alpha;
+		color: $regular-white;
+		padding: 3px 15px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
 	}
 
 	// ContentCard
@@ -268,12 +285,11 @@ $styleguide-main-content-padding: 50px;
 		row-gap: 5px;
 		width: 100%;
 
-		input {
+		input:not([type='checkbox']):not([type='radio']) {
 			width: 100%;
 		}
 	}
 
-	// Helpers Page
 	&__CardSpacing {
 		border: 1px dashed $mid-light-grey;
 
@@ -306,5 +322,4 @@ $styleguide-main-content-padding: 50px;
 			border: none;
 		}
 	}
-	// Helpers Page
 }

@@ -4,6 +4,7 @@
 	cursor: pointer;
 	display: inline-block;
 	height: 20px;
+	margin-left: 0;
 	margin-right: 6px;
 	margin-top: -3px;
 	position: relative;
@@ -122,6 +123,8 @@ input {
 }
 
 textarea {
+	@include component-scroll-root;
+
 	height: auto;
 	min-height: 36px;
 	resize: none;
@@ -149,7 +152,12 @@ input[type='text'] {
 
 	&::placeholder {
 		color: $regular-gray;
-		font-size: 0.9em;
+	}
+
+	&:hover {
+		background-color: $regular-eta;
+		border: 1px solid $sapphire-light;
+		box-shadow: none; // inset 0 1px 3px 0 $body-color;
 	}
 
 	&:focus {
@@ -162,19 +170,14 @@ input[type='text'] {
 		box-shadow: none; // inset 0 1px 3px 0 $body-color;
 	}
 
-	&:hover {
-		background-color: $regular-eta;
-		border: 1px solid $sapphire-light;
-		box-shadow: none; // inset 0 1px 3px 0 $body-color;
-	}
-
 	&[disabled='disabled'],
 	&[readonly='readonly'] {
 		&,
 		&:hover,
 		&:focus {
+			//background-image: none;
+			background-blend-mode: luminosity;
 			background-color: $sapphire-light;
-			background-image: none;
 			background-position: right 14px center;
 			background-repeat: no-repeat;
 			border: 1px solid $light-grey;
@@ -218,24 +221,28 @@ input[type='text'] {
 .AR,
 .FA {
 	select,
-  textarea,
-  //input[type]:not([type='checkbox']):not([type='radio']) 
-  input[type='text'] {
-		&:focus {
-			border: 1px solid $dark-grey !important;
-		}
-
-		&:hover {
-			border: 1px solid $sapphire-light !important;
-		}
-
+	textarea,
+	input[type='text'] {
 		&.Mandatory {
-			border-left: 1px solid $light-grey;
+			border: 1px solid $light-grey;
+
+			&:hover {
+				border: 1px solid $sapphire-light;
+			}
+
+			&:focus {
+				border: 1px solid $dark-grey;
+			}
+
+			&:active {
+				border: 1px solid $regular-alpha;
+			}
 
 			&,
 			&:hover,
-			&:focus {
-				border-right: 3px solid $regular-alpha !important;
+			&:focus,
+			&:active {
+				border-right: 3px solid $regular-alpha;
 			}
 		}
 	}
@@ -245,18 +252,6 @@ input[type='text'] {
 		margin-left: 5px;
 		margin-right: 0;
 		padding: 0;
-	}
-
-	input[type='checkbox'] {
-		&:after {
-			left: 10%;
-		}
-	}
-
-	input[type='radio'] {
-		&:after {
-			left: 25%;
-		}
 	}
 
 	select {
