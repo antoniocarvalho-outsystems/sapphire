@@ -27,7 +27,7 @@ $prescriptionRadius: 18px;
 .LayouPopup {
 	.StatusBadges {
 		@include badges;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 0.857rem;
 		line-height: 12px;
 		max-height: 20px;
@@ -108,7 +108,7 @@ $prescriptionRadius: 18px;
 	.BadgesExtendedWrapper {
 		.PrescriptionBadges {
 			border-radius: 0;
-			font-family: $font-family-bold;
+			font-family: $font-family-latin-bold;
 			font-size: $font-size-small;
 			//height: 15px;
 			line-height: 15px;
@@ -137,7 +137,7 @@ $prescriptionRadius: 18px;
 		border-radius: 2px;
 		color: $sapphire-white;
 		display: inline-block;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: $font-size-small;
 		padding: 1px 4px;
 		white-space: nowrap;
@@ -161,7 +161,7 @@ $prescriptionRadius: 18px;
 	.StatusTag {
 		border-radius: 2px 0 2px 2px;
 		color: $sapphire-white;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: $font-size-small;
 		line-height: 15px;
 		padding: 2px 8px;
@@ -173,7 +173,7 @@ $prescriptionRadius: 18px;
 		background-color: transparent;
 		border: 2px solid transparent;
 		color: $mid-dark-grey;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: $font-size-normal;
 		height: 34px;
 		line-height: 30px;

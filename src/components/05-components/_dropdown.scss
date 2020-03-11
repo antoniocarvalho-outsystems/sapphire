@@ -1,40 +1,41 @@
 .Dropdown {
-	background-image: url($icon-arrow-up-down);
-	background-position: right 14px center;
-	background-repeat: no-repeat;
-	color: $dark-grey;
-	font-family: $font-family-regular;
-	line-height: inherit;
-	padding: 0 35px 0 10px;
-	//@include up-down-arrows;
+  background-image: url($icon-arrow-up-down);
+  background-position: right 14px center;
+  background-repeat: no-repeat;
+  color: $dark-grey;
+  font-family: $font-family-latin-regular;
+  line-height: inherit;
+  padding: 0 35px 0 10px;
+  //@include up-down-arrows;
 
-	&.Mandatory {
-		border-left: 3px solid $regular-alpha;
+  &.Mandatory {
+    border-left: 3px solid $regular-alpha;
 
-		&.Not_Valid {
-			border: solid 1px $regular-red;
-			border-bottom-right-radius: 0;
-			border-left: 3px solid $regular-red !important;
-			border-top-right-radius: 0;
-		}
-	}
+    &.Not_Valid {
+      border: solid 1px $regular-red;
+      border-bottom-right-radius: 0;
+      border-left: 3px solid $regular-red !important;
+      border-top-right-radius: 0;
+    }
+  }
 }
 
 .AR,
 .FA {
-	.Dropdown {
-		background-position: left 14px center;
-		background-repeat: no-repeat;
-		font-size: 15px;
-		line-height: 19px;
-		padding: 5px 10px 5px 36px;
+  .Dropdown {
+    background-position: left 14px center;
+    background-repeat: no-repeat;
+    font-family: $font-family-arabic-regular;
+    font-size: 15px;
+    line-height: 19px;
+    padding: 5px 10px 5px 36px;
 
-		&:disabled {
-			background-position: left 0 center;
-		}
-	}
+    &:disabled {
+      background-position: left 0 center;
+    }
+  }
 
-	.LineContent .Dropdown {
-		padding: 5px 5px 5px 5px;
-	}
+  .LineContent .Dropdown {
+    padding: 5px 5px 5px 5px;
+  }
 }

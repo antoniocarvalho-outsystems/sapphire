@@ -48,7 +48,7 @@
 			.modalPopup_close {
 				cursor: pointer;
 				display: inline-block;
-				font-family: $font-family-bold;
+				font-family: $font-family-latin-bold;
 				font-size: $font-size-small;
 				max-width: 15px;
 				position: absolute;
@@ -59,7 +59,7 @@
 
 		.modalPopup_title {
 			color: $dark-blue;
-			font-family: $font-family-bold;
+			font-family: $font-family-latin-bold;
 			font-size: 25px;
 			margin-bottom: 20px;
 			text-align: center;

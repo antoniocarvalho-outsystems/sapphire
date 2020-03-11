@@ -15,7 +15,7 @@
 	&.NoDoctors:before {
 		color: $sapphire-light;
 		content: 'Drag Doctors Here';
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 1.429em;
 		left: 20px;
 		position: absolute;
@@ -41,7 +41,7 @@
 		.AddMessage > div,
 		.NoDoctors {
 			color: $sapphire-light;
-			font-family: $font-family-bold;
+			font-family: $font-family-latin-bold;
 			font-size: 1.429em;
 		}
 	}
@@ -53,7 +53,7 @@
 
 	> .UnitName {
 		border-bottom: 1px solid $light-grey;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
 		padding-bottom: 8px;
 	}
