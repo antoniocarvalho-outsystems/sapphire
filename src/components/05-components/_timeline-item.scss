@@ -45,7 +45,7 @@
 
 	&__description {
 		color: $regular-beta;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -53,7 +53,7 @@
 }
 
 .TimelineHistoryContent_header {
-	font-family: $font-family-bold;
+	font-family: $font-family-latin-bold;
 	font-size: 1.429em;
 
 	a:link {

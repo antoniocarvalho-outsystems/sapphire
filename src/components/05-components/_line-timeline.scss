@@ -23,7 +23,7 @@
 			&_Header {
 				border-bottom: 1px solid $light-grey;
 				color: $mid-dark-grey;
-				font-family: $font-family-bold;
+				font-family: $font-family-latin-bold;
 				height: 55px;
 				line-height: 55px;
 				padding: 0 55px;
@@ -79,7 +79,7 @@
 	&__showMore {
 		border-bottom: 1px solid $regular-white;
 		color: $regular-beta;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 1em;
 		line-height: 35px;
 		text-align: center;
@@ -90,7 +90,7 @@
 
 		background-color: $regular-alpha;
 		color: $regular-white;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 1.429em;
 		width: 130px;
 	}
@@ -128,7 +128,7 @@
 	}
 
 	&____desktopLabel {
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 1.429em;
 		line-height: 1.429em;
 		padding: 0 15px;
@@ -163,7 +163,7 @@
 
 	&__leftContent {
 		color: $dark-grey;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		margin: 10px;
 	}
 
@@ -214,7 +214,7 @@
 
 	&_description {
 		color: $dark-grey;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		margin-top: 3px;
 	}
 }

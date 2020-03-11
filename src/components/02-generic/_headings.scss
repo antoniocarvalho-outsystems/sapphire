@@ -1,47 +1,60 @@
 .Heading1 {
-	font-family: $font-family-bold;
-	font-size: $font-size-heading1;
-	font-weight: normal;
-	line-height: 1.4;
+  font-family: $font-family-latin-bold;
+  font-size: $font-size-heading1;
+  font-weight: normal;
+  line-height: 1.4;
 }
 
 .Heading2 {
-	font-family: $font-family-bold;
-	font-size: $font-size-heading2;
-	font-weight: normal;
-	line-height: 1.4;
+  font-family: $font-family-latin-bold;
+  font-size: $font-size-heading2;
+  font-weight: normal;
+  line-height: 1.4;
 }
 
 .Heading3 {
-	font-family: $font-family-bold;
-	font-size: $font-size-heading3;
-	font-weight: normal;
-	line-height: 1.4;
+  font-family: $font-family-latin-bold;
+  font-size: $font-size-heading3;
+  font-weight: normal;
+  line-height: 1.4;
 }
 
 .Heading4,
 .Heading5 {
-	font-family: $font-family-bold;
-	font-size: $font-size-heading4;
-	font-weight: normal;
-	line-height: 1.4;
+  font-family: $font-family-latin-bold;
+  font-size: $font-size-heading4;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.AR {
+
+  .Heading1,
+  .Heading2,
+  .Heading3,
+  .Heading4,
+  .Heading5 {
+    font-family: $font-family-arabic-bold;
+  }
+
+
 }
 
 .TextHuge {
-	font-size: 2.249em;
+  font-size: 2.249em;
 }
 
 .TextBig {
-	font-size: 2.143em;
+  font-size: 2.143em;
 }
 
 .Text_large,
 .TextLarge {
-	// Important used due to Theme Patterns SlikUI
-	font-size: 1.1em !important;
+  // Important used due to Theme Patterns SlikUI
+  font-size: 1.1em !important;
 }
 
 .Text_small,
 .TextSmall {
-	font-size: 0.8em;
+  font-size: 0.8em;
 }

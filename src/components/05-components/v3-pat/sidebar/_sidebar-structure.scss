@@ -320,9 +320,13 @@ $font-size-11px: $font-size-tiny;
 .ISidebar-content-panel-title {
   color: #fff;
   display: block;
-  font-family: $font-family-bold;
+  font-family: $font-family-latin-bold;
   font-size: $font-size-20px;
   line-height: 50px;
+}
+
+.AR .ISidebar-content-panel-title {
+  font-family: $font-family-arabic-bold;
 }
 
 .ISidebar-content-panel-content {
@@ -416,7 +420,7 @@ $font-size-11px: $font-size-tiny;
       border-radius: 50%;
       box-shadow: none;
       color: #fff;
-      font-family: $font-family-bold;
+      font-family: $font-family-latin-bold;
       font-size: 10px;
       font-weight: normal;
       height: 17px;
@@ -428,5 +432,11 @@ $font-size-11px: $font-size-tiny;
       top: 10px;
       width: 17px;
     }
+  }
+}
+
+.AR {
+  .SidebarMenuItem .SidebarMenuItem_tabIcon .BadgeNotifications {
+    font-family: $font-family-arabic-bold;
   }
 }

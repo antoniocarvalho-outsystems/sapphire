@@ -1,418 +1,420 @@
 .pika-single {
-	background-color: $regular-white;
-	border: 1px solid $light-grey;
-	color: $mid-dark-grey;
-	cursor: default;
-	font-size: 1em;
-	min-width: 250px;
-	position: relative;
-	text-align: center;
-	user-select: none;
-	z-index: 1;
+  background-color: $regular-white;
+  border: 1px solid $light-grey;
+  color: $mid-dark-grey;
+  cursor: default;
+  font-size: 1em;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  z-index: 1;
 
-	&:after {
-		clear: both;
-	}
+  &:after {
+    clear: both;
+  }
 
-	&:after,
-	&:before {
-		content: ' ';
-		display: table;
-	}
+  &:after,
+  &:before {
+    content: ' ';
+    display: table;
+  }
 
-	&:not(.is-bound) {
-		.Calendar-navBtn {
-			width: 80px;
-		}
+  &:not(.is-bound) {
+    .Calendar-navBtn {
+      width: 80px;
+    }
 
-		.pika-prev,
-		.pika-next {
-			width: 45px;
-		}
+    .pika-prev,
+    .pika-next {
+      width: 45px;
+    }
 
-		.pika-next {
-			right: 0;
-		}
+    .pika-next {
+      right: 0;
+    }
 
-		.pika-prev {
-			left: 0;
-		}
-	}
+    .pika-prev {
+      left: 0;
+    }
+  }
 
-	&.is-hidden {
-		display: none;
-	}
+  &.is-hidden {
+    display: none;
+  }
 
-	&.is-bound {
-		.pika-lendar {
-			max-width: 250px;
-		}
-	}
+  &.is-bound {
+    .pika-lendar {
+      max-width: 250px;
+    }
+  }
 
-	&.is-rtl {
-		.pika-next {
-			border-right: none;
-			left: 7px;
-			top: 0;
-		}
+  &.is-rtl {
+    .pika-next {
+      border-right: none;
+      left: 7px;
+      top: 0;
+    }
 
-		.pika-prev {
-			border-left: none;
-			right: 7px;
-			top: 0;
-		}
-	}
+    .pika-prev {
+      border-left: none;
+      right: 7px;
+      top: 0;
+    }
+  }
 
-	.pika-lendar {
-		padding: 0 5px 5px;
-		width: 100%;
+  .pika-lendar {
+    padding: 0 5px 5px;
+    width: 100%;
 
-		.Calendar-navBtn {
-			width: 30px;
-			z-index: 99999;
-		}
+    .Calendar-navBtn {
+      width: 30px;
+      z-index: 99999;
+    }
 
-		.Calendar-prevYear {
-			display: none;
-		}
+    .Calendar-prevYear {
+      display: none;
+    }
 
-		.Calendar-nextYear {
-			display: none;
-		}
-	}
+    .Calendar-nextYear {
+      display: none;
+    }
+  }
 
-	.pika-title {
-		border-bottom: none;
-		height: 50px;
-		position: relative;
-		text-align: center;
+  .pika-title {
+    border-bottom: none;
+    height: 50px;
+    position: relative;
+    text-align: center;
 
-		select {
-			cursor: pointer;
-			filter: alpha(opacity=0);
-			left: 0;
-			margin: 0;
-			opacity: 0;
-			position: absolute;
-			top: 5px;
-			z-index: 9998;
-		}
-	}
+    select {
+      cursor: pointer;
+      filter: alpha(opacity=0);
+      left: 0;
+      margin: 0;
+      opacity: 0;
+      position: absolute;
+      top: 5px;
+      z-index: 9998;
+    }
+  }
 
-	.pika-label {
-		display: inline-flex;
-		font-family: $font-family-bold;
-		font-size: 1.143em;
-		line-height: 20px;
-		margin: 0;
-		overflow: hidden;
-		padding: 0;
-		position: relative;
-		top: 8px;
-		z-index: 9998;
+  .pika-label {
+    display: inline-flex;
+    font-family: $font-family-latin-bold;
+    font-size: 1.143em;
+    line-height: 20px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    top: 8px;
+    z-index: 9998;
 
-		&:first-child {
-			margin-right: 5px;
-			padding-top: 0;
-		}
-	}
+    &:first-child {
+      margin-right: 5px;
+      padding-top: 0;
+    }
+  }
 
-	.pika-select {
-		display: inline-block;
-		pointer-events: none;
-	}
+  .pika-select {
+    display: inline-block;
+    pointer-events: none;
+  }
 
-	.pika-next {
-		border-left: none;
-		right: 7px;
-		top: 0;
+  .pika-next {
+    border-left: none;
+    right: 7px;
+    top: 0;
 
-		&:after {
-			transform: rotate(270deg);
-		}
-	}
+    &:after {
+      transform: rotate(270deg);
+    }
+  }
 
-	.pika-prev {
-		border-right: none;
-		left: 7px;
-		top: 0;
+  .pika-prev {
+    border-right: none;
+    left: 7px;
+    top: 0;
 
-		&:after {
-			transform: rotate(90deg);
-		}
-	}
+    &:after {
+      transform: rotate(90deg);
+    }
+  }
 
-	.pika-next,
-	.pika-prev {
-		background-color: transparent;
-		border: 0;
-		color: transparent;
-		cursor: pointer;
-		display: block;
-		height: 50px;
-		outline: none;
-		overflow: hidden;
-		padding: 0;
-		position: absolute;
-		top: 0;
-		white-space: nowrap;
-		width: 15px;
-		z-index: 9999;
+  .pika-next,
+  .pika-prev {
+    background-color: transparent;
+    border: 0;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    outline: none;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 15px;
+    z-index: 9999;
 
-		&:after {
-			color: $regular-beta;
-			content: '\e610';
-			font-family: $font-family-icons;
-			font-size: 1em;
-			left: 0;
-			position: absolute;
-			top: 17px;
-			width: 100%;
-			z-index: 999999;
-		}
+    &:after {
+      color: $regular-beta;
+      content: '\e610';
+      font-family: $font-family-icons;
+      font-size: 1em;
+      left: 0;
+      position: absolute;
+      top: 17px;
+      width: 100%;
+      z-index: 999999;
+    }
 
-		&.is-disabled {
-			cursor: default;
-			opacity: 0.3;
-		}
-	}
+    &.is-disabled {
+      cursor: default;
+      opacity: 0.3;
+    }
+  }
 
-	.pika-table {
-		border: 0;
-		border-collapse: collapse;
-		border-spacing: 0;
-		table-layout: fixed;
-		width: 100%;
+  .pika-table {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
 
-		abbr {
-			text-decoration: none;
-		}
+    abbr {
+      text-decoration: none;
+    }
 
-		th {
-			border-bottom: 1px solid $light-grey;
-			color: $mid-dark-grey;
-			font-size: 0.786em;
-			font-weight: normal;
-			line-height: 25px;
-			opacity: 1;
-			text-align: center;
-		}
-	}
+    th {
+      border-bottom: 1px solid $light-grey;
+      color: $mid-dark-grey;
+      font-size: 0.786em;
+      font-weight: normal;
+      line-height: 25px;
+      opacity: 1;
+      text-align: center;
+    }
+  }
 
-	.pika-button {
-		background-color: transparent;
-		border: 0;
-		border: 1px solid $regular-white;
-		box-sizing: border-box;
-		color: $mid-dark-grey;
-		cursor: pointer;
-		display: block;
-		font-family: $font-family-regular;
-		font-size: 1.143em;
-		line-height: 22px;
-		margin: 0;
-		outline: none;
-		padding: 5px;
-		text-align: center;
-		width: 100%;
+  .pika-button {
+    background-color: transparent;
+    border: 0;
+    border: 1px solid $regular-white;
+    box-sizing: border-box;
+    color: $mid-dark-grey;
+    cursor: pointer;
+    display: block;
+    font-size: 1.143em;
+    line-height: 22px;
+    margin: 0;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
 
-		&:hover {
-			background: $regular-eta;
-			border-radius: 100px;
-			color: $regular-beta;
-		}
-	}
+    &:hover {
+      background: $regular-eta;
+      border-radius: 100px;
+      color: $regular-beta;
+    }
+  }
 
-	.pika-week {
-		border-right: 1px solid $light-grey;
-		line-height: 22px;
-		opacity: 0.5;
-		padding: 5px !important;
-	}
+  .pika-week {
+    border-right: 1px solid $light-grey;
+    line-height: 22px;
+    opacity: 0.5;
+    padding: 5px !important;
+  }
 
-	.pika-time-section {
-		background-color: $regular-white;
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: 99999;
-	}
+  .pika-time-section {
+    background-color: $regular-white;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+  }
 
-	.pika-time-container {
-		.triggerTimeBack {
-			margin-top: 20px;
-		}
+  .pika-time-container {
+    .triggerTimeBack {
+      margin-top: 20px;
+    }
 
-		.triggerTime,
-		.triggerTimeBack {
-			font-family: $font-family-bold;
-			opacity: 1;
-			padding: 0 20px;
+    .triggerTime,
+    .triggerTimeBack {
+      font-family: $font-family-latin-bold;
+      opacity: 1;
+      padding: 0 20px;
 
-			&:hover {
-				background-color: $regular-eta;
-				border-radius: 1px;
-				color: $regular-beta;
-				font-size: 1em;
-			}
-		}
-	}
+      &:hover {
+        background-color: $regular-eta;
+        border-radius: 1px;
+        color: $regular-beta;
+        font-size: 1em;
+      }
+    }
+  }
 
-	.is-today .pika-button {
-		color: $regular-alpha;
-		font-family: $font-family-bold;
-		font-weight: bold;
-		text-decoration: underline;
-	}
+  .is-today .pika-button {
+    color: $regular-alpha;
+    font-family: $font-family-latin-bold;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 
-	.is-selected {
-		&.has-event .pika-button:after,
-		&.is-today.has-event .pika-button:after {
-			background-color: $regular-white;
-		}
+  .is-selected {
 
-		.pika-button {
-			background: $regular-alpha;
-			border-radius: 100px;
-			color: $regular-white;
-			font-family: $font-family-bold;
-			font-weight: bold;
-		}
-	}
+    &.has-event .pika-button:after,
+    &.is-today.has-event .pika-button:after {
+      background-color: $regular-white;
+    }
 
-	.is-disabled .pika-button {
-		background-color: transparent;
-		color: $mid-dark-grey;
-		cursor: default;
-		opacity: 0.2 !important;
-		pointer-events: none;
-	}
+    .pika-button {
+      background: $regular-alpha;
+      border-radius: 100px;
+      color: $regular-white;
+      font-family: $font-family-latin-bold;
+      font-weight: bold;
+    }
+  }
 
-	.is-outside-current-month .pika-button {
-		color: $light-grey;
-		opacity: 1;
-	}
+  .is-disabled .pika-button {
+    background-color: transparent;
+    color: $mid-dark-grey;
+    cursor: default;
+    opacity: 0.2 !important;
+    pointer-events: none;
+  }
 
-	td.has-event {
-		position: relative;
+  .is-outside-current-month .pika-button {
+    color: $light-grey;
+    opacity: 1;
+  }
 
-		.pika-button:after {
-			background-color: $mid-dark-grey;
-			border-radius: 50%;
-			bottom: 4px;
-			content: '';
-			height: 4px;
-			left: 50%;
-			margin-left: -2px;
-			position: absolute;
-			width: 4px;
-		}
-	}
+  td.has-event {
+    position: relative;
+
+    .pika-button:after {
+      background-color: $mid-dark-grey;
+      border-radius: 50%;
+      bottom: 4px;
+      content: '';
+      height: 4px;
+      left: 50%;
+      margin-left: -2px;
+      position: absolute;
+      width: 4px;
+    }
+  }
 }
 
 /* Calendar */
 .Calendar {
-	&-day-selected {
-		&,
-		&:hover {
-			background-color: $regular-beta;
-			color: $regular-white;
-		}
-	}
+  &-day-selected {
 
-	&-day,
-	&-bottomBar {
-		&:hover {
-			background-color: $regular-beta;
-			border-radius: 20px;
-			color: $regular-white;
-			font-family: $font-family-bold;
-			font-weight: bold;
-		}
-	}
+    &,
+    &:hover {
+      background-color: $regular-beta;
+      color: $regular-white;
+    }
+  }
 
-	&-bottomBar-today {
-		opacity: 1;
-		padding: 0 20px;
-	}
+  &-day,
+  &-bottomBar {
+    &:hover {
+      background-color: $regular-beta;
+      border-radius: 20px;
+      color: $regular-white;
+      font-family: $font-family-latin-bold;
+      font-weight: bold;
+    }
+  }
 
-	&-navBtn > div {
-		color: $mid-dark-grey;
-		cursor: pointer;
-		font-size: 2.143em;
-		height: 50px;
-		line-height: 40px;
-		width: 100%;
-	}
+  &-bottomBar-today {
+    opacity: 1;
+    padding: 0 20px;
+  }
 
-	&-time {
-		display: inline-block;
-		font-size: 1.714em;
-		font-weight: normal;
-		padding-left: 15px;
-		padding-top: 50px;
+  &-navBtn>div {
+    color: $mid-dark-grey;
+    cursor: pointer;
+    font-size: 2.143em;
+    height: 50px;
+    line-height: 40px;
+    width: 100%;
+  }
 
-		td {
-			width: auto;
-		}
-	}
+  &-time {
+    display: inline-block;
+    font-size: 1.714em;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-top: 50px;
 
-	&-time-am {
-		background-color: $regular-beta;
-		border: 1px solid $regular-beta;
-		border-radius: 50%;
-		color: $regular-white;
-		height: 40px;
-		width: 40px;
-	}
+    td {
+      width: auto;
+    }
+  }
 
-	&-time-up,
-	&-time-down {
-		background-color: $regular-beta;
-		border: 1px solid $regular-beta;
-		border-radius: 100%;
-		color: $regular-white;
-		cursor: pointer;
-		display: table-cell;
-		font-size: 1.429em;
-		height: 50px;
-		margin: auto;
-		opacity: 0.2;
-		vertical-align: middle;
-		width: 50px;
-	}
+  &-time-am {
+    background-color: $regular-beta;
+    border: 1px solid $regular-beta;
+    border-radius: 50%;
+    color: $regular-white;
+    height: 40px;
+    width: 40px;
+  }
 
-	&-time-am,
-	&-time-up,
-	&-time-down {
-		&:hover {
-			background-color: $regular-white;
-			color: $regular-beta;
-			font-family: $font-family-bold;
-			font-weight: bold;
-			opacity: 1;
-		}
-	}
+  &-time-up,
+  &-time-down {
+    background-color: $regular-beta;
+    border: 1px solid $regular-beta;
+    border-radius: 100%;
+    color: $regular-white;
+    cursor: pointer;
+    display: table-cell;
+    font-size: 1.429em;
+    height: 50px;
+    margin: auto;
+    opacity: 0.2;
+    vertical-align: middle;
+    width: 50px;
+  }
+
+  &-time-am,
+  &-time-up,
+  &-time-down {
+    &:hover {
+      background-color: $regular-white;
+      color: $regular-beta;
+      font-family: $font-family-latin-bold;
+      font-weight: bold;
+      opacity: 1;
+    }
+  }
 }
 
 /* Calendar */
 
 .AR,
 .FA {
-	.pika-next,
-	.pika-prev,
-	.Calendar-nextYear,
-	.Calendar-prevYear {
-		transform: scale(-1, 1);
-	}
 
-	.pika-next {
-		border-right: 1px solid $light-grey;
-	}
+  .pika-next,
+  .pika-prev,
+  .Calendar-nextYear,
+  .Calendar-prevYear {
+    transform: scale(-1, 1);
+  }
 
-	.pika-prev {
-		border-left: 1px solid $light-grey;
-	}
+  .pika-next {
+    border-right: 1px solid $light-grey;
+  }
+
+  .pika-prev {
+    border-left: 1px solid $light-grey;
+  }
 }
