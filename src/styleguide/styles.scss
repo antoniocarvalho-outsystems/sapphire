@@ -232,7 +232,17 @@ $styleguide-main-content-padding: 50px;
 		&--withWebBlock {
 			@extend .DesignSystem__DefaultSection;
 
+			flex-direction: column;
 			padding-top: 45px;
+
+			.SectionExpandable_headerCustom {
+				height: 40px;
+
+				.PlaceHolderTitle {
+					font-family: $font-family-regular;
+					font-size: 1em;
+				}
+			}
 		}
 	}
 
@@ -285,8 +295,22 @@ $styleguide-main-content-padding: 50px;
 		row-gap: 5px;
 		width: 100%;
 
+		textarea {
+			height: auto;
+		}
+
+		textarea,
 		input:not([type='checkbox']):not([type='radio']) {
+			display: block;
 			width: 100%;
+		}
+
+		.ValidationMessageContainer .ValidationMessage {
+			display: block !important;
+
+			&::after {
+				content: 'This field is required';
+			}
 		}
 	}
 

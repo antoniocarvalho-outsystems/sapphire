@@ -1,6 +1,13 @@
 .SectionExpandableCustom {
-	&:not(.expanded) .SectionExpandable_headerCustom .icon {
-		transition: all 0.5s;
+	&:not(.expanded) {
+		.SectionExpandable_headerCustom .icon {
+			transition: all 0.5s;
+		}
+
+		.SectionExpandableCustom_content {
+			height: 0;
+			overflow: hidden;
+		}
 	}
 
 	&.expanded {
@@ -45,8 +52,8 @@
 	}
 
 	.PlaceHolderTitle {
+		font-family: $font-family-bold;
 		font-size: 1.143em;
-		font-weight: bold;
 		padding-left: 10px;
 	}
 
