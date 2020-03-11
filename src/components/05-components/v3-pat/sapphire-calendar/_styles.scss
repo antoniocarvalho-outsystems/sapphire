@@ -1,20 +1,19 @@
-@mixin common-sapphire-calendar-style {
-	border: 1px solid $light-grey;
-	border-radius: 2px;
-	min-width: 300px;
-	padding: 10px;
-	text-align: center;
-	z-index: 1;
-}
+@mixin common-sapphire-weekdays-style {
+  border: 1px solid $light-grey;
+  border-radius: 2px;
+  min-width: 300px;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
 }
 
 .CalendarWb {
-  @include common-sapphire-calendar-style;
+  @include common-sapphire-weekdays-style;
 
   position: absolute;
 
   &_noOverlap {
-    @include common-sapphire-calendar-style;
+    @include common-sapphire-weekdays-style;
 
     display: inline-block;
     padding-bottom: 15px;
