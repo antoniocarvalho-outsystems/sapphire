@@ -23,13 +23,17 @@
 	text-align: left;
 }
 
+.RequestTitleEmpty,
 .RequestActionsEmptyLine {
 	height: 100%;
+	line-height: 22px;
 }
-
-.RequestTitleEmpty {
-	display: table;
+.RequestActionsEmptyLine {
+	padding-left: 10px;
 }
+// .RequestTitleEmpty {
+// 	display: table;
+// }
 
 .AR .RequestTitleEmpty {
 }

@@ -1,14 +1,22 @@
-// .PatientDetailsLayout {
-// 	.PersonCard__content.PH,
-// 	.PersonCard____title {
-// 		a,
-// 		.DoubleText,
-// 		.Text_Note {
-// 			color: $mid-light-grey;
-// 		}
-// 	}
+.PatientDetailsLayout {
+	.PersonCard__content.PH,
+	.PersonCard____title {
+		a,
+		.DoubleText,
+		.Text_Note {
+			color: $mid-light-grey;
+		}
+	}
 
-// 	// a {
-// 	// 	font-family: $font-family-regular;
-// 	// }
-// }
+	// a {
+	// 	font-family: $font-family-regular;
+	// }
+}
+
+.IsTransparent .PersonCard__headerLeftInfo .PersonCard____title {
+	a,
+	.DoubleText,
+	.Text_Note {
+		color: $mid-light-grey;
+	}
+}
