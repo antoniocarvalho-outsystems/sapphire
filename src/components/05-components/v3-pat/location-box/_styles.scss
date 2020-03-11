@@ -23,7 +23,7 @@
   }
 
   .RoomNameSmall {
-    font-family: $font-family-bold;
+    font-family: $font-family-latin-bold;
     padding-top: 10px;
   }
 
@@ -81,7 +81,7 @@
 
 .RoomStatus {
   @include flex-center-total;
-  font-family: $font-family-bold;
+  font-family: $font-family-latin-bold;
 
   min-height: 22px;
   overflow: hidden;

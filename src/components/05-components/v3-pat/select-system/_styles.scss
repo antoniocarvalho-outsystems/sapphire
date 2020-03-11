@@ -19,7 +19,7 @@
 		.select2-selection--multiple,
 		.select2-selection--multiple.tagCustom {
 			border: 1px solid $light-grey;
-			font-family: $font-family-bold;
+			font-family: $font-family-latin-bold;
 
 			&:focus {
 				border: 1px solid $light-grey;
@@ -45,7 +45,7 @@
 
 		.select2-selection--multiple {
 			border-radius: 2px;
-			font-family: $font-family-bold;
+			font-family: $font-family-latin-bold;
 
 			&.tagCustom {
 				align-items: center;
@@ -86,7 +86,7 @@
 				}
 
 				.select2-results__option {
-					font-weight: $font-family-bold;
+					font-weight: $font-family-latin-bold;
 				}
 
 				.select2-results__option[aria-selected='true'] {
@@ -104,7 +104,7 @@
 					border-radius: 0;
 					cursor: default;
 					display: inline-block;
-					font-family: $font-family-bold;
+					font-family: $font-family-latin-bold;
 					margin-top: 4px;
 					padding: 2px 0px;
 					padding-left: 15px;

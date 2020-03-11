@@ -3,5 +3,16 @@
 .TableRecords_Header .TileIcon_text,
 .TileIconText_label,
 .TileNumber_text {
-	font-family: $font-family-regular;
+  font-family: $font-family-latin-regular;
+}
+
+.AR {
+
+  .EditableTable thead td,
+  .Header_title a,
+  .TableRecords_Header .TileIcon_text,
+  .TileIconText_label,
+  .TileNumber_text {
+    font-family: $font-family-arabic-regular;
+  }
 }

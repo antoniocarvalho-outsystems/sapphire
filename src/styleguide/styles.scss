@@ -19,7 +19,7 @@ $styleguide-main-content-padding: 50px;
 @mixin styleguide-menu-item-style {
 	color: $regular-beta;
 	display: block;
-	font-family: $font-family-regular;
+	font-family: $font-family-latin-regular;
 	height: $styleguide-menu-item-height;
 	line-height: $styleguide-menu-item-height;
 	padding: 0 10px;
@@ -31,7 +31,7 @@ $styleguide-main-content-padding: 50px;
 }
 
 .DesignSystem {
-	font-family: $font-family-regular;
+	font-family: $font-family-latin-regular;
 	font-size: 14px;
 
 	&__Aside {
@@ -124,7 +124,7 @@ $styleguide-main-content-padding: 50px;
 	&__MenuTitle {
 		color: $dark-grey;
 		display: block;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
 		margin-bottom: 10px;
 		padding: 0 10px;
@@ -134,7 +134,7 @@ $styleguide-main-content-padding: 50px;
 	&__Locale {
 		@include flex-custom-align(center, flex-end);
 
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		width: 100%;
 
 		.ToggleButton {
@@ -283,7 +283,7 @@ $styleguide-main-content-padding: 50px;
 		}
 
 		> div:last-child {
-			font-family: $font-family-bold;
+			font-family: $font-family-latin-bold;
 			font-size: 0.857em;
 			padding: 8px 10px;
 		}

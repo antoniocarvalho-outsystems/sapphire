@@ -21,7 +21,6 @@ $PatientCallCancel-color-disabled: $sapphire-color-disabled-text;
 .PatientCallCancel-label {
 	display: flex;
 	flex-direction: column;
-	font-size: 1.3em;
 	justify-content: center;
 	margin-right: 10px;
 }
@@ -43,7 +42,7 @@ $PatientCallCancel-color-disabled: $sapphire-color-disabled-text;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
-	font-weight: 700;
+	font-family: $font-family-bold;
 	justify-content: center;
 }
 
@@ -71,7 +70,7 @@ $PatientCallCancel-color-disabled: $sapphire-color-disabled-text;
 .PatientCallCancel .js-idle .PatientCallCancel-icon {
 	color: $PatientCallCancel-color-active;
 	cursor: pointer;
-	font-weight: 700;
+	font-family: $font-family-bold;
 }
 
 .PatientCallCancel > div.js-idle:nth-child(2) {

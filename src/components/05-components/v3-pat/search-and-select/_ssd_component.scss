@@ -207,7 +207,7 @@
 
 				&::placeholder {
 					color: $regular-beta;
-					font-family: $font-family-bold;
+					font-family: $font-family-latin-bold;
 					font-size: $font-size-normal;
 				}
 			}
@@ -422,7 +422,7 @@
 			justify-content: center;
 			min-height: 44px;
 			a {
-				font-family: $font-family-bold;
+				font-family: $font-family-latin-bold;
 				font-size: $font-size-normal !important;
 			}
 			.LineHeader {

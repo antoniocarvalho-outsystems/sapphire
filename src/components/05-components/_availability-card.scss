@@ -9,7 +9,7 @@
 		background-color: $body-color;
 		color: $dark-grey;
 		display: table-cell;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
 		padding: 5px;
 		text-align: center;
@@ -44,7 +44,7 @@
 
 			.ScheduleDateBold {
 				color: $dark-red;
-				font-family: $font-family-bold;
+				font-family: $font-family-latin-bold;
 			}
 
 			.ScheduleAction {

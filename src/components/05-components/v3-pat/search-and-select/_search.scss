@@ -59,7 +59,7 @@
 			border-bottom-right-radius: 0;
 		}
 		.SearchSD_search_favoriteLink {
-			border-bottom-left-radius: 0;
+			border-bottom-left-radius: 0 !important ;
 		}
 	}
 
@@ -246,7 +246,7 @@
 						width: 95%;
 						&::placeholder {
 							color: $regular-beta;
-							font-family: $font-family-bold;
+							font-family: $font-family-latin-bold;
 							font-size: $font-size-normal;
 						}
 
@@ -318,7 +318,7 @@
 			a,
 			a:link {
 				color: $regular-alpha;
-				font-family: $font-family-bold;
+				font-family: $font-family-latin-bold;
 			}
 		}
 
@@ -329,7 +329,7 @@
 				border: 1px solid $light-grey;
 				border-radius: 2px;
 				color: $sapphire-white;
-				font-family: $font-family-bold;
+				font-family: $font-family-latin-bold;
 				height: 34px;
 			}
 		}
@@ -384,7 +384,7 @@
 			background-color: $sapphire-white;
 			border-bottom: 1px solid $light-grey;
 			display: block;
-			font-family: $font-family-bold;
+			font-family: $font-family-latin-bold;
 			font-size: $font-size-heading3;
 			height: 50px;
 			line-height: 30px;
@@ -437,7 +437,7 @@
 			width: 100%;
 
 			a {
-				font-family: $font-family-bold;
+				font-family: $font-family-latin-bold;
 				font-size: $font-size-heading3;
 			}
 
@@ -472,7 +472,7 @@
 	border-radius: 2px;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 	color: $sapphire-white;
-	font-family: $font-family-bold;
+	font-family: $font-family-latin-bold;
 	font-size: 1em;
 	text-decoration: none;
 }

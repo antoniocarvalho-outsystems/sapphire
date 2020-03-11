@@ -2,7 +2,7 @@
 	@include flex-center-total;
 
 	background-color: $regular-white;
-	border: 1px solid $light-grey;
+	border: 1px solid $regular-alpha;
 	border-radius: 2px;
 	color: $regular-alpha;
 	cursor: pointer;
@@ -16,7 +16,7 @@
 
 	&:hover,
 	&:active {
-		background-color: $regular-eta;
+		//background-color: $regular-alpha;
 	}
 
 	&--disabled {
@@ -34,7 +34,7 @@
 	}
 
 	> span.icon {
-		font-size: 1.143em;
+		//font-size: 1.143em;
 		transition: all 0.2s;
 	}
 }

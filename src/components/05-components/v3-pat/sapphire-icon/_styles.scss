@@ -79,6 +79,8 @@ body .icon:after {
 
 .icon-cancel:before {
 	content: '\e60c';
+	position: relative;
+	top: 1px;
 }
 
 .icon-capsule:before {

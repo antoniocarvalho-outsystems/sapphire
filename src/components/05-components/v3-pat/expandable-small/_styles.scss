@@ -10,7 +10,7 @@
 	&_header {
 		color: $sapphire-color-text-regular;
 		display: inline-block;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 	}
 
 	&__headerIcon {
@@ -32,7 +32,7 @@
 
 	&__headerContent,
 	&__headerContentClose {
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 	}
 
 	> div + span {

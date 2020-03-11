@@ -40,7 +40,7 @@
 	}
 
 	&__title {
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
 		margin-left: 24px;
 		width: 12%;
@@ -73,7 +73,7 @@
 			&_icon,
 			&_text {
 				color: $regular-beta;
-				font-family: $font-family-bold;
+				font-family: $font-family-latin-bold;
 			}
 		}
 	}
@@ -151,7 +151,7 @@
 
 	&__title {
 		display: inline-block;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 1em;
 		width: 80%;
 
@@ -448,7 +448,7 @@
 
 		&_cardStatus {
 			color: $mid-dark-grey;
-			font-family: $font-family-bold;
+			font-family: $font-family-latin-bold;
 			white-space: nowrap;
 
 			span.icon {
@@ -484,7 +484,7 @@
 			border-radius: 0 0 4px 4px;
 			color: $regular-white;
 			cursor: pointer;
-			font-family: $font-family-bold;
+			font-family: $font-family-latin-bold;
 			font-size: 0.857em;
 			margin-top: -2px;
 			padding: 5px 0;
@@ -542,7 +542,7 @@
 
 		background-color: $regular-white;
 		color: $regular-gray;
-		font-family: $font-family-bold;
+		font-family: $font-family-latin-bold;
 		font-size: 0.857em;
 	}
 
@@ -564,7 +564,7 @@
 
 		.CardShift_cardStatus {
 			color: $mid-light-grey;
-			font-family: $font-family-bold;
+			font-family: $font-family-latin-bold;
 			font-size: 0.857em;
 			line-height: 18px;
 		}
