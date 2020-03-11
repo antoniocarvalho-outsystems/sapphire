@@ -18,7 +18,7 @@
       display: flex;
 
       &-name {
-        font-family: 'LatoBold';
+        font-family: $font-family-latin-bold;
         font-size: 1.5rem;
 
         .patient-en-fullname span {
@@ -42,8 +42,11 @@
   .HeaderIdentification-names {
     margin-left: 0;
     margin-right: 10px;
-  }
 
+    .HeaderIdentification-primary-name {
+      font-family: $font-family-arabic-bold;
+    }
+  }
 }
 
 .HeaderIdentification-photo .PhotoFrameMonths {
@@ -190,5 +193,23 @@
     }
   }
 
+
+}
+
+
+.AR {
+  .HeaderIdentification-photo .PhotoFrameMonths .Canvas .PhotoFrame .PatientGender img {
+    left: auto;
+    right: 5px;
+  }
+
+  .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
+    left: 5px;
+    right: auto;
+  }
+
+  .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
+    font-family: $font-family-arabic-bold;
+  }
 
 }

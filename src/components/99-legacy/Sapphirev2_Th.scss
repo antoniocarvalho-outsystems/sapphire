@@ -10372,47 +10372,47 @@ a.Button.Icon:hover {
 /* 9.16 Sapphire Patterns > Contents > InfoArea ***************/
 /*------------------------------------------------------------*/
 
-.InfoAreaBox {
-	background-color: #eff4f6;
-	border: 1px solid #e0e1e3;
-	color: #115874;
-	font-family: 'globeregular';
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 47px;
-	min-height: 87px;
-	overflow: hidden;
-	padding: 20px;
-	position: relative;
-	vertical-align: middle;
-}
+// .InfoAreaBox {
+// 	background-color: #eff4f6;
+// 	border: 1px solid #e0e1e3;
+// 	color: #115874;
+// 	font-family: 'globeregular';
+// 	font-size: 20px;
+// 	font-weight: bold;
+// 	line-height: 47px;
+// 	min-height: 87px;
+// 	overflow: hidden;
+// 	padding: 20px;
+// 	position: relative;
+// 	vertical-align: middle;
+// }
 
-.InfoAreaBox:after {
-	bottom: 0;
-	color: rgba(17, 88, 116, 0.1);
-	content: '\e625';
-	font-family: 'Sapphire-Icon-Font';
-	font-size: 103px;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	height: 45px;
-	margin: auto;
-	position: absolute;
-	right: 20px;
-	speak: none;
-	text-transform: none;
-	top: 0;
-	vertical-align: middle;
-}
+// .InfoAreaBox:after {
+// 	bottom: 0;
+// 	color: rgba(17, 88, 116, 0.1);
+// 	content: '\e625';
+// 	font-family: 'Sapphire-Icon-Font';
+// 	font-size: 103px;
+// 	-moz-osx-font-smoothing: grayscale;
+// 	-webkit-font-smoothing: antialiased;
+// 	font-style: normal;
+// 	font-variant: normal;
+// 	font-weight: 400;
+// 	height: 45px;
+// 	margin: auto;
+// 	position: absolute;
+// 	right: 20px;
+// 	speak: none;
+// 	text-transform: none;
+// 	top: 0;
+// 	vertical-align: middle;
+// }
 
-.FA .InfoAreaBox:after,
-.AR .InfoAreaBox:after {
-	left: 20px;
-	right: auto;
-}
+// .FA .InfoAreaBox:after,
+// .AR .InfoAreaBox:after {
+// 	left: 20px;
+// 	right: auto;
+// }
 
 /*------------------------------------------------------------*/
 /* 9.17 Sapphire Patterns > Contents > LineAdd ****************/

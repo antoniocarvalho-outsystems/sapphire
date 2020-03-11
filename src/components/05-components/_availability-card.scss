@@ -1,76 +1,85 @@
 .AvailabilityCardContainer {
-	border: 1px solid $light-grey;
-	border-radius: 3px;
-	display: table;
-	min-height: 50px;
-	width: 100%;
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  display: table;
+  min-height: 50px;
+  width: 100%;
 
-	.AvailabilityCardLeftContainer {
-		background-color: $body-color;
-		color: $dark-grey;
-		display: table-cell;
-		font-family: $font-family-latin-bold;
-		font-size: 1.143em;
-		padding: 5px;
-		text-align: center;
-		vertical-align: middle;
-		width: 55px;
+  .AvailabilityCardLeftContainer {
+    background-color: $body-color;
+    color: $dark-grey;
+    display: table-cell;
+    font-family: $font-family-latin-bold;
+    font-size: 1.143em;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 55px;
 
-		&.AvailabilityCardLeftRed {
-			background-color: $light-red;
-		}
-	}
+    &.AvailabilityCardLeftRed {
+      background-color: $light-red;
+    }
+  }
 
-	.AvailabilityCardRightContainer {
-		background-color: $regular-white;
-		border-left: 1px solid $light-grey;
-		border-radius: 3px;
-		display: table-cell;
-		padding: 5px 15px;
-		vertical-align: middle;
+  .AvailabilityCardRightContainer {
+    background-color: $regular-white;
+    border-left: 1px solid $light-grey;
+    border-radius: 3px;
+    display: table-cell;
+    padding: 5px 15px;
+    vertical-align: middle;
 
-		.AvailabilityCardRightContent {
-			width: 30%;
-		}
+    .AvailabilityCardRightContent {
+      width: 30%;
+    }
 
-		.AvailabilityCardRightDate {
-			text-align: right;
-			vertical-align: middle;
-			width: 70%;
+    .AvailabilityCardRightDate {
+      text-align: right;
+      vertical-align: middle;
+      width: 70%;
 
-			.ScheduleDate {
-				min-width: 35%;
-			}
+      .ScheduleDate {
+        min-width: 35%;
+      }
 
-			.ScheduleDateBold {
-				color: $dark-red;
-				font-family: $font-family-latin-bold;
-			}
+      .ScheduleDateBold {
+        color: $dark-red;
+        font-family: $font-family-latin-bold;
+      }
 
-			.ScheduleAction {
-				margin-left: 30px;
-				margin-right: 0;
-			}
-		}
+      .ScheduleAction {
+        margin-left: 30px;
+        margin-right: 0;
+      }
+    }
 
-		> div {
-			vertical-align: middle;
-		}
-	}
+    >div {
+      vertical-align: middle;
+    }
+  }
 }
 
 .AR,
 .FA {
-	.AvailabilityCardRightDate {
-		text-align: left;
-	}
 
-	.ScheduleAction {
-		margin-left: 0;
-		margin-right: 30px;
-	}
+  .AvailabilityCardContainer .AvailabilityCardLeftContainer {
+    font-family: $font-family-arabic-bold;
+  }
 
-	.AvailabilityCardRightDate div {
-		text-align: left !important;
-	}
+  .AvailabilityCardContainer .AvailabilityCardRightContainer .AvailabilityCardRightDate .ScheduleDateBold {
+    font-family: $font-family-arabic-bold;
+  }
+
+  .AvailabilityCardRightDate {
+    text-align: left;
+  }
+
+  .ScheduleAction {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .AvailabilityCardRightDate div {
+    text-align: left !important;
+  }
 }

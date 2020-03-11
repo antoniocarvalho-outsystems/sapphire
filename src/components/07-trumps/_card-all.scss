@@ -1,56 +1,57 @@
 .CardAll {
-	display: table;
+  display: table;
 }
 
 .Icon_CardAll {
-	background-color: transparent;
-	border-radius: 50%;
-	color: #124a61;
-	line-height: 30px;
-	text-align: center;
-	width: auto;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #124a61;
+  line-height: 30px;
+  text-align: center;
+  width: auto;
 }
 
 .DescriptionContainer {
-	font-family: $font-family-latin-bold;
-	font-size: $font-size-heading3;
-	line-height: 18px;
-	padding-left: 10px;
-	text-align: left;
+  font-family: $font-family-latin-bold;
+  font-size: $font-size-heading3;
+  line-height: 18px;
+  padding-left: 10px;
+  text-align: left;
 }
 
 .FA .DescriptionContainer,
 .AR .DescriptionContainer {
-	text-align: right;
+  font-family: $font-family-arabic-bold;
+  text-align: right;
 }
 
 .Description {
-	display: block;
-	line-height: 18px;
-	padding: 2px;
+  display: block;
+  line-height: 18px;
+  padding: 2px;
 }
 
 .desktop .Description,
 .desktop.small .Description {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 130px;
 }
 
 .phone .Description {
-	padding: 0;
+  padding: 0;
 }
 
 .FA .Description,
 .AR .Description {
-	font-size: 15px;
-	margin-right: 10px;
+  font-size: 15px;
+  margin-right: 10px;
 }
 
 .Small_Description {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	width: 185px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 185px;
 }

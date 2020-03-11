@@ -8,14 +8,13 @@ a {
   }
 }
 
-// .desktop {
-//   a:link,
-//   a:visited,
-//   a:not([disabled='disabled']) {
-//     &:hover {
-//       //color: #08a6af;
-//       cursor: pointer;
-//       text-decoration: none;
-//     }
-//   }
-// }
+.AR {
+  a {
+
+    &:link,
+    &:visited {
+      font-family: $font-family-arabic-bold;
+    }
+  }
+
+}
