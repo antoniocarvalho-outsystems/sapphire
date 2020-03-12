@@ -14,11 +14,6 @@
 		border: 1px solid $dark-grey;
 	}
 
-	&:hover,
-	&:active {
-		//background-color: $regular-alpha;
-	}
-
 	&--disabled {
 		background-color: $sapphire-light-container;
 		color: $light-grey;
@@ -34,7 +29,6 @@
 	}
 
 	> span.icon {
-		//font-size: 1.143em;
 		transition: all 0.2s;
 	}
 }
