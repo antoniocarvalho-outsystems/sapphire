@@ -86,3 +86,8 @@ body .Page.desktop .MainPopup {
 .LayoutPopup__body__content>.MinHeightMedium {
   min-height: 500px;
 }
+
+div.os-internal-Popup .os-internal-ui-dialog .os-internal-ui-dialog-titlebar,
+div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar {
+  height: 0 !important;
+}

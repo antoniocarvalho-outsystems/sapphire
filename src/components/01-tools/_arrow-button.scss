@@ -1,57 +1,58 @@
 @mixin arrow-button($color-base: $regular-beta, $size-base: 22px, $font-size: 0.857em) {
-	align-items: center;
-	background-color: transparent;
-	border: 2px solid $color-base;
-	border-radius: 50%;
-	cursor: pointer;
-	display: flex;
-	height: $size-base;
-	justify-content: center;
-	text-align: center;
-	transform: rotate(180deg);
-	width: $size-base;
-	z-index: 1;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid $color-base;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: $size-base;
+  justify-content: center;
+  text-align: center;
+  transform: rotate(180deg);
+  width: $size-base;
+  z-index: 1;
 
-	&:before {
-		color: $color-base;
-		content: '\e611';
-		font-family: $font-family-icons;
-		font-size: $font-size;
-	}
+  &:before {
+    color: $color-base;
+    content: '\e611';
+    font-family: $font-family-icons;
+    font-size: $font-size;
+  }
 
-	&:hover {
-		background-color: $regular-eta;
-	}
+  &:hover {
+    background-color: $regular-eta;
+  }
 }
 
 @mixin arrow-down-simple($color-base: $regular-beta, $size-base: 5px, $clean-icon: true) {
-	border-bottom: $size-base solid $color-base;
-	border-left: $size-base solid transparent;
-	border-right: $size-base solid transparent;
-	height: 0;
-	width: 0;
+  border-bottom: $size-base solid $color-base;
+  border-left: $size-base solid transparent;
+  border-right: $size-base solid transparent;
+  height: 0;
+  width: 0;
 
-	@if $clean-icon {
-		&:after,
-		&:before {
-			content: '';
-		}
-	}
+  @if $clean-icon {
+
+    &:after,
+    &:before {
+      content: '';
+    }
+  }
 }
 
 @mixin up-down-arrows {
-	background-color: $sapphire-white;
-	background-image: url($icon-arrow-up-down);
-	background-position-x: center;
-	background-position-y: center;
-	background-repeat: no-repeat;
-	border: none;
-	content: '';
-	height: 30px;
-	left: auto;
-	margin: 0;
-	position: absolute;
-	right: 20px;
-	top: 1px;
-	width: 10px;
+  background-color: $sapphire-white;
+  background-image: url($icon-arrow-up-down);
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  border: none;
+  content: '';
+  height: 30px;
+  left: auto;
+  margin: 0;
+  position: absolute;
+  right: 20px;
+  top: 1px;
+  width: 10px;
 }
