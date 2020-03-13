@@ -247,6 +247,11 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 	display: inline-block;
 	margin: 0;
 	vertical-align: middle;
+
+	[class$='icon-2x'] {
+		position: relative;
+		top: 2px;
+	}
 }
 
 .MainInteractiveCard-header-actions div.iconHorizontal.OSInline,
@@ -255,7 +260,7 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 .MainInteractiveCard-header-actions a.ButtonSquare span.icon,
 .MainInteractiveCard-header-actions > div.OSInline {
 	//display: inline-block;
-	margin: 0 8px;
+	//margin: 0 8px;
 	vertical-align: middle;
 }
 
