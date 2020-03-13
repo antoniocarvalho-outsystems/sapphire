@@ -1,7 +1,8 @@
 .PatientStatus_Container {
+	display: flex;
+	justify-content: flex-end;
 	> div {
+		align-items: center;
 		display: flex;
-		justify-content: space-between;
-		width: 80%;
 	}
 }
