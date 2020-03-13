@@ -42,8 +42,12 @@ $PatientCallCancel-color-disabled: $sapphire-color-disabled-text;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
-	font-family: $font-family-bold;
+	font-family: $font-family-latin-bold;
 	justify-content: center;
+}
+
+.AR .PatientCallCancel-cancel {
+	font-family: $font-family-arabic-bold;
 }
 
 .PatientCallCancel-cancel span.icon {
@@ -70,7 +74,12 @@ $PatientCallCancel-color-disabled: $sapphire-color-disabled-text;
 .PatientCallCancel .js-idle .PatientCallCancel-icon {
 	color: $PatientCallCancel-color-active;
 	cursor: pointer;
-	font-family: $font-family-bold;
+	font-family: $font-family-latin-bold;
+}
+
+.AR .PatientCallCancel .js-idle .PatientCallCancel-label,
+.AR .PatientCallCancel .js-idle .PatientCallCancel-icon {
+	font-family: $font-family-arabic-bold;
 }
 
 .PatientCallCancel > div.js-idle:nth-child(2) {

@@ -1,16 +1,16 @@
 @mixin flex-center-total {
-	align-items: center;
-	display: flex;
-	justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 @mixin flex-center-vertically {
-	align-items: center;
-	display: flex;
+  align-items: center;
+  display: flex;
 }
 
 @mixin flex-custom-align($align: center, $justify: center) {
-	align-items: $align;
-	display: flex;
-	justify-content: $justify;
+  align-items: $align;
+  display: flex;
+  justify-content: $justify;
 }

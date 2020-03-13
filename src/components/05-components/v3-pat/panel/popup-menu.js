@@ -1,7 +1,7 @@
 /* Component PopUpMenu */
 
-SapphireWidgets.PopUpMenu={
-	menuPosition:function (id, Context) {
+SapphireWidgets.PopUpMenu = {
+	menuPosition: function (id, Context) {
 		/* Hide any other menus on page and set button as collapsed. */
 		$('.popup-menu:visible').hide();
 
@@ -47,7 +47,10 @@ SapphireWidgets.PopUpMenu={
 		}
 
 		/* Set menu position. */
-		_el.css({ left: Xx + 'px', top: buttonY + 'px' });
+		_el.css({
+			left: Xx + 'px',
+			top: buttonY + 'px'
+		});
 
 		/* Refresh value */
 		popupXx = _el.offset().left;
@@ -66,12 +69,12 @@ SapphireWidgets.PopUpMenu={
 		/* Set position of the balloon effect. */
 		_balloonEl.css('left', _balloonPosXx + 'px');
 	},
-	menuEvents:function (Context) {
+	menuEvents: function (Context) {
 		$('.popup-button')
 			.off('click')
-			.on('click', function(e) {
+			.on('click', function (e) {
 				var id = $(this).attr('id');
-				menuPosition(id, Context);
+				SapphireWidgets.PopUpMenu.menuPosition(id, Context);
 
 				/*e.stopPropagation();*/
 
@@ -98,19 +101,19 @@ SapphireWidgets.PopUpMenu={
 
 		var _PMIsDrag = false;
 		var _PMIsClick = false;
-		$(document).on('touchstart', function(event) {
+		$(document).on('touchstart', function (event) {
 			_PMIsDrag = false;
 			_PMIsClick = true;
 		});
-		$(document).on('touchmove', function(event) {
+		$(document).on('touchmove', function (event) {
 			_PMIsDrag = true;
 		});
-		$(document).on('click', function(event) {
+		$(document).on('click', function (event) {
 			PMClickOutside(event);
 			_PMIsDrag = false;
 			_PMIsClick = false;
 		});
-		$(document).on('touchend', function(event) {
+		$(document).on('touchend', function (event) {
 			if (!_PMIsDrag && _PMIsClick) {
 				PMClickOutside(event);
 			}
@@ -118,7 +121,7 @@ SapphireWidgets.PopUpMenu={
 			_PMIsClick = false;
 		});
 
-		$('.button-collapse').on('click', function(event) {
+		$('.button-collapse').on('click', function (event) {
 			$('body').trigger('click');
 			return false;
 		});

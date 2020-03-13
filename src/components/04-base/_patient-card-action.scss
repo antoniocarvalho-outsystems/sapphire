@@ -1,11 +1,18 @@
 .PatientCardAction {
-	.iconHorizontal_icon {
-		font-size: 0.857em;
-	}
+  .iconHorizontal_icon {
+    font-size: 0.857em;
+  }
 
-	.iconHorizontal_label {
-		color: $regular-beta;
-		font-family: $font-family-latin-bold;
-		font-size: 0.857em;
-	}
+  .iconHorizontal_label {
+    color: $regular-beta;
+    font-family: $font-family-latin-bold;
+    font-size: 0.857em;
+  }
+}
+
+.AR {
+  .PatientCardAction .iconHorizontal_label {
+    font-family: $font-family-arabic-bold;
+  }
+
 }

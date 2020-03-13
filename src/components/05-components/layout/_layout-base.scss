@@ -92,6 +92,10 @@
 
 .AR,
 .FA {
+  .LayoutBase-Wrapper.hasFixedBottom .LayoutBase-bottomfixedcontent {
+    left: auto;
+    right: 0;
+  }
 
   .LayoutBase-iframesidebar,
   .LayoutBase-iframesidebar:before {
