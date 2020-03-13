@@ -1,0 +1,30 @@
+.BaseFont40 {
+	font-size: 3em;
+
+	select,
+	a.Button,
+	input[type='text'] {
+		height: 80px;
+		line-height: normal;
+	}
+
+	a.Button {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	&.container {
+		margin-bottom: 10px;
+	}
+
+	.SegmentedControl {
+		font-size: 1em;
+		.SegmentedControlItem {
+			font-size: 1em;
+			label {
+				line-height: unset;
+			}
+		}
+	}
+}

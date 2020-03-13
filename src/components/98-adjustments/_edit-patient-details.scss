@@ -1,0 +1,15 @@
+.Ctn_Identification--Wrapper {
+	display: flex;
+	flex-direction: column;
+	.Ctn_Identification--Label {
+		margin-bottom: 10px;
+	}
+
+	.Ctn_Identification--Container {
+		align-items: center;
+		display: flex;
+		:nth-child(2) {
+			width: 200px;
+		}
+	}
+}
