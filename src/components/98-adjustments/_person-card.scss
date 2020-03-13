@@ -53,10 +53,6 @@
 		border-top: none;
 	}
 
-	> div:not(:last-of-type) > .PersonCard:last-of-type .PersonCard_header {
-		border-bottom: none;
-	}
-
 	> div:last-of-type .PersonCard_header {
 		border-bottom: 1px solid $light-grey;
 	}
