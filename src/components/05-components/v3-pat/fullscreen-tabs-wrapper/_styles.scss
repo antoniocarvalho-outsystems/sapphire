@@ -98,13 +98,18 @@ $tab-height: 44px;
 	background-color: $regular-alpha;
 	height: $tab-height;
 	padding: 0;
-	padding-top: 10px;
 	position: relative;
 
 	.FullScreenTabsWrapper__Tabs {
 		bottom: 0;
 		display: inline-flex;
 		position: absolute;
+	}
+
+	.FullScreenTabsWrapper__Actions {
+		position: absolute;
+		right: 21px;
+		top: 10px;
 	}
 }
 

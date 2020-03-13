@@ -38,3 +38,9 @@
 		justify-content: space-evenly;
 	}
 }
+
+.InlineFlex {
+	@extend .Flex;
+
+	display: inline-flex;
+}
