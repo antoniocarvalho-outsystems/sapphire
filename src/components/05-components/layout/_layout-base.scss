@@ -90,6 +90,10 @@
   }
 }
 
+body.LayoutBase .os-internal-ui-widget-overlay {
+	z-index: 90 !important;
+}
+
 .AR,
 .FA {
   .LayoutBase-Wrapper.hasFixedBottom .LayoutBase-bottomfixedcontent {

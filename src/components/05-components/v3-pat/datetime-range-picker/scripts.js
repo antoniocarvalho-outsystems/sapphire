@@ -197,9 +197,7 @@
 					_this.$calendar.css('top', _this.$calendar.offset().top - 24);
 				}
 			}
-			if (typeof SapphireWidgets.ResizeParentIframe !== 'object') {
-				_this.handleViewportPosition();
-			}
+			_this.handleViewportPosition();
 		});
 		this.$input.on('show.daterangepicker', function (event, picker) {
 			if (_this.config.timePicker && _this.config.hasClearHour) {
@@ -213,22 +211,15 @@
 						.addClass('disabled');
 				} else {
 					_this.$timeHolder.css('opacity', 1);
-					_this.$calendar
-						.find('.DateTimeRangePicker-calendar-clear')
-						.removeClass('disabled');
+					_this.$calendar.find('.DateTimeRangePicker-calendar-clear').removeClass('disabled');
 				}
 			}
-			if (typeof SapphireWidgets.ResizeParentIframe !== 'object') {
-				_this.handleViewportPosition();
-			}
-			SapphireWidgets.DateTimeRangePicker.openedWidgetId =
-				_this.config.widgetId;
+			_this.handleViewportPosition();
+			SapphireWidgets.DateTimeRangePicker.openedWidgetId = _this.config.widgetId;
 		});
 		this.$input.on('hide.daterangepicker', function (event, picker) {
 			_this.$calendar.find('.DateTimeRangePicker-calendar-clear').remove();
-			if (typeof SapphireWidgets.ResizeParentIframe === 'object') {
-				SapphireWidgets.ResizeParentIframe.resize();
-			}
+			_this.updateParentIframe();
 		});
 		this.$input.on('cancel.daterangepicker', function (event, picker) {});
 		this.$input.on('outsideClick.daterangepicker', function (event, picker) {});
@@ -269,53 +260,27 @@
 			_this.clear();
 			_this.picker.hide();
 		});
-		this.$calendar.on(
-			'click',
-			'.DateTimeRangePicker-calendar-clear',
-			function () {
-				if (_this.config.timePicker24Hour) {
-					_this.$calendar
-						.find('.hourselect')
-						.val('0')
-						.trigger('change');
-				} else {
-					_this.$calendar
-						.find('.hourselect')
-						.val('12')
-						.trigger('change');
-				}
-				_this.$calendar
-					.find('.minuteselect')
-					.val('0')
-					.trigger('change');
-				_this.$calendar
-					.find('.ampmselect')
-					.val('AM')
-					.trigger('change');
-				_this.isEmptyHour = true;
-				_this.$timeHolder.css('opacity', 0.5);
-				_this.$calendar
-					.find('.DateTimeRangePicker-calendar-clear')
-					.addClass('disabled');
+		this.$calendar.on('click', '.DateTimeRangePicker-calendar-clear', function () {
+			if (_this.config.timePicker24Hour) {
+				_this.$calendar.find('.hourselect').val('0').trigger('change');
+			} else {
+				_this.$calendar.find('.hourselect').val('12').trigger('change');
 			}
-		);
-		this.$calendar.on(
-			'click',
-			'.DateTimeRangePicker-calendar-gotoday',
-			function () {
-				_this.picker.setStartDate(moment());
-				_this.picker.setEndDate(moment());
-				_this.picker.hide();
-				if (
-					!_this.config.autoUpdateInput ||
-					_this.config.hasTextTrigger ||
-					_this.config.attachToInput
-				) {
-					_this.updateLabeling();
-				}
-				_this.sendNotification();
+			_this.$calendar.find('.minuteselect').val('0').trigger('change');
+			_this.$calendar.find('.ampmselect').val('AM').trigger('change');
+			_this.isEmptyHour = true;
+			_this.$timeHolder.css('opacity', 0.5);
+			_this.$calendar.find('.DateTimeRangePicker-calendar-clear').addClass('disabled');
+		});
+		this.$calendar.on('click', '.DateTimeRangePicker-calendar-gotoday', function () {
+			_this.picker.setStartDate(moment());
+			_this.picker.setEndDate(moment());
+			_this.picker.hide();
+			if (!_this.config.autoUpdateInput || _this.config.hasTextTrigger || _this.config.attachToInput) {
+				_this.updateLabeling();
 			}
-		);
+			_this.sendNotification();
+		});
 		if (this.config.attachToInput) {
 			this.$displayed.on('click focus', function () {
 				_this.$input.trigger('click');
@@ -326,9 +291,7 @@
 		} else {
 			this.$input.on('click', function () {
 				window.setTimeout(function () {
-					if (!!SapphireWidgets.ResizeParentIframe) {
-						SapphireWidgets.ResizeParentIframe.resize();
-					}
+					_this.updateParentIframe();
 				}, 50);
 			});
 		}
@@ -378,73 +341,39 @@
 				}
 			} else {
 				if (this.config.attachToInput) {
-					this.$displayed.val(
-						this.picker.startDate.format(this.config.formatInput)
-					);
+					this.$displayed.val(this.picker.startDate.format(this.config.formatInput));
 					if (this.config.timePicker) {
-						this.$input.val(
-							this.picker.startDate.format('DD-MM-YYYY HH:mm:ss')
-						);
+						this.$input.val(this.picker.startDate.format('DD-MM-YYYY HH:mm:ss'));
 					} else {
 						this.$input.val(this.picker.startDate.format('DD-MM-YYYY'));
 					}
 				} else {
-					this.$input.val(
-						this.picker.startDate.format(this.config.formatInput)
-					);
+					this.$input.val(this.picker.startDate.format(this.config.formatInput));
 				}
 			}
 		}
 	};
 
 	DateTimeRangePicker.prototype.handleViewportPosition = function () {
-		if (
-			window.frameElement &&
-			$(window.frameElement.parentElement).hasClass('tooltipster-content')
-		) {
+		if (window.frameElement && ($(window.frameElement.parentElement).hasClass('tooltipster-content') || $(window.frameElement.parentElement).hasClass('os-internal-ui-dialog-content'))) {
 			return;
 		}
 
 		if (!this.isInViewport()) {
-			if ($('.LayoutPopup').length === 1) {
-				window.setTimeout(function () {
-					SapphireWidgets.LayoutPopup.redrawDialogWindow();
-				}, 100);
-			} else {
-				var coords = this.$calendar[0].getBoundingClientRect();
-				if (
-					this.$calendar.hasClass('drop-up') &&
-					this.$calendar[0].getBoundingClientRect().top < 0
-				) {
-					var point = window.scrollY + coords.bottom + this.$input.height() + 7;
-					this.$calendar
-						.removeClass('drop-up')
-						.addClass('drop-down')
-						.css('top', point);
-				} else if (
-					!this.$calendar.hasClass('drop-up') &&
-					this.$calendar[0].getBoundingClientRect().bottom >
-					(window.innerHeight || document.documentElement.clientHeight)
-				) {
-					var point =
-						window.scrollY +
-						coords.top -
-						coords.height -
-						this.$input.height() -
-						7;
-					this.$calendar.addClass('drop-up').css('top', point);
-				}
+			var coords = this.$calendar[0].getBoundingClientRect();
+			if (this.$calendar.hasClass('drop-up') && this.$calendar[0].getBoundingClientRect().top < 0) {
+				var point = window.scrollY + coords.bottom + this.$input.height() + 7;
+				this.$calendar.removeClass('drop-up').addClass('drop-down').css('top', point);
+			} else if (!this.$calendar.hasClass('drop-up') && this.$calendar[0].getBoundingClientRect().bottom > (window.innerHeight || document.documentElement.clientHeight)) {
+				var point = window.scrollY + coords.top - coords.height - this.$input.height() - 7;
+				this.$calendar.addClass('drop-up').css('top', point);
 			}
 		}
 	};
 
 	DateTimeRangePicker.prototype.isInViewport = function () {
 		var bounding = this.$calendar[0].getBoundingClientRect();
-		return (
-			bounding.top >= 0 &&
-			bounding.bottom <=
-			(window.innerHeight + 5 || document.documentElement.clientHeight + 5)
-		);
+		return (bounding.top >= 0 && bounding.bottom <= (window.innerHeight + 5 || document.documentElement.clientHeight + 5));
 	};
 
 	DateTimeRangePicker.prototype.clear = function (sendNotification) {
@@ -509,6 +438,16 @@
 			OsNotifyWidget(this.config.dateTimeRangePickerFakeNotifyId, 'null|true');
 		}
 	};
+
+	DateTimeRangePicker.prototype.updateParentIframe = function () {
+		console.log('updateParentIframe');
+		if (typeof SapphireWidgets.ResizeParentIframe === 'object') {
+			SapphireWidgets.ResizeParentIframe.resize();
+		}
+		if ($('.Page.LayoutPopup').length === 1) {
+			SapphireWidgets.LayoutPopup.redrawDialogWindow();
+		}
+	}
 
 	SapphireWidgets.DateTimeRangePicker = {
 		create: create,
