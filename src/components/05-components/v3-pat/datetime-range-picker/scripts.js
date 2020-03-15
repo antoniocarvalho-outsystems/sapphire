@@ -306,7 +306,7 @@
 			} else if (labelMask.includes('D MMM')) {
 				labelMask = labelMask.replace('D MMM', '[Today]');
 			} else {
-				console.log(labelMask);
+				console.log('Something wrong with the labelMask', labelMask);
 			}
 		}
 		if (this.isEmptyHour) {
@@ -440,7 +440,6 @@
 	};
 
 	DateTimeRangePicker.prototype.updateParentIframe = function () {
-		console.log('updateParentIframe');
 		if (typeof SapphireWidgets.ResizeParentIframe === 'object') {
 			SapphireWidgets.ResizeParentIframe.resize();
 		}

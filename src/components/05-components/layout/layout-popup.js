@@ -15,51 +15,30 @@
 	var popupSize;
 
 	const create = function (config) {
+
 		SapphireWidgets.LayoutPopup.config = config;
 		popupSize = SapphireWidgets.LayoutPopup.config.PopupSize;
 
 		$(function () {
-			console.log('ready');
 			$('body').addClass('LayoutPopup'); // because datetimerangepicker is attached to body
 			if (SapphireWidgets.LayoutPopup.config.isTouch) {
 				$popup.addClass('isTouch');
 				$('body').addClass('isTouch'); // because select2 is attached to body
 			}
-
 			var observer = new MutationObserver(function (mutations) {
 				mutations.forEach(function (mutation, index) {
 					redrawDialogWindow();
 				});
 			});
-
 			observer.observe(document.body, {
 				childList: true,
 				subtree: true,
 				attributes: false,
 			});
-
-			// var handleOutOfBoundsElement = function (inserted, propertyToAdjust, value) {
-			// 	window.setTimeout(function () {
-			// 		if (propertyToAdjust === 'height') {
-			// 			$osPopupContent.height($osPopupContent.height() + value + 10);
-			// 		}
-			// 		if (inserted.classList.contains('pika-single')) {
-			// 			var pikadayInstance = 'cal_' + $('.DateInput').eq(0).prop('id');
-			// 			window[pikadayInstance].config({
-			// 				onClose: function () {
-			// 					redrawDialogWindow();
-			// 				},
-			// 			});
-			// 			window[pikadayInstance].adjustPosition();
-			// 		}
-			// 	}, 500);
-			// };
-
 			$('body').css('visibility', 'hidden');
 		});
 
 		$(window).load(function () {
-			console.log('load');
 			$(this.frameElement).css({
 				width: '100%',
 				height: '100%'
@@ -73,7 +52,6 @@
 		});
 
 		$(window.parent).off('resize.LayoutPopup').on('resize.LayoutPopup', function () {
-			console.log('resize.LayoutPopup');
 			redrawDialogWindow();
 		});
 	};
@@ -81,10 +59,8 @@
 	const redrawDialogWindow = function () {
 		clearTimeout(layoutPopupResizeTimer);
 		layoutPopupResizeTimer = setTimeout(function () {
-			console.log('redrawDialogWindow');
 			resizeDialog();
 			resizeContent();
-			// $('.Page').removeClass('phone tablet landscape portrait');
 		}, 300);
 	};
 
@@ -158,7 +134,6 @@
 	};
 
 	const resizeContent = function () {
-		debugger;
 		var $body = $('.LayoutPopup__body__content');
 		var contentScrollTop = $body.scrollTop();
 
