@@ -74,18 +74,18 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 	width: 100%;
 }
 
-.MainInteractiveCard .MainInteractiveCard-gradient {
-	background: linear-gradient(180deg, $MainInteractiveCard-color-active 0%, #fff 100%);
-	background-position-y: top;
-	-servicestudio-display: none !important;
-	height: 50px;
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	transition: all 0.5s ease;
-	width: 100%;
-}
+// .MainInteractiveCard .MainInteractiveCard-gradient {
+// 	background: linear-gradient(180deg, $MainInteractiveCard-color-active 0%, #fff 100%);
+// 	background-position-y: top;
+// 	-servicestudio-display: none !important;
+// 	height: 50px;
+// 	left: 0;
+// 	opacity: 0;
+// 	position: absolute;
+// 	top: 0;
+// 	transition: all 0.5s ease;
+// 	width: 100%;
+// }
 
 .MainInteractiveCard-header {
 	display: flex;
@@ -315,9 +315,9 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 	opacity: 1;
 }
 
-.MainInteractiveCard.gradientWhenOpen.isOpen > .MainInteractiveCard-gradient {
-	opacity: 0.2;
-}
+// .MainInteractiveCard.gradientWhenOpen.isOpen > .MainInteractiveCard-gradient {
+// 	opacity: 0.2;
+// }
 
 .MainInteractiveCard.allowOpening > .MainInteractiveCard-header .MainInteractiveCard-header-text {
 	cursor: pointer;
