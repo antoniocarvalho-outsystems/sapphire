@@ -201,6 +201,13 @@ div.SSD_ListLine {
 	&.SSD_ListLine-Iframe > div.LineHeader {
 		position: relative;
 		z-index: 1;
+
+		.ExpandControl {
+			.icon-minus {
+				position: relative;
+				top: 2px;
+			}
+		}
 	}
 
 	&.Disabled > div.LineHeader,
