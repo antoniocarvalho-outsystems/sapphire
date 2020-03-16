@@ -3412,25 +3412,25 @@ html .PatientDetailsLayout {
   line-height: 40px;
 }
 
-.BadgeNotifications {
-  background-color: #ff311c;
-  border-radius: 40px;
-  bottom: 0;
-  box-shadow: 0 0 0 1px #0c262f;
-  color: #fff;
-  font-family: 'globeregular';
-  font-size: 15px;
-  font-weight: bold;
-  height: 22px;
-  left: 7px;
-  line-height: 22px;
-  margin: 0 auto;
-  position: absolute;
-  right: -7px;
-  text-align: center;
-  text-shadow: 0 0 1px #000;
-  top: -16px;
-}
+// .BadgeNotifications {
+//   background-color: #ff311c;
+//   border-radius: 40px;
+//   bottom: 0;
+//   box-shadow: 0 0 0 1px #0c262f;
+//   color: #fff;
+//   font-family: 'globeregular';
+//   font-size: 15px;
+//   font-weight: bold;
+//   height: 22px;
+//   left: 7px;
+//   line-height: 22px;
+//   margin: 0 auto;
+//   position: absolute;
+//   right: -7px;
+//   text-align: center;
+//   text-shadow: 0 0 1px #000;
+//   top: -16px;
+// }
 
 // .SegmentedControl {
 //     margin-bottom: 10px;
@@ -25420,21 +25420,21 @@ div.ForwardableContainer {
 /* 10.3.2 Auxiliar Alignment ****************************/
 /*------------------------------------------------------------*/
 
-.MultiAlignRight,
-.AR .MultiAlignLeft,
-.FA .MultiAlignLeft {
-  text-align: right;
-}
+// .MultiAlignRight,
+// .AR .MultiAlignLeft,
+// .FA .MultiAlignLeft {
+//   text-align: right;
+// }
 
-.MultiAlignLeft,
-.AR .MultiAlignRight,
-.FA .MultiAlignRight {
-  text-align: left;
-}
+// .MultiAlignLeft,
+// .AR .MultiAlignRight,
+// .FA .MultiAlignRight {
+//   text-align: left;
+// }
 
-.MultiAlignCenter {
-  text-align: center;
-}
+// .MultiAlignCenter {
+//   text-align: center;
+// }
 
 /*------------------------------------------------------------*/
 /* 10.3.3 Auxiliar Margins ****************************/

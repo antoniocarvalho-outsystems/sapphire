@@ -24,7 +24,7 @@ $prescriptionRadius: 18px;
 
 .LayoutBlank,
 .LayoutBase,
-.LayouPopup {
+.LayoutPopup {
 	.StatusBadges {
 		@include badges;
 		font-family: $font-family-latin-bold;
@@ -151,7 +151,7 @@ $prescriptionRadius: 18px;
 		border: 1px solid $mid-dark-grey;
 		border-radius: 50%;
 		color: $mid-dark-grey;
-		display: flex;
+		display: inline-flex;
 		font-size: $font-size-heading3;
 		height: 25px;
 		justify-content: center;
