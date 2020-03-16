@@ -1,15 +1,8 @@
 /* Component HorizontalToolbar */
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	const init = () => {
-		$('.MenuItemWrapper.Active')[0].scrollIntoView({
-			behavior: 'auto',
-			block: 'end',
-		});
 
-		var $item = $('.MenuItemWrapper');
-		var initWidth = $('.Toolbar__Items .ListRecords')[0].scrollWidth;
-
-		$('.Toolbar__Items').scroll(function() {
+		$('.Toolbar__Items').scroll(function () {
 			var currentScroll = $('.Toolbar__Items').scrollLeft();
 			var maxScrolll = $('.Toolbar__Items .ListRecords').width() - $('.Toolbar__Items').width();
 
@@ -26,7 +19,7 @@
 			}
 		});
 
-		$('.Toolbar__rightBtn').click(function() {
+		$('.Toolbar__rightBtn').click(function () {
 			var currentScroll = $('.Toolbar__Items').scrollLeft();
 			var maxScrolll = $('.Toolbar__Items .ListRecords').width() - $('.Toolbar__Items').width();
 			var sideWidth = maxScrolll - 50;
@@ -39,7 +32,7 @@
 			}
 		});
 
-		$('.Toolbar__leftBtn').click(function() {
+		$('.Toolbar__leftBtn').click(function () {
 			var currentScroll = $('.Toolbar__Items').scrollLeft();
 			var maxScrolll = $('.Toolbar__Items .ListRecords').width() - $('.Toolbar__Items').width();
 			var sideWidth = maxScrolll - 50;
@@ -53,7 +46,18 @@
 		});
 	};
 
-	const create = () => $(document).ready(() => init());
+	const create = () => {
+		$(document).ready(() => init());
+		$(window).load(() => {
+			$('.MenuItemWrapper.Active')[0].scrollIntoView({
+				behavior: 'auto',
+				block: 'end'
+			});
+		});
+	}
 
-	SapphireWidgets.HorizontalToolbar = { create };
+	SapphireWidgets.HorizontalToolbar = {
+		create
+	};
+
 })(jQuery, window, SapphireWidgets);
