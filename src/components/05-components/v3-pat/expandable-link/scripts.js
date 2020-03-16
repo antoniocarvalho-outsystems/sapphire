@@ -1,5 +1,5 @@
 /* Component ExpandableLink */
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	const create = widgetID => {
 		const $elementWrapper = $(`#${widgetID}`);
 
@@ -13,10 +13,12 @@
 	};
 
 	const bindEvents = widgetID => {
-		$(`#${widgetID}`).click(() => openClose(`#${widgetID}`));
+		$(`#${widgetID} .ExpandableLinkWrapper_Header`).click(() => openClose(`#${widgetID}`));
 	};
 
 	const openClose = elementID => $(elementID).toggleClass('active');
 
-	SapphireWidgets.ExpandableLink = { create };
+	SapphireWidgets.ExpandableLink = {
+		create
+	};
 })(jQuery, window, SapphireWidgets);

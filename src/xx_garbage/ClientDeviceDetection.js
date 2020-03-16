@@ -1,0 +1,1 @@
+// ClientDeviceDetection replacement applied on iframes to avoid being considered "tablet" or "phone".
