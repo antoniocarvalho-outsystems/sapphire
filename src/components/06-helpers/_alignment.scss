@@ -1,0 +1,15 @@
+.MultiAlignRight,
+.AR .MultiAlignLeft,
+.FA .MultiAlignLeft {
+	text-align: right;
+}
+
+.MultiAlignLeft,
+.AR .MultiAlignRight,
+.FA .MultiAlignRight {
+	text-align: left;
+}
+
+.MultiAlignCenter {
+	text-align: center;
+}

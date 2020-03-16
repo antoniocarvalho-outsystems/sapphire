@@ -122,19 +122,6 @@ input {
 	}
 }
 
-textarea {
-	@include component-scroll-root;
-
-	height: auto;
-	min-height: 36px;
-	resize: none;
-
-	&.Not_Valid,
-	&.Not_Valid:focus {
-		padding: 0 10px;
-	}
-}
-
 select,
 textarea,
 input[type='text'] {
@@ -216,6 +203,15 @@ input[type='text'] {
 		height: 26px;
 		min-height: 26px;
 	}
+}
+
+textarea {
+	@include component-scroll-root;
+
+	height: auto;
+	min-height: 64px;
+	padding: 10px;
+	resize: none;
 }
 
 .AR,
