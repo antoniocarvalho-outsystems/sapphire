@@ -1,48 +1,45 @@
-.DropdownMenu .PH>a {
-  color: $sapphire-color-text-regular;
-  font-family: $font-family-latin-bold;
-}
-
-.DropdownMenu .PH>a:hover {
-  background-color: $regular-eta;
-  color: $regular-beta;
-}
-
-.DropdownMenu .PH>span a {
-  display: block;
-  line-height: 32px;
-  padding-left: 10px;
-  padding-right: 10px;
-  white-space: nowrap;
-}
-
 .DropdownMenu {
-  background-color: #fff;
-  top: 100%;
-  z-index: 2;
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.24);
+	display: none;
+	left: 0;
+	min-width: 150px;
+	position: absolute;
+	text-align: left;
+	top: 100%;
+	z-index: 2;
+
+	.open & {
+		display: block;
+	}
+
+	.PH > a {
+		color: $sapphire-color-text-regular;
+		display: block;
+		font-family: $font-family-latin-regular;
+		line-height: 32px;
+		padding: 0 10px;
+		white-space: nowrap;
+
+		&:hover {
+			background-color: $regular-eta;
+			color: $regular-beta;
+		}
+	}
+
+	.PH > span a {
+		display: block;
+		line-height: 32px;
+		padding-left: 10px;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
 }
-
-// .desktop .DropdownMenu a,
-// .tablet .DropdownMenu a,
-// .phone .DropdownMenu a {
-//   color: $sapphire-color-text-regular;
-//   font-size: 14px;
-//   font-weight: 400;
-// }
-
-// .desktop .DropdownMenu a:hover,
-// .desktop .DropdownMenu a:focus,
-// .tablet .DropdownMenu a:hover,
-// .tablet .DropdownMenu a:focus,
-// .phone .DropdownMenu a:hover,
-// .phone .DropdownMenu a:focus {
-//   color: $regular-beta;
-//   font-size: 14px;
-//   font-weight: 400;
-// }
 
 .FA .DropdownMenu,
 .AR .DropdownMenu {
-  left: auto;
-  right: 0;
+	left: auto;
+	right: 0;
 }
