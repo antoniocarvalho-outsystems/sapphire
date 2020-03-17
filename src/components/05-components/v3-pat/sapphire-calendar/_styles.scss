@@ -1,9 +1,19 @@
 @mixin common-sapphire-weekdays-style {
+	// border: 1px solid $light-grey;
+	// border-radius: 2px;
+	// //min-width: 300px;
+	// padding: 10px;
+	// text-align: center;
+	// z-index: 1;
+	background-color: $sapphire-white;
 	border: 1px solid $light-grey;
 	border-radius: 2px;
-	min-width: 300px;
+	color: $light-grey;
+	display: inline-block;
+	margin: -1px 0 0 -1px;
 	padding: 10px;
 	text-align: center;
+	width: 14.2%;
 	z-index: 1;
 }
 
@@ -87,7 +97,7 @@
 	}
 
 	&__weekDays {
-		border-bottom: 1px solid $light-grey;
+		//border-bottom: 1px solid $light-grey;
 	}
 
 	&___weekDay {
@@ -146,24 +156,28 @@
 		.Calendar_EmptyWeekendDay {
 			@include common-sapphire-weekdays-style;
 
-			height: 100px;
-			margin: 2px;
-			width: 100px;
+			// height: 100px;
+			// margin: 2px;
+			// width: 100px;
 		}
 
 		.Calendar_EmptyDay {
 			@include common-sapphire-weekdays-style;
+			border: none;
 		}
 	}
 
 	&__daysNumber {
 		@include common-sapphire-weekdays-style;
-
+		span {
+			color: $regular-beta !important;
+		}
 		.arrowLeft.green {
 			border: none;
 			height: unset;
 			left: unset;
 			position: unset;
+			position: absolute;
 			top: unset;
 			width: unset;
 
@@ -189,6 +203,16 @@
 			height: 44px;
 			width: 65px;
 		}
+
+		&.CalendarWidget__Selected {
+			background-color: $regular-alpha !important;
+			border: none !important;
+			a,
+			span {
+				background-color: $regular-alpha;
+				color: $sapphire-white !important;
+			}
+		}
 	}
 
 	&_Today {
@@ -202,6 +226,10 @@
 
 	> div {
 		width: 100%;
+	}
+
+	.ListRecords {
+		text-align: left;
 	}
 }
 

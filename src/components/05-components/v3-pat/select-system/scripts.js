@@ -1,6 +1,6 @@
 /* Component SelectSystem */
 SapphireWidgets.SelectSystem = config => {
-	$(function() {
+	$(function () {
 		var WidgetId = config.WidgetId; //Combo Box Id to be used.
 		var Class = config.Class; //All Combo boxes with this class will be be transformed.
 		var NoResultsText = config.NoResultsText; //Text to display when there are no results.
@@ -40,20 +40,20 @@ SapphireWidgets.SelectSystem = config => {
 				'select2/dropdown/search',
 				'select2/dropdown/minimumResultsForSearch',
 			],
-			function(Utils, Dropdown, AttachBody, AttachContainer, Search, minimumResultsForSearch) {
+			function (Utils, Dropdown, AttachBody, AttachContainer, Search, minimumResultsForSearch) {
 				let dropdownSearch = Utils.Decorate(Dropdown, Search);
-				dropdownSearch.prototype.render = function() {
+				dropdownSearch.prototype.render = function () {
 					var $rendered = Dropdown.prototype.render.call(this);
 					// Add ability for a placeholder in the search box
 					let placeholder = this.options.get('placeholderForSearch') || '';
 					var $search = $(
 						'<span class="select2-search select2-search--dropdown">' +
-							'<input class="select2-search__field" placeholder="' +
-							placeholder +
-							'" type="search"' +
-							' tabindex="-1" autocomplete="off" autocorrect="off" autocapitalize="off"' +
-							' spellcheck="false" role="textbox" />' +
-							'</span>'
+						'<input class="select2-search__field" placeholder="' +
+						placeholder +
+						'" type="search"' +
+						' tabindex="-1" autocomplete="off" autocorrect="off" autocapitalize="off"' +
+						' spellcheck="false" role="textbox" />' +
+						'</span>'
 					);
 
 					this.$searchContainer = $search;
@@ -85,7 +85,7 @@ SapphireWidgets.SelectSystem = config => {
 
 		//  Select2Options.dropdownParent= $('#'+ParentDiv);
 
-		var formatResult = function(result) {
+		var formatResult = function (result) {
 			var $selectedOptionsValue = $WidgetIdentifier.find(':selected');
 			var selectedOptions = $selectedOptionsValue.length;
 			var totalOptions = $WidgetIdentifier.find('option').length;
@@ -98,7 +98,7 @@ SapphireWidgets.SelectSystem = config => {
 				if (totalOptions - 1 > 3) {
 					return 'All Selected';
 				} else {
-					$allOptExceptAllObj.each(function() {
+					$allOptExceptAllObj.each(function () {
 						activeValues = activeValues + ' ' + $(this)[0].innerText;
 					});
 					activeValues = activeValues.replace(/,\s*$/, '');
@@ -110,7 +110,7 @@ SapphireWidgets.SelectSystem = config => {
 					return selectedOptions + ' of ' + totalopt + ' selected';
 				} else {
 					if (selectedOptions > 0) {
-						$selectedOptionsValue.each(function() {
+						$selectedOptionsValue.each(function () {
 							activeValues = activeValues + ' ' + $(this)[0].innerText + ', ';
 						});
 						activeValues = activeValues.replace(/,\s*$/, '');
@@ -123,7 +123,7 @@ SapphireWidgets.SelectSystem = config => {
 		};
 
 		if (NoResultsText != '') {
-			Select2Options.formatNoMatches = function() {
+			Select2Options.formatNoMatches = function () {
 				return NoResultsText;
 			};
 		}
@@ -155,10 +155,10 @@ SapphireWidgets.SelectSystem = config => {
 			/* Select2Options.containerCssClass=':all';*/
 
 			Select2Options.allowClear = false;
-			Select2Options.templateSelection = function(repo) {
+			Select2Options.templateSelection = function (repo) {
 				return repo.full_name || repo.text;
 			};
-			Select2Options.templateResult = function(repo) {
+			Select2Options.templateResult = function (repo) {
 				if (repo.loading) {
 					return repo.text;
 				}
@@ -174,21 +174,21 @@ SapphireWidgets.SelectSystem = config => {
 				url: AjaxURL,
 				dataType: 'json',
 				delay: AjaxDelay,
-				data: function(params) {
+				data: function (params) {
 					var Select2AjaxOpt = {};
 					var SplitParameter = SearchExtraParam1.split(',');
 					Select2AjaxOpt.SearchTerm = params.term;
 					Select2AjaxOpt.Page = params.page || 1;
 					Select2AjaxOpt.PageAmount = AmountPage;
 
-					SplitParameter.forEach(function(el) {
+					SplitParameter.forEach(function (el) {
 						var splitText = el.split(':');
 						Select2AjaxOpt[splitText[0]] = splitText[1];
 					});
 
 					return Select2AjaxOpt;
 				},
-				processResults: function(data, params) {
+				processResults: function (data, params) {
 					params.page = params.page || 1;
 					return {
 						results: data.items,
@@ -199,11 +199,11 @@ SapphireWidgets.SelectSystem = config => {
 				},
 				cache: true,
 			}),
-				(Select2Options.minimumInputLength = MinimumInputLenght);
-			Select2Options.escapeMarkup = function(markup) {
+			(Select2Options.minimumInputLength = MinimumInputLenght);
+			Select2Options.escapeMarkup = function (markup) {
 				return markup;
 			};
-			if (config.isMultiple != '') {
+			if (config.isMultiple) {
 				Select2Options.multiple = true;
 				Select2Options.containerCssClass = 'Select2Ajax Multiple';
 				Select2Options.dropdownCssClass = 'Select2Ajax Multiple';
@@ -216,6 +216,7 @@ SapphireWidgets.SelectSystem = config => {
 			Select2Options.minimumResultsForSearch = 0;
 			Select2Options.tags = true;
 			Select2Options.closeOnselect = true;
+			Select2Options.placeholder = Prompt;
 		}
 
 		if (Select2Type === '2') {
@@ -251,7 +252,7 @@ SapphireWidgets.SelectSystem = config => {
 			// Select2 HtmlOptions
 			Select2Options = {};
 			var dataHtmlOption = [];
-			$WidgetIdentifier.find('option').each(function(key, value) {
+			$WidgetIdentifier.find('option').each(function (key, value) {
 				var optionObject = {
 					id: $(this).val(),
 					text: $(this).text(),
@@ -263,7 +264,7 @@ SapphireWidgets.SelectSystem = config => {
 			Select2Options.containerCssClass = 'customSelect';
 			Select2Options.dropdownCssClass = 'dropdownCustom';
 			Select2Options.data = dataHtmlOption;
-			Select2Options.escapeMarkup = function(markup) {
+			Select2Options.escapeMarkup = function (markup) {
 				return markup;
 			};
 
@@ -280,9 +281,9 @@ SapphireWidgets.SelectSystem = config => {
 			Select2Options.containerCssClass = 'tagCustom';
 			Select2Options.dropdownCssClass = 'tagCustom';
 			Select2Options.TokenSeparatos = [',', ' '];
-			Select2Options.createSearchChoice = function(term, data) {
+			Select2Options.createSearchChoice = function (term, data) {
 				if (
-					$(data).filter(function() {
+					$(data).filter(function () {
 						return this.text.localeCompare(term) === 0;
 					}).length === 0
 				) {
@@ -299,7 +300,7 @@ SapphireWidgets.SelectSystem = config => {
 			Select2Options.tags = true;
 			Select2Options.containerCssClass = 'tagSystem';
 			Select2Options.dropdownCssClass = 'tagSystem';
-			Select2Options.createTag = function(params) {
+			Select2Options.createTag = function (params) {
 				var term = $.trim(params.term);
 				if (term === '') {
 					return null;
@@ -319,23 +320,23 @@ SapphireWidgets.SelectSystem = config => {
 		if (OnUnSelectingJS != '' || OnSelectingJS != '') {
 			$WidgetIdentifier
 				.select2(Select2Options)
-				.on('select2:unselecting', function(e) {
+				.on('select2:unselecting', function (e) {
 					$(this).data('unselecting', true);
 					OnUnSelectingJS;
 				})
-				.on('select:selecting', function(e) {
+				.on('select:selecting', function (e) {
 					OnSelectingJS;
 				})
-				.on('select:opening', function(e) {
+				.on('select:opening', function (e) {
 					if ($(this).data('unselecting')) {
 						$(this).removeData('unselecting');
 						e.preventDefault();
 					}
 				})
-				.on('select:open', function(evt) {
+				.on('select:open', function (evt) {
 					evt.preventDefault();
 				})
-				.on('select2:close', function(evt) {
+				.on('select2:close', function (evt) {
 					evt.preventDefault();
 				});
 		} else {
@@ -343,12 +344,12 @@ SapphireWidgets.SelectSystem = config => {
 				$WidgetIdentifier.select2(Select2Options);
 				var idwidget = '#' + WidgetId;
 
-				$WidgetIdentifier.on('select2:select', function(e) {
+				$WidgetIdentifier.on('select2:select', function (e) {
 					UnselectedId = e.params.data.id;
 					if (UnselectedId === 'All') {
 						var selectedItems = [];
 						var allOptions = $(idwidget + ' option');
-						allOptions.each(function() {
+						allOptions.each(function () {
 							selectedItems.push($(this).val());
 						});
 						$WidgetIdentifier.select2('destroy');
@@ -361,7 +362,7 @@ SapphireWidgets.SelectSystem = config => {
 						if (selectedOptions === totalOptions - 1 && $(idwidget + ' >  option:selected:first-child').length === 0) {
 							var selectedItems = [];
 							var allOptions = $(idwidget + ' option');
-							allOptions.each(function() {
+							allOptions.each(function () {
 								selectedItems.push($(this).val());
 							});
 							$WidgetIdentifier.select2('destroy');
@@ -372,7 +373,7 @@ SapphireWidgets.SelectSystem = config => {
 					}
 				});
 
-				$WidgetIdentifier.on('select2:unselect', function(e) {
+				$WidgetIdentifier.on('select2:unselect', function (e) {
 					UnselectedId = e.params.data.id;
 					if (UnselectedId === 'All') {
 						$(idwidget + ' > option').removeAttr('selected');
