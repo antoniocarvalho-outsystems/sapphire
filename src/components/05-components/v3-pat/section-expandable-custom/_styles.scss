@@ -8,6 +8,11 @@
       height: 0;
       overflow: hidden;
     }
+
+    .SectionExpandable-toggler {
+      display: none;
+    }
+
   }
 
   &.expanded {
@@ -23,6 +28,7 @@
       transform: rotate(0deg);
       transition: all 0.5s;
     }
+
   }
 
   &--backgroundTransparent {
