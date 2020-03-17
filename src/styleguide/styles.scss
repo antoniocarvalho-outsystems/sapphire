@@ -42,7 +42,7 @@ $styleguide-main-content-padding: 50px;
 		position: fixed;
 		width: 220px;
 
-		input {
+		input[type='text'] {
 			height: $styleguide-menu-item-height;
 			line-height: $styleguide-menu-item-height;
 			margin: 0;
@@ -74,7 +74,9 @@ $styleguide-main-content-padding: 50px;
 	&__MenuSection {
 		margin-bottom: 25px;
 
-		a {
+		a,
+		a:link,
+		a:visited {
 			@include styleguide-menu-item-style;
 		}
 	}
@@ -96,7 +98,9 @@ $styleguide-main-content-padding: 50px;
 			}
 		}
 
-		a {
+		a,
+		a:link,
+		a:visited {
 			margin: 0 -20px;
 			padding: 0 30px;
 		}
@@ -169,6 +173,7 @@ $styleguide-main-content-padding: 50px;
 	}
 
 	&__Content {
+		background-color: $regular-white;
 		padding: $styleguide-main-content-padding;
 	}
 
@@ -236,12 +241,24 @@ $styleguide-main-content-padding: 50px;
 			padding-top: 45px;
 
 			.SectionExpandable_headerCustom {
-				height: 40px;
+				max-height: 40px;
 
 				.PlaceHolderTitle {
 					font-family: $font-family-latin-regular;
 					font-size: 1em;
 				}
+			}
+		}
+
+		&--aboutWebBlock {
+			@extend .DesignSystem__DefaultSection;
+
+			align-items: center;
+
+			.icon {
+				color: $light-grey;
+				font-size: 3em;
+				padding-top: 4px;
 			}
 		}
 	}

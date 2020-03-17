@@ -1,72 +1,77 @@
-.ButtonDropdown_button.Button {
-  background-color: #fff;
-  background-repeat: no-repeat;
-  border: solid 1px $light-grey;
-  border-radius: 2px;
-  color: $sapphire-color-text-regular;
-  font-size: 14px;
-  height: 34px;
-  line-height: 20px;
-  padding: 5px 36px 5px 5px;
-  width: 100%;
+.ButtonDropdown {
+	cursor: pointer;
+	position: relative;
+	width: fit-content;
+
+	&.open {
+		.ButtonDropdown {
+			&_button.Button {
+				background-color: $regular-eta;
+				border: 1px solid $regular-alpha;
+				border-bottom-width: 1px;
+			}
+
+			&_icon span {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	&_button.Button {
+		@include flex-center-vertically;
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 2px;
+		color: $sapphire-color-text-regular;
+		height: 36px;
+		padding: 0 0 0 10px;
+		width: 100%;
+
+		&:hover {
+			background-color: $regular-eta;
+			box-shadow: none;
+		}
+
+		&:active {
+			border: 1px solid $regular-alpha;
+		}
+	}
+
+	&_text {
+		font-family: $font-family-latin-bold;
+	}
+
+	&_icon {
+		@include flex-center-total;
+
+		background-color: transparent;
+		border-left: 1px solid $light-grey;
+		color: $regular-alpha;
+		height: 100%;
+		margin-left: 10px;
+		width: 35px;
+
+		span {
+			transition: all 500ms ease;
+		}
+	}
 }
 
-.ButtonDropdown_button.Button:hover {
-  background-color: $regular-eta;
-  box-shadow: none;
-}
+.AR,
+.FA {
+	.ButtonDropdown {
+		&_button.Button {
+			margin: 0;
+			padding-left: 0;
+			padding-right: 10px;
+		}
 
-.ButtonDropdown_button.Button .ButtonDropdown_icon {
-  background-color: transparent;
-  border-left: 1px solid $light-grey;
-  color: $regular-alpha;
-  height: auto;
-}
-
-.ButtonDropdown.open .ButtonDropdown_button.Button {
-  background-color: $regular-eta;
-  border-bottom-width: 1px;
-}
-
-.ButtonDropdown.open .ButtonDropdown_button.Button .ButtonDropdown_icon {
-  background-color: transparent;
-}
-
-.ButtonDropdown_button.Button {
-  padding-right: 0;
-}
-
-.ButtonDropdown_icon {
-  background-color: #fff;
-  height: 29px;
-  margin-left: 10px;
-  width: 30px;
-}
-
-.phone .ButtonDropdown_icon,
-.tablet .ButtonDropdown_icon {
-  height: 35px;
-}
-
-.ButtonDropdown_button.Button:hover .ButtonDropdown_icon {
-  background-color: transparent;
-  transition: all 100ms ease;
-}
-
-
-.AR .ButtonDropdown_button.Button .ButtonDropdown_icon,
-.FA .ButtonDropdown_button.Button .ButtonDropdown_icon {
-  border-left: none;
-  border-right: 1px solid $light-grey;
-}
-
-.phone .ButtonDropdown_button.Button,
-.tablet .ButtonDropdown_button.Button {
-  line-height: 22px;
-}
-
-.FA .ButtonDropdown_button.Button,
-.AR .ButtonDropdown_button.Button {
-  margin-left: 0;
-  padding-top: 5px;
+		&_icon {
+			border-left: none;
+			border-right: 1px solid $light-grey;
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
 }
