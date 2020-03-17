@@ -5,8 +5,7 @@ $PatientHeaderActions-color-active: $regular-alpha;
 }
 
 .PatientHeaderActions_menuItem {
-	background-color: #fff;
-	border: 1px solid #c8d8dc;
+	background-color: $body-color;
 	border-radius: 2px;
 	font-size: 15px;
 	min-height: 47px;
@@ -58,9 +57,7 @@ $PatientHeaderActions-color-active: $regular-alpha;
 	width: 36px;
 }
 
-.PatientHeaderActions_menuItem.NoBorder
-	.PatientHeaderActions__actions:hover
-	.icon {
+.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover .icon {
 	color: $PatientHeaderActions-color-active;
 }
 
