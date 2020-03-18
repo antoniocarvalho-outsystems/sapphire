@@ -8,6 +8,7 @@
       this.$input = this.$widget.find('input[type]');
       this.$clear = this.$widget.find('.InputWithClear-clear');
       this.$notifyLink = this.$widget.find('.InputWithClear-notify-link');
+      this.$widgetShield = this.$widget.find('.InputWithClear--shield');
       this.onInit();
     }
 
@@ -18,13 +19,19 @@
       this.$input.on('blur', () => {
         if (this.$input.val() === '') {
           this.$clear.hide();
+          this.$notifyLink.trigger('click');
         };
       });
       this.$clear.on('click', () => {
-        this.$clear.hide();
         this.$input.val('');
+        this.$clear.hide();
         this.$notifyLink.trigger('click');
       });
+      if (this.config.hasShield) {
+        window.setTimeout(function () {
+          $widgetShield.hide();
+        }, this.config.shieldTimeout);
+      }
     }
   }
 
