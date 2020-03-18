@@ -183,8 +183,8 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 
 .MainInteractiveCard-header-text-title {
 	color: $MainInteractiveCard-color-text-regular;
-	font-size: 1.5em;
-	line-height: 1.5;
+	font-size: 1.143em;
+	line-height: 1.8;
 	max-width: 99%;
 }
 
@@ -212,7 +212,7 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 
 .MainInteractiveCard-header-text-caption {
 	color: $MainInteractiveCard-color-caption;
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 .MainInteractiveCard-header-actions {
@@ -267,7 +267,7 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 .MainInteractiveCard-header-actions > a,
 .MainInteractiveCard-header-actions > span,
 .MainInteractiveCard-header-actions > div {
-	display: inline-block;
+	//display: inline-block;
 	margin: 0;
 	vertical-align: middle;
 
@@ -275,15 +275,21 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 		position: relative;
 		top: 2px;
 	}
+
+	&:last-child {
+		div.iconHorizontal.OSInline {
+			margin-right: 0;
+		}
+	}
 }
 
 .MainInteractiveCard-header-actions div.iconHorizontal.OSInline,
 .MainInteractiveCard-header-actions a.Button.Small,
+.MainInteractiveCard-header-actions a.ButtonLink,
 .MainInteractiveCard-header-actions div.PatientHeaderActions,
 .MainInteractiveCard-header-actions a.ButtonSquare span.icon,
 .MainInteractiveCard-header-actions > div.OSInline {
-	//display: inline-block;
-	//margin: 0 8px;
+	margin: 0 6px;
 	vertical-align: middle;
 }
 

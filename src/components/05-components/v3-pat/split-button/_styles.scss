@@ -1,0 +1,96 @@
+.SplitButton {
+	&.hasTrigger {
+		display: inline-flex;
+		height: 36px;
+
+		.SplitButton {
+			&-button {
+				.Button {
+					border-bottom-right-radius: 0;
+					border-top-right-radius: 0;
+				}
+			}
+
+			&-trigger {
+				border-bottom-left-radius: 0;
+				border-left: 1px solid $regular-white;
+				border-top-left-radius: 0;
+				display: inline-block;
+				min-width: 45px;
+				padding: 0;
+				position: relative;
+
+				&:before {
+					content: '\e610';
+					font-family: $font-family-icons;
+					font-size: 0.7em;
+					left: 48%;
+					position: absolute;
+					top: 53%;
+					transform: translate(-55%, -45%);
+				}
+			}
+		}
+	}
+
+	&-trigger {
+		display: none;
+	}
+
+	&-actions {
+		a,
+		a:link,
+		a:visited {
+			color: $sapphire-color-text-regular;
+			display: block;
+			font-family: $font-family-latin-regular;
+			line-height: 32px;
+			padding: 0 10px;
+			white-space: nowrap;
+
+			&:hover {
+				background-color: $regular-eta;
+				color: $regular-beta;
+			}
+		}
+	}
+}
+
+// Tooltipster Adjustments
+.tooltipster-base.tooltipster-splitbutton {
+	background-color: $regular-white;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.24);
+	font-size: 1rem;
+	line-height: normal;
+
+	&.Padding-None .tooltipster-content {
+		padding: 0;
+	}
+
+	&.Padding-XSmall .tooltipster-content {
+		padding: 3px;
+	}
+
+	&.Padding-Small .tooltipster-content {
+		padding: 6px;
+	}
+
+	&.Padding-Medium .tooltipster-content {
+		padding: 10px;
+	}
+
+	&.Padding-Large .tooltipster-content {
+		padding: 16px;
+	}
+
+	&.Padding-XLarge .tooltipster-content {
+		padding: 26px;
+	}
+
+	.tooltipster-arrow {
+		span {
+			display: none;
+		}
+	}
+}

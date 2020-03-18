@@ -1,13 +1,49 @@
-.InlineDropdown .InlineDropdown_text {
-  color: $regular-beta;
-  font-weight: 700;
+.InlineDropdown {
+	cursor: pointer;
+	height: fit-content;
+	position: relative;
+	width: fit-content;
+
+	&.open,
+	&:hover {
+		.InlineDropdown {
+			&_icon {
+				background-color: $sapphire-light;
+			}
+		}
+	}
+
+	&:focus {
+		.InlineDropdown {
+			&_text {
+				border-bottom: 1px solid $dark-grey;
+			}
+		}
+	}
+
+	&_text {
+		color: $regular-beta;
+		font-family: $font-family-latin-bold;
+	}
+
+	&_icon {
+		@include flex-center-total;
+
+		border-radius: 50%;
+		color: $regular-beta;
+		display: inline-flex;
+		height: 18px;
+		margin: 1px 0 0 5px;
+		transition: all 500ms ease;
+		width: 18px;
+	}
 }
 
-.InlineDropdown .InlineDropdown_icon {
-  color: $regular-beta;
-}
-
-.FA .InlineDropdown+.InlineDropdown,
-.AR .InlineDropdown+.InlineDropdown {
-  margin-left: 20px;
+.AR,
+.FA {
+	.InlineDropdown {
+		&_icon {
+			margin: 1px 5px 0 0;
+		}
+	}
 }
