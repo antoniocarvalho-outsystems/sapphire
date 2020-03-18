@@ -220,6 +220,29 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 	pointer-events: all;
 	text-align: right;
 	white-space: nowrap;
+
+	a {
+		&:nth-child(odd) {
+			margin-right: 10px;
+		}
+		&:nth-child(even) {
+			margin-left: 10px;
+		}
+
+		&:first-child {
+			margin-right: 0;
+		}
+		&:nth-child(2) {
+			margin: 0 10px;
+		}
+	}
+
+	// a:nth-child(odd) {
+	// 	margin-right: 10px;
+	// }
+	// a:nth-child(even) {
+	// 	margin-left: 10px;
+	// }
 }
 
 .GenericGallery-item .MainInteractiveCard-header-actions {
