@@ -165,16 +165,16 @@
 				var $toggler = $(this).find('> .SectionExpandable_headerCustom .SectionExpandable-toggler');
 				if ($toggler.length === 1) {
 					var $togglerState = false;
-					$toggler.text($toggler.data('labelshow'));
+					$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));
 					$toggler.off('click').on('click', function (evt) {
 						evt.stopPropagation();
 						$togglerState = !$togglerState;
 						if ($togglerState) {
 							$expandableInstance.find('.SectionExpandable-toggled').show();
-							$toggler.text($toggler.data('labelhide'));
+							$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelhide]').data('labelhide'));
 						} else {
 							$expandableInstance.find('.SectionExpandable-toggled').hide();
-							$toggler.text($toggler.data('labelshow'));
+							$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));
 						}
 					});
 				}
