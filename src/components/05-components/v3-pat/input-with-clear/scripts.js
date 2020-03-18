@@ -18,8 +18,13 @@
       });
       this.$input.on('blur', () => {
         if (this.$input.val() === '') {
-          this.$clear.hide();
-          this.$notifyLink.trigger('click');
+          window.setTimeout(() => {
+            if ($('.daterangepicker:visible').length === 1) {
+              return false;
+            }
+            this.$clear.hide();
+            this.$notifyLink.trigger('click');
+          }, 100);
         };
       });
       this.$clear.on('click', () => {
@@ -28,9 +33,14 @@
         this.$notifyLink.trigger('click');
       });
       if (this.config.hasShield) {
-        window.setTimeout(function () {
-          $widgetShield.hide();
+        window.setTimeout(() => {
+          this.$widgetShield.hide();
         }, this.config.shieldTimeout);
+        if (this.config.shieldTimeout > 0) {
+          this.$widgetShield.on('click', () => {
+            this.$clear.hide();
+          });
+        }
       }
     }
   }
