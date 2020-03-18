@@ -7,71 +7,71 @@ $MainInteractiveCard-color-subtitle: $mid-dark-grey;
 $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 
 .MainInteractiveCard-iframe-actions {
-	margin-bottom: 30px;
-	padding-top: 3px;
-	text-align: right;
+  margin-bottom: 30px;
+  padding-top: 3px;
+  text-align: right;
 }
 
 .AR .MainInteractiveCard-iframe-actions {
-	text-align: left;
+  text-align: left;
 }
 
 .MainInteractiveCard-iframe-actions.xsmallHeader {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .MainInteractiveCard-iframe-actions.smallHeader {
-	margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .MainInteractiveCard-iframe-actions.mediumHeader {
-	margin-bottom: 85px;
+  margin-bottom: 85px;
 }
 
-.MainInteractiveCard-iframe-actions > a,
-.MainInteractiveCard-iframe-actions > span,
-.MainInteractiveCard-iframe-actions > div {
-	display: inline-block;
-	margin: 0;
-	vertical-align: middle;
+.MainInteractiveCard-iframe-actions>a,
+.MainInteractiveCard-iframe-actions>span,
+.MainInteractiveCard-iframe-actions>div {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
 }
 
 .MainInteractiveCard-iframe-actions div.iconHorizontal.OSInline,
 .MainInteractiveCard-iframe-actions a.Button.Small,
 .MainInteractiveCard-iframe-actions a.ButtonLink,
 .MainInteractiveCard-iframe-actions a.ButtonSquare span.icon {
-	//display: inline-block;
-	margin: 0 8px;
-	vertical-align: middle;
+  //display: inline-block;
+  margin: 0 8px;
+  vertical-align: middle;
 }
 
 .MainInteractiveCard {
-	background-color: $MainInteractiveCard-color-disabled-background;
-	border: 1px solid $MainInteractiveCard-color-disabled;
-	padding: 10px 12px;
-	position: relative;
+  background-color: $MainInteractiveCard-color-disabled-background;
+  border: 1px solid $MainInteractiveCard-color-disabled;
+  padding: 10px 12px;
+  position: relative;
 }
 
 .MainInteractiveCard.isEnabled {
-	background-color: #fff;
-	border-color: $MainInteractiveCard-color-active;
-	margin-top: -1px;
+  background-color: #fff;
+  border-color: $MainInteractiveCard-color-active;
+  margin-top: -1px;
 }
 
 .MainInteractiveCard.isOpen {
-	margin-top: -1px;
+  margin-top: -1px;
 }
 
 .MainInteractiveCard:before {
-	background: $MainInteractiveCard-color-active;
-	content: '';
-	height: 3px;
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	transition: all 0.5s ease;
-	width: 100%;
+  background: $MainInteractiveCard-color-active;
+  content: '';
+  height: 3px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease;
+  width: 100%;
 }
 
 // .MainInteractiveCard .MainInteractiveCard-gradient {
@@ -88,350 +88,355 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 // }
 
 .MainInteractiveCard-header {
-	display: flex;
-	flex-direction: row;
-	pointer-events: none;
-	position: relative;
+  display: flex;
+  flex-direction: row;
+  pointer-events: none;
+  position: relative;
 }
 
 .MainInteractiveCard--ellipsis {
-	display: inline-block;
-	max-width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
-	padding-left: 30px;
+.MainInteractiveCard.isSelectable>.MainInteractiveCard-header {
+  padding-left: 30px;
 }
 
-.AR .MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
-	padding-left: 0;
-	padding-right: 30px;
+.AR .MainInteractiveCard.isSelectable>.MainInteractiveCard-header {
+  padding-left: 0;
+  padding-right: 30px;
 }
 
-.MainInteractiveCard.isOpen > .MainInteractiveCard-header {
-	padding-bottom: 10px;
+.MainInteractiveCard.isOpen>.MainInteractiveCard-header {
+  padding-bottom: 10px;
 }
 
-.MainInteractiveCard.isOpen.XSmallHeader > .MainInteractiveCard-header {
-	height: 45px;
+.MainInteractiveCard.isOpen.XSmallHeader>.MainInteractiveCard-header {
+  height: 45px;
 }
 
-.MainInteractiveCard.isOpen.SmallHeader > .MainInteractiveCard-header {
-	height: 60px;
+.MainInteractiveCard.isOpen.SmallHeader>.MainInteractiveCard-header {
+  height: 60px;
 }
 
-.MainInteractiveCard.isOpen.MediumHeader > .MainInteractiveCard-header {
-	height: 85px;
+.MainInteractiveCard.isOpen.MediumHeader>.MainInteractiveCard-header {
+  height: 85px;
 }
 
-.MainInteractiveCard.isOpen.NoneHeader > .MainInteractiveCard-header {
-	height: auto;
+.MainInteractiveCard.isOpen.NoneHeader>.MainInteractiveCard-header {
+  height: auto;
 }
 
 .MainInteractiveCard-header-triggerAction-placeholder {
-	height: 5px;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 5px;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 5px;
 }
 
 .MainInteractiveCard-header-selectable {
-	left: 0;
-	position: absolute;
-	top: 4px;
+  left: 0;
+  position: absolute;
+  top: 4px;
 }
 
 .AR .MainInteractiveCard-header-selectable {
-	left: auto;
-	right: 4px;
+  left: auto;
+  right: 4px;
 }
 
 .MainInteractiveCard-header-selectable.icon-disabled span.icon {
-	color: $MainInteractiveCard-color-disabled;
+  color: $MainInteractiveCard-color-disabled;
 }
 
 .MainInteractiveCard-header-selectable-trigger {
-	color: $MainInteractiveCard-color-active;
-	cursor: pointer;
-	display: block;
-	pointer-events: all;
+  color: $MainInteractiveCard-color-active;
+  cursor: pointer;
+  display: block;
+  pointer-events: all;
 }
 
 .MainInteractiveCard-header-selectable-trigger span.icon {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .MainInteractiveCard-header-selectable-placeholder a {
-	display: none;
-	pointer-events: all;
+  display: none;
+  pointer-events: all;
 }
 
 .MainInteractiveCard-header-text {
-	cursor: auto;
-	flex-grow: 2;
-	pointer-events: all;
-	z-index: 1;
+  cursor: auto;
+  flex-grow: 2;
+  pointer-events: all;
+  z-index: 1;
 }
 
 .MainInteractiveCard.isOpen .MainInteractiveCard-header-text {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .MainInteractiveCard-header-text-title {
-	color: $MainInteractiveCard-color-text-regular;
-	font-size: 1.5em;
-	line-height: 1.5;
-	max-width: 99%;
+  color: $MainInteractiveCard-color-text-regular;
+  font-size: 1.5em;
+  line-height: 1.5;
+  max-width: 99%;
 }
 
 .MainInteractiveCard-header-text-title .OSInline {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
-.MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text {
-	max-width: 70%;
+.MainInteractiveCard.hasFloater.isOpen>.MainInteractiveCard-header .MainInteractiveCard-header-text {
+  max-width: 70%;
 }
 
-.MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
-	max-height: 32px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	width: 100%;
+.MainInteractiveCard.hasFloater.isOpen>.MainInteractiveCard-header .MainInteractiveCard-header-text-title {
+  max-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .MainInteractiveCard-header-text-subtitle {
-	color: $MainInteractiveCard-color-subtitle;
-	font-size: 1.2em;
-	line-height: 20px;
+  color: $MainInteractiveCard-color-subtitle;
+  font-size: 1.2em;
+  line-height: 20px;
 }
 
 .MainInteractiveCard-header-text-caption {
-	color: $MainInteractiveCard-color-caption;
-	font-size: 1.1em;
+  color: $MainInteractiveCard-color-caption;
+  font-size: 1.1em;
 }
 
 .MainInteractiveCard-header-actions {
-	margin-left: 40px;
-	pointer-events: all;
-	text-align: right;
-	white-space: nowrap;
+  margin-left: 40px;
+  pointer-events: all;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .GenericGallery-item .MainInteractiveCard-header-actions {
-	margin-left: -10px;
+  margin-left: -10px;
 }
 
 .AR .MainInteractiveCard-header-actions {
-	margin-left: 0;
-	margin-right: 40px;
-	text-align: left;
+  margin-left: 0;
+  margin-right: 40px;
+  text-align: left;
 }
 
 .MainInteractiveCard-header-actions .OSInline {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .MainInteractiveCard-header-actions label[for] {
-	font-size: 1.1em;
-	line-height: 1.1em;
+  font-size: 1.1em;
+  line-height: 1.1em;
 }
 
-.MainInteractiveCard-header-actions > a,
-.MainInteractiveCard-header-actions > span,
-.MainInteractiveCard-header-actions > div {
-	display: inline-block;
-	margin: 0;
-	vertical-align: middle;
+.MainInteractiveCard-header-actions>a,
+.MainInteractiveCard-header-actions>span,
+.MainInteractiveCard-header-actions>div {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
 
-	[class$='icon-2x'] {
-		position: relative;
-		top: 2px;
-	}
+  [class$='icon-2x'] {
+    position: relative;
+    top: 2px;
+  }
+
+  &:last-child {
+    div.iconHorizontal.OSInline {
+      margin-right: 0;
+    }
+  }
 }
 
 .MainInteractiveCard-header-actions div.iconHorizontal.OSInline,
 .MainInteractiveCard-header-actions a.Button.Small,
 .MainInteractiveCard-header-actions div.PatientHeaderActions,
 .MainInteractiveCard-header-actions a.ButtonSquare span.icon,
-.MainInteractiveCard-header-actions > div.OSInline {
-	//display: inline-block;
-	//margin: 0 8px;
-	vertical-align: middle;
+.MainInteractiveCard-header-actions>div.OSInline {
+  margin: 0 6px;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 1024px) {
-	.MainInteractiveCard-header {
-		flex-direction: column;
-	}
+  .MainInteractiveCard-header {
+    flex-direction: column;
+  }
 
-	.MainInteractiveCard-header-text {
-		flex: none;
-		margin-bottom: 16px;
-		max-width: none;
-		width: 100%;
-	}
+  .MainInteractiveCard-header-text {
+    flex: none;
+    margin-bottom: 16px;
+    max-width: none;
+    width: 100%;
+  }
 
-	.MainInteractiveCard-header-actions {
-		display: block;
-		flex: none;
-		margin-left: 0;
-		text-align: right;
-		width: 100%;
-	}
+  .MainInteractiveCard-header-actions {
+    display: block;
+    flex: none;
+    margin-left: 0;
+    text-align: right;
+    width: 100%;
+  }
 }
 
-.MainInteractiveCard > div > .MainInteractiveCard-body {
-	display: none;
-	width: auto;
+.MainInteractiveCard>div>.MainInteractiveCard-body {
+  display: none;
+  width: auto;
 }
 
-.MainInteractiveCard > .MainInteractiveCard-floater .MainInteractiveCard-body {
-	padding-top: 0;
+.MainInteractiveCard>.MainInteractiveCard-floater .MainInteractiveCard-body {
+  padding-top: 0;
 }
 
-.MainInteractiveCard > .MainInteractiveCard-floater {
-	position: relative;
-	z-index: 0;
+.MainInteractiveCard>.MainInteractiveCard-floater {
+  position: relative;
+  z-index: 0;
 }
 
-.MainInteractiveCard.XSmallHeader > .MainInteractiveCard-floater {
-	top: -40px;
+.MainInteractiveCard.XSmallHeader>.MainInteractiveCard-floater {
+  top: -40px;
 }
 
-.MainInteractiveCard.SmallHeader > .MainInteractiveCard-floater {
-	top: -60px;
+.MainInteractiveCard.SmallHeader>.MainInteractiveCard-floater {
+  top: -60px;
 }
 
-.MainInteractiveCard.MediumHeader > .MainInteractiveCard-floater {
-	top: -85px;
+.MainInteractiveCard.MediumHeader>.MainInteractiveCard-floater {
+  top: -85px;
 }
 
 .MainInteractiveCard.isOpen:before {
-	opacity: 1;
+  opacity: 1;
 }
 
 // .MainInteractiveCard.gradientWhenOpen.isOpen > .MainInteractiveCard-gradient {
 // 	opacity: 0.2;
 // }
 
-.MainInteractiveCard.allowOpening > .MainInteractiveCard-header .MainInteractiveCard-header-text {
-	cursor: pointer;
+.MainInteractiveCard.allowOpening>.MainInteractiveCard-header .MainInteractiveCard-header-text {
+  cursor: pointer;
 }
 
-.MainInteractiveCard.forceOpen > div > .MainInteractiveCard-body {
-	display: block !important;
+.MainInteractiveCard.forceOpen>div>.MainInteractiveCard-body {
+  display: block !important;
 }
 
 /* To be used on an embedded Web Block page inside the card */
-.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-	display: none;
-	position: absolute;
-	right: 10px;
-	top: 10px;
+.MainInteractiveCard>div>.MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
-.AR .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-	left: 10px;
-	right: 0;
-	text-align: left;
+.AR .MainInteractiveCard>div>.MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
+  left: 10px;
+  right: 0;
+  text-align: left;
 }
 
 @media screen and (max-width: 1024px) {
-	.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-		margin-bottom: 16px;
-		position: static;
-		text-align: right;
-	}
+  .MainInteractiveCard>div>.MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
+    margin-bottom: 16px;
+    position: static;
+    text-align: right;
+  }
 }
 
-.MainInteractiveCard-absolute-actions > div.iconHorizontal.OSInline,
+.MainInteractiveCard-absolute-actions>div.iconHorizontal.OSInline,
 .MainInteractiveCard-absolute-actions a.Button.Small,
 .MainInteractiveCard-absolute-actions a.ButtonLink,
 .MainInteractiveCard-absolute-actions div.PatientHeaderActions,
 .MainInteractiveCard-absolute-actions a.ButtonSquare span.icon,
-.MainInteractiveCard-absolute-actions > a,
-.MainInteractiveCard-absolute-actions > span,
-.MainInteractiveCard-absolute-actions > div {
-	display: inline-block;
-	margin: 0 8px;
-	vertical-align: middle;
+.MainInteractiveCard-absolute-actions>a,
+.MainInteractiveCard-absolute-actions>span,
+.MainInteractiveCard-absolute-actions>div {
+  display: inline-block;
+  margin: 0 8px;
+  vertical-align: middle;
 }
 
-.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions > *:last-child {
-	margin-right: 0;
+.MainInteractiveCard>div>.MainInteractiveCard-body .MainInteractiveCard-absolute-actions>*:last-child {
+  margin-right: 0;
 }
 
-.AR .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions > *:last-child {
-	margin-left: 0;
-	margin-right: 8px;
+.AR .MainInteractiveCard>div>.MainInteractiveCard-body .MainInteractiveCard-absolute-actions>*:last-child {
+  margin-left: 0;
+  margin-right: 8px;
 }
 
-.MainInteractiveCard.isOpen > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-	display: block;
-	font-size: 1rem;
+.MainInteractiveCard.isOpen>div>.MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
+  display: block;
+  font-size: 1rem;
 }
 
 /* Specific overrides */
 
 .MainInteractiveCard-header .ActionsMenu .icon {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline {
-	border-top: 1px solid $MainInteractiveCard-color-active;
-	padding-top: 16px;
+  border-top: 1px solid $MainInteractiveCard-color-active;
+  padding-top: 16px;
 }
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline:first-child {
-	border-top: none;
+  border-top: none;
 }
 
 .MainInteractiveCard-header .OutOfStockMsg {
-	padding: 2px 10px;
+  padding: 2px 10px;
 }
 
 .MainInteractiveCard-header .BadgeClassification,
 .MainInteractiveCard-header .OutOfStockMsg,
 .MainInteractiveCard-header .StatusBadges {
-	display: inline-block;
-	height: auto;
-	margin: 0 8px;
-	vertical-align: middle;
-	width: auto;
+  display: inline-block;
+  height: auto;
+  margin: 0 8px;
+  vertical-align: middle;
+  width: auto;
 }
 
 .MainInteractiveCard-header .PatientHeaderActions__subMenu {
-	right: -5px;
-	top: 40px;
+  right: -5px;
+  top: 40px;
 }
 
 .MainInteractiveCard-header .PatientHeaderActions__actions {
-	height: 25px;
-	min-width: 25px;
-	padding-right: 0;
-	text-align: center;
+  height: 25px;
+  min-width: 25px;
+  padding-right: 0;
+  text-align: center;
 }
 
 .MainInteractiveCard-header .PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover {
-	height: 25px;
-	min-width: 25px;
+  height: 25px;
+  min-width: 25px;
 }
 
 .MainInteractiveCard-header .PatientHeaderActions_menuItem {
-	min-height: auto;
-	padding: 0;
+  min-height: auto;
+  padding: 0;
 }
 
-.MainInteractiveCard-header .PatientHeaderActions__subMenu > div {
-	margin-bottom: 10px;
-	margin-top: 0;
+.MainInteractiveCard-header .PatientHeaderActions__subMenu>div {
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
-.MainInteractiveCard-header .PatientHeaderActions__subMenu > div:last-child {
-	margin-bottom: 0;
+.MainInteractiveCard-header .PatientHeaderActions__subMenu>div:last-child {
+  margin-bottom: 0;
 }
