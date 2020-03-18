@@ -1,0 +1,90 @@
+.EDDAndEGA_Wrapper,
+.ValidationMessageWrapper,
+.UltraSoundWrapper,
+.ConceptionWrapper {
+	display: flex;
+	margin-bottom: 20px;
+}
+.EDDAndEGA_Wrapper {
+	margin-top: 20px;
+
+	.EstimatedDateWrapper {
+		flex: 1;
+	}
+
+	.EstimatedGestAgeWrapper {
+		flex: 2;
+	}
+}
+
+.ValidationMessageWrapper {
+	.ValidationMessageContainer {
+		flex: 1;
+		span {
+			width: 100%;
+			.DateTimeRangePicker-displayed {
+				input {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.numberFetusContainer {
+		align-items: flex-end;
+
+		display: flex;
+		flex: 2;
+		> div[class~='FormField'] {
+			align-items: center;
+			display: flex;
+			height: 36px;
+			> div {
+				align-items: center;
+				display: flex;
+				height: 100%;
+			}
+			input {
+				max-width: 45px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.UltraSoundWrapper {
+	.ultrasoundDaysContainer {
+		display: flex;
+		flex: 1;
+
+		div[class~='FormField'] {
+			&:first-child {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	.ultrasoundDateContainer {
+		align-items: center;
+
+		display: flex;
+		flex: 2;
+	}
+}
+
+@media only screen and (max-width: 1680px) {
+	.EDDAndEGA_Wrapper {
+		.EstimatedGestAgeWrapper {
+			flex: 1;
+		}
+	}
+	.ValidationMessageWrapper {
+		.ValidationMessageContainer {
+			flex: 2;
+		}
+	}
+	.UltraSoundWrapper {
+		.ultrasoundDaysContainer {
+			flex: 2;
+		}
+	}
+}

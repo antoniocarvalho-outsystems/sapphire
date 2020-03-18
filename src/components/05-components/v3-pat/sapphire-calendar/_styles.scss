@@ -4,10 +4,10 @@
 	//border-radius: 2px;
 	color: $light-grey;
 	display: inline-block;
-	margin: -1px 0 0 -1px;
+	//margin: -1px 0 0 -1px;
 	padding: 10px;
 	text-align: center;
-	width: 14.2%;
+	width: calc(100% / 7);
 	z-index: 1;
 }
 
@@ -96,17 +96,15 @@
 
 	&___weekDay {
 		display: inline-block;
-		font-size: 0.786em;
+		font-size: $font-size-tiny;
 		height: 30px;
-		margin: -1px 0 0 -1px;
 		padding: 7px 1px;
 		text-align: center;
-		width: 14.2%;
+		width: calc(100% / 7);
 	}
 
 	&__days {
-		font-size: 1.143em;
-		margin-left: 2.5px;
+		font-size: $font-size-heading3;
 		width: 100%;
 
 		.Calendar_Past_Day {
@@ -198,10 +196,17 @@
 		&.CalendarWidget__Selected {
 			background-color: $regular-alpha !important;
 			border: none !important;
+			border-radius: 50%;
+
+			.arrowLeft.green {
+				display: none;
+			}
+
 			a,
 			span {
 				background-color: $regular-alpha;
 				color: $sapphire-white !important;
+				display: contents;
 			}
 		}
 	}
