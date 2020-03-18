@@ -1,5 +1,6 @@
 /* Component SectionExpandable */
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
+
 	function SectionExpandableCustom() {
 		var that = this;
 
@@ -51,7 +52,7 @@
 				}
 
 				// add event transition end to overflow:visible for tooltips and dropdowns issues
-				SectionContent.on(transitionEvent, function() {
+				SectionContent.on(transitionEvent, function () {
 					if (Section.hasClass('expanded')) {
 						SectionContent.css('overflow', 'visible');
 						SectionContent.addClass('noTransition');
@@ -64,24 +65,22 @@
 		}
 
 		// ajax refres function
-		that.ajaxRefresh = function() {
+		that.ajaxRefresh = function () {
 			// remove click events
 			$('.SectionExpandable_headerCustom').off();
 
 			// add stop prepagation
-			$(
-				'.SectionExpandable_headerCustom input, .SectionExpandable_headerCustom select, .SectionExpandable_headerCustom a'
-			).click(function(event) {
+			$('.SectionExpandable_headerCustom input, .SectionExpandable_headerCustom select, .SectionExpandable_headerCustom a').click(function (event) {
 				event.stopPropagation();
 			});
 
 			// add new click events
-			$('.SectionExpandable_headerCustom').on('click', function() {
+			$('.SectionExpandable_headerCustom').on('click', function () {
 				clickEvents(this);
 			});
 
 			// each all sections
-			$('.SectionExpandableCustom').each(function() {
+			$('.SectionExpandableCustom').each(function () {
 				// if new SectionExpandable then add to previewstat array
 				if (previewstat[$(this).attr('id')] == null) {
 					// add stat on array
@@ -125,9 +124,9 @@
 		};
 
 		// set events
-		that.init = function() {
+		that.init = function () {
 			// each all sections to create array stat
-			$('.SectionExpandableCustom').each(function() {
+			$('.SectionExpandableCustom').each(function () {
 				// add stat on array
 				var stat = false;
 
@@ -142,44 +141,60 @@
 					server: stat,
 				};
 
-				if (
-					$(this).hasClass('HideWhenEmpty') &&
-					$(this)
-						.find('.SectionExpandableCustom_content')
-						.text().length === 0
-				) {
+				if ($(this).hasClass('HideWhenEmpty') && $(this).find('.SectionExpandableCustom_content').text().length === 0) {
 					$(this).hide();
 				}
 
 				// hack to display a message when SectionExpandableCustom has no child items
 				var isEmpty = true;
-				$(this)
-					.find('.SectionExpandableCustom_content div, .SectionExpandableCustom_content span')
-					.not('.SectionExpandableCustom_content--empty')
-					.each(function() {
-						if ($(this).text().length > 0) {
-							isEmpty = false;
-							return false;
+				$(this).find('.SectionExpandableCustom_content div, .SectionExpandableCustom_content span').not('.SectionExpandableCustom_content--empty').each(function () {
+					if ($(this).text().length > 0) {
+						isEmpty = false;
+						return false;
+					}
+				});
+				if (!isEmpty) {
+					$(this).find('.SectionExpandableCustom_content--empty').css({
+						display: 'none',
+					});
+				}
+
+
+
+				var $expandableInstance = $(this);
+				var $toggler = $(this).find('> .SectionExpandable_headerCustom .SectionExpandable-toggler');
+				if ($toggler.length === 1) {
+					var $togglerState = false;
+					$toggler.text($toggler.data('labelshow'));
+					$toggler.off('click').on('click', function (evt) {
+						evt.stopPropagation();
+						$togglerState = !$togglerState;
+						if ($togglerState) {
+							$expandableInstance.find('.SectionExpandable-toggled').show();
+							$toggler.text($toggler.data('labelhide'));
+						} else {
+							$expandableInstance.find('.SectionExpandable-toggled').hide();
+							$toggler.text($toggler.data('labelshow'));
 						}
 					});
-				if (!isEmpty) {
-					$(this)
-						.find('.SectionExpandableCustom_content--empty')
-						.css({
-							display: 'none',
-						});
 				}
+
+
+
+
+
+
+
+
 			});
 
 			// add click events
-			$('.SectionExpandable_headerCustom').off("click").on('click', function() {
+			$('.SectionExpandable_headerCustom').off("click").on('click', function () {
 				clickEvents(this);
 			});
 
 			// add stop prepagation
-			$(
-				'.SectionExpandable_headerCustom input, .SectionExpandable_headerCustom select, .SectionExpandable_headerCustom a'
-			).click(function(event) {
+			$('.SectionExpandable_headerCustom input, .SectionExpandable_headerCustom select, .SectionExpandable_headerCustom a').click(function (event) {
 				event.stopPropagation();
 			});
 
@@ -196,4 +211,5 @@
 	SapphireWidgets.SectionExpandable = {
 		create,
 	};
+
 })(jQuery, window, SapphireWidgets);
