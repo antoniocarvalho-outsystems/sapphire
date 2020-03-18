@@ -102,10 +102,7 @@ $IconLabel-color-text: $dark-grey;
 .iconHorizontal {
 	@include common-icons-second-style;
 
-	align-items: center;
-	display: inline-flex;
 	font-size: 1em;
-	justify-content: center;
 
 	&.iconBorder {
 		padding: 0 5px 0 10px;
@@ -123,6 +120,7 @@ $IconLabel-color-text: $dark-grey;
 		span.icon {
 			display: inline-block;
 			margin-right: 4px;
+			margin-top: 3px;
 		}
 
 		span.icon.icon-lg {
