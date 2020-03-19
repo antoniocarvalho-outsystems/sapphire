@@ -124,7 +124,8 @@ input {
 
 select,
 textarea,
-input[type='text'] {
+input[type='text'],
+input[type='number'] {
 	// input[type]:not([type='checkbox']):not([type='radio']) {
 	appearance: none;
 	background-color: $regular-white;
