@@ -1,13 +1,13 @@
 .SelectableList {
 	&-EmptyMessage {
-		align-items: baseline;
+		@include flex-center-total;
+
 		background-color: transparent;
+		border: 1px solid $mid-light-grey;
 		color: $mid-dark-grey;
-		display: flex;
 		flex-wrap: wrap;
 		font-size: 1em;
-		justify-content: center;
-		min-height: 48px;
+		min-height: 46px;
 		width: 100%;
 
 		> span {
