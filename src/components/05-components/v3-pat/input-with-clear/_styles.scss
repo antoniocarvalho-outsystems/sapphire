@@ -12,8 +12,11 @@
 
 .InputWithClear--shield {
   position: absolute;
+  width: 100%;
 
+  .LineWarns,
   .LineWarns_list {
     height: 36px;
+    min-height: unset;
   }
 }

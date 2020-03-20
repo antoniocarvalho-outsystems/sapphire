@@ -1,0 +1,93 @@
+//Prego
+$headerTitleHight: 40px;
+$calendarButtonDateDistance: 315px;
+$arrowButtonSize: 20px;
+div[id*='PageHeadSearch'] {
+}
+
+div[id*='SectionTitleContainer'] + div {
+	display: inline;
+	position: relative;
+	top: -5px;
+}
+
+.AgendaCalendar {
+	&___Container {
+		position: relative;
+	}
+	&___Header {
+		&--Content {
+			align-items: center;
+			display: flex;
+			height: $headerTitleHight;
+			width: $calendarButtonDateDistance;
+
+			a.Button {
+				margin-right: 18px !important;
+			}
+		}
+
+		.SegmentedControl {
+			margin: 0;
+			.navigation-control {
+				.navigation-control-item {
+					background-color: yellow;
+					border: 1px solid;
+					border-radius: 50%;
+					font-size: $font-size-small;
+					height: $arrowButtonSize;
+					min-height: 0;
+					width: $arrowButtonSize;
+					a {
+						align-items: center;
+						background: red;
+						display: flex;
+						height: 100%;
+						justify-content: center;
+						width: 100%;
+					}
+					label {
+						align-items: center;
+						display: flex;
+						justify-content: center;
+					}
+
+					span {
+						position: relative;
+						top: 1px;
+					}
+
+					&:first-child {
+						margin-right: 6px;
+					}
+				}
+			}
+		}
+	}
+
+	&___Title {
+		align-items: center;
+		// background-color: red;
+		display: flex;
+		height: $headerTitleHight;
+		left: $calendarButtonDateDistance;
+		position: absolute;
+		top: 0;
+		> div.CalendarButton.InlineBlock.Clickable {
+			display: contents;
+		}
+	}
+
+	.Calendar_Weekday {
+		background-color: $light-grey;
+		bottom: 1px $mid-dark-grey;
+
+		&.CalendarDay___Selected {
+			background-color: white;
+			color: $regular-beta;
+		}
+	}
+	.CalendarItemCell {
+		color: $regular-beta;
+	}
+}
