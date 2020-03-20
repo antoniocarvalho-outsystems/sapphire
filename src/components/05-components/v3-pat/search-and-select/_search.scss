@@ -5,27 +5,26 @@
 
 .SearchSD {
 	position: relative;
-	&.Open {
-		.SearchSD___remove {
-			align-items: center;
-			background-color: $sapphire-white;
-			border: 1px solid $light-grey;
-			border-radius: 50%;
-			cursor: pointer;
-			display: flex !important;
-			height: 28px;
-			justify-content: center;
-			position: absolute;
-			right: 5px;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			width: 28px;
+	.SearchSD___remove {
+		align-items: center;
+		background-color: $sapphire-white;
+		border: 1px solid $light-grey;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex !important;
+		height: 28px;
+		justify-content: center;
+		position: absolute;
+		right: 5px;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 28px;
 
-			&:hover {
-				border: 1px solid $regular-alpha;
-			}
+		&:hover {
+			border: 1px solid $regular-alpha;
 		}
-
+	}
+	&.Open {
 		.SearchSD__inputWrapper {
 			.icon {
 				color: $regular-beta;
