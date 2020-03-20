@@ -319,11 +319,15 @@ $styleguide-main-content-padding: 50px;
 			width: 100%;
 		}
 
-		.ValidationMessageContainer .ValidationMessage {
-			display: block !important;
+		&--validation {
+			@extend .DesignSystem__FormField;
 
-			&::after {
-				content: 'This field is required';
+			.ValidationMessageContainer .ValidationMessage {
+				display: block !important;
+
+				&::after {
+					content: 'This field is required';
+				}
 			}
 		}
 	}

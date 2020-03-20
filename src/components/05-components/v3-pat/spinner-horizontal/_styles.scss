@@ -29,6 +29,10 @@
 			cursor: default;
 		}
 
+		&[disabled] + .SpinnerInput input[type] {
+			pointer-events: none;
+		}
+
 		&.Plus:before,
 		&.Minus:before {
 			display: block;

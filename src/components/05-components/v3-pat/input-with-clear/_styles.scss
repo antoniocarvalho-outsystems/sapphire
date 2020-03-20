@@ -9,3 +9,11 @@
   right: 10px;
   top: calc(50% - 7px);
 }
+
+.InputWithClear--shield {
+  position: absolute;
+
+  .LineWarns_list {
+    height: 36px;
+  }
+}

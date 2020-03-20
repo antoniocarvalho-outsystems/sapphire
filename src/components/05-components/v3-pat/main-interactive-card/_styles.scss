@@ -1,6 +1,6 @@
 $MainInteractiveCard-color-active: $regular-alpha;
 $MainInteractiveCard-color-caption: $mid-light-grey;
-$MainInteractiveCard-color-disabled-background: $light-grey;
+$MainInteractiveCard-color-disabled-background: $body-color;
 $MainInteractiveCard-color-disabled: $mid-light-grey;
 $MainInteractiveCard-color-header: $dark-grey;
 $MainInteractiveCard-color-subtitle: $mid-dark-grey;
@@ -216,6 +216,9 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 }
 
 .MainInteractiveCard-header-actions {
+	align-items: center;
+	display: inherit;
+	height: fit-content;
 	margin-left: 40px;
 	pointer-events: all;
 	text-align: right;

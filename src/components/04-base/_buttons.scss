@@ -133,8 +133,8 @@ a.Button.IsDefault,
 		&:active,
 		&:hover {
 			background-color: $sapphire-light-container;
-			// border: 1px solid transparent;
-			// color: $dark-grey;
+			border: 1px solid $regular-alpha;
+			color: $regular-beta;
 		}
 
 		&:focus {
