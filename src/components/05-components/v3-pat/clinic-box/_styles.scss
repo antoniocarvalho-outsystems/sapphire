@@ -1,0 +1,162 @@
+.AppointmentBox {
+	background-color: white;
+	border: 1px solid #d2d1d0;
+	border-radius: 3px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+	display: inline-block;
+	font-family: 'globeregular';
+	font-size: 12px;
+	position: relative;
+	/*margin: 0px 15px 15px 0px;*/
+	width: 230px;
+}
+
+.SelectedClinicBox {
+	border: 2px solid #00b4bf;
+	box-shadow: inset 0px 2px 4px #aaa;
+}
+
+.ClinicStatus {
+	color: #000;
+	display: table;
+	min-height: 25px;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+}
+
+.ClinicStatus .ClinicStatusMessageRight,
+.ClinicStatus .ClinicStatusMessageLeft {
+	/* display: inline-block; */
+	vertical-align: middle;
+}
+
+.ClinicStatus .ClinicStatusMessageLeft {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.ClinicStatus .ClinicStatusMessageRight {
+	border-left: 1px solid #5b5b5b;
+}
+
+.AR .ClinicStatus .ClinicStatusMessageRight,
+.FA .ClinicStatus .ClinicStatusMessageRight {
+	border-left: 1px solid #5b5b5b;
+}
+
+.ClinicStatus .ClinicStatusLocked {
+	border-left: 1px solid #5b5b5b;
+	display: table-cell;
+	vertical-align: middle;
+	width: 52%;
+}
+
+.ClinicStatus .ClinicStatusLocked.PH:empty {
+	display: none;
+}
+
+.AppointmentHeader {
+	height: 60px;
+	padding: 10px 7px;
+}
+
+.Clickable {
+	cursor: pointer;
+}
+
+.NewPatient {
+	background: #f2f5f6;
+
+	display: table;
+	line-height: 25px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.ClinicStatus.Locked {
+	background-color: #cccccc;
+	border-bottom: 1px solid #5b5b5b;
+	border-top: 1px solid #5b5b5b;
+	color: #5b5b5b;
+}
+
+.ClinicStatus.Available {
+	background-color: #b6d882;
+	border-bottom: 1px solid #7c9e4a;
+	border-top: 1px solid #7c9e4a;
+	color: #526a2c;
+}
+
+.ClinicStatus.Full {
+	background-color: #cccccc;
+	border-bottom: 1px solid #5b5b5b;
+	border-top: 1px solid #5b5b5b;
+	color: #5b5b5b;
+}
+
+.ClinicStatus.Overbooked {
+	background-color: #d25750;
+	border-bottom: 1px solid #8b140e;
+	border-top: 1px solid #8b140e;
+	color: #6f0c06;
+}
+
+.ColorBooked {
+	color: #526a2c;
+}
+
+.NewPatientBorderLeft {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.BorderLeft {
+	border-left: 1px solid #d2d1d0;
+}
+
+.BorderRight {
+	border-right: 1px solid #d2d1d0;
+}
+
+.FA .BorderRight,
+.AR .BorderRight {
+	border-left: 1px solid #d2d1d0;
+	border-right: none;
+}
+
+.BorderTop {
+	border-top: 1px solid #d2d1d0;
+}
+
+.AR .BorderLeft,
+.FA .BorderLeft {
+	border-left: 0;
+	border-right: 1px solid #d2d1d0;
+}
+
+.NewPatientBorderTop {
+	border-top: 1px solid #d2d1d0;
+	line-height: 25px;
+}
+
+.NewPatient.TopRightDiv {
+	line-height: 25px;
+}
+
+.ClinicStatusLocked .iconVertical_icon {
+	color: #333;
+}
+
+.LeftContainer {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.ClinicBox__accounting {
+	margin: 5px;
+}
+
+.DisableSlot {
+	opacity: 0.25;
+}

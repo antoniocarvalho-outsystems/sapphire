@@ -215,7 +215,8 @@
 
 			.CompLine_Expand {
 				background-color: transparent;
-				border-top: 1px solid $light-grey;
+				border: 1px solid $light-grey;
+				border-top: none;
 				display: block;
 				height: auto;
 				overflow: visible;

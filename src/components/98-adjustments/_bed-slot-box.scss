@@ -1,3 +1,9 @@
-.SlotContainer .ListRecords .tooltip {
-	margin: 0 5px;
+.SlotContainer .ListRecords {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 170px);
+	justify-content: space-between;
+
+	a[id='selected'] {
+		display: none;
+	}
 }
