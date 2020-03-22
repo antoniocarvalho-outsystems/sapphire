@@ -67,28 +67,45 @@ require('./styles.scss');
 			});
 
 			$(window).load(() => {
-				if (!!window.location.hash) {
-					let $content = $('.DesignSystem__Content').find('[title="' + window.location.hash.slice(1) + '"]');
-					if (!!$content)
+				const hash = window.location.hash.slice(1);
+				if (!!hash) {
+					let $content = $('.DesignSystem__Content').find('[title="' + hash + '"]');
+					if (!!$content.length)
 						$(window).scrollTop($content.offset().top);
 				}
-				//
-				let pathname = window.location.pathname.replace('/Styleguidev2_UI/', '');
-				$('.DesignSystem__MenuSection a').each((i, el) => {
-					let url = $(el).attr('href').split('?')[0];
-					if (url === pathname) {
-						$(el).addClass('active');
-						$(el).closest('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--expanded');
-						let linkTopPosition = $(el).closest('.DesignSystem__MenuSubSection')[0].offsetTop;
-						$('.DesignSystem__Menu')[0].scroll(0, linkTopPosition - 230);
-					}
-				});
+				markAsideMenu(true);
 			});
 
 			$(window).on('hashchange', () => {
 				$(window).scrollTop($('.DesignSystem__Content').find('[title="' + window.location.hash.slice(1) + '"]').offset().top);
+				markAsideMenu(false);
 			});
 
+		}
+
+		markAsideMenu = (doScroll) => {
+			const hash = window.location.hash.slice(1);
+			let pathname = window.location.pathname.replace('/Styleguidev2_UI/', '');
+			$('.DesignSystem__MenuSection a').each((i, el) => {
+				let url = $(el).attr('href').split('?')[0];
+				let title = $(el).attr('title');
+				if (url === pathname) {
+					if (hash === title || (!hash && !title)) {
+						$(el).addClass('active');
+					} else {
+						$(el).removeClass('active');
+					}
+					if (!!$(el).closest('.DesignSystem__MenuSubSection').length) {
+						$(el).closest('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--expanded');
+						if (doScroll) {
+							let linkTopPosition = $(el).closest('.DesignSystem__MenuSubSection')[0].offsetTop;
+							$('.DesignSystem__Menu')[0].scroll(0, linkTopPosition - 230);
+						}
+					}
+				} else {
+					$(el).removeClass('active');
+				}
+			});
 		}
 
 		openAll = () => {
