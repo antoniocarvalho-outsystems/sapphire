@@ -1,2 +1,412 @@
-body{background-color:#fff;margin:0}.DesignSystem{font-family:"LatoRegular";font-size:14px}.DesignSystem__Aside{background-color:#fff;border-right:1px solid #d6d6d6;height:100vh;position:relative;position:fixed;width:220px}.DesignSystem__Aside input[type='text']{height:34px;line-height:34px;margin:0;width:100%}.DesignSystem__AsideHeader{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;padding:10px}.DesignSystem__AsideHeader .icon{color:#009884;font-size:5em;margin:10px 0 20px 0}.DesignSystem__Menu{height:calc(100vh - 185px);margin-top:15px;overflow-y:auto}.DesignSystem__Menu::-webkit-scrollbar{background-color:#fff;height:7px;width:7px}.DesignSystem__Menu::-webkit-scrollbar-thumb{border:5px solid #00bfa5;border-radius:0}.DesignSystem__MenuSection{margin-bottom:25px}.DesignSystem__MenuSection a,.DesignSystem__MenuSection a:link,.DesignSystem__MenuSection a:visited{color:#009884;display:block;font-family:"LatoRegular";height:34px;line-height:34px;padding:0 10px;-webkit-transition:all 0.25s;transition:all 0.25s}.DesignSystem__MenuSection a:hover,.DesignSystem__MenuSection a:link:hover,.DesignSystem__MenuSection a:visited:hover{background-color:#c4f0eb}.DesignSystem__MenuSubSection{height:34px;overflow:hidden;padding:0 10px}.DesignSystem__MenuSubSection--expanded{background-color:#f2fffd;height:auto;overflow:visible}.DesignSystem__MenuSubSection--expanded .DesignSystem__MenuItemSection::after{content:' ';top:40%;-webkit-transform:rotate(180deg) translateY(-40%);transform:rotate(180deg) translateY(-40%)}.DesignSystem__MenuSubSection a,.DesignSystem__MenuSubSection a:link,.DesignSystem__MenuSubSection a:visited{margin:0 -20px;padding:0 30px}.DesignSystem__MenuItemSection{color:#009884;display:block;font-family:"LatoRegular";height:34px;line-height:34px;padding:0 10px;-webkit-transition:all 0.25s;transition:all 0.25s;cursor:pointer;margin:0 -20px;padding:0 20px;position:relative}.DesignSystem__MenuItemSection:hover{background-color:#c4f0eb}.DesignSystem__MenuItemSection::after{border-bottom:5px solid #009884;border-left:5px solid transparent;border-right:5px solid transparent;height:0;width:0;position:absolute;top:45%;-webkit-transform:translateY(-45%);transform:translateY(-45%);content:' ';right:25px;-webkit-transform:rotate(90deg) translateY(-45%);transform:rotate(90deg) translateY(-45%);-webkit-transition:all 0.15s;transition:all 0.15s}.DesignSystem__MenuItemSection::after:after,.DesignSystem__MenuItemSection::after:before{content:''}.DesignSystem__MenuTitle{color:#333;display:block;font-family:"LatoBold";font-size:1.143em;margin-bottom:10px;padding:0 10px;text-transform:uppercase}.DesignSystem__Locale{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;-webkit-box-pack:end;justify-content:flex-end;font-family:"LatoBold";width:100%}.DesignSystem__Locale .ToggleButton{margin-right:-7px;-webkit-transform:scale(0.7);transform:scale(0.7)}.DesignSystem__MainContent{padding-left:220px}.DesignSystem__MainHeader{-webkit-box-align:start;align-items:flex-start;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;background-color:#f3f3f3;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;padding:10px 50px 20px}.DesignSystem__MainHeader span{color:#5c5c5c}.DesignSystem__MainHeader span:first-child{font-size:3em}.DesignSystem__MainHeader span:last-child{font-size:1.071em}.DesignSystem__Content{background-color:#fff;padding:50px}.DesignSystem__ListFlex,.DesignSystem__ListFlex--medium{display:grid;grid-gap:1rem;grid-template-columns:repeat(auto-fill, 175px);-webkit-box-pack:justify;justify-content:space-between}.DesignSystem__ListFlex--medium{grid-template-columns:repeat(auto-fill, 300px)}.DesignSystem__DefaultSection,.DesignSystem__DefaultSection--withCards,.DesignSystem__DefaultSection--simple,.DesignSystem__DefaultSection--block,.DesignSystem__DefaultSection--withWebBlock,.DesignSystem__DefaultSection--aboutWebBlock{border:1px solid #d6d6d6;border-radius:1px;display:-webkit-box;display:flex;padding:20px;position:relative}.DesignSystem__DefaultSection--withCards{display:inherit;padding:10px 20px}.DesignSystem__DefaultSection--withCards .DesignSystem__ContentCard{border:none}.DesignSystem__DefaultSection--simple>*{padding:0 10px}.DesignSystem__DefaultSection--simple>div:first-child{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;-webkit-box-pack:unset;justify-content:unset;-webkit-box-flex:1;flex:1}.DesignSystem__DefaultSection--simple>div:last-child{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;min-width:550px}.DesignSystem__DefaultSection--block{display:block}.DesignSystem__DefaultSection--withWebBlock{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;padding-top:45px}.DesignSystem__DefaultSection--withWebBlock .SectionExpandable_headerCustom{max-height:40px}.DesignSystem__DefaultSection--withWebBlock .SectionExpandable_headerCustom .PlaceHolderTitle{font-family:"LatoRegular";font-size:1em}.DesignSystem__DefaultSection--aboutWebBlock{-webkit-box-align:center;align-items:center}.DesignSystem__DefaultSection--aboutWebBlock .icon{color:#d6d6d6;font-size:3em;padding-top:4px}.DesignSystem__AlertInfoSection{background-color:#00bfa5;color:#fff;padding:3px 15px;position:absolute;right:0;top:0;width:100%}.DesignSystem__ContentCard{border:1px solid #d6d6d6;border-radius:2px;display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;height:170px;overflow:hidden;width:175px}.DesignSystem__ContentCard--sizeAuto{height:auto;width:auto}.DesignSystem__ContentCard--sizeAuto>div:first-child>div{width:100%}.DesignSystem__ContentCard>div:first-child{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-flex:1;flex:1;padding:20px 10px}.DesignSystem__ContentCard>div:last-child{font-family:"LatoBold";font-size:0.857em;padding:8px 10px}.DesignSystem__FormField,.DesignSystem__FormField--validation{display:grid;row-gap:5px;width:100%}.DesignSystem__FormField textarea,.DesignSystem__FormField--validation textarea,.DesignSystem__FormField input:not([type='checkbox']):not([type='radio']),.DesignSystem__FormField--validation input:not([type='checkbox']):not([type='radio']){display:block;width:100%}.DesignSystem__FormField--validation .ValidationMessageContainer .ValidationMessage{display:block !important}.DesignSystem__FormField--validation .ValidationMessageContainer .ValidationMessage::after{content:'This field is required'}.DesignSystem__CardSpacing,.DesignSystem__CardSpacing--withBg,.DesignSystem__CardSpacing--withoutBg,.DesignSystem__CardSpacing--withoutBorder{border:1px dashed #adadad}.DesignSystem__CardSpacing>div,.DesignSystem__CardSpacing--withBg>div,.DesignSystem__CardSpacing--withoutBg>div,.DesignSystem__CardSpacing--withoutBorder>div{background-color:#009884;height:50px;width:auto}.DesignSystem__CardSpacing--withBg{background-color:#c4f0eb;box-sizing:border-box}.DesignSystem__CardSpacing--withoutBg{border:inherit}.DesignSystem__CardSpacing--withoutBg>div{background-color:transparent}.DesignSystem__CardSpacing--withoutBorder{border:none}
+body {
+  background-color: #fff;
+  margin: 0
+}
 
+.DesignSystem {
+  font-family: "LatoRegular";
+  font-size: 14px
+}
+
+.DesignSystem__Aside {
+  background-color: #fff;
+  border-right: 1px solid #d6d6d6;
+  height: 100vh;
+  position: relative;
+  position: fixed;
+  width: 220px
+}
+
+.DesignSystem__Aside input[type='text'] {
+  height: 34px;
+  line-height: 34px;
+  margin: 0;
+  width: 100%
+}
+
+.DesignSystem__AsideHeader {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px
+}
+
+.DesignSystem__AsideHeader .icon {
+  color: #009884;
+  font-size: 5em;
+  margin: 10px 0 20px 0
+}
+
+.DesignSystem__Menu {
+  height: calc(100vh - 185px);
+  margin-top: 15px;
+  overflow-y: auto
+}
+
+.DesignSystem__Menu::-webkit-scrollbar {
+  background-color: #fff;
+  height: 7px;
+  width: 7px
+}
+
+.DesignSystem__Menu::-webkit-scrollbar-thumb {
+  border: 5px solid #00bfa5;
+  border-radius: 0
+}
+
+.DesignSystem__MenuSection {
+  margin-bottom: 25px
+}
+
+.DesignSystem__MenuSection a,
+.DesignSystem__MenuSection a:link,
+.DesignSystem__MenuSection a:visited {
+  color: #009884;
+  display: block;
+  font-family: "LatoRegular";
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s
+}
+
+.DesignSystem__MenuSection a:hover,
+.DesignSystem__MenuSection a:link:hover,
+.DesignSystem__MenuSection a:visited:hover {
+  background-color: #c4f0eb
+}
+
+.DesignSystem__MenuSubSection {
+  height: 34px;
+  overflow: hidden;
+  padding: 0 10px
+}
+
+.DesignSystem__MenuSubSection--expanded {
+  background-color: #f2fffd;
+  height: auto;
+  overflow: visible
+}
+
+.DesignSystem__MenuSubSection--expanded .DesignSystem__MenuItemSection::after {
+  content: ' ';
+  top: 40%;
+  -webkit-transform: rotate(180deg) translateY(-40%);
+  transform: rotate(180deg) translateY(-40%)
+}
+
+.DesignSystem__MenuSubSection a,
+.DesignSystem__MenuSubSection a:link,
+.DesignSystem__MenuSubSection a:visited {
+  margin: 0 -20px;
+  padding: 0 30px
+}
+
+.DesignSystem__MenuItemSection {
+  color: #009884;
+  cursor: pointer;
+  display: block;
+  font-family: "LatoRegular";
+  height: 34px;
+  line-height: 34px;
+  margin: 0 -20px;
+  padding: 0 10px;
+  padding: 0 20px;
+  position: relative;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s
+}
+
+.DesignSystem__MenuItemSection:hover {
+  background-color: #c4f0eb
+}
+
+.DesignSystem__MenuItemSection::after {
+  border-bottom: 5px solid #009884;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  content: ' ';
+  height: 0;
+  position: absolute;
+  right: 25px;
+  top: 45%;
+  -webkit-transform: translateY(-45%);
+  -webkit-transform: rotate(90deg) translateY(-45%);
+  transform: translateY(-45%);
+  transform: rotate(90deg) translateY(-45%);
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  width: 0
+}
+
+.DesignSystem__MenuItemSection::after:after,
+.DesignSystem__MenuItemSection::after:before {
+  content: ''
+}
+
+.DesignSystem__MenuTitle {
+  color: #333;
+  display: block;
+  font-family: "LatoBold";
+  font-size: 1.143em;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  text-transform: uppercase
+}
+
+.DesignSystem__Locale {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: end;
+  display: -webkit-box;
+  display: flex;
+  font-family: "LatoBold";
+  justify-content: flex-end;
+  width: 100%
+}
+
+.DesignSystem__Locale .ToggleButton {
+  margin-right: -7px;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7)
+}
+
+.DesignSystem__MainContent {
+  padding-left: 220px
+}
+
+.DesignSystem__MainHeader {
+  align-items: flex-start;
+  background-color: #f3f3f3;
+  -webkit-box-align: start;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 50px 20px
+}
+
+.DesignSystem__MainHeader span {
+  color: #5c5c5c
+}
+
+.DesignSystem__MainHeader span:first-child {
+  font-size: 3em
+}
+
+.DesignSystem__MainHeader span:last-child {
+  font-size: 1.071em
+}
+
+.DesignSystem__Content {
+  background-color: #fff;
+  padding: 50px
+}
+
+.DesignSystem__ListFlex,
+.DesignSystem__ListFlex--medium {
+  -webkit-box-pack: justify;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 175px);
+  justify-content: space-between
+}
+
+.DesignSystem__ListFlex--medium {
+  grid-template-columns: repeat(auto-fill, 300px)
+}
+
+.DesignSystem__DefaultSection,
+.DesignSystem__DefaultSection--withCards,
+.DesignSystem__DefaultSection--simple,
+.DesignSystem__DefaultSection--block,
+.DesignSystem__DefaultSection--withWebBlock,
+.DesignSystem__DefaultSection--aboutWebBlock {
+  border: 1px solid #d6d6d6;
+  border-radius: 1px;
+  display: -webkit-box;
+  display: flex;
+  padding: 20px;
+  position: relative
+}
+
+.DesignSystem__DefaultSection--withCards {
+  display: inherit;
+  padding: 10px 20px
+}
+
+.DesignSystem__DefaultSection--withCards .DesignSystem__ContentCard {
+  border: none
+}
+
+.DesignSystem__DefaultSection--simple>* {
+  padding: 0 10px
+}
+
+.DesignSystem__DefaultSection--simple>div:first-child {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: unset;
+  display: -webkit-box;
+  display: flex;
+  flex: 1;
+  justify-content: unset
+}
+
+.DesignSystem__DefaultSection--simple>div:last-child {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  min-width: 550px
+}
+
+.DesignSystem__DefaultSection--block {
+  display: block
+}
+
+.DesignSystem__DefaultSection--withWebBlock {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  padding-top: 45px
+}
+
+.DesignSystem__DefaultSection--withWebBlock .SectionExpandable_headerCustom {
+  max-height: 40px
+}
+
+.DesignSystem__DefaultSection--withWebBlock .SectionExpandable_headerCustom .PlaceHolderTitle {
+  font-family: "LatoRegular";
+  font-size: 1em
+}
+
+.DesignSystem__DefaultSection--aboutWebBlock {
+  align-items: center;
+  -webkit-box-align: center
+}
+
+.DesignSystem__DefaultSection--aboutWebBlock .icon {
+  color: #d6d6d6;
+  font-size: 3em;
+  padding-top: 4px
+}
+
+.DesignSystem__AlertInfoSection {
+  background-color: #00bfa5;
+  color: #fff;
+  padding: 3px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%
+}
+
+.DesignSystem__ContentCard {
+  border: 1px solid #d6d6d6;
+  border-radius: 2px;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  overflow: hidden;
+  width: 175px
+}
+
+.DesignSystem__ContentCard--sizeAuto {
+  height: auto;
+  width: auto
+}
+
+.DesignSystem__ContentCard--sizeAuto>div:first-child>div {
+  width: 100%
+}
+
+.DesignSystem__ContentCard>div:first-child {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 20px 10px
+}
+
+.DesignSystem__ContentCard>div:last-child {
+  font-family: "LatoBold";
+  font-size: 0.857em;
+  padding: 8px 10px
+}
+
+.DesignSystem__FormField,
+.DesignSystem__FormField--validation {
+  display: grid;
+  row-gap: 5px;
+  width: 100%
+}
+
+.DesignSystem__FormField textarea,
+.DesignSystem__FormField--validation textarea,
+.DesignSystem__FormField input:not([type='checkbox']):not([type='radio']),
+.DesignSystem__FormField--validation input:not([type='checkbox']):not([type='radio']) {
+  display: block;
+  width: 100%
+}
+
+.DesignSystem__FormField--validation .ValidationMessageContainer .ValidationMessage {
+  display: block !important
+}
+
+.DesignSystem__FormField--validation .ValidationMessageContainer .ValidationMessage::after {
+  content: 'This field is required'
+}
+
+.DesignSystem__CardSpacing,
+.DesignSystem__CardSpacing--withBg,
+.DesignSystem__CardSpacing--withoutBg,
+.DesignSystem__CardSpacing--withoutBorder {
+  border: 1px dashed #adadad
+}
+
+.DesignSystem__CardSpacing>div,
+.DesignSystem__CardSpacing--withBg>div,
+.DesignSystem__CardSpacing--withoutBg>div,
+.DesignSystem__CardSpacing--withoutBorder>div {
+  background-color: #009884;
+  height: 50px;
+  width: auto
+}
+
+.DesignSystem__CardSpacing--withBg {
+  background-color: #c4f0eb;
+  box-sizing: border-box
+}
+
+.DesignSystem__CardSpacing--withoutBg {
+  border: inherit
+}
+
+.DesignSystem__CardSpacing--withoutBg>div {
+  background-color: transparent
+}
+
+.DesignSystem__CardSpacing--withoutBorder {
+  border: none
+}

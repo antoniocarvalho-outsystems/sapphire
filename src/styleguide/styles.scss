@@ -7,360 +7,405 @@
 
 // Reset
 body {
-	background-color: $regular-white;
-	margin: 0;
+  background-color: $regular-white;
+  margin: 0;
 }
 
 // Variables
-$styleguide-menu-item-height: 34px;
+$styleguide-menu-item-height: 28px;
 $styleguide-main-content-padding: 50px;
 
 // Mixins
 @mixin styleguide-menu-item-style {
-	color: $regular-beta;
-	display: block;
-	font-family: $font-family-latin-regular;
-	height: $styleguide-menu-item-height;
-	line-height: $styleguide-menu-item-height;
-	padding: 0 10px;
-	transition: all 0.25s;
+  color: $regular-beta;
+  display: block;
+  font-family: $font-family-latin-regular;
+  height: $styleguide-menu-item-height;
+  line-height: $styleguide-menu-item-height;
+  padding: 0 10px;
+  transition: all 0.25s;
 
-	&:hover {
-		background-color: $regular-zeta;
-	}
+  &:hover {
+    background-color: $regular-zeta;
+  }
 }
 
 .DesignSystem {
-	font-family: $font-family-latin-regular;
-	font-size: 14px;
-
-	&__Aside {
-		background-color: $regular-white;
-		border-right: 1px solid $light-grey;
-		height: 100vh;
-		position: relative;
-		position: fixed;
-		width: 220px;
-
-		input[type='text'] {
-			height: $styleguide-menu-item-height;
-			line-height: $styleguide-menu-item-height;
-			margin: 0;
-			width: 100%;
-		}
-	}
-
-	&__AsideHeader {
-		@include flex-center-total;
-
-		flex-direction: column;
-		padding: 10px;
-
-		.icon {
-			color: $regular-beta;
-			font-size: 5em;
-			margin: 10px 0 20px 0;
-		}
-	}
-
-	&__Menu {
-		@include component-scroll-root(0);
-
-		height: calc(100vh - 185px);
-		margin-top: 15px;
-		overflow-y: auto;
-	}
-
-	&__MenuSection {
-		margin-bottom: 25px;
-
-		a,
-		a:link,
-		a:visited {
-			@include styleguide-menu-item-style;
-		}
-	}
-
-	&__MenuSubSection {
-		height: $styleguide-menu-item-height;
-		overflow: hidden;
-		padding: 0 10px;
-
-		&--expanded {
-			background-color: $regular-eta;
-			height: auto;
-			overflow: visible;
-
-			.DesignSystem__MenuItemSection::after {
-				content: ' ';
-				top: 40%;
-				transform: rotate(180deg) translateY(-40%);
-			}
-		}
-
-		a,
-		a:link,
-		a:visited {
-			margin: 0 -20px;
-			padding: 0 30px;
-		}
-	}
-
-	&__MenuItemSection {
-		@include styleguide-menu-item-style;
-
-		cursor: pointer;
-		margin: 0 -20px;
-		padding: 0 20px;
-		position: relative;
-
-		&::after {
-			@include arrow-down-simple;
-			@include absolute-center-vertically(45%);
-
-			content: ' ';
-			right: 25px;
-			transform: rotate(90deg) translateY(-45%);
-			transition: all 0.15s;
-		}
-	}
-
-	&__MenuTitle {
-		color: $dark-grey;
-		display: block;
-		font-family: $font-family-latin-bold;
-		font-size: 1.143em;
-		margin-bottom: 10px;
-		padding: 0 10px;
-		text-transform: uppercase;
-	}
-
-	&__Locale {
-		@include flex-custom-align(center, flex-end);
-
-		font-family: $font-family-latin-bold;
-		width: 100%;
-
-		.ToggleButton {
-			margin-right: -7px;
-			transform: scale(0.7);
-		}
-	}
-
-	// Content
-	&__MainContent {
-		padding-left: 220px;
-	}
-
-	&__MainHeader {
-		@include flex-custom-align(flex-start, center);
-
-		background-color: $body-color;
-		flex-direction: column;
-		padding: 10px $styleguide-main-content-padding 20px;
-
-		span {
-			color: $sapphire-color-text-light;
-		}
-
-		span:first-child {
-			font-size: 3em;
-		}
-
-		span:last-child {
-			font-size: 1.071em;
-		}
-	}
-
-	&__Content {
-		background-color: $regular-white;
-		padding: $styleguide-main-content-padding;
-	}
-
-	&__ListFlex {
-		display: grid;
-		grid-gap: 1rem;
-		grid-template-columns: repeat(auto-fill, 175px);
-		justify-content: space-between;
-
-		&--medium {
-			@extend .DesignSystem__ListFlex;
-
-			grid-template-columns: repeat(auto-fill, 300px);
-		}
-	}
-
-	&__DefaultSection {
-		border: 1px solid $light-grey;
-		border-radius: 1px;
-		display: flex;
-		padding: 20px;
-		position: relative;
-
-		&--withCards {
-			@extend .DesignSystem__DefaultSection;
-
-			display: inherit;
-			padding: 10px 20px;
-
-			.DesignSystem__ContentCard {
-				border: none;
-			}
-		}
-
-		&--simple {
-			@extend .DesignSystem__DefaultSection;
-
-			> * {
-				padding: 0 10px;
-			}
-
-			> div:first-child {
-				@include flex-custom-align(center, unset);
-
-				flex: 1;
-			}
-
-			> div:last-child {
-				@include flex-custom-align(center, space-between);
-
-				min-width: 550px;
-			}
-		}
-
-		&--block {
-			@extend .DesignSystem__DefaultSection;
-
-			display: block;
-		}
-
-		&--withWebBlock {
-			@extend .DesignSystem__DefaultSection;
-
-			flex-direction: column;
-			padding-top: 45px;
-
-			.SectionExpandable_headerCustom {
-				max-height: 40px;
-
-				.PlaceHolderTitle {
-					font-family: $font-family-latin-regular;
-					font-size: 1em;
-				}
-			}
-		}
-
-		&--aboutWebBlock {
-			@extend .DesignSystem__DefaultSection;
-
-			align-items: center;
-
-			.icon {
-				color: $light-grey;
-				font-size: 3em;
-				padding-top: 4px;
-			}
-		}
-	}
-
-	&__AlertInfoSection {
-		background-color: $regular-alpha;
-		color: $regular-white;
-		padding: 3px 15px;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 100%;
-	}
-
-	// ContentCard
-	&__ContentCard {
-		border: 1px solid $light-grey;
-		border-radius: 2px;
-		display: flex;
-		flex-direction: column;
-		height: 170px;
-		overflow: hidden;
-		width: 175px;
-
-		&--sizeAuto {
-			height: auto;
-			width: auto;
-
-			> div:first-child > div {
-				width: 100%;
-			}
-		}
-
-		> div:first-child {
-			@include flex-center-total;
-
-			flex: 1;
-			padding: 20px 10px;
-		}
-
-		> div:last-child {
-			font-family: $font-family-latin-bold;
-			font-size: 0.857em;
-			padding: 8px 10px;
-		}
-	}
-
-	// ContentCard
-	&__FormField {
-		display: grid;
-		row-gap: 5px;
-		width: 100%;
-
-		textarea,
-		input:not([type='checkbox']):not([type='radio']) {
-			display: block;
-			width: 100%;
-		}
-
-		&--validation {
-			@extend .DesignSystem__FormField;
-
-			.ValidationMessageContainer .ValidationMessage {
-				display: block !important;
-
-				&::after {
-					content: 'This field is required';
-				}
-			}
-		}
-	}
-
-	&__CardSpacing {
-		border: 1px dashed $mid-light-grey;
-
-		> div {
-			background-color: $regular-beta;
-			height: 50px;
-			width: auto;
-		}
-
-		&--withBg {
-			@extend .DesignSystem__CardSpacing;
-
-			background-color: $regular-zeta;
-			box-sizing: border-box;
-		}
-
-		&--withoutBg {
-			@extend .DesignSystem__CardSpacing;
-
-			border: inherit;
-
-			> div {
-				background-color: transparent;
-			}
-		}
-
-		&--withoutBorder {
-			@extend .DesignSystem__CardSpacing;
-
-			border: none;
-		}
-	}
+  font-family: $font-family-latin-regular;
+  font-size: 14px;
+
+  &__Aside {
+    background-color: $regular-white;
+    border-right: 1px solid $light-grey;
+    height: 100vh;
+    position: relative;
+    position: fixed;
+    width: 220px;
+  }
+
+  &__Input {
+    position: relative;
+    width: 100%;
+
+    >.icon {
+      @include absolute-center();
+      color: $regular-beta;
+      cursor: pointer;
+      display: none;
+      font-size: 16px;
+      left: auto;
+      right: 5px;
+    }
+
+    input[type='text'] {
+      height: $styleguide-menu-item-height;
+      line-height: $styleguide-menu-item-height;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &__AsideHeader {
+    @include flex-center-total;
+    flex-direction: column;
+    padding: 10px;
+
+    >.icon {
+      color: $regular-beta;
+      font-size: 5em;
+      margin: 10px 0 20px 0;
+    }
+  }
+
+  &__Toggler {
+    display: flex;
+
+    a {
+      flex: 1 1 0;
+      margin: 0 10px;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+  }
+
+  &__Menu {
+    @include component-scroll-root(0);
+
+    height: calc(100vh - 185px);
+    margin-top: 15px;
+    overflow-y: auto;
+  }
+
+  &__MenuSection {
+    font-weight: 700;
+    margin-bottom: 25px;
+
+    a,
+    a:link,
+    a:visited {
+      @include styleguide-menu-item-style;
+      font-weight: 400;
+    }
+  }
+
+  &__MenuSubSection {
+    height: $styleguide-menu-item-height;
+    overflow: hidden;
+    padding: 0 10px;
+
+    &--expanded {
+      // background-color: $regular-eta;
+      height: auto;
+      overflow: visible;
+
+      .DesignSystem__MenuItemSection::after {
+        content: ' ';
+        top: 40%;
+        transform: rotate(180deg) translateY(-40%);
+      }
+    }
+
+    a,
+    a:link,
+    a:visited {
+      margin: 0 -20px;
+      padding: 0 30px;
+
+      &.active {
+        background-color: $regular-alpha;
+        color: #fff;
+      }
+    }
+
+
+
+  }
+
+  &__MenuItemSection {
+    @include styleguide-menu-item-style;
+
+    cursor: pointer;
+    margin: 0 -20px;
+    padding: 0 20px;
+    position: relative;
+
+    &::after {
+      @include arrow-down-simple;
+      @include absolute-center-vertically(45%);
+
+      content: ' ';
+      right: 25px;
+      transform: rotate(90deg) translateY(-45%);
+      transition: all 0.15s;
+    }
+  }
+
+  &__MenuTitle {
+    color: $dark-grey;
+    display: block;
+    font-family: $font-family-latin-bold;
+    font-size: 1.143em;
+    margin-bottom: 0;
+    padding: 0 10px;
+    text-transform: uppercase;
+  }
+
+  &__Locale {
+    @include flex-custom-align(center, flex-end);
+
+    font-family: $font-family-latin-bold;
+    width: 100%;
+
+    .ToggleButton {
+      margin-right: -7px;
+      transform: scale(0.7);
+    }
+  }
+
+  // Content
+  &__MainContent {
+    padding-left: 220px;
+  }
+
+  &__MainHeader {
+    @include flex-custom-align(flex-start, center);
+
+    background-color: $body-color;
+    flex-direction: column;
+    padding: 10px $styleguide-main-content-padding 20px;
+
+    span {
+      color: $sapphire-color-text-light;
+    }
+
+    span:first-child {
+      font-size: 3em;
+    }
+
+    span:last-child {
+      font-size: 1.071em;
+    }
+  }
+
+  &__Content {
+    background-color: $regular-white;
+    padding: $styleguide-main-content-padding;
+  }
+
+  &__ListFlex {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, 175px);
+    justify-content: space-between;
+
+    &--medium {
+      @extend .DesignSystem__ListFlex;
+
+      grid-template-columns: repeat(auto-fill, 300px);
+    }
+  }
+
+  &__DefaultSection {
+    border: 1px solid $light-grey;
+    border-radius: 1px;
+    display: flex;
+    padding: 20px;
+    position: relative;
+
+    &--withCards {
+      @extend .DesignSystem__DefaultSection;
+
+      display: inherit;
+      padding: 10px 20px;
+
+      .DesignSystem__ContentCard {
+        border: none;
+      }
+    }
+
+    &--simple {
+      @extend .DesignSystem__DefaultSection;
+
+      >* {
+        padding: 0 10px;
+      }
+
+      >div:first-child {
+        @include flex-custom-align(center, unset);
+
+        flex: 1;
+      }
+
+      >div:last-child {
+        @include flex-custom-align(center, space-between);
+
+        min-width: 550px;
+      }
+    }
+
+    &--block {
+      @extend .DesignSystem__DefaultSection;
+
+      display: block;
+    }
+
+    &--withWebBlock {
+      @extend .DesignSystem__DefaultSection;
+
+      flex-direction: column;
+      padding-top: 45px;
+
+      .SectionExpandable_headerCustom {
+        max-height: 40px;
+
+        .PlaceHolderTitle {
+          font-family: $font-family-latin-regular;
+          font-size: 1em;
+        }
+      }
+    }
+
+    &--aboutWebBlock {
+      @extend .DesignSystem__DefaultSection;
+
+      align-items: center;
+
+      .icon {
+        color: $light-grey;
+        font-size: 3em;
+        padding-top: 4px;
+      }
+    }
+  }
+
+  &__AlertInfoSection {
+    background-color: $regular-alpha;
+    color: $regular-white;
+    padding: 3px 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  // ContentCard
+  &__ContentCard {
+    border: 1px solid $light-grey;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    overflow: hidden;
+    width: 175px;
+
+    &--sizeAuto {
+      height: auto;
+      width: auto;
+
+      >div:first-child>div {
+        width: 100%;
+      }
+    }
+
+    >div:first-child {
+      @include flex-center-total;
+
+      flex: 1;
+      padding: 20px 10px;
+    }
+
+    >div:last-child {
+      font-family: $font-family-latin-bold;
+      font-size: 0.857em;
+      padding: 8px 10px;
+    }
+  }
+
+  // ContentCard
+  &__FormField {
+    display: grid;
+    row-gap: 5px;
+    width: 100%;
+
+    textarea,
+    input:not([type='checkbox']):not([type='radio']) {
+      display: block;
+      width: 100%;
+    }
+
+    &--validation {
+      @extend .DesignSystem__FormField;
+
+      .ValidationMessageContainer .ValidationMessage {
+        display: block !important;
+
+        &::after {
+          content: 'This field is required';
+        }
+      }
+    }
+  }
+
+  &__CardSpacing {
+    border: 1px dashed $mid-light-grey;
+
+    >div {
+      background-color: $regular-beta;
+      height: 50px;
+      width: auto;
+    }
+
+    &--withBg {
+      @extend .DesignSystem__CardSpacing;
+
+      background-color: $regular-zeta;
+      box-sizing: border-box;
+    }
+
+    &--withoutBg {
+      @extend .DesignSystem__CardSpacing;
+
+      border: inherit;
+
+      >div {
+        background-color: transparent;
+      }
+    }
+
+    &--withoutBorder {
+      @extend .DesignSystem__CardSpacing;
+
+      border: none;
+    }
+  }
+
+  .Section {
+    margin-bottom: 150px;
+  }
 }
