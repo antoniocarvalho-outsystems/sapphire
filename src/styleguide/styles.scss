@@ -12,7 +12,7 @@ body {
 }
 
 // Variables
-$styleguide-menu-item-height: 34px;
+$styleguide-menu-item-height: 28px;
 $styleguide-main-content-padding: 50px;
 
 // Mixins
@@ -41,6 +41,21 @@ $styleguide-main-content-padding: 50px;
 		position: relative;
 		position: fixed;
 		width: 220px;
+	}
+
+	&__Input {
+		position: relative;
+		width: 100%;
+
+		> .icon {
+			@include absolute-center();
+			color: $regular-alpha;
+			cursor: pointer;
+			display: none;
+			font-size: 14px;
+			left: auto;
+			right: 5px;
+		}
 
 		input[type='text'] {
 			height: $styleguide-menu-item-height;
@@ -52,14 +67,32 @@ $styleguide-main-content-padding: 50px;
 
 	&__AsideHeader {
 		@include flex-center-total;
-
+		background-color: #f3f3f3;
 		flex-direction: column;
 		padding: 10px;
 
-		.icon {
+		> .icon {
 			color: $regular-beta;
 			font-size: 5em;
 			margin: 10px 0 20px 0;
+		}
+	}
+
+	&__Toggler {
+		display: flex;
+		margin-top: 12px;
+		width: 100%;
+
+		a {
+			flex: 1 1 0;
+
+			&:last-child {
+				text-align: right;
+			}
+		}
+
+		.icon {
+			font-size: 30px;
 		}
 	}
 
@@ -72,12 +105,20 @@ $styleguide-main-content-padding: 50px;
 	}
 
 	&__MenuSection {
+		font-weight: 700;
 		margin-bottom: 25px;
+		padding-right: 5px;
 
 		a,
 		a:link,
 		a:visited {
 			@include styleguide-menu-item-style;
+			font-weight: 400;
+
+			&.active {
+				background-color: $regular-alpha;
+				color: #fff;
+			}
 		}
 	}
 
@@ -87,7 +128,6 @@ $styleguide-main-content-padding: 50px;
 		padding: 0 10px;
 
 		&--expanded {
-			background-color: $regular-eta;
 			height: auto;
 			overflow: visible;
 
@@ -101,8 +141,20 @@ $styleguide-main-content-padding: 50px;
 		a,
 		a:link,
 		a:visited {
-			margin: 0 -20px;
+			margin: 0 -13px 0 -20px;
 			padding: 0 30px;
+
+			&.active {
+				background-color: $regular-alpha;
+				color: #fff;
+			}
+		}
+
+		&--inactive {
+			* {
+				color: $sapphire-color-text-lighter !important;
+				font-weight: 400;
+			}
 		}
 	}
 
@@ -110,7 +162,7 @@ $styleguide-main-content-padding: 50px;
 		@include styleguide-menu-item-style;
 
 		cursor: pointer;
-		margin: 0 -20px;
+		margin: 0 -13px 0 -20px;
 		padding: 0 20px;
 		position: relative;
 
@@ -130,7 +182,7 @@ $styleguide-main-content-padding: 50px;
 		display: block;
 		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 		padding: 0 10px;
 		text-transform: uppercase;
 	}
@@ -138,7 +190,8 @@ $styleguide-main-content-padding: 50px;
 	&__Locale {
 		@include flex-custom-align(center, flex-end);
 
-		font-family: $font-family-latin-bold;
+		font-family: $font-family-latin-regular;
+		font-size: 12px;
 		width: 100%;
 
 		.ToggleButton {
@@ -362,5 +415,9 @@ $styleguide-main-content-padding: 50px;
 
 			border: none;
 		}
+	}
+
+	.Section {
+		margin-bottom: 150px;
 	}
 }

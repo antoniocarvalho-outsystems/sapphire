@@ -1,263 +1,273 @@
 @mixin common-supercard-size-style($width: 0) {
-	padding: 5px 15px;
-	width: $width;
+  padding: 5px 15px;
+  width: $width;
 }
 
-.LayoutBase .SuperCard {
-	border: 1px solid $light-grey;
-	border-radius: 1px;
-	color: $dark-grey;
-	display: table;
-	min-height: 84px;
-	width: 100%;
+.DesignSystem,
+.LayoutBlank,
+.LayoutBase {
+  .SuperCard {
+    border: 1px solid $light-grey;
+    border-radius: 1px;
+    color: $dark-grey;
+    display: table;
+    min-height: 84px;
+    width: 100%;
 
-	&.Dashed {
-		border-style: dashed;
-	}
+    &.Dashed {
+      border-style: dashed;
+    }
 
-	&.BorderNone {
-		border-color: transparent;
-	}
+    &.BorderNone {
+      border-color: transparent;
+    }
 
-	&_Left {
-		background-color: $body-color;
-		width: 0;
+    &_Left {
+      background-color: $body-color;
+      width: 0;
 
-		> div {
-			vertical-align: middle;
-		}
+      >div {
+        vertical-align: middle;
+      }
 
-		// Sizes
-		&.ExtraTiny {
-			@include common-supercard-size-style(55px);
-		}
+      // Sizes
+      &.ExtraTiny {
+        @include common-supercard-size-style(55px);
+      }
 
-		&.Tiny {
-			@include common-supercard-size-style(100px);
-		}
+      &.Tiny {
+        @include common-supercard-size-style(100px);
+      }
 
-		&.ExtraSmall {
-			@include common-supercard-size-style(150px);
-		}
+      &.ExtraSmall {
+        @include common-supercard-size-style(150px);
+      }
 
-		&.Small {
-			@include common-supercard-size-style(200px);
-		}
+      &.Small {
+        @include common-supercard-size-style(200px);
+      }
 
-		&.SmallMedium {
-			@include common-supercard-size-style(250px);
-		}
+      &.SmallMedium {
+        @include common-supercard-size-style(250px);
+      }
 
-		&.Medium {
-			@include common-supercard-size-style(300px);
-		}
+      &.Medium {
+        @include common-supercard-size-style(300px);
+      }
 
-		&.MediumLarge {
-			@include common-supercard-size-style(350px);
-		}
+      &.MediumLarge {
+        @include common-supercard-size-style(350px);
+      }
 
-		&.Large {
-			@include common-supercard-size-style(400px);
-		}
+      &.Large {
+        @include common-supercard-size-style(400px);
+      }
 
-		&.ExtraLarge {
-			@include common-supercard-size-style(450px);
-		}
+      &.ExtraLarge {
+        @include common-supercard-size-style(450px);
+      }
 
-		&.Gigantic {
-			@include common-supercard-size-style(500px);
-		}
+      &.Gigantic {
+        @include common-supercard-size-style(500px);
+      }
 
-		&.ExtraGigantic {
-			@include common-supercard-size-style(550px);
-		}
+      &.ExtraGigantic {
+        @include common-supercard-size-style(550px);
+      }
 
-		&.Colossal {
-			@include common-supercard-size-style(600px);
-		}
+      &.Colossal {
+        @include common-supercard-size-style(600px);
+      }
 
-		// Colors
-		&.BgWhite {
-			background-color: $regular-white;
-		}
+      // Colors
+      &.BgWhite {
+        background-color: $regular-white;
+      }
 
-		&.BgYellow {
-			background-color: $light-beige;
-		}
+      &.BgYellow {
+        background-color: $light-beige;
+      }
 
-		&.BgRed {
-			background-color: $light-pink-2;
-		}
+      &.BgRed {
+        background-color: $light-pink-2;
+      }
 
-		&.BgDarkRed {
-			background-color: $light-red;
-		}
+      &.BgDarkRed {
+        background-color: $light-red;
+      }
 
-		&.BgGrey {
-			background-color: $light-grey;
-		}
+      &.BgGrey {
+        background-color: $light-grey;
+      }
 
-		&.BgLightGrey {
-			background-color: $body-color;
-		}
+      &.BgLightGrey {
+        background-color: $body-color;
+      }
 
-		&.BgGreen {
-			background-color: $light-green;
-		}
+      &.BgGreen {
+        background-color: $light-green;
+      }
 
-		&.BgBlue {
-			background-color: $light-blue-2;
-		}
+      &.BgBlue {
+        background-color: $light-blue-2;
+      }
 
-		&.BgPink {
-			background-color: $light-pink-2;
-		}
+      &.BgPink {
+        background-color: $light-pink-2;
+      }
 
-		&.BgBrown {
-			background-color: $regular-beige;
-		}
+      &.BgBrown {
+        background-color: $regular-beige;
+      }
 
-		// Border Left
-		&.BorderBlue {
-			border-left: 2px solid $sapphire-blue;
-			border-right: 0;
+      // Border Left
+      &.BorderBlue {
+        border-left: 2px solid $sapphire-blue;
+        border-right: 0;
 
-			span {
-				color: $sapphire-blue;
-			}
-		}
+        span {
+          color: $sapphire-blue;
+        }
+      }
 
-		&.BorderGreen {
-			border-left: 2px solid $dark-green;
-			border-right: 0;
+      &.BorderGreen {
+        border-left: 2px solid $dark-green;
+        border-right: 0;
 
-			span {
-				color: $dark-green;
-			}
-		}
+        span {
+          color: $dark-green;
+        }
+      }
 
-		&.BorderRed {
-			border-left: 2px solid $regular-red;
-			border-right: 0;
+      &.BorderRed {
+        border-left: 2px solid $regular-red;
+        border-right: 0;
 
-			span {
-				color: $regular-red;
-			}
-		}
+        span {
+          color: $regular-red;
+        }
+      }
 
-		&.BorderDarkRed {
-			border-left: 2px solid $dark-red;
-			border-right: 0;
+      &.BorderDarkRed {
+        border-left: 2px solid $dark-red;
+        border-right: 0;
 
-			span {
-				color: $dark-red;
-			}
-		}
+        span {
+          color: $dark-red;
+        }
+      }
 
-		&.BorderPink {
-			border-left: 2px solid $dark-pink;
-			border-right: 0;
+      &.BorderPink {
+        border-left: 2px solid $dark-pink;
+        border-right: 0;
 
-			span {
-				color: $dark-pink;
-			}
-		}
+        span {
+          color: $dark-pink;
+        }
+      }
 
-		&.BorderBrown {
-			border-left: 2px solid $dark-beige;
-			border-right: 0;
-		}
+      &.BorderBrown {
+        border-left: 2px solid $dark-beige;
+        border-right: 0;
+      }
 
-		&.BorderGrey {
-			border-left: 2px solid $light-grey;
-			border-right: 0;
-		}
+      &.BorderGrey {
+        border-left: 2px solid $light-grey;
+        border-right: 0;
+      }
 
-		// Modifiers
-		&.NoLeftBorder {
-			border-color: transparent;
-		}
+      // Modifiers
+      &.NoLeftBorder {
+        border-color: transparent;
+      }
 
-		&.TextBlack {
-			color: $dark-grey;
-		}
+      &.TextBlack {
+        color: $dark-grey;
+      }
 
-		&.TextRed {
-			color: $regular-red;
-		}
-	}
+      &.TextRed {
+        color: $regular-red;
+      }
+    }
 
-	&_Right {
-		&.BgWhite {
-			background-color: $regular-white;
-		}
+    &_Right {
+      &.BgWhite {
+        background-color: $regular-white;
+      }
 
-		&.BgGrey {
-			background-color: $body-color;
-		}
-	}
+      &.BgGrey {
+        background-color: $body-color;
+      }
+    }
 
-	&_Left,
-	&_Right {
-		display: table-cell;
-		height: 100%;
-		vertical-align: middle;
-	}
+    &_Left,
+    &_Right {
+      display: table-cell;
+      height: 100%;
+      vertical-align: middle;
+    }
 
-	&_Right_Content {
-		padding: 5px 15px;
-		width: 70%;
-	}
+    &_Right_Content {
+      padding: 5px 15px;
+      width: 70%;
+    }
 
-	&_Right_Actions {
-		display: inline-flex;
-		justify-content: flex-end;
-		width: 30%;
-	}
+    &_Right_Actions {
+      display: inline-flex;
+      justify-content: flex-end;
+      width: 30%;
+    }
+  }
+
 }
+
+
+
+
+
 
 .AR,
 .FA {
-	.SuperCard_Right {
-		font-size: 1.143em;
-	}
+  .SuperCard_Right {
+    font-size: 1.143em;
+  }
 
-	.SuperCard_Left {
-		font-size: 1em;
+  .SuperCard_Left {
+    font-size: 1em;
 
-		&.BorderBlue {
-			border-left: 0;
-			border-right: 2px solid $sapphire-blue;
-		}
+    &.BorderBlue {
+      border-left: 0;
+      border-right: 2px solid $sapphire-blue;
+    }
 
-		&.BorderGreen {
-			border-left: 0;
-			border-right: 2px solid $dark-green;
-		}
+    &.BorderGreen {
+      border-left: 0;
+      border-right: 2px solid $dark-green;
+    }
 
-		&.BorderRed {
-			border-left: 0;
-			border-right: 2px solid $regular-red;
-		}
+    &.BorderRed {
+      border-left: 0;
+      border-right: 2px solid $regular-red;
+    }
 
-		&.BorderDarkRed {
-			border-left: 0;
-			border-right: 2px solid $dark-red;
-		}
+    &.BorderDarkRed {
+      border-left: 0;
+      border-right: 2px solid $dark-red;
+    }
 
-		&.SuperCard_Left.BorderPink {
-			border-left: 0;
-			border-right: 2px solid $dark-pink;
-		}
+    &.SuperCard_Left.BorderPink {
+      border-left: 0;
+      border-right: 2px solid $dark-pink;
+    }
 
-		&.BorderBrown {
-			border-left: 0;
-			border-right: 2px solid $dark-beige;
-		}
+    &.BorderBrown {
+      border-left: 0;
+      border-right: 2px solid $dark-beige;
+    }
 
-		&.FirstPHBorderRight {
-			border-left: 1px solid $light-grey;
-			border-right: 0;
-		}
-	}
+    &.FirstPHBorderRight {
+      border-left: 1px solid $light-grey;
+      border-right: 0;
+    }
+  }
 }
