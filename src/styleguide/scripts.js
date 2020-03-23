@@ -5,23 +5,28 @@ require('./styles.scss');
 			this.$aside = $('.DesignSystem__Aside');
 			this.$filterInput = $('#' + config.filterInput);
 			this.$filterClear = this.$filterInput.parent().find('.icon');
+
 			this.$filterInput.on('keydown', evt => {
 				if (evt.key === 'Enter') return false;
 			});
+
 			this.$filterInput.on('input', (evt) => {
-				if (this.$filterInput.val().length > 2) {
-					this.filterTerm(evt.target.value);
-					this.$filterClear.show();
-				} else {
-					const $menu = $('.DesignSystem__MenuSection');
-					$menu.find('a, .DesignSystem__MenuSection, .DesignSystem__MenuSubSection').show();
-					if (this.$filterInput.val().length > 0) {
+					if (this.$filterInput.val().length > 2) {
+						this.filterTerm(evt.target.value);
 						this.$filterClear.show();
 					} else {
-						this.$filterClear.hide();
+						const $menu = $('.DesignSystem__MenuSection');
+						$menu.find('a, .DesignSystem__MenuSection, .DesignSystem__MenuSubSection').show();
+						$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
+						if (this.$filterInput.val().length > 0) {
+							this.$filterClear.show();
+						} else {
+							this.$filterClear.hide();
+						}
 					}
 				}
-			});
+
+			);
 			this.bindEvents();
 		}
 
@@ -31,10 +36,11 @@ require('./styles.scss');
 
 		filterTerm = term => {
 			const $menu = $('.DesignSystem__MenuSection');
+			$('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--inactive');
 			$menu.find('a').each((i, el) => {
 				if ($(el).text().toLowerCase().includes(term.toLowerCase())) {
 					$(el).show();
-					$(el).parent().addClass('DesignSystem__MenuSubSection--expanded');
+					$(el).parent().addClass('DesignSystem__MenuSubSection--expanded').removeClass('DesignSystem__MenuSubSection--inactive');
 				} else {
 					$(el).hide();
 				}
@@ -70,8 +76,7 @@ require('./styles.scss');
 				const hash = window.location.hash.slice(1);
 				if (!!hash) {
 					let $content = $('.DesignSystem__Content').find('[title="' + hash + '"]');
-					if (!!$content.length)
-						$(window).scrollTop($content.offset().top);
+					if (!!$content.length) $(window).scrollTop($content.offset().top);
 				}
 				markAsideMenu(true);
 			});
@@ -86,36 +91,44 @@ require('./styles.scss');
 		markAsideMenu = (doScroll) => {
 			const hash = window.location.hash.slice(1);
 			let pathname = window.location.pathname.replace('/Styleguidev2_UI/', '');
+
 			$('.DesignSystem__MenuSection a').each((i, el) => {
-				let url = $(el).attr('href').split('?')[0];
-				let title = $(el).attr('title');
-				if (url === pathname) {
-					if (hash === title || (!hash && !title)) {
-						$(el).addClass('active');
+					let url = $(el).attr('href').split('?')[0];
+					let title = $(el).attr('title');
+
+					if (url === pathname) {
+						if (hash === title || (!hash && !title)) {
+							$(el).addClass('active');
+						} else {
+							$(el).removeClass('active');
+						}
+
+						if (!!$(el).closest('.DesignSystem__MenuSubSection').length) {
+							$(el).closest('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--expanded');
+
+							if (doScroll) {
+								let linkTopPosition = $(el).closest('.DesignSystem__MenuSubSection')[0].offsetTop;
+								$('.DesignSystem__Menu')[0].scroll(0, linkTopPosition - 230);
+							}
+						}
 					} else {
 						$(el).removeClass('active');
 					}
-					if (!!$(el).closest('.DesignSystem__MenuSubSection').length) {
-						$(el).closest('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--expanded');
-						if (doScroll) {
-							let linkTopPosition = $(el).closest('.DesignSystem__MenuSubSection')[0].offsetTop;
-							$('.DesignSystem__Menu')[0].scroll(0, linkTopPosition - 230);
-						}
-					}
-				} else {
-					$(el).removeClass('active');
 				}
-			});
+
+			);
 		}
 
 		openAll = () => {
 			$('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--expanded');
 			$('.DesignSystem__Menu')[0].scroll(0, 0);
+			$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
 		}
 
 		closeAll = () => {
 			$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--expanded');
 			$('.DesignSystem__Menu')[0].scroll(0, 0);
+			$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
 		}
 
 		SapphireWidgets.DesignSystem = {

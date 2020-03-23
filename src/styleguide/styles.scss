@@ -49,10 +49,10 @@ $styleguide-main-content-padding: 50px;
 
     >.icon {
       @include absolute-center();
-      color: $regular-beta;
+      color: $regular-alpha;
       cursor: pointer;
       display: none;
-      font-size: 16px;
+      font-size: 14px;
       left: auto;
       right: 5px;
     }
@@ -150,7 +150,13 @@ $styleguide-main-content-padding: 50px;
       }
     }
 
+    &--inactive {
+      * {
+        color: $sapphire-color-text-lighter !important;
+        font-weight: 400;
+      }
 
+    }
 
   }
 
@@ -171,6 +177,7 @@ $styleguide-main-content-padding: 50px;
       transform: rotate(90deg) translateY(-45%);
       transition: all 0.15s;
     }
+
   }
 
   &__MenuTitle {
@@ -178,7 +185,7 @@ $styleguide-main-content-padding: 50px;
     display: block;
     font-family: $font-family-latin-bold;
     font-size: 1.143em;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     padding: 0 10px;
     text-transform: uppercase;
   }
@@ -186,7 +193,8 @@ $styleguide-main-content-padding: 50px;
   &__Locale {
     @include flex-custom-align(center, flex-end);
 
-    font-family: $font-family-latin-bold;
+    font-family: $font-family-latin-regular;
+    font-size: 12px;
     width: 100%;
 
     .ToggleButton {
