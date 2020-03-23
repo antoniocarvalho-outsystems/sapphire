@@ -1,9 +1,11 @@
 @mixin common-sapphire-weekdays-style {
+	align-items: center;
 	background-color: $sapphire-white;
 	//border: 1px solid $light-grey;
 	//border-radius: 2px;
 	color: $light-grey;
-	display: inline-block;
+	display: inline-flex;
+	justify-content: center;
 	//margin: -1px 0 0 -1px;
 	padding: 10px;
 	text-align: center;
@@ -26,6 +28,15 @@
 }
 
 .CalendarWidget {
+	.Calendar_SmallDayLink {
+		align-items: center;
+		color: $sapphire-color-text-light;
+		display: flex;
+		font-weight: normal;
+		height: 30px;
+		justify-content: center;
+		width: 30px;
+	}
 	&_wrapper {
 		color: $sapphire-color-text-light;
 
@@ -182,11 +193,6 @@
 			}
 		}
 
-		.Calendar_SmallDayLink {
-			color: $sapphire-color-text-light;
-			font-weight: normal;
-		}
-
 		> a span {
 			color: $sapphire-color-text-light;
 			height: 44px;
@@ -194,19 +200,17 @@
 		}
 
 		&.CalendarWidget__Selected {
-			background-color: $regular-alpha !important;
+			background-color: $sapphire-white !important;
 			border: none !important;
-			border-radius: 50%;
 
 			.arrowLeft.green {
 				display: none;
 			}
 
-			a,
-			span {
+			span.Calendar_SmallDayLink {
 				background-color: $regular-alpha;
+				border-radius: 50%;
 				color: $sapphire-white !important;
-				display: contents;
 			}
 		}
 	}

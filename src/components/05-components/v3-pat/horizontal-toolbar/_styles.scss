@@ -35,6 +35,12 @@ div.Toolbar {
       z-index: 1;
     }
 
+    &--noarrows {
+      &:before {
+        display: none;
+      }
+    }
+
   }
 
   &__Items {
