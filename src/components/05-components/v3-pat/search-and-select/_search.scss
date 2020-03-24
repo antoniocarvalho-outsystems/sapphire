@@ -243,10 +243,12 @@
 						height: 100%;
 						padding: 0 50px;
 						width: 95%;
+
 						&::placeholder {
-							color: $regular-beta;
-							font-family: $font-family-latin-bold;
-							font-size: $font-size-normal;
+							color: $mid-light-grey;
+							font-family: $font-family-latin-regular;
+							font-size: 1em;
+							font-style: italic;
 						}
 
 						&:hover,
@@ -259,11 +261,11 @@
 					&:before {
 						align-items: center;
 						align-items: center;
-						color: $regular-alpha;
+						color: $regular-gray;
 						content: '\e690';
 						display: flex;
-						font-family: 'Sapphire-Icon-Font';
-						font-size: $font-size-heading2;
+						font-family: $font-family-icons;
+						font-size: 1.3em;
 						font-style: normal;
 						font-variant: normal;
 						font-weight: normal;
