@@ -29,21 +29,30 @@
 		vertical-align: middle;
 		width: 100%;
 
-		> div {
+		> div[id*='wtInformation'] {
+			align-items: center;
 			display: flex;
-			margin-left: 10px;
-			margin-right: auto;
-
-			> div[id*='wtInformation'] {
-				display: flex;
-			}
-
-			div {
+			> div {
 				flex: 1;
-				height: 100%;
-				margin: 0;
 			}
 		}
+
+		&___Content {
+			background-color: yellow;
+			display: flex;
+		}
+
+		// > div {
+		// 	display: flex;
+		// 	margin-left: 10px;
+		// 	margin-right: auto;
+
+		// 	div {
+		// 		flex: 1;
+		// 		height: 100%;
+		// 		margin: 0;
+		// 	}
+		// }
 
 		.InfoContainer {
 			display: flex;
