@@ -1,9 +1,9 @@
 /* Component MainInteractiveCard */
-(function($, window, document, SapphireWidgets) {
+(function ($, window, document, SapphireWidgets) {
 	var allMainInteractiveCards = [];
 	var defaultDuration = 300;
 
-	var create = function(config) {
+	var create = function (config) {
 		for (var i = 0; i < allMainInteractiveCards.length; i++) {
 			if (allMainInteractiveCards[i].config.widgetId === config.widgetId) {
 				allMainInteractiveCards.splice(i, 1);
@@ -13,9 +13,9 @@
 		allMainInteractiveCards.push(window[config.widgetId]);
 
 		if (!!!SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded && !!osAjaxBackend) {
-			osAjaxBackend.BindAfterAjaxRequest(function() {
+			osAjaxBackend.BindAfterAjaxRequest(function () {
 				var allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();
-				allMainInteractiveCards.forEach(function(element) {
+				allMainInteractiveCards.forEach(function (element) {
 					element.handleHeaderWithAbsoluteButtons();
 				});
 			});
@@ -23,7 +23,7 @@
 		}
 	};
 
-	var MainInteractiveCard = function(config) {
+	var MainInteractiveCard = function (config) {
 		var _this = this;
 		this.config = config;
 		this.isLockedOnClose = false;
@@ -47,27 +47,13 @@
 		this.$header = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header');
 		this.$headerText = this.$header.find('.MainInteractiveCard-header-text');
 		this.$body = this.$widget.find('> .MainInteractiveCard > div > .MainInteractiveCard-body');
-		this.$actions = this.$widget.find(
-			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-actions'
-		);
-		this.$caption = this.$widget.find(
-			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-caption'
-		);
-		this.$title = this.$widget.find(
-			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-title'
-		);
-		this.$subTitle = this.$widget.find(
-			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-subtitle'
-		);
-		this.$selectTrigger = this.$widget.find(
-			'> .MainInteractiveCard > .MainInteractiveCard-header > .MainInteractiveCard-header-selectable > .MainInteractiveCard-header-selectable-trigger'
-		);
-		this.$selectPlaceholder = this.$widget.find(
-			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-selectable-placeholder'
-		);
-		this.$triggerPlaceholder = this.$widget.find(
-			'> .MainInteractiveCard > .MainInteractiveCard-header-triggerAction-placeholder'
-		);
+		this.$actions = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-actions');
+		this.$caption = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-caption');
+		this.$title = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-title');
+		this.$subTitle = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-subtitle');
+		this.$selectTrigger = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header > .MainInteractiveCard-header-selectable > .MainInteractiveCard-header-selectable-trigger');
+		this.$selectPlaceholder = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-selectable-placeholder');
+		this.$triggerPlaceholder = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header-triggerAction-placeholder');
 
 		if (this.$triggerPlaceholder.find('a').length === 1) {
 			this.$trigger = this.$triggerPlaceholder.find('a');
@@ -90,8 +76,8 @@
 
 		this.attachEvents();
 
-		var observer = new MutationObserver(function(mutations) {
-			mutations.forEach(function(mutation, index) {
+		var observer = new MutationObserver(function (mutations) {
+			mutations.forEach(function (mutation, index) {
 				_this.handleHeaderWithAbsoluteButtons();
 			});
 		});
@@ -103,39 +89,29 @@
 		});
 	};
 
-	MainInteractiveCard.prototype.handleHeaderWithAbsoluteButtons = function() {
+	MainInteractiveCard.prototype.handleHeaderWithAbsoluteButtons = function () {
 		var _this = this;
 		if (!!this.$body.find('> div .MainInteractiveCard-absolute-actions').length && this.isOpen) {
-			var absoluteActionsWidth = Math.max.apply(
-				Math,
-				this.$body
-					.find('> div .MainInteractiveCard-absolute-actions')
-					.map(function() {
-						return $(this).outerWidth(true);
-					})
-					.get()
-			);
+			var absoluteActionsWidth = Math.max.apply(Math, this.$body.find('> div .MainInteractiveCard-absolute-actions').map(function () {
+				return $(this).outerWidth(true);
+			}).get());
 			var headerMaxWidth = this.$header.width() - absoluteActionsWidth;
 			if (headerMaxWidth > 10) {
-				this.$headerText.css({ maxWidth: headerMaxWidth + 'px' });
-			}
-			this.$body
-				.find('> div .MainInteractiveCard-absolute-actions .MainInteractiveCard--close')
-				.off('click')
-				.on('click', function(e) {
-					e.preventDefault();
-					_this.close();
+				this.$headerText.css({
+					maxWidth: headerMaxWidth + 'px'
 				});
+			}
+			this.$body.find('> div .MainInteractiveCard-absolute-actions .MainInteractiveCard--close').off('click').on('click', function (e) {
+				e.preventDefault();
+				_this.close();
+			});
 		} else {
-			this.$headerText.css({ maxWidth: '99%' });
+			this.$headerText.css({
+				maxWidth: '99%'
+			});
 			if (this.$widget.find('iframe').length === 1) {
-				setTimeout(function() {
-					if (
-						!!_this.$widget.find('iframe')[0] &&
-						!!_this.$widget.find('iframe')[0].contentWindow &&
-						_this.$widget.find('iframe')[0].contentWindow.SapphireWidgets &&
-						_this.$widget.find('iframe')[0].contentWindow.SapphireWidgets.ResizeParentIframe
-					) {
+				setTimeout(function () {
+					if (!!_this.$widget.find('iframe')[0] && !!_this.$widget.find('iframe')[0].contentWindow && _this.$widget.find('iframe')[0].contentWindow.SapphireWidgets && _this.$widget.find('iframe')[0].contentWindow.SapphireWidgets.ResizeParentIframe) {
 						_this.$widget.find('iframe')[0].contentWindow.SapphireWidgets.ResizeParentIframe.resize();
 					}
 				}, 500);
@@ -143,24 +119,18 @@
 		}
 	};
 
-	MainInteractiveCard.prototype.attachEvents = function() {
+	MainInteractiveCard.prototype.attachEvents = function () {
 		var _this = this;
-		this.$header
-			.find('.MainInteractiveCard--open:not([disabled])')
-			.off('click')
-			.on('click', function(e) {
-				e.preventDefault();
-				_this.open(true);
-			});
-		this.$header
-			.find('.MainInteractiveCard--close')
-			.off('click')
-			.on('click', function(e) {
-				e.preventDefault();
-				_this.close();
-			});
+		this.$header.find('.MainInteractiveCard--open:not([disabled])').off('click').on('click', function (e) {
+			e.preventDefault();
+			_this.open(true);
+		});
+		this.$header.find('.MainInteractiveCard--close').off('click').on('click', function (e) {
+			e.preventDefault();
+			_this.close();
+		});
 		if (this.allowOpening) {
-			this.$headerText.off('click').on('click', function(evt) {
+			this.$headerText.off('click').on('click', function (evt) {
 				if ($(evt.target).hasClass('Button')) {
 					// the user clicked on a Button inside the header, nothing to do here
 				} else {
@@ -182,7 +152,7 @@
 			});
 		}
 		if (this.isSelectable) {
-			this.$selectTrigger.off('click').on('click', function(e) {
+			this.$selectTrigger.off('click').on('click', function (e) {
 				if (_this.$selectPlaceholder.find('a').length === 1) {
 					_this.$selectPlaceholder.find('a').click();
 				} else {
@@ -192,7 +162,7 @@
 		}
 	};
 
-	MainInteractiveCard.prototype.open = function(sendNotify, duration) {
+	MainInteractiveCard.prototype.open = function (sendNotify, duration) {
 		var duration = duration || defaultDuration;
 		this.isOpen = true;
 		this.$card.addClass('isOpen');
@@ -234,19 +204,15 @@
 		}
 	};
 
-	MainInteractiveCard.prototype.close = function(duration) {
+	MainInteractiveCard.prototype.close = function (duration) {
 		var self = this;
 		var duration = duration || defaultDuration;
 		this.isOpen = false;
 		this.$card.removeClass('isOpen');
 		if (this.$widget.find('iframe').length === 1 && !this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')) {
-			this.$widget
-				.find('iframe')
-				.contents()
-				.find('.MainInteractiveCard-iframe-actions')
-				.css('visibility', 'hidden');
+			this.$widget.find('iframe').contents().find('.MainInteractiveCard-iframe-actions').css('visibility', 'hidden');
 		}
-		this.$body.slideUp(duration, function() {
+		this.$body.slideUp(duration, function () {
 			if (self.$card.hasClass('forceOpen')) {
 				self.$card.removeClass('forceOpen');
 			}
@@ -263,36 +229,41 @@
 		if (this.hideCaptionOnOpen) {
 			this.$caption.css('display', 'block');
 		}
-		this.$headerText.css({ maxWidth: '99%' });
+		this.$headerText.css({
+			maxWidth: '99%'
+		});
 	};
 
-	MainInteractiveCard.prototype.isOpen = function() {
+	MainInteractiveCard.prototype.isOpen = function () {
 		return this.isOpen;
 	};
 
 	SapphireWidgets.MainInteractiveCard = {
 		create: create,
-		all: function() {
+		all: function () {
 			return allMainInteractiveCards;
 		},
 	};
 })(jQuery, window, document, SapphireWidgets);
 
-$(window).load(function() {
-	if (!!!SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded) {
-		osAjaxBackend.BindAfterAjaxRequest(function() {
-			var allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();
-			allMainInteractiveCards.forEach(function(element) {
-				element.handleHeaderWithAbsoluteButtons();
+$(window).load(function () {
+	if (!!$('.MainInteractiveCard').length) {
+		if (!!!SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded) {
+			osAjaxBackend.BindAfterAjaxRequest(function () {
+				var allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();
+				allMainInteractiveCards.forEach(function (element) {
+					element.handleHeaderWithAbsoluteButtons();
+				});
 			});
-		});
-		SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded = true;
+			SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded = true;
+		}
 	}
 
-	setTimeout(function() {
+	setTimeout(function () {
 		var allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();
-		allMainInteractiveCards.forEach(function(element) {
+		allMainInteractiveCards.forEach(function (element) {
 			element.handleHeaderWithAbsoluteButtons();
 		});
 	}, 1000);
+
 });

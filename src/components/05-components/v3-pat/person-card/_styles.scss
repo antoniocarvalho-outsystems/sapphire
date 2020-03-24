@@ -299,7 +299,9 @@
 		padding: 10px;
 
 		&_width_Medium {
+			display: flex;
 			flex-basis: 15%;
+			justify-content: flex-end;
 		}
 
 		&_width_Large {

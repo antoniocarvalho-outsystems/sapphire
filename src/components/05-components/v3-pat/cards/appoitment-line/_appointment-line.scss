@@ -1,82 +1,95 @@
 .SmallStretchedContainer {
-  background-color: $sapphire-white;
-  border: 1px solid $light-grey;
-  border-bottom: 1px solid $light-grey;
-  border-top: none;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  color: $dark-grey;
-  display: table;
-  min-height: 75px;
-  position: relative;
-  width: 100%;
+	background-color: $sapphire-white;
+	border: 1px solid $light-grey;
+	border-bottom: 1px solid $light-grey;
+	border-top: none;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	color: $dark-grey;
+	display: table;
+	min-height: 75px;
+	position: relative;
+	width: 100%;
 
-  .DateContainer {
-    background-color: $light-grey;
-    color: $dark-grey;
-    display: table-cell;
-    font-size: $font-size-heading3;
-    padding: 5px;
-    vertical-align: middle;
-  }
+	.DateContainer {
+		background-color: $light-grey;
+		color: $dark-grey;
+		display: table-cell;
+		font-size: $font-size-heading3;
+		padding: 5px;
+		vertical-align: middle;
+	}
 
-  .DateContainer,
-  .StatusContainer {
-    min-width: 85px;
-  }
+	.DateContainer,
+	.StatusContainer {
+		min-width: 100px;
+	}
 
-  .InformationContainer {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
+	.InformationContainer {
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
 
-    >div {
-      display: flex;
-      margin-left: 10px;
-      margin-right: auto;
+		> div[id*='wtInformation'] {
+			align-items: center;
+			display: flex;
+			> div {
+				flex: 1;
+			}
+		}
 
-      div {
-        flex: 1;
-        height: 100%;
-        margin: 0;
-      }
-    }
+		&___Content {
+			background-color: yellow;
+			display: flex;
+		}
 
-    .InfoContainer {
-      display: flex;
-      flex-direction: column;
-      float: right;
-    }
+		// > div {
+		// 	display: flex;
+		// 	margin-left: 10px;
+		// 	margin-right: auto;
 
-    .MultiAlignLeft {
-      vertical-align: top;
-    }
-  }
+		// 	div {
+		// 		flex: 1;
+		// 		height: 100%;
+		// 		margin: 0;
+		// 	}
+		// }
 
-  .StatusContainer {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
+		.InfoContainer {
+			display: flex;
+			flex-direction: column;
+			float: right;
+		}
 
-    >div {
-      margin-left: 0;
-      margin-right: 10px;
-    }
-  }
+		.MultiAlignLeft {
+			vertical-align: top;
+		}
+	}
 
-  .icon-patient,
-  .icon-telephone {
-    color: $mid-dark-grey;
-  }
+	.StatusContainer {
+		display: table-cell;
+		text-align: right;
+		vertical-align: middle;
+
+		> div {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
+
+	.icon-patient,
+	.icon-telephone {
+		color: $mid-dark-grey;
+	}
 }
 
 .SmallStretchedContiner.Dashed {
-  border: 1px dashed $light-grey;
+	border: 1px dashed $light-grey;
 }
 
 .DateContainer {
-  >div {
-    text-align: center;
-  }
+	> div {
+		text-align: center;
+	}
 }
 
 // .desktop.hd {
@@ -87,130 +100,130 @@
 // 	}
 // }
 .phone {
-  .SmallStretchedContainer {
-    display: grid;
+	.SmallStretchedContainer {
+		display: grid;
 
-    .InformationContainer {
-      width: 100%;
-    }
+		.InformationContainer {
+			width: 100%;
+		}
 
-    .StatusContainer {
-      border-top: 1px solid $light-grey;
-    }
+		.StatusContainer {
+			border-top: 1px solid $light-grey;
+		}
 
-    .Especialist {
-      padding-left: 0;
-      padding-right: 10px;
-    }
+		.Especialist {
+			padding-left: 0;
+			padding-right: 10px;
+		}
 
-    .DateContainer {
-      display: block;
-      width: 100%;
-    }
+		.DateContainer {
+			display: block;
+			width: 100%;
+		}
 
-    .Expandable_actions {
-      >div {
-        display: inline-block;
-      }
-    }
-  }
+		.Expandable_actions {
+			> div {
+				display: inline-block;
+			}
+		}
+	}
 
-  .Expandable_actions {
-    padding: 5px;
-  }
+	.Expandable_actions {
+		padding: 5px;
+	}
 }
 
 .tablet {
-  .SmallStretchedContainer {
-    border: 1px solid $light-grey;
+	.SmallStretchedContainer {
+		border: 1px solid $light-grey;
 
-    .DateContainer {
-      display: block;
-      width: 100%;
-    }
+		.DateContainer {
+			display: block;
+			width: 100%;
+		}
 
-    .InformationContainer {
-      display: inline-block;
-      width: 50%;
-    }
+		.InformationContainer {
+			display: inline-block;
+			width: 50%;
+		}
 
-    .StatusContainer {
-      display: inline-block;
-      width: 50%;
-    }
-  }
+		.StatusContainer {
+			display: inline-block;
+			width: 50%;
+		}
+	}
 }
 
 .FA {
-  .InformationContainer {
-    div {
-      &:nth-child(3) {
-        margin-right: 10px;
-      }
-    }
+	.InformationContainer {
+		div {
+			&:nth-child(3) {
+				margin-right: 10px;
+			}
+		}
 
-    >div {
-      margin-left: auto;
-      margin-right: 10px;
-      padding-bottom: 5px;
-      padding-top: 5px;
-    }
-  }
+		> div {
+			margin-left: auto;
+			margin-right: 10px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+	}
 
-  .SmallStretchedContainer {
-    .StatusContainer {
-      >div {
-        margin-left: 10px;
-        margin-right: auto;
-      }
+	.SmallStretchedContainer {
+		.StatusContainer {
+			> div {
+				margin-left: 10px;
+				margin-right: auto;
+			}
 
-      text-align: left;
-    }
-  }
+			text-align: left;
+		}
+	}
 }
 
 .AR {
-  .InformationContainer {
-    div {
-      &:nth-child(3) {
-        margin-right: 10px;
-      }
-    }
+	.InformationContainer {
+		div {
+			&:nth-child(3) {
+				margin-right: 10px;
+			}
+		}
 
-    >div {
-      margin-left: auto;
-      margin-right: 10px;
-      padding-bottom: 5px;
-      padding-top: 5px;
-    }
-  }
+		> div {
+			margin-left: auto;
+			margin-right: 10px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+	}
 
-  .SmallStretchedContainer {
-    .StatusContainer {
-      >div {
-        margin-left: 10px;
-        margin-right: auto;
-      }
+	.SmallStretchedContainer {
+		.StatusContainer {
+			> div {
+				margin-left: 10px;
+				margin-right: auto;
+			}
 
-      text-align: left;
-    }
-  }
+			text-align: left;
+		}
+	}
 }
 
 .FA.phone {
-  .SmallStrectchedContainer {
-    .Especialist {
-      padding-left: 10px;
-      padding-right: 0;
-    }
-  }
+	.SmallStrectchedContainer {
+		.Especialist {
+			padding-left: 10px;
+			padding-right: 0;
+		}
+	}
 }
 
 .AR.phone {
-  .SmallStrectchedContainer {
-    .Especialist {
-      padding-left: 10px;
-      padding-right: 0;
-    }
-  }
+	.SmallStrectchedContainer {
+		.Especialist {
+			padding-left: 10px;
+			padding-right: 0;
+		}
+	}
 }
