@@ -71,13 +71,9 @@ require('./styles.scss');
 			this.$filterInput.val('').trigger('input');
 		});
 
-		this.$aside.on('click', '.icon.icon-plus', () => {
-			openAll();
-		});
+		this.$aside.on('click', 'a[ui="button-expand-all"]', () => openAll());
 
-		this.$aside.on('click', '.icon.icon-minus', () => {
-			closeAll();
-		});
+		this.$aside.on('click', 'a[ui="button-collapse-all"]', () => closeAll());
 
 		$(window).load(() => {
 			const hash = window.location.hash.slice(1);
@@ -144,9 +140,9 @@ require('./styles.scss');
 	};
 
 	SapphireWidgets.DesignSystem = {
-		closeAll,
 		create,
 		openAll,
+		closeAll,
 		setRTLmode,
 	};
 })(jQuery, window, SapphireWidgets);
