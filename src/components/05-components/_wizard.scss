@@ -1,169 +1,151 @@
 .WizardParent {
-  border: 1px solid $light-grey;
-  border-radius: 2px;
-
-  &_Container {
-    .WizardStep {
-
-      &,
-      a {
-        color: $regular-beta;
-      }
-    }
-  }
+	border: 1px solid $light-grey;
+	border-radius: 2px;
 }
 
 .DesignSystem .WizardStep,
 .LayoutBlank .WizardStep,
 .LayoutBase .WizardStep {
-  color: $regular-beta;
-  display: table-cell;
-  font-family: $font-family-latin-bold;
-  font-size: 1em;
-  width: 1%;
+	color: $light-grey;
+	display: table-cell;
+	font-family: $font-family-latin-bold;
+	font-size: 1em;
+	width: 1%;
 
-  &:after {
-    height: 35px;
-    right: 7px;
-  }
+	.IconWizard {
+		//background-color: $light-grey;
+		border: 1px solid $light-grey;
+		color: $light-grey;
+	}
 
-  &:before,
-  &:first-of-type:before {
-    border-bottom: 19px solid $regular-white;
-    border-top: 19px solid $regular-white;
-  }
+	&:after {
+		height: 35px;
+		right: 7px;
+	}
 
-  &:last-child:after {
-    border: 0 !important;
-  }
+	&:before,
+	&:first-of-type:before {
+		border-bottom: 19px solid $regular-white;
+		border-top: 19px solid $regular-white;
+	}
 
-  &.Past {
-    background-color: transparent;
+	&:last-child:after {
+		border: 0 !important;
+	}
 
-    &:after {
-      border-right-color: $regular-white;
-      border-top-color: $regular-white;
-    }
+	&.Past,
+	&.ActiveStep {
+		background-color: $regular-alpha;
+		color: $regular-white;
+		font-weight: inherit;
 
-    .IconWizard {
-      background-color: $regular-beta;
-      border: 1px solid $regular-beta;
-      color: $regular-white;
-    }
-  }
+		&:before {
+			border-bottom-color: $regular-alpha;
+			border-top-color: $regular-alpha;
+		}
 
-  &.ActiveStep {
-    background-color: $regular-alpha;
-    color: $regular-white;
-    font-weight: inherit;
+		a,
+		a:link,
+		a[disabled='disabled'],
+		a[disabled='disabled']:hover {
+			color: $regular-white;
+			font-family: inherit;
+		}
 
-    &:before {
-      border-bottom-color: $regular-alpha;
-      border-top-color: $regular-alpha;
-    }
+		.IconWizard {
+			background-color: $regular-white;
+			border: 1px solid $regular-white;
+			color: $regular-beta;
+		}
+	}
 
-    a,
-    a:link,
-    a[disabled='disabled'],
-    a[disabled='disabled']:hover {
-      color: $regular-white;
-      font-family: inherit;
-    }
+	&.Past,
+	&.ActiveStep {
+		.IconWizard.IconWizardWhite {
+			background-color: $regular-white;
+			border: 1px solid $regular-beta;
+			color: $regular-beta;
+		}
+	}
 
-    .IconWizard {
-      background-color: $regular-white;
-      border: 1px solid $regular-white;
-      color: $regular-beta;
-    }
-  }
+	&.LastStep,
+	&.HideArrow,
+	&.ActiveStep {
+		&:after {
+			border-right: 1px solid $regular-white;
+			border-top: 1px solid $regular-white;
+		}
+	}
 
-  &.Past,
-  &.ActiveStep {
-    .IconWizard.IconWizardWhite {
-      background-color: $regular-white;
-      border: 1px solid $regular-beta;
-      color: $regular-beta;
-    }
-  }
+	a {
+		color: $light-grey;
+		font-family: inherit;
+	}
 
-  &.LastStep,
-  &.HideArrow,
-  &.ActiveStep {
-    &:after {
-      border-right: 1px solid $regular-white;
-      border-top: 1px solid $regular-white;
-    }
-  }
-
-  a {
-    font-family: inherit;
-  }
-
-  a:disabled,
-  a[disabled='disabled'],
-  a[disabled='disabled']:hover {
-    color: $light-grey;
-  }
+	a:disabled,
+	a[disabled='disabled'],
+	a[disabled='disabled']:hover {
+		color: $light-grey;
+	}
 }
 
 .DesignSystem .IconWizard,
 .LayoutBlank .IconWizard,
 .LayoutBase .IconWizard {
-  border: 1px solid $regular-beta;
-  border-radius: 50%;
-  color: $regular-beta;
-  font-size: 0.857em;
-  height: 20px;
-  line-height: 18px;
-  margin-right: 5px;
-  text-align: center;
-  vertical-align: middle;
-  width: 21px;
+	border: 1px solid $regular-beta;
+	border-radius: 50%;
+	color: $regular-beta;
+	font-size: 0.857em;
+	height: 20px;
+	line-height: 18px;
+	margin-right: 5px;
+	text-align: center;
+	vertical-align: middle;
+	width: 21px;
 
-  &.IconWizardWhite {
-    background-color: $regular-white;
-    border: 1px solid $regular-beta;
-    color: $regular-beta;
-  }
+	&.IconWizardWhite {
+		background-color: $regular-white;
+		border: 1px solid $regular-beta;
+		color: $regular-beta;
+	}
 }
 
 .AR,
 .FA {
+	.DesignSystem .WizardStep,
+	.LayoutBlank .WizardStep,
+	.LayoutBase .WizardStep {
+		padding-right: 0;
 
-  .DesignSystem .WizardStep,
-  .LayoutBlank .WizardStep,
-  .LayoutBase .WizardStep {
-    padding-right: 0;
+		&:after {
+			border-left: 1px solid $regular-white;
+			border-right: none;
+			left: 8px;
+			right: auto;
+			transform: rotate(315deg);
+		}
 
-    &:after {
-      border-left: 1px solid $regular-white;
-      border-right: none;
-      left: 8px;
-      right: auto;
-      transform: rotate(315deg);
-    }
+		&:before {
+			border-right: 20px solid transparent;
+			right: -20px;
+		}
 
-    &:before {
-      border-right: 20px solid transparent;
-      right: -20px;
-    }
+		&.LastStep,
+		&.HideArrow,
+		&.ActiveStep {
+			&:after {
+				border: none;
+			}
+		}
 
-    &.LastStep,
-    &.HideArrow,
-    &.ActiveStep {
-      &:after {
-        border: none;
-      }
-    }
+		a,
+		a:link {
+			padding-left: 20px;
+		}
+	}
 
-    a,
-    a:link {
-      padding-left: 20px;
-    }
-  }
-
-  .IconWizard {
-    margin-left: 4px;
-    margin-right: auto;
-  }
+	.IconWizard {
+		margin-left: 4px;
+		margin-right: auto;
+	}
 }
