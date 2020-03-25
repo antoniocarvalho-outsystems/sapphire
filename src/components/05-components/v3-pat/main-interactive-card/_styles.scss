@@ -207,31 +207,6 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
   pointer-events: all;
   text-align: right;
   white-space: nowrap;
-
-  a {
-    &:nth-child(odd) {
-      margin-right: 10px;
-    }
-
-    &:nth-child(even) {
-      margin-left: 10px;
-    }
-
-    &:first-child {
-      margin-right: 0;
-    }
-
-    &:nth-child(2) {
-      margin: 0 10px;
-    }
-  }
-
-  // a:nth-child(odd) {
-  // 	margin-right: 10px;
-  // }
-  // a:nth-child(even) {
-  // 	margin-left: 10px;
-  // }
 }
 
 .GenericGallery-item .MainInteractiveCard-header-actions {
@@ -254,9 +229,9 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 }
 
 .MainInteractiveCard-header-actions>a,
+.MainInteractiveCard-header-actions>a.ButtonSquare,
 .MainInteractiveCard-header-actions>span,
 .MainInteractiveCard-header-actions>div {
-  //display: inline-block;
   margin: 0;
   vertical-align: middle;
 
@@ -266,7 +241,14 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
   }
 
   &:last-child {
-    div.iconHorizontal.OSInline {
+    margin-right: 0;
+
+    div.iconHorizontal.OSInline,
+    a.Button.Small,
+    a.ButtonLink,
+    a.ButtonSquare,
+    div.PatientHeaderActions,
+    >div.OSInline {
       margin-right: 0;
     }
   }
@@ -275,12 +257,16 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 .MainInteractiveCard-header-actions div.iconHorizontal.OSInline,
 .MainInteractiveCard-header-actions a.Button.Small,
 .MainInteractiveCard-header-actions a.ButtonLink,
+.MainInteractiveCard-header-actions a.ButtonSquare,
 .MainInteractiveCard-header-actions div.PatientHeaderActions,
-.MainInteractiveCard-header-actions a.ButtonSquare span.icon,
 .MainInteractiveCard-header-actions>div.OSInline {
   margin: 0 6px;
   vertical-align: middle;
 }
+
+
+
+
 
 @media screen and (max-width: 1024px) {
   .MainInteractiveCard-header {
@@ -332,10 +318,6 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 .MainInteractiveCard.isOpen:before {
   opacity: 1;
 }
-
-// .MainInteractiveCard.gradientWhenOpen.isOpen > .MainInteractiveCard-gradient {
-// 	opacity: 0.2;
-// }
 
 .MainInteractiveCard.allowOpening>.MainInteractiveCard-header .MainInteractiveCard-header-text {
   cursor: pointer;
