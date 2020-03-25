@@ -1,0 +1,50 @@
+.SpinnerInput_ContainerVertical {
+	.SpinnerInputVertical {
+		display: table;
+
+		input[type='number'] {
+			box-sizing: border-box;
+			text-align: center;
+			width: 52px;
+		}
+
+		.inputVertical {
+			white-space: nowrap;
+		}
+	}
+
+	.MinusVertical {
+		&:before {
+			content: '\e610';
+		}
+
+		&.DisabledSpin {
+			color: $light-grey;
+			pointer-events: none;
+		}
+	}
+
+	.PlusVertical:before {
+		content: '\e611';
+	}
+
+	.MinusVertical:before,
+	.PlusVertical:before {
+		display: block;
+		font-family: $font-family-icons;
+		font-weight: 400;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	> a {
+		cursor: pointer;
+		display: inline-block;
+		min-width: 52px;
+
+		&[disabled] {
+			color: $light-grey;
+			pointer-events: none;
+		}
+	}
+}
