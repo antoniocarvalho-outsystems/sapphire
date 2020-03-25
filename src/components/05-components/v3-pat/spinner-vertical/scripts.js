@@ -37,7 +37,7 @@
 	};
 
 	const increment = (elementId, minValue, maxValue, triggerOnChange, triggerOnInput) => {
-		var _element = $(elementId)
+		let _element = $(elementId)
 			.find('input[type="text"], input[type="number"]')
 			.first();
 		var forceInteger = $(elementId).data('forceinteger') === 'True' ? true : false;
