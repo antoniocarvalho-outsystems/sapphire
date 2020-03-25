@@ -1,151 +1,151 @@
 .IconSignal {
-	border-radius: 100%;
-	display: flex;
-	height: 80px;
-	position: relative;
-	width: 80px;
+  border-radius: 100%;
+  display: flex;
+  height: 80px;
+  position: relative;
+  width: 80px;
 }
 
 .IconSignal_icon {
-	align-items: center;
-	color: $sapphire-white;
-	display: flex;
-	font-size: 34px;
-	text-align: center;
-	width: 100%;
+  align-items: center;
+  color: $sapphire-white;
+  display: flex;
+  font-size: 34px;
+  text-align: center;
+  width: 100%;
 
-	.icon {
-		width: 100%;
-	}
+  .icon {
+    width: 100%;
+  }
 }
 
 .IconSignal_status {
-	background-color: $sapphire-white;
-	border-radius: 100%;
-	font-family: 'Sapphire-Icon-Font';
-	height: 30px;
-	position: absolute;
-	right: -5px;
-	text-align: center;
-	top: 0;
-	width: 30px;
+  background-color: $sapphire-white;
+  border-radius: 100%;
+  font-family: 'Sapphire-Icon-Font';
+  height: 30px;
+  position: absolute;
+  right: -5px;
+  text-align: center;
+  top: 0;
+  width: 30px;
 
-	&:after {
-		content: '';
-	}
+  &:after {
+    content: '';
+  }
 
-	&:before {
-		font-size: 16px;
-		left: 7px;
-		position: absolute;
-		top: 4px;
-	}
+  &:before {
+    font-size: 16px;
+    left: 7px;
+    position: absolute;
+    top: 4px;
+  }
 }
 
 .IconSignal {
-	&.None {
-		background-color: $light-grey;
+  &.None {
+    background-color: $light-grey;
 
-		.IconSignal_icon {
-			color: $regular-grey;
-		}
+    .IconSignal_icon {
+      color: $regular-grey;
+    }
 
-		.IconSignal_status {
-			display: none;
-		}
-	}
+    .IconSignal_status {
+      display: none;
+    }
+  }
 
-	&.Waiting {
-		background-color: $regular-grey;
-		color: $sapphire-white;
+  &.Waiting {
+    background-color: $regular-grey;
+    color: $sapphire-white;
 
-		.IconSignal_status {
-			display: none;
-		}
-	}
+    .IconSignal_status {
+      display: none;
+    }
+  }
 
-	&.Right {
-		background-color: $regular-green;
+  &.Right {
+    background-color: $regular-green;
 
-		.IconSignal_status:before {
-			color: $regular-green;
-			content: '\e64d';
-		}
-	}
+    .IconSignal_status:before {
+      color: $regular-green;
+      content: '\e64d';
+    }
+  }
 
-	&.Warning {
-		background-color: $regular-orange;
+  &.Warning {
+    background-color: $regular-orange;
 
-		.IconSignal_status:before {
-			color: $regular-orange;
-			content: '\e64e';
-		}
-	}
+    .IconSignal_status:before {
+      color: $regular-orange;
+      content: '\e64e';
+    }
+  }
 
-	&.Wrong {
-		background-color: $regular-red;
+  &.Wrong {
+    background-color: $regular-red;
 
-		.IconSignal_status:before {
-			color: $regular-red;
-			content: '\e604';
-			transform: rotateZ(45deg);
-		}
-	}
+    .IconSignal_status:before {
+      color: $regular-red;
+      content: '\e604';
+      transform: rotateZ(45deg);
+    }
+  }
 
-	&.Small {
-		height: 44px;
-		width: 44px;
+  &.Small {
+    height: 44px;
+    width: 44px;
 
-		.IconSignal_icon {
-			font-size: 15px;
-		}
+    .IconSignal_icon {
+      font-size: 15px;
+    }
 
-		.IconSignal_status {
-			&:before {
-				font-size: 11px;
-				left: 5px;
-				position: absolute;
-				top: 3px;
-			}
+    .IconSignal_status {
+      &:before {
+        font-size: 11px;
+        left: 5px;
+        position: absolute;
+        top: 3px;
+      }
 
-			height: 20px;
-			width: 20px;
-		}
-	}
+      height: 20px;
+      width: 20px;
+    }
+  }
 
-	&.XSmall {
-		height: 25px;
-		width: 25px;
+  &.XSmall {
+    height: 25px;
+    width: 25px;
 
-		.IconSignal_icon {
-			align-items: center;
-			color: $sapphire-white;
-			font-size: 13px;
-		}
+    .IconSignal_icon {
+      align-items: center;
+      color: $sapphire-white;
+      font-size: 13px;
+    }
 
-		&.None .IconSignal_icon {
-			color: $regular-grey;
-		}
+    &.None .IconSignal_icon {
+      color: $regular-grey;
+    }
 
-		.IconSignal_status {
-			height: 15px;
+    .IconSignal_status {
+      height: 15px;
 
-			right: -8px;
-			top: -4px;
-			width: 15px;
+      right: -8px;
+      top: -4px;
+      width: 15px;
 
-			&:before {
-				font-size: 9px;
-				left: 2px;
-				position: absolute;
-				top: 2px;
-			}
-		}
-	}
+      &:before {
+        font-size: 9px;
+        left: 2px;
+        position: absolute;
+        top: 2px;
+      }
+    }
+  }
 
-	&.HideStatus .IconSignal_status {
-		display: none;
-	}
+  &.HideStatus .IconSignal_status {
+    display: none;
+  }
 }
 
 /*Small*/
@@ -158,13 +158,13 @@
 
 .FA .IconSignal_status,
 .AR .IconSignal_status {
-	left: -5px;
-	right: auto;
+  left: -5px;
+  right: auto;
 }
 
 .FA .IconSignal.XSmall .IconSignal_status,
 .AR .IconSignal.XSmall .IconSignal_status {
-	left: -8px;
-	right: auto;
-	top: -4px;
+  left: -8px;
+  right: auto;
+  top: -4px;
 }
