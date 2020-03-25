@@ -12567,85 +12567,85 @@ a.Button.Icon:hover {
 /* 9.31 Sapphire Patterns > Controls_Custom_Patterns > SpinnerVertical *****************/
 /*-------------------------------------------------------------------------------------*/
 
-.SpinnerInputVertical {
-  display: table;
-}
+// .SpinnerInputVertical {
+//   display: table;
+// }
 
-.SpinnerInputVertical input[type='number'] {
-  background-color: #fff;
-  border: 1px solid #c8d8dc;
-  border-radius: 2px;
-  box-sizing: border-box;
-  height: 38px;
-  min-height: 38px;
-  min-width: 52px;
-  text-align: center;
-  width: 52px;
-}
+// .SpinnerInputVertical input[type='number'] {
+//   background-color: #fff;
+//   border: 1px solid #c8d8dc;
+//   border-radius: 2px;
+//   box-sizing: border-box;
+//   height: 38px;
+//   min-height: 38px;
+//   min-width: 52px;
+//   text-align: center;
+//   width: 52px;
+// }
 
-.SpinnerInput_ContainerVertical .SpinnerInputVertical .inputVertical {
-  white-space: nowrap;
-}
+// .SpinnerInput_ContainerVertical .SpinnerInputVertical .inputVertical {
+//   white-space: nowrap;
+// }
 
-.SpinnerInput_ContainerVertical .SpinnerInputVertical .inputVertical:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-}
+// .SpinnerInput_ContainerVertical .SpinnerInputVertical .inputVertical:focus {
+//   border-color: rgba(82, 168, 236, 0.8);
+//   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+// }
 
-.SpinnerInputVertical input[type='number'] {
-  background-color: #fff;
-  border: 1px solid #c8d8dc;
-  border-radius: 2px;
-  box-sizing: border-box;
-  height: 38px;
-  min-height: 38px;
-  min-width: 52px;
-  text-align: center;
-  width: 52px;
-}
+// .SpinnerInputVertical input[type='number'] {
+//   background-color: #fff;
+//   border: 1px solid #c8d8dc;
+//   border-radius: 2px;
+//   box-sizing: border-box;
+//   height: 38px;
+//   min-height: 38px;
+//   min-width: 52px;
+//   text-align: center;
+//   width: 52px;
+// }
 
-.SpinnerInput_ContainerVertical>a {
-  cursor: pointer;
-  display: inline-block;
-  min-width: 52px;
-}
+// .SpinnerInput_ContainerVertical>a {
+//   cursor: pointer;
+//   display: inline-block;
+//   min-width: 52px;
+// }
 
-.SpinnerInput_ContainerVertical>a[disabled] {
-  color: #e9e9e9;
-  pointer-events: none;
-}
+// .SpinnerInput_ContainerVertical>a[disabled] {
+//   color: #e9e9e9;
+//   pointer-events: none;
+// }
 
-.SpinnerInput_ContainerVertical>a:not([disabled]):hover {
-  background-color: transparent;
-}
+// .SpinnerInput_ContainerVertical>a:not([disabled]):hover {
+//   background-color: transparent;
+// }
 
-.SpinnerInput_ContainerVertical .MinusVertical:before,
-.SpinnerInput_ContainerVertical .PlusVertical:before {
-  display: block;
-  font-family: Sapphire-Icon-Font;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: center;
-}
+// .SpinnerInput_ContainerVertical .MinusVertical:before,
+// .SpinnerInput_ContainerVertical .PlusVertical:before {
+//   display: block;
+//   font-family: Sapphire-Icon-Font;
+//   font-weight: 400;
+//   line-height: 30px;
+//   text-align: center;
+// }
 
-.SpinnerInput_ContainerVertical .MinusVertical:before {
-  content: '\e610';
-}
+// .SpinnerInput_ContainerVertical .MinusVertical:before {
+//   content: '\e610';
+// }
 
-.SpinnerInput_ContainerVertical .PlusVertical:before {
-  content: '\e611';
-}
+// .SpinnerInput_ContainerVertical .PlusVertical:before {
+//   content: '\e611';
+// }
 
-.tablet .SpinnerInput_ContainerVertical .PlusVertical,
-.tablet .SpinnerInput_ContainerVertical .PlusVertical:hover,
-.tablet .SpinnerInput_ContainerVertical .MinusVertical,
-.tablet .SpinnerInput_ContainerVertical .MinusVertical:hover,
-.phone .SpinnerInput_ContainerVertical .PlusVertical,
-.phone .SpinnerInput_ContainerVertical .PlusVertical:hover,
-.phone .SpinnerInput_ContainerVertical .MinusVertical,
-.phone .SpinnerInput_ContainerVertical .MinusVertical:hover {
-  text-decoration: none;
-}
+// .tablet .SpinnerInput_ContainerVertical .PlusVertical,
+// .tablet .SpinnerInput_ContainerVertical .PlusVertical:hover,
+// .tablet .SpinnerInput_ContainerVertical .MinusVertical,
+// .tablet .SpinnerInput_ContainerVertical .MinusVertical:hover,
+// .phone .SpinnerInput_ContainerVertical .PlusVertical,
+// .phone .SpinnerInput_ContainerVertical .PlusVertical:hover,
+// .phone .SpinnerInput_ContainerVertical .MinusVertical,
+// .phone .SpinnerInput_ContainerVertical .MinusVertical:hover {
+//   text-decoration: none;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.32 Sapphire Patterns > Controls_Custom_Patterns > ToggleButonsFullWidth ***********/

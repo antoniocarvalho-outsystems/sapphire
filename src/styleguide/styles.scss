@@ -7,7 +7,7 @@
 
 // Reset
 body {
-	background-color: $regular-white;
+	background-color: $regular-white !important;
 	margin: 0;
 }
 
@@ -160,7 +160,7 @@ $styleguide-main-content-padding: 50px;
 
 		&--inactive {
 			* {
-				color: $sapphire-color-text-lighter !important;
+				color: $light-grey !important;
 				font-weight: 400;
 			}
 		}
