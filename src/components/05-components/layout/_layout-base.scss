@@ -1,6 +1,6 @@
 .LayoutBase {
   &-Wrapper {
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 
     &.hasFixedBottom .LayoutBase-bottomfixedcontent {
       background-color: $regular-white;
@@ -91,7 +91,7 @@
 }
 
 body.LayoutBase .os-internal-ui-widget-overlay {
-	z-index: 90 !important;
+  z-index: 90 !important;
 }
 
 .AR,

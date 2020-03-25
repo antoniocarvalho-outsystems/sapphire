@@ -14,8 +14,10 @@
 	&_option {
 		cursor: pointer;
 
-		.iconBorder {
-			border-left: 1px solid $light-grey;
+		.Button.Link {
+			margin: 0;
+			min-width: auto;
+			padding: 0 5px;
 		}
 	}
 
@@ -27,17 +29,20 @@
 
 	> div {
 		display: table-cell;
-		padding: 5px;
+		padding: 0 5px;
 		text-align: right;
 		vertical-align: middle;
 
 		&:first-child {
 			flex: 1;
+			margin-right: 8px;
 		}
 
 		&:not(:first-child) {
-			text-align: center;
-			width: 60px;
+			@include flex-center-total;
+
+			border-left: 1px solid $light-grey;
+			width: fit-content;
 		}
 
 		> .VolumeName {
