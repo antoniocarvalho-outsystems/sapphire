@@ -141,7 +141,6 @@ require('./styles.scss');
 		$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--expanded');
 		$('.DesignSystem__Menu')[0].scroll(0, 0);
 		$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
-		
 	};
 
 	SapphireWidgets.DesignSystem = {
