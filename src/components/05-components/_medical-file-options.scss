@@ -27,6 +27,12 @@
 		}
 	}
 
+	&_volumeLocation {
+		.icon {
+			font-size: 0.857em;
+		}
+	}
+
 	> div {
 		display: table-cell;
 		padding: 0 5px;
@@ -57,12 +63,28 @@
 	}
 
 	+ .Locations {
-		background-color: $body-color;
-		padding: 5px;
+		border-bottom: 1px solid $light-grey;
+		border-top: 1px solid $light-grey;
+		padding: 10px 15px;
 	}
 }
 
 .MedicalFileOptions {
+	&_addVolume {
+		@include flex-center-total;
+
+		background-color: $body-color;
+		padding: 12px 0;
+
+		a {
+			display: inherit;
+		}
+
+		.CircleElement {
+			background-color: transparent;
+		}
+	}
+
 	> div:first-child {
 		padding: 15px 20px;
 		text-align: center;
@@ -72,12 +94,6 @@
 			font-size: 1.143em;
 			margin-left: 10px;
 		}
-	}
-
-	> div:last-child {
-		border-top: 1px solid $light-grey;
-		padding: 15px 30px;
-		text-align: center;
 	}
 
 	> .VolumeList {

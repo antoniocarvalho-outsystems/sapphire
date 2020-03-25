@@ -1,143 +1,148 @@
 require('./styles.scss');
 
-(function ($, window, SapphireWidgets) {
-		const create = config => {
-			this.$aside = $('.DesignSystem__Aside');
-			this.$filterInput = $('#' + config.filterInput);
-			this.$filterClear = this.$filterInput.parent().find('.icon');
+(function($, window, SapphireWidgets) {
+	const create = config => {
+		this.$aside = $('.DesignSystem__Aside');
+		this.$filterInput = $('#' + config.filterInput);
+		this.$filterClear = this.$filterInput.parent().find('.icon');
 
-			this.$filterInput.on('keydown', evt => {
-				if (evt.key === 'Enter') return false;
-			});
+		this.$filterInput.on('keydown', evt => {
+			if (evt.key === 'Enter') return false;
+		});
 
-			this.$filterInput.on('input', (evt) => {
-					if (this.$filterInput.val().length > 2) {
-						this.filterTerm(evt.target.value);
-						this.$filterClear.show();
-					} else {
-						const $menu = $('.DesignSystem__MenuSection');
-						$menu.find('a, .DesignSystem__MenuSection, .DesignSystem__MenuSubSection').show();
-						$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
-						if (this.$filterInput.val().length > 0) {
-							this.$filterClear.show();
-						} else {
-							this.$filterClear.hide();
-						}
-					}
-				}
-
-			);
-			this.bindEvents();
-		}
-
-		const setRTLmode = () => {
-			$('.DesignSystem__MainContent').toggleClass('AR');
-		}
-
-		filterTerm = term => {
-			const $menu = $('.DesignSystem__MenuSection');
-			$('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--inactive');
-			$menu.find('a').each((i, el) => {
-				if ($(el).text().toLowerCase().includes(term.toLowerCase())) {
-					$(el).show();
-					$(el).parent().addClass('DesignSystem__MenuSubSection--expanded').removeClass('DesignSystem__MenuSubSection--inactive');
+		this.$filterInput.on('input', evt => {
+			if (this.$filterInput.val().length > 2) {
+				this.filterTerm(evt.target.value);
+				this.$filterClear.show();
+			} else {
+				const $menu = $('.DesignSystem__MenuSection');
+				$menu.find('a, .DesignSystem__MenuSection, .DesignSystem__MenuSubSection').show();
+				$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
+				if (this.$filterInput.val().length > 0) {
+					this.$filterClear.show();
 				} else {
-					$(el).hide();
+					this.$filterClear.hide();
 				}
-			});
-		}
+			}
+		});
+		this.bindEvents();
+	};
 
-		bindEvents = () => {
+	const setRTLmode = () => {
+		$('.DesignSystem__MainContent').toggleClass('AR');
+	};
 
-			this.$aside.on('click', '.DesignSystem__MenuItemSection', (e) => {
-				$(e.target).parent().toggleClass('DesignSystem__MenuSubSection--expanded');
-			});
+	filterTerm = term => {
+		const $menu = $('.DesignSystem__MenuSection');
+		$('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--inactive');
+		$menu.find('a').each((i, el) => {
+			if (
+				$(el)
+					.text()
+					.toLowerCase()
+					.includes(term.toLowerCase())
+			) {
+				$(el).show();
+				$(el)
+					.parent()
+					.addClass('DesignSystem__MenuSubSection--expanded')
+					.removeClass('DesignSystem__MenuSubSection--inactive');
+			} else {
+				$(el).hide();
+			}
+		});
+	};
 
-			this.$aside.on('click', '.DesignSystem__Menu a[title]', (e) => {
-				e.preventDefault();
-				let url = $(e.target).attr('href');
-				let title = $(e.target).attr('title');
-				window.location.href = `${url}#${title}`;
-			});
+	bindEvents = () => {
+		this.$aside.on('click', '.DesignSystem__MenuItemSection', e => {
+			$(e.target)
+				.parent()
+				.toggleClass('DesignSystem__MenuSubSection--expanded');
+		});
 
-			this.$filterClear.on('click', () => {
-				this.$filterInput.val('').trigger('input');
-			});
+		this.$aside.on('click', '.DesignSystem__Menu a[title]', e => {
+			e.preventDefault();
+			let url = $(e.target).attr('href');
+			let title = $(e.target).attr('title');
+			window.location.href = `${url}#${title}`;
+		});
 
-			this.$aside.on('click', '.icon.icon-plus', () => {
-				openAll();
-			});
+		this.$filterClear.on('click', () => {
+			this.$filterInput.val('').trigger('input');
+		});
 
-			this.$aside.on('click', '.icon.icon-minus', () => {
-				closeAll();
-			});
+		this.$aside.on('click', 'a[ui="button-expand-all"]', () => openAll());
 
-			$(window).load(() => {
-				const hash = window.location.hash.slice(1);
-				if (!!hash) {
-					let $content = $('.DesignSystem__Content').find('[title="' + hash + '"]');
-					if (!!$content.length) $(window).scrollTop($content.offset().top);
-				}
-				markAsideMenu(true);
-			});
+		this.$aside.on('click', 'a[ui="button-collapse-all"]', () => closeAll());
 
-			$(window).on('hashchange', () => {
-				$(window).scrollTop($('.DesignSystem__Content').find('[title="' + window.location.hash.slice(1) + '"]').offset().top);
-				markAsideMenu(false);
-			});
-
-		}
-
-		markAsideMenu = (doScroll) => {
+		$(window).load(() => {
 			const hash = window.location.hash.slice(1);
-			let pathname = window.location.pathname.replace('/Styleguidev2_UI/', '');
+			if (!!hash) {
+				let $content = $('.DesignSystem__Content').find('[title="' + hash + '"]');
+				if (!!$content.length) $(window).scrollTop($content.offset().top);
+			}
+			markAsideMenu(true);
+		});
 
-			$('.DesignSystem__MenuSection a').each((i, el) => {
-					let url = $(el).attr('href').split('?')[0];
-					let title = $(el).attr('title');
+		$(window).on('hashchange', () => {
+			$(window).scrollTop(
+				$('.DesignSystem__Content')
+					.find('[title="' + window.location.hash.slice(1) + '"]')
+					.offset().top
+			);
+			markAsideMenu(false);
+		});
+	};
 
-					if (url === pathname) {
-						if (hash === title || (!hash && !title)) {
-							$(el).addClass('active');
-						} else {
-							$(el).removeClass('active');
-						}
+	markAsideMenu = doScroll => {
+		const hash = window.location.hash.slice(1);
+		let pathname = window.location.pathname.replace('/Styleguidev2_UI/', '');
 
-						if (!!$(el).closest('.DesignSystem__MenuSubSection').length) {
-							$(el).closest('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--expanded');
+		$('.DesignSystem__MenuSection a').each((i, el) => {
+			let url = $(el)
+				.attr('href')
+				.split('?')[0];
+			let title = $(el).attr('title');
 
-							if (doScroll) {
-								let linkTopPosition = $(el).closest('.DesignSystem__MenuSubSection')[0].offsetTop;
-								$('.DesignSystem__Menu')[0].scroll(0, linkTopPosition - 230);
-							}
-						}
-					} else {
-						$(el).removeClass('active');
+			if (url === pathname) {
+				if (hash === title || (!hash && !title)) {
+					$(el).addClass('active');
+				} else {
+					$(el).removeClass('active');
+				}
+
+				if (!!$(el).closest('.DesignSystem__MenuSubSection').length) {
+					$(el)
+						.closest('.DesignSystem__MenuSubSection')
+						.addClass('DesignSystem__MenuSubSection--expanded');
+
+					if (doScroll) {
+						let linkTopPosition = $(el).closest('.DesignSystem__MenuSubSection')[0].offsetTop;
+						$('.DesignSystem__Menu')[0].scroll(0, linkTopPosition - 230);
 					}
 				}
+			} else {
+				$(el).removeClass('active');
+			}
+		});
+	};
 
-			);
-		}
+	openAll = () => {
+		$('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--expanded');
+		$('.DesignSystem__Menu')[0].scroll(0, 0);
+		$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
+	};
 
-		openAll = () => {
-			$('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--expanded');
-			$('.DesignSystem__Menu')[0].scroll(0, 0);
-			$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
-		}
+	closeAll = () => {
+		$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--expanded');
+		$('.DesignSystem__Menu')[0].scroll(0, 0);
+		$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
+	};
 
-		closeAll = () => {
-			$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--expanded');
-			$('.DesignSystem__Menu')[0].scroll(0, 0);
-			$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
-		}
-
-		SapphireWidgets.DesignSystem = {
-			closeAll,
-			create,
-			openAll,
-			setRTLmode,
-		}
-
-	}
-
-)(jQuery, window, SapphireWidgets);
+	SapphireWidgets.DesignSystem = {
+		create,
+		openAll,
+		closeAll,
+		setRTLmode,
+	};
+})(jQuery, window, SapphireWidgets);

@@ -178,7 +178,7 @@ a.Button.IsDefault,
 		&[disabled] {
 			@include disabled-button();
 
-			border: none;
+			border: 1px solid transparent;
 		}
 	}
 

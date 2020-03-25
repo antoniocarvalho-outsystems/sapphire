@@ -1,184 +1,183 @@
 @mixin common-toolbar-button-style($rotate-degree: 270deg) {
-  @include arrow-button;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate($rotate-degree);
+	@include arrow-button;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate($rotate-degree);
 }
 
 div.Toolbar {
-  width: 100%;
+	width: 100%;
 
-  &_container {
-    background-color: $regular-white;
-    padding-top: 11px;
-    position: relative;
+	&_container {
+		background-color: $regular-white;
+		padding-top: 11px;
+		position: relative;
 
-    &:after,
-    &:before {
-      content: '';
-      display: inline-block;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      width: 50px;
-    }
+		&:after,
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			width: 50px;
+		}
 
-    &:after {
-      background: linear-gradient(270deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
-      right: 0;
-    }
+		&:after {
+			background: linear-gradient(270deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
+			right: 0;
+		}
 
-    &:before {
-      background: linear-gradient(90deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
-      left: 0;
-      z-index: 1;
-    }
+		&:before {
+			background: linear-gradient(90deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
+			left: 0;
+			z-index: 1;
+		}
 
-    &--noarrows {
-      &:before {
-        display: none;
-      }
-    }
+		&--noarrows {
+			&:before {
+				display: none;
+			}
+		}
+	}
 
-  }
+	&__Items {
+		display: block;
+		overflow: hidden;
+		padding: 0 33px;
 
-  &__Items {
-    display: block;
-    overflow: hidden;
-    padding: 0 33px;
+		.ListRecords {
+			display: inline-flex;
 
-    .ListRecords {
-      display: inline-flex;
+			a .MenuItemWrapper {
+				border: 1px solid transparent;
+				border-bottom: 3px solid transparent;
+			}
 
-      a .MenuItemWrapper {
-        border: 1px solid transparent;
-        border-bottom: 3px solid transparent;
-      }
+			a:focus .MenuItemWrapper {
+				border: 1px solid $mid-light-grey;
+			}
+		}
+	}
 
-      a:focus .MenuItemWrapper {
-        border: 1px solid $mid-light-grey;
-      }
-    }
-  }
+	&__leftBtn {
+		@include common-toolbar-button-style;
 
-  &__leftBtn {
-    @include common-toolbar-button-style;
+		left: 5px;
+	}
 
-    left: 5px;
-  }
+	&__rightBtn {
+		@include common-toolbar-button-style(90deg);
 
-  &__rightBtn {
-    @include common-toolbar-button-style(90deg);
+		right: 5px;
+	}
 
-    right: 5px;
-  }
+	&__leftBtn.Disabled,
+	&__rightBtn.Disabled {
+		border: 1px solid $light-grey;
+		pointer-events: none;
 
-  &__leftBtn.Disabled,
-  &__rightBtn.Disabled {
-    border: 1px solid $light-grey;
-    pointer-events: none;
+		&:before {
+			color: $light-grey;
+		}
+	}
 
-    &:before {
-      color: $light-grey;
-    }
-  }
+	&.Fix {
+		background-color: $regular-white;
+		border-bottom: 4px solid $light-grey;
+		left: 0;
+		margin-left: 10px;
+		position: fixed;
+		z-index: 4;
 
-  &.Fix {
-    background-color: $regular-white;
-    border-bottom: 4px solid $light-grey;
-    left: 0;
-    margin-left: 10px;
-    position: fixed;
-    z-index: 4;
+		.Toolbar__rightBtn {
+			right: 45px;
+		}
 
-    .Toolbar__rightBtn {
-      right: 45px;
-    }
+		.MenuItemWrapper {
+			padding-bottom: 1px;
+			padding-top: 4px;
 
-    .MenuItemWrapper {
-      padding-bottom: 1px;
-      padding-top: 4px;
+			&__Label {
+				margin-top: 0;
+				padding: 6px 0;
+			}
 
-      &__Label {
-        margin-top: 0;
-        padding: 6px 0;
-      }
+			&__Items {
+				padding-top: 2px;
+			}
 
-      &__Items {
-        padding-top: 2px;
-      }
-
-      &__icon {
-        display: none;
-      }
-    }
-  }
+			&__icon {
+				display: none;
+			}
+		}
+	}
 }
 
 .MenuItemWrapper {
-  background-color: transparent;
-  border-bottom: 3px solid transparent;
-  padding: 10px 20px 15px 20px;
-  position: relative;
-  text-align: center;
-  transition: all 0.2s ease-in;
-  white-space: nowrap;
+	background-color: transparent;
+	border-bottom: 3px solid transparent;
+	padding: 10px 20px 15px 20px;
+	position: relative;
+	text-align: center;
+	transition: all 0.2s ease-in;
+	white-space: nowrap;
 
-  &:hover {
-    border-bottom: 3px solid $regular-alpha !important;
+	&:hover {
+		border-bottom: 3px solid $regular-alpha !important;
 
-    .MenuItemWrapper_Container {
-      color: $regular-beta;
-    }
-  }
+		.MenuItemWrapper_Container {
+			color: $regular-beta;
+		}
+	}
 
-  &.Active {
-    background-color: $body-color;
-    border-bottom: 3px solid $body-color;
-    border-radius: 4px 4px 0 0;
-    color: $mid-dark-grey;
-  }
+	&.Active {
+		background-color: $body-color;
+		border-bottom: 3px solid $body-color;
+		border-radius: 4px 4px 0 0;
+		color: $mid-dark-grey;
+	}
 
-  &_Container {
-    color: $mid-dark-grey;
-    transition: all 0.2s ease-in;
-  }
+	&_Container {
+		color: $mid-dark-grey;
+		transition: all 0.2s ease-in;
+	}
 
-  &__icon {
-    .icon {
-      font-size: 1.429em;
-    }
-  }
+	&__icon {
+		.icon {
+			font-size: 1.429em;
+		}
+	}
 
-  &__Label {
-    font-size: 1em;
-    font-weight: 400;
-  }
+	&__Label {
+		font-size: 1em;
+		font-weight: 400;
+	}
 
-  &_Badge {
-    background-color: $regular-red;
-    border-radius: 100%;
-    color: $regular-white;
-    font-size: 0.786em;
-    height: 18px;
-    line-height: 18px;
-    position: absolute;
-    right: 5px;
-    top: 10px;
-    width: 18px;
-  }
+	&_Badge {
+		background-color: $regular-red;
+		border-radius: 100%;
+		color: $regular-white;
+		font-size: 0.786em;
+		height: 18px;
+		line-height: 18px;
+		position: absolute;
+		right: 0;
+		top: 2px;
+		width: 18px;
+	}
 }
 
 .AR,
 .FA {
-  .Toolbar.Fix {
-    left: auto;
-    right: 0;
-  }
+	.Toolbar.Fix {
+		left: auto;
+		right: 0;
+	}
 
-  .MenuItemWrapper_Badge {
-    left: 1px;
-    right: auto;
-  }
+	.MenuItemWrapper_Badge {
+		left: 1px;
+		right: auto;
+	}
 }
