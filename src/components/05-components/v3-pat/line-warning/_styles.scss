@@ -1,55 +1,54 @@
 .LineWarns {
-	border: 1px solid $light-grey;
-	border-radius: 4px;
-	min-height: 48px;
+  border: 1px solid $light-grey;
+  border-radius: 4px;
+  min-height: 48px;
 
-	&.ColorYellowBG,
-	&.ColorLightYellowBG {
-		.LineWarns__icon {
-			color: $dark-yellow;
-		}
-	}
+  &.ColorYellowBG,
+  &.ColorLightYellowBG {
+    .LineWarns__icon {
+      color: $dark-yellow;
+    }
+  }
 
-	&.ColorRedBG,
-	&.ColorLightRedBG {
-		.LineWarns__icon {
-			color: $dark-red;
-		}
-	}
+  &.ColorRedBG,
+  &.ColorLightRedBG {
+    .LineWarns__icon {
+      color: $dark-red;
+    }
+  }
 
-	&_list {
-		display: table;
-		min-height: 48px;
-		overflow: hidden;
-		padding: 0 25px;
-		white-space: nowrap;
-		width: 100%;
+  &_list {
+    display: table;
+    min-height: 48px;
+    overflow: hidden;
+    padding: 0 25px;
+    width: 100%;
 
-		> div {
-			display: table-cell;
-			vertical-align: middle;
-		}
-	}
+    >div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
 
-	&__icon {
-		font-size: initial;
-		width: 35px;
-	}
+  &__icon {
+    font-size: initial;
+    width: 35px;
+  }
 
-	&__buttonContainer {
-		text-align: right;
-		width: 11%;
-	}
+  &__buttonContainer {
+    text-align: right;
+    width: 11%;
+  }
 
-	.LineWarningActions {
-		min-width: 10%;
-		text-align: right;
-	}
+  .LineWarningActions {
+    min-width: 10%;
+    text-align: right;
+  }
 }
 
 .AR,
 .FA {
-	.LineWarns__buttonContainer {
-		text-align: left;
-	}
+  .LineWarns__buttonContainer {
+    text-align: left;
+  }
 }
