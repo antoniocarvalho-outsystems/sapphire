@@ -1,5 +1,6 @@
 /* Component LayoutBase */
 (function ($, window, document, SapphireWidgets) {
+
 	var create = function (config) {
 		window[config.widgetId] = new LayoutBase(config);
 		SapphireWidgets.LayoutBase.widgetId = config.widgetId;
@@ -53,6 +54,7 @@
 		this.$widget = $('#' + config.widgetId);
 		this.$wrapper = this.$widget.find('.LayoutBase-Wrapper');
 		this.$spacer = this.$widget.find('.LayoutBase-spacer');
+		// this.$layoutBaseContent = this.$widget.find('.LayoutBase-Content');
 		this.$mainMenu = this.$widget.find('.LayoutBase-MainMenu');
 		this.$header = this.$widget.find('.LayoutBase-header');
 		this.$headerBody = this.$widget.find('.SapphireHeader-body');
@@ -67,6 +69,7 @@
 		this.$mainContent = this.$widget.find('.LayoutBase-MainContent');
 		this.extraPaddingEmergency = 0;
 		this.extraPaddingSecondary = 0;
+		// this.referenceHeight = null;
 		this.setupWindowEvents();
 		this.$iframeSidebar.append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>');
 		$(function () {
@@ -74,27 +77,38 @@
 			if (_this.isTopWindow) {
 				$('body').css('overflow-y', 'scroll');
 			}
-			$(window).scroll();
 		});
+		$(window).load(function () {
+			$(window).scroll();
+			// _this.referenceHeight = $('body')[0].scrollHeight;
+		})
 	};
 
 	LayoutBase.prototype.setupWindowEvents = function () {
+
 		var _this = this;
+
 		$(window).resize(function () {
 			_this.updateThresholds();
 			_this.handleOptionalContainers();
 			_this.handleLayoutTopPadding();
 			_this.handleLayoutBottomPadding();
 		});
+
 		$(window).scroll(function () {
 			window.clearTimeout(_this.layoutBaseRedrawTimer);
 			_this.layoutBaseRedrawTimer = window.setTimeout(function () {
+				// console.log('=====');
+				// console.log('window', $(window).height());
+				// console.log('scrollheight', $('body')[0].scrollHeight);
+				// console.log('referenceHeight', _this.referenceHeight);
 				_this.updateThresholds();
 				_this.handleOptionalContainers();
 				_this.handleLayoutTopPadding();
 				_this.handleLayoutBottomPadding();
-			}, 25);
+			}, 100);
 		});
+
 	};
 
 	LayoutBase.prototype.handleOptionalContainers = function () {
@@ -119,6 +133,7 @@
 		}
 
 		if (this.$secondary.length === 1 && this.$secondary.text().length > 0) {
+
 			if (this.$secondaryMenu.text().length === 0) {
 				this.$secondary.addClass('noToolbar');
 			}
@@ -128,10 +143,7 @@
 					top: this.contentThreshold + (this.$emergency.outerHeight(true) || 0),
 					width: this.$header.width(),
 				});
-				this.$secondary
-					.find('.Button.Second, .Button.Third')
-					.not('.Panel .Button.Small, .Panel .Button.Third')
-					.addClass('Small');
+				this.$secondary.find('.Button.Second, .Button.Third').not('.Panel .Button.Small, .Panel .Button.Third').addClass('Small');
 				if (this.$secondary.find('.Toolbar').length === 1) {
 					var targetToolbarWidth = $('.SapphireHeader').outerWidth(true) * 0.66;
 					this.$secondary.find('.Toolbar').width(targetToolbarWidth);
@@ -141,7 +153,24 @@
 				}
 				this.$primaryMenu.css('opacity', 0);
 				this.extraPaddingSecondary = this.$secondary.outerHeight(true);
+
+				// //
+				// var currentHeight = $('body')[0].scrollHeight;
+				// var compensation = this.referenceHeight - currentHeight;
+				// console.log(compensation);
+
+				// if (compensation <= 0) {
+				// 	// this.$layoutBaseContent.css('padding-bottom', '');
+				// } else {
+				// 	this.$layoutBaseContent.css('padding-bottom', compensation);
+				// }
+
+
+
 			} else {
+
+				// this.$layoutBaseContent.css('padding-bottom', '');
+
 				this.$secondary.removeClass('isFixed').css({
 					top: 'auto',
 					width: '100%',
@@ -167,11 +196,8 @@
 	LayoutBase.prototype.handleLayoutTopPadding = function () {
 		var paddingTop = this.contentThreshold + this.extraPaddingEmergency + this.extraPaddingSecondary;
 		this.$spacer.stop().animate({
-				height: paddingTop,
-			},
-			0,
-			'linear'
-		);
+			height: paddingTop,
+		}, 0, 'linear');
 		if (this.$topfixedContent.length === 1) {
 			this.$topfixedContent.css({
 				width: $('.LayoutBase-MainContent').width(),
@@ -206,8 +232,7 @@
 		this.topfixedContentThreshold = mainMenuHeight + headerBodyHeight;
 		this.contentThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight;
 		this.emergencyThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight;
-		this.secondaryThreshold =
-			mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;
+		this.secondaryThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;
 	};
 
 	LayoutBase.prototype.getThresholds = function () {
@@ -222,22 +247,18 @@
 	LayoutBase.prototype.openSidebarIframe = function (duration_in) {
 		var duration = duration_in >= 0 ? duration_in : 100;
 		this.$iframeSidebar.animate({
-				width: '100%',
-			},
-			duration
-		);
+			width: '100%',
+		}, duration);
 		$('body').css('overflow-y', 'scroll');
 		$('.tooltipstered').tooltipster('hide');
 	};
 
 	LayoutBase.prototype.closeSidebarIframe = function (duration_in) {
 		var duration = duration_in >= 0 ? duration_in : 100;
-		var targetWidth = this.isExpandable ? 40 : 250;
+		var targetWidth = this.isExpandable ? 40 : 262;
 		this.$iframeSidebar.animate({
-				width: targetWidth,
-			},
-			duration
-		);
+			width: targetWidth,
+		}, duration);
 		$('body').css('overflow-y', 'scroll');
 	};
 
@@ -247,4 +268,5 @@
 		openSidebarIframe: openSidebarIframe,
 		scrollToElement: scrollToElement,
 	};
+
 })(jQuery, window, document, SapphireWidgets);
