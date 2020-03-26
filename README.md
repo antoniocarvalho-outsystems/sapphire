@@ -32,7 +32,9 @@ npm run dev
 Building and publishing a new version
 
 ```
-npm run push:version
+npm run release:patch (eg 5.0.123 -> 5.0.124)
+npm run release:minor (eg 5.1 -> 5.2)
+npm run release:major (eg 5.0 -> 6.0)
 ```
 
 ## Deployment
