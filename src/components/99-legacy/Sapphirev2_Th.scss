@@ -14410,56 +14410,56 @@ a.Button.Icon:hover {
 /*-------------------------------------------------------------------------------------*/
 /* 9.47 Sapphire Patterns > Custom_Patterns > Flag *************************************/
 /*-------------------------------------------------------------------------------------*/
-.FlagContainer {
-  line-height: 30px;
-}
+// .FlagContainer {
+//   line-height: 30px;
+// }
 
-.Page .Flag {
-  position: relative;
-}
+// .Page .Flag {
+//   position: relative;
+// }
 
-.Page .PatientInfo .Flag.Kuwait {
-  background-color: #fff;
-  border-bottom: 4px solid #c8102e;
-  border-left: 7px solid #000;
-  border-right: 0;
-  border-top: 4px solid #43b02a;
-  height: 12px;
-  vertical-align: bottom;
-  width: 20px;
-}
+// .Page .PatientInfo .Flag.Kuwait {
+//   background-color: #fff;
+//   border-bottom: 4px solid #c8102e;
+//   border-left: 7px solid #000;
+//   border-right: 0;
+//   border-top: 4px solid #43b02a;
+//   height: 12px;
+//   vertical-align: bottom;
+//   width: 20px;
+// }
 
-.PatientName .Flag:after {
-  background: #fff;
-  bottom: 2px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  content: '';
-  display: inline-block;
-  height: 5px;
-  position: absolute;
-  right: -27px;
-  width: 15px;
-}
+// .PatientName .Flag:after {
+//   background: #fff;
+//   bottom: 2px;
+//   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+//   content: '';
+//   display: inline-block;
+//   height: 5px;
+//   position: absolute;
+//   right: -27px;
+//   width: 15px;
+// }
 
-.AR .PatientName .Flag:after,
-.FA .PatientName .Flag:after {
-  left: -27px;
-  right: auto;
-}
+// .AR .PatientName .Flag:after,
+// .FA .PatientName .Flag:after {
+//   left: -27px;
+//   right: auto;
+// }
 
-.PatientName .Flag.Kuwait:after {
-  border-bottom: #ce1126 solid 4px;
-  border-left: #000 solid 7px;
-  border-top: #007a3d solid 4px;
-}
+// .PatientName .Flag.Kuwait:after {
+//   border-bottom: #ce1126 solid 4px;
+//   border-left: #000 solid 7px;
+//   border-top: #007a3d solid 4px;
+// }
 
-/* Temporary Code For Flag on Header PatientDetails    by: Caj*/
-.desktop .OnlyFlagDiv,
-.desktop.small .OnlyFlagDiv,
-.tablet .OnlyFlagDiv {
-  padding-left: 10px;
-  padding-top: 2px;
-}
+// /* Temporary Code For Flag on Header PatientDetails    by: Caj*/
+// .desktop .OnlyFlagDiv,
+// .desktop.small .OnlyFlagDiv,
+// .tablet .OnlyFlagDiv {
+//   padding-left: 10px;
+//   padding-top: 2px;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.48 Sapphire Patterns > Custom_Patterns > Icon_Wizard ******************************/
