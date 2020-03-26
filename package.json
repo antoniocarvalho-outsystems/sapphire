@@ -8,7 +8,8 @@
 		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
 		"new:build": "npm run prod && git add . && git commit -m \"feat: new version\" --allow-empty && git push origin master",
 		"new:tag": "npm version patch && git push -f --tags",
-		"push:version": "npm run new:build && npm run new:tag"
+		"push:version": "npm run new:build && npm run new:tag",
+		"release": "release-it"
 	},
 	"author": "",
 	"license": "ISC",
@@ -25,6 +26,7 @@
 		"postcss-loader": "^3.0.0",
 		"prettier": "^1.19.1",
 		"prettier-stylelint": "^0.4.2",
+		"release-it": "^13.3.1",
 		"sass-loader": "^8.0.2",
 		"style-loader": "^1.1.3",
 		"stylelint": "^13.0.0",
