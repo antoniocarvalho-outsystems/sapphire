@@ -7,9 +7,7 @@
 		"dev": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js",
 		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
 		"new:build": "npm run prod && git add . && git commit -m \"feat: new version\" --allow-empty && git push origin master",
-		"new:tag": "npm version patch && git push -f --tags",
-		"push:version": "npm run new:build && npm run new:tag",
-		"release:patch": "release-it patch",
+		"release:patch": "npm run new:build && release-it patch",
 		"release:minor": "release-it minor --git.requireBranch=master",
 		"release:major": "release-it minor --git.requireBranch=master"
 	},
