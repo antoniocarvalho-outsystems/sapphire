@@ -198,18 +198,36 @@
 		$osPopupContent.height($osPopupContent.height() + diference);
 	};
 
+	const scrollToElement = function ($element) {
+		var $targetElement = $element;
+		if (!!$targetElement.length) {
+			var scrollToOffsetInterval;
+			scrollToOffsetInterval = setInterval(function () {
+				clearInterval(scrollToOffsetInterval);
+				var headerHeight = $('.LayoutPopup__header').outerHeight(true) || 0;
+				var introHeight = $('.LayoutPopup__intro').outerHeight(true) || 0;
+				var currentBodyScroll = $('.LayoutPopup__body__content')[0].scrollTop || 0;
+				var targetElementOffsetTop = $targetElement.offset().top - headerHeight - introHeight + currentBodyScroll - 20;
+				$('.LayoutPopup__body__content').scrollTop(targetElementOffsetTop);
+			}, 250);
+		}
+	}
+
 	SapphireWidgets.LayoutPopup = {
 		create,
 		resizeDialog,
 		resizeContent,
 		increaseHeight,
 		redrawDialogWindow,
+		scrollToElement
 	};
 
 })(jQuery, window, document, SapphireWidgets);
 
 $(window).unload(function () {
-	window.top.$('body').css({
-		overflowY: 'scroll'
-	});
+	if (!!$('.LayoutPopup').length) {
+		window.top.$('body').css({
+			overflowY: 'scroll'
+		});
+	}
 });
