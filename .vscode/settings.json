@@ -1,6 +1,19 @@
 {
 	"workbench.colorCustomizations": {
-		"titleBar.activeBackground": "#006758" // change this color!
+		"activityBar.background": "#009a84",
+		"activityBar.activeBackground": "#009a84",
+		"activityBar.activeBorder": "#f6bfff",
+		"activityBar.foreground": "#e7e7e7",
+		"activityBar.inactiveForeground": "#e7e7e799",
+		"activityBarBadge.background": "#f6bfff",
+		"activityBarBadge.foreground": "#15202b",
+		"titleBar.activeBackground": "#006758",
+		"titleBar.inactiveBackground": "#00675899",
+		"titleBar.activeForeground": "#e7e7e7",
+		"titleBar.inactiveForeground": "#e7e7e799",
+		"statusBar.background": "#006758",
+		"statusBarItem.hoverBackground": "#009a84",
+		"statusBar.foreground": "#e7e7e7"
 	},
 	"editor.formatOnSave": true,
 	"editor.tabSize": 2,
@@ -11,5 +24,6 @@
 	"html.format.enable": true,
 	"html.format.indentHandlebars": true,
 	"html.format.maxPreserveNewLines": 0,
-	"prettier.printWidth": 120
+	"prettier.printWidth": 120,
+	"peacock.color": "#006758"
 }
