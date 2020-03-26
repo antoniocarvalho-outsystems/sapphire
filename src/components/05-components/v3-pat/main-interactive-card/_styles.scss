@@ -170,7 +170,12 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 .MainInteractiveCard-header-text-title {
   color: $MainInteractiveCard-color-text-regular;
   font-size: $font-size-heading2;
+  max-height: 32px;
   max-width: 99%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .MainInteractiveCard-header-text-title .OSInline {
@@ -188,6 +193,7 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
   white-space: nowrap;
   width: 100%;
 }
+
 
 .MainInteractiveCard-header-text-subtitle {
   color: $MainInteractiveCard-color-subtitle;
@@ -325,6 +331,8 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 
 .MainInteractiveCard.forceOpen>div>.MainInteractiveCard-body {
   display: block !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* To be used on an embedded Web Block page inside the card */
