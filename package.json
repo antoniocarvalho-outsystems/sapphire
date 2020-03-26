@@ -9,7 +9,9 @@
 		"new:build": "npm run prod && git add . && git commit -m \"feat: new version\" --allow-empty && git push origin master",
 		"new:tag": "npm version patch && git push -f --tags",
 		"push:version": "npm run new:build && npm run new:tag",
-		"release": "release-it"
+		"release:patch": "release-it patch",
+		"release:minor": "release-it minor --git.requireBranch=master",
+		"release:major": "release-it minor --git.requireBranch=master"
 	},
 	"author": "",
 	"license": "ISC",
