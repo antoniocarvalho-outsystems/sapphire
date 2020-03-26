@@ -1,6 +1,6 @@
 require('./styles.scss');
 
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	const create = config => {
 		this.$aside = $('.DesignSystem__Aside');
 		this.$filterInput = $('#' + config.filterInput);
@@ -38,9 +38,9 @@ require('./styles.scss');
 		$menu.find('a').each((i, el) => {
 			if (
 				$(el)
-					.text()
-					.toLowerCase()
-					.includes(term.toLowerCase())
+				.text()
+				.toLowerCase()
+				.includes(term.toLowerCase())
 			) {
 				$(el).show();
 				$(el)
@@ -55,9 +55,7 @@ require('./styles.scss');
 
 	bindEvents = () => {
 		this.$aside.on('click', '.DesignSystem__MenuItemSection', e => {
-			$(e.target)
-				.parent()
-				.toggleClass('DesignSystem__MenuSubSection--expanded');
+			$(e.target).parent().toggleClass('DesignSystem__MenuSubSection--expanded');
 		});
 
 		this.$aside.on('click', '.DesignSystem__Menu a[title]', e => {
@@ -65,6 +63,8 @@ require('./styles.scss');
 			let url = $(e.target).attr('href');
 			let title = $(e.target).attr('title');
 			window.location.href = `${url}#${title}`;
+			$(window).scrollTop($('.DesignSystem__Content').find('[title="' + window.location.hash.slice(1) + '"]').offset().top);
+			markAsideMenu(false);
 		});
 
 		this.$filterClear.on('click', () => {
@@ -85,11 +85,7 @@ require('./styles.scss');
 		});
 
 		$(window).on('hashchange', () => {
-			$(window).scrollTop(
-				$('.DesignSystem__Content')
-					.find('[title="' + window.location.hash.slice(1) + '"]')
-					.offset().top
-			);
+			$(window).scrollTop($('.DesignSystem__Content').find('[title="' + window.location.hash.slice(1) + '"]').offset().top);
 			markAsideMenu(false);
 		});
 	};
@@ -99,9 +95,7 @@ require('./styles.scss');
 		let pathname = window.location.pathname.replace('/Styleguidev2_UI/', '');
 
 		$('.DesignSystem__MenuSection a').each((i, el) => {
-			let url = $(el)
-				.attr('href')
-				.split('?')[0];
+			let url = $(el).attr('href').split('?')[0];
 			let title = $(el).attr('title');
 
 			if (url === pathname) {
@@ -112,9 +106,7 @@ require('./styles.scss');
 				}
 
 				if (!!$(el).closest('.DesignSystem__MenuSubSection').length) {
-					$(el)
-						.closest('.DesignSystem__MenuSubSection')
-						.addClass('DesignSystem__MenuSubSection--expanded');
+					$(el).closest('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--expanded');
 
 					if (doScroll) {
 						let linkTopPosition = $(el).closest('.DesignSystem__MenuSubSection')[0].offsetTop;
