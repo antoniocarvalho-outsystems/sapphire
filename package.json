@@ -6,10 +6,10 @@
 	"scripts": {
 		"dev": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js",
 		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
-		"new:build": "npm run prod && git add . && git commit -m \"feat: new version\" --allow-empty && git push origin master",
+		"new:build": "npm run prod && git add . && git commit -m \"New Release\" --allow-empty && git push origin master",
 		"release:patch": "npm run new:build && release-it patch --ci",
-		"release:minor": "release-it minor --git.requireBranch=master",
-		"release:major": "release-it minor --git.requireBranch=master"
+		"release:minor": "npm run new:build && release-it minor --git.requireBranch=master",
+		"release:major": "npm run new:build && release-it major --git.requireBranch=master"
 	},
 	"author": "",
 	"license": "ISC",
