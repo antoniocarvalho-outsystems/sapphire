@@ -3,201 +3,211 @@ $NavigationControl-color-hover: $regular-zeta;
 
 .Vertical .navigation-control-item,
 .navigation-control-item:first-child {
-	border-radius: 5px;
+  border-radius: 5px;
 }
 
 .navigation-control-item {
-	border: solid 1px $NavigationControl-color-active;
-	border-radius: 5px;
-	color: $NavigationControl-color-active;
-	display: inline-block;
-	font-size: 1.09rem;
-	height: 2.733333rem;
-	height: 100%;
-	height: 2.834rem;
-	line-height: 100%;
-	min-height: 2.7333333339rem;
-	overflow: hidden;
-	position: relative;
-	vertical-align: top;
+  border: solid 1px $NavigationControl-color-active;
+  border-radius: 5px;
+  color: $NavigationControl-color-active;
+  display: inline-block;
+  font-size: 1.09rem;
+  height: 2.733333rem;
+  height: 100%;
+  height: 2.834rem;
+  line-height: 100%;
+  min-height: 2.7333333339rem;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
 
-	a {
-		color: $NavigationControl-color-active;
-	}
+  a {
+    color: $NavigationControl-color-active;
+  }
+
+  &--disabled {
+    border-color: $sapphire-color-disabled-border;
+    pointer-events: none;
+
+    a {
+      color: $sapphire-color-disabled-text;
+    }
+  }
+
 }
 
 .navigation-control-item:last-of-type {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 .AR .navigation-control-item:last-of-type {
-	margin-left: 0;
-	margin-right: 10px;
+  margin-left: 0;
+  margin-right: 10px;
 }
 
 .navigation-control-item label {
-	background-color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	height: 2.834rem;
-	line-height: 2.834rem;
-	padding: 0 0.8rem;
-	text-align: center;
-	width: 100%;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 2.834rem;
+  line-height: 2.834rem;
+  padding: 0 0.8rem;
+  text-align: center;
+  width: 100%;
 }
 
 .navigation-control-item label div.MultiMarginLeft5 {
-	display: none;
+  display: none;
 }
 
 .navigation-control-item label:hover {
-	background-color: $NavigationControl-color-hover;
+  background-color: $NavigationControl-color-hover;
 }
 
 .multi-control-item {
-	border-bottom: solid 1px #11455d;
-	border-left: solid 1px #11455d;
-	border-top: solid 1px #11455d;
-	color: #11455d;
-	display: inline-block;
-	font-size: 1.09rem;
-	min-height: 2.917rem;
-	overflow: hidden;
-	position: relative;
-	vertical-align: top;
+  border-bottom: solid 1px #11455d;
+  border-left: solid 1px #11455d;
+  border-top: solid 1px #11455d;
+  color: #11455d;
+  display: inline-block;
+  font-size: 1.09rem;
+  min-height: 2.917rem;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
 }
 
 .AR .multi-control-item {
-	border-left: none;
-	border-right: solid 1px #11455d;
+  border-left: none;
+  border-right: solid 1px #11455d;
 }
 
 .Vertical .multi-control-item {
-	display: block;
-	margin-top: 5px;
+  display: block;
+  margin-top: 5px;
 }
 
 .Vertical .multi-control-item,
 .multi-control-item:first-child {
-	border-bottom-left-radius: 5px;
-	border-left: solid 1px #11455d;
-	border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-left: solid 1px #11455d;
+  border-top-left-radius: 5px;
 }
 
 .AR .Vertical .multi-control-item,
 .AR .multi-control-item:first-child {
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 5px;
-	border-left: none;
-	border-right: solid 1px #11455d;
-	border-top-left-radius: 0;
-	border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-left: none;
+  border-right: solid 1px #11455d;
+  border-top-left-radius: 0;
+  border-top-right-radius: 5px;
 }
 
 .Vertical .multi-control-item,
 .multi-control-item:last-child {
-	border-bottom-right-radius: 5px;
-	border-right: solid 1px #11455d;
-	border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: solid 1px #11455d;
+  border-top-right-radius: 5px;
 }
 
 .AR .Vertical .multi-control-item,
 .AR .multi-control-item:last-child {
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 0;
-	border-left: solid 1px #11455d;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-left: solid 1px #11455d;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0;
 }
 
 .multi-control input {
-	left: -20px;
-	margin: 0 5px 0 0;
-	opacity: 0;
-	padding: 0;
-	position: absolute;
+  left: -20px;
+  margin: 0 5px 0 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
 }
 
 .AR .multi-control input {
-	left: auto;
-	right: -20px;
+  left: auto;
+  right: -20px;
 }
 
 .multi-control-item label {
-	background-color: rgba(255, 255, 255, 1);
-	cursor: pointer;
-	display: inline-block;
-	line-height: 2.917rem;
-	min-width: 4.583rem;
-	padding: 0 10px;
-	text-align: center;
-	vertical-align: top;
-	width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  display: inline-block;
+  line-height: 2.917rem;
+  min-width: 4.583rem;
+  padding: 0 10px;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
 }
 
 .multi-control-item label:hover,
 .multi-control-item label:focus {
-	background: #e6f3f5;
+  background: #e6f3f5;
 }
 
-.multi-control-item > input[type='radio']:checked ~ label,
-.multi-control-item > input[type='checkbox']:checked ~ label {
-	background: #11455d;
-	box-shadow: inset 2px 1px 3px rgba(100, 100, 100, 0.4);
-	color: #fff;
+.multi-control-item>input[type='radio']:checked~label,
+.multi-control-item>input[type='checkbox']:checked~label {
+  background: #11455d;
+  box-shadow: inset 2px 1px 3px rgba(100, 100, 100, 0.4);
+  color: #fff;
 }
 
-.multi-control-item > input:disabled ~ label,
-.multi-control-item > input[disabled] ~ label,
-.multi-control-item > input[readonly] ~ label {
-	background: $sapphire-color-disabled-background;
-	color: $sapphire-color-disabled-text;
-	cursor: default;
+.multi-control-item>input:disabled~label,
+.multi-control-item>input[disabled]~label,
+.multi-control-item>input[readonly]~label {
+  background: $sapphire-color-disabled-background;
+  color: $sapphire-color-disabled-text;
+  cursor: default;
 }
 
 /*IsAtached*/
 .navigation-control.IsAttached .navigation-control-item label {
-	align-items: center;
-	background-color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	display: flex;
-	height: 2.834rem;
-	line-height: unset;
-	padding: 0 0.8rem;
-	padding: 10px 20px;
-	text-align: center;
-	width: 100%;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  display: flex;
+  height: 2.834rem;
+  line-height: unset;
+  padding: 0 0.8rem;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
 }
 
 .navigation-control.IsAttached .navigation-control-item:first-of-type {
-	border-bottom-right-radius: 0;
-	border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .navigation-control.IsAttached .navigation-control-item:last-of-type {
-	border-bottom-left-radius: 0;
-	border-left: none;
-	border-top-left-radius: 0;
-	margin-left: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+  border-top-left-radius: 0;
+  margin-left: 0;
 }
 
 .navigation-control.IsAttached .navigation-control-item label:hover {
-	background-color: $NavigationControl-color-hover;
+  background-color: $NavigationControl-color-hover;
 }
 
 .FA .navigation-control.IsAttached .navigation-control-item:last-of-type,
 .AR .navigation-control.IsAttached .navigation-control-item:last-of-type {
-	margin-left: 0;
-	margin-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .AR .navigation-control {
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .AR .navigation-control-item,
 .FA .navigation-control-item {
-	cursor: pointer;
-	transform: scale(-1, 1);
+  cursor: pointer;
+  transform: scale(-1, 1);
 }
