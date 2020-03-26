@@ -1,0 +1,8 @@
+.BlankState {
+	@include blank-state;
+
+	b {
+		font-family: 'LatoBold';
+		padding: 0 3px;
+	}
+}

@@ -316,11 +316,16 @@ $styleguide-main-content-padding: 50px;
 			@extend .DesignSystem__DefaultSection;
 
 			align-items: center;
+			border-color: $regular-alpha;
 
-			.icon {
-				color: $light-grey;
+			div[ui='icon'] {
+				color: $regular-alpha;
 				font-size: 3em;
 				padding-top: 4px;
+			}
+
+			div[ui='message'] {
+				flex: 1;
 			}
 		}
 	}
