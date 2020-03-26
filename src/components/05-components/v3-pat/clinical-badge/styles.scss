@@ -2,6 +2,7 @@
 	border-radius: 2px;
 	color: $mid-light-grey;
 	height: 50px;
+	margin: 0 1px;
 	padding: 3px 5px;
 	position: relative;
 	width: 32px;
@@ -15,27 +16,18 @@
 	}
 
 	&-label {
-		bottom: 5px;
 		font-size: 12px;
-		left: 50%;
-		min-height: 16px;
-		position: absolute;
-		transform: translateX(-50%);
 	}
 
 	.icon {
-		font-size: 14px;
-		left: 50%;
-		position: absolute;
-		top: 10px;
-		transform: translateX(-50%);
+		font-size: 18px;
 	}
 }
 
 .PatientHabitsContainer {
 	height: 50px;
 
-	> .OSInline {
+	>.OSInline {
 		display: inline-block;
 		vertical-align: middle;
 	}
