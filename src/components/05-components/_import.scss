@@ -40,22 +40,24 @@
 @import 'richwidgets/feedback-message/styles';
 
 /* WebPatterns Components */
+@import 'webpatterns/alert/styles';
 @import 'webpatterns/button-dropdown/styles';
 @import 'webpatterns/button-group/styles';
+@import 'webpatterns/columns-css/styles';
+@import 'webpatterns/date-picker/styles';
 @import 'webpatterns/dropdown-menu/styles';
 @import 'webpatterns/feedback-ajax-wait/styles';
 @import 'webpatterns/icon-dropdown/styles';
 @import 'webpatterns/inline-dropdown/styles';
 @import 'webpatterns/search-wrapper/styles';
-@import 'webpatterns/date-picker/styles';
-@import 'webpatterns/columns-css/styles';
+
 
 /* V3_Pat Components */
 @import 'v3-pat/actions-menu/styles';
 @import 'v3-pat/actions-sub-menu/styles';
 @import 'v3-pat/appointment-icon/styles';
-@import 'v3-pat/badges/styles';
 @import 'v3-pat/badges-tags/styles';
+@import 'v3-pat/badges/styles';
 @import 'v3-pat/bed-information/styles';
 @import 'v3-pat/bed-slot-box/styles';
 @import 'v3-pat/blank-state/styles';

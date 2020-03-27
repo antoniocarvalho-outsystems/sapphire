@@ -1,0 +1,44 @@
+.Alert {
+  border-radius: 2px;
+  margin-bottom: 0;
+}
+
+.Alert.Info {
+  background-color: #d9edf7;
+  border-color: #c8dee9;
+  color: #31708f;
+}
+
+.Alert.Info span.fa {
+  color: #5eb1db;
+}
+
+.Alert.Success {
+  background-color: #dff0d8;
+  border-color: #cbe0ba;
+  color: #346b35;
+}
+
+.Alert.Success span.fa {
+  color: #7dc62b;
+}
+
+.Alert.Error {
+  background-color: #f5e7e7;
+  border-color: #ead8d8;
+  color: #843534;
+}
+
+.Alert.Error span.fa {
+  color: #e58d8d;
+}
+
+.Alert.Warning {
+  background-color: #fcf8e3;
+  border-color: #f1deb6;
+  color: #8a6d3b;
+}
+
+.Alert.Warning span.fa {
+  color: #eabd30;
+}
