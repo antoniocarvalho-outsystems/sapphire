@@ -63,8 +63,6 @@ require('./styles.scss');
 			let url = $(e.target).attr('href');
 			let title = $(e.target).attr('title');
 			window.location.href = `${url}#${title}`;
-			$(window).scrollTop($('.DesignSystem__Content').find('[title="' + window.location.hash.slice(1) + '"]').offset().top);
-			markAsideMenu(false);
 		});
 
 		this.$filterClear.on('click', () => {
@@ -85,10 +83,21 @@ require('./styles.scss');
 		});
 
 		$(window).on('hashchange', () => {
-			$(window).scrollTop($('.DesignSystem__Content').find('[title="' + window.location.hash.slice(1) + '"]').offset().top);
-			markAsideMenu(false);
+			scrollToHashTarget();
 		});
+
 	};
+
+	scrollToHashTarget = () => {
+		let targetById = $('.DesignSystem__Content').find('[id="' + window.location.hash.slice(1) + '"]');
+		let targetByTitle = $('.DesignSystem__Content').find('[title="' + window.location.hash.slice(1) + '"]');
+		if (!!targetById.length) {
+			$(window).scrollTop(targetById.offset().top);
+		} else {
+			$(window).scrollTop(targetByTitle.offset().top);
+		}
+		markAsideMenu(false);
+	}
 
 	markAsideMenu = doScroll => {
 		const hash = window.location.hash.slice(1);
