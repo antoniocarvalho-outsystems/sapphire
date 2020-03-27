@@ -1,22 +1,22 @@
-.LayoutBase .Appointment_Icon {
+.Page .Appointment_Icon {
 	border: 2px solid;
 	border-radius: 50%;
-	height: 15px;
-	min-width: 15px;
-	width: 15px;
+	height: 20px;
+	min-width: 18px;
+	width: 20px;
 
 	&.circleSuccess {
 		background-color: $regular-alpha;
 		border-color: $regular-alpha;
-		color: $sapphire-white;
+		color: $regular-white;
 		height: 18px;
-		line-height: 1;
+		line-height: 17px;
 		text-align: left;
 		width: 18px;
 
 		&:before {
 			content: '\e64d';
-			font-family: Sapphire-Icon-Font;
+			font-family: $font-family-icons;
 		}
 	}
 
@@ -36,16 +36,14 @@
 		border: none;
 		color: $light-grey;
 		display: inline-block;
-		font-size: 16px;
-		line-height: 16px;
-		-webkit-transform: rotateZ(180deg);
-		-moz-transform: rotateZ(180deg);
+		font-size: 1.429em;
+		line-height: 23px;
 		transform: rotateZ(180deg);
 	}
 
 	&.nopresence:before {
 		content: '\e699';
-		font-family: Sapphire-Icon-Font;
+		font-family: $font-family-icons;
 	}
 }
 
