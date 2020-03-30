@@ -94,7 +94,7 @@ require('./styles.scss');
 		let targetByTitle = $('.DesignSystem__Content').find('[title="' + window.location.hash.slice(1) + '"]');
 		if (!!targetById.length) {
 			$(window).scrollTop(targetById.offset().top);
-		} else {
+		} else if (!!targetByTitle.length) {
 			$(window).scrollTop(targetByTitle.offset().top);
 		}
 		markAsideMenu(false);

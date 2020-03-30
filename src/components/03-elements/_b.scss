@@ -1,3 +1,6 @@
-b {
-	font-family: $font-family-latin-bold;
+b,
+strong,
+.Bold {
+  font-family: $font-family-latin-bold;
+  font-weight: 400;
 }

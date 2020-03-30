@@ -357,18 +357,81 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
   }
 }
 
-.MainInteractiveCard-absolute-actions>div.iconHorizontal.OSInline,
-.MainInteractiveCard-absolute-actions a.Button.Small,
-.MainInteractiveCard-absolute-actions a.ButtonLink,
-.MainInteractiveCard-absolute-actions div.PatientHeaderActions,
-.MainInteractiveCard-absolute-actions a.ButtonSquare span.icon,
+
+
+
+
+
+
+
+
 .MainInteractiveCard-absolute-actions>a,
+.MainInteractiveCard-absolute-actions>a.ButtonSquare,
 .MainInteractiveCard-absolute-actions>span,
 .MainInteractiveCard-absolute-actions>div {
-  display: inline-block;
-  margin: 0 8px;
+  margin: 0;
+  vertical-align: middle;
+
+  [class$='icon-2x'] {
+    position: relative;
+    top: 2px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    div.iconHorizontal.OSInline,
+    a.Button.Small,
+    a.ButtonLink,
+    a.ButtonSquare,
+    div.PatientHeaderActions,
+    >div.OSInline {
+      margin-right: 0;
+    }
+  }
+}
+
+.MainInteractiveCard-absolute-actions div.iconHorizontal.OSInline,
+.MainInteractiveCard-absolute-actions a.Button.Small,
+.MainInteractiveCard-absolute-actions a.ButtonLink,
+.MainInteractiveCard-absolute-actions a.ButtonSquare,
+.MainInteractiveCard-absolute-actions div.PatientHeaderActions,
+.MainInteractiveCard-absolute-actions>div.OSInline {
+  margin: 0 6px;
   vertical-align: middle;
 }
+
+
+
+
+
+// .MainInteractiveCard-absolute-actions>div.iconHorizontal.OSInline,
+// .MainInteractiveCard-absolute-actions a.Button.Small,
+// .MainInteractiveCard-absolute-actions a.ButtonLink,
+// .MainInteractiveCard-absolute-actions div.PatientHeaderActions,
+// .MainInteractiveCard-absolute-actions a.ButtonSquare span.icon,
+// .MainInteractiveCard-absolute-actions>a,
+// .MainInteractiveCard-absolute-actions>span,
+// .MainInteractiveCard-absolute-actions>div {
+//   display: inline-block;
+//   margin: 0 8px;
+//   vertical-align: middle;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .MainInteractiveCard>div>.MainInteractiveCard-body .MainInteractiveCard-absolute-actions>*:last-child {
   margin-right: 0;
