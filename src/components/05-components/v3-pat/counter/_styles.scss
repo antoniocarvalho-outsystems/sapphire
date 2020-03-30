@@ -1,0 +1,50 @@
+.CounterBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 85px;
+	min-width: 90px;
+	position: relative;
+
+	&.Primary {
+		background-color: $regular-white;
+	}
+
+	&.Secondary {
+		background-color: $body-color;
+	}
+
+	&_row {
+		color: $sapphire-color-text-regular;
+
+		text-align: center;
+
+		&.Primary {
+			color: $regular-green;
+		}
+
+		&.Secondary {
+			color: $regular-red;
+		}
+	}
+
+	&__number {
+		font-family: $font-family-latin-bold;
+		font-size: 1.714em;
+		text-align: center;
+	}
+
+	&__label {
+		font-size: 0.857em;
+	}
+
+	&__tooltip {
+		position: absolute;
+		right: 5px;
+		top: 6px;
+
+		&.NoInfo {
+			display: none;
+		}
+	}
+}
