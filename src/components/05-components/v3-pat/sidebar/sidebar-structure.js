@@ -30,7 +30,6 @@
 		$(function () {
 			window.parent.$('.lds-ring').fadeOut();
 			if (!this.isExpandable) {
-				console.log($('input[type]:visible').eq(0));
 				$('input[type="text"]:visible').eq(0).focus();
 			}
 		});
