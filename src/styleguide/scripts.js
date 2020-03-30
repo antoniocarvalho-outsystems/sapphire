@@ -29,7 +29,7 @@ require('./styles.scss');
 	};
 
 	const setRTLmode = () => {
-		$('.DesignSystem__MainContent').toggleClass('AR');
+		$('.DesignSystem.Page').toggleClass('AR');
 	};
 
 	filterTerm = term => {
@@ -55,7 +55,9 @@ require('./styles.scss');
 
 	bindEvents = () => {
 		this.$aside.on('click', '.DesignSystem__MenuItemSection', e => {
-			$(e.target).parent().toggleClass('DesignSystem__MenuSubSection--expanded');
+			$(e.target)
+				.parent()
+				.toggleClass('DesignSystem__MenuSubSection--expanded');
 		});
 
 		this.$aside.on('click', '.DesignSystem__Menu a[title]', e => {
@@ -85,7 +87,6 @@ require('./styles.scss');
 		$(window).on('hashchange', () => {
 			scrollToHashTarget();
 		});
-
 	};
 
 	scrollToHashTarget = () => {
@@ -97,14 +98,16 @@ require('./styles.scss');
 			$(window).scrollTop(targetByTitle.offset().top);
 		}
 		markAsideMenu(false);
-	}
+	};
 
 	markAsideMenu = doScroll => {
 		const hash = window.location.hash.slice(1);
 		let pathname = window.location.pathname.replace('/Styleguidev2_UI/', '');
 
 		$('.DesignSystem__MenuSection a').each((i, el) => {
-			let url = $(el).attr('href').split('?')[0];
+			let url = $(el)
+				.attr('href')
+				.split('?')[0];
 			let title = $(el).attr('title');
 
 			if (url === pathname) {
@@ -115,7 +118,9 @@ require('./styles.scss');
 				}
 
 				if (!!$(el).closest('.DesignSystem__MenuSubSection').length) {
-					$(el).closest('.DesignSystem__MenuSubSection').addClass('DesignSystem__MenuSubSection--expanded');
+					$(el)
+						.closest('.DesignSystem__MenuSubSection')
+						.addClass('DesignSystem__MenuSubSection--expanded');
 
 					if (doScroll) {
 						let linkTopPosition = $(el).closest('.DesignSystem__MenuSubSection')[0].offsetTop;

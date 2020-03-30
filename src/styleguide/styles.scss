@@ -37,8 +37,9 @@ $styleguide-main-content-padding: 50px;
   &__Aside {
     background-color: $regular-white;
     border-right: 1px solid $light-grey;
+    direction: ltr;
     height: 100vh;
-    position: relative;
+    left: 0;
     position: fixed;
     width: 220px;
   }
