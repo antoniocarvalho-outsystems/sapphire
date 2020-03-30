@@ -3,233 +3,187 @@
 	border-radius: 1px;
 	color: $sapphire-color-text-regular;
 	display: table;
-	padding: 5px 10px;
+	padding: 15px 25px;
+
+	&.Critical {
+		border: 1px solid $dark-red;
+	}
+
+	&.High {
+		border: 1px solid $regular-red;
+	}
+
+	&.Moderate {
+		border: 1px solid $dark-orange;
+	}
+
+	&.Low {
+		border: 1px solid $regular-yellow;
+	}
+
+	&.Information {
+		border: 1px solid $regular-blue;
+	}
+
+	&.Unknown {
+		border: 1px solid $mid-dark-grey;
+	}
+
+	.PH:empty {
+		display: none;
+	}
+
+	.ExpanDiv {
+		display: block;
+		height: 0px;
+		overflow-y: hidden;
+
+		&.IsOpen {
+			height: auto;
+			overflow-y: hidden;
+		}
+	}
+
+	.PrescriptionIcons {
+		color: $mid-dark-grey;
+		padding-right: 20px;
+
+		> div,
+		> div > span {
+			vertical-align: middle;
+		}
+
+		.PrescriptionIconRight {
+			vertical-align: bottom;
+		}
+	}
+
+	.PrescriptionIconsNoBorder {
+		border: none;
+	}
+
+	.ActionsAndTextContent {
+		> div {
+			text-align: right;
+		}
+
+		a {
+			text-decoration: underline !important;
+		}
+
+		.InteractionText {
+			color: $regular-red;
+			font-family: $font-family-latin-bold;
+			text-align: right;
+			text-transform: uppercase;
+			width: 100%;
+		}
+
+		.SeeMore,
+		.ActionsPlaceholder {
+			color: $regular-beta;
+			cursor: pointer;
+			font-family: $font-family-latin-bold;
+		}
+	}
+
+	.RiskPlaceholder {
+		.DoubleText .FirstLine_Mutitext {
+			font-family: $font-family-latin-bold;
+			line-height: 20px;
+		}
+
+		.DoubleText .SecondLine_Multitext {
+			line-height: 20px;
+		}
+	}
+
+	.PrescriptionText {
+		margin-left: 10px;
+	}
+
+	.InformationContent {
+		display: block;
+		margin-top: 10px;
+	}
+
+	.InformationText {
+		font-size: 1em;
+		line-height: 20px;
+
+		&.Critical {
+			color: $dark-red;
+		}
+
+		&.High {
+			color: $regular-red;
+		}
+
+		&.Moderate {
+			color: $dark-orange;
+		}
+
+		&.Low {
+			color: $dark-yellow;
+		}
+
+		&.Information {
+			color: $dark-blue;
+		}
+
+		&.Unknown {
+			color: $regular-gray;
+		}
+	}
+
+	.PrescriptionContent,
+	.ActionsAndTextContent {
+		display: table-cell;
+	}
+
+	.RiskPlaceholder,
+	.InteracTypePlaceholder {
+		margin-top: 0px;
+	}
+
+	.InteractionText,
+	.PrescriptionText {
+		font-size: 1.143em;
+	}
+
+	.HideDiv {
+		visibility: hidden;
+
+		.PrescriptionIconRight {
+			width: 1.3857142857142858em;
+		}
+	}
+
+	&___Compare {
+		font-size: 0.786em;
+		margin: 0 10px;
+		vertical-align: middle;
+	}
 }
 
-// AJUSTANDO
-.HideDiv {
-	visibility: hidden;
-}
+.AR,
+.FA {
+	.PrescriptionIcons {
+		border-left: 1px solid rgba(77, 92, 102, 0.4);
+		border-right: 1px solid transparent;
+		padding-left: 20px;
+		padding-right: 0;
+	}
 
-.HideDiv .PrescriptionIconRight {
-	width: 1.3857142857142858em;
-	/* to replace icon widthh*/
-}
+	.MedicationInteractionContainer {
+		text-align: right;
+	}
 
-/* For Expand more*/
-.PrescriptionCard .ExpanDiv {
-	display: block;
-	height: 0px;
-	overflow-y: hidden;
-}
+	.ActionsAndTextContent > div {
+		text-align: left;
+	}
 
-.PrescriptionCard .ExpanDiv.IsOpen {
-	height: auto;
-	overflow-y: hidden;
-}
-
-.PrescriptionIcons {
-	border-right: 1px solid rgba(77, 92, 102, 0.4);
-	padding-right: 20px;
-}
-
-.PrescriptionIconsNoBorder {
-	border: none;
-}
-
-.PrescriptionIcons > div > span,
-.PrescriptionIcons > div {
-	vertical-align: middle;
-}
-
-.PrescriptionIcons .PrescriptionIconRight {
-	vertical-align: bottom;
-	/*overwrite for .OSInline vertical-align:top */
-}
-
-.PrescriptionCard___Compare {
-	font-size: 22px;
-	font-weight: bold;
-	line-height: 22px;
-	margin: 0 10px;
-}
-
-.ActionsAndTextContent > div {
-	text-align: right;
-}
-
-.ActionsAndTextContent .InteractionText {
-	color: #cf113c;
-	font-size: 12px;
-	font-weight: bold;
-	margin-top: 10px;
-	text-align: right;
-	text-transform: uppercase;
-	width: 100%;
-}
-
-.PrescriptionContent,
-.ActionsAndTextContent {
-	display: table-cell;
-}
-
-.RiskPlaceholder,
-.InteracTypePlaceholder {
-	margin-top: 0px;
-}
-
-.RiskPlaceholder .DoubleText .FirstLine_Mutitext {
-	color: #11394f;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 20px;
-}
-
-.RiskPlaceholder .DoubleText .SecondLine_Multitext {
-	color: #11394f;
-	font-size: 14px;
-	line-height: 20px;
-}
-
-.ActionsAndTextContent a {
-	text-decoration: underline !important;
-	/*overwrites the Theme one*/
-}
-
-.InteractionText,
-.PrescriptionText {
-	font-size: 16px;
-}
-
-.tablet .PrescriptionText,
-.phone .PrescriptionText,
-.PrescriptionText {
-	margin-left: 20px;
-}
-
-.InformationContent {
-	display: block;
-	margin-top: 10px;
-}
-
-.InformationText.Critical {
-	color: #cf113c;
-	font-size: 14px;
-	line-height: 20px;
-}
-
-.InformationText.High {
-	color: #ff4029;
-	font-size: 14px;
-	line-height: 20px;
-}
-
-.InformationText.Moderate {
-	color: #ff7d0e;
-	font-size: 14px;
-	line-height: 20px;
-}
-
-.InformationText.Low {
-	/* cor da font*/
-}
-
-.InformationText.Information {
-	color: #08266d;
-	font-size: 14px;
-	line-height: 20px;
-}
-
-.InformationText.Unknown {
-	color: #808080;
-	font-size: 14px;
-	line-height: 20px;
-}
-
-/*PrescriptionIcons Border*/
-
-.PrescriptionIcons.Critical {
-	border-color: #cf113c;
-}
-
-.PrescriptionIcons.High {
-	border-color: #ff4326;
-}
-
-.PrescriptionIcons.Moderate {
-	border-color: #f97d00;
-}
-
-.PrescriptionIcons.Low {
-	border-color: #ffdc2c;
-}
-
-.PrescriptionIcons.Information {
-	border-color: #0a2f88;
-}
-
-.PrescriptionIcons.Unknown {
-	border-color: #808080;
-}
-
-/*PrescriptionCard Border*/
-
-.PrescriptionCard.Critical {
-	background-color: #fffafb;
-	border: 1px solid #cf113c;
-}
-
-.PrescriptionCard.High {
-	background-color: #fffafa;
-	border: 1px solid #ff4326;
-}
-
-.PrescriptionCard.Moderate {
-	background-color: #fffdfa;
-	border: 1px solid #f97d00;
-}
-
-.PrescriptionCard.Low {
-	background-color: #fffefa;
-	border: 1px solid #ffdc2c;
-}
-
-.PrescriptionCard.Information {
-	background-color: #fafbff;
-	border: 1px solid #0a2f88;
-}
-
-.PrescriptionCard.Unknown {
-	background-color: #fcfcfc;
-	border: 1px solid #808080;
-}
-
-/*AR*/
-
-.AR .PrescriptionIcons,
-.FA .PrescriptionIcons {
-	border-left: 1px solid rgba(77, 92, 102, 0.4);
-	border-right: 1px solid transparent;
-	padding-left: 20px;
-	padding-right: 0;
-}
-
-.FA .MedicationInteractionContainer,
-.AR .MedicationInteractionContainer {
-	text-align: right;
-}
-
-.FA .ActionsAndTextContent > div,
-.AR .ActionsAndTextContent > div {
-	text-align: left;
-}
-
-.FA .PrescriptionText,
-.AR .PrescriptionText {
-	margin-right: 20px;
-}
-
-/*PH to Clinician*/
-.PrescriptionCard .PH:empty {
-	display: none;
+	.PrescriptionText {
+		margin-right: 20px;
+	}
 }
