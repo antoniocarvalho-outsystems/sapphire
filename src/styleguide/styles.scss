@@ -37,9 +37,8 @@ $styleguide-main-content-padding: 50px;
   &__Aside {
     background-color: $regular-white;
     border-right: 1px solid $light-grey;
-    direction: ltr;
     height: 100vh;
-    left: 0;
+    position: relative;
     position: fixed;
     width: 220px;
   }
@@ -87,24 +86,6 @@ $styleguide-main-content-padding: 50px;
     margin-top: 5px;
     text-align: right;
     width: 100%;
-  }
-
-  &__Toggler {
-    display: flex;
-    margin-top: 12px;
-    width: 100%;
-
-    a {
-      flex: 1 1 0;
-
-      &:last-child {
-        text-align: right;
-      }
-    }
-
-    .icon {
-      font-size: 30px;
-    }
   }
 
   &__Menu {
@@ -218,7 +199,6 @@ $styleguide-main-content-padding: 50px;
     }
   }
 
-  // Content
   &__MainContent {
     padding-left: 220px;
   }
@@ -245,6 +225,7 @@ $styleguide-main-content-padding: 50px;
 
   &__Content {
     background-color: $regular-white;
+    height: 100vh;
     padding: $styleguide-main-content-padding;
   }
 
@@ -325,11 +306,16 @@ $styleguide-main-content-padding: 50px;
       @extend .DesignSystem__DefaultSection;
 
       align-items: center;
+      border-color: $regular-alpha;
 
-      .icon {
-        color: $light-grey;
+      div[ui='icon'] {
+        color: $regular-alpha;
         font-size: 3em;
         padding-top: 4px;
+      }
+
+      div[ui='message'] {
+        flex: 1;
       }
     }
   }
@@ -344,7 +330,13 @@ $styleguide-main-content-padding: 50px;
     width: 100%;
   }
 
-  // ContentCard
+  &__GreyContainer {
+    background-color: $body-color;
+    border-radius: 1px;
+    margin: 0 -20px;
+    padding: 10px 20px;
+  }
+
   &__ContentCard {
     border: 1px solid $light-grey;
     border-radius: 2px;
@@ -377,7 +369,6 @@ $styleguide-main-content-padding: 50px;
     }
   }
 
-  // ContentCard
   &__FormField {
     display: grid;
     row-gap: 5px;
@@ -434,6 +425,33 @@ $styleguide-main-content-padding: 50px;
       border: none;
     }
   }
+
+  // Home Page
+  &__HomePageHeader {
+    background-color: $regular-alpha;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    height: 450px;
+    margin: -50px;
+
+    *[ui='header-info'] {
+      @include flex-center-total;
+
+      color: $regular-white;
+      flex-direction: column;
+      height: 75%;
+
+      *[ui='header-icon'] {
+        font-size: 6em;
+      }
+
+      *[ui='header-subtitle'] {
+        font-size: 1.5em;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  // Home Page
 
   .Section {
     margin-bottom: 150px;
