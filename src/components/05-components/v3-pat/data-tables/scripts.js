@@ -6,18 +6,25 @@
       this.config = config;
       this.$widget = $(`#${config.widgetId}`);
       this.$table = this.$widget.find('table');
+      this.$table.addClass(config.baseStyle);
       this.onInit();
     }
 
     onInit() {
-      var _this = this;
-      $(function () {
-        _this.$table.DataTable({
-          "scrollY": "200px",
-          "scrollCollapse": true,
-          "paging": false,
-          "scrollX": true
-        });
+
+      this.options = {
+        ...this.config,
+        fixedColumns: true,
+        info: false,
+        ordering: false,
+        paging: false,
+        scrollCollapse: true,
+        scrollX: true,
+        searching: false,
+      }
+
+      $(() => {
+        this.$table.DataTable(this.options);
       });
     }
 
