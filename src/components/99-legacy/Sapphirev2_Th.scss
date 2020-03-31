@@ -9887,244 +9887,244 @@ a.Button.Icon:hover {
 /* 9.13 Sapphire Patterns > Cards > PrescriptionCard **********/
 /*------------------------------------------------------------*/
 
-.PrescriptionCard {
-  background-color: #fff;
-  border-radius: 4px;
-  color: #11394f;
-  display: table;
-  font-size: 14px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-}
+// .PrescriptionCard {
+//   background-color: #fff;
+//   border-radius: 4px;
+//   color: #11394f;
+//   display: table;
+//   font-size: 14px;
+//   padding-bottom: 5px;
+//   padding-left: 10px;
+//   padding-right: 10px;
+//   padding-top: 5px;
+// }
 
-.HideDiv {
-  visibility: hidden;
-}
+// .HideDiv {
+//   visibility: hidden;
+// }
 
-.HideDiv .PrescriptionIconRight {
-  width: 1.3857142857142858em;
-  /* to replace icon widthh*/
-}
+// .HideDiv .PrescriptionIconRight {
+//   width: 1.3857142857142858em;
+//   /* to replace icon widthh*/
+// }
 
-/* For Expand more*/
-.PrescriptionCard .ExpanDiv {
-  display: block;
-  height: 0px;
-  overflow-y: hidden;
-}
+// /* For Expand more*/
+// .PrescriptionCard .ExpanDiv {
+//   display: block;
+//   height: 0px;
+//   overflow-y: hidden;
+// }
 
-.PrescriptionCard .ExpanDiv.IsOpen {
-  height: auto;
-  overflow-y: hidden;
-}
+// .PrescriptionCard .ExpanDiv.IsOpen {
+//   height: auto;
+//   overflow-y: hidden;
+// }
 
-.PrescriptionIcons {
-  border-right: 1px solid rgba(77, 92, 102, 0.4);
-  padding-right: 20px;
-}
+// .PrescriptionIcons {
+//   border-right: 1px solid rgba(77, 92, 102, 0.4);
+//   padding-right: 20px;
+// }
 
-.PrescriptionIconsNoBorder {
-  border: none;
-}
+// .PrescriptionIconsNoBorder {
+//   border: none;
+// }
 
-.PrescriptionIcons>div>span,
-.PrescriptionIcons>div {
-  vertical-align: middle;
-}
+// .PrescriptionIcons>div>span,
+// .PrescriptionIcons>div {
+//   vertical-align: middle;
+// }
 
-.PrescriptionIcons .PrescriptionIconRight {
-  vertical-align: bottom;
-  /*overwrite for .OSInline vertical-align:top */
-}
+// .PrescriptionIcons .PrescriptionIconRight {
+//   vertical-align: bottom;
+//   /*overwrite for .OSInline vertical-align:top */
+// }
 
-.PrescriptionCard___Compare {
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 22px;
-  margin: 0 10px;
-}
+// .PrescriptionCard___Compare {
+//   font-size: 22px;
+//   font-weight: bold;
+//   line-height: 22px;
+//   margin: 0 10px;
+// }
 
-.ActionsAndTextContent>div {
-  text-align: right;
-}
+// .ActionsAndTextContent>div {
+//   text-align: right;
+// }
 
-.ActionsAndTextContent .InteractionText {
-  color: #cf113c;
-  font-size: 12px;
-  font-weight: bold;
-  margin-top: 10px;
-  text-align: right;
-  text-transform: uppercase;
-  width: 100%;
-}
+// .ActionsAndTextContent .InteractionText {
+//   color: #cf113c;
+//   font-size: 12px;
+//   font-weight: bold;
+//   margin-top: 10px;
+//   text-align: right;
+//   text-transform: uppercase;
+//   width: 100%;
+// }
 
-.PrescriptionContent,
-.ActionsAndTextContent {
-  display: table-cell;
-}
+// .PrescriptionContent,
+// .ActionsAndTextContent {
+//   display: table-cell;
+// }
 
-.RiskPlaceholder,
-.InteracTypePlaceholder {
-  margin-top: 0px;
-}
+// .RiskPlaceholder,
+// .InteracTypePlaceholder {
+//   margin-top: 0px;
+// }
 
-.RiskPlaceholder .DoubleText .FirstLine_Mutitext {
-  color: #11394f;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 20px;
-}
+// .RiskPlaceholder .DoubleText .FirstLine_Mutitext {
+//   color: #11394f;
+//   font-size: 14px;
+//   font-weight: bold;
+//   line-height: 20px;
+// }
 
-.RiskPlaceholder .DoubleText .SecondLine_Multitext {
-  color: #11394f;
-  font-size: 14px;
-  line-height: 20px;
-}
+// .RiskPlaceholder .DoubleText .SecondLine_Multitext {
+//   color: #11394f;
+//   font-size: 14px;
+//   line-height: 20px;
+// }
 
-.ActionsAndTextContent a {
-  text-decoration: underline !important;
-  /*overwrites the Theme one*/
-}
+// .ActionsAndTextContent a {
+//   text-decoration: underline !important;
+//   /*overwrites the Theme one*/
+// }
 
-.InteractionText,
-.PrescriptionText {
-  font-size: 16px;
-}
+// .InteractionText,
+// .PrescriptionText {
+//   font-size: 16px;
+// }
 
-.tablet .PrescriptionText,
-.phone .PrescriptionText,
-.PrescriptionText {
-  margin-left: 20px;
-}
+// .tablet .PrescriptionText,
+// .phone .PrescriptionText,
+// .PrescriptionText {
+//   margin-left: 20px;
+// }
 
-.InformationContent {
-  display: block;
-  margin-top: 10px;
-}
+// .InformationContent {
+//   display: block;
+//   margin-top: 10px;
+// }
 
-.InformationText.Critical {
-  color: #cf113c;
-  font-size: 14px;
-  line-height: 20px;
-}
+// .InformationText.Critical {
+//   color: #cf113c;
+//   font-size: 14px;
+//   line-height: 20px;
+// }
 
-.InformationText.High {
-  color: #ff4029;
-  font-size: 14px;
-  line-height: 20px;
-}
+// .InformationText.High {
+//   color: #ff4029;
+//   font-size: 14px;
+//   line-height: 20px;
+// }
 
-.InformationText.Moderate {
-  color: #ff7d0e;
-  font-size: 14px;
-  line-height: 20px;
-}
+// .InformationText.Moderate {
+//   color: #ff7d0e;
+//   font-size: 14px;
+//   line-height: 20px;
+// }
 
-.InformationText.Low {
-  /* cor da font*/
-}
+// .InformationText.Low {
+//   /* cor da font*/
+// }
 
-.InformationText.Information {
-  color: #08266d;
-  font-size: 14px;
-  line-height: 20px;
-}
+// .InformationText.Information {
+//   color: #08266d;
+//   font-size: 14px;
+//   line-height: 20px;
+// }
 
-.InformationText.Unknown {
-  color: #808080;
-  font-size: 14px;
-  line-height: 20px;
-}
+// .InformationText.Unknown {
+//   color: #808080;
+//   font-size: 14px;
+//   line-height: 20px;
+// }
 
-/*PrescriptionIcons Border*/
+// /*PrescriptionIcons Border*/
 
-.PrescriptionIcons.Critical {
-  border-color: #cf113c;
-}
+// .PrescriptionIcons.Critical {
+//   border-color: #cf113c;
+// }
 
-.PrescriptionIcons.High {
-  border-color: #ff4326;
-}
+// .PrescriptionIcons.High {
+//   border-color: #ff4326;
+// }
 
-.PrescriptionIcons.Moderate {
-  border-color: #f97d00;
-}
+// .PrescriptionIcons.Moderate {
+//   border-color: #f97d00;
+// }
 
-.PrescriptionIcons.Low {
-  border-color: #ffdc2c;
-}
+// .PrescriptionIcons.Low {
+//   border-color: #ffdc2c;
+// }
 
-.PrescriptionIcons.Information {
-  border-color: #0a2f88;
-}
+// .PrescriptionIcons.Information {
+//   border-color: #0a2f88;
+// }
 
-.PrescriptionIcons.Unknown {
-  border-color: #808080;
-}
+// .PrescriptionIcons.Unknown {
+//   border-color: #808080;
+// }
 
-/*PrescriptionCard Border*/
+// /*PrescriptionCard Border*/
 
-.PrescriptionCard.Critical {
-  background-color: #fffafb;
-  border: 1px solid #cf113c;
-}
+// .PrescriptionCard.Critical {
+//   background-color: #fffafb;
+//   border: 1px solid #cf113c;
+// }
 
-.PrescriptionCard.High {
-  background-color: #fffafa;
-  border: 1px solid #ff4326;
-}
+// .PrescriptionCard.High {
+//   background-color: #fffafa;
+//   border: 1px solid #ff4326;
+// }
 
-.PrescriptionCard.Moderate {
-  background-color: #fffdfa;
-  border: 1px solid #f97d00;
-}
+// .PrescriptionCard.Moderate {
+//   background-color: #fffdfa;
+//   border: 1px solid #f97d00;
+// }
 
-.PrescriptionCard.Low {
-  background-color: #fffefa;
-  border: 1px solid #ffdc2c;
-}
+// .PrescriptionCard.Low {
+//   background-color: #fffefa;
+//   border: 1px solid #ffdc2c;
+// }
 
-.PrescriptionCard.Information {
-  background-color: #fafbff;
-  border: 1px solid #0a2f88;
-}
+// .PrescriptionCard.Information {
+//   background-color: #fafbff;
+//   border: 1px solid #0a2f88;
+// }
 
-.PrescriptionCard.Unknown {
-  background-color: #fcfcfc;
-  border: 1px solid #808080;
-}
+// .PrescriptionCard.Unknown {
+//   background-color: #fcfcfc;
+//   border: 1px solid #808080;
+// }
 
-/*AR*/
+// /*AR*/
 
-.AR .PrescriptionIcons,
-.FA .PrescriptionIcons {
-  border-left: 1px solid rgba(77, 92, 102, 0.4);
-  border-right: 1px solid transparent;
-  padding-left: 20px;
-  padding-right: 0;
-}
+// .AR .PrescriptionIcons,
+// .FA .PrescriptionIcons {
+//   border-left: 1px solid rgba(77, 92, 102, 0.4);
+//   border-right: 1px solid transparent;
+//   padding-left: 20px;
+//   padding-right: 0;
+// }
 
-.FA .MedicationInteractionContainer,
-.AR .MedicationInteractionContainer {
-  text-align: right;
-}
+// .FA .MedicationInteractionContainer,
+// .AR .MedicationInteractionContainer {
+//   text-align: right;
+// }
 
-.FA .ActionsAndTextContent>div,
-.AR .ActionsAndTextContent>div {
-  text-align: left;
-}
+// .FA .ActionsAndTextContent>div,
+// .AR .ActionsAndTextContent>div {
+//   text-align: left;
+// }
 
-.FA .PrescriptionText,
-.AR .PrescriptionText {
-  margin-right: 20px;
-}
+// .FA .PrescriptionText,
+// .AR .PrescriptionText {
+//   margin-right: 20px;
+// }
 
-/*PH to Clinician*/
-.PrescriptionCard .PH:empty {
-  display: none;
-}
+// /*PH to Clinician*/
+// .PrescriptionCard .PH:empty {
+//   display: none;
+// }
 
 /*------------------------------------------------------------*/
 /* 9.14 Sapphire Patterns > Contents > ContentBox *************/
