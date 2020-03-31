@@ -1,0 +1,41 @@
+.BlankListLine {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	display: table;
+	padding: 18px 25px;
+	width: 100%;
+
+	&.isDismissed {
+		background-color: $body-color;
+	}
+
+	&_info {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__infoTitle {
+		font-family: $font-family-latin-bold;
+		font-size: 1.143em;
+	}
+
+	// &__infoContent {
+	// }
+
+	&__infoActionBy {
+		color: $regular-gray;
+	}
+
+	&_actions {
+		display: table-cell;
+		text-align: right;
+		vertical-align: middle !important;
+	}
+}
+
+.AR,
+.FA {
+	.BlankListLine_actions {
+		text-align: left;
+	}
+}
