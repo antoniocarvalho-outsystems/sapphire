@@ -1,0 +1,273 @@
+@mixin common-sections-compline-style($padding: 0 25px) {
+	display: table-cell;
+	padding: $padding;
+	vertical-align: middle;
+}
+
+.DesignSystem,
+.LayoutPopup,
+.LayoutBlank,
+.LayoutBase {
+	.ListRecords {
+		.CompLine {
+			.CompLine_Expand {
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+.DesignSystem .CompLine,
+.LayoutPopup .CompLine,
+.LayoutBlank .CompLine,
+.LayoutBase .CompLine {
+	background-color: $regular-white;
+	border-radius: 1px;
+	color: $dark-grey;
+
+	.CompLine_headLine {
+		border: 1px solid $light-grey;
+	}
+
+	&.IsHeader {
+		background-color: transparent;
+		border: none;
+		margin: 0;
+
+		.CompLineExpandable .CompLine_head {
+			background-color: transparent;
+			border: none;
+		}
+
+		.CompLine__pointerIcon {
+			display: none;
+		}
+
+		.CompLine_doctor {
+			vertical-align: bottom !important;
+		}
+	}
+
+	&.notCollapsable {
+		.CompLine_Expand,
+		.CompLine__expandIcon {
+			display: none;
+		}
+	}
+
+	&_headLine {
+		display: table;
+		min-height: 60px;
+		position: relative;
+		width: 100%;
+	}
+
+	&_head {
+		background-color: $body-color;
+		border-right: 1px solid $light-grey;
+		color: $mid-dark-grey;
+		display: table-cell;
+		font-size: 1em;
+		padding: 12px 23px;
+		white-space: nowrap;
+	}
+
+	&__expandIcon {
+		background-color: transparent;
+		display: table-cell;
+		height: 100%;
+		margin-left: -11px;
+		margin-top: 0;
+		position: absolute;
+		width: 22px;
+
+		&.Heading2 {
+			display: inline-table;
+			text-align: left;
+			vertical-align: middle;
+			width: 16px;
+		}
+	}
+
+	&__pointerIcon {
+		background-color: $regular-white;
+		border-radius: 50%;
+		cursor: pointer;
+		display: block;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+
+		span {
+			@include arrow-button($regular-alpha);
+		}
+	}
+
+	&_icon {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__icon {
+		font-size: 1.143em;
+		margin-right: 5px;
+
+		span {
+			line-height: 36px;
+			width: auto;
+		}
+	}
+
+	&_headText {
+		text-align: left;
+	}
+
+	&__subtitle {
+		font-family: $font-family-latin-bold;
+	}
+
+	&_doctor {
+		@include common-sections-compline-style;
+
+		width: 60%;
+	}
+
+	&_other {
+		@include common-sections-compline-style;
+
+		> div {
+			vertical-align: middle;
+		}
+
+		> div > a {
+			margin-top: 0;
+		}
+	}
+
+	&_actions {
+		@include common-sections-compline-style(0 23px 0 0);
+
+		text-align: right;
+
+		a > div {
+			vertical-align: middle;
+		}
+
+		> div,
+		> span {
+			display: inline-block;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		a:not(.Button) {
+			&,
+			&:link,
+			&:visited {
+				color: $dark-grey;
+				text-align: center;
+				vertical-align: middle;
+			}
+		}
+
+		> .MultiAlignRight {
+			text-align: right;
+		}
+
+		.PatientHeaderActions_menuItem {
+			min-height: unset;
+			width: unset;
+		}
+
+		.PatientHeaderActions__subMenu div {
+			line-height: 26px;
+			margin: 0;
+			text-align: left;
+		}
+	}
+
+	&_moreActions {
+		@include common-sections-compline-style(unset);
+
+		text-align: right;
+	}
+
+	&_Expand {
+		background-color: $regular-eta;
+		border-radius: 1px;
+		border-top: none;
+		box-sizing: content-box;
+		height: 0;
+		margin-top: 0;
+		overflow: hidden;
+		padding: 0 10px;
+		transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+		visibility: visible;
+
+		&.White {
+			background-color: $regular-white;
+		}
+	}
+
+	.CompLineExpandable {
+		&.expanded {
+			.CompLine__expandIcon {
+				transform: rotate(-180deg);
+			}
+
+			.CompLine_Expand {
+				background-color: transparent;
+				border: 1px solid $light-grey;
+				border-top: none;
+				display: block;
+				height: auto;
+				overflow: visible;
+				padding: 19px 23px;
+				visibility: visible;
+			}
+		}
+
+		&.autoheight {
+			.CompLine_Expand {
+				display: block;
+				height: auto !important;
+				transition: 0;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.CompLine {
+		&__expandIcon {
+			margin-right: -11px;
+
+			&.Heading2 {
+				display: inline-table;
+				text-align: right;
+				vertical-align: middle;
+				width: 16px;
+			}
+		}
+
+		&_headText {
+			text-align: right;
+		}
+
+		&_actions {
+			padding-left: 23px;
+			padding-right: 0;
+			text-align: left;
+		}
+
+		&_moreActions {
+			text-align: left;
+		}
+
+		&__icon {
+			margin-left: 5px;
+			margin-right: 0;
+		}
+	}
+}

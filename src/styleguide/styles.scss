@@ -293,15 +293,6 @@ $styleguide-main-content-padding: 50px;
 
 			flex-direction: column;
 			padding-top: 45px;
-
-			.SectionExpandable_headerCustom {
-				max-height: 40px;
-
-				.PlaceHolderTitle {
-					font-family: $font-family-latin-regular;
-					font-size: 1em;
-				}
-			}
 		}
 
 		&--aboutWebBlock {
@@ -322,6 +313,17 @@ $styleguide-main-content-padding: 50px;
 		}
 	}
 
+	&__InpuParameters {
+		.SectionExpandable_headerCustom {
+			max-height: 40px;
+
+			.PlaceHolderTitle {
+				font-family: $font-family-latin-regular;
+				font-size: 1em;
+			}
+		}
+	}
+
 	&__AlertInfoSection {
 		background-color: $regular-alpha;
 		color: $regular-white;
@@ -335,6 +337,21 @@ $styleguide-main-content-padding: 50px;
 			@extend .DesignSystem__AlertInfoSection;
 
 			background-color: $regular-red;
+		}
+	}
+
+	&__DescriptionWebBlock {
+		position: absolute;
+		right: 15px;
+		top: 5px;
+
+		.AR & {
+			left: 15px;
+			right: auto;
+		}
+
+		.ActionsMenu-trigger {
+			color: $regular-white;
 		}
 	}
 
