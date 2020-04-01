@@ -1,10 +1,10 @@
 /* Component ExpandableLink */
-(function ($, window, SapphireWidgets) {
+(function($, window, SapphireWidgets) {
 	const create = widgetID => {
 		const $elementWrapper = $(`#${widgetID}`);
 
 		if ($elementWrapper.parent('.ExpandableList').hasClass('HideWhenEmpty')) {
-			const text = $elementWrapper.find('.ExpandableLinkWrapper_content').text();
+			const text = $elementWrapper.find('.ExpandableLink__Content').text();
 
 			if (text.length === 0) $elementWrapper.parent('.ExpandableList').hide();
 		}
@@ -13,12 +13,10 @@
 	};
 
 	const bindEvents = widgetID => {
-		$(`#${widgetID} .ExpandableLinkWrapper_Header`).click(() => openClose(`#${widgetID}`));
+		$(`#${widgetID} .ExpandableLink__Header`).click(() => openClose(`#${widgetID}`));
 	};
 
-	const openClose = elementID => $(elementID).toggleClass('active');
+	const openClose = elementID => $(elementID).toggleClass('ExpandableLink--expanded');
 
-	SapphireWidgets.ExpandableLink = {
-		create
-	};
+	SapphireWidgets.ExpandableLink = { create };
 })(jQuery, window, SapphireWidgets);

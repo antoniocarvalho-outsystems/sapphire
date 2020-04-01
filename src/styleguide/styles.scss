@@ -60,6 +60,7 @@ $styleguide-main-content-padding: 50px;
 		}
 
 		input[type='text'] {
+			font-family: $font-family-latin-regular;
 			height: $styleguide-menu-item-height;
 			line-height: $styleguide-menu-item-height;
 			margin: 0;
@@ -88,6 +89,13 @@ $styleguide-main-content-padding: 50px;
 		margin-top: 5px;
 		text-align: right;
 		width: 100%;
+
+		a[ui='button-expand-all'] {
+			&:link,
+			&:visited {
+				font-family: $font-family-latin-bold;
+			}
+		}
 	}
 
 	&__Menu {
@@ -105,7 +113,8 @@ $styleguide-main-content-padding: 50px;
 		a:link,
 		a:visited {
 			@include styleguide-menu-item-style;
-			font-weight: 400;
+
+			font-family: $font-family-latin-regular !important;
 
 			&.active {
 				background-color: $regular-alpha;
