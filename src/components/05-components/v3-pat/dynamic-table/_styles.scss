@@ -1,0 +1,60 @@
+.DynamicTable {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+
+	&--disabled {
+		background-color: $body-color;
+		cursor: not-allowed;
+
+		.DynamicTable {
+			&__Header {
+				opacity: 0.7;
+				pointer-events: none;
+			}
+
+			&__Rows {
+				pointer-events: none;
+			}
+		}
+	}
+
+	&__Header {
+		border-bottom: 1px solid $light-grey;
+		display: flex;
+		font-family: $font-family-latin-bold;
+		padding: 10px 15px;
+	}
+
+	&__HeaderColumn {
+		@include flex-center-total;
+
+		flex: 1;
+		padding: 0 5px;
+		text-align: center;
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		&--main {
+			@extend .DynamicTable__HeaderColumn;
+
+			flex-basis: 15%;
+			justify-content: start;
+			padding: 0;
+			text-align: left;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.DynamicTable {
+		&__HeaderColumn {
+			&:last-child {
+				padding-left: 0;
+				padding-right: 5px;
+			}
+		}
+	}
+}

@@ -57,6 +57,29 @@
 	}
 }
 
+.AR.Page,
+.FA.Page {
+	.SplitButton {
+		&.hasTrigger {
+			.SplitButton-button .Button {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 1.286em;
+				border-top-left-radius: 0;
+				border-top-right-radius: 1.286em;
+			}
+
+			.SplitButton-trigger {
+				border-bottom-left-radius: 1.286em;
+				border-bottom-right-radius: 0;
+				border-left: none;
+				border-right: 1px solid $regular-white;
+				border-top-left-radius: 1.286em;
+				border-top-right-radius: 0;
+			}
+		}
+	}
+}
+
 // Tooltipster Adjustments
 .tooltipster-base.tooltipster-splitbutton {
 	background-color: $regular-white;
