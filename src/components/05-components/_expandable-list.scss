@@ -16,15 +16,15 @@
 		vertical-align: middle;
 	}
 
-	.ExpandableLinkWrapper {
-		&_Header {
+	.ExpandableLink {
+		&__Header {
 			border-top: 1px solid $regular-white;
 			display: table;
 			height: 48px;
 			width: 100%;
 		}
 
-		&__icon {
+		&__Icon {
 			display: table-cell;
 			padding: 0 15px;
 			vertical-align: middle;
@@ -34,7 +34,7 @@
 			}
 		}
 
-		&__link {
+		&__Link {
 			display: table-cell;
 			font-size: 1.143em;
 			padding-right: 15px;
@@ -42,7 +42,7 @@
 			width: 100%;
 		}
 
-		&_content {
+		&__Content {
 			.ExpandableContent {
 				border-bottom: none;
 				padding: 0 15px;
@@ -59,8 +59,8 @@
 .AR,
 .FA {
 	.ExpandableList {
-		.ExpandableLinkWrapper {
-			&__link {
+		.ExpandableLink {
+			&__Link {
 				padding-left: 15px;
 				padding-right: 0;
 			}
