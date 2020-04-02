@@ -1,16 +1,13 @@
 /* Component PrescriptionExpandable */
 (function($, window, SapphireWidgets) {
-	function PrescriptionExpandableObj() {
-		var that = this;
+	const PrescriptionExpandable = function(config) {
+		const widgetId = config.widgetId;
+		const previewstat = [];
+		const transitionEvent = SilkUI.whichTransitionEvent();
 
-		// Object to save stats
-		var previewstat = [];
+		const $elementWrapper = $(`#${config.widgetId}`);
 
-		var transitionEvent = SilkUI.whichTransitionEvent();
-		// set click events
-		function clickEvents(ob) {
-			// store querys in a single var
-			// if($(ob).hasClass("isLinkEpandable")){
+		const clickEvents = ob => {
 			if ($(ob).hasClass('PrescriptionExpandable_header__LinksDiv')) {
 				var Section = $(ob)
 					.parent()
@@ -65,10 +62,36 @@
 					}
 				});
 			}
-		}
+		};
 
-		// ajax refres function
-		that.ajaxRefresh = function() {
+		this.init = () => {
+			const $header = $elementWrapper.find('.PrescriptionExpandable_header');
+			const $links = $header.find('.PrescriptionExpandable_header__LinksDiv');
+
+			// Create array stat
+			$('.SectionPrescriptionExpandableArea').each(() => {
+				const stat = $header.hasClass('expanded') ? true : false;
+				previewstat[widgetId] = { client: stat, server: stat };
+			});
+
+			if ($header.hasClass('NotExpandable')) {
+				$header.on('click', e => e.preventDefault());
+			} else if ($header.hasClass('isLinkEpandableClick')) {
+				$links.on('click', e => clickEvents($links));
+			} else {
+				$header.on('click', e => clickEvents($header));
+			}
+
+			const elements =
+				'.PrescriptionExpandable_header input, .PrescriptionExpandable_header select, .PrescriptionExpandable_header a';
+			$(elements).click(function(event) {
+				event.stopPropagation();
+			});
+
+			osAjaxBackend.BindAfterAjaxRequest(ajaxRefresh);
+		};
+
+		const ajaxRefresh = function() {
 			// remove click events
 			$('.PrescriptionExpandable_header').off();
 
@@ -119,59 +142,12 @@
 				}
 			});
 		};
+	};
 
-		// set events
-		that.init = function() {
-			// each all sections to create array stat
-			$('.SectionPrescriptionExpandableArea').each(function() {
-				// add stat on array
-				var stat = false;
-
-				// if open
-				if ($(this).hasClass('expanded')) {
-					stat = true;
-				}
-
-				// add row
-				previewstat[$(this).attr('id')] = { client: stat, server: stat };
-			});
-
-			$('.PrescriptionExpandable_header').each(function() {
-				if ($(this).hasClass('NotExpandable')) {
-					$(this).on('click', function(e) {
-						e.preventDefault();
-					});
-				} else if ($(this).hasClass('isLinkEpandableClick')) {
-					$(this)
-						.find('.PrescriptionExpandable_header__LinksDiv')
-						.on('click', function(e) {
-							clickEvents(this);
-						});
-				} else {
-					$(this).on('click', function(e) {
-						clickEvents(this);
-					});
-				}
-			});
-
-			// add stop prepagation
-			$(
-				'.PrescriptionExpandable_header input, .PrescriptionExpandable_header select, .PrescriptionExpandable_header a'
-			).click(function(event) {
-				event.stopPropagation();
-			});
-
-			// event ajax
-			osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);
-		};
-	}
-
-	const create = () => {
-		SilkUI.SectionExpandable = new PrescriptionExpandableObj();
+	const create = config => {
+		SilkUI.SectionExpandable = new PrescriptionExpandable(config);
 		SilkUI.Execute(SilkUI.SectionExpandable.init, 'Error on WebPatterns/Content/SectionExpandable');
 	};
 
-	SapphireWidgets.PrescriptionExpandable = {
-		create,
-	};
+	SapphireWidgets.PrescriptionExpandable = { create };
 })(jQuery, window, SapphireWidgets);

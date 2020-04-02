@@ -1,25 +1,23 @@
 @mixin badges($bgColor: $sapphire-white, $textColor: $regular-blue, $notInverted: true, $borderRadius: 2px) {
-  @if ($notInverted) {
-    border: 1px solid $bgColor;
-  }
+	@if ($notInverted) {
+		border: 1px solid $bgColor;
+	} @else {
+		border: 1px solid $textColor;
+	}
 
-  @else {
-    border: 1px solid $textColor;
-  }
-
-  background-color: $bgColor;
-  border-radius: $borderRadius;
-  color: $textColor;
+	background-color: $bgColor;
+	border-radius: $borderRadius;
+	color: $textColor;
 }
 
 @mixin prescriptionBadges($color: transparent) {
-  background-color: transparent;
-  border-color: $color;
-  border-radius: $prescriptionRadius;
+	background-color: transparent;
+	border-color: $color;
+	border-radius: $prescriptionRadius;
 
-  &.IsSelected {
-    @include badges($color, $sapphire-white, $borderRadius: $prescriptionRadius);
-  }
+	&.IsSelected {
+		@include badges($color, $sapphire-white, $borderRadius: $prescriptionRadius);
+	}
 }
 
 $prescriptionRadius: 18px;
@@ -28,257 +26,258 @@ $prescriptionRadius: 18px;
 .LayoutBlank,
 .LayoutBase,
 .LayoutPopup {
-  .StatusBadges {
-    @include badges;
-    font-family: $font-family-latin-bold;
-    font-size: 0.857rem;
-    line-height: 12px;
-    max-height: 20px;
-    padding: 3px 10px;
-    vertical-align: middle;
+	.StatusBadges {
+		@include badges;
 
-    &.BadgeYellow {
-      @include badges($regular-beige, $dark-beige);
-    }
+		font-family: $font-family-latin-bold;
+		font-size: 0.857rem;
+		line-height: 12px;
+		min-height: 20px;
+		padding: 3px 10px;
+		vertical-align: middle;
 
-    &.BadgeRed {
-      @include badges($light-red, $regular-red);
-    }
+		&.BadgeYellow {
+			@include badges($regular-beige, $dark-beige);
+		}
 
-    &.BadgeGreen {
-      @include badges($light-green, $regular-green);
-    }
+		&.BadgeRed {
+			@include badges($light-red, $regular-red);
+		}
 
-    &.BadgeGrey {
-      @include badges($light-grey, $regular-grey);
-    }
+		&.BadgeGreen {
+			@include badges($light-green, $regular-green);
+		}
 
-    &.BadgeBlue {
-      @include badges($dark-blue, $sapphire-white);
-    }
+		&.BadgeGrey {
+			@include badges($light-grey, $regular-grey);
+		}
 
-    &.BadgeWhite {
-      @include badges($sapphire-white, $light-green);
-    }
+		&.BadgeBlue {
+			@include badges($dark-blue, $sapphire-white);
+		}
 
-    &.IconTextRed {
-      color: $regular-red;
-    }
+		&.BadgeWhite {
+			@include badges($sapphire-white, $light-green);
+		}
 
-    &.IconTextBlack {
-      color: $dark-grey;
-    }
+		&.IconTextRed {
+			color: $regular-red;
+		}
 
-    &.InvertBackground {
-      &.BadgeRed {
-        @include badges($textColor: $regular-red, $notInverted: false);
-      }
+		&.IconTextBlack {
+			color: $dark-grey;
+		}
 
-      &.BadgeGreen {
-        @include badges($textColor: $regular-green, $notInverted: false);
-      }
+		&.InvertBackground {
+			&.BadgeRed {
+				@include badges($textColor: $regular-red, $notInverted: false);
+			}
 
-      &.BadgeYellow {
-        @include badges($textColor: $regular-yellow, $notInverted: false);
-      }
+			&.BadgeGreen {
+				@include badges($textColor: $regular-green, $notInverted: false);
+			}
 
-      &.BadgeGrey {
-        @include badges($textColor: $light-grey, $notInverted: false);
-      }
+			&.BadgeYellow {
+				@include badges($textColor: $regular-yellow, $notInverted: false);
+			}
 
-      &.BadgeBlue {
-        @include badges($textColor: $dark-blue, $notInverted: false);
-      }
+			&.BadgeGrey {
+				@include badges($textColor: $light-grey, $notInverted: false);
+			}
 
-      &.BadgeSapphireBlue2 {
-        @include badges($textColor: $regular-blue, $notInverted: false);
-      }
+			&.BadgeBlue {
+				@include badges($textColor: $dark-blue, $notInverted: false);
+			}
 
-      &.IconTextRed {
-        color: $regular-red;
-      }
+			&.BadgeSapphireBlue2 {
+				@include badges($textColor: $regular-blue, $notInverted: false);
+			}
 
-      &.IconTextBlack {
-        color: $dark-grey;
-      }
-    }
+			&.IconTextRed {
+				color: $regular-red;
+			}
 
-    .tablet .StatusBadges .Badges_Icon+div {
-      white-space: nowrap;
-    }
-  }
+			&.IconTextBlack {
+				color: $dark-grey;
+			}
+		}
 
-  .BadgesExtendedWrapper {
-    .PrescriptionBadges {
-      border-radius: 0;
-      font-family: $font-family-latin-bold;
-      font-size: $font-size-small;
-      //height: 15px;
-      line-height: 15px;
-      max-height: 20px;
-      padding: 0 10px;
+		.tablet .StatusBadges .Badges_Icon + div {
+			white-space: nowrap;
+		}
+	}
 
-      &.Green.IsSelected {
-        @include badges($regular-green, $sapphire-white);
-      }
+	.BadgesExtendedWrapper {
+		.PrescriptionBadges {
+			border-radius: 0;
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-small;
+			//height: 15px;
+			line-height: 15px;
+			max-height: 20px;
+			padding: 0 10px;
 
-      &.Red.IsSelected {
-        @include badges($regular-red, $sapphire-white);
-      }
+			&.Green.IsSelected {
+				@include badges($regular-green, $sapphire-white);
+			}
 
-      &.Yellow.IsSelected {
-        @include badges($regular-yellow, $sapphire-white);
-      }
+			&.Red.IsSelected {
+				@include badges($regular-red, $sapphire-white);
+			}
 
-      &.LightGrey.IsSelected {
-        @include badges($light-grey, $sapphire-white);
-      }
-    }
-  }
+			&.Yellow.IsSelected {
+				@include badges($regular-yellow, $sapphire-white);
+			}
 
-  .BadgeClassification {
-    border-radius: 2px;
-    color: $sapphire-white;
-    display: inline-block;
-    font-family: $font-family-latin-bold;
-    font-size: $font-size-small;
-    padding: 1px 4px;
-    white-space: nowrap;
+			&.LightGrey.IsSelected {
+				@include badges($light-grey, $sapphire-white);
+			}
+		}
+	}
 
-    .IconBadgeClassification {
-      margin-right: 5px;
-    }
-  }
+	.BadgeClassification {
+		border-radius: 2px;
+		color: $sapphire-white;
+		display: inline-block;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+		padding: 1px 4px;
+		white-space: nowrap;
 
-  .NumberCircle {
-    align-items: center;
-    border: 1px solid $mid-dark-grey;
-    border-radius: 50%;
-    color: $mid-dark-grey;
-    display: inline-flex;
-    font-size: $font-size-heading3;
-    height: 25px;
-    justify-content: center;
-    width: 25px;
-  }
+		.IconBadgeClassification {
+			margin-right: 5px;
+		}
+	}
 
-  .StatusTag {
-    border-radius: 2px 0 2px 2px;
-    color: $sapphire-white;
-    font-family: $font-family-latin-bold;
-    font-size: $font-size-small;
-    line-height: 15px;
-    padding: 2px 8px;
-    text-align: center;
-    text-transform: uppercase;
-  }
+	.NumberCircle {
+		align-items: center;
+		border: 1px solid $mid-dark-grey;
+		border-radius: 50%;
+		color: $mid-dark-grey;
+		display: inline-flex;
+		font-size: $font-size-heading3;
+		height: 25px;
+		justify-content: center;
+		width: 25px;
+	}
 
-  .PrescriptionBadges {
-    background-color: transparent;
-    border: 2px solid transparent;
-    color: $mid-dark-grey;
-    font-family: $font-family-latin-bold;
-    font-size: $font-size-normal;
-    height: 34px;
-    line-height: 30px;
-    min-width: 157px;
-    padding: 0 14px;
-    position: relative;
-    vertical-align: middle;
+	.StatusTag {
+		border-radius: 2px 0 2px 2px;
+		color: $sapphire-white;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+		line-height: 15px;
+		padding: 2px 8px;
+		text-align: center;
+		text-transform: uppercase;
+	}
 
-    >div:nth-child(1) {
-      width: auto;
-    }
+	.PrescriptionBadges {
+		background-color: transparent;
+		border: 2px solid transparent;
+		color: $mid-dark-grey;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-normal;
+		height: 34px;
+		line-height: 30px;
+		min-width: 157px;
+		padding: 0 14px;
+		position: relative;
+		vertical-align: middle;
 
-    .QuantityLabel {
-      margin-left: 6px;
-    }
+		> div:nth-child(1) {
+			width: auto;
+		}
 
-    .BadgeArrow {
-      font-size: $font-size-small;
-      line-height: 34px;
-      position: absolute;
-      right: 14px;
-    }
+		.QuantityLabel {
+			margin-left: 6px;
+		}
 
-    &.DarkRed {
-      @include prescriptionBadges($dark-red);
-    }
+		.BadgeArrow {
+			font-size: $font-size-small;
+			line-height: 34px;
+			position: absolute;
+			right: 14px;
+		}
 
-    &.Red {
-      @include prescriptionBadges($regular-red);
-    }
+		&.DarkRed {
+			@include prescriptionBadges($dark-red);
+		}
 
-    &.Orange {
-      @include prescriptionBadges($regular-orange);
-    }
+		&.Red {
+			@include prescriptionBadges($regular-red);
+		}
 
-    &.Yellow {
-      @include prescriptionBadges($regular-yellow);
-    }
+		&.Orange {
+			@include prescriptionBadges($regular-orange);
+		}
 
-    &.Blue {
-      @include prescriptionBadges($dark-blue);
-    }
+		&.Yellow {
+			@include prescriptionBadges($regular-yellow);
+		}
 
-    &.DarkGrey {
-      @include prescriptionBadges($dark-grey);
-    }
+		&.Blue {
+			@include prescriptionBadges($dark-blue);
+		}
 
-    &.LightGrey {
-      @include prescriptionBadges($light-grey);
-    }
+		&.DarkGrey {
+			@include prescriptionBadges($dark-grey);
+		}
 
-    &.Green {
-      @include prescriptionBadges($regular-green);
-    }
-  }
+		&.LightGrey {
+			@include prescriptionBadges($light-grey);
+		}
 
-  .BadgeArrow.IsSelected {
-    color: $sapphire-white;
-  }
+		&.Green {
+			@include prescriptionBadges($regular-green);
+		}
+	}
 
-  .BadgeArrow.IsSmallBadge.IsSelected {
-    display: none;
-  }
+	.BadgeArrow.IsSelected {
+		color: $sapphire-white;
+	}
 
-  /* SmallBadge */
+	.BadgeArrow.IsSmallBadge.IsSelected {
+		display: none;
+	}
 
-  .IsSmallBadge {
-    min-width: auto;
-  }
+	/* SmallBadge */
 
-  .IsSmallBadgeArrow {
-    display: none;
-  }
+	.IsSmallBadge {
+		min-width: auto;
+	}
 
-  .FA,
-  .AR {
-    .IconBadgeClassification {
-      margin-left: 5px;
-      margin-right: auto;
-    }
+	.IsSmallBadgeArrow {
+		display: none;
+	}
 
-    .PrescriptionBadges {
-      padding-left: 0;
-      padding-right: 22px;
+	.FA,
+	.AR {
+		.IconBadgeClassification {
+			margin-left: 5px;
+			margin-right: auto;
+		}
 
-      &.IsSmallBadge>div {
-        width: auto;
-      }
+		.PrescriptionBadges {
+			padding-left: 0;
+			padding-right: 22px;
 
-      .BadgeArrow {
-        left: 14px;
-      }
+			&.IsSmallBadge > div {
+				width: auto;
+			}
 
-      .QuantityLabel {
-        margin-left: 0;
-        margin-right: 6px;
-      }
-    }
+			.BadgeArrow {
+				left: 14px;
+			}
 
-    .IsSmallBadge {
-      padding: 0 12px;
-    }
-  }
+			.QuantityLabel {
+				margin-left: 0;
+				margin-right: 6px;
+			}
+		}
+
+		.IsSmallBadge {
+			padding: 0 12px;
+		}
+	}
 }

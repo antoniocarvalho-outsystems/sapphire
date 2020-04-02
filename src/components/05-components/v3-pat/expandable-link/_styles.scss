@@ -1,75 +1,75 @@
-.ExpandableLinkWrapper {
-	&.active {
-		.ExpandableLinkWrapper {
-			&_content {
-				display: block;
-			}
+.ExpandableLink {
+	&--expanded & {
+		&__Icon {
+			transform: rotate(-180deg);
+		}
 
-			&__icon {
-				transform: rotate(-180deg);
-			}
+		&__Content {
+			max-height: 500px;
+			overflow: auto;
 		}
 	}
 
-	&_Header {
-		cursor: pointer;
-
-		&.IsTriggerRight {
+	&--triggerRight & {
+		&__Header {
 			display: flex;
 			transform: scale(-1, 1);
 
 			> div > div {
 				transform: scale(-1, 1);
 			}
+		}
 
-			.ExpandableLinkWrapper__link {
-				display: flex;
+		&__Link {
+			display: flex;
+			flex-basis: 100%;
+			flex-wrap: nowrap;
+
+			> div:last-of-type {
 				flex-basis: 100%;
-				flex-wrap: nowrap;
-
-				> div:last-of-type {
-					flex-basis: 100%;
-					margin-left: 10px;
-				}
-			}
-
-			.ExpandableLinkWrapper__icon,
-			.ExpandableLinkWrapper__link > div {
-				align-self: center;
-				justify-content: center;
+				margin-left: 10px;
 			}
 		}
 
-		> div {
-			min-height: auto;
+		&__Icon,
+		&__Link > div {
+			align-self: center;
+			justify-content: center;
 		}
 	}
 
-	&_content {
-		display: none;
-		margin-top: 10px;
-
-		.LineDetailsExpandBox .ExpandableLinkWrapper_Header {
-			padding: 5px 10px;
-		}
+	&__Header {
+		cursor: pointer;
 	}
 
-	&__icon {
-		color: $regular-beta;
+	&__Icon {
 		transition: transform 0.5s;
+
+		.icon {
+			@include arrow-button($regular-beta, 20px, 0.7em);
+		}
 	}
 
-	&__link {
-		margin-left: 10px;
+	&__Link {
+		color: $regular-beta;
+		font-family: $font-family-latin-bold;
+		margin-left: 15px;
+	}
+
+	&__Content {
+		margin-top: 10px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 500ms;
 	}
 }
 
 .AR,
 .FA {
-	.ExpandableLinkWrapper {
-		&__link {
+	.ExpandableLink {
+		&__Link {
 			margin-left: 0;
-			margin-right: 10px;
+			margin-right: 15px;
 		}
 	}
 }
