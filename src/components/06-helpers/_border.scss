@@ -132,3 +132,27 @@
 .bordercolor--secondary {
 	border-color: $regular-alpha;
 }
+
+.SapphireBorder {
+	border: 1px solid $regular-alpha;
+}
+
+.BorderGrey {
+	border: 1px solid $light-grey;
+}
+
+.BorderBottomLine {
+	border-bottom: solid 1px $light-grey;
+}
+
+.BorderBottomAviabilityCard {
+	border-bottom: 1px solid $light-grey;
+}
+
+.BottomBorderGrey {
+	border-bottom: 1px solid $light-grey;
+}
+
+.TopBorderGrey {
+	border-top: 1px solid $light-grey;
+}

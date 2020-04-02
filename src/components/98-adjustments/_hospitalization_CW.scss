@@ -1,10 +1,12 @@
-span[id*='RelatedVisitsRL'] {
+div[id*='LinkedHospitalizations'] {
+  border-top: none;
+}
 
+span[id*='RelatedVisitsRL'] {
   :not(:first-child) {
     .PersonCard_header {
       border-top: none;
     }
-
   }
 }
 
@@ -14,7 +16,6 @@ span[id*='RelatedVisitsRL'] {
       .CompLine_headLine {
         border-top: none;
       }
-
     }
   }
 }
