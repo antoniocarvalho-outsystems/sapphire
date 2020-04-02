@@ -4,21 +4,21 @@
 
   table {
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: $font-size-small;
     margin: 0;
     padding: 0;
   }
 
   thead {
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: $font-size-small;
     margin: 0;
     padding: 0;
   }
 
   tr {
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: $font-size-small;
     margin: 0;
     padding: 0;
     visibility: visible;
@@ -26,7 +26,7 @@
 
   td {
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: $font-size-small;
     margin: 0;
     padding: 0;
 
@@ -47,8 +47,8 @@
 
   .TabularScroll-center {
     td {
-      border-bottom: solid 1px #ccc;
-      border-left: solid 1px #ccc;
+      border-bottom: solid 1px $light-grey;
+      border-left: solid 1px $light-grey;
       min-width: 100px;
       overflow: hidden;
       padding: 3px;
@@ -62,7 +62,7 @@
 }
 
 .TabularScrollItem {
-  border-bottom: solid thin #ccc;
+  border-bottom: solid thin $light-grey;
   box-sizing: border-box;
   display: block;
   padding: 3px;
@@ -74,7 +74,7 @@
   padding-top: 21px;
 
   .TabularScrollItem {
-    border-right: solid thin #ccc;
+    border-right: solid thin $light-grey;
   }
 }
 
@@ -84,7 +84,7 @@
   padding-top: 21px;
 
   .TabularScrollItem {
-    border-left: solid thin #ccc;
+    border-left: solid thin $light-grey;
   }
 }
 
