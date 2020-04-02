@@ -44,24 +44,24 @@
 		}
 	}
 
-	.active div.ExpandableHeader {
+	.ExpandableLink--expanded div.ExpandableHeader {
 		.ExpandableHeader__iconWrapper {
 			transform: rotate(0deg);
 		}
 	}
 
-	.ExpandableLinkWrapper {
+	.ExpandableLink {
 		border: 1px solid $light-grey;
 
-		&:not(.active) > .ExpandableLinkWrapper_content {
+		&:not(.ExpandableLink--expanded) > .ExpandableLink__Content {
 			display: none;
 		}
 
-		&.active > .ExpandableLinkWrapper_content {
+		&.ExpandableLink--expanded > .ExpandableLink__Content {
 			display: block;
 		}
 
-		&_Header {
+		&__Header {
 			background-color: $body-color;
 			cursor: default;
 			display: block;
@@ -88,7 +88,7 @@
 			}
 		}
 
-		&_content {
+		&__Content {
 			background-color: $regular-white;
 			border-top: solid 1px $light-grey;
 			margin: 0;
@@ -131,11 +131,11 @@
 			}
 		}
 
-		&__icon {
+		&__Icon {
 			display: none;
 		}
 
-		&__link {
+		&__Link {
 			display: table;
 			margin: 0;
 			vertical-align: middle;
@@ -161,7 +161,7 @@
 			}
 		}
 
-		.ExpandableLinkWrapper_content {
+		.ExpandableLink__Content {
 			div.ExpandableHeader__icon {
 				padding: 0 30px 0 15px;
 			}
@@ -171,7 +171,7 @@
 			}
 		}
 
-		.ExpandableLinkWrapper_Header .LineDetailsExpandBox_action {
+		.ExpandableLink__Header .LineDetailsExpandBox_action {
 			text-align: left;
 		}
 	}
