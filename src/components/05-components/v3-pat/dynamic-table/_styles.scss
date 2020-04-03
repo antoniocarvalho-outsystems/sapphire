@@ -25,6 +25,7 @@
 		padding: 10px 15px;
 	}
 
+	&__RowColumn,
 	&__HeaderColumn {
 		@include flex-center-total;
 
@@ -44,6 +45,11 @@
 			padding: 0;
 			text-align: left;
 		}
+	}
+
+	&__Rows {
+		display: flex;
+		padding: 10px 15px;
 	}
 }
 
