@@ -18,11 +18,18 @@
 		}
 	}
 
+	&--hasDelete & {
+		&__Rows,
+		&__Header {
+			padding-right: 35px;
+		}
+	}
+
 	&__Header {
 		border-bottom: 1px solid $light-grey;
 		display: flex;
 		font-family: $font-family-latin-bold;
-		padding: 10px 15px;
+		padding: 10px 12px;
 	}
 
 	&__RowColumn,
@@ -33,23 +40,56 @@
 		padding: 0 5px;
 		text-align: center;
 
-		&:last-child {
+		&:last-of-type {
 			padding-right: 0;
 		}
 
 		&--main {
 			@extend .DynamicTable__HeaderColumn;
 
-			flex-basis: 15%;
+			flex-basis: 10%;
 			justify-content: start;
 			padding: 0;
 			text-align: left;
 		}
 	}
 
+	&__RowsWrapper {
+		position: relative;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $light-grey;
+		}
+	}
+
 	&__Rows {
 		display: flex;
-		padding: 10px 15px;
+		min-height: 80px;
+		padding: 0 12px;
+
+		// PersonCard Adjustments
+		.PersonCard {
+			height: 100%;
+			width: 100%;
+
+			&_header {
+				border: none;
+				margin-left: -12px;
+				min-height: 100%;
+			}
+
+			&__headerLeftInfo {
+				align-items: center;
+				padding-left: 12px;
+			}
+		}
+	}
+
+	&__RowDelete {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }
 
