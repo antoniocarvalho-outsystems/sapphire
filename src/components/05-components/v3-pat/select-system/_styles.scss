@@ -238,6 +238,15 @@
 		.select2-search__field {
 			width: 100% !important;
 		}
+
+		.tagCustom,
+		.tagSystem,
+		.MultipleSelect,
+		.Select2Ajax.Multiple {
+			&:after {
+				background-color: transparent !important;
+			}
+		}
 	}
 }
 

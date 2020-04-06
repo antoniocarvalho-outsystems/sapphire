@@ -28,7 +28,6 @@
 	&__Header {
 		border-bottom: 1px solid $light-grey;
 		display: flex;
-		font-family: $font-family-latin-bold;
 		padding: 10px 12px;
 	}
 
@@ -85,7 +84,7 @@
 		}
 	}
 
-	&__RowDelete {
+	&__RowAction {
 		position: absolute;
 		right: 10px;
 		top: 50%;
@@ -96,10 +95,32 @@
 .AR,
 .FA {
 	.DynamicTable {
+		&--hasDelete {
+			.DynamicTable {
+				&__Rows,
+				&__Header {
+					padding-left: 35px;
+					padding-right: 12px;
+				}
+			}
+		}
+
 		&__HeaderColumn {
 			&:last-child {
 				padding-left: 0;
 				padding-right: 5px;
+			}
+		}
+
+		&__RowAction {
+			left: 10px;
+			right: auto;
+		}
+
+		&__Rows {
+			.PersonCard {
+				margin-left: auto;
+				margin-right: -12px;
 			}
 		}
 	}
