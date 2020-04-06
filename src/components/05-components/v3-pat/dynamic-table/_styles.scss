@@ -1,0 +1,127 @@
+.DynamicTable {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+
+	&--disabled {
+		background-color: $body-color;
+		cursor: not-allowed;
+
+		.DynamicTable {
+			&__Header {
+				opacity: 0.7;
+				pointer-events: none;
+			}
+
+			&__Rows {
+				pointer-events: none;
+			}
+		}
+	}
+
+	&--hasDelete & {
+		&__Rows,
+		&__Header {
+			padding-right: 35px;
+		}
+	}
+
+	&__Header {
+		border-bottom: 1px solid $light-grey;
+		display: flex;
+		padding: 10px 12px;
+	}
+
+	&__RowColumn,
+	&__HeaderColumn {
+		@include flex-center-total;
+
+		flex: 1;
+		padding: 0 5px;
+		text-align: center;
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+
+		&--main {
+			@extend .DynamicTable__HeaderColumn;
+
+			flex-basis: 10%;
+			justify-content: start;
+			padding: 0;
+			text-align: left;
+		}
+	}
+
+	&__RowsWrapper {
+		position: relative;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $light-grey;
+		}
+	}
+
+	&__Rows {
+		display: flex;
+		min-height: 80px;
+		padding: 0 12px;
+
+		// PersonCard Adjustments
+		.PersonCard {
+			height: 100%;
+			width: 100%;
+
+			&_header {
+				border: none;
+				margin-left: -12px;
+				min-height: 100%;
+			}
+
+			&__headerLeftInfo {
+				align-items: center;
+				padding-left: 12px;
+			}
+		}
+	}
+
+	&__RowAction {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.AR,
+.FA {
+	.DynamicTable {
+		&--hasDelete {
+			.DynamicTable {
+				&__Rows,
+				&__Header {
+					padding-left: 35px;
+					padding-right: 12px;
+				}
+			}
+		}
+
+		&__HeaderColumn {
+			&:last-child {
+				padding-left: 0;
+				padding-right: 5px;
+			}
+		}
+
+		&__RowAction {
+			left: 10px;
+			right: auto;
+		}
+
+		&__Rows {
+			.PersonCard {
+				margin-left: auto;
+				margin-right: -12px;
+			}
+		}
+	}
+}

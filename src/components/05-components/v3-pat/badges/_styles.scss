@@ -281,3 +281,54 @@ $prescriptionRadius: 18px;
 		}
 	}
 }
+
+.BadgeCustom {
+	border: 1px solid transparent;
+	border-radius: 2px;
+	display: inline-flex;
+	font-family: $font-family-latin-bold;
+	font-size: $font-size-small;
+	line-height: 12px;
+	max-height: 20px;
+	padding: 3px 10px;
+	position: relative;
+
+	&__Icon {
+		margin-right: 10px;
+	}
+
+	&__Notification {
+		&::before {
+			background-color: $regular-beta;
+			border-radius: 1px;
+			bottom: 19px;
+			color: $regular-white;
+			content: attr(ui-value);
+			font-size: 0.7em;
+			padding: 0 6px;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			white-space: nowrap;
+		}
+
+		&::after {
+			border-left: 5px solid transparent;
+			border-right: 2px solid transparent;
+			border-top: 5px solid $regular-beta;
+			content: ' ';
+			line-height: 0;
+			position: absolute;
+			right: 7px;
+			top: -1px;
+			width: 0;
+		}
+	}
+
+	.AR & {
+		&__Icon {
+			margin-left: 10px;
+			margin-right: 0;
+		}
+	}
+}

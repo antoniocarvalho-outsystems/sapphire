@@ -408,6 +408,15 @@ $styleguide-main-content-padding: 50px;
 		row-gap: 5px;
 		width: 100%;
 
+		.AR & {
+			.MultiMarginRightSmall,
+			.MultiMarginRightXSmall,
+			.MultiMarginRightMedium,
+			.MultiMarginRightLarge {
+				margin-right: 0;
+			}
+		}
+
 		textarea,
 		input:not([type='checkbox']):not([type='radio']) {
 			display: block;
@@ -484,7 +493,6 @@ $styleguide-main-content-padding: 50px;
 			}
 		}
 	}
-
 	// Home Page
 
 	.Section {
