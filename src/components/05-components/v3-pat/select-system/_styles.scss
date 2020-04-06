@@ -22,7 +22,6 @@
 				.select2-search__field {
 					margin-top: 2px;
 					min-height: 28px;
-					min-width: fit-content;
 				}
 			}
 		}
@@ -231,12 +230,13 @@
 	}
 
 	.select2-container--disabled {
-		.select2-search--inline {
+		li:only-child {
 			width: 100%;
-		}
 
-		.select2-search__field {
-			width: 100% !important;
+			.select2-search__field {
+				min-width: fit-content;
+				width: 100% !important;
+			}
 		}
 
 		.tagCustom,
