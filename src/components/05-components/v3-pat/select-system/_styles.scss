@@ -4,7 +4,7 @@
 .DesignSystem {
 	.select2-container--default {
 		.select2-selection {
-			min-height: 36px;
+			height: 36px;
 
 			.select2-selection__rendered,
 			.select2-search {
@@ -85,16 +85,15 @@
 					color: $dark-grey;
 					cursor: pointer;
 					display: inline-block;
-					font-family: $font-family-latin-bold;
-					font-size: 1.143em;
-					height: 8px;
-					line-height: 8px;
+					font-size: $font-size-heading2;
+					font-weight: bold;
+					line-height: 22px;
 					margin: 0;
 					padding: 0;
 					position: absolute;
-					right: 10px;
-					top: 50%;
-					transform: translateY(-50%);
+					right: 5px;
+					top: 0;
+					vertical-align: middle;
 				}
 
 				.select2-results__option {
@@ -113,18 +112,15 @@
 			&.Select2Ajax.Multiple {
 				.select2-selection__choice {
 					background-color: $regular-zeta;
-					border: none;
 					border-radius: 0;
 					cursor: default;
 					display: inline-block;
 					font-family: $font-family-latin-bold;
-					line-height: 22px;
 					margin-top: 4px;
 					padding: 2px 0px;
 					padding-left: 15px;
 					padding-right: 25px;
 					position: relative;
-					white-space: normal;
 
 					> div {
 						max-width: 350px;
@@ -138,16 +134,15 @@
 					color: $dark-grey;
 					cursor: pointer;
 					display: inline-block;
-					font-family: $font-family-latin-bold;
-					font-size: 1.143em;
-					height: 8px;
-					line-height: 8px;
+					font-size: $font-size-heading2;
+					font-weight: bold;
+					line-height: 22px;
 					margin: 0;
 					padding: 0;
 					position: absolute;
-					right: 10px;
-					top: 50%;
-					transform: translateY(-50%);
+					right: 5px;
+					top: 0;
+					vertical-align: middle;
 				}
 
 				.select2-selection__clear {
@@ -164,11 +159,6 @@
 
 				&:after {
 					@include up-down-arrows;
-
-					height: 12px;
-					right: 18px;
-					top: 50%;
-					transform: translateY(-50%);
 				}
 			}
 
@@ -189,23 +179,16 @@
 			.select2-selection__rendered {
 				padding-left: 10px;
 				padding-right: 36px;
-
-				li:only-child {
-					width: 100%;
-
-					.select2-search__field {
-						min-width: fit-content;
-						width: 100% !important;
-					}
-				}
 			}
 		}
 
 		.select2-search--inline {
+			width: 100% !important;
+
 			.select2-search__field {
 				height: 100%;
 				margin: 0;
-				min-height: 34px;
+				width: 100% !important;
 			}
 		}
 
@@ -245,17 +228,6 @@
 				position: absolute;
 				right: 20px;
 				top: 11px;
-			}
-		}
-	}
-
-	.select2-container--disabled {
-		.tagCustom,
-		.tagSystem,
-		.MultipleSelect,
-		.Select2Ajax.Multiple {
-			&:after {
-				background-color: transparent !important;
 			}
 		}
 	}
