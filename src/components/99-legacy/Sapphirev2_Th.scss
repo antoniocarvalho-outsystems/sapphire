@@ -33496,37 +33496,37 @@ a.Button.FullWidth {
 }
 
 /*******   custom select2 with html****/
-.fontSelect2Title {
-  color: #404548;
-  display: inline-block;
-  font-size: 1em;
-  font-weight: bold;
-  text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  width: 50%;
-}
+// .fontSelect2Title {
+//   color: #404548;
+//   display: inline-block;
+//   font-size: 1em;
+//   font-weight: bold;
+//   text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+//   width: 50%;
+// }
 
-.AR .fontSelect2Title,
-.FA .fontSelect2Title {
-  float: right;
-}
+// .AR .fontSelect2Title,
+// .FA .fontSelect2Title {
+//   float: right;
+// }
 
-.fontSelect2Availability {
-  color: #16979f;
-  display: inline-block;
-  font-size: 1em;
-  text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  width: 49%;
-}
+// .fontSelect2Availability {
+//   color: #16979f;
+//   display: inline-block;
+//   font-size: 1em;
+//   text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+//   width: 49%;
+// }
 
-.AR .fontSelect2Availability,
-.FA .fontSelect2Availability {
-  float: right;
-}
+// .AR .fontSelect2Availability,
+// .FA .fontSelect2Availability {
+//   float: right;
+// }
 
-.fontSelect2Title.disabled,
-.fontSelect2Availability.disabled {
-  color: #b1b5b6;
-}
+// .fontSelect2Title.disabled,
+// .fontSelect2Availability.disabled {
+//   color: #b1b5b6;
+// }
 
 .dropdownCustom .select2-results__option--highlighted[aria-selected],
 .dropdownCustom .select2-results__option[aria-selected='true'] {

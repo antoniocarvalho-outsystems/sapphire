@@ -410,6 +410,35 @@
 	font-weight: 400;
 }
 
+.fontSelect2Title {
+	display: inline-block;
+	font-family: $font-family-latin-bold;
+	font-size: 1em;
+	width: 50%;
+}
+
+.AR .fontSelect2Title,
+.FA .fontSelect2Title {
+	float: right;
+}
+
+.fontSelect2Availability {
+	color: $regular-alpha;
+	display: inline-block;
+	font-size: 1em;
+	width: 49%;
+}
+
+.AR .fontSelect2Availability,
+.FA .fontSelect2Availability {
+	float: right;
+}
+
+.fontSelect2Title.disabled,
+.fontSelect2Availability.disabled {
+	color: $regular-grey;
+}
+
 .Mandatory + .select2.select2-container .select2-selection--single,
 .Mandatory + .select2.select2-container .select2-selection--single.customSelect,
 .select2.select2-container .select2-selection--single.customSelect {
