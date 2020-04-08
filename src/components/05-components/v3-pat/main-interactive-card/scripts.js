@@ -210,7 +210,7 @@
 		this.isOpen = false;
 		this.$card.removeClass('isOpen');
 		if (this.$widget.find('iframe').length === 1 && !this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')) {
-			this.$widget.find('iframe').contents().find('.MainInteractiveCard-iframe-actions').css('visibility', 'hidden');
+			this.$widget.find('iframe').find('.MainInteractiveCard-iframe-actions').css('visibility', 'hidden');
 		}
 		this.$body.slideUp(duration, function () {
 			if (self.$card.hasClass('forceOpen')) {
