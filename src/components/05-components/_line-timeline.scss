@@ -13,7 +13,7 @@
 		background: $regular-white;
 		height: 100%;
 
-		&:not(.TimeLineHideLogs) > .LineTimeLine__showMore {
+		&:not(.TimeLineHideLogs)>.LineTimeLine__showMore {
 			display: none;
 		}
 	}
@@ -86,9 +86,17 @@
 
 		background-color: $regular-alpha;
 		color: $regular-white;
+		flex-direction: column;
 		font-family: $font-family-latin-bold;
 		font-size: 1.429em;
 		width: 130px;
+	}
+
+	&___day_month {
+		display: flex;
+		font-size: $font-size-heading3;
+		justify-content: center;
+		width: 100%;
 	}
 
 	&___actions {
@@ -108,19 +116,15 @@
 
 	&____day {
 		margin-right: 8px;
-		margin-top: 25px;
 	}
 
 	&____month {
-		margin-top: 25px;
+		//margin-top: 25px;
 	}
 
 	&____desktopIcon {
 		color: $regular-white;
 		font-size: 0.7em;
-		left: 55px;
-		position: absolute;
-		top: 15px;
 	}
 
 	&____desktopLabel {
@@ -179,6 +183,7 @@
 }
 
 .TimelineItemLineLeftContent {
+
 	&_icon,
 	&_title,
 	&_number {
