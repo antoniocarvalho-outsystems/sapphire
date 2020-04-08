@@ -13,7 +13,7 @@
 		background: $regular-white;
 		height: 100%;
 
-		&:not(.TimeLineHideLogs)>.LineTimeLine__showMore {
+		&:not(.TimeLineHideLogs) > .LineTimeLine__showMore {
 			display: none;
 		}
 	}
@@ -183,7 +183,6 @@
 }
 
 .TimelineItemLineLeftContent {
-
 	&_icon,
 	&_title,
 	&_number {
