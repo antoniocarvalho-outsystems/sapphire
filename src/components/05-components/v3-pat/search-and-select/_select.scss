@@ -6,194 +6,202 @@
 $font-size-8px: 0.5714em;
 
 .SelectSD {
-	background-color: $sapphire-white;
-	display: table;
-	min-height: 58px;
-	width: 100%;
+  background-color: $sapphire-white;
+  display: table;
+  min-height: 58px;
+  width: 100%;
 
-	.SelectSD--disabled {
-		pointer-events: none;
-		.SelectSD_actionLink {
-			opacity: 0.5;
-		}
-		.SelectSD__starLink {
-			pointer-events: all;
-		}
-	}
+  .SelectSD--disabled {
+    pointer-events: none;
 
-	&.hasFavorite {
-		.SelectSD__starLink {
-			color: $light-grey;
-			display: table-cell;
-			//font-size: $font-size-8px;
-			padding: 16px 0;
-			text-align: center;
-			vertical-align: middle;
-			width: 48px;
+    .SelectSD_actionLink {
+      opacity: 0.5;
+    }
 
-			.SelectSD__starWrapper {
-				height: 100%;
-				width: 100%;
-				&.starActive {
-					.icon {
-						color: $light-grey;
-						&:hover {
-							color: $regular-alpha;
-						}
-					}
-				}
+    .SelectSD__starLink {
+      pointer-events: all;
+    }
+  }
 
-				&.starDisabled {
-					.icon {
-						color: $light-grey;
-					}
-				}
+  &.hasFavorite {
+    .SelectSD__starLink {
+      color: $light-grey;
+      display: table-cell;
+      //font-size: $font-size-8px;
+      padding: 16px 0;
+      text-align: center;
+      vertical-align: middle;
+      width: 48px;
 
-				&.starSelected {
-					.icon {
-						color: $regular-alpha;
-					}
-				}
-			}
-		}
+      .SelectSD__starWrapper {
+        height: 100%;
+        width: 100%;
 
-		// .SelectSD_contentWrapper {
-		// 	padding: 16px 0;
-		// }
-	}
+        &.starActive {
+          .icon {
+            color: $light-grey;
 
-	.SelectSD_contentWrapper {
-		display: table-cell;
-		padding: 5px 16px;
-		text-align: left;
-		vertical-align: middle;
+            &:hover {
+              color: $regular-alpha;
+            }
+          }
+        }
 
-		.SelectSD__contentTitle {
-			color: $dark-grey;
-			font-size: $font-size-normal;
-			line-height: 25px;
-			margin-right: 10px;
-			text-transform: uppercase;
+        &.starDisabled {
+          .icon {
+            color: $light-grey;
+          }
+        }
 
-			.Text_Note {
-				color: $mid-light-grey;
-			}
-		}
+        &.starSelected {
+          .icon {
+            color: $regular-alpha;
+          }
+        }
+      }
+    }
 
-		.SelectSD__contentTags {
-			line-height: 22px;
-		}
+    // .SelectSD_contentWrapper {
+    // 	padding: 16px 0;
+    // }
+  }
 
-		.SelectSD__contentICD {
-			color: $mid-light-grey;
-			font-size: 14px;
-			line-height: 20px;
-		}
-	}
+  .SelectSD_contentWrapper {
+    display: table-cell;
+    padding: 5px 16px;
+    text-align: left;
+    vertical-align: middle;
 
-	&:last-child {
-		border: 0;
-	}
+    .SelectSD__contentTitle {
+      color: $dark-grey;
+      font-size: $font-size-normal;
+      line-height: 25px;
+      margin-right: 10px;
+      text-transform: uppercase;
 
-	&:hover {
-		background-color: $regular-eta;
-		cursor: pointer;
-	}
+      .Text_Note {
+        color: $mid-light-grey;
+      }
+    }
 
-	.SelectSD__multiple {
-		display: table-cell;
-		font-size: $font-size-8px;
-		padding: 16px 0;
-		vertical-align: middle;
-		width: 38px;
+    .SelectSD__contentTags {
+      line-height: 22px;
+    }
 
-		> input[type='checkbox'] {
-			height: 18px;
-			margin: 0;
-			width: 18px;
+    .SelectSD__contentICD {
+      color: $mid-light-grey;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 
-			&:after {
-				border: 3px solid #0da2aa;
-				border-right: 0;
-				border-top: 0;
-				height: 5px;
-				left: 20%;
-				top: 24%;
-				transition: visibility 0.15s, opacity 0.15s linear;
-				width: 10px;
-			}
-		}
-	}
-	&.MultiSelectActive {
-		.SelectSD_contentWrapper,
-		.SelectSD_contentWrapper + a {
-			pointer-events: none;
-		}
-	}
+  &:last-child {
+    border: 0;
+  }
 
-	.SelectSD-searched-term {
-		color: $dark-grey;
-		font-family: $font-family-latin-bold;
-	}
+  &:hover {
+    background-color: $regular-eta;
+    cursor: pointer;
+  }
 
-	.SelectSD__tags {
-		display: inline-block;
-		.StatusBadges {
-			margin-right: 10px;
-		}
-	}
+  .SelectSD__multiple {
+    display: table-cell;
+    font-size: $font-size-8px;
+    padding: 16px 0;
+    vertical-align: middle;
+    width: 38px;
 
-	.SelectSD_actionLink {
-		display: table-cell;
-		padding-top: 2px;
-		text-align: center;
-		vertical-align: middle;
-		width: 68px;
-		.SelectSD__action {
-			height: 100%;
-			width: 100%;
+    >input[type='checkbox'] {
+      height: 18px;
+      margin: 0;
+      width: 18px;
 
-			.icon {
-				background-color: $sapphire-white;
-				border: 1px solid $regular-alpha;
-				border-radius: 2px;
-				box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-				box-sizing: border-box;
-				color: $regular-alpha;
-				text-align: center;
+      &:after {
+        border: 3px solid #0da2aa;
+        border-right: 0;
+        border-top: 0;
+        height: 5px;
+        left: 20%;
+        top: 24%;
+        transition: visibility 0.15s, opacity 0.15s linear;
+        width: 10px;
+      }
+    }
+  }
 
-				&::before {
-					position: relative;
-					top: 2px;
-				}
-			}
-		}
+  &.MultiSelectActive {
 
-		&:focus {
-			.SelectSD__action {
-				.icon {
-					border: none;
-					box-shadow: inset 0px 0px 0px 1px $regular-beta, 0px 0px 8px 0px $regular-beta;
-				}
-			}
-		}
-	}
+    .SelectSD_contentWrapper,
+    .SelectSD_contentWrapper+a {
+      pointer-events: none;
+    }
+  }
 
-	.SelectableList-EmptyMessage {
-		background-color: $sapphire-white;
-	}
+  .SelectSD-searched-term {
+    color: $dark-grey;
+    font-family: $font-family-latin-bold;
+  }
+
+  .SelectSD__tags {
+    display: inline-block;
+
+    .StatusBadges {
+      margin-right: 10px;
+    }
+  }
+
+  .SelectSD_actionLink {
+    display: table-cell;
+    padding-top: 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 68px;
+
+    .SelectSD__action {
+      height: 100%;
+      width: 100%;
+
+      .icon {
+        background-color: $sapphire-white;
+        border: 1px solid $regular-alpha;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        color: $regular-alpha;
+        text-align: center;
+
+        &::before {
+          position: relative;
+          top: 2px;
+        }
+      }
+    }
+
+    &:focus {
+      .SelectSD__action {
+        .icon {
+          border: none;
+          box-shadow: inset 0px 0px 0px 1px $regular-beta, 0px 0px 8px 0px $regular-beta;
+        }
+      }
+    }
+  }
+
+  .SelectableList-EmptyMessage {
+    background-color: $sapphire-white;
+  }
 }
 
 /*AR and FA*/
 
 .FA,
 .AR {
-	.SelectSD_contentWrapper {
-		text-align: right;
+  .SelectSD_contentWrapper {
+    text-align: right;
 
-		.SelectSD__contentTitle {
-			margin-left: 10px;
-			margin-right: auto;
-		}
-	}
+    .SelectSD__contentTitle {
+      margin-left: 10px;
+      margin-right: auto;
+    }
+  }
 }
