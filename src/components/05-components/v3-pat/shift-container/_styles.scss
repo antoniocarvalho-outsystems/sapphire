@@ -132,7 +132,7 @@
   .ShiftCard {
     border-top: 1px solid $light-grey;
     color: $dark-grey;
-    display: flex;
+    //display: flex;
     min-height: 110px;
 
 
@@ -157,6 +157,7 @@
     &_description {
       background-color: $regular-white;
       border-right: 1px solid $light-grey;
+      display: block;
       min-width: 400px;
       padding: 30px 10px 15px 22px;
       position: relative;
@@ -479,7 +480,7 @@
       &_cardStatus {
         color: $mid-dark-grey;
         font-family: $font-family-latin-bold;
-        white-space: nowrap;
+        //white-space: nowrap;
 
         span.icon {
           margin-right: 5px;
