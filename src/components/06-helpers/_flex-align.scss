@@ -1,46 +1,56 @@
-.Flex {
+@mixin flex-base-style($class-extend) {
 	display: flex;
 
 	&CenterFull {
-		@extend .Flex;
+		@extend #{$class-extend};
 
 		align-items: center;
 		justify-content: center;
 	}
 
 	&CenterVertical {
-		@extend .Flex;
+		@extend #{$class-extend};
 
 		align-items: center;
 	}
 
 	&CenterHorizontal {
-		@extend .Flex;
+		@extend #{$class-extend};
 
 		justify-content: center;
 	}
 
 	&SpaceAround {
-		@extend .Flex;
+		@extend #{$class-extend};
 
 		justify-content: space-around;
 	}
 
 	&SpaceBetween {
-		@extend .Flex;
+		@extend #{$class-extend};
 
 		justify-content: space-between;
 	}
 
 	&SpaceEvenly {
-		@extend .Flex;
+		@extend #{$class-extend};
 
 		justify-content: space-evenly;
 	}
 }
 
+.Flex {
+	@include flex-base-style('.Flex');
+}
+
 .InlineFlex {
-	@extend .Flex;
+	@include flex-base-style('.InlineFlex');
 
 	display: inline-flex;
+}
+
+.FlexColumn {
+	@include flex-base-style('.FlexColumn');
+
+	flex-direction: column;
 }
