@@ -271,8 +271,9 @@ $font-size-11px: $font-size-tiny;
 }
 
 .ISidebar-user-login-location {
-	color: $regular-white;
-	font-size: 0.857em;
+	.VersionInfoWhite {
+		color: $regular-white;
+	}
 }
 
 .ISidebar-user-logout {

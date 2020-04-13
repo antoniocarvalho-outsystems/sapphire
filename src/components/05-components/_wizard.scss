@@ -33,10 +33,18 @@
 		border: 0 !important;
 	}
 
-	&.Past,
+	&.Past {
+		background-color: transparent;
+		color: $regular-beta;
+	}
+
 	&.ActiveStep {
 		background-color: $regular-alpha;
 		color: $regular-white;
+	}
+
+	&.Past,
+	&.ActiveStep {
 		font-weight: inherit;
 
 		&:before {
@@ -48,7 +56,7 @@
 		a:link,
 		a[disabled='disabled'],
 		a[disabled='disabled']:hover {
-			color: $regular-white;
+			color: inherit;
 			font-family: inherit;
 		}
 
