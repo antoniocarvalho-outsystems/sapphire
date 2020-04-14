@@ -1,0 +1,61 @@
+.ListBoard {
+	display: flex;
+
+	&-columns,
+	&-properties {
+		flex: 1 1 auto;
+	}
+
+	&-properties {
+		max-width: 200px;
+		min-width: 150px;
+	}
+
+	&-columns {
+		// overflow-y: scroll;
+
+		> .ListRecords {
+			display: flex;
+
+			.ListRecords > div {
+				display: block;
+			}
+		}
+	}
+
+	&-column {
+		flex: 1 1 0;
+		max-width: 170px;
+		min-width: 130px;
+		position: relative;
+
+		.ListBoard-item {
+			border-left: 1px solid $light-grey;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	&-item {
+		display: block;
+		font-size: 1rem;
+		height: 2rem;
+		line-height: 2rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&-tag {
+		position: absolute;
+		top: -20px;
+	}
+}
+
+.AR,
+.FA {
+	.ListBoard-column .ListBoard-item {
+		border-left: none;
+		border-right: 1px solid $light-grey;
+	}
+}
