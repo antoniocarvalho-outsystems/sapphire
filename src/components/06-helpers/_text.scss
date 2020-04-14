@@ -30,6 +30,19 @@
 	white-space: nowrap;
 }
 
+// Alignments
+.TextCenter {
+	text-align: center;
+}
+
+.TextLeft {
+	text-align: left;
+}
+
+.TextRight {
+	text-align: right;
+}
+
 // Go to 06-helpers/_colors.scss to see the new classes
 .Page .Text {
 	/* Colors */
