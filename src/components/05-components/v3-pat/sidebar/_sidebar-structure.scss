@@ -103,8 +103,6 @@ $font-size-11px: $font-size-tiny;
 				&:hover {
 					color: $regular-alpha;
 				}
-
-
 			}
 		}
 
@@ -126,7 +124,7 @@ $font-size-11px: $font-size-tiny;
 			}
 		}
 
-		.ISidebar-user-login-name .ISidebar .wbTasks .ISidebar-content-panel-content>div {
+		.ISidebar-user-login-name .ISidebar .wbTasks .ISidebar-content-panel-content > div {
 			margin-bottom: 10px;
 		}
 	}
@@ -170,19 +168,19 @@ $font-size-11px: $font-size-tiny;
 	}
 
 	.SearchSideBar {
-		>.SearchSideBarFields {
+		> .SearchSideBarFields {
 			margin-top: 0;
 		}
 
-		>.SearchSideBarLabel {
+		> .SearchSideBarLabel {
 			color: unset;
 			font-size: unset;
 			font-weight: 400;
 			height: auto;
 		}
 
-		>.SearchSideBarLabel {
-			>div:first-of-type {
+		> .SearchSideBarLabel {
+			> div:first-of-type {
 				font-size: unset;
 			}
 		}
@@ -190,7 +188,6 @@ $font-size-11px: $font-size-tiny;
 }
 
 .department-selector-container {
-
 	//tooltipster
 	.department-menu.department-menu-scrollbar {
 		background-color: $sapphire-grey-blue;
@@ -336,7 +333,7 @@ $font-size-11px: $font-size-tiny;
 	overflow-y: auto;
 }
 
-.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider>div {
+.ISidebar .SearchSideBar > .SearchSideBarFields > div.SliderWrapper > div.FieldsSlider > div {
 	width: 100%;
 }
 
@@ -344,9 +341,9 @@ $font-size-11px: $font-size-tiny;
 	min-width: 262px;
 }
 
-.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider,
-.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab1,
-.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab2 {
+.ISidebar .SearchSideBar > .SearchSideBarFields > div.SliderWrapper > div.FieldsSlider,
+.ISidebar .SearchSideBar > .SearchSideBarFields > div.SliderWrapper > div.FieldsSlider.Tab1,
+.ISidebar .SearchSideBar > .SearchSideBarFields > div.SliderWrapper > div.FieldsSlider.Tab2 {
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -354,8 +351,8 @@ $font-size-11px: $font-size-tiny;
 	white-space: normal;
 }
 
-.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab1>div:last-child input,
-.ISidebar .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab2>div:first-child input {
+.ISidebar .SearchSideBar > .SearchSideBarFields > div.SliderWrapper > div.FieldsSlider.Tab1 > div:last-child input,
+.ISidebar .SearchSideBar > .SearchSideBarFields > div.SliderWrapper > div.FieldsSlider.Tab2 > div:first-child input {
 	display: block;
 }
 
@@ -365,12 +362,12 @@ $font-size-11px: $font-size-tiny;
 	width: 125px;
 }
 
-.ISidebar .Page.FA .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab2,
-.Page.AR .SearchSideBar>.SearchSideBarFields>div.SliderWrapper>div.FieldsSlider.Tab2 {
+.ISidebar .Page.FA .SearchSideBar > .SearchSideBarFields > div.SliderWrapper > div.FieldsSlider.Tab2,
+.Page.AR .SearchSideBar > .SearchSideBarFields > div.SliderWrapper > div.FieldsSlider.Tab2 {
 	margin: 0;
 }
 
-.ISidebar-content .FieldsSlider input+span.ValidationMessage {
+.ISidebar-content .FieldsSlider input + span.ValidationMessage {
 	background-color: #a55555;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
