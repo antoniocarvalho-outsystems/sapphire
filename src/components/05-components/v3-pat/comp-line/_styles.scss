@@ -237,6 +237,41 @@
 	}
 }
 
+.CompLine {
+	.SectionExpandableInside {
+		background-color: $body-color;
+		cursor: default;
+		display: block;
+		position: relative;
+		width: 100%;
+
+		&.expanded {
+			.SectionExpandableInside {
+				&_header {
+					border-bottom: none;
+				}
+
+				&_content {
+					border: 1px solid $light-grey;
+					display: block;
+				}
+			}
+		}
+
+		&_header {
+			border: 1px solid $light-grey;
+
+			.ExapandablePlaceholder:empty {
+				display: none !important;
+			}
+		}
+
+		&_content {
+			display: none;
+		}
+	}
+}
+
 .AR,
 .FA {
 	.CompLine {

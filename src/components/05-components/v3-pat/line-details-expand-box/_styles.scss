@@ -24,7 +24,7 @@
 			position: absolute;
 			transform: rotate(180deg);
 			transition: all 500ms;
-			width: 24px;
+			width: 22px;
 		}
 
 		&___expandableIcon {
@@ -148,13 +148,48 @@
 	}
 
 	&__MainContent {
-		div.ExpandableLink {
-			&__Content {
-				padding: 13px;
+		.SectionExpandableInside {
+			background-color: $body-color;
+			cursor: default;
+			display: block;
+			position: relative;
+			width: 100%;
+
+			&.expanded {
+				.SectionExpandableInside {
+					&_header {
+						border-bottom: none;
+					}
+
+					&_content {
+						border: 1px solid $light-grey;
+						display: block;
+					}
+				}
 			}
 
-			&__Header {
-				min-height: 35px;
+			&_header {
+				border: 1px solid $light-grey;
+
+				.HeaderIcon span {
+					margin: 0 13px;
+				}
+
+				.ExapandablePlaceholder {
+					font-size: 1em;
+
+					&:empty {
+						display: none !important;
+					}
+
+					.CircleElement {
+						margin-top: 4px !important;
+					}
+				}
+			}
+
+			&_content {
+				display: none;
 			}
 		}
 	}
@@ -189,6 +224,14 @@
 
 		.ExpandableLink__Header .LineDetailsExpandBox_action {
 			text-align: left;
+		}
+
+		&__MainContent {
+			.SectionExpandableInside {
+				.ExapandablePlaceholder.HeaderIcon {
+					margin-right: auto;
+				}
+			}
 		}
 	}
 }
