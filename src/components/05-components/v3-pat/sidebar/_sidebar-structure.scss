@@ -270,6 +270,12 @@ $font-size-11px: $font-size-tiny;
 	}
 }
 
+.ISidebar-user-login-location {
+	.VersionInfoWhite {
+		color: $regular-white;
+	}
+}
+
 .ISidebar-user-logout {
 	background-color: $sapphire-grey-blue;
 	height: 58px;
