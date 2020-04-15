@@ -10602,24 +10602,24 @@ a.Button.Icon:hover {
 /*  9.22 Sapphire Patterns > Controls_Custom_Patterns > DateNavigation *********/
 /*-----------------------------------------------------------------------------*/
 
-.DateNavigationContainer {
-  display: flex;
-}
+// .DateNavigationContainer {
+//   display: flex;
+// }
 
-.DateNavigation_NextDate,
-.DateNavigation_PreviousDate {
-  min-width: 50px;
-}
+// .DateNavigation_NextDate,
+// .DateNavigation_PreviousDate {
+//   min-width: 50px;
+// }
 
-.DateNavigation_Date {
-  flex-basis: 100%;
-  line-height: 26px;
-  min-width: 95px;
-}
+// .DateNavigation_Date {
+//   flex-basis: 100%;
+//   line-height: 26px;
+//   min-width: 95px;
+// }
 
-.tablet.portrait .DateNavigationContainer {
-  margin-bottom: 10px;
-}
+// .tablet.portrait .DateNavigationContainer {
+//   margin-bottom: 10px;
+// }
 
 /******DateNavigation is square*******/
 
@@ -10661,12 +10661,12 @@ a.Button.Icon:hover {
   pointer-events: none;
 }
 
-.FA .DateNavigationContainer .DateNavigation_PreviousDate,
-.FA .DateNavigationContainer .DateNavigation_NextDate,
-.AR .DateNavigationContainer .DateNavigation_PreviousDate,
-.AR .DateNavigationContainer .DateNavigation_NextDate {
-  transform: scale(-1, 1);
-}
+// .FA .DateNavigationContainer .DateNavigation_PreviousDate,
+// .FA .DateNavigationContainer .DateNavigation_NextDate,
+// .AR .DateNavigationContainer .DateNavigation_PreviousDate,
+// .AR .DateNavigationContainer .DateNavigation_NextDate {
+//   transform: scale(-1, 1);
+// }
 
 /*--------------------------------------------------------------------------------------*/
 /* 9.23 Sapphire Patterns > Controls_Custom_Patterns > DropDownCAtegoriesv4_0_3 *********/
