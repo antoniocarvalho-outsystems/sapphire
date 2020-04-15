@@ -43,7 +43,7 @@
 		color: $regular-white;
 	}
 
-	&.Past,
+	//&.Past,
 	&.ActiveStep {
 		font-weight: inherit;
 
@@ -120,6 +120,7 @@
 
 .AR,
 .FA {
+
 	.DesignSystem .WizardStep,
 	.LayoutBlank .WizardStep,
 	.LayoutBase .WizardStep {
