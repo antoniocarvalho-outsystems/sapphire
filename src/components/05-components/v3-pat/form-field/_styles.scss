@@ -1,3 +1,4 @@
+.Page .FormField,
 .LayoutPopup .FormField,
 .LayoutBlank .FormField,
 .LayoutBase .FormField {
@@ -35,6 +36,10 @@
 
 		.FormField-field {
 			width: 100%;
+
+			input {
+				width: 100%;
+			}
 		}
 	}
 

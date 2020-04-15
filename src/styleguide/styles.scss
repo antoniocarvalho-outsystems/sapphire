@@ -417,8 +417,8 @@ $styleguide-main-content-padding: 50px;
 			}
 		}
 
-		textarea,
-		input:not([type='checkbox']):not([type='radio']) {
+		> textarea,
+		> input:not([type='checkbox']):not([type='radio']) {
 			display: block;
 			width: 100%;
 		}
