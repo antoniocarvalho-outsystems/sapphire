@@ -6,21 +6,23 @@
 		margin-bottom: 10px;
 	}
 
-	&_NextDate,
-	&_PreviousDate {
-		min-width: 50px;
-	}
+	.DateNavigation {
+		&_NextDate,
+		&_PreviousDate {
+			min-width: 50px;
+		}
 
-	&_Date {
-		flex-basis: 100%;
-		line-height: 26px;
-		min-width: 95px;
+		&_Date {
+			flex-basis: 100%;
+			line-height: 26px;
+			min-width: 95px;
+		}
 	}
 }
 
 .AR,
 .FA {
-	.DateNavigationContainer {
+	.DateNavigationContainer .DateNavigation {
 		&_NextDate,
 		&_PreviousDate {
 			transform: scale(-1, 1);
