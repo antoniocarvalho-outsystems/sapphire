@@ -1,3 +1,4 @@
+.Page,
 .LayoutPopup,
 .LayoutBlank,
 .LayoutBase,
@@ -128,7 +129,8 @@
 		background-color: $regular-alpha;
 	}
 
-	.SapphireClinician {
+	.SapphireClinician,
+	.clinicianBackground-bg {
 		background-color: $sapphire-clinician;
 	}
 

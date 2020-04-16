@@ -423,6 +423,12 @@ $styleguide-main-content-padding: 50px;
 			width: 100%;
 		}
 
+		&--widthAuto {
+			@extend .DesignSystem__FormField;
+
+			width: auto;
+		}
+
 		&--validation {
 			@extend .DesignSystem__FormField;
 
