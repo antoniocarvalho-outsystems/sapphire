@@ -1,16 +1,7 @@
 .BloodTransfusionToolTip__date {
 	div[class*='FormField'] {
-		align-items: center;
-		display: flex;
-
 		div[id*='Caption'] {
 			margin-right: 8px;
 		}
-	}
-}
-
-div[id*='wtNoteCtn'] {
-	input[id*='NoteInput'] {
-		width: 180px !important;
 	}
 }
