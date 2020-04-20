@@ -16,13 +16,14 @@ $ButtonCheckbox-color-hover: $regular-zeta;
 	display: block;
 }
 
-.ButtonCheckboxInput_CheckBox {
+.Page .ButtonCheckboxInput_CheckBox {
 	left: 8px;
 	position: absolute;
 	top: 6px;
 
-	input {
+	input[type='checkbox'] {
 		margin: 0;
+		width: 20px;
 	}
 }
 
@@ -31,16 +32,16 @@ $ButtonCheckbox-color-hover: $regular-zeta;
 	background-color: $ButtonCheckbox-color-active;
 	border: 1px solid $ButtonCheckbox-color-active;
 	border-radius: 5px;
-	color: #fff;
+	color: $regular-white;
 }
 
 .ButtonCheckboxInp > .ButtonCheckboxInput_CheckBox ~ label {
-	background-color: #fff;
+	background-color: $regular-white;
 	border: 1px solid $ButtonCheckbox-color-active;
 	border-radius: 5px;
 	color: $ButtonCheckbox-color-active;
 	cursor: pointer;
-	font-size: 14px;
+	font-size: 1em;
 	padding: 6px 10px 6px 35px;
 }
 
