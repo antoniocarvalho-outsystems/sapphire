@@ -574,15 +574,15 @@ span.icon.icon-circle-questionmark {
 	content: '\e68a';
 }
 
-body .icon-circle-questionmark:after {
-	color: #fff;
-	content: '?';
-	font-family: 'globeregular';
-	font-weight: bold;
-	left: 0; /*0.04em*/
-	position: absolute;
-	width: 100%;
-}
+// body .icon-circle-questionmark:after {
+// 	color: #fff;
+// 	content: '?';
+// 	font-family: 'globeregular';
+// 	font-weight: bold;
+// 	left: 0; /*0.04em*/
+// 	position: absolute;
+// 	width: 100%;
+// }
 /*** ^ *** icon-circle-questionmark *** ^ ***/
 
 .icon-referral-letter:before {
@@ -957,7 +957,7 @@ body .icon-circle-questionmark:after {
 }
 
 .icon-temperature:before {
-	content: '\e949';
+	content: '\e94d';
 }
 
 /* makes the font 33% larger relative to the icon container */

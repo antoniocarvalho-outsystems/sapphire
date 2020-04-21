@@ -112,16 +112,7 @@ $font-size-8px: 0.5714em;
 		width: 38px;
 
 		> input[type='checkbox'] {
-			&:after {
-				border: 3px solid $regular-beta;
-				border-right: 0;
-				border-top: 0;
-				height: 5px;
-				left: 20%;
-				top: 24%;
-				transition: visibility 0.15s, opacity 0.15s linear;
-				width: 10px;
-			}
+			margin-right: 0;
 		}
 	}
 
@@ -167,7 +158,6 @@ $font-size-8px: 0.5714em;
 
 				&::before {
 					position: relative;
-					// top: 2px;
 				}
 			}
 		}
