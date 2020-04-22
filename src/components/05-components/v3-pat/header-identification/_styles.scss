@@ -2,7 +2,7 @@
 	align-items: flex-start;
 	display: flex;
 	justify-content: space-between;
-	padding-right: 100px;
+	padding-right: 36px;
 
 	&-photo {
 		background-color: #fafafa;
@@ -19,7 +19,7 @@
 
 			&-name {
 				font-family: $font-family-latin-bold;
-				font-size: 1.5rem;
+				font-size: 1.429em;
 
 				.patient-en-fullname span {
 					display: inline-block;
