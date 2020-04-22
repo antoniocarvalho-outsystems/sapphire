@@ -1,0 +1,187 @@
+$font-size-8px: 0.5714em;
+
+.SelectSD {
+	background-color: $sapphire-white;
+	display: table;
+	min-height: 58px;
+	width: 100%;
+
+	.SelectSD--disabled {
+		pointer-events: none;
+
+		.SelectSD_actionLink {
+			opacity: 0.5;
+		}
+
+		.SelectSD__starLink {
+			pointer-events: all;
+		}
+	}
+
+	&.hasFavorite {
+		.SelectSD__starLink {
+			color: $light-grey;
+			display: table-cell;
+			//font-size: $font-size-8px;
+			padding: 16px 0;
+			text-align: center;
+			vertical-align: middle;
+			width: 48px;
+
+			.SelectSD__starWrapper {
+				height: 100%;
+				width: 100%;
+
+				&.starActive {
+					.icon {
+						color: $light-grey;
+
+						&:hover {
+							color: $regular-alpha;
+						}
+					}
+				}
+
+				&.starDisabled {
+					.icon {
+						color: $light-grey;
+					}
+				}
+
+				&.starSelected {
+					.icon {
+						color: $regular-alpha;
+					}
+				}
+			}
+		}
+
+		// .SelectSD_contentWrapper {
+		// 	padding: 16px 0;
+		// }
+	}
+
+	.SelectSD_contentWrapper {
+		display: table-cell;
+		padding: 5px 16px;
+		text-align: left;
+		vertical-align: middle;
+
+		.SelectSD__contentTitle {
+			color: $dark-grey;
+			font-size: $font-size-normal;
+			line-height: 25px;
+			margin-right: 10px;
+
+			.Text_Note {
+				color: $mid-light-grey;
+			}
+		}
+
+		.SelectSD__contentTags {
+			line-height: 22px;
+		}
+
+		.SelectSD__contentICD {
+			color: $mid-light-grey;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&:last-child {
+		border: 0;
+	}
+
+	&:hover {
+		background-color: $regular-eta;
+		cursor: pointer;
+	}
+
+	.SelectSD__multiple {
+		display: table-cell;
+		font-size: $font-size-8px;
+		padding: 16px 0;
+		text-align: center;
+		vertical-align: middle;
+		width: 38px;
+
+		> input[type='checkbox'] {
+			margin-right: 0;
+		}
+	}
+
+	&.MultiSelectActive {
+		.SelectSD_contentWrapper,
+		.SelectSD_contentWrapper + a {
+			pointer-events: none;
+		}
+	}
+
+	.SelectSD-searched-term {
+		color: $dark-grey;
+		font-family: $font-family-latin-bold;
+	}
+
+	.SelectSD__tags {
+		display: inline-block;
+
+		.StatusBadges {
+			margin-right: 10px;
+		}
+	}
+
+	.SelectSD_actionLink {
+		display: table-cell;
+		padding-top: 2px;
+		text-align: center;
+		vertical-align: middle;
+		width: 68px;
+
+		.SelectSD__action {
+			height: 100%;
+			width: 100%;
+
+			.icon {
+				background-color: $sapphire-white;
+				border: 1px solid $regular-alpha;
+				border-radius: 2px;
+				box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+				box-sizing: border-box;
+				color: $regular-alpha;
+				text-align: center;
+
+				&::before {
+					position: relative;
+				}
+			}
+		}
+
+		&:focus {
+			.SelectSD__action {
+				.icon {
+					border: none;
+					box-shadow: inset 0px 0px 0px 1px $regular-beta, 0px 0px 8px 0px $regular-beta;
+				}
+			}
+		}
+	}
+
+	.SelectableList-EmptyMessage {
+		background-color: $sapphire-white;
+	}
+}
+
+/*AR and FA*/
+
+.FA,
+.AR {
+	.SelectSD_contentWrapper {
+		text-align: right;
+
+		.SelectSD__contentTitle {
+			margin-left: 10px;
+			margin-right: auto;
+		}
+	}
+}
