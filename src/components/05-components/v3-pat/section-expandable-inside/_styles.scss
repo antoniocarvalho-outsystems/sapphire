@@ -36,6 +36,10 @@
 		position: relative;
 		width: 100%;
 
+		&--noBorder {
+			border-bottom: none;
+		}
+
 		.HeaderIcon.open {
 			@include animation-arrow-button(180deg);
 		}

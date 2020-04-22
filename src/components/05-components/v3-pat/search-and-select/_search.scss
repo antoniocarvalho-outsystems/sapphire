@@ -154,8 +154,8 @@
 		}
 	}
 
-	.MultiSelectActive {
-		.SearchSD__FavoriteActions {
+	&.MultiSelectActive {
+		.SearchSD_search .SearchSD__FavoriteActions {
 			opacity: 1;
 			transition: visibility 0.3s, opacity 0.3s linear;
 			visibility: visible;
@@ -346,7 +346,6 @@
 			border-bottom-right-radius: 23px;
 			border-top-right-radius: 23px;
 			color: $mid-light-grey;
-			font-size: $font-size-heading3;
 			height: 100%;
 			line-height: 46px;
 			padding-left: 40px;
@@ -360,7 +359,8 @@
 			border-radius: 3px 0 0 0;
 			color: $mid-light-grey;
 			display: table-cell;
-			font-size: $font-size-heading3;
+			font-family: $font-family-latin-regular;
+			font-size: 1.143em;
 			padding: 0;
 			vertical-align: middle;
 			width: 248px;
@@ -368,8 +368,8 @@
 			&:before {
 				color: $regular-alpha;
 				content: '\e690';
-				font-family: 'Sapphire-Icon-Font';
-				font-size: $font-size-heading2;
+				font-family: $font-family-icons;
+				font-size: 1.143em;
 				font-style: normal;
 				font-variant: normal;
 				font-weight: normal;
@@ -471,23 +471,23 @@
 	}
 }
 
-.desktop .SearchSD__FavoriteActionsAdd a:hover,
-.desktop .SearchSD__FavoriteActionsAdd a:link:hover,
-.desktop .SearchSD__FavoriteActionsAdd a:hover:active,
-.desktop .SearchSD__FavoriteActionsAdd a:link:hover:active,
-.SearchSD__FavoriteActionsAdd a:hover,
-.SearchSD__FavoriteActionsAdd a:link:hover,
-.SearchSD__FavoriteActionsAdd a:hover:active,
-.SearchSD__FavoriteActionsAdd a:link:hover:active {
-	background: linear-gradient(180deg, #0ebec8 0%, #0cb3bf 100%);
-	border: 1px solid #0a939c;
-	border-radius: 2px;
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-	color: $sapphire-white;
-	font-family: $font-family-latin-bold;
-	font-size: 1em;
-	text-decoration: none;
-}
+// .desktop .SearchSD__FavoriteActionsAdd a:hover,
+// .desktop .SearchSD__FavoriteActionsAdd a:link:hover,
+// .desktop .SearchSD__FavoriteActionsAdd a:hover:active,
+// .desktop .SearchSD__FavoriteActionsAdd a:link:hover:active,
+// .SearchSD__FavoriteActionsAdd a:hover,
+// .SearchSD__FavoriteActionsAdd a:link:hover,
+// .SearchSD__FavoriteActionsAdd a:hover:active,
+// .SearchSD__FavoriteActionsAdd a:link:hover:active {
+// 	background: linear-gradient(180deg, #0ebec8 0%, #0cb3bf 100%);
+// 	border: 1px solid #0a939c;
+// 	border-radius: 2px;
+// 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+// 	color: $sapphire-white;
+// 	font-family: $font-family-latin-bold;
+// 	font-size: 1em;
+// 	text-decoration: none;
+// }
 
 /**
 * ListRecords inside SearchSD_content must have EmptySelectableList class

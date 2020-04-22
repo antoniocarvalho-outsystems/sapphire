@@ -133,9 +133,11 @@
 			});
 
 			// add click events
-			$('.SectionExpandableInside .SectionExpandableInside_header').off("click").on('click', function() {
-				clickEvents(this);
-			});
+			$('.SectionExpandableInside .SectionExpandableInside_header')
+				.off('click')
+				.on('click', function() {
+					clickEvents(this);
+				});
 
 			// add stop prepagation
 			$(
@@ -169,6 +171,10 @@
 		});
 	};
 
+	const setNoBorder = widget => {
+		widget.addClass('SectionExpandableInside_header--noBorder');
+	};
+
 	const create = () => {
 		SilkUI.SectionExpandable = new SectionExpandableInside();
 		SilkUI.Execute(SilkUI.SectionExpandable.init, 'Error on SilkUIFramework/Content/SectionExpandable');
@@ -176,6 +182,7 @@
 
 	SapphireWidgets.SectionExpandableInside = {
 		create,
+		setNoBorder,
 		setOpenCloseClass,
 	};
 })(jQuery, window, SapphireWidgets);
