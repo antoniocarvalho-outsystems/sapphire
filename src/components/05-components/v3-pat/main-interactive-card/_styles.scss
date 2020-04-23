@@ -158,6 +158,7 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 
 .MainInteractiveCard-header-text {
 	cursor: auto;
+	display: grid;
 	flex-grow: 2;
 	pointer-events: all;
 	z-index: 1;

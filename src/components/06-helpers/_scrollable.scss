@@ -2,4 +2,12 @@
 	@include component-scroll-root();
 
 	overflow: auto;
+
+	// &::before {
+	// 	content: '';
+	// 	display: block;
+	// 	height: 1px;
+	// }
 }
+
+// Create more variations and put some examples in the DesignSystem (Helpers)
