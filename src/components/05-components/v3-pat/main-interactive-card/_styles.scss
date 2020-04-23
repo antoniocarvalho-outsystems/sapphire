@@ -52,13 +52,21 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 }
 
 .MainInteractiveCard.isEnabled {
-	background-color: #fff;
+	background-color: $regular-white;
 	border-color: $MainInteractiveCard-color-active;
 	margin-top: -1px;
 }
 
 .MainInteractiveCard.isOpen {
 	margin-top: -1px;
+}
+
+.MainInteractiveCard {
+	&:not(.isOpen) {
+		&.ColorLightGreyBorder {
+			border-color: $light-grey;
+		}
+	}
 }
 
 .MainInteractiveCard:before {
