@@ -4,6 +4,8 @@
 		var $elementId = $('#' + config.elementId);
 		$elementId.addClass('tooltip');
 
+		if (config.triggerId === 'click') $elementId.addClass('tooltipstered--pointer');
+
 		var extraDataParams = 'data-iframetooltiptriggerid="' + config.elementId + '"';
 		var widgetNotifyDiv = $.find('[data-iframetooltiptriggerid="' + config.elementId + '"]');
 		if (widgetNotifyDiv.length === 1) {

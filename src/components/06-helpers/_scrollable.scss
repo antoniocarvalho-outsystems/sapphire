@@ -1,0 +1,5 @@
+.Scrollable {
+	@include component-scroll-root();
+
+	overflow: auto;
+}
