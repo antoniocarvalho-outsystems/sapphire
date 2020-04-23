@@ -251,6 +251,12 @@ $styleguide-main-content-padding: 50px;
 
 			grid-template-columns: repeat(auto-fill, 300px);
 		}
+
+		&--large {
+			@extend .DesignSystem__ListFlex;
+
+			grid-template-columns: repeat(auto-fill, 49%);
+		}
 	}
 
 	&__DefaultSection {

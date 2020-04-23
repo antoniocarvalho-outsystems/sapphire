@@ -13,9 +13,7 @@
 	@include default-style-scrollable();
 }
 
-.ScrollableDark {
+.ScrollableWhite {
 	@include component-scroll-root(4px, true);
 	@include default-style-scrollable();
 }
-
-// Create more variations and put some examples in the DesignSystem (Helpers)

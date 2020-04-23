@@ -25,15 +25,26 @@
 	}
 }
 
-@mixin component-scroll-root($border-radius: 4px, $dark-bar: false) {
+@mixin component-scroll-root($border-radius: 4px, $white-bar: false) {
 	&::-webkit-scrollbar {
-		background-color: $regular-white;
+		@if $white-bar {
+			background-color: transparent;
+		} @else {
+			background-color: $regular-white;
+		}
+
 		height: 7px;
 		width: 7px;
 	}
 
+	@if $white-bar {
+		&::-webkit-scrollbar-track {
+			border: none;
+		}
+	}
+
 	&::-webkit-scrollbar-thumb {
-		@if $dark-bar {
+		@if $white-bar {
 			border: 5px solid $regular-white;
 		} @else {
 			border: 5px solid $regular-alpha;
