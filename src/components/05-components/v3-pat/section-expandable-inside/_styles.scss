@@ -67,6 +67,12 @@
 	.RightAllPlaceDiv {
 		display: table-cell;
 		vertical-align: middle;
+		white-space: nowrap;
+
+		> div {
+			display: inline-block;
+			vertical-align: middle;
+		}
 	}
 
 	.ExapandablePlaceholder {

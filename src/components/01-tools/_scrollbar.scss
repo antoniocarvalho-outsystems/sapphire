@@ -1,43 +1,55 @@
 @mixin component-scroll($dark-bar: false, $border-radius: 4px) {
-  & ::-webkit-scrollbar {
-    box-sizing: border-box;
-    height: 7px;
-    width: 7px;
-  }
+	& ::-webkit-scrollbar {
+		box-sizing: border-box;
+		height: 7px;
+		width: 7px;
+	}
 
-  & ::-webkit-scrollbar-track {
-    @if $dark-bar {
-      border: none;
-    }
+	& ::-webkit-scrollbar-track {
+		@if $dark-bar {
+			border: none;
+		} @else {
+			border-left: 5px solid $regular-white;
+			border-right: 5px solid $regular-white;
+		}
+	}
 
-    @else {
-      border-left: 5px solid $regular-white;
-      border-right: 5px solid $regular-white;
-    }
-  }
+	& ::-webkit-scrollbar-thumb {
+		@if $dark-bar {
+			border: 5px solid $regular-white;
+		} @else {
+			border: 5px solid $regular-alpha;
+		}
 
-  & ::-webkit-scrollbar-thumb {
-    @if $dark-bar {
-      border: 5px solid $regular-white;
-    }
-
-    @else {
-      border: 5px solid $regular-alpha;
-    }
-
-    border-radius: $border-radius;
-  }
+		border-radius: $border-radius;
+	}
 }
 
-@mixin component-scroll-root($border-radius: 4px) {
-  &::-webkit-scrollbar {
-    background-color: $regular-white;
-    height: 7px;
-    width: 7px;
-  }
+@mixin component-scroll-root($border-radius: 4px, $white-bar: false) {
+	&::-webkit-scrollbar {
+		@if $white-bar {
+			background-color: transparent;
+		} @else {
+			background-color: $regular-white;
+		}
 
-  &::-webkit-scrollbar-thumb {
-    border: 5px solid $regular-alpha;
-    border-radius: $border-radius;
-  }
+		height: 7px;
+		width: 7px;
+	}
+
+	@if $white-bar {
+		&::-webkit-scrollbar-track {
+			border: none;
+		}
+	}
+
+	&::-webkit-scrollbar-thumb {
+		@if $white-bar {
+			border: 5px solid $regular-white;
+		} @else {
+			border: 5px solid $regular-alpha;
+		}
+
+		border-radius: $border-radius;
+	}
 }

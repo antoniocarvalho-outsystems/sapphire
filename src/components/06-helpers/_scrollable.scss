@@ -1,5 +1,19 @@
+@mixin default-style-scrollable {
+	overflow: auto;
+
+	&::before {
+		content: '';
+		display: block;
+		height: 1px;
+	}
+}
+
 .Scrollable {
 	@include component-scroll-root();
+	@include default-style-scrollable();
+}
 
-	overflow: auto;
+.ScrollableWhite {
+	@include component-scroll-root(4px, true);
+	@include default-style-scrollable();
 }

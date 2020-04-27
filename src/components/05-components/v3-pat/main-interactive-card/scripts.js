@@ -230,7 +230,7 @@
 			this.$caption.css('display', 'block');
 		}
 		this.$headerText.css({
-			maxWidth: '99%'
+			maxWidth: this.$header.width() - this.$actions.width() + 'px'
 		});
 	};
 

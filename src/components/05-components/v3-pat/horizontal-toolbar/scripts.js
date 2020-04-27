@@ -1,87 +1,155 @@
 /* Component HorizontalToolbar */
 (function($, window, SapphireWidgets) {
-	const create = () => {
-		$(document).ready(() => init());
-		$(window).load(() => {
-			const $itemWrapper = $('.MenuItemWrapper.Active');
+	const create = config => {
+		const $widget = $('#' + config.widgetId);
 
-			if ($itemWrapper.length) {
-				$itemWrapper[0].scrollIntoView({
-					behavior: 'auto',
-					block: 'end',
-				});
-			}
-		});
+		$(document).ready(() => init($widget, config));
+
+		if (config.isArrowNavigation) {
+			$(window).load(() => {
+				const $itemWrapper = $widget.find('.MenuItemWrapper.Active');
+
+				if ($itemWrapper.length) {
+					$itemWrapper[0].scrollIntoView({
+						behavior: 'auto',
+						block: 'end',
+					});
+				}
+			});
+		}
 	};
 
-	const init = () => {
-		handleArrows();
+	const init = ($widget, config) => {
+		if (config.isArrowNavigation) {
+			handleArrows($widget);
 
-		$('.Toolbar__Items').scroll(() => {
-			handleArrows();
-		});
+			const $toolbarItems = $widget.find('.Toolbar__Items');
+			const $listItems = $widget.find('.Toolbar__Items .ListRecords');
+			const $btnRight = $widget.find('.Toolbar__rightBtn');
+			const $btnLeft = $widget.find('.Toolbar__leftBtn');
 
-		$('.Toolbar__rightBtn').click(function() {
-			var currentScroll = $('.Toolbar__Items').scrollLeft();
-			var maxScrolll = $('.Toolbar__Items .ListRecords').width() - $('.Toolbar__Items').width();
-			var sideWidth = maxScrolll - 50;
-			$('.Toolbar__Items').scrollLeft(currentScroll + 50);
-			if (currentScroll == sideWidth) {
-				$('.Toolbar__rightBtn').addClass('Disabled');
-			}
-			if (currentScroll != 50) {
-				$('.Toolbar__leftBtn').removeClass('Disabled');
-			}
-		});
+			$toolbarItems.scroll(() => handleArrows($widget));
 
-		$('.Toolbar__leftBtn').click(function() {
-			var currentScroll = $('.Toolbar__Items').scrollLeft();
-			var maxScrolll = $('.Toolbar__Items .ListRecords').width() - $('.Toolbar__Items').width();
-			var sideWidth = maxScrolll - 50;
-			$('.Toolbar__Items').scrollLeft(currentScroll - 50);
-			if (currentScroll != sideWidth) {
-				$('.Toolbar__rightBtn').removeClass('Disabled');
-			}
-			if (currentScroll == 50) {
-				$('.Toolbar__leftBtn').addClass('Disabled');
-			}
-		});
+			$btnRight.click(function() {
+				var currentScroll = $toolbarItems.scrollLeft();
+				var maxScrolll = $listItems.width() - $toolbarItems.width();
+				var sideWidth = maxScrolll - 50;
+				$toolbarItems.scrollLeft(currentScroll + 50);
 
-		$(window).on('resize.toolbar', () => {
-			handleArrows();
-		});
+				if (currentScroll == sideWidth) $btnRight.addClass('Disabled');
+				if (currentScroll != 50) $btnLeft.removeClass('Disabled');
+			});
+
+			$btnLeft.click(function() {
+				var currentScroll = $toolbarItems.scrollLeft();
+				var maxScrolll = $listItems.width() - $toolbarItems.width();
+				var sideWidth = maxScrolll - 50;
+				$toolbarItems.scrollLeft(currentScroll - 50);
+
+				if (currentScroll != sideWidth) $btnRight.removeClass('Disabled');
+				if (currentScroll == 50) $btnLeft.addClass('Disabled');
+			});
+
+			$(window).on('resize.toolbar', () => handleArrows($widget));
+		} else {
+			handleResize($widget);
+			bindEventsClick($widget);
+
+			$(window).on('resize.toolbar', () => handleResize($widget, config));
+		}
 	};
 
-	handleArrows = () => {
-		let currentScroll = $('.Toolbar__Items').scrollLeft();
-		let menuWidth = $('.Toolbar__Items .ListRecords').width();
-		let externalWidth = $('.Toolbar__Items').width();
+	handleArrows = $widget => {
+		const $toolbarItems = $widget.find('.Toolbar__Items');
+		const $listItems = $widget.find('.Toolbar__Items .ListRecords');
+		const $btnRight = $widget.find('.Toolbar__rightBtn');
+		const $btnLeft = $widget.find('.Toolbar__leftBtn');
+
+		let currentScroll = $toolbarItems.scrollLeft();
+		let menuWidth = $listItems.width();
+		let externalWidth = $toolbarItems.width();
 		var maxScrolll = menuWidth - externalWidth;
 
 		if (externalWidth > menuWidth) {
-			$('.Toolbar__leftBtn').hide();
-			$('.Toolbar__rightBtn').hide();
-			$('.Toolbar_container').addClass('Toolbar_container--noarrows');
+			$btnLeft.hide();
+			$btnRight.hide();
+
+			$widget.find('.Toolbar_container').addClass('Toolbar_container--noarrows');
 		} else {
-			$('.Toolbar__leftBtn').show();
-			$('.Toolbar__rightBtn').show();
-			$('.Toolbar_container').removeClass('Toolbar_container--noarrows');
+			$btnLeft.show();
+			$btnRight.show();
+
+			$widget.find('.Toolbar_container').removeClass('Toolbar_container--noarrows');
 		}
 
-		if (currentScroll === 0) {
-			$('.Toolbar__leftBtn').addClass('Disabled');
-		} else {
-			$('.Toolbar__leftBtn').removeClass('Disabled');
-		}
+		if (currentScroll === 0) $btnLeft.addClass('Disabled');
+		else $btnLeft.removeClass('Disabled');
 
-		if (currentScroll >= maxScrolll) {
-			$('.Toolbar__rightBtn').addClass('Disabled');
-		} else {
-			$('.Toolbar__rightBtn').removeClass('Disabled');
-		}
+		if (currentScroll >= maxScrolll) $btnRight.addClass('Disabled');
+		else $btnRight.removeClass('Disabled');
 	};
 
-	SapphireWidgets.HorizontalToolbar = {
-		create,
+	handleResize = $widget => {
+		let itemsTotal = 0;
+		let hasItemsHidden = false;
+
+		const $listItems = $widget.find('.Toolbar__Items .ListRecords');
+		$listItems.find('> .MenuItemWrapper').css('display', 'none');
+
+		const menuWidth = $widget.find('.Toolbar__Items').outerWidth(true);
+
+		$listItems.find('.MenuItemWrapper').each(function() {
+			itemsTotal += parseInt($(this).outerWidth(true), 10);
+
+			if (itemsTotal + 151 < menuWidth) {
+				$(this).css('display', 'block');
+			} else {
+				hasItemsHidden = true;
+
+				return false;
+			}
+		});
+
+		if (hasItemsHidden && !$listItems.find('.Toolbar__MoreOptions').length) {
+			$widget
+				.find('.Toolbar__MoreOptions')
+				.clone()
+				.css('display', 'block')
+				.appendTo($listItems);
+
+			hasItemsHidden = false;
+		}
+
+		const $optionsList = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsList');
+		// const $optionsList = $widget.find('.Toolbar__MoreOptionsList');
+		const $hiddenItems = $listItems.find('> .MenuItemWrapper').filter(function() {
+			return $(this).css('display') == 'none';
+		});
+
+		$optionsList.empty();
+
+		$hiddenItems
+			.clone()
+			.css('display', 'block')
+			.appendTo($optionsList);
 	};
+
+	bindEventsClick = $widget => {
+		const $moreOptions = $widget.find('.Toolbar__MoreOptions');
+		const $optionsList = $widget.find('.Toolbar__MoreOptionsList');
+
+		$moreOptions.on('click', () => {
+			$optionsList.toggleClass('Toolbar__MoreOptionsList--open');
+		});
+
+		$optionsList.on('mousewheel', event => {
+			event.stopPropagation();
+		});
+
+		$('body').on('mouseup', event => {
+			$optionsList.removeClass('Toolbar__MoreOptionsList--open');
+		});
+	};
+
+	SapphireWidgets.HorizontalToolbar = { create };
 })(jQuery, window, SapphireWidgets);

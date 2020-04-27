@@ -348,12 +348,12 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 			debounce(ssdFocus($SSDComponent), 600);
 		});
 
-		$SSDComponent.find('.SearchSD___input input').select(function() {
-			if ($('.SearchSD___input input').val().length > 0) {
-				ssdClear($SSDComponent);
-				debounce(ssdFocus($SSDComponent), 600);
-			}
-		});
+		// $SSDComponent.find('.SearchSD___input input').select(function() {
+		// 	if ($('.SearchSD___input input').val().length > 0) {
+		// 		ssdClear($SSDComponent);
+		// 		debounce(ssdFocus($SSDComponent), 600);
+		// 	}
+		// });
 
 		$('body').mouseup(function(e) {
 			ClickOut(e, $SSDComponent);

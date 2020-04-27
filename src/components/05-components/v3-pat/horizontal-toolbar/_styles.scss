@@ -1,6 +1,7 @@
 @mixin common-toolbar-button-style($rotate-degree: 270deg) {
 	@include arrow-button;
-	background-color: #fff;
+
+	background-color: $regular-white;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%) rotate($rotate-degree);
@@ -9,31 +10,41 @@
 div.Toolbar {
 	width: 100%;
 
+	&--arrows {
+		div.Toolbar {
+			&_container {
+				&:after,
+				&:before {
+					content: '';
+					display: inline-block;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					width: 50px;
+				}
+
+				&:after {
+					background: linear-gradient(270deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
+					right: 0;
+				}
+
+				&:before {
+					background: linear-gradient(90deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
+					left: 0;
+					z-index: 1;
+				}
+			}
+
+			&__Items {
+				padding: 0 33px;
+			}
+		}
+	}
+
 	&_container {
 		background-color: $regular-white;
 		padding-top: 11px;
 		position: relative;
-
-		&:after,
-		&:before {
-			content: '';
-			display: inline-block;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			width: 50px;
-		}
-
-		&:after {
-			background: linear-gradient(270deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
-			right: 0;
-		}
-
-		&:before {
-			background: linear-gradient(90deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
-			left: 0;
-			z-index: 1;
-		}
 
 		&--noarrows {
 			&:before {
@@ -45,7 +56,6 @@ div.Toolbar {
 	&__Items {
 		display: block;
 		overflow: hidden;
-		padding: 0 33px;
 
 		.ListRecords {
 			display: inline-flex;
@@ -80,6 +90,95 @@ div.Toolbar {
 
 		&:before {
 			color: $light-grey;
+		}
+	}
+
+	&__MoreOptions {
+		margin: 0;
+		width: fit-content;
+
+		.MenuItemWrapper {
+			cursor: pointer;
+
+			&__Label {
+				@include flex-center-vertically;
+
+				&::after {
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					border-top: 5px solid;
+					content: '';
+					display: inline-block;
+					height: 0;
+					margin-left: 8px;
+					width: 0;
+				}
+			}
+		}
+	}
+
+	&__MoreOptionsList {
+		@include component-scroll-root();
+
+		background-color: $regular-white;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		display: none;
+		max-height: 200px;
+		overflow: auto;
+		position: absolute;
+
+		&::-webkit-scrollbar {
+			background-color: transparent;
+		}
+
+		&--open {
+			display: block;
+			z-index: 1;
+
+			&::before {
+				background-color: $regular-white;
+				content: '';
+				display: inline-block;
+				height: 5px;
+				position: absolute;
+				top: -4px;
+				width: 100%;
+			}
+		}
+
+		.MenuItemWrapper {
+			border-bottom: none;
+			padding: 10px 45px 10px 20px;
+
+			&:hover {
+				background-color: $regular-eta;
+				border-bottom: none !important;
+			}
+
+			&_Container {
+				display: flex;
+			}
+
+			&__icon {
+				margin-right: 10px;
+
+				.icon {
+					font-size: 1em;
+				}
+			}
+
+			&__Label {
+				display: inline-block;
+
+				&::after {
+					display: none;
+				}
+			}
+
+			&_Badge {
+				right: 15px;
+				top: 10px;
+			}
 		}
 	}
 
