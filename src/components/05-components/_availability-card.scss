@@ -71,6 +71,14 @@
 	min-height: 50px;
 	width: 100%;
 
+	&.AvailabilityCardContainer__bgColor {
+		background-color: $light-grey;
+
+		.AvailabilityCardLeftContainer {
+			background-color: unset;
+		}
+	}
+
 	.AvailabilityCardLeftContainer {
 		align-items: center;
 		background-color: $body-color;
