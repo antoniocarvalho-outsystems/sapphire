@@ -55,7 +55,9 @@
 			handleResize($widget);
 			bindEventsClick($widget);
 
-			$(window).on('resize.toolbar', () => handleResize($widget, config));
+			$(window).on('resize.toolbar', () => handleResize($widget));
+
+			window.addEventListener('ToolbarFixed', () => handleResize($widget), false);
 		}
 	};
 
@@ -94,11 +96,11 @@
 		let hasItemsHidden = false;
 
 		const $listItems = $widget.find('.Toolbar__Items .ListRecords');
-		$listItems.find('> .MenuItemWrapper').css('display', 'none');
+		$listItems.find('> a[ui]').css('display', 'none');
 
 		const menuWidth = $widget.find('.Toolbar__Items').outerWidth(true);
 
-		$listItems.find('.MenuItemWrapper').each(function() {
+		$listItems.find('a[ui]').each(function() {
 			itemsTotal += parseInt($(this).outerWidth(true), 10);
 
 			if (itemsTotal + 151 < menuWidth) {
@@ -121,8 +123,7 @@
 		}
 
 		const $optionsList = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsList');
-		// const $optionsList = $widget.find('.Toolbar__MoreOptionsList');
-		const $hiddenItems = $listItems.find('> .MenuItemWrapper').filter(function() {
+		const $hiddenItems = $listItems.find('> a[ui]').filter(function() {
 			return $(this).css('display') == 'none';
 		});
 
@@ -139,7 +140,7 @@
 		const $optionsList = $widget.find('.Toolbar__MoreOptionsList');
 
 		$moreOptions.on('click', () => {
-			$optionsList.toggleClass('Toolbar__MoreOptionsList--open');
+			$moreOptions.toggleClass('Toolbar__MoreOptions--open');
 		});
 
 		$optionsList.on('mousewheel', event => {
@@ -147,7 +148,7 @@
 		});
 
 		$('body').on('mouseup', event => {
-			$optionsList.removeClass('Toolbar__MoreOptionsList--open');
+			$moreOptions.removeClass('Toolbar__MoreOptions--open');
 		});
 	};
 

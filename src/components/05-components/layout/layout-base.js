@@ -1,24 +1,23 @@
 /* Component LayoutBase */
-(function ($, window, document, SapphireWidgets) {
-
-	var create = function (config) {
+(function($, window, document, SapphireWidgets) {
+	var create = function(config) {
 		window[config.widgetId] = new LayoutBase(config);
 		SapphireWidgets.LayoutBase.widgetId = config.widgetId;
 	};
 
-	var openSidebarIframe = function (duration) {
+	var openSidebarIframe = function(duration) {
 		window[SapphireWidgets.LayoutBase.widgetId].openSidebarIframe(duration);
 	};
 
-	var closeSidebarIframe = function (duration) {
+	var closeSidebarIframe = function(duration) {
 		window[SapphireWidgets.LayoutBase.widgetId].closeSidebarIframe(duration);
 	};
 
-	var scrollToElement = function ($element) {
+	var scrollToElement = function($element) {
 		var $targetElement = $element;
 		if (!!$targetElement.length) {
 			var scrollToOffsetInterval;
-			scrollToOffsetInterval = setInterval(function () {
+			scrollToOffsetInterval = setInterval(function() {
 				if (window[SapphireWidgets.LayoutBase.widgetId].getThresholds().secondaryThreshold > 0) {
 					clearInterval(scrollToOffsetInterval);
 					var targetElementOffsetTop = $targetElement.offset().top;
@@ -45,7 +44,7 @@
 		}
 	};
 
-	var LayoutBase = function (config) {
+	var LayoutBase = function(config) {
 		var _this = this;
 		this.layoutBaseRedrawTimer = 0;
 		this.hasHeader = config.hasHeader;
@@ -72,32 +71,31 @@
 		// this.referenceHeight = null;
 		this.setupWindowEvents();
 		this.$iframeSidebar.append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>');
-		$(function () {
+		$(function() {
 			$('body').addClass('LayoutBase');
 			if (_this.isTopWindow) {
 				$('body').css('overflow-y', 'scroll');
 			}
 		});
-		$(window).load(function () {
+		$(window).load(function() {
 			$(window).scroll();
 			// _this.referenceHeight = $('body')[0].scrollHeight;
-		})
+		});
 	};
 
-	LayoutBase.prototype.setupWindowEvents = function () {
-
+	LayoutBase.prototype.setupWindowEvents = function() {
 		var _this = this;
 
-		$(window).resize(function () {
+		$(window).resize(function() {
 			_this.updateThresholds();
 			_this.handleOptionalContainers();
 			_this.handleLayoutTopPadding();
 			_this.handleLayoutBottomPadding();
 		});
 
-		$(window).scroll(function () {
+		$(window).scroll(function() {
 			window.clearTimeout(_this.layoutBaseRedrawTimer);
-			_this.layoutBaseRedrawTimer = window.setTimeout(function () {
+			_this.layoutBaseRedrawTimer = window.setTimeout(function() {
 				// console.log('=====');
 				// console.log('window', $(window).height());
 				// console.log('scrollheight', $('body')[0].scrollHeight);
@@ -108,10 +106,9 @@
 				_this.handleLayoutBottomPadding();
 			}, 100);
 		});
-
 	};
 
-	LayoutBase.prototype.handleOptionalContainers = function () {
+	LayoutBase.prototype.handleOptionalContainers = function() {
 		var scrollTop = $(window).scrollTop();
 
 		if (this.$emergency.length === 1) {
@@ -133,6 +130,8 @@
 		}
 
 		if (this.$secondary.length === 1 && this.$secondary.text().length > 0) {
+			const eventToolbar = new CustomEvent('ToolbarFixed');
+			const hasClass = this.$secondary.hasClass('isFixed');
 
 			if (this.$secondaryMenu.text().length === 0) {
 				this.$secondary.addClass('noToolbar');
@@ -143,7 +142,10 @@
 					top: this.contentThreshold + (this.$emergency.outerHeight(true) || 0),
 					width: this.$header.width(),
 				});
-				this.$secondary.find('.Button.Second, .Button.Third').not('.Panel .Button.Small, .Panel .Button.Third').addClass('Small');
+				this.$secondary
+					.find('.Button.Second, .Button.Third')
+					.not('.Panel .Button.Small, .Panel .Button.Third')
+					.addClass('Small');
 				if (this.$secondary.find('.Toolbar').length === 1) {
 					var targetToolbarWidth = $('.SapphireHeader').outerWidth(true) * 0.66;
 					this.$secondary.find('.Toolbar').width(targetToolbarWidth);
@@ -153,6 +155,8 @@
 				}
 				this.$primaryMenu.css('opacity', 0);
 				this.extraPaddingSecondary = this.$secondary.outerHeight(true);
+
+				if (!hasClass) window.dispatchEvent(eventToolbar);
 
 				// //
 				// var currentHeight = $('body')[0].scrollHeight;
@@ -164,11 +168,7 @@
 				// } else {
 				// 	this.$layoutBaseContent.css('padding-bottom', compensation);
 				// }
-
-
-
 			} else {
-
 				// this.$layoutBaseContent.css('padding-bottom', '');
 
 				this.$secondary.removeClass('isFixed').css({
@@ -182,6 +182,8 @@
 				});
 				this.$secondary.find('.Toolbar').css('width', '100%');
 				this.extraPaddingSecondary = 0;
+
+				window.dispatchEvent(eventToolbar);
 			}
 
 			if (this.$secondaryMenu.text().length > 0) {
@@ -193,11 +195,15 @@
 		}
 	};
 
-	LayoutBase.prototype.handleLayoutTopPadding = function () {
+	LayoutBase.prototype.handleLayoutTopPadding = function() {
 		var paddingTop = this.contentThreshold + this.extraPaddingEmergency + this.extraPaddingSecondary;
-		this.$spacer.stop().animate({
-			height: paddingTop,
-		}, 0, 'linear');
+		this.$spacer.stop().animate(
+			{
+				height: paddingTop,
+			},
+			0,
+			'linear'
+		);
 		if (this.$topfixedContent.length === 1) {
 			this.$topfixedContent.css({
 				width: $('.LayoutBase-MainContent').width(),
@@ -206,24 +212,24 @@
 		}
 	};
 
-	LayoutBase.prototype.handleLayoutBottomPadding = function () {
+	LayoutBase.prototype.handleLayoutBottomPadding = function() {
 		if (this.$bottomfixedContent.length === 1) {
 			if ($('body')[0].scrollHeight > $('body').height()) {
 				var bottomFixedHeight = this.$bottomfixedContent.outerHeight(true);
 				this.$wrapper.addClass('hasFixedBottom').css('padding-bottom', bottomFixedHeight + 'px');
 				this.$bottomfixedContent.css({
-					width: $('.LayoutBase-MainContent').outerWidth(true)
+					width: $('.LayoutBase-MainContent').outerWidth(true),
 				});
 			} else {
 				this.$wrapper.removeClass('hasFixedBottom').css('padding-bottom', '');
 				this.$bottomfixedContent.css({
-					width: ''
+					width: '',
 				});
 			}
 		}
 	};
 
-	LayoutBase.prototype.updateThresholds = function () {
+	LayoutBase.prototype.updateThresholds = function() {
 		var mainMenuHeight = this.$mainMenu.outerHeight(true) || 0;
 		var headerBodyHeight = this.$headerBody.outerHeight(true) || this.$header.outerHeight(true) || 0;
 		var topfixedContentHeight = this.$topfixedContent.outerHeight(true) || 0;
@@ -232,10 +238,11 @@
 		this.topfixedContentThreshold = mainMenuHeight + headerBodyHeight;
 		this.contentThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight;
 		this.emergencyThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight;
-		this.secondaryThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;
+		this.secondaryThreshold =
+			mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;
 	};
 
-	LayoutBase.prototype.getThresholds = function () {
+	LayoutBase.prototype.getThresholds = function() {
 		return {
 			topfixedContentThreshold: this.topfixedContentThreshold,
 			contentThreshold: this.contentThreshold,
@@ -244,21 +251,27 @@
 		};
 	};
 
-	LayoutBase.prototype.openSidebarIframe = function (duration_in) {
+	LayoutBase.prototype.openSidebarIframe = function(duration_in) {
 		var duration = duration_in >= 0 ? duration_in : 100;
-		this.$iframeSidebar.animate({
-			width: '100%',
-		}, duration);
+		this.$iframeSidebar.animate(
+			{
+				width: '100%',
+			},
+			duration
+		);
 		$('body').css('overflow-y', 'scroll');
 		$('.tooltipstered').tooltipster('hide');
 	};
 
-	LayoutBase.prototype.closeSidebarIframe = function (duration_in) {
+	LayoutBase.prototype.closeSidebarIframe = function(duration_in) {
 		var duration = duration_in >= 0 ? duration_in : 100;
 		var targetWidth = this.isExpandable ? 40 : 262;
-		this.$iframeSidebar.animate({
-			width: targetWidth,
-		}, duration);
+		this.$iframeSidebar.animate(
+			{
+				width: targetWidth,
+			},
+			duration
+		);
 		$('body').css('overflow-y', 'scroll');
 	};
 
@@ -268,5 +281,4 @@
 		openSidebarIframe: openSidebarIframe,
 		scrollToElement: scrollToElement,
 	};
-
 })(jQuery, window, document, SapphireWidgets);

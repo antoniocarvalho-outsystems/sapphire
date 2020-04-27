@@ -66,10 +66,49 @@
 				padding-top: 0;
 			}
 
+			&.isFixed .Toolbar__Items {
+				padding-top: 0;
+			}
+
 			&.isFixed .Toolbar__Items a {
 				display: block;
 				height: 44px;
 				line-height: 41px;
+			}
+
+			&.isFixed .Toolbar__MoreOptions {
+				&::after {
+					width: 124px;
+				}
+
+				.MenuItemWrapper {
+					border-bottom-width: 2px;
+
+					&:hover {
+						border-bottom-width: 2px !important;
+					}
+
+					&_Container {
+						@include flex-center-vertically;
+					}
+				}
+			}
+
+			&.isFixed .Toolbar__MoreOptionsList {
+				margin-top: 1px;
+
+				a {
+					height: 40px;
+				}
+
+				div.MenuItemWrapper {
+					padding-right: 30px;
+
+					&_Badge {
+						right: 8px !important;
+						top: 14px !important;
+					}
+				}
 			}
 
 			&.isFixed .LayoutBase-secondary-menu,

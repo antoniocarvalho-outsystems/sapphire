@@ -36,14 +36,14 @@ div.Toolbar {
 			}
 
 			&__Items {
-				padding: 0 33px;
+				padding-left: 33px;
+				padding-right: 33px;
 			}
 		}
 	}
 
 	&_container {
 		background-color: $regular-white;
-		padding-top: 11px;
 		position: relative;
 
 		&--noarrows {
@@ -56,6 +56,7 @@ div.Toolbar {
 	&__Items {
 		display: block;
 		overflow: hidden;
+		padding-top: 11px;
 
 		.ListRecords {
 			display: inline-flex;
@@ -97,11 +98,40 @@ div.Toolbar {
 		margin: 0;
 		width: fit-content;
 
+		&--open {
+			box-shadow: 0 0 12px -4px rgba(0, 0, 0, 0.2);
+
+			&::after {
+				background-color: $regular-white;
+				content: '';
+				display: block;
+				height: 10px;
+				margin-top: -10px;
+				position: absolute;
+				width: 144px;
+				z-index: 1;
+			}
+
+			.Toolbar__MoreOptionsList {
+				display: block;
+				margin-top: -2px;
+				z-index: 1;
+			}
+		}
+
 		.MenuItemWrapper {
+			border: 1px solid transparent;
 			cursor: pointer;
+			height: 100%;
+
+			&_Container {
+				height: 100%;
+			}
 
 			&__Label {
 				@include flex-center-vertically;
+
+				font-family: $font-family-latin-bold;
 
 				&::after {
 					border-left: 5px solid transparent;
@@ -121,9 +151,9 @@ div.Toolbar {
 		@include component-scroll-root();
 
 		background-color: $regular-white;
-		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.2);
 		display: none;
-		max-height: 200px;
+		max-height: 300px;
 		overflow: auto;
 		position: absolute;
 
@@ -131,23 +161,12 @@ div.Toolbar {
 			background-color: transparent;
 		}
 
-		&--open {
-			display: block;
-			z-index: 1;
-
-			&::before {
-				background-color: $regular-white;
-				content: '';
-				display: inline-block;
-				height: 5px;
-				position: absolute;
-				top: -4px;
-				width: 100%;
-			}
+		&::-webkit-scrollbar {
+			width: 4px;
 		}
 
 		.MenuItemWrapper {
-			border-bottom: none;
+			border-bottom: none !important;
 			padding: 10px 45px 10px 20px;
 
 			&:hover {
