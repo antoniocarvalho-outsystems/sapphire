@@ -136,11 +136,12 @@
 	};
 
 	bindEventsClick = $widget => {
-		const $moreOptions = $widget.find('.Toolbar__MoreOptions');
+		const $moreOptions = $widget.find('.Toolbar__Items .Toolbar__MoreOptions');
 		const $optionsList = $widget.find('.Toolbar__MoreOptionsList');
 
-		$moreOptions.on('click', () => {
+		$moreOptions.on('click', event => {
 			$moreOptions.toggleClass('Toolbar__MoreOptions--open');
+			event.stopPropagation();
 		});
 
 		$optionsList.on('mousewheel', event => {
@@ -148,7 +149,11 @@
 		});
 
 		$('body').on('mouseup', event => {
-			$moreOptions.removeClass('Toolbar__MoreOptions--open');
+			const $target = $(event.target).parents();
+
+			if (!$target.andSelf().is($moreOptions)) {
+				$moreOptions.removeClass('Toolbar__MoreOptions--open');
+			}
 		});
 	};
 
