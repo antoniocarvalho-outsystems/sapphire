@@ -1,248 +1,253 @@
 @mixin common-sapphire-weekdays-style {
-  align-items: center;
-  background-color: $sapphire-white;
-  color: $light-grey;
-  display: inline-flex;
-  justify-content: center;
-  padding: 10px;
-  text-align: center;
-  width: calc(100% / 7);
-  z-index: 1;
+	align-items: center;
+	background-color: $sapphire-white;
+	color: $light-grey;
+	display: inline-flex;
+	justify-content: center;
+	padding: 10px;
+	text-align: center;
+	width: calc(100% / 7);
+	z-index: 1;
 }
 
 .CalendarWb {
-  @include common-sapphire-weekdays-style;
-  border: 1px solid $light-grey;
-  min-width: 250px;
-  position: absolute;
+	@include common-sapphire-weekdays-style;
+	border: 1px solid $light-grey;
+	min-width: 250px;
+	position: absolute;
 
-  &_noOverlap {
-    @include common-sapphire-weekdays-style;
+	&_noOverlap {
+		@include common-sapphire-weekdays-style;
 
-    display: inline-block;
-    padding-bottom: 15px;
-    width: 100%;
-  }
+		display: inline-block;
+		padding-bottom: 15px;
+		width: 100%;
+	}
 }
 
 .CalendarWidget {
-  .Calendar_SmallDayLink {
-    align-items: center;
-    color: $sapphire-color-text-light;
-    display: flex;
-    font-weight: normal;
-    height: 30px;
-    justify-content: center;
-    min-width: 30px;
-    width: 30px;
-  }
+	.Calendar_SmallDayLink {
+		align-items: center;
+		color: $sapphire-color-text-light;
+		display: flex;
+		font-weight: normal;
+		height: 30px;
+		justify-content: center;
+		min-width: 30px;
+		width: 30px;
+	}
 
-  &_wrapper {
-    color: $sapphire-color-text-light;
+	&_wrapper {
+		color: $sapphire-color-text-light;
+		white-space: initial;
 
-    &:after {
-      clear: both;
-      content: ' ';
-      display: block;
-      height: 0;
-      visibility: hidden;
-    }
-  }
+		&:after {
+			clear: both;
+			content: ' ';
+			display: block;
+			height: 0;
+			visibility: hidden;
+		}
+	}
 
-  &__header {
-    @include flex-custom-align(center, space-between);
+	&__header {
+		@include flex-custom-align(center, space-between);
 
-    height: 36px;
-  }
+		height: 36px;
+	}
 
-  &___back {
-    &:after {
-      left: 7px;
-      transform: rotate(90deg);
-    }
-  }
+	&___back {
+		&:after {
+			left: 7px;
+			transform: rotate(90deg);
+		}
+	}
 
-  &___forward {
-    &:after {
-      right: 7px;
-      transform: rotate(270deg);
-    }
-  }
+	&___forward {
+		&:after {
+			right: 7px;
+			transform: rotate(270deg);
+		}
+	}
 
-  &___back,
-  &___forward {
-    position: relative;
+	&___back,
+	&___forward {
+		position: relative;
 
-    &:after {
-      color: $regular-beta;
-      content: '\e610';
-      font-family: $font-family-icons;
-      font-size: 1em;
-      position: absolute;
-      top: -9px;
-    }
+		&:after {
+			color: $regular-beta;
+			content: '\e610';
+			font-family: $font-family-icons;
+			font-size: 1em;
+			position: absolute;
+			top: -9px;
+		}
 
-    &.Disabled {
-      background: none;
-      pointer-events: none;
+		&.Disabled {
+			background: none;
+			pointer-events: none;
 
-      &:after {
-        color: $light-grey;
-      }
-    }
+			&:after {
+				color: $light-grey;
+			}
+		}
 
-    img {
-      display: none;
-    }
-  }
+		img {
+			display: none;
+		}
+	}
 
-  &___currentDay {
-    font-family: $font-family-latin-bold;
-    font-size: 1.143em;
-  }
+	&___currentDay {
+		font-family: $font-family-latin-bold;
+		font-size: 1.143em;
+	}
 
-  &__weekDays {
-    //border-bottom: 1px solid $light-grey;
-  }
+	&__weekDays {
+		//border-bottom: 1px solid $light-grey;
+	}
 
-  &___weekDay {
-    display: inline-block;
-    font-size: $font-size-tiny;
-    height: 30px;
-    padding: 7px 1px;
-    text-align: center;
-    width: calc(100% / 7);
-  }
+	&___weekDay {
+		display: inline-block;
+		font-size: $font-size-tiny;
+		height: 30px;
+		padding: 7px 1px;
+		text-align: center;
+		width: calc(100% / 7);
+	}
 
-  &__days {
-    font-size: $font-size-heading3;
-    width: 100%;
+	&__days {
+		font-size: $font-size-heading3;
+		width: 100%;
 
-    .Calendar_Past_Day {
-      @include common-sapphire-weekdays-style;
+		.Calendar_Past_Day {
+			@include common-sapphire-weekdays-style;
 
-      color: $light-grey;
-    }
+			color: $light-grey;
+		}
 
-    .Calendar_Today {
-      @include common-sapphire-weekdays-style;
+		.Calendar_Today {
+			@include common-sapphire-weekdays-style;
 
-      background-color: transparent !important;
-      border: none !important;
-      padding: 0;
+			background-color: transparent !important;
+			border: none !important;
+			padding: 0;
 
-      .Calendar_SmallDayLink {
-        background-color: $regular-alpha;
-        border-radius: 50%;
-        color: $regular-white;
-        display: inline-block;
-        font-weight: normal;
-        height: 34px;
-        line-height: 34px;
-        margin: 0 !important;
-        width: 34px;
-      }
-    }
+			.Calendar_SmallDayLink {
+				background-color: $regular-alpha;
+				border-radius: 50%;
+				color: $regular-white;
+				display: inline-block;
+				font-weight: normal;
+				height: 34px;
+				line-height: 34px;
+				margin: 0 !important;
+				width: 34px;
+			}
+		}
 
-    .Calendar_Weekday {
-      @include common-sapphire-weekdays-style;
+		.Calendar_Weekday {
+			@include common-sapphire-weekdays-style;
 
-      .Calendar_SmallDayLink {
-        font-weight: normal;
-      }
-    }
+			.Calendar_SmallDayLink {
+				font-weight: normal;
+			}
+		}
 
-    .Calendar_Weekday_Holiday {
-      @include common-sapphire-weekdays-style;
-    }
+		.Calendar_Weekday_Holiday {
+			@include common-sapphire-weekdays-style;
+		}
 
-    .Calendar_EmptyWeekendDay {
-      @include common-sapphire-weekdays-style;
+		.Calendar_EmptyWeekendDay {
+			@include common-sapphire-weekdays-style;
 
-      // height: 100px;
-      // margin: 2px;
-      // width: 100px;
-    }
+			// height: 100px;
+			// margin: 2px;
+			// width: 100px;
+		}
 
-    .Calendar_EmptyDay {
-      @include common-sapphire-weekdays-style;
-      border: none;
-    }
-  }
+		.Calendar_EmptyDay {
+			@include common-sapphire-weekdays-style;
+			border: none;
+		}
+	}
 
-  &__daysNumber {
-    @include common-sapphire-weekdays-style;
-    position: relative;
+	&__daysNumber {
+		@include common-sapphire-weekdays-style;
+		position: relative;
 
-    span {
-      color: $regular-beta !important;
-    }
+		span {
+			color: $regular-beta !important;
+		}
 
-    .arrowLeft.green {
-      bottom: 0;
-      display: contents;
-      position: absolute;
+		.arrowLeft.green {
+			bottom: 0;
+			display: contents;
+			position: absolute;
 
-      &:after {
-        background-color: $regular-green;
-        bottom: 2px;
-        content: ' ';
-        height: 3px;
-        left: 50%;
-        position: absolute;
-        transform: translateX(-50%);
-        width: 20px;
-      }
-    }
+			&:after {
+				background-color: $regular-green;
+				bottom: 2px;
+				content: ' ';
+				height: 3px;
+				left: 50%;
+				position: absolute;
+				transform: translateX(-50%);
+				width: 20px;
+			}
+		}
 
-    >a span {
-      color: $sapphire-color-text-light;
-      height: 44px;
-      width: 65px;
-    }
+		> a span {
+			color: $sapphire-color-text-light;
+			height: 44px;
+			width: 65px;
+		}
 
-    &.CalendarWidget__Selected {
-      background-color: $sapphire-white !important;
-      border: none !important;
+		&.CalendarWidget__Selected {
+			background-color: $sapphire-white !important;
+			border: none !important;
 
-      .arrowLeft.green {
-        display: none;
-      }
+			.arrowLeft.green {
+				display: none;
+			}
 
-      span.Calendar_SmallDayLink {
-        background-color: $regular-alpha;
-        border-radius: 50%;
-        color: $sapphire-white !important;
-      }
-    }
-  }
+			span.Calendar_SmallDayLink {
+				background-color: $regular-alpha;
+				border-radius: 50%;
+				color: $sapphire-white !important;
+			}
+		}
+	}
 
-  &_Today {
-    clear: both;
-    display: block;
-    font-family: $font-family-latin-bold;
-    font-size: 0.857em;
-    padding-top: 5px;
-    width: 100%;
-  }
+	&_Today {
+		clear: both;
+		display: block;
+		font-family: $font-family-latin-bold;
+		font-size: 0.857em;
+		padding-top: 5px;
+		width: 100%;
+	}
 
-  >div {
-    width: 100%;
-  }
+	> div {
+		width: 100%;
+	}
 
-  .ListRecords {
-    text-align: left;
-  }
+	.ListRecords {
+		text-align: left;
+	}
+
+	.CalendarWidget__Selected {
+		background-color: $sapphire-white !important;
+		border: none !important;
+	}
 }
 
 .AR,
 .FA {
-
-  .Calendar_Today,
-  .Calendar_Weekday,
-  .Calendar_Past_Day,
-  .CalendarWidget__days,
-  .CalendarWidget__daysNumber {
-    transform: scaleX(-1);
-  }
+	.Calendar_Today,
+	.Calendar_Weekday,
+	.Calendar_Past_Day,
+	.CalendarWidget__days,
+	.CalendarWidget__daysNumber {
+		transform: scaleX(-1);
+	}
 }
