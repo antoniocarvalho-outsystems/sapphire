@@ -38,6 +38,14 @@ div.Toolbar {
 			&__Items {
 				padding-left: 33px;
 				padding-right: 33px;
+
+				.MenuItemWrapper {
+					padding: 10px 20px 15px 20px;
+
+					&__icon {
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
 	}
@@ -108,7 +116,7 @@ div.Toolbar {
 				height: 10px;
 				margin-top: -10px;
 				position: absolute;
-				width: 144px;
+				width: 147px;
 				z-index: 1;
 			}
 
@@ -165,6 +173,10 @@ div.Toolbar {
 			width: 4px;
 		}
 
+		a:focus .MenuItemWrapper {
+			border-color: transparent !important;
+		}
+
 		.MenuItemWrapper {
 			border-bottom: none !important;
 			padding: 10px 45px 10px 20px;
@@ -179,6 +191,7 @@ div.Toolbar {
 			}
 
 			&__icon {
+				margin-bottom: 0;
 				margin-right: 10px;
 
 				.icon {
@@ -236,7 +249,7 @@ div.Toolbar {
 .MenuItemWrapper {
 	background-color: transparent;
 	border-bottom: 3px solid transparent;
-	padding: 10px 20px 15px 20px;
+	padding: 11px 20px 6px 20px;
 	position: relative;
 	text-align: center;
 	transition: all 0.2s ease-in;
@@ -263,6 +276,8 @@ div.Toolbar {
 	}
 
 	&__icon {
+		margin-bottom: 8px;
+
 		.icon {
 			font-size: 1.429em;
 		}
@@ -289,9 +304,38 @@ div.Toolbar {
 
 .AR,
 .FA {
-	.Toolbar.Fix {
-		left: auto;
-		right: 0;
+	.Toolbar {
+		&.Fix {
+			left: auto;
+			right: 0;
+		}
+
+		&__MoreOptions {
+			.MenuItemWrapper {
+				&__Label {
+					&::after {
+						margin-left: 0;
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+
+		&__MoreOptionsList {
+			.MenuItemWrapper {
+				padding: 10px 20px 10px 45px;
+
+				&__icon {
+					margin-left: 10px;
+					margin-right: 0;
+				}
+
+				&_Badge {
+					left: 15px;
+					right: auto;
+				}
+			}
+		}
 	}
 
 	.MenuItemWrapper_Badge {
