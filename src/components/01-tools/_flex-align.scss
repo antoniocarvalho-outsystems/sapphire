@@ -1,16 +1,16 @@
-@mixin flex-center-total {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+@mixin flex-center-total($type: flex) {
+	align-items: center;
+	display: $type;
+	justify-content: center;
 }
 
-@mixin flex-center-vertically {
-  align-items: center;
-  display: flex;
+@mixin flex-center-vertically($type: flex) {
+	align-items: center;
+	display: $type;
 }
 
-@mixin flex-custom-align($align: center, $justify: center) {
-  align-items: $align;
-  display: flex;
-  justify-content: $justify;
+@mixin flex-custom-align($align: center, $justify: center, $type: flex) {
+	align-items: $align;
+	display: $type;
+	justify-content: $justify;
 }

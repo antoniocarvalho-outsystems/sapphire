@@ -1,3 +1,21 @@
+// DO NOT FORGET TO REMOVE
+.LayoutBase--sideMenu {
+	.LayoutBase-MainMenu {
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+	}
+
+	.LayoutBase-header {
+		top: 0;
+	}
+
+	.LayoutBase-spacer {
+		min-height: 44px;
+	}
+}
+
 .SideMenu {
 	&--open & {
 		&__Shield {
@@ -15,13 +33,24 @@
 		}
 	}
 
+	&__Title {
+		@include flex-center-vertically(inline-flex);
+	}
+
+	&__PageTitle {
+		color: $mid-dark-grey;
+		font-family: $font-family-latin-bold;
+		font-size: 1.143em;
+		padding-left: 10px;
+	}
+
 	&__Trigger {
-		@include flex-center-total();
+		@include flex-center-total(inline-flex);
 
 		color: $dark-grey;
 		cursor: pointer;
-		display: inline-flex;
 		height: 44px;
+		padding-left: 10px;
 		transition: all 0.3s ease;
 		width: 44px;
 
@@ -60,8 +89,7 @@
 	&__Header {
 		color: $regular-white;
 		display: inline-flex;
-		padding: 12px;
-		padding-top: 20px;
+		padding: 20px 12px 20px 20px;
 		width: 100%;
 	}
 
@@ -80,9 +108,12 @@
 	&__MenuLogo {
 		font-size: 6em;
 		height: 22px;
+		overflow: hidden;
 		position: relative;
+		width: 100%;
 
 		.icon {
+			color: $regular-white;
 			position: absolute;
 			top: -45px;
 		}
@@ -96,13 +127,29 @@
 			content: '';
 			display: block;
 			height: 1px;
-			margin-left: 48px;
+			margin-left: 55px;
 			margin-top: 25px;
 		}
 
 		.MenuItem {
 			font-family: $font-family-latin-bold;
 			font-size: 1.3em;
+
+			&_label {
+				@include flex-center-vertically(inline-flex);
+
+				.Notifications {
+					background-color: $regular-white;
+					border-radius: 50%;
+					color: $sapphire-blue;
+					font-size: 0.786em;
+					height: 20px;
+					line-height: 19px;
+					margin-left: 15px;
+					text-align: center;
+					width: 21px;
+				}
+			}
 		}
 	}
 
@@ -139,13 +186,55 @@
 	&__MenuItems {
 		.MenuItem {
 			overflow: hidden;
-			padding-left: 48px;
+			padding-left: 55px;
 			width: 100%;
 
-			&_icon {
+			&_icon,
+			&_label {
+				pointer-events: none;
+			}
+
+			&_icon,
+			&_subItems {
 				&:empty {
 					display: none;
 				}
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.SideMenu {
+		&__Trigger,
+		&__PageTitle {
+			padding-left: 0;
+			padding-right: 10px;
+		}
+
+		&__MenuClose {
+			margin-left: 15px;
+			margin-right: 0;
+		}
+
+		&__TabItems::after {
+			margin-left: 0;
+			margin-right: 55px;
+		}
+
+		&__MenuItems {
+			.MenuItem_icon {
+				margin-left: 10px;
+				margin-right: 0;
+			}
+		}
+
+		&__TabItems,
+		&__MenuItems {
+			.MenuItem {
+				padding-left: 15px;
+				padding-right: 55px;
 			}
 		}
 	}
