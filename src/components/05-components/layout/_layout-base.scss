@@ -95,6 +95,46 @@
 	}
 }
 
+.LayoutBase--withTabs {
+	.LayoutBase {
+		&-spacer {
+			display: none;
+		}
+
+		&-MainMenu {
+			position: absolute;
+			width: fit-content;
+		}
+
+		&-MainContent {
+			> .FullScreenTabsWrapper {
+				.FullScreenTabsWrapper_Container.Dashboard {
+					padding-left: 44px;
+				}
+			}
+		}
+	}
+
+	.SideMenu {
+		background-color: $regular-alpha;
+		color: $regular-white;
+
+		&__Title {
+			color: $regular-white;
+		}
+
+		&__PageTitle {
+			display: none;
+		}
+
+		&__Trigger {
+			&:hover {
+				background-color: $regular-epsilon;
+			}
+		}
+	}
+}
+
 body.LayoutBase .os-internal-ui-widget-overlay {
 	z-index: 90 !important;
 }
