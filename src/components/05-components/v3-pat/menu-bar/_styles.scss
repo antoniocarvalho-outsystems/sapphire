@@ -1,261 +1,258 @@
 .Menubar {
-  @include component-scroll(true, 0);
+	@include component-scroll(true, 0);
 
-  background-color: $sapphire-blue;
-  font-weight: 700;
-  height: $default-menubar-height;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 4;
+	background-color: $sapphire-blue;
+	font-weight: 700;
+	height: $default-menubar-height;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 4;
 
-  .ListRecords {
-    display: inline;
-  }
+	.ListRecords {
+		display: inline;
+	}
 
-  &_logo {
-    color: $regular-white;
-    display: inline-block;
-    font-size: 1.429em;
-    height: 100%;
-    position: relative;
-    text-align: center;
-    width: 50px;
+	&_logo {
+		color: $regular-white;
+		display: inline-block;
+		font-size: 1.429em;
+		height: 100%;
+		position: relative;
+		text-align: center;
+		width: 50px;
 
-    &:hover {
-      color: $regular-white;
-      text-shadow: 0px 0px 3px $regular-white;
-      transition: all 0.2s ease-in;
-    }
+		&:hover {
+			color: $regular-white;
+			text-shadow: 0px 0px 3px $regular-white;
+			transition: all 0.2s ease-in;
+		}
 
-    .icon {
-      color: $regular-white;
-      line-height: $default-menubar-height;
-    }
-  }
+		.icon {
+			color: $regular-white;
+			line-height: $default-menubar-height;
+		}
+	}
 
-  &_item {
-    display: inline-block;
-    width: calc(100% - 130px);
-  }
+	&_item {
+		display: inline-block;
+		width: calc(100% - 130px);
+	}
 
-  &_extraItem {
-    color: $regular-white;
-    cursor: pointer;
-    display: none;
-    font-size: 1.429em;
-    height: 100%;
-    line-height: $default-menubar-height;
-    padding: 0 10px;
-    position: relative;
-    text-align: center;
+	&_extraItem {
+		color: $regular-white;
+		cursor: pointer;
+		display: none;
+		font-size: 1.429em;
+		height: 100%;
+		line-height: $default-menubar-height;
+		padding: 0 10px;
+		position: relative;
+		text-align: center;
 
-    &.show {
-      display: inline-block;
-    }
+		&.show {
+			display: inline-block;
+		}
 
-    &:hover,
-    &:active:hover {
-      background-color: $sapphire-dark-blue2;
-      color: $regular-white;
-      transition: all 0.2s ease-in;
-    }
-  }
+		&:hover,
+		&:active:hover {
+			background-color: $sapphire-dark-blue2;
+			color: $regular-white;
+			transition: all 0.2s ease-in;
+		}
+	}
 
-  &__extraContainer {
-    background-color: $sapphire-dark-blue2;
-    line-height: 40px;
-    max-height: 0;
-    min-width: 206px;
-    overflow-y: auto;
-    position: absolute;
-    right: 0;
-    top: $default-menubar-height;
-    transition: max-height 0.4s ease-in;
-    z-index: 4;
+	&__extraContainer {
+		background-color: $sapphire-dark-blue2;
+		line-height: 40px;
+		max-height: 0;
+		min-width: 206px;
+		overflow-y: auto;
+		position: absolute;
+		right: 0;
+		top: $default-menubar-height;
+		transition: max-height 0.4s ease-in;
+		z-index: 4;
 
-    &:empty {
-      display: none;
-    }
+		&:empty {
+			display: none;
+		}
 
-    &.show {
-      max-height: 500px;
-      transition: max-height 0.4s ease-in;
-    }
+		&.show {
+			max-height: 500px;
+			transition: max-height 0.4s ease-in;
+		}
 
-    .MenuItem {
-      display: block;
-      height: auto;
-      padding: 0;
-      text-align: left;
+		.MenuItem {
+			display: block;
+			height: auto;
+			padding: 0;
+			text-align: left;
 
-      &:hover {
+			&:hover {
+				.MenuItem_icon,
+				.MenuItem_label,
+				.MenuItem_icon a,
+				.MenuItem_label a {
+					color: $regular-alpha !important;
+				}
+			}
+		}
 
-        .MenuItem_icon,
-        .MenuItem_label,
-        .MenuItem_icon a,
-        .MenuItem_label a {
-          color: $regular-alpha !important;
-        }
-      }
-    }
+		.MenuItem_subItems {
+			padding: 0;
+			position: relative;
 
-    .MenuItem_subItems {
-      padding: 0;
-      position: relative;
+			&.show {
+				top: 0;
+			}
 
-      &.show {
-        top: 0;
-      }
+			a,
+			a:link {
+				padding: 0 30px;
+			}
+		}
 
-      a,
-      a:link {
-        padding: 0 30px;
-      }
-    }
+		.MenuItem_icon {
+			display: none;
+		}
 
-    .MenuItem_icon {
-      display: none;
-    }
-
-    .MenuItem_label {
-      padding: 0 15px;
-    }
-  }
+		.MenuItem_label {
+			padding: 0 15px;
+		}
+	}
 }
 
 .MenuItem {
-  color: $regular-white;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: normal;
-  height: $default-menubar-height;
-  line-height: $default-menubar-height;
-  padding: 0 15px 0 10px;
-  position: relative;
-  text-decoration: none;
-  transition: all 0.2s ease-in;
+	color: $regular-white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+	height: $default-menubar-height;
+	line-height: $default-menubar-height;
+	padding: 0 15px 0 10px;
+	position: relative;
+	text-decoration: none;
+	transition: all 0.2s ease-in;
 
-  &:hover {
+	&:hover {
+		.MenuItem_icon a,
+		.MenuItem_label a {
+			color: $regular-white;
+		}
+	}
 
-    .MenuItem_icon a,
-    .MenuItem_label a {
-      color: $regular-white;
-    }
-  }
+	&,
+	&.active,
+	&:active {
+		&:hover {
+			background-color: $sapphire-dark-blue2;
+			color: $regular-white;
+		}
+	}
 
-  &,
-  &.active,
-  &:active {
-    &:hover {
-      background-color: $sapphire-dark-blue2;
-      color: $regular-white;
-    }
-  }
+	&.activeIndicator {
+		&.shadow {
+			background-color: transparent;
+		}
+	}
 
-  &.activeIndicator {
-    &.shadow {
-      background-color: transparent;
-    }
-  }
+	&.active,
+	&.activeIndicator {
+		background-color: $sapphire-dark-blue2;
+		color: $regular-white;
 
-  &.active,
-  &.activeIndicator {
-    background-color: $sapphire-dark-blue2;
-    color: $regular-white;
+		.MenuItem_icon a,
+		.MenuItem_label a {
+			color: $regular-white !important;
+		}
+	}
 
-    .MenuItem_icon a,
-    .MenuItem_label a {
-      color: $regular-white !important;
-    }
-  }
+	&_icon {
+		font-size: 1em;
+		margin-right: 5px;
+	}
 
-  &_icon {
-    font-size: 1em;
-    margin-right: 5px;
-  }
+	&_label {
+		font-size: 0.857em;
+	}
 
-  &_label {
-    font-size: 0.857em;
-  }
+	&_icon a,
+	&_label a {
+		color: $regular-white !important;
+	}
 
-  &_icon a,
-  &_label a {
-    color: $regular-white !important;
-  }
+	&_subItems {
+		background: $sapphire-dark-blue2;
+		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: inherit fvdescsadcv 3px;
+		box-shadow: rgba(14, 64, 86, 0.2) 0 2px 2px;
+		left: 0;
+		line-height: normal;
+		max-height: 0;
+		min-width: 206px;
+		overflow: hidden;
+		overflow-y: auto;
+		position: absolute;
+		right: 0;
+		top: $default-menubar-height;
+		transition: all 0.1s ease-out;
+		z-index: 4;
 
-  &_subItems {
-    background: $sapphire-dark-blue2;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: inherit fvdescsadcv 3px;
-    box-shadow: rgba(14, 64, 86, 0.2) 0 2px 2px;
-    left: 0;
-    line-height: normal;
-    max-height: 0;
-    min-width: 206px;
-    overflow: hidden;
-    overflow-y: auto;
-    position: absolute;
-    right: 0;
-    top: $default-menubar-height;
-    transition: all 0.1s ease-out;
-    z-index: 4;
+		&.show {
+			max-height: 500px;
+			overflow-y: auto;
+		}
 
-    &.show {
-      max-height: 500px;
-      overflow-y: auto;
-    }
+		> a,
+		> a:link,
+		> .ListRecords > a,
+		> .ListRecords > a:link {
+			background-color: $sapphire-dark-blue2;
+			border: 1px solid $sapphire-dark-blue2;
+			color: $regular-white !important;
+			display: block;
+			font-size: 0.857em;
+			font-weight: normal;
+			height: auto;
+			line-height: 19px;
+			margin: 5px 5px;
+			padding: 5px 10px;
+			position: relative;
+			transition: all 0.2s ease-in;
 
-    >a,
-    >a:link,
-    >.ListRecords>a,
-    >.ListRecords>a:link {
-      background-color: $sapphire-dark-blue2;
-      border: 1px solid $sapphire-dark-blue2;
-      color: $regular-white !important;
-      display: block;
-      font-size: 0.857em;
-      font-weight: normal;
-      height: auto;
-      line-height: 19px;
-      margin: 5px 5px;
-      padding: 5px 10px;
-      position: relative;
-      transition: all 0.2s ease-in;
+			&:focus {
+				border: 1px solid $regular-white;
+			}
 
-      &:focus {
-        border: 1px solid $regular-white;
-      }
-
-      &:hover {
-        color: $regular-alpha !important;
-      }
-    }
-  }
+			&:hover {
+				color: $regular-alpha !important;
+			}
+		}
+	}
 }
 
 .AR,
 .FA {
-  .Menubar__extraContainer {
-    left: 0;
-    right: auto;
-  }
+	.Menubar__extraContainer {
+		left: 0;
+		right: auto;
+	}
 
-  .MenuItem_icon {
-    margin-left: 5px;
-    margin-right: 0;
-  }
+	.MenuItem_icon {
+		margin-left: 5px;
+		margin-right: 0;
+	}
 
-  a.Menu_SubMenuItem {
-
-    &,
-    &:link,
-    &:hover,
-    &:visited {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
+	a.Menu_SubMenuItem {
+		&,
+		&:link,
+		&:hover,
+		&:visited {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
 }

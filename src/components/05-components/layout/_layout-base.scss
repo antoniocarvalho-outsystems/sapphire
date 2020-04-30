@@ -95,6 +95,24 @@
 	}
 }
 
+.LayoutBase--sideMenu {
+	.LayoutBase {
+		&-MainMenu {
+			bottom: 0;
+			top: 0;
+			width: calc(100% - 40px);
+		}
+
+		&-header {
+			top: 0;
+		}
+
+		&-spacer {
+			min-height: 80px;
+		}
+	}
+}
+
 .LayoutBase--withTabs {
 	.LayoutBase {
 		&-spacer {
@@ -102,6 +120,7 @@
 		}
 
 		&-MainMenu {
+			height: 60px;
 			position: absolute;
 			width: fit-content;
 		}
@@ -109,28 +128,26 @@
 		&-MainContent {
 			> .FullScreenTabsWrapper {
 				.FullScreenTabsWrapper_Container.Dashboard {
-					padding-left: 44px;
+					height: 60px;
+					padding-left: 60px;
+
+					.TabWrapper {
+						height: 55px;
+						line-height: calc(55px - 5px);
+						padding: 0 30px;
+					}
 				}
 			}
 		}
 	}
 
 	.SideMenu {
-		background-color: $regular-alpha;
-		color: $regular-white;
-
 		&__Title {
 			color: $regular-white;
 		}
 
 		&__PageTitle {
 			display: none;
-		}
-
-		&__Trigger {
-			&:hover {
-				background-color: $regular-epsilon;
-			}
 		}
 	}
 }

@@ -7,6 +7,17 @@
 			this.onComponentInit();
 		}
 
+		setMainMenuWidth() {
+			$(document).ready(() => {
+				const $sideBarIframe = $('.LayoutBase-iframesidebar.notExpandable');
+
+				if ($sideBarIframe.length) {
+					const $mainMenu = $('.LayoutBase-MainMenu');
+					$mainMenu.css({ width: 'calc(100% - 262px)' });
+				}
+			});
+		}
+
 		openCloseMenu(toOpen) {
 			if (toOpen) {
 				this.$component.addClass('SideMenu--open');
@@ -20,6 +31,8 @@
 		}
 
 		onComponentInit() {
+			this.setMainMenuWidth();
+
 			this.$component = $(`#${this.options.widgetId}`);
 			this.$trigger = this.$component.find('.SideMenu__Trigger');
 			this.$shield = this.$component.find('.SideMenu__Shield');
@@ -62,9 +75,7 @@
 				$subItems.toggleClass('show');
 			});
 
-			this.$subItem.on('click', event => {
-				event.stopPropagation();
-			});
+			this.$subItem.on('click', event => event.stopPropagation());
 
 			this.$component
 				.find('.SideMenu__TabItems > div:empty')

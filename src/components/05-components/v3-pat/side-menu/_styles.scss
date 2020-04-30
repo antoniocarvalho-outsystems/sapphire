@@ -1,21 +1,3 @@
-// DO NOT FORGET TO REMOVE
-.LayoutBase--sideMenu {
-	.LayoutBase-MainMenu {
-		bottom: 0;
-		left: 0;
-		right: 0;
-		top: 0;
-	}
-
-	.LayoutBase-header {
-		top: 0;
-	}
-
-	.LayoutBase-spacer {
-		min-height: 44px;
-	}
-}
-
 .SideMenu {
 	background-color: $body-color;
 
@@ -52,15 +34,17 @@
 	&__Trigger {
 		@include flex-center-total(inline-flex);
 
+		background-color: $regular-alpha;
+		color: $regular-white;
 		cursor: pointer;
-		height: 44px;
+		height: 60px;
 		padding: 10px;
 		transition: all 0.3s ease;
-		width: 44px;
+		width: 60px;
 
-		// &:hover {
-		// 	transform: scale(1.1);
-		// }
+		&:hover {
+			background-color: $regular-epsilon;
+		}
 	}
 
 	&__Shield {
@@ -164,7 +148,18 @@
 		overflow: auto;
 
 		.MenuItem {
+			&.activeIndicator {
+				background-color: inherit;
+				border-left: 2px solid $regular-white;
+				padding-left: 53px;
+
+				&:hover {
+					background-color: $sapphire-dark-blue2;
+				}
+			}
+
 			&.active {
+				background-color: $sapphire-dark-blue2;
 				height: unset;
 			}
 
@@ -236,9 +231,22 @@
 		}
 
 		&__MenuItems {
-			.MenuItem_icon {
-				margin-left: 10px;
-				margin-right: 0;
+			.MenuItem {
+				&.activeIndicator {
+					border-left: none;
+					border-right: 2px solid $regular-white;
+					padding-left: 53px;
+				}
+
+				&_icon {
+					margin-left: 10px;
+					margin-right: 0;
+				}
+
+				&_subItems {
+					margin-left: auto;
+					margin-right: -15px;
+				}
 			}
 		}
 
@@ -248,6 +256,10 @@
 				padding-left: 15px;
 				padding-right: 55px;
 			}
+		}
+
+		&__Header {
+			padding: 20px 20px 20px 12px;
 		}
 	}
 }
