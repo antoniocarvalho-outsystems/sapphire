@@ -78,7 +78,7 @@ $styleguide-main-content-padding: 50px;
 			margin: 10px 0 20px 0;
 
 			.icon {
-				color: $regular-beta;
+				color: $regular-alpha;
 				font-size: 5em;
 			}
 		}
@@ -482,10 +482,10 @@ $styleguide-main-content-padding: 50px;
 	}
 
 	// Home Page
-	&__HomePageHeader {
+	&__HomeHeader {
 		background-color: $regular-alpha;
-		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-		height: 450px;
+		//clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+		height: 400px;
 		margin: -50px;
 
 		*[ui='header-info'] {
@@ -503,6 +503,39 @@ $styleguide-main-content-padding: 50px;
 				font-size: 1.5em;
 				margin-top: 20px;
 			}
+		}
+	}
+
+	&__HomeContent {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 50px;
+	}
+
+	&__HomeCard {
+		background-color: $regular-white;
+		border-radius: 4px;
+		display: flex;
+		flex-direction: column;
+		height: 300px;
+		margin: 0 25px;
+		padding: 15px;
+		text-align: center;
+		transition: all 0.3s ease-in;
+		width: 250px;
+
+		&:hover {
+			transform: translateY(-8px);
+		}
+
+		.icon {
+			color: $regular-alpha;
+			font-size: 5em;
+			margin-top: 18px;
+		}
+
+		*[ui='home-card-title'] {
+			font-size: 1.714em;
 		}
 	}
 	// Home Page
