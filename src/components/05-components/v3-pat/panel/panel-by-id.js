@@ -1,20 +1,20 @@
 /* Component PanelByID */
-SapphireWidgets.PanelById ={
-	isAnyPanelOpenedDeprecated:function () {
+SapphireWidgets.PanelById = {
+	isAnyPanelOpenedDeprecated: function() {
 		return $('body').hasClass('PanelOpened');
 	},
-	
-	togglePanelById:function (Id) {
+
+	togglePanelById: function(Id) {
 		if (!this.isAnyPanelOpenedDeprecated()) {
 			$('body').addClass('PanelOpened');
 			$('body').css('overflow-y', 'hidden');
-	
+
 			$('#' + Id)
 				.parents('.ToggleButton')
 				.parent()
 				.children('.Panel')
 				.fadeIn(140);
-	
+
 			try {
 				if (typeof justDragged !== 'undefined') {
 					if (justDragged == false) {
@@ -27,7 +27,7 @@ SapphireWidgets.PanelById ={
 			} catch (e) {
 				console.log(e);
 			}
-	
+
 			setTimeout(function() {
 				$('#' + Id)
 					.parents('.ToggleButton')
@@ -42,7 +42,7 @@ SapphireWidgets.PanelById ={
 		} else {
 			$('body').removeClass('PanelOpened');
 			$('body').css('overflow-y', 'scroll');
-	
+
 			$('#' + Id)
 				.parents('.ToggleButton')
 				.parent()
@@ -60,6 +60,5 @@ SapphireWidgets.PanelById ={
 					.click();
 			}, 100);
 		}
-	}
-}
-
+	},
+};

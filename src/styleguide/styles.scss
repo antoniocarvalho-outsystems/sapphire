@@ -7,8 +7,14 @@
 
 // Reset
 body {
+	@include component-scroll-root(0);
+
 	background-color: $regular-white !important;
 	margin: 0;
+
+	&::-webkit-scrollbar-thumb {
+		border-color: $light-grey;
+	}
 }
 
 // Variables
@@ -325,6 +331,12 @@ $styleguide-main-content-padding: 50px;
 			div[ui='message'] {
 				flex: 1;
 			}
+		}
+	}
+
+	&__ListCards {
+		.DesignSystem__ContentCard:not(:last-child) {
+			border-bottom: none;
 		}
 	}
 
