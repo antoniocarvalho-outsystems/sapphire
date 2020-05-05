@@ -66,6 +66,13 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 		&.ColorLightGreyBorder {
 			border-color: $light-grey;
 		}
+
+		&.ShowEntireTitle {
+			.MainInteractiveCard-header-text-title {
+				max-height: initial;
+				white-space: unset;
+			}
+		}
 	}
 }
 
