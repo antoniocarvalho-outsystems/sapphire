@@ -12,6 +12,7 @@
 
 .CalendarWb {
 	@include common-sapphire-weekdays-style;
+
 	border: 1px solid $light-grey;
 	min-width: 250px;
 	position: absolute;
@@ -19,6 +20,7 @@
 	&_noOverlap {
 		@include common-sapphire-weekdays-style;
 
+		border: 1px solid $light-grey;
 		display: inline-block;
 		padding-bottom: 15px;
 		width: 100%;

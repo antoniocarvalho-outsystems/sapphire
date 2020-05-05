@@ -1,0 +1,24 @@
+.modalPopup {
+	-servicestudio-border: 2px solid #aaa;
+	-servicestudio-border-radius: 5px;
+	-servicestudio-box-shadow: 5px 5px 10px 3px #ccc;
+	-servicestudio-padding: 20px;
+
+	&.Open {
+		.modalPopup_container {
+			-servicestudio--webkit-transform: translateX(0);
+			-servicestudio--webkit-transform: translateY(0);
+			-servicestudio-display: block;
+			-servicestudio-left: auto;
+			-servicestudio-position: relative;
+			-servicestudio-top: auto;
+			-servicestudio-transform: translateX(0);
+			-servicestudio-transform: translateY(0);
+			-servicestudio-z-index: 0;
+		}
+
+		.modalPopup_div {
+			-servicestudio-display: none;
+		}
+	}
+}
