@@ -1,0 +1,24 @@
+@media all and (max-width: 900px) {
+	.ToggleItemControl {
+		text-align: initial;
+		width: 100%;
+	}
+
+	.PrescriptionContainer {
+		&_header {
+			flex: 1;
+		}
+
+		&__containerWrapper {
+			flex-wrap: inherit;
+
+			.DosePickerContentInfo:first-child {
+				margin-right: 12px;
+			}
+		}
+
+		select {
+			width: 100%;
+		}
+	}
+}
