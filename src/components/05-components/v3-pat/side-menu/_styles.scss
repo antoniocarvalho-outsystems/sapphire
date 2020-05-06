@@ -37,6 +37,7 @@
 		background-color: $regular-alpha;
 		color: $regular-white;
 		cursor: pointer;
+		flex-direction: column;
 		height: 60px;
 		padding: 10px;
 		transition: all 0.3s ease;
@@ -48,9 +49,9 @@
 
 		div {
 			background-color: $regular-white;
-			height: 5px;
-			margin: 6px 0;
-			width: 35px;
+			height: 3px;
+			margin: 2px 0;
+			width: 30px;
 		}
 	}
 
