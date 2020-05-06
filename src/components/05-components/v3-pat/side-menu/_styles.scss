@@ -45,6 +45,13 @@
 		&:hover {
 			background-color: $regular-epsilon;
 		}
+
+		div {
+			background-color: $regular-white;
+			height: 5px;
+			margin: 6px 0;
+			width: 35px;
+		}
 	}
 
 	&__Shield {

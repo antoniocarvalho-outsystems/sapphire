@@ -189,7 +189,6 @@ SapphireWidgets.SelectSystem = config => {
 					return Select2AjaxOpt;
 				},
 				processResults: function(data, params) {
-					console.log(data.items);
 					params.page = params.page || 1;
 					return {
 						results: data.items,
@@ -215,7 +214,7 @@ SapphireWidgets.SelectSystem = config => {
 			}
 
 			Select2Options.minimumResultsForSearch = 0;
-			Select2Options.tags = true;
+			Select2Options.tags = config.HasTags;
 			Select2Options.closeOnselect = true;
 			Select2Options.placeholder = Prompt;
 		}
