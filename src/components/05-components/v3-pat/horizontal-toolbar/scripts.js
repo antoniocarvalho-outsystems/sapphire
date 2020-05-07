@@ -103,7 +103,7 @@
 		$listItems.find('a[ui]').each(function() {
 			itemsTotal += parseInt($(this).outerWidth(true), 10);
 
-			if (itemsTotal + 151 < menuWidth) {
+			if (itemsTotal + 90 < menuWidth) {
 				$(this).css('display', 'block');
 			} else {
 				hasItemsHidden = true;
@@ -137,9 +137,10 @@
 
 	bindEventsClick = $widget => {
 		const $moreOptions = $widget.find('.Toolbar__Items .Toolbar__MoreOptions');
+		const $trigger = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsIcon');
 		const $optionsList = $widget.find('.Toolbar__MoreOptionsList');
 
-		$moreOptions.on('click', event => {
+		$trigger.on('click', event => {
 			$moreOptions.toggleClass('Toolbar__MoreOptions--open');
 			event.stopPropagation();
 		});

@@ -39,6 +39,10 @@ div.Toolbar {
 				padding-left: 33px;
 				padding-right: 33px;
 
+				.ListRecords {
+					width: initial;
+				}
+
 				.MenuItemWrapper {
 					padding: 10px 20px 15px 20px;
 
@@ -68,6 +72,7 @@ div.Toolbar {
 
 		.ListRecords {
 			display: inline-flex;
+			width: 100%;
 
 			a .MenuItemWrapper {
 				border: 1px solid transparent;
@@ -103,61 +108,69 @@ div.Toolbar {
 	}
 
 	&__MoreOptions {
+		flex: 1;
 		margin: 0;
+		text-align: -webkit-right;
 		width: fit-content;
 
 		&--open {
-			box-shadow: 0 0 12px -4px rgba(0, 0, 0, 0.2);
+			.Toolbar__MoreOptionsIcon {
+				&::after {
+					border-bottom: 10px solid;
+					border-color: $regular-white;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					bottom: 0px;
+					content: '';
+					position: absolute;
+					z-index: 2;
+				}
 
-			&::after {
-				background-color: $regular-white;
-				content: '';
-				display: block;
-				height: 10px;
-				margin-top: -10px;
-				position: absolute;
-				width: 147px;
-				z-index: 1;
+				span[ui='more-options-icon'] {
+					transform: scale(1.1);
+				}
+
+				span[ui='more-options-title'] {
+					font-size: 0;
+				}
 			}
 
 			.Toolbar__MoreOptionsList {
 				display: block;
-				margin-top: -2px;
 				z-index: 1;
-			}
-		}
-
-		.MenuItemWrapper {
-			border: 1px solid transparent;
-			cursor: pointer;
-			height: 100%;
-
-			&_Container {
-				height: 100%;
-			}
-
-			&__Label {
-				@include flex-center-vertically;
-
-				font-family: $font-family-latin-bold;
-
-				&::after {
-					border-left: 5px solid transparent;
-					border-right: 5px solid transparent;
-					border-top: 5px solid;
-					content: '';
-					display: inline-block;
-					height: 0;
-					margin-left: 8px;
-					width: 0;
-				}
 			}
 		}
 	}
 
-	// &__MoreOptionsIcon {
+	&__MoreOptionsIcon {
+		@include flex-center-total();
 
-	// }
+		background-color: $regular-eta;
+		color: $regular-beta;
+		cursor: pointer;
+		flex-direction: column;
+		height: 100%;
+		width: 80px;
+
+		&:hover {
+			span[ui='more-options-icon'] {
+				transform: scale(1.1);
+			}
+
+			span[ui='more-options-title'] {
+				font-size: 0;
+			}
+		}
+
+		span[ui='more-options-icon'],
+		span[ui='more-options-title'] {
+			transition: all 0.3s ease-in;
+		}
+
+		span[ui='more-options-icon'] {
+			margin-bottom: 7px;
+		}
+	}
 
 	&__MoreOptionsList {
 		@include component-scroll-root();

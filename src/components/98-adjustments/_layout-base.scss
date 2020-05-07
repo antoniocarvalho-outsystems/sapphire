@@ -77,36 +77,34 @@
 			}
 
 			&.isFixed .Toolbar__MoreOptions {
-				&::after {
-					width: 127px;
-				}
+				margin-top: 0;
 
-				.MenuItemWrapper {
-					border-bottom-width: 2px;
+				.Toolbar__MoreOptionsIcon {
+					padding-top: 0;
 
-					&:hover {
-						border-bottom-width: 2px !important;
+					span[ui='more-options-icon'] {
+						margin-bottom: 0;
 					}
 
-					&_Container {
-						@include flex-center-vertically;
+					span[ui='more-options-title'] {
+						display: none;
 					}
 				}
-			}
 
-			&.isFixed .Toolbar__MoreOptionsList {
-				margin-top: 1px;
+				.Toolbar__MoreOptionsList {
+					right: -45px;
 
-				a {
-					height: 40px;
-				}
+					a {
+						height: 40px;
+					}
 
-				div.MenuItemWrapper {
-					padding-right: 30px;
+					div.MenuItemWrapper {
+						padding-right: 30px;
 
-					&_Badge {
-						right: 8px !important;
-						top: 14px !important;
+						&_Badge {
+							right: 8px !important;
+							top: 14px !important;
+						}
 					}
 				}
 			}
@@ -140,6 +138,18 @@
 
 			.hide-on-scroll {
 				white-space: nowrap;
+			}
+
+			.Toolbar__MoreOptions {
+				margin-top: -11px;
+
+				.Toolbar__MoreOptionsIcon {
+					padding-top: 11px;
+				}
+
+				.Toolbar__MoreOptionsList {
+					right: -70px;
+				}
 			}
 		}
 
