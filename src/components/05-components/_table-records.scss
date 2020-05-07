@@ -53,11 +53,27 @@
 			background-color: $regular-white;
 		}
 
+		.Link.ChangeUp {
+			display: none;
+		}
+
+		.Link.ChangeDown {
+			display: block;
+		}
+
 		.ActiveRow {
 			.TableRecords_OddLine:first-child span,
 			.TableRecords_EvenLine:first-child span {
 				transform: rotate(180deg);
 				transition: all 500ms;
+			}
+
+			.Link.ChangeUp {
+				display: block;
+			}
+
+			.Link.ChangeDown {
+				display: none;
 			}
 		}
 

@@ -156,6 +156,10 @@ a.Button.IsDefault,
 		border: 1px solid transparent;
 		color: $regular-beta;
 
+		&.HideFocus:focus {
+			border-color: transparent;
+		}
+
 		&:hover,
 		&:focus,
 		&:active,
