@@ -1,7 +1,12 @@
 /* Component SpinnerHorizontal */
 SapphireWidgets.SpinnerHorizontal = {
-	increment: function (elementId, minValue, maxValue, triggerOnChange) {
-		var _element = $(elementId).find('input[type="number"]').first();
+	create: config => {
+		console.log(config.widgetId);
+	},
+	increment: function(elementId, minValue, maxValue, triggerOnChange) {
+		var _element = $(elementId)
+			.find('input[type="number"]')
+			.first();
 		if (_element.val() == undefined || _element.val() == '' || isNaN(parseFloat(_element.val()))) {
 			_element.val(minValue);
 			if (triggerOnChange) {
@@ -13,14 +18,18 @@ SapphireWidgets.SpinnerHorizontal = {
 				if (triggerOnChange) {
 					_element.trigger('change');
 				}
-				$(elementId).find('a.Minus').removeAttr('disabled');
+				$(elementId)
+					.find('a.Minus')
+					.removeAttr('disabled');
 			}
 			if (parseFloat(_element.val()) >= maxValue) {
-				$(elementId).find('a.Plus').attr('disabled', 'disabled');
+				$(elementId)
+					.find('a.Plus')
+					.attr('disabled', 'disabled');
 			}
 		}
 	},
-	decrement: function (elementId, minValue, triggerOnChange) {
+	decrement: function(elementId, minValue, triggerOnChange) {
 		var _element = $(elementId)
 			.find('input[type="number"]')
 			.first();
