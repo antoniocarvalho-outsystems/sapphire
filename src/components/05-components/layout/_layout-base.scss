@@ -111,43 +111,47 @@
 			min-height: 80px;
 		}
 	}
-}
 
-.LayoutBase--withTabs {
-	.LayoutBase {
-		&-spacer {
-			display: none;
-		}
+	&.LayoutBase--withTabs {
+		.LayoutBase {
+			&-spacer {
+				display: none;
+			}
 
-		&-MainMenu {
-			height: 60px;
-			position: absolute;
-			width: fit-content;
-		}
+			&-MainMenu {
+				height: 0;
+				position: absolute;
+				width: fit-content;
+			}
 
-		&-MainContent {
-			.FullScreenTabsWrapper {
-				.FullScreenTabsWrapper_Container.Dashboard {
-					height: 60px;
-					padding-left: 60px;
+			&-topfixedcontent {
+				padding-left: 60px;
+			}
 
-					.TabWrapper {
-						height: 55px;
-						line-height: calc(55px - 5px);
-						padding: 0 30px;
+			&-MainContent {
+				.FullScreenTabsWrapper {
+					.FullScreenTabsWrapper_Container.Dashboard {
+						height: 60px;
+						padding-left: 60px;
+
+						.TabWrapper {
+							height: 55px;
+							line-height: calc(55px - 5px);
+							padding: 0 30px;
+						}
 					}
 				}
 			}
 		}
-	}
 
-	.SideMenu {
-		&__Title {
-			color: $regular-white;
-		}
+		.SideMenu {
+			&__Title {
+				color: $regular-white;
+			}
 
-		&__PageTitle {
-			display: none;
+			&__PageTitle {
+				display: none;
+			}
 		}
 	}
 }

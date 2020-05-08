@@ -152,6 +152,7 @@ $PatientCallCancel-color-disabled: $sapphire-color-disabled-text;
 .PatientCallCancel-Header .PatientCallCancel-label {
 	display: inline-block;
 	font-size: 14px;
+	text-transform: uppercase;
 }
 
 .PatientCallCancel-Header .PatientCallCancel-counter {
@@ -187,7 +188,7 @@ $PatientCallCancel-color-disabled: $sapphire-color-disabled-text;
 }
 
 .PatientCallCancel-disabled .PatientCallCancel-box {
-	background-color: $PatientCallCancel-color-disabled;
+	background-color: $regular-gray;
 }
 
 .PatientCallCancel-disabled.PatientCallCancel-List .PatientCallCancel-icon,
