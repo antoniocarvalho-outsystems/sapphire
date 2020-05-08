@@ -1,7 +1,12 @@
 /* Component SpinnerHorizontal */
 SapphireWidgets.SpinnerHorizontal = {
 	create: config => {
-		console.log(config.widgetId);
+		const $input = $(`#${config.widgetId} input`);
+
+		$input.on('input', function() {
+			const val = Math.abs(parseInt(this.value, 10) || +config.minValue);
+			this.value = val > +config.maxValue ? +config.maxValue : val;
+		});
 	},
 	increment: function(elementId, minValue, maxValue, triggerOnChange) {
 		var _element = $(elementId)
