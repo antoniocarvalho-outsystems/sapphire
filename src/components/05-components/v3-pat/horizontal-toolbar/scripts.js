@@ -122,6 +122,8 @@
 			hasItemsHidden = false;
 		}
 
+		$listItems.find('.Toolbar__MoreOptions').css('display', hasItemsHidden ? 'block' : 'none');
+
 		const $optionsList = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsList');
 		const $hiddenItems = $listItems.find('> a[ui]').filter(function() {
 			return $(this).css('display') == 'none';

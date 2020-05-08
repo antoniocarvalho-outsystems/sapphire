@@ -137,6 +137,8 @@ div.Toolbar {
 
 			.Toolbar__MoreOptionsList {
 				display: block;
+				min-width: 200px;
+				right: 0;
 				z-index: 1;
 			}
 		}
