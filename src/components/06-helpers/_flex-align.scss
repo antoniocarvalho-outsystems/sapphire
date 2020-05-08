@@ -37,6 +37,18 @@
 
 		justify-content: space-evenly;
 	}
+
+	&Start {
+		@extend #{$class-extend};
+
+		justify-content: flex-start;
+	}
+
+	&End {
+		@extend #{$class-extend};
+
+		justify-content: flex-end;
+	}
 }
 
 .Flex {
