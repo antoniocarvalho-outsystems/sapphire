@@ -1,0 +1,121 @@
+.ScaleList {
+	background: none;
+	display: flex;
+	padding-left: 15px;
+	width: 100%;
+
+	&::only-of-type {
+		background: none;
+	}
+
+	&:not(.CardScale) {
+		.ScaleList_scaleContent {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+		}
+	}
+
+	&.PrimaryBackground {
+		background: $regular-eta;
+	}
+
+	&.SecondaryBackground {
+		background: linear-gradient(
+			to top,
+			$regular-white 0%,
+			$regular-white 29%,
+			$regular-eta 30%,
+			$regular-eta 70%,
+			$regular-white 71%,
+			$regular-white 100%
+		);
+	}
+
+	&.MultipleScale {
+		&.SecondaryBackground {
+			background: linear-gradient(
+				to top,
+				$regular-white 0%,
+				$regular-white 11%,
+				$regular-eta 3%,
+				$regular-eta 85%,
+				$regular-white 90%,
+				$regular-white 100%
+			);
+		}
+
+		&.isTitle .ButtonGroupScale {
+			color: #3c4a53;
+			font-size: 14px;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		.ScaleList_title:empty + .ScaleList_scaleContent {
+			flex-basis: auto;
+		}
+	}
+
+	&.CardScale {
+		.ScaleList_title:empty + .ScaleList_scaleContent {
+			flex-basis: 70%;
+		}
+	}
+
+	&.EvenLine {
+		background: $regular-white;
+	}
+
+	&.isSubtotal .ButtonGroupScale {
+		align-self: center;
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	&_title {
+		align-self: center;
+		flex: 1;
+		flex-basis: 40%;
+		font-size: 14px;
+		font-weight: bold;
+		text-align: left;
+
+		&:empty + .ScaleList_scaleContent {
+			&,
+			> span.ListRecords {
+				flex-basis: 100%;
+				justify-content: center;
+			}
+		}
+	}
+
+	&_scaleContent {
+		&,
+		> span.ListRecords {
+			flex-basis: 70%;
+		}
+
+		> span.ListRecords {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+		}
+
+		.ScaleCard {
+			margin: 10px;
+			width: 100% !important;
+		}
+
+		.ButtonGroupScale {
+			.ButtonGroup_button {
+				min-width: 40px;
+			}
+		}
+	}
+
+	&_inputValue {
+		display: none;
+	}
+}
