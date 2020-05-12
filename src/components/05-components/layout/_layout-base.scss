@@ -34,6 +34,7 @@
 	&-topfixedcontent {
 		background-color: $body-color;
 		position: fixed;
+		width: 100%;
 		z-index: 2;
 	}
 
@@ -108,7 +109,30 @@
 		}
 
 		&-spacer {
-			min-height: 80px;
+			min-height: 44px;
+		}
+
+		&-topfixedcontent {
+			.ManageQueueContainer {
+				margin: 16px;
+				margin-top: 24px;
+				opacity: 1;
+				position: absolute;
+				transition: opacity 0.3s ease-out;
+				width: calc(100% - 32px);
+
+				&--closed {
+					opacity: 0;
+				}
+
+				.Columns .Column > div {
+					height: 90px;
+				}
+			}
+		}
+
+		&-subLayoutContent {
+			padding-top: 100px;
 		}
 	}
 
@@ -122,10 +146,6 @@
 				height: 0;
 				position: absolute;
 				width: fit-content;
-			}
-
-			&-topfixedcontent {
-				padding-left: 60px;
 			}
 
 			&-MainContent {
@@ -152,6 +172,12 @@
 			&__PageTitle {
 				display: none;
 			}
+		}
+	}
+
+	.PatientDetailsLayout.hasHeader {
+		.LayoutBase-spacer {
+			min-height: 80px;
 		}
 	}
 }

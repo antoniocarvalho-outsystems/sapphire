@@ -85,6 +85,7 @@
 
 	LayoutBase.prototype.setupWindowEvents = function() {
 		var _this = this;
+		var cursorPositon = 0;
 
 		$(window).resize(function() {
 			_this.updateThresholds();
@@ -94,16 +95,17 @@
 		});
 
 		$(window).scroll(function() {
+			var newPosition = $(window).scrollTop();
+
 			window.clearTimeout(_this.layoutBaseRedrawTimer);
 			_this.layoutBaseRedrawTimer = window.setTimeout(function() {
-				// console.log('=====');
-				// console.log('window', $(window).height());
-				// console.log('scrollheight', $('body')[0].scrollHeight);
-				// console.log('referenceHeight', _this.referenceHeight);
 				_this.updateThresholds();
 				_this.handleOptionalContainers();
 				_this.handleLayoutTopPadding();
 				_this.handleLayoutBottomPadding();
+				_this.handleManageQueueCard(cursorPositon, newPosition);
+
+				cursorPositon = newPosition;
 			}, 100);
 		});
 	};
@@ -273,6 +275,18 @@
 			duration
 		);
 		$('body').css('overflow-y', 'scroll');
+	};
+
+	LayoutBase.prototype.handleManageQueueCard = function(cursorPositon, newPosition) {
+		const $manageQueue = $('.ManageQueueContainer');
+
+		if ($manageQueue.length) {
+			if (newPosition > cursorPositon) {
+				$manageQueue.addClass('ManageQueueContainer--closed');
+			} else if (newPosition < cursorPositon) {
+				$manageQueue.removeClass('ManageQueueContainer--closed');
+			}
+		}
 	};
 
 	SapphireWidgets.LayoutBase = {
