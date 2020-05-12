@@ -57,6 +57,14 @@
 				vertical-align: middle;
 			}
 
+			&.isFixed .TopInfo__OrderSet {
+				font-size: 13px;
+			}
+
+			&.isFixed .TopInfo__Actions .SplitButton {
+				height: 26px;
+			}
+
 			&.isFixed .Toolbar {
 				background-color: $regular-white;
 			}
@@ -134,9 +142,9 @@
 				width: 15px;
 			}
 
-			.hide-on-scroll {
-				white-space: nowrap;
-			}
+			// .hide-on-scroll {
+			// 	white-space: nowrap;
+			// }
 
 			.Toolbar__MoreOptions {
 				margin-top: -11px;
@@ -173,7 +181,23 @@
 
 	&-secondary-aside {
 		.ResumeDetails {
-			padding: 7px 10px !important;
+			height: 100%;
+			padding: 5px 10px !important;
+		}
+
+		.TopInfo {
+			height: 100%;
+
+			> div.ContextButtons {
+				align-items: center;
+				display: flex;
+				height: 100%;
+			}
+
+			&__Actions {
+				flex: 1;
+				text-align: end;
+			}
 		}
 
 		a .Circle.OSInline {

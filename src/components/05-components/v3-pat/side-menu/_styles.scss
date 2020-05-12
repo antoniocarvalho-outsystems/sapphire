@@ -34,7 +34,7 @@
 	&__Trigger {
 		@include flex-center-total(inline-flex);
 
-		background-color: $regular-alpha;
+		background-color: $regular-white;
 		color: $regular-white;
 		cursor: pointer;
 		flex-direction: column;
@@ -44,11 +44,11 @@
 		width: 60px;
 
 		&:hover {
-			background-color: $regular-epsilon;
+			background-color: $regular-eta;
 		}
 
 		div {
-			background-color: $regular-white;
+			background-color: $regular-alpha;
 			height: 3px;
 			margin: 2px 0;
 			width: 30px;
