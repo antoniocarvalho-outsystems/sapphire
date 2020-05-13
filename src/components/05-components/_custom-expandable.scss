@@ -1,0 +1,57 @@
+// Used in the Referral Letter Page
+
+.CustomExpandable {
+	.ExpandableSmaller {
+		&_header {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		&__headerIcon {
+			display: none;
+		}
+
+		&__headerContent,
+		&__headerContentClose {
+			div.PrescriptionBadges.Green {
+				align-items: center;
+				border: 2px solid $regular-alpha;
+				display: inline-flex;
+				height: 36px;
+
+				&.IsSelected {
+					background-color: $regular-alpha;
+
+					.QuantityLabel {
+						background-color: $regular-white;
+						color: $regular-alpha;
+					}
+				}
+
+				div:first-child {
+					order: 2;
+				}
+
+				.QuantityLabel {
+					@include flex-center-total();
+
+					background-color: $regular-alpha;
+					border-radius: 50%;
+					color: $regular-white;
+					height: 24px;
+					margin: 0 7px 0 -7px;
+					order: 1;
+					width: 24px;
+				}
+
+				.BadgeArrow {
+					line-height: 35px;
+				}
+			}
+		}
+
+		&_area {
+			padding-top: 10px;
+		}
+	}
+}
