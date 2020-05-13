@@ -559,9 +559,11 @@ body.PanelOpened .daterangepicker {
 
 .Page .DateTimeRangePicker-placeholder {
 	display: block;
-	height: 0;
+	// height: 0;
 	line-height: 0;
 	overflow: hidden;
+	position: absolute;
+	width: 0;
 }
 
 .Page .DateTimeRangePicker-placeholder input[type='text'],
