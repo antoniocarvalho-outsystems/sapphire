@@ -145,7 +145,7 @@
 					width: this.$header.width(),
 				});
 				this.$secondary
-					.find('.Button.Second, .Button.Third')
+					.find('.Button.Second, .Button.Third, .Button.Link')
 					.not('.Panel .Button.Small, .Panel .Button.Third')
 					.addClass('Small');
 				if (this.$secondary.find('.Toolbar').length === 1) {
@@ -177,7 +177,7 @@
 					top: 'auto',
 					width: '100%',
 				});
-				this.$secondary.find('.Button.Second, .Button.Third').removeClass('Small');
+				this.$secondary.find('.Button.Second, .Button.Third, .Button.Link').removeClass('Small');
 				this.$primaryMenu.css('opacity', 1);
 				this.$secondary.css({
 					height: 'unset',

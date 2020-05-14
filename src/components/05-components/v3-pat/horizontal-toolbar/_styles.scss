@@ -313,7 +313,11 @@ div.Toolbar {
 		background-color: $body-color;
 		border-bottom: 3px solid $body-color;
 		border-radius: 4px 4px 0 0;
-		color: $mid-dark-grey;
+		color: $regular-black;
+
+		.MenuItemWrapper_Container {
+			color: $regular-black;
+		}
 	}
 
 	&_Container {

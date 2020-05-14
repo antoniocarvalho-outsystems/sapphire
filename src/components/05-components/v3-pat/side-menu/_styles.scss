@@ -59,7 +59,7 @@
 		background-color: $dark-grey;
 		height: 0;
 		opacity: 0.2;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		width: 0;
 	}
@@ -70,7 +70,7 @@
 		flex-direction: column;
 		height: 100vh;
 		padding-bottom: 20px;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		transition: all 0.3s ease;
 		visibility: hidden;
