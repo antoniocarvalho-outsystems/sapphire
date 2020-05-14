@@ -1,48 +1,44 @@
-/*   RADIO WIDGET   */
-
 .ToggleItemControl {
 	cursor: pointer;
 	margin: 10px 2px;
 	position: relative;
-}
 
-.ToggleItemControl .ToggleItemControl_radio input[type='radio'] {
-	height: 16px;
-	left: 6px;
-	position: absolute;
-	top: 10px;
-	width: 16px;
-}
+	&.active {
+		.ToggleItemControl_label {
+			background: none;
+			background-color: $regular-eta;
+			border: 1px solid $regular-alpha;
+			border-radius: 4px;
+		}
+	}
 
-.ToggleItemControl input[type='radio']:after {
-	left: 5px;
-	top: 5px;
-}
+	&_radio {
+		input[type='radio'] {
+			height: 16px;
+			left: 6px;
+			position: absolute;
+			top: 14px;
+			width: 16px;
+		}
+	}
+	&_label {
+		border: 1px solid $light-grey;
+		border-radius: 4px;
+		color: $dark-grey;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 2.7rem;
+		padding: 0 10px 0 30px;
+		text-align: center;
+		width: 100%;
 
-.ToggleItemControl .ToggleItemControl_label {
-	border: 1px solid #c5d8d9;
-	border-radius: 4px;
-	color: #0d1d22;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 2.7rem;
-	padding: 0 10px 0 30px;
-	text-align: center;
-	width: 100%;
-}
-
-.ToggleItemControl .ToggleItemControl_label:hover {
-	background: none;
-	background-color: #d8eeef;
-	border: 1px solid #08a5ae;
-	border-radius: 4px;
-}
-
-.ToggleItemControl.active .ToggleItemControl_label {
-	background: none;
-	background-color: #d8eeef;
-	border: 1px solid #08a5ae;
-	border-radius: 4px;
+		&:hover {
+			background: none;
+			background-color: $regular-eta;
+			border: 1px solid $regular-alpha;
+			border-radius: 4px;
+		}
+	}
 }
