@@ -1,0 +1,98 @@
+.RulerScale {
+	display: inline-block;
+	margin: 0%;
+	position: relative;
+	text-align: center;
+	width: 8%;
+}
+
+.RulerScale.ScaleImg {
+	width: 10%;
+}
+
+.RulerScale_wrapper {
+	position: relative;
+}
+
+.RulerScale_line {
+	height: 100px;
+	position: relative;
+}
+
+.RulerScale_line:before {
+	background-image: -webkit-linear-gradient(top, #b1b5b6, #b1b5b6);
+	background-image: -moz-linear-gradient(top, #b1b5b6, #b1b5b6);
+	background-image: -ms-linear-gradient(top, #b1b5b6, #b1b5b6);
+	background-image: -o-linear-gradient(top, #b1b5b6, #b1b5b6);
+	background-image: linear-gradient(top, #b1b5b6, #b1b5b6);
+	bottom: 40px;
+	content: '';
+	display: block;
+	height: 40px;
+	left: 50%;
+	position: absolute;
+	width: 1px;
+}
+
+.RulerScale_line.full:before {
+	bottom: 20px;
+	content: '';
+	height: 80px;
+}
+
+.RulerScale_number {
+	background-color: #f8f8f8;
+	border: 1px solid #c5d8d9;
+	border-radius: 4px;
+	color: #7c7f7f;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	height: 36px;
+	line-height: 36px;
+	margin: 0;
+	padding: 0;
+	width: 36px;
+}
+
+.RulerScale_number.active {
+	background-color: #d8eeef;
+	border: 1px solid #08a5ae;
+	border-radius: 4px;
+	color: #0d1d22;
+	font-size: 14px;
+	font-weight: 600;
+	height: 36px;
+	width: 36px;
+}
+
+.RulerScale_number.viewmode {
+	background-color: transparent;
+	border: 0;
+	color: #7c7f7f;
+	font-weight: 600;
+	pointer-events: none;
+}
+
+.RulerScale_wrapperLabel {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.RulerScale__label {
+	color: #4d5c66;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 18px;
+	text-align: center;
+	width: 100%;
+}
+
+.RulerScale__label.PH:empty {
+	display: none;
+}
+
+.RulerScale_image img {
+	height: 94px;
+}

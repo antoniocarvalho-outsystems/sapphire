@@ -1,0 +1,73 @@
+.ScaleFilter {
+	position: relative;
+}
+
+.ScaleFilter_header {
+	border: 1px solid #ccc;
+	display: flex;
+	padding: 10px;
+	position: sticky;
+}
+
+.ScaleFilter_headerOptions {
+	align-items: center;
+	display: flex;
+}
+
+.ScaleFilter_headerShowHide {
+	align-self: center;
+}
+
+.ScaleFilter_headerShowHide a {
+}
+
+.ScaleFilter_showContent {
+	display: none;
+	max-height: 0;
+	transition: max-height 0.15s ease-out;
+}
+
+.ScaleFilter.open .ScaleFilter_showContent {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	display: block;
+	left: 0;
+	max-height: 500px;
+	padding: 10px;
+	position: absolute;
+	transition: max-height 0.25s ease-in;
+	width: 100%;
+	z-index: 4;
+}
+
+.ScaleFilter_headerShowHide a {
+	font-size: 14px;
+}
+
+.ScaleFilter_headerShowHide .icon {
+	margin-left: 10px;
+}
+
+.ScaleMainStructure_footerButton {
+	white-space: nowrap;
+}
+
+.ScaleFilter .ScaleFilter_headerShowHide > a .icon {
+	margin: 0;
+	padding: 0 10px;
+	transition: all 0.4s ease;
+}
+
+.ScaleFilter .ScaleFilter_headerShowHide .ScaleFilter_headerShowArrow {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.ScaleFilter.open .ScaleFilter_headerShowHide .ScaleFilter_headerShowArrow {
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+	transform: rotate(180deg);
+}
