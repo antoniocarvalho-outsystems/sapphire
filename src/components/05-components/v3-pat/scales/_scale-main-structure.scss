@@ -1,145 +1,68 @@
-.ScaleMainStructure_totalScore {
-	display: inline-block;
-	line-height: 1.4;
-	margin-left: 5px;
-}
-span.TotalLabel.Heading2 {
-	display: inline-block;
-}
-
-.ScaleMainStructure_hiddingLink {
-	display: none;
-}
-
 .ScaleMainStructure {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	padding-right: 10px;
-}
 
-.ScaleMainStructure_menu {
-}
+	&_totalScore {
+		display: inline-block;
+		line-height: 1.4;
+		margin-left: 5px;
+	}
 
-.ScaleMainStructure_options {
-	margin-bottom: 20px;
-	text-align: center;
-}
+	&_hiddingLink {
+		display: none;
+	}
 
-.ScaleMainStructure_menu:empty + .ScaleMainStructure_options:empty {
-	margin-bottom: 0;
-}
+	&_options {
+		margin-bottom: 20px;
+		text-align: center;
 
-.ScaleMainStructure_content {
-	height: 65%;
-}
+		.ToggleItemControl {
+			width: fit-content;
 
-.PopupGenericFlex__body__content .ScaleMainStructure_content {
-	align-items: center;
-	flex: 1;
-	height: 100%;
-	justify-content: center;
-	overflow: auto;
-	padding-bottom: 0;
-	/* margin-top: 20px; */
-	text-align: center;
-	width: 100%;
-}
+			&.disabled {
+				pointer-events: none;
+			}
 
-.ScaleMainStructure_footer {
-	align-items: center;
-	background-color: #fff;
-	border-top: 1px solid #c1dee1;
-	bottom: 0;
-	display: flex;
-	flex-shrink: 0;
-	/* flex-direction: row; */
-	justify-content: space-between;
-	left: 0;
-	padding-bottom: 10px;
-	/* margin-top:30px; */
-	padding-top: 10px;
-	position: relative;
-	width: 100%;
-}
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
 
-.PopupGenericFlex__body__content .ScaleMainStructure_footer {
-	align-items: center;
-	background-color: #fff;
-	border-top: 1px solid #c1dee1;
-	bottom: 0;
-	bottom: 0;
-	display: flex;
-	flex-direction: row;
-	flex-shrink: 0;
-	justify-content: space-between;
-	left: 0;
-	padding: 10px;
-	position: fixed;
-	width: 100%;
-}
+	&_menu {
+		&:empty + .ScaleMainStructure_options:empty {
+			margin-bottom: 0;
+		}
+	}
 
-.ScaleMainStructure_footerButton a,
-.ScaleMainStructure_footerButton a:link,
-.ScaleMainStructure_footerButton a:active {
-	background-color: #295a6e;
-	border: 1px solid #0e4056;
-	border-radius: 2px;
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-	color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 1.2rem;
-	font-weight: 600;
-	height: 3rem;
-	line-height: 3rem;
-	min-width: 10rem;
-	padding: 0 15px;
-	text-align: center;
-	text-decoration: none;
-	-webkit-transition: none;
-}
+	&_content {
+		@include component-scroll-root();
 
-.ScaleMainStructure_footerButton a:hover,
-.ScaleMainStructure_footerButton a:active,
-.ScaleMainStructure_footerButton a:link:hover,
-.ScaleMainStructure_footerButton a:link:active,
-.desktop .ScaleMainStructure_footerButton a:not([disabled='disabled']):hover,
-.desktop .ScaleMainStructure_footerButton a:link:hover,
-.desktop .ScaleMainStructure_footerButton a:visited:hover {
-	background: linear-gradient(180deg, #00698e 0%, #006185 100%);
-	border: 1px solid #255569;
-	box-shadow: inset 0 2px 0 0 rgba(26, 120, 154, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-	color: #fff;
-	cursor: pointer;
-	text-decoration: none;
-}
+		height: 65%;
+	}
 
-.ScaleMainStructure_options .ToggleItemControl {
-	margin-right: 20px;
-}
+	&_footer {
+		align-items: center;
+		background-color: $regular-white;
+		border-top: 1px solid $light-grey;
+		bottom: 0;
+		display: flex;
+		flex-shrink: 0;
+		justify-content: space-between;
+		left: 0;
+		margin-top: 10px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		position: relative;
+		width: 100%;
+	}
 
-.ScaleMainStructure_options .ToggleItemControl:last-child {
-	margin-right: 0px;
-}
-
-.ScaleMainStructure_options .ToggleItemControl.disabled {
-	pointer-events: none;
-}
-
-.ScaleMainStructure_content::-webkit-scrollbar {
-	box-sizing: border-box;
-	height: 7px;
-	width: 7px;
-}
-
-.ScaleMainStructure_content::-webkit-scrollbar-track {
-	border-left: 3px solid white;
-	border-right: 3px solid white;
-}
-
-.ScaleMainStructure_content::-webkit-scrollbar-thumb {
-	border: 5px #6fcdca solid;
-	border-radius: 9px !important;
+	&_footerResult {
+		span.TotalLabel.Heading2 {
+			display: inline-block;
+		}
+	}
 }

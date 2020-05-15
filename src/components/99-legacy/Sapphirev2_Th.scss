@@ -20407,59 +20407,59 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 /* 9.128 Sapphire Patterns > ButtonGroupScale          *********/
 /*------------------------------------------------------------*/
 
-.ButtonGroupScale .ButtonGroup_button {
-  background-color: #f8f8f8;
-  border: 1px solid #c5d8d9;
-  border-left: 0;
-  color: #696c6c;
-  font-size: 14px;
-  font-weight: 600;
-  height: 36px;
-  line-height: 33px;
-  min-width: 50px;
-  text-align: center;
-  width: auto;
-}
+// .ButtonGroupScale .ButtonGroup_button {
+//   background-color: #f8f8f8;
+//   border: 1px solid #c5d8d9;
+//   border-left: 0;
+//   color: #696c6c;
+//   font-size: 14px;
+//   font-weight: 600;
+//   height: 36px;
+//   line-height: 33px;
+//   min-width: 50px;
+//   text-align: center;
+//   width: auto;
+// }
 
-.ButtonGroupScale .ButtonGroup_button.active {
-  color: #0d1d22;
-}
+// .ButtonGroupScale .ButtonGroup_button.active {
+//   color: #0d1d22;
+// }
 
-.ButtonGroupScale .ButtonGroup_button.Button:first-child {
-  border: 1px solid #c5d8d9;
-  border-radius: 4px 0 0 4px;
-}
+// .ButtonGroupScale .ButtonGroup_button.Button:first-child {
+//   border: 1px solid #c5d8d9;
+//   border-radius: 4px 0 0 4px;
+// }
 
-.ButtonGroupScale .ButtonGroup_button.Button.active:first-child {
-  border: 1px solid #08a5ae;
-  border-radius: 4px 0 0 4px;
-  color: #0d1d22;
-}
+// .ButtonGroupScale .ButtonGroup_button.Button.active:first-child {
+//   border: 1px solid #08a5ae;
+//   border-radius: 4px 0 0 4px;
+//   color: #0d1d22;
+// }
 
-.ButtonGroupScale .ButtonGroup_button.Button:last-child {
-  border: 1px solid #c5d8d9;
-  border-left: 0;
-  border-radius: 0 4px 4px 0;
-}
+// .ButtonGroupScale .ButtonGroup_button.Button:last-child {
+//   border: 1px solid #c5d8d9;
+//   border-left: 0;
+//   border-radius: 0 4px 4px 0;
+// }
 
-.ButtonGroupScale .ButtonGroup_button.Button.active:last-child {
-  border: 1px solid #08a5ae;
-  border-radius: 0 4px 4px 0;
-  color: #0d1d22;
-}
+// .ButtonGroupScale .ButtonGroup_button.Button.active:last-child {
+//   border: 1px solid #08a5ae;
+//   border-radius: 0 4px 4px 0;
+//   color: #0d1d22;
+// }
 
-.ButtonGroup_button.Button.active input {
-  display: none;
-}
+// .ButtonGroup_button.Button.active input {
+//   display: none;
+// }
 
-.ButtonGroupScale .ButtonGroup_button.active,
-.desktop .ButtonGroupScale .ButtonGroup_button.active:hover {
-  background-color: #d8eeef;
-  border: 1px solid #08a5ae;
-  box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: none;
-  color: #0d1d22;
-}
+// .ButtonGroupScale .ButtonGroup_button.active,
+// .desktop .ButtonGroupScale .ButtonGroup_button.active:hover {
+//   background-color: #d8eeef;
+//   border: 1px solid #08a5ae;
+//   box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+//   box-shadow: none;
+//   color: #0d1d22;
+// }
 
 /* 9.129 Sapphire Patterns > DateTimeContent****/
 

@@ -1,19 +1,18 @@
 .ButtonGroupScale {
+	border-right: 1px solid $light-grey;
 	padding: 12px 20px;
-}
-.ButtonGroupScale:first-child {
-	border-left: 1px solid #c1dee1;
-}
-.ButtonGroupScale {
-	border-right: 1px solid #c1dee1;
+
+	&:first-child {
+		border-left: 1px solid $light-grey;
+	}
 }
 
-.AR .ButtonGroupScale:first-child,
-.FA .ButtonGroupScale:first-child {
-	border-left: 0;
-}
-
-.AR .ButtonGroupScale:first-child,
-.FA .ButtonGroupScale:first-child {
-	border-left: 1px solid #c1dee1;
+.AR,
+.FA {
+	.ButtonGroupScale {
+		&:first-child {
+			border-left: 0;
+			border-left: 1px solid $light-grey;
+		}
+	}
 }

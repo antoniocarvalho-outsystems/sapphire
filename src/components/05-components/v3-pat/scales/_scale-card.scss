@@ -1,0 +1,62 @@
+.ScaleCard {
+	align-items: center;
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: $dark-grey;
+	cursor: pointer;
+	display: flex;
+	font-family: $font-family-latin-bold;
+	font-size: 1em;
+	justify-content: center;
+	line-height: 18px;
+	min-height: 80px;
+	padding: 0 10px;
+	text-align: center;
+	width: 180px;
+
+	&.active {
+		background-color: $regular-eta;
+		border: 1px solid $regular-alpha;
+		color: $regular-beta;
+
+		&.disabled {
+			background-color: $body-color;
+			border: 1px solid $dark-grey;
+			color: $dark-grey;
+			pointer-events: none;
+		}
+	}
+
+	&.inactive {
+		color: $mid-dark-grey;
+	}
+
+	&.disabled {
+		background-color: $body-color;
+		border: none;
+		color: $mid-light-grey;
+		cursor: default;
+	}
+
+	&.Transparent {
+		background-color: transparent;
+		border: 0;
+		cursor: none;
+		height: 100%;
+		min-height: auto;
+		padding: 10px;
+		pointer-events: none;
+	}
+
+	.Box {
+		background-color: transparent;
+		margin: 0;
+		padding: 0;
+	}
+
+	input[type='radio'] {
+		display: none;
+	}
+}

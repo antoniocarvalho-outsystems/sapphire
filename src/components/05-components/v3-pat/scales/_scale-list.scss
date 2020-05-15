@@ -46,9 +46,9 @@
 		}
 
 		&.isTitle .ButtonGroupScale {
-			color: #3c4a53;
-			font-size: 14px;
-			font-weight: 600;
+			color: $dark-grey;
+			font-family: $font-family-latin-bold;
+			font-size: 1em;
 			text-align: center;
 		}
 
@@ -69,8 +69,8 @@
 
 	&.isSubtotal .ButtonGroupScale {
 		align-self: center;
-		font-size: 14px;
-		font-weight: bold;
+		font-family: $font-family-latin-bold;
+		font-size: 1em;
 		text-align: center;
 	}
 
@@ -78,8 +78,8 @@
 		align-self: center;
 		flex: 1;
 		flex-basis: 40%;
-		font-size: 14px;
-		font-weight: bold;
+		font-family: $font-family-latin-bold;
+		font-size: 1em;
 		text-align: left;
 
 		&:empty + .ScaleList_scaleContent {
