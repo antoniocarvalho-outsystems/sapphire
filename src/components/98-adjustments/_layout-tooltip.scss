@@ -1,0 +1,8 @@
+.ResizeParentIframe {
+	// Small results height
+	.select2-container .select2-results {
+		.select2-results__options {
+			max-height: 150px;
+		}
+	}
+}
