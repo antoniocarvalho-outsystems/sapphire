@@ -82,6 +82,25 @@ div.Toolbar {
 			a:focus .MenuItemWrapper {
 				border: 1px solid $mid-light-grey;
 			}
+
+			a[disabled] {
+				cursor: not-allowed;
+
+				&:focus .MenuItemWrapper {
+					border-color: transparent;
+				}
+
+				.MenuItemWrapper {
+					&:hover {
+						background-color: transparent;
+						border-bottom-color: transparent !important;
+					}
+
+					&_Container {
+						color: $light-grey;
+					}
+				}
+			}
 		}
 	}
 

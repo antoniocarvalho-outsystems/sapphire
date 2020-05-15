@@ -16527,297 +16527,297 @@ a.Button.Icon:hover {
 /* 9.76 Sapphire Patterns > Draggable > DraggableLines *********/
 /*-------------------------------------------------------------------------------------*/
 
-.WhiteB {
-  background-color: #fff;
-}
+// .WhiteB {
+//   background-color: #fff;
+// }
 
-.AppLine {
-  background-color: white;
-  border: 1px solid #d2d1d0;
-  border-bottom: 1px solid #c4c2c0;
-  border-top: 1px solid #d2d1d0;
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-  font-family: 'globeregular';
-  font-size: 13px;
-  position: relative;
-}
+// .AppLine {
+//   background-color: white;
+//   border: 1px solid #d2d1d0;
+//   border-bottom: 1px solid #c4c2c0;
+//   border-top: 1px solid #d2d1d0;
+//   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+//   -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+//   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+//   font-family: 'globeregular';
+//   font-size: 13px;
+//   position: relative;
+// }
 
-.AppLine:hover {
-  background-color: #d2d1d0;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-}
+// .AppLine:hover {
+//   background-color: #d2d1d0;
+//   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+//   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+//   position: relative;
+//   z-index: 1;
+// }
 
-.AppLine:hover .DragLine .HeadActions,
-.AppLine:hover .Dragline .AppStatus,
-.AppLine:hover .DragLine .AppInfo {
-  background-color: #fff;
-}
+// .AppLine:hover .DragLine .HeadActions,
+// .AppLine:hover .Dragline .AppStatus,
+// .AppLine:hover .DragLine .AppInfo {
+//   background-color: #fff;
+// }
 
-.AppLine .AppInfo {
-  padding: 5px 5px 5px 10px;
-}
+// .AppLine .AppInfo {
+//   padding: 5px 5px 5px 10px;
+// }
 
-.FA .AppLine .AppInfo,
-.AR .AppLine .AppInfo {
-  padding-left: 5px;
-  padding-right: 10px;
-}
+// .FA .AppLine .AppInfo,
+// .AR .AppLine .AppInfo {
+//   padding-left: 5px;
+//   padding-right: 10px;
+// }
 
-.AppLine .AppStatus {
-  padding: 5px 10px 5px 5px;
-}
+// .AppLine .AppStatus {
+//   padding: 5px 10px 5px 5px;
+// }
 
-.AppLine .AppStatus,
-.HeadActions.WhiteB {
-  width: 10%;
-}
+// .AppLine .AppStatus,
+// .HeadActions.WhiteB {
+//   width: 10%;
+// }
 
-.FA .AppLine .AppStatus,
-.AR .AppLine .AppStatus {
-  padding-left: 10px;
-  padding-right: 5px;
-}
+// .FA .AppLine .AppStatus,
+// .AR .AppLine .AppStatus {
+//   padding-left: 10px;
+//   padding-right: 5px;
+// }
 
-.WhiteB {
-  background-color: white;
-}
+// .WhiteB {
+//   background-color: white;
+// }
 
-.DragLine .AppDate {
-  color: #333;
-  width: 100%;
-}
+// .DragLine .AppDate {
+//   color: #333;
+//   width: 100%;
+// }
 
-.AppDate .DoubleText div {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 110px;
-}
+// .AppDate .DoubleText div {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   width: 110px;
+// }
 
 /***/
 
-.AppLine .DragLine {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  display: table;
-  line-height: 48px;
-  position: relative;
-  width: 100%;
-}
+// .AppLine .DragLine {
+//   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+//   display: table;
+//   line-height: 48px;
+//   position: relative;
+//   width: 100%;
+// }
 
-.AppLine .DragLine .HeadActions {
-  font-size: 12px;
-  line-height: 100%;
-  text-align: right;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: 1%;
-}
+// .AppLine .DragLine .HeadActions {
+//   font-size: 12px;
+//   line-height: 100%;
+//   text-align: right;
+//   vertical-align: middle;
+//   white-space: nowrap;
+//   width: 1%;
+// }
 
-.FA .AppLine .DragLine .HeadActions,
-.AR .AppLine .DragLine .HeadActions {
-  text-align: left;
-}
+// .FA .AppLine .DragLine .HeadActions,
+// .AR .AppLine .DragLine .HeadActions {
+//   text-align: left;
+// }
 
-.AppLine .DragLine>a:first-child {
-  border-left: none;
-  padding-left: 0;
-}
+// .AppLine .DragLine>a:first-child {
+//   border-left: none;
+//   padding-left: 0;
+// }
 
-.AppLine .DragLine .HeadActions>a img {
-  display: block;
-  height: auto;
-  margin: 0 auto 5px;
-  width: 16px;
-}
+// .AppLine .DragLine .HeadActions>a img {
+//   display: block;
+//   height: auto;
+//   margin: 0 auto 5px;
+//   width: 16px;
+// }
 
-.AppLine .DragLine .HeadActions>a,
-.AppLine .DragLine .HeadActions>a:link .AppLine .DragLine .HeadActions>a:visited {
-  color: #262525;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-}
+// .AppLine .DragLine .HeadActions>a,
+// .AppLine .DragLine .HeadActions>a:link .AppLine .DragLine .HeadActions>a:visited {
+//   color: #262525;
+//   display: inline-block;
+//   text-align: center;
+//   text-decoration: none;
+//   vertical-align: middle;
+// }
 
-.AppLine .MoveLine {
-  color: #abc1cc;
-  cursor: move;
-  font-size: 12px;
-  width: 20px;
-}
+// .AppLine .MoveLine {
+//   color: #abc1cc;
+//   cursor: move;
+//   font-size: 12px;
+//   width: 20px;
+// }
 
-.AppLine .MoveLine>.icon {
-  font-size: 44px;
-  line-height: 64px;
-}
+// .AppLine .MoveLine>.icon {
+//   font-size: 44px;
+//   line-height: 64px;
+// }
 
-.AppLine .DragLine>div:first-of-type>div {
-  display: table-cell;
-  line-height: 100%;
-  vertical-align: middle;
-}
+// .AppLine .DragLine>div:first-of-type>div {
+//   display: table-cell;
+//   line-height: 100%;
+//   vertical-align: middle;
+// }
 
-.AppLine .DragLine>div {
-  display: table-cell;
-  vertical-align: middle;
-}
+// .AppLine .DragLine>div {
+//   display: table-cell;
+//   vertical-align: middle;
+// }
 
-.AppLine .DragLine>div:not(:first-of-type) {
-  line-height: 100%;
-  padding: 5px 10px;
-}
+// .AppLine .DragLine>div:not(:first-of-type) {
+//   line-height: 100%;
+//   padding: 5px 10px;
+// }
 
-.AppLine .DragLine>div:last-of-type {
-  line-height: 100%;
-  padding: 0;
-}
+// .AppLine .DragLine>div:last-of-type {
+//   line-height: 100%;
+//   padding: 0;
+// }
 
 /*Fix link to refresh Content*/
-.AppLine .DragLine .HeadActions {
-  line-height: 100%;
-}
+// .AppLine .DragLine .HeadActions {
+//   line-height: 100%;
+// }
 
-.AppLine .DragLine>div:not(:first-of-type).HeadActions a {
-  padding: 17px;
-  padding-bottom: 28px;
-}
+// .AppLine .DragLine>div:not(:first-of-type).HeadActions a {
+//   padding: 17px;
+//   padding-bottom: 28px;
+// }
 
-.AppLine .DragLine>div:first-of-type {
-  background-color: #f2f5f6;
-  vertical-align: middle;
-  width: 200px;
-}
+// .AppLine .DragLine>div:first-of-type {
+//   background-color: #f2f5f6;
+//   vertical-align: middle;
+//   width: 200px;
+// }
 
-.AppLine .LineLines {
-  background: #e1e6e9;
-  box-shadow: 1px 3px 0 rgba(0, 0, 0, 0.1);
-  height: 100%;
-  padding: 0 10px;
-}
+// .AppLine .LineLines {
+//   background: #e1e6e9;
+//   box-shadow: 1px 3px 0 rgba(0, 0, 0, 0.1);
+//   height: 100%;
+//   padding: 0 10px;
+// }
 
 /*
 .AppLine .LineLines a:not(.Button){
     color: #262525;
 }*/
 
-.AppLine .Draggable {
-  background-color: #f2f5f6;
-  border-bottom: none;
-}
+// .AppLine .Draggable {
+//   background-color: #f2f5f6;
+//   border-bottom: none;
+// }
 
-.AppLine .DragLine>div:first-of-type>div:first-of-type {
-  display: table;
-  margin: 0;
-  min-height: 64px;
-  padding: 0;
-  vertical-align: middle;
-  width: auto;
-}
+// .AppLine .DragLine>div:first-of-type>div:first-of-type {
+//   display: table;
+//   margin: 0;
+//   min-height: 64px;
+//   padding: 0;
+//   vertical-align: middle;
+//   width: auto;
+// }
 
-.SurgeriesContainer .AppLine .DragLine>div:first-of-type>div:first-of-type {
-  min-height: 53px;
-}
+// .SurgeriesContainer .AppLine .DragLine>div:first-of-type>div:first-of-type {
+//   min-height: 53px;
+// }
 
-.AppLine .DragLine .MoveLine {
-  display: table;
-  width: 100%;
-}
+// .AppLine .DragLine .MoveLine {
+//   display: table;
+//   width: 100%;
+// }
 
-.AppLine .AppDate {
-  display: table-cell;
-  vertical-align: middle;
-}
+// .AppLine .AppDate {
+//   display: table-cell;
+//   vertical-align: middle;
+// }
 
 /*caj: avoid double border in lists*/
-.SurgeriesContainer .ListRecords .AppLine {
-  border-bottom: none;
-}
+// .SurgeriesContainer .ListRecords .AppLine {
+//   border-bottom: none;
+// }
 
 /******* DragDrop ********/
 
-.DragBox.Moving {
-  opacity: 0.25;
-}
+// .DragBox.Moving {
+//   opacity: 0.25;
+// }
 
-.DashboardWindow.Over {
-  border: 2px dashed #000;
-}
+// .DashboardWindow.Over {
+//   border: 2px dashed #000;
+// }
 
-.DragBox.Over .dropTop,
-.DragBox.OverBottom .dropBottom {
-  border: 2px solid #0d4965;
-  border-radius: 5px;
-  padding: 0;
-}
+// .DragBox.Over .dropTop,
+// .DragBox.OverBottom .dropBottom {
+//   border: 2px solid #0d4965;
+//   border-radius: 5px;
+//   padding: 0;
+// }
 
-.DragBox.Over .dropTop {
-  margin: 0 0 2px 0;
-}
+// .DragBox.Over .dropTop {
+//   margin: 0 0 2px 0;
+// }
 
-.DragBox.OverBottom .dropBottom {
-  margin: 2px 0 0 0;
-}
+// .DragBox.OverBottom .dropBottom {
+//   margin: 2px 0 0 0;
+// }
 
-.dropTop {
-  line-height: 0;
-  padding: 0;
-}
+// .dropTop {
+//   line-height: 0;
+//   padding: 0;
+// }
 
-.dropBottom {
-  line-height: 0;
-  padding: 0;
-}
+// .dropBottom {
+//   line-height: 0;
+//   padding: 0;
+// }
 
-.AppDate .MultiMarginLeft5 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 110px;
-}
+// .AppDate .MultiMarginLeft5 {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   width: 110px;
+// }
 
 /*Responsive*/
-.tablet.portrait .AppLine .DragLine>div:first-of-type,
-.phone .AppLine .DragLine>div:first-of-type,
-.phone .DragLine>div:not(:first-child),
-.tablet.portrait .DragLine>div:not(:first-child) {
-  display: block;
-  width: 100%;
-}
+// .tablet.portrait .AppLine .DragLine>div:first-of-type,
+// .phone .AppLine .DragLine>div:first-of-type,
+// .phone .DragLine>div:not(:first-child),
+// .tablet.portrait .DragLine>div:not(:first-child) {
+//   display: block;
+//   width: 100%;
+// }
 
-.tablet .DragLine .AppInfo.WhiteB .Column,
-.phone .DragLine .AppInfo.WhiteB .Column,
-.phone .DragLine .AppInfo.WhiteB>div,
-.tablet.portrait .DragLine .AppInfo.WhiteB>div {
-  display: block;
-  padding: 10px 0;
-  width: 100%;
-}
+// .tablet .DragLine .AppInfo.WhiteB .Column,
+// .phone .DragLine .AppInfo.WhiteB .Column,
+// .phone .DragLine .AppInfo.WhiteB>div,
+// .tablet.portrait .DragLine .AppInfo.WhiteB>div {
+//   display: block;
+//   padding: 10px 0;
+//   width: 100%;
+// }
 
-.phone .DragLine .AppStatus.WhiteB,
-.phone .DragLine .HeadActions.WhiteB,
-.tablet.portrait .DragLine .AppStatus.WhiteB,
-.tablet.portrait .DragLine .HeadActions.WhiteB {
-  margin: 0;
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
-}
+// .phone .DragLine .AppStatus.WhiteB,
+// .phone .DragLine .HeadActions.WhiteB,
+// .tablet.portrait .DragLine .AppStatus.WhiteB,
+// .tablet.portrait .DragLine .HeadActions.WhiteB {
+//   margin: 0;
+//   padding: 10px 0;
+//   text-align: center;
+//   width: 100%;
+// }
 
-.tablet .AppLine .AppInfo.WhiteB .Columns4 .Column.empty,
-.phone .AppLine .AppInfo.WhiteB .Columns4 .Column.empty {
-  display: none;
-}
+// .tablet .AppLine .AppInfo.WhiteB .Columns4 .Column.empty,
+// .phone .AppLine .AppInfo.WhiteB .Columns4 .Column.empty {
+//   display: none;
+// }
 
-.phone .AppLine .DragLine>div:not(:first-of-type),
-.tablet .AppLine .DragLine>div:not(:first-of-type) {
-  padding: 10px;
-}
+// .phone .AppLine .DragLine>div:not(:first-of-type),
+// .tablet .AppLine .DragLine>div:not(:first-of-type) {
+//   padding: 10px;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.77 Sapphire Patterns > FileManipulation > MultipleFileUpload  *********/

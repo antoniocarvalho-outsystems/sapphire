@@ -1,0 +1,201 @@
+.AppLine {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	font-size: 1em;
+	position: relative;
+
+	.WhiteB {
+		background-color: $regular-white;
+	}
+
+	.AppInfo {
+		padding: 5px 5px 5px 10px;
+	}
+
+	.AppStatus {
+		padding: 5px 10px 5px 5px;
+		width: 10%;
+	}
+
+	.AppDate {
+		display: table-cell;
+		vertical-align: middle;
+
+		.DoubleText div {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 110px;
+		}
+	}
+
+	.HeadActions {
+		&.WhiteB {
+			width: 10%;
+		}
+	}
+
+	.DragLine {
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		display: table;
+		line-height: 48px;
+		position: relative;
+		width: 100%;
+
+		> a:first-child {
+			border-left: none;
+			padding-left: 0;
+		}
+
+		> div {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		> div:first-of-type > div {
+			display: table-cell;
+			line-height: 100%;
+			vertical-align: middle;
+		}
+
+		> div:not(:first-of-type) {
+			line-height: 100%;
+			padding: 5px 10px;
+		}
+
+		> div:last-of-type {
+			line-height: 100%;
+			padding: 0;
+		}
+
+		> div:not(:first-of-type).HeadActions a {
+			padding: 17px;
+			padding-bottom: 28px;
+		}
+
+		> div:first-of-type {
+			background-color: $light-blue-2;
+			min-width: 200px;
+			vertical-align: middle;
+			width: 200px;
+		}
+
+		> div:first-of-type > div:first-of-type {
+			display: table;
+			margin: 0;
+			min-height: 64px;
+			padding: 0;
+			vertical-align: middle;
+			width: auto;
+		}
+
+		.AppDate {
+			color: $dark-grey;
+			width: 100%;
+		}
+
+		.HeadActions {
+			font-size: 0.857em;
+			line-height: 100%;
+			text-align: right;
+			vertical-align: middle;
+			white-space: nowrap;
+			width: 1%;
+
+			> a {
+				display: inline-block;
+				text-align: center;
+				text-decoration: none;
+				vertical-align: middle;
+			}
+
+			> a img {
+				display: block;
+				height: auto;
+				margin: 0 auto 5px;
+				width: 16px;
+			}
+		}
+
+		.MoveLine {
+			display: table;
+			width: 100%;
+		}
+	}
+
+	.MoveLine {
+		color: $mid-light-grey;
+		cursor: move;
+		font-size: 0.857em;
+		width: 20px;
+
+		> .icon {
+			font-size: 44px;
+			line-height: 64px;
+		}
+	}
+
+	.LineLines {
+		background: $body-color;
+		box-shadow: 1px 3px 0 rgba(0, 0, 0, 0.1);
+		height: 100%;
+		padding: 0 10px;
+	}
+
+	.Draggable {
+		background-color: $light-blue-2;
+		border-bottom: none;
+	}
+
+	.DragBox {
+		&.Moving {
+			opacity: 0.25;
+		}
+
+		&.Over .dropTop,
+		&.OverBottom .dropBottom {
+			border: 2px solid #0d4965;
+			border-radius: 5px;
+			padding: 0;
+		}
+
+		&.Over .dropTop {
+			margin: 0 0 2px 0;
+		}
+
+		&.OverBottom .dropBottom {
+			margin: 2px 0 0 0;
+		}
+
+		.dropTop {
+			line-height: 0;
+			padding: 0;
+		}
+
+		.dropBottom {
+			line-height: 0;
+			padding: 0;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.AppLine {
+		.AppInfo {
+			padding-left: 5px;
+			padding-right: 10px;
+		}
+
+		.AppStatus {
+			padding-left: 10px;
+			padding-right: 5px;
+		}
+
+		.DragLine {
+			.HeadActions {
+				text-align: left;
+			}
+		}
+	}
+}
