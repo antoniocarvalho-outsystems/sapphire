@@ -60,10 +60,13 @@
 		}
 
 		&.MediumPadding {
-			.PersonCard__actions,
 			.PersonCard__content,
 			.PersonCard__headerLeftInfo {
 				padding: 10px;
+			}
+
+			.PersonCard__actions {
+				padding: 12px 10px;
 			}
 		}
 

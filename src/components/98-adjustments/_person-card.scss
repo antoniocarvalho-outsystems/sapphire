@@ -9,6 +9,15 @@
 			flex: 4;
 		}
 	}
+
+	&____title {
+		a .CircledPatient {
+			height: 32px;
+			margin-top: 4px;
+			padding: 5px 0px;
+			width: 32px;
+		}
+	}
 }
 
 .PersonCard + .ListRecords {

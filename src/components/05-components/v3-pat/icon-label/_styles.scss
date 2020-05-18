@@ -101,6 +101,7 @@ $IconLabel-color-text: $dark-grey;
 
 .iconHorizontal {
 	@include common-icons-second-style;
+	@include flex-center-vertically();
 
 	font-size: 1em;
 
