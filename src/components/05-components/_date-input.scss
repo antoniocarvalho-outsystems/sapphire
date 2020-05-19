@@ -1,9 +1,22 @@
 .DateInput_Container {
 	position: relative;
 
-	input:disabled,
-	input[readonly='readonly'] {
+	input:disabled {
 		pointer-events: none;
+	}
+
+	input[readonly='readonly'] {
+		background-color: $regular-white;
+		cursor: default;
+
+		&:hover {
+			background-color: $regular-eta;
+			cursor: default;
+		}
+
+		&:focus {
+			background-color: $regular-white;
+		}
 	}
 }
 
