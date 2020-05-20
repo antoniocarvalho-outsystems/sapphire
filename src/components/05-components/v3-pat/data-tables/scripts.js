@@ -1,39 +1,34 @@
-(function () {
+(function() {
+	class DataTables {
+		constructor(config) {
+			this.config = config;
+			this.$widget = $(`#${config.widgetId}`);
+			this.$table = this.$widget.find('table');
+			this.$table.addClass('cell-border compact');
+			this.onInit();
+		}
 
-  class DataTables {
+		onInit() {
+			this.options = {
+				...this.config,
+				fixedColumns: true,
+				info: false,
+				ordering: false,
+				paging: false,
+				scrollCollapse: true,
+				scrollX: true,
+				searching: false,
+			};
 
-    constructor(config) {
-      this.config = config;
-      this.$widget = $(`#${config.widgetId}`);
-      this.$table = this.$widget.find('table');
-      this.$table.addClass(config.baseStyle);
-      this.onInit();
-    }
+			$(() => {
+				this.$table.DataTable(this.options);
+			});
+		}
+	}
 
-    onInit() {
+	const create = config => (window[config.widgetId] = new DataTables(config));
 
-      this.options = {
-        ...this.config,
-        fixedColumns: true,
-        info: false,
-        ordering: false,
-        paging: false,
-        scrollCollapse: true,
-        scrollX: true,
-        searching: false,
-      }
-
-      $(() => {
-        this.$table.DataTable(this.options);
-      });
-    }
-
-  }
-
-  const create = config => (window[config.widgetId] = new DataTables(config));
-
-  SapphireWidgets.DataTables = {
-    create
-  };
-
+	SapphireWidgets.DataTables = {
+		create,
+	};
 })();
