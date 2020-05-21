@@ -1,0 +1,73 @@
+.PatientSummary {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 2px;
+	margin-left: -16px;
+	padding: 18px;
+
+	div.ClinicianSecondarySummary {
+		&_icon {
+			color: $light-grey;
+			font-size: 1.143em;
+			margin-right: 18px;
+		}
+
+		&_title {
+			color: $mid-dark-grey;
+			font-size: 1.143em;
+			margin: 0;
+		}
+
+		&_content {
+			padding: 0;
+		}
+	}
+
+	div.SectionExpandable {
+		border: none;
+
+		&_header {
+			border-bottom: 1px solid $regular-alpha;
+			border-top: none;
+			cursor: default;
+			margin-bottom: 24px;
+			padding: 5px 0;
+		}
+
+		&__title {
+			@include flex-center-vertically();
+		}
+
+		&_content {
+			.FormField .FormField-caption:empty {
+				display: none;
+			}
+		}
+	}
+
+	.Columns3 > .Column {
+		padding: 0 20px;
+
+		&.ColFirst {
+			padding-left: 0;
+			padding-right: 20px;
+		}
+
+		&.ColLast {
+			padding-left: 20px;
+			padding-right: 0;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.PatientSummary {
+		div.ClinicianSecondarySummary {
+			&_icon {
+				margin-left: 20px;
+				margin-right: 0;
+			}
+		}
+	}
+}
