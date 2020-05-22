@@ -1,10 +1,11 @@
 .Page .LineTimeLine {
+	background-color: $regular-white;
 	border: 1px solid $light-grey;
 	border-bottom: none;
 	border-radius: 2px;
 
 	&_header {
-		background: $sapphire-light;
+		background-color: $body-color;
 		border-bottom: 1px solid $light-grey;
 		color: $dark-grey;
 	}
@@ -30,6 +31,8 @@
 			}
 
 			&__Content {
+				@include component-scroll-root();
+
 				border-bottom: 1px solid $light-grey;
 				margin: 0;
 			}
@@ -40,7 +43,7 @@
 
 			&__Link {
 				font-size: 1.429em;
-				margin-left: 68px;
+				margin-left: 70px;
 			}
 		}
 
@@ -68,7 +71,7 @@
 
 	&__row {
 		display: flex;
-		height: 80px;
+		min-height: 80px;
 		position: relative;
 	}
 
@@ -94,7 +97,7 @@
 
 	&___day_month {
 		display: flex;
-		font-size: 16px;
+		font-size: 20px;
 		justify-content: center;
 		width: 100%;
 	}
@@ -115,7 +118,7 @@
 	}
 
 	&____day {
-		margin-right: 8px;
+		margin-right: 3px;
 	}
 
 	&____month {
@@ -131,7 +134,13 @@
 		font-family: $font-family-latin-bold;
 		font-size: 1.429em;
 		line-height: 1.429em;
+		max-width: 250px;
 		padding: 0 15px;
+
+		> div {
+			display: flex;
+			flex-wrap: wrap;
+		}
 	}
 }
 
