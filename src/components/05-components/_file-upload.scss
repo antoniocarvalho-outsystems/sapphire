@@ -25,7 +25,7 @@
 
 	&_Button {
 		.Button {
-			@extend a.Button;
+			@extend a.Button.Second;
 			@extend .Plus;
 
 			&:before {
