@@ -30,6 +30,27 @@
 	}
 }
 
+.tablet,
+.desktop.small {
+	.LineTimeLine {
+		.TimelineDescription {
+			@include flex-center-vertically();
+
+			&_title {
+				&:empty {
+					margin-left: -5px;
+				}
+			}
+
+			&_description {
+				margin-left: 5px;
+				margin-right: 5px;
+				margin-top: 0;
+			}
+		}
+	}
+}
+
 .AR,
 .FA {
 	&.phone,
