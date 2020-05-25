@@ -6,14 +6,13 @@
 .DesignSystem .WizardStep,
 .LayoutBlank .WizardStep,
 .LayoutBase .WizardStep {
-	color: $light-grey;
+	color: $regular-beta;
 	display: table-cell;
 	font-family: $font-family-latin-bold;
 	font-size: 1em;
 	width: 1%;
 
 	.IconWizard {
-		//background-color: $light-grey;
 		border: 1px solid $light-grey;
 		color: $light-grey;
 	}
@@ -33,23 +32,14 @@
 		border: 0 !important;
 	}
 
-	&.Past {
-		background-color: transparent;
+	&.ActiveStep {
+		background-color: $regular-zeta;
 		color: $regular-beta;
-	}
-
-	&.ActiveStep {
-		background-color: $regular-alpha;
-		color: $regular-white;
-	}
-
-	//&.Past,
-	&.ActiveStep {
 		font-weight: inherit;
 
 		&:before {
-			border-bottom-color: $regular-alpha;
-			border-top-color: $regular-alpha;
+			border-bottom-color: $regular-zeta;
+			border-top-color: $regular-zeta;
 		}
 
 		a,
@@ -60,18 +50,24 @@
 			font-family: inherit;
 		}
 
-		.IconWizard {
+		.IconWizard.IconWizardWhite {
 			background-color: $regular-white;
 			border: 1px solid $regular-white;
 			color: $regular-beta;
 		}
 	}
 
-	&.Past,
-	&.ActiveStep {
+	&.Past {
+		background-color: $body-color;
+
+		&:before {
+			border-bottom-color: $body-color;
+			border-top-color: $body-color;
+		}
+
 		.IconWizard.IconWizardWhite {
 			background-color: $regular-white;
-			border: 1px solid $regular-beta;
+			border: 1px solid transparent;
 			color: $regular-beta;
 		}
 	}
@@ -86,7 +82,7 @@
 	}
 
 	a {
-		color: $light-grey;
+		color: inherit;
 		font-family: inherit;
 	}
 
@@ -109,7 +105,7 @@
 	margin-right: 5px;
 	text-align: center;
 	vertical-align: middle;
-	width: 21px;
+	width: 20px;
 
 	&.IconWizardWhite {
 		background-color: $regular-white;
@@ -120,7 +116,6 @@
 
 .AR,
 .FA {
-
 	.DesignSystem .WizardStep,
 	.LayoutBlank .WizardStep,
 	.LayoutBase .WizardStep {
