@@ -51,6 +51,20 @@
 			@include arrow-down-simple;
 		}
 	}
+
+	.RequestFile {
+		.IconVertical {
+			min-width: 25px;
+
+			.iconVertical_icon {
+				margin-bottom: 0;
+			}
+
+			.iconVertical_label {
+				display: none;
+			}
+		}
+	}
 }
 
 .MFile {
