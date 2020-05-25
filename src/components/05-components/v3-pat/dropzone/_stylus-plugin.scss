@@ -245,7 +245,7 @@
 
 .ListRecords .dropzone {
 	line-height: 53px;
-	min-height: 53px;
+	min-height: 45px;
 	padding-top: 0;
 }
 
@@ -804,7 +804,7 @@
 }
 
 .UploadMessageClass {
-	bottom: 10px;
+	bottom: 2px;
 	color: $regular-beta;
 	cursor: pointer;
 	font-family: $font-family-latin-bold;
