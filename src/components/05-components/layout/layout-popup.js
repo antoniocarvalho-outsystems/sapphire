@@ -1,5 +1,5 @@
 /* Component LayoutPopup */
-(function ($, window, document, SapphireWidgets) {
+(function($, window, document, SapphireWidgets) {
 	var popupWidth;
 	var popupMinWidth;
 	var popupHeight;
@@ -14,64 +14,72 @@
 	var $overlay = window.parent.$('.os-internal-ui-widget-overlay');
 	var popupSize;
 
-	const create = function (config) {
-
+	const create = function(config) {
 		SapphireWidgets.LayoutPopup.config = config;
 		popupSize = SapphireWidgets.LayoutPopup.config.PopupSize;
 
-		$(function () {
+		$(function() {
 			$('body').addClass('LayoutPopup'); // because datetimerangepicker is attached to body
+
 			if (SapphireWidgets.LayoutPopup.config.isTouch) {
 				$popup.addClass('isTouch');
 				$('body').addClass('isTouch'); // because select2 is attached to body
 			}
-			var observer = new MutationObserver(function (mutations) {
-				mutations.forEach(function (mutation, index) {
+
+			var observer = new MutationObserver(function(mutations) {
+				mutations.forEach(function(mutation, index) {
 					redrawDialogWindow();
 				});
 			});
+
 			observer.observe(document.body, {
 				childList: true,
 				subtree: true,
 				attributes: false,
 			});
+
 			$('body').css('visibility', 'hidden');
 		});
 
-		$(window).load(function () {
+		$(window).load(function() {
 			$(this.frameElement).css({
 				width: '100%',
-				height: '100%'
+				height: '100%',
 			});
-			setTimeout(function () {
+
+			setTimeout(function() {
 				resizeDialog();
 				resizeContent();
 				$('body').css('visibility', 'visible');
 			}, 150);
+
 			osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.LayoutPopup.redrawDialogWindow);
 		});
 
-		$(window.parent).off('resize.LayoutPopup').on('resize.LayoutPopup', function () {
-			redrawDialogWindow();
-		});
+		$(window.parent)
+			.off('resize.LayoutPopup')
+			.on('resize.LayoutPopup', function() {
+				redrawDialogWindow();
+			});
 	};
 
-	const redrawDialogWindow = function () {
+	const redrawDialogWindow = function() {
 		clearTimeout(layoutPopupResizeTimer);
-		layoutPopupResizeTimer = setTimeout(function () {
+		layoutPopupResizeTimer = setTimeout(function() {
 			resizeDialog();
 			resizeContent();
+			$('body').css('visibility', 'visible');
 		}, 300);
 	};
 
-	const resizeDialog = function () {
+	const resizeDialog = function() {
 		if (SapphireWidgets.LayoutPopup.config.hasClose) {
 			window.parent.$('.os-internal-ui-dialog-titlebar').show();
 		}
 
 		if (window.top.$('body').hasClass('LayoutBase')) {
 			window.top.$('body').css({
-				overflowY: 'hidden'
+				overflowY: 'hidden',
 			});
 		}
 
@@ -102,9 +110,13 @@
 					popupWidthPercentage = 0.7;
 			}
 
-			popupWidth = SapphireWidgets.LayoutPopup.config.isTouch ? parseInt(windowWidth * 0.8) : parseInt(windowWidth * popupWidthPercentage);
+			popupWidth = SapphireWidgets.LayoutPopup.config.isTouch
+				? parseInt(windowWidth * 0.8)
+				: parseInt(windowWidth * popupWidthPercentage);
 			popupMinHeight = 200;
-			popupMaxHeight = SapphireWidgets.LayoutPopup.config.isTouch ? parseInt(windowHeight * 0.9) : parseInt(windowHeight * 0.7);
+			popupMaxHeight = SapphireWidgets.LayoutPopup.config.isTouch
+				? parseInt(windowHeight * 0.9)
+				: parseInt(windowHeight * 0.7);
 
 			if (SapphireWidgets.LayoutPopup.config.isFixedHeight) {
 				popupHeight = popupMaxHeight;
@@ -133,7 +145,7 @@
 		});
 	};
 
-	const resizeContent = function () {
+	const resizeContent = function() {
 		var $body = $('.LayoutPopup__body__content');
 		var contentScrollTop = $body.scrollTop();
 
@@ -141,7 +153,7 @@
 			// skip the reset of .LayoutPopup__body__content
 		} else {
 			$body.css({
-				height: 'auto'
+				height: 'auto',
 			});
 		}
 
@@ -194,15 +206,15 @@
 		$body.scrollTop(contentScrollTop);
 	};
 
-	const increaseHeight = function (diference) {
+	const increaseHeight = function(diference) {
 		$osPopupContent.height($osPopupContent.height() + diference);
 	};
 
-	const scrollToElement = function ($element) {
+	const scrollToElement = function($element) {
 		var $targetElement = $element;
 		if (!!$targetElement.length) {
 			var scrollToOffsetInterval;
-			scrollToOffsetInterval = setInterval(function () {
+			scrollToOffsetInterval = setInterval(function() {
 				clearInterval(scrollToOffsetInterval);
 				var headerHeight = $('.LayoutPopup__header').outerHeight(true) || 0;
 				var introHeight = $('.LayoutPopup__intro').outerHeight(true) || 0;
@@ -211,7 +223,7 @@
 				$('.LayoutPopup__body__content').scrollTop(targetElementOffsetTop);
 			}, 250);
 		}
-	}
+	};
 
 	SapphireWidgets.LayoutPopup = {
 		create,
@@ -219,15 +231,14 @@
 		resizeContent,
 		increaseHeight,
 		redrawDialogWindow,
-		scrollToElement
+		scrollToElement,
 	};
-
 })(jQuery, window, document, SapphireWidgets);
 
-$(window).unload(function () {
+$(window).unload(function() {
 	if (!!$('.LayoutPopup').length) {
 		window.top.$('body').css({
-			overflowY: 'scroll'
+			overflowY: 'scroll',
 		});
 	}
 });
