@@ -25,14 +25,19 @@
 
 	&_Button {
 		.Button {
-			@extend a.Button;
-			@extend .Plus;
-
-			&.Is_Default {
-				@extend a.Button.Second;
-			}
+			background-color: $mid-dark-grey;
+			border: 1px solid transparent;
+			border-radius: 1.286em;
+			display: flex;
+			font-family: $font-family-latin-bold;
+			height: 2.571em;
+			line-height: 2.4em;
+			padding: 0 15px;
 
 			&:before {
+				content: '\e698';
+				font-family: $font-family-icons;
+				font-size: 24px;
 				margin-left: -6px;
 			}
 		}
