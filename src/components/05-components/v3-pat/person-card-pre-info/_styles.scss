@@ -1,0 +1,93 @@
+.PersonCardPreInfo {
+  background-color: $sapphire-white;
+  display: flex;
+  flex: auto;
+  flex-basis: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  >div {
+    color: $regular-grey;
+    flex-basis: 100%;
+    text-align: center;
+    width: 70px;
+  }
+
+  .PersonCardPreInfo_Time {
+    >div {
+      height: 100%;
+      padding: 10px;
+    }
+  }
+
+  .PersonCardPreInfo_Number {
+    >div {
+      height: 100%;
+      padding: 10px;
+    }
+
+    border-right: solid 1px $light-grey;
+    min-width: 46px;
+  }
+
+  .PersonCardPreInfo_info {
+    >div {
+      height: 100%;
+      padding: 10px;
+    }
+  }
+
+  div {
+    &:nth-child(5) {
+      max-width: 50px;
+
+      >div {
+        padding: 10px 0;
+      }
+    }
+
+    &:nth-child(6) {
+      max-width: 50px;
+
+      >div {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .PersonCardPreInfo_Time.MinWidth150 {
+    min-width: 150px;
+  }
+
+  .PersonCardPreInfo_Time.MinWidth200 {
+    min-width: 200px;
+  }
+
+  .PersonCardPreInfo_Time.MinWidth400 {
+    min-width: 400px;
+  }
+
+  .PersonCardPreInfo_Time.MinWidth600 {
+    min-width: 600px;
+  }
+}
+
+.tablet {
+  .PersonCardPreInfo {
+    .PersonCardPreInfo_Time.MinWidth150 {
+      min-width: auto;
+    }
+
+    .PersonCardPreInfo_Time.MinWidth200 {
+      min-width: auto;
+    }
+
+    .PersonCardPreInfo_Time.MinWidth400 {
+      min-width: auto;
+    }
+
+    .PersonCardPreInfo_Time.MinWidth600 {
+      min-width: auto;
+    }
+  }
+}
