@@ -25,6 +25,7 @@
 		}
 
 		&.IsExpandable {
+
 			.PersonCard__title,
 			.PersonCard__content,
 			.PersonCard__headerLeftInfo {
@@ -52,6 +53,7 @@
 		}
 
 		&.NonePadding {
+
 			.PersonCard__actions,
 			.PersonCard__content,
 			.PersonCard__headerLeftInfo {
@@ -60,6 +62,7 @@
 		}
 
 		&.MediumPadding {
+
 			.PersonCard__content,
 			.PersonCard__headerLeftInfo {
 				padding: 10px;
@@ -71,6 +74,7 @@
 		}
 
 		&.SmallPadding {
+
 			.PersonCard__actions,
 			.PersonCard__content,
 			.PersonCard__headerLeftInfo {
@@ -87,19 +91,25 @@
 			flex-wrap: nowrap;
 			padding: 10px;
 
-			&.MinWidthXSmall > div:first-of-type {
+			.Patient_Info {
+				>div {
+					width: 200px;
+				}
+			}
+
+			&.MinWidthXSmall>div:first-of-type {
 				min-width: 200px;
 			}
 
-			&.MinWidthSmall > div:first-of-type {
+			&.MinWidthSmall>div:first-of-type {
 				min-width: 400px;
 			}
 
-			&.MinWidthMedium > div:first-of-type {
+			&.MinWidthMedium>div:first-of-type {
 				min-width: 600px;
 			}
 
-			&.MinWidthLarge > div:first-of-type {
+			&.MinWidthLarge>div:first-of-type {
 				min-width: 800px;
 			}
 
@@ -141,7 +151,7 @@
 				max-width: 600px;
 			}
 
-			span > div {
+			span>div {
 				flex-basis: 100%;
 			}
 
@@ -296,14 +306,14 @@
 	}
 
 	&__content {
-		> div {
+		>div {
 			flex-basis: 100%;
 			padding-left: 10px;
 		}
 	}
 
 	&__title {
-		&:empty ~ .PersonCard__content > div {
+		&:empty~.PersonCard__content>div {
 			padding: 0;
 		}
 	}
@@ -330,15 +340,15 @@
 			flex-basis: 35%;
 		}
 
-		&:not(:empty) ~ .PersonCard__content {
+		&:not(:empty)~.PersonCard__content {
 			padding-left: 0;
 		}
 
-		&:not(:empty) ~ .PersonCard__actions {
+		&:not(:empty)~.PersonCard__actions {
 			flex-basis: 20%;
 		}
 
-		&:not(:empty) ~ .PersonCard__headerLeftInfo {
+		&:not(:empty)~.PersonCard__headerLeftInfo {
 			display: none;
 		}
 
@@ -348,7 +358,7 @@
 	}
 
 	&___icon {
-		&:not(:empty) + .PersonCard____title {
+		&:not(:empty)+.PersonCard____title {
 			margin-left: 10px;
 		}
 	}
@@ -389,8 +399,8 @@
 		display: flex;
 		flex-direction: column;
 
-		> .Description,
-		> .Small_Description {
+		>.Description,
+		>.Small_Description {
 			align-self: center;
 			flex: 1;
 		}
@@ -404,6 +414,7 @@
 .IsTransparent {
 	.PersonCard__headerLeftInfo {
 		.PersonCard____title a {
+
 			&,
 			&:hover {
 				color: $regular-beta;
@@ -448,7 +459,7 @@
 			}
 		}
 
-		&___icon:not(:empty) + .PersonCard____title {
+		&___icon:not(:empty)+.PersonCard____title {
 			margin-left: 0;
 			margin-right: 10px;
 		}
@@ -465,7 +476,7 @@
 		display: block;
 	}
 
-	.PersonCard___icon:not(:empty) + .PersonCard____title {
+	.PersonCard___icon:not(:empty)+.PersonCard____title {
 		margin: 0;
 	}
 }
