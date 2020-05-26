@@ -48,7 +48,6 @@
 	&.ExpandableRows {
 		border-collapse: collapse;
 
-		thead,
 		tbody {
 			background-color: $regular-white;
 		}
@@ -164,6 +163,11 @@
 			.TableRecords {
 				> tbody > tr:hover {
 					background: $regular-white;
+				}
+
+				thead,
+				tbody {
+					background-color: $regular-white;
 				}
 
 				&_Header {
