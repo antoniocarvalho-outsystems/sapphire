@@ -229,6 +229,7 @@
 		transform: scale(1);
 	}
 }
+
 .dropzone,
 .dropzone * {
 	box-sizing: border-box;
@@ -257,9 +258,11 @@
 .dropzone.dz-clickable {
 	cursor: pointer;
 }
+
 .dropzone.dz-clickable * {
 	cursor: default;
 }
+
 .dropzone.dz-clickable .dz-message,
 .dropzone.dz-clickable .dz-message * {
 	cursor: pointer;
@@ -658,6 +661,7 @@
 	text-align: center;
 	width: 120px;
 }
+
 .DropzoneIcon * {
 	display: block;
 	text-align: center;
@@ -812,12 +816,28 @@
 	line-height: 22px;
 	position: absolute;
 	right: 0;
+	top: 50%;
 }
 
 .dropzone .dz-preview .dz-filename {
 	left: 0;
 	position: static;
 	top: 0;
+}
+
+
+.GreyContainer .dropzone,
+.WhiteContainer .dropzone {
+	min-height: 77px;
+	padding-top: 16px;
+	position: relative;
+	z-index: 1;
+}
+
+.GreyContainer .dropzone.dz-clickable.dz-started .dz-message,
+.WhiteContainer .dropzone.dz-clickable.dz-started .dz-message {
+	display: block;
+	margin: 0;
 }
 
 .FA .UploadMessageClass,
