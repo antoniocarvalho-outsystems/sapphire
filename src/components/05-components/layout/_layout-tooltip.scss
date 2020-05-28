@@ -1,0 +1,7 @@
+.ResizeIframeTooltip {
+	width: fit-content;
+
+	&.NoPadding .MainPopup {
+		padding: 0;
+	}
+}

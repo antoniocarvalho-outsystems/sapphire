@@ -13,13 +13,19 @@
 		isComponentValid() {
 			let valid = true;
 			let message = `Component HourPicker (${this.options.widgetId}):`;
+			let errors = '';
 
-			if (!this.$input.length || this.$input.length > 1) {
-				message = `${message} needs one - and just one - INPUT element!`;
+			if (this.$model.length && this.$model.length > 1) {
+				errors = `${errors} - Needs one - and just one - Input element.`;
 				valid = false;
 			}
 
-			if (!valid) console.error(message);
+			if (!this.$model.length && this.$component.find('.HourPicker__Placeholder input').length) {
+				errors = `${errors}\n - The Input element must be of type Text.`;
+				valid = false;
+			}
+
+			if (!valid) console.error(`${message} ${errors}`);
 
 			return valid;
 		}
