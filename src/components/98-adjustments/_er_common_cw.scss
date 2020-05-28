@@ -30,5 +30,10 @@ div[id*='ER_Common_CW'] {
     flex-basis: unset !important;
   }
 
+  div[id*="Column2"] {
+    a[id*="wtlnkIdentifyPatient"] {
+      height: 80px;
+    }
+  }
 
 }
