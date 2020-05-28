@@ -1,21 +1,15 @@
-.tooltipster-content {
-  iframe[data-iframetooltiptriggerid*='Clinician_Administration_CW'] {
-    width: 600px !important;
-  }
-}
-
 .Administration-PopUp {
-  display: flex;
+	display: flex;
 
-  :first-child {
-    flex: 1;
-  }
+	:first-child {
+		flex: 1;
+	}
 
-  .Administration-PopUp__Panel {
-    margin-left: 10px;
+	.Administration-PopUp__Panel {
+		margin-left: 10px;
 
-    .Text_red {
-      display: flex;
-    }
-  }
+		.Text_red {
+			display: flex;
+		}
+	}
 }
