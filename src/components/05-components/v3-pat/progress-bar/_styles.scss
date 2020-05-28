@@ -30,6 +30,12 @@
 				}
 			}
 
+			&.Empty {
+				.ProgressBar__animation {
+					background-color: $regular-white;
+				}
+			}
+
 			.Active {
 				position: relative;
 
