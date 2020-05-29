@@ -1,6 +1,5 @@
 .LayoutBase {
 	&-Wrapper {
-
 		.LayoutBase-Content .PatientDetails__MainWorkArea,
 		.LayoutBase-Content .PatientDetails_content,
 		.LayoutBase-Content .ClinicianWorkArea_wrapper {
@@ -189,10 +188,22 @@
 		.TopInfo {
 			height: 100%;
 
-			>div.ContextButtons {
+			> div.ContextButtons {
 				align-items: center;
 				display: flex;
 				height: 100%;
+
+				&.FlexColumn {
+					flex-direction: column;
+					> div {
+						text-align: right;
+						width: 100%;
+					}
+
+					div:first-child {
+						margin-bottom: 5px;
+					}
+				}
 			}
 
 			&__Actions {
@@ -315,8 +326,8 @@
 
 // @TODO: is it possible to change this?
 .LayoutBase.Page .LayoutBase-Content-MainWorkArea .Content,
-.LayoutBase.Page .SystemWideSidebar~.PatientDetails_content .PatientDetails__MainWorkArea .Content,
-.LayoutBase.Page .PatientDetailsLayout .PatientDetails_content .PatientDetails__MainWorkArea>.Content {
+.LayoutBase.Page .SystemWideSidebar ~ .PatientDetails_content .PatientDetails__MainWorkArea .Content,
+.LayoutBase.Page .PatientDetailsLayout .PatientDetails_content .PatientDetails__MainWorkArea > .Content {
 	margin: 0;
 	padding-bottom: 0;
 	padding-left: 0;
@@ -325,29 +336,37 @@
 }
 
 .AR.LayoutBase.Page .LayoutBase-Content-MainWorkArea .Content,
-.AR.LayoutBase.Page .SystemWideSidebar~.PatientDetails_content .PatientDetails__MainWorkArea .Content,
-.AR.LayoutBase.Page .PatientDetailsLayout .PatientDetails_content .PatientDetails__MainWorkArea>.Content {
+.AR.LayoutBase.Page .SystemWideSidebar ~ .PatientDetails_content .PatientDetails__MainWorkArea .Content,
+.AR.LayoutBase.Page .PatientDetailsLayout .PatientDetails_content .PatientDetails__MainWorkArea > .Content {
 	padding-left: 40px;
 	padding-right: 0;
 }
 
-.AR.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable~.LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
+.AR.LayoutBase.Page
+	.LayoutBase-iframesidebar.notExpandable
+	~ .LayoutBase-Content
+	.LayoutBase-Content-MainWorkArea
+	.Content {
 	padding-left: 262px !important;
 	padding-right: 0 !important;
 }
 
-.AR .LayoutBase-iframesidebar.notExpandable~.LayoutBase-header,
-.AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open~.LayoutBase-header {
+.AR .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
 	padding-left: 262px;
 	padding-right: 0;
 }
 
-.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable~.LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
+.LayoutBase.Page
+	.LayoutBase-iframesidebar.notExpandable
+	~ .LayoutBase-Content
+	.LayoutBase-Content-MainWorkArea
+	.Content {
 	padding-right: 262px !important;
 }
 
-.LayoutBase-iframesidebar.notExpandable~.LayoutBase-header,
-.LayoutBase-SystemWideSidebar.SystemWideSidebar.Open~.LayoutBase-header {
+.LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
 	padding-right: 262px;
 }
 
@@ -355,13 +374,18 @@ html .Page .PatientDetailsLayout {
 	padding-top: 0;
 }
 
-.LayoutBase-Content .LayoutBase-secondary.isFixed .PatientHeaderActions .PatientHeaderActions_menuItem .PatientHeaderActions__actions .WhiteContainer {
+.LayoutBase-Content
+	.LayoutBase-secondary.isFixed
+	.PatientHeaderActions
+	.PatientHeaderActions_menuItem
+	.PatientHeaderActions__actions
+	.WhiteContainer {
 	height: 25px;
 	padding: 4px;
 	width: 25px;
 }
 
-.LayoutBase-Content .LayoutBase-secondary .LayoutBase-secondary-aside>a .DisplayInlineBlock {
+.LayoutBase-Content .LayoutBase-secondary .LayoutBase-secondary-aside > a .DisplayInlineBlock {
 	display: block;
 }
 
@@ -371,10 +395,10 @@ html .Page .PatientDetailsLayout {
 
 .LayoutBase-secondary-aside .PendingItemsContainer.OSInline,
 .LayoutBase-secondary-aside .PendingItemsContainer.OSInline .OSInline,
-.LayoutBase-secondary-aside>div.OSInline,
+.LayoutBase-secondary-aside > div.OSInline,
 .LayoutBase-secondary-aside a .OSInline,
 .LayoutBase-secondary-aside .ToggleButton.OSInline,
-.LayoutBase-secondary-aside>span>a>.DisplayInlineBlock,
-.LayoutBase-secondary-aside>span>span>a>.DisplayInlineBlock {
+.LayoutBase-secondary-aside > span > a > .DisplayInlineBlock,
+.LayoutBase-secondary-aside > span > span > a > .DisplayInlineBlock {
 	display: block;
 }
