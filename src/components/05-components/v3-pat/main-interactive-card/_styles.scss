@@ -176,7 +176,6 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 	display: grid;
 	flex-grow: 2;
 	pointer-events: all;
-	z-index: 1;
 }
 
 .MainInteractiveCard.isOpen .MainInteractiveCard-header-text {
