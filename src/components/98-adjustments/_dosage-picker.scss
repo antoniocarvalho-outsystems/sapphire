@@ -1,5 +1,6 @@
 @media all and (max-width: 900px) {
 	.ToggleItemControl {
+		margin: 5px 2px;
 		text-align: initial;
 		width: 100%;
 	}
@@ -24,7 +25,17 @@
 	}
 }
 
-.PrescriptionContainer select {
-	height: 36px;
-	min-width: fit-content;
+@media all and (max-width: 800px) {
+	.PeriodContainer_dosage {
+		flex-direction: column;
+
+		.PrescriptionBlock {
+			margin-bottom: 6px;
+			margin-left: 0 !important;
+		}
+	}
+
+	.ToggleItemControl {
+		width: auto;
+	}
 }
