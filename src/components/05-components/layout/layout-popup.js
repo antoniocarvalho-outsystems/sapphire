@@ -113,7 +113,7 @@
 			popupWidth = SapphireWidgets.LayoutPopup.config.isTouch
 				? parseInt(windowWidth * 0.8)
 				: parseInt(windowWidth * popupWidthPercentage);
-			popupMinHeight = 200;
+			popupMinHeight = 100;
 			popupMaxHeight = SapphireWidgets.LayoutPopup.config.isTouch
 				? parseInt(windowHeight * 0.9)
 				: parseInt(windowHeight * 0.7);
