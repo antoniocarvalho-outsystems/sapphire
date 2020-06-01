@@ -138,7 +138,7 @@
 			position: 'fixed',
 			left: '50%',
 			top: '50%',
-			transform: 'translate(-50%, -50%)',
+			transform: 'translate(-50%, calc(-50% - .5px))',
 			height: 'auto',
 			minWidth: popupMinWidth + 'px',
 			width: popupWidth + 'px',
