@@ -138,10 +138,11 @@
 			position: 'fixed',
 			left: '50%',
 			top: '50%',
-			transform: 'translate(-50%, -50%)',
-			//height: Math.round($osPopup.height()) + 'px',
+			transform: 'perspective(1px) translate(-50%, -50%)',
+			height: 'auto',
 			minWidth: popupMinWidth + 'px',
 			width: popupWidth + 'px',
+			filter: 'blur(0px)',
 		});
 	};
 
@@ -204,10 +205,6 @@
 		}
 
 		$body.scrollTop(contentScrollTop);
-
-		$osPopup.css({
-			height: 2 * Math.round($osPopup.height() / 2) + 'px',
-		});
 	};
 
 	const increaseHeight = function(diference) {
