@@ -36,9 +36,9 @@
 			} else {
 				// Calc and set a fixed height
 				SectionContent.height('auto');
-				tempHeight = SectionContent.height();
-				SectionContent.height(0);
-				SectionContent.height(tempHeight);
+				// tempHeight = SectionContent.height();
+				// SectionContent.height(0);
+				// SectionContent.height(tempHeight);
 				SectionContent.css('overflow', 'hidden');
 
 				// remove class, set height and save state
