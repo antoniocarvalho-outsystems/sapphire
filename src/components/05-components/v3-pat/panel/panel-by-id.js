@@ -4,6 +4,14 @@ SapphireWidgets.PanelById = {
 		return $('body').hasClass('PanelOpened');
 	},
 
+	toggleButton: function(id) {
+		const $toggleButton = $(`#${id}`).parents('.ToggleButton').length
+			? $(`#${id}`).parents('.ToggleButton')
+			: $(`#${id}`);
+
+		$toggleButton.click();
+	},
+
 	togglePanelById: function(Id) {
 		if (!this.isAnyPanelOpenedDeprecated()) {
 			$('body').addClass('PanelOpened');
@@ -35,7 +43,8 @@ SapphireWidgets.PanelById = {
 					.children('.Panel')
 					.children('.PanelContainer')
 					.slideDown(150);
-				$('#' + Id)
+
+				$(`#${Id}`)
 					.parents('.ToggleButton')
 					.click();
 			}, 100);
@@ -48,6 +57,7 @@ SapphireWidgets.PanelById = {
 				.parent()
 				.children('.Panel')
 				.fadeOut(140);
+
 			setTimeout(function() {
 				$('#' + Id)
 					.parents('.ToggleButton')
@@ -55,7 +65,8 @@ SapphireWidgets.PanelById = {
 					.children('.Panel')
 					.children('.PanelContainer')
 					.slideUp(150);
-				$('#' + Id)
+
+				$(`#${Id}`)
 					.parents('.ToggleButton')
 					.click();
 			}, 100);
