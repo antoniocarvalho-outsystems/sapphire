@@ -293,15 +293,23 @@ $prescriptionRadius: 18px;
 	padding: 3px 10px;
 	position: relative;
 
+	&--autoHeight {
+		max-height: unset;
+	}
+
 	&__Icon {
 		margin-right: 10px;
 	}
 
 	&__Notification {
+		position: absolute;
+		right: 0;
+		top: 0;
+
 		&::before {
 			background-color: $regular-beta;
 			border-radius: 1px;
-			bottom: 19px;
+			bottom: 1px;
 			color: $regular-white;
 			content: attr(ui-value);
 			font-size: 0.7em;
@@ -329,6 +337,10 @@ $prescriptionRadius: 18px;
 		&__Icon {
 			margin-left: 10px;
 			margin-right: 0;
+		}
+
+		&__Notification {
+			left: 0;
 		}
 	}
 }
