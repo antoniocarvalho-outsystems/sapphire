@@ -39,6 +39,20 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
+
+	&TwoLines {
+		-webkit-box-orient: vertical;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+	}
+
+	&ThreeLines {
+		-webkit-box-orient: vertical;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+	}
 }
 
 // Alignments
@@ -56,7 +70,6 @@
 
 // Go to 06-helpers/_colors.scss to see the new classes
 .Page .Text {
-
 	/* Colors */
 	&_sapphireBlue {
 		color: fuchsia;
