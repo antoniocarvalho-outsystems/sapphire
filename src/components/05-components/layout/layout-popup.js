@@ -206,7 +206,7 @@
 		$body.scrollTop(contentScrollTop);
 
 		$osPopup.css({
-			height: Math.round($osPopup.height()) + 'px',
+			height: 2 * Math.round($osPopup.height() / 2) + 'px',
 		});
 	};
 
