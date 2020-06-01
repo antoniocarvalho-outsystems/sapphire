@@ -138,8 +138,8 @@
 			position: 'fixed',
 			left: '50%',
 			top: '50%',
-			transform: 'translate(-50%, calc(-50% - .5px))',
-			height: 'auto',
+			transform: 'translate(-50%, -50%)',
+			//height: Math.round($osPopup.height()) + 'px',
 			minWidth: popupMinWidth + 'px',
 			width: popupWidth + 'px',
 		});
@@ -204,6 +204,10 @@
 		}
 
 		$body.scrollTop(contentScrollTop);
+
+		$osPopup.css({
+			height: Math.round($osPopup.height()) + 'px',
+		});
 	};
 
 	const increaseHeight = function(diference) {
