@@ -1,230 +1,226 @@
 @mixin tabs-extended-badge {
-  background-color: $regular-red;
-  border-radius: 100%;
-  color: $regular-white;
-  font-size: 0.786em;
-  height: 15px;
-  line-height: 15px;
-  position: absolute;
-  right: -17px;
-  width: 15px;
+	background-color: $regular-red;
+	border-radius: 50%;
+	color: $regular-white;
+	font-size: 0.786em;
+	height: 17px;
+	line-height: 17px;
+	position: absolute;
+	right: 0px;
+	text-align: center;
+	width: 17px;
 }
 
 .Tabs_Extended {
-  font-size: 14px;
+	font-size: 14px;
 
-  &:not(.isClosed) .Tabs__tab.active {
-    font-weight: 700;
-  }
+	&:not(.isClosed) .Tabs__tab.active {
+		font-family: $font-family-latin-bold;
+	}
 
-  &.HideActiveOnClick .Tabs__tab.active {
-    cursor: pointer;
-  }
+	&.HideActiveOnClick .Tabs__tab.active {
+		cursor: pointer;
+	}
 
-  &.Tabs_Extended--Primary .Tabs__tab {
-    border-bottom: 3px solid transparent;
-    border-top: 2px solid transparent;
-    transition: all 0.2s ease-in;
-  }
+	&.Tabs_Extended--Primary .Tabs__tab {
+		border-bottom: 3px solid transparent;
+		border-top: 2px solid transparent;
+		transition: all 0.2s ease-in;
+	}
 
-  &.Tabs_Extended--Primary {
+	&.Tabs_Extended--Primary {
+		.Tabs__tab.active,
+		.Tabs__tab:hover {
+			background-color: transparent;
+			border-bottom: 3px solid $regular-alpha;
+			border-left: 0;
+			border-right: 0;
+			border-top: 2px solid transparent;
+			border-top-color: transparent;
+		}
 
-    .Tabs__tab.active,
-    .Tabs__tab:hover {
-      background-color: transparent;
-      border-bottom: 3px solid $regular-alpha;
-      border-left: 0;
-      border-right: 0;
-      border-top: 2px solid transparent;
-      border-top-color: transparent;
-    }
+		.Tabs_body {
+			background-color: transparent;
+			border: none;
+			border-top: 1px solid $light-grey;
+			padding: 26px 0 26px 0;
+		}
+	}
 
-    .Tabs_body {
-      background-color: transparent;
-      border: none;
-      border-top: 1px solid $light-grey;
-      padding: 26px 0 26px 0;
-    }
-  }
+	&.Tabs_Extended--Secondary {
+		&:not(.isClosed) .Tabs__tab.active {
+			border-bottom: 2px solid $regular-white;
+			border-left-color: $light-grey;
+			border-right-color: $light-grey;
+			border-top-color: $regular-alpha;
+		}
 
-  &.Tabs_Extended--Secondary {
-    &:not(.isClosed) .Tabs__tab.active {
-      border-bottom: 2px solid $regular-white;
-      border-left-color: $light-grey;
-      border-right-color: $light-grey;
-      border-top-color: $regular-alpha;
-    }
+		&.Tabs_Extended--fullwidth .Tabs {
+			min-height: auto;
+		}
 
-    &.Tabs_Extended--fullwidth .Tabs {
-      min-height: auto;
-    }
+		&.isClosed .Tabs__tab.active {
+			background-color: transparent;
+			color: $regular-gray;
+		}
 
-    &.isClosed .Tabs__tab.active {
-      background-color: transparent;
-      color: $regular-gray;
-    }
+		.Tabs__tab {
+			border-bottom: 2px solid transparent;
+			border-left: 1px solid transparent;
+			border-right: 1px solid transparent;
+			border-top: 2px solid transparent;
+			padding: 0 15px;
+		}
+	}
 
-    .Tabs__tab {
-      border-bottom: 2px solid transparent;
-      border-left: 1px solid transparent;
-      border-right: 1px solid transparent;
-      border-top: 2px solid transparent;
-      padding: 0 10px;
-    }
-  }
+	&.Tabs_Extended--fullwidth {
+		.Tabs_header {
+			display: flex;
+		}
 
-  &.Tabs_Extended--fullwidth {
-    .Tabs_header {
-      display: flex;
-    }
+		.Tabs__tab {
+			border-bottom-color: $light-grey;
+			flex-basis: 100%;
+		}
+	}
 
-    .Tabs__tab {
-      border-bottom-color: $light-grey;
-      flex-basis: 100%;
-    }
-  }
+	.Tabs_Extended--disabled {
+		color: $light-grey;
+	}
 
-  .Tabs_Extended--disabled {
-    color: $light-grey;
-  }
+	.Tabs_body.Tabs_body--closed {
+		padding: 0;
 
-  .Tabs_body.Tabs_body--closed {
-    padding: 0;
+		.Tabs__content {
+			display: none;
+		}
+	}
 
-    .Tabs__content {
-      display: none;
-    }
-  }
+	.Tabs__tab {
+		border-bottom-width: 2px;
+		border-top-width: 2px;
+		position: relative;
+		top: 1px;
 
-  .Tabs__tab {
-    border-bottom-width: 2px;
-    border-top-width: 2px;
-    position: relative;
-    top: 1px;
+		&:hover:not(.active) a[id] {
+			color: $regular-beta;
+		}
 
-    &:hover:not(.active) a[id] {
-      color: $regular-beta;
-    }
+		&.active a {
+			color: $sapphire-color-text-regular; // $regular-beta;
 
-    &.active a {
-      color: $sapphire-color-text-regular; // $regular-beta;
+			&:hover {
+				color: $sapphire-color-text-regular;
+			}
+		}
 
-      &:hover {
-        color: $sapphire-color-text-regular;
-      }
-    }
+		&:not(.active) a:focus {
+			border: 1px solid $dark-grey;
+			color: $dark-grey;
+		}
 
-    &:not(.active) a:focus {
-      border: 1px solid $dark-grey;
-      color: $dark-grey;
-    }
+		a,
+		a:hover {
+			border: 1px solid transparent;
+			color: $regular-beta;
+			font-family: $font-family-latin-bold;
+			font-size: 1.143em;
+			margin-right: 0;
+			min-width: auto;
+			padding: 10px;
+			position: relative;
+		}
 
-    a,
-    a:hover {
-      border: 1px solid transparent;
-      color: $regular-beta;
-      font-size: 1.143em;
-      font-weight: 700;
-      margin-right: 0;
-      min-width: auto;
-      padding: 10px;
-      position: relative;
-    }
+		.Badge {
+			padding: 2px 0;
+			vertical-align: super;
+		}
+	}
 
-    .Badge {
-      padding: 2px 0;
-      vertical-align: super;
-    }
-  }
+	.Tabs_header {
+		overflow-x: hidden;
+	}
 
-  .Tabs_header {
-    overflow-x: hidden;
-  }
+	.Tabs_extended_badge {
+		@include tabs-extended-badge;
 
-  .Tabs_extended_badge {
-    @include tabs-extended-badge;
-
-    top: 0;
-  }
+		top: 0;
+	}
 }
 
 .Tabs {
-  border: 0px;
+	border: 0px;
 
-  &_header {
-    background-color: transparent;
-    border-left: none;
-  }
+	&_header {
+		background-color: transparent;
+		border-left: none;
+	}
 
-  &_body {
-    background-color: $regular-white;
-    border: 1px solid $light-grey;
-    margin-top: -1px !important;
-    padding: 20px;
-    position: initial;
-  }
+	&_body {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		margin-top: -1px !important;
+		padding: 20px;
+		position: initial;
+	}
 
-  &__tab {
-    background-color: transparent;
-    border-bottom: 0;
-    border-left: 0;
-    border-top: 3px solid transparent;
-    color: $regular-beta;
-    cursor: pointer;
-    display: inline-block;
-    font-family: $font-family-latin-bold;
-    line-height: 37px;
-    min-width: 100px;
-    padding: 0 15px;
-    position: relative;
-    text-align: center;
+	&__tab {
+		background-color: transparent;
+		border-bottom: 0;
+		border-left: 0;
+		border-top: 3px solid transparent;
+		color: $regular-beta;
+		cursor: pointer;
+		display: inline-block;
+		font-family: $font-family-latin-bold;
+		line-height: 37px;
+		min-width: 100px;
+		padding: 0 15px;
+		position: relative;
+		text-align: center;
 
-    &:hover {
-      background: transparent;
-    }
+		&:hover {
+			background: transparent;
+		}
 
-    &.active {
-      border-bottom: $regular-white;
-      border-left: 1px solid $light-grey;
-      border-right: 1px solid $light-grey;
-      border-top: 3px solid $regular-alpha;
-      color: $mid-dark-grey;
-      cursor: default;
-      font-weight: 500;
-      position: relative;
-      top: 1px;
-      z-index: unset;
+		&.active {
+			border-bottom: $regular-white;
+			border-left: 1px solid $light-grey;
+			border-right: 1px solid $light-grey;
+			border-top: 3px solid $regular-alpha;
+			color: $mid-dark-grey;
+			cursor: default;
+			font-family: $font-family-latin-regular;
+			position: relative;
+			top: 1px;
+			z-index: unset;
 
-      &:hover {
-        background-color: $regular-white;
-      }
-    }
-  }
+			&:hover {
+				background-color: $regular-white;
+			}
+		}
+	}
 }
 
 .Tabs_extended_badge {
-  @include tabs-extended-badge;
+	@include tabs-extended-badge;
 
-  top: 5px;
+	top: 5px;
 }
 
 .AR,
 .FA {
-  .Tabs__tab {
-    font-family: $font-family-arabic-bold;
+	.Tabs__tab {
+		font-family: $font-family-arabic-bold;
+	}
 
-    &:first-child {
-      border-left: 0;
-    }
-  }
+	.Tabs_Extended.Tabs_Extended--Primary .Tabs__tab {
+		margin-left: 26px;
+		margin-right: auto;
+	}
 
-  .Tabs_Extended.Tabs_Extended--Primary .Tabs__tab {
-    margin-left: 26px;
-    margin-right: auto;
-  }
-
-  .Tabs_Extended .Tabs_extended_badge {
-    left: -17px;
-    right: auto;
-  }
+	.Tabs_Extended .Tabs_extended_badge {
+		left: -2px;
+		right: auto;
+	}
 }
