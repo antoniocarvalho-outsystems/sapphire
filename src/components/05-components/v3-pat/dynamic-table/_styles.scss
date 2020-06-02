@@ -1,6 +1,7 @@
 .DynamicTable {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
+	border-bottom: none;
 
 	&--disabled {
 		background-color: $body-color;
@@ -54,11 +55,8 @@
 	}
 
 	&__RowsWrapper {
+		border-bottom: 1px solid $light-grey;
 		position: relative;
-
-		&:not(:last-child) {
-			border-bottom: 1px solid $light-grey;
-		}
 	}
 
 	&__Rows {

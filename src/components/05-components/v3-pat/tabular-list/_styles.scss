@@ -1,0 +1,146 @@
+.TabularList {
+	&.hideProperty {
+		.TabularListRow-property {
+			display: none;
+		}
+	}
+
+	&.hideActions {
+		.TabularListRow-actions {
+			display: none;
+		}
+	}
+
+	&.isBreaking {
+		.TabularListRow {
+			flex-direction: column;
+		}
+
+		.TabularList-label-onbreak {
+			display: block;
+		}
+
+		.TabularListRow-actions {
+			text-align: left;
+		}
+
+		.TabularListRow.isHeader {
+			display: none;
+		}
+	}
+
+	&-columns-AllEqual {
+		.TabularListRow-values {
+			.TabularListRow-item {
+				flex-basis: 100%;
+				flex-grow: 1;
+			}
+		}
+	}
+
+	&-columns-Auto {
+		.TabularListRow-item {
+			opacity: 0;
+			white-space: nowrap;
+		}
+	}
+
+	&-border-All,
+	&-border-Inside {
+		border-bottom: solid 1px #d7d7d7;
+	}
+
+	&-border-All .TabularListRow {
+		border-left: solid 1px #d7d7d7;
+		border-right: solid 1px #d7d7d7;
+		border-top: solid 1px #d7d7d7;
+	}
+
+	&-border-Inside {
+		.TabularListRow-property,
+		.TabularListRow-actions {
+			border-left: solid 1px #d7d7d7;
+			border-right: solid 1px #d7d7d7;
+			border-top: solid 1px #d7d7d7;
+		}
+
+		.TabularListRow-values {
+			.TabularListRow-item {
+				border-right: solid 1px #d7d7d7;
+				border-top: solid 1px #d7d7d7;
+
+				&:first-child {
+					border-left: solid 1px #d7d7d7;
+				}
+			}
+		}
+	}
+
+	&-border-Bottom .TabularListRow {
+		border-bottom: solid 1px #d7d7d7;
+	}
+
+	&-padding-None {
+		padding: 0;
+	}
+
+	&-padding-XSmall {
+		.TabularListRow-property,
+		.TabularListRow-values .TabularListRow-item,
+		.TabularListRow-actions {
+			padding: 3px;
+		}
+	}
+
+	&-padding-Small {
+		.TabularListRow-property,
+		.TabularListRow-values .TabularListRow-item,
+		.TabularListRow-actions {
+			padding: 6px;
+		}
+	}
+
+	&-padding-Medium {
+		.TabularListRow-property,
+		.TabularListRow-values .TabularListRow-item,
+		.TabularListRow-actions {
+			padding: 12px;
+		}
+	}
+
+	&-label-onbreak {
+		display: none;
+	}
+
+	.TabularListRow {
+		&.isHeader {
+			&,
+			.TabularListRow-property,
+			.TabularListRow-values,
+			.TabularListRow-actions {
+				border: none;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.TabularListRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	&-actions,
+	&-property {
+		flex-basis: 50%;
+	}
+
+	&-actions {
+		text-align: right;
+	}
+
+	&-values {
+		display: flex;
+		flex-basis: 100%;
+	}
+}
