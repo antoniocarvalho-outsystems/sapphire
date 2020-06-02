@@ -53,6 +53,14 @@
 
 .Flex {
 	@include flex-base-style('.Flex');
+
+	&Wrap {
+		flex-wrap: wrap;
+	}
+
+	&Child {
+		flex: 1;
+	}
 }
 
 .InlineFlex {
