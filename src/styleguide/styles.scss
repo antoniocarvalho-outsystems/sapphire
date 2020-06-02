@@ -110,6 +110,7 @@ $styleguide-main-content-padding: 50px;
 		height: calc(100vh - 195px);
 		margin-top: 15px;
 		overflow-y: auto;
+		scroll-behavior: smooth;
 	}
 
 	&__MenuSection {

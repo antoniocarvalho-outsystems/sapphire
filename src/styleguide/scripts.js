@@ -1,6 +1,6 @@
 require('./styles.scss');
 
-(function ($, window, SapphireWidgets) {
+(function($, window, SapphireWidgets) {
 	const create = config => {
 		this.$aside = $('.DesignSystem__Aside');
 		this.$filterInput = $('#' + config.filterInput);
@@ -38,9 +38,9 @@ require('./styles.scss');
 		$menu.find('a').each((i, el) => {
 			if (
 				$(el)
-				.text()
-				.toLowerCase()
-				.includes(term.toLowerCase())
+					.text()
+					.toLowerCase()
+					.includes(term.toLowerCase())
 			) {
 				$(el).show();
 				$(el)
@@ -102,7 +102,7 @@ require('./styles.scss');
 
 	markAsideMenu = doScroll => {
 		const hash = window.location.hash.slice(1);
-		let pathname = window.location.pathname.replace('/Styleguidev2_UI/', '');
+		let pathname = window.location.pathname.replace('/StyleGuideV2_UI/', '');
 
 		$('.DesignSystem__MenuSection a').each((i, el) => {
 			let url = $(el)
@@ -113,23 +113,21 @@ require('./styles.scss');
 			if (url === pathname) {
 				if (hash === title || (!hash && !title)) {
 					$(el).addClass('active');
-				} else {
-					$(el).removeClass('active');
-				}
 
-				if (!!$(el).closest('.DesignSystem__MenuSubSection').length) {
-					$(el)
-						.closest('.DesignSystem__MenuSubSection')
-						.addClass('DesignSystem__MenuSubSection--expanded');
+					setTimeout(function() {
+						if (!!$(el).closest('.DesignSystem__MenuSubSection').length) {
+							$(el)
+								.closest('.DesignSystem__MenuSubSection')
+								.addClass('DesignSystem__MenuSubSection--expanded');
 
-					if (doScroll) {
-						let linkTopPosition = $(el).closest('.DesignSystem__MenuSubSection')[0].offsetTop;
-						$('.DesignSystem__Menu')[0].scroll(0, linkTopPosition - 230);
-					}
-				}
-			} else {
-				$(el).removeClass('active');
-			}
+							if (doScroll) {
+								let linkTopPosition = $(el).closest('.DesignSystem__MenuSubSection')[0].offsetTop;
+								$('.DesignSystem__Menu')[0].scroll(0, linkTopPosition - 230);
+							}
+						}
+					}, 150);
+				} else $(el).removeClass('active');
+			} else $(el).removeClass('active');
 		});
 	};
 
