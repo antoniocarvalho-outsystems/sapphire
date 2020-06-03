@@ -1,101 +1,99 @@
-function DosageBlock(config) {
-  $(function () {
-    var dosageBlockId = config.DosageBlockId;
-    var $dosageBlock = $('#' + dosageBlockId);
-    var startCol = config.StartCol;
-    var endCol = config.EndCol;
-    var $allTimeSlots = $('.ShiftContainer').find('.ShiftContainer_header').find('.ShiftCellContent');
-    var numberTimeSlots = $allTimeSlots[1].getBoundingClientRect().width;
-    var colFill = parseInt(endCol) - parseInt(startCol) + 1;
-    var minuteValueWidth = numberTimeSlots / 60;
-    var i;
-    var totalLeft = 0;
+var spinnerList = {
+	increment: function(elementId, listTospin, triggerOnChange, triggerOnInput) {
+		var $myspinner = $(elementId);
+		var $myInput = $myspinner.find('input[type]');
+		var arraytospin = listTospin;
+		var currentPosition = arraytospin.indexOf(parseInt($myspinner.find('input').val()));
+		var maximumToSpin = arraytospin.lastIndexOf(arraytospin.slice(-1)[0]);
 
+		$(elementId)
+			.find('.PlusVertical')
+			.removeClass('DisabledSpin');
+		$(elementId)
+			.find('.MinusVertical')
+			.removeClass('DisabledSpin');
 
-    for (i = 1; i < parseInt(startCol); i++) {
-      totalLeft += $allTimeSlots[i].getBoundingClientRect().width;
-    }
+		if (maximumToSpin - 1 === currentPosition) {
+			currentPosition = currentPosition + 1;
+			$myspinner.find('input').val(arraytospin[currentPosition]);
+			if (triggerOnChange) {
+				$myInput.trigger('change');
+			}
+			if (triggerOnInput) {
+				$myInput.trigger('input');
+			}
+		} else if (maximumToSpin === currentPosition) {
+			currentPosition = currentPosition % maximumToSpin;
+			$myspinner.find('input').val(arraytospin[currentPosition]);
+			if (triggerOnChange) {
+				$myInput.trigger('change');
+			}
+			if (triggerOnInput) {
+				$myInput.trigger('input');
+			}
+		} else {
+			currentPosition = (currentPosition + 1) % maximumToSpin;
+			$myspinner.find('input').val(arraytospin[currentPosition]);
+			if (triggerOnChange) {
+				$myInput.trigger('change');
+			}
+			if (triggerOnInput) {
+				$myInput.trigger('input');
+			}
+		}
 
-    $dosageBlock.width(colFill * numberTimeSlots);
-    if ($('.Page').hasClass('AR') || $('.Page').hasClass('FA')) {
-      $dosageBlock.css('right', totalLeft + 'px');
-    } else {
-      $dosageBlock.css('left', totalLeft + 'px');
-    }
+		if (currentPosition === maximumToSpin) {
+			$(elementId)
+				.find('.PlusVertical')
+				.addClass('DisabledSpin');
+		}
 
-    var checkForOverlap = function (el1, el2) {
-      var bounds1 = el1.getBoundingClientRect();
-      var bounds2 = el2.getBoundingClientRect();
-      var firstIstLeftmost = (bounds1.left <= bounds2.left);
-      var leftest = firstIstLeftmost ? bounds1 : bounds2;
-      var rightest = firstIstLeftmost ? bounds2 : bounds1;
+		if (currentPosition === 0) {
+			$(elementId)
+				.find('.MinusVertical')
+				.addClass('DisabledSpin');
+		}
 
-      //change > to to >= if border overlap should count
-      if (leftest.right > rightest.left) {
-        var firstIsTopmost = (bounds1.top <= bounds2.top);
-        var topest = firstIsTopmost ? bounds1 : bounds2;
-        var bottomest = firstIsTopmost ? bounds2 : bounds1;
-        //change > to >= if border should count 
-        return topest.bottom > bottomest.top;
-      } else return false;
-    }
+		$myspinner.find('.Text_red').css('display', 'none');
+	},
 
+	decrement: function(elementId, listTospin, triggerOnChange, triggerOnInput) {
+		var $myspinner = $(elementId);
+		var $myInput = $myspinner.find('input[type]');
+		var arraytospin = listTospin;
+		var currentPosition = arraytospin.indexOf(parseInt($myspinner.find('input').val()));
+		var maximumToSpin = arraytospin.lastIndexOf(arraytospin.slice(-1)[0]);
 
-    var $shiftCardLine = $dosageBlock.closest('.ShiftCard_timeLine');
-    var CardShiftCount = $shiftCardLine.find('.CardShiftWrapperContainer').length;
+		currentPosition = (maximumToSpin + currentPosition - 1) % maximumToSpin;
 
-    if (CardShiftCount > 0) {
-      var count = 0;
-      $shiftCardLine.find('.CardShiftWrapperContainer').each(function () {
-        var $this = $(this);
-        var $shiftCard = $this.closest('.ShiftCard_timeLine');
-        var overlaped = checkForOverlap($dosageBlock[0], $this[0]);
-        var createdId = $dosageBlock.attr('id');
-        var LoopedId = $this.attr('id');
-        if (overlaped === true && count < $shiftCardLine.find('.TakeSlot').length) {
-          $dosageBlock.css('top', $this[0].offsetTop + $dosageBlock.height());
-        }
-        count = count++;
-      });
-      $('.ShiftCard_timeLine .TakeSlot').each(function () {
-        var $this = $(this);
-        var $shiftCard = $this.closest('.ShiftCard_timeLine');
-        var overlaped = checkForOverlap($dosageBlock[0], $this[0]);
-        var createdId = $dosageBlock.attr('id');
-        var LoopedId = $this.attr('id');
-        var $firstSlotCreated = $('.ShiftCard_timeLine .TakeSlot')[0];
-        if (overlaped === true && createdId != LoopedId && createdId != $firstSlotCreated.id) {
-          $dosageBlock.css('top', $this[0].offsetTop + 130);
-        }
-      });
-      $shiftCardLine.height($shiftCardLine.find('.TakeSlot').last().position().top + 130);
-    } else {
-      $('.ShiftCard_timeLine .TakeSlot').each(function () {
-        var $this = $(this);
-        var $shiftCard = $this.closest('.ShiftCard_timeLine');
-        var overlaped = checkForOverlap($dosageBlock[0], $this[0]);
-        var createdId = $dosageBlock.attr('id');
-        var LoopedId = $this.attr('id');
-        var $firstSlotCreated = $('.ShiftCard_timeLine .TakeSlot')[0];
-        if (overlaped === true && createdId != LoopedId && createdId != $firstSlotCreated.id) {
-          $dosageBlock.css('top', $dosageBlock[0].offsetTop + 130 + 'px');
-          $shiftCard.height($shiftCard.height() + $this[0].offsetHeight);
-        }
-      });
-    }
+		$(elementId)
+			.find('.PlusVertical')
+			.removeClass('DisabledSpin');
 
-    $dosageBlock.find('.ProgressBarWrap').each(function (index) {
-      var beginslot = $(this).data('beginslot');
-      var beginminute = $(this).data('beginminute');
-      var endslot = $(this).data('endslot');
-      var endminute = $(this).data('endminute');
+		if (currentPosition == 0) {
+			$(elementId)
+				.find('.MinusVertical')
+				.addClass('DisabledSpin');
+			$myspinner.find('input').val(arraytospin[0]);
+			if (triggerOnChange) {
+				$myInput.trigger('change');
+			}
+			if (triggerOnInput) {
+				$myInput.trigger('input');
+			}
+		} else {
+			$(elementId)
+				.find('.MinusVertical')
+				.removeClass('DisabledSpin');
+			$myspinner.find('input').val(arraytospin[currentPosition]);
+			if (triggerOnChange) {
+				$myInput.trigger('change');
+			}
+			if (triggerOnInput) {
+				$myInput.trigger('input');
+			}
+		}
 
-      var progressBarMinutes = ((endslot - beginslot) * 60) + endminute - beginminute;
-      var progressendWithPer = progressBarMinutes * minuteValueWidth;
-
-      $(this).css('left', (((beginslot - 1) * 60) + beginminute) * minuteValueWidth + 'px');
-      $(this).css('width', progressendWithPer + 'px');
-    });
-
-  });
-}
+		$myspinner.find('.Text_red').css('display', 'none');
+	},
+};
