@@ -5,10 +5,10 @@
 			const $minusVertical = $(`#${config.widgetId}`).find('.MinusVertical');
 			const $inputSpinner = $(`#${config.widgetId} .SpinnerInputVertical input`);
 
-			$inputSpinner.on('blur keyup input', function() {
+			$inputSpinner.on('blur keyup input', function(event) {
 				const currentInputValue = $inputSpinner.val();
 
-				if (config.numberList) {
+				if (config.numberList && event.type === 'blur') {
 					const inputValueInt = parseInt(currentInputValue);
 					const arrayToSpin = config.numberList;
 					const $errorMessage = $(`#${config.widgetId} .SpinnerErrorMessage`);
@@ -37,8 +37,11 @@
 					var that = this;
 
 					setTimeout(function() {
-						that.selectionStart = that.selectionEnd = 100000;
-					}, 300);
+						that.focus();
+						var val = that.value;
+						that.value = '';
+						that.value = val;
+					}, 1);
 				});
 			}
 
