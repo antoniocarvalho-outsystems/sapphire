@@ -1,23 +1,23 @@
 /* Component GenericGallery */
-(function($, window, document, SapphireWidgets) {
+(function ($, window, document, SapphireWidgets) {
 	var allGenericGalleries = [];
 
-	var create = function(config) {
+	var create = function (config) {
 		bindGenericGallery(config);
 		if (osAjaxBackend) {
-			osAjaxBackend.BindAfterAjaxRequest(function() {
+			osAjaxBackend.BindAfterAjaxRequest(function () {
 				bindGenericGallery(config);
 			});
 		} else {
-			$(window).load(function() {
-				osAjaxBackend.BindAfterAjaxRequest(function() {
+			$(window).load(function () {
+				osAjaxBackend.BindAfterAjaxRequest(function () {
 					bindGenericGallery(config);
 				});
 			});
 		}
 	};
 
-	var bindGenericGallery = function(config) {
+	var bindGenericGallery = function (config) {
 		for (var i = 0; i < allGenericGalleries.length; i++) {
 			if (allGenericGalleries[i].config.widgetId === config.widgetId) {
 				allGenericGalleries.splice(i, 1);
@@ -27,7 +27,7 @@
 		allGenericGalleries.push(window[config.widgetId]);
 	};
 
-	var GenericGallery = function(config) {
+	var GenericGallery = function (config) {
 		var _this = this;
 		this.config = config;
 		this.genericGalleryResizeTimer = 0;
@@ -42,20 +42,20 @@
 			this.$gallery = this.$widget.find('.GenericGallery-content');
 		}
 		this.$galleryItems = this.$gallery.children();
-		this.$galleryItems.each(function() {
+		this.$galleryItems.each(function () {
 			if (!$(this).hasClass('GenericGallery-item')) {
 				$(this).wrap('<div class="GenericGallery-item"></div>');
 			}
 		});
-		$(function() {
+		$(function () {
 			_this.calculate(0);
 		});
 	};
 
-	GenericGallery.prototype.calculate = function(timeout) {
+	GenericGallery.prototype.calculate = function (timeout) {
 		var _this = this;
 		window.clearTimeout(this.genericGalleryResizeTimer);
-		this.genericGalleryResizeTimer = window.setTimeout(function() {
+		this.genericGalleryResizeTimer = window.setTimeout(function () {
 			var widgetWidth = _this.$widget.outerWidth(true);
 			var perLine;
 			if (widgetWidth >= 1900) {
@@ -76,7 +76,7 @@
 
 			var marginLeft = _this.$gallery.find('.GenericGallery-item').css('margin-left');
 
-			_this.$gallery.find('.GenericGallery-item').each(function(index, el) {
+			_this.$gallery.find('.GenericGallery-item').each(function (index, el) {
 				if ($(el).find('.GenericGallery-item--triple').length > 0) {
 					$(el).css('width', itemWidth * 3 + '%');
 				} else if ($(el).find('.GenericGallery-item--double').length > 0) {
@@ -86,9 +86,13 @@
 				}
 				if (_this.config.itemsBorder === 'Right') {
 					if ((index + 1) % perLine === 0) {
-						$(el).css({ borderRight: 0 });
+						$(el).css({
+							borderRight: 0
+						});
 					} else {
-						$(el).css({ borderRight: '' });
+						$(el).css({
+							borderRight: ''
+						});
 					}
 				}
 				$(el).css('opacity', 1);
@@ -102,7 +106,9 @@
 				_this.$gallery
 					.find('.GenericGallery-item')
 					.last()
-					.css({ borderRight: 0 });
+					.css({
+						borderRight: 0
+					});
 			}
 
 			if (_this.config.equalHeight) {
@@ -111,23 +117,23 @@
 		}, timeout);
 	};
 
-	GenericGallery.prototype.sameHeight = function() {
+	GenericGallery.prototype.sameHeight = function () {
 		this.$gallery.find('.GenericGallery-item').css('min-height', 'auto');
 		var maxHeight = Math.max.apply(
 			null,
 			this.$gallery
-				.find('.GenericGallery-item')
-				.map(function() {
-					return $(this).outerHeight(false);
-				})
-				.get()
+			.find('.GenericGallery-item')
+			.map(function () {
+				return $(this).outerHeight(false);
+			})
+			.get()
 		);
 		this.$gallery.find('.GenericGallery-item').css('min-height', maxHeight);
 	};
 
 	SapphireWidgets.GenericGallery = {
 		create: create,
-		all: function() {
+		all: function () {
 			return allGenericGalleries;
 		},
 	};
@@ -135,9 +141,9 @@
 
 $(window)
 	.off('resize.GenericGallery')
-	.on('resize.GenericGallery', function() {
+	.on('resize.GenericGallery', function () {
 		var allGenericGalleries = SapphireWidgets.GenericGallery.all();
-		allGenericGalleries.forEach(function(element) {
+		allGenericGalleries.forEach(function (element) {
 			element.calculate(200);
 		});
 	});
