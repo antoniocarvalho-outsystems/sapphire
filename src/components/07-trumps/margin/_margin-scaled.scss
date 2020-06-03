@@ -1,37 +1,45 @@
 @each $size in $sapphire__sizes {
-	$label: nth($size, 1);
-	$value: nth($size, 2);
+  $label: nth($size, 1);
+  $value: nth($size, 2);
 
-	.MultiMargin#{$label} {
-		margin: #{$value};
-	}
+  .MultiMargin#{$label} {
+    margin: #{$value};
+  }
 
-	.MultiMarginLeft#{$label} {
-		margin-left: #{$value};
-	}
+  .MultiMarginLeft#{$label} {
+    margin-left: #{$value};
+  }
 
-	.MultiMarginRight#{$label} {
-		margin-right: #{$value};
-	}
+  .MultiMarginRight#{$label} {
+    margin-right: #{$value};
+  }
 
-	.MultiMarginTop#{$label} {
-		margin-top: #{$value};
-	}
+  .MultiMarginTop#{$label} {
+    margin-top: #{$value};
+  }
 
-	.MultiMarginBottom#{$label} {
-		margin-bottom: #{$value};
-	}
+  .tablet .MultiMarginTop#{$label}-tablet {
+    margin-top: #{$value};
+  }
 
-	.AR,
-	.FA {
-		.MultiMarginLeft#{$label} {
-			margin-left: auto;
-			margin-right: #{$value};
-		}
+  .MultiMarginBottom#{$label} {
+    margin-bottom: #{$value};
+  }
 
-		.MultiMarginRight#{$label} {
-			margin-left: #{$value};
-			margin-right: auto;
-		}
-	}
+  .tablet .MultiMarginBottom#{$label}-tablet {
+    margin-bottom: #{$value};
+  }
+
+  .AR,
+  .FA {
+    .MultiMarginLeft#{$label} {
+      margin-left: auto;
+      margin-right: #{$value};
+    }
+
+    .MultiMarginRight#{$label} {
+      margin-left: #{$value};
+      margin-right: auto;
+    }
+  }
 }
