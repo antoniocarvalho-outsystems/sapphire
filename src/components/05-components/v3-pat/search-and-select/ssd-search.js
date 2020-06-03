@@ -358,7 +358,6 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		$('body').mouseup(function(e) {
 			ClickOut(e, $SSDComponent);
 		});
-
 		/*
 		 *   KeyBoard events on key press
 		 */
@@ -426,3 +425,22 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		};
 	});
 };
+// Added to close the select list if we click the prescription Iframe;
+window.addEventListener('DOMContentLoaded', (event) => {
+	var rootElement = document.querySelector('body');
+rootElement.addEventListener(
+	'click',
+	function(event) {
+		document.querySelector("iframe[src*='Prescriptions_CW']") && document.querySelector("iframe[src*='Prescriptions_CW']").contentWindow.document.addEventListener("click",(e)=>{
+			e.stopPropagation();
+			document.querySelector(".SearchSD").classList.remove('Open');
+			var allInput=document.querySelector('.SearchSD___input').children;
+			for(const element in allInput){
+				return allInput[element].value!=undefined?allInput[element].value='':null;
+			}
+		});
+	},
+	true
+);
+});
+
