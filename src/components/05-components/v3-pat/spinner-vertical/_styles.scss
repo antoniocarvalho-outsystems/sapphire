@@ -47,4 +47,12 @@
 			pointer-events: none;
 		}
 	}
+
+	.SpinnerErrorMessage {
+		font-size: 0.786em;
+		line-height: 14px;
+		position: absolute;
+		text-align: left;
+		width: 200px;
+	}
 }
