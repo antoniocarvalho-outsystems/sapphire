@@ -22,8 +22,15 @@
 		this.$information = this.$widget.find('.SapphireHeader-information');
 		this.$additionalTrigger = this.$widget.find('.SapphireHeader-additional-trigger');
 		this.$additionalContent = this.$widget.find('.SapphireHeader-additional-content');
+
+
 		this.handleResize();
 		this.attachEvents();
+
+		if (this.$information.text() === '') {
+			this.$information.hide();
+		}
+
 		$(function () {
 			setTimeout(function () {
 				_this.handleDemographics();
