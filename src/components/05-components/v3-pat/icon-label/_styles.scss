@@ -109,6 +109,7 @@ $IconLabel-color-text: $dark-grey;
 	}
 
 	&_icon {
+		height: 0;
 		max-width: unset;
 		text-align: center;
 
@@ -120,14 +121,11 @@ $IconLabel-color-text: $dark-grey;
 		span.icon {
 			display: inline-block;
 			margin-right: 4px;
-			margin-top: 3px;
 		}
 
-		span.icon.icon-lg {
-			margin-right: 4px;
-		}
-
+		span.icon.icon-lg,
 		span.icon.icon-1x {
+			line-height: 20px;
 			margin-right: 4px;
 		}
 
@@ -135,10 +133,7 @@ $IconLabel-color-text: $dark-grey;
 			margin-right: 7px;
 		}
 
-		span.icon.icon-3x {
-			margin-right: 5px;
-		}
-
+		span.icon.icon-3x,
 		span.icon.icon-4x {
 			margin-right: 5px;
 		}
