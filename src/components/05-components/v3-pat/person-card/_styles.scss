@@ -606,6 +606,11 @@ a {
 
   .PersonCard___icon {
     float: left;
+    margin-right: 6px;
+  }
+
+  .PersonCard____title {
+    float: left;
   }
 
   .PersonCard__actions {
@@ -635,6 +640,8 @@ a {
     }
   }
 }
+
+
 
 .tablet .PersonCard.IsShowTitles .PersonCard__content.IsShowTitles .PersonCard__content__title,
 .phone .PersonCard.IsShowTitles .PersonCard__content.PersonCard__content__title {

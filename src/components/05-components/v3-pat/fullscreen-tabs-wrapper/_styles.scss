@@ -87,12 +87,17 @@ $tab-height: 44px;
 }
 
 .FA .FullScreenTabsWrapper__Actions,
-.AR .FullScreenTabsWrapper__Actions {
-  left: 24px;
+.AR .FullScreenTabsWrapper__Actions {left: 24px;
   right: auto;
 }
 
 */
+
+
+
+
+
+
 
 .FullScreenTabsWrapper_Container {
   background-color: $regular-alpha;
@@ -108,10 +113,23 @@ $tab-height: 44px;
 
   .FullScreenTabsWrapper__Actions {
     position: absolute;
-    right: 21px;
+    right: 18px;
     top: 10px;
   }
 }
+
+.tablet .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions,
+.desktop.small .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions {
+  float: right;
+  padding-right: 18px;
+  padding-top: 10px;
+  position: static;
+  right: auto;
+  top: auto;
+}
+
+
+
 
 .TabWrapper {
   border-top: solid 3px $regular-alpha;
