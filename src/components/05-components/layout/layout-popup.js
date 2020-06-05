@@ -75,6 +75,13 @@
 	const resizeDialog = function() {
 		if (SapphireWidgets.LayoutPopup.config.hasClose) {
 			window.parent.$('.os-internal-ui-dialog-titlebar').show();
+
+			if (window.top._iframePopup != undefined || false) {
+				const $closeButton = window.parent.$('.os-internal-ui-dialog-titlebar-close');
+
+				$closeButton.removeAttr('href');
+				$closeButton.off('click').on('click', () => window.top._iframePopup.Popup_Window_Close());
+			}
 		}
 
 		if (window.top.$('body').hasClass('LayoutBase')) {
