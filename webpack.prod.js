@@ -1,4 +1,6 @@
 const merge = require('webpack-merge');
+const webpack = require('webpack');
+const package = require('./package.json');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -12,6 +14,9 @@ module.exports = merge(common, {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: 'prod.[name].css',
+		}),
+		new webpack.BannerPlugin({
+			banner: `Generated: ${new Date()} || Version: ${package.version}`,
 		}),
 	],
 });
