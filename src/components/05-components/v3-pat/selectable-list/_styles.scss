@@ -1,58 +1,58 @@
 .SelectableList {
-	&-EmptyMessage {
-		@include flex-center-total;
-		align-items: flex-end;
-		background-color: transparent;
-		border: 1px solid $mid-light-grey;
-		color: $mid-dark-grey;
-		flex-wrap: wrap;
-		font-size: 1em;
-		min-height: 46px;
-		width: 100%;
+  &-EmptyMessage {
+    @include flex-center-total;
+    align-items: flex-end;
+    background-color: transparent;
+    border: 1px solid $mid-light-grey;
+    color: $mid-dark-grey;
+    flex-wrap: wrap;
+    font-size: 1em;
+    min-height: 46px;
+    width: 100%;
 
-		>span {
-			display: block;
-		}
+    >span {
+      display: block;
+    }
 
-		&.NoBorder {
-			border: none;
-		}
-	}
+    &.NoBorder {
+      border: none;
+    }
+  }
 
-	&-ListRecords {
-		border: 1px solid $regular-alpha;
-		display: block;
+  &-ListRecords {
+    border: 1px solid $regular-alpha;
+    display: block;
 
-		.SelectableListWrapper {
-			border: none;
+    .SelectableListWrapper {
+      border: none;
 
-			&:not(:last-child) {
-				border-bottom: 1px solid $regular-alpha;
-			}
+      &:not(:last-child) {
+        border-bottom: 1px solid $regular-alpha;
+      }
 
-			&:last-of-type {
-				border-bottom: none;
-				border-top: none;
-			}
-		}
-	}
+      &:last-of-type {
+        border-bottom: none;
+        border-top: none;
+      }
+    }
+  }
 
-	&-ExpandControls {
-		white-space: nowrap;
-		width: 100%;
+  &-ExpandControls {
+    white-space: nowrap;
+    width: 100%;
 
-		div:nth-child(1) {
-			line-height: 24px;
-			text-align: right;
-		}
-	}
+    div:nth-child(1) {
+      line-height: 24px;
+      text-align: right;
+    }
+  }
 }
 
 .AR,
 .FA {
-	.SelectableList-ExpandControls {
-		div:nth-child(1) {
-			text-align: left;
-		}
-	}
+  .SelectableList-ExpandControls {
+    div:nth-child(1) {
+      text-align: left;
+    }
+  }
 }
