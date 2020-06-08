@@ -1,8 +1,10 @@
 const path = require('path');
-
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack');
+const package = require('./package.json');
+const {
+	CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
 const outputPath = path.join(__dirname, 'dist');
 const isProduction = process.env.NODE_ENV === 'production ';
 
@@ -21,13 +23,15 @@ module.exports = {
 			dangerouslyAllowCleanPatternsOutsideProject: true,
 			dry: false,
 		}),
+		new webpack.BannerPlugin({
+			banner: `Generated: ${new Date()} || Version: ${package.version}`,
+		}),
 	],
 	node: {
 		fs: 'empty',
 	},
 	module: {
-		rules: [
-			{
+		rules: [{
 				test: /\.js?$/,
 				exclude: /node_modules/,
 			},
