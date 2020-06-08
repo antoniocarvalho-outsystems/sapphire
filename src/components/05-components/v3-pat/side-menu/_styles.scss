@@ -150,10 +150,14 @@
 	}
 
 	&__MenuItems {
-		@include component-scroll-root(4px, true, 2px);
+		@include component-scroll-root(4px, true, 3px);
 
 		margin-top: 25px;
 		overflow: auto;
+
+		&::-webkit-scrollbar-thumb {
+			border: 3px solid $regular-white;
+		}
 
 		.MenuItem {
 			&.activeIndicator {
@@ -168,7 +172,7 @@
 
 			&.active {
 				background-color: $sapphire-dark-blue2;
-				height: unset;
+				height: auto;
 			}
 
 			&_icon {
@@ -177,6 +181,7 @@
 
 			&_subItems {
 				margin-left: -15px;
+				max-height: unset;
 				overflow: unset;
 				position: initial;
 				visibility: hidden;
