@@ -1,4 +1,4 @@
-/*! Generated: Mon Jun 08 2020 11:36:17 GMT+0100 (GMT+01:00) || Version: 5.0.890020 */
+/*! Generated: Mon Jun 08 2020 18:31:12 GMT+0100 (Western European Summer Time) || Version: 5.0.890020 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23325,13 +23325,15 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     overflow: auto; }
     .SideMenu__MenuItems::-webkit-scrollbar {
       background-color: transparent;
-      height: 2px;
-      width: 2px; }
+      height: 3px;
+      width: 3px; }
     .SideMenu__MenuItems::-webkit-scrollbar-track {
       border: none; }
     .SideMenu__MenuItems::-webkit-scrollbar-thumb {
       border: 5px solid #fff;
       border-radius: 4px; }
+    .SideMenu__MenuItems::-webkit-scrollbar-thumb {
+      border: 3px solid #fff; }
     .SideMenu__MenuItems .MenuItem.activeIndicator {
       background-color: inherit;
       border-left: 2px solid #fff;
@@ -23340,11 +23342,12 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
         background-color: #30384a; }
     .SideMenu__MenuItems .MenuItem.active {
       background-color: #30384a;
-      height: unset; }
+      height: auto; }
     .SideMenu__MenuItems .MenuItem_icon {
       margin-right: 10px; }
     .SideMenu__MenuItems .MenuItem_subItems {
       margin-left: -15px;
+      max-height: unset;
       overflow: unset;
       position: initial;
       visibility: hidden; }
