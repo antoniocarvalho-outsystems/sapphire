@@ -1,4 +1,4 @@
-/*! Generated: Mon Jun 08 2020 18:31:12 GMT+0100 (Western European Summer Time) || Version: 5.0.890020 */
+/*! Generated: Tue Jun 09 2020 16:04:02 GMT+0100 (Western European Summer Time) || Version: 5.0.890021 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9856,9 +9856,14 @@ a.Button.IsDefault,
   height: 60px;
   padding-left: 60px; }
   .LayoutBase--sideMenu.LayoutBase--withTabs .LayoutBase-MainContent .FullScreenTabsWrapper .FullScreenTabsWrapper_Container.Dashboard .TabWrapper {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
     height: 55px;
-    line-height: calc(55px - 5px);
     padding: 0 30px; }
+    .LayoutBase--sideMenu.LayoutBase--withTabs .LayoutBase-MainContent .FullScreenTabsWrapper .FullScreenTabsWrapper_Container.Dashboard .TabWrapper_tab {
+      line-height: normal; }
 
 .LayoutBase--sideMenu.LayoutBase--withTabs .SideMenu__Title {
   color: #fff; }
