@@ -1,4 +1,4 @@
-/*! Generated: Tue Jun 09 2020 16:10:35 GMT+0100 (GMT+01:00) || Version: 5.0.890022 */
+/*! Generated: Tue Jun 09 2020 17:41:56 GMT+0100 (GMT+01:00) || Version: 5.0.890023 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23277,6 +23277,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       opacity: 0;
       -webkit-transition: all 0.1s ease;
       transition: all 0.1s ease; }
+    .SideMenu__Content .iframeContainer {
+      display: none; }
   .SideMenu__Header {
     color: #fff;
     display: -webkit-inline-box;
