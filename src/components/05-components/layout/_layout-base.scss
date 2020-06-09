@@ -155,9 +155,14 @@
 						padding-left: 60px;
 
 						.TabWrapper {
+							@include flex-center-vertically();
+
 							height: 55px;
-							line-height: calc(55px - 5px);
 							padding: 0 30px;
+
+							&_tab {
+								line-height: normal;
+							}
 						}
 					}
 				}
