@@ -1,4 +1,4 @@
-/*! Generated: Tue Jun 09 2020 16:04:02 GMT+0100 (Western European Summer Time) || Version: 5.0.890021 */
+/*! Generated: Tue Jun 09 2020 16:10:35 GMT+0100 (GMT+01:00) || Version: 5.0.890022 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9905,6 +9905,9 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 .LayoutBlank.Page.MainInteractiveCard {
   padding: 0; }
 
+.LayoutBlank.Page.SidemenuIframe {
+  background-color: #2a5a6e; }
+
 .LayoutPopup {
   width: 100%; }
 
@@ -15859,7 +15862,9 @@ body.PanelOpened .daterangepicker {
 .tablet .TabWrapper.Active {
   display: block; }
 
-.tablet .TabWrapper {
+.tablet .TabWrapper,
+.desktop.small .TabWrapper {
+  line-height: normal !important;
   text-align: center; }
 
 .tablet .FullScreenTabsWrapper_Container {
@@ -23315,6 +23320,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
                 align-items: center;
         display: -webkit-inline-box;
         display: inline-flex; }
+        .SideMenu__TabItems .MenuItem_label a {
+          display: block;
+          pointer-events: all; }
         .SideMenu__TabItems .MenuItem_label .Notifications {
           background-color: #fff;
           border-radius: 50%;
