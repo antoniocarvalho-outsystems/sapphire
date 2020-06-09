@@ -28,13 +28,13 @@
 			this.openMenuItem(0);
 		}
 		$(function () {
-			window.parent.$('.lds-ring').fadeOut();
+			window.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();
 			if (!this.isExpandable) {
 				$('input[type="text"]:visible').eq(0).focus();
 			}
 		});
 		$(window).unload(function () {
-			window.parent.$('.lds-ring').fadeOut();
+			window.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();
 		});
 	};
 

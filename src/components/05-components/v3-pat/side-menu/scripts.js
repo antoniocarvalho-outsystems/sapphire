@@ -1,8 +1,10 @@
 /* Component SideMenuStructure */
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	class SideMenu {
 		constructor(config) {
-			this.options = { ...config };
+			this.options = {
+				...config
+			};
 
 			this.onComponentInit();
 		}
@@ -14,7 +16,9 @@
 
 				if ($sideBarIframe.length && !$layoutHasTabs.length) {
 					const $mainMenu = $('.LayoutBase-MainMenu');
-					$mainMenu.css({ width: 'calc(100% - 262px)' });
+					$mainMenu.css({
+						width: 'calc(100% - 262px)'
+					});
 				}
 			});
 		}
@@ -23,11 +27,15 @@
 			if (toOpen) {
 				this.$component.addClass('SideMenu--open');
 
-				$('.LayoutBase-iframesidebar').css({ zIndex: 0 });
+				$('.LayoutBase-iframesidebar').css({
+					zIndex: 0
+				});
 			} else {
 				this.$component.removeClass('SideMenu--open');
 
-				$('.LayoutBase-iframesidebar').css({ zIndex: 70 });
+				$('.LayoutBase-iframesidebar').css({
+					zIndex: 70
+				});
 			}
 		}
 
@@ -41,6 +49,14 @@
 			this.$tabItem = this.$component.find('.SideMenu__TabItems .MenuItem');
 			this.$menuItem = this.$component.find('.SideMenu__MenuItems .MenuItem');
 			this.$subItem = this.$component.find('.SideMenu__MenuItems .MenuItem_subItems');
+
+
+			this.$iframeContainer = this.$component.find('.iframeContainer');
+			this.$iframeContainer.append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>');
+			this.$iframeContainer.find('iframe').load(() => {
+				this.$iframeContainer.find('.lds-ring').fadeOut();
+			});
+
 
 			this.$trigger.on('click', () => this.openCloseMenu(true));
 			this.$shield.on('click', () => this.openCloseMenu(false));
@@ -87,5 +103,7 @@
 
 	const create = config => (window[config.widgetId] = new SideMenu(config));
 
-	SapphireWidgets.SideMenu = { create };
+	SapphireWidgets.SideMenu = {
+		create
+	};
 })(jQuery, window, SapphireWidgets);

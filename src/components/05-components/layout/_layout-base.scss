@@ -1,206 +1,206 @@
 .LayoutBase {
-	&-Wrapper {
-		margin-bottom: 200px;
+  &-Wrapper {
+    margin-bottom: 200px;
 
-		&.hasFixedBottom .LayoutBase-bottomfixedcontent {
-			background-color: $regular-white;
-			bottom: 0;
-			box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
-			left: 0;
-			padding-left: 16px;
-			padding-right: 16px;
-			position: fixed;
-			z-index: 1;
-		}
-	}
+    &.hasFixedBottom .LayoutBase-bottomfixedcontent {
+      background-color: $regular-white;
+      bottom: 0;
+      box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+      left: 0;
+      padding-left: 16px;
+      padding-right: 16px;
+      position: fixed;
+      z-index: 1;
+    }
+  }
 
-	&-MainMenu,
-	&-MainMenu.PatientDetails_Header {
-		height: $default-menubar-height;
-		margin-top: 0;
-		position: fixed;
-		z-index: 30;
+  &-MainMenu,
+  &-MainMenu.PatientDetails_Header {
+    height: $default-menubar-height;
+    margin-top: 0;
+    position: fixed;
+    z-index: 30;
 
-		&:empty {
-			display: none;
-			height: 0;
-		}
-	}
+    &:empty {
+      display: none;
+      height: 0;
+    }
+  }
 
-	&-spacer {
-		display: block;
-	}
+  &-spacer {
+    display: block;
+  }
 
-	&-topfixedcontent {
-		background-color: $body-color;
-		position: fixed;
-		width: 100%;
-		z-index: 2;
-	}
+  &-topfixedcontent {
+    background-color: $body-color;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
 
-	&-bottomfixedcontent {
-		background-color: $body-color;
-		padding-left: 16px;
-	}
+  &-bottomfixedcontent {
+    background-color: $body-color;
+    padding-left: 16px;
+  }
 
-	&-iframesidebar {
-		height: 100vh;
-		position: fixed;
-		right: 0;
-		top: 0;
-		z-index: 70;
+  &-iframesidebar {
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 70;
 
-		&:before {
-			background-color: $sapphire-grey-blue;
-			content: '';
-			display: block;
-			height: 100vh;
-			position: absolute;
-			right: 0;
-			top: 0;
-			width: 40px;
-		}
+    &:before {
+      background-color: $sapphire-grey-blue;
+      content: '';
+      display: block;
+      height: 100vh;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40px;
+    }
 
-		&.notExpandable {
-			width: 262px;
-		}
+    &.notExpandable {
+      width: 262px;
+    }
 
-		&.notExpandable:before {
-			width: 262px;
-		}
+    &.notExpandable:before {
+      width: 262px;
+    }
 
-		&.isExpandable {
-			width: 40px;
-		}
+    &.isExpandable {
+      width: 40px;
+    }
 
-		.iframeContainer {
-			overflow: hidden !important;
-		}
+    .iframeContainer {
+      overflow: hidden !important;
+    }
 
-		.iframeContainer iframe {
-			background: transparent;
-		}
-	}
+    .iframeContainer iframe {
+      background: transparent;
+    }
+  }
 
-	&-header {
-		display: block;
-		padding-right: 40px;
-		position: fixed;
-		top: 44px;
-		width: 100%;
-		z-index: 20;
-	}
+  &-header {
+    display: block;
+    padding-right: 40px;
+    position: fixed;
+    top: 44px;
+    width: 100%;
+    z-index: 20;
+  }
 
-	.DischargeBackground {
-		background-color: transparent;
-	}
+  .DischargeBackground {
+    background-color: transparent;
+  }
 }
 
 .LayoutBase--sideMenu {
-	.LayoutBase {
-		&-MainMenu {
-			bottom: 0;
-			top: 0;
-			width: calc(100% - 40px);
-		}
+  .LayoutBase {
+    &-MainMenu {
+      bottom: 0;
+      top: 0;
+      width: calc(100% - 40px);
+    }
 
-		&-header {
-			top: 0;
-		}
+    &-header {
+      top: 0;
+    }
 
-		&-spacer {
-			min-height: 44px;
-		}
+    &-spacer {
+      min-height: 44px;
+    }
 
-		&-topfixedcontent {
-			.ManageQueueContainer {
-				margin: 16px;
-				margin-top: 24px;
-				opacity: 1;
-				position: absolute;
-				transition: opacity 0.3s ease-out;
-				width: calc(100% - 32px);
+    &-topfixedcontent {
+      .ManageQueueContainer {
+        margin: 16px;
+        margin-top: 24px;
+        opacity: 1;
+        position: absolute;
+        transition: opacity 0.3s ease-out;
+        width: calc(100% - 32px);
 
-				&--closed {
-					opacity: 0;
-				}
+        &--closed {
+          opacity: 0;
+        }
 
-				.Columns .Column > div {
-					height: 90px;
-				}
-			}
-		}
+        .Columns .Column>div {
+          height: 90px;
+        }
+      }
+    }
 
-		&-subLayoutContent {
-			padding-top: 100px;
-		}
-	}
+    &-subLayoutContent {
+      padding-top: 100px;
+    }
+  }
 
-	&.LayoutBase--withTabs {
-		.LayoutBase {
-			&-spacer {
-				display: none;
-			}
+  &.LayoutBase--withTabs {
+    .LayoutBase {
+      &-spacer {
+        display: none;
+      }
 
-			&-MainMenu {
-				height: 0;
-				position: absolute;
-				width: fit-content;
-			}
+      &-MainMenu {
+        height: 0;
+        position: absolute;
+        width: fit-content;
+      }
 
-			&-MainContent {
-				.FullScreenTabsWrapper {
-					.FullScreenTabsWrapper_Container.Dashboard {
-						height: 60px;
-						padding-left: 60px;
+      &-MainContent {
+        .FullScreenTabsWrapper {
+          .FullScreenTabsWrapper_Container.Dashboard {
+            height: 60px;
+            padding-left: 60px;
 
-						.TabWrapper {
-							height: 55px;
-							line-height: calc(55px - 5px);
-							padding: 0 30px;
-						}
-					}
-				}
-			}
-		}
+            .TabWrapper {
+              height: 55px;
+              line-height: calc(55px - 5px);
+              padding: 0 30px;
+            }
+          }
+        }
+      }
+    }
 
-		.SideMenu {
-			&__Title {
-				color: $regular-white;
-			}
+    .SideMenu {
+      &__Title {
+        color: $regular-white;
+      }
 
-			&__PageTitle {
-				display: none;
-			}
-		}
-	}
+      &__PageTitle {
+        display: none;
+      }
+    }
+  }
 
-	.PatientDetailsLayout.hasHeader {
-		.LayoutBase-spacer {
-			min-height: 80px;
-		}
-	}
+  .PatientDetailsLayout.hasHeader {
+    .LayoutBase-spacer {
+      min-height: 80px;
+    }
+  }
 }
 
 body.LayoutBase .os-internal-ui-widget-overlay {
-	z-index: 90 !important;
+  z-index: 90 !important;
 }
 
 .AR,
 .FA {
-	.LayoutBase-Wrapper.hasFixedBottom .LayoutBase-bottomfixedcontent {
-		left: auto;
-		right: 0;
-	}
+  .LayoutBase-Wrapper.hasFixedBottom .LayoutBase-bottomfixedcontent {
+    left: auto;
+    right: 0;
+  }
 
-	.LayoutBase-iframesidebar,
-	.LayoutBase-iframesidebar:before {
-		left: 0;
-		right: auto;
-	}
+  .LayoutBase-iframesidebar,
+  .LayoutBase-iframesidebar:before {
+    left: 0;
+    right: auto;
+  }
 
-	.LayoutBase-header {
-		padding-left: 40px;
-		padding-right: 0;
-	}
+  .LayoutBase-header {
+    padding-left: 40px;
+    padding-right: 0;
+  }
 }

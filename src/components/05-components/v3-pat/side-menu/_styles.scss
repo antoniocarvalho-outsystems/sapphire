@@ -1,278 +1,283 @@
 .SideMenu {
-	background-color: $body-color;
+  background-color: $body-color;
 
-	&--open & {
-		&__Shield {
-			height: 100vh;
-			width: 100vw;
-		}
+  &--open & {
+    &__Shield {
+      height: 100vh;
+      width: 100vw;
+    }
 
-		&__Content {
-			visibility: visible;
-			width: 285px;
-			z-index: 1;
+    &__Content {
+      visibility: visible;
+      width: 285px;
+      z-index: 1;
 
-			* {
-				opacity: 1;
-			}
-		}
-	}
+      * {
+        opacity: 1;
+      }
+    }
+  }
 
-	&__Title {
-		@include flex-center-vertically(inline-flex);
+  &__Title {
+    @include flex-center-vertically(inline-flex);
 
-		color: $dark-grey;
-	}
+    color: $dark-grey;
+  }
 
-	&__PageTitle {
-		color: $mid-dark-grey;
-		font-family: $font-family-latin-bold;
-		font-size: 1.143em;
-		padding-left: 35px;
-	}
+  &__PageTitle {
+    color: $mid-dark-grey;
+    font-family: $font-family-latin-bold;
+    font-size: 1.143em;
+    padding-left: 35px;
+  }
 
-	&__Trigger {
-		@include flex-center-total(inline-flex);
+  &__Trigger {
+    @include flex-center-total(inline-flex);
 
-		background-color: $regular-white;
-		color: $regular-white;
-		cursor: pointer;
-		flex-direction: column;
-		height: 60px;
-		padding: 10px;
-		transition: all 0.3s ease;
-		width: 60px;
+    background-color: $regular-white;
+    color: $regular-white;
+    cursor: pointer;
+    flex-direction: column;
+    height: 60px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    width: 60px;
 
-		&:hover {
-			background-color: $regular-eta;
-		}
+    &:hover {
+      background-color: $regular-eta;
+    }
 
-		div {
-			background-color: $regular-alpha;
-			height: 3px;
-			margin: 2px 0;
-			width: 30px;
-		}
-	}
+    div {
+      background-color: $regular-alpha;
+      height: 3px;
+      margin: 2px 0;
+      width: 30px;
+    }
+  }
 
-	&__Shield {
-		background-color: $dark-grey;
-		height: 0;
-		opacity: 0.2;
-		position: fixed;
-		top: 0;
-		width: 0;
-	}
+  &__Shield {
+    background-color: $dark-grey;
+    height: 0;
+    opacity: 0.2;
+    position: fixed;
+    top: 0;
+    width: 0;
+  }
 
-	&__Content {
-		background-color: $sapphire-blue;
-		display: flex;
-		flex-direction: column;
-		height: 100vh;
-		padding-bottom: 20px;
-		position: fixed;
-		top: 0;
-		transition: all 0.3s ease;
-		visibility: hidden;
-		width: 0;
+  &__Content {
+    background-color: $sapphire-blue;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    width: 0;
 
-		* {
-			opacity: 0;
-			transition: all 0.1s ease;
-		}
-	}
+    * {
+      opacity: 0;
+      transition: all 0.1s ease;
+    }
+  }
 
-	&__Header {
-		color: $regular-white;
-		display: inline-flex;
-		padding: 20px 12px 20px 20px;
-		width: 100%;
-	}
+  &__Header {
+    color: $regular-white;
+    display: inline-flex;
+    padding: 20px 12px 20px 20px;
+    width: 100%;
+  }
 
-	&__MenuClose {
-		cursor: pointer;
-		height: 22px;
-		margin-right: 15px;
-		transition: all 0.3s ease;
-		width: 22px;
+  &__MenuClose {
+    cursor: pointer;
+    height: 22px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    width: 22px;
 
-		&:hover {
-			transform: scale(1.1);
-		}
-	}
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 
-	&__MenuLogo {
-		font-size: 6em;
-		height: 22px;
-		overflow: hidden;
-		position: relative;
-		width: 100%;
+  &__MenuLogo {
+    font-size: 6em;
+    height: 22px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 
-		.icon {
-			color: $regular-white;
-			position: absolute;
-			top: -45px;
-		}
-	}
+    .icon {
+      color: $regular-white;
+      position: absolute;
+      top: -45px;
+    }
+  }
 
-	&__TabItems {
-		padding-top: 10px;
+  &__TabItems {
+    padding-top: 10px;
 
-		&::after {
-			background-color: $regular-white;
-			content: '';
-			display: block;
-			height: 1px;
-			margin-left: 55px;
-			margin-top: 25px;
-		}
+    &::after {
+      background-color: $regular-white;
+      content: '';
+      display: block;
+      height: 1px;
+      margin-left: 55px;
+      margin-top: 25px;
+    }
 
-		.MenuItem {
-			font-family: $font-family-latin-bold;
-			font-size: 1.3em;
+    .MenuItem {
+      font-family: $font-family-latin-bold;
+      font-size: 1.3em;
 
-			&_label {
-				@include flex-center-vertically(inline-flex);
+      &_label {
+        @include flex-center-vertically(inline-flex);
 
-				.Notifications {
-					background-color: $regular-white;
-					border-radius: 50%;
-					color: $sapphire-blue;
-					font-size: 0.786em;
-					height: 20px;
-					line-height: 19px;
-					margin-left: 15px;
-					text-align: center;
-					width: 21px;
-				}
-			}
-		}
-	}
+        a {
+          display: block;
+          pointer-events: all;
+        }
 
-	&__MenuItems {
-		@include component-scroll-root(4px, true, 3px);
+        .Notifications {
+          background-color: $regular-white;
+          border-radius: 50%;
+          color: $sapphire-blue;
+          font-size: 0.786em;
+          height: 20px;
+          line-height: 19px;
+          margin-left: 15px;
+          text-align: center;
+          width: 21px;
+        }
+      }
+    }
+  }
 
-		margin-top: 25px;
-		overflow: auto;
+  &__MenuItems {
+    @include component-scroll-root(4px, true, 3px);
 
-		&::-webkit-scrollbar-thumb {
-			border: 3px solid $regular-white;
-		}
+    margin-top: 25px;
+    overflow: auto;
 
-		.MenuItem {
-			&.activeIndicator {
-				background-color: inherit;
-				border-left: 2px solid $regular-white;
-				padding-left: 53px;
+    &::-webkit-scrollbar-thumb {
+      border: 3px solid $regular-white;
+    }
 
-				&:hover {
-					background-color: $sapphire-dark-blue2;
-				}
-			}
+    .MenuItem {
+      &.activeIndicator {
+        background-color: inherit;
+        border-left: 2px solid $regular-white;
+        padding-left: 53px;
 
-			&.active {
-				background-color: $sapphire-dark-blue2;
-				height: auto;
-			}
+        &:hover {
+          background-color: $sapphire-dark-blue2;
+        }
+      }
 
-			&_icon {
-				margin-right: 10px;
-			}
+      &.active {
+        background-color: $sapphire-dark-blue2;
+        height: auto;
+      }
 
-			&_subItems {
-				margin-left: -15px;
-				max-height: unset;
-				overflow: unset;
-				position: initial;
-				visibility: hidden;
+      &_icon {
+        margin-right: 10px;
+      }
 
-				&.show {
-					visibility: visible;
+      &_subItems {
+        margin-left: -15px;
+        max-height: unset;
+        overflow: unset;
+        position: initial;
+        visibility: hidden;
 
-					*:last-child {
-						margin-bottom: 15px;
-					}
-				}
+        &.show {
+          visibility: visible;
 
-				* {
-					&:empty {
-						display: none;
-					}
-				}
-			}
-		}
-	}
+          *:last-child {
+            margin-bottom: 15px;
+          }
+        }
 
-	&__TabItems,
-	&__MenuItems {
-		.MenuItem {
-			overflow: hidden;
-			padding-left: 55px;
-			width: 100%;
+        * {
+          &:empty {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 
-			&_icon,
-			&_label {
-				pointer-events: none;
-			}
+  &__TabItems,
+  &__MenuItems {
+    .MenuItem {
+      overflow: hidden;
+      padding-left: 55px;
+      width: 100%;
 
-			&_icon,
-			&_subItems {
-				&:empty {
-					display: none;
-				}
-			}
-		}
-	}
+      &_icon,
+      &_label {
+        pointer-events: none;
+      }
+
+      &_icon,
+      &_subItems {
+        &:empty {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .AR,
 .FA {
-	.SideMenu {
-		&__PageTitle {
-			padding-left: 0;
-			padding-right: 35px;
-		}
+  .SideMenu {
+    &__PageTitle {
+      padding-left: 0;
+      padding-right: 35px;
+    }
 
-		&__MenuClose {
-			margin-left: 15px;
-			margin-right: 0;
-		}
+    &__MenuClose {
+      margin-left: 15px;
+      margin-right: 0;
+    }
 
-		&__TabItems::after {
-			margin-left: 0;
-			margin-right: 55px;
-		}
+    &__TabItems::after {
+      margin-left: 0;
+      margin-right: 55px;
+    }
 
-		&__MenuItems {
-			.MenuItem {
-				&.activeIndicator {
-					border-left: none;
-					border-right: 2px solid $regular-white;
-					padding-left: 53px;
-				}
+    &__MenuItems {
+      .MenuItem {
+        &.activeIndicator {
+          border-left: none;
+          border-right: 2px solid $regular-white;
+          padding-left: 53px;
+        }
 
-				&_icon {
-					margin-left: 10px;
-					margin-right: 0;
-				}
+        &_icon {
+          margin-left: 10px;
+          margin-right: 0;
+        }
 
-				&_subItems {
-					margin-left: auto;
-					margin-right: -15px;
-				}
-			}
-		}
+        &_subItems {
+          margin-left: auto;
+          margin-right: -15px;
+        }
+      }
+    }
 
-		&__TabItems,
-		&__MenuItems {
-			.MenuItem {
-				padding-left: 15px;
-				padding-right: 55px;
-			}
-		}
+    &__TabItems,
+    &__MenuItems {
+      .MenuItem {
+        padding-left: 15px;
+        padding-right: 55px;
+      }
+    }
 
-		&__Header {
-			padding: 20px 20px 20px 12px;
-		}
-	}
+    &__Header {
+      padding: 20px 20px 20px 12px;
+    }
+  }
 }

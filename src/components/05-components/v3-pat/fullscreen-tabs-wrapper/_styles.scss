@@ -264,7 +264,9 @@ $tab-height: 44px;
 //   padding: 0px 15px;
 // }
 
-.tablet .TabWrapper {
+.tablet .TabWrapper,
+.desktop.small .TabWrapper {
+  line-height: normal !important;
   text-align: center;
 }
 
