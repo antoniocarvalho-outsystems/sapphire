@@ -25,6 +25,13 @@ require('./styles.scss');
 				}
 			}
 		});
+
+		$(window).load(() => {
+			let pathname = window.location.pathname.replace('/StyleGuideV2_UI/', '');
+
+			if (pathname === 'WhatsNew.aspx') $('.DesignSystem__FabButton').hide();
+		});
+
 		this.bindEvents();
 	};
 
