@@ -1,0 +1,10 @@
+.GenericGrid {
+  border: solid 1px red;
+  display: grid;
+  gap: 20px 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.GenericGrid-item {
+  border: dotted 1px green;
+}
