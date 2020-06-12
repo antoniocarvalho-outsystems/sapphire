@@ -588,11 +588,11 @@ $styleguide-main-content-padding: 50px;
 		position: fixed;
 		right: 30px;
 		text-align: center;
-		transition: all 0.2s ease-in;
+		transition: all 1s;
 		width: 50px;
 
 		&:hover {
-			transform: translateY(-3px);
+			transform: scale(1.2);
 		}
 
 		a:link,
@@ -601,7 +601,26 @@ $styleguide-main-content-padding: 50px;
 			color: $regular-white;
 			display: inline-block;
 			height: 50px;
+			position: relative;
+
 			width: 50px;
+		}
+	}
+
+	&__FabAlert {
+		background-color: $regular-red;
+		border: 1px solid $regular-white;
+		border-radius: 50%;
+		height: 10px;
+		opacity: 0;
+		position: absolute;
+		right: 12px;
+		top: 10px;
+		transition: all 1s;
+		width: 10px;
+
+		&--new {
+			opacity: 1;
 		}
 	}
 
