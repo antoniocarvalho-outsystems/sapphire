@@ -1,4 +1,4 @@
-/*! Generated: Tue Jun 09 2020 17:41:56 GMT+0100 (GMT+01:00) || Version: 5.0.890023 */
+/*! Generated: Fri Jun 12 2020 18:01:49 GMT+0100 (Western European Summer Time) || Version: 5.0.890025 */
 /* Font base: 14px */
 body {
   background-color: #fff !important;
@@ -455,19 +455,34 @@ body {
     position: fixed;
     right: 30px;
     text-align: center;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    -webkit-transition: all 1s;
+    transition: all 1s;
     width: 50px; }
     .DesignSystem__FabButton:hover {
-      -webkit-transform: translateY(-3px);
-              transform: translateY(-3px); }
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
     .DesignSystem__FabButton a:link,
     .DesignSystem__FabButton a:visited {
       border-radius: 50%;
       color: #fff;
       display: inline-block;
       height: 50px;
+      position: relative;
       width: 50px; }
+  .DesignSystem__FabAlert {
+    background-color: #ff3e2d;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 10px;
+    opacity: 0;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    width: 10px; }
+    .DesignSystem__FabAlert--new {
+      opacity: 1; }
   .DesignSystem__NewsHeader {
     background-color: #00bfa5;
     color: #fff;

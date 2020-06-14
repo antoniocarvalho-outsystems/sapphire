@@ -6,30 +6,17 @@ require('./styles.scss');
 		this.$filterInput = $('#' + config.filterInput);
 		this.$filterClear = this.$filterInput.parent().find('.icon');
 
-		this.$filterInput.on('keydown', evt => {
-			if (evt.key === 'Enter') return false;
-		});
-
-		this.$filterInput.on('input', evt => {
-			if (this.$filterInput.val().length > 2) {
-				this.filterTerm(evt.target.value);
-				this.$filterClear.show();
-			} else {
-				const $menu = $('.DesignSystem__MenuSection');
-				$menu.find('a, .DesignSystem__MenuSection, .DesignSystem__MenuSubSection').show();
-				$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
-				if (this.$filterInput.val().length > 0) {
-					this.$filterClear.show();
-				} else {
-					this.$filterClear.hide();
-				}
-			}
-		});
 		this.bindEvents();
 	};
 
 	const setRTLmode = () => {
 		$('.DesignSystem.Page').toggleClass('AR');
+	};
+
+	const setLastNoteAdded = value => {
+		localStorage.setItem('lastNoteAdded', value);
+
+		this.verifyNewNotes();
 	};
 
 	filterTerm = term => {
@@ -67,6 +54,26 @@ require('./styles.scss');
 			window.location.href = `${url}#${title}`;
 		});
 
+		this.$filterInput.on('keydown', evt => {
+			if (evt.key === 'Enter') return false;
+		});
+
+		this.$filterInput.on('input', evt => {
+			if (this.$filterInput.val().length > 2) {
+				this.filterTerm(evt.target.value);
+				this.$filterClear.show();
+			} else {
+				const $menu = $('.DesignSystem__MenuSection');
+				$menu.find('a, .DesignSystem__MenuSection, .DesignSystem__MenuSubSection').show();
+				$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
+				if (this.$filterInput.val().length > 0) {
+					this.$filterClear.show();
+				} else {
+					this.$filterClear.hide();
+				}
+			}
+		});
+
 		this.$filterClear.on('click', () => {
 			this.$filterInput.val('').trigger('input');
 		});
@@ -77,10 +84,19 @@ require('./styles.scss');
 
 		$(window).load(() => {
 			const hash = window.location.hash.slice(1);
+			const pathname = window.location.pathname.replace('/StyleGuideV2_UI/', '');
+
 			if (!!hash) {
 				let $content = $('.DesignSystem__Content').find('[title="' + hash + '"]');
 				if (!!$content.length) $(window).scrollTop($content.offset().top);
 			}
+
+			if (pathname === 'WhatsNew.aspx') {
+				$('.DesignSystem__FabButton').hide();
+
+				localStorage.setItem('lastNoteViewed', localStorage.getItem('lastNoteAdded'));
+			}
+
 			markAsideMenu(true);
 		});
 
@@ -143,10 +159,20 @@ require('./styles.scss');
 		$('.DesignSystem__MenuSubSection').removeClass('DesignSystem__MenuSubSection--inactive');
 	};
 
+	verifyNewNotes = () => {
+		const lastAdded = localStorage.getItem('lastNoteAdded');
+		const lastViewed = localStorage.getItem('lastNoteViewed');
+
+		if (+lastAdded > +lastViewed) {
+			$('.DesignSystem__FabAlert').addClass('DesignSystem__FabAlert--new');
+		}
+	};
+
 	SapphireWidgets.DesignSystem = {
 		create,
 		openAll,
 		closeAll,
 		setRTLmode,
+		setLastNoteAdded,
 	};
 })(jQuery, window, SapphireWidgets);
