@@ -1,4 +1,4 @@
-/*! Generated: Sun Jun 14 2020 15:31:58 GMT+0100 (GMT+01:00) || Version: 5.0.890026 */
+/*! Generated: Mon Jun 15 2020 10:39:09 GMT+0100 (Western European Summer Time) || Version: 5.0.890027 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9819,12 +9819,14 @@ a.Button.IsDefault,
   bottom: 0;
   top: 0;
   width: calc(100% - 40px); }
+  .LayoutBase--sideMenu .LayoutBase-MainMenu:not(:empty) {
+    height: 60px; }
 
 .LayoutBase--sideMenu .LayoutBase-header {
   top: 0; }
 
 .LayoutBase--sideMenu .LayoutBase-spacer {
-  min-height: 44px; }
+  min-height: 60px; }
 
 .LayoutBase--sideMenu .LayoutBase-topfixedcontent .ManageQueueContainer {
   margin: 16px;
@@ -28474,6 +28476,9 @@ input[type]:focus.SavedInput {
 
 .LayoutBase .select2-container--open .select2-dropdown--below {
   z-index: 101; }
+
+.LayoutBase--sideMenu .LayoutBase-MainMenu:not(:empty) ~ .LayoutBase-header {
+  top: 60px; }
 
 .AR .LayoutBase.Page .ClinicianWorkArea-columns-big,
 .FA .LayoutBase.Page .ClinicianWorkArea-columns-big {
