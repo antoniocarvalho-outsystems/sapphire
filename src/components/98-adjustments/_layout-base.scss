@@ -294,6 +294,10 @@
 	}
 }
 
+.LayoutBase--sideMenu .LayoutBase-MainMenu:not(:empty) ~ .LayoutBase-header {
+	top: 60px;
+}
+
 .AR,
 .FA {
 	.LayoutBase.Page .ClinicianWorkArea-columns-big {
