@@ -16,6 +16,7 @@
 		}
 
 		this.$gallery.css({
+			'display': 'grid',
 			'gridTemplateColumns': 'repeat(' + this.config.columnSizing + ', minmax(' + this.config.columnMinWidth + ', 1fr))'
 		});
 
