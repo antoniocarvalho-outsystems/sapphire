@@ -18,15 +18,23 @@
     margin-top: #{$value};
   }
 
-  .tablet .MultiMarginTop#{$label}-tablet {
-    margin-top: #{$value};
-  }
-
   .MultiMarginBottom#{$label} {
     margin-bottom: #{$value};
   }
 
+  .tablet .MultiMarginTop#{$label}-tablet {
+    margin-top: #{$value};
+  }
+
   .tablet .MultiMarginBottom#{$label}-tablet {
+    margin-bottom: #{$value};
+  }
+
+  .desktop.small .MultiMarginTop#{$label}-desktop-small {
+    margin-top: #{$value};
+  }
+
+  .desktop.small .MultiMarginBottom#{$label}-desktop-small {
     margin-bottom: #{$value};
   }
 

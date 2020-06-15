@@ -106,4 +106,5 @@
 	SapphireWidgets.SideMenu = {
 		create
 	};
+
 })(jQuery, window, SapphireWidgets);
