@@ -1,4 +1,4 @@
-/*! Generated: Mon Jun 15 2020 18:00:48 GMT+0100 (Western European Summer Time) || Version: 5.0.890029 */
+/*! Generated: Mon Jun 15 2020 18:39:56 GMT+0100 (GMT+01:00) || Version: 5.0.890030 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16403,9 +16403,6 @@ div.Toolbar {
       content: '';
       position: absolute;
       z-index: 2; }
-    div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsIcon span[ui='more-options-icon'] {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
     div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsIcon span[ui='more-options-title'] {
       color: transparent; }
       div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsIcon span[ui='more-options-title']::after {
@@ -16430,17 +16427,14 @@ div.Toolbar {
             flex-direction: column;
     height: 100%;
     width: 80px; }
-    div.Toolbar__MoreOptionsIcon:hover span[ui='more-options-icon'] {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
     div.Toolbar__MoreOptionsIcon:hover span[ui='more-options-title'] {
       color: transparent; }
       div.Toolbar__MoreOptionsIcon:hover span[ui='more-options-title']::after {
         opacity: 1; }
     div.Toolbar__MoreOptionsIcon span[ui='more-options-icon'],
     div.Toolbar__MoreOptionsIcon span[ui='more-options-title'] {
-      -webkit-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in; }
+      -webkit-transition: all 0.1s ease-in;
+      transition: all 0.1s ease-in; }
     div.Toolbar__MoreOptionsIcon span[ui='more-options-title'] {
       position: relative; }
       div.Toolbar__MoreOptionsIcon span[ui='more-options-title']::after {
