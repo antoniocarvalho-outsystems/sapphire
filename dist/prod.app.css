@@ -1,4 +1,4 @@
-/*! Generated: Mon Jun 15 2020 13:53:55 GMT+0100 (GMT+01:00) || Version: 5.0.890028 */
+/*! Generated: Mon Jun 15 2020 18:00:48 GMT+0100 (Western European Summer Time) || Version: 5.0.890029 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9986,6 +9986,12 @@ body .Page.tablet .MainPopup,
 body .Page.desktop .MainPopup {
   min-width: auto;
   padding: 0; }
+
+div.os-internal-ui-dialog {
+  left: 50%;
+  top: 50% !important;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 div.os-internal-Popup .os-internal-ui-dialog .os-internal-ui-dialog-titlebar,
 div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar {
@@ -26371,13 +26377,19 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .MultiMarginTopXXSmall {
   margin-top: 3px; }
 
-.tablet .MultiMarginTopXXSmall-tablet {
-  margin-top: 3px; }
-
 .MultiMarginBottomXXSmall {
   margin-bottom: 3px; }
 
+.tablet .MultiMarginTopXXSmall-tablet {
+  margin-top: 3px; }
+
 .tablet .MultiMarginBottomXXSmall-tablet {
+  margin-bottom: 3px; }
+
+.desktop.small .MultiMarginTopXXSmall-desktop-small {
+  margin-top: 3px; }
+
+.desktop.small .MultiMarginBottomXXSmall-desktop-small {
   margin-bottom: 3px; }
 
 .AR .MultiMarginLeftXXSmall,
@@ -26402,13 +26414,19 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .MultiMarginTopXSmall {
   margin-top: 6px; }
 
-.tablet .MultiMarginTopXSmall-tablet {
-  margin-top: 6px; }
-
 .MultiMarginBottomXSmall {
   margin-bottom: 6px; }
 
+.tablet .MultiMarginTopXSmall-tablet {
+  margin-top: 6px; }
+
 .tablet .MultiMarginBottomXSmall-tablet {
+  margin-bottom: 6px; }
+
+.desktop.small .MultiMarginTopXSmall-desktop-small {
+  margin-top: 6px; }
+
+.desktop.small .MultiMarginBottomXSmall-desktop-small {
   margin-bottom: 6px; }
 
 .AR .MultiMarginLeftXSmall,
@@ -26433,13 +26451,19 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .MultiMarginTopSmall {
   margin-top: 12px; }
 
-.tablet .MultiMarginTopSmall-tablet {
-  margin-top: 12px; }
-
 .MultiMarginBottomSmall {
   margin-bottom: 12px; }
 
+.tablet .MultiMarginTopSmall-tablet {
+  margin-top: 12px; }
+
 .tablet .MultiMarginBottomSmall-tablet {
+  margin-bottom: 12px; }
+
+.desktop.small .MultiMarginTopSmall-desktop-small {
+  margin-top: 12px; }
+
+.desktop.small .MultiMarginBottomSmall-desktop-small {
   margin-bottom: 12px; }
 
 .AR .MultiMarginLeftSmall,
@@ -26464,13 +26488,19 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .MultiMarginTopMedium {
   margin-top: 18px; }
 
-.tablet .MultiMarginTopMedium-tablet {
-  margin-top: 18px; }
-
 .MultiMarginBottomMedium {
   margin-bottom: 18px; }
 
+.tablet .MultiMarginTopMedium-tablet {
+  margin-top: 18px; }
+
 .tablet .MultiMarginBottomMedium-tablet {
+  margin-bottom: 18px; }
+
+.desktop.small .MultiMarginTopMedium-desktop-small {
+  margin-top: 18px; }
+
+.desktop.small .MultiMarginBottomMedium-desktop-small {
   margin-bottom: 18px; }
 
 .AR .MultiMarginLeftMedium,
@@ -26495,13 +26525,19 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .MultiMarginTopLarge {
   margin-top: 24px; }
 
-.tablet .MultiMarginTopLarge-tablet {
-  margin-top: 24px; }
-
 .MultiMarginBottomLarge {
   margin-bottom: 24px; }
 
+.tablet .MultiMarginTopLarge-tablet {
+  margin-top: 24px; }
+
 .tablet .MultiMarginBottomLarge-tablet {
+  margin-bottom: 24px; }
+
+.desktop.small .MultiMarginTopLarge-desktop-small {
+  margin-top: 24px; }
+
+.desktop.small .MultiMarginBottomLarge-desktop-small {
   margin-bottom: 24px; }
 
 .AR .MultiMarginLeftLarge,
@@ -26526,13 +26562,19 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .MultiMarginTopXLarge {
   margin-top: 30px; }
 
-.tablet .MultiMarginTopXLarge-tablet {
-  margin-top: 30px; }
-
 .MultiMarginBottomXLarge {
   margin-bottom: 30px; }
 
+.tablet .MultiMarginTopXLarge-tablet {
+  margin-top: 30px; }
+
 .tablet .MultiMarginBottomXLarge-tablet {
+  margin-bottom: 30px; }
+
+.desktop.small .MultiMarginTopXLarge-desktop-small {
+  margin-top: 30px; }
+
+.desktop.small .MultiMarginBottomXLarge-desktop-small {
   margin-bottom: 30px; }
 
 .AR .MultiMarginLeftXLarge,
@@ -26557,13 +26599,19 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .MultiMarginTopXXLarge {
   margin-top: 36px; }
 
-.tablet .MultiMarginTopXXLarge-tablet {
-  margin-top: 36px; }
-
 .MultiMarginBottomXXLarge {
   margin-bottom: 36px; }
 
+.tablet .MultiMarginTopXXLarge-tablet {
+  margin-top: 36px; }
+
 .tablet .MultiMarginBottomXXLarge-tablet {
+  margin-bottom: 36px; }
+
+.desktop.small .MultiMarginTopXXLarge-desktop-small {
+  margin-top: 36px; }
+
+.desktop.small .MultiMarginBottomXXLarge-desktop-small {
   margin-bottom: 36px; }
 
 .AR .MultiMarginLeftXXLarge,
@@ -26588,13 +26636,19 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .MultiMarginTopLargest {
   margin-top: 42px; }
 
-.tablet .MultiMarginTopLargest-tablet {
-  margin-top: 42px; }
-
 .MultiMarginBottomLargest {
   margin-bottom: 42px; }
 
+.tablet .MultiMarginTopLargest-tablet {
+  margin-top: 42px; }
+
 .tablet .MultiMarginBottomLargest-tablet {
+  margin-bottom: 42px; }
+
+.desktop.small .MultiMarginTopLargest-desktop-small {
+  margin-top: 42px; }
+
+.desktop.small .MultiMarginBottomLargest-desktop-small {
   margin-bottom: 42px; }
 
 .AR .MultiMarginLeftLargest,
