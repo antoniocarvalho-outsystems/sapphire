@@ -1,56 +1,39 @@
-.GenericGallery-content>.ListRecords>span {
-  animation: all .5s ease-in;
-  display: block;
-  opacity: 0;
+.GenericGallery {
+
+  .GenericGallery-content {
+    display: grid;
+  }
+
+  .GenericGallery-item {
+    opacity: 1;
+  }
+
+  @each $size in $sapphire__sizes {
+    $label: nth($size, 1);
+    $value: nth($size, 2);
+
+    &.GenericGallery-column-gap--#{$label} {
+      .GenericGallery-content {
+        grid-column-gap: #{$value};
+      }
+    }
+
+    &.GenericGallery-row-gap--#{$label} {
+      .GenericGallery-content {
+        grid-row-gap: #{$value};
+      }
+    }
+
+    &.GenericGallery-padding--#{$label} {
+      .GenericGallery-item {
+        padding: #{$value};
+      }
+    }
+
+  }
+
 }
 
-.GenericGallery-item {
-  box-sizing: border-box;
-  display: inline-block;
-  opacity: 0;
-  vertical-align: top;
-}
-
-.GenericGallery.isEqualHeight .GenericGallery-item>div {
-  height: 100%;
-}
-
-.GenericGallery-margin--None .GenericGallery-item {
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-.GenericGallery-margin--XSmall .GenericGallery-item {
-  margin-bottom: 6px;
-  margin-left: 6px;
-}
-
-.GenericGallery-margin--Small {
-  margin-left: -10px;
-}
-
-.GenericGallery-margin--Small .GenericGallery-item {
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.GenericGallery-margin--Medium {
-  margin-left: -16px;
-}
-
-.GenericGallery-margin--Medium .GenericGallery-item {
-  margin-bottom: 16px;
-  margin-left: 16px;
-}
-
-.GenericGallery-margin--Large {
-  margin-left: -26px;
-}
-
-.GenericGallery-margin--Large .GenericGallery-item {
-  margin-bottom: 26px;
-  margin-left: 26px;
-}
 
 .GenericGallery-border--None {
   border: none;
@@ -61,25 +44,17 @@
 }
 
 .GenericGallery-border--All .GenericGallery-item {
-  border: solid 1px #ccc;
+  border: solid 1px $light-grey;
 }
 
 .GenericGallery-border--Left .GenericGallery-item {
-  border-left: solid 2px #ccc;
+  border-left: solid 2px $light-grey;
 }
 
 .GenericGallery-border--Right .GenericGallery-item {
-  border-right: solid 2px #ccc;
+  border-right: solid 2px $light-grey;
 }
 
 .GenericGallery-border--Bottom .GenericGallery-item {
-  border-bottom: solid 2px #ccc;
-}
-
-.GenericGallery-padding--Medium .GenericGallery-item {
-  padding: 16px;
-}
-
-.GenericGallery-padding--Large .GenericGallery-item {
-  padding: 26px;
+  border-bottom: solid 2px $light-grey;
 }
