@@ -1,6 +1,6 @@
 /* Component PopUpMenu */
 SapphireWidgets.PopUpMenu = {
-	menuPosition: function(id, Context) {
+	menuPosition: function(id, Context, Locale) {
 		/* Hide any other menus on page and set button as collapsed. */
 		$('.popup-menu:visible').hide();
 
@@ -39,10 +39,12 @@ SapphireWidgets.PopUpMenu = {
 		Xx = Math.abs(buttonX - $('body').scrollLeft() - popupParentXx);
 		Yy = Math.abs(buttonHh - buttonY - $('body').scrollTop());
 
-		/* Check if clicked position plus the popup width exceed the window width. */
-		if (buttonX + popupWw - $('body').scrollLeft() > $(Context).width()) {
-			Xx = buttonX - popupWw - $('body').scrollLeft() - popupParentXx + buttonWw;
-			//Xx = ($(window).width() - popupWw) - $('body').scrollLeft();
+		if (Locale != 'AR') {
+			/* Check if clicked position plus the popup width exceed the window width. */
+			if (buttonX + popupWw - $('body').scrollLeft() > $(Context).width()) {
+				Xx = buttonX - popupWw - $('body').scrollLeft() - popupParentXx + buttonWw;
+				//Xx = ($(window).width() - popupWw) - $('body').scrollLeft();
+			}
 		}
 
 		/* Set menu position. */
@@ -68,12 +70,12 @@ SapphireWidgets.PopUpMenu = {
 		/* Set position of the balloon effect. */
 		_balloonEl.css('left', _balloonPosXx + 'px');
 	},
-	menuEvents: function(Context) {
+	menuEvents: function(Context, Locale) {
 		$('.popup-button')
 			.off('click')
 			.on('click', function(e) {
 				var id = $(this).attr('id');
-				SapphireWidgets.PopUpMenu.menuPosition(id, Context);
+				SapphireWidgets.PopUpMenu.menuPosition(id, Context, Locale);
 
 				/*e.stopPropagation();*/
 
