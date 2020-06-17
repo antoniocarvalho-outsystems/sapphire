@@ -1,4 +1,4 @@
-/*! Generated: Wed Jun 17 2020 15:55:04 GMT+0100 (Western European Summer Time) || Version: 5.0.890032 */
+/*! Generated: Wed Jun 17 2020 17:02:36 GMT+0100 (Western European Summer Time) || Version: 5.0.890033 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -6801,6 +6801,7 @@ a.Button.IsDefault,
       color: #ff3e2d; }
   .ValidationMessageContainer input.Not_Valid {
     border-bottom-left-radius: 0; }
+  .ValidationMessageContainer .ValidationMessage,
   .ValidationMessageContainer span.ValidationMessage {
     background-color: #ff3e2d;
     border-radius: 0 2px 2px 2px;
