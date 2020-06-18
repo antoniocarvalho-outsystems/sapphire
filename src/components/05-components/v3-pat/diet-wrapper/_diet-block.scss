@@ -1,0 +1,144 @@
+.DietBlock {
+	background-color: $body-color;
+	border-right: 1px solid $light-grey;
+	display: table;
+	vertical-align: middle;
+	width: 250px;
+
+	&.IsSelected,
+	&.Active {
+		background-color: $regular-white;
+	}
+
+	&.IsOnEdit {
+		background-color: $regular-white;
+		border-radius: 4px;
+		box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.1);
+		margin-top: -16px;
+
+		.DietBlock_title {
+			display: block;
+		}
+
+		.DietBlock_title,
+		.DietBlock_titleEdit {
+			height: 51px;
+			line-height: 51px;
+			width: webkit-fill-available;
+		}
+
+		.DietBlock_edit {
+			display: inline-block;
+			height: 55px;
+			line-height: 50px;
+			vertical-align: middle;
+			width: 100%;
+		}
+
+		.pickerPositionDateTime {
+			position: static;
+		}
+	}
+
+	&:not(.IsOnEdit) {
+		.DietBlock {
+			&_title,
+			&_titleEdit {
+				line-height: 36px;
+			}
+		}
+	}
+
+	&:first-of-type {
+		border-left: none;
+	}
+
+	&_title {
+		display: inline-block;
+	}
+
+	&_titleEdit {
+		float: right;
+		padding: 0 10px 0 10px;
+
+		&:empty {
+			display: none;
+		}
+	}
+
+	&_title,
+	&_titleEdit {
+		color: $dark-grey;
+		font-family: $font-family-latin-bold;
+		height: 35px;
+		line-height: 45px;
+		padding: 0 10px;
+		vertical-align: middle;
+	}
+
+	&_Header {
+		border-top: 1px solid $light-grey;
+	}
+
+	&_info {
+		border-top: 1px solid $light-grey;
+		color: $dark-grey;
+		display: block;
+		font-size: 1em;
+		height: 50px;
+		line-height: 44px;
+		overflow: hidden;
+		padding: 0 10px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 250px;
+
+		&:nth-child(10) {
+			border-bottom: 1px solid $light-grey;
+		}
+
+		.ButtonGroup {
+			vertical-align: -webkit-baseline-middle;
+		}
+
+		.Dropdown {
+			border: none;
+			box-shadow: none;
+			width: 100%;
+
+			&:hover {
+				background-color: transparent;
+				border: none;
+			}
+
+			&:disabled {
+				cursor: not-allowed;
+			}
+		}
+	}
+
+	&_edit {
+		display: none;
+
+		> div:first-child:empty {
+			display: none;
+		}
+
+		> div:first-child:empty + div {
+			line-height: 58px;
+			margin: 0;
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	.Button {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.FA .DietBlock_titleEdit,
+.AR .DietBlock_titleEdit {
+	float: left;
+}
