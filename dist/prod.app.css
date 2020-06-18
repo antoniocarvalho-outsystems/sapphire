@@ -1,4 +1,4 @@
-/*! Generated: Thu Jun 18 2020 14:38:07 GMT+0100 (Western European Summer Time) || Version: 5.0.890035 */
+/*! Generated: Thu Jun 18 2020 16:19:02 GMT+0100 (GMT+01:00) || Version: 5.0.890036 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15108,7 +15108,7 @@ body.PanelOpened .daterangepicker {
           transform: rotate(-180deg); }
 
 .ExpandableLink--expanded .ExpandableLink__Content {
-  max-height: 500px;
+  max-height: 9999px;
   overflow: auto; }
 
 .ExpandableLink--triggerRight .ExpandableLink__Header {
@@ -15184,6 +15184,52 @@ body.PanelOpened .daterangepicker {
 .FA .ExpandableLink__Link {
   margin-left: 0;
   margin-right: 15px; }
+
+.ExpandableList_SecondaryLine {
+  /* margin-top: 10px; */ }
+
+.ExpandableList_SecondaryLine {
+  border-bottom: 1px solid #c9cdce;
+  display: table;
+  height: auto;
+  width: 100%; }
+
+.ExpandableList_SecondaryLine:hover {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.ExpandableList_SecondaryLine > div > div:not(.Placeholder) {
+  display: table-cell;
+  vertical-align: middle; }
+
+.ExpandableList_SecondaryLine > div > div.Filler {
+  padding: 0 2.083rem; }
+
+.ExpandableList_SecondaryLine > div > div.Label {
+  line-height: 1.4em;
+  padding: .5rem 0;
+  padding-left: 50px;
+  white-space: normal;
+  width: 100%; }
+
+.ExpandableList_SecondaryLine > div > div.Label > [description] {
+  color: #4d5c66;
+  font-size: 1rem; }
+
+.ExpandableList_SecondaryLine > div > div.Action {
+  color: #c9cdce; }
+
+.ExpandableList_SecondaryLine > div:last-child:empty {
+  display: none; }
+
+.ExpandableList_SecondaryLine > div {
+  width: 100%; }
+
+div.ExpandableList-MainLine > div.ExpandableContent > span {
+  display: table-row-group;
+  width: 100%; }
+
+.ExpandableList_SecondaryLine > div > div.Action .InvertIconLabel {
+  margin-right: 10px; }
 
 .ExpandableServerSide {
   background-color: #fff;
@@ -15975,6 +16021,15 @@ body.PanelOpened .daterangepicker {
 .GenericGallery-border--Bottom .GenericGallery-item {
   border-bottom: solid 2px #d6d6d6; }
 
+.GenericGrid {
+  border: solid 1px red;
+  display: grid;
+  gap: 20px 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+.GenericGrid-item {
+  border: dotted 1px green; }
+
 .GenericStructure-header {
   -webkit-box-align: end;
           align-items: flex-end;
@@ -16066,15 +16121,6 @@ body.PanelOpened .daterangepicker {
   .GenericStructure-header-actions {
     border-bottom: none !important;
     padding-bottom: none !important; } }
-
-.GenericGrid {
-  border: solid 1px red;
-  display: grid;
-  gap: 20px 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-
-.GenericGrid-item {
-  border: dotted 1px green; }
 
 .GrayCounter {
   border: 1px solid #d6d6d6;

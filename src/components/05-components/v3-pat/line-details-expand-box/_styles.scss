@@ -1,237 +1,237 @@
 .LineDetailsExpandBox {
-	div.ExpandableHeader {
-		&__right {
-			background-color: $regular-white;
-			height: 60px;
-			padding: 0 25px;
-		}
+  div.ExpandableHeader {
+    &__right {
+      background-color: $regular-white;
+      height: 60px;
+      padding: 0 25px;
+    }
 
-		&__icon {
-			padding: 0 5px 0 20px;
-		}
+    &__icon {
+      padding: 0 5px 0 20px;
+    }
 
-		&__date {
-			padding: 0 30px 0 5px;
-		}
+    &__date {
+      padding: 0 30px 0 5px;
+    }
 
-		&__iconWrapper {
-			background-color: transparent;
-			display: table-cell;
-			height: 100%;
-			margin-left: -13px;
-			margin-top: 0;
-			padding: 0;
-			position: absolute;
-			transform: rotate(180deg);
-			transition: all 500ms;
-			width: 22px;
-		}
+    &__iconWrapper {
+      background-color: transparent;
+      display: table-cell;
+      height: 100%;
+      margin-left: -13px;
+      margin-top: 0;
+      padding: 0;
+      position: absolute;
+      transform: rotate(180deg);
+      transition: all 500ms;
+      width: 22px;
+    }
 
-		&___expandableIcon {
-			background-color: $regular-white;
-			border: transparent;
-			display: block;
-			font-size: 1em;
-			height: auto;
-			line-height: initial;
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
-			width: auto;
+    &___expandableIcon {
+      background-color: $regular-white;
+      border: transparent;
+      display: block;
+      font-size: 1em;
+      height: auto;
+      line-height: initial;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: auto;
 
-			span {
-				@include arrow-button($regular-alpha);
-			}
-		}
-	}
+      span {
+        @include arrow-button($regular-alpha);
+      }
+    }
+  }
 
-	div.ExpandableLink {
-		border: 1px solid $light-grey;
+  div.ExpandableLink {
+    border: 1px solid $light-grey;
 
-		&:not(.ExpandableLink--expanded) > .ExpandableLink__Content {
-			display: none;
-		}
+    &:not(.ExpandableLink--expanded)>.ExpandableLink__Content {
+      display: none;
+    }
 
-		&--expanded {
-			> .ExpandableLink__Content {
-				display: block;
-			}
+    &--expanded {
+      >.ExpandableLink__Content {
+        display: block;
+      }
 
-			div.ExpandableHeader {
-				.ExpandableHeader__iconWrapper {
-					transform: rotate(0deg);
-				}
-			}
-		}
+      div.ExpandableHeader {
+        .ExpandableHeader__iconWrapper {
+          transform: rotate(0deg);
+        }
+      }
+    }
 
-		&__Header {
-			background-color: $body-color;
-			cursor: default;
-			display: block;
-			min-height: 40px;
-			position: relative;
-			width: 100%;
+    &__Header {
+      background-color: $body-color;
+      cursor: default;
+      display: block;
+      min-height: 40px;
+      position: relative;
+      width: 100%;
 
-			.LineDetailsExpandBox_header {
-				cursor: pointer;
-				display: table-cell;
-				vertical-align: middle;
-				width: 80%;
-			}
+      .LineDetailsExpandBox_header {
+        cursor: pointer;
+        display: table-cell;
+        vertical-align: middle;
+        width: 80%;
+      }
 
-			.LineDetailsExpandBox_action {
-				background-color: $regular-white;
-				display: table-cell;
-				padding: 0 5px;
-				text-align: right;
-				vertical-align: middle;
+      .LineDetailsExpandBox_action {
+        background-color: $regular-white;
+        display: table-cell;
+        padding: 0 5px;
+        text-align: right;
+        vertical-align: middle;
 
-				.IconVertical {
-					margin: 3px;
-				}
-			}
-		}
+        .IconVertical {
+          margin: 3px;
+        }
+      }
+    }
 
-		&__Content {
-			background-color: $regular-white;
-			border-top: solid 1px $light-grey;
-			margin: 0;
-			padding: 5px 13px 13px;
+    &__Content {
+      background-color: $regular-white;
+      border-top: solid 1px $light-grey;
+      margin: 0;
+      padding: 5px 13px 13px;
 
-			div.ExpandableHeader {
-				&__right {
-					background-color: transparent;
-					height: auto;
-					padding: unset;
-				}
+      div.ExpandableHeader {
+        &__right {
+          background-color: transparent;
+          height: auto;
+          padding: unset;
+        }
 
-				&__icon {
-					padding: 5px 15px 0 35px;
-				}
+        &__icon {
+          padding: 5px 15px 0 35px;
+        }
 
-				&__iconWrapper {
-					left: 25px;
-					padding: 0;
-					top: 0;
-				}
+        &__iconWrapper {
+          left: 25px;
+          padding: 0;
+          top: 0;
+        }
 
-				&___expandableIcon {
-					background: transparent;
-					border: none;
+        &___expandableIcon {
+          background: transparent;
+          border: none;
 
-					span {
-						border: none;
-						border-radius: 0;
-					}
+          span {
+            border: none;
+            border-radius: 0;
+          }
 
-					.icon {
-						@include arrow-down-simple;
-					}
-				}
-			}
+          .icon {
+            @include arrow-down-simple;
+          }
+        }
+      }
 
-			.LineDetailsExpandBox_action {
-				background-color: transparent;
-			}
-		}
+      .LineDetailsExpandBox_action {
+        background-color: transparent;
+      }
+    }
 
-		&__Icon {
-			display: none;
-		}
+    &__Icon {
+      display: none;
+    }
 
-		&__Link {
-			display: table;
-			margin: 0;
-			vertical-align: middle;
-			width: 100%;
-		}
-	}
+    &__Link {
+      display: table;
+      margin: 0;
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
 
-	&__MainContent {
-		.SectionExpandableInside {
-			background-color: $body-color;
-			cursor: default;
-			display: block;
-			position: relative;
-			width: 100%;
+  &__MainContent {
+    .SectionExpandableInside {
+      background-color: $body-color;
+      cursor: default;
+      display: block;
+      position: relative;
+      width: 100%;
 
-			&.expanded {
-				.SectionExpandableInside {
-					&_header {
-						border-bottom: none;
-					}
+      &.expanded {
+        .SectionExpandableInside {
+          &_header {
+            border-bottom: none;
+          }
 
-					&_content {
-						border: 1px solid $light-grey;
-						display: block;
-					}
-				}
-			}
+          &_content {
+            border: 1px solid $light-grey;
+            display: block;
+          }
+        }
+      }
 
-			&_header {
-				border: 1px solid $light-grey;
+      &_header {
+        border: 1px solid $light-grey;
 
-				.HeaderIcon span {
-					margin: 0 13px;
-				}
+        .HeaderIcon span {
+          margin: 0 13px;
+        }
 
-				.ExapandablePlaceholder {
-					font-size: 1em;
+        .ExapandablePlaceholder {
+          font-size: 1em;
 
-					&:empty {
-						display: none !important;
-					}
+          &:empty {
+            display: none !important;
+          }
 
-					.CircleElement {
-						margin-top: 4px !important;
-					}
-				}
-			}
+          .CircleElement {
+            margin-top: 4px !important;
+          }
+        }
+      }
 
-			&_content {
-				display: none;
-			}
-		}
-	}
+      &_content {
+        display: none;
+      }
+    }
+  }
 }
 
 .AR,
 .FA {
-	.LineDetailsExpandBox {
-		div.ExpandableHeader {
-			&__date {
-				padding: 0 5px 0 30px;
-			}
+  .LineDetailsExpandBox {
+    div.ExpandableHeader {
+      &__date {
+        padding: 0 5px 0 30px;
+      }
 
-			&__icon {
-				padding: 0 20px 0 5px;
-			}
+      &__icon {
+        padding: 0 20px 0 5px;
+      }
 
-			&__iconWrapper {
-				margin-right: -14px;
-			}
-		}
+      &__iconWrapper {
+        margin-right: -14px;
+      }
+    }
 
-		.ExpandableLink__Content {
-			div.ExpandableHeader__icon {
-				padding: 0 30px 0 15px;
-			}
+    .ExpandableLink__Content {
+      div.ExpandableHeader__icon {
+        padding: 0 30px 0 15px;
+      }
 
-			div.ExpandableHeader__iconWrapper {
-				right: 15px;
-			}
-		}
+      div.ExpandableHeader__iconWrapper {
+        right: 15px;
+      }
+    }
 
-		.ExpandableLink__Header .LineDetailsExpandBox_action {
-			text-align: left;
-		}
+    .ExpandableLink__Header .LineDetailsExpandBox_action {
+      text-align: left;
+    }
 
-		&__MainContent {
-			.SectionExpandableInside {
-				.ExapandablePlaceholder.HeaderIcon {
-					margin-right: auto;
-				}
-			}
-		}
-	}
+    &__MainContent {
+      .SectionExpandableInside {
+        .ExapandablePlaceholder.HeaderIcon {
+          margin-right: auto;
+        }
+      }
+    }
+  }
 }
