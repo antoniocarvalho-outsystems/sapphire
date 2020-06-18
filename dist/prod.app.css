@@ -1,4 +1,4 @@
-/*! Generated: Wed Jun 17 2020 17:02:36 GMT+0100 (Western European Summer Time) || Version: 5.0.890033 */
+/*! Generated: Thu Jun 18 2020 13:30:28 GMT+0100 (GMT+01:00) || Version: 5.0.890034 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17571,24 +17571,28 @@ div.ui-timepicker-container {
   margin: 0 6px;
   vertical-align: middle; }
 
-@media screen and (max-width: 1024px) {
-  .MainInteractiveCard-header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column; }
-  .MainInteractiveCard-header-text {
-    -webkit-box-flex: 0;
-            flex: none;
-    margin-bottom: 16px;
-    max-width: none;
-    width: 100%; }
-  .MainInteractiveCard-header-actions {
-    display: block;
-    -webkit-box-flex: 0;
-            flex: none;
-    margin-left: 0;
-    text-align: right;
-    width: 100%; } }
+.tablet .MainInteractiveCard:not(.SmallHeader) .MainInteractiveCard-header,
+.phone .MainInteractiveCard:not(.SmallHeader) .MainInteractiveCard-header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+.tablet .MainInteractiveCard:not(.SmallHeader) .MainInteractiveCard-header-text,
+.phone .MainInteractiveCard:not(.SmallHeader) .MainInteractiveCard-header-text {
+  -webkit-box-flex: 0;
+          flex: none;
+  margin-bottom: 16px;
+  max-width: none;
+  width: 100%; }
+
+.tablet .MainInteractiveCard:not(.SmallHeader) .MainInteractiveCard-header-actions,
+.phone .MainInteractiveCard:not(.SmallHeader) .MainInteractiveCard-header-actions {
+  display: block;
+  -webkit-box-flex: 0;
+          flex: none;
+  margin-left: 0;
+  text-align: right;
+  width: 100%; }
 
 .MainInteractiveCard > div > .MainInteractiveCard-body {
   display: none;
