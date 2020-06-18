@@ -1,0 +1,38 @@
+4015 .confirm.confirm-wb
+
+102 body.PanelOpened .daterangepicker
+
+101 .PanelById .PanelContainer
+
+90 body.LayoutBase .os-internal-ui-widget-overlay
+
+70 .LayoutBase-iframesidebar
+
+60 .modalPopup.Open .modalPopup_container
+
+51 .PanelContainer.ConfirmWB
+51 .confirm-container.confirm-wb
+
+50 .modalPopup.Open .modalPopup_div
+
+49 .confirm-background.confirm-wb 
+
+31 .daterangepicker
+
+30 .LayoutBase-MainMenu.PatientDetails_Header
+
+20 .LayoutBase-header
+20 .Header
+20 .PanelBackground.ConfirmWB
+20 .PanelById .PanelBackground
+
+4 .popup-wrapper > .popup-menu
+4 div.Toolbar.Fix
+4 .Menubar
+4 .Menubar__extraContainer
+4 .MenuItem_subItems
+
+
+1 .LayoutBase-topfixedcontent
+
+1 .LayoutBase-Wrapper.hasFixedBottom .LayoutBase-bottomfixedcontent
