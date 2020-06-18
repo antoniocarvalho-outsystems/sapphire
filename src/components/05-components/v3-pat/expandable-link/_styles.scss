@@ -1,75 +1,75 @@
 .ExpandableLink {
-	&--expanded & {
-		&__Icon {
-			transform: rotate(-180deg);
-		}
+  &--expanded & {
+    &__Icon {
+      transform: rotate(-180deg);
+    }
 
-		&__Content {
-			max-height: 500px;
-			overflow: auto;
-		}
-	}
+    &__Content {
+      max-height: 9999px;
+      overflow: auto;
+    }
+  }
 
-	&--triggerRight & {
-		&__Header {
-			display: flex;
-			transform: scale(-1, 1);
+  &--triggerRight & {
+    &__Header {
+      display: flex;
+      transform: scale(-1, 1);
 
-			> div > div {
-				transform: scale(-1, 1);
-			}
-		}
+      >div>div {
+        transform: scale(-1, 1);
+      }
+    }
 
-		&__Link {
-			display: flex;
-			flex-basis: 100%;
-			flex-wrap: nowrap;
+    &__Link {
+      display: flex;
+      flex-basis: 100%;
+      flex-wrap: nowrap;
 
-			> div:last-of-type {
-				flex-basis: 100%;
-				margin-left: 10px;
-			}
-		}
+      >div:last-of-type {
+        flex-basis: 100%;
+        margin-left: 10px;
+      }
+    }
 
-		&__Icon,
-		&__Link > div {
-			align-self: center;
-			justify-content: center;
-		}
-	}
+    &__Icon,
+    &__Link>div {
+      align-self: center;
+      justify-content: center;
+    }
+  }
 
-	&__Header {
-		cursor: pointer;
-	}
+  &__Header {
+    cursor: pointer;
+  }
 
-	&__Icon {
-		transition: transform 0.5s;
+  &__Icon {
+    transition: transform 0.5s;
 
-		.icon {
-			@include arrow-button($regular-beta, 20px, 0.7em);
-		}
-	}
+    .icon {
+      @include arrow-button($regular-beta, 20px, 0.7em);
+    }
+  }
 
-	&__Link {
-		color: $regular-beta;
-		font-family: $font-family-latin-bold;
-		margin-left: 15px;
-	}
+  &__Link {
+    color: $regular-beta;
+    font-family: $font-family-latin-bold;
+    margin-left: 15px;
+  }
 
-	&__Content {
-		margin-top: 10px;
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 500ms;
-	}
+  &__Content {
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms;
+  }
 }
 
 .AR,
 .FA {
-	.ExpandableLink {
-		&__Link {
-			margin-left: 0;
-			margin-right: 15px;
-		}
-	}
+  .ExpandableLink {
+    &__Link {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
 }

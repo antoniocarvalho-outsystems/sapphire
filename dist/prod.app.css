@@ -1,4 +1,4 @@
-/*! Generated: Thu Jun 18 2020 15:29:38 GMT+0100 (Western European Summer Time) || Version: 5.0.890036 */
+/*! Generated: Thu Jun 18 2020 16:29:30 GMT+0100 (GMT+01:00) || Version: 5.0.890037 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15108,7 +15108,7 @@ body.PanelOpened .daterangepicker {
           transform: rotate(-180deg); }
 
 .ExpandableLink--expanded .ExpandableLink__Content {
-  max-height: 500px;
+  max-height: 9999px;
   overflow: auto; }
 
 .ExpandableLink--triggerRight .ExpandableLink__Header {
