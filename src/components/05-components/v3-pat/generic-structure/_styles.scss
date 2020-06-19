@@ -2,11 +2,10 @@ $GenericStrutucre-color-border: $gray-lighter;
 $GenericStrutucre-color-title-underline: $regular-alpha;
 
 
-
 .GenericStructure-header {
   align-items: flex-end;
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: $sapphire__sizes__medium;
 }
 
 .GenericStructure-header-content {
@@ -29,17 +28,17 @@ $GenericStrutucre-color-title-underline: $regular-alpha;
 
 .GenericStructure-subheader-content {
   flex-grow: 1;
-  margin-bottom: 26px;
+  margin-bottom: $sapphire__sizes__large;
 }
 
 .GenericStructure-subheader-actions {
   flex-grow: 1;
-  margin-bottom: 26px;
+  margin-bottom: $sapphire__sizes__large;
   text-align: right;
 }
 
 .GenericStructure-section {
-  margin-bottom: 26px;
+  margin-bottom: $sapphire__sizes__large;
 }
 
 .GenericStructure-section-header {
@@ -60,22 +59,23 @@ $GenericStrutucre-color-title-underline: $regular-alpha;
 .GenericStructure-header-border--GrayBorder>.GenericStructure-header>.GenericStructure-header-content,
 .GenericStructure-header-border--GrayBorder>.GenericStructure-header>.GenericStructure-header-actions {
   border-bottom: 1px solid $GenericStrutucre-color-border;
-  padding-bottom: 10px;
+  padding-bottom: $sapphire__sizes__small;
 }
 
 .GenericStructure-header-border--BorderTitle>.GenericStructure-header>.GenericStructure-header-content {
   align-items: center;
   border-bottom: 1px solid $GenericStrutucre-color-title-underline;
   display: flex;
-  padding-bottom: 10px;
+  padding-bottom: $sapphire__sizes__small;
 }
 
 .GenericStructure-header-border--BorderTitle>.GenericStructure-header>.GenericStructure-header-actions {
   border-bottom: 1px solid $GenericStrutucre-color-border;
-  padding-bottom: 10px;
+  padding-bottom: $sapphire__sizes__small;
 }
 
-@media only screen and (max-width: 1024px) {
+.phone,
+.tablet {
 
   .GenericStructure-header,
   .GenericStructure-header-content,
@@ -87,7 +87,7 @@ $GenericStrutucre-color-title-underline: $regular-alpha;
   .GenericStructure-section-header-content,
   .GenericStructure-section-header-actions {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: $sapphire__sizes__small;
     max-width: none;
     white-space: normal;
   }
@@ -98,7 +98,7 @@ $GenericStrutucre-color-title-underline: $regular-alpha;
 
   .GenericStructure-header,
   .GenericStructure-subheader {
-    margin-bottom: 26px;
+    margin-bottom: $sapphire__sizes__large;
   }
 
   .GenericStructure-header-actions {

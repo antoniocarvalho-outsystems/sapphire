@@ -1,4 +1,4 @@
-/*! Generated: Fri Jun 19 2020 12:13:47 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.890039 */
+/*! Generated: Fri Jun 19 2020 15:24:25 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.890040 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16156,7 +16156,7 @@ div.ExpandableList-MainLine > div.ExpandableContent > span {
           align-items: flex-end;
   display: -webkit-box;
   display: flex;
-  margin-bottom: 16px; }
+  margin-bottom: 18px; }
 
 .GenericStructure-header-content {
   max-width: 70%; }
@@ -16177,16 +16177,16 @@ div.ExpandableList-MainLine > div.ExpandableContent > span {
 .GenericStructure-subheader-content {
   -webkit-box-flex: 1;
           flex-grow: 1;
-  margin-bottom: 26px; }
+  margin-bottom: 24px; }
 
 .GenericStructure-subheader-actions {
   -webkit-box-flex: 1;
           flex-grow: 1;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   text-align: right; }
 
 .GenericStructure-section {
-  margin-bottom: 26px; }
+  margin-bottom: 24px; }
 
 .GenericStructure-section-header {
   -webkit-box-align: end;
@@ -16206,7 +16206,7 @@ div.ExpandableList-MainLine > div.ExpandableContent > span {
 .GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-content,
 .GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-actions {
   border-bottom: 1px solid #f3f3f3;
-  padding-bottom: 10px; }
+  padding-bottom: 12px; }
 
 .GenericStructure-header-border--BorderTitle > .GenericStructure-header > .GenericStructure-header-content {
   -webkit-box-align: center;
@@ -16214,34 +16214,49 @@ div.ExpandableList-MainLine > div.ExpandableContent > span {
   border-bottom: 1px solid #00bfa5;
   display: -webkit-box;
   display: flex;
-  padding-bottom: 10px; }
+  padding-bottom: 12px; }
 
 .GenericStructure-header-border--BorderTitle > .GenericStructure-header > .GenericStructure-header-actions {
   border-bottom: 1px solid #f3f3f3;
-  padding-bottom: 10px; }
+  padding-bottom: 12px; }
 
-@media only screen and (max-width: 1024px) {
-  .GenericStructure-header,
-  .GenericStructure-header-content,
-  .GenericStructure-header-actions,
-  .GenericStructure-subheader,
-  .GenericStructure-subheader-content,
-  .GenericStructure-subheader-actions,
-  .GenericStructure-section-header,
-  .GenericStructure-section-header-content,
-  .GenericStructure-section-header-actions {
-    display: block;
-    margin-bottom: 10px;
-    max-width: none;
-    white-space: normal; }
-  .GenericStructure-header-actions:empty {
-    display: none !important; }
-  .GenericStructure-header,
-  .GenericStructure-subheader {
-    margin-bottom: 26px; }
-  .GenericStructure-header-actions {
-    border-bottom: none !important;
-    padding-bottom: none !important; } }
+.phone .GenericStructure-header,
+.phone .GenericStructure-header-content,
+.phone .GenericStructure-header-actions,
+.phone .GenericStructure-subheader,
+.phone .GenericStructure-subheader-content,
+.phone .GenericStructure-subheader-actions,
+.phone .GenericStructure-section-header,
+.phone .GenericStructure-section-header-content,
+.phone .GenericStructure-section-header-actions,
+.tablet .GenericStructure-header,
+.tablet .GenericStructure-header-content,
+.tablet .GenericStructure-header-actions,
+.tablet .GenericStructure-subheader,
+.tablet .GenericStructure-subheader-content,
+.tablet .GenericStructure-subheader-actions,
+.tablet .GenericStructure-section-header,
+.tablet .GenericStructure-section-header-content,
+.tablet .GenericStructure-section-header-actions {
+  display: block;
+  margin-bottom: 12px;
+  max-width: none;
+  white-space: normal; }
+
+.phone .GenericStructure-header-actions:empty,
+.tablet .GenericStructure-header-actions:empty {
+  display: none !important; }
+
+.phone .GenericStructure-header,
+.phone .GenericStructure-subheader,
+.tablet .GenericStructure-header,
+.tablet .GenericStructure-subheader {
+  margin-bottom: 24px; }
+
+.phone .GenericStructure-header-actions,
+.tablet .GenericStructure-header-actions {
+  border-bottom: none !important;
+  padding-bottom: none !important; }
 
 .GrayCounter {
   border: 1px solid #d6d6d6;
@@ -16579,7 +16594,7 @@ div.Toolbar {
       display: block;
       min-width: 200px;
       right: 0;
-      z-index: 1; }
+      z-index: 2; }
   div.Toolbar__MoreOptionsIcon {
     -webkit-box-align: center;
             align-items: center;
