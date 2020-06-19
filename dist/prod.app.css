@@ -1,4 +1,4 @@
-/*! Generated: Thu Jun 18 2020 17:47:19 GMT+0100 (Western European Summer Time) || Version: 5.0.890038 */
+/*! Generated: Fri Jun 19 2020 12:13:47 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.890039 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10673,6 +10673,21 @@ html body {
   border: 1px solid #d6d6d6;
   padding-left: 0;
   padding-right: 35px; }
+
+/* Javascript_Lib Components */
+.lasa-term b {
+  font-weight: 900; }
+
+div.Feedback_Message_Error span.lasa-term,
+div.Feedback_Message_Success span.lasa-term,
+div.Feedback_Message_Warning span.lasa-term,
+div.Feedback_Message_Info span.lasa-term {
+  display: inline-block;
+  padding: 0; }
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold; }
 
 /* V3_Pat Components */
 .ActionsMenu-label {
@@ -24860,6 +24875,32 @@ div.TimelineDetail {
 .AR .TimelineDetail_rightContent,
 .FA .TimelineDetail_rightContent {
   padding: 15px 10px 15px 20px; }
+
+/* Tooltip ************
+DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with old theme***************/
+/*.tooltipstered {
+    cursor: help;
+    display: inline-block;
+}*/
+.TooltipWithCounter {
+  display: block; }
+
+.tooltipstered.balloon {
+  cursor: pointer; }
+
+.tooltip_style {
+  background-color: #fff;
+  border: 1px solid #dadbde;
+  color: #79868a; }
+
+.tooltip_style .tooltipster-content {
+  font-size: 14px;
+  line-height: 16px;
+  overflow: hidden;
+  padding: 8px 10px; }
+
+.tooltipster-base {
+  z-index: 15; }
 
 .tooltipstered {
   cursor: help;

@@ -1,0 +1,31 @@
+/* Tooltip ************
+DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with old theme***************/
+/*.tooltipstered {
+    cursor: help;
+    display: inline-block;
+}*/
+
+.TooltipWithCounter {
+  display: block;
+}
+
+.tooltipstered.balloon {
+  cursor: pointer;
+}
+
+.tooltip_style {
+  background-color: #fff;
+  border: 1px solid #dadbde;
+  color: #79868a;
+}
+
+.tooltip_style .tooltipster-content {
+  font-size: 14px;
+  line-height: 16px;
+  overflow: hidden;
+  padding: 8px 10px;
+}
+
+.tooltipster-base {
+  z-index: 15;
+}

@@ -1,6 +1,6 @@
 {
 	"name": "sapphire",
-	"version": "5.0.890039",
+	"version": "5.0.890040",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -22,7 +22,6 @@
 		"eslint-plugin-prettier": "^3.1.2",
 		"file-loader": "^5.0.2",
 		"mini-css-extract-plugin": "^0.9.0",
-		"node-sass": "^4.13.1",
 		"postcss-loader": "^3.0.0",
 		"prettier": "^1.19.1",
 		"prettier-stylelint": "^0.4.2",
@@ -35,5 +34,8 @@
 		"webpack-cli": "^3.3.10",
 		"webpack-dev-server": "^3.10.1",
 		"webpack-merge": "^4.2.2"
+	},
+	"dependencies": {
+		"node-sass": "^4.14.1"
 	}
 }

@@ -33,6 +33,7 @@
 @import 'ward-counter';
 @import 'wizard';
 
+
 /* Layout Components */
 @import 'layout/styles';
 
@@ -51,6 +52,13 @@
 @import 'webpatterns/icon-dropdown/styles';
 @import 'webpatterns/inline-dropdown/styles';
 @import 'webpatterns/search-wrapper/styles';
+
+
+/* Javascript_Lib Components */
+@import 'javascript-lib/markwordsfromlist';
+@import 'javascript-lib/highlight';
+
+
 
 /* V3_Pat Components */
 @import 'v3-pat/actions-menu/styles';
@@ -138,4 +146,5 @@
 @import 'v3-pat/tabs-extended/styles';
 @import 'v3-pat/tabular-list/styles';
 @import 'v3-pat/timeline-detail/styles';
+@import 'v3-pat/tooltip-custom/styles';
 @import 'v3-pat/tooltipster/styles';
