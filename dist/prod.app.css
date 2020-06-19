@@ -1,4 +1,4 @@
-/*! Generated: Fri Jun 19 2020 15:24:25 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.890040 */
+/*! Generated: Fri Jun 19 2020 15:26:46 GMT+0100 (Western European Summer Time) || Version: 5.0.890041 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14854,9 +14854,20 @@ body.PanelOpened .daterangepicker {
   width: 0; }
 
 .FileUploadDropZone {
+  display: inline-block;
   height: auto;
   padding: 0 2px;
   position: relative; }
+  .FileUploadDropZone .dropzone.dz-clickable {
+    line-height: unset;
+    min-height: 0;
+    padding-bottom: 4px;
+    padding-top: 0px; }
+    .FileUploadDropZone .dropzone.dz-clickable div.dz-default.dz-message {
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: center;
+              justify-content: center; }
 
 .dropzone .dz-message {
   margin: 0; }
@@ -14898,7 +14909,6 @@ body.PanelOpened .daterangepicker {
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
-  margin-right: 28px;
   margin-top: 2px;
   text-align: right;
   text-transform: none; }
@@ -15074,14 +15084,10 @@ body.PanelOpened .daterangepicker {
 
 .UploadMessageClass {
   bottom: 2px;
-  color: #009884;
   cursor: pointer;
   font-family: "LatoBold";
   font-size: 1em;
-  line-height: 22px;
-  position: absolute;
-  right: 0;
-  top: 50%; }
+  line-height: 22px; }
 
 .dropzone .dz-preview .dz-filename {
   left: 0;
