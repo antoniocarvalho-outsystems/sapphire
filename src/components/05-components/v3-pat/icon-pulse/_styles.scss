@@ -1,0 +1,86 @@
+.IconPulse {
+	position: relative;
+
+	&.WristBand.IsBottomLeft .IconPulse__beatBottomLeft {
+		bottom: 14px;
+		display: block;
+		left: -4px;
+	}
+
+	&.Bloodtubes {
+		&.IsTopLeft .IconPulse__beatTopLeft {
+			display: block;
+			left: -12px;
+			top: 22px;
+		}
+
+		&.IsTopRight .IconPulse__beatTopRight {
+			display: block;
+			right: -6px;
+			top: 35px;
+		}
+	}
+
+	&.BloodBag {
+		&.IsTopLeft .IconPulse__beatTopLeft {
+			display: block;
+			left: -4px;
+			top: 26px;
+		}
+		&.IsTopRight .IconPulse__beatTopRight {
+			display: block;
+			right: -4px;
+			top: 26px;
+		}
+		&.IsBottomLeft .IconPulse__beatBottomLeft {
+			bottom: 12px;
+			display: block;
+			left: -4px;
+		}
+		&.IsBottomRight .IconPulse__beatBottomRight {
+			bottom: 11px;
+			display: block;
+			right: -4px;
+		}
+	}
+
+	&_Icon {
+		span {
+			color: $mid-light-grey;
+			font-size: 113px;
+		}
+
+		.IconPulse__beatTopLeft,
+		.IconPulse__beatTopRight,
+		.IconPulse__beatBottomLeft,
+		.IconPulse__beatBottomRight {
+			animation: pulse-black 2s infinite;
+			background: rgba(59, 59, 59, 0.3);
+			border-radius: 50%;
+			box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+			display: none;
+			height: 16px;
+			margin: 10px;
+			position: absolute;
+			transform: scale(1);
+			width: 16px;
+		}
+	}
+}
+
+@keyframes pulse-black {
+	0% {
+		box-shadow: 0 0 0 0 rgba(59, 59, 59, 0.4);
+		transform: scale(0.95);
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+		transform: scale(1);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: scale(0.95);
+	}
+}
