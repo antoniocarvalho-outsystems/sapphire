@@ -548,9 +548,22 @@
 }
 
 .FileUploadDropZone {
+	display: inline-block;
 	height: auto;
 	padding: 0 2px;
 	position: relative;
+
+	.dropzone.dz-clickable {
+		line-height: unset;
+		min-height: 0;
+		padding-bottom: 4px;
+		padding-top: 0px;
+
+		div.dz-default.dz-message {
+			display: inline-flex;
+			justify-content: center;
+		}
+	}
 }
 
 .dropzone .dz-message {
@@ -600,7 +613,6 @@
 	font-variant: normal;
 	font-weight: normal;
 	line-height: 1;
-	margin-right: 28px;
 	margin-top: 2px;
 	text-align: right;
 	text-transform: none;
@@ -809,14 +821,10 @@
 
 .UploadMessageClass {
 	bottom: 2px;
-	color: $regular-beta;
 	cursor: pointer;
 	font-family: $font-family-latin-bold;
 	font-size: 1em;
 	line-height: 22px;
-	position: absolute;
-	right: 0;
-	top: 50%;
 }
 
 .dropzone .dz-preview .dz-filename {
@@ -824,7 +832,6 @@
 	position: static;
 	top: 0;
 }
-
 
 .GreyContainer .dropzone,
 .WhiteContainer .dropzone {
