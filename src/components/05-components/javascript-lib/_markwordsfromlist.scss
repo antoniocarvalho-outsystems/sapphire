@@ -1,0 +1,13 @@
+.lasa-term {}
+
+.lasa-term b {
+  font-weight: 900;
+}
+
+div.Feedback_Message_Error span.lasa-term,
+div.Feedback_Message_Success span.lasa-term,
+div.Feedback_Message_Warning span.lasa-term,
+div.Feedback_Message_Info span.lasa-term {
+  display: inline-block;
+  padding: 0;
+}
