@@ -40,25 +40,25 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 .MainInteractiveCard-iframe-actions a.Button.Small,
 .MainInteractiveCard-iframe-actions a.ButtonLink,
 .MainInteractiveCard-iframe-actions a.ButtonSquare span.icon {
-  margin: 0 8px;
+  margin: 0 9px;
   vertical-align: middle;
 }
 
 .MainInteractiveCard {
   background-color: $MainInteractiveCard-color-disabled-background;
   border: 1px solid $MainInteractiveCard-color-disabled;
-  padding: 10px 12px;
+  padding: $sapphire__sizes__small;
   position: relative;
 }
 
 .MainInteractiveCard.isEnabled {
   background-color: $regular-white;
   border-color: $MainInteractiveCard-color-active;
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
 .MainInteractiveCard.isOpen {
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
 .MainInteractiveCard {

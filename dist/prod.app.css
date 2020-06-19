@@ -1,4 +1,4 @@
-/*! Generated: Fri Jun 19 2020 15:26:46 GMT+0100 (Western European Summer Time) || Version: 5.0.890041 */
+/*! Generated: Fri Jun 19 2020 19:08:52 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.890042 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16211,7 +16211,7 @@ div.ExpandableList-MainLine > div.ExpandableContent > span {
 
 .GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-content,
 .GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-actions {
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid #d6d6d6;
   padding-bottom: 12px; }
 
 .GenericStructure-header-border--BorderTitle > .GenericStructure-header > .GenericStructure-header-content {
@@ -16223,7 +16223,7 @@ div.ExpandableList-MainLine > div.ExpandableContent > span {
   padding-bottom: 12px; }
 
 .GenericStructure-header-border--BorderTitle > .GenericStructure-header > .GenericStructure-header-actions {
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid #d6d6d6;
   padding-bottom: 12px; }
 
 .phone .GenericStructure-header,
@@ -17251,7 +17251,7 @@ div.ui-timepicker-container {
     display: table;
     min-height: 48px;
     overflow: hidden;
-    padding: 0 25px;
+    padding: 6px 24px;
     width: 100%; }
     .LineWarns_list > div {
       display: table-cell;
@@ -17523,22 +17523,22 @@ div.ui-timepicker-container {
 .DropZoneContainer .row .MainInteractiveCard-iframe-actions .Small.Button,
 .MainInteractiveCard-iframe-actions a.ButtonLink,
 .MainInteractiveCard-iframe-actions a.ButtonSquare span.icon {
-  margin: 0 8px;
+  margin: 0 9px;
   vertical-align: middle; }
 
 .MainInteractiveCard {
   background-color: #f3f3f3;
   border: 1px solid #adadad;
-  padding: 10px 12px;
+  padding: 12px;
   position: relative; }
 
 .MainInteractiveCard.isEnabled {
   background-color: #fff;
   border-color: #00bfa5;
-  margin-top: -1px; }
+  margin-top: -2px; }
 
 .MainInteractiveCard.isOpen {
-  margin-top: -1px; }
+  margin-top: -2px; }
 
 .MainInteractiveCard:not(.isOpen).ColorLightGreyBorder {
   border-color: #d6d6d6; }
@@ -21913,11 +21913,11 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   margin: 0; }
 
 .SegmentedControlItem {
-  border: solid 1px #00bfa5;
   color: #00bfa5;
   display: inline-block;
   font-size: 13px;
   margin-left: -1px;
+  margin-top: -1px;
   min-height: 28px;
   overflow: hidden;
   position: relative;
@@ -21925,18 +21925,18 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .SegmentedControlItem label {
   background-color: #fff;
+  border: solid 1px #00bfa5;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   line-height: 34px;
   min-width: 54px;
   padding: 0 15px;
   text-align: center;
-  vertical-align: top;
   width: 100%; }
 
 .SegmentedControlItem label:hover,
 .SegmentedControlItem label:focus {
-  background: #f2fffd; }
+  background: #c4f0eb; }
 
 .SegmentedControlItem > input[type='radio']:checked ~ label,
 .SegmentedControlItem > input[type='checkbox']:checked ~ label {
@@ -21966,9 +21966,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .Vertical .SegmentedControlItem,
 .SegmentedControlItem:first-child {
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  margin-left: 0; }
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px; }
 
 .FA .Vertical .SegmentedControlItem,
 .FA .SegmentedControlItem:first-child,
@@ -22545,8 +22544,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-          align-items: flex-end;
+  align-items: center;
   background-color: transparent;
   border: 1px solid #adadad;
   color: #5c5c5c;

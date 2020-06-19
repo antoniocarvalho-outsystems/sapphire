@@ -1,7 +1,7 @@
 .SelectableList {
   &-EmptyMessage {
     @include flex-center-total;
-    align-items: flex-end;
+    align-items: center;
     background-color: transparent;
     border: 1px solid $mid-light-grey;
     color: $mid-dark-grey;
