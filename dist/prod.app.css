@@ -1,4 +1,4 @@
-/*! Generated: Fri Jun 19 2020 15:26:46 GMT+0100 (Western European Summer Time) || Version: 5.0.890041 */
+/*! Generated: Fri Jun 19 2020 17:59:23 GMT+0100 (Western European Summer Time) || Version: 5.0.890042 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17036,6 +17036,84 @@ div.ui-timepicker-container {
 .FA .iconBorder {
   border-left: 0;
   border-right: solid 1px #adadad; }
+
+.IconPulse {
+  position: relative; }
+  .IconPulse.WristBand.IsBottomLeft .IconPulse__beatBottomLeft {
+    bottom: 14px;
+    display: block;
+    left: -4px; }
+  .IconPulse.Bloodtubes.IsTopLeft .IconPulse__beatTopLeft {
+    display: block;
+    left: -12px;
+    top: 22px; }
+  .IconPulse.Bloodtubes.IsTopRight .IconPulse__beatTopRight {
+    display: block;
+    right: -6px;
+    top: 35px; }
+  .IconPulse.BloodBag.IsTopLeft .IconPulse__beatTopLeft {
+    display: block;
+    left: -4px;
+    top: 26px; }
+  .IconPulse.BloodBag.IsTopRight .IconPulse__beatTopRight {
+    display: block;
+    right: -4px;
+    top: 26px; }
+  .IconPulse.BloodBag.IsBottomLeft .IconPulse__beatBottomLeft {
+    bottom: 12px;
+    display: block;
+    left: -4px; }
+  .IconPulse.BloodBag.IsBottomRight .IconPulse__beatBottomRight {
+    bottom: 11px;
+    display: block;
+    right: -4px; }
+  .IconPulse_Icon span {
+    color: #adadad;
+    font-size: 113px; }
+  .IconPulse_Icon .IconPulse__beatTopLeft,
+  .IconPulse_Icon .IconPulse__beatTopRight,
+  .IconPulse_Icon .IconPulse__beatBottomLeft,
+  .IconPulse_Icon .IconPulse__beatBottomRight {
+    -webkit-animation: pulse-black 2s infinite;
+            animation: pulse-black 2s infinite;
+    background: rgba(59, 59, 59, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 black;
+    display: none;
+    height: 16px;
+    margin: 10px;
+    position: absolute;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    width: 16px; }
+
+@-webkit-keyframes pulse-black {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 59, 59, 0.4);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); } }
+
+@keyframes pulse-black {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 59, 59, 0.4);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); } }
 
 .InputWithClear-container {
   position: relative; }
