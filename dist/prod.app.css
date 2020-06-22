@@ -1,4 +1,4 @@
-/*! Generated: Mon Jun 22 2020 17:19:47 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.900002 */
+/*! Generated: Mon Jun 22 2020 18:08:46 GMT+0100 (Western European Summer Time) || Version: 5.0.900003 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4489,6 +4489,10 @@ a.Button.ArrowDrop:before,
 
 * {
   box-sizing: border-box; }
+
+body,
+html {
+  scroll-behavior: smooth; }
 
 body,
 form,
