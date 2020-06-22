@@ -23,11 +23,11 @@
 		}
 
 		&.Locked {
-			background-color: $mid-light-grey;
+			background-color: $light-grey;
 			border: none;
 			border-radius: 0;
 			border-top: 1px solid $regular-gray;
-			color: $light-grey;
+			color: $mid-dark-grey;
 			padding: 4px;
 			width: 100%;
 		}
