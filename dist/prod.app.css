@@ -1,4 +1,4 @@
-/*! Generated: Mon Jun 22 2020 10:52:17 GMT+0100 (Western European Summer Time) || Version: 5.0.890044 */
+/*! Generated: Mon Jun 22 2020 10:56:06 GMT+0100 (Western European Summer Time) || Version: 5.0.890045 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20942,16 +20942,16 @@ div.List-Star {
     .ToggleControlItem input:disabled ~ label,
     .ToggleControlItem input[disabled] ~ label,
     .ToggleControlItem input[readonly] ~ label {
-      background-color: #fff !important;
-      border-color: #d6d6d6 !important;
-      color: #d6d6d6 !important;
+      background-color: #ebebeb !important;
+      border-color: #adadad !important;
+      color: #adadad !important;
       cursor: default; }
     .ToggleControlItem input[type='radio']:checked ~ label {
       background: none;
-      background-color: #ebebeb;
-      border: 1px solid #adadad;
+      background-color: #00bfa5;
+      border: 1px solid #00bfa5;
       border-radius: 4px;
-      color: #adadad; }
+      color: #fff; }
     .ToggleControlItem input[type='radio'], .ToggleControlItem input[type='radio']:hover {
       background-color: transparent;
       box-shadow: none;
