@@ -1,4 +1,4 @@
-/*! Generated: Mon Jun 22 2020 15:12:31 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.900000 */
+/*! Generated: Mon Jun 22 2020 17:18:03 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.900001 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15139,6 +15139,7 @@ body.PanelOpened .daterangepicker {
 
 .UploadMessageClass {
   bottom: 2px;
+  color: #009884;
   cursor: pointer;
   font-family: "LatoBold";
   font-size: 1em;
@@ -25223,7 +25224,7 @@ body.LayoutBase .tooltipster-location--Default {
   z-index: 80; }
 
 body.LayoutBase .tooltipster-base.tooltipster-location--Content {
-  z-index: 10; }
+  z-index: 5; }
 
 .tooltipster-base .tooltipster-content {
   overflow: hidden; }
