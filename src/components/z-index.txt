@@ -6,6 +6,9 @@
 
 90 body.LayoutBase .os-internal-ui-widget-overlay
 
+80 body.LayoutBase .tooltipster-location--Default
+80 .tooltipster-base
+
 70 .LayoutBase-iframesidebar
 
 60 .modalPopup.Open .modalPopup_container
@@ -26,13 +29,15 @@
 20 .PanelBackground.ConfirmWB
 20 .PanelById .PanelBackground
 
+6 .LayoutBase-Content .LayoutBase-secondary.isFixed
+
+5 body.LayoutBase .tooltipster-base.tooltipster-location--Content
+
 4 .popup-wrapper > .popup-menu
 4 div.Toolbar.Fix
 4 .Menubar
 4 .Menubar__extraContainer
 4 .MenuItem_subItems
 
-
 1 .LayoutBase-topfixedcontent
-
 1 .LayoutBase-Wrapper.hasFixedBottom .LayoutBase-bottomfixedcontent
