@@ -64,18 +64,18 @@
 		&:disabled ~ label,
 		&[disabled] ~ label,
 		&[readonly] ~ label {
-			background-color: $regular-white !important;
-			border-color: $light-grey !important;
-			color: $light-grey !important;
+			background-color: $sapphire-light !important;
+			border-color: $mid-light-grey !important;
+			color: $mid-light-grey !important;
 			cursor: default;
 		}
 
 		&[type='radio']:checked ~ label {
 			background: none;
-			background-color: $sapphire-light;
-			border: 1px solid $mid-light-grey;
+			background-color: $regular-alpha;
+			border: 1px solid $regular-alpha;
 			border-radius: 4px;
-			color: $mid-light-grey;
+			color: $regular-white;
 		}
 
 		&[type='radio'] {
