@@ -1,4 +1,4 @@
-/*! Generated: Mon Jun 22 2020 15:12:31 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.900000 */
+/*! Generated: Mon Jun 22 2020 17:01:26 GMT+0100 (Western European Summer Time) || Version: 5.0.900001 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12194,6 +12194,92 @@ div.Feedback_Message_Info span.lasa-term {
 
 .DisableSlot {
   opacity: 0.25; }
+
+.ClinicBoxSelectable {
+  border: 1px solid #d6d6d6;
+  border-radius: 2px; }
+  .ClinicBoxSelectable--selected {
+    border: 1px solid #00bfa5; }
+    .ClinicBoxSelectable--selected .ClinicBoxSelectable__TitleWrapper::before {
+      background-color: #00bfa5;
+      border: 1px solid #00bfa5; }
+    .ClinicBoxSelectable--selected .ClinicBoxSelectable__TitleWrapper::after {
+      display: block; }
+  .ClinicBoxSelectable__Content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 18px 12px; }
+  .ClinicBoxSelectable__Title {
+    font-family: "LatoBold";
+    font-size: 1.143em; }
+  .ClinicBoxSelectable__Subtitle {
+    color: #858585; }
+  .ClinicBoxSelectable__TitleWrapper {
+    display: -webkit-box;
+    display: flex;
+    position: relative; }
+    .ClinicBoxSelectable__TitleWrapper::before {
+      border: 1px solid #d6d6d6;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 16px;
+      margin-right: 12px;
+      margin-top: 3px;
+      width: 16px; }
+    .ClinicBoxSelectable__TitleWrapper::after {
+      background-color: #fff;
+      border-radius: 50%;
+      content: '';
+      display: none;
+      height: 8px;
+      left: 5px;
+      position: absolute;
+      top: 8px;
+      width: 8px; }
+  .ClinicBoxSelectable__Available {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    font-size: 0.857em;
+    padding: 0 12px; }
+    .ClinicBoxSelectable__Available div:first-child {
+      font-size: 1.714em; }
+  .ClinicBoxSelectable__Values {
+    border-top: 1px solid #d6d6d6;
+    display: -webkit-box;
+    display: flex;
+    font-size: 0.857em;
+    padding: 6px 12px; }
+  .ClinicBoxSelectable__Booked::after {
+    content: ': ';
+    margin-right: 3px; }
+  .ClinicBoxSelectable__FollowUp::before {
+    content: '/';
+    margin: 0 3px; }
+
+.AR .ClinicBoxSelectable__TitleWrapper::before,
+.FA .ClinicBoxSelectable__TitleWrapper::before {
+  margin-left: 12px;
+  margin-right: 0; }
+
+.AR .ClinicBoxSelectable__TitleWrapper::after,
+.FA .ClinicBoxSelectable__TitleWrapper::after {
+  left: 0;
+  right: 5px; }
+
+.AR .ClinicBoxSelectable__Booked::after,
+.FA .ClinicBoxSelectable__Booked::after {
+  margin-left: 3px;
+  margin-right: 0; }
 
 .ClinicalBadge {
   border-radius: 2px;
