@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! Generated: Mon Jun 22 2020 15:08:09 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.900000 */
+=======
+/*! Generated: Mon Jun 22 2020 14:37:31 GMT+0100 (Western European Summer Time) || Version: 5.0.890047 */
+>>>>>>> b3723770ec0df95c0dcdf7f18eabe9a7b1fff4e2
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13545,6 +13549,61 @@ body.PanelOpened .daterangepicker {
     background-color: #fff;
     height: 36px;
     width: 174px; }
+
+.DoctorBox {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  font-size: 1em;
+  position: relative;
+  width: 230px; }
+  .DoctorBox.DoctorStatus {
+    display: table;
+    text-align: center;
+    width: 100%; }
+    .DoctorBox.DoctorStatus.Available {
+      background-color: #7cb342;
+      border: none;
+      border-radius: 0;
+      border-top: 1px solid #578329;
+      color: #fff;
+      padding: 4px;
+      width: 100%; }
+    .DoctorBox.DoctorStatus.Locked {
+      background-color: #d6d6d6;
+      border: none;
+      border-radius: 0;
+      border-top: 1px solid #858585;
+      color: #5c5c5c;
+      padding: 4px;
+      width: 100%; }
+  .DoctorBox_DoctorSurgeryHeader {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px; }
+  .DoctorBox.DoctorStatusMessage, .DoctorBox.DoctorStatusLocked {
+    font-size: 0.857em;
+    vertical-align: middle; }
+  .DoctorBox .AvailableSlotSeverity {
+    display: -webkit-box;
+    display: flex; }
+    .DoctorBox .AvailableSlotSeverity_Counter {
+      border-left: 1px solid #d6d6d6;
+      border-top: none;
+      display: inline-block;
+      height: 50px;
+      padding: 6px 0 0 0;
+      width: 100%; }
+      .DoctorBox .AvailableSlotSeverity_Counter:first-child {
+        border-left: none;
+        border-right: none; }
+
+.AR .AvailableSlotSeverity_Counter,
+.FA .AvailableSlotSeverity_Counter {
+  border-left: none;
+  border-right: 1px solid #d6d6d6;
+  font-size: 1.143em; }
 
 .AppLine {
   background-color: #fff;
@@ -34795,73 +34854,6 @@ a.Button.Icon:hover,
 /*-------------------------------------------------------------------------------------*/
 /* 9.46 Sapphire Patterns > Custom_Patterns > DoctorSurgeryBox *************************/
 /*-------------------------------------------------------------------------------------*/
-.DoctorBox {
-  background-color: white;
-  border: 1px solid #d2d1d0;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  font-family: 'globeregular';
-  font-size: 14px;
-  position: relative;
-  width: 230px; }
-
-.DoctorBox_DoctorStatus {
-  display: table;
-  text-align: center;
-  width: 100%; }
-
-.DoctorBox_DoctorSurgeryHeader {
-  height: 40px;
-  line-height: 40px;
-  padding: 0 10px; }
-
-.DoctorStatus .DoctorStatusMessage,
-.DoctorStatus .DoctorStatusLocked {
-  font-size: 12px;
-  vertical-align: middle; }
-
-.DoctorStatus.Locked {
-  background-color: #ccc;
-  border-radius: 0;
-  border-top: 1px solid #5b5b5b;
-  color: #5b5b5b;
-  padding: 4px;
-  width: 100%; }
-
-.DoctorStatus.Available {
-  background-color: #b6d882;
-  border-radius: 0;
-  border-top: 1px solid #7c9e4a;
-  color: #526a2c;
-  padding: 4px;
-  width: 100%; }
-
-.AvailableSlotSeverity {
-  display: -webkit-box;
-  display: flex; }
-
-.AvailableSlotSeverity_Counter {
-  border-left: 1px solid #d7d7d7;
-  border-top: none;
-  color: #333;
-  display: inline-block;
-  font-size: 14px;
-  height: 50px;
-  padding: 6px 0 0 0;
-  width: 100%; }
-
-.AR .AvailableSlotSeverity_Counter,
-.FA .AvailableSlotSeverity_Counter {
-  border-left: none;
-  border-right: 1px solid #d7d7d7;
-  font-size: 16px; }
-
-.AvailableSlotSeverity_Counter:first-child {
-  border-left: none; }
-
-.AvailableSlotSeverity_Counter:first-child {
-  border-right: none; }
-
 /*-------------------------------------------------------------------------------------*/
 /* 9.47 Sapphire Patterns > Custom_Patterns > Flag *************************************/
 /*-------------------------------------------------------------------------------------*/
