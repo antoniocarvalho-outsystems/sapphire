@@ -1,30 +1,37 @@
+.tablet .BaseFont40,
 .BaseFont40 {
-	font-size: 3em;
+  font-size: 40px;
 
-	select,
-	a.Button,
-	input[type='text'] {
-		height: 80px;
-		line-height: normal;
-	}
+  select,
+  a.Button,
+  input[type] {
+    font-size: 40px;
+    line-height: normal;
+    min-height: 80px;
+  }
 
-	a.Button {
-		align-items: center;
-		display: flex;
-		justify-content: center;
-	}
+  a.Button {
+    align-items: center;
+    display: flex !important;
+    height: auto !important;
+    justify-content: center;
+    line-height: 1.1em !important;
+    white-space: unset !important;
+  }
 
-	&.container {
-		margin-bottom: 10px;
-	}
+  &.container {
+    margin-bottom: 10px;
+  }
 
-	.SegmentedControl {
-		font-size: 1em;
-		.SegmentedControlItem {
-			font-size: 1em;
-			label {
-				line-height: unset;
-			}
-		}
-	}
+  .SegmentedControl {
+    font-size: 1em;
+
+    .SegmentedControlItem {
+      font-size: 1em;
+
+      label {
+        line-height: unset;
+      }
+    }
+  }
 }

@@ -1,4 +1,4 @@
-/*! Generated: Mon Jun 22 2020 10:56:06 GMT+0100 (Western European Summer Time) || Version: 5.0.890045 */
+/*! Generated: Mon Jun 22 2020 15:08:09 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.900000 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16058,75 +16058,99 @@ div.ExpandableList-MainLine > div.ExpandableContent > span {
 .GenericGallery .GenericGallery-item {
   opacity: 1; }
 
+.GenericGallery.GenericGallery-column-gap--XXSmall span.ListRecords,
 .GenericGallery.GenericGallery-column-gap--XXSmall .GenericGallery-content {
   grid-column-gap: 3px; }
 
+.GenericGallery.GenericGallery-row-gap--XXSmall span.ListRecords,
 .GenericGallery.GenericGallery-row-gap--XXSmall .GenericGallery-content {
   grid-row-gap: 3px; }
 
+.GenericGallery.GenericGallery-padding--XXSmall span.ListRecords,
 .GenericGallery.GenericGallery-padding--XXSmall .GenericGallery-item {
   padding: 3px; }
 
+.GenericGallery.GenericGallery-column-gap--XSmall span.ListRecords,
 .GenericGallery.GenericGallery-column-gap--XSmall .GenericGallery-content {
   grid-column-gap: 6px; }
 
+.GenericGallery.GenericGallery-row-gap--XSmall span.ListRecords,
 .GenericGallery.GenericGallery-row-gap--XSmall .GenericGallery-content {
   grid-row-gap: 6px; }
 
+.GenericGallery.GenericGallery-padding--XSmall span.ListRecords,
 .GenericGallery.GenericGallery-padding--XSmall .GenericGallery-item {
   padding: 6px; }
 
+.GenericGallery.GenericGallery-column-gap--Small span.ListRecords,
 .GenericGallery.GenericGallery-column-gap--Small .GenericGallery-content {
   grid-column-gap: 12px; }
 
+.GenericGallery.GenericGallery-row-gap--Small span.ListRecords,
 .GenericGallery.GenericGallery-row-gap--Small .GenericGallery-content {
   grid-row-gap: 12px; }
 
+.GenericGallery.GenericGallery-padding--Small span.ListRecords,
 .GenericGallery.GenericGallery-padding--Small .GenericGallery-item {
   padding: 12px; }
 
+.GenericGallery.GenericGallery-column-gap--Medium span.ListRecords,
 .GenericGallery.GenericGallery-column-gap--Medium .GenericGallery-content {
   grid-column-gap: 18px; }
 
+.GenericGallery.GenericGallery-row-gap--Medium span.ListRecords,
 .GenericGallery.GenericGallery-row-gap--Medium .GenericGallery-content {
   grid-row-gap: 18px; }
 
+.GenericGallery.GenericGallery-padding--Medium span.ListRecords,
 .GenericGallery.GenericGallery-padding--Medium .GenericGallery-item {
   padding: 18px; }
 
+.GenericGallery.GenericGallery-column-gap--Large span.ListRecords,
 .GenericGallery.GenericGallery-column-gap--Large .GenericGallery-content {
   grid-column-gap: 24px; }
 
+.GenericGallery.GenericGallery-row-gap--Large span.ListRecords,
 .GenericGallery.GenericGallery-row-gap--Large .GenericGallery-content {
   grid-row-gap: 24px; }
 
+.GenericGallery.GenericGallery-padding--Large span.ListRecords,
 .GenericGallery.GenericGallery-padding--Large .GenericGallery-item {
   padding: 24px; }
 
+.GenericGallery.GenericGallery-column-gap--XLarge span.ListRecords,
 .GenericGallery.GenericGallery-column-gap--XLarge .GenericGallery-content {
   grid-column-gap: 30px; }
 
+.GenericGallery.GenericGallery-row-gap--XLarge span.ListRecords,
 .GenericGallery.GenericGallery-row-gap--XLarge .GenericGallery-content {
   grid-row-gap: 30px; }
 
+.GenericGallery.GenericGallery-padding--XLarge span.ListRecords,
 .GenericGallery.GenericGallery-padding--XLarge .GenericGallery-item {
   padding: 30px; }
 
+.GenericGallery.GenericGallery-column-gap--XXLarge span.ListRecords,
 .GenericGallery.GenericGallery-column-gap--XXLarge .GenericGallery-content {
   grid-column-gap: 36px; }
 
+.GenericGallery.GenericGallery-row-gap--XXLarge span.ListRecords,
 .GenericGallery.GenericGallery-row-gap--XXLarge .GenericGallery-content {
   grid-row-gap: 36px; }
 
+.GenericGallery.GenericGallery-padding--XXLarge span.ListRecords,
 .GenericGallery.GenericGallery-padding--XXLarge .GenericGallery-item {
   padding: 36px; }
 
+.GenericGallery.GenericGallery-column-gap--Largest span.ListRecords,
 .GenericGallery.GenericGallery-column-gap--Largest .GenericGallery-content {
   grid-column-gap: 42px; }
 
+.GenericGallery.GenericGallery-row-gap--Largest span.ListRecords,
 .GenericGallery.GenericGallery-row-gap--Largest .GenericGallery-content {
   grid-row-gap: 42px; }
 
+.GenericGallery.GenericGallery-padding--Largest span.ListRecords,
 .GenericGallery.GenericGallery-padding--Largest .GenericGallery-item {
   padding: 42px; }
 
@@ -27971,31 +27995,48 @@ ul.os-internal-ui-autocomplete {
     display: -webkit-box;
     display: flex; }
 
+.tablet .BaseFont40,
 .BaseFont40 {
-  font-size: 3em; }
+  font-size: 40px; }
+  .tablet .BaseFont40 select,
+  .tablet .BaseFont40 a.Button,
+  .tablet .BaseFont40 .DropZoneContainer .row .Button,
+  .DropZoneContainer .row .tablet .BaseFont40 .Button,
+  .tablet .BaseFont40 input[type],
   .BaseFont40 select,
   .BaseFont40 a.Button,
   .BaseFont40 .DropZoneContainer .row .Button,
   .DropZoneContainer .row .BaseFont40 .Button,
-  .BaseFont40 input[type='text'] {
-    height: 80px;
-    line-height: normal; }
+  .BaseFont40 input[type] {
+    font-size: 40px;
+    line-height: normal;
+    min-height: 80px; }
   
+  .tablet .BaseFont40 a.Button,
+  .tablet .BaseFont40 .DropZoneContainer .row .Button,
+  .DropZoneContainer .row .tablet .BaseFont40 .Button,
   .BaseFont40 a.Button,
   .BaseFont40 .DropZoneContainer .row .Button,
   .DropZoneContainer .row .BaseFont40 .Button {
     -webkit-box-align: center;
             align-items: center;
-    display: -webkit-box;
-    display: flex;
+    display: -webkit-box !important;
+    display: flex !important;
+    height: auto !important;
     -webkit-box-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    line-height: 1.1em !important;
+    white-space: unset !important; }
+  .tablet .BaseFont40.container,
   .BaseFont40.container {
     margin-bottom: 10px; }
+  .tablet .BaseFont40 .SegmentedControl,
   .BaseFont40 .SegmentedControl {
     font-size: 1em; }
+    .tablet .BaseFont40 .SegmentedControl .SegmentedControlItem,
     .BaseFont40 .SegmentedControl .SegmentedControlItem {
       font-size: 1em; }
+      .tablet .BaseFont40 .SegmentedControl .SegmentedControlItem label,
       .BaseFont40 .SegmentedControl .SegmentedControlItem label {
         line-height: unset; }
 
@@ -28502,34 +28543,6 @@ span:not(:last-of-type) .CompLine {
 .tablet .Others_Details,
 .tablet .Actions_Details {
   display: table-cell; }
-
-div[id*='ER_Common_CW'].PersonCard__content {
-  all: unset;
-  background-color: white;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-flex: unset !important;
-          flex: unset !important;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  width: 100%; }
-  div[id*='ER_Common_CW'].PersonCard__content .MinWidthMedium {
-    all: unset;
-    padding-left: 10px; }
-
-div[id*='ER_Common_CW'] .PersonCard__Complementary:not(:empty) {
-  flex-basis: unset;
-  width: 60%; }
-
-div[id*='ER_Common_CW'] .PersonCard__content > div {
-  flex-basis: unset; }
-
-div[id*='ER_Common_CW'] .PersonCard__actions {
-  flex-basis: unset !important; }
-
-div[id*='ER_Common_CW'] div[id*="Column2"] a[id*="wtlnkIdentifyPatient"] {
-  height: 80px; }
 
 .FormField-fullwidth .FormField-field .DateTimeRangePicker,
 .FormField-fullwidth .FormField-field .DateTimeRangePicker-input {
@@ -43205,41 +43218,6 @@ a.Button.FullWidth, .DropZoneContainer .row .FullWidth.Button {
 
 /**************** MainInteractiveCard ******************/
 /* ListBoard */
-.BaseFont40 {
-  font-size: 40px; }
-
-.BaseFont40 input[type='text'],
-.BaseFont40 select,
-.BaseFont40 a.Button,
-.BaseFont40 .DropZoneContainer .row .Button,
-.DropZoneContainer .row .BaseFont40 .Button {
-  font-size: 40px;
-  height: 80px;
-  line-height: normal; }
-
-
-.BaseFont40 a.Button,
-.BaseFont40 .DropZoneContainer .row .Button,
-.DropZoneContainer .row .BaseFont40 .Button {
-  line-height: 80px !important;
-  white-space: nowrap; }
-
-.BaseFont40 .SegmentedControl {
-  font-size: 1em; }
-
-.BaseFont40 .SegmentedControl .SegmentedControlItem {
-  font-size: 1em; }
-
-.BaseFont40 .SegmentedControl .SegmentedControlItem label {
-  line-height: unset; }
-
-.desktop.small .BaseFont40 select,
-.desktop.small .BaseFont40 a.Button,
-.desktop.small .BaseFont40 .DropZoneContainer .row .Button,
-.DropZoneContainer .row .desktop.small .BaseFont40 .Button,
-.desktop.small .BaseFont40 {
-  font-size: 30px; }
-
 @media only screen and (max-width: 1400px) and (min-width: 900px) {
   /*Homepage Appointments*/
   .SchedulingsStructure .SmallLeftColumns > .Column.ColFirst {
