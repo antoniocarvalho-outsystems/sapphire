@@ -1,104 +1,108 @@
 .phone,
 .tablet {
-	input[type='number'],
-	input[type='text'] {
-		height: 36px;
-	}
 
-	select {
-		line-height: 18px;
-	}
+  input[type='number'],
+  input[type='text'] {
+    height: 36px;
+  }
+
+  select {
+    line-height: 18px;
+  }
 }
 
 .isTouch {
-	& select,
-	& input[type='text'] {
-		font-size: 1em;
-		height: 50px;
-	}
+
+  & select,
+  & input[type='text'] {
+    font-size: 1em;
+    height: 50px;
+  }
 }
 
 .ie {
-	input[type='radio'],
-	input[type='checkbox'],
-	.Form input[type='radio'],
-	.Form input[type='checkbox'] {
-		border-radius: 0;
-	}
+
+  input[type='radio'],
+  input[type='checkbox'],
+  .Form input[type='radio'],
+  .Form input[type='checkbox'] {
+    border-radius: 0;
+  }
 }
 
 .ie8 {
-	select {
-		padding: 6px;
-	}
+  select {
+    padding: 6px;
+  }
 }
 
 .CheckMandatory {
-	input[type='checkbox'] {
-		&:not(:checked):before {
-			border: 1px solid $regular-red;
-			box-shadow: none;
-		}
-	}
+  input[type='checkbox'] {
+    &:not(:checked):before {
+      border: 1px solid $regular-red;
+      box-shadow: none;
+    }
+  }
 }
 
 .Form {
-	&:not(.ReadOnly) {
-		cursor: text;
-	}
+  &:not(.ReadOnly) {
+    cursor: text;
+  }
 
-	textarea {
-		&.Not_Valid,
-		&.Not_Valid:focus {
-			padding: 0 10px;
-		}
-	}
+  textarea {
+
+    &.Not_Valid,
+    &.Not_Valid:focus {
+      padding: 0 10px;
+    }
+  }
 }
 
 .SegmentedControl {
-	input {
-		left: -20px;
-		margin: 0 5px 0 0;
-		opacity: 0;
-		padding: 0;
-		position: absolute;
-	}
+  input {
+    left: -20px;
+    margin: 0 5px 0 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+  }
 }
 
 input[type] {
-	&.TextInput:read-only {
-		background-color: $body-color;
-		color: $mid-light-grey;
-		cursor: not-allowed;
-	}
+  &.TextInput:read-only {
+    background-color: $body-color;
+    color: $mid-light-grey;
+    cursor: not-allowed;
+  }
 
-	/*Receive Stock*/
-	&.TextInput[readonly] {
-		background-color: transparent;
-		border: none;
-		box-shadow: none;
-		color: $dark-grey;
-		font-weight: bold;
-		text-align: center;
-	}
+  /*Receive Stock*/
+  &.TextInput[readonly] {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: $dark-grey;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 
 textarea,
 input[type],
 input[type]:focus {
-	&.SavedInput {
-		border-color: $regular-alpha !important;
-		border-width: 2px !important;
-	}
+  &.SavedInput {
+    border-color: $regular-alpha !important;
+    border-width: 2px !important;
+  }
 }
 
 /*  RTL Adjustments */
 .AR,
 .FA {
-	.SegmentedControl {
-		input {
-			left: auto;
-			right: -20px;
-		}
-	}
+  .SegmentedControl {
+    input {
+      left: auto;
+      right: -20px;
+    }
+  }
 }

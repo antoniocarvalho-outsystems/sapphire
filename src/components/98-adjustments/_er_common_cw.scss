@@ -1,39 +1,39 @@
-div[id*='ER_Common_CW'] {
+// div[id*='ER_Common_CW'] {
 
-  &.PersonCard__content {
-    all: unset;
-    background-color: white;
-    display: flex;
-    flex: unset !important;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-
-
-    .MinWidthMedium {
-      all: unset;
-      padding-left: 10px;
-    }
-  }
-
-  .PersonCard__Complementary:not(:empty) {
-    flex-basis: unset;
-    width: 60%;
-  }
+//   &.PersonCard__content {
+//     all: unset;
+//     background-color: white;
+//     display: flex;
+//     flex: unset !important;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     width: 100%;
 
 
-  .PersonCard__content>div {
-    flex-basis: unset;
-  }
+//     .MinWidthMedium {
+//       all: unset;
+//       padding-left: 10px;
+//     }
+//   }
 
-  .PersonCard__actions {
-    flex-basis: unset !important;
-  }
+//   .PersonCard__Complementary:not(:empty) {
+//     flex-basis: unset;
+//     width: 60%;
+//   }
 
-  div[id*="Column2"] {
-    a[id*="wtlnkIdentifyPatient"] {
-      height: 80px;
-    }
-  }
 
-}
+//   .PersonCard__content>div {
+//     flex-basis: unset;
+//   }
+
+//   .PersonCard__actions {
+//     flex-basis: unset !important;
+//   }
+
+//   div[id*="Column2"] {
+//     a[id*="wtlnkIdentifyPatient"] {
+//       height: 80px;
+//     }
+//   }
+
+// }

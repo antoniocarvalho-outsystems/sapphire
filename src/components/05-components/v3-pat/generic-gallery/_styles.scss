@@ -13,18 +13,24 @@
     $value: nth($size, 2);
 
     &.GenericGallery-column-gap--#{$label} {
+
+      span.ListRecords,
       .GenericGallery-content {
         grid-column-gap: #{$value};
       }
     }
 
     &.GenericGallery-row-gap--#{$label} {
+
+      span.ListRecords,
       .GenericGallery-content {
         grid-row-gap: #{$value};
       }
     }
 
     &.GenericGallery-padding--#{$label} {
+
+      span.ListRecords,
       .GenericGallery-item {
         padding: #{$value};
       }
