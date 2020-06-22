@@ -1,0 +1,119 @@
+.ClinicBoxSelectable {
+	border: 1px solid $light-grey;
+	border-radius: 2px;
+
+	&--selected {
+		border: 1px solid $regular-alpha;
+
+		.ClinicBoxSelectable__TitleWrapper {
+			&::before {
+				background-color: $regular-alpha;
+				border: 1px solid $regular-alpha;
+			}
+
+			&::after {
+				display: block;
+			}
+		}
+	}
+
+	&__Content {
+		display: flex;
+		justify-content: space-between;
+		padding: 18px 12px;
+	}
+
+	&__Title {
+		font-family: $font-family-latin-bold;
+		font-size: 1.143em;
+	}
+
+	&__Subtitle {
+		color: $regular-gray;
+	}
+
+	&__TitleWrapper {
+		display: flex;
+		position: relative;
+
+		&::before {
+			border: 1px solid $light-grey;
+			border-radius: 50%;
+			content: '';
+			display: block;
+			height: 16px;
+			margin-right: 12px;
+			margin-top: 3px;
+			width: 16px;
+		}
+
+		&::after {
+			background-color: $regular-white;
+			border-radius: 50%;
+			content: '';
+			display: none;
+			height: 8px;
+			left: 5px;
+			position: absolute;
+			top: 8px;
+			width: 8px;
+		}
+	}
+
+	&__Available {
+		@include flex-center-total();
+
+		flex-direction: column;
+		font-size: 0.857em;
+		padding: 0 12px;
+
+		div:first-child {
+			font-size: 1.714em;
+		}
+	}
+
+	&__Values {
+		border-top: 1px solid $light-grey;
+		display: flex;
+		font-size: 0.857em;
+		padding: 6px 12px;
+	}
+
+	&__Booked {
+		&::after {
+			content: ': ';
+			margin-right: 3px;
+		}
+	}
+
+	&__FollowUp {
+		&::before {
+			content: '/';
+			margin: 0 3px;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.ClinicBoxSelectable {
+		&__TitleWrapper {
+			&::before {
+				margin-left: 12px;
+				margin-right: 0;
+			}
+
+			&::after {
+				left: 0;
+				right: 5px;
+			}
+		}
+
+		&__Booked {
+			&::after {
+				margin-left: 3px;
+				margin-right: 0;
+			}
+		}
+	}
+}
