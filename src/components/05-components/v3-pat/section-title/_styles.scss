@@ -1,0 +1,20 @@
+.SectionTitles.Area {
+	display: flex;
+	margin-bottom: 20px;
+
+	.SectionTitles-title,
+	.SectionTitles-remaining {
+		padding: 20px 0 15px;
+	}
+
+	.SectionTitles-title {
+		border-bottom: 1px solid $regular-beta;
+		font-family: $font-family-latin-bold;
+		font-size: 1.429em;
+	}
+
+	.SectionTitles-remaining {
+		border-bottom: 1px solid $light-grey;
+		flex: 1;
+	}
+}
