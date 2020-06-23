@@ -1,4 +1,4 @@
-/*! Generated: Tue Jun 23 2020 15:13:24 GMT+0100 (Western European Summer Time) || Version: 5.0.900006 */
+/*! Generated: Tue Jun 23 2020 16:12:52 GMT+0100 (Western European Summer Time) || Version: 5.0.900007 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22235,6 +22235,22 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .FA .SectionExpandableInside .PlaceHolderActions > div:not(:first-child) {
     margin-left: auto;
     margin-right: 10px; }
+
+.SectionTitles.Area {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 20px; }
+  .SectionTitles.Area .SectionTitles-title,
+  .SectionTitles.Area .SectionTitles-remaining {
+    padding: 20px 0 15px; }
+  .SectionTitles.Area .SectionTitles-title {
+    border-bottom: 1px solid #009884;
+    font-family: "LatoBold";
+    font-size: 1.429em; }
+  .SectionTitles.Area .SectionTitles-remaining {
+    border-bottom: 1px solid #d6d6d6;
+    -webkit-box-flex: 1;
+            flex: 1; }
 
 .SegmentedControl {
   margin-bottom: 12px;
