@@ -1,4 +1,4 @@
-/*! Generated: Mon Jun 22 2020 18:08:46 GMT+0100 (Western European Summer Time) || Version: 5.0.900003 */
+/*! Generated: Tue Jun 23 2020 09:24:00 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.900004 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -8155,6 +8155,27 @@ a.Button.IsDefault,
 .FA .TimelineDescription {
   margin-left: auto;
   margin-right: 10px; }
+
+.LR_SOPD {
+  background-color: white;
+  display: table; }
+
+.LR_SOPD > div {
+  display: table-row-group; }
+
+.LR_SOPD > div > span {
+  display: table-row !important; }
+
+.LR_SOPD > div > span > div {
+  border: 1px solid #d9d9d9;
+  border-right: none;
+  border-top: none;
+  display: table-cell;
+  padding: 8px 15px; }
+
+.LR_SOPD .ListRecords .HeaderColor {
+  background-color: #e2f3f2;
+  white-space: nowrap; }
 
 .MedicalFileOptionsLine {
   display: -webkit-box;
@@ -22216,18 +22237,19 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     margin-right: 10px; }
 
 .SegmentedControl {
-  margin-bottom: 10px; }
+  margin-bottom: 12px;
+  margin-left: 1px; }
 
 .SegmentedControl.NoMargin {
-  margin: 0; }
+  margin: 0 0 0 1px !important; }
 
 .SegmentedControlItem {
   color: #00bfa5;
   display: inline-block;
-  font-size: 13px;
+  font-size: 1em;
   margin-left: -1px;
   margin-top: -1px;
-  min-height: 28px;
+  min-height: 1.714em;
   overflow: hidden;
   position: relative;
   vertical-align: top; }
@@ -22242,6 +22264,14 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   padding: 0 15px;
   text-align: center;
   width: 100%; }
+
+.SegmentedControlItem:first-child label {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px; }
+
+.SegmentedControlItem:last-child label {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px; }
 
 .SegmentedControlItem label:hover,
 .SegmentedControlItem label:focus {
@@ -22264,49 +22294,44 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   line-height: 35px;
   padding-right: 5px; }
 
-.FA .SegmentedControlItem,
-.AR .SegmentedControlItem {
-  margin-left: 0;
-  margin-right: -1px; }
-
 .Vertical .SegmentedControlItem {
   display: block;
   margin-top: 5px; }
 
 .Vertical .SegmentedControlItem,
-.SegmentedControlItem:first-child {
+.SegmentedControlItem:first-child label {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px; }
 
 .FA .Vertical .SegmentedControlItem,
-.FA .SegmentedControlItem:first-child,
-.AR .Vertical .SegmentedControlItem,
-.AR .SegmentedControlItem:first-child {
+.AR .Vertical .SegmentedControlItem {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 5px;
   border-left: none;
   border-top-left-radius: 0;
   border-top-right-radius: 5px; }
 
-.Vertical .SegmentedControlItem,
-.SegmentedControlItem:last-child {
+.Vertical .SegmentedControlItem:last-child label {
   border-bottom-right-radius: 5px;
   border-right: solid 1px #00bfa5;
   border-top-right-radius: 5px;
   height: 100%; }
 
-.FA .Vertical .SegmentedControlItem,
-.FA .SegmentedControlItem:last-child,
-.AR .Vertical .SegmentedControlItem,
-.AR .SegmentedControlItem:last-child {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 0; }
+.FA .SegmentedControlItem,
+.AR .SegmentedControlItem {
+  margin-left: 0;
+  margin-right: -1px; }
 
 .FA .SegmentedControlItem label,
 .AR .SegmentedControlItem label {
   padding: 0 10px; }
+
+.FA .Vertical .SegmentedControlItem,
+.AR .Vertical .SegmentedControlItem {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0; }
 
 .LayoutBlank .select2-container--default .select2-selection,
 .LayoutBase .select2-container--default .select2-selection,
@@ -31604,28 +31629,6 @@ a.Header_ButtonSidebar {
   display: none; }
 
 /********************* PATIENT HEADER DETAILS HMS***********************************/
-/*---Tabela  LR_SOPD----*/
-.LR_SOPD {
-  background-color: white;
-  display: table; }
-
-.LR_SOPD > div {
-  display: table-row-group; }
-
-.LR_SOPD > div > span {
-  display: table-row; }
-
-.LR_SOPD > div > span > div {
-  border: 1px solid #d9d9d9;
-  border-right: none;
-  border-top: none;
-  display: table-cell;
-  padding: 8px 15px; }
-
-.LR_SOPD .ListRecords .HeaderColor {
-  background-color: #e2f3f2;
-  white-space: nowrap; }
-
 /*-------------------------*/
 .PatientDetailsLayout .TopLayoutBar {
   border-top: 2px solid #0da2aa;
