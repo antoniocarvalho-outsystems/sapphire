@@ -1,4 +1,4 @@
-/*! Generated: Tue Jun 23 2020 16:12:52 GMT+0100 (Western European Summer Time) || Version: 5.0.900007 */
+/*! Generated: Tue Jun 23 2020 18:17:37 GMT+0100 (Western European Summer Time) || Version: 5.0.900008 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -6580,7 +6580,8 @@ a.Button.IsDefault,
   .Circle.ColorYellow {
     background-color: #fbc02d; }
 
-.container {
+.container,
+.Container {
   border-color: #adadad;
   border-style: solid;
   border-width: 1px; }
@@ -20702,9 +20703,8 @@ a .PersonCard {
     display: block; } }
 
 div.Counter_Message {
-  color: #888888; }
+  color: #858585; }
 
-/* ExcludeAllFromPickersOutsideBlock */
 div.List-Star {
   color: #d6d6d6;
   width: 48px; }
@@ -36597,9 +36597,6 @@ canvas.Sketch_Canvas {
 /*-------------------------------------------------------------------------------------*/
 /* 9.96 Sapphire Patterns > SapphireLists > List_Counter *********/
 /*-------------------------------------------------------------------------------------*/
-.Counter_Message {
-  color: #888888; }
-
 /*-------------------------------------------------------------------------------------*/
 /* 9.97 Sapphire Patterns > SapphireWidgets > Circle_Widget *********/
 /*-------------------------------------------------------------------------------------*/
