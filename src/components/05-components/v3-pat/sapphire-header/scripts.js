@@ -23,7 +23,6 @@
 		this.$additionalTrigger = this.$widget.find('.SapphireHeader-additional-trigger');
 		this.$additionalContent = this.$widget.find('.SapphireHeader-additional-content');
 
-
 		this.handleResize();
 		this.attachEvents();
 
@@ -31,11 +30,6 @@
 			this.$information.hide();
 		}
 
-		$(function () {
-			setTimeout(function () {
-				_this.handleDemographics();
-			}, 500);
-		});
 	};
 
 	SapphireHeader.prototype.getConfig = function () {
@@ -97,6 +91,9 @@
 })(jQuery, window, document, SapphireWidgets);
 
 $(window).load(function () {
+	if (!!SapphireWidgets.SapphireHeader.widgetId) {
+		window[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();
+	}
 	if (!!$('.SapphireHeader-demographics').length) {
 		osAjaxBackend.BindAfterAjaxRequest(function () {
 			window[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();

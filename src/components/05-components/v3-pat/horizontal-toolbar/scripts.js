@@ -1,5 +1,5 @@
 /* Component HorizontalToolbar */
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	const create = config => {
 		const $widget = $('#' + config.widgetId);
 
@@ -8,7 +8,6 @@
 		if (config.isArrowNavigation) {
 			$(window).load(() => {
 				const $itemWrapper = $widget.find('.MenuItemWrapper.Active');
-
 				if ($itemWrapper.length) {
 					$itemWrapper[0].scrollIntoView({
 						behavior: 'auto',
@@ -30,7 +29,7 @@
 
 			$toolbarItems.scroll(() => handleArrows($widget));
 
-			$btnRight.click(function() {
+			$btnRight.click(function () {
 				var currentScroll = $toolbarItems.scrollLeft();
 				var maxScrolll = $listItems.width() - $toolbarItems.width();
 				var sideWidth = maxScrolll - 50;
@@ -40,7 +39,7 @@
 				if (currentScroll != 50) $btnLeft.removeClass('Disabled');
 			});
 
-			$btnLeft.click(function() {
+			$btnLeft.click(function () {
 				var currentScroll = $toolbarItems.scrollLeft();
 				var maxScrolll = $listItems.width() - $toolbarItems.width();
 				var sideWidth = maxScrolll - 50;
@@ -100,7 +99,7 @@
 
 		const menuWidth = $widget.find('.Toolbar__Items').outerWidth(true);
 
-		$listItems.find('a[ui]').each(function() {
+		$listItems.find('a[ui]').each(function () {
 			itemsTotal += parseInt($(this).outerWidth(true), 10);
 
 			if (itemsTotal + 90 < menuWidth) {
@@ -126,7 +125,7 @@
 
 		$listItems.find('.Toolbar__MoreOptions').css('display', $optionsList.length ? 'block' : 'none');
 
-		const $hiddenItems = $listItems.find('> a[ui]').filter(function() {
+		const $hiddenItems = $listItems.find('> a[ui]').filter(function () {
 			return $(this).css('display') == 'none';
 		});
 
@@ -161,5 +160,7 @@
 		});
 	};
 
-	SapphireWidgets.HorizontalToolbar = { create };
+	SapphireWidgets.HorizontalToolbar = {
+		create
+	};
 })(jQuery, window, SapphireWidgets);

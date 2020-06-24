@@ -109,13 +109,6 @@
 			this.$headerText.css({
 				maxWidth: '99%'
 			});
-			if (this.$widget.find('iframe').length === 1) {
-				setTimeout(function () {
-					if (!!_this.$widget.find('iframe')[0] && !!_this.$widget.find('iframe')[0].contentWindow && _this.$widget.find('iframe')[0].contentWindow.SapphireWidgets && _this.$widget.find('iframe')[0].contentWindow.SapphireWidgets.ResizeParentIframe) {
-						_this.$widget.find('iframe')[0].contentWindow.SapphireWidgets.ResizeParentIframe.resize();
-					}
-				}, 500);
-			}
 		}
 	};
 
