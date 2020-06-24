@@ -421,19 +421,6 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
   vertical-align: middle;
 }
 
-// .MainInteractiveCard-absolute-actions>div.iconHorizontal.OSInline,
-// .MainInteractiveCard-absolute-actions a.Button.Small,
-// .MainInteractiveCard-absolute-actions a.ButtonLink,
-// .MainInteractiveCard-absolute-actions div.PatientHeaderActions,
-// .MainInteractiveCard-absolute-actions a.ButtonSquare span.icon,
-// .MainInteractiveCard-absolute-actions>a,
-// .MainInteractiveCard-absolute-actions>span,
-// .MainInteractiveCard-absolute-actions>div {
-//   display: inline-block;
-//   margin: 0 8px;
-//   vertical-align: middle;
-// }
-
 .MainInteractiveCard>div>.MainInteractiveCard-body .MainInteractiveCard-absolute-actions>*:last-child {
   margin-right: 0;
 }
