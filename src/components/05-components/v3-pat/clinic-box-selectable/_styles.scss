@@ -1,25 +1,44 @@
 .ClinicBoxSelectable {
 	border: 1px solid $light-grey;
-	border-radius: 2px;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
 
 	&--selected {
+		background-color: $regular-alpha;
 		border: 1px solid $regular-alpha;
+		color: $regular-white;
 
-		.ClinicBoxSelectable__TitleWrapper {
-			&::before {
-				background-color: $regular-alpha;
-				border: 1px solid $regular-alpha;
+		.ClinicBoxSelectable {
+			&__ContentLeft {
+				&::before {
+					background-color: $regular-white;
+					border: 1px solid $regular-alpha;
+				}
+
+				&::after {
+					display: block;
+				}
 			}
 
-			&::after {
-				display: block;
+			&__Subtitle,
+			&__FirstSlot,
+			&__SecondSlot,
+			&__ThirdSlot {
+				color: $regular-white;
+			}
+
+			&__Values {
+				border-top-color: $regular-white;
 			}
 		}
 	}
 
 	&__Content {
 		display: flex;
+		flex: 1;
 		justify-content: space-between;
+		min-height: 100px;
 		padding: 18px 12px;
 	}
 
@@ -32,7 +51,7 @@
 		color: $regular-gray;
 	}
 
-	&__TitleWrapper {
+	&__ContentLeft {
 		display: flex;
 		position: relative;
 
@@ -48,23 +67,44 @@
 		}
 
 		&::after {
-			background-color: $regular-white;
+			background-color: $regular-alpha;
 			border-radius: 50%;
 			content: '';
 			display: none;
-			height: 8px;
-			left: 5px;
+			height: 6px;
+			left: 6px;
 			position: absolute;
-			top: 8px;
-			width: 8px;
+			top: 9px;
+			width: 6px;
 		}
 	}
 
-	&__Available {
+	&__ContentRight {
+		@include flex-center-total();
+
+		flex-direction: column;
+
+		> div:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__FirstSlot {
+		color: $regular-beta;
+	}
+
+	&__SecondSlot {
+		color: $regular-red;
+	}
+
+	&__FirstSlot,
+	&__SecondSlot,
+	&__ThirdSlot {
 		@include flex-center-total();
 
 		flex-direction: column;
 		font-size: 0.857em;
+		margin-bottom: 6px;
 		padding: 0 12px;
 
 		div:first-child {
@@ -97,7 +137,7 @@
 .AR,
 .FA {
 	.ClinicBoxSelectable {
-		&__TitleWrapper {
+		&__ContentLeft {
 			&::before {
 				margin-left: 12px;
 				margin-right: 0;
@@ -105,7 +145,7 @@
 
 			&::after {
 				left: 0;
-				right: 5px;
+				right: 6px;
 			}
 		}
 
