@@ -329,12 +329,24 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
   top: -40px;
 }
 
+.MainInteractiveCard.XSmallHeader.isOpen>.MainInteractiveCard-floater {
+  margin-bottom: -40px;
+}
+
 .MainInteractiveCard.SmallHeader>.MainInteractiveCard-floater {
   top: -60px;
 }
 
+.MainInteractiveCard.SmallHeader.isOpen>.MainInteractiveCard-floater {
+  margin-bottom: -60px;
+}
+
 .MainInteractiveCard.MediumHeader>.MainInteractiveCard-floater {
   top: -85px;
+}
+
+.MainInteractiveCard.MediumHeader.isOpen>.MainInteractiveCard-floater {
+  margin-bottom: -85px;
 }
 
 .MainInteractiveCard.isOpen:before {

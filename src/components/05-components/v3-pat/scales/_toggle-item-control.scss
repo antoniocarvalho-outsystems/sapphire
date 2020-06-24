@@ -1,6 +1,6 @@
 .ToggleItemControl {
 	cursor: pointer;
-	margin: 10px 2px;
+	margin: 2px;
 	position: relative;
 
 	&.active {
@@ -21,6 +21,7 @@
 			width: 16px;
 		}
 	}
+
 	&_label {
 		border: 1px solid $light-grey;
 		border-radius: 4px;

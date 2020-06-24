@@ -1,5 +1,11 @@
 .PrescriptionContainer__Header_Statement {
 	align-items: center;
 	display: flex;
-	padding-left: 15px;
+	justify-content: center;
+}
+
+.StatementDates {
+	.DosePickerContentInfo {
+		justify-content: space-between;
+	}
 }

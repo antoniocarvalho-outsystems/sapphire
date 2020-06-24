@@ -98,6 +98,7 @@ require('./styles.scss');
 			}
 
 			markAsideMenu(true);
+			scrollToHashTarget();
 		});
 
 		$(window).on('hashchange', () => {
@@ -108,11 +109,13 @@ require('./styles.scss');
 	scrollToHashTarget = () => {
 		let targetById = $('.DesignSystem__Content').find('[id="' + window.location.hash.slice(1) + '"]');
 		let targetByTitle = $('.DesignSystem__Content').find('[title="' + window.location.hash.slice(1) + '"]');
+
 		if (!!targetById.length) {
 			$(window).scrollTop(targetById.offset().top);
 		} else if (!!targetByTitle.length) {
 			$(window).scrollTop(targetByTitle.offset().top);
 		}
+
 		markAsideMenu(false);
 	};
 
