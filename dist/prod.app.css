@@ -1,4 +1,4 @@
-/*! Generated: Wed Jun 24 2020 18:02:21 GMT+0100 (Hora de verão da Europa Ocidental) || Version: 5.0.900012 */
+/*! Generated: Wed Jun 24 2020 18:46:09 GMT+0100 (Western European Summer Time) || Version: 5.0.900013 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12490,30 +12490,44 @@ div.Feedback_Message_Info span.lasa-term {
 
 .ClinicBoxSelectable {
   border: 1px solid #d6d6d6;
-  border-radius: 2px; }
+  border-radius: 4px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
   .ClinicBoxSelectable--selected {
-    border: 1px solid #00bfa5; }
-    .ClinicBoxSelectable--selected .ClinicBoxSelectable__TitleWrapper::before {
-      background-color: #00bfa5;
+    background-color: #00bfa5;
+    border: 1px solid #00bfa5;
+    color: #fff; }
+    .ClinicBoxSelectable--selected .ClinicBoxSelectable__ContentLeft::before {
+      background-color: #fff;
       border: 1px solid #00bfa5; }
-    .ClinicBoxSelectable--selected .ClinicBoxSelectable__TitleWrapper::after {
+    .ClinicBoxSelectable--selected .ClinicBoxSelectable__ContentLeft::after {
       display: block; }
+    .ClinicBoxSelectable--selected .ClinicBoxSelectable__Subtitle, .ClinicBoxSelectable--selected .ClinicBoxSelectable__FirstSlot, .ClinicBoxSelectable--selected .ClinicBoxSelectable__SecondSlot, .ClinicBoxSelectable--selected .ClinicBoxSelectable__ThirdSlot {
+      color: #fff; }
+    .ClinicBoxSelectable--selected .ClinicBoxSelectable__Values {
+      border-top-color: #fff; }
   .ClinicBoxSelectable__Content {
     display: -webkit-box;
     display: flex;
+    -webkit-box-flex: 1;
+            flex: 1;
     -webkit-box-pack: justify;
             justify-content: space-between;
+    min-height: 100px;
     padding: 18px 12px; }
   .ClinicBoxSelectable__Title {
     font-family: "LatoBold";
     font-size: 1.143em; }
   .ClinicBoxSelectable__Subtitle {
     color: #858585; }
-  .ClinicBoxSelectable__TitleWrapper {
+  .ClinicBoxSelectable__ContentLeft {
     display: -webkit-box;
     display: flex;
     position: relative; }
-    .ClinicBoxSelectable__TitleWrapper::before {
+    .ClinicBoxSelectable__ContentLeft::before {
       border: 1px solid #d6d6d6;
       border-radius: 50%;
       content: '';
@@ -12522,17 +12536,33 @@ div.Feedback_Message_Info span.lasa-term {
       margin-right: 12px;
       margin-top: 3px;
       width: 16px; }
-    .ClinicBoxSelectable__TitleWrapper::after {
-      background-color: #fff;
+    .ClinicBoxSelectable__ContentLeft::after {
+      background-color: #00bfa5;
       border-radius: 50%;
       content: '';
       display: none;
-      height: 8px;
-      left: 5px;
+      height: 6px;
+      left: 6px;
       position: absolute;
-      top: 8px;
-      width: 8px; }
-  .ClinicBoxSelectable__Available {
+      top: 9px;
+      width: 6px; }
+  .ClinicBoxSelectable__ContentRight {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
+    .ClinicBoxSelectable__ContentRight > div:last-child {
+      margin-bottom: 0; }
+  .ClinicBoxSelectable__FirstSlot {
+    color: #009884; }
+  .ClinicBoxSelectable__SecondSlot {
+    color: #ff3e2d; }
+  .ClinicBoxSelectable__FirstSlot, .ClinicBoxSelectable__SecondSlot, .ClinicBoxSelectable__ThirdSlot {
     -webkit-box-align: center;
             align-items: center;
     display: -webkit-box;
@@ -12543,8 +12573,9 @@ div.Feedback_Message_Info span.lasa-term {
     -webkit-box-direction: normal;
             flex-direction: column;
     font-size: 0.857em;
+    margin-bottom: 6px;
     padding: 0 12px; }
-    .ClinicBoxSelectable__Available div:first-child {
+    .ClinicBoxSelectable__FirstSlot div:first-child, .ClinicBoxSelectable__SecondSlot div:first-child, .ClinicBoxSelectable__ThirdSlot div:first-child {
       font-size: 1.714em; }
   .ClinicBoxSelectable__Values {
     border-top: 1px solid #d6d6d6;
@@ -12559,15 +12590,15 @@ div.Feedback_Message_Info span.lasa-term {
     content: '/';
     margin: 0 3px; }
 
-.AR .ClinicBoxSelectable__TitleWrapper::before,
-.FA .ClinicBoxSelectable__TitleWrapper::before {
+.AR .ClinicBoxSelectable__ContentLeft::before,
+.FA .ClinicBoxSelectable__ContentLeft::before {
   margin-left: 12px;
   margin-right: 0; }
 
-.AR .ClinicBoxSelectable__TitleWrapper::after,
-.FA .ClinicBoxSelectable__TitleWrapper::after {
+.AR .ClinicBoxSelectable__ContentLeft::after,
+.FA .ClinicBoxSelectable__ContentLeft::after {
   left: 0;
-  right: 5px; }
+  right: 6px; }
 
 .AR .ClinicBoxSelectable__Booked::after,
 .FA .ClinicBoxSelectable__Booked::after {
