@@ -1,4 +1,4 @@
-/*! Generated: Tue Jun 23 2020 18:17:37 GMT+0100 (Western European Summer Time) || Version: 5.0.900008 */
+/*! Generated: Wed Jun 24 2020 12:12:47 GMT+0100 (Western European Summer Time) || Version: 5.0.900009 */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -18066,11 +18066,20 @@ div.ui-timepicker-container {
 .MainInteractiveCard.XSmallHeader > .MainInteractiveCard-floater {
   top: -40px; }
 
+.MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-floater {
+  margin-bottom: -40px; }
+
 .MainInteractiveCard.SmallHeader > .MainInteractiveCard-floater {
   top: -60px; }
 
+.MainInteractiveCard.SmallHeader.isOpen > .MainInteractiveCard-floater {
+  margin-bottom: -60px; }
+
 .MainInteractiveCard.MediumHeader > .MainInteractiveCard-floater {
   top: -85px; }
+
+.MainInteractiveCard.MediumHeader.isOpen > .MainInteractiveCard-floater {
+  margin-bottom: -85px; }
 
 .MainInteractiveCard.isOpen:before {
   opacity: 1; }
@@ -21083,7 +21092,7 @@ div.List-Star {
 
 .ToggleItemControl {
   cursor: pointer;
-  margin: 10px 2px;
+  margin: 2px;
   position: relative; }
   .ToggleItemControl.active .ToggleItemControl_label {
     background: none;
@@ -28611,7 +28620,7 @@ span:not(:last-of-type) .CompLine {
   margin-top: -38px; }
 
 @media all and (max-width: 900px) {
-  .ToggleItemControl {
+  .PrescriptionContainer .ToggleItemControl {
     margin: 5px 2px;
     text-align: initial;
     width: 100%; }
@@ -29977,7 +29986,12 @@ span[id*='RelatedVisitsRL'] :not(:first-child) .PersonCard_header {
           align-items: center;
   display: -webkit-box;
   display: flex;
-  padding-left: 15px; }
+  -webkit-box-pack: center;
+          justify-content: center; }
+
+.StatementDates .DosePickerContentInfo {
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
 
 /*
 
