@@ -21,6 +21,7 @@
 				}
 			}
 
+			&__Note,
 			&__Subtitle,
 			&__FirstSlot,
 			&__SecondSlot,
@@ -38,8 +39,9 @@
 		display: flex;
 		flex: 1;
 		justify-content: space-between;
-		min-height: 100px;
+		min-height: 127px;
 		padding: 18px 12px;
+		padding-bottom: 12px;
 	}
 
 	&__Title {
@@ -49,6 +51,11 @@
 
 	&__Subtitle {
 		color: $regular-gray;
+	}
+
+	&__Note {
+		color: $regular-gray;
+		font-size: 0.857em;
 	}
 
 	&__ContentLeft {
@@ -76,6 +83,15 @@
 			position: absolute;
 			top: 9px;
 			width: 6px;
+		}
+
+		> div {
+			display: flex;
+			flex-direction: column;
+
+			div:not(.ClinicBoxSelectable__Note) {
+				flex: 1;
+			}
 		}
 	}
 
@@ -117,19 +133,19 @@
 		display: flex;
 		font-size: 0.857em;
 		padding: 6px 12px;
-	}
 
-	&__Booked {
-		&::after {
-			content: ':';
-			margin-right: 3px;
+		> div:nth-child(2) {
+			&::before {
+				content: ':';
+				margin-right: 3px;
+			}
 		}
-	}
 
-	&__FollowUp {
-		&::before {
-			content: '/';
-			margin: 0 3px;
+		> div:nth-child(3) {
+			&::before {
+				content: '/';
+				margin: 0 3px;
+			}
 		}
 	}
 }
@@ -149,10 +165,12 @@
 			}
 		}
 
-		&__Booked {
-			&::after {
-				margin-left: 3px;
-				margin-right: 0;
+		&__Values {
+			> div:nth-child(2) {
+				&::before {
+					margin-left: 3px;
+					margin-right: 0;
+				}
 			}
 		}
 	}
