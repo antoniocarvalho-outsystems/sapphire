@@ -24,7 +24,7 @@ module.exports = {
 			dry: false,
 		}),
 		new webpack.BannerPlugin({
-			banner: `Generated: ${new Date()} || Version: ${package.version}`,
+			banner: `Version: ${package.version} || Generated: ${new Date()}`,
 		}),
 	],
 	node: {
