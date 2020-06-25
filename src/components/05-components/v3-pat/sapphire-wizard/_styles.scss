@@ -1,0 +1,73 @@
+.WizardContent {
+	&.active {
+		.WizardContent {
+			&__Number {
+				background-color: $regular-zeta;
+				color: $regular-beta;
+				opacity: 1;
+			}
+
+			&__Label {
+				font-family: $font-family-latin-bold;
+				line-height: 23px;
+			}
+		}
+	}
+
+	&:last-of-type {
+		.WizardContent_Separator {
+			display: none;
+		}
+	}
+
+	&_Details {
+		&.DisableWizard {
+			cursor: default;
+			pointer-events: none;
+		}
+
+		&,
+		label {
+			cursor: pointer;
+		}
+	}
+
+	&__Number {
+		background-color: $body-color;
+		border-radius: 50%;
+		color: $regular-beta;
+		font-family: $font-family-latin-bold;
+		font-size: 1.143em;
+		height: 26px;
+		line-height: 24px;
+		text-align: center;
+		width: 26px;
+
+		> div {
+			height: 26px;
+			width: 26px;
+		}
+	}
+
+	&__Label {
+		font-size: 1.143em;
+		line-height: 23px;
+		margin-left: 9px;
+		text-align: center;
+	}
+
+	&_Separator {
+		background-color: $light-grey;
+		height: 2px;
+		margin: 13px 10px 10px 9px;
+		width: 120px;
+	}
+}
+
+.AR,
+.FA {
+	.WizardContent__Label {
+		margin-left: 0;
+		margin-right: 9px;
+	}
+}
