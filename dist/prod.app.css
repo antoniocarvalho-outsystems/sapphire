@@ -1,4 +1,4 @@
-/*! Version: 5.0.900020 || Generated: Thu Jun 25 2020 18:32:52 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.0.900021 || Generated: Thu Jun 25 2020 18:40:28 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15566,7 +15566,10 @@ body.PanelOpened .daterangepicker {
   cursor: pointer;
   font-family: "LatoBold";
   font-size: 1em;
-  line-height: 22px; }
+  line-height: 20px; }
+
+.DarkGreyLabel .UploadMessageClass {
+  color: #333333; }
 
 .dropzone .dz-preview .dz-filename {
   left: 0;
@@ -21080,6 +21083,8 @@ div.List-Star {
 .WizardContent_Details.DisableWizard {
   cursor: default;
   pointer-events: none; }
+  .WizardContent_Details.DisableWizard .WizardContent__Number {
+    color: #d6d6d6; }
 
 .WizardContent_Details,
 .WizardContent_Details label {
