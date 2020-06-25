@@ -24,6 +24,10 @@
 		&.DisableWizard {
 			cursor: default;
 			pointer-events: none;
+
+			.WizardContent__Number {
+				color: $light-grey;
+			}
 		}
 
 		&,

@@ -825,7 +825,11 @@
   cursor: pointer;
   font-family: $font-family-latin-bold;
   font-size: 1em;
-  line-height: 22px;
+  line-height: 20px;
+}
+
+.DarkGreyLabel .UploadMessageClass {
+  color: $dark-grey;
 }
 
 .dropzone .dz-preview .dz-filename {
