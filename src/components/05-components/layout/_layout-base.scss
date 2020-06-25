@@ -328,7 +328,6 @@
     top: 60px;
   }
 
-
   .LayoutBase {
     &-MainMenu {
       bottom: 0;
@@ -467,6 +466,7 @@ body.LayoutBase .os-internal-ui-widget-overlay {
     }
 
     .ClinicianWorkArea {
+
       .ClinicianWorkArea-columns {
         background-color: $body-color;
         padding-left: 16px;
@@ -538,13 +538,16 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 .AR,
 .FA {
-  .LayoutBase.Page .ClinicianWorkArea-columns-big {
-    padding: 0 0 0 5px;
+
+  &.LayoutBase.Page .ClinicianWorkArea-columns {
+    padding-left: 0;
+    padding-right: 16px;
   }
 
-  .LayoutBase.Page .ClinicianWorkArea-columns-small {
-    padding: 0 5px 0 0;
-  }
+  &.LayoutBase.Page .ClinicianWorkArea-columns-big {}
+
+  &.LayoutBase.Page .ClinicianWorkArea-columns-small {}
+
 }
 
 .tablet {
