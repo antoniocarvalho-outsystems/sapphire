@@ -8,8 +8,8 @@
 		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
 		"new:build": "npm run prod && git add . && git commit -m \"New Release\" --allow-empty && git push origin master",
 		"release:patch": "release-it patch --ci && npm run new:build",
-		"release:minor": "npm run new:build && release-it minor --git.requireBranch=master",
-		"release:major": "npm run new:build && release-it major --git.requireBranch=master"
+		"release:minor": "release-it minor --git.requireBranch=master && npm run new:build",
+		"release:major": "release-it major --git.requireBranch=master && npm run new:build"
 	},
 	"author": "",
 	"license": "ISC",
