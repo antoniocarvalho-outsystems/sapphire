@@ -1,4 +1,4 @@
-/*! Version: 5.0.900019 || Generated: Thu Jun 25 2020 17:40:43 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900020 || Generated: Thu Jun 25 2020 18:32:52 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13449,7 +13449,7 @@ body.PanelOpened .daterangepicker {
 .rtl.daterangepicker select.minuteselect,
 .rtl.daterangepicker select.secondselect,
 .rtl.daterangepicker select.ampmselect {
-  padding: 0 10px 0 0; }
+  padding: 0 16px 0 0; }
 
 .daterangepicker .calendar-time {
   line-height: 30px;
@@ -17635,6 +17635,11 @@ div.ui-timepicker-container {
   .InputWithClear--shield .LineWarns_list {
     height: 36px;
     min-height: unset; }
+
+.AR .InputWithClear-clear,
+.FA .InputWithClear-clear {
+  left: 10px;
+  right: auto; }
 
 .LineDetailsExpandBox div.ExpandableHeader__right {
   background-color: #fff;
