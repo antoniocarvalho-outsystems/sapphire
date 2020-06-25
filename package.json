@@ -1,15 +1,15 @@
 {
 	"name": "sapphire",
-	"version": "5.0.900014",
+	"version": "5.0.900017",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"dev": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js",
 		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
 		"new:build": "npm run prod && git add . && git commit -m \"New Release\" --allow-empty && git push origin master",
-		"release:patch": "npm run new:build && release-it patch --ci",
-		"release:minor": "npm run new:build && release-it minor --git.requireBranch=master",
-		"release:major": "npm run new:build && release-it major --git.requireBranch=master"
+		"release:patch": "release-it patch --ci && npm run new:build",
+		"release:minor": "release-it minor --git.requireBranch=master && npm run new:build",
+		"release:major": "release-it major --git.requireBranch=master && npm run new:build"
 	},
 	"author": "",
 	"license": "ISC",
