@@ -1,4 +1,4 @@
-/*! Version: 5.0.900018 || Generated: Thu Jun 25 2020 15:30:01 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900019 || Generated: Thu Jun 25 2020 17:40:43 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21059,6 +21059,57 @@ div.List-Star {
 
 .ButtonRadioInp.disabled input[type="radio"]:after {
   background-color: #d6d6d6; }
+
+.WizardContent.active .WizardContent__Number {
+  background-color: #c4f0eb;
+  color: #009884;
+  opacity: 1; }
+
+.WizardContent.active .WizardContent__Label {
+  font-family: "LatoBold";
+  line-height: 23px; }
+
+.WizardContent:last-of-type .WizardContent_Separator {
+  display: none; }
+
+.WizardContent_Details.DisableWizard {
+  cursor: default;
+  pointer-events: none; }
+
+.WizardContent_Details,
+.WizardContent_Details label {
+  cursor: pointer; }
+
+.WizardContent__Number {
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  color: #009884;
+  font-family: "LatoBold";
+  font-size: 1.143em;
+  height: 26px;
+  line-height: 24px;
+  text-align: center;
+  width: 26px; }
+  .WizardContent__Number > div {
+    height: 26px;
+    width: 26px; }
+
+.WizardContent__Label {
+  font-size: 1.143em;
+  line-height: 23px;
+  margin-left: 9px;
+  text-align: center; }
+
+.WizardContent_Separator {
+  background-color: #d6d6d6;
+  height: 2px;
+  margin: 13px 10px 10px 9px;
+  width: 120px; }
+
+.AR .WizardContent__Label,
+.FA .WizardContent__Label {
+  margin-left: 0;
+  margin-right: 9px; }
 
 .ButtonGroupScale {
   border-right: 1px solid #d6d6d6;
