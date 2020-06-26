@@ -1,4 +1,4 @@
-/*! Version: 5.0.900021 || Generated: Thu Jun 25 2020 18:40:28 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900022 || Generated: Fri Jun 26 2020 12:08:03 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10115,13 +10115,10 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 .LayoutBase .select2-container--open .select2-dropdown--below {
   z-index: 101; }
 
-.AR .LayoutBase.Page .ClinicianWorkArea-columns-big,
-.FA .LayoutBase.Page .ClinicianWorkArea-columns-big {
-  padding: 0 0 0 5px; }
-
-.AR .LayoutBase.Page .ClinicianWorkArea-columns-small,
-.FA .LayoutBase.Page .ClinicianWorkArea-columns-small {
-  padding: 0 5px 0 0; }
+.AR.LayoutBase.Page .ClinicianWorkArea-columns,
+.FA.LayoutBase.Page .ClinicianWorkArea-columns {
+  padding-left: 0;
+  padding-right: 16px; }
 
 .tablet .LayoutBase.Page .ClinicianWorkArea-columns {
   padding-left: 0; }
@@ -14998,13 +14995,24 @@ body.PanelOpened .daterangepicker {
   display: block;
   padding: 6px; }
 
-.Page .AR .select2-container--default .select2-selection--single .select2-selection__rendered,
-.LayoutBlank .AR .select2-container--default .select2-selection--single .select2-selection__rendered,
-.LayoutBase .AR .select2-container--default .select2-selection--single .select2-selection__rendered,
-.LayoutPopup .AR .select2-container--default .select2-selection--single .select2-selection__rendered {
+.AR .select2-container--default .select2-selection--single .select2-selection__rendered {
   float: right;
   font-size: 1.143em;
   margin-right: 10px; }
+
+.select2-dropdown.Select2[dir=ltr] input[type=search] {
+  padding-left: 0 !important;
+  padding-right: 12px !important; }
+
+.select2-dropdown.Select2[dir=ltr] .select2-results {
+  direction: rtl; }
+
+.select2-dropdown.Select2[dir=ltr] input.select2-search__field {
+  direction: rtl; }
+
+.select2-dropdown.Select2[dir=ltr] .select2-search--dropdown:after {
+  left: 20px;
+  right: unset; }
 
 /*
  * The MIT License
@@ -16948,18 +16956,17 @@ div.ExpandableList-MainLine > div.ExpandableContent > span {
       bottom: auto;
       position: static; }
 
-.AR .HeaderIdentification-photo .PhotoFrameMonths .Canvas .PhotoFrame .PatientGender img {
-  left: auto;
-  right: 5px; }
-
-.AR .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
+.AR .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge,
+.FA .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
   left: 5px;
   right: auto; }
 
-.AR .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
+.AR .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge,
+.FA .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
   font-family: "TajawalBold"; }
 
-.AR .HeaderIdentification-photo .PatientGender {
+.AR .HeaderIdentification-photo .PatientGender,
+.FA .HeaderIdentification-photo .PatientGender {
   left: 35px; }
 
 div.Toolbar {
@@ -21924,6 +21931,11 @@ div.List-Star {
     max-width: 150px; } }
 
 /*AR and FA*/
+.AR .SearchSD .SearchSD___remove,
+.FA .SearchSD .SearchSD___remove {
+  left: 33px;
+  right: unset; }
+
 .AR .SearchSD.hasClone .SearchSD__cloneWrapper,
 .FA .SearchSD.hasClone .SearchSD__cloneWrapper {
   border-bottom-left-radius: 23px;
@@ -23122,12 +23134,34 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   margin-top: 8px; }
 
 /*********** RTL *************/
+.AR.Page .select2-container--default .select2-selection--single .select2-selection__arrow,
+.FA.Page .select2-container--default .select2-selection--single .select2-selection__arrow {
+  left: 0;
+  right: unset; }
+  .AR.Page .select2-container--default .select2-selection--single .select2-selection__arrow b,
+  .FA.Page .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background-position-x: 0;
+    background-position-y: 0;
+    left: 20px;
+    right: unset; }
+
+.AR .select2-container--default .select2-selection--single .select2-selection__rendered,
+.FA .select2-container--default .select2-selection--single .select2-selection__rendered {
+  margin-left: 10px;
+  margin-right: 0;
+  padding: 5px 5px 5px 36px; }
+
 .AR .select2-selection,
 .FA .select2-selection {
   direction: rtl; }
   .AR .select2-selection .select2-selection__rendered,
   .FA .select2-selection .select2-selection__rendered {
     padding-left: 36px; }
+
+.AR .select2-container--default .select2-selection--multiple.tagCustom:before,
+.FA .select2-container--default .select2-selection--multiple.tagCustom:before {
+  left: 0;
+  position: absolute; }
 
 .AR .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
 .AR .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
@@ -25159,6 +25193,68 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   font-size: 1.429em;
   text-align: center;
   vertical-align: middle; }
+
+.TimelineContent {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex; }
+  .TimelineContent.isTitle {
+    height: 30px; }
+    .TimelineContent.isTitle .TimelineContent_date {
+      font-family: "LatoBold";
+      font-size: 1em; }
+      .TimelineContent.isTitle .TimelineContent_date:after {
+        background-color: #d6d6d6;
+        height: 8px;
+        right: -5px;
+        width: 8px; }
+  .TimelineContent_date {
+    box-sizing: border-box;
+    display: block;
+    font-family: "LatoBold";
+    font-size: 0.857em;
+    line-height: 20px;
+    margin-top: -11px;
+    padding: 0 20px;
+    padding-right: 5px;
+    position: relative;
+    text-align: center;
+    width: 120px; }
+    .TimelineContent_date:after {
+      background-color: #d6d6d6;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 10px;
+      position: absolute;
+      right: -6px;
+      top: 5px;
+      width: 10px; }
+    .TimelineContent_date.GreyTag:after {
+      background-color: #858585; }
+    .TimelineContent_date.GreenTag:after {
+      background-color: #7cb342; }
+    .TimelineContent_date.OrangeTag:after {
+      background-color: #ffa000; }
+    .TimelineContent_date.RedTag:after {
+      background-color: #ff3e2d; }
+  .TimelineContent_description {
+    border-left: 1px solid #d6d6d6;
+    display: block;
+    -webkit-box-flex: 1;
+            flex: 1;
+    line-height: 22px;
+    padding: 0 20px; }
+  .TimelineContent__title {
+    display: block;
+    font-family: "LatoBold";
+    font-size: 1.143em;
+    margin-top: -12px;
+    text-transform: capitalize; }
+  .TimelineContent__descriptions {
+    display: block;
+    font-size: 1em;
+    padding-bottom: 32px; }
 
 .TabularScroll {
   display: -webkit-box;
