@@ -1,0 +1,93 @@
+.LineCheckCard {
+	display: table;
+	min-height: 64px;
+	width: 100%;
+
+	&:not(:first-child) {
+		border-top: 1px solid $light-grey;
+	}
+
+	&__content {
+		> span > span:not(first-child) .LineCheckCard {
+			border-top: 1px solid $light-grey;
+		}
+	}
+
+	&_others {
+		display: table-cell;
+		vertical-align: middle !important;
+
+		.iconHorizontal {
+			font-size: inherit;
+		}
+	}
+
+	&_icon,
+	&_actions {
+		display: table-cell;
+		vertical-align: middle !important;
+	}
+
+	&_date,
+	&_othersContainer,
+	&_actionsContainer {
+		display: inline-block;
+		vertical-align: middle !important;
+	}
+
+	&_actionsContainer {
+		text-align: right;
+	}
+
+	&_othersContainer {
+		align-items: center;
+		display: flex;
+	}
+
+	&_icon {
+		padding-left: 8px;
+	}
+}
+
+.tablet {
+	.LineCheckCard {
+		&_icon {
+			padding: 6px;
+			text-align: center;
+		}
+
+		&_icons {
+			margin-left: auto;
+			margin-right: 8px;
+			padding: 6px;
+		}
+
+		&_others {
+			display: inline;
+		}
+
+		&_othersContainer {
+			line-height: 48px;
+			padding-left: 0;
+			padding-right: 20px;
+		}
+
+		&_date {
+			display: block;
+			line-height: 14px;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.LineCheckCard_actionsContainer {
+		font-size: 1.143em;
+		text-align: left;
+	}
+
+	.LineCheckCard_icon {
+		padding-left: 0;
+		padding-right: 8px;
+	}
+}

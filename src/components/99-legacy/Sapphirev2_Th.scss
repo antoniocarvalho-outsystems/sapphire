@@ -14634,182 +14634,182 @@ a.Button.Icon:hover {
 /* 9.50 Sapphire Patterns > Custom_Patterns > LineCheck ********************************/
 /*-------------------------------------------------------------------------------------*/
 
-.LineCheck {
-  background-color: #fff;
-  border: solid 1px #d3d6d7;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  color: #262525;
-  display: table;
-  font-size: 12px;
-  margin: 0;
-  vertical-align: middle;
-  width: 100%;
-}
+// // .LineCheck {
+// //   background-color: #fff;
+// //   border: solid 1px #d3d6d7;
+// //   border-top-left-radius: 2px;
+// //   border-top-right-radius: 2px;
+// //   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+// //   color: #262525;
+// //   display: table;
+// //   font-size: 12px;
+// //   margin: 0;
+// //   vertical-align: middle;
+// //   width: 100%;
+// // }
 
-.LineCheck_line {
-  background-color: #e1e6e9;
-  border-bottom: 1px solid #ccc;
-  color: #262525;
-  display: table;
-  font-size: 12px;
-  width: 100%;
-}
+// // .LineCheck_line {
+// //   background-color: #e1e6e9;
+// //   border-bottom: 1px solid #ccc;
+// //   color: #262525;
+// //   display: table;
+// //   font-size: 12px;
+// //   width: 100%;
+// // }
 
-.LineCheck__content,
-.LineCheck__leftContent,
-.LineCheck__rightContent {
-  display: table-cell;
-  font-size: 14px;
-  height: 64px;
-  margin: 0;
-  vertical-align: middle;
-}
+// // .LineCheck__content,
+// // .LineCheck__leftContent,
+// // .LineCheck__rightContent {
+// //   display: table-cell;
+// //   font-size: 14px;
+// //   height: 64px;
+// //   margin: 0;
+// //   vertical-align: middle;
+// // }
 
-.LineCheck__content {
-  font-size: 13px;
-}
+// // .LineCheck__content {
+// //   font-size: 13px;
+// // }
 
-.LineCheck_whiteLine {
-  display: table;
-  line-height: 64px;
-  min-height: 64px;
-  padding: 0 8px;
-  width: 100%;
-}
+// // .LineCheck_whiteLine {
+// //   display: table;
+// //   line-height: 64px;
+// //   min-height: 64px;
+// //   padding: 0 8px;
+// //   width: 100%;
+// // }
 
-.LineCheck__leftContent {
-  font-size: 13px;
-  text-align: left;
-  vertical-align: middle;
-}
+// // .LineCheck__leftContent {
+// //   font-size: 13px;
+// //   text-align: left;
+// //   vertical-align: middle;
+// // }
 
-.LineCheck__rightContent {
-  font-size: 12px;
-  font-weight: bold;
-  text-align: right;
-  vertical-align: middle;
-  white-space: nowrap;
-}
+// // .LineCheck__rightContent {
+// //   font-size: 12px;
+// //   font-weight: bold;
+// //   text-align: right;
+// //   vertical-align: middle;
+// //   white-space: nowrap;
+// // }
 
-.FA .LineCheck__leftContent,
-.AR .LineCheck__leftContent {
-  text-align: right;
-}
+// // .FA .LineCheck__leftContent,
+// // .AR .LineCheck__leftContent {
+// //   text-align: right;
+// // }
 
-.FA .LineCheck__rightContent,
-.AR .LineCheck__rightContent {
-  text-align: left;
-}
+// // .FA .LineCheck__rightContent,
+// // .AR .LineCheck__rightContent {
+// //   text-align: left;
+// // }
 
-/*-------------------------------------------------------------------------------------*/
-/* 9.51 Sapphire Patterns > Custom_Patterns > LineCheckCard ****************************/
-/*-------------------------------------------------------------------------------------*/
+// /*-------------------------------------------------------------------------------------*/
+// /* 9.51 Sapphire Patterns > Custom_Patterns > LineCheckCard ****************************/
+// /*-------------------------------------------------------------------------------------*/
 
-.LineCheckCard {
-  display: table;
-  min-height: 64px;
-  width: 100%;
-}
+// .LineCheckCard {
+//   display: table;
+//   min-height: 64px;
+//   width: 100%;
+// }
 
-.LineCheck__content>span>span:not(first-child) .LineCheckCard {
-  border-top: 1px solid #aaa;
-}
+// .LineCheck__content>span>span:not(first-child) .LineCheckCard {
+//   border-top: 1px solid #aaa;
+// }
 
-.LineCheckCard:not(:first-child) {
-  border-top: 1px solid #d3d6d7;
-}
+// .LineCheckCard:not(:first-child) {
+//   border-top: 1px solid #d3d6d7;
+// }
 
-.LineCheckCard_others {
-  display: table-cell;
-  vertical-align: middle !important;
-}
+// .LineCheckCard_others {
+//   display: table-cell;
+//   vertical-align: middle !important;
+// }
 
-.LineCheckCard_icon,
-.LineCheckCard_actions {
-  display: table-cell;
-  vertical-align: middle !important;
-}
+// .LineCheckCard_icon,
+// .LineCheckCard_actions {
+//   display: table-cell;
+//   vertical-align: middle !important;
+// }
 
-.LineCheckCard_date,
-.LineCheckCard_othersContainer,
-.LineCheckCard_actionsContainer {
-  display: inline-block;
-  vertical-align: middle !important;
-}
+// .LineCheckCard_date,
+// .LineCheckCard_othersContainer,
+// .LineCheckCard_actionsContainer {
+//   display: inline-block;
+//   vertical-align: middle !important;
+// }
 
-.LineCheckCard_actionsContainer {
-  font-size: 14px;
-  text-align: right;
-}
+// .LineCheckCard_actionsContainer {
+//   font-size: 14px;
+//   text-align: right;
+// }
 
-.AR .LineCheckCard_actionsContainer,
-.FA .LineCheckCard_actionsContainer {
-  font-size: 16px;
-  text-align: left;
-}
+// .AR .LineCheckCard_actionsContainer,
+// .FA .LineCheckCard_actionsContainer {
+//   font-size: 16px;
+//   text-align: left;
+// }
 
-.LineCheckCard_othersContainer {
-  align-items: center;
-  display: flex;
-}
+// .LineCheckCard_othersContainer {
+//   align-items: center;
+//   display: flex;
+// }
 
-.LineCheckCard_icon {
-  padding-left: 8px;
-}
+// .LineCheckCard_icon {
+//   padding-left: 8px;
+// }
 
-.LineCheckCard_others .iconHorizontal {
-  font-size: inherit;
-}
+// .LineCheckCard_others .iconHorizontal {
+//   font-size: inherit;
+// }
 
-.AR .LineCheckCard_icon,
-.FA .LineCheckCard_icon {
-  padding-left: 0;
-  padding-right: 8px;
-}
+// .AR .LineCheckCard_icon,
+// .FA .LineCheckCard_icon {
+//   padding-left: 0;
+//   padding-right: 8px;
+// }
 
-.tablet .LineCheckCard_icon,
-.phone .LineCheckCard_icon {
-  padding: 6px;
-  text-align: center;
-}
+// .tablet .LineCheckCard_icon,
+// .phone .LineCheckCard_icon {
+//   padding: 6px;
+//   text-align: center;
+// }
 
-.phone .LineCheckCard_icons,
-.tablet .LineCheckCard_icons {
-  margin-left: 8px;
-  padding: 6px;
-}
+// .phone .LineCheckCard_icons,
+// .tablet .LineCheckCard_icons {
+//   margin-left: 8px;
+//   padding: 6px;
+// }
 
-.phone .LineCheckCard_icons,
-.tablet .LineCheckCard_icons {
-  margin-left: auto;
-  margin-right: 8px;
-  padding: 6px;
-}
+// .phone .LineCheckCard_icons,
+// .tablet .LineCheckCard_icons {
+//   margin-left: auto;
+//   margin-right: 8px;
+//   padding: 6px;
+// }
 
-.tablet .LineCheckCard_others,
-.phone .LineCheckCard_others {
-  display: inline;
-}
+// .tablet .LineCheckCard_others,
+// .phone .LineCheckCard_others {
+//   display: inline;
+// }
 
-.tablet .LineCheckCard_othersContainer,
-.phone .LineCheckCard_othersContainer {
-  line-height: 48px;
-  padding-left: 20px;
-}
+// .tablet .LineCheckCard_othersContainer,
+// .phone .LineCheckCard_othersContainer {
+//   line-height: 48px;
+//   padding-left: 20px;
+// }
 
-.tablet .LineCheckCard_othersContainer,
-.phone .LineCheckCard_othersContainer {
-  line-height: 48px;
-  padding-left: 0;
-  padding-right: 20px;
-}
+// .tablet .LineCheckCard_othersContainer,
+// .phone .LineCheckCard_othersContainer {
+//   line-height: 48px;
+//   padding-left: 0;
+//   padding-right: 20px;
+// }
 
-.tablet .LineCheckCard_date {
-  display: block;
-  line-height: 14px;
-}
+// .tablet .LineCheckCard_date {
+//   display: block;
+//   line-height: 14px;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.52 Sapphire Patterns > Custom_Patterns > LineWarning ******************************/

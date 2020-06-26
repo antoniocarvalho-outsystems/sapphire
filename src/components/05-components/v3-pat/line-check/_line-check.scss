@@ -1,0 +1,61 @@
+.LineCheck {
+	background-color: $regular-white;
+	border: solid 1px $light-grey;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	display: table;
+	margin: 0;
+	vertical-align: middle;
+	width: 100%;
+
+	&_line {
+		background-color: $body-color;
+		border-bottom: 1px solid $light-grey;
+		display: table;
+
+		width: 100%;
+	}
+
+	&__content,
+	&__leftContent,
+	&__rightContent {
+		display: table-cell;
+		font-size: 1em;
+		height: 64px;
+		margin: 0;
+		vertical-align: middle;
+	}
+
+	&_whiteLine {
+		display: table;
+		line-height: 64px;
+		min-height: 64px;
+		padding: 0 8px;
+		width: 100%;
+	}
+
+	&__leftContent {
+		font-size: 0.857em;
+		text-align: left;
+		vertical-align: middle;
+	}
+
+	&__rightContent {
+		font-family: $font-family-latin-bold;
+		font-size: 0.857em;
+		text-align: right;
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+}
+
+.AR,
+.FA {
+	.LineCheck__leftContent {
+		text-align: right;
+	}
+
+	.LineCheck__rightContent {
+		text-align: left;
+	}
+}
