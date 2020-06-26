@@ -728,20 +728,20 @@
   }
 }
 
-.select2-dropdown.Select2[dir=ltr] {
-
+.select2-dropdown.Select2[dir=rtl],
+.select2-dropdown.tagCustom[dir=rtl] {
   input[type=search] {
     padding-left: 0 !important;
     padding-right: 12px !important; // this is necessary because SilkUI has important as well 
   }
 
-  .select2-results {
-    direction: rtl;
-  }
+  // .select2-results {
+  //   direction: rtl;
+  // }
 
-  input.select2-search__field {
-    direction: rtl;
-  }
+  // input.select2-search__field {
+  //   direction: rtl;
+  // }
 
   .select2-search--dropdown:after {
     left: 20px;

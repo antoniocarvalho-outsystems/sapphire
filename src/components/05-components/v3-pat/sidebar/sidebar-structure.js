@@ -54,39 +54,28 @@
 			_this.close();
 		});
 		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:first-child', function () {
-			_this.$sidebar
-				.find('.FieldsSlider')
-				.addClass('Tab1')
-				.removeClass('Tab2');
+			_this.$sidebar.find('.FieldsSlider').addClass('Tab1').removeClass('Tab2');
 			_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));
 		});
 		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:last-child', function () {
-			_this.$sidebar
-				.find('.FieldsSlider')
-				.addClass('Tab2')
-				.removeClass('Tab1');
+			_this.$sidebar.find('.FieldsSlider').addClass('Tab2').removeClass('Tab1');
 			_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));
 		});
 	};
 
 	Sidebar.prototype.openMenuItem = function (selectedPosition) {
 		var _this = this;
-		this.$sidebar
-			.find('.SidebarMenuItem')
-			.removeClass('active')
-			.eq(selectedPosition)
-			.addClass('active');
-		this.$sidebar
-			.find('.ISidebar-content > .ISidebar-content-panel')
-			.hide()
-			.eq(selectedPosition)
-			.show();
+		this.$sidebar.find('.SidebarMenuItem').removeClass('active').eq(selectedPosition).addClass('active');
+		this.$sidebar.find('.ISidebar-content > .ISidebar-content-panel').hide().eq(selectedPosition).show();
 		this.$sidebar.addClass('open');
 		if (window.parent.length && this.isExpandable) {
 			window.parent.SapphireWidgets.LayoutBase.openSidebarIframe(0);
 		}
 		if (this.$sidebarContent.find('.TextInput:visible').length > 0) {
 			this.setFieldFocus(this.$sidebarContent.find('.TextInput:visible').eq(0));
+		}
+		if (window.parent.$('.select2-container--open').length) {
+			window.parent.$('.select2-hidden-accessible').select2('close');
 		}
 	};
 

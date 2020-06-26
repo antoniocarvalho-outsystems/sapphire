@@ -1,5 +1,5 @@
 /* Component DropdownCategories */
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	function optGroupSetValue(selectId, inputBoxId, buttonId) {
 		var v = document.getElementById(selectId).value;
 		$('#' + inputBoxId).val(v);
