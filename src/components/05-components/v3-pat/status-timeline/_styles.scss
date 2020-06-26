@@ -1,0 +1,84 @@
+.TimelineContent {
+	box-sizing: border-box;
+	display: flex;
+
+	&.isTitle {
+		height: 30px;
+
+		.TimelineContent_date {
+			font-family: $font-family-latin-bold;
+			font-size: 1em;
+
+			&:after {
+				background-color: $light-grey;
+				height: 8px;
+				right: -5px;
+				width: 8px;
+			}
+		}
+	}
+
+	&_date {
+		box-sizing: border-box;
+		display: block;
+		font-family: $font-family-latin-bold;
+		font-size: 0.857em;
+		line-height: 20px;
+		margin-top: -11px;
+		padding: 0 20px;
+		padding-right: 5px;
+		position: relative;
+		text-align: center;
+		width: 120px;
+
+		&:after {
+			background-color: $light-grey;
+			border-radius: 50%;
+			content: '';
+			display: block;
+			height: 10px;
+			position: absolute;
+			right: -6px;
+			top: 5px;
+			width: 10px;
+		}
+
+		&.GreyTag:after {
+			background-color: $regular-gray;
+		}
+
+		&.GreenTag:after {
+			background-color: $regular-green;
+		}
+
+		&.OrangeTag:after {
+			background-color: $regular-orange;
+		}
+
+		&.RedTag:after {
+			background-color: $regular-red;
+		}
+	}
+
+	&_description {
+		border-left: 1px solid $light-grey;
+		display: block;
+		flex: 1;
+		line-height: 22px;
+		padding: 0 20px;
+	}
+
+	&__title {
+		display: block;
+		font-family: $font-family-latin-bold;
+		font-size: 1.143em;
+		margin-top: -12px;
+		text-transform: capitalize;
+	}
+
+	&__descriptions {
+		display: block;
+		font-size: 1em;
+		padding-bottom: 32px;
+	}
+}
