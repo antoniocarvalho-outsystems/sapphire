@@ -1,4 +1,4 @@
-/*! Version: 5.0.900024 || Generated: Fri Jun 26 2020 17:07:20 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.0.900024 || Generated: Fri Jun 26 2020 17:08:04 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14022,131 +14022,105 @@ body.PanelOpened .daterangepicker {
 
 .DragDrop-area {
   position: relative; }
-
-.DragDrop-skin-Teams.DragDrop-area:before {
-  border-left: dashed #ccc;
-  content: '';
-  display: block;
-  height: 100%;
-  left: 50%;
-  position: absolute;
-  width: 5px; }
-
-.tablet .DragDrop-skin-Teams.DragDrop-area:before {
-  display: none; }
+  .DragDrop-area.DragDrop-skin-Teams:before {
+    border-left: dashed #d6d6d6;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    width: 5px; }
+  .DragDrop-area.DragDrop-skin-Teams .hovered {
+    background-color: #f5f4e0; }
+  .DragDrop-area.DragDrop-skin-Teams .DragDrop-draggable {
+    background-color: #f3f3f3;
+    display: inline-block;
+    margin: 10px;
+    min-height: 70px;
+    overflow: hidden;
+    padding: 10px 40px 10px 10px;
+    width: 300px; }
+    .DragDrop-area.DragDrop-skin-Teams .DragDrop-draggable.ui-draggable-dragging {
+      cursor: move;
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+      z-index: 1; }
+    .DragDrop-area.DragDrop-skin-Teams .DragDrop-draggable.selected {
+      background-color: #00bfa5; }
+  .DragDrop-area.DragDrop-skin-Teams .DragDrop-draggable-placeholder {
+    display: inline-block;
+    height: 70px;
+    padding: 10px;
+    width: 300px; }
+  .DragDrop-area.DragDrop-skin-HorizontalFullWidth .DragDrop-droppable {
+    min-height: auto; }
+  .DragDrop-area.DragDrop-skin-HorizontalFullWidth .DragDrop-draggable {
+    display: block;
+    width: 100%; }
+  .DragDrop-area.DragDrop-skin-HorizontalFullWidth .DragDrop-draggable-placeholder {
+    display: block;
+    width: 100%; }
+  .DragDrop-area .PersonCard .PersonCard_header {
+    padding-right: 15px; }
 
 .DragDrop-droppable {
-  background-color: #fefefe;
   min-height: 100px;
   width: 100%; }
-
-.DragDrop-area.DragDrop-skin-HorizontalFullWidth .DragDrop-droppable {
-  min-height: auto; }
-
-.DragDrop-droppable-header {
-  padding: 10px; }
-
-.DragDrop-droppable-intro {
-  padding: 10px; }
-
-.DragDrop-droppable-items {
-  display: none; }
-
-.DragDrop-droppable-items .Heading3 {
-  padding-left: 10px; }
-
-.DragDrop-droppable.isOpen .DragDrop-droppable-items {
-  display: inline; }
+  .DragDrop-droppable.isOpen .DragDrop-droppable-items {
+    display: inline; }
+  .DragDrop-droppable-header {
+    padding: 10px; }
+  .DragDrop-droppable-intro {
+    padding: 10px; }
+  .DragDrop-droppable-items {
+    display: none; }
+    .DragDrop-droppable-items .Heading3 {
+      padding-left: 10px; }
 
 .DragDrop-draggable {
   position: relative; }
-
-.DragDrop-skin-HorizontalFullWidth .DragDrop-draggable {
-  display: block;
-  width: 100%; }
-
-.DragDrop-skin-Teams .DragDrop-draggable {
-  background: #efefef;
-  display: inline-block;
-  margin: 10px;
-  min-height: 70px;
-  overflow: hidden;
-  padding: 10px 40px 10px 10px;
-  width: 300px; }
-
-.DragDrop-draggable:before {
-  content: '\e656';
-  font-family: 'Sapphire-Icon-Font';
-  font-size: 25px;
-  position: absolute;
-  right: 10px;
-  top: 10px; }
-
-.DragDrop-draggable:hover {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  cursor: move; }
-
-.DragDrop-draggable input[type='checkbox'] {
-  display: none;
-  left: 10px;
-  pointer-events: none;
-  position: absolute;
-  top: 10px; }
-
-.DragDrop-draggable .DragDrop-draggable-select-action a {
-  bottom: 0;
-  display: block;
-  height: 1px;
-  left: 0;
-  position: absolute;
-  width: 1px; }
+  .DragDrop-draggable:before {
+    content: '\e656';
+    font-family: "Sapphire-Icon-Font";
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+  .DragDrop-draggable:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: move; }
+  .DragDrop-draggable.ui-draggable-disabled, .DragDrop-draggable.ui-draggable-disabled:hover {
+    box-shadow: none;
+    cursor: unset; }
+  .DragDrop-draggable.ui-draggable-disabled:before {
+    display: none; }
+  .DragDrop-draggable.selected {
+    background-color: #00bfa5;
+    color: #fff; }
+  .DragDrop-draggable input[type='checkbox'] {
+    display: none;
+    left: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 10px; }
+  .DragDrop-draggable .DragDrop-draggable-select-action a {
+    bottom: 0;
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 1px; }
+  .DragDrop-draggable .DragDrop-draggable-placeholder {
+    border: dashed 1px #d6d6d6;
+    margin: 5px; }
 
 .DragDrop-droppable.allowMultiple .DragDrop-draggable {
   padding: 10px 40px; }
+  .DragDrop-droppable.allowMultiple .DragDrop-draggable input[type='checkbox'] {
+    display: block; }
 
-.DragDrop-droppable.allowMultiple .DragDrop-draggable input[type='checkbox'] {
-  display: block; }
-
-.DragDrop-draggable.ui-draggable-disabled,
-.DragDrop-draggable.ui-draggable-disabled:hover {
-  box-shadow: none;
-  cursor: unset; }
-
-.DragDrop-draggable.ui-draggable-disabled:before {
+.tablet .DragDrop-skin-Teams.DragDrop-area:before {
   display: none; }
-
-.DragDrop-skin-Teams .DragDrop-draggable.ui-draggable-dragging {
-  cursor: move;
-  -webkit-transform: rotate(4deg);
-          transform: rotate(4deg);
-  z-index: 1; }
-
-.DragDrop-draggable.selected {
-  background-color: #0da2aa;
-  color: #fff; }
-
-.DragDrop-draggable.selected .Text_gray {
-  color: #fff; }
-
-.DragDrop-draggable-placeholder {
-  border: dashed 1px #ccc;
-  margin: 5px; }
-
-.DragDrop-skin-HorizontalFullWidth .DragDrop-draggable-placeholder {
-  display: block;
-  width: 100%; }
-
-.DragDrop-skin-Teams .DragDrop-draggable-placeholder {
-  display: inline-block;
-  height: 70px;
-  padding: 10px;
-  width: 300px; }
-
-.DragDrop-skin-Teams .hovered {
-  background-color: lightyellow; }
-
-.DragDrop-area .PersonCard .PersonCard_header {
-  padding-right: 15px; }
 
 .AppLine {
   background-color: #fff;
