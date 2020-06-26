@@ -1,155 +1,166 @@
-.DragDrop-area {
-	position: relative;
+.DragDrop {
+	&-area {
+		position: relative;
+
+		&.DragDrop-skin-Teams {
+			&:before {
+				border-left: dashed $light-grey;
+				content: '';
+				display: block;
+				height: 100%;
+				left: 50%;
+				position: absolute;
+				width: 5px;
+			}
+
+			.hovered {
+				background-color: $light-beige;
+			}
+
+			.DragDrop-draggable {
+				background-color: $body-color;
+				display: inline-block;
+				margin: 10px;
+				min-height: 70px;
+				overflow: hidden;
+				padding: 10px 40px 10px 10px;
+				width: 300px;
+
+				&.ui-draggable-dragging {
+					cursor: move;
+					transform: rotate(4deg);
+					z-index: 1;
+				}
+
+				&.selected {
+					background-color: $regular-alpha;
+				}
+			}
+
+			.DragDrop-draggable-placeholder {
+				display: inline-block;
+				height: 70px;
+				padding: 10px;
+				width: 300px;
+			}
+		}
+
+		&.DragDrop-skin-HorizontalFullWidth {
+			.DragDrop-droppable {
+				min-height: auto;
+			}
+
+			.DragDrop-draggable {
+				display: block;
+				width: 100%;
+			}
+
+			.DragDrop-draggable-placeholder {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.PersonCard .PersonCard_header {
+			padding-right: 15px;
+		}
+	}
+
+	&-droppable {
+		min-height: 100px;
+		width: 100%;
+
+		&.isOpen {
+			.DragDrop-droppable-items {
+				display: inline;
+			}
+		}
+
+		&-header {
+			padding: 10px;
+		}
+
+		&-intro {
+			padding: 10px;
+		}
+
+		&-items {
+			display: none;
+
+			.Heading3 {
+				padding-left: 10px;
+			}
+		}
+	}
+
+	&-draggable {
+		position: relative;
+
+		&:before {
+			content: '\e656';
+			font-family: $font-family-icons;
+			font-size: 25px;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+
+		&:hover {
+			box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+			cursor: move;
+		}
+
+		&.ui-draggable-disabled,
+		&.ui-draggable-disabled:hover {
+			box-shadow: none;
+			cursor: unset;
+		}
+
+		&.ui-draggable-disabled:before {
+			display: none;
+		}
+
+		&.selected {
+			background-color: $regular-alpha;
+			color: $regular-white;
+		}
+
+		input[type='checkbox'] {
+			display: none;
+			left: 10px;
+			pointer-events: none;
+			position: absolute;
+			top: 10px;
+		}
+
+		.DragDrop-draggable-select-action a {
+			bottom: 0;
+			display: block;
+			height: 1px;
+			left: 0;
+			position: absolute;
+			width: 1px;
+		}
+
+		.DragDrop-draggable-placeholder {
+			border: dashed 1px $light-grey;
+			margin: 5px;
+		}
+	}
+
+	&-droppable.allowMultiple {
+		.DragDrop-draggable {
+			padding: 10px 40px;
+
+			input[type='checkbox'] {
+				display: block;
+			}
+		}
+	}
 }
 
-.DragDrop-skin-Teams.DragDrop-area:before {
-	border-left: dashed #ccc;
-	content: '';
-	display: block;
-	height: 100%;
-	left: 50%;
-	position: absolute;
-	width: 5px;
-}
-
-.tablet .DragDrop-skin-Teams.DragDrop-area:before {
-	display: none;
-}
-
-.DragDrop-droppable {
-	background-color: #fefefe;
-	min-height: 100px;
-	width: 100%;
-}
-
-.DragDrop-area.DragDrop-skin-HorizontalFullWidth .DragDrop-droppable {
-	min-height: auto;
-}
-
-.DragDrop-droppable-header {
-	padding: 10px;
-}
-
-.DragDrop-droppable-intro {
-	padding: 10px;
-}
-
-.DragDrop-droppable-items {
-	display: none;
-}
-
-.DragDrop-droppable-items .Heading3 {
-	padding-left: 10px;
-}
-
-.DragDrop-droppable.isOpen .DragDrop-droppable-items {
-	display: inline;
-}
-
-.DragDrop-draggable {
-	position: relative;
-}
-
-.DragDrop-skin-HorizontalFullWidth .DragDrop-draggable {
-	display: block;
-	width: 100%;
-}
-
-.DragDrop-skin-Teams .DragDrop-draggable {
-	background: #efefef;
-	display: inline-block;
-	margin: 10px;
-	min-height: 70px;
-	overflow: hidden;
-	padding: 10px 40px 10px 10px;
-	width: 300px;
-}
-
-.DragDrop-draggable:before {
-	content: '\e656';
-	font-family: 'Sapphire-Icon-Font';
-	font-size: 25px;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-}
-
-.DragDrop-draggable:hover {
-	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-	cursor: move;
-}
-
-.DragDrop-draggable input[type='checkbox'] {
-	display: none;
-	left: 10px;
-	pointer-events: none;
-	position: absolute;
-	top: 10px;
-}
-
-.DragDrop-draggable .DragDrop-draggable-select-action a {
-	bottom: 0;
-	display: block;
-	height: 1px;
-	left: 0;
-	position: absolute;
-	width: 1px;
-}
-
-.DragDrop-droppable.allowMultiple .DragDrop-draggable {
-	padding: 10px 40px;
-}
-
-.DragDrop-droppable.allowMultiple .DragDrop-draggable input[type='checkbox'] {
-	display: block;
-}
-
-.DragDrop-draggable.ui-draggable-disabled,
-.DragDrop-draggable.ui-draggable-disabled:hover {
-	box-shadow: none;
-	cursor: unset;
-}
-
-.DragDrop-draggable.ui-draggable-disabled:before {
-	display: none;
-}
-
-.DragDrop-skin-Teams .DragDrop-draggable.ui-draggable-dragging {
-	cursor: move;
-	transform: rotate(4deg);
-	z-index: 1;
-}
-
-.DragDrop-draggable.selected {
-	background-color: #0da2aa;
-	color: #fff;
-}
-
-.DragDrop-draggable.selected .Text_gray {
-	color: #fff;
-}
-
-.DragDrop-draggable-placeholder {
-	border: dashed 1px #ccc;
-	margin: 5px;
-}
-
-.DragDrop-skin-HorizontalFullWidth .DragDrop-draggable-placeholder {
-	display: block;
-	width: 100%;
-}
-
-.DragDrop-skin-Teams .DragDrop-draggable-placeholder {
-	display: inline-block;
-	height: 70px;
-	padding: 10px;
-	width: 300px;
-}
-
-.DragDrop-skin-Teams .hovered {
-	background-color: lightyellow;
-}
-
-.DragDrop-area .PersonCard .PersonCard_header {
-	padding-right: 15px;
+.tablet {
+	.DragDrop-skin-Teams.DragDrop-area:before {
+		display: none;
+	}
 }
