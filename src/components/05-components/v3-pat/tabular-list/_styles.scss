@@ -47,37 +47,37 @@
 
 	&-border-All,
 	&-border-Inside {
-		border-bottom: solid 1px #d7d7d7;
+		border-bottom: solid 1px $light-grey;
 	}
 
 	&-border-All .TabularListRow {
-		border-left: solid 1px #d7d7d7;
-		border-right: solid 1px #d7d7d7;
-		border-top: solid 1px #d7d7d7;
+		border-left: solid 1px $light-grey;
+		border-right: solid 1px $light-grey;
+		border-top: solid 1px $light-grey;
 	}
 
 	&-border-Inside {
 		.TabularListRow-property,
 		.TabularListRow-actions {
-			border-left: solid 1px #d7d7d7;
-			border-right: solid 1px #d7d7d7;
-			border-top: solid 1px #d7d7d7;
+			border-left: solid 1px $light-grey;
+			border-right: solid 1px $light-grey;
+			border-top: solid 1px $light-grey;
 		}
 
 		.TabularListRow-values {
 			.TabularListRow-item {
-				border-right: solid 1px #d7d7d7;
-				border-top: solid 1px #d7d7d7;
+				border-right: solid 1px $light-grey;
+				border-top: solid 1px $light-grey;
 
 				&:first-child {
-					border-left: solid 1px #d7d7d7;
+					border-left: solid 1px $light-grey;
 				}
 			}
 		}
 	}
 
 	&-border-Bottom .TabularListRow {
-		border-bottom: solid 1px #d7d7d7;
+		border-bottom: solid 1px $light-grey;
 	}
 
 	&-padding-None {
