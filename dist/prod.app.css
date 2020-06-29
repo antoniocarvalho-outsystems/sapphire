@@ -1,4 +1,4 @@
-/*! Version: 5.0.900029 || Generated: Mon Jun 29 2020 10:22:44 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900030 || Generated: Mon Jun 29 2020 11:26:05 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -25720,27 +25720,27 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   white-space: nowrap; }
 
 .TabularList-border-All, .TabularList-border-Inside {
-  border-bottom: solid 1px #d7d7d7; }
+  border-bottom: solid 1px #d6d6d6; }
 
 .TabularList-border-All .TabularListRow {
-  border-left: solid 1px #d7d7d7;
-  border-right: solid 1px #d7d7d7;
-  border-top: solid 1px #d7d7d7; }
+  border-left: solid 1px #d6d6d6;
+  border-right: solid 1px #d6d6d6;
+  border-top: solid 1px #d6d6d6; }
 
 .TabularList-border-Inside .TabularListRow-property,
 .TabularList-border-Inside .TabularListRow-actions {
-  border-left: solid 1px #d7d7d7;
-  border-right: solid 1px #d7d7d7;
-  border-top: solid 1px #d7d7d7; }
+  border-left: solid 1px #d6d6d6;
+  border-right: solid 1px #d6d6d6;
+  border-top: solid 1px #d6d6d6; }
 
 .TabularList-border-Inside .TabularListRow-values .TabularListRow-item {
-  border-right: solid 1px #d7d7d7;
-  border-top: solid 1px #d7d7d7; }
+  border-right: solid 1px #d6d6d6;
+  border-top: solid 1px #d6d6d6; }
   .TabularList-border-Inside .TabularListRow-values .TabularListRow-item:first-child {
-    border-left: solid 1px #d7d7d7; }
+    border-left: solid 1px #d6d6d6; }
 
 .TabularList-border-Bottom .TabularListRow {
-  border-bottom: solid 1px #d7d7d7; }
+  border-bottom: solid 1px #d6d6d6; }
 
 .TabularList-padding-None {
   padding: 0; }
