@@ -1,0 +1,107 @@
+.VerticalCarousel {
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: 0.94;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 200;
+
+	&.Open {
+		display: block;
+
+		+ .VerticalCarouselBackground {
+			background-color: $dark-grey;
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.3;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 150;
+		}
+	}
+
+	.VerticalCarouselBackground {
+		display: none;
+	}
+
+	&_Wrapper {
+		height: 100% !important;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		transition: height 0.2s ease-in;
+	}
+
+	&__List {
+		height: 100%;
+		margin: 0;
+		opacity: 1;
+		padding: 0;
+		transition: transform 0.2s ease-in;
+
+		.PrescriptionCard {
+			background-color: #dae0e4;
+			border: transparent;
+			margin-bottom: 25px;
+			max-width: 851px;
+			padding: 60px 25px 57px 25px;
+			text-align: left;
+		}
+	}
+
+	&__Controllers {
+		margin-left: 30px;
+		max-width: 40px;
+		padding-bottom: 25px;
+		position: absolute;
+		top: 47%;
+		transform: translateY(-50%);
+		z-index: 1;
+	}
+
+	&___Close,
+	&___ChangeUp,
+	&___ChangeDown {
+		border: 2px solid $regular-white;
+		border-radius: 50%;
+		box-sizing: border-box;
+		color: $regular-white;
+		cursor: pointer;
+		height: 45px;
+		line-height: 45px;
+		margin: 0 auto;
+		transition: all 0.2s ease-in;
+		width: 45px;
+
+		&:hover {
+			background-color: $regular-white;
+			color: $mid-light-grey;
+		}
+	}
+
+	&___ChangeUp.isDisabled,
+	&___ChangeDown.isDisabled {
+		opacity: 0.4;
+
+		&:hover {
+			background-color: unset;
+			color: $regular-white;
+		}
+	}
+
+	&___Close {
+		margin: 16px 0;
+	}
+}
+
+.AR,
+.FA {
+	.VerticalCarousel__Controllers {
+		margin-right: 30px;
+	}
+}

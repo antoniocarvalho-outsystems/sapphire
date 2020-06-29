@@ -15959,120 +15959,120 @@ a.Button.Icon:hover {
 /*-------------------------------------------------------------------------------------*/
 /* 9.70 Sapphire Patterns > Custom_Patterns > VerticalCarousel *********/
 /*-------------------------------------------------------------------------------------*/
-.VerticalCarousel {
-  display: none;
-  height: 100%;
-  left: 0;
-  opacity: 0.94;
-  position: fixed;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  z-index: 200;
-}
+// .VerticalCarousel {
+//   display: none;
+//   height: 100%;
+//   left: 0;
+//   opacity: 0.94;
+//   position: fixed;
+//   text-align: center;
+//   top: 0;
+//   width: 100%;
+//   z-index: 200;
+// }
 
-.VerticalCarouselBackground {
-  display: none;
-}
+// .VerticalCarouselBackground {
+//   display: none;
+// }
 
-.VerticalCarousel.Open {
-  display: block;
-}
+// .VerticalCarousel.Open {
+//   display: block;
+// }
 
-.VerticalCarousel.Open+.VerticalCarouselBackground {
-  background-color: #7c7f7f;
-  display: block;
-  height: 100%;
-  left: 0;
-  opacity: 0.9;
-  position: fixed;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 150;
-}
+// .VerticalCarousel.Open+.VerticalCarouselBackground {
+//   background-color: #7c7f7f;
+//   display: block;
+//   height: 100%;
+//   left: 0;
+//   opacity: 0.9;
+//   position: fixed;
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 150;
+// }
 
-.VerticalCarousel.Open+.VerticalCarouselBackground {
-  background-color: #7c7f7f;
-  display: block;
-  height: 100%;
-  left: 0;
-  opacity: 0.9;
-  position: fixed;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 150;
-}
+// .VerticalCarousel.Open+.VerticalCarouselBackground {
+//   background-color: #7c7f7f;
+//   display: block;
+//   height: 100%;
+//   left: 0;
+//   opacity: 0.9;
+//   position: fixed;
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 150;
+// }
 
-.VerticalCarousel_Wrapper {
-  height: 100% !important;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  -webkit-transition: height 0.2s ease-in;
-  -moz-transition: height 0.2s ease-in;
-  transition: height 0.2s ease-in;
-}
+// .VerticalCarousel_Wrapper {
+//   height: 100% !important;
+//   overflow: hidden;
+//   position: relative;
+//   text-align: center;
+//   -webkit-transition: height 0.2s ease-in;
+//   -moz-transition: height 0.2s ease-in;
+//   transition: height 0.2s ease-in;
+// }
 
-.VerticalCarousel__List {
-  height: 100%;
-  margin: 0;
-  opacity: 1;
-  padding: 0;
-  -webkit-transition: -webkit-transform 0.2s ease-in;
-  -moz-transition: -moz-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in;
-}
+// .VerticalCarousel__List {
+//   height: 100%;
+//   margin: 0;
+//   opacity: 1;
+//   padding: 0;
+//   -webkit-transition: -webkit-transform 0.2s ease-in;
+//   -moz-transition: -moz-transform 0.2s ease-in;
+//   transition: transform 0.2s ease-in;
+// }
 
-.VerticalCarousel__List .PrescriptionCard {
-  background-color: #dae0e4;
-  border: transparent;
-  margin-bottom: 25px;
-  max-width: 851px;
-  padding: 60px 25px 57px 79px;
-  text-align: left;
-}
+// .VerticalCarousel__List .PrescriptionCard {
+//   background-color: #dae0e4;
+//   border: transparent;
+//   margin-bottom: 25px;
+//   max-width: 851px;
+//   padding: 60px 25px 57px 79px;
+//   text-align: left;
+// }
 
-.VerticalCarousel__Controllers {
-  margin-left: 30px;
-  max-width: 40px;
-  padding-bottom: 25px;
-  position: absolute;
-  top: 47%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
+// .VerticalCarousel__Controllers {
+//   margin-left: 30px;
+//   max-width: 40px;
+//   padding-bottom: 25px;
+//   position: absolute;
+//   top: 47%;
+//   transform: translateY(-50%);
+//   z-index: 1;
+// }
 
-.VerticalCarousel___ChangeUp,
-.VerticalCarousel___Close,
-.VerticalCarousel___ChangeDown {
-  border: 2px solid #fff;
-  border-radius: 50%;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  height: 45px;
-  line-height: 52px;
-  margin: 0 auto;
-  width: 45px;
-}
+// .VerticalCarousel___ChangeUp,
+// .VerticalCarousel___Close,
+// .VerticalCarousel___ChangeDown {
+//   border: 2px solid #fff;
+//   border-radius: 50%;
+//   box-sizing: border-box;
+//   color: #fff;
+//   cursor: pointer;
+//   height: 45px;
+//   line-height: 52px;
+//   margin: 0 auto;
+//   width: 45px;
+// }
 
-.VerticalCarousel___ChangeUp.isDisabled,
-.VerticalCarousel___ChangeDown.isDisabled {
-  opacity: 0.4;
-}
+// .VerticalCarousel___ChangeUp.isDisabled,
+// .VerticalCarousel___ChangeDown.isDisabled {
+//   opacity: 0.4;
+// }
 
-.VerticalCarousel___Close {
-  margin: 16px 0;
-}
+// .VerticalCarousel___Close {
+//   margin: 16px 0;
+// }
 
-/* AR */
+// /* AR */
 
-.FA .VerticalCarousel__Controllers,
-.AR .VerticalCarousel__Controllers {
-  margin-right: 30px;
-}
+// .FA .VerticalCarousel__Controllers,
+// .AR .VerticalCarousel__Controllers {
+//   margin-right: 30px;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /*  9.71 Sapphire Patterns > Custom_Patterns > WardBx *********/
