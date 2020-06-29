@@ -1,4 +1,4 @@
-/*! Version: 5.0.900027 || Generated: Fri Jun 26 2020 19:06:38 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900028 || Generated: Mon Jun 29 2020 09:55:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -25470,90 +25470,6 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     font-size: 1em;
     padding-bottom: 32px; }
 
-.TabularScroll {
-  display: -webkit-box;
-  display: flex;
-  width: 100%; }
-  .TabularScroll table {
-    box-sizing: border-box;
-    font-size: 0.857em;
-    margin: 0;
-    padding: 0; }
-  .TabularScroll thead {
-    box-sizing: border-box;
-    font-size: 0.857em;
-    margin: 0;
-    padding: 0; }
-  .TabularScroll tr {
-    box-sizing: border-box;
-    font-size: 0.857em;
-    margin: 0;
-    padding: 0;
-    visibility: visible; }
-  .TabularScroll td {
-    box-sizing: border-box;
-    font-size: 0.857em;
-    margin: 0;
-    padding: 0; }
-    .TabularScroll td:first-child {
-      border-left: none; }
-    .TabularScroll td > span {
-      display: block;
-      overflow: hidden; }
-    .TabularScroll td > div {
-      display: block;
-      overflow: hidden; }
-  .TabularScroll .TabularScroll-center td {
-    border-bottom: solid 1px #d6d6d6;
-    border-left: solid 1px #d6d6d6;
-    min-width: 100px;
-    overflow: hidden;
-    padding: 3px; }
-  .TabularScroll .VariationItem-value {
-    display: inline-block;
-    text-align: left; }
-
-.TabularScrollItem {
-  border-bottom: solid thin #d6d6d6;
-  box-sizing: border-box;
-  display: block;
-  padding: 3px; }
-
-.TabularScroll-left {
-  font-weight: 700;
-  min-width: 200px;
-  padding-top: 21px; }
-  .TabularScroll-left .TabularScrollItem {
-    border-right: solid thin #d6d6d6; }
-
-.TabularScroll-right {
-  font-weight: 700;
-  min-width: 200px;
-  padding-top: 21px; }
-  .TabularScroll-right .TabularScrollItem {
-    border-left: solid thin #d6d6d6; }
-
-.TabularScroll-center {
-  flex-basis: 100%;
-  overflow-x: hidden; }
-  .TabularScroll-center thead {
-    font-weight: 700; }
-
-.TabularScroll-center-table {
-  overflow-x: auto;
-  overflow-y: hidden; }
-
-.TopScrollWrapper {
-  height: 20px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  visibility: hidden;
-  width: 100%; }
-
-.TopScrollDragger {
-  height: 20px;
-  width: 1000px; }
-
 .Tabs_Extended {
   font-size: 14px; }
   .Tabs_Extended:not(.isClosed) .Tabs__tab.active {
@@ -25841,6 +25757,102 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     display: -webkit-box;
     display: flex;
     flex-basis: 100%; }
+
+.TabularScroll {
+  display: -webkit-box;
+  display: flex;
+  width: 100%; }
+  .TabularScroll table {
+    box-sizing: border-box;
+    font-size: 0.857em;
+    margin: 0;
+    padding: 0; }
+  .TabularScroll thead {
+    box-sizing: border-box;
+    font-size: 0.857em;
+    margin: 0;
+    padding: 0; }
+  .TabularScroll tr {
+    box-sizing: border-box;
+    font-size: 0.857em;
+    margin: 0;
+    padding: 0;
+    visibility: visible; }
+  .TabularScroll td {
+    box-sizing: border-box;
+    font-size: 0.857em;
+    margin: 0;
+    padding: 0; }
+    .TabularScroll td:first-child {
+      border-left: none; }
+    .TabularScroll td > span {
+      display: block;
+      overflow: hidden; }
+    .TabularScroll td > div {
+      display: block;
+      overflow: hidden; }
+  .TabularScroll .TabularScroll-center td {
+    border-bottom: solid 1px #d6d6d6;
+    border-left: solid 1px #d6d6d6;
+    min-width: 100px;
+    overflow: hidden;
+    padding: 3px; }
+  .TabularScroll .VariationItem-value {
+    display: inline-block;
+    text-align: left; }
+
+.TabularScrollItem {
+  border-bottom: solid thin #d6d6d6;
+  box-sizing: border-box;
+  display: block;
+  padding: 3px; }
+
+.TabularScroll-left {
+  font-weight: 700;
+  min-width: 200px;
+  padding-top: 21px; }
+  .TabularScroll-left .TabularScrollItem {
+    border-right: solid thin #d6d6d6; }
+
+.TabularScroll-right {
+  font-weight: 700;
+  min-width: 200px;
+  padding-top: 21px; }
+  .TabularScroll-right .TabularScrollItem {
+    border-left: solid thin #d6d6d6; }
+
+.TabularScroll-center {
+  flex-basis: 100%;
+  overflow-x: hidden; }
+  .TabularScroll-center thead {
+    font-weight: 700; }
+
+.TabularScroll-center-table {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 1px;
+  padding-top: 1px; }
+
+.TopScrollWrapper {
+  height: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  visibility: hidden;
+  width: 100%; }
+
+.TopScrollDragger {
+  height: 20px;
+  width: 1000px; }
+
+.TopScrollWrapper::-webkit-scrollbar,
+.TabularScroll-center-table::-webkit-scrollbar {
+  background-color: #fff;
+  height: 9px;
+  width: 7px; }
+
+.TopScrollWrapper::-webkit-scrollbar-thumb,
+.TabularScroll-center-table::-webkit-scrollbar-thumb {
+  border: 5px solid #00bfa5; }
 
 div.TimelineDetail {
   background-color: transparent;
