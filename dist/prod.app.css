@@ -1,4 +1,4 @@
-/*! Version: 5.0.900030 || Generated: Mon Jun 29 2020 11:26:05 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900031 || Generated: Mon Jun 29 2020 12:04:01 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12109,6 +12109,68 @@ div.Feedback_Message_Info span.lasa-term {
   .BlankState b {
     font-family: 'LatoBold';
     padding: 0 3px; }
+
+.CardPatientInfo {
+  background-color: transparent;
+  display: table;
+  min-height: 25px;
+  width: 100%; }
+  .CardPatientInfo + .ListRecords .PatientInfo {
+    border-left: none;
+    border-right: none; }
+    .CardPatientInfo + .ListRecords .PatientInfo:last-of-type {
+      border-bottom: none; }
+  .CardPatientInfo_left {
+    display: table-cell;
+    padding: 10px;
+    vertical-align: middle;
+    width: 41%; }
+    .CardPatientInfo_left.ExtraTiny {
+      width: 50px; }
+    .CardPatientInfo_left.Tiny {
+      width: 100px; }
+    .CardPatientInfo_left.ExtraSmall {
+      width: 150px; }
+    .CardPatientInfo_left.Small {
+      width: 200px; }
+    .CardPatientInfo_left.SmallMedium {
+      width: 250px; }
+    .CardPatientInfo_left.Medium {
+      width: 300px; }
+    .CardPatientInfo_left.MediumLarge {
+      width: 350px; }
+    .CardPatientInfo_left.Large {
+      width: 400px; }
+    .CardPatientInfo_left.ExtraLarge {
+      width: 450px; }
+    .CardPatientInfo_left.Gigantic {
+      width: 500px; }
+    .CardPatientInfo_left.ExtraGigantic {
+      width: 550px; }
+    .CardPatientInfo_left.Colossal {
+      width: 600px; }
+    .CardPatientInfo_left .PatientInfo_Text {
+      margin-left: 10px;
+      margin-right: auto; }
+  .CardPatientInfo_right {
+    display: table;
+    padding: 10px;
+    vertical-align: middle;
+    width: 100%; }
+    .CardPatientInfo_right > div {
+      -webkit-box-align: center;
+              align-items: center;
+      display: table-cell; }
+
+.tablet .CardPatientInfo_left {
+  width: 32%; }
+  .tablet .CardPatientInfo_left.MediumLarge {
+    width: 250px; }
+
+.tablet .CardPatientInfo_right > div {
+  flex-wrap: nowrap; }
+  .tablet .CardPatientInfo_right > div:first-child {
+    margin-left: 0; }
 
 .CardBox {
   background: #fff;
@@ -27220,317 +27282,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .HideDiv {
   visibility: hidden; }
 
-.Page .Beige,
-.LayoutPopup .Beige,
-.LayoutBlank .Beige,
-.LayoutBase .Beige,
-.DesignSystem .Beige {
-  background-color: #e6e2aa; }
-
-.Page .DarkBeige,
-.LayoutPopup .DarkBeige,
-.LayoutBlank .DarkBeige,
-.LayoutBase .DarkBeige,
-.DesignSystem .DarkBeige {
-  background-color: #928d09; }
-
-.Page .Black,
-.LayoutPopup .Black,
-.LayoutBlank .Black,
-.LayoutBase .Black,
-.DesignSystem .Black {
-  background-color: #131819; }
-
-.Page .BlueLight,
-.LayoutPopup .BlueLight,
-.LayoutBlank .BlueLight,
-.LayoutBase .BlueLight,
-.DesignSystem .BlueLight {
-  background-color: #c4f0eb; }
-
-.Page .BlueNavy,
-.LayoutPopup .BlueNavy,
-.LayoutBlank .BlueNavy,
-.LayoutBase .BlueNavy,
-.DesignSystem .BlueNavy {
-  background-color: #c4f0eb; }
-
-.Page .Blue,
-.LayoutPopup .Blue,
-.LayoutBlank .Blue,
-.LayoutBase .Blue,
-.DesignSystem .Blue {
-  background-color: #039be5; }
-
-.Page .DarkBlue,
-.LayoutPopup .DarkBlue,
-.LayoutBlank .DarkBlue,
-.LayoutBase .DarkBlue,
-.DesignSystem .DarkBlue {
-  background-color: #194968; }
-
-.Page .DarkPlum,
-.LayoutPopup .DarkPlum,
-.LayoutBlank .DarkPlum,
-.LayoutBase .DarkPlum,
-.DesignSystem .DarkPlum {
-  background-color: #ca2c92; }
-
-.Page .DarkRed,
-.LayoutPopup .DarkRed,
-.LayoutBlank .DarkRed,
-.LayoutBase .DarkRed,
-.DesignSystem .DarkRed {
-  background-color: #b10100; }
-
-.Page .Grey,
-.Page .Gray,
-.LayoutPopup .Grey,
-.LayoutPopup .Gray,
-.LayoutBlank .Grey,
-.LayoutBlank .Gray,
-.LayoutBase .Grey,
-.LayoutBase .Gray,
-.DesignSystem .Grey,
-.DesignSystem .Gray {
-  background-color: #858585; }
-
-.Page .Green,
-.LayoutPopup .Green,
-.LayoutBlank .Green,
-.LayoutBase .Green,
-.DesignSystem .Green {
-  background-color: #7cb342; }
-
-.Page .LightGreen,
-.LayoutPopup .LightGreen,
-.LayoutBlank .LightGreen,
-.LayoutBase .LightGreen,
-.DesignSystem .LightGreen {
-  background-color: #c2dea8; }
-
-.Page .LightRed,
-.LayoutPopup .LightRed,
-.LayoutBlank .LightRed,
-.LayoutBase .LightRed,
-.DesignSystem .LightRed {
-  background-color: #fad5d5; }
-
-.Page .LightYellow,
-.LayoutPopup .LightYellow,
-.LayoutBlank .LightYellow,
-.LayoutBase .LightYellow,
-.DesignSystem .LightYellow {
-  background-color: #ffeab5; }
-
-.Page .PinkLight,
-.LayoutPopup .PinkLight,
-.LayoutBlank .PinkLight,
-.LayoutBase .PinkLight,
-.DesignSystem .PinkLight {
-  background-color: #c892b3; }
-
-.Page .LightBlue2,
-.LayoutPopup .LightBlue2,
-.LayoutBlank .LightBlue2,
-.LayoutBase .LightBlue2,
-.DesignSystem .LightBlue2 {
-  background-color: #feeced; }
-
-.Page .PinkLight2,
-.LayoutPopup .PinkLight2,
-.LayoutBlank .PinkLight2,
-.LayoutBase .PinkLight2,
-.DesignSystem .PinkLight2 {
-  background-color: #feeced; }
-
-.Page .Orange,
-.LayoutPopup .Orange,
-.LayoutBlank .Orange,
-.LayoutBase .Orange,
-.DesignSystem .Orange {
-  background-color: #ffa000; }
-
-.Page .LightOrange,
-.LayoutPopup .LightOrange,
-.LayoutBlank .LightOrange,
-.LayoutBase .LightOrange,
-.DesignSystem .LightOrange {
-  background-color: #fcc891; }
-
-.Page .DarkOrange,
-.LayoutPopup .DarkOrange,
-.LayoutBlank .DarkOrange,
-.LayoutBase .DarkOrange,
-.DesignSystem .DarkOrange {
-  background-color: #c37b03; }
-
-.Page .Plum,
-.LayoutPopup .Plum,
-.LayoutBlank .Plum,
-.LayoutBase .Plum,
-.DesignSystem .Plum {
-  background-color: #c32b87; }
-
-.Page .Red,
-.LayoutPopup .Red,
-.LayoutBlank .Red,
-.LayoutBase .Red,
-.DesignSystem .Red {
-  background-color: #ff3e2d; }
-
-.Page .Silver,
-.LayoutPopup .Silver,
-.LayoutBlank .Silver,
-.LayoutBase .Silver,
-.DesignSystem .Silver {
-  background-color: #d6d6d6; }
-
-.Page .SapphireSilver,
-.LayoutPopup .SapphireSilver,
-.LayoutBlank .SapphireSilver,
-.LayoutBase .SapphireSilver,
-.DesignSystem .SapphireSilver {
-  background-color: #f3f3f3; }
-
-.Page .Turquoise,
-.LayoutPopup .Turquoise,
-.LayoutBlank .Turquoise,
-.LayoutBase .Turquoise,
-.DesignSystem .Turquoise {
-  background-color: #039be5; }
-
-.Page .LightTurquoise,
-.LayoutPopup .LightTurquoise,
-.LayoutBlank .LightTurquoise,
-.LayoutBase .LightTurquoise,
-.DesignSystem .LightTurquoise {
-  background-color: #c4f0eb; }
-
-.Page .White,
-.LayoutPopup .White,
-.LayoutBlank .White,
-.LayoutBase .White,
-.DesignSystem .White {
-  background-color: #ffffff; }
-
-.Page .Yellow,
-.LayoutPopup .Yellow,
-.LayoutBlank .Yellow,
-.LayoutBase .Yellow,
-.DesignSystem .Yellow {
-  background-color: #fbc02d; }
-
-.Page .BodyColor,
-.LayoutPopup .BodyColor,
-.LayoutBlank .BodyColor,
-.LayoutBase .BodyColor,
-.DesignSystem .BodyColor {
-  background-color: #f3f3f3; }
-
-.Page .SapphireBlue,
-.LayoutPopup .SapphireBlue,
-.LayoutBlank .SapphireBlue,
-.LayoutBase .SapphireBlue,
-.DesignSystem .SapphireBlue {
-  background-color: #2a5a6e; }
-
-.Page .SapphireBlue2,
-.LayoutPopup .SapphireBlue2,
-.LayoutBlank .SapphireBlue2,
-.LayoutBase .SapphireBlue2,
-.DesignSystem .SapphireBlue2 {
-  background-color: #00bfa5; }
-
-.Page .SapphireClinician,
-.Page .clinicianBackground-bg,
-.LayoutPopup .SapphireClinician,
-.LayoutPopup .clinicianBackground-bg,
-.LayoutBlank .SapphireClinician,
-.LayoutBlank .clinicianBackground-bg,
-.LayoutBase .SapphireClinician,
-.LayoutBase .clinicianBackground-bg,
-.DesignSystem .SapphireClinician,
-.DesignSystem .clinicianBackground-bg {
-  background-color: #d6d6d6; }
-
-.Page .SapphireDarkBlue1,
-.LayoutPopup .SapphireDarkBlue1,
-.LayoutBlank .SapphireDarkBlue1,
-.LayoutBase .SapphireDarkBlue1,
-.DesignSystem .SapphireDarkBlue1 {
-  background-color: #333333; }
-
-.Page .SapphireDarkBlue2,
-.LayoutPopup .SapphireDarkBlue2,
-.LayoutBlank .SapphireDarkBlue2,
-.LayoutBase .SapphireDarkBlue2,
-.DesignSystem .SapphireDarkBlue2 {
-  background-color: #30384a; }
-
-.Page .SapphireDarkGrey,
-.LayoutPopup .SapphireDarkGrey,
-.LayoutBlank .SapphireDarkGrey,
-.LayoutBase .SapphireDarkGrey,
-.DesignSystem .SapphireDarkGrey {
-  background-color: #858585; }
-
-.Page .SapphireDarkText,
-.LayoutPopup .SapphireDarkText,
-.LayoutBlank .SapphireDarkText,
-.LayoutBase .SapphireDarkText,
-.DesignSystem .SapphireDarkText {
-  background-color: #333333; }
-
-.Page .SapphireMale,
-.LayoutPopup .SapphireMale,
-.LayoutBlank .SapphireMale,
-.LayoutBase .SapphireMale,
-.DesignSystem .SapphireMale {
-  background-color: #194968; }
-
-.Page .SapphireFemale,
-.LayoutPopup .SapphireFemale,
-.LayoutBlank .SapphireFemale,
-.LayoutBase .SapphireFemale,
-.DesignSystem .SapphireFemale {
-  background-color: #ca2c92; }
-
-.Page .SapphireInactive,
-.LayoutPopup .SapphireInactive,
-.LayoutBlank .SapphireInactive,
-.LayoutBase .SapphireInactive,
-.DesignSystem .SapphireInactive {
-  background-color: #adadad; }
-
-.Page .SapphireLightBoard,
-.LayoutPopup .SapphireLightBoard,
-.LayoutBlank .SapphireLightBoard,
-.LayoutBase .SapphireLightBoard,
-.DesignSystem .SapphireLightBoard {
-  background-color: #d6d6d6; }
-
-.Page .SapphireLightContainer,
-.LayoutPopup .SapphireLightContainer,
-.LayoutBlank .SapphireLightContainer,
-.LayoutBase .SapphireLightContainer,
-.DesignSystem .SapphireLightContainer {
-  background-color: #ebebeb; }
-
-.Page .SapphireLightText,
-.LayoutPopup .SapphireLightText,
-.LayoutBlank .SapphireLightText,
-.LayoutBase .SapphireLightText,
-.DesignSystem .SapphireLightText {
-  background-color: #f3f3f3; }
-
-.Page .SapphireWarning,
-.LayoutPopup .SapphireWarning,
-.LayoutBlank .SapphireWarning,
-.LayoutBase .SapphireWarning,
-.DesignSystem .SapphireWarning {
-  background-color: #ff3e2d; }
-
 .MarginBottom5 {
   margin-bottom: 5px; }
 
@@ -28346,6 +28097,17 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   .show-for-landscape {
     display: initial; } }
 
+.PatientStatus_Container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end; }
+  .PatientStatus_Container > div {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex; }
+
 .WhiteContainer {
   background: #fff;
   border: solid 1px #d9d9d9;
@@ -28403,45 +28165,361 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   background-color: rgba(255, 255, 255, 0.5);
   border-left: 1px solid #e0e1e3; }
 
-.GraphStructure {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center; }
-  .GraphStructure > div:first-child {
-    -webkit-box-flex: 1;
-            flex: 1;
-    -servicestudio-width: 30% !important; }
-    .GraphStructure > div:first-child div {
-      -servicestudio-width: 100% !important; }
-  .GraphStructure > div:last-child {
-    -servicestudio-background-color: #fff;
-    -webkit-box-flex: 5;
-            flex: 5;
-    margin-left: 20px;
-    padding: 0;
-    -servicestudio-width: 75% !important; }
-    .GraphStructure > div:last-child div {
-      -webkit-box-align: center;
-              align-items: center;
-      -servicestudio-background-color: #fff;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -servicestudio-width: 100% !important; }
+.Page .Beige,
+.LayoutPopup .Beige,
+.LayoutBlank .Beige,
+.LayoutBase .Beige,
+.DesignSystem .Beige {
+  background-color: #e6e2aa; }
 
-.tablet .GraphStructure > div,
-.phone .GraphStructure > div {
-  display: block;
-  margin-bottom: 5px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding: 0;
-  width: 100%; }
+.Page .DarkBeige,
+.LayoutPopup .DarkBeige,
+.LayoutBlank .DarkBeige,
+.LayoutBase .DarkBeige,
+.DesignSystem .DarkBeige {
+  background-color: #928d09; }
+
+.Page .Black,
+.LayoutPopup .Black,
+.LayoutBlank .Black,
+.LayoutBase .Black,
+.DesignSystem .Black {
+  background-color: #131819; }
+
+.Page .BlueLight,
+.LayoutPopup .BlueLight,
+.LayoutBlank .BlueLight,
+.LayoutBase .BlueLight,
+.DesignSystem .BlueLight {
+  background-color: #c4f0eb; }
+
+.Page .BlueNavy,
+.LayoutPopup .BlueNavy,
+.LayoutBlank .BlueNavy,
+.LayoutBase .BlueNavy,
+.DesignSystem .BlueNavy {
+  background-color: #c4f0eb; }
+
+.Page .Blue,
+.LayoutPopup .Blue,
+.LayoutBlank .Blue,
+.LayoutBase .Blue,
+.DesignSystem .Blue {
+  background-color: #039be5; }
+
+.Page .DarkBlue,
+.LayoutPopup .DarkBlue,
+.LayoutBlank .DarkBlue,
+.LayoutBase .DarkBlue,
+.DesignSystem .DarkBlue {
+  background-color: #194968; }
+
+.Page .DarkPlum,
+.LayoutPopup .DarkPlum,
+.LayoutBlank .DarkPlum,
+.LayoutBase .DarkPlum,
+.DesignSystem .DarkPlum {
+  background-color: #ca2c92; }
+
+.Page .DarkRed,
+.LayoutPopup .DarkRed,
+.LayoutBlank .DarkRed,
+.LayoutBase .DarkRed,
+.DesignSystem .DarkRed {
+  background-color: #b10100; }
+
+.Page .Grey,
+.Page .Gray,
+.LayoutPopup .Grey,
+.LayoutPopup .Gray,
+.LayoutBlank .Grey,
+.LayoutBlank .Gray,
+.LayoutBase .Grey,
+.LayoutBase .Gray,
+.DesignSystem .Grey,
+.DesignSystem .Gray {
+  background-color: #858585; }
+
+.Page .Green,
+.LayoutPopup .Green,
+.LayoutBlank .Green,
+.LayoutBase .Green,
+.DesignSystem .Green {
+  background-color: #7cb342; }
+
+.Page .LightGreen,
+.LayoutPopup .LightGreen,
+.LayoutBlank .LightGreen,
+.LayoutBase .LightGreen,
+.DesignSystem .LightGreen {
+  background-color: #c2dea8; }
+
+.Page .LightRed,
+.LayoutPopup .LightRed,
+.LayoutBlank .LightRed,
+.LayoutBase .LightRed,
+.DesignSystem .LightRed {
+  background-color: #fad5d5; }
+
+.Page .LightYellow,
+.LayoutPopup .LightYellow,
+.LayoutBlank .LightYellow,
+.LayoutBase .LightYellow,
+.DesignSystem .LightYellow {
+  background-color: #ffeab5; }
+
+.Page .PinkLight,
+.LayoutPopup .PinkLight,
+.LayoutBlank .PinkLight,
+.LayoutBase .PinkLight,
+.DesignSystem .PinkLight {
+  background-color: #c892b3; }
+
+.Page .LightBlue2,
+.LayoutPopup .LightBlue2,
+.LayoutBlank .LightBlue2,
+.LayoutBase .LightBlue2,
+.DesignSystem .LightBlue2 {
+  background-color: #feeced; }
+
+.Page .PinkLight2,
+.LayoutPopup .PinkLight2,
+.LayoutBlank .PinkLight2,
+.LayoutBase .PinkLight2,
+.DesignSystem .PinkLight2 {
+  background-color: #feeced; }
+
+.Page .Orange,
+.LayoutPopup .Orange,
+.LayoutBlank .Orange,
+.LayoutBase .Orange,
+.DesignSystem .Orange {
+  background-color: #ffa000; }
+
+.Page .LightOrange,
+.LayoutPopup .LightOrange,
+.LayoutBlank .LightOrange,
+.LayoutBase .LightOrange,
+.DesignSystem .LightOrange {
+  background-color: #fcc891; }
+
+.Page .DarkOrange,
+.LayoutPopup .DarkOrange,
+.LayoutBlank .DarkOrange,
+.LayoutBase .DarkOrange,
+.DesignSystem .DarkOrange {
+  background-color: #c37b03; }
+
+.Page .Plum,
+.LayoutPopup .Plum,
+.LayoutBlank .Plum,
+.LayoutBase .Plum,
+.DesignSystem .Plum {
+  background-color: #c32b87; }
+
+.Page .Red,
+.LayoutPopup .Red,
+.LayoutBlank .Red,
+.LayoutBase .Red,
+.DesignSystem .Red {
+  background-color: #ff3e2d; }
+
+.Page .Silver,
+.LayoutPopup .Silver,
+.LayoutBlank .Silver,
+.LayoutBase .Silver,
+.DesignSystem .Silver {
+  background-color: #d6d6d6; }
+
+.Page .SapphireSilver,
+.LayoutPopup .SapphireSilver,
+.LayoutBlank .SapphireSilver,
+.LayoutBase .SapphireSilver,
+.DesignSystem .SapphireSilver {
+  background-color: #f3f3f3; }
+
+.Page .Turquoise,
+.LayoutPopup .Turquoise,
+.LayoutBlank .Turquoise,
+.LayoutBase .Turquoise,
+.DesignSystem .Turquoise {
+  background-color: #039be5; }
+
+.Page .LightTurquoise,
+.LayoutPopup .LightTurquoise,
+.LayoutBlank .LightTurquoise,
+.LayoutBase .LightTurquoise,
+.DesignSystem .LightTurquoise {
+  background-color: #c4f0eb; }
+
+.Page .White,
+.LayoutPopup .White,
+.LayoutBlank .White,
+.LayoutBase .White,
+.DesignSystem .White {
+  background-color: #ffffff; }
+
+.Page .Yellow,
+.LayoutPopup .Yellow,
+.LayoutBlank .Yellow,
+.LayoutBase .Yellow,
+.DesignSystem .Yellow {
+  background-color: #fbc02d; }
+
+.Page .BodyColor,
+.LayoutPopup .BodyColor,
+.LayoutBlank .BodyColor,
+.LayoutBase .BodyColor,
+.DesignSystem .BodyColor {
+  background-color: #f3f3f3; }
+
+.Page .SapphireBlue,
+.LayoutPopup .SapphireBlue,
+.LayoutBlank .SapphireBlue,
+.LayoutBase .SapphireBlue,
+.DesignSystem .SapphireBlue {
+  background-color: #2a5a6e; }
+
+.Page .SapphireBlue2,
+.LayoutPopup .SapphireBlue2,
+.LayoutBlank .SapphireBlue2,
+.LayoutBase .SapphireBlue2,
+.DesignSystem .SapphireBlue2 {
+  background-color: #00bfa5; }
+
+.Page .SapphireClinician,
+.Page .clinicianBackground-bg,
+.LayoutPopup .SapphireClinician,
+.LayoutPopup .clinicianBackground-bg,
+.LayoutBlank .SapphireClinician,
+.LayoutBlank .clinicianBackground-bg,
+.LayoutBase .SapphireClinician,
+.LayoutBase .clinicianBackground-bg,
+.DesignSystem .SapphireClinician,
+.DesignSystem .clinicianBackground-bg {
+  background-color: #d6d6d6; }
+
+.Page .SapphireDarkBlue1,
+.LayoutPopup .SapphireDarkBlue1,
+.LayoutBlank .SapphireDarkBlue1,
+.LayoutBase .SapphireDarkBlue1,
+.DesignSystem .SapphireDarkBlue1 {
+  background-color: #333333; }
+
+.Page .SapphireDarkBlue2,
+.LayoutPopup .SapphireDarkBlue2,
+.LayoutBlank .SapphireDarkBlue2,
+.LayoutBase .SapphireDarkBlue2,
+.DesignSystem .SapphireDarkBlue2 {
+  background-color: #30384a; }
+
+.Page .SapphireDarkGrey,
+.LayoutPopup .SapphireDarkGrey,
+.LayoutBlank .SapphireDarkGrey,
+.LayoutBase .SapphireDarkGrey,
+.DesignSystem .SapphireDarkGrey {
+  background-color: #858585; }
+
+.Page .SapphireDarkText,
+.LayoutPopup .SapphireDarkText,
+.LayoutBlank .SapphireDarkText,
+.LayoutBase .SapphireDarkText,
+.DesignSystem .SapphireDarkText {
+  background-color: #333333; }
+
+.Page .SapphireMale,
+.LayoutPopup .SapphireMale,
+.LayoutBlank .SapphireMale,
+.LayoutBase .SapphireMale,
+.DesignSystem .SapphireMale {
+  background-color: #194968; }
+
+.Page .SapphireFemale,
+.LayoutPopup .SapphireFemale,
+.LayoutBlank .SapphireFemale,
+.LayoutBase .SapphireFemale,
+.DesignSystem .SapphireFemale {
+  background-color: #ca2c92; }
+
+.Page .SapphireInactive,
+.LayoutPopup .SapphireInactive,
+.LayoutBlank .SapphireInactive,
+.LayoutBase .SapphireInactive,
+.DesignSystem .SapphireInactive {
+  background-color: #adadad; }
+
+.Page .SapphireLightBoard,
+.LayoutPopup .SapphireLightBoard,
+.LayoutBlank .SapphireLightBoard,
+.LayoutBase .SapphireLightBoard,
+.DesignSystem .SapphireLightBoard {
+  background-color: #d6d6d6; }
+
+.Page .SapphireLightContainer,
+.LayoutPopup .SapphireLightContainer,
+.LayoutBlank .SapphireLightContainer,
+.LayoutBase .SapphireLightContainer,
+.DesignSystem .SapphireLightContainer {
+  background-color: #ebebeb; }
+
+.Page .SapphireLightText,
+.LayoutPopup .SapphireLightText,
+.LayoutBlank .SapphireLightText,
+.LayoutBase .SapphireLightText,
+.DesignSystem .SapphireLightText {
+  background-color: #f3f3f3; }
+
+.Page .SapphireWarning,
+.LayoutPopup .SapphireWarning,
+.LayoutBlank .SapphireWarning,
+.LayoutBase .SapphireWarning,
+.DesignSystem .SapphireWarning {
+  background-color: #ff3e2d; }
+
+.tablet .BaseFont40,
+.BaseFont40 {
+  font-size: 40px; }
+  .tablet .BaseFont40 select,
+  .tablet .BaseFont40 a.Button,
+  .tablet .BaseFont40 .DropZoneContainer .row .Button,
+  .DropZoneContainer .row .tablet .BaseFont40 .Button,
+  .tablet .BaseFont40 input[type],
+  .BaseFont40 select,
+  .BaseFont40 a.Button,
+  .BaseFont40 .DropZoneContainer .row .Button,
+  .DropZoneContainer .row .BaseFont40 .Button,
+  .BaseFont40 input[type] {
+    font-size: 40px;
+    line-height: normal;
+    min-height: 80px; }
+  
+  .tablet .BaseFont40 a.Button,
+  .tablet .BaseFont40 .DropZoneContainer .row .Button,
+  .DropZoneContainer .row .tablet .BaseFont40 .Button,
+  .BaseFont40 a.Button,
+  .BaseFont40 .DropZoneContainer .row .Button,
+  .DropZoneContainer .row .BaseFont40 .Button {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box !important;
+    display: flex !important;
+    height: auto !important;
+    -webkit-box-pack: center;
+            justify-content: center;
+    line-height: 1.1em !important;
+    white-space: unset !important; }
+  .tablet .BaseFont40.container,
+  .BaseFont40.container {
+    margin-bottom: 10px; }
+  .tablet .BaseFont40 .SegmentedControl,
+  .BaseFont40 .SegmentedControl {
+    font-size: 1em; }
+    .tablet .BaseFont40 .SegmentedControl .SegmentedControlItem,
+    .BaseFont40 .SegmentedControl .SegmentedControlItem {
+      font-size: 1em; }
+      .tablet .BaseFont40 .SegmentedControl .SegmentedControlItem label,
+      .BaseFont40 .SegmentedControl .SegmentedControlItem label {
+        line-height: unset; }
 
 .CardAll {
   display: table; }
@@ -28492,76 +28570,74 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   white-space: nowrap;
   width: 185px; }
 
-.SmallContainer {
+.Card .Gallery .GalleryWrapper {
+  margin: 0; }
+  .Card .Gallery .GalleryWrapper span:first-child {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap; }
+    .Card .Gallery .GalleryWrapper span:first-child .GalleryItem {
+      display: block;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 10px; }
+      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem:nth-child(even) {
+        padding-left: 5px; }
+      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem:nth-child(odd) {
+        padding-right: 5px; }
+      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem > div > div {
+        width: 100%; }
+      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem .RoomBox {
+        margin: 0; }
+
+.GraphStructure {
   -webkit-box-align: center;
           align-items: center;
-  background-color: #ffffff;
-  border: 1px solid #d6d6d6;
-  border-radius: 2px;
   display: -webkit-box;
   display: flex;
-  height: 75px;
-  padding: 5px;
-  padding-left: 20px;
-  position: relative; }
-  .SmallContainer .icon-doctor {
-    color: #5c5c5c; }
-  .SmallContainer .CardAll {
-    display: -webkit-box;
-    display: flex; }
-    .SmallContainer .CardAll > span.verticalAlignHelper.Middle {
-      display: none; }
+  -webkit-box-pack: center;
+          justify-content: center; }
+  .GraphStructure > div:first-child {
+    -webkit-box-flex: 1;
+            flex: 1;
+    -servicestudio-width: 30% !important; }
+    .GraphStructure > div:first-child div {
+      -servicestudio-width: 100% !important; }
+  .GraphStructure > div:last-child {
+    -servicestudio-background-color: #fff;
+    -webkit-box-flex: 5;
+            flex: 5;
+    margin-left: 20px;
+    padding: 0;
+    -servicestudio-width: 75% !important; }
+    .GraphStructure > div:last-child div {
+      -webkit-box-align: center;
+              align-items: center;
+      -servicestudio-background-color: #fff;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -servicestudio-width: 100% !important; }
 
-.SmallContainer .MultiArrowRight {
-  left: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 30%;
-  width: 10px; }
-
-.MultiArrowRight .SmallContainer_arrow {
-  background-color: #ffffff;
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 1px solid #d6d6d6;
-  border-top: 1px solid #d6d6d6;
+.tablet .GraphStructure > div,
+.phone .GraphStructure > div {
   display: block;
-  height: 20px;
-  left: -13px;
-  position: relative;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  width: 19px; }
-
-.SmallContainer .NoPlannedContainer {
-  background: #ffffff;
-  border: 1px solid #d6d6d6;
-  border-radius: 2px;
-  margin-left: 10px;
-  padding-left: 1px;
-  padding-right: 1px;
-  position: absolute;
-  right: 2px;
-  text: #111;
-  top: 28px; }
-
-.FA .SmallContainer .NoPlannedContainer,
-.AR .SmallContainer .NoPlannedContainer {
-  left: 2px;
-  right: auto; }
-
-.ArrowNotPlanned,
-.BackgroundNotPlanned {
-  background-color: #f7f4ef !important; }
-
-.tablet .SmallContainer {
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
   width: 100%; }
 
-.desktop.small .Icon_CardAll {
-  display: none; }
-
-.SmallContainer {
-  -servicestudio-background-color: #fff !important; }
+.Lab_Ready__Container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  max-width: 105px;
+  padding: 5px 10px;
+  padding-top: 5px; }
 
 .PatientDetailsLayout .PersonCard__content.PH a,
 .PatientDetailsLayout .PersonCard__content.PH .DoubleText,
@@ -28575,122 +28651,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title .DoubleText,
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title .Text_Note {
   color: #adadad; }
-
-.VerticalSeparatorHelper {
-  position: relative; }
-
-.VerticalSeparator:after {
-  border-left: 1.9px solid #d6d6d6;
-  bottom: 0;
-  content: ' ';
-  top: 0;
-  margin: 0px 8px;
-  position: absolute; }
-
-.VerticalSeparatorBefore {
-  border-left: 1.9px solid #d6d6d6;
-  bottom: 0;
-  content: ' ';
-  top: 0;
-  margin-left: 7.5px !important;
-  padding-left: 7.5px; }
-
-.AR .VerticalSeparatorBefore {
-  border-left: none;
-  margin-right: 7.5px !important;
-  padding-right: 7.5px;
-  border-left: 1.9px solid #d6d6d6;
-  bottom: 0;
-  content: ' ';
-  top: 0;
-  margin-left: 7.5px !important;
-  padding-left: 7.5px; }
-
-.CardPatientInfo + .ListRecords .PatientInfo {
-  border-left: none;
-  border-right: none; }
-  .CardPatientInfo + .ListRecords .PatientInfo:last-of-type {
-    border-bottom: none; }
-
-.CardPatientInfo {
-  background-color: transparent;
-  display: table;
-  min-height: 25px;
-  width: 100%; }
-
-.CardPatientInfo_left {
-  display: table-cell;
-  padding: 10px;
-  vertical-align: middle;
-  width: 41%; }
-
-.tablet .CardPatientInfo_left {
-  width: 32%; }
-
-.CardPatientInfo_left .PatientInfo_Text {
-  margin-left: 10px;
-  margin-right: auto; }
-
-.CardPatientInfo_left .PatientInfo_Text {
-  margin-left: auto;
-  margin-right: 10px; }
-
-.CardPatientInfo_right {
-  display: table;
-  padding: 10px;
-  vertical-align: middle;
-  width: 100%; }
-
-.CardPatientInfo_right > div {
-  -webkit-box-align: center;
-          align-items: center;
-  display: table-cell; }
-
-/*Left Side Size*/
-.CardPatientInfo_left.ExtraTiny {
-  width: 50px; }
-
-.CardPatientInfo_left.Tiny {
-  width: 100px; }
-
-.CardPatientInfo_left.ExtraSmall {
-  width: 150px; }
-
-.CardPatientInfo_left.Small {
-  width: 200px; }
-
-.CardPatientInfo_left.SmallMedium {
-  width: 250px; }
-
-.CardPatientInfo_left.Medium {
-  width: 300px; }
-
-.CardPatientInfo_left.MediumLarge {
-  width: 350px; }
-
-.tablet .CardPatientInfo_left.MediumLarge {
-  width: 250px; }
-
-.CardPatientInfo_left.Large {
-  width: 400px; }
-
-.CardPatientInfo_left.ExtraLarge {
-  width: 450px; }
-
-.CardPatientInfo_left.Gigantic {
-  width: 500px; }
-
-.CardPatientInfo_left.ExtraGigantic {
-  width: 550px; }
-
-.CardPatientInfo_left.Colossal {
-  width: 600px; }
-
-.tablet .CardPatientInfo_right > div {
-  flex-wrap: nowrap; }
-
-.tablet .CardPatientInfo_right > div:first-child {
-  margin-left: 0; }
 
 input.os-internal-ui-autocomplete-loading {
   cursor: progress; }
@@ -28824,90 +28784,106 @@ ul.os-internal-ui-autocomplete {
 .SessionList_Content .SessionList_Header {
   border: none; }
 
-.Card .Gallery .GalleryWrapper {
-  margin: 0; }
-  .Card .Gallery .GalleryWrapper span:first-child {
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap; }
-    .Card .Gallery .GalleryWrapper span:first-child .GalleryItem {
-      display: block;
-      margin: 0;
-      padding: 0;
-      padding-bottom: 10px; }
-      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem:nth-child(even) {
-        padding-left: 5px; }
-      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem:nth-child(odd) {
-        padding-right: 5px; }
-      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem > div > div {
-        width: 100%; }
-      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem .RoomBox {
-        margin: 0; }
-
-.Lab_Ready__Container {
+.SmallContainer {
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 2px;
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: end;
-          justify-content: flex-end;
-  max-width: 105px;
-  padding: 5px 10px;
-  padding-top: 5px; }
-
-.PatientStatus_Container {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: end;
-          justify-content: flex-end; }
-  .PatientStatus_Container > div {
-    -webkit-box-align: center;
-            align-items: center;
+  height: 75px;
+  padding: 5px;
+  padding-left: 20px;
+  position: relative; }
+  .SmallContainer .icon-doctor {
+    color: #5c5c5c; }
+  .SmallContainer .CardAll {
     display: -webkit-box;
     display: flex; }
+    .SmallContainer .CardAll > span.verticalAlignHelper.Middle {
+      display: none; }
 
-.tablet .BaseFont40,
-.BaseFont40 {
-  font-size: 40px; }
-  .tablet .BaseFont40 select,
-  .tablet .BaseFont40 a.Button,
-  .tablet .BaseFont40 .DropZoneContainer .row .Button,
-  .DropZoneContainer .row .tablet .BaseFont40 .Button,
-  .tablet .BaseFont40 input[type],
-  .BaseFont40 select,
-  .BaseFont40 a.Button,
-  .BaseFont40 .DropZoneContainer .row .Button,
-  .DropZoneContainer .row .BaseFont40 .Button,
-  .BaseFont40 input[type] {
-    font-size: 40px;
-    line-height: normal;
-    min-height: 80px; }
-  
-  .tablet .BaseFont40 a.Button,
-  .tablet .BaseFont40 .DropZoneContainer .row .Button,
-  .DropZoneContainer .row .tablet .BaseFont40 .Button,
-  .BaseFont40 a.Button,
-  .BaseFont40 .DropZoneContainer .row .Button,
-  .DropZoneContainer .row .BaseFont40 .Button {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box !important;
-    display: flex !important;
-    height: auto !important;
-    -webkit-box-pack: center;
-            justify-content: center;
-    line-height: 1.1em !important;
-    white-space: unset !important; }
-  .tablet .BaseFont40.container,
-  .BaseFont40.container {
-    margin-bottom: 10px; }
-  .tablet .BaseFont40 .SegmentedControl,
-  .BaseFont40 .SegmentedControl {
-    font-size: 1em; }
-    .tablet .BaseFont40 .SegmentedControl .SegmentedControlItem,
-    .BaseFont40 .SegmentedControl .SegmentedControlItem {
-      font-size: 1em; }
-      .tablet .BaseFont40 .SegmentedControl .SegmentedControlItem label,
-      .BaseFont40 .SegmentedControl .SegmentedControlItem label {
-        line-height: unset; }
+.SmallContainer .MultiArrowRight {
+  left: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 30%;
+  width: 10px; }
+
+.MultiArrowRight .SmallContainer_arrow {
+  background-color: #ffffff;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
+  display: block;
+  height: 20px;
+  left: -13px;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 19px; }
+
+.SmallContainer .NoPlannedContainer {
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 2px;
+  margin-left: 10px;
+  padding-left: 1px;
+  padding-right: 1px;
+  position: absolute;
+  right: 2px;
+  text: #111;
+  top: 28px; }
+
+.FA .SmallContainer .NoPlannedContainer,
+.AR .SmallContainer .NoPlannedContainer {
+  left: 2px;
+  right: auto; }
+
+.ArrowNotPlanned,
+.BackgroundNotPlanned {
+  background-color: #f7f4ef !important; }
+
+.tablet .SmallContainer {
+  width: 100%; }
+
+.desktop.small .Icon_CardAll {
+  display: none; }
+
+.SmallContainer {
+  -servicestudio-background-color: #fff !important; }
+
+.VerticalSeparatorHelper {
+  position: relative; }
+
+.VerticalSeparator:after {
+  border-left: 1.9px solid #d6d6d6;
+  bottom: 0;
+  content: ' ';
+  top: 0;
+  margin: 0px 8px;
+  position: absolute; }
+
+.VerticalSeparatorBefore {
+  border-left: 1.9px solid #d6d6d6;
+  bottom: 0;
+  content: ' ';
+  top: 0;
+  margin-left: 7.5px !important;
+  padding-left: 7.5px; }
+
+.AR .VerticalSeparatorBefore {
+  border-left: none;
+  margin-right: 7.5px !important;
+  padding-right: 7.5px;
+  border-left: 1.9px solid #d6d6d6;
+  bottom: 0;
+  content: ' ';
+  top: 0;
+  margin-left: 7.5px !important;
+  padding-left: 7.5px; }
 
 .ListRecords .AvailabilityCardContainer {
   border-bottom: none; }
