@@ -1,0 +1,110 @@
+.CardPatientInfo {
+	background-color: transparent;
+	display: table;
+	min-height: 25px;
+	width: 100%;
+
+	+ .ListRecords {
+		.PatientInfo {
+			border-left: none;
+			border-right: none;
+			&:last-of-type {
+				border-bottom: none;
+			}
+		}
+	}
+
+	&_left {
+		display: table-cell;
+		padding: 10px;
+		vertical-align: middle;
+		width: 41%;
+
+		&.ExtraTiny {
+			width: 50px;
+		}
+
+		&.Tiny {
+			width: 100px;
+		}
+
+		&.ExtraSmall {
+			width: 150px;
+		}
+
+		&.Small {
+			width: 200px;
+		}
+
+		&.SmallMedium {
+			width: 250px;
+		}
+
+		&.Medium {
+			width: 300px;
+		}
+
+		&.MediumLarge {
+			width: 350px;
+		}
+
+		&.Large {
+			width: 400px;
+		}
+
+		&.ExtraLarge {
+			width: 450px;
+		}
+
+		&.Gigantic {
+			width: 500px;
+		}
+
+		&.ExtraGigantic {
+			width: 550px;
+		}
+
+		&.Colossal {
+			width: 600px;
+		}
+
+		.PatientInfo_Text {
+			margin-left: 10px;
+			margin-right: auto;
+		}
+	}
+
+	&_right {
+		display: table;
+		padding: 10px;
+		vertical-align: middle;
+		width: 100%;
+
+		> div {
+			align-items: center;
+			display: table-cell;
+		}
+	}
+}
+
+.tablet {
+	.CardPatientInfo {
+		&_left {
+			width: 32%;
+
+			&.MediumLarge {
+				width: 250px;
+			}
+		}
+
+		&_right {
+			> div {
+				flex-wrap: nowrap;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
