@@ -1,4 +1,4 @@
-/*! Version: 5.0.900028 || Generated: Mon Jun 29 2020 09:55:54 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900029 || Generated: Mon Jun 29 2020 10:22:44 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -8717,6 +8717,34 @@ a.Button.IsDefault,
       position: absolute;
       top: -9px;
       width: 1px; }
+
+.RelatedOrdersTable {
+  background-color: #f3f3f3;
+  display: table;
+  width: 100%; }
+  .RelatedOrdersTable .RelatedOrders_content {
+    border-bottom: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+    display: table-cell; }
+    .RelatedOrdersTable .RelatedOrders_content:last-child {
+      border-right: 1px solid #d6d6d6; }
+  .RelatedOrdersTable .RelatedOrders__title {
+    border-top: 1px solid #d6d6d6;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px; }
+  .RelatedOrdersTable .RelatedOrders__value {
+    border-top: 1px solid #d6d6d6;
+    padding: 10px; }
+    .RelatedOrdersTable .RelatedOrders__value.NoValue {
+      color: #858585;
+      font-size: 0.857em;
+      font-style: italic; }
+  .RelatedOrdersTable .RelatedOrders___info {
+    color: #858585;
+    font-size: 0.857em;
+    margin-top: 10px; }
 
 .LayoutBlank .SectionExpandable,
 .LayoutBase .SectionExpandable {
@@ -39193,40 +39221,6 @@ span.select2-container.select2-container--default.select2-container--open {
           transform: scale(-1, 1); }
 
 /* 9.162 Sapphire Patterns > Related Orders Table CSS */
-.RelatedOrdersTable {
-  background-color: #f1f1f1;
-  display: table;
-  width: 100%; }
-
-.RelatedOrders_content {
-  border-bottom: 1px solid #c5c5c5;
-  border-bottom: 1px solid #c5c5c5;
-  border-left: 1px solid #c5c5c5;
-  display: table-cell; }
-
-.RelatedOrders_content:last-child {
-  border-right: 1px solid #c5c5c5; }
-
-.RelatedOrders__title {
-  border-top: 1px solid #c5c5c5;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px; }
-
-.RelatedOrders__value {
-  border-top: 1px solid #c5c5c5;
-  padding: 10px; }
-
-.RelatedOrders___info {
-  color: #7c7f7f;
-  font-size: 12px;
-  margin-top: 10px; }
-
-.RelatedOrders__value.NoValue {
-  color: #7c7f7f;
-  font-size: 12px;
-  font-style: italic; }
-
 /* 9.163 Sapphire Patterns > SessionList */
 /*** 9.164 Sapphire Patterns > MultiSelect ** /
 /**
