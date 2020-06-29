@@ -1,0 +1,42 @@
+.RelatedOrdersTable {
+	background-color: $body-color;
+	display: table;
+	width: 100%;
+
+	.RelatedOrders {
+		&_content {
+			border-bottom: 1px solid $light-grey;
+			border-bottom: 1px solid $light-grey;
+			border-left: 1px solid $light-grey;
+			display: table-cell;
+
+			&:last-child {
+				border-right: 1px solid $light-grey;
+			}
+		}
+
+		&__title {
+			border-top: 1px solid $light-grey;
+			font-size: 16px;
+			font-weight: bold;
+			padding: 10px;
+		}
+
+		&__value {
+			border-top: 1px solid $light-grey;
+			padding: 10px;
+
+			&.NoValue {
+				color: $regular-grey;
+				font-size: 0.857em;
+				font-style: italic;
+			}
+		}
+
+		&___info {
+			color: $regular-grey;
+			font-size: 0.857em;
+			margin-top: 10px;
+		}
+	}
+}
