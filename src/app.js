@@ -1,3 +1,4 @@
+require('dotenv').config();
 require('./components/index.scss');
 
 //Import all JS files

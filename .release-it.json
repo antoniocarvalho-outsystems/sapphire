@@ -6,7 +6,8 @@
 		"publish": false
 	},
 	"github": {
-		"release": true
+		"release": true,
+		"tokenRef": "process.env.GITHUB_TOKEN"
 	},
 	"hooks": {
 		"after:bump": "npm run new:build"
