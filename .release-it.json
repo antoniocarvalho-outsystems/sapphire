@@ -6,8 +6,6 @@
 		"publish": false
 	},
 	"github": {
-		"release": true,
-		"releaseName": "%s",
-		"tokenRef": "GITHUB_TOKEN"
+		"release": true
 	}
 }
