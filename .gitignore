@@ -5,3 +5,4 @@ dist/*
 !dist/prod.app.*
 !dist/prod.styleguide.*
 GB/*
+.env

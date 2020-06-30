@@ -4,5 +4,10 @@
 	},
 	"npm": {
 		"publish": false
+	},
+	"github": {
+		"release": true,
+		"releaseName": "%s",
+		"tokenRef": "GITHUB_TOKEN"
 	}
 }

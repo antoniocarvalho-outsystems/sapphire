@@ -7,7 +7,7 @@
 		"dev": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js",
 		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
 		"new:build": "npm run prod && git add . && git commit -m \"New Release\" --allow-empty && git push origin master",
-		"release:patch": "npm run new:build && release-it patch --ci && git push origin master",
+		"release:patch": "npm run new:build && dotenv release-it patch --ci",
 		"release:minor": "release-it minor --git.requireBranch=master && npm run new:build",
 		"release:major": "release-it major --git.requireBranch=master && npm run new:build"
 	},
@@ -17,6 +17,7 @@
 		"autoprefixer": "^9.7.4",
 		"clean-webpack-plugin": "^3.0.0",
 		"css-loader": "^3.4.2",
+		"dotenv-cli": "^3.2.0",
 		"eslint": "^6.8.0",
 		"eslint-config-prettier": "^6.9.0",
 		"eslint-plugin-prettier": "^3.1.2",
