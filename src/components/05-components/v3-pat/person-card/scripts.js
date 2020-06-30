@@ -1,7 +1,7 @@
 /* Component PersonCard */
 $(document).ready(function() {
 	var PersonCardEvent = function() {
-		$('.PersonCard__title, .PersonCard__content')
+		$('.IsExpandable .PersonCard__title, .IsExpandable .PersonCard__content')
 			.off('click')
 			.on('click', function() {
 				$header = $(this).closest('.PersonCard_header');
