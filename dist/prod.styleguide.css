@@ -1,4 +1,4 @@
-/*! Version: 5.0.900040 || Generated: Tue Jun 30 2020 11:11:25 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900041 || Generated: Tue Jun 30 2020 11:15:27 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 body {
   background-color: #fff !important;
@@ -413,7 +413,7 @@ body {
       .DesignSystem__HomeHeader *[ui='header-info'] *[ui='header-subtitle'] {
         font-size: 1.5em;
         margin-top: 20px; }
-  .DesignSystem__CardsContent123 {
+  .DesignSystem__CardsContent {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
