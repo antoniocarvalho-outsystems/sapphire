@@ -11,9 +11,23 @@
 				init: function() {
 					let prevFile;
 
+					const filesList = config.filesList ? config.filesList.split(',') : [];
+
+					for (const item of filesList) {
+						const mockFile = { name: item, size: 12345678 };
+
+						this.emit('addedfile', mockFile);
+						this.emit('complete', mockFile);
+						this.files.push(mockFile);
+
+						$(`${config.hiddenInputContainer} .dz-filename`).attr('title', item);
+
+						prevFile = mockFile;
+					}
+
 					if (+config.maxFiles === 1 && config.isReplacePrevious) {
 						this.on('addedfile', function() {
-							if (typeof prevFile !== undefined) {
+							if (prevFile !== undefined) {
 								this.removeFile(prevFile);
 							}
 						});
