@@ -1,0 +1,216 @@
+.DropZoneWrapper {
+	display: inline;
+
+	.dropzone {
+		background: $regular-white;
+		border: 1px dashed $light-grey;
+		border-radius: 5px;
+		min-height: 80px;
+		padding: 0;
+		padding-top: 24px;
+
+		&.dz-started {
+			.dz-message {
+				display: inline-block;
+				height: 100%;
+				margin: 0 5px;
+				position: relative;
+				right: 0;
+				top: 0px;
+				z-index: 50;
+			}
+		}
+
+		.dz-message {
+			font-size: 1.429em;
+			margin: 0;
+			text-align: center;
+			width: 100%;
+		}
+
+		.dz-preview {
+			height: 100%;
+			line-height: 34px;
+			margin: 0;
+			min-height: 34px;
+			text-align: right;
+			vertical-align: middle;
+			width: 100%;
+			z-index: 1;
+
+			&.dz-file-preview {
+				.dz-details {
+					opacity: 0;
+				}
+			}
+
+			// &:hover {
+			// 	.dz-details {
+			// 		opacity: 0;
+			// 	}
+			// }
+
+			.dz-details {
+				line-height: 20px;
+				opacity: 1;
+				padding: 0;
+				position: static;
+
+				.dz-size {
+					display: none;
+				}
+
+				.dz-filename {
+					display: inline-block;
+					height: auto;
+					line-height: initial;
+					margin: 0 5px;
+					max-width: 150px;
+					overflow: hidden;
+					padding: 0;
+					text-overflow: ellipsis;
+					vertical-align: middle;
+
+					span {
+						height: auto;
+						line-height: initial;
+						margin: 0 5px;
+						padding: 0;
+					}
+				}
+			}
+
+			.dz-image {
+				display: none;
+			}
+
+			.dz-progress {
+				background: $regular-zeta;
+				border: 1px solid $regular-beta;
+				border-radius: 4px;
+				height: 10px;
+				top: 20px;
+				width: 120px;
+
+				.dz-upload {
+					background: $regular-beta;
+					height: 10px;
+				}
+			}
+
+			.dz-error-mark,
+			.dz-success-mark,
+			.dz-error-message {
+				display: none;
+			}
+
+			.dz-success.dz-complete {
+				display: none;
+			}
+		}
+	}
+}
+
+// Icon + Label Styles
+.FileUploadDropZone {
+	display: inline-block;
+	height: auto;
+	padding: 0 2px;
+	position: relative;
+
+	.dropzone {
+		background: transparent;
+		border: none;
+
+		&.dz-started {
+			.dz-default.dz-message {
+				&:after {
+					display: block;
+					font-size: 12px;
+					margin-top: 4px;
+				}
+			}
+		}
+
+		&.dz-clickable {
+			line-height: unset;
+			min-height: 0;
+			padding-bottom: 4px;
+			padding-top: 0px;
+
+			div.dz-default.dz-message {
+				display: inline-flex;
+				justify-content: center;
+				margin: 0;
+
+				.dz-button {
+					display: none;
+				}
+			}
+		}
+
+		.dz-message {
+			font-size: 1em;
+			font-weight: 400;
+			text-align: right;
+
+			&.dz-message {
+				&:before {
+					color: $regular-beta;
+					content: '\e931';
+					display: block;
+					font-family: $font-family-icons;
+					font-size: 1em;
+					-webkit-font-smoothing: antialiased;
+					font-style: normal;
+					font-variant: normal;
+					font-weight: normal;
+					line-height: 1;
+					margin-top: 2px;
+					text-align: right;
+					text-transform: none;
+				}
+
+				&:after {
+					display: block;
+				}
+
+				&:hover:before {
+					color: $regular-beta;
+				}
+
+				.dz-button {
+					display: none;
+				}
+			}
+		}
+
+		.dz-preview {
+			display: none;
+		}
+	}
+
+	.UploadMessageClass {
+		bottom: 2px;
+		color: $regular-beta;
+		cursor: pointer;
+		font-family: $font-family-latin-bold;
+		font-size: 1em;
+		line-height: 20px;
+	}
+
+	.DarkGreyLabel .UploadMessageClass {
+		color: $dark-grey;
+	}
+}
+
+.AR,
+.FA {
+	// Icon + Label Styles
+	.FileUploadDropZone {
+		.dropzone .dz-default.dz-message:before {
+			margin-left: 28px;
+			text-align: left;
+		}
+	}
+}
