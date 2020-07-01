@@ -91,13 +91,12 @@
 		color: $regular-white;
 		flex-direction: column;
 		font-family: $font-family-latin-bold;
-		font-size: 1.429em;
 		width: 130px;
 	}
 
 	&___day_month {
 		display: flex;
-		font-size: 20px;
+		font-size: 1.143em;
 		justify-content: center;
 		width: 100%;
 	}
@@ -127,7 +126,7 @@
 
 	&____desktopIcon {
 		color: $regular-white;
-		font-size: 0.7em;
+		font-size: 1.071em;
 	}
 
 	&____desktopLabel {
