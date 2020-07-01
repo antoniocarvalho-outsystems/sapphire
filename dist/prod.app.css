@@ -1,4 +1,4 @@
-/*! Version: 5.0.900044 || Generated: Wed Jul 01 2020 16:23:47 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900045 || Generated: Wed Jul 01 2020 16:40:47 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -8020,12 +8020,11 @@ a.Button.IsDefault,
     -webkit-box-direction: normal;
             flex-direction: column;
     font-family: "LatoBold";
-    font-size: 1.429em;
     width: 130px; }
   .Page .LineTimeLine___day_month {
     display: -webkit-box;
     display: flex;
-    font-size: 20px;
+    font-size: 1.143em;
     -webkit-box-pack: center;
             justify-content: center;
     width: 100%; }
@@ -8049,7 +8048,7 @@ a.Button.IsDefault,
     margin-right: 3px; }
   .Page .LineTimeLine____desktopIcon {
     color: #fff;
-    font-size: 0.7em; }
+    font-size: 1.071em; }
   .Page .LineTimeLine____desktopLabel {
     font-family: "LatoBold";
     font-size: 1.429em;
