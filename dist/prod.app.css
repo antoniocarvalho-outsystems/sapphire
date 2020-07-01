@@ -1,4 +1,4 @@
-/*! Version: 5.0.900043 || Generated: Wed Jul 01 2020 15:43:22 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900044 || Generated: Wed Jul 01 2020 16:23:47 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15333,8 +15333,9 @@ body.PanelOpened .daterangepicker {
     font-family: "LatoBold";
     font-size: 1em;
     line-height: 20px; }
-  .FileUploadDropZone .DarkGreyLabel .UploadMessageClass {
-    color: #333333; }
+
+.DarkGreyLabel .UploadMessageClass {
+  color: #333333; }
 
 .AR .FileUploadDropZone .dropzone .dz-default.dz-message:before,
 .FA .FileUploadDropZone .dropzone .dz-default.dz-message:before {
