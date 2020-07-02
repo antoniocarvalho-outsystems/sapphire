@@ -211,6 +211,7 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 
 .MainInteractiveCard-header-text-subtitle {
   color: $MainInteractiveCard-color-subtitle;
+  display: contents;
   font-size: 1em;
 }
 

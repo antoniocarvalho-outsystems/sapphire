@@ -1,4 +1,4 @@
-/*! Version: 5.0.900046 || Generated: Thu Jul 02 2020 18:40:13 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900046 || Generated: Thu Jul 02 2020 18:42:44 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9798,6 +9798,9 @@ a.Button.IsDefault,
   margin-right: auto; }
 
 /* Layout Components */
+.ViewStateCounter {
+  pointer-events: all !important; }
+
 .LayoutBase-padding {
   padding: 16px; }
 
@@ -18099,6 +18102,7 @@ div.ui-timepicker-container {
 
 .MainInteractiveCard-header-text-subtitle {
   color: #5c5c5c;
+  display: contents;
   font-size: 1em; }
 
 .MainInteractiveCard-header-text-caption {
