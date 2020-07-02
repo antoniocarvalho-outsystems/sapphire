@@ -1,4 +1,4 @@
-/*! Version: 5.0.900045 || Generated: Wed Jul 01 2020 16:40:47 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900046 || Generated: Thu Jul 02 2020 18:40:13 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 body {
   background-color: #fff !important;
@@ -495,6 +495,23 @@ body {
   .DesignSystem__NewsContent {
     margin-top: 100px;
     padding: 0 50px; }
+  .DesignSystem__InputContainer {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    border: 1px solid #ebebeb;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding: 24px;
+    position: relative; }
+  .DesignSystem__TooltipContainer {
+    position: absolute;
+    right: 4px;
+    top: 4px; }
   .DesignSystem .Section {
     margin-bottom: 150px; }
 
