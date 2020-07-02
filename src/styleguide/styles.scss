@@ -641,6 +641,22 @@ $styleguide-main-content-padding: 50px;
 		padding: 0 50px;
 	}
 
+	// JavascriptLIB Page
+	&__InputContainer {
+		@include flex-center-total;
+
+		border: 1px solid $sapphire-light;
+		flex-direction: column;
+		padding: 24px;
+		position: relative;
+	}
+
+	&__TooltipContainer {
+		position: absolute;
+		right: 4px;
+		top: 4px;
+	}
+
 	.Section {
 		margin-bottom: 150px;
 	}
