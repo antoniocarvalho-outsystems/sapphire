@@ -1,4 +1,4 @@
-/*! Version: 5.0.900050 || Generated: Fri Jul 03 2020 12:52:02 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900051 || Generated: Fri Jul 03 2020 13:04:25 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -204,7 +204,7 @@ eval("/* Component CompLine */\r\n(function($, window, SapphireWidgets) {\r\n\tf
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component CountryPhone */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\tconst $element = document.querySelector(`#${config.widgetId}`);\r\n\r\n\t\tconst countryPhoneInput = window.intlTelInput($element, {\r\n\t\t\tinitialCountry: config.initialCountry,\r\n\t\t\tpreferredCountries: preferedCountries,\r\n\t\t\tseparateDialCode: config.separateDialCode,\r\n\t\t\tnationalMode: config.nationalMode,\r\n\t\t\tautoPlaceholder: config.autoPlaceholder ? 'polite' : false,\r\n\t\t\tformatOnDisplay: false,\r\n\t\t\tutilsScript: '/V3_Pat/js/utils.js',\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.CountryPhone = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\r\n/*\"\r\nvar countryPhone_\" + PhoneInput + \" = document.querySelector('#\" + PhoneInput + \"');\r\n\r\nvar input_\" + PhoneInput + \" = window.intlTelInput(countryPhone_\" + PhoneInput + \", {\r\n    initialCountry:'\" + EncodeJavaScript(initialCountry) + \"',\r\n    \" + If(Trim(preferedCountries)=\"\",\"\",\"preferredCountries:  \" + preferedCountries + \" ,\") + \"\r\n    separateDialCode: \" + If(separateDialCode,\"true\", \"false\") + \",\r\n    nationalMode: \" + If(nationalMode,\"true\", \"false\") + \",\r\n    autoPlaceholder: \" + If(autoPlaceholder,\"polite\", \"false\") + \",\r\n    formatOnDisplay: false,\r\n    utilsScript: '/V3_Pat/js/utils.js' // just for formatting/placeholders etc\r\n});\r\n\r\n\"*/\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/country-phone/scripts.js?");
+eval("/* Component CountryPhone */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\tconst $element = document.querySelector(`#${config.widgetId}`);\r\n\r\n\t\tconst countryPhoneInput = window.intlTelInput($element, {\r\n\t\t\tinitialCountry: config.initialCountry,\r\n\t\t\tpreferedCountries: config.preferedCountries,\r\n\t\t\tseparateDialCode: config.separateDialCode,\r\n\t\t\tnationalMode: config.nationalMode,\r\n\t\t\tautoPlaceholder: config.autoPlaceholder ? 'polite' : false,\r\n\t\t\tformatOnDisplay: false,\r\n\t\t\tutilsScript: '/V3_Pat/js/utils.js',\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.CountryPhone = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/country-phone/scripts.js?");
 
 /***/ }),
 
