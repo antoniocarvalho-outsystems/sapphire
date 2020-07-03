@@ -2,6 +2,16 @@
   pointer-events: all !important;
 }
 
+.remote-trigger {
+  background: red;
+  bottom: 100px;
+  color: white;
+  height: 50px;
+  position: fixed;
+  right: 100px;
+  width: 100px;
+}
+
 .LayoutBase {
 
   &-padding {

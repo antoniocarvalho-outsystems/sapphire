@@ -81,57 +81,55 @@
 		this.$iframeSidebar.append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>');
 
 		$(function () {
+
 			$('body').addClass('LayoutBase');
+
 			if (_this.isTopWindow) {
 				$('body').css('overflow-y', 'scroll');
 			}
 
 
+			// if (!!localStorage.getItem('RemoteAppointment')) {
+			// 	var $div = $("<div>", {
+			// 		class: 'remote-trigger',
+			// 		text: 'Click for ongoing remote appointment...'
+			// 	});
+			// 	$("body").append($div);
+			// }
 
-			var isRemoteOpen = localStorage.getItem('RemoteAppointment');
+			// $('.remote-trigger').on('click', function () {
+			// 	let newWin = window.open('', 'remoteAppointment');
+			// });
 
-			if (!!isRemoteOpen) {
-				console.log('ready with remote');
-				var remoteAppointmentWindow = window.open('', 'remoteAppointment',
-					'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=50, height=100, top=100, left=100');
-				remoteAppointmentWindow.focus();
-
-				window.setInterval(function () {
-
-					if (!!localStorage.getItem('RemoteAppointment')) {
-						console.log(new Date());
-						window.open('', 'remoteAppointment');
-						remoteAppointmentWindow.focus();
-
-					}
-
-				}, 250);
-
-
-			}
-
-
-
-
-			$('.ViewStateCounter').on('click', function () {
-				var isRemoteOpen = localStorage.getItem('RemoteAppointment');
-				if (!!!isRemoteOpen) {
-					console.log('not is open');
-					remoteAppointmentWindow = SapphireWidgets.LayoutBase.popupWindow('//atc-dev.outsystemsenterprise.com/Sapphirev2_Th/RemoteAppointment.aspx', 'remoteAppointment', window, 300, 200);
-					remoteAppointmentWindow.focus();
-					window.setInterval(function () {
-						remoteAppointmentWindow.focus();
-					}, 500);
-					localStorage.setItem('RemoteAppointment', 'true');
-				}
-			});
-
+			// $('.ViewStateCounter').on('click', function () {
+			// 	if (!!!localStorage.getItem('RemoteAppointment')) {
+			// 		window.remoteAppointment = SapphireWidgets.LayoutBase.popupWindow('//atc-dev.outsystemsenterprise.com/Sapphirev2_Th/RemoteAppointment.aspx', 'remoteAppointment', window, 300, 200);
+			// 		window.remoteAppointment.focus();
+			// 		localStorage.setItem('RemoteAppointment', 'true');
+			// 	}
+			// });
 
 		});
+
 		$(window).load(function () {
 			$('body').click();
 			$(window).scroll();
+
+			// window.setTimeout(() => {
+			// 	if (!!localStorage.getItem('RemoteAppointment')) {
+			// 		console.log('new');
+			// 		let newWin = window.open('', 'remoteAppointment');
+			// 	}
+			// }, 3000);
+
+			// window.setTimeout(() => {
+			// 	console.log('trigger');
+			// 	$('.remote-trigger').trigger('click');
+			// }, 6000);
+
+
 		});
+
 	};
 
 	LayoutBase.prototype.setupWindowEvents = function () {
