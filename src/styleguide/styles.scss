@@ -649,12 +649,21 @@ $styleguide-main-content-padding: 50px;
 		flex-direction: column;
 		padding: 24px;
 		position: relative;
+
+		&:before {
+			background-color: $regular-white;
+			content: 'Options';
+			left: 10px;
+			padding: 0 12px;
+			position: absolute;
+			top: -9px;
+		}
 	}
 
 	&__TooltipContainer {
 		position: absolute;
-		right: 4px;
-		top: 4px;
+		right: 6px;
+		top: 6px;
 	}
 
 	.Section {
