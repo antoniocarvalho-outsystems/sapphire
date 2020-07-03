@@ -1,0 +1,11 @@
+.CountryPhone {
+	.iti-flag {
+		background-image: url('/V3_Pat/img/flags.png');
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.CountryPhone .iti-flag {
+		background-image: url('/V3_Pat/img/flags_2x.png');
+	}
+}

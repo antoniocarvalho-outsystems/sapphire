@@ -1,417 +1,438 @@
 @mixin common-toolbar-button-style($rotate-degree: 270deg) {
-  @include arrow-button;
+	@include arrow-button;
 
-  background-color: $regular-white;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate($rotate-degree);
+	background-color: $regular-white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate($rotate-degree);
 }
 
 div.Toolbar {
-  width: 100%;
+	width: 100%;
 
-  &--arrows {
-    div.Toolbar {
-      &_container {
+	&--arrows {
+		div.Toolbar {
+			&_container {
+				&:after,
+				&:before {
+					content: '';
+					display: inline-block;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					width: 50px;
+				}
 
-        &:after,
-        &:before {
-          content: '';
-          display: inline-block;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          width: 50px;
-        }
+				&:after {
+					background: linear-gradient(270deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
+					right: 0;
+				}
 
-        &:after {
-          background: linear-gradient(270deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
-          right: 0;
-        }
+				&:before {
+					background: linear-gradient(90deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
+					left: 0;
+					z-index: 1;
+				}
+			}
 
-        &:before {
-          background: linear-gradient(90deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
-          left: 0;
-          z-index: 1;
-        }
-      }
+			&__Items {
+				padding-left: 33px;
+				padding-right: 33px;
 
-      &__Items {
-        padding-left: 33px;
-        padding-right: 33px;
+				.ListRecords {
+					width: initial;
+				}
 
-        .ListRecords {
-          width: initial;
-        }
+				.MenuItemWrapper {
+					padding: 10px 20px 15px 20px;
 
-        .MenuItemWrapper {
-          padding: 10px 20px 15px 20px;
+					&__icon {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
 
-          &__icon {
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-  }
+	&_container {
+		background-color: $regular-white;
+		position: relative;
 
-  &_container {
-    background-color: $regular-white;
-    position: relative;
+		&--noarrows {
+			&:before {
+				display: none;
+			}
+		}
+	}
 
-    &--noarrows {
-      &:before {
-        display: none;
-      }
-    }
-  }
+	&__Items {
+		display: block;
+		overflow: hidden;
+		padding-top: 11px;
 
-  &__Items {
-    display: block;
-    overflow: hidden;
-    padding-top: 11px;
+		.ListRecords {
+			display: inline-flex;
+			width: 100%;
 
-    .ListRecords {
-      display: inline-flex;
-      width: 100%;
+			a .MenuItemWrapper {
+				border: 1px solid transparent;
+				border-bottom: 3px solid transparent;
+			}
 
-      a .MenuItemWrapper {
-        border: 1px solid transparent;
-        border-bottom: 3px solid transparent;
-      }
+			a:focus .MenuItemWrapper {
+				border: 1px solid $mid-light-grey;
+			}
 
-      a:focus .MenuItemWrapper {
-        border: 1px solid $mid-light-grey;
-      }
+			a[disabled] {
+				cursor: not-allowed;
 
-      a[disabled] {
-        cursor: not-allowed;
+				&:focus .MenuItemWrapper {
+					border-color: transparent;
+				}
 
-        &:focus .MenuItemWrapper {
-          border-color: transparent;
-        }
+				.MenuItemWrapper {
+					&:hover {
+						background-color: transparent;
+						border-bottom-color: transparent !important;
+					}
 
-        .MenuItemWrapper {
-          &:hover {
-            background-color: transparent;
-            border-bottom-color: transparent !important;
-          }
+					&_Container {
+						color: $light-grey;
+					}
+				}
+			}
+		}
+	}
 
-          &_Container {
-            color: $light-grey;
-          }
-        }
-      }
-    }
-  }
+	&__leftBtn {
+		@include common-toolbar-button-style;
 
-  &__leftBtn {
-    @include common-toolbar-button-style;
+		left: 5px;
+	}
 
-    left: 5px;
-  }
+	&__rightBtn {
+		@include common-toolbar-button-style(90deg);
 
-  &__rightBtn {
-    @include common-toolbar-button-style(90deg);
+		right: 5px;
+	}
 
-    right: 5px;
-  }
+	&__leftBtn.Disabled,
+	&__rightBtn.Disabled {
+		border: 1px solid $light-grey;
+		pointer-events: none;
 
-  &__leftBtn.Disabled,
-  &__rightBtn.Disabled {
-    border: 1px solid $light-grey;
-    pointer-events: none;
+		&:before {
+			color: $light-grey;
+		}
+	}
 
-    &:before {
-      color: $light-grey;
-    }
-  }
+	&__MoreOptions {
+		flex: 1;
+		margin: 0;
+		text-align: -webkit-right;
+		width: fit-content;
 
-  &__MoreOptions {
-    flex: 1;
-    margin: 0;
-    text-align: -webkit-right;
-    width: fit-content;
+		&--open {
+			.Toolbar__MoreOptionsIcon {
+				&::after {
+					border-bottom: 10px solid;
+					border-color: $regular-white;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					bottom: 0px;
+					content: '';
+					position: absolute;
+					z-index: 2;
+				}
 
-    &--open {
-      .Toolbar__MoreOptionsIcon {
-        &::after {
-          border-bottom: 10px solid;
-          border-color: $regular-white;
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          bottom: 0px;
-          content: '';
-          position: absolute;
-          z-index: 2;
-        }
+				span[ui='more-options-title'] {
+					color: transparent;
 
-        span[ui='more-options-title'] {
-          color: transparent;
+					&::after {
+						opacity: 1;
+					}
+				}
+			}
 
-          &::after {
-            opacity: 1;
-          }
-        }
-      }
+			.Toolbar__MoreOptionsList {
+				display: block;
+				min-width: 200px;
+				right: 0;
+				z-index: 2;
+			}
+		}
+	}
 
-      .Toolbar__MoreOptionsList {
-        display: block;
-        min-width: 200px;
-        right: 0;
-        z-index: 2;
-      }
-    }
-  }
+	&__MoreOptionsIcon {
+		@include flex-center-total();
 
-  &__MoreOptionsIcon {
-    @include flex-center-total();
+		background-color: $regular-eta;
+		color: $regular-beta;
+		cursor: pointer;
+		flex-direction: column;
+		height: 100%;
+		position: relative;
+		width: 80px;
 
-    background-color: $regular-eta;
-    color: $regular-beta;
-    cursor: pointer;
-    flex-direction: column;
-    height: 100%;
-    width: 80px;
+		&--notification {
+			&::before {
+				background-color: $regular-red;
+				border: 4px solid $regular-eta;
+				border-radius: 50%;
+				content: '';
+				height: 18px;
+				position: absolute;
+				right: 10px;
+				top: 5px;
+				width: 18px;
+			}
+		}
 
-    &:hover {
+		&:hover {
+			span[ui='more-options-title'] {
+				color: transparent;
 
-      span[ui='more-options-title'] {
-        color: transparent;
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
 
-        &::after {
-          opacity: 1;
-        }
-      }
+		span[ui='more-options-icon'],
+		span[ui='more-options-title'] {
+			transition: all 0.1s ease-in;
+		}
 
-    }
+		span[ui='more-options-title'] {
+			position: relative;
 
-    span[ui='more-options-icon'],
-    span[ui='more-options-title'] {
-      transition: all 0.1s ease-in;
-    }
+			&::after {
+				border-color: $regular-beta;
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+				border-top: 8px solid;
+				bottom: 0px;
+				color: $regular-beta;
+				content: '';
+				left: 50%;
+				opacity: 0;
+				position: absolute;
+				transform: translateX(-50%);
+				z-index: 2;
+			}
+		}
 
-    span[ui='more-options-title'] {
-      position: relative;
+		span[ui='more-options-icon'] {
+			margin-bottom: 7px;
+		}
+	}
 
-      &::after {
-        border-color: $regular-beta;
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        border-top: 8px solid;
-        bottom: 0px;
-        color: $regular-beta;
-        content: '';
-        left: 50%;
-        opacity: 0;
-        position: absolute;
-        transform: translateX(-50%);
-        z-index: 2;
-      }
-    }
+	&__MoreOptionsList {
+		@include component-scroll-root();
 
-    span[ui='more-options-icon'] {
-      margin-bottom: 7px;
-    }
-  }
+		background-color: $regular-white;
+		box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.2);
+		display: none;
+		max-height: 400px;
+		overflow: auto;
+		position: absolute;
 
-  &__MoreOptionsList {
-    @include component-scroll-root();
+		&::-webkit-scrollbar {
+			background-color: transparent;
+		}
 
-    background-color: $regular-white;
-    box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.2);
-    display: none;
-    max-height: 400px;
-    overflow: auto;
-    position: absolute;
+		&::-webkit-scrollbar {
+			width: 4px;
+		}
 
-    &::-webkit-scrollbar {
-      background-color: transparent;
-    }
+		a:focus .MenuItemWrapper {
+			border-color: transparent !important;
+		}
 
-    &::-webkit-scrollbar {
-      width: 4px;
-    }
+		.MenuItemWrapper {
+			border-bottom: none !important;
+			padding: 10px 45px 10px 20px;
 
-    a:focus .MenuItemWrapper {
-      border-color: transparent !important;
-    }
+			&:hover {
+				background-color: $regular-eta;
+				border-bottom: none !important;
+			}
 
-    .MenuItemWrapper {
-      border-bottom: none !important;
-      padding: 10px 45px 10px 20px;
+			&_Container {
+				display: flex;
+			}
 
-      &:hover {
-        background-color: $regular-eta;
-        border-bottom: none !important;
-      }
+			&__icon {
+				margin-bottom: 0;
+				margin-right: 10px;
 
-      &_Container {
-        display: flex;
-      }
+				.icon {
+					font-size: 1em;
+				}
+			}
 
-      &__icon {
-        margin-bottom: 0;
-        margin-right: 10px;
+			&__Label {
+				display: inline-block;
 
-        .icon {
-          font-size: 1em;
-        }
-      }
+				&::after {
+					display: none;
+				}
+			}
 
-      &__Label {
-        display: inline-block;
+			&_Badge {
+				right: 15px;
+				top: 10px;
+			}
+		}
+	}
 
-        &::after {
-          display: none;
-        }
-      }
+	&.Fix {
+		background-color: $regular-white;
+		border-bottom: 4px solid $light-grey;
+		left: 0;
+		margin-left: 10px;
+		position: fixed;
+		z-index: 4;
 
-      &_Badge {
-        right: 15px;
-        top: 10px;
-      }
-    }
-  }
+		.Toolbar__rightBtn {
+			right: 45px;
+		}
 
-  &.Fix {
-    background-color: $regular-white;
-    border-bottom: 4px solid $light-grey;
-    left: 0;
-    margin-left: 10px;
-    position: fixed;
-    z-index: 4;
+		.MenuItemWrapper {
+			padding-bottom: 1px;
+			padding-top: 4px;
 
-    .Toolbar__rightBtn {
-      right: 45px;
-    }
+			&__Label {
+				margin-top: 0;
+				padding: 6px 0;
+			}
 
-    .MenuItemWrapper {
-      padding-bottom: 1px;
-      padding-top: 4px;
+			&__Items {
+				padding-top: 2px;
+			}
 
-      &__Label {
-        margin-top: 0;
-        padding: 6px 0;
-      }
-
-      &__Items {
-        padding-top: 2px;
-      }
-
-      &__icon {
-        display: none;
-      }
-    }
-  }
+			&__icon {
+				display: none;
+			}
+		}
+	}
 }
 
 .MenuItemWrapper {
-  background-color: transparent;
-  border-bottom: 3px solid transparent;
-  padding: 11px 20px 6px 20px;
-  position: relative;
-  text-align: center;
-  transition: all 0.2s ease-in;
-  white-space: nowrap;
+	background-color: transparent;
+	border-bottom: 3px solid transparent;
+	padding: 11px 20px 6px 20px;
+	position: relative;
+	text-align: center;
+	transition: all 0.2s ease-in;
+	white-space: nowrap;
 
-  &:hover {
-    border-bottom: 3px solid $regular-alpha !important;
+	&:hover {
+		border-bottom: 3px solid $regular-alpha !important;
 
-    .MenuItemWrapper_Container {
-      color: $regular-beta;
-    }
-  }
+		.MenuItemWrapper_Container {
+			color: $regular-beta;
+		}
+	}
 
-  &.Active {
-    background-color: $body-color;
-    border-bottom: 3px solid $body-color;
-    border-radius: 4px 4px 0 0;
-    color: $regular-black;
+	&.Active {
+		background-color: $body-color;
+		border-bottom: 3px solid $body-color;
+		border-radius: 4px 4px 0 0;
+		color: $regular-black;
 
-    .MenuItemWrapper_Container {
-      color: $regular-black;
-    }
-  }
+		.MenuItemWrapper_Container {
+			color: $regular-black;
+		}
+	}
 
-  &_Container {
-    color: $mid-dark-grey;
-    transition: all 0.2s ease-in;
-  }
+	&_Container {
+		color: $mid-dark-grey;
+		transition: all 0.2s ease-in;
+	}
 
-  &__icon {
-    margin-bottom: 8px;
+	&__icon {
+		margin-bottom: 8px;
 
-    .icon {
-      font-size: 1.429em;
-    }
-  }
+		.icon {
+			font-size: 1.429em;
+		}
+	}
 
-  &__Label {
-    font-size: 1em;
-    font-weight: 400;
-  }
+	&__Label {
+		font-size: 1em;
+		font-weight: 400;
+	}
 
-  &_Badge {
-    background-color: $regular-red;
-    border-radius: 100%;
-    color: $regular-white;
-    font-size: 0.786em;
-    height: 18px;
-    line-height: 18px;
-    position: absolute;
-    right: 0;
-    top: 2px;
-    width: 18px;
-    z-index: 1;
-  }
+	&_Badge {
+		background-color: $regular-red;
+		border-radius: 100%;
+		color: $regular-white;
+		font-size: 0.786em;
+		height: 18px;
+		line-height: 18px;
+		position: absolute;
+		right: 0;
+		top: 2px;
+		width: 18px;
+		z-index: 1;
+	}
 }
 
 .AR,
 .FA {
-  .Toolbar {
-    &.Fix {
-      left: auto;
-      right: 0;
-    }
+	.Toolbar {
+		&.Fix {
+			left: auto;
+			right: 0;
+		}
 
-    &__MoreOptions {
-      &--open {
-        .Toolbar__MoreOptionsList {
-          left: 0;
-          right: unset;
-        }
-      }
+		&__MoreOptions {
+			&--open {
+				.Toolbar__MoreOptionsList {
+					left: 0;
+					right: unset;
+				}
+			}
 
-      .MenuItemWrapper {
-        &__Label {
-          &::after {
-            margin-left: 0;
-            margin-right: 8px;
-          }
-        }
-      }
-    }
+			.MenuItemWrapper {
+				&__Label {
+					&::after {
+						margin-left: 0;
+						margin-right: 8px;
+					}
+				}
+			}
+		}
 
-    &__MoreOptionsList {
-      .MenuItemWrapper {
-        padding: 10px 20px 10px 45px;
+		&__MoreOptionsIcon {
+			&--notification {
+				&::before {
+					left: 10px;
+					right: auto;
+				}
+			}
+		}
 
-        &__icon {
-          margin-left: 10px;
-          margin-right: 0;
-        }
+		&__MoreOptionsList {
+			.MenuItemWrapper {
+				padding: 10px 20px 10px 45px;
 
-        &_Badge {
-          left: 15px;
-          right: auto;
-        }
-      }
-    }
-  }
+				&__icon {
+					margin-left: 10px;
+					margin-right: 0;
+				}
 
-  .MenuItemWrapper_Badge {
-    left: 1px;
-    right: auto;
-  }
+				&_Badge {
+					left: 15px;
+					right: auto;
+				}
+			}
+		}
+	}
+
+	.MenuItemWrapper_Badge {
+		left: 1px;
+		right: auto;
+	}
 }
