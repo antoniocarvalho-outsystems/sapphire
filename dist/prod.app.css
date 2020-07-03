@@ -1,4 +1,4 @@
-/*! Version: 5.0.900051 || Generated: Fri Jul 03 2020 15:40:20 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.0.900052 || Generated: Fri Jul 03 2020 17:51:08 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -6980,6 +6980,105 @@ a.Button.IsDefault,
 .AR .AvailabilityCardRightDate div,
 .FA .AvailabilityCardRightDate div {
   text-align: left !important; }
+
+.BackToTopButton {
+  color: #009884;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  top: 90vh;
+  -webkit-transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out;
+  transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out; }
+  .BackToTopButton__Arrow {
+    border: none;
+    border-radius: 40px;
+    height: 0;
+    left: 50%;
+    margin-top: -35px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out 0.25s, opacity ease-in-out 1s;
+    transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out 0.25s, opacity ease-in-out 1s;
+    width: 30px; }
+    .BackToTopButton__Arrow:before {
+      background: #009884;
+      content: '';
+      display: inline-block;
+      height: 24px;
+      left: 50%;
+      margin-left: -1px;
+      margin-top: -8px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      width: 2px; }
+    .BackToTopButton__Arrow:after {
+      border-left: 2px solid;
+      border-top: 2px solid;
+      color: #009884;
+      content: '';
+      display: inline-block;
+      height: 10px;
+      left: 50%;
+      margin-left: -6px;
+      margin-top: -7px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: rotateZ(45deg);
+              transform: rotateZ(45deg);
+      -webkit-transform: translateY(50px) rotateZ(45deg);
+              transform: translateY(50px) rotateZ(45deg);
+      width: 10px; }
+  .BackToTopButton:hover .BackToTopButton__Arrow {
+    border: 2px solid #009884;
+    height: 30px;
+    opacity: 1;
+    -webkit-transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out 0.25s, opacity ease-in-out 1s;
+    transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out 0.25s, opacity ease-in-out 1s; }
+    .BackToTopButton:hover .BackToTopButton__Arrow:before {
+      -webkit-animation: lineUp 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+              animation: lineUp 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s; }
+    .BackToTopButton:hover .BackToTopButton__Arrow:after {
+      -webkit-animation: tipUp 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+              animation: tipUp 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s; }
+
+@-webkit-keyframes tipUp {
+  0% {
+    -webkit-transform: translateY(50px) rotateZ(45deg);
+            transform: translateY(50px) rotateZ(45deg); }
+  100% {
+    -webkit-transform: translateY(-70px) rotateZ(45deg);
+            transform: translateY(-70px) rotateZ(45deg); } }
+
+@keyframes tipUp {
+  0% {
+    -webkit-transform: translateY(50px) rotateZ(45deg);
+            transform: translateY(50px) rotateZ(45deg); }
+  100% {
+    -webkit-transform: translateY(-70px) rotateZ(45deg);
+            transform: translateY(-70px) rotateZ(45deg); } }
+
+@-webkit-keyframes lineUp {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px); }
+  100% {
+    -webkit-transform: translateY(-70px);
+            transform: translateY(-70px); } }
+
+@keyframes lineUp {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px); }
+  100% {
+    -webkit-transform: translateY(-70px);
+            transform: translateY(-70px); } }
 
 .ButtonClick.click > a,
 .ButtonClick.click > div,
@@ -42844,11 +42943,6 @@ a.Button.FullWidth, .DropZoneContainer .row .FullWidth.Button {
 
 .TimelineLogDetails .ReadMore {
   width: 70px; }
-
-.BackToTopButton {
-  display: none;
-  position: fixed;
-  top: 90vh; }
 
 /*When 1920x1080 doesnt appear*/
 .desktop.hd .TimelineLogDetails .ReadMore {
