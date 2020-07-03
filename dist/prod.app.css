@@ -1,4 +1,4 @@
-/*! Version: 5.0.900048 || Generated: Fri Jul 03 2020 10:45:22 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900049 || Generated: Fri Jul 03 2020 12:39:30 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16865,7 +16865,18 @@ div.Toolbar {
     -webkit-box-direction: normal;
             flex-direction: column;
     height: 100%;
+    position: relative;
     width: 80px; }
+    div.Toolbar__MoreOptionsIcon--notification::before {
+      background-color: #ff3e2d;
+      border: 4px solid #f2fffd;
+      border-radius: 50%;
+      content: '';
+      height: 18px;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      width: 18px; }
     div.Toolbar__MoreOptionsIcon:hover span[ui='more-options-title'] {
       color: transparent; }
       div.Toolbar__MoreOptionsIcon:hover span[ui='more-options-title']::after {
@@ -17011,6 +17022,11 @@ div.Toolbar {
 .FA .Toolbar__MoreOptions .MenuItemWrapper__Label::after {
   margin-left: 0;
   margin-right: 8px; }
+
+.AR .Toolbar__MoreOptionsIcon--notification::before,
+.FA .Toolbar__MoreOptionsIcon--notification::before {
+  left: 10px;
+  right: auto; }
 
 .AR .Toolbar__MoreOptionsList .MenuItemWrapper,
 .FA .Toolbar__MoreOptionsList .MenuItemWrapper {
