@@ -48,6 +48,12 @@
 		}
 	};
 
+	var popupWindow = function (url, title, win, w, h) {
+		const y = win.top.outerHeight / 2 + win.top.screenY - (h / 2);
+		const x = win.top.outerWidth / 2 + win.top.screenX - (w / 2);
+		return win.open(url, title, `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=${w}, height=${h}, top=${y}, left=${x}`);
+	}
+
 	var LayoutBase = function (config) {
 		var _this = this;
 		this.layoutBaseRedrawTimer = 0;
@@ -73,13 +79,57 @@
 		this.extraPaddingSecondary = 0;
 		this.setupWindowEvents();
 		this.$iframeSidebar.append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>');
+
 		$(function () {
 			$('body').addClass('LayoutBase');
 			if (_this.isTopWindow) {
 				$('body').css('overflow-y', 'scroll');
 			}
+
+
+
+			var isRemoteOpen = localStorage.getItem('RemoteAppointment');
+
+			if (!!isRemoteOpen) {
+				console.log('ready with remote');
+				var remoteAppointmentWindow = window.open('', 'remoteAppointment',
+					'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=50, height=100, top=100, left=100');
+				remoteAppointmentWindow.focus();
+
+				window.setInterval(function () {
+
+					if (!!localStorage.getItem('RemoteAppointment')) {
+						console.log(new Date());
+						window.open('', 'remoteAppointment');
+						remoteAppointmentWindow.focus();
+
+					}
+
+				}, 250);
+
+
+			}
+
+
+
+
+			$('.ViewStateCounter').on('click', function () {
+				var isRemoteOpen = localStorage.getItem('RemoteAppointment');
+				if (!!!isRemoteOpen) {
+					console.log('not is open');
+					remoteAppointmentWindow = SapphireWidgets.LayoutBase.popupWindow('//atc-dev.outsystemsenterprise.com/Sapphirev2_Th/RemoteAppointment.aspx', 'remoteAppointment', window, 300, 200);
+					remoteAppointmentWindow.focus();
+					window.setInterval(function () {
+						remoteAppointmentWindow.focus();
+					}, 500);
+					localStorage.setItem('RemoteAppointment', 'true');
+				}
+			});
+
+
 		});
 		$(window).load(function () {
+			$('body').click();
 			$(window).scroll();
 		});
 	};
@@ -284,10 +334,12 @@
 		}
 	};
 
+
 	SapphireWidgets.LayoutBase = {
 		create: create,
 		closeSidebarIframe: closeSidebarIframe,
 		openSidebarIframe: openSidebarIframe,
 		scrollToElement: scrollToElement,
+		popupWindow: popupWindow
 	};
 })(jQuery, window, document, SapphireWidgets);
