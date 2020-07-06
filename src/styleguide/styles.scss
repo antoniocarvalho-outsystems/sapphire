@@ -647,12 +647,13 @@ $styleguide-main-content-padding: 50px;
 
 		border: 1px solid $sapphire-light;
 		flex-direction: column;
+		min-width: 240px;
 		padding: 24px;
 		position: relative;
 
 		&:before {
 			background-color: $regular-white;
-			content: 'Options';
+			content: attr(ui-value);
 			left: 10px;
 			padding: 0 12px;
 			position: absolute;
