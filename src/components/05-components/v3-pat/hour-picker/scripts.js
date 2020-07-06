@@ -7,6 +7,8 @@
 				...config,
 			};
 
+			SapphireWidgets.HourPicker.allIntances.push(config.widgetId);
+
 			this.onComponentInit();
 		}
 
@@ -149,9 +151,16 @@
 		}
 	}
 
-	const create = config => (window[config.widgetId] = new HourPicker(config));
+	const create = config => {
+		const hasInstance = SapphireWidgets.HourPicker.allIntances.includes(config.widgetId);
+
+		if (!hasInstance) {
+			window[config.widgetId] = new HourPicker(config);
+		}
+	};
 
 	SapphireWidgets.HourPicker = {
 		create,
+		allIntances: [],
 	};
 })(jQuery, window, SapphireWidgets);
