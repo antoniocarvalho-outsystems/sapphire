@@ -166,7 +166,7 @@ button,
 textarea,
 optgroup,
 option {
-  font-family: "Lato", sans-serif;
+  font-family: "LatoRegular";
 }
 
 .TileIcon_text,
@@ -179,7 +179,7 @@ option {
 .Header_title a,
 .EditableTable thead td,
 .TableRecords_Header {
-  font-family: "Lato", sans-serif;
+  font-family: "LatoRegular";
 }
 
 /*------------------------------------*\
@@ -199,7 +199,7 @@ select,
 textarea,
 input {
   color: #333;
-  font-family: Lato;
+  font-family: "LatoRegular";
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
@@ -427,7 +427,7 @@ a.Link.Remove:hover:active {
 .Header_Menu a:link:hover,
 .Header_Menu a:visited:hover {
   color: #1d1d1d;
-  font-family: "Lato";
+  font-family: "LatoRegular";
   font-weight: 600;
 }
 
@@ -592,7 +592,7 @@ a.Login_Info_Username:visited {
 .Menu_TopMenu a {
   color: #1d1d1d;
   display: inline-block;
-  font-family: "Lato";
+  font-family: "LatoRegular";
   padding: 0 20px;
   text-align: center;
   text-decoration: none;
@@ -642,7 +642,7 @@ a.Login_Info_Username:visited {
 .Menu_DropDownButton.open .Menu_TopMenu a,
 .Menu_DropDownButton .Menu_TopMenuActive a {
   color: #1d1d1d;
-  font-family: "Lato";
+  font-family: "LatoRegular";
   font-weight: 600;
 }
 
@@ -670,7 +670,7 @@ a.Login_Info_Username:visited {
 a.Menu_SubMenuItemActive:link,
 a.Menu_SubMenuItemActive:visited {
   color: #1d1d1d;
-  font-family: "Lato";
+  font-family: "LatoRegular";
   font-weight: 600;
 }
 
@@ -1348,7 +1348,7 @@ input[type="color"] {
   border: 1px solid #d6d6d6;
   border-radius: 1px;
   color: #333;
-  font-family: Lato;
+  font-family: "LatoRegular";
   font-size: 16px;
   height: 42px;
   line-height: 42px;
@@ -2477,14 +2477,12 @@ body.ModalOpened .ModalContainer {
 }
 
 .desktop.hd .PanelById .PanelContainer {
-  font-family: Lato;
   max-height: 700px;
   top: 50%;
 }
 
 .PanelById .PanelTitle {
   color: #333333;
-  font-family: Lato;
   font-size: 20px;
   font-weight: 900;
   line-height: 24px;
@@ -2492,7 +2490,6 @@ body.ModalOpened .ModalContainer {
 
 .PanelById .PanelMessage {
   color: #333;
-  font-family: Lato;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 46px;
@@ -4442,7 +4439,6 @@ a .ListItem:after {
 /* SILK Patterns > Breadbrumbs */
 .Breadcrumbs {
   color: #333;
-  font-family: "Lato";
   font-size: 20px;
   font-weight: 700;
 }
@@ -4616,7 +4612,6 @@ a .ListItem:after {
 .SectionIndex a.active,
 .SectionIndex a:hover {
   color: #1d1d1d;
-  font-family: Lato;
   font-weight: bold;
   /*   line-height: 38px;*/
 }
@@ -6229,7 +6224,7 @@ a.ListNavigation_Next:link {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  font-family: sans-serif;
+  font-family: "LatoRegular";
   font-size: 1em;
   margin: 0;
   min-height: 24px;
@@ -8138,14 +8133,14 @@ a.cke_dialog_ui_button_ok:hover {
 .Sidebar .Menu_DropDownPanel a.Menu_SubMenuItem:hover {
   background-color: #fff;
   color: #333;
-  font-family: "Lato";
+  font-family: "LatoRegular";
   font-weight: 700;
 }
 
 .Sidebar .Application_Menu .Menu_TopMenu a {
   border-left: none;
   color: #5c5c5c;
-  font-family: "Lato";
+  font-family: "LatoRegular";
   font-size: 16px;
   line-height: 38px;
   padding-left: 23px;
@@ -8179,7 +8174,7 @@ a.cke_dialog_ui_button_ok:hover {
 .Sidebar .Application_Menu .Menu_DropDownButton.open .Menu_TopMenu a {
   border-left: 3px solid #00bfa5;
   color: #333;
-  font-family: "Lato";
+  font-family: "LatoRegular";
   font-size: 16px;
   font-weight: 700;
   line-height: 38px;
@@ -8297,7 +8292,7 @@ a.cke_dialog_ui_button_ok:hover {
 
 .InfoTips {
   color: #858585;
-  font-family: Lato;
+  font-family: "LatoRegular";
   font-size: 14px;
   font-style: italic;
 
@@ -8707,7 +8702,7 @@ ul.os-internal-ui-autocomplete {
 
 /*Ckeditor HTML*/
 pre {
-  font-family: "Lato", sans-serif;
+  font-family: "LatoRegular";
   font-size: 16px;
   white-space: pre-wrap;
 }
