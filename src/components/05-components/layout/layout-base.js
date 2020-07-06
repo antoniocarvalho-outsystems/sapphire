@@ -82,9 +82,6 @@
 
 		$(function () {
 
-			setInterval(function () {
-				console.log(document.activeElement, new Date());
-			}, 500);
 
 			$('body').addClass('LayoutBase');
 
@@ -106,11 +103,9 @@
 
 				var activeElement = document.activeElement;
 				var inputs = ['input', 'select', 'button', 'textarea'];
-
 				if (activeElement && inputs.indexOf(activeElement.tagName.toLowerCase()) !== -1) {
 					return false;
 				}
-
 				if (!!localStorage.getItem('RemoteAppointment')) {
 					let newWin = window.open('', 'remoteAppointment');
 				}
@@ -125,16 +120,24 @@
 
 
 			$(window).on('mouseup', function () {
+
+				var activeElement = document.activeElement;
+				var inputs = ['input', 'select', 'button', 'textarea'];
+				if (activeElement && inputs.indexOf(activeElement.tagName.toLowerCase()) !== -1) {
+					return false;
+				}
+				if (!!localStorage.getItem('RemoteAppointment')) {
+					let newWin = window.open('', 'remoteAppointment');
+				}
+
 				$(window).on('mousemove', function () {
 
 
 					var activeElement = document.activeElement;
 					var inputs = ['input', 'select', 'button', 'textarea'];
-
 					if (activeElement && inputs.indexOf(activeElement.tagName.toLowerCase()) !== -1) {
 						return false;
 					}
-
 					if (!!localStorage.getItem('RemoteAppointment')) {
 						let newWin = window.open('', 'remoteAppointment');
 					}
