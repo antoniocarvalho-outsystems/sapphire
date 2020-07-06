@@ -1,4 +1,4 @@
-/*! Version: 5.1.910003 || Generated: Mon Jul 06 2020 17:10:25 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910004 || Generated: Mon Jul 06 2020 18:20:03 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22681,6 +22681,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBlank .select2-container--default .select2-selection,
 .LayoutBase .select2-container--default .select2-selection,
 .LayoutPopup .select2-container--default .select2-selection,
+.LayoutBackoffice .select2-container--default .select2-selection,
 .DesignSystem .select2-container--default .select2-selection {
   min-height: 36px; }
   .LayoutBlank .select2-container--default .select2-selection .select2-selection__rendered,
@@ -22689,23 +22690,28 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutBase .select2-container--default .select2-selection .select2-search,
   .LayoutPopup .select2-container--default .select2-selection .select2-selection__rendered,
   .LayoutPopup .select2-container--default .select2-selection .select2-search,
+  .LayoutBackoffice .select2-container--default .select2-selection .select2-selection__rendered,
+  .LayoutBackoffice .select2-container--default .select2-selection .select2-search,
   .DesignSystem .select2-container--default .select2-selection .select2-selection__rendered,
   .DesignSystem .select2-container--default .select2-selection .select2-search {
     height: 100%; }
   .LayoutBlank .select2-container--default .select2-selection .select2-selection__rendered,
   .LayoutBase .select2-container--default .select2-selection .select2-selection__rendered,
   .LayoutPopup .select2-container--default .select2-selection .select2-selection__rendered,
+  .LayoutBackoffice .select2-container--default .select2-selection .select2-selection__rendered,
   .DesignSystem .select2-container--default .select2-selection .select2-selection__rendered {
     padding-left: 0; }
   .LayoutBlank .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
   .LayoutBase .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
   .LayoutPopup .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
+  .LayoutBackoffice .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
   .DesignSystem .select2-container--default .select2-selection.select2-selection--multiple.tagSystem {
     height: auto;
     min-height: 36px; }
     .LayoutBlank .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
     .LayoutBase .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
     .LayoutPopup .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
+    .LayoutBackoffice .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
     .DesignSystem .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field {
       margin-top: 2px;
       min-height: 28px; }
@@ -22719,6 +22725,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutPopup .select2-container--default .select2-selection--single,
 .LayoutPopup .select2-container--default .select2-selection--multiple,
 .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom,
+.LayoutBackoffice .select2-container--default .select2-selection--single,
+.LayoutBackoffice .select2-container--default .select2-selection--multiple,
+.LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom,
 .DesignSystem .select2-container--default .select2-selection--single,
 .DesignSystem .select2-container--default .select2-selection--multiple,
 .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom {
@@ -22733,6 +22742,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutPopup .select2-container--default .select2-selection--single:focus,
   .LayoutPopup .select2-container--default .select2-selection--multiple:focus,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom:focus,
+  .LayoutBackoffice .select2-container--default .select2-selection--single:focus,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple:focus,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom:focus,
   .DesignSystem .select2-container--default .select2-selection--single:focus,
   .DesignSystem .select2-container--default .select2-selection--multiple:focus,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:focus {
@@ -22741,6 +22753,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBlank .select2-container--default .select2-selection--single,
 .LayoutBase .select2-container--default .select2-selection--single,
 .LayoutPopup .select2-container--default .select2-selection--single,
+.LayoutBackoffice .select2-container--default .select2-selection--single,
 .DesignSystem .select2-container--default .select2-selection--single {
   line-height: 18px;
   padding: 2px 10px; }
@@ -22748,29 +22761,34 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBlank .select2-container--default .MultipleSelect.select2-selection,
 .LayoutBase .select2-container--default .MultipleSelect.select2-selection,
 .LayoutPopup .select2-container--default .MultipleSelect.select2-selection,
+.LayoutBackoffice .select2-container--default .MultipleSelect.select2-selection,
 .DesignSystem .select2-container--default .MultipleSelect.select2-selection {
   height: 36px; }
 
 .LayoutBlank .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
 .LayoutBase .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
 .LayoutPopup .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
+.LayoutBackoffice .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
 .DesignSystem .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered {
   padding: 0 10px; }
   .LayoutBlank .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
   .LayoutBase .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
   .LayoutPopup .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
+  .LayoutBackoffice .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
   .DesignSystem .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2) {
     display: none; }
 
 .LayoutBlank .select2-container--default .select2-selection--multiple,
 .LayoutBase .select2-container--default .select2-selection--multiple,
 .LayoutPopup .select2-container--default .select2-selection--multiple,
+.LayoutBackoffice .select2-container--default .select2-selection--multiple,
 .DesignSystem .select2-container--default .select2-selection--multiple {
   border-radius: 2px;
   font-family: "LatoBold"; }
   .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom,
   .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom {
     -webkit-box-align: center;
             align-items: center;
@@ -22780,6 +22798,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom:before,
     .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom:before,
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom:before,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom:before,
     .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:before {
       color: #858585;
       content: '\e690';
@@ -22799,6 +22818,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
     .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
     .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove {
       color: #333333;
       cursor: pointer;
@@ -22817,11 +22837,13 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option,
     .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option,
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option,
     .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option {
       font-weight: "LatoBold"; }
     .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
     .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
     .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'] {
       background-color: #f2fffd;
       color: #333333; }
@@ -22834,6 +22856,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
   .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
   .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
@@ -22860,6 +22886,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
     .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
     .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
     .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
     .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
     .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
@@ -22877,6 +22907,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
   .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
   .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
@@ -22904,6 +22938,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
   .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
   .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
@@ -22918,6 +22956,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
   .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
   .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
@@ -22936,6 +22978,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem:after,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect:after,
   .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom:after,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem:after,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect:after,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:after,
   .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem:after,
   .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect:after,
@@ -22962,6 +23008,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
   .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
   .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child {
     background-color: transparent;
     border: none;
@@ -22969,22 +23016,26 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
     .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
     .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
     .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove {
       display: none; }
   .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered,
   .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered,
   .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered,
+  .LayoutBackoffice .select2-container--default .select2-selection--multiple .select2-selection__rendered,
   .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered {
     padding-left: 10px;
     padding-right: 36px; }
     .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
     .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
     .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
     .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child {
       width: 100%; }
       .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
       .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
       .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
+      .LayoutBackoffice .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
       .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field {
         min-width: -webkit-fit-content;
         min-width: -moz-fit-content;
@@ -22994,6 +23045,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBlank .select2-container--default .select2-search--inline .select2-search__field,
 .LayoutBase .select2-container--default .select2-search--inline .select2-search__field,
 .LayoutPopup .select2-container--default .select2-search--inline .select2-search__field,
+.LayoutBackoffice .select2-container--default .select2-search--inline .select2-search__field,
 .DesignSystem .select2-container--default .select2-search--inline .select2-search__field {
   height: 100%;
   margin: 0;
@@ -23002,6 +23054,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBlank .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
 .LayoutBase .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
 .LayoutPopup .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
+.LayoutBackoffice .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
 .DesignSystem .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice {
   display: none; }
 
@@ -23011,6 +23064,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBase .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
 .LayoutPopup .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
 .LayoutPopup .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
+.LayoutBackoffice .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
+.LayoutBackoffice .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
 .DesignSystem .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
 .DesignSystem .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple {
   background-color: #fff !important; }
@@ -23018,12 +23073,14 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBlank .select2-container--default .select2-search--dropdow,
 .LayoutBase .select2-container--default .select2-search--dropdow,
 .LayoutPopup .select2-container--default .select2-search--dropdow,
+.LayoutBackoffice .select2-container--default .select2-search--dropdow,
 .DesignSystem .select2-container--default .select2-search--dropdow {
   border: 1px solid #d6d6d6;
   padding: 0; }
   .LayoutBlank .select2-container--default .select2-search--dropdow .select2-search__field,
   .LayoutBase .select2-container--default .select2-search--dropdow .select2-search__field,
   .LayoutPopup .select2-container--default .select2-search--dropdow .select2-search__field,
+  .LayoutBackoffice .select2-container--default .select2-search--dropdow .select2-search__field,
   .DesignSystem .select2-container--default .select2-search--dropdow .select2-search__field {
     background-color: #ffffff !important;
     border: none !important;
@@ -23032,6 +23089,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBlank .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
 .LayoutBase .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
 .LayoutPopup .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
+.LayoutBackoffice .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
 .DesignSystem .select2-container--default .select2-search.select2-search--dropdown .select2-search__field {
   background-color: #ffffff;
   border: none; }
@@ -23039,6 +23097,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBlank .select2-container--default .select2-search.select2-search--dropdown:after,
 .LayoutBase .select2-container--default .select2-search.select2-search--dropdown:after,
 .LayoutPopup .select2-container--default .select2-search.select2-search--dropdown:after,
+.LayoutBackoffice .select2-container--default .select2-search.select2-search--dropdown:after,
 .DesignSystem .select2-container--default .select2-search.select2-search--dropdown:after {
   color: #858585;
   content: '\e690';
