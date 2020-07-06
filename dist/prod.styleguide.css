@@ -1,4 +1,4 @@
-/*! Version: 5.1.910002 || Generated: Mon Jul 06 2020 13:52:13 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910003 || Generated: Mon Jul 06 2020 17:10:25 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 body {
   background-color: #fff !important;
@@ -506,11 +506,12 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
+    min-width: 240px;
     padding: 24px;
     position: relative; }
     .DesignSystem__InputContainer:before {
       background-color: #fff;
-      content: 'Options';
+      content: attr(ui-value);
       left: 10px;
       padding: 0 12px;
       position: absolute;
