@@ -152,11 +152,7 @@
 	}
 
 	const create = config => {
-		const hasInstance = SapphireWidgets.HourPicker.allIntances.includes(config.widgetId);
-
-		if (!hasInstance) {
-			window[config.widgetId] = new HourPicker(config);
-		}
+		window[config.widgetId] = new HourPicker(config);
 	};
 
 	SapphireWidgets.HourPicker = {
