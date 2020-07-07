@@ -1,4 +1,4 @@
-/*! Version: 5.1.910004 || Generated: Mon Jul 06 2020 18:20:03 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910005 || Generated: Tue Jul 07 2020 12:09:07 GMT+0100 (Western European Summer Time) */
 /*
 
     To override a style copy and paste it to
@@ -3039,6 +3039,7 @@ a.select2-choice.Filters {
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   line-height: 40px; }
 
+span.select2-selection.select2-selection--single.Select2Ajax,
 span.select2-selection.select2-selection--single.select-hide.Select2 {
   background-color: #fff;
   border-radius: 1px 1px 0 0;

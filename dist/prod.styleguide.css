@@ -1,4 +1,4 @@
-/*! Version: 5.1.910004 || Generated: Mon Jul 06 2020 18:20:03 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910005 || Generated: Tue Jul 07 2020 12:09:07 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 body {
   background-color: #fff !important;
@@ -305,6 +305,8 @@ body {
     border-radius: 1px;
     margin: 0 -20px;
     padding: 10px 20px; }
+  .DesignSystem__InpuParameters {
+    margin: 20px -21px -21px -21px; }
   .DesignSystem__OptionsWebBlock {
     border: 1px solid #d6d6d6;
     border-radius: 1px;

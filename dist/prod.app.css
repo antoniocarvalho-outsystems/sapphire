@@ -1,4 +1,4 @@
-/*! Version: 5.1.910004 || Generated: Mon Jul 06 2020 18:20:03 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910005 || Generated: Tue Jul 07 2020 12:09:07 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17520,6 +17520,63 @@ div.ui-timepicker-container {
   left: 10px;
   right: auto; }
 
+.LineCardList {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .LineCardList:hover {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer; }
+  .LineCardList.active {
+    border: 1px solid #009884; }
+  .LineCardList_checkbox {
+    display: inline-block;
+    max-width: 40px;
+    position: relative;
+    visibility: hidden;
+    width: 20px; }
+    .LineCardList_checkbox input[type='checkbox'] {
+      height: 16px;
+      width: 16px; }
+      .LineCardList_checkbox input[type='checkbox']:not(:checked) ~ label:hover::after {
+        color: #d6d6d6;
+        opacity: 1; }
+      .LineCardList_checkbox input[type='checkbox']:checked ~ label:after {
+        opacity: 1; }
+      .LineCardList_checkbox input[type='checkbox']:checked ~ label {
+        background-color: #fff;
+        border: 1px solid #009884; }
+    .LineCardList_checkbox label {
+      cursor: pointer;
+      font-size: inherit;
+      height: 0;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 0; }
+      .LineCardList_checkbox label:after {
+        color: #00bfa5;
+        content: '\e68a';
+        font-family: "Sapphire-Icon-Font";
+        font-size: 6px;
+        left: 4px;
+        opacity: 0;
+        position: absolute;
+        top: -1px; }
+  .LineCardList_subinfo, .LineCardList_information {
+    font-family: "LatoBold";
+    line-height: 18px;
+    text-align: right; }
+
+.AR .LineCardList_subinfo, .AR .LineCardList_information,
+.FA .LineCardList_subinfo,
+.FA .LineCardList_information {
+  text-align: left; }
+
 .LineCheck {
   background-color: #fff;
   border: solid 1px #d6d6d6;
@@ -34135,82 +34192,6 @@ a.Button.Icon:hover,
 /*------------------------------------------------------------*/
 /* 9.11 Sapphire Patterns > Cards > LineCardList **************/
 /*------------------------------------------------------------*/
-.LineCardList {
-  background-color: #ffffff;
-  border: 1px solid #d2d1d0;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 12px 10px; }
-
-.LineCardList:hover {
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
-  cursor: pointer; }
-
-.LineCardList.active {
-  border: 2px solid #16979f; }
-
-.LineCardList_checkbox {
-  display: inline-block;
-  max-width: 40px; }
-
-.LineCardList_checkbox input[type='checkbox'] {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  height: 16px;
-  width: 16px; }
-
-.LineCardList_information,
-.LineCardList_subinfo {
-  color: #0d1d22;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 18px;
-  text-align: right; }
-
-.FA .LineCardList_information,
-.FA .LineCardList_subinfo,
-.AR .LineCardList_information,
-.AR .LineCardList_subinfo {
-  text-align: left; }
-
-.LineCardList_checkbox {
-  position: relative;
-  width: 20px; }
-
-.LineCardList_checkbox label {
-  cursor: pointer;
-  font-size: inherit;
-  height: 0;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 0; }
-
-.LineCardList_checkbox label:after {
-  color: #16979f;
-  content: '\e68a';
-  font-family: Sapphire-Icon-Font;
-  font-size: 6px;
-  font-weight: 700;
-  left: 4px;
-  opacity: 0;
-  position: absolute;
-  top: -1px; }
-
-.LineCardList_checkbox input[type='checkbox']:not(:checked) ~ label:hover::after {
-  color: #c9cdce;
-  opacity: 1; }
-
-.LineCardList_checkbox input[type='checkbox'] {
-  visibility: hidden; }
-
-.LineCardList_checkbox input[type='checkbox']:checked ~ label:after {
-  opacity: 1; }
-
-.LineCardList_checkbox input[type='checkbox']:checked ~ label {
-  background-color: #fff;
-  border: 1px solid #16979f; }
-
 /*------------------------------------------------------------*/
 /* 9.12 Sapphire Patterns > Cards > PatientStatusCard *********/
 /*------------------------------------------------------------*/
