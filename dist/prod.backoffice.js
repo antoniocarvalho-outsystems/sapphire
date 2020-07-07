@@ -1,4 +1,4 @@
-/*! Version: 5.1.910006 || Generated: Tue Jul 07 2020 14:33:00 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910007 || Generated: Tue Jul 07 2020 17:47:01 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -94,7 +94,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\");\r\n\r\nSapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\n\n//# sourceURL=webpack:///./src/backoffice/scripts.js?");
+eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\");\n\nSapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\n\n//# sourceURL=webpack:///./src/backoffice/scripts.js?");
 
 /***/ }),
 
