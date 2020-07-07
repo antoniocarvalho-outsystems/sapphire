@@ -3574,6 +3574,7 @@ a.select2-choice.Filters {
   line-height: 40px;
 }
 
+span.select2-selection.select2-selection--single.Select2Ajax,
 span.select2-selection.select2-selection--single.select-hide.Select2 {
   background-color: #fff;
 
