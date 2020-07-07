@@ -1,0 +1,22 @@
+.BigButtonCard {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	font-size: 30px;
+	font-weight: 700;
+	justify-content: center;
+	line-height: 1.2;
+	min-height: 230px;
+	padding: 0 25px;
+	text-align: center;
+
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+@media (min-width: 1851px) {
+	.BigButtonCard {
+		font-size: 40px;
+	}
+}

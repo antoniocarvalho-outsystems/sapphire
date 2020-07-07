@@ -341,8 +341,11 @@ $styleguide-main-content-padding: 50px;
 		}
 	}
 
-	&__InpuParameters {
-		.SectionExpandable_headerCustom {
+	&__InputParameters {
+		margin: 20px -21px -20px -21px;
+
+		div.SectionExpandable_headerCustom {
+			border-bottom: none;
 			max-height: 40px;
 
 			.PlaceHolderTitle {
@@ -388,10 +391,6 @@ $styleguide-main-content-padding: 50px;
 		border-radius: 1px;
 		margin: 0 -20px;
 		padding: 10px 20px;
-	}
-
-	&__InpuParameters {
-		margin: 20px -21px -21px -21px;
 	}
 
 	&__OptionsWebBlock {
