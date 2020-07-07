@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-/*! Version: 5.1.910007 || Generated: Tue Jul 07 2020 18:04:07 GMT+0100 (Hora de verão da Europa Ocidental) */
-=======
-/*! Version: 5.1.910009 || Generated: Tue Jul 07 2020 18:01:10 GMT+0100 (Western European Summer Time) */
->>>>>>> d5680464131ab4ca926bb4d99316834f61c5edcf
+/*! Version: 5.1.910010 || Generated: Tue Jul 07 2020 18:06:43 GMT+0100 (Hora de verão da Europa Ocidental) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -98,7 +94,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\");\n\nSapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\n\n//# sourceURL=webpack:///./src/backoffice/scripts.js?");
+eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\");\r\n\r\nSapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\n\n//# sourceURL=webpack:///./src/backoffice/scripts.js?");
 
 /***/ }),
 
