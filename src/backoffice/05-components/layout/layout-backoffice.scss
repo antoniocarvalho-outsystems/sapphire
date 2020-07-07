@@ -1,0 +1,40 @@
+.BreadActionsWrapper {
+  background-color: #f1f1f1;
+  max-width: 1439px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.MainContent_BreadCrumbs,
+.MainContent_actions {
+  vertical-align: middle;
+}
+
+.MainContent_BreadCrumbs {
+  padding-bottom: 20px;
+}
+
+.Page .MainContent_others {
+  max-width: 1439px;
+  min-height: 80px;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.MainContent_navigationBar {
+  display: block;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.Page thead th {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

@@ -1,4 +1,4 @@
-/*! Version: 5.1.910006 || Generated: Tue Jul 07 2020 14:33:00 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910006 || Generated: Tue Jul 07 2020 17:41:19 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -660,6 +660,12 @@ span.icon.icon-circle-questionmark {
 
 .icon-insurance:before {
   content: '\e923'; }
+
+.icon-hospital:before {
+  content: '\e927'; }
+
+.icon-infrastructures:before {
+  content: '\e928'; }
 
 .icon-pregnancy:before {
   content: '\e929'; }
@@ -22677,7 +22683,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .SegmentedControl {
   margin-bottom: 12px;
-  margin-left: 1px; }
+  margin-left: 1px;
+  padding-top: 1px; }
 
 .SegmentedControl.NoMargin {
   margin: 0 0 0 1px !important; }

@@ -1,99 +1,69 @@
-var spinnerList = {
-	increment: function(elementId, listTospin, triggerOnChange, triggerOnInput) {
-		var $myspinner = $(elementId);
-		var $myInput = $myspinner.find('input[type]');
-		var arraytospin = listTospin;
-		var currentPosition = arraytospin.indexOf(parseInt($myspinner.find('input').val()));
-		var maximumToSpin = arraytospin.lastIndexOf(arraytospin.slice(-1)[0]);
+$(document).ready(function () {
 
-		$(elementId)
-			.find('.PlusVertical')
-			.removeClass('DisabledSpin');
-		$(elementId)
-			.find('.MinusVertical')
-			.removeClass('DisabledSpin');
+	var isDesktop = $(".Page").hasClass("desktop");
+	var isPhone = $(".Page").hasClass("phone");
+	var UseSidebar = $(".Sidebar").css("display") != "none";
 
-		if (maximumToSpin - 1 === currentPosition) {
-			currentPosition = currentPosition + 1;
-			$myspinner.find('input').val(arraytospin[currentPosition]);
-			if (triggerOnChange) {
-				$myInput.trigger('change');
-			}
-			if (triggerOnInput) {
-				$myInput.trigger('input');
-			}
-		} else if (maximumToSpin === currentPosition) {
-			currentPosition = currentPosition % maximumToSpin;
-			$myspinner.find('input').val(arraytospin[currentPosition]);
-			if (triggerOnChange) {
-				$myInput.trigger('change');
-			}
-			if (triggerOnInput) {
-				$myInput.trigger('input');
-			}
+	if (isPhone) $(".Others_Menu ").detach().prependTo(".Application_Menu");
+
+	// open responsive menu
+	$("a.Header_ButtonMenu").click(function () {
+
+		// if opened
+		if ($(".Page").hasClass("active")) {
+			$(".Page").removeClass("active");
 		} else {
-			currentPosition = (currentPosition + 1) % maximumToSpin;
-			$myspinner.find('input').val(arraytospin[currentPosition]);
-			if (triggerOnChange) {
-				$myInput.trigger('change');
-			}
-			if (triggerOnInput) {
-				$myInput.trigger('input');
-			}
+			$(".Page").addClass("active");
 		}
 
-		if (currentPosition === maximumToSpin) {
-			$(elementId)
-				.find('.PlusVertical')
-				.addClass('DisabledSpin');
-		}
+		return false;
+	});
 
-		if (currentPosition === 0) {
-			$(elementId)
-				.find('.MinusVertical')
-				.addClass('DisabledSpin');
-		}
 
-		$myspinner.find('.Text_red').css('display', 'none');
-	},
+	// close resposive menu when click out
+	$(".Page.tablet > .Content").click(function () {
+		$(".Page").removeClass("active");
+	});
 
-	decrement: function(elementId, listTospin, triggerOnChange, triggerOnInput) {
-		var $myspinner = $(elementId);
-		var $myInput = $myspinner.find('input[type]');
-		var arraytospin = listTospin;
-		var currentPosition = arraytospin.indexOf(parseInt($myspinner.find('input').val()));
-		var maximumToSpin = arraytospin.lastIndexOf(arraytospin.slice(-1)[0]);
+	// Open sidebar
+	$("a.Header_ButtonSidebar").click(function () {
 
-		currentPosition = (maximumToSpin + currentPosition - 1) % maximumToSpin;
 
-		$(elementId)
-			.find('.PlusVertical')
-			.removeClass('DisabledSpin');
-
-		if (currentPosition == 0) {
-			$(elementId)
-				.find('.MinusVertical')
-				.addClass('DisabledSpin');
-			$myspinner.find('input').val(arraytospin[0]);
-			if (triggerOnChange) {
-				$myInput.trigger('change');
-			}
-			if (triggerOnInput) {
-				$myInput.trigger('input');
-			}
+		// if open
+		if ($(".Sidebar").hasClass("open")) {
+			$(".Sidebar").removeClass("open");
 		} else {
-			$(elementId)
-				.find('.MinusVertical')
-				.removeClass('DisabledSpin');
-			$myspinner.find('input').val(arraytospin[currentPosition]);
-			if (triggerOnChange) {
-				$myInput.trigger('change');
-			}
-			if (triggerOnInput) {
-				$myInput.trigger('input');
-			}
+			$(".Sidebar").addClass("open");
 		}
 
-		$myspinner.find('.Text_red').css('display', 'none');
-	},
-};
+		return false;
+	});
+
+
+	// if sidebar
+	if (UseSidebar) {
+		$(".Page").addClass("UseSidebar");
+	} else {
+
+		// if fade active
+		if ($(".Page").hasClass("UseHeaderFade")) {
+
+			$header = $('.Header');
+			$titleHeight = $(".Title_Section").outerHeight();
+			var $headerBackground = $('.Header_background');
+
+			var alpha = 0;
+			var lastComma = "";
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > $headerHeight) {
+					$headerBackground.fadeIn();
+				} else {
+					$headerBackground.fadeOut();
+				}
+			});
+
+		}
+	}
+	/* caj: solves the * in mandatory 
+	$('input.Mandatory, select.Mandatory').parent().addClass('ListInputMandatory');*/
+});

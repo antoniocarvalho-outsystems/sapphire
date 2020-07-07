@@ -1,0 +1,132 @@
+.MainContent {
+  -servicestudio-position: absolute;
+  -servicestudio-right: 0px;
+  -servicestudio-width: 70%;
+}
+
+.Sidebar_menu {
+  -servicestudio-height: 100%;
+
+}
+
+.Application_menu {
+  -servicestudio-margin-top: 40px;
+}
+
+.Menu_DropDownButton,
+.Application_menu .Menu_TopMenus {
+  -servicestudio-width: 100%;
+}
+
+
+.Menu_TopMenu .Menu_DropDownArrow {
+  -servicestudio-border-top-color: #5c5c5c;
+  -servicestudio-border-width: 4px 4px 0;
+}
+
+
+.Menu_DropDownButton.open .Menu_DropDownArrow {
+  -servicestudio-border-top-color: #1d1d1d;
+}
+
+.Menu_DropDownButton.open .Menu_SubItemsPlaceholder {
+  -servicestudio-padding: 0 40px;
+}
+
+.Menu_DropDownButton.open .Menu_SubItemsPlaceholder a,
+.Menu_DropDownButton.open .Menu_SubItemsPlaceholder a {
+  -servicestudio- background-color: #fff;
+  -servicestudio-color: #5c5c5c;
+  -servicestudio-font-size: 14px;
+  -servicestudio-line-height: 25px;
+  background-color
+}
+
+.Sidebar .Menu_DropDownPanel a.Menu_SubMenuItem:hover,
+.Sidebar .Menu_DropDownPanel a.Menu_SubMenuItem.Menu_SubMenuItemActive,
+.Menu_DropDownPanel a.Menu_SubMenuItem.Menu_SubMenuItemActive,
+.Menu_DropDownPanel a.Menu_SubMenuItem:hover {
+  -servicestudio-background-color: #fff;
+  -servicestudio-color: #1d1d1d;
+}
+
+
+
+
+.Application_menu .Menu_TopMenu a {
+  -servicestudio-border-left: none;
+  -servicestudio-color: #5C5C5C;
+  -servicestudio-font-family: "Lato";
+  -servicestudio-font-size: 16px;
+  -servicestudio-line-height: 38px;
+  -servicestudio-padding-left: 23px;
+  -servicestudio-text-align: left;
+}
+
+.Application_menu .Menu_TopMenu span.icon {
+  -servicestudio-color: #5c5c5c;
+  -servicestudio-margin-left: 23px;
+  -servicestudio-margin-right: 10px;
+}
+
+.Application_menu .Menu_TopMenuActive,
+.Application_menu .Menu_TopMenuActive:hover {
+  -servicestudio-background-color: #fff;
+  -servicestudio-border: none;
+  -servicestudio-box-shadow: none;
+  -servicestudio-height: 38px;
+  -servicestudio-width: 100%;
+}
+
+.Application_menu .Menu_TopMenuActive a,
+.Application_menu .Menu_TopMenu:hover a {
+  -servicestudio-border-left: 3px solid #00bfa5;
+  -servicestudio-color: #1d1d1d;
+  -servicestudio-font-family: "Lato";
+  -servicestudio-font-size: 16px;
+  -servicestudio-font-weight: bold;
+  -servicestudio-line-height: 38px;
+  -servicestudio-padding-left: 0;
+  -servicestudio-text-align: left;
+  -servicestudio-width: 100%;
+
+
+}
+
+.Application_menu .Menu_TopMenuActive span.icon,
+.Application_menu .Menu_TopMenu:hover span.icon {
+  -servicestudio-color: #00BFA5;
+  -servicestudio-margin-left: 22px;
+}
+
+.Menu_DropDownButton.open .Menu_DropDownPanel {
+  -servicestudio-background-color: #fff;
+  -servicestudio-box-shadow: none;
+  -servicestudio-position: relative;
+  -servicestudio-width: 100%;
+}
+
+.BreadActionsWrapper {
+  background-color: #f1f1f1;
+  max-width: 1439px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.MainContent_BreadCrumbs,
+.MainContent_actions {
+  /*display:table-cell;*/
+  vertical-align: middle;
+}
+
+
+
+.MainContent_navigationBar {
+  display: block;
+  padding-bottom: 20px;
+  width: 100%;
+}
