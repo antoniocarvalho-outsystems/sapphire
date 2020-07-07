@@ -1,4 +1,4 @@
-/*! Version: 5.1.910005 || Generated: Tue Jul 07 2020 12:09:07 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910006 || Generated: Tue Jul 07 2020 14:33:00 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12178,6 +12178,27 @@ div.Feedback_Message_Info span.lasa-term {
   margin-left: 5px;
   margin-right: 0; }
 
+.BigButtonCard {
+  -webkit-box-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  font-size: 30px;
+  font-weight: 700;
+  -webkit-box-pack: center;
+          justify-content: center;
+  line-height: 1.2;
+  min-height: 230px;
+  padding: 0 25px;
+  text-align: center; }
+  .BigButtonCard:hover {
+    opacity: 0.9; }
+
+@media (min-width: 1851px) {
+  .BigButtonCard {
+    font-size: 40px; } }
+
 .BlankListLine {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -19915,6 +19936,10 @@ body.PanelById.PanelOpened {
     left: 10px;
     position: absolute;
     top: 18px; }
+
+.ColoredBox {
+  height: 100%;
+  padding: 10px; }
 
 .AR .PersonCard__headerLeftInfo.Male.HasBorder,
 .FA .PersonCard__headerLeftInfo.Male.HasBorder {

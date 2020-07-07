@@ -1,4 +1,4 @@
-/*! Version: 5.1.910005 || Generated: Tue Jul 07 2020 12:09:07 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910006 || Generated: Tue Jul 07 2020 14:33:00 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 body {
   background-color: #fff !important;
@@ -276,11 +276,14 @@ body {
                 flex: 1; }
   .DesignSystem__ListCards .DesignSystem__ContentCard:not(:last-child) {
     border-bottom: none; }
-  .DesignSystem__InpuParameters .SectionExpandable_headerCustom {
-    max-height: 40px; }
-    .DesignSystem__InpuParameters .SectionExpandable_headerCustom .PlaceHolderTitle {
-      font-family: "LatoRegular";
-      font-size: 1em; }
+  .DesignSystem__InputParameters {
+    margin: 20px -21px -20px -21px; }
+    .DesignSystem__InputParameters div.SectionExpandable_headerCustom {
+      border-bottom: none;
+      max-height: 40px; }
+      .DesignSystem__InputParameters div.SectionExpandable_headerCustom .PlaceHolderTitle {
+        font-family: "LatoRegular";
+        font-size: 1em; }
   .DesignSystem__AlertInfoSection, .DesignSystem__AlertInfoSection--deprecated {
     background-color: #00bfa5;
     color: #fff;
@@ -305,8 +308,6 @@ body {
     border-radius: 1px;
     margin: 0 -20px;
     padding: 10px 20px; }
-  .DesignSystem__InpuParameters {
-    margin: 20px -21px -21px -21px; }
   .DesignSystem__OptionsWebBlock {
     border: 1px solid #d6d6d6;
     border-radius: 1px;
