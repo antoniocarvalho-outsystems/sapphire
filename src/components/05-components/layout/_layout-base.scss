@@ -301,6 +301,10 @@
         display: flex;
         height: 100%;
 
+        &.TopInfo__OrderSet {
+          justify-content: flex-end;
+        }
+
         &.FlexColumn {
           flex-direction: column;
 
