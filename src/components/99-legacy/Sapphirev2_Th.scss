@@ -9745,143 +9745,143 @@ a.Button.Icon:hover {
 /*------------------------------------------------------------*/
 /* 9.12 Sapphire Patterns > Cards > PatientStatusCard *********/
 /*------------------------------------------------------------*/
-.StatusCard {
-  background-color: #fff;
-  border: 1px solid #d3d6d7;
-  border-radius: 2px;
-  color: #262525;
-  margin: 10px 0;
-}
+// .StatusCard {
+//   background-color: #fff;
+//   border: 1px solid #d3d6d7;
+//   border-radius: 2px;
+//   color: #262525;
+//   margin: 10px 0;
+// }
 
-.StatusCardDoctorToWrapper {
-  border: 1px solid #d2d1d0;
-  border-style: dashed;
-}
+// .StatusCardDoctorToWrapper {
+//   border: 1px solid #d2d1d0;
+//   border-style: dashed;
+// }
 
-.StatusCardDoctorToWrapper .StatusCard_head {
-  background-color: #f2f5f6;
-}
+// .StatusCardDoctorToWrapper .StatusCard_head {
+//   background-color: #f2f5f6;
+// }
 
-.StatusCard_headLine {
-  cursor: pointer;
-  display: table;
-  margin-top: 0;
-  min-height: 54px;
-  padding: 0;
-  position: relative;
-  width: 100%;
-}
+// .StatusCard_headLine {
+//   cursor: pointer;
+//   display: table;
+//   margin-top: 0;
+//   min-height: 54px;
+//   padding: 0;
+//   position: relative;
+//   width: 100%;
+// }
 
-.StatusCard__icon {
-  display: inline;
-  padding: 5px;
-  text-align: center;
-  vertical-align: middle;
-}
+// .StatusCard__icon {
+//   display: inline;
+//   padding: 5px;
+//   text-align: center;
+//   vertical-align: middle;
+// }
 
-.tablet .StatusCard_headText,
-.phone .StatusCard_headText {
-  padding: 0 8px;
-  text-align: center;
-  width: 100%;
-}
+// .tablet .StatusCard_headText,
+// .phone .StatusCard_headText {
+//   padding: 0 8px;
+//   text-align: center;
+//   width: 100%;
+// }
 
-.StatusCard_head {
-  background-color: #efefef;
-  display: table-cell;
-  line-height: 42px;
-  padding: 8px;
-  white-space: nowrap;
-}
+// .StatusCard_head {
+//   background-color: #efefef;
+//   display: table-cell;
+//   line-height: 42px;
+//   padding: 8px;
+//   white-space: nowrap;
+// }
 
-.StatusCard_headText {
-  text-align: left;
-}
+// .StatusCard_headText {
+//   text-align: left;
+// }
 
-.FA .StatusCard_headText,
-.AR .StatusCard_headText {
-  text-align: right;
-}
+// .FA .StatusCard_headText,
+// .AR .StatusCard_headText {
+//   text-align: right;
+// }
 
-.StatusCard__title {
-  font-weight: bold;
-}
+// .StatusCard__title {
+//   font-weight: bold;
+// }
 
-.tablet .StatusCard__title {
-  line-height: 16px;
-  white-space: normal;
-}
+// .tablet .StatusCard__title {
+//   line-height: 16px;
+//   white-space: normal;
+// }
 
-.StatusCard_other {
-  display: table-cell;
-  height: 46px;
-  padding: 5px 10px;
-  vertical-align: middle !important;
-}
+// .StatusCard_other {
+//   display: table-cell;
+//   height: 46px;
+//   padding: 5px 10px;
+//   vertical-align: middle !important;
+// }
 
-.StatusCard_actions {
-  color: #08a6af;
-  display: table-cell;
-  height: 46px;
-  padding: 10px;
-  text-align: right;
-  vertical-align: middle !important;
-}
+// .StatusCard_actions {
+//   color: #08a6af;
+//   display: table-cell;
+//   height: 46px;
+//   padding: 10px;
+//   text-align: right;
+//   vertical-align: middle !important;
+// }
 
-.FA .StatusCard_actions,
-.AR .StatusCard_actions {
-  text-align: right;
-}
+// .FA .StatusCard_actions,
+// .AR .StatusCard_actions {
+//   text-align: right;
+// }
 
-.StatusCard_actions a:not(.Button),
-.StatusCard_actions a:not(.Button):link,
-.StatusCard_actions a:not(.Button):visited {
-  color: #262525;
-  display: inbline-block;
-  text-align: center;
-  vertical-align: middle;
-}
+// .StatusCard_actions a:not(.Button),
+// .StatusCard_actions a:not(.Button):link,
+// .StatusCard_actions a:not(.Button):visited {
+//   color: #262525;
+//   display: inbline-block;
+//   text-align: center;
+//   vertical-align: middle;
+// }
 
-.StatusCard_actions>div,
-.StatusCard_actions>span {
-  display: inline-block;
-  margin: 0 10px;
-  text-align: center;
-  vertical-align: middle;
-}
+// .StatusCard_actions>div,
+// .StatusCard_actions>span {
+//   display: inline-block;
+//   margin: 0 10px;
+//   text-align: center;
+//   vertical-align: middle;
+// }
 
-.tablet .StatusCard_head {
-  display: block;
-  line-height: 10px;
-  padding: 0;
-  vertical-align: middle;
-  width: 100%;
-}
+// .tablet .StatusCard_head {
+//   display: block;
+//   line-height: 10px;
+//   padding: 0;
+//   vertical-align: middle;
+//   width: 100%;
+// }
 
-.tablet .StatusRightContainer {
-  display: block;
-  width: 100%;
-}
+// .tablet .StatusRightContainer {
+//   display: block;
+//   width: 100%;
+// }
 
-.tablet .StatusCard_actions {
-  width: 50%;
-}
+// .tablet .StatusCard_actions {
+//   width: 50%;
+// }
 
-.tablet .StatusCard__icon,
-.phone .StatusCard__icon {
-  display: block;
-  text-align: center;
-  width: 100%;
-}
+// .tablet .StatusCard__icon,
+// .phone .StatusCard__icon {
+//   display: block;
+//   text-align: center;
+//   width: 100%;
+// }
 
-.phone .StatusCard_head {
-  padding: 0;
-}
+// .phone .StatusCard_head {
+//   padding: 0;
+// }
 
-.StatusRightContainer {
-  display: table-cell;
-  vertical-align: middle;
-}
+// .StatusRightContainer {
+//   display: table-cell;
+//   vertical-align: middle;
+// }
 
 /*------------------------------------------------------------*/
 /* 9.13 Sapphire Patterns > Cards > PrescriptionCard **********/
