@@ -1,4 +1,4 @@
-/*! Version: 5.0.900052 || Generated: Fri Jul 03 2020 17:51:08 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.900053 || Generated: Wed Jul 08 2020 11:55:18 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -28682,7 +28682,7 @@ ul.os-internal-ui-autocomplete {
     display: none; }
 
 .SlotsInThreeColumns {
-  margin-top: 10px;
+  margin-top: 6px;
   width: 100%; }
 
 .BigInput,
