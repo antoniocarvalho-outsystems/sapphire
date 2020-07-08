@@ -1,0 +1,38 @@
+.VacancyCard {
+	background-color: #fff;
+	border: solid 1px #d9d9d9;
+	color: #255569;
+	padding: 0.5em;
+	text-align: center;
+	width: 100%;
+}
+
+.VacancyCard-title {
+	margin-bottom: 0.5em;
+}
+
+.VacancyCard-content {
+	display: flex;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	overflow-wrap: break-word;
+}
+
+.VacancyCard-content .VacancyCard-number {
+	display: block;
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1.1em;
+}
+
+.VacancyCard-content-occupied {
+	border-right: solid 3px #255569;
+	width: 50%;
+}
+
+.VacancyCard-content-vacant {
+	width: 50%;
+}
+
+.VacancyCard-footer {
+}
