@@ -1,7 +1,7 @@
 .VacancyCard {
-	background-color: #fff;
-	border: solid 1px #d9d9d9;
-	color: #255569;
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	color: $sapphire-blue;
 	padding: 0.5em;
 	text-align: center;
 	width: 100%;
@@ -25,7 +25,7 @@
 	}
 
 	&-content-occupied {
-		border-right: solid 3px #255569;
+		border-right: 3px solid $sapphire-blue;
 		width: 50%;
 	}
 
