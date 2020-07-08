@@ -1,4 +1,4 @@
-/*! Version: 5.1.910014 || Generated: Wed Jul 08 2020 14:55:54 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910015 || Generated: Wed Jul 08 2020 17:07:35 GMT+0100 (Hora de verão da Europa Ocidental) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -204,7 +204,7 @@ eval("/* Component CompLine */\r\n(function($, window, SapphireWidgets) {\r\n\tf
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component CountryPhone */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\tconst $element = document.querySelector(`#${config.widgetId}`);\r\n\r\n\t\tconst countryPhoneInput = window.intlTelInput($element, {\r\n\t\t\tinitialCountry: config.initialCountry,\r\n\t\t\tpreferedCountries: config.preferedCountries,\r\n\t\t\tseparateDialCode: config.separateDialCode,\r\n\t\t\tnationalMode: config.nationalMode,\r\n\t\t\tautoPlaceholder: config.autoPlaceholder ? 'polite' : false,\r\n\t\t\tformatOnDisplay: false,\r\n\t\t\tutilsScript: '/V3_Pat/js/utils.js',\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.CountryPhone = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/country-phone/scripts.js?");
+eval("/* Component CountryPhone */\r\n(function ($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\tconst $element = document.querySelector(`#${config.widgetId}`);\r\n\r\n\t\tconst countryPhoneInput = window.intlTelInput($element, {\r\n\t\t\tinitialCountry: config.initialCountry,\r\n\t\t\tpreferredCountries: config.preferredCountries,\r\n\t\t\tseparateDialCode: config.separateDialCode,\r\n\t\t\tnationalMode: config.nationalMode,\r\n\t\t\tautoPlaceholder: config.autoPlaceholder ? 'polite' : false,\r\n\t\t\tformatOnDisplay: false,\r\n\t\t\tutilsScript: '/V3_Pat/js/utils.js',\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.CountryPhone = {\r\n\t\tcreate\r\n\t};\r\n\r\n})(jQuery, window, SapphireWidgets);\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/country-phone/scripts.js?");
 
 /***/ }),
 

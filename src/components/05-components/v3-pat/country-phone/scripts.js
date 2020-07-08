@@ -1,11 +1,11 @@
 /* Component CountryPhone */
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	const create = config => {
 		const $element = document.querySelector(`#${config.widgetId}`);
 
 		const countryPhoneInput = window.intlTelInput($element, {
 			initialCountry: config.initialCountry,
-			preferedCountries: config.preferedCountries,
+			preferredCountries: config.preferredCountries,
 			separateDialCode: config.separateDialCode,
 			nationalMode: config.nationalMode,
 			autoPlaceholder: config.autoPlaceholder ? 'polite' : false,
@@ -14,5 +14,8 @@
 		});
 	};
 
-	SapphireWidgets.CountryPhone = { create };
+	SapphireWidgets.CountryPhone = {
+		create
+	};
+
 })(jQuery, window, SapphireWidgets);

@@ -1,4 +1,4 @@
-/*! Version: 5.1.910014 || Generated: Wed Jul 08 2020 14:55:54 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910015 || Generated: Wed Jul 08 2020 17:07:35 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -26239,6 +26239,37 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .tooltipster.NoCursor {
   cursor: auto; }
+
+.VacancyCard {
+  background-color: #fff;
+  border: solid 1px #d9d9d9;
+  color: #255569;
+  padding: 0.5em;
+  text-align: center;
+  width: 100%; }
+
+.VacancyCard-title {
+  margin-bottom: 0.5em; }
+
+.VacancyCard-content {
+  display: -webkit-box;
+  display: flex;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  overflow-wrap: break-word; }
+
+.VacancyCard-content .VacancyCard-number {
+  display: block;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1.1em; }
+
+.VacancyCard-content-occupied {
+  border-right: solid 3px #255569;
+  width: 50%; }
+
+.VacancyCard-content-vacant {
+  width: 50%; }
 
 .VerticalCarousel {
   display: none;
