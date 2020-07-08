@@ -1,43 +1,45 @@
 @mixin default-button($bgColor: $regular-alpha, $fontSize: $font-size-normal) {
-	background-color: $bgColor;
-	border: 1px solid transparent;
-	border-radius: 1.286em;
-	color: $sapphire-white;
-	cursor: pointer;
-	display: inline-block;
-	font-family: $font-family-latin-bold;
-	font-size: $fontSize;
-	height: 2.571em;
-	line-height: 2.4em;
-	min-width: 6.714em;
-	padding: 0 15px;
-	text-align: center;
-	text-decoration: none;
-	transition: all 0.1s ease-in;
-	white-space: nowrap;
+  background-color: $bgColor;
+  border: 1px solid transparent;
+  border-radius: 1.286em;
+  color: $sapphire-white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-family-latin-bold;
+  font-size: $fontSize;
+  height: 2.571em;
+  line-height: 2.4em;
+  min-width: 6.714em;
+  padding: 0 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+  white-space: nowrap;
 }
 
 @mixin disabled-button($bgColor: transparent) {
-	background-color: $bgColor;
-	background-image: none;
-	border: 1px solid $light-grey;
-	color: $light-grey;
-	cursor: default;
-	pointer-events: none;
-	text-shadow: none;
+  background-color: $bgColor;
+  background-image: none;
+  border: 1px solid $light-grey;
+  color: $light-grey;
+  cursor: default;
+  pointer-events: none;
+  text-shadow: none;
 }
 
 @mixin focus-border($bdColor: $dark-grey) {
-	border: 1px solid $bdColor;
+  border: 1px solid $bdColor;
 }
 
 @mixin link-style-all {
-	&:hover,
-	&:link,
-	&:active {
-		@content;
-	}
+
+  &:hover,
+  &:link,
+  &:active {
+    @content;
+  }
 }
+
 .desktop input.Button.Is_Default,
 .desktop input.Button,
 .desktop input.Button.ButtonDefault,
@@ -48,218 +50,223 @@
 .LayoutBase a.Button,
 a.Button.IsDefault,
 .desktop a.Button.Is_Default {
-	@include default-button;
+  @include default-button;
 
-	&:focus {
-		@include focus-border();
-	}
+  &:focus {
+    @include focus-border();
+  }
 
-	&:active,
-	&:hover {
-		background-color: $primary-light;
-		border: 1px solid transparent;
-	}
+  &:active,
+  &:hover {
+    background-color: $primary-light;
+    border: 1px solid transparent;
+  }
 
-	&:disabled,
-	&[disabled] {
-		@include disabled-button();
+  &:disabled,
+  &[disabled] {
+    @include disabled-button();
 
-		cursor: not-allowed;
+    cursor: not-allowed;
 
-		&:before {
-			color: $light-grey;
-		}
-	}
+    &:before {
+      color: $light-grey;
+    }
+  }
 
-	&.Second {
-		background-color: $mid-dark-grey;
+  &.Second {
+    background-color: $mid-dark-grey;
 
-		&:active,
-		&:hover {
-			background-color: $regular-grey;
-		}
+    &:active,
+    &:hover {
+      background-color: $regular-grey;
+    }
 
-		&:disabled,
-		&[disabled] {
-			@include disabled-button();
+    &:disabled,
+    &[disabled] {
+      @include disabled-button();
 
-			&:before {
-				color: $light-grey;
-			}
-		}
+      &:before {
+        color: $light-grey;
+      }
+    }
 
-		&:before {
-			color: $sapphire-white;
-		}
+    &:before {
+      color: $sapphire-white;
+    }
 
-		&.SearchMagnifier {
-			background-color: $regular-alpha;
-			border-radius: 2px;
-			min-width: auto;
-			padding: 0 10px;
+    &.SearchMagnifier {
+      background-color: $regular-alpha;
+      border-radius: 2px;
+      min-width: auto;
+      padding: 0 10px;
 
-			@include link-style-all {
-				min-width: auto;
-			}
+      @include link-style-all {
+        min-width: auto;
+      }
 
-			&:active,
-			&:hover {
-				background-color: $primary-light;
-			}
+      &:active,
+      &:hover {
+        background-color: $primary-light;
+      }
 
-			&:after {
-				content: '\e690';
-				font-family: $font-family-icons;
-			}
+      &:after {
+        content: '\e690';
+        font-family: $font-family-icons;
+      }
 
-			&:disabled,
-			&[disabled] {
-				@include disabled-button();
-			}
-		}
-	}
+      &:disabled,
+      &[disabled] {
+        @include disabled-button();
+      }
+    }
+  }
 
-	&.Third,
-	&.Cancel {
-		background-color: $sapphire-white;
-		border: 1px solid $regular-alpha; // $light-grey;
-		color: $regular-beta; // $dark-grey;
+  &.Third,
+  &.Cancel {
+    background-color: $sapphire-white;
+    border: 1px solid $regular-alpha; // $light-grey;
+    color: $regular-beta; // $dark-grey;
 
-		&:before {
-			color: $dark-grey;
-			font-size: $font-size-small;
-		}
+    &:before {
+      color: $dark-grey;
+      font-size: $font-size-small;
+    }
 
-		&:active,
-		&:hover {
-			background-color: $sapphire-light-container;
-			border: 1px solid $regular-alpha;
-			color: $regular-beta;
-		}
+    &:active,
+    &:hover {
+      background-color: $sapphire-light-container;
+      border: 1px solid $regular-alpha;
+      color: $regular-beta;
+    }
 
-		&:focus {
-			@include focus-border($dark-grey);
-		}
+    &:focus {
+      @include focus-border($dark-grey);
+    }
 
-		&:disabled,
-		&[disabled] {
-			@include disabled-button();
+    &:disabled,
+    &[disabled] {
+      @include disabled-button();
 
-			&:before {
-				color: $light-grey;
-			}
-		}
-	}
+      &:before {
+        color: $light-grey;
+      }
+    }
+  }
 
-	&.Link {
-		background: none;
-		border: 1px solid transparent;
-		color: $regular-beta;
+  &.Link {
+    background: none;
+    border: 1px solid transparent;
+    color: $regular-beta;
 
-		&.HideFocus:focus {
-			border-color: transparent;
-		}
+    &.HideFocus:focus {
+      border-color: transparent;
+    }
 
-		&:hover,
-		&:focus,
-		&:active,
-		&:disabled {
-			border-color: transparent;
-		}
+    &:hover,
+    &:focus,
+    &:active,
+    &:disabled {
+      border-color: transparent;
+    }
 
-		&:focus {
-			@include focus-border;
-			border-radius: unset;
-		}
+    &:focus {
+      @include focus-border;
+      border-radius: unset;
+    }
 
-		&:active,
-		&:hover {
-			background: none;
-			color: $regular-alpha;
-		}
+    &:active,
+    &:hover {
+      background: none;
+      color: $regular-alpha;
+    }
 
-		&:disabled,
-		&[disabled] {
-			@include disabled-button();
+    &:disabled,
+    &[disabled] {
+      @include disabled-button();
 
-			border: 1px solid transparent;
-		}
-	}
+      border: 1px solid transparent;
+    }
+  }
 
-	&.Small {
-		border-radius: 13px;
-		font-size: $font-size-small;
-		height: 26px;
-		line-height: 24px;
-		min-width: 76px;
-		padding: 0 13px;
-	}
+  &.Small {
+    border-radius: 13px;
+    font-size: $font-size-small;
+    height: 26px;
+    line-height: 24px;
+    min-width: 76px;
+    padding: 0 13px;
+  }
 
-	&.Big {
-		border-radius: 10px;
-		font-size: $font-size-big;
-		height: 50px;
-		line-height: 44px;
-		min-width: 55px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
+  &.Big {
+    border-radius: 10px;
+    font-size: $font-size-big;
+    height: 50px;
+    line-height: 44px;
+    min-width: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-	&.XBig {
-		border-radius: 10px;
-		box-sizing: border-box;
-		font-size: $font-size-heading1;
-		height: 50px;
-		line-height: 0;
-		min-width: 206px;
-		padding: 40px 10px;
-	}
+  &.XBig {
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: $font-size-heading1;
+    height: 50px;
+    line-height: 0;
+    min-width: 206px;
+    padding: 40px 10px;
+  }
 
-	&.Button.TwoLines,
-	&.Button.twoLines {
-		border-radius: 2px;
-		height: auto;
-		line-height: 15px;
-		padding: 8px 10px;
+  &.Button.TwoLines,
+  &.Button.twoLines {
+    border-radius: 2px;
+    height: auto;
+    line-height: 15px;
+    padding: 8px 10px;
 
-		&:before {
-			line-height: 5px;
-			margin-top: 12px;
-		}
+    &:before {
+      line-height: 5px;
+      margin-top: 12px;
+    }
 
-		> div {
-			text-align: right;
-		}
-	}
+    >div {
+      text-align: right;
+    }
+  }
 
-	&.ClinicalKey_button {
-		background: #ff8200;
-		border: solid 1px #ff8200;
-		border: solid 1px #ff8200;
-		border-color: #ff8200;
-		box-shadow: inset 0 1px 0 #ff8200, 0 2px 2px #ff8200;
-		color: $sapphire-white;
-		font-family: Arial, sans-serif;
-		font-size: $font-size-small;
-		font-weight: bold;
+  &.ClinicalKey_button {
+    background: #ff8200;
+    border: solid 1px #ff8200;
+    border: solid 1px #ff8200;
+    border-color: #ff8200;
+    box-shadow: inset 0 1px 0 #ff8200, 0 2px 2px #ff8200;
+    color: $sapphire-white;
+    font-family: Arial, sans-serif;
+    font-size: $font-size-small;
+    font-weight: bold;
 
-		&:hover {
-			background-color: #ff9b71 !important;
-			border: solid 1px rgba(255, 130, 0, 0.9);
-			border: solid 1px rgba(255, 130, 0, 0.9);
-			border-color: rgba(255, 130, 0, 0.9);
-			box-shadow: inset 0 1px 0 rgba(255, 130, 0, 0.9), 0 2px 2px rgba(255, 130, 0, 0.9);
-		}
-	}
+    &:hover {
+      background-color: #ff9b71 !important;
+      border: solid 1px rgba(255, 130, 0, 0.9);
+      border: solid 1px rgba(255, 130, 0, 0.9);
+      border-color: rgba(255, 130, 0, 0.9);
+      box-shadow: inset 0 1px 0 rgba(255, 130, 0, 0.9), 0 2px 2px rgba(255, 130, 0, 0.9);
+    }
+  }
+}
+
+.Button.Icon {
+  min-width: inherit !important;
 }
 
 .AR.Page {
-	a.Button,
-	&.LayoutTooltip a.Button,
-	&.LayoutPopup a.Button,
-	&.LayoutBlank a.Button,
-	&.LayoutBase a.Button,
-	a.Button.IsDefault {
-		font-family: $font-family-arabic-bold;
-	}
+
+  a.Button,
+  &.LayoutTooltip a.Button,
+  &.LayoutPopup a.Button,
+  &.LayoutBlank a.Button,
+  &.LayoutBase a.Button,
+  a.Button.IsDefault {
+    font-family: $font-family-arabic-bold;
+  }
 }
