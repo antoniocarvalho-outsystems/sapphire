@@ -164,9 +164,15 @@ SapphireWidgets.SelectSystem = config => {
 			/* Select2Options.containerCssClass=':all';*/
 
 			Select2Options.allowClear = false;
+
 			Select2Options.templateSelection = function(repo) {
+				if (repo.id === '' || repo.id === 'undefined') {
+					return Prompt;
+				}
+
 				return repo.full_name || repo.text;
 			};
+
 			Select2Options.templateResult = function(repo) {
 				if (repo.loading) {
 					return repo.text;
