@@ -1,4 +1,4 @@
-/*! Version: 5.1.910018 || Generated: Thu Jul 09 2020 09:41:37 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910019 || Generated: Thu Jul 09 2020 13:58:16 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13394,6 +13394,56 @@ div.Feedback_Message_Info span.lasa-term {
 .country-list::-webkit-scrollbar-thumb {
   border: 5px solid #00bfa5;
   border-radius: 4px; }
+
+.AR .intl-tel-input.allow-dropdown .flag-container, .AR .intl-tel-input.separate-dial-code .flag-container,
+.FA .intl-tel-input.allow-dropdown .flag-container,
+.FA .intl-tel-input.separate-dial-code .flag-container {
+  left: auto; }
+
+.AR .intl-tel-input.allow-dropdown .selected-dial-code, .AR .intl-tel-input.separate-dial-code .selected-dial-code,
+.FA .intl-tel-input.allow-dropdown .selected-dial-code,
+.FA .intl-tel-input.separate-dial-code .selected-dial-code {
+  direction: ltr;
+  padding-left: 0;
+  padding-right: 28px;
+  text-align: end; }
+
+.AR .intl-tel-input.allow-dropdown .selected-flag .iti-arrow, .AR .intl-tel-input.separate-dial-code .selected-flag .iti-arrow,
+.FA .intl-tel-input.allow-dropdown .selected-flag .iti-arrow,
+.FA .intl-tel-input.separate-dial-code .selected-flag .iti-arrow {
+  left: 6px;
+  right: auto; }
+
+.AR .intl-tel-input.allow-dropdown .country-list, .AR .intl-tel-input.separate-dial-code .country-list,
+.FA .intl-tel-input.allow-dropdown .country-list,
+.FA .intl-tel-input.separate-dial-code .country-list {
+  text-align: right; }
+  .AR .intl-tel-input.allow-dropdown .country-list .flag-box, .AR .intl-tel-input.separate-dial-code .country-list .flag-box,
+  .FA .intl-tel-input.allow-dropdown .country-list .flag-box,
+  .FA .intl-tel-input.separate-dial-code .country-list .flag-box {
+    margin-left: 6px;
+    margin-right: 0; }
+
+.AR .intl-tel-input.allow-dropdown .selected-flag, .AR .intl-tel-input.separate-dial-code .selected-flag,
+.FA .intl-tel-input.allow-dropdown .selected-flag,
+.FA .intl-tel-input.separate-dial-code .selected-flag {
+  padding: 0 8px 0 0; }
+
+.AR .intl-tel-input.allow-dropdown input,
+.AR .intl-tel-input.allow-dropdown input[type='tel'],
+.AR .intl-tel-input.allow-dropdown input[type='text'], .AR .intl-tel-input.separate-dial-code input,
+.AR .intl-tel-input.separate-dial-code input[type='tel'],
+.AR .intl-tel-input.separate-dial-code input[type='text'],
+.FA .intl-tel-input.allow-dropdown input,
+.FA .intl-tel-input.allow-dropdown input[type='tel'],
+.FA .intl-tel-input.allow-dropdown input[type='text'],
+.FA .intl-tel-input.separate-dial-code input,
+.FA .intl-tel-input.separate-dial-code input[type='tel'],
+.FA .intl-tel-input.separate-dial-code input[type='text'] {
+  direction: ltr;
+  padding-left: 0 !important;
+  padding-right: 92px;
+  text-align: end; }
 
 .DataFrame {
   background-color: #fff;
