@@ -1,3 +1,49 @@
 .country-list {
 	@include component-scroll-root();
 }
+
+.AR,
+.FA {
+	.intl-tel-input {
+		&.allow-dropdown,
+		&.separate-dial-code {
+			.flag-container {
+				left: auto;
+			}
+
+			.selected-dial-code {
+				direction: ltr;
+				padding-left: 0;
+				padding-right: 28px;
+				text-align: end;
+			}
+
+			.selected-flag .iti-arrow {
+				left: 6px;
+				right: auto;
+			}
+
+			.country-list {
+				text-align: right;
+
+				.flag-box {
+					margin-left: 6px;
+					margin-right: 0;
+				}
+			}
+
+			.selected-flag {
+				padding: 0 8px 0 0;
+			}
+
+			input,
+			input[type='tel'],
+			input[type='text'] {
+				direction: ltr;
+				padding-left: 0 !important;
+				padding-right: 92px;
+				text-align: end;
+			}
+		}
+	}
+}
