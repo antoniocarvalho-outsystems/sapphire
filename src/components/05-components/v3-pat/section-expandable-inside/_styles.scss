@@ -7,7 +7,7 @@
 	background-color: $regular-white;
 
 	&.expanded {
-		.HeaderIcon {
+		.ExapandablePlaceholder.HeaderIcon {
 			@include animation-arrow-button(0deg);
 
 			position: relative;
@@ -16,17 +16,21 @@
 		.SectionExpandableInside_content {
 			border-bottom: 1px solid $light-grey;
 			height: auto;
+
+			&--noBorder {
+				border-bottom: none;
+			}
 		}
 	}
 
-	.SectionExpandableInside_content {
+	&_content {
 		height: 0;
 		overflow: hidden;
 		padding: 0;
 		visibility: initial;
 	}
 
-	.SectionExpandableInside_header {
+	&_header {
 		border-bottom: 1px solid $light-grey;
 		color: $dark-grey;
 		cursor: pointer;
@@ -49,21 +53,6 @@
 		}
 	}
 
-	.HeaderIcon {
-		@include animation-arrow-button(180deg);
-
-		cursor: pointer;
-		font-size: 0.857em;
-		position: relative;
-
-		span {
-			@include arrow-down-simple;
-
-			display: block;
-			margin: 0 18px;
-		}
-	}
-
 	.RightAllPlaceDiv {
 		display: table-cell;
 		vertical-align: middle;
@@ -78,8 +67,23 @@
 	.ExapandablePlaceholder {
 		color: $dark-grey;
 		font-size: 1.071em;
-		font-weight: $font-family-latin-bold;
-		margin-left: 10px;
+		margin-right: 10px;
+
+		&.HeaderIcon {
+			@include animation-arrow-button(180deg);
+
+			cursor: pointer;
+			font-size: 0.857em;
+			margin: 0;
+			position: relative;
+
+			span {
+				@include arrow-down-simple;
+
+				display: block;
+				margin: 0 18px;
+			}
+		}
 	}
 
 	.PlaceHolderActions {
@@ -89,10 +93,6 @@
 
 		> div:not(:first-child) {
 			margin-left: 10px;
-		}
-
-		span {
-			color: $regular-beta;
 		}
 	}
 
@@ -105,8 +105,8 @@
 .AR,
 .FA {
 	.SectionExpandableInside .ExapandablePlaceholder {
-		margin-left: auto;
-		margin-right: 15px;
+		margin-left: 15px;
+		margin-right: auto;
 	}
 
 	.SectionExpandableInside .PlaceHolderActions > div {

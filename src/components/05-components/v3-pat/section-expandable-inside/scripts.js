@@ -171,10 +171,6 @@
 		});
 	};
 
-	const setNoBorder = widget => {
-		widget.addClass('SectionExpandableInside_header--noBorder');
-	};
-
 	const create = () => {
 		SilkUI.SectionExpandable = new SectionExpandableInside();
 		SilkUI.Execute(SilkUI.SectionExpandable.init, 'Error on SilkUIFramework/Content/SectionExpandable');
@@ -182,7 +178,6 @@
 
 	SapphireWidgets.SectionExpandableInside = {
 		create,
-		setNoBorder,
 		setOpenCloseClass,
 	};
 })(jQuery, window, SapphireWidgets);

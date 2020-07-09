@@ -52,6 +52,10 @@
 
 				.ExapandablePlaceholder {
 					color: $regular-beta;
+
+					&.Counter {
+						margin: 0 10px;
+					}
 				}
 			}
 		}
