@@ -161,12 +161,10 @@ SapphireWidgets.SelectSystem = config => {
 				Select2Options.dir = 'rtl';
 			}
 
-			/* Select2Options.containerCssClass=':all';*/
-
 			Select2Options.allowClear = false;
 
 			Select2Options.templateSelection = function(repo) {
-				if (repo.id === '' || repo.id === 'undefined') {
+				if (!repo.element) {
 					return Prompt;
 				}
 
@@ -216,6 +214,7 @@ SapphireWidgets.SelectSystem = config => {
 				cache: true,
 			}),
 				(Select2Options.minimumInputLength = MinimumInputLenght);
+
 			Select2Options.escapeMarkup = function(markup) {
 				return markup;
 			};
@@ -244,7 +243,6 @@ SapphireWidgets.SelectSystem = config => {
 			Select2Options.minimumResultsForSearch = 0;
 			Select2Options.tags = config.HasTags;
 			Select2Options.closeOnselect = true;
-			Select2Options.placeholder = Prompt;
 		}
 
 		if (Select2Type === '2') {
