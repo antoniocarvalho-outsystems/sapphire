@@ -1,0 +1,15 @@
+.TruncatedContent {
+	position: relative;
+	&--body {
+		overflow: hidden;
+	}
+
+	&--all {
+		cursor: pointer;
+		margin-bottom: 0;
+
+		&.in-tooltip {
+			cursor: auto;
+		}
+	}
+}

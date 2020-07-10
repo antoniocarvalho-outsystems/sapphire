@@ -10536,67 +10536,67 @@ a.Button.Icon:hover {
 /* 9.21 Sapphire Patterns > Contents > StretchedContainer_Content/
 /*--------------------------------------------------------------*/
 
-.StrechedContainerContent {
-  display: table;
-}
+// .StrechedContainerContent {
+//   display: table;
+// }
 
-.phone .StrechedContainerContent {
-  margin: 6px;
-}
+// .phone .StrechedContainerContent {
+//   margin: 6px;
+// }
 
-.StrechedContainerContent>div {
-  display: table-cell;
-}
+// .StrechedContainerContent>div {
+//   display: table-cell;
+// }
 
-.StrechedContainerContent .SmallText {
-  color: #14a7af;
-  font-size: 12px;
-  text-align: left;
-}
+// .StrechedContainerContent .SmallText {
+//   color: #14a7af;
+//   font-size: 12px;
+//   text-align: left;
+// }
 
-.FA .StrechedContainerContent .SmallText,
-.AR .StrechedContainerContent .SmallText {
-  text-align: right;
-}
+// .FA .StrechedContainerContent .SmallText,
+// .AR .StrechedContainerContent .SmallText {
+//   text-align: right;
+// }
 
-.StrechedContainerContent .Especialist {
-  color: #14a7af;
-  font-size: 12px;
-  padding-left: 10px;
-}
+// .StrechedContainerContent .Especialist {
+//   color: #14a7af;
+//   font-size: 12px;
+//   padding-left: 10px;
+// }
 
-.FA .StrechedContainerContent .Especialist,
-.AR .StrechedContainerContent .Especialist {
-  padding-left: 0;
-  padding-right: 10px;
-}
+// .FA .StrechedContainerContent .Especialist,
+// .AR .StrechedContainerContent .Especialist {
+//   padding-left: 0;
+//   padding-right: 10px;
+// }
 
-.StrechedContainerContent .Doctor,
-.StrechedContainerContent .Especialist .StrechedContainerContent .Icon {
-  padding: 5px;
-}
+// .StrechedContainerContent .Doctor,
+// .StrechedContainerContent .Especialist .StrechedContainerContent .Icon {
+//   padding: 5px;
+// }
 
-.StrechedContainerContent .Icon {
-  color: #14a7af;
-  padding: 0 10px;
-}
+// .StrechedContainerContent .Icon {
+//   color: #14a7af;
+//   padding: 0 10px;
+// }
 
-.TruncatedContent {
-  position: relative;
-}
+// .TruncatedContent {
+//   position: relative;
+// }
 
-.TruncatedContent--body {
-  overflow: hidden;
-}
+// .TruncatedContent--body {
+//   overflow: hidden;
+// }
 
-.TruncatedContent--all {
-  cursor: pointer;
-  margin-bottom: 0;
-}
+// .TruncatedContent--all {
+//   cursor: pointer;
+//   margin-bottom: 0;
+// }
 
-.TruncatedContent--all.in-tooltip {
-  cursor: auto;
-}
+// .TruncatedContent--all.in-tooltip {
+//   cursor: auto;
+// }
 
 /*-----------------------------------------------------------------------------*/
 /*  9.22 Sapphire Patterns > Controls_Custom_Patterns > DateNavigation *********/
