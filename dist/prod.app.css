@@ -1,4 +1,4 @@
-/*! Version: 5.1.910021 || Generated: Thu Jul 09 2020 18:19:42 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910022 || Generated: Fri Jul 10 2020 10:55:55 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12610,6 +12610,15 @@ div.Feedback_Message_Info span.lasa-term {
   -webkit-box-pack: center;
           justify-content: center;
   width: 14px; }
+
+div.CircledArrow {
+  border: 2px solid #009884;
+  border-radius: 50%;
+  color: #009884;
+  font-size: 0.786em;
+  height: 24px;
+  line-height: 22px;
+  width: 24px; }
 
 .AppointmentBox {
   background-color: white;
@@ -34339,92 +34348,9 @@ a.Button.Icon:hover,
 /*------------------------------------------------------------*/
 /* 9.14 Sapphire Patterns > Contents > ContentBox *************/
 /*------------------------------------------------------------*/
-.ContentBox {
-  background-color: #fff;
-  border-radius: 2px;
-  min-height: 158px;
-  width: 210px; }
-
-.ContainerHeaderInfo {
-  background: #efefef;
-  display: block;
-  height: 40px;
-  line-height: 42px; }
-
-.BoxHeaderIcon {
-  display: inline;
-  margin-left: 5px;
-  vertical-align: middle; }
-
-.ContainerHeaderInfo .CircleElement {
-  line-height: 44px;
-  padding: 0;
-  vertical-align: middle; }
-
-.BoxHeaderTitle {
-  display: inline;
-  font-weight: bold;
-  padding: 0 2px 0 11px;
-  vertical-align: middle; }
-
-.FA .BoxHeaderTitle,
-.AR .BoxHeaderTitle {
-  padding: 0 11px 0 2px; }
-
-.BoxHeaderCount {
-  background-color: #8598a4;
-  border-radius: 50%;
-  color: #fff;
-  display: inline-block;
-  height: 18px;
-  line-height: 18px;
-  text-align: center;
-  vertical-align: middle;
-  width: 18px; }
-
-.Lines {
-  background-color: #fff;
-  padding: 10px; }
-
-.BoxHeaderAction .CircleElement .icon:before {
-  content: '\e604';
-  line-height: 62px;
-  vertical-align: top;
-  zoom: 56%; }
-
-.ContentLarge {
-  min-height: 200px; }
-
 /*------------------------------------------------------------*/
 /* 9.15 Sapphire Patterns > Contents > ContentBoxLineWithAction/
 /*------------------------------------------------------------*/
-.ContentBoxLineWithAction {
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-  font-size: 14px;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 100%; }
-
-.ContentBoxLinePlaceholder {
-  width: 90%; }
-
-.ContentBoxLinePlaceholderIcon {
-  text-align: right;
-  width: 9%; }
-
-.FA .ContentBoxLinePlaceholderIcon,
-.AR .ContentBoxLinePlaceholderIcon {
-  text-align: left; }
-
-.ContentBoxLinePlaceholderIcon > a {
-  color: #08a6af;
-  text-decoration: none; }
-
-/*caj: For when appeard double Line because using ContentBoxLineWithAction(SG_PAT)*/
-.ContentBoxForHeaderInfo .ContentBoxLineWithAction {
-  border-bottom: none; }
-
 /*------------------------------------------------------------*/
 /* 9.16 Sapphire Patterns > Contents > InfoArea ***************/
 /*------------------------------------------------------------*/
@@ -35051,23 +34977,6 @@ a.Button.Icon:hover,
 /*-------------------------------------------------------------------------------------*/
 /* 9.39 Sapphire Patterns > Custom_Patterns > CircledArrow *****************************/
 /*-------------------------------------------------------------------------------------*/
-.CircledArrow {
-  border: 2px solid #829da5;
-  border-radius: 50%;
-  color: #0f465c;
-  font-size: 10px;
-  height: 24px;
-  line-height: 22px;
-  width: 24px; }
-
-.CircledArrow.Rotation270 {
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg); }
-
-.CircledArrow.Rotation90 {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
-
 /*-------------------------------------------------------------------------------------*/
 /* 9.40 Sapphire Patterns > Custom_Patterns > CircledIcon ******************************/
 /*-------------------------------------------------------------------------------------*/
