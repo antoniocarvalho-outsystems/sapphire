@@ -1,125 +1,125 @@
 .RoomBoxOT {
-  background-color: $regular-white;
-  border: 1px solid $light-grey;
-  border-radius: 2px;
-  text-align: center;
-  width: 140px;
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 2px;
+	text-align: center;
+	width: 140px;
 
-  &.Selected {
-    border: 2px solid $regular-alpha;
-    box-shadow: none;
-  }
+	&.Selected {
+		border: 2px solid $regular-alpha;
+		box-shadow: none;
+	}
 
-  .Counter {
-    border-bottom: none;
-    color: $dark-grey;
-    font-size: 1.714em;
-    height: 68px;
-    padding: 8px;
-  }
+	.Counter {
+		border-bottom: none;
+		color: $dark-grey;
+		font-size: 1.714em;
+		height: 68px;
+		padding: 8px;
+	}
 
-  .Columns .Column {
-    margin-bottom: 0;
-  }
+	.Columns .Column {
+		margin-bottom: 0;
+	}
 
-  .RoomNameSmall {
-    font-family: $font-family-latin-bold;
-    padding-top: 10px;
-  }
+	.RoomNameSmall {
+		font-family: $font-family-latin-bold;
+		padding: 10px;
+	}
 
-  .RoomTypeSmall {
-    font-size: 0.857em;
-    padding-bottom: 10px;
-  }
+	.RoomTypeSmall {
+		font-size: 0.857em;
+		padding-bottom: 10px;
+	}
 }
 
 .RoomBox {
-  background-color: $regular-white;
-  border: 1px solid $light-grey;
-  border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 10px;
-  position: relative;
-  text-align: center;
-  width: 100%;
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 4px;
+	display: inline-block;
+	margin-bottom: 10px;
+	position: relative;
+	text-align: center;
+	width: 100%;
 
-  &.Selected {
-    border: 2px solid $regular-alpha;
-  }
+	&.Selected {
+		border: 2px solid $regular-alpha;
+	}
 
-  &.Male {
-    .RoomHeader {
-      background-color: $light-blue-2;
-    }
-  }
+	&.Male {
+		.RoomHeader {
+			background-color: $light-blue-2;
+		}
+	}
 
-  &.Female {
-    .RoomHeader {
-      background-color: $light-pink-2;
-    }
-  }
+	&.Female {
+		.RoomHeader {
+			background-color: $light-pink-2;
+		}
+	}
 }
 
 .RoomName {
-  font-size: 1.143em;
+	font-size: 1.143em;
 }
 
 .RoomHeader {
-  padding: 10px;
+	padding: 10px;
 
-  > :nth-child(1) {
-    color: $dark-grey;
-    font-size: 1.143em;
-  }
+	> :nth-child(1) {
+		color: $dark-grey;
+		font-size: 1.143em;
+	}
 
-  > :nth-child(2),
-  .WardName {
-    color: $regular-beta;
-    font-size: 1em;
-  }
+	> :nth-child(2),
+	.WardName {
+		color: $regular-beta;
+		font-size: 1em;
+	}
 }
 
 .RoomStatus {
-  @include flex-center-total;
-  font-family: $font-family-latin-bold;
+	@include flex-center-total;
+	font-family: $font-family-latin-bold;
 
-  min-height: 22px;
-  overflow: hidden;
-  width: 100%;
+	min-height: 22px;
+	overflow: hidden;
+	width: 100%;
 
-  &.Free {
-    background-color: $light-green;
-    color: $dark-green;
-  }
+	&.Free {
+		background-color: $light-green;
+		color: $dark-green;
+	}
 
-  &.Full {
-    background-color: $light-grey;
-    color: $mid-dark-grey;
-  }
+	&.Full {
+		background-color: $light-grey;
+		color: $mid-dark-grey;
+	}
 }
 
 .RoomGenderBar {
-  display: none;
+	display: none;
 }
 
 .WardName {
-  color: $regular-beta;
-  font-size: 1em;
+	color: $regular-beta;
+	font-size: 1em;
 }
 
 .DisableRoom {
-  border: 2px solid transparent;
-  display: block;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 100%;
+	border: 2px solid transparent;
+	display: block;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
 }
 
 .AR,
 .FA {
-  .RoomBox {
-    margin: 0 0 15px 15px;
-  }
+	.RoomBox {
+		margin: 0 0 15px 15px;
+	}
 }
