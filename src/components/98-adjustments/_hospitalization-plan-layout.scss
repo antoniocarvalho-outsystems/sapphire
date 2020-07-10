@@ -1,0 +1,118 @@
+// Clinician_HospitalizationPlan_UI
+.HospitalizationPlanLayout {
+	height: auto;
+	width: 1080px;
+}
+
+.HospitalizationPlan_Header {
+	background-color: $regular-white;
+	border-bottom: 1px solid $light-grey;
+}
+
+.HospitalizationPlan_Header__Title {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 30px;
+}
+
+.HospitalizationPlan_Header__SapphireWizard {
+	margin: 15px 0;
+}
+
+.HospitalizationPlan_Content {
+	background-color: $regular-white;
+	display: flex;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 27px;
+	width: 100%;
+}
+
+.HospitalizationPlan_Content__Buttons__Placeholder {
+	border-right: 1px solid $light-grey;
+	display: inline-block;
+	padding-right: 14px;
+	text-align: left;
+}
+
+.HospitalizationPlan_Content__Buttons__Placeholder .HospitPlanButton {
+	width: 100%;
+}
+
+.HospitalizationPlan_Content__Buttons__Placeholder.hide,
+.HospitalizationPlan_Content__Buttons__Placeholder span:not(.icon):empty {
+	display: none;
+}
+
+.HospitalizationPlan_Content__Cards {
+	padding-bottom: 40px;
+	padding-left: 10px;
+	position: relative;
+}
+
+.HospitalizationPlan_Content__Buttons__Placeholder:empty {
+	display: none;
+}
+
+.HospitalizationPlan_Content__Cards___Placeholder {
+	height: 100%;
+	width: 100%;
+}
+
+.HospitalizationPlan_Content__Buttons__Placeholder.hide + .HospitalizationPlan_Content__Cards {
+	margin: 0 auto;
+}
+
+.HospitalizationPlan_Footer {
+	background-color: $regular-white;
+	border-top: 1px solid $light-grey;
+	min-height: 80px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	text-align: right;
+}
+
+/*Layout AR*/
+.AR .HospitalizationPlan_Content .ScrollableContent,
+.AR .HospitalizationPlan_Content span .Heading3,
+.AR .HospitalizationPlan_Content .SelectableList-EmptyMessage,
+.AR .HospitalizationPlan_Content .InstructionContainer,
+.AR .HospitalizationPlan_Content .PatientInstructor_Accelerator,
+.AR .HospitalizationPlan_Content .HospitalizationPlan_Content__Cards,
+.AR .HospitalizationPlan_Content .InstructionContainer .TextInput,
+.AR .HospitalizationPlan_Content .InstructionContainer .TextInput_Container,
+.AR .HospitalizationPlan_Footer,
+.AR .HospitalizationPlan_Footer > div {
+	transform: scale(-1, 1);
+}
+
+.AR .HospitalizationPlan_Content .HospitalizationPlan_Content__Buttons__Placeholder {
+	border-left: 1px solid $light-grey;
+	border-right: none;
+	padding-left: 14px;
+	padding-right: 0;
+}
+
+.AR .HospitalizationPlan_Header__Title {
+	margin-left: 0;
+	margin-right: 30px;
+}
+
+.ScrollableContent {
+	max-height: 450px;
+	overflow-y: auto;
+}
+
+.HospitalizationPlan_Content__Cards___Placeholder *::-webkit-scrollbar {
+	width: 24px;
+}
+
+.HospitalizationPlan_Content__Cards___Placeholder *::-webkit-scrollbar-thumb {
+	background: $light-grey;
+	border: 10px $regular-white solid;
+}
+
+.HospitalizationPlan_Content__Buttons__Placeholder.hide + .HospitalizationPlan_Content__Cards {
+	width: 100%;
+}
