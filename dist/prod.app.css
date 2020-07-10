@@ -1,4 +1,4 @@
-/*! Version: 5.1.910023 || Generated: Fri Jul 10 2020 11:54:37 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910024 || Generated: Fri Jul 10 2020 12:36:44 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29359,6 +29359,106 @@ span:not(:last-of-type) .CompLine {
 .AR .TileNumber_text {
   font-family: "TajawalRegular"; }
 
+.HospitalizationPlanLayout {
+  height: auto;
+  width: 1080px; }
+
+.HospitalizationPlan_Header {
+  background-color: #fff;
+  border-bottom: 1px solid #d6d6d6; }
+
+.HospitalizationPlan_Header__Title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 30px; }
+
+.HospitalizationPlan_Header__SapphireWizard {
+  margin: 15px 0; }
+
+.HospitalizationPlan_Content {
+  background-color: #fff;
+  display: -webkit-box;
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 27px;
+  width: 100%; }
+
+.HospitalizationPlan_Content__Buttons__Placeholder {
+  border-right: 1px solid #d6d6d6;
+  display: inline-block;
+  padding-right: 14px;
+  text-align: left; }
+
+.HospitalizationPlan_Content__Buttons__Placeholder .HospitPlanButton {
+  width: 100%; }
+
+.HospitalizationPlan_Content__Buttons__Placeholder.hide,
+.HospitalizationPlan_Content__Buttons__Placeholder span:not(.icon):empty {
+  display: none; }
+
+.HospitalizationPlan_Content__Cards {
+  padding-bottom: 40px;
+  padding-left: 10px;
+  position: relative; }
+
+.HospitalizationPlan_Content__Buttons__Placeholder:empty {
+  display: none; }
+
+.HospitalizationPlan_Content__Cards___Placeholder {
+  height: 100%;
+  width: 100%; }
+
+.HospitalizationPlan_Content__Buttons__Placeholder.hide + .HospitalizationPlan_Content__Cards {
+  margin: 0 auto; }
+
+.HospitalizationPlan_Footer {
+  background-color: #fff;
+  border-top: 1px solid #d6d6d6;
+  min-height: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  text-align: right; }
+
+/*Layout AR*/
+.AR .HospitalizationPlan_Content .ScrollableContent,
+.AR .HospitalizationPlan_Content span .Heading3,
+.AR .HospitalizationPlan_Content .SelectableList-EmptyMessage,
+.AR .HospitalizationPlan_Content .InstructionContainer,
+.AR .HospitalizationPlan_Content .PatientInstructor_Accelerator,
+.AR .HospitalizationPlan_Content .HospitalizationPlan_Content__Cards,
+.AR .HospitalizationPlan_Content .InstructionContainer .TextInput,
+.AR .HospitalizationPlan_Content .InstructionContainer .TextInput_Container,
+.AR .HospitalizationPlan_Footer,
+.AR .HospitalizationPlan_Footer > div {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
+
+.AR .HospitalizationPlan_Content .HospitalizationPlan_Content__Buttons__Placeholder {
+  border-left: 1px solid #d6d6d6;
+  border-right: none;
+  padding-left: 14px;
+  padding-right: 0; }
+
+.AR .HospitalizationPlan_Header__Title {
+  margin-left: 0;
+  margin-right: 30px; }
+
+.ScrollableContent {
+  max-height: 450px;
+  overflow-y: auto; }
+
+.HospitalizationPlan_Content__Cards___Placeholder *::-webkit-scrollbar {
+  width: 24px; }
+
+.HospitalizationPlan_Content__Cards___Placeholder *::-webkit-scrollbar-thumb {
+  background: #d6d6d6;
+  border: 10px #fff solid; }
+
+.HospitalizationPlan_Content__Buttons__Placeholder.hide + .HospitalizationPlan_Content__Cards {
+  width: 100%; }
+
 .phone input[type='number'],
 .phone input[type='text'],
 .tablet input[type='number'],
@@ -37324,171 +37424,6 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 /*-------------------------------------------------------------*/
 /* 9.127 Sapphire Patterns > HospitalizationPlan_PopUp *********/
 /*------------------------------------------------------------*/
-.HospitalizationPlanLayout {
-  height: auto;
-  width: 1080px; }
-
-/*Header*/
-.HospitalizationPlan_Header {
-  background-color: #fff;
-  border-bottom: 1px solid #ebebeb; }
-
-.HospitalizationPlan_Header__Title {
-  color: #11455d;
-  font-size: 20px;
-  font-weight: 600;
-  margin: 30px; }
-
-.HospitalizationPlan_Header__SapphireWizard {
-  margin-top: 18px; }
-
-/*Content*/
-.HospitalizationPlan_Content {
-  background-color: #fff;
-  display: -webkit-box;
-  display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  width: 100%; }
-
-.HospitalizationPlan_Content__Buttons__Placeholder {
-  border-right: 1px solid #c9cdce;
-  display: inline-block;
-  padding-right: 14px;
-  text-align: left; }
-
-.HospitalizationPlan_Content__Buttons__Placeholder .HospitPlanButton {
-  width: 100%; }
-
-.HospitalizationPlan_Content__Buttons__Placeholder.hide,
-.HospitalizationPlan_Content__Buttons__Placeholder span:empty {
-  display: none; }
-
-.HospitalizationPlan_Content__Cards {
-  padding-bottom: 40px;
-  padding-left: 10px;
-  position: relative; }
-
-.HospitalizationPlan_Content__Buttons__Placeholder:empty {
-  display: none; }
-
-.HospitalizationPlan_Content__Cards___Placeholder {
-  height: 100%;
-  width: 100%; }
-
-.HospitalizationPlan_Content__Buttons__Placeholder.hide + .HospitalizationPlan_Content__Cards {
-  margin: 0 auto; }
-
-.HospitalizationPlan_Content__Cards .SSD_ListLine.Active > div.ExpandableContent {
-  background-color: white !important; }
-
-/* ScaleIsViewMode */
-.ScaleIsViewMode .Button,
-.ScaleIsViewMode {
-  cursor: default; }
-
-/*Footer*/
-.HospitalizationPlan_Footer {
-  background-color: #fff;
-  border-top: 1px solid #ebebeb;
-  min-height: 80px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  text-align: right; }
-
-/*Tablet and Phone Resolution*/
-/*
-.phone .HospitalizationPlan_Content > div,
-.tablet .HospitalizationPlan_Content > div{
-  height:auto;
-}
-
-
-.phone  .HospitalizationPlan_Content .HospitalizationPlan_Content__Buttons__Placeholder,
-.tablet .HospitalizationPlan_Content .HospitalizationPlan_Content__Buttons__Placeholder {
-     min-width:100%;
-     height:auto;
-     border-bottom: 1px solid #C9CDCE;
-     padding-bottom: 20px;
-     border-right: 0px;
-}
-
-.phone .HospitalizationPlan_Content__Buttons__Placeholder .HospitPlanButton,
-.tablet .HospitalizationPlan_Content__Buttons__Placeholder .HospitPlanButton{
-    width:unset;
-}
-
-.phone .HospitalizationPlan_Content .HospitalizationPlan_Content__Cards,
-.tablet .HospitalizationPlan_Content .HospitalizationPlan_Content__Cards{
-     width:100%;
-     margin-top: 20px;
-}
-
-
-
-/*Layout AR*/
-.AR .HospitalizationPlan_Content .ScrollableContent,
-.AR .HospitalizationPlan_Content span .Heading3,
-.AR .HospitalizationPlan_Content .SelectableList-EmptyMessage,
-.AR .HospitalizationPlan_Content .InstructionContainer,
-.AR .HospitalizationPlan_Content .PatientInstructor_Accelerator,
-.AR .HospitalizationPlan_Content .HospitalizationPlan_Content__Cards,
-.AR .HospitalizationPlan_Content .InstructionContainer .TextInput,
-.AR .HospitalizationPlan_Content .InstructionContainer .TextInput_Container,
-.AR .HospitalizationPlan_Footer,
-.AR .HospitalizationPlan_Footer > div,
-.FA .HospitalizationPlan_Content .ScrollableContent,
-.FA .HospitalizationPlan_Content span .Heading3,
-.FA .HospitalizationPlan_Content .SelectableList-EmptyMessage,
-.FA .HospitalizationPlan_Content .InstructionContainer,
-.FA .HospitalizationPlan_Content .PatientInstructor_Accelerator,
-.FA .HospitalizationPlan_Content .HospitalizationPlan_Content__Cards,
-.FA .HospitalizationPlan_Content .InstructionContainer .TextInput,
-.FA .HospitalizationPlan_Content .InstructionContainer .TextInput_Container,
-.FA .HospitalizationPlan_Footer,
-.FA .HospitalizationPlan_Footer > div {
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1); }
-
-.FA .HospitalizationPlan_Content .HospitalizationPlan_Content__Buttons__Placeholder,
-.AR .HospitalizationPlan_Content .HospitalizationPlan_Content__Buttons__Placeholder {
-  border-left: 1px solid #c9cdce;
-  border-right: none;
-  padding-left: 14px;
-  padding-right: 0; }
-
-.FA .HospitalizationPlan_Header__Title,
-.AR .HospitalizationPlan_Header__Title {
-  margin-left: 0;
-  margin-right: 30px; }
-
-.ScrollableContent {
-  max-height: 450px;
-  overflow-y: auto; }
-
-.ScrollableContent.SmallHeight {
-  max-height: 250px; }
-
-.ScrollableContent::-webkit-scrollbar {
-  width: 16px; }
-
-.ScrollableContent::-webkit-scrollbar-thumb {
-  background-color: #9b9b9b;
-  border: 5px #fff solid;
-  border-radius: 100px; }
-
-.HospitalizationPlan_Content__Buttons__Placeholder.hide + .HospitalizationPlan_Content__Cards {
-  width: 100%; }
-
-/*DE61525*/
-.PopupGeneric .PopupGeneric__content .ScrollableContent {
-  margin-top: 0 !important; }
-
-.PopupGeneric .PopupGeneric__content .ctnScore {
-  margin-top: 0 !important; }
-
 /*-------------------------------------------------------------*/
 /* 9.128 Sapphire Patterns > ButtonGroupScale          *********/
 /*------------------------------------------------------------*/
