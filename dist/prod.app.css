@@ -1,4 +1,4 @@
-/*! Version: 5.1.910024 || Generated: Fri Jul 10 2020 12:36:44 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910025 || Generated: Fri Jul 10 2020 14:13:14 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7810,44 +7810,6 @@ a.Button.IsDefault,
   .AR .FlagLine_time,
   .FA .FlagLine_time {
     direction: ltr; }
-
-.InfoAreaBox {
-  background-color: #eff4f6;
-  border: 1px solid #e0e1e3;
-  color: #115874;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 47px;
-  min-height: 87px;
-  overflow: hidden;
-  padding: 20px;
-  position: relative;
-  vertical-align: middle; }
-
-.InfoAreaBox:after {
-  bottom: 0;
-  color: rgba(17, 88, 116, 0.1);
-  content: '\e625';
-  font-family: "Sapphire-Icon-Font";
-  font-size: 103px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  height: 45px;
-  margin: auto;
-  position: absolute;
-  right: 20px;
-  speak: none;
-  text-transform: none;
-  top: 0;
-  vertical-align: middle; }
-
-.FA .InfoAreaBox:after,
-.AR .InfoAreaBox:after {
-  left: 20px;
-  right: auto; }
 
 .InputIconSapphire {
   position: relative; }
@@ -17535,6 +17497,42 @@ div.ui-timepicker-container {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     -webkit-transform: scale(0.95);
             transform: scale(0.95); } }
+
+.InfoAreaBox {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  color: #009884;
+  font-family: "LatoBold";
+  font-size: 1.429em;
+  line-height: 47px;
+  min-height: 87px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  vertical-align: middle; }
+  .InfoAreaBox:after {
+    bottom: 0;
+    color: rgba(0, 152, 132, 0.2);
+    content: '\e625';
+    font-family: "Sapphire-Icon-Font";
+    font-size: 103px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    height: 45px;
+    margin: auto;
+    position: absolute;
+    right: 20px;
+    text-transform: none;
+    top: 0;
+    vertical-align: middle; }
+
+.AR .InfoAreaBox:after,
+.FA .InfoAreaBox:after {
+  left: 20px;
+  right: auto; }
 
 .InputWithClear-container {
   position: relative; }
