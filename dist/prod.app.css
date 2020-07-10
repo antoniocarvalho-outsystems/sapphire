@@ -1,4 +1,4 @@
-/*! Version: 5.1.910030 || Generated: Fri Jul 10 2020 16:45:35 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910031 || Generated: Fri Jul 10 2020 18:19:19 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7089,41 +7089,6 @@ a.Button.IsDefault,
     -webkit-transform: translateY(-70px);
             transform: translateY(-70px); } }
 
-.ButtonClick.click > a,
-.ButtonClick.click > div,
-.ButtonClick.click > span {
-  background-color: transparent;
-  border: 1px solid #00bfa5; }
-
-.ButtonClick > a,
-.ButtonClick > div,
-.ButtonClick > span {
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-radius: 1px;
-  color: #009884;
-  cursor: pointer;
-  font-size: 1.143em;
-  padding: 15px 30px;
-  text-align: center;
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-  vertical-align: middle;
-  width: 100%; }
-  .ButtonClick > a:hover,
-  .ButtonClick > div:hover,
-  .ButtonClick > span:hover {
-    background-color: #f2fffd;
-    border: 1px solid #00bfa5; }
-  .ButtonClick > a:focus,
-  .ButtonClick > div:focus,
-  .ButtonClick > span:focus {
-    border: 1px solid #333333; }
-  .ButtonClick > a .icon,
-  .ButtonClick > div .icon,
-  .ButtonClick > span .icon {
-    font-size: 1.429em; }
-
 .ButtonSquare {
   -webkit-box-align: center;
           align-items: center;
@@ -12173,6 +12138,41 @@ div.Feedback_Message_Info span.lasa-term {
   .BlankState b {
     font-family: 'LatoBold';
     padding: 0 3px; }
+
+.ButtonClick.click > a,
+.ButtonClick.click > div,
+.ButtonClick.click > span {
+  background-color: transparent;
+  border: 1px solid #00bfa5; }
+
+.ButtonClick > a,
+.ButtonClick > div,
+.ButtonClick > span {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 1px;
+  color: #009884;
+  cursor: pointer;
+  font-size: 1.143em;
+  padding: 15px 30px;
+  text-align: center;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  vertical-align: middle;
+  width: 100%; }
+  .ButtonClick > a:hover,
+  .ButtonClick > div:hover,
+  .ButtonClick > span:hover {
+    background-color: #f2fffd;
+    border: 1px solid #00bfa5; }
+  .ButtonClick > a:focus,
+  .ButtonClick > div:focus,
+  .ButtonClick > span:focus {
+    border: 1px solid #333333; }
+  .ButtonClick > a .icon,
+  .ButtonClick > div .icon,
+  .ButtonClick > span .icon {
+    font-size: 1.429em; }
 
 .CardPatientInfo {
   background-color: transparent;
@@ -19286,7 +19286,7 @@ body.confirmation-opened {
   margin-bottom: 20px; }
 
 .confirm-container.confirm-wb .confirm-message {
-  font-size: 1.071em;
+  font-size: 1em;
   line-height: normal;
   margin-bottom: 30px;
   white-space: normal; }
