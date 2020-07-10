@@ -1,4 +1,4 @@
-/*! Version: 5.1.910022 || Generated: Fri Jul 10 2020 10:55:55 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910023 || Generated: Fri Jul 10 2020 11:54:37 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7734,73 +7734,6 @@ a.Button.IsDefault,
 .FA .ExpandableHeader__date {
   padding-left: auto;
   padding-right: 10px; }
-
-.ExpandableList_wrapper {
-  display: table;
-  width: 100%; }
-
-.ExpandableList__label {
-  display: table-cell;
-  font-family: "LatoBold";
-  vertical-align: middle;
-  width: 100%; }
-
-.ExpandableList__action {
-  display: table-cell;
-  vertical-align: middle; }
-
-.ExpandableList .ExpandableLink__Header {
-  border-top: 1px solid #fff;
-  display: table;
-  height: 48px;
-  width: 100%; }
-
-.ExpandableList .ExpandableLink__Icon {
-  display: table-cell;
-  padding: 0 15px;
-  vertical-align: middle; }
-  .ExpandableList .ExpandableLink__Icon .icon {
-    -webkit-box-align: center;
-            align-items: center;
-    background-color: transparent;
-    border: 2px solid #009884;
-    border-radius: 50%;
-    cursor: pointer;
-    display: -webkit-box;
-    display: flex;
-    height: 20px;
-    -webkit-box-pack: center;
-            justify-content: center;
-    text-align: center;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    width: 20px;
-    z-index: 1; }
-    .ExpandableList .ExpandableLink__Icon .icon:before {
-      color: #009884;
-      content: '\e611';
-      font-family: "Sapphire-Icon-Font";
-      font-size: 0.7em; }
-    .ExpandableList .ExpandableLink__Icon .icon:hover {
-      background-color: #f2fffd; }
-
-.ExpandableList .ExpandableLink__Link {
-  display: table-cell;
-  font-size: 1.143em;
-  padding-right: 15px;
-  vertical-align: middle;
-  width: 100%; }
-
-.ExpandableList .ExpandableLink__Content .ExpandableContent {
-  border-bottom: none;
-  padding: 0 15px; }
-  .ExpandableList .ExpandableLink__Content .ExpandableContent, .ExpandableList .ExpandableLink__Content .ExpandableContent:hover {
-    background-color: transparent; }
-
-.AR .ExpandableList .ExpandableLink__Link,
-.FA .ExpandableList .ExpandableLink__Link {
-  padding-left: 15px;
-  padding-right: 0; }
 
 .FileUpload {
   -webkit-box-align: center;
@@ -15829,52 +15762,6 @@ body.PanelOpened .daterangepicker {
   margin-left: 0;
   margin-right: 15px; }
 
-.ExpandableList_SecondaryLine {
-  /* margin-top: 10px; */ }
-
-.ExpandableList_SecondaryLine {
-  border-bottom: 1px solid #c9cdce;
-  display: table;
-  height: auto;
-  width: 100%; }
-
-.ExpandableList_SecondaryLine:hover {
-  background-color: rgba(255, 255, 255, 0.3); }
-
-.ExpandableList_SecondaryLine > div > div:not(.Placeholder) {
-  display: table-cell;
-  vertical-align: middle; }
-
-.ExpandableList_SecondaryLine > div > div.Filler {
-  padding: 0 2.083rem; }
-
-.ExpandableList_SecondaryLine > div > div.Label {
-  line-height: 1.4em;
-  padding: .5rem 0;
-  padding-left: 50px;
-  white-space: normal;
-  width: 100%; }
-
-.ExpandableList_SecondaryLine > div > div.Label > [description] {
-  color: #4d5c66;
-  font-size: 1rem; }
-
-.ExpandableList_SecondaryLine > div > div.Action {
-  color: #c9cdce; }
-
-.ExpandableList_SecondaryLine > div:last-child:empty {
-  display: none; }
-
-.ExpandableList_SecondaryLine > div {
-  width: 100%; }
-
-div.ExpandableList-MainLine > div.ExpandableContent > span {
-  display: table-row-group;
-  width: 100%; }
-
-.ExpandableList_SecondaryLine > div > div.Action .InvertIconLabel {
-  margin-right: 10px; }
-
 .ExpandableServerSide {
   background-color: #fff;
   padding: 0 10px;
@@ -16054,6 +15941,39 @@ div.ExpandableList-MainLine > div.ExpandableContent > span {
     font-family: "LatoBold"; }
   .ExpandableSmaller > div + span {
     display: block !important; }
+
+.ExpandedList {
+  border-bottom: 1px solid #d6d6d6;
+  display: table;
+  height: auto;
+  width: 100%; }
+  .ExpandedList:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+  .ExpandedList > div > div:not(.Placeholder) {
+    display: table-cell;
+    vertical-align: middle; }
+  .ExpandedList > div > div.Filler {
+    padding: 0 2.083rem; }
+  .ExpandedList > div > div.Label {
+    line-height: 1.4em;
+    padding: 0.5rem 0;
+    padding-left: 50px;
+    white-space: normal;
+    width: 100%; }
+  .ExpandedList > div > div.Label > [description] {
+    color: #858585;
+    font-size: 1rem; }
+  .ExpandedList > div > div.Action {
+    color: #adadad; }
+  .ExpandedList > div:last-child:empty {
+    display: none; }
+  .ExpandedList > div {
+    width: 100%; }
+  .ExpandedList > div.ExpandableContent > span {
+    display: table-row-group;
+    width: 100%; }
+  .ExpandedList > div > div.Action .InvertIconLabel {
+    margin-right: 10px; }
 
 .ExpiryCard {
   border-radius: 2px;
