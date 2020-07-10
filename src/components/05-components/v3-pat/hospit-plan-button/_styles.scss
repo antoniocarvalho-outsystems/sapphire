@@ -1,0 +1,41 @@
+.HospitPlanButton {
+	background-color: transparent;
+	border-radius: 5px;
+	color: $regular-gray;
+	font-family: $font-family-latin-bold;
+	font-size: 1.143em;
+	height: 48px;
+	min-width: 180px;
+	padding: 13px 10px 12px 10px;
+
+	&.Selected {
+		background-color: $regular-eta;
+		color: $regular-beta;
+	}
+
+	&_Count {
+		float: right;
+	}
+
+	&_Icon {
+		margin-right: 12px;
+	}
+
+	&_Text {
+		margin-right: 35px;
+	}
+}
+
+.AR,
+.FA {
+	.HospitPlanButton {
+		direction: ltr;
+		transform: scale(-1, 1);
+
+		&_Count,
+		&_Icon,
+		&_Text {
+			transform: scale(-1, 1);
+		}
+	}
+}
