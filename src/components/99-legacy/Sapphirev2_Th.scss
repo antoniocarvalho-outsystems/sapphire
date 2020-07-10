@@ -23660,172 +23660,172 @@ span.select2-container.select2-container--default.select2-container--open {
 
 /*ListContainer Style*/
 
-.DropListWrapp {
-  color: #000;
-  font-size: 14px;
-  padding: 10px;
-  position: relative;
-  white-space: nowrap;
-}
+// .DropListWrapp {
+//   color: #000;
+//   font-size: 14px;
+//   padding: 10px;
+//   position: relative;
+//   white-space: nowrap;
+// }
 
-.DropListWrapp.openIcon {
-  background-color: #fff;
-  border: 1px solid #cccccc;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 9999;
-}
+// .DropListWrapp.openIcon {
+//   background-color: #fff;
+//   border: 1px solid #cccccc;
+//   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+//   position: relative;
+//   z-index: 9999;
+// }
 
-.DropListMenuWrapp {
-  position: relative;
-}
+// .DropListMenuWrapp {
+//   position: relative;
+// }
 
-.DropListWrapp .DropListWrapp_button {
-  cursor: pointer;
-  padding-right: 26px;
-  position: relative;
-}
+// .DropListWrapp .DropListWrapp_button {
+//   cursor: pointer;
+//   padding-right: 26px;
+//   position: relative;
+// }
 
-/*IsDisable*/
-.DropListWrapp .DropListWrapp_button.IsDisable {
-  color: #929292;
-  pointer-events: none;
-}
+// /*IsDisable*/
+// .DropListWrapp .DropListWrapp_button.IsDisable {
+//   color: #929292;
+//   pointer-events: none;
+// }
 
-.DropListWrapp .DropListWrapp_button:after {
-  content: '\e69e';
-  font-family: 'Sapphire-Icon-Font';
-  font-size: 9px;
-  line-height: 20px;
-  position: absolute;
-  right: 8px;
-  top: 0;
-  transform: rotate(90deg);
-}
+// .DropListWrapp .DropListWrapp_button:after {
+//   content: '\e69e';
+//   font-family: 'Sapphire-Icon-Font';
+//   font-size: 9px;
+//   line-height: 20px;
+//   position: absolute;
+//   right: 8px;
+//   top: 0;
+//   transform: rotate(90deg);
+// }
 
-.DropListWrapp.openIcon .DropListWrapp_button:after {
-  transform: rotate(270deg);
-}
+// .DropListWrapp.openIcon .DropListWrapp_button:after {
+//   transform: rotate(270deg);
+// }
 
-.DropListWrapp_content.show .DropListMenuWrapp_subItem:not(:empty) {
-  background-color: #fff;
-  border: 1px solid #f1f1f1;
-  padding: 10px;
-  position: absolute;
-}
+// .DropListWrapp_content.show .DropListMenuWrapp_subItem:not(:empty) {
+//   background-color: #fff;
+//   border: 1px solid #f1f1f1;
+//   padding: 10px;
+//   position: absolute;
+// }
 
-.DropListWrapp_button a:link:hover,
-.DropListWrapp_button a:link,
-.DropListWrapp_button {
-  font-weight: 600;
-}
+// .DropListWrapp_button a:link:hover,
+// .DropListWrapp_button a:link,
+// .DropListWrapp_button {
+//   font-weight: 600;
+// }
 
-/*Menu Style Icon*/
-.DropListMenuWrapp_item {
-  line-height: 20px;
-  padding-right: 20px;
-}
+// /*Menu Style Icon*/
+// .DropListMenuWrapp_item {
+//   line-height: 20px;
+//   padding-right: 20px;
+// }
 
-.DropListMenuWrapp_item.iconList label,
-.DropListMenuWrapp_item.iconList {
-  cursor: pointer;
-  position: relative;
-}
+// .DropListMenuWrapp_item.iconList label,
+// .DropListMenuWrapp_item.iconList {
+//   cursor: pointer;
+//   position: relative;
+// }
 
-.DropListMenuWrapp_item.iconList:after {
-  content: '\e69d';
-  font-family: 'Sapphire-Icon-Font';
-  font-size: 9px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+// .DropListMenuWrapp_item.iconList:after {
+//   content: '\e69d';
+//   font-family: 'Sapphire-Icon-Font';
+//   font-size: 9px;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+// }
 
-/*Content Display */
-.DropListWrapp_content {
-  display: none;
-}
+// /*Content Display */
+// .DropListWrapp_content {
+//   display: none;
+// }
 
-.DropListWrapp_content.show {
-  background-color: #fff;
-  border-top: 0;
-  box-sizing: border-box;
-  display: block;
-  left: 0;
-  padding: 10px;
-  position: absolute;
-  width: 100%;
-}
+// .DropListWrapp_content.show {
+//   background-color: #fff;
+//   border-top: 0;
+//   box-sizing: border-box;
+//   display: block;
+//   left: 0;
+//   padding: 10px;
+//   position: absolute;
+//   width: 100%;
+// }
 
-.DropListWrapp_content.show:before {
-  border: 1px solid #ccc;
-  bottom: -1px;
-  content: ' ';
-  left: -1px;
-  position: absolute;
-  right: -1px;
-  top: 0px;
-  z-index: -1;
-}
+// .DropListWrapp_content.show:before {
+//   border: 1px solid #ccc;
+//   bottom: -1px;
+//   content: ' ';
+//   left: -1px;
+//   position: absolute;
+//   right: -1px;
+//   top: 0px;
+//   z-index: -1;
+// }
 
-.DropListWrapp_content.show .DropListMenuWrapp_subItem {
-  display: none;
-}
+// .DropListWrapp_content.show .DropListMenuWrapp_subItem {
+//   display: none;
+// }
 
-.DropListWrapp_content.show .DropListMenuWrapp_subItem.show {
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
-  display: block;
-  position: absolute;
-  top: 0;
-  width: auto;
-  z-index: 1;
-}
+// .DropListWrapp_content.show .DropListMenuWrapp_subItem.show {
+//   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   width: auto;
+//   z-index: 1;
+// }
 
-.DropListWrapp_content.show .DropListMenuWrapp:first-of-type {
-  position: relative;
-}
+// .DropListWrapp_content.show .DropListMenuWrapp:first-of-type {
+//   position: relative;
+// }
 
-.DropListWrapp_content.show .DropListMenuWrapp_subItem.show {
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
-  display: block;
-  left: 100%;
-  position: absolute;
-  top: -10px;
-  width: auto;
-  z-index: 1;
-}
+// .DropListWrapp_content.show .DropListMenuWrapp_subItem.show {
+//   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+//   display: block;
+//   left: 100%;
+//   position: absolute;
+//   top: -10px;
+//   width: auto;
+//   z-index: 1;
+// }
 
-/*AR and FA*/
-.FA .DropListWrapp,
-.AR .DropListWrapp {
-  transform: scale(-1, 1);
-}
+// /*AR and FA*/
+// .FA .DropListWrapp,
+// .AR .DropListWrapp {
+//   transform: scale(-1, 1);
+// }
 
-.FA .DropListWrapp .DropListWrapp_button>*,
-.AR .DropListWrapp .DropListWrapp_button>* {
-  transform: scale(-1, 1);
-}
+// .FA .DropListWrapp .DropListWrapp_button>*,
+// .AR .DropListWrapp .DropListWrapp_button>* {
+//   transform: scale(-1, 1);
+// }
 
-.FA .DropListMenuWrapp_item,
-.AR .DropListMenuWrapp_item {
-  padding-left: 0px;
-  padding-right: 17px;
-}
+// .FA .DropListMenuWrapp_item,
+// .AR .DropListMenuWrapp_item {
+//   padding-left: 0px;
+//   padding-right: 17px;
+// }
 
-.FA .DropListWrapp_content.show .DropListMenuWrapp_item>*,
-.AR .DropListWrapp_content.show .DropListMenuWrapp_item>* {
-  transform: scale(-1, 1);
-}
+// .FA .DropListWrapp_content.show .DropListMenuWrapp_item>*,
+// .AR .DropListWrapp_content.show .DropListMenuWrapp_item>* {
+//   transform: scale(-1, 1);
+// }
 
-.FA .DropListWrapp .DropListWrapp_button,
-.AR .DropListWrapp .DropListWrapp_button {
-  padding-left: 0;
-}
+// .FA .DropListWrapp .DropListWrapp_button,
+// .AR .DropListWrapp .DropListWrapp_button {
+//   padding-left: 0;
+// }
 
-.FA .DropListMenuWrapp_item,
-.AR .DropListMenuWrapp_item {
-  padding-right: 20px;
-}
+// .FA .DropListMenuWrapp_item,
+// .AR .DropListMenuWrapp_item {
+//   padding-right: 20px;
+// }
 
 /*9.159 Sapphire Patterns > MultipleSelectionButton */
 
