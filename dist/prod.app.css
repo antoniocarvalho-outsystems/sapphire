@@ -1,4 +1,4 @@
-/*! Version: 5.1.910027 || Generated: Fri Jul 10 2020 15:47:22 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910028 || Generated: Fri Jul 10 2020 16:16:16 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -18171,6 +18171,8 @@ div.ui-timepicker-container {
     font-size: 1.714em;
     height: 68px;
     padding: 8px; }
+    .RoomBoxOT .Counter .ColorGreyText {
+      font-size: 14px; }
   .RoomBoxOT .Columns .Column {
     margin-bottom: 0; }
   .RoomBoxOT .RoomNameSmall {
@@ -34471,29 +34473,6 @@ a.Button.Icon:hover,
 /*------------------------------------------------------------*/
 /* 9.19 Sapphire Patterns > Contents > SectionRegister ********/
 /*------------------------------------------------------------*/
-.MainSection {
-  display: table;
-  width: 100%; }
-
-.SectionRegisterTitle {
-  color: #123e55;
-  display: table-cell;
-  font-weight: bold;
-  white-space: nowrap;
-  width: 2%; }
-
-.DivBorder {
-  display: table-cell;
-  width: 98%; }
-
-.tablet .DivBorder {
-  display: table-cell;
-  width: 38%; }
-
-.phone .DivBorder {
-  display: table-cell;
-  width: 20%; }
-
 /*------------------------------------------------------------*/
 /* 9.20 Sapphire Patterns > Contents > SmallContainer *********/
 /*------------------------------------------------------------*/
