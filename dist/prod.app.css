@@ -1,4 +1,4 @@
-/*! Version: 5.1.910026 || Generated: Fri Jul 10 2020 14:32:57 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910027 || Generated: Fri Jul 10 2020 15:47:22 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17560,65 +17560,53 @@ div.ui-timepicker-container {
 .AddLine {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px; }
-
-.AddLine_HeaderItems {
-  padding: 8px 0 6px 10px; }
-
-.FA .AddLine_HeaderItems,
-.AR .AddLine_HeaderItems {
-  padding: 8px 10px 6px 0; }
-
-.AddLine_HeaderItems > div {
-  margin-left: auto;
-  margin-right: 15px;
-  vertical-align: middle;
-  white-space: nowrap; }
+  .AddLine_HeaderItems {
+    padding: 8px 0 6px 10px; }
+    .AddLine_HeaderItems > div {
+      margin-left: auto;
+      margin-right: 15px;
+      vertical-align: middle;
+      white-space: nowrap; }
+  .AddLine__ContentContainer {
+    padding: 20px 0; }
+  .AddLine_FooterItems div:last-child {
+    float: right;
+    margin-right: 10px; }
+  .AddLine__ContentContainer {
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    line-height: 33px;
+    min-height: 64px;
+    vertical-align: middle; }
+    .AddLine__ContentContainer.TextCenter {
+      text-align: center; }
+  .AddLine_SubContentContainer {
+    border-bottom: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+    .AddLine_SubContentContainer .AddLine__Footer {
+      padding: 20px 0; }
 
 .desktop.small .AddLine_HeaderItems > div {
   margin-right: 5px; }
 
-.FA .AddLine_HeaderItems > div,
-.AR .AddLine_HeaderItems > div {
-  margin-left: 15px;
-  margin-right: auto;
-  vertical-align: middle; }
+.AR .AddLine_HeaderItems,
+.FA .AddLine_HeaderItems {
+  padding: 8px 10px 6px 0; }
+  .AR .AddLine_HeaderItems > div,
+  .FA .AddLine_HeaderItems > div {
+    margin-left: 15px;
+    margin-right: auto;
+    vertical-align: middle; }
 
-.AddLine__ContentContainer {
-  padding: 20px 0; }
-
-.AddLine_FooterItems div:last-child {
-  float: right;
-  margin-right: 10px; }
-
-.FA .AddLine_FooterItems div:last-child,
-.AR .AddLine_FooterItems div:last-child {
+.AR .AddLine_FooterItems div:last-child,
+.FA .AddLine_FooterItems div:last-child {
   float: left;
   margin-left: 10px;
   margin-right: auto; }
-
-.AddLine__ContentContainer {
-  background: #fff;
-  border: solid 1px #d3d6d7;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  line-height: 33px;
-  min-height: 64px;
-  vertical-align: middle; }
-
-.AddLine__ContentContainer.TextCenter {
-  text-align: center; }
-
-.AddLine_SubContentContainer {
-  border-bottom: solid 1px #d3d6d7;
-  border-left: solid 1px #d3d6d7;
-  border-right: solid 1px #d3d6d7;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
-
-.AddLine_SubContentContainer .AddLine__Footer {
-  padding: 20px 0; }
-
-.SurgeriesListContainer .AddLine_SubContentContainer {
-  background-color: #f7f4ef; }
 
 .LineCardList {
   background-color: #fff;
@@ -17781,6 +17769,45 @@ div.ui-timepicker-container {
 .FA .LineCheckCard_icon {
   padding-left: 0;
   padding-right: 8px; }
+
+.LineContent {
+  margin-left: 10px;
+  vertical-align: middle; }
+  .LineContent_Items > div {
+    line-height: 15px;
+    max-height: 34px; }
+  .LineContent .Actions_LineContent {
+    line-height: 34px; }
+
+.desktop.small .LineContent_Items {
+  white-space: nowrap; }
+  .desktop.small .LineContent_Items > div {
+    margin-right: 5px; }
+
+.desktop.hd .LineContent_Items > div, .desktop.big .LineContent_Items > div {
+  margin-right: 15px; }
+
+.desktop .LineContent_Items > div {
+  margin-right: 15px; }
+
+.tablet .LineContent_Items,
+.tablet .Actions_LineContent {
+  width: 100%; }
+
+.tablet .Actions_LineContent {
+  text-align: center; }
+
+.AR .LineContent,
+.FA .LineContent {
+  margin-left: auto;
+  margin-right: 10px; }
+  .AR .LineContent_Items > div,
+  .FA .LineContent_Items > div {
+    margin-left: 15px;
+    margin-right: auto; }
+  .AR .LineContent .Actions_LineContent .icon,
+  .FA .LineContent .Actions_LineContent .icon {
+    margin-right: 5px; }
 
 .LineDetailsExpandBox div.ExpandableHeader__right {
   background-color: #fff;
@@ -18148,7 +18175,7 @@ div.ui-timepicker-container {
     margin-bottom: 0; }
   .RoomBoxOT .RoomNameSmall {
     font-family: "LatoBold";
-    padding-top: 10px; }
+    padding: 10px; }
   .RoomBoxOT .RoomTypeSmall {
     font-size: 0.857em;
     padding-bottom: 10px; }
@@ -34441,57 +34468,6 @@ a.Button.Icon:hover,
 /*------------------------------------------------------------*/
 /* 9.18 Sapphire Patterns > Contents > LineContent ************/
 /*------------------------------------------------------------*/
-.LineContent {
-  margin-left: 10px;
-  vertical-align: middle; }
-
-.FA .LineContent,
-.AR .LineContent {
-  margin-left: auto;
-  margin-right: 10px; }
-
-.desktop.small .LineContent_Items {
-  white-space: nowrap; }
-
-.desktop.small .LineContent_Items > div {
-  margin-right: 5px; }
-
-.desktop.hd .LineContent_Items > div,
-.desktop.big .LineContent_Items > div {
-  margin-right: 15px; }
-
-.desktop .LineContent_Items > div {
-  margin-right: 15px; }
-
-.LineContent_Items > div {
-  line-height: 15px;
-  max-height: 34px; }
-
-.FA .LineContent_Items > div,
-.AR .LineContent_Items > div {
-  margin-left: 15px;
-  margin-right: auto; }
-
-.Actions_LineContent {
-  line-height: 34px; }
-
-.tablet .LineContent_Items,
-.tablet .Actions_LineContent {
-  width: 100%; }
-
-.tablet .Actions_LineContent {
-  text-align: center; }
-
-.phone .Actions_LineContent {
-  display: block; }
-
-.phone .LineContent_Items > div {
-  margin-top: 10px; }
-
-.FA .Actions_LineContent .icon,
-.AR .Actions_LineContent .icon {
-  margin-right: 5px; }
-
 /*------------------------------------------------------------*/
 /* 9.19 Sapphire Patterns > Contents > SectionRegister ********/
 /*------------------------------------------------------------*/
