@@ -1,0 +1,41 @@
+.InfoAreaBox {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	color: $regular-beta;
+	font-family: $font-family-latin-bold;
+	font-size: 1.429em;
+	line-height: 47px;
+	min-height: 87px;
+	overflow: hidden;
+	padding: 20px;
+	position: relative;
+	vertical-align: middle;
+
+	&:after {
+		bottom: 0;
+		color: rgba(0, 152, 132, 0.2);
+		content: '\e625';
+		font-family: $font-family-icons;
+		font-size: 103px;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 400;
+		height: 45px;
+		margin: auto;
+		position: absolute;
+		right: 20px;
+		text-transform: none;
+		top: 0;
+		vertical-align: middle;
+	}
+}
+
+.AR,
+.FA {
+	.InfoAreaBox:after {
+		left: 20px;
+		right: auto;
+	}
+}
