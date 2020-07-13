@@ -1,0 +1,37 @@
+.ExpandableGroup {
+	.ExpandableGroupItem {
+		margin-bottom: 10px;
+
+		&.isOpen {
+			.ExpandableGroupItem-header {
+				&:before {
+					top: 2px;
+					transform: rotate(180deg);
+				}
+			}
+
+			.ExpandableGroupItem-content {
+				display: block;
+			}
+		}
+
+		&-header {
+			cursor: pointer;
+			padding-left: 20px;
+			position: relative;
+
+			&:before {
+				color: $regular-beta;
+				content: '\e610';
+				font-family: $font-family-icons;
+				font-size: 1rem;
+				left: 0;
+				position: absolute;
+			}
+		}
+
+		&-content {
+			display: none;
+		}
+	}
+}
