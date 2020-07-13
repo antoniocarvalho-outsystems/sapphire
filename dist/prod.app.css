@@ -1,4 +1,4 @@
-/*! Version: 5.1.910034 || Generated: Mon Jul 13 2020 14:06:25 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910035 || Generated: Mon Jul 13 2020 15:06:05 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -8697,6 +8697,21 @@ a.Button.IsDefault,
         .LayoutBase .SectionExpandable_header .Heading2.SectionExpandable__icon span:hover {
           background-color: #f2fffd; }
 
+.StructureContainer {
+  display: table;
+  vertical-align: middle;
+  width: 100%; }
+
+.StructureContent {
+  display: table-row; }
+
+.StructureCollumns {
+  display: table-cell;
+  padding: 0 5px; }
+
+.StructureContainer_Actions {
+  display: table-cell; }
+
 .DesignSystem .SuperCard,
 .LayoutBlank .SuperCard,
 .LayoutBase .SuperCard {
@@ -15567,6 +15582,28 @@ body.PanelOpened .daterangepicker {
 .FA .DynamicTable__Rows .PersonCard {
   margin-left: auto;
   margin-right: -12px; }
+
+.ExpandableGroup .ExpandableGroupItem {
+  margin-bottom: 10px; }
+  .ExpandableGroup .ExpandableGroupItem.isOpen .ExpandableGroupItem-header:before {
+    top: 2px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .ExpandableGroup .ExpandableGroupItem.isOpen .ExpandableGroupItem-content {
+    display: block; }
+  .ExpandableGroup .ExpandableGroupItem-header {
+    cursor: pointer;
+    padding-left: 20px;
+    position: relative; }
+    .ExpandableGroup .ExpandableGroupItem-header:before {
+      color: #009884;
+      content: '\e610';
+      font-family: "Sapphire-Icon-Font";
+      font-size: 1rem;
+      left: 0;
+      position: absolute; }
+  .ExpandableGroup .ExpandableGroupItem-content {
+    display: none; }
 
 .ExpandableLink--expanded .ExpandableLink__Icon {
   -webkit-transform: rotate(-180deg);
@@ -35415,21 +35452,6 @@ a.Button.Icon:hover,
 /*-------------------------------------------------------------------------------------*/
 /* 9.68 Sapphire Patterns > Custom_Patterns > Structure *********/
 /*-------------------------------------------------------------------------------------*/
-.StructureContainer {
-  display: table;
-  vertical-align: middle;
-  width: 100%; }
-
-.StructureContent {
-  display: table-row; }
-
-.StructureCollumns {
-  display: table-cell;
-  padding: 0 5px; }
-
-.StructureContainer_Actions {
-  display: table-cell; }
-
 /*-------------------------------------------------------------------------------------*/
 /* 9.69 Sapphire Patterns > Custom_Patterns > TimelineNoItems *********/
 /*-------------------------------------------------------------------------------------*/
