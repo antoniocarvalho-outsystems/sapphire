@@ -1,0 +1,264 @@
+html,
+body,
+form,
+.Page {
+  height: auto !important;
+}
+
+.LoginBackground {
+  background: no-repeat;
+  background-image: url('/Login_UI/BackgroundImage.aspx?BackgroundImageId=3');
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  min-height: 643px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.LoginMain {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+
+.LoginMain_header {
+  padding-top: 6%;
+  width: 100%;
+}
+
+.LoginMain__headerTitle,
+.LoginMain__headerSubtitle {
+  color: #ffffff;
+  display: block;
+  font-size: 44px;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.LoginMain_content {
+  display: block;
+  height: 59%;
+  min-height: 370px;
+  padding: 2% 0;
+  position: relative;
+  text-align: center;
+}
+
+.LoginMain__fingerPrint {}
+
+.LoginMain__loginBox {}
+
+.LoginMain__loginSamples {
+  background-color: $dark-blue; // #115873;
+  display: inline-block;
+  height: 340px;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto !important;
+  position: relative;
+  text-align: left;
+  transition: display 500ms;
+  vertical-align: top;
+  width: 330px;
+  z-index: 1;
+}
+
+
+.LoginMain__loginSamples::-webkit-scrollbar {
+  background-color: #fff;
+  height: 7px;
+  width: 7px;
+}
+
+.LoginMain__loginSamples::-webkit-scrollbar-thumb {
+  border: 5px solid $regular-alpha;
+  border-radius: 0;
+}
+
+
+
+.LoginMain_footer {
+  left: 0;
+  padding-bottom: 15px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.LoginMain__footerIcons {
+  text-align: center;
+  width: 100%;
+}
+
+
+.LoginMain__fingerPrint>.LoginBox {
+  width: 258px;
+}
+
+
+
+.LoginBox {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  height: 340px;
+  width: 250px;
+  width: 280px;
+}
+
+.LoginForm {
+  color: #124A62;
+  margin: 0;
+  padding: 65px 0px 0px;
+}
+
+.LoginText {
+  color: #115873;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.LoginTextAR {
+  color: rgba(17, 88, 115, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  height: 17px;
+  line-height: 18px;
+  text-align: right;
+  width: 96px;
+}
+
+.LoginMain__fingerPrint>div {
+  display: inline-block;
+}
+
+.BorderOr {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  border-radius: 50% !important;
+  bottom: 100px !important;
+  height: 40px !important;
+  line-height: 18px !important;
+  margin: 0 10px !important;
+  position: relative !important;
+  top: auto !important;
+  width: 40px !important;
+}
+
+.BorderOr>span {
+  color: #063f4c;
+  font-size: 14px;
+  font-weight: 400;
+  height: 9px;
+  line-height: 18px;
+  text-align: center;
+  width: 13px;
+}
+
+.LoginForm_user {
+  padding: 0 30px;
+}
+
+.LoginForm_pass {
+  margin-top: 20px;
+  padding: 0 30px;
+}
+
+.LoginForm_action {
+  padding: 0px 30px;
+}
+
+.LoginForm_action a {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.LoginForm_action a>div:first-child {
+  text-align: left;
+}
+
+.LoginForm_action a>div:last-child {
+  text-align: right;
+}
+
+.AR_Text {
+  font-family: 'TajawalRegular';
+}
+
+
+
+
+
+
+
+
+
+
+.SampleUserLine {
+  border-bottom: 1px solid #3d768d;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+}
+
+.LoginMain__loginSamples .ListRecords>div:last-child .SampleUserLine {
+  border-bottom: none;
+}
+
+
+.SampleUserLine_info {
+  color: #FFF;
+  font-size: 15px;
+  margin: 0;
+  padding: 10px 0 10px 20px;
+  vertical-align: top;
+  width: 187px;
+}
+
+.SampleUserLine__name {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.SampleUserLine__role {
+  color: #c3dfe8;
+  font-size: 11px;
+  margin: 0;
+  margin-top: 5px;
+  vertical-align: top;
+}
+
+.SampleUserLine_arrow {
+  display: inline-block;
+  height: 56px;
+  line-height: 54px;
+  position: relative;
+  right: 15px;
+  text-align: end;
+  vertical-align: middle;
+  width: calc(100% - 188px);
+}
+
+.SampleUserLine__arrowWrap {
+  background-color: $regular-alpha;
+  border-radius: 50%;
+  color: #FFF;
+  display: inline-block;
+  font-size: 8px;
+  height: 24px;
+  line-height: 25px;
+  margin: 0 auto;
+  text-align: center;
+  text-align: center;
+  transform: rotate(90deg);
+  width: 24px;
+}
