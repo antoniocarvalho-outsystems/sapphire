@@ -126,7 +126,14 @@
 		var dialogHeight = window.parent.$('.os-internal-Popup.os-internal-ui-dialog').outerHeight();
 
 		if (popupSize === 'Small') {
-			$osPopupContent.height(contentHeight);
+			var parentHeight = $(window.parent).height();
+
+			if (contentHeight > parentHeight) {
+				$osPopupContent.height(parentHeight - 70);
+				$body.height($osPopupContent.height() - 40);
+			} else {
+				$osPopupContent.height(contentHeight);
+			}
 		} else {
 			if (contentHeight < dialogHeight && SapphireWidgets.LayoutPopup.config.isFixedHeight) {
 				var forcedBodyHeight = dialogHeight - headerHeight - introHeight - footerHeight - 40;
