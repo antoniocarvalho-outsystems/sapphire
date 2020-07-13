@@ -1,4 +1,4 @@
-/*! Version: 5.0.910059 || Generated: Thu Jul 09 2020 14:10:31 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.0.910060 || Generated: Mon Jul 13 2020 10:02:34 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13703,17 +13703,14 @@ body.PanelOpened .daterangepicker {
   padding: 0 0 0 10px;
   width: 50px; }
 
-.rtl.daterangepicker select.hourselect,
-.rtl.daterangepicker select.minuteselect,
-.rtl.daterangepicker select.secondselect,
-.rtl.daterangepicker select.ampmselect {
-  padding: 0 16px 0 0; }
-
 .daterangepicker .calendar-time {
   line-height: 30px;
   margin: 4px auto 0 auto;
   position: relative;
   text-align: center; }
+
+.rtl.daterangepicker .calendar-time {
+  direction: ltr; }
 
 .daterangepicker .calendar-time select.disabled {
   color: #ccc;
