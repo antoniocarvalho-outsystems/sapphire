@@ -1,31 +1,44 @@
 .SessionList {
-	.SessionList_Header {
-		background-color: $sapphire-white;
-		border: 1px solid $mid-light-grey;
+	&:not(.IsDisable) {
+		.SessionList_Content {
+			border: 1px solid $light-grey;
+			border-top: none;
+		}
+	}
+
+	&.IsDisable {
+		.SessionList_Header {
+			background-color: $sapphire-white;
+			border: none;
+			border-color: $light-grey;
+		}
+	}
+
+	&_Header {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
 		display: table;
 		height: 60px;
 		padding: 5px 10px;
 		width: 100%;
 	}
-	.SessionList__Wrapper {
+
+	&__Wrapper {
 		display: table-cell;
 		vertical-align: middle;
 		width: calc(100% - 40px);
+
 		> div {
 			vertical-align: middle;
 		}
 	}
-	&:not(.IsDisable) {
-		.SessionList_Content {
-			border: 1px solid $mid-light-grey;
-			border-top: none;
-		}
-	}
-	.SessionList_Content {
+
+	&_Content {
 		.SessionList {
 			.SessionList_Content {
 				border: none;
 			}
+
 			&:first-of-type {
 				> .SessionList_Header {
 					&:first-of-type {
@@ -34,6 +47,11 @@
 				}
 			}
 		}
+
+		.SessionList_Header {
+			border: none;
+		}
+
 		.ListRecords {
 			span {
 				&:first-child {
@@ -42,6 +60,7 @@
 					}
 				}
 			}
+
 			> div {
 				&:first-of-type {
 					> .SessionList {
@@ -53,39 +72,8 @@
 			}
 		}
 	}
-	.ListRecords {
-		.SessionList.IsDisable {
-			.SessionList_Header {
-				border-left: none;
-				border-right: none;
-				border-top: 1px solid $light-grey;
-			}
-			&:first-of-type {
-				border-top: 1px solid $light-grey;
-			}
-			&:last-of-type {
-				.SessionList_Header {
-					border-bottom: none;
-				}
-			}
-		}
-		.SessionList {
-			.SessionList_Header {
-				border-bottom: none;
-				border-left: none;
-				border-right: none;
-				height: 50px;
-			}
-			&:last-of-type {
-				.SessionList_Header {
-					border-bottom: none;
-				}
-			}
-		}
-	}
-}
-.SessionList_Header {
-	.SessionList__Icon {
+
+	&__Icon {
 		color: $regular-alpha;
 		cursor: pointer;
 		display: table-cell;
@@ -93,42 +81,71 @@
 		transform: rotate(0);
 		vertical-align: middle;
 		width: 40px;
+
+		&.Rotation {
+			transform: rotate(180deg);
+		}
 	}
-	.SessionList__Number {
+
+	&__Number {
 		color: $dark-grey;
 		display: table-cell;
-		font-size: 18px;
+		font-size: 1.143em;
 		text-align: center;
 		vertical-align: middle;
 		width: 40px;
 	}
-	.SessionList___Detail {
+
+	&___Detail {
 		color: $dark-grey;
-		font-size: 18px;
+		font-size: 1.143em;
 	}
-	.SessionList___Actions {
+
+	&___Actions {
 		text-align: right;
+
 		a {
 			display: inline-block;
 		}
 	}
-	.SessionList__Icon.Rotation {
-		transform: rotate(180deg);
+
+	&__ExtraInfo {
+		display: table-cell;
+		vertical-align: middle;
 	}
-}
-.SessionList__ExtraInfo {
-	display: table-cell;
-	vertical-align: middle;
-}
-.SessionList.IsDisable {
-	.SessionList_Header {
-		background-color: $sapphire-white;
-		border: none;
-		border-color: $light-grey;
-	}
-}
-.SessionList_Content {
-	.SessionList_Header {
-		border: none;
+
+	.ListRecords {
+		.SessionList.IsDisable {
+			.SessionList_Header {
+				border-left: none;
+				border-right: none;
+				border-top: 1px solid $light-grey;
+			}
+
+			&:first-of-type {
+				border-top: 1px solid $light-grey;
+			}
+
+			&:last-of-type {
+				.SessionList_Header {
+					border-bottom: none;
+				}
+			}
+		}
+
+		.SessionList {
+			.SessionList_Header {
+				border-bottom: none;
+				border-left: none;
+				border-right: none;
+				height: 50px;
+			}
+
+			&:last-of-type {
+				.SessionList_Header {
+					border-bottom: none;
+				}
+			}
+		}
 	}
 }
