@@ -1,4 +1,4 @@
-/*! Version: 5.1.910032 || Generated: Mon Jul 13 2020 10:01:03 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910033 || Generated: Mon Jul 13 2020 12:33:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7797,77 +7797,6 @@ a.Button.IsDefault,
 .FA .InputIconSapphire span a > span {
   left: 5px;
   right: auto; }
-
-.InteractionContainer {
-  padding: 20px 15px 1px 30px; }
-  .InteractionContainer .InteractionItem {
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-style: solid;
-    border-width: 0 2px 2px;
-    margin-bottom: 20px;
-    padding: 10px 35px;
-    position: relative; }
-    .InteractionContainer .InteractionItem:before {
-      border-radius: 50%;
-      border-style: solid;
-      border-width: 2px;
-      color: #c19323;
-      content: '\e64e';
-      font-family: "Sapphire-Icon-Font";
-      font-size: 1.143em;
-      height: 35px;
-      left: -20px;
-      line-height: 32px;
-      position: absolute;
-      text-align: center;
-      top: 0px;
-      width: 35px; }
-    .InteractionContainer .InteractionItem.Precaution {
-      border-color: #fbc02d; }
-      .InteractionContainer .InteractionItem.Precaution:before {
-        background-color: #ffeab5;
-        border-color: #fbc02d;
-        color: #c19323; }
-    .InteractionContainer .InteractionItem.TakeAcc {
-      border-color: #edca0a; }
-      .InteractionContainer .InteractionItem.TakeAcc:before {
-        background-color: #feffc9;
-        border-color: #edca0a;
-        color: #c5a51a; }
-    .InteractionContainer .InteractionItem.ConInd {
-      border-color: #ffa000; }
-      .InteractionContainer .InteractionItem.ConInd:before {
-        background-color: #fcc891;
-        border-color: #ffa000;
-        color: #c37b03; }
-    .InteractionContainer .InteractionItem.DisAsso {
-      border-color: #e6e2aa; }
-      .InteractionContainer .InteractionItem.DisAsso:before {
-        background-color: #f5f4e0;
-        border-color: #e6e2aa;
-        color: #928d09; }
-    .InteractionContainer .InteractionItem.None {
-      border-color: #333333; }
-      .InteractionContainer .InteractionItem.None:before {
-        background-color: #f3f3f3;
-        border-color: #333333;
-        color: #333333; }
-    .InteractionContainer .InteractionItem .IntDesc + .IntSubTitle {
-      margin-top: 15px; }
-    .InteractionContainer .InteractionItem .IntTitle {
-      font-size: 1.429em;
-      margin-bottom: 10px; }
-    .InteractionContainer .InteractionItem .IntSubTitle {
-      color: #858585;
-      font-size: 1.143em;
-      text-transform: uppercase; }
-    .InteractionContainer .InteractionItem > div {
-      margin: 0; }
-
-.AR .InteractionContainer,
-.FA .InteractionContainer {
-  padding: 20px 30px 1px 15px; }
 
 .lds-ring {
   display: inline-block;
