@@ -282,18 +282,22 @@ body.PanelOpened .daterangepicker {
   width: 50px;
 }
 
-.rtl.daterangepicker select.hourselect,
-.rtl.daterangepicker select.minuteselect,
-.rtl.daterangepicker select.secondselect,
-.rtl.daterangepicker select.ampmselect {
-  padding: 0 16px 0 0;
-}
+// .rtl.daterangepicker select.hourselect,
+// .rtl.daterangepicker select.minuteselect,
+// .rtl.daterangepicker select.secondselect,
+// .rtl.daterangepicker select.ampmselect {
+//   padding: 0 16px 0 0;
+// }
 
 .daterangepicker .calendar-time {
   line-height: 30px;
   margin: 4px auto 0 auto;
   position: relative;
   text-align: center;
+}
+
+.rtl.daterangepicker .calendar-time {
+  direction: ltr;
 }
 
 .daterangepicker .calendar-time select.disabled {
