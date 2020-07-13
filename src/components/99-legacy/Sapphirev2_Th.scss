@@ -15446,121 +15446,121 @@ a.Button.Icon:hover {
 /* 9.63 Sapphire Patterns > Custom_Patterns > PrescriptionCardList *********/
 /*-------------------------------------------------------------------------------------*/
 
-.PrescriptionCardList {
-  border-radius: 4px;
-}
+// .PrescriptionCardList {
+//   border-radius: 4px;
+// }
 
-.PrescriptionCardList .PrescriptionCard .InteractionText {
-  margin-top: 0;
-}
+// .PrescriptionCardList .PrescriptionCard .InteractionText {
+//   margin-top: 0;
+// }
 
-.PrescriptionCardList .PrescriptionCard:first-of-type {
-  border: 0;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
+// .PrescriptionCardList .PrescriptionCard:first-of-type {
+//   border: 0;
+//   border-top-left-radius: 4px;
+//   border-top-right-radius: 4px;
+// }
 
-.PrescriptionCardList .PrescriptionCard:last-of-type {
-  border: 0;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
+// .PrescriptionCardList .PrescriptionCard:last-of-type {
+//   border: 0;
+//   border-bottom-left-radius: 4px;
+//   border-bottom-right-radius: 4px;
+// }
 
-.PrescriptionCardList .PrescriptionCard {
-  border-bottom: 0;
-  border-left: 0;
-  border-radius: 0;
-  border-right: 0;
-}
+// .PrescriptionCardList .PrescriptionCard {
+//   border-bottom: 0;
+//   border-left: 0;
+//   border-radius: 0;
+//   border-right: 0;
+// }
 
-.PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid rgba(77, 92, 102, 0.2);
-}
+// .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
+//   border-top: 1px solid rgba(77, 92, 102, 0.2);
+// }
 
-.PrescriptionCardList.Critical .PrescriptionCard .InformationText {
-  color: #cf113c;
-}
+// .PrescriptionCardList.Critical .PrescriptionCard .InformationText {
+//   color: #cf113c;
+// }
 
-/* PrescriptionCardList Borders*/
+// /* PrescriptionCardList Borders*/
 
-.PrescriptionCardList.Critical {
-  border: 1px solid #cf113c;
-}
+// .PrescriptionCardList.Critical {
+//   border: 1px solid #cf113c;
+// }
 
-.PrescriptionCardList.High {
-  border: 1px solid #ff4326;
-}
+// .PrescriptionCardList.High {
+//   border: 1px solid #ff4326;
+// }
 
-.PrescriptionCardList.Moderate {
-  border: 1px solid #f97d00;
-}
+// .PrescriptionCardList.Moderate {
+//   border: 1px solid #f97d00;
+// }
 
-.PrescriptionCardList.Low {
-  border: 1px solid #ffdc2c;
-}
+// .PrescriptionCardList.Low {
+//   border: 1px solid #ffdc2c;
+// }
 
-.PrescriptionCardList.Information {
-  border: 1px solid #0a2f88;
-}
+// .PrescriptionCardList.Information {
+//   border: 1px solid #0a2f88;
+// }
 
-.PrescriptionCardList.Unknown {
-  border: 1px solid #808080;
-}
+// .PrescriptionCardList.Unknown {
+//   border: 1px solid #808080;
+// }
 
-/* PrescriptionCard Background*/
-.PrescriptionCardList_ShowMore.Critical,
-.PrescriptionCardList.Critical .PrescriptionCard {
-  background-color: #fffafb;
-}
+// /* PrescriptionCard Background*/
+// .PrescriptionCardList_ShowMore.Critical,
+// .PrescriptionCardList.Critical .PrescriptionCard {
+//   background-color: #fffafb;
+// }
 
-.PrescriptionCardList_ShowMore.High,
-.PrescriptionCardList.High .PrescriptionCard {
-  background-color: #fffafa;
-}
+// .PrescriptionCardList_ShowMore.High,
+// .PrescriptionCardList.High .PrescriptionCard {
+//   background-color: #fffafa;
+// }
 
-.PrescriptionCardList_ShowMore.Moderate,
-.PrescriptionCardList.Moderate .PrescriptionCard {
-  background-color: #fffdfa;
-}
+// .PrescriptionCardList_ShowMore.Moderate,
+// .PrescriptionCardList.Moderate .PrescriptionCard {
+//   background-color: #fffdfa;
+// }
 
-.PrescriptionCardList_ShowMore.Low,
-.PrescriptionCardList.Low .PrescriptionCard {
-  background-color: #fffefa;
-}
+// .PrescriptionCardList_ShowMore.Low,
+// .PrescriptionCardList.Low .PrescriptionCard {
+//   background-color: #fffefa;
+// }
 
-.PrescriptionCardList_ShowMore.Information,
-.PrescriptionCardList.Information .PrescriptionCard {
-  background-color: #fafbff;
-}
+// .PrescriptionCardList_ShowMore.Information,
+// .PrescriptionCardList.Information .PrescriptionCard {
+//   background-color: #fafbff;
+// }
 
-.PrescriptionCardList_ShowMore.Unknown,
-.PrescriptionCardList.Unknown .PrescriptionCard {
-  background-color: #fcfcfc;
-}
+// .PrescriptionCardList_ShowMore.Unknown,
+// .PrescriptionCardList.Unknown .PrescriptionCard {
+//   background-color: #fcfcfc;
+// }
 
-/*ShowMore Content*/
+// /*ShowMore Content*/
 
-.PrescriptionCardList .PrescriptionCardList_ShowMore {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-top: 1px solid rgba(77, 92, 102, 0.2);
+// .PrescriptionCardList .PrescriptionCardList_ShowMore {
+//   border-bottom-left-radius: 4px;
+//   border-bottom-right-radius: 4px;
+//   border-top: 1px solid rgba(77, 92, 102, 0.2);
 
-  padding: 15px 0px;
-  text-align: center;
-  width: 100%;
-}
+//   padding: 15px 0px;
+//   text-align: center;
+//   width: 100%;
+// }
 
-.PrescriptionCardList .PrescriptionCardList_ShowMore.hidden {
-  display: none;
-}
+// .PrescriptionCardList .PrescriptionCardList_ShowMore.hidden {
+//   display: none;
+// }
 
-.PrescriptionCardList .PrescriptionCardList_ShowMore a {
-  color: #0a939c;
+// .PrescriptionCardList .PrescriptionCardList_ShowMore a {
+//   color: #0a939c;
 
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-}
+//   font-size: 14px;
+//   font-weight: 600;
+//   line-height: 20px;
+// }
 
 /*-------------------------------------------------------------------------------------*/
 /* 9.64 Sapphire Patterns > Custom_Patterns > RequestEmptyLine *********/
@@ -22683,67 +22683,67 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 // }
 
 /** 9.146 Sapphire Patterns > LineElement **/
-.table_listRecords {
-  border-collapse: collapse;
-  display: table;
-  width: 100%;
-}
+// .table_listRecords {
+//   border-collapse: collapse;
+//   display: table;
+//   width: 100%;
+// }
 
-.LineElement {
-  background: #fff;
-  border: 1px solid #e3e3e4;
-  display: table-row;
-  height: 60px;
-}
+// .LineElement {
+//   background: #fff;
+//   border: 1px solid #e3e3e4;
+//   display: table-row;
+//   height: 60px;
+// }
 
-.LineElement .LineElement_head {
-  background: #efefef;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  display: table-cell;
-  max-width: 270px;
-  min-width: 150px;
-  padding: 5px 10px;
-  vertical-align: middle;
-}
+// .LineElement .LineElement_head {
+//   background: #efefef;
+//   border-left: 1px solid #ddd;
+//   border-right: 1px solid #ddd;
+//   display: table-cell;
+//   max-width: 270px;
+//   min-width: 150px;
+//   padding: 5px 10px;
+//   vertical-align: middle;
+// }
 
-.LineElement .LineElement_main {
-  display: table-cell;
-  padding: 5px 10px;
-  vertical-align: middle;
-}
+// .LineElement .LineElement_main {
+//   display: table-cell;
+//   padding: 5px 10px;
+//   vertical-align: middle;
+// }
 
-.LineElement .LineElement_actions {
-  display: table-cell;
-  min-width: 1px;
-  padding: 5px 10px;
-  text-align: right;
-  vertical-align: middle;
-  white-space: nowrap;
-}
+// .LineElement .LineElement_actions {
+//   display: table-cell;
+//   min-width: 1px;
+//   padding: 5px 10px;
+//   text-align: right;
+//   vertical-align: middle;
+//   white-space: nowrap;
+// }
 
-.LineElement .LineElement_actions>div,
-.LineElement .LineElement_actions>a {
-  display: inline-block;
-  margin: 0;
-}
+// .LineElement .LineElement_actions>div,
+// .LineElement .LineElement_actions>a {
+//   display: inline-block;
+//   margin: 0;
+// }
 
-.AR .LineElement .LineElement_actions,
-.FA .LineElement .LineElement_actions {
-  text-align: left;
-}
+// .AR .LineElement .LineElement_actions,
+// .FA .LineElement .LineElement_actions {
+//   text-align: left;
+// }
 
-.tablet .LineElement .LineElement_head,
-.tablet .LineElement .LineElement_actions,
-.tablet .LineElement .LineElement_main {
-  display: block;
-  max-width: unset;
-  width: 100%;
-}
+// .tablet .LineElement .LineElement_head,
+// .tablet .LineElement .LineElement_actions,
+// .tablet .LineElement .LineElement_main {
+//   display: block;
+//   max-width: unset;
+//   width: 100%;
+// }
 
-.tablet .LineElement .LineElement_actions div {
-  text-align: right;
-}
+// .tablet .LineElement .LineElement_actions div {
+//   text-align: right;
+// }
 
 /** 9.147 Sapphire Patterns > SelectableListNoNotify **/
 

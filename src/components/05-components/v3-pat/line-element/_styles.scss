@@ -1,0 +1,71 @@
+.table_listRecords {
+	border-collapse: collapse;
+	display: table;
+	width: 100%;
+}
+
+.LineElement {
+	background: $regular-white;
+	border: 1px solid $light-grey;
+	display: table-row;
+	height: 60px;
+
+	&_head {
+		background: $body-color;
+		border-left: 1px solid $light-grey;
+		border-right: 1px solid $light-grey;
+		display: table-cell;
+		max-width: 270px;
+		min-width: 150px;
+		padding: 5px 10px;
+		vertical-align: middle;
+	}
+
+	&_main {
+		display: table-cell;
+		padding: 5px 10px;
+		vertical-align: middle;
+	}
+
+	&_actions {
+		display: table-cell;
+		min-width: 1px;
+		padding: 5px 10px;
+		text-align: right;
+		vertical-align: middle;
+		white-space: nowrap;
+
+		> a,
+		> div {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+}
+
+.tablet {
+	.LineElement {
+		&_main,
+		&_actions {
+			display: block;
+			max-width: unset;
+			width: 100%;
+		}
+
+		&_actions div {
+			text-align: right;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.LineElement {
+		&_actions {
+			display: block;
+			max-width: unset;
+			text-align: left;
+			width: 100%;
+		}
+	}
+}
