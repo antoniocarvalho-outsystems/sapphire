@@ -1,7 +1,9 @@
 /* Component TriggerIframeTooltip */
-(function($, window, document, SapphireWidgets) {
-	var create = function(config) {
+(function ($, window, document, SapphireWidgets) {
+	var create = function (config) {
+
 		var $elementId = $('#' + config.elementId);
+
 		$elementId.addClass('tooltip');
 
 		if (config.triggerId === 'click') $elementId.addClass('tooltipstered--pointer');
@@ -21,15 +23,15 @@
 			minWidth: config.minWidth,
 			maxWidth: config.maxWidth,
 			zindex: config.zindex,
-			content:
-				'<iframe src="' + config.URL + '" style="border:none" id="tooltipster-frame" ' + extraDataParams + '></iframe>',
-			functionReady: function(instance, helper) {
+			content: '<iframe id="tooltipster-frame" data-ui="iframe-tooltip" src="' + config.URL + '" style="border:none" ' + extraDataParams + '></iframe>',
+			functionReady: function (instance, helper) {
 				$(helper).css({
 					visibility: 'hidden',
 				});
-				setTimeout(function() {
+				setTimeout(function () {
 					$('.tooltipster-base').css({
 						visibility: 'visible',
+						"minHeight": config.minHeight > 0 ? config.minHeight : 'auto',
 					});
 				}, 500);
 			},
@@ -39,4 +41,5 @@
 	SapphireWidgets.TriggerIframeTooltip = {
 		create,
 	};
+
 })(jQuery, window, document, SapphireWidgets);
