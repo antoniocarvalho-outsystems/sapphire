@@ -21270,30 +21270,30 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 // }
 
 /* wb TimelineSeparator */
-.TimeSeparator {
-  color: #4d5c66;
-  font-size: 18px;
-  font-weight: 700;
-  overflow: hidden;
-  padding: 15px 0 10px 15px;
-}
+// .TimeSeparator {
+//   color: #4d5c66;
+//   font-size: 18px;
+//   font-weight: 700;
+//   overflow: hidden;
+//   padding: 15px 0 10px 15px;
+// }
 
-.TimeSeparator:after {
-  border-top: 1px solid #d3d6d7;
-  content: '';
-  display: inline-block;
-  height: 8px;
-  margin-left: 10px;
-  margin-right: -100%;
-  vertical-align: bottom;
-  width: 100%;
-}
+// .TimeSeparator:after {
+//   border-top: 1px solid #d3d6d7;
+//   content: '';
+//   display: inline-block;
+//   height: 8px;
+//   margin-left: 10px;
+//   margin-right: -100%;
+//   vertical-align: bottom;
+//   width: 100%;
+// }
 
-.FA .TimeSeparator:after,
-.AR .TimeSeparator:after {
-  margin-left: -100%;
-  margin-right: 10px;
-}
+// .FA .TimeSeparator:after,
+// .AR .TimeSeparator:after {
+//   margin-left: -100%;
+//   margin-right: 10px;
+// }
 
 /* wb LineTimeline */
 // .LineTimeLine {

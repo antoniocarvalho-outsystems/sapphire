@@ -1,0 +1,27 @@
+.TimeSeparator {
+	font-family: $font-family-latin-bold;
+	font-size: 1.429em;
+	overflow: hidden;
+	padding: 15px 0 10px 15px;
+
+	&:after {
+		border-top: 1px solid $light-grey;
+		content: '';
+		display: inline-block;
+		height: 8px;
+		margin-left: 10px;
+		margin-right: -100%;
+		vertical-align: bottom;
+		width: 100%;
+	}
+}
+
+.AR,
+.FA {
+	.TimeSeparator {
+		&:after {
+			margin-left: -100%;
+			margin-right: 10px;
+		}
+	}
+}
