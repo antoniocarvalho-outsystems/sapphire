@@ -1,0 +1,166 @@
+.TabularList {
+	&.hideProperty {
+		.TabularListRow-property {
+			display: none;
+		}
+	}
+
+	&.hideActions {
+		.TabularListRow-actions {
+			display: none;
+		}
+	}
+
+	&.isBreaking {
+		.TabularListRow {
+			flex-direction: column;
+		}
+
+		.TabularList-label-onbreak {
+			display: block;
+		}
+
+		.TabularListRow-actions {
+			text-align: left;
+		}
+
+		.TabularListRow.isHeader {
+			display: none;
+		}
+	}
+
+	&-columns-AllEqual {
+		.TabularListRow-values {
+			.TabularListRow-item {
+				flex-basis: 100%;
+				flex-grow: 1;
+			}
+		}
+	}
+
+	&-columns-Auto {
+		.TabularListRow-item {
+			opacity: 0;
+			white-space: nowrap;
+		}
+	}
+
+	&-border-All,
+	&-border-Inside {
+		border-bottom: solid 1px $light-grey;
+	}
+
+	&-border-All .TabularListRow {
+		border-left: solid 1px $light-grey;
+		border-right: solid 1px $light-grey;
+		border-top: solid 1px $light-grey;
+	}
+
+	&-border-Inside {
+		.TabularListRow-actions {
+			border-right: solid 1px $light-grey;
+			border-top: solid 1px $light-grey;
+		}
+
+		.TabularListRow-property {
+			border-left: solid 1px $light-grey;
+			border-top: solid 1px $light-grey;
+		}
+
+		.TabularListRow-values {
+			.TabularListRow-item {
+				border-right: solid 1px $light-grey;
+				border-top: solid 1px $light-grey;
+
+				&:first-child {
+					border-left: solid 1px $light-grey;
+				}
+			}
+		}
+	}
+
+	&-border-Bottom .TabularListRow {
+		border-bottom: solid 1px $light-grey;
+	}
+
+	&-padding-None {
+		padding: 0;
+	}
+
+	&-padding-XSmall {
+		.TabularListRow-property,
+		.TabularListRow-values .TabularListRow-item,
+		.TabularListRow-actions {
+			padding: 3px;
+		}
+	}
+
+	&-padding-Small {
+		.TabularListRow-property,
+		.TabularListRow-values .TabularListRow-item,
+		.TabularListRow-actions {
+			padding: 6px;
+		}
+	}
+
+	&-padding-Medium {
+		.TabularListRow-property,
+		.TabularListRow-values .TabularListRow-item,
+		.TabularListRow-actions {
+			padding: 12px;
+		}
+	}
+
+	&-label-onbreak {
+		display: none;
+	}
+
+	.TabularListRow {
+		&.isHeader {
+			&,
+			.TabularListRow-property,
+			.TabularListRow-values,
+			.TabularListRow-actions {
+				border: none;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.TabularListRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	&-actions,
+	&-property {
+		flex-basis: 50%;
+	}
+
+	&-actions {
+		text-align: right;
+	}
+
+	&-values {
+		display: flex;
+		flex-basis: 100%;
+	}
+}
+
+.AR,
+.FA {
+	.TabularList {
+		&-border-Inside {
+			.TabularListRow-actions {
+				border-left: solid 1px $light-grey;
+				border-right: none;
+			}
+
+			.TabularListRow-property {
+				border-left: none;
+				border-right: solid 1px $light-grey;
+			}
+		}
+	}
+}
