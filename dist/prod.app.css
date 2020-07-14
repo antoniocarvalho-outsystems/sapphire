@@ -1,4 +1,4 @@
-/*! Version: 5.1.910041 || Generated: Tue Jul 14 2020 15:06:22 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910042 || Generated: Tue Jul 14 2020 16:05:04 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -26107,10 +26107,12 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   border-right: solid 1px #d6d6d6;
   border-top: solid 1px #d6d6d6; }
 
-.TabularList-border-Inside .TabularListRow-property,
 .TabularList-border-Inside .TabularListRow-actions {
-  border-left: solid 1px #d6d6d6;
   border-right: solid 1px #d6d6d6;
+  border-top: solid 1px #d6d6d6; }
+
+.TabularList-border-Inside .TabularListRow-property {
+  border-left: solid 1px #d6d6d6;
   border-top: solid 1px #d6d6d6; }
 
 .TabularList-border-Inside .TabularListRow-values .TabularListRow-item {
@@ -26165,6 +26167,49 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     display: -webkit-box;
     display: flex;
     flex-basis: 100%; }
+
+.AR .TabularList-border-Inside .TabularListRow-actions,
+.FA .TabularList-border-Inside .TabularListRow-actions {
+  border-left: solid 1px #d6d6d6;
+  border-right: none; }
+
+.AR .TabularList-border-Inside .TabularListRow-property,
+.FA .TabularList-border-Inside .TabularListRow-property {
+  border-left: none;
+  border-right: solid 1px #d6d6d6; }
+
+.ListRecords.VariationItems {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  width: 100%; }
+
+.VariationItem-value {
+  flex-basis: 100%;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  padding-right: 12px;
+  position: relative;
+  text-align: right; }
+  .VariationItem-value:after {
+    position: absolute;
+    right: 0; }
+  .VariationItem-value[data-critical='True'] {
+    color: #ff3e2d; }
+  .VariationItem-value[data-variation='up']:after {
+    content: '\e913';
+    display: inline-block;
+    font-family: "Sapphire-Icon-Font";
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .VariationItem-value[data-variation='down']:after {
+    content: '\e913';
+    display: inline-block;
+    font-family: "Sapphire-Icon-Font";
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
 
 .TabularScroll {
   display: -webkit-box;
