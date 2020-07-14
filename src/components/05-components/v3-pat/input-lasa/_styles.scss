@@ -1,0 +1,26 @@
+.InputLASA .InputLASA-label {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 2px;
+	box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+	color: $dark-grey;
+	font-size: 1em;
+	height: 36px;
+	line-height: 35px;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+
+body ul.os-internal-ui-autocomplete a {
+	color: #4d5c66 !important;
+}
+
+body ul.os-internal-ui-autocomplete a strong {
+	color: #000 !important;
+}
+
+body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
+	color: #6fcdca !important;
+}
