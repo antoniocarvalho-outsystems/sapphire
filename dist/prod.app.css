@@ -1,4 +1,4 @@
-/*! Version: 5.1.910040 || Generated: Tue Jul 14 2020 14:34:13 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910041 || Generated: Tue Jul 14 2020 15:06:22 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -6591,147 +6591,45 @@ a.Button.IsDefault,
 
 .container,
 .Container {
-  border-color: #adadad;
+  border-color: #d6d6d6;
   border-style: solid;
   border-width: 1px; }
 
-.Counter.Highlight {
-  background-color: #ff3e2d;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 0.857em;
-  font-weight: normal;
-  height: 20px;
-  line-height: 19px;
-  text-align: center;
-  width: 20px; }
+.WhiteContainer {
+  background: #fff;
+  border: 1px solid #d6d6d6;
+  padding: 10px 20px;
+  vertical-align: middle;
+  width: 100%; }
 
-.Counter.Min {
-  background-color: #c2dea8;
-  border-top: 2px solid #578329;
-  color: #578329; }
+.WhiteContainerDotted {
+  background: #fff;
+  border: 1px dotted #d6d6d6;
+  padding-bottom: 10px; }
 
-.Counter.Med {
-  background-color: #f5f4e0;
-  border-top: 2px solid #928d09;
-  color: #928d09; }
+.WhiteContainerForUnavailability {
+  background: #fff;
+  border: 1px solid #d6d6d6;
+  min-width: 100%;
+  padding: 30px 50px 35px 30px; }
 
-.Counter.Maj {
-  background-color: #fad5d5;
-  border-top: 2px solid #b10100;
-  color: #b10100; }
+.GreyContainer {
+  background: #ebebeb;
+  border: 1px solid #d6d6d6;
+  padding: 20px;
+  width: 100%; }
 
-.Counter.Vacant {
-  background: #c2dea8;
-  border-top: 3px solid #578329;
-  color: #578329; }
+.LightGreyContainer {
+  background: #fafafa;
+  border: 1px solid #d6d6d6;
+  padding: 20px;
+  width: 100%; }
 
-.Counter.Reserved {
-  background: #e6e2a3;
-  border-top: 3px solid #8c8b53;
-  color: #75742e; }
-
-.Counter.Planned {
-  background: #d6d6d6;
-  border-top: 3px solid #858585;
-  color: #858585; }
-
-.Counter.SapphireColor,
-.Counter .Tile.SapphireColor {
-  background-color: #fff;
-  border-bottom: 0;
-  border-top: 2px solid #009884; }
-
-.Counter.Black,
-.Counter .Tile.Black {
-  background-color: #fff;
-  border-bottom-color: #131819; }
-
-.Counter.Blue,
-.Counter .Tile.Blue {
-  background-color: #fff;
-  border-bottom-color: #039be5; }
-
-.Counter.DarkBlue,
-.Counter .Tile.DarkBlue {
-  background-color: #fff;
-  border-bottom-color: #194968; }
-
-.Counter.DarkPlum,
-.Counter .Tile.DarkPlum {
-  background-color: #fff;
-  border-bottom-color: #ca2c92; }
-
-.Counter.DarkRed,
-.Counter .Tile.DarkRed {
-  background-color: #fff;
-  border-bottom-color: #b10100; }
-
-.Counter.Gray,
-.Counter .Tile.Gray {
-  background-color: #fff;
-  border-bottom-color: #858585; }
-
-.Counter.Green,
-.Counter .Tile.Green {
-  background-color: #fff;
-  border-bottom-color: #7cb342; }
-
-.Counter.LightGreen,
-.Counter .Tile.LightGreen {
-  background-color: #fff;
-  border-bottom-color: #c2dea8; }
-
-.Counter.Orange,
-.Counter .Tile.Orange {
-  background-color: #fff;
-  border-bottom-color: #ffa000; }
-
-.Counter.Plum,
-.Counter .Tile.Plum {
-  background-color: #fff;
-  border-bottom-color: #c32b87; }
-
-.Counter.Red,
-.Counter .Tile.Red {
-  background-color: #fff;
-  border-bottom-color: #ff3e2d; }
-
-.Counter.Silver,
-.Counter .Tile.Silver {
-  background-color: #fff;
-  border-bottom-color: #d6d6d6; }
-
-.Counter.Transparent,
-.Counter .Tile.Transparent {
-  background-color: #fff;
-  border-bottom-color: transparent; }
-
-.Counter.Turquoise,
-.Counter .Tile.Turquoise {
-  background-color: #fff;
-  border-bottom-color: #049be5; }
-
-.Counter.White,
-.Counter .Tile.White {
-  background-color: #fff;
-  border-bottom-color: #fff; }
-
-.Counter.Yellow,
-.Counter .Tile.Yellow {
-  background-color: #fff;
-  border-bottom-color: #fbc02d; }
-
-.PatientCardAction .iconHorizontal_icon {
-  font-size: 0.857em; }
-
-.PatientCardAction .iconHorizontal_label {
-  color: #009884;
-  font-family: "LatoBold";
-  font-size: 0.857em; }
-
-.AR .PatientCardAction .iconHorizontal_label {
-  font-family: "TajawalBold"; }
+.SapphireFormBlue {
+  background-color: #c4f0eb;
+  border-radius: 2px;
+  margin-top: 25px;
+  padding: 20px; }
 
 .TextInput.Mandatory {
   border-left: 3px solid #00bfa5; }
@@ -7405,6 +7303,133 @@ a.Button.IsDefault,
   .FA .ClinicianSecondarySummary .SectionExpandable_content {
     font-size: 1.143em;
     position: relative; }
+
+.Counter.Highlight {
+  background-color: #ff3e2d;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.857em;
+  font-weight: normal;
+  height: 20px;
+  line-height: 19px;
+  text-align: center;
+  width: 20px; }
+
+.Counter.Min {
+  background-color: #c2dea8;
+  border-top: 2px solid #578329;
+  color: #578329; }
+
+.Counter.Med {
+  background-color: #f5f4e0;
+  border-top: 2px solid #928d09;
+  color: #928d09; }
+
+.Counter.Maj {
+  background-color: #fad5d5;
+  border-top: 2px solid #b10100;
+  color: #b10100; }
+
+.Counter.Vacant {
+  background: #c2dea8;
+  border-top: 3px solid #578329;
+  color: #578329; }
+
+.Counter.Reserved {
+  background: #e6e2a3;
+  border-top: 3px solid #8c8b53;
+  color: #75742e; }
+
+.Counter.Planned {
+  background: #d6d6d6;
+  border-top: 3px solid #858585;
+  color: #858585; }
+
+.Counter.SapphireColor,
+.Counter .Tile.SapphireColor {
+  background-color: #fff;
+  border-bottom: 0;
+  border-top: 2px solid #009884; }
+
+.Counter.Black,
+.Counter .Tile.Black {
+  background-color: #fff;
+  border-bottom-color: #131819; }
+
+.Counter.Blue,
+.Counter .Tile.Blue {
+  background-color: #fff;
+  border-bottom-color: #039be5; }
+
+.Counter.DarkBlue,
+.Counter .Tile.DarkBlue {
+  background-color: #fff;
+  border-bottom-color: #194968; }
+
+.Counter.DarkPlum,
+.Counter .Tile.DarkPlum {
+  background-color: #fff;
+  border-bottom-color: #ca2c92; }
+
+.Counter.DarkRed,
+.Counter .Tile.DarkRed {
+  background-color: #fff;
+  border-bottom-color: #b10100; }
+
+.Counter.Gray,
+.Counter .Tile.Gray {
+  background-color: #fff;
+  border-bottom-color: #858585; }
+
+.Counter.Green,
+.Counter .Tile.Green {
+  background-color: #fff;
+  border-bottom-color: #7cb342; }
+
+.Counter.LightGreen,
+.Counter .Tile.LightGreen {
+  background-color: #fff;
+  border-bottom-color: #c2dea8; }
+
+.Counter.Orange,
+.Counter .Tile.Orange {
+  background-color: #fff;
+  border-bottom-color: #ffa000; }
+
+.Counter.Plum,
+.Counter .Tile.Plum {
+  background-color: #fff;
+  border-bottom-color: #c32b87; }
+
+.Counter.Red,
+.Counter .Tile.Red {
+  background-color: #fff;
+  border-bottom-color: #ff3e2d; }
+
+.Counter.Silver,
+.Counter .Tile.Silver {
+  background-color: #fff;
+  border-bottom-color: #d6d6d6; }
+
+.Counter.Transparent,
+.Counter .Tile.Transparent {
+  background-color: #fff;
+  border-bottom-color: transparent; }
+
+.Counter.Turquoise,
+.Counter .Tile.Turquoise {
+  background-color: #fff;
+  border-bottom-color: #049be5; }
+
+.Counter.White,
+.Counter .Tile.White {
+  background-color: #fff;
+  border-bottom-color: #fff; }
+
+.Counter.Yellow,
+.Counter .Tile.Yellow {
+  background-color: #fff;
+  border-bottom-color: #fbc02d; }
 
 .CustomExpandable .ExpandableSmaller {
   text-align: end; }
@@ -8155,6 +8180,17 @@ a.Button.IsDefault,
 .FA .MedicalFileOptions > div:first-child .EditFileNumber {
   margin-left: 0;
   margin-right: 10px; }
+
+.PatientCardAction .iconHorizontal_icon {
+  font-size: 0.857em; }
+
+.PatientCardAction .iconHorizontal_label {
+  color: #009884;
+  font-family: "LatoBold";
+  font-size: 0.857em; }
+
+.AR .PatientCardAction .iconHorizontal_label {
+  font-family: "TajawalBold"; }
 
 .PatientInfo {
   background-color: #fff;
@@ -12987,7 +13023,7 @@ div.CircledArrow {
     padding: 0 4px; }
   .ClinicalInformationItem-text {
     -webkit-box-align: start;
-            align-items: start;
+            align-items: flex-start;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -15741,7 +15777,7 @@ body.PanelOpened .daterangepicker {
     .DynamicTable__RowColumn--main, .DynamicTable__HeaderColumn--main {
       flex-basis: 10%;
       -webkit-box-pack: start;
-              justify-content: start;
+              justify-content: flex-start;
       padding: 0;
       text-align: left; }
   .DynamicTable__RowsWrapper {
@@ -28509,63 +28545,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
     display: -webkit-box;
     display: flex; }
 
-.WhiteContainer {
-  background: #fff;
-  border: solid 1px #d9d9d9;
-  padding: 10px 20px;
-  vertical-align: middle;
-  width: 100%; }
-
-.WhiteContainer.MultiPaddingXSmall,
-.AR .WhiteContainer.MultiPaddingXSmall,
-.FA .WhiteContainer.MultiPaddingXSmall {
-  padding: 3px 6px; }
-
-.WhiteContainerDotted {
-  background: #fff;
-  border: 1px dotted #ccc;
-  padding-bottom: 10px; }
-
-.GreyContainer {
-  background: #ebebeb;
-  border: solid 1px #d9d9d9;
-  padding: 20px;
-  width: 100%; }
-
-.LightGreyContainer {
-  background: #fafafa;
-  border: solid 1px #d9d9d9;
-  padding: 20px;
-  width: 100%; }
-
-.LightGreyContainer .MinHeightHome {
-  min-height: 115px; }
-
-.AR .GreyContainer,
-.AR .LightGreyContainer,
-.FA .GreyContainer,
-.FA .LightGreyContainer {
-  font-size: 15px; }
-
-.WhiteContainerForUnavailability {
-  background: #fff;
-  border: solid 1px #d9d9d9;
-  min-width: 100%;
-  padding: 30px 50px 35px 30px; }
-
-.DashboardContent .LightGreyContainer {
-  height: 115px; }
-
-.SapphireFormBlue {
-  background-color: #d4e8ef;
-  border-radius: 2px;
-  margin-top: 25px;
-  padding: 20px; }
-
-.DoctorWrapper {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-left: 1px solid #e0e1e3; }
-
 .Page .Beige,
 .LayoutPopup .Beige,
 .LayoutBlank .Beige,
@@ -29284,6 +29263,27 @@ ul.os-internal-ui-autocomplete {
   top: 0;
   margin-left: 7.5px !important;
   padding-left: 7.5px; }
+
+.WhiteContainer.MultiPaddingXSmall,
+.AR .WhiteContainer.MultiPaddingXSmall,
+.FA .WhiteContainer.MultiPaddingXSmall {
+  padding: 3px 6px; }
+
+.LightGreyContainer .MinHeightHome {
+  min-height: 115px; }
+
+.AR .GreyContainer,
+.AR .LightGreyContainer,
+.FA .GreyContainer,
+.FA .LightGreyContainer {
+  font-size: 15px; }
+
+.DashboardContent .LightGreyContainer {
+  height: 115px; }
+
+.DoctorWrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 1px solid #e0e1e3; }
 
 .ListRecords .AvailabilityCardContainer {
   border-bottom: none; }
@@ -36896,9 +36896,6 @@ canvas.Sketch_Canvas {
 /*-------------------------------------------------------------------------------------*/
 /* 9.101 Sapphire Patterns > SapphireWidgets > LabelForIcon *********/
 /*-------------------------------------------------------------------------------------*/
-.labelForIcon {
-  margin-top: 0px; }
-
 /*-------------------------------------------------------------------------------------*/
 /* 9.102 Sapphire Patterns > SapphireWidgets > MonthPicker *********/
 /*-------------------------------------------------------------------------------------*/
