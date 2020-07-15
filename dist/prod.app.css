@@ -1,4 +1,4 @@
-/*! Version: 5.1.910051 || Generated: Wed Jul 15 2020 17:25:26 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910052 || Generated: Wed Jul 15 2020 18:05:55 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10760,7 +10760,7 @@ form,
     font-family: 'Sapphire-Icon-Font';
     font-size: 12px;
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
@@ -10773,36 +10773,31 @@ form,
   width: 60px; }
 
 .sound-wave-container > div {
-  -webkit-animation: load 3s ease-in-out infinite;
-          animation: load 3s ease-in-out infinite;
+  -webkit-animation: sound-wave 3s ease-in-out infinite;
+          animation: sound-wave 3s ease-in-out infinite;
   background: #00bfa5;
   display: inline-block;
   height: 100%;
   margin: 0;
   position: relative;
   width: 1px; }
+  .sound-wave-container > div.rectangle-2 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sound-wave-container > div.rectangle-3 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sound-wave-container > div.rectangle-4 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sound-wave-container > div.rectangle-5 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sound-wave-container > div.rectangle-6 {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s; }
 
-.sound-wave-container .rectangle-2 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
-
-.sound-wave-container .rectangle-3 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-
-.sound-wave-container .rectangle-4 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-
-.sound-wave-container .rectangle-5 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
-
-.sound-wave-container .rectangle-6 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s; }
-
-@-webkit-keyframes load {
+@-webkit-keyframes sound-wave {
   0%,
   100% {
     -webkit-transform: scaleY(1);
@@ -10823,7 +10818,7 @@ form,
     -webkit-transform: scaleY(3);
             transform: scaleY(3); } }
 
-@keyframes load {
+@keyframes sound-wave {
   0%,
   100% {
     -webkit-transform: scaleY(1);
