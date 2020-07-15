@@ -1,4 +1,4 @@
-/*! Version: 5.1.910050 || Generated: Wed Jul 15 2020 16:18:53 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910051 || Generated: Wed Jul 15 2020 17:25:26 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9412,12 +9412,12 @@ a.Button.IsDefault,
 .FA .TableRecords_Wrapper .TableRecords_Header {
   padding: 10px; }
 
-.AR tr td:last-child,
-.FA tr td:last-child {
+.AR .TableRecords tr td:last-child,
+.FA .TableRecords tr td:last-child {
   border-right: 1px solid transparent; }
 
-.AR tr td:first-child,
-.FA tr td:first-child {
+.AR .TableRecords tr td:first-child,
+.FA .TableRecords tr td:first-child {
   border-left: 1px solid transparent; }
 
 .TimeSeparator {
@@ -26537,18 +26537,15 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     padding: 0; }
   .TabularScroll thead {
     box-sizing: border-box;
-    font-size: 0.857em;
     margin: 0;
     padding: 0; }
   .TabularScroll tr {
     box-sizing: border-box;
-    font-size: 0.857em;
     margin: 0;
     padding: 0;
     visibility: visible; }
   .TabularScroll td {
     box-sizing: border-box;
-    font-size: 0.857em;
     margin: 0;
     padding: 0; }
     .TabularScroll td:first-child {
@@ -26559,47 +26556,43 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     .TabularScroll td > div {
       display: block;
       overflow: hidden; }
-  .TabularScroll .TabularScroll-center td {
-    border-bottom: solid 1px #d6d6d6;
-    border-left: solid 1px #d6d6d6;
-    min-width: 100px;
-    overflow: hidden;
+  .TabularScroll-center {
+    flex-basis: 100%;
+    overflow-x: hidden; }
+    .TabularScroll-center-table {
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: 1px;
+      padding-top: 1px; }
+    .TabularScroll-center thead {
+      font-weight: 700; }
+    .TabularScroll-center td {
+      border-bottom: solid 1px #d6d6d6;
+      min-width: 100px;
+      overflow: hidden;
+      padding: 3px; }
+      .TabularScroll-center td:not(:first-child) {
+        border-left: solid 1px #d6d6d6; }
+  .TabularScroll-left {
+    font-weight: 700;
+    min-width: 200px;
+    padding-top: 21px; }
+    .TabularScroll-left .TabularScrollItem {
+      border-right: solid thin #d6d6d6; }
+  .TabularScroll-right {
+    font-weight: 700;
+    min-width: 200px;
+    padding-top: 21px; }
+    .TabularScroll-right .TabularScrollItem {
+      border-left: solid thin #d6d6d6; }
+  .TabularScroll .TabularScrollItem {
+    border-bottom: solid thin #d6d6d6;
+    box-sizing: border-box;
+    display: block;
     padding: 3px; }
   .TabularScroll .VariationItem-value {
     display: inline-block;
     text-align: left; }
-
-.TabularScrollItem {
-  border-bottom: solid thin #d6d6d6;
-  box-sizing: border-box;
-  display: block;
-  padding: 3px; }
-
-.TabularScroll-left {
-  font-weight: 700;
-  min-width: 200px;
-  padding-top: 21px; }
-  .TabularScroll-left .TabularScrollItem {
-    border-right: solid thin #d6d6d6; }
-
-.TabularScroll-right {
-  font-weight: 700;
-  min-width: 200px;
-  padding-top: 21px; }
-  .TabularScroll-right .TabularScrollItem {
-    border-left: solid thin #d6d6d6; }
-
-.TabularScroll-center {
-  flex-basis: 100%;
-  overflow-x: hidden; }
-  .TabularScroll-center thead {
-    font-weight: 700; }
-
-.TabularScroll-center-table {
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding-bottom: 1px;
-  padding-top: 1px; }
 
 .TopScrollWrapper {
   height: 20px;
@@ -26607,10 +26600,9 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   overflow-y: hidden;
   visibility: hidden;
   width: 100%; }
-
-.TopScrollDragger {
-  height: 20px;
-  width: 1000px; }
+  .TopScrollWrapper .TopScrollDragger {
+    height: 20px;
+    width: 1000px; }
 
 .TopScrollWrapper::-webkit-scrollbar,
 .TabularScroll-center-table::-webkit-scrollbar {
@@ -26621,6 +26613,21 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 .TopScrollWrapper::-webkit-scrollbar-thumb,
 .TabularScroll-center-table::-webkit-scrollbar-thumb {
   border: 5px solid #00bfa5; }
+
+.AR .TabularScroll-left .TabularScrollItem,
+.FA .TabularScroll-left .TabularScrollItem {
+  border-left: solid 1px #d6d6d6;
+  border-right: none; }
+
+.AR .TabularScroll-right .TabularScrollItem,
+.FA .TabularScroll-right .TabularScrollItem {
+  border-left: none;
+  border-right: solid 1px #d6d6d6; }
+
+.AR .TabularScroll-center td:not(:first-child),
+.FA .TabularScroll-center td:not(:first-child) {
+  border-left: none;
+  border-right: solid 1px #d6d6d6; }
 
 div.TimelineDetail {
   background-color: transparent;
