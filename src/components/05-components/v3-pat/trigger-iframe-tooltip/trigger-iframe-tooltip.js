@@ -1,7 +1,6 @@
 /* Component TriggerIframeTooltip */
-(function ($, window, document, SapphireWidgets) {
-	var create = function (config) {
-
+(function($, window, document, SapphireWidgets) {
+	var create = function(config) {
 		var $elementId = $('#' + config.elementId);
 
 		$elementId.addClass('tooltip');
@@ -23,23 +22,21 @@
 			minWidth: config.minWidth,
 			maxWidth: config.maxWidth,
 			zindex: config.zindex,
-			content: '<iframe id="tooltipster-frame" data-ui="iframe-tooltip" src="' + config.URL + '" style="border:none" ' + extraDataParams + '></iframe>',
-			functionReady: function (instance, helper) {
-				$(helper).css({
-					visibility: 'hidden',
-				});
-				setTimeout(function () {
+			content: `<iframe id="tooltipster-frame" data-ui="iframe-tooltip" src="${config.URL}" style="border:none; min-height:${config.minHeight}px; ${extraDataParams}></iframe>`,
+			functionReady: function(instance, helper) {
+				$(helper).css({ visibility: 'hidden' });
+
+				setTimeout(function() {
 					$('.tooltipster-base').css({
 						visibility: 'visible',
-						"minHeight": config.minHeight > 0 ? config.minHeight : 'auto',
+						minHeight: config.minHeight > 0 ? config.minHeight : 'auto',
 					});
 				}, 500);
+
+				$('.tooltipster-content').prepend('<div class="TooltipsterLoading"><div class="lds-ring"><div></div></div>');
 			},
 		});
 	};
 
-	SapphireWidgets.TriggerIframeTooltip = {
-		create,
-	};
-
+	SapphireWidgets.TriggerIframeTooltip = { create };
 })(jQuery, window, document, SapphireWidgets);

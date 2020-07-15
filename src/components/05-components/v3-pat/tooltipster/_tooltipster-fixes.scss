@@ -4,7 +4,7 @@
 .tooltipster-arrow-top span,
 .tooltipster-arrow-top-right span,
 .tooltipster-arrow-top-left span {
-  bottom: -8px;
+	bottom: -8px;
 }
 
 .tooltipster-arrow-bottom span,
@@ -13,24 +13,35 @@
 .tooltipster-arrow-bottom .tooltipster-arrow-border,
 .tooltipster-arrow-bottom-right .tooltipster-arrow-border,
 .tooltipster-arrow-bottom-left .tooltipster-arrow-border {
-  top: -8px;
+	top: -8px;
 }
 
 .tooltipster-arrow-left span,
 .tooltipster-arrow-left .tooltipster-arrow-border {
-  right: -8px;
+	right: -8px;
 }
 
 .tooltipster-arrow-right span,
 .tooltipster-arrow-right .tooltipster-arrow-border {
-  left: -8px;
+	left: -8px;
 }
 
 .tooltip_style .tooltipster-content {
-  margin: 0 !important;
-  padding: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .tooltipster.NoCursor {
-  cursor: auto;
+	cursor: auto;
+}
+
+.ResizeParentIframe {
+	background-color: $regular-white !important;
+}
+
+.TooltipsterLoading {
+	background-color: $regular-white;
+	height: calc(100% - 8px);
+	position: absolute;
+	width: calc(100% - 10px);
 }
