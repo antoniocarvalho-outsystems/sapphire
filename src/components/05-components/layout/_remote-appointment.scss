@@ -3,14 +3,17 @@
 }
 
 .remote-trigger {
-  background: $regular-green;
+  background: $regular-black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  bottom: -30px;
+  bottom: -50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: white;
   cursor: pointer;
-  height: 30px;
-  line-height: 30px;
+  height: 50px;
+  line-height: 50px;
   padding-left: 60px;
   position: fixed;
   right: 150px;
@@ -18,7 +21,7 @@
   width: 250px;
 
   &.opened {
-    bottom: 0;
+    bottom: 20px;
   }
 
   &:after {
@@ -43,7 +46,7 @@
 
 .sound-wave-container>div {
   animation: load 3s ease-in-out infinite;
-  background: #fff;
+  background: $regular-alpha;
   display: inline-block;
   height: 100%;
   margin: 0;
