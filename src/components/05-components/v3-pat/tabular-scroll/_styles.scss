@@ -4,21 +4,19 @@
 
 	table {
 		box-sizing: border-box;
-		font-size: $font-size-small;
+		font-size: 0.857em;
 		margin: 0;
 		padding: 0;
 	}
 
 	thead {
 		box-sizing: border-box;
-		font-size: $font-size-small;
 		margin: 0;
 		padding: 0;
 	}
 
 	tr {
 		box-sizing: border-box;
-		font-size: $font-size-small;
 		margin: 0;
 		padding: 0;
 		visibility: visible;
@@ -26,7 +24,6 @@
 
 	td {
 		box-sizing: border-box;
-		font-size: $font-size-small;
 		margin: 0;
 		padding: 0;
 
@@ -45,14 +42,58 @@
 		}
 	}
 
-	.TabularScroll-center {
+	&-center {
+		flex-basis: 100%;
+		overflow-x: hidden;
+
+		&-table {
+			overflow-x: auto;
+			overflow-y: hidden;
+			padding-bottom: 1px;
+			padding-top: 1px;
+		}
+
+		thead {
+			font-weight: 700;
+		}
+
 		td {
 			border-bottom: solid 1px $light-grey;
-			border-left: solid 1px $light-grey;
 			min-width: 100px;
 			overflow: hidden;
 			padding: 3px;
+
+			&:not(:first-child) {
+				border-left: solid 1px $light-grey;
+			}
 		}
+	}
+
+	&-left {
+		font-weight: 700;
+		min-width: 200px;
+		padding-top: 21px;
+
+		.TabularScrollItem {
+			border-right: solid thin $light-grey;
+		}
+	}
+
+	&-right {
+		font-weight: 700;
+		min-width: 200px;
+		padding-top: 21px;
+
+		.TabularScrollItem {
+			border-left: solid thin $light-grey;
+		}
+	}
+
+	.TabularScrollItem {
+		border-bottom: solid thin $light-grey;
+		box-sizing: border-box;
+		display: block;
+		padding: 3px;
 	}
 
 	.VariationItem-value {
@@ -61,60 +102,17 @@
 	}
 }
 
-.TabularScrollItem {
-	border-bottom: solid thin $light-grey;
-	box-sizing: border-box;
-	display: block;
-	padding: 3px;
-}
-
-.TabularScroll-left {
-	font-weight: 700;
-	min-width: 200px;
-	padding-top: 21px;
-
-	.TabularScrollItem {
-		border-right: solid thin $light-grey;
-	}
-}
-
-.TabularScroll-right {
-	font-weight: 700;
-	min-width: 200px;
-	padding-top: 21px;
-
-	.TabularScrollItem {
-		border-left: solid thin $light-grey;
-	}
-}
-
-.TabularScroll-center {
-	flex-basis: 100%;
-	overflow-x: hidden;
-
-	thead {
-		font-weight: 700;
-	}
-}
-
-.TabularScroll-center-table {
-	overflow-x: auto;
-	overflow-y: hidden;
-	padding-bottom: 1px;
-	padding-top: 1px;
-}
-
 .TopScrollWrapper {
 	height: 20px;
 	overflow-x: auto;
 	overflow-y: hidden;
 	visibility: hidden;
 	width: 100%;
-}
 
-.TopScrollDragger {
-	height: 20px;
-	width: 1000px;
+	.TopScrollDragger {
+		height: 20px;
+		width: 1000px;
+	}
 }
 
 .TopScrollWrapper,
@@ -127,5 +125,33 @@
 
 	&::-webkit-scrollbar-thumb {
 		border: 5px solid $regular-alpha;
+	}
+}
+
+.AR,
+.FA {
+	.TabularScroll {
+		&-left {
+			.TabularScrollItem {
+				border-left: solid 1px $light-grey;
+				border-right: none;
+			}
+		}
+
+		&-right {
+			.TabularScrollItem {
+				border-left: none;
+				border-right: solid 1px $light-grey;
+			}
+		}
+
+		&-center {
+			td {
+				&:not(:first-child) {
+					border-left: none;
+					border-right: solid 1px $light-grey;
+				}
+			}
+		}
 	}
 }
