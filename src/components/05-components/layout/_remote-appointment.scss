@@ -29,7 +29,7 @@
     font-family: 'Sapphire-Icon-Font';
     font-size: 12px;
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -45,37 +45,39 @@
 }
 
 .sound-wave-container>div {
-  animation: load 3s ease-in-out infinite;
+  animation: sound-wave 3s ease-in-out infinite;
   background: $regular-alpha;
   display: inline-block;
   height: 100%;
   margin: 0;
   position: relative;
   width: 1px;
+
+  &.rectangle-2 {
+    animation-delay: 0.1s;
+  }
+
+  &.rectangle-3 {
+    animation-delay: 0.2s;
+  }
+
+  &.rectangle-4 {
+    animation-delay: 0.3s;
+  }
+
+  &.rectangle-5 {
+    animation-delay: 0.4s;
+  }
+
+  &.rectangle-6 {
+    animation-delay: 0.5s;
+  }
+
 }
 
-.sound-wave-container .rectangle-2 {
-  animation-delay: 0.1s;
-}
-
-.sound-wave-container .rectangle-3 {
-  animation-delay: 0.2s;
-}
-
-.sound-wave-container .rectangle-4 {
-  animation-delay: 0.3s;
-}
-
-.sound-wave-container .rectangle-5 {
-  animation-delay: 0.4s;
-}
-
-.sound-wave-container .rectangle-6 {
-  animation-delay: 0.5s;
-}
 
 
-@keyframes load {
+@keyframes sound-wave {
 
   0%,
   100% {
@@ -83,27 +85,22 @@
   }
 
   16.67% {
-    // background: #FF5722;
     transform: scaleY(3);
   }
 
   33.33% {
-    // background: #FF5252;
     transform: scaleY(1);
   }
 
   50% {
-    // background: #E91E63;
     transform: scaleY(3);
   }
 
   66.67% {
-    // background: #9C27B0;
     transform: scaleY(1);
   }
 
   83.34% {
-    // background: #673AB7;
     transform: scaleY(3);
   }
 }
