@@ -1,4 +1,4 @@
-/*! Version: 5.1.910043 || Generated: Tue Jul 14 2020 17:54:49 GMT+0100 (Western European Summer Time) */
+/*! Version: 5.1.910044 || Generated: Wed Jul 15 2020 10:21:06 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9770,13 +9770,41 @@ a.Button.IsDefault,
   pointer-events: all !important; }
 
 .remote-trigger {
-  background: red;
-  bottom: 100px;
+  background: #578329;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  bottom: -30px;
   color: white;
-  height: 50px;
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 40px;
   position: fixed;
-  right: 100px;
-  width: 100px; }
+  right: 150px;
+  -webkit-transition: bottom 400ms ease;
+  transition: bottom 400ms ease;
+  width: 250px; }
+  .remote-trigger.opened {
+    bottom: 0; }
+  .remote-trigger:before {
+    color: #d6d6d6;
+    content: '\e93e';
+    font-family: 'Sapphire-Icon-Font';
+    font-size: 12px;
+    left: 15px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .remote-trigger:after {
+    content: '\e90b';
+    font-family: 'Sapphire-Icon-Font';
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
 
 .LayoutBase-padding {
   padding: 16px; }
