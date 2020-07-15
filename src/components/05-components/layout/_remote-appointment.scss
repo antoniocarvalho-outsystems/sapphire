@@ -1,0 +1,106 @@
+.ViewStateCounter {
+  pointer-events: all !important;
+}
+
+.remote-trigger {
+  background: $regular-green;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  bottom: -30px;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 60px;
+  position: fixed;
+  right: 150px;
+  transition: bottom 400ms ease;
+  width: 250px;
+
+  &.opened {
+    bottom: 0;
+  }
+
+  &:after {
+    content: '\e90b';
+    font-family: 'Sapphire-Icon-Font';
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
+.sound-wave-container {
+  height: 5px;
+  left: 10px;
+  position: absolute;
+  top: -2px;
+  width: 60px;
+}
+
+.sound-wave-container>div {
+  animation: load 3s ease-in-out infinite;
+  background: #fff;
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  width: 1px;
+}
+
+.sound-wave-container .rectangle-2 {
+  animation-delay: 0.1s;
+}
+
+.sound-wave-container .rectangle-3 {
+  animation-delay: 0.2s;
+}
+
+.sound-wave-container .rectangle-4 {
+  animation-delay: 0.3s;
+}
+
+.sound-wave-container .rectangle-5 {
+  animation-delay: 0.4s;
+}
+
+.sound-wave-container .rectangle-6 {
+  animation-delay: 0.5s;
+}
+
+
+@keyframes load {
+
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  16.67% {
+    // background: #FF5722;
+    transform: scaleY(3);
+  }
+
+  33.33% {
+    // background: #FF5252;
+    transform: scaleY(1);
+  }
+
+  50% {
+    // background: #E91E63;
+    transform: scaleY(3);
+  }
+
+  66.67% {
+    // background: #9C27B0;
+    transform: scaleY(1);
+  }
+
+  83.34% {
+    // background: #673AB7;
+    transform: scaleY(3);
+  }
+}
