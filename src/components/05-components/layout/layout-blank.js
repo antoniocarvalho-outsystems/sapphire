@@ -17,6 +17,10 @@ $(function () {
 
 	if ($('.LayoutBlank.Page.RemoteAppointment').length > 0) {
 
+		$(window).load(function () {
+			localStorage.setItem('RemoteAppointment', 'true');
+		});
+
 		window.addEventListener('blur', function (event) {
 			if (!!localStorage.getItem('RemoteAppointment')) {
 				window.opener.SapphireWidgets.LayoutBase.showAppointmentTrigger();
@@ -25,10 +29,6 @@ $(function () {
 
 		window.addEventListener('focus', function (event) {
 			window.opener.SapphireWidgets.LayoutBase.hideAppointmentTrigger();
-		});
-
-		window.addEventListener('beforeunload', function (event) {
-			localStorage.removeItem('RemoteAppointment');
 		});
 
 		window.addEventListener('unload', function (event) {
