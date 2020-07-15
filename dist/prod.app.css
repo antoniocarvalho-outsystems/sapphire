@@ -1,4 +1,4 @@
-/*! Version: 5.1.910046 || Generated: Wed Jul 15 2020 11:54:12 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910047 || Generated: Wed Jul 15 2020 12:50:27 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -26887,6 +26887,15 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .tooltipster.NoCursor {
   cursor: auto; }
+
+.ResizeParentIframe {
+  background-color: #fff !important; }
+
+.TooltipsterLoading {
+  background-color: #fff;
+  height: calc(100% - 8px);
+  position: absolute;
+  width: calc(100% - 10px); }
 
 .VacancyCard {
   background-color: #fff;
