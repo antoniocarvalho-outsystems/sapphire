@@ -1,4 +1,4 @@
-/*! Version: 5.1.910045 || Generated: Wed Jul 15 2020 11:07:02 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910046 || Generated: Wed Jul 15 2020 11:54:12 GMT+0100 (Hora de verão da Europa Ocidental) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3964,6 +3964,43 @@ body.PanelOpened .daterangepicker {
 
 .DateTimeRangePicker-displayed input[type] {
   width: 100%; }
+
+.InlineDropdown {
+  cursor: pointer;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+  .InlineDropdown.open .InlineDropdown_icon, .InlineDropdown:hover .InlineDropdown_icon {
+    background-color: #ebebeb; }
+  .InlineDropdown:focus .InlineDropdown_text {
+    border-bottom: 1px solid #333333; }
+  .InlineDropdown_text {
+    color: #009884;
+    font-family: "LatoBold"; }
+  .InlineDropdown_icon {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    border-radius: 50%;
+    color: #009884;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    height: 18px;
+    margin: 1px 0 0 5px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    width: 18px; }
+
+.AR .InlineDropdown_icon,
+.FA .InlineDropdown_icon {
+  margin: 1px 5px 0 0; }
 
 /* Backoffice_Th Legacy */
 /*
