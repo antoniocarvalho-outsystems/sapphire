@@ -96,65 +96,38 @@
 				$('body').css('overflow-y', 'scroll');
 			}
 
-
 			$('body').on('click', '.remote-trigger', function () {
 				let newWin = window.open('', 'remoteAppointment');
 			});
 
-			$('.ViewStateCounter').on('click', function () {
+			$('.ViewStateCounter').on('dblclick', function () {
 				if (!!!localStorage.getItem('RemoteAppointment')) {
 					window.remoteAppointment = SapphireWidgets.LayoutBase.popupWindow('//atc-dev.outsystemsenterprise.com/Sapphirev2_Th/RemoteAppointment.aspx', 'remoteAppointment', window, 300, 200);
 					window.remoteAppointment.focus();
 					localStorage.setItem('RemoteAppointment', 'true');
-					var $div = $("<div>", {
-						class: 'remote-trigger',
-						text: 'Click for ongoing remote appointment...'
-					});
-					$("body").append($div);
 				}
 			});
 		});
 
 		$(window).load(function () {
-
 			$('body').click();
-
 			$(window).scroll();
-
 			if (!!localStorage.getItem('RemoteAppointment')) {
-				_this.createAppointmentTrigger();
 				window.setTimeout(() => {
 					_this.showAppointmentTrigger();
-				}, 400);
+				}, 300);
 			}
-
 		});
 
 	};
 
-
 	LayoutBase.prototype.showAppointmentTrigger = function () {
-		this.createAppointmentTrigger();
 		$('.remote-trigger').addClass('opened');
 	}
 
 	LayoutBase.prototype.hideAppointmentTrigger = function () {
-		this.createAppointmentTrigger();
 		$('.remote-trigger').removeClass('opened');
 	}
-
-	LayoutBase.prototype.createAppointmentTrigger = function () {
-		localStorage.setItem('RemoteAppointment', 'true');
-		if (!!$('.remote-trigger').length) {
-			return false;
-		}
-		var $div = $("<div>", {
-			class: 'remote-trigger',
-			text: 'Click for remote appointment...'
-		});
-		$("body").append($div);
-	}
-
 
 	LayoutBase.prototype.setupWindowEvents = function () {
 		var _this = this;
@@ -177,7 +150,6 @@
 				_this.handleLayoutTopPadding();
 				_this.handleLayoutBottomPadding();
 				_this.handleManageQueueCard(cursorPositon, newPosition);
-
 				cursorPositon = newPosition;
 			}, 100);
 		});
@@ -273,11 +245,8 @@
 	LayoutBase.prototype.handleLayoutTopPadding = function () {
 		var paddingTop = this.contentThreshold + this.extraPaddingEmergency + this.extraPaddingSecondary;
 		this.$spacer.stop().animate({
-				height: paddingTop,
-			},
-			0,
-			'linear'
-		);
+			height: paddingTop,
+		}, 0, 'linear');
 		if (this.$topfixedContent.length === 1) {
 			this.$topfixedContent.css({
 				width: $('.LayoutBase-MainContent').width(),
