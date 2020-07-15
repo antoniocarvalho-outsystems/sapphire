@@ -13,6 +13,14 @@
 		window[SapphireWidgets.LayoutBase.widgetId].closeSidebarIframe(duration);
 	};
 
+	var showAppointmentTrigger = function () {
+		window[SapphireWidgets.LayoutBase.widgetId].showAppointmentTrigger();
+	};
+
+	var hideAppointmentTrigger = function () {
+		window[SapphireWidgets.LayoutBase.widgetId].hideAppointmentTrigger();
+	};
+
 	var scrollToElement = function ($element) {
 		var $targetElement = $element;
 
@@ -82,7 +90,6 @@
 
 		$(function () {
 
-
 			$('body').addClass('LayoutBase');
 
 			if (_this.isTopWindow) {
@@ -90,93 +97,64 @@
 			}
 
 
-			// if (!!localStorage.getItem('RemoteAppointment')) {
-			// 	var $div = $("<div>", {
-			// 		class: 'remote-trigger',
-			// 		text: 'Click for ongoing remote appointment...'
-			// 	});
-			// 	$("body").append($div);
-			// }
+			$('body').on('click', '.remote-trigger', function () {
+				let newWin = window.open('', 'remoteAppointment');
+			});
 
-
-			// $(window).on('mousemove', function () {
-			// 	var activeElement = document.activeElement;
-			// 	var inputs = ['input', 'select', 'button', 'textarea'];
-			// 	if (activeElement && inputs.indexOf(activeElement.tagName.toLowerCase()) !== -1) {
-			// 		return false;
-			// 	}
-			// 	if (!!localStorage.getItem('RemoteAppointment')) {
-			// 		let newWin = window.open('', 'remoteAppointment');
-			// 	}
-			// });
-
-
-			// $(window).on('mousedown', function () {
-			// 	$(window).off('mousemove');
-			// });
-
-
-			// $(window).on('mouseup', function () {
-
-			// 	var activeElement = document.activeElement;
-			// 	var inputs = ['input', 'select', 'button', 'textarea'];
-			// 	if (activeElement && inputs.indexOf(activeElement.tagName.toLowerCase()) !== -1) {
-			// 		return false;
-			// 	}
-			// 	if (!!localStorage.getItem('RemoteAppointment')) {
-			// 		let newWin = window.open('', 'remoteAppointment');
-			// 	}
-
-			// 	// $(window).on('mousemove', function () {
-			// 	// 	var activeElement = document.activeElement;
-			// 	// 	var inputs = ['input', 'select', 'button', 'textarea'];
-			// 	// 	if (activeElement && inputs.indexOf(activeElement.tagName.toLowerCase()) !== -1) {
-			// 	// 		return false;
-			// 	// 	}
-			// 	// 	if (!!localStorage.getItem('RemoteAppointment')) {
-			// 	// 		let newWin = window.open('', 'remoteAppointment');
-			// 	// 	}
-			// 	// });
-
-			// });
-
-
-
-
-			// $('.remote-trigger').on('click', function () {
-			// 	let newWin = window.open('', 'remoteAppointment');
-			// });
-
-			// $('.ViewStateCounter').on('click', function () {
-			// 	if (!!!localStorage.getItem('RemoteAppointment')) {
-			// 		window.remoteAppointment = SapphireWidgets.LayoutBase.popupWindow('//atc-dev.outsystemsenterprise.com/Sapphirev2_Th/RemoteAppointment.aspx', 'remoteAppointment', window, 300, 200);
-			// 		window.remoteAppointment.focus();
-			// 		localStorage.setItem('RemoteAppointment', 'true');
-			// 	}
-			// });
-
+			$('.ViewStateCounter').on('click', function () {
+				if (!!!localStorage.getItem('RemoteAppointment')) {
+					window.remoteAppointment = SapphireWidgets.LayoutBase.popupWindow('//atc-dev.outsystemsenterprise.com/Sapphirev2_Th/RemoteAppointment.aspx', 'remoteAppointment', window, 300, 200);
+					window.remoteAppointment.focus();
+					localStorage.setItem('RemoteAppointment', 'true');
+					var $div = $("<div>", {
+						class: 'remote-trigger',
+						text: 'Click for ongoing remote appointment...'
+					});
+					$("body").append($div);
+				}
+			});
 		});
 
 		$(window).load(function () {
+
 			$('body').click();
+
 			$(window).scroll();
 
-			// window.setTimeout(() => {
-			// 	if (!!localStorage.getItem('RemoteAppointment')) {
-			// 		console.log('new');
-			// 		let newWin = window.open('', 'remoteAppointment');
-			// 	}
-			// }, 3000);
-
-			// window.setTimeout(() => {
-			// 	console.log('trigger');
-			// 	$('.remote-trigger').trigger('click');
-			// }, 6000);
-
+			if (!!localStorage.getItem('RemoteAppointment')) {
+				_this.createAppointmentTrigger();
+				window.setTimeout(() => {
+					_this.showAppointmentTrigger();
+				}, 400);
+			}
 
 		});
 
 	};
+
+
+	LayoutBase.prototype.showAppointmentTrigger = function () {
+		this.createAppointmentTrigger();
+		$('.remote-trigger').addClass('opened');
+	}
+
+	LayoutBase.prototype.hideAppointmentTrigger = function () {
+		this.createAppointmentTrigger();
+		$('.remote-trigger').removeClass('opened');
+	}
+
+	LayoutBase.prototype.createAppointmentTrigger = function () {
+		localStorage.setItem('RemoteAppointment', 'true');
+		if (!!$('.remote-trigger').length) {
+			return false;
+		}
+		var $div = $("<div>", {
+			class: 'remote-trigger',
+			text: 'Click for remote appointment...'
+		});
+		$("body").append($div);
+	}
+
 
 	LayoutBase.prototype.setupWindowEvents = function () {
 		var _this = this;
@@ -378,12 +356,14 @@
 		}
 	};
 
-
 	SapphireWidgets.LayoutBase = {
-		create: create,
-		closeSidebarIframe: closeSidebarIframe,
-		openSidebarIframe: openSidebarIframe,
-		scrollToElement: scrollToElement,
-		popupWindow: popupWindow
+		create,
+		closeSidebarIframe,
+		openSidebarIframe,
+		scrollToElement,
+		popupWindow,
+		showAppointmentTrigger,
+		hideAppointmentTrigger
 	};
+
 })(jQuery, window, document, SapphireWidgets);
