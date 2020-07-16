@@ -13,7 +13,7 @@
   color: white;
   height: 50px;
   line-height: 50px;
-  padding-left: 80px;
+  padding-left: 60px;
   position: fixed;
   right: 150px;
   transition: bottom 400ms ease;
@@ -21,32 +21,32 @@
   z-index: 80;
 
   &.opened {
-    bottom: 20px;
+    bottom: 15px;
   }
 
   #remote-appointment-opener {
     bottom: 0;
     cursor: pointer;
-    left: 30px;
+    left: 0;
     position: absolute;
     right: 0;
     top: 0;
   }
 
 
-  #remote-appointment-dragger {
-    cursor: move;
-    left: 5px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  // #remote-appointment-dragger {
+  //   cursor: move;
+  //   left: 5px;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
 
-    &:before {
-      content: '\e656';
-      font-family: 'Sapphire-Icon-Font';
-      font-size: 28px;
-    }
-  }
+  //   &:before {
+  //     content: '\e656';
+  //     font-family: 'Sapphire-Icon-Font';
+  //     font-size: 28px;
+  //   }
+  // }
 
   &:after {
     content: '\e90b';
@@ -62,7 +62,7 @@
 
 .sound-wave-container {
   height: 5px;
-  left: 30px;
+  left: 10px;
   position: absolute;
   top: -2px;
   width: 60px;

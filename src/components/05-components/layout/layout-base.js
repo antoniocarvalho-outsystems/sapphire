@@ -122,11 +122,11 @@
 	};
 
 	LayoutBase.prototype.showAppointmentTrigger = function () {
-		$('.remote-appointment-trigger').addClass('opened').show();
+		$('.remote-appointment-trigger').addClass('opened');
 	}
 
 	LayoutBase.prototype.hideAppointmentTrigger = function () {
-		$('.remote-appointment-trigger').removeClass('opened').hide();
+		$('.remote-appointment-trigger').removeClass('opened');
 	}
 
 	LayoutBase.prototype.setupWindowEvents = function () {

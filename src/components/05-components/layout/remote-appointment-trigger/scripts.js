@@ -12,13 +12,13 @@
       }
 
       onComponentInit() {
-        let dragger = document.createElement('div');
-        dragger.id = 'remote-appointment-dragger';
-        document.getElementById(this.options.widgetId).appendChild(dragger);
+        // let dragger = document.createElement('div');
+        // dragger.id = 'remote-appointment-dragger';
+        // document.getElementById(this.options.widgetId).appendChild(dragger);
         let opener = document.createElement('div');
         opener.id = 'remote-appointment-opener';
         document.getElementById(this.options.widgetId).appendChild(opener);
-        this.makeDraggable(document.getElementById(this.options.widgetId));
+        // this.makeDraggable(document.getElementById(this.options.widgetId));
       }
 
       makeDraggable(el) {
