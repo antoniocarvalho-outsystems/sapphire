@@ -7881,7 +7881,7 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .NoMargin {
-  margin: 0;
+  margin: 0 !important;
 }
 
 /** AlignText    **/
