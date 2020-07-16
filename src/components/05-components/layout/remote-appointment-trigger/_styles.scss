@@ -2,6 +2,11 @@
   pointer-events: all !important;
 }
 
+
+.remote-trigger {
+  display: none;
+}
+
 .remote-appointment-trigger {
   background: $regular-black;
   border-bottom-left-radius: 5px;
