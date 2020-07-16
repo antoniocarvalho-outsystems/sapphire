@@ -1,6 +1,6 @@
 /* Component ActionsMenu */
-(function($, window, SapphireWidgets) {
-	var create = function(config) {
+(function ($, window, SapphireWidgets) {
+	var create = function (config) {
 		var $triggerElement = $('#' + config.triggerElement);
 		var $contentElement = $('#' + config.contentElement);
 
@@ -8,9 +8,9 @@
 			$triggerElement.hide();
 		}
 
-		$(function() {
+		$(function () {
 			// inside a document ready due to sapphire popup binded events
-			window.setTimeout(function() {
+			window.setTimeout(function () {
 				var position = config.position;
 				if (config.locale === 'AR') {
 					switch (config.position) {
@@ -39,8 +39,7 @@
 					trigger: config.triggerEvent,
 					position: position,
 					maxWidth: config.maxWidth,
-					theme:
-						'tooltipster-location--' +
+					theme: 'tooltipster-location--' +
 						config.location +
 						' ActionsMenu-tooltip Padding--' +
 						config.padding +
@@ -52,5 +51,7 @@
 		});
 	};
 
-	SapphireWidgets.ActionsMenu = { create };
+	SapphireWidgets.ActionsMenu = {
+		create
+	};
 })(jQuery, window, SapphireWidgets);

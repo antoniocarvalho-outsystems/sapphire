@@ -96,7 +96,7 @@
 				$('body').css('overflow-y', 'scroll');
 			}
 
-			$('body').on('click', '.remote-trigger', function () {
+			$('body').on('click', '#remote-appointment-opener', function () {
 				let newWin = window.open('', 'remoteAppointment');
 			});
 
@@ -122,11 +122,11 @@
 	};
 
 	LayoutBase.prototype.showAppointmentTrigger = function () {
-		$('.remote-trigger').addClass('opened');
+		$('.remote-appointment-trigger').addClass('opened').show();
 	}
 
 	LayoutBase.prototype.hideAppointmentTrigger = function () {
-		$('.remote-trigger').removeClass('opened');
+		$('.remote-appointment-trigger').removeClass('opened').hide();
 	}
 
 	LayoutBase.prototype.setupWindowEvents = function () {
