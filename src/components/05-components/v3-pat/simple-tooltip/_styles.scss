@@ -51,20 +51,12 @@
 			bottom: 100%;
 			display: block;
 		}
-
-		&:hover:after {
-			margin-left: -28px;
-		}
-
-		&:hover:before {
-			left: 36px;
-		}
 	}
 
 	&[tooltip-position='RIGHT'] {
 		&:before {
 			border-radius: 4px 4px 0px 4px;
-			right: -3%;
+			right: 0;
 		}
 
 		&:after {
@@ -106,16 +98,10 @@
 .AR,
 .FA {
 	.SimpleTooltip[data-tooltip] {
-		transform: scale(-1, 1);
-
-		> div {
-			transform: scale(1, 1);
-		}
-
 		&:after {
 			left: 0%;
 			margin-right: -5px;
-			right: 100%;
+			right: 97%;
 		}
 
 		&[tooltip-position='RIGHT'] {
@@ -126,9 +112,9 @@
 			}
 
 			&:after {
-				left: 0%;
+				left: 0;
 				margin-right: -5px;
-				right: 100%;
+				right: 98%;
 				transform: scale(-1, 1);
 			}
 		}
