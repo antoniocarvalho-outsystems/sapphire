@@ -108,6 +108,10 @@
 	.SimpleTooltip[data-tooltip] {
 		transform: scale(-1, 1);
 
+		> div {
+			transform: scale(1, 1);
+		}
+
 		&:after {
 			left: 0%;
 			margin-right: -5px;
