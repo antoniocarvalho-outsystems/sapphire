@@ -1,4 +1,4 @@
-/*! Version: 5.1.910053 || Generated: Thu Jul 16 2020 09:24:21 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910054 || Generated: Thu Jul 16 2020 14:18:05 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10735,6 +10735,9 @@ form,
 .ViewStateCounter {
   pointer-events: all !important; }
 
+.remote-trigger {
+  display: none; }
+
 .remote-appointment-trigger {
   background: #131819;
   border-bottom-left-radius: 5px;
@@ -10746,7 +10749,7 @@ form,
   color: white;
   height: 50px;
   line-height: 50px;
-  padding-left: 80px;
+  padding-left: 60px;
   position: fixed;
   right: 150px;
   -webkit-transition: bottom 400ms ease;
@@ -10754,25 +10757,14 @@ form,
   width: 250px;
   z-index: 80; }
   .remote-appointment-trigger.opened {
-    bottom: 20px; }
+    bottom: 15px; }
   .remote-appointment-trigger #remote-appointment-opener {
     bottom: 0;
     cursor: pointer;
-    left: 30px;
+    left: 0;
     position: absolute;
     right: 0;
     top: 0; }
-  .remote-appointment-trigger #remote-appointment-dragger {
-    cursor: move;
-    left: 5px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-    .remote-appointment-trigger #remote-appointment-dragger:before {
-      content: '\e656';
-      font-family: 'Sapphire-Icon-Font';
-      font-size: 28px; }
   .remote-appointment-trigger:after {
     content: '\e90b';
     font-family: 'Sapphire-Icon-Font';
@@ -10785,7 +10777,7 @@ form,
 
 .sound-wave-container {
   height: 5px;
-  left: 30px;
+  left: 10px;
   position: absolute;
   top: -2px;
   width: 60px; }
