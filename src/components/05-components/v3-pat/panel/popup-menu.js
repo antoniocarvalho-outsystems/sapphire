@@ -26,7 +26,7 @@ SapphireWidgets.PopUpMenu = {
 		buttonHh = _this.outerHeight();
 		buttonWw = _this.outerWidth();
 
-		var buttonY = _this.position().top + buttonHh;
+		var buttonY = _this.position().top + buttonHh + 10;
 		var buttonX = _this.offset().left;
 		//var buttonX = _this.position().left;
 

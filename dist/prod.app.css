@@ -1,4 +1,4 @@
-/*! Version: 5.1.910054 || Generated: Thu Jul 16 2020 14:20:48 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910056 || Generated: Thu Jul 16 2020 17:23:15 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -25698,6 +25698,113 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     font-size: 1rem; }
   .NotificationLine .patient-name {
     font-size: .8rem; }
+
+.SimpleTooltip[data-tooltip] {
+  cursor: auto;
+  position: relative;
+  z-index: 2; }
+  .SimpleTooltip[data-tooltip]:before {
+    background-color: #009884;
+    border-radius: 4px;
+    bottom: 150%;
+    box-shadow: 0 1px 2px 0 rgba(13, 29, 34, 0.2);
+    color: #fff;
+    content: attr(data-tooltip);
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    padding: 7px;
+    position: absolute;
+    text-align: center;
+    white-space: nowrap; }
+  .SimpleTooltip[data-tooltip]:after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #009884;
+    bottom: 150%;
+    content: ' ';
+    font-size: 0;
+    left: 100%;
+    line-height: 0;
+    margin-left: -5px;
+    position: absolute;
+    width: 0; }
+  .SimpleTooltip[data-tooltip][tooltip-visibility='False']:after, .SimpleTooltip[data-tooltip][tooltip-visibility='False']:before {
+    display: none; }
+  .SimpleTooltip[data-tooltip][tooltip-onhover='True']:after, .SimpleTooltip[data-tooltip][tooltip-onhover='True']:before {
+    display: none; }
+  .SimpleTooltip[data-tooltip][tooltip-onhover='True']:hover:after, .SimpleTooltip[data-tooltip][tooltip-onhover='True']:hover:before {
+    bottom: 100%;
+    display: block; }
+  .SimpleTooltip[data-tooltip][tooltip-position='RIGHT']:before {
+    border-radius: 4px 4px 0px 4px;
+    right: 0; }
+  .SimpleTooltip[data-tooltip][tooltip-position='RIGHT']:after {
+    border-right: 0px solid transparent;
+    left: 100%; }
+  .SimpleTooltip[data-tooltip][tooltip-position='CENTER']:before {
+    left: 101%;
+    margin-left: -40px; }
+  .SimpleTooltip[data-tooltip][tooltip-position='LEFT']:before {
+    border-radius: 4px 4px 4px 0px;
+    left: 100%;
+    margin-left: 0px; }
+  .SimpleTooltip[data-tooltip][tooltip-position='LEFT']:after {
+    border-left: 0px solid transparent;
+    left: 100%;
+    margin-left: 0px; }
+  .SimpleTooltip[data-tooltip][tooltip-background='BLACK']:before {
+    background-color: #333333; }
+  .SimpleTooltip[data-tooltip][tooltip-background='BLACK']:after {
+    border-top: 5px solid #333333; }
+
+.AR .SimpleTooltip[data-tooltip]:after,
+.FA .SimpleTooltip[data-tooltip]:after {
+  left: 0%;
+  margin-right: -5px;
+  right: 97%; }
+
+.AR .SimpleTooltip[data-tooltip][tooltip-position='RIGHT']:before,
+.FA .SimpleTooltip[data-tooltip][tooltip-position='RIGHT']:before {
+  border-radius: 4px 4px 4px 0px;
+  left: 0;
+  right: inherit; }
+
+.AR .SimpleTooltip[data-tooltip][tooltip-position='RIGHT']:after,
+.FA .SimpleTooltip[data-tooltip][tooltip-position='RIGHT']:after {
+  left: 0;
+  margin-right: -5px;
+  right: 98%;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
+
+.AR .SimpleTooltip[data-tooltip][tooltip-position='CENTER']:before,
+.FA .SimpleTooltip[data-tooltip][tooltip-position='CENTER']:before {
+  left: unset;
+  margin-right: -40px;
+  right: 101%; }
+
+.AR .SimpleTooltip[data-tooltip][tooltip-position='LEFT']:before,
+.FA .SimpleTooltip[data-tooltip][tooltip-position='LEFT']:before {
+  border-radius: 4px 4px 0px 4px;
+  left: inherit;
+  margin-left: 0px;
+  right: 101%; }
+
+.AR .SimpleTooltip[data-tooltip][tooltip-position='LEFT']:after,
+.FA .SimpleTooltip[data-tooltip][tooltip-position='LEFT']:after {
+  border-left: 0px solid transparent;
+  left: 100%;
+  margin-left: 0px;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
+
+.AR .SimpleTooltip[data-tooltip][tooltip-position='RIGHT']:after, .AR .SimpleTooltip[data-tooltip][tooltip-position='LEFT']:after,
+.FA .SimpleTooltip[data-tooltip][tooltip-position='RIGHT']:after,
+.FA .SimpleTooltip[data-tooltip][tooltip-position='LEFT']:after {
+  left: 0%;
+  margin-right: 0px;
+  right: 100%; }
 
 .SpinnerInput_Container > a {
   background-color: #fff;
