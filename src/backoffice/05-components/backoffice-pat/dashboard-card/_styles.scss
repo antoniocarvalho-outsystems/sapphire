@@ -1,0 +1,62 @@
+.DashboardCard {
+	background-color: $regular-white;
+	border-radius: 2px;
+
+	&__Header {
+		display: flex;
+	}
+
+	&__Title {
+		flex: 1;
+
+		a,
+		a:link,
+		a:visited {
+			align-items: center;
+			color: $dark-grey;
+			display: inline-flex;
+			font-size: 20px;
+			font-weight: bold;
+			height: 100%;
+			padding: 20px;
+			width: 100%;
+
+			&:hover {
+				color: $dark-grey !important;
+				text-decoration: none !important;
+			}
+		}
+	}
+
+	&__Items {
+		display: flex;
+		padding: 20px;
+
+		a:first-of-type {
+			margin-left: 0;
+		}
+
+		a:last-of-type {
+			margin-right: 0;
+		}
+
+		a,
+		a:link,
+		a:focus,
+		a:hover,
+		a:visited {
+			color: #333 !important;
+			margin: 0 6px;
+			text-align: center;
+			text-decoration: none !important;
+
+			div:first-of-type {
+				font-size: 11px;
+			}
+		}
+	}
+
+	&__Content {
+		padding: 20px;
+	}
+}

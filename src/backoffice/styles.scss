@@ -2,18 +2,12 @@
 @import '../components/01-tools/import';
 @import '../components/02-generic/import';
 
-
-
+@import '05-components/backoffice-pat/dashboard-card/styles';
 @import '05-components/layout/layout-backoffice';
 @import '05-components/webpatterns/navigation-bar';
-
-
 
 @import '../components/05-components/v3-pat/select-system/styles';
 @import '../components/05-components/v3-pat/datetime-range-picker/styles';
 @import '../components/05-components/webpatterns/inline-dropdown/styles';
-
-
-
 
 @import '99-legacy/Backoffice_Th';
