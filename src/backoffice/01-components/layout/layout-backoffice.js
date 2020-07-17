@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
   var regex = RegExp("Layout");
   var wordList = $('.Page').attr('class').split(" ").filter((elem, index) => {
     return regex.test(elem);
