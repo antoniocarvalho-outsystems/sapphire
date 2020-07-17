@@ -1,4 +1,4 @@
-/*! Version: 5.1.910059 || Generated: Fri Jul 17 2020 17:03:57 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910060 || Generated: Fri Jul 17 2020 17:31:18 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23492,73 +23492,73 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   margin-bottom: 12px;
   margin-left: 1px;
   padding-top: 1px; }
-
-.SegmentedControl.NoMargin {
-  margin: 0 0 0 1px !important; }
-
-.SegmentedControlItem {
-  color: #00bfa5;
-  display: inline-block;
-  font-size: 1em;
-  margin-left: -1px;
-  margin-top: -1px;
-  min-height: 1.714em;
-  overflow: hidden;
-  position: relative;
-  vertical-align: top; }
-
-.SegmentedControlItem label {
-  background-color: #fff;
-  border: solid 1px #00bfa5;
-  cursor: pointer;
-  display: block;
-  line-height: 34px;
-  min-width: 54px;
-  padding: 0 15px;
-  text-align: center;
-  width: 100%; }
-
-.SegmentedControlItem label:hover,
-.SegmentedControlItem label:focus {
-  background: #c4f0eb; }
-
-.SegmentedControlItem > input[type='radio']:checked ~ label,
-.SegmentedControlItem > input[type='checkbox']:checked ~ label {
-  background: #00bfa5;
-  color: #fff; }
-
-.SegmentedControlItem > input:disabled ~ label,
-.SegmentedControlItem > input[disabled] ~ label,
-.SegmentedControlItem > input[readonly] ~ label {
-  background: #ebebeb;
-  color: #adadad;
-  cursor: default; }
-
-.SegmentedControlItem label .icon {
-  font-size: 18px;
-  line-height: 35px;
-  padding-right: 5px; }
-
-.SegmentedControlItem:first-child label {
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px; }
-
-.SegmentedControlItem:last-child label {
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px; }
-
-.Vertical .SegmentedControlItem {
-  display: block; }
-  .Vertical .SegmentedControlItem:first-child label {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px; }
-  .Vertical .SegmentedControlItem:last-child label {
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; }
+  .SegmentedControl.NoMargin {
+    margin: 0 0 0 1px !important; }
+  .SegmentedControl.Vertical .SegmentedControlItem {
+    display: block; }
+    .SegmentedControl.Vertical .SegmentedControlItem:first-child label {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px; }
+    .SegmentedControl.Vertical .SegmentedControlItem:last-child label {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+  .SegmentedControl.Round .SegmentedControlItem {
+    margin: 0 3px; }
+    .SegmentedControl.Round .SegmentedControlItem:first-child {
+      margin-left: 0; }
+    .SegmentedControl.Round .SegmentedControlItem:last-child {
+      margin-right: 0; }
+    .SegmentedControl.Round .SegmentedControlItem label {
+      border-radius: 50% !important;
+      min-width: 36px;
+      padding: 0;
+      width: 36px; }
+  .SegmentedControl .SegmentedControlItem {
+    color: #00bfa5;
+    display: inline-block;
+    font-size: 1em;
+    margin-left: -1px;
+    margin-top: -1px;
+    min-height: 1.714em;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top; }
+    .SegmentedControl .SegmentedControlItem:first-child label {
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px; }
+    .SegmentedControl .SegmentedControlItem:last-child label {
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px; }
+    .SegmentedControl .SegmentedControlItem label {
+      background-color: #fff;
+      border: solid 1px #00bfa5;
+      cursor: pointer;
+      display: block;
+      line-height: 34px;
+      min-width: 54px;
+      padding: 0 15px;
+      text-align: center;
+      width: 100%; }
+      .SegmentedControl .SegmentedControlItem label:hover, .SegmentedControl .SegmentedControlItem label:focus {
+        background: #c4f0eb; }
+      .SegmentedControl .SegmentedControlItem label .icon {
+        font-size: 18px;
+        line-height: 35px;
+        padding-right: 5px; }
+    .SegmentedControl .SegmentedControlItem > input[type='radio']:checked ~ label,
+    .SegmentedControl .SegmentedControlItem > input[type='checkbox']:checked ~ label {
+      background: #00bfa5;
+      color: #fff; }
+    .SegmentedControl .SegmentedControlItem > input:disabled ~ label,
+    .SegmentedControl .SegmentedControlItem > input[disabled] ~ label,
+    .SegmentedControl .SegmentedControlItem > input[readonly] ~ label {
+      background: #ebebeb;
+      color: #adadad;
+      cursor: default; }
 
 .AR .SegmentedControl:not(.Vertical) .SegmentedControlItem:last-child label,
 .FA .SegmentedControl:not(.Vertical) .SegmentedControlItem:last-child label {
