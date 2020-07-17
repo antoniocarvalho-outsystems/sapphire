@@ -1,0 +1,18 @@
+.AlertCardMessage {
+	border: 1px solid $light-grey;
+	border-radius: 4px;
+	padding: 10px;
+	width: 100%;
+
+	&--Grey {
+		background-color: $sapphire-light;
+	}
+
+	&--Yellow {
+		background-color: $light-yellow;
+	}
+
+	&--Beige {
+		background-color: $light-beige;
+	}
+}

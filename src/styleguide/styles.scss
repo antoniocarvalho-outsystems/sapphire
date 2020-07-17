@@ -547,8 +547,8 @@ $styleguide-main-content-padding: 50px;
 
 	&__CardsContent {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		padding-bottom: 50px;
 	}
 
 	&__HomeCard {
@@ -557,7 +557,8 @@ $styleguide-main-content-padding: 50px;
 		display: flex;
 		flex-direction: column;
 		height: 300px;
-		margin: 0 25px;
+		margin: 25px;
+		min-width: 235px;
 		padding: 15px;
 		text-align: center;
 		transition: all 0.3s ease-in;
