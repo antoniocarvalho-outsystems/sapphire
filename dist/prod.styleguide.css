@@ -1,4 +1,4 @@
-/*! Version: 5.1.910057 || Generated: Thu Jul 16 2020 17:24:02 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! Version: 5.1.910058 || Generated: Fri Jul 17 2020 11:02:01 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 body {
   background-color: #fff !important;
@@ -419,9 +419,9 @@ body {
   .DesignSystem__CardsContent {
     display: -webkit-box;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-            justify-content: center;
-    padding-bottom: 50px; }
+            justify-content: center; }
   .DesignSystem__HomeCard {
     background-color: #fff;
     border-radius: 4px;
@@ -431,7 +431,8 @@ body {
     -webkit-box-direction: normal;
             flex-direction: column;
     height: 300px;
-    margin: 0 25px;
+    margin: 25px;
+    min-width: 235px;
     padding: 15px;
     text-align: center;
     -webkit-transition: all 0.3s ease-in;
