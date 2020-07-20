@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.910063 || Generated: Mon Jul 20 2020 17:11:04 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.910064 || Generated: Mon Jul 20 2020 17:14:13 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -2683,6 +2683,18 @@ ul {
 div[onclick] {
   cursor: pointer; }
 
+.AlertCardMessage {
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%; }
+  .AlertCardMessage--Grey {
+    background-color: #ebebeb; }
+  .AlertCardMessage--Yellow {
+    background-color: #ffeab5; }
+  .AlertCardMessage--Beige {
+    background-color: #f5f4e0; }
+
 .DashboardCard {
   background-color: #fff;
   border-radius: 2px; }
@@ -2735,6 +2747,132 @@ div[onclick] {
         font-size: 11px; }
   .DashboardCard__Content {
     padding: 20px; }
+
+.ParentContainer {
+  background-color: #f1f1f1; }
+
+.EmptyText {
+  color: #858585;
+  font-size: 20px; }
+
+.InputLabel_Container__Input {
+  vertical-align: middle; }
+
+.InputLabel_Container__label {
+  color: #5c5c5c;
+  font-size: 14px;
+  margin-left: 10px;
+  vertical-align: middle; }
+
+.SplitTablesContainer_space {
+  background-color: #f5f5f5;
+  height: 26px; }
+
+.SplitTablesContainer_TablePlaceholder {
+  padding-top: 26px; }
+
+.SapphireSearchControl {
+  display: table;
+  position: relative; }
+
+.SapphireSearch_show {
+  margin-left: 40px !important; }
+
+.SapphireSearch_show, .SapphireSearch_clear {
+  display: table-cell;
+  padding: 0 10px 0 0;
+  vertical-align: middle; }
+  .SapphireSearch_show a, .SapphireSearch_clear a {
+    color: #009884;
+    cursor: auto;
+    font-size: 16px;
+    font-weight: 600 !important;
+    line-height: 19px; }
+
+.SapphireSearch_input {
+  display: table-cell;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  margin-right: 42px;
+  padding-right: 40px;
+  position: relative; }
+  .SapphireSearch_input:after {
+    color: #858585;
+    content: '\e690';
+    font-family: "Sapphire-Icon-Font";
+    font-size: 17px;
+    left: 16px;
+    line-height: 0;
+    position: absolute;
+    top: 22px;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1); }
+  .SapphireSearch_input.expanded:after {
+    line-height: 0;
+    top: 22px; }
+  .SapphireSearch_input.expanded + .SapphireSearch_search {
+    display: inline-block; }
+  .SapphireSearch_input.expanded + .SapphireSearch_close.show {
+    border-radius: 50%;
+    cursor: auto;
+    left: 310px;
+    opacity: 1;
+    pointer-events: none;
+    position: absolute;
+    top: 8px;
+    visibility: visible; }
+  .SapphireSearch_input input[type='text'] {
+    background-color: #f5f5f5;
+    border: 1px solid #d6d6d6;
+    border-radius: 100px;
+    color: #adadad;
+    font-size: 16px;
+    font-style: italic;
+    height: 42px;
+    line-height: 43px;
+    min-width: 340px;
+    padding-left: 46px;
+    padding-right: 14px; }
+    .SapphireSearch_input input[type='text'].expanded {
+      background-color: #fff;
+      border: 2px solid #00bfa5;
+      border-radius: 100px;
+      caret-color: #00bfa5;
+      color: #333;
+      font-style: normal;
+      font-weight: 400;
+      height: 42px;
+      padding-right: 34px;
+      width: 340px; }
+      .SapphireSearch_input input[type='text'].expanded::-webkit-input-placeholder {
+        color: transparent; }
+      .SapphireSearch_input input[type='text'].expanded::-moz-placeholder {
+        color: transparent; }
+      .SapphireSearch_input input[type='text'].expanded:-ms-input-placeholder {
+        color: transparent; }
+      .SapphireSearch_input input[type='text'].expanded::-ms-input-placeholder {
+        color: transparent; }
+      .SapphireSearch_input input[type='text'].expanded::placeholder {
+        color: transparent; }
+
+.SapphireSearch_more a,
+.SapphireSearch_reset a {
+  text-decoration: underline; }
+
+.SapphireSearch_close {
+  border-radius: 50%;
+  cursor: pointer;
+  left: 310px;
+  opacity: 1;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  -webkit-transition: visibility 1s, opacity 0s linear;
+  transition: visibility 1s, opacity 0s linear;
+  visibility: hidden; }
+  .SapphireSearch_close .CancelSearch {
+    cursor: pointer; }
 
 .BreadActionsWrapper {
   background-color: #f1f1f1;
