@@ -1,7 +1,7 @@
 /* Component ConfirmationPopup */
 var _isInIframe = window.frameElement != undefined || false;
 SapphireWidgets.ConfirmationPopup = {
-	isAnyConfirmationOpened: function() {
+	isAnyConfirmationOpened: function () {
 		if (_isInIframe) {
 			return window.top.$('body').hasClass('confirmation-opened') && window.top.$('.confirm-container:visible').length;
 		} else {
@@ -9,7 +9,7 @@ SapphireWidgets.ConfirmationPopup = {
 		}
 	},
 
-	toggleConfirm: function(_id, _question, _message, _notifyId, _HasNotifyOnCancel) {
+	toggleConfirm: function (_id, _question, _message, _notifyId, _HasNotifyOnCancel) {
 		if (!OsValidatorOnSubmit()) return;
 
 		if (!this.isAnyConfirmationOpened()) {
@@ -62,23 +62,12 @@ SapphireWidgets.ConfirmationPopup = {
 				if (_isInIframe) {
 					_noBtnLnk.setAttribute(
 						'onclick',
-						'document.getElementById("' +
-							'iframe_' +
-							_id +
-							'").contentWindow.OsNotifyWidget("' +
-							_notifyId +
-							'","CANCEL"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' +
-							_confirmId +
-							'");'
+						'document.getElementById("' + 'iframe_' + _id + '").contentWindow.OsNotifyWidget("' + _notifyId + '","CANCEL"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' + _confirmId + '");'
 					);
 				} else {
 					_noBtnLnk.setAttribute(
 						'onclick',
-						'OsNotifyWidget("' +
-							_notifyId +
-							'","CANCEL"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' +
-							_confirmId +
-							'");'
+						'OsNotifyWidget("' + _notifyId + '","CANCEL"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' + _confirmId + '");'
 					);
 				}
 			} else {
@@ -100,30 +89,19 @@ SapphireWidgets.ConfirmationPopup = {
 			_confirmActions.appendChild(_noBtnLnk);
 
 			var _yesBtnLnk = document.createElement('A');
-			_yesBtnLnk.setAttribute('class', 'Button SetAsValid');
+			_yesBtnLnk.setAttribute('class', 'Button SetAsValid Is_Default');
 			_yesBtnLnk.setAttribute('cancel-button', '');
 			_yesBtnLnk.setAttribute('ui', 'ConfirmYes1');
 
 			if (_isInIframe) {
 				_yesBtnLnk.setAttribute(
 					'onclick',
-					'document.getElementById("' +
-						'iframe_' +
-						_id +
-						'").contentWindow.OsNotifyWidget("' +
-						_notifyId +
-						'","OK"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' +
-						_confirmId +
-						'");'
+					'document.getElementById("' + 'iframe_' + _id + '").contentWindow.OsNotifyWidget("' + _notifyId + '","OK"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' + _confirmId + '");'
 				);
 			} else {
 				_yesBtnLnk.setAttribute(
 					'onclick',
-					'OsNotifyWidget("' +
-						_notifyId +
-						'","OK"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' +
-						_confirmId +
-						'");'
+					'OsNotifyWidget("' + _notifyId + '","OK"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' + _confirmId + '");'
 				);
 			}
 			var _yesBtn = document.createTextNode('Yes');
@@ -138,50 +116,41 @@ SapphireWidgets.ConfirmationPopup = {
 
 			if (_isInIframe) {
 				window.top.$('#bg_' + _confirmId).fadeIn(140);
-				setTimeout(function() {
-					window.top
-						.$('#' + _confirmId)
-						.find('.confirm-container')
-						.slideToggle(150);
+				setTimeout(function () {
+					window.top.$('#' + _confirmId).find('.confirm-container').slideToggle(150);
 					window.top.$('#' + _confirmId + ' [cancel-button]').focus();
 				}, 100);
 			} else {
 				$('#bg_' + _confirmId).fadeIn(140);
-				setTimeout(function() {
-					$('#' + _confirmId)
-						.find('.confirm-container')
-						.slideToggle(150);
+				setTimeout(function () {
+					$('#' + _confirmId).find('.confirm-container').slideToggle(150);
 					$('#' + _confirmId + ' [cancel-button]').focus();
 				}, 100);
 			}
 		}
 	},
 
-	closeConfirmPopup: function(_confirmId) {
+	closeConfirmPopup: function (_confirmId) {
 		$('body').removeClass('confirmation-opened');
 		$('body').css('overflow-y', 'scroll');
 		$('#bg_' + _confirmId).fadeOut(140);
 
-		setTimeout(function() {
-			$('#' + _confirmId)
-				.find('.confirm-container')
-				.slideUp(150);
+		setTimeout(function () {
+			$('#' + _confirmId).find('.confirm-container').slideUp(150);
 			$('#' + _confirmId).remove();
 		}, 100);
 	},
 
-	create: function(_id, _question, _message, _notifyId, _HasNotifyOnCancel) {
-		$(document).ready(function() {
-			$('#' + _id)
-				.off('click')
-				.on('click', function() {
-					SapphireWidgets.ConfirmationPopup.toggleConfirm(_id, _question, _message, _notifyId, _HasNotifyOnCancel);
-					if (_isInIframe) {
-						window.frameElement.setAttribute('menu-id', _id);
-						window.frameElement.setAttribute('id', 'iframe_' + _id);
-					}
-					return false;
-				});
+	create: function (_id, _question, _message, _notifyId, _HasNotifyOnCancel) {
+		$(document).ready(function () {
+			$('#' + _id).off('click').on('click', function () {
+				SapphireWidgets.ConfirmationPopup.toggleConfirm(_id, _question, _message, _notifyId, _HasNotifyOnCancel);
+				if (_isInIframe) {
+					window.frameElement.setAttribute('menu-id', _id);
+					window.frameElement.setAttribute('id', 'iframe_' + _id);
+				}
+				return false;
+			});
 		});
 	},
 };
