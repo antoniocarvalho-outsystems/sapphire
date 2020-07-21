@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920004 || Generated: Tue Jul 21 2020 14:03:45 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920005 || Generated: Tue Jul 21 2020 16:05:12 GMT+0100 (Hora de verão da Europa Ocidental) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3251,6 +3251,22 @@ div[onclick] {
 .AR .TableRecords tr td:first-child,
 .FA .TableRecords tr td:first-child {
   border-left: 1px solid transparent; }
+
+.LayoutBackoffice .TableRecords > tbody tr td:first-child {
+  border-left: none; }
+
+.LayoutBackoffice .TableRecords > tbody tr td:last-child {
+  border-right: none; }
+
+.LayoutBackoffice .TableRecords_Wrapper .NoResponsive tr.TableRowExpandable.open td,
+.LayoutBackoffice .TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr.TableRowExpandable.open:hover,
+.LayoutBackoffice .TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr.TableRowExpandable.open:hover td {
+  background: none; }
+
+.LayoutBackoffice.desktop .TableRecords > tbody > tr:hover,
+.LayoutBackoffice.desktop .TableRecords > tbody > tr:hover td,
+.LayoutBackoffice.desktop .EditableTable > tbody > tr:hover td {
+  background: none; }
 
 .InlineDropdown {
   cursor: pointer;
@@ -8154,7 +8170,7 @@ a.select2-choice.Filters {
 
 /* Select2 v. 4.0.6 */
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-  line-height: 40px; }
+  line-height: 30px; }
 
 span.select2-selection.select2-selection--single.Select2Ajax,
 span.select2-selection.select2-selection--single.select-hide.Select2 {
@@ -8171,12 +8187,13 @@ span.select2-selection__arrow:after {
   font-size: 12px;
   position: absolute;
   right: 8px;
-  top: 0; }
+  top: 8px; }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
   display: none; }
 
 .select2-container--open .select2-selection__arrow:after {
+  top: 10px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
 
@@ -8400,7 +8417,7 @@ span.select2-selection--single:focus,
   color: #999; }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 26px;
+  height: 30px;
   position: absolute;
   right: 1px;
   top: 1px;
