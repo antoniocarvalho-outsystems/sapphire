@@ -1900,7 +1900,6 @@ td.RowWithAddAction a {
 }
 
 .Feedback_AjaxWait .Loader {
-  background: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913) no-repeat;
   height: 16px;
   position: relative;
   text-indent: -9999em;
@@ -4909,11 +4908,11 @@ a.Button[disabled] {
   color: #9b9b9b;
 }
 
-.Button.Loading:before,
+/* .Button.Loading:before,
 .Button.Loading[disabled]:before,
 .Button.Loading:disabled:before {
   background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913);
-}
+} */
 
 input.Button:focus {
   border-width: 1px;
@@ -5168,7 +5167,6 @@ a.Button.Link:disabled,
 .Button.Loading:before,
 .Button.Loading[disabled]:before,
 .Button.Loading:disabled:before {
-  background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913);
   background-size: 16px 16px;
   content: "";
   display: inline-block;
@@ -5179,14 +5177,14 @@ a.Button.Link:disabled,
   width: 16px;
 }
 
-.Button.Is_Default.Loading:before,
+/* .Button.Is_Default.Loading:before,
 .Button.Is_Default.Loading[disabled]:before,
 .Button.Is_Default.Loading:disabled:before,
 .Button.ButtonDefault.Loading:before,
 .Button.ButtonDefault.Loading[disabled]:before,
 .Button.ButtonDefault.Loading:disabled:before {
   background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913);
-}
+} */
 
 .Button.Small.Loading:before {
   margin-top: 4px;
