@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920002 || Generated: Tue Jul 21 2020 11:05:59 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920003 || Generated: Tue Jul 21 2020 13:46:25 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -2874,6 +2874,77 @@ div[onclick] {
   .SapphireSearch_close .CancelSearch {
     cursor: pointer; }
 
+/* Tooltip container */
+.SapphireTooltip {
+  cursor: pointer;
+  display: inline-block;
+  position: relative; }
+  .SapphireTooltip:hover .SapphireTooltip_text {
+    cursor: pointer;
+    left: 60%;
+    margin-left: -60px;
+    top: 100%;
+    visibility: visible;
+    width: 300px;
+    z-index: 5; }
+  .SapphireTooltip_expression:hover {
+    text-decoration: underline; }
+  .SapphireTooltip_text {
+    background-color: #f5f5f5;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(64, 66, 69, 0.12), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
+    color: #000;
+    margin-top: 10px;
+    padding: 5px 0;
+    padding: 20px 20px 50px;
+    position: absolute;
+    text-align: left;
+    visibility: hidden;
+    width: 120px;
+    z-index: 1; }
+    .SapphireTooltip_text:after {
+      border-bottom: 10px solid #f5f5f5;
+      border-color: transparent transparent #f5f5f5 transparent;
+      border-style: solid;
+      border-width: 0 10px 10px 10px;
+      content: '';
+      height: 0;
+      left: 35px;
+      position: absolute;
+      top: -10px;
+      width: 0;
+      z-index: 1; }
+    .SapphireTooltip_text:before {
+      border-bottom: 10px solid #d6d6d6;
+      border-color: transparent transparent transparent transparent;
+      border-style: solid;
+      border-width: 0 10px 10px 10px;
+      content: '';
+      height: 0;
+      left: 35px;
+      position: absolute;
+      top: -11px;
+      width: 0;
+      z-index: 1; }
+    .SapphireTooltip_text:hover {
+      cursor: pointer; }
+  .SapphireTooltip__title {
+    color: #5c5c5c;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 9px; }
+  .SapphireTooltip__data {
+    color: #333333;
+    font-size: 16px;
+    line-height: 17px;
+    margin-bottom: 30px;
+    min-height: 24px;
+    width: 242px; }
+    .SapphireTooltip__data:last-child {
+      margin-bottom: 0; }
+
 .BreadActionsWrapper {
   background-color: #f1f1f1;
   max-width: 1439px;
@@ -3786,6 +3857,98 @@ body.PanelOpened .daterangepicker {
 
 .DateTimeRangePicker-displayed input[type] {
   width: 100%; }
+
+.HourPicker {
+  font-size: 1em;
+  /* RTL Adjustments - HourPicker */ }
+  .HourPicker:not(.HourPicker--textTrigger) .HourPicker__InputContainer:before {
+    color: #00bfa5;
+    content: '\e62a';
+    font-family: "Sapphire-Icon-Font";
+    font-size: 1.143em;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .HourPicker--textTrigger .HourPicker__LabelValue {
+    color: #00bfa5;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "LatoBold";
+    font-size: inherit;
+    vertical-align: baseline; }
+  .HourPicker--textTrigger .HourPicker__InputContainer {
+    display: none; }
+  .HourPicker__InputValue {
+    font-size: inherit;
+    padding-right: 26px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 100%; }
+  .HourPicker__Placeholder {
+    height: 0 !important;
+    visibility: hidden;
+    width: 0 !important; }
+  .HourPicker__Displayed {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    width: 100%; }
+  .HourPicker__InputContainer {
+    position: relative;
+    width: 100%; }
+  .HourPicker__ButtonClear {
+    color: #00bfa5;
+    cursor: pointer;
+    font-family: "Sapphire-Icon-Font";
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    margin: 0 10px;
+    text-transform: none; }
+    .HourPicker__ButtonClear:before {
+      content: '\e604';
+      display: inline-block;
+      -webkit-transform: rotateZ(45deg);
+              transform: rotateZ(45deg); }
+  .AR .HourPicker:before {
+    left: 9px;
+    right: auto; }
+
+/* UI TimePicker CSS - HourPicker */
+div.ui-timepicker-container {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  font-size: 1em;
+  min-width: 130px;
+  /* RTL Adjustments - UI Timepicker */ }
+  div.ui-timepicker-container ::-webkit-scrollbar {
+    box-sizing: border-box;
+    height: 7px;
+    width: 7px; }
+  div.ui-timepicker-container ::-webkit-scrollbar-track {
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff; }
+  div.ui-timepicker-container ::-webkit-scrollbar-thumb {
+    border: 5px solid #00bfa5;
+    border-radius: 4px; }
+  div.ui-timepicker-container .ui-state-hover {
+    background-color: #00bfa5;
+    border-color: transparent;
+    color: #fff; }
+  div.ui-timepicker-container .ui-corner-all {
+    cursor: pointer;
+    text-decoration: none; }
+  div.ui-timepicker-container.rtl .ui-timepicker-viewport {
+    list-style: none; }
+  div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewport {
+    padding-left: 40px;
+    padding-right: 0 !important; }
 
 .IconVertical {
   margin-right: 5px;
