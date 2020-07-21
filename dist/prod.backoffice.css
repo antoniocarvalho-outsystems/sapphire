@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920001 || Generated: Tue Jul 21 2020 09:08:02 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.backoffice.css || Version: 5.1.920002 || Generated: Tue Jul 21 2020 11:05:59 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -2949,6 +2949,224 @@ div[onclick] {
           transform: rotate(0deg); }
 
 /* NavigationBar */
+.TableRecords {
+  background-color: transparent;
+  border-bottom: none;
+  border-radius: 1px;
+  border-top: none;
+  margin-top: 0;
+  padding: 0; }
+  .TableRecords > tbody > tr:first-child td {
+    border-top: 1px solid #d6d6d6; }
+  .TableRecords > tbody tr td:first-child {
+    border-left: 1px solid #d6d6d6; }
+  .TableRecords > tbody tr td:last-child {
+    border-right: 1px solid #d6d6d6; }
+  .TableRecords.TableRecordsNotes tbody td {
+    font-size: 0.857em; }
+  .TableRecords.TableRecordsNotes tbody tr:first-child td {
+    border-top: 1px solid #00bfa5; }
+  .TableRecords.TableRecordsNotes .TableRecords_Header {
+    color: #00bfa5;
+    line-height: 22px; }
+  .TableRecords.TableRecordsNotes .NewMessage_Warning td {
+    background-color: #f5f4e0; }
+  .TableRecords.TableRecordsNotes .TableRecords_OddLine {
+    background-color: unset; }
+  .TableRecords.ExpandableRows {
+    border-collapse: collapse; }
+    .TableRecords.ExpandableRows tbody {
+      background-color: #fff; }
+    .TableRecords.ExpandableRows .Link.ChangeUp {
+      display: none; }
+    .TableRecords.ExpandableRows .Link.ChangeDown {
+      display: inline-block; }
+    .TableRecords.ExpandableRows .ActiveRow .TableRecords_OddLine:first-child span,
+    .TableRecords.ExpandableRows .ActiveRow .TableRecords_EvenLine:first-child span {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      -webkit-transition: all 500ms;
+      transition: all 500ms; }
+    .TableRecords.ExpandableRows .ActiveRow .Link.ChangeUp {
+      display: inline-block; }
+    .TableRecords.ExpandableRows .ActiveRow .Link.ChangeDown {
+      display: none; }
+    .TableRecords.ExpandableRows .TableRecords_OddLine:first-child {
+      width: 60px; }
+    .TableRecords.ExpandableRows .TableRecords_OddLine:first-child span,
+    .TableRecords.ExpandableRows .TableRecords_EvenLine:first-child span {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transition: all 500ms;
+      transition: all 500ms; }
+  .TableRecords_Header {
+    background-color: transparent;
+    border-bottom: none;
+    color: #858585;
+    font-family: "LatoBold";
+    font-size: 0.857em;
+    min-height: 48px;
+    padding: 8px 10px;
+    text-align: left;
+    text-transform: uppercase; }
+    .TableRecords_Header:empty {
+      height: 0;
+      line-height: 0;
+      padding: 0; }
+  .TableRecords_OddLine, .TableRecords_EvenLine {
+    background-color: #fff;
+    border-bottom: 1px solid #d6d6d6;
+    color: #333333;
+    min-height: 48px;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top; }
+  .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span {
+    border-bottom: 5px solid #009884;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    height: 0;
+    width: 0; }
+    .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span:after, .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span:before {
+      content: ''; }
+  .TableRecords_Wrapper.NoResponsive th.TableRecords_Header {
+    border-top: 1px solid #d6d6d6; }
+    .TableRecords_Wrapper.NoResponsive th.TableRecords_Header:first-child {
+      border-left: 1px solid #d6d6d6; }
+    .TableRecords_Wrapper.NoResponsive th.TableRecords_Header:last-child {
+      border-right: 1px solid #d6d6d6; }
+  .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open td {
+    border-bottom: 1px solid #d6d6d6; }
+  .TableRecords_Wrapper.NoResponsive tr.ActiveRow td {
+    border-bottom: 1px solid #00bfa5;
+    border-top: 1px solid #00bfa5; }
+    .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:first-child {
+      border-left: 1px solid #00bfa5; }
+    .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:last-child {
+      border-right: 1px solid #00bfa5; }
+  .TableRecords_Wrapper.NoResponsive .ActiveRow .TableRecords_OddLine:first-child span,
+  .TableRecords_Wrapper.NoResponsive .ActiveRow .TableRecords_EvenLine:first-child span {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  .TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr:hover {
+    background: #fff; }
+  .TableRecords_Wrapper.NoResponsive .TableRecords thead,
+  .TableRecords_Wrapper.NoResponsive .TableRecords tbody {
+    background-color: #fff; }
+  .TableRecords_Wrapper.NoResponsive .TableRecords_Header {
+    color: #5c5c5c;
+    font-weight: normal; }
+    .TableRecords_Wrapper.NoResponsive .TableRecords_Header a,
+    .TableRecords_Wrapper.NoResponsive .TableRecords_Header a:link,
+    .TableRecords_Wrapper.NoResponsive .TableRecords_Header a:visited {
+      color: #5c5c5c; }
+  .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child span, .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child span {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .TableRecords_Wrapper.NoResponsive .TableRecords_Header:first-child, .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child, .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child {
+    padding-left: 15px; }
+  .TableRecords_ContentExpandable {
+    display: contents; }
+  .TableRecords th.SortColumns_Sortable {
+    color: inherit; }
+  .TableRecords .LightGreen {
+    color: #333333; }
+
+.TableRowExpandable {
+  display: none;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  visibility: hidden; }
+  .TableRowExpandable.open {
+    display: table-row;
+    visibility: visible; }
+
+.AR .TableRecords_Header,
+.FA .TableRecords_Header {
+  padding: 5px 10px 10px 0; }
+
+.AR .TableRecords_Header,
+.AR .TableRecords_Header div, .AR .TableRecords_OddLine,
+.AR .TableRecords_OddLine div, .AR .TableRecords_EvenLine,
+.AR .TableRecords_EvenLine div,
+.FA .TableRecords_Header,
+.FA .TableRecords_Header div,
+.FA .TableRecords_OddLine,
+.FA .TableRecords_OddLine div,
+.FA .TableRecords_EvenLine,
+.FA .TableRecords_EvenLine div {
+  text-align: right !important; }
+
+.AR .TableRecords_Header:last-child, .AR .TableRecords_OddLine:last-child, .AR .TableRecords_EvenLine:last-child,
+.FA .TableRecords_Header:last-child,
+.FA .TableRecords_OddLine:last-child,
+.FA .TableRecords_EvenLine:last-child {
+  padding-right: 15px; }
+
+.AR .TableRecords_Header:first-child, .AR .TableRecords_OddLine:first-child, .AR .TableRecords_EvenLine:first-child,
+.FA .TableRecords_Header:first-child,
+.FA .TableRecords_OddLine:first-child,
+.FA .TableRecords_EvenLine:first-child {
+  padding-left: 0;
+  padding-right: 20px; }
+
+.AR .TableRecords_OddLine:first-child span, .AR .TableRecords_EvenLine:first-child span,
+.FA .TableRecords_OddLine:first-child span,
+.FA .TableRecords_EvenLine:first-child span {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.AR .TableRecords_OddLine:last-child, .AR .TableRecords_EvenLine:last-child,
+.FA .TableRecords_OddLine:last-child,
+.FA .TableRecords_EvenLine:last-child {
+  border-left: 1px solid transparent;
+  border-right: none; }
+
+.AR .TableRecords_OddLine:first-child, .AR .TableRecords_EvenLine:first-child,
+.FA .TableRecords_OddLine:first-child,
+.FA .TableRecords_EvenLine:first-child {
+  border-left: none;
+  border-right: 1px solid transparent; }
+
+.AR .TableRecords_Wrapper.NoResponsive .TableRecords_Header,
+.FA .TableRecords_Wrapper.NoResponsive .TableRecords_Header {
+  text-align: right; }
+
+.AR .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine,
+.AR .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine,
+.FA .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine,
+.FA .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine {
+  text-align: right; }
+
+.AR .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:first-child,
+.FA .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:first-child {
+  border-left: none;
+  border-right: 1px solid #00bfa5; }
+
+.AR .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:last-child,
+.FA .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:last-child {
+  border-left: 1px solid #00bfa5;
+  border-right: none; }
+
+.AR .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable .TableRowExpandable_Content.Column,
+.AR .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open .TableRowExpandable_Content.Column,
+.FA .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable .TableRowExpandable_Content.Column,
+.FA .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open .TableRowExpandable_Content.Column {
+  padding-right: 10px;
+  text-align: right; }
+
+.AR .TableRecords_Wrapper .TableRecords_Header,
+.FA .TableRecords_Wrapper .TableRecords_Header {
+  padding: 10px; }
+
+.AR .TableRecords tr td:last-child,
+.FA .TableRecords tr td:last-child {
+  border-right: 1px solid transparent; }
+
+.AR .TableRecords tr td:first-child,
+.FA .TableRecords tr td:first-child {
+  border-left: 1px solid transparent; }
+
 .InlineDropdown {
   cursor: pointer;
   height: -webkit-fit-content;
@@ -3568,6 +3786,171 @@ body.PanelOpened .daterangepicker {
 
 .DateTimeRangePicker-displayed input[type] {
   width: 100%; }
+
+.IconVertical {
+  margin-right: 5px;
+  min-width: 50px; }
+  .IconVertical:hover {
+    text-decoration: none; }
+  .IconVertical.iconBorder {
+    padding: 0 5px 0 10px; }
+
+.iconVertical_icon {
+  color: #009884;
+  font-weight: 600; }
+  .iconVertical_icon.IconGreenColor {
+    color: #009884; }
+  .iconVertical_icon.IconYellowColor {
+    color: #ffa000; }
+  .iconVertical_icon.IconRedColor {
+    color: #ff3e2d; }
+  .iconVertical_icon.IconSapphireWarningColor {
+    color: #b10100; }
+  .iconVertical_icon.IconOrangeColor {
+    color: #c37b03; }
+  .iconVertical_icon.AllGreenIcon .icon {
+    color: #009884; }
+
+.iconVertical_label {
+  color: #333333;
+  font-weight: normal;
+  text-decoration: none; }
+  .iconVertical_label.LabelGreen {
+    color: #009884; }
+  .iconVertical_label.LabelColorGreen {
+    color: #009884; }
+  .iconVertical_label.LabelColorYellow {
+    color: #ffa000; }
+  .iconVertical_label.LabelColorRed {
+    color: #ff3e2d; }
+  .iconVertical_label.LabelColorSapphireWarning {
+    color: #b10100; }
+  .iconVertical_label.LabelColorOrange {
+    color: #c37b03; }
+
+.iconVertical_icon {
+  margin-bottom: 5px; }
+  .iconVertical_icon.IconBlackColor {
+    color: #333333; }
+
+.IconHorizontal:hover {
+  text-decoration: none; }
+
+.iconHorizontal {
+  font-size: 1em; }
+  .iconHorizontal_icon {
+    color: #009884;
+    font-weight: 600; }
+    .iconHorizontal_icon.IconGreenColor {
+      color: #009884; }
+    .iconHorizontal_icon.IconYellowColor {
+      color: #ffa000; }
+    .iconHorizontal_icon.IconRedColor {
+      color: #ff3e2d; }
+    .iconHorizontal_icon.IconSapphireWarningColor {
+      color: #b10100; }
+    .iconHorizontal_icon.IconOrangeColor {
+      color: #c37b03; }
+    .iconHorizontal_icon.AllGreenIcon .icon {
+      color: #009884; }
+  .iconHorizontal_label {
+    color: #333333;
+    font-weight: normal;
+    text-decoration: none; }
+    .iconHorizontal_label.LabelGreen {
+      color: #009884; }
+    .iconHorizontal_label.LabelColorGreen {
+      color: #009884; }
+    .iconHorizontal_label.LabelColorYellow {
+      color: #ffa000; }
+    .iconHorizontal_label.LabelColorRed {
+      color: #ff3e2d; }
+    .iconHorizontal_label.LabelColorSapphireWarning {
+      color: #b10100; }
+    .iconHorizontal_label.LabelColorOrange {
+      color: #c37b03; }
+  .iconHorizontal.iconBorder {
+    padding: 0 5px 0 10px; }
+  .iconHorizontal_icon {
+    line-height: 1.43;
+    max-width: unset;
+    text-align: center;
+    vertical-align: middle; }
+    .iconHorizontal_icon.IconBlackColor {
+      color: #333333;
+      font-weight: bold; }
+    .iconHorizontal_icon span.icon {
+      display: inline-block;
+      margin-right: 4px;
+      margin-top: 4px; }
+    .iconHorizontal_icon span.icon.icon-lg,
+    .iconHorizontal_icon span.icon.icon-1x {
+      margin-right: 4px; }
+    .iconHorizontal_icon span.icon.icon-2x {
+      margin-right: 7px; }
+    .iconHorizontal_icon span.icon.icon-3x,
+    .iconHorizontal_icon span.icon.icon-4x {
+      margin-right: 5px; }
+  .iconHorizontal_label {
+    vertical-align: middle; }
+
+.InvertIconLabel .iconHorizontal {
+  text-align: left;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
+  .InvertIconLabel .iconHorizontal_icon {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle; }
+  .InvertIconLabel .iconHorizontal > div {
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1); }
+
+.iconBorder {
+  border-left: solid 1px #adadad;
+  border-right: 0; }
+
+.iconLabel-disabled,
+.iconLabel-disabled .iconVertical_icon,
+.iconLabel-disabled .iconHorizontal_icon,
+.iconLabel-disabled .iconVertical_label.LabelGreen,
+.iconLabel-disabled .iconHorizontal_label.LabelGreen,
+.iconLabel-disabled .iconVertical_icon.AllGreenIcon .icon,
+.iconLabel-disabled .iconHorizontal_icon.AllGreenIcon .icon {
+  color: #adadad !important;
+  cursor: auto;
+  pointer-events: none; }
+
+.icon:after {
+  content: 'N/A'; }
+
+.AR .IconVertical,
+.FA .IconVertical {
+  padding: 0 10px 0 5px; }
+
+.AR .iconHorizontal_icon,
+.FA .iconHorizontal_icon {
+  margin-right: 0 !important; }
+  .AR .iconHorizontal_icon span.icon,
+  .FA .iconHorizontal_icon span.icon {
+    margin-left: 4px; }
+  .AR .iconHorizontal_icon span.icon.icon-lg,
+  .FA .iconHorizontal_icon span.icon.icon-lg {
+    margin-left: 4px; }
+  .AR .iconHorizontal_icon span.icon.icon-2x,
+  .FA .iconHorizontal_icon span.icon.icon-2x {
+    margin-left: 7px; }
+  .AR .iconHorizontal_icon span.icon.icon-3x,
+  .FA .iconHorizontal_icon span.icon.icon-3x {
+    margin-left: 5px; }
+  .AR .iconHorizontal_icon span.icon.icon-4x,
+  .FA .iconHorizontal_icon span.icon.icon-4x {
+    margin-left: 5px; }
+
+.AR .iconBorder,
+.FA .iconBorder {
+  border-left: 0;
+  border-right: solid 1px #adadad; }
 
 .PanelOpened {
   overflow: auto;
@@ -4525,6 +4908,36 @@ body.PanelById.PanelOpened {
 .select2-dropdown[dir="rtl"] .select2-results__option:before {
   margin-left: 20px;
   margin-right: unset; }
+
+.Scrollable {
+  overflow: auto; }
+  .Scrollable::-webkit-scrollbar {
+    background-color: #fff;
+    height: 7px;
+    width: 7px; }
+  .Scrollable::-webkit-scrollbar-thumb {
+    border: 5px solid #00bfa5;
+    border-radius: 4px; }
+  .Scrollable::before {
+    content: '';
+    display: block;
+    height: 1px; }
+
+.ScrollableWhite {
+  overflow: auto; }
+  .ScrollableWhite::-webkit-scrollbar {
+    background-color: transparent;
+    height: 7px;
+    width: 7px; }
+  .ScrollableWhite::-webkit-scrollbar-track {
+    border: none; }
+  .ScrollableWhite::-webkit-scrollbar-thumb {
+    border: 5px solid #fff;
+    border-radius: 4px; }
+  .ScrollableWhite::before {
+    content: '';
+    display: block;
+    height: 1px; }
 
 /* Backoffice_Th Legacy */
 /*
