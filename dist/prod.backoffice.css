@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920003 || Generated: Tue Jul 21 2020 13:46:25 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920004 || Generated: Tue Jul 21 2020 14:03:45 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -2944,6 +2944,20 @@ div[onclick] {
     width: 242px; }
     .SapphireTooltip__data:last-child {
       margin-bottom: 0; }
+
+.TitleSubTitleElement {
+  min-height: 50px; }
+  .TitleSubTitleElement_title {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 20px; }
+  .TitleSubTitleElement_subtitle {
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 1px; }
 
 .BreadActionsWrapper {
   background-color: #f1f1f1;
