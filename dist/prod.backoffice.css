@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.910064 || Generated: Mon Jul 20 2020 17:14:13 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.910065 || Generated: Tue Jul 21 2020 09:06:31 GMT+0100 (Hora de verão da Europa Ocidental) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -6160,7 +6160,6 @@ td.RowWithAddAction a {
   right: 20px; }
 
 .Feedback_AjaxWait .Loader {
-  background: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913) no-repeat;
   height: 16px;
   position: relative;
   text-indent: -9999em;
@@ -8684,11 +8683,11 @@ a.Button[disabled] {
   border: 1px solid #9b9b9b;
   color: #9b9b9b; }
 
-.Button.Loading:before,
+/* .Button.Loading:before,
 .Button.Loading[disabled]:before,
 .Button.Loading:disabled:before {
-  background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913); }
-
+  background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913);
+} */
 input.Button:focus {
   border-width: 1px;
   box-shadow: none; }
@@ -8905,7 +8904,6 @@ a.Button.Link:disabled,
 .Button.Loading:before,
 .Button.Loading[disabled]:before,
 .Button.Loading:disabled:before {
-  background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913);
   background-size: 16px 16px;
   content: "";
   display: inline-block;
@@ -8915,14 +8913,14 @@ a.Button.Link:disabled,
   vertical-align: middle;
   width: 16px; }
 
-.Button.Is_Default.Loading:before,
+/* .Button.Is_Default.Loading:before,
 .Button.Is_Default.Loading[disabled]:before,
 .Button.Is_Default.Loading:disabled:before,
 .Button.ButtonDefault.Loading:before,
 .Button.ButtonDefault.Loading[disabled]:before,
 .Button.ButtonDefault.Loading:disabled:before {
-  background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913); }
-
+  background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913);
+} */
 .Button.Small.Loading:before {
   margin-top: 4px; }
 
