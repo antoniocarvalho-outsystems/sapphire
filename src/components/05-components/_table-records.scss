@@ -1,317 +1,349 @@
 .TableRecords {
-	background-color: transparent;
-	border-bottom: none;
-	border-radius: 1px;
-	border-top: none;
-	margin-top: 0;
-	padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+  border-radius: 1px;
+  border-top: none;
+  margin-top: 0;
+  padding: 0;
 
-	> tbody > tr:first-child td {
-		border-top: 1px solid $light-grey;
-	}
+  >tbody>tr:first-child td {
+    border-top: 1px solid $light-grey;
+  }
 
-	> tbody tr {
-		td:first-child {
-			border-left: 1px solid $light-grey;
-		}
+  >tbody tr {
+    td:first-child {
+      border-left: 1px solid $light-grey;
+    }
 
-		td:last-child {
-			border-right: 1px solid $light-grey;
-		}
-	}
+    td:last-child {
+      border-right: 1px solid $light-grey;
+    }
+  }
 
-	&.TableRecordsNotes {
-		tbody {
-			td {
-				font-size: 0.857em;
-			}
+  &.TableRecordsNotes {
+    tbody {
+      td {
+        font-size: 0.857em;
+      }
 
-			tr:first-child td {
-				border-top: 1px solid $regular-alpha;
-			}
-		}
+      tr:first-child td {
+        border-top: 1px solid $regular-alpha;
+      }
+    }
 
-		.TableRecords_Header {
-			color: $regular-alpha;
-			line-height: 22px;
-		}
+    .TableRecords_Header {
+      color: $regular-alpha;
+      line-height: 22px;
+    }
 
-		.NewMessage_Warning td {
-			background-color: $light-beige;
-		}
+    .NewMessage_Warning td {
+      background-color: $light-beige;
+    }
 
-		.TableRecords_OddLine {
-			background-color: unset;
-		}
-	}
+    .TableRecords_OddLine {
+      background-color: unset;
+    }
+  }
 
-	&.ExpandableRows {
-		border-collapse: collapse;
+  &.ExpandableRows {
+    border-collapse: collapse;
 
-		tbody {
-			background-color: $regular-white;
-		}
+    tbody {
+      background-color: $regular-white;
+    }
 
-		.Link.ChangeUp {
-			display: none;
-		}
+    .Link.ChangeUp {
+      display: none;
+    }
 
-		.Link.ChangeDown {
-			display: inline-block;
-		}
+    .Link.ChangeDown {
+      display: inline-block;
+    }
 
-		.ActiveRow {
-			.TableRecords_OddLine:first-child span,
-			.TableRecords_EvenLine:first-child span {
-				transform: rotate(180deg);
-				transition: all 500ms;
-			}
+    .ActiveRow {
 
-			.Link.ChangeUp {
-				display: inline-block;
-			}
+      .TableRecords_OddLine:first-child span,
+      .TableRecords_EvenLine:first-child span {
+        transform: rotate(180deg);
+        transition: all 500ms;
+      }
 
-			.Link.ChangeDown {
-				display: none;
-			}
-		}
+      .Link.ChangeUp {
+        display: inline-block;
+      }
 
-		.TableRecords_OddLine:first-child {
-			width: 60px;
-		}
+      .Link.ChangeDown {
+        display: none;
+      }
+    }
 
-		.TableRecords_OddLine:first-child span,
-		.TableRecords_EvenLine:first-child span {
-			transform: rotate(0deg);
-			transition: all 500ms;
-		}
-	}
+    .TableRecords_OddLine:first-child {
+      width: 60px;
+    }
 
-	&_Header {
-		background-color: transparent;
-		border-bottom: none;
-		color: $regular-gray;
-		font-family: $font-family-latin-bold;
-		font-size: 0.857em;
-		min-height: 48px;
-		padding: 8px 10px;
-		text-align: left;
-		text-transform: uppercase;
+    .TableRecords_OddLine:first-child span,
+    .TableRecords_EvenLine:first-child span {
+      transform: rotate(0deg);
+      transition: all 500ms;
+    }
+  }
 
-		&:empty {
-			height: 0;
-			line-height: 0;
-			padding: 0;
-		}
-	}
+  &_Header {
+    background-color: transparent;
+    border-bottom: none;
+    color: $regular-gray;
+    font-family: $font-family-latin-bold;
+    font-size: 0.857em;
+    min-height: 48px;
+    padding: 8px 10px;
+    text-align: left;
+    text-transform: uppercase;
 
-	&_OddLine,
-	&_EvenLine {
-		background-color: $regular-white;
-		border-bottom: 1px solid $light-grey;
-		color: $dark-grey;
-		min-height: 48px;
-		padding: 10px;
-		text-align: left;
-		vertical-align: top;
-	}
+    &:empty {
+      height: 0;
+      line-height: 0;
+      padding: 0;
+    }
+  }
 
-	&_Wrapper {
-		&.NoResponsive {
-			.TableRecords.ExpandableRows td .ExpandLink {
-				span {
-					@include arrow-down-simple;
-				}
-			}
+  &_OddLine,
+  &_EvenLine {
+    background-color: $regular-white;
+    border-bottom: 1px solid $light-grey;
+    color: $dark-grey;
+    min-height: 48px;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+  }
 
-			th.TableRecords_Header {
-				border-top: 1px solid $light-grey;
+  &_Wrapper {
+    &.NoResponsive {
+      .TableRecords.ExpandableRows td .ExpandLink {
+        span {
+          @include arrow-down-simple;
+        }
+      }
 
-				&:first-child {
-					border-left: 1px solid $light-grey;
-				}
+      th.TableRecords_Header {
+        border-top: 1px solid $light-grey;
 
-				&:last-child {
-					border-right: 1px solid $light-grey;
-				}
-			}
+        &:first-child {
+          border-left: 1px solid $light-grey;
+        }
 
-			tr.TableRowExpandable {
-				&.open {
-					td {
-						border-bottom: 1px solid $light-grey;
-					}
-				}
-			}
+        &:last-child {
+          border-right: 1px solid $light-grey;
+        }
+      }
 
-			tr.ActiveRow {
-				td {
-					border-bottom: 1px solid $regular-alpha;
-					border-top: 1px solid $regular-alpha;
+      tr.TableRowExpandable {
+        &.open {
+          td {
+            border-bottom: 1px solid $light-grey;
+          }
+        }
+      }
 
-					&:first-child {
-						border-left: 1px solid $regular-alpha;
-					}
+      tr.ActiveRow {
+        td {
+          border-bottom: 1px solid $regular-alpha;
+          border-top: 1px solid $regular-alpha;
 
-					&:last-child {
-						border-right: 1px solid $regular-alpha;
-					}
-				}
-			}
+          &:first-child {
+            border-left: 1px solid $regular-alpha;
+          }
 
-			.ActiveRow {
-				.TableRecords_OddLine:first-child span,
-				.TableRecords_EvenLine:first-child span {
-					transform: rotate(0deg);
-				}
-			}
+          &:last-child {
+            border-right: 1px solid $regular-alpha;
+          }
+        }
+      }
 
-			.TableRecords {
-				> tbody > tr:hover {
-					background: $regular-white;
-				}
+      .ActiveRow {
 
-				thead,
-				tbody {
-					background-color: $regular-white;
-				}
+        .TableRecords_OddLine:first-child span,
+        .TableRecords_EvenLine:first-child span {
+          transform: rotate(0deg);
+        }
+      }
 
-				&_Header {
-					color: $mid-dark-grey;
-					font-weight: normal;
+      .TableRecords {
+        >tbody>tr:hover {
+          background: $regular-white;
+        }
 
-					a,
-					a:link,
-					a:visited {
-						color: $mid-dark-grey;
-					}
-				}
+        thead,
+        tbody {
+          background-color: $regular-white;
+        }
 
-				&_OddLine,
-				&_EvenLine {
-					&:first-child span {
-						transform: rotate(180deg);
-					}
-				}
+        &_Header {
+          color: $mid-dark-grey;
+          font-weight: normal;
 
-				&_Header:first-child,
-				&_OddLine:first-child,
-				&_EvenLine:first-child {
-					padding-left: 15px;
-				}
-			}
-		}
-	}
+          a,
+          a:link,
+          a:visited {
+            color: $mid-dark-grey;
+          }
+        }
 
-	&_ContentExpandable {
-		display: contents;
-	}
+        &_OddLine,
+        &_EvenLine {
+          &:first-child span {
+            transform: rotate(180deg);
+          }
+        }
 
-	th.SortColumns_Sortable {
-		color: inherit;
-	}
+        &_Header:first-child,
+        &_OddLine:first-child,
+        &_EvenLine:first-child {
+          padding-left: 15px;
+        }
+      }
+    }
+  }
 
-	.LightGreen {
-		color: $dark-grey;
-	}
+  &_ContentExpandable {
+    display: contents;
+  }
+
+  th.SortColumns_Sortable {
+    color: inherit;
+  }
+
+  .LightGreen {
+    color: $dark-grey;
+  }
 }
 
 .TableRowExpandable {
-	display: none;
-	transition: all 500ms;
-	visibility: hidden;
+  display: none;
+  transition: all 500ms;
+  visibility: hidden;
 
-	&.open {
-		display: table-row;
-		visibility: visible;
-	}
+  &.open {
+    display: table-row;
+    visibility: visible;
+  }
 }
 
 .AR,
 .FA {
-	.TableRecords {
-		&_Header {
-			padding: 5px 10px 10px 0;
-		}
+  .TableRecords {
+    &_Header {
+      padding: 5px 10px 10px 0;
+    }
 
-		&_Header,
-		&_OddLine,
-		&_EvenLine {
-			&,
-			div {
-				text-align: right !important;
-			}
+    &_Header,
+    &_OddLine,
+    &_EvenLine {
 
-			&:last-child {
-				padding-right: 15px;
-			}
+      &,
+      div {
+        text-align: right !important;
+      }
 
-			&:first-child {
-				padding-left: 0;
-				padding-right: 20px;
-			}
-		}
+      &:last-child {
+        padding-right: 15px;
+      }
 
-		&_OddLine,
-		&_EvenLine {
-			&:first-child span {
-				transform: rotate(90deg);
-			}
+      &:first-child {
+        padding-left: 0;
+        padding-right: 20px;
+      }
+    }
 
-			&:last-child {
-				border-left: 1px solid transparent;
-				border-right: none;
-			}
+    &_OddLine,
+    &_EvenLine {
+      &:first-child span {
+        transform: rotate(90deg);
+      }
 
-			&:first-child {
-				border-left: none;
-				border-right: 1px solid transparent;
-			}
-		}
+      &:last-child {
+        border-left: 1px solid transparent;
+        border-right: none;
+      }
 
-		&_Wrapper {
-			&.NoResponsive {
-				.TableRecords_Header {
-					text-align: right;
-				}
+      &:first-child {
+        border-left: none;
+        border-right: 1px solid transparent;
+      }
+    }
 
-				.TableRecords_OddLine,
-				.TableRecords_EvenLine {
-					text-align: right;
-				}
+    &_Wrapper {
+      &.NoResponsive {
+        .TableRecords_Header {
+          text-align: right;
+        }
 
-				tr.ActiveRow {
-					td {
-						&:first-child {
-							border-left: none;
-							border-right: 1px solid $regular-alpha;
-						}
+        .TableRecords_OddLine,
+        .TableRecords_EvenLine {
+          text-align: right;
+        }
 
-						&:last-child {
-							border-left: 1px solid $regular-alpha;
-							border-right: none;
-						}
-					}
-				}
+        tr.ActiveRow {
+          td {
+            &:first-child {
+              border-left: none;
+              border-right: 1px solid $regular-alpha;
+            }
 
-				tr.TableRowExpandable .TableRowExpandable_Content.Column,
-				tr.TableRowExpandable.open .TableRowExpandable_Content.Column {
-					padding-right: 10px;
-					text-align: right;
-				}
-			}
+            &:last-child {
+              border-left: 1px solid $regular-alpha;
+              border-right: none;
+            }
+          }
+        }
 
-			.TableRecords_Header {
-				padding: 10px;
-			}
-		}
+        tr.TableRowExpandable .TableRowExpandable_Content.Column,
+        tr.TableRowExpandable.open .TableRowExpandable_Content.Column {
+          padding-right: 10px;
+          text-align: right;
+        }
+      }
 
-		tr td:last-child {
-			border-right: 1px solid transparent;
-		}
+      .TableRecords_Header {
+        padding: 10px;
+      }
+    }
 
-		tr td:first-child {
-			border-left: 1px solid transparent;
-		}
-	}
+    tr td:last-child {
+      border-right: 1px solid transparent;
+    }
+
+    tr td:first-child {
+      border-left: 1px solid transparent;
+    }
+  }
+}
+
+.LayoutBackoffice {
+  .TableRecords>tbody tr td:first-child {
+    border-left: none;
+  }
+
+  .TableRecords>tbody tr td:last-child {
+    border-right: none;
+  }
+
+  .TableRecords_Wrapper .NoResponsive tr.TableRowExpandable.open td,
+  .TableRecords_Wrapper.NoResponsive .TableRecords>tbody>tr.TableRowExpandable.open:hover,
+  .TableRecords_Wrapper.NoResponsive .TableRecords>tbody>tr.TableRowExpandable.open:hover td {
+    background: none;
+  }
+
+
+  &.desktop {
+
+    .TableRecords>tbody>tr:hover,
+    .TableRecords>tbody>tr:hover td,
+    .EditableTable>tbody>tr:hover td {
+      background: none;
+    }
+  }
+
+
+
 }
