@@ -1,0 +1,20 @@
+.LayoutBackoffice .select2-selection {
+  height: 40px !important;
+}
+
+.LayoutBackoffice .select2-selection__arrow {
+  height: 40px !important;
+
+  &:after {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+}
+
+.LayoutBackoffice .select2-selection__rendered {
+  line-height: 35px !important;
+}
+
+.select2-container.select2-container--open .select2-search__field {
+  padding-left: 15px !important;
+}

@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920004 || Generated: Tue Jul 21 2020 14:03:45 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920006 || Generated: Tue Jul 21 2020 16:36:23 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9484,6 +9484,22 @@ a.Button.IsDefault,
 .AR .TableRecords tr td:first-child,
 .FA .TableRecords tr td:first-child {
   border-left: 1px solid transparent; }
+
+.LayoutBackoffice .TableRecords > tbody tr td:first-child {
+  border-left: none; }
+
+.LayoutBackoffice .TableRecords > tbody tr td:last-child {
+  border-right: none; }
+
+.LayoutBackoffice .TableRecords_Wrapper .NoResponsive tr.TableRowExpandable.open td,
+.LayoutBackoffice .TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr.TableRowExpandable.open:hover,
+.LayoutBackoffice .TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr.TableRowExpandable.open:hover td {
+  background: none; }
+
+.LayoutBackoffice.desktop .TableRecords > tbody > tr:hover,
+.LayoutBackoffice.desktop .TableRecords > tbody > tr:hover td,
+.LayoutBackoffice.desktop .EditableTable > tbody > tr:hover td {
+  background: none; }
 
 .TimeSeparator {
   font-family: "LatoBold";

@@ -3570,9 +3570,12 @@ a.select2-choice.Filters {
   right: 8px;
 }
 
+
+
+
 /* Select2 v. 4.0.6 */
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-  line-height: 40px;
+  line-height: 30px;
 }
 
 span.select2-selection.select2-selection--single.Select2Ajax,
@@ -3591,8 +3594,8 @@ span.select2-selection__arrow:after {
   font-family: Sapphire-Icon-Font;
   font-size: 12px;
   position: absolute;
-  right: 8px;
-  top: 0;
+  /* right: 8px;
+  top: 8px; */
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
@@ -3600,6 +3603,7 @@ span.select2-selection__arrow:after {
 }
 
 .select2-container--open .select2-selection__arrow:after {
+  top: 10px;
   transform: rotate(180deg);
 }
 
@@ -3654,7 +3658,6 @@ span.select2-selection__arrow:after {
 }
 
 .select2-container--default .select2-selection--single.Dropdown {
-  //border: 2px solid #00bfa5;
   background-color: #fff;
   border-radius: 1px 1px 0 0;
   font-size: 16px;
@@ -3858,7 +3861,7 @@ span.select2-selection--single:focus,
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 26px;
+  height: 30px;
   position: absolute;
   right: 1px;
   top: 1px;
