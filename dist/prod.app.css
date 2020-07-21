@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920006 || Generated: Tue Jul 21 2020 16:36:23 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.1.920007 || Generated: Tue Jul 21 2020 18:33:08 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29584,14 +29584,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   max-width: 105px;
   padding: 5px 10px;
   padding-top: 5px; }
-
-.PatientDetailsLayout .PersonCard__content.PH a,
-.PatientDetailsLayout .PersonCard__content.PH .DoubleText,
-.PatientDetailsLayout .PersonCard__content.PH .Text_Note,
-.PatientDetailsLayout .PersonCard____title a,
-.PatientDetailsLayout .PersonCard____title .DoubleText,
-.PatientDetailsLayout .PersonCard____title .Text_Note {
-  color: #adadad; }
 
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title a,
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title .DoubleText,
