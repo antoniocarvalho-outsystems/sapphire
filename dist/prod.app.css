@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920009 || Generated: Wed Jul 22 2020 11:50:51 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920010 || Generated: Wed Jul 22 2020 14:22:52 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19230,7 +19230,16 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .MainInteractiveCard-header-actions a.ButtonLink,
 .MainInteractiveCard-header-actions a.ButtonSquare,
 .MainInteractiveCard-header-actions div.PatientHeaderActions,
-.MainInteractiveCard-header-actions > div.OSInline {
+.MainInteractiveCard-header-actions > div.OSInline:not(.NoWrap) {
+  margin: 0 6px;
+  vertical-align: middle; }
+
+.MainInteractiveCard-header-actions > div.OSInline.NoWrap div.iconHorizontal.OSInline,
+.MainInteractiveCard-header-actions > div.OSInline.NoWrap a.Button.Small,
+.MainInteractiveCard-header-actions > div.OSInline.NoWrap .DropZoneContainer .row .Small.Button,
+.DropZoneContainer .row .MainInteractiveCard-header-actions > div.OSInline.NoWrap .Small.Button,
+.MainInteractiveCard-header-actions > div.OSInline.NoWrap a.ButtonLink,
+.MainInteractiveCard-header-actions > div.OSInline.NoWrap a.ButtonSquare {
   margin: 0 6px;
   vertical-align: middle; }
 
