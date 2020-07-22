@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920008 || Generated: Wed Jul 22 2020 09:15:42 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.1.920009 || Generated: Wed Jul 22 2020 11:50:51 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20943,6 +20943,13 @@ a .PersonCard {
 
 .LayoutPopup__body__content .PersonCard___icon:not(:empty) + .PersonCard____title {
   margin-left: 10px; }
+
+.PersonCardNoWrap .PersonCard_header {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+          flex-direction: row !important; }
+  .PersonCardNoWrap .PersonCard_header > div {
+    width: auto !important; }
 
 .PrescriptionCard {
   background-color: #fff;
