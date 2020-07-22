@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920007 || Generated: Tue Jul 21 2020 18:33:08 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920008 || Generated: Wed Jul 22 2020 09:15:42 GMT+0100 (Hora de verão da Europa Ocidental) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -2931,7 +2931,6 @@ div[onclick] {
       cursor: pointer; }
   .SapphireTooltip__title {
     color: #5c5c5c;
-    font-family: Lato;
     font-size: 14px;
     line-height: 14px;
     margin-bottom: 9px; }
