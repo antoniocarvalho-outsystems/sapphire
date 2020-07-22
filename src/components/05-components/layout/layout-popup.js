@@ -124,6 +124,7 @@
 		var footerHeight = $('.LayoutPopup__footer').innerHeight() || 0;
 		var contentHeight = headerHeight + introHeight + bodyHeight + footerHeight + 40;
 		var dialogHeight = window.parent.$('.os-internal-Popup.os-internal-ui-dialog').outerHeight();
+		const windowHeight = $(window.parent).height();
 
 		if (popupSize === 'Small') {
 			var parentHeight = $(window.parent).height();
@@ -166,8 +167,22 @@
 			if (dateRangePicker[0].getBoundingClientRect().bottom > dialogHeight) {
 				var difference = dateRangePicker[0].getBoundingClientRect().bottom - dialogHeight;
 				var bodyHeight = $('.LayoutPopup__body__content').outerHeight(true);
+
 				$('.LayoutPopup__body__content').height(bodyHeight + difference + 40);
 				$osPopupContent.height($('body')[0].scrollHeight);
+
+				const popupTotalHeight = $osPopupContent.height();
+				const newContentHeight = $('.LayoutPopup__body').outerHeight(true) + headerHeight + introHeight + footerHeight;
+
+				if (windowHeight < 720) {
+					const coords = dateRangePicker[0].getBoundingClientRect();
+					var point = window.parent.scrollY + coords.top - coords.height;
+					dateRangePicker.addClass('drop-up').css('top', point);
+				} else if (windowHeight < 980 && newContentHeight > popupTotalHeight) {
+					$osPopupContent.css({
+						maxHeight: newContentHeight + 'px',
+					});
+				}
 			}
 		}
 
