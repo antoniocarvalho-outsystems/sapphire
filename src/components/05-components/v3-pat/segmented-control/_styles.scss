@@ -4,105 +4,117 @@ $SegmentedControl-color-hover: $regular-zeta;
 .SegmentedControl {
   margin-bottom: 12px;
   margin-left: 1px;
-}
+  padding-top: 1px;
 
-.SegmentedControl.NoMargin {
-  margin: 0 0 0 1px !important;
-}
+  &.NoMargin {
+    margin: 0 0 0 1px !important;
+  }
 
-.SegmentedControlItem {
-  color: $SegmentedControl-color-active;
-  display: inline-block;
-  font-size: $font-size-regular;
-  margin-left: -1px;
-  margin-top: -1px;
-  min-height: $font-size-heading1;
-  overflow: hidden;
-  position: relative;
-  vertical-align: top;
-}
+  &.Vertical {
+    .SegmentedControlItem {
+      display: block;
 
-.SegmentedControlItem label {
-  background-color: #fff;
-  border: solid 1px $SegmentedControl-color-active;
-  cursor: pointer;
-  display: block;
-  line-height: 34px;
-  min-width: 54px;
-  padding: 0 15px;
-  text-align: center;
-  width: 100%;
-}
+      &:first-child label {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
 
-.SegmentedControlItem label:hover,
-.SegmentedControlItem label:focus {
-  background: $SegmentedControl-color-hover;
-}
+      &:last-child label {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
 
-.SegmentedControlItem>input[type='radio']:checked~label,
-.SegmentedControlItem>input[type='checkbox']:checked~label {
-  background: $SegmentedControl-color-active;
-  color: #fff;
-}
+  &.Round {
+    .SegmentedControlItem {
+      margin: 0 3px;
 
-.SegmentedControlItem>input:disabled~label,
-.SegmentedControlItem>input[disabled]~label,
-.SegmentedControlItem>input[readonly]~label {
-  background: $sapphire-color-disabled-background;
-  color: $sapphire-color-disabled-text;
-  cursor: default;
-}
+      &:first-child {
+        margin-left: 0;
+      }
 
-.SegmentedControlItem label .icon {
-  font-size: 18px;
-  line-height: 35px;
-  padding-right: 5px;
-}
+      &:last-child {
+        margin-right: 0;
+      }
 
-.SegmentedControlItem:first-child label {
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
-}
-
-.SegmentedControlItem:last-child label {
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-
-
-
-
-.Vertical {
+      label {
+        border-radius: 50% !important;
+        min-width: 36px;
+        padding: 0;
+        width: 36px;
+      }
+    }
+  }
 
   .SegmentedControlItem {
-    display: block;
+    color: $SegmentedControl-color-active;
+    display: inline-block;
+    font-size: $font-size-regular;
+    margin-left: -1px;
+    margin-top: -1px;
+    min-height: $font-size-heading1;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
 
     &:first-child label {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 4px;
       border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
     }
 
     &:last-child label {
-      border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
+      border-top-right-radius: 4px;
     }
 
+    label {
+      background-color: #fff;
+      border: solid 1px $SegmentedControl-color-active;
+      cursor: pointer;
+      display: block;
+      line-height: 34px;
+      min-width: 54px;
+      padding: 0 15px;
+      text-align: center;
+      width: 100%;
+
+      &:hover,
+      &:focus {
+        background: $SegmentedControl-color-hover;
+      }
+
+      .icon {
+        font-size: 18px;
+        line-height: 35px;
+        padding-right: 5px;
+      }
+    }
+
+    >input[type='radio']:checked~label,
+    >input[type='checkbox']:checked~label {
+      background: $SegmentedControl-color-active;
+      color: #fff;
+    }
+
+    >input:disabled~label,
+    >input[disabled]~label,
+    >input[readonly]~label {
+      background: $sapphire-color-disabled-background;
+      color: $sapphire-color-disabled-text;
+      cursor: default;
+    }
   }
-
 }
-
 
 .AR,
 .FA {
-
   .SegmentedControl:not(.Vertical) {
     .SegmentedControlItem {
-
       &:last-child label {
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 0;
@@ -116,11 +128,6 @@ $SegmentedControl-color-hover: $regular-zeta;
         border-top-left-radius: 0;
         border-top-right-radius: 4px;
       }
-
     }
-
   }
-
-
-
 }
