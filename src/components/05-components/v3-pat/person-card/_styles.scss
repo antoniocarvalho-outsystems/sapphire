@@ -688,3 +688,13 @@ a {
 .LayoutPopup__body__content .PersonCard___icon:not(:empty)+.PersonCard____title {
   margin-left: 10px;
 }
+
+.PersonCardNoWrap {
+  .PersonCard_header {
+    flex-direction: row !important;
+
+    > div {
+      width: auto !important;
+    }
+  }
+}
