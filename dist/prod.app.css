@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920011 || Generated: Thu Jul 23 2020 10:24:27 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920012 || Generated: Thu Jul 23 2020 10:44:38 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4989,8 +4989,8 @@ a.Button.IsDefault,
   padding: 0 15px;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   white-space: nowrap; }
   .desktop input.Button.Is_Default:focus,
   .desktop input.Button:focus,
@@ -5019,7 +5019,7 @@ a.Button.IsDefault,
   .desktop .DropZoneContainer .row .Is_Default.Button:focus,
   .DropZoneContainer .row .desktop .Is_Default.Button:focus,
   .PanelOpened:focus {
-    border: 1px solid #333333; }
+    box-shadow: 0 0 0 3px #c4f0eb; }
   .desktop input.Button.Is_Default:active, .desktop input.Button.Is_Default:hover,
   .desktop input.Button:active,
   .desktop input.Button:hover,
@@ -5218,6 +5218,34 @@ a.Button.IsDefault,
   .DropZoneContainer .row .desktop .Is_Default.Second.Button,
   .PanelOpened.Second {
     background-color: #5c5c5c; }
+    .desktop input.Button.Is_Default.Second:focus,
+    .desktop input.Button.Second:focus,
+    .desktop input.Button.ButtonDefault.Second:focus,
+    .Page a.Button.Second:focus,
+    .Page .DropZoneContainer .row .Second.Button:focus,
+    .DropZoneContainer .row .Page .Second.Button:focus,
+    .PanelOpened a.Button.Second:focus,
+    .PanelOpened .DropZoneContainer .row .Second.Button:focus,
+    .DropZoneContainer .row .PanelOpened .Second.Button:focus,
+    .confirm-container a.Button.Second:focus,
+    .confirm-container .DropZoneContainer .row .Second.Button:focus,
+    .DropZoneContainer .row .confirm-container .Second.Button:focus,
+    .LayoutPopup a.Button.Second:focus,
+    .LayoutPopup .DropZoneContainer .row .Second.Button:focus,
+    .DropZoneContainer .row .LayoutPopup .Second.Button:focus,
+    .LayoutBlank a.Button.Second:focus,
+    .LayoutBlank .DropZoneContainer .row .Second.Button:focus,
+    .DropZoneContainer .row .LayoutBlank .Second.Button:focus,
+    .LayoutBase a.Button.Second:focus,
+    .LayoutBase .DropZoneContainer .row .Second.Button:focus,
+    .DropZoneContainer .row .LayoutBase .Second.Button:focus,
+    a.Button.IsDefault.Second:focus,
+    .DropZoneContainer .row .IsDefault.Second.Button:focus,
+    .desktop a.Button.Is_Default.Second:focus,
+    .desktop .DropZoneContainer .row .Is_Default.Second.Button:focus,
+    .DropZoneContainer .row .desktop .Is_Default.Second.Button:focus,
+    .PanelOpened.Second:focus {
+      box-shadow: 0 0 0 3px #adadad; }
     .desktop input.Button.Is_Default.Second:active, .desktop input.Button.Is_Default.Second:hover,
     .desktop input.Button.Second:active,
     .desktop input.Button.Second:hover,
@@ -5884,9 +5912,9 @@ a.Button.IsDefault,
     .PanelOpened.Third:hover,
     .PanelOpened.Cancel:active,
     .PanelOpened.Cancel:hover {
-      background-color: #ebebeb;
-      border: 1px solid #00bfa5;
-      color: #009884; }
+      background-color: #f2fffd;
+      border: 1px solid #56d3c2;
+      color: #00bfa5; }
     .desktop input.Button.Is_Default.Third:focus, .desktop input.Button.Is_Default.Cancel:focus,
     .desktop input.Button.Third:focus,
     .desktop input.Button.Cancel:focus,
@@ -5940,7 +5968,7 @@ a.Button.IsDefault,
     .DropZoneContainer .row .desktop .Is_Default.Cancel.Button:focus,
     .PanelOpened.Third:focus,
     .PanelOpened.Cancel:focus {
-      border: 1px solid #333333; }
+      box-shadow: 0 0 0 3px #c4f0eb; }
     .desktop input.Button.Is_Default.Third:disabled, .desktop input.Button.Is_Default.Third[disabled], .desktop input.Button.Is_Default.Cancel:disabled, .desktop input.Button.Is_Default.Cancel[disabled],
     .desktop input.Button.Third:disabled,
     .desktop input.Button.Third[disabled],
@@ -6350,7 +6378,6 @@ a.Button.IsDefault,
     .desktop .DropZoneContainer .row .Is_Default.Link.Button:focus,
     .DropZoneContainer .row .desktop .Is_Default.Link.Button:focus,
     .PanelOpened.Link:focus {
-      border: 1px solid #333333;
       border-radius: unset; }
     .desktop input.Button.Is_Default.Link:active, .desktop input.Button.Is_Default.Link:hover,
     .desktop input.Button.Link:active,
@@ -6500,7 +6527,7 @@ a.Button.IsDefault,
     height: 26px;
     line-height: 24px;
     min-width: 76px;
-    padding: 0 13px; }
+    padding: 0 12px; }
   .desktop input.Button.Is_Default.Big,
   .desktop input.Button.Big,
   .desktop input.Button.ButtonDefault.Big,
