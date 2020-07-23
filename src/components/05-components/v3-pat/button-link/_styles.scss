@@ -3,8 +3,8 @@
 		> a,
 		> div,
 		> span {
-			background-color: transparent;
-			border: 1px solid $regular-alpha;
+			background-color: $regular-eta;
+			border: 1px solid $regular-beta;
 		}
 	}
 
@@ -13,13 +13,13 @@
 	> span {
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
-		border-radius: 1px;
+		border-radius: 4px;
 		color: $regular-beta;
 		cursor: pointer;
 		font-size: 1.143em;
 		padding: 15px 30px;
 		text-align: center;
-		transition: all 0.1s ease-in;
+		transition: all 0.1s ease-in-out;
 		vertical-align: middle;
 		width: 100%;
 
@@ -29,7 +29,7 @@
 		}
 
 		&:focus {
-			border: 1px solid $dark-grey;
+			border: 1px solid $regular-alpha;
 		}
 
 		.icon {
