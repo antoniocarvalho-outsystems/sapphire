@@ -1,0 +1,19 @@
+@mixin shadow-xsmall {
+	@extend .ShadowXSmall !optional;
+}
+
+@mixin shadow-small {
+	@extend .ShadowSmall !optional;
+}
+
+@mixin shadow-medium {
+	@extend .ShadowMedium !optional;
+}
+
+@mixin shadow-xlarge {
+	@extend .ShadowXLarge !optional;
+}
+
+@mixin shadow-large {
+	@extend .ShadowLarge !optional;
+}

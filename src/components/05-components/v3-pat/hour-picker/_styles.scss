@@ -14,7 +14,7 @@
 
 	&--textTrigger & {
 		&__LabelValue {
-			color: $regular-alpha;
+			color: $regular-beta;
 			cursor: pointer;
 			display: inline-block;
 			font-family: $font-family-latin-bold;
@@ -80,17 +80,18 @@
 /* UI TimePicker CSS - HourPicker */
 div.ui-timepicker-container {
 	@include component-scroll;
+	@include shadow-small;
 
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
 	border-radius: 4px;
 	font-size: 1em;
+	margin-top: 4px;
 	min-width: 130px;
 
 	.ui-state-hover {
-		background-color: $regular-alpha;
+		background-color: $regular-eta;
 		border-color: transparent;
-		color: $regular-white;
 	}
 
 	.ui-corner-all {

@@ -1,5 +1,5 @@
 .DropdownMenu {
-	@extend .ShadowSmall;
+	@include shadow-small;
 
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
