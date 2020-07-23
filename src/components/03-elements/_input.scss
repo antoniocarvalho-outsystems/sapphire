@@ -25,12 +25,23 @@
 
 	&:hover:before {
 		background-color: $regular-eta;
-		border: 1px solid $sapphire-light;
-		box-shadow: none; // inset 0 1px 3px 0 $body-color;
+		border: 1px solid $regular-alpha;
+		box-shadow: none;
 	}
 
 	&:focus:before {
-		border: 1px solid $dark-grey;
+		border: 1px solid $regular-alpha;
+	}
+
+	&:checked {
+		&::before {
+			background: $regular-alpha;
+			border: 1px solid $regular-alpha;
+		}
+
+		&::after {
+			opacity: 1;
+		}
 	}
 
 	&:disabled {
@@ -43,10 +54,6 @@
 			border: 1px solid $light-grey;
 			box-shadow: none;
 		}
-	}
-
-	&:checked:after {
-		opacity: 1;
 	}
 
 	&.ReadOnly {
@@ -83,17 +90,17 @@ input {
 		@include common-radio-checkbox-style;
 
 		&::after {
-			border: 3px solid $regular-alpha;
+			border: 3px solid $regular-white;
 			border-right: 0;
 			border-top: 0;
 			content: ' ';
-			height: 4px;
-			left: 20%;
+			height: 3px;
+			left: 21%;
 			opacity: 0;
 			position: absolute;
-			top: 25%;
+			top: 30%;
 			transform: rotate(-45deg);
-			width: 10px;
+			width: 8px;
 		}
 
 		&:disabled:after {
@@ -106,7 +113,8 @@ input {
 
 		&::after {
 			@include absolute-center();
-			background: $regular-alpha;
+
+			background: $regular-white;
 			border: 1px solid transparent;
 			border-radius: 50%;
 			content: ' ';
