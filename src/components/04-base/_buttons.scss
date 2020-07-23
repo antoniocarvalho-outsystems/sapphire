@@ -27,10 +27,6 @@
 	text-shadow: none;
 }
 
-@mixin focus-border($bdColor: $dark-grey) {
-	border: 1px solid $bdColor;
-}
-
 @mixin focus-shadow($shadorColor: $regular-zeta) {
 	box-shadow: 0 0 0 3px $shadorColor;
 }
@@ -179,7 +175,6 @@ a.Button.IsDefault,
 		}
 
 		&:focus {
-			//@include focus-border;
 			border-radius: unset;
 		}
 
