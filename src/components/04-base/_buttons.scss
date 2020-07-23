@@ -179,7 +179,7 @@ a.Button.IsDefault,
 		}
 
 		&:focus {
-			@include focus-border;
+			//@include focus-border;
 			border-radius: unset;
 		}
 
