@@ -9,8 +9,15 @@
 	&.active {
 		.ButtonRadioInp {
 			&_radio {
-				input[type='radio']::before {
-					border: 1px solid $regular-alpha;
+				input[type='radio'] {
+					&::after {
+						background: $regular-alpha;
+					}
+
+					&::before {
+						background: $regular-white;
+						border: 1px solid $regular-alpha;
+					}
 				}
 			}
 

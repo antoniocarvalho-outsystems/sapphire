@@ -22,8 +22,17 @@
 				border-radius: 4px;
 				color: $regular-white;
 
-				+ .ButtonCheckboxInput_CheckBox input[type='checkbox']::before {
-					border: 1px solid $regular-alpha;
+				+ .ButtonCheckboxInput_CheckBox input[type='checkbox'] {
+					&::after {
+						border-color: $regular-alpha;
+						left: 5px;
+						top: 6px;
+					}
+
+					&::before {
+						background-color: $regular-white;
+						border: 1px solid $regular-alpha;
+					}
 				}
 			}
 		}
