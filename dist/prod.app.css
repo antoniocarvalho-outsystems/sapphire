@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920012 || Generated: Thu Jul 23 2020 10:44:38 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920013 || Generated: Thu Jul 23 2020 11:04:09 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11175,9 +11175,6 @@ html body {
     background-color: #f2fffd;
     border: 1px solid #00bfa5;
     border-bottom-width: 1px; }
-  .ButtonDropdown.open .ButtonDropdown_icon span {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
   .ButtonDropdown_button.Button {
     -webkit-box-align: center;
             align-items: center;
@@ -11185,18 +11182,19 @@ html body {
     display: flex;
     background-color: #fff;
     border: 1px solid #d6d6d6;
-    border-radius: 2px;
+    border-radius: 4px;
     color: #333333;
     height: 36px;
     padding: 0 0 0 10px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
     width: 100%; }
     .ButtonDropdown_button.Button:hover {
       background-color: #f2fffd;
+      border: 1px solid #00bfa5;
       box-shadow: none; }
-    .ButtonDropdown_button.Button:active {
+    .ButtonDropdown_button.Button:focus, .ButtonDropdown_button.Button:active {
       border: 1px solid #00bfa5; }
-  .ButtonDropdown_text {
-    font-family: "LatoBold"; }
   .ButtonDropdown_icon {
     -webkit-box-align: center;
             align-items: center;
@@ -11210,9 +11208,6 @@ html body {
     height: 100%;
     margin-left: 10px;
     width: 35px; }
-    .ButtonDropdown_icon span {
-      -webkit-transition: all 500ms ease;
-      transition: all 500ms ease; }
 
 .AR .ButtonDropdown_button.Button,
 .FA .ButtonDropdown_button.Button {
@@ -11378,13 +11373,11 @@ html body {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 2px;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.24);
   display: none;
   left: 0;
   min-width: 150px;
   position: absolute;
   text-align: left;
-  top: 100%;
   z-index: 2; }
   .open .DropdownMenu {
     display: block; }
@@ -11397,7 +11390,7 @@ html body {
     white-space: nowrap; }
     .DropdownMenu .PH > a:hover {
       background-color: #f2fffd;
-      color: #009884; }
+      color: #333333; }
   .DropdownMenu .PH > span a {
     display: block;
     line-height: 32px;
@@ -11475,9 +11468,6 @@ html body {
   .IconDropdown.open .IconDropdown_button.Button {
     background-color: #f2fffd;
     border: 1px solid #00bfa5; }
-    .IconDropdown.open .IconDropdown_button.Button .IconDown span {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); }
   .IconDropdown_button.Button {
     -webkit-box-align: center;
             align-items: center;
@@ -11485,12 +11475,14 @@ html body {
     display: flex;
     background-color: #fff;
     border: 1px solid #d6d6d6;
+    border-radius: 4px;
     height: 36px;
     margin-left: 0;
     min-width: 35px;
     padding: 0 0 0 10px; }
     .IconDropdown_button.Button:hover {
-      background-color: #f2fffd; }
+      background-color: #f2fffd;
+      border: 1px solid #00bfa5; }
     .IconDropdown_button.Button > span.fa {
       color: #333333;
       font-size: 1.143em; }
@@ -11506,9 +11498,6 @@ html body {
       height: 100%;
       margin-left: 10px;
       width: 28px; }
-      .IconDropdown_button.Button .IconDown span {
-        -webkit-transition: all 500ms ease;
-        transition: all 500ms ease; }
 
 .AR .IconDropdown_button.Button,
 .FA .IconDropdown_button.Button {
@@ -27613,7 +27602,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .shadow--xsmall {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-.ShadowSmall,
+.ShadowSmall, .DropdownMenu,
 .shadow--small {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
