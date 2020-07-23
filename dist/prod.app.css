@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920016 || Generated: Thu Jul 23 2020 14:38:41 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920017 || Generated: Thu Jul 23 2020 14:55:10 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -5865,7 +5865,7 @@ a.Button.IsDefault,
     .PanelOpened a.Button.Is_Default.Cancel:before,
     .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button:before,
     .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button:before {
-      color: #333333;
+      color: #009884;
       font-size: 0.857em; }
     .desktop input.Button.Is_Default.Third:active, .desktop input.Button.Is_Default.Third:hover, .desktop input.Button.Is_Default.Cancel:active, .desktop input.Button.Is_Default.Cancel:hover,
     .desktop input.Button.Third:active,
@@ -9796,7 +9796,8 @@ a.Button.IsDefault,
       transition: left 0.15s ease-out;
       width: 18px; }
     .ToggleButton_label:hover {
-      background-color: #f2fffd; }
+      background-color: #f2fffd;
+      border: 1px solid #00bfa5; }
     .ToggleButton_label:focus {
       border: 1px solid #333333 !important; }
     .ToggleButton_label.changed {
