@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920013 || Generated: Thu Jul 23 2020 11:04:09 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920014 || Generated: Thu Jul 23 2020 11:28:10 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4974,7 +4974,9 @@ a.Button.IsDefault,
 .desktop a.Button.Is_Default,
 .desktop .DropZoneContainer .row .Is_Default.Button,
 .DropZoneContainer .row .desktop .Is_Default.Button,
-.PanelOpened {
+.PanelOpened a.Button.Is_Default,
+.PanelOpened .DropZoneContainer .row .Is_Default.Button,
+.DropZoneContainer .row .PanelOpened .Is_Default.Button {
   background-color: #00bfa5;
   border: 1px solid transparent;
   border-radius: 1.286em;
@@ -5018,7 +5020,9 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default:focus,
   .desktop .DropZoneContainer .row .Is_Default.Button:focus,
   .DropZoneContainer .row .desktop .Is_Default.Button:focus,
-  .PanelOpened:focus {
+  .PanelOpened a.Button.Is_Default:focus,
+  .PanelOpened .DropZoneContainer .row .Is_Default.Button:focus,
+  .DropZoneContainer .row .PanelOpened .Is_Default.Button:focus {
     box-shadow: 0 0 0 3px #c4f0eb; }
   .desktop input.Button.Is_Default:active, .desktop input.Button.Is_Default:hover,
   .desktop input.Button:active,
@@ -5071,8 +5075,12 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default:hover,
   .desktop .DropZoneContainer .row .Is_Default.Button:hover,
   .DropZoneContainer .row .desktop .Is_Default.Button:hover,
-  .PanelOpened:active,
-  .PanelOpened:hover {
+  .PanelOpened a.Button.Is_Default:active,
+  .PanelOpened .DropZoneContainer .row .Is_Default.Button:active,
+  .DropZoneContainer .row .PanelOpened .Is_Default.Button:active,
+  .PanelOpened a.Button.Is_Default:hover,
+  .PanelOpened .DropZoneContainer .row .Is_Default.Button:hover,
+  .DropZoneContainer .row .PanelOpened .Is_Default.Button:hover {
     background-color: #56d3c2;
     border: 1px solid transparent; }
   .desktop input.Button.Is_Default:disabled, .desktop input.Button.Is_Default[disabled],
@@ -5126,8 +5134,12 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default[disabled],
   .desktop .DropZoneContainer .row .Is_Default.Button[disabled],
   .DropZoneContainer .row .desktop .Is_Default.Button[disabled],
-  .PanelOpened:disabled,
-  .PanelOpened[disabled] {
+  .PanelOpened a.Button.Is_Default:disabled,
+  .PanelOpened .DropZoneContainer .row .Is_Default.Button:disabled,
+  .DropZoneContainer .row .PanelOpened .Is_Default.Button:disabled,
+  .PanelOpened a.Button.Is_Default[disabled],
+  .PanelOpened .DropZoneContainer .row .Is_Default.Button[disabled],
+  .DropZoneContainer .row .PanelOpened .Is_Default.Button[disabled] {
     background-color: transparent;
     background-image: none;
     border: 1px solid #d6d6d6;
@@ -5187,8 +5199,12 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default[disabled]:before,
     .desktop .DropZoneContainer .row .Is_Default.Button[disabled]:before,
     .DropZoneContainer .row .desktop .Is_Default.Button[disabled]:before,
-    .PanelOpened:disabled:before,
-    .PanelOpened[disabled]:before {
+    .PanelOpened a.Button.Is_Default:disabled:before,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Button:disabled:before,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Button:disabled:before,
+    .PanelOpened a.Button.Is_Default[disabled]:before,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Button[disabled]:before,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Button[disabled]:before {
       color: #d6d6d6; }
   .desktop input.Button.Is_Default.Second,
   .desktop input.Button.Second,
@@ -5216,7 +5232,9 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default.Second,
   .desktop .DropZoneContainer .row .Is_Default.Second.Button,
   .DropZoneContainer .row .desktop .Is_Default.Second.Button,
-  .PanelOpened.Second {
+  .PanelOpened a.Button.Is_Default.Second,
+  .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button {
     background-color: #5c5c5c; }
     .desktop input.Button.Is_Default.Second:focus,
     .desktop input.Button.Second:focus,
@@ -5244,7 +5262,9 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Second:focus,
     .desktop .DropZoneContainer .row .Is_Default.Second.Button:focus,
     .DropZoneContainer .row .desktop .Is_Default.Second.Button:focus,
-    .PanelOpened.Second:focus {
+    .PanelOpened a.Button.Is_Default.Second:focus,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button:focus,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button:focus {
       box-shadow: 0 0 0 3px #adadad; }
     .desktop input.Button.Is_Default.Second:active, .desktop input.Button.Is_Default.Second:hover,
     .desktop input.Button.Second:active,
@@ -5297,8 +5317,12 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Second:hover,
     .desktop .DropZoneContainer .row .Is_Default.Second.Button:hover,
     .DropZoneContainer .row .desktop .Is_Default.Second.Button:hover,
-    .PanelOpened.Second:active,
-    .PanelOpened.Second:hover {
+    .PanelOpened a.Button.Is_Default.Second:active,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button:active,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button:active,
+    .PanelOpened a.Button.Is_Default.Second:hover,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button:hover,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button:hover {
       background-color: #858585; }
     .desktop input.Button.Is_Default.Second:disabled, .desktop input.Button.Is_Default.Second[disabled],
     .desktop input.Button.Second:disabled,
@@ -5351,8 +5375,12 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Second[disabled],
     .desktop .DropZoneContainer .row .Is_Default.Second.Button[disabled],
     .DropZoneContainer .row .desktop .Is_Default.Second.Button[disabled],
-    .PanelOpened.Second:disabled,
-    .PanelOpened.Second[disabled] {
+    .PanelOpened a.Button.Is_Default.Second:disabled,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button:disabled,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button:disabled,
+    .PanelOpened a.Button.Is_Default.Second[disabled],
+    .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button[disabled],
+    .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button[disabled] {
       background-color: transparent;
       background-image: none;
       border: 1px solid #d6d6d6;
@@ -5411,8 +5439,12 @@ a.Button.IsDefault,
       .desktop a.Button.Is_Default.Second[disabled]:before,
       .desktop .DropZoneContainer .row .Is_Default.Second.Button[disabled]:before,
       .DropZoneContainer .row .desktop .Is_Default.Second.Button[disabled]:before,
-      .PanelOpened.Second:disabled:before,
-      .PanelOpened.Second[disabled]:before {
+      .PanelOpened a.Button.Is_Default.Second:disabled:before,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button:disabled:before,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button:disabled:before,
+      .PanelOpened a.Button.Is_Default.Second[disabled]:before,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button[disabled]:before,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button[disabled]:before {
         color: #d6d6d6; }
     .desktop input.Button.Is_Default.Second:before,
     .desktop input.Button.Second:before,
@@ -5440,7 +5472,9 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Second:before,
     .desktop .DropZoneContainer .row .Is_Default.Second.Button:before,
     .DropZoneContainer .row .desktop .Is_Default.Second.Button:before,
-    .PanelOpened.Second:before {
+    .PanelOpened a.Button.Is_Default.Second:before,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button:before,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button:before {
       color: #ffffff; }
     .desktop input.Button.Is_Default.Second.SearchMagnifier,
     .desktop input.Button.Second.SearchMagnifier,
@@ -5468,7 +5502,9 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Second.SearchMagnifier,
     .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button,
     .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button,
-    .PanelOpened.Second.SearchMagnifier {
+    .PanelOpened a.Button.Is_Default.Second.SearchMagnifier,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button {
       background-color: #00bfa5;
       border-radius: 2px;
       min-width: auto;
@@ -5549,9 +5585,15 @@ a.Button.IsDefault,
       .desktop a.Button.Is_Default.Second.SearchMagnifier:active,
       .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:active,
       .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button:active,
-      .PanelOpened.Second.SearchMagnifier:hover,
-      .PanelOpened.Second.SearchMagnifier:link,
-      .PanelOpened.Second.SearchMagnifier:active {
+      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:hover,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:hover,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:hover,
+      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:link,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:link,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:link,
+      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:active,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:active,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:active {
         min-width: auto; }
       .desktop input.Button.Is_Default.Second.SearchMagnifier:active, .desktop input.Button.Is_Default.Second.SearchMagnifier:hover,
       .desktop input.Button.Second.SearchMagnifier:active,
@@ -5604,8 +5646,12 @@ a.Button.IsDefault,
       .desktop a.Button.Is_Default.Second.SearchMagnifier:hover,
       .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:hover,
       .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button:hover,
-      .PanelOpened.Second.SearchMagnifier:active,
-      .PanelOpened.Second.SearchMagnifier:hover {
+      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:active,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:active,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:active,
+      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:hover,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:hover,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:hover {
         background-color: #56d3c2; }
       .desktop input.Button.Is_Default.Second.SearchMagnifier:after,
       .desktop input.Button.Second.SearchMagnifier:after,
@@ -5633,7 +5679,9 @@ a.Button.IsDefault,
       .desktop a.Button.Is_Default.Second.SearchMagnifier:after,
       .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:after,
       .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button:after,
-      .PanelOpened.Second.SearchMagnifier:after {
+      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:after,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:after,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:after {
         content: '\e690';
         font-family: "Sapphire-Icon-Font"; }
       .desktop input.Button.Is_Default.Second.SearchMagnifier:disabled, .desktop input.Button.Is_Default.Second.SearchMagnifier[disabled],
@@ -5687,8 +5735,12 @@ a.Button.IsDefault,
       .desktop a.Button.Is_Default.Second.SearchMagnifier[disabled],
       .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button[disabled],
       .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button[disabled],
-      .PanelOpened.Second.SearchMagnifier:disabled,
-      .PanelOpened.Second.SearchMagnifier[disabled] {
+      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:disabled,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:disabled,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:disabled,
+      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier[disabled],
+      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button[disabled],
+      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button[disabled] {
         background-color: transparent;
         background-image: none;
         border: 1px solid #d6d6d6;
@@ -5747,8 +5799,12 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default.Cancel,
   .desktop .DropZoneContainer .row .Is_Default.Cancel.Button,
   .DropZoneContainer .row .desktop .Is_Default.Cancel.Button,
-  .PanelOpened.Third,
-  .PanelOpened.Cancel {
+  .PanelOpened a.Button.Is_Default.Third,
+  .PanelOpened .DropZoneContainer .row .Is_Default.Third.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.Third.Button,
+  .PanelOpened a.Button.Is_Default.Cancel,
+  .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button {
     background-color: #ffffff;
     border: 1px solid #00bfa5;
     color: #009884; }
@@ -5803,8 +5859,12 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Cancel:before,
     .desktop .DropZoneContainer .row .Is_Default.Cancel.Button:before,
     .DropZoneContainer .row .desktop .Is_Default.Cancel.Button:before,
-    .PanelOpened.Third:before,
-    .PanelOpened.Cancel:before {
+    .PanelOpened a.Button.Is_Default.Third:before,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Third.Button:before,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Third.Button:before,
+    .PanelOpened a.Button.Is_Default.Cancel:before,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button:before,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button:before {
       color: #333333;
       font-size: 0.857em; }
     .desktop input.Button.Is_Default.Third:active, .desktop input.Button.Is_Default.Third:hover, .desktop input.Button.Is_Default.Cancel:active, .desktop input.Button.Is_Default.Cancel:hover,
@@ -5908,10 +5968,18 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Cancel:hover,
     .desktop .DropZoneContainer .row .Is_Default.Cancel.Button:hover,
     .DropZoneContainer .row .desktop .Is_Default.Cancel.Button:hover,
-    .PanelOpened.Third:active,
-    .PanelOpened.Third:hover,
-    .PanelOpened.Cancel:active,
-    .PanelOpened.Cancel:hover {
+    .PanelOpened a.Button.Is_Default.Third:active,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Third.Button:active,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Third.Button:active,
+    .PanelOpened a.Button.Is_Default.Third:hover,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Third.Button:hover,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Third.Button:hover,
+    .PanelOpened a.Button.Is_Default.Cancel:active,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button:active,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button:active,
+    .PanelOpened a.Button.Is_Default.Cancel:hover,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button:hover,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button:hover {
       background-color: #f2fffd;
       border: 1px solid #56d3c2;
       color: #00bfa5; }
@@ -5966,8 +6034,12 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Cancel:focus,
     .desktop .DropZoneContainer .row .Is_Default.Cancel.Button:focus,
     .DropZoneContainer .row .desktop .Is_Default.Cancel.Button:focus,
-    .PanelOpened.Third:focus,
-    .PanelOpened.Cancel:focus {
+    .PanelOpened a.Button.Is_Default.Third:focus,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Third.Button:focus,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Third.Button:focus,
+    .PanelOpened a.Button.Is_Default.Cancel:focus,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button:focus,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button:focus {
       box-shadow: 0 0 0 3px #c4f0eb; }
     .desktop input.Button.Is_Default.Third:disabled, .desktop input.Button.Is_Default.Third[disabled], .desktop input.Button.Is_Default.Cancel:disabled, .desktop input.Button.Is_Default.Cancel[disabled],
     .desktop input.Button.Third:disabled,
@@ -6070,10 +6142,18 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Cancel[disabled],
     .desktop .DropZoneContainer .row .Is_Default.Cancel.Button[disabled],
     .DropZoneContainer .row .desktop .Is_Default.Cancel.Button[disabled],
-    .PanelOpened.Third:disabled,
-    .PanelOpened.Third[disabled],
-    .PanelOpened.Cancel:disabled,
-    .PanelOpened.Cancel[disabled] {
+    .PanelOpened a.Button.Is_Default.Third:disabled,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Third.Button:disabled,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Third.Button:disabled,
+    .PanelOpened a.Button.Is_Default.Third[disabled],
+    .PanelOpened .DropZoneContainer .row .Is_Default.Third.Button[disabled],
+    .DropZoneContainer .row .PanelOpened .Is_Default.Third.Button[disabled],
+    .PanelOpened a.Button.Is_Default.Cancel:disabled,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button:disabled,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button:disabled,
+    .PanelOpened a.Button.Is_Default.Cancel[disabled],
+    .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button[disabled],
+    .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button[disabled] {
       background-color: transparent;
       background-image: none;
       border: 1px solid #d6d6d6;
@@ -6182,10 +6262,18 @@ a.Button.IsDefault,
       .desktop a.Button.Is_Default.Cancel[disabled]:before,
       .desktop .DropZoneContainer .row .Is_Default.Cancel.Button[disabled]:before,
       .DropZoneContainer .row .desktop .Is_Default.Cancel.Button[disabled]:before,
-      .PanelOpened.Third:disabled:before,
-      .PanelOpened.Third[disabled]:before,
-      .PanelOpened.Cancel:disabled:before,
-      .PanelOpened.Cancel[disabled]:before {
+      .PanelOpened a.Button.Is_Default.Third:disabled:before,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Third.Button:disabled:before,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Third.Button:disabled:before,
+      .PanelOpened a.Button.Is_Default.Third[disabled]:before,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Third.Button[disabled]:before,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Third.Button[disabled]:before,
+      .PanelOpened a.Button.Is_Default.Cancel:disabled:before,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button:disabled:before,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button:disabled:before,
+      .PanelOpened a.Button.Is_Default.Cancel[disabled]:before,
+      .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button[disabled]:before,
+      .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button[disabled]:before {
         color: #d6d6d6; }
   .desktop input.Button.Is_Default.Link,
   .desktop input.Button.Link,
@@ -6213,7 +6301,9 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default.Link,
   .desktop .DropZoneContainer .row .Is_Default.Link.Button,
   .DropZoneContainer .row .desktop .Is_Default.Link.Button,
-  .PanelOpened.Link {
+  .PanelOpened a.Button.Is_Default.Link,
+  .PanelOpened .DropZoneContainer .row .Is_Default.Link.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button {
     background: none;
     border: 1px solid transparent;
     color: #009884; }
@@ -6243,7 +6333,9 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Link.HideFocus:focus,
     .desktop .DropZoneContainer .row .Is_Default.Link.HideFocus.Button:focus,
     .DropZoneContainer .row .desktop .Is_Default.Link.HideFocus.Button:focus,
-    .PanelOpened.Link.HideFocus:focus {
+    .PanelOpened a.Button.Is_Default.Link.HideFocus:focus,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Link.HideFocus.Button:focus,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Link.HideFocus.Button:focus {
       border-color: transparent; }
     .desktop input.Button.Is_Default.Link:hover, .desktop input.Button.Is_Default.Link:focus, .desktop input.Button.Is_Default.Link:active, .desktop input.Button.Is_Default.Link:disabled,
     .desktop input.Button.Link:hover,
@@ -6346,10 +6438,18 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Link:disabled,
     .desktop .DropZoneContainer .row .Is_Default.Link.Button:disabled,
     .DropZoneContainer .row .desktop .Is_Default.Link.Button:disabled,
-    .PanelOpened.Link:hover,
-    .PanelOpened.Link:focus,
-    .PanelOpened.Link:active,
-    .PanelOpened.Link:disabled {
+    .PanelOpened a.Button.Is_Default.Link:hover,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Link.Button:hover,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button:hover,
+    .PanelOpened a.Button.Is_Default.Link:focus,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Link.Button:focus,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button:focus,
+    .PanelOpened a.Button.Is_Default.Link:active,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Link.Button:active,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button:active,
+    .PanelOpened a.Button.Is_Default.Link:disabled,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Link.Button:disabled,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button:disabled {
       border-color: transparent; }
     .desktop input.Button.Is_Default.Link:focus,
     .desktop input.Button.Link:focus,
@@ -6377,7 +6477,9 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Link:focus,
     .desktop .DropZoneContainer .row .Is_Default.Link.Button:focus,
     .DropZoneContainer .row .desktop .Is_Default.Link.Button:focus,
-    .PanelOpened.Link:focus {
+    .PanelOpened a.Button.Is_Default.Link:focus,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Link.Button:focus,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button:focus {
       border-radius: unset; }
     .desktop input.Button.Is_Default.Link:active, .desktop input.Button.Is_Default.Link:hover,
     .desktop input.Button.Link:active,
@@ -6430,8 +6532,12 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Link:hover,
     .desktop .DropZoneContainer .row .Is_Default.Link.Button:hover,
     .DropZoneContainer .row .desktop .Is_Default.Link.Button:hover,
-    .PanelOpened.Link:active,
-    .PanelOpened.Link:hover {
+    .PanelOpened a.Button.Is_Default.Link:active,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Link.Button:active,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button:active,
+    .PanelOpened a.Button.Is_Default.Link:hover,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Link.Button:hover,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button:hover {
       background: none;
       color: #00bfa5; }
     .desktop input.Button.Is_Default.Link:disabled, .desktop input.Button.Is_Default.Link[disabled],
@@ -6485,8 +6591,12 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Link[disabled],
     .desktop .DropZoneContainer .row .Is_Default.Link.Button[disabled],
     .DropZoneContainer .row .desktop .Is_Default.Link.Button[disabled],
-    .PanelOpened.Link:disabled,
-    .PanelOpened.Link[disabled] {
+    .PanelOpened a.Button.Is_Default.Link:disabled,
+    .PanelOpened .DropZoneContainer .row .Is_Default.Link.Button:disabled,
+    .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button:disabled,
+    .PanelOpened a.Button.Is_Default.Link[disabled],
+    .PanelOpened .DropZoneContainer .row .Is_Default.Link.Button[disabled],
+    .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button[disabled] {
       background-color: transparent;
       background-image: none;
       border: 1px solid #d6d6d6;
@@ -6521,7 +6631,9 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default.Small,
   .desktop .DropZoneContainer .row .Is_Default.Small.Button,
   .DropZoneContainer .row .desktop .Is_Default.Small.Button,
-  .PanelOpened.Small {
+  .PanelOpened a.Button.Is_Default.Small,
+  .PanelOpened .DropZoneContainer .row .Is_Default.Small.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.Small.Button {
     border-radius: 13px;
     font-size: 0.857em;
     height: 26px;
@@ -6554,7 +6666,9 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default.Big,
   .desktop .DropZoneContainer .row .Is_Default.Big.Button,
   .DropZoneContainer .row .desktop .Is_Default.Big.Button,
-  .PanelOpened.Big {
+  .PanelOpened a.Button.Is_Default.Big,
+  .PanelOpened .DropZoneContainer .row .Is_Default.Big.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.Big.Button {
     border-radius: 10px;
     font-size: 2.143em;
     height: 50px;
@@ -6588,7 +6702,9 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default.XBig,
   .desktop .DropZoneContainer .row .Is_Default.XBig.Button,
   .DropZoneContainer .row .desktop .Is_Default.XBig.Button,
-  .PanelOpened.XBig {
+  .PanelOpened a.Button.Is_Default.XBig,
+  .PanelOpened .DropZoneContainer .row .Is_Default.XBig.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.XBig.Button {
     border-radius: 10px;
     box-sizing: border-box;
     font-size: 1.714em;
@@ -6647,8 +6763,12 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default.Button.twoLines,
   .desktop .DropZoneContainer .row .Is_Default.twoLines.Button,
   .DropZoneContainer .row .desktop .Is_Default.twoLines.Button,
-  .PanelOpened.Button.TwoLines,
-  .PanelOpened.Button.twoLines {
+  .PanelOpened a.Button.Is_Default.Button.TwoLines,
+  .PanelOpened .DropZoneContainer .row .Is_Default.TwoLines.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.TwoLines.Button,
+  .PanelOpened a.Button.Is_Default.Button.twoLines,
+  .PanelOpened .DropZoneContainer .row .Is_Default.twoLines.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.twoLines.Button {
     border-radius: 2px;
     height: auto;
     line-height: 15px;
@@ -6704,8 +6824,12 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Button.twoLines:before,
     .desktop .DropZoneContainer .row .Is_Default.twoLines.Button:before,
     .DropZoneContainer .row .desktop .Is_Default.twoLines.Button:before,
-    .PanelOpened.Button.TwoLines:before,
-    .PanelOpened.Button.twoLines:before {
+    .PanelOpened a.Button.Is_Default.Button.TwoLines:before,
+    .PanelOpened .DropZoneContainer .row .Is_Default.TwoLines.Button:before,
+    .DropZoneContainer .row .PanelOpened .Is_Default.TwoLines.Button:before,
+    .PanelOpened a.Button.Is_Default.Button.twoLines:before,
+    .PanelOpened .DropZoneContainer .row .Is_Default.twoLines.Button:before,
+    .DropZoneContainer .row .PanelOpened .Is_Default.twoLines.Button:before {
       line-height: 5px;
       margin-top: 12px; }
     .desktop input.Button.Is_Default.Button.TwoLines > div, .desktop input.Button.Is_Default.Button.twoLines > div,
@@ -6759,8 +6883,12 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.Button.twoLines > div,
     .desktop .DropZoneContainer .row .Is_Default.twoLines.Button > div,
     .DropZoneContainer .row .desktop .Is_Default.twoLines.Button > div,
-    .PanelOpened.Button.TwoLines > div,
-    .PanelOpened.Button.twoLines > div {
+    .PanelOpened a.Button.Is_Default.Button.TwoLines > div,
+    .PanelOpened .DropZoneContainer .row .Is_Default.TwoLines.Button > div,
+    .DropZoneContainer .row .PanelOpened .Is_Default.TwoLines.Button > div,
+    .PanelOpened a.Button.Is_Default.Button.twoLines > div,
+    .PanelOpened .DropZoneContainer .row .Is_Default.twoLines.Button > div,
+    .DropZoneContainer .row .PanelOpened .Is_Default.twoLines.Button > div {
       text-align: right; }
   .desktop input.Button.Is_Default.ClinicalKey_button,
   .desktop input.Button.ClinicalKey_button,
@@ -6788,7 +6916,9 @@ a.Button.IsDefault,
   .desktop a.Button.Is_Default.ClinicalKey_button,
   .desktop .DropZoneContainer .row .Is_Default.ClinicalKey_button.Button,
   .DropZoneContainer .row .desktop .Is_Default.ClinicalKey_button.Button,
-  .PanelOpened.ClinicalKey_button {
+  .PanelOpened a.Button.Is_Default.ClinicalKey_button,
+  .PanelOpened .DropZoneContainer .row .Is_Default.ClinicalKey_button.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.ClinicalKey_button.Button {
     background: #ff8200;
     border: solid 1px #ff8200;
     border: solid 1px #ff8200;
@@ -6824,7 +6954,9 @@ a.Button.IsDefault,
     .desktop a.Button.Is_Default.ClinicalKey_button:hover,
     .desktop .DropZoneContainer .row .Is_Default.ClinicalKey_button.Button:hover,
     .DropZoneContainer .row .desktop .Is_Default.ClinicalKey_button.Button:hover,
-    .PanelOpened.ClinicalKey_button:hover {
+    .PanelOpened a.Button.Is_Default.ClinicalKey_button:hover,
+    .PanelOpened .DropZoneContainer .row .Is_Default.ClinicalKey_button.Button:hover,
+    .DropZoneContainer .row .PanelOpened .Is_Default.ClinicalKey_button.Button:hover {
       background-color: #ff9b71 !important;
       border: solid 1px rgba(255, 130, 0, 0.9);
       border: solid 1px rgba(255, 130, 0, 0.9);
