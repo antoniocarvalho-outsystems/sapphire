@@ -1,14 +1,14 @@
 .DropdownMenu {
+	@extend .ShadowSmall;
+
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
 	border-radius: 2px;
-	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.24);
 	display: none;
 	left: 0;
 	min-width: 150px;
 	position: absolute;
 	text-align: left;
-	top: 100%;
 	z-index: 2;
 
 	.open & {
@@ -25,7 +25,7 @@
 
 		&:hover {
 			background-color: $regular-eta;
-			color: $regular-beta;
+			color: $dark-grey;
 		}
 	}
 
