@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920019 || Generated: Thu Jul 23 2020 17:59:20 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920020 || Generated: Thu Jul 23 2020 18:09:18 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19818,7 +19818,12 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     border: 1px solid #00bfa5;
     border-radius: 4px;
     color: #fff; }
+    .ButtonCheckboxInp.active .MultipleSelectionButton-label + .ButtonCheckboxInput_CheckBox input[type='checkbox']::after, .ButtonCheckboxInp.active .MultipleSelectionButton-label:hover + .ButtonCheckboxInput_CheckBox input[type='checkbox']::after {
+      border-color: #00bfa5;
+      left: 5px;
+      top: 6px; }
     .ButtonCheckboxInp.active .MultipleSelectionButton-label + .ButtonCheckboxInput_CheckBox input[type='checkbox']::before, .ButtonCheckboxInp.active .MultipleSelectionButton-label:hover + .ButtonCheckboxInput_CheckBox input[type='checkbox']::before {
+      background-color: #fff;
       border: 1px solid #00bfa5; }
   .ButtonCheckboxInp.disabled .MultipleSelectionButton-label {
     border-color: #adadad;
@@ -22160,7 +22165,10 @@ div.List-Star {
   position: relative; }
   .ButtonRadioInp.isFullWidth {
     display: block; }
+  .ButtonRadioInp.active .ButtonRadioInp_radio input[type='radio']::after {
+    background: #00bfa5; }
   .ButtonRadioInp.active .ButtonRadioInp_radio input[type='radio']::before {
+    background: #fff;
     border: 1px solid #00bfa5; }
   .ButtonRadioInp.active .ButtonRadioInp_radioText, .ButtonRadioInp.active .ButtonRadioInp_radioText:hover {
     background-color: #00bfa5;
