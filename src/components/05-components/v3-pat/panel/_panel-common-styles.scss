@@ -1,0 +1,12 @@
+.Panel {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	display: none;
+	position: absolute;
+}
+
+.PanelOpened {
+	overflow: auto;
+	position: static;
+}

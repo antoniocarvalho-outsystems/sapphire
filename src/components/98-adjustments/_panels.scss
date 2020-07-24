@@ -1,0 +1,64 @@
+// PanelById
+.PanelById {
+	-servicestudio-height: auto !important;
+	-servicestudio-position: relative !important;
+	-servicestudio-width: 100% !important;
+
+	.Panel {
+		-servicestudio-display: block !important;
+		-servicestudio-margin: 0 auto !important;
+		-servicestudio-position: relative !important;
+	}
+
+	.PanelBackground {
+		-servicestudio-display: none !important;
+	}
+
+	.PanelContainer {
+		-servicestudio-display: block !important;
+		-servicestudio-width: 1500px !important;
+		-servicestudio-z-index: 0;
+	}
+}
+
+.Panel {
+	-servicestudio-display: block !important;
+	-servicestudio-position: relative !important;
+
+	.PanelContainer {
+		-servicestudio--webkit-transform: translate(0, 0) !important;
+		-servicestudio-height: 100% !important;
+		-servicestudio-left: 0 !important;
+		-servicestudio-position: relative !important;
+		-servicestudio-top: 0 !important;
+		-servicestudio-width: 100% !important;
+
+		&.Confirm {
+			-servicestudio--webkit-transform: translateX(0%);
+			-servicestudio-background-color: #fffff;
+			-servicestudio-display: block;
+			-servicestudio-left: auto;
+			-servicestudio-position: relative !important;
+			-servicestudio-position: static;
+			-servicestudio-top: auto;
+			-servicestudio-z-index: 0;
+		}
+
+		&.ConfirmWB {
+			-servicestudio--webkit-transform: translateX(0%);
+			-servicestudio-display: block;
+			-servicestudio-position: static;
+		}
+	}
+
+	.PanelBackground {
+		-servicestudio-color: #252525 !important;
+		-servicestudio-display: none !important;
+		-servicestudio-position: relative !important;
+		-servicestudio-position: static;
+
+		&.ConfirmWB {
+			-servicestudio-position: static;
+		}
+	}
+}

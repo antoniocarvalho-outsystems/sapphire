@@ -9,11 +9,11 @@
 				cursor: pointer;
 				display: inline-block;
 				font-family: $font-family-latin-bold;
-				font-size: $font-size-small;
+				font-size: 1em;
 				max-width: 15px;
 				position: absolute;
-				right: 10px;
-				top: 5px;
+				right: 20px;
+				top: 20px;
 			}
 		}
 
@@ -24,7 +24,7 @@
 			max-height: 80%;
 			min-width: 250px;
 			overflow: auto;
-			padding: 10px 15px;
+			padding: 30px 20px;
 			position: fixed;
 			top: 50%;
 			transform: translate(-50%, -50%);

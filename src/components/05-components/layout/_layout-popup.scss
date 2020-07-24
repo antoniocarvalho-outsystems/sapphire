@@ -82,7 +82,8 @@ body .Page.desktop .MainPopup {
 	padding: 0;
 }
 
-div.os-internal-ui-dialog {
+div.os-internal-ui-dialog.os-internal-Popup {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
 	left: 50%;
 	top: 50% !important;
 	transform: translate(-50%, -50%);
@@ -105,24 +106,18 @@ div.os-internal-Popup.os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-clo
 	width: 20px;
 
 	&:after {
-		color: $regular-beta;
-		content: '\e604';
+		color: $dark-grey;
+		content: '\e60c';
 		display: block;
-		font-family: 'Sapphire-Icon-Font';
-		font-size: 18px;
-		font-weight: 700;
+		font-family: $font-family-icons;
+		font-size: 1em;
 		left: 0;
 		position: absolute;
 		top: 0;
-		transform: rotateZ(45deg);
 	}
 
 	&:hover {
 		opacity: 1;
 		transform: rotate(0);
-
-		&:after {
-			color: $regular-alpha;
-		}
 	}
 }

@@ -1,0 +1,86 @@
+body.PanelById.PanelOpened {
+	overflow: hidden;
+	position: static;
+}
+
+.PanelById {
+	.Panel {
+		display: none;
+	}
+
+	.PanelBackground {
+		background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		transition: all 0.14s ease;
+		z-index: 20;
+	}
+
+	.PanelContainer {
+		@include shadow-large;
+
+		background: $sapphire-white;
+		border: solid 1px $light-grey;
+		border-radius: 4px;
+		display: none;
+		left: 50%;
+		max-width: 800px;
+		overflow: visible !important;
+		padding: 30px 20px;
+		position: fixed;
+		text-align: center;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		z-index: 101;
+
+		&.done {
+			bottom: 0;
+		}
+	}
+
+	.PanelTitle {
+		color: $dark-grey;
+		font-family: $font-family-latin-bold;
+		font-size: 1.429em;
+		margin-bottom: 20px;
+	}
+
+	.PanelMessage {
+		font-size: 13px;
+		margin-bottom: 20px;
+
+		.CheckboxInput {
+			margin-top: 10px;
+		}
+	}
+}
+
+.desktop {
+	&.hd {
+		.PanelById {
+			.PanelContainer {
+				max-height: 700px;
+				top: 50%;
+			}
+		}
+	}
+
+	&.small {
+		.PanelById {
+			.PanelContainer {
+				max-height: 600px;
+				overflow-y: auto;
+				top: 50%;
+			}
+		}
+		.PanelContainer {
+			max-height: 487px;
+			overflow-y: auto;
+			top: 60%;
+		}
+	}
+}
