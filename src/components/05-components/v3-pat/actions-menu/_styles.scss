@@ -12,11 +12,11 @@ $ActionsMenu-color-active: $regular-alpha;
 }
 
 .ActionsMenu-tooltip {
-	background-color: #fff;
+	@include shadow-medium;
+
+	background-color: $regular-white;
 	border: 0;
-	border-radius: 0;
 	border-radius: 4px;
-	box-shadow: 0 2px 6px 0 rgba(13, 29, 34, 0.4);
 	display: none;
 	min-width: 245px;
 }

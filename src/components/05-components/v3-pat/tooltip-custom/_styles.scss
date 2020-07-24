@@ -1,27 +1,23 @@
 .TooltipWithCounter {
-  display: block;
+	display: block;
 }
 
 .tooltipstered.balloon {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .tooltip_style {
-  background-color: #fff;
-  border: 1px solid #dadbde;
-  color: #79868a;
+	@include shadow-medium;
 
-  .tooltipster-content {
-    font-size: $font-size-normal;
-    line-height: 1.2;
-    overflow: hidden;
-    padding: 8px 10px;
-  }
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	color: $mid-dark-grey;
+	padding: 16px !important;
 
+	.tooltipster-content {
+		font-size: $font-size-normal;
+		line-height: 1.2;
+		overflow: hidden;
+		padding: 8px 10px;
+	}
 }
-
-
-
-// .tooltipster-base {
-//   z-index: 15;
-// }
