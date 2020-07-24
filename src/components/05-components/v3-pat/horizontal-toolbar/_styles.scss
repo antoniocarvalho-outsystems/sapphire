@@ -80,7 +80,11 @@ div.Toolbar {
 			}
 
 			a:focus .MenuItemWrapper {
-				border: 1px solid $mid-light-grey;
+				border-bottom: 3px solid $regular-alpha !important;
+
+				.MenuItemWrapper_Container {
+					color: $regular-beta;
+				}
 			}
 
 			a[disabled] {

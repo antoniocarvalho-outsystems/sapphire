@@ -6,7 +6,7 @@
 .DesignSystem .WizardStep,
 .LayoutBlank .WizardStep,
 .LayoutBase .WizardStep {
-	color: $regular-beta;
+	color: $mid-dark-grey;
 	display: table-cell;
 	font-family: $font-family-latin-bold;
 	font-size: 1em;
@@ -33,13 +33,13 @@
 	}
 
 	&.ActiveStep {
-		background-color: $regular-zeta;
-		color: $regular-beta;
+		background-color: $regular-alpha;
+		color: $regular-white;
 		font-weight: inherit;
 
 		&:before {
-			border-bottom-color: $regular-zeta;
-			border-top-color: $regular-zeta;
+			border-bottom-color: $regular-alpha;
+			border-top-color: $regular-alpha;
 		}
 
 		a,
