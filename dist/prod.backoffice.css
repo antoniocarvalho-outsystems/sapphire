@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920020 || Generated: Thu Jul 23 2020 18:09:18 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920021 || Generated: Fri Jul 24 2020 10:08:46 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4909,7 +4909,8 @@ body.PanelById.PanelOpened {
   top: 11px; }
 
 .select2-container .select2-dropdown {
-  border: 1px solid #d6d6d6; }
+  border: 1px solid #d6d6d6;
+  border-radius: 4px; }
   .select2-container .select2-dropdown--below {
     margin-top: 4px; }
   .select2-container .select2-dropdown--above {
@@ -5151,6 +5152,31 @@ body.PanelById.PanelOpened {
     content: '';
     display: block;
     height: 1px; }
+
+.LayoutBackoffice .select2-selection {
+  height: 40px !important; }
+
+.LayoutBackoffice .select2-selection__arrow {
+  height: 40px !important; }
+  .LayoutBackoffice .select2-selection__arrow:after {
+    top: 50% !important;
+    -webkit-transform: translateY(-50%) !important;
+            transform: translateY(-50%) !important; }
+
+.LayoutBackoffice .select2-selection__rendered {
+  line-height: 35px !important; }
+
+.select2-container.select2-container--open .select2-search__field {
+  padding-left: 15px !important; }
+
+.select2-container .select2-dropdown .select2-search {
+  height: 52px; }
+  .select2-container .select2-dropdown .select2-search .select2-search__field {
+    height: 36px;
+    padding-left: 15px !important; }
+
+.select2-container .select2-dropdown .select2-search--dropdown:after {
+  display: none; }
 
 /* Backoffice_Th Legacy */
 /*
@@ -12963,19 +12989,4 @@ input::-webkit-inner-spin-button {
   background-color: #f5f5f5; }
 
 /* SelectSystem */
-.LayoutBackoffice .select2-selection {
-  height: 40px !important; }
-
-.LayoutBackoffice .select2-selection__arrow {
-  height: 40px !important; }
-  .LayoutBackoffice .select2-selection__arrow:after {
-    top: 50% !important;
-    -webkit-transform: translateY(-50%) !important;
-            transform: translateY(-50%) !important; }
-
-.LayoutBackoffice .select2-selection__rendered {
-  line-height: 35px !important; }
-
-.select2-container.select2-container--open .select2-search__field {
-  padding-left: 15px !important; }
 
