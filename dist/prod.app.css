@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920021 || Generated: Fri Jul 24 2020 10:08:46 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920022 || Generated: Fri Jul 24 2020 11:13:09 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13632,11 +13632,6 @@ div.CircledArrow {
   background-color: #fff;
   border-radius: 1px;
   color: #333333; }
-  .DesignSystem .CompLine .CompLine_headLine,
-  .LayoutPopup .CompLine .CompLine_headLine,
-  .LayoutBlank .CompLine .CompLine_headLine,
-  .LayoutBase .CompLine .CompLine_headLine {
-    border: 1px solid #d6d6d6; }
   .DesignSystem .CompLine.IsHeader,
   .LayoutPopup .CompLine.IsHeader,
   .LayoutBlank .CompLine.IsHeader,
@@ -13673,6 +13668,8 @@ div.CircledArrow {
   .LayoutPopup .CompLine_headLine,
   .LayoutBlank .CompLine_headLine,
   .LayoutBase .CompLine_headLine {
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
     display: table;
     min-height: 60px;
     position: relative;
@@ -13873,7 +13870,7 @@ div.CircledArrow {
   .LayoutBlank .CompLine_Expand,
   .LayoutBase .CompLine_Expand {
     background-color: #f2fffd;
-    border-radius: 1px;
+    border-radius: 0 0 4px 4px;
     border-top: none;
     box-sizing: content-box;
     height: 0;
@@ -13894,6 +13891,11 @@ div.CircledArrow {
   .LayoutBase .CompLine .CompLineExpandable.expanded .CompLine__expandIcon {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg); }
+  .DesignSystem .CompLine .CompLineExpandable.expanded .CompLine_headLine,
+  .LayoutPopup .CompLine .CompLineExpandable.expanded .CompLine_headLine,
+  .LayoutBlank .CompLine .CompLineExpandable.expanded .CompLine_headLine,
+  .LayoutBase .CompLine .CompLineExpandable.expanded .CompLine_headLine {
+    border-radius: 4px 4px 0 0; }
   .DesignSystem .CompLine .CompLineExpandable.expanded .CompLine_Expand,
   .LayoutPopup .CompLine .CompLineExpandable.expanded .CompLine_Expand,
   .LayoutBlank .CompLine .CompLineExpandable.expanded .CompLine_Expand,
@@ -13922,15 +13924,18 @@ div.CircledArrow {
   position: relative;
   width: 100%; }
   .CompLine .SectionExpandableInside.expanded .SectionExpandableInside_header {
-    border-bottom: none; }
+    border-bottom: none;
+    border-radius: 4px 4px 0 0; }
   .CompLine .SectionExpandableInside.expanded .SectionExpandableInside_content {
     border: 1px solid #d6d6d6;
     display: block; }
   .CompLine .SectionExpandableInside_header {
-    border: 1px solid #d6d6d6; }
+    border: 1px solid #d6d6d6;
+    border-radius: 4px; }
     .CompLine .SectionExpandableInside_header .ExapandablePlaceholder:empty {
       display: none !important; }
   .CompLine .SectionExpandableInside_content {
+    border-radius: 0 0 4px 4px;
     display: none; }
 
 .AR .CompLine__expandIcon,
@@ -18947,6 +18952,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   background-color: #fff;
   border-bottom: 1px solid #00bfa5;
   border-left: 1px solid #00bfa5;
+  border-radius: 4px;
   border-right: 1px solid #00bfa5;
   width: 100%; }
   .SelectableListServerSide:first-child {
@@ -21310,7 +21316,8 @@ a .PersonCard {
   border-top: none; }
 
 .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header {
-  border-bottom: transparent; }
+  border-bottom: transparent;
+  border-radius: 4px 4px 0 0; }
   .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable {
     color: #333333;
     height: auto;
@@ -21326,7 +21333,7 @@ a .PersonCard {
   height: auto;
   overflow: visible; }
   .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-    border-radius: unset;
+    border-radius: 0 0 4px 4px;
     border-top: none; }
   .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:last-of-type) {
     border-top: none;
@@ -21360,6 +21367,7 @@ a .PersonCard {
           justify-content: unset;
   background-color: #feeced;
   border: none;
+  border-radius: 4px;
   cursor: default;
   font-family: "LatoBold";
   padding: 0 20px; }
@@ -21393,7 +21401,7 @@ a .PersonCard {
           justify-content: center;
   background-color: #fff;
   border: 1px solid #ff3e2d;
-  border-radius: 1px;
+  border-radius: 4px;
   color: #ff3e2d;
   cursor: pointer;
   font-size: 1em;
@@ -21406,6 +21414,7 @@ a .PersonCard {
 
 .SectionPrescriptionExpandableArea .PrescriptionExpandable_content {
   background-color: #fff;
+  border-radius: 0 0 4px 4px;
   border-top: none;
   box-sizing: content-box;
   font-size: 1em;
@@ -23502,9 +23511,13 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .SectionExpandableCustom:not(.expanded) .SectionExpandable-toggler {
   display: none; }
 
+.SectionExpandableCustom.expanded .SectionExpandable_headerCustom {
+  border-radius: 4px 4px 0 0; }
+
 .SectionExpandableCustom.expanded .SectionExpandableCustom_content {
   background-color: #fff;
   border: 1px solid #d6d6d6;
+  border-radius: 0 0 4px 4px;
   border-top: none;
   height: auto !important; }
 
@@ -23576,6 +23589,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .SectionExpandableCustom .SectionExpandable_headerCustom {
   background-color: #fff;
   border: 1px solid #d6d6d6;
+  border-radius: 4px;
   cursor: pointer;
   display: table;
   height: 62px;
@@ -29865,6 +29879,7 @@ ul.os-internal-ui-autocomplete {
 .SessionList_Header {
   background-color: #fff;
   border: 1px solid #d6d6d6;
+  border-radius: 4px;
   display: table;
   height: 60px;
   padding: 5px 10px;
@@ -29877,20 +29892,18 @@ ul.os-internal-ui-autocomplete {
   .SessionList__Wrapper > div {
     vertical-align: middle; }
 
-.SessionList_Content .SessionList .SessionList_Content {
-  border: none; }
-
-.SessionList_Content .SessionList:first-of-type > .SessionList_Header:first-of-type {
-  border-top: none; }
-
-.SessionList_Content .SessionList_Header {
-  border: none; }
-
-.SessionList_Content .ListRecords span:first-child .SessionList_Header {
-  border-top: none; }
-
-.SessionList_Content .ListRecords > div:first-of-type > .SessionList > .SessionList_Header {
-  border-top: none; }
+.SessionList_Content {
+  border-radius: 0 0 4px 4px; }
+  .SessionList_Content .SessionList .SessionList_Content {
+    border: none; }
+  .SessionList_Content .SessionList:first-of-type > .SessionList_Header:first-of-type {
+    border-top: none; }
+  .SessionList_Content .SessionList_Header {
+    border: none; }
+  .SessionList_Content .ListRecords span:first-child .SessionList_Header {
+    border-top: none; }
+  .SessionList_Content .ListRecords > div:first-of-type > .SessionList > .SessionList_Header {
+    border-top: none; }
 
 .SessionList__Icon {
   color: #00bfa5;
