@@ -1,133 +1,130 @@
 .SelectableListServerSide {
-  background-color: $regular-white;
-  border-bottom: 1px solid $regular-alpha;
-  border-left: 1px solid $regular-alpha;
-  border-right: 1px solid $regular-alpha;
-  width: 100%;
+	background-color: $regular-white;
+	border-bottom: 1px solid $regular-alpha;
+	border-left: 1px solid $regular-alpha;
+	border-radius: 4px;
+	border-right: 1px solid $regular-alpha;
+	width: 100%;
 
-  &:first-child {
-    border-top: 1px solid $regular-alpha;
-  }
+	&:first-child {
+		border-top: 1px solid $regular-alpha;
+	}
 
-  &_selectList {
-    display: table;
-    min-height: 64px;
-    padding: 10px;
-    width: 100%;
+	&_selectList {
+		display: table;
+		min-height: 64px;
+		padding: 10px;
+		width: 100%;
 
-    &.Expanded {
-      border-top: 1px solid $regular-alpha;
+		&.Expanded {
+			border-top: 1px solid $regular-alpha;
 
-      .SelectableListServerSide {
-        &__arrow {
-          line-height: 16px;
-          transform: rotate(-180deg);
-        }
+			.SelectableListServerSide {
+				&__arrow {
+					line-height: 16px;
+					transform: rotate(-180deg);
+				}
 
-        &___actionNotExpand {
-          display: none;
-        }
+				&___actionNotExpand {
+					display: none;
+				}
 
-        &___actionExpand {
-          display: inline-block;
-          vertical-align: middle;
-          width: 100%;
-        }
-      }
-    }
+				&___actionExpand {
+					display: inline-block;
+					vertical-align: middle;
+					width: 100%;
+				}
+			}
+		}
 
-    &.HasArrow {
-      .SelectableListServerSide__content {
-        padding: 10px 20px;
-      }
-    }
-  }
+		&.HasArrow {
+			.SelectableListServerSide__content {
+				padding: 10px 20px;
+			}
+		}
+	}
 
-  &__arrow {
-    color: $regular-beta;
-    cursor: pointer;
-    display: table-cell;
-    font-size: 12px;
-    font-size: 15px;
-    height: 100%;
-    padding: 0 20px;
-    text-align: center;
-    transition-duration: 250ms;
-    transition-property: all;
-    transition-timing-function: linear;
-    vertical-align: middle;
-    vertical-align: middle;
-    width: 20px;
-  }
+	&__arrow {
+		color: $regular-beta;
+		cursor: pointer;
+		display: table-cell;
+		font-size: 12px;
+		font-size: 15px;
+		height: 100%;
+		padding: 0 20px;
+		text-align: center;
+		transition-duration: 250ms;
+		transition-property: all;
+		transition-timing-function: linear;
+		vertical-align: middle;
+		vertical-align: middle;
+		width: 20px;
+	}
 
-  &__details {
-    display: table-cell;
-    vertical-align: middle;
-    width: 50%;
-  }
+	&__details {
+		display: table-cell;
+		vertical-align: middle;
+		width: 50%;
+	}
 
-  &__actions {
-    display: table-cell;
-    vertical-align: middle;
-    width: 20%;
-  }
+	&__actions {
+		display: table-cell;
+		vertical-align: middle;
+		width: 20%;
+	}
 
-  &__actionButton {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
+	&__actionButton {
+		display: table-cell;
+		text-align: right;
+		vertical-align: middle;
+	}
 
-  &___actionNotExpand {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
+	&___actionNotExpand {
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
 
-  &___actionExtra {
-    display: inline-block;
-    margin-left: 10px;
-  }
+	&___actionExtra {
+		display: inline-block;
+		margin-left: 10px;
+	}
 
-  &___actionExpand {
-    display: none;
-  }
+	&___actionExpand {
+		display: none;
+	}
 
-  &_listExtra {
-    display: table;
-    width: 100%;
-  }
+	&_listExtra {
+		display: table;
+		width: 100%;
+	}
 
-  &__extraDetails {
-    display: table-cell;
-    text-align: left;
-  }
+	&__extraDetails {
+		display: table-cell;
+		text-align: left;
+	}
 
-  &__extraActions {
-    display: table-cell;
-    text-align: right;
-  }
+	&__extraActions {
+		display: table-cell;
+		text-align: right;
+	}
 
-  &__content {
-    padding: 10px;
-  }
+	&__content {
+		padding: 10px;
+	}
 }
-
-
 
 .tablet,
 .desktop.small {
-
-  .SelectableListServerSide__details,
-  .SelectableListServerSide__actions,
-  .SelectableListServerSide__actionButton {
-    display: block;
-    width: 100%;
-  }
+	.SelectableListServerSide__details,
+	.SelectableListServerSide__actions,
+	.SelectableListServerSide__actionButton {
+		display: block;
+		width: 100%;
+	}
 }
-
 
 /* adjustements */
 .ListRecords span:not(:last-of-type) .SelectableListServerSide {
-  border-bottom: none;
+	border-bottom: none;
 }

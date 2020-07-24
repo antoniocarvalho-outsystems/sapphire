@@ -25,10 +25,6 @@
 	border-radius: 1px;
 	color: $dark-grey;
 
-	.CompLine_headLine {
-		border: 1px solid $light-grey;
-	}
-
 	&.IsHeader {
 		background-color: transparent;
 		border: none;
@@ -56,6 +52,8 @@
 	}
 
 	&_headLine {
+		border: 1px solid $light-grey;
+		border-radius: 4px;
 		display: table;
 		min-height: 60px;
 		position: relative;
@@ -194,7 +192,7 @@
 
 	&_Expand {
 		background-color: $regular-eta;
-		border-radius: 1px;
+		border-radius: 0 0 4px 4px;
 		border-top: none;
 		box-sizing: content-box;
 		height: 0;
@@ -213,6 +211,10 @@
 		&.expanded {
 			.CompLine__expandIcon {
 				transform: rotate(-180deg);
+			}
+
+			.CompLine_headLine {
+				border-radius: 4px 4px 0 0;
 			}
 
 			.CompLine_Expand {
@@ -249,6 +251,7 @@
 			.SectionExpandableInside {
 				&_header {
 					border-bottom: none;
+					border-radius: 4px 4px 0 0;
 				}
 
 				&_content {
@@ -260,6 +263,7 @@
 
 		&_header {
 			border: 1px solid $light-grey;
+			border-radius: 4px;
 
 			.ExapandablePlaceholder:empty {
 				display: none !important;
@@ -267,6 +271,7 @@
 		}
 
 		&_content {
+			border-radius: 0 0 4px 4px;
 			display: none;
 		}
 	}

@@ -91,9 +91,10 @@
 			osAjaxBackend.BindAfterAjaxRequest(ajaxRefresh);
 		};
 
-		const ajaxRefresh = function() {
+		const ajaxRefresh = function(event) {
+			console.log(event);
 			// remove click events
-			$('.PrescriptionExpandable_header').off();
+			//$('.PrescriptionExpandable_header').off();
 
 			// add stop prepagation
 			$(
