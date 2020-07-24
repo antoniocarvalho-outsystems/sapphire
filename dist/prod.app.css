@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920023 || Generated: Fri Jul 24 2020 14:47:33 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920024 || Generated: Fri Jul 24 2020 15:56:22 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10027,7 +10027,7 @@ a.Button.IsDefault,
 .DesignSystem .WizardStep,
 .LayoutBlank .WizardStep,
 .LayoutBase .WizardStep {
-  color: #009884;
+  color: #5c5c5c;
   display: table-cell;
   font-family: "LatoBold";
   font-size: 1em;
@@ -10056,14 +10056,14 @@ a.Button.IsDefault,
   .DesignSystem .WizardStep.ActiveStep,
   .LayoutBlank .WizardStep.ActiveStep,
   .LayoutBase .WizardStep.ActiveStep {
-    background-color: #c4f0eb;
-    color: #009884;
+    background-color: #00bfa5;
+    color: #fff;
     font-weight: inherit; }
     .DesignSystem .WizardStep.ActiveStep:before,
     .LayoutBlank .WizardStep.ActiveStep:before,
     .LayoutBase .WizardStep.ActiveStep:before {
-      border-bottom-color: #c4f0eb;
-      border-top-color: #c4f0eb; }
+      border-bottom-color: #00bfa5;
+      border-top-color: #00bfa5; }
     .DesignSystem .WizardStep.ActiveStep a,
     .DesignSystem .WizardStep.ActiveStep a:link,
     .DesignSystem .WizardStep.ActiveStep a[disabled='disabled'],
@@ -17025,28 +17025,6 @@ body.PanelOpened .daterangepicker {
   text-align: center;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(255, 255, 255, 0.1); }
 
-/*
-
-
-
-.FullScreenTabsWrapper_Container.Dashboard {
-  background-color: #113041;
-  min-height: 44px;
-}
-
-
-.FullScreenTabsWrapper__Actions {
-  position: absolute;
-  right: 21px;
-  top: 2px;
-}
-
-.FA .FullScreenTabsWrapper__Actions,
-.AR .FullScreenTabsWrapper__Actions {left: 24px;
-  right: auto;
-}
-
-*/
 .FullScreenTabsWrapper_Container {
   background-color: #00bfa5;
   height: 44px;
@@ -17072,7 +17050,11 @@ body.PanelOpened .daterangepicker {
   top: auto; }
 
 .TabWrapper {
+  -webkit-box-align: center;
+          align-items: center;
   border-top: solid 3px #00bfa5;
+  display: -webkit-inline-box;
+  display: inline-flex;
   height: 44px;
   min-width: 100px;
   position: relative; }
@@ -17082,18 +17064,14 @@ body.PanelOpened .daterangepicker {
   .TabWrapper .TabWrapper_tab a {
     color: #fff;
     display: block;
-    font-family: 'LatoBold';
+    font-family: "LatoBold";
     font-size: 1rem;
     line-height: calc(44px - 5px);
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
     white-space: nowrap; }
   .TabWrapper .TabWrapper_icon {
-    left: 5px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    padding-left: 16px; }
     .TabWrapper .TabWrapper_icon .icon {
       color: #fff;
       display: block; }
@@ -17134,20 +17112,23 @@ body.PanelOpened .daterangepicker {
     background-color: #fff;
     border-bottom: solid 3px #fff;
     border-top-color: #fff;
-    color: #009884;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #5c5c5c;
     display: block;
-    font-family: 'LatoBold';
+    font-family: "LatoBold";
     font-size: 1rem;
     line-height: calc(44px - 5px);
     padding-left: 24px;
     padding-right: 24px; }
     .FullScreenTabsWrapper_Container.Dashboard .TabWrapper:hover {
-      border-bottom-color: #00bfa5; }
+      border-top-color: #00bfa5;
+      color: #009884; }
     .FullScreenTabsWrapper_Container.Dashboard .TabWrapper.Active {
       background-color: #f3f3f3;
       border-bottom-color: #f3f3f3;
       border-top-color: #00bfa5;
-      color: #333333; }
+      color: #009884; }
   .FullScreenTabsWrapper_Container.Dashboard .FullScreenTabs_tabCounter {
     position: absolute;
     right: 3px;
@@ -17642,7 +17623,9 @@ div.Toolbar {
         border: 1px solid transparent;
         border-bottom: 3px solid transparent; }
       div.Toolbar__Items .ListRecords a:focus .MenuItemWrapper {
-        border: 1px solid #adadad; }
+        border-bottom: 3px solid #00bfa5 !important; }
+        div.Toolbar__Items .ListRecords a:focus .MenuItemWrapper .MenuItemWrapper_Container {
+          color: #009884; }
       div.Toolbar__Items .ListRecords a[disabled] {
         cursor: not-allowed; }
         div.Toolbar__Items .ListRecords a[disabled]:focus .MenuItemWrapper {
@@ -22145,8 +22128,8 @@ div.List-Star {
         border: 1px solid #00bfa5; }
 
 .WizardContent.active .WizardContent__Number {
-  background-color: #c4f0eb;
-  color: #009884;
+  background-color: #00bfa5;
+  color: #fff;
   opacity: 1; }
 
 .WizardContent.active .WizardContent__Label {
@@ -26601,7 +26584,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     border-left: 0;
     border-right: 0;
     border-top: 2px solid transparent;
-    border-top-color: transparent; }
+    border-top-color: transparent;
+    color: #009884; }
   .Tabs_Extended.Tabs_Extended--Primary .Tabs_body {
     background-color: transparent;
     border: none;
@@ -26611,7 +26595,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     border-bottom: 2px solid #fff;
     border-left-color: #d6d6d6;
     border-right-color: #d6d6d6;
-    border-top-color: #00bfa5; }
+    border-top-color: #00bfa5;
+    color: #009884; }
   .Tabs_Extended.Tabs_Extended--Secondary.Tabs_Extended--fullwidth .Tabs {
     min-height: auto; }
   .Tabs_Extended.Tabs_Extended--Secondary.isClosed .Tabs__tab.active {
@@ -26623,6 +26608,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     border-right: 1px solid transparent;
     border-top: 2px solid transparent;
     padding: 0 15px; }
+    .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:hover {
+      color: #009884; }
   .Tabs_Extended.Tabs_Extended--fullwidth .Tabs_header {
     display: -webkit-box;
     display: flex; }
@@ -26693,7 +26680,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     border-bottom: 0;
     border-left: 0;
     border-top: 3px solid transparent;
-    color: #009884;
+    color: #5c5c5c;
     cursor: pointer;
     display: inline-block;
     font-family: "LatoBold";
