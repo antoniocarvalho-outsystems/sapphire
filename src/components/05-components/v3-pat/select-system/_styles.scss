@@ -265,7 +265,10 @@
 
 .select2-container {
 	.select2-dropdown {
+		@include shadow-small;
+
 		border: 1px solid $light-grey;
+		border-radius: 4px;
 
 		&--below {
 			margin-top: 4px;
