@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920022 || Generated: Fri Jul 24 2020 11:13:09 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920023 || Generated: Fri Jul 24 2020 14:47:33 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10715,7 +10715,8 @@ body .Page.desktop .MainPopup {
   min-width: auto;
   padding: 0; }
 
-div.os-internal-ui-dialog {
+div.os-internal-ui-dialog.os-internal-Popup {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
   left: 50%;
   top: 50% !important;
   -webkit-transform: translate(-50%, -50%);
@@ -10737,25 +10738,19 @@ div.os-internal-Popup.os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-clo
   width: 20px; }
   div.os-internal-Popup .os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close:after,
   div.os-internal-Popup.os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close:after {
-    color: #009884;
-    content: '\e604';
+    color: #333333;
+    content: '\e60c';
     display: block;
-    font-family: 'Sapphire-Icon-Font';
-    font-size: 18px;
-    font-weight: 700;
+    font-family: "Sapphire-Icon-Font";
+    font-size: 1em;
     left: 0;
     position: absolute;
-    top: 0;
-    -webkit-transform: rotateZ(45deg);
-            transform: rotateZ(45deg); }
+    top: 0; }
   div.os-internal-Popup .os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close:hover,
   div.os-internal-Popup.os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close:hover {
     opacity: 1;
     -webkit-transform: rotate(0);
             transform: rotate(0); }
-    div.os-internal-Popup .os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close:hover:after,
-    div.os-internal-Popup.os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close:hover:after {
-      color: #00bfa5; }
 
 .ResizeIframeTooltip.ResizeWidthTooltip {
   width: -webkit-fit-content;
@@ -20044,44 +20039,29 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1); }
 
-.PanelOpened {
-  overflow: auto;
-  position: static; }
-
 .Panel.ConfirmWB {
   display: none;
   position: absolute; }
 
-.PanelBackground {
-  -servicestudio-position: static; }
-  .PanelBackground.ConfirmWB {
-    background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-    bottom: 0;
-    color: #252525;
-    left: 0;
-    -servicestudio-position: static;
-    position: fixed;
-    right: 0;
-    top: 0;
-    -webkit-transition: all 0.14s ease;
-    transition: all 0.14s ease;
-    z-index: 20; }
+.PanelBackground.ConfirmWB {
+  background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.14s ease;
+  transition: all 0.14s ease;
+  z-index: 20; }
 
 .PanelContainer.ConfirmWB {
-  -servicestudio--webkit-transform: translateX(0%);
   background: #ffffff;
   border: solid 1px #d6d6d6;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  -servicestudio-display: block;
-  -servicestudio-display: block;
+  border-radius: 4px;
   display: none;
   left: 50%;
   max-width: 450px;
   padding: 30px 20px;
-  -servicestudio-position: static;
-  -servicestudio-position: static;
   position: fixed;
   text-align: center;
   top: 50%;
@@ -20090,7 +20070,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   width: 100%;
   z-index: 51; }
   .PanelContainer.ConfirmWB .PanelTitle {
-    color: #009884;
     font-family: "LatoBold";
     font-size: 1.429em;
     margin-bottom: 20px; }
@@ -20126,10 +20105,7 @@ body.confirmation-opened {
 
 .confirm-container.confirm-wb {
   background: #fff;
-  border: solid 1px #e4e4e4;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
   display: none;
   left: 50%;
   max-width: 480px;
@@ -20154,29 +20130,14 @@ body.confirmation-opened {
   margin-bottom: 30px;
   white-space: normal; }
 
-.Panel {
-  -servicestudio-display: block !important;
-  -servicestudio-position: relative !important; }
+.PanelContainer.Confirm .PanelMessage {
+  font-size: 1em;
+  margin-bottom: 30px; }
 
-.PanelBackground {
-  -servicestudio-color: #252525 !important;
-  -servicestudio-display: none !important;
-  -servicestudio-position: relative !important; }
-
-.PanelContainer.Confirm {
-  -servicestudio-background-color: #ffffff;
-  -servicestudio-left: auto;
-  -servicestudio-position: relative !important;
-  -servicestudio-top: auto;
-  -servicestudio-z-index: 0; }
-  .PanelContainer.Confirm .PanelMessage {
-    font-size: 1em;
-    margin-bottom: 30px; }
-  .PanelContainer.Confirm .PanelActions .ButtonLink.Is_Default {
-    padding: 0; }
+.PanelContainer.Confirm .PanelActions .ButtonLink.Is_Default {
+  padding: 0; }
 
 .PanelContainer .PanelTitle .PanelContainer.Confirm .PanelTitle {
-  color: #194968;
   font-family: "LatoBold";
   font-size: 1.143em;
   margin-bottom: 20px; }
@@ -20189,11 +20150,11 @@ body.confirmation-opened {
       cursor: pointer;
       display: inline-block;
       font-family: "LatoBold";
-      font-size: 0.857em;
+      font-size: 1em;
       max-width: 15px;
       position: absolute;
-      right: 10px;
-      top: 5px; }
+      right: 20px;
+      top: 20px; }
     .modalPopup.Open .modalPopup_container {
       background-color: #fff;
       display: block;
@@ -20201,7 +20162,7 @@ body.confirmation-opened {
       max-height: 80%;
       min-width: 250px;
       overflow: auto;
-      padding: 10px 15px;
+      padding: 30px 20px;
       position: fixed;
       top: 50%;
       -webkit-transform: translate(-50%, -50%);
@@ -20240,60 +20201,50 @@ body.PanelById.PanelOpened {
   overflow: hidden;
   position: static; }
 
-.PanelById {
-  -servicestudio-height: auto !important;
-  -servicestudio-position: relative !important;
-  -servicestudio-width: 100% !important; }
-  .PanelById .Panel {
-    -servicestudio-display: block !important;
-    display: none;
-    -servicestudio-margin: 0 auto !important;
-    -servicestudio-position: relative !important; }
-  .PanelById .PanelBackground {
-    background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-    bottom: 0;
-    color: #252525;
-    -servicestudio-display: none !important;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    -webkit-transition: all 0.14s ease;
-    transition: all 0.14s ease;
-    z-index: 20; }
-  .PanelById .PanelContainer {
-    background: #ffffff;
-    border: solid 1px #d6d6d6;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    -servicestudio-display: block !important;
-    display: none;
-    left: 50%;
-    max-width: 800px;
-    overflow: visible !important;
-    padding: 30px 20px;
-    position: fixed;
-    text-align: center;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -servicestudio-width: 1500px !important;
-    width: 100%;
-    -servicestudio-z-index: 0;
-    z-index: 101; }
+.PanelById .Panel {
+  display: none; }
+
+.PanelById .PanelBackground {
+  background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.14s ease;
+  transition: all 0.14s ease;
+  z-index: 20; }
+
+.PanelById .PanelContainer {
+  background: #ffffff;
+  border: solid 1px #d6d6d6;
+  border-radius: 4px;
+  display: none;
+  left: 50%;
+  max-width: 800px;
+  overflow: visible !important;
+  padding: 30px 20px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 101; }
   .PanelById .PanelContainer.done {
     bottom: 0; }
-  .PanelById .PanelTitle {
-    color: #333333;
-    font-family: "LatoBold";
-    font-size: 1.143em;
-    margin-bottom: 20px; }
-  .PanelById .PanelMessage {
-    font-size: 13px;
-    margin-bottom: 20px; }
-    .PanelById .PanelMessage .CheckboxInput {
-      margin-top: 10px; }
+
+.PanelById .PanelTitle {
+  color: #333333;
+  font-family: "LatoBold";
+  font-size: 1.429em;
+  margin-bottom: 20px; }
+
+.PanelById .PanelMessage {
+  font-size: 13px;
+  margin-bottom: 20px; }
+  .PanelById .PanelMessage .CheckboxInput {
+    margin-top: 10px; }
 
 .desktop.hd .PanelById .PanelContainer {
   max-height: 700px;
@@ -20309,28 +20260,10 @@ body.PanelById.PanelOpened {
   overflow-y: auto;
   top: 60%; }
 
-.Panel .PanelContainer {
-  -servicestudio--webkit-transform: translate(0, 0) !important;
-  -servicestudio-height: 100% !important;
-  -servicestudio-left: 0 !important;
-  -servicestudio-position: relative !important;
-  -servicestudio-top: 0 !important;
-  -servicestudio-width: 100% !important; }
-
-.PanelOpened {
-  overflow: auto;
-  position: static; }
-
-.Panel {
-  display: none;
-  position: relative; }
-
 .PanelBackground.ConfirmWB {
   background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
   bottom: 0;
-  color: #252525;
   left: 0;
-  -servicestudio-position: static;
   position: fixed;
   right: 0;
   top: 0;
@@ -20339,18 +20272,12 @@ body.PanelById.PanelOpened {
   z-index: 20; }
 
 .PanelContainer.Confirm {
-  -servicestudio--webkit-transform: translateX(0%);
-  background: white;
-  border: solid 1px #e4e4e4;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  -servicestudio-display: block;
+  background: #fff;
+  border-radius: 4px;
   display: none;
   left: 50%;
   max-width: 400px;
   padding: 30px 20px;
-  -servicestudio-position: static;
   position: fixed;
   text-align: center;
   top: 50%;
@@ -20359,7 +20286,6 @@ body.PanelById.PanelOpened {
   width: 100%;
   z-index: 51; }
   .PanelContainer.Confirm .PanelTitle {
-    color: #009884;
     font-family: "LatoBold";
     font-size: 1.429em;
     margin-bottom: 20px; }
@@ -20369,6 +20295,17 @@ body.PanelById.PanelOpened {
     margin-bottom: 30px; }
   .PanelContainer.Confirm .PanelActions {
     white-space: nowrap; }
+
+.Panel {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  display: none;
+  position: absolute; }
+
+.PanelOpened {
+  overflow: auto;
+  position: static; }
 
 .PatientCallCancel {
   display: inline-block; }
@@ -24117,20 +24054,41 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
   .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
   .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove {
+    border-radius: 50%;
     color: #333333;
     cursor: pointer;
     display: inline-block;
     font-family: "LatoBold";
-    font-size: 1.143em;
-    height: 8px;
-    line-height: 8px;
+    font-size: 1em;
+    height: 14px;
+    line-height: 13px;
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 10px;
+    right: 6px;
+    text-align: center;
     top: 50%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+            transform: translateY(-50%);
+    width: 14px; }
+    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover {
+      background-color: rgba(51, 51, 51, 0.2); }
   .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
   .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
   .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
@@ -27817,7 +27775,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .shadow--medium {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
-.ShadowLarge,
+.ShadowLarge, .PanelContainer.ConfirmWB, .confirm-container.confirm-wb, .PanelById .PanelContainer, .PanelContainer.Confirm,
 .shadow--large {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
@@ -30253,6 +30211,113 @@ ul.os-internal-ui-autocomplete {
   padding-left: 20px;
   padding-right: 10px; }
 
+div[id*='SectionTitleContainer'] + div {
+  display: inline;
+  position: relative;
+  top: -5px; }
+
+.AgendaCalendar___Container {
+  position: relative; }
+
+.AgendaCalendar___Header--Content {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  height: 40px;
+  margin-bottom: 18px;
+  width: 315px; }
+  .AgendaCalendar___Header--Content a.Button, .AgendaCalendar___Header--Content .DropZoneContainer .row .Button, .DropZoneContainer .row .AgendaCalendar___Header--Content .Button {
+    margin-right: 18px !important; }
+
+.AgendaCalendar___Header .SegmentedControl {
+  margin: 0; }
+  .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item {
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 0.857em;
+    height: 20px;
+    min-height: 0;
+    width: 20px; }
+    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item a {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      height: 100%;
+      -webkit-box-pack: center;
+              justify-content: center;
+      width: 100%; }
+    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item label {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center; }
+    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item span {
+      position: relative;
+      top: 1px; }
+    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item:first-child {
+      margin-right: 6px; }
+
+.AgendaCalendar___Title {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  height: 40px;
+  left: 50%;
+  position: absolute;
+  top: 0; }
+  .AgendaCalendar___Title > div.CalendarButton.InlineBlock.Clickable {
+    display: contents; }
+
+.AgendaCalendar .ClinicalCalendarBigBox .ContainerSelected,
+.AgendaCalendar .ClinicalCalendarBigBox .ContainerAppointments,
+.AgendaCalendar .ClinicalCalendarBigBox .ContainerSurgeries {
+  color: #5c5c5c; }
+
+.AgendaCalendar .Calendar_Weekday {
+  background-color: #d6d6d6;
+  bottom: 1px #5c5c5c; }
+
+.AgendaCalendar .CalendarDay___Selected {
+  background-color: #ffffff;
+  color: #009884; }
+
+.AgendaCalendar .CalendarItemCell {
+  color: #009884; }
+
+.TopSection___Wrapper {
+  font-size: 1.429em;
+  height: 40px;
+  width: 100%; }
+  .TopSection___Wrapper .TopSection___Container {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    height: 100%;
+    width: 100%; }
+    .TopSection___Wrapper .TopSection___Container .DropDown___Container {
+      display: -webkit-box;
+      display: flex;
+      font-size: 1rem;
+      margin-left: 5px;
+      width: 250px; }
+      .TopSection___Wrapper .TopSection___Container .DropDown___Container > span {
+        display: -webkit-box;
+        display: flex; }
+        .TopSection___Wrapper .TopSection___Container .DropDown___Container > span div[ui='Container_LocationOptGroup_Doctor'],
+        .TopSection___Wrapper .TopSection___Container .DropDown___Container > span div[ui='Container_LocationOptGroup_Doctor2Drop'] {
+          margin-right: 20px; }
+      .TopSection___Wrapper .TopSection___Container .DropDown___Container .selection .select2-selection.select2-selection--single {
+        height: 100%;
+        width: 250px; }
+        .TopSection___Wrapper .TopSection___Container .DropDown___Container .selection .select2-selection.select2-selection--single .select2-selection__arrow b {
+          top: 3px; }
+
 .ClinicianSecondarySummary .SectionExpandable_header .SectionExpandable__title {
   -servicestudio-display: table;
   -servicestudio-float: right;
@@ -30587,6 +30652,22 @@ span:not(:last-of-type) .CompLine {
 .tablet .Actions_Details {
   display: table-cell; }
 
+.Ctn_Identification--Wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  .Ctn_Identification--Wrapper .Ctn_Identification--Label {
+    margin-bottom: 10px; }
+  .Ctn_Identification--Wrapper .Ctn_Identification--Container {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex; }
+    .Ctn_Identification--Wrapper .Ctn_Identification--Container :nth-child(2) {
+      width: 200px; }
+
 .FormField-fullwidth .FormField-field .DateTimeRangePicker,
 .FormField-fullwidth .FormField-field .DateTimeRangePicker-input {
   width: 100%; }
@@ -30604,6 +30685,15 @@ span:not(:last-of-type) .CompLine {
 .AR .TileIconText_label,
 .AR .TileNumber_text {
   font-family: "TajawalRegular"; }
+
+div[id*='LinkedHospitalizations'] {
+  border-top: none; }
+
+span[id*='RelatedVisitsRL'] :not(:first-child) .PersonCard_header {
+  border-top: none; }
+
+.PatientStatusLine .ListRecords :not(:first-child) .CompLine_headLine {
+  border-top: none; }
 
 .HospitalizationPlanLayout {
   height: auto;
@@ -30901,6 +30991,129 @@ input[type]:focus.SavedInput {
   .modalPopup.Open .modalPopup_div {
     -servicestudio-display: none; }
 
+.EDDAndEGA_Wrapper,
+.ValidationMessageWrapper,
+.UltraSoundWrapper,
+.ConceptionWrapper {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 20px; }
+
+.EDDAndEGA_Wrapper {
+  margin-top: 20px; }
+  .EDDAndEGA_Wrapper .EstimatedDateWrapper {
+    -webkit-box-flex: 1;
+            flex: 1; }
+  .EDDAndEGA_Wrapper .EstimatedGestAgeWrapper {
+    -webkit-box-flex: 2;
+            flex: 2; }
+
+.ValidationMessageWrapper .ValidationMessageContainer {
+  -webkit-box-flex: 1;
+          flex: 1; }
+  .ValidationMessageWrapper .ValidationMessageContainer span {
+    width: 100%; }
+    .ValidationMessageWrapper .ValidationMessageContainer span .DateTimeRangePicker-displayed input {
+      width: 100%; }
+
+.ValidationMessageWrapper .numberFetusContainer {
+  -webkit-box-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 2;
+          flex: 2; }
+  .ValidationMessageWrapper .numberFetusContainer > div[class~='FormField'] {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    height: 36px; }
+    .ValidationMessageWrapper .numberFetusContainer > div[class~='FormField'] > div {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      height: 100%; }
+    .ValidationMessageWrapper .numberFetusContainer > div[class~='FormField'] input {
+      height: 36px;
+      margin-left: 5px;
+      text-align: center;
+      width: 36px; }
+
+.UltraSoundWrapper .ultrasoundDaysContainer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex: 1; }
+  .UltraSoundWrapper .ultrasoundDaysContainer div[class~='FormField']:first-child {
+    margin-right: 20px; }
+
+.UltraSoundWrapper .ultrasoundDateContainer {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 2;
+          flex: 2; }
+
+@media only screen and (max-width: 1680px) {
+  .EDDAndEGA_Wrapper .EstimatedGestAgeWrapper {
+    -webkit-box-flex: 1;
+            flex: 1; }
+  .ValidationMessageWrapper .ValidationMessageContainer {
+    -webkit-box-flex: 2;
+            flex: 2; }
+  .UltraSoundWrapper .ultrasoundDaysContainer {
+    -webkit-box-flex: 2;
+            flex: 2; } }
+
+.PanelById {
+  -servicestudio-height: auto !important;
+  -servicestudio-position: relative !important;
+  -servicestudio-width: 100% !important; }
+  .PanelById .Panel {
+    -servicestudio-display: block !important;
+    -servicestudio-margin: 0 auto !important;
+    -servicestudio-position: relative !important; }
+  .PanelById .PanelBackground {
+    -servicestudio-display: none !important; }
+  .PanelById .PanelContainer {
+    -servicestudio-display: block !important;
+    -servicestudio-width: 1500px !important;
+    -servicestudio-z-index: 0; }
+
+.Panel {
+  -servicestudio-display: block !important;
+  -servicestudio-position: relative !important; }
+  .Panel .PanelContainer {
+    -servicestudio--webkit-transform: translate(0, 0) !important;
+    -servicestudio-height: 100% !important;
+    -servicestudio-left: 0 !important;
+    -servicestudio-position: relative !important;
+    -servicestudio-top: 0 !important;
+    -servicestudio-width: 100% !important; }
+    .Panel .PanelContainer.Confirm {
+      -servicestudio--webkit-transform: translateX(0%);
+      -servicestudio-background-color: #fffff;
+      -servicestudio-display: block;
+      -servicestudio-left: auto;
+      -servicestudio-position: relative !important;
+      -servicestudio-position: static;
+      -servicestudio-top: auto;
+      -servicestudio-z-index: 0; }
+    .Panel .PanelContainer.ConfirmWB {
+      -servicestudio--webkit-transform: translateX(0%);
+      -servicestudio-display: block;
+      -servicestudio-position: static; }
+  .Panel .PanelBackground {
+    -servicestudio-color: #252525 !important;
+    -servicestudio-display: none !important;
+    -servicestudio-position: relative !important;
+    -servicestudio-position: static; }
+    .Panel .PanelBackground.ConfirmWB {
+      -servicestudio-position: static; }
+
 .PatientInfo {
   -servicestudio-width: 100% !important; }
   .PatientInfo_left {
@@ -31160,6 +31373,18 @@ input[type]:focus.SavedInput {
 .phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_icon {
   text-align: center;
   width: 100%; }
+
+.PrescriptionContainer__Header_Statement {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center; }
+
+.StatementDates .DosePickerContentInfo {
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
 
 .Panel .CalendarWb {
   margin: 0 auto;
@@ -31466,227 +31691,6 @@ div.SelectableList-Line > span > div.ExpandableContent {
 
 .WizardStep {
   -servicestudio-width: 40%; }
-
-.Ctn_Identification--Wrapper {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column; }
-  .Ctn_Identification--Wrapper .Ctn_Identification--Label {
-    margin-bottom: 10px; }
-  .Ctn_Identification--Wrapper .Ctn_Identification--Container {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex; }
-    .Ctn_Identification--Wrapper .Ctn_Identification--Container :nth-child(2) {
-      width: 200px; }
-
-.EDDAndEGA_Wrapper,
-.ValidationMessageWrapper,
-.UltraSoundWrapper,
-.ConceptionWrapper {
-  display: -webkit-box;
-  display: flex;
-  margin-bottom: 20px; }
-
-.EDDAndEGA_Wrapper {
-  margin-top: 20px; }
-  .EDDAndEGA_Wrapper .EstimatedDateWrapper {
-    -webkit-box-flex: 1;
-            flex: 1; }
-  .EDDAndEGA_Wrapper .EstimatedGestAgeWrapper {
-    -webkit-box-flex: 2;
-            flex: 2; }
-
-.ValidationMessageWrapper .ValidationMessageContainer {
-  -webkit-box-flex: 1;
-          flex: 1; }
-  .ValidationMessageWrapper .ValidationMessageContainer span {
-    width: 100%; }
-    .ValidationMessageWrapper .ValidationMessageContainer span .DateTimeRangePicker-displayed input {
-      width: 100%; }
-
-.ValidationMessageWrapper .numberFetusContainer {
-  -webkit-box-align: end;
-          align-items: flex-end;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-flex: 2;
-          flex: 2; }
-  .ValidationMessageWrapper .numberFetusContainer > div[class~='FormField'] {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex;
-    height: 36px; }
-    .ValidationMessageWrapper .numberFetusContainer > div[class~='FormField'] > div {
-      -webkit-box-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: flex;
-      height: 100%; }
-    .ValidationMessageWrapper .numberFetusContainer > div[class~='FormField'] input {
-      height: 36px;
-      margin-left: 5px;
-      text-align: center;
-      width: 36px; }
-
-.UltraSoundWrapper .ultrasoundDaysContainer {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-flex: 1;
-          flex: 1; }
-  .UltraSoundWrapper .ultrasoundDaysContainer div[class~='FormField']:first-child {
-    margin-right: 20px; }
-
-.UltraSoundWrapper .ultrasoundDateContainer {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-flex: 2;
-          flex: 2; }
-
-@media only screen and (max-width: 1680px) {
-  .EDDAndEGA_Wrapper .EstimatedGestAgeWrapper {
-    -webkit-box-flex: 1;
-            flex: 1; }
-  .ValidationMessageWrapper .ValidationMessageContainer {
-    -webkit-box-flex: 2;
-            flex: 2; }
-  .UltraSoundWrapper .ultrasoundDaysContainer {
-    -webkit-box-flex: 2;
-            flex: 2; } }
-
-div[id*='SectionTitleContainer'] + div {
-  display: inline;
-  position: relative;
-  top: -5px; }
-
-.AgendaCalendar___Container {
-  position: relative; }
-
-.AgendaCalendar___Header--Content {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
-  height: 40px;
-  margin-bottom: 18px;
-  width: 315px; }
-  .AgendaCalendar___Header--Content a.Button, .AgendaCalendar___Header--Content .DropZoneContainer .row .Button, .DropZoneContainer .row .AgendaCalendar___Header--Content .Button {
-    margin-right: 18px !important; }
-
-.AgendaCalendar___Header .SegmentedControl {
-  margin: 0; }
-  .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item {
-    border: 1px solid;
-    border-radius: 50%;
-    font-size: 0.857em;
-    height: 20px;
-    min-height: 0;
-    width: 20px; }
-    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item a {
-      -webkit-box-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: flex;
-      height: 100%;
-      -webkit-box-pack: center;
-              justify-content: center;
-      width: 100%; }
-    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item label {
-      -webkit-box-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center; }
-    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item span {
-      position: relative;
-      top: 1px; }
-    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item:first-child {
-      margin-right: 6px; }
-
-.AgendaCalendar___Title {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
-  height: 40px;
-  left: 50%;
-  position: absolute;
-  top: 0; }
-  .AgendaCalendar___Title > div.CalendarButton.InlineBlock.Clickable {
-    display: contents; }
-
-.AgendaCalendar .ClinicalCalendarBigBox .ContainerSelected,
-.AgendaCalendar .ClinicalCalendarBigBox .ContainerAppointments,
-.AgendaCalendar .ClinicalCalendarBigBox .ContainerSurgeries {
-  color: #5c5c5c; }
-
-.AgendaCalendar .Calendar_Weekday {
-  background-color: #d6d6d6;
-  bottom: 1px #5c5c5c; }
-
-.AgendaCalendar .CalendarDay___Selected {
-  background-color: #ffffff;
-  color: #009884; }
-
-.AgendaCalendar .CalendarItemCell {
-  color: #009884; }
-
-.TopSection___Wrapper {
-  font-size: 1.429em;
-  height: 40px;
-  width: 100%; }
-  .TopSection___Wrapper .TopSection___Container {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex;
-    height: 100%;
-    width: 100%; }
-    .TopSection___Wrapper .TopSection___Container .DropDown___Container {
-      display: -webkit-box;
-      display: flex;
-      font-size: 1rem;
-      margin-left: 5px;
-      width: 250px; }
-      .TopSection___Wrapper .TopSection___Container .DropDown___Container > span {
-        display: -webkit-box;
-        display: flex; }
-        .TopSection___Wrapper .TopSection___Container .DropDown___Container > span div[ui='Container_LocationOptGroup_Doctor'],
-        .TopSection___Wrapper .TopSection___Container .DropDown___Container > span div[ui='Container_LocationOptGroup_Doctor2Drop'] {
-          margin-right: 20px; }
-      .TopSection___Wrapper .TopSection___Container .DropDown___Container .selection .select2-selection.select2-selection--single {
-        height: 100%;
-        width: 250px; }
-        .TopSection___Wrapper .TopSection___Container .DropDown___Container .selection .select2-selection.select2-selection--single .select2-selection__arrow b {
-          top: 3px; }
-
-div[id*='LinkedHospitalizations'] {
-  border-top: none; }
-
-span[id*='RelatedVisitsRL'] :not(:first-child) .PersonCard_header {
-  border-top: none; }
-
-.PatientStatusLine .ListRecords :not(:first-child) .CompLine_headLine {
-  border-top: none; }
-
-.PrescriptionContainer__Header_Statement {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center; }
-
-.StatementDates .DosePickerContentInfo {
-  -webkit-box-pack: justify;
-          justify-content: space-between; }
 
 /*
 
@@ -34487,22 +34491,6 @@ span.ListNavigation_Ellipsis {
 /* SILK Patterns > Info */
 /* SILK Patterns > Modal */
 /* SILK Patterns > Panel */
-.Panel {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  position: absolute; }
-
-.PanelTitle {
-  color: #005675;
-  font-family: globerbold;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px; }
-
-.Panel .Panel_footer {
-  border-top-style: dashed; }
-
 /* SILK Patterns > Post */
 .Post .Post_icon img {
   border: 1px solid #dadbde;

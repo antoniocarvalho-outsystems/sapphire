@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920022 || Generated: Fri Jul 24 2020 11:13:09 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920023 || Generated: Fri Jul 24 2020 14:47:33 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4145,44 +4145,29 @@ div.ui-timepicker-container {
   border-left: 0;
   border-right: solid 1px #adadad; }
 
-.PanelOpened {
-  overflow: auto;
-  position: static; }
-
 .Panel.ConfirmWB {
   display: none;
   position: absolute; }
 
-.PanelBackground {
-  -servicestudio-position: static; }
-  .PanelBackground.ConfirmWB {
-    background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-    bottom: 0;
-    color: #252525;
-    left: 0;
-    -servicestudio-position: static;
-    position: fixed;
-    right: 0;
-    top: 0;
-    -webkit-transition: all 0.14s ease;
-    transition: all 0.14s ease;
-    z-index: 20; }
+.PanelBackground.ConfirmWB {
+  background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.14s ease;
+  transition: all 0.14s ease;
+  z-index: 20; }
 
 .PanelContainer.ConfirmWB {
-  -servicestudio--webkit-transform: translateX(0%);
   background: #ffffff;
   border: solid 1px #d6d6d6;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  -servicestudio-display: block;
-  -servicestudio-display: block;
+  border-radius: 4px;
   display: none;
   left: 50%;
   max-width: 450px;
   padding: 30px 20px;
-  -servicestudio-position: static;
-  -servicestudio-position: static;
   position: fixed;
   text-align: center;
   top: 50%;
@@ -4191,7 +4176,6 @@ div.ui-timepicker-container {
   width: 100%;
   z-index: 51; }
   .PanelContainer.ConfirmWB .PanelTitle {
-    color: #009884;
     font-family: "LatoBold";
     font-size: 1.429em;
     margin-bottom: 20px; }
@@ -4227,10 +4211,7 @@ body.confirmation-opened {
 
 .confirm-container.confirm-wb {
   background: #fff;
-  border: solid 1px #e4e4e4;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
   display: none;
   left: 50%;
   max-width: 480px;
@@ -4255,29 +4236,14 @@ body.confirmation-opened {
   margin-bottom: 30px;
   white-space: normal; }
 
-.Panel {
-  -servicestudio-display: block !important;
-  -servicestudio-position: relative !important; }
+.PanelContainer.Confirm .PanelMessage {
+  font-size: 1em;
+  margin-bottom: 30px; }
 
-.PanelBackground {
-  -servicestudio-color: #252525 !important;
-  -servicestudio-display: none !important;
-  -servicestudio-position: relative !important; }
-
-.PanelContainer.Confirm {
-  -servicestudio-background-color: #ffffff;
-  -servicestudio-left: auto;
-  -servicestudio-position: relative !important;
-  -servicestudio-top: auto;
-  -servicestudio-z-index: 0; }
-  .PanelContainer.Confirm .PanelMessage {
-    font-size: 1em;
-    margin-bottom: 30px; }
-  .PanelContainer.Confirm .PanelActions .ButtonLink.Is_Default {
-    padding: 0; }
+.PanelContainer.Confirm .PanelActions .ButtonLink.Is_Default {
+  padding: 0; }
 
 .PanelContainer .PanelTitle .PanelContainer.Confirm .PanelTitle {
-  color: #194968;
   font-family: "LatoBold";
   font-size: 1.143em;
   margin-bottom: 20px; }
@@ -4290,11 +4256,11 @@ body.confirmation-opened {
       cursor: pointer;
       display: inline-block;
       font-family: "LatoBold";
-      font-size: 0.857em;
+      font-size: 1em;
       max-width: 15px;
       position: absolute;
-      right: 10px;
-      top: 5px; }
+      right: 20px;
+      top: 20px; }
     .modalPopup.Open .modalPopup_container {
       background-color: #fff;
       display: block;
@@ -4302,7 +4268,7 @@ body.confirmation-opened {
       max-height: 80%;
       min-width: 250px;
       overflow: auto;
-      padding: 10px 15px;
+      padding: 30px 20px;
       position: fixed;
       top: 50%;
       -webkit-transform: translate(-50%, -50%);
@@ -4341,60 +4307,50 @@ body.PanelById.PanelOpened {
   overflow: hidden;
   position: static; }
 
-.PanelById {
-  -servicestudio-height: auto !important;
-  -servicestudio-position: relative !important;
-  -servicestudio-width: 100% !important; }
-  .PanelById .Panel {
-    -servicestudio-display: block !important;
-    display: none;
-    -servicestudio-margin: 0 auto !important;
-    -servicestudio-position: relative !important; }
-  .PanelById .PanelBackground {
-    background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-    bottom: 0;
-    color: #252525;
-    -servicestudio-display: none !important;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    -webkit-transition: all 0.14s ease;
-    transition: all 0.14s ease;
-    z-index: 20; }
-  .PanelById .PanelContainer {
-    background: #ffffff;
-    border: solid 1px #d6d6d6;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    -servicestudio-display: block !important;
-    display: none;
-    left: 50%;
-    max-width: 800px;
-    overflow: visible !important;
-    padding: 30px 20px;
-    position: fixed;
-    text-align: center;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -servicestudio-width: 1500px !important;
-    width: 100%;
-    -servicestudio-z-index: 0;
-    z-index: 101; }
+.PanelById .Panel {
+  display: none; }
+
+.PanelById .PanelBackground {
+  background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.14s ease;
+  transition: all 0.14s ease;
+  z-index: 20; }
+
+.PanelById .PanelContainer {
+  background: #ffffff;
+  border: solid 1px #d6d6d6;
+  border-radius: 4px;
+  display: none;
+  left: 50%;
+  max-width: 800px;
+  overflow: visible !important;
+  padding: 30px 20px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 101; }
   .PanelById .PanelContainer.done {
     bottom: 0; }
-  .PanelById .PanelTitle {
-    color: #333333;
-    font-family: "LatoBold";
-    font-size: 1.143em;
-    margin-bottom: 20px; }
-  .PanelById .PanelMessage {
-    font-size: 13px;
-    margin-bottom: 20px; }
-    .PanelById .PanelMessage .CheckboxInput {
-      margin-top: 10px; }
+
+.PanelById .PanelTitle {
+  color: #333333;
+  font-family: "LatoBold";
+  font-size: 1.429em;
+  margin-bottom: 20px; }
+
+.PanelById .PanelMessage {
+  font-size: 13px;
+  margin-bottom: 20px; }
+  .PanelById .PanelMessage .CheckboxInput {
+    margin-top: 10px; }
 
 .desktop.hd .PanelById .PanelContainer {
   max-height: 700px;
@@ -4410,28 +4366,10 @@ body.PanelById.PanelOpened {
   overflow-y: auto;
   top: 60%; }
 
-.Panel .PanelContainer {
-  -servicestudio--webkit-transform: translate(0, 0) !important;
-  -servicestudio-height: 100% !important;
-  -servicestudio-left: 0 !important;
-  -servicestudio-position: relative !important;
-  -servicestudio-top: 0 !important;
-  -servicestudio-width: 100% !important; }
-
-.PanelOpened {
-  overflow: auto;
-  position: static; }
-
-.Panel {
-  display: none;
-  position: relative; }
-
 .PanelBackground.ConfirmWB {
   background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
   bottom: 0;
-  color: #252525;
   left: 0;
-  -servicestudio-position: static;
   position: fixed;
   right: 0;
   top: 0;
@@ -4440,18 +4378,12 @@ body.PanelById.PanelOpened {
   z-index: 20; }
 
 .PanelContainer.Confirm {
-  -servicestudio--webkit-transform: translateX(0%);
-  background: white;
-  border: solid 1px #e4e4e4;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  -servicestudio-display: block;
+  background: #fff;
+  border-radius: 4px;
   display: none;
   left: 50%;
   max-width: 400px;
   padding: 30px 20px;
-  -servicestudio-position: static;
   position: fixed;
   text-align: center;
   top: 50%;
@@ -4460,7 +4392,6 @@ body.PanelById.PanelOpened {
   width: 100%;
   z-index: 51; }
   .PanelContainer.Confirm .PanelTitle {
-    color: #009884;
     font-family: "LatoBold";
     font-size: 1.429em;
     margin-bottom: 20px; }
@@ -4470,6 +4401,17 @@ body.PanelById.PanelOpened {
     margin-bottom: 30px; }
   .PanelContainer.Confirm .PanelActions {
     white-space: nowrap; }
+
+.Panel {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  display: none;
+  position: absolute; }
+
+.PanelOpened {
+  overflow: auto;
+  position: static; }
 
 .LayoutBlank .select2-container:hover .select2-selection[aria-disabled='false'],
 .LayoutBase .select2-container:hover .select2-selection[aria-disabled='false'],
@@ -4715,20 +4657,41 @@ body.PanelById.PanelOpened {
   .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
   .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
   .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove {
+    border-radius: 50%;
     color: #333333;
     cursor: pointer;
     display: inline-block;
     font-family: "LatoBold";
-    font-size: 1.143em;
-    height: 8px;
-    line-height: 8px;
+    font-size: 1em;
+    height: 14px;
+    line-height: 13px;
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 10px;
+    right: 6px;
+    text-align: center;
     top: 50%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+            transform: translateY(-50%);
+    width: 14px; }
+    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover {
+      background-color: rgba(51, 51, 51, 0.2); }
   .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
   .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
   .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
