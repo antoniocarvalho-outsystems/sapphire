@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920024 || Generated: Fri Jul 24 2020 15:56:22 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920025 || Generated: Fri Jul 24 2020 16:25:04 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9052,8 +9052,7 @@ a.Button.IsDefault,
 
 .popup-wrapper > .popup-menu {
   background-color: #fff;
-  border-radius: 1px;
-  box-shadow: 0 0 25px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   position: absolute;
   z-index: 4; }
   .popup-wrapper > .popup-menu > .popup-menu-balloon {
@@ -9742,7 +9741,8 @@ a.Button.IsDefault,
           justify-content: center;
   background-color: transparent;
   border: 1px solid #d6d6d6;
-  color: #5c5c5c;
+  border-radius: 4px;
+  color: #858585;
   font-size: 1em;
   min-height: 48px;
   width: 100%; }
@@ -11748,9 +11748,7 @@ div.Feedback_Message_Info span.lasa-term {
 .ActionsMenu-tooltip {
   background-color: #fff;
   border: 0;
-  border-radius: 0;
   border-radius: 4px;
-  box-shadow: 0 2px 6px 0 rgba(13, 29, 34, 0.4);
   display: none;
   min-width: 245px; }
 
@@ -12880,7 +12878,8 @@ div.Feedback_Message_Info span.lasa-term {
           justify-content: center;
   background-color: transparent;
   border: 1px solid #d6d6d6;
-  color: #5c5c5c;
+  border-radius: 4px;
+  color: #858585;
   font-size: 1em;
   min-height: 48px;
   width: 100%; }
@@ -27069,8 +27068,9 @@ div.TimelineDetail {
 
 .tooltip_style {
   background-color: #fff;
-  border: 1px solid #dadbde;
-  color: #79868a; }
+  border: 1px solid #d6d6d6;
+  color: #5c5c5c;
+  padding: 16px !important; }
   .tooltip_style .tooltipster-content {
     font-size: 1em;
     line-height: 1.2;
@@ -27088,12 +27088,6 @@ div.TimelineDetail {
 
 .tooltipstered.balloon {
   cursor: pointer; }
-
-.tooltip_style {
-  background-color: #fff;
-  border: 1px solid #dadbde;
-  color: #79868a;
-  padding: 6px; }
 
 .tooltip_style .tooltipster-content {
   font-size: 14px;
@@ -27113,9 +27107,7 @@ div.TimelineDetail {
 
 .tooltipster-shadow {
   background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
-  color: #2c2c2c; }
+  border-radius: 5px; }
 
 .tooltipster-borderless {
   background: rgba(10, 10, 10, 0.9);
@@ -27758,7 +27750,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .shadow--small {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
-.ShadowMedium,
+.ShadowMedium, .popup-wrapper > .popup-menu, .ActionsMenu-tooltip, .tooltip_style, .tooltipster-shadow,
 .shadow--medium {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
@@ -34492,22 +34484,6 @@ span.ListNavigation_Ellipsis {
 /* SILK Patterns > ExpandableTable */
 /* SILK Patterns > Separator */
 /* SILK Patterns > Tooltip */
-.tooltip_style {
-  background-color: #fff;
-  border: 1px solid #dadbde;
-  color: #79868a;
-  padding: 6px; }
-
-.InfoTooltipDnD {
-  color: #00b3bd;
-  font-size: 1.332rem;
-  opacity: 0.3;
-  position: absolute;
-  z-index: 1; }
-
-div.DashboardWindow:hover .InfoTooltipDnD {
-  opacity: 1; }
-
 /* TOOLTIP FIX */
 /*------------------------------------------------------------*/
 /* 7.2 SILK Patterns > Controls *******************************/
