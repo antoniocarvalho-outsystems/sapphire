@@ -56,6 +56,11 @@ $font-size-11px: $font-size-tiny;
 			border: none;
 			color: $light-grey;
 
+			&.Not_Valid {
+				border: 1px solid $regular-red;
+				border-left-width: 3px;
+			}
+
 			&:focus {
 				box-shadow: none;
 			}
@@ -63,6 +68,10 @@ $font-size-11px: $font-size-tiny;
 			&::placeholder {
 				color: $sapphire-dark-grey;
 			}
+		}
+
+		.ValidationMessage {
+			position: initial;
 		}
 	}
 
@@ -367,18 +376,18 @@ $font-size-11px: $font-size-tiny;
 	margin: 0;
 }
 
-.ISidebar-content .FieldsSlider input + span.ValidationMessage {
-	background-color: #a55555;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	color: #fff;
-	font-size: $font-size-13px;
-	font-weight: 400;
-	line-height: 14px;
-	padding: 5px;
-	text-align: right;
-	width: fit-content;
-}
+// .ISidebar-content .FieldsSlider input + span.ValidationMessage {
+// 	background-color: #a55555;
+// 	border-bottom-left-radius: 5px;
+// 	border-bottom-right-radius: 5px;
+// 	color: #fff;
+// 	font-size: $font-size-13px;
+// 	font-weight: 400;
+// 	line-height: 14px;
+// 	padding: 5px;
+// 	text-align: right;
+// 	width: fit-content;
+// }
 
 .SidebarMenuItem {
 	color: #fff;

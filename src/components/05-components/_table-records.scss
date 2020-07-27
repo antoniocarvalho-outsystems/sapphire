@@ -13,10 +13,12 @@
 	> tbody tr {
 		td:first-child {
 			border-left: 1px solid $light-grey;
+			padding-left: 16px !important;
 		}
 
 		td:last-child {
 			border-right: 1px solid $light-grey;
+			padding-right: 16px !important;
 		}
 	}
 
@@ -213,16 +215,24 @@
 	.LightGreen {
 		color: $dark-grey;
 	}
-}
 
-.TableRowExpandable {
-	display: none;
-	transition: all 500ms;
-	visibility: hidden;
+	.TableRowExpandable {
+		display: none;
+		transition: all 500ms;
+		visibility: hidden;
 
-	&.open {
-		display: table-row;
-		visibility: visible;
+		&.open {
+			display: table-row;
+			visibility: visible;
+		}
+
+		> td {
+			&,
+			&:first-child,
+			&:last-child {
+				padding: 0 !important;
+			}
+		}
 	}
 }
 
@@ -242,12 +252,13 @@
 			}
 
 			&:last-child {
-				padding-right: 15px;
+				padding-left: 16px;
+				padding-right: 10px !important;
 			}
 
 			&:first-child {
 				padding-left: 0;
-				padding-right: 20px;
+				padding-right: 16px;
 			}
 		}
 
