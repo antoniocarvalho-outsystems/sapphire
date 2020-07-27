@@ -13,14 +13,6 @@
 		window[SapphireWidgets.LayoutBase.widgetId].closeSidebarIframe(duration);
 	};
 
-	var showAppointmentTrigger = function () {
-		window[SapphireWidgets.LayoutBase.widgetId].showAppointmentTrigger();
-	};
-
-	var hideAppointmentTrigger = function () {
-		window[SapphireWidgets.LayoutBase.widgetId].hideAppointmentTrigger();
-	};
-
 	var scrollToElement = function ($element) {
 		var $targetElement = $element;
 
@@ -56,12 +48,6 @@
 		}
 	};
 
-	var popupWindow = function (url, title, win, w, h) {
-		const y = win.top.outerHeight / 2 + win.top.screenY - (h / 2);
-		const x = win.top.outerWidth / 2 + win.top.screenX - (w / 2);
-		return win.open(url, title, `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=${w}, height=${h}, top=${y}, left=${x}`);
-	}
-
 	var LayoutBase = function (config) {
 		var _this = this;
 		this.layoutBaseRedrawTimer = 0;
@@ -89,45 +75,18 @@
 		this.$iframeSidebar.append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>');
 
 		$(function () {
-
 			$('body').addClass('LayoutBase');
-
 			if (_this.isTopWindow) {
 				$('body').css('overflow-y', 'scroll');
 			}
-
-			$('body').on('click', '#remote-appointment-opener', function () {
-				let newWin = window.open('', 'remoteAppointment');
-			});
-
-			$('.ViewStateCounter').on('dblclick', function () {
-				if (!!!localStorage.getItem('RemoteAppointment')) {
-					window.remoteAppointment = SapphireWidgets.LayoutBase.popupWindow('//atc-dev.outsystemsenterprise.com/Sapphirev2_Th/RemoteAppointment.aspx', 'remoteAppointment', window, 300, 200);
-					window.remoteAppointment.focus();
-					localStorage.setItem('RemoteAppointment', 'true');
-				}
-			});
 		});
 
 		$(window).load(function () {
 			$('body').click();
 			$(window).scroll();
-			if (!!localStorage.getItem('RemoteAppointment')) {
-				window.setTimeout(() => {
-					_this.showAppointmentTrigger();
-				}, 300);
-			}
 		});
 
 	};
-
-	LayoutBase.prototype.showAppointmentTrigger = function () {
-		$('.remote-appointment-trigger').addClass('opened');
-	}
-
-	LayoutBase.prototype.hideAppointmentTrigger = function () {
-		$('.remote-appointment-trigger').removeClass('opened');
-	}
 
 	LayoutBase.prototype.setupWindowEvents = function () {
 		var _this = this;
@@ -329,10 +288,7 @@
 		create,
 		closeSidebarIframe,
 		openSidebarIframe,
-		scrollToElement,
-		popupWindow,
-		showAppointmentTrigger,
-		hideAppointmentTrigger
+		scrollToElement
 	};
 
 })(jQuery, window, document, SapphireWidgets);
