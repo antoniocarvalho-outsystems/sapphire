@@ -1,0 +1,125 @@
+.SmallStretchedContainer {
+	background-color: $sapphire-white;
+	border: 1px solid $light-grey;
+	border-bottom: 1px solid $light-grey;
+	border-top: none;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	color: $dark-grey;
+	display: table;
+	min-height: 75px;
+	position: relative;
+	width: 100%;
+
+	.DateContainer {
+		background-color: $light-grey;
+		color: $dark-grey;
+		display: table-cell;
+		font-family: $font-family-latin-bold;
+		font-size: 1.143em;
+		padding: 0 16px;
+		vertical-align: middle;
+	}
+
+	.DateContainer,
+	.StatusContainer {
+		min-width: 100px;
+	}
+
+	.InformationContainer {
+		display: table-cell;
+		padding: 0 16px;
+		vertical-align: middle;
+		width: 100%;
+
+		> div[id*='wtInformation'] {
+			align-items: center;
+			display: flex;
+			> div {
+				flex: 1;
+			}
+		}
+
+		&___Content {
+			display: flex;
+		}
+
+		.InfoContainer {
+			display: flex;
+			flex-direction: column;
+			float: right;
+		}
+
+		.MultiAlignLeft {
+			vertical-align: top;
+		}
+	}
+
+	.StatusContainer {
+		display: table-cell;
+		padding: 0 16px 0 0;
+		text-align: right;
+		vertical-align: middle;
+	}
+
+	.icon-patient,
+	.icon-telephone {
+		color: $mid-dark-grey;
+	}
+}
+
+.SmallStretchedContiner.Dashed {
+	border: 1px dashed $light-grey;
+}
+
+.DateContainer {
+	> div {
+		text-align: center;
+	}
+}
+
+.tablet {
+	.SmallStretchedContainer {
+		border: 1px solid $light-grey;
+
+		.DateContainer {
+			display: block;
+			width: 100%;
+		}
+
+		.InformationContainer {
+			display: inline-block;
+			width: 50%;
+		}
+
+		.StatusContainer {
+			display: inline-block;
+			width: 50%;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.InformationContainer {
+		div {
+			&:nth-child(3) {
+				margin-right: 10px;
+			}
+		}
+
+		> div {
+			margin-left: auto;
+			margin-right: 10px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+	}
+
+	.SmallStretchedContainer {
+		.StatusContainer {
+			padding: 0 0 0 16px;
+
+			text-align: left;
+		}
+	}
+}

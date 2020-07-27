@@ -1,8 +1,9 @@
 .BlankListLine {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
+	border-radius: 4px;
 	display: table;
-	padding: 18px 25px;
+	padding: 16px;
 	width: 100%;
 
 	&.isDismissed {
@@ -16,11 +17,8 @@
 
 	&__infoTitle {
 		font-family: $font-family-latin-bold;
-		font-size: 1.143em;
+		font-size: 1em;
 	}
-
-	// &__infoContent {
-	// }
 
 	&__infoActionBy {
 		color: $regular-gray;

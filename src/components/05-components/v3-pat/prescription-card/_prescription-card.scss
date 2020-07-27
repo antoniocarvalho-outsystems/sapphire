@@ -3,7 +3,7 @@
 	border-radius: 1px;
 	color: $sapphire-color-text-regular;
 	display: table;
-	padding: 15px 25px;
+	padding: 16px;
 
 	&.Critical {
 		border: 1px solid $dark-red;
@@ -148,6 +148,7 @@
 
 	.InteractionText,
 	.PrescriptionText {
+		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
 	}
 
@@ -169,10 +170,13 @@
 .AR,
 .FA {
 	.PrescriptionIcons {
-		border-left: 1px solid rgba(77, 92, 102, 0.4);
 		border-right: 1px solid transparent;
 		padding-left: 20px;
 		padding-right: 0;
+	}
+
+	.PrescriptionCard .ActionsAndTextContent .InteractionText {
+		text-align: left;
 	}
 
 	.MedicationInteractionContainer {

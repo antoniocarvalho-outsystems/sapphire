@@ -18,7 +18,7 @@
 			color: $dark-beige;
 			display: table-cell;
 			height: 100%;
-			padding: 5px 15px;
+			padding: 6px 16px;
 			vertical-align: middle;
 			white-space: nowrap;
 			width: 40px;
@@ -33,12 +33,12 @@
 		display: table-cell;
 		height: 100%;
 		margin-bottom: 0;
-		padding: 5px 15px;
+		padding: 6px 16px;
 	}
 
 	&_Actions {
 		display: table-cell;
-		padding-right: 15px;
+		padding-right: 16px;
 		text-align: right;
 		vertical-align: middle;
 
@@ -46,7 +46,6 @@
 			align-items: center;
 			display: inline-flex;
 			height: 100%;
-			padding: 6px;
 		}
 	}
 }
@@ -63,7 +62,7 @@
 	}
 
 	.Card_Actions {
-		padding-left: 15px;
+		padding-left: 16px;
 		padding-right: 0;
 	}
 

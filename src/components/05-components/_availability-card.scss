@@ -1,6 +1,6 @@
 .AvailabilityCardContainer {
 	border: 1px solid $light-grey;
-	border-radius: 3px;
+	border-radius: 4px;
 	display: flex;
 	min-height: 50px;
 	width: 100%;
@@ -21,7 +21,7 @@
 		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
 		justify-content: center;
-		padding: 5px;
+		padding: 0 16px;
 		width: 55px;
 
 		&.AvailabilityCardLeftRed {
@@ -39,7 +39,7 @@
 		border-radius: 3px;
 		display: flex;
 		flex: 1;
-		padding: 5px 15px;
+		padding: 5px 16px;
 
 		.ExtraProcedure,
 		.AvailabilityCardRightDate {
@@ -88,7 +88,7 @@
 
 			.ScheduleAction {
 				align-items: center;
-				display: flex;
+				display: inline-flex;
 				justify-content: flex-end;
 				min-width: 50px;
 				width: 50px;
@@ -116,7 +116,7 @@
 		.AvailabilityCardLeftContainer {
 			align-items: flex-start;
 			border-right: 1px solid $light-grey;
-			padding-top: 20px;
+			line-height: 50px;
 		}
 
 		.AvailabilityCardRightContainer {

@@ -1,186 +1,183 @@
 @mixin common-card-surgeries-color-style($background: inherit, $color: inherit) {
-  background-color: $background;
+	background-color: $background;
 
-  span {
-    color: $color;
-  }
+	span {
+		color: $color;
+	}
 }
 
 .Card_Surgeries_Container {
-  background-color: $regular-white;
-  border: solid 1px $light-grey;
-  border-radius: 1px;
-  display: table;
-  min-height: 56px;
-  width: 100%;
+	background-color: $regular-white;
+	border: solid 1px $light-grey;
+	border-radius: 1px;
+	display: table;
+	min-height: 56px;
+	width: 100%;
 
-  .Card_Surgeries_Description {
-    display: table-cell;
-    padding: 0 15px;
-    vertical-align: middle;
-    width: 80%;
+	.Card_Surgeries_Description {
+		display: table-cell;
+		padding: 0 16px;
+		vertical-align: middle;
+		width: 80%;
 
-    >div {
-      margin-left: auto;
-      margin-right: 10px;
-    }
-  }
+		> div {
+			margin-left: auto;
+			margin-right: 10px;
+		}
+	}
 
-  .Card_Surgeries_Container__Others {
-    display: flex;
-    justify-content: flex-end;
-  }
+	.Card_Surgeries_Container__Others {
+		display: flex;
+		justify-content: flex-end;
+	}
 
-  .Image_Surgeries_Detail {
-    border-right: solid 1px $light-grey;
-    display: table-cell;
-    height: 100%;
-    min-width: 170px;
-    padding: 5px 15px;
-    vertical-align: middle;
-    white-space: nowrap;
+	.Image_Surgeries_Detail {
+		border-right: solid 1px $light-grey;
+		display: table-cell;
+		height: 100%;
+		min-width: 170px;
+		padding: 6px 16px;
+		vertical-align: middle;
+		white-space: nowrap;
 
-    &.Card_Surgeries_Red {
-      @include common-card-surgeries-color-style($light-red, $dark-red);
-    }
+		&.Card_Surgeries_Red {
+			@include common-card-surgeries-color-style($light-red, $dark-red);
+		}
 
-    &.Card_Surgeries_Brown {
-      @include common-card-surgeries-color-style($regular-beige, $dark-beige);
-    }
+		&.Card_Surgeries_Brown {
+			@include common-card-surgeries-color-style($regular-beige, $dark-beige);
+		}
 
-    &.Card_Surgeries_Green {
-      @include common-card-surgeries-color-style($light-green, $dark-green);
-    }
+		&.Card_Surgeries_Green {
+			@include common-card-surgeries-color-style($light-green, $dark-green);
+		}
 
-    &.Card_Surgeries_Men {
-      @include common-card-surgeries-color-style($light-blue-2, $dark-blue);
-    }
+		&.Card_Surgeries_Men {
+			@include common-card-surgeries-color-style($light-blue-2, $dark-blue);
+		}
 
-    &.Card_Surgeries_Woman {
-      @include common-card-surgeries-color-style($light-pink-2, $dark-pink);
-    }
+		&.Card_Surgeries_Woman {
+			@include common-card-surgeries-color-style($light-pink-2, $dark-pink);
+		}
 
-    &.isEmpty,
-    &.Card_Surgeries_Unidentified {
-      @include common-card-surgeries-color-style($body-color, $dark-blue);
-    }
+		&.isEmpty,
+		&.Card_Surgeries_Unidentified {
+			@include common-card-surgeries-color-style($body-color, $dark-blue);
+		}
 
-    &.SmallCardSurgerie {
-      min-width: 120px;
-      width: 120px;
-    }
-  }
+		&.SmallCardSurgerie {
+			min-width: 120px;
+			width: 120px;
+		}
+	}
 
-  .Actions_Surgeries_Details {
-    align-items: center;
-    display: inline-flex;
-    height: 100%;
-  }
+	.Actions_Surgeries_Details {
+		align-items: center;
+		display: inline-flex;
+		height: 100%;
+	}
 
-  .Icon_Surgeries_Card {
-    margin-left: auto;
-  }
+	.Icon_Surgeries_Card {
+		margin-left: auto;
+	}
 
-  .Title_Surgeries_Card {
-    padding: 0 12px;
-    white-space: normal;
+	.Title_Surgeries_Card {
+		padding: 0 12px;
+		white-space: normal;
 
-    &::first-line {
-      font-family: $font-family-latin-bold;
-    }
+		&::first-line {
+			font-family: $font-family-latin-bold;
+		}
 
-    .CardAll {
-      margin-left: 0;
-      margin-right: 20px;
-    }
-  }
+		.CardAll {
+			margin-left: 0;
+			margin-right: 20px;
+		}
+	}
 
-  .Card_Surgeries_Actions {
-    display: table-cell;
-    padding-right: 10px;
-    text-align: right;
-    vertical-align: middle;
-  }
+	.Card_Surgeries_Actions {
+		display: table-cell;
+		padding-right: 16px;
+		text-align: right;
+		vertical-align: middle;
+	}
 }
 
 .AR,
 .FA {
-  .Card_Surgeries_Description>div {
-    margin-left: 10px;
-    margin-right: auto;
-  }
+	.Card_Surgeries_Description > div {
+		margin-left: 10px;
+		margin-right: auto;
+	}
 
-  .Image_Surgeries_Detail {
-    border-left: solid 1px $light-grey;
-    border-right: 0;
-  }
+	.Image_Surgeries_Detail {
+		border-left: solid 1px $light-grey;
+		border-right: 0;
+	}
 
-  .Icon_Surgeries_Card {
-    margin-left: 10px;
-    margin-right: auto;
-  }
+	.Icon_Surgeries_Card {
+		margin-left: 10px;
+		margin-right: auto;
+	}
 
-  .Card_Surgeries_Actions {
-    padding-left: 10px;
-    padding-right: 0;
-    text-align: left;
-  }
+	.Card_Surgeries_Actions {
+		padding-left: 16px;
+		padding-right: 0;
+		text-align: left;
+	}
 }
 
-
-
-
 .tablet {
-  .Card_Surgeries_Container {
-    display: block;
-  }
+	.Card_Surgeries_Container {
+		display: block;
+	}
 
-  .Card_Surgeries_Description {
-    display: table-cell;
-    width: 100%;
-  }
+	.Card_Surgeries_Description {
+		display: table-cell;
+		width: 100%;
+	}
 }
 
 .phone {
-  .Card_Surgeries_Actions {
-    display: block;
-  }
+	.Card_Surgeries_Actions {
+		display: block;
+	}
 
-  .Card_Surgeries_Description {
-    display: table;
-    text-align: center;
-    width: 100%;
+	.Card_Surgeries_Description {
+		display: table;
+		text-align: center;
+		width: 100%;
 
-    .BadgeClassification {
-      margin-top: 10px;
-    }
+		.BadgeClassification {
+			margin-top: 10px;
+		}
 
-    .iconHorizontal {
-      margin-bottom: 10px;
-      margin-top: 10px;
-    }
-  }
+		.iconHorizontal {
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+	}
 
-  .Actions_Surgeries_Details {
-    display: block;
+	.Actions_Surgeries_Details {
+		display: block;
 
-    &:first-child {
-      border: none;
-    }
-  }
+		&:first-child {
+			border: none;
+		}
+	}
 }
 
 .phone,
 .tablet {
-  .Image_Surgeries_Detail {
-    border-left: transparent;
-    border-right: 0;
-    display: block;
-    width: 100% !important;
-  }
+	.Image_Surgeries_Detail {
+		border-left: transparent;
+		border-right: 0;
+		display: block;
+		width: 100% !important;
+	}
 
-  .others_surgeries_details,
-  .Actions_Surgeries_Details {
-    display: table-cell;
-  }
+	.others_surgeries_details,
+	.Actions_Surgeries_Details {
+		display: table-cell;
+	}
 }
