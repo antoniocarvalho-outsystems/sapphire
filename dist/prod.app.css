@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920029 || Generated: Mon Jul 27 2020 16:46:16 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920030 || Generated: Mon Jul 27 2020 17:42:44 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9439,9 +9439,11 @@ a.Button.IsDefault,
   .TableRecords > tbody > tr:first-child td {
     border-top: 1px solid #d6d6d6; }
   .TableRecords > tbody tr td:first-child {
-    border-left: 1px solid #d6d6d6; }
+    border-left: 1px solid #d6d6d6;
+    padding-left: 16px !important; }
   .TableRecords > tbody tr td:last-child {
-    border-right: 1px solid #d6d6d6; }
+    border-right: 1px solid #d6d6d6;
+    padding-right: 16px !important; }
   .TableRecords.TableRecordsNotes tbody td {
     font-size: 0.857em; }
   .TableRecords.TableRecordsNotes tbody tr:first-child td {
@@ -9551,15 +9553,16 @@ a.Button.IsDefault,
     color: inherit; }
   .TableRecords .LightGreen {
     color: #333333; }
-
-.TableRowExpandable {
-  display: none;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
-  visibility: hidden; }
-  .TableRowExpandable.open {
-    display: table-row;
-    visibility: visible; }
+  .TableRecords .TableRowExpandable {
+    display: none;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    visibility: hidden; }
+    .TableRecords .TableRowExpandable.open {
+      display: table-row;
+      visibility: visible; }
+    .TableRecords .TableRowExpandable > td, .TableRecords .TableRowExpandable > td:first-child, .TableRecords .TableRowExpandable > td:last-child {
+      padding: 0 !important; }
 
 .AR .TableRecords_Header,
 .FA .TableRecords_Header {
@@ -9581,14 +9584,15 @@ a.Button.IsDefault,
 .FA .TableRecords_Header:last-child,
 .FA .TableRecords_OddLine:last-child,
 .FA .TableRecords_EvenLine:last-child {
-  padding-right: 15px; }
+  padding-left: 16px;
+  padding-right: 10px !important; }
 
 .AR .TableRecords_Header:first-child, .AR .TableRecords_OddLine:first-child, .AR .TableRecords_EvenLine:first-child,
 .FA .TableRecords_Header:first-child,
 .FA .TableRecords_OddLine:first-child,
 .FA .TableRecords_EvenLine:first-child {
   padding-left: 0;
-  padding-right: 20px; }
+  padding-right: 16px; }
 
 .AR .TableRecords_OddLine:last-child, .AR .TableRecords_EvenLine:last-child,
 .FA .TableRecords_OddLine:last-child,
@@ -25523,6 +25527,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     background-color: #494f5c;
     border: none;
     color: #d6d6d6; }
+    .ISidebar .ISidebar-content .TextInput.Not_Valid {
+      border: 1px solid #ff3e2d;
+      border-left-width: 3px; }
     .ISidebar .ISidebar-content .TextInput:focus {
       box-shadow: none; }
     .ISidebar .ISidebar-content .TextInput::-webkit-input-placeholder {
@@ -25535,6 +25542,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       color: #858585; }
     .ISidebar .ISidebar-content .TextInput::placeholder {
       color: #858585; }
+  .ISidebar .ISidebar-content .ValidationMessage {
+    position: initial; }
   .ISidebar .DepartmentName {
     color: #d6d6d6;
     font-size: 0.786em;
@@ -25738,20 +25747,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ISidebar .Page.FA .SearchSideBar > .SearchSideBarFields > div.SliderWrapper > div.FieldsSlider.Tab2,
 .Page.AR .SearchSideBar > .SearchSideBarFields > div.SliderWrapper > div.FieldsSlider.Tab2 {
   margin: 0; }
-
-.ISidebar-content .FieldsSlider input + span.ValidationMessage {
-  background-color: #a55555;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  color: #fff;
-  font-size: 0.857em;
-  font-weight: 400;
-  line-height: 14px;
-  padding: 5px;
-  text-align: right;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content; }
 
 .SidebarMenuItem {
   color: #fff;

@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920029 || Generated: Mon Jul 27 2020 16:46:16 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920030 || Generated: Mon Jul 27 2020 17:42:44 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3043,9 +3043,11 @@ div[onclick] {
   .TableRecords > tbody > tr:first-child td {
     border-top: 1px solid #d6d6d6; }
   .TableRecords > tbody tr td:first-child {
-    border-left: 1px solid #d6d6d6; }
+    border-left: 1px solid #d6d6d6;
+    padding-left: 16px !important; }
   .TableRecords > tbody tr td:last-child {
-    border-right: 1px solid #d6d6d6; }
+    border-right: 1px solid #d6d6d6;
+    padding-right: 16px !important; }
   .TableRecords.TableRecordsNotes tbody td {
     font-size: 0.857em; }
   .TableRecords.TableRecordsNotes tbody tr:first-child td {
@@ -3155,15 +3157,16 @@ div[onclick] {
     color: inherit; }
   .TableRecords .LightGreen {
     color: #333333; }
-
-.TableRowExpandable {
-  display: none;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
-  visibility: hidden; }
-  .TableRowExpandable.open {
-    display: table-row;
-    visibility: visible; }
+  .TableRecords .TableRowExpandable {
+    display: none;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    visibility: hidden; }
+    .TableRecords .TableRowExpandable.open {
+      display: table-row;
+      visibility: visible; }
+    .TableRecords .TableRowExpandable > td, .TableRecords .TableRowExpandable > td:first-child, .TableRecords .TableRowExpandable > td:last-child {
+      padding: 0 !important; }
 
 .AR .TableRecords_Header,
 .FA .TableRecords_Header {
@@ -3185,14 +3188,15 @@ div[onclick] {
 .FA .TableRecords_Header:last-child,
 .FA .TableRecords_OddLine:last-child,
 .FA .TableRecords_EvenLine:last-child {
-  padding-right: 15px; }
+  padding-left: 16px;
+  padding-right: 10px !important; }
 
 .AR .TableRecords_Header:first-child, .AR .TableRecords_OddLine:first-child, .AR .TableRecords_EvenLine:first-child,
 .FA .TableRecords_Header:first-child,
 .FA .TableRecords_OddLine:first-child,
 .FA .TableRecords_EvenLine:first-child {
   padding-left: 0;
-  padding-right: 20px; }
+  padding-right: 16px; }
 
 .AR .TableRecords_OddLine:last-child, .AR .TableRecords_EvenLine:last-child,
 .FA .TableRecords_OddLine:last-child,
