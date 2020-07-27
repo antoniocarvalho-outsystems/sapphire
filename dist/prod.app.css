@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920025 || Generated: Fri Jul 24 2020 16:25:04 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920026 || Generated: Mon Jul 27 2020 11:45:37 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7184,14 +7184,14 @@ a.Button.IsDefault,
   background-color: #fffbfb;
   border: 1px solid #b10100;
   border-radius: 4px;
-  padding: 15px 30px; }
+  padding: 16px; }
   .AlertCard.Disabled {
     background-color: #f3f3f3;
     border: 1px solid #858585; }
 
 .AvailabilityCardContainer {
   border: 1px solid #d6d6d6;
-  border-radius: 3px;
+  border-radius: 4px;
   display: -webkit-box;
   display: flex;
   min-height: 50px;
@@ -7211,7 +7211,7 @@ a.Button.IsDefault,
     font-size: 1.143em;
     -webkit-box-pack: center;
             justify-content: center;
-    padding: 5px;
+    padding: 0 16px;
     width: 55px; }
     .AvailabilityCardContainer .AvailabilityCardLeftContainer.AvailabilityCardLeftRed {
       background-color: #fad5d5; }
@@ -7225,7 +7225,7 @@ a.Button.IsDefault,
     display: flex;
     -webkit-box-flex: 1;
             flex: 1;
-    padding: 5px 15px; }
+    padding: 5px 16px; }
     .AvailabilityCardContainer .AvailabilityCardRightContainer .ExtraProcedure,
     .AvailabilityCardContainer .AvailabilityCardRightContainer .AvailabilityCardRightDate {
       display: -webkit-box;
@@ -7265,8 +7265,8 @@ a.Button.IsDefault,
     .AvailabilityCardContainer .AvailabilityCardRightContainer .AvailabilityCardRightDate .ScheduleAction {
       -webkit-box-align: center;
               align-items: center;
-      display: -webkit-box;
-      display: flex;
+      display: -webkit-inline-box;
+      display: inline-flex;
       -webkit-box-pack: end;
               justify-content: flex-end;
       min-width: 50px;
@@ -7284,7 +7284,7 @@ a.Button.IsDefault,
     -webkit-box-align: start;
             align-items: flex-start;
     border-right: 1px solid #d6d6d6;
-    padding-top: 20px; }
+    line-height: 50px; }
   .AvailabilityCardContainer--open .AvailabilityCardRightContainer {
     border-left: none; }
   .AvailabilityCardContainer--open .AvailabilityCardContainer__ExpandableContent {
@@ -7451,7 +7451,7 @@ a.Button.IsDefault,
   width: 100%; }
   .Card_Surgeries_Container .Card_Surgeries_Description {
     display: table-cell;
-    padding: 0 15px;
+    padding: 0 16px;
     vertical-align: middle;
     width: 80%; }
     .Card_Surgeries_Container .Card_Surgeries_Description > div {
@@ -7467,7 +7467,7 @@ a.Button.IsDefault,
     display: table-cell;
     height: 100%;
     min-width: 170px;
-    padding: 5px 15px;
+    padding: 6px 16px;
     vertical-align: middle;
     white-space: nowrap; }
     .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Red {
@@ -7515,7 +7515,7 @@ a.Button.IsDefault,
       margin-right: 20px; }
   .Card_Surgeries_Container .Card_Surgeries_Actions {
     display: table-cell;
-    padding-right: 10px;
+    padding-right: 16px;
     text-align: right;
     vertical-align: middle; }
 
@@ -7536,7 +7536,7 @@ a.Button.IsDefault,
 
 .AR .Card_Surgeries_Actions,
 .FA .Card_Surgeries_Actions {
-  padding-left: 10px;
+  padding-left: 16px;
   padding-right: 0;
   text-align: left; }
 
@@ -8040,7 +8040,7 @@ a.Button.IsDefault,
     color: #928d09;
     display: table-cell;
     height: 100%;
-    padding: 5px 15px;
+    padding: 6px 16px;
     vertical-align: middle;
     white-space: nowrap;
     width: 40px; }
@@ -8051,11 +8051,11 @@ a.Button.IsDefault,
   display: table-cell;
   height: 100%;
   margin-bottom: 0;
-  padding: 5px 15px; }
+  padding: 6px 16px; }
 
 .Card_Actions {
   display: table-cell;
-  padding-right: 15px;
+  padding-right: 16px;
   text-align: right;
   vertical-align: middle; }
   .Card_Actions .Actions_Details {
@@ -8063,8 +8063,7 @@ a.Button.IsDefault,
             align-items: center;
     display: -webkit-inline-box;
     display: inline-flex;
-    height: 100%;
-    padding: 6px; }
+    height: 100%; }
 
 .AR .Card_Description,
 .FA .Card_Description {
@@ -8076,7 +8075,7 @@ a.Button.IsDefault,
 
 .AR .Card_Actions,
 .FA .Card_Actions {
-  padding-left: 15px;
+  padding-left: 16px;
   padding-right: 0; }
 
 .AR .Image_Detail,
@@ -9176,7 +9175,6 @@ a.Button.IsDefault,
 .LayoutBlank .SuperCard,
 .LayoutBase .SuperCard {
   border: 1px solid #d6d6d6;
-  border-radius: 1px;
   color: #333333;
   display: table;
   min-height: 84px;
@@ -9201,62 +9199,62 @@ a.Button.IsDefault,
     .DesignSystem .SuperCard_Left.ExtraTiny,
     .LayoutBlank .SuperCard_Left.ExtraTiny,
     .LayoutBase .SuperCard_Left.ExtraTiny {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 55px; }
     .DesignSystem .SuperCard_Left.Tiny,
     .LayoutBlank .SuperCard_Left.Tiny,
     .LayoutBase .SuperCard_Left.Tiny {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 100px; }
     .DesignSystem .SuperCard_Left.ExtraSmall,
     .LayoutBlank .SuperCard_Left.ExtraSmall,
     .LayoutBase .SuperCard_Left.ExtraSmall {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 150px; }
     .DesignSystem .SuperCard_Left.Small,
     .LayoutBlank .SuperCard_Left.Small,
     .LayoutBase .SuperCard_Left.Small {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 200px; }
     .DesignSystem .SuperCard_Left.SmallMedium,
     .LayoutBlank .SuperCard_Left.SmallMedium,
     .LayoutBase .SuperCard_Left.SmallMedium {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 250px; }
     .DesignSystem .SuperCard_Left.Medium,
     .LayoutBlank .SuperCard_Left.Medium,
     .LayoutBase .SuperCard_Left.Medium {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 300px; }
     .DesignSystem .SuperCard_Left.MediumLarge,
     .LayoutBlank .SuperCard_Left.MediumLarge,
     .LayoutBase .SuperCard_Left.MediumLarge {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 350px; }
     .DesignSystem .SuperCard_Left.Large,
     .LayoutBlank .SuperCard_Left.Large,
     .LayoutBase .SuperCard_Left.Large {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 400px; }
     .DesignSystem .SuperCard_Left.ExtraLarge,
     .LayoutBlank .SuperCard_Left.ExtraLarge,
     .LayoutBase .SuperCard_Left.ExtraLarge {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 450px; }
     .DesignSystem .SuperCard_Left.Gigantic,
     .LayoutBlank .SuperCard_Left.Gigantic,
     .LayoutBase .SuperCard_Left.Gigantic {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 500px; }
     .DesignSystem .SuperCard_Left.ExtraGigantic,
     .LayoutBlank .SuperCard_Left.ExtraGigantic,
     .LayoutBase .SuperCard_Left.ExtraGigantic {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 550px; }
     .DesignSystem .SuperCard_Left.Colossal,
     .LayoutBlank .SuperCard_Left.Colossal,
     .LayoutBase .SuperCard_Left.Colossal {
-      padding: 5px 15px;
+      padding: 6px 16px;
       width: 600px; }
     .DesignSystem .SuperCard_Left.BgWhite,
     .LayoutBlank .SuperCard_Left.BgWhite,
@@ -12847,8 +12845,9 @@ div.Feedback_Message_Info span.lasa-term {
 .BlankListLine {
   background-color: #fff;
   border: 1px solid #d6d6d6;
+  border-radius: 4px;
   display: table;
-  padding: 18px 25px;
+  padding: 16px;
   width: 100%; }
   .BlankListLine.isDismissed {
     background-color: #f3f3f3; }
@@ -12857,7 +12856,7 @@ div.Feedback_Message_Info span.lasa-term {
     vertical-align: middle; }
   .BlankListLine__infoTitle {
     font-family: "LatoBold";
-    font-size: 1.143em; }
+    font-size: 1em; }
   .BlankListLine__infoActionBy {
     color: #858585; }
   .BlankListLine_actions {
@@ -12986,7 +12985,7 @@ div.Feedback_Message_Info span.lasa-term {
 
 .CardBox {
   background: #fff;
-  border-radius: 1px;
+  border-radius: 4px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: -webkit-box;
@@ -13124,15 +13123,16 @@ div.Feedback_Message_Info span.lasa-term {
     background-color: #d6d6d6;
     color: #333333;
     display: table-cell;
+    font-family: "LatoBold";
     font-size: 1.143em;
-    padding: 5px;
+    padding: 0 16px;
     vertical-align: middle; }
   .SmallStretchedContainer .DateContainer,
   .SmallStretchedContainer .StatusContainer {
     min-width: 100px; }
   .SmallStretchedContainer .InformationContainer {
     display: table-cell;
-    padding-left: 20px;
+    padding: 0 16px;
     vertical-align: middle;
     width: 100%; }
     .SmallStretchedContainer .InformationContainer > div[id*='wtInformation'] {
@@ -13157,11 +13157,9 @@ div.Feedback_Message_Info span.lasa-term {
       vertical-align: top; }
   .SmallStretchedContainer .StatusContainer {
     display: table-cell;
+    padding: 0 16px 0 0;
     text-align: right;
     vertical-align: middle; }
-    .SmallStretchedContainer .StatusContainer > div {
-      margin-left: 0;
-      margin-right: 10px; }
   .SmallStretchedContainer .icon-patient,
   .SmallStretchedContainer .icon-telephone {
     color: #5c5c5c; }
@@ -13171,24 +13169,6 @@ div.Feedback_Message_Info span.lasa-term {
 
 .DateContainer > div {
   text-align: center; }
-
-.phone .SmallStretchedContainer {
-  display: grid; }
-  .phone .SmallStretchedContainer .InformationContainer {
-    width: 100%; }
-  .phone .SmallStretchedContainer .StatusContainer {
-    border-top: 1px solid #d6d6d6; }
-  .phone .SmallStretchedContainer .Especialist {
-    padding-left: 0;
-    padding-right: 10px; }
-  .phone .SmallStretchedContainer .DateContainer {
-    display: block;
-    width: 100%; }
-  .phone .SmallStretchedContainer .Expandable_actions > div {
-    display: inline-block; }
-
-.phone .Expandable_actions {
-  padding: 5px; }
 
 .tablet .SmallStretchedContainer {
   border: 1px solid #d6d6d6; }
@@ -13202,43 +13182,21 @@ div.Feedback_Message_Info span.lasa-term {
     display: inline-block;
     width: 50%; }
 
+.AR .InformationContainer div:nth-child(3),
 .FA .InformationContainer div:nth-child(3) {
   margin-right: 10px; }
 
+.AR .InformationContainer > div,
 .FA .InformationContainer > div {
   margin-left: auto;
   margin-right: 10px;
   padding-bottom: 5px;
   padding-top: 5px; }
 
+.AR .SmallStretchedContainer .StatusContainer,
 .FA .SmallStretchedContainer .StatusContainer {
+  padding: 0 0 0 16px;
   text-align: left; }
-  .FA .SmallStretchedContainer .StatusContainer > div {
-    margin-left: 10px;
-    margin-right: auto; }
-
-.AR .InformationContainer div:nth-child(3) {
-  margin-right: 10px; }
-
-.AR .InformationContainer > div {
-  margin-left: auto;
-  margin-right: 10px;
-  padding-bottom: 5px;
-  padding-top: 5px; }
-
-.AR .SmallStretchedContainer .StatusContainer {
-  text-align: left; }
-  .AR .SmallStretchedContainer .StatusContainer > div {
-    margin-left: 10px;
-    margin-right: auto; }
-
-.FA.phone .SmallStrectchedContainer .Especialist {
-  padding-left: 10px;
-  padding-right: 0; }
-
-.AR.phone .SmallStrectchedContainer .Especialist {
-  padding-left: 10px;
-  padding-right: 0; }
 
 .CircleElement {
   -webkit-box-align: center;
@@ -16711,12 +16669,12 @@ body.PanelOpened .daterangepicker {
     margin-right: 10px; }
 
 .ExpiryCard {
-  border-radius: 2px;
+  border-radius: 4px;
   display: inline-block;
   font-size: 1em;
   line-height: 20px;
   min-width: 80px;
-  padding: 2px 8px;
+  padding: 8px;
   text-align: center; }
 
 .ExpiryCard.Expired {
@@ -19146,15 +19104,17 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .MainInteractiveCard {
   background-color: #f3f3f3;
   border: 1px solid #adadad;
-  padding: 12px;
+  border-radius: 4px;
+  padding: 16px;
   position: relative; }
 
 .MainInteractiveCard.isEnabled {
   background-color: #fff;
-  border-color: #00bfa5;
+  border-color: #d6d6d6;
   margin-top: -2px; }
 
 .MainInteractiveCard.isOpen {
+  border-color: #00bfa5;
   margin-top: -2px; }
 
 .MainInteractiveCard:not(.isOpen).ColorLightGreyBorder {
@@ -20608,7 +20568,7 @@ body.PanelById.PanelOpened {
     -webkit-box-direction: normal;
             flex-direction: row;
     flex-wrap: nowrap;
-    padding: 10px;
+    padding: 10px 16px;
     width: 100%; }
   .PersonCard_header.IsExpandable .PersonCard__title,
   .PersonCard_header.IsExpandable .PersonCard__content,
@@ -20633,13 +20593,13 @@ body.PanelById.PanelOpened {
     padding: 0; }
   .PersonCard_header.MediumPadding .PersonCard__content,
   .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
-    padding: 10px; }
+    padding: 10px 16px; }
   .PersonCard_header.MediumPadding .PersonCard__actions {
-    padding: 12px 10px; }
+    padding: 12px 16px; }
   .PersonCard_header.SmallPadding .PersonCard__actions,
   .PersonCard_header.SmallPadding .PersonCard__content,
   .PersonCard_header.SmallPadding .PersonCard__headerLeftInfo {
-    padding: 5px 10px; }
+    padding: 6px 16px; }
   .PersonCard_header .PersonCard__content {
     background-color: #fff;
     display: -webkit-box;
@@ -20651,7 +20611,7 @@ body.PanelById.PanelOpened {
     -webkit-box-direction: normal;
             flex-direction: row;
     flex-wrap: nowrap;
-    padding: 10px; }
+    padding: 10px 16px; }
     .PersonCard_header .PersonCard__content .Patient_Info > div {
       width: 200px; }
     .PersonCard_header .PersonCard__content.MinWidthXSmall > div:first-of-type {
@@ -20706,7 +20666,7 @@ body.PanelById.PanelOpened {
   background-color: #fff;
   display: -webkit-box;
   display: flex;
-  padding: 10px; }
+  padding: 10px 16px; }
   .PersonCard__headerLeftInfo.IsLeftSideHide {
     display: none; }
   .PersonCard__headerLeftInfo.Male {
@@ -20770,6 +20730,8 @@ body.PanelById.PanelOpened {
 .PersonCard__content > div {
   flex-basis: 100%;
   padding-left: 10px; }
+  .PersonCard__content > div:first-of-type {
+    padding-left: 0; }
 
 .PersonCard__title:empty ~ .PersonCard__content > div {
   padding: 0; }
@@ -20777,7 +20739,7 @@ body.PanelById.PanelOpened {
 .PersonCard__actions {
   background-color: #fff;
   max-width: 300px;
-  padding: 10px; }
+  padding: 10px 16px; }
   .PersonCard__actions_width_Medium {
     display: -webkit-box;
     display: flex;
@@ -21051,7 +21013,7 @@ a .PersonCard {
   border-radius: 1px;
   color: #333333;
   display: table;
-  padding: 15px 25px; }
+  padding: 16px; }
   .PrescriptionCard.Critical {
     border: 1px solid #b10100; }
   .PrescriptionCard.High {
@@ -21131,6 +21093,7 @@ a .PersonCard {
     margin-top: 0px; }
   .PrescriptionCard .InteractionText,
   .PrescriptionCard .PrescriptionText {
+    font-family: "LatoBold";
     font-size: 1.143em; }
   .PrescriptionCard .HideDiv {
     visibility: hidden; }
@@ -21143,10 +21106,13 @@ a .PersonCard {
 
 .AR .PrescriptionIcons,
 .FA .PrescriptionIcons {
-  border-left: 1px solid rgba(77, 92, 102, 0.4);
   border-right: 1px solid transparent;
   padding-left: 20px;
   padding-right: 0; }
+
+.AR .PrescriptionCard .ActionsAndTextContent .InteractionText,
+.FA .PrescriptionCard .ActionsAndTextContent .InteractionText {
+  text-align: left; }
 
 .AR .MedicationInteractionContainer,
 .FA .MedicationInteractionContainer {
