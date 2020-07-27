@@ -50,7 +50,7 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 				checkBoxCount = $widgetId
 					.closest('.SearchSD.showFavorite')
 					.find('.SelectSD__multiple > input[type="checkbox"]:checked').length;
-				console.log(checkBoxCount);
+
 				$allListcard = $widgetId.closest('.SearchSD_content');
 
 				if (checkBoxCount > 0) {
@@ -69,7 +69,6 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 						$(this)
 							.find('.SelectSD_contentWrapper')
 							.on('click', function(e) {
-								console.log('click 6 .SelectSD_contentWrapper', e);
 								$(this)
 									.find('.LineActionLINK > a')
 									.click();
@@ -77,7 +76,6 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 						$(this)
 							.find('.SelectSD_actionLink')
 							.on('click', function(e) {
-								console.log('click 5 .SelectSD_actionLink', e);
 								$(this)
 									.find('.LineActionLINK > a')
 									.click();
@@ -88,9 +86,7 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 		};
 
 		if (isMultiple === 'True') {
-			console.log($('.SelectSD__multiple'));
 			$SSDselectId.find('.SelectSD__multiple > input').click(function() {
-				console.log('click 4', this);
 				SSDCheckBoxSelect($SSDselectId);
 			});
 		}

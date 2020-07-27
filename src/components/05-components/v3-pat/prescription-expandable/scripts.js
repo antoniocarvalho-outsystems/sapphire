@@ -92,7 +92,6 @@
 		};
 
 		const ajaxRefresh = function(event) {
-			console.log(event);
 			// remove click events
 			//$('.PrescriptionExpandable_header').off();
 

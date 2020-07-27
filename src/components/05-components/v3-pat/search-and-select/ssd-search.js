@@ -65,7 +65,6 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 			$SSDComponent.find('.SearchSD__cloneWrapper').hide();
 			$SSDComponent.find('.SearchSD__inputWrapper .SearchSD__return').hide();
 
-			console.log($SSDInputElement.val());
 			if ($SSDInputElement.val().trim() === '') {
 				$SSDComponent.find('.SearchSD___remove').hide();
 			}

@@ -24,7 +24,6 @@
 		this.$trigger.addClass(classList);
 		$(function() {
 			// inside a document ready due to sapphire popup binded events
-			// console.log(_this.config.widgetId, _this.$trigger.hasClass('tooltipstered'));
 			if (!_this.$trigger.hasClass('tooltipstered')) {
 				_this.$trigger.tooltipster({
 					arrow: true,
