@@ -22,7 +22,7 @@
 			.SelectableListServerSide {
 				&__arrow {
 					line-height: 16px;
-					transform: rotate(-180deg);
+					transform: rotate(0deg);
 				}
 
 				&___actionNotExpand {
@@ -53,10 +53,8 @@
 		height: 100%;
 		padding: 0 20px;
 		text-align: center;
-		transition-duration: 250ms;
-		transition-property: all;
-		transition-timing-function: linear;
-		vertical-align: middle;
+		transform: rotate(-90deg);
+		transition: transform 0.5s;
 		vertical-align: middle;
 		width: 20px;
 	}
