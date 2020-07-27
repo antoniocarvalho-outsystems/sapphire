@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920030 || Generated: Mon Jul 27 2020 17:42:44 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920031 || Generated: Mon Jul 27 2020 17:59:35 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -18387,7 +18387,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     display: table;
     line-height: 64px;
     min-height: 64px;
-    padding: 0 8px;
+    padding: 0 16px;
     width: 100%; }
   .LineCheck__leftContent {
     font-size: 0.857em;
@@ -18435,7 +18435,11 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     display: -webkit-box;
     display: flex; }
   .LineCheckCard_icon {
-    padding-left: 8px; }
+    padding-left: 16px; }
+  .LineCheckCard_others {
+    padding: 0 16px; }
+  .LineCheckCard_actions {
+    padding-right: 16px; }
 
 .tablet .LineCheckCard_icon {
   padding: 6px;
@@ -18460,13 +18464,17 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 
 .AR .LineCheckCard_actionsContainer,
 .FA .LineCheckCard_actionsContainer {
-  font-size: 1.143em;
   text-align: left; }
 
 .AR .LineCheckCard_icon,
 .FA .LineCheckCard_icon {
   padding-left: 0;
-  padding-right: 8px; }
+  padding-right: 16px; }
+
+.AR .LineCheckCard_actions,
+.FA .LineCheckCard_actions {
+  padding-left: 16px;
+  padding-right: 0; }
 
 .LineContent {
   margin-left: 10px;
@@ -18706,16 +18714,16 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     display: table-cell;
     max-width: 270px;
     min-width: 150px;
-    padding: 5px 10px;
+    padding: 6px 16px;
     vertical-align: middle; }
   .LineElement_main {
     display: table-cell;
-    padding: 5px 10px;
+    padding: 6px 16px;
     vertical-align: middle; }
   .LineElement_actions {
     display: table-cell;
     min-width: 1px;
-    padding: 5px 10px;
+    padding: 6px 16px;
     text-align: right;
     vertical-align: middle;
     white-space: nowrap; }
@@ -18734,10 +18742,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 
 .AR .LineElement_actions,
 .FA .LineElement_actions {
-  display: block;
-  max-width: unset;
-  text-align: left;
-  width: 100%; }
+  text-align: left; }
 
 .LineWarns {
   min-height: 48px; }
