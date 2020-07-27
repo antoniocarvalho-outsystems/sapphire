@@ -1,0 +1,23 @@
+.LayoutBackoffice {
+	.TableRecords > tbody tr td:first-child {
+		border-left: none;
+	}
+
+	.TableRecords > tbody tr td:last-child {
+		border-right: none;
+	}
+
+	.TableRecords_Wrapper .NoResponsive tr.TableRowExpandable.open td,
+	.TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr.TableRowExpandable.open:hover,
+	.TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr.TableRowExpandable.open:hover td {
+		background: none;
+	}
+
+	&.desktop {
+		.TableRecords > tbody > tr:hover,
+		.TableRecords > tbody > tr:hover td,
+		.EditableTable > tbody > tr:hover td {
+			background: none;
+		}
+	}
+}

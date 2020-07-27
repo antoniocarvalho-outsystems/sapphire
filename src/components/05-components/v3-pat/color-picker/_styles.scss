@@ -1,0 +1,72 @@
+.sp-replacer {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 100px;
+	padding: 6px;
+	transition: all 0.1s ease-in;
+
+	&:hover {
+		background-color: $regular-eta;
+		border-color: $regular-alpha;
+	}
+
+	&.sp-active {
+		border-color: $regular-alpha;
+	}
+
+	.sp-preview {
+		border: none;
+		border-radius: 50%;
+		height: 16px;
+		margin-right: 8px;
+		overflow: hidden;
+		width: 16px;
+	}
+
+	.sp-dd {
+		line-height: 12px;
+	}
+}
+
+.sp-container {
+	@include shadow-small;
+
+	background-color: $regular-white;
+	border: none;
+	border-radius: 4px;
+
+	.sp-picker-container {
+		border-left: none;
+
+		.sp-button-container {
+			.sp-cancel {
+				&:hover {
+					color: $regular-beta !important;
+					text-decoration: none;
+				}
+			}
+
+			.sp-choose {
+				background: $regular-alpha;
+				border: none;
+				border-radius: 12px;
+				box-shadow: none;
+				font-family: $font-family-latin-regular;
+				min-height: 24px;
+				padding: 0 12px;
+				transition: all 0.1s ease-in-out;
+
+				&:hover {
+					background: $regular-epsilon;
+					text-shadow: none;
+				}
+			}
+		}
+
+		.sp-hue,
+		.sp-color {
+			border-color: $light-grey;
+			border-radius: 4px;
+		}
+	}
+}
