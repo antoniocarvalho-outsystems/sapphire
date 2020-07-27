@@ -13,6 +13,8 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		var shieldTimeout = config.ShieldTimeout;
 		var $widgetShield = $SSDComponent.find('.SearchSD--shield');
 		var searchTriggerTimer;
+		const $SSDClearButton = $SSDComponent.find('.SearchSD___remove');
+		const $SSDInputElement = $SSDComponent.find('.SearchSD___input input');
 
 		var executeSearch = function() {
 			clearTimeout(searchTriggerTimer);
@@ -62,6 +64,12 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 			$SSDComponent.find('.SearchSD__FavoriteRemove').hide();
 			$SSDComponent.find('.SearchSD__cloneWrapper').hide();
 			$SSDComponent.find('.SearchSD__inputWrapper .SearchSD__return').hide();
+
+			console.log($SSDInputElement.val());
+			if ($SSDInputElement.val().trim() === '') {
+				$SSDComponent.find('.SearchSD___remove').hide();
+			}
+
 			$SSDComponent.removeClass('showFavorite');
 			$SSDComponent.removeClass('showClone');
 		};
@@ -170,7 +178,6 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 			$SSDComponent.removeClass('Open');
 			$SSDComponentContent.slideUp('250');
 			$SSDComponent.find('.selected').removeClass('.selected');
-			$SSDComponent.find('.SearchSD___remove').hide();
 		};
 
 		/*
@@ -348,13 +355,6 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 			debounce(ssdFocus($SSDComponent), 600);
 		});
 
-		// $SSDComponent.find('.SearchSD___input input').select(function() {
-		// 	if ($('.SearchSD___input input').val().length > 0) {
-		// 		ssdClear($SSDComponent);
-		// 		debounce(ssdFocus($SSDComponent), 600);
-		// 	}
-		// });
-
 		$('body').mouseup(function(e) {
 			ClickOut(e, $SSDComponent);
 		});
@@ -367,6 +367,12 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 			.on('keyup', function(e) {
 				if (!e.which != 13) {
 					keyboardEvents(e, $SSDComponent);
+				}
+
+				if ($SSDInputElement.val().trim() === '') {
+					$SSDClearButton.animate({ opacity: 'hide' }, 300);
+				} else {
+					$SSDClearButton.animate({ opacity: 'show' }, 300);
 				}
 			});
 
@@ -426,21 +432,23 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 	});
 };
 // Added to close the select list if we click the prescription Iframe;
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', event => {
 	var rootElement = document.querySelector('body');
-rootElement.addEventListener(
-	'click',
-	function(event) {
-		document.querySelector("iframe[src*='Prescriptions_CW']") && document.querySelector("iframe[src*='Prescriptions_CW']").contentWindow.document.addEventListener("click",(e)=>{
-			e.stopPropagation();
-			document.querySelector(".SearchSD").classList.remove('Open');
-			var allInput=document.querySelector('.SearchSD___input').children;
-			for(const element in allInput){
-				return allInput[element].value!=undefined?allInput[element].value='':null;
-			}
-		});
-	},
-	true
-);
+	rootElement.addEventListener(
+		'click',
+		function(event) {
+			document.querySelector("iframe[src*='Prescriptions_CW']") &&
+				document
+					.querySelector("iframe[src*='Prescriptions_CW']")
+					.contentWindow.document.addEventListener('click', e => {
+						e.stopPropagation();
+						document.querySelector('.SearchSD').classList.remove('Open');
+						var allInput = document.querySelector('.SearchSD___input').children;
+						for (const element in allInput) {
+							return allInput[element].value != undefined ? (allInput[element].value = '') : null;
+						}
+					});
+		},
+		true
+	);
 });
-
