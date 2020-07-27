@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920026 || Generated: Mon Jul 27 2020 12:53:58 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.1.920027 || Generated: Mon Jul 27 2020 14:29:40 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22449,13 +22449,13 @@ div.List-Star {
     border: 1px solid #d6d6d6;
     border-radius: 50%;
     cursor: pointer;
-    display: -webkit-box !important;
-    display: flex !important;
+    display: -webkit-box;
+    display: flex;
     height: 28px;
     -webkit-box-pack: center;
             justify-content: center;
     position: absolute;
-    right: 5px;
+    right: 6px;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -22495,7 +22495,7 @@ div.List-Star {
     .SearchSD.hasClone .SearchSD__cloneWrapper:before {
       color: #00bfa5;
       content: '\e615';
-      font-family: 'Sapphire-Icon-Font';
+      font-family: "Sapphire-Icon-Font";
       font-size: 1.429em;
       font-style: normal;
       font-variant: normal;
@@ -22576,7 +22576,7 @@ div.List-Star {
       text-align: center;
       text-decoration: none;
       vertical-align: middle;
-      width: 48px; }
+      width: 64px; }
     .SearchSD .SearchSD_search .SearchSD__inputWrapper {
       display: table-cell;
       position: relative;
@@ -22603,39 +22603,33 @@ div.List-Star {
             box-shadow: none;
             font-size: 1.143em;
             height: 100%;
-            padding: 0 50px;
+            padding: 0 40px 0 64px;
             width: 95%; }
             .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']::-webkit-input-placeholder {
               color: #adadad;
               font-family: "LatoRegular";
-              font-size: 1em;
-              font-style: italic; }
+              font-size: 1em; }
             .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']::-moz-placeholder {
               color: #adadad;
               font-family: "LatoRegular";
-              font-size: 1em;
-              font-style: italic; }
+              font-size: 1em; }
             .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']:-ms-input-placeholder {
               color: #adadad;
               font-family: "LatoRegular";
-              font-size: 1em;
-              font-style: italic; }
+              font-size: 1em; }
             .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']::-ms-input-placeholder {
               color: #adadad;
               font-family: "LatoRegular";
-              font-size: 1em;
-              font-style: italic; }
+              font-size: 1em; }
             .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']::placeholder {
               color: #adadad;
               font-family: "LatoRegular";
-              font-size: 1em;
-              font-style: italic; }
+              font-size: 1em; }
             .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']:hover, .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']:focus, .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']:focus {
               background-color: #ffffff; }
           .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input:before {
             -webkit-box-align: center;
                     align-items: center;
-            align-items: center;
             color: #858585;
             content: '\e690';
             display: -webkit-box;
@@ -22646,7 +22640,7 @@ div.List-Star {
             font-variant: normal;
             font-weight: normal;
             height: 100%;
-            padding-right: 20px;
+            padding-right: 16px;
             pointer-events: none;
             position: absolute;
             text-transform: none;
@@ -22856,8 +22850,19 @@ div.List-Star {
 .FA .SearchSD .SearchSD_search .SearchSD_search_favoriteLink {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 23px;
+  border-left: 1px solid #d6d6d6;
+  border-right: none;
   border-top-left-radius: 0;
   border-top-right-radius: 23px; }
+
+.AR .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text'],
+.FA .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text'] {
+  padding: 0 64px 0 40px; }
+
+.AR .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input:before,
+.FA .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input:before {
+  padding-left: 16px;
+  padding-right: 0; }
 
 .AR .SearchSD .SearchSD__inputWrapper,
 .FA .SearchSD .SearchSD__inputWrapper {
@@ -22869,11 +22874,6 @@ div.List-Star {
 .FA .SearchSD___input input[type='text']:focus {
   border: none !important;
   box-shadow: none !important; }
-
-.AR .SearchSD___input:before,
-.FA .SearchSD___input:before {
-  padding-left: 10px;
-  padding-right: 0; }
 
 .AR .SearchSD.Open .SearchSD___remove,
 .FA .SearchSD.Open .SearchSD___remove {
@@ -22897,7 +22897,7 @@ div.List-Star {
     padding: 16px 0;
     text-align: center;
     vertical-align: middle;
-    width: 48px; }
+    width: 64px; }
     .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper {
       height: 100%;
       width: 100%; }
@@ -22911,7 +22911,7 @@ div.List-Star {
         color: #00bfa5; }
   .SelectSD .SelectSD_contentWrapper {
     display: table-cell;
-    padding: 5px 16px;
+    padding-right: 16px;
     text-align: left;
     vertical-align: middle; }
     .SelectSD .SelectSD_contentWrapper .SelectSD__contentTitle {
@@ -22962,14 +22962,15 @@ div.List-Star {
       width: 100%; }
       .SelectSD .SelectSD_actionLink .SelectSD__action .icon {
         background-color: #ffffff;
-        border: 1px solid #00bfa5;
-        border-radius: 2px;
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+        border: 1px solid #d6d6d6;
+        border-radius: 4px;
         box-sizing: border-box;
         color: #00bfa5;
         text-align: center; }
         .SelectSD .SelectSD_actionLink .SelectSD__action .icon::before {
           position: relative; }
+        .SelectSD .SelectSD_actionLink .SelectSD__action .icon:hover {
+          border-color: #00bfa5; }
     .SelectSD .SelectSD_actionLink:focus .SelectSD__action .icon {
       border: none;
       box-shadow: inset 0px 0px 0px 1px #009884, 0px 0px 8px 0px #009884; }
@@ -22979,6 +22980,8 @@ div.List-Star {
 /*AR and FA*/
 .FA .SelectSD_contentWrapper,
 .AR .SelectSD_contentWrapper {
+  padding-left: 16px;
+  padding-right: 0;
   text-align: right; }
   .FA .SelectSD_contentWrapper .SelectSD__contentTitle,
   .AR .SelectSD_contentWrapper .SelectSD__contentTitle {

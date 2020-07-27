@@ -1,4 +1,4 @@
-/*! prod.styleguide.js || Version: 5.1.920026 || Generated: Mon Jul 27 2020 12:53:58 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.styleguide.js || Version: 5.1.920027 || Generated: Mon Jul 27 2020 14:29:40 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
