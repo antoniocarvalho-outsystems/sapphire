@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920027 || Generated: Mon Jul 27 2020 14:29:40 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920028 || Generated: Mon Jul 27 2020 15:31:39 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9141,8 +9141,8 @@ a.Button.IsDefault,
         -webkit-box-pack: center;
                 justify-content: center;
         text-align: center;
-        -webkit-transform: rotate(180deg);
-                transform: rotate(180deg);
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
         width: 22px;
         z-index: 1;
         font-size: 0.857em; }
@@ -13530,6 +13530,10 @@ div.CircledArrow {
     margin-left: -11px;
     margin-top: 0;
     position: absolute;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     width: 22px; }
     .DesignSystem .CompLine__expandIcon.Heading2,
     .LayoutPopup .CompLine__expandIcon.Heading2,
@@ -13567,8 +13571,8 @@ div.CircledArrow {
       -webkit-box-pack: center;
               justify-content: center;
       text-align: center;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
       width: 22px;
       z-index: 1; }
       .DesignSystem .CompLine__pointerIcon span:before,
@@ -13724,8 +13728,8 @@ div.CircledArrow {
   .LayoutPopup .CompLine .CompLineExpandable.expanded .CompLine__expandIcon,
   .LayoutBlank .CompLine .CompLineExpandable.expanded .CompLine__expandIcon,
   .LayoutBase .CompLine .CompLineExpandable.expanded .CompLine__expandIcon {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg); }
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
   .DesignSystem .CompLine .CompLineExpandable.expanded .CompLine_headLine,
   .LayoutPopup .CompLine .CompLineExpandable.expanded .CompLine_headLine,
   .LayoutBlank .CompLine .CompLineExpandable.expanded .CompLine_headLine,
@@ -16238,8 +16242,8 @@ body.PanelOpened .daterangepicker {
   margin-bottom: 10px; }
   .ExpandableGroup .ExpandableGroupItem.isOpen .ExpandableGroupItem-header:before {
     top: 2px;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
   .ExpandableGroup .ExpandableGroupItem.isOpen .ExpandableGroupItem-content {
     display: block; }
   .ExpandableGroup .ExpandableGroupItem-header {
@@ -16248,17 +16252,21 @@ body.PanelOpened .daterangepicker {
     position: relative; }
     .ExpandableGroup .ExpandableGroupItem-header:before {
       color: #009884;
-      content: '\e610';
+      content: '\e69d';
       font-family: "Sapphire-Icon-Font";
       font-size: 1rem;
       left: 0;
-      position: absolute; }
+      position: absolute;
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+      transition: transform 0.5s, -webkit-transform 0.5s; }
   .ExpandableGroup .ExpandableGroupItem-content {
     display: none; }
 
 .ExpandableLink--expanded .ExpandableLink__Icon {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg); }
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
 
 .ExpandableLink--expanded .ExpandableLink__Content {
   max-height: 9999px;
@@ -16309,8 +16317,8 @@ body.PanelOpened .daterangepicker {
     -webkit-box-pack: center;
             justify-content: center;
     text-align: center;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
     width: 20px;
     z-index: 1; }
     .ExpandableLink__Icon .icon:before {
@@ -16391,12 +16399,12 @@ body.PanelOpened .daterangepicker {
     padding: 0;
     position: relative; }
     .ExpandableServerSide.inverted.Secondary .ExpandableServerSide__arrow {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg); }
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
       .ExpandableServerSide.inverted.Secondary .ExpandableServerSide__arrow.open {
         line-height: 14px;
-        -webkit-transform: rotate(180deg);
-                transform: rotate(180deg); }
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg); }
     .ExpandableServerSide.inverted.Secondary .ExpandableServerSide__link {
       color: #00bfa5;
       font-size: 14px;
@@ -16464,12 +16472,18 @@ body.PanelOpened .daterangepicker {
     display: table-cell;
     padding: 10px;
     text-align: center;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     vertical-align: middle;
     width: 50px; }
     .ExpandableServerSide__arrow.open {
       display: table-cell;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
       vertical-align: middle; }
     .ExpandableServerSide__arrow .icon {
       cursor: pointer; }
@@ -16496,14 +16510,16 @@ body.PanelOpened .daterangepicker {
     display: -webkit-inline-box;
     display: inline-flex;
     margin: 0 10px;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     vertical-align: middle; }
     .ExpandableSmaller__headerIcon.HeaderIconReverse {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg); }
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
     .ExpandableSmaller__headerIcon .icon {
       border-bottom: 5px solid #009884;
       border-left: 5px solid transparent;
@@ -17488,8 +17504,8 @@ div.Toolbar {
     -webkit-box-pack: center;
             justify-content: center;
     text-align: center;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
     width: 22px;
     z-index: 1;
     background-color: #fff;
@@ -17518,8 +17534,8 @@ div.Toolbar {
     -webkit-box-pack: center;
             justify-content: center;
     text-align: center;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
     width: 22px;
     z-index: 1;
     background-color: #fff;
@@ -18479,10 +18495,10 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   margin-top: 0;
   padding: 0;
   position: absolute;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   width: 22px; }
 
 .LineDetailsExpandBox div.ExpandableHeader___expandableIcon {
@@ -18510,8 +18526,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     -webkit-box-pack: center;
             justify-content: center;
     text-align: center;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
     width: 22px;
     z-index: 1; }
     .LineDetailsExpandBox div.ExpandableHeader___expandableIcon span:before {
@@ -18529,8 +18545,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .LineDetailsExpandBox div.ExpandableLink--expanded > .ExpandableLink__Content {
     display: block; }
   .LineDetailsExpandBox div.ExpandableLink--expanded div.ExpandableHeader .ExpandableHeader__iconWrapper {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
   .LineDetailsExpandBox div.ExpandableLink__Header {
     background-color: #f3f3f3;
     cursor: default;
@@ -18784,8 +18800,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       border-top: 1px solid #00bfa5; }
       .SelectableListServerSide_selectList.Expanded .SelectableListServerSide__arrow {
         line-height: 16px;
-        -webkit-transform: rotate(-180deg);
-                transform: rotate(-180deg); }
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg); }
       .SelectableListServerSide_selectList.Expanded .SelectableListServerSide___actionNotExpand {
         display: none; }
       .SelectableListServerSide_selectList.Expanded .SelectableListServerSide___actionExpand {
@@ -18803,13 +18819,12 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     height: 100%;
     padding: 0 20px;
     text-align: center;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-timing-function: linear;
-            transition-timing-function: linear;
-    vertical-align: middle;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     vertical-align: middle;
     width: 20px; }
   .SelectableListServerSide__details {
@@ -21108,8 +21123,8 @@ a .PersonCard {
     padding: 20px 25px; }
 
 .SectionPrescriptionExpandableArea.expanded .SectionExpandable__icon .PrescriptionExpandable_header__IconDiv .icon {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg); }
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 .SectionPrescriptionExpandableArea.autoheight .PrescriptionExpandable_content {
   display: block;
@@ -21230,14 +21245,15 @@ a .PersonCard {
     -webkit-box-pack: center;
             justify-content: center;
     text-align: center;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
     width: 20px;
     z-index: 1;
     margin-left: 20px;
-    transform: rotate(180deg);
-    -webkit-transition: all 500ms ease-in;
-    transition: all 500ms ease-in; }
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
     .SectionPrescriptionExpandableArea .SectionExpandable__icon .PrescriptionExpandable_header__IconDiv .icon:before {
       color: #ff3e2d;
       content: '\e611';
@@ -23294,8 +23310,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .SectionExpandableCustom.expanded .SectionExpandable_headerCustom .SectionExpandable___icon,
 .SectionExpandableCustom.expanded .SectionExpandable_headerCustom .SectionExpandable__icon .fa {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
 
@@ -23341,12 +23357,12 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     -webkit-box-pack: center;
             justify-content: center;
     text-align: center;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
     width: 22px;
     z-index: 1;
-    -webkit-transform: rotate(0) scale(0.85);
-            transform: rotate(0) scale(0.85); }
+    -webkit-transform: rotate(90deg) scale(0.85);
+            transform: rotate(90deg) scale(0.85); }
     .SectionExpandableCustom .SectionExpandable___icon span:before {
       color: #009884;
       content: '\e611';
@@ -23374,8 +23390,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     transition: transform 0.5s, -webkit-transform 0.5s; }
   .SectionExpandableCustom .SectionExpandable_headerCustom .SectionExpandable___icon,
   .SectionExpandableCustom .SectionExpandable_headerCustom .SectionExpandable__icon .fa {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
 
@@ -23420,8 +23434,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .SectionExpandableInside {
   background-color: #fff; }
   .SectionExpandableInside.expanded .ExapandablePlaceholder.HeaderIcon {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     position: relative; }
@@ -23452,8 +23466,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
     .SectionExpandableInside_header .HeaderIcon.closed {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
   .SectionExpandableInside .RightAllPlaceDiv {
@@ -23468,8 +23482,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     font-size: 1.071em;
     margin-right: 10px; }
     .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
       cursor: pointer;
@@ -24410,8 +24424,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       -webkit-box-pack: center;
               justify-content: center;
       text-align: center;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
       width: 22px;
       z-index: 1;
       font-size: 0.857em;
@@ -29699,13 +29713,17 @@ ul.os-internal-ui-autocomplete {
   cursor: pointer;
   display: table-cell;
   text-align: center;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   vertical-align: middle;
   width: 40px; }
   .SessionList__Icon.Rotation {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
 
 .SessionList__Number {
   color: #333333;
