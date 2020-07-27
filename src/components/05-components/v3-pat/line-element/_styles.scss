@@ -17,20 +17,20 @@
 		display: table-cell;
 		max-width: 270px;
 		min-width: 150px;
-		padding: 5px 10px;
+		padding: 6px 16px;
 		vertical-align: middle;
 	}
 
 	&_main {
 		display: table-cell;
-		padding: 5px 10px;
+		padding: 6px 16px;
 		vertical-align: middle;
 	}
 
 	&_actions {
 		display: table-cell;
 		min-width: 1px;
-		padding: 5px 10px;
+		padding: 6px 16px;
 		text-align: right;
 		vertical-align: middle;
 		white-space: nowrap;
@@ -62,10 +62,7 @@
 .FA {
 	.LineElement {
 		&_actions {
-			display: block;
-			max-width: unset;
 			text-align: left;
-			width: 100%;
 		}
 	}
 }
