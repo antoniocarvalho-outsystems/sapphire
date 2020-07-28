@@ -22,10 +22,10 @@ $font-size-8px: 0.5714em;
 		.SelectSD__starLink {
 			color: $light-grey;
 			display: table-cell;
-			padding: 16px 0;
+			padding: 16px;
 			text-align: center;
 			vertical-align: middle;
-			width: 64px;
+			width: 32px;
 
 			.SelectSD__starWrapper {
 				height: 100%;
@@ -58,7 +58,7 @@ $font-size-8px: 0.5714em;
 
 	.SelectSD_contentWrapper {
 		display: table-cell;
-		padding-right: 16px;
+		padding: 0 16px;
 		text-align: left;
 		vertical-align: middle;
 
@@ -175,8 +175,6 @@ $font-size-8px: 0.5714em;
 .FA,
 .AR {
 	.SelectSD_contentWrapper {
-		padding-left: 16px;
-		padding-right: 0;
 		text-align: right;
 
 		.SelectSD__contentTitle {

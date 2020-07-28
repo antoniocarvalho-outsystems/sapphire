@@ -215,7 +215,7 @@
 			text-align: center;
 			text-decoration: none;
 			vertical-align: middle;
-			width: 64px;
+			width: 52px;
 		}
 
 		.SearchSD__inputWrapper {
@@ -249,7 +249,7 @@
 						box-shadow: none;
 						font-size: $font-size-heading3;
 						height: 100%;
-						padding: 0 40px 0 64px;
+						padding: 0 40px 0 67px;
 						width: 95%;
 
 						&::placeholder {
@@ -547,7 +547,7 @@
 
 			.SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input {
 				input[type='text'] {
-					padding: 0 64px 0 40px;
+					padding: 0 67px 0 40px;
 				}
 
 				&:before {

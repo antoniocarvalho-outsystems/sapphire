@@ -80,7 +80,7 @@
 				const $closeButton = window.parent.$('.os-internal-ui-dialog-titlebar-close');
 
 				$closeButton.removeAttr('href');
-				$closeButton.off('click').on('click', () => window.top._iframePopup.Popup_Window_Close());
+				$closeButton.off('click').on('click', () => window.top._iframePopup.SapphireWidgets.SapphirePopup.close());
 			}
 		}
 
