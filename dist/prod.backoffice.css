@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920033 || Generated: Tue Jul 28 2020 15:24:19 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920034 || Generated: Tue Jul 28 2020 16:29:38 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -1133,7 +1133,7 @@ a.Button.Warning:before {
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  margin-right: 0.8333rem;
+  margin-right: 0.5715rem;
   speak: none;
   text-transform: none;
   vertical-align: top; }
@@ -2547,7 +2547,7 @@ a.Button.ArrowDrop:before {
 .FA a.Button.View:before,
 .FA a.Button.WristBand:before,
 .FA a.Button.Warning:before {
-  margin-left: 10px;
+  margin-left: 0.5715rem;
   margin-right: auto; }
 
 .FA a.Button.Next:before,
@@ -3947,7 +3947,7 @@ div.ui-timepicker-container {
     border-left: 5px solid #fff;
     border-right: 5px solid #fff; }
   div.ui-timepicker-container ::-webkit-scrollbar-thumb {
-    border: 5px solid #00bfa5;
+    border: 5px solid #d6d6d6;
     border-radius: 4px; }
   div.ui-timepicker-container .ui-state-hover {
     background-color: #f2fffd;
@@ -4831,27 +4831,6 @@ body.PanelById.PanelOpened {
     border: none !important;
     box-shadow: none !important; }
 
-.LayoutBlank .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
-.LayoutBase .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
-.LayoutPopup .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
-.LayoutBackoffice .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
-.DesignSystem .select2-container--default .select2-search.select2-search--dropdown .select2-search__field {
-  background-color: #ffffff;
-  border: none; }
-
-.LayoutBlank .select2-container--default .select2-search.select2-search--dropdown:after,
-.LayoutBase .select2-container--default .select2-search.select2-search--dropdown:after,
-.LayoutPopup .select2-container--default .select2-search.select2-search--dropdown:after,
-.LayoutBackoffice .select2-container--default .select2-search.select2-search--dropdown:after,
-.DesignSystem .select2-container--default .select2-search.select2-search--dropdown:after {
-  color: #858585;
-  content: '\e690';
-  font-family: 'Sapphire-Icon-Font';
-  font-size: 1.143em;
-  position: absolute;
-  right: 20px;
-  top: 11px; }
-
 .select2-container .select2-dropdown {
   border: 1px solid #d6d6d6;
   border-radius: 4px; }
@@ -4863,7 +4842,18 @@ body.PanelById.PanelOpened {
     padding: 8px; }
     .select2-container .select2-dropdown .select2-search .select2-search__field {
       border: 1px solid #00bfa5;
-      border-radius: 100px; }
+      border-radius: 100px;
+      padding: 0 38px 0 12px !important; }
+  .select2-container .select2-dropdown .select2-search.select2-search--dropdown:after {
+    color: #adadad;
+    content: '\e690';
+    font-family: "Sapphire-Icon-Font";
+    font-size: 1.143em;
+    position: absolute;
+    right: 22px;
+    top: 14px;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg); }
   .select2-container .select2-dropdown .select2-results .select2-results__options li.select2-results__option {
     border-bottom: none;
     padding: 8px; }
@@ -4883,7 +4873,7 @@ body.PanelById.PanelOpened {
   width: 4px; }
 
 .select2-results .select2-results__options::-webkit-scrollbar-thumb {
-  border: 5px solid #00bfa5;
+  border: 5px solid #d6d6d6;
   border-radius: 5px; }
 
 .select2-results .select2-results__options::-webkit-scrollbar-thumb {
@@ -4974,6 +4964,18 @@ body.PanelById.PanelOpened {
   margin-left: 10px;
   margin-right: 0;
   padding: 5px 5px 5px 36px; }
+
+.AR .select2-container .select2-dropdown .select2-search.select2-search--dropdown:after,
+.FA .select2-container .select2-dropdown .select2-search.select2-search--dropdown:after {
+  left: 22px;
+  right: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  width: 20px; }
+
+.AR .select2-container .select2-dropdown .select2-search .select2-search__field,
+.FA .select2-container .select2-dropdown .select2-search .select2-search__field {
+  padding: 0 12px 0 38px !important; }
 
 .AR .select2-selection,
 .FA .select2-selection {
@@ -5074,7 +5076,7 @@ body.PanelById.PanelOpened {
     height: 7px;
     width: 7px; }
   .Scrollable::-webkit-scrollbar-thumb {
-    border: 5px solid #00bfa5;
+    border: 5px solid #d6d6d6;
     border-radius: 4px; }
   .Scrollable::before {
     content: '';

@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920033 || Generated: Tue Jul 28 2020 15:24:19 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920034 || Generated: Tue Jul 28 2020 16:29:38 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -1405,7 +1405,7 @@ a.Button.Warning:before,
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  margin-right: 0.8333rem;
+  margin-right: 0.5715rem;
   speak: none;
   text-transform: none;
   vertical-align: top; }
@@ -4434,7 +4434,7 @@ a.Button.ArrowDrop:before,
 .FA a.Button.Warning:before,
 .FA .DropZoneContainer .row .Warning.Button:before,
 .DropZoneContainer .row .FA .Warning.Button:before {
-  margin-left: 10px;
+  margin-left: 0.5715rem;
   margin-right: auto; }
 
 .FA a.Button.Next:before, .FA .DropZoneContainer .row .Next.Button:before, .DropZoneContainer .row .FA .Next.Button:before,
@@ -4881,7 +4881,7 @@ textarea {
     height: 7px;
     width: 7px; }
   textarea::-webkit-scrollbar-thumb {
-    border: 5px solid #00bfa5;
+    border: 5px solid #d6d6d6;
     border-radius: 4px; }
 
 .AR select.Mandatory,
@@ -7195,6 +7195,7 @@ a.Button.IsDefault,
   display: -webkit-box;
   display: flex;
   min-height: 50px;
+  overflow: hidden;
   width: 100%; }
   .AvailabilityCardContainer.AvailabilityCardContainer__bgColor {
     background-color: #d6d6d6; }
@@ -8323,7 +8324,7 @@ a.Button.IsDefault,
       height: 7px;
       width: 7px; }
     .Page .LineTimeLine__content .ExpandableLink__Content::-webkit-scrollbar-thumb {
-      border: 5px solid #00bfa5;
+      border: 5px solid #d6d6d6;
       border-radius: 4px; }
   .Page .LineTimeLine__content .ExpandableLink__Icon {
     padding: 16px 0; }
@@ -10443,10 +10444,6 @@ a.Button.IsDefault,
   height: 60px;
   padding-left: 60px; }
   .LayoutBase--sideMenu.LayoutBase--withTabs .LayoutBase-MainContent .FullScreenTabsWrapper .FullScreenTabsWrapper_Container.Dashboard .TabWrapper {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex;
     height: 55px;
     padding: 0 30px; }
     .LayoutBase--sideMenu.LayoutBase--withTabs .LayoutBase-MainContent .FullScreenTabsWrapper .FullScreenTabsWrapper_Container.Dashboard .TabWrapper_tab {
@@ -10664,7 +10661,7 @@ html .Page .PatientDetailsLayout {
     height: 7px;
     width: 7px; }
   .LayoutPopup__body__content::-webkit-scrollbar-thumb {
-    border: 5px solid #00bfa5;
+    border: 5px solid #d6d6d6;
     border-radius: 4px; }
 
 .LayoutPopup__footer {
@@ -13919,7 +13916,7 @@ div.CircledArrow {
   width: 7px; }
 
 .country-list::-webkit-scrollbar-thumb {
-  border: 5px solid #00bfa5;
+  border: 5px solid #d6d6d6;
   border-radius: 4px; }
 
 .AR .intl-tel-input.allow-dropdown .flag-container, .AR .intl-tel-input.separate-dial-code .flag-container,
@@ -14024,7 +14021,7 @@ div.CircledArrow {
     height: 10px;
     width: 10px; }
   .DataTable .dataTables_wrapper .dataTables_scrollBody::-webkit-scrollbar-thumb {
-    border: 5px solid #00bfa5;
+    border: 5px solid #d6d6d6;
     border-radius: 2px; }
 
 .DateNavigationContainer {
@@ -14906,6 +14903,7 @@ body.PanelOpened .daterangepicker {
     width: 100%; }
   .DragDrop-area .PersonCard .PersonCard_header {
     border-radius: 4px;
+    overflow: hidden;
     padding-right: 15px; }
 
 .DragDrop-droppable {
@@ -15542,12 +15540,6 @@ body.PanelOpened .daterangepicker {
 .LayoutBase .select2-container--default .select2-search--dropdown .select2-search__field,
 .LayoutPopup .select2-container--default .select2-search--dropdown .select2-search__field {
   border: 1px solid #aaa; }
-  .Page .select2-container--default .select2-search--dropdown .select2-search__field:focus,
-  .LayoutBlank .select2-container--default .select2-search--dropdown .select2-search__field:focus,
-  .LayoutBase .select2-container--default .select2-search--dropdown .select2-search__field:focus,
-  .LayoutPopup .select2-container--default .select2-search--dropdown .select2-search__field:focus {
-    border-color: rgba(82, 168, 236, 0.8);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6); }
 
 .Page .select2-container--default .select2-search--inline .select2-search__field,
 .LayoutBlank .select2-container--default .select2-search--inline .select2-search__field,
@@ -15946,13 +15938,13 @@ body.PanelOpened .daterangepicker {
   font-size: 1.143em;
   margin-right: 10px; }
 
-.select2-dropdown.Select2[dir=rtl] input[type=search],
-.select2-dropdown.tagCustom[dir=rtl] input[type=search] {
+.select2-dropdown.Select2[dir='rtl'] input[type='search'],
+.select2-dropdown.tagCustom[dir='rtl'] input[type='search'] {
   padding-left: 0 !important;
   padding-right: 12px !important; }
 
-.select2-dropdown.Select2[dir=rtl] .select2-search--dropdown:after,
-.select2-dropdown.tagCustom[dir=rtl] .select2-search--dropdown:after {
+.select2-dropdown.Select2[dir='rtl'] .select2-search--dropdown:after,
+.select2-dropdown.tagCustom[dir='rtl'] .select2-search--dropdown:after {
   left: 20px;
   right: unset; }
 
@@ -16269,8 +16261,8 @@ body.PanelOpened .daterangepicker {
   margin-bottom: 10px; }
   .ExpandableGroup .ExpandableGroupItem.isOpen .ExpandableGroupItem-header:before {
     top: 2px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg); }
   .ExpandableGroup .ExpandableGroupItem.isOpen .ExpandableGroupItem-content {
     display: block; }
   .ExpandableGroup .ExpandableGroupItem-header {
@@ -16279,7 +16271,7 @@ body.PanelOpened .daterangepicker {
     position: relative; }
     .ExpandableGroup .ExpandableGroupItem-header:before {
       color: #009884;
-      content: '\e69d';
+      content: '\e610';
       font-family: "Sapphire-Icon-Font";
       font-size: 1rem;
       left: 0;
@@ -16292,8 +16284,8 @@ body.PanelOpened .daterangepicker {
     display: none; }
 
 .ExpandableLink--expanded .ExpandableLink__Icon {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg); }
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 .ExpandableLink--expanded .ExpandableLink__Content {
   max-height: 9999px;
@@ -16344,8 +16336,8 @@ body.PanelOpened .daterangepicker {
     -webkit-box-pack: center;
             justify-content: center;
     text-align: center;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
     width: 20px;
     z-index: 1; }
     .ExpandableLink__Icon .icon:before {
@@ -16426,8 +16418,8 @@ body.PanelOpened .daterangepicker {
     padding: 0;
     position: relative; }
     .ExpandableServerSide.inverted.Secondary .ExpandableServerSide__arrow {
-      -webkit-transform: rotate(-90deg);
-              transform: rotate(-90deg); }
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
       .ExpandableServerSide.inverted.Secondary .ExpandableServerSide__arrow.open {
         line-height: 14px;
         -webkit-transform: rotate(0deg);
@@ -16472,8 +16464,8 @@ body.PanelOpened .daterangepicker {
       font-weight: 700;
       -webkit-box-ordinal-group: 2;
               order: 1;
-      -webkit-transform: rotate(-90deg);
-              transform: rotate(-90deg); }
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
       .ExpandableServerSide.inverted .ExpandableServerSide__arrow.open {
         -webkit-transform: rotate(0deg);
                 transform: rotate(0deg); }
@@ -16499,8 +16491,8 @@ body.PanelOpened .daterangepicker {
     display: table-cell;
     padding: 10px;
     text-align: center;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
@@ -16537,16 +16529,16 @@ body.PanelOpened .daterangepicker {
     display: -webkit-inline-box;
     display: inline-flex;
     margin: 0 10px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
     vertical-align: middle; }
     .ExpandableSmaller__headerIcon.HeaderIconReverse {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); }
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
     .ExpandableSmaller__headerIcon .icon {
       border-bottom: 5px solid #009884;
       border-left: 5px solid transparent;
@@ -16935,12 +16927,13 @@ body.PanelOpened .daterangepicker {
 .TabWrapper {
   -webkit-box-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: flex;
   border-top: solid 3px #00bfa5;
-  display: -webkit-inline-box;
-  display: inline-flex;
   height: 44px;
   min-width: 100px;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .TabWrapper:hover {
     background-color: #009884;
     border-top-color: #009884; }
@@ -17026,11 +17019,6 @@ body.PanelOpened .daterangepicker {
 
 .tablet .TabWrapper.Active {
   display: block; }
-
-.tablet .TabWrapper,
-.desktop.small .TabWrapper {
-  line-height: normal !important;
-  text-align: center; }
 
 .tablet .FullScreenTabsWrapper_Container {
   height: 43px; }
@@ -17673,7 +17661,7 @@ div.Toolbar {
       height: 7px;
       width: 7px; }
     div.Toolbar__MoreOptionsList::-webkit-scrollbar-thumb {
-      border: 5px solid #00bfa5;
+      border: 5px solid #d6d6d6;
       border-radius: 4px; }
     div.Toolbar__MoreOptionsList::-webkit-scrollbar {
       background-color: transparent; }
@@ -17912,7 +17900,7 @@ div.ui-timepicker-container {
     border-left: 5px solid #fff;
     border-right: 5px solid #fff; }
   div.ui-timepicker-container ::-webkit-scrollbar-thumb {
-    border: 5px solid #00bfa5;
+    border: 5px solid #d6d6d6;
     border-radius: 4px; }
   div.ui-timepicker-container .ui-state-hover {
     background-color: #f2fffd;
@@ -18832,8 +18820,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       border-top: 1px solid #00bfa5; }
       .SelectableListServerSide_selectList.Expanded .SelectableListServerSide__arrow {
         line-height: 16px;
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg); }
+        -webkit-transform: rotate(-180deg);
+                transform: rotate(-180deg); }
       .SelectableListServerSide_selectList.Expanded .SelectableListServerSide___actionNotExpand {
         display: none; }
       .SelectableListServerSide_selectList.Expanded .SelectableListServerSide___actionExpand {
@@ -18851,8 +18839,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     height: 100%;
     padding: 0 20px;
     text-align: center;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
@@ -20940,7 +20926,7 @@ a .PersonCard {
 
 .PrescriptionCard {
   background-color: #fff;
-  border-radius: 1px;
+  border-radius: 4px;
   color: #333333;
   display: table;
   padding: 16px; }
@@ -21155,8 +21141,8 @@ a .PersonCard {
     padding: 20px 25px; }
 
 .SectionPrescriptionExpandableArea.expanded .SectionExpandable__icon .PrescriptionExpandable_header__IconDiv .icon {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg); }
 
 .SectionPrescriptionExpandableArea.autoheight .PrescriptionExpandable_content {
   display: block;
@@ -21277,8 +21263,8 @@ a .PersonCard {
     -webkit-box-pack: center;
             justify-content: center;
     text-align: center;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
     width: 20px;
     z-index: 1;
     margin-left: 20px;
@@ -22385,7 +22371,7 @@ div.List-Star {
       height: 7px;
       width: 7px; }
     .ScaleMainStructure_content::-webkit-scrollbar-thumb {
-      border: 5px solid #00bfa5;
+      border: 5px solid #d6d6d6;
       border-radius: 4px; }
   .ScaleMainStructure_footer {
     -webkit-box-align: center;
@@ -22788,10 +22774,10 @@ div.List-Star {
     width: 100%;
     z-index: 2; }
     .SearchSD .SearchSD_content .EmptySelectableList {
-      background-color: #ffffff;
+      background-color: #fff;
       border-bottom: 1px solid #d6d6d6;
+      color: #858585;
       display: block;
-      font-family: "LatoBold";
       font-size: 1.143em;
       height: 50px;
       line-height: 30px;
@@ -23335,8 +23321,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   text-align: center; }
 
 .SectionExpandableCustom:not(.expanded) .SectionExpandable_headerCustom .icon {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
 
 .SectionExpandableCustom:not(.expanded) .SectionExpandableCustom_content {
   height: 0;
@@ -23357,10 +23345,12 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .SectionExpandableCustom.expanded .SectionExpandable_headerCustom .SectionExpandable___icon,
 .SectionExpandableCustom.expanded .SectionExpandable_headerCustom .SectionExpandable__icon .fa {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
 
 .SectionExpandableCustom--backgroundTransparent div.SectionExpandable_headerCustom {
   background-color: transparent;
@@ -23408,8 +23398,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
             transform: rotate(90deg);
     width: 22px;
     z-index: 1;
-    -webkit-transform: rotate(90deg) scale(0.85);
-            transform: rotate(90deg) scale(0.85); }
+    -webkit-transform: rotate(0deg) scale(0.85);
+            transform: rotate(0deg) scale(0.85); }
     .SectionExpandableCustom .SectionExpandable___icon span:before {
       color: #009884;
       content: '\e611';
@@ -23437,8 +23427,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     transition: transform 0.5s, -webkit-transform 0.5s; }
   .SectionExpandableCustom .SectionExpandable_headerCustom .SectionExpandable___icon,
   .SectionExpandableCustom .SectionExpandable_headerCustom .SectionExpandable__icon .fa {
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
 
 .SectionExpandableCustom .SectionExpandable_contentCustom {
   border-bottom-left-radius: 4px;
@@ -24142,27 +24134,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     border: none !important;
     box-shadow: none !important; }
 
-.LayoutBlank .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
-.LayoutBase .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
-.LayoutPopup .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
-.LayoutBackoffice .select2-container--default .select2-search.select2-search--dropdown .select2-search__field,
-.DesignSystem .select2-container--default .select2-search.select2-search--dropdown .select2-search__field {
-  background-color: #ffffff;
-  border: none; }
-
-.LayoutBlank .select2-container--default .select2-search.select2-search--dropdown:after,
-.LayoutBase .select2-container--default .select2-search.select2-search--dropdown:after,
-.LayoutPopup .select2-container--default .select2-search.select2-search--dropdown:after,
-.LayoutBackoffice .select2-container--default .select2-search.select2-search--dropdown:after,
-.DesignSystem .select2-container--default .select2-search.select2-search--dropdown:after {
-  color: #858585;
-  content: '\e690';
-  font-family: 'Sapphire-Icon-Font';
-  font-size: 1.143em;
-  position: absolute;
-  right: 20px;
-  top: 11px; }
-
 .select2-container .select2-dropdown {
   border: 1px solid #d6d6d6;
   border-radius: 4px; }
@@ -24174,7 +24145,18 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     padding: 8px; }
     .select2-container .select2-dropdown .select2-search .select2-search__field {
       border: 1px solid #00bfa5;
-      border-radius: 100px; }
+      border-radius: 100px;
+      padding: 0 38px 0 12px !important; }
+  .select2-container .select2-dropdown .select2-search.select2-search--dropdown:after {
+    color: #adadad;
+    content: '\e690';
+    font-family: "Sapphire-Icon-Font";
+    font-size: 1.143em;
+    position: absolute;
+    right: 22px;
+    top: 14px;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg); }
   .select2-container .select2-dropdown .select2-results .select2-results__options li.select2-results__option {
     border-bottom: none;
     padding: 8px; }
@@ -24194,7 +24176,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   width: 4px; }
 
 .select2-results .select2-results__options::-webkit-scrollbar-thumb {
-  border: 5px solid #00bfa5;
+  border: 5px solid #d6d6d6;
   border-radius: 5px; }
 
 .select2-results .select2-results__options::-webkit-scrollbar-thumb {
@@ -24285,6 +24267,18 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   margin-left: 10px;
   margin-right: 0;
   padding: 5px 5px 5px 36px; }
+
+.AR .select2-container .select2-dropdown .select2-search.select2-search--dropdown:after,
+.FA .select2-container .select2-dropdown .select2-search.select2-search--dropdown:after {
+  left: 22px;
+  right: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  width: 20px; }
+
+.AR .select2-container .select2-dropdown .select2-search .select2-search__field,
+.FA .select2-container .select2-dropdown .select2-search .select2-search__field {
+  padding: 0 12px 0 38px !important; }
 
 .AR .select2-selection,
 .FA .select2-selection {
@@ -24544,7 +24538,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutBlank .ShiftContainer ::-webkit-scrollbar-thumb,
   .LayoutPOpup .ShiftContainer ::-webkit-scrollbar-thumb,
   .DesignSystem .ShiftContainer ::-webkit-scrollbar-thumb {
-    border: 5px solid #00bfa5;
+    border: 5px solid #d6d6d6;
     border-radius: 4px; }
   .LayoutBase .ShiftContainer::-webkit-scrollbar,
   .LayoutBlank .ShiftContainer::-webkit-scrollbar,
@@ -24557,7 +24551,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutBlank .ShiftContainer::-webkit-scrollbar-thumb,
   .LayoutPOpup .ShiftContainer::-webkit-scrollbar-thumb,
   .DesignSystem .ShiftContainer::-webkit-scrollbar-thumb {
-    border: 5px solid #00bfa5;
+    border: 5px solid #d6d6d6;
     border-radius: 4px; }
   .LayoutBase .ShiftContainer_header,
   .LayoutBlank .ShiftContainer_header,
@@ -28076,7 +28070,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
     height: 7px;
     width: 7px; }
   .Scrollable::-webkit-scrollbar-thumb {
-    border: 5px solid #00bfa5;
+    border: 5px solid #d6d6d6;
     border-radius: 4px; }
   .Scrollable::before {
     content: '';
@@ -29751,8 +29745,6 @@ ul.os-internal-ui-autocomplete {
   cursor: pointer;
   display: table-cell;
   text-align: center;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -29760,8 +29752,8 @@ ul.os-internal-ui-autocomplete {
   vertical-align: middle;
   width: 40px; }
   .SessionList__Icon.Rotation {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg); }
 
 .SessionList__Number {
   color: #333333;
