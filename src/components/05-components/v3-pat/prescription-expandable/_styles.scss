@@ -49,7 +49,7 @@
 		.SectionExpandable {
 			&__icon {
 				.PrescriptionExpandable_header__IconDiv .icon {
-					transform: rotate(180deg);
+					transform: rotate(-180deg);
 				}
 			}
 		}
@@ -204,7 +204,7 @@
 			}
 
 			.PrescriptionExpandable_header__IconDiv .icon {
-				@include arrow-button($regular-red, 20px, 0.8em);
+				@include arrow-button($regular-red, 20px, 0.8em, 0);
 
 				margin-left: 20px;
 				transition: transform 0.5s;

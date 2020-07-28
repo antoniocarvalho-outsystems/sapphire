@@ -32,7 +32,7 @@ $tab-height: 44px;
 }
 
 .FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab {
-	color: #fff;
+	color: $regular-white;
 	display: inline-block;
 	font-size: 1.25rem;
 	min-width: 100px;
@@ -100,12 +100,13 @@ $tab-height: 44px;
 }
 
 .TabWrapper {
-	align-items: center;
+	@include flex-center-vertically();
+
 	border-top: solid 3px $regular-alpha;
-	display: inline-flex;
 	height: $tab-height;
 	min-width: 100px;
 	position: relative;
+	text-align: center;
 
 	&:hover {
 		background-color: $regular-beta;
@@ -113,7 +114,7 @@ $tab-height: 44px;
 	}
 
 	.TabWrapper_tab a {
-		color: #fff;
+		color: $regular-white;
 		display: block;
 		font-family: $font-family-latin-bold;
 		font-size: 1rem;
@@ -127,14 +128,14 @@ $tab-height: 44px;
 		padding-left: 16px;
 
 		.icon {
-			color: #fff;
+			color: $regular-white;
 			display: block;
 		}
 	}
 }
 
 .TabWrapper.Active {
-	background-color: #fff;
+	background-color: $regular-white;
 	color: $regular-alpha;
 	pointer-events: none;
 
@@ -151,7 +152,7 @@ $tab-height: 44px;
 .FullScreenTabs_tabCounter {
 	background-color: $regular-red;
 	border-radius: 100%;
-	color: #fff;
+	color: $regular-white;
 	font-size: 10px;
 	height: 15px;
 	line-height: 15px;
@@ -169,16 +170,16 @@ $tab-height: 44px;
 }
 
 .FullScreenTabsWrapper_Container.Dashboard {
-	background-color: #fff;
+	background-color: $regular-white;
 
 	a {
 		position: relative;
 	}
 
 	.TabWrapper {
-		background-color: #fff;
-		border-bottom: solid 3px #fff;
-		border-top-color: #fff;
+		background-color: $regular-white;
+		border-bottom: solid 3px $regular-white;
+		border-top-color: $regular-white;
 		border-top-left-radius: 4px;
 		border-top-right-radius: 4px;
 		color: $mid-dark-grey;
@@ -223,12 +224,6 @@ $tab-height: 44px;
 
 .tablet .TabWrapper.Active {
 	display: block;
-}
-
-.tablet .TabWrapper,
-.desktop.small .TabWrapper {
-	line-height: normal !important;
-	text-align: center;
 }
 
 .tablet .FullScreenTabsWrapper_Container {

@@ -6,7 +6,7 @@
 			.ExpandableGroupItem-header {
 				&:before {
 					top: 2px;
-					transform: rotate(90deg);
+					transform: rotate(-180deg);
 				}
 			}
 
@@ -22,7 +22,7 @@
 
 			&:before {
 				color: $regular-beta;
-				content: '\e69d';
+				content: '\e610';
 				font-family: $font-family-icons;
 				font-size: 1rem;
 				left: 0;

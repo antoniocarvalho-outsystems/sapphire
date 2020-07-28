@@ -18,7 +18,7 @@
 		@if $dark-bar {
 			border: 5px solid $regular-white;
 		} @else {
-			border: 5px solid $regular-alpha;
+			border: 5px solid $light-grey;
 		}
 
 		border-radius: $border-radius;
@@ -47,7 +47,7 @@
 		@if $white-bar {
 			border: 5px solid $regular-white;
 		} @else {
-			border: 5px solid $regular-alpha;
+			border: 5px solid $light-grey;
 		}
 
 		border-radius: $border-radius;

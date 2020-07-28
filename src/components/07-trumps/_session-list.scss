@@ -81,13 +81,12 @@
 		cursor: pointer;
 		display: table-cell;
 		text-align: center;
-		transform: rotate(-90deg);
 		transition: transform 0.5s;
 		vertical-align: middle;
 		width: 40px;
 
 		&.Rotation {
-			transform: rotate(0deg);
+			transform: rotate(-180deg);
 		}
 	}
 

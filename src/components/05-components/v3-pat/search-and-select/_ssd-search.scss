@@ -379,10 +379,10 @@
 		z-index: 2;
 
 		.EmptySelectableList {
-			background-color: $sapphire-white;
+			background-color: $regular-white;
 			border-bottom: 1px solid $light-grey;
+			color: $regular-gray;
 			display: block;
-			font-family: $font-family-latin-bold;
 			font-size: $font-size-heading3;
 			height: 50px;
 			line-height: 30px;

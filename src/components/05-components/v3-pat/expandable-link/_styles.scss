@@ -1,7 +1,7 @@
 .ExpandableLink {
 	&--expanded & {
 		&__Icon {
-			transform: rotate(90deg);
+			transform: rotate(180deg);
 		}
 
 		&__Content {
@@ -46,7 +46,7 @@
 		transition: transform 0.5s;
 
 		.icon {
-			@include arrow-button($regular-beta, 20px, 0.7em);
+			@include arrow-button($regular-beta, 20px, 0.7em, 0);
 		}
 	}
 

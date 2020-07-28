@@ -73,7 +73,7 @@
 
 		&.Secondary {
 			.ExpandableServerSide__arrow {
-				transform: rotate(-90deg);
+				transform: rotate(180deg);
 
 				&.open {
 					line-height: 14px;
@@ -120,7 +120,7 @@
 			&__arrow {
 				font-weight: 700;
 				order: 1;
-				transform: rotate(-90deg);
+				transform: rotate(180deg);
 
 				&.open {
 					transform: rotate(0deg);
@@ -165,7 +165,7 @@
 		display: table-cell;
 		padding: 10px;
 		text-align: center;
-		transform: rotate(-90deg);
+		transform: rotate(180deg);
 		transition: transform 0.5s;
 		vertical-align: middle;
 		width: 50px;

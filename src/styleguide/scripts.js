@@ -10,6 +10,8 @@ require('./styles.scss');
 	};
 
 	const setRTLmode = () => {
+		$('body').toggleClass('AR');
+		$('body').toggleClass('Page');
 		$('.DesignSystem.Page').toggleClass('AR');
 	};
 
