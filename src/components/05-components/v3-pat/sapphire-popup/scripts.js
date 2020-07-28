@@ -1,67 +1,40 @@
 /* Component SapphirePopup */
 (function($, window, SapphireWidgets) {
-	// Check if the widget is loaded inside an iFrame.
-	var _isInIframe = window.frameElement != undefined || false;
+	// Check if the widget is loaded inside an iFrame
+	let isInsideIframe = window.frameElement != undefined || false;
 
 	// Constants
-	var Popup_Window_ShowTimeoutMilSecs = 200;
-	var Popup_Window_HideTimeoutMilSecs = 800;
-	var Popup_Window_InitialWidth = 300;
-	var Popup_Window_InitialHeight = 100;
-	var RichWidgets_Popup_Editor_notifyWidget;
-	var Popup_Window_Index = 4010;
-	var Popup_Window_ParentUrl;
-	var Popup_Window_ClosingTag = 'closing';
-	var Popup_Window_ClosingValue = 'true';
+	const POPUP_INITIAL_WIDTH = 300;
+	const POPUP_INITIAL_HEIGHT = 100;
+	const POPUP_WINDOW_INDEX = 4010;
+	const POPUP_CLOSING_TAG = 'closing';
+	const POPUP_CLOSING_VALUE = 'true';
+
+	let POPUP_NOTIFY_WIDGET;
+	let POPUP_PARENT_URL;
 
 	const create = config => {
-		if (config.ignoreIframe) {
-			_isInIframe = false;
-		}
-
-		var GetLinkHref = function(widget) {
-			var linkHref;
-			var isAButton = false;
-			try {
-				//Checks if the id is from a link or not
-				linkHref = $(widget).attr('href');
-
-				//Tests for visibility/existence
-				if (typeof linkHref == 'undefined') {
-					var onClick = widget.getAttribute('onclick');
-					if (typeof onClick != 'undefined') {
-						isAButton = true;
-						if (onClick != null) {
-							var hrefMatch;
-							if ((hrefMatch = onClick.toString().match(/href='([^']*)'/)) != null) {
-								linkHref = hrefMatch[1];
-							}
-						}
-					}
-				} //else: throw ("Inexistent or Invisible button");
-			} catch (e) {}
-
-			return [linkHref, isAButton];
-		};
+		if (config.ignoreIframe) isInsideIframe = false;
 
 		$().ready(function($) {
 			const _id = config.linkId;
 			const linkQuery = `#${config.linkId}`;
-			var linkWidget;
+			let linkWidget;
 
 			try {
 				linkWidget = $(linkQuery).get(0);
 			} catch (e) {}
+
 			if (typeof linkWidget == 'undefined') {
 				//Case the widget is inexistent or invisible, it will show no errors.
 				return;
 			}
 
-			Popup_Window_ParentUrl = config.parentUrl;
+			POPUP_PARENT_URL = config.parentUrl;
 
-			var getLinkResult = GetLinkHref(linkWidget);
-			var linkHref = getLinkResult[0];
-			var isAButton = getLinkResult[1];
+			const linkResult = getLinkHREF(linkWidget);
+			const linkHref = linkResult[0];
+			const isAButton = linkResult[1];
 
 			if (typeof linkHref == 'undefined' || linkHref == '' || linkHref == '#' || linkHref.indexOf('javascript:') == 0) {
 				try {
@@ -71,11 +44,12 @@
 						'Popup_Editor'
 					);
 				} catch (e) {}
+
 				return;
 			}
 
+			// Remove the existing on-click event
 			if (isAButton) {
-				//remove the existing on-click
 				linkWidget.setAttribute(
 					'onclick',
 					linkWidget
@@ -85,7 +59,7 @@
 				);
 			}
 
-			// if there's a confirmation message, store in an attribute the result
+			// If there's a confirmation message, store in an attribute the result
 			if (linkWidget.getAttribute('onclick') != null) {
 				linkWidget.setAttribute(
 					'onclick',
@@ -99,116 +73,80 @@
 				);
 			}
 
-			var clickHandler = function(event) {
-				//The clickHandler event is registered in osjs and $ for compatibillity reasons, they must not run both for the same click.
-				//Variable is set to false in Popup_Window_resize function.
+			const clickHandler = function(event) {
+				// The clickHandler event is registered in osjs and $ for compatibillity reasons, they must not run both for the same click.
+				// Variable is set to false in resize function.
 				if ($.data(event.target, 'os-internal-processing') == true) {
 					return false;
 				} else {
 					$.data(event.target, 'os-internal-processing', true);
 				}
 
-				//Check if the clicked link is disabled
+				// Check if the clicked link is disabled
 				if (linkWidget.getAttribute('disabled') != null) {
 					var linkDisabled = linkWidget
 						.getAttribute('disabled')
 						.toString()
 						.toLowerCase();
+
 					if (linkDisabled == 'disabled' || linkDisabled.indexOf('true') != -1) {
 						return false;
 					}
 				}
 
-				if (linkWidget.getAttribute('confirmed') == 'false') {
-					return false;
-				}
-				if (OsIsIE()) {
-					osFocusBackend.ClearFocusedElement();
-				}
+				if (linkWidget.getAttribute('confirmed') == 'false') return false;
+				if (OsIsIE()) osFocusBackend.ClearFocusedElement();
 
-				var popupDiv;
-				if (_isInIframe) {
-					_div = document.createElement('DIV');
+				let popupDiv;
+				let pleaseWaitDiv;
+
+				const waitText = `<div style="margin-top: 36px;">${config.loadingMessage}</div>`;
+				const imgHTML = '<div class="lds-ring"><div></div></div>';
+				const loadingElement = `<div class="LayoutPopup-loading">${imgHTML} ${waitText}</div>`;
+				const iFrameElement = `<iframe id="iframe_${_id}" width="100%" scrolling="no" height="100%" frameborder="0" src="javascript:void(0);"/>`;
+
+				if (isInsideIframe) {
+					let _div = document.createElement('DIV');
 					_div.setAttribute('style', 'text-align: center; display: none;');
 					_div.setAttribute('id', 'window_' + _id);
 					window.top.document.body.appendChild(_div);
+
 					popupDiv = window.top.$('#window_' + _id);
-					popupDiv.append(
-						'<iframe id="iframe_' +
-							_id +
-							'" width="100%" scrolling="no" height="100%" frameborder="0" src="javascript:void(0);"/>'
-					);
-					var waitText = ' Please wait while content is loading...';
-					var imgHTML =
-						"<img style='border-width: 0px; height: 16px; width: 16px;' src='/RichWidgets/img/SpinBlack.gif'/>";
-					var pleaseWaitDiv = popupDiv.prepend(
-						"<div class='LayoutPopup-loading Text_Note'>" + imgHTML + waitText + '</div>'
-					);
+					popupDiv.append(iFrameElement);
+
+					pleaseWaitDiv = popupDiv.prepend(loadingElement);
 				} else {
 					popupDiv = $("<div style='text-align: center; display: none;'></div>").appendTo('body');
-					popupDiv.append(
-						'<iframe id="iframe_' +
-							_id +
-							'" width="100%" scrolling="no" height="100%" frameborder="0" src="javascript:void(0);"/>'
-					);
-					var waitText = ' Please wait while content is loading...';
-					var imgHTML =
-						"<img style='border-width: 0px; height: 16px; width: 16px;' src='/RichWidgets/img/SpinBlack.gif'/>";
-					var pleaseWaitDiv = popupDiv.prepend(
-						"<div class='LayoutPopup-loading Text_Note'>" + imgHTML + waitText + '</div>'
-					);
+					popupDiv.append(iFrameElement);
+
+					pleaseWaitDiv = popupDiv.prepend(loadingElement);
 				}
 
-				var loadTargetPage = function() {
-					if (_isInIframe) {
-						window.top.RichWidgets_Popup_Editor_notifyWidget = config.notifyId;
+				const loadTargetPage = function() {
+					if (isInsideIframe) {
+						window.top.POPUP_NOTIFY_WIDGET = config.notifyId;
 						// Create a reference to the iframe object on the document parent
 						window.top._iframePopup = window.frameElement.contentWindow;
 					} else {
 						window.top._iframePopup = window;
 					}
-					RichWidgets_Popup_Editor_notifyWidget = config.notifyId;
 
-					//load target page
-					var ohref = GetLinkHref(linkWidget)[0];
-					var rhref = ohref.replace(/(\?|&)_=.*?(&|$)/, '$1_=' + +new Date().now + '$2');
-					var xhref = rhref + (rhref == ohref ? (rhref.indexOf('?') >= 0 ? '&' : '?') + '_=' + +new Date() : '');
+					POPUP_NOTIFY_WIDGET = config.notifyId;
+
+					// Load target page
+					const ohref = getLinkHREF(linkWidget)[0];
+					const rhref = ohref.replace(/(\?|&)_=.*?(&|$)/, '$1_=' + +new Date().now + '$2');
+					const xhref = rhref + (rhref == ohref ? (rhref.indexOf('?') >= 0 ? '&' : '?') + '_=' + +new Date() : '');
+
 					popupDiv.find('iframe').attr('src', xhref);
+
 					(function(popupDiv) {
 						popupDiv.find('iframe').load(function() {
-							//after loading try to resize, if it is possible resize also after each ajax call
-							if (resize(popupDiv, _id, config.setWidth, config.setHeight, true, event)) {
-								if (config.autoResize) {
-									//var contentWindow = getFramedWindow(this);
-									if (_isInIframe) {
-										osAjaxBackend.BindAfterAjaxRequest(function() {
-											var contentWindow = window.top._iframePopup;
-											contentWindow.Popup_Window_resize(
-												popupDiv,
-												_id,
-												config.setWidth,
-												config.setHeight,
-												config.recenterOnResize,
-												event
-											);
-										});
-									} else {
-										var contentWindow = this.contentWindow;
-										contentWindow.osAjaxBackend.BindAfterAjaxRequest(function() {
-											contentWindow.parent.Popup_Window_resize(
-												popupDiv,
-												_id,
-												config.setWidth,
-												config.setHeight,
-												config.recenterOnResize,
-												event
-											);
-										});
-									}
-								}
-							}
+							// After loading try to resize
+							resize(popupDiv, _id, config.setWidth, config.setHeight, true, event);
 						});
 					})(popupDiv);
+
 					popupDiv = null;
 					pleaseWaitDiv = null;
 				};
@@ -241,7 +179,7 @@
 			) {
 				//destroy any previous dialog
 				close(null);
-				if (_isInIframe) {
+				if (isInsideIframe) {
 					var $jParent = window.top.jQuery;
 					$jParent('.os-internal-Popup').remove();
 				}
@@ -249,13 +187,13 @@
 				// if any close is pending, schedule to execute itself asynchronously exit
 				// if no close is pending, continue with open operation
 				var closingPopups;
-				if (_isInIframe) {
+				if (isInsideIframe) {
 					closingPopups = window.top.$('.os-internal-ui-dialog-content');
 				} else {
 					closingPopups = $('.os-internal-ui-dialog-content');
 				}
 				for (var i = 0; i < closingPopups.length; i++) {
-					if ($.data(closingPopups.get(i), Popup_Window_ClosingTag) == Popup_Window_ClosingValue) {
+					if ($.data(closingPopups.get(i), POPUP_CLOSING_TAG) == POPUP_CLOSING_VALUE) {
 						setTimeout(function() {
 							OpenPopup(
 								divToPopup,
@@ -272,7 +210,7 @@
 					}
 				}
 				var _dialog;
-				if (_isInIframe) {
+				if (isInsideIframe) {
 					var $jParent =
 						window.top.jQuery; /* http://stackoverflow.com/questions/1958946/display-jquery-dialog-in-parent-window */
 					_dialog = $jParent(divToPopup);
@@ -280,7 +218,7 @@
 					_dialog = $(divToPopup);
 				}
 				$(divPleaseWait).show();
-				if (setHeight == -1) setHeight = Popup_Window_InitialHeight;
+				if (setHeight == -1) setHeight = POPUP_INITIAL_HEIGHT;
 
 				if ($('.ISidebar').length) {
 					window.parent.SapphireWidgets.LayoutBase.openSidebarIframe(0);
@@ -298,8 +236,8 @@
 					modal: !(config.useModal === false),
 					height: setHeight,
 					position: 'center',
-					width: setWidth == -1 ? Popup_Window_InitialWidth : setWidth,
-					zIndex: Popup_Window_Index,
+					width: setWidth == -1 ? POPUP_INITIAL_WIDTH : setWidth,
+					zIndex: POPUP_WINDOW_INDEX,
 					close: function() {
 						//If the popup is closed before it is resized (ESC) we need to set the processing event to false.
 						$.data(event.target, 'os-internal-processing', false);
@@ -316,7 +254,7 @@
 				_dialog.parents('.os-internal-ui-dialog').dropShadow();
 
 				if (config.CssClasses !== ' ') {
-					if (_isInIframe) {
+					if (isInsideIframe) {
 						window.top.$('.os-internal-ui-dialog').addClass(config.CssClasses);
 					} else {
 						$('.os-internal-ui-dialog').addClass(config.CssClasses);
@@ -334,7 +272,7 @@
 			recenter = setHeight;
 			setHeight = setWidth;
 			setWidth = divToPopup;
-			if (_isInIframe) {
+			if (isInsideIframe) {
 				divToPopup = window.top.$('.os-internal-ui-dialog-content');
 			} else {
 				divToPopup = $('.os-internal-ui-dialog-content');
@@ -342,7 +280,7 @@
 		}
 
 		// Resize must bail out immediately if the popup is marked as closing, and not start the animation.
-		if ($.data(divToPopup.get(0), Popup_Window_ClosingTag) == Popup_Window_ClosingValue) {
+		if ($.data(divToPopup.get(0), POPUP_CLOSING_TAG) == POPUP_CLOSING_VALUE) {
 			return false;
 		}
 		var frameObj = divToPopup.find('iframe')[0];
@@ -352,7 +290,7 @@
 		}
 
 		var documentServer;
-		if (_isInIframe) {
+		if (isInsideIframe) {
 			documentServer = window.top.document.location.href.replace(/(https?:\/\/[^\/]*).*/, '$1');
 		} else {
 			documentServer = document.location.href.replace(/(https?:\/\/[^\/]*).*/, '$1');
@@ -373,7 +311,7 @@
 				}
 			}
 			var oldHeight;
-			if (_isInIframe) {
+			if (isInsideIframe) {
 				oldHeight = window.top
 					.$(divToPopup)
 					.parents('.os-internal-Popup')
@@ -387,7 +325,7 @@
 			var height = setHeight == -1 ? $(innerDoc).height() : setHeight;
 
 			var titleHeight;
-			if (_isInIframe) {
+			if (isInsideIframe) {
 				titleHeight = window.top.$('.os-internal-ui-dialog-titlebar').height();
 			} else {
 				titleHeight = $('.os-internal-ui-dialog-titlebar').height();
@@ -413,14 +351,14 @@
 				if (sameOrigin) innerDoc.body.style.height = 'auto';
 			}
 
-			if (_isInIframe) {
+			if (isInsideIframe) {
 				window.top.$(divToPopup).height(height);
 			} else {
 				$(divToPopup).height(height);
 			}
 
 			//Hide ECT
-			if (_isInIframe) {
+			if (isInsideIframe) {
 				window.top
 					.$(innerDoc)
 					.find('.ECT_FeedbackContainer')
@@ -451,22 +389,19 @@
 				divPopupOuterWindow.width() == animateFinal.width &&
 				divPopupOuterWindow.height() == animateFinal.height - ($.browser.msie ? 1 : 0)
 			) {
-				$('.os-internal-ui-dialog-content>.Text_Note').hide();
+				$('.os-internal-ui-dialog-content>.LayoutPopup-loading').hide();
 				$(divToPopup).height(height - ($.browser.msie ? 1 : 0)); // restore size
 				return true; // nothing to do...
 			}
 
 			// hide content in first resize - readjustments will not flickr
-			if (
-				divPopupOuterWindow.width() == Popup_Window_InitialWidth &&
-				divPopupOuterWindow.height() == Popup_Window_InitialHeight
-			) {
+			if (divPopupOuterWindow.width() == POPUP_INITIAL_WIDTH && divPopupOuterWindow.height() == POPUP_INITIAL_HEIGHT) {
 				$(frameObj).height(0);
 			}
 
 			var onAnimationComplete = function() {
 				setTimeout(function() {
-					if (_isInIframe) {
+					if (isInsideIframe) {
 						/*$(divToPopup).dialog('size');*/
 						window.top.$('.os-internal-ui-dialog-titlebar-close-no-title').css('display', 'block');
 						window.top
@@ -486,10 +421,10 @@
 			};
 
 			var divPleaseWait;
-			if (_isInIframe) {
-				divPleaseWait = window.top.$('.os-internal-ui-dialog-content>.Text_Note');
+			if (isInsideIframe) {
+				divPleaseWait = window.top.$('.os-internal-ui-dialog-content>.LayoutPopup-loading');
 			} else {
-				divPleaseWait = $('.os-internal-ui-dialog-content>.Text_Note');
+				divPleaseWait = $('.os-internal-ui-dialog-content>.LayoutPopup-loading');
 			}
 
 			divPleaseWait.hide();
@@ -504,7 +439,7 @@
 			}
 			innerDoc = null;
 			divPopupOuterWindow = null;
-			if (_isInIframe) {
+			if (isInsideIframe) {
 				window.top.$.data(event.target, 'os-internal-processing', false);
 			} else {
 				$.data(event.target, 'os-internal-processing', false);
@@ -513,20 +448,47 @@
 		}
 	};
 
-	const close = iFrame => {
-		var popupToClose;
-		// Any close requests must immediately (synchronously) tag the closing element, marking it as closing. The cleanup must be done asynchronously due to IE7..
-		if (_isInIframe) {
-			popupToClose = window.top.$('.os-internal-ui-dialog-content');
-		} else {
-			popupToClose = $('.os-internal-ui-dialog-content');
-		}
+	const close = () => {
+		let popupToClose;
 
-		popupToClose.data(Popup_Window_ClosingTag, Popup_Window_ClosingValue);
+		if (isInsideIframe) popupToClose = window.top.$('.os-internal-ui-dialog-content');
+		else popupToClose = $('.os-internal-ui-dialog-content');
+
+		popupToClose.data(POPUP_CLOSING_TAG, POPUP_CLOSING_VALUE);
+
 		setTimeout(function() {
 			popupToClose.dialog('close');
 			popupToClose.remove();
 		}, 0);
+	};
+
+	const getLinkHREF = widget => {
+		let linkHref;
+		let isAButton = false;
+
+		try {
+			//Checks if the id is from a link or not
+			linkHref = $(widget).attr('href');
+
+			//Tests for visibility/existence
+			if (typeof linkHref == 'undefined') {
+				const onClick = widget.getAttribute('onclick');
+
+				if (typeof onClick != 'undefined') {
+					isAButton = true;
+
+					if (onClick != null) {
+						let hrefMatch;
+
+						if ((hrefMatch = onClick.toString().match(/href='([^']*)'/)) != null) {
+							linkHref = hrefMatch[1];
+						}
+					}
+				}
+			}
+		} catch (e) {}
+
+		return [linkHref, isAButton];
 	};
 
 	SapphireWidgets.SapphirePopup = { create, close, resize };

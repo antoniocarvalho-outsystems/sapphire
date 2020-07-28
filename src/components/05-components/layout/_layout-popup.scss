@@ -72,7 +72,10 @@
 
 .LayoutPopup-loading {
 	@include absolute-center();
-	margin-top: -2px;
+
+	color: $regular-grey;
+	font-size: 0.857em;
+	margin-top: -10px;
 	width: 250px;
 }
 
