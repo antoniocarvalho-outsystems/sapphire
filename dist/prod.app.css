@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920035 || Generated: Tue Jul 28 2020 18:03:05 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920036 || Generated: Tue Jul 28 2020 18:33:07 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10697,33 +10697,8 @@ body .Page.desktop .MainPopup {
 
 div.os-internal-Popup .os-internal-ui-dialog .os-internal-ui-dialog-titlebar,
 div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar {
-  background: none;
   display: none;
   height: 0; }
-
-div.os-internal-Popup .os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close,
-div.os-internal-Popup.os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close {
-  background: none;
-  cursor: pointer;
-  height: 20px;
-  right: 10px;
-  top: 7px;
-  width: 20px; }
-  div.os-internal-Popup .os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close:after,
-  div.os-internal-Popup.os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close:after {
-    color: #333333;
-    content: '\e60c';
-    display: block;
-    font-family: "Sapphire-Icon-Font";
-    font-size: 1em;
-    left: 0;
-    position: absolute;
-    top: 0; }
-  div.os-internal-Popup .os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close:hover,
-  div.os-internal-Popup.os-internal-ui-dialog a.os-internal-ui-dialog-titlebar-close:hover {
-    opacity: 1;
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
 
 .ResizeIframeTooltip.ResizeWidthTooltip {
   width: -webkit-fit-content;
@@ -22035,6 +22010,28 @@ div.List-Star {
     border: none;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
     position: relative; }
+    .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar {
+      background: none; }
+    .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close {
+      background: none;
+      cursor: pointer;
+      height: 20px;
+      right: 10px;
+      top: 7px;
+      width: 20px; }
+      .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close:after {
+        color: #333333;
+        content: '\e60c';
+        display: block;
+        font-family: "Sapphire-Icon-Font";
+        font-size: 1em;
+        left: 0;
+        position: absolute;
+        top: 0; }
+      .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close:hover {
+        opacity: 1;
+        -webkit-transform: rotate(0);
+                transform: rotate(0); }
 
 .ButtonRadioInp {
   height: 34px;

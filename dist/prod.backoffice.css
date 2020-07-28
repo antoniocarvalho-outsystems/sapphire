@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920035 || Generated: Tue Jul 28 2020 18:03:05 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920036 || Generated: Tue Jul 28 2020 18:33:07 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3033,6 +3033,53 @@ div[onclick] {
           transform: rotate(0deg); }
 
 /* NavigationBar */
+.lds-ring {
+  display: inline-block;
+  height: 32px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 32px; }
+  .lds-ring div {
+    -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border: 3px solid #fff;
+    border-color: #00bfa5 transparent transparent transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: block;
+    height: 16px;
+    margin: 8px;
+    position: absolute;
+    width: 16px; }
+    .lds-ring div:nth-child(1) {
+      -webkit-animation-delay: -0.45s;
+              animation-delay: -0.45s; }
+    .lds-ring div:nth-child(2) {
+      -webkit-animation-delay: -0.3s;
+              animation-delay: -0.3s; }
+    .lds-ring div:nth-child(3) {
+      -webkit-animation-delay: -0.15s;
+              animation-delay: -0.15s; }
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
 .TableRecords {
   background-color: transparent;
   border-bottom: none;
@@ -4394,6 +4441,45 @@ body.PanelById.PanelOpened {
   overflow: auto;
   position: static; }
 
+.SapphirePopup {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4012; }
+  .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup {
+    border: none;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+    position: relative; }
+    .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar {
+      background: none; }
+    .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close {
+      background: none;
+      cursor: pointer;
+      height: 20px;
+      right: 10px;
+      top: 7px;
+      width: 20px; }
+      .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close:after {
+        color: #333333;
+        content: '\e60c';
+        display: block;
+        font-family: "Sapphire-Icon-Font";
+        font-size: 1em;
+        left: 0;
+        position: absolute;
+        top: 0; }
+      .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close:hover {
+        opacity: 1;
+        -webkit-transform: rotate(0);
+                transform: rotate(0); }
+
 .LayoutBlank .select2-container:hover .select2-selection[aria-disabled='false'],
 .LayoutBase .select2-container:hover .select2-selection[aria-disabled='false'],
 .LayoutPopup .select2-container:hover .select2-selection[aria-disabled='false'],
@@ -5098,6 +5184,9 @@ body.PanelById.PanelOpened {
     content: '';
     display: block;
     height: 1px; }
+
+.SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close {
+  display: none; }
 
 .LayoutBackoffice .select2-selection {
   height: 40px !important; }
