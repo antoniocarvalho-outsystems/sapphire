@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920031 || Generated: Mon Jul 27 2020 17:59:35 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920032 || Generated: Tue Jul 28 2020 12:07:21 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14882,6 +14882,7 @@ body.PanelOpened .daterangepicker {
     background-color: #f5f4e0; }
   .DragDrop-area.DragDrop-skin-Teams .DragDrop-draggable {
     background-color: #f3f3f3;
+    border-radius: 4px;
     display: inline-block;
     margin: 10px;
     min-height: 70px;
@@ -22628,7 +22629,7 @@ div.List-Star {
       text-align: center;
       text-decoration: none;
       vertical-align: middle;
-      width: 64px; }
+      width: 52px; }
     .SearchSD .SearchSD_search .SearchSD__inputWrapper {
       display: table-cell;
       position: relative;
@@ -22655,7 +22656,7 @@ div.List-Star {
             box-shadow: none;
             font-size: 1.143em;
             height: 100%;
-            padding: 0 40px 0 64px;
+            padding: 0 40px 0 67px;
             width: 95%; }
             .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']::-webkit-input-placeholder {
               color: #adadad;
@@ -22909,7 +22910,7 @@ div.List-Star {
 
 .AR .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text'],
 .FA .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text'] {
-  padding: 0 64px 0 40px; }
+  padding: 0 67px 0 40px; }
 
 .AR .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input:before,
 .FA .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input:before {
@@ -22946,10 +22947,10 @@ div.List-Star {
   .SelectSD.hasFavorite .SelectSD__starLink {
     color: #d6d6d6;
     display: table-cell;
-    padding: 16px 0;
+    padding: 16px;
     text-align: center;
     vertical-align: middle;
-    width: 64px; }
+    width: 32px; }
     .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper {
       height: 100%;
       width: 100%; }
@@ -22963,7 +22964,7 @@ div.List-Star {
         color: #00bfa5; }
   .SelectSD .SelectSD_contentWrapper {
     display: table-cell;
-    padding-right: 16px;
+    padding: 0 16px;
     text-align: left;
     vertical-align: middle; }
     .SelectSD .SelectSD_contentWrapper .SelectSD__contentTitle {
@@ -23032,8 +23033,6 @@ div.List-Star {
 /*AR and FA*/
 .FA .SelectSD_contentWrapper,
 .AR .SelectSD_contentWrapper {
-  padding-left: 16px;
-  padding-right: 0;
   text-align: right; }
   .FA .SelectSD_contentWrapper .SelectSD__contentTitle,
   .AR .SelectSD_contentWrapper .SelectSD__contentTitle {
