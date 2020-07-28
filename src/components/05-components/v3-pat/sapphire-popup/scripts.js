@@ -151,118 +151,12 @@
 					pleaseWaitDiv = null;
 				};
 
-				OpenPopup(
-					popupDiv,
-					config.setTitle,
-					config.setHeight,
-					config.setWidth,
-					pleaseWaitDiv,
-					config.hideCloseButton,
-					loadTargetPage,
-					event
-				);
+				openPopup(popupDiv, pleaseWaitDiv, loadTargetPage, event, config);
 
 				return false;
 			};
 
 			$(linkQuery).click(clickHandler);
-
-			function OpenPopup(
-				divToPopup,
-				setTitle,
-				setHeight,
-				setWidth,
-				divPleaseWait,
-				hideCloseButton,
-				loadTargetPage,
-				event
-			) {
-				//destroy any previous dialog
-				close(null);
-				if (isInsideIframe) {
-					var $jParent = window.top.jQuery;
-					$jParent('.os-internal-Popup').remove();
-				}
-
-				// if any close is pending, schedule to execute itself asynchronously exit
-				// if no close is pending, continue with open operation
-				var closingPopups;
-				if (isInsideIframe) {
-					closingPopups = window.top.$('.os-internal-ui-dialog-content');
-				} else {
-					closingPopups = $('.os-internal-ui-dialog-content');
-				}
-				for (var i = 0; i < closingPopups.length; i++) {
-					if ($.data(closingPopups.get(i), POPUP_CLOSING_TAG) == POPUP_CLOSING_VALUE) {
-						setTimeout(function() {
-							OpenPopup(
-								divToPopup,
-								setTitle,
-								setHeight,
-								setWidth,
-								divPleaseWait,
-								hideCloseButton,
-								loadTargetPage,
-								event
-							);
-						}, 13);
-						return false;
-					}
-				}
-				var _dialog;
-				if (isInsideIframe) {
-					var $jParent =
-						window.top.jQuery; /* http://stackoverflow.com/questions/1958946/display-jquery-dialog-in-parent-window */
-					_dialog = $jParent(divToPopup);
-				} else {
-					_dialog = $(divToPopup);
-				}
-				$(divPleaseWait).show();
-				if (setHeight == -1) setHeight = POPUP_INITIAL_HEIGHT;
-
-				if ($('.ISidebar').length) {
-					window.parent.SapphireWidgets.LayoutBase.openSidebarIframe(0);
-				}
-
-				_dialog.show().dialog({
-					dialogClass: 'os-internal-Popup',
-					resizable: false,
-					autoResize: false,
-					closeOnEscape: !config.hideCloseButton,
-					bgiframe: true,
-					draggable: false,
-					autoOpen: true,
-					title: setTitle,
-					modal: !(config.useModal === false),
-					height: setHeight,
-					position: 'center',
-					width: setWidth == -1 ? POPUP_INITIAL_WIDTH : setWidth,
-					zIndex: POPUP_WINDOW_INDEX,
-					close: function() {
-						//If the popup is closed before it is resized (ESC) we need to set the processing event to false.
-						$.data(event.target, 'os-internal-processing', false);
-						_dialog.find('iframe').unbind('load');
-						_dialog.find('iframe').attr('src', 'about:blank');
-						setTimeout(function() {
-							_dialog.find('iframe').empty();
-							_dialog.empty();
-						}, 13); //We need to delay this! or IE7 crashes
-					},
-				});
-
-				_dialog.find('iframe').height(0);
-				_dialog.parents('.os-internal-ui-dialog').dropShadow();
-
-				if (config.CssClasses !== ' ') {
-					if (isInsideIframe) {
-						window.top.$('.os-internal-ui-dialog').addClass(config.CssClasses);
-					} else {
-						$('.os-internal-ui-dialog').addClass(config.CssClasses);
-					}
-				}
-
-				loadTargetPage();
-			}
 		});
 	};
 
@@ -272,6 +166,7 @@
 			recenter = setHeight;
 			setHeight = setWidth;
 			setWidth = divToPopup;
+
 			if (isInsideIframe) {
 				divToPopup = window.top.$('.os-internal-ui-dialog-content');
 			} else {
@@ -283,13 +178,14 @@
 		if ($.data(divToPopup.get(0), POPUP_CLOSING_TAG) == POPUP_CLOSING_VALUE) {
 			return false;
 		}
-		var frameObj = divToPopup.find('iframe')[0];
+
+		let documentServer;
+		let frameObj = divToPopup.find('iframe')[0];
 
 		if (typeof frameObj == 'undefined') {
 			frameObj = window.top.$('#iframe_' + _id)[0];
 		}
 
-		var documentServer;
 		if (isInsideIframe) {
 			documentServer = window.top.document.location.href.replace(/(https?:\/\/[^\/]*).*/, '$1');
 		} else {
@@ -297,20 +193,23 @@
 		}
 
 		if (typeof frameObj != 'undefined') {
-			var frameServer = frameObj.src.replace(/(https?:\/\/[^\/]*).*/, '$1');
+			const frameServer = frameObj.src.replace(/(https?:\/\/[^\/]*).*/, '$1');
+			const sameOrigin = frameServer.toLowerCase() == documentServer.toLowerCase() || frameServer.indexOf('http') != 0;
 
-			var sameOrigin = frameServer.toLowerCase() == documentServer.toLowerCase() || frameServer.indexOf('http') != 0;
-			if (!sameOrigin && (setWidth == -1 || setHeight == -1))
+			if (!sameOrigin && (setWidth == -1 || setHeight == -1)) {
 				throw new Error('A Popup with a screen from a different server (or https) needs explicict width, height set.');
+			}
+
 			if (sameOrigin) {
 				if (frameObj.contentDocument !== null || frameObj.contentWindow !== null) {
 					var innerDoc = frameObj.contentDocument ? frameObj.contentDocument : frameObj.contentWindow.document;
 					if (innerDoc.documentElement.scrollHeight == 0)
-						// strangely this event is also triggered on close
+						// Strangely this event is also triggered on close
 						return false;
 				}
 			}
-			var oldHeight;
+
+			let oldHeight;
 			if (isInsideIframe) {
 				oldHeight = window.top
 					.$(divToPopup)
@@ -321,8 +220,9 @@
 					.parents('.os-internal-Popup')
 					.outerHeight();
 			}
-			var width = setWidth == -1 ? $(innerDoc).width() : setWidth;
-			var height = setHeight == -1 ? $(innerDoc).height() : setHeight;
+
+			let width = setWidth == -1 ? $(innerDoc).width() : setWidth;
+			let height = setHeight == -1 ? $(innerDoc).height() : setHeight;
 
 			var titleHeight;
 			if (isInsideIframe) {
@@ -402,7 +302,6 @@
 			var onAnimationComplete = function() {
 				setTimeout(function() {
 					if (isInsideIframe) {
-						/*$(divToPopup).dialog('size');*/
 						window.top.$('.os-internal-ui-dialog-titlebar-close-no-title').css('display', 'block');
 						window.top
 							.$(divToPopup)
@@ -410,7 +309,6 @@
 							.height('100%')
 							.width(animateFinal.width);
 					} else {
-						/*$(divToPopup).dialog('size');*/
 						$('.os-internal-ui-dialog-titlebar-close-no-title').css('display', 'block');
 						$(divToPopup)
 							.find('iframe')
@@ -450,15 +348,23 @@
 
 	const close = () => {
 		let popupToClose;
+		let popupContainer;
 
-		if (isInsideIframe) popupToClose = window.top.$('.os-internal-ui-dialog-content');
-		else popupToClose = $('.os-internal-ui-dialog-content');
+		if (isInsideIframe) {
+			popupToClose = window.top.$('.os-internal-ui-dialog-content');
+			popupContainer = window.top.$('.SapphirePopup');
+		} else {
+			popupToClose = $('.os-internal-ui-dialog-content');
+			popupContainer = $('.SapphirePopup');
+		}
 
 		popupToClose.data(POPUP_CLOSING_TAG, POPUP_CLOSING_VALUE);
 
 		setTimeout(function() {
 			popupToClose.dialog('close');
+
 			popupToClose.remove();
+			popupContainer.remove();
 		}, 0);
 	};
 
@@ -489,6 +395,91 @@
 		} catch (e) {}
 
 		return [linkHref, isAButton];
+	};
+
+	const openPopup = (divToPopup, divPleaseWait, loadTargetPage, event, config) => {
+		// Destroy any previous dialog
+		close(null);
+
+		if (isInsideIframe) {
+			const $jParent = window.top.jQuery;
+			$jParent('.os-internal-Popup').remove();
+		}
+
+		// If any close is pending, schedule to execute itself asynchronously exit
+		// If no close is pending, continue with open operation
+		let closingPopups;
+
+		if (isInsideIframe) closingPopups = window.top.$('.os-internal-ui-dialog-content');
+		else closingPopups = $('.os-internal-ui-dialog-content');
+
+		for (var i = 0; i < closingPopups.length; i++) {
+			if ($.data(closingPopups.get(i), POPUP_CLOSING_TAG) == POPUP_CLOSING_VALUE) {
+				setTimeout(function() {
+					openPopup(divToPopup, divPleaseWait, loadTargetPage, event, config);
+				}, 13);
+
+				return false;
+			}
+		}
+
+		let _dialog;
+
+		if (isInsideIframe) {
+			const popupContainer = document.createElement('DIV');
+			popupContainer.setAttribute('class', 'SapphirePopup');
+
+			window.top.document.body.appendChild(popupContainer);
+
+			_dialog = window.top.jQuery(divToPopup);
+		} else {
+			$('<div class="SapphirePopup"></div>').appendTo('body');
+
+			_dialog = $(divToPopup);
+		}
+
+		$(divPleaseWait).show();
+
+		if ($('.ISidebar').length) window.parent.SapphireWidgets.LayoutBase.openSidebarIframe(0);
+
+		_dialog.show().dialog({
+			appendTo: '.SapphirePopup',
+			dialogClass: 'os-internal-Popup',
+			resizable: false,
+			autoResize: false,
+			closeOnEscape: !config.hideCloseButton,
+			bgiframe: true,
+			draggable: false,
+			autoOpen: true,
+			title: config.setTitle,
+			modal: !(config.useModal === false),
+			height: config.setHeight == -1 ? POPUP_INITIAL_HEIGHT : config.setHeight,
+			position: 'center',
+			width: config.setWidth == -1 ? POPUP_INITIAL_WIDTH : config.setWidth,
+			zIndex: POPUP_WINDOW_INDEX,
+			close: function() {
+				// If the popup is closed before it is resized (ESC) we need to set the processing event to false.
+				$.data(event.target, 'os-internal-processing', false);
+
+				_dialog.find('iframe').unbind('load');
+				_dialog.find('iframe').attr('src', 'about:blank');
+
+				setTimeout(function() {
+					_dialog.find('iframe').empty();
+					_dialog.empty();
+				}, 13);
+			},
+		});
+
+		_dialog.find('iframe').height(0);
+		_dialog.parents('.os-internal-ui-dialog').dropShadow();
+
+		if (config.CssClasses !== ' ') {
+			if (isInsideIframe) window.top.$('.os-internal-ui-dialog').addClass(config.CssClasses);
+			else $('.os-internal-ui-dialog').addClass(config.CssClasses);
+		}
+
+		loadTargetPage();
 	};
 
 	SapphireWidgets.SapphirePopup = { create, close, resize };

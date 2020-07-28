@@ -1,5 +1,7 @@
 4015 .confirm.confirm-wb
 
+4012 .SapphirePopup
+
 102 body.PanelOpened .daterangepicker
 
 101 .PanelById .PanelContainer
