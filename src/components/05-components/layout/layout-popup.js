@@ -95,14 +95,11 @@
 		calcWidthPercentage(popupSize, $osPopupContent);
 
 		$osPopup.css({
-			//position: 'fixed',
 			left: 'unset',
 			top: 'unset',
-			//transform: 'perspective(1px) translate(-50%, -50%)',
 			height: 'auto',
 			minWidth: popupMinWidth + 'px',
 			width: popupWidth + 'px',
-			//filter: 'blur(0px)',
 		});
 	};
 

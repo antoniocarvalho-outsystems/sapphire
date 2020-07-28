@@ -6,6 +6,7 @@
 @import '01-components/layout/layout-backoffice';
 @import '01-components/webpatterns/navigation-bar';
 
+@import '../components/05-components/lds-ring';
 @import '../components/05-components/table-records';
 
 @import '../components/05-components/webpatterns/inline-dropdown/styles';
@@ -14,6 +15,7 @@
 @import '../components/05-components/v3-pat/hour-picker/styles';
 @import '../components/05-components/v3-pat/icon-label/styles';
 @import '../components/05-components/v3-pat/panel/_styles';
+@import '../components/05-components/v3-pat/sapphire-popup/styles';
 @import '../components/05-components/v3-pat/select-system/styles';
 
 @import '../components/06-helpers/scrollable';
