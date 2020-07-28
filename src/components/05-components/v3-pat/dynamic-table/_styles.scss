@@ -29,7 +29,7 @@
 	&__Header {
 		border-bottom: 1px solid $light-grey;
 		display: flex;
-		padding: 10px 12px;
+		padding: 10px 16px;
 	}
 
 	&__RowColumn,
@@ -37,7 +37,7 @@
 		@include flex-center-total;
 
 		flex: 1;
-		padding: 0 5px;
+		padding: 0 4px;
 		text-align: center;
 
 		&:last-of-type {
@@ -62,7 +62,7 @@
 	&__Rows {
 		display: flex;
 		min-height: 80px;
-		padding: 0 12px;
+		padding: 0 16px;
 
 		// PersonCard Adjustments
 		.PersonCard {
@@ -71,13 +71,13 @@
 
 			&_header {
 				border: none;
-				margin-left: -12px;
+				margin-left: -16px;
 				min-height: 100%;
 			}
 
 			&__headerLeftInfo {
 				align-items: center;
-				padding-left: 12px;
+				padding-left: 16px;
 			}
 
 			&____title {
@@ -92,7 +92,7 @@
 
 	&__RowAction {
 		position: absolute;
-		right: 10px;
+		right: 8px;
 		top: 50%;
 		transform: translateY(-50%);
 	}
@@ -106,7 +106,7 @@
 				&__Rows,
 				&__Header {
 					padding-left: 35px;
-					padding-right: 12px;
+					padding-right: 16px;
 				}
 			}
 		}
@@ -114,7 +114,7 @@
 		&__HeaderColumn {
 			&:last-child {
 				padding-left: 0;
-				padding-right: 5px;
+				padding-right: 4px;
 			}
 		}
 
@@ -126,7 +126,7 @@
 		&__Rows {
 			.PersonCard {
 				margin-left: auto;
-				margin-right: -12px;
+				margin-right: -16px;
 			}
 		}
 	}

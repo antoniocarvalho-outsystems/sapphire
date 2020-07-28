@@ -1,0 +1,22 @@
+.InputUnitBox {
+	&__Header {
+		padding: 0 16px;
+	}
+
+	&__Body {
+		align-items: center;
+		display: flex;
+	}
+
+	&__Row {
+		padding: 6px 16px;
+		width: 100%;
+
+		&--greyBackground {
+			background-color: $body-color;
+			border: 1px solid $light-grey;
+			border-radius: 4px;
+			margin-bottom: 6px;
+		}
+	}
+}

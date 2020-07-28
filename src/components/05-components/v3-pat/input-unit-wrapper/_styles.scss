@@ -1,0 +1,42 @@
+.InputUnitWrapper {
+	display: table;
+
+	&_input {
+		display: table-cell;
+
+		input {
+			border-radius: 4px 0 0 4px;
+		}
+
+		.ValidationMessage {
+			min-width: 60px;
+		}
+	}
+
+	&_label {
+		background-color: $body-color;
+		border: 1px solid $light-grey;
+		border-left: none;
+		border-radius: 0 4px 4px 0;
+		height: 36px;
+		line-height: 35px;
+		padding: 0 10px;
+	}
+}
+
+.AR,
+.FA {
+	.InputUnitWrapper {
+		&_input {
+			input {
+				border-radius: 0 4px 4px 0;
+			}
+		}
+
+		&_label {
+			border-left: 1px solid $light-grey;
+			border-radius: 4px 0 0 4px;
+			border-right: none;
+		}
+	}
+}

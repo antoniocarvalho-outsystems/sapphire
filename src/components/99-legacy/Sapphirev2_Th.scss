@@ -21738,71 +21738,71 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 
 /** 9.137 Sapphire Patterns > InputUnit **/
 
-.InputUnitWrapper {
-  display: table;
-}
+// .InputUnitWrapper {
+//   display: table;
+// }
 
-.InputUnitWrapper .InputUnitWrapper_input input {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 0;
-}
+// .InputUnitWrapper .InputUnitWrapper_input input {
+//   border-bottom-left-radius: 4px;
+//   border-bottom-right-radius: 0;
+//   border-top-left-radius: 4px;
+//   border-top-right-radius: 0;
+// }
 
-.InputUnitWrapper .InputUnitWrapper_input {
-  display: table-cell;
-}
+// .InputUnitWrapper .InputUnitWrapper_input {
+//   display: table-cell;
+// }
 
-.InputUnitWrapper .InputUnitWrapper_label {
-  background-color: #ebebeb;
-  border: solid 1px #bdbdbd;
-  border-bottom-right-radius: 4px;
-  border-left: 0;
-  border-top-right-radius: 4px;
-  /* display: table-cell; */
-  height: 36px;
-  line-height: 35px;
-  padding: 0 10px;
-}
+// .InputUnitWrapper .InputUnitWrapper_label {
+//   background-color: #ebebeb;
+//   border: solid 1px #bdbdbd;
+//   border-bottom-right-radius: 4px;
+//   border-left: 0;
+//   border-top-right-radius: 4px;
+//   /* display: table-cell; */
+//   height: 36px;
+//   line-height: 35px;
+//   padding: 0 10px;
+// }
 
-.InputUnitWrapper .InputUnitWrapper_input .ValidationMessage {
-  min-width: 60px;
-}
+// .InputUnitWrapper .InputUnitWrapper_input .ValidationMessage {
+//   min-width: 60px;
+// }
 
-.FA .InputUnitWrapper .InputUnitWrapper_label,
-.FA .InputUnitWrapper .InputUnitWrapper_input,
-.AR .InputUnitWrapper .InputUnitWrapper_label,
-.AR .InputUnitWrapper .InputUnitWrapper_input {
-  transform: scale(-1, 1);
-}
+// .FA .InputUnitWrapper .InputUnitWrapper_label,
+// .FA .InputUnitWrapper .InputUnitWrapper_input,
+// .AR .InputUnitWrapper .InputUnitWrapper_label,
+// .AR .InputUnitWrapper .InputUnitWrapper_input {
+//   transform: scale(-1, 1);
+// }
 
-.FA .InputUnitWrapper .InputUnitWrapper_label div,
-.FA .InputUnitWrapper .InputUnitWrapper_input div,
-.AR .InputUnitWrapper .InputUnitWrapper_label div,
-.AR .InputUnitWrapper .InputUnitWrapper_input div {
-  transform: scale(-1, 1);
-}
+// .FA .InputUnitWrapper .InputUnitWrapper_label div,
+// .FA .InputUnitWrapper .InputUnitWrapper_input div,
+// .AR .InputUnitWrapper .InputUnitWrapper_label div,
+// .AR .InputUnitWrapper .InputUnitWrapper_input div {
+//   transform: scale(-1, 1);
+// }
 
-.FA .InputUnitWrapper .InputUnitWrapper_input input,
-.AR .InputUnitWrapper .InputUnitWrapper_input input {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 4px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 4px;
-}
+// .FA .InputUnitWrapper .InputUnitWrapper_input input,
+// .AR .InputUnitWrapper .InputUnitWrapper_input input {
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 4px;
+//   border-top-left-radius: 0;
+//   border-top-right-radius: 4px;
+// }
 
-.FA .InputUnitWrapper input[type='text'].Not_Valid,
-.AR .InputUnitWrapper input[type='text'].Not_Valid {
-  border: solid 1px #a55555;
-  border-right-width: 3px;
-}
+// .FA .InputUnitWrapper input[type='text'].Not_Valid,
+// .AR .InputUnitWrapper input[type='text'].Not_Valid {
+//   border: solid 1px #a55555;
+//   border-right-width: 3px;
+// }
 
-.FA .ValidationMessageContainer .InputUnitWrapper span.ValidationMessage,
-.AR .ValidationMessageContainer .InputUnitWrapper span.ValidationMessage {
-  bottom: -24px;
-  left: auto;
-  right: 0;
-}
+// .FA .ValidationMessageContainer .InputUnitWrapper span.ValidationMessage,
+// .AR .ValidationMessageContainer .InputUnitWrapper span.ValidationMessage {
+//   bottom: -24px;
+//   left: auto;
+//   right: 0;
+// }
 
 /** 9.138 Sapphire Patterns > ExpandableLink **/
 

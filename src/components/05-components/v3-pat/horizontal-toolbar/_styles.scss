@@ -79,7 +79,7 @@ div.Toolbar {
 				border-bottom: 3px solid transparent;
 			}
 
-			a:focus .MenuItemWrapper {
+			> a:focus .MenuItemWrapper {
 				border-bottom: 3px solid $regular-alpha !important;
 
 				.MenuItemWrapper_Container {
