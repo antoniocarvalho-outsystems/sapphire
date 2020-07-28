@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920032 || Generated: Tue Jul 28 2020 12:07:21 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920033 || Generated: Tue Jul 28 2020 15:24:19 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10686,20 +10686,15 @@ html .Page .PatientDetailsLayout {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin-top: -2px;
+  color: #858585;
+  font-size: 0.857em;
+  margin-top: -10px;
   width: 250px; }
 
 body .Page.tablet .MainPopup,
 body .Page.desktop .MainPopup {
   min-width: auto;
   padding: 0; }
-
-div.os-internal-ui-dialog.os-internal-Popup {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
-  left: 50%;
-  top: 50% !important;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
 
 div.os-internal-Popup .os-internal-ui-dialog .os-internal-ui-dialog-titlebar,
 div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar {
@@ -21990,6 +21985,23 @@ div.List-Star {
     display: none; }
   div.List-Star > div[unselected] {
     display: block; }
+
+.SapphirePopup {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4012; }
+  .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup {
+    border: none;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+    position: relative; }
 
 .ButtonRadioInp {
   height: 34px;
