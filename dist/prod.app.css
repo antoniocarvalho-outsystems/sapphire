@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920034 || Generated: Tue Jul 28 2020 16:29:38 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920035 || Generated: Tue Jul 28 2020 18:03:05 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9089,10 +9089,10 @@ a.Button.IsDefault,
     border-top: 1px solid #d6d6d6;
     font-size: 16px;
     font-weight: bold;
-    padding: 10px; }
+    padding: 10px 16px; }
   .RelatedOrdersTable .RelatedOrders__value {
     border-top: 1px solid #d6d6d6;
-    padding: 10px; }
+    padding: 10px 16px; }
     .RelatedOrdersTable .RelatedOrders__value.NoValue {
       color: #858585;
       font-size: 0.857em;
@@ -9146,7 +9146,9 @@ a.Button.IsDefault,
                 transform: rotate(90deg);
         width: 22px;
         z-index: 1;
-        font-size: 0.857em; }
+        font-size: 0.857em;
+        -webkit-transform: rotate(0);
+                transform: rotate(0); }
         .LayoutBlank .SectionExpandable_header .Heading2.SectionExpandable__icon span:before,
         .LayoutBase .SectionExpandable_header .Heading2.SectionExpandable__icon span:before {
           color: #009884;
@@ -16184,7 +16186,7 @@ body.PanelOpened .daterangepicker {
     border-bottom: 1px solid #d6d6d6;
     display: -webkit-box;
     display: flex;
-    padding: 10px 12px; }
+    padding: 10px 16px; }
   .DynamicTable__RowColumn, .DynamicTable__HeaderColumn, .DynamicTable__RowColumn--main, .DynamicTable__HeaderColumn--main {
     -webkit-box-align: center;
             align-items: center;
@@ -16194,7 +16196,7 @@ body.PanelOpened .daterangepicker {
             justify-content: center;
     -webkit-box-flex: 1;
             flex: 1;
-    padding: 0 5px;
+    padding: 0 4px;
     text-align: center; }
     .DynamicTable__RowColumn:last-of-type, .DynamicTable__HeaderColumn:last-of-type, .DynamicTable__RowColumn--main:last-of-type, .DynamicTable__HeaderColumn--main:last-of-type {
       padding-right: 0; }
@@ -16211,25 +16213,25 @@ body.PanelOpened .daterangepicker {
     display: -webkit-box;
     display: flex;
     min-height: 80px;
-    padding: 0 12px; }
+    padding: 0 16px; }
     .DynamicTable__Rows .PersonCard {
       height: 100%;
       width: 100%; }
       .DynamicTable__Rows .PersonCard_header {
         border: none;
-        margin-left: -12px;
+        margin-left: -16px;
         min-height: 100%; }
       .DynamicTable__Rows .PersonCard__headerLeftInfo {
         -webkit-box-align: center;
                 align-items: center;
-        padding-left: 12px; }
+        padding-left: 16px; }
       .DynamicTable__Rows .PersonCard____title {
         width: 100%; }
         .DynamicTable__Rows .PersonCard____title .DoubleText {
           width: 100%; }
   .DynamicTable__RowAction {
     position: absolute;
-    right: 10px;
+    right: 8px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
@@ -16238,14 +16240,14 @@ body.PanelOpened .daterangepicker {
 .FA .DynamicTable--hasDelete .DynamicTable__Rows,
 .FA .DynamicTable--hasDelete .DynamicTable__Header {
   padding-left: 35px;
-  padding-right: 12px; }
+  padding-right: 16px; }
 
 .AR .DynamicTable__HeaderColumn:last-child, .AR .DynamicTable__RowColumn--main:last-child, .AR .DynamicTable__HeaderColumn--main:last-child,
 .FA .DynamicTable__HeaderColumn:last-child,
 .FA .DynamicTable__RowColumn--main:last-child,
 .FA .DynamicTable__HeaderColumn--main:last-child {
   padding-left: 0;
-  padding-right: 5px; }
+  padding-right: 4px; }
 
 .AR .DynamicTable__RowAction,
 .FA .DynamicTable__RowAction {
@@ -16255,7 +16257,7 @@ body.PanelOpened .daterangepicker {
 .AR .DynamicTable__Rows .PersonCard,
 .FA .DynamicTable__Rows .PersonCard {
   margin-left: auto;
-  margin-right: -12px; }
+  margin-right: -16px; }
 
 .ExpandableGroup .ExpandableGroupItem {
   margin-bottom: 10px; }
@@ -17493,9 +17495,9 @@ div.Toolbar {
       div.Toolbar__Items .ListRecords a .MenuItemWrapper {
         border: 1px solid transparent;
         border-bottom: 3px solid transparent; }
-      div.Toolbar__Items .ListRecords a:focus .MenuItemWrapper {
+      div.Toolbar__Items .ListRecords > a:focus .MenuItemWrapper {
         border-bottom: 3px solid #00bfa5 !important; }
-        div.Toolbar__Items .ListRecords a:focus .MenuItemWrapper .MenuItemWrapper_Container {
+        div.Toolbar__Items .ListRecords > a:focus .MenuItemWrapper .MenuItemWrapper_Container {
           color: #009884; }
       div.Toolbar__Items .ListRecords a[disabled] {
         cursor: not-allowed; }
@@ -18216,6 +18218,51 @@ body ul.os-internal-ui-autocomplete a strong {
 body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   color: #6fcdca !important; }
 
+.InputUnitBox__Header {
+  padding: 0 16px; }
+
+.InputUnitBox__Body {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex; }
+
+.InputUnitBox__Row {
+  padding: 6px 16px;
+  width: 100%; }
+  .InputUnitBox__Row--greyBackground {
+    background-color: #f3f3f3;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    margin-bottom: 6px; }
+
+.InputUnitWrapper {
+  display: table; }
+  .InputUnitWrapper_input {
+    display: table-cell; }
+    .InputUnitWrapper_input input {
+      border-radius: 4px 0 0 4px; }
+    .InputUnitWrapper_input .ValidationMessage {
+      min-width: 60px; }
+  .InputUnitWrapper_label {
+    background-color: #f3f3f3;
+    border: 1px solid #d6d6d6;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    height: 36px;
+    line-height: 35px;
+    padding: 0 10px; }
+
+.AR .InputUnitWrapper_input input,
+.FA .InputUnitWrapper_input input {
+  border-radius: 0 4px 4px 0; }
+
+.AR .InputUnitWrapper_label,
+.FA .InputUnitWrapper_label {
+  border-left: 1px solid #d6d6d6;
+  border-radius: 4px 0 0 4px;
+  border-right: none; }
+
 .InputWithClear-container {
   position: relative; }
 
@@ -18243,10 +18290,10 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px; }
   .AddLine_HeaderItems {
-    padding: 8px 0 6px 10px; }
+    padding: 6px 0 6px 16px; }
     .AddLine_HeaderItems > div {
       margin-left: auto;
-      margin-right: 15px;
+      margin-right: 16px;
       vertical-align: middle;
       white-space: nowrap; }
   .AddLine__ContentContainer {
@@ -18277,10 +18324,10 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 
 .AR .AddLine_HeaderItems,
 .FA .AddLine_HeaderItems {
-  padding: 8px 10px 6px 0; }
+  padding: 6px 16px 6px 0; }
   .AR .AddLine_HeaderItems > div,
   .FA .AddLine_HeaderItems > div {
-    margin-left: 15px;
+    margin-left: 16px;
     margin-right: auto;
     vertical-align: middle; }
 
@@ -18461,7 +18508,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   padding-right: 0; }
 
 .LineContent {
-  margin-left: 10px;
+  padding-left: 16px;
   vertical-align: middle; }
   .LineContent_Items > div {
     line-height: 15px;
@@ -38383,64 +38430,6 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
   display: initial; }
 
 /** 9.137 Sapphire Patterns > InputUnit **/
-.InputUnitWrapper {
-  display: table; }
-
-.InputUnitWrapper .InputUnitWrapper_input input {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 0; }
-
-.InputUnitWrapper .InputUnitWrapper_input {
-  display: table-cell; }
-
-.InputUnitWrapper .InputUnitWrapper_label {
-  background-color: #ebebeb;
-  border: solid 1px #bdbdbd;
-  border-bottom-right-radius: 4px;
-  border-left: 0;
-  border-top-right-radius: 4px;
-  /* display: table-cell; */
-  height: 36px;
-  line-height: 35px;
-  padding: 0 10px; }
-
-.InputUnitWrapper .InputUnitWrapper_input .ValidationMessage {
-  min-width: 60px; }
-
-.FA .InputUnitWrapper .InputUnitWrapper_label,
-.FA .InputUnitWrapper .InputUnitWrapper_input,
-.AR .InputUnitWrapper .InputUnitWrapper_label,
-.AR .InputUnitWrapper .InputUnitWrapper_input {
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1); }
-
-.FA .InputUnitWrapper .InputUnitWrapper_label div,
-.FA .InputUnitWrapper .InputUnitWrapper_input div,
-.AR .InputUnitWrapper .InputUnitWrapper_label div,
-.AR .InputUnitWrapper .InputUnitWrapper_input div {
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1); }
-
-.FA .InputUnitWrapper .InputUnitWrapper_input input,
-.AR .InputUnitWrapper .InputUnitWrapper_input input {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 4px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 4px; }
-
-.FA .InputUnitWrapper input[type='text'].Not_Valid,
-.AR .InputUnitWrapper input[type='text'].Not_Valid {
-  border: solid 1px #a55555;
-  border-right-width: 3px; }
-
-.FA .ValidationMessageContainer .InputUnitWrapper span.ValidationMessage,
-.AR .ValidationMessageContainer .InputUnitWrapper span.ValidationMessage {
-  bottom: -24px;
-  left: auto;
-  right: 0; }
-
 /** 9.138 Sapphire Patterns > ExpandableLink **/
 /** 9.139 Sapphire Patterns > SelectableList_line **/
 .SelectableListWrapper {
