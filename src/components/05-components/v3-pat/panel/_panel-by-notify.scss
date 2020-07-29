@@ -1,44 +1,7 @@
-.PanelBackground {
-	&.ConfirmWB {
-		background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-		bottom: 0;
-		left: 0;
-		position: fixed;
-		right: 0;
-		top: 0;
-		transition: all 0.14s ease;
-		z-index: 20;
-	}
-}
-
 .PanelContainer {
 	&.Confirm {
-		@include shadow-large;
-
-		background: $regular-white;
-		border-radius: 4px;
-		display: none;
-		left: 50%;
 		max-width: 400px;
-		padding: 30px 20px;
-		position: fixed;
-		text-align: center;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
-		z-index: 51;
 
-		.PanelTitle {
-			font-family: $font-family-latin-bold;
-			font-size: $font-size-heading2;
-			margin-bottom: 20px;
-		}
-
-		.PanelMessage {
-			font-size: $font-size-normal;
-			line-height: normal;
-			margin-bottom: 30px;
-		}
 		.PanelActions {
 			white-space: nowrap;
 		}

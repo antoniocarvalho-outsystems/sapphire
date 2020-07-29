@@ -4,8 +4,6 @@
 
 102 body.PanelOpened .daterangepicker
 
-101 .PanelById .PanelContainer
-
 90 body.LayoutBase .os-internal-ui-widget-overlay
 
 80 body.LayoutBase .tooltipster-location--Default
@@ -30,6 +28,7 @@
 20 .Header
 20 .PanelBackground.ConfirmWB
 20 .PanelById .PanelBackground
+20 .modalPopup
 
 6 .LayoutBase-Content .LayoutBase-secondary.isFixed
 

@@ -1,92 +1,88 @@
 .LayoutPopup {
 	width: 100%;
+
+	&.SmallPopup {
+		.LayoutPopup__body__sidebar {
+			display: none;
+		}
+	}
+
+	&-loading {
+		@include absolute-center;
+
+		color: $regular-grey;
+		font-size: 0.857em;
+		margin-top: -10px;
+		width: 250px;
+	}
+
+	&__header {
+		display: block;
+		padding: 30px 30px 0 30px;
+
+		&__text {
+			width: 100%;
+		}
+
+		&__text__title {
+			margin-bottom: 5px;
+		}
+
+		&__text__subtitle {
+			font-size: $font-size-heading3;
+			line-height: 20px;
+		}
+	}
+
+	&__intro {
+		padding: 10px 30px;
+	}
+
+	&__body {
+		display: flex;
+		padding: 30px 20px 30px 30px;
+
+		&__sidebar {
+			padding-right: 20px;
+			width: 270px;
+		}
+
+		&__content {
+			@include component-scroll-root;
+
+			overflow-y: scroll;
+			padding-right: 5px;
+			width: 100%;
+
+			> .MinHeightSmall {
+				min-height: 420px;
+			}
+
+			> .MinHeightMedium {
+				min-height: 500px;
+			}
+		}
+	}
+
+	&__footer {
+		padding: 0 30px 30px;
+	}
+
+	&_wrapper {
+		width: 100%;
+	}
 }
 
-.LayoutPopup__body {
-	display: flex;
-}
+.AR,
+.FA {
+	.LayoutPopup {
+		&__body {
+			padding: 30px 30px 30px 20px;
 
-.LayoutPopup__header {
-	display: block;
-	padding: 20px 20px 10px 20px;
-}
-
-.LayoutPopup__header__text {
-	width: 100%;
-}
-
-.LayoutPopup__header__text__title {
-	margin-bottom: 5px;
-}
-
-.LayoutPopup__header__text__subtitle {
-	font-size: $font-size-heading3;
-	line-height: 20px;
-}
-
-.LayoutPopup_wrapper {
-	width: 100%;
-}
-
-.LayoutPopup__intro {
-	padding: 10px 20px;
-}
-
-.LayoutPopup__body {
-	display: flex;
-	padding: 20px 20px;
-}
-
-.LayoutPopup.SmallPopup .LayoutPopup__body__sidebar {
-	display: none;
-}
-
-.LayoutPopup__body__sidebar {
-	padding-right: 20px;
-	width: 270px;
-}
-
-.LayoutPopup__body__content {
-	@include component-scroll-root;
-
-	overflow-y: scroll;
-	width: 100%;
-}
-
-.LayoutPopup__footer {
-	padding: 10px 20px;
-}
-
-.LayoutPopup__body__content > .MinHeightSmall {
-	min-height: 420px;
-}
-
-.LayoutPopup__body__content > .MinHeightMedium {
-	min-height: 500px;
-}
-
-.LayoutPopup .PhotoFrame img {
-	max-height: 60px;
-	max-width: 60px;
-}
-
-.LayoutPopup-loading {
-	@include absolute-center();
-
-	color: $regular-grey;
-	font-size: 0.857em;
-	margin-top: -10px;
-	width: 250px;
-}
-
-body .Page.tablet .MainPopup,
-body .Page.desktop .MainPopup {
-	min-width: auto;
-	padding: 0;
-}
-
-div.os-internal-Popup .os-internal-ui-dialog .os-internal-ui-dialog-titlebar,
-div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar {
-	display: none;
-	height: 0;
+			&__content {
+				padding-left: 5px;
+				padding-right: 0;
+			}
+		}
+	}
 }

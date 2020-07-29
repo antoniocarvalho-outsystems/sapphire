@@ -1,29 +1,13 @@
-.body.SapphirePanelOpen {
-	overflow: hidden;
-	position: static;
-}
-
 .SapphirePanel {
-	-servicestudio-display: block;
 	display: none;
-
-	-servicestudio-position: relative;
 	position: absolute;
 }
 
 .SapphirePanel_Background {
-	background-image: radial-gradient(
-		circle at 50% 100%,
-		rgba(0, 0, 0, 0.05),
-		rgba(0, 0, 0, 0.2)
-	);
+	background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
 	bottom: 0;
-	-servicestudio-color: #252525;
 	color: #252525;
-
-	-servicestudio-display: none;
 	left: 0;
-	-servicestudio-position: static;
 	position: fixed;
 	right: 0;
 	top: 0;

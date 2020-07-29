@@ -14,6 +14,8 @@
 	var $overlay = window.parent.$('.os-internal-ui-widget-overlay');
 	var popupSize;
 
+	const BODY_PADDING_TOP_BOTTOM = 60;
+
 	const create = function(config) {
 		SapphireWidgets.LayoutPopup.config = config;
 		popupSize = SapphireWidgets.LayoutPopup.config.PopupSize;
@@ -119,7 +121,7 @@
 		var introHeight = $('.LayoutPopup__intro').innerHeight() || 0;
 		var bodyHeight = $('.LayoutPopup__body__content')[0].scrollHeight || 0;
 		var footerHeight = $('.LayoutPopup__footer').innerHeight() || 0;
-		var contentHeight = headerHeight + introHeight + bodyHeight + footerHeight + 40;
+		var contentHeight = headerHeight + introHeight + bodyHeight + footerHeight + BODY_PADDING_TOP_BOTTOM;
 		var dialogHeight = window.parent.$('.os-internal-Popup.os-internal-ui-dialog').outerHeight();
 		const windowHeight = $(window.parent).height();
 
@@ -128,13 +130,13 @@
 
 			if (contentHeight > parentHeight) {
 				$osPopupContent.height(parentHeight - 70);
-				$body.height($osPopupContent.height() - 40);
+				$body.height($osPopupContent.height() - BODY_PADDING_TOP_BOTTOM);
 			} else {
 				$osPopupContent.height(contentHeight);
 			}
 		} else {
 			if (contentHeight < dialogHeight && SapphireWidgets.LayoutPopup.config.isFixedHeight) {
-				var forcedBodyHeight = dialogHeight - headerHeight - introHeight - footerHeight - 40;
+				var forcedBodyHeight = dialogHeight - headerHeight - introHeight - footerHeight - BODY_PADDING_TOP_BOTTOM;
 				$body.height(forcedBodyHeight);
 			} else if (contentHeight < dialogHeight) {
 				$osPopupContent.height(contentHeight);
@@ -143,12 +145,12 @@
 					$body.height(bodyHeight + diference);
 				}
 			} else if (contentHeight >= dialogHeight && SapphireWidgets.LayoutPopup.config.isFixedHeight) {
-				var forcedBodyHeight = dialogHeight - headerHeight - introHeight - footerHeight - 40;
+				var forcedBodyHeight = dialogHeight - headerHeight - introHeight - footerHeight - BODY_PADDING_TOP_BOTTOM;
 				$body.height(forcedBodyHeight);
 			} else if (contentHeight >= dialogHeight) {
 				if (contentHeight > popupMaxHeight) {
 					$osPopupContent.height(popupMaxHeight);
-					var forcedBodyHeight = popupMaxHeight - headerHeight - introHeight - footerHeight - 40;
+					var forcedBodyHeight = popupMaxHeight - headerHeight - introHeight - footerHeight - BODY_PADDING_TOP_BOTTOM;
 					$body.height(forcedBodyHeight);
 				} else {
 					$osPopupContent.height(contentHeight);
@@ -165,7 +167,7 @@
 				var difference = dateRangePicker[0].getBoundingClientRect().bottom - dialogHeight;
 				var bodyHeight = $('.LayoutPopup__body__content').outerHeight(true);
 
-				$('.LayoutPopup__body__content').height(bodyHeight + difference + 40);
+				$('.LayoutPopup__body__content').height(bodyHeight + difference + BODY_PADDING_TOP_BOTTOM);
 				$osPopupContent.height($('body')[0].scrollHeight);
 
 				const popupTotalHeight = $osPopupContent.height();

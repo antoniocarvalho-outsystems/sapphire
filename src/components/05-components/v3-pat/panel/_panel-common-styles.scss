@@ -4,6 +4,44 @@
 	box-shadow: none;
 	display: none;
 	position: absolute;
+
+	.PanelBackground {
+		background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		transition: all 0.14s ease;
+		z-index: 20;
+	}
+
+	.PanelContainer {
+		@include shadow-large;
+		@include absolute-center;
+
+		background-color: $regular-white;
+		border-radius: 8px;
+		display: none;
+		padding: 30px 20px;
+		position: fixed;
+		text-align: center;
+		width: 100%;
+		z-index: 51;
+
+		.PanelTitle {
+			font-family: $font-family-latin-bold;
+			font-size: 1.429em;
+			margin-bottom: 20px;
+		}
+
+		.PanelMessage {
+			font-size: 1em;
+			line-height: normal;
+			margin-bottom: 30px;
+			white-space: normal;
+		}
+	}
 }
 
 .PanelOpened {

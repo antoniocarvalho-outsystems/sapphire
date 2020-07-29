@@ -1,8 +1,17 @@
 .modalPopup {
+	@include flex-center-total;
+
 	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 20;
 
 	&.Open {
-		display: block;
+		display: flex;
 
 		&.showclose {
 			.modalPopup_close {
@@ -12,22 +21,22 @@
 				font-size: 1em;
 				max-width: 15px;
 				position: absolute;
-				right: 20px;
-				top: 20px;
+				right: 30px;
+				top: 30px;
 			}
 		}
 
 		.modalPopup_container {
+			@include shadow-large;
+
 			background-color: $regular-white;
+			border-radius: 8px;
 			display: block;
-			left: 50%;
 			max-height: 80%;
 			min-width: 250px;
 			overflow: auto;
-			padding: 30px 20px;
+			padding: 30px;
 			position: fixed;
-			top: 50%;
-			transform: translate(-50%, -50%);
 			width: auto;
 			z-index: 60;
 		}

@@ -13,15 +13,17 @@ SapphireWidgets.PanelById = {
 	},
 
 	togglePanelById: function(Id) {
+		const $toggleButton = $(`#${Id}`).parents('.ToggleButton');
+		const $panel = $toggleButton.parent().children('.Panel');
+		const $panelContainer = $panel.children('.PanelContainer');
+		const $panelBackground = $panel.children('.PanelBackground');
+
 		if (!this.isAnyPanelOpenedDeprecated()) {
 			$('body').addClass('PanelOpened');
 			$('body').css('overflow-y', 'hidden');
 
-			$('#' + Id)
-				.parents('.ToggleButton')
-				.parent()
-				.children('.Panel')
-				.fadeIn(140);
+			$panel.show();
+			$panelContainer.slideDown(200);
 
 			try {
 				if (typeof justDragged !== 'undefined') {
@@ -37,39 +39,23 @@ SapphireWidgets.PanelById = {
 			}
 
 			setTimeout(function() {
-				$('#' + Id)
-					.parents('.ToggleButton')
-					.parent()
-					.children('.Panel')
-					.children('.PanelContainer')
-					.slideDown(150);
+				$panelBackground.fadeIn(80);
 
-				$(`#${Id}`)
-					.parents('.ToggleButton')
-					.click();
-			}, 100);
+				$toggleButton.click();
+			}, 50);
 		} else {
-			$('body').removeClass('PanelOpened');
-			$('body').css('overflow-y', 'scroll');
-
-			$('#' + Id)
-				.parents('.ToggleButton')
-				.parent()
-				.children('.Panel')
-				.fadeOut(140);
+			$panelContainer.slideUp(200);
 
 			setTimeout(function() {
-				$('#' + Id)
-					.parents('.ToggleButton')
-					.parent()
-					.children('.Panel')
-					.children('.PanelContainer')
-					.slideUp(150);
+				$panelBackground.fadeOut(80, () => {
+					$toggleButton.click();
 
-				$(`#${Id}`)
-					.parents('.ToggleButton')
-					.click();
-			}, 100);
+					$('body').css('overflow-y', 'scroll');
+					$('body').removeClass('PanelOpened');
+
+					$panel.hide();
+				});
+			}, 50);
 		}
 	},
 };

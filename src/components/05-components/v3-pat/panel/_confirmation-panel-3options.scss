@@ -13,16 +13,4 @@
 			}
 		}
 	}
-
-	.PanelTitle {
-		.PanelContainer {
-			&.Confirm {
-				.PanelTitle {
-					font-family: $font-family-latin-bold;
-					font-size: $font-size-heading3;
-					margin-bottom: 20px;
-				}
-			}
-		}
-	}
 }

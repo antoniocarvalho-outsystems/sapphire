@@ -21,6 +21,18 @@
 	}
 }
 
+// ModalPopup
+.SapphirePanel {
+	-servicestudio-display: block;
+	-servicestudio-position: relative;
+
+	&_Background {
+		-servicestudio-color: #252525;
+		-servicestudio-display: none;
+		-servicestudio-position: static;
+	}
+}
+
 .Panel {
 	-servicestudio-display: block !important;
 	-servicestudio-position: relative !important;
