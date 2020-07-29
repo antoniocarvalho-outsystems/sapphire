@@ -100,6 +100,8 @@ $tab-height: 44px;
 }
 
 .TabWrapper {
+	@include flex-center-vertically();
+
 	border-top: solid 3px $regular-alpha;
 	height: $tab-height;
 	min-width: 100px;
@@ -175,10 +177,7 @@ $tab-height: 44px;
 	}
 
 	.TabWrapper {
-		@include flex-center-vertically();
-
 		background-color: $regular-white;
-		border-bottom: solid 3px $regular-white;
 		border-top-color: $regular-white;
 		border-top-left-radius: 4px;
 		border-top-right-radius: 4px;
@@ -188,8 +187,10 @@ $tab-height: 44px;
 		line-height: calc(#{$tab-height} - 5px);
 		padding-left: 24px;
 		padding-right: 24px;
+		transition: all 0.5s;
 
 		&:hover {
+			background-color: $sapphire-light;
 			border-top-color: $regular-alpha;
 			color: $regular-beta;
 		}
@@ -219,10 +220,6 @@ $tab-height: 44px;
 			color: $regular-red;
 		}
 	}
-}
-
-.tablet .TabWrapper.Active {
-	display: block;
 }
 
 .tablet .FullScreenTabsWrapper_Container {
