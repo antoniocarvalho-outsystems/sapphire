@@ -33,7 +33,7 @@
 
 	background-color: $regular-white;
 	border: none;
-	border-radius: 4px;
+	border-radius: $border-radius-default;
 
 	.sp-picker-container {
 		border-left: none;
@@ -66,7 +66,7 @@
 		.sp-hue,
 		.sp-color {
 			border-color: $light-grey;
-			border-radius: 4px;
+			border-radius: $border-radius-default;
 		}
 	}
 }

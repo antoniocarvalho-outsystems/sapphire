@@ -46,16 +46,14 @@ SapphireWidgets.PanelById = {
 		} else {
 			$panelContainer.slideUp(200);
 
-			setTimeout(function() {
-				$panelBackground.fadeOut(80, () => {
-					$toggleButton.click();
+			$panelBackground.fadeOut(80, () => {
+				$toggleButton.click();
 
-					$('body').css('overflow-y', 'scroll');
-					$('body').removeClass('PanelOpened');
+				$('body').css('overflow-y', 'scroll');
+				$('body').removeClass('PanelOpened');
 
-					$panel.hide();
-				});
-			}, 50);
+				$panel.hide();
+			});
 		}
 	},
 };

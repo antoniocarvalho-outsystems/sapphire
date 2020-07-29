@@ -16,7 +16,7 @@ $ActionsMenu-color-active: $regular-alpha;
 
 	background-color: $regular-white;
 	border: 0;
-	border-radius: 4px;
+	border-radius: $border-radius-default;
 	display: none;
 	min-width: 245px;
 }

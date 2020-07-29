@@ -6,14 +6,14 @@ body.PanelById.PanelOpened {
 .PanelById {
 	.Panel {
 		display: none;
-	}
 
-	.PanelContainer {
-		max-width: 800px;
-		//overflow: visible !important;
+		.PanelContainer {
+			max-width: 800px;
+			z-index: 100;
 
-		&.done {
-			bottom: 0;
+			&.done {
+				bottom: 0;
+			}
 		}
 	}
 

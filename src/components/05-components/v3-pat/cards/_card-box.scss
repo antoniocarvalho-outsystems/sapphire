@@ -1,6 +1,6 @@
 .CardBox {
 	background: $regular-white;
-	border-radius: 4px;
+	border-radius: $border-radius-default;
 	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 	display: flex;

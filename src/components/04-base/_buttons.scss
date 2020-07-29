@@ -202,7 +202,7 @@ a.Button.IsDefault,
 	}
 
 	&.Big {
-		border-radius: 10px;
+		border-radius: $border-radius-medium;
 		font-size: $font-size-big;
 		height: 50px;
 		line-height: 44px;
@@ -223,7 +223,7 @@ a.Button.IsDefault,
 
 	&.Button.TwoLines,
 	&.Button.twoLines {
-		border-radius: 2px;
+		border-radius: $border-radius-medium;
 		height: auto;
 		line-height: 15px;
 		padding: 8px 10px;

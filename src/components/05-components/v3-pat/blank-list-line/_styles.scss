@@ -1,7 +1,7 @@
 .BlankListLine {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
-	border-radius: 4px;
+	border-radius: $border-radius-default;
 	display: table;
 	padding: 16px;
 	width: 100%;

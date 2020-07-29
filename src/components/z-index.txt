@@ -4,6 +4,8 @@
 
 102 body.PanelOpened .daterangepicker
 
+100 .PanelById .PanelContainer
+
 90 body.LayoutBase .os-internal-ui-widget-overlay
 
 80 body.LayoutBase .tooltipster-location--Default
