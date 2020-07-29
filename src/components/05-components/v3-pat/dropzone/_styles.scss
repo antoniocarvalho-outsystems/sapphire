@@ -4,7 +4,7 @@
 	.dropzone {
 		background: $regular-white;
 		border: 1px dashed $light-grey;
-		border-radius: 5px;
+		border-radius: $border-radius-default;
 		min-height: 80px;
 		padding: 0;
 		padding-top: 24px;

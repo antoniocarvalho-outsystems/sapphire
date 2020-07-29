@@ -1,7 +1,7 @@
 .LineCardList {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
-	border-radius: 4px;
+	border-radius: $border-radius-default;
 	cursor: pointer;
 	padding: 12px 10px;
 	transition: all 0.2s ease-in-out;

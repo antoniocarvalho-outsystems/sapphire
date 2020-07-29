@@ -1,6 +1,6 @@
 .GrayCounter {
 	border: 1px solid $light-grey;
-	border-radius: 4px;
+	border-radius: $border-radius-default;
 	display: inline-block;
 	height: 30px;
 	margin-right: 10px;

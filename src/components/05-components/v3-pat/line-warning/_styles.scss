@@ -1,60 +1,60 @@
 .LineWarns {
-  min-height: 48px;
+	min-height: 48px;
 
-  &--withBorder & {
-    &_list {
-      border: 1px solid $light-grey;
-    }
-  }
+	&--withBorder & {
+		&_list {
+			border: 1px solid $light-grey;
+		}
+	}
 
-  &.ColorYellowBG,
-  &.ColorLightYellowBG {
-    .LineWarns__icon {
-      color: $dark-yellow;
-    }
-  }
+	&.ColorYellowBG,
+	&.ColorLightYellowBG {
+		.LineWarns__icon {
+			color: $dark-yellow;
+		}
+	}
 
-  &.ColorRedBG,
-  &.ColorLightRedBG {
-    .LineWarns__icon {
-      color: $dark-red;
-    }
-  }
+	&.ColorRedBG,
+	&.ColorLightRedBG {
+		.LineWarns__icon {
+			color: $dark-red;
+		}
+	}
 
-  &_list {
-    border-collapse: separate;
-    border-radius: 4px;
-    display: table;
-    min-height: 48px;
-    overflow: hidden;
-    padding: $sapphire__sizes__xsmall $sapphire__sizes__large;
-    width: 100%;
+	&_list {
+		border-collapse: separate;
+		border-radius: $border-radius-default;
+		display: table;
+		min-height: 48px;
+		overflow: hidden;
+		padding: $sapphire__sizes__xsmall $sapphire__sizes__large;
+		width: 100%;
 
-    >div {
-      display: table-cell;
-      vertical-align: middle;
-    }
-  }
+		> div {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
 
-  &__icon {
-    font-size: initial;
-    width: 35px;
-  }
+	&__icon {
+		font-size: initial;
+		width: 35px;
+	}
 
-  &__buttonContainer {
-    text-align: right;
-    width: 11%;
-  }
+	&__buttonContainer {
+		text-align: right;
+		width: 11%;
+	}
 
-  .LineWarningActions {
-    min-width: 10%;
-    text-align: right;
-  }
+	.LineWarningActions {
+		min-width: 10%;
+		text-align: right;
+	}
 }
 
 .AR,
 .FA {
-  .LineWarns__buttonContainer {
-    text-align: left;
-  }
+	.LineWarns__buttonContainer {
+		text-align: left;
+	}
 }

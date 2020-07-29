@@ -17,7 +17,7 @@
 	&_Header {
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
-		border-radius: 4px;
+		border-radius: $border-radius-default;
 		display: table;
 		height: 60px;
 		padding: 5px 10px;
@@ -35,7 +35,7 @@
 	}
 
 	&_Content {
-		border-radius: 0 0 4px 4px;
+		border-radius: 0 0 $border-radius-default $border-radius-default;
 
 		.SessionList {
 			.SessionList_Content {

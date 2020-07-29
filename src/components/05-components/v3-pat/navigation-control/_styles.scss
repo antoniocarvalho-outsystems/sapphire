@@ -3,12 +3,12 @@ $NavigationControl-color-hover: $regular-zeta;
 
 .Vertical .navigation-control-item,
 .navigation-control-item:first-child {
-	border-radius: 5px;
+	border-radius: $border-radius-default;
 }
 
 .navigation-control-item {
 	border: solid 1px $NavigationControl-color-active;
-	border-radius: 5px;
+	border-radius: $border-radius-default;
 	color: $NavigationControl-color-active;
 	display: inline-block;
 	font-size: 1.09rem;
@@ -88,34 +88,34 @@ $NavigationControl-color-hover: $regular-zeta;
 
 .Vertical .multi-control-item,
 .multi-control-item:first-child {
-	border-bottom-left-radius: 5px;
+	border-bottom-left-radius: $border-radius-default;
 	border-left: solid 1px #11455d;
-	border-top-left-radius: 5px;
+	border-top-left-radius: $border-radius-default;
 }
 
 .AR .Vertical .multi-control-item,
 .AR .multi-control-item:first-child {
 	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 5px;
+	border-bottom-right-radius: $border-radius-default;
 	border-left: none;
 	border-right: solid 1px #11455d;
 	border-top-left-radius: 0;
-	border-top-right-radius: 5px;
+	border-top-right-radius: $border-radius-default;
 }
 
 .Vertical .multi-control-item,
 .multi-control-item:last-child {
-	border-bottom-right-radius: 5px;
+	border-bottom-right-radius: $border-radius-default;
 	border-right: solid 1px #11455d;
-	border-top-right-radius: 5px;
+	border-top-right-radius: $border-radius-default;
 }
 
 .AR .Vertical .multi-control-item,
 .AR .multi-control-item:last-child {
-	border-bottom-left-radius: 5px;
+	border-bottom-left-radius: $border-radius-default;
 	border-bottom-right-radius: 0;
 	border-left: solid 1px #11455d;
-	border-top-left-radius: 5px;
+	border-top-left-radius: $border-radius-default;
 	border-top-right-radius: 0;
 }
 

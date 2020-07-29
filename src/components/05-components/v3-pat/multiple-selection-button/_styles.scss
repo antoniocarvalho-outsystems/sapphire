@@ -19,7 +19,7 @@
 			&:hover {
 				background-color: $regular-alpha;
 				border: 1px solid $regular-alpha;
-				border-radius: 4px;
+				border-radius: $border-radius-default;
 				color: $regular-white;
 
 				+ .ButtonCheckboxInput_CheckBox input[type='checkbox'] {
@@ -63,7 +63,7 @@
 	.MultipleSelectionButton-label {
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
-		border-radius: 4px;
+		border-radius: $border-radius-default;
 		cursor: pointer;
 		display: block;
 		font-size: 1em;

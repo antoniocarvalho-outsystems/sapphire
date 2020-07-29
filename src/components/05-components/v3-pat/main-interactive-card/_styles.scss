@@ -47,7 +47,7 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 .MainInteractiveCard {
 	background-color: $MainInteractiveCard-color-disabled-background;
 	border: 1px solid $light-grey;
-	border-radius: 4px;
+	border-radius: $border-radius-default;
 	padding: 16px;
 	position: relative;
 }
