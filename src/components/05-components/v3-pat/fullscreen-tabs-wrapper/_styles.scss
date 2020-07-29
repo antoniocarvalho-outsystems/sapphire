@@ -100,8 +100,6 @@ $tab-height: 44px;
 }
 
 .TabWrapper {
-	@include flex-center-vertically();
-
 	border-top: solid 3px $regular-alpha;
 	height: $tab-height;
 	min-width: 100px;
@@ -177,13 +175,14 @@ $tab-height: 44px;
 	}
 
 	.TabWrapper {
+		@include flex-center-vertically();
+
 		background-color: $regular-white;
 		border-bottom: solid 3px $regular-white;
 		border-top-color: $regular-white;
 		border-top-left-radius: 4px;
 		border-top-right-radius: 4px;
 		color: $mid-dark-grey;
-		display: block;
 		font-family: $font-family-latin-bold;
 		font-size: 1rem;
 		line-height: calc(#{$tab-height} - 5px);
