@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920038 || Generated: Wed Jul 29 2020 14:57:22 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920039 || Generated: Wed Jul 29 2020 15:48:15 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4852,7 +4852,7 @@ input[type='number'] {
   input[type='number'].Not_Valid {
     border: 1px solid #ff3e2d;
     border-left-width: 3px;
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: none; }
     select.Not_Valid:hover, select.Not_Valid:focus,
     textarea.Not_Valid:hover,
@@ -6676,7 +6676,7 @@ a.Button.IsDefault,
   .PanelOpened a.Button.Is_Default.Big,
   .PanelOpened .DropZoneContainer .row .Is_Default.Big.Button,
   .DropZoneContainer .row .PanelOpened .Is_Default.Big.Button {
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 2.143em;
     height: 50px;
     line-height: 44px;
@@ -6776,7 +6776,7 @@ a.Button.IsDefault,
   .PanelOpened a.Button.Is_Default.Button.twoLines,
   .PanelOpened .DropZoneContainer .row .Is_Default.twoLines.Button,
   .DropZoneContainer .row .PanelOpened .Is_Default.twoLines.Button {
-    border-radius: 2px;
+    border-radius: 8px;
     height: auto;
     line-height: 15px;
     padding: 8px 10px; }
@@ -7221,7 +7221,6 @@ a.Button.IsDefault,
   .AvailabilityCardContainer .AvailabilityCardRightContainer {
     background-color: #fff;
     border-left: 1px solid #d6d6d6;
-    border-radius: 3px;
     display: -webkit-box;
     display: flex;
     -webkit-box-flex: 1;
@@ -10914,7 +10913,7 @@ html body {
   html body div.Feedback_Message_Info {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: none;
     box-sizing: border-box;
     line-height: normal;
@@ -20031,11 +20030,11 @@ body.PanelById.PanelOpened {
 
 .PanelById .Panel {
   display: none; }
-
-.PanelById .PanelContainer {
-  max-width: 800px; }
-  .PanelById .PanelContainer.done {
-    bottom: 0; }
+  .PanelById .Panel .PanelContainer {
+    max-width: 800px;
+    z-index: 100; }
+    .PanelById .Panel .PanelContainer.done {
+      bottom: 0; }
 
 .PanelById .PanelMessage .CheckboxInput {
   margin-top: 10px; }

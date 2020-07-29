@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920038 || Generated: Wed Jul 29 2020 14:57:22 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920039 || Generated: Wed Jul 29 2020 15:48:15 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4310,11 +4310,11 @@ body.PanelById.PanelOpened {
 
 .PanelById .Panel {
   display: none; }
-
-.PanelById .PanelContainer {
-  max-width: 800px; }
-  .PanelById .PanelContainer.done {
-    bottom: 0; }
+  .PanelById .Panel .PanelContainer {
+    max-width: 800px;
+    z-index: 100; }
+    .PanelById .Panel .PanelContainer.done {
+      bottom: 0; }
 
 .PanelById .PanelMessage .CheckboxInput {
   margin-top: 10px; }
