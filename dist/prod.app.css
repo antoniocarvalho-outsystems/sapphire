@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920037 || Generated: Wed Jul 29 2020 09:03:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920038 || Generated: Wed Jul 29 2020 14:57:22 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10618,87 +10618,64 @@ html .Page .PatientDetailsLayout {
 
 .LayoutPopup {
   width: 100%; }
+  .LayoutPopup.SmallPopup .LayoutPopup__body__sidebar {
+    display: none; }
+  .LayoutPopup-loading {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #858585;
+    font-size: 0.857em;
+    margin-top: -10px;
+    width: 250px; }
+  .LayoutPopup__header {
+    display: block;
+    padding: 30px 30px 0 30px; }
+    .LayoutPopup__header__text {
+      width: 100%; }
+    .LayoutPopup__header__text__title {
+      margin-bottom: 5px; }
+    .LayoutPopup__header__text__subtitle {
+      font-size: 1.143em;
+      line-height: 20px; }
+  .LayoutPopup__intro {
+    padding: 10px 30px; }
+  .LayoutPopup__body {
+    display: -webkit-box;
+    display: flex;
+    padding: 30px 20px 30px 30px; }
+    .LayoutPopup__body__sidebar {
+      padding-right: 20px;
+      width: 270px; }
+    .LayoutPopup__body__content {
+      overflow-y: scroll;
+      padding-right: 5px;
+      width: 100%; }
+      .LayoutPopup__body__content::-webkit-scrollbar {
+        background-color: #fff;
+        height: 7px;
+        width: 7px; }
+      .LayoutPopup__body__content::-webkit-scrollbar-thumb {
+        border: 5px solid #d6d6d6;
+        border-radius: 4px; }
+      .LayoutPopup__body__content > .MinHeightSmall {
+        min-height: 420px; }
+      .LayoutPopup__body__content > .MinHeightMedium {
+        min-height: 500px; }
+  .LayoutPopup__footer {
+    padding: 0 30px 30px; }
+  .LayoutPopup_wrapper {
+    width: 100%; }
 
-.LayoutPopup__body {
-  display: -webkit-box;
-  display: flex; }
-
-.LayoutPopup__header {
-  display: block;
-  padding: 20px 20px 10px 20px; }
-
-.LayoutPopup__header__text {
-  width: 100%; }
-
-.LayoutPopup__header__text__title {
-  margin-bottom: 5px; }
-
-.LayoutPopup__header__text__subtitle {
-  font-size: 1.143em;
-  line-height: 20px; }
-
-.LayoutPopup_wrapper {
-  width: 100%; }
-
-.LayoutPopup__intro {
-  padding: 10px 20px; }
-
-.LayoutPopup__body {
-  display: -webkit-box;
-  display: flex;
-  padding: 20px 20px; }
-
-.LayoutPopup.SmallPopup .LayoutPopup__body__sidebar {
-  display: none; }
-
-.LayoutPopup__body__sidebar {
-  padding-right: 20px;
-  width: 270px; }
-
-.LayoutPopup__body__content {
-  overflow-y: scroll;
-  width: 100%; }
-  .LayoutPopup__body__content::-webkit-scrollbar {
-    background-color: #fff;
-    height: 7px;
-    width: 7px; }
-  .LayoutPopup__body__content::-webkit-scrollbar-thumb {
-    border: 5px solid #d6d6d6;
-    border-radius: 4px; }
-
-.LayoutPopup__footer {
-  padding: 10px 20px; }
-
-.LayoutPopup__body__content > .MinHeightSmall {
-  min-height: 420px; }
-
-.LayoutPopup__body__content > .MinHeightMedium {
-  min-height: 500px; }
-
-.LayoutPopup .PhotoFrame img {
-  max-height: 60px;
-  max-width: 60px; }
-
-.LayoutPopup-loading {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #858585;
-  font-size: 0.857em;
-  margin-top: -10px;
-  width: 250px; }
-
-body .Page.tablet .MainPopup,
-body .Page.desktop .MainPopup {
-  min-width: auto;
-  padding: 0; }
-
-div.os-internal-Popup .os-internal-ui-dialog .os-internal-ui-dialog-titlebar,
-div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar {
-  display: none;
-  height: 0; }
+.AR .LayoutPopup__body,
+.FA .LayoutPopup__body {
+  padding: 30px 30px 30px 20px; }
+  .AR .LayoutPopup__body__content,
+  .FA .LayoutPopup__body__content {
+    padding-left: 5px;
+    padding-right: 0; }
 
 .ResizeIframeTooltip.ResizeWidthTooltip {
   width: -webkit-fit-content;
@@ -16902,6 +16879,10 @@ body.PanelOpened .daterangepicker {
   top: auto; }
 
 .TabWrapper {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
   border-top: solid 3px #00bfa5;
   height: 44px;
   min-width: 100px;
@@ -16958,12 +16939,7 @@ body.PanelOpened .daterangepicker {
   .FullScreenTabsWrapper_Container.Dashboard a {
     position: relative; }
   .FullScreenTabsWrapper_Container.Dashboard .TabWrapper {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex;
     background-color: #fff;
-    border-bottom: solid 3px #fff;
     border-top-color: #fff;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -16972,8 +16948,11 @@ body.PanelOpened .daterangepicker {
     font-size: 1rem;
     line-height: calc(44px - 5px);
     padding-left: 24px;
-    padding-right: 24px; }
+    padding-right: 24px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
     .FullScreenTabsWrapper_Container.Dashboard .TabWrapper:hover {
+      background-color: #ebebeb;
       border-top-color: #00bfa5;
       color: #009884; }
     .FullScreenTabsWrapper_Container.Dashboard .TabWrapper.Active {
@@ -16992,9 +16971,6 @@ body.PanelOpened .daterangepicker {
   color: #ff3e2d; }
   .FullScreenTabsWrapper_Container.Emergency .TabWrapper.Active .TabWrapper_tab a {
     color: #ff3e2d; }
-
-.tablet .TabWrapper.Active {
-  display: block; }
 
 .tablet .FullScreenTabsWrapper_Container {
   height: 43px; }
@@ -19040,7 +19016,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 
 .MainInteractiveCard {
   background-color: #f3f3f3;
-  border: 1px solid #adadad;
+  border: 1px solid #d6d6d6;
   border-radius: 4px;
   padding: 16px;
   position: relative; }
@@ -19922,41 +19898,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   display: none;
   position: absolute; }
 
-.PanelBackground.ConfirmWB {
-  background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  -webkit-transition: all 0.14s ease;
-  transition: all 0.14s ease;
-  z-index: 20; }
-
 .PanelContainer.ConfirmWB {
-  background: #ffffff;
-  border: solid 1px #d6d6d6;
-  border-radius: 4px;
-  display: none;
-  left: 50%;
-  max-width: 450px;
-  padding: 30px 20px;
-  position: fixed;
-  text-align: center;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  z-index: 51; }
-  .PanelContainer.ConfirmWB .PanelTitle {
-    font-family: "LatoBold";
-    font-size: 1.429em;
-    margin-bottom: 20px; }
-  .PanelContainer.ConfirmWB .PanelMessage {
-    font-size: 1em;
-    line-height: normal;
-    margin-bottom: 30px;
-    white-space: normal; }
+  max-width: 450px; }
 
 body.SapphirePanelOpen .PanelContainer.ConfirmWB,
 body.SapphirePanelOpen .PanelContainer.Confirm {
@@ -19984,7 +19927,7 @@ body.confirmation-opened {
 
 .confirm-container.confirm-wb {
   background: #fff;
-  border-radius: 4px;
+  border-radius: 8px;
   display: none;
   left: 50%;
   max-width: 480px;
@@ -20016,15 +19959,24 @@ body.confirmation-opened {
 .PanelContainer.Confirm .PanelActions .ButtonLink.Is_Default {
   padding: 0; }
 
-.PanelContainer .PanelTitle .PanelContainer.Confirm .PanelTitle {
-  font-family: "LatoBold";
-  font-size: 1.143em;
-  margin-bottom: 20px; }
-
 .modalPopup {
-  display: none; }
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20; }
   .modalPopup.Open {
-    display: block; }
+    display: -webkit-box;
+    display: flex; }
     .modalPopup.Open.showclose .modalPopup_close {
       cursor: pointer;
       display: inline-block;
@@ -20032,20 +19984,17 @@ body.confirmation-opened {
       font-size: 1em;
       max-width: 15px;
       position: absolute;
-      right: 20px;
-      top: 20px; }
+      right: 30px;
+      top: 30px; }
     .modalPopup.Open .modalPopup_container {
       background-color: #fff;
+      border-radius: 8px;
       display: block;
-      left: 50%;
       max-height: 80%;
       min-width: 250px;
       overflow: auto;
-      padding: 30px 20px;
+      padding: 30px;
       position: fixed;
-      top: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
       width: auto;
       z-index: 60; }
     .modalPopup.Open .modalPopup_close {
@@ -20083,47 +20032,13 @@ body.PanelById.PanelOpened {
 .PanelById .Panel {
   display: none; }
 
-.PanelById .PanelBackground {
-  background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  -webkit-transition: all 0.14s ease;
-  transition: all 0.14s ease;
-  z-index: 20; }
-
 .PanelById .PanelContainer {
-  background: #ffffff;
-  border: solid 1px #d6d6d6;
-  border-radius: 4px;
-  display: none;
-  left: 50%;
-  max-width: 800px;
-  overflow: visible !important;
-  padding: 30px 20px;
-  position: fixed;
-  text-align: center;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  z-index: 101; }
+  max-width: 800px; }
   .PanelById .PanelContainer.done {
     bottom: 0; }
 
-.PanelById .PanelTitle {
-  color: #333333;
-  font-family: "LatoBold";
-  font-size: 1.429em;
-  margin-bottom: 20px; }
-
-.PanelById .PanelMessage {
-  font-size: 13px;
-  margin-bottom: 20px; }
-  .PanelById .PanelMessage .CheckboxInput {
-    margin-top: 10px; }
+.PanelById .PanelMessage .CheckboxInput {
+  margin-top: 10px; }
 
 .desktop.hd .PanelById .PanelContainer {
   max-height: 700px;
@@ -20139,39 +20054,8 @@ body.PanelById.PanelOpened {
   overflow-y: auto;
   top: 60%; }
 
-.PanelBackground.ConfirmWB {
-  background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  -webkit-transition: all 0.14s ease;
-  transition: all 0.14s ease;
-  z-index: 20; }
-
 .PanelContainer.Confirm {
-  background: #fff;
-  border-radius: 4px;
-  display: none;
-  left: 50%;
-  max-width: 400px;
-  padding: 30px 20px;
-  position: fixed;
-  text-align: center;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  z-index: 51; }
-  .PanelContainer.Confirm .PanelTitle {
-    font-family: "LatoBold";
-    font-size: 1.429em;
-    margin-bottom: 20px; }
-  .PanelContainer.Confirm .PanelMessage {
-    font-size: 1em;
-    line-height: normal;
-    margin-bottom: 30px; }
+  max-width: 400px; }
   .PanelContainer.Confirm .PanelActions {
     white-space: nowrap; }
 
@@ -20181,6 +20065,39 @@ body.PanelById.PanelOpened {
   box-shadow: none;
   display: none;
   position: absolute; }
+  .Panel .PanelBackground {
+    background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 0.14s ease;
+    transition: all 0.14s ease;
+    z-index: 20; }
+  .Panel .PanelContainer {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    display: none;
+    padding: 30px 20px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 51; }
+    .Panel .PanelContainer .PanelTitle {
+      font-family: "LatoBold";
+      font-size: 1.429em;
+      margin-bottom: 20px; }
+    .Panel .PanelContainer .PanelMessage {
+      font-size: 1em;
+      line-height: normal;
+      margin-bottom: 30px;
+      white-space: normal; }
 
 .PanelOpened {
   overflow: auto;
@@ -22007,17 +21924,22 @@ div.List-Star {
   z-index: 4012; }
   .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup {
     border: none;
+    border-radius: 8px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
     position: relative; }
+    .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup iframe {
+      border-radius: 8px; }
     .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar {
-      background: none; }
+      background: none;
+      display: none;
+      height: 0; }
     .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close {
       background: none;
       cursor: pointer;
       height: 20px;
-      right: 10px;
-      top: 7px;
-      width: 20px; }
+      right: 30px;
+      top: 30px;
+      width: 14px; }
       .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close:after {
         color: #333333;
         content: '\e60c';
@@ -27695,7 +27617,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .shadow--medium {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
-.ShadowLarge, .PanelContainer.ConfirmWB, .confirm-container.confirm-wb, .PanelById .PanelContainer, .PanelContainer.Confirm,
+.ShadowLarge, .confirm-container.confirm-wb, .modalPopup.Open .modalPopup_container, .Panel .PanelContainer,
 .shadow--large {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
@@ -30788,6 +30710,15 @@ input[type]:focus.SavedInput {
   left: auto;
   right: -20px; }
 
+.LayoutPopup .PhotoFrame img {
+  max-height: 60px;
+  max-width: 60px; }
+
+body .Page.tablet .MainPopup,
+body .Page.desktop .MainPopup {
+  min-width: auto;
+  padding: 0; }
+
 .desktop .LineTimeLine___mobileDescription {
   display: none; }
 
@@ -31004,6 +30935,14 @@ input[type]:focus.SavedInput {
     -servicestudio-display: block !important;
     -servicestudio-width: 1500px !important;
     -servicestudio-z-index: 0; }
+
+.SapphirePanel {
+  -servicestudio-display: block;
+  -servicestudio-position: relative; }
+  .SapphirePanel_Background {
+    -servicestudio-color: #252525;
+    -servicestudio-display: none;
+    -servicestudio-position: static; }
 
 .Panel {
   -servicestudio-display: block !important;
