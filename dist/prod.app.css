@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920039 || Generated: Wed Jul 29 2020 15:48:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920040 || Generated: Wed Jul 29 2020 16:23:51 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15906,7 +15906,7 @@ body.PanelOpened .daterangepicker {
   .DropZoneWrapper .dropzone {
     background: #fff;
     border: 1px dashed #d6d6d6;
-    border-radius: 5px;
+    border-radius: 4px;
     min-height: 80px;
     padding: 0;
     padding-top: 24px; }
@@ -17744,7 +17744,7 @@ div.Toolbar {
 
 .HospitPlanButton {
   background-color: transparent;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #858585;
   font-family: "LatoBold";
   font-size: 1.143em;
@@ -18890,7 +18890,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .RoomBoxOT {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 2px;
+  border-radius: 4px;
   text-align: center;
   width: 140px; }
   .RoomBoxOT.Selected {
@@ -19714,11 +19714,11 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 
 .Vertical .navigation-control-item,
 .navigation-control-item:first-child {
-  border-radius: 5px; }
+  border-radius: 4px; }
 
 .navigation-control-item {
   border: solid 1px #00bfa5;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #00bfa5;
   display: inline-block;
   font-size: 1.09rem;
@@ -19783,31 +19783,31 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 
 .Vertical .multi-control-item,
 .multi-control-item:first-child {
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 4px;
   border-left: solid 1px #11455d;
-  border-top-left-radius: 5px; }
+  border-top-left-radius: 4px; }
 
 .AR .Vertical .multi-control-item,
 .AR .multi-control-item:first-child {
   border-bottom-left-radius: 0;
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 4px;
   border-left: none;
   border-right: solid 1px #11455d;
   border-top-left-radius: 0;
-  border-top-right-radius: 5px; }
+  border-top-right-radius: 4px; }
 
 .Vertical .multi-control-item,
 .multi-control-item:last-child {
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 4px;
   border-right: solid 1px #11455d;
-  border-top-right-radius: 5px; }
+  border-top-right-radius: 4px; }
 
 .AR .Vertical .multi-control-item,
 .AR .multi-control-item:last-child {
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 4px;
   border-bottom-right-radius: 0;
   border-left: solid 1px #11455d;
-  border-top-left-radius: 5px;
+  border-top-left-radius: 4px;
   border-top-right-radius: 0; }
 
 .multi-control input {
@@ -20863,7 +20863,7 @@ a .PersonCard {
 
 .PrescriptionCard {
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 8px;
   color: #333333;
   display: table;
   padding: 16px; }
@@ -25954,26 +25954,27 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     pointer-events: none; }
   .SpinnerInput_Container > a.Plus:before, .SpinnerInput_Container > a.Minus:before {
     display: block;
-    font-family: Sapphire-Icon-Font;
+    font-family: "Sapphire-Icon-Font";
     font-size: 1.429em;
     line-height: 34px;
     text-align: center; }
 
 .SpinnerInput_Container .SpinnerInput input[type] {
+  border-radius: 0;
   padding: 0 2px;
   text-align: center;
   width: 36px; }
-  .SpinnerInput_Container .SpinnerInput input[type]:not(:focus), .SpinnerInput_Container .SpinnerInput input[type]:disabled {
+  .SpinnerInput_Container .SpinnerInput input[type]:disabled {
     border-left: none !important;
     border-right: none !important; }
 
 .SpinnerInput_Container .Minus {
-  border-radius: 3px 0 0 3px; }
+  border-radius: 4px 0 0 4px; }
   .SpinnerInput_Container .Minus:before {
     content: '\e68f'; }
 
 .SpinnerInput_Container .Plus {
-  border-radius: 0 3px 3px 0; }
+  border-radius: 0 4px 4px 0; }
   .SpinnerInput_Container .Plus:before {
     content: '\e698'; }
 
@@ -25983,11 +25984,11 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .FA .SpinnerInput_Container .Minus,
 .AR .SpinnerInput_Container .Minus {
-  border-radius: 0 3px 3px 0; }
+  border-radius: 0 4px 4px 0; }
 
 .FA .SpinnerInput_Container .Plus,
 .AR .SpinnerInput_Container .Plus {
-  border-radius: 3px 0 0 3px; }
+  border-radius: 4px 0 0 4px; }
 
 .SpinnerInput_ContainerVertical .SpinnerInputVertical {
   display: table; }
