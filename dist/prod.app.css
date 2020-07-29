@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920036 || Generated: Tue Jul 28 2020 18:33:07 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920037 || Generated: Wed Jul 29 2020 09:03:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16902,10 +16902,6 @@ body.PanelOpened .daterangepicker {
   top: auto; }
 
 .TabWrapper {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
   border-top: solid 3px #00bfa5;
   height: 44px;
   min-width: 100px;
@@ -16962,13 +16958,16 @@ body.PanelOpened .daterangepicker {
   .FullScreenTabsWrapper_Container.Dashboard a {
     position: relative; }
   .FullScreenTabsWrapper_Container.Dashboard .TabWrapper {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
     background-color: #fff;
     border-bottom: solid 3px #fff;
     border-top-color: #fff;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     color: #5c5c5c;
-    display: block;
     font-family: "LatoBold";
     font-size: 1rem;
     line-height: calc(44px - 5px);
