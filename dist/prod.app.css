@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920040 || Generated: Wed Jul 29 2020 16:23:51 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920041 || Generated: Wed Jul 29 2020 16:53:52 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9913,7 +9913,7 @@ a.Button.IsDefault,
 .WardBox {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 1px;
+  border-radius: 4px;
   display: inline-block;
   text-align: center;
   width: 100%; }
@@ -20122,7 +20122,7 @@ body.PanelById.PanelOpened {
     display: none; }
   .PatientCallCancel .js-calling .PatientCallCancel-label,
   .PatientCallCancel .js-calling .PatientCallCancel-icon {
-    color: #adadad; }
+    color: #858585; }
   .PatientCallCancel-icon {
     display: -webkit-box;
     display: flex;
@@ -20164,6 +20164,7 @@ body.PanelById.PanelOpened {
     .PatientCallCancel-cancel span.icon {
       margin-right: 5px; }
   .PatientCallCancel-queue {
+    border-radius: 4px;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -20171,6 +20172,8 @@ body.PanelById.PanelOpened {
             flex-direction: column;
     -webkit-box-pack: center;
             justify-content: center; }
+    .PatientCallCancel-queue > div {
+      border-radius: 4px; }
     .PatientCallCancel-queue:empty {
       display: none; }
   .PatientCallCancel-other {
@@ -20203,6 +20206,7 @@ body.PanelById.PanelOpened {
     -webkit-box-pack: center;
             justify-content: center;
     background-color: #00bfa5;
+    border-radius: 8px;
     color: #fff;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
