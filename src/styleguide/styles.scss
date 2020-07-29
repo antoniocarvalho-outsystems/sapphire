@@ -595,6 +595,7 @@ $styleguide-main-content-padding: 50px;
 		text-align: center;
 		transition: all 1s;
 		width: 50px;
+		z-index: 1;
 
 		&:hover {
 			transform: scale(1.2);
