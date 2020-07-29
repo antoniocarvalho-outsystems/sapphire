@@ -1,7 +1,7 @@
 .DoctorBox {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
-	border-radius: 4px;
+	border-radius: $border-radius-default;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 	font-size: 1em;
 	position: relative;

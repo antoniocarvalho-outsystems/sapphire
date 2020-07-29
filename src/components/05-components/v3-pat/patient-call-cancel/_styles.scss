@@ -31,7 +31,7 @@ $call-cancel-color-disabled: $sapphire-color-disabled-text;
 	.js-calling {
 		.PatientCallCancel-label,
 		.PatientCallCancel-icon {
-			color: $call-cancel-color-disabled;
+			color: $regular-gray;
 		}
 	}
 
@@ -70,9 +70,14 @@ $call-cancel-color-disabled: $sapphire-color-disabled-text;
 	}
 
 	&-queue {
+		border-radius: $border-radius-default;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		> div {
+			border-radius: $border-radius-default;
+		}
 
 		&:empty {
 			display: none;
@@ -120,6 +125,7 @@ $call-cancel-color-disabled: $sapphire-color-disabled-text;
 				@include flex-center-total;
 
 				background-color: $call-cancel-color-active;
+				border-radius: $border-radius-medium;
 				color: $regular-white;
 				flex-direction: column;
 				min-height: 90px;
