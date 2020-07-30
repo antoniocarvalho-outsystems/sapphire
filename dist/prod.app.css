@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920042 || Generated: Wed Jul 29 2020 18:00:03 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920043 || Generated: Thu Jul 30 2020 14:22:59 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4636,6 +4636,8 @@ input[type='checkbox'] {
       background-color: #ebebeb;
       border: 1px solid #d6d6d6;
       box-shadow: none; }
+    input[type='checkbox']:disabled ~ * {
+      color: #adadad; }
   input[type='checkbox'].ReadOnly {
     background-color: transparent;
     border-width: 0; }
@@ -4652,15 +4654,15 @@ input[type='checkbox'] {
     border-top: 0;
     content: ' ';
     height: 3px;
-    left: 21%;
+    left: 4;
     opacity: 0;
     position: absolute;
-    top: 30%;
+    top: 6px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    width: 8px; }
-  input[type='checkbox']:disabled:after {
-    border-color: #d6d6d6; }
+    width: 9px; }
+  input[type='checkbox']:disabled:checked:after {
+    border-color: #858585; }
 
 input[type='radio'] {
   -webkit-appearance: none;
@@ -4704,6 +4706,8 @@ input[type='radio'] {
       background-color: #ebebeb;
       border: 1px solid #d6d6d6;
       box-shadow: none; }
+    input[type='radio']:disabled ~ * {
+      color: #adadad; }
   input[type='radio'].ReadOnly {
     background-color: transparent;
     border-width: 0; }
@@ -4728,8 +4732,9 @@ input[type='radio'] {
     height: 6px;
     opacity: 0;
     width: 6px; }
-  input[type='radio']:disabled:after {
-    background: #d6d6d6; }
+  input[type='radio']:disabled:checked:after {
+    background: #858585;
+    border-color: #858585; }
 
 select,
 textarea,
@@ -4749,18 +4754,23 @@ input[type='number'] {
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in; }
   select::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input[type='text']::-webkit-input-placeholder, input[type='number']::-webkit-input-placeholder {
-    color: #858585; }
+    color: #adadad;
+    font-family: "LatoRegular"; }
   select::-moz-placeholder, textarea::-moz-placeholder, input[type='text']::-moz-placeholder, input[type='number']::-moz-placeholder {
-    color: #858585; }
+    color: #adadad;
+    font-family: "LatoRegular"; }
   select:-ms-input-placeholder, textarea:-ms-input-placeholder, input[type='text']:-ms-input-placeholder, input[type='number']:-ms-input-placeholder {
-    color: #858585; }
+    color: #adadad;
+    font-family: "LatoRegular"; }
   select::-ms-input-placeholder, textarea::-ms-input-placeholder, input[type='text']::-ms-input-placeholder, input[type='number']::-ms-input-placeholder {
-    color: #858585; }
+    color: #adadad;
+    font-family: "LatoRegular"; }
   select::placeholder,
   textarea::placeholder,
   input[type='text']::placeholder,
   input[type='number']::placeholder {
-    color: #858585; }
+    color: #adadad;
+    font-family: "LatoRegular"; }
   select:hover,
   textarea:hover,
   input[type='text']:hover,
@@ -4806,15 +4816,17 @@ input[type='number'] {
     background-repeat: no-repeat;
     border: 1px solid #d6d6d6;
     box-shadow: none;
-    cursor: not-allowed; }
+    color: #858585;
+    cursor: not-allowed;
+    opacity: 1; }
     select[disabled='disabled']::-webkit-input-placeholder, select[disabled='disabled']:hover::-webkit-input-placeholder, select[disabled='disabled']:focus::-webkit-input-placeholder, select[readonly='readonly']::-webkit-input-placeholder, select[readonly='readonly']:hover::-webkit-input-placeholder, select[readonly='readonly']:focus::-webkit-input-placeholder, textarea[disabled='disabled']::-webkit-input-placeholder, textarea[disabled='disabled']:hover::-webkit-input-placeholder, textarea[disabled='disabled']:focus::-webkit-input-placeholder, textarea[readonly='readonly']::-webkit-input-placeholder, textarea[readonly='readonly']:hover::-webkit-input-placeholder, textarea[readonly='readonly']:focus::-webkit-input-placeholder, input[type='text'][disabled='disabled']::-webkit-input-placeholder, input[type='text'][disabled='disabled']:hover::-webkit-input-placeholder, input[type='text'][disabled='disabled']:focus::-webkit-input-placeholder, input[type='text'][readonly='readonly']::-webkit-input-placeholder, input[type='text'][readonly='readonly']:hover::-webkit-input-placeholder, input[type='text'][readonly='readonly']:focus::-webkit-input-placeholder, input[type='number'][disabled='disabled']::-webkit-input-placeholder, input[type='number'][disabled='disabled']:hover::-webkit-input-placeholder, input[type='number'][disabled='disabled']:focus::-webkit-input-placeholder, input[type='number'][readonly='readonly']::-webkit-input-placeholder, input[type='number'][readonly='readonly']:hover::-webkit-input-placeholder, input[type='number'][readonly='readonly']:focus::-webkit-input-placeholder {
-      color: #d6d6d6; }
+      color: #adadad; }
     select[disabled='disabled']::-moz-placeholder, select[disabled='disabled']:hover::-moz-placeholder, select[disabled='disabled']:focus::-moz-placeholder, select[readonly='readonly']::-moz-placeholder, select[readonly='readonly']:hover::-moz-placeholder, select[readonly='readonly']:focus::-moz-placeholder, textarea[disabled='disabled']::-moz-placeholder, textarea[disabled='disabled']:hover::-moz-placeholder, textarea[disabled='disabled']:focus::-moz-placeholder, textarea[readonly='readonly']::-moz-placeholder, textarea[readonly='readonly']:hover::-moz-placeholder, textarea[readonly='readonly']:focus::-moz-placeholder, input[type='text'][disabled='disabled']::-moz-placeholder, input[type='text'][disabled='disabled']:hover::-moz-placeholder, input[type='text'][disabled='disabled']:focus::-moz-placeholder, input[type='text'][readonly='readonly']::-moz-placeholder, input[type='text'][readonly='readonly']:hover::-moz-placeholder, input[type='text'][readonly='readonly']:focus::-moz-placeholder, input[type='number'][disabled='disabled']::-moz-placeholder, input[type='number'][disabled='disabled']:hover::-moz-placeholder, input[type='number'][disabled='disabled']:focus::-moz-placeholder, input[type='number'][readonly='readonly']::-moz-placeholder, input[type='number'][readonly='readonly']:hover::-moz-placeholder, input[type='number'][readonly='readonly']:focus::-moz-placeholder {
-      color: #d6d6d6; }
+      color: #adadad; }
     select[disabled='disabled']:-ms-input-placeholder, select[disabled='disabled']:hover:-ms-input-placeholder, select[disabled='disabled']:focus:-ms-input-placeholder, select[readonly='readonly']:-ms-input-placeholder, select[readonly='readonly']:hover:-ms-input-placeholder, select[readonly='readonly']:focus:-ms-input-placeholder, textarea[disabled='disabled']:-ms-input-placeholder, textarea[disabled='disabled']:hover:-ms-input-placeholder, textarea[disabled='disabled']:focus:-ms-input-placeholder, textarea[readonly='readonly']:-ms-input-placeholder, textarea[readonly='readonly']:hover:-ms-input-placeholder, textarea[readonly='readonly']:focus:-ms-input-placeholder, input[type='text'][disabled='disabled']:-ms-input-placeholder, input[type='text'][disabled='disabled']:hover:-ms-input-placeholder, input[type='text'][disabled='disabled']:focus:-ms-input-placeholder, input[type='text'][readonly='readonly']:-ms-input-placeholder, input[type='text'][readonly='readonly']:hover:-ms-input-placeholder, input[type='text'][readonly='readonly']:focus:-ms-input-placeholder, input[type='number'][disabled='disabled']:-ms-input-placeholder, input[type='number'][disabled='disabled']:hover:-ms-input-placeholder, input[type='number'][disabled='disabled']:focus:-ms-input-placeholder, input[type='number'][readonly='readonly']:-ms-input-placeholder, input[type='number'][readonly='readonly']:hover:-ms-input-placeholder, input[type='number'][readonly='readonly']:focus:-ms-input-placeholder {
-      color: #d6d6d6; }
+      color: #adadad; }
     select[disabled='disabled']::-ms-input-placeholder, select[disabled='disabled']:hover::-ms-input-placeholder, select[disabled='disabled']:focus::-ms-input-placeholder, select[readonly='readonly']::-ms-input-placeholder, select[readonly='readonly']:hover::-ms-input-placeholder, select[readonly='readonly']:focus::-ms-input-placeholder, textarea[disabled='disabled']::-ms-input-placeholder, textarea[disabled='disabled']:hover::-ms-input-placeholder, textarea[disabled='disabled']:focus::-ms-input-placeholder, textarea[readonly='readonly']::-ms-input-placeholder, textarea[readonly='readonly']:hover::-ms-input-placeholder, textarea[readonly='readonly']:focus::-ms-input-placeholder, input[type='text'][disabled='disabled']::-ms-input-placeholder, input[type='text'][disabled='disabled']:hover::-ms-input-placeholder, input[type='text'][disabled='disabled']:focus::-ms-input-placeholder, input[type='text'][readonly='readonly']::-ms-input-placeholder, input[type='text'][readonly='readonly']:hover::-ms-input-placeholder, input[type='text'][readonly='readonly']:focus::-ms-input-placeholder, input[type='number'][disabled='disabled']::-ms-input-placeholder, input[type='number'][disabled='disabled']:hover::-ms-input-placeholder, input[type='number'][disabled='disabled']:focus::-ms-input-placeholder, input[type='number'][readonly='readonly']::-ms-input-placeholder, input[type='number'][readonly='readonly']:hover::-ms-input-placeholder, input[type='number'][readonly='readonly']:focus::-ms-input-placeholder {
-      color: #d6d6d6; }
+      color: #adadad; }
     select[disabled='disabled']::placeholder, select[disabled='disabled']:hover::placeholder, select[disabled='disabled']:focus::placeholder, select[readonly='readonly']::placeholder, select[readonly='readonly']:hover::placeholder, select[readonly='readonly']:focus::placeholder,
     textarea[disabled='disabled']::placeholder,
     textarea[disabled='disabled']:hover::placeholder,
@@ -4834,7 +4846,7 @@ input[type='number'] {
     input[type='number'][readonly='readonly']::placeholder,
     input[type='number'][readonly='readonly']:hover::placeholder,
     input[type='number'][readonly='readonly']:focus::placeholder {
-      color: #d6d6d6; }
+      color: #adadad; }
   select.Mandatory, select.Mandatory:hover, select.Mandatory:focus,
   textarea.Mandatory,
   textarea.Mandatory:hover,
@@ -11515,6 +11527,8 @@ html body {
     height: 36px;
     line-height: 36px;
     padding: 0 10px 0 35px; }
+    .Page .Search_wrapper input[type='text']:not(:hover) {
+      border-color: #d6d6d6; }
 
 .AR .Page .Search_wrapper:after,
 .FA .Page .Search_wrapper:after {
@@ -16779,6 +16793,12 @@ body.PanelOpened .daterangepicker {
   line-height: 12px;
   padding-right: 5px;
   vertical-align: inherit; }
+
+.Page .FormField.IsDisabledField .FormField-caption,
+.LayoutPopup .FormField.IsDisabledField .FormField-caption,
+.LayoutBlank .FormField.IsDisabledField .FormField-caption,
+.LayoutBase .FormField.IsDisabledField .FormField-caption {
+  color: #adadad; }
 
 .AR .FormField.IsRequiredField .FormField-caption:before,
 .FA .FormField.IsRequiredField .FormField-caption:before {
@@ -23665,141 +23685,203 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .FA .SegmentedControl:not(.Vertical) .SegmentedControlItem label:focus {
     border: 1px solid #00bfa5; }
 
-.LayoutBlank .select2-container:hover .select2-selection[aria-disabled='false'],
 .LayoutBase .select2-container:hover .select2-selection[aria-disabled='false'],
+.LayoutBlank .select2-container:hover .select2-selection[aria-disabled='false'],
 .LayoutPopup .select2-container:hover .select2-selection[aria-disabled='false'],
+.DesignSystem .select2-container:hover .select2-selection[aria-disabled='false'],
 .LayoutBackoffice .select2-container:hover .select2-selection[aria-disabled='false'],
-.DesignSystem .select2-container:hover .select2-selection[aria-disabled='false'] {
+.ResizeParentIframe .select2-container:hover .select2-selection[aria-disabled='false'] {
   background-color: #f2fffd;
   border: 1px solid #00bfa5; }
 
-.LayoutBlank .select2-container .select2-selection,
 .LayoutBase .select2-container .select2-selection,
+.LayoutBlank .select2-container .select2-selection,
 .LayoutPopup .select2-container .select2-selection,
+.DesignSystem .select2-container .select2-selection,
 .LayoutBackoffice .select2-container .select2-selection,
-.DesignSystem .select2-container .select2-selection {
+.ResizeParentIframe .select2-container .select2-selection {
   border-radius: 4px; }
 
-.LayoutBlank .select2-container--default .select2-selection,
+.LayoutBase .select2-container--default.select2-container--disabled .select2-selection--single,
+.LayoutBase .select2-container--default.select2-container--disabled .select2-selection--multiple,
+.LayoutBase .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom,
+.LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--single,
+.LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--multiple,
+.LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom,
+.LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--single,
+.LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--multiple,
+.LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom,
+.DesignSystem .select2-container--default.select2-container--disabled .select2-selection--single,
+.DesignSystem .select2-container--default.select2-container--disabled .select2-selection--multiple,
+.DesignSystem .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom,
+.LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--single,
+.LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--multiple,
+.LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom,
+.ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--single,
+.ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--multiple,
+.ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom {
+  background-color: #ebebeb;
+  border: 1px solid #d6d6d6;
+  color: #858585; }
+  .LayoutBase .select2-container--default.select2-container--disabled .select2-selection--single:focus,
+  .LayoutBase .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
+  .LayoutBase .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus,
+  .LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--single:focus,
+  .LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
+  .LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus,
+  .LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--single:focus,
+  .LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
+  .LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus,
+  .DesignSystem .select2-container--default.select2-container--disabled .select2-selection--single:focus,
+  .DesignSystem .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
+  .DesignSystem .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus,
+  .LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--single:focus,
+  .LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
+  .LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus,
+  .ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--single:focus,
+  .ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
+  .ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus {
+    border: 1px solid #d6d6d6; }
+
 .LayoutBase .select2-container--default .select2-selection,
+.LayoutBlank .select2-container--default .select2-selection,
 .LayoutPopup .select2-container--default .select2-selection,
+.DesignSystem .select2-container--default .select2-selection,
 .LayoutBackoffice .select2-container--default .select2-selection,
-.DesignSystem .select2-container--default .select2-selection {
+.ResizeParentIframe .select2-container--default .select2-selection {
   min-height: 36px; }
-  .LayoutBlank .select2-container--default .select2-selection .select2-selection__rendered,
-  .LayoutBlank .select2-container--default .select2-selection .select2-search,
   .LayoutBase .select2-container--default .select2-selection .select2-selection__rendered,
   .LayoutBase .select2-container--default .select2-selection .select2-search,
+  .LayoutBlank .select2-container--default .select2-selection .select2-selection__rendered,
+  .LayoutBlank .select2-container--default .select2-selection .select2-search,
   .LayoutPopup .select2-container--default .select2-selection .select2-selection__rendered,
   .LayoutPopup .select2-container--default .select2-selection .select2-search,
+  .DesignSystem .select2-container--default .select2-selection .select2-selection__rendered,
+  .DesignSystem .select2-container--default .select2-selection .select2-search,
   .LayoutBackoffice .select2-container--default .select2-selection .select2-selection__rendered,
   .LayoutBackoffice .select2-container--default .select2-selection .select2-search,
-  .DesignSystem .select2-container--default .select2-selection .select2-selection__rendered,
-  .DesignSystem .select2-container--default .select2-selection .select2-search {
+  .ResizeParentIframe .select2-container--default .select2-selection .select2-selection__rendered,
+  .ResizeParentIframe .select2-container--default .select2-selection .select2-search {
     height: 100%; }
-  .LayoutBlank .select2-container--default .select2-selection .select2-selection__rendered,
   .LayoutBase .select2-container--default .select2-selection .select2-selection__rendered,
+  .LayoutBlank .select2-container--default .select2-selection .select2-selection__rendered,
   .LayoutPopup .select2-container--default .select2-selection .select2-selection__rendered,
+  .DesignSystem .select2-container--default .select2-selection .select2-selection__rendered,
   .LayoutBackoffice .select2-container--default .select2-selection .select2-selection__rendered,
-  .DesignSystem .select2-container--default .select2-selection .select2-selection__rendered {
+  .ResizeParentIframe .select2-container--default .select2-selection .select2-selection__rendered {
     padding-left: 0; }
-  .LayoutBlank .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
   .LayoutBase .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
+  .LayoutBlank .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
   .LayoutPopup .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
+  .DesignSystem .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
   .LayoutBackoffice .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
-  .DesignSystem .select2-container--default .select2-selection.select2-selection--multiple.tagSystem {
+  .ResizeParentIframe .select2-container--default .select2-selection.select2-selection--multiple.tagSystem {
     height: auto;
     min-height: 36px; }
-    .LayoutBlank .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
     .LayoutBase .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
+    .LayoutBlank .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
     .LayoutPopup .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
+    .DesignSystem .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
     .LayoutBackoffice .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
-    .DesignSystem .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field {
+    .ResizeParentIframe .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field {
       margin-top: 2px;
       min-height: 28px; }
 
-.LayoutBlank .select2-container--default .select2-selection--single,
-.LayoutBlank .select2-container--default .select2-selection--multiple,
-.LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom,
 .LayoutBase .select2-container--default .select2-selection--single,
 .LayoutBase .select2-container--default .select2-selection--multiple,
 .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom,
+.LayoutBlank .select2-container--default .select2-selection--single,
+.LayoutBlank .select2-container--default .select2-selection--multiple,
+.LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom,
 .LayoutPopup .select2-container--default .select2-selection--single,
 .LayoutPopup .select2-container--default .select2-selection--multiple,
 .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom,
+.DesignSystem .select2-container--default .select2-selection--single,
+.DesignSystem .select2-container--default .select2-selection--multiple,
+.DesignSystem .select2-container--default .select2-selection--multiple.tagCustom,
 .LayoutBackoffice .select2-container--default .select2-selection--single,
 .LayoutBackoffice .select2-container--default .select2-selection--multiple,
 .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom,
-.DesignSystem .select2-container--default .select2-selection--single,
-.DesignSystem .select2-container--default .select2-selection--multiple,
-.DesignSystem .select2-container--default .select2-selection--multiple.tagCustom {
+.ResizeParentIframe .select2-container--default .select2-selection--single,
+.ResizeParentIframe .select2-container--default .select2-selection--multiple,
+.ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom {
   border: 1px solid #d6d6d6; }
-  .LayoutBlank .select2-container--default .select2-selection--single:focus,
-  .LayoutBlank .select2-container--default .select2-selection--multiple:focus,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom:focus,
   .LayoutBase .select2-container--default .select2-selection--single:focus,
   .LayoutBase .select2-container--default .select2-selection--multiple:focus,
   .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom:focus,
+  .LayoutBlank .select2-container--default .select2-selection--single:focus,
+  .LayoutBlank .select2-container--default .select2-selection--multiple:focus,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom:focus,
   .LayoutPopup .select2-container--default .select2-selection--single:focus,
   .LayoutPopup .select2-container--default .select2-selection--multiple:focus,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom:focus,
+  .DesignSystem .select2-container--default .select2-selection--single:focus,
+  .DesignSystem .select2-container--default .select2-selection--multiple:focus,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:focus,
   .LayoutBackoffice .select2-container--default .select2-selection--single:focus,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple:focus,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom:focus,
-  .DesignSystem .select2-container--default .select2-selection--single:focus,
-  .DesignSystem .select2-container--default .select2-selection--multiple:focus,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:focus {
-    border: 1px solid #d6d6d6; }
+  .ResizeParentIframe .select2-container--default .select2-selection--single:focus,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple:focus,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom:focus {
+    border: 1px solid #00bfa5; }
 
-.LayoutBlank .select2-container--default .select2-selection--single,
 .LayoutBase .select2-container--default .select2-selection--single,
+.LayoutBlank .select2-container--default .select2-selection--single,
 .LayoutPopup .select2-container--default .select2-selection--single,
+.DesignSystem .select2-container--default .select2-selection--single,
 .LayoutBackoffice .select2-container--default .select2-selection--single,
-.DesignSystem .select2-container--default .select2-selection--single {
+.ResizeParentIframe .select2-container--default .select2-selection--single {
   line-height: 18px;
   padding: 2px 10px; }
 
-.LayoutBlank .select2-container--default .MultipleSelect.select2-selection,
 .LayoutBase .select2-container--default .MultipleSelect.select2-selection,
+.LayoutBlank .select2-container--default .MultipleSelect.select2-selection,
 .LayoutPopup .select2-container--default .MultipleSelect.select2-selection,
+.DesignSystem .select2-container--default .MultipleSelect.select2-selection,
 .LayoutBackoffice .select2-container--default .MultipleSelect.select2-selection,
-.DesignSystem .select2-container--default .MultipleSelect.select2-selection {
+.ResizeParentIframe .select2-container--default .MultipleSelect.select2-selection {
   height: 36px; }
 
-.LayoutBlank .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
 .LayoutBase .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
+.LayoutBlank .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
 .LayoutPopup .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
+.DesignSystem .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
 .LayoutBackoffice .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
-.DesignSystem .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered {
+.ResizeParentIframe .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered {
   padding: 0 10px; }
-  .LayoutBlank .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
   .LayoutBase .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
+  .LayoutBlank .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
   .LayoutPopup .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
+  .DesignSystem .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
   .LayoutBackoffice .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
-  .DesignSystem .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2) {
+  .ResizeParentIframe .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2) {
     display: none; }
 
-.LayoutBlank .select2-container--default .select2-selection--multiple,
 .LayoutBase .select2-container--default .select2-selection--multiple,
+.LayoutBlank .select2-container--default .select2-selection--multiple,
 .LayoutPopup .select2-container--default .select2-selection--multiple,
+.DesignSystem .select2-container--default .select2-selection--multiple,
 .LayoutBackoffice .select2-container--default .select2-selection--multiple,
-.DesignSystem .select2-container--default .select2-selection--multiple {
+.ResizeParentIframe .select2-container--default .select2-selection--multiple {
   font-family: "LatoBold"; }
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom,
   .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom {
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom {
     -webkit-box-align: center;
             align-items: center;
     border-radius: 18px;
     display: -webkit-box;
     display: flex; }
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom:before,
     .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom:before,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom:before,
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom:before,
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:before,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom:before,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:before {
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom:before {
       color: #858585;
       content: '\e690';
       font-family: 'Sapphire-Icon-Font';
@@ -23815,11 +23897,12 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
       z-index: 1; }
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
     .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove {
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove {
       color: #333333;
       cursor: pointer;
       display: inline-block;
@@ -23834,30 +23917,35 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
     .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
+    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'] {
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'] {
       background-color: #f2fffd;
       color: #333333; }
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
-  .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-  .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
+  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
   .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
+  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
+  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice {
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice {
     background-color: #c4f0eb;
     border: none;
     border-radius: 0;
@@ -23871,44 +23959,52 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     padding-right: 25px;
     position: relative;
     white-space: normal; }
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
-    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
-    .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
-    .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
-    .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
+    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
     .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
     .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
+    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
+    .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
-    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
-    .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div {
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div {
       max-width: 350px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
-  .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
-  .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
+  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
   .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
+  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
+  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
-  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove {
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove {
     border-radius: 50%;
     color: #333333;
     cursor: pointer;
@@ -23926,81 +24022,97 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 14px; }
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
-    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
-    .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
-    .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
-    .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
     .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
     .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
     .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
-    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
-    .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover {
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover {
       background-color: rgba(51, 51, 51, 0.2); }
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
-  .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
-  .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
+  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
   .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
+  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
+  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
-  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear {
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear {
     font-size: 1.429em; }
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
-  .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
-  .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
+  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
   .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
+  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
+  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
-  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow {
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow {
     height: 26px;
     position: absolute;
     right: 4px;
     top: 2px;
     width: 20px; }
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom:after, .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem:after, .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect:after, .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom:after,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem:after,
-  .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect:after,
-  .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
+  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom:after, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem:after, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect:after, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom:after,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem:after,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect:after,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom:after,
   .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem:after,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect:after,
   .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:after,
+  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem:after,
+  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect:after,
+  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom:after,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem:after,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect:after,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:after,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem:after,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect:after,
-  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after {
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom:after,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem:after,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect:after,
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after {
     background-color: #ffffff;
     background-image: url("https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/upDownArrows.png");
     background-position-x: center;
@@ -24020,84 +24132,95 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
   .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
+  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
   .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
+  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child {
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child {
     background-color: transparent;
     border: none;
     display: block; }
-    .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
     .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
+    .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
     .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
+    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
-    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove {
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove {
       display: none; }
-  .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered,
   .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered,
+  .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered,
   .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered,
+  .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered,
   .LayoutBackoffice .select2-container--default .select2-selection--multiple .select2-selection__rendered,
-  .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  .ResizeParentIframe .select2-container--default .select2-selection--multiple .select2-selection__rendered {
     padding-left: 10px;
     padding-right: 36px; }
-    .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
     .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
+    .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
     .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
+    .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
     .LayoutBackoffice .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
-    .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child {
+    .ResizeParentIframe .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child {
       width: 100%; }
-      .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
       .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
+      .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
       .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
+      .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
       .LayoutBackoffice .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
-      .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field {
+      .ResizeParentIframe .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field {
         min-width: -webkit-fit-content;
         min-width: -moz-fit-content;
         min-width: fit-content;
         padding-left: 0 !important;
         width: 100% !important; }
 
-.LayoutBlank .select2-container--default .select2-search--inline .select2-search__field,
 .LayoutBase .select2-container--default .select2-search--inline .select2-search__field,
+.LayoutBlank .select2-container--default .select2-search--inline .select2-search__field,
 .LayoutPopup .select2-container--default .select2-search--inline .select2-search__field,
+.DesignSystem .select2-container--default .select2-search--inline .select2-search__field,
 .LayoutBackoffice .select2-container--default .select2-search--inline .select2-search__field,
-.DesignSystem .select2-container--default .select2-search--inline .select2-search__field {
+.ResizeParentIframe .select2-container--default .select2-search--inline .select2-search__field {
   height: 100%;
   margin: 0;
   min-height: 34px; }
 
-.LayoutBlank .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
 .LayoutBase .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
+.LayoutBlank .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
 .LayoutPopup .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
+.DesignSystem .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
 .LayoutBackoffice .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-.DesignSystem .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice {
+.ResizeParentIframe .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice {
   display: none; }
 
-.LayoutBlank .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
-.LayoutBlank .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
 .LayoutBase .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
 .LayoutBase .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
+.LayoutBlank .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
+.LayoutBlank .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
 .LayoutPopup .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
 .LayoutPopup .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
+.DesignSystem .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
+.DesignSystem .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
 .LayoutBackoffice .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
 .LayoutBackoffice .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
-.DesignSystem .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
-.DesignSystem .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple {
+.ResizeParentIframe .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
+.ResizeParentIframe .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple {
   background-color: #fff !important; }
 
-.LayoutBlank .select2-container--default .select2-search--dropdow,
 .LayoutBase .select2-container--default .select2-search--dropdow,
+.LayoutBlank .select2-container--default .select2-search--dropdow,
 .LayoutPopup .select2-container--default .select2-search--dropdow,
+.DesignSystem .select2-container--default .select2-search--dropdow,
 .LayoutBackoffice .select2-container--default .select2-search--dropdow,
-.DesignSystem .select2-container--default .select2-search--dropdow {
+.ResizeParentIframe .select2-container--default .select2-search--dropdow {
   border: 1px solid #d6d6d6;
   padding: 0; }
-  .LayoutBlank .select2-container--default .select2-search--dropdow .select2-search__field,
   .LayoutBase .select2-container--default .select2-search--dropdow .select2-search__field,
+  .LayoutBlank .select2-container--default .select2-search--dropdow .select2-search__field,
   .LayoutPopup .select2-container--default .select2-search--dropdow .select2-search__field,
+  .DesignSystem .select2-container--default .select2-search--dropdow .select2-search__field,
   .LayoutBackoffice .select2-container--default .select2-search--dropdow .select2-search__field,
-  .DesignSystem .select2-container--default .select2-search--dropdow .select2-search__field {
+  .ResizeParentIframe .select2-container--default .select2-search--dropdow .select2-search__field {
     background-color: #ffffff !important;
     border: none !important;
     box-shadow: none !important; }
@@ -25952,7 +26075,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .SpinnerInput_Container > a[disabled] {
     background-color: #ebebeb;
     border: 1px solid #d6d6d6;
-    color: #d6d6d6;
+    color: #858585;
     cursor: default; }
   .SpinnerInput_Container > a[disabled] + .SpinnerInput input[type] {
     pointer-events: none; }
