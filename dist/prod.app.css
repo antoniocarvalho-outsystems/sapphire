@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920044 || Generated: Thu Jul 30 2020 15:05:04 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920045 || Generated: Thu Jul 30 2020 15:39:34 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10612,6 +10612,42 @@ html .Page .PatientDetailsLayout {
 .LayoutBase-secondary-aside > span > a > .DisplayInlineBlock,
 .LayoutBase-secondary-aside > span > span > a > .DisplayInlineBlock {
   display: block; }
+
+.NewNavigation .LayoutBase-primary-menu {
+  background-color: #ebebeb; }
+
+.NewNavigation .FullScreenTabsWrapper_Container {
+  background-color: #ebebeb; }
+  .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper {
+    border-top-color: #ebebeb; }
+    .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper:hover {
+      background-color: #ebebeb;
+      color: #009884; }
+    .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
+      border-top-left-radius: 4px;
+      -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+      padding-right: 30px; }
+      .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
+        color: #009884; }
+      .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_tab a {
+        color: #009884; }
+    .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper_tab a {
+      color: #858585; }
+
+.NewNavigation .Toolbar__MoreOptionsIcon {
+  background-color: transparent;
+  color: #858585; }
+  .NewNavigation .Toolbar__MoreOptionsIcon span[ui='more-options-title']::after {
+    color: #858585; }
+
+.NewNavigation .Toolbar .MenuItemWrapper.Active {
+  border-top-left-radius: 4px;
+  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  padding-right: 40px; }
+  .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
+    color: #009884; }
 
 .LayoutBlank.Page {
   background-color: #fff;
