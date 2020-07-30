@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920043 || Generated: Thu Jul 30 2020 14:22:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920044 || Generated: Thu Jul 30 2020 15:05:04 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10115,7 +10115,7 @@ a.Button.IsDefault,
   .LayoutBase .WizardStep a:disabled,
   .LayoutBase .WizardStep a[disabled='disabled'],
   .LayoutBase .WizardStep a[disabled='disabled']:hover {
-    color: #d6d6d6; }
+    color: #adadad; }
 
 .DesignSystem .IconWizard,
 .LayoutBlank .IconWizard,
@@ -16962,7 +16962,7 @@ body.PanelOpened .daterangepicker {
     border-top-color: #fff;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    color: #5c5c5c;
+    color: #858585;
     font-family: "LatoBold";
     font-size: 1rem;
     line-height: calc(44px - 5px);
@@ -17702,7 +17702,7 @@ div.Toolbar {
     .MenuItemWrapper.Active .MenuItemWrapper_Container {
       color: #131819; }
   .MenuItemWrapper_Container {
-    color: #5c5c5c;
+    color: #858585;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in; }
   .MenuItemWrapper__icon {
@@ -19177,7 +19177,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   font-size: 1em; }
 
 .MainInteractiveCard-header-text-caption {
-  color: #adadad;
+  color: #858585;
   font-size: 1em; }
 
 .MainInteractiveCard-header-actions {
@@ -26606,7 +26606,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     border-bottom-color: #d6d6d6;
     flex-basis: 100%; }
   .Tabs_Extended .Tabs_Extended--disabled {
-    color: #d6d6d6; }
+    color: #adadad; }
   .Tabs_Extended .Tabs_body.Tabs_body--closed {
     padding: 0; }
     .Tabs_Extended .Tabs_body.Tabs_body--closed .Tabs__content {
