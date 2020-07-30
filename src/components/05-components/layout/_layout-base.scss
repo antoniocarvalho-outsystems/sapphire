@@ -619,3 +619,68 @@ html .Page .PatientDetailsLayout {
 .LayoutBase-secondary-aside > span > span > a > .DisplayInlineBlock {
 	display: block;
 }
+
+// New Navigation - Testing
+.NewNavigation {
+	.LayoutBase-primary-menu {
+		background-color: $sapphire-light;
+	}
+
+	.FullScreenTabsWrapper {
+		&_Container {
+			background-color: $sapphire-light;
+
+			.TabWrapper {
+				border-top-color: $sapphire-light;
+
+				&:hover {
+					background-color: $sapphire-light;
+					color: $regular-beta;
+				}
+
+				&.Active {
+					border-top-left-radius: 4px;
+					clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+					padding-right: 30px;
+
+					.TabWrapper_icon .icon {
+						color: $regular-beta;
+					}
+
+					.TabWrapper_tab a {
+						color: $regular-beta;
+					}
+				}
+
+				&_tab {
+					a {
+						color: $regular-grey;
+					}
+				}
+			}
+		}
+	}
+
+	.Toolbar {
+		&__MoreOptionsIcon {
+			background-color: transparent;
+			color: $regular-grey;
+
+			span[ui='more-options-title']::after {
+				color: $regular-grey;
+			}
+		}
+
+		.MenuItemWrapper {
+			&.Active {
+				border-top-left-radius: 4px;
+				clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+				padding-right: 40px;
+
+				.MenuItemWrapper_Container {
+					color: $regular-beta;
+				}
+			}
+		}
+	}
+}
