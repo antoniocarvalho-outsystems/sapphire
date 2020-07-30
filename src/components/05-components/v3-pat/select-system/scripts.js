@@ -30,6 +30,8 @@ SapphireWidgets.SelectSystem = config => {
 			Select2Options.dir = 'rtl';
 		}
 
+		Select2Options.theme = 'default SelectSystem';
+
 		/*  
           Change select2 search display 
               -Multiple Select2 search UI like Single Select2

@@ -89,7 +89,7 @@
 	a:disabled,
 	a[disabled='disabled'],
 	a[disabled='disabled']:hover {
-		color: $light-grey;
+		color: $label-color-disabled;
 	}
 }
 
