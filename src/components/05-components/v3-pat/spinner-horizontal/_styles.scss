@@ -23,9 +23,9 @@
 		}
 
 		&[disabled] {
-			background-color: $sapphire-light;
-			border: 1px solid $light-grey;
-			color: $light-grey;
+			background-color: $background-disabled;
+			border: 1px solid $border-color-disabled;
+			color: $text-color-disabled;
 			cursor: default;
 		}
 

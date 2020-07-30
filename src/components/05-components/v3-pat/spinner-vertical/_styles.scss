@@ -19,7 +19,7 @@
 		}
 
 		&.DisabledSpin {
-			color: $light-grey;
+			color: $border-color-disabled;
 			pointer-events: none;
 		}
 	}
@@ -43,7 +43,7 @@
 		min-width: 52px;
 
 		&[disabled] {
-			color: $light-grey;
+			color: $border-color-disabled;
 			pointer-events: none;
 		}
 	}

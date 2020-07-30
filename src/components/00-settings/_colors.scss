@@ -85,22 +85,6 @@
 
 // Style guide: Colors
 
-// $regular-alpha: red;
-// $regular-beta: #C84B56;
-// $regular-gamma: #DE5360;
-// $regular-delta: #F45B69;
-// $regular-epsilon: #F78791;
-// $regular-zeta: #F8969F;
-// $regular-eta: #F9A5AD;
-
-// $regular-alpha: #660066;
-// $regular-beta: #800080;
-// $regular-gamma: #be29ec;
-// $regular-delta: #d896ff;
-// $regular-epsilon: #efbbff;
-// $regular-zeta: #f8969f;
-// $regular-eta: #f9a5ad;
-
 $regular-alpha: #00bfa5;
 $regular-beta: #009884;
 $regular-gamma: #006758;
@@ -186,47 +170,7 @@ $secondary: #009884;
 $secondary-light: #56d3c2;
 $secondary-lighter: #c4f0eb;
 
-// $color-black:#333333;
-// $color-dark-blue:#194968;
-// $color-green:#7CB342;
-// $color-red:#FF3E2D;
-// $color-text-red:#FF3E2D;
-// $color-turquoise:#039BE5;
-// $color-turquoise2:#039BE5;
-// $color-yellow:#FBC02D;
-// $text-black:#333333;
-// $text-blue:#039BE5;
-// $text-dark-blue:#194968;
-// $text-Dark-blue:#194968;
-// $text-dark-plum:#C32B87;
-// $text-dark-red:#B10100;
-// $text-gray:#858585;
-// $text-green:#7CB242;
-// $text-light-green:#C2DEA8;
-// $text-orange:#FFA000;
-// $text-plum:#C32B87;
-// $text-red:#FF3E2D;
-// $text-sapphire-background:#F3F3F3;
-// $text-sapphire-blue:#2A5A6E;
-// $text-sapphire-blue2: #2A5A6E;
-// $text-sapphire-clinician:#D6D6D6;
-// $text-sapphire-dark-blue1:#333333;
-// $text-sapphire-dark-blue2:#30384A;
-// $text-sapphire-dark-grey:#858585;
-// $text-sapphire-dark-text:#333333;
-// $text-sapphire-male:#194968;
-// $text-sapphire-female:#C892B3;
-// $text-sapphire-inactive:#ADADAD;
-// $text-sapphire-lighness-text:#F3F3F3;
-// $text-sapphire-light-board:#D6D6D6;
-// $text-sapphire-light-container:#EBEBEB;
-// $text-sapphire-light-text:#F3F3F3;
-// $text-sapphire-warning:#FF3E2D;
-// $text-sapphire-white:#fff;
-// $text-silver:#D6D6D&;
-// $text-turquoise:#039BE5;
-// $text-yellow:#FBc02D;
-
+// Text Colors
 $sapphire-color-text-dark: $regular-black;
 $sapphire-color-text-regular: $dark-grey;
 $sapphire-color-text-light: $mid-dark-grey;
@@ -236,3 +180,9 @@ $sapphire-color-text-lightest: $light-grey;
 $sapphire-color-disabled-background: $sapphire-light;
 $sapphire-color-disabled-border: $mid-light-grey;
 $sapphire-color-disabled-text: $mid-light-grey;
+
+// Disabled State
+$border-color-disabled: $light-grey;
+$background-disabled: $sapphire-light;
+$label-color-disabled: $mid-light-grey;
+$text-color-disabled: $regular-gray;

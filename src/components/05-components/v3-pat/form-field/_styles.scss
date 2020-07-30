@@ -201,6 +201,12 @@
 		}
 	}
 
+	&.IsDisabledField {
+		.FormField-caption {
+			color: $label-color-disabled;
+		}
+	}
+
 	select {
 		@extend .Dropdown;
 	}

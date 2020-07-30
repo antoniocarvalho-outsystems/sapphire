@@ -34,8 +34,32 @@
 				}, 500);
 
 				$('.tooltipster-content').prepend('<div class="TooltipsterLoading"><div class="lds-ring"><div></div></div>');
+
+				const isLeftOrRight = config.positionId === 'left' || config.positionId === 'right';
+
+				// Set a fixed height in order to keep the arrow in the same position
+				if (isLeftOrRight) {
+					setFixHeight();
+
+					$(window)
+						.off('scroll.Tooltip')
+						.on('scroll.Tooltip', function() {
+							setTimeout(() => {
+								setFixHeight();
+							}, 500);
+						});
+				}
+			},
+			functionAfter: function() {
+				$(window).off('scroll.Tooltip');
 			},
 		});
+	};
+
+	const setFixHeight = () => {
+		const $arrow = $('.tooltipster-arrow');
+
+		$arrow.height($arrow.height());
 	};
 
 	SapphireWidgets.TriggerIframeTooltip = { create };

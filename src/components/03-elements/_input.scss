@@ -50,9 +50,13 @@
 
 		&:before,
 		&:hover:before {
-			background-color: $sapphire-light;
-			border: 1px solid $light-grey;
+			background-color: $background-disabled;
+			border: 1px solid $border-color-disabled;
 			box-shadow: none;
+		}
+
+		~ * {
+			color: $label-color-disabled;
 		}
 	}
 
@@ -95,16 +99,18 @@ input {
 			border-top: 0;
 			content: ' ';
 			height: 3px;
-			left: 21%;
+			left: 4;
 			opacity: 0;
 			position: absolute;
-			top: 30%;
+			top: 6px;
 			transform: rotate(-45deg);
-			width: 8px;
+			width: 9px;
 		}
 
-		&:disabled:after {
-			border-color: $light-grey;
+		&:disabled {
+			&:checked:after {
+				border-color: $text-color-disabled;
+			}
 		}
 	}
 
@@ -124,8 +130,11 @@ input {
 			width: 6px;
 		}
 
-		&:disabled:after {
-			background: $light-grey;
+		&:disabled {
+			&:checked:after {
+				background: $text-color-disabled;
+				border-color: $text-color-disabled;
+			}
 		}
 	}
 }
@@ -146,7 +155,8 @@ input[type='number'] {
 	transition: all 0.1s ease-in;
 
 	&::placeholder {
-		color: $regular-gray;
+		color: $mid-light-grey;
+		font-family: $font-family-latin-regular;
 	}
 
 	&:hover {
@@ -171,17 +181,18 @@ input[type='number'] {
 		&,
 		&:hover,
 		&:focus {
-			//background-image: none;
 			background-blend-mode: luminosity;
-			background-color: $sapphire-light;
+			background-color: $background-disabled;
 			background-position: right 14px center;
 			background-repeat: no-repeat;
-			border: 1px solid $light-grey;
+			border: 1px solid $border-color-disabled;
 			box-shadow: none;
+			color: $text-color-disabled;
 			cursor: not-allowed;
+			opacity: 1;
 
 			&::placeholder {
-				color: $light-grey;
+				color: $label-color-disabled;
 			}
 		}
 	}
