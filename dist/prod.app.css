@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920045 || Generated: Thu Jul 30 2020 15:39:34 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920045 || Generated: Fri Jul 31 2020 16:00:20 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15097,860 +15097,6 @@ body.PanelOpened .daterangepicker {
 .FA .AppLine .DragLine .HeadActions {
   text-align: left; }
 
-/* select2 v 4.0.3 */
-.Page .select2-container,
-.LayoutBlank .select2-container,
-.LayoutBase .select2-container,
-.LayoutPopup .select2-container {
-  box-sizing: border-box;
-  display: inline-block;
-  margin: 0;
-  position: relative;
-  vertical-align: top;
-  width: 100% !important;
-  zoom: 1; }
-  .Page .select2-container .select2-selection--single,
-  .LayoutBlank .select2-container .select2-selection--single,
-  .LayoutBase .select2-container .select2-selection--single,
-  .LayoutPopup .select2-container .select2-selection--single {
-    box-sizing: border-box;
-    cursor: pointer;
-    display: block;
-    height: 28px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-     -ms-user-select: none;
-         user-select: none; }
-    .Page .select2-container .select2-selection--single .select2-selection__rendered,
-    .LayoutBlank .select2-container .select2-selection--single .select2-selection__rendered,
-    .LayoutBase .select2-container .select2-selection--single .select2-selection__rendered,
-    .LayoutPopup .select2-container .select2-selection--single .select2-selection__rendered {
-      display: block;
-      overflow: hidden;
-      padding-left: 8px;
-      padding-right: 20px;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
-    .Page .select2-container .select2-selection--single .select2-selection__clear,
-    .LayoutBlank .select2-container .select2-selection--single .select2-selection__clear,
-    .LayoutBase .select2-container .select2-selection--single .select2-selection__clear,
-    .LayoutPopup .select2-container .select2-selection--single .select2-selection__clear {
-      position: relative; }
-  .Page .select2-container[dir='rtl'] .select2-selection--single .select2-selection__rendered,
-  .LayoutBlank .select2-container[dir='rtl'] .select2-selection--single .select2-selection__rendered,
-  .LayoutBase .select2-container[dir='rtl'] .select2-selection--single .select2-selection__rendered,
-  .LayoutPopup .select2-container[dir='rtl'] .select2-selection--single .select2-selection__rendered {
-    padding-left: 20px;
-    padding-right: 8px; }
-  .Page .select2-container .select2-selection--multiple,
-  .LayoutBlank .select2-container .select2-selection--multiple,
-  .LayoutBase .select2-container .select2-selection--multiple,
-  .LayoutPopup .select2-container .select2-selection--multiple {
-    box-sizing: border-box;
-    cursor: pointer;
-    display: block;
-    min-height: 32px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-     -ms-user-select: none;
-         user-select: none; }
-    .Page .select2-container .select2-selection--multiple .select2-selection__rendered,
-    .LayoutBlank .select2-container .select2-selection--multiple .select2-selection__rendered,
-    .LayoutBase .select2-container .select2-selection--multiple .select2-selection__rendered,
-    .LayoutPopup .select2-container .select2-selection--multiple .select2-selection__rendered {
-      display: inline-block;
-      overflow: hidden;
-      padding-left: 8px;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
-  .Page .select2-container .select2-search--inline,
-  .LayoutBlank .select2-container .select2-search--inline,
-  .LayoutBase .select2-container .select2-search--inline,
-  .LayoutPopup .select2-container .select2-search--inline {
-    float: left; }
-    .Page .select2-container .select2-search--inline .select2-search__field,
-    .LayoutBlank .select2-container .select2-search--inline .select2-search__field,
-    .LayoutBase .select2-container .select2-search--inline .select2-search__field,
-    .LayoutPopup .select2-container .select2-search--inline .select2-search__field {
-      border: none;
-      box-sizing: border-box;
-      margin-top: 5px;
-      padding: 0; }
-      .Page .select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button,
-      .LayoutBlank .select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button,
-      .LayoutBase .select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button,
-      .LayoutPopup .select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
-        -webkit-appearance: none; }
-
-.Page .select2-dropdown,
-.LayoutBlank .select2-dropdown,
-.LayoutBase .select2-dropdown,
-.LayoutPopup .select2-dropdown {
-  background-color: #ffffff;
-  border: 1px solid #d6d6d6 !important;
-  border-radius: 2px;
-  box-sizing: border-box;
-  display: block;
-  left: -100000px;
-  position: absolute;
-  width: 100%; }
-
-.Page .select2-results,
-.LayoutBlank .select2-results,
-.LayoutBase .select2-results,
-.LayoutPopup .select2-results {
-  display: block; }
-
-.Page .select2-results__options,
-.LayoutBlank .select2-results__options,
-.LayoutBase .select2-results__options,
-.LayoutPopup .select2-results__options {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.Page .select2-results__option,
-.LayoutBlank .select2-results__option,
-.LayoutBase .select2-results__option,
-.LayoutPopup .select2-results__option {
-  padding: 6px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none; }
-  .Page .select2-results__option[aria-selected],
-  .LayoutBlank .select2-results__option[aria-selected],
-  .LayoutBase .select2-results__option[aria-selected],
-  .LayoutPopup .select2-results__option[aria-selected] {
-    cursor: pointer; }
-
-.Page .select2-container--open .select2-dropdown,
-.LayoutBlank .select2-container--open .select2-dropdown,
-.LayoutBase .select2-container--open .select2-dropdown,
-.LayoutPopup .select2-container--open .select2-dropdown {
-  left: 0; }
-
-.Page .select2-container--open .select2-dropdown--above,
-.LayoutBlank .select2-container--open .select2-dropdown--above,
-.LayoutBase .select2-container--open .select2-dropdown--above,
-.LayoutPopup .select2-container--open .select2-dropdown--above {
-  border-bottom: none;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0; }
-
-.Page .select2-container--open .select2-dropdown--below,
-.LayoutBlank .select2-container--open .select2-dropdown--below,
-.LayoutBase .select2-container--open .select2-dropdown--below,
-.LayoutPopup .select2-container--open .select2-dropdown--below {
-  border-top: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
-
-.Page .select2-search--dropdown,
-.LayoutBlank .select2-search--dropdown,
-.LayoutBase .select2-search--dropdown,
-.LayoutPopup .select2-search--dropdown {
-  display: block;
-  padding: 4px; }
-  .Page .select2-search--dropdown .select2-search__field,
-  .LayoutBlank .select2-search--dropdown .select2-search__field,
-  .LayoutBase .select2-search--dropdown .select2-search__field,
-  .LayoutPopup .select2-search--dropdown .select2-search__field {
-    box-sizing: border-box;
-    padding: 4px;
-    width: 100%; }
-    .Page .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button,
-    .LayoutBlank .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button,
-    .LayoutBase .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button,
-    .LayoutPopup .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
-      -webkit-appearance: none; }
-  .Page .select2-search--dropdown.select2-search--hide,
-  .LayoutBlank .select2-search--dropdown.select2-search--hide,
-  .LayoutBase .select2-search--dropdown.select2-search--hide,
-  .LayoutPopup .select2-search--dropdown.select2-search--hide {
-    display: none; }
-
-.Page .select2-close-mask,
-.LayoutBlank .select2-close-mask,
-.LayoutBase .select2-close-mask,
-.LayoutPopup .select2-close-mask {
-  background-color: #ffffff;
-  border: 0;
-  display: block;
-  filter: alpha(opacity=0);
-  height: auto;
-  left: 0;
-  margin: 0;
-  min-height: 100%;
-  min-width: 100%;
-  opacity: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  width: auto;
-  z-index: 99; }
-
-.Page .select2-hidden-accessible,
-.LayoutBlank .select2-hidden-accessible,
-.LayoutBase .select2-hidden-accessible,
-.LayoutPopup .select2-hidden-accessible {
-  border: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important; }
-
-.Page .select2-container--default .select2-selection--single,
-.LayoutBlank .select2-container--default .select2-selection--single,
-.LayoutBase .select2-container--default .select2-selection--single,
-.LayoutPopup .select2-container--default .select2-selection--single {
-  border-radius: 2px;
-  height: 36px; }
-  .Page .select2-container--default .select2-selection--single.Mandatory,
-  .LayoutBlank .select2-container--default .select2-selection--single.Mandatory,
-  .LayoutBase .select2-container--default .select2-selection--single.Mandatory,
-  .LayoutPopup .select2-container--default .select2-selection--single.Mandatory {
-    border-left: 3px solid #0da2aa;
-    border-radius: 2px; }
-  .Page .select2-container--default .select2-selection--single .select2-selection__rendered,
-  .LayoutBlank .select2-container--default .select2-selection--single .select2-selection__rendered,
-  .LayoutBase .select2-container--default .select2-selection--single .select2-selection__rendered,
-  .LayoutPopup .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #333333;
-    height: 28px;
-    line-height: 22px;
-    padding: 5px 36px 5px 5px; }
-  .Page .select2-container--default .select2-selection--single .select2-selection__clear,
-  .LayoutBlank .select2-container--default .select2-selection--single .select2-selection__clear,
-  .LayoutBase .select2-container--default .select2-selection--single .select2-selection__clear,
-  .LayoutPopup .select2-container--default .select2-selection--single .select2-selection__clear {
-    cursor: pointer;
-    float: right;
-    font-family: 'LatoBold'; }
-  .Page .select2-container--default .select2-selection--single .select2-selection__placeholder,
-  .LayoutBlank .select2-container--default .select2-selection--single .select2-selection__placeholder,
-  .LayoutBase .select2-container--default .select2-selection--single .select2-selection__placeholder,
-  .LayoutPopup .select2-container--default .select2-selection--single .select2-selection__placeholder {
-    color: #999; }
-  .Page .select2-container--default .select2-selection--single .select2-selection__arrow,
-  .LayoutBlank .select2-container--default .select2-selection--single .select2-selection__arrow,
-  .LayoutBase .select2-container--default .select2-selection--single .select2-selection__arrow,
-  .LayoutPopup .select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 26px;
-    position: absolute;
-    right: 1px;
-    top: 2px;
-    width: 20px; }
-    .Page .select2-container--default .select2-selection--single .select2-selection__arrow b,
-    .LayoutBlank .select2-container--default .select2-selection--single .select2-selection__arrow b,
-    .LayoutBase .select2-container--default .select2-selection--single .select2-selection__arrow b,
-    .LayoutPopup .select2-container--default .select2-selection--single .select2-selection__arrow b {
-      background-color: #ffffff;
-      background-image: url("https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/upDownArrows.png");
-      background-position-x: center;
-      background-position-y: center;
-      background-repeat: no-repeat;
-      border: none;
-      content: '';
-      height: 30px;
-      left: auto;
-      margin: 0;
-      position: absolute;
-      right: 20px;
-      top: 1px;
-      width: 10px; }
-
-.Page .select2-container--default[dir='rtl'] .select2-selection--single .select2-selection__clear,
-.LayoutBlank .select2-container--default[dir='rtl'] .select2-selection--single .select2-selection__clear,
-.LayoutBase .select2-container--default[dir='rtl'] .select2-selection--single .select2-selection__clear,
-.LayoutPopup .select2-container--default[dir='rtl'] .select2-selection--single .select2-selection__clear {
-  float: left; }
-
-.Page .select2-container--default[dir='rtl'] .select2-selection--single .select2-selection__arrow,
-.LayoutBlank .select2-container--default[dir='rtl'] .select2-selection--single .select2-selection__arrow,
-.LayoutBase .select2-container--default[dir='rtl'] .select2-selection--single .select2-selection__arrow,
-.LayoutPopup .select2-container--default[dir='rtl'] .select2-selection--single .select2-selection__arrow {
-  left: 1px;
-  right: auto; }
-
-.Page .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice,
-.Page .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__placeholder,
-.Page .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-search--inline,
-.LayoutBlank .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice,
-.LayoutBlank .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__placeholder,
-.LayoutBlank .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-search--inline,
-.LayoutBase .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice,
-.LayoutBase .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__placeholder,
-.LayoutBase .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-search--inline,
-.LayoutPopup .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice,
-.LayoutPopup .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__placeholder,
-.LayoutPopup .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-search--inline {
-  float: right; }
-
-.Page .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice,
-.LayoutBlank .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice,
-.LayoutBase .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice,
-.LayoutPopup .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice {
-  margin-left: 5px;
-  margin-right: auto; }
-
-.Page .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice__remove,
-.LayoutBlank .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice__remove,
-.LayoutBase .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice__remove,
-.LayoutPopup .select2-container--default[dir='rtl'] .select2-selection--multiple .select2-selection__choice__remove {
-  margin-left: 2px;
-  margin-right: auto; }
-
-.Page .select2-container--default.select2-container--disabled .select2-selection--single,
-.LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--single,
-.LayoutBase .select2-container--default.select2-container--disabled .select2-selection--single,
-.LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--single {
-  background-color: #eee;
-  cursor: default; }
-  .Page .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear,
-  .LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear,
-  .LayoutBase .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear,
-  .LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {
-    display: none; }
-
-.Page .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b,
-.LayoutBlank .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b,
-.LayoutBase .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b,
-.LayoutPopup .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-  background-color: transparent;
-  border-color: transparent transparent #888 transparent;
-  border-width: 0 4px 5px 4px; }
-
-.Page .select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
-.Page .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple,
-.LayoutBlank .select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
-.LayoutBlank .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple,
-.LayoutBase .select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
-.LayoutBase .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple,
-.LayoutPopup .select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
-.LayoutPopup .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
-
-.Page .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
-.Page .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
-.LayoutBlank .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
-.LayoutBlank .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
-.LayoutBase .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
-.LayoutBase .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
-.LayoutPopup .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
-.LayoutPopup .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
-  background-color: #ffffff; }
-
-.Page .select2-container--default .select2-selection--multiple,
-.LayoutBlank .select2-container--default .select2-selection--multiple,
-.LayoutBase .select2-container--default .select2-selection--multiple,
-.LayoutPopup .select2-container--default .select2-selection--multiple {
-  border-radius: 2px;
-  cursor: text; }
-  .Page .select2-container--default .select2-selection--multiple .select2-selection__rendered,
-  .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered,
-  .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered,
-  .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered {
-    box-sizing: border-box;
-    list-style: none;
-    margin: 0;
-    padding: 0 5px;
-    width: 100%; }
-    .Page .select2-container--default .select2-selection--multiple .select2-selection__rendered li,
-    .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered li,
-    .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered li,
-    .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
-      list-style: none; }
-  .Page .select2-container--default .select2-selection--multiple .select2-selection__placeholder,
-  .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__placeholder,
-  .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__placeholder,
-  .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__placeholder {
-    color: #999;
-    float: left;
-    margin-top: 5px; }
-  .Page .select2-container--default .select2-selection--multiple .select2-selection__clear,
-  .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__clear,
-  .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__clear,
-  .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__clear {
-    cursor: pointer;
-    float: right;
-    font-family: 'LatoBold';
-    margin-right: 10px;
-    margin-top: 5px; }
-  .Page .select2-container--default .select2-selection--multiple .select2-selection__choice,
-  .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__choice,
-  .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__choice,
-  .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #e4e4e4;
-    border: 1px solid #aaa;
-    border-radius: 2px;
-    cursor: default;
-    float: left;
-    margin-right: 5px;
-    margin-top: 5px;
-    padding: 0 5px; }
-  .Page .select2-container--default .select2-selection--multiple .select2-selection__choice__remove,
-  .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__choice__remove,
-  .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__choice__remove,
-  .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-    color: #999;
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'LatoBold';
-    margin-right: 2px; }
-    .Page .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover,
-    .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover,
-    .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover,
-    .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
-      color: #333; }
-
-.Page .select2-container--default.select2-container--focus .select2-selection--single,
-.Page .select2-container--default.select2-container--focus .select2-selection--multiple,
-.LayoutBlank .select2-container--default.select2-container--focus .select2-selection--single,
-.LayoutBlank .select2-container--default.select2-container--focus .select2-selection--multiple,
-.LayoutBase .select2-container--default.select2-container--focus .select2-selection--single,
-.LayoutBase .select2-container--default.select2-container--focus .select2-selection--multiple,
-.LayoutPopup .select2-container--default.select2-container--focus .select2-selection--single,
-.LayoutPopup .select2-container--default.select2-container--focus .select2-selection--multiple {
-  border: 1px solid #00bfa5;
-  outline: 0; }
-
-.Page .select2-container--default.select2-container--disabled .select2-selection--multiple,
-.LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--multiple,
-.LayoutBase .select2-container--default.select2-container--disabled .select2-selection--multiple,
-.LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--multiple {
-  background-color: #eee;
-  cursor: default; }
-
-.Page .select2-container--default.select2-container--disabled .select2-selection__choice__remove,
-.LayoutBlank .select2-container--default.select2-container--disabled .select2-selection__choice__remove,
-.LayoutBase .select2-container--default.select2-container--disabled .select2-selection__choice__remove,
-.LayoutPopup .select2-container--default.select2-container--disabled .select2-selection__choice__remove {
-  display: none; }
-
-.Page .select2-container--default.select2-container--disabled .select2-selection__arrow b,
-.LayoutBlank .select2-container--default.select2-container--disabled .select2-selection__arrow b,
-.LayoutBase .select2-container--default.select2-container--disabled .select2-selection__arrow b,
-.LayoutPopup .select2-container--default.select2-container--disabled .select2-selection__arrow b {
-  background-color: transparent; }
-
-.Page .select2-container--default .select2-search--dropdown .select2-search__field,
-.LayoutBlank .select2-container--default .select2-search--dropdown .select2-search__field,
-.LayoutBase .select2-container--default .select2-search--dropdown .select2-search__field,
-.LayoutPopup .select2-container--default .select2-search--dropdown .select2-search__field {
-  border: 1px solid #aaa; }
-
-.Page .select2-container--default .select2-search--inline .select2-search__field,
-.LayoutBlank .select2-container--default .select2-search--inline .select2-search__field,
-.LayoutBase .select2-container--default .select2-search--inline .select2-search__field,
-.LayoutPopup .select2-container--default .select2-search--inline .select2-search__field {
-  -webkit-appearance: textfield;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  outline: 0; }
-
-.Page .select2-container--default .select2-results > .select2-results__options,
-.LayoutBlank .select2-container--default .select2-results > .select2-results__options,
-.LayoutBase .select2-container--default .select2-results > .select2-results__options,
-.LayoutPopup .select2-container--default .select2-results > .select2-results__options {
-  border-top: 1px solid #d6d6d6;
-  max-height: 200px;
-  overflow-y: auto; }
-
-.Page .select2-container--default .select2-results__option[role='group'],
-.LayoutBlank .select2-container--default .select2-results__option[role='group'],
-.LayoutBase .select2-container--default .select2-results__option[role='group'],
-.LayoutPopup .select2-container--default .select2-results__option[role='group'] {
-  padding: 0; }
-
-.Page .select2-container--default .select2-results__option[aria-disabled='true'],
-.LayoutBlank .select2-container--default .select2-results__option[aria-disabled='true'],
-.LayoutBase .select2-container--default .select2-results__option[aria-disabled='true'],
-.LayoutPopup .select2-container--default .select2-results__option[aria-disabled='true'] {
-  color: #999; }
-
-.Page .select2-container--default .select2-results__option .select2-results__option,
-.LayoutBlank .select2-container--default .select2-results__option .select2-results__option,
-.LayoutBase .select2-container--default .select2-results__option .select2-results__option,
-.LayoutPopup .select2-container--default .select2-results__option .select2-results__option {
-  padding-left: 1em; }
-  .Page .select2-container--default .select2-results__option .select2-results__option .select2-results__group,
-  .LayoutBlank .select2-container--default .select2-results__option .select2-results__option .select2-results__group,
-  .LayoutBase .select2-container--default .select2-results__option .select2-results__option .select2-results__group,
-  .LayoutPopup .select2-container--default .select2-results__option .select2-results__option .select2-results__group {
-    padding-left: 0; }
-  .Page .select2-container--default .select2-results__option .select2-results__option .select2-results__option,
-  .LayoutBlank .select2-container--default .select2-results__option .select2-results__option .select2-results__option,
-  .LayoutBase .select2-container--default .select2-results__option .select2-results__option .select2-results__option,
-  .LayoutPopup .select2-container--default .select2-results__option .select2-results__option .select2-results__option {
-    margin-left: -1em;
-    padding-left: 2em; }
-    .Page .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-    .LayoutBlank .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-    .LayoutBase .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-    .LayoutPopup .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
-      margin-left: -2em;
-      padding-left: 3em; }
-      .Page .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-      .LayoutBlank .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-      .LayoutBase .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-      .LayoutPopup .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
-        margin-left: -3em;
-        padding-left: 4em; }
-        .Page .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-        .LayoutBlank .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-        .LayoutBase .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-        .LayoutPopup .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
-          margin-left: -4em;
-          padding-left: 5em; }
-          .Page .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-          .LayoutBlank .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-          .LayoutBase .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option,
-          .LayoutPopup .select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
-            margin-left: -5em;
-            padding-left: 6em; }
-
-.Page .select2-container--default .select2-results__option--highlighted[aria-selected],
-.LayoutBlank .select2-container--default .select2-results__option--highlighted[aria-selected],
-.LayoutBase .select2-container--default .select2-results__option--highlighted[aria-selected],
-.LayoutPopup .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #5897fb;
-  color: white; }
-
-.Page .select2-container--default .select2-results__group,
-.LayoutBlank .select2-container--default .select2-results__group,
-.LayoutBase .select2-container--default .select2-results__group,
-.LayoutPopup .select2-container--default .select2-results__group {
-  cursor: default;
-  display: block;
-  padding: 6px; }
-
-.Page .Select2Class.Mandatory.select2-hidden-accessible + span.select2,
-.LayoutBlank .Select2Class.Mandatory.select2-hidden-accessible + span.select2,
-.LayoutBase .Select2Class.Mandatory.select2-hidden-accessible + span.select2,
-.LayoutPopup .Select2Class.Mandatory.select2-hidden-accessible + span.select2 {
-  /*   border-left: 3px solid #0da2aa;*     has two */
-  border-radius: 2px; }
-
-.Page .select2-container--classic .select2-selection--single,
-.LayoutBlank .select2-container--classic .select2-selection--single,
-.LayoutBase .select2-container--classic .select2-selection--single,
-.LayoutPopup .select2-container--classic .select2-selection--single {
-  background-color: #f7f7f7;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), to(#eee));
-  background-image: linear-gradient(to bottom, #fff 50%, #eee 100%);
-  background-image: -webkit-linear-gradient(top, #fff 50%, #eee 100%);
-  background-repeat: repeat-x;
-  border: 1px solid #aaa;
-  border-radius: 2px;
-  -webkit-filter: progid:dximagetransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFEEEEEE", GradientType=0);
-          filter: progid:dximagetransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFEEEEEE", GradientType=0);
-  outline: 0; }
-  .Page .select2-container--classic .select2-selection--single:focus,
-  .LayoutBlank .select2-container--classic .select2-selection--single:focus,
-  .LayoutBase .select2-container--classic .select2-selection--single:focus,
-  .LayoutPopup .select2-container--classic .select2-selection--single:focus {
-    border: 1px solid #5897fb; }
-  .Page .select2-container--classic .select2-selection--single .select2-selection__rendered,
-  .LayoutBlank .select2-container--classic .select2-selection--single .select2-selection__rendered,
-  .LayoutBase .select2-container--classic .select2-selection--single .select2-selection__rendered,
-  .LayoutPopup .select2-container--classic .select2-selection--single .select2-selection__rendered {
-    color: #444;
-    line-height: 28px; }
-  .Page .select2-container--classic .select2-selection--single .select2-selection__clear,
-  .LayoutBlank .select2-container--classic .select2-selection--single .select2-selection__clear,
-  .LayoutBase .select2-container--classic .select2-selection--single .select2-selection__clear,
-  .LayoutPopup .select2-container--classic .select2-selection--single .select2-selection__clear {
-    cursor: pointer;
-    float: right;
-    font-family: 'LatoBold';
-    margin-right: 10px; }
-  .Page .select2-container--classic .select2-selection--single .select2-selection__placeholder,
-  .LayoutBlank .select2-container--classic .select2-selection--single .select2-selection__placeholder,
-  .LayoutBase .select2-container--classic .select2-selection--single .select2-selection__placeholder,
-  .LayoutPopup .select2-container--classic .select2-selection--single .select2-selection__placeholder {
-    color: #999; }
-  .Page .select2-container--classic .select2-selection--single .select2-selection__arrow,
-  .LayoutBlank .select2-container--classic .select2-selection--single .select2-selection__arrow,
-  .LayoutBase .select2-container--classic .select2-selection--single .select2-selection__arrow,
-  .LayoutPopup .select2-container--classic .select2-selection--single .select2-selection__arrow {
-    background-color: #ddd;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #eee), to(#ccc));
-    background-image: linear-gradient(to bottom, #eee 50%, #ccc 100%);
-    background-image: -webkit-linear-gradient(top, #eee 50%, #ccc 100%);
-    background-repeat: repeat-x;
-    border: none;
-    border-bottom-right-radius: 4px;
-    border-left: 1px solid #aaa;
-    border-top-right-radius: 4px;
-    -webkit-filter: progid:dximagetransform.Microsoft.gradient(startColorstr="#FFEEEEEE", endColorstr="#FFCCCCCC", GradientType=0);
-            filter: progid:dximagetransform.Microsoft.gradient(startColorstr="#FFEEEEEE", endColorstr="#FFCCCCCC", GradientType=0);
-    height: 26px;
-    position: absolute;
-    right: 1px;
-    top: 1px;
-    width: 20px; }
-    .Page .select2-container--classic .select2-selection--single .select2-selection__arrow b,
-    .LayoutBlank .select2-container--classic .select2-selection--single .select2-selection__arrow b,
-    .LayoutBase .select2-container--classic .select2-selection--single .select2-selection__arrow b,
-    .LayoutPopup .select2-container--classic .select2-selection--single .select2-selection__arrow b {
-      border-color: #888 transparent transparent transparent;
-      border-style: solid;
-      border-width: 5px 4px 0 4px;
-      height: 0;
-      left: 50%;
-      margin-left: -4px;
-      margin-top: -2px;
-      position: absolute;
-      top: 50%;
-      width: 0; }
-
-.Page .select2-container--classic[dir='rtl'] .select2-selection--single .select2-selection__clear,
-.LayoutBlank .select2-container--classic[dir='rtl'] .select2-selection--single .select2-selection__clear,
-.LayoutBase .select2-container--classic[dir='rtl'] .select2-selection--single .select2-selection__clear,
-.LayoutPopup .select2-container--classic[dir='rtl'] .select2-selection--single .select2-selection__clear {
-  float: left; }
-
-.Page .select2-container--classic[dir='rtl'] .select2-selection--single .select2-selection__arrow,
-.LayoutBlank .select2-container--classic[dir='rtl'] .select2-selection--single .select2-selection__arrow,
-.LayoutBase .select2-container--classic[dir='rtl'] .select2-selection--single .select2-selection__arrow,
-.LayoutPopup .select2-container--classic[dir='rtl'] .select2-selection--single .select2-selection__arrow {
-  border: none;
-  border-radius: 0;
-  border-bottom-left-radius: 4px;
-  border-right: 1px solid #aaa;
-  border-top-left-radius: 4px;
-  left: 1px;
-  right: auto; }
-
-.Page .select2-container--classic[dir='rtl'] .select2-selection--multiple .select2-selection__choice,
-.LayoutBlank .select2-container--classic[dir='rtl'] .select2-selection--multiple .select2-selection__choice,
-.LayoutBase .select2-container--classic[dir='rtl'] .select2-selection--multiple .select2-selection__choice,
-.LayoutPopup .select2-container--classic[dir='rtl'] .select2-selection--multiple .select2-selection__choice {
-  float: right;
-  margin-left: 5px;
-  margin-right: auto; }
-
-.Page .select2-container--classic[dir='rtl'] .select2-selection--multiple .select2-selection__choice__remove,
-.LayoutBlank .select2-container--classic[dir='rtl'] .select2-selection--multiple .select2-selection__choice__remove,
-.LayoutBase .select2-container--classic[dir='rtl'] .select2-selection--multiple .select2-selection__choice__remove,
-.LayoutPopup .select2-container--classic[dir='rtl'] .select2-selection--multiple .select2-selection__choice__remove {
-  margin-left: 2px;
-  margin-right: auto; }
-
-.Page .select2-container--classic.select2-container--open .select2-selection--single,
-.LayoutBlank .select2-container--classic.select2-container--open .select2-selection--single,
-.LayoutBase .select2-container--classic.select2-container--open .select2-selection--single,
-.LayoutPopup .select2-container--classic.select2-container--open .select2-selection--single {
-  border: 1px solid #5897fb; }
-  .Page .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow,
-  .LayoutBlank .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow,
-  .LayoutBase .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow,
-  .LayoutPopup .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {
-    background: transparent;
-    border: none; }
-    .Page .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b,
-    .LayoutBlank .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b,
-    .LayoutBase .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b,
-    .LayoutPopup .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {
-      border-color: transparent transparent #888 transparent;
-      border-width: 0 4px 5px 4px; }
-
-.Page .select2-container--classic.select2-container--open.select2-container--above .select2-selection--single,
-.LayoutBlank .select2-container--classic.select2-container--open.select2-container--above .select2-selection--single,
-.LayoutBase .select2-container--classic.select2-container--open.select2-container--above .select2-selection--single,
-.LayoutPopup .select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #eee));
-  background-image: linear-gradient(to bottom, #fff 0%, #eee 50%);
-  background-image: -webkit-linear-gradient(top, #fff 0%, #eee 50%);
-  background-repeat: repeat-x;
-  border-top: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  -webkit-filter: progid:dximagetransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFEEEEEE", GradientType=0);
-          filter: progid:dximagetransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFEEEEEE", GradientType=0); }
-
-.Page .select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple,
-.LayoutBlank .select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple,
-.LayoutBase .select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple,
-.LayoutPopup .select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {
-  border-top: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
-
-.Page .select2-container--classic.select2-container--open.select2-container--below .select2-selection--single,
-.LayoutBlank .select2-container--classic.select2-container--open.select2-container--below .select2-selection--single,
-.LayoutBase .select2-container--classic.select2-container--open.select2-container--below .select2-selection--single,
-.LayoutPopup .select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #eee), to(#fff));
-  background-image: linear-gradient(to bottom, #eee 50%, #fff 100%);
-  background-image: -webkit-linear-gradient(top, #eee 50%, #fff 100%);
-  background-repeat: repeat-x;
-  border-bottom: none;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  -webkit-filter: progid:dximagetransform.Microsoft.gradient(startColorstr="#FFEEEEEE", endColorstr="#FFFFFFFF", GradientType=0);
-          filter: progid:dximagetransform.Microsoft.gradient(startColorstr="#FFEEEEEE", endColorstr="#FFFFFFFF", GradientType=0); }
-
-.Page .select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple,
-.LayoutBlank .select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple,
-.LayoutBase .select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple,
-.LayoutPopup .select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple {
-  border-bottom: none;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0; }
-
-.Page .select2-container--classic.select2-container--open .select2-selection--multiple,
-.LayoutBlank .select2-container--classic.select2-container--open .select2-selection--multiple,
-.LayoutBase .select2-container--classic.select2-container--open .select2-selection--multiple,
-.LayoutPopup .select2-container--classic.select2-container--open .select2-selection--multiple {
-  border: 1px solid #5897fb; }
-
-.Page .select2-container--classic.select2-container--open .select2-dropdown,
-.LayoutBlank .select2-container--classic.select2-container--open .select2-dropdown,
-.LayoutBase .select2-container--classic.select2-container--open .select2-dropdown,
-.LayoutPopup .select2-container--classic.select2-container--open .select2-dropdown {
-  border-color: #5897fb; }
-
-.Page .select2-container--classic .select2-selection--multiple,
-.LayoutBlank .select2-container--classic .select2-selection--multiple,
-.LayoutBase .select2-container--classic .select2-selection--multiple,
-.LayoutPopup .select2-container--classic .select2-selection--multiple {
-  background-color: white;
-  border: 1px solid #aaa;
-  border-radius: 2px;
-  cursor: text;
-  outline: 0; }
-  .Page .select2-container--classic .select2-selection--multiple:focus,
-  .LayoutBlank .select2-container--classic .select2-selection--multiple:focus,
-  .LayoutBase .select2-container--classic .select2-selection--multiple:focus,
-  .LayoutPopup .select2-container--classic .select2-selection--multiple:focus {
-    border: 1px solid #5897fb; }
-  .Page .select2-container--classic .select2-selection--multiple .select2-selection__rendered,
-  .LayoutBlank .select2-container--classic .select2-selection--multiple .select2-selection__rendered,
-  .LayoutBase .select2-container--classic .select2-selection--multiple .select2-selection__rendered,
-  .LayoutPopup .select2-container--classic .select2-selection--multiple .select2-selection__rendered {
-    list-style: none;
-    margin: 0;
-    padding: 0 5px; }
-  .Page .select2-container--classic .select2-selection--multiple .select2-selection__clear,
-  .LayoutBlank .select2-container--classic .select2-selection--multiple .select2-selection__clear,
-  .LayoutBase .select2-container--classic .select2-selection--multiple .select2-selection__clear,
-  .LayoutPopup .select2-container--classic .select2-selection--multiple .select2-selection__clear {
-    display: none; }
-  .Page .select2-container--classic .select2-selection--multiple .select2-selection__choice,
-  .LayoutBlank .select2-container--classic .select2-selection--multiple .select2-selection__choice,
-  .LayoutBase .select2-container--classic .select2-selection--multiple .select2-selection__choice,
-  .LayoutPopup .select2-container--classic .select2-selection--multiple .select2-selection__choice {
-    background-color: #e4e4e4;
-    border: 1px solid #aaa;
-    border-radius: 2px;
-    cursor: default;
-    float: left;
-    margin-right: 5px;
-    margin-top: 5px;
-    padding: 0 5px; }
-  .Page .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove,
-  .LayoutBlank .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove,
-  .LayoutBase .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove,
-  .LayoutPopup .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {
-    color: #888;
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'LatoBold';
-    margin-right: 2px; }
-    .Page .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover,
-    .LayoutBlank .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover,
-    .LayoutBase .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover,
-    .LayoutPopup .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {
-      color: #555; }
-
-.Page .select2-container--classic .select2-search--dropdown,
-.LayoutBlank .select2-container--classic .select2-search--dropdown,
-.LayoutBase .select2-container--classic .select2-search--dropdown,
-.LayoutPopup .select2-container--classic .select2-search--dropdown {
-  background-color: #fff;
-  border: 1px solid transparent; }
-  .Page .select2-container--classic .select2-search--dropdown .select2-search__field,
-  .LayoutBlank .select2-container--classic .select2-search--dropdown .select2-search__field,
-  .LayoutBase .select2-container--classic .select2-search--dropdown .select2-search__field,
-  .LayoutPopup .select2-container--classic .select2-search--dropdown .select2-search__field {
-    border: 1px solid #aaa;
-    outline: 0; }
-
-.Page .select2-container--classic .select2-search--inline .select2-search__field,
-.LayoutBlank .select2-container--classic .select2-search--inline .select2-search__field,
-.LayoutBase .select2-container--classic .select2-search--inline .select2-search__field,
-.LayoutPopup .select2-container--classic .select2-search--inline .select2-search__field {
-  box-shadow: none;
-  outline: 0; }
-
-.Page .select2-container--classic .select2-dropdown--above,
-.LayoutBlank .select2-container--classic .select2-dropdown--above,
-.LayoutBase .select2-container--classic .select2-dropdown--above,
-.LayoutPopup .select2-container--classic .select2-dropdown--above {
-  border-bottom: none; }
-
-.Page .select2-container--classic .select2-dropdown--below,
-.LayoutBlank .select2-container--classic .select2-dropdown--below,
-.LayoutBase .select2-container--classic .select2-dropdown--below,
-.LayoutPopup .select2-container--classic .select2-dropdown--below {
-  border-top: none; }
-
-.Page .select2-container--classic .select2-results > .select2-results__options,
-.LayoutBlank .select2-container--classic .select2-results > .select2-results__options,
-.LayoutBase .select2-container--classic .select2-results > .select2-results__options,
-.LayoutPopup .select2-container--classic .select2-results > .select2-results__options {
-  max-height: 200px;
-  overflow-y: auto; }
-
-.Page .select2-container--classic .select2-results__option[role='group'],
-.LayoutBlank .select2-container--classic .select2-results__option[role='group'],
-.LayoutBase .select2-container--classic .select2-results__option[role='group'],
-.LayoutPopup .select2-container--classic .select2-results__option[role='group'] {
-  padding: 0; }
-
-.Page .select2-container--classic .select2-results__option[aria-disabled='true'],
-.LayoutBlank .select2-container--classic .select2-results__option[aria-disabled='true'],
-.LayoutBase .select2-container--classic .select2-results__option[aria-disabled='true'],
-.LayoutPopup .select2-container--classic .select2-results__option[aria-disabled='true'] {
-  color: grey; }
-
-.Page .select2-container--classic .select2-results__option--highlighted[aria-selected],
-.LayoutBlank .select2-container--classic .select2-results__option--highlighted[aria-selected],
-.LayoutBase .select2-container--classic .select2-results__option--highlighted[aria-selected],
-.LayoutPopup .select2-container--classic .select2-results__option--highlighted[aria-selected] {
-  background-color: #3875d7;
-  color: #fff; }
-
-.Page .select2-container--classic .select2-results__group,
-.LayoutBlank .select2-container--classic .select2-results__group,
-.LayoutBase .select2-container--classic .select2-results__group,
-.LayoutPopup .select2-container--classic .select2-results__group {
-  cursor: default;
-  display: block;
-  padding: 6px; }
-
-.AR .select2-container--default .select2-selection--single .select2-selection__rendered {
-  float: right;
-  font-size: 1.143em;
-  margin-right: 10px; }
-
-.select2-dropdown.Select2[dir='rtl'] input[type='search'],
-.select2-dropdown.tagCustom[dir='rtl'] input[type='search'] {
-  padding-left: 0 !important;
-  padding-right: 12px !important; }
-
-.select2-dropdown.Select2[dir='rtl'] .select2-search--dropdown:after,
-.select2-dropdown.tagCustom[dir='rtl'] .select2-search--dropdown:after {
-  left: 20px;
-  right: unset; }
-
 .DropZoneWrapper {
   display: inline; }
   .DropZoneWrapper .dropzone {
@@ -23721,560 +22867,202 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .FA .SegmentedControl:not(.Vertical) .SegmentedControlItem label:focus {
     border: 1px solid #00bfa5; }
 
-.LayoutBase .select2-container:hover .select2-selection[aria-disabled='false'],
-.LayoutBlank .select2-container:hover .select2-selection[aria-disabled='false'],
-.LayoutPopup .select2-container:hover .select2-selection[aria-disabled='false'],
-.DesignSystem .select2-container:hover .select2-selection[aria-disabled='false'],
-.LayoutBackoffice .select2-container:hover .select2-selection[aria-disabled='false'],
-.ResizeParentIframe .select2-container:hover .select2-selection[aria-disabled='false'] {
-  background-color: #f2fffd;
-  border: 1px solid #00bfa5; }
-
-.LayoutBase .select2-container .select2-selection,
-.LayoutBlank .select2-container .select2-selection,
-.LayoutPopup .select2-container .select2-selection,
-.DesignSystem .select2-container .select2-selection,
-.LayoutBackoffice .select2-container .select2-selection,
-.ResizeParentIframe .select2-container .select2-selection {
-  border-radius: 4px; }
-
-.LayoutBase .select2-container--default.select2-container--disabled .select2-selection--single,
-.LayoutBase .select2-container--default.select2-container--disabled .select2-selection--multiple,
-.LayoutBase .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom,
-.LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--single,
-.LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--multiple,
-.LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom,
-.LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--single,
-.LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--multiple,
-.LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom,
-.DesignSystem .select2-container--default.select2-container--disabled .select2-selection--single,
-.DesignSystem .select2-container--default.select2-container--disabled .select2-selection--multiple,
-.DesignSystem .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom,
-.LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--single,
-.LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--multiple,
-.LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom,
-.ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--single,
-.ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--multiple,
-.ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom {
-  background-color: #ebebeb;
-  border: 1px solid #d6d6d6;
-  color: #858585; }
-  .LayoutBase .select2-container--default.select2-container--disabled .select2-selection--single:focus,
-  .LayoutBase .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
-  .LayoutBase .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus,
-  .LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--single:focus,
-  .LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
-  .LayoutBlank .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus,
-  .LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--single:focus,
-  .LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
-  .LayoutPopup .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus,
-  .DesignSystem .select2-container--default.select2-container--disabled .select2-selection--single:focus,
-  .DesignSystem .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
-  .DesignSystem .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus,
-  .LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--single:focus,
-  .LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
-  .LayoutBackoffice .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus,
-  .ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--single:focus,
-  .ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--multiple:focus,
-  .ResizeParentIframe .select2-container--default.select2-container--disabled .select2-selection--multiple.tagCustom:focus {
-    border: 1px solid #d6d6d6; }
-
-.LayoutBase .select2-container--default .select2-selection,
-.LayoutBlank .select2-container--default .select2-selection,
-.LayoutPopup .select2-container--default .select2-selection,
-.DesignSystem .select2-container--default .select2-selection,
-.LayoutBackoffice .select2-container--default .select2-selection,
-.ResizeParentIframe .select2-container--default .select2-selection {
-  min-height: 36px; }
-  .LayoutBase .select2-container--default .select2-selection .select2-selection__rendered,
-  .LayoutBase .select2-container--default .select2-selection .select2-search,
-  .LayoutBlank .select2-container--default .select2-selection .select2-selection__rendered,
-  .LayoutBlank .select2-container--default .select2-selection .select2-search,
-  .LayoutPopup .select2-container--default .select2-selection .select2-selection__rendered,
-  .LayoutPopup .select2-container--default .select2-selection .select2-search,
-  .DesignSystem .select2-container--default .select2-selection .select2-selection__rendered,
-  .DesignSystem .select2-container--default .select2-selection .select2-search,
-  .LayoutBackoffice .select2-container--default .select2-selection .select2-selection__rendered,
-  .LayoutBackoffice .select2-container--default .select2-selection .select2-search,
-  .ResizeParentIframe .select2-container--default .select2-selection .select2-selection__rendered,
-  .ResizeParentIframe .select2-container--default .select2-selection .select2-search {
-    height: 100%; }
-  .LayoutBase .select2-container--default .select2-selection .select2-selection__rendered,
-  .LayoutBlank .select2-container--default .select2-selection .select2-selection__rendered,
-  .LayoutPopup .select2-container--default .select2-selection .select2-selection__rendered,
-  .DesignSystem .select2-container--default .select2-selection .select2-selection__rendered,
-  .LayoutBackoffice .select2-container--default .select2-selection .select2-selection__rendered,
-  .ResizeParentIframe .select2-container--default .select2-selection .select2-selection__rendered {
-    padding-left: 0; }
-  .LayoutBase .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
-  .LayoutBlank .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
-  .LayoutPopup .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
-  .DesignSystem .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
-  .LayoutBackoffice .select2-container--default .select2-selection.select2-selection--multiple.tagSystem,
-  .ResizeParentIframe .select2-container--default .select2-selection.select2-selection--multiple.tagSystem {
-    height: auto;
-    min-height: 36px; }
-    .LayoutBase .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
-    .LayoutBlank .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
-    .LayoutPopup .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
-    .DesignSystem .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
-    .LayoutBackoffice .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field,
-    .ResizeParentIframe .select2-container--default .select2-selection.select2-selection--multiple.tagSystem .select2-search__field {
-      margin-top: 2px;
-      min-height: 28px; }
-
-.LayoutBase .select2-container--default .select2-selection--single,
-.LayoutBase .select2-container--default .select2-selection--multiple,
-.LayoutBase .select2-container--default .select2-selection--multiple.tagCustom,
-.LayoutBlank .select2-container--default .select2-selection--single,
-.LayoutBlank .select2-container--default .select2-selection--multiple,
-.LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom,
-.LayoutPopup .select2-container--default .select2-selection--single,
-.LayoutPopup .select2-container--default .select2-selection--multiple,
-.LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom,
-.DesignSystem .select2-container--default .select2-selection--single,
-.DesignSystem .select2-container--default .select2-selection--multiple,
-.DesignSystem .select2-container--default .select2-selection--multiple.tagCustom,
-.LayoutBackoffice .select2-container--default .select2-selection--single,
-.LayoutBackoffice .select2-container--default .select2-selection--multiple,
-.LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom,
-.ResizeParentIframe .select2-container--default .select2-selection--single,
-.ResizeParentIframe .select2-container--default .select2-selection--multiple,
-.ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom {
-  border: 1px solid #d6d6d6; }
-  .LayoutBase .select2-container--default .select2-selection--single:focus,
-  .LayoutBase .select2-container--default .select2-selection--multiple:focus,
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom:focus,
-  .LayoutBlank .select2-container--default .select2-selection--single:focus,
-  .LayoutBlank .select2-container--default .select2-selection--multiple:focus,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom:focus,
-  .LayoutPopup .select2-container--default .select2-selection--single:focus,
-  .LayoutPopup .select2-container--default .select2-selection--multiple:focus,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom:focus,
-  .DesignSystem .select2-container--default .select2-selection--single:focus,
-  .DesignSystem .select2-container--default .select2-selection--multiple:focus,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:focus,
-  .LayoutBackoffice .select2-container--default .select2-selection--single:focus,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple:focus,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom:focus,
-  .ResizeParentIframe .select2-container--default .select2-selection--single:focus,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple:focus,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom:focus {
-    border: 1px solid #00bfa5; }
-
-.LayoutBase .select2-container--default .select2-selection--single,
-.LayoutBlank .select2-container--default .select2-selection--single,
-.LayoutPopup .select2-container--default .select2-selection--single,
-.DesignSystem .select2-container--default .select2-selection--single,
-.LayoutBackoffice .select2-container--default .select2-selection--single,
-.ResizeParentIframe .select2-container--default .select2-selection--single {
-  line-height: 18px;
-  padding: 2px 10px; }
-
-.LayoutBase .select2-container--default .MultipleSelect.select2-selection,
-.LayoutBlank .select2-container--default .MultipleSelect.select2-selection,
-.LayoutPopup .select2-container--default .MultipleSelect.select2-selection,
-.DesignSystem .select2-container--default .MultipleSelect.select2-selection,
-.LayoutBackoffice .select2-container--default .MultipleSelect.select2-selection,
-.ResizeParentIframe .select2-container--default .MultipleSelect.select2-selection {
-  height: 36px; }
-
-.LayoutBase .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
-.LayoutBlank .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
-.LayoutPopup .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
-.DesignSystem .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
-.LayoutBackoffice .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered,
-.ResizeParentIframe .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered {
-  padding: 0 10px; }
-  .LayoutBase .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
-  .LayoutBlank .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
-  .LayoutPopup .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
-  .DesignSystem .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
-  .LayoutBackoffice .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2),
-  .ResizeParentIframe .select2-container--default .MultipleSelect.select2-selection--multiple .select2-selection__rendered > li:nth-child(n + 2) {
-    display: none; }
-
-.LayoutBase .select2-container--default .select2-selection--multiple,
-.LayoutBlank .select2-container--default .select2-selection--multiple,
-.LayoutPopup .select2-container--default .select2-selection--multiple,
-.DesignSystem .select2-container--default .select2-selection--multiple,
-.LayoutBackoffice .select2-container--default .select2-selection--multiple,
-.ResizeParentIframe .select2-container--default .select2-selection--multiple {
-  font-family: "LatoBold"; }
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom {
-    -webkit-box-align: center;
-            align-items: center;
-    border-radius: 18px;
-    display: -webkit-box;
-    display: flex; }
-    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom:before,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom:before,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom:before,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:before,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom:before,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom:before {
-      color: #858585;
-      content: '\e690';
-      font-family: 'Sapphire-Icon-Font';
-      font-size: 1.143em;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: normal;
-      line-height: 20px;
-      padding-right: 10px;
-      pointer-events: none;
-      text-transform: none;
-      top: 8px;
-      -webkit-transform: rotateY(180deg);
-      transform: rotateY(180deg);
-      z-index: 1; }
-    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove {
-      color: #333333;
-      cursor: pointer;
-      display: inline-block;
-      font-family: "LatoBold";
-      font-size: 1.143em;
-      height: 8px;
-      line-height: 8px;
+.select2 {
+  width: 100% !important; }
+  .select2.select2-container--disabled .select2-selection[aria-disabled='true'] {
+    background-color: #ebebeb;
+    border-color: #d6d6d6; }
+    .select2.select2-container--disabled .select2-selection[aria-disabled='true']:hover {
+      background-color: #ebebeb;
+      border-color: #d6d6d6; }
+    .select2.select2-container--disabled .select2-selection[aria-disabled='true']:after {
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%); }
+    .select2.select2-container--disabled .select2-selection[aria-disabled='true'] .select2-selection__rendered {
+      color: #858585; }
+  .select2.select2-container--open .select2-selection, .select2.select2-container--open .select2-selection:hover, .select2.select2-container--focus .select2-selection, .select2.select2-container--focus .select2-selection:hover {
+    background-color: #fff;
+    border-color: #00bfa5; }
+  .select2.select2-container--open .select2-selection[aria-disabled='false'] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .select2 .select2-selection {
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    line-height: 0;
+    min-height: 36px;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in; }
+    .select2 .select2-selection:hover {
+      background-color: #f2fffd;
+      border-color: #00bfa5; }
+    .select2 .select2-selection:after {
+      background-color: #ffffff;
+      background-image: url("https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/upDownArrows.png");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      border: none;
+      content: '';
+      height: 30px;
+      left: auto;
       margin: 0;
-      padding: 0;
       position: absolute;
-      right: 10px;
+      right: 20px;
+      top: 1px;
+      width: 10px;
+      background-color: transparent;
+      height: 12px;
+      right: 15px;
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
-    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
-    .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'],
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-results__option[aria-selected='true'] {
-      background-color: #f2fffd;
-      color: #333333; }
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice {
-    background-color: #c4f0eb;
-    border: none;
-    border-radius: 0;
-    cursor: default;
-    display: inline-block;
-    font-family: "LatoBold";
-    line-height: 22px;
-    margin-top: 4px;
-    padding: 2px 0px;
-    padding-left: 15px;
-    padding-right: 25px;
-    position: relative;
-    white-space: normal; }
-    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
-    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
-    .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice > div,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice > div,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice > div,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice > div {
-      max-width: 350px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
-  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove {
-    border-radius: 50%;
-    color: #333333;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "LatoBold";
-    font-size: 1em;
-    height: 14px;
-    line-height: 13px;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 6px;
-    text-align: center;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 14px; }
-    .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
-    .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
-    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
-    .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__choice__remove:hover,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove:hover,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove:hover,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove:hover {
-      background-color: rgba(51, 51, 51, 0.2); }
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
-  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__clear,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__clear,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__clear,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__clear {
-    font-size: 1.429em; }
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
-  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom .select2-selection__arrow,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__arrow,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__arrow,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__arrow {
-    height: 26px;
-    position: absolute;
-    right: 4px;
-    top: 2px;
-    width: 20px; }
-  .LayoutBase .select2-container--default .select2-selection--multiple.tagCustom:after, .LayoutBase .select2-container--default .select2-selection--multiple.tagSystem:after, .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect:after, .LayoutBase .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagCustom:after,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.tagSystem:after,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect:after,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagCustom:after,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.tagSystem:after,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect:after,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagCustom:after,
-  .DesignSystem .select2-container--default .select2-selection--multiple.tagSystem:after,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect:after,
-  .DesignSystem .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagCustom:after,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.tagSystem:after,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect:after,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagCustom:after,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.tagSystem:after,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect:after,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple:after {
-    background-color: #ffffff;
-    background-image: url("https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/upDownArrows.png");
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    border: none;
-    content: '';
-    height: 30px;
-    left: auto;
-    margin: 0;
-    position: absolute;
-    right: 20px;
-    top: 1px;
-    width: 10px;
-    height: 12px;
-    right: 18px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
-  .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
-  .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
-  .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child {
-    background-color: transparent;
-    border: none;
-    display: block; }
-    .LayoutBase .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
-    .LayoutBlank .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
-    .LayoutPopup .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
-    .DesignSystem .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice:first-child .select2-selection__choice__remove {
+    .select2 .select2-selection.select2-selection--multiple.tagCustom {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      border-radius: 18px; }
+      .select2 .select2-selection.select2-selection--multiple.tagCustom:before {
+        color: #858585;
+        content: '\e690';
+        font-family: "Sapphire-Icon-Font";
+        font-size: 1.143em;
+        line-height: 20px;
+        padding-right: 10px;
+        pointer-events: none;
+        top: 8px;
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+        z-index: 1; }
+    .select2 .select2-selection.select2-selection--multiple.MultipleSelect .select2-selection__rendered > li:nth-child(n + 2) {
       display: none; }
-  .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered,
-  .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered,
-  .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered,
-  .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered,
-  .LayoutBackoffice .select2-container--default .select2-selection--multiple .select2-selection__rendered,
-  .ResizeParentIframe .select2-container--default .select2-selection--multiple .select2-selection__rendered {
-    padding-left: 10px;
-    padding-right: 36px; }
-    .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
-    .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
-    .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
-    .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
-    .LayoutBackoffice .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child,
-    .ResizeParentIframe .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child {
-      width: 100%; }
-      .LayoutBase .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
-      .LayoutBlank .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
-      .LayoutPopup .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
-      .DesignSystem .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
-      .LayoutBackoffice .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field,
-      .ResizeParentIframe .select2-container--default .select2-selection--multiple .select2-selection__rendered li:only-child .select2-search__field {
-        min-width: -webkit-fit-content;
-        min-width: -moz-fit-content;
-        min-width: fit-content;
-        padding-left: 0 !important;
-        width: 100% !important; }
-
-.LayoutBase .select2-container--default .select2-search--inline .select2-search__field,
-.LayoutBlank .select2-container--default .select2-search--inline .select2-search__field,
-.LayoutPopup .select2-container--default .select2-search--inline .select2-search__field,
-.DesignSystem .select2-container--default .select2-search--inline .select2-search__field,
-.LayoutBackoffice .select2-container--default .select2-search--inline .select2-search__field,
-.ResizeParentIframe .select2-container--default .select2-search--inline .select2-search__field {
-  height: 100%;
-  margin: 0;
-  min-height: 34px; }
-
-.LayoutBase .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-.LayoutBlank .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-.LayoutPopup .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-.DesignSystem .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-.LayoutBackoffice .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-.ResizeParentIframe .select2-container--default .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice {
-  display: none; }
-
-.LayoutBase .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
-.LayoutBase .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
-.LayoutBlank .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
-.LayoutBlank .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
-.LayoutPopup .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
-.LayoutPopup .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
-.DesignSystem .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
-.DesignSystem .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
-.LayoutBackoffice .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
-.LayoutBackoffice .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple,
-.ResizeParentIframe .select2-container--default .select2-container--open.select2-container--below .select2-selection--single,
-.ResizeParentIframe .select2-container--default .select2-container--open.select2-container--below .select2-selection--multiple {
-  background-color: #fff !important; }
-
-.LayoutBase .select2-container--default .select2-search--dropdow,
-.LayoutBlank .select2-container--default .select2-search--dropdow,
-.LayoutPopup .select2-container--default .select2-search--dropdow,
-.DesignSystem .select2-container--default .select2-search--dropdow,
-.LayoutBackoffice .select2-container--default .select2-search--dropdow,
-.ResizeParentIframe .select2-container--default .select2-search--dropdow {
-  border: 1px solid #d6d6d6;
-  padding: 0; }
-  .LayoutBase .select2-container--default .select2-search--dropdow .select2-search__field,
-  .LayoutBlank .select2-container--default .select2-search--dropdow .select2-search__field,
-  .LayoutPopup .select2-container--default .select2-search--dropdow .select2-search__field,
-  .DesignSystem .select2-container--default .select2-search--dropdow .select2-search__field,
-  .LayoutBackoffice .select2-container--default .select2-search--dropdow .select2-search__field,
-  .ResizeParentIframe .select2-container--default .select2-search--dropdow .select2-search__field {
-    background-color: #ffffff !important;
-    border: none !important;
-    box-shadow: none !important; }
+    .select2 .select2-selection.select2-selection--multiple.MultipleSelect .select2-selection__rendered .select2-selection__choice:first-child {
+      background-color: transparent;
+      padding-left: 0; }
+      .select2 .select2-selection.select2-selection--multiple.MultipleSelect .select2-selection__rendered .select2-selection__choice:first-child .select2-selection__choice__remove {
+        display: none; }
+    .select2 .select2-selection.select2-selection--multiple .select2-selection__rendered {
+      height: 100%;
+      line-height: inherit; }
+    .select2 .select2-selection .select2-selection__rendered {
+      color: #333333;
+      line-height: 36px;
+      padding-left: 10px;
+      padding-right: 36px; }
+      .select2 .select2-selection .select2-selection__rendered .select2-search {
+        height: calc($select-system-height - 2px); }
+        .select2 .select2-selection .select2-selection__rendered .select2-search:only-child {
+          width: 100%; }
+          .select2 .select2-selection .select2-selection__rendered .select2-search:only-child .select2-search__field {
+            min-width: -webkit-fit-content;
+            min-width: -moz-fit-content;
+            min-width: fit-content;
+            padding-left: 0 !important;
+            width: 100% !important; }
+        .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field {
+          height: 36px;
+          line-height: calc($select-system-height - 2px);
+          margin-top: -2px;
+          padding-left: 0 !important; }
+          .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::-webkit-input-placeholder {
+            color: #adadad;
+            font-family: "LatoRegular"; }
+          .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::-moz-placeholder {
+            color: #adadad;
+            font-family: "LatoRegular"; }
+          .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field:-ms-input-placeholder {
+            color: #adadad;
+            font-family: "LatoRegular"; }
+          .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::-ms-input-placeholder {
+            color: #adadad;
+            font-family: "LatoRegular"; }
+          .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::placeholder {
+            color: #adadad;
+            font-family: "LatoRegular"; }
+      .select2 .select2-selection .select2-selection__rendered .select2-selection__choice {
+        background-color: #c4f0eb;
+        border: none;
+        border-radius: 0;
+        cursor: default;
+        display: inline-block;
+        font-family: "LatoBold";
+        line-height: 22px;
+        margin-top: 4px;
+        padding: 2px 25px 2px 15px;
+        position: relative;
+        white-space: normal; }
+        .select2 .select2-selection .select2-selection__rendered .select2-selection__choice > div {
+          max-width: 350px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+        .select2 .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+          border-radius: 50%;
+          color: #333333;
+          cursor: pointer;
+          display: inline-block;
+          font-family: "LatoBold";
+          font-size: 1em;
+          height: 14px;
+          line-height: 13px;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          right: 6px;
+          text-align: center;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          width: 14px; }
+          .select2 .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove:hover {
+            background-color: rgba(51, 51, 51, 0.2); }
+    .select2 .select2-selection .select2-selection__arrow {
+      display: none; }
 
 .select2-container .select2-dropdown {
   border: 1px solid #d6d6d6;
-  border-radius: 4px; }
+  border-radius: 4px;
+  overflow: hidden; }
   .select2-container .select2-dropdown--below {
     margin-top: 4px; }
   .select2-container .select2-dropdown--above {
     margin-top: -4px; }
+  .select2-container .select2-dropdown.MultipleSelect .select2-results__option:before {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    margin-right: 16px;
+    position: relative;
+    vertical-align: middle;
+    width: 20px; }
+  .select2-container .select2-dropdown.MultipleSelect .select2-results__option[aria-selected='true'] {
+    background-color: #f2fffd; }
+    .select2-container .select2-dropdown.MultipleSelect .select2-results__option[aria-selected='true']:before {
+      background-color: #fff;
+      color: #009884;
+      content: '\f00c';
+      display: inline-block;
+      font-family: FontAwesome;
+      height: 18px;
+      line-height: 19px;
+      padding: 1px;
+      text-align: center;
+      width: 18px; }
+  .select2-container .select2-dropdown.MultipleSelect .select2-results__option--highlighted[aria-selected] {
+    background-color: #f2fffd;
+    color: #333333; }
   .select2-container .select2-dropdown .select2-search {
     padding: 8px; }
     .select2-container .select2-dropdown .select2-search .select2-search__field {
+      background: none;
       border: 1px solid #00bfa5;
       border-radius: 100px;
-      padding: 0 38px 0 12px !important; }
-  .select2-container .select2-dropdown .select2-search.select2-search--dropdown:after {
+      padding: 0 36px 0 12px !important; }
+  .select2-container .select2-dropdown .select2-search--dropdown:after {
     color: #adadad;
     content: '\e690';
     font-family: "Sapphire-Icon-Font";
@@ -24284,220 +23072,98 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     top: 14px;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg); }
+  .select2-container .select2-dropdown .select2-results .select2-results__options::-webkit-scrollbar {
+    background-color: #fff;
+    height: 4px;
+    width: 4px; }
+  .select2-container .select2-dropdown .select2-results .select2-results__options::-webkit-scrollbar-thumb {
+    border: 5px solid #d6d6d6;
+    border-radius: 5px; }
   .select2-container .select2-dropdown .select2-results .select2-results__options li.select2-results__option {
     border-bottom: none;
     padding: 8px; }
     .select2-container .select2-dropdown .select2-results .select2-results__options li.select2-results__option[aria-selected='true'] {
       background-color: #00bfa5;
       color: #fff; }
+      .select2-container .select2-dropdown .select2-results .select2-results__options li.select2-results__option[aria-selected='true'] .fontSelect2Availability {
+        color: #fff; }
+    .select2-container .select2-dropdown .select2-results .select2-results__options li.select2-results__option.select2-results__option--highlighted[aria-selected='false'] {
+      background-color: #f2fffd;
+      color: #333333; }
 
-.select2-container--disabled .tagCustom:after,
-.select2-container--disabled .tagSystem:after,
-.select2-container--disabled .MultipleSelect:after,
-.select2-container--disabled .Select2Ajax.Multiple:after {
-  background-color: transparent !important; }
-
-.select2-results .select2-results__options::-webkit-scrollbar {
-  background-color: #fff;
-  height: 4px;
-  width: 4px; }
-
-.select2-results .select2-results__options::-webkit-scrollbar-thumb {
-  border: 5px solid #d6d6d6;
-  border-radius: 5px; }
-
-.select2-results .select2-results__options::-webkit-scrollbar-thumb {
-  border: 5px solid #d6d6d6; }
-
-.select2-results .select2-results__options .select2-results__option[aria-selected='true'], .select2-results .select2-results__options .select2-results__option.select2-results__option--highlighted[aria-selected] {
-  background-color: #f2fffd;
-  color: #333333; }
-
-.select2-results li {
-  border-bottom: 1px solid #ccc; }
-
-.tagSystem .select2-search--dropdown {
-  display: none; }
-
-.select2-dropdown.MultipleSelect .select2-results__option:before {
-  background-color: #ffffff;
-  border: 1px solid #d6d6d6;
-  border-radius: 4px;
-  content: '';
-  display: inline-block;
-  height: 22px;
-  margin-right: 20px;
-  position: relative;
-  vertical-align: middle;
-  width: 22px; }
-
-.select2-dropdown.MultipleSelect .select2-results__option[aria-selected='true'] {
-  background-color: #f2fffd; }
-  .select2-dropdown.MultipleSelect .select2-results__option[aria-selected='true']:before {
-    background-color: #ffffff;
-    color: #009884;
-    content: '\f00c';
-    display: inline-block;
-    font-family: FontAwesome;
-    height: 20px;
-    padding-left: 4px;
-    padding-right: 2px;
-    padding-top: 2px;
-    width: 16px; }
-
-.select2-dropdown.MultipleSelect .select2-results__option--highlighted[aria-selected] {
-  background-color: #f2fffd;
-  color: #333333; }
-
-.select2-container .tagCustom .select2-search--inline > input {
-  display: inline-block;
-  font-size: 1em;
-  margin-top: 8px; }
-
-.fontSelect2Title.disabled,
-.fontSelect2Availability.disabled {
-  color: #858585; }
-
-.Mandatory + .select2.select2-container .select2-selection--single,
-.Mandatory + .select2.select2-container .select2-selection--single.customSelect,
-.select2.select2-container .select2-selection--single.customSelect {
-  border-left: 3px solid #00bfa5 !important; }
-
-.fontSelect2Title {
-  font-weight: 400; }
+.Mandatory + .select2.select2-container .select2-selection {
+  border-left: 3px solid #00bfa5; }
 
 .fontSelect2Title {
   display: inline-block;
   font-family: "LatoBold";
   font-size: 1em;
-  width: 50%; }
+  width: 49%; }
 
 .fontSelect2Availability {
-  color: #00bfa5;
+  color: #009884;
   display: inline-block;
   font-size: 1em;
   width: 49%; }
 
-.AR.Page .select2-container--default .select2-selection--single .select2-selection__arrow,
-.FA.Page .select2-container--default .select2-selection--single .select2-selection__arrow {
-  left: 0;
-  right: unset; }
-  .AR.Page .select2-container--default .select2-selection--single .select2-selection__arrow b,
-  .FA.Page .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    background-position-x: 0;
-    background-position-y: 0;
-    left: 20px;
-    right: unset; }
+.AR .select2 .select2-selection,
+.FA .select2 .select2-selection {
+  direction: rtl; }
+  .AR .select2 .select2-selection:after,
+  .FA .select2 .select2-selection:after {
+    left: 15px;
+    right: 0; }
+  .AR .select2 .select2-selection.select2-selection--multiple.tagCustom:before,
+  .FA .select2 .select2-selection.select2-selection--multiple.tagCustom:before {
+    left: unset;
+    padding: 0;
+    position: absolute;
+    right: 14px; }
+  .AR .select2 .select2-selection.select2-selection--multiple.tagCustom .select2-selection__rendered,
+  .FA .select2 .select2-selection.select2-selection--multiple.tagCustom .select2-selection__rendered {
+    padding-left: 36px;
+    padding-right: 36px; }
+  .AR .select2 .select2-selection.select2-selection--single.customSelect .select2-selection__rendered,
+  .FA .select2 .select2-selection.select2-selection--single.customSelect .select2-selection__rendered {
+    width: 100%; }
+  .AR .select2 .select2-selection.select2-selection--multiple.tagSystem .select2-selection__rendered,
+  .FA .select2 .select2-selection.select2-selection--multiple.tagSystem .select2-selection__rendered {
+    padding-left: 36px; }
+  .AR .select2 .select2-selection .select2-selection__rendered,
+  .FA .select2 .select2-selection .select2-selection__rendered {
+    padding-left: 36px;
+    padding-right: 10px; }
+    .AR .select2 .select2-selection .select2-selection__rendered .select2-selection__choice,
+    .FA .select2 .select2-selection .select2-selection__rendered .select2-selection__choice {
+      padding-left: 25px;
+      padding-right: 15px; }
+      .AR .select2 .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove,
+      .FA .select2 .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+        left: 6px;
+        right: auto; }
 
-.AR .select2-container--default .select2-selection--single .select2-selection__rendered,
-.FA .select2-container--default .select2-selection--single .select2-selection__rendered {
-  margin-left: 10px;
-  margin-right: 0;
-  padding: 5px 5px 5px 36px; }
-
-.AR .select2-container .select2-dropdown .select2-search.select2-search--dropdown:after,
-.FA .select2-container .select2-dropdown .select2-search.select2-search--dropdown:after {
-  left: 22px;
-  right: 0;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  width: 20px; }
+.AR .select2-container .select2-dropdown.MultipleSelect .select2-results__option:before,
+.FA .select2-container .select2-dropdown.MultipleSelect .select2-results__option:before {
+  margin-left: 16px;
+  margin-right: 0; }
 
 .AR .select2-container .select2-dropdown .select2-search .select2-search__field,
 .FA .select2-container .select2-dropdown .select2-search .select2-search__field {
-  padding: 0 12px 0 38px !important; }
+  direction: rtl;
+  padding: 0 12px 0 36px !important;
+  text-align: right; }
 
-.AR .select2-selection,
-.FA .select2-selection {
+.AR .select2-container .select2-dropdown .select2-search--dropdown:after,
+.FA .select2-container .select2-dropdown .select2-search--dropdown:after {
+  left: 22px;
+  right: unset; }
+
+.AR .select2-container .select2-dropdown .select2-results,
+.FA .select2-container .select2-dropdown .select2-results {
   direction: rtl; }
-  .AR .select2-selection .select2-selection__rendered,
-  .FA .select2-selection .select2-selection__rendered {
-    padding-left: 36px; }
-
-.AR .select2-container--default .select2-selection--multiple.tagCustom:before,
-.FA .select2-container--default .select2-selection--multiple.tagCustom:before {
-  left: 0;
-  position: absolute; }
-
-.AR .select2-container--default .tagCustom .select2-selection__rendered,
-.FA .select2-container--default .tagCustom .select2-selection__rendered {
-  padding-left: 36px;
-  padding-right: 40px; }
-
-.AR .select2-container--default .tagSystem .select2-selection__rendered,
-.FA .select2-container--default .tagSystem .select2-selection__rendered {
-  padding-left: 36px;
-  padding-right: 10px; }
-
-.AR .select2-selection.select2-selection--single.customSelect .select2-selection__rendered,
-.FA .select2-selection.select2-selection--single.customSelect .select2-selection__rendered {
-  width: 100%; }
-
-.AR .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
-.AR .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-.AR .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice,
-.FA .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice,
-.FA .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice,
-.FA .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice {
-  padding-left: 25px;
-  padding-right: 0px; }
-
-.AR .select2-container--default .select2-search.select2-search--dropdown:after,
-.FA .select2-container--default .select2-search.select2-search--dropdown:after {
-  left: 10px;
-  right: unset; }
-
-.AR .select2-container--default .select2-selection--multiple.MultipleSelect:after,
-.FA .select2-container--default .select2-selection--multiple.MultipleSelect:after {
-  left: 30px;
-  right: unset; }
-
-.AR .select2-container--default .select2-selection--multiple.tagSystem:after, .AR .select2-container--default .select2-selection--multiple.tagCustom:after,
-.FA .select2-container--default .select2-selection--multiple.tagSystem:after,
-.FA .select2-container--default .select2-selection--multiple.tagCustom:after {
-  left: 20px;
-  right: unset; }
-
-.AR .select2-container--default .select2-selection--multiple.tagSystem:before, .AR .select2-container--default .select2-selection--multiple.tagCustom:before,
-.FA .select2-container--default .select2-selection--multiple.tagSystem:before,
-.FA .select2-container--default .select2-selection--multiple.tagCustom:before {
-  left: unset;
-  right: 20px; }
-
-.AR .fontSelect2Title,
-.FA .fontSelect2Title {
-  float: right; }
-
-.AR .fontSelect2Availability,
-.FA .fontSelect2Availability {
-  float: right; }
-
-.AR .select2-search--dropdown input[type='search'].select2-search__field,
-.FA .select2-search--dropdown input[type='search'].select2-search__field {
-  padding-right: 40px; }
-
-.AR .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
-.AR .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
-.AR .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove,
-.FA .select2-container--default .select2-selection--multiple.tagSystem .select2-selection__choice__remove,
-.FA .select2-container--default .select2-selection--multiple.MultipleSelect .select2-selection__choice__remove,
-.FA .select2-container--default .select2-selection--multiple.Select2Ajax.Multiple .select2-selection__choice__remove {
-  left: 5px;
-  right: auto; }
-
-.select2-dropdown[dir='rtl'] input[type='search'] {
-  padding-left: 0 !important;
-  padding-right: 12px !important; }
-
-.select2-dropdown[dir='rtl'] .select2-results__option[aria-selected='true']:before {
-  padding-left: 2px;
-  padding-right: 5px;
-  padding-top: 2px;
-  width: 16px; }
-
-.select2-dropdown[dir='rtl'] .select2-results__option:before {
-  margin-left: 20px;
-  margin-right: unset; }
+  .AR .select2-container .select2-dropdown .select2-results .select2-results__option,
+  .FA .select2-container .select2-dropdown .select2-results .select2-results__option {
+    text-align: right; }
 
 .SelectableList-EmptyMessage {
   -webkit-box-align: center;
@@ -34599,77 +33265,6 @@ span.ListNavigation_Ellipsis {
 
 /* SILK Patterns > Search */
 /* SILK Patterns > Select2 */
-.select2-container .select2-choice .select2-arrow,
-.select2-container .select2-choice div {
-  background-color: #fff;
-  border-left: 0;
-  width: 30px; }
-
-.select2-container .select2-choice .select2-arrow b,
-.select2-container .select2-choice div b {
-  background-position: 7px 2px;
-  width: 30px; }
-
-.select2-dropdown-open .select2-choice .select2-arrow b,
-.select2-dropdown-open .select2-choice div b {
-  background-position: -11px 2px; }
-
-.select2-container .select2-choice span {
-  color: #0da2aa; }
-
-.select2-dropdown-open .select2-choice {
-  background-color: #fff;
-  border-bottom-color: transparent;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  box-shadow: 0 1px 0 #fff inset; }
-
-.select2-container-active .select2-choice,
-.select2-container-active .select2-choices {
-  border: 1px solid #0da2aa; }
-
-.select2-container .select2-choice {
-  border: 1px solid #b1b5b6;
-  border-radius: 4px;
-  color: #7c7f7f;
-  font-style: italic;
-  min-height: 36px;
-  text-decoration: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none; }
-
-.select2-container .select2-choice > .select2-chosen {
-  font-style: normal;
-  font-weight: 400;
-  margin-right: 42px; }
-
-.select2-container.Mandatory .select2-choice {
-  border-left: 3px solid #0da2aa; }
-
-.select2-container .select2-choice span {
-  color: #444;
-  font-size: 14px; }
-
-.select2-search input {
-  background: none;
-  background-position: -35px -22px;
-  border: none;
-  border-bottom: 1px solid #b1b5b6;
-  height: 36px;
-  padding-left: 28px; }
-
-.select2-results li {
-  font-size: 1em;
-  overflow: hidden;
-  width: auto; }
-
-.AR .select2-results li,
-.FA .select2-results li {
-  direction: rtl;
-  text-align: right; }
-
 /* SILK Patterns > ToggleButton */
 /*------------------------------------------------------------*/
 /* 7.3 SILK Patterns > Data ***********************************/
@@ -35668,9 +34263,6 @@ a.Button.Icon:hover,
 /* 9.23 Sapphire Patterns > Controls_Custom_Patterns > DropDownCAtegoriesv4_0_3 *********/
 /*--------------------------------------------------------------------------------------*/
 /* select2 v 4.0.3 */
-.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
-  -webkit-appearance: none; }
-
 /*Z-index when inside SectionExpandableCustom*/
 /*
 
@@ -35779,40 +34371,6 @@ a.Button.Icon:hover,
 }
 
 */
-.AR .select2-search--dropdown .select2-search__field,
-.FA .select2-search--dropdown .select2-search__field {
-  direction: rtl;
-  text-align: right; }
-
-.select2-container--classic[dir='rtl'] .select2-selection--single .select2-selection__arrow {
-  border: none;
-  border-radius: 0;
-  border-bottom-left-radius: 4px;
-  border-right: 1px solid #aaa;
-  border-top-left-radius: 4px;
-  left: 1px;
-  right: auto; }
-
-.AR .select2-search-choice-close,
-.FA .select2-search-choice-close {
-  left: 3px;
-  right: auto; }
-
-.FA .select2-container .select2-choice div,
-.AR .select2-container .select2-choice div {
-  border-left: none;
-  border-radius: 4px 0 0 4px;
-  border-right: 1px solid #aaa;
-  left: 0;
-  right: auto; }
-
-.FA .select2-container .select2-choice span,
-.AR .select2-container .select2-choice span {
-  font-size: 20px;
-  margin-left: 26px;
-  overflow: initial;
-  padding: 3px 0; }
-
 /*--------------------------------------------------------------------------------*/
 /* 9.24 Sapphire Patterns > Controls_Custom_Patterns > Expandable_Content *********/
 /*--------------------------------------------------------------------------------*/
@@ -37019,10 +35577,6 @@ canvas.Sketch_Canvas {
   font-size: 16px;
   padding-bottom: 0;
   padding-left: 32px; }
-
-.Dropdown .select2-container .select2-choice span, .Page .FormField select .select2-container .select2-choice span, .LayoutPopup .FormField select .select2-container .select2-choice span, .LayoutBlank .FormField select .select2-container .select2-choice span, .LayoutBase .FormField select .select2-container .select2-choice span {
-  font-weight: 700;
-  margin-right: 0; }
 
 .Sketch_Structure_Wrapper .select2-choice {
   background-color: transparent;
@@ -39026,23 +37580,6 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 [class*='ThemeGrid_Width'].select2-selection--multiple.SelectTagsDropDown {
   width: 100%; }
 
-.ThemeGrid_MarginGutter.select2-selection--multiple.SelectTagsDropDown {
-  margin-left: 0; }
-
-.TimeLineSearchHeader span.select2-container.Not_Valid,
-span.select2-selection--multiple.SelectTagsDropDown.Not_Valid {
-  border: 1px solid #bf1601; }
-
-span.select2-selection--multiple.SelectTagsDropDown:focus,
-.select2-container--open span.select2-selection--multiple.SelectTagsDropDown {
-  border: 1px solid #aaa; }
-
-.select2-container--default .SelectTagsDropDown .select2-selection__choice {
-  max-width: 250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
 .TimeLineSearchHeader .layed .select2-container {
   box-sizing: border-box;
   display: inline-block;
@@ -39051,187 +37588,11 @@ span.select2-selection--multiple.SelectTagsDropDown:focus,
   vertical-align: middle;
   z-index: 500; }
 
-.select2-container .select2-selection--multiple.SelectTagsDropDown {
-  box-sizing: border-box;
-  cursor: pointer;
-  display: block;
-  min-height: 32px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none; }
-
-.select2-container .select2-selection--multiple.SelectTagsDropDown .select2-selection__rendered {
-  display: inline-block;
-  overflow: hidden;
-  padding-left: 8px;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-.select2-container .SelectTagsDropDown .select2-search--inline .select2-search__field {
-  border: none;
-  box-sizing: border-box;
-  font-size: 100%;
-  margin-top: 5px; }
-
-.select2-container .SelectTagsDropDown .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
-  -webkit-appearance: none; }
-
-.select2-container--open .select2-dropdown--above.SelectTagsDropDown {
-  border-bottom: none;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0; }
-
-.select2-container--default .select2-selection--multiple.SelectTagsDropDown {
-  background-color: white;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  cursor: text;
-  min-height: 35px; }
-
-.select2-container--default .select2-selection--multiple.SelectTagsDropDown .select2-selection__rendered {
-  box-sizing: border-box;
-  line-height: 1.43;
-  list-style: none;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  padding-bottom: 2px;
-  padding-left: 35px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
-  z-index: 500;
-  /* padding:5px 10px;*/ }
-
-span.select2-container.select2-container--default.select2-container--open {
-  margin-bottom: 5px; }
-
-.select2-selection.select2-selection--multiple.SelectTagsDropDown {
-  border: none;
-  border: 1px solid #aaa;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px; }
-
-.select2-selection.select2-selection--multiple.SelectTagsDropDown:before {
-  color: #16979f;
-  content: '\e690';
-  font-family: 'Sapphire-Icon-Font';
-  font-size: 16px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 20px;
-  padding-right: 10px;
-  pointer-events: none;
-  position: absolute;
-  speak: none;
-  text-transform: none;
-  top: 6px;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  z-index: 1; }
-
-.select2-container--default.select2-container--focus.select2-selection--multiple.SelectTagsDropDown {
-  border: 1px solid #aaa; }
-
 /*
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple.SelectTagsDropDown:before {
     line-height: 1.43;
 }
 */
-.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple.SelectTagsDropDown {
-  background-color: #fff;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  box-shadow: none;
-  line-height: 0;
-  min-height: 35px; }
-
-.select2-container--default .select2-selection--multiple.SelectTagsDropDown .select2-selection__choice:first-child {
-  margin-left: 5px; }
-
-.select2-container .SelectTagsDropDown .select2-search--inline {
-  display: inline-block;
-  float: none;
-  height: 32px;
-  line-height: 0;
-  margin: 0;
-  margin-left: 0;
-  margin-top: 0;
-  width: 30px;
-  width: 0; }
-
-.TimeLineSearchHeader .select2-selection__choice {
-  font-size: 14px;
-  margin-top: 2px; }
-
-.select2-container--default .SelectTagsDropDown .select2-results__option:hover,
-.select2-container--default .SelectTagsDropDown .select2-results__option:focus,
-.select2-container--default .SelectTagsDropDown .select2-results__option[aria-selected='true'] {
-  background-color: #e6f3f5;
-  color: #000; }
-
-.select2-container--default .SelectTagsDropDown .select2-results > .select2-results__options {
-  border-radius: 2px;
-  /* max-height: 300px; */ }
-
-.SelectTagsDropDown .select2-results__option {
-  border-bottom: 1px solid #ebebeb;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 6px 50px; }
-
-.SelectTagsDropDown .select2-results__option:last-child {
-  border-bottom: 0; }
-
-.SelectTagsDropDown .select2-container--open .select2-dropdown--below {
-  border-radius: 2px;
-  margin-top: 0; }
-
-.select2-container--open span.select2-selection--multiple.SelectTagsDropDown {
-  border: 1px solid #199da5; }
-
-.select2-selection.select2-selection--multiple.SelectTagsDropDown {
-  z-index: 500; }
-
-.SelectTagsDropDown .select2-results {
-  border-bottom: 1px solid #199da5;
-  border-left: 1px solid #199da5;
-  border-right: 1px solid #199da5;
-  overflow: hidden; }
-
-.AR .select2-selection.select2-selection--multiple.SelectTagsDropDown:before,
-.FA .select2-selection.select2-selection--multiple.SelectTagsDropDown:before {
-  position: absolute;
-  right: 10px;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1); }
-
-.AR .select2-container--default .SelectTagsDropDown .select2-search--inline .select2-search__field,
-.FA .select2-container--default .SelectTagsDropDown .select2-search--inline .select2-search__field {
-  position: absolute;
-  right: 40px;
-  text-align: right; }
-
-span.select2-selection.select2-selection--multiple.select-hide.SelectTagsDropDown {
-  background-color: transparent;
-  border: none;
-  /*line-height: 1.43;*/
-  overflow: hidden; }
-
-.SelectTagsDropDown li.select2-search.select2-search--inline {
-  display: inline-block;
-  float: left;
-  margin-left: 0;
-  white-space: nowrap;
-  width: 30px;
-  z-index: 10000; }
-
 .layed .TimeLineSearchHeader .select2-container {
   box-sizing: border-box;
   display: inline-block;
@@ -39247,36 +37608,7 @@ span.select2-selection.select2-selection--multiple.select-hide.SelectTagsDropDow
   filter: alpha(opacity=45);
   opacity: 0.45; }
 
-.AR .select2-container--default .select2-selection--multiple.SelectTagsDropDown .select2-selection__rendered,
-.FA .select2-container--default .select2-selection--multiple.SelectTagsDropDown .select2-selection__rendered {
-  padding-left: initial;
-  padding-right: 35px;
-  text-align: right; }
-
-.AR .select2-container--default .select2-selection--multiple.SelectTagsDropDown .select2-selection__choice,
-.FA .select2-container--default .select2-selection--multiple.SelectTagsDropDown .select2-selection__choice {
-  float: right; }
-
 /**Added HideSearch input **/
-.select2-selection.select2-selection--multiple.SelectTagsDropDown.HideSearch:before {
-  display: none; }
-
-.select2-container--default .select2-selection--multiple.SelectTagsDropDown.HideSearch .select2-selection__rendered {
-  padding: 1px 10px; }
-
-span.select2-selection.select2-selection--multiple.select-hide.SelectTagsDropDown.HideSearch {
-  line-height: 0; }
-
-span.select2-selection.select2-selection--multiple.select-hide.SelectTagsDropDown.HideSearch input {
-  height: 34px;
-  line-height: 14; }
-
-.SelectTagsDropDown.HideSearch .select2-results {
-  display: none; }
-
-span.select2-container.select2-container--default.select2-container--open {
-  margin-bottom: 0; }
-
 /* 9.155 Sapphire Patterns > RoomCard */
 .RoomWrapp {
   background-color: #fff;
@@ -42473,9 +40805,6 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
   position: relative; }
 
 /** StaffMng**/
-.select2.select2-container.select2-container--default.select2-container--disabled select2-container--focus b {
-  background-color: transparent; }
-
 /********** tablerecords with gaps******************/
 .TableBlue {
   border: 0;
@@ -43531,21 +41860,7 @@ a.Button.FullWidth, .DropZoneContainer .row .FullWidth.Button {
   line-height: 46px; }
 
 /*******   custom select2 with html****/
-.dropdownCustom .select2-results__option--highlighted[aria-selected],
-.dropdownCustom .select2-results__option[aria-selected='true'] {
-  background-color: #f9f9f9; }
-
 /*Select2 MandatoryError*/
-.Mandatory.select2-hidden-accessible.Not_Valid + .select2-container--default .select2-selection--single,
-.Mandatory.select2-hidden-accessible.Not_Valid + .select2.select2-container .select2-selection--single.customSelect {
-  border: solid 1px #a55555;
-  border-left: 3px solid #a55555;
-  border-radius: 3px;
-  box-shadow: none; }
-
-.Mandatory.select2-hidden-accessible.Not_Valid + .select2-container--focus {
-  box-shadow: none; }
-
 .dropdownCustom .select2-results__option.select2-results__option--highlighted {
   color: #404548; }
 
