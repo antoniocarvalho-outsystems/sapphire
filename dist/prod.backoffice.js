@@ -1,4 +1,4 @@
-/*! prod.backoffice.js || Version: 5.1.920046 || Generated: Fri Jul 31 2020 16:39:52 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.js || Version: 5.1.920047 || Generated: Fri Jul 31 2020 16:58:18 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -105,7 +105,7 @@ eval("$(document).ready(function () {\r\n\r\n\r\n  var regex = RegExp(\"Layout\"
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\");\r\n\r\nSapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\r\n\r\n__webpack_require__(/*! ./01-components/layout/layout-backoffice */ \"./src/backoffice/01-components/layout/layout-backoffice.js\");\r\n\r\n__webpack_require__(/*! ../components/05-components/v3-pat/datetime-range-picker/scripts */ \"./src/components/05-components/v3-pat/datetime-range-picker/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/hour-picker/scripts */ \"./src/components/05-components/v3-pat/hour-picker/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/panel/confirmation-popup */ \"./src/components/05-components/v3-pat/panel/confirmation-popup.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/panel/panel-by-id */ \"./src/components/05-components/v3-pat/panel/panel-by-id.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/sapphire-popup/scripts */ \"./src/components/05-components/v3-pat/sapphire-popup/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/select-system/scripts */ \"./src/components/05-components/v3-pat/select-system/scripts.js\");\r\n\n\n//# sourceURL=webpack:///./src/backoffice/scripts.js?");
+eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\");\r\n\r\nSapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\r\n\r\n__webpack_require__(/*! ./01-components/layout/layout-backoffice */ \"./src/backoffice/01-components/layout/layout-backoffice.js\");\r\n\r\n__webpack_require__(/*! ../components/05-components/v3-pat/country-phone/scripts */ \"./src/components/05-components/v3-pat/country-phone/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/datetime-range-picker/scripts */ \"./src/components/05-components/v3-pat/datetime-range-picker/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/hour-picker/scripts */ \"./src/components/05-components/v3-pat/hour-picker/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/panel/confirmation-popup */ \"./src/components/05-components/v3-pat/panel/confirmation-popup.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/panel/panel-by-id */ \"./src/components/05-components/v3-pat/panel/panel-by-id.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/sapphire-popup/scripts */ \"./src/components/05-components/v3-pat/sapphire-popup/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/select-system/scripts */ \"./src/components/05-components/v3-pat/select-system/scripts.js\");\r\n\n\n//# sourceURL=webpack:///./src/backoffice/scripts.js?");
 
 /***/ }),
 
@@ -117,6 +117,17 @@ eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\")
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/backoffice/styles.scss?");
+
+/***/ }),
+
+/***/ "./src/components/05-components/v3-pat/country-phone/scripts.js":
+/*!**********************************************************************!*\
+  !*** ./src/components/05-components/v3-pat/country-phone/scripts.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/* Component CountryPhone */\r\n(function ($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\tconst $element = document.querySelector(`#${config.widgetId}`);\r\n\r\n\t\tconst countryPhoneInput = window.intlTelInput($element, {\r\n\t\t\tinitialCountry: config.initialCountry,\r\n\t\t\tpreferredCountries: config.preferredCountries,\r\n\t\t\tseparateDialCode: config.separateDialCode,\r\n\t\t\tnationalMode: config.nationalMode,\r\n\t\t\tautoPlaceholder: config.autoPlaceholder ? 'polite' : false,\r\n\t\t\tformatOnDisplay: false,\r\n\t\t\tutilsScript: '/V3_Pat/js/utils.js',\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.CountryPhone = {\r\n\t\tcreate\r\n\t};\r\n\r\n})(jQuery, window, SapphireWidgets);\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/country-phone/scripts.js?");
 
 /***/ }),
 
