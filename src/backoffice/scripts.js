@@ -4,6 +4,7 @@ SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};
 
 require('./01-components/layout/layout-backoffice');
 
+require('../components/05-components/v3-pat/country-phone/scripts');
 require('../components/05-components/v3-pat/datetime-range-picker/scripts');
 require('../components/05-components/v3-pat/hour-picker/scripts');
 require('../components/05-components/v3-pat/panel/confirmation-popup');
