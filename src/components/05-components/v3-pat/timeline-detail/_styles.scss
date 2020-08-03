@@ -15,7 +15,7 @@ div.TimelineDetail {
 	}
 
 	&_leftContent {
-		color: $sapphire-color-text-regular;
+		color: $text-color-regular;
 		display: table-cell;
 		font-weight: 700;
 		min-width: 90px;
@@ -32,7 +32,7 @@ div.TimelineDetail {
 		margin-top: 0;
 
 		> div:nth-child(1) > span.lightText-tx {
-			border: 1px solid $sapphire-color-text-regular;
+			border: 1px solid $text-color-regular;
 			border-radius: 1px;
 			font-size: 0.7em;
 			padding: 1px 3px;

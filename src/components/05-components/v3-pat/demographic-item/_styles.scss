@@ -1,20 +1,20 @@
 .Demographic-item {
-  display: block;
-  text-align: left;
+	display: block;
+	text-align: left;
 }
 
 .AR .Demographic-item {
-  text-align: right;
+	text-align: right;
 }
 
 .Demographic-item-label {
-  color: $sapphire-color-text-light;
-  display: block;
-  font-size: 0.9rem;
+	color: $text-color-light;
+	display: block;
+	font-size: 0.9rem;
 }
 
 .Demographic-item-value {
-  display: block;
-  font-family: $font-family-latin-bold;
-  font-size: 1rem;
+	display: block;
+	font-family: $font-family-latin-bold;
+	font-size: 1rem;
 }

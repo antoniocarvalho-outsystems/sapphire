@@ -31,7 +31,7 @@
 .CalendarWidget {
 	.Calendar_SmallDayLink {
 		align-items: center;
-		color: $sapphire-color-text-light;
+		color: $text-color-light;
 		display: flex;
 		font-weight: normal;
 		height: 30px;
@@ -41,7 +41,7 @@
 	}
 
 	&_wrapper {
-		color: $sapphire-color-text-light;
+		color: $text-color-light;
 		white-space: initial;
 
 		&:after {
@@ -200,7 +200,7 @@
 		}
 
 		> a span {
-			color: $sapphire-color-text-light;
+			color: $text-color-light;
 			height: 44px;
 			width: 65px;
 		}
