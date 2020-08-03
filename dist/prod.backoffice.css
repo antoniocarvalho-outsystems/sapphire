@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.920049 || Generated: Mon Aug 03 2020 10:04:57 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.920050 || Generated: Mon Aug 03 2020 10:32:01 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3927,7 +3927,7 @@ body.PanelOpened .daterangepicker {
   margin-right: 10px; }
 
 .DateTimeRangePicker-clear.disabled {
-  color: #adadad;
+  color: #777777;
   cursor: auto;
   display: none; }
 
@@ -3961,7 +3961,7 @@ body.PanelOpened .daterangepicker {
           transform: rotateZ(45deg); }
 
 .DateTimeRangePicker-calendar-clear.disabled {
-  color: #adadad;
+  color: #777777;
   cursor: auto;
   display: none; }
 
@@ -4688,7 +4688,7 @@ body.PanelById.PanelOpened {
     font-size: 1.143em;
     position: absolute;
     right: 22px;
-    top: 14px;
+    top: 12px;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg); }
   .select2-container .select2-dropdown .select2-results .select2-results__options::-webkit-scrollbar {

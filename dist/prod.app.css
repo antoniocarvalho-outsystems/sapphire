@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920049 || Generated: Mon Aug 03 2020 10:04:57 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920050 || Generated: Mon Aug 03 2020 10:32:01 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14583,7 +14583,7 @@ body.PanelOpened .daterangepicker {
   margin-right: 10px; }
 
 .DateTimeRangePicker-clear.disabled {
-  color: #adadad;
+  color: #777777;
   cursor: auto;
   display: none; }
 
@@ -14617,7 +14617,7 @@ body.PanelOpened .daterangepicker {
           transform: rotateZ(45deg); }
 
 .DateTimeRangePicker-calendar-clear.disabled {
-  color: #adadad;
+  color: #777777;
   cursor: auto;
   display: none; }
 
@@ -18885,8 +18885,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       background-color: #fff;
       border: 1px solid #00bfa5; }
   .ButtonCheckboxInp.disabled .MultipleSelectionButton-label {
-    border-color: #adadad;
-    color: #adadad;
+    border-color: #d6d6d6;
+    color: #777777;
     cursor: default;
     pointer-events: none;
     white-space: nowrap; }
@@ -18936,10 +18936,10 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .navigation-control-item a {
     color: #00bfa5; }
   .navigation-control-item--disabled {
-    border-color: #adadad;
+    border-color: #d6d6d6;
     pointer-events: none; }
     .navigation-control-item--disabled a {
-      color: #adadad; }
+      color: #777777; }
 
 .navigation-control-item:last-of-type {
   margin-left: 10px; }
@@ -19049,7 +19049,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .multi-control-item > input[disabled] ~ label,
 .multi-control-item > input[readonly] ~ label {
   background: #ebebeb;
-  color: #adadad;
+  color: #777777;
   cursor: default; }
 
 /*IsAtached*/
@@ -19451,7 +19451,7 @@ body.PanelById.PanelOpened {
   .PatientCallCancel-Header .js-idle .PatientCallCancel-icon {
     color: #fff; }
   .PatientCallCancel-Header .js-calling .PatientCallCancel-label {
-    color: #adadad;
+    color: #777777;
     display: none;
     font-weight: 700; }
   .PatientCallCancel-Header .js-calling .PatientCallCancel-counter {
@@ -19460,7 +19460,7 @@ body.PanelById.PanelOpened {
     color: #fff; }
   .PatientCallCancel-disabled.PatientCallCancel-List .PatientCallCancel-icon,
   .PatientCallCancel-disabled.PatientCallCancel-List .PatientCallCancel-label {
-    color: #adadad; }
+    color: #777777; }
   .PatientCallCancel-disabled .PatientCallCancel-box {
     background-color: #777777; }
   .PatientCallCancel-disabled .PatientCallCancel-label,
@@ -21175,9 +21175,9 @@ div.List-Star {
     color: #fff;
     pointer-events: none; }
   .ButtonRadioInp.disabled .ButtonRadioInp_radioText {
-    border: 1px solid #adadad;
+    border: 1px solid #d6d6d6;
     border-radius: 4px;
-    color: #adadad;
+    color: #777777;
     pointer-events: none; }
   .ButtonRadioInp_radio input[type='radio'] {
     left: 8px;
@@ -22827,7 +22827,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .SegmentedControl .SegmentedControlItem > input[disabled] ~ label,
     .SegmentedControl .SegmentedControlItem > input[readonly] ~ label {
       background: #ebebeb;
-      color: #adadad;
+      color: #777777;
       cursor: default; }
 
 .AR .SegmentedControl:not(.Vertical).Round .SegmentedControlItem:first-child,
@@ -23070,7 +23070,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     font-size: 1.143em;
     position: absolute;
     right: 22px;
-    top: 14px;
+    top: 12px;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg); }
   .select2-container .select2-dropdown .select2-results .select2-results__options::-webkit-scrollbar {
