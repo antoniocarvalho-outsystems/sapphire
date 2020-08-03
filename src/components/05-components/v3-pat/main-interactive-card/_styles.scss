@@ -1,6 +1,5 @@
 $MainInteractiveCard-color-active: $regular-alpha;
 $MainInteractiveCard-color-caption: $mid-light-grey;
-$MainInteractiveCard-color-disabled-background: $body-color;
 $MainInteractiveCard-color-disabled: $mid-light-grey;
 $MainInteractiveCard-color-header: $dark-grey;
 $MainInteractiveCard-color-subtitle: $mid-dark-grey;
@@ -45,7 +44,7 @@ $MainInteractiveCard-color-text-regular: $sapphire-color-text-regular;
 }
 
 .MainInteractiveCard {
-	background-color: $MainInteractiveCard-color-disabled-background;
+	background-color: $background-disabled;
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-default;
 	padding: 16px;
