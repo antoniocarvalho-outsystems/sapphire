@@ -26,11 +26,11 @@ $NavigationControl-color-hover: $regular-zeta;
 	}
 
 	&--disabled {
-		border-color: $sapphire-color-disabled-border;
+		border-color: $border-color-disabled;
 		pointer-events: none;
 
 		a {
-			color: $sapphire-color-disabled-text;
+			color: $text-color-disabled;
 		}
 	}
 }
@@ -159,8 +159,8 @@ $NavigationControl-color-hover: $regular-zeta;
 .multi-control-item > input:disabled ~ label,
 .multi-control-item > input[disabled] ~ label,
 .multi-control-item > input[readonly] ~ label {
-	background: $sapphire-color-disabled-background;
-	color: $sapphire-color-disabled-text;
+	background: $background-disabled;
+	color: $text-color-disabled;
 	cursor: default;
 }
 

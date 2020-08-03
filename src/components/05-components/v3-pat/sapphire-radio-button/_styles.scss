@@ -35,9 +35,9 @@
 	&.disabled {
 		.ButtonRadioInp {
 			&_radioText {
-				border: 1px solid $sapphire-color-disabled-border;
+				border: 1px solid $border-color-disabled;
 				border-radius: $border-radius-default;
-				color: $sapphire-color-disabled-text;
+				color: $text-color-disabled;
 				pointer-events: none;
 			}
 		}

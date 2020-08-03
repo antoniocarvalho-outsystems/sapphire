@@ -113,8 +113,8 @@
 		> input:disabled ~ label,
 		> input[disabled] ~ label,
 		> input[readonly] ~ label {
-			background: $sapphire-color-disabled-background;
-			color: $sapphire-color-disabled-text;
+			background: $background-disabled;
+			color: $text-color-disabled;
 			cursor: default;
 		}
 	}

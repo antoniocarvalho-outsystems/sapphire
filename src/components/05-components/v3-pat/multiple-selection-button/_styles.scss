@@ -40,8 +40,8 @@
 
 	&.disabled {
 		.MultipleSelectionButton-label {
-			border-color: $sapphire-color-disabled-border;
-			color: $sapphire-color-disabled-text;
+			border-color: $border-color-disabled;
+			color: $text-color-disabled;
 			cursor: default;
 			pointer-events: none;
 			white-space: nowrap;

@@ -703,7 +703,7 @@ body.PanelOpened .daterangepicker {
 }
 
 .DateTimeRangePicker-clear.disabled {
-	color: $sapphire-color-disabled-text;
+	color: $text-color-disabled;
 	cursor: auto;
 	display: none;
 }
@@ -739,7 +739,7 @@ body.PanelOpened .daterangepicker {
 }
 
 .DateTimeRangePicker-calendar-clear.disabled {
-	color: $sapphire-color-disabled-text;
+	color: $text-color-disabled;
 	cursor: auto;
 	display: none;
 }

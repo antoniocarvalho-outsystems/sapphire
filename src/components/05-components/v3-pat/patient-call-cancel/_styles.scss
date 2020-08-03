@@ -1,5 +1,4 @@
 $call-cancel-color-active: $regular-alpha;
-$call-cancel-color-disabled: $sapphire-color-disabled-text;
 
 .PatientCallCancel {
 	display: inline-block;
@@ -188,7 +187,7 @@ $call-cancel-color-disabled: $sapphire-color-disabled-text;
 
 		.js-calling {
 			.PatientCallCancel-label {
-				color: $call-cancel-color-disabled;
+				color: $text-color-disabled;
 				display: none;
 				font-weight: 700;
 			}
@@ -206,7 +205,7 @@ $call-cancel-color-disabled: $sapphire-color-disabled-text;
 	&-disabled {
 		&.PatientCallCancel-List .PatientCallCancel-icon,
 		&.PatientCallCancel-List .PatientCallCancel-label {
-			color: $call-cancel-color-disabled;
+			color: $text-color-disabled;
 		}
 
 		.PatientCallCancel-box {
