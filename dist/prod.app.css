@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920050 || Generated: Mon Aug 03 2020 10:32:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920051 || Generated: Mon Aug 03 2020 17:24:56 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10650,6 +10650,75 @@ html .Page .PatientDetailsLayout {
   .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
     color: #00a28c; }
 
+.NewNavigation2 .LayoutBase-primary-menu {
+  background-color: #ebebeb; }
+
+.NewNavigation2 .FullScreenTabsWrapper_Container {
+  background-color: #ebebeb; }
+  .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper {
+    border-top-color: #ebebeb; }
+    .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper:hover {
+      background-color: #ebebeb;
+      color: #00a28c; }
+    .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
+      .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active:before, .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active:after {
+        border: 1px solid #fff;
+        bottom: -1px;
+        content: ' ';
+        height: 6px;
+        position: absolute;
+        width: 6px; }
+      .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active:before {
+        border-bottom-right-radius: 8px;
+        border-width: 0 1px 1px 0;
+        box-shadow: 2px 2px 0 #fff;
+        left: -6px; }
+      .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active:after {
+        border-bottom-left-radius: 8px;
+        border-width: 0 0 1px 1px;
+        box-shadow: -2px 2px 0 #fff;
+        right: -6px; }
+      .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
+        color: #00a28c; }
+      .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_tab a {
+        color: #00a28c; }
+    .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper_tab a {
+      color: #777777; }
+
+.NewNavigation2 .Toolbar__MoreOptionsIcon {
+  background-color: transparent;
+  color: #777777; }
+  .NewNavigation2 .Toolbar__MoreOptionsIcon span[ui='more-options-title']::after {
+    color: #777777; }
+
+.NewNavigation2 .Toolbar .MenuItemWrapper:hover {
+  border-bottom: 3px solid transparent !important; }
+
+.NewNavigation2 .Toolbar .MenuItemWrapper.Active {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; }
+  .NewNavigation2 .Toolbar .MenuItemWrapper.Active:before, .NewNavigation2 .Toolbar .MenuItemWrapper.Active:after {
+    border: 1px solid #f3f3f3;
+    bottom: -3px;
+    content: ' ';
+    height: 6px;
+    position: absolute;
+    width: 6px; }
+  .NewNavigation2 .Toolbar .MenuItemWrapper.Active:before {
+    border-bottom-right-radius: 8px;
+    border-width: 0 1px 1px 0;
+    box-shadow: 2px 2px 0 #f3f3f3;
+    left: -6px; }
+  .NewNavigation2 .Toolbar .MenuItemWrapper.Active:after {
+    border-bottom-left-radius: 8px;
+    border-width: 0 0 1px 1px;
+    box-shadow: -2px 2px 0 #f3f3f3;
+    right: -6px; }
+  .NewNavigation2 .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
+    color: #00a28c; }
+
 .LayoutBlank.Page {
   background-color: #fff;
   border: none; }
@@ -18217,7 +18286,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   vertical-align: middle; }
 
 .MainInteractiveCard {
-  background-color: #f3f3f3;
+  background-color: #ebebeb;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
   padding: 16px;
