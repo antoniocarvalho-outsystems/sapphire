@@ -1,7 +1,7 @@
 // Colors
 //
 // .Alpha                 : #00BFA5 - $regular-alpha
-// .Beta                  : #009884 - $regular-beta
+// .Beta                  : #00A28C - $regular-beta
 // .Gamma                 : #006758 - $regular-gamma
 // .Delta                 : #00433A - $regular-delta
 // .Epsilon               : #56D3C2 - $regular-epsilon
@@ -9,7 +9,7 @@
 // .Eta                   : #F2FFFD - $regular-eta
 
 // .Blue                  : #039BE5 - $regular-blue
-// .LightBlue             : #C4F0EB - $light-blue
+// .LightBlue             : #D9F5F1 - $light-blue
 // .LightBlue2            : #F0FAF9 - $light-blue-2
 // .DarkBlue              : #194968 - $dark-blue
 
@@ -43,7 +43,7 @@
 // .SapphireLightContainer: #EBEBEB - $sapphire-light
 // .LightGrey             : #D6D6D6 - $light-grey
 // .MidLightGrey          : #ADADAD - $mid-light-grey
-// .Grey                  : #858585 - $regular-gray
+// .Grey                  : #777777 - $regular-grey
 // .MidDarkGrey           : #5C5C5C - $mid-dark-grey
 // .DarkGrey              : #333333 - $dark-grey
 // .Black                 : #131819 - $regular-black
@@ -86,7 +86,7 @@
 // Style guide: Colors
 
 $regular-alpha: #00bfa5;
-$regular-beta: #009884;
+$regular-beta: #00a28c;
 $regular-gamma: #006758;
 $regular-delta: #00433a;
 $regular-epsilon: #56d3c2;
@@ -96,9 +96,6 @@ $regular-eta: #f2fffd;
 $regular-beige: #e6e2aa;
 $regular-black: #131819;
 $regular-blue: #039be5;
-$blue-light: #c4f0eb;
-$light-blue-2: #f0faf9;
-$blue-navy: #c4f0eb;
 $body-color: #f3f3f3;
 $regular-brow: #ca2c92;
 $dark-beige: #928d09;
@@ -110,18 +107,17 @@ $dark-plum: #ca2c92;
 $dark-red: #b10100;
 $dark-green: #578329;
 $dark-yellow: #c19323;
-$regular-gray: #858585;
 $regular-green: #7cb342;
-$regular-grey: #858585;
+$regular-grey: #777777;
 $regular-light: #ca2c92;
-$light-blue: #c4f0eb;
+$light-blue: #d9f5f1;
+$light-blue-2: #f0faf9;
 $light-green: #c2dea8;
 $light-beige: #f5f4e0;
 $light-grey: #d6d6d6;
 $light-orange: #fcc891;
 $light-pink: #ca2c92;
 $light-red: #fad5d5;
-$light-turquoise: #c4f0eb;
 $light-yellow: #ffeab5;
 $mid-light-grey: #adadad;
 $mid-dark-grey: #5c5c5c;
@@ -138,7 +134,6 @@ $sapphire-clinician: #d6d6d6;
 $sapphire-dark-blue: #30384a;
 $sapphire-dark-blue1: #333333;
 $sapphire-dark-blue2: #30384a;
-$sapphire-dark-grey: #858585;
 $sapphire-dark-text: #333333;
 $sapphire-grey-blue: #494f5c;
 $sapphire-female: #c892b3;
@@ -157,18 +152,6 @@ $transparent: #ca2c92;
 $regular-turquoise: #049be5;
 $regular-white: #fff;
 $regular-yellow: #fbc02d;
-$gray-darker: #333333;
-$gray-light: #d6d6d6;
-$gray-lighter: #f3f3f3;
-$primary-darker: #194968;
-$primary-dark: #2a5a6e;
-$primary-light: #56d3c2;
-$primary-lighter: #c4f0eb;
-$secondary-dark: #009884;
-$secondary-darker: #006758;
-$secondary: #009884;
-$secondary-light: #56d3c2;
-$secondary-lighter: #c4f0eb;
 
 // Text Colors
 $sapphire-color-text-dark: $regular-black;
@@ -185,4 +168,4 @@ $sapphire-color-disabled-text: $mid-light-grey;
 $border-color-disabled: $light-grey;
 $background-disabled: $sapphire-light;
 $label-color-disabled: $mid-light-grey;
-$text-color-disabled: $regular-gray;
+$text-color-disabled: $regular-grey;

@@ -1,6 +1,6 @@
 .CardBox {
 	-servicestudio-background-color: $regular-white !important;
-	-servicestudio-border: solid 1px $regular-gray !important;
+	-servicestudio-border: solid 1px $regular-grey !important;
 	-servicestudio-border-top: 3px solid $regular-alpha !important;
 	-servicestudio-box-shadow: none !important;
 	-servicestudio-color: $regular-alpha !important;
@@ -18,7 +18,7 @@
 	&.ColorOtherGrey {
 		.CardDescription,
 		.BottomCardDescription {
-			color: $regular-gray;
+			color: $regular-grey;
 		}
 	}
 

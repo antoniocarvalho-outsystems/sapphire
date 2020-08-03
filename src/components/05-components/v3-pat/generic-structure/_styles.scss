@@ -1,108 +1,106 @@
-$GenericStrutucre-color-border: $gray-light;
+$GenericStrutucre-color-border: $light-grey;
 $GenericStrutucre-color-title-underline: $regular-alpha;
 
-
 .GenericStructure-header {
-  align-items: flex-end;
-  display: flex;
-  margin-bottom: $sapphire__sizes__medium;
+	align-items: flex-end;
+	display: flex;
+	margin-bottom: $sapphire__sizes__medium;
 }
 
 .GenericStructure-header-content {
-  max-width: 70%;
+	max-width: 70%;
 }
 
 .GenericStructure-header-actions {
-  flex-grow: 1;
-  text-align: right;
-  white-space: nowrap;
+	flex-grow: 1;
+	text-align: right;
+	white-space: nowrap;
 }
 
 .GenericStructure-header-actions .OSInline {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 .GenericStructure-subheader {
-  display: flex;
+	display: flex;
 }
 
 .GenericStructure-subheader-content {
-  flex-grow: 1;
-  margin-bottom: $sapphire__sizes__large;
+	flex-grow: 1;
+	margin-bottom: $sapphire__sizes__large;
 }
 
 .GenericStructure-subheader-actions {
-  flex-grow: 1;
-  margin-bottom: $sapphire__sizes__large;
-  text-align: right;
+	flex-grow: 1;
+	margin-bottom: $sapphire__sizes__large;
+	text-align: right;
 }
 
 .GenericStructure-section {
-  margin-bottom: $sapphire__sizes__large;
+	margin-bottom: $sapphire__sizes__large;
 }
 
 .GenericStructure-section-header {
-  align-items: flex-end;
-  display: flex;
+	align-items: flex-end;
+	display: flex;
 }
 
 .GenericStructure-section-header-content {
-  max-width: 70%;
+	max-width: 70%;
 }
 
 .GenericStructure-section-header-actions {
-  flex-grow: 1;
-  text-align: right;
-  white-space: nowrap;
+	flex-grow: 1;
+	text-align: right;
+	white-space: nowrap;
 }
 
-.GenericStructure-header-border--GrayBorder>.GenericStructure-header>.GenericStructure-header-content,
-.GenericStructure-header-border--GrayBorder>.GenericStructure-header>.GenericStructure-header-actions {
-  border-bottom: 1px solid $GenericStrutucre-color-border;
-  padding-bottom: $sapphire__sizes__small;
+.GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-content,
+.GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-actions {
+	border-bottom: 1px solid $GenericStrutucre-color-border;
+	padding-bottom: $sapphire__sizes__small;
 }
 
-.GenericStructure-header-border--BorderTitle>.GenericStructure-header>.GenericStructure-header-content {
-  align-items: center;
-  border-bottom: 1px solid $GenericStrutucre-color-title-underline;
-  display: flex;
-  padding-bottom: $sapphire__sizes__small;
+.GenericStructure-header-border--BorderTitle > .GenericStructure-header > .GenericStructure-header-content {
+	align-items: center;
+	border-bottom: 1px solid $GenericStrutucre-color-title-underline;
+	display: flex;
+	padding-bottom: $sapphire__sizes__small;
 }
 
-.GenericStructure-header-border--BorderTitle>.GenericStructure-header>.GenericStructure-header-actions {
-  border-bottom: 1px solid $GenericStrutucre-color-border;
-  padding-bottom: $sapphire__sizes__small;
+.GenericStructure-header-border--BorderTitle > .GenericStructure-header > .GenericStructure-header-actions {
+	border-bottom: 1px solid $GenericStrutucre-color-border;
+	padding-bottom: $sapphire__sizes__small;
 }
 
 .phone,
 .tablet {
+	.GenericStructure-header,
+	.GenericStructure-header-content,
+	.GenericStructure-header-actions,
+	.GenericStructure-subheader,
+	.GenericStructure-subheader-content,
+	.GenericStructure-subheader-actions,
+	.GenericStructure-section-header,
+	.GenericStructure-section-header-content,
+	.GenericStructure-section-header-actions {
+		display: block;
+		margin-bottom: $sapphire__sizes__small;
+		max-width: none;
+		white-space: normal;
+	}
 
-  .GenericStructure-header,
-  .GenericStructure-header-content,
-  .GenericStructure-header-actions,
-  .GenericStructure-subheader,
-  .GenericStructure-subheader-content,
-  .GenericStructure-subheader-actions,
-  .GenericStructure-section-header,
-  .GenericStructure-section-header-content,
-  .GenericStructure-section-header-actions {
-    display: block;
-    margin-bottom: $sapphire__sizes__small;
-    max-width: none;
-    white-space: normal;
-  }
+	.GenericStructure-header-actions:empty {
+		display: none !important;
+	}
 
-  .GenericStructure-header-actions:empty {
-    display: none !important;
-  }
+	.GenericStructure-header,
+	.GenericStructure-subheader {
+		margin-bottom: $sapphire__sizes__large;
+	}
 
-  .GenericStructure-header,
-  .GenericStructure-subheader {
-    margin-bottom: $sapphire__sizes__large;
-  }
-
-  .GenericStructure-header-actions {
-    border-bottom: none !important;
-    padding-bottom: none !important;
-  }
+	.GenericStructure-header-actions {
+		border-bottom: none !important;
+		padding-bottom: none !important;
+	}
 }

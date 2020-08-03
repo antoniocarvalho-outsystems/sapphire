@@ -15,7 +15,7 @@
 		vertical-align: middle;
 
 		a {
-			color: #009884;
+			color: $regular-beta;
 			cursor: auto;
 			font-size: 16px;
 			font-weight: 600 !important;
@@ -33,7 +33,7 @@
 		position: relative;
 
 		&:after {
-			color: #858585;
+			color: $regular-grey;
 			content: '\e690';
 			font-family: $font-family-icons;
 			font-size: 17px;

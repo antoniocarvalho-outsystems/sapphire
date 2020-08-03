@@ -181,7 +181,7 @@ $tab-height: 44px;
 		border-top-color: $regular-white;
 		border-top-left-radius: $border-radius-default;
 		border-top-right-radius: $border-radius-default;
-		color: $regular-gray;
+		color: $regular-grey;
 		font-family: $font-family-latin-bold;
 		font-size: 1rem;
 		line-height: calc(#{$tab-height} - 5px);
@@ -196,8 +196,8 @@ $tab-height: 44px;
 		}
 
 		&.Active {
-			background-color: $gray-lighter;
-			border-bottom-color: $gray-lighter;
+			background-color: $body-color;
+			border-bottom-color: $body-color;
 			border-top-color: $regular-alpha;
 			color: $regular-beta;
 		}

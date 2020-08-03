@@ -1,443 +1,442 @@
 // Transformation
 .TextUppercase {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .TextLowercase {
-  text-transform: lowercase;
+	text-transform: lowercase;
 }
 
 .Bold,
 .TextBold {
-  font-family: $font-family-latin-bold;
+	font-family: $font-family-latin-bold;
 }
 
 .TextRegular {
-  font-family: $font-family-latin-regular;
+	font-family: $font-family-latin-regular;
 }
 
 .TextItalic {
-  font-style: italic;
+	font-style: italic;
 }
 
 .TextUnderline {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .TextLineThrough {
-  text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 .TextOverflow {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 
-  &_Ellipsis {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+	&_Ellipsis {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
 
-  &TwoLines {
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-  }
+	&TwoLines {
+		-webkit-box-orient: vertical;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+	}
 
-  &ThreeLines {
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-  }
+	&ThreeLines {
+		-webkit-box-orient: vertical;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+	}
 }
 
 // Alignments
 .TextCenter {
-  text-align: center;
+	text-align: center;
 }
 
 .TextLeft {
-  text-align: left;
+	text-align: left;
 }
 
 .TextRight {
-  text-align: right;
+	text-align: right;
 }
 
 // Go to 06-helpers/_colors.scss to see the new classes
 .Page .Text {
+	/* Colors */
+	&_sapphireBlue {
+		color: fuchsia;
+	}
+
+	&_sapphireBlue2 {
+		color: $regular-beta;
+	}
+
+	&_sapphireInactive {
+		color: $light-grey;
+	}
+
+	&_sapphireDarkBlue1 {
+		color: $sapphire-dark-blue1;
+	}
+
+	&_sapphireDarkBlue2 {
+		color: $sapphire-dark-blue2;
+	}
+
+	&_sapphireDarkText {
+		color: $dark-grey;
+	}
+
+	&_sapphireLightText {
+		color: $regular-grey;
+	}
+
+	&_sapphireFemale {
+		color: $sapphire-female;
+	}
+
+	&_sapphireMale {
+		color: $sapphire-male;
+	}
+
+	&_sapphireDarkGrey {
+		color: $mid-dark-grey;
+	}
+
+	&_sapphireLightBoard {
+		color: $sapphire-light-board;
+	}
+
+	&_sapphireLightContainer {
+		color: $body-color;
+	}
+
+	&_sapphireBackground {
+		color: $body-color;
+	}
+
+	&_sapphireWarning {
+		color: $regular-red;
+	}
+
+	&_sapphireWhite {
+		color: $regular-white;
+	}
+
+	&_sapphireClinician {
+		color: $sapphire-clinician;
+	}
+
+	&_sapphireLighnesstText {
+		color: $light-grey;
+	}
+
+	&_DarkBlue {
+		color: $sapphire-dark-blue;
+	}
+
+	&_black {
+		color: $regular-black;
+	}
+
+	&_blue {
+		color: $regular-blue;
+	}
+
+	&_darkBlue {
+		color: $dark-blue;
+	}
+
+	&_navyBlue {
+		color: $regular-zeta;
+	}
+
+	&_MiddleBlue {
+		color: $sapphire-blue;
+	}
+
+	&_gray {
+		color: $regular-grey;
+	}
+
+	&_green {
+		color: $regular-green;
+	}
+
+	&_Darkgreen {
+		color: $dark-green;
+	}
 
-  /* Colors */
-  &_sapphireBlue {
-    color: fuchsia;
-  }
-
-  &_sapphireBlue2 {
-    color: $regular-beta;
-  }
-
-  &_sapphireInactive {
-    color: $light-grey;
-  }
-
-  &_sapphireDarkBlue1 {
-    color: $sapphire-dark-blue1;
-  }
-
-  &_sapphireDarkBlue2 {
-    color: $sapphire-dark-blue2;
-  }
-
-  &_sapphireDarkText {
-    color: $dark-grey;
-  }
-
-  &_sapphireLightText {
-    color: $regular-grey;
-  }
-
-  &_sapphireFemale {
-    color: $sapphire-female;
-  }
-
-  &_sapphireMale {
-    color: $sapphire-male;
-  }
-
-  &_sapphireDarkGrey {
-    color: $mid-dark-grey;
-  }
-
-  &_sapphireLightBoard {
-    color: $sapphire-light-board;
-  }
-
-  &_sapphireLightContainer {
-    color: $body-color;
-  }
-
-  &_sapphireBackground {
-    color: $body-color;
-  }
-
-  &_sapphireWarning {
-    color: $regular-red;
-  }
-
-  &_sapphireWhite {
-    color: $regular-white;
-  }
-
-  &_sapphireClinician {
-    color: $sapphire-clinician;
-  }
-
-  &_sapphireLighnesstText {
-    color: $light-grey;
-  }
-
-  &_DarkBlue {
-    color: $sapphire-dark-blue;
-  }
-
-  &_black {
-    color: $regular-black;
-  }
-
-  &_blue {
-    color: $regular-blue;
-  }
-
-  &_darkBlue {
-    color: $dark-blue;
-  }
-
-  &_navyBlue {
-    color: $blue-navy;
-  }
-
-  &_MiddleBlue {
-    color: $sapphire-blue;
-  }
-
-  &_gray {
-    color: $regular-grey;
-  }
-
-  &_green {
-    color: $regular-green;
-  }
-
-  &_Darkgreen {
-    color: $dark-green;
-  }
-
-  &_green_Sapphire {
-    color: $regular-alpha;
-  }
-
-  &_lightGreen {
-    color: $light-green;
-  }
-
-  &_orange {
-    color: $regular-orange;
-  }
-
-  &_orangeDark {
-    color: $dark-orange;
-  }
-
-  &_plum {
-    color: $regular-plum;
-  }
-
-  &_darkPlum {
-    color: $dark-plum;
-  }
-
-  &_red {
-    color: $regular-red;
-  }
-
-  &_darkRed {
-    color: $dark-red;
-  }
-
-  &_SapphireRed {
-    color: $regular-red;
-  }
-
-  &_silver {
-    color: $light-grey;
-  }
-
-  &_turquoise {
-    color: $light-turquoise;
-  }
-
-  &_darkTurquoise {
-    color: $regular-turquoise;
-  }
-
-  &_white {
-    color: $regular-white;
-  }
-
-  &_yellow {
-    color: $regular-yellow;
-  }
-
-  &_darkYellow {
-    color: $dark-yellow;
-  }
-
-  /* Sizes */
-  &_09em {
-    font-size: 0.9em;
-  }
-
-  &_1em {
-    font-size: 1em;
-  }
-
-  &_11em {
-    font-size: 1.1em;
-  }
-
-  &_12em {
-    font-size: 1.2em;
-  }
-
-  &_13em {
-    font-size: 1.3em;
-  }
-
-  &_14em {
-    font-size: 1.4em;
-  }
-
-  &_15em {
-    font-size: 1.5em;
-  }
-
-  &_09rem {
-    font-size: 0.9rem;
-  }
-
-  &_1rem {
-    font-size: 1rem;
-  }
-
-  &_11rem {
-    font-size: 1.1rem;
-  }
-
-  &_12rem {
-    font-size: 1.2rem;
-  }
-
-  &_13rem {
-    font-size: 1.3rem;
-  }
-
-  &_14rem {
-    font-size: 1.4rem;
-  }
-
-  &_15rem {
-    font-size: 1.5rem;
-  }
-
-  &_Size11 {
-    font-size: 11px;
-  }
-
-  &_Size12 {
-    font-size: 12px;
-  }
-
-  &_Size13 {
-    font-size: 13px;
-  }
-
-  &_Size14 {
-    font-size: 14px;
-  }
-
-  &_Size15 {
-    font-size: 15px;
-  }
-
-  &_Size16 {
-    font-size: 16px;
-  }
-
-  &_Size17 {
-    font-size: 17px;
-  }
-
-  &_Size18 {
-    font-size: 18px;
-  }
-
-  &_Size20 {
-    font-size: 20px;
-  }
-
-  &_Size22 {
-    font-size: 22px;
-  }
-
-  &_Size25 {
-    font-size: 25px;
-  }
-
-  &_Size30 {
-    font-size: 30px;
-  }
-
-  &_Size90 {
-    font-size: 90px;
-  }
-
-  /* General */
-  &_uppercase {
-    text-transform: uppercase;
-  }
-
-  &_Note {
-    color: $regular-gray;
-    font-size: 0.9em;
-  }
+	&_green_Sapphire {
+		color: $regular-alpha;
+	}
+
+	&_lightGreen {
+		color: $light-green;
+	}
+
+	&_orange {
+		color: $regular-orange;
+	}
+
+	&_orangeDark {
+		color: $dark-orange;
+	}
+
+	&_plum {
+		color: $regular-plum;
+	}
+
+	&_darkPlum {
+		color: $dark-plum;
+	}
+
+	&_red {
+		color: $regular-red;
+	}
+
+	&_darkRed {
+		color: $dark-red;
+	}
+
+	&_SapphireRed {
+		color: $regular-red;
+	}
+
+	&_silver {
+		color: $light-grey;
+	}
+
+	&_turquoise {
+		color: $regular-zeta;
+	}
+
+	&_darkTurquoise {
+		color: $regular-turquoise;
+	}
+
+	&_white {
+		color: $regular-white;
+	}
+
+	&_yellow {
+		color: $regular-yellow;
+	}
+
+	&_darkYellow {
+		color: $dark-yellow;
+	}
+
+	/* Sizes */
+	&_09em {
+		font-size: 0.9em;
+	}
+
+	&_1em {
+		font-size: 1em;
+	}
+
+	&_11em {
+		font-size: 1.1em;
+	}
+
+	&_12em {
+		font-size: 1.2em;
+	}
+
+	&_13em {
+		font-size: 1.3em;
+	}
+
+	&_14em {
+		font-size: 1.4em;
+	}
+
+	&_15em {
+		font-size: 1.5em;
+	}
+
+	&_09rem {
+		font-size: 0.9rem;
+	}
+
+	&_1rem {
+		font-size: 1rem;
+	}
+
+	&_11rem {
+		font-size: 1.1rem;
+	}
+
+	&_12rem {
+		font-size: 1.2rem;
+	}
+
+	&_13rem {
+		font-size: 1.3rem;
+	}
+
+	&_14rem {
+		font-size: 1.4rem;
+	}
+
+	&_15rem {
+		font-size: 1.5rem;
+	}
+
+	&_Size11 {
+		font-size: 11px;
+	}
+
+	&_Size12 {
+		font-size: 12px;
+	}
+
+	&_Size13 {
+		font-size: 13px;
+	}
+
+	&_Size14 {
+		font-size: 14px;
+	}
+
+	&_Size15 {
+		font-size: 15px;
+	}
+
+	&_Size16 {
+		font-size: 16px;
+	}
+
+	&_Size17 {
+		font-size: 17px;
+	}
+
+	&_Size18 {
+		font-size: 18px;
+	}
+
+	&_Size20 {
+		font-size: 20px;
+	}
+
+	&_Size22 {
+		font-size: 22px;
+	}
+
+	&_Size25 {
+		font-size: 25px;
+	}
+
+	&_Size30 {
+		font-size: 30px;
+	}
+
+	&_Size90 {
+		font-size: 90px;
+	}
+
+	/* General */
+	&_uppercase {
+		text-transform: uppercase;
+	}
+
+	&_Note {
+		color: $regular-grey;
+		font-size: 0.9em;
+	}
 }
 
 .Page {
-  .mainBlue1-tx {
-    @extend .Text_sapphireBlue;
-  }
+	.mainBlue1-tx {
+		@extend .Text_sapphireBlue;
+	}
 
-  .mainBlue2-tx {
-    @extend .Text_sapphireBlue2;
-  }
+	.mainBlue2-tx {
+		@extend .Text_sapphireBlue2;
+	}
 
-  .inactiveButton-tx {
-    @extend .Text_sapphireInactive;
-  }
+	.inactiveButton-tx {
+		@extend .Text_sapphireInactive;
+	}
 
-  .darkBlue1-tx {
-    @extend .Text_sapphireDarkBlue1;
-  }
+	.darkBlue1-tx {
+		@extend .Text_sapphireDarkBlue1;
+	}
 
-  .darkBlue2-tx {
-    @extend .Text_sapphireDarkBlue2;
-  }
+	.darkBlue2-tx {
+		@extend .Text_sapphireDarkBlue2;
+	}
 
-  .darkText-tx {
-    @extend .Text_sapphireDarkText;
-  }
+	.darkText-tx {
+		@extend .Text_sapphireDarkText;
+	}
 
-  .lightText-tx {
-    @extend .Text_sapphireLightText;
-  }
+	.lightText-tx {
+		@extend .Text_sapphireLightText;
+	}
 
-  .female-tx {
-    @extend .Text_sapphireFemale;
-  }
+	.female-tx {
+		@extend .Text_sapphireFemale;
+	}
 
-  .male-tx {
-    @extend .Text_sapphireMale;
-  }
+	.male-tx {
+		@extend .Text_sapphireMale;
+	}
 
-  .darkGreyText-tx {
-    @extend .Text_sapphireDarkGrey;
-  }
+	.darkGreyText-tx {
+		@extend .Text_sapphireDarkGrey;
+	}
 
-  .lightBorder-tx {
-    @extend .Text_sapphireLightBoard;
-  }
+	.lightBorder-tx {
+		@extend .Text_sapphireLightBoard;
+	}
 
-  .lightContainer-tx {
-    @extend .Text_sapphireLightContainer;
-  }
+	.lightContainer-tx {
+		@extend .Text_sapphireLightContainer;
+	}
 
-  .background-tx {
-    @extend .Text_sapphireBackground;
-  }
+	.background-tx {
+		@extend .Text_sapphireBackground;
+	}
 
-  .warning-tx {
-    @extend .Text_sapphireWarning;
-  }
+	.warning-tx {
+		@extend .Text_sapphireWarning;
+	}
 
-  .white-tx {
-    @extend .Text_sapphireWhite;
-  }
+	.white-tx {
+		@extend .Text_sapphireWhite;
+	}
 
-  .clinician-tx {
-    @extend .Text_sapphireClinician;
-  }
+	.clinician-tx {
+		@extend .Text_sapphireClinician;
+	}
 
-  .light-tx {
-    @extend .Text_sapphireLighnesstText;
-  }
+	.light-tx {
+		@extend .Text_sapphireLighnesstText;
+	}
 }
 
 .Label {
-  background-color: transparent;
-  border-radius: 10px;
-  max-height: 20px;
-  padding: 2px 8px;
+	background-color: transparent;
+	border-radius: 10px;
+	max-height: 20px;
+	padding: 2px 8px;
 }
 
 .Uppercase {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .NoWrap {
-  vertical-align: middle;
-  white-space: nowrap;
+	vertical-align: middle;
+	white-space: nowrap;
 }

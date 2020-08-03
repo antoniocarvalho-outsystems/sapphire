@@ -1,33 +1,33 @@
 /* NavigationBar */
 .NavigationBar a.InlineDropdown {
-  border: none;
+	border: none;
 }
 
 .NavigationBar a.InlineDropdown .DropdownMenu {
-  top: 160%;
+	top: 160%;
 }
 
 .NavigationBar a.InlineDropdown .DropdownMenu a {
-  display: block;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
+	display: block;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
 }
 
 .NavigationBar a.InlineDropdown .DropdownMenu a:hover,
 .NavigationBar a.InlineDropdown .DropdownMenu a:link:hover {
-  color: #009884;
-  font-weight: initial;
+	color: $regular-beta;
+	font-weight: initial;
 }
 
 .NavigationBar a.InlineDropdown .InlineDropdown_icon .fa {
-  animation: none;
-  transform: rotate(-180deg);
-  transition: all .3s ease-in;
+	animation: none;
+	transform: rotate(-180deg);
+	transition: all 0.3s ease-in;
 }
 
 .NavigationBar a.InlineDropdown.open .InlineDropdown_icon .fa {
-  transform: rotate(0deg);
+	transform: rotate(0deg);
 }
 
 /* NavigationBar */

@@ -100,7 +100,7 @@ $ActionsMenu-color-active: $regular-alpha;
 }
 
 .ActionsMenu-tooltip.Border--Bottom .ActionsMenu-item {
-	border-bottom: 1px solid $gray-lighter;
+	border-bottom: 1px solid $body-color;
 }
 
 .ActionsMenu-tooltip.Border--Bottom .ActionsMenu-item:last-child {

@@ -13,6 +13,7 @@ html,
 .Page {
 	font-family: $font-family-latin-regular;
 	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
 	height: 100%;
 	position: relative;
 

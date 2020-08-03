@@ -59,7 +59,7 @@ a.Button.IsDefault,
 
 	&:active,
 	&:hover {
-		background-color: $primary-light;
+		background-color: $regular-epsilon;
 		border: 1px solid transparent;
 	}
 
@@ -111,7 +111,7 @@ a.Button.IsDefault,
 
 			&:active,
 			&:hover {
-				background-color: $primary-light;
+				background-color: $regular-epsilon;
 			}
 
 			&:after {
