@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920051 || Generated: Mon Aug 03 2020 17:24:56 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920052 || Generated: Wed Aug 05 2020 12:27:09 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29539,6 +29539,22 @@ span[id*='RelatedVisitsRL'] :not(:first-child) .PersonCard_header {
 
 .HospitalizationPlan_Content__Buttons__Placeholder.hide + .HospitalizationPlan_Content__Cards {
   width: 100%; }
+
+/* Used only in the  Appointment List (Home Page - Agenda) */
+.AppointmentsList .QueueSystemWrapper .PatientCallCancel.PatientCallCancel-List .js-idle:first-of-type,
+.AppointmentsList .QueueSystemWrapper .PatientCallCancel.PatientCallCancel-List .js-calling:first-of-type {
+  -webkit-box-align: start;
+          align-items: flex-start; }
+  .AppointmentsList .QueueSystemWrapper .PatientCallCancel.PatientCallCancel-List .js-idle:first-of-type .PatientCallCancel-icon,
+  .AppointmentsList .QueueSystemWrapper .PatientCallCancel.PatientCallCancel-List .js-calling:first-of-type .PatientCallCancel-icon {
+    margin-top: 3px; }
+  .AppointmentsList .QueueSystemWrapper .PatientCallCancel.PatientCallCancel-List .js-idle:first-of-type .PatientCallCancel-label,
+  .AppointmentsList .QueueSystemWrapper .PatientCallCancel.PatientCallCancel-List .js-calling:first-of-type .PatientCallCancel-label {
+    line-height: normal; }
+  .AppointmentsList .QueueSystemWrapper .PatientCallCancel.PatientCallCancel-List .js-idle:first-of-type .PatientCallCancel-queue .WhiteContainer,
+  .AppointmentsList .QueueSystemWrapper .PatientCallCancel.PatientCallCancel-List .js-calling:first-of-type .PatientCallCancel-queue .WhiteContainer {
+    border: 0;
+    padding: 0; }
 
 .phone input[type='number'],
 .phone input[type='text'],
