@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920052 || Generated: Wed Aug 05 2020 12:27:09 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.920053 || Generated: Wed Aug 05 2020 16:44:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -8306,6 +8306,27 @@ a.Button.IsDefault,
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
+
+div.LineInfo {
+  background-color: #f2fffd;
+  border: 1px solid #56d3c2;
+  border-radius: 4px;
+  padding: 12px; }
+
+.Hint {
+  border-radius: 4px;
+  clear: both;
+  font-size: 1.143em;
+  margin: 10px 0;
+  padding: 10px;
+  position: relative;
+  width: 98%; }
+  .Hint.Warning {
+    background: #ff3e2d;
+    color: #fff; }
+  .Hint.WarningYellow {
+    background-color: #ffeab5;
+    border-bottom-color: #ff3e2d; }
 
 .Page .LineTimeLine {
   background-color: #fff;
@@ -40981,33 +41002,8 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
 .AutoHeight {
   height: auto !important; }
 
-.Hint {
-  clear: both;
-  font-size: 1.167rem;
-  margin: 10px 0;
-  padding: 10px;
-  position: relative;
-  width: 98%; }
-
-.Hint.Warning {
-  background: #c80606;
-  border-radius: 5px;
-  color: #fff; }
-
-.Hint.WarningYellow {
-  background-color: #ffc;
-  border-bottom-color: #c80606;
-  border-radius: 3px;
-  color: #fff;
-  color: #000; }
-
 .HighlightLabel {
   color: #0d4965; }
-
-div.LineInfo {
-  background-color: #d3eff0;
-  border: 1px solid #b1d6d7;
-  padding: 10px; }
 
 .ContentSeparator {
   border-top: 1px solid #c9cdce; }
