@@ -1,0 +1,26 @@
+div.LineInfo {
+	background-color: $regular-eta;
+	border: 1px solid $regular-epsilon;
+	border-radius: $border-radius-default;
+	padding: 12px;
+}
+
+.Hint {
+	border-radius: $border-radius-default;
+	clear: both;
+	font-size: 1.143em;
+	margin: 10px 0;
+	padding: 10px;
+	position: relative;
+	width: 98%;
+
+	&.Warning {
+		background: $regular-red;
+		color: $regular-white;
+	}
+
+	&.WarningYellow {
+		background-color: $light-yellow;
+		border-bottom-color: $regular-red;
+	}
+}
