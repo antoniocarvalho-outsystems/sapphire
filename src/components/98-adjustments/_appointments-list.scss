@@ -1,0 +1,26 @@
+/* Used only in the  Appointment List (Home Page - Agenda) */
+.AppointmentsList {
+	.QueueSystemWrapper {
+		.PatientCallCancel.PatientCallCancel-List {
+			.js-idle:first-of-type,
+			.js-calling:first-of-type {
+				align-items: flex-start;
+
+				.PatientCallCancel-icon {
+					margin-top: 3px;
+				}
+
+				.PatientCallCancel-label {
+					line-height: normal;
+				}
+
+				.PatientCallCancel-queue {
+					.WhiteContainer {
+						border: 0;
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+}
