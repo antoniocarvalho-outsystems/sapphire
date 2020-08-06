@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930002 || Generated: Thu Aug 06 2020 15:24:50 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930003 || Generated: Thu Aug 06 2020 16:18:43 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -28868,15 +28868,6 @@ ul.os-internal-ui-autocomplete {
   .FileContainer .ButtonGroup_button.Button:first-child, .FileContainer .ButtonGroup_button.Button:last-child {
     -webkit-box-flex: 1;
             flex: 1; }
-  .FileContainer .ButtonGroup_button.Button:first-child {
-    border-bottom-right-radius: 4px;
-    border-right: 1px solid;
-    border-top-right-radius: 4px;
-    margin-right: 5px; }
-  .FileContainer .ButtonGroup_button.Button:last-child {
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    margin-left: 5px; }
 
 .FA.phone .ButtonGroup_button.Button,
 .FA.phone .ButtonGroup_button a.Button,
@@ -41240,9 +41231,6 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
 .BigInput select,
 .BigInput input {
   -servicestudio-margin-left: 100px; }
-
-.FileContainer {
-  -servicestudio-width: 700px; }
 
 /** AppointmentsCreatedAfter **/
 .FiltersContainer .Column.ColFirst {
