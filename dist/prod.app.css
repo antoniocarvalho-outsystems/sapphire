@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.920053 || Generated: Wed Aug 05 2020 16:44:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930001 || Generated: Thu Aug 06 2020 11:34:25 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10521,7 +10521,11 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   position: static; }
 
 .LayoutBase.Page .ClinicianWorkArea .ClinicianWorkArea-columns {
+  -webkit-box-align: stretch;
+          align-items: stretch;
   background-color: #f3f3f3;
+  display: -webkit-box;
+  display: flex;
   padding-left: 16px;
   width: 100%; }
 
@@ -10558,7 +10562,11 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   padding-right: 8px; }
 
 .LayoutBase .ClinicianWorkArea____painLevel {
-  display: block; }
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 210px;
+  z-index: 1; }
 
 .LayoutBase .select2-container--open .select2-dropdown--below {
   z-index: 101; }
