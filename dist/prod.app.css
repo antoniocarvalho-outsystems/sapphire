@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930001 || Generated: Thu Aug 06 2020 11:34:25 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930002 || Generated: Thu Aug 06 2020 15:24:50 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -28664,8 +28664,6 @@ ul.os-internal-ui-autocomplete {
 
 .SessionList___Actions {
   text-align: right; }
-  .SessionList___Actions a {
-    display: inline-block; }
 
 .SessionList__ExtraInfo {
   display: table-cell;
