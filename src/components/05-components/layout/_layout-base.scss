@@ -451,7 +451,9 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 		.ClinicianWorkArea {
 			.ClinicianWorkArea-columns {
+				align-items: stretch;
 				background-color: $body-color;
+				display: flex;
 				padding-left: 16px;
 				width: 100%;
 			}
@@ -501,6 +503,9 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 	.ClinicianWorkArea____painLevel {
 		display: block;
+		position: sticky;
+		top: 210px;
+		z-index: 1;
 	}
 
 	.select2-container--open .select2-dropdown--below {
