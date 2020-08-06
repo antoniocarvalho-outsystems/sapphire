@@ -13,17 +13,6 @@
 			&:last-child {
 				flex: 1;
 			}
-			&:first-child {
-				border-bottom-right-radius: $border-radius-default;
-				border-right: 1px solid;
-				border-top-right-radius: $border-radius-default;
-				margin-right: 5px;
-			}
-			&:last-child {
-				border-bottom-left-radius: $border-radius-default;
-				border-top-left-radius: $border-radius-default;
-				margin-left: 5px;
-			}
 		}
 	}
 }
