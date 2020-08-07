@@ -63,7 +63,5 @@ SapphireWidgets.TabsExtended = function(config) {
 		if (!config.tab3Enabled) $tabHeader.find('> .Tabs__tab[value=3]').addClass('disabled');
 		if (!config.tab4Enabled) $tabHeader.find('> .Tabs__tab[value=4]').addClass('disabled');
 		if (!config.tab5Enabled) $tabHeader.find('> .Tabs__tab[value=5]').addClass('disabled');
-
-		osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.TabsExtended);
 	});
 };
