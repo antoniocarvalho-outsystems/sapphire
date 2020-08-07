@@ -182,7 +182,11 @@
 				_this.$calendar
 					.find('.calendar-table thead tr')
 					.eq(0)
-					.after('<tr><td colspan="7" class="DateTimeRangePicker-calendar-gotoday">' + 'Today' + '</td></tr>');
+					.after(
+						'<tr><td colspan="7" class="DateTimeRangePicker-calendar-gotoday">' +
+							_this.config.goTodayLabel +
+							'</td></tr>'
+					);
 				if (_this.config.drops === 'up') {
 					_this.$calendar.css('top', _this.$calendar.offset().top - 24);
 				}
