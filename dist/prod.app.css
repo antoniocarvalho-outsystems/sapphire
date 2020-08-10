@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930005 || Generated: Mon Aug 10 2020 16:19:49 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930006 || Generated: Mon Aug 10 2020 16:22:56 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15075,7 +15075,8 @@ body.PanelOpened .daterangepicker {
   .AppLine .WhiteB {
     background-color: #fff; }
   .AppLine .AppInfo {
-    padding: 5px 5px 5px 10px; }
+    padding: 5px 5px 5px 10px;
+    width: 100%; }
   .AppLine .AppDate {
     display: table-cell;
     vertical-align: middle; }
