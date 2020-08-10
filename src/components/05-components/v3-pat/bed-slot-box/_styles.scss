@@ -158,7 +158,7 @@
 	grid-row-gap: 18px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
-	> .BedBoxContainer {
+	.BedBoxContainer {
 		width: 100%;
 	}
 }
