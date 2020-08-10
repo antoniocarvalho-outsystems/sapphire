@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.0.930007 || Generated: Mon Aug 10 2020 17:02:43 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.0.930008 || Generated: Mon Aug 10 2020 17:32:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12179,6 +12179,7 @@ div.Feedback_Message_Info span.lasa-term {
   grid-column-gap: 18px;
   grid-row-gap: 18px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .ListBedBox div.OSInline,
   .ListBedBox .BedBoxContainer {
     width: 100%; }
 
