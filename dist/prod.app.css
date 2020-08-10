@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.0.930004 || Generated: Fri Aug 07 2020 15:06:19 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.0.930005 || Generated: Mon Aug 10 2020 16:29:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14397,7 +14397,8 @@ body.PanelOpened .daterangepicker {
   .AppLine .WhiteB {
     background-color: #fff; }
   .AppLine .AppInfo {
-    padding: 5px 5px 5px 10px; }
+    padding: 5px 5px 5px 10px;
+    width: 100%; }
   .AppLine .AppDate {
     display: table-cell;
     vertical-align: middle; }
@@ -14500,9 +14501,6 @@ body.PanelOpened .daterangepicker {
   .AppLine .DragBox .dropBottom {
     line-height: 0;
     padding: 0; }
-
-.desktop:not(.big):not(.hd) .SideBarOpen .AppLine .DragLine > div {
-  display: inline-table; }
 
 .AR .AppLine .AppInfo,
 .FA .AppLine .AppInfo {
