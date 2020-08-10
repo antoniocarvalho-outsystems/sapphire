@@ -157,6 +157,7 @@
 	grid-row-gap: 18px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
+	div.OSInline,
 	.BedBoxContainer {
 		width: 100%;
 	}
