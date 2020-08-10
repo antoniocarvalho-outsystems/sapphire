@@ -152,6 +152,17 @@
 	}
 }
 
+.ListBedBox {
+	display: grid;
+	grid-column-gap: 18px;
+	grid-row-gap: 18px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+	> .BedBoxContainer {
+		width: 100%;
+	}
+}
+
 .AR,
 .FA {
 	.SlotText {
