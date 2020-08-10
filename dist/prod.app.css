@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930006 || Generated: Mon Aug 10 2020 16:22:56 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930007 || Generated: Mon Aug 10 2020 17:05:06 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12763,6 +12763,14 @@ div.Feedback_Message_Info span.lasa-term {
     white-space: nowrap; }
     .BedBoxContainer .SlotText .BedNumber {
       font-size: 1em; }
+
+.ListBedBox {
+  display: grid;
+  grid-column-gap: 18px;
+  grid-row-gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .ListBedBox .BedBoxContainer {
+    width: 100%; }
 
 .AR .SlotText,
 .FA .SlotText {
