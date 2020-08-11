@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930008 || Generated: Mon Aug 10 2020 17:31:06 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930009 || Generated: Tue Aug 11 2020 10:47:26 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21042,11 +21042,13 @@ a .PersonCard {
 .AR .Calendar_Weekday,
 .AR .Calendar_Past_Day,
 .AR .CalendarWidget__days,
+.AR .Calendar_Weekday_Holiday,
 .AR .CalendarWidget__daysNumber,
 .FA .Calendar_Today,
 .FA .Calendar_Weekday,
 .FA .Calendar_Past_Day,
 .FA .CalendarWidget__days,
+.FA .Calendar_Weekday_Holiday,
 .FA .CalendarWidget__daysNumber {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1); }
