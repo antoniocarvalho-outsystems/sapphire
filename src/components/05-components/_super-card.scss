@@ -1,5 +1,5 @@
 @mixin common-supercard-size-style($width: 0) {
-	padding: 6px 16px;
+	padding: 6px $sapphire-sizes--medium;
 	width: $width;
 }
 

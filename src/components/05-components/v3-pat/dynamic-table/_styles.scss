@@ -29,7 +29,7 @@
 	&__Header {
 		border-bottom: 1px solid $light-grey;
 		display: flex;
-		padding: 10px 16px;
+		padding: 10px $sapphire-sizes--medium;
 	}
 
 	&__RowColumn,
@@ -62,7 +62,7 @@
 	&__Rows {
 		display: flex;
 		min-height: 80px;
-		padding: 0 16px;
+		padding: 0 $sapphire-sizes--medium;
 
 		// PersonCard Adjustments
 		.PersonCard {
@@ -71,13 +71,13 @@
 
 			&_header {
 				border: none;
-				margin-left: -16px;
+				margin-left: -$sapphire-sizes--medium;
 				min-height: 100%;
 			}
 
 			&__headerLeftInfo {
 				align-items: center;
-				padding-left: 16px;
+				padding-left: $sapphire-sizes--medium;
 			}
 
 			&____title {
@@ -106,7 +106,7 @@
 				&__Rows,
 				&__Header {
 					padding-left: 35px;
-					padding-right: 16px;
+					padding-right: $sapphire-sizes--medium;
 				}
 			}
 		}
@@ -126,7 +126,7 @@
 		&__Rows {
 			.PersonCard {
 				margin-left: auto;
-				margin-right: -16px;
+				margin-right: -$sapphire-sizes--medium;
 			}
 		}
 	}

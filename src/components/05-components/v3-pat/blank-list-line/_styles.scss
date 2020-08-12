@@ -3,7 +3,7 @@
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-default;
 	display: table;
-	padding: 16px;
+	padding: $sapphire-sizes--medium;
 	width: 100%;
 
 	&.isDismissed {

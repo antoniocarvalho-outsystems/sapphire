@@ -20,7 +20,7 @@
 
 	&__info {
 		display: inline-block;
-		margin-left: 16px;
+		margin-left: $sapphire-sizes--medium;
 		vertical-align: middle !important;
 		white-space: nowrap;
 	}
@@ -55,7 +55,7 @@
 
 	.row {
 		display: table;
-		margin-top: 16px;
+		margin-top: $sapphire-sizes--medium;
 		width: 100%;
 
 		> div > div {

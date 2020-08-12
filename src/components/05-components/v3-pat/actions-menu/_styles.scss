@@ -124,7 +124,7 @@ $ActionsMenu-color-active: $regular-alpha;
 }
 
 .ActionsMenu-tooltip.Padding--Large .tooltipster-content > section > div {
-	padding: 16px;
+	padding: $sapphire-sizes--medium;
 }
 
 .ActionsMenu-tooltip.Padding--XLarge .tooltipster-content > section > div {

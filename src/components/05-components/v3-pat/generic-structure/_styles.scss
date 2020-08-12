@@ -4,7 +4,7 @@ $GenericStrutucre-color-title-underline: $regular-alpha;
 .GenericStructure-header {
 	align-items: flex-end;
 	display: flex;
-	margin-bottom: $sapphire__sizes__medium;
+	margin-bottom: $sapphire-sizes--medium;
 }
 
 .GenericStructure-header-content {
@@ -27,17 +27,17 @@ $GenericStrutucre-color-title-underline: $regular-alpha;
 
 .GenericStructure-subheader-content {
 	flex-grow: 1;
-	margin-bottom: $sapphire__sizes__large;
+	margin-bottom: $sapphire-sizes--large;
 }
 
 .GenericStructure-subheader-actions {
 	flex-grow: 1;
-	margin-bottom: $sapphire__sizes__large;
+	margin-bottom: $sapphire-sizes--large;
 	text-align: right;
 }
 
 .GenericStructure-section {
-	margin-bottom: $sapphire__sizes__large;
+	margin-bottom: $sapphire-sizes--large;
 }
 
 .GenericStructure-section-header {
@@ -58,19 +58,19 @@ $GenericStrutucre-color-title-underline: $regular-alpha;
 .GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-content,
 .GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-actions {
 	border-bottom: 1px solid $GenericStrutucre-color-border;
-	padding-bottom: $sapphire__sizes__small;
+	padding-bottom: $sapphire-sizes--small;
 }
 
 .GenericStructure-header-border--BorderTitle > .GenericStructure-header > .GenericStructure-header-content {
 	align-items: center;
 	border-bottom: 1px solid $GenericStrutucre-color-title-underline;
 	display: flex;
-	padding-bottom: $sapphire__sizes__small;
+	padding-bottom: $sapphire-sizes--small;
 }
 
 .GenericStructure-header-border--BorderTitle > .GenericStructure-header > .GenericStructure-header-actions {
 	border-bottom: 1px solid $GenericStrutucre-color-border;
-	padding-bottom: $sapphire__sizes__small;
+	padding-bottom: $sapphire-sizes--small;
 }
 
 .phone,
@@ -85,7 +85,7 @@ $GenericStrutucre-color-title-underline: $regular-alpha;
 	.GenericStructure-section-header-content,
 	.GenericStructure-section-header-actions {
 		display: block;
-		margin-bottom: $sapphire__sizes__small;
+		margin-bottom: $sapphire-sizes--small;
 		max-width: none;
 		white-space: normal;
 	}
@@ -96,7 +96,7 @@ $GenericStrutucre-color-title-underline: $regular-alpha;
 
 	.GenericStructure-header,
 	.GenericStructure-subheader {
-		margin-bottom: $sapphire__sizes__large;
+		margin-bottom: $sapphire-sizes--large;
 	}
 
 	.GenericStructure-header-actions {

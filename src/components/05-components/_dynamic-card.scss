@@ -18,7 +18,7 @@
 			color: $dark-beige;
 			display: table-cell;
 			height: 100%;
-			padding: 6px 16px;
+			padding: 6px $sapphire-sizes--medium;
 			vertical-align: middle;
 			white-space: nowrap;
 			width: 40px;
@@ -33,12 +33,12 @@
 		display: table-cell;
 		height: 100%;
 		margin-bottom: 0;
-		padding: 6px 16px;
+		padding: 6px $sapphire-sizes--medium;
 	}
 
 	&_Actions {
 		display: table-cell;
-		padding-right: 16px;
+		padding-right: $sapphire-sizes--medium;
 		text-align: right;
 		vertical-align: middle;
 
@@ -62,7 +62,7 @@
 	}
 
 	.Card_Actions {
-		padding-left: 16px;
+		padding-left: $sapphire-sizes--medium;
 		padding-right: 0;
 	}
 

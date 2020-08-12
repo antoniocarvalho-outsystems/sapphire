@@ -1,6 +1,6 @@
 .LayoutBase {
 	&-padding {
-		padding: 16px;
+		padding: $sapphire-sizes--medium;
 	}
 
 	&-Wrapper {
@@ -11,8 +11,8 @@
 			bottom: 0;
 			box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
 			left: 0;
-			padding-left: 16px;
-			padding-right: 16px;
+			padding-left: $sapphire-sizes--medium;
+			padding-right: $sapphire-sizes--medium;
 			position: fixed;
 			z-index: 1;
 		}
@@ -51,7 +51,7 @@
 
 	&-bottomfixedcontent {
 		background-color: $body-color;
-		padding-left: 16px;
+		padding-left: $sapphire-sizes--medium;
 	}
 
 	&-iframesidebar {
@@ -106,7 +106,7 @@
 	&-Content {
 		.LayoutBase-primary-menu {
 			background-color: $regular-alpha;
-			padding-left: 16px;
+			padding-left: $sapphire-sizes--medium;
 		}
 
 		.LayoutBase-secondary {
@@ -129,7 +129,7 @@
 				background: #fff;
 				background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 0) 80px);
 				height: 1px;
-				padding-left: 16px;
+				padding-left: $sapphire-sizes--medium;
 
 				.ClinicianWorkArea-columns {
 					background-color: transparent;
@@ -344,7 +344,7 @@
 
 		&-topfixedcontent {
 			.ManageQueueContainer {
-				margin: 16px;
+				margin: $sapphire-sizes--medium;
 				margin-top: 24px;
 				opacity: 1;
 				position: absolute;
@@ -454,7 +454,7 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 				align-items: stretch;
 				background-color: $body-color;
 				display: flex;
-				padding-left: 16px;
+				padding-left: $sapphire-sizes--medium;
 				width: 100%;
 			}
 
@@ -492,7 +492,7 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 		}
 
 		.Toolbar {
-			padding-left: 16px;
+			padding-left: $sapphire-sizes--medium;
 		}
 
 		.Toolbar.Fix {
@@ -517,7 +517,7 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 .FA {
 	&.LayoutBase.Page .ClinicianWorkArea-columns {
 		padding-left: 0;
-		padding-right: 16px;
+		padding-right: $sapphire-sizes--medium;
 	}
 
 	&.LayoutBase.Page .ClinicianWorkArea-columns-big {

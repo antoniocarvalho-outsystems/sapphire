@@ -47,7 +47,7 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 	background-color: $background-disabled;
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-default;
-	padding: 16px;
+	padding: $sapphire-sizes--medium;
 	position: relative;
 }
 
@@ -303,7 +303,7 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 
 		.MainInteractiveCard-header-text {
 			flex: none;
-			margin-bottom: 16px;
+			margin-bottom: $sapphire-sizes--medium;
 			max-width: none;
 			width: 100%;
 		}
@@ -386,7 +386,7 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 
 @media screen and (max-width: 1024px) {
 	.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-		margin-bottom: 16px;
+		margin-bottom: $sapphire-sizes--medium;
 		position: static;
 		text-align: right;
 	}
@@ -450,7 +450,7 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline {
 	border-top: 1px solid $MainInteractiveCard-color-active;
-	padding-top: 16px;
+	padding-top: $sapphire-sizes--medium;
 }
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline:first-child {

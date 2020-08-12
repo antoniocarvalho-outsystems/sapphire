@@ -3,7 +3,7 @@
 	border-radius: $border-radius-medium;
 	color: $text-color-regular;
 	display: table;
-	padding: 16px;
+	padding: $sapphire-sizes--medium;
 
 	&.Critical {
 		border: 1px solid $dark-red;

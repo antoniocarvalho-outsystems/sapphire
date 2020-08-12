@@ -13,12 +13,12 @@
 	> tbody tr {
 		td:first-child {
 			border-left: 1px solid $light-grey;
-			padding-left: 16px !important;
+			padding-left: $sapphire-sizes--medium !important;
 		}
 
 		td:last-child {
 			border-right: 1px solid $light-grey;
-			padding-right: 16px !important;
+			padding-right: $sapphire-sizes--medium !important;
 		}
 	}
 
@@ -252,13 +252,13 @@
 			}
 
 			&:last-child {
-				padding-left: 16px;
+				padding-left: $sapphire-sizes--medium;
 				padding-right: 10px !important;
 			}
 
 			&:first-child {
 				padding-left: 0;
-				padding-right: 16px;
+				padding-right: $sapphire-sizes--medium;
 			}
 		}
 

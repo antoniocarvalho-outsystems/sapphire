@@ -119,13 +119,13 @@ $tab-height: 44px;
 		font-family: $font-family-latin-bold;
 		font-size: 1rem;
 		line-height: calc(#{$tab-height} - 5px);
-		padding-left: 16px;
-		padding-right: 16px;
+		padding-left: $sapphire-sizes--medium;
+		padding-right: $sapphire-sizes--medium;
 		white-space: nowrap;
 	}
 
 	.TabWrapper_icon {
-		padding-left: 16px;
+		padding-left: $sapphire-sizes--medium;
 
 		.icon {
 			color: $regular-white;

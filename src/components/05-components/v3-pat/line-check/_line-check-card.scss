@@ -45,15 +45,15 @@
 	}
 
 	&_icon {
-		padding-left: 16px;
+		padding-left: $sapphire-sizes--medium;
 	}
 
 	&_others {
-		padding: 0 16px;
+		padding: 0 $sapphire-sizes--medium;
 	}
 
 	&_actions {
-		padding-right: 16px;
+		padding-right: $sapphire-sizes--medium;
 	}
 }
 
@@ -96,11 +96,11 @@
 
 		&_icon {
 			padding-left: 0;
-			padding-right: 16px;
+			padding-right: $sapphire-sizes--medium;
 		}
 
 		&_actions {
-			padding-left: 16px;
+			padding-left: $sapphire-sizes--medium;
 			padding-right: 0;
 		}
 	}

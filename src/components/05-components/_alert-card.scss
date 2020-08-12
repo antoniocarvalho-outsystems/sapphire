@@ -2,7 +2,7 @@
 	background-color: #fffbfb;
 	border: 1px solid $dark-red;
 	border-radius: $border-radius-default;
-	padding: 16px;
+	padding: $sapphire-sizes--medium;
 
 	&.Disabled {
 		background-color: $body-color;

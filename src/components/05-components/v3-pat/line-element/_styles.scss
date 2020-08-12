@@ -17,20 +17,20 @@
 		display: table-cell;
 		max-width: 270px;
 		min-width: 150px;
-		padding: 6px 16px;
+		padding: 6px $sapphire-sizes--medium;
 		vertical-align: middle;
 	}
 
 	&_main {
 		display: table-cell;
-		padding: 6px 16px;
+		padding: 6px $sapphire-sizes--medium;
 		vertical-align: middle;
 	}
 
 	&_actions {
 		display: table-cell;
 		min-width: 1px;
-		padding: 6px 16px;
+		padding: 6px $sapphire-sizes--medium;
 		text-align: right;
 		vertical-align: middle;
 		white-space: nowrap;

@@ -1,6 +1,6 @@
 .InputUnitBox {
 	&__Header {
-		padding: 0 16px;
+		padding: 0 $sapphire-sizes--medium;
 	}
 
 	&__Body {
@@ -9,7 +9,7 @@
 	}
 
 	&__Row {
-		padding: 6px 16px;
+		padding: 6px $sapphire-sizes--medium;
 		width: 100%;
 
 		&--greyBackground {

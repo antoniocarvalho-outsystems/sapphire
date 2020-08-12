@@ -219,7 +219,7 @@ $select-system-height: 36px;
 					content: '';
 					display: inline-block;
 					height: 20px;
-					margin-right: 16px;
+					margin-right: $sapphire-sizes--medium;
 					position: relative;
 					vertical-align: middle;
 					width: 20px;
@@ -383,7 +383,7 @@ $select-system-height: 36px;
 			&.MultipleSelect {
 				.select2-results__option {
 					&:before {
-						margin-left: 16px;
+						margin-left: $sapphire-sizes--medium;
 						margin-right: 0;
 					}
 				}

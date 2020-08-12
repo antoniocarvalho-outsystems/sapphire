@@ -276,7 +276,7 @@
 						font-variant: normal;
 						font-weight: normal;
 						height: 100%;
-						padding-right: 16px;
+						padding-right: $sapphire-sizes--medium;
 						pointer-events: none;
 						position: absolute;
 						text-transform: none;
@@ -298,7 +298,7 @@
 		.SearchSD__FavoriteActions {
 			display: table-cell;
 			opacity: 0;
-			padding: 0 16px;
+			padding: 0 $sapphire-sizes--medium;
 			text-align: right;
 			transition: visibility 0.3s, opacity 0.3s linear;
 			vertical-align: middle;
@@ -413,7 +413,7 @@
 			color: rgba(0, 0, 0, 0.3);
 			color: $mid-light-grey;
 			font-size: $font-size-heading3;
-			padding: 16px 18px;
+			padding: $sapphire-sizes--medium 18px;
 			position: relative;
 			width: 100%;
 
@@ -551,7 +551,7 @@
 				}
 
 				&:before {
-					padding-left: 16px;
+					padding-left: $sapphire-sizes--medium;
 					padding-right: 0;
 				}
 			}

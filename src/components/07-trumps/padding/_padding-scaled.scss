@@ -1,4 +1,4 @@
-@each $size in $sapphire__sizes {
+@each $size in $sapphire-sizes {
 	$label: nth($size, 1);
 	$value: nth($size, 2);
 

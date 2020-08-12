@@ -16,7 +16,7 @@
 
 	.Card_Surgeries_Description {
 		display: table-cell;
-		padding: 0 16px;
+		padding: 0 $sapphire-sizes--medium;
 		vertical-align: middle;
 		width: 80%;
 
@@ -36,7 +36,7 @@
 		display: table-cell;
 		height: 100%;
 		min-width: 170px;
-		padding: 6px 16px;
+		padding: 6px $sapphire-sizes--medium;
 		vertical-align: middle;
 		white-space: nowrap;
 
@@ -97,7 +97,7 @@
 
 	.Card_Surgeries_Actions {
 		display: table-cell;
-		padding-right: 16px;
+		padding-right: $sapphire-sizes--medium;
 		text-align: right;
 		vertical-align: middle;
 	}
@@ -121,7 +121,7 @@
 	}
 
 	.Card_Surgeries_Actions {
-		padding-left: 16px;
+		padding-left: $sapphire-sizes--medium;
 		padding-right: 0;
 		text-align: left;
 	}
