@@ -145,7 +145,7 @@ $prescriptionRadius: 18px;
 		white-space: nowrap;
 
 		.IconBadgeClassification {
-			margin-right: 5px;
+			margin-right: $sapphire-sizes--xsmall;
 		}
 	}
 
@@ -254,7 +254,7 @@ $prescriptionRadius: 18px;
 	.FA,
 	.AR {
 		.IconBadgeClassification {
-			margin-left: 5px;
+			margin-left: $sapphire-sizes--xsmall;
 			margin-right: auto;
 		}
 
@@ -298,7 +298,7 @@ $prescriptionRadius: 18px;
 	}
 
 	&__Icon {
-		margin-right: 10px;
+		margin-right: $sapphire-sizes--xsmall;
 	}
 
 	&__Notification {
@@ -335,7 +335,7 @@ $prescriptionRadius: 18px;
 
 	.AR & {
 		&__Icon {
-			margin-left: 10px;
+			margin-left: $sapphire-sizes--xsmall;
 			margin-right: 0;
 		}
 
