@@ -266,6 +266,20 @@ $styleguide-main-content-padding: 50px;
 		}
 	}
 
+	&__ListButtons {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 32px;
+		padding: 10px 0;
+
+		div[ui='card-container'] {
+			align-items: center;
+			display: flex;
+			min-height: 65px;
+			white-space: nowrap;
+		}
+	}
+
 	&__DefaultSection {
 		border: 1px solid $light-grey;
 		border-radius: 1px;
@@ -346,6 +360,7 @@ $styleguide-main-content-padding: 50px;
 
 		div.SectionExpandable_headerCustom {
 			border-bottom: none;
+			border-radius: unset;
 			max-height: 40px;
 
 			.PlaceHolderTitle {
