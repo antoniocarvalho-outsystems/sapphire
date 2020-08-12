@@ -1,27 +1,27 @@
 @mixin default-button($bgColor: $regular-alpha, $fontSize: $font-size-normal) {
 	background-color: $bgColor;
 	border: 1px solid transparent;
-	border-radius: 1.286em;
+	border-radius: 100px;
 	color: $sapphire-white;
 	cursor: pointer;
 	display: inline-block;
 	font-family: $font-family-latin-bold;
 	font-size: $fontSize;
-	height: 2.571em;
+	height: 2.572em;
 	line-height: 2.4em;
 	min-width: 6.714em;
-	padding: 0 15px;
+	padding: 0 $sapphire-sizes--medium;
 	text-align: center;
 	text-decoration: none;
 	transition: all 0.1s ease-in-out;
 	white-space: nowrap;
 }
 
-@mixin disabled-button($bgColor: transparent) {
-	background-color: $bgColor;
+@mixin disabled-button($background: transparent, $color: $light-grey) {
+	background-color: $background;
 	background-image: none;
-	border: 1px solid $light-grey;
-	color: $light-grey;
+	border: 1px solid $border-color-disabled;
+	color: $color;
 	cursor: default;
 	pointer-events: none;
 	text-shadow: none;
@@ -65,25 +65,29 @@ a.Button.IsDefault,
 
 	&:disabled,
 	&[disabled] {
-		@include disabled-button();
+		@include disabled-button($light-grey, $regular-white);
 
 		cursor: not-allowed;
-
-		&:before {
-			color: $light-grey;
-		}
 	}
 
 	&.Second {
-		background-color: $mid-dark-grey;
+		background-color: $sapphire-white;
+		border: 1px solid $regular-alpha;
+		color: $regular-beta;
 
-		&:focus {
-			@include focus-shadow($mid-light-grey);
+		&:before {
+			color: $regular-beta;
 		}
 
 		&:active,
 		&:hover {
-			background-color: $regular-grey;
+			background-color: $regular-eta;
+			border: 1px solid $regular-epsilon;
+			color: $regular-alpha;
+		}
+
+		&:focus {
+			@include focus-shadow();
 		}
 
 		&:disabled,
@@ -93,10 +97,6 @@ a.Button.IsDefault,
 			&:before {
 				color: $light-grey;
 			}
-		}
-
-		&:before {
-			color: $sapphire-white;
 		}
 
 		&.SearchMagnifier {
@@ -129,23 +129,22 @@ a.Button.IsDefault,
 	&.Third,
 	&.Cancel {
 		background-color: $sapphire-white;
-		border: 1px solid $regular-alpha;
-		color: $regular-beta;
+		border: 1px solid $light-grey;
+		color: $dark-grey;
 
 		&:before {
-			color: $regular-beta;
-			font-size: $font-size-small;
+			color: $dark-grey;
 		}
 
 		&:active,
 		&:hover {
-			background-color: $regular-eta;
-			border: 1px solid $regular-epsilon;
-			color: $regular-alpha;
+			background-color: $light-grey;
+			border: 1px solid $light-grey;
+			color: $dark-grey;
 		}
 
 		&:focus {
-			@include focus-shadow();
+			@include focus-shadow($mid-light-grey);
 		}
 
 		&:disabled,
@@ -193,26 +192,22 @@ a.Button.IsDefault,
 	}
 
 	&.Small {
-		border-radius: 13px;
 		font-size: $font-size-small;
-		height: 26px;
-		line-height: 24px;
+		height: 30px;
+		line-height: 16px;
 		min-width: 76px;
-		padding: 0 12px;
+		padding: 6px 12px;
 	}
 
 	&.Big {
-		border-radius: $border-radius-medium;
 		font-size: $font-size-big;
-		height: 50px;
-		line-height: 44px;
+		height: unset;
+		line-height: 1.1;
 		min-width: 55px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: $sapphire-sizes--small $sapphire-sizes--large;
 	}
 
 	&.XBig {
-		border-radius: 10px;
 		box-sizing: border-box;
 		font-size: $font-size-heading1;
 		height: 50px;
@@ -257,10 +252,6 @@ a.Button.IsDefault,
 			box-shadow: inset 0 1px 0 rgba(255, 130, 0, 0.9), 0 2px 2px rgba(255, 130, 0, 0.9);
 		}
 	}
-}
-
-.Button.Icon {
-	min-width: inherit !important;
 }
 
 .AR.Page {
