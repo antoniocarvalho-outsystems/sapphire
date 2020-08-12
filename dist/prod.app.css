@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930011 || Generated: Wed Aug 12 2020 12:59:37 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930012 || Generated: Wed Aug 12 2020 14:21:31 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4458,14 +4458,14 @@ a.Button.ArrowDrop:before,
 
 .Heading3 {
   font-family: "LatoBold";
-  font-size: 1.143em;
+  font-size: 1.286em;
   font-weight: normal;
   line-height: 1.4; }
 
 .Heading4,
 .Heading5 {
   font-family: "LatoBold";
-  font-size: 1.071em;
+  font-size: 1.143em;
   font-weight: normal;
   line-height: 1.4; }
 
@@ -8428,7 +8428,7 @@ div.LineInfo {
     margin-right: 3px; }
   .Page .LineTimeLine____desktopIcon {
     color: #fff;
-    font-size: 1.071em; }
+    font-size: 1.143em; }
   .Page .LineTimeLine____desktopLabel {
     font-family: "LatoBold";
     font-size: 1.429em;
@@ -8726,7 +8726,7 @@ div.LineInfo {
 
 .AR .PatientInfo_right,
 .FA .PatientInfo_right {
-  font-size: 1.071em; }
+  font-size: 1.143em; }
   .AR .PatientInfo_right > div:first-child,
   .FA .PatientInfo_right > div:first-child {
     margin-right: 0; }
@@ -10784,7 +10784,7 @@ html .Page .PatientDetailsLayout {
     .LayoutPopup__header__text__title {
       margin-bottom: 5px; }
     .LayoutPopup__header__text__subtitle {
-      font-size: 1.143em;
+      font-size: 1.286em;
       line-height: 20px; }
   .LayoutPopup__intro {
     padding: 10px 30px; }
@@ -11647,7 +11647,7 @@ html body {
     color: #00ac94;
     content: '\e690';
     font-family: "Sapphire-Icon-Font";
-    font-size: 1.071em;
+    font-size: 1.143em;
     left: 1px;
     padding-right: 10px;
     pointer-events: none;
@@ -12302,7 +12302,7 @@ div.Feedback_Message_Info span.lasa-term {
     .LayoutBlank .BadgeClassification .IconBadgeClassification,
     .LayoutBase .BadgeClassification .IconBadgeClassification,
     .LayoutPopup .BadgeClassification .IconBadgeClassification {
-      margin-right: 5px; }
+      margin-right: 4px; }
   .DesignSystem .NumberCircle,
   .LayoutBlank .NumberCircle,
   .LayoutBase .NumberCircle,
@@ -12314,7 +12314,7 @@ div.Feedback_Message_Info span.lasa-term {
     color: #5c5c5c;
     display: -webkit-inline-box;
     display: inline-flex;
-    font-size: 1.143em;
+    font-size: 1.286em;
     height: 25px;
     -webkit-box-pack: center;
             justify-content: center;
@@ -12512,7 +12512,7 @@ div.Feedback_Message_Info span.lasa-term {
   .LayoutBase .AR .IconBadgeClassification,
   .LayoutPopup .FA .IconBadgeClassification,
   .LayoutPopup .AR .IconBadgeClassification {
-    margin-left: 5px;
+    margin-left: 4px;
     margin-right: auto; }
   .DesignSystem .FA .PrescriptionBadges,
   .DesignSystem .AR .PrescriptionBadges,
@@ -12576,7 +12576,7 @@ div.Feedback_Message_Info span.lasa-term {
   .BadgeCustom--autoHeight {
     max-height: unset; }
   .BadgeCustom__Icon {
-    margin-right: 10px; }
+    margin-right: 4px; }
   .BadgeCustom__Notification {
     position: absolute;
     right: 0;
@@ -12604,7 +12604,7 @@ div.Feedback_Message_Info span.lasa-term {
       top: -1px;
       width: 0; }
   .AR .BadgeCustom__Icon {
-    margin-left: 10px;
+    margin-left: 4px;
     margin-right: 0; }
   .AR .BadgeCustom__Notification {
     left: 0; }
@@ -14705,7 +14705,7 @@ body.PanelOpened .daterangepicker {
   cursor: pointer;
   display: block;
   font-family: "Sapphire-Icon-Font";
-  font-size: 1.143em;
+  font-size: 1.286em;
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-variant: normal;
@@ -19316,7 +19316,7 @@ body.confirmation-opened {
         content: '\00a0'; }
     .modalPopup.Open .modalPopup_content {
       color: #333333;
-      font-size: 1.143em;
+      font-size: 1.286em;
       height: 100%;
       margin-bottom: 20px;
       text-align: center; }
@@ -20878,7 +20878,7 @@ a .PersonCard {
   width: calc(100% / 7); }
 
 .CalendarWidget__days {
-  font-size: 1.143em;
+  font-size: 1.286em;
   width: 100%; }
   .CalendarWidget__days .Calendar_Past_Day {
     -webkit-box-align: center;
@@ -21817,7 +21817,7 @@ div.List-Star {
     border-top-right-radius: 23px;
     cursor: pointer;
     display: table-cell;
-    font-size: 1.143em;
+    font-size: 1.286em;
     padding: 0;
     vertical-align: middle;
     width: 248px; }
@@ -21930,7 +21930,7 @@ div.List-Star {
             background-color: transparent !important;
             border: 0;
             box-shadow: none;
-            font-size: 1.143em;
+            font-size: 1.286em;
             height: 100%;
             padding: 0 40px 0 67px;
             width: 95%; }
@@ -21979,7 +21979,7 @@ div.List-Star {
     .SearchSD .SearchSD_search .SearchSD__FavoriteCounter {
       color: #adadad;
       display: table-cell;
-      font-size: 1.143em;
+      font-size: 1.286em;
       vertical-align: middle;
       width: 30%; }
     .SearchSD .SearchSD_search .SearchSD__FavoriteActions {
@@ -22056,7 +22056,7 @@ div.List-Star {
       border-bottom: 1px solid #d6d6d6;
       color: #777777;
       display: block;
-      font-size: 1.143em;
+      font-size: 1.286em;
       height: 50px;
       line-height: 30px;
       padding: 10px; }
@@ -22075,7 +22075,7 @@ div.List-Star {
       background-color: #ffffff;
       color: rgba(0, 0, 0, 0.3);
       color: #adadad;
-      font-size: 1.143em;
+      font-size: 1.286em;
       padding: 16px 18px;
       position: relative;
       width: 100%; }
@@ -22095,7 +22095,7 @@ div.List-Star {
       width: 100%; }
       .SearchSD .SearchSD_content .SearchSD_showMore a {
         font-family: "LatoBold";
-        font-size: 1.143em; }
+        font-size: 1.286em; }
       .SearchSD .SearchSD_content .SearchSD_showMore > span {
         display: table-cell;
         height: 44px;
@@ -22427,7 +22427,7 @@ div.List-Star {
       background: transparent;
       border: none;
       box-shadow: none;
-      font-size: 1.143em;
+      font-size: 1.286em;
       height: 100%;
       padding: 0 50px;
       width: 100%; }
@@ -22475,7 +22475,7 @@ div.List-Star {
         border: 1px solid #d6d6d6;
         border-radius: 50%;
         color: #00ac94;
-        font-size: 1.143em;
+        font-size: 1.286em;
         height: 28px;
         line-height: 28px;
         width: 28px; }
@@ -22551,7 +22551,7 @@ div.List-Star {
   .SSD-List .SSD_ListRecords .LineHeader .Label {
     border-radius: 0;
     color: #333333;
-    font-size: 1.143em;
+    font-size: 1.286em;
     padding: 5px 16px;
     width: 100%; }
   .SSD-List .SSD_ListRecords .LineHeader .ExpandControl {
@@ -22796,7 +22796,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       vertical-align: middle; }
   .SectionExpandableInside .ExapandablePlaceholder {
     color: #333333;
-    font-size: 1.071em;
+    font-size: 1.143em;
     margin-right: 10px; }
     .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon {
       -webkit-transform: rotate(90deg);
@@ -23174,7 +23174,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     color: #adadad;
     content: '\e690';
     font-family: "Sapphire-Icon-Font";
-    font-size: 1.143em;
+    font-size: 1.286em;
     position: absolute;
     right: 22px;
     top: 12px;
@@ -24594,7 +24594,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .ISidebar-user-logout a {
     color: #d6d6d6;
     cursor: pointer;
-    font-size: 1.143em;
+    font-size: 1.286em;
     height: 30px;
     margin: 0;
     text-align: right;
@@ -28458,7 +28458,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .DescriptionContainer {
   font-family: "LatoBold";
-  font-size: 1.143em;
+  font-size: 1.286em;
   line-height: 18px;
   padding-left: 10px;
   text-align: left; }

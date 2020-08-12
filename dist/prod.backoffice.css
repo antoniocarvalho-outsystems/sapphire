@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.930011 || Generated: Wed Aug 12 2020 12:59:37 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.930012 || Generated: Wed Aug 12 2020 14:21:31 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -2569,14 +2569,14 @@ a.Button.ArrowDrop:before {
 
 .Heading3 {
   font-family: "LatoBold";
-  font-size: 1.143em;
+  font-size: 1.286em;
   font-weight: normal;
   line-height: 1.4; }
 
 .Heading4,
 .Heading5 {
   font-family: "LatoBold";
-  font-size: 1.071em;
+  font-size: 1.143em;
   font-weight: normal;
   line-height: 1.4; }
 
@@ -3942,7 +3942,7 @@ body.PanelOpened .daterangepicker {
   cursor: pointer;
   display: block;
   font-family: "Sapphire-Icon-Font";
-  font-size: 1.143em;
+  font-size: 1.286em;
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-variant: normal;
@@ -4348,7 +4348,7 @@ body.confirmation-opened {
         content: '\00a0'; }
     .modalPopup.Open .modalPopup_content {
       color: #333333;
-      font-size: 1.143em;
+      font-size: 1.286em;
       height: 100%;
       margin-bottom: 20px;
       text-align: center; }
@@ -4685,7 +4685,7 @@ body.PanelById.PanelOpened {
     color: #adadad;
     content: '\e690';
     font-family: "Sapphire-Icon-Font";
-    font-size: 1.143em;
+    font-size: 1.286em;
     position: absolute;
     right: 22px;
     top: 12px;
