@@ -1,67 +1,112 @@
-$NavigationControl-color-active: $regular-alpha;
-$NavigationControl-color-hover: $regular-zeta;
+.navigation-control {
+	&.IsAttached {
+		.navigation-control-item {
+			&:first-of-type a {
+				border-bottom-right-radius: 0;
+				border-top-right-radius: 0;
+			}
 
-.Vertical .navigation-control-item,
-.navigation-control-item:first-child {
-	border-radius: $border-radius-default;
-}
+			&:last-of-type {
+				margin: 0;
 
-.navigation-control-item {
-	border: solid 1px $NavigationControl-color-active;
-	border-radius: $border-radius-default;
-	color: $NavigationControl-color-active;
-	display: inline-block;
-	font-size: 1.09rem;
-	height: 2.733333rem;
-	height: 100%;
-	height: 2.834rem;
-	line-height: 100%;
-	min-height: 2.7333333339rem;
-	overflow: hidden;
-	position: relative;
-	vertical-align: top;
+				a {
+					border-bottom-left-radius: 0;
+					border-left-color: transparent;
+					border-top-left-radius: 0;
 
-	a {
-		color: $NavigationControl-color-active;
+					&:hover,
+					&:focus {
+						border-left-color: $regular-alpha;
+					}
+				}
+			}
+		}
 	}
 
-	&--disabled {
-		border-color: $border-color-disabled;
-		pointer-events: none;
+	.navigation-control-item {
+		display: inline-flex;
+		height: 2.572em;
+		line-height: 100%;
+		overflow: hidden;
+		position: relative;
+		vertical-align: top;
+		width: 2.572em;
+
+		&--disabled {
+			pointer-events: none;
+
+			a:link,
+			a:visited {
+				border-color: $border-color-disabled;
+				color: $light-grey;
+
+				&:hover,
+				&:focus {
+					background-color: transparent;
+					border-color: $border-color-disabled;
+				}
+			}
+		}
+
+		&:last-of-type {
+			margin-left: $sapphire-sizes--small;
+		}
 
 		a {
-			color: $text-color-disabled;
+			background-color: $regular-white;
+			border: 1px solid $light-grey;
+			border-radius: $border-radius-default;
+			transition: all 0.1s ease-in-out;
+			width: 100%;
+
+			&:hover,
+			&:focus {
+				background-color: $regular-eta;
+				border-color: $regular-alpha;
+			}
+		}
+
+		label {
+			cursor: pointer;
+			display: inline-block;
+			height: 2.572em;
+			text-align: center;
+			width: 2.572em;
+
+			> div.OSInline {
+				@include flex-center-total;
+
+				height: 100%;
+				width: 100%;
+			}
 		}
 	}
 }
 
-.navigation-control-item:last-of-type {
-	margin-left: 10px;
+.AR,
+.FA {
+	.navigation-control {
+		&.IsAttached {
+			.navigation-control-item {
+				&:last-of-type {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+
+		.navigation-control-item {
+			transform: scale(-1, 1);
+
+			&:last-of-type {
+				margin-left: 0;
+				margin-right: $sapphire-sizes--small;
+			}
+		}
+	}
 }
 
-.AR .navigation-control-item:last-of-type {
-	margin-left: 0;
-	margin-right: 10px;
-}
-
-.navigation-control-item label {
-	background-color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	height: 2.834rem;
-	line-height: 2.834rem;
-	padding: 0 0.8rem;
-	text-align: center;
-	width: 100%;
-}
-
-.navigation-control-item label div.MultiMarginLeft5 {
-	display: none;
-}
-
-.navigation-control-item label:hover {
-	background-color: $regular-eta;
-}
+// MultiControl?
 
 .multi-control-item {
 	border-bottom: solid 1px #11455d;
@@ -162,51 +207,4 @@ $NavigationControl-color-hover: $regular-zeta;
 	background: $background-disabled;
 	color: $text-color-disabled;
 	cursor: default;
-}
-
-/*IsAtached*/
-.navigation-control.IsAttached .navigation-control-item label {
-	align-items: center;
-	background-color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	display: flex;
-	height: 2.834rem;
-	line-height: unset;
-	padding: 0 0.8rem;
-	padding: 10px 20px;
-	text-align: center;
-	width: 100%;
-}
-
-.navigation-control.IsAttached .navigation-control-item:first-of-type {
-	border-bottom-right-radius: 0;
-	border-top-right-radius: 0;
-}
-
-.navigation-control.IsAttached .navigation-control-item:last-of-type {
-	border-bottom-left-radius: 0;
-	border-left: none;
-	border-top-left-radius: 0;
-	margin-left: 0;
-}
-
-.navigation-control.IsAttached .navigation-control-item label:hover {
-	background-color: $NavigationControl-color-hover;
-}
-
-.FA .navigation-control.IsAttached .navigation-control-item:last-of-type,
-.AR .navigation-control.IsAttached .navigation-control-item:last-of-type {
-	margin-left: 0;
-	margin-right: 0;
-}
-
-.AR .navigation-control {
-	transform: rotate(180deg);
-}
-
-.AR .navigation-control-item,
-.FA .navigation-control-item {
-	cursor: pointer;
-	transform: scale(-1, 1);
 }

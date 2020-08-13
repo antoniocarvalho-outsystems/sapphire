@@ -134,4 +134,28 @@
 			border-top-right-radius: 0;
 		}
 	}
+
+	.ButtonGroupFilters {
+		.ButtonGroup {
+			.ButtonGroup_button {
+				&:first-of-type {
+					border-radius: 0 100px 100px 0;
+				}
+
+				&:last-of-type {
+					border-radius: 100px 0 0 100px;
+				}
+
+				&.Button.active {
+					border-radius: 100px;
+					margin-left: -12px;
+					margin-right: -12px;
+
+					&:first-child {
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+	}
 }
