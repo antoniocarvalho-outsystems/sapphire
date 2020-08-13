@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930018 || Generated: Thu Aug 13 2020 15:43:14 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930019 || Generated: Thu Aug 13 2020 18:09:20 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11350,6 +11350,23 @@ html body {
     border-top-left-radius: 4px;
     border-top-right-radius: 0; }
 
+.AR .ButtonGroupFilters .ButtonGroup .ButtonGroup_button:first-of-type,
+.FA .ButtonGroupFilters .ButtonGroup .ButtonGroup_button:first-of-type {
+  border-radius: 0 100px 100px 0; }
+
+.AR .ButtonGroupFilters .ButtonGroup .ButtonGroup_button:last-of-type,
+.FA .ButtonGroupFilters .ButtonGroup .ButtonGroup_button:last-of-type {
+  border-radius: 100px 0 0 100px; }
+
+.AR .ButtonGroupFilters .ButtonGroup .ButtonGroup_button.Button.active,
+.FA .ButtonGroupFilters .ButtonGroup .ButtonGroup_button.Button.active {
+  border-radius: 100px;
+  margin-left: -12px;
+  margin-right: -12px; }
+  .AR .ButtonGroupFilters .ButtonGroup .ButtonGroup_button.Button.active:first-child,
+  .FA .ButtonGroupFilters .ButtonGroup .ButtonGroup_button.Button.active:first-child {
+    margin-right: 0px; }
+
 .Columns2 > .Column {
   padding-left: 24px;
   padding-right: 24px; }
@@ -18982,54 +18999,80 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       .ButtonCheckboxInp .MultipleSelectionButton-label:hover + .ButtonCheckboxInput_CheckBox input[type='checkbox']::before {
         border: 1px solid #00bfa5; }
 
-.Vertical .navigation-control-item,
-.navigation-control-item:first-child {
-  border-radius: 4px; }
+.navigation-control.IsAttached .navigation-control-item:first-of-type a {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0; }
 
-.navigation-control-item {
-  border: solid 1px #00bfa5;
-  border-radius: 4px;
-  color: #00bfa5;
-  display: inline-block;
-  font-size: 1.09rem;
-  height: 2.733333rem;
-  height: 100%;
-  height: 2.834rem;
+.navigation-control.IsAttached .navigation-control-item:last-of-type {
+  margin: 0; }
+  .navigation-control.IsAttached .navigation-control-item:last-of-type a {
+    border-bottom-left-radius: 0;
+    border-left-color: transparent;
+    border-top-left-radius: 0; }
+    .navigation-control.IsAttached .navigation-control-item:last-of-type a:hover, .navigation-control.IsAttached .navigation-control-item:last-of-type a:focus {
+      border-left-color: #00bfa5; }
+
+.navigation-control .navigation-control-item {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  height: 2.572em;
   line-height: 100%;
-  min-height: 2.7333333339rem;
   overflow: hidden;
   position: relative;
-  vertical-align: top; }
-  .navigation-control-item a {
-    color: #00bfa5; }
-  .navigation-control-item--disabled {
-    border-color: #d6d6d6;
+  vertical-align: top;
+  width: 2.572em; }
+  .navigation-control .navigation-control-item--disabled {
     pointer-events: none; }
-    .navigation-control-item--disabled a {
-      color: #777777; }
+    .navigation-control .navigation-control-item--disabled a:link,
+    .navigation-control .navigation-control-item--disabled a:visited {
+      border-color: #d6d6d6;
+      color: #d6d6d6; }
+      .navigation-control .navigation-control-item--disabled a:link:hover, .navigation-control .navigation-control-item--disabled a:link:focus,
+      .navigation-control .navigation-control-item--disabled a:visited:hover,
+      .navigation-control .navigation-control-item--disabled a:visited:focus {
+        background-color: transparent;
+        border-color: #d6d6d6; }
+  .navigation-control .navigation-control-item:last-of-type {
+    margin-left: 8px; }
+  .navigation-control .navigation-control-item a {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    width: 100%; }
+    .navigation-control .navigation-control-item a:hover, .navigation-control .navigation-control-item a:focus {
+      background-color: #f2fffd;
+      border-color: #00bfa5; }
+  .navigation-control .navigation-control-item label {
+    cursor: pointer;
+    display: inline-block;
+    height: 2.572em;
+    text-align: center;
+    width: 2.572em; }
+    .navigation-control .navigation-control-item label > div.OSInline {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      height: 100%;
+      width: 100%; }
 
-.navigation-control-item:last-of-type {
-  margin-left: 10px; }
-
-.AR .navigation-control-item:last-of-type {
+.AR .navigation-control.IsAttached .navigation-control-item:last-of-type,
+.FA .navigation-control.IsAttached .navigation-control-item:last-of-type {
   margin-left: 0;
-  margin-right: 10px; }
+  margin-right: 0; }
 
-.navigation-control-item label {
-  background-color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  height: 2.834rem;
-  line-height: 2.834rem;
-  padding: 0 0.8rem;
-  text-align: center;
-  width: 100%; }
-
-.navigation-control-item label div.MultiMarginLeft5 {
-  display: none; }
-
-.navigation-control-item label:hover {
-  background-color: #f2fffd; }
+.AR .navigation-control .navigation-control-item,
+.FA .navigation-control .navigation-control-item {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
+  .AR .navigation-control .navigation-control-item:last-of-type,
+  .FA .navigation-control .navigation-control-item:last-of-type {
+    margin-left: 0;
+    margin-right: 8px; }
 
 .multi-control-item {
   border-bottom: solid 1px #11455d;
@@ -19118,50 +19161,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   background: #ebebeb;
   color: #777777;
   cursor: default; }
-
-/*IsAtached*/
-.navigation-control.IsAttached .navigation-control-item label {
-  -webkit-box-align: center;
-          align-items: center;
-  background-color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  display: -webkit-box;
-  display: flex;
-  height: 2.834rem;
-  line-height: unset;
-  padding: 0 0.8rem;
-  padding: 10px 20px;
-  text-align: center;
-  width: 100%; }
-
-.navigation-control.IsAttached .navigation-control-item:first-of-type {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0; }
-
-.navigation-control.IsAttached .navigation-control-item:last-of-type {
-  border-bottom-left-radius: 0;
-  border-left: none;
-  border-top-left-radius: 0;
-  margin-left: 0; }
-
-.navigation-control.IsAttached .navigation-control-item label:hover {
-  background-color: #c4f0eb; }
-
-.FA .navigation-control.IsAttached .navigation-control-item:last-of-type,
-.AR .navigation-control.IsAttached .navigation-control-item:last-of-type {
-  margin-left: 0;
-  margin-right: 0; }
-
-.AR .navigation-control {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
-
-.AR .navigation-control-item,
-.FA .navigation-control-item {
-  cursor: pointer;
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1); }
 
 .Panel.ConfirmWB {
   display: none;
