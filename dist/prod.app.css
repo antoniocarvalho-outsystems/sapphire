@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.0.930009 || Generated: Tue Aug 11 2020 10:51:10 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.0.930010 || Generated: Thu Aug 13 2020 10:54:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16368,8 +16368,7 @@ div.Toolbar {
   right: auto; }
 
 .HourPicker {
-  font-size: 1em;
-  /* RTL Adjustments - HourPicker */ }
+  font-size: 1em; }
   .HourPicker:not(.HourPicker--textTrigger) .HourPicker__InputContainer:before {
     color: #00bfa5;
     content: '\e62a';
@@ -16425,9 +16424,12 @@ div.Toolbar {
       display: inline-block;
       -webkit-transform: rotateZ(45deg);
               transform: rotateZ(45deg); }
-  .AR .HourPicker:before {
-    left: 9px;
-    right: auto; }
+
+/* RTL Adjustments - HourPicker */
+.AR .HourPicker  .HourPicker__InputContainer:before,
+.FA .HourPicker  .HourPicker__InputContainer:before {
+  left: 10px;
+  right: auto; }
 
 /* UI TimePicker CSS - HourPicker */
 div.ui-timepicker-container {
@@ -27347,14 +27349,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   max-width: 105px;
   padding: 5px 10px;
   padding-top: 5px; }
-
-.PatientDetailsLayout .PersonCard__content.PH a,
-.PatientDetailsLayout .PersonCard__content.PH .DoubleText,
-.PatientDetailsLayout .PersonCard__content.PH .Text_Note,
-.PatientDetailsLayout .PersonCard____title a,
-.PatientDetailsLayout .PersonCard____title .DoubleText,
-.PatientDetailsLayout .PersonCard____title .Text_Note {
-  color: #adadad; }
 
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title a,
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title .DoubleText,
