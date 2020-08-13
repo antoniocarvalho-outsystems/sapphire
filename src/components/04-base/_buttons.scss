@@ -67,6 +67,7 @@ a.Button.IsDefault,
 	&[disabled] {
 		@include disabled-button($light-grey, $regular-white);
 
+		box-shadow: none;
 		cursor: not-allowed;
 	}
 
@@ -93,6 +94,8 @@ a.Button.IsDefault,
 		&:disabled,
 		&[disabled] {
 			@include disabled-button();
+
+			box-shadow: none;
 
 			&:before {
 				color: $light-grey;
@@ -138,7 +141,7 @@ a.Button.IsDefault,
 
 		&:active,
 		&:hover {
-			background-color: $light-grey;
+			background-color: $sapphire-light;
 			border: 1px solid $light-grey;
 			color: $dark-grey;
 		}
@@ -150,6 +153,8 @@ a.Button.IsDefault,
 		&:disabled,
 		&[disabled] {
 			@include disabled-button();
+
+			box-shadow: none;
 
 			&:before {
 				color: $light-grey;
