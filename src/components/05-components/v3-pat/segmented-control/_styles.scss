@@ -85,7 +85,7 @@
 			display: block;
 			line-height: 34px;
 			min-width: 54px;
-			padding: 0 15px;
+			padding: 0 $sapphire-sizes--medium;
 			text-align: center;
 			transition: all 0.1s ease-in-out;
 			width: 100%;
@@ -108,6 +108,7 @@
 			background-color: $regular-alpha;
 			border: 1px solid $regular-alpha;
 			color: $regular-white;
+			font-family: $font-family-latin-bold;
 		}
 
 		> input:disabled ~ label,
