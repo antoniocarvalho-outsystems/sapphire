@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.930015 || Generated: Thu Aug 13 2020 10:51:11 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.1.930016 || Generated: Thu Aug 13 2020 11:21:39 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -380,7 +380,7 @@ eval("(function () {\r\n\r\n  class InputWithClear {\r\n\r\n    constructor(conf
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component LineAdd */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = function(config) {\r\n\t\t$(window).load(function() {\r\n\t\t\tsetWidth(config.widgetId);\r\n\r\n\t\t\tosAjaxBackend.BindAfterAjaxRequest(() => setWidth(config.widgetId));\r\n\t\t});\r\n\r\n\t\t$(window).on('resize.LineAdd', () => setWidth(config.widgetId));\r\n\t};\r\n\r\n\tconst setWidth = function(widgetId) {\r\n\t\twindow.setTimeout(function() {\r\n\t\t\tconst $widget = $(`#${widgetId}`);\r\n\t\t\tconst widths = [];\r\n\r\n\t\t\tfor (i = 1; i < 8; i++) {\r\n\t\t\t\tlet maxWidthContent = Math.max.apply(\r\n\t\t\t\t\tnull,\r\n\t\t\t\t\t$widget\r\n\t\t\t\t\t\t.find('.lacol' + i)\r\n\t\t\t\t\t\t.map(function() {\r\n\t\t\t\t\t\t\treturn $(this).width();\r\n\t\t\t\t\t\t})\r\n\t\t\t\t\t\t.get()\r\n\t\t\t\t);\r\n\r\n\t\t\t\twidths.push(maxWidthContent);\r\n\t\t\t\t$widget.find('.lacol' + i).width(maxWidthContent);\r\n\t\t\t}\r\n\t\t}, 100);\r\n\t};\r\n\r\n\tSapphireWidgets.LineAdd = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/line-add/scripts.js?");
+eval("/* Component LineAdd */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = function(config) {\r\n\t\t$(window).load(function() {\r\n\t\t\tsetWidth(config.widgetId);\r\n\t\t\tSapphireWidgets.LineAdd.widgetId = config.widgetId;\r\n\r\n\t\t\tosAjaxBackend.BindAfterAjaxRequest(() => setWidth(config.widgetId));\r\n\t\t});\r\n\r\n\t\t$(window).on('resize.LineAdd', () => setWidth(config.widgetId));\r\n\t};\r\n\r\n\tconst setWidth = function(widgetId) {\r\n\t\twindow.setTimeout(function() {\r\n\t\t\tconst $widget = $(`#${widgetId || SapphireWidgets.LineAdd.widgetId}`);\r\n\t\t\tconst widths = [];\r\n\r\n\t\t\tfor (i = 1; i < 8; i++) {\r\n\t\t\t\tlet maxWidthContent = Math.max.apply(\r\n\t\t\t\t\tnull,\r\n\t\t\t\t\t$widget\r\n\t\t\t\t\t\t.find('.lacol' + i)\r\n\t\t\t\t\t\t.map(function() {\r\n\t\t\t\t\t\t\treturn $(this).width();\r\n\t\t\t\t\t\t})\r\n\t\t\t\t\t\t.get()\r\n\t\t\t\t);\r\n\r\n\t\t\t\twidths.push(maxWidthContent);\r\n\t\t\t\t$widget.find('.lacol' + i).width(maxWidthContent);\r\n\t\t\t}\r\n\t\t}, 100);\r\n\t};\r\n\r\n\tSapphireWidgets.LineAdd = { create, setWidth };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/line-add/scripts.js?");
 
 /***/ }),
 
