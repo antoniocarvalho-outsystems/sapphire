@@ -3,6 +3,7 @@
 	const create = function(config) {
 		$(window).load(function() {
 			setWidth(config.widgetId);
+			SapphireWidgets.LineAdd.widgetId = config.widgetId;
 
 			osAjaxBackend.BindAfterAjaxRequest(() => setWidth(config.widgetId));
 		});
@@ -12,7 +13,7 @@
 
 	const setWidth = function(widgetId) {
 		window.setTimeout(function() {
-			const $widget = $(`#${widgetId}`);
+			const $widget = $(`#${widgetId || SapphireWidgets.LineAdd.widgetId}`);
 			const widths = [];
 
 			for (i = 1; i < 8; i++) {
@@ -32,5 +33,5 @@
 		}, 100);
 	};
 
-	SapphireWidgets.LineAdd = { create };
+	SapphireWidgets.LineAdd = { create, setWidth };
 })(jQuery, window, SapphireWidgets);
