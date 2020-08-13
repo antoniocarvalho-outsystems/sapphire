@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.930014 || Generated: Wed Aug 12 2020 17:48:59 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.930015 || Generated: Thu Aug 13 2020 10:51:11 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3977,8 +3977,7 @@ body.PanelOpened .daterangepicker {
   width: 100%; }
 
 .HourPicker {
-  font-size: 1em;
-  /* RTL Adjustments - HourPicker */ }
+  font-size: 1em; }
   .HourPicker:not(.HourPicker--textTrigger) .HourPicker__InputContainer:before {
     color: #00bfa5;
     content: '\e62a';
@@ -4033,9 +4032,12 @@ body.PanelOpened .daterangepicker {
       display: inline-block;
       -webkit-transform: rotateZ(45deg);
               transform: rotateZ(45deg); }
-  .AR .HourPicker:before {
-    left: 9px;
-    right: auto; }
+
+/* RTL Adjustments - HourPicker */
+.AR .HourPicker  .HourPicker__InputContainer:before,
+.FA .HourPicker  .HourPicker__InputContainer:before {
+  left: 10px;
+  right: auto; }
 
 /* UI TimePicker CSS - HourPicker */
 div.ui-timepicker-container {
