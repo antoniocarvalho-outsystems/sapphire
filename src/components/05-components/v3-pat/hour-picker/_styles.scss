@@ -70,11 +70,16 @@
 			transform: rotateZ(45deg);
 		}
 	}
+}
 
-	/* RTL Adjustments - HourPicker */
-	.AR &:before {
-		left: 9px;
-		right: auto;
+/* RTL Adjustments - HourPicker */
+.AR,
+.FA {
+	.HourPicker {
+		&:not(&--textTrigger) .HourPicker__InputContainer:before {
+			left: 10px;
+			right: auto;
+		}
 	}
 }
 

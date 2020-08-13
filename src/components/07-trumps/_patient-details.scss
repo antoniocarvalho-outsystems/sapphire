@@ -1,21 +1,7 @@
-.PatientDetailsLayout {
-
-  .PersonCard__content.PH,
-  .PersonCard____title {
-
-    a,
-    .DoubleText,
-    .Text_Note {
-      color: $mid-light-grey;
-    }
-  }
-}
-
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title {
-
-  a,
-  .DoubleText,
-  .Text_Note {
-    color: $mid-light-grey;
-  }
+	a,
+	.DoubleText,
+	.Text_Note {
+		color: $mid-light-grey;
+	}
 }
