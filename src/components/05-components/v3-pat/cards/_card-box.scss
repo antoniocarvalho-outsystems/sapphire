@@ -128,6 +128,7 @@
 
 	&.Selected {
 		box-shadow: inset 0 0 10px $regular-epsilon !important;
+
 		.CardCount {
 			color: $regular-white;
 		}
@@ -175,6 +176,58 @@
 		color: $regular-grey;
 		font-size: 1.143em;
 		text-align: center;
+	}
+}
+
+.CardBoxFilters {
+	border: 1px solid $light-grey;
+	border-radius: 100px;
+	display: inline-flex;
+	gap: 1px;
+	height: 36px;
+	overflow: hidden;
+
+	.CardBox {
+		border-radius: 100px;
+		box-shadow: none;
+		display: flex;
+		flex-direction: row;
+		min-height: 36px;
+		padding: 6px $sapphire-sizes--medium;
+		width: auto;
+
+		&.CardSmall.Selected,
+		&.CardMedium.Selected {
+			background-color: $mid-dark-grey;
+			box-shadow: none !important;
+
+			.CardCount {
+				color: $regular-white;
+				font-size: 1.286em;
+			}
+
+			.BottomCardDescription {
+				color: $regular-white;
+				font-size: 1em;
+			}
+		}
+
+		&:hover {
+			background-color: $sapphire-light;
+		}
+
+		.CardCount {
+			color: $dark-grey;
+			font-size: 1.286em;
+			line-height: 20px;
+			margin-right: $sapphire-sizes--xsmall;
+		}
+
+		.BottomCardDescription {
+			color: $dark-grey;
+			font-size: 1em;
+			line-height: 22px;
+		}
 	}
 }
 
