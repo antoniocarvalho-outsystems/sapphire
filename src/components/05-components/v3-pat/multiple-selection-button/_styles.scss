@@ -1,6 +1,5 @@
 .ButtonCheckboxInp {
-	height: 34px;
-	margin-right: 6px;
+	margin-right: $sapphire-sizes--small;
 	padding: 0;
 	position: relative;
 
@@ -49,9 +48,9 @@
 	}
 
 	.ButtonCheckboxInput_CheckBox {
-		left: 8px;
+		left: 6px;
 		position: absolute;
-		top: 6px;
+		top: 7px;
 
 		input[type='checkbox'] {
 			margin: 0;
@@ -67,7 +66,9 @@
 		cursor: pointer;
 		display: block;
 		font-size: 1em;
-		padding: 6px 10px 6px 35px;
+		height: 36px;
+		line-height: 36px;
+		padding: 0 10px 0 32px;
 		transition: all 0.1s ease-in-out;
 
 		&:hover {
@@ -77,6 +78,20 @@
 			+ .ButtonCheckboxInput_CheckBox input[type='checkbox']::before {
 				border: 1px solid $regular-alpha;
 			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.ButtonCheckboxInp {
+		.ButtonCheckboxInput_CheckBox {
+			left: auto;
+			right: 6px;
+		}
+
+		.MultipleSelectionButton-label {
+			padding: 0 32px 0 10px;
 		}
 	}
 }

@@ -1,24 +1,8 @@
 .navigation-control {
 	&.IsAttached {
 		.navigation-control-item {
-			&:first-of-type a {
-				border-bottom-right-radius: 0;
-				border-top-right-radius: 0;
-			}
-
 			&:last-of-type {
 				margin: 0;
-
-				a {
-					border-bottom-left-radius: 0;
-					border-left-color: transparent;
-					border-top-left-radius: 0;
-
-					&:hover,
-					&:focus {
-						border-left-color: $regular-alpha;
-					}
-				}
 			}
 		}
 	}
@@ -55,29 +39,26 @@
 		a {
 			background-color: $regular-white;
 			border: 1px solid $light-grey;
-			border-radius: $border-radius-default;
+			border-radius: 100px;
+			color: $dark-grey;
+
 			transition: all 0.1s ease-in-out;
 			width: 100%;
 
 			&:hover,
 			&:focus {
-				background-color: $regular-eta;
-				border-color: $regular-alpha;
+				background-color: $sapphire-light;
 			}
 		}
 
 		label {
+			@include flex-center-total;
+
 			cursor: pointer;
-			display: inline-block;
-			height: 2.572em;
-			text-align: center;
-			width: 2.572em;
+			height: 100%;
 
-			> div.OSInline {
-				@include flex-center-total;
-
-				height: 100%;
-				width: 100%;
+			> div.MultiMarginLeft5 {
+				display: none;
 			}
 		}
 	}
@@ -89,8 +70,7 @@
 		&.IsAttached {
 			.navigation-control-item {
 				&:last-of-type {
-					margin-left: 0;
-					margin-right: 0;
+					margin: 0;
 				}
 			}
 		}
