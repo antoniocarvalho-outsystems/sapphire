@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930022 || Generated: Fri Aug 14 2020 16:54:13 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930023 || Generated: Fri Aug 14 2020 18:05:47 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11312,6 +11312,9 @@ html body {
 .ButtonGroupFilters .ButtonGroup {
   border: 1px solid #d6d6d6;
   border-radius: 100px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  gap: 1px;
   width: auto; }
   .ButtonGroupFilters .ButtonGroup_button.Button {
     border: none;
@@ -13057,6 +13060,46 @@ div.Feedback_Message_Info span.lasa-term {
     color: #777777;
     font-size: 1.143em;
     text-align: center; }
+
+.CardBoxFilters {
+  border: 1px solid #d6d6d6;
+  border-radius: 100px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  gap: 1px;
+  height: 36px;
+  overflow: hidden; }
+  .CardBoxFilters .CardBox {
+    border-radius: 100px;
+    box-shadow: none;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    min-height: 36px;
+    padding: 6px 16px;
+    width: auto; }
+    .CardBoxFilters .CardBox.CardSmall.Selected, .CardBoxFilters .CardBox.CardMedium.Selected {
+      background-color: #5c5c5c;
+      box-shadow: none !important; }
+      .CardBoxFilters .CardBox.CardSmall.Selected .CardCount, .CardBoxFilters .CardBox.CardMedium.Selected .CardCount {
+        color: #fff;
+        font-size: 1.286em; }
+      .CardBoxFilters .CardBox.CardSmall.Selected .BottomCardDescription, .CardBoxFilters .CardBox.CardMedium.Selected .BottomCardDescription {
+        color: #fff;
+        font-size: 1em; }
+    .CardBoxFilters .CardBox:hover {
+      background-color: #ebebeb; }
+    .CardBoxFilters .CardBox .CardCount {
+      color: #333333;
+      font-size: 1.286em;
+      line-height: 20px;
+      margin-right: 4px; }
+    .CardBoxFilters .CardBox .BottomCardDescription {
+      color: #333333;
+      font-size: 1em;
+      line-height: 22px; }
 
 .AR .CardBox .Info,
 .FA .CardBox .Info {
