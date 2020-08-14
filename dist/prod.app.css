@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930020 || Generated: Fri Aug 14 2020 12:55:25 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930021 || Generated: Fri Aug 14 2020 14:43:13 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -5006,7 +5006,7 @@ a.Button.IsDefault,
   font-family: "LatoBold";
   font-size: 1em;
   height: 2.572em;
-  line-height: 2.4em;
+  line-height: 2.572em;
   min-width: 6.714em;
   padding: 0 16px;
   text-align: center;
@@ -6604,9 +6604,9 @@ a.Button.IsDefault,
   .DropZoneContainer .row .PanelOpened .Is_Default.Small.Button {
     font-size: 0.857em;
     height: 30px;
-    line-height: 16px;
+    line-height: 30px;
     min-width: 76px;
-    padding: 6px 12px; }
+    padding: 0 12px; }
   .desktop input.Button.Is_Default.Big,
   .desktop input.Button.Big,
   .desktop input.Button.ButtonDefault.Big,
@@ -6638,7 +6638,7 @@ a.Button.IsDefault,
   .DropZoneContainer .row .PanelOpened .Is_Default.Big.Button {
     font-size: 2.143em;
     height: unset;
-    line-height: 1.1;
+    line-height: 1.2;
     min-width: 55px;
     padding: 8px 24px; }
   .desktop input.Button.Is_Default.XBig,
@@ -18947,8 +18947,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   padding-right: 15px; }
 
 .ButtonCheckboxInp {
-  height: 34px;
-  margin-right: 6px;
+  margin-right: 8px;
   padding: 0;
   position: relative; }
   .ButtonCheckboxInp.isFullWidth {
@@ -18975,9 +18974,9 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     pointer-events: none;
     white-space: nowrap; }
   .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
-    left: 8px;
+    left: 6px;
     position: absolute;
-    top: 6px; }
+    top: 7px; }
     .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox input[type='checkbox'] {
       margin: 0;
       -webkit-transition: all 0.1s ease-in-out;
@@ -18990,7 +18989,9 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     cursor: pointer;
     display: block;
     font-size: 1em;
-    padding: 6px 10px 6px 35px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px 0 32px;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out; }
     .ButtonCheckboxInp .MultipleSelectionButton-label:hover {
@@ -18999,18 +19000,17 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       .ButtonCheckboxInp .MultipleSelectionButton-label:hover + .ButtonCheckboxInput_CheckBox input[type='checkbox']::before {
         border: 1px solid #00bfa5; }
 
-.navigation-control.IsAttached .navigation-control-item:first-of-type a {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0; }
+.AR .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox,
+.FA .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
+  left: auto;
+  right: 6px; }
+
+.AR .ButtonCheckboxInp .MultipleSelectionButton-label,
+.FA .ButtonCheckboxInp .MultipleSelectionButton-label {
+  padding: 0 32px 0 10px; }
 
 .navigation-control.IsAttached .navigation-control-item:last-of-type {
   margin: 0; }
-  .navigation-control.IsAttached .navigation-control-item:last-of-type a {
-    border-bottom-left-radius: 0;
-    border-left-color: transparent;
-    border-top-left-radius: 0; }
-    .navigation-control.IsAttached .navigation-control-item:last-of-type a:hover, .navigation-control.IsAttached .navigation-control-item:last-of-type a:focus {
-      border-left-color: #00bfa5; }
 
 .navigation-control .navigation-control-item {
   display: -webkit-inline-box;
@@ -19037,33 +19037,28 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .navigation-control .navigation-control-item a {
     background-color: #fff;
     border: 1px solid #d6d6d6;
-    border-radius: 4px;
+    border-radius: 100px;
+    color: #333333;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
     width: 100%; }
     .navigation-control .navigation-control-item a:hover, .navigation-control .navigation-control-item a:focus {
-      background-color: #f2fffd;
-      border-color: #00bfa5; }
+      background-color: #ebebeb; }
   .navigation-control .navigation-control-item label {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
     cursor: pointer;
-    display: inline-block;
-    height: 2.572em;
-    text-align: center;
-    width: 2.572em; }
-    .navigation-control .navigation-control-item label > div.OSInline {
-      -webkit-box-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      height: 100%;
-      width: 100%; }
+    height: 100%; }
+    .navigation-control .navigation-control-item label > div.MultiMarginLeft5 {
+      display: none; }
 
 .AR .navigation-control.IsAttached .navigation-control-item:last-of-type,
 .FA .navigation-control.IsAttached .navigation-control-item:last-of-type {
-  margin-left: 0;
-  margin-right: 0; }
+  margin: 0; }
 
 .AR .navigation-control .navigation-control-item,
 .FA .navigation-control .navigation-control-item {
@@ -21229,7 +21224,7 @@ div.List-Star {
                 transform: rotate(0); }
 
 .ButtonRadioInp {
-  height: 34px;
+  height: 36px;
   position: relative; }
   .ButtonRadioInp.isFullWidth {
     display: block; }
@@ -21248,22 +21243,33 @@ div.List-Star {
     color: #777777;
     pointer-events: none; }
   .ButtonRadioInp_radio input[type='radio'] {
-    left: 8px;
+    left: 7px;
     position: absolute;
-    top: 10px; }
+    top: 11px; }
   .ButtonRadioInp_radioText {
     background-color: #fff;
     border: 1px solid #d6d6d6;
     border-radius: 4px;
     cursor: pointer;
     font-size: 1em;
-    padding: 6px 10px 6px 35px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px 0 32px;
     width: 100%; }
     .ButtonRadioInp_radioText:hover {
       background-color: #f2fffd;
       border: 1px solid #00bfa5; }
       .ButtonRadioInp_radioText:hover + .ButtonRadioInp_radio input[type='radio']::before {
         border: 1px solid #00bfa5; }
+
+.AR .ButtonRadioInp_radio input[type='radio'],
+.FA .ButtonRadioInp_radio input[type='radio'] {
+  left: auto;
+  right: 7px; }
+
+.AR .ButtonRadioInp_radioText,
+.FA .ButtonRadioInp_radioText {
+  padding: 0 32px 0 10px; }
 
 .WizardContent.active .WizardContent__Number {
   background-color: #00bfa5;
