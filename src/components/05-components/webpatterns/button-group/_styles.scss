@@ -78,29 +78,50 @@
 
 .ButtonGroupFilters {
 	.ButtonGroup {
-		.ButtonGroup_button {
-			&:first-of-type {
-				border-radius: 100px 0 0 100px;
+		border: 1px solid $light-grey;
+		border-radius: 100px;
+		width: auto;
+
+		&_button.Button {
+			border: none;
+			border-radius: 100px;
+			min-width: 36px;
+			position: relative;
+			user-select: none;
+
+			&:not(:first-child):before {
+				background-color: $light-grey;
+				content: '';
+				height: 16px;
+				left: 0;
+				position: absolute;
+				top: 10px;
+				width: 1px;
 			}
 
-			&:last-of-type {
-				border-radius: 0 100px 100px 0;
+			&:not(.active):hover {
+				background-color: $sapphire-light;
+				border: none;
+				box-shadow: -1px -1px 0px 0px $sapphire-light;
 			}
 
 			&.Button.active {
 				background-color: $mid-dark-grey;
-				border-color: $mid-dark-grey;
-				border-radius: 100px;
-				margin-left: -12px;
-				margin-right: -12px;
+				border: none;
+				box-shadow: 0 0 0 1px $mid-dark-grey;
+				font-family: $font-family-latin-regular;
+				text-shadow: 1px 0 0 $regular-white;
 				z-index: 1;
+			}
 
-				&:first-child {
-					margin-left: 0px;
+			&.Button.active,
+			&:not(.active):hover {
+				&:before {
+					display: none;
 				}
 
-				&:last-of-type {
-					margin-right: 0px;
+				+ .ButtonGroup_button.Button:before {
+					display: none;
 				}
 			}
 		}
@@ -109,51 +130,47 @@
 
 .AR,
 .FA {
-	.ButtonGroup_button.Button {
-		border-left: 1px solid transparent;
-		border-right: 1px solid $light-grey;
-		margin-right: 0;
+	.ButtonGroup {
+		&_button.Button {
+			border-left: 1px solid transparent;
+			border-right: 1px solid $light-grey;
+			margin-right: 0;
 
-		&:not(.active):hover {
-			border-left: 1px solid $regular-alpha;
-		}
+			&:not(.active):hover {
+				border-left: 1px solid $regular-alpha;
+			}
 
-		&:first-child {
-			border-bottom-left-radius: 0;
-			border-bottom-right-radius: $border-radius-default;
-			border-right-width: 1px;
-			border-top-left-radius: 0;
-			border-top-right-radius: $border-radius-default;
-		}
+			&:first-child {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: $border-radius-default;
+				border-right-width: 1px;
+				border-top-left-radius: 0;
+				border-top-right-radius: $border-radius-default;
+			}
 
-		&:last-child {
-			border-bottom-left-radius: $border-radius-default;
-			border-bottom-right-radius: 0;
-			border-left: 1px solid $light-grey;
-			border-top-left-radius: $border-radius-default;
-			border-top-right-radius: 0;
+			&:last-child {
+				border-bottom-left-radius: $border-radius-default;
+				border-bottom-right-radius: 0;
+				border-left: 1px solid $light-grey;
+				border-top-left-radius: $border-radius-default;
+				border-top-right-radius: 0;
+			}
 		}
 	}
 
 	.ButtonGroupFilters {
 		.ButtonGroup {
-			.ButtonGroup_button {
-				&:first-of-type {
-					border-radius: 0 100px 100px 0;
+			&_button.Button {
+				border: none;
+				border-radius: 100px;
+
+				&:not(:first-child):before {
+					left: auto;
+					right: 0;
 				}
 
-				&:last-of-type {
-					border-radius: 100px 0 0 100px;
-				}
-
-				&.Button.active {
-					border-radius: 100px;
-					margin-left: -12px;
-					margin-right: -12px;
-
-					&:first-child {
-						margin-right: 0px;
-					}
+				&:not(.active):hover {
+					border: none;
 				}
 			}
 		}
