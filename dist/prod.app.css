@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930024 || Generated: Mon Aug 17 2020 12:43:25 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930025 || Generated: Mon Aug 17 2020 15:46:47 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7398,7 +7398,7 @@ a.Button.IsDefault,
 
 .Card_Surgeries_Container {
   background-color: #fff;
-  border: solid 1px #d6d6d6;
+  border: 1px solid #d6d6d6;
   border-radius: 1px;
   display: table;
   min-height: 56px;
@@ -11269,7 +11269,7 @@ html body {
     font-size: 1em;
     line-height: 36px;
     min-height: 36px;
-    min-width: 80px;
+    min-width: 36px;
     overflow: hidden;
     padding: 0 16px;
     position: relative;
@@ -11315,11 +11315,13 @@ html body {
   display: -webkit-inline-box;
   display: inline-flex;
   gap: 1px;
+  height: 36px;
+  padding: 0;
   width: auto; }
   .ButtonGroupFilters .ButtonGroup_button.Button {
     border: none;
     border-radius: 100px;
-    min-width: 36px;
+    min-height: 34px;
     position: relative;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -13062,13 +13064,12 @@ div.Feedback_Message_Info span.lasa-term {
     text-align: center; }
 
 .CardBoxFilters {
+  background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 100px;
   display: -webkit-inline-box;
   display: inline-flex;
-  gap: 1px;
-  height: 36px;
-  overflow: hidden; }
+  gap: 1px; }
   .CardBoxFilters .CardBox {
     border-radius: 100px;
     box-shadow: none;
@@ -13077,7 +13078,7 @@ div.Feedback_Message_Info span.lasa-term {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
-    min-height: 36px;
+    min-height: 34px;
     padding: 6px 16px;
     width: auto; }
     .CardBoxFilters .CardBox.CardSmall.Selected, .CardBoxFilters .CardBox.CardMedium.Selected {
@@ -13090,7 +13091,8 @@ div.Feedback_Message_Info span.lasa-term {
         color: #fff;
         font-size: 1em; }
     .CardBoxFilters .CardBox:hover {
-      background-color: #ebebeb; }
+      background-color: #ebebeb;
+      box-shadow: -1px -1px 0px 0px #ebebeb; }
     .CardBoxFilters .CardBox .CardCount {
       color: #333333;
       font-size: 1.286em;
