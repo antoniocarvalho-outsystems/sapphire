@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930026 || Generated: Mon Aug 17 2020 17:36:35 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930027 || Generated: Mon Aug 17 2020 17:57:47 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7414,6 +7414,7 @@ a.Button.IsDefault,
       margin-left: auto;
       margin-right: 16px; }
     .Card_Surgeries_Container .Card_Surgeries_Description .CircledPatient {
+      font-size: 9px;
       height: 48px;
       line-height: 48px;
       width: 48px; }
@@ -7973,8 +7974,8 @@ a.Button.IsDefault,
 
 .Card_Container {
   background-color: #fff;
-  border: solid 1px #d6d6d6;
-  border-radius: 1px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
   display: table;
   min-height: 50px;
   width: 100%; }
