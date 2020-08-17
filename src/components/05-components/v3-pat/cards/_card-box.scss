@@ -180,19 +180,18 @@
 }
 
 .CardBoxFilters {
+	background-color: $regular-white;
 	border: 1px solid $light-grey;
 	border-radius: 100px;
 	display: inline-flex;
 	gap: 1px;
-	height: 36px;
-	overflow: hidden;
 
 	.CardBox {
 		border-radius: 100px;
 		box-shadow: none;
 		display: flex;
 		flex-direction: row;
-		min-height: 36px;
+		min-height: 34px;
 		padding: 6px $sapphire-sizes--medium;
 		width: auto;
 
@@ -214,6 +213,7 @@
 
 		&:hover {
 			background-color: $sapphire-light;
+			box-shadow: -1px -1px 0px 0px $sapphire-light;
 		}
 
 		.CardCount {
