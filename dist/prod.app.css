@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930027 || Generated: Mon Aug 17 2020 17:57:47 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930028 || Generated: Mon Aug 17 2020 18:12:55 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7980,15 +7980,21 @@ a.Button.IsDefault,
   min-height: 50px;
   width: 100%; }
   .Card_Container .Icon_Card {
-    margin-right: 5px; }
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    height: 48px;
+    margin-right: 16px;
+    width: 48px; }
   .Card_Container .Image_Detail {
-    background-color: #f5f4e0;
-    border-left: none;
-    border-right: solid 1px #d6d6d6;
-    color: #928d09;
     display: table-cell;
     height: 100%;
-    padding: 6px 16px;
+    padding: 16px;
     vertical-align: middle;
     white-space: nowrap;
     width: 40px; }
@@ -7999,7 +8005,8 @@ a.Button.IsDefault,
   display: table-cell;
   height: 100%;
   margin-bottom: 0;
-  padding: 6px 16px; }
+  padding: 16px;
+  padding-left: 0; }
 
 .Card_Actions {
   display: table-cell;
@@ -8015,24 +8022,18 @@ a.Button.IsDefault,
 
 .AR .Card_Description,
 .FA .Card_Description {
-  vertical-align: middle; }
-  .AR .Card_Description > div:nth-child(2) > div,
-  .FA .Card_Description > div:nth-child(2) > div {
-    margin-left: 10px;
-    vertical-align: middle; }
+  padding-left: 16px;
+  padding-right: 0; }
 
 .AR .Card_Actions,
 .FA .Card_Actions {
   padding-left: 16px;
   padding-right: 0; }
 
-.AR .Image_Detail,
-.FA .Image_Detail {
-  border-left: solid 1px #d6d6d6;
-  border-right: none; }
-  .AR .Image_Detail .Icon_Card,
-  .FA .Image_Detail .Icon_Card {
-    margin-left: 10px; }
+.AR .Image_Detail .Icon_Card,
+.FA .Image_Detail .Icon_Card {
+  margin-left: 16px;
+  margin-right: 0; }
 
 .AR .Title_Card .CardAll,
 .FA .Title_Card .CardAll {
