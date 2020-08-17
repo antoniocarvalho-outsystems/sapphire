@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930025 || Generated: Mon Aug 17 2020 15:46:47 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930026 || Generated: Mon Aug 17 2020 17:36:35 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7399,55 +7399,40 @@ a.Button.IsDefault,
 .Card_Surgeries_Container {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 1px;
+  border-radius: 8px;
   display: table;
   min-height: 56px;
+  overflow: hidden;
   width: 100%; }
   .Card_Surgeries_Container .Card_Surgeries_Description {
     display: table-cell;
-    padding: 0 16px;
+    padding: 16px;
+    padding-left: 0;
     vertical-align: middle;
     width: 80%; }
     .Card_Surgeries_Container .Card_Surgeries_Description > div {
       margin-left: auto;
-      margin-right: 10px; }
+      margin-right: 16px; }
+    .Card_Surgeries_Container .Card_Surgeries_Description .CircledPatient {
+      height: 48px;
+      line-height: 48px;
+      width: 48px; }
+      .Card_Surgeries_Container .Card_Surgeries_Description .CircledPatient.Male {
+        background-color: #f0faf9; }
+      .Card_Surgeries_Container .Card_Surgeries_Description .CircledPatient.Female {
+        background-color: #feeced; }
   .Card_Surgeries_Container .Card_Surgeries_Container__Others {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: end;
             justify-content: flex-end; }
   .Card_Surgeries_Container .Image_Surgeries_Detail {
-    border-right: solid 1px #d6d6d6;
     display: table-cell;
     height: 100%;
-    min-width: 170px;
-    padding: 6px 16px;
+    min-width: 175px;
+    padding: 16px;
     vertical-align: middle;
     white-space: nowrap; }
-    .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Red {
-      background-color: #fad5d5; }
-      .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Red span {
-        color: #b10100; }
-    .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Brown {
-      background-color: #e6e2aa; }
-      .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Brown span {
-        color: #928d09; }
-    .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Green {
-      background-color: #c2dea8; }
-      .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Green span {
-        color: #578329; }
-    .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Men {
-      background-color: #f0faf9; }
-      .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Men span {
-        color: #194968; }
-    .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Woman {
-      background-color: #feeced; }
-      .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Woman span {
-        color: #980263; }
-    .Card_Surgeries_Container .Image_Surgeries_Detail.isEmpty, .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Unidentified {
-      background-color: #f3f3f3; }
-      .Card_Surgeries_Container .Image_Surgeries_Detail.isEmpty span, .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_Unidentified span {
-        color: #194968; }
     .Card_Surgeries_Container .Image_Surgeries_Detail.SmallCardSurgerie {
       min-width: 120px;
       width: 120px; }
@@ -7458,9 +7443,18 @@ a.Button.IsDefault,
     display: inline-flex;
     height: 100%; }
   .Card_Surgeries_Container .Icon_Surgeries_Card {
-    margin-left: auto; }
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    height: 48px;
+    margin-right: 16px;
+    width: 48px; }
   .Card_Surgeries_Container .Title_Surgeries_Card {
-    padding: 0 12px;
     white-space: normal; }
     .Card_Surgeries_Container .Title_Surgeries_Card::first-line {
       font-family: "LatoBold"; }
@@ -7473,19 +7467,18 @@ a.Button.IsDefault,
     text-align: right;
     vertical-align: middle; }
 
-.AR .Card_Surgeries_Description > div,
-.FA .Card_Surgeries_Description > div {
-  margin-left: 10px;
-  margin-right: auto; }
-
-.AR .Image_Surgeries_Detail,
-.FA .Image_Surgeries_Detail {
-  border-left: solid 1px #d6d6d6;
-  border-right: 0; }
+.AR .Card_Surgeries_Description,
+.FA .Card_Surgeries_Description {
+  padding-left: 16px;
+  padding-right: 0; }
+  .AR .Card_Surgeries_Description > div,
+  .FA .Card_Surgeries_Description > div {
+    margin-left: 16px;
+    margin-right: auto; }
 
 .AR .Icon_Surgeries_Card,
 .FA .Icon_Surgeries_Card {
-  margin-left: 10px;
+  margin-left: 16px;
   margin-right: auto; }
 
 .AR .Card_Surgeries_Actions,
