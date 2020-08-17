@@ -1,8 +1,8 @@
 .Card {
 	&_Container {
 		background-color: $regular-white;
-		border: solid 1px $light-grey;
-		border-radius: 1px;
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-medium;
 		display: table;
 		min-height: 50px;
 		width: 100%;
