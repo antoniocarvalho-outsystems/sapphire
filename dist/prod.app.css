@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.930023 || Generated: Fri Aug 14 2020 18:05:47 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.930024 || Generated: Mon Aug 17 2020 12:43:25 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29377,6 +29377,9 @@ span:not(:last-of-type) .CompLine {
 
 .SurgeriesContainer .ListRecords .AppLine {
   border-bottom: none; }
+
+.SurgeriesContainer .SurgeryDetail {
+  width: 125px; }
 
 .Dropdown > div, .Page .FormField select > div, .LayoutPopup .FormField select > div, .LayoutBlank .FormField select > div, .LayoutBase .FormField select > div {
   width: auto; }
