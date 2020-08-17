@@ -8,17 +8,19 @@
 		width: 100%;
 
 		.Icon_Card {
-			margin-right: 5px;
+			@include flex-center-total(inline-flex);
+
+			background-color: $sapphire-light;
+			border-radius: $border-radius-medium;
+			height: 48px;
+			margin-right: $sapphire-sizes--medium;
+			width: 48px;
 		}
 
 		.Image_Detail {
-			background-color: $light-beige;
-			border-left: none;
-			border-right: solid 1px $light-grey;
-			color: $dark-beige;
 			display: table-cell;
 			height: 100%;
-			padding: 6px $sapphire-sizes--medium;
+			padding: $sapphire-sizes--medium;
 			vertical-align: middle;
 			white-space: nowrap;
 			width: 40px;
@@ -33,7 +35,8 @@
 		display: table-cell;
 		height: 100%;
 		margin-bottom: 0;
-		padding: 6px $sapphire-sizes--medium;
+		padding: $sapphire-sizes--medium;
+		padding-left: 0;
 	}
 
 	&_Actions {
@@ -53,12 +56,8 @@
 .AR,
 .FA {
 	.Card_Description {
-		vertical-align: middle;
-
-		> div:nth-child(2) > div {
-			margin-left: 10px;
-			vertical-align: middle;
-		}
+		padding-left: $sapphire-sizes--medium;
+		padding-right: 0;
 	}
 
 	.Card_Actions {
@@ -67,11 +66,9 @@
 	}
 
 	.Image_Detail {
-		border-left: solid 1px $light-grey;
-		border-right: none;
-
 		.Icon_Card {
-			margin-left: 10px;
+			margin-left: $sapphire-sizes--medium;
+			margin-right: 0;
 		}
 	}
 
