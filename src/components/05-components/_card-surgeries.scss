@@ -1,28 +1,36 @@
-@mixin common-card-surgeries-color-style($background: inherit, $color: inherit) {
-	background-color: $background;
-
-	span {
-		color: $color;
-	}
-}
-
 .Card_Surgeries_Container {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
-	border-radius: 1px;
+	border-radius: $border-radius-medium;
 	display: table;
 	min-height: 56px;
+	overflow: hidden;
 	width: 100%;
 
 	.Card_Surgeries_Description {
 		display: table-cell;
-		padding: 0 $sapphire-sizes--medium;
+		padding: $sapphire-sizes--medium;
+		padding-left: 0;
 		vertical-align: middle;
 		width: 80%;
 
 		> div {
 			margin-left: auto;
-			margin-right: 10px;
+			margin-right: $sapphire-sizes--medium;
+		}
+
+		.CircledPatient {
+			height: 48px;
+			line-height: 48px;
+			width: 48px;
+
+			&.Male {
+				background-color: $light-blue-2;
+			}
+
+			&.Female {
+				background-color: $light-pink-2;
+			}
 		}
 	}
 
@@ -32,38 +40,12 @@
 	}
 
 	.Image_Surgeries_Detail {
-		border-right: solid 1px $light-grey;
 		display: table-cell;
 		height: 100%;
-		min-width: 170px;
-		padding: 6px $sapphire-sizes--medium;
+		min-width: 175px;
+		padding: $sapphire-sizes--medium;
 		vertical-align: middle;
 		white-space: nowrap;
-
-		&.Card_Surgeries_Red {
-			@include common-card-surgeries-color-style($light-red, $dark-red);
-		}
-
-		&.Card_Surgeries_Brown {
-			@include common-card-surgeries-color-style($regular-beige, $dark-beige);
-		}
-
-		&.Card_Surgeries_Green {
-			@include common-card-surgeries-color-style($light-green, $dark-green);
-		}
-
-		&.Card_Surgeries_Men {
-			@include common-card-surgeries-color-style($light-blue-2, $dark-blue);
-		}
-
-		&.Card_Surgeries_Woman {
-			@include common-card-surgeries-color-style($light-pink-2, $dark-pink);
-		}
-
-		&.isEmpty,
-		&.Card_Surgeries_Unidentified {
-			@include common-card-surgeries-color-style($body-color, $dark-blue);
-		}
 
 		&.SmallCardSurgerie {
 			min-width: 120px;
@@ -78,11 +60,16 @@
 	}
 
 	.Icon_Surgeries_Card {
-		margin-left: auto;
+		@include flex-center-total(inline-flex);
+
+		background-color: $sapphire-light;
+		border-radius: $border-radius-medium;
+		height: 48px;
+		margin-right: $sapphire-sizes--medium;
+		width: 48px;
 	}
 
 	.Title_Surgeries_Card {
-		padding: 0 12px;
 		white-space: normal;
 
 		&::first-line {
@@ -105,18 +92,18 @@
 
 .AR,
 .FA {
-	.Card_Surgeries_Description > div {
-		margin-left: 10px;
-		margin-right: auto;
-	}
+	.Card_Surgeries_Description {
+		padding-left: $sapphire-sizes--medium;
+		padding-right: 0;
 
-	.Image_Surgeries_Detail {
-		border-left: solid 1px $light-grey;
-		border-right: 0;
+		> div {
+			margin-left: $sapphire-sizes--medium;
+			margin-right: auto;
+		}
 	}
 
 	.Icon_Surgeries_Card {
-		margin-left: 10px;
+		margin-left: $sapphire-sizes--medium;
 		margin-right: auto;
 	}
 
