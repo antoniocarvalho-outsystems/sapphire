@@ -40,15 +40,18 @@
 .RoomBox {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
-	border-radius: $border-radius-default;
+	border-radius: $border-radius-medium;
 	display: inline-block;
-	margin-bottom: 10px;
+	overflow: hidden;
 	position: relative;
-	text-align: center;
 	width: 100%;
 
 	&.Selected {
-		border: 2px solid $regular-alpha;
+		border-color: transparent;
+
+		.DisableRoom {
+			border: 2px solid $regular-alpha;
+		}
 	}
 
 	&.Male {
@@ -64,66 +67,42 @@
 	}
 }
 
-.RoomName {
-	font-size: 1.143em;
-}
-
 .RoomHeader {
-	padding: 10px;
+	@include flex-center-vertically;
+
+	justify-content: space-between;
+	padding: $sapphire-sizes--medium;
 
 	> :nth-child(1) {
-		color: $dark-grey;
-		font-size: 1.143em;
+		font-family: $font-family-latin-bold;
 	}
 
-	> :nth-child(2),
 	.WardName {
-		color: $regular-beta;
-		font-size: 1em;
+		color: $regular-grey;
+		font-size: $font-size-small;
 	}
 }
 
 .RoomStatus {
-	@include flex-center-total;
-	font-family: $font-family-latin-bold;
-
-	min-height: 22px;
-	overflow: hidden;
+	padding: 8px $sapphire-sizes--medium;
 	width: 100%;
 
 	&.Free {
 		background-color: $light-green;
-		color: $dark-green;
 	}
 
 	&.Full {
 		background-color: $light-grey;
-		color: $mid-dark-grey;
 	}
-}
-
-.RoomGenderBar {
-	display: none;
-}
-
-.WardName {
-	color: $regular-beta;
-	font-size: 1em;
 }
 
 .DisableRoom {
 	border: 2px solid transparent;
+	border-radius: $border-radius-medium;
 	display: block;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	position: absolute;
 	width: 100%;
-}
-
-.AR,
-.FA {
-	.RoomBox {
-		margin: 0 0 15px 15px;
-	}
 }

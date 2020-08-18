@@ -1,6 +1,8 @@
 /* Component LocationBox */
-SapphireWidgets.LocationBox = function(clickedElementId) {
-	if ($('#' + clickedElementId + '').hasClass('On')) {
+SapphireWidgets.LocationBox = function(widgetId) {
+	const $component = $(`#${widgetId}`);
+
+	if ($component.hasClass('On')) {
 		$('.DisableRoom').each(function() {
 			$(this)
 				.removeClass('Off')
@@ -13,7 +15,7 @@ SapphireWidgets.LocationBox = function(clickedElementId) {
 				.removeClass('Selected');
 		});
 	} else {
-		$('#' + clickedElementId + '')
+		$component
 			.addClass('On')
 			.removeClass('Off')
 			.parent('.RoomBox')
@@ -22,7 +24,7 @@ SapphireWidgets.LocationBox = function(clickedElementId) {
 			})
 			.addClass('Selected');
 
-		$('.DisableRoom:not(#' + clickedElementId + ')').each(function() {
+		$('.DisableRoom:not(#' + widgetId + ')').each(function() {
 			$(this).addClass('Off');
 			$(this).removeClass('On');
 		});
@@ -30,7 +32,7 @@ SapphireWidgets.LocationBox = function(clickedElementId) {
 		$('.DisableRoom.Off')
 			.parent('.RoomBox')
 			.css({
-				opacity: '0.25',
+				opacity: '0.50',
 			})
 			.removeClass('Selected');
 	}
