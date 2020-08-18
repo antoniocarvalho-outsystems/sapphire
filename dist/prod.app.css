@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940001 || Generated: Tue Aug 18 2020 16:48:03 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940002 || Generated: Tue Aug 18 2020 18:14:58 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9883,24 +9883,42 @@ div.LineInfo {
 .WardBox {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 4px;
+  border-radius: 8px;
   display: inline-block;
-  text-align: center;
+  overflow: hidden;
+  position: relative;
   width: 100%; }
   .WardBox.SelectedWardBx {
-    border: 1px solid #00bfa5; }
+    border-color: transparent; }
+    .WardBox.SelectedWardBx::before {
+      border: 2px solid #00bfa5;
+      border-radius: 8px;
+      box-sizing: border-box;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 100%; }
   .WardBox_Title {
     font-family: "LatoBold";
-    line-clamp: 1;
     overflow: hidden;
-    text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap; }
   .WardBox .WardNameSmall {
-    color: #5c5c5c;
-    padding: 5px 10px; }
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    border-bottom: 1px solid #d6d6d6;
+    gap: 8px;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    line-height: 16px;
+    padding: 16px; }
   .WardBox .WardTypeSmall {
-    font-size: 0.786em; }
+    color: #777777;
+    font-size: 0.857em;
+    text-align: right; }
   .WardBox .Hospitalizations {
     display: -webkit-box;
     display: flex; }
@@ -9909,16 +9927,13 @@ div.LineInfo {
     padding: 5px;
     text-overflow: ellipsis;
     white-space: nowrap; }
-  .WardBox .RoomTypeSmall {
-    color: #494f5c;
-    font-size: 0.857em; }
   .WardBox .Counter {
     background-color: #ebebeb;
-    border-bottom: 0;
-    border-top: 3px solid #adadad;
-    color: #adadad;
-    font-size: 1.714em;
-    padding: 10px 0;
+    border-top: none;
+    font-family: "LatoBold";
+    font-size: 1.286em;
+    line-height: 16px;
+    padding: 16px;
     width: 100%; }
     .WardBox .Counter.Vacant {
       background-color: #c2dea8;
@@ -18276,6 +18291,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
           align-items: center;
   display: -webkit-box;
   display: flex;
+  border-bottom: 1px solid #d6d6d6;
   -webkit-box-pack: justify;
           justify-content: space-between;
   padding: 16px; }
@@ -18291,7 +18307,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .RoomStatus.Free {
     background-color: #c2dea8; }
   .RoomStatus.Full {
-    background-color: #d6d6d6; }
+    background-color: #ebebeb; }
 
 .DisableRoom {
   border: 2px solid transparent;
@@ -34873,10 +34889,6 @@ a.Button.Icon:hover,
 /*-------------------------------------------------------------------------------------*/
 /* 9.54 Sapphire Patterns > Custom_Patterns > LocationBox ******************************/
 /*-------------------------------------------------------------------------------------*/
-.GalleryItem .DropBlock > div,
-.GalleryItem .WardBoxWrapper {
-  width: 100%; }
-
 /*-------------------------------------------------------------------------------------*/
 /* 9.55 Sapphire Patterns > Custom_Patterns > MedicalFileOptions ***********************/
 /*-------------------------------------------------------------------------------------*/
