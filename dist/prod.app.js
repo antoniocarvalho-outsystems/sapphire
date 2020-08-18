@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.930028 || Generated: Mon Aug 17 2020 18:12:55 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.1.940001 || Generated: Tue Aug 18 2020 16:48:03 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -413,7 +413,7 @@ eval("/* Component LineDetailsExpandBox */\r\n(function($, window, SapphireWidge
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component LocationBox */\r\nSapphireWidgets.LocationBox = function(clickedElementId) {\r\n\tif ($('#' + clickedElementId + '').hasClass('On')) {\r\n\t\t$('.DisableRoom').each(function() {\r\n\t\t\t$(this)\r\n\t\t\t\t.removeClass('Off')\r\n\t\t\t\t.removeClass('On');\r\n\t\t\t$(this)\r\n\t\t\t\t.parent('.RoomBox')\r\n\t\t\t\t.css({\r\n\t\t\t\t\topacity: '1',\r\n\t\t\t\t})\r\n\t\t\t\t.removeClass('Selected');\r\n\t\t});\r\n\t} else {\r\n\t\t$('#' + clickedElementId + '')\r\n\t\t\t.addClass('On')\r\n\t\t\t.removeClass('Off')\r\n\t\t\t.parent('.RoomBox')\r\n\t\t\t.css({\r\n\t\t\t\topacity: '1',\r\n\t\t\t})\r\n\t\t\t.addClass('Selected');\r\n\r\n\t\t$('.DisableRoom:not(#' + clickedElementId + ')').each(function() {\r\n\t\t\t$(this).addClass('Off');\r\n\t\t\t$(this).removeClass('On');\r\n\t\t});\r\n\r\n\t\t$('.DisableRoom.Off')\r\n\t\t\t.parent('.RoomBox')\r\n\t\t\t.css({\r\n\t\t\t\topacity: '0.25',\r\n\t\t\t})\r\n\t\t\t.removeClass('Selected');\r\n\t}\r\n};\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/location-box/scripts.js?");
+eval("/* Component LocationBox */\r\nSapphireWidgets.LocationBox = function(widgetId) {\r\n\tconst $component = $(`#${widgetId}`);\r\n\r\n\tif ($component.hasClass('On')) {\r\n\t\t$('.DisableRoom').each(function() {\r\n\t\t\t$(this)\r\n\t\t\t\t.removeClass('Off')\r\n\t\t\t\t.removeClass('On');\r\n\t\t\t$(this)\r\n\t\t\t\t.parent('.RoomBox')\r\n\t\t\t\t.css({\r\n\t\t\t\t\topacity: '1',\r\n\t\t\t\t})\r\n\t\t\t\t.removeClass('Selected');\r\n\t\t});\r\n\t} else {\r\n\t\t$component\r\n\t\t\t.addClass('On')\r\n\t\t\t.removeClass('Off')\r\n\t\t\t.parent('.RoomBox')\r\n\t\t\t.css({\r\n\t\t\t\topacity: '1',\r\n\t\t\t})\r\n\t\t\t.addClass('Selected');\r\n\r\n\t\t$('.DisableRoom:not(#' + widgetId + ')').each(function() {\r\n\t\t\t$(this).addClass('Off');\r\n\t\t\t$(this).removeClass('On');\r\n\t\t});\r\n\r\n\t\t$('.DisableRoom.Off')\r\n\t\t\t.parent('.RoomBox')\r\n\t\t\t.css({\r\n\t\t\t\topacity: '0.50',\r\n\t\t\t})\r\n\t\t\t.removeClass('Selected');\r\n\t}\r\n};\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/location-box/scripts.js?");
 
 /***/ }),
 
