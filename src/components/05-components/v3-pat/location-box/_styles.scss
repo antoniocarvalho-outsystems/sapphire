@@ -70,6 +70,7 @@
 .RoomHeader {
 	@include flex-center-vertically;
 
+	border-bottom: 1px solid $light-grey;
 	justify-content: space-between;
 	padding: $sapphire-sizes--medium;
 
@@ -92,7 +93,7 @@
 	}
 
 	&.Full {
-		background-color: $light-grey;
+		background-color: $sapphire-light;
 	}
 }
 
