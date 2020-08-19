@@ -112,7 +112,7 @@ $select-system-height: 36px;
 		.select2-selection__rendered {
 			color: $dark-grey;
 			line-height: $select-system-height;
-			padding-left: 10px;
+			padding-left: $sapphire-sizes--medium;
 			padding-right: 36px;
 
 			.select2-search {
@@ -362,7 +362,7 @@ $select-system-height: 36px;
 
 			.select2-selection__rendered {
 				padding-left: 36px;
-				padding-right: 10px;
+				padding-right: $sapphire-sizes--medium;
 
 				.select2-selection__choice {
 					padding-left: 25px;

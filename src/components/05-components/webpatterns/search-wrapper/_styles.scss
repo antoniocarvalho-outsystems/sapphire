@@ -21,7 +21,7 @@
 		box-shadow: none;
 		height: 36px;
 		line-height: 36px;
-		padding: 0 10px 0 35px;
+		padding: 0 $sapphire-sizes--medium 0 35px;
 
 		&:not(:hover) {
 			border-color: $light-grey;
@@ -39,7 +39,7 @@
 
 		input[type='text'] {
 			border: 1px solid $light-grey;
-			padding-left: 0;
+			padding-left: $sapphire-sizes--medium;
 			padding-right: 35px;
 		}
 	}

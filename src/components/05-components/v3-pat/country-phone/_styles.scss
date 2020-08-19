@@ -2,6 +2,17 @@
 	@include component-scroll-root();
 }
 
+.intl-tel-input {
+	&.allow-dropdown,
+	&.separate-dial-code {
+		input,
+		input[type='tel'],
+		input[type='text'] {
+			padding-right: $sapphire-sizes--medium;
+		}
+	}
+}
+
 .AR,
 .FA {
 	.intl-tel-input {
@@ -40,9 +51,24 @@
 			input[type='tel'],
 			input[type='text'] {
 				direction: ltr;
-				padding-left: 0 !important;
-				padding-right: 92px;
+				padding-left: $sapphire-sizes--medium !important;
 				text-align: end;
+			}
+		}
+
+		&.allow-dropdown {
+			input,
+			input[type='tel'],
+			input[type='text'] {
+				padding-right: 52px;
+			}
+		}
+
+		&.separate-dial-code {
+			input,
+			input[type='tel'],
+			input[type='text'] {
+				padding-right: 92px;
 			}
 		}
 	}

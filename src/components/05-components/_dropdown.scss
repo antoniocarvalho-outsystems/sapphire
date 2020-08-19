@@ -3,7 +3,7 @@
 	background-position: right 14px center;
 	background-repeat: no-repeat;
 	color: $dark-grey;
-	padding: 0 35px 0 10px;
+	padding: 0 35px 0 $sapphire-sizes--medium;
 
 	&.Mandatory {
 		border-left: 3px solid $regular-alpha;
@@ -25,7 +25,7 @@
 		font-family: $font-family-arabic-regular;
 		font-size: 15px;
 		line-height: 19px;
-		padding: 5px 10px 5px 36px;
+		padding: 5px $sapphire-sizes--medium 5px 36px;
 
 		&:disabled {
 			background-position: left 0 center;
