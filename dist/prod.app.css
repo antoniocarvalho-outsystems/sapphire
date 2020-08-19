@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940004 || Generated: Wed Aug 19 2020 10:47:41 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940005 || Generated: Wed Aug 19 2020 11:17:20 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -24908,6 +24908,80 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   margin-right: 0px;
   right: 100%; }
 
+.SmallContainer {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  height: 75px;
+  padding: 16px;
+  position: relative; }
+  .SmallContainer.BackgroundNotPlanned {
+    background-color: #f5f4e0; }
+  .SmallContainer .MultiArrowRight {
+    left: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 10px; }
+    .SmallContainer .MultiArrowRight .SmallContainer_arrow {
+      background-color: #fff;
+      border: 1px solid #d6d6d6;
+      display: block;
+      height: 20px;
+      left: -13px;
+      position: relative;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      width: 19px; }
+      .SmallContainer .MultiArrowRight .SmallContainer_arrow.ArrowNotPlanned {
+        background-color: #f5f4e0; }
+  .SmallContainer .NoPlannedContainer {
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    margin-left: 16px;
+    padding: 0 1px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .SmallContainer .icon-doctor {
+    color: #5c5c5c; }
+  .SmallContainer .CardAll {
+    display: -webkit-box;
+    display: flex; }
+    .SmallContainer .CardAll > span.verticalAlignHelper.Middle {
+      display: none; }
+
+.AR .SmallContainer .MultiArrowRight,
+.FA .SmallContainer .MultiArrowRight {
+  left: auto;
+  right: 100%; }
+  .AR .SmallContainer .MultiArrowRight .SmallContainer_arrow,
+  .FA .SmallContainer .MultiArrowRight .SmallContainer_arrow {
+    left: auto;
+    right: -13px; }
+
+.AR .SmallContainer .NoPlannedContainer,
+.FA .SmallContainer .NoPlannedContainer {
+  left: 16px;
+  margin-left: 0;
+  margin-right: 16px;
+  right: auto; }
+
+.tablet .SmallContainer {
+  width: 100%; }
+
+.desktop.small .Icon_CardAll {
+  display: none; }
+
 .SpinnerInput_Container > a {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -28741,77 +28815,6 @@ ul.os-internal-ui-autocomplete {
 .SessionList .ListRecords .SessionList:last-of-type .SessionList_Header {
   border-bottom: none; }
 
-.SmallContainer {
-  -webkit-box-align: center;
-          align-items: center;
-  background-color: #ffffff;
-  border: 1px solid #d6d6d6;
-  border-radius: 2px;
-  display: -webkit-box;
-  display: flex;
-  height: 75px;
-  padding: 5px;
-  padding-left: 20px;
-  position: relative; }
-  .SmallContainer .icon-doctor {
-    color: #5c5c5c; }
-  .SmallContainer .CardAll {
-    display: -webkit-box;
-    display: flex; }
-    .SmallContainer .CardAll > span.verticalAlignHelper.Middle {
-      display: none; }
-
-.SmallContainer .MultiArrowRight {
-  left: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 30%;
-  width: 10px; }
-
-.MultiArrowRight .SmallContainer_arrow {
-  background-color: #ffffff;
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 1px solid #d6d6d6;
-  border-top: 1px solid #d6d6d6;
-  display: block;
-  height: 20px;
-  left: -13px;
-  position: relative;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  width: 19px; }
-
-.SmallContainer .NoPlannedContainer {
-  background: #ffffff;
-  border: 1px solid #d6d6d6;
-  border-radius: 2px;
-  margin-left: 10px;
-  padding-left: 1px;
-  padding-right: 1px;
-  position: absolute;
-  right: 2px;
-  text: #111;
-  top: 28px; }
-
-.FA .SmallContainer .NoPlannedContainer,
-.AR .SmallContainer .NoPlannedContainer {
-  left: 2px;
-  right: auto; }
-
-.ArrowNotPlanned,
-.BackgroundNotPlanned {
-  background-color: #f7f4ef !important; }
-
-.tablet .SmallContainer {
-  width: 100%; }
-
-.desktop.small .Icon_CardAll {
-  display: none; }
-
-.SmallContainer {
-  -servicestudio-background-color: #fff !important; }
-
 .VerticalSeparatorHelper {
   position: relative; }
 
@@ -30378,6 +30381,9 @@ div.SelectableList-Line > span > div.ExpandableContent {
 
 .ie8.desktop.small .Sidebar.open {
   right: 0px; }
+
+.SmallContainer {
+  -servicestudio-background-color: #fff !important; }
 
 .phone .SpinnerInput_Container .Plus, .phone .SpinnerInput_Container .Plus:hover,
 .phone .SpinnerInput_Container .Minus,
