@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940006 || Generated: Wed Aug 19 2020 12:24:04 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940007 || Generated: Wed Aug 19 2020 13:13:44 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -25516,19 +25516,22 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     font-size: 1em;
     padding-bottom: 32px; }
 
-.Tabs_Extended {
-  font-size: 14px; }
-  .Tabs_Extended:not(.isClosed) .Tabs__tab.active {
-    font-family: "LatoBold"; }
-  .Tabs_Extended.HideActiveOnClick .Tabs__tab.active {
-    cursor: pointer; }
-  .Tabs_Extended.Tabs_Extended--Primary .Tabs__tab {
-    border-bottom: 3px solid transparent;
-    border-top: 2px solid transparent;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in; }
-  .Tabs_Extended.Tabs_Extended--Primary .Tabs__tab.active,
-  .Tabs_Extended.Tabs_Extended--Primary .Tabs__tab:hover {
+.Tabs_Extended:not(.isClosed) .Tabs__tab.active {
+  font-family: "LatoBold"; }
+
+.Tabs_Extended.HideActiveOnClick .Tabs__tab.active {
+  cursor: pointer; }
+
+.Tabs_Extended.Tabs_Extended--Primary .Tabs__tab {
+  border-bottom: 3px solid transparent;
+  border-top: 2px solid transparent;
+  margin: 0 8px;
+  padding: 0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  .Tabs_Extended.Tabs_Extended--Primary .Tabs__tab:first-child {
+    margin-left: 0; }
+  .Tabs_Extended.Tabs_Extended--Primary .Tabs__tab.active, .Tabs_Extended.Tabs_Extended--Primary .Tabs__tab:hover {
     background-color: transparent;
     border-bottom: 3px solid #00bfa5;
     border-left: 0;
@@ -25538,83 +25541,128 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     color: #00ac94; }
   .Tabs_Extended.Tabs_Extended--Primary .Tabs__tab.disabled {
     border-bottom: 3px solid transparent !important; }
-  .Tabs_Extended.Tabs_Extended--Primary .Tabs_body {
-    background-color: transparent;
-    border: none;
-    border-top: 1px solid #d6d6d6;
-    padding: 26px 0 26px 0; }
-  .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active {
-    border-bottom: 2px solid #fff;
-    border-left-color: #d6d6d6;
-    border-right-color: #d6d6d6;
-    border-top-color: #00bfa5;
+
+.Tabs_Extended.Tabs_Extended--Primary .Tabs_body {
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid #d6d6d6;
+  padding: 26px 0 26px 0; }
+
+.Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active {
+  border-bottom: 2px solid #fff;
+  border-left-color: #d6d6d6;
+  border-radius: 8px 8px 0 0;
+  border-right-color: #d6d6d6;
+  border-top-color: #d6d6d6;
+  color: #00ac94; }
+  .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active:before, .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active:after {
+    border: 1px solid #d6d6d6;
+    bottom: -1px;
+    content: ' ';
+    height: 6px;
+    position: absolute;
+    width: 6px; }
+  .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active:before {
+    border-bottom-right-radius: 8px;
+    border-width: 0 1px 1px 0;
+    box-shadow: 2px 2px 0 #fff;
+    left: -7px; }
+  .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active:after {
+    border-bottom-left-radius: 8px;
+    border-width: 0 0 1px 1px;
+    box-shadow: -2px 2px 0 #fff;
+    right: -7px; }
+
+.Tabs_Extended.Tabs_Extended--Secondary.Tabs_Extended--fullwidth .Tabs {
+  min-height: auto; }
+
+.Tabs_Extended.Tabs_Extended--Secondary.isClosed .Tabs__tab.active {
+  background-color: transparent;
+  color: #777777; }
+
+.Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab {
+  border-bottom: 2px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  padding: 0 16px; }
+  .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:first-child:before {
+    display: none; }
+  .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:hover {
     color: #00ac94; }
-  .Tabs_Extended.Tabs_Extended--Secondary.Tabs_Extended--fullwidth .Tabs {
-    min-height: auto; }
-  .Tabs_Extended.Tabs_Extended--Secondary.isClosed .Tabs__tab.active {
-    background-color: transparent;
-    color: #777777; }
-  .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab {
-    border-bottom: 2px solid transparent;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    border-top: 2px solid transparent;
-    padding: 0 15px; }
-    .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:hover {
-      color: #00ac94; }
-  .Tabs_Extended.Tabs_Extended--fullwidth .Tabs_header {
+  .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab > div {
+    -webkit-box-align: center;
+            align-items: center;
     display: -webkit-box;
     display: flex; }
-  .Tabs_Extended.Tabs_Extended--fullwidth .Tabs__tab {
-    border-bottom-color: #d6d6d6;
-    flex-basis: 100%; }
-  .Tabs_Extended .Tabs_Extended--disabled {
-    color: #adadad; }
-  .Tabs_Extended .Tabs_body.Tabs_body--closed {
-    padding: 0; }
-    .Tabs_Extended .Tabs_body.Tabs_body--closed .Tabs__content {
-      display: none; }
-  .Tabs_Extended .Tabs__tab {
-    border-bottom-width: 2px;
-    border-top-width: 2px;
-    position: relative;
-    top: 1px; }
-    .Tabs_Extended .Tabs__tab:hover:not(.active) a[id] {
-      color: #00ac94; }
-    .Tabs_Extended .Tabs__tab.active a {
+  .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab .Tabs_extended_badge {
+    background-color: #00bfa5;
+    margin-left: 8px;
+    position: unset;
+    -webkit-transform: unset;
+            transform: unset; }
+
+.Tabs_Extended.Tabs_Extended--fullwidth .Tabs_header {
+  display: -webkit-box;
+  display: flex; }
+
+.Tabs_Extended.Tabs_Extended--fullwidth .Tabs__tab {
+  border-bottom-color: #d6d6d6;
+  flex-basis: 100%; }
+
+.Tabs_Extended .Tabs_Extended--disabled {
+  color: #adadad; }
+
+.Tabs_Extended .Tabs_body.Tabs_body--closed {
+  padding: 0; }
+  .Tabs_Extended .Tabs_body.Tabs_body--closed .Tabs__content {
+    display: none; }
+
+.Tabs_Extended .Tabs__tab {
+  border-bottom-width: 2px;
+  border-top-width: 2px;
+  position: relative;
+  top: 1px; }
+  .Tabs_Extended .Tabs__tab:hover:not(.active) a[id] {
+    color: #00ac94; }
+  .Tabs_Extended .Tabs__tab.active a {
+    color: #333333; }
+    .Tabs_Extended .Tabs__tab.active a:hover {
       color: #333333; }
-      .Tabs_Extended .Tabs__tab.active a:hover {
-        color: #333333; }
-    .Tabs_Extended .Tabs__tab:not(.active) a:focus {
-      border: 1px solid #333333;
-      color: #333333; }
-    .Tabs_Extended .Tabs__tab a,
-    .Tabs_Extended .Tabs__tab a:hover {
-      border: 1px solid transparent;
-      color: #00ac94;
-      font-family: "LatoBold";
-      font-size: 1.143em;
-      margin-right: 0;
-      min-width: auto;
-      padding: 10px;
-      position: relative; }
-    .Tabs_Extended .Tabs__tab .Badge {
-      padding: 2px 0;
-      vertical-align: super; }
-  .Tabs_Extended .Tabs_header {
-    overflow-x: hidden; }
-  .Tabs_Extended .Tabs_extended_badge {
-    background-color: #ff3e2d;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 0.786em;
-    height: 17px;
-    line-height: 17px;
-    position: absolute;
-    right: 0px;
-    text-align: center;
-    width: 17px;
-    top: 0; }
+  .Tabs_Extended .Tabs__tab:not(.active) a:focus {
+    border: 1px solid #333333;
+    color: #333333; }
+  .Tabs_Extended .Tabs__tab a,
+  .Tabs_Extended .Tabs__tab a:hover {
+    border: 1px solid transparent;
+    color: #00ac94;
+    font-family: "LatoBold";
+    font-size: 1.143em;
+    margin-right: 0;
+    min-width: auto;
+    padding: 10px;
+    position: relative; }
+  .Tabs_Extended .Tabs__tab .Badge {
+    padding: 2px 0;
+    vertical-align: super; }
+
+.Tabs_Extended .Tabs_header {
+  overflow-x: hidden; }
+
+.Tabs_Extended .Tabs_extended_badge {
+  background-color: #ff3e2d;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.786em;
+  height: 17px;
+  line-height: 17px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  width: 17px;
+  top: 0; }
 
 .Tabs {
   border: 0px; }
@@ -25637,7 +25685,6 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     display: inline-block;
     font-family: "LatoBold";
     line-height: 37px;
-    min-width: 100px;
     padding: 0 15px;
     position: relative;
     text-align: center; }
@@ -25667,6 +25714,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   position: absolute;
   right: 0px;
   text-align: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   width: 17px;
   top: 5px; }
 
