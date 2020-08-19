@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940009 || Generated: Wed Aug 19 2020 15:20:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940010 || Generated: Wed Aug 19 2020 18:09:17 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7415,7 +7415,7 @@ a.Button.IsDefault,
       margin-left: auto;
       margin-right: 16px; }
     .Card_Surgeries_Container .Card_Surgeries_Description .CircledPatient {
-      font-size: 9px;
+      font-size: 14px;
       height: 48px;
       line-height: 48px;
       width: 48px; }
@@ -19067,8 +19067,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     color: #fff; }
     .ButtonCheckboxInp.active .MultipleSelectionButton-label + .ButtonCheckboxInput_CheckBox input[type='checkbox']::after, .ButtonCheckboxInp.active .MultipleSelectionButton-label:hover + .ButtonCheckboxInput_CheckBox input[type='checkbox']::after {
       border-color: #00bfa5;
-      left: 5px;
-      top: 6px; }
+      left: 3px;
+      top: 4px; }
     .ButtonCheckboxInp.active .MultipleSelectionButton-label + .ButtonCheckboxInput_CheckBox input[type='checkbox']::before, .ButtonCheckboxInp.active .MultipleSelectionButton-label:hover + .ButtonCheckboxInput_CheckBox input[type='checkbox']::before {
       background-color: #fff;
       border: 1px solid #00bfa5; }
@@ -19085,8 +19085,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox input[type='checkbox'] {
       margin: 0;
       -webkit-transition: all 0.1s ease-in-out;
-      transition: all 0.1s ease-in-out;
-      width: 20px; }
+      transition: all 0.1s ease-in-out; }
   .ButtonCheckboxInp .MultipleSelectionButton-label {
     background-color: #fff;
     border: 1px solid #d6d6d6;
@@ -19775,6 +19774,14 @@ body.PanelById.PanelOpened {
 .tablet .PersonCardPreInfo .PersonCardPreInfo_Time.MinWidth600 {
   min-width: auto; }
 
+.PersonCard.IsOpen .PersonCard_header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.PersonCard.IsOpen .PersonCard_expandable {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
 .PersonCard.IsOpen .PersonCard__content .PersonExpandableDiv {
   background-color: #f2fffd; }
 
@@ -19783,10 +19790,11 @@ body.PanelById.PanelOpened {
 
 .PersonCard_header {
   border: 1px solid #d6d6d6;
-  border-radius: 1px;
+  border-radius: 8px;
   display: -webkit-box;
   display: flex;
-  min-height: 56px; }
+  min-height: 56px;
+  overflow: hidden; }
   .PersonCard_header:not(.IsTransparent).PersonCard__content {
     background-color: #fff;
     display: -webkit-box;
@@ -19820,9 +19828,10 @@ body.PanelById.PanelOpened {
     padding: 0; }
   .PersonCard_header.MediumPadding .PersonCard__content,
   .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
-    padding: 10px 16px; }
+    padding: 16px; }
   .PersonCard_header.MediumPadding .PersonCard__actions {
-    padding: 12px 16px; }
+    padding: 16px;
+    padding-left: 0; }
   .PersonCard_header.SmallPadding .PersonCard__actions,
   .PersonCard_header.SmallPadding .PersonCard__content,
   .PersonCard_header.SmallPadding .PersonCard__headerLeftInfo {
@@ -19880,6 +19889,16 @@ body.PanelById.PanelOpened {
   .PersonCard_header .PersonCard__actions.Red {
     background-color: #fad5d5;
     color: inherit; }
+  .PersonCard_header .CircledPatient {
+    background-color: #ebebeb;
+    font-size: 14px;
+    height: 48px;
+    line-height: 48px;
+    width: 48px; }
+    .PersonCard_header .CircledPatient.Male {
+      background-color: #f0faf9; }
+    .PersonCard_header .CircledPatient.Female {
+      background-color: #feeced; }
 
 .PersonCard_expandable {
   border: 1px solid #d6d6d6;
@@ -19887,6 +19906,8 @@ body.PanelById.PanelOpened {
   display: none; }
   .PersonCard_expandable.IsExpanded {
     background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     display: block; }
 
 .PersonCard__headerLeftInfo {
@@ -19896,41 +19917,44 @@ body.PanelById.PanelOpened {
   padding: 10px 16px; }
   .PersonCard__headerLeftInfo.IsLeftSideHide {
     display: none; }
-  .PersonCard__headerLeftInfo.Male {
+  .PersonCard__headerLeftInfo.Male .PersonCardIcon {
     background-color: #f0faf9; }
-    .PersonCard__headerLeftInfo.Male.HasBorder {
-      border-left: 2px solid #194968; }
-      .PersonCard__headerLeftInfo.Male.HasBorder .icon {
-        color: #194968; }
-  .PersonCard__headerLeftInfo.Female {
+  .PersonCard__headerLeftInfo.Male.HasBorder {
+    border-left: 2px solid #194968; }
+    .PersonCard__headerLeftInfo.Male.HasBorder .icon {
+      color: #194968; }
+  .PersonCard__headerLeftInfo.Female .PersonCardIcon {
     background-color: #feeced; }
-    .PersonCard__headerLeftInfo.Female.HasBorder {
-      border-left: 2px solid #c892b3; }
-      .PersonCard__headerLeftInfo.Female.HasBorder .icon {
-        color: #c892b3; }
-  .PersonCard__headerLeftInfo.Unidentified {
+  .PersonCard__headerLeftInfo.Female.HasBorder {
+    border-left: 2px solid #c892b3; }
+    .PersonCard__headerLeftInfo.Female.HasBorder .icon {
+      color: #c892b3; }
+  .PersonCard__headerLeftInfo.Unidentified .PersonCardIcon {
     background-color: #f3f3f3; }
-    .PersonCard__headerLeftInfo.Unidentified.HasBorder {
-      border-left: 2px solid #777777; }
-      .PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
-        color: #777777; }
+  .PersonCard__headerLeftInfo.Unidentified.HasBorder {
+    border-left: 2px solid #777777; }
+    .PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
+      color: #777777; }
   .PersonCard__headerLeftInfo.Red {
-    background-color: #fad5d5;
     color: #333333; }
+    .PersonCard__headerLeftInfo.Red .PersonCardIcon {
+      background-color: #fad5d5; }
     .PersonCard__headerLeftInfo.Red.HasBorder {
       border-left: 2px solid #b10100; }
       .PersonCard__headerLeftInfo.Red.HasBorder .icon {
         color: #b10100; }
   .PersonCard__headerLeftInfo.Green {
-    background-color: #c2dea8;
     color: #333333; }
+    .PersonCard__headerLeftInfo.Green .PersonCardIcon {
+      background-color: #c2dea8; }
     .PersonCard__headerLeftInfo.Green.HasBorder {
       border-left: 2px solid #578329; }
       .PersonCard__headerLeftInfo.Green.HasBorder .icon {
         color: #578329; }
   .PersonCard__headerLeftInfo.Brown {
-    background-color: #e6e2aa;
     color: #333333; }
+    .PersonCard__headerLeftInfo.Brown .PersonCardIcon {
+      background-color: #e6e2aa; }
     .PersonCard__headerLeftInfo.Brown.HasBorder {
       border-left: 2px solid #928d09; }
       .PersonCard__headerLeftInfo.Brown.HasBorder .icon {
@@ -19956,7 +19980,7 @@ body.PanelById.PanelOpened {
 
 .PersonCard__content > div {
   flex-basis: 100%;
-  padding-left: 10px; }
+  padding-left: 8px; }
   .PersonCard__content > div:first-of-type {
     padding-left: 0; }
 
@@ -19991,6 +20015,18 @@ body.PanelById.PanelOpened {
 
 .PersonCard__Complementary .PersonCardPreInfo {
   height: 100%; }
+
+.PersonCard___icon .PersonCardIcon {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #ebebeb;
+  border-radius: 8px;
+  height: 48px;
+  width: 48px; }
 
 .PersonCard___icon:not(:empty) + .PersonCard____title {
   margin-left: 10px; }
@@ -20094,13 +20130,8 @@ body.PanelById.PanelOpened {
 .PersonCard > .PersonCard_header .PersonCard__content {
   color: #5c5c5c;
   -webkit-box-flex: 4;
-          flex: 4; }
-
-.PersonCard____title a .CircledPatient {
-  height: 32px;
-  margin-top: 4px;
-  padding: 5px 0px;
-  width: 32px; }
+          flex: 4;
+  padding-left: 0; }
 
 .PersonCard + .ListRecords .PersonCard a {
   display: -webkit-box;
@@ -21351,7 +21382,7 @@ div.List-Star {
   .ButtonRadioInp_radio input[type='radio'] {
     left: 7px;
     position: absolute;
-    top: 11px; }
+    top: 12px; }
   .ButtonRadioInp_radioText {
     background-color: #fff;
     border: 1px solid #d6d6d6;
