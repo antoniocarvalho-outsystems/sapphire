@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940008 || Generated: Wed Aug 19 2020 14:54:27 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940009 || Generated: Wed Aug 19 2020 15:20:15 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23104,7 +23104,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
               align-items: center;
       display: -webkit-box;
       display: flex;
-      border-radius: 18px; }
+      border-radius: 100px; }
       .select2 .select2-selection.select2-selection--multiple.tagCustom:before {
         color: #777777;
         content: '\e690';
@@ -23287,6 +23287,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   display: inline-block;
   font-size: 1em;
   width: 49%; }
+
+.SelectSystemFilter .select2 .select2-selection {
+  border-radius: 100px !important; }
 
 .AR .select2 .select2-selection,
 .FA .select2 .select2-selection {
