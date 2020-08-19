@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940005 || Generated: Wed Aug 19 2020 11:17:20 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940006 || Generated: Wed Aug 19 2020 12:24:04 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14211,12 +14211,45 @@ div.CircledArrow {
   display: flex; }
   .tablet.portrait .DateNavigationContainer {
     margin-bottom: 10px; }
-  .DateNavigationContainer .DateNavigation_NextDate, .DateNavigationContainer .DateNavigation_PreviousDate {
-    min-width: 50px; }
+  .DateNavigationContainer .DateNavigation_NextDate .CircledArrow, .DateNavigationContainer .DateNavigation_PreviousDate .CircledArrow {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 100px;
+    color: #333333;
+    height: 36px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    width: 36px; }
+    .DateNavigationContainer .DateNavigation_NextDate .CircledArrow:hover, .DateNavigationContainer .DateNavigation_NextDate .CircledArrow:focus, .DateNavigationContainer .DateNavigation_PreviousDate .CircledArrow:hover, .DateNavigationContainer .DateNavigation_PreviousDate .CircledArrow:focus {
+      background-color: #ebebeb; }
   .DateNavigationContainer .DateNavigation_Date {
-    flex-basis: 100%;
-    line-height: 26px;
-    min-width: 95px; }
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 100px;
+    color: #333333;
+    cursor: pointer;
+    font-family: "LatoRegular";
+    height: 36px;
+    min-width: 95px;
+    padding: 0 16px; }
+    .DateNavigationContainer .DateNavigation_Date:hover, .DateNavigationContainer .DateNavigation_Date:focus {
+      background-color: #ebebeb; }
+    .DateNavigationContainer .DateNavigation_Date .CalendarPanelContainer > div a:link,
+    .DateNavigationContainer .DateNavigation_Date .CalendarPanelContainer > div a:visited {
+      color: #333333;
+      font-family: "LatoRegular"; }
 
 .AR .DateNavigationContainer .DateNavigation_NextDate, .AR .DateNavigationContainer .DateNavigation_PreviousDate,
 .FA .DateNavigationContainer .DateNavigation_NextDate,
@@ -19084,52 +19117,53 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .FA .ButtonCheckboxInp .MultipleSelectionButton-label {
   padding: 0 32px 0 10px; }
 
-.navigation-control.IsAttached .navigation-control-item:last-of-type {
-  margin: 0; }
-
-.navigation-control .navigation-control-item {
-  display: -webkit-inline-box;
-  display: inline-flex;
-  height: 2.572em;
-  line-height: 100%;
-  overflow: hidden;
-  position: relative;
-  vertical-align: top;
-  width: 2.572em; }
-  .navigation-control .navigation-control-item--disabled {
-    pointer-events: none; }
-    .navigation-control .navigation-control-item--disabled a:link,
-    .navigation-control .navigation-control-item--disabled a:visited {
-      border-color: #d6d6d6;
-      color: #d6d6d6; }
-      .navigation-control .navigation-control-item--disabled a:link:hover, .navigation-control .navigation-control-item--disabled a:link:focus,
-      .navigation-control .navigation-control-item--disabled a:visited:hover,
-      .navigation-control .navigation-control-item--disabled a:visited:focus {
-        background-color: transparent;
-        border-color: #d6d6d6; }
-  .navigation-control .navigation-control-item:last-of-type {
-    margin-left: 8px; }
-  .navigation-control .navigation-control-item a {
-    background-color: #fff;
-    border: 1px solid #d6d6d6;
-    border-radius: 100px;
-    color: #333333;
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-    width: 100%; }
-    .navigation-control .navigation-control-item a:hover, .navigation-control .navigation-control-item a:focus {
-      background-color: #ebebeb; }
-  .navigation-control .navigation-control-item label {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    cursor: pointer;
-    height: 100%; }
-    .navigation-control .navigation-control-item label > div.MultiMarginLeft5 {
-      display: none; }
+.navigation-control {
+  white-space: nowrap; }
+  .navigation-control.IsAttached .navigation-control-item:last-of-type {
+    margin: 0; }
+  .navigation-control .navigation-control-item {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    height: 2.572em;
+    line-height: 100%;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    width: 2.572em; }
+    .navigation-control .navigation-control-item--disabled {
+      pointer-events: none; }
+      .navigation-control .navigation-control-item--disabled a:link,
+      .navigation-control .navigation-control-item--disabled a:visited {
+        border-color: #d6d6d6;
+        color: #d6d6d6; }
+        .navigation-control .navigation-control-item--disabled a:link:hover, .navigation-control .navigation-control-item--disabled a:link:focus,
+        .navigation-control .navigation-control-item--disabled a:visited:hover,
+        .navigation-control .navigation-control-item--disabled a:visited:focus {
+          background-color: transparent;
+          border-color: #d6d6d6; }
+    .navigation-control .navigation-control-item:last-of-type {
+      margin-left: 8px; }
+    .navigation-control .navigation-control-item a {
+      background-color: #fff;
+      border: 1px solid #d6d6d6;
+      border-radius: 100px;
+      color: #333333;
+      -webkit-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+      width: 100%; }
+      .navigation-control .navigation-control-item a:hover, .navigation-control .navigation-control-item a:focus {
+        background-color: #ebebeb; }
+    .navigation-control .navigation-control-item label {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      cursor: pointer;
+      height: 100%; }
+      .navigation-control .navigation-control-item label > div.MultiMarginLeft5 {
+        display: none; }
 
 .AR .navigation-control.IsAttached .navigation-control-item:last-of-type,
 .FA .navigation-control.IsAttached .navigation-control-item:last-of-type {
@@ -29046,41 +29080,12 @@ div[id*='SectionTitleContainer'] + div {
   display: -webkit-box;
   display: flex;
   height: 40px;
-  margin-bottom: 18px;
-  width: 315px; }
+  margin-bottom: 18px; }
   .AgendaCalendar___Header--Content a.Button, .AgendaCalendar___Header--Content .DropZoneContainer .row .Button, .DropZoneContainer .row .AgendaCalendar___Header--Content .Button {
     margin-right: 18px !important; }
 
 .AgendaCalendar___Header .SegmentedControl {
   margin: 0; }
-  .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item {
-    border: 1px solid;
-    border-radius: 50%;
-    font-size: 0.857em;
-    height: 20px;
-    min-height: 0;
-    width: 20px; }
-    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item a {
-      -webkit-box-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: flex;
-      height: 100%;
-      -webkit-box-pack: center;
-              justify-content: center;
-      width: 100%; }
-    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item label {
-      -webkit-box-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center; }
-    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item span {
-      position: relative;
-      top: 1px; }
-    .AgendaCalendar___Header .SegmentedControl .navigation-control .navigation-control-item:first-child {
-      margin-right: 6px; }
 
 .AgendaCalendar___Title {
   -webkit-box-align: center;
