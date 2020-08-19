@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.940002 || Generated: Tue Aug 18 2020 18:14:58 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.940003 || Generated: Wed Aug 19 2020 10:44:18 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3342,6 +3342,13 @@ div[onclick] {
   border: 5px solid #d6d6d6;
   border-radius: 4px; }
 
+.intl-tel-input.allow-dropdown input,
+.intl-tel-input.allow-dropdown input[type='tel'],
+.intl-tel-input.allow-dropdown input[type='text'], .intl-tel-input.separate-dial-code input,
+.intl-tel-input.separate-dial-code input[type='tel'],
+.intl-tel-input.separate-dial-code input[type='text'] {
+  padding-right: 16px; }
+
 .AR .intl-tel-input.allow-dropdown .flag-container, .AR .intl-tel-input.separate-dial-code .flag-container,
 .FA .intl-tel-input.allow-dropdown .flag-container,
 .FA .intl-tel-input.separate-dial-code .flag-container {
@@ -3388,9 +3395,24 @@ div[onclick] {
 .FA .intl-tel-input.separate-dial-code input[type='tel'],
 .FA .intl-tel-input.separate-dial-code input[type='text'] {
   direction: ltr;
-  padding-left: 0 !important;
-  padding-right: 92px;
+  padding-left: 16px !important;
   text-align: end; }
+
+.AR .intl-tel-input.allow-dropdown input,
+.AR .intl-tel-input.allow-dropdown input[type='tel'],
+.AR .intl-tel-input.allow-dropdown input[type='text'],
+.FA .intl-tel-input.allow-dropdown input,
+.FA .intl-tel-input.allow-dropdown input[type='tel'],
+.FA .intl-tel-input.allow-dropdown input[type='text'] {
+  padding-right: 52px; }
+
+.AR .intl-tel-input.separate-dial-code input,
+.AR .intl-tel-input.separate-dial-code input[type='tel'],
+.AR .intl-tel-input.separate-dial-code input[type='text'],
+.FA .intl-tel-input.separate-dial-code input,
+.FA .intl-tel-input.separate-dial-code input[type='tel'],
+.FA .intl-tel-input.separate-dial-code input[type='text'] {
+  padding-right: 92px; }
 
 .daterangepicker {
   background-color: #fff;
@@ -4569,7 +4591,7 @@ body.PanelById.PanelOpened {
     .select2 .select2-selection .select2-selection__rendered {
       color: #333333;
       line-height: 36px;
-      padding-left: 10px;
+      padding-left: 16px;
       padding-right: 36px; }
       .select2 .select2-selection .select2-selection__rendered .select2-search {
         height: calc($select-system-height - 2px); }
@@ -4753,7 +4775,7 @@ body.PanelById.PanelOpened {
   .AR .select2 .select2-selection .select2-selection__rendered,
   .FA .select2 .select2-selection .select2-selection__rendered {
     padding-left: 36px;
-    padding-right: 10px; }
+    padding-right: 16px; }
     .AR .select2 .select2-selection .select2-selection__rendered .select2-selection__choice,
     .FA .select2 .select2-selection .select2-selection__rendered .select2-selection__choice {
       padding-left: 25px;

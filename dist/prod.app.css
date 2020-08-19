@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940002 || Generated: Tue Aug 18 2020 18:14:58 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940003 || Generated: Wed Aug 19 2020 10:44:18 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4751,7 +4751,7 @@ input[type='number'] {
   box-sizing: border-box;
   font-size: 1em;
   height: 36px;
-  padding: 0 10px;
+  padding: 0 16px;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in; }
   select::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input[type='text']::-webkit-input-placeholder, input[type='number']::-webkit-input-placeholder {
@@ -4866,7 +4866,8 @@ input[type='number'] {
     border: 1px solid #ff3e2d;
     border-left-width: 3px;
     border-radius: 4px;
-    box-shadow: none; }
+    box-shadow: none;
+    padding: 0 16px; }
     select.Not_Valid:hover, select.Not_Valid:focus,
     textarea.Not_Valid:hover,
     textarea.Not_Valid:focus,
@@ -4887,7 +4888,7 @@ input[type='number'] {
 textarea {
   height: auto;
   min-height: 64px;
-  padding: 10px;
+  padding: 16px;
   resize: none; }
   textarea::-webkit-scrollbar {
     background-color: #fff;
@@ -7908,7 +7909,7 @@ a.Button.IsDefault,
   background-position: right 14px center;
   background-repeat: no-repeat;
   color: #333333;
-  padding: 0 35px 0 10px; }
+  padding: 0 35px 0 16px; }
   .Dropdown.Mandatory, .Page .FormField select.Mandatory,
   .LayoutPopup .FormField select.Mandatory,
   .LayoutBlank .FormField select.Mandatory,
@@ -7941,7 +7942,7 @@ a.Button.IsDefault,
   font-family: "TajawalRegular";
   font-size: 15px;
   line-height: 19px;
-  padding: 5px 10px 5px 36px; }
+  padding: 5px 16px 5px 36px; }
   .AR .Dropdown:disabled, .AR .Page .FormField select:disabled, .Page .FormField .AR select:disabled,
   .AR .LayoutPopup .FormField select:disabled, .LayoutPopup .FormField .AR select:disabled,
   .AR .LayoutBlank .FormField select:disabled, .LayoutBlank .FormField .AR select:disabled,
@@ -11667,7 +11668,7 @@ html body {
     box-shadow: none;
     height: 36px;
     line-height: 36px;
-    padding: 0 10px 0 35px; }
+    padding: 0 16px 0 35px; }
     .Page .Search_wrapper input[type='text']:not(:hover) {
       border-color: #d6d6d6; }
 
@@ -11679,7 +11680,7 @@ html body {
 .AR .Page .Search_wrapper input[type='text'],
 .FA .Page .Search_wrapper input[type='text'] {
   border: 1px solid #d6d6d6;
-  padding-left: 0;
+  padding-left: 16px;
   padding-right: 35px; }
 
 /* Javascript_Lib Components */
@@ -14076,6 +14077,13 @@ div.CircledArrow {
   border: 5px solid #d6d6d6;
   border-radius: 4px; }
 
+.intl-tel-input.allow-dropdown input,
+.intl-tel-input.allow-dropdown input[type='tel'],
+.intl-tel-input.allow-dropdown input[type='text'], .intl-tel-input.separate-dial-code input,
+.intl-tel-input.separate-dial-code input[type='tel'],
+.intl-tel-input.separate-dial-code input[type='text'] {
+  padding-right: 16px; }
+
 .AR .intl-tel-input.allow-dropdown .flag-container, .AR .intl-tel-input.separate-dial-code .flag-container,
 .FA .intl-tel-input.allow-dropdown .flag-container,
 .FA .intl-tel-input.separate-dial-code .flag-container {
@@ -14122,9 +14130,24 @@ div.CircledArrow {
 .FA .intl-tel-input.separate-dial-code input[type='tel'],
 .FA .intl-tel-input.separate-dial-code input[type='text'] {
   direction: ltr;
-  padding-left: 0 !important;
-  padding-right: 92px;
+  padding-left: 16px !important;
   text-align: end; }
+
+.AR .intl-tel-input.allow-dropdown input,
+.AR .intl-tel-input.allow-dropdown input[type='tel'],
+.AR .intl-tel-input.allow-dropdown input[type='text'],
+.FA .intl-tel-input.allow-dropdown input,
+.FA .intl-tel-input.allow-dropdown input[type='tel'],
+.FA .intl-tel-input.allow-dropdown input[type='text'] {
+  padding-right: 52px; }
+
+.AR .intl-tel-input.separate-dial-code input,
+.AR .intl-tel-input.separate-dial-code input[type='tel'],
+.AR .intl-tel-input.separate-dial-code input[type='text'],
+.FA .intl-tel-input.separate-dial-code input,
+.FA .intl-tel-input.separate-dial-code input[type='tel'],
+.FA .intl-tel-input.separate-dial-code input[type='text'] {
+  padding-right: 92px; }
 
 .DataFrame {
   background-color: #fff;
@@ -23076,7 +23099,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .select2 .select2-selection .select2-selection__rendered {
       color: #333333;
       line-height: 36px;
-      padding-left: 10px;
+      padding-left: 16px;
       padding-right: 36px; }
       .select2 .select2-selection .select2-selection__rendered .select2-search {
         height: calc($select-system-height - 2px); }
@@ -23260,7 +23283,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .AR .select2 .select2-selection .select2-selection__rendered,
   .FA .select2 .select2-selection .select2-selection__rendered {
     padding-left: 36px;
-    padding-right: 10px; }
+    padding-right: 16px; }
     .AR .select2 .select2-selection .select2-selection__rendered .select2-selection__choice,
     .FA .select2 .select2-selection .select2-selection__rendered .select2-selection__choice {
       padding-left: 25px;
