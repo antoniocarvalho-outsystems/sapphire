@@ -1,9 +1,5 @@
 //Prego
 $headerTitleHight: 40px;
-$calendarButtonDateDistance: 315px;
-$arrowButtonSize: 20px;
-div[id*='PageHeadSearch'] {
-}
 
 div[id*='SectionTitleContainer'] + div {
 	display: inline;
@@ -21,7 +17,6 @@ div[id*='SectionTitleContainer'] + div {
 			display: flex;
 			height: $headerTitleHight;
 			margin-bottom: 18px;
-			width: $calendarButtonDateDistance;
 
 			a.Button {
 				margin-right: 18px !important;
@@ -30,37 +25,6 @@ div[id*='SectionTitleContainer'] + div {
 
 		.SegmentedControl {
 			margin: 0;
-			.navigation-control {
-				.navigation-control-item {
-					border: 1px solid;
-					border-radius: 50%;
-					font-size: $font-size-small;
-					height: $arrowButtonSize;
-					min-height: 0;
-					width: $arrowButtonSize;
-					a {
-						align-items: center;
-						display: flex;
-						height: 100%;
-						justify-content: center;
-						width: 100%;
-					}
-					label {
-						align-items: center;
-						display: flex;
-						justify-content: center;
-					}
-
-					span {
-						position: relative;
-						top: 1px;
-					}
-
-					&:first-child {
-						margin-right: 6px;
-					}
-				}
-			}
 		}
 	}
 
@@ -131,9 +95,6 @@ div[id*='SectionTitleContainer'] + div {
 						top: 3px;
 					}
 				}
-			}
-
-			.RefreshIcon___Container {
 			}
 		}
 	}
