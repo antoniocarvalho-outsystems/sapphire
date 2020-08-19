@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940007 || Generated: Wed Aug 19 2020 13:13:44 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940008 || Generated: Wed Aug 19 2020 14:54:27 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15021,37 +15021,31 @@ body.PanelOpened .daterangepicker {
 .DoctorBox {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
   font-size: 1em;
   position: relative;
   width: 230px; }
   .DoctorBox.DoctorStatus {
+    border-radius: 0;
     display: table;
+    padding: 8px 16px;
     text-align: center;
     width: 100%; }
     .DoctorBox.DoctorStatus.Available {
       background-color: #7cb342;
       border: none;
-      border-radius: 0;
-      border-top: 1px solid #578329;
-      color: #fff;
-      padding: 4px;
-      width: 100%; }
+      color: #fff; }
     .DoctorBox.DoctorStatus.Locked {
       background-color: #d6d6d6;
-      border: none;
-      border-radius: 0;
-      border-top: 1px solid #777777;
-      color: #5c5c5c;
-      padding: 4px;
-      width: 100%; }
+      border: none; }
   .DoctorBox_DoctorSurgeryHeader {
-    height: 40px;
-    line-height: 40px;
-    padding: 0 10px; }
-  .DoctorBox.DoctorStatusMessage, .DoctorBox.DoctorStatusLocked {
-    font-size: 0.857em;
+    font-family: "LatoBold";
+    padding: 16px; }
+  .DoctorBox .DoctorStatusMessage {
+    font-size: 0.857em; }
+  .DoctorBox .DoctorStatusMessage,
+  .DoctorBox .DoctorStatusLocked {
+    text-align: initial;
     vertical-align: middle; }
   .DoctorBox .AvailableSlotSeverity {
     display: -webkit-box;
@@ -15060,18 +15054,21 @@ body.PanelOpened .daterangepicker {
       border-left: 1px solid #d6d6d6;
       border-top: none;
       display: inline-block;
-      height: 50px;
-      padding: 6px 0 0 0;
+      padding: 8px 0;
       width: 100%; }
       .DoctorBox .AvailableSlotSeverity_Counter:first-child {
         border-left: none;
         border-right: none; }
+      .DoctorBox .AvailableSlotSeverity_Counter > *:first-child {
+        font-size: 1.286em; }
+      .DoctorBox .AvailableSlotSeverity_Counter > *:last-child {
+        color: #777777;
+        font-size: 0.857em; }
 
 .AR .AvailableSlotSeverity_Counter,
 .FA .AvailableSlotSeverity_Counter {
   border-left: none;
-  border-right: 1px solid #d6d6d6;
-  font-size: 1.143em; }
+  border-right: 1px solid #d6d6d6; }
 
 .DragDrop-area {
   position: relative; }
