@@ -1,5 +1,15 @@
 .PersonCard {
 	&.IsOpen {
+		.PersonCard_header {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		.PersonCard_expandable {
+			border-bottom-left-radius: $border-radius-medium;
+			border-bottom-right-radius: $border-radius-medium;
+		}
+
 		.PersonCard__content .PersonExpandableDiv {
 			background-color: $regular-eta;
 		}
@@ -11,9 +21,10 @@
 
 	&_header {
 		border: 1px solid $light-grey;
-		border-radius: 1px;
+		border-radius: $border-radius-medium;
 		display: flex;
 		min-height: 56px;
+		overflow: hidden;
 
 		&:not(.IsTransparent).PersonCard__content {
 			background-color: $regular-white;
@@ -62,11 +73,12 @@
 		&.MediumPadding {
 			.PersonCard__content,
 			.PersonCard__headerLeftInfo {
-				padding: 10px $sapphire-sizes--medium;
+				padding: $sapphire-sizes--medium;
 			}
 
 			.PersonCard__actions {
-				padding: 12px $sapphire-sizes--medium;
+				padding: $sapphire-sizes--medium;
+				padding-left: 0;
 			}
 		}
 
@@ -165,6 +177,22 @@
 				color: inherit;
 			}
 		}
+
+		.CircledPatient {
+			background-color: $sapphire-light;
+			font-size: 14px;
+			height: 48px;
+			line-height: 48px;
+			width: 48px;
+
+			&.Male {
+				background-color: $light-blue-2;
+			}
+
+			&.Female {
+				background-color: $light-pink-2;
+			}
+		}
 	}
 
 	&_expandable {
@@ -174,6 +202,8 @@
 
 		&.IsExpanded {
 			background-color: $regular-white;
+			border-bottom-left-radius: $border-radius-medium;
+			border-bottom-right-radius: $border-radius-medium;
 			display: block;
 		}
 	}
@@ -189,7 +219,9 @@
 
 		// Colors
 		&.Male {
-			background-color: $light-blue-2;
+			.PersonCardIcon {
+				background-color: $light-blue-2;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $sapphire-male;
@@ -201,7 +233,9 @@
 		}
 
 		&.Female {
-			background-color: $light-pink-2;
+			.PersonCardIcon {
+				background-color: $light-pink-2;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $sapphire-female;
@@ -213,7 +247,9 @@
 		}
 
 		&.Unidentified {
-			background-color: $body-color;
+			.PersonCardIcon {
+				background-color: $body-color;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $regular-grey;
@@ -225,8 +261,11 @@
 		}
 
 		&.Red {
-			background-color: $light-red;
 			color: $dark-grey;
+
+			.PersonCardIcon {
+				background-color: $light-red;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $dark-red;
@@ -238,8 +277,11 @@
 		}
 
 		&.Green {
-			background-color: $light-green;
 			color: $dark-grey;
+
+			.PersonCardIcon {
+				background-color: $light-green;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $dark-green;
@@ -251,8 +293,11 @@
 		}
 
 		&.Brown {
-			background-color: $regular-beige;
 			color: $dark-grey;
+
+			.PersonCardIcon {
+				background-color: $regular-beige;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $dark-beige;
@@ -304,7 +349,7 @@
 	&__content {
 		> div {
 			flex-basis: 100%;
-			padding-left: 10px;
+			padding-left: $sapphire-sizes--small;
 
 			&:first-of-type {
 				padding-left: 0;
@@ -358,6 +403,15 @@
 	}
 
 	&___icon {
+		.PersonCardIcon {
+			@include flex-center-total(inline-flex);
+
+			background-color: $sapphire-light;
+			border-radius: $border-radius-medium;
+			height: 48px;
+			width: 48px;
+		}
+
 		&:not(:empty) + .PersonCard____title {
 			margin-left: 10px;
 		}
@@ -496,15 +550,7 @@
 		.PersonCard__content {
 			color: $mid-dark-grey;
 			flex: 4;
-		}
-	}
-
-	&____title {
-		a .CircledPatient {
-			height: 32px;
-			margin-top: 4px;
-			padding: 5px 0px;
-			width: 32px;
+			padding-left: 0;
 		}
 	}
 }
