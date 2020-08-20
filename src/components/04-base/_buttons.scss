@@ -101,32 +101,6 @@ a.Button.IsDefault,
 				color: $light-grey;
 			}
 		}
-
-		&.SearchMagnifier {
-			background-color: $regular-alpha;
-			border-radius: 2px;
-			min-width: auto;
-			padding: 0 10px;
-
-			@include link-style-all {
-				min-width: auto;
-			}
-
-			&:active,
-			&:hover {
-				background-color: $regular-epsilon;
-			}
-
-			&:after {
-				content: '\e690';
-				font-family: $font-family-icons;
-			}
-
-			&:disabled,
-			&[disabled] {
-				@include disabled-button();
-			}
-		}
 	}
 
 	&.Third,

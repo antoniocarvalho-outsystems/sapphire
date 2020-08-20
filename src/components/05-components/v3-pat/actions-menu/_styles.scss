@@ -112,23 +112,23 @@ $ActionsMenu-color-active: $regular-alpha;
 }
 
 .ActionsMenu-tooltip.Padding--XSmall .tooltipster-content > section > div {
-	padding: 3px;
+	padding: $sapphire-sizes--xsmall;
 }
 
 .ActionsMenu-tooltip.Padding--Small .tooltipster-content > section > div {
-	padding: 6px;
+	padding: $sapphire-sizes--small;
 }
 
 .ActionsMenu-tooltip.Padding--Medium .tooltipster-content > section > div {
-	padding: 10px;
-}
-
-.ActionsMenu-tooltip.Padding--Large .tooltipster-content > section > div {
 	padding: $sapphire-sizes--medium;
 }
 
+.ActionsMenu-tooltip.Padding--Large .tooltipster-content > section > div {
+	padding: $sapphire-sizes--large;
+}
+
 .ActionsMenu-tooltip.Padding--XLarge .tooltipster-content > section > div {
-	padding: 26px;
+	padding: $sapphire-sizes--xlarge;
 }
 
 .FA .ActionsMenu-label,

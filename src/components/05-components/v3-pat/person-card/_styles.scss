@@ -20,6 +20,7 @@
 	}
 
 	&_header {
+		background-color: $regular-white;
 		border: 1px solid $light-grey;
 		border-radius: $border-radius-medium;
 		display: flex;
@@ -71,8 +72,12 @@
 		}
 
 		&.MediumPadding {
-			.PersonCard__content,
 			.PersonCard__headerLeftInfo {
+				padding: $sapphire-sizes--medium;
+				padding-right: 0;
+			}
+
+			.PersonCard__content {
 				padding: $sapphire-sizes--medium;
 			}
 
@@ -381,20 +386,12 @@
 	}
 
 	&__Complementary {
-		&:not(:empty) {
-			flex-basis: 35%;
-		}
-
-		&:not(:empty) ~ .PersonCard__content {
+		&:not(:empty) ~ .PersonCard__headerLeftInfo {
 			padding-left: 0;
 		}
 
 		&:not(:empty) ~ .PersonCard__actions {
 			flex-basis: 20%;
-		}
-
-		&:not(:empty) ~ .PersonCard__headerLeftInfo {
-			display: none;
 		}
 
 		.PersonCardPreInfo {
@@ -413,7 +410,7 @@
 		}
 
 		&:not(:empty) + .PersonCard____title {
-			margin-left: 10px;
+			margin-left: $sapphire-sizes--small;
 		}
 	}
 
@@ -433,8 +430,6 @@
 			display: flex;
 			font-size: inherit;
 			line-height: inherit;
-			padding-left: 10px;
-			text-align: left;
 		}
 
 		.Small_Description {
@@ -445,10 +440,6 @@
 		}
 	}
 
-	.Icon_CardAll {
-		padding-top: 5px;
-	}
-
 	.DescriptionContainer {
 		display: flex;
 		flex-direction: column;
@@ -457,6 +448,7 @@
 		> .Small_Description {
 			align-self: center;
 			flex: 1;
+			padding: 0;
 		}
 	}
 
@@ -495,6 +487,20 @@
 .AR,
 .FA {
 	.PersonCard {
+		&_header {
+			&.MediumPadding {
+				.PersonCard__headerLeftInfo {
+					padding-left: 0;
+					padding-right: $sapphire-sizes--medium;
+				}
+
+				.PersonCard__actions {
+					padding-left: $sapphire-sizes--medium;
+					padding-right: 0;
+				}
+			}
+		}
+
 		&__headerLeftInfo {
 			&.Male.HasBorder {
 				border-left: none;
@@ -517,6 +523,12 @@
 			}
 		}
 
+		&__Complementary {
+			&:not(:empty) ~ .PersonCard__headerLeftInfo {
+				padding-right: 0;
+			}
+		}
+
 		&___icon:not(:empty) + .PersonCard____title {
 			margin-left: 0;
 			margin-right: 10px;
@@ -526,16 +538,6 @@
 	.PersonExpandableDiv:before {
 		left: auto;
 		right: 0px;
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	.PersonCard__headerLeftInfo {
-		display: block;
-	}
-
-	.PersonCard___icon:not(:empty) + .PersonCard____title {
-		margin: 0;
 	}
 }
 
@@ -550,7 +552,6 @@
 		.PersonCard__content {
 			color: $mid-dark-grey;
 			flex: 4;
-			padding-left: 0;
 		}
 	}
 }
@@ -578,16 +579,31 @@
 
 .ListRecords {
 	.PersonCard {
-		&:last-of-type .PersonCard_header {
-			border-bottom: 1px solid $light-grey;
+		&_header {
+			border-bottom: none;
+			border-radius: 0;
+		}
+	}
 
+	> *:first-child {
+		.PersonCard_header {
+			border-top-left-radius: $border-radius-medium;
+			border-top-right-radius: $border-radius-medium;
+		}
+	}
+
+	> *:last-child {
+		.PersonCard_header {
+			border-bottom-left-radius: $border-radius-medium;
+			border-bottom-right-radius: $border-radius-medium;
+		}
+	}
+
+	.PersonCard {
+		&:last-of-type .PersonCard_header {
 			&.Selected {
 				border: 1px solid $regular-beta;
 			}
-		}
-
-		&_header {
-			border-bottom: none;
 		}
 	}
 
@@ -646,18 +662,38 @@ a {
 }
 
 .tablet {
-	.PersonCard___icon {
-		float: left;
-		margin-right: 6px;
-	}
+	.PersonCard {
+		&__Complementary {
+			&:empty ~ .PersonCard__headerLeftInfo {
+				flex-basis: 100%;
+			}
 
-	.PersonCard____title {
-		float: left;
-	}
+			&:not(:empty) ~ .PersonCard__headerLeftInfo {
+				padding-left: 0;
+				padding-right: $sapphire-sizes--medium;
+			}
+		}
 
-	.PersonCard__actions {
-		max-width: none;
-		text-align: right;
+		&_header {
+			flex-wrap: wrap;
+		}
+
+		&__headerLeftInfo {
+			flex: 1;
+		}
+
+		&__content {
+			border-top: 1px solid $light-grey;
+			flex-basis: 100% !important;
+			margin-left: 72px;
+			padding-left: 0 !important;
+		}
+
+		&__actions {
+			flex-basis: 100% !important;
+			max-width: none;
+			text-align: right;
+		}
 	}
 
 	.PersonCard.IsShowTitles .PersonCard_header.IsTransparent {
@@ -699,28 +735,16 @@ a {
 	display: none;
 }
 
-.phone .PersonCard_header,
-.tablet .PersonCard_header {
+.phone .PersonCard_header {
 	flex-direction: column;
 }
 
-.phone .PersonCard_header > div,
-.tablet .PersonCard_header > div {
+.phone .PersonCard_header > div {
 	width: 100% !important;
 }
 
 .desktop:not(.hd) .PersonCard_header .PersonCard__content.MinWidthSmall > div:first-of-type {
 	min-width: 250px;
-}
-
-.desktop:not(.hd) .PersonCard__Complementary:not(:empty) ~ .PersonCard__actions {
-	flex-basis: 28%;
-}
-
-.tablet .PersonCard_header .PersonCard__actions a.Button {
-	height: auto;
-	line-height: 22px;
-	white-space: normal;
 }
 
 .LayoutPopup__body__content .PersonCard__headerLeftInfo {

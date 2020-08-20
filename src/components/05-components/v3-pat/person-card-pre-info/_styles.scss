@@ -1,93 +1,75 @@
 .PersonCardPreInfo {
-  background-color: $sapphire-white;
-  display: flex;
-  flex: auto;
-  flex-basis: 100%;
-  flex-direction: row;
-  flex-wrap: nowrap;
+	background-color: $sapphire-white;
+	display: flex;
+	flex: auto;
+	flex-basis: 100%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: $sapphire-sizes--medium;
 
-  >div {
-    color: $regular-grey;
-    flex-basis: 100%;
-    text-align: center;
-    width: 70px;
-  }
+	> div {
+		box-sizing: content-box;
+		display: inline-flex;
+		flex-basis: 100%;
+		flex-direction: column;
+		justify-content: center;
+		padding-right: $sapphire-sizes--small;
+		width: 48px;
 
-  .PersonCardPreInfo_Time {
-    >div {
-      height: 100%;
-      padding: 10px;
-    }
-  }
+		&:last-child {
+			padding-right: 0;
+		}
+	}
 
-  .PersonCardPreInfo_Number {
-    >div {
-      height: 100%;
-      padding: 10px;
-    }
+	.ColoredBox {
+		border-radius: $border-radius-medium;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-heading3;
+		height: 48px;
+		padding: 0;
+		width: 48px;
 
-    border-right: solid 1px $light-grey;
-    min-width: 46px;
-  }
+		&__Content {
+			@include flex-center-total(inline-flex);
 
-  .PersonCardPreInfo_info {
-    >div {
-      height: 100%;
-      padding: 10px;
-    }
-  }
+			height: 100%;
+			width: 100%;
+		}
+	}
 
-  div {
-    &:nth-child(5) {
-      max-width: 50px;
+	.PersonCardPreInfo_Time.PreInfoXSmall {
+		min-width: 125px;
+	}
 
-      >div {
-        padding: 10px 0;
-      }
-    }
+	.PersonCardPreInfo_Time.PreInfoSmall {
+		min-width: 200px;
+	}
 
-    &:nth-child(6) {
-      max-width: 50px;
+	.PersonCardPreInfo_Time.PreInfoMedium {
+		min-width: 400px;
+	}
 
-      >div {
-        padding: 10px 0;
-      }
-    }
-  }
-
-  .PersonCardPreInfo_Time.MinWidth150 {
-    min-width: 150px;
-  }
-
-  .PersonCardPreInfo_Time.MinWidth200 {
-    min-width: 200px;
-  }
-
-  .PersonCardPreInfo_Time.MinWidth400 {
-    min-width: 400px;
-  }
-
-  .PersonCardPreInfo_Time.MinWidth600 {
-    min-width: 600px;
-  }
+	.PersonCardPreInfo_Time.PreInfoLarge {
+		min-width: 600px;
+	}
 }
 
 .tablet {
-  .PersonCardPreInfo {
-    .PersonCardPreInfo_Time.MinWidth150 {
-      min-width: auto;
-    }
+	.PersonCardPreInfo {
+		.PersonCardPreInfo_Time.MinWidth150 {
+			min-width: auto;
+		}
 
-    .PersonCardPreInfo_Time.MinWidth200 {
-      min-width: auto;
-    }
+		.PersonCardPreInfo_Time.MinWidth200 {
+			min-width: auto;
+		}
 
-    .PersonCardPreInfo_Time.MinWidth400 {
-      min-width: auto;
-    }
+		.PersonCardPreInfo_Time.MinWidth400 {
+			min-width: auto;
+		}
 
-    .PersonCardPreInfo_Time.MinWidth600 {
-      min-width: auto;
-    }
-  }
+		.PersonCardPreInfo_Time.MinWidth600 {
+			min-width: auto;
+		}
+	}
 }

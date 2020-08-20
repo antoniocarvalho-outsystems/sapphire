@@ -1,57 +1,59 @@
 .CardAll {
-  display: table;
+	display: table;
+
+	.Icon_CardAll {
+		background-color: transparent;
+		border-radius: 50%;
+		line-height: 30px;
+		text-align: center;
+		width: auto;
+	}
+
+	.DescriptionContainer {
+		font-size: $font-size-heading3;
+		line-height: 18px;
+		padding-left: $sapphire-sizes--small;
+		text-align: left;
+
+		.Description {
+			display: block;
+			font-family: $font-family-latin-bold;
+			line-height: 18px;
+		}
+
+		.Small_Description {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 185px;
+		}
+	}
 }
 
-.Icon_CardAll {
-  background-color: transparent;
-  border-radius: 50%;
-  color: #124a61;
-  line-height: 30px;
-  text-align: center;
-  width: auto;
+.AR,
+.FA {
+	.CardAll {
+		.DescriptionContainer {
+			padding-left: 0;
+			padding-right: $sapphire-sizes--small;
+			text-align: right;
+
+			.Description {
+				font-family: $font-family-latin-bold;
+			}
+		}
+	}
 }
 
-.DescriptionContainer {
-  font-family: $font-family-latin-bold;
-  font-size: $font-size-heading3;
-  line-height: 18px;
-  padding-left: 10px;
-  text-align: left;
-}
-
-.FA .DescriptionContainer,
-.AR .DescriptionContainer {
-  font-family: $font-family-arabic-bold;
-  text-align: right;
-}
-
-.Description {
-  display: block;
-  line-height: 18px;
-  padding: 2px;
-}
-
-.desktop .Description,
-.desktop.small .Description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 130px;
-}
-
-.phone .Description {
-  padding: 0;
-}
-
-.FA .Description,
-.AR .Description {
-  font-size: 15px;
-  margin-right: 10px;
-}
-
-.Small_Description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 185px;
-}
+// .desktop {
+// 	.CardAll {
+// 		.DescriptionContainer {
+// 			.Description {
+// 				overflow: hidden;
+// 				text-overflow: ellipsis;
+// 				white-space: nowrap;
+// 				width: 130px;
+// 			}
+// 		}
+// 	}
+// }
