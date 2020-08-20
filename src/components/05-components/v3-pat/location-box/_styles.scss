@@ -1,9 +1,7 @@
 .RoomBoxOT {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
-	border-radius: $border-radius-default;
-	text-align: center;
-	width: 140px;
+	border-radius: $border-radius-medium;
 
 	&.Selected {
 		border: 2px solid $regular-alpha;
@@ -12,28 +10,32 @@
 
 	.Counter {
 		border-bottom: none;
+		border-top: 1px solid $light-grey;
 		color: $dark-grey;
-		font-size: 1.714em;
-		height: 68px;
-		padding: 8px;
+		padding: $sapphire-sizes--medium;
+
+		> div:first-child {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-heading3;
+		}
 
 		.ColorGreyText {
-			font-size: 14px;
+			font-size: $font-size-small;
 		}
-	}
-
-	.Columns .Column {
-		margin-bottom: 0;
 	}
 
 	.RoomNameSmall {
 		font-family: $font-family-latin-bold;
-		padding: 10px;
+		padding: $sapphire-sizes--medium;
 	}
 
 	.RoomTypeSmall {
 		font-size: 0.857em;
 		padding-bottom: 10px;
+	}
+
+	.RoomBoxLevels {
+		display: flex;
 	}
 }
 

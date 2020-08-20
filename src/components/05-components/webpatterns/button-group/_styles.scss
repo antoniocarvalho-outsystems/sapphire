@@ -106,7 +106,6 @@
 			&:not(.active):hover {
 				background-color: $sapphire-light;
 				border: none;
-				box-shadow: -1px -1px 0px 0px $sapphire-light;
 			}
 
 			&.Button.active {
@@ -114,7 +113,7 @@
 				border: none;
 				box-shadow: 0 0 0 1px $mid-dark-grey;
 				font-family: $font-family-latin-regular;
-				text-shadow: 1px 0 0 $regular-white;
+				text-shadow: 0 0 1px $regular-white;
 				z-index: 1;
 			}
 
