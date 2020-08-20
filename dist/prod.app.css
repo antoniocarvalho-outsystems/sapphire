@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940011 || Generated: Thu Aug 20 2020 17:56:33 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940012 || Generated: Thu Aug 20 2020 18:20:36 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11076,14 +11076,13 @@ html body {
       width: 1px; }
     .ButtonGroupFilters .ButtonGroup_button.Button:not(.active):hover {
       background-color: #ebebeb;
-      border: none;
-      box-shadow: -1px -1px 0px 0px #ebebeb; }
+      border: none; }
     .ButtonGroupFilters .ButtonGroup_button.Button.Button.active {
       background-color: #5c5c5c;
       border: none;
       box-shadow: 0 0 0 1px #5c5c5c;
       font-family: "LatoRegular";
-      text-shadow: 1px 0 0 #fff;
+      text-shadow: 0 0 1px #fff;
       z-index: 1; }
     .ButtonGroupFilters .ButtonGroup_button.Button.Button.active:before, .ButtonGroupFilters .ButtonGroup_button.Button:not(.active):hover:before {
       display: none; }
@@ -12828,17 +12827,18 @@ div.Feedback_Message_Info span.lasa-term {
         font-size: 1.286em; }
       .CardBoxFilters .CardBox.CardSmall.Selected .BottomCardDescription, .CardBoxFilters .CardBox.CardMedium.Selected .BottomCardDescription {
         color: #fff;
-        font-size: 1em; }
+        font-size: 1em;
+        text-shadow: 0 0 1px #fff; }
     .CardBoxFilters .CardBox:hover {
-      background-color: #ebebeb;
-      box-shadow: -1px -1px 0px 0px #ebebeb; }
+      background-color: #ebebeb; }
     .CardBoxFilters .CardBox .CardCount {
       color: #333333;
+      font-family: "LatoBold";
       font-size: 1.286em;
       line-height: 20px;
       margin-right: 4px; }
     .CardBoxFilters .CardBox .BottomCardDescription {
-      color: #333333;
+      color: #777777;
       font-size: 1em;
       line-height: 22px; }
 
@@ -14788,6 +14788,7 @@ body.PanelOpened .daterangepicker {
         border-left: none;
         border-right: none; }
       .DoctorBox .AvailableSlotSeverity_Counter > *:first-child {
+        font-family: "LatoBold";
         font-size: 1.286em; }
       .DoctorBox .AvailableSlotSeverity_Counter > *:last-child {
         color: #777777;
@@ -18027,28 +18028,29 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .RoomBoxOT {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 4px;
-  text-align: center;
-  width: 140px; }
+  border-radius: 8px; }
   .RoomBoxOT.Selected {
     border: 2px solid #00bfa5;
     box-shadow: none; }
   .RoomBoxOT .Counter {
     border-bottom: none;
+    border-top: 1px solid #d6d6d6;
     color: #333333;
-    font-size: 1.714em;
-    height: 68px;
-    padding: 8px; }
+    padding: 16px; }
+    .RoomBoxOT .Counter > div:first-child {
+      font-family: "LatoBold";
+      font-size: 1.286em; }
     .RoomBoxOT .Counter .ColorGreyText {
-      font-size: 14px; }
-  .RoomBoxOT .Columns .Column {
-    margin-bottom: 0; }
+      font-size: 0.857em; }
   .RoomBoxOT .RoomNameSmall {
     font-family: "LatoBold";
-    padding: 10px; }
+    padding: 16px; }
   .RoomBoxOT .RoomTypeSmall {
     font-size: 0.857em;
     padding-bottom: 10px; }
+  .RoomBoxOT .RoomBoxLevels {
+    display: -webkit-box;
+    display: flex; }
 
 .RoomBox {
   background-color: #fff;
