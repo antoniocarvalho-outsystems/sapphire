@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940010 || Generated: Wed Aug 19 2020 18:09:17 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940011 || Generated: Thu Aug 20 2020 17:56:33 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -5445,278 +5445,6 @@ a.Button.IsDefault,
       .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button[disabled]:before,
       .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button[disabled]:before {
         color: #d6d6d6; }
-    .desktop input.Button.Is_Default.Second.SearchMagnifier,
-    .desktop input.Button.Second.SearchMagnifier,
-    .desktop input.Button.ButtonDefault.Second.SearchMagnifier,
-    .Page a.Button.Second.SearchMagnifier,
-    .Page .DropZoneContainer .row .Second.SearchMagnifier.Button,
-    .DropZoneContainer .row .Page .Second.SearchMagnifier.Button,
-    .PanelOpened a.Button.Second.SearchMagnifier,
-    .PanelOpened .DropZoneContainer .row .Second.SearchMagnifier.Button,
-    .DropZoneContainer .row .PanelOpened .Second.SearchMagnifier.Button,
-    .confirm-container a.Button.Second.SearchMagnifier,
-    .confirm-container .DropZoneContainer .row .Second.SearchMagnifier.Button,
-    .DropZoneContainer .row .confirm-container .Second.SearchMagnifier.Button,
-    .LayoutPopup a.Button.Second.SearchMagnifier,
-    .LayoutPopup .DropZoneContainer .row .Second.SearchMagnifier.Button,
-    .DropZoneContainer .row .LayoutPopup .Second.SearchMagnifier.Button,
-    .LayoutBlank a.Button.Second.SearchMagnifier,
-    .LayoutBlank .DropZoneContainer .row .Second.SearchMagnifier.Button,
-    .DropZoneContainer .row .LayoutBlank .Second.SearchMagnifier.Button,
-    .LayoutBase a.Button.Second.SearchMagnifier,
-    .LayoutBase .DropZoneContainer .row .Second.SearchMagnifier.Button,
-    .DropZoneContainer .row .LayoutBase .Second.SearchMagnifier.Button,
-    a.Button.IsDefault.Second.SearchMagnifier,
-    .DropZoneContainer .row .IsDefault.Second.SearchMagnifier.Button,
-    .desktop a.Button.Is_Default.Second.SearchMagnifier,
-    .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button,
-    .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button,
-    .PanelOpened a.Button.Is_Default.Second.SearchMagnifier,
-    .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button,
-    .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button {
-      background-color: #00bfa5;
-      border-radius: 2px;
-      min-width: auto;
-      padding: 0 10px; }
-      .desktop input.Button.Is_Default.Second.SearchMagnifier:hover, .desktop input.Button.Is_Default.Second.SearchMagnifier:link, .desktop input.Button.Is_Default.Second.SearchMagnifier:active,
-      .desktop input.Button.Second.SearchMagnifier:hover,
-      .desktop input.Button.Second.SearchMagnifier:link,
-      .desktop input.Button.Second.SearchMagnifier:active,
-      .desktop input.Button.ButtonDefault.Second.SearchMagnifier:hover,
-      .desktop input.Button.ButtonDefault.Second.SearchMagnifier:link,
-      .desktop input.Button.ButtonDefault.Second.SearchMagnifier:active,
-      .Page a.Button.Second.SearchMagnifier:hover,
-      .Page .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .Page .Second.SearchMagnifier.Button:hover,
-      .Page a.Button.Second.SearchMagnifier:link,
-      .Page .DropZoneContainer .row .Second.SearchMagnifier.Button:link,
-      .DropZoneContainer .row .Page .Second.SearchMagnifier.Button:link,
-      .Page a.Button.Second.SearchMagnifier:active,
-      .Page .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .Page .Second.SearchMagnifier.Button:active,
-      .PanelOpened a.Button.Second.SearchMagnifier:hover,
-      .PanelOpened .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .PanelOpened .Second.SearchMagnifier.Button:hover,
-      .PanelOpened a.Button.Second.SearchMagnifier:link,
-      .PanelOpened .DropZoneContainer .row .Second.SearchMagnifier.Button:link,
-      .DropZoneContainer .row .PanelOpened .Second.SearchMagnifier.Button:link,
-      .PanelOpened a.Button.Second.SearchMagnifier:active,
-      .PanelOpened .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .PanelOpened .Second.SearchMagnifier.Button:active,
-      .confirm-container a.Button.Second.SearchMagnifier:hover,
-      .confirm-container .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .confirm-container .Second.SearchMagnifier.Button:hover,
-      .confirm-container a.Button.Second.SearchMagnifier:link,
-      .confirm-container .DropZoneContainer .row .Second.SearchMagnifier.Button:link,
-      .DropZoneContainer .row .confirm-container .Second.SearchMagnifier.Button:link,
-      .confirm-container a.Button.Second.SearchMagnifier:active,
-      .confirm-container .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .confirm-container .Second.SearchMagnifier.Button:active,
-      .LayoutPopup a.Button.Second.SearchMagnifier:hover,
-      .LayoutPopup .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .LayoutPopup .Second.SearchMagnifier.Button:hover,
-      .LayoutPopup a.Button.Second.SearchMagnifier:link,
-      .LayoutPopup .DropZoneContainer .row .Second.SearchMagnifier.Button:link,
-      .DropZoneContainer .row .LayoutPopup .Second.SearchMagnifier.Button:link,
-      .LayoutPopup a.Button.Second.SearchMagnifier:active,
-      .LayoutPopup .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .LayoutPopup .Second.SearchMagnifier.Button:active,
-      .LayoutBlank a.Button.Second.SearchMagnifier:hover,
-      .LayoutBlank .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .LayoutBlank .Second.SearchMagnifier.Button:hover,
-      .LayoutBlank a.Button.Second.SearchMagnifier:link,
-      .LayoutBlank .DropZoneContainer .row .Second.SearchMagnifier.Button:link,
-      .DropZoneContainer .row .LayoutBlank .Second.SearchMagnifier.Button:link,
-      .LayoutBlank a.Button.Second.SearchMagnifier:active,
-      .LayoutBlank .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .LayoutBlank .Second.SearchMagnifier.Button:active,
-      .LayoutBase a.Button.Second.SearchMagnifier:hover,
-      .LayoutBase .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .LayoutBase .Second.SearchMagnifier.Button:hover,
-      .LayoutBase a.Button.Second.SearchMagnifier:link,
-      .LayoutBase .DropZoneContainer .row .Second.SearchMagnifier.Button:link,
-      .DropZoneContainer .row .LayoutBase .Second.SearchMagnifier.Button:link,
-      .LayoutBase a.Button.Second.SearchMagnifier:active,
-      .LayoutBase .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .LayoutBase .Second.SearchMagnifier.Button:active,
-      a.Button.IsDefault.Second.SearchMagnifier:hover,
-      .DropZoneContainer .row .IsDefault.Second.SearchMagnifier.Button:hover,
-      a.Button.IsDefault.Second.SearchMagnifier:link,
-      .DropZoneContainer .row .IsDefault.Second.SearchMagnifier.Button:link,
-      a.Button.IsDefault.Second.SearchMagnifier:active,
-      .DropZoneContainer .row .IsDefault.Second.SearchMagnifier.Button:active,
-      .desktop a.Button.Is_Default.Second.SearchMagnifier:hover,
-      .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button:hover,
-      .desktop a.Button.Is_Default.Second.SearchMagnifier:link,
-      .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:link,
-      .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button:link,
-      .desktop a.Button.Is_Default.Second.SearchMagnifier:active,
-      .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button:active,
-      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:hover,
-      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:hover,
-      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:link,
-      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:link,
-      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:link,
-      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:active,
-      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:active {
-        min-width: auto; }
-      .desktop input.Button.Is_Default.Second.SearchMagnifier:active, .desktop input.Button.Is_Default.Second.SearchMagnifier:hover,
-      .desktop input.Button.Second.SearchMagnifier:active,
-      .desktop input.Button.Second.SearchMagnifier:hover,
-      .desktop input.Button.ButtonDefault.Second.SearchMagnifier:active,
-      .desktop input.Button.ButtonDefault.Second.SearchMagnifier:hover,
-      .Page a.Button.Second.SearchMagnifier:active,
-      .Page .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .Page .Second.SearchMagnifier.Button:active,
-      .Page a.Button.Second.SearchMagnifier:hover,
-      .Page .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .Page .Second.SearchMagnifier.Button:hover,
-      .PanelOpened a.Button.Second.SearchMagnifier:active,
-      .PanelOpened .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .PanelOpened .Second.SearchMagnifier.Button:active,
-      .PanelOpened a.Button.Second.SearchMagnifier:hover,
-      .PanelOpened .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .PanelOpened .Second.SearchMagnifier.Button:hover,
-      .confirm-container a.Button.Second.SearchMagnifier:active,
-      .confirm-container .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .confirm-container .Second.SearchMagnifier.Button:active,
-      .confirm-container a.Button.Second.SearchMagnifier:hover,
-      .confirm-container .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .confirm-container .Second.SearchMagnifier.Button:hover,
-      .LayoutPopup a.Button.Second.SearchMagnifier:active,
-      .LayoutPopup .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .LayoutPopup .Second.SearchMagnifier.Button:active,
-      .LayoutPopup a.Button.Second.SearchMagnifier:hover,
-      .LayoutPopup .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .LayoutPopup .Second.SearchMagnifier.Button:hover,
-      .LayoutBlank a.Button.Second.SearchMagnifier:active,
-      .LayoutBlank .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .LayoutBlank .Second.SearchMagnifier.Button:active,
-      .LayoutBlank a.Button.Second.SearchMagnifier:hover,
-      .LayoutBlank .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .LayoutBlank .Second.SearchMagnifier.Button:hover,
-      .LayoutBase a.Button.Second.SearchMagnifier:active,
-      .LayoutBase .DropZoneContainer .row .Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .LayoutBase .Second.SearchMagnifier.Button:active,
-      .LayoutBase a.Button.Second.SearchMagnifier:hover,
-      .LayoutBase .DropZoneContainer .row .Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .LayoutBase .Second.SearchMagnifier.Button:hover,
-      a.Button.IsDefault.Second.SearchMagnifier:active,
-      .DropZoneContainer .row .IsDefault.Second.SearchMagnifier.Button:active,
-      a.Button.IsDefault.Second.SearchMagnifier:hover,
-      .DropZoneContainer .row .IsDefault.Second.SearchMagnifier.Button:hover,
-      .desktop a.Button.Is_Default.Second.SearchMagnifier:active,
-      .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button:active,
-      .desktop a.Button.Is_Default.Second.SearchMagnifier:hover,
-      .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button:hover,
-      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:active,
-      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:active,
-      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:active,
-      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:hover,
-      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:hover,
-      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:hover {
-        background-color: #56d3c2; }
-      .desktop input.Button.Is_Default.Second.SearchMagnifier:after,
-      .desktop input.Button.Second.SearchMagnifier:after,
-      .desktop input.Button.ButtonDefault.Second.SearchMagnifier:after,
-      .Page a.Button.Second.SearchMagnifier:after,
-      .Page .DropZoneContainer .row .Second.SearchMagnifier.Button:after,
-      .DropZoneContainer .row .Page .Second.SearchMagnifier.Button:after,
-      .PanelOpened a.Button.Second.SearchMagnifier:after,
-      .PanelOpened .DropZoneContainer .row .Second.SearchMagnifier.Button:after,
-      .DropZoneContainer .row .PanelOpened .Second.SearchMagnifier.Button:after,
-      .confirm-container a.Button.Second.SearchMagnifier:after,
-      .confirm-container .DropZoneContainer .row .Second.SearchMagnifier.Button:after,
-      .DropZoneContainer .row .confirm-container .Second.SearchMagnifier.Button:after,
-      .LayoutPopup a.Button.Second.SearchMagnifier:after,
-      .LayoutPopup .DropZoneContainer .row .Second.SearchMagnifier.Button:after,
-      .DropZoneContainer .row .LayoutPopup .Second.SearchMagnifier.Button:after,
-      .LayoutBlank a.Button.Second.SearchMagnifier:after,
-      .LayoutBlank .DropZoneContainer .row .Second.SearchMagnifier.Button:after,
-      .DropZoneContainer .row .LayoutBlank .Second.SearchMagnifier.Button:after,
-      .LayoutBase a.Button.Second.SearchMagnifier:after,
-      .LayoutBase .DropZoneContainer .row .Second.SearchMagnifier.Button:after,
-      .DropZoneContainer .row .LayoutBase .Second.SearchMagnifier.Button:after,
-      a.Button.IsDefault.Second.SearchMagnifier:after,
-      .DropZoneContainer .row .IsDefault.Second.SearchMagnifier.Button:after,
-      .desktop a.Button.Is_Default.Second.SearchMagnifier:after,
-      .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:after,
-      .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button:after,
-      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:after,
-      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:after,
-      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:after {
-        content: '\e690';
-        font-family: "Sapphire-Icon-Font"; }
-      .desktop input.Button.Is_Default.Second.SearchMagnifier:disabled, .desktop input.Button.Is_Default.Second.SearchMagnifier[disabled],
-      .desktop input.Button.Second.SearchMagnifier:disabled,
-      .desktop input.Button.Second.SearchMagnifier[disabled],
-      .desktop input.Button.ButtonDefault.Second.SearchMagnifier:disabled,
-      .desktop input.Button.ButtonDefault.Second.SearchMagnifier[disabled],
-      .Page a.Button.Second.SearchMagnifier:disabled,
-      .Page .DropZoneContainer .row .Second.SearchMagnifier.Button:disabled,
-      .DropZoneContainer .row .Page .Second.SearchMagnifier.Button:disabled,
-      .Page a.Button.Second.SearchMagnifier[disabled],
-      .Page .DropZoneContainer .row .Second.SearchMagnifier.Button[disabled],
-      .DropZoneContainer .row .Page .Second.SearchMagnifier.Button[disabled],
-      .PanelOpened a.Button.Second.SearchMagnifier:disabled,
-      .PanelOpened .DropZoneContainer .row .Second.SearchMagnifier.Button:disabled,
-      .DropZoneContainer .row .PanelOpened .Second.SearchMagnifier.Button:disabled,
-      .PanelOpened a.Button.Second.SearchMagnifier[disabled],
-      .PanelOpened .DropZoneContainer .row .Second.SearchMagnifier.Button[disabled],
-      .DropZoneContainer .row .PanelOpened .Second.SearchMagnifier.Button[disabled],
-      .confirm-container a.Button.Second.SearchMagnifier:disabled,
-      .confirm-container .DropZoneContainer .row .Second.SearchMagnifier.Button:disabled,
-      .DropZoneContainer .row .confirm-container .Second.SearchMagnifier.Button:disabled,
-      .confirm-container a.Button.Second.SearchMagnifier[disabled],
-      .confirm-container .DropZoneContainer .row .Second.SearchMagnifier.Button[disabled],
-      .DropZoneContainer .row .confirm-container .Second.SearchMagnifier.Button[disabled],
-      .LayoutPopup a.Button.Second.SearchMagnifier:disabled,
-      .LayoutPopup .DropZoneContainer .row .Second.SearchMagnifier.Button:disabled,
-      .DropZoneContainer .row .LayoutPopup .Second.SearchMagnifier.Button:disabled,
-      .LayoutPopup a.Button.Second.SearchMagnifier[disabled],
-      .LayoutPopup .DropZoneContainer .row .Second.SearchMagnifier.Button[disabled],
-      .DropZoneContainer .row .LayoutPopup .Second.SearchMagnifier.Button[disabled],
-      .LayoutBlank a.Button.Second.SearchMagnifier:disabled,
-      .LayoutBlank .DropZoneContainer .row .Second.SearchMagnifier.Button:disabled,
-      .DropZoneContainer .row .LayoutBlank .Second.SearchMagnifier.Button:disabled,
-      .LayoutBlank a.Button.Second.SearchMagnifier[disabled],
-      .LayoutBlank .DropZoneContainer .row .Second.SearchMagnifier.Button[disabled],
-      .DropZoneContainer .row .LayoutBlank .Second.SearchMagnifier.Button[disabled],
-      .LayoutBase a.Button.Second.SearchMagnifier:disabled,
-      .LayoutBase .DropZoneContainer .row .Second.SearchMagnifier.Button:disabled,
-      .DropZoneContainer .row .LayoutBase .Second.SearchMagnifier.Button:disabled,
-      .LayoutBase a.Button.Second.SearchMagnifier[disabled],
-      .LayoutBase .DropZoneContainer .row .Second.SearchMagnifier.Button[disabled],
-      .DropZoneContainer .row .LayoutBase .Second.SearchMagnifier.Button[disabled],
-      a.Button.IsDefault.Second.SearchMagnifier:disabled,
-      .DropZoneContainer .row .IsDefault.Second.SearchMagnifier.Button:disabled,
-      a.Button.IsDefault.Second.SearchMagnifier[disabled],
-      .DropZoneContainer .row .IsDefault.Second.SearchMagnifier.Button[disabled],
-      .desktop a.Button.Is_Default.Second.SearchMagnifier:disabled,
-      .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:disabled,
-      .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button:disabled,
-      .desktop a.Button.Is_Default.Second.SearchMagnifier[disabled],
-      .desktop .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button[disabled],
-      .DropZoneContainer .row .desktop .Is_Default.Second.SearchMagnifier.Button[disabled],
-      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier:disabled,
-      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button:disabled,
-      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button:disabled,
-      .PanelOpened a.Button.Is_Default.Second.SearchMagnifier[disabled],
-      .PanelOpened .DropZoneContainer .row .Is_Default.Second.SearchMagnifier.Button[disabled],
-      .DropZoneContainer .row .PanelOpened .Is_Default.Second.SearchMagnifier.Button[disabled] {
-        background-color: transparent;
-        background-image: none;
-        border: 1px solid #d6d6d6;
-        color: #d6d6d6;
-        cursor: default;
-        pointer-events: none;
-        text-shadow: none; }
   .desktop input.Button.Is_Default.Third, .desktop input.Button.Is_Default.Cancel,
   .desktop input.Button.Third,
   .desktop input.Button.Cancel,
@@ -11794,19 +11522,19 @@ div.Feedback_Message_Info span.lasa-term {
   padding: 0; }
 
 .ActionsMenu-tooltip.Padding--XSmall .tooltipster-content > section > div {
-  padding: 3px; }
+  padding: 4px; }
 
 .ActionsMenu-tooltip.Padding--Small .tooltipster-content > section > div {
-  padding: 6px; }
+  padding: 8px; }
 
 .ActionsMenu-tooltip.Padding--Medium .tooltipster-content > section > div {
-  padding: 10px; }
-
-.ActionsMenu-tooltip.Padding--Large .tooltipster-content > section > div {
   padding: 16px; }
 
+.ActionsMenu-tooltip.Padding--Large .tooltipster-content > section > div {
+  padding: 24px; }
+
 .ActionsMenu-tooltip.Padding--XLarge .tooltipster-content > section > div {
-  padding: 26px; }
+  padding: 32px; }
 
 .FA .ActionsMenu-label,
 .AR .ActionsMenu-label {
@@ -19727,39 +19455,45 @@ body.PanelById.PanelOpened {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  padding: 16px; }
   .PersonCardPreInfo > div {
-    color: #777777;
+    box-sizing: content-box;
+    display: -webkit-inline-box;
+    display: inline-flex;
     flex-basis: 100%;
-    text-align: center;
-    width: 70px; }
-  .PersonCardPreInfo .PersonCardPreInfo_Time > div {
-    height: 100%;
-    padding: 10px; }
-  .PersonCardPreInfo .PersonCardPreInfo_Number {
-    border-right: solid 1px #d6d6d6;
-    min-width: 46px; }
-    .PersonCardPreInfo .PersonCardPreInfo_Number > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    padding-right: 8px;
+    width: 48px; }
+    .PersonCardPreInfo > div:last-child {
+      padding-right: 0; }
+  .PersonCardPreInfo .ColoredBox {
+    border-radius: 8px;
+    font-family: "LatoBold";
+    font-size: 1.286em;
+    height: 48px;
+    padding: 0;
+    width: 48px; }
+    .PersonCardPreInfo .ColoredBox__Content {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: center;
+              justify-content: center;
       height: 100%;
-      padding: 10px; }
-  .PersonCardPreInfo .PersonCardPreInfo_info > div {
-    height: 100%;
-    padding: 10px; }
-  .PersonCardPreInfo div:nth-child(5) {
-    max-width: 50px; }
-    .PersonCardPreInfo div:nth-child(5) > div {
-      padding: 10px 0; }
-  .PersonCardPreInfo div:nth-child(6) {
-    max-width: 50px; }
-    .PersonCardPreInfo div:nth-child(6) > div {
-      padding: 10px 0; }
-  .PersonCardPreInfo .PersonCardPreInfo_Time.MinWidth150 {
-    min-width: 150px; }
-  .PersonCardPreInfo .PersonCardPreInfo_Time.MinWidth200 {
+      width: 100%; }
+  .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoXSmall {
+    min-width: 125px; }
+  .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoSmall {
     min-width: 200px; }
-  .PersonCardPreInfo .PersonCardPreInfo_Time.MinWidth400 {
+  .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoMedium {
     min-width: 400px; }
-  .PersonCardPreInfo .PersonCardPreInfo_Time.MinWidth600 {
+  .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoLarge {
     min-width: 600px; }
 
 .tablet .PersonCardPreInfo .PersonCardPreInfo_Time.MinWidth150 {
@@ -19789,6 +19523,7 @@ body.PanelById.PanelOpened {
   content: '\e611'; }
 
 .PersonCard_header {
+  background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
   display: -webkit-box;
@@ -19826,8 +19561,10 @@ body.PanelById.PanelOpened {
   .PersonCard_header.NonePadding .PersonCard__content,
   .PersonCard_header.NonePadding .PersonCard__headerLeftInfo {
     padding: 0; }
-  .PersonCard_header.MediumPadding .PersonCard__content,
   .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
+    padding: 16px;
+    padding-right: 0; }
+  .PersonCard_header.MediumPadding .PersonCard__content {
     padding: 16px; }
   .PersonCard_header.MediumPadding .PersonCard__actions {
     padding: 16px;
@@ -20001,17 +19738,11 @@ body.PanelById.PanelOpened {
     flex-basis: 30%;
     max-width: unset; }
 
-.PersonCard__Complementary:not(:empty) {
-  flex-basis: 35%; }
-
-.PersonCard__Complementary:not(:empty) ~ .PersonCard__content {
+.PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
   padding-left: 0; }
 
 .PersonCard__Complementary:not(:empty) ~ .PersonCard__actions {
   flex-basis: 20%; }
-
-.PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
-  display: none; }
 
 .PersonCard__Complementary .PersonCardPreInfo {
   height: 100%; }
@@ -20029,7 +19760,7 @@ body.PanelById.PanelOpened {
   width: 48px; }
 
 .PersonCard___icon:not(:empty) + .PersonCard____title {
-  margin-left: 10px; }
+  margin-left: 8px; }
 
 .PersonCard .CardAll {
   display: -webkit-box;
@@ -20045,17 +19776,12 @@ body.PanelById.PanelOpened {
     display: -webkit-box;
     display: flex;
     font-size: inherit;
-    line-height: inherit;
-    padding-left: 10px;
-    text-align: left; }
+    line-height: inherit; }
   .PersonCard .CardAll .Small_Description {
     overflow: inherit;
     text-overflow: inherit;
     white-space: inherit;
     width: 100%; }
-
-.PersonCard .Icon_CardAll {
-  padding-top: 5px; }
 
 .PersonCard .DescriptionContainer {
   display: -webkit-box;
@@ -20067,7 +19793,8 @@ body.PanelById.PanelOpened {
   .PersonCard .DescriptionContainer > .Small_Description {
     align-self: center;
     -webkit-box-flex: 1;
-            flex: 1; }
+            flex: 1;
+    padding: 0; }
 
 .PersonCard .PersonExpandableDiv:before {
   content: '\e610'; }
@@ -20086,6 +19813,16 @@ body.PanelById.PanelOpened {
 .ColoredBox {
   height: 100%;
   padding: 10px; }
+
+.AR .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo,
+.FA .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
+  padding-left: 0;
+  padding-right: 16px; }
+
+.AR .PersonCard_header.MediumPadding .PersonCard__actions,
+.FA .PersonCard_header.MediumPadding .PersonCard__actions {
+  padding-left: 16px;
+  padding-right: 0; }
 
 .AR .PersonCard__headerLeftInfo.Male.HasBorder,
 .FA .PersonCard__headerLeftInfo.Male.HasBorder {
@@ -20107,6 +19844,10 @@ body.PanelById.PanelOpened {
   margin-left: auto;
   margin-right: 10px; }
 
+.AR .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo,
+.FA .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
+  padding-right: 0; }
+
 .AR .PersonCard___icon:not(:empty) + .PersonCard____title,
 .FA .PersonCard___icon:not(:empty) + .PersonCard____title {
   margin-left: 0;
@@ -20117,12 +19858,6 @@ body.PanelById.PanelOpened {
   left: auto;
   right: 0px; }
 
-@media only screen and (max-width: 1024px) {
-  .PersonCard__headerLeftInfo {
-    display: block; }
-  .PersonCard___icon:not(:empty) + .PersonCard____title {
-    margin: 0; } }
-
 /* Adjustements */
 .PersonCard > .PersonCard_header .PersonCard__headerLeftInfo:not(div[id$='PanelAppointments']) {
   min-width: 250px; }
@@ -20130,8 +19865,7 @@ body.PanelById.PanelOpened {
 .PersonCard > .PersonCard_header .PersonCard__content {
   color: #5c5c5c;
   -webkit-box-flex: 4;
-          flex: 4;
-  padding-left: 0; }
+          flex: 4; }
 
 .PersonCard + .ListRecords .PersonCard a {
   display: -webkit-box;
@@ -20147,13 +19881,20 @@ body.PanelById.PanelOpened {
 .PersonCard span.verticalAlignHelper.Middle ~ * {
   vertical-align: top; }
 
-.ListRecords .PersonCard:last-of-type .PersonCard_header {
-  border-bottom: 1px solid #d6d6d6; }
-  .ListRecords .PersonCard:last-of-type .PersonCard_header.Selected {
-    border: 1px solid #00ac94; }
-
 .ListRecords .PersonCard_header {
-  border-bottom: none; }
+  border-bottom: none;
+  border-radius: 0; }
+
+.ListRecords > *:first-child .PersonCard_header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; }
+
+.ListRecords > *:last-child .PersonCard_header {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+.ListRecords .PersonCard:last-of-type .PersonCard_header.Selected {
+  border: 1px solid #00ac94; }
 
 .ListRecords > span:not(:first-of-type) > .PersonCard .PersonCard_header {
   border-top: none; }
@@ -20191,14 +19932,28 @@ a .PersonCard {
   a .PersonCard_expandable {
     display: none !important; }
 
-.tablet .PersonCard___icon {
-  float: left;
-  margin-right: 6px; }
+.tablet .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo {
+  flex-basis: 100%; }
 
-.tablet .PersonCard____title {
-  float: left; }
+.tablet .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
+  padding-left: 0;
+  padding-right: 16px; }
+
+.tablet .PersonCard_header {
+  flex-wrap: wrap; }
+
+.tablet .PersonCard__headerLeftInfo {
+  -webkit-box-flex: 1;
+          flex: 1; }
+
+.tablet .PersonCard__content {
+  border-top: 1px solid #d6d6d6;
+  flex-basis: 100% !important;
+  margin-left: 72px;
+  padding-left: 0 !important; }
 
 .tablet .PersonCard__actions {
+  flex-basis: 100% !important;
   max-width: none;
   text-align: right; }
 
@@ -20232,26 +19987,16 @@ a .PersonCard {
 .tablet .PersonCard_header.IsShowTitles.IsTransparent {
   display: none; }
 
-.phone .PersonCard_header,
-.tablet .PersonCard_header {
+.phone .PersonCard_header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column; }
 
-.phone .PersonCard_header > div,
-.tablet .PersonCard_header > div {
+.phone .PersonCard_header > div {
   width: 100% !important; }
 
 .desktop:not(.hd) .PersonCard_header .PersonCard__content.MinWidthSmall > div:first-of-type {
   min-width: 250px; }
-
-.desktop:not(.hd) .PersonCard__Complementary:not(:empty) ~ .PersonCard__actions {
-  flex-basis: 28%; }
-
-.tablet .PersonCard_header .PersonCard__actions a.Button, .tablet .PersonCard_header .PersonCard__actions .DropZoneContainer .row .Button, .DropZoneContainer .row .tablet .PersonCard_header .PersonCard__actions .Button {
-  height: auto;
-  line-height: 22px;
-  white-space: normal; }
 
 .LayoutPopup__body__content .PersonCard__headerLeftInfo {
   display: inherit !important; }
@@ -28678,52 +28423,35 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .CardAll {
   display: table; }
+  .CardAll .Icon_CardAll {
+    background-color: transparent;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    width: auto; }
+  .CardAll .DescriptionContainer {
+    font-size: 1.286em;
+    line-height: 18px;
+    padding-left: 8px;
+    text-align: left; }
+    .CardAll .DescriptionContainer .Description {
+      display: block;
+      font-family: "LatoBold";
+      line-height: 18px; }
+    .CardAll .DescriptionContainer .Small_Description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 185px; }
 
-.Icon_CardAll {
-  background-color: transparent;
-  border-radius: 50%;
-  color: #124a61;
-  line-height: 30px;
-  text-align: center;
-  width: auto; }
-
-.DescriptionContainer {
-  font-family: "LatoBold";
-  font-size: 1.286em;
-  line-height: 18px;
-  padding-left: 10px;
-  text-align: left; }
-
-.FA .DescriptionContainer,
-.AR .DescriptionContainer {
-  font-family: "TajawalBold";
+.AR .CardAll .DescriptionContainer,
+.FA .CardAll .DescriptionContainer {
+  padding-left: 0;
+  padding-right: 8px;
   text-align: right; }
-
-.Description {
-  display: block;
-  line-height: 18px;
-  padding: 2px; }
-
-.desktop .Description,
-.desktop.small .Description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 130px; }
-
-.phone .Description {
-  padding: 0; }
-
-.FA .Description,
-.AR .Description {
-  font-size: 15px;
-  margin-right: 10px; }
-
-.Small_Description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 185px; }
+  .AR .CardAll .DescriptionContainer .Description,
+  .FA .CardAll .DescriptionContainer .Description {
+    font-family: "LatoBold"; }
 
 .Card .Gallery .GalleryWrapper {
   margin: 0; }
