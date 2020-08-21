@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940012 || Generated: Thu Aug 20 2020 18:20:36 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940013 || Generated: Fri Aug 21 2020 12:25:05 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -41462,7 +41462,6 @@ div.template-item-input-block {
 
 div.template-item-input-inline {
   display: inline-block;
-  margin-left: 5px;
   margin-top: 0; }
 
 div.template-item-aftertext {
