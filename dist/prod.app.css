@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940013 || Generated: Fri Aug 21 2020 12:25:05 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940014 || Generated: Fri Aug 21 2020 14:00:31 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -26764,6 +26764,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .ColorLightGreyBG {
   background-color: #d6d6d6; }
 
+.ColorLightGreyBorder {
+  border-color: #d6d6d6; }
+
 .ColorMidLightGreyText {
   color: #adadad; }
 
@@ -27229,7 +27232,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   vertical-align: middle; }
 
 .VerticalInputLabel {
-  color: #868687;
   font-family: "LatoBold";
   font-size: 1em;
   font-weight: normal;
@@ -41493,7 +41495,7 @@ div.NoPrompt > div.template-item-input-block {
   margin-top: 0; }
 
 .table-header-row {
-  font-weight: bolder;
+  font-family: 'LatoBold';
   padding: 5px; }
 
 .table-header-group {
