@@ -165,14 +165,13 @@
 		display: table-cell;
 		padding: 10px;
 		text-align: center;
-		transform: rotate(180deg);
-		transition: transform 0.5s;
+		transform: scaleY(1);
 		vertical-align: middle;
 		width: 50px;
 
 		&.open {
 			display: table-cell;
-			transform: rotate(0deg);
+			transform: scaleY(-1);
 			vertical-align: middle;
 		}
 

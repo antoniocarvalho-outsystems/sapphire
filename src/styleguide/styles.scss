@@ -363,6 +363,21 @@ $styleguide-main-content-padding: 50px;
 			border-radius: unset;
 			max-height: 40px;
 
+			.SectionExpandable___icon {
+				.icon {
+					border-color: $light-grey;
+					border-width: 1px;
+
+					&:before {
+						color: $light-grey;
+					}
+
+					&:hover {
+						background-color: $body-color;
+					}
+				}
+			}
+
 			.PlaceHolderTitle {
 				font-family: $font-family-latin-regular;
 				font-size: 1em;
