@@ -46,6 +46,7 @@
 		}
 
 		&.IsTransparent {
+			background-color: transparent;
 			border: none;
 			height: unset;
 			min-height: 0px;
@@ -214,6 +215,7 @@
 	}
 
 	&__headerLeftInfo {
+		background-color: $regular-white;
 		display: flex;
 		padding: 10px $sapphire-sizes--medium;
 
