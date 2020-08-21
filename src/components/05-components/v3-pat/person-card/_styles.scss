@@ -214,7 +214,6 @@
 	}
 
 	&__headerLeftInfo {
-		background-color: $regular-white;
 		display: flex;
 		padding: 10px $sapphire-sizes--medium;
 
@@ -669,7 +668,7 @@ a {
 			}
 
 			&:not(:empty) ~ .PersonCard__headerLeftInfo {
-				padding-left: 0;
+				padding-left: $sapphire-sizes--medium;
 				padding-right: $sapphire-sizes--medium;
 			}
 		}
