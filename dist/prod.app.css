@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940015 || Generated: Fri Aug 21 2020 16:42:13 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940016 || Generated: Fri Aug 21 2020 18:04:59 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19539,6 +19539,7 @@ body.PanelById.PanelOpened {
     cursor: pointer;
     pointer-events: auto; }
   .PersonCard_header.IsTransparent {
+    background-color: transparent;
     border: none;
     height: unset;
     min-height: 0px; }
@@ -19929,7 +19930,7 @@ a .PersonCard {
   flex-basis: 100%; }
 
 .tablet .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
-  padding-left: 0;
+  padding-left: 16px;
   padding-right: 16px; }
 
 .tablet .PersonCard_header {
