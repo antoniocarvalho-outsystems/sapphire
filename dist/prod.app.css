@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940014 || Generated: Fri Aug 21 2020 14:00:31 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940015 || Generated: Fri Aug 21 2020 16:42:13 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15366,7 +15366,7 @@ body.PanelOpened .daterangepicker {
   .ExpandableGroup .ExpandableGroupItem-content {
     display: none; }
 
-.ExpandableLink--expanded .ExpandableLink__Icon {
+.ExpandableLink--expanded .ExpandableLink__Icon .icon {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
 
@@ -15401,35 +15401,34 @@ body.PanelOpened .daterangepicker {
 .ExpandableLink__Header {
   cursor: pointer; }
 
-.ExpandableLink__Icon {
+.ExpandableLink__Icon .icon {
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: 2px solid #00ac94;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  height: 20px;
+  -webkit-box-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 20px;
+  z-index: 1;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s; }
-  .ExpandableLink__Icon .icon {
-    -webkit-box-align: center;
-            align-items: center;
-    background-color: transparent;
-    border: 2px solid #00ac94;
-    border-radius: 50%;
-    cursor: pointer;
-    display: -webkit-box;
-    display: flex;
-    height: 20px;
-    -webkit-box-pack: center;
-            justify-content: center;
-    text-align: center;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-    width: 20px;
-    z-index: 1; }
-    .ExpandableLink__Icon .icon:before {
-      color: #00ac94;
-      content: '\e611';
-      font-family: "Sapphire-Icon-Font";
-      font-size: 0.7em; }
-    .ExpandableLink__Icon .icon:hover {
-      background-color: #f2fffd; }
+  .ExpandableLink__Icon .icon:before {
+    color: #00ac94;
+    content: '\e611';
+    font-family: "Sapphire-Icon-Font";
+    font-size: 0.7em; }
+  .ExpandableLink__Icon .icon:hover {
+    background-color: #f2fffd; }
 
 .ExpandableLink__Link {
   color: #00ac94;
@@ -15574,18 +15573,14 @@ body.PanelOpened .daterangepicker {
     display: table-cell;
     padding: 10px;
     text-align: center;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
     vertical-align: middle;
     width: 50px; }
     .ExpandableServerSide__arrow.open {
       display: table-cell;
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+      -webkit-transform: scaleY(-1);
+              transform: scaleY(-1);
       vertical-align: middle; }
     .ExpandableServerSide__arrow .icon {
       cursor: pointer; }
@@ -15612,16 +15607,12 @@ body.PanelOpened .daterangepicker {
     display: -webkit-inline-box;
     display: inline-flex;
     margin: 0 10px;
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
     vertical-align: middle; }
     .ExpandableSmaller__headerIcon.HeaderIconReverse {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg); }
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1); }
     .ExpandableSmaller__headerIcon .icon {
       border-bottom: 5px solid #00ac94;
       border-left: 5px solid transparent;
@@ -22472,7 +22463,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border-top: none;
   height: auto !important; }
 
-.SectionExpandableCustom.expanded .SectionExpandable_headerCustom .SectionExpandable___icon,
+.SectionExpandableCustom.expanded .SectionExpandable_headerCustom .SectionExpandable___icon .icon,
 .SectionExpandableCustom.expanded .SectionExpandable_headerCustom .SectionExpandable__icon .fa {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -22506,11 +22497,13 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   font-family: "TajawalBold"; }
 
 .SectionExpandableCustom .SectionExpandable__icon {
-  color: #00bfa5; }
+  color: #00bfa5;
+  display: table-cell;
+  vertical-align: middle; }
 
 .SectionExpandableCustom .SectionExpandable___icon {
   padding: 0 12px; }
-  .SectionExpandableCustom .SectionExpandable___icon span {
+  .SectionExpandableCustom .SectionExpandable___icon .icon {
     -webkit-box-align: center;
             align-items: center;
     background-color: transparent;
@@ -22519,25 +22512,21 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     cursor: pointer;
     display: -webkit-box;
     display: flex;
-    height: 22px;
+    height: 20px;
     -webkit-box-pack: center;
             justify-content: center;
     text-align: center;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    width: 22px;
-    z-index: 1;
-    -webkit-transform: rotate(0deg) scale(0.85);
-            transform: rotate(0deg) scale(0.85); }
-    .SectionExpandableCustom .SectionExpandable___icon span:before {
+    width: 20px;
+    z-index: 1; }
+    .SectionExpandableCustom .SectionExpandable___icon .icon:before {
       color: #00ac94;
       content: '\e611';
       font-family: "Sapphire-Icon-Font";
-      font-size: 0.857em; }
-    .SectionExpandableCustom .SectionExpandable___icon span:hover {
+      font-size: 0.7em; }
+    .SectionExpandableCustom .SectionExpandable___icon .icon:hover {
       background-color: #f2fffd; }
-    .SectionExpandableCustom .SectionExpandable___icon span:before {
-      font-size: 0.75em; }
 
 .SectionExpandableCustom .SectionExpandable_headerCustom {
   background-color: #fff;
@@ -22549,7 +22538,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   padding: 8px 0;
   width: 100%; }
   .SectionExpandableCustom .SectionExpandable_headerCustom .icon {
-    font-size: 16px;
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
@@ -28612,6 +28600,8 @@ ul.os-internal-ui-autocomplete {
   cursor: pointer;
   display: table-cell;
   text-align: center;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -28619,8 +28609,8 @@ ul.os-internal-ui-autocomplete {
   vertical-align: middle;
   width: 40px; }
   .SessionList__Icon.Rotation {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg); }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
 
 .SessionList__Number {
   color: #333333;
