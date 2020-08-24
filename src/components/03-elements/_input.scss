@@ -142,7 +142,9 @@ input {
 select,
 textarea,
 input[type='text'],
-input[type='number'] {
+input[type='email'],
+input[type='number'],
+input[type='password'] {
 	appearance: none;
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
