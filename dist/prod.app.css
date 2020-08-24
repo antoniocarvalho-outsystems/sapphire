@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940019 || Generated: Mon Aug 24 2020 11:01:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940020 || Generated: Mon Aug 24 2020 11:07:39 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4740,7 +4740,9 @@ input[type='radio'] {
 select,
 textarea,
 input[type='text'],
-input[type='number'] {
+input[type='email'],
+input[type='number'],
+input[type='password'] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -4754,42 +4756,50 @@ input[type='number'] {
   padding: 0 16px;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in; }
-  select::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input[type='text']::-webkit-input-placeholder, input[type='number']::-webkit-input-placeholder {
+  select::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input[type='text']::-webkit-input-placeholder, input[type='email']::-webkit-input-placeholder, input[type='number']::-webkit-input-placeholder, input[type='password']::-webkit-input-placeholder {
     color: #adadad;
     font-family: "LatoRegular"; }
-  select::-moz-placeholder, textarea::-moz-placeholder, input[type='text']::-moz-placeholder, input[type='number']::-moz-placeholder {
+  select::-moz-placeholder, textarea::-moz-placeholder, input[type='text']::-moz-placeholder, input[type='email']::-moz-placeholder, input[type='number']::-moz-placeholder, input[type='password']::-moz-placeholder {
     color: #adadad;
     font-family: "LatoRegular"; }
-  select:-ms-input-placeholder, textarea:-ms-input-placeholder, input[type='text']:-ms-input-placeholder, input[type='number']:-ms-input-placeholder {
+  select:-ms-input-placeholder, textarea:-ms-input-placeholder, input[type='text']:-ms-input-placeholder, input[type='email']:-ms-input-placeholder, input[type='number']:-ms-input-placeholder, input[type='password']:-ms-input-placeholder {
     color: #adadad;
     font-family: "LatoRegular"; }
-  select::-ms-input-placeholder, textarea::-ms-input-placeholder, input[type='text']::-ms-input-placeholder, input[type='number']::-ms-input-placeholder {
+  select::-ms-input-placeholder, textarea::-ms-input-placeholder, input[type='text']::-ms-input-placeholder, input[type='email']::-ms-input-placeholder, input[type='number']::-ms-input-placeholder, input[type='password']::-ms-input-placeholder {
     color: #adadad;
     font-family: "LatoRegular"; }
   select::placeholder,
   textarea::placeholder,
   input[type='text']::placeholder,
-  input[type='number']::placeholder {
+  input[type='email']::placeholder,
+  input[type='number']::placeholder,
+  input[type='password']::placeholder {
     color: #adadad;
     font-family: "LatoRegular"; }
   select:hover,
   textarea:hover,
   input[type='text']:hover,
-  input[type='number']:hover {
+  input[type='email']:hover,
+  input[type='number']:hover,
+  input[type='password']:hover {
     background-color: #f2fffd;
     border: 1px solid #00bfa5;
     box-shadow: none; }
   select:focus,
   textarea:focus,
   input[type='text']:focus,
-  input[type='number']:focus {
+  input[type='email']:focus,
+  input[type='number']:focus,
+  input[type='password']:focus {
     background-color: #fff;
     border: 1px solid #00bfa5;
     box-shadow: none; }
   select:active,
   textarea:active,
   input[type='text']:active,
-  input[type='number']:active {
+  input[type='email']:active,
+  input[type='number']:active,
+  input[type='password']:active {
     border: 1px solid #00ac94;
     box-shadow: none; }
   select[disabled='disabled'], select[disabled='disabled']:hover, select[disabled='disabled']:focus, select[readonly='readonly'], select[readonly='readonly']:hover, select[readonly='readonly']:focus,
@@ -4805,12 +4815,24 @@ input[type='number'] {
   input[type='text'][readonly='readonly'],
   input[type='text'][readonly='readonly']:hover,
   input[type='text'][readonly='readonly']:focus,
+  input[type='email'][disabled='disabled'],
+  input[type='email'][disabled='disabled']:hover,
+  input[type='email'][disabled='disabled']:focus,
+  input[type='email'][readonly='readonly'],
+  input[type='email'][readonly='readonly']:hover,
+  input[type='email'][readonly='readonly']:focus,
   input[type='number'][disabled='disabled'],
   input[type='number'][disabled='disabled']:hover,
   input[type='number'][disabled='disabled']:focus,
   input[type='number'][readonly='readonly'],
   input[type='number'][readonly='readonly']:hover,
-  input[type='number'][readonly='readonly']:focus {
+  input[type='number'][readonly='readonly']:focus,
+  input[type='password'][disabled='disabled'],
+  input[type='password'][disabled='disabled']:hover,
+  input[type='password'][disabled='disabled']:focus,
+  input[type='password'][readonly='readonly'],
+  input[type='password'][readonly='readonly']:hover,
+  input[type='password'][readonly='readonly']:focus {
     background-blend-mode: luminosity;
     background-color: #ebebeb;
     background-position: right 14px center;
@@ -4820,13 +4842,13 @@ input[type='number'] {
     color: #777777;
     cursor: not-allowed;
     opacity: 1; }
-    select[disabled='disabled']::-webkit-input-placeholder, select[disabled='disabled']:hover::-webkit-input-placeholder, select[disabled='disabled']:focus::-webkit-input-placeholder, select[readonly='readonly']::-webkit-input-placeholder, select[readonly='readonly']:hover::-webkit-input-placeholder, select[readonly='readonly']:focus::-webkit-input-placeholder, textarea[disabled='disabled']::-webkit-input-placeholder, textarea[disabled='disabled']:hover::-webkit-input-placeholder, textarea[disabled='disabled']:focus::-webkit-input-placeholder, textarea[readonly='readonly']::-webkit-input-placeholder, textarea[readonly='readonly']:hover::-webkit-input-placeholder, textarea[readonly='readonly']:focus::-webkit-input-placeholder, input[type='text'][disabled='disabled']::-webkit-input-placeholder, input[type='text'][disabled='disabled']:hover::-webkit-input-placeholder, input[type='text'][disabled='disabled']:focus::-webkit-input-placeholder, input[type='text'][readonly='readonly']::-webkit-input-placeholder, input[type='text'][readonly='readonly']:hover::-webkit-input-placeholder, input[type='text'][readonly='readonly']:focus::-webkit-input-placeholder, input[type='number'][disabled='disabled']::-webkit-input-placeholder, input[type='number'][disabled='disabled']:hover::-webkit-input-placeholder, input[type='number'][disabled='disabled']:focus::-webkit-input-placeholder, input[type='number'][readonly='readonly']::-webkit-input-placeholder, input[type='number'][readonly='readonly']:hover::-webkit-input-placeholder, input[type='number'][readonly='readonly']:focus::-webkit-input-placeholder {
+    select[disabled='disabled']::-webkit-input-placeholder, select[disabled='disabled']:hover::-webkit-input-placeholder, select[disabled='disabled']:focus::-webkit-input-placeholder, select[readonly='readonly']::-webkit-input-placeholder, select[readonly='readonly']:hover::-webkit-input-placeholder, select[readonly='readonly']:focus::-webkit-input-placeholder, textarea[disabled='disabled']::-webkit-input-placeholder, textarea[disabled='disabled']:hover::-webkit-input-placeholder, textarea[disabled='disabled']:focus::-webkit-input-placeholder, textarea[readonly='readonly']::-webkit-input-placeholder, textarea[readonly='readonly']:hover::-webkit-input-placeholder, textarea[readonly='readonly']:focus::-webkit-input-placeholder, input[type='text'][disabled='disabled']::-webkit-input-placeholder, input[type='text'][disabled='disabled']:hover::-webkit-input-placeholder, input[type='text'][disabled='disabled']:focus::-webkit-input-placeholder, input[type='text'][readonly='readonly']::-webkit-input-placeholder, input[type='text'][readonly='readonly']:hover::-webkit-input-placeholder, input[type='text'][readonly='readonly']:focus::-webkit-input-placeholder, input[type='email'][disabled='disabled']::-webkit-input-placeholder, input[type='email'][disabled='disabled']:hover::-webkit-input-placeholder, input[type='email'][disabled='disabled']:focus::-webkit-input-placeholder, input[type='email'][readonly='readonly']::-webkit-input-placeholder, input[type='email'][readonly='readonly']:hover::-webkit-input-placeholder, input[type='email'][readonly='readonly']:focus::-webkit-input-placeholder, input[type='number'][disabled='disabled']::-webkit-input-placeholder, input[type='number'][disabled='disabled']:hover::-webkit-input-placeholder, input[type='number'][disabled='disabled']:focus::-webkit-input-placeholder, input[type='number'][readonly='readonly']::-webkit-input-placeholder, input[type='number'][readonly='readonly']:hover::-webkit-input-placeholder, input[type='number'][readonly='readonly']:focus::-webkit-input-placeholder, input[type='password'][disabled='disabled']::-webkit-input-placeholder, input[type='password'][disabled='disabled']:hover::-webkit-input-placeholder, input[type='password'][disabled='disabled']:focus::-webkit-input-placeholder, input[type='password'][readonly='readonly']::-webkit-input-placeholder, input[type='password'][readonly='readonly']:hover::-webkit-input-placeholder, input[type='password'][readonly='readonly']:focus::-webkit-input-placeholder {
       color: #adadad; }
-    select[disabled='disabled']::-moz-placeholder, select[disabled='disabled']:hover::-moz-placeholder, select[disabled='disabled']:focus::-moz-placeholder, select[readonly='readonly']::-moz-placeholder, select[readonly='readonly']:hover::-moz-placeholder, select[readonly='readonly']:focus::-moz-placeholder, textarea[disabled='disabled']::-moz-placeholder, textarea[disabled='disabled']:hover::-moz-placeholder, textarea[disabled='disabled']:focus::-moz-placeholder, textarea[readonly='readonly']::-moz-placeholder, textarea[readonly='readonly']:hover::-moz-placeholder, textarea[readonly='readonly']:focus::-moz-placeholder, input[type='text'][disabled='disabled']::-moz-placeholder, input[type='text'][disabled='disabled']:hover::-moz-placeholder, input[type='text'][disabled='disabled']:focus::-moz-placeholder, input[type='text'][readonly='readonly']::-moz-placeholder, input[type='text'][readonly='readonly']:hover::-moz-placeholder, input[type='text'][readonly='readonly']:focus::-moz-placeholder, input[type='number'][disabled='disabled']::-moz-placeholder, input[type='number'][disabled='disabled']:hover::-moz-placeholder, input[type='number'][disabled='disabled']:focus::-moz-placeholder, input[type='number'][readonly='readonly']::-moz-placeholder, input[type='number'][readonly='readonly']:hover::-moz-placeholder, input[type='number'][readonly='readonly']:focus::-moz-placeholder {
+    select[disabled='disabled']::-moz-placeholder, select[disabled='disabled']:hover::-moz-placeholder, select[disabled='disabled']:focus::-moz-placeholder, select[readonly='readonly']::-moz-placeholder, select[readonly='readonly']:hover::-moz-placeholder, select[readonly='readonly']:focus::-moz-placeholder, textarea[disabled='disabled']::-moz-placeholder, textarea[disabled='disabled']:hover::-moz-placeholder, textarea[disabled='disabled']:focus::-moz-placeholder, textarea[readonly='readonly']::-moz-placeholder, textarea[readonly='readonly']:hover::-moz-placeholder, textarea[readonly='readonly']:focus::-moz-placeholder, input[type='text'][disabled='disabled']::-moz-placeholder, input[type='text'][disabled='disabled']:hover::-moz-placeholder, input[type='text'][disabled='disabled']:focus::-moz-placeholder, input[type='text'][readonly='readonly']::-moz-placeholder, input[type='text'][readonly='readonly']:hover::-moz-placeholder, input[type='text'][readonly='readonly']:focus::-moz-placeholder, input[type='email'][disabled='disabled']::-moz-placeholder, input[type='email'][disabled='disabled']:hover::-moz-placeholder, input[type='email'][disabled='disabled']:focus::-moz-placeholder, input[type='email'][readonly='readonly']::-moz-placeholder, input[type='email'][readonly='readonly']:hover::-moz-placeholder, input[type='email'][readonly='readonly']:focus::-moz-placeholder, input[type='number'][disabled='disabled']::-moz-placeholder, input[type='number'][disabled='disabled']:hover::-moz-placeholder, input[type='number'][disabled='disabled']:focus::-moz-placeholder, input[type='number'][readonly='readonly']::-moz-placeholder, input[type='number'][readonly='readonly']:hover::-moz-placeholder, input[type='number'][readonly='readonly']:focus::-moz-placeholder, input[type='password'][disabled='disabled']::-moz-placeholder, input[type='password'][disabled='disabled']:hover::-moz-placeholder, input[type='password'][disabled='disabled']:focus::-moz-placeholder, input[type='password'][readonly='readonly']::-moz-placeholder, input[type='password'][readonly='readonly']:hover::-moz-placeholder, input[type='password'][readonly='readonly']:focus::-moz-placeholder {
       color: #adadad; }
-    select[disabled='disabled']:-ms-input-placeholder, select[disabled='disabled']:hover:-ms-input-placeholder, select[disabled='disabled']:focus:-ms-input-placeholder, select[readonly='readonly']:-ms-input-placeholder, select[readonly='readonly']:hover:-ms-input-placeholder, select[readonly='readonly']:focus:-ms-input-placeholder, textarea[disabled='disabled']:-ms-input-placeholder, textarea[disabled='disabled']:hover:-ms-input-placeholder, textarea[disabled='disabled']:focus:-ms-input-placeholder, textarea[readonly='readonly']:-ms-input-placeholder, textarea[readonly='readonly']:hover:-ms-input-placeholder, textarea[readonly='readonly']:focus:-ms-input-placeholder, input[type='text'][disabled='disabled']:-ms-input-placeholder, input[type='text'][disabled='disabled']:hover:-ms-input-placeholder, input[type='text'][disabled='disabled']:focus:-ms-input-placeholder, input[type='text'][readonly='readonly']:-ms-input-placeholder, input[type='text'][readonly='readonly']:hover:-ms-input-placeholder, input[type='text'][readonly='readonly']:focus:-ms-input-placeholder, input[type='number'][disabled='disabled']:-ms-input-placeholder, input[type='number'][disabled='disabled']:hover:-ms-input-placeholder, input[type='number'][disabled='disabled']:focus:-ms-input-placeholder, input[type='number'][readonly='readonly']:-ms-input-placeholder, input[type='number'][readonly='readonly']:hover:-ms-input-placeholder, input[type='number'][readonly='readonly']:focus:-ms-input-placeholder {
+    select[disabled='disabled']:-ms-input-placeholder, select[disabled='disabled']:hover:-ms-input-placeholder, select[disabled='disabled']:focus:-ms-input-placeholder, select[readonly='readonly']:-ms-input-placeholder, select[readonly='readonly']:hover:-ms-input-placeholder, select[readonly='readonly']:focus:-ms-input-placeholder, textarea[disabled='disabled']:-ms-input-placeholder, textarea[disabled='disabled']:hover:-ms-input-placeholder, textarea[disabled='disabled']:focus:-ms-input-placeholder, textarea[readonly='readonly']:-ms-input-placeholder, textarea[readonly='readonly']:hover:-ms-input-placeholder, textarea[readonly='readonly']:focus:-ms-input-placeholder, input[type='text'][disabled='disabled']:-ms-input-placeholder, input[type='text'][disabled='disabled']:hover:-ms-input-placeholder, input[type='text'][disabled='disabled']:focus:-ms-input-placeholder, input[type='text'][readonly='readonly']:-ms-input-placeholder, input[type='text'][readonly='readonly']:hover:-ms-input-placeholder, input[type='text'][readonly='readonly']:focus:-ms-input-placeholder, input[type='email'][disabled='disabled']:-ms-input-placeholder, input[type='email'][disabled='disabled']:hover:-ms-input-placeholder, input[type='email'][disabled='disabled']:focus:-ms-input-placeholder, input[type='email'][readonly='readonly']:-ms-input-placeholder, input[type='email'][readonly='readonly']:hover:-ms-input-placeholder, input[type='email'][readonly='readonly']:focus:-ms-input-placeholder, input[type='number'][disabled='disabled']:-ms-input-placeholder, input[type='number'][disabled='disabled']:hover:-ms-input-placeholder, input[type='number'][disabled='disabled']:focus:-ms-input-placeholder, input[type='number'][readonly='readonly']:-ms-input-placeholder, input[type='number'][readonly='readonly']:hover:-ms-input-placeholder, input[type='number'][readonly='readonly']:focus:-ms-input-placeholder, input[type='password'][disabled='disabled']:-ms-input-placeholder, input[type='password'][disabled='disabled']:hover:-ms-input-placeholder, input[type='password'][disabled='disabled']:focus:-ms-input-placeholder, input[type='password'][readonly='readonly']:-ms-input-placeholder, input[type='password'][readonly='readonly']:hover:-ms-input-placeholder, input[type='password'][readonly='readonly']:focus:-ms-input-placeholder {
       color: #adadad; }
-    select[disabled='disabled']::-ms-input-placeholder, select[disabled='disabled']:hover::-ms-input-placeholder, select[disabled='disabled']:focus::-ms-input-placeholder, select[readonly='readonly']::-ms-input-placeholder, select[readonly='readonly']:hover::-ms-input-placeholder, select[readonly='readonly']:focus::-ms-input-placeholder, textarea[disabled='disabled']::-ms-input-placeholder, textarea[disabled='disabled']:hover::-ms-input-placeholder, textarea[disabled='disabled']:focus::-ms-input-placeholder, textarea[readonly='readonly']::-ms-input-placeholder, textarea[readonly='readonly']:hover::-ms-input-placeholder, textarea[readonly='readonly']:focus::-ms-input-placeholder, input[type='text'][disabled='disabled']::-ms-input-placeholder, input[type='text'][disabled='disabled']:hover::-ms-input-placeholder, input[type='text'][disabled='disabled']:focus::-ms-input-placeholder, input[type='text'][readonly='readonly']::-ms-input-placeholder, input[type='text'][readonly='readonly']:hover::-ms-input-placeholder, input[type='text'][readonly='readonly']:focus::-ms-input-placeholder, input[type='number'][disabled='disabled']::-ms-input-placeholder, input[type='number'][disabled='disabled']:hover::-ms-input-placeholder, input[type='number'][disabled='disabled']:focus::-ms-input-placeholder, input[type='number'][readonly='readonly']::-ms-input-placeholder, input[type='number'][readonly='readonly']:hover::-ms-input-placeholder, input[type='number'][readonly='readonly']:focus::-ms-input-placeholder {
+    select[disabled='disabled']::-ms-input-placeholder, select[disabled='disabled']:hover::-ms-input-placeholder, select[disabled='disabled']:focus::-ms-input-placeholder, select[readonly='readonly']::-ms-input-placeholder, select[readonly='readonly']:hover::-ms-input-placeholder, select[readonly='readonly']:focus::-ms-input-placeholder, textarea[disabled='disabled']::-ms-input-placeholder, textarea[disabled='disabled']:hover::-ms-input-placeholder, textarea[disabled='disabled']:focus::-ms-input-placeholder, textarea[readonly='readonly']::-ms-input-placeholder, textarea[readonly='readonly']:hover::-ms-input-placeholder, textarea[readonly='readonly']:focus::-ms-input-placeholder, input[type='text'][disabled='disabled']::-ms-input-placeholder, input[type='text'][disabled='disabled']:hover::-ms-input-placeholder, input[type='text'][disabled='disabled']:focus::-ms-input-placeholder, input[type='text'][readonly='readonly']::-ms-input-placeholder, input[type='text'][readonly='readonly']:hover::-ms-input-placeholder, input[type='text'][readonly='readonly']:focus::-ms-input-placeholder, input[type='email'][disabled='disabled']::-ms-input-placeholder, input[type='email'][disabled='disabled']:hover::-ms-input-placeholder, input[type='email'][disabled='disabled']:focus::-ms-input-placeholder, input[type='email'][readonly='readonly']::-ms-input-placeholder, input[type='email'][readonly='readonly']:hover::-ms-input-placeholder, input[type='email'][readonly='readonly']:focus::-ms-input-placeholder, input[type='number'][disabled='disabled']::-ms-input-placeholder, input[type='number'][disabled='disabled']:hover::-ms-input-placeholder, input[type='number'][disabled='disabled']:focus::-ms-input-placeholder, input[type='number'][readonly='readonly']::-ms-input-placeholder, input[type='number'][readonly='readonly']:hover::-ms-input-placeholder, input[type='number'][readonly='readonly']:focus::-ms-input-placeholder, input[type='password'][disabled='disabled']::-ms-input-placeholder, input[type='password'][disabled='disabled']:hover::-ms-input-placeholder, input[type='password'][disabled='disabled']:focus::-ms-input-placeholder, input[type='password'][readonly='readonly']::-ms-input-placeholder, input[type='password'][readonly='readonly']:hover::-ms-input-placeholder, input[type='password'][readonly='readonly']:focus::-ms-input-placeholder {
       color: #adadad; }
     select[disabled='disabled']::placeholder, select[disabled='disabled']:hover::placeholder, select[disabled='disabled']:focus::placeholder, select[readonly='readonly']::placeholder, select[readonly='readonly']:hover::placeholder, select[readonly='readonly']:focus::placeholder,
     textarea[disabled='disabled']::placeholder,
@@ -4841,12 +4863,24 @@ input[type='number'] {
     input[type='text'][readonly='readonly']::placeholder,
     input[type='text'][readonly='readonly']:hover::placeholder,
     input[type='text'][readonly='readonly']:focus::placeholder,
+    input[type='email'][disabled='disabled']::placeholder,
+    input[type='email'][disabled='disabled']:hover::placeholder,
+    input[type='email'][disabled='disabled']:focus::placeholder,
+    input[type='email'][readonly='readonly']::placeholder,
+    input[type='email'][readonly='readonly']:hover::placeholder,
+    input[type='email'][readonly='readonly']:focus::placeholder,
     input[type='number'][disabled='disabled']::placeholder,
     input[type='number'][disabled='disabled']:hover::placeholder,
     input[type='number'][disabled='disabled']:focus::placeholder,
     input[type='number'][readonly='readonly']::placeholder,
     input[type='number'][readonly='readonly']:hover::placeholder,
-    input[type='number'][readonly='readonly']:focus::placeholder {
+    input[type='number'][readonly='readonly']:focus::placeholder,
+    input[type='password'][disabled='disabled']::placeholder,
+    input[type='password'][disabled='disabled']:hover::placeholder,
+    input[type='password'][disabled='disabled']:focus::placeholder,
+    input[type='password'][readonly='readonly']::placeholder,
+    input[type='password'][readonly='readonly']:hover::placeholder,
+    input[type='password'][readonly='readonly']:focus::placeholder {
       color: #adadad; }
   select.Mandatory, select.Mandatory:hover, select.Mandatory:focus,
   textarea.Mandatory,
@@ -4855,14 +4889,22 @@ input[type='number'] {
   input[type='text'].Mandatory,
   input[type='text'].Mandatory:hover,
   input[type='text'].Mandatory:focus,
+  input[type='email'].Mandatory,
+  input[type='email'].Mandatory:hover,
+  input[type='email'].Mandatory:focus,
   input[type='number'].Mandatory,
   input[type='number'].Mandatory:hover,
-  input[type='number'].Mandatory:focus {
+  input[type='number'].Mandatory:focus,
+  input[type='password'].Mandatory,
+  input[type='password'].Mandatory:hover,
+  input[type='password'].Mandatory:focus {
     border-left: 3px solid #00bfa5; }
   select.Not_Valid,
   textarea.Not_Valid,
   input[type='text'].Not_Valid,
-  input[type='number'].Not_Valid {
+  input[type='email'].Not_Valid,
+  input[type='number'].Not_Valid,
+  input[type='password'].Not_Valid {
     border: 1px solid #ff3e2d;
     border-left-width: 3px;
     border-radius: 4px;
@@ -4873,15 +4915,21 @@ input[type='number'] {
     textarea.Not_Valid:focus,
     input[type='text'].Not_Valid:hover,
     input[type='text'].Not_Valid:focus,
+    input[type='email'].Not_Valid:hover,
+    input[type='email'].Not_Valid:focus,
     input[type='number'].Not_Valid:hover,
-    input[type='number'].Not_Valid:focus {
+    input[type='number'].Not_Valid:focus,
+    input[type='password'].Not_Valid:hover,
+    input[type='password'].Not_Valid:focus {
       border: 1px solid #ff3e2d;
       border-left-width: 3px;
       box-shadow: none; }
   select.small,
   textarea.small,
   input[type='text'].small,
-  input[type='number'].small {
+  input[type='email'].small,
+  input[type='number'].small,
+  input[type='password'].small {
     height: 26px;
     min-height: 26px; }
 
