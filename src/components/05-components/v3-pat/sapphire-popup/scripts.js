@@ -127,7 +127,6 @@ var RichWidgets_Popup_Editor_notifyWidget;
 				const loadTargetPage = function() {
 					if (isInsideIframe) {
 						window.top.POPUP_NOTIFY_WIDGET = config.notifyId;
-						window.top.RichWidgets_Popup_Editor_notifyWidget = config.notifyId;
 						// Create a reference to the iframe object on the document parent
 						window.top._iframePopup = window.frameElement.contentWindow;
 					} else {
@@ -136,6 +135,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 					POPUP_NOTIFY_WIDGET = config.notifyId;
 					RichWidgets_Popup_Editor_notifyWidget = config.notifyId;
+					window.top._iframePopup.RichWidgets_Popup_Editor_notifyWidget = config.notifyId;
 
 					// Load target page
 					const ohref = getLinkHREF(linkWidget)[0];
