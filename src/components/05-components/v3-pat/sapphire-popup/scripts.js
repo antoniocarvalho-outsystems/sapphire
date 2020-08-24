@@ -1,4 +1,6 @@
 /* Component SapphirePopup */
+var RichWidgets_Popup_Editor_notifyWidget;
+
 (function($, window, SapphireWidgets) {
 	// Check if the widget is loaded inside an iFrame
 	let isInsideIframe = window.frameElement != undefined || false;
@@ -125,6 +127,7 @@
 				const loadTargetPage = function() {
 					if (isInsideIframe) {
 						window.top.POPUP_NOTIFY_WIDGET = config.notifyId;
+						window.top.RichWidgets_Popup_Editor_notifyWidget = notifyId;
 						// Create a reference to the iframe object on the document parent
 						window.top._iframePopup = window.frameElement.contentWindow;
 					} else {
@@ -132,6 +135,7 @@
 					}
 
 					POPUP_NOTIFY_WIDGET = config.notifyId;
+					RichWidgets_Popup_Editor_notifyWidget = notifyId;
 
 					// Load target page
 					const ohref = getLinkHREF(linkWidget)[0];
