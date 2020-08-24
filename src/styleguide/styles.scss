@@ -57,6 +57,7 @@ $styleguide-main-content-padding: 50px;
 
 		> .icon {
 			@include absolute-center();
+
 			color: $regular-alpha;
 			cursor: pointer;
 			display: none;
@@ -70,6 +71,7 @@ $styleguide-main-content-padding: 50px;
 			height: $styleguide-menu-item-height;
 			line-height: $styleguide-menu-item-height;
 			margin: 0;
+			padding: 0 10px;
 			width: 100%;
 		}
 	}
