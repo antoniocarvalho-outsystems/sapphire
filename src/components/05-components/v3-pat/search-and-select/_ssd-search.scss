@@ -34,6 +34,10 @@ $searchsd-size-base: 48px;
 		.SearchSD_search {
 			border-bottom: 0;
 
+			.SearchSD_search_favoriteLink {
+				border-bottom-left-radius: 0;
+			}
+
 			.SearchSD__inputWrapper {
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
@@ -51,10 +55,6 @@ $searchsd-size-base: 48px;
 		.SearchSD_content {
 			background-color: $sapphire-white;
 			display: block;
-		}
-
-		.SearchSD_search_favoriteLink {
-			border-bottom-left-radius: 0 !important;
 		}
 	}
 
@@ -110,7 +110,7 @@ $searchsd-size-base: 48px;
 					font-style: normal;
 					font-variant: normal;
 					font-weight: normal;
-					padding-right: 10px;
+					padding-right: $sapphire-sizes--medium;
 					pointer-events: none;
 					position: absolute;
 					text-transform: none;
@@ -126,7 +126,7 @@ $searchsd-size-base: 48px;
 				font-size: inherit;
 				height: 100%;
 				line-height: 46px;
-				padding-left: 40px;
+				padding-left: $sapphire-sizes--xxlarge;
 				width: 100%;
 			}
 		}
@@ -363,13 +363,13 @@ $searchsd-size-base: 48px;
 		}
 
 		.SearchSD___BackToSearch {
-			border-bottom-right-radius: 23px;
-			border-top-right-radius: 23px;
+			border-bottom-right-radius: $searchsd-border-radius;
+			border-top-right-radius: $searchsd-border-radius;
 			color: $mid-light-grey;
 			height: 100%;
 			line-height: 46px;
-			padding-left: 40px;
-			padding-right: 20px;
+			padding-left: $sapphire-sizes--xxlarge;
+			padding-right: $sapphire-sizes--medium;
 			white-space: nowrap;
 			width: 100%;
 		}
@@ -394,7 +394,7 @@ $searchsd-size-base: 48px;
 				font-style: normal;
 				font-variant: normal;
 				font-weight: normal;
-				padding-right: 10px;
+				padding-right: $sapphire-sizes--medium;
 				pointer-events: none;
 				position: absolute;
 				text-transform: none;
@@ -551,49 +551,94 @@ $searchsd-size-base: 48px;
 			right: unset;
 		}
 
-		&.hasClone {
-			.SearchSD__cloneWrapper {
-				border-bottom-left-radius: 23px;
-				border-bottom-right-radius: 0;
-				border-top-left-radius: 23px;
-				border-top-right-radius: 0;
+		&.hasFavorite {
+			.SearchSD_search {
+				.SearchSD__inputWrapper {
+					border-left-color: $light-grey;
+					border-radius: $searchsd-border-radius 0 0 $searchsd-border-radius;
+					border-right-color: transparent;
 
-				&:before {
-					padding-left: 10px;
-					padding-right: 0;
+					&:hover {
+						background-color: $regular-eta;
+						border-color: $regular-alpha;
+					}
 				}
-			}
-
-			.SearchSD___cloneTitle {
-				padding-left: 0;
-				padding-right: 40px;
 			}
 		}
 
-		.SearchSD_search {
-			.SearchSD_search_favoriteLink {
-				border-bottom-left-radius: 0;
-				border-bottom-right-radius: 23px;
-				border-left: 1px solid $light-grey;
-				border-right: none;
-				border-top-left-radius: 0;
-				border-top-right-radius: 23px;
+		&.hasClone {
+			.SearchSD_search {
+				.SearchSD__inputWrapper {
+					border-radius: 0;
+				}
 			}
 
-			.SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input {
-				input[type='text'] {
-					padding: 0 67px 0 40px;
-				}
+			.SearchSD__cloneWrapper {
+				border-radius: $searchsd-border-radius 0 0 $searchsd-border-radius;
 
 				&:before {
 					padding-left: $sapphire-sizes--medium;
 					padding-right: 0;
 				}
 			}
+
+			.SearchSD___cloneTitle {
+				padding-left: 0;
+				padding-right: $sapphire-sizes--xxlarge;
+			}
 		}
 
-		.SearchSD__inputWrapper {
-			border: none;
+		&.showFavorite {
+			.SearchSD {
+				.SearchSD_search {
+					.SearchSD__FavoriteCounter {
+						padding-left: 0;
+						padding-right: $sapphire-sizes--medium;
+					}
+				}
+			}
+		}
+
+		&.Open {
+			.SearchSD_search {
+				.SearchSD__inputWrapper {
+					border-bottom-left-radius: 0;
+				}
+
+				.SearchSD_search_favoriteLink {
+					border-bottom-right-radius: 0;
+				}
+
+				.SearchSD__cloneWrapper {
+					border-bottom-left-radius: 0;
+				}
+			}
+		}
+
+		.SearchSD_search {
+			.SearchSD_search_favoriteLink {
+				border-radius: 0 $searchsd-border-radius $searchsd-border-radius 0;
+			}
+
+			.SearchSD__FavoriteRemove {
+				border-top-left-radius: $searchsd-border-radius;
+				border-top-right-radius: 0;
+
+				&:before {
+					padding-left: $sapphire-sizes--medium;
+					padding-right: 0;
+				}
+			}
+
+			.SearchSD__FavoriteCounter {
+				padding-left: 0;
+				padding-right: $sapphire-sizes--medium;
+			}
+
+			.SearchSD___BackToSearch {
+				padding-left: $sapphire-sizes--medium;
+				padding-right: $sapphire-sizes--xxlarge;
+			}
 		}
 	}
 
