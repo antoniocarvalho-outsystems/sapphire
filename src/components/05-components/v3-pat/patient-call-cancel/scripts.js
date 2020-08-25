@@ -1,73 +1,67 @@
 /* Component PatientCallCancel */
-(function ($, window, document, SapphireWidgets) {
-	var create = function (config) {
-		var interval;
-		var timeCounter;
-		var $widget = $('#' + config.widgetId).find('.PatientCallCancel');
-		var $countdown = $widget.find('.PatientCallCancel-counter');
-		var $label = $widget.find('.PatientCallCancel-label');
+(function($, window, document, SapphireWidgets) {
+	const create = function(config) {
+		const $widget = $('#' + config.widgetId).find('.PatientCallCancel');
+		const $countdown = $widget.find('[ui=data-counter]');
+		const $callButton = $widget.find('[ui=data-button-call]');
+		const $cancelButton = $widget.find('[ui=data-button-cancel]');
 
-		var setState = function (state_in, text_in) {
-			//js-idle, js-calling
-			$widget.find('> div').prop('class', state_in);
-			$label.text(text_in);
-		};
+		let interval;
+		let timeCounter;
 
-		var callPatient = function ($widget) {
-			setState('js-calling', config.txtCallPatient);
-			if (config.showCountdown) {
-				$countdown.text(config.txtCallingIn + ' ' + config.timeToCancel);
-			} else {
-				$countdown.text(config.txtCallingIn);
-			}
+		const callPatient = function($widget) {
+			toggleCallingState();
+
+			if (config.showCountdown) $countdown.text(config.txtCallingIn + ' ' + config.timeToCancel);
+			else $countdown.text(config.txtCallingIn);
+
 			startCounter();
 		};
 
-		var startCounter = function () {
+		const toggleCallingState = () => {
+			$widget.toggleClass('CallingPatient');
+			$countdown.text(config.txtCallPatient);
+		};
+
+		const startCounter = () => {
 			timeCounter = config.timeToCancel;
 			interval = window.setInterval(updateCounter, 1000);
 		};
 
-		var updateCounter = function () {
+		const updateCounter = () => {
 			timeCounter--;
+
 			if (timeCounter === 0) {
 				clearInterval(interval);
-				var notification = '';
-				OsNotifyWidget(config.patientCallFakeNotifyId, notification);
+				OsNotifyWidget(config.patientCallFakeNotifyId, '');
 			}
-			if (config.showCountdown) {
-				$countdown.text(config.txtCallingIn + ' ' + timeCounter);
-			} else {
-				$countdown.text(config.txtCallingIn);
-			}
+
+			if (config.showCountdown) $countdown.text(config.txtCallingIn + ' ' + timeCounter);
+			else $countdown.text(config.txtCallingIn);
 		};
 
-		$widget.find('.PatientCallCancel-cancel--label').text(config.txtCancel);
+		if (config.startCounting) callPatient($widget);
 
-		setState('js-idle', config.txtCallPatient);
-
-		if (config.startCounting) {
+		$callButton.on('click', () => {
 			callPatient($widget);
-		}
 
-		$widget.on('click', '.js-idle .PatientCallCancel-label', function () {
-			callPatient($widget);
+			if (config.startCounting) {
+				$widget.find('.PatientCallCancel__Header').hide();
+			}
 		});
 
-		$widget.on('click', '.js-idle .PatientCallCancel-icon', function () {
-			callPatient($widget);
-		});
-
-		$widget.on('click', '.js-calling .PatientCallCancel-cancel', function () {
+		$cancelButton.on('click', () => {
 			timeCounter = config.timeToCancel;
 			$countdown.text(timeCounter);
 			clearInterval(interval);
-			setState('js-idle', config.txtCallPatient);
+
+			toggleCallingState();
+
+			if (config.startCounting) {
+				$widget.find('.PatientCallCancel__Header').show();
+			}
 		});
 	};
 
-	SapphireWidgets.PatientCallCancel = {
-		create: create,
-	};
-
+	SapphireWidgets.PatientCallCancel = { create };
 })(jQuery, window, document, SapphireWidgets);
