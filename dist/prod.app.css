@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940021 || Generated: Mon Aug 24 2020 18:01:05 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940022 || Generated: Tue Aug 25 2020 17:18:10 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21684,6 +21684,8 @@ div.List-Star {
       border: 1px solid #00bfa5; }
   .SearchSD.Open .SearchSD_search {
     border-bottom: 0; }
+    .SearchSD.Open .SearchSD_search .SearchSD_search_favoriteLink {
+      border-bottom-left-radius: 0; }
     .SearchSD.Open .SearchSD_search .SearchSD__inputWrapper {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0; }
@@ -21694,8 +21696,6 @@ div.List-Star {
   .SearchSD.Open .SearchSD_content {
     background-color: #ffffff;
     display: block; }
-  .SearchSD.Open .SearchSD_search_favoriteLink {
-    border-bottom-left-radius: 0 !important; }
   .SearchSD.hasFavorite .SearchSD_search .SearchSD__inputWrapper {
     border-bottom-left-radius: 0;
     border-left-color: transparent;
@@ -21734,7 +21734,7 @@ div.List-Star {
       font-style: normal;
       font-variant: normal;
       font-weight: normal;
-      padding-right: 10px;
+      padding-right: 16px;
       pointer-events: none;
       position: absolute;
       text-transform: none;
@@ -21748,7 +21748,7 @@ div.List-Star {
     font-size: inherit;
     height: 100%;
     line-height: 46px;
-    padding-left: 40px;
+    padding-left: 48px;
     width: 100%; }
   .SearchSD.hasClone.showClone .SearchSD__inputWrapper {
     cursor: pointer; }
@@ -21914,13 +21914,13 @@ div.List-Star {
         color: #00bfa5;
         font-family: "LatoBold"; }
     .SearchSD .SearchSD_search .SearchSD___BackToSearch {
-      border-bottom-right-radius: 23px;
-      border-top-right-radius: 23px;
+      border-bottom-right-radius: 24px;
+      border-top-right-radius: 24px;
       color: #adadad;
       height: 100%;
       line-height: 46px;
-      padding-left: 40px;
-      padding-right: 20px;
+      padding-left: 48px;
+      padding-right: 16px;
       white-space: nowrap;
       width: 100%; }
     .SearchSD .SearchSD_search .SearchSD__FavoriteRemove {
@@ -21942,7 +21942,7 @@ div.List-Star {
         font-style: normal;
         font-variant: normal;
         font-weight: normal;
-        padding-right: 10px;
+        padding-right: 16px;
         pointer-events: none;
         position: absolute;
         text-transform: none;
@@ -22065,43 +22065,72 @@ div.List-Star {
   left: 33px;
   right: unset; }
 
+.AR .SearchSD.hasFavorite .SearchSD_search .SearchSD__inputWrapper,
+.FA .SearchSD.hasFavorite .SearchSD_search .SearchSD__inputWrapper {
+  border-left-color: #d6d6d6;
+  border-radius: 24px 0 0 24px;
+  border-right-color: transparent; }
+  .AR .SearchSD.hasFavorite .SearchSD_search .SearchSD__inputWrapper:hover,
+  .FA .SearchSD.hasFavorite .SearchSD_search .SearchSD__inputWrapper:hover {
+    background-color: #f2fffd;
+    border-color: #00bfa5; }
+
+.AR .SearchSD.hasClone .SearchSD_search .SearchSD__inputWrapper,
+.FA .SearchSD.hasClone .SearchSD_search .SearchSD__inputWrapper {
+  border-radius: 0; }
+
 .AR .SearchSD.hasClone .SearchSD__cloneWrapper,
 .FA .SearchSD.hasClone .SearchSD__cloneWrapper {
-  border-bottom-left-radius: 23px;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 23px;
-  border-top-right-radius: 0; }
+  border-radius: 24px 0 0 24px; }
   .AR .SearchSD.hasClone .SearchSD__cloneWrapper:before,
   .FA .SearchSD.hasClone .SearchSD__cloneWrapper:before {
-    padding-left: 10px;
+    padding-left: 16px;
     padding-right: 0; }
 
 .AR .SearchSD.hasClone .SearchSD___cloneTitle,
 .FA .SearchSD.hasClone .SearchSD___cloneTitle {
   padding-left: 0;
-  padding-right: 40px; }
+  padding-right: 48px; }
+
+.AR .SearchSD.showFavorite .SearchSD .SearchSD_search .SearchSD__FavoriteCounter,
+.FA .SearchSD.showFavorite .SearchSD .SearchSD_search .SearchSD__FavoriteCounter {
+  padding-left: 0;
+  padding-right: 16px; }
+
+.AR .SearchSD.Open .SearchSD_search .SearchSD__inputWrapper,
+.FA .SearchSD.Open .SearchSD_search .SearchSD__inputWrapper {
+  border-bottom-left-radius: 0; }
+
+.AR .SearchSD.Open .SearchSD_search .SearchSD_search_favoriteLink,
+.FA .SearchSD.Open .SearchSD_search .SearchSD_search_favoriteLink {
+  border-bottom-right-radius: 0; }
+
+.AR .SearchSD.Open .SearchSD_search .SearchSD__cloneWrapper,
+.FA .SearchSD.Open .SearchSD_search .SearchSD__cloneWrapper {
+  border-bottom-left-radius: 0; }
 
 .AR .SearchSD .SearchSD_search .SearchSD_search_favoriteLink,
 .FA .SearchSD .SearchSD_search .SearchSD_search_favoriteLink {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 23px;
-  border-left: 1px solid #d6d6d6;
-  border-right: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 23px; }
+  border-radius: 0 24px 24px 0; }
 
-.AR .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text'],
-.FA .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text'] {
-  padding: 0 67px 0 40px; }
+.AR .SearchSD .SearchSD_search .SearchSD__FavoriteRemove,
+.FA .SearchSD .SearchSD_search .SearchSD__FavoriteRemove {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 0; }
+  .AR .SearchSD .SearchSD_search .SearchSD__FavoriteRemove:before,
+  .FA .SearchSD .SearchSD_search .SearchSD__FavoriteRemove:before {
+    padding-left: 16px;
+    padding-right: 0; }
 
-.AR .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input:before,
-.FA .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input:before {
+.AR .SearchSD .SearchSD_search .SearchSD__FavoriteCounter,
+.FA .SearchSD .SearchSD_search .SearchSD__FavoriteCounter {
+  padding-left: 0;
+  padding-right: 16px; }
+
+.AR .SearchSD .SearchSD_search .SearchSD___BackToSearch,
+.FA .SearchSD .SearchSD_search .SearchSD___BackToSearch {
   padding-left: 16px;
-  padding-right: 0; }
-
-.AR .SearchSD .SearchSD__inputWrapper,
-.FA .SearchSD .SearchSD__inputWrapper {
-  border: none; }
+  padding-right: 48px; }
 
 .AR .SearchSD___input input[type='text']:hover, .AR .SearchSD___input input[type='text']:active, .AR .SearchSD___input input[type='text']:focus,
 .FA .SearchSD___input input[type='text']:hover,
