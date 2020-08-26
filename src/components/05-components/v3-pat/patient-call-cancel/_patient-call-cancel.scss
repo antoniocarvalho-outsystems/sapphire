@@ -29,6 +29,7 @@
 	&__Header {
 		display: inline-flex;
 		gap: $sapphire-sizes--xsmall;
+		min-height: 30px;
 	}
 
 	&__Counter {
@@ -36,6 +37,7 @@
 		display: none;
 		gap: $sapphire-sizes--small;
 		justify-content: center;
+		min-height: 30px;
 		white-space: nowrap;
 	}
 

@@ -1,0 +1,18 @@
+.ManageQueueWrapper {
+	@include flex-center-vertically;
+
+	flex-direction: column;
+
+	> * {
+		width: 80%;
+	}
+}
+
+.tablet,
+.desktop.small {
+	.ManageQueueWrapper {
+		> * {
+			width: 100%;
+		}
+	}
+}

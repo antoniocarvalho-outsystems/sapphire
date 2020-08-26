@@ -78,7 +78,13 @@
 		}
 
 		[ui='data-recall-button'] {
-			margin-left: $sapphire-sizes--small;
+			margin-left: $sapphire-sizes--medium;
+
+			.PatientCallCancel {
+				[ui='data-button-call'] {
+					@extend .Button.Third;
+				}
+			}
 		}
 	}
 
@@ -88,11 +94,15 @@
 		[ui='data-call-next-button'] {
 			margin-left: $sapphire-sizes--small;
 
-			a:link,
-			a:visited {
-				font-family: $font-family-latin-regular;
-				font-size: $font-size-heading4;
-				padding: 0 $sapphire-sizes--xlarge;
+			.PatientCallCancel {
+				[ui='data-button-call'] {
+					font-family: $font-family-latin-regular;
+					font-size: $font-size-heading4;
+					height: 44px;
+					line-height: 44px;
+					margin-left: $sapphire-sizes--medium !important;
+					padding: 0 $sapphire-sizes--xlarge;
+				}
 			}
 		}
 	}

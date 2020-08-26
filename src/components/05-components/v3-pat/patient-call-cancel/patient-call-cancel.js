@@ -9,13 +9,6 @@
 
 		let interval;
 		let timeCounter;
-		const MODE_BOX = '1';
-		const MODE_LIST = '2';
-
-		if (config.mode === MODE_BOX) {
-			$callButton = $widget.find('.PatientCallCancel__HeaderMode');
-			$cancelButton = $widget.find('[ui=data-cancel-call]');
-		}
 
 		const callPatient = function($widget) {
 			toggleCallingState();
@@ -55,12 +48,8 @@
 
 			callPatient($widget);
 
-			if (config.mode === MODE_LIST) {
-				$callButton.hide();
-				$otherContent.hide();
-			} else {
-				$widget.find('.PatientCallCancel__Counter').show();
-			}
+			$callButton.hide();
+			$otherContent.hide();
 		});
 
 		$cancelButton.on('click', event => {
@@ -70,14 +59,8 @@
 
 			toggleCallingState();
 
-			if (config.mode === MODE_LIST) {
-				$callButton.show();
-				$otherContent.show();
-			} else {
-				$widget.find('.PatientCallCancel__Counter').hide();
-
-				event.stopPropagation();
-			}
+			$callButton.show();
+			$otherContent.show();
 		});
 	};
 

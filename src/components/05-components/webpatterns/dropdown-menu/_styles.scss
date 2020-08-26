@@ -15,7 +15,8 @@
 		display: block;
 	}
 
-	.PH > a {
+	.PH > a,
+	.PH > span a {
 		color: $text-color-regular;
 		display: block;
 		font-family: $font-family-latin-regular;
@@ -27,14 +28,6 @@
 			background-color: $regular-eta;
 			color: $dark-grey;
 		}
-	}
-
-	.PH > span a {
-		display: block;
-		line-height: 32px;
-		padding-left: 10px;
-		padding-right: 10px;
-		white-space: nowrap;
 	}
 }
 
