@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940028 || Generated: Wed Aug 26 2020 14:45:05 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940029 || Generated: Wed Aug 26 2020 14:52:42 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -5092,7 +5092,7 @@ a.Button.IsDefault,
   .PanelOpened a.Button.Is_Default:focus,
   .PanelOpened .DropZoneContainer .row .Is_Default.Button:focus,
   .DropZoneContainer .row .PanelOpened .Is_Default.Button:focus {
-    box-shadow: 0 0 0 3px #c4f0eb; }
+    background-color: #006758; }
   .desktop input.Button.Is_Default:active, .desktop input.Button.Is_Default:hover,
   .desktop input.Button:active,
   .desktop input.Button:hover,
@@ -5337,9 +5337,7 @@ a.Button.IsDefault,
     .PanelOpened a.Button.Is_Default.Second:hover,
     .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button:hover,
     .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button:hover {
-      background-color: #f2fffd;
-      border: 1px solid #56d3c2;
-      color: #00bfa5; }
+      background-color: #f2fffd; }
     .desktop input.Button.Is_Default.Second:focus,
     .desktop input.Button.Second:focus,
     .desktop input.Button.ButtonDefault.Second:focus,
@@ -5369,7 +5367,7 @@ a.Button.IsDefault,
     .PanelOpened a.Button.Is_Default.Second:focus,
     .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button:focus,
     .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button:focus {
-      box-shadow: 0 0 0 3px #c4f0eb; }
+      background-color: #c4f0eb; }
     .desktop input.Button.Is_Default.Second:disabled, .desktop input.Button.Is_Default.Second[disabled],
     .desktop input.Button.Second:disabled,
     .desktop input.Button.Second[disabled],
@@ -5784,7 +5782,7 @@ a.Button.IsDefault,
     .PanelOpened a.Button.Is_Default.Cancel:focus,
     .PanelOpened .DropZoneContainer .row .Is_Default.Cancel.Button:focus,
     .DropZoneContainer .row .PanelOpened .Is_Default.Cancel.Button:focus {
-      box-shadow: 0 0 0 3px #adadad; }
+      background-color: #d6d6d6; }
     .desktop input.Button.Is_Default.Third:disabled, .desktop input.Button.Is_Default.Third[disabled], .desktop input.Button.Is_Default.Cancel:disabled, .desktop input.Button.Is_Default.Cancel[disabled],
     .desktop input.Button.Third:disabled,
     .desktop input.Button.Third[disabled],
