@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.940026 || Generated: Wed Aug 26 2020 13:02:02 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.1.940027 || Generated: Wed Aug 26 2020 14:14:06 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -534,7 +534,7 @@ eval("__webpack_require__(/*! ./confirmation-panel */ \"./src/components/05-comp
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component PatientCallCancelStructure */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function(config) {\r\n\t\tconst $widget = $('#' + config.widgetId).find('.PatientCallCancelStructure');\r\n\t\tconst $listQueueWrapper = $widget.find('.PatientCallCancelStructure__ListQueues');\r\n\t\tconst $dropdown = $listQueueWrapper.find('.InlineDropdown');\r\n\r\n\t\t$listQueueWrapper.on('click', () => {\r\n\t\t\tif (!$dropdown.length) return;\r\n\r\n\t\t\t$dropdown.trigger('click');\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.PatientCallCancelStructure = { create };\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js?");
+eval("/* Component PatientCallCancelStructure */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function(config) {\r\n\t\tconst $widget = $('#' + config.widgetId).find('.PatientCallCancelStructure');\r\n\t\tconst $listQueueWrapper = $widget.find('.PatientCallCancelStructure__ListQueues');\r\n\t\tconst $dropdown = $listQueueWrapper.find('.InlineDropdown_label');\r\n\r\n\t\t$listQueueWrapper.on('click', event => {\r\n\t\t\tif (!$dropdown.length) return;\r\n\t\t\tevent.stopPropagation();\r\n\r\n\t\t\t$dropdown.trigger('click');\r\n\t\t\tevent.preventDefault();\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.PatientCallCancelStructure = { create };\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js?");
 
 /***/ }),
 
