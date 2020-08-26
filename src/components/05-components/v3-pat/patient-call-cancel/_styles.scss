@@ -1,20 +1,34 @@
 .PatientCallCancel {
+	align-items: center;
+	display: inline-flex;
+	gap: $sapphire-sizes--small;
+
 	&.CallingPatient & {
 		&__Counter {
 			display: inline-flex;
 		}
 	}
 
-	&--startCounting & {
-		&__Header {
-			display: none;
+	&--startCounting {
+		.PatientCallCancel__Header {
+			.PatientCallCancel__Other,
+			[ui='data-button-call'] {
+				display: none;
+			}
+		}
+	}
+
+	&--disabled {
+		pointer-events: none;
+
+		.PatientCallCancel__HeaderMode {
+			background-color: $regular-grey;
 		}
 	}
 
 	&__Header {
 		display: inline-flex;
 		gap: $sapphire-sizes--xsmall;
-		margin-bottom: $sapphire-sizes--small;
 	}
 
 	&__Counter {
@@ -22,254 +36,54 @@
 		display: none;
 		gap: $sapphire-sizes--small;
 		justify-content: center;
+		white-space: nowrap;
+	}
+
+	&__Queue {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		&:empty {
+			display: none;
+		}
+
+		> div {
+			border-radius: $border-radius-default;
+		}
+	}
+
+	&__HeaderMode {
+		@include flex-center-total();
+
+		background-color: $regular-alpha;
+		border-radius: $border-radius-medium;
+		color: $regular-white;
+		cursor: pointer;
+		flex-direction: column;
+		min-height: 118px;
+		padding: $sapphire-sizes--medium;
+
+		[ui='data-icon'] {
+			font-size: $font-size-heading3;
+		}
+
+		[ui='data-label'] {
+			font-family: $font-family-latin-bold;
+			text-transform: uppercase;
+		}
+
+		.PatientCallCancel__Counter {
+			flex-direction: column;
+			font-size: $font-size-small;
+			line-height: 1;
+			margin-top: $sapphire-sizes--small;
+
+			[ui='data-cancel-call'] {
+				@include flex-center-total();
+
+				gap: $sapphire-sizes--xsmall;
+			}
+		}
 	}
 }
-
-// $call-cancel-color-active: $regular-alpha;
-
-// .PatientCallCancel {
-// 	display: inline-block;
-
-// 	> div {
-// 		align-items: center;
-// 		display: flex;
-// 		position: relative;
-// 	}
-
-// 	> div.js-idle:nth-child(2) {
-// 		display: none;
-// 	}
-
-// 	.js-idle {
-// 		.PatientCallCancel-icon,
-// 		.PatientCallCancel-label {
-// 			color: $call-cancel-color-active;
-// 			cursor: pointer;
-// 			font-family: $font-family-latin-bold;
-// 		}
-
-// 		.PatientCallCancel-cancel,
-// 		.PatientCallCancel-counter {
-// 			display: none;
-// 		}
-// 	}
-
-// 	.js-calling {
-// 		.PatientCallCancel-label,
-// 		.PatientCallCancel-icon {
-// 			color: $regular-grey;
-// 		}
-// 	}
-
-// 	&-icon {
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: center;
-// 		margin-right: 5px;
-// 	}
-
-// 	&-label {
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: center;
-// 		margin-right: 10px;
-// 	}
-
-// 	&-counter {
-// 		display: flex;
-// 		flex-direction: column;
-// 		font-size: 1.2em;
-// 		justify-content: center;
-// 	}
-
-// 	&-cancel {
-// 		color: $call-cancel-color-active;
-// 		cursor: pointer;
-// 		display: flex;
-// 		flex-direction: column;
-// 		font-family: $font-family-latin-bold;
-// 		justify-content: center;
-
-// 		span.icon {
-// 			margin-right: 5px;
-// 		}
-// 	}
-
-// 	&-queue {
-// 		border-radius: $border-radius-default;
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: center;
-
-// 		> div {
-// 			border-radius: $border-radius-default;
-// 		}
-
-// 		&:empty {
-// 			display: none;
-// 		}
-// 	}
-
-// 	&-other {
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: center;
-// 		white-space: nowrap;
-
-// 		.icon-generalinfo {
-// 			color: $call-cancel-color-active;
-// 		}
-// 	}
-
-// 	&-right {
-// 		> div {
-// 			display: inline-flex;
-// 		}
-
-// 		.PatientCallCancel-other:not(:empty) {
-// 			margin-right: 10px;
-// 		}
-// 	}
-
-// 	&-List {
-// 		> div {
-// 			min-height: 27px;
-// 		}
-
-// 		.PatientCallCancel-label {
-// 			line-height: 27px;
-// 		}
-// 	}
-
-// 	&-Header {
-// 		> div {
-// 			min-height: 80px;
-// 		}
-
-// 		.PatientCallCancel {
-// 			&-box {
-// 				@include flex-center-total;
-
-// 				background-color: $call-cancel-color-active;
-// 				border-radius: $border-radius-medium;
-// 				color: $regular-white;
-// 				flex-direction: column;
-// 				min-height: 90px;
-// 				min-width: 120px;
-// 				position: relative;
-// 			}
-
-// 			&-other {
-// 				max-width: 120px;
-// 				padding-left: 5px;
-// 				padding-right: 5px;
-
-// 				> div,
-// 				> span {
-// 					display: block;
-// 				}
-// 			}
-
-// 			&-label {
-// 				display: inline-block;
-// 				font-size: 14px;
-// 				text-transform: uppercase;
-// 			}
-
-// 			&-label,
-// 			&-icon {
-// 				display: block;
-// 				margin: 0;
-// 			}
-
-// 			&-counter {
-// 				margin: 0 0 0 4px;
-// 			}
-
-// 			&-icon {
-// 				font-size: 1.4em;
-// 				line-height: 0.9em;
-// 				margin-bottom: 6px;
-// 			}
-
-// 			&-cancel {
-// 				bottom: 5px;
-// 				bottom: 0;
-// 				color: $regular-white;
-// 				left: 0;
-// 				margin: 0;
-// 				padding: 0;
-// 				position: absolute;
-// 				text-align: center;
-// 				width: 100%;
-// 			}
-// 		}
-
-// 		.js-idle {
-// 			.PatientCallCancel-label,
-// 			.PatientCallCancel-icon {
-// 				color: $regular-white;
-// 			}
-// 		}
-
-// 		.js-calling {
-// 			.PatientCallCancel-label {
-// 				color: $text-color-disabled;
-// 				display: none;
-// 				font-weight: 700;
-// 			}
-
-// 			.PatientCallCancel-counter {
-// 				display: inline-block;
-// 			}
-
-// 			.PatientCallCancel-icon {
-// 				color: $regular-white;
-// 			}
-// 		}
-// 	}
-
-// 	&-disabled {
-// 		&.PatientCallCancel-List .PatientCallCancel-icon,
-// 		&.PatientCallCancel-List .PatientCallCancel-label {
-// 			color: $text-color-disabled;
-// 		}
-
-// 		.PatientCallCancel-box {
-// 			background-color: $regular-grey;
-// 		}
-
-// 		.PatientCallCancel-label,
-// 		.PatientCallCancel-icon {
-// 			cursor: auto !important;
-// 			pointer-events: none !important;
-// 		}
-// 	}
-// }
-
-// .AR,
-// .FA {
-// 	.PatientCallCancel {
-// 		&-label {
-// 			margin-left: 10px;
-// 		}
-
-// 		&-cancel {
-// 			font-family: $font-family-arabic-bold;
-// 		}
-
-// 		&-right {
-// 			.PatientCallCancel-other:not(:empty) {
-// 				margin-left: 10px;
-// 				margin-right: auto;
-// 			}
-// 		}
-
-// 		.js-idle {
-// 			.PatientCallCancel-icon,
-// 			.PatientCallCancel-label {
-// 				font-family: $font-family-arabic-bold;
-// 			}
-// 		}
-// 	}
-// }

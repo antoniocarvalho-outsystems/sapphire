@@ -3,11 +3,19 @@
 	const create = function(config) {
 		const $widget = $('#' + config.widgetId).find('.PatientCallCancel');
 		const $countdown = $widget.find('[ui=data-counter]');
-		const $callButton = $widget.find('[ui=data-button-call]');
-		const $cancelButton = $widget.find('[ui=data-button-cancel]');
+		let $callButton = $widget.find('[ui=data-button-call]');
+		let $cancelButton = $widget.find('[ui=data-button-cancel]');
+		const $otherContent = $widget.find('.PatientCallCancel__Other');
 
 		let interval;
 		let timeCounter;
+		const MODE_BOX = '1';
+		const MODE_LIST = '2';
+
+		if (config.mode === MODE_BOX) {
+			$callButton = $widget.find('.PatientCallCancel__HeaderMode');
+			$cancelButton = $widget.find('[ui=data-cancel-call]');
+		}
 
 		const callPatient = function($widget) {
 			toggleCallingState();
@@ -43,22 +51,32 @@
 		if (config.startCounting) callPatient($widget);
 
 		$callButton.on('click', () => {
+			if ($widget.hasClass('CallingPatient')) return;
+
 			callPatient($widget);
 
-			if (config.startCounting) {
-				$widget.find('.PatientCallCancel__Header').hide();
+			if (config.mode === MODE_LIST) {
+				$callButton.hide();
+				$otherContent.hide();
+			} else {
+				$widget.find('.PatientCallCancel__Counter').show();
 			}
 		});
 
-		$cancelButton.on('click', () => {
+		$cancelButton.on('click', event => {
 			timeCounter = config.timeToCancel;
 			$countdown.text(timeCounter);
 			clearInterval(interval);
 
 			toggleCallingState();
 
-			if (config.startCounting) {
-				$widget.find('.PatientCallCancel__Header').show();
+			if (config.mode === MODE_LIST) {
+				$callButton.show();
+				$otherContent.show();
+			} else {
+				$widget.find('.PatientCallCancel__Counter').hide();
+
+				event.stopPropagation();
 			}
 		});
 	};
