@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940025 || Generated: Wed Aug 26 2020 11:50:42 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940026 || Generated: Wed Aug 26 2020 13:02:02 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19317,6 +19317,77 @@ body.PanelById.PanelOpened {
                 justify-content: center;
         gap: 4px; }
 
+.PatientCallCancelStructure {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 100px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  width: 100%; }
+  .PatientCallCancelStructure__ListQueues, .PatientCallCancelStructure__LastCalled, .PatientCallCancelStructure__Actions {
+    -webkit-box-flex: 1;
+            flex: 1;
+    padding: 16px;
+    position: relative; }
+    .PatientCallCancelStructure__ListQueues:after, .PatientCallCancelStructure__LastCalled:after, .PatientCallCancelStructure__Actions:after {
+      background-color: #d6d6d6;
+      content: '';
+      display: block;
+      height: calc(100% - 32px);
+      position: absolute;
+      right: 0;
+      top: 16px;
+      width: 1px; }
+    .PatientCallCancelStructure__ListQueues:last-child:after, .PatientCallCancelStructure__LastCalled:last-child:after, .PatientCallCancelStructure__Actions:last-child:after {
+      opacity: 0; }
+  .PatientCallCancelStructure__ListQueues {
+    cursor: pointer;
+    padding-left: 32px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+    .PatientCallCancelStructure__ListQueues:hover {
+      background-color: #ebebeb;
+      border-radius: 100px; }
+      .PatientCallCancelStructure__ListQueues:hover:after {
+        opacity: 0; }
+    .PatientCallCancelStructure__ListQueues [ui='data-queue-list-dropdown'] {
+      font-family: "LatoBold";
+      font-size: 1.286em;
+      margin-top: 4px; }
+      .PatientCallCancelStructure__ListQueues [ui='data-queue-list-dropdown'] .InlineDropdown_text {
+        color: #333333; }
+      .PatientCallCancelStructure__ListQueues [ui='data-queue-list-dropdown'] .InlineDropdown_icon {
+        color: #333333;
+        height: 24px;
+        margin: 0 8px; }
+        .PatientCallCancelStructure__ListQueues [ui='data-queue-list-dropdown'] .InlineDropdown_icon span {
+          font-size: 0.857em; }
+  .PatientCallCancelStructure__LastCalled {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex; }
+    .PatientCallCancelStructure__LastCalled [ui='data-last-called-number'] {
+      font-family: "LatoBold";
+      font-size: 1.286em;
+      margin-top: 4px; }
+    .PatientCallCancelStructure__LastCalled [ui='data-recall-button'] {
+      margin-left: 8px; }
+  .PatientCallCancelStructure__Actions {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+            justify-content: flex-end; }
+    .PatientCallCancelStructure__Actions [ui='data-call-next-button'] {
+      margin-left: 8px; }
+      .PatientCallCancelStructure__Actions [ui='data-call-next-button'] a:link,
+      .PatientCallCancelStructure__Actions [ui='data-call-next-button'] a:visited {
+        font-family: "LatoRegular";
+        font-size: 1.143em;
+        padding: 0 32px; }
+
 .PatientMedicalFile {
   background-color: #f3f3f3;
   border-radius: 2px;
@@ -26500,7 +26571,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .shadow--xsmall {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-.ShadowSmall, .DropdownMenu, .sp-container, .daterangepicker, div.ui-timepicker-container, .select2-container .select2-dropdown,
+.ShadowSmall, .DropdownMenu, .sp-container, .daterangepicker, div.ui-timepicker-container, .PatientCallCancelStructure, .select2-container .select2-dropdown,
 .shadow--small {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
