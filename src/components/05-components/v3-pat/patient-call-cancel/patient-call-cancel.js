@@ -1,7 +1,7 @@
 /* Component PatientCallCancel */
 (function($, window, document, SapphireWidgets) {
 	const create = function(config) {
-		const $widget = $('#' + config.widgetId).find('.PatientCallCancel');
+		const $widget = $('#' + config.widgetId);
 		const $countdown = $widget.find('[ui=data-counter]');
 		let $callButton = $widget.find('[ui=data-button-call]');
 		let $cancelButton = $widget.find('[ui=data-button-cancel]');
