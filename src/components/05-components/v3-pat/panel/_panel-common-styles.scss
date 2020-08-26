@@ -3,6 +3,7 @@
 	border: none;
 	box-shadow: none;
 	display: none;
+	font-size: 14px;
 	position: absolute;
 
 	.PanelBackground {
@@ -13,7 +14,7 @@
 		right: 0;
 		top: 0;
 		transition: all 0.14s ease;
-		z-index: 20;
+		z-index: 30;
 	}
 
 	.PanelContainer {

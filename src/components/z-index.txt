@@ -25,11 +25,11 @@
 31 .daterangepicker
 
 30 .LayoutBase-MainMenu.PatientDetails_Header
+30 .PanelById .PanelBackground
 
 20 .LayoutBase-header
 20 .Header
 20 .PanelBackground.ConfirmWB
-20 .PanelById .PanelBackground
 20 .modalPopup
 
 6 .LayoutBase-Content .LayoutBase-secondary.isFixed

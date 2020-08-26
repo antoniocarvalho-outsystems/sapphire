@@ -23,12 +23,21 @@ $select-system-height: 36px;
 		}
 	}
 
-	&.select2-container--open,
 	&.select2-container--focus {
 		.select2-selection {
 			&,
 			&:hover {
 				background-color: $regular-white;
+				border-color: $regular-alpha;
+			}
+		}
+	}
+
+	&.select2-container--open {
+		.select2-selection {
+			&,
+			&:hover {
+				background-color: $regular-eta;
 				border-color: $regular-alpha;
 			}
 		}
