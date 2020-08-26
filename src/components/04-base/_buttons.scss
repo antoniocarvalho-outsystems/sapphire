@@ -27,8 +27,8 @@
 	text-shadow: none;
 }
 
-@mixin focus-shadow($shadorColor: $regular-zeta) {
-	box-shadow: 0 0 0 3px $shadorColor;
+@mixin focus-style($bgColor) {
+	background-color: $bgColor;
 }
 
 @mixin link-style-all {
@@ -54,7 +54,7 @@ a.Button.IsDefault,
 	@include default-button;
 
 	&:focus {
-		@include focus-shadow();
+		@include focus-style($regular-gamma);
 	}
 
 	&:active,
@@ -83,12 +83,10 @@ a.Button.IsDefault,
 		&:active,
 		&:hover {
 			background-color: $regular-eta;
-			border: 1px solid $regular-epsilon;
-			color: $regular-alpha;
 		}
 
 		&:focus {
-			@include focus-shadow();
+			@include focus-style($regular-zeta);
 		}
 
 		&:disabled,
@@ -121,7 +119,7 @@ a.Button.IsDefault,
 		}
 
 		&:focus {
-			@include focus-shadow($mid-light-grey);
+			@include focus-style($light-grey);
 		}
 
 		&:disabled,
