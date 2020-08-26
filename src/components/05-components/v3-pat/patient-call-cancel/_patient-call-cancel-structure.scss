@@ -1,0 +1,98 @@
+.PatientCallCancelStructure {
+	@include shadow-small;
+
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 100px;
+	display: inline-flex;
+	width: 100%;
+
+	&__ListQueues,
+	&__LastCalled,
+	&__Actions {
+		flex: 1;
+		padding: $sapphire-sizes--medium;
+		position: relative;
+
+		&:after {
+			background-color: $light-grey;
+			content: '';
+			display: block;
+			height: calc(100% - 32px);
+			position: absolute;
+			right: 0;
+			top: $sapphire-sizes--medium;
+			width: 1px;
+		}
+
+		&:last-child:after {
+			opacity: 0;
+		}
+	}
+
+	&__ListQueues {
+		cursor: pointer;
+		padding-left: $sapphire-sizes--xlarge;
+		transition: all 0.1s ease-in-out;
+
+		&:hover {
+			background-color: $sapphire-light;
+			border-radius: 100px;
+
+			&:after {
+				opacity: 0;
+			}
+		}
+
+		[ui='data-queue-list-dropdown'] {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-heading3;
+			margin-top: $sapphire-sizes--xsmall;
+
+			.InlineDropdown {
+				&_text {
+					color: $dark-grey;
+				}
+
+				&_icon {
+					color: $dark-grey;
+					height: $sapphire-sizes--large;
+					margin: 0 $sapphire-sizes--small;
+
+					span {
+						font-size: 0.857em;
+					}
+				}
+			}
+		}
+	}
+
+	&__LastCalled {
+		@include flex-center-vertically;
+
+		[ui='data-last-called-number'] {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-heading3;
+			margin-top: $sapphire-sizes--xsmall;
+		}
+
+		[ui='data-recall-button'] {
+			margin-left: $sapphire-sizes--small;
+		}
+	}
+
+	&__Actions {
+		@include flex-custom-align(center, flex-end);
+
+		[ui='data-call-next-button'] {
+			margin-left: $sapphire-sizes--small;
+
+			a:link,
+			a:visited {
+				font-family: $font-family-latin-regular;
+				font-size: $font-size-heading4;
+				padding: 0 $sapphire-sizes--xlarge;
+			}
+		}
+	}
+}

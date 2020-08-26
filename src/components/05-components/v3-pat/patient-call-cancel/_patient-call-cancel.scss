@@ -1,0 +1,89 @@
+.PatientCallCancel {
+	align-items: center;
+	display: inline-flex;
+	gap: $sapphire-sizes--small;
+
+	&.CallingPatient & {
+		&__Counter {
+			display: inline-flex;
+		}
+	}
+
+	&--startCounting {
+		.PatientCallCancel__Header {
+			.PatientCallCancel__Other,
+			[ui='data-button-call'] {
+				display: none;
+			}
+		}
+	}
+
+	&--disabled {
+		pointer-events: none;
+
+		.PatientCallCancel__HeaderMode {
+			background-color: $regular-grey;
+		}
+	}
+
+	&__Header {
+		display: inline-flex;
+		gap: $sapphire-sizes--xsmall;
+	}
+
+	&__Counter {
+		align-items: center;
+		display: none;
+		gap: $sapphire-sizes--small;
+		justify-content: center;
+		white-space: nowrap;
+	}
+
+	&__Queue {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		&:empty {
+			display: none;
+		}
+
+		> div {
+			border-radius: $border-radius-default;
+		}
+	}
+
+	&__HeaderMode {
+		@include flex-center-total();
+
+		background-color: $regular-alpha;
+		border-radius: $border-radius-medium;
+		color: $regular-white;
+		cursor: pointer;
+		flex-direction: column;
+		min-height: 118px;
+		padding: $sapphire-sizes--medium;
+
+		[ui='data-icon'] {
+			font-size: $font-size-heading3;
+		}
+
+		[ui='data-label'] {
+			font-family: $font-family-latin-bold;
+			text-transform: uppercase;
+		}
+
+		.PatientCallCancel__Counter {
+			flex-direction: column;
+			font-size: $font-size-small;
+			line-height: 1;
+			margin-top: $sapphire-sizes--small;
+
+			[ui='data-cancel-call'] {
+				@include flex-center-total();
+
+				gap: $sapphire-sizes--xsmall;
+			}
+		}
+	}
+}
