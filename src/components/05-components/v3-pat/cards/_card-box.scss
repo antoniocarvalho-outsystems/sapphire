@@ -221,13 +221,19 @@
 			font-family: $font-family-latin-bold;
 			font-size: $font-size-heading3;
 			line-height: 20px;
-			margin-right: $sapphire-sizes--xsmall;
 		}
 
 		.BottomCardDescription {
 			color: $regular-grey;
 			font-size: 1em;
 			line-height: 22px;
+			order: -1;
+
+			&::after {
+				content: '•';
+				font-size: 0.786em;
+				margin: 0 $sapphire-sizes--xsmall;
+			}
 		}
 	}
 }

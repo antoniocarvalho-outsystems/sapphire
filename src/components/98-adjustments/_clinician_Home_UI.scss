@@ -8,26 +8,6 @@ div[id*='SectionTitleContainer'] + div {
 }
 
 .AgendaCalendar {
-	&___Container {
-		position: relative;
-	}
-	&___Header {
-		&--Content {
-			align-items: center;
-			display: flex;
-			height: $headerTitleHight;
-			margin-bottom: 18px;
-
-			a.Button {
-				margin-right: 18px !important;
-			}
-		}
-
-		.SegmentedControl {
-			margin: 0;
-		}
-	}
-
 	&___Title {
 		align-items: center;
 		display: flex;

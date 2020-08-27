@@ -8,6 +8,16 @@
 	}
 }
 
+.AgendaCalendar {
+	position: relative;
+
+	&__Header {
+		align-items: center;
+		display: inline-flex;
+		gap: $sapphire-sizes--small;
+	}
+}
+
 .tablet,
 .desktop.small {
 	.ManageQueueWrapper {
