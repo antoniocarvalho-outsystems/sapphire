@@ -186,7 +186,7 @@
 	display: inline-flex;
 	gap: 1px;
 
-	.CardBox {
+	div.CardBox {
 		border-radius: 100px;
 		box-shadow: none;
 		display: flex;
@@ -205,6 +205,7 @@
 				font-size: 1.286em;
 			}
 
+			.CardDescription,
 			.BottomCardDescription {
 				color: $regular-white;
 				font-size: 1em;
@@ -223,10 +224,12 @@
 			line-height: 20px;
 		}
 
+		.CardDescription,
 		.BottomCardDescription {
 			color: $regular-grey;
 			font-size: 1em;
-			line-height: 22px;
+			height: 20px;
+			margin: 0;
 			order: -1;
 
 			&::after {

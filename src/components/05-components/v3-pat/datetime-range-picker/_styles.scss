@@ -585,6 +585,10 @@ body.PanelOpened .daterangepicker {
 
 .DateTimeRangePicker-displayed {
 	position: relative;
+
+	&.ValidationMessageContainer {
+		white-space: initial;
+	}
 }
 
 .Page .DateTimeRangePicker-input input[type='text'],
