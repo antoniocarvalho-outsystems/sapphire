@@ -92,16 +92,25 @@
 		@include flex-custom-align(center, flex-end);
 
 		[ui='data-call-next-button'] {
+			height: 44px;
 			margin-left: $sapphire-sizes--small;
 
 			.PatientCallCancel {
-				[ui='data-button-call'] {
-					font-family: $font-family-latin-regular;
-					font-size: $font-size-heading4;
-					height: 44px;
-					line-height: 44px;
-					margin-left: $sapphire-sizes--medium !important;
-					padding: 0 $sapphire-sizes--xlarge;
+				&__Header {
+					min-height: 44px;
+
+					[ui='data-button-call'] {
+						font-family: $font-family-latin-regular;
+						font-size: $font-size-heading4;
+						height: 44px;
+						line-height: 44px;
+						margin-left: $sapphire-sizes--medium !important;
+						padding: 0 $sapphire-sizes--xlarge;
+					}
+				}
+
+				&__Counter {
+					min-height: 44px;
 				}
 			}
 		}
