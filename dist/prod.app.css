@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940034 || Generated: Thu Aug 27 2020 16:35:48 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940035 || Generated: Thu Aug 27 2020 18:15:06 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13345,7 +13345,7 @@ div.Feedback_Message_Info span.lasa-term {
   display: -webkit-inline-box;
   display: inline-flex;
   gap: 1px; }
-  .CardBoxFilters .CardBox {
+  .CardBoxFilters div.CardBox {
     border-radius: 100px;
     box-shadow: none;
     display: -webkit-box;
@@ -13356,30 +13356,35 @@ div.Feedback_Message_Info span.lasa-term {
     min-height: 34px;
     padding: 6px 16px;
     width: auto; }
-    .CardBoxFilters .CardBox.CardSmall.Selected, .CardBoxFilters .CardBox.CardMedium.Selected {
+    .CardBoxFilters div.CardBox.CardSmall.Selected, .CardBoxFilters div.CardBox.CardMedium.Selected {
       background-color: #5c5c5c;
       box-shadow: none !important; }
-      .CardBoxFilters .CardBox.CardSmall.Selected .CardCount, .CardBoxFilters .CardBox.CardMedium.Selected .CardCount {
+      .CardBoxFilters div.CardBox.CardSmall.Selected .CardCount, .CardBoxFilters div.CardBox.CardMedium.Selected .CardCount {
         color: #fff;
         font-size: 1.286em; }
-      .CardBoxFilters .CardBox.CardSmall.Selected .BottomCardDescription, .CardBoxFilters .CardBox.CardMedium.Selected .BottomCardDescription {
+      .CardBoxFilters div.CardBox.CardSmall.Selected .CardDescription,
+      .CardBoxFilters div.CardBox.CardSmall.Selected .BottomCardDescription, .CardBoxFilters div.CardBox.CardMedium.Selected .CardDescription,
+      .CardBoxFilters div.CardBox.CardMedium.Selected .BottomCardDescription {
         color: #fff;
         font-size: 1em;
         text-shadow: 0 0 1px #fff; }
-    .CardBoxFilters .CardBox:hover {
+    .CardBoxFilters div.CardBox:hover {
       background-color: #ebebeb; }
-    .CardBoxFilters .CardBox .CardCount {
+    .CardBoxFilters div.CardBox .CardCount {
       color: #333333;
       font-family: "LatoBold";
       font-size: 1.286em;
       line-height: 20px; }
-    .CardBoxFilters .CardBox .BottomCardDescription {
+    .CardBoxFilters div.CardBox .CardDescription,
+    .CardBoxFilters div.CardBox .BottomCardDescription {
       color: #777777;
       font-size: 1em;
-      line-height: 22px;
+      height: 20px;
+      margin: 0;
       -webkit-box-ordinal-group: 0;
               order: -1; }
-      .CardBoxFilters .CardBox .BottomCardDescription::after {
+      .CardBoxFilters div.CardBox .CardDescription::after,
+      .CardBoxFilters div.CardBox .BottomCardDescription::after {
         content: '•';
         font-size: 0.786em;
         margin: 0 4px; }
@@ -14951,6 +14956,8 @@ body.PanelOpened .daterangepicker {
 
 .DateTimeRangePicker-displayed {
   position: relative; }
+  .DateTimeRangePicker-displayed.ValidationMessageContainer {
+    white-space: initial; }
 
 .Page .DateTimeRangePicker-input input[type='text'],
 .Page .DateTimeRangePicker-displayed input[type='text'],
@@ -29259,7 +29266,7 @@ ul.os-internal-ui-autocomplete {
 
 .AgendaCalendar {
   position: relative; }
-  .AgendaCalendar__Header {
+  .AgendaCalendarFilters {
     -webkit-box-align: center;
             align-items: center;
     display: -webkit-inline-box;

@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.940034 || Generated: Thu Aug 27 2020 16:35:48 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.940035 || Generated: Thu Aug 27 2020 18:15:06 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3838,6 +3838,8 @@ body.PanelOpened .daterangepicker {
 
 .DateTimeRangePicker-displayed {
   position: relative; }
+  .DateTimeRangePicker-displayed.ValidationMessageContainer {
+    white-space: initial; }
 
 .Page .DateTimeRangePicker-input input[type='text'],
 .Page .DateTimeRangePicker-displayed input[type='text'],
