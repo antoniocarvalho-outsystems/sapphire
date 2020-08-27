@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940033 || Generated: Thu Aug 27 2020 14:40:27 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940034 || Generated: Thu Aug 27 2020 16:35:48 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13372,12 +13372,17 @@ div.Feedback_Message_Info span.lasa-term {
       color: #333333;
       font-family: "LatoBold";
       font-size: 1.286em;
-      line-height: 20px;
-      margin-right: 4px; }
+      line-height: 20px; }
     .CardBoxFilters .CardBox .BottomCardDescription {
       color: #777777;
       font-size: 1em;
-      line-height: 22px; }
+      line-height: 22px;
+      -webkit-box-ordinal-group: 0;
+              order: -1; }
+      .CardBoxFilters .CardBox .BottomCardDescription::after {
+        content: '•';
+        font-size: 0.786em;
+        margin: 0 4px; }
 
 .AR .CardBox .Info,
 .FA .CardBox .Info {
@@ -29252,6 +29257,15 @@ ul.os-internal-ui-autocomplete {
   .ManageQueueWrapper > * {
     width: 80%; }
 
+.AgendaCalendar {
+  position: relative; }
+  .AgendaCalendar__Header {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    gap: 8px; }
+
 .tablet .ManageQueueWrapper > *,
 .desktop.small .ManageQueueWrapper > * {
   width: 100%; }
@@ -29447,22 +29461,6 @@ div[id*='SectionTitleContainer'] + div {
   display: inline;
   position: relative;
   top: -5px; }
-
-.AgendaCalendar___Container {
-  position: relative; }
-
-.AgendaCalendar___Header--Content {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
-  height: 40px;
-  margin-bottom: 18px; }
-  .AgendaCalendar___Header--Content a.Button, .AgendaCalendar___Header--Content .DropZoneContainer .row .Button, .DropZoneContainer .row .AgendaCalendar___Header--Content .Button {
-    margin-right: 18px !important; }
-
-.AgendaCalendar___Header .SegmentedControl {
-  margin: 0; }
 
 .AgendaCalendar___Title {
   -webkit-box-align: center;
