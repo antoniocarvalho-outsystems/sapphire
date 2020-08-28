@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.0.940002 || Generated: Fri Aug 28 2020 11:21:35 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.0.940003 || Generated: Fri Aug 28 2020 11:29:49 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10255,6 +10255,7 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   padding-right: 8px; }
 
 .LayoutBase .ClinicianWorkArea____painLevel {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   display: block;
   position: -webkit-sticky;
   position: sticky;
