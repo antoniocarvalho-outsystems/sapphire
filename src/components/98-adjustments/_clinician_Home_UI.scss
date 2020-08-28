@@ -1,50 +1,22 @@
-//Prego
-$headerTitleHight: 40px;
+// .AgendaCalendar {
 
-div[id*='SectionTitleContainer'] + div {
-	display: inline;
-	position: relative;
-	top: -5px;
-}
+// 	.Calendar_Weekday {
+// 		background-color: $light-grey;
+// 		bottom: 1px $mid-dark-grey;
+// 	}
 
-.AgendaCalendar {
-	&___Title {
-		align-items: center;
-		display: flex;
-		height: $headerTitleHight;
-		left: 50%;
-		position: absolute;
-		top: 0;
-		> div.CalendarButton.InlineBlock.Clickable {
-			display: contents;
-		}
-	}
-
-	.ClinicalCalendarBigBox {
-		.ContainerSelected,
-		.ContainerAppointments,
-		.ContainerSurgeries {
-			color: $mid-dark-grey;
-		}
-	}
-
-	.Calendar_Weekday {
-		background-color: $light-grey;
-		bottom: 1px $mid-dark-grey;
-	}
-
-	.CalendarDay___Selected {
-		background-color: $sapphire-white;
-		color: $regular-beta;
-	}
-	.CalendarItemCell {
-		color: $regular-beta;
-	}
-}
+// 	.CalendarDay___Selected {
+// 		background-color: $sapphire-white;
+// 		color: $regular-beta;
+// 	}
+// 	.CalendarItemCell {
+// 		color: $regular-beta;
+// 	}
+// }
 
 .TopSection___Wrapper {
 	font-size: $font-size-heading2;
-	height: $headerTitleHight;
+	height: 40px;
 	width: 100%;
 
 	.TopSection___Container {
@@ -60,10 +32,6 @@ div[id*='SectionTitleContainer'] + div {
 			width: 250px;
 			> span {
 				display: flex;
-				div[ui='Container_LocationOptGroup_Doctor'],
-				div[ui='Container_LocationOptGroup_Doctor2Drop'] {
-					margin-right: 20px;
-				}
 			}
 
 			.selection {

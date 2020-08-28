@@ -9,13 +9,41 @@
 }
 
 .AgendaCalendar {
-	position: relative;
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	overflow: hidden;
 
-	&Filters {
-		align-items: center;
-		display: inline-flex;
-		gap: $sapphire-sizes--small;
+	&__Header {
+		display: flex;
+		padding: $sapphire-sizes--medium;
+
+		[ui='data-calendar-navigation'] {
+			@include flex-center-vertically;
+
+			gap: $sapphire-sizes--small;
+
+			.navigation-control {
+				.navigation-control-item a {
+					border: none;
+				}
+			}
+		}
+
+		[ui='data-calendar-totals'] {
+			flex: 1;
+		}
 	}
+
+	&__Content {
+		border-top: 1px solid $light-grey;
+	}
+}
+
+.AgendaFilters {
+	align-items: center;
+	display: inline-flex;
+	gap: $sapphire-sizes--small;
 }
 
 .tablet,

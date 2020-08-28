@@ -5,6 +5,10 @@
 	color: $dark-grey;
 	padding: 0 35px 0 $sapphire-sizes--medium;
 
+	&Filter {
+		border-radius: 100px;
+	}
+
 	&.Mandatory {
 		border-left: 3px solid $regular-alpha;
 

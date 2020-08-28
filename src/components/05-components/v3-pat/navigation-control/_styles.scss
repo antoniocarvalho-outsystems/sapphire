@@ -58,6 +58,11 @@
 			cursor: pointer;
 			height: 100%;
 
+			> div.OSInline {
+				height: 14px;
+				width: 14px;
+			}
+
 			> div.MultiMarginLeft5 {
 				display: none;
 			}
