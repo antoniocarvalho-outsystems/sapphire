@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.0.940001 || Generated: Fri Aug 28 2020 10:55:41 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.0.940002 || Generated: Fri Aug 28 2020 11:21:35 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
