@@ -353,9 +353,10 @@
 	}
 
 	&__content {
+		gap: $sapphire-sizes--small;
+
 		> div {
 			flex-basis: 100%;
-			padding-left: $sapphire-sizes--small;
 
 			&:first-of-type {
 				padding-left: 0;
@@ -411,7 +412,7 @@
 		}
 
 		&:not(:empty) + .PersonCard____title {
-			margin-left: $sapphire-sizes--small;
+			margin-left: $sapphire-sizes--medium;
 		}
 	}
 
@@ -686,7 +687,7 @@ a {
 		&__content {
 			border-top: 1px solid $light-grey;
 			flex-basis: 100% !important;
-			margin-left: 72px;
+			margin-left: 80px;
 			padding-left: 0 !important;
 		}
 

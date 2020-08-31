@@ -46,6 +46,14 @@
 	gap: $sapphire-sizes--small;
 }
 
+// Appointment List
+.Lab_Ready__Container {
+	display: flex;
+	font-size: $font-size-heading4;
+	gap: $sapphire-sizes--xsmall;
+	max-width: 80px;
+}
+
 .tablet,
 .desktop.small {
 	.ManageQueueWrapper {

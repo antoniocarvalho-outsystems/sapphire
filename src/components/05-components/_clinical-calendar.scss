@@ -4,6 +4,12 @@
 		margin-left: -1px;
 
 		.ClinicalCalendarBigBox {
+			width: 100% !important;
+
+			> table {
+				width: 100%;
+			}
+
 			.CalendarDay {
 				line-height: 56px;
 				overflow: hidden;
@@ -68,6 +74,7 @@
 
 			.Calendar_SmallWeek {
 				border-bottom: 1px solid $light-grey;
+				color: $regular-grey;
 				display: inline-block;
 				font-family: $font-family-latin-bold;
 				font-size: $font-size-heading4;
@@ -161,6 +168,29 @@
 				border-top: none;
 				margin: 0;
 			}
+
+			.CalendarItemCell {
+				display: inline-flex;
+				height: 36px;
+				margin: 0 $sapphire-sizes--small;
+			}
+
+			.ContainerSelected,
+			.ContainerSurgeries,
+			.ContainerAppointments,
+			.ContainerUnavailability {
+				align-items: center;
+				display: flex;
+				gap: $sapphire-sizes--xsmall;
+
+				> div {
+					font-family: $font-family-latin-bold;
+				}
+
+				> .icon {
+					color: $regular-grey;
+				}
+			}
 		}
 	}
 }
@@ -210,45 +240,6 @@
 	font-weight: bold;
 	padding-bottom: 2px;
 	padding-top: 4px;
-}
-
-.ClinicalCalendarBigBox .Calendar_Side {
-	background-color: white;
-	border: 1px solid #cccbc7;
-	display: none;
-	margin-top: 25px;
-	overflow: auto;
-	padding: 5px;
-}
-
-.ClinicalCalendarBigBox .Calendar_Side_Close {
-	cursor: pointer;
-	float: right;
-}
-
-.ClinicalCalendarBigBox .Calendar_Side_Items {
-	margin-top: 5px;
-}
-
-.ClinicalCalendarBigBox .Calendar_Side_Item {
-	background-color: #efefef;
-	margin-top: 3px;
-	padding: 2px;
-}
-
-.ClinicalCalendarBigBox .Calendar_Side_ItemTitle {
-	font-size: 14px;
-	font-weight: bold;
-}
-
-.ClinicalCalendarBigBox .Calendar_Side_ItemSubTitle {
-	font-size: 12px;
-	font-weight: bold;
-	vertical-align: baseline;
-}
-
-.ClinicalCalendarBigBox .Calendar_Side_ItemDescription {
-	font-size: 10px;
 }
 
 .ClinicalCalendarBigBox .Calendar_SmallBox {
@@ -324,25 +315,6 @@
 	background-color: transparent;
 	text-align: center;
 }
-.ClinicalCalendarBigBox .Calendar_SmallWeek {
-	width: 139px;
-}
-
-.ContainerAppointments {
-	color: #b0a479;
-}
-
-.ContainerSurgeries {
-	color: #a195b3;
-}
-
-.ContainerSelected {
-	color: #fff;
-}
-
-.ContainerUnavailability {
-	color: #a2b6bf;
-}
 
 .ContainerFullUnavailability {
 	background-image: repeating-linear-gradient(
@@ -352,11 +324,6 @@
 		rgba(209, 219, 223, 1) 1px,
 		rgba(209, 219, 223, 1) 13px
 	);
-}
-
-.CalendarItemCell {
-	text-align: center;
-	width: 24px;
 }
 
 .CalendarText_Note {

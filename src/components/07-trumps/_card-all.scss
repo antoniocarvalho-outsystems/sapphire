@@ -12,7 +12,7 @@
 	.DescriptionContainer {
 		font-size: $font-size-heading3;
 		line-height: 18px;
-		padding-left: $sapphire-sizes--small;
+		padding-left: $sapphire-sizes--medium;
 		text-align: left;
 
 		.Description {
@@ -22,10 +22,10 @@
 		}
 
 		.Small_Description {
+			min-width: 185px;
 			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			width: 185px;
 		}
 	}
 }
