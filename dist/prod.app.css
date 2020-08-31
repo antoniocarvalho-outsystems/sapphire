@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940037 || Generated: Fri Aug 28 2020 18:14:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940038 || Generated: Mon Aug 31 2020 17:39:49 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7839,116 +7839,145 @@ a.Button.IsDefault,
 .ClinicalCalendar.CenteredCalendarBigWrapper {
   margin-bottom: -1px;
   margin-left: -1px; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay {
-    line-height: 56px;
-    overflow: hidden;
-    vertical-align: middle; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarText {
-    font-size: 0.857em; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarHeader {
-    border-bottom: 1px solid #d6d6d6;
-    height: 36px;
-    vertical-align: middle; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarButton {
-    line-height: 36px;
-    margin-left: 0px;
-    text-align: center;
-    vertical-align: middle;
-    width: 30px; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Sidebar {
-    float: right;
-    margin: 10px;
-    padding: 5px;
-    width: 200px; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Title {
-    padding-bottom: 3px; }
-    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Title img {
-      vertical-align: text-bottom; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Items {
-    font-size: 10px;
-    line-height: 1.2;
-    margin: -2px 2px 0px 2px;
-    padding: 0px; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox a:link,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox a:visited {
-    color: inherit;
-    font-family: "LatoRegular"; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox [ui='data-calendar-day'] {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    font-size: 1.143em;
-    height: 36px;
-    width: 36px; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallWeek {
-    border-bottom: 1px solid #d6d6d6;
-    display: inline-block;
-    font-family: "LatoBold";
-    font-size: 1.143em;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 16px;
-    text-align: right;
-    width: 139px; }
-    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallWeek:last-of-type {
-      border-right: none; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_EmptyDay {
-    border: 1px solid #d6d6d6;
-    float: left;
-    height: 48px;
-    margin: -1px 0 0 -1px;
-    overflow: hidden;
-    padding: 6px;
-    position: relative;
-    width: 139px; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_EmptyWeekendDay {
-    float: left;
-    height: 100px;
-    margin: 2px;
-    position: relative;
-    width: 100px; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday [ui='data-calendar-day'] {
-    font-family: "LatoBold"; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Past_Day [ui='data-calendar-day'] {
-    color: #adadad; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today [ui='data-calendar-day'] {
-    border-color: #00bfa5; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday [ui='data-calendar-day'] {
-    color: #adadad;
-    text-decoration: line-through; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay___Selected [ui='data-calendar-day'] {
-    background-color: #00bfa5;
-    color: #fff; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekend,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Past_Day,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today_Weekend,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday {
-    border: 1px solid #d6d6d6;
-    float: left;
-    height: 48px;
-    overflow: hidden;
-    padding: 6px;
-    position: relative;
-    width: 139px; }
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekend,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Past_Day,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_EmptyDay,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallDay,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallWeek,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today_Weekend,
-  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday {
-    border-right: none;
-    border-top: none;
-    margin: 0; }
+  .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox {
+    width: 100% !important; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox > table {
+      width: 100%; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay {
+      line-height: 56px;
+      overflow: hidden;
+      vertical-align: middle; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarText {
+      font-size: 0.857em; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarHeader {
+      border-bottom: 1px solid #d6d6d6;
+      height: 36px;
+      vertical-align: middle; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarButton {
+      line-height: 36px;
+      margin-left: 0px;
+      text-align: center;
+      vertical-align: middle;
+      width: 30px; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Sidebar {
+      float: right;
+      margin: 10px;
+      padding: 5px;
+      width: 200px; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Title {
+      padding-bottom: 3px; }
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Title img {
+        vertical-align: text-bottom; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Items {
+      font-size: 10px;
+      line-height: 1.2;
+      margin: -2px 2px 0px 2px;
+      padding: 0px; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox a:link,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox a:visited {
+      color: inherit;
+      font-family: "LatoRegular"; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox [ui='data-calendar-day'] {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      font-size: 1.143em;
+      height: 36px;
+      width: 36px; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallWeek {
+      border-bottom: 1px solid #d6d6d6;
+      color: #777777;
+      display: inline-block;
+      font-family: "LatoBold";
+      font-size: 1.143em;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 16px;
+      text-align: right;
+      width: 139px; }
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallWeek:last-of-type {
+        border-right: none; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_EmptyDay {
+      border: 1px solid #d6d6d6;
+      float: left;
+      height: 48px;
+      margin: -1px 0 0 -1px;
+      overflow: hidden;
+      padding: 6px;
+      position: relative;
+      width: 139px; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_EmptyWeekendDay {
+      float: left;
+      height: 100px;
+      margin: 2px;
+      position: relative;
+      width: 100px; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday [ui='data-calendar-day'] {
+      font-family: "LatoBold"; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Past_Day [ui='data-calendar-day'] {
+      color: #adadad; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today [ui='data-calendar-day'] {
+      border-color: #00bfa5; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday [ui='data-calendar-day'] {
+      color: #adadad;
+      text-decoration: line-through; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay___Selected [ui='data-calendar-day'] {
+      background-color: #00bfa5;
+      color: #fff; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekend,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Past_Day,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today_Weekend,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday {
+      border: 1px solid #d6d6d6;
+      float: left;
+      height: 48px;
+      overflow: hidden;
+      padding: 6px;
+      position: relative;
+      width: 139px; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekend,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Past_Day,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_EmptyDay,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallDay,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallWeek,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today_Weekend,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday {
+      border-right: none;
+      border-top: none;
+      margin: 0; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarItemCell {
+      display: -webkit-inline-box;
+      display: inline-flex;
+      height: 36px;
+      margin: 0 8px; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerSelected,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerSurgeries,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerAppointments,
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerUnavailability {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      gap: 4px; }
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerSelected > div,
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerSurgeries > div,
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerAppointments > div,
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerUnavailability > div {
+        font-family: "LatoBold"; }
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerSelected > .icon,
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerSurgeries > .icon,
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerAppointments > .icon,
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerUnavailability > .icon {
+        color: #777777; }
 
 .AR .ClinicalCalendarBigBox .Calendar_Today,
 .AR .ClinicalCalendarBigBox .Calendar_Weekday,
@@ -7988,38 +8017,6 @@ a.Button.IsDefault,
   font-weight: bold;
   padding-bottom: 2px;
   padding-top: 4px; }
-
-.ClinicalCalendarBigBox .Calendar_Side {
-  background-color: white;
-  border: 1px solid #cccbc7;
-  display: none;
-  margin-top: 25px;
-  overflow: auto;
-  padding: 5px; }
-
-.ClinicalCalendarBigBox .Calendar_Side_Close {
-  cursor: pointer;
-  float: right; }
-
-.ClinicalCalendarBigBox .Calendar_Side_Items {
-  margin-top: 5px; }
-
-.ClinicalCalendarBigBox .Calendar_Side_Item {
-  background-color: #efefef;
-  margin-top: 3px;
-  padding: 2px; }
-
-.ClinicalCalendarBigBox .Calendar_Side_ItemTitle {
-  font-size: 14px;
-  font-weight: bold; }
-
-.ClinicalCalendarBigBox .Calendar_Side_ItemSubTitle {
-  font-size: 12px;
-  font-weight: bold;
-  vertical-align: baseline; }
-
-.ClinicalCalendarBigBox .Calendar_Side_ItemDescription {
-  font-size: 10px; }
 
 .ClinicalCalendarBigBox .Calendar_SmallBox {
   font-size: 11px;
@@ -8086,27 +8083,8 @@ a.Button.IsDefault,
   background-color: transparent;
   text-align: center; }
 
-.ClinicalCalendarBigBox .Calendar_SmallWeek {
-  width: 139px; }
-
-.ContainerAppointments {
-  color: #b0a479; }
-
-.ContainerSurgeries {
-  color: #a195b3; }
-
-.ContainerSelected {
-  color: #fff; }
-
-.ContainerUnavailability {
-  color: #a2b6bf; }
-
 .ContainerFullUnavailability {
   background-image: repeating-linear-gradient(135deg, #fff, #fff 3px, #d1dbdf 1px, #d1dbdf 13px); }
-
-.CalendarItemCell {
-  text-align: center;
-  width: 24px; }
 
 .CalendarText_Note {
   font-size: 12px; }
@@ -20573,11 +20551,12 @@ body.PanelById.PanelOpened {
     .PersonCard__headerLeftInfo .PersonCard___flag .FlagContainer {
       height: auto; }
 
-.PersonCard__content > div {
-  flex-basis: 100%;
-  padding-left: 8px; }
-  .PersonCard__content > div:first-of-type {
-    padding-left: 0; }
+.PersonCard__content {
+  gap: 8px; }
+  .PersonCard__content > div {
+    flex-basis: 100%; }
+    .PersonCard__content > div:first-of-type {
+      padding-left: 0; }
 
 .PersonCard__title:empty ~ .PersonCard__content > div {
   padding: 0; }
@@ -20618,7 +20597,7 @@ body.PanelById.PanelOpened {
   width: 48px; }
 
 .PersonCard___icon:not(:empty) + .PersonCard____title {
-  margin-left: 8px; }
+  margin-left: 16px; }
 
 .PersonCard .CardAll {
   display: -webkit-box;
@@ -20807,7 +20786,7 @@ a .PersonCard {
 .tablet .PersonCard__content {
   border-top: 1px solid #d6d6d6;
   flex-basis: 100% !important;
-  margin-left: 72px;
+  margin-left: 80px;
   padding-left: 0 !important; }
 
 .tablet .PersonCard__actions {
@@ -29339,17 +29318,17 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   .CardAll .DescriptionContainer {
     font-size: 1.286em;
     line-height: 18px;
-    padding-left: 8px;
+    padding-left: 16px;
     text-align: left; }
     .CardAll .DescriptionContainer .Description {
       display: block;
       font-family: "LatoBold";
       line-height: 18px; }
     .CardAll .DescriptionContainer .Small_Description {
+      min-width: 185px;
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap;
-      width: 185px; }
+      white-space: nowrap; }
 
 .AR .CardAll .DescriptionContainer,
 .FA .CardAll .DescriptionContainer {
@@ -29419,15 +29398,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   margin-top: 0;
   padding: 0;
   width: 100%; }
-
-.Lab_Ready__Container {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: end;
-          justify-content: flex-end;
-  max-width: 105px;
-  padding: 5px 10px;
-  padding-top: 5px; }
 
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title a,
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title .DoubleText,
@@ -29636,6 +29606,13 @@ ul.os-internal-ui-autocomplete {
   display: -webkit-inline-box;
   display: inline-flex;
   gap: 8px; }
+
+.Lab_Ready__Container {
+  display: -webkit-box;
+  display: flex;
+  font-size: 1.143em;
+  gap: 4px;
+  max-width: 80px; }
 
 .tablet .ManageQueueWrapper > *,
 .desktop.small .ManageQueueWrapper > * {
