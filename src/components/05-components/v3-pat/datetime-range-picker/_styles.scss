@@ -126,12 +126,9 @@ body.PanelOpened .daterangepicker {
 	max-width: 270px;
 }
 
-.daterangepicker .drp-calendar.left {
-	padding: 8px 0 8px 8px;
-}
-
+.daterangepicker .drp-calendar.left,
 .daterangepicker .drp-calendar.right {
-	padding: 8px;
+	padding: $sapphire-sizes--small;
 }
 
 .daterangepicker .drp-calendar.single .calendar-table {
