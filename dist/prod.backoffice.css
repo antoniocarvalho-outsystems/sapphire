@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.940038 || Generated: Mon Aug 31 2020 17:39:49 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.940039 || Generated: Mon Aug 31 2020 18:05:59 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3516,9 +3516,7 @@ body.PanelOpened .daterangepicker {
   display: none;
   max-width: 270px; }
 
-.daterangepicker .drp-calendar.left {
-  padding: 8px 0 8px 8px; }
-
+.daterangepicker .drp-calendar.left,
 .daterangepicker .drp-calendar.right {
   padding: 8px; }
 
