@@ -1,10 +1,9 @@
 @mixin common-sapphire-weekdays-style {
 	align-items: center;
-	background-color: $sapphire-white;
-	color: $light-grey;
+	background-color: $regular-white;
 	display: inline-flex;
 	justify-content: center;
-	padding: 10px;
+	padding: $sapphire-sizes--xsmall;
 	text-align: center;
 	width: calc(100% / 7);
 	z-index: 1;
@@ -21,27 +20,25 @@
 		@include common-sapphire-weekdays-style;
 
 		border: 1px solid $light-grey;
-		border-radius: $border-radius-default;
+		border-radius: $border-radius-medium;
 		display: inline-block;
-		padding-bottom: 15px;
+		padding: $sapphire-sizes--medium $sapphire-sizes--large;
 		width: 100%;
 	}
 }
 
 .CalendarWidget {
 	.Calendar_SmallDayLink {
-		align-items: center;
-		color: $text-color-light;
-		display: flex;
-		font-weight: normal;
-		height: 30px;
-		justify-content: center;
-		min-width: 30px;
-		width: 30px;
+		@include flex-center-total;
+
+		border: 1px solid transparent;
+		border-radius: 50%;
+		height: 40px;
+		min-width: 40px;
+		width: 40px;
 	}
 
 	&_wrapper {
-		color: $text-color-light;
 		white-space: initial;
 
 		&:after {
@@ -57,6 +54,10 @@
 		@include flex-custom-align(center, space-between);
 
 		height: 36px;
+	}
+
+	&__weekDays {
+		padding: $sapphire-sizes--small 0;
 	}
 
 	&___back {
@@ -78,7 +79,6 @@
 		position: relative;
 
 		&:after {
-			color: $regular-beta;
 			content: '\e610';
 			font-family: $font-family-icons;
 			font-size: 1em;
@@ -105,22 +105,25 @@
 		font-size: 1.143em;
 	}
 
-	&__weekDays {
-		//border-bottom: 1px solid $light-grey;
-	}
-
 	&___weekDay {
+		color: $regular-grey;
 		display: inline-block;
-		font-size: $font-size-tiny;
-		height: 30px;
-		padding: 7px 1px;
+		font-family: $font-family-latin-bold;
+		padding: $sapphire-sizes--small 0;
 		text-align: center;
 		width: calc(100% / 7);
 	}
 
 	&__days {
-		font-size: $font-size-heading3;
+		color: $regular-grey;
+		font-size: $font-size-heading4;
 		width: 100%;
+
+		a:link,
+		a:visited {
+			color: inherit;
+			font-family: $font-family-latin-regular;
+		}
 
 		.Calendar_Past_Day {
 			@include common-sapphire-weekdays-style;
@@ -131,46 +134,40 @@
 		.Calendar_Today {
 			@include common-sapphire-weekdays-style;
 
-			background-color: transparent !important;
-			border: none !important;
-			padding: 0;
-
 			.Calendar_SmallDayLink {
-				background-color: $regular-alpha;
-				border-radius: 50%;
-				color: $regular-white;
-				display: inline-block;
-				font-weight: normal;
-				height: 34px;
-				line-height: 34px;
-				margin: 0 !important;
-				width: 34px;
+				border-color: $regular-alpha;
+				font-family: $font-family-latin-bold;
 			}
 		}
 
 		.Calendar_Weekday {
 			@include common-sapphire-weekdays-style;
 
-			.Calendar_SmallDayLink {
-				font-weight: normal;
-			}
+			color: $regular-grey;
+			font-family: $font-family-latin-bold;
 		}
 
 		.Calendar_Weekday_Holiday {
 			@include common-sapphire-weekdays-style;
+
+			color: $mid-light-grey;
+			text-decoration: line-through;
 		}
 
 		.Calendar_EmptyWeekendDay {
 			@include common-sapphire-weekdays-style;
-
-			// height: 100px;
-			// margin: 2px;
-			// width: 100px;
 		}
 
 		.Calendar_EmptyDay {
 			@include common-sapphire-weekdays-style;
+
 			border: none;
+
+			&:hover {
+				.Calendar_SmallDayLink {
+					background-color: $regular-white;
+				}
+			}
 		}
 	}
 
@@ -178,8 +175,10 @@
 		@include common-sapphire-weekdays-style;
 		position: relative;
 
-		span {
-			color: $regular-beta !important;
+		&:hover {
+			.Calendar_SmallDayLink {
+				background-color: $sapphire-light;
+			}
 		}
 
 		.arrowLeft.green {
@@ -200,7 +199,6 @@
 		}
 
 		> a span {
-			color: $text-color-light;
 			height: 44px;
 			width: 65px;
 		}
@@ -215,8 +213,8 @@
 
 			span.Calendar_SmallDayLink {
 				background-color: $regular-alpha;
-				border-radius: 50%;
 				color: $sapphire-white !important;
+				font-family: $font-family-latin-bold;
 			}
 		}
 	}
@@ -225,8 +223,7 @@
 		clear: both;
 		display: block;
 		font-family: $font-family-latin-bold;
-		font-size: 0.857em;
-		padding-top: 5px;
+		padding-top: $sapphire-sizes--small;
 		width: 100%;
 	}
 
