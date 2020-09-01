@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940041 || Generated: Tue Sep 01 2020 12:39:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940042 || Generated: Tue Sep 01 2020 12:58:53 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12053,6 +12053,7 @@ html body {
   border: 1px solid #d6d6d6;
   border-radius: 2px;
   display: none;
+  font-size: 14px;
   left: 0;
   min-width: 150px;
   position: absolute;
@@ -12065,8 +12066,9 @@ html body {
     color: #333333;
     display: block;
     font-family: "LatoRegular";
-    line-height: 32px;
-    padding: 0 12px;
+    height: 36px;
+    line-height: unset;
+    padding: 8px;
     white-space: nowrap; }
     .DropdownMenu .PH > a:hover,
     .DropdownMenu .PH > span a:hover {
@@ -25797,25 +25799,22 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   height: 36px; }
   .Page .SplitButton.hasTrigger .SplitButton-button .Button {
     border-bottom-right-radius: 0;
-    border-top-right-radius: 0; }
+    border-top-right-radius: 0;
+    margin: 0; }
   .Page .SplitButton.hasTrigger .SplitButton-trigger {
     border-bottom-left-radius: 0;
     border-left: 1px solid #fff;
     border-top-left-radius: 0;
     display: inline-block;
     margin: 0;
-    min-width: 45px;
+    min-width: 40px;
     padding: 0;
     position: relative; }
     .Page .SplitButton.hasTrigger .SplitButton-trigger:before {
       content: '\e610';
       font-family: "Sapphire-Icon-Font";
       font-size: 0.7em;
-      left: 48%;
-      position: absolute;
-      top: 53%;
-      -webkit-transform: translate(-55%, -45%);
-              transform: translate(-55%, -45%); }
+      margin-left: -3px; }
 
 .Page .SplitButton-trigger {
   display: none; }
@@ -25850,6 +25849,11 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border-right: 1px solid #fff;
   border-top-left-radius: 1.286em;
   border-top-right-radius: 0; }
+  .AR.Page .SplitButton.hasTrigger .SplitButton-trigger:before,
+  .FA.Page .SplitButton.hasTrigger .SplitButton-trigger:before {
+    content: '\e610';
+    margin-left: auto;
+    margin-right: -3px; }
 
 .tooltipster-base.tooltipster-splitbutton {
   background-color: #fff;
