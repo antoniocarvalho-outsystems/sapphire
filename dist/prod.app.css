@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940040 || Generated: Tue Sep 01 2020 12:36:16 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940041 || Generated: Tue Sep 01 2020 12:39:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21597,8 +21597,11 @@ a .PersonCard {
     text-align: center;
     width: calc(100% / 7);
     z-index: 1;
-    color: #777777;
+    color: #333333;
     font-family: "LatoBold"; }
+    .CalendarWidget__days .Calendar_Weekday a:link,
+    .CalendarWidget__days .Calendar_Weekday a:visited {
+      font-family: "LatoBold"; }
   .CalendarWidget__days .Calendar_Weekday_Holiday {
     -webkit-box-align: center;
             align-items: center;
