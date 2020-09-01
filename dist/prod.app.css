@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950001 || Generated: Tue Sep 01 2020 13:08:13 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950002 || Generated: Tue Sep 01 2020 16:28:35 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7197,6 +7197,15 @@ a.Button.IsDefault,
       border-color: rgba(255, 130, 0, 0.9);
       box-shadow: inset 0 1px 0 rgba(255, 130, 0, 0.9), 0 2px 2px rgba(255, 130, 0, 0.9); }
 
+.LinkHover {
+  color: #333333;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  .LinkHover:link, .LinkHover:visited {
+    color: #333333; }
+  .LinkHover:hover {
+    color: #00ac94; }
+
 .AR.Page a.Button, .AR.Page .DropZoneContainer .row .Button, .DropZoneContainer .row .AR.Page .Button,
 .AR.Page.LayoutTooltip a.Button,
 .AR.Page.LayoutTooltip .DropZoneContainer .row .Button,
@@ -7908,7 +7917,7 @@ a.Button.IsDefault,
       height: 48px;
       margin: -1px 0 0 -1px;
       overflow: hidden;
-      padding: 6px;
+      padding: 6px 0;
       position: relative;
       width: 139px; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_EmptyWeekendDay {
@@ -7920,15 +7929,19 @@ a.Button.IsDefault,
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday [ui='data-calendar-day'] {
       font-family: "LatoBold"; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Past_Day [ui='data-calendar-day'] {
-      color: #adadad; }
+      color: #777777; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today [ui='data-calendar-day'] {
       border-color: #00bfa5; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday [ui='data-calendar-day'] {
       color: #adadad;
       text-decoration: line-through; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay___Selected:hover [ui='data-calendar-day'] {
+      background-color: #00bfa5;
+      color: #333333; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay___Selected [ui='data-calendar-day'] {
       background-color: #00bfa5;
-      color: #fff; }
+      color: #fff;
+      font-family: "LatoBold"; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today,
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday,
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekend,
@@ -7954,6 +7967,16 @@ a.Button.IsDefault,
       border-right: none;
       border-top: none;
       margin: 0; }
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today:hover [ui='data-calendar-day'],
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday:hover [ui='data-calendar-day'],
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekend:hover [ui='data-calendar-day'],
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Past_Day:hover [ui='data-calendar-day'],
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_EmptyDay:hover [ui='data-calendar-day'],
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallDay:hover [ui='data-calendar-day'],
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallWeek:hover [ui='data-calendar-day'],
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today_Weekend:hover [ui='data-calendar-day'],
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday:hover [ui='data-calendar-day'] {
+        background-color: #ebebeb; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarItemCell {
       display: -webkit-inline-box;
       display: inline-flex;
@@ -11803,10 +11826,10 @@ html body {
     display: flex;
     background-color: #fff;
     border: 1px solid #d6d6d6;
-    border-radius: 4px;
+    border-radius: 100px;
     color: #333333;
     height: 36px;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 16px;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
     width: 100%; }
@@ -11824,24 +11847,15 @@ html body {
     -webkit-box-pack: center;
             justify-content: center;
     background-color: transparent;
-    border-left: 1px solid #d6d6d6;
     color: #00bfa5;
     height: 100%;
-    margin-left: 10px;
-    width: 35px; }
+    width: 36px; }
 
 .AR .ButtonDropdown_button.Button,
 .FA .ButtonDropdown_button.Button {
   margin: 0;
   padding-left: 0;
-  padding-right: 10px; }
-
-.AR .ButtonDropdown_icon,
-.FA .ButtonDropdown_icon {
-  border-left: none;
-  border-right: 1px solid #d6d6d6;
-  margin-left: 0;
-  margin-right: 10px; }
+  padding-right: 16px; }
 
 .ButtonGroup {
   padding-left: 1px;
@@ -12051,7 +12065,7 @@ html body {
 .DropdownMenu {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 2px;
+  border-radius: 4px;
   display: none;
   font-size: 14px;
   left: 0;
@@ -12152,11 +12166,11 @@ html body {
     display: flex;
     background-color: #fff;
     border: 1px solid #d6d6d6;
-    border-radius: 4px;
+    border-radius: 100px;
     height: 36px;
     margin-left: 0;
-    min-width: 35px;
-    padding: 0 0 0 10px; }
+    min-width: 36px;
+    padding: 0 0 0 12px; }
     .IconDropdown_button.Button:hover {
       background-color: #f2fffd;
       border: 1px solid #00bfa5; }
@@ -12170,23 +12184,15 @@ html body {
       display: flex;
       -webkit-box-pack: center;
               justify-content: center;
-      border-left: 1px solid #d6d6d6;
       color: #00bfa5;
       height: 100%;
-      margin-left: 10px;
-      width: 28px; }
+      width: 36px; }
 
 .AR .IconDropdown_button.Button,
 .FA .IconDropdown_button.Button {
   margin: 0;
   padding-left: 0;
-  padding-right: 10px; }
-  .AR .IconDropdown_button.Button .IconDown,
-  .FA .IconDropdown_button.Button .IconDown {
-    border-left: none;
-    border-right: 1px solid #d6d6d6;
-    margin-left: 0;
-    margin-right: 10px; }
+  padding-right: 12px; }
 
 .InlineDropdown {
   cursor: pointer;
@@ -17053,15 +17059,15 @@ body.PanelOpened .daterangepicker {
 
 .GenericGallery.GenericGallery-column-gap--Largest span.ListRecords,
 .GenericGallery.GenericGallery-column-gap--Largest .GenericGallery-content {
-  grid-column-gap: 42px; }
+  grid-column-gap: 56px; }
 
 .GenericGallery.GenericGallery-row-gap--Largest span.ListRecords,
 .GenericGallery.GenericGallery-row-gap--Largest .GenericGallery-content {
-  grid-row-gap: 42px; }
+  grid-row-gap: 56px; }
 
 .GenericGallery.GenericGallery-padding--Largest span.ListRecords,
 .GenericGallery.GenericGallery-padding--Largest .GenericGallery-item {
-  padding: 42px; }
+  padding: 56px; }
 
 .GenericGallery-border--None {
   border: none; }
@@ -28454,40 +28460,40 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   margin-right: auto; }
 
 .MultiMarginLargest {
-  margin: 42px; }
+  margin: 56px; }
 
 .MultiMarginLeftLargest {
-  margin-left: 42px; }
+  margin-left: 56px; }
 
 .MultiMarginRightLargest {
-  margin-right: 42px; }
+  margin-right: 56px; }
 
 .MultiMarginTopLargest {
-  margin-top: 42px; }
+  margin-top: 56px; }
 
 .MultiMarginBottomLargest {
-  margin-bottom: 42px; }
+  margin-bottom: 56px; }
 
 .tablet .MultiMarginTopLargest-tablet {
-  margin-top: 42px; }
+  margin-top: 56px; }
 
 .tablet .MultiMarginBottomLargest-tablet {
-  margin-bottom: 42px; }
+  margin-bottom: 56px; }
 
 .desktop.small .MultiMarginTopLargest-desktop-small {
-  margin-top: 42px; }
+  margin-top: 56px; }
 
 .desktop.small .MultiMarginBottomLargest-desktop-small {
-  margin-bottom: 42px; }
+  margin-bottom: 56px; }
 
 .AR .MultiMarginLeftLargest,
 .FA .MultiMarginLeftLargest {
   margin-left: auto;
-  margin-right: 42px; }
+  margin-right: 56px; }
 
 .AR .MultiMarginRightLargest,
 .FA .MultiMarginRightLargest {
-  margin-left: 42px;
+  margin-left: 56px;
   margin-right: auto; }
 
 .NoMargin {
@@ -28816,28 +28822,28 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   padding-right: auto; }
 
 .MultiPaddingLargest {
-  padding: 42px; }
+  padding: 56px; }
 
 .MultiPaddingLeftLargest {
-  padding-left: 42px; }
+  padding-left: 56px; }
 
 .MultiPaddingRightLargest {
-  padding-right: 42px; }
+  padding-right: 56px; }
 
 .MultiPaddingTopLargest {
-  padding-top: 42px; }
+  padding-top: 56px; }
 
 .MultiPaddingBottomLargest {
-  padding-bottom: 42px; }
+  padding-bottom: 56px; }
 
 .AR .MultiPaddingLeftLargest,
 .FA .MultiPaddingLeftLargest {
   padding-left: auto;
-  padding-right: 42px; }
+  padding-right: 56px; }
 
 .AR .MultiPaddingRightLargest,
 .FA .MultiPaddingRightLargest {
-  padding-left: 42px;
+  padding-left: 56px;
   padding-right: auto; }
 
 .NoPadding {
@@ -29582,12 +29588,18 @@ ul.os-internal-ui-autocomplete {
               align-items: center;
       display: -webkit-box;
       display: flex;
+      -webkit-box-flex: 1;
+              flex: 1;
       gap: 8px; }
       .AgendaCalendar__Header [ui='data-calendar-navigation'] .navigation-control .navigation-control-item a {
         border: none; }
     .AgendaCalendar__Header [ui='data-calendar-totals'] {
+      -webkit-box-flex: 2;
+              flex: 2; }
+    .AgendaCalendar__Header [ui='data-calendar-actions'] {
       -webkit-box-flex: 1;
-              flex: 1; }
+              flex: 1;
+      text-align: end; }
   .AgendaCalendar__Content {
     border-top: 1px solid #d6d6d6; }
 
