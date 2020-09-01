@@ -17,11 +17,11 @@
 
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
-		border-radius: $border-radius-default;
+		border-radius: 100px;
 		height: 36px;
 		margin-left: 0;
-		min-width: 35px;
-		padding: 0 0 0 10px;
+		min-width: 36px;
+		padding: 0 0 0 12px;
 
 		&:hover {
 			background-color: $regular-eta;
@@ -36,11 +36,9 @@
 		.IconDown {
 			@include flex-center-total;
 
-			border-left: 1px solid $light-grey;
 			color: $regular-alpha;
 			height: 100%;
-			margin-left: 10px;
-			width: 28px;
+			width: 36px;
 		}
 	}
 }
@@ -51,14 +49,7 @@
 		&_button.Button {
 			margin: 0;
 			padding-left: 0;
-			padding-right: 10px;
-
-			.IconDown {
-				border-left: none;
-				border-right: 1px solid $light-grey;
-				margin-left: 0;
-				margin-right: 10px;
-			}
+			padding-right: 12px;
 		}
 	}
 }

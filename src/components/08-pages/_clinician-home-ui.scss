@@ -21,6 +21,7 @@
 		[ui='data-calendar-navigation'] {
 			@include flex-center-vertically;
 
+			flex: 1;
 			gap: $sapphire-sizes--small;
 
 			.navigation-control {
@@ -31,7 +32,12 @@
 		}
 
 		[ui='data-calendar-totals'] {
+			flex: 2;
+		}
+
+		[ui='data-calendar-actions'] {
 			flex: 1;
+			text-align: end;
 		}
 	}
 

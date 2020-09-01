@@ -18,10 +18,10 @@
 
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
-		border-radius: $border-radius-default;
+		border-radius: 100px;
 		color: $text-color-regular;
 		height: 36px;
-		padding: 0 0 0 10px;
+		padding: 0 0 0 $sapphire-sizes--medium;
 		transition: all 0.1s ease-in-out;
 		width: 100%;
 
@@ -41,11 +41,9 @@
 		@include flex-center-total;
 
 		background-color: transparent;
-		border-left: 1px solid $light-grey;
 		color: $regular-alpha;
 		height: 100%;
-		margin-left: 10px;
-		width: 35px;
+		width: 36px;
 	}
 }
 
@@ -55,14 +53,7 @@
 		&_button.Button {
 			margin: 0;
 			padding-left: 0;
-			padding-right: 10px;
-		}
-
-		&_icon {
-			border-left: none;
-			border-right: 1px solid $light-grey;
-			margin-left: 0;
-			margin-right: 10px;
+			padding-right: $sapphire-sizes--medium;
 		}
 	}
 }

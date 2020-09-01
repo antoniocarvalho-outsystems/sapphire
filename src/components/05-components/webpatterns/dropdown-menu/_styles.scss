@@ -3,7 +3,7 @@
 
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
-	border-radius: 2px;
+	border-radius: $border-radius-default;
 	display: none;
 	font-size: 14px;
 	left: 0;

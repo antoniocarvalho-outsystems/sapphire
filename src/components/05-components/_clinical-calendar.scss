@@ -95,7 +95,7 @@
 				height: $sapphire-sizes--xxlarge;
 				margin: -1px 0 0 -1px;
 				overflow: hidden;
-				padding: 6px;
+				padding: 6px 0;
 				position: relative;
 				width: 139px;
 			}
@@ -116,7 +116,7 @@
 
 			.Calendar_Past_Day {
 				[ui='data-calendar-day'] {
-					color: $mid-light-grey;
+					color: $regular-grey;
 				}
 			}
 
@@ -134,9 +134,17 @@
 			}
 
 			.CalendarDay___Selected {
+				&:hover {
+					[ui='data-calendar-day'] {
+						background-color: $regular-alpha;
+						color: $dark-grey;
+					}
+				}
+
 				[ui='data-calendar-day'] {
 					background-color: $regular-alpha;
 					color: $regular-white;
+					font-family: $font-family-latin-bold;
 				}
 			}
 
@@ -167,6 +175,12 @@
 				border-right: none;
 				border-top: none;
 				margin: 0;
+
+				&:hover {
+					[ui='data-calendar-day'] {
+						background-color: $sapphire-light;
+					}
+				}
 			}
 
 			.CalendarItemCell {
