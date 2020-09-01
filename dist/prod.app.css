@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940042 || Generated: Tue Sep 01 2020 12:58:53 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940043 || Generated: Tue Sep 01 2020 13:03:46 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -25825,14 +25825,13 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   color: #333333;
   display: block;
   font-family: "LatoRegular";
-  line-height: 32px;
-  padding: 0 10px;
+  height: 36px;
+  padding: 8px;
   white-space: nowrap; }
   .Page .SplitButton-actions a:hover,
   .Page .SplitButton-actions a:link:hover,
   .Page .SplitButton-actions a:visited:hover {
-    background-color: #f2fffd;
-    color: #00ac94; }
+    background-color: #f2fffd; }
 
 .AR.Page .SplitButton.hasTrigger .SplitButton-button .Button,
 .FA.Page .SplitButton.hasTrigger .SplitButton-button .Button {
