@@ -20,6 +20,7 @@
 	}
 
 	&_header {
+		align-items: center;
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
 		border-radius: $border-radius-medium;
@@ -97,6 +98,7 @@
 		}
 
 		.PersonCard__content {
+			align-items: center;
 			background-color: $regular-white;
 			display: flex;
 			flex: auto;

@@ -27,6 +27,7 @@
 	}
 
 	&__Header {
+		align-items: center;
 		display: inline-flex;
 		gap: $sapphire-sizes--xsmall;
 		min-height: 30px;
