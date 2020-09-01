@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940043 || Generated: Tue Sep 01 2020 13:03:46 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950001 || Generated: Tue Sep 01 2020 13:08:13 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12247,8 +12247,6 @@ html body {
     height: 36px;
     line-height: 36px;
     padding: 0 16px 0 35px; }
-    .Page .Search_wrapper input[type='text']:not(:hover) {
-      border-color: #d6d6d6; }
 
 .AR .Page .Search_wrapper:after,
 .FA .Page .Search_wrapper:after {
