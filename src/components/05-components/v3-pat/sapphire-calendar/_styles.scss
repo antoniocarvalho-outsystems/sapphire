@@ -143,8 +143,13 @@
 		.Calendar_Weekday {
 			@include common-sapphire-weekdays-style;
 
-			color: $regular-grey;
+			color: $dark-grey;
 			font-family: $font-family-latin-bold;
+
+			a:link,
+			a:visited {
+				font-family: $font-family-latin-bold;
+			}
 		}
 
 		.Calendar_Weekday_Holiday {
