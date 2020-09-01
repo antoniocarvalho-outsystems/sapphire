@@ -5,6 +5,7 @@
 	border: 1px solid $light-grey;
 	border-radius: 2px;
 	display: none;
+	font-size: 14px;
 	left: 0;
 	min-width: 150px;
 	position: absolute;
@@ -20,8 +21,9 @@
 		color: $text-color-regular;
 		display: block;
 		font-family: $font-family-latin-regular;
-		line-height: 32px;
-		padding: 0 12px;
+		height: 36px;
+		line-height: unset;
+		padding: $sapphire-sizes--small;
 		white-space: nowrap;
 
 		&:hover {

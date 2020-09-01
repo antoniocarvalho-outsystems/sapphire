@@ -8,6 +8,7 @@
 				.Button {
 					border-bottom-right-radius: 0;
 					border-top-right-radius: 0;
+					margin: 0;
 				}
 			}
 
@@ -17,7 +18,7 @@
 				border-top-left-radius: 0;
 				display: inline-block;
 				margin: 0;
-				min-width: 45px;
+				min-width: 40px;
 				padding: 0;
 				position: relative;
 
@@ -25,10 +26,7 @@
 					content: '\e610';
 					font-family: $font-family-icons;
 					font-size: 0.7em;
-					left: 48%;
-					position: absolute;
-					top: 53%;
-					transform: translate(-55%, -45%);
+					margin-left: -3px;
 				}
 			}
 		}
@@ -75,6 +73,12 @@
 				border-right: 1px solid $regular-white;
 				border-top-left-radius: 1.286em;
 				border-top-right-radius: 0;
+
+				&:before {
+					content: '\e610';
+					margin-left: auto;
+					margin-right: -3px;
+				}
 			}
 		}
 	}
