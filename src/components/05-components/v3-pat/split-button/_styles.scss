@@ -43,13 +43,12 @@
 			color: $text-color-regular;
 			display: block;
 			font-family: $font-family-latin-regular;
-			line-height: 32px;
-			padding: 0 10px;
+			height: 36px;
+			padding: $sapphire-sizes--small;
 			white-space: nowrap;
 
 			&:hover {
 				background-color: $regular-eta;
-				color: $regular-beta;
 			}
 		}
 	}
