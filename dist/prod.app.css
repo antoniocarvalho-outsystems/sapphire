@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.940039 || Generated: Mon Aug 31 2020 18:05:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.940040 || Generated: Tue Sep 01 2020 12:36:16 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21447,13 +21447,12 @@ a .PersonCard {
 .CalendarWb {
   -webkit-box-align: center;
           align-items: center;
-  background-color: #ffffff;
-  color: #d6d6d6;
+  background-color: #fff;
   display: -webkit-inline-box;
   display: inline-flex;
   -webkit-box-pack: center;
           justify-content: center;
-  padding: 10px;
+  padding: 4px;
   text-align: center;
   width: calc(100% / 7);
   z-index: 1;
@@ -21463,37 +21462,35 @@ a .PersonCard {
   .CalendarWb_noOverlap {
     -webkit-box-align: center;
             align-items: center;
-    background-color: #ffffff;
-    color: #d6d6d6;
+    background-color: #fff;
     display: -webkit-inline-box;
     display: inline-flex;
     -webkit-box-pack: center;
             justify-content: center;
-    padding: 10px;
+    padding: 4px;
     text-align: center;
     width: calc(100% / 7);
     z-index: 1;
     border: 1px solid #d6d6d6;
-    border-radius: 4px;
+    border-radius: 8px;
     display: inline-block;
-    padding-bottom: 15px;
+    padding: 16px 24px;
     width: 100%; }
 
 .CalendarWidget .Calendar_SmallDayLink {
   -webkit-box-align: center;
           align-items: center;
-  color: #5c5c5c;
   display: -webkit-box;
   display: flex;
-  font-weight: normal;
-  height: 30px;
   -webkit-box-pack: center;
           justify-content: center;
-  min-width: 30px;
-  width: 30px; }
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 40px;
+  min-width: 40px;
+  width: 40px; }
 
 .CalendarWidget_wrapper {
-  color: #5c5c5c;
   white-space: initial; }
   .CalendarWidget_wrapper:after {
     clear: both;
@@ -21511,6 +21508,9 @@ a .PersonCard {
           justify-content: space-between;
   height: 36px; }
 
+.CalendarWidget__weekDays {
+  padding: 8px 0; }
+
 .CalendarWidget___back:after {
   left: 7px;
   -webkit-transform: rotate(90deg);
@@ -21524,7 +21524,6 @@ a .PersonCard {
 .CalendarWidget___back, .CalendarWidget___forward {
   position: relative; }
   .CalendarWidget___back:after, .CalendarWidget___forward:after {
-    color: #00ac94;
     content: '\e610';
     font-family: "Sapphire-Icon-Font";
     font-size: 1em;
@@ -21543,26 +21542,30 @@ a .PersonCard {
   font-size: 1.143em; }
 
 .CalendarWidget___weekDay {
+  color: #777777;
   display: inline-block;
-  font-size: 0.786em;
-  height: 30px;
-  padding: 7px 1px;
+  font-family: "LatoBold";
+  padding: 8px 0;
   text-align: center;
   width: calc(100% / 7); }
 
 .CalendarWidget__days {
-  font-size: 1.286em;
+  color: #777777;
+  font-size: 1.143em;
   width: 100%; }
+  .CalendarWidget__days a:link,
+  .CalendarWidget__days a:visited {
+    color: inherit;
+    font-family: "LatoRegular"; }
   .CalendarWidget__days .Calendar_Past_Day {
     -webkit-box-align: center;
             align-items: center;
-    background-color: #ffffff;
-    color: #d6d6d6;
+    background-color: #fff;
     display: -webkit-inline-box;
     display: inline-flex;
     -webkit-box-pack: center;
             justify-content: center;
-    padding: 10px;
+    padding: 4px;
     text-align: center;
     width: calc(100% / 7);
     z-index: 1;
@@ -21570,101 +21573,89 @@ a .PersonCard {
   .CalendarWidget__days .Calendar_Today {
     -webkit-box-align: center;
             align-items: center;
-    background-color: #ffffff;
-    color: #d6d6d6;
+    background-color: #fff;
     display: -webkit-inline-box;
     display: inline-flex;
     -webkit-box-pack: center;
             justify-content: center;
-    padding: 10px;
+    padding: 4px;
     text-align: center;
     width: calc(100% / 7);
-    z-index: 1;
-    background-color: transparent !important;
-    border: none !important;
-    padding: 0; }
+    z-index: 1; }
     .CalendarWidget__days .Calendar_Today .Calendar_SmallDayLink {
-      background-color: #00bfa5;
-      border-radius: 50%;
-      color: #fff;
-      display: inline-block;
-      font-weight: normal;
-      height: 34px;
-      line-height: 34px;
-      margin: 0 !important;
-      width: 34px; }
+      border-color: #00bfa5;
+      font-family: "LatoBold"; }
   .CalendarWidget__days .Calendar_Weekday {
     -webkit-box-align: center;
             align-items: center;
-    background-color: #ffffff;
-    color: #d6d6d6;
+    background-color: #fff;
     display: -webkit-inline-box;
     display: inline-flex;
     -webkit-box-pack: center;
             justify-content: center;
-    padding: 10px;
+    padding: 4px;
     text-align: center;
     width: calc(100% / 7);
-    z-index: 1; }
-    .CalendarWidget__days .Calendar_Weekday .Calendar_SmallDayLink {
-      font-weight: normal; }
+    z-index: 1;
+    color: #777777;
+    font-family: "LatoBold"; }
   .CalendarWidget__days .Calendar_Weekday_Holiday {
     -webkit-box-align: center;
             align-items: center;
-    background-color: #ffffff;
-    color: #d6d6d6;
+    background-color: #fff;
     display: -webkit-inline-box;
     display: inline-flex;
     -webkit-box-pack: center;
             justify-content: center;
-    padding: 10px;
+    padding: 4px;
     text-align: center;
     width: calc(100% / 7);
-    z-index: 1; }
+    z-index: 1;
+    color: #adadad;
+    text-decoration: line-through; }
   .CalendarWidget__days .Calendar_EmptyWeekendDay {
     -webkit-box-align: center;
             align-items: center;
-    background-color: #ffffff;
-    color: #d6d6d6;
+    background-color: #fff;
     display: -webkit-inline-box;
     display: inline-flex;
     -webkit-box-pack: center;
             justify-content: center;
-    padding: 10px;
+    padding: 4px;
     text-align: center;
     width: calc(100% / 7);
     z-index: 1; }
   .CalendarWidget__days .Calendar_EmptyDay {
     -webkit-box-align: center;
             align-items: center;
-    background-color: #ffffff;
-    color: #d6d6d6;
+    background-color: #fff;
     display: -webkit-inline-box;
     display: inline-flex;
     -webkit-box-pack: center;
             justify-content: center;
-    padding: 10px;
+    padding: 4px;
     text-align: center;
     width: calc(100% / 7);
     z-index: 1;
     border: none; }
+    .CalendarWidget__days .Calendar_EmptyDay:hover .Calendar_SmallDayLink {
+      background-color: #fff; }
 
 .CalendarWidget__daysNumber {
   -webkit-box-align: center;
           align-items: center;
-  background-color: #ffffff;
-  color: #d6d6d6;
+  background-color: #fff;
   display: -webkit-inline-box;
   display: inline-flex;
   -webkit-box-pack: center;
           justify-content: center;
-  padding: 10px;
+  padding: 4px;
   text-align: center;
   width: calc(100% / 7);
   z-index: 1;
   position: relative; }
-  .CalendarWidget__daysNumber span {
-    color: #00ac94 !important; }
+  .CalendarWidget__daysNumber:hover .Calendar_SmallDayLink {
+    background-color: #ebebeb; }
   .CalendarWidget__daysNumber .arrowLeft.green {
     bottom: 0;
     display: contents;
@@ -21680,7 +21671,6 @@ a .PersonCard {
               transform: translateX(-50%);
       width: 20px; }
   .CalendarWidget__daysNumber > a span {
-    color: #5c5c5c;
     height: 44px;
     width: 65px; }
   .CalendarWidget__daysNumber.CalendarWidget__Selected {
@@ -21690,15 +21680,14 @@ a .PersonCard {
       display: none; }
     .CalendarWidget__daysNumber.CalendarWidget__Selected span.Calendar_SmallDayLink {
       background-color: #00bfa5;
-      border-radius: 50%;
-      color: #ffffff !important; }
+      color: #ffffff !important;
+      font-family: "LatoBold"; }
 
 .CalendarWidget_Today {
   clear: both;
   display: block;
   font-family: "LatoBold";
-  font-size: 0.857em;
-  padding-top: 5px;
+  padding-top: 8px;
   width: 100%; }
 
 .CalendarWidget > div {
