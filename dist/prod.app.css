@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950002 || Generated: Tue Sep 01 2020 16:28:35 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950003 || Generated: Tue Sep 01 2020 17:30:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12070,6 +12070,7 @@ html body {
   font-size: 14px;
   left: 0;
   min-width: 150px;
+  overflow: hidden;
   position: absolute;
   text-align: left;
   z-index: 2; }
@@ -20079,6 +20080,8 @@ body.PanelById.PanelOpened {
     .PatientCallCancel--disabled .PatientCallCancel__HeaderMode {
       background-color: #777777; }
   .PatientCallCancel__Header {
+    -webkit-box-align: center;
+            align-items: center;
     display: -webkit-inline-box;
     display: inline-flex;
     gap: 4px;
@@ -20362,6 +20365,8 @@ body.PanelById.PanelOpened {
   content: '\e611'; }
 
 .PersonCard_header {
+  -webkit-box-align: center;
+          align-items: center;
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
@@ -20414,6 +20419,8 @@ body.PanelById.PanelOpened {
   .PersonCard_header.SmallPadding .PersonCard__headerLeftInfo {
     padding: 6px 16px; }
   .PersonCard_header .PersonCard__content {
+    -webkit-box-align: center;
+            align-items: center;
     background-color: #fff;
     display: -webkit-box;
     display: flex;
