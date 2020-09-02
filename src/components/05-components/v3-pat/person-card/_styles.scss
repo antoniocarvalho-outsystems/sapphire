@@ -217,8 +217,9 @@
 	}
 
 	&__headerLeftInfo {
+		@include flex-center-vertically;
+
 		background-color: $regular-white;
-		display: flex;
 		padding: 10px $sapphire-sizes--medium;
 
 		&.IsLeftSideHide {
@@ -354,8 +355,14 @@
 		}
 	}
 
+	&____title {
+		> div.Flex {
+			align-items: center;
+		}
+	}
+
 	&__content {
-		gap: $sapphire-sizes--small;
+		gap: $sapphire-sizes--medium;
 
 		> div {
 			flex-basis: 100%;
@@ -376,6 +383,12 @@
 		background-color: $regular-white;
 		max-width: 300px;
 		padding: 10px $sapphire-sizes--medium;
+
+		&_width_Small {
+			display: flex;
+			flex-basis: 10%;
+			justify-content: flex-end;
+		}
 
 		&_width_Medium {
 			display: flex;
@@ -419,7 +432,7 @@
 	}
 
 	.CardAll {
-		display: flex;
+		@include flex-center-vertically;
 
 		.Description {
 			line-height: inherit;
@@ -549,12 +562,8 @@
 
 .PersonCard {
 	> .PersonCard_header {
-		.PersonCard__headerLeftInfo:not(div[id$='PanelAppointments']) {
-			min-width: 250px;
-		}
-
 		.PersonCard__content {
-			color: $mid-dark-grey;
+			color: $dark-grey;
 			flex: 4;
 		}
 	}
@@ -675,7 +684,8 @@ a {
 	}
 }
 
-.tablet {
+.tablet,
+.desktop.small .SideBarOpen {
 	.PersonCard {
 		&__Complementary {
 			&:empty ~ .PersonCard__headerLeftInfo {

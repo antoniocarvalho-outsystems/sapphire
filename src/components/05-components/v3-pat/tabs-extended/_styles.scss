@@ -159,33 +159,27 @@
 		position: relative;
 		top: 1px;
 
-		&:hover:not(.active) a[id] {
+		&.active a:link,
+		&.active a:visited {
 			color: $regular-beta;
-		}
-
-		&.active a {
-			color: $text-color-regular;
 
 			&:hover {
-				color: $text-color-regular;
+				color: $regular-beta;
 			}
 		}
 
-		&:not(.active) a:focus {
-			border: 1px solid $dark-grey;
-			color: $dark-grey;
-		}
-
-		a,
-		a:hover {
+		a:link,
+		a:visited {
 			border: 1px solid transparent;
-			color: $regular-beta;
-			font-family: $font-family-latin-bold;
-			font-size: 1.143em;
-			margin-right: 0;
+			color: $mid-dark-grey;
+			display: inline-block;
+			margin: 0;
 			min-width: auto;
-			padding: 10px;
 			position: relative;
+
+			&:hover {
+				color: $regular-beta;
+			}
 		}
 
 		.Badge {
