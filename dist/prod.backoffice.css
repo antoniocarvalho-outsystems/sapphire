@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.950005 || Generated: Wed Sep 02 2020 15:44:40 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.950006 || Generated: Wed Sep 02 2020 18:13:58 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3088,6 +3088,30 @@ div[onclick] {
   border-top: none;
   margin-top: 0;
   padding: 0; }
+  .TableRecords.CustomTable {
+    border-spacing: 0 8px; }
+    .TableRecords.CustomTable > tbody tr td:first-child {
+      border-radius: 8px 0 0 8px;
+      padding-left: 16px; }
+    .TableRecords.CustomTable > tbody tr td:last-child {
+      border-radius: 0 8px 8px 0;
+      padding-right: 16px; }
+    .TableRecords.CustomTable .TableRecords_OddLine,
+    .TableRecords.CustomTable .TableRecords_EvenLine {
+      border-top: 1px solid #d6d6d6;
+      padding: 16px 8px;
+      vertical-align: middle; }
+    .TableRecords.CustomTable .CustomTableIcon {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      background-color: #f3f3f3;
+      border-radius: 8px;
+      height: 48px;
+      width: 48px; }
   .TableRecords > tbody > tr:first-child td {
     border-top: 1px solid #d6d6d6; }
   .TableRecords > tbody tr td:first-child {
@@ -3215,6 +3239,18 @@ div[onclick] {
       visibility: visible; }
     .TableRecords .TableRowExpandable > td, .TableRecords .TableRowExpandable > td:first-child, .TableRecords .TableRowExpandable > td:last-child {
       padding: 0 !important; }
+
+.AR .TableRecords.CustomTable > tbody tr td:first-child,
+.FA .TableRecords.CustomTable > tbody tr td:first-child {
+  border-radius: 0 8px 8px 0;
+  padding-left: 8px;
+  padding-right: 16px; }
+
+.AR .TableRecords.CustomTable > tbody tr td:last-child,
+.FA .TableRecords.CustomTable > tbody tr td:last-child {
+  border-radius: 8px 0 0 8px;
+  padding-left: 16px;
+  padding-right: 8px; }
 
 .AR .TableRecords_Header,
 .FA .TableRecords_Header {
