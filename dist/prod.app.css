@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950004 || Generated: Wed Sep 02 2020 14:17:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950005 || Generated: Wed Sep 02 2020 15:44:40 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11812,9 +11812,7 @@ html body {
 .ButtonDropdown {
   cursor: pointer;
   position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content; }
+  width: 100%; }
   .ButtonDropdown.open .ButtonDropdown_button.Button {
     background-color: #f2fffd;
     border: 1px solid #00bfa5;
@@ -11839,6 +11837,12 @@ html body {
       box-shadow: none; }
     .ButtonDropdown_button.Button:focus, .ButtonDropdown_button.Button:active {
       border: 1px solid #00bfa5; }
+  .ButtonDropdown_text {
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%; }
   .ButtonDropdown_icon {
     -webkit-box-align: center;
             align-items: center;
@@ -12069,11 +12073,19 @@ html body {
   display: none;
   font-size: 14px;
   left: 0;
+  max-height: 250px;
   min-width: 150px;
-  overflow: hidden;
+  overflow: auto;
   position: absolute;
   text-align: left;
   z-index: 2; }
+  .DropdownMenu::-webkit-scrollbar {
+    background-color: #fff;
+    height: 4px;
+    width: 4px; }
+  .DropdownMenu::-webkit-scrollbar-thumb {
+    border: 5px solid #d6d6d6;
+    border-radius: 2px; }
   .open .DropdownMenu {
     display: block; }
   .DropdownMenu .PH > a,
@@ -13667,6 +13679,7 @@ div.Feedback_Message_Info span.lasa-term {
   .CardBoxFilters div.CardBox {
     -webkit-box-align: center;
             align-items: center;
+    background-color: #fff;
     border-radius: 100px;
     box-shadow: none;
     -webkit-box-orient: horizontal;
@@ -20506,44 +20519,32 @@ body.PanelById.PanelOpened {
   padding: 10px 16px; }
   .PersonCard__headerLeftInfo.IsLeftSideHide {
     display: none; }
-  .PersonCard__headerLeftInfo.Male .PersonCardIcon {
-    background-color: #f0faf9; }
   .PersonCard__headerLeftInfo.Male.HasBorder {
     border-left: 2px solid #194968; }
     .PersonCard__headerLeftInfo.Male.HasBorder .icon {
       color: #194968; }
-  .PersonCard__headerLeftInfo.Female .PersonCardIcon {
-    background-color: #feeced; }
   .PersonCard__headerLeftInfo.Female.HasBorder {
     border-left: 2px solid #c892b3; }
     .PersonCard__headerLeftInfo.Female.HasBorder .icon {
       color: #c892b3; }
-  .PersonCard__headerLeftInfo.Unidentified .PersonCardIcon {
-    background-color: #f3f3f3; }
   .PersonCard__headerLeftInfo.Unidentified.HasBorder {
     border-left: 2px solid #777777; }
     .PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
       color: #777777; }
   .PersonCard__headerLeftInfo.Red {
     color: #333333; }
-    .PersonCard__headerLeftInfo.Red .PersonCardIcon {
-      background-color: #fad5d5; }
     .PersonCard__headerLeftInfo.Red.HasBorder {
       border-left: 2px solid #b10100; }
       .PersonCard__headerLeftInfo.Red.HasBorder .icon {
         color: #b10100; }
   .PersonCard__headerLeftInfo.Green {
     color: #333333; }
-    .PersonCard__headerLeftInfo.Green .PersonCardIcon {
-      background-color: #c2dea8; }
     .PersonCard__headerLeftInfo.Green.HasBorder {
       border-left: 2px solid #578329; }
       .PersonCard__headerLeftInfo.Green.HasBorder .icon {
         color: #578329; }
   .PersonCard__headerLeftInfo.Brown {
     color: #333333; }
-    .PersonCard__headerLeftInfo.Brown .PersonCardIcon {
-      background-color: #e6e2aa; }
     .PersonCard__headerLeftInfo.Brown.HasBorder {
       border-left: 2px solid #928d09; }
       .PersonCard__headerLeftInfo.Brown.HasBorder .icon {
@@ -20775,6 +20776,9 @@ body.PanelById.PanelOpened {
 
 .ListRecords .SearchRow.searchNotFound + .SearchRow.searchFound .PersonCard:last-of-type .PersonCard_header {
   border-bottom: 1px solid #d6d6d6; }
+
+.ListPersonCard > span:not(:last-of-type) .PersonCard .PersonCard_header {
+  margin-bottom: 8px; }
 
 .ListRecords .PersonCard .PersonCard_header.Selected,
 .PersonCard_header.Selected {
