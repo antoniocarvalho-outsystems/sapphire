@@ -7,6 +7,17 @@
 	display: inline-flex;
 	width: 100%;
 
+	&--active & {
+		&__ListQueues {
+			background-color: $sapphire-light;
+			border-radius: 100px;
+
+			&:after {
+				opacity: 0;
+			}
+		}
+	}
+
 	&__ListQueues,
 	&__LastCalled,
 	&__Actions {

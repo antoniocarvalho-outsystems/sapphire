@@ -9,6 +9,13 @@
 			if (!$dropdown.length) return;
 			event.stopPropagation();
 
+			$widget.toggleClass('PatientCallCancelStructure--active');
+
+			$(document).on('click.PatientCallCancelStructure', () => {
+				$widget.removeClass('PatientCallCancelStructure--active');
+				$(document).off('click.PatientCallCancelStructure');
+			});
+
 			$dropdown.trigger('click');
 			event.preventDefault();
 		});
