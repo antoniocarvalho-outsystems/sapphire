@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950003 || Generated: Tue Sep 01 2020 17:30:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950004 || Generated: Wed Sep 02 2020 14:17:59 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20151,6 +20151,11 @@ body.PanelById.PanelOpened {
   display: -webkit-inline-box;
   display: inline-flex;
   width: 100%; }
+  .PatientCallCancelStructure--active .PatientCallCancelStructure__ListQueues {
+    background-color: #ebebeb;
+    border-radius: 100px; }
+    .PatientCallCancelStructure--active .PatientCallCancelStructure__ListQueues:after {
+      opacity: 0; }
   .PatientCallCancelStructure__ListQueues, .PatientCallCancelStructure__LastCalled, .PatientCallCancelStructure__Actions {
     -webkit-box-flex: 1;
             flex: 1;
@@ -21597,6 +21602,7 @@ a .PersonCard {
     z-index: 1; }
     .CalendarWidget__days .Calendar_Today .Calendar_SmallDayLink {
       border-color: #00bfa5;
+      color: #333333 !important;
       font-family: "LatoBold"; }
   .CalendarWidget__days .Calendar_Weekday {
     -webkit-box-align: center;
