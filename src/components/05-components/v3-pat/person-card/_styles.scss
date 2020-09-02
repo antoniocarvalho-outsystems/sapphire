@@ -227,9 +227,9 @@
 
 		// Colors
 		&.Male {
-			.PersonCardIcon {
-				background-color: $light-blue-2;
-			}
+			// .PersonCardIcon {
+			// 	background-color: $light-blue-2;
+			// }
 
 			&.HasBorder {
 				border-left: 2px solid $sapphire-male;
@@ -241,9 +241,9 @@
 		}
 
 		&.Female {
-			.PersonCardIcon {
-				background-color: $light-pink-2;
-			}
+			// .PersonCardIcon {
+			// 	background-color: $light-pink-2;
+			// }
 
 			&.HasBorder {
 				border-left: 2px solid $sapphire-female;
@@ -255,9 +255,9 @@
 		}
 
 		&.Unidentified {
-			.PersonCardIcon {
-				background-color: $body-color;
-			}
+			// .PersonCardIcon {
+			// 	background-color: $body-color;
+			// }
 
 			&.HasBorder {
 				border-left: 2px solid $regular-grey;
@@ -271,9 +271,9 @@
 		&.Red {
 			color: $dark-grey;
 
-			.PersonCardIcon {
-				background-color: $light-red;
-			}
+			// .PersonCardIcon {
+			// 	background-color: $light-red;
+			// }
 
 			&.HasBorder {
 				border-left: 2px solid $dark-red;
@@ -287,9 +287,9 @@
 		&.Green {
 			color: $dark-grey;
 
-			.PersonCardIcon {
-				background-color: $light-green;
-			}
+			// .PersonCardIcon {
+			// 	background-color: $light-green;
+			// }
 
 			&.HasBorder {
 				border-left: 2px solid $dark-green;
@@ -303,9 +303,9 @@
 		&.Brown {
 			color: $dark-grey;
 
-			.PersonCardIcon {
-				background-color: $regular-beige;
-			}
+			// .PersonCardIcon {
+			// 	background-color: $regular-beige;
+			// }
 
 			&.HasBorder {
 				border-left: 2px solid $dark-beige;
@@ -647,6 +647,16 @@
 
 	.SearchRow.searchNotFound + .SearchRow.searchFound .PersonCard:last-of-type .PersonCard_header {
 		border-bottom: 1px solid $light-grey;
+	}
+}
+
+.ListPersonCard {
+	> span:not(:last-of-type) {
+		.PersonCard {
+			.PersonCard_header {
+				margin-bottom: $sapphire-sizes--small;
+			}
+		}
 	}
 }
 
