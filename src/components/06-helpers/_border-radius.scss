@@ -1,3 +1,13 @@
+@each $size in $sapphire-sizes {
+	$label: nth($size, 1);
+	$value: nth($size, 2);
+
+	.BorderRadius#{$label} {
+		border-radius: #{$value};
+	}
+}
+
+// Legacy
 .BorderRadius2 {
 	border-radius: 2px;
 }
