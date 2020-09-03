@@ -135,9 +135,8 @@
 
 			.CalendarDay___Selected {
 				&:hover {
-					[ui='data-calendar-day'] {
-						background-color: $regular-alpha;
-						color: $dark-grey;
+					td[ui='data-calendar-day'] {
+						background-color: $regular-epsilon;
 					}
 				}
 

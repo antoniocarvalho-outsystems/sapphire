@@ -213,6 +213,12 @@
 			background-color: $sapphire-white !important;
 			border: none !important;
 
+			&:hover {
+				span.Calendar_SmallDayLink {
+					background-color: $regular-epsilon;
+				}
+			}
+
 			.arrowLeft.green {
 				display: none;
 			}
