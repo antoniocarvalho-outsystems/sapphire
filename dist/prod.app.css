@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950006 || Generated: Wed Sep 02 2020 18:13:58 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950007 || Generated: Thu Sep 03 2020 10:19:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7935,9 +7935,8 @@ a.Button.IsDefault,
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday [ui='data-calendar-day'] {
       color: #adadad;
       text-decoration: line-through; }
-    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay___Selected:hover [ui='data-calendar-day'] {
-      background-color: #00bfa5;
-      color: #333333; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay___Selected:hover td[ui='data-calendar-day'] {
+      background-color: #56d3c2; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay___Selected [ui='data-calendar-day'] {
       background-color: #00bfa5;
       color: #fff;
@@ -21764,6 +21763,8 @@ a .PersonCard {
   .CalendarWidget__daysNumber.CalendarWidget__Selected {
     background-color: #ffffff !important;
     border: none !important; }
+    .CalendarWidget__daysNumber.CalendarWidget__Selected:hover span.Calendar_SmallDayLink {
+      background-color: #56d3c2; }
     .CalendarWidget__daysNumber.CalendarWidget__Selected .arrowLeft.green {
       display: none; }
     .CalendarWidget__daysNumber.CalendarWidget__Selected span.Calendar_SmallDayLink {
