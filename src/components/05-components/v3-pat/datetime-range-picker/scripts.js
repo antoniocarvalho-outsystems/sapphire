@@ -345,14 +345,39 @@
 				}
 			} else {
 				if (this.config.attachToInput) {
-					this.$displayed.val(this.picker.startDate.format(this.config.formatInput));
-					if (this.config.timePicker) {
-						this.$input.val(this.picker.startDate.format('DD-MM-YYYY HH:mm:ss'));
+					if (this.config.singleDatePicker) {
+						this.$displayed.val(this.picker.startDate.format(this.config.formatInput));
+
+						if (this.config.timePicker) {
+							this.$input.val(this.picker.startDate.format('DD-MM-YYYY HH:mm:ss'));
+						} else {
+							this.$input.val(this.picker.startDate.format('DD-MM-YYYY'));
+						}
 					} else {
-						this.$input.val(this.picker.startDate.format('DD-MM-YYYY'));
+						let startDate = this.picker.startDate.format(this.config.formatInput);
+						let endDate = this.picker.endDate.format(this.config.formatInput);
+
+						this.$displayed.val(`${startDate} | ${endDate}`);
+
+						if (this.config.timePicker) {
+							startDate = this.picker.startDate.format('DD-MM-YYYY HH:mm:ss');
+							endDate = this.picker.endDate.format('DD-MM-YYYY HH:mm:ss');
+						} else {
+							startDate = this.picker.startDate.format('DD-MM-YYYY');
+							endDate = this.picker.endDate.format('DD-MM-YYYY');
+						}
+
+						this.$input.val(`${startDate} | ${endDate}`);
 					}
 				} else {
-					this.$input.val(this.picker.startDate.format(this.config.formatInput));
+					if (this.config.singleDatePicker) {
+						this.$input.val(this.picker.startDate.format(this.config.formatInput));
+					} else {
+						let startDate = this.picker.startDate.format(this.config.formatInput);
+						let endDate = this.picker.endDate.format(this.config.formatInput);
+
+						this.$input.val(`${startDate} | ${endDate}`);
+					}
 				}
 			}
 		}
