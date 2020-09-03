@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950009 || Generated: Thu Sep 03 2020 14:20:47 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950010 || Generated: Thu Sep 03 2020 18:39:49 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14999,7 +14999,7 @@ body.PanelOpened .daterangepicker {
   display: none; }
 
 .daterangepicker.show-calendar .drp-calendar {
-  display: block; }
+  display: inline-block; }
 
 .daterangepicker.show-calendar .drp-buttons {
   display: block; }
@@ -26292,7 +26292,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   background-color: transparent;
   border: none;
   border-top: 1px solid #d6d6d6;
-  padding: 26px 0 26px 0; }
+  padding: 16px 0; }
 
 .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active {
   border-bottom: 2px solid #fff;
