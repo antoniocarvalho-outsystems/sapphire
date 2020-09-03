@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950008 || Generated: Thu Sep 03 2020 13:03:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950009 || Generated: Thu Sep 03 2020 14:20:47 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7935,7 +7935,7 @@ a.Button.IsDefault,
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday [ui='data-calendar-day'] {
       color: #adadad;
       text-decoration: line-through; }
-    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay___Selected:hover td[ui='data-calendar-day'] {
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay___Selected:hover div[ui='data-calendar-day'] {
       background-color: #56d3c2; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay___Selected [ui='data-calendar-day'] {
       background-color: #00bfa5;
@@ -7976,6 +7976,15 @@ a.Button.IsDefault,
       .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today_Weekend:hover [ui='data-calendar-day'],
       .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday:hover [ui='data-calendar-day'] {
         background-color: #ebebeb; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot {
+      display: -webkit-box;
+      display: flex; }
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot [ui='data-calendar-day-icons'] {
+        display: -webkit-inline-box;
+        display: inline-flex;
+        -webkit-box-flex: 1;
+                flex: 1;
+        gap: 8px; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarItemCell {
       display: -webkit-inline-box;
       display: inline-flex;
