@@ -135,7 +135,7 @@
 
 			.CalendarDay___Selected {
 				&:hover {
-					td[ui='data-calendar-day'] {
+					div[ui='data-calendar-day'] {
 						background-color: $regular-epsilon;
 					}
 				}
@@ -179,6 +179,16 @@
 					[ui='data-calendar-day'] {
 						background-color: $sapphire-light;
 					}
+				}
+			}
+
+			.CalendarDaySlot {
+				display: flex;
+
+				[ui='data-calendar-day-icons'] {
+					display: inline-flex;
+					flex: 1;
+					gap: $sapphire-sizes--small;
 				}
 			}
 
