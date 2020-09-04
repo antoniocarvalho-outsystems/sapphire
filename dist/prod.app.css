@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950011 || Generated: Fri Sep 04 2020 16:02:19 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950012 || Generated: Fri Sep 04 2020 17:07:13 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10021,8 +10021,39 @@ div.LineInfo {
   border-top: none;
   margin-top: 0;
   padding: 0; }
+  .TableRecords.ExpandableRows {
+    border-collapse: collapse; }
+    .TableRecords.ExpandableRows tbody {
+      background-color: #fff; }
+    .TableRecords.ExpandableRows .Link.ChangeUp {
+      display: none; }
+    .TableRecords.ExpandableRows .Link.ChangeDown {
+      display: inline-block; }
+    .TableRecords.ExpandableRows .ActiveRow .TableRecords_OddLine:first-child span,
+    .TableRecords.ExpandableRows .ActiveRow .TableRecords_EvenLine:first-child span {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
+    .TableRecords.ExpandableRows .ActiveRow .Link.ChangeUp {
+      display: inline-block; }
+    .TableRecords.ExpandableRows .ActiveRow .Link.ChangeDown {
+      display: none; }
+    .TableRecords.ExpandableRows .TableRecords_OddLine:first-child {
+      width: 60px; }
+    .TableRecords.ExpandableRows .TableRecords_OddLine:first-child span,
+    .TableRecords.ExpandableRows .TableRecords_EvenLine:first-child span {
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+      transition: transform 0.5s, -webkit-transform 0.5s; }
   .TableRecords.CustomTable {
+    border-collapse: separate;
     border-spacing: 0 8px; }
+    .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:first-child {
+      border-bottom-left-radius: 0; }
+    .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:last-child {
+      border-bottom-right-radius: 0; }
     .TableRecords.CustomTable > tbody tr td:first-child {
       border-radius: 8px 0 0 8px;
       padding-left: 16px; }
@@ -10036,6 +10067,9 @@ div.LineInfo {
       vertical-align: middle; }
     .TableRecords.CustomTable .TableRecords_Header {
       padding: 0 10px; }
+    .TableRecords.CustomTable .TableRecords_ContentExpandable [ui='data-expandable-table-content'] {
+      border-bottom: 1px solid #d6d6d6;
+      border-top: 1px solid #d6d6d6; }
     .TableRecords.CustomTable .CustomTableIcon {
       -webkit-box-align: center;
               align-items: center;
@@ -10066,32 +10100,6 @@ div.LineInfo {
     background-color: #f5f4e0; }
   .TableRecords.TableRecordsNotes .TableRecords_OddLine {
     background-color: unset; }
-  .TableRecords.ExpandableRows {
-    border-collapse: collapse; }
-    .TableRecords.ExpandableRows tbody {
-      background-color: #fff; }
-    .TableRecords.ExpandableRows .Link.ChangeUp {
-      display: none; }
-    .TableRecords.ExpandableRows .Link.ChangeDown {
-      display: inline-block; }
-    .TableRecords.ExpandableRows .ActiveRow .TableRecords_OddLine:first-child span,
-    .TableRecords.ExpandableRows .ActiveRow .TableRecords_EvenLine:first-child span {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg); }
-    .TableRecords.ExpandableRows .ActiveRow .Link.ChangeUp {
-      display: inline-block; }
-    .TableRecords.ExpandableRows .ActiveRow .Link.ChangeDown {
-      display: none; }
-    .TableRecords.ExpandableRows .TableRecords_OddLine:first-child {
-      width: 60px; }
-    .TableRecords.ExpandableRows .TableRecords_OddLine:first-child span,
-    .TableRecords.ExpandableRows .TableRecords_EvenLine:first-child span {
-      -webkit-transform: rotate(-90deg);
-              transform: rotate(-90deg);
-      -webkit-transition: -webkit-transform 0.5s;
-      transition: -webkit-transform 0.5s;
-      transition: transform 0.5s;
-      transition: transform 0.5s, -webkit-transform 0.5s; }
   .TableRecords_Header {
     background-color: transparent;
     border-bottom: none;
