@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.950013 || Generated: Fri Sep 04 2020 17:24:08 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.950014 || Generated: Fri Sep 04 2020 17:59:51 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4046,7 +4046,13 @@ body.PanelOpened .daterangepicker {
   width: 100%; }
 
 .DateTimeRangePicker.rangeDates .DateTimeRangePicker-displayed input[type] {
-  width: 210px; }
+  min-width: 210px;
+  width: 100%; }
+
+.InputFilter .DateTimeRangePicker {
+  width: 100%; }
+  .InputFilter .DateTimeRangePicker .DateTimeRangePicker-displayed:before {
+    right: 16px; }
 
 .HourPicker {
   font-size: 1em; }
