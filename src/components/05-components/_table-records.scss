@@ -6,8 +6,60 @@
 	margin-top: 0;
 	padding: 0;
 
+	&.ExpandableRows {
+		border-collapse: collapse;
+
+		tbody {
+			background-color: $regular-white;
+		}
+
+		.Link.ChangeUp {
+			display: none;
+		}
+
+		.Link.ChangeDown {
+			display: inline-block;
+		}
+
+		.ActiveRow {
+			.TableRecords_OddLine:first-child span,
+			.TableRecords_EvenLine:first-child span {
+				transform: rotate(0deg);
+			}
+
+			.Link.ChangeUp {
+				display: inline-block;
+			}
+
+			.Link.ChangeDown {
+				display: none;
+			}
+		}
+
+		.TableRecords_OddLine:first-child {
+			width: 60px;
+		}
+
+		.TableRecords_OddLine:first-child span,
+		.TableRecords_EvenLine:first-child span {
+			transform: rotate(-90deg);
+			transition: transform 0.5s;
+		}
+	}
+
 	&.CustomTable {
+		border-collapse: separate;
 		border-spacing: 0 $sapphire-sizes--small;
+
+		&.ExpandableRows {
+			> tbody tr.ActiveRow td:first-child {
+				border-bottom-left-radius: 0;
+			}
+
+			> tbody tr.ActiveRow td:last-child {
+				border-bottom-right-radius: 0;
+			}
+		}
 
 		> tbody tr td:first-child {
 			border-radius: $border-radius-medium 0 0 $border-radius-medium;
@@ -28,6 +80,13 @@
 
 		.TableRecords_Header {
 			padding: 0 10px;
+		}
+
+		.TableRecords_ContentExpandable {
+			[ui='data-expandable-table-content'] {
+				border-bottom: 1px solid $light-grey;
+				border-top: 1px solid $light-grey;
+			}
 		}
 
 		.CustomTableIcon {
@@ -78,47 +137,6 @@
 
 		.TableRecords_OddLine {
 			background-color: unset;
-		}
-	}
-
-	&.ExpandableRows {
-		border-collapse: collapse;
-
-		tbody {
-			background-color: $regular-white;
-		}
-
-		.Link.ChangeUp {
-			display: none;
-		}
-
-		.Link.ChangeDown {
-			display: inline-block;
-		}
-
-		.ActiveRow {
-			.TableRecords_OddLine:first-child span,
-			.TableRecords_EvenLine:first-child span {
-				transform: rotate(0deg);
-			}
-
-			.Link.ChangeUp {
-				display: inline-block;
-			}
-
-			.Link.ChangeDown {
-				display: none;
-			}
-		}
-
-		.TableRecords_OddLine:first-child {
-			width: 60px;
-		}
-
-		.TableRecords_OddLine:first-child span,
-		.TableRecords_EvenLine:first-child span {
-			transform: rotate(-90deg);
-			transition: transform 0.5s;
 		}
 	}
 
