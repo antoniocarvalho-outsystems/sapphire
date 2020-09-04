@@ -22,8 +22,8 @@
 		}
 
 		.ActiveRow {
-			.TableRecords_OddLine:first-child span,
-			.TableRecords_EvenLine:first-child span {
+			.TableRecords_OddLine:first-child span.fa,
+			.TableRecords_EvenLine:first-child span.fa {
 				transform: rotate(0deg);
 			}
 
@@ -40,8 +40,8 @@
 			width: 60px;
 		}
 
-		.TableRecords_OddLine:first-child span,
-		.TableRecords_EvenLine:first-child span {
+		.TableRecords_OddLine:first-child span.fa,
+		.TableRecords_EvenLine:first-child span.fa {
 			transform: rotate(-90deg);
 			transition: transform 0.5s;
 		}
@@ -86,6 +86,7 @@
 			[ui='data-expandable-table-content'] {
 				border-bottom: 1px solid $light-grey;
 				border-top: 1px solid $light-grey;
+				margin-top: -4px;
 			}
 		}
 
@@ -172,7 +173,7 @@
 	&_Wrapper {
 		&.NoResponsive {
 			.TableRecords.ExpandableRows td .ExpandLink {
-				span {
+				span.fa {
 					@include arrow-down-simple;
 				}
 			}
@@ -213,8 +214,8 @@
 			}
 
 			.ActiveRow {
-				.TableRecords_OddLine:first-child span,
-				.TableRecords_EvenLine:first-child span {
+				.TableRecords_OddLine:first-child span.fa,
+				.TableRecords_EvenLine:first-child span.fa {
 					transform: rotate(0deg);
 				}
 			}
@@ -242,7 +243,7 @@
 
 				&_OddLine,
 				&_EvenLine {
-					&:first-child span {
+					&:first-child span.fa {
 						transform: rotate(-90deg);
 					}
 				}
