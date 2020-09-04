@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950012 || Generated: Fri Sep 04 2020 17:07:13 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950013 || Generated: Fri Sep 04 2020 17:24:08 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10029,8 +10029,8 @@ div.LineInfo {
       display: none; }
     .TableRecords.ExpandableRows .Link.ChangeDown {
       display: inline-block; }
-    .TableRecords.ExpandableRows .ActiveRow .TableRecords_OddLine:first-child span,
-    .TableRecords.ExpandableRows .ActiveRow .TableRecords_EvenLine:first-child span {
+    .TableRecords.ExpandableRows .ActiveRow .TableRecords_OddLine:first-child span.fa,
+    .TableRecords.ExpandableRows .ActiveRow .TableRecords_EvenLine:first-child span.fa {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg); }
     .TableRecords.ExpandableRows .ActiveRow .Link.ChangeUp {
@@ -10039,8 +10039,8 @@ div.LineInfo {
       display: none; }
     .TableRecords.ExpandableRows .TableRecords_OddLine:first-child {
       width: 60px; }
-    .TableRecords.ExpandableRows .TableRecords_OddLine:first-child span,
-    .TableRecords.ExpandableRows .TableRecords_EvenLine:first-child span {
+    .TableRecords.ExpandableRows .TableRecords_OddLine:first-child span.fa,
+    .TableRecords.ExpandableRows .TableRecords_EvenLine:first-child span.fa {
       -webkit-transform: rotate(-90deg);
               transform: rotate(-90deg);
       -webkit-transition: -webkit-transform 0.5s;
@@ -10069,7 +10069,8 @@ div.LineInfo {
       padding: 0 10px; }
     .TableRecords.CustomTable .TableRecords_ContentExpandable [ui='data-expandable-table-content'] {
       border-bottom: 1px solid #d6d6d6;
-      border-top: 1px solid #d6d6d6; }
+      border-top: 1px solid #d6d6d6;
+      margin-top: -4px; }
     .TableRecords.CustomTable .CustomTableIcon {
       -webkit-box-align: center;
               align-items: center;
@@ -10122,13 +10123,13 @@ div.LineInfo {
     padding: 10px;
     text-align: left;
     vertical-align: top; }
-  .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span {
+  .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span.fa {
     border-bottom: 5px solid #00ac94;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     height: 0;
     width: 0; }
-    .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span:after, .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span:before {
+    .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span.fa:after, .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span.fa:before {
       content: ''; }
   .TableRecords_Wrapper.NoResponsive th.TableRecords_Header {
     border-top: 1px solid #d6d6d6; }
@@ -10145,8 +10146,8 @@ div.LineInfo {
       border-left: 1px solid #00bfa5; }
     .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:last-child {
       border-right: 1px solid #00bfa5; }
-  .TableRecords_Wrapper.NoResponsive .ActiveRow .TableRecords_OddLine:first-child span,
-  .TableRecords_Wrapper.NoResponsive .ActiveRow .TableRecords_EvenLine:first-child span {
+  .TableRecords_Wrapper.NoResponsive .ActiveRow .TableRecords_OddLine:first-child span.fa,
+  .TableRecords_Wrapper.NoResponsive .ActiveRow .TableRecords_EvenLine:first-child span.fa {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
   .TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr:hover {
@@ -10161,7 +10162,7 @@ div.LineInfo {
     .TableRecords_Wrapper.NoResponsive .TableRecords_Header a:link,
     .TableRecords_Wrapper.NoResponsive .TableRecords_Header a:visited {
       color: #5c5c5c; }
-  .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child span, .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child span {
+  .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child span.fa, .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child span.fa {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
   .TableRecords_Wrapper.NoResponsive .TableRecords_Header:first-child, .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child, .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child {
