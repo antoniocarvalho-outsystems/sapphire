@@ -26,6 +26,10 @@
 			vertical-align: middle;
 		}
 
+		.TableRecords_Header {
+			padding: 0 10px;
+		}
+
 		.CustomTableIcon {
 			@include flex-center-total;
 
@@ -121,7 +125,7 @@
 	&_Header {
 		background-color: transparent;
 		border-bottom: none;
-		color: $regular-grey;
+		color: $mid-light-grey;
 		font-family: $font-family-latin-bold;
 		font-size: 0.857em;
 		min-height: 48px;

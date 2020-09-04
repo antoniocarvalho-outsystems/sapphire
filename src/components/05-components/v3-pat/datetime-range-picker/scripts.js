@@ -83,6 +83,10 @@
 			this.config.formatLabel = this.config.hasYearWhenText ? 'D MMM YYYY' : 'D MMM';
 		}
 
+		if (!config.singleDatePicker) {
+			this.$widget.addClass('rangeDates');
+		}
+
 		this.config.formatLabel = this.config.hasWeekDayNameWhenText
 			? 'ddd[, ]' + this.config.formatLabel
 			: this.config.formatLabel;
