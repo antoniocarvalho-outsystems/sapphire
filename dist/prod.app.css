@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950010 || Generated: Thu Sep 03 2020 18:39:49 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950011 || Generated: Fri Sep 04 2020 16:02:19 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10034,6 +10034,8 @@ div.LineInfo {
       border-top: 1px solid #d6d6d6;
       padding: 16px 8px;
       vertical-align: middle; }
+    .TableRecords.CustomTable .TableRecords_Header {
+      padding: 0 10px; }
     .TableRecords.CustomTable .CustomTableIcon {
       -webkit-box-align: center;
               align-items: center;
@@ -10093,7 +10095,7 @@ div.LineInfo {
   .TableRecords_Header {
     background-color: transparent;
     border-bottom: none;
-    color: #777777;
+    color: #adadad;
     font-family: "LatoBold";
     font-size: 0.857em;
     min-height: 48px;
@@ -15492,6 +15494,9 @@ body.PanelOpened .daterangepicker {
 
 .DateTimeRangePicker-displayed input[type] {
   width: 100%; }
+
+.DateTimeRangePicker.rangeDates .DateTimeRangePicker-displayed input[type] {
+  width: 210px; }
 
 .Demographic-item {
   display: block;
