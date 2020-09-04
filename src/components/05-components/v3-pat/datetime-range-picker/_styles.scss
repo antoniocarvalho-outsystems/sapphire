@@ -761,6 +761,15 @@ body.PanelOpened .daterangepicker {
 
 .DateTimeRangePicker.rangeDates {
 	.DateTimeRangePicker-displayed input[type] {
-		width: 210px;
+		min-width: 210px;
+		width: 100%;
+	}
+}
+
+.InputFilter .DateTimeRangePicker {
+	width: 100%;
+
+	.DateTimeRangePicker-displayed:before {
+		right: $sapphire-sizes--medium;
 	}
 }
