@@ -429,6 +429,17 @@
 	}
 
 	.calendar-table {
+		thead {
+			tr:last-of-type {
+				color: $regular-grey;
+				font-family: $font-family-latin-bold;
+
+				th {
+					font-size: 1em;
+				}
+			}
+		}
+
 		th.next,
 		th.prev {
 			&:hover {
@@ -500,8 +511,7 @@
 			}
 		}
 
-		td.disabled,
-		option.disabled {
+		td.disabled {
 			color: $mid-light-grey;
 			cursor: not-allowed;
 			text-decoration: line-through;
