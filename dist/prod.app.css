@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950019 || Generated: Mon Sep 07 2020 18:06:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950020 || Generated: Mon Sep 07 2020 18:22:43 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -6875,11 +6875,11 @@ a.Button.IsDefault,
   .PanelOpened a.Button.Is_Default.Small,
   .PanelOpened .DropZoneContainer .row .Is_Default.Small.Button,
   .DropZoneContainer .row .PanelOpened .Is_Default.Small.Button {
-    font-size: 0.857em;
+    font-size: 13px;
     height: 30px;
-    line-height: 30px;
+    line-height: 16px;
     min-width: 76px;
-    padding: 0 12px; }
+    padding: 6px 12px; }
   .desktop input.Button.Is_Default.Big,
   .desktop input.Button.Big,
   .desktop input.Button.ButtonDefault.Big,
@@ -15176,9 +15176,10 @@ div.CircledArrow {
       border-radius: 100px;
       color: #fff;
       cursor: pointer;
-      font-size: 0.857em;
+      font-family: "LatoBold";
+      font-size: 0.929em;
       height: 30px;
-      line-height: 30px;
+      line-height: 0.929em;
       min-width: 76px;
       padding: 0 12px; }
       .daterangepicker .drp-buttons .btn.applyBtn:hover {
@@ -15196,6 +15197,7 @@ div.CircledArrow {
   .daterangepicker .calendar-table thead tr:last-of-type {
     color: #777777;
     font-family: "LatoBold";
+    font-size: 0.857em;
     height: 32px; }
     .daterangepicker .calendar-table thead tr:last-of-type th {
       font-size: 1em; }
@@ -15260,7 +15262,7 @@ div.CircledArrow {
     border: 1px solid transparent;
     border-radius: 100px;
     cursor: pointer;
-    font-size: 1.143em;
+    font-size: 1em;
     height: 40px;
     text-align: center;
     vertical-align: middle;
