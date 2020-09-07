@@ -184,11 +184,13 @@
 
 			.CalendarDaySlot {
 				display: flex;
+				gap: $sapphire-sizes--xsmall;
 
 				[ui='data-calendar-day-icons'] {
 					display: inline-flex;
 					flex: 1;
 					gap: $sapphire-sizes--small;
+					justify-content: flex-end;
 				}
 			}
 

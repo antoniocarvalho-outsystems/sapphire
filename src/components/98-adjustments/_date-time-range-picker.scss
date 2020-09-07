@@ -1,0 +1,77 @@
+body.PanelOpened .daterangepicker {
+	z-index: 102;
+}
+
+.ResizeParentIframe .daterangepicker {
+	width: 220px;
+}
+
+/*Iframe exception*/
+@media (min-width: 564px) {
+	iframe .daterangepicker.single .ranges,
+	.daterangepicker.single .drp-calendar {
+		float: none;
+	}
+}
+
+.isTouch .DateTimeRangePicker-input input[type='text'] {
+	width: 230px;
+}
+
+.isTouch .DateTimeRangePicker.onlyDate .DateTimeRangePicker-input input[type='text'] {
+	width: 165px;
+}
+
+.InputFilter .DateTimeRangePicker {
+	width: 100%;
+
+	.DateTimeRangePicker-displayed:before {
+		right: $sapphire-sizes--medium;
+	}
+}
+
+.LayoutPopup .daterangepicker .calendar-table td,
+.ResizeParentIframe .daterangepicker .calendar-table td {
+	font-size: 12px;
+	line-height: 14px;
+	min-width: 25px;
+	padding: 3px;
+}
+
+.LayoutPopup .daterangepicker select.hourselect,
+.LayoutPopup .daterangepicker select.minuteselect,
+.LayoutPopup .daterangepicker select.secondselect,
+.LayoutPopup .daterangepicker select.ampmselect,
+.ResizeParentIframe .daterangepicker select.hourselect,
+.ResizeParentIframe .daterangepicker select.minuteselect,
+.ResizeParentIframe .daterangepicker select.secondselect,
+.ResizeParentIframe .daterangepicker select.ampmselect {
+	border: 1px solid #eee;
+	font-size: $font-size-tiny;
+	height: 24px;
+	margin: 0 auto;
+	outline: 0;
+	padding: 0 0 0 10px;
+	width: 45px;
+}
+
+.LayoutPopup .daterangepicker select.yearselect,
+.LayoutPopup .daterangepicker select.monthselect,
+.ResizeParentIframe .daterangepicker select.yearselect,
+.ResizeParentIframe .daterangepicker select.monthselect {
+	height: 24px;
+}
+
+.LayoutPopup .daterangepicker .calendar-table th,
+.ResizeParentIframe .daterangepicker .calendar-table th {
+	font-size: 12px;
+	min-width: 25px;
+	padding: 3px;
+}
+
+.LayoutPopup .daterangepicker .drp-calendar.left,
+.LayoutPopup .daterangepicker.show-calendar .drp-buttons,
+.ResizeParentIframe .daterangepicker .drp-calendar.left,
+.ResizeParentIframe .daterangepicker.show-calendar .drp-buttons {
+	padding: 4px;
+}
