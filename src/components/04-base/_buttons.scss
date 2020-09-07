@@ -169,11 +169,11 @@ a.Button.IsDefault,
 	}
 
 	&.Small {
-		font-size: $font-size-small;
+		font-size: 13px;
 		height: 30px;
-		line-height: 30px;
+		line-height: 16px;
 		min-width: 76px;
-		padding: 0 12px;
+		padding: 6px 12px;
 	}
 
 	&.Big {
