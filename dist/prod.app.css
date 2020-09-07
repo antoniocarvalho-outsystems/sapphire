@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950016 || Generated: Mon Sep 07 2020 17:12:42 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950017 || Generated: Mon Sep 07 2020 17:23:12 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15195,6 +15195,11 @@ div.CircledArrow {
           background-color: #ebebeb;
           border: 1px solid #d6d6d6;
           color: #333333; }
+  .daterangepicker .calendar-table thead tr:last-of-type {
+    color: #777777;
+    font-family: "LatoBold"; }
+    .daterangepicker .calendar-table thead tr:last-of-type th {
+      font-size: 1em; }
   .daterangepicker .calendar-table th.next:hover,
   .daterangepicker .calendar-table th.prev:hover {
     background-color: #fff !important;
@@ -15242,8 +15247,7 @@ div.CircledArrow {
     color: #fff; }
     .daterangepicker .calendar-table td.active:hover {
       background-color: #56d3c2; }
-  .daterangepicker .calendar-table td.disabled,
-  .daterangepicker .calendar-table option.disabled {
+  .daterangepicker .calendar-table td.disabled {
     color: #adadad;
     cursor: not-allowed;
     text-decoration: line-through; }
