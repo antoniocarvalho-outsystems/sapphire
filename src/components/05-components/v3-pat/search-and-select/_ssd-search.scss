@@ -157,6 +157,7 @@ $searchsd-size-base: 48px;
 		.SearchSD_search {
 			.SearchSD__FavoriteCounter,
 			.SearchSD__FavoriteActions {
+				background-color: $regular-white;
 				border-bottom: 1px solid $light-grey;
 				border-top: 1px solid $light-grey;
 			}
@@ -226,6 +227,7 @@ $searchsd-size-base: 48px;
 		width: 100%;
 
 		.SearchSD_search_favoriteLink {
+			background-color: $regular-white;
 			border: 1px solid $light-grey;
 			border-bottom-left-radius: $searchsd-border-radius;
 			border-top-left-radius: $searchsd-border-radius;
@@ -291,7 +293,6 @@ $searchsd-size-base: 48px;
 						&::placeholder {
 							color: $mid-light-grey;
 							font-family: $font-family-latin-regular;
-							// font-size: 1em;
 						}
 
 						&:hover,
