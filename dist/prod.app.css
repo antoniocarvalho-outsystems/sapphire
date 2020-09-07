@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950017 || Generated: Mon Sep 07 2020 17:23:12 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950018 || Generated: Mon Sep 07 2020 17:47:27 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15063,16 +15063,16 @@ div.CircledArrow {
   display: inline-block;
   position: relative;
   vertical-align: middle; }
-  .AR .DateTimeRangePicker-input:before,
-  .FA .DateTimeRangePicker-input:before {
+  .AR .DateTimeRangePicker-input:before, .AR .DateTimeRangePicker-displayed:before,
+  .FA .DateTimeRangePicker-input:before,
+  .FA .DateTimeRangePicker-displayed:before {
     left: 9px;
     right: auto; }
-  .AR .DateTimeRangePicker-input input[type='text'],
-  .FA .DateTimeRangePicker-input input[type='text'] {
-    padding-left: 25px; }
-  .AR .DateTimeRangePicker-displayed input[type='text'],
+  .AR .DateTimeRangePicker-input input[type='text'], .AR .DateTimeRangePicker-displayed input[type='text'],
+  .FA .DateTimeRangePicker-input input[type='text'],
   .FA .DateTimeRangePicker-displayed input[type='text'] {
-    padding-left: 25px; }
+    padding-left: 25px;
+    padding-right: 16px; }
   .AR .DateTimeRangePicker-clear,
   .FA .DateTimeRangePicker-clear {
     left: -20px;
@@ -15087,7 +15087,7 @@ div.CircledArrow {
   left: 20px;
   margin-top: 7px;
   max-width: none;
-  padding: 0;
+  padding: 16px;
   position: absolute;
   top: 100px;
   width: auto;
@@ -15145,8 +15145,6 @@ div.CircledArrow {
     display: inline-block; }
   .daterangepicker.show-calendar .drp-buttons {
     display: block; }
-  .daterangepicker.show-calendar .ranges {
-    margin-top: 8px; }
   .daterangepicker.auto-apply .drp-buttons {
     display: none; }
   .daterangepicker.rtl .calendar-table th.next span {
@@ -15163,13 +15161,13 @@ div.CircledArrow {
     display: none; }
     .daterangepicker .drp-calendar.single .calendar-table {
       border: none; }
-    .daterangepicker .drp-calendar.left, .daterangepicker .drp-calendar.right {
-      padding: 8px; }
+    .daterangepicker .drp-calendar.right {
+      padding-left: 32px; }
   .daterangepicker .drp-buttons {
     clear: both;
     display: none;
     line-height: 12px;
-    padding: 8px;
+    margin-top: 8px;
     text-align: right;
     vertical-align: middle; }
     .daterangepicker .drp-buttons .btn {
@@ -15197,7 +15195,8 @@ div.CircledArrow {
           color: #333333; }
   .daterangepicker .calendar-table thead tr:last-of-type {
     color: #777777;
-    font-family: "LatoBold"; }
+    font-family: "LatoBold";
+    height: 32px; }
     .daterangepicker .calendar-table thead tr:last-of-type th {
       font-size: 1em; }
   .daterangepicker .calendar-table th.next:hover,
@@ -15228,9 +15227,6 @@ div.CircledArrow {
     .daterangepicker .calendar-table td.available:hover,
     .daterangepicker .calendar-table th.available:hover {
       background-color: #ebebeb; }
-  .daterangepicker .calendar-table td.off {
-    color: #777777;
-    font-family: "LatoRegular"; }
   .daterangepicker .calendar-table td.in-range {
     background-color: #f0faf9;
     border-radius: unset;
@@ -15246,7 +15242,15 @@ div.CircledArrow {
     border-radius: 100px;
     color: #fff; }
     .daterangepicker .calendar-table td.active:hover {
-      background-color: #56d3c2; }
+      background-color: #56d3c2;
+      box-shadow: none; }
+  .daterangepicker .calendar-table td.off {
+    background-color: transparent;
+    color: #777777;
+    font-family: "LatoRegular"; }
+    .daterangepicker .calendar-table td.off:hover {
+      background-color: #ebebeb;
+      border-radius: 100px; }
   .daterangepicker .calendar-table td.disabled {
     color: #adadad;
     cursor: not-allowed;
@@ -15257,14 +15261,14 @@ div.CircledArrow {
     border-radius: 100px;
     cursor: pointer;
     font-size: 1.143em;
-    height: 48px;
+    height: 40px;
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
-    width: 48px; }
+    width: 40px; }
   .daterangepicker .calendar-time {
     line-height: 30px;
-    margin: 4px auto 0 auto;
+    margin: 8px auto 0 auto;
     position: relative;
     text-align: center; }
     .daterangepicker .calendar-time select.monthselect, .daterangepicker .calendar-time select.yearselect {
