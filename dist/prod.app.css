@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950018 || Generated: Mon Sep 07 2020 17:47:27 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950019 || Generated: Mon Sep 07 2020 18:06:01 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22455,6 +22455,7 @@ div.List-Star {
     display: none !important; }
   .SearchSD.showFavorite .SearchSD_search .SearchSD__FavoriteCounter,
   .SearchSD.showFavorite .SearchSD_search .SearchSD__FavoriteActions {
+    background-color: #fff;
     border-bottom: 1px solid #d6d6d6;
     border-top: 1px solid #d6d6d6; }
   .SearchSD.showFavorite .SearchSD_search .SearchSD_search_favoriteLink {
@@ -22492,6 +22493,7 @@ div.List-Star {
     position: relative;
     width: 100%; }
     .SearchSD .SearchSD_search .SearchSD_search_favoriteLink {
+      background-color: #fff;
       border: 1px solid #d6d6d6;
       border-bottom-left-radius: 24px;
       border-top-left-radius: 24px;
