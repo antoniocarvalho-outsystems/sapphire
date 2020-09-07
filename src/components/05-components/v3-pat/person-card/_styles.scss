@@ -660,6 +660,7 @@
 }
 
 .ListPersonCard {
+	> div:not(:last-of-type),
 	> span:not(:last-of-type) {
 		.PersonCard {
 			.PersonCard_header {
