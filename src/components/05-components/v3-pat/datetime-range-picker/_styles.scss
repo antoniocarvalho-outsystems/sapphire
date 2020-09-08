@@ -326,11 +326,26 @@ $date-time-size-base: 40px;
 		.drp-selected {
 			display: none;
 		}
+
+		.calendar-table {
+			td.off {
+				height: $date-time-size-base;
+				line-height: $date-time-size-base;
+				visibility: visible;
+			}
+
+			td.start-date {
+				&::before {
+					background-color: $regular-white;
+				}
+			}
+		}
 	}
 
 	&.show-calendar {
 		.drp-calendar {
 			display: inline-block;
+			vertical-align: top;
 		}
 
 		.drp-buttons {
@@ -477,8 +492,11 @@ $date-time-size-base: 40px;
 
 		td.in-range {
 			background-color: $light-blue-2;
-			border-radius: unset;
 			color: $dark-grey;
+
+			&::before {
+				background-color: $light-blue-2;
+			}
 		}
 
 		td.today {
@@ -488,6 +506,22 @@ $date-time-size-base: 40px;
 
 			&:hover {
 				background-color: $sapphire-light;
+			}
+		}
+
+		td.start-date {
+			&::before {
+				background-color: $light-blue-2;
+				border-bottom-left-radius: 100px;
+				border-top-left-radius: 100px;
+			}
+		}
+
+		td.end-date {
+			&::before {
+				background-color: $light-blue-2;
+				border-bottom-right-radius: 100px;
+				border-top-right-radius: 100px;
 			}
 		}
 
@@ -506,6 +540,9 @@ $date-time-size-base: 40px;
 			background-color: transparent;
 			color: $regular-grey;
 			font-family: $font-family-latin-regular;
+			height: 0;
+			line-height: 0;
+			visibility: hidden;
 
 			&:hover {
 				background-color: $sapphire-light;
@@ -530,6 +567,16 @@ $date-time-size-base: 40px;
 			vertical-align: middle;
 			white-space: nowrap;
 			width: $date-time-size-base;
+
+			&::before {
+				content: '';
+				display: block;
+				height: $date-time-size-base;
+				margin-top: -10px;
+				position: absolute;
+				width: $date-time-size-base;
+				z-index: -1;
+			}
 		}
 	}
 
