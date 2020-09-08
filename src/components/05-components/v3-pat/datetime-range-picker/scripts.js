@@ -196,6 +196,15 @@
 				}
 			}
 			_this.handleViewportPosition();
+
+			if (!_this.config.singleDatePicker) {
+				$('.drp-selected').each(function() {
+					let text = $(this).text();
+					text = text.replace(/-/gi, '·');
+
+					$(this).text(text);
+				});
+			}
 		});
 		this.$input.on('show.daterangepicker', function(event, picker) {
 			if (_this.config.timePicker && _this.config.hasClearHour) {
@@ -361,7 +370,7 @@
 						let startDate = this.picker.startDate.format(this.config.formatInput);
 						let endDate = this.picker.endDate.format(this.config.formatInput);
 
-						this.$displayed.val(`${startDate} | ${endDate}`);
+						this.$displayed.val(`${startDate}  ·  ${endDate}`);
 
 						if (this.config.timePicker) {
 							startDate = this.picker.startDate.format('DD-MM-YYYY HH:mm:ss');
@@ -371,7 +380,7 @@
 							endDate = this.picker.endDate.format('DD-MM-YYYY');
 						}
 
-						this.$input.val(`${startDate} | ${endDate}`);
+						this.$input.val(`${startDate}  ·  ${endDate}`);
 					}
 				} else {
 					if (this.config.singleDatePicker) {
@@ -380,7 +389,7 @@
 						let startDate = this.picker.startDate.format(this.config.formatInput);
 						let endDate = this.picker.endDate.format(this.config.formatInput);
 
-						this.$input.val(`${startDate} | ${endDate}`);
+						this.$input.val(`${startDate}  ·  ${endDate}`);
 					}
 				}
 			}
