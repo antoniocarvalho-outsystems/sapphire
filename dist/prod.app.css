@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950021 || Generated: Tue Sep 08 2020 12:33:12 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950022 || Generated: Tue Sep 08 2020 17:18:17 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15141,8 +15141,15 @@ div.CircledArrow {
       top: initial; }
   .daterangepicker.single .drp-selected {
     display: none; }
+  .daterangepicker.single .calendar-table td.off {
+    height: 40px;
+    line-height: 40px;
+    visibility: visible; }
+  .daterangepicker.single .calendar-table td.start-date::before {
+    background-color: #fff; }
   .daterangepicker.show-calendar .drp-calendar {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: top; }
   .daterangepicker.show-calendar .drp-buttons {
     display: block; }
   .daterangepicker.auto-apply .drp-buttons {
@@ -15231,14 +15238,23 @@ div.CircledArrow {
       background-color: #ebebeb; }
   .daterangepicker .calendar-table td.in-range {
     background-color: #f0faf9;
-    border-radius: unset;
     color: #333333; }
+    .daterangepicker .calendar-table td.in-range::before {
+      background-color: #f0faf9; }
   .daterangepicker .calendar-table td.today {
     background-color: #fff;
     box-shadow: inset 0 0 0 1px #00bfa5;
     color: #333333; }
     .daterangepicker .calendar-table td.today:hover {
       background-color: #ebebeb; }
+  .daterangepicker .calendar-table td.start-date::before {
+    background-color: #f0faf9;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px; }
+  .daterangepicker .calendar-table td.end-date::before {
+    background-color: #f0faf9;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px; }
   .daterangepicker .calendar-table td.active {
     background-color: #00bfa5;
     border-radius: 100px;
@@ -15249,7 +15265,10 @@ div.CircledArrow {
   .daterangepicker .calendar-table td.off {
     background-color: transparent;
     color: #777777;
-    font-family: "LatoRegular"; }
+    font-family: "LatoRegular";
+    height: 0;
+    line-height: 0;
+    visibility: hidden; }
     .daterangepicker .calendar-table td.off:hover {
       background-color: #ebebeb;
       border-radius: 100px; }
@@ -15268,6 +15287,15 @@ div.CircledArrow {
     vertical-align: middle;
     white-space: nowrap;
     width: 40px; }
+    .daterangepicker .calendar-table th::before,
+    .daterangepicker .calendar-table td::before {
+      content: '';
+      display: block;
+      height: 40px;
+      margin-top: -10px;
+      position: absolute;
+      width: 40px;
+      z-index: -1; }
   .daterangepicker .calendar-time {
     line-height: 30px;
     margin: 8px auto 0 auto;
@@ -20649,6 +20677,7 @@ body.PanelById.PanelOpened {
 .ListRecords .SearchRow.searchNotFound + .SearchRow.searchFound .PersonCard:last-of-type .PersonCard_header {
   border-bottom: 1px solid #d6d6d6; }
 
+.ListPersonCard .PersonCard .PersonCard_header,
 .ListPersonCard > div:not(:last-of-type) .PersonCard .PersonCard_header,
 .ListPersonCard > span:not(:last-of-type) .PersonCard .PersonCard_header {
   margin-bottom: 8px; }
