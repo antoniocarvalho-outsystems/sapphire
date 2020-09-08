@@ -59,11 +59,14 @@
 	.Counter {
 		background-color: $sapphire-light;
 		border-top: none;
-		font-family: $font-family-latin-bold;
-		font-size: $font-size-heading3;
-		line-height: 16px;
-		padding: $sapphire-sizes--medium;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+		text-align: start;
 		width: 100%;
+
+		> div:first-child {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-heading3;
+		}
 
 		&.Vacant {
 			background-color: $light-green;
