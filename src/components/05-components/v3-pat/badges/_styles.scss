@@ -344,3 +344,28 @@ $prescriptionRadius: 18px;
 		}
 	}
 }
+
+.BadgeFilter {
+	@include flex-center-total(inline-flex);
+
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-default;
+	cursor: pointer;
+	height: 36px;
+	padding: 0 $sapphire-sizes--xsmall;
+
+	&:hover {
+		background-color: $regular-eta;
+		border-color: $regular-alpha;
+	}
+
+	.BadgeClassification {
+		background-color: transparent !important;
+		font-size: $font-size-normal;
+
+		> span {
+			color: $dark-grey !important;
+		}
+	}
+}
