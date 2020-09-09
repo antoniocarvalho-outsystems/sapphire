@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950024 || Generated: Wed Sep 09 2020 17:28:27 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950025 || Generated: Wed Sep 09 2020 18:10:07 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13285,6 +13285,28 @@ div.Feedback_Message_Info span.lasa-term {
   .AR .BadgeCustom__Notification {
     left: 0; }
 
+.BadgeFilter {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 36px;
+  padding: 0 4px; }
+  .BadgeFilter:hover {
+    background-color: #f2fffd;
+    border-color: #00bfa5; }
+  .BadgeFilter .BadgeClassification {
+    background-color: transparent !important;
+    font-size: 1em; }
+    .BadgeFilter .BadgeClassification > span {
+      color: #333333 !important; }
+
 .BallonContent_wrapper {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -21925,11 +21947,6 @@ div.List-Star {
       border: 1px solid #00bfa5; }
       .ButtonRadioInp_radioText:hover + .ButtonRadioInp_radio input[type='radio']::before {
         border: 1px solid #00bfa5; }
-    .ButtonRadioInp_radioText .BadgeClassification {
-      background-color: transparent !important;
-      height: 34px; }
-      .ButtonRadioInp_radioText .BadgeClassification > span {
-        color: #333333 !important; }
 
 .AR .ButtonRadioInp_radio input[type='radio'],
 .FA .ButtonRadioInp_radio input[type='radio'] {
