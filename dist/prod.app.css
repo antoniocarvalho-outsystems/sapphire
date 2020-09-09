@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950023 || Generated: Tue Sep 08 2020 18:20:51 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950024 || Generated: Wed Sep 09 2020 17:28:27 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7689,7 +7689,6 @@ a.Button.IsDefault,
   .Card_Surgeries_Container .Card_Surgeries_Description {
     display: table-cell;
     padding: 16px;
-    padding-left: 0;
     vertical-align: middle;
     width: 80%; }
     .Card_Surgeries_Container .Card_Surgeries_Description > div {
@@ -7714,11 +7713,15 @@ a.Button.IsDefault,
     height: 100%;
     min-width: 175px;
     padding: 16px;
+    padding-right: 0;
     vertical-align: middle;
     white-space: nowrap; }
     .Card_Surgeries_Container .Image_Surgeries_Detail.SmallCardSurgerie {
       min-width: 120px;
       width: 120px; }
+    .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_White .Icon_Surgeries_Card {
+      background-color: #fff;
+      border-color: #d6d6d6; }
   .Card_Surgeries_Container .Actions_Surgeries_Details {
     -webkit-box-align: center;
             align-items: center;
@@ -7732,7 +7735,8 @@ a.Button.IsDefault,
     display: inline-flex;
     -webkit-box-pack: center;
             justify-content: center;
-    background-color: #ebebeb;
+    background-color: #f3f3f3;
+    border: 1px solid transparent;
     border-radius: 8px;
     height: 48px;
     margin-right: 16px;
@@ -7759,6 +7763,11 @@ a.Button.IsDefault,
     margin-left: 16px;
     margin-right: auto; }
 
+.AR .Image_Surgeries_Detail,
+.FA .Image_Surgeries_Detail {
+  padding-left: 0;
+  padding-right: 16px; }
+
 .AR .Icon_Surgeries_Card,
 .FA .Icon_Surgeries_Card {
   margin-left: 16px;
@@ -7776,6 +7785,9 @@ a.Button.IsDefault,
 .tablet .Card_Surgeries_Description {
   display: table-cell;
   width: 100%; }
+
+.tablet .Image_Surgeries_Detail {
+  padding: 16px; }
 
 .phone .Card_Surgeries_Actions {
   display: block; }
@@ -7809,7 +7821,7 @@ a.Button.IsDefault,
   display: table-cell; }
 
 .CircledPatient {
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   border-radius: 50%;
   color: #5c5c5c;
   font-size: 10px;
@@ -10554,9 +10566,9 @@ div.LineInfo {
   overflow: hidden;
   position: relative;
   width: 100%; }
-  .WardBox.SelectedWardBx {
+  .SelectedWardBx .WardBox, .WardBox.SelectedWardBx {
     border-color: transparent; }
-    .WardBox.SelectedWardBx::before {
+    .SelectedWardBx .WardBox::before, .WardBox.SelectedWardBx::before {
       border: 2px solid #00bfa5;
       border-radius: 8px;
       box-sizing: border-box;
@@ -21913,6 +21925,11 @@ div.List-Star {
       border: 1px solid #00bfa5; }
       .ButtonRadioInp_radioText:hover + .ButtonRadioInp_radio input[type='radio']::before {
         border: 1px solid #00bfa5; }
+    .ButtonRadioInp_radioText .BadgeClassification {
+      background-color: transparent !important;
+      height: 34px; }
+      .ButtonRadioInp_radioText .BadgeClassification > span {
+        color: #333333 !important; }
 
 .AR .ButtonRadioInp_radio input[type='radio'],
 .FA .ButtonRadioInp_radio input[type='radio'] {
