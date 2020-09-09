@@ -10,7 +10,6 @@
 	.Card_Surgeries_Description {
 		display: table-cell;
 		padding: $sapphire-sizes--medium;
-		padding-left: 0;
 		vertical-align: middle;
 		width: 80%;
 
@@ -45,12 +44,20 @@
 		height: 100%;
 		min-width: 175px;
 		padding: $sapphire-sizes--medium;
+		padding-right: 0;
 		vertical-align: middle;
 		white-space: nowrap;
 
 		&.SmallCardSurgerie {
 			min-width: 120px;
 			width: 120px;
+		}
+
+		&.Card_Surgeries_White {
+			.Icon_Surgeries_Card {
+				background-color: $regular-white;
+				border-color: $light-grey;
+			}
 		}
 	}
 
@@ -63,7 +70,8 @@
 	.Icon_Surgeries_Card {
 		@include flex-center-total(inline-flex);
 
-		background-color: $sapphire-light;
+		background-color: $body-color;
+		border: 1px solid transparent;
 		border-radius: $border-radius-medium;
 		height: 48px;
 		margin-right: $sapphire-sizes--medium;
@@ -103,6 +111,11 @@
 		}
 	}
 
+	.Image_Surgeries_Detail {
+		padding-left: 0;
+		padding-right: $sapphire-sizes--medium;
+	}
+
 	.Icon_Surgeries_Card {
 		margin-left: $sapphire-sizes--medium;
 		margin-right: auto;
@@ -123,6 +136,10 @@
 	.Card_Surgeries_Description {
 		display: table-cell;
 		width: 100%;
+	}
+
+	.Image_Surgeries_Detail {
+		padding: $sapphire-sizes--medium;
 	}
 }
 
