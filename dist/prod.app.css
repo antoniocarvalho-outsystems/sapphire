@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950025 || Generated: Wed Sep 09 2020 18:10:07 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950026 || Generated: Thu Sep 10 2020 12:08:43 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13298,6 +13298,11 @@ div.Feedback_Message_Info span.lasa-term {
   cursor: pointer;
   height: 36px;
   padding: 0 4px; }
+  .BadgeFilter.Selected {
+    border-color: #00bfa5;
+    border-width: 2px; }
+  .HasBadgeSelected .BadgeFilter:not(.Selected) {
+    opacity: 0.7; }
   .BadgeFilter:hover {
     background-color: #f2fffd;
     border-color: #00bfa5; }
