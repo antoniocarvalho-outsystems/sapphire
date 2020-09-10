@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950026 || Generated: Thu Sep 10 2020 12:08:43 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950027 || Generated: Thu Sep 10 2020 17:20:16 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11994,6 +11994,7 @@ html body {
       z-index: -1; }
 
 .ButtonGroupFilters .ButtonGroup {
+  background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 100px;
   display: -webkit-inline-box;
@@ -14730,18 +14731,25 @@ div.CircledArrow {
     .CounterBlock__tooltip.NoInfo {
       display: none; }
 
-.FlagWrapper_PlaceHolder {
-  display: inline-block;
-  margin-right: 5px;
-  width: auto; }
-  .FlagWrapper_PlaceHolder:empty {
-    display: none; }
-
-.FlagWrapper .FlagContainer {
-  display: inline-block;
-  position: relative;
-  vertical-align: bottom;
-  width: 20px; }
+.FlagWrapper {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  height: 20px; }
+  .FlagWrapper_PlaceHolder {
+    display: inline-block;
+    margin-right: 5px;
+    width: auto; }
+    .FlagWrapper_PlaceHolder:empty {
+      display: none; }
+  .FlagWrapper .FlagContainer {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    width: 20px; }
+    .FlagWrapper .FlagContainer .flag {
+      position: unset; }
 
 .PatientHeader .FlagContainer {
   height: 15px; }
@@ -15624,7 +15632,6 @@ div.CircledArrow {
     background-color: #f3f3f3;
     border-radius: 4px;
     display: inline-block;
-    margin: 10px;
     min-height: 70px;
     overflow: hidden;
     padding: 10px 40px 10px 10px;
@@ -15658,7 +15665,10 @@ div.CircledArrow {
   min-height: 100px;
   width: 100%; }
   .DragDrop-droppable.isOpen .DragDrop-droppable-items {
-    display: inline; }
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; }
   .DragDrop-droppable-header {
     padding: 10px; }
   .DragDrop-droppable-intro {
@@ -19795,6 +19805,31 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   color: #777777;
   cursor: default; }
 
+.PageHead {
+  display: -webkit-box;
+  display: flex;
+  padding-bottom: 16px;
+  width: 100%; }
+  .PageHead .PageHeadLeft {
+    -webkit-box-flex: 1;
+            flex: 1; }
+    .PageHead .PageHeadLeft .PageHeadTitle {
+      font-family: "LatoBold";
+      font-size: 1.714em; }
+  .PageHead .PageHeadActions {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-flex: 1;
+            flex: 1;
+    -webkit-box-pack: end;
+            justify-content: flex-end; }
+    .PageHead .PageHeadActions .Button {
+      margin: 0; }
+
+.AR .PageHeadLeft,
+.FA .PageHeadLeft {
+  text-align: right; }
+
 .Panel.ConfirmWB {
   display: none;
   position: absolute; }
@@ -23590,6 +23625,25 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       min-width: 36px;
       padding: 0;
       width: 36px; }
+  .SegmentedControl.Filters {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 100px; }
+    .SegmentedControl.Filters .SegmentedControlItem label {
+      border: none;
+      border-radius: 100px; }
+      .SegmentedControl.Filters .SegmentedControlItem label:first-child, .SegmentedControl.Filters .SegmentedControlItem label:last-child {
+        border: none;
+        border-radius: 100px; }
+      .SegmentedControl.Filters .SegmentedControlItem label:hover, .SegmentedControl.Filters .SegmentedControlItem label:focus {
+        background-color: #ebebeb;
+        border: none; }
+    .SegmentedControl.Filters .SegmentedControlItem > input[type='radio']:checked ~ label,
+    .SegmentedControl.Filters .SegmentedControlItem > input[type='checkbox']:checked ~ label {
+      background-color: #5c5c5c;
+      border: none;
+      font-family: "LatoRegular";
+      text-shadow: 0 0 1px #fff; }
   .SegmentedControl .SegmentedControlItem {
     display: inline-block;
     font-size: 1em;
@@ -26287,14 +26341,14 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   border-radius: 50%;
   color: #fff;
   font-size: 0.786em;
-  height: 17px;
-  line-height: 17px;
+  height: 20px;
+  line-height: 20px;
   position: absolute;
   right: 0px;
   text-align: center;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  width: 17px;
+  width: 20px;
   top: 0; }
 
 .Tabs {
@@ -26305,6 +26359,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   .Tabs_body {
     background-color: #fff;
     border: 1px solid #d6d6d6;
+    border-radius: 8px;
     margin-top: -1px !important;
     padding: 20px;
     position: initial; }
@@ -26342,14 +26397,14 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   border-radius: 50%;
   color: #fff;
   font-size: 0.786em;
-  height: 17px;
-  line-height: 17px;
+  height: 20px;
+  line-height: 20px;
   position: absolute;
   right: 0px;
   text-align: center;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  width: 17px;
+  width: 20px;
   top: 5px; }
 
 .AR .Tabs__tab,
@@ -27806,6 +27861,12 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   .FlexColumnEnd {
     -webkit-box-pack: end;
             justify-content: flex-end; }
+
+.FlexList {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; }
 
 .Rotation45 {
   -webkit-transform: rotate(45deg);
@@ -29549,19 +29610,19 @@ ul.os-internal-ui-autocomplete {
   bottom: 0;
   content: ' ';
   top: 0;
-  margin-left: 7.5px !important;
-  padding-left: 7.5px; }
+  margin-left: 8px !important;
+  padding-left: 8px; }
 
 .AR .VerticalSeparatorBefore {
-  border-left: none;
-  margin-right: 7.5px !important;
-  padding-right: 7.5px;
   border-left: 1.9px solid #d6d6d6;
   bottom: 0;
   content: ' ';
   top: 0;
-  margin-left: 7.5px !important;
-  padding-left: 7.5px; }
+  margin-left: 8px !important;
+  padding-left: 8px;
+  border-left: none;
+  margin-right: 8px !important;
+  padding-right: 8px; }
 
 .ManageQueueWrapper {
   -webkit-box-align: center;
@@ -35693,42 +35754,6 @@ a.Button.Icon:hover,
 /*-------------------------------------------------------------------------------------*/
 /* 9.59 Sapphire Patterns > Custom_Patterns > PageHead *********************************/
 /*-------------------------------------------------------------------------------------*/
-.PageHead {
-  display: table;
-  width: 100%; }
-
-.PageHeadTitle {
-  font-size: 23px;
-  padding-bottom: 15px; }
-
-.PageHeadLeft {
-  display: table-cell;
-  font-size: 15px;
-  text-align: left; }
-
-.AR .PageHeadLeft,
-.FA .PageHeadLeft {
-  text-align: right; }
-
-.PageHeadActions {
-  display: table-cell;
-  vertical-align: middle; }
-
-.PageHeadActions .Button {
-  margin: 0; }
-
-.phone .PageHead > div {
-  display: block;
-  text-align: left;
-  width: 100%; }
-
-.tablet.portrait .PageHead > div {
-  /*display: block;
-    white-space: nowrap;
-    text-align: left;
-    width: 100%;*/
-  vertical-align: top; }
-
 /*-------------------------------------------------------------------------------------*/
 /* 9.60 Sapphire Patterns > Custom_Patterns > PatientCircledIcon ***********************/
 /*-------------------------------------------------------------------------------------*/
