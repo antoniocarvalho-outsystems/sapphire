@@ -58,6 +58,39 @@
 		}
 	}
 
+	&.Filters {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 100px;
+
+		.SegmentedControlItem {
+			label {
+				border: none;
+				border-radius: 100px;
+
+				&:first-child,
+				&:last-child {
+					border: none;
+					border-radius: 100px;
+				}
+
+				&:hover,
+				&:focus {
+					background-color: $sapphire-light;
+					border: none;
+				}
+			}
+
+			> input[type='radio']:checked ~ label,
+			> input[type='checkbox']:checked ~ label {
+				background-color: $mid-dark-grey;
+				border: none;
+				font-family: $font-family-latin-regular;
+				text-shadow: 0 0 1px $regular-white;
+			}
+		}
+	}
+
 	.SegmentedControlItem {
 		display: inline-block;
 		font-size: 1em;

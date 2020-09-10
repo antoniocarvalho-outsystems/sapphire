@@ -1,0 +1,29 @@
+.PageHead {
+	display: flex;
+	padding-bottom: $sapphire-sizes--medium;
+	width: 100%;
+
+	.PageHeadLeft {
+		flex: 1;
+
+		.PageHeadTitle {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-heading1;
+		}
+	}
+
+	.PageHeadActions {
+		display: inline-flex;
+		flex: 1;
+		justify-content: flex-end;
+
+		.Button {
+			margin: 0;
+		}
+	}
+}
+
+.AR .PageHeadLeft,
+.FA .PageHeadLeft {
+	text-align: right;
+}

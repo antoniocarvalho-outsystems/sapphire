@@ -21,7 +21,6 @@
 				background-color: $body-color;
 				border-radius: $border-radius-default;
 				display: inline-block;
-				margin: 10px;
 				min-height: 70px;
 				overflow: hidden;
 				padding: 10px 40px 10px 10px;
@@ -75,7 +74,9 @@
 
 		&.isOpen {
 			.DragDrop-droppable-items {
-				display: inline;
+				display: flex;
+				flex-wrap: wrap;
+				gap: $sapphire-sizes--small;
 			}
 		}
 

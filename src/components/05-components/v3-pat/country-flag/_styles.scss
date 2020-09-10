@@ -1,4 +1,8 @@
 .FlagWrapper {
+	align-items: center;
+	display: inline-flex;
+	height: 20px;
+
 	&_PlaceHolder {
 		display: inline-block;
 		margin-right: 5px;
@@ -14,6 +18,10 @@
 		position: relative;
 		vertical-align: bottom;
 		width: 20px;
+
+		.flag {
+			position: unset;
+		}
 	}
 }
 

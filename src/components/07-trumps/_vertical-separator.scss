@@ -11,8 +11,8 @@
 		position: absolute;
 	} @else {
 		@include defaultSettings();
-		margin-left: 7.5px !important;
-		padding-left: 7.5px;
+		margin-left: $sapphire-sizes--small !important;
+		padding-left: $sapphire-sizes--small;
 	}
 }
 
@@ -29,8 +29,9 @@
 }
 
 .AR .VerticalSeparatorBefore {
-	border-left: none;
-	margin-right: 7.5px !important;
-	padding-right: 7.5px;
 	@include verticalSeparator(false, border-right);
+
+	border-left: none;
+	margin-right: $sapphire-sizes--small !important;
+	padding-right: $sapphire-sizes--small;
 }
