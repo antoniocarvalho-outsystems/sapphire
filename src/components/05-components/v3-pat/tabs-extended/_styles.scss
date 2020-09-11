@@ -197,6 +197,13 @@
 
 		top: 0;
 	}
+
+	.TabsContainer[activetab='0'],
+	.TabsContainer[activetab='1'] {
+		.Tabs_body {
+			border-top-left-radius: 0;
+		}
+	}
 }
 
 .Tabs {

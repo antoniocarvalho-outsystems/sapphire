@@ -3,12 +3,18 @@ SapphireWidgets.TabsExtended = function(config) {
 	$(document).ready(function() {
 		const $component = $(`#${config.widgetId} .Tabs_Extended`);
 		const $tabHeader = $component.find('.Tabs_header');
+		const $tabContainer = $component.find('.TabsContainer');
 		const $tabs = $tabHeader.find('> .Tabs__tab');
+		const $tabsEnabled = $tabHeader.find('> .Tabs__tab:not(.disabled)');
 
 		$tabs.each(function() {
 			if ($(this).text() === '') {
 				$(this).remove();
 			}
+		});
+
+		$tabsEnabled.on('click', function() {
+			$tabContainer.attr('activetab', $(this).attr('value'));
 		});
 
 		$('.Tabs_Extended .Tabs_header .Tabs__tab:not(.active)')
