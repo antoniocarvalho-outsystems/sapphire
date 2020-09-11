@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950027 || Generated: Thu Sep 10 2020 17:20:16 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950028 || Generated: Fri Sep 11 2020 12:01:36 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -26350,6 +26350,10 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
           transform: translateX(100%);
   width: 20px;
   top: 0; }
+
+.Tabs_Extended .TabsContainer[activetab='0'] .Tabs_body,
+.Tabs_Extended .TabsContainer[activetab='1'] .Tabs_body {
+  border-top-left-radius: 0; }
 
 .Tabs {
   border: 0px; }
