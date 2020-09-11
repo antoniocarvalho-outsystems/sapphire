@@ -39,6 +39,8 @@
 		}
 
 		a {
+			@include flex-center-total(inline-flex);
+
 			background-color: $regular-white;
 			border: 1px solid $light-grey;
 			border-radius: 100px;
