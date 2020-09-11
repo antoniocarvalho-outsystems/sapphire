@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.950028 || Generated: Fri Sep 11 2020 12:01:36 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.950029 || Generated: Fri Sep 11 2020 17:24:28 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19680,6 +19680,12 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     .navigation-control .navigation-control-item:last-of-type {
       margin-left: 8px; }
     .navigation-control .navigation-control-item a {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: center;
+              justify-content: center;
       background-color: #fff;
       border: 1px solid #d6d6d6;
       border-radius: 100px;
@@ -23631,7 +23637,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     border-radius: 100px; }
     .SegmentedControl.Filters .SegmentedControlItem label {
       border: none;
-      border-radius: 100px; }
+      border-radius: 100px;
+      height: 34px; }
       .SegmentedControl.Filters .SegmentedControlItem label:first-child, .SegmentedControl.Filters .SegmentedControlItem label:last-child {
         border: none;
         border-radius: 100px; }
@@ -23675,9 +23682,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
         background-color: #f2fffd;
         border: 1px solid #00bfa5; }
       .SegmentedControl .SegmentedControlItem label .icon {
-        font-size: 18px;
-        line-height: 35px;
-        padding-right: 5px; }
+        font-size: 1.143em;
+        padding-right: 4px; }
     .SegmentedControl .SegmentedControlItem > input[type='radio']:checked ~ label,
     .SegmentedControl .SegmentedControlItem > input[type='checkbox']:checked ~ label {
       background-color: #00bfa5;
