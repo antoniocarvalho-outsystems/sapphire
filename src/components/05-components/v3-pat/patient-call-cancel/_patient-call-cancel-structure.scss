@@ -127,3 +127,40 @@
 		}
 	}
 }
+
+.tablet {
+	.PatientCallCancelStructure {
+		&__LastCalled {
+			flex: 2;
+		}
+
+		&__Actions {
+			flex: 2;
+
+			[ui='data-call-next-button'] {
+				height: 36px;
+
+				.PatientCallCancel {
+					&__Header {
+						min-height: 36px;
+
+						[ui='data-button-call'] {
+							font-size: $font-size-normal;
+							height: 36px;
+							line-height: 36px;
+							padding: 0 $sapphire-sizes--medium;
+
+							&:before {
+								display: none;
+							}
+						}
+					}
+
+					&__Counter {
+						min-height: 36px;
+					}
+				}
+			}
+		}
+	}
+}
