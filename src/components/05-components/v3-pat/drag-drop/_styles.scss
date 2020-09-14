@@ -163,6 +163,45 @@
 	}
 }
 
+.DragDropExpandable {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+
+	&--open {
+		.DragDrop {
+			&-droppable-header {
+				[ui='data-expandable-icon'] {
+					span.icon {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+
+	.DragDrop {
+		&-droppable-header {
+			border-bottom: 1px solid $light-grey;
+			padding: $sapphire-sizes--medium;
+
+			[ui='data-expandable-icon'] {
+				span {
+					@include arrow-button($dark-grey);
+
+					&:hover {
+						background-color: $body-color;
+					}
+				}
+			}
+		}
+
+		&-droppable-items {
+			padding: $sapphire-sizes--medium;
+		}
+	}
+}
+
 .tablet {
 	.DragDrop-skin-Teams.DragDrop-area:before {
 		display: none;

@@ -17,12 +17,10 @@ SapphireWidgets.TabsExtended = function(config) {
 			$tabContainer.attr('activetab', $(this).attr('value'));
 		});
 
-		$('.Tabs_Extended .Tabs_header .Tabs__tab:not(.active)')
-			.off('mousedown')
-			.on('mousedown', function(evt) {
-				var $tabsExtended = $(evt.target).closest('.Tabs_Extended');
-				$tabsExtended.removeClass('isClosed');
-			});
+		$tabsEnabled.off('mousedown').on('mousedown', function(evt) {
+			var $tabsExtended = $(evt.target).closest('.Tabs_Extended');
+			$tabsExtended.removeClass('isClosed');
+		});
 
 		$('.Tabs_Extended.HideActiveOnClick .Tabs_header')
 			.off('mousedown')

@@ -26,6 +26,7 @@
 			border-bottom: 3px solid transparent;
 			border-top: 2px solid transparent;
 			margin: 0 $sapphire-sizes--small;
+			min-width: unset;
 			padding: 0;
 			transition: all 0.2s ease-in;
 
@@ -52,6 +53,7 @@
 		.Tabs_body {
 			background-color: transparent;
 			border: none;
+			border-radius: unset;
 			border-top: 1px solid $light-grey;
 			padding: $sapphire-sizes--medium 0;
 		}
@@ -60,9 +62,9 @@
 	&.Tabs_Extended--Secondary {
 		&:not(.isClosed) .Tabs__tab.active {
 			border-bottom: 2px solid $regular-white;
-			border-left-color: $light-grey;
+			border-left: 1px solid $light-grey;
 			border-radius: $border-radius-medium $border-radius-medium 0 0;
-			border-right-color: $light-grey;
+			border-right: 1px solid $light-grey;
 			border-top-color: $light-grey;
 			color: $regular-beta;
 
@@ -249,6 +251,7 @@
 			color: $mid-dark-grey;
 			cursor: default;
 			font-family: $font-family-latin-regular;
+			pointer-events: none;
 			position: relative;
 			top: 1px;
 			z-index: unset;
@@ -277,9 +280,29 @@
 		margin-right: auto;
 	}
 
+	.Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab {
+		&:first-child {
+			&:after {
+				display: none;
+			}
+
+			&:before {
+				display: block;
+			}
+		}
+	}
+
 	.Tabs_Extended .Tabs_extended_badge {
 		left: -2px;
 		right: auto;
+	}
+
+	.TabsContainer[activetab='0'],
+	.TabsContainer[activetab='1'] {
+		.Tabs_body {
+			border-top-left-radius: $sapphire-sizes--small;
+			border-top-right-radius: 0;
+		}
 	}
 }
 
