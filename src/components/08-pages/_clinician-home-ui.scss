@@ -60,6 +60,19 @@
 	max-width: 80px;
 }
 
+// Referral Letters
+.ContentClinicianData {
+	.BorderBottomLine {
+		&:first-of-type {
+			padding-top: 0;
+		}
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+}
+
 .tablet {
 	.FiltersWrapper {
 		flex-direction: column-reverse;

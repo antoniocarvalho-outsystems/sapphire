@@ -11,16 +11,18 @@
 	> a,
 	> div,
 	> span {
+		@include flex-center-total;
+
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
 		border-radius: $border-radius-default;
 		color: $regular-beta;
 		cursor: pointer;
 		font-size: 1.143em;
-		padding: 15px 30px;
-		text-align: center;
+		gap: $sapphire-sizes--small;
+		height: $sapphire-sizes--xxlarge;
+		padding: 0 $sapphire-sizes--xlarge;
 		transition: all 0.1s ease-in-out;
-		vertical-align: middle;
 		width: 100%;
 
 		&:hover {

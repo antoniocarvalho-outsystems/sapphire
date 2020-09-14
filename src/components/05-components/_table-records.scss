@@ -84,9 +84,15 @@
 
 		.TableRecords_ContentExpandable {
 			[ui='data-expandable-table-content'] {
-				border-bottom: 1px solid $light-grey;
-				border-top: 1px solid $light-grey;
-				margin-top: -4px;
+				border: 1px solid $light-grey;
+				margin-top: -9px;
+				position: relative;
+			}
+		}
+
+		.TableRowExpandable {
+			td {
+				border: none;
 			}
 		}
 
@@ -277,6 +283,12 @@
 		&.open {
 			display: table-row;
 			visibility: visible;
+
+			> td {
+				&:last-child {
+					display: none;
+				}
+			}
 		}
 
 		> td {
@@ -293,6 +305,16 @@
 .FA {
 	.TableRecords {
 		&.CustomTable {
+			&.ExpandableRows {
+				> tbody tr.ActiveRow td:first-child {
+					border-bottom-right-radius: 0;
+				}
+
+				> tbody tr.ActiveRow td:last-child {
+					border-bottom-left-radius: 0;
+				}
+			}
+
 			> tbody tr td:first-child {
 				border-radius: 0 $border-radius-medium $border-radius-medium 0;
 				padding-left: $sapphire-sizes--small;
@@ -303,6 +325,12 @@
 				border-radius: $border-radius-medium 0 0 $border-radius-medium;
 				padding-left: $sapphire-sizes--medium;
 				padding-right: $sapphire-sizes--small;
+			}
+
+			.TableRowExpandable.open {
+				td {
+					border: none;
+				}
 			}
 		}
 
@@ -342,11 +370,9 @@
 			}
 		}
 
-		tr.TableRowExpandable {
-			&.open {
-				> td:first-of-type {
-					border-right: 1px solid $light-grey;
-				}
+		.TableRowExpandable.open {
+			td {
+				border-right: 1px solid $light-grey;
 			}
 		}
 

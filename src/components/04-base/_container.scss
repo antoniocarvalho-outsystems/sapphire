@@ -42,7 +42,15 @@
 
 .SapphireFormBlue {
 	background-color: $light-blue;
-	border-radius: 2px;
-	margin-top: 25px;
+	border-radius: $border-radius-default;
+	margin-top: $sapphire-sizes--large;
+	padding: $sapphire-sizes--medium;
+}
+
+.Card {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	box-shadow: none;
 	padding: $sapphire-sizes--medium;
 }
