@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.960004 || Generated: Mon Sep 14 2020 15:02:34 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.960005 || Generated: Mon Sep 14 2020 16:48:20 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3135,9 +3135,11 @@ div[onclick] {
     .TableRecords.CustomTable .TableRecords_Header {
       padding: 0 10px; }
     .TableRecords.CustomTable .TableRecords_ContentExpandable [ui='data-expandable-table-content'] {
-      border-bottom: 1px solid #d6d6d6;
-      border-top: 1px solid #d6d6d6;
-      margin-top: -4px; }
+      border: 1px solid #d6d6d6;
+      margin-top: -9px;
+      position: relative; }
+    .TableRecords.CustomTable .TableRowExpandable td {
+      border: none; }
     .TableRecords.CustomTable .CustomTableIcon {
       -webkit-box-align: center;
               align-items: center;
@@ -3248,8 +3250,18 @@ div[onclick] {
     .TableRecords .TableRowExpandable.open {
       display: table-row;
       visibility: visible; }
+      .TableRecords .TableRowExpandable.open > td:last-child {
+        display: none; }
     .TableRecords .TableRowExpandable > td, .TableRecords .TableRowExpandable > td:first-child, .TableRecords .TableRowExpandable > td:last-child {
       padding: 0 !important; }
+
+.AR .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:first-child,
+.FA .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:first-child {
+  border-bottom-right-radius: 0; }
+
+.AR .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:last-child,
+.FA .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:last-child {
+  border-bottom-left-radius: 0; }
 
 .AR .TableRecords.CustomTable > tbody tr td:first-child,
 .FA .TableRecords.CustomTable > tbody tr td:first-child {
@@ -3262,6 +3274,10 @@ div[onclick] {
   border-radius: 8px 0 0 8px;
   padding-left: 16px;
   padding-right: 8px; }
+
+.AR .TableRecords.CustomTable .TableRowExpandable.open td,
+.FA .TableRecords.CustomTable .TableRowExpandable.open td {
+  border: none; }
 
 .AR .TableRecords_Header,
 .FA .TableRecords_Header {
@@ -3305,8 +3321,8 @@ div[onclick] {
   border-left: none;
   border-right: 1px solid #d6d6d6; }
 
-.AR .TableRecords tr.TableRowExpandable.open > td:first-of-type,
-.FA .TableRecords tr.TableRowExpandable.open > td:first-of-type {
+.AR .TableRecords .TableRowExpandable.open td,
+.FA .TableRecords .TableRowExpandable.open td {
   border-right: 1px solid #d6d6d6; }
 
 .AR .TableRecords_Wrapper.NoResponsive .TableRecords_Header,

@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960004 || Generated: Mon Sep 14 2020 15:02:34 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.960005 || Generated: Mon Sep 14 2020 16:48:20 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7289,8 +7289,15 @@ a.Button.IsDefault,
 
 .SapphireFormBlue {
   background-color: #d9f5f1;
-  border-radius: 2px;
-  margin-top: 25px;
+  border-radius: 4px;
+  margin-top: 24px;
+  padding: 16px; }
+
+.Card {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  box-shadow: none;
   padding: 16px; }
 
 .TextInput.Mandatory {
@@ -10086,9 +10093,11 @@ div.LineInfo {
     .TableRecords.CustomTable .TableRecords_Header {
       padding: 0 10px; }
     .TableRecords.CustomTable .TableRecords_ContentExpandable [ui='data-expandable-table-content'] {
-      border-bottom: 1px solid #d6d6d6;
-      border-top: 1px solid #d6d6d6;
-      margin-top: -4px; }
+      border: 1px solid #d6d6d6;
+      margin-top: -9px;
+      position: relative; }
+    .TableRecords.CustomTable .TableRowExpandable td {
+      border: none; }
     .TableRecords.CustomTable .CustomTableIcon {
       -webkit-box-align: center;
               align-items: center;
@@ -10199,8 +10208,18 @@ div.LineInfo {
     .TableRecords .TableRowExpandable.open {
       display: table-row;
       visibility: visible; }
+      .TableRecords .TableRowExpandable.open > td:last-child {
+        display: none; }
     .TableRecords .TableRowExpandable > td, .TableRecords .TableRowExpandable > td:first-child, .TableRecords .TableRowExpandable > td:last-child {
       padding: 0 !important; }
+
+.AR .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:first-child,
+.FA .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:first-child {
+  border-bottom-right-radius: 0; }
+
+.AR .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:last-child,
+.FA .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:last-child {
+  border-bottom-left-radius: 0; }
 
 .AR .TableRecords.CustomTable > tbody tr td:first-child,
 .FA .TableRecords.CustomTable > tbody tr td:first-child {
@@ -10213,6 +10232,10 @@ div.LineInfo {
   border-radius: 8px 0 0 8px;
   padding-left: 16px;
   padding-right: 8px; }
+
+.AR .TableRecords.CustomTable .TableRowExpandable.open td,
+.FA .TableRecords.CustomTable .TableRowExpandable.open td {
+  border: none; }
 
 .AR .TableRecords_Header,
 .FA .TableRecords_Header {
@@ -10256,8 +10279,8 @@ div.LineInfo {
   border-left: none;
   border-right: 1px solid #d6d6d6; }
 
-.AR .TableRecords tr.TableRowExpandable.open > td:first-of-type,
-.FA .TableRecords tr.TableRowExpandable.open > td:first-of-type {
+.AR .TableRecords .TableRowExpandable.open td,
+.FA .TableRecords .TableRowExpandable.open td {
   border-right: 1px solid #d6d6d6; }
 
 .AR .TableRecords_Wrapper.NoResponsive .TableRecords_Header,
@@ -13566,17 +13589,23 @@ div.Feedback_Message_Info span.lasa-term {
 .ButtonClick > a,
 .ButtonClick > div,
 .ButtonClick > span {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
   color: #00ac94;
   cursor: pointer;
   font-size: 1.143em;
-  padding: 15px 30px;
-  text-align: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 32px;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  vertical-align: middle;
   width: 100%; }
   .ButtonClick > a:hover,
   .ButtonClick > div:hover,
@@ -29718,6 +29747,12 @@ ul.os-internal-ui-autocomplete {
   gap: 8px;
   max-width: 80px; }
 
+.ContentClinicianData .BorderBottomLine:first-of-type {
+  padding-top: 0; }
+
+.ContentClinicianData .BorderBottomLine:last-of-type {
+  border-bottom: none; }
+
 .tablet .FiltersWrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
@@ -34197,11 +34232,6 @@ span.ListNavigation_Ellipsis {
 /* SILK Patterns > Bullets */
 /* SILK Patterns > ButtonsArea */
 /* SILK Patterns > Cards */
-.Card {
-  background-color: #fff;
-  border: 1px solid #dadbde;
-  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.5); }
-
 /* SILK Patterns > Carousel */
 .owl-theme .owl-controls .owl-buttons div {
   background: transparent;
