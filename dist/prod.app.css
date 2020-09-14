@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960001 || Generated: Mon Sep 14 2020 13:08:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.960002 || Generated: Mon Sep 14 2020 14:07:16 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29688,6 +29688,14 @@ ul.os-internal-ui-autocomplete {
   font-size: 1.143em;
   gap: 8px;
   max-width: 80px; }
+
+.tablet .FiltersWrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+          flex-direction: column-reverse;
+  gap: 16px; }
+  .tablet .FiltersWrapper > .MultiAlignRight {
+    text-align: left; }
 
 .tablet .ManageQueueWrapper > *,
 .desktop.small .ManageQueueWrapper > * {
