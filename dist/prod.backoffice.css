@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.950029 || Generated: Fri Sep 11 2020 17:24:28 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.960001 || Generated: Mon Sep 14 2020 13:08:15 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4545,6 +4545,7 @@ body.PanelById.PanelOpened {
 .select2-container .select2-dropdown {
   border: 1px solid #d6d6d6;
   border-radius: 4px;
+  min-width: 170px;
   overflow: hidden; }
   .select2-container .select2-dropdown--below {
     margin-top: 4px; }
