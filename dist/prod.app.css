@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960002 || Generated: Mon Sep 14 2020 14:07:16 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.960003 || Generated: Mon Sep 14 2020 14:17:41 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20210,6 +20210,27 @@ body.PanelById.PanelOpened {
           padding: 0 32px; }
       .PatientCallCancelStructure__Actions [ui='data-call-next-button'] .PatientCallCancel__Counter {
         min-height: 44px; }
+
+.tablet .PatientCallCancelStructure__LastCalled {
+  -webkit-box-flex: 2;
+          flex: 2; }
+
+.tablet .PatientCallCancelStructure__Actions {
+  -webkit-box-flex: 2;
+          flex: 2; }
+  .tablet .PatientCallCancelStructure__Actions [ui='data-call-next-button'] {
+    height: 36px; }
+    .tablet .PatientCallCancelStructure__Actions [ui='data-call-next-button'] .PatientCallCancel__Header {
+      min-height: 36px; }
+      .tablet .PatientCallCancelStructure__Actions [ui='data-call-next-button'] .PatientCallCancel__Header [ui='data-button-call'] {
+        font-size: 1em;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 16px; }
+        .tablet .PatientCallCancelStructure__Actions [ui='data-call-next-button'] .PatientCallCancel__Header [ui='data-button-call']:before {
+          display: none; }
+    .tablet .PatientCallCancelStructure__Actions [ui='data-call-next-button'] .PatientCallCancel__Counter {
+      min-height: 36px; }
 
 .PatientMedicalFile {
   background-color: #f3f3f3;
