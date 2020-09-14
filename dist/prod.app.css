@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960003 || Generated: Mon Sep 14 2020 14:17:41 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.960004 || Generated: Mon Sep 14 2020 15:02:34 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20218,6 +20218,14 @@ body.PanelById.PanelOpened {
 .tablet .PatientCallCancelStructure__Actions {
   -webkit-box-flex: 2;
           flex: 2; }
+  .tablet .PatientCallCancelStructure__Actions [ui='data-stop-button'] .Button,
+  .tablet .PatientCallCancelStructure__Actions [ui='data-reset-button'] .Button {
+    font-size: 0;
+    min-width: 36px; }
+    .tablet .PatientCallCancelStructure__Actions [ui='data-stop-button'] .Button:before,
+    .tablet .PatientCallCancelStructure__Actions [ui='data-reset-button'] .Button:before {
+      font-size: 13px;
+      margin: 0; }
   .tablet .PatientCallCancelStructure__Actions [ui='data-call-next-button'] {
     height: 36px; }
     .tablet .PatientCallCancelStructure__Actions [ui='data-call-next-button'] .PatientCallCancel__Header {
