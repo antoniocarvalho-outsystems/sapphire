@@ -60,6 +60,17 @@
 	max-width: 80px;
 }
 
+.tablet {
+	.FiltersWrapper {
+		flex-direction: column-reverse;
+		gap: $sapphire-sizes--medium;
+
+		> .MultiAlignRight {
+			text-align: left;
+		}
+	}
+}
+
 .tablet,
 .desktop.small {
 	.ManageQueueWrapper {
