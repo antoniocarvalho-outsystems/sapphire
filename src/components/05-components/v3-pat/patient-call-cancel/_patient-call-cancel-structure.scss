@@ -137,6 +137,19 @@
 		&__Actions {
 			flex: 2;
 
+			[ui='data-stop-button'],
+			[ui='data-reset-button'] {
+				.Button {
+					font-size: 0;
+					min-width: 36px;
+
+					&:before {
+						font-size: 13px;
+						margin: 0;
+					}
+				}
+			}
+
 			[ui='data-call-next-button'] {
 				height: 36px;
 
