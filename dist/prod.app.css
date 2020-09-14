@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960005 || Generated: Mon Sep 14 2020 16:48:20 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.960006 || Generated: Mon Sep 14 2020 18:14:11 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15749,6 +15749,45 @@ div.CircledArrow {
   .DragDrop-droppable.allowMultiple .DragDrop-draggable input[type='checkbox'] {
     display: block; }
 
+.DragDropExpandable {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px; }
+  .DragDropExpandable--open .DragDrop-droppable-header [ui='data-expandable-icon'] span.icon {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .DragDropExpandable .DragDrop-droppable-header {
+    border-bottom: 1px solid #d6d6d6;
+    padding: 16px; }
+    .DragDropExpandable .DragDrop-droppable-header [ui='data-expandable-icon'] span {
+      -webkit-box-align: center;
+              align-items: center;
+      background-color: transparent;
+      border: 2px solid #333333;
+      border-radius: 50%;
+      cursor: pointer;
+      display: -webkit-box;
+      display: flex;
+      height: 22px;
+      -webkit-box-pack: center;
+              justify-content: center;
+      text-align: center;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      width: 22px;
+      z-index: 1; }
+      .DragDropExpandable .DragDrop-droppable-header [ui='data-expandable-icon'] span:before {
+        color: #333333;
+        content: '\e611';
+        font-family: "Sapphire-Icon-Font";
+        font-size: 0.857em; }
+      .DragDropExpandable .DragDrop-droppable-header [ui='data-expandable-icon'] span:hover {
+        background-color: #f2fffd; }
+      .DragDropExpandable .DragDrop-droppable-header [ui='data-expandable-icon'] span:hover {
+        background-color: #f3f3f3; }
+  .DragDropExpandable .DragDrop-droppable-items {
+    padding: 16px; }
+
 .tablet .DragDrop-skin-Teams.DragDrop-area:before {
   display: none; }
 
@@ -26280,6 +26319,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   border-bottom: 3px solid transparent;
   border-top: 2px solid transparent;
   margin: 0 8px;
+  min-width: unset;
   padding: 0;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in; }
@@ -26299,14 +26339,15 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 .Tabs_Extended.Tabs_Extended--Primary .Tabs_body {
   background-color: transparent;
   border: none;
+  border-radius: unset;
   border-top: 1px solid #d6d6d6;
   padding: 16px 0; }
 
 .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active {
   border-bottom: 2px solid #fff;
-  border-left-color: #d6d6d6;
+  border-left: 1px solid #d6d6d6;
   border-radius: 8px 8px 0 0;
-  border-right-color: #d6d6d6;
+  border-right: 1px solid #d6d6d6;
   border-top-color: #d6d6d6;
   color: #00ac94; }
   .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active:before, .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active:after {
@@ -26455,6 +26496,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
       color: #5c5c5c;
       cursor: default;
       font-family: "LatoRegular";
+      pointer-events: none;
       position: relative;
       top: 1px;
       z-index: unset; }
@@ -26485,10 +26527,25 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   margin-left: 26px;
   margin-right: auto; }
 
+.AR .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:first-child:after,
+.FA .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:first-child:after {
+  display: none; }
+
+.AR .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:first-child:before,
+.FA .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:first-child:before {
+  display: block; }
+
 .AR .Tabs_Extended .Tabs_extended_badge,
 .FA .Tabs_Extended .Tabs_extended_badge {
   left: -2px;
   right: auto; }
+
+.AR .TabsContainer[activetab='0'] .Tabs_body,
+.AR .TabsContainer[activetab='1'] .Tabs_body,
+.FA .TabsContainer[activetab='0'] .Tabs_body,
+.FA .TabsContainer[activetab='1'] .Tabs_body {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0; }
 
 /* adjustments */
 .phone .Tabs__tab,
@@ -38000,11 +38057,6 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
   border-right: 0;
   padding-bottom: 0;
   vertical-align: middle; }
-
-.ExpandableInvestigations .CompLine__pointerIcon {
-  height: 20px;
-  line-height: 20px;
-  width: 20px; }
 
 .AR .ExpandableInvestigations .CompLine__expandIcon,
 .FA .ExpandableInvestigations .CompLine__expandIcon .ExpandableInvestigations .CompLine__expandIcon,
