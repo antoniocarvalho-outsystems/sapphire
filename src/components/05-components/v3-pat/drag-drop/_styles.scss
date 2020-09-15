@@ -4,7 +4,7 @@
 
 		&.DragDrop-skin-Teams {
 			&:before {
-				border-left: dashed $light-grey;
+				border-left: 2px dashed $light-grey;
 				content: '';
 				display: block;
 				height: 100%;
@@ -187,6 +187,10 @@
 		&-droppable-header {
 			border-bottom: 1px solid $light-grey;
 			padding: $sapphire-sizes--medium;
+
+			> div {
+				@include flex-center-vertically;
+			}
 
 			[ui='data-expandable-icon'] {
 				span {
