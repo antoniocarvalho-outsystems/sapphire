@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960008 || Generated: Tue Sep 15 2020 17:03:38 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.960009 || Generated: Tue Sep 15 2020 17:50:27 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15648,7 +15648,7 @@ div.CircledArrow {
 .DragDrop-area {
   position: relative; }
   .DragDrop-area.DragDrop-skin-Teams:before {
-    border-left: dashed #d6d6d6;
+    border-left: 2px dashed #d6d6d6;
     content: '';
     display: block;
     height: 100%;
@@ -15762,6 +15762,11 @@ div.CircledArrow {
   .DragDropExpandable .DragDrop-droppable-header {
     border-bottom: 1px solid #d6d6d6;
     padding: 16px; }
+    .DragDropExpandable .DragDrop-droppable-header > div {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex; }
     .DragDropExpandable .DragDrop-droppable-header [ui='data-expandable-icon'] span {
       -webkit-box-align: center;
               align-items: center;
