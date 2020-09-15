@@ -19,7 +19,7 @@
 
 			.DragDrop-draggable {
 				background-color: $body-color;
-				border-radius: $border-radius-default;
+				border-radius: $border-radius-medium;
 				display: inline-block;
 				min-height: 70px;
 				overflow: hidden;
@@ -101,12 +101,14 @@
 		position: relative;
 
 		&:before {
+			color: $regular-grey;
 			content: '\e656';
 			font-family: $font-family-icons;
-			font-size: 25px;
+			font-size: $font-size-heading1;
 			position: absolute;
 			right: 10px;
-			top: 10px;
+			top: 50%;
+			transform: translateY(-50%);
 		}
 
 		&:hover {
@@ -134,7 +136,7 @@
 			left: 10px;
 			pointer-events: none;
 			position: absolute;
-			top: 10px;
+			top: 14px;
 		}
 
 		.DragDrop-draggable-select-action a {
@@ -187,7 +189,7 @@
 
 			[ui='data-expandable-icon'] {
 				span {
-					@include arrow-button($dark-grey);
+					@include arrow-button($dark-grey, 20px, $font-size-tiny);
 
 					&:hover {
 						background-color: $body-color;
