@@ -47,8 +47,7 @@
 
 .Text_large,
 .TextLarge {
-	// Important used due to Theme Patterns SlikUI
-	font-size: 1.1em !important;
+	font-size: $font-size-heading4;
 }
 
 .Text_small,

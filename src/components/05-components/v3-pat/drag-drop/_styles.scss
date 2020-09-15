@@ -23,7 +23,8 @@
 				display: inline-block;
 				min-height: 70px;
 				overflow: hidden;
-				padding: 10px 40px 10px 10px;
+				padding: $sapphire-sizes--medium;
+				padding-right: 40px;
 				width: 300px;
 
 				&.ui-draggable-dragging {
@@ -80,19 +81,29 @@
 			}
 		}
 
+		&.allowMultiple {
+			.DragDrop-draggable {
+				padding: $sapphire-sizes--medium 40px;
+
+				input[type='checkbox'] {
+					display: block;
+				}
+			}
+		}
+
 		&-header {
-			padding: 10px;
+			padding: $sapphire-sizes--medium;
 		}
 
 		&-intro {
-			padding: 10px;
+			padding: $sapphire-sizes--medium;
 		}
 
 		&-items {
 			display: none;
 
 			.Heading3 {
-				padding-left: 10px;
+				padding-left: $sapphire-sizes--medium;
 			}
 		}
 	}
@@ -133,10 +144,10 @@
 
 		input[type='checkbox'] {
 			display: none;
-			left: 10px;
+			left: 12px;
 			pointer-events: none;
 			position: absolute;
-			top: 14px;
+			top: 20px;
 		}
 
 		.DragDrop-draggable-select-action a {
@@ -151,16 +162,6 @@
 		.DragDrop-draggable-placeholder {
 			border: dashed 1px $light-grey;
 			margin: 5px;
-		}
-	}
-
-	&-droppable.allowMultiple {
-		.DragDrop-draggable {
-			padding: 10px 40px;
-
-			input[type='checkbox'] {
-				display: block;
-			}
 		}
 	}
 }
@@ -189,11 +190,7 @@
 
 			[ui='data-expandable-icon'] {
 				span {
-					@include arrow-button($dark-grey, 20px, $font-size-tiny);
-
-					&:hover {
-						background-color: $body-color;
-					}
+					@include arrow-button($regular-alpha, 20px, $font-size-tiny);
 				}
 			}
 		}

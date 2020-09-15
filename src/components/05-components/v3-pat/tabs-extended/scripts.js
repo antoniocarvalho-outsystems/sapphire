@@ -6,6 +6,7 @@ SapphireWidgets.TabsExtended = function(config) {
 		const $tabContainer = $component.find('.TabsContainer');
 		const $tabs = $tabHeader.find('> .Tabs__tab');
 		const $tabsEnabled = $tabHeader.find('> .Tabs__tab:not(.disabled)');
+		const $tabsInput = $component.find('.Tabs_Input input');
 
 		$tabs.each(function() {
 			if ($(this).text() === '') {
@@ -15,6 +16,9 @@ SapphireWidgets.TabsExtended = function(config) {
 
 		$tabsEnabled.on('click', function() {
 			$tabContainer.attr('activetab', $(this).attr('value'));
+
+			$tabsInput.val($(this).attr('value'));
+			$tabsInput.change();
 		});
 
 		$tabsEnabled.off('mousedown').on('mousedown', function(evt) {
