@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960007 || Generated: Tue Sep 15 2020 14:47:41 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.960008 || Generated: Tue Sep 15 2020 17:03:38 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4484,7 +4484,7 @@ a.Button.ArrowDrop:before,
 
 .Text_large,
 .TextLarge {
-  font-size: 1.1em !important; }
+  font-size: 1.143em; }
 
 .Text_small,
 .TextSmall {
@@ -13600,7 +13600,7 @@ div.Feedback_Message_Info span.lasa-term {
   border-radius: 4px;
   color: #00ac94;
   cursor: pointer;
-  font-size: 1.143em;
+  font-family: "LatoBold";
   gap: 8px;
   height: 48px;
   padding: 0 32px;
@@ -15663,7 +15663,8 @@ div.CircledArrow {
     display: inline-block;
     min-height: 70px;
     overflow: hidden;
-    padding: 10px 40px 10px 10px;
+    padding: 16px;
+    padding-right: 40px;
     width: 300px; }
     .DragDrop-area.DragDrop-skin-Teams .DragDrop-draggable.ui-draggable-dragging {
       cursor: move;
@@ -15698,14 +15699,18 @@ div.CircledArrow {
     display: flex;
     flex-wrap: wrap;
     gap: 8px; }
+  .DragDrop-droppable.allowMultiple .DragDrop-draggable {
+    padding: 16px 40px; }
+    .DragDrop-droppable.allowMultiple .DragDrop-draggable input[type='checkbox'] {
+      display: block; }
   .DragDrop-droppable-header {
-    padding: 10px; }
+    padding: 16px; }
   .DragDrop-droppable-intro {
-    padding: 10px; }
+    padding: 16px; }
   .DragDrop-droppable-items {
     display: none; }
     .DragDrop-droppable-items .Heading3 {
-      padding-left: 10px; }
+      padding-left: 16px; }
 
 .DragDrop-draggable {
   position: relative; }
@@ -15732,10 +15737,10 @@ div.CircledArrow {
     color: #fff; }
   .DragDrop-draggable input[type='checkbox'] {
     display: none;
-    left: 10px;
+    left: 12px;
     pointer-events: none;
     position: absolute;
-    top: 14px; }
+    top: 20px; }
   .DragDrop-draggable .DragDrop-draggable-select-action a {
     bottom: 0;
     display: block;
@@ -15746,11 +15751,6 @@ div.CircledArrow {
   .DragDrop-draggable .DragDrop-draggable-placeholder {
     border: dashed 1px #d6d6d6;
     margin: 5px; }
-
-.DragDrop-droppable.allowMultiple .DragDrop-draggable {
-  padding: 10px 40px; }
-  .DragDrop-droppable.allowMultiple .DragDrop-draggable input[type='checkbox'] {
-    display: block; }
 
 .DragDropExpandable {
   background-color: #fff;
@@ -15766,7 +15766,7 @@ div.CircledArrow {
       -webkit-box-align: center;
               align-items: center;
       background-color: transparent;
-      border: 2px solid #333333;
+      border: 2px solid #00bfa5;
       border-radius: 50%;
       cursor: pointer;
       display: -webkit-box;
@@ -15780,14 +15780,12 @@ div.CircledArrow {
       width: 20px;
       z-index: 1; }
       .DragDropExpandable .DragDrop-droppable-header [ui='data-expandable-icon'] span:before {
-        color: #333333;
+        color: #00bfa5;
         content: '\e611';
         font-family: "Sapphire-Icon-Font";
         font-size: 0.786em; }
       .DragDropExpandable .DragDrop-droppable-header [ui='data-expandable-icon'] span:hover {
         background-color: #f2fffd; }
-      .DragDropExpandable .DragDrop-droppable-header [ui='data-expandable-icon'] span:hover {
-        background-color: #f3f3f3; }
   .DragDropExpandable .DragDrop-droppable-items {
     padding: 16px; }
 
