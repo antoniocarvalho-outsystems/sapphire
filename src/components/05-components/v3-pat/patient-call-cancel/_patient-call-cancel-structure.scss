@@ -57,7 +57,7 @@
 
 		[ui='data-queue-list-dropdown'] {
 			font-family: $font-family-latin-bold;
-			font-size: $font-size-heading3;
+			font-size: $font-size-heading4;
 			margin-top: $sapphire-sizes--xsmall;
 
 			.InlineDropdown {
@@ -130,6 +130,12 @@
 
 .tablet {
 	.PatientCallCancelStructure {
+		&__ListQueues {
+			[ui='data-queue-list-dropdown'] {
+				font-size: $font-size-normal;
+			}
+		}
+
 		&__LastCalled {
 			flex: 2;
 		}

@@ -2,21 +2,21 @@
 	font-family: $font-family-latin-bold;
 	font-size: $font-size-heading1;
 	font-weight: normal;
-	line-height: 1.4;
+	line-height: 1.17;
 }
 
 .Heading2 {
 	font-family: $font-family-latin-bold;
 	font-size: $font-size-heading2;
 	font-weight: normal;
-	line-height: 1.4;
+	line-height: 1.2;
 }
 
 .Heading3 {
 	font-family: $font-family-latin-bold;
 	font-size: $font-size-heading3;
 	font-weight: normal;
-	line-height: 1.4;
+	line-height: 1.22;
 }
 
 .Heading4,
@@ -24,7 +24,7 @@
 	font-family: $font-family-latin-bold;
 	font-size: $font-size-heading4;
 	font-weight: normal;
-	line-height: 1.4;
+	line-height: 1.13;
 }
 
 .AR {
@@ -36,6 +36,31 @@
 		font-family: $font-family-arabic-bold;
 	}
 }
+
+.tablet {
+	.Heading1 {
+		font-size: 1.571em;
+		line-height: 1.18;
+	}
+
+	.Heading2 {
+		font-size: 1.286em;
+		line-height: 1.11;
+	}
+
+	.Heading3 {
+		font-size: 1.143em;
+		line-height: 1.12;
+	}
+
+	.Heading4,
+	.Heading5 {
+		font-size: 1em;
+		line-height: 1.14;
+	}
+}
+
+// Other Text Helpers
 
 .TextHuge {
 	font-size: 2.249em;
