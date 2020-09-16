@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.960009 || Generated: Tue Sep 15 2020 17:50:27 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.960010 || Generated: Wed Sep 16 2020 14:38:18 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -2559,26 +2559,26 @@ a.Button.ArrowDrop:before {
   font-family: "LatoBold";
   font-size: 1.714em;
   font-weight: normal;
-  line-height: 1.4; }
+  line-height: 1.17; }
 
 .Heading2 {
   font-family: "LatoBold";
   font-size: 1.429em;
   font-weight: normal;
-  line-height: 1.4; }
+  line-height: 1.2; }
 
 .Heading3 {
   font-family: "LatoBold";
   font-size: 1.286em;
   font-weight: normal;
-  line-height: 1.4; }
+  line-height: 1.22; }
 
 .Heading4,
 .Heading5 {
   font-family: "LatoBold";
   font-size: 1.143em;
   font-weight: normal;
-  line-height: 1.4; }
+  line-height: 1.13; }
 
 .AR .Heading1,
 .AR .Heading2,
@@ -2586,6 +2586,23 @@ a.Button.ArrowDrop:before {
 .AR .Heading4,
 .AR .Heading5 {
   font-family: "TajawalBold"; }
+
+.tablet .Heading1 {
+  font-size: 1.571em;
+  line-height: 1.18; }
+
+.tablet .Heading2 {
+  font-size: 1.286em;
+  line-height: 1.11; }
+
+.tablet .Heading3 {
+  font-size: 1.143em;
+  line-height: 1.12; }
+
+.tablet .Heading4,
+.tablet .Heading5 {
+  font-size: 1em;
+  line-height: 1.14; }
 
 .TextHuge {
   font-size: 2.249em; }
