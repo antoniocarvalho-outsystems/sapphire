@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960010 || Generated: Wed Sep 16 2020 14:38:18 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.960011 || Generated: Thu Sep 17 2020 18:38:33 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7702,148 +7702,6 @@ a.Button.IsDefault,
     -webkit-transition: all 0.2s;
     transition: all 0.2s; }
 
-.Card_Surgeries_Container {
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  display: table;
-  min-height: 56px;
-  overflow: hidden;
-  width: 100%; }
-  .Card_Surgeries_Container .Card_Surgeries_Description {
-    display: table-cell;
-    padding: 16px;
-    vertical-align: middle;
-    width: 80%; }
-    .Card_Surgeries_Container .Card_Surgeries_Description > div {
-      margin-left: auto;
-      margin-right: 16px; }
-    .Card_Surgeries_Container .Card_Surgeries_Description .CircledPatient {
-      font-size: 14px;
-      height: 48px;
-      line-height: 48px;
-      width: 48px; }
-      .Card_Surgeries_Container .Card_Surgeries_Description .CircledPatient.Male {
-        background-color: #f0faf9; }
-      .Card_Surgeries_Container .Card_Surgeries_Description .CircledPatient.Female {
-        background-color: #feeced; }
-  .Card_Surgeries_Container .Card_Surgeries_Container__Others {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: end;
-            justify-content: flex-end; }
-  .Card_Surgeries_Container .Image_Surgeries_Detail {
-    display: table-cell;
-    height: 100%;
-    min-width: 175px;
-    padding: 16px;
-    padding-right: 0;
-    vertical-align: middle;
-    white-space: nowrap; }
-    .Card_Surgeries_Container .Image_Surgeries_Detail.SmallCardSurgerie {
-      min-width: 120px;
-      width: 120px; }
-    .Card_Surgeries_Container .Image_Surgeries_Detail.Card_Surgeries_White .Icon_Surgeries_Card {
-      background-color: #fff;
-      border-color: #d6d6d6; }
-  .Card_Surgeries_Container .Actions_Surgeries_Details {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-inline-box;
-    display: inline-flex;
-    height: 100%; }
-  .Card_Surgeries_Container .Icon_Surgeries_Card {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    background-color: #f3f3f3;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    height: 48px;
-    margin-right: 16px;
-    width: 48px; }
-  .Card_Surgeries_Container .Title_Surgeries_Card {
-    white-space: normal; }
-    .Card_Surgeries_Container .Title_Surgeries_Card::first-line {
-      font-family: "LatoBold"; }
-    .Card_Surgeries_Container .Title_Surgeries_Card .CardAll {
-      margin-left: 0;
-      margin-right: 20px; }
-  .Card_Surgeries_Container .Card_Surgeries_Actions {
-    display: table-cell;
-    padding-right: 16px;
-    text-align: right;
-    vertical-align: middle; }
-
-.AR .Card_Surgeries_Description,
-.FA .Card_Surgeries_Description {
-  padding-left: 16px;
-  padding-right: 0; }
-  .AR .Card_Surgeries_Description > div,
-  .FA .Card_Surgeries_Description > div {
-    margin-left: 16px;
-    margin-right: auto; }
-
-.AR .Image_Surgeries_Detail,
-.FA .Image_Surgeries_Detail {
-  padding-left: 0;
-  padding-right: 16px; }
-
-.AR .Icon_Surgeries_Card,
-.FA .Icon_Surgeries_Card {
-  margin-left: 16px;
-  margin-right: auto; }
-
-.AR .Card_Surgeries_Actions,
-.FA .Card_Surgeries_Actions {
-  padding-left: 16px;
-  padding-right: 0;
-  text-align: left; }
-
-.tablet .Card_Surgeries_Container {
-  display: block; }
-
-.tablet .Card_Surgeries_Description {
-  display: table-cell;
-  width: 100%; }
-
-.tablet .Image_Surgeries_Detail {
-  padding: 16px; }
-
-.phone .Card_Surgeries_Actions {
-  display: block; }
-
-.phone .Card_Surgeries_Description {
-  display: table;
-  text-align: center;
-  width: 100%; }
-  .phone .Card_Surgeries_Description .BadgeClassification {
-    margin-top: 10px; }
-  .phone .Card_Surgeries_Description .iconHorizontal {
-    margin-bottom: 10px;
-    margin-top: 10px; }
-
-.phone .Actions_Surgeries_Details {
-  display: block; }
-  .phone .Actions_Surgeries_Details:first-child {
-    border: none; }
-
-.phone .Image_Surgeries_Detail,
-.tablet .Image_Surgeries_Detail {
-  border-left: transparent;
-  border-right: 0;
-  display: block;
-  width: 100% !important; }
-
-.phone .others_surgeries_details,
-.phone .Actions_Surgeries_Details,
-.tablet .others_surgeries_details,
-.tablet .Actions_Surgeries_Details {
-  display: table-cell; }
-
 .CircledPatient {
   background-color: #f3f3f3;
   border-radius: 50%;
@@ -7888,7 +7746,7 @@ a.Button.IsDefault,
   margin-bottom: -1px;
   margin-left: -1px; }
   .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox {
-    width: 100% !important; }
+    width: 100%; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox > table {
       width: 100%; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDay {
@@ -7897,6 +7755,9 @@ a.Button.IsDefault,
       vertical-align: middle; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarText {
       font-size: 0.857em; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarWeekDays {
+      display: -webkit-box;
+      display: flex; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarHeader {
       border-bottom: 1px solid #d6d6d6;
       height: 36px;
@@ -7941,13 +7802,14 @@ a.Button.IsDefault,
       border-bottom: 1px solid #d6d6d6;
       color: #777777;
       display: inline-block;
+      -webkit-box-flex: 1;
+              flex: 1;
       font-family: "LatoBold";
-      font-size: 1.143em;
+      font-size: 1em;
       height: 40px;
       line-height: 40px;
       padding: 0 16px;
-      text-align: right;
-      width: 139px; }
+      text-align: right; }
       .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallWeek:last-of-type {
         border-right: none; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_EmptyDay {
@@ -8004,7 +7866,8 @@ a.Button.IsDefault,
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday {
       border-right: none;
       border-top: none;
-      margin: 0; }
+      margin: 0;
+      width: 100%; }
       .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today:hover [ui='data-calendar-day'],
       .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday:hover [ui='data-calendar-day'],
       .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekend:hover [ui='data-calendar-day'],
@@ -8051,6 +7914,15 @@ a.Button.IsDefault,
       .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerAppointments > .icon,
       .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerUnavailability > .icon {
         color: #777777; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .AgendaCalendarList {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-flow: row wrap; }
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .AgendaCalendarList > div {
+        -webkit-box-flex: 0;
+                flex: 0 1 14.285%; }
 
 .AR .ClinicalCalendarBigBox .Calendar_Today,
 .AR .ClinicalCalendarBigBox .Calendar_Weekday,
@@ -10097,10 +9969,12 @@ div.LineInfo {
     .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:last-child {
       border-bottom-right-radius: 0; }
     .TableRecords.CustomTable > tbody tr td:first-child {
-      border-radius: 8px 0 0 8px;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
       padding-left: 16px; }
     .TableRecords.CustomTable > tbody tr td:last-child {
-      border-radius: 0 8px 8px 0;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px;
       padding-right: 16px; }
     .TableRecords.CustomTable .TableRecords_OddLine,
     .TableRecords.CustomTable .TableRecords_EvenLine {
@@ -10246,7 +10120,9 @@ div.LineInfo {
 
 .AR .TableRecords.CustomTable > tbody tr td:last-child,
 .FA .TableRecords.CustomTable > tbody tr td:last-child {
-  border-radius: 8px 0 0 8px;
+  border-bottom-left-radius: 8px;
+  border-left: 1px solid #d6d6d6;
+  border-top-left-radius: 8px;
   padding-left: 16px;
   padding-right: 8px; }
 
