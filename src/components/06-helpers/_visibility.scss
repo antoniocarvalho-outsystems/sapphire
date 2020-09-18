@@ -1,3 +1,16 @@
 .HideDiv {
 	visibility: hidden;
 }
+
+.tablet {
+	.HideOnTable {
+		display: none;
+	}
+}
+
+.tablet,
+.desktop.small {
+	.HideOnSmall {
+		display: none;
+	}
+}

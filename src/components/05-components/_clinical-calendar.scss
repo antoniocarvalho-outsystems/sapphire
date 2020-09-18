@@ -20,10 +20,6 @@
 				font-size: $font-size-small;
 			}
 
-			.CalendarWeekDays {
-				display: flex;
-			}
-
 			.CalendarHeader {
 				border-bottom: 1px solid $light-grey;
 				height: 36px;
@@ -64,16 +60,6 @@
 			a:visited {
 				color: inherit;
 				font-family: $font-family-latin-regular;
-			}
-
-			[ui='data-calendar-day'] {
-				@include flex-center-total(inline-flex);
-
-				border: 1px solid transparent;
-				border-radius: 50%;
-				font-size: $font-size-heading4;
-				height: 36px;
-				width: 36px;
 			}
 
 			.Calendar_SmallWeek {
@@ -188,21 +174,56 @@
 			}
 
 			.CalendarDaySlot {
+				align-items: center;
 				display: flex;
 				gap: $sapphire-sizes--xsmall;
 
 				[ui='data-calendar-day-icons'] {
+					align-items: center;
 					display: inline-flex;
 					flex: 1;
-					gap: $sapphire-sizes--small;
+					gap: $sapphire-sizes--xsmall;
 					justify-content: flex-end;
+				}
+
+				[ui='data-calendar-day'] {
+					@include flex-center-total(inline-flex);
+
+					border: 1px solid transparent;
+					border-radius: 50%;
+					font-size: $font-size-heading4;
+					height: 36px;
+					height: 36px;
+					margin: 0 $sapphire-sizes--xsmall;
+					width: 36px;
 				}
 			}
 
-			.CalendarItemCell {
-				display: inline-flex;
-				height: 36px;
-				margin: 0 $sapphire-sizes--small;
+			.ContainerSurgeries {
+				background-color: rgba($regular-orange, 0.2);
+				color: $regular-orange;
+
+				> .icon {
+					color: $regular-orange;
+				}
+			}
+
+			.ContainerAppointments {
+				background-color: rgba($regular-blue, 0.2);
+				color: $regular-blue;
+
+				> .icon {
+					color: $regular-blue;
+				}
+			}
+
+			.ContainerUnavailability {
+				background-color: rgba($regular-grey, 0.2);
+				color: $regular-grey;
+
+				> .icon {
+					color: $regular-grey;
+				}
 			}
 
 			.ContainerSelected,
@@ -210,24 +231,43 @@
 			.ContainerAppointments,
 			.ContainerUnavailability {
 				align-items: center;
+				border-radius: $border-radius-default;
 				display: flex;
-				gap: $sapphire-sizes--xsmall;
+				font-size: $font-size-small;
+				gap: 2px;
+				height: 22px;
+				padding: 0 $sapphire-sizes--xsmall;
 
-				> div {
-					font-family: $font-family-latin-bold;
-				}
-
-				> .icon {
-					color: $regular-grey;
+				> div:last-of-type {
+					display: flex;
 				}
 			}
 
+			.CalendarWeekDays,
 			.AgendaCalendarList {
-				display: flex;
-				flex-flow: row wrap;
+				display: grid;
+				grid-template-columns: repeat(7, 1fr);
+			}
+		}
+	}
+}
 
-				> div {
-					flex: 0 1 14.285%;
+.tablet {
+	.ClinicalCalendar {
+		&.CenteredCalendarBigWrapper {
+			.ClinicalCalendarBigBox {
+				.Calendar_SmallWeek {
+					padding: 0 12px;
+				}
+
+				.CalendarDaySlot {
+					padding: $sapphire-sizes--xsmall;
+
+					[ui='data-calendar-day'] {
+						height: 32px;
+						margin: 0 $sapphire-sizes--xxsmall;
+						width: 32px;
+					}
 				}
 			}
 		}
