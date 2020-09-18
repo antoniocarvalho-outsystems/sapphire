@@ -24,6 +24,7 @@
 	}
 
 	&_Title {
+		color: $dark-grey;
 		font-family: $font-family-latin-bold;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -82,6 +83,21 @@
 		&.Planned {
 			background-color: $light-grey;
 			color: $regular-grey;
+		}
+
+		&.Min {
+			background-color: $light-green;
+			color: $dark-green;
+		}
+
+		&.Med {
+			background-color: $light-beige;
+			color: $dark-beige;
+		}
+
+		&.Maj {
+			background-color: $light-red;
+			color: $dark-red;
 		}
 	}
 }
