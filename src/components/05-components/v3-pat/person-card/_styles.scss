@@ -219,7 +219,7 @@
 	&__headerLeftInfo {
 		@include flex-center-vertically;
 
-		background-color: $regular-white;
+		background-color: $regular-white !important;
 		padding: 10px $sapphire-sizes--medium;
 
 		&.IsLeftSideHide {
@@ -272,9 +272,9 @@
 		&.Red {
 			color: $dark-grey;
 
-			// .PersonCardIcon {
-			// 	background-color: $light-red;
-			// }
+			.PersonCardIcon {
+				background-color: $light-red;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $dark-red;
@@ -288,9 +288,9 @@
 		&.Green {
 			color: $dark-grey;
 
-			// .PersonCardIcon {
-			// 	background-color: $light-green;
-			// }
+			.PersonCardIcon {
+				background-color: $light-green;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $dark-green;
@@ -304,9 +304,9 @@
 		&.Brown {
 			color: $dark-grey;
 
-			// .PersonCardIcon {
-			// 	background-color: $regular-beige;
-			// }
+			.PersonCardIcon {
+				background-color: $regular-beige;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $dark-beige;
