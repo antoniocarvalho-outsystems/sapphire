@@ -12,8 +12,8 @@
 		$value: nth($size, 2);
 
 		&.GenericGallery-column-gap--#{$label} {
-			span.ListRecords,
-			.GenericGallery-content {
+			> .GenericGallery-content,
+			> .GenericGallery-content > span.ListRecords {
 				grid-column-gap: #{$value};
 			}
 		}
