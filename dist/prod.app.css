@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960013 || Generated: Fri Sep 18 2020 14:27:53 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.960014 || Generated: Fri Sep 18 2020 14:58:18 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20487,7 +20487,7 @@ body.PanelById.PanelOpened {
           align-items: center;
   display: -webkit-box;
   display: flex;
-  background-color: #fff;
+  background-color: #fff !important;
   padding: 10px 16px; }
   .PersonCard__headerLeftInfo.IsLeftSideHide {
     display: none; }
@@ -20505,18 +20505,24 @@ body.PanelById.PanelOpened {
       color: #777777; }
   .PersonCard__headerLeftInfo.Red {
     color: #333333; }
+    .PersonCard__headerLeftInfo.Red .PersonCardIcon {
+      background-color: #fad5d5; }
     .PersonCard__headerLeftInfo.Red.HasBorder {
       border-left: 2px solid #b10100; }
       .PersonCard__headerLeftInfo.Red.HasBorder .icon {
         color: #b10100; }
   .PersonCard__headerLeftInfo.Green {
     color: #333333; }
+    .PersonCard__headerLeftInfo.Green .PersonCardIcon {
+      background-color: #c2dea8; }
     .PersonCard__headerLeftInfo.Green.HasBorder {
       border-left: 2px solid #578329; }
       .PersonCard__headerLeftInfo.Green.HasBorder .icon {
         color: #578329; }
   .PersonCard__headerLeftInfo.Brown {
     color: #333333; }
+    .PersonCard__headerLeftInfo.Brown .PersonCardIcon {
+      background-color: #e6e2aa; }
     .PersonCard__headerLeftInfo.Brown.HasBorder {
       border-left: 2px solid #928d09; }
       .PersonCard__headerLeftInfo.Brown.HasBorder .icon {
