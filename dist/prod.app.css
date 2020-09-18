@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960014 || Generated: Fri Sep 18 2020 14:58:18 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.960015 || Generated: Fri Sep 18 2020 16:53:57 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10548,7 +10548,8 @@ div.LineInfo {
     width: 100%; }
     .WardBox .Counter > div:first-child {
       font-family: "LatoBold";
-      font-size: 1.286em; }
+      font-size: 1.286em;
+      line-height: 1.09; }
     .WardBox .Counter.Vacant {
       background-color: #c2dea8;
       color: #578329; }
@@ -16921,8 +16922,8 @@ div.CircledArrow {
 .GenericGallery .GenericGallery-item {
   opacity: 1; }
 
-.GenericGallery.GenericGallery-column-gap--XXSmall span.ListRecords,
-.GenericGallery.GenericGallery-column-gap--XXSmall .GenericGallery-content {
+.GenericGallery.GenericGallery-column-gap--XXSmall > .GenericGallery-content,
+.GenericGallery.GenericGallery-column-gap--XXSmall > .GenericGallery-content > span.ListRecords {
   grid-column-gap: 2px; }
 
 .GenericGallery.GenericGallery-row-gap--XXSmall span.ListRecords,
@@ -16933,8 +16934,8 @@ div.CircledArrow {
 .GenericGallery.GenericGallery-padding--XXSmall .GenericGallery-item {
   padding: 2px; }
 
-.GenericGallery.GenericGallery-column-gap--XSmall span.ListRecords,
-.GenericGallery.GenericGallery-column-gap--XSmall .GenericGallery-content {
+.GenericGallery.GenericGallery-column-gap--XSmall > .GenericGallery-content,
+.GenericGallery.GenericGallery-column-gap--XSmall > .GenericGallery-content > span.ListRecords {
   grid-column-gap: 4px; }
 
 .GenericGallery.GenericGallery-row-gap--XSmall span.ListRecords,
@@ -16945,8 +16946,8 @@ div.CircledArrow {
 .GenericGallery.GenericGallery-padding--XSmall .GenericGallery-item {
   padding: 4px; }
 
-.GenericGallery.GenericGallery-column-gap--Small span.ListRecords,
-.GenericGallery.GenericGallery-column-gap--Small .GenericGallery-content {
+.GenericGallery.GenericGallery-column-gap--Small > .GenericGallery-content,
+.GenericGallery.GenericGallery-column-gap--Small > .GenericGallery-content > span.ListRecords {
   grid-column-gap: 8px; }
 
 .GenericGallery.GenericGallery-row-gap--Small span.ListRecords,
@@ -16957,8 +16958,8 @@ div.CircledArrow {
 .GenericGallery.GenericGallery-padding--Small .GenericGallery-item {
   padding: 8px; }
 
-.GenericGallery.GenericGallery-column-gap--Medium span.ListRecords,
-.GenericGallery.GenericGallery-column-gap--Medium .GenericGallery-content {
+.GenericGallery.GenericGallery-column-gap--Medium > .GenericGallery-content,
+.GenericGallery.GenericGallery-column-gap--Medium > .GenericGallery-content > span.ListRecords {
   grid-column-gap: 16px; }
 
 .GenericGallery.GenericGallery-row-gap--Medium span.ListRecords,
@@ -16969,8 +16970,8 @@ div.CircledArrow {
 .GenericGallery.GenericGallery-padding--Medium .GenericGallery-item {
   padding: 16px; }
 
-.GenericGallery.GenericGallery-column-gap--Large span.ListRecords,
-.GenericGallery.GenericGallery-column-gap--Large .GenericGallery-content {
+.GenericGallery.GenericGallery-column-gap--Large > .GenericGallery-content,
+.GenericGallery.GenericGallery-column-gap--Large > .GenericGallery-content > span.ListRecords {
   grid-column-gap: 24px; }
 
 .GenericGallery.GenericGallery-row-gap--Large span.ListRecords,
@@ -16981,8 +16982,8 @@ div.CircledArrow {
 .GenericGallery.GenericGallery-padding--Large .GenericGallery-item {
   padding: 24px; }
 
-.GenericGallery.GenericGallery-column-gap--XLarge span.ListRecords,
-.GenericGallery.GenericGallery-column-gap--XLarge .GenericGallery-content {
+.GenericGallery.GenericGallery-column-gap--XLarge > .GenericGallery-content,
+.GenericGallery.GenericGallery-column-gap--XLarge > .GenericGallery-content > span.ListRecords {
   grid-column-gap: 32px; }
 
 .GenericGallery.GenericGallery-row-gap--XLarge span.ListRecords,
@@ -16993,8 +16994,8 @@ div.CircledArrow {
 .GenericGallery.GenericGallery-padding--XLarge .GenericGallery-item {
   padding: 32px; }
 
-.GenericGallery.GenericGallery-column-gap--XXLarge span.ListRecords,
-.GenericGallery.GenericGallery-column-gap--XXLarge .GenericGallery-content {
+.GenericGallery.GenericGallery-column-gap--XXLarge > .GenericGallery-content,
+.GenericGallery.GenericGallery-column-gap--XXLarge > .GenericGallery-content > span.ListRecords {
   grid-column-gap: 48px; }
 
 .GenericGallery.GenericGallery-row-gap--XXLarge span.ListRecords,
@@ -17005,8 +17006,8 @@ div.CircledArrow {
 .GenericGallery.GenericGallery-padding--XXLarge .GenericGallery-item {
   padding: 48px; }
 
-.GenericGallery.GenericGallery-column-gap--Largest span.ListRecords,
-.GenericGallery.GenericGallery-column-gap--Largest .GenericGallery-content {
+.GenericGallery.GenericGallery-column-gap--Largest > .GenericGallery-content,
+.GenericGallery.GenericGallery-column-gap--Largest > .GenericGallery-content > span.ListRecords {
   grid-column-gap: 56px; }
 
 .GenericGallery.GenericGallery-row-gap--Largest span.ListRecords,
@@ -25713,9 +25714,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .tablet .SmallContainer {
   width: 100%; }
-
-.desktop.small .Icon_CardAll {
-  display: none; }
 
 .SpinnerInput_Container > a {
   background-color: #fff;
