@@ -40,6 +40,8 @@
 		width: 100%;
 
 		.BadgeClassification {
+			@include flex-center-vertically(inline-flex);
+
 			background-color: transparent !important;
 			font-size: 1em;
 			width: 100%;
@@ -49,7 +51,7 @@
 			}
 
 			.IconBadgeClassification {
-				height: 16px;
+				height: 18px;
 			}
 		}
 	}

@@ -219,7 +219,7 @@
 	&__headerLeftInfo {
 		@include flex-center-vertically;
 
-		background-color: $regular-white !important;
+		background-color: $regular-white;
 		padding: 10px $sapphire-sizes--medium;
 
 		&.IsLeftSideHide {

@@ -62,6 +62,32 @@
 				font-family: $font-family-latin-regular;
 			}
 
+			.CalendarDaySlot {
+				align-items: center;
+				display: flex;
+				gap: $sapphire-sizes--xsmall;
+
+				[ui='data-calendar-day-icons'] {
+					align-items: center;
+					display: inline-flex;
+					flex: 1;
+					gap: $sapphire-sizes--xsmall;
+					justify-content: flex-end;
+				}
+
+				[ui='data-calendar-day'] {
+					@include flex-center-total(inline-flex);
+
+					border: 1px solid transparent;
+					border-radius: 50%;
+					font-size: $font-size-heading4;
+					height: 36px;
+					height: 36px;
+					margin: 0 $sapphire-sizes--xsmall;
+					width: 36px;
+				}
+			}
+
 			.Calendar_SmallWeek {
 				border-bottom: 1px solid $light-grey;
 				color: $regular-grey;
@@ -170,32 +196,6 @@
 					[ui='data-calendar-day'] {
 						background-color: $sapphire-light;
 					}
-				}
-			}
-
-			.CalendarDaySlot {
-				align-items: center;
-				display: flex;
-				gap: $sapphire-sizes--xsmall;
-
-				[ui='data-calendar-day-icons'] {
-					align-items: center;
-					display: inline-flex;
-					flex: 1;
-					gap: $sapphire-sizes--xsmall;
-					justify-content: flex-end;
-				}
-
-				[ui='data-calendar-day'] {
-					@include flex-center-total(inline-flex);
-
-					border: 1px solid transparent;
-					border-radius: 50%;
-					font-size: $font-size-heading4;
-					height: 36px;
-					height: 36px;
-					margin: 0 $sapphire-sizes--xsmall;
-					width: 36px;
 				}
 			}
 

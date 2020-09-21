@@ -1,12 +1,10 @@
 .navigation-control {
+	display: inline-flex;
+	gap: $sapphire-sizes--xsmall;
 	white-space: nowrap;
 
 	&.IsAttached {
-		.navigation-control-item {
-			&:last-of-type {
-				margin: 0;
-			}
-		}
+		gap: 0;
 	}
 
 	.navigation-control-item {
@@ -32,10 +30,6 @@
 					border-color: $border-color-disabled;
 				}
 			}
-		}
-
-		&:last-of-type {
-			margin-left: $sapphire-sizes--small;
 		}
 
 		a {
@@ -75,21 +69,8 @@
 .AR,
 .FA {
 	.navigation-control {
-		&.IsAttached {
-			.navigation-control-item {
-				&:last-of-type {
-					margin: 0;
-				}
-			}
-		}
-
 		.navigation-control-item {
 			transform: scale(-1, 1);
-
-			&:last-of-type {
-				margin-left: 0;
-				margin-right: $sapphire-sizes--small;
-			}
 		}
 	}
 }
