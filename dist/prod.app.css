@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.960016 || Generated: Mon Sep 21 2020 16:14:21 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970001 || Generated: Mon Sep 21 2020 18:19:15 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7783,6 +7783,36 @@ a.Button.IsDefault,
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox a:visited {
       color: inherit;
       font-family: "LatoRegular"; }
+    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      gap: 4px; }
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot [ui='data-calendar-day-icons'] {
+        -webkit-box-align: center;
+                align-items: center;
+        display: -webkit-inline-box;
+        display: inline-flex;
+        -webkit-box-flex: 1;
+                flex: 1;
+        gap: 4px;
+        -webkit-box-pack: end;
+                justify-content: flex-end; }
+      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot [ui='data-calendar-day'] {
+        -webkit-box-align: center;
+                align-items: center;
+        display: -webkit-inline-box;
+        display: inline-flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        font-size: 1.143em;
+        height: 36px;
+        height: 36px;
+        margin: 0 4px;
+        width: 36px; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_SmallWeek {
       border-bottom: 1px solid #d6d6d6;
       color: #777777;
@@ -7863,36 +7893,6 @@ a.Button.IsDefault,
       .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Today_Weekend:hover [ui='data-calendar-day'],
       .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .Calendar_Weekday_Holiday:hover [ui='data-calendar-day'] {
         background-color: #ebebeb; }
-    .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot {
-      -webkit-box-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: flex;
-      gap: 4px; }
-      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot [ui='data-calendar-day-icons'] {
-        -webkit-box-align: center;
-                align-items: center;
-        display: -webkit-inline-box;
-        display: inline-flex;
-        -webkit-box-flex: 1;
-                flex: 1;
-        gap: 4px;
-        -webkit-box-pack: end;
-                justify-content: flex-end; }
-      .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot [ui='data-calendar-day'] {
-        -webkit-box-align: center;
-                align-items: center;
-        display: -webkit-inline-box;
-        display: inline-flex;
-        -webkit-box-pack: center;
-                justify-content: center;
-        border: 1px solid transparent;
-        border-radius: 50%;
-        font-size: 1.143em;
-        height: 36px;
-        height: 36px;
-        margin: 0 4px;
-        width: 36px; }
     .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .ContainerSurgeries {
       background-color: rgba(255, 160, 0, 0.2);
       color: #ffa000; }
@@ -12129,13 +12129,17 @@ html body {
   .DropdownMenu [ui='data-badge-classifications'] {
     width: 100%; }
     .DropdownMenu [ui='data-badge-classifications'] .BadgeClassification {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-inline-box;
+      display: inline-flex;
       background-color: transparent !important;
       font-size: 1em;
       width: 100%; }
       .DropdownMenu [ui='data-badge-classifications'] .BadgeClassification > span {
         color: #333333 !important; }
       .DropdownMenu [ui='data-badge-classifications'] .BadgeClassification .IconBadgeClassification {
-        height: 16px; }
+        height: 18px; }
 
 .FA .DropdownMenu,
 .AR .DropdownMenu {
@@ -19638,9 +19642,12 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   padding: 0 32px 0 10px; }
 
 .navigation-control {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  gap: 4px;
   white-space: nowrap; }
-  .navigation-control.IsAttached .navigation-control-item:last-of-type {
-    margin: 0; }
+  .navigation-control.IsAttached {
+    gap: 0; }
   .navigation-control .navigation-control-item {
     display: -webkit-inline-box;
     display: inline-flex;
@@ -19661,8 +19668,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
         .navigation-control .navigation-control-item--disabled a:visited:focus {
           background-color: transparent;
           border-color: #d6d6d6; }
-    .navigation-control .navigation-control-item:last-of-type {
-      margin-left: 8px; }
     .navigation-control .navigation-control-item a {
       -webkit-box-align: center;
               align-items: center;
@@ -19694,18 +19699,10 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       .navigation-control .navigation-control-item label > div.MultiMarginLeft5 {
         display: none; }
 
-.AR .navigation-control.IsAttached .navigation-control-item:last-of-type,
-.FA .navigation-control.IsAttached .navigation-control-item:last-of-type {
-  margin: 0; }
-
 .AR .navigation-control .navigation-control-item,
 .FA .navigation-control .navigation-control-item {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1); }
-  .AR .navigation-control .navigation-control-item:last-of-type,
-  .FA .navigation-control .navigation-control-item:last-of-type {
-    margin-left: 0;
-    margin-right: 8px; }
 
 .multi-control-item {
   border-bottom: solid 1px #11455d;
@@ -20503,7 +20500,7 @@ body.PanelById.PanelOpened {
           align-items: center;
   display: -webkit-box;
   display: flex;
-  background-color: #fff !important;
+  background-color: #fff;
   padding: 10px 16px; }
   .PersonCard__headerLeftInfo.IsLeftSideHide {
     display: none; }
@@ -29727,7 +29724,7 @@ ul.os-internal-ui-autocomplete {
           align-items: center;
   display: -webkit-inline-box;
   display: inline-flex;
-  gap: 8px; }
+  gap: 16px; }
 
 .Lab_Ready__Container {
   display: -webkit-box;
