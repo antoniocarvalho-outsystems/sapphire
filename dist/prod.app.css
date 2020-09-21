@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970001 || Generated: Mon Sep 21 2020 18:19:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970002 || Generated: Mon Sep 21 2020 18:22:39 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20734,10 +20734,6 @@ body.PanelById.PanelOpened {
 
 .PersonCard span.verticalAlignHelper.Middle ~ * {
   vertical-align: top; }
-
-.ListRecords .PersonCard_header {
-  border-bottom: none;
-  border-radius: 0; }
 
 .ListRecords > *:first-child .PersonCard_header {
   border-top-left-radius: 8px;
