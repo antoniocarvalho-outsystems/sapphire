@@ -20,7 +20,8 @@
 	}
 
 	.PH > a,
-	.PH > span a {
+	.PH > span a,
+	.PH > span > div {
 		color: $text-color-regular;
 		display: block;
 		font-family: $font-family-latin-regular;
@@ -32,6 +33,24 @@
 		&:hover {
 			background-color: $regular-eta;
 			color: $dark-grey;
+		}
+	}
+
+	[ui='data-badge-classifications'] {
+		width: 100%;
+
+		.BadgeClassification {
+			background-color: transparent !important;
+			font-size: 1em;
+			width: 100%;
+
+			> span {
+				color: $dark-grey !important;
+			}
+
+			.IconBadgeClassification {
+				height: 16px;
+			}
 		}
 	}
 }

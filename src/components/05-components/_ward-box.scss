@@ -102,3 +102,9 @@
 		}
 	}
 }
+
+.HasItemSelected {
+	.WardBox:not(.SelectedWardBx) {
+		opacity: 0.5;
+	}
+}
