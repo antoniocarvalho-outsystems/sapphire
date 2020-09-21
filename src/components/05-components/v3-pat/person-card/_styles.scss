@@ -591,13 +591,6 @@
 }
 
 .ListRecords {
-	.PersonCard {
-		&_header {
-			border-bottom: none;
-			border-radius: 0;
-		}
-	}
-
 	> *:first-child {
 		.PersonCard_header {
 			border-top-left-radius: $border-radius-medium;
