@@ -1,138 +1,143 @@
-$ActionsMenu-color-active: $regular-alpha;
+div.ActionsMenu {
+	&-label {
+		display: inline-block;
+	}
 
-.ActionsMenu-label {
-	display: inline-block;
-	margin-right: 5px;
-}
+	&-trigger {
+		@include flex-center-vertically(inline-flex);
 
-.ActionsMenu-trigger {
-	color: $ActionsMenu-color-active;
-	cursor: pointer !important;
-	text-align: center;
-}
+		color: $regular-alpha;
+		cursor: pointer;
+		gap: $sapphire-sizes--small;
+	}
 
-.ActionsMenu-tooltip {
-	@include shadow-medium;
+	&-tooltip {
+		@include shadow-medium;
 
-	background-color: $regular-white;
-	border: 0;
-	border-radius: $border-radius-default;
-	display: none;
-	min-width: 245px;
+		background-color: $regular-white;
+		border: 0;
+		border-radius: $border-radius-default;
+		display: none;
+		min-width: 245px;
+
+		&.Border--None {
+			.tooltipster-content > section > div > div {
+				border: none;
+			}
+		}
+
+		&.Border--Bottom {
+			.ActionsMenu-item {
+				border-bottom: 1px solid $body-color;
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+
+		&.Padding--None .tooltipster-content > section > div {
+			padding: 0;
+		}
+
+		&.Padding--XSmall .tooltipster-content > section > div {
+			padding: $sapphire-sizes--xsmall;
+		}
+
+		&.Padding--Small .tooltipster-content > section > div {
+			padding: $sapphire-sizes--small;
+		}
+
+		&.Padding--Medium .tooltipster-content > section > div {
+			padding: $sapphire-sizes--medium;
+		}
+
+		&.Padding--Large .tooltipster-content > section > div {
+			padding: $sapphire-sizes--large;
+		}
+
+		&.Padding--XLarge .tooltipster-content > section > div {
+			padding: $sapphire-sizes--xlarge;
+		}
+
+		&.tooltipster-base {
+			display: block;
+			min-width: auto;
+		}
+
+		.tooltipster-content {
+			border: none;
+			font-size: 1rem;
+			line-height: 16px;
+			overflow: hidden;
+			padding: 0;
+
+			> section > .ActionsMenu-tooltip {
+				min-width: auto;
+
+				> div {
+					line-height: 30px;
+				}
+			}
+		}
+
+		.tooltipster-arrow {
+			&.tooltipster-arrow-left span:after {
+				left: -13px;
+				top: -5px;
+				transform: rotate(-135deg);
+			}
+
+			&.tooltipster-arrow-right span:after {
+				left: 3px;
+				top: -5px;
+				transform: rotate(45deg);
+			}
+
+			&.tooltipster-arrow-top span:after,
+			&.tooltipster-arrow-top-left span:after,
+			&.tooltipster-arrow-top-right span:after {
+				left: -5px;
+				top: -12px;
+				transform: rotate(-45deg);
+			}
+
+			&.tooltipster-arrow-bottom span:after,
+			&.tooltipster-arrow-bottom-left span:after,
+			&.tooltipster-arrow-bottom-right span:after {
+				left: -5px;
+				top: 3px;
+				transform: rotate(135deg);
+			}
+
+			span:after {
+				box-shadow: -1px 1px 0px 0px rgba(13, 29, 34, 0.18);
+				content: '';
+				display: inline-block;
+				height: 10px;
+				position: absolute;
+				width: 10px;
+			}
+		}
+	}
+
+	&-item {
+		display: block;
+		margin: 3px 0;
+		padding: 3px 0;
+
+		&:first-child {
+			margin-top: none;
+			padding-top: none;
+		}
+
+		&:last-child {
+			margin-bottom: none;
+			padding-bottom: none;
+		}
+	}
 }
 
 .tooltipster-content > section > .ActionsMenu-tooltip {
 	display: block;
-}
-
-.tooltipster-base.ActionsMenu-tooltip {
-	display: block;
-	min-width: auto;
-}
-
-.ActionsMenu-tooltip .tooltipster-content {
-	border: none;
-	font-size: 1rem;
-	line-height: 16px;
-	overflow: hidden;
-	padding: 0;
-}
-
-.ActionsMenu-tooltip .tooltipster-content > section > .ActionsMenu-tooltip {
-	min-width: auto;
-}
-
-.ActionsMenu-tooltip .tooltipster-arrow span:after {
-	box-shadow: -1px 1px 0px 0px rgba(13, 29, 34, 0.4);
-	content: '';
-	display: inline-block;
-	height: 10px;
-	position: absolute;
-	width: 10px;
-}
-
-.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-left span:after {
-	left: -13px;
-	top: -5px;
-	transform: rotate(-135deg);
-}
-
-.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-right span:after {
-	left: 3px;
-	top: -5px;
-	transform: rotate(45deg);
-}
-
-.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-top span:after,
-.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-top-left span:after,
-.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-top-right span:after {
-	left: -5px;
-	top: -12px;
-	transform: rotate(-45deg);
-}
-
-.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-bottom span:after,
-.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-bottom-left span:after,
-.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-bottom-right span:after {
-	left: -5px;
-	top: 3px;
-	transform: rotate(135deg);
-}
-
-.ActionsMenu-item {
-	display: block;
-	margin: 3px 0;
-	padding: 3px 0;
-}
-
-.ActionsMenu-item:first-child {
-	margin-top: none;
-	padding-top: none;
-}
-
-.ActionsMenu-item:last-child {
-	margin-bottom: none;
-	padding-bottom: none;
-}
-
-.ActionsMenu-tooltip.Border--None .tooltipster-content > section > div > div {
-	border: none;
-}
-
-.ActionsMenu-tooltip.Border--Bottom .ActionsMenu-item {
-	border-bottom: 1px solid $body-color;
-}
-
-.ActionsMenu-tooltip.Border--Bottom .ActionsMenu-item:last-child {
-	border-bottom: none;
-}
-
-.ActionsMenu-tooltip.Padding--None .tooltipster-content > section > div {
-	padding: 0;
-}
-
-.ActionsMenu-tooltip.Padding--XSmall .tooltipster-content > section > div {
-	padding: $sapphire-sizes--xsmall;
-}
-
-.ActionsMenu-tooltip.Padding--Small .tooltipster-content > section > div {
-	padding: $sapphire-sizes--small;
-}
-
-.ActionsMenu-tooltip.Padding--Medium .tooltipster-content > section > div {
-	padding: $sapphire-sizes--medium;
-}
-
-.ActionsMenu-tooltip.Padding--Large .tooltipster-content > section > div {
-	padding: $sapphire-sizes--large;
-}
-
-.ActionsMenu-tooltip.Padding--XLarge .tooltipster-content > section > div {
-	padding: $sapphire-sizes--xlarge;
-}
-
-.FA .ActionsMenu-label,
-.AR .ActionsMenu-label {
-	margin-left: 5px;
-	margin-right: 0;
 }
