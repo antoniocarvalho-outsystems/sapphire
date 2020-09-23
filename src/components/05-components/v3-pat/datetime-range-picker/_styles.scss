@@ -501,7 +501,7 @@ $date-time-size-base: 40px;
 
 		td.today {
 			background-color: $regular-white;
-			box-shadow: inset 0 0 0 1px $regular-alpha;
+			box-shadow: inset 0 0 0 2px $regular-alpha;
 			color: $dark-grey;
 
 			&:hover {

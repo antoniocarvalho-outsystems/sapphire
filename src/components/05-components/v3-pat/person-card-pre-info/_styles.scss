@@ -29,6 +29,10 @@
 		padding: 0;
 		width: 48px;
 
+		&--small {
+			font-size: $font-size-normal;
+		}
+
 		&__Content {
 			@include flex-center-total(inline-flex);
 
