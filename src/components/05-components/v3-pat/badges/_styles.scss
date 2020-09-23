@@ -284,21 +284,18 @@ $prescriptionRadius: 18px;
 
 .BadgeCustom {
 	border: 1px solid transparent;
-	border-radius: 4px;
+	border-radius: $border-radius-default;
 	display: inline-flex;
 	font-family: $font-family-latin-bold;
 	font-size: $font-size-small;
+	gap: $sapphire-sizes--xsmall;
 	line-height: 12px;
 	max-height: 20px;
-	padding: 2px 4px;
+	padding: 2px $border-radius-default;
 	position: relative;
 
 	&--autoHeight {
 		max-height: unset;
-	}
-
-	&__Icon {
-		margin-right: $sapphire-sizes--xsmall;
 	}
 
 	&__Notification {

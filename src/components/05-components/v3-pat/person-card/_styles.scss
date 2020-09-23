@@ -366,6 +366,7 @@
 
 		> div {
 			flex-basis: 100%;
+			margin: 0;
 
 			&:first-of-type {
 				padding-left: 0;
@@ -407,7 +408,7 @@
 			padding-left: 0;
 		}
 
-		&:not(:empty) ~ .PersonCard__actions {
+		&:not(:empty) ~ .PersonCard__actions_width_Medium {
 			flex-basis: 20%;
 		}
 

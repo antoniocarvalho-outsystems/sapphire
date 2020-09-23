@@ -1,46 +1,13 @@
-.BedInfoBackgroundContent {
-	border-radius: 2px;
-	padding: 1px 0 1px 10px;
+.BedInfoContent {
+	.BadgeCustom {
+		align-items: center;
+		font-size: 1em;
+		gap: $sapphire-sizes--small;
+		max-height: unset;
+		padding: $sapphire-sizes--xsmall $sapphire-sizes--medium;
 
-	.BedInfoIconBackground {
-		border-radius: 2px 0px 0px 2px;
-		color: $sapphire-white;
-		height: 20px;
-		line-height: 20px;
-		margin-right: 10px;
-		text-align: center;
-		width: 20px;
-	}
-	.BedInformationText {
-		color: $sapphire-white;
-		font-size: $font-size-normal;
-		margin-left: 10px;
-		margin-left: 0;
-		margin-right: 10px;
-	}
-}
-
-.phone {
-	.BedInfoBackgroundContent {
-		.BedInfoIconBackground {
-			padding: 0;
-			width: 100%;
-		}
-
-		.BedInformationText {
-			margin-left: 5px;
-		}
-	}
-}
-
-.FA,
-.AR {
-	.BedInfoBackgroundContent {
-		padding: 1px 1px 1px 10px;
-
-		.BedInfoIconBackground {
-			border-radius: 2px 2px 0px 0px;
-			margin-right: 0;
+		.BadgeCustom__Icon {
+			font-size: 1.286em;
 		}
 	}
 }
