@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970003 || Generated: Tue Sep 22 2020 16:33:33 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970004 || Generated: Wed Sep 23 2020 13:57:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13191,14 +13191,13 @@ div.ActionsMenu-item {
   display: inline-flex;
   font-family: "LatoBold";
   font-size: 0.857em;
+  gap: 4px;
   line-height: 12px;
   max-height: 20px;
   padding: 2px 4px;
   position: relative; }
   .BadgeCustom--autoHeight {
     max-height: unset; }
-  .BadgeCustom__Icon {
-    margin-right: 4px; }
   .BadgeCustom__Notification {
     position: absolute;
     right: 0;
@@ -13287,38 +13286,15 @@ div.ActionsMenu-item {
       position: absolute;
       width: 0; }
 
-.BedInfoBackgroundContent {
-  border-radius: 2px;
-  padding: 1px 0 1px 10px; }
-  .BedInfoBackgroundContent .BedInfoIconBackground {
-    border-radius: 2px 0px 0px 2px;
-    color: #ffffff;
-    height: 20px;
-    line-height: 20px;
-    margin-right: 10px;
-    text-align: center;
-    width: 20px; }
-  .BedInfoBackgroundContent .BedInformationText {
-    color: #ffffff;
-    font-size: 1em;
-    margin-left: 10px;
-    margin-left: 0;
-    margin-right: 10px; }
-
-.phone .BedInfoBackgroundContent .BedInfoIconBackground {
-  padding: 0;
-  width: 100%; }
-
-.phone .BedInfoBackgroundContent .BedInformationText {
-  margin-left: 5px; }
-
-.FA .BedInfoBackgroundContent,
-.AR .BedInfoBackgroundContent {
-  padding: 1px 1px 1px 10px; }
-  .FA .BedInfoBackgroundContent .BedInfoIconBackground,
-  .AR .BedInfoBackgroundContent .BedInfoIconBackground {
-    border-radius: 2px 2px 0px 0px;
-    margin-right: 0; }
+.BedInfoContent .BadgeCustom {
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 1em;
+  gap: 8px;
+  max-height: unset;
+  padding: 4px 16px; }
+  .BedInfoContent .BadgeCustom .BadgeCustom__Icon {
+    font-size: 1.286em; }
 
 .BedBoxContainer {
   background-color: #fff;
@@ -20272,7 +20248,7 @@ body.PanelById.PanelOpened {
   .PersonCardPreInfo .ColoredBox {
     border-radius: 8px;
     font-family: "LatoBold";
-    font-size: 1.286em;
+    font-size: 1.143em;
     height: 48px;
     padding: 0;
     width: 48px; }
@@ -20521,7 +20497,8 @@ body.PanelById.PanelOpened {
 .PersonCard__content {
   gap: 16px; }
   .PersonCard__content > div {
-    flex-basis: 100%; }
+    flex-basis: 100%;
+    margin: 0; }
     .PersonCard__content > div:first-of-type {
       padding-left: 0; }
 
@@ -20551,7 +20528,7 @@ body.PanelById.PanelOpened {
 .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
   padding-left: 0; }
 
-.PersonCard__Complementary:not(:empty) ~ .PersonCard__actions {
+.PersonCard__Complementary:not(:empty) ~ .PersonCard__actions_width_Medium {
   flex-basis: 20%; }
 
 .PersonCard__Complementary .PersonCardPreInfo {
