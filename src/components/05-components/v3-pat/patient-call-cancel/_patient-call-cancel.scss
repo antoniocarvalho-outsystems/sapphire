@@ -29,6 +29,7 @@
 	&__Header {
 		align-items: center;
 		display: inline-flex;
+		flex-wrap: wrap;
 		gap: $sapphire-sizes--xsmall;
 		min-height: 30px;
 	}
