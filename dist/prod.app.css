@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970006 || Generated: Wed Sep 23 2020 17:06:09 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970007 || Generated: Thu Sep 24 2020 17:04:18 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19980,7 +19980,7 @@ body.PanelById.PanelOpened {
     display: -webkit-inline-box;
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 8px;
     min-height: 30px; }
   .PatientCallCancel__Counter {
     -webkit-box-align: center;
@@ -27946,6 +27946,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .TextRegular {
   font-family: "LatoRegular"; }
+
+.TextRegularAR {
+  font-family: "TajawalRegular"; }
 
 .TextItalic {
   font-style: italic; }
