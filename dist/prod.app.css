@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970009 || Generated: Fri Sep 25 2020 14:22:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970010 || Generated: Fri Sep 25 2020 18:08:17 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10492,7 +10492,7 @@ div.LineInfo {
     margin-left: 3px;
     margin-right: auto; }
 
-.WardBox {
+.CounterBox {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
@@ -10500,9 +10500,9 @@ div.LineInfo {
   overflow: hidden;
   position: relative;
   width: 100%; }
-  .SelectedWardBx .WardBox, .WardBox.SelectedWardBx {
+  .SelectedWardBx .CounterBox, .CounterBox.SelectedWardBx {
     border-color: transparent; }
-    .SelectedWardBx .WardBox::before, .WardBox.SelectedWardBx::before {
+    .SelectedWardBx .CounterBox::before, .CounterBox.SelectedWardBx::before {
       border: 2px solid #00bfa5;
       border-radius: 8px;
       box-sizing: border-box;
@@ -10511,13 +10511,7 @@ div.LineInfo {
       height: 100%;
       position: absolute;
       width: 100%; }
-  .WardBox_Title {
-    color: #333333;
-    font-family: "LatoBold";
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-  .WardBox .WardNameSmall {
+  .CounterBox__Header {
     -webkit-box-align: center;
             align-items: center;
     display: -webkit-box;
@@ -10528,48 +10522,49 @@ div.LineInfo {
             justify-content: space-between;
     line-height: 16px;
     padding: 16px; }
-  .WardBox .WardTypeSmall {
+  .CounterBox__Title {
+    color: #333333;
+    font-family: "LatoBold";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .CounterBox__Other {
     color: #777777;
     font-size: 0.857em;
     text-align: right; }
-  .WardBox .Hospitalizations {
+  .CounterBox__Content {
     display: -webkit-box;
     display: flex; }
-  .WardBox .RoomNameSmall {
-    overflow: hidden;
-    padding: 5px;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-  .WardBox .Counter {
+  .CounterBox .Counter {
     background-color: #ebebeb;
     border-top: none;
     padding: 8px 16px;
     text-align: start;
     width: 100%; }
-    .WardBox .Counter > div:first-child {
+    .CounterBox .Counter > div:first-child {
       font-family: "LatoBold";
-      font-size: 1.286em;
+      font-size: 1.143em;
       line-height: 1.09; }
-    .WardBox .Counter.Vacant {
+    .CounterBox .Counter.Vacant {
       background-color: #c2dea8;
       color: #578329; }
-    .WardBox .Counter.Reserved {
+    .CounterBox .Counter.Reserved {
       background-color: #e6e2aa;
       color: #928d09; }
-    .WardBox .Counter.Planned {
+    .CounterBox .Counter.Planned {
       background-color: #d6d6d6;
       color: #777777; }
-    .WardBox .Counter.Min {
+    .CounterBox .Counter.Min {
       background-color: #c2dea8;
       color: #578329; }
-    .WardBox .Counter.Med {
+    .CounterBox .Counter.Med {
       background-color: #f5f4e0;
       color: #928d09; }
-    .WardBox .Counter.Maj {
+    .CounterBox .Counter.Maj {
       background-color: #fad5d5;
       color: #b10100; }
 
-.HasItemSelected .WardBox:not(.SelectedWardBx) {
+.HasItemSelected .CounterBox:not(.SelectedWardBx) {
   opacity: 0.5; }
 
 .WardTotalContainer:not(:first-child) {
@@ -20671,50 +20666,11 @@ body.PanelById.PanelOpened {
 .PersonCard span.verticalAlignHelper.Middle ~ * {
   vertical-align: top; }
 
-.ListRecords > *:first-child .PersonCard_header {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px; }
-
-.ListRecords > *:last-child .PersonCard_header {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px; }
-
-.ListRecords .PersonCard:last-of-type .PersonCard_header.Selected {
-  border: 1px solid #00ac94; }
-
-.ListRecords > span:not(:first-of-type) > .PersonCard .PersonCard_header {
-  border-top: none; }
-
-.ListRecords > div:last-of-type .PersonCard_header {
-  border-bottom: 1px solid #d6d6d6; }
-
-.ListRecords > span:not(:last-of-type) > div > .PersonCard:last-of-type .PersonCard_header {
-  border-bottom: none; }
-
-.ListRecords span:last-of-type .PersonCard:last-of-type .PersonCard_header.Selected {
-  border: 1px solid #00ac94; }
-
-.ListRecords a:last-of-type .PersonCard:last-of-type .PersonCard_header:not(.IsTransparent) {
-  border-bottom: 1px solid #d6d6d6; }
-
-.ListRecords a:last-of-type .PersonCard.PersonCard_header {
-  border-bottom: 1px solid #d6d6d6; }
-
-.ListRecords a .PersonCardX:last-of-type .PersonCard_header:not(.IsTransparent) {
-  border-bottom: none; }
-
-.ListRecords a .PersonCard:last-of-type .PersonCard_header {
-  border-bottom: none; }
-
-.ListRecords .SearchRow.searchNotFound + .SearchRow.searchFound .PersonCard:last-of-type .PersonCard_header {
-  border-bottom: 1px solid #d6d6d6; }
-
 .ListPersonCard .PersonCard .PersonCard_header,
 .ListPersonCard > div:not(:last-of-type) .PersonCard .PersonCard_header,
 .ListPersonCard > span:not(:last-of-type) .PersonCard .PersonCard_header {
   margin-bottom: 8px; }
 
-.ListRecords .PersonCard .PersonCard_header.Selected,
 .PersonCard_header.Selected {
   border: 1px solid #00ac94; }
 
