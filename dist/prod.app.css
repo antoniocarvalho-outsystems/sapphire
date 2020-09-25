@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970007 || Generated: Thu Sep 24 2020 17:04:18 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970008 || Generated: Fri Sep 25 2020 13:10:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -27943,6 +27943,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .Bold,
 .TextBold {
   font-family: "LatoBold"; }
+  .Bold > .TextRegularAR,
+  .TextBold > .TextRegularAR {
+    font-family: "TajawalBold"; }
 
 .TextRegular {
   font-family: "LatoRegular"; }
@@ -29369,7 +29372,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
     text-align: left; }
     .CardAll .DescriptionContainer .Description {
       display: block;
-      font-family: "LatoBold";
       line-height: 18px; }
     .CardAll .DescriptionContainer .Small_Description {
       min-width: 185px;
