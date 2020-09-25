@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970008 || Generated: Fri Sep 25 2020 13:10:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970009 || Generated: Fri Sep 25 2020 14:22:01 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11028,6 +11028,7 @@ div.LineInfo {
   min-height: 60px; }
 
 .LayoutBase--sideMenu .LayoutBase-topfixedcontent .ManageQueueContainer {
+  border-radius: 100px;
   margin: 16px;
   margin-top: 24px;
   opacity: 1;
