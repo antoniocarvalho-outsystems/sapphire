@@ -10,6 +10,10 @@
 .Bold,
 .TextBold {
 	font-family: $font-family-latin-bold;
+
+	> .TextRegularAR {
+		font-family: $font-family-arabic-bold;
+	}
 }
 
 .TextRegular {
