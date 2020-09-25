@@ -591,67 +591,67 @@
 	}
 }
 
-.ListRecords {
-	> *:first-child {
-		.PersonCard_header {
-			border-top-left-radius: $border-radius-medium;
-			border-top-right-radius: $border-radius-medium;
-		}
-	}
+// .ListRecords {
+// 	> *:first-child {
+// 		.PersonCard_header {
+// 			border-top-left-radius: $border-radius-medium;
+// 			border-top-right-radius: $border-radius-medium;
+// 		}
+// 	}
 
-	> *:last-child {
-		.PersonCard_header {
-			border-bottom-left-radius: $border-radius-medium;
-			border-bottom-right-radius: $border-radius-medium;
-		}
-	}
+// 	> *:last-child {
+// 		.PersonCard_header {
+// 			border-bottom-left-radius: $border-radius-medium;
+// 			border-bottom-right-radius: $border-radius-medium;
+// 		}
+// 	}
 
-	.PersonCard {
-		&:last-of-type .PersonCard_header {
-			&.Selected {
-				border: 1px solid $regular-beta;
-			}
-		}
-	}
+// 	.PersonCard {
+// 		&:last-of-type .PersonCard_header {
+// 			&.Selected {
+// 				border: 1px solid $regular-beta;
+// 			}
+// 		}
+// 	}
 
-	> span:not(:first-of-type) > .PersonCard .PersonCard_header {
-		border-top: none;
-	}
+// 	> span:not(:first-of-type) > .PersonCard .PersonCard_header {
+// 		border-top: none;
+// 	}
 
-	> div:last-of-type .PersonCard_header {
-		border-bottom: 1px solid $light-grey;
-	}
+// 	> div:last-of-type .PersonCard_header {
+// 		border-bottom: 1px solid $light-grey;
+// 	}
 
-	> span:not(:last-of-type) > div > .PersonCard:last-of-type .PersonCard_header {
-		border-bottom: none;
-	}
+// 	> span:not(:last-of-type) > div > .PersonCard:last-of-type .PersonCard_header {
+// 		border-bottom: none;
+// 	}
 
-	span:last-of-type .PersonCard:last-of-type .PersonCard_header.Selected {
-		border: 1px solid $regular-beta;
-	}
+// 	span:last-of-type .PersonCard:last-of-type .PersonCard_header.Selected {
+// 		border: 1px solid $regular-beta;
+// 	}
 
-	a {
-		&:last-of-type .PersonCard:last-of-type .PersonCard_header:not(.IsTransparent) {
-			border-bottom: 1px solid $light-grey;
-		}
+// 	a {
+// 		&:last-of-type .PersonCard:last-of-type .PersonCard_header:not(.IsTransparent) {
+// 			border-bottom: 1px solid $light-grey;
+// 		}
 
-		&:last-of-type .PersonCard.PersonCard_header {
-			border-bottom: 1px solid $light-grey;
-		}
+// 		&:last-of-type .PersonCard.PersonCard_header {
+// 			border-bottom: 1px solid $light-grey;
+// 		}
 
-		.PersonCardX:last-of-type .PersonCard_header:not(.IsTransparent) {
-			border-bottom: none;
-		}
+// 		.PersonCardX:last-of-type .PersonCard_header:not(.IsTransparent) {
+// 			border-bottom: none;
+// 		}
 
-		.PersonCard:last-of-type .PersonCard_header {
-			border-bottom: none;
-		}
-	}
+// 		.PersonCard:last-of-type .PersonCard_header {
+// 			border-bottom: none;
+// 		}
+// 	}
 
-	.SearchRow.searchNotFound + .SearchRow.searchFound .PersonCard:last-of-type .PersonCard_header {
-		border-bottom: 1px solid $light-grey;
-	}
-}
+// 	.SearchRow.searchNotFound + .SearchRow.searchFound .PersonCard:last-of-type .PersonCard_header {
+// 		border-bottom: 1px solid $light-grey;
+// 	}
+// }
 
 .ListPersonCard {
 	&,
@@ -665,7 +665,7 @@
 	}
 }
 
-.ListRecords .PersonCard .PersonCard_header.Selected,
+//.ListRecords .PersonCard .PersonCard_header.Selected,
 .PersonCard_header.Selected {
 	border: 1px solid $regular-beta;
 }

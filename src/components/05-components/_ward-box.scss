@@ -1,4 +1,4 @@
-.WardBox {
+.CounterBox {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-medium;
@@ -23,15 +23,7 @@
 		}
 	}
 
-	&_Title {
-		color: $dark-grey;
-		font-family: $font-family-latin-bold;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-	}
-
-	.WardNameSmall {
+	&__Header {
 		@include flex-center-vertically;
 
 		border-bottom: 1px solid $light-grey;
@@ -41,21 +33,22 @@
 		padding: $sapphire-sizes--medium;
 	}
 
-	.WardTypeSmall {
+	&__Title {
+		color: $dark-grey;
+		font-family: $font-family-latin-bold;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__Other {
 		color: $regular-grey;
 		font-size: $font-size-small;
 		text-align: right;
 	}
 
-	.Hospitalizations {
+	&__Content {
 		display: flex;
-	}
-
-	.RoomNameSmall {
-		overflow: hidden;
-		padding: 5px;
-		text-overflow: ellipsis;
-		white-space: nowrap;
 	}
 
 	.Counter {
@@ -67,7 +60,7 @@
 
 		> div:first-child {
 			font-family: $font-family-latin-bold;
-			font-size: $font-size-heading3;
+			font-size: $font-size-heading4;
 			line-height: 1.09;
 		}
 
@@ -104,7 +97,7 @@
 }
 
 .HasItemSelected {
-	.WardBox:not(.SelectedWardBx) {
+	.CounterBox:not(.SelectedWardBx) {
 		opacity: 0.5;
 	}
 }
