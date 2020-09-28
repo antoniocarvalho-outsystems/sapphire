@@ -91,7 +91,7 @@ a.Button.IsDefault,
 
 		&:disabled,
 		&[disabled] {
-			@include disabled-button();
+			@include disabled-button($regular-white);
 
 			box-shadow: none;
 
@@ -124,7 +124,7 @@ a.Button.IsDefault,
 
 		&:disabled,
 		&[disabled] {
-			@include disabled-button();
+			@include disabled-button($regular-white);
 
 			box-shadow: none;
 
