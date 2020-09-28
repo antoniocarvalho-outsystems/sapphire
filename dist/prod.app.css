@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970010 || Generated: Fri Sep 25 2020 18:08:17 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970011 || Generated: Mon Sep 28 2020 14:12:15 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10528,6 +10528,17 @@ div.LineInfo {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
+    .CounterBox__Title .CounterBoxIcon {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      background-color: #f3f3f3;
+      border-radius: 8px;
+      height: 48px;
+      min-width: 48px; }
   .CounterBox__Other {
     color: #777777;
     font-size: 0.857em;
@@ -10536,7 +10547,7 @@ div.LineInfo {
     display: -webkit-box;
     display: flex; }
   .CounterBox .Counter {
-    background-color: #ebebeb;
+    background-color: #f3f3f3;
     border-top: none;
     padding: 8px 16px;
     text-align: start;
@@ -10552,7 +10563,7 @@ div.LineInfo {
       background-color: #e6e2aa;
       color: #928d09; }
     .CounterBox .Counter.Planned {
-      background-color: #d6d6d6;
+      background-color: #ebebeb;
       color: #777777; }
     .CounterBox .Counter.Min {
       background-color: #c2dea8;
@@ -16992,8 +17003,8 @@ div.CircledArrow {
   border: dotted 1px green; }
 
 .GenericStructure-header {
-  -webkit-box-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+          align-items: center;
   display: -webkit-box;
   display: flex;
   margin-bottom: 16px; }
@@ -19505,6 +19516,20 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .FA a.Menu_SubMenuItem:visited {
   padding-left: 15px;
   padding-right: 15px; }
+
+.MoreDetails_Content {
+  position: relative; }
+  .MoreDetails_Content:before {
+    background-color: #d6d6d6;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%;
+    z-index: -1; }
 
 .ButtonCheckboxInp {
   margin-right: 8px;
@@ -35689,11 +35714,6 @@ a.Button.Icon:hover,
 /*-------------------------------------------------------------------------------------*/
 /* 9.56 Sapphire Patterns > Custom_Patterns > MoreDetails ******************************/
 /*-------------------------------------------------------------------------------------*/
-.MoreDetails_BottomBar {
-  background-color: transparent;
-  border: 1px solid #d2d1d0;
-  padding-top: 1px; }
-
 /*-------------------------------------------------------------------------------------*/
 /* 9.57 Sapphire Patterns > Custom_Patterns > MultiText ********************************/
 /*-------------------------------------------------------------------------------------*/
