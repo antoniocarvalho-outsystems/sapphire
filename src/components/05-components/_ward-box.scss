@@ -39,6 +39,15 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
+
+		.CounterBoxIcon {
+			@include flex-center-total();
+
+			background-color: $body-color;
+			border-radius: $border-radius-medium;
+			height: $sapphire-sizes--xxlarge;
+			min-width: $sapphire-sizes--xxlarge;
+		}
 	}
 
 	&__Other {
@@ -52,7 +61,7 @@
 	}
 
 	.Counter {
-		background-color: $sapphire-light;
+		background-color: $body-color;
 		border-top: none;
 		padding: $sapphire-sizes--small $sapphire-sizes--medium;
 		text-align: start;
@@ -75,7 +84,7 @@
 		}
 
 		&.Planned {
-			background-color: $light-grey;
+			background-color: $sapphire-light;
 			color: $regular-grey;
 		}
 

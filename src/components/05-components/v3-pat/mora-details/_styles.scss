@@ -1,0 +1,17 @@
+.MoreDetails {
+	&_Content {
+		position: relative;
+
+		&:before {
+			background-color: $light-grey;
+			content: '';
+			display: block;
+			height: 1px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			z-index: -1;
+		}
+	}
+}
