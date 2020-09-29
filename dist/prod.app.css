@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970014 || Generated: Tue Sep 29 2020 16:12:51 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970015 || Generated: Tue Sep 29 2020 17:59:02 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16992,57 +16992,58 @@ div.CircledArrow {
 .GenericGrid-item {
   border: dotted 1px green; }
 
-.GenericStructure-header {
+.GenericStructure-header-border--None .GenericStructure-content {
+  margin-top: 0; }
+
+.GenericStructure-header-border--Bottom .GenericStructure-header {
+  border-bottom: 1px solid #d6d6d6; }
+
+.GenericStructure .GenericStructure-header {
   -webkit-box-align: center;
           align-items: center;
   display: -webkit-box;
   display: flex;
-  margin-bottom: 16px; }
+  padding-bottom: 16px; }
+  .GenericStructure .GenericStructure-header .GenericStructure-header-content {
+    max-width: 70%; }
+  .GenericStructure .GenericStructure-header .GenericStructure-header-actions {
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    text-align: right;
+    white-space: nowrap; }
+    .GenericStructure .GenericStructure-header .GenericStructure-header-actions .OSInline {
+      vertical-align: middle; }
 
-.GenericStructure-header-content {
-  max-width: 70%; }
-
-.GenericStructure-header-actions {
-  -webkit-box-flex: 1;
-          flex-grow: 1;
-  text-align: right;
-  white-space: nowrap; }
-
-.GenericStructure-header-actions .OSInline {
-  vertical-align: middle; }
-
-.GenericStructure-subheader {
+.GenericStructure .GenericStructure-subheader {
   display: -webkit-box;
   display: flex; }
+  .GenericStructure .GenericStructure-subheader .GenericStructure-subheader-content {
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    margin-bottom: 24px; }
+  .GenericStructure .GenericStructure-subheader .GenericStructure-subheader-actions {
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    margin-bottom: 24px;
+    text-align: right; }
 
-.GenericStructure-subheader-content {
-  -webkit-box-flex: 1;
-          flex-grow: 1;
+.GenericStructure .GenericStructure-content {
+  margin-top: 16px; }
+
+.GenericStructure .GenericStructure-section {
   margin-bottom: 24px; }
-
-.GenericStructure-subheader-actions {
-  -webkit-box-flex: 1;
-          flex-grow: 1;
-  margin-bottom: 24px;
-  text-align: right; }
-
-.GenericStructure-section {
-  margin-bottom: 24px; }
-
-.GenericStructure-section-header {
-  -webkit-box-align: end;
-          align-items: flex-end;
-  display: -webkit-box;
-  display: flex; }
-
-.GenericStructure-section-header-content {
-  max-width: 70%; }
-
-.GenericStructure-section-header-actions {
-  -webkit-box-flex: 1;
-          flex-grow: 1;
-  text-align: right;
-  white-space: nowrap; }
+  .GenericStructure .GenericStructure-section .GenericStructure-section-header {
+    -webkit-box-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: flex; }
+  .GenericStructure .GenericStructure-section .GenericStructure-section-header-content {
+    max-width: 70%; }
+  .GenericStructure .GenericStructure-section .GenericStructure-section-header-actions {
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    text-align: right;
+    white-space: nowrap; }
 
 .GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-content,
 .GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-actions {
@@ -20462,6 +20463,7 @@ body.PanelById.PanelOpened {
     .PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
       color: #777777; }
   .PersonCard__headerLeftInfo.Red {
+    background-color: #fff;
     color: #333333; }
     .PersonCard__headerLeftInfo.Red .PersonCardIcon {
       background-color: #fad5d5; }
@@ -28902,315 +28904,135 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
     display: -webkit-box;
     display: flex; }
 
-.Page .Beige,
-.LayoutPopup .Beige,
-.LayoutBlank .Beige,
-.LayoutBase .Beige,
-.DesignSystem .Beige {
+.Beige {
   background-color: #e6e2aa; }
 
-.Page .DarkBeige,
-.LayoutPopup .DarkBeige,
-.LayoutBlank .DarkBeige,
-.LayoutBase .DarkBeige,
-.DesignSystem .DarkBeige {
+.DarkBeige {
   background-color: #928d09; }
 
-.Page .Black,
-.LayoutPopup .Black,
-.LayoutBlank .Black,
-.LayoutBase .Black,
-.DesignSystem .Black {
+.Black {
   background-color: #131819; }
 
-.Page .BlueLight,
-.LayoutPopup .BlueLight,
-.LayoutBlank .BlueLight,
-.LayoutBase .BlueLight,
-.DesignSystem .BlueLight {
+.BlueLight {
   background-color: #d9f5f1; }
 
-.Page .BlueNavy,
-.LayoutPopup .BlueNavy,
-.LayoutBlank .BlueNavy,
-.LayoutBase .BlueNavy,
-.DesignSystem .BlueNavy {
+.BlueNavy {
   background-color: #d9f5f1; }
 
-.Page .Blue,
-.LayoutPopup .Blue,
-.LayoutBlank .Blue,
-.LayoutBase .Blue,
-.DesignSystem .Blue {
+.Blue {
   background-color: #039be5; }
 
-.Page .DarkBlue,
-.LayoutPopup .DarkBlue,
-.LayoutBlank .DarkBlue,
-.LayoutBase .DarkBlue,
-.DesignSystem .DarkBlue {
+.DarkBlue {
   background-color: #194968; }
 
-.Page .DarkPlum,
-.LayoutPopup .DarkPlum,
-.LayoutBlank .DarkPlum,
-.LayoutBase .DarkPlum,
-.DesignSystem .DarkPlum {
+.DarkPlum {
   background-color: #ca2c92; }
 
-.Page .DarkRed,
-.LayoutPopup .DarkRed,
-.LayoutBlank .DarkRed,
-.LayoutBase .DarkRed,
-.DesignSystem .DarkRed {
+.DarkRed {
   background-color: #b10100; }
 
-.Page .Grey,
-.Page .Gray,
-.LayoutPopup .Grey,
-.LayoutPopup .Gray,
-.LayoutBlank .Grey,
-.LayoutBlank .Gray,
-.LayoutBase .Grey,
-.LayoutBase .Gray,
-.DesignSystem .Grey,
-.DesignSystem .Gray {
+.Grey,
+.Gray {
   background-color: #777777; }
 
-.Page .Green,
-.LayoutPopup .Green,
-.LayoutBlank .Green,
-.LayoutBase .Green,
-.DesignSystem .Green {
+.Green {
   background-color: #7cb342; }
 
-.Page .LightGreen,
-.LayoutPopup .LightGreen,
-.LayoutBlank .LightGreen,
-.LayoutBase .LightGreen,
-.DesignSystem .LightGreen {
+.LightGreen {
   background-color: #c2dea8; }
 
-.Page .LightRed,
-.LayoutPopup .LightRed,
-.LayoutBlank .LightRed,
-.LayoutBase .LightRed,
-.DesignSystem .LightRed {
+.LightRed {
   background-color: #fad5d5; }
 
-.Page .LightYellow,
-.LayoutPopup .LightYellow,
-.LayoutBlank .LightYellow,
-.LayoutBase .LightYellow,
-.DesignSystem .LightYellow {
+.LightYellow {
   background-color: #ffeab5; }
 
-.Page .PinkLight,
-.LayoutPopup .PinkLight,
-.LayoutBlank .PinkLight,
-.LayoutBase .PinkLight,
-.DesignSystem .PinkLight {
+.PinkLight {
   background-color: #c892b3; }
 
-.Page .LightBlue2,
-.LayoutPopup .LightBlue2,
-.LayoutBlank .LightBlue2,
-.LayoutBase .LightBlue2,
-.DesignSystem .LightBlue2 {
+.LightBlue2 {
   background-color: #feeced; }
 
-.Page .PinkLight2,
-.LayoutPopup .PinkLight2,
-.LayoutBlank .PinkLight2,
-.LayoutBase .PinkLight2,
-.DesignSystem .PinkLight2 {
+.PinkLight2 {
   background-color: #feeced; }
 
-.Page .Orange,
-.LayoutPopup .Orange,
-.LayoutBlank .Orange,
-.LayoutBase .Orange,
-.DesignSystem .Orange {
+.Orange {
   background-color: #ffa000; }
 
-.Page .LightOrange,
-.LayoutPopup .LightOrange,
-.LayoutBlank .LightOrange,
-.LayoutBase .LightOrange,
-.DesignSystem .LightOrange {
+.LightOrange {
   background-color: #fcc891; }
 
-.Page .DarkOrange,
-.LayoutPopup .DarkOrange,
-.LayoutBlank .DarkOrange,
-.LayoutBase .DarkOrange,
-.DesignSystem .DarkOrange {
+.DarkOrange {
   background-color: #c37b03; }
 
-.Page .Plum,
-.LayoutPopup .Plum,
-.LayoutBlank .Plum,
-.LayoutBase .Plum,
-.DesignSystem .Plum {
+.Plum {
   background-color: #c32b87; }
 
-.Page .Red,
-.LayoutPopup .Red,
-.LayoutBlank .Red,
-.LayoutBase .Red,
-.DesignSystem .Red {
+.Red {
   background-color: #ff3e2d; }
 
-.Page .Silver,
-.LayoutPopup .Silver,
-.LayoutBlank .Silver,
-.LayoutBase .Silver,
-.DesignSystem .Silver {
+.Silver {
   background-color: #d6d6d6; }
 
-.Page .SapphireSilver,
-.LayoutPopup .SapphireSilver,
-.LayoutBlank .SapphireSilver,
-.LayoutBase .SapphireSilver,
-.DesignSystem .SapphireSilver {
+.SapphireSilver {
   background-color: #f3f3f3; }
 
-.Page .Turquoise,
-.LayoutPopup .Turquoise,
-.LayoutBlank .Turquoise,
-.LayoutBase .Turquoise,
-.DesignSystem .Turquoise {
+.Turquoise {
   background-color: #039be5; }
 
-.Page .LightTurquoise,
-.LayoutPopup .LightTurquoise,
-.LayoutBlank .LightTurquoise,
-.LayoutBase .LightTurquoise,
-.DesignSystem .LightTurquoise {
+.LightTurquoise {
   background-color: #d9f5f1; }
 
-.Page .White,
-.LayoutPopup .White,
-.LayoutBlank .White,
-.LayoutBase .White,
-.DesignSystem .White {
+.White {
   background-color: #ffffff; }
 
-.Page .Yellow,
-.LayoutPopup .Yellow,
-.LayoutBlank .Yellow,
-.LayoutBase .Yellow,
-.DesignSystem .Yellow {
+.Yellow {
   background-color: #fbc02d; }
 
-.Page .BodyColor,
-.LayoutPopup .BodyColor,
-.LayoutBlank .BodyColor,
-.LayoutBase .BodyColor,
-.DesignSystem .BodyColor {
+.BodyColor {
   background-color: #f3f3f3; }
 
-.Page .SapphireBlue,
-.LayoutPopup .SapphireBlue,
-.LayoutBlank .SapphireBlue,
-.LayoutBase .SapphireBlue,
-.DesignSystem .SapphireBlue {
+.SapphireBlue {
   background-color: #2a5a6e; }
 
-.Page .SapphireBlue2,
-.LayoutPopup .SapphireBlue2,
-.LayoutBlank .SapphireBlue2,
-.LayoutBase .SapphireBlue2,
-.DesignSystem .SapphireBlue2 {
+.SapphireBlue2 {
   background-color: #00bfa5; }
 
-.Page .SapphireClinician,
-.Page .clinicianBackground-bg,
-.LayoutPopup .SapphireClinician,
-.LayoutPopup .clinicianBackground-bg,
-.LayoutBlank .SapphireClinician,
-.LayoutBlank .clinicianBackground-bg,
-.LayoutBase .SapphireClinician,
-.LayoutBase .clinicianBackground-bg,
-.DesignSystem .SapphireClinician,
-.DesignSystem .clinicianBackground-bg {
+.SapphireClinician,
+.clinicianBackground-bg {
   background-color: #d6d6d6; }
 
-.Page .SapphireDarkBlue1,
-.LayoutPopup .SapphireDarkBlue1,
-.LayoutBlank .SapphireDarkBlue1,
-.LayoutBase .SapphireDarkBlue1,
-.DesignSystem .SapphireDarkBlue1 {
+.SapphireDarkBlue1 {
   background-color: #333333; }
 
-.Page .SapphireDarkBlue2,
-.LayoutPopup .SapphireDarkBlue2,
-.LayoutBlank .SapphireDarkBlue2,
-.LayoutBase .SapphireDarkBlue2,
-.DesignSystem .SapphireDarkBlue2 {
+.SapphireDarkBlue2 {
   background-color: #30384a; }
 
-.Page .SapphireDarkGrey,
-.LayoutPopup .SapphireDarkGrey,
-.LayoutBlank .SapphireDarkGrey,
-.LayoutBase .SapphireDarkGrey,
-.DesignSystem .SapphireDarkGrey {
+.SapphireDarkGrey {
   background-color: #777777; }
 
-.Page .SapphireDarkText,
-.LayoutPopup .SapphireDarkText,
-.LayoutBlank .SapphireDarkText,
-.LayoutBase .SapphireDarkText,
-.DesignSystem .SapphireDarkText {
+.SapphireDarkText {
   background-color: #333333; }
 
-.Page .SapphireMale,
-.LayoutPopup .SapphireMale,
-.LayoutBlank .SapphireMale,
-.LayoutBase .SapphireMale,
-.DesignSystem .SapphireMale {
+.SapphireMale {
   background-color: #194968; }
 
-.Page .SapphireFemale,
-.LayoutPopup .SapphireFemale,
-.LayoutBlank .SapphireFemale,
-.LayoutBase .SapphireFemale,
-.DesignSystem .SapphireFemale {
+.SapphireFemale {
   background-color: #ca2c92; }
 
-.Page .SapphireInactive,
-.LayoutPopup .SapphireInactive,
-.LayoutBlank .SapphireInactive,
-.LayoutBase .SapphireInactive,
-.DesignSystem .SapphireInactive {
+.SapphireInactive {
   background-color: #adadad; }
 
-.Page .SapphireLightBoard,
-.LayoutPopup .SapphireLightBoard,
-.LayoutBlank .SapphireLightBoard,
-.LayoutBase .SapphireLightBoard,
-.DesignSystem .SapphireLightBoard {
+.SapphireLightBoard {
   background-color: #d6d6d6; }
 
-.Page .SapphireLightContainer,
-.LayoutPopup .SapphireLightContainer,
-.LayoutBlank .SapphireLightContainer,
-.LayoutBase .SapphireLightContainer,
-.DesignSystem .SapphireLightContainer {
+.SapphireLightContainer {
   background-color: #ebebeb; }
 
-.Page .SapphireLightText,
-.LayoutPopup .SapphireLightText,
-.LayoutBlank .SapphireLightText,
-.LayoutBase .SapphireLightText,
-.DesignSystem .SapphireLightText {
+.SapphireLightText {
   background-color: #f3f3f3; }
 
-.Page .SapphireWarning,
-.LayoutPopup .SapphireWarning,
-.LayoutBlank .SapphireWarning,
-.LayoutBase .SapphireWarning,
-.DesignSystem .SapphireWarning {
+.SapphireWarning {
   background-color: #ff3e2d; }
 
 .tablet .BaseFont40,
@@ -29326,7 +29148,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
     -servicestudio-background-color: #fff;
     -webkit-box-flex: 5;
             flex: 5;
-    margin-left: 20px;
+    margin-left: 16px;
     padding: 0;
     -servicestudio-width: 75% !important; }
     .GraphStructure > div:last-child div {
