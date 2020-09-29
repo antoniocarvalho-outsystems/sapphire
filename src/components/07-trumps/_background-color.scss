@@ -1,180 +1,174 @@
-.Page,
-.LayoutPopup,
-.LayoutBlank,
-.LayoutBase,
-.DesignSystem {
-	// Go to 06-helpers/_colors.scss to see the new classes
-	.Beige {
-		background-color: $regular-beige;
-	}
+// Go to 06-helpers/_colors.scss to see the new classes
+.Beige {
+	background-color: $regular-beige;
+}
 
-	.DarkBeige {
-		background-color: $dark-beige;
-	}
+.DarkBeige {
+	background-color: $dark-beige;
+}
 
-	.Black {
-		background-color: $regular-black;
-	}
+.Black {
+	background-color: $regular-black;
+}
 
-	.BlueLight {
-		background-color: $light-blue;
-	}
+.BlueLight {
+	background-color: $light-blue;
+}
 
-	.BlueNavy {
-		background-color: $light-blue;
-	}
+.BlueNavy {
+	background-color: $light-blue;
+}
 
-	.Blue {
-		background-color: $regular-blue;
-	}
+.Blue {
+	background-color: $regular-blue;
+}
 
-	.DarkBlue {
-		background-color: $dark-blue;
-	}
+.DarkBlue {
+	background-color: $dark-blue;
+}
 
-	.DarkPlum {
-		background-color: $dark-plum;
-	}
+.DarkPlum {
+	background-color: $dark-plum;
+}
 
-	.DarkRed {
-		background-color: $dark-red;
-	}
+.DarkRed {
+	background-color: $dark-red;
+}
 
-	.Grey,
-	.Gray {
-		background-color: $regular-grey;
-	}
+.Grey,
+.Gray {
+	background-color: $regular-grey;
+}
 
-	.Green {
-		background-color: $regular-green;
-	}
+.Green {
+	background-color: $regular-green;
+}
 
-	.LightGreen {
-		background-color: $light-green;
-	}
+.LightGreen {
+	background-color: $light-green;
+}
 
-	.LightRed {
-		background-color: $light-red;
-	}
+.LightRed {
+	background-color: $light-red;
+}
 
-	.LightYellow {
-		background-color: $light-yellow;
-	}
+.LightYellow {
+	background-color: $light-yellow;
+}
 
-	.PinkLight {
-		background-color: $pink-light;
-	}
+.PinkLight {
+	background-color: $pink-light;
+}
 
-	.LightBlue2 {
-		background-color: $light-pink-2;
-	}
+.LightBlue2 {
+	background-color: $light-pink-2;
+}
 
-	.PinkLight2 {
-		background-color: $light-pink-2;
-	}
+.PinkLight2 {
+	background-color: $light-pink-2;
+}
 
-	.Orange {
-		background-color: $regular-orange;
-	}
+.Orange {
+	background-color: $regular-orange;
+}
 
-	.LightOrange {
-		background-color: $light-orange;
-	}
+.LightOrange {
+	background-color: $light-orange;
+}
 
-	.DarkOrange {
-		background-color: $dark-orange;
-	}
+.DarkOrange {
+	background-color: $dark-orange;
+}
 
-	.Plum {
-		background-color: $regular-plum;
-	}
+.Plum {
+	background-color: $regular-plum;
+}
 
-	.Red {
-		background-color: $regular-red;
-	}
+.Red {
+	background-color: $regular-red;
+}
 
-	.Silver {
-		background-color: $regular-silver;
-	}
+.Silver {
+	background-color: $regular-silver;
+}
 
-	.SapphireSilver {
-		background-color: $body-color;
-	}
+.SapphireSilver {
+	background-color: $body-color;
+}
 
-	.Turquoise {
-		background-color: $regular-blue;
-	}
+.Turquoise {
+	background-color: $regular-blue;
+}
 
-	.LightTurquoise {
-		background-color: $light-blue;
-	}
+.LightTurquoise {
+	background-color: $light-blue;
+}
 
-	.White {
-		background-color: $sapphire-white;
-	}
+.White {
+	background-color: $sapphire-white;
+}
 
-	.Yellow {
-		background-color: $regular-yellow;
-	}
+.Yellow {
+	background-color: $regular-yellow;
+}
 
-	.BodyColor {
-		background-color: $body-color;
-	}
+.BodyColor {
+	background-color: $body-color;
+}
 
-	.SapphireBlue {
-		background-color: $sapphire-blue;
-	}
+.SapphireBlue {
+	background-color: $sapphire-blue;
+}
 
-	.SapphireBlue2 {
-		background-color: $regular-alpha;
-	}
+.SapphireBlue2 {
+	background-color: $regular-alpha;
+}
 
-	.SapphireClinician,
-	.clinicianBackground-bg {
-		background-color: $sapphire-clinician;
-	}
+.SapphireClinician,
+.clinicianBackground-bg {
+	background-color: $sapphire-clinician;
+}
 
-	.SapphireDarkBlue1 {
-		background-color: $dark-grey;
-	}
+.SapphireDarkBlue1 {
+	background-color: $dark-grey;
+}
 
-	.SapphireDarkBlue2 {
-		background-color: $sapphire-dark-blue;
-	}
+.SapphireDarkBlue2 {
+	background-color: $sapphire-dark-blue;
+}
 
-	.SapphireDarkGrey {
-		background-color: $regular-grey;
-	}
+.SapphireDarkGrey {
+	background-color: $regular-grey;
+}
 
-	.SapphireDarkText {
-		background-color: $dark-grey;
-	}
+.SapphireDarkText {
+	background-color: $dark-grey;
+}
 
-	.SapphireMale {
-		background-color: $dark-blue;
-	}
+.SapphireMale {
+	background-color: $dark-blue;
+}
 
-	.SapphireFemale {
-		background-color: $light-pink;
-	}
+.SapphireFemale {
+	background-color: $light-pink;
+}
 
-	.SapphireInactive {
-		background-color: $mid-light-grey;
-	}
+.SapphireInactive {
+	background-color: $mid-light-grey;
+}
 
-	.SapphireLightBoard {
-		background-color: $light-grey;
-	}
+.SapphireLightBoard {
+	background-color: $light-grey;
+}
 
-	.SapphireLightContainer {
-		background-color: $sapphire-light-container;
-	}
+.SapphireLightContainer {
+	background-color: $sapphire-light-container;
+}
 
-	.SapphireLightText {
-		background-color: $body-color;
-	}
+.SapphireLightText {
+	background-color: $body-color;
+}
 
-	.SapphireWarning {
-		background-color: $regular-red;
-	}
+.SapphireWarning {
+	background-color: $regular-red;
 }

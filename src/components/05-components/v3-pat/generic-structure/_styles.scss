@@ -1,58 +1,76 @@
 $GenericStrutucre-color-border: $light-grey;
 $GenericStrutucre-color-title-underline: $regular-alpha;
 
-.GenericStructure-header {
-	align-items: center;
-	display: flex;
-	margin-bottom: $sapphire-sizes--medium;
-}
+.GenericStructure {
+	&-header-border--None {
+		.GenericStructure-content {
+			margin-top: 0;
+		}
+	}
 
-.GenericStructure-header-content {
-	max-width: 70%;
-}
+	&-header-border--Bottom {
+		.GenericStructure-header {
+			border-bottom: 1px solid $light-grey;
+		}
+	}
 
-.GenericStructure-header-actions {
-	flex-grow: 1;
-	text-align: right;
-	white-space: nowrap;
-}
+	.GenericStructure-header {
+		align-items: center;
+		display: flex;
+		padding-bottom: $sapphire-sizes--medium;
 
-.GenericStructure-header-actions .OSInline {
-	vertical-align: middle;
-}
+		.GenericStructure-header-content {
+			max-width: 70%;
+		}
 
-.GenericStructure-subheader {
-	display: flex;
-}
+		.GenericStructure-header-actions {
+			flex-grow: 1;
+			text-align: right;
+			white-space: nowrap;
 
-.GenericStructure-subheader-content {
-	flex-grow: 1;
-	margin-bottom: $sapphire-sizes--large;
-}
+			.OSInline {
+				vertical-align: middle;
+			}
+		}
+	}
 
-.GenericStructure-subheader-actions {
-	flex-grow: 1;
-	margin-bottom: $sapphire-sizes--large;
-	text-align: right;
-}
+	.GenericStructure-subheader {
+		display: flex;
 
-.GenericStructure-section {
-	margin-bottom: $sapphire-sizes--large;
-}
+		.GenericStructure-subheader-content {
+			flex-grow: 1;
+			margin-bottom: $sapphire-sizes--large;
+		}
 
-.GenericStructure-section-header {
-	align-items: flex-end;
-	display: flex;
-}
+		.GenericStructure-subheader-actions {
+			flex-grow: 1;
+			margin-bottom: $sapphire-sizes--large;
+			text-align: right;
+		}
+	}
 
-.GenericStructure-section-header-content {
-	max-width: 70%;
-}
+	.GenericStructure-content {
+		margin-top: $sapphire-sizes--medium;
+	}
 
-.GenericStructure-section-header-actions {
-	flex-grow: 1;
-	text-align: right;
-	white-space: nowrap;
+	.GenericStructure-section {
+		margin-bottom: $sapphire-sizes--large;
+
+		.GenericStructure-section-header {
+			align-items: flex-end;
+			display: flex;
+		}
+
+		.GenericStructure-section-header-content {
+			max-width: 70%;
+		}
+
+		.GenericStructure-section-header-actions {
+			flex-grow: 1;
+			text-align: right;
+			white-space: nowrap;
+		}
+	}
 }
 
 .GenericStructure-header-border--GrayBorder > .GenericStructure-header > .GenericStructure-header-content,
