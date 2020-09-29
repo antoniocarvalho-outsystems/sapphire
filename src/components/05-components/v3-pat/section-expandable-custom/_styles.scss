@@ -16,13 +16,13 @@
 
 	&.expanded {
 		.SectionExpandable_headerCustom {
-			border-radius: $border-radius-default $border-radius-default 0 0;
+			border-radius: $border-radius-medium $border-radius-medium 0 0;
 		}
 
 		.SectionExpandableCustom_content {
 			background-color: $regular-white;
 			border: 1px solid $light-grey;
-			border-radius: 0 0 $border-radius-default $border-radius-default;
+			border-radius: 0 0 $border-radius-medium $border-radius-medium;
 			border-top: none;
 			height: auto !important;
 		}
@@ -88,7 +88,7 @@
 		&_headerCustom {
 			background-color: $regular-white;
 			border: 1px solid $light-grey;
-			border-radius: $border-radius-default;
+			border-radius: $border-radius-medium;
 			cursor: pointer;
 			display: table;
 			height: 62px;
@@ -107,8 +107,8 @@
 	}
 
 	.SectionExpandable_contentCustom {
-		border-bottom-left-radius: $border-radius-default;
-		border-bottom-right-radius: $border-radius-default;
+		border-bottom-left-radius: $border-radius-medium;
+		border-bottom-right-radius: $border-radius-medium;
 		border-top: none;
 		box-sizing: content-box;
 		height: 0;

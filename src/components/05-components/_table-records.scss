@@ -180,12 +180,6 @@
 
 	&_Wrapper {
 		&.NoResponsive {
-			.TableRecords.ExpandableRows td .ExpandLink {
-				span.fa {
-					@include arrow-down-simple;
-				}
-			}
-
 			th.TableRecords_Header {
 				border-top: 1px solid $light-grey;
 
@@ -285,19 +279,15 @@
 		&.open {
 			display: table-row;
 			visibility: visible;
-
-			> td {
-				&:last-child {
-					display: none;
-				}
-			}
 		}
 
-		> td {
-			&,
-			&:first-child,
-			&:last-child {
-				padding: 0 !important;
+		&.TableContainerExpandable {
+			> td {
+				&,
+				&:first-child,
+				&:last-child {
+					padding: 0 !important;
+				}
 			}
 		}
 	}
