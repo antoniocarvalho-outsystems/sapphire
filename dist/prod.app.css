@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970013 || Generated: Tue Sep 29 2020 11:31:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970014 || Generated: Tue Sep 29 2020 16:12:51 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10059,14 +10059,6 @@ div.LineInfo {
     padding: 10px;
     text-align: left;
     vertical-align: top; }
-  .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span.fa {
-    border-bottom: 5px solid #00ac94;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    height: 0;
-    width: 0; }
-    .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span.fa:after, .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span.fa:before {
-      content: ''; }
   .TableRecords_Wrapper.NoResponsive th.TableRecords_Header {
     border-top: 1px solid #d6d6d6; }
     .TableRecords_Wrapper.NoResponsive th.TableRecords_Header:first-child {
@@ -10117,9 +10109,7 @@ div.LineInfo {
     .TableRecords .TableRowExpandable.open {
       display: table-row;
       visibility: visible; }
-      .TableRecords .TableRowExpandable.open > td:last-child {
-        display: none; }
-    .TableRecords .TableRowExpandable > td, .TableRecords .TableRowExpandable > td:first-child, .TableRecords .TableRowExpandable > td:last-child {
+    .TableRecords .TableRowExpandable.TableContainerExpandable > td, .TableRecords .TableRowExpandable.TableContainerExpandable > td:first-child, .TableRecords .TableRowExpandable.TableContainerExpandable > td:last-child {
       padding: 0 !important; }
 
 .AR .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:first-child,
@@ -20510,7 +20500,7 @@ body.PanelById.PanelOpened {
   .PersonCard__headerLeftInfo.Full {
     flex-basis: 100%; }
   .PersonCard__headerLeftInfo .PersonCard___flag {
-    margin-left: 10px; }
+    margin-left: 8px; }
     .PersonCard__headerLeftInfo .PersonCard___flag .FlagContainer {
       height: auto; }
 
@@ -23287,12 +23277,12 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   display: none; }
 
 .SectionExpandableCustom.expanded .SectionExpandable_headerCustom {
-  border-radius: 4px 4px 0 0; }
+  border-radius: 8px 8px 0 0; }
 
 .SectionExpandableCustom.expanded .SectionExpandableCustom_content {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 8px 8px;
   border-top: none;
   height: auto !important; }
 
@@ -23364,7 +23354,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .SectionExpandableCustom .SectionExpandable_headerCustom {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   display: table;
   height: 62px;
@@ -23383,8 +23373,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     transition: transform 0.5s, -webkit-transform 0.5s; }
 
 .SectionExpandableCustom .SectionExpandable_contentCustom {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-top: none;
   box-sizing: content-box;
   height: 0;

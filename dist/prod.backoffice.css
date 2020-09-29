@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.970013 || Generated: Tue Sep 29 2020 11:31:01 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.970014 || Generated: Tue Sep 29 2020 16:12:51 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3211,14 +3211,6 @@ div[onclick] {
     padding: 10px;
     text-align: left;
     vertical-align: top; }
-  .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span.fa {
-    border-bottom: 5px solid #00ac94;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    height: 0;
-    width: 0; }
-    .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span.fa:after, .TableRecords_Wrapper.NoResponsive .TableRecords.ExpandableRows td .ExpandLink span.fa:before {
-      content: ''; }
   .TableRecords_Wrapper.NoResponsive th.TableRecords_Header {
     border-top: 1px solid #d6d6d6; }
     .TableRecords_Wrapper.NoResponsive th.TableRecords_Header:first-child {
@@ -3269,9 +3261,7 @@ div[onclick] {
     .TableRecords .TableRowExpandable.open {
       display: table-row;
       visibility: visible; }
-      .TableRecords .TableRowExpandable.open > td:last-child {
-        display: none; }
-    .TableRecords .TableRowExpandable > td, .TableRecords .TableRowExpandable > td:first-child, .TableRecords .TableRowExpandable > td:last-child {
+    .TableRecords .TableRowExpandable.TableContainerExpandable > td, .TableRecords .TableRowExpandable.TableContainerExpandable > td:first-child, .TableRecords .TableRowExpandable.TableContainerExpandable > td:last-child {
       padding: 0 !important; }
 
 .AR .TableRecords.CustomTable.ExpandableRows > tbody tr.ActiveRow td:first-child,
