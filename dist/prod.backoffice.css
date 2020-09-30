@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.970015 || Generated: Tue Sep 29 2020 17:59:02 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.970016 || Generated: Wed Sep 30 2020 18:00:45 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3504,29 +3504,11 @@ div[onclick] {
       visibility: visible; }
     .DateTimeRangePicker.textTrigger .DateTimeRangePicker-clear {
       line-height: unset; }
-  .DateTimeRangePicker.rangeDates .DateTimeRangePicker-displayed:before {
-    color: #00bfa5;
-    content: '\e60b';
-    font-family: "Sapphire-Icon-Font";
-    position: absolute;
-    right: 9px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
   .DateTimeRangePicker.rangeDates .DateTimeRangePicker-displayed input[type] {
     min-width: 210px;
     width: 100%; }
   .DateTimeRangePicker-input {
     position: relative; }
-    .DateTimeRangePicker-input:before {
-      color: #00bfa5;
-      content: '\e60b';
-      font-family: "Sapphire-Icon-Font";
-      position: absolute;
-      right: 9px;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
     .DateTimeRangePicker-input input[type='text'] {
       padding-right: 25px; }
   .DateTimeRangePicker-placeholder {
@@ -3548,6 +3530,15 @@ div[onclick] {
       white-space: initial; }
     .DateTimeRangePicker-displayed input[type='text'] {
       width: 100%; }
+  .DateTimeRangePicker-input:before, .DateTimeRangePicker-displayed:before {
+    color: #00bfa5;
+    content: '\e60b';
+    font-family: "Sapphire-Icon-Font";
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
   .DateTimeRangePicker-hidden input[type='text'] {
     border: none !important;
     height: 15px !important;

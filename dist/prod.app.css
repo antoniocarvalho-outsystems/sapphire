@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970015 || Generated: Tue Sep 29 2020 17:59:02 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970016 || Generated: Wed Sep 30 2020 18:00:45 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10568,46 +10568,28 @@ div.LineInfo {
 .HasItemSelected .CounterBox:not(.SelectedWardBx) {
   opacity: 0.5; }
 
-.WardTotalContainer:not(:first-child) {
-  padding-left: 10px; }
-
-.WardTotalContainer .WardCounterOccupied .WardNumber {
-  border-top: 3px solid #adadad;
-  color: #adadad; }
-
-.WardTotalContainer .WardCounterVacant .WardNumber {
-  border-top: 3px solid #578329;
-  color: #578329; }
-
-.WardTotalContainer .WardCounterReserved .WardNumber {
-  border-top: 3px solid #928d09;
-  color: #928d09; }
-
-.WardTotalContainer .WardCounterPlanned .WardNumber {
-  border-top: 3px solid #777777;
-  color: #777777; }
-
-.WardTotalContainer .WardCounterPlanned .WardState {
-  border-right: none; }
-
-.WardTotalContainer .WardNumber {
-  border-top: 3px solid transparent;
-  font-family: "LatoBold";
-  margin-top: -3px; }
-
-.WardTotalContainer .WardState {
-  margin-left: 5px;
-  padding-right: 10px; }
-
-.AR .WardCounterAll,
-.FA .WardCounterAll {
-  padding-left: 10px; }
-
-.AR .WardState,
-.FA .WardState {
-  border-left: 1px solid #e0e1e3;
-  border-right: 0;
-  padding-left: 10px; }
+.WardTotalContainer {
+  display: -webkit-box;
+  display: flex;
+  gap: 16px;
+  line-height: 36px; }
+  .WardTotalContainer > div {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex; }
+  .WardTotalContainer .WardState {
+    line-height: 20px;
+    white-space: nowrap; }
+    .WardTotalContainer .WardState::after {
+      content: ' \00B7';
+      display: inline-block;
+      font-size: 0.786em;
+      margin: 0 4px; }
+  .WardTotalContainer .WardNumber {
+    color: #333333;
+    font-family: "LatoBold";
+    font-size: 1.143em; }
 
 .WizardParent {
   border: 1px solid #d6d6d6;
@@ -11029,11 +11011,12 @@ div.LineInfo {
   margin-top: 24px;
   opacity: 1;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   width: calc(100% - 32px); }
   .LayoutBase--sideMenu .LayoutBase-topfixedcontent .ManageQueueContainer--closed {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
   .LayoutBase--sideMenu .LayoutBase-topfixedcontent .ManageQueueContainer .Columns .Column > div {
     height: 90px; }
 
@@ -14888,29 +14871,11 @@ div.CircledArrow {
       visibility: visible; }
     .DateTimeRangePicker.textTrigger .DateTimeRangePicker-clear {
       line-height: unset; }
-  .DateTimeRangePicker.rangeDates .DateTimeRangePicker-displayed:before {
-    color: #00bfa5;
-    content: '\e60b';
-    font-family: "Sapphire-Icon-Font";
-    position: absolute;
-    right: 9px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
   .DateTimeRangePicker.rangeDates .DateTimeRangePicker-displayed input[type] {
     min-width: 210px;
     width: 100%; }
   .DateTimeRangePicker-input {
     position: relative; }
-    .DateTimeRangePicker-input:before {
-      color: #00bfa5;
-      content: '\e60b';
-      font-family: "Sapphire-Icon-Font";
-      position: absolute;
-      right: 9px;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
     .DateTimeRangePicker-input input[type='text'] {
       padding-right: 25px; }
   .DateTimeRangePicker-placeholder {
@@ -14932,6 +14897,15 @@ div.CircledArrow {
       white-space: initial; }
     .DateTimeRangePicker-displayed input[type='text'] {
       width: 100%; }
+  .DateTimeRangePicker-input:before, .DateTimeRangePicker-displayed:before {
+    color: #00bfa5;
+    content: '\e60b';
+    font-family: "Sapphire-Icon-Font";
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
   .DateTimeRangePicker-hidden input[type='text'] {
     border: none !important;
     height: 15px !important;
