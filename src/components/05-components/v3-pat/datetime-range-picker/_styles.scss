@@ -42,16 +42,6 @@ $date-time-size-base: 40px;
 	&.rangeDates {
 		.DateTimeRangePicker {
 			&-displayed {
-				&:before {
-					color: $regular-alpha;
-					content: '\e60b';
-					font-family: $font-family-icons;
-					position: absolute;
-					right: 9px;
-					top: 50%;
-					transform: translateY(-50%);
-				}
-
 				input[type] {
 					min-width: 210px;
 					width: 100%;
@@ -62,16 +52,6 @@ $date-time-size-base: 40px;
 
 	&-input {
 		position: relative;
-
-		&:before {
-			color: $regular-alpha;
-			content: '\e60b';
-			font-family: $font-family-icons;
-			position: absolute;
-			right: 9px;
-			top: 50%;
-			transform: translateY(-50%);
-		}
 
 		input[type='text'] {
 			padding-right: 25px;
@@ -104,6 +84,19 @@ $date-time-size-base: 40px;
 
 		input[type='text'] {
 			width: 100%;
+		}
+	}
+
+	&-input,
+	&-displayed {
+		&:before {
+			color: $regular-alpha;
+			content: '\e60b';
+			font-family: $font-family-icons;
+			position: absolute;
+			right: 9px;
+			top: 50%;
+			transform: translateY(-50%);
 		}
 	}
 

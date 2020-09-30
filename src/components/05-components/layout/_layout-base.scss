@@ -349,11 +349,12 @@
 				margin-top: 24px;
 				opacity: 1;
 				position: absolute;
-				transition: opacity 0.3s ease-out;
+				transition: all 0.3s ease-out;
 				width: calc(100% - 32px);
 
 				&--closed {
 					opacity: 0;
+					visibility: hidden;
 				}
 
 				.Columns .Column > div {
