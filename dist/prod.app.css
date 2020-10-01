@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970018 || Generated: Thu Oct 01 2020 16:42:57 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970019 || Generated: Thu Oct 01 2020 18:08:06 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16938,7 +16938,7 @@ div.CircledArrow {
 .GenericGrid-item {
   border: dotted 1px green; }
 
-.GenericStructure-header-border--None .GenericStructure-content {
+.GenericStructure-header-border--None div.GenericStructure-content {
   margin-top: 0; }
 
 .GenericStructure-header-border--Bottom .GenericStructure-header {
@@ -20625,6 +20625,9 @@ body.PanelById.PanelOpened {
 .PersonCard span.verticalAlignHelper.Middle ~ * {
   vertical-align: top; }
 
+.ListRecords .PersonCard .PersonCard_header,
+.ListRecords > div:not(:last-of-type) .PersonCard .PersonCard_header,
+.ListRecords > span:not(:last-of-type) .PersonCard .PersonCard_header,
 .ListPersonCard .PersonCard .PersonCard_header,
 .ListPersonCard > div:not(:last-of-type) .PersonCard .PersonCard_header,
 .ListPersonCard > span:not(:last-of-type) .PersonCard .PersonCard_header {
