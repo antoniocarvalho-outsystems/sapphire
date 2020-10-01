@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970016 || Generated: Wed Sep 30 2020 18:00:45 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970017 || Generated: Thu Oct 01 2020 11:22:36 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22107,7 +22107,9 @@ div.List-Star {
     -webkit-box-align: center;
             align-items: center;
     display: -webkit-box;
-    display: flex; }
+    display: flex;
+    -webkit-box-flex: 1;
+            flex: 1; }
   .ScaleFilter_headerShowHide {
     align-self: center; }
     .ScaleFilter_headerShowHide a {
