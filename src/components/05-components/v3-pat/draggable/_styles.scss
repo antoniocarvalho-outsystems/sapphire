@@ -1,102 +1,49 @@
 .AppLine {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
-	font-size: 1em;
+	border-radius: $border-radius-medium;
+	overflow: hidden;
 	position: relative;
 
-	.WhiteB {
-		background-color: $regular-white;
-	}
+	.AppHeader {
+		flex-basis: 40%;
 
-	.AppInfo {
-		padding: 5px 5px 5px 10px;
-		width: 100%;
-	}
+		.AppDate {
+			> div.Clickable {
+				align-items: center;
+				display: flex;
+			}
 
-	.AppDate {
-		display: table-cell;
-		vertical-align: middle;
+			.CircledPatient {
+				font-size: 14px;
+				height: 48px;
+				line-height: 48px;
+				width: 48px;
+			}
 
-		.DoubleText div {
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-			width: 110px;
+			.DoubleText div {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				width: 110px;
+			}
 		}
 	}
 
-	.HeadActions {
-		&.WhiteB {
-			width: 10%;
-		}
+	.AppInfo,
+	.AppStatus {
+		flex: 1;
 	}
 
 	.DragLine {
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-		display: table;
-		line-height: 48px;
-		position: relative;
+		align-items: center;
+		display: inline-flex;
+		gap: $sapphire-sizes--medium;
+		padding: $sapphire-sizes--medium;
 		width: 100%;
-
-		> a:first-child {
-			border-left: none;
-			padding-left: 0;
-		}
-
-		> div {
-			display: table-cell;
-			vertical-align: middle;
-		}
-
-		> div:first-of-type > div {
-			display: table-cell;
-			line-height: 100%;
-			vertical-align: middle;
-		}
-
-		> div:not(:first-of-type) {
-			line-height: 100%;
-			// padding: 5px 10px;
-		}
-
-		> div:last-of-type {
-			line-height: 100%;
-			padding: 0;
-		}
-
-		> div:not(:first-of-type).HeadActions a {
-			padding: 17px;
-			padding-bottom: 28px;
-		}
-
-		> div:first-of-type {
-			background-color: $light-blue-2;
-			min-width: 200px;
-			vertical-align: middle;
-			width: 200px;
-		}
-
-		> div:first-of-type > div:first-of-type {
-			display: table;
-			margin: 0;
-			min-height: 64px;
-			padding: 0;
-			vertical-align: middle;
-			width: auto;
-		}
-
-		.AppDate {
-			color: $dark-grey;
-			width: 100%;
-		}
 
 		.HeadActions {
 			font-size: 0.857em;
-			line-height: 100%;
-			text-align: right;
-			vertical-align: middle;
-			white-space: nowrap;
-			width: 1%;
 
 			> a {
 				display: inline-block;
@@ -112,35 +59,25 @@
 				width: 16px;
 			}
 		}
-
-		.MoveLine {
-			display: table;
-			width: 100%;
-		}
 	}
 
 	.MoveLine {
-		color: $mid-light-grey;
+		align-items: center;
 		cursor: move;
-		font-size: 0.857em;
-		width: 20px;
+		display: flex;
+		gap: $sapphire-sizes--small;
 
 		> .icon {
-			font-size: 44px;
-			line-height: 64px;
+			color: $mid-light-grey;
+			font-size: 24px;
+			margin-left: -12px;
 		}
 	}
 
 	.LineLines {
 		background: $body-color;
-		box-shadow: 1px 3px 0 rgba(0, 0, 0, 0.1);
 		height: 100%;
 		padding: 0 10px;
-	}
-
-	.Draggable {
-		background-color: $light-blue-2;
-		border-bottom: none;
 	}
 
 	.DragBox {
@@ -175,6 +112,12 @@
 	}
 }
 
+.ListRecords {
+	.AppLine.DragBox:not(:last-of-type) {
+		margin-bottom: $sapphire-sizes--small;
+	}
+}
+
 .AR,
 .FA {
 	.AppLine {
@@ -195,3 +138,47 @@
 		}
 	}
 }
+
+// .DragBox.Moving {
+//   opacity: 0.25;
+// }
+
+// .DashboardWindow.Over {
+//   border: 2px dashed #000;
+// }
+
+// .DragBox.Over .dropTop,
+// .DragBox.OverBottom .dropBottom {
+//   border: 2px solid #0d4965;
+//   border-radius: 5px;
+//   padding: 0;
+// }
+
+// .DragBox.Over .dropTop {
+//   margin: 0 0 11px 0;
+// }
+
+// .DragBox.OverBottom .dropBottom {
+//   margin: 11px 0 0 0;
+// }
+
+// .dropBottom {
+//   line-height: 0;
+//   padding: 15px 0 0 0;
+// }
+
+// .dropBottom {
+//   line-height: 0;
+//   padding: 15px 0 0 0;
+// }
+
+// .Draggable {
+//   background-color: #e1ebee;
+//   border-bottom: 1px dashed #e1e1e1;
+//   cursor: move;
+//   height: 40px;
+//   left: 0;
+//   position: relative;
+//   top: 0;
+//   width: 100%;
+// }
