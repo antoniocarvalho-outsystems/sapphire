@@ -3,7 +3,7 @@ $GenericStrutucre-color-title-underline: $regular-alpha;
 
 .GenericStructure {
 	&-header-border--None {
-		.GenericStructure-content {
+		div.GenericStructure-content {
 			margin-top: 0;
 		}
 	}
