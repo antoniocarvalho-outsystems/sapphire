@@ -613,37 +613,39 @@ a {
 
 .tablet,
 .desktop.small .SideBarOpen {
-	.PersonCard {
-		&__Complementary {
-			&:empty ~ .PersonCard__headerLeftInfo {
-				flex-basis: 100%;
+	.PersonCard:not(.LeftSideHidden) {
+		.PersonCard {
+			&__Complementary {
+				&:empty ~ .PersonCard__headerLeftInfo {
+					flex-basis: 100%;
+				}
+
+				&:not(:empty) ~ .PersonCard__headerLeftInfo {
+					padding-left: $sapphire-sizes--medium;
+					padding-right: $sapphire-sizes--medium;
+				}
 			}
 
-			&:not(:empty) ~ .PersonCard__headerLeftInfo {
-				padding-left: $sapphire-sizes--medium;
-				padding-right: $sapphire-sizes--medium;
+			&_header {
+				flex-wrap: wrap;
 			}
-		}
 
-		&_header {
-			flex-wrap: wrap;
-		}
+			&__headerLeftInfo {
+				flex: 1;
+			}
 
-		&__headerLeftInfo {
-			flex: 1;
-		}
+			&__content {
+				border-top: 1px solid $light-grey;
+				flex-basis: 100% !important;
+				margin-left: 80px;
+				padding-left: 0 !important;
+			}
 
-		&__content {
-			border-top: 1px solid $light-grey;
-			flex-basis: 100% !important;
-			margin-left: 80px;
-			padding-left: 0 !important;
-		}
-
-		&__actions {
-			flex-basis: 100% !important;
-			max-width: none;
-			text-align: right;
+			&__actions {
+				flex-basis: 100% !important;
+				max-width: none;
+				text-align: right;
+			}
 		}
 	}
 
