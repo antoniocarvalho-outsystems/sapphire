@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970023 || Generated: Fri Oct 02 2020 14:57:55 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970024 || Generated: Fri Oct 02 2020 15:11:39 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20641,33 +20641,33 @@ a .PersonCard {
   a .PersonCard_expandable {
     display: none !important; }
 
-.tablet .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo,
-.desktop.small .SideBarOpen .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo {
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo {
   flex-basis: 100%; }
 
-.tablet .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo,
-.desktop.small .SideBarOpen .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
   padding-left: 16px;
   padding-right: 16px; }
 
-.tablet .PersonCard_header,
-.desktop.small .SideBarOpen .PersonCard_header {
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header {
   flex-wrap: wrap; }
 
-.tablet .PersonCard__headerLeftInfo,
-.desktop.small .SideBarOpen .PersonCard__headerLeftInfo {
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__headerLeftInfo,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__headerLeftInfo {
   -webkit-box-flex: 1;
           flex: 1; }
 
-.tablet .PersonCard__content,
-.desktop.small .SideBarOpen .PersonCard__content {
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__content,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__content {
   border-top: 1px solid #d6d6d6;
   flex-basis: 100% !important;
   margin-left: 80px;
   padding-left: 0 !important; }
 
-.tablet .PersonCard__actions,
-.desktop.small .SideBarOpen .PersonCard__actions {
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__actions,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__actions {
   flex-basis: 100% !important;
   max-width: none;
   text-align: right; }
