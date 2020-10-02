@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970019 || Generated: Thu Oct 01 2020 18:08:06 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970020 || Generated: Fri Oct 02 2020 09:22:47 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7703,7 +7703,7 @@ a.Button.IsDefault,
     transition: all 0.2s; }
 
 .CircledPatient {
-  background-color: #f3f3f3;
+  background-color: #ebebeb;
   border-radius: 50%;
   color: #5c5c5c;
   font-size: 10px;
@@ -20367,7 +20367,6 @@ body.PanelById.PanelOpened {
     background-color: #fad5d5;
     color: inherit; }
   .PersonCard_header .CircledPatient {
-    background-color: #ebebeb;
     font-size: 14px;
     height: 48px;
     line-height: 48px;
