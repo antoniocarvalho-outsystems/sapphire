@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970021 || Generated: Fri Oct 02 2020 10:40:16 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970022 || Generated: Fri Oct 02 2020 14:56:51 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20491,7 +20491,10 @@ body.PanelById.PanelOpened {
 .PersonCard__Complementary .PersonCardPreInfo {
   height: 100%; }
 
-.PersonCard___icon .PersonCardIcon {
+.PersonCard___icon:not(:empty) + .PersonCard____title {
+  margin-left: 16px; }
+
+.PersonCard .PersonCardIcon {
   -webkit-box-align: center;
           align-items: center;
   display: -webkit-inline-box;
@@ -20501,10 +20504,8 @@ body.PanelById.PanelOpened {
   background-color: #ebebeb;
   border-radius: 8px;
   height: 48px;
+  max-width: 48px;
   width: 48px; }
-
-.PersonCard___icon:not(:empty) + .PersonCard____title {
-  margin-left: 16px; }
 
 .PersonCard .CardAll {
   -webkit-box-align: center;
@@ -28782,9 +28783,11 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   padding: 10px 0; }
 
 .Hidden,
-.OSInline.Hidden,
-[class*='ThemeGrid_Width'].Hidden,
+.hidden,
 .dontshow {
+  display: none !important; }
+
+.PH:empty {
   display: none !important; }
 
 @media screen and (max-width: 0), screen and (min-width: 640px) {
@@ -33589,12 +33592,6 @@ html .PatientDetailsLayout {
   -webkit-box-ordinal-group: 1;
   order: 1;
   width: 100%; }
-
-.Hidden {
-  display: none; }
-
-.PH:empty {
-  display: none !important; }
 
 /*------------------------------------*\
               $3. Forms
