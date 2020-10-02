@@ -1,7 +1,10 @@
 .Hidden,
-.OSInline.Hidden,
-[class*='ThemeGrid_Width'].Hidden,
+.hidden,
 .dontshow {
+	display: none !important;
+}
+
+.PH:empty {
 	display: none !important;
 }
 

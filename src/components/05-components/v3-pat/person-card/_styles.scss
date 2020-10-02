@@ -410,18 +410,19 @@
 	}
 
 	&___icon {
-		.PersonCardIcon {
-			@include flex-center-total(inline-flex);
-
-			background-color: $sapphire-light;
-			border-radius: $border-radius-medium;
-			height: 48px;
-			width: 48px;
-		}
-
 		&:not(:empty) + .PersonCard____title {
 			margin-left: $sapphire-sizes--medium;
 		}
+	}
+
+	.PersonCardIcon {
+		@include flex-center-total(inline-flex);
+
+		background-color: $sapphire-light;
+		border-radius: $border-radius-medium;
+		height: 48px;
+		max-width: 48px;
+		width: 48px;
 	}
 
 	.CardAll {
