@@ -107,34 +107,6 @@ $prescriptionRadius: 18px;
 		}
 	}
 
-	.BadgesExtendedWrapper {
-		.PrescriptionBadges {
-			border-radius: 0;
-			font-family: $font-family-latin-bold;
-			font-size: $font-size-small;
-			//height: 15px;
-			line-height: 15px;
-			max-height: 20px;
-			padding: 0 10px;
-
-			&.Green.IsSelected {
-				@include badges($regular-green, $sapphire-white);
-			}
-
-			&.Red.IsSelected {
-				@include badges($regular-red, $sapphire-white);
-			}
-
-			&.Yellow.IsSelected {
-				@include badges($regular-yellow, $sapphire-white);
-			}
-
-			&.LightGrey.IsSelected {
-				@include badges($light-grey, $sapphire-white);
-			}
-		}
-	}
-
 	.BadgeClassification {
 		border-radius: 4px;
 		color: $sapphire-white;
