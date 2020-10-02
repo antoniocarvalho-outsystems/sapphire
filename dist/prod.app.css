@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970024 || Generated: Fri Oct 02 2020 15:11:39 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970025 || Generated: Fri Oct 02 2020 17:28:20 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12849,48 +12849,6 @@ div.ActionsMenu-item {
     .LayoutBase .StatusBadges .tablet .StatusBadges .Badges_Icon + div,
     .LayoutPopup .StatusBadges .tablet .StatusBadges .Badges_Icon + div {
       white-space: nowrap; }
-  .DesignSystem .BadgesExtendedWrapper .PrescriptionBadges,
-  .LayoutBlank .BadgesExtendedWrapper .PrescriptionBadges,
-  .LayoutBase .BadgesExtendedWrapper .PrescriptionBadges,
-  .LayoutPopup .BadgesExtendedWrapper .PrescriptionBadges {
-    border-radius: 0;
-    font-family: "LatoBold";
-    font-size: 0.857em;
-    line-height: 15px;
-    max-height: 20px;
-    padding: 0 10px; }
-    .DesignSystem .BadgesExtendedWrapper .PrescriptionBadges.Green.IsSelected,
-    .LayoutBlank .BadgesExtendedWrapper .PrescriptionBadges.Green.IsSelected,
-    .LayoutBase .BadgesExtendedWrapper .PrescriptionBadges.Green.IsSelected,
-    .LayoutPopup .BadgesExtendedWrapper .PrescriptionBadges.Green.IsSelected {
-      border: 1px solid #7cb342;
-      background-color: #7cb342;
-      border-radius: 2px;
-      color: #ffffff; }
-    .DesignSystem .BadgesExtendedWrapper .PrescriptionBadges.Red.IsSelected,
-    .LayoutBlank .BadgesExtendedWrapper .PrescriptionBadges.Red.IsSelected,
-    .LayoutBase .BadgesExtendedWrapper .PrescriptionBadges.Red.IsSelected,
-    .LayoutPopup .BadgesExtendedWrapper .PrescriptionBadges.Red.IsSelected {
-      border: 1px solid #ff3e2d;
-      background-color: #ff3e2d;
-      border-radius: 2px;
-      color: #ffffff; }
-    .DesignSystem .BadgesExtendedWrapper .PrescriptionBadges.Yellow.IsSelected,
-    .LayoutBlank .BadgesExtendedWrapper .PrescriptionBadges.Yellow.IsSelected,
-    .LayoutBase .BadgesExtendedWrapper .PrescriptionBadges.Yellow.IsSelected,
-    .LayoutPopup .BadgesExtendedWrapper .PrescriptionBadges.Yellow.IsSelected {
-      border: 1px solid #fbc02d;
-      background-color: #fbc02d;
-      border-radius: 2px;
-      color: #ffffff; }
-    .DesignSystem .BadgesExtendedWrapper .PrescriptionBadges.LightGrey.IsSelected,
-    .LayoutBlank .BadgesExtendedWrapper .PrescriptionBadges.LightGrey.IsSelected,
-    .LayoutBase .BadgesExtendedWrapper .PrescriptionBadges.LightGrey.IsSelected,
-    .LayoutPopup .BadgesExtendedWrapper .PrescriptionBadges.LightGrey.IsSelected {
-      border: 1px solid #d6d6d6;
-      background-color: #d6d6d6;
-      border-radius: 2px;
-      color: #ffffff; }
   .DesignSystem .BadgeClassification,
   .LayoutBlank .BadgeClassification,
   .LayoutBase .BadgeClassification,
