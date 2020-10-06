@@ -42,8 +42,8 @@ $IconLabel-color-text: $dark-grey;
 	}
 
 	&_label {
-		color: $IconLabel-color-text;
-		font-weight: normal;
+		color: $regular-grey;
+		font-family: $font-family-latin-regular;
 		text-decoration: none;
 
 		&.LabelGreen {

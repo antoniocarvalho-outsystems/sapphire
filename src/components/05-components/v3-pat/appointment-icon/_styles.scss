@@ -1,9 +1,9 @@
 .Page .Appointment_Icon {
-	border: 2px solid;
 	border-radius: 50%;
-	height: 20px;
-	min-width: 18px;
-	width: 20px;
+	height: $sapphire-sizes--medium;
+	line-height: $sapphire-sizes--medium;
+	min-width: $sapphire-sizes--medium;
+	width: $sapphire-sizes--medium;
 
 	&.circleSuccess {
 		background-color: $regular-alpha;
@@ -35,15 +35,12 @@
 	&.nopresence {
 		border: none;
 		color: $light-grey;
-		display: inline-block;
-		font-size: 1.429em;
-		line-height: 23px;
-		transform: rotateZ(180deg);
 	}
 
 	&.nopresence:before {
 		content: '\e699';
 		font-family: $font-family-icons;
+		font-size: $font-size-heading4;
 	}
 }
 
