@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970027 || Generated: Tue Oct 06 2020 16:19:49 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970028 || Generated: Tue Oct 06 2020 17:09:00 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15631,18 +15631,16 @@ div.CircledArrow {
     gap: 16px;
     padding: 16px;
     width: 100%; }
-    .AppLine .DragLine .HeadActions {
-      font-size: 0.857em; }
-      .AppLine .DragLine .HeadActions > a {
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle; }
-      .AppLine .DragLine .HeadActions > a img {
-        display: block;
-        height: auto;
-        margin: 0 auto 5px;
-        width: 16px; }
+    .AppLine .DragLine .HeadActions > a {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle; }
+    .AppLine .DragLine .HeadActions > a img {
+      display: block;
+      height: auto;
+      margin: 0 auto 5px;
+      width: 16px; }
   .AppLine .MoveLine {
     -webkit-box-align: center;
             align-items: center;
@@ -26547,7 +26545,7 @@ div.TimelineDetail {
     padding: 8px 10px; }
 
 .tooltipstered {
-  cursor: help;
+  cursor: default;
   display: inline-block; }
   .tooltipstered--pointer {
     cursor: pointer; }
@@ -26603,11 +26601,12 @@ div.TimelineDetail {
 
 /* If you're using the icon option, use this next selector to style them */
 .tooltipster-icon {
-  cursor: help;
+  cursor: default;
   margin-left: 4px; }
 
 /* This is the base styling required to make all Tooltipsters work */
 .tooltipster-base {
+  border-radius: 4px;
   font-size: 0;
   line-height: 0;
   min-width: 250px;
@@ -26616,8 +26615,7 @@ div.TimelineDetail {
   pointer-events: visible;
   position: absolute;
   width: auto;
-  z-index: 80;
-  border-radius: 4px; }
+  z-index: 80; }
 
 body.LayoutBase .tooltipster-location--Default {
   z-index: 80; }
