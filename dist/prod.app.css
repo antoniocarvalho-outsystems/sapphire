@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970026 || Generated: Tue Oct 06 2020 16:02:28 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970027 || Generated: Tue Oct 06 2020 16:19:49 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12544,11 +12544,11 @@ div.ActionsMenu-item {
   padding-right: 0; }
 
 .Page .Appointment_Icon {
-  border: 2px solid;
   border-radius: 50%;
-  height: 20px;
-  min-width: 18px;
-  width: 20px; }
+  height: 16px;
+  line-height: 16px;
+  min-width: 16px;
+  width: 16px; }
   .Page .Appointment_Icon.circleSuccess {
     background-color: #00bfa5;
     border-color: #00bfa5;
@@ -12568,15 +12568,11 @@ div.ActionsMenu-item {
     border: 2px solid #c2dea8; }
   .Page .Appointment_Icon.nopresence {
     border: none;
-    color: #d6d6d6;
-    display: inline-block;
-    font-size: 1.429em;
-    line-height: 23px;
-    -webkit-transform: rotateZ(180deg);
-            transform: rotateZ(180deg); }
+    color: #d6d6d6; }
   .Page .Appointment_Icon.nopresence:before {
     content: '\e699';
-    font-family: "Sapphire-Icon-Font"; }
+    font-family: "Sapphire-Icon-Font";
+    font-size: 1.143em; }
 
 .FA .StatusContainer .Appointment_Icon,
 .AR .StatusContainer .Appointment_Icon {
@@ -17686,8 +17682,8 @@ div.ui-timepicker-container {
     color: #00ac94; }
 
 .iconVertical_label {
-  color: #333333;
-  font-weight: normal;
+  color: #777777;
+  font-family: "LatoRegular";
   text-decoration: none; }
   .iconVertical_label.LabelGreen {
     color: #00ac94; }
@@ -17728,8 +17724,8 @@ div.ui-timepicker-container {
     .iconHorizontal_icon.AllGreenIcon .icon {
       color: #00ac94; }
   .iconHorizontal_label {
-    color: #333333;
-    font-weight: normal;
+    color: #777777;
+    font-family: "LatoRegular";
     text-decoration: none; }
     .iconHorizontal_label.LabelGreen {
       color: #00ac94; }
