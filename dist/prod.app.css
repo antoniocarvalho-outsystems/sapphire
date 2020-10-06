@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970025 || Generated: Fri Oct 02 2020 17:28:20 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970026 || Generated: Tue Oct 06 2020 16:02:28 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23220,8 +23220,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .SectionExpandableCustom .PlaceHolderTitle {
   font-family: "LatoBold";
-  font-size: 1.143em;
-  padding-left: 10px; }
+  font-size: 1.143em; }
 
 .SectionExpandableCustom .AR .PlaceHolderTitle {
   font-family: "TajawalBold"; }
@@ -23297,7 +23296,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   vertical-align: middle; }
   .SectionExpandableCustom .ExpandableHeader > div {
     display: table-cell;
-    padding-right: 15px;
+    padding-right: 16px;
     vertical-align: middle; }
     .SectionExpandableCustom .ExpandableHeader > div:first-line {
       text-transform: capitalize; }
@@ -26136,7 +26135,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     border-bottom: 0;
     border-left: 0;
     border-top: 3px solid transparent;
-    color: #5c5c5c;
+    color: #777777;
     cursor: pointer;
     display: inline-block;
     font-family: "LatoBold";
@@ -26621,7 +26620,8 @@ div.TimelineDetail {
   pointer-events: visible;
   position: absolute;
   width: auto;
-  z-index: 80; }
+  z-index: 80;
+  border-radius: 4px; }
 
 body.LayoutBase .tooltipster-location--Default {
   z-index: 80; }
@@ -29039,44 +29039,21 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
         margin: 0; }
 
 .GraphStructure {
-  -webkit-box-align: center;
-          align-items: center;
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center; }
-  .GraphStructure > div:first-child {
+  gap: 16px; }
+  .GraphStructure__Box {
+    min-width: 215px;
+    width: 215px; }
+  .GraphStructure__Graph {
+    display: -webkit-box;
+    display: flex;
     -webkit-box-flex: 1;
             flex: 1;
-    -servicestudio-width: 30% !important; }
-    .GraphStructure > div:first-child div {
-      -servicestudio-width: 100% !important; }
-  .GraphStructure > div:last-child {
-    -servicestudio-background-color: #fff;
-    -webkit-box-flex: 5;
-            flex: 5;
-    margin-left: 16px;
-    padding: 0;
-    -servicestudio-width: 75% !important; }
-    .GraphStructure > div:last-child div {
-      -webkit-box-align: center;
-              align-items: center;
-      -servicestudio-background-color: #fff;
-      display: -webkit-box;
-      display: flex;
-      -webkit-box-pack: center;
-              justify-content: center;
-      -servicestudio-width: 100% !important; }
-
-.tablet .GraphStructure > div,
-.phone .GraphStructure > div {
-  display: block;
-  margin-bottom: 5px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding: 0;
-  width: 100%; }
+    -webkit-box-pack: center;
+            justify-content: center; }
+  .GraphStructure .Card {
+    height: 100%; }
 
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title a,
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title .DoubleText,
