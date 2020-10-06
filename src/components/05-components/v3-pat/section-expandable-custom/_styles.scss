@@ -63,7 +63,6 @@
 	.PlaceHolderTitle {
 		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
-		padding-left: 10px;
 	}
 
 	.AR .PlaceHolderTitle {
@@ -125,7 +124,7 @@
 
 		> div {
 			display: table-cell;
-			padding-right: 15px;
+			padding-right: $sapphire-sizes--medium;
 			vertical-align: middle;
 
 			&:first-line {
