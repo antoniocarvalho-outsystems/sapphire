@@ -47,12 +47,13 @@
 
 /* If you're using the icon option, use this next selector to style them */
 .tooltipster-icon {
-	cursor: help;
+	cursor: default;
 	margin-left: 4px;
 }
 
 /* This is the base styling required to make all Tooltipsters work */
 .tooltipster-base {
+	border-radius: $border-radius-default;
 	font-size: 0;
 	line-height: 0;
 	min-width: 250px;
@@ -62,7 +63,6 @@
 	position: absolute;
 	width: auto;
 	z-index: 80;
-	border-radius: $border-radius-default;
 }
 
 body.LayoutBase .tooltipster-location--Default {
