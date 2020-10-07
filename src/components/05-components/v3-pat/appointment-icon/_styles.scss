@@ -9,14 +9,12 @@
 		background-color: $regular-alpha;
 		border-color: $regular-alpha;
 		color: $regular-white;
-		height: 18px;
-		line-height: 15px;
-		text-align: left;
-		width: 18px;
+		text-align: center;
 
 		&:before {
 			content: '\e64d';
 			font-family: $font-family-icons;
+			font-size: $font-size-tiny;
 		}
 	}
 
@@ -35,23 +33,11 @@
 	&.nopresence {
 		border: none;
 		color: $light-grey;
-	}
 
-	&.nopresence:before {
-		content: '\e699';
-		font-family: $font-family-icons;
-		font-size: $font-size-heading4;
-	}
-}
-
-.FA,
-.AR {
-	.StatusContainer {
-		.Appointment_Icon {
-			margin-left: 10px;
-			&.circleSuccess {
-				text-align: right;
-			}
+		&:before {
+			content: '\e699';
+			font-family: $font-family-icons;
+			font-size: $font-size-heading4;
 		}
 	}
 }

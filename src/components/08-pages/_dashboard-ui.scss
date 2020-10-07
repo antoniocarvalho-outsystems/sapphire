@@ -1,0 +1,12 @@
+.InfoTooltipDnD {
+	color: $regular-beta;
+	font-size: $font-size-small;
+	position: absolute;
+	right: $sapphire-sizes--medium;
+	top: $sapphire-sizes--medium;
+	transition: all 0.1s ease-in-out;
+
+	&:hover {
+		color: $regular-epsilon;
+	}
+}

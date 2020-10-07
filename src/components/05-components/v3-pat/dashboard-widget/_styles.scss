@@ -1,0 +1,74 @@
+.DashboardWindow {
+	@extend .Card;
+
+	position: relative;
+
+	&:hover {
+		.DashboardCloseWindow {
+			visibility: visible;
+		}
+	}
+
+	.DashBoardTitle1 {
+		cursor: move;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-heading4;
+		position: relative;
+
+		&:before {
+			color: $mid-light-grey;
+			content: '\e656';
+			font-family: $font-family-icons;
+			font-size: 30px;
+			left: 50%;
+			position: absolute;
+			top: -24px;
+			transform: translateX(-50%) rotate(90deg);
+		}
+	}
+
+	.DashboardCloseWindow {
+		background-color: $regular-alpha;
+		border-radius: 50%;
+		color: $regular-white;
+		font-size: $font-size-tiny;
+		height: $sapphire-sizes--large;
+		line-height: $sapphire-sizes--large;
+		position: absolute;
+		right: $sapphire-sizes--medium;
+		text-align: center;
+		top: $sapphire-sizes--medium;
+		transition: all 0.1s ease-in-out;
+		visibility: hidden;
+		width: $sapphire-sizes--large;
+		z-index: 2;
+
+		&:hover {
+			background-color: $regular-epsilon;
+		}
+	}
+
+	.DashboardContent {
+		margin-top: $sapphire-sizes--large;
+	}
+}
+
+.DragBox {
+	.DashboardWindow {
+		margin-bottom: $sapphire-sizes--medium;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.DashboardWindow {
+		.DashboardCloseWindow {
+			left: $sapphire-sizes--medium;
+			right: auto;
+		}
+	}
+}
