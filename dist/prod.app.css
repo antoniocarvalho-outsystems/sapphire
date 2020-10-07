@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970030 || Generated: Wed Oct 07 2020 14:21:08 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970031 || Generated: Wed Oct 07 2020 17:55:01 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4591,7 +4591,7 @@ div[onclick] {
   cursor: pointer; }
 
 a:link, a:visited {
-  color: #00ac94;
+  color: #020202;
   font-family: "LatoBold";
   text-decoration: none; }
 
@@ -4817,7 +4817,7 @@ input[type='password'] {
   input[type='email']:active,
   input[type='number']:active,
   input[type='password']:active {
-    border: 1px solid #00ac94;
+    border: 1px solid #020202;
     box-shadow: none; }
   select[disabled='disabled'], select[disabled='disabled']:hover, select[disabled='disabled']:focus, select[readonly='readonly'], select[readonly='readonly']:hover, select[readonly='readonly']:focus,
   textarea[disabled='disabled'],
@@ -5269,7 +5269,7 @@ a.Button.IsDefault,
   .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button {
     background-color: #ffffff;
     border: 1px solid #00bfa5;
-    color: #00ac94; }
+    color: #020202; }
     .desktop input.Button.Is_Default.Second:before,
     .desktop input.Button.Second:before,
     .desktop input.Button.ButtonDefault.Second:before,
@@ -5299,7 +5299,7 @@ a.Button.IsDefault,
     .PanelOpened a.Button.Is_Default.Second:before,
     .PanelOpened .DropZoneContainer .row .Is_Default.Second.Button:before,
     .DropZoneContainer .row .PanelOpened .Is_Default.Second.Button:before {
-      color: #00ac94; }
+      color: #020202; }
     .desktop input.Button.Is_Default.Second:active, .desktop input.Button.Is_Default.Second:hover,
     .desktop input.Button.Second:active,
     .desktop input.Button.Second:hover,
@@ -6564,7 +6564,7 @@ a.Button.IsDefault,
   .DropZoneContainer .row .PanelOpened .Is_Default.Link.Button {
     background: none;
     border: 1px solid transparent;
-    color: #00ac94; }
+    color: #020202; }
     .desktop input.Button.Is_Default.Link.HideFocus:focus,
     .desktop input.Button.Link.HideFocus:focus,
     .desktop input.Button.ButtonDefault.Link.HideFocus:focus,
@@ -7224,10 +7224,10 @@ a.Button.IsDefault,
   .LinkHover:link, .LinkHover:visited {
     color: #333333; }
   .LinkHover:hover {
-    color: #00ac94; }
+    color: #020202; }
 
 .IconHover {
-  color: #00ac94;
+  color: #020202;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
   .IconHover:hover {
@@ -7265,7 +7265,7 @@ a.Button.IsDefault,
     vertical-align: middle;
     width: 30px; }
   .Circle.ColorSapphire {
-    background-color: #00ac94; }
+    background-color: #020202; }
   .Circle.ColorRed {
     background-color: #ff3e2d; }
   .Circle.ColorOrange {
@@ -7582,7 +7582,7 @@ a.Button.IsDefault,
   text-align: left !important; }
 
 .BackToTopButton {
-  color: #00ac94;
+  color: #020202;
   cursor: pointer;
   display: none;
   position: fixed;
@@ -7606,7 +7606,7 @@ a.Button.IsDefault,
     transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out 0.25s, opacity ease-in-out 1s;
     width: 30px; }
     .BackToTopButton__Arrow:before {
-      background: #00ac94;
+      background: #020202;
       content: '';
       display: inline-block;
       height: 24px;
@@ -7621,7 +7621,7 @@ a.Button.IsDefault,
     .BackToTopButton__Arrow:after {
       border-left: 2px solid;
       border-top: 2px solid;
-      color: #00ac94;
+      color: #020202;
       content: '';
       display: inline-block;
       height: 10px;
@@ -7636,7 +7636,7 @@ a.Button.IsDefault,
               transform: translateY(50px) rotateZ(45deg);
       width: 10px; }
   .BackToTopButton:hover .BackToTopButton__Arrow {
-    border: 2px solid #00ac94;
+    border: 2px solid #020202;
     height: 30px;
     opacity: 1;
     -webkit-transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out 0.25s, opacity ease-in-out 1s;
@@ -7713,12 +7713,12 @@ a.Button.IsDefault,
   background-color: #ebebeb;
   border-radius: 50%;
   color: #5c5c5c;
-  font-size: 10px;
-  height: 30px;
-  line-height: 30px;
+  font-size: 14px;
+  height: 48px;
+  line-height: 48px;
   padding: 3px 0px;
   text-align: center;
-  width: 30px; }
+  width: 48px; }
   .CircledPatient.Male {
     background-color: #f0faf9;
     color: #194968; }
@@ -8162,7 +8162,7 @@ a.Button.IsDefault,
 .ClinicianSecondarySummary .SectionExpandable_header {
   background-color: transparent;
   border: none;
-  border-top: 2px solid #00ac94;
+  border-top: 2px solid #020202;
   color: #333333;
   font-size: 1.143em;
   height: auto;
@@ -8275,7 +8275,7 @@ a.Button.IsDefault,
 .Counter .Tile.SapphireColor {
   background-color: #fff;
   border-bottom: 0;
-  border-top: 2px solid #00ac94; }
+  border-top: 2px solid #020202; }
 
 .Counter.Black,
 .Counter .Tile.Black {
@@ -8872,7 +8872,7 @@ div.LineInfo {
     position: relative; }
   .Page .LineTimeLine__showMore {
     border-bottom: 1px solid #fff;
-    color: #00ac94;
+    color: #020202;
     font-family: "LatoBold";
     font-size: 1em;
     line-height: 35px;
@@ -9115,7 +9115,7 @@ div.LineInfo {
   padding: 15px 20px;
   text-align: center; }
   .MedicalFileOptions > div:first-child .EditFileNumber {
-    color: #00ac94;
+    color: #020202;
     font-size: 1.143em;
     margin-left: 10px; }
 
@@ -9133,7 +9133,7 @@ div.LineInfo {
   font-size: 0.857em; }
 
 .PatientCardAction .iconHorizontal_label {
-  color: #00ac94;
+  color: #020202;
   font-family: "LatoBold";
   font-size: 0.857em; }
 
@@ -9381,7 +9381,7 @@ div.LineInfo {
     z-index: 9999; }
     .pika-single .pika-next:after,
     .pika-single .pika-prev:after {
-      color: #00ac94;
+      color: #020202;
       content: '\e610';
       font-family: "Sapphire-Icon-Font";
       font-size: 1em;
@@ -9428,7 +9428,7 @@ div.LineInfo {
     .pika-single .pika-button:hover {
       background: #f2fffd;
       border-radius: 100px;
-      color: #00ac94; }
+      color: #020202; }
   .pika-single .pika-week {
     border-right: 1px solid #d6d6d6;
     line-height: 22px;
@@ -9453,7 +9453,7 @@ div.LineInfo {
     .pika-single .pika-time-container .triggerTimeBack:hover {
       background-color: #f2fffd;
       border-radius: 1px;
-      color: #00ac94;
+      color: #020202;
       font-size: 1em; }
   .pika-single .is-today .pika-button {
     color: #00bfa5;
@@ -9493,11 +9493,11 @@ div.LineInfo {
 
 /* Calendar */
 .Calendar-day-selected, .Calendar-day-selected:hover {
-  background-color: #00ac94;
+  background-color: #020202;
   color: #fff; }
 
 .Calendar-day:hover, .Calendar-bottomBar:hover {
-  background-color: #00ac94;
+  background-color: #020202;
   border-radius: 20px;
   color: #fff;
   font-family: "LatoBold";
@@ -9525,16 +9525,16 @@ div.LineInfo {
     width: auto; }
 
 .Calendar-time-am {
-  background-color: #00ac94;
-  border: 1px solid #00ac94;
+  background-color: #020202;
+  border: 1px solid #020202;
   border-radius: 50%;
   color: #fff;
   height: 40px;
   width: 40px; }
 
 .Calendar-time-up, .Calendar-time-down {
-  background-color: #00ac94;
-  border: 1px solid #00ac94;
+  background-color: #020202;
+  border: 1px solid #020202;
   border-radius: 100%;
   color: #fff;
   cursor: pointer;
@@ -9548,7 +9548,7 @@ div.LineInfo {
 
 .Calendar-time-am:hover, .Calendar-time-up:hover, .Calendar-time-down:hover {
   background-color: #fff;
-  color: #00ac94;
+  color: #020202;
   font-family: "LatoBold";
   font-weight: bold;
   opacity: 1; }
@@ -9641,7 +9641,7 @@ div.LineInfo {
   .LayoutBlank .SectionExpandable_header,
   .LayoutBase .SectionExpandable_header {
     border-bottom: none;
-    color: #00ac94;
+    color: #020202;
     font-family: "LatoBold";
     font-size: 1em;
     padding: 15px 20px; }
@@ -9656,7 +9656,7 @@ div.LineInfo {
         -webkit-box-align: center;
                 align-items: center;
         background-color: transparent;
-        border: 2px solid #00ac94;
+        border: 2px solid #020202;
         border-radius: 50%;
         cursor: pointer;
         display: -webkit-box;
@@ -9674,7 +9674,7 @@ div.LineInfo {
                 transform: rotate(0); }
         .LayoutBlank .SectionExpandable_header .Heading2.SectionExpandable__icon span:before,
         .LayoutBase .SectionExpandable_header .Heading2.SectionExpandable__icon span:before {
-          color: #00ac94;
+          color: #020202;
           content: '\e611';
           font-family: "Sapphire-Icon-Font";
           font-size: 0.857em; }
@@ -10281,7 +10281,7 @@ div.LineInfo {
     color: #777777;
     font-size: 1em; }
   .TimelineItem__description {
-    color: #00ac94;
+    color: #020202;
     font-family: "LatoBold";
     font-size: 1.143em;
     overflow: hidden;
@@ -10445,7 +10445,7 @@ div.LineInfo {
     right: 10px;
     top: 10px; }
     .UnitDropContainer > .DeleteUnit:hover {
-      color: #00ac94; }
+      color: #020202; }
   .UnitDropContainer .DoctorName {
     -webkit-box-align: center;
             align-items: center;
@@ -10665,7 +10665,7 @@ div.LineInfo {
     .LayoutBase .WizardStep.ActiveStep .IconWizard.IconWizardWhite {
       background-color: #fff;
       border: 1px solid #fff;
-      color: #00ac94; }
+      color: #020202; }
   .DesignSystem .WizardStep.Past,
   .LayoutBlank .WizardStep.Past,
   .LayoutBase .WizardStep.Past {
@@ -10680,7 +10680,7 @@ div.LineInfo {
     .LayoutBase .WizardStep.Past .IconWizard.IconWizardWhite {
       background-color: #fff;
       border: 1px solid transparent;
-      color: #00ac94; }
+      color: #020202; }
   .DesignSystem .WizardStep.LastStep:after, .DesignSystem .WizardStep.HideArrow:after, .DesignSystem .WizardStep.ActiveStep:after,
   .LayoutBlank .WizardStep.LastStep:after,
   .LayoutBlank .WizardStep.HideArrow:after,
@@ -10709,9 +10709,9 @@ div.LineInfo {
 .DesignSystem .IconWizard,
 .LayoutBlank .IconWizard,
 .LayoutBase .IconWizard {
-  border: 1px solid #00ac94;
+  border: 1px solid #020202;
   border-radius: 50%;
-  color: #00ac94;
+  color: #020202;
   font-size: 0.857em;
   height: 20px;
   line-height: 18px;
@@ -10723,8 +10723,8 @@ div.LineInfo {
   .LayoutBlank .IconWizard.IconWizardWhite,
   .LayoutBase .IconWizard.IconWizardWhite {
     background-color: #fff;
-    border: 1px solid #00ac94;
-    color: #00ac94; }
+    border: 1px solid #020202;
+    color: #020202; }
 
 .AR .DesignSystem .WizardStep,
 .AR .LayoutBlank .WizardStep,
@@ -11221,16 +11221,16 @@ html .Page .PatientDetailsLayout {
     border-top-color: #ebebeb; }
     .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper:hover {
       background-color: #ebebeb;
-      color: #00ac94; }
+      color: #020202; }
     .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
       border-top-left-radius: 4px;
       -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
               clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
       padding-right: 30px; }
       .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
-        color: #00ac94; }
+        color: #020202; }
       .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_tab a {
-        color: #00ac94; }
+        color: #020202; }
     .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper_tab a {
       color: #777777; }
 
@@ -11246,7 +11246,7 @@ html .Page .PatientDetailsLayout {
           clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
   padding-right: 40px; }
   .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
-    color: #00ac94; }
+    color: #020202; }
 
 .NewNavigation2 .LayoutBase-primary-menu {
   background-color: #ebebeb; }
@@ -11257,7 +11257,7 @@ html .Page .PatientDetailsLayout {
     border-top-color: #ebebeb; }
     .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper:hover {
       background-color: #ebebeb;
-      color: #00ac94; }
+      color: #020202; }
     .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active {
       border-top-left-radius: 8px;
       border-top-right-radius: 8px; }
@@ -11279,9 +11279,9 @@ html .Page .PatientDetailsLayout {
         box-shadow: -2px 2px 0 #fff;
         right: -6px; }
       .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
-        color: #00ac94; }
+        color: #020202; }
       .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_tab a {
-        color: #00ac94; }
+        color: #020202; }
     .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper_tab a {
       color: #777777; }
 
@@ -11315,7 +11315,7 @@ html .Page .PatientDetailsLayout {
     box-shadow: -2px 2px 0 #f3f3f3;
     right: -6px; }
   .NewNavigation2 .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
-    color: #00ac94; }
+    color: #020202; }
 
 .LayoutBlank.Page {
   background-color: #fff;
@@ -12251,7 +12251,7 @@ html body {
   .InlineDropdown:focus .InlineDropdown_text {
     border-bottom: 1px solid #333333; }
   .InlineDropdown_text {
-    color: #00ac94;
+    color: #020202;
     font-family: "LatoBold"; }
   .InlineDropdown_icon {
     -webkit-box-align: center;
@@ -12261,7 +12261,7 @@ html body {
     -webkit-box-pack: center;
             justify-content: center;
     border-radius: 50%;
-    color: #00ac94;
+    color: #020202;
     display: -webkit-inline-box;
     display: inline-flex;
     height: 18px;
@@ -12278,7 +12278,7 @@ html body {
   line-height: 1;
   position: relative; }
   .Page .Search_wrapper:after {
-    color: #00ac94;
+    color: #020202;
     content: '\e690';
     font-family: "Sapphire-Icon-Font";
     font-size: 1.143em;
@@ -13139,7 +13139,7 @@ div.ActionsMenu-item {
     right: 0;
     top: 0; }
     .BadgeCustom__Notification::before {
-      background-color: #00ac94;
+      background-color: #020202;
       border-radius: 1px;
       bottom: 1px;
       color: #fff;
@@ -13153,7 +13153,7 @@ div.ActionsMenu-item {
     .BadgeCustom__Notification::after {
       border-left: 5px solid transparent;
       border-right: 2px solid transparent;
-      border-top: 5px solid #00ac94;
+      border-top: 5px solid #020202;
       content: ' ';
       line-height: 0;
       position: absolute;
@@ -13392,7 +13392,7 @@ div.ActionsMenu-item {
 .ButtonClick.click > div,
 .ButtonClick.click > span {
   background-color: #f2fffd;
-  border: 1px solid #00ac94; }
+  border: 1px solid #020202; }
 
 .ButtonClick > a,
 .ButtonClick > div,
@@ -13406,7 +13406,7 @@ div.ActionsMenu-item {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
-  color: #00ac94;
+  color: #020202;
   cursor: pointer;
   font-family: "LatoBold";
   gap: 8px;
@@ -13581,7 +13581,7 @@ div.ActionsMenu-item {
     min-height: 12px;
     padding: 2px 0 0 2px; }
   .CardBox .CardCount {
-    color: #00ac94;
+    color: #020202;
     font-size: 2.143em;
     line-height: 35px;
     text-align: center; }
@@ -13774,9 +13774,9 @@ div.ActionsMenu-item {
   width: 14px; }
 
 div.CircledArrow {
-  border: 2px solid #00ac94;
+  border: 2px solid #020202;
   border-radius: 50%;
-  color: #00ac94;
+  color: #020202;
   font-size: 0.786em;
   height: 24px;
   line-height: 22px;
@@ -13999,7 +13999,7 @@ div.CircledArrow {
     .ClinicBoxSelectable__ContentRight > div:last-child {
       margin-bottom: 0; }
   .ClinicBoxSelectable__FirstSlot {
-    color: #00ac94; }
+    color: #020202; }
   .ClinicBoxSelectable__SecondSlot {
     color: #ff3e2d; }
   .ClinicBoxSelectable__FirstSlot, .ClinicBoxSelectable__SecondSlot, .ClinicBoxSelectable__ThirdSlot {
@@ -14054,7 +14054,7 @@ div.CircledArrow {
   position: relative;
   width: 32px; }
   .ClinicalBadge.ColorZetaBG {
-    color: #00ac94; }
+    color: #020202; }
   .ClinicalBadge.ColorLightRedBG {
     color: #ff3e2d; }
   .ClinicalBadge-label {
@@ -14161,7 +14161,7 @@ div.CircledArrow {
   .sp-container .sp-picker-container {
     border-left: none; }
     .sp-container .sp-picker-container .sp-button-container .sp-cancel:hover {
-      color: #00ac94 !important;
+      color: #020202 !important;
       text-decoration: none; }
     .sp-container .sp-picker-container .sp-button-container .sp-choose {
       background: #00bfa5;
@@ -14181,11 +14181,12 @@ div.CircledArrow {
       border-color: #d6d6d6;
       border-radius: 4px; }
 
-.DesignSystem .ListRecords .CompLine .CompLine_Expand,
-.LayoutPopup .ListRecords .CompLine .CompLine_Expand,
-.LayoutBlank .ListRecords .CompLine .CompLine_Expand,
-.LayoutBase .ListRecords .CompLine .CompLine_Expand {
-  background-color: transparent; }
+.ListRecords .CompLine {
+  margin-bottom: 8px; }
+  .ListRecords .CompLine:last-of-type {
+    margin-bottom: 0; }
+  .ListRecords .CompLine .CompLine_Expand {
+    background-color: transparent; }
 
 .DesignSystem .CompLine,
 .LayoutPopup .CompLine,
@@ -14326,7 +14327,7 @@ div.CircledArrow {
   .LayoutBlank .CompLine__icon,
   .LayoutBase .CompLine__icon {
     font-size: 1.143em;
-    margin-right: 5px; }
+    margin-right: 8px; }
     .DesignSystem .CompLine__icon span,
     .LayoutPopup .CompLine__icon span,
     .LayoutBlank .CompLine__icon span,
@@ -14472,7 +14473,7 @@ div.CircledArrow {
     display: block;
     height: auto;
     overflow: visible;
-    padding: 19px 23px;
+    padding: 16px;
     visibility: visible; }
   .DesignSystem .CompLine .CompLineExpandable.autoheight .CompLine_Expand,
   .LayoutPopup .CompLine .CompLineExpandable.autoheight .CompLine_Expand,
@@ -14530,7 +14531,7 @@ div.CircledArrow {
 
 .AR .CompLine__icon,
 .FA .CompLine__icon {
-  margin-left: 5px;
+  margin-left: 8px;
   margin-right: 0; }
 
 .CounterBlock {
@@ -14755,9 +14756,9 @@ div.CircledArrow {
 
 .DataFrame {
   background-color: #fff;
-  border: 1px solid #00ac94;
+  border: 1px solid #020202;
   border-radius: 4px;
-  color: #00ac94;
+  color: #020202;
   min-height: 20px;
   min-width: 30px;
   text-align: center; }
@@ -14878,7 +14879,7 @@ div.CircledArrow {
     .DateTimeRangePicker.textTrigger .DateTimeRangePicker-clear {
       line-height: unset; }
   .DateTimeRangePicker.rangeDates .DateTimeRangePicker-displayed input[type] {
-    min-width: 210px;
+    min-width: 218px;
     width: 100%; }
   .DateTimeRangePicker-input {
     position: relative; }
@@ -14918,12 +14919,12 @@ div.CircledArrow {
     padding: 0 !important;
     width: 0 !important; }
   .DateTimeRangePicker-label {
-    color: #00ac94;
+    color: #020202;
     cursor: pointer;
     font-family: "LatoBold";
     vertical-align: baseline; }
   .DateTimeRangePicker-clear {
-    color: #00ac94;
+    color: #020202;
     cursor: pointer;
     font-family: "Sapphire-Icon-Font";
     font-size: inherit;
@@ -15659,11 +15660,6 @@ div.CircledArrow {
               align-items: center;
       display: -webkit-box;
       display: flex; }
-    .AppLine .AppHeader .AppDate .CircledPatient {
-      font-size: 14px;
-      height: 48px;
-      line-height: 48px;
-      width: 48px; }
     .AppLine .AppHeader .AppDate .DoubleText div {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -15800,13 +15796,13 @@ div.CircledArrow {
         display: none; }
       .DropZoneWrapper .dropzone .dz-preview .dz-progress {
         background: #c4f0eb;
-        border: 1px solid #00ac94;
+        border: 1px solid #020202;
         border-radius: 4px;
         height: 10px;
         top: 20px;
         width: 120px; }
         .DropZoneWrapper .dropzone .dz-preview .dz-progress .dz-upload {
-          background: #00ac94;
+          background: #020202;
           height: 10px; }
       .DropZoneWrapper .dropzone .dz-preview .dz-error-mark,
       .DropZoneWrapper .dropzone .dz-preview .dz-success-mark,
@@ -15845,7 +15841,7 @@ div.CircledArrow {
       font-weight: 400;
       text-align: right; }
       .FileUploadDropZone .dropzone .dz-message.dz-message:before {
-        color: #00ac94;
+        color: #020202;
         content: '\e931';
         display: block;
         font-family: "Sapphire-Icon-Font";
@@ -15861,7 +15857,7 @@ div.CircledArrow {
       .FileUploadDropZone .dropzone .dz-message.dz-message:after {
         display: block; }
       .FileUploadDropZone .dropzone .dz-message.dz-message:hover:before {
-        color: #00ac94; }
+        color: #020202; }
       .FileUploadDropZone .dropzone .dz-message.dz-message span,
       .FileUploadDropZone .dropzone .dz-message.dz-message .dz-button {
         display: none; }
@@ -15869,7 +15865,7 @@ div.CircledArrow {
       display: none; }
   .FileUploadDropZone .UploadMessageClass {
     bottom: 2px;
-    color: #00ac94;
+    color: #020202;
     cursor: pointer;
     font-family: "LatoBold";
     font-size: 1em;
@@ -16063,7 +16059,7 @@ div.CircledArrow {
     padding-left: 20px;
     position: relative; }
     .ExpandableGroup .ExpandableGroupItem-header:before {
-      color: #00ac94;
+      color: #020202;
       content: '\e610';
       font-family: "Sapphire-Icon-Font";
       font-size: 1rem;
@@ -16115,7 +16111,7 @@ div.CircledArrow {
   -webkit-box-align: center;
           align-items: center;
   background-color: transparent;
-  border: 2px solid #00ac94;
+  border: 2px solid #020202;
   border-radius: 50%;
   cursor: pointer;
   display: -webkit-box;
@@ -16133,7 +16129,7 @@ div.CircledArrow {
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s; }
   .ExpandableLink__Icon .icon:before {
-    color: #00ac94;
+    color: #020202;
     content: '\e611';
     font-family: "Sapphire-Icon-Font";
     font-size: 0.7em; }
@@ -16141,7 +16137,7 @@ div.CircledArrow {
     background-color: #f2fffd; }
 
 .ExpandableLink__Link {
-  color: #00ac94;
+  color: #020202;
   font-family: "LatoBold";
   margin-left: 15px; }
 
@@ -16324,7 +16320,7 @@ div.CircledArrow {
       -webkit-transform: scaleY(1);
               transform: scaleY(1); }
     .ExpandableSmaller__headerIcon .icon {
-      border-bottom: 5px solid #00ac94;
+      border-bottom: 5px solid #020202;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       height: 0;
@@ -16332,7 +16328,7 @@ div.CircledArrow {
       .ExpandableSmaller__headerIcon .icon:after, .ExpandableSmaller__headerIcon .icon:before {
         content: ''; }
   .ExpandableSmaller__headerContent, .ExpandableSmaller__headerContentClose {
-    color: #00ac94;
+    color: #020202;
     font-family: "LatoBold"; }
   .ExpandableSmaller > div + span {
     display: block !important; }
@@ -16725,8 +16721,8 @@ div.CircledArrow {
   position: relative;
   text-align: center; }
   .TabWrapper:hover {
-    background-color: #00ac94;
-    border-top-color: #00ac94; }
+    background-color: #020202;
+    border-top-color: #020202; }
   .TabWrapper .TabWrapper_tab a {
     color: #fff;
     display: block;
@@ -16790,12 +16786,12 @@ div.CircledArrow {
     .FullScreenTabsWrapper_Container.Dashboard .TabWrapper:hover {
       background-color: #ebebeb;
       border-top-color: #00bfa5;
-      color: #00ac94; }
+      color: #020202; }
     .FullScreenTabsWrapper_Container.Dashboard .TabWrapper.Active {
       background-color: #f3f3f3;
       border-bottom-color: #f3f3f3;
       border-top-color: #00bfa5;
-      color: #00ac94; }
+      color: #020202; }
   .FullScreenTabsWrapper_Container.Dashboard .FullScreenTabs_tabCounter {
     position: absolute;
     right: 3px;
@@ -17070,7 +17066,7 @@ div.CircledArrow {
     display: table-cell;
     vertical-align: middle; }
     .GrayCounter__Icon .icon {
-      color: #00ac94;
+      color: #020202;
       font-size: 1.143em;
       line-height: 19px; }
 
@@ -17285,7 +17281,7 @@ div.Toolbar {
       div.Toolbar__Items .ListRecords > a:focus .MenuItemWrapper {
         border-bottom: 3px solid #00bfa5 !important; }
         div.Toolbar__Items .ListRecords > a:focus .MenuItemWrapper .MenuItemWrapper_Container {
-          color: #00ac94; }
+          color: #020202; }
       div.Toolbar__Items .ListRecords a[disabled] {
         cursor: not-allowed; }
         div.Toolbar__Items .ListRecords a[disabled]:focus .MenuItemWrapper {
@@ -17299,7 +17295,7 @@ div.Toolbar {
     -webkit-box-align: center;
             align-items: center;
     background-color: transparent;
-    border: 2px solid #00ac94;
+    border: 2px solid #020202;
     border-radius: 50%;
     cursor: pointer;
     display: -webkit-box;
@@ -17319,7 +17315,7 @@ div.Toolbar {
             transform: translateY(-50%) rotate(270deg);
     left: 5px; }
     div.Toolbar__leftBtn:before {
-      color: #00ac94;
+      color: #020202;
       content: '\e611';
       font-family: "Sapphire-Icon-Font";
       font-size: 0.857em; }
@@ -17329,7 +17325,7 @@ div.Toolbar {
     -webkit-box-align: center;
             align-items: center;
     background-color: transparent;
-    border: 2px solid #00ac94;
+    border: 2px solid #020202;
     border-radius: 50%;
     cursor: pointer;
     display: -webkit-box;
@@ -17349,7 +17345,7 @@ div.Toolbar {
             transform: translateY(-50%) rotate(90deg);
     right: 5px; }
     div.Toolbar__rightBtn:before {
-      color: #00ac94;
+      color: #020202;
       content: '\e611';
       font-family: "Sapphire-Icon-Font";
       font-size: 0.857em; }
@@ -17394,7 +17390,7 @@ div.Toolbar {
     -webkit-box-pack: center;
             justify-content: center;
     background-color: #f2fffd;
-    color: #00ac94;
+    color: #020202;
     cursor: pointer;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -17423,12 +17419,12 @@ div.Toolbar {
     div.Toolbar__MoreOptionsIcon span[ui='more-options-title'] {
       position: relative; }
       div.Toolbar__MoreOptionsIcon span[ui='more-options-title']::after {
-        border-color: #00ac94;
+        border-color: #020202;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-top: 8px solid;
         bottom: 0px;
-        color: #00ac94;
+        color: #020202;
         content: '';
         left: 50%;
         opacity: 0;
@@ -17511,7 +17507,7 @@ div.Toolbar {
   .MenuItemWrapper:hover {
     border-bottom: 3px solid #00bfa5 !important; }
     .MenuItemWrapper:hover .MenuItemWrapper_Container {
-      color: #00ac94; }
+      color: #020202; }
   .MenuItemWrapper.Active {
     background-color: #f3f3f3;
     border-bottom: 3px solid #f3f3f3;
@@ -17591,7 +17587,7 @@ div.Toolbar {
   padding: 13px 10px 12px 10px; }
   .HospitPlanButton.Selected {
     background-color: #f2fffd;
-    color: #00ac94; }
+    color: #020202; }
   .HospitPlanButton_Count {
     float: right; }
   .HospitPlanButton_Icon {
@@ -17624,7 +17620,7 @@ div.Toolbar {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
   .HourPicker--textTrigger .HourPicker__LabelValue {
-    color: #00ac94;
+    color: #020202;
     cursor: pointer;
     display: inline-block;
     font-family: "LatoBold";
@@ -17652,7 +17648,7 @@ div.Toolbar {
     position: relative;
     width: 100%; }
   .HourPicker__ButtonClear {
-    color: #00ac94;
+    color: #020202;
     cursor: pointer;
     font-family: "Sapphire-Icon-Font";
     font-size: inherit;
@@ -17714,10 +17710,10 @@ div.ui-timepicker-container {
     padding: 0 5px 0 10px; }
 
 .iconVertical_icon {
-  color: #00ac94;
+  color: #020202;
   font-weight: 600; }
   .iconVertical_icon.IconGreenColor {
-    color: #00ac94; }
+    color: #020202; }
   .iconVertical_icon.IconYellowColor {
     color: #ffa000; }
   .iconVertical_icon.IconRedColor {
@@ -17727,16 +17723,16 @@ div.ui-timepicker-container {
   .iconVertical_icon.IconOrangeColor {
     color: #c37b03; }
   .iconVertical_icon.AllGreenIcon .icon {
-    color: #00ac94; }
+    color: #020202; }
 
 .iconVertical_label {
   color: #777777;
   font-family: "LatoRegular";
   text-decoration: none; }
   .iconVertical_label.LabelGreen {
-    color: #00ac94; }
+    color: #020202; }
   .iconVertical_label.LabelColorGreen {
-    color: #00ac94; }
+    color: #020202; }
   .iconVertical_label.LabelColorYellow {
     color: #ffa000; }
   .iconVertical_label.LabelColorRed {
@@ -17757,10 +17753,10 @@ div.ui-timepicker-container {
 .iconHorizontal {
   font-size: 1em; }
   .iconHorizontal_icon {
-    color: #00ac94;
+    color: #020202;
     font-weight: 600; }
     .iconHorizontal_icon.IconGreenColor {
-      color: #00ac94; }
+      color: #020202; }
     .iconHorizontal_icon.IconYellowColor {
       color: #ffa000; }
     .iconHorizontal_icon.IconRedColor {
@@ -17770,15 +17766,15 @@ div.ui-timepicker-container {
     .iconHorizontal_icon.IconOrangeColor {
       color: #c37b03; }
     .iconHorizontal_icon.AllGreenIcon .icon {
-      color: #00ac94; }
+      color: #020202; }
   .iconHorizontal_label {
     color: #777777;
     font-family: "LatoRegular";
     text-decoration: none; }
     .iconHorizontal_label.LabelGreen {
-      color: #00ac94; }
+      color: #020202; }
     .iconHorizontal_label.LabelColorGreen {
-      color: #00ac94; }
+      color: #020202; }
     .iconHorizontal_label.LabelColorYellow {
       color: #ffa000; }
     .iconHorizontal_label.LabelColorRed {
@@ -17951,7 +17947,7 @@ div.ui-timepicker-container {
 .InfoAreaBox {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  color: #00ac94;
+  color: #020202;
   font-family: "LatoBold";
   font-size: 1.429em;
   line-height: 47px;
@@ -18138,7 +18134,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer; }
   .LineCardList.active {
-    border: 1px solid #00ac94; }
+    border: 1px solid #020202; }
   .LineCardList_checkbox {
     display: inline-block;
     max-width: 40px;
@@ -18155,7 +18151,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
         opacity: 1; }
       .LineCardList_checkbox input[type='checkbox']:checked ~ label {
         background-color: #fff;
-        border: 1px solid #00ac94; }
+        border: 1px solid #020202; }
     .LineCardList_checkbox label {
       cursor: pointer;
       font-size: inherit;
@@ -18448,7 +18444,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
         border: none;
         border-radius: 0; }
       .LineDetailsExpandBox div.ExpandableLink__Content div.ExpandableHeader___expandableIcon .icon {
-        border-bottom: 5px solid #00ac94;
+        border-bottom: 5px solid #020202;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         height: 0;
@@ -18667,7 +18663,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     .SelectableListServerSide_selectList.HasArrow .SelectableListServerSide__content {
       padding: 10px 20px; }
   .SelectableListServerSide__arrow {
-    color: #00ac94;
+    color: #020202;
     cursor: pointer;
     display: table-cell;
     font-size: 12px;
@@ -20151,7 +20147,7 @@ body.PanelById.PanelOpened {
             transform: rotate(180deg);
     width: 30px; }
     .PatientMedicalFile > .RequestFiles-Menu div[button-style] .icon {
-      border-bottom: 5px solid #00ac94;
+      border-bottom: 5px solid #020202;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       height: 0;
@@ -20368,11 +20364,6 @@ body.PanelById.PanelOpened {
   .PersonCard_header .PersonCard__actions.Red {
     background-color: #fad5d5;
     color: inherit; }
-  .PersonCard_header .CircledPatient {
-    font-size: 14px;
-    height: 48px;
-    line-height: 48px;
-    width: 48px; }
 
 .PersonCard_expandable {
   border: 1px solid #d6d6d6;
@@ -20549,7 +20540,7 @@ body.PanelById.PanelOpened {
   content: '\e610'; }
 
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title a, .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title a:hover {
-  color: #00ac94; }
+  color: #020202; }
 
 .PersonExpandableDiv {
   position: relative; }
@@ -20633,7 +20624,7 @@ body.PanelById.PanelOpened {
   margin-bottom: 8px; }
 
 .PersonCard_header.Selected {
-  border: 1px solid #00ac94; }
+  border: 1px solid #020202; }
 
 a .PersonCard {
   color: #333333; }
@@ -20783,7 +20774,7 @@ a .PersonCard {
     width: 100%; }
   .PrescriptionCard .ActionsAndTextContent .SeeMore,
   .PrescriptionCard .ActionsAndTextContent .ActionsPlaceholder {
-    color: #00ac94;
+    color: #020202;
     cursor: pointer;
     font-family: "LatoBold"; }
   .PrescriptionCard .RiskPlaceholder .DoubleText .FirstLine_Mutitext {
@@ -20993,7 +20984,7 @@ a .PersonCard {
     word-break: break-word; }
 
 .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header__LinksDiv {
-  color: #00ac94;
+  color: #020202;
   cursor: pointer; }
   .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header__LinksDiv > div:first-child {
     display: block; }
@@ -21039,7 +21030,7 @@ a .PersonCard {
     .SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
       border-radius: 0; }
       .SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .SeeMore {
-        color: #00ac94;
+        color: #020202;
         font-family: "LatoBold";
         font-size: 1em;
         text-decoration: none; }
@@ -21170,7 +21161,7 @@ a .PersonCard {
   position: relative;
   z-index: 2; }
   .ProgressBarWrap .ProgressBarTooltip[data-tooltip]:before {
-    background-color: #00ac94;
+    background-color: #020202;
     border-radius: 4px;
     bottom: 150%;
     box-shadow: none;
@@ -21185,7 +21176,7 @@ a .PersonCard {
   .ProgressBarWrap .ProgressBarTooltip[data-tooltip]:after {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #00ac94;
+    border-top: 5px solid #020202;
     bottom: 150%;
     content: ' ';
     font-size: 0;
@@ -21896,7 +21887,7 @@ div.List-Star {
 .WizardContent__Number {
   background-color: #f3f3f3;
   border-radius: 50%;
-  color: #00ac94;
+  color: #020202;
   font-family: "LatoBold";
   font-size: 1.143em;
   height: 26px;
@@ -21978,7 +21969,7 @@ div.List-Star {
     .RulerScale_number:hover, .RulerScale_number.active {
       background-color: #f2fffd;
       border: 1px solid #00bfa5;
-      color: #00ac94; }
+      color: #020202; }
     .RulerScale_number.viewmode {
       background-color: transparent;
       border: 0;
@@ -22022,7 +22013,7 @@ div.List-Star {
   .ScaleCard.active {
     background-color: #f2fffd;
     border: 1px solid #00bfa5;
-    color: #00ac94; }
+    color: #020202; }
     .ScaleCard.active.disabled {
       background-color: #f3f3f3;
       border: 1px solid #333333;
@@ -22368,7 +22359,7 @@ div.List-Star {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0; }
       .SearchSD.Open .SearchSD_search .SearchSD__inputWrapper .icon {
-        color: #00ac94; }
+        color: #020202; }
     .SearchSD.Open .SearchSD_search > a:first-child {
       background-color: #ffffff; }
   .SearchSD.Open .SearchSD_content {
@@ -22657,7 +22648,7 @@ div.List-Star {
         border: none; }
     .SearchSD .SearchSD_content span.ListRecords span.selected .SelectSD {
       background-color: #ffffff;
-      box-shadow: inset 0px 0px 0px 1px #00ac94, 0px 0px 5px 0px #00ac94;
+      box-shadow: inset 0px 0px 0px 1px #020202, 0px 0px 5px 0px #020202;
       position: relative; }
     .SearchSD .SearchSD_content .SearchSD__loading {
       color: #adadad;
@@ -22915,7 +22906,7 @@ div.List-Star {
           border-color: #00bfa5; }
     .SelectSD .SelectSD_actionLink:focus .SelectSD__action .icon {
       border: none;
-      box-shadow: inset 0px 0px 0px 1px #00ac94, 0px 0px 8px 0px #00ac94; }
+      box-shadow: inset 0px 0px 0px 1px #020202, 0px 0px 8px 0px #020202; }
   .SelectSD .SelectableList-EmptyMessage {
     background-color: #ffffff; }
 
@@ -23045,23 +23036,23 @@ div.List-Star {
       padding: 0 50px;
       width: 100%; }
       .SSD-Bar > .SearchInput-Container .InputPlaceholder input[type='text']::-webkit-input-placeholder {
-        color: #00ac94;
+        color: #020202;
         font-family: "LatoBold";
         font-size: 1em; }
       .SSD-Bar > .SearchInput-Container .InputPlaceholder input[type='text']::-moz-placeholder {
-        color: #00ac94;
+        color: #020202;
         font-family: "LatoBold";
         font-size: 1em; }
       .SSD-Bar > .SearchInput-Container .InputPlaceholder input[type='text']:-ms-input-placeholder {
-        color: #00ac94;
+        color: #020202;
         font-family: "LatoBold";
         font-size: 1em; }
       .SSD-Bar > .SearchInput-Container .InputPlaceholder input[type='text']::-ms-input-placeholder {
-        color: #00ac94;
+        color: #020202;
         font-family: "LatoBold";
         font-size: 1em; }
       .SSD-Bar > .SearchInput-Container .InputPlaceholder input[type='text']::placeholder {
-        color: #00ac94;
+        color: #020202;
         font-family: "LatoBold";
         font-size: 1em; }
     .SSD-Bar > .SearchInput-Container > .SearchIcon {
@@ -23087,7 +23078,7 @@ div.List-Star {
         background-color: #ffffff;
         border: 1px solid #d6d6d6;
         border-radius: 50%;
-        color: #00ac94;
+        color: #020202;
         font-size: 1.286em;
         height: 28px;
         line-height: 28px;
@@ -23207,7 +23198,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border-radius: 2px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  color: #00ac94;
+  color: #020202;
   font-size: 20px;
   text-align: center; }
 
@@ -23277,7 +23268,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     -webkit-box-align: center;
             align-items: center;
     background-color: transparent;
-    border: 2px solid #00ac94;
+    border: 2px solid #020202;
     border-radius: 50%;
     cursor: pointer;
     display: -webkit-box;
@@ -23291,7 +23282,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     width: 20px;
     z-index: 1; }
     .SectionExpandableCustom .SectionExpandable___icon .icon:before {
-      color: #00ac94;
+      color: #020202;
       content: '\e611';
       font-family: "Sapphire-Icon-Font";
       font-size: 0.7em; }
@@ -23417,7 +23408,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       margin: 0;
       position: relative; }
       .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon span {
-        border-bottom: 5px solid #00ac94;
+        border-bottom: 5px solid #020202;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         height: 0;
@@ -23458,7 +23449,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .SectionTitles.Area .SectionTitles-remaining {
     padding: 20px 0 15px; }
   .SectionTitles.Area .SectionTitles-title {
-    border-bottom: 1px solid #00ac94;
+    border-bottom: 1px solid #020202;
     font-family: "LatoBold";
     font-size: 1.429em; }
   .SectionTitles.Area .SectionTitles-remaining {
@@ -23784,7 +23775,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     background-color: #f2fffd; }
     .select2-container .select2-dropdown.MultipleSelect .select2-results__option[aria-selected='true']:before {
       background-color: #fff;
-      color: #00ac94;
+      color: #020202;
       content: '\f00c';
       display: inline-block;
       font-family: FontAwesome;
@@ -23842,7 +23833,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   width: 49%; }
 
 .fontSelect2Availability {
-  color: #00ac94;
+  color: #020202;
   display: inline-block;
   font-size: 1em;
   width: 49%; }
@@ -23998,7 +23989,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       -webkit-box-align: center;
               align-items: center;
       background-color: transparent;
-      border: 2px solid #00ac94;
+      border: 2px solid #020202;
       border-radius: 50%;
       cursor: pointer;
       display: -webkit-box;
@@ -24018,7 +24009,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       .LayoutBlank .ShiftExpandable_header .ShiftExpandable__arrow span.icon:before,
       .LayoutPOpup .ShiftExpandable_header .ShiftExpandable__arrow span.icon:before,
       .DesignSystem .ShiftExpandable_header .ShiftExpandable__arrow span.icon:before {
-        color: #00ac94;
+        color: #020202;
         content: '\e611';
         font-family: "Sapphire-Icon-Font";
         font-size: 0.857em; }
@@ -24110,7 +24101,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .LayoutPOpup .ShiftContainer_header .InlineDropdown_text,
     .DesignSystem .ShiftContainer_header .InlineDropdown_icon,
     .DesignSystem .ShiftContainer_header .InlineDropdown_text {
-      color: #00ac94;
+      color: #020202;
       font-family: "LatoBold"; }
   .LayoutBase .ShiftContainer__headerEmpty,
   .LayoutBlank .ShiftContainer__headerEmpty,
@@ -24172,14 +24163,14 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutBlank .ShiftCard.IsMarked .ShiftCard_description,
   .LayoutPOpup .ShiftCard.IsMarked .ShiftCard_description,
   .DesignSystem .ShiftCard.IsMarked .ShiftCard_description {
-    border-left: 1px solid #00ac94;
+    border-left: 1px solid #020202;
     border-right: 1px solid #d6d6d6; }
   .LayoutBase .ShiftCard.IsMarked .ShiftCard_timeLine,
   .LayoutBlank .ShiftCard.IsMarked .ShiftCard_timeLine,
   .LayoutPOpup .ShiftCard.IsMarked .ShiftCard_timeLine,
   .DesignSystem .ShiftCard.IsMarked .ShiftCard_timeLine {
     border-left: none;
-    border-right: 1px solid #00ac94; }
+    border-right: 1px solid #020202; }
   .LayoutBase .ShiftCard.IsMarked .ShiftCard_timeLine,
   .LayoutBase .ShiftCard.IsMarked .ShiftCard_description,
   .LayoutBlank .ShiftCard.IsMarked .ShiftCard_timeLine,
@@ -24188,8 +24179,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutPOpup .ShiftCard.IsMarked .ShiftCard_description,
   .DesignSystem .ShiftCard.IsMarked .ShiftCard_timeLine,
   .DesignSystem .ShiftCard.IsMarked .ShiftCard_description {
-    border-bottom: 1px solid #00ac94;
-    border-top: 1px solid #00ac94; }
+    border-bottom: 1px solid #020202;
+    border-top: 1px solid #020202; }
   .LayoutBase .ShiftCard_description,
   .LayoutBlank .ShiftCard_description,
   .LayoutPOpup .ShiftCard_description,
@@ -24448,7 +24439,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .DesignSystem .CardShiftWrapper.ToMark .icon + div,
     .DesignSystem .CardShiftWrapper.ToPlan .icon,
     .DesignSystem .CardShiftWrapper.ToPlan .icon + div {
-      color: #00ac94;
+      color: #020202;
       font-weight: normal; }
   .LayoutBase .CardShiftWrapper.ToMark .CardShift_content, .LayoutBase .CardShiftWrapper.ToPlan .CardShift_content,
   .LayoutBlank .CardShiftWrapper.ToMark .CardShift_content,
@@ -24505,7 +24496,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .LayoutBlank .CardShiftWrapper .CardShiftWrapperContainer_note,
     .LayoutPOpup .CardShiftWrapper .CardShiftWrapperContainer_note,
     .DesignSystem .CardShiftWrapper .CardShiftWrapperContainer_note {
-      background-color: #00ac94;
+      background-color: #020202;
       border-radius: 2px;
       color: #fff;
       font-size: 0.857em;
@@ -24523,7 +24514,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
         border: 6px solid transparent;
         border-bottom: 0;
         border-right: 0;
-        border-top-color: #00ac94;
+        border-top-color: #020202;
         bottom: 0;
         content: '';
         height: 0;
@@ -24602,7 +24593,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutBlank .CardShiftWrapper .CardShift_actions,
   .LayoutPOpup .CardShiftWrapper .CardShift_actions,
   .DesignSystem .CardShiftWrapper .CardShift_actions {
-    color: #00ac94;
+    color: #020202;
     font-size: 1em;
     text-align: right; }
   .LayoutBase .CardShiftWrapper .CardShift_responsability,
@@ -24620,7 +24611,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutBlank .CardShiftWrapper .CardShift__markStatus,
   .LayoutPOpup .CardShiftWrapper .CardShift__markStatus,
   .DesignSystem .CardShiftWrapper .CardShift__markStatus {
-    background-color: #00ac94;
+    background-color: #020202;
     border-radius: 0 0 4px 4px;
     color: #fff;
     cursor: pointer;
@@ -24653,7 +24644,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutBlank .CardShiftWrapper .ActionsMenu-icon,
   .LayoutPOpup .CardShiftWrapper .ActionsMenu-icon,
   .DesignSystem .CardShiftWrapper .ActionsMenu-icon {
-    color: #00ac94; }
+    color: #020202; }
 
 .LayoutBase .ShiftCount12 .CardShift_cardStatus,
 .LayoutBlank .ShiftCount12 .CardShift_cardStatus,
@@ -24743,12 +24734,12 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       width: 100%; }
 
 .AR.LayoutBase .ShiftCard.IsMarked .ShiftCard_timeLine, .AR.LayoutBlank .ShiftCard.IsMarked .ShiftCard_timeLine, .AR.LayoutPOpup .ShiftCard.IsMarked .ShiftCard_timeLine, .AR.DesignSystem .ShiftCard.IsMarked .ShiftCard_timeLine {
-  border-left: 1px solid #00ac94;
+  border-left: 1px solid #020202;
   border-right: none; }
 
 .AR.LayoutBase .ShiftCard.IsMarked .ShiftCard_description, .AR.LayoutBlank .ShiftCard.IsMarked .ShiftCard_description, .AR.LayoutPOpup .ShiftCard.IsMarked .ShiftCard_description, .AR.DesignSystem .ShiftCard.IsMarked .ShiftCard_description {
   border-left: none;
-  border-right: 1px solid #00ac94; }
+  border-right: 1px solid #020202; }
 
 .AR.LayoutBase .ShiftCard__actions, .AR.LayoutBlank .ShiftCard__actions, .AR.LayoutPOpup .ShiftCard__actions, .AR.DesignSystem .ShiftCard__actions {
   text-align: left; }
@@ -25404,7 +25395,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   position: relative;
   z-index: 2; }
   .SimpleTooltip[data-tooltip]:before {
-    background-color: #00ac94;
+    background-color: #020202;
     border-radius: 4px;
     bottom: 150%;
     box-shadow: 0 1px 2px 0 rgba(13, 29, 34, 0.2);
@@ -25420,7 +25411,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .SimpleTooltip[data-tooltip]:after {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #00ac94;
+    border-top: 5px solid #020202;
     bottom: 150%;
     content: ' ';
     font-size: 0;
@@ -25518,7 +25509,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   width: 36px; }
   .SpinnerInput_Container > a:not([disabled]):hover {
     background-color: #f2fffd;
-    border: 1px solid #00ac94; }
+    border: 1px solid #020202; }
   .SpinnerInput_Container > a:not([disabled]):focus {
     border: 1px solid #333333; }
   .SpinnerInput_Container > a:not([disabled]):active {
@@ -26030,7 +26021,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     border-right: 0;
     border-top: 2px solid transparent;
     border-top-color: transparent;
-    color: #00ac94; }
+    color: #020202; }
   .Tabs_Extended.Tabs_Extended--Primary .Tabs__tab.disabled {
     border-bottom: 3px solid transparent !important; }
 
@@ -26047,7 +26038,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   border-radius: 8px 8px 0 0;
   border-right: 1px solid #d6d6d6;
   border-top-color: #d6d6d6;
-  color: #00ac94; }
+  color: #020202; }
   .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active:before, .Tabs_Extended.Tabs_Extended--Secondary:not(.isClosed) .Tabs__tab.active:after {
     border: 1px solid #d6d6d6;
     bottom: -1px;
@@ -26082,7 +26073,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:first-child:before {
     display: none; }
   .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:hover {
-    color: #00ac94; }
+    color: #020202; }
   .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab > div {
     -webkit-box-align: center;
             align-items: center;
@@ -26118,10 +26109,10 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   top: 1px; }
   .Tabs_Extended .Tabs__tab.active a:link,
   .Tabs_Extended .Tabs__tab.active a:visited {
-    color: #00ac94; }
+    color: #020202; }
     .Tabs_Extended .Tabs__tab.active a:link:hover,
     .Tabs_Extended .Tabs__tab.active a:visited:hover {
-      color: #00ac94; }
+      color: #020202; }
   .Tabs_Extended .Tabs__tab a:link,
   .Tabs_Extended .Tabs__tab a:visited {
     border: 1px solid transparent;
@@ -26132,7 +26123,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     position: relative; }
     .Tabs_Extended .Tabs__tab a:link:hover,
     .Tabs_Extended .Tabs__tab a:visited:hover {
-      color: #00ac94; }
+      color: #020202; }
   .Tabs_Extended .Tabs__tab .Badge {
     padding: 2px 0;
     vertical-align: super; }
@@ -26271,7 +26262,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  color: #00ac94;
+  color: #020202;
   font-weight: bold;
   line-height: 34px; }
 
@@ -27314,10 +27305,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   border-color: #00bfa5; }
 
 .ColorBetaText {
-  color: #00ac94; }
+  color: #020202; }
 
 .ColorBetaBG {
-  background-color: #00ac94; }
+  background-color: #020202; }
 
 .ColorGammaText {
   color: #006758; }
@@ -27847,7 +27838,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   .Page .Text_sapphireBlue, .Page .mainBlue1-tx {
     color: fuchsia; }
   .Page .Text_sapphireBlue2, .Page .mainBlue2-tx {
-    color: #00ac94; }
+    color: #020202; }
   .Page .Text_sapphireInactive, .Page .inactiveButton-tx {
     color: #d6d6d6; }
   .Page .Text_sapphireDarkBlue1, .Page .darkBlue1-tx {
@@ -29037,13 +29028,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
     text-align: center;
     width: auto; }
   .CardAll .DescriptionContainer {
-    font-size: 1.286em;
-    line-height: 18px;
     padding-left: 16px;
     text-align: left; }
     .CardAll .DescriptionContainer .Description {
-      display: block;
-      line-height: 18px; }
+      display: block; }
     .CardAll .DescriptionContainer .Small_Description {
       min-width: 185px;
       overflow: hidden;
@@ -29336,7 +29324,7 @@ ul.os-internal-ui-autocomplete {
   width: 100%; }
 
 .InfoTooltipDnD {
-  color: #00ac94;
+  color: #020202;
   font-size: 0.857em;
   position: absolute;
   right: 16px;
@@ -29609,7 +29597,7 @@ ul.os-internal-ui-autocomplete {
   margin: 5px; }
 
 .ClinicianWorkArea____resumeDetails .SectionExpandableCustom .SectionExpandableInside .ExapandablePlaceholder {
-  color: #00ac94; }
+  color: #020202; }
   .ClinicianWorkArea____resumeDetails .SectionExpandableCustom .SectionExpandableInside .ExapandablePlaceholder.Counter {
     margin: 0 10px; }
 
