@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970028 || Generated: Tue Oct 06 2020 17:09:00 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970029 || Generated: Wed Oct 07 2020 10:32:30 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7226,6 +7226,13 @@ a.Button.IsDefault,
   .LinkHover:hover {
     color: #00ac94; }
 
+.IconHover {
+  color: #00ac94;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  .IconHover:hover {
+    color: #56d3c2; }
+
 .AR.Page a.Button, .AR.Page .DropZoneContainer .row .Button, .DropZoneContainer .row .AR.Page .Button,
 .AR.Page.LayoutTooltip a.Button,
 .AR.Page.LayoutTooltip .DropZoneContainer .row .Button,
@@ -9568,7 +9575,7 @@ div.LineInfo {
 
 .popup-wrapper > .popup-menu {
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 8px;
   position: absolute;
   z-index: 4; }
   .popup-wrapper > .popup-menu > .popup-menu-balloon {
@@ -10566,6 +10573,8 @@ div.LineInfo {
     .CounterBox .Counter.Maj {
       background-color: #fad5d5;
       color: #b10100; }
+    .CounterBox .Counter .TextTiny {
+      font-size: 0.714em; }
 
 .HasItemSelected .CounterBox:not(.SelectedWardBx) {
   opacity: 0.5; }
@@ -12330,7 +12339,7 @@ div.ActionsMenu-trigger {
 div.ActionsMenu-tooltip {
   background-color: #fff;
   border: 0;
-  border-radius: 4px;
+  border-radius: 8px;
   display: none;
   min-width: 245px; }
   div.ActionsMenu-tooltip.Border--None .tooltipster-content > section > div > div {
@@ -12561,7 +12570,7 @@ div.ActionsMenu-item {
       content: '\e64d';
       font-family: "Sapphire-Icon-Font"; }
   .Page .Appointment_Icon.redCircle {
-    border-color: #ff3e2d; }
+    border: 2px solid #ff3e2d; }
   .Page .Appointment_Icon.blueCircle {
     border: 2px solid #039be5; }
   .Page .Appointment_Icon.greenCircle {
@@ -20574,9 +20583,6 @@ body.PanelById.PanelOpened {
 .PersonCard__headerLeftInfo .PersonCard____title a {
   color: inherit; }
 
-.PersonCard span.verticalAlignHelper.Middle ~ * {
-  vertical-align: top; }
-
 .ListRecords .PersonCard .PersonCard_header,
 .ListRecords > div:not(:last-of-type) .PersonCard .PersonCard_header,
 .ListRecords > span:not(:last-of-type) .PersonCard .PersonCard_header,
@@ -26606,7 +26612,7 @@ div.TimelineDetail {
 
 /* This is the base styling required to make all Tooltipsters work */
 .tooltipster-base {
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 0;
   line-height: 0;
   min-width: 250px;
