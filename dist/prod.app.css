@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970029 || Generated: Wed Oct 07 2020 10:32:30 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970030 || Generated: Wed Oct 07 2020 14:21:08 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7317,7 +7317,7 @@ a.Button.IsDefault,
   margin-top: 24px;
   padding: 16px; }
 
-.Card {
+.Card, .DashboardWindow {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
@@ -12562,13 +12562,11 @@ div.ActionsMenu-item {
     background-color: #00bfa5;
     border-color: #00bfa5;
     color: #fff;
-    height: 18px;
-    line-height: 15px;
-    text-align: left;
-    width: 18px; }
+    text-align: center; }
     .Page .Appointment_Icon.circleSuccess:before {
       content: '\e64d';
-      font-family: "Sapphire-Icon-Font"; }
+      font-family: "Sapphire-Icon-Font";
+      font-size: 0.786em; }
   .Page .Appointment_Icon.redCircle {
     border: 2px solid #ff3e2d; }
   .Page .Appointment_Icon.blueCircle {
@@ -12578,17 +12576,10 @@ div.ActionsMenu-item {
   .Page .Appointment_Icon.nopresence {
     border: none;
     color: #d6d6d6; }
-  .Page .Appointment_Icon.nopresence:before {
-    content: '\e699';
-    font-family: "Sapphire-Icon-Font";
-    font-size: 1.143em; }
-
-.FA .StatusContainer .Appointment_Icon,
-.AR .StatusContainer .Appointment_Icon {
-  margin-left: 10px; }
-  .FA .StatusContainer .Appointment_Icon.circleSuccess,
-  .AR .StatusContainer .Appointment_Icon.circleSuccess {
-    text-align: right; }
+    .Page .Appointment_Icon.nopresence:before {
+      content: '\e699';
+      font-family: "Sapphire-Icon-Font";
+      font-size: 1.143em; }
 
 .IconSignal {
   border-radius: 100%;
@@ -14711,6 +14702,56 @@ div.CircledArrow {
 .FA .intl-tel-input.separate-dial-code input[type='tel'],
 .FA .intl-tel-input.separate-dial-code input[type='text'] {
   padding-right: 92px; }
+
+.DashboardWindow {
+  position: relative; }
+  .DashboardWindow:hover .DashboardCloseWindow {
+    visibility: visible; }
+  .DashboardWindow .DashBoardTitle1 {
+    cursor: move;
+    font-family: "LatoBold";
+    font-size: 1.143em;
+    position: relative; }
+    .DashboardWindow .DashBoardTitle1:before {
+      color: #adadad;
+      content: '\e656';
+      font-family: "Sapphire-Icon-Font";
+      font-size: 30px;
+      left: 50%;
+      position: absolute;
+      top: -24px;
+      -webkit-transform: translateX(-50%) rotate(90deg);
+              transform: translateX(-50%) rotate(90deg); }
+  .DashboardWindow .DashboardCloseWindow {
+    background-color: #00bfa5;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.786em;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    right: 16px;
+    text-align: center;
+    top: 16px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    visibility: hidden;
+    width: 24px;
+    z-index: 2; }
+    .DashboardWindow .DashboardCloseWindow:hover {
+      background-color: #56d3c2; }
+  .DashboardWindow .DashboardContent {
+    margin-top: 24px; }
+
+.DragBox .DashboardWindow {
+  margin-bottom: 16px; }
+  .DragBox .DashboardWindow:last-of-type {
+    margin-bottom: 0; }
+
+.AR .DashboardWindow .DashboardCloseWindow,
+.FA .DashboardWindow .DashboardCloseWindow {
+  left: 16px;
+  right: auto; }
 
 .DataFrame {
   background-color: #fff;
@@ -29018,24 +29059,24 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   .FA .CardAll .DescriptionContainer .Description {
     font-family: "LatoBold"; }
 
-.Card .Gallery .GalleryWrapper {
+.Card .Gallery .GalleryWrapper, .DashboardWindow .Gallery .GalleryWrapper {
   margin: 0; }
-  .Card .Gallery .GalleryWrapper span:first-child {
+  .Card .Gallery .GalleryWrapper span:first-child, .DashboardWindow .Gallery .GalleryWrapper span:first-child {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap; }
-    .Card .Gallery .GalleryWrapper span:first-child .GalleryItem {
+    .Card .Gallery .GalleryWrapper span:first-child .GalleryItem, .DashboardWindow .Gallery .GalleryWrapper span:first-child .GalleryItem {
       display: block;
       margin: 0;
       padding: 0;
       padding-bottom: 10px; }
-      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem:nth-child(even) {
+      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem:nth-child(even), .DashboardWindow .Gallery .GalleryWrapper span:first-child .GalleryItem:nth-child(even) {
         padding-left: 5px; }
-      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem:nth-child(odd) {
+      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem:nth-child(odd), .DashboardWindow .Gallery .GalleryWrapper span:first-child .GalleryItem:nth-child(odd) {
         padding-right: 5px; }
-      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem > div > div {
+      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem > div > div, .DashboardWindow .Gallery .GalleryWrapper span:first-child .GalleryItem > div > div {
         width: 100%; }
-      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem .RoomBox {
+      .Card .Gallery .GalleryWrapper span:first-child .GalleryItem .RoomBox, .DashboardWindow .Gallery .GalleryWrapper span:first-child .GalleryItem .RoomBox {
         margin: 0; }
 
 .GraphStructure {
@@ -29052,7 +29093,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
             flex: 1;
     -webkit-box-pack: center;
             justify-content: center; }
-  .GraphStructure .Card {
+  .GraphStructure .Card, .GraphStructure .DashboardWindow {
     height: 100%; }
 
 .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title a,
@@ -29293,6 +29334,17 @@ ul.os-internal-ui-autocomplete {
 .tablet .ManageQueueWrapper > *,
 .desktop.small .ManageQueueWrapper > * {
   width: 100%; }
+
+.InfoTooltipDnD {
+  color: #00ac94;
+  font-size: 0.857em;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  .InfoTooltipDnD:hover {
+    color: #56d3c2; }
 
 .WhiteContainer.MultiPaddingXSmall,
 .AR .WhiteContainer.MultiPaddingXSmall,
@@ -31842,6 +31894,7 @@ a.Header_ButtonSidebar {
 .SectionWebsite .Box.White,
 .SectionWebsite .Panel,
 .SectionWebsite .Card,
+.SectionWebsite .DashboardWindow,
 .SectionWebsite .SectionExpandable,
 .SectionWebsite.Transparent .Box.Transparent,
 .SectionWebsite.Silver .Box.Transparent,
@@ -35211,55 +35264,6 @@ a.Button.Icon:hover,
 /*-------------------------------------------------------------------------------------*/
 /* 9.44 Sapphire Patterns > Custom_Patterns > DashboardWidget **************************/
 /*-------------------------------------------------------------------------------------*/
-.DashboardWindow {
-  background-color: #fcfcfc;
-  border: 1px solid #e6e6e6;
-  border-radius: 5px;
-  padding: 0 0 10px 0;
-  position: relative; }
-
-.DashboardWindow:hover .DashboardCloseWindow {
-  display: block; }
-
-.DashboardCloseWindow {
-  background-color: #02a8b1;
-  border-radius: 50%;
-  color: #fff;
-  display: none;
-  font-size: 1.332rem;
-  height: 30px;
-  padding: 6px 7px;
-  position: absolute;
-  right: 15px;
-  top: 5px;
-  width: 30px;
-  z-index: 2; }
-
-.DashboardCloseWindow:hover {
-  background-color: #43b3c2; }
-
-.AR .DashboardCloseWindow,
-.FA .DashboardCloseWindow {
-  left: 15px;
-  padding: 5px 7px;
-  right: auto; }
-
-.DashBoardTitle1 {
-  border-top: 2px solid #124a62;
-  font-size: 14px;
-  height: 40px;
-  line-height: 100%;
-  padding: 10px 20px;
-  position: relative;
-  vertical-align: middle; }
-
-.AR .DashBoardTitle1,
-.FA .DashBoardTitle1 {
-  font-size: 18px; }
-
-.DashboardContent {
-  margin: 20px; }
-
 /*-------------------------------------------------------------------------------------*/
 /* 9.45 Sapphire Patterns > Custom_Patterns > DataFrame ********************************/
 /*-------------------------------------------------------------------------------------*/
