@@ -10,14 +10,11 @@
 	}
 
 	.DescriptionContainer {
-		font-size: $font-size-heading3;
-		line-height: 18px;
 		padding-left: $sapphire-sizes--medium;
 		text-align: left;
 
 		.Description {
 			display: block;
-			line-height: 18px;
 		}
 
 		.Small_Description {
@@ -43,16 +40,3 @@
 		}
 	}
 }
-
-// .desktop {
-// 	.CardAll {
-// 		.DescriptionContainer {
-// 			.Description {
-// 				overflow: hidden;
-// 				text-overflow: ellipsis;
-// 				white-space: nowrap;
-// 				width: 130px;
-// 			}
-// 		}
-// 	}
-// }

@@ -4,15 +4,16 @@
 	vertical-align: middle;
 }
 
-.DesignSystem,
-.LayoutPopup,
-.LayoutBlank,
-.LayoutBase {
-	.ListRecords {
-		.CompLine {
-			.CompLine_Expand {
-				background-color: transparent;
-			}
+.ListRecords {
+	.CompLine {
+		margin-bottom: $sapphire-sizes--small;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		.CompLine_Expand {
+			background-color: transparent;
 		}
 	}
 }
@@ -109,7 +110,7 @@
 
 	&__icon {
 		font-size: 1.143em;
-		margin-right: 5px;
+		margin-right: $sapphire-sizes--small;
 
 		span {
 			line-height: 36px;
@@ -225,7 +226,7 @@
 				display: block;
 				height: auto;
 				overflow: visible;
-				padding: 19px 23px;
+				padding: $sapphire-sizes--medium;
 				visibility: visible;
 			}
 		}
@@ -307,7 +308,7 @@
 		}
 
 		&__icon {
-			margin-left: 5px;
+			margin-left: $sapphire-sizes--small;
 			margin-right: 0;
 		}
 	}
