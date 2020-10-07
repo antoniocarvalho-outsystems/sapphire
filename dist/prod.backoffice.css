@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.970031 || Generated: Wed Oct 07 2020 17:55:01 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.970032 || Generated: Wed Oct 07 2020 17:59:54 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -2801,7 +2801,7 @@ div[onclick] {
   padding: 0 10px 0 0;
   vertical-align: middle; }
   .SapphireSearch_show a, .SapphireSearch_clear a {
-    color: #020202;
+    color: #00ac94;
     cursor: auto;
     font-size: 16px;
     font-weight: 600 !important;
@@ -3035,7 +3035,7 @@ div[onclick] {
 
 .NavigationBar a.InlineDropdown .DropdownMenu a:hover,
 .NavigationBar a.InlineDropdown .DropdownMenu a:link:hover {
-  color: #020202;
+  color: #00ac94;
   font-weight: initial; }
 
 .NavigationBar a.InlineDropdown .InlineDropdown_icon .fa {
@@ -3384,7 +3384,7 @@ div[onclick] {
   .InlineDropdown:focus .InlineDropdown_text {
     border-bottom: 1px solid #333333; }
   .InlineDropdown_text {
-    color: #020202;
+    color: #00ac94;
     font-family: "LatoBold"; }
   .InlineDropdown_icon {
     -webkit-box-align: center;
@@ -3394,7 +3394,7 @@ div[onclick] {
     -webkit-box-pack: center;
             justify-content: center;
     border-radius: 50%;
-    color: #020202;
+    color: #00ac94;
     display: -webkit-inline-box;
     display: inline-flex;
     height: 18px;
@@ -3545,12 +3545,12 @@ div[onclick] {
     padding: 0 !important;
     width: 0 !important; }
   .DateTimeRangePicker-label {
-    color: #020202;
+    color: #00ac94;
     cursor: pointer;
     font-family: "LatoBold";
     vertical-align: baseline; }
   .DateTimeRangePicker-clear {
-    color: #020202;
+    color: #00ac94;
     cursor: pointer;
     font-family: "Sapphire-Icon-Font";
     font-size: inherit;
@@ -3904,7 +3904,7 @@ div[onclick] {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
   .HourPicker--textTrigger .HourPicker__LabelValue {
-    color: #020202;
+    color: #00ac94;
     cursor: pointer;
     display: inline-block;
     font-family: "LatoBold";
@@ -3932,7 +3932,7 @@ div[onclick] {
     position: relative;
     width: 100%; }
   .HourPicker__ButtonClear {
-    color: #020202;
+    color: #00ac94;
     cursor: pointer;
     font-family: "Sapphire-Icon-Font";
     font-size: inherit;
@@ -3994,10 +3994,10 @@ div.ui-timepicker-container {
     padding: 0 5px 0 10px; }
 
 .iconVertical_icon {
-  color: #020202;
+  color: #00ac94;
   font-weight: 600; }
   .iconVertical_icon.IconGreenColor {
-    color: #020202; }
+    color: #00ac94; }
   .iconVertical_icon.IconYellowColor {
     color: #ffa000; }
   .iconVertical_icon.IconRedColor {
@@ -4007,16 +4007,16 @@ div.ui-timepicker-container {
   .iconVertical_icon.IconOrangeColor {
     color: #c37b03; }
   .iconVertical_icon.AllGreenIcon .icon {
-    color: #020202; }
+    color: #00ac94; }
 
 .iconVertical_label {
   color: #777777;
   font-family: "LatoRegular";
   text-decoration: none; }
   .iconVertical_label.LabelGreen {
-    color: #020202; }
+    color: #00ac94; }
   .iconVertical_label.LabelColorGreen {
-    color: #020202; }
+    color: #00ac94; }
   .iconVertical_label.LabelColorYellow {
     color: #ffa000; }
   .iconVertical_label.LabelColorRed {
@@ -4037,10 +4037,10 @@ div.ui-timepicker-container {
 .iconHorizontal {
   font-size: 1em; }
   .iconHorizontal_icon {
-    color: #020202;
+    color: #00ac94;
     font-weight: 600; }
     .iconHorizontal_icon.IconGreenColor {
-      color: #020202; }
+      color: #00ac94; }
     .iconHorizontal_icon.IconYellowColor {
       color: #ffa000; }
     .iconHorizontal_icon.IconRedColor {
@@ -4050,15 +4050,15 @@ div.ui-timepicker-container {
     .iconHorizontal_icon.IconOrangeColor {
       color: #c37b03; }
     .iconHorizontal_icon.AllGreenIcon .icon {
-      color: #020202; }
+      color: #00ac94; }
   .iconHorizontal_label {
     color: #777777;
     font-family: "LatoRegular";
     text-decoration: none; }
     .iconHorizontal_label.LabelGreen {
-      color: #020202; }
+      color: #00ac94; }
     .iconHorizontal_label.LabelColorGreen {
-      color: #020202; }
+      color: #00ac94; }
     .iconHorizontal_label.LabelColorYellow {
       color: #ffa000; }
     .iconHorizontal_label.LabelColorRed {
@@ -4584,7 +4584,7 @@ body.PanelById.PanelOpened {
     background-color: #f2fffd; }
     .select2-container .select2-dropdown.MultipleSelect .select2-results__option[aria-selected='true']:before {
       background-color: #fff;
-      color: #020202;
+      color: #00ac94;
       content: '\f00c';
       display: inline-block;
       font-family: FontAwesome;
@@ -4642,7 +4642,7 @@ body.PanelById.PanelOpened {
   width: 49%; }
 
 .fontSelect2Availability {
-  color: #020202;
+  color: #00ac94;
   display: inline-block;
   font-size: 1em;
   width: 49%; }
