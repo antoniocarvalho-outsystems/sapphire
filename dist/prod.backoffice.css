@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.970033 || Generated: Thu Oct 08 2020 09:41:06 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.970034 || Generated: Thu Oct 08 2020 09:52:14 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4787,7 +4787,7 @@ body.PanelById.PanelOpened {
   background: none; }
 
 .LayoutBackoffice .TableRecords tr.TableRecords_DisabledRow > * {
-  color: #858585; }
+  color: #adadad; }
 
 .LayoutBackoffice.desktop .TableRecords > tbody > tr:hover,
 .LayoutBackoffice.desktop .TableRecords > tbody > tr:hover td,
