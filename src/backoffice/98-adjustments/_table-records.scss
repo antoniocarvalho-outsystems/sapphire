@@ -13,6 +13,10 @@
 		background: none;
 	}
 
+	.TableRecords tr.TableRecords_DisabledRow > * {
+		color: #858585;
+	}
+
 	&.desktop {
 		.TableRecords > tbody > tr:hover,
 		.TableRecords > tbody > tr:hover td,
