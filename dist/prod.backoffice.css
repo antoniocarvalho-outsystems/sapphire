@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.970034 || Generated: Thu Oct 08 2020 09:52:14 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.970035 || Generated: Fri Oct 09 2020 13:55:52 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -1164,16 +1164,15 @@ a.Button.Schedule:before {
 
 a.Button.Emergency:before {
   background-color: #ff3e2d;
-  border: 2px solid #fff;
   border-radius: 50%;
-  color: #fff;
+  color: #fff !important;
   content: '\e61e';
-  height: 17px;
+  font-size: 12px;
+  height: 18px;
   line-height: 16px;
-  margin-bottom: 3px;
-  padding-right: 1px;
+  margin-bottom: 4px;
   vertical-align: middle;
-  width: 17px; }
+  width: 18px; }
 
 a.Button.RoomWhite:before {
   content: '\e631'; }
