@@ -212,9 +212,9 @@
 
 		// Colors
 		&.Male {
-			// .PersonCardIcon {
-			// 	background-color: $light-blue-2;
-			// }
+			.PersonCardIcon {
+				background-color: $light-blue-2;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $sapphire-male;
@@ -226,9 +226,9 @@
 		}
 
 		&.Female {
-			// .PersonCardIcon {
-			// 	background-color: $light-pink-2;
-			// }
+			.PersonCardIcon {
+				background-color: $light-pink-2;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $sapphire-female;
@@ -240,9 +240,9 @@
 		}
 
 		&.Unidentified {
-			// .PersonCardIcon {
-			// 	background-color: $body-color;
-			// }
+			.PersonCardIcon {
+				background-color: $body-color;
+			}
 
 			&.HasBorder {
 				border-left: 2px solid $regular-grey;

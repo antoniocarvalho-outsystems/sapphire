@@ -254,6 +254,14 @@ a.Button.IsDefault,
 	}
 }
 
+a.LinkReset {
+	&:link,
+	&:visited {
+		color: $dark-grey;
+		font-family: $font-family-latin-regular;
+	}
+}
+
 .AR.Page {
 	a.Button,
 	&.LayoutTooltip a.Button,
