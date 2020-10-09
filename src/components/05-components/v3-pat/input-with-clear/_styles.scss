@@ -1,31 +1,30 @@
 .InputWithClear-container {
-  position: relative;
+	position: relative;
 }
 
 .InputWithClear-clear {
-  font-size: 16px;
-  line-height: 16px;
-  position: absolute;
-  right: 10px;
-  top: calc(50% - 7px);
+	font-size: 16px;
+	line-height: 16px;
+	position: absolute;
+	right: 10px;
+	top: calc(50% - 8px);
 }
 
 .InputWithClear--shield {
-  position: absolute;
-  width: 100%;
+	position: absolute;
+	width: 100%;
 
-  .LineWarns,
-  .LineWarns_list {
-    height: 36px;
-    min-height: unset;
-  }
+	.LineWarns,
+	.LineWarns_list {
+		height: 36px;
+		min-height: unset;
+	}
 }
 
 .AR,
 .FA {
-  .InputWithClear-clear {
-    left: 10px;
-    right: auto;
-  }
-
+	.InputWithClear-clear {
+		left: 10px;
+		right: auto;
+	}
 }

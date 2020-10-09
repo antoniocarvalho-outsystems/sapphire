@@ -322,16 +322,15 @@ a.Button.Schedule:before {
 
 a.Button.Emergency:before {
 	background-color: $regular-red;
-	border: 2px solid #fff;
 	border-radius: 50%;
-	color: #fff;
+	color: $regular-white !important;
 	content: '\e61e';
-	height: 17px;
+	font-size: 12px;
+	height: 18px;
 	line-height: 16px;
-	margin-bottom: 3px;
-	padding-right: 1px;
+	margin-bottom: 4px;
 	vertical-align: middle;
-	width: 17px;
+	width: 18px;
 }
 
 a.Button.RoomWhite:before {
