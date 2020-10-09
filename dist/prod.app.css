@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970035 || Generated: Fri Oct 09 2020 13:55:52 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970036 || Generated: Fri Oct 09 2020 17:53:56 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7232,6 +7232,10 @@ a.Button.IsDefault,
   .IconHover:hover {
     color: #56d3c2; }
 
+a.LinkReset:link, a.LinkReset:visited {
+  color: #333333;
+  font-family: "LatoRegular"; }
+
 .AR.Page a.Button, .AR.Page .DropZoneContainer .row .Button, .DropZoneContainer .row .AR.Page .Button,
 .AR.Page.LayoutTooltip a.Button,
 .AR.Page.LayoutTooltip .DropZoneContainer .row .Button,
@@ -10665,6 +10669,11 @@ div.LineInfo {
       background-color: #fff;
       border: 1px solid #fff;
       color: #00ac94; }
+    .DesignSystem .WizardStep.ActiveStep .IconWizard,
+    .LayoutBlank .WizardStep.ActiveStep .IconWizard,
+    .LayoutBase .WizardStep.ActiveStep .IconWizard {
+      border: 1px solid #fff;
+      color: #fff; }
   .DesignSystem .WizardStep.Past,
   .LayoutBlank .WizardStep.Past,
   .LayoutBase .WizardStep.Past {
@@ -20383,14 +20392,20 @@ body.PanelById.PanelOpened {
   padding: 10px 16px; }
   .PersonCard__headerLeftInfo.IsLeftSideHide {
     display: none; }
+  .PersonCard__headerLeftInfo.Male .PersonCardIcon {
+    background-color: #f0faf9; }
   .PersonCard__headerLeftInfo.Male.HasBorder {
     border-left: 2px solid #194968; }
     .PersonCard__headerLeftInfo.Male.HasBorder .icon {
       color: #194968; }
+  .PersonCard__headerLeftInfo.Female .PersonCardIcon {
+    background-color: #feeced; }
   .PersonCard__headerLeftInfo.Female.HasBorder {
     border-left: 2px solid #c892b3; }
     .PersonCard__headerLeftInfo.Female.HasBorder .icon {
       color: #c892b3; }
+  .PersonCard__headerLeftInfo.Unidentified .PersonCardIcon {
+    background-color: #f3f3f3; }
   .PersonCard__headerLeftInfo.Unidentified.HasBorder {
     border-left: 2px solid #777777; }
     .PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
@@ -27785,6 +27800,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   .Bold > .TextRegularAR,
   .TextBold > .TextRegularAR {
     font-family: "TajawalBold"; }
+
+.TextBoldAR {
+  font-family: "TajawalBold"; }
 
 .TextRegular {
   font-family: "LatoRegular"; }
@@ -38949,12 +38967,6 @@ div.ForwardableContainer {
 /*------------------------------------------------------------*/
 /* 10.3.9 Auxiliar Classes Others ****************************/
 /*------------------------------------------------------------*/
-.RegularFontFamily {
-  font-family: 'globeregular', Helvetica, Arial, sans-serif; }
-
-.BoldTextOpps {
-  font-size: 30px; }
-
 .LimitText {
   overflow: hidden;
   text-overflow: ellipsis;
