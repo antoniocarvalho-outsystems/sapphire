@@ -255,6 +255,20 @@
 
 .AR,
 .FA {
+	.CalendarWidget {
+		&___back {
+			&:after {
+				transform: rotate(-90deg);
+			}
+		}
+
+		&___forward {
+			&:after {
+				transform: rotate(-270deg);
+			}
+		}
+	}
+
 	.Calendar_Today,
 	.Calendar_Weekday,
 	.Calendar_Past_Day,
