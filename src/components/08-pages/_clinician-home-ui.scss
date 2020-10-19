@@ -73,6 +73,24 @@
 	}
 }
 
+// Hospitalization
+.HasCriticalValue {
+	position: relative;
+
+	&:before {
+		background-color: $regular-red;
+		border: 2px solid $regular-white;
+		border-radius: 50%;
+		content: '';
+		display: block;
+		height: $sapphire-sizes--small;
+		position: absolute;
+		right: -6px;
+		top: -6px;
+		width: $sapphire-sizes--small;
+	}
+}
+
 .tablet {
 	.FiltersWrapper {
 		flex-direction: column-reverse;

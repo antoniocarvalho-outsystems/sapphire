@@ -4558,20 +4558,20 @@ td.RowWithAddAction a {
 /* 5.3 RichWidgets > List Navigation **************************/
 /*------------------------------------------------------------*/
 
-a.ListNavigation_PageNumber:link,
-span.ListNavigation_CurrentPageNumber,
-span.ListNavigation_Ellipsis,
-a.ListNavigation_Previous:link,
-a.ListNavigation_Next:link {
-  background: transparent;
-}
+// a.ListNavigation_PageNumber:link,
+// span.ListNavigation_CurrentPageNumber,
+// span.ListNavigation_Ellipsis,
+// a.ListNavigation_Previous:link,
+// a.ListNavigation_Next:link {
+//   background: transparent;
+// }
 
-a.ListNavigation_PageNumber:link,
-span.ListNavigation_CurrentPageNumber,
-span.ListNavigation_Ellipsis {
-  margin: 0 0 0 5px;
-  padding: 3px 6px;
-}
+// a.ListNavigation_PageNumber:link,
+// span.ListNavigation_CurrentPageNumber,
+// span.ListNavigation_Ellipsis {
+//   margin: 0 0 0 5px;
+//   padding: 3px 6px;
+// }
 
 /*------------------------------------------------------------*/
 /* 5.4 RichWidgets > Popup Editor *****************************/
@@ -30371,19 +30371,19 @@ html .AR.tablet .ThemeGrid_Width12 {
 // 	right: auto;
 // }
 
-.FA .ListNavigation_Previous:before,
-.FA .ListNavigation_DisabledPrevious:before,
-.AR .ListNavigation_Previous:before,
-.AR .ListNavigation_DisabledPrevious:before {
-  margin-right: 5px;
-}
+// .FA .ListNavigation_Previous:before,
+// .FA .ListNavigation_DisabledPrevious:before,
+// .AR .ListNavigation_Previous:before,
+// .AR .ListNavigation_DisabledPrevious:before {
+//   margin-right: 5px;
+// }
 
-.FA .ListNavigation_Next:after,
-.FA .ListNavigation_DisabledNext:after,
-.AR .ListNavigation_Next:after,
-.AR .ListNavigation_DisabledNext:after {
-  margin-left: 7px;
-}
+// .FA .ListNavigation_Next:after,
+// .FA .ListNavigation_DisabledNext:after,
+// .AR .ListNavigation_Next:after,
+// .AR .ListNavigation_DisabledNext:after {
+//   margin-left: 7px;
+// }
 
 .FA .rwd_debug,
 .AR .rwd_debug {

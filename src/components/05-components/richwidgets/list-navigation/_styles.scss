@@ -1,0 +1,67 @@
+.ListNavigation_Wrapper {
+	@include flex-center-vertically(inline-flex);
+
+	gap: $sapphire-sizes--medium;
+
+	> span[id] {
+		display: inline-flex;
+		gap: 10px;
+	}
+
+	a.ListNavigation_PageNumber,
+	span.ListNavigation_CurrentPageNumber {
+		border-radius: 50%;
+		color: $regular-grey;
+		display: inline-block;
+		font-family: $font-family-latin-regular;
+		font-size: $font-size-heading4;
+		font-weight: unset;
+		height: 28px;
+		line-height: 28px;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		width: 28px;
+	}
+
+	a.ListNavigation_PageNumber {
+		&:hover {
+			background-color: $light-grey;
+		}
+	}
+
+	span.ListNavigation_CurrentPageNumber {
+		background-color: $regular-alpha;
+		color: $regular-white;
+	}
+
+	span.ListNavigation_Ellipsis {
+		margin: 0;
+		padding: 0;
+	}
+
+	a.ListNavigation_Next,
+	a.ListNavigation_Previous {
+		&:before {
+			color: $mid-dark-grey;
+			content: '\e69c';
+			font-family: $font-family-icons;
+			font-size: 10px;
+		}
+
+		font-size: 0;
+		padding: 0;
+	}
+
+	a.ListNavigation_Previous {
+		&:before {
+			content: '\e69c';
+		}
+	}
+
+	a.ListNavigation_Next {
+		&:before {
+			content: '\e69d';
+		}
+	}
+}
