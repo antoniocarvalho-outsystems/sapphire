@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970036 || Generated: Fri Oct 09 2020 17:53:56 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970037 || Generated: Mon Oct 19 2020 11:57:17 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21598,6 +21598,16 @@ a .PersonCard {
 .CalendarWidget .CalendarWidget__Selected {
   background-color: #ffffff !important;
   border: none !important; }
+
+.AR .CalendarWidget___back:after,
+.FA .CalendarWidget___back:after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+
+.AR .CalendarWidget___forward:after,
+.FA .CalendarWidget___forward:after {
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg); }
 
 .AR .Calendar_Today,
 .AR .Calendar_Weekday,
