@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970037 || Generated: Mon Oct 19 2020 11:57:17 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970038 || Generated: Mon Oct 19 2020 14:03:36 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21609,20 +21609,9 @@ a .PersonCard {
   -webkit-transform: rotate(-270deg);
           transform: rotate(-270deg); }
 
-.AR .Calendar_Today,
-.AR .Calendar_Weekday,
-.AR .Calendar_Past_Day,
-.AR .CalendarWidget__days,
-.AR .Calendar_Weekday_Holiday,
-.AR .CalendarWidget__daysNumber,
-.FA .Calendar_Today,
-.FA .Calendar_Weekday,
-.FA .Calendar_Past_Day,
-.FA .CalendarWidget__days,
-.FA .Calendar_Weekday_Holiday,
-.FA .CalendarWidget__daysNumber {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1); }
+.AR .CalendarWidget .ListRecords,
+.FA .CalendarWidget .ListRecords {
+  text-align: right; }
 
 .SapphireHeader {
   background-color: #fff;
