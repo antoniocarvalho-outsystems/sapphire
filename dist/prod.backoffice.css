@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.970038 || Generated: Mon Oct 19 2020 14:03:36 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.970039 || Generated: Mon Oct 19 2020 15:39:13 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4340,7 +4340,7 @@ body.PanelById.PanelOpened {
     background-color: #fff;
     border-radius: 8px;
     display: none;
-    padding: 30px 20px;
+    padding: 16px;
     position: fixed;
     text-align: center;
     width: 100%;
@@ -4726,6 +4726,27 @@ body.PanelById.PanelOpened {
     content: '';
     display: block;
     height: 1px; }
+
+.ScrollableContainer {
+  overflow: auto;
+  margin-right: -8px;
+  padding-right: 8px; }
+  .ScrollableContainer::-webkit-scrollbar {
+    background-color: #fff;
+    height: 7px;
+    width: 7px; }
+  .ScrollableContainer::-webkit-scrollbar-thumb {
+    border: 5px solid #d6d6d6;
+    border-radius: 4px; }
+  .ScrollableContainer::before {
+    content: '';
+    display: block;
+    height: 1px; }
+  .AR .ScrollableContainer {
+    margin-left: -8px;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: auto; }
 
 .ScrollableWhite {
   overflow: auto; }
