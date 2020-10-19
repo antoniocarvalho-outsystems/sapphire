@@ -13,6 +13,21 @@
 	@include default-style-scrollable();
 }
 
+.ScrollableContainer {
+	@include component-scroll-root();
+	@include default-style-scrollable();
+
+	.AR & {
+		margin-left: -$sapphire-sizes--small;
+		margin-right: auto;
+		padding-left: $sapphire-sizes--small;
+		padding-right: auto;
+	}
+
+	margin-right: -$sapphire-sizes--small;
+	padding-right: $sapphire-sizes--small;
+}
+
 .ScrollableWhite {
 	@include component-scroll-root(4px, true);
 	@include default-style-scrollable();

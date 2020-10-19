@@ -258,12 +258,16 @@
 	.CalendarWidget {
 		&___back {
 			&:after {
+				left: auto;
+				right: 7px;
 				transform: rotate(-90deg);
 			}
 		}
 
 		&___forward {
 			&:after {
+				left: 7px;
+				right: auto;
 				transform: rotate(-270deg);
 			}
 		}
@@ -272,13 +276,4 @@
 			text-align: right;
 		}
 	}
-
-	// .Calendar_Today,
-	// .Calendar_Weekday,
-	// .Calendar_Past_Day,
-	// .CalendarWidget__days,
-	// .Calendar_Weekday_Holiday,
-	// .CalendarWidget__daysNumber {
-	// 	transform: scaleX(-1);
-	// }
 }
