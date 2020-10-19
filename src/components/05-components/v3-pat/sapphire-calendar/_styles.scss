@@ -267,14 +267,18 @@
 				transform: rotate(-270deg);
 			}
 		}
+
+		.ListRecords {
+			text-align: right;
+		}
 	}
 
-	.Calendar_Today,
-	.Calendar_Weekday,
-	.Calendar_Past_Day,
-	.CalendarWidget__days,
-	.Calendar_Weekday_Holiday,
-	.CalendarWidget__daysNumber {
-		transform: scaleX(-1);
-	}
+	// .Calendar_Today,
+	// .Calendar_Weekday,
+	// .Calendar_Past_Day,
+	// .CalendarWidget__days,
+	// .Calendar_Weekday_Holiday,
+	// .CalendarWidget__daysNumber {
+	// 	transform: scaleX(-1);
+	// }
 }
