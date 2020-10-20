@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.970040 || Generated: Mon Oct 19 2020 17:46:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.970041 || Generated: Tue Oct 20 2020 11:07:41 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29441,6 +29441,13 @@ ul.os-internal-ui-autocomplete {
   transition: all 0.1s ease-in-out; }
   .InfoTooltipDnD:hover {
     color: #56d3c2; }
+
+.PrintUIOptions {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  gap: 16px; }
 
 .WhiteContainer.MultiPaddingXSmall,
 .AR .WhiteContainer.MultiPaddingXSmall,
