@@ -163,11 +163,6 @@
 	&.activeIndicator {
 		background-color: $sapphire-dark-blue2;
 		color: $regular-white;
-
-		.MenuItem_icon a,
-		.MenuItem_label a {
-			color: $regular-white !important;
-		}
 	}
 
 	&_icon {
@@ -181,7 +176,7 @@
 
 	&_icon a,
 	&_label a {
-		color: $regular-white !important;
+		color: $regular-white;
 	}
 
 	&_subItems {
@@ -212,7 +207,7 @@
 		> .ListRecords > a:link {
 			background-color: $sapphire-dark-blue2;
 			border: 1px solid $sapphire-dark-blue2;
-			color: $regular-white !important;
+			color: $regular-white;
 			display: block;
 			font-size: 0.857em;
 			font-weight: normal;

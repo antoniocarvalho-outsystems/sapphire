@@ -237,10 +237,6 @@
 				width: 15px;
 			}
 
-			// .hide-on-scroll {
-			// 	white-space: nowrap;
-			// }
-
 			.Toolbar__MoreOptions {
 				margin-top: -11px;
 
@@ -370,14 +366,13 @@
 
 	&.LayoutBase--withTabs {
 		.LayoutBase {
-			&-spacer {
-				display: none;
-			}
+			// &-spacer {
+			// 	display: none;
+			// }
 
 			&-MainMenu {
 				height: 0;
 				position: absolute;
-				width: fit-content;
 			}
 
 			&-MainContent {
