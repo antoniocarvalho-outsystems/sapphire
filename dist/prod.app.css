@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980001 || Generated: Tue Oct 20 2020 11:54:00 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.980002 || Generated: Wed Oct 21 2020 12:36:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11798,7 +11798,10 @@ html body {
           align-items: center;
   display: -webkit-inline-box;
   display: inline-flex;
-  gap: 16px; }
+  gap: 16px;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  width: 100%; }
   .ListNavigation_Wrapper > span[id] {
     display: -webkit-inline-box;
     display: inline-flex;
@@ -27745,17 +27748,22 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
     -webkit-box-pack: end;
             justify-content: flex-end; }
 
-.FlexList {
+.FlexList, .FlexListMediumGap {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   gap: 8px; }
+  .FlexListMediumGap {
+    gap: 16px; }
 
 .InlineFlexList {
   display: -webkit-inline-box;
   display: inline-flex;
   flex-wrap: wrap;
   gap: 8px; }
+
+.FlexNoWrap {
+  flex-wrap: nowrap !important; }
 
 .Rotation45 {
   -webkit-transform: rotate(45deg);
@@ -29409,15 +29417,20 @@ ul.os-internal-ui-autocomplete {
   position: relative; }
   .HasCriticalValue:before {
     background-color: #ff3e2d;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    content: '';
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    color: #fff;
+    content: '!';
     display: block;
-    height: 8px;
+    font-size: 11px;
+    height: 15px;
+    line-height: 16px;
     position: absolute;
     right: -6px;
-    top: -6px;
-    width: 8px; }
+    text-align: center;
+    top: -11px;
+    width: 15px;
+    z-index: 1; }
 
 .tablet .FiltersWrapper {
   -webkit-box-orient: vertical;
