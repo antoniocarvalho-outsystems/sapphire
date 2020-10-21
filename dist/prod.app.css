@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980005 || Generated: Wed Oct 21 2020 17:07:27 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.980006 || Generated: Wed Oct 21 2020 17:24:56 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -24893,6 +24893,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     border-bottom: 1px solid #d6d6d6;
     color: #333333;
     gap: 32px;
+    height: 64px;
     padding: 0 16px;
     width: 100%; }
     .SideMenu__Header .FullScreenTabsWrapper_Container.Dashboard {
@@ -24930,7 +24931,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     color: #5c5c5c;
     font-family: "LatoBold";
     font-size: 1.143em;
-    padding-left: 35px; }
+    white-space: nowrap; }
   .SideMenu__Tabs {
     width: 100%; }
   .SideMenu__Trigger {
@@ -25038,7 +25039,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
           text-align: center;
           width: 21px; }
   .SideMenu__MenuItems {
-    margin-top: 25px;
+    margin-top: 16px;
     overflow: auto; }
     .SideMenu__MenuItems::-webkit-scrollbar {
       background-color: transparent;
@@ -25058,9 +25059,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       .SideMenu__MenuItems .MenuItem:hover .MenuItem_label a {
         color: #333333; }
     .SideMenu__MenuItems .MenuItem.activeIndicator {
-      background-color: inherit;
-      border-left: 2px solid #fff;
-      padding-left: 53px; }
+      background-color: inherit; }
       .SideMenu__MenuItems .MenuItem.activeIndicator:hover {
         background-color: #f2fffd; }
     .SideMenu__MenuItems .MenuItem.active {
