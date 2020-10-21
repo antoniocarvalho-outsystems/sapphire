@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980004 || Generated: Wed Oct 21 2020 14:30:55 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.980005 || Generated: Wed Oct 21 2020 17:07:27 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11042,15 +11042,9 @@ div.LineInfo {
 .LayoutBase--sideMenu .LayoutBase-subLayoutContent {
   padding-top: 100px; }
 
-.LayoutBase--sideMenu.LayoutBase--withTabs .LayoutBase-spacer {
-  display: none; }
-
 .LayoutBase--sideMenu.LayoutBase--withTabs .LayoutBase-MainMenu {
   height: 0;
-  position: absolute;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content; }
+  position: absolute; }
 
 .LayoutBase--sideMenu.LayoutBase--withTabs .LayoutBase-MainContent .FullScreenTabsWrapper .FullScreenTabsWrapper_Container.Dashboard {
   height: 60px;
@@ -19432,10 +19426,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .MenuItem.active, .MenuItem.activeIndicator {
     background-color: #30384a;
     color: #fff; }
-    .MenuItem.active .MenuItem_icon a,
-    .MenuItem.active .MenuItem_label a, .MenuItem.activeIndicator .MenuItem_icon a,
-    .MenuItem.activeIndicator .MenuItem_label a {
-      color: #fff !important; }
   .MenuItem_icon {
     font-size: 1em;
     margin-right: 5px; }
@@ -19443,7 +19433,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     font-size: 0.857em; }
   .MenuItem_icon a,
   .MenuItem_label a {
-    color: #fff !important; }
+    color: #fff; }
   .MenuItem_subItems {
     background: #30384a;
     border-bottom-left-radius: 3px;
@@ -19470,7 +19460,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     .MenuItem_subItems > .ListRecords > a:link {
       background-color: #30384a;
       border: 1px solid #30384a;
-      color: #fff !important;
+      color: #fff;
       display: block;
       font-size: 0.857em;
       font-weight: normal;
@@ -24885,7 +24875,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
             transform: scale(-1, 1); }
 
 .SideMenu {
-  background-color: #f3f3f3; }
+  background-color: #fff; }
   .SideMenu--open .SideMenu__Shield {
     height: 100vh;
     width: 100vw; }
@@ -24895,17 +24885,54 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     z-index: 1; }
     .SideMenu--open .SideMenu__Content * {
       opacity: 1; }
-  .SideMenu__Title {
+  .SideMenu__Header {
     -webkit-box-align: center;
             align-items: center;
     display: -webkit-inline-box;
     display: inline-flex;
-    color: #333333; }
+    border-bottom: 1px solid #d6d6d6;
+    color: #333333;
+    gap: 32px;
+    padding: 0 16px;
+    width: 100%; }
+    .SideMenu__Header .FullScreenTabsWrapper_Container.Dashboard {
+      height: 63px; }
+      .SideMenu__Header .FullScreenTabsWrapper_Container.Dashboard .TabWrapper {
+        background-color: #fff;
+        border-bottom: 3px solid #fff;
+        border-top: none;
+        gap: 8px;
+        height: 100%;
+        min-width: auto;
+        padding: 0; }
+        .SideMenu__Header .FullScreenTabsWrapper_Container.Dashboard .TabWrapper:hover {
+          border-bottom-color: #00ac94; }
+        .SideMenu__Header .FullScreenTabsWrapper_Container.Dashboard .TabWrapper.Active {
+          background-color: #fff;
+          border-bottom-color: #00ac94; }
+      .SideMenu__Header .FullScreenTabsWrapper_Container.Dashboard a {
+        font-family: "LatoRegular";
+        font-size: 1.143em; }
+    .SideMenu__Header .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Tabs {
+      gap: 32px;
+      height: 100%; }
+    .SideMenu__Header .FullScreenTabsWrapper_Container .FullScreenTabs_tabCounter {
+      height: 17px;
+      line-height: 17px;
+      margin-left: unset;
+      margin-top: unset;
+      position: unset;
+      width: 17px; }
+  .SideMenu__SapphireLogo {
+    font-size: 20px;
+    line-height: 20px; }
   .SideMenu__PageTitle {
     color: #5c5c5c;
     font-family: "LatoBold";
     font-size: 1.143em;
     padding-left: 35px; }
+  .SideMenu__Tabs {
+    width: 100%; }
   .SideMenu__Trigger {
     -webkit-box-align: center;
             align-items: center;
@@ -24913,24 +24940,13 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     display: inline-flex;
     -webkit-box-pack: center;
             justify-content: center;
-    background-color: #fff;
-    color: #fff;
     cursor: pointer;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    height: 60px;
-    padding: 10px;
+    gap: 8px;
+    height: 32px;
     -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    width: 60px; }
+    transition: all 0.3s ease; }
     .SideMenu__Trigger:hover {
-      background-color: #f2fffd; }
-    .SideMenu__Trigger div {
-      background-color: #00bfa5;
-      height: 3px;
-      margin: 2px 0;
-      width: 30px; }
+      color: #00ac94; }
   .SideMenu__Shield {
     background-color: #333333;
     height: 0;
@@ -24939,7 +24955,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     top: 0;
     width: 0; }
   .SideMenu__Content {
-    background-color: #2a5a6e;
+    background-color: #fff;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -24948,9 +24964,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     height: 100vh;
     padding-bottom: 20px;
     position: fixed;
+    right: 0;
     top: 0;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     visibility: hidden;
     width: 0; }
     .SideMenu__Content * {
@@ -24959,22 +24976,27 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       transition: all 0.1s ease; }
     .SideMenu__Content .iframeContainer {
       display: none; }
-  .SideMenu__Header {
-    color: #fff;
+  .SideMenu__MoreOptions {
+    -webkit-box-align: center;
+            align-items: center;
+    border-bottom: 1px solid #d6d6d6;
     display: -webkit-inline-box;
     display: inline-flex;
-    padding: 20px 12px 20px 20px;
+    height: 64px;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 0 24px;
     width: 100%; }
+  .SideMenu__OptionsTitle {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    gap: 16px;
+    white-space: nowrap; }
   .SideMenu__MenuClose {
-    cursor: pointer;
-    height: 22px;
-    margin-right: 15px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    width: 22px; }
-    .SideMenu__MenuClose:hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
+    color: #131819;
+    cursor: pointer; }
   .SideMenu__MenuLogo {
     font-size: 6em;
     height: 22px;
@@ -25029,19 +25051,27 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       border-radius: 4px; }
     .SideMenu__MenuItems::-webkit-scrollbar-thumb {
       border: 3px solid #fff; }
+    .SideMenu__MenuItems .MenuItem:hover {
+      background-color: #f2fffd;
+      color: #333333; }
+      .SideMenu__MenuItems .MenuItem:hover .MenuItem_icon a,
+      .SideMenu__MenuItems .MenuItem:hover .MenuItem_label a {
+        color: #333333; }
     .SideMenu__MenuItems .MenuItem.activeIndicator {
       background-color: inherit;
       border-left: 2px solid #fff;
       padding-left: 53px; }
       .SideMenu__MenuItems .MenuItem.activeIndicator:hover {
-        background-color: #30384a; }
+        background-color: #f2fffd; }
     .SideMenu__MenuItems .MenuItem.active {
-      background-color: #30384a;
+      background-color: #f2fffd;
       height: auto; }
     .SideMenu__MenuItems .MenuItem_icon {
-      margin-right: 10px; }
+      margin-right: 16px; }
     .SideMenu__MenuItems .MenuItem_subItems {
-      margin-left: -15px;
+      background-color: transparent;
+      box-shadow: none;
+      margin-left: -16px;
       max-height: unset;
       overflow: unset;
       position: initial;
@@ -25052,12 +25082,22 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
           margin-bottom: 15px; }
       .SideMenu__MenuItems .MenuItem_subItems *:empty {
         display: none; }
+      .SideMenu__MenuItems .MenuItem_subItems > a {
+        background-color: transparent;
+        border: none;
+        color: #333333;
+        font-family: "LatoRegular"; }
   .SideMenu__TabItems .MenuItem, .SideMenu__MenuItems .MenuItem {
     overflow: hidden;
-    padding-left: 55px;
+    padding-left: 24px;
     width: 100%; }
     .SideMenu__TabItems .MenuItem_icon, .SideMenu__TabItems .MenuItem_label, .SideMenu__MenuItems .MenuItem_icon, .SideMenu__MenuItems .MenuItem_label {
+      color: #333333;
+      font-size: 1em;
       pointer-events: none; }
+      .SideMenu__TabItems .MenuItem_icon a, .SideMenu__TabItems .MenuItem_label a, .SideMenu__MenuItems .MenuItem_icon a, .SideMenu__MenuItems .MenuItem_label a {
+        color: #333333;
+        font-family: "LatoRegular"; }
     .SideMenu__TabItems .MenuItem_icon:empty, .SideMenu__TabItems .MenuItem_subItems:empty, .SideMenu__MenuItems .MenuItem_icon:empty, .SideMenu__MenuItems .MenuItem_subItems:empty {
       display: none; }
 
