@@ -26,6 +26,7 @@ $side-menu-height: 64px;
 		border-bottom: 1px solid $light-grey;
 		color: $dark-grey;
 		gap: $sapphire-sizes--xlarge;
+		height: $side-menu-height;
 		padding: 0 $sapphire-sizes--medium;
 		width: 100%;
 
@@ -83,7 +84,7 @@ $side-menu-height: 64px;
 		color: $mid-dark-grey;
 		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
-		padding-left: 35px;
+		white-space: nowrap;
 	}
 
 	&__Tabs {
@@ -213,7 +214,7 @@ $side-menu-height: 64px;
 	&__MenuItems {
 		@include component-scroll-root(4px, true, 3px);
 
-		margin-top: 25px;
+		margin-top: $sapphire-sizes--medium;
 		overflow: auto;
 
 		&::-webkit-scrollbar-thumb {
@@ -233,8 +234,6 @@ $side-menu-height: 64px;
 
 			&.activeIndicator {
 				background-color: inherit;
-				border-left: 2px solid $regular-white;
-				padding-left: 53px;
 
 				&:hover {
 					background-color: $regular-eta;
