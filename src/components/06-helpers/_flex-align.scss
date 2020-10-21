@@ -79,10 +79,20 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: $sapphire-sizes--small;
+
+	&MediumGap {
+		@extend .FlexList;
+
+		gap: $sapphire-sizes--medium;
+	}
 }
 
 .InlineFlexList {
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: $sapphire-sizes--small;
+}
+
+.FlexNoWrap {
+	flex-wrap: nowrap !important;
 }

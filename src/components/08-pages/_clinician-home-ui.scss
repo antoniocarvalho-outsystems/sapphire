@@ -79,15 +79,19 @@
 
 	&:before {
 		background-color: $regular-red;
-		border: 2px solid $regular-white;
-		border-radius: 50%;
-		content: '';
+		clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+		color: $regular-white;
+		content: '!';
 		display: block;
-		height: $sapphire-sizes--small;
+		font-size: 11px;
+		height: 15px;
+		line-height: 16px;
 		position: absolute;
 		right: -6px;
-		top: -6px;
-		width: $sapphire-sizes--small;
+		text-align: center;
+		top: -11px;
+		width: 15px;
+		z-index: 1;
 	}
 }
 
