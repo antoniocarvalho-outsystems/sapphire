@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980008 || Generated: Thu Oct 22 2020 16:35:47 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.980009 || Generated: Thu Oct 22 2020 17:42:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16834,6 +16834,7 @@ div.CircledArrow {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     color: #777777;
+    font-family: "LatoBold";
     font-size: 1rem;
     line-height: calc(44px - 5px);
     padding-left: 24px;
@@ -16848,8 +16849,7 @@ div.CircledArrow {
       background-color: #f3f3f3;
       border-bottom-color: #f3f3f3;
       border-top-color: #00bfa5;
-      color: #00ac94;
-      font-family: "LatoBold"; }
+      color: #00ac94; }
   .FullScreenTabsWrapper_Container.Dashboard .FullScreenTabs_tabCounter {
     position: absolute;
     right: 3px;
@@ -24903,6 +24903,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
         background-color: #fff;
         border-bottom: 3px solid #fff;
         border-top: none;
+        font-size: 1.143em;
         gap: 8px;
         height: 100%;
         min-width: auto;
@@ -24913,8 +24914,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
           background-color: #fff;
           border-bottom-color: #00ac94; }
       .SideMenu__Header .FullScreenTabsWrapper_Container.Dashboard a {
-        font-family: "LatoRegular";
-        font-size: 1.143em; }
+        font-family: "LatoRegular"; }
     .SideMenu__Header .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Tabs {
       gap: 32px;
       height: 100%; }
