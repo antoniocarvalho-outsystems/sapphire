@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980006 || Generated: Wed Oct 21 2020 17:24:56 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.980007 || Generated: Thu Oct 22 2020 16:08:19 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16828,7 +16828,6 @@ div.CircledArrow {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     color: #777777;
-    font-family: "LatoBold";
     font-size: 1rem;
     line-height: calc(44px - 5px);
     padding-left: 24px;
@@ -16843,7 +16842,8 @@ div.CircledArrow {
       background-color: #f3f3f3;
       border-bottom-color: #f3f3f3;
       border-top-color: #00bfa5;
-      color: #00ac94; }
+      color: #00ac94;
+      font-family: "LatoBold"; }
   .FullScreenTabsWrapper_Container.Dashboard .FullScreenTabs_tabCounter {
     position: absolute;
     right: 3px;
@@ -24933,7 +24933,19 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     font-size: 1.143em;
     white-space: nowrap; }
   .SideMenu__Tabs {
+    display: -webkit-inline-box;
+    display: inline-flex;
     width: 100%; }
+    .SideMenu__Tabs > div:first-of-type {
+      -webkit-box-flex: 1;
+              flex: 1; }
+    .SideMenu__Tabs .DepartmentName {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      font-family: "LatoBold";
+      gap: 8px; }
   .SideMenu__Trigger {
     -webkit-box-align: center;
             align-items: center;
