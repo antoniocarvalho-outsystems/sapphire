@@ -88,7 +88,21 @@ $side-menu-height: 64px;
 	}
 
 	&__Tabs {
+		display: inline-flex;
 		width: 100%;
+
+		> div {
+			&:first-of-type {
+				flex: 1;
+			}
+		}
+
+		.DepartmentName {
+			align-items: center;
+			display: inline-flex;
+			font-family: $font-family-latin-bold;
+			gap: $sapphire-sizes--small;
+		}
 	}
 
 	&__Trigger {

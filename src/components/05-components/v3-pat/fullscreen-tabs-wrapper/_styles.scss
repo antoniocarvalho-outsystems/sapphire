@@ -182,7 +182,6 @@ $tab-height: 44px;
 		border-top-left-radius: $border-radius-default;
 		border-top-right-radius: $border-radius-default;
 		color: $regular-grey;
-		font-family: $font-family-latin-bold;
 		font-size: 1rem;
 		line-height: calc(#{$tab-height} - 5px);
 		padding-left: 24px;
@@ -200,6 +199,7 @@ $tab-height: 44px;
 			border-bottom-color: $body-color;
 			border-top-color: $regular-alpha;
 			color: $regular-beta;
+			font-family: $font-family-latin-bold;
 		}
 	}
 
