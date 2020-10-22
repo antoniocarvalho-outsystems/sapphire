@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980007 || Generated: Thu Oct 22 2020 16:08:19 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.980008 || Generated: Thu Oct 22 2020 16:35:47 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11333,6 +11333,12 @@ html .Page .PatientDetailsLayout {
 .LayoutBlank.Page.SidemenuIframe {
   background-color: #2a5a6e; }
 
+.LayoutEmergency .SideMenu__Tabs {
+  -webkit-box-pack: center;
+          justify-content: center; }
+  .LayoutEmergency .SideMenu__Tabs > div:first-of-type {
+    display: none; }
+
 .LayoutPopup {
   width: 100%; }
   .LayoutPopup.SmallPopup .LayoutPopup__body__sidebar {
@@ -19471,11 +19477,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       position: relative;
       -webkit-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in; }
-      .MenuItem_subItems > a:focus,
-      .MenuItem_subItems > a:link:focus,
-      .MenuItem_subItems > .ListRecords > a:focus,
-      .MenuItem_subItems > .ListRecords > a:link:focus {
-        border: 1px solid #fff; }
       .MenuItem_subItems > a:hover,
       .MenuItem_subItems > a:link:hover,
       .MenuItem_subItems > .ListRecords > a:hover,
@@ -24928,7 +24929,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     font-size: 20px;
     line-height: 20px; }
   .SideMenu__PageTitle {
-    color: #5c5c5c;
     font-family: "LatoBold";
     font-size: 1.143em;
     white-space: nowrap; }
@@ -25064,40 +25064,42 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       border-radius: 4px; }
     .SideMenu__MenuItems::-webkit-scrollbar-thumb {
       border: 3px solid #fff; }
-    .SideMenu__MenuItems .MenuItem:hover {
-      background-color: #f2fffd;
-      color: #333333; }
-      .SideMenu__MenuItems .MenuItem:hover .MenuItem_icon a,
-      .SideMenu__MenuItems .MenuItem:hover .MenuItem_label a {
+    .SideMenu__MenuItems .MenuItem {
+      padding: 0 24px; }
+      .SideMenu__MenuItems .MenuItem:hover {
+        background-color: #f2fffd;
         color: #333333; }
-    .SideMenu__MenuItems .MenuItem.activeIndicator {
-      background-color: inherit; }
-      .SideMenu__MenuItems .MenuItem.activeIndicator:hover {
-        background-color: #f2fffd; }
-    .SideMenu__MenuItems .MenuItem.active {
-      background-color: #f2fffd;
-      height: auto; }
-    .SideMenu__MenuItems .MenuItem_icon {
-      margin-right: 16px; }
-    .SideMenu__MenuItems .MenuItem_subItems {
-      background-color: transparent;
-      box-shadow: none;
-      margin-left: -16px;
-      max-height: unset;
-      overflow: unset;
-      position: initial;
-      visibility: hidden; }
-      .SideMenu__MenuItems .MenuItem_subItems.show {
-        visibility: visible; }
-        .SideMenu__MenuItems .MenuItem_subItems.show *:last-child {
-          margin-bottom: 15px; }
-      .SideMenu__MenuItems .MenuItem_subItems *:empty {
-        display: none; }
-      .SideMenu__MenuItems .MenuItem_subItems > a {
+        .SideMenu__MenuItems .MenuItem:hover .MenuItem_icon a,
+        .SideMenu__MenuItems .MenuItem:hover .MenuItem_label a {
+          color: #333333; }
+      .SideMenu__MenuItems .MenuItem.activeIndicator {
+        background-color: inherit; }
+        .SideMenu__MenuItems .MenuItem.activeIndicator:hover {
+          background-color: #f2fffd; }
+      .SideMenu__MenuItems .MenuItem.active {
+        background-color: #f2fffd;
+        height: auto; }
+      .SideMenu__MenuItems .MenuItem_icon {
+        margin-right: 16px; }
+      .SideMenu__MenuItems .MenuItem_subItems {
         background-color: transparent;
-        border: none;
-        color: #333333;
-        font-family: "LatoRegular"; }
+        box-shadow: none;
+        margin-left: -16px;
+        max-height: unset;
+        overflow: unset;
+        position: initial;
+        visibility: hidden; }
+        .SideMenu__MenuItems .MenuItem_subItems.show {
+          visibility: visible; }
+          .SideMenu__MenuItems .MenuItem_subItems.show *:last-child {
+            margin-bottom: 15px; }
+        .SideMenu__MenuItems .MenuItem_subItems *:empty {
+          display: none; }
+        .SideMenu__MenuItems .MenuItem_subItems > a {
+          background-color: transparent;
+          border: none;
+          color: #333333;
+          font-family: "LatoRegular"; }
   .SideMenu__TabItems .MenuItem, .SideMenu__MenuItems .MenuItem {
     overflow: hidden;
     padding-left: 24px;
@@ -25112,46 +25114,25 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .SideMenu__TabItems .MenuItem_icon:empty, .SideMenu__TabItems .MenuItem_subItems:empty, .SideMenu__MenuItems .MenuItem_icon:empty, .SideMenu__MenuItems .MenuItem_subItems:empty {
       display: none; }
 
-.AR .SideMenu__PageTitle,
-.FA .SideMenu__PageTitle {
-  padding-left: 0;
-  padding-right: 35px; }
-
-.AR .SideMenu__MenuClose,
-.FA .SideMenu__MenuClose {
-  margin-left: 15px;
-  margin-right: 0; }
+.AR .SideMenu__Content,
+.FA .SideMenu__Content {
+  left: 0;
+  right: auto; }
 
 .AR .SideMenu__TabItems::after,
 .FA .SideMenu__TabItems::after {
   margin-left: 0;
   margin-right: 55px; }
 
-.AR .SideMenu__MenuItems .MenuItem.activeIndicator,
-.FA .SideMenu__MenuItems .MenuItem.activeIndicator {
-  border-left: none;
-  border-right: 2px solid #fff;
-  padding-left: 53px; }
-
 .AR .SideMenu__MenuItems .MenuItem_icon,
 .FA .SideMenu__MenuItems .MenuItem_icon {
-  margin-left: 10px;
+  margin-left: 16px;
   margin-right: 0; }
 
 .AR .SideMenu__MenuItems .MenuItem_subItems,
 .FA .SideMenu__MenuItems .MenuItem_subItems {
   margin-left: auto;
-  margin-right: -15px; }
-
-.AR .SideMenu__TabItems .MenuItem, .AR .SideMenu__MenuItems .MenuItem,
-.FA .SideMenu__TabItems .MenuItem,
-.FA .SideMenu__MenuItems .MenuItem {
-  padding-left: 15px;
-  padding-right: 55px; }
-
-.AR .SideMenu__Header,
-.FA .SideMenu__Header {
-  padding: 20px 20px 20px 12px; }
+  margin-right: -16px; }
 
 .Sidebar {
   border-left: 1px solid #ddd;
