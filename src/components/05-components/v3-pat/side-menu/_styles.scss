@@ -38,6 +38,7 @@ $side-menu-height: 64px;
 					background-color: $regular-white;
 					border-bottom: 3px solid $regular-white;
 					border-top: none;
+					font-size: $font-size-heading4;
 					gap: $sapphire-sizes--small;
 					height: 100%;
 					min-width: auto;
@@ -55,7 +56,6 @@ $side-menu-height: 64px;
 
 				a {
 					font-family: $font-family-latin-regular;
-					font-size: $font-size-heading4;
 				}
 			}
 
