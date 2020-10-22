@@ -1,0 +1,13 @@
+.LayoutEmergency {
+	.SideMenu {
+		&__Tabs {
+			justify-content: center;
+
+			> div {
+				&:first-of-type {
+					display: none;
+				}
+			}
+		}
+	}
+}

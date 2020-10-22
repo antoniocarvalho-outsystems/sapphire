@@ -81,7 +81,6 @@ $side-menu-height: 64px;
 	}
 
 	&__PageTitle {
-		color: $mid-dark-grey;
 		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
 		white-space: nowrap;
@@ -236,6 +235,8 @@ $side-menu-height: 64px;
 		}
 
 		.MenuItem {
+			padding: 0 $sapphire-sizes--large;
+
 			&:hover {
 				background-color: $regular-eta;
 				color: $dark-grey;
@@ -328,14 +329,9 @@ $side-menu-height: 64px;
 .AR,
 .FA {
 	.SideMenu {
-		&__PageTitle {
-			padding-left: 0;
-			padding-right: 35px;
-		}
-
-		&__MenuClose {
-			margin-left: 15px;
-			margin-right: 0;
+		&__Content {
+			left: 0;
+			right: auto;
 		}
 
 		&__TabItems::after {
@@ -345,34 +341,16 @@ $side-menu-height: 64px;
 
 		&__MenuItems {
 			.MenuItem {
-				&.activeIndicator {
-					border-left: none;
-					border-right: 2px solid $regular-white;
-					padding-left: 53px;
-				}
-
 				&_icon {
-					margin-left: 10px;
+					margin-left: $sapphire-sizes--medium;
 					margin-right: 0;
 				}
 
 				&_subItems {
 					margin-left: auto;
-					margin-right: -15px;
+					margin-right: -$sapphire-sizes--medium;
 				}
 			}
-		}
-
-		&__TabItems,
-		&__MenuItems {
-			.MenuItem {
-				padding-left: 15px;
-				padding-right: 55px;
-			}
-		}
-
-		&__Header {
-			padding: 20px 20px 20px 12px;
 		}
 	}
 }
