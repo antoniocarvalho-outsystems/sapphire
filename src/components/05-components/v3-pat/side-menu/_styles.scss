@@ -71,6 +71,7 @@ $side-menu-height: 64px;
 				margin-top: unset;
 				position: unset;
 				width: 17px;
+				z-index: 0;
 			}
 		}
 	}
@@ -235,7 +236,7 @@ $side-menu-height: 64px;
 		}
 
 		.MenuItem {
-			padding: 0 $sapphire-sizes--large;
+			padding: 0;
 
 			&:hover {
 				background-color: $regular-eta;
@@ -260,9 +261,14 @@ $side-menu-height: 64px;
 				height: auto;
 			}
 
-			&_icon {
-				margin-right: $sapphire-sizes--medium;
+			&__ItemTitle {
+				color: $dark-grey;
+				padding: 0 $sapphire-sizes--large;
 			}
+
+			// &_icon {
+			// 	margin-right: $sapphire-sizes--medium;
+			// }
 
 			&_subItems {
 				background-color: transparent;
@@ -270,6 +276,7 @@ $side-menu-height: 64px;
 				margin-left: -$sapphire-sizes--medium;
 				max-height: unset;
 				overflow: unset;
+				padding: 0 $sapphire-sizes--large;
 				position: initial;
 				visibility: hidden;
 
@@ -301,12 +308,11 @@ $side-menu-height: 64px;
 	&__MenuItems {
 		.MenuItem {
 			overflow: hidden;
-			padding-left: $sapphire-sizes--large;
+			//padding-left: $sapphire-sizes--large;
 			width: 100%;
 
 			&_icon,
 			&_label {
-				color: $dark-grey;
 				font-size: $font-size-normal;
 				pointer-events: none;
 
@@ -341,10 +347,10 @@ $side-menu-height: 64px;
 
 		&__MenuItems {
 			.MenuItem {
-				&_icon {
-					margin-left: $sapphire-sizes--medium;
-					margin-right: 0;
-				}
+				// &_icon {
+				// 	margin-left: $sapphire-sizes--medium;
+				// 	margin-right: 0;
+				// }
 
 				&_subItems {
 					margin-left: auto;

@@ -165,12 +165,20 @@
 		color: $regular-white;
 	}
 
+	&__ItemTitle {
+		align-items: center;
+		display: inline-flex;
+		gap: $sapphire-sizes--medium;
+		width: 100%;
+	}
+
 	&_icon {
 		font-size: 1em;
 		margin-right: 5px;
 	}
 
 	&_label {
+		flex: 1;
 		font-size: 0.857em;
 	}
 
