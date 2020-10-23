@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980012 || Generated: Fri Oct 23 2020 14:38:10 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.980013 || Generated: Fri Oct 23 2020 17:48:17 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19432,10 +19432,19 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .MenuItem.active, .MenuItem.activeIndicator {
     background-color: #30384a;
     color: #fff; }
+  .MenuItem__ItemTitle {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    gap: 16px;
+    width: 100%; }
   .MenuItem_icon {
     font-size: 1em;
     margin-right: 5px; }
   .MenuItem_label {
+    -webkit-box-flex: 1;
+            flex: 1;
     font-size: 0.857em; }
   .MenuItem_icon a,
   .MenuItem_label a {
@@ -24924,7 +24933,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       margin-left: unset;
       margin-top: unset;
       position: unset;
-      width: 17px; }
+      width: 17px;
+      z-index: 0; }
   .SideMenu__SapphireLogo {
     font-size: 20px;
     line-height: 20px; }
@@ -25065,7 +25075,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .SideMenu__MenuItems::-webkit-scrollbar-thumb {
       border: 3px solid #fff; }
     .SideMenu__MenuItems .MenuItem {
-      padding: 0 24px; }
+      padding: 0; }
       .SideMenu__MenuItems .MenuItem:hover {
         background-color: #f2fffd;
         color: #333333; }
@@ -25079,14 +25089,16 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       .SideMenu__MenuItems .MenuItem.active {
         background-color: #f2fffd;
         height: auto; }
-      .SideMenu__MenuItems .MenuItem_icon {
-        margin-right: 16px; }
+      .SideMenu__MenuItems .MenuItem__ItemTitle {
+        color: #333333;
+        padding: 0 24px; }
       .SideMenu__MenuItems .MenuItem_subItems {
         background-color: transparent;
         box-shadow: none;
         margin-left: -16px;
         max-height: unset;
         overflow: unset;
+        padding: 0 24px;
         position: initial;
         visibility: hidden; }
         .SideMenu__MenuItems .MenuItem_subItems.show {
@@ -25102,10 +25114,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
           font-family: "LatoRegular"; }
   .SideMenu__TabItems .MenuItem, .SideMenu__MenuItems .MenuItem {
     overflow: hidden;
-    padding-left: 24px;
     width: 100%; }
     .SideMenu__TabItems .MenuItem_icon, .SideMenu__TabItems .MenuItem_label, .SideMenu__MenuItems .MenuItem_icon, .SideMenu__MenuItems .MenuItem_label {
-      color: #333333;
       font-size: 1em;
       pointer-events: none; }
       .SideMenu__TabItems .MenuItem_icon a, .SideMenu__TabItems .MenuItem_label a, .SideMenu__MenuItems .MenuItem_icon a, .SideMenu__MenuItems .MenuItem_label a {
@@ -25123,11 +25133,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .FA .SideMenu__TabItems::after {
   margin-left: 0;
   margin-right: 55px; }
-
-.AR .SideMenu__MenuItems .MenuItem_icon,
-.FA .SideMenu__MenuItems .MenuItem_icon {
-  margin-left: 16px;
-  margin-right: 0; }
 
 .AR .SideMenu__MenuItems .MenuItem_subItems,
 .FA .SideMenu__MenuItems .MenuItem_subItems {
