@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980009 || Generated: Thu Oct 22 2020 17:42:54 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.980010 || Generated: Fri Oct 23 2020 14:27:08 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29500,6 +29500,44 @@ ul.os-internal-ui-autocomplete {
   transition: all 0.1s ease-in-out; }
   .InfoTooltipDnD:hover {
     color: #56d3c2; }
+
+.LayoutESignature {
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh; }
+  .LayoutESignature__Logo {
+    -webkit-box-align: center;
+            align-items: center;
+    color: #00bfa5;
+    display: -webkit-box;
+    display: flex;
+    font-family: "LatoBold";
+    gap: 16px; }
+    .LayoutESignature__Logo .icon {
+      font-size: 2.143em; }
+    .LayoutESignature__Logo > div {
+      width: -webkit-min-content;
+      width: -moz-min-content;
+      width: min-content; }
+  .LayoutESignature__Header {
+    background-color: #fff;
+    border-bottom: 1px solid #d6d6d6; }
+  .LayoutESignature__Footer {
+    border-top: 1px solid #d6d6d6; }
+  .LayoutESignature__Header, .LayoutESignature__Footer {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    height: 64px;
+    padding: 0 24px; }
+  .LayoutESignature__Content {
+    padding: 32px 24px; }
+    .LayoutESignature__Content .iframeContainer {
+      height: 100% !important;
+      width: 100% !important; }
 
 .PrintUIOptions {
   -webkit-box-align: center;
