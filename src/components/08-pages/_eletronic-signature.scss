@@ -1,0 +1,49 @@
+.LayoutESignature {
+	background-color: $body-color;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	height: 100vh;
+
+	&__Logo {
+		align-items: center;
+		color: $regular-alpha;
+		display: flex;
+		font-family: $font-family-latin-bold;
+		gap: $sapphire-sizes--medium;
+
+		.icon {
+			font-size: $font-size-big;
+		}
+
+		> div {
+			width: min-content;
+		}
+	}
+
+	&__Header {
+		background-color: $regular-white;
+		border-bottom: 1px solid $light-grey;
+	}
+
+	&__Footer {
+		border-top: 1px solid $light-grey;
+	}
+
+	&__Header,
+	&__Footer {
+		align-items: center;
+		display: flex;
+		height: 64px;
+		padding: 0 $sapphire-sizes--large;
+	}
+
+	&__Content {
+		padding: $sapphire-sizes--xlarge $sapphire-sizes--large;
+
+		.iframeContainer {
+			height: 100% !important;
+			width: 100% !important;
+		}
+	}
+}
