@@ -27,7 +27,7 @@ $side-menu-height: 64px;
 		color: $dark-grey;
 		gap: $sapphire-sizes--xlarge;
 		height: $side-menu-height;
-		padding: 0 $sapphire-sizes--medium;
+		padding: 0 $sapphire-sizes--large;
 		width: 100%;
 
 		.FullScreenTabsWrapper_Container {
@@ -294,7 +294,8 @@ $side-menu-height: 64px;
 					}
 				}
 
-				> a {
+				> a,
+				> .ListRecords > a {
 					background-color: transparent;
 					border: none;
 					color: $dark-grey;
@@ -347,16 +348,19 @@ $side-menu-height: 64px;
 
 		&__MenuItems {
 			.MenuItem {
-				// &_icon {
-				// 	margin-left: $sapphire-sizes--medium;
-				// 	margin-right: 0;
-				// }
-
 				&_subItems {
 					margin-left: auto;
 					margin-right: -$sapphire-sizes--medium;
 				}
 			}
+		}
+	}
+}
+
+.tablet {
+	.SideMenu {
+		&__Header {
+			padding: 0 $sapphire-sizes--medium;
 		}
 	}
 }

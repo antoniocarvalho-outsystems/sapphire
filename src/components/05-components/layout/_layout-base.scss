@@ -1,6 +1,7 @@
 .LayoutBase {
 	&-padding {
-		padding: $sapphire-sizes--medium;
+		padding: $sapphire-sizes--xlarge $sapphire-sizes--large;
+		padding-bottom: $sapphire-sizes--large;
 	}
 
 	&-Wrapper {
@@ -525,6 +526,13 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 }
 
 .tablet {
+	.LayoutBase {
+		&-padding {
+			padding: $sapphire-sizes--xlarge $sapphire-sizes--medium;
+			padding-bottom: $sapphire-sizes--medium;
+		}
+	}
+
 	.LayoutBase.Page .ClinicianWorkArea-columns {
 		padding-left: 0;
 	}
