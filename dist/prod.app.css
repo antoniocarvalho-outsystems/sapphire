@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980014 || Generated: Mon Oct 26 2020 09:31:22 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.980015 || Generated: Mon Oct 26 2020 15:12:03 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11062,6 +11062,9 @@ div.LineInfo {
 .LayoutBase--sideMenu.LayoutBase--withTabs .SideMenu__PageTitle {
   display: none; }
 
+.LayoutBase--sideMenu.LayoutBase--withTabs .SideMenu .iframeContainer {
+  display: none !important; }
+
 .LayoutBase--sideMenu .PatientDetailsLayout.hasHeader .LayoutBase-spacer {
   min-height: 80px; }
 
@@ -11337,6 +11340,9 @@ html .Page .PatientDetailsLayout {
 
 .LayoutBlank.Page.SidemenuIframe {
   background-color: #2a5a6e; }
+
+.LayoutEmergency .SideMenu__PageTitle {
+  display: block; }
 
 .LayoutEmergency .SideMenu__Tabs {
   -webkit-box-pack: center;
@@ -24920,6 +24926,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
         font-size: 1.143em;
         gap: 8px;
         height: 100%;
+        line-height: 1.143em;
         min-width: auto;
         padding: 0; }
         .SideMenu__Header .FullScreenTabsWrapper_Container.Dashboard .TabWrapper:hover {
@@ -24944,6 +24951,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     font-size: 20px;
     line-height: 20px; }
   .SideMenu__PageTitle {
+    display: none;
     font-family: "LatoBold";
     font-size: 1.143em;
     white-space: nowrap; }
@@ -24954,6 +24962,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .SideMenu__Tabs > div:first-of-type {
       -webkit-box-flex: 1;
               flex: 1; }
+    .SideMenu__Tabs .iframeContainer {
+      height: 64px !important; }
     .SideMenu__Tabs .DepartmentName {
       -webkit-box-align: center;
               align-items: center;
@@ -25092,7 +25102,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
         .SideMenu__MenuItems .MenuItem.activeIndicator:hover {
           background-color: #f2fffd; }
       .SideMenu__MenuItems .MenuItem.active {
-        background-color: #f2fffd;
+        background-color: #fff;
         height: auto; }
       .SideMenu__MenuItems .MenuItem__ItemTitle {
         color: #333333;
@@ -25100,10 +25110,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       .SideMenu__MenuItems .MenuItem_subItems {
         background-color: transparent;
         box-shadow: none;
-        margin-left: -16px;
         max-height: unset;
         overflow: unset;
-        padding: 0 24px;
         position: initial;
         visibility: hidden; }
         .SideMenu__MenuItems .MenuItem_subItems.show {
@@ -25117,7 +25125,13 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
           background-color: transparent;
           border: none;
           color: #333333;
-          font-family: "LatoRegular"; }
+          font-family: "LatoRegular";
+          line-height: 36px;
+          margin: 0;
+          padding: 0 24px; }
+          .SideMenu__MenuItems .MenuItem_subItems > a:hover,
+          .SideMenu__MenuItems .MenuItem_subItems > .ListRecords > a:hover {
+            background-color: #f2fffd; }
   .SideMenu__TabItems .MenuItem, .SideMenu__MenuItems .MenuItem {
     overflow: hidden;
     width: 100%; }
