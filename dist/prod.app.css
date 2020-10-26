@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980013 || Generated: Fri Oct 23 2020 17:48:17 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.980014 || Generated: Mon Oct 26 2020 09:31:22 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10799,7 +10799,8 @@ div.LineInfo {
 
 /* Layout Components */
 .LayoutBase-padding {
-  padding: 16px; }
+  padding: 32px 24px;
+  padding-bottom: 24px; }
 
 .LayoutBase-Wrapper {
   margin-bottom: 200px; }
@@ -11146,6 +11147,10 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 .FA.LayoutBase.Page .ClinicianWorkArea-columns {
   padding-left: 0;
   padding-right: 16px; }
+
+.tablet .LayoutBase-padding {
+  padding: 32px 16px;
+  padding-bottom: 16px; }
 
 .tablet .LayoutBase.Page .ClinicianWorkArea-columns {
   padding-left: 0; }
@@ -24904,7 +24909,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     color: #333333;
     gap: 32px;
     height: 64px;
-    padding: 0 16px;
+    padding: 0 24px;
     width: 100%; }
     .SideMenu__Header .FullScreenTabsWrapper_Container.Dashboard {
       height: 63px; }
@@ -25107,7 +25112,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
             margin-bottom: 15px; }
         .SideMenu__MenuItems .MenuItem_subItems *:empty {
           display: none; }
-        .SideMenu__MenuItems .MenuItem_subItems > a {
+        .SideMenu__MenuItems .MenuItem_subItems > a,
+        .SideMenu__MenuItems .MenuItem_subItems > .ListRecords > a {
           background-color: transparent;
           border: none;
           color: #333333;
@@ -25138,6 +25144,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .FA .SideMenu__MenuItems .MenuItem_subItems {
   margin-left: auto;
   margin-right: -16px; }
+
+.tablet .SideMenu__Header {
+  padding: 0 16px; }
 
 .Sidebar {
   border-left: 1px solid #ddd;
