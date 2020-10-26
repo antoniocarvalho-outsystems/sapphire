@@ -12,9 +12,8 @@
 		setMainMenuWidth() {
 			$(document).ready(() => {
 				const $sideBarIframe = $('.LayoutBase-iframesidebar.notExpandable');
-				const $layoutHasTabs = $('.LayoutBase--withTabs');
 
-				if ($sideBarIframe.length && !$layoutHasTabs.length) {
+				if ($sideBarIframe.length) {
 					const $mainMenu = $('.LayoutBase-MainMenu');
 					$mainMenu.css({
 						width: 'calc(100% - 262px)',
