@@ -41,6 +41,7 @@ $side-menu-height: 64px;
 					font-size: $font-size-heading4;
 					gap: $sapphire-sizes--small;
 					height: 100%;
+					line-height: $font-size-heading4;
 					min-width: auto;
 					padding: 0;
 
@@ -82,6 +83,7 @@ $side-menu-height: 64px;
 	}
 
 	&__PageTitle {
+		display: none;
 		font-family: $font-family-latin-bold;
 		font-size: 1.143em;
 		white-space: nowrap;
@@ -95,6 +97,10 @@ $side-menu-height: 64px;
 			&:first-of-type {
 				flex: 1;
 			}
+		}
+
+		.iframeContainer {
+			height: 64px !important;
 		}
 
 		.DepartmentName {
@@ -257,7 +263,7 @@ $side-menu-height: 64px;
 			}
 
 			&.active {
-				background-color: $regular-eta;
+				background-color: $regular-white;
 				height: auto;
 			}
 
@@ -266,17 +272,11 @@ $side-menu-height: 64px;
 				padding: 0 $sapphire-sizes--large;
 			}
 
-			// &_icon {
-			// 	margin-right: $sapphire-sizes--medium;
-			// }
-
 			&_subItems {
 				background-color: transparent;
 				box-shadow: none;
-				margin-left: -$sapphire-sizes--medium;
 				max-height: unset;
 				overflow: unset;
-				padding: 0 $sapphire-sizes--large;
 				position: initial;
 				visibility: hidden;
 
@@ -300,6 +300,13 @@ $side-menu-height: 64px;
 					border: none;
 					color: $dark-grey;
 					font-family: $font-family-latin-regular;
+					line-height: 36px;
+					margin: 0;
+					padding: 0 $sapphire-sizes--large;
+
+					&:hover {
+						background-color: $regular-eta;
+					}
 				}
 			}
 		}

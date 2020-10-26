@@ -1,5 +1,9 @@
 .LayoutEmergency {
 	.SideMenu {
+		&__PageTitle {
+			display: block;
+		}
+
 		&__Tabs {
 			justify-content: center;
 
