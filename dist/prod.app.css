@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980018 || Generated: Wed Oct 28 2020 13:01:04 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.980019 || Generated: Wed Oct 28 2020 15:56:08 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22795,6 +22795,8 @@ div.List-Star {
       padding: 0 64px; }
       .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text']:hover, .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text']:focus {
         border-color: #d6d6d6; }
+  .SearchSD .highlight {
+    background-color: transparent; }
 
 /**
 * ListRecords inside SearchSD_content must have EmptySelectableList class
