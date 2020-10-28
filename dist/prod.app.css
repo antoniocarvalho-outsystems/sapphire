@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980016 || Generated: Mon Oct 26 2020 15:43:22 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.980017 || Generated: Wed Oct 28 2020 12:58:22 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22534,6 +22534,8 @@ div.List-Star {
     border-right: none; }
   .SearchSD.showFavorite .SearchSD__cloneWrapper {
     display: none; }
+  .SearchSD.showFavorite .SearchSD_filterfavorites {
+    display: block; }
   .SearchSD.MultiSelectActive .SearchSD_search .SearchSD__FavoriteActions > div {
     opacity: 1;
     -webkit-transition: visibility 0.3s, opacity 0.3s linear;
@@ -22775,6 +22777,22 @@ div.List-Star {
       .SearchSD .SearchSD_content .SearchSD_showMore a {
         display: inline-block;
         width: 100%; }
+  .SearchSD .SearchSD_filterfavorites {
+    display: none; }
+    .SearchSD .SearchSD_filterfavorites .Search_wrapper:after {
+      font-size: 1.286em;
+      padding-right: 16px;
+      top: 16px; }
+    .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text'] {
+      border-left: none;
+      border-radius: 0;
+      border-right: none;
+      font-size: 1.286em;
+      height: 48px;
+      line-height: 48px;
+      padding: 0 64px; }
+      .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text']:hover, .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text']:focus {
+        border-color: #d6d6d6; }
 
 /**
 * ListRecords inside SearchSD_content must have EmptySelectableList class
