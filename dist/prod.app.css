@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980020 || Generated: Wed Oct 28 2020 16:14:41 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.980021 || Generated: Wed Oct 28 2020 17:54:03 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22793,6 +22793,27 @@ div.List-Star {
       padding: 0 64px; }
       .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text']:hover, .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text']:focus {
         border-color: #d6d6d6; }
+    .SearchSD .SearchSD_filterfavorites .Search_wrapper .InputWithClear-clear {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      border: 1px solid #d6d6d6;
+      border-radius: 50%;
+      height: 28px;
+      right: 21px;
+      top: calc(50% - 14px);
+      width: 28px; }
+      .SearchSD .SearchSD_filterfavorites .Search_wrapper .InputWithClear-clear:hover {
+        border-color: #00bfa5; }
+      .SearchSD .SearchSD_filterfavorites .Search_wrapper .InputWithClear-clear .icon {
+        font-size: 0.857em; }
+        .SearchSD .SearchSD_filterfavorites .Search_wrapper .InputWithClear-clear .icon::before {
+          content: '\e60c';
+          -webkit-transform: rotate(0);
+                  transform: rotate(0); }
   .SearchSD .highlight {
     background-color: transparent; }
 
