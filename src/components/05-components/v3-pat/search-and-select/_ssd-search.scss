@@ -519,6 +519,30 @@ $searchsd-size-base: 48px;
 					border-color: $light-grey;
 				}
 			}
+
+			.InputWithClear-clear {
+				@include flex-center-total();
+
+				border: 1px solid $light-grey;
+				border-radius: 50%;
+				height: 28px;
+				right: 21px;
+				top: calc(50% - 14px);
+				width: 28px;
+
+				&:hover {
+					border-color: $regular-alpha;
+				}
+
+				.icon {
+					font-size: $font-size-small;
+
+					&::before {
+						content: '\e60c';
+						transform: rotate(0);
+					}
+				}
+			}
 		}
 	}
 
