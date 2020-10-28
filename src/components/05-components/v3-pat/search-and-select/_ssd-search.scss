@@ -181,6 +181,10 @@ $searchsd-size-base: 48px;
 		.SearchSD__cloneWrapper {
 			display: none;
 		}
+
+		.SearchSD_filterfavorites {
+			display: block;
+		}
 	}
 
 	&.MultiSelectActive {
@@ -489,6 +493,33 @@ $searchsd-size-base: 48px;
 			a {
 				display: inline-block;
 				width: 100%;
+			}
+		}
+	}
+
+	.SearchSD_filterfavorites {
+		display: none;
+
+		.Search_wrapper {
+			&:after {
+				font-size: $font-size-heading3;
+				padding-right: $sapphire-sizes--medium;
+				top: $sapphire-sizes--medium;
+			}
+
+			input[type='text'] {
+				border-left: none;
+				border-radius: 0;
+				border-right: none;
+				font-size: $font-size-heading3;
+				height: $searchsd-size-base;
+				line-height: $searchsd-size-base;
+				padding: 0 64px;
+
+				&:hover,
+				&:focus {
+					border-color: $light-grey;
+				}
 			}
 		}
 	}
