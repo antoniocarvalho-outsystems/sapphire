@@ -202,12 +202,12 @@ $searchsd-size-base: 48px;
 
 	span.ListRecords {
 		> span {
-			border-bottom: 1px solid $light-grey;
-
 			> span {
-				border-bottom: 1px solid $light-grey;
-				display: table;
-				width: 100%;
+				.SelectSD {
+					border-bottom: 1px solid $light-grey;
+					display: table;
+					width: 100%;
+				}
 			}
 
 			&:last-child {
@@ -219,10 +219,6 @@ $searchsd-size-base: 48px;
 			border-top: none;
 		}
 	}
-
-	// .SelectSD_contentWrapper + a {
-	// 	transition: opacity 0.3s ease-in-out;
-	// }
 
 	.SearchSD_search {
 		display: table;
@@ -513,7 +509,7 @@ $searchsd-size-base: 48px;
 				border-radius: 0;
 				border-right: none;
 				border-top: none;
-				font-size: $font-size-heading3;
+				font-size: $font-size-heading4;
 				height: $searchsd-size-base;
 				line-height: $searchsd-size-base;
 				padding: 0 64px;
