@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980017 || Generated: Wed Oct 28 2020 12:58:22 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.980018 || Generated: Wed Oct 28 2020 13:01:04 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22784,9 +22784,11 @@ div.List-Star {
       padding-right: 16px;
       top: 16px; }
     .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text'] {
+      border-bottom-color: #d6d6d6;
       border-left: none;
       border-radius: 0;
       border-right: none;
+      border-top: none;
       font-size: 1.286em;
       height: 48px;
       line-height: 48px;

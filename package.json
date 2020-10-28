@@ -1,6 +1,6 @@
 {
 	"name": "sapphire",
-	"version": "5.1.980017",
+	"version": "5.1.980018",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
