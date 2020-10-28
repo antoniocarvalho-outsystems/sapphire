@@ -508,9 +508,11 @@ $searchsd-size-base: 48px;
 			}
 
 			input[type='text'] {
+				border-bottom-color: $light-grey;
 				border-left: none;
 				border-radius: 0;
 				border-right: none;
+				border-top: none;
 				font-size: $font-size-heading3;
 				height: $searchsd-size-base;
 				line-height: $searchsd-size-base;
