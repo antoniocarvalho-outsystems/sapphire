@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980021 || Generated: Wed Oct 28 2020 17:54:03 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.980022 || Generated: Thu Oct 29 2020 13:42:14 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -25004,7 +25004,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       -webkit-box-flex: 1;
               flex: 1; }
     .SideMenu__Tabs .iframeContainer {
-      height: 64px !important; }
+      height: 64px !important;
+      overflow: hidden !important; }
     .SideMenu__Tabs .DepartmentName {
       -webkit-box-align: center;
               align-items: center;
