@@ -51,7 +51,7 @@
 		options.timePickerIncrement = config.timePickerIncrement;
 		options.showDropdowns = config.hasDropdowns;
 		options.drops = config.drops;
-		options.opens = config.opens;
+		options.opens = config.currentLocale === 'AR' && config.opens != 'center' ? 'left' : config.opens;
 
 		var stringConnection = '[, at]';
 
