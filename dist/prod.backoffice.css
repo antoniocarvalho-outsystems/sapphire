@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.980022 || Generated: Thu Oct 29 2020 13:42:14 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.980023 || Generated: Thu Oct 29 2020 13:55:31 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3699,6 +3699,8 @@ div[onclick] {
     visibility: visible; }
   .daterangepicker.single .calendar-table td.start-date::before {
     background-color: #fff; }
+  .daterangepicker.single .calendar-table td::before {
+    content: unset; }
   .daterangepicker.show-calendar .drp-calendar {
     display: inline-block;
     vertical-align: top; }
@@ -3714,6 +3716,9 @@ div[onclick] {
             transform: rotate(-45deg); }
   .daterangepicker.rtl .calendar-time {
     direction: ltr; }
+  .daterangepicker.rtl .drp-calendar.right {
+    padding-left: 0;
+    padding-right: 32px; }
   .daterangepicker .drp-selected {
     padding-right: 8px; }
   .daterangepicker .drp-calendar {
