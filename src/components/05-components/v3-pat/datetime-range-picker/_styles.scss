@@ -332,6 +332,10 @@ $date-time-size-base: 40px;
 					background-color: $regular-white;
 				}
 			}
+
+			td::before {
+				content: unset;
+			}
 		}
 	}
 
@@ -365,6 +369,11 @@ $date-time-size-base: 40px;
 
 		.calendar-time {
 			direction: ltr;
+		}
+
+		.drp-calendar.right {
+			padding-left: 0;
+			padding-right: $sapphire-sizes--xlarge;
 		}
 	}
 
