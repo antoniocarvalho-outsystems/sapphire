@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.980023 || Generated: Thu Oct 29 2020 13:55:31 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990001 || Generated: Tue Nov 03 2020 17:12:45 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22782,11 +22782,22 @@ div.List-Star {
         width: 100%; }
   .SearchSD .SearchSD_filterfavorites {
     display: none; }
-    .SearchSD .SearchSD_filterfavorites .Search_wrapper:after {
+    .SearchSD .SearchSD_filterfavorites > span:after {
       font-size: 1.286em;
       padding-right: 16px;
       top: 16px; }
-    .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text'] {
+    .SearchSD .SearchSD_filterfavorites > span:before {
+      color: #adadad;
+      content: '\e690';
+      font-family: "Sapphire-Icon-Font";
+      font-size: 1.286em;
+      left: 16px;
+      position: absolute;
+      top: 12px;
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      z-index: 1; }
+    .SearchSD .SearchSD_filterfavorites > span input[type='text'] {
       border-bottom-color: #d6d6d6;
       border-left: none;
       border-radius: 0;
@@ -22795,10 +22806,12 @@ div.List-Star {
       font-size: 1.143em;
       height: 48px;
       line-height: 48px;
-      padding: 0 64px; }
-      .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text']:hover, .SearchSD .SearchSD_filterfavorites .Search_wrapper input[type='text']:focus {
+      padding: 0 64px;
+      position: relative;
+      width: 100%; }
+      .SearchSD .SearchSD_filterfavorites > span input[type='text']:hover, .SearchSD .SearchSD_filterfavorites > span input[type='text']:focus {
         border-color: #d6d6d6; }
-    .SearchSD .SearchSD_filterfavorites .Search_wrapper .InputWithClear-clear {
+    .SearchSD .SearchSD_filterfavorites > span .InputWithClear-clear {
       -webkit-box-align: center;
               align-items: center;
       display: -webkit-box;
@@ -22811,11 +22824,11 @@ div.List-Star {
       right: 21px;
       top: calc(50% - 14px);
       width: 28px; }
-      .SearchSD .SearchSD_filterfavorites .Search_wrapper .InputWithClear-clear:hover {
+      .SearchSD .SearchSD_filterfavorites > span .InputWithClear-clear:hover {
         border-color: #00bfa5; }
-      .SearchSD .SearchSD_filterfavorites .Search_wrapper .InputWithClear-clear .icon {
+      .SearchSD .SearchSD_filterfavorites > span .InputWithClear-clear .icon {
         font-size: 0.857em; }
-        .SearchSD .SearchSD_filterfavorites .Search_wrapper .InputWithClear-clear .icon::before {
+        .SearchSD .SearchSD_filterfavorites > span .InputWithClear-clear .icon::before {
           content: '\e60c';
           -webkit-transform: rotate(0);
                   transform: rotate(0); }
