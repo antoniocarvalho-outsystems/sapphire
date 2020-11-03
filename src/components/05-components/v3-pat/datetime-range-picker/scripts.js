@@ -318,6 +318,12 @@
 				}, 50);
 			});
 		}
+
+		if (this.config.allowsTyping) {
+			this.$input.on('blur', function(evt) {
+				_this.sendNotification();
+			});
+		}
 	};
 
 	DateTimeRangePicker.prototype.updateLabeling = function() {
