@@ -496,11 +496,23 @@ $searchsd-size-base: 48px;
 	.SearchSD_filterfavorites {
 		display: none;
 
-		.Search_wrapper {
+		> span {
 			&:after {
 				font-size: $font-size-heading3;
 				padding-right: $sapphire-sizes--medium;
 				top: $sapphire-sizes--medium;
+			}
+
+			&:before {
+				color: $mid-light-grey;
+				content: '\e690';
+				font-family: $font-family-icons;
+				font-size: $font-size-heading3;
+				left: 16px;
+				position: absolute;
+				top: 12px;
+				transform: rotateY(180deg);
+				z-index: 1;
 			}
 
 			input[type='text'] {
@@ -513,6 +525,8 @@ $searchsd-size-base: 48px;
 				height: $searchsd-size-base;
 				line-height: $searchsd-size-base;
 				padding: 0 64px;
+				position: relative;
+				width: 100%;
 
 				&:hover,
 				&:focus {

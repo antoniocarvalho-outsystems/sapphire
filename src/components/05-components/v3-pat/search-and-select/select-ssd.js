@@ -17,6 +17,17 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 			});
 		}
 
+		var $favoritesSearchInput = $ComponentSSD.find('.SearchSD_filterfavorites input');
+		var favoritesSearchLength = $favoritesSearchInput.val().length;
+
+		if (config.HasFavorite === 'True' && favoritesSearchLength > 0) {
+			$SSDselectId.find('.SelectSD__contentTitle').highlight($favoritesSearchInput.val(), {
+				className: 'SelectSD-searched-term',
+				caseSensitive: false,
+				wordsOnly: false,
+			});
+		}
+
 		var OpenConfirmPopup = function($SSDselectId) {
 			$ComponentSSD = $SSDselectId.closest('.SearchSD');
 			$PopupID = $ComponentSSD.siblings('.SSDPopupWrapper');
