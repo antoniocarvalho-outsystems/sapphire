@@ -481,6 +481,20 @@ $date-time-size-base: 40px;
 		th.month {
 			font-family: $font-family-latin-bold;
 			width: auto;
+
+			.monthselect {
+				min-width: 60px;
+			}
+
+			.yearselect {
+				min-width: 70px;
+			}
+
+			.yearselect,
+			.monthselect {
+				margin: 0 $sapphire-sizes--xsmall;
+				padding: 0 $sapphire-sizes--small;
+			}
 		}
 
 		td.available,

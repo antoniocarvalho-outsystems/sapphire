@@ -49,7 +49,7 @@
 		options.timePicker = config.timePicker;
 		options.timePicker24Hour = config.timePicker24Hour;
 		options.timePickerIncrement = config.timePickerIncrement;
-		options.showDropdowns = config.hasDropdowns;
+		options.showDropdowns = config.hasDropdowns; // Month/Year Picker
 		options.drops = config.drops;
 		options.opens = config.currentLocale === 'AR' && config.opens != 'center' ? 'left' : config.opens;
 
