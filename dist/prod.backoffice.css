@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.990003 || Generated: Wed Nov 04 2020 10:59:06 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.990004 || Generated: Wed Nov 04 2020 15:00:59 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3787,6 +3787,14 @@ div[onclick] {
   .daterangepicker .calendar-table th.month {
     font-family: "LatoBold";
     width: auto; }
+    .daterangepicker .calendar-table th.month .monthselect {
+      min-width: 60px; }
+    .daterangepicker .calendar-table th.month .yearselect {
+      min-width: 70px; }
+    .daterangepicker .calendar-table th.month .yearselect,
+    .daterangepicker .calendar-table th.month .monthselect {
+      margin: 0 4px;
+      padding: 0 8px; }
   .daterangepicker .calendar-table td.available,
   .daterangepicker .calendar-table th.available {
     font-family: "LatoBold"; }
