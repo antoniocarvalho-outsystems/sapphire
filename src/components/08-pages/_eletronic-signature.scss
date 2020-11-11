@@ -49,3 +49,12 @@
 		}
 	}
 }
+
+.AcessCodeBox {
+	background-color: $regular-white;
+	border-radius: $border-radius-default;
+	font-family: $font-family-latin-bold;
+	font-size: $font-size-heading3;
+	letter-spacing: 3.2px;
+	padding: $sapphire-sizes--small;
+}
