@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990005 || Generated: Mon Nov 09 2020 17:57:03 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990006 || Generated: Wed Nov 11 2020 11:43:34 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19916,7 +19916,8 @@ body.confirmation-opened {
       text-align: right; }
 
 .CustomModalPopup {
-  margin: -16px; }
+  margin: -16px;
+  text-align: start; }
   .CustomModalPopup__Header {
     -webkit-box-align: center;
             align-items: center;
