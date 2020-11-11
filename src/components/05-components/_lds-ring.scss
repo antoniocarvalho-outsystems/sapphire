@@ -47,15 +47,14 @@
 	}
 
 	&--relative {
-		height: 40px;
 		left: unset;
 		position: relative;
 		top: unset;
 		transform: unset;
-		width: 40px;
 
 		div {
 			height: 24px;
+			margin: 4px;
 			width: 24px;
 		}
 	}
