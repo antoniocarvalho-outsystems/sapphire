@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990007 || Generated: Wed Nov 11 2020 15:24:14 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990008 || Generated: Wed Nov 11 2020 16:08:28 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -8762,6 +8762,12 @@ a.LinkReset:link, a.LinkReset:visited {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 32px; }
+  .lds-ring--relative {
+    left: unset;
+    position: relative;
+    top: unset;
+    -webkit-transform: unset;
+            transform: unset; }
   .lds-ring div {
     -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
             animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -19930,6 +19936,9 @@ body.confirmation-opened {
     padding: 24px;
     width: 100%; }
   .CustomModalPopup__Content {
+    padding: 24px; }
+  .CustomModalPopup__Footer {
+    background-color: #f3f3f3;
     padding: 24px; }
 
 body.PanelById.PanelOpened {
