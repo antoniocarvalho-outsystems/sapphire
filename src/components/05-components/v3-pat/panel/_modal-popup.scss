@@ -99,8 +99,11 @@
 	}
 
 	&__Footer {
+		align-items: center;
 		background-color: $body-color;
 		border-top: 1px solid $light-grey;
+		display: inline-flex;
+		justify-content: space-between;
 		padding: $sapphire-sizes--large;
 	}
 }
