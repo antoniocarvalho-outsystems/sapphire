@@ -23,26 +23,25 @@
 				if (window[SapphireWidgets.LayoutBase.widgetId].getThresholds().secondaryThreshold > 0) {
 					clearInterval(scrollToOffsetInterval);
 
-					var targetElementOffsetTop = $targetElement.offset().top;
-					var discount;
+					let targetElementOffsetTop = $targetElement.offset().top;
 
-					if (!!$('.LayoutBase-emergency').text()) {
-						if ($('.LayoutBase-secondary').hasClass('isFixed')) {
-							targetElementOffsetTop += 150;
-						} else {
-							targetElementOffsetTop += 80;
-						}
-						discount = 390;
+					const isFixed = $('.LayoutBase-secondary').hasClass('isFixed');
+					const isEmergency = !!$('.LayoutBase-emergency').text();
+
+					const headerHeight = $('.SapphireHeader').height();
+					const primaryHeight = isFixed ? 0 : $('.LayoutBase-primary-menu').height();
+					const secondaryHeight = $('.LayoutBase-secondary').height();
+					const emergencyHeight = isEmergency ? $('.LayoutBase-emergency').height() : 0;
+					const offsetTop = headerHeight + primaryHeight + secondaryHeight + emergencyHeight;
+
+					if (isEmergency & !isFixed) {
+						targetElementOffsetTop -= offsetTop + 44;
 					} else {
-						if ($('.LayoutBase-secondary').hasClass('isFixed')) {
-							targetElementOffsetTop += 80;
-						} else {
-							targetElementOffsetTop += 20;
-						}
-						discount = 100;
+						if (targetElementOffsetTop - offsetTop > 40) targetElementOffsetTop -= offsetTop;
+						else targetElementOffsetTop -= offsetTop - 44;
 					}
 
-					$('body, html').scrollTop(targetElementOffsetTop - discount);
+					$('body, html').scrollTop(targetElementOffsetTop - 8);
 				}
 			}, 250);
 		}
