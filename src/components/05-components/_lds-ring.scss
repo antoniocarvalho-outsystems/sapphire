@@ -21,6 +21,13 @@
 	transform: translate(-50%, -50%);
 	width: 32px;
 
+	&--relative {
+		left: unset;
+		position: relative;
+		top: unset;
+		transform: unset;
+	}
+
 	div {
 		animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 		border: 3px solid $regular-white;
