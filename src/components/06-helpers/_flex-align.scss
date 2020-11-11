@@ -85,6 +85,12 @@
 
 		gap: $sapphire-sizes--medium;
 	}
+
+	&LargeGap {
+		@extend .FlexList;
+
+		gap: $sapphire-sizes--large;
+	}
 }
 
 .InlineFlexList {
