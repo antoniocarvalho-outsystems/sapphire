@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990012 || Generated: Wed Nov 11 2020 16:55:25 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990013 || Generated: Wed Nov 11 2020 17:02:50 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29659,6 +29659,14 @@ ul.os-internal-ui-autocomplete {
       height: 100% !important;
       overflow: hidden !important;
       width: 100% !important; }
+
+.AcessCodeBox {
+  background-color: #fff;
+  border-radius: 4px;
+  font-family: "LatoBold";
+  font-size: 1.286em;
+  letter-spacing: 3.2px;
+  padding: 8px; }
 
 .PrintUIOptions {
   -webkit-box-align: center;
