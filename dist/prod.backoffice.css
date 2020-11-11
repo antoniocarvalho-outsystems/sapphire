@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.990010 || Generated: Wed Nov 11 2020 16:20:39 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.990011 || Generated: Wed Nov 11 2020 16:49:35 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3081,15 +3081,14 @@ div[onclick] {
       -webkit-animation-delay: -0.15s;
               animation-delay: -0.15s; }
   .lds-ring--relative {
-    height: 40px;
     left: unset;
     position: relative;
     top: unset;
     -webkit-transform: unset;
-            transform: unset;
-    width: 40px; }
+            transform: unset; }
     .lds-ring--relative div {
       height: 24px;
+      margin: 4px;
       width: 24px; }
 
 @-webkit-keyframes lds-ring {
