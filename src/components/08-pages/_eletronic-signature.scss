@@ -58,3 +58,47 @@
 	letter-spacing: 3.2px;
 	padding: $sapphire-sizes--small;
 }
+
+.LayoutScanCode {
+	&__Content {
+		color: $regular-white;
+		height: 100vh;
+		position: absolute;
+		width: 100vw;
+		z-index: 1;
+	}
+
+	&__Logo {
+		align-items: center;
+		display: flex;
+		font-family: $font-family-latin-bold;
+		gap: $sapphire-sizes--medium;
+		padding: 0 $sapphire-sizes--large;
+		padding-top: 12px;
+
+		.icon {
+			font-size: $font-size-big;
+		}
+
+		> div {
+			width: min-content;
+		}
+	}
+
+	&__Info {
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translateY(calc(-50% - 210px));
+		width: 100vw;
+
+		> span.TextLarge {
+			display: inline-block;
+			max-width: 400px;
+		}
+	}
+
+	#qrreader {
+		height: 100vh;
+	}
+}
