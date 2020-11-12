@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990017 || Generated: Thu Nov 12 2020 17:38:49 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990018 || Generated: Thu Nov 12 2020 18:04:48 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29664,6 +29664,20 @@ ul.os-internal-ui-autocomplete {
 
 .LayoutScanCode {
   overflow: hidden; }
+  .LayoutScanCode__Splash {
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: #00bfa5;
+    color: #fff;
+    display: -webkit-box;
+    display: flex;
+    font-size: 80px;
+    height: 100vh;
+    -webkit-box-pack: center;
+            justify-content: center;
+    position: absolute;
+    width: 100vw;
+    z-index: 2; }
   .LayoutScanCode__Content {
     color: #fff;
     height: 100vh;
