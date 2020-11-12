@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.990013 || Generated: Wed Nov 11 2020 17:02:50 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.990014 || Generated: Thu Nov 12 2020 13:01:45 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4304,29 +4304,23 @@ body.confirmation-opened {
 .CustomModalPopup {
   margin: -16px;
   text-align: start; }
-  .CustomModalPopup__Header {
+  .CustomModalPopup__Header, .CustomModalPopup__Footer {
     -webkit-box-align: center;
             align-items: center;
-    border-bottom: 1px solid #d6d6d6;
     display: -webkit-inline-box;
     display: inline-flex;
-    font-size: 14px;
     -webkit-box-pack: justify;
             justify-content: space-between;
-    padding: 24px;
+    padding: 16px 24px; }
+  .CustomModalPopup__Header {
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 14px;
     width: 100%; }
   .CustomModalPopup__Content {
     padding: 24px; }
   .CustomModalPopup__Footer {
-    -webkit-box-align: center;
-            align-items: center;
     background-color: #f3f3f3;
-    border-top: 1px solid #d6d6d6;
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    padding: 24px; }
+    border-top: 1px solid #d6d6d6; }
 
 body.PanelById.PanelOpened {
   overflow: hidden;
