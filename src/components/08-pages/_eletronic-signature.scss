@@ -62,9 +62,21 @@
 .LayoutScanCode {
 	overflow: hidden;
 
+	&__Splash {
+		align-items: center;
+		background-color: $regular-alpha;
+		color: $regular-white;
+		display: flex;
+		font-size: 80px;
+		height: 100vh;
+		justify-content: center;
+		position: absolute;
+		width: 100vw;
+		z-index: 2;
+	}
+
 	&__Content {
 		color: $regular-white;
-		//display: none;
 		height: 100vh;
 		position: absolute;
 		width: 100vw;
