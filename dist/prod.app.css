@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990015 || Generated: Thu Nov 12 2020 17:08:52 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990016 || Generated: Thu Nov 12 2020 17:32:16 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29662,42 +29662,45 @@ ul.os-internal-ui-autocomplete {
   letter-spacing: 3.2px;
   padding: 8px; }
 
-.LayoutScanCode__Content {
-  color: #fff;
-  height: 100vh;
-  position: absolute;
-  width: 100vw;
-  z-index: 1; }
-
-.LayoutScanCode__Logo {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
-  font-family: "LatoBold";
-  gap: 16px;
-  padding: 0 24px;
-  padding-top: 12px; }
-  .LayoutScanCode__Logo .icon {
-    font-size: 2.143em; }
-  .LayoutScanCode__Logo > div {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content; }
-
-.LayoutScanCode__Info {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  -webkit-transform: translateY(calc(-50% - 210px));
-          transform: translateY(calc(-50% - 210px));
-  width: 100vw; }
-  .LayoutScanCode__Info > span.TextLarge {
-    display: inline-block;
-    max-width: 400px; }
-
-.LayoutScanCode #qrreader {
-  height: 100vh; }
+.LayoutScanCode {
+  overflow: hidden; }
+  .LayoutScanCode__Content {
+    color: #fff;
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    z-index: 1; }
+  .LayoutScanCode__Logo {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    font-family: "LatoBold";
+    padding: 0 24px;
+    padding-top: 12px; }
+    .LayoutScanCode__Logo .icon {
+      font-size: 2.143em; }
+    .LayoutScanCode__Logo > div {
+      margin: 0 16px;
+      width: -webkit-min-content;
+      width: -moz-min-content;
+      width: min-content; }
+  .LayoutScanCode__Info {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(calc(-50% - 210px));
+            transform: translateY(calc(-50% - 210px));
+    width: 100vw; }
+    .LayoutScanCode__Info > span.TextLarge {
+      display: inline-block;
+      max-width: 400px; }
+  .LayoutScanCode #qrreader {
+    height: 100vh; }
+    .LayoutScanCode #qrreader video {
+      height: 100vh;
+      -o-object-fit: cover;
+         object-fit: cover; }
 
 .PrintUIOptions {
   -webkit-box-align: center;
