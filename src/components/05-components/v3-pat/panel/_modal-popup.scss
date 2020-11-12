@@ -84,13 +84,17 @@
 	margin: -16px;
 	text-align: start;
 
-	&__Header {
+	&__Header,
+	&__Footer {
 		align-items: center;
-		border-bottom: 1px solid $light-grey;
 		display: inline-flex;
-		font-size: 14px;
 		justify-content: space-between;
-		padding: $sapphire-sizes--large;
+		padding: $sapphire-sizes--medium $sapphire-sizes--large;
+	}
+
+	&__Header {
+		border-bottom: 1px solid $light-grey;
+		font-size: 14px;
 		width: 100%;
 	}
 
@@ -99,11 +103,7 @@
 	}
 
 	&__Footer {
-		align-items: center;
 		background-color: $body-color;
 		border-top: 1px solid $light-grey;
-		display: inline-flex;
-		justify-content: space-between;
-		padding: $sapphire-sizes--large;
 	}
 }
