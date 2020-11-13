@@ -100,16 +100,34 @@
 		}
 	}
 
-	&__Info {
+	&__Info,
+	&__ModeOptions {
 		position: absolute;
 		text-align: center;
 		top: 50%;
-		transform: translateY(calc(-50% - 210px));
 		width: 100vw;
+	}
+
+	&__Info {
+		transform: translateY(calc(-50% - 210px));
 
 		> span.TextLarge {
 			display: inline-block;
 			max-width: 400px;
+		}
+	}
+
+	&__ModeOptions {
+		transform: translateY(calc(-50% + 210px));
+
+		.ButtonGroupFilters .ButtonGroup_button.Button.Button {
+			&.active {
+				background-color: $regular-alpha;
+				box-shadow: 0 0 0 1px $regular-alpha;
+			}
+
+			height: 34px;
+			min-height: 34px;
 		}
 	}
 
