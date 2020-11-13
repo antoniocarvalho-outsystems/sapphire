@@ -14,6 +14,8 @@ SapphireWidgets.QRCodeScanner = function() {
 		const config = { fps: 5, qrbox: 250 };
 
 		const successCallback = response => {
+			if ($('.ModeNumberCode').length) return;
+
 			console.log(response);
 		};
 
@@ -29,5 +31,26 @@ SapphireWidgets.QRCodeScanner = function() {
 			.catch(err => {
 				console.error(err);
 			});
+	}
+};
+
+SapphireWidgets.GoNextInput = function(field, ui) {
+	const key = event.keyCode || event.charCode;
+	const isNumber = !isNaN(event.key) && !isNaN(parseFloat(event.key));
+
+	const $curr = $(field);
+	const $next = $(`[ui='${ui}']`);
+	const $prev = $curr.prevAll('input').first();
+
+	if (key === 8 || key === 46) {
+		$prev.focus();
+		$curr.removeClass('ColorAlphaBorder');
+
+		return;
+	}
+
+	if (isNumber) {
+		$next.focus();
+		$curr.addClass('ColorAlphaBorder');
 	}
 };
