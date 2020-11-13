@@ -67,6 +67,10 @@
 		&__Content {
 			background-color: $mid-light-grey;
 		}
+
+		&__ModeOptions {
+			display: none;
+		}
 	}
 
 	&__Splash {

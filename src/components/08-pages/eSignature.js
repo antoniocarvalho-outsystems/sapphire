@@ -4,12 +4,16 @@ SapphireWidgets.QRCodeScanner = function() {
 			if (devices && devices.length) startCamera(devices[0].id);
 		})
 		.catch(err => {
-			console.error(err);
-
 			// App doesn't have access to the camera...
 
-			$('.LayoutScanCode').addClass('LayoutScanCode--modeOnlyCode');
-			$('.LayoutScanCode__Splash').fadeOut(500);
+			setTimeout(() => {
+				const $checkbox = $('.NumberCodeOption');
+
+				$checkbox.attr('checked', true).trigger('click');
+				$('.LayoutScanCode').addClass('LayoutScanCode--modeOnlyCode');
+
+				$('.LayoutScanCode__Splash').fadeOut(500);
+			}, 500);
 		});
 
 	function startCamera(cameraID) {
