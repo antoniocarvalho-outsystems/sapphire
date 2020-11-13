@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990018 || Generated: Thu Nov 12 2020 18:04:48 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990019 || Generated: Fri Nov 13 2020 12:00:16 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29699,16 +29699,26 @@ ul.os-internal-ui-autocomplete {
       width: -webkit-min-content;
       width: -moz-min-content;
       width: min-content; }
-  .LayoutScanCode__Info {
+  .LayoutScanCode__Info, .LayoutScanCode__ModeOptions {
     position: absolute;
     text-align: center;
     top: 50%;
-    -webkit-transform: translateY(calc(-50% - 210px));
-            transform: translateY(calc(-50% - 210px));
     width: 100vw; }
+  .LayoutScanCode__Info {
+    -webkit-transform: translateY(calc(-50% - 210px));
+            transform: translateY(calc(-50% - 210px)); }
     .LayoutScanCode__Info > span.TextLarge {
       display: inline-block;
       max-width: 400px; }
+  .LayoutScanCode__ModeOptions {
+    -webkit-transform: translateY(calc(-50% + 210px));
+            transform: translateY(calc(-50% + 210px)); }
+    .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button {
+      height: 34px;
+      min-height: 34px; }
+      .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active {
+        background-color: #00bfa5;
+        box-shadow: 0 0 0 1px #00bfa5; }
   .LayoutScanCode #qrreader video {
     height: 100vh;
     -o-object-fit: cover;
