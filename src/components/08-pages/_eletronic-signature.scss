@@ -59,7 +59,8 @@
 	padding: $sapphire-sizes--small;
 }
 
-.LayoutScanCode {
+.LayoutScanCode,
+.tablet .LayoutScanCode {
 	overflow: hidden;
 
 	&__Splash {
@@ -185,6 +186,10 @@
 	.ModeNumberCode + #qrreader {
 		#qr-shaded-region {
 			border-width: 100vw !important;
+
+			> div {
+				display: none !important;
+			}
 		}
 	}
 }

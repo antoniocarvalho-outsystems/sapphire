@@ -6,6 +6,7 @@ SapphireWidgets.QRCodeScanner = function() {
 		.catch(err => {
 			console.error(err);
 
+			$('.LayoutScanCode__Splash').fadeOut(500);
 			// App doesn't have access to the camera...
 		});
 
