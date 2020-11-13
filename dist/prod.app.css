@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990021 || Generated: Fri Nov 13 2020 15:48:14 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990022 || Generated: Fri Nov 13 2020 16:46:44 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29665,6 +29665,12 @@ ul.os-internal-ui-autocomplete {
 .LayoutScanCode,
 .tablet .LayoutScanCode {
   overflow: hidden; }
+  .LayoutScanCode--modeOnlyCode .LayoutScanCode__Content,
+  .tablet .LayoutScanCode--modeOnlyCode .LayoutScanCode__Content, .LayoutScanCode--modeOnlyCode
+  .tablet .LayoutScanCode__Content,
+  .tablet .LayoutScanCode--modeOnlyCode
+  .tablet .LayoutScanCode__Content {
+    background-color: #adadad; }
   .LayoutScanCode__Splash,
   .tablet .LayoutScanCode__Splash {
     -webkit-box-align: center;
