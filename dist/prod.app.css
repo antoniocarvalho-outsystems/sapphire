@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990022 || Generated: Fri Nov 13 2020 16:46:44 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990023 || Generated: Fri Nov 13 2020 17:04:42 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29671,6 +29671,12 @@ ul.os-internal-ui-autocomplete {
   .tablet .LayoutScanCode--modeOnlyCode
   .tablet .LayoutScanCode__Content {
     background-color: #adadad; }
+  .LayoutScanCode--modeOnlyCode .LayoutScanCode__ModeOptions,
+  .tablet .LayoutScanCode--modeOnlyCode .LayoutScanCode__ModeOptions, .LayoutScanCode--modeOnlyCode
+  .tablet .LayoutScanCode__ModeOptions,
+  .tablet .LayoutScanCode--modeOnlyCode
+  .tablet .LayoutScanCode__ModeOptions {
+    display: none; }
   .LayoutScanCode__Splash,
   .tablet .LayoutScanCode__Splash {
     -webkit-box-align: center;
