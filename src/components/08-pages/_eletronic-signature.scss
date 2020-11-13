@@ -63,6 +63,12 @@
 .tablet .LayoutScanCode {
 	overflow: hidden;
 
+	&--modeOnlyCode & {
+		&__Content {
+			background-color: $mid-light-grey;
+		}
+	}
+
 	&__Splash {
 		align-items: center;
 		background-color: $regular-alpha;
