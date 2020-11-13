@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990023 || Generated: Fri Nov 13 2020 17:04:42 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990024 || Generated: Fri Nov 13 2020 18:02:11 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29699,12 +29699,12 @@ ul.os-internal-ui-autocomplete {
     position: absolute;
     width: 100vw;
     z-index: 1; }
-    .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__Info,
-    .tablet .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__Info {
+    .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__Info,
+    .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__Info {
       -webkit-transform: translateY(calc(-50% - 125px));
               transform: translateY(calc(-50% - 125px)); }
-    .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__ModeOptions,
-    .tablet .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__ModeOptions {
+    .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions,
+    .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions {
       -webkit-transform: translateY(calc(-50% + 125px));
               transform: translateY(calc(-50% + 125px)); }
   .LayoutScanCode__Logo,
@@ -29740,44 +29740,57 @@ ul.os-internal-ui-autocomplete {
     .tablet .LayoutScanCode__Info > span.TextLarge {
       display: inline-block;
       max-width: 400px; }
-  .LayoutScanCode__NumberCode,
-  .tablet .LayoutScanCode__NumberCode {
+  .LayoutScanCode__AccessCode,
+  .tablet .LayoutScanCode__AccessCode {
     left: 50%;
     position: absolute;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    background-color: #fff;
     border-radius: 8px;
-    height: 120px;
-    padding: 32px 28px;
+    overflow: hidden;
     width: 275px; }
-    .LayoutScanCode__NumberCode input,
-    .tablet .LayoutScanCode__NumberCode input {
-      border-color: #777777;
-      border-radius: 4px;
-      font-family: "LatoBold";
-      font-size: 1.714em;
-      height: 56px;
-      text-align: center;
-      -webkit-transition: all 0.1s ease-in;
-      transition: all 0.1s ease-in;
-      width: 100%; }
-      .LayoutScanCode__NumberCode input:focus,
-      .tablet .LayoutScanCode__NumberCode input:focus {
-        border-color: #00bfa5; }
-      .LayoutScanCode__NumberCode input:not(:first-of-type),
-      .tablet .LayoutScanCode__NumberCode input:not(:first-of-type) {
-        margin-left: 8px; }
-      .LayoutScanCode__NumberCode input.ColorAlphaBorder,
-      .tablet .LayoutScanCode__NumberCode input.ColorAlphaBorder {
-        border-color: #00bfa5; }
+    .LayoutScanCode__AccessCode.AccessCodeInvalid div[ui='data-code-validation-message'],
+    .tablet .LayoutScanCode__AccessCode.AccessCodeInvalid div[ui='data-code-validation-message'] {
+      max-height: 500px;
+      -webkit-transition: max-height 0.25s ease-in;
+      transition: max-height 0.25s ease-in; }
+    .LayoutScanCode__AccessCode div[ui='input-code-container'],
+    .tablet .LayoutScanCode__AccessCode div[ui='input-code-container'] {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      background-color: #fff;
+      padding: 32px 28px; }
+      .LayoutScanCode__AccessCode div[ui='input-code-container'] input,
+      .tablet .LayoutScanCode__AccessCode div[ui='input-code-container'] input {
+        border-color: #777777;
+        border-radius: 4px;
+        font-family: "LatoBold";
+        font-size: 1.714em;
+        height: 56px;
+        text-align: center;
+        -webkit-transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in;
+        width: 100%; }
+        .LayoutScanCode__AccessCode div[ui='input-code-container'] input:focus,
+        .tablet .LayoutScanCode__AccessCode div[ui='input-code-container'] input:focus {
+          border-color: #00bfa5; }
+        .LayoutScanCode__AccessCode div[ui='input-code-container'] input:not(:first-of-type),
+        .tablet .LayoutScanCode__AccessCode div[ui='input-code-container'] input:not(:first-of-type) {
+          margin-left: 8px; }
+        .LayoutScanCode__AccessCode div[ui='input-code-container'] input.ColorAlphaBorder,
+        .tablet .LayoutScanCode__AccessCode div[ui='input-code-container'] input.ColorAlphaBorder {
+          border-color: #00bfa5; }
+    .LayoutScanCode__AccessCode div[ui='code-validation-message'],
+    .tablet .LayoutScanCode__AccessCode div[ui='code-validation-message'] {
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.15s ease-out;
+      transition: max-height 0.15s ease-out; }
   .LayoutScanCode__ModeOptions,
   .tablet .LayoutScanCode__ModeOptions {
     -webkit-transform: translateY(calc(-50% + 210px));
@@ -29795,11 +29808,11 @@ ul.os-internal-ui-autocomplete {
     height: 100vh;
     -o-object-fit: cover;
        object-fit: cover; }
-  .LayoutScanCode .ModeNumberCode + #qrreader #qr-shaded-region,
-  .tablet .LayoutScanCode .ModeNumberCode + #qrreader #qr-shaded-region {
+  .LayoutScanCode .ModeAccessCode + #qrreader #qr-shaded-region,
+  .tablet .LayoutScanCode .ModeAccessCode + #qrreader #qr-shaded-region {
     border-width: 100vw !important; }
-    .LayoutScanCode .ModeNumberCode + #qrreader #qr-shaded-region > div,
-    .tablet .LayoutScanCode .ModeNumberCode + #qrreader #qr-shaded-region > div {
+    .LayoutScanCode .ModeAccessCode + #qrreader #qr-shaded-region > div,
+    .tablet .LayoutScanCode .ModeAccessCode + #qrreader #qr-shaded-region > div {
       display: none !important; }
 
 .PrintUIOptions {
