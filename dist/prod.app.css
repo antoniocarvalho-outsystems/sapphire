@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990020 || Generated: Fri Nov 13 2020 15:34:44 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990021 || Generated: Fri Nov 13 2020 15:48:14 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29662,9 +29662,11 @@ ul.os-internal-ui-autocomplete {
   letter-spacing: 3.2px;
   padding: 8px; }
 
-.LayoutScanCode {
+.LayoutScanCode,
+.tablet .LayoutScanCode {
   overflow: hidden; }
-  .LayoutScanCode__Splash {
+  .LayoutScanCode__Splash,
+  .tablet .LayoutScanCode__Splash {
     -webkit-box-align: center;
             align-items: center;
     background-color: #00bfa5;
@@ -29678,19 +29680,23 @@ ul.os-internal-ui-autocomplete {
     position: absolute;
     width: 100vw;
     z-index: 2; }
-  .LayoutScanCode__Content {
+  .LayoutScanCode__Content,
+  .tablet .LayoutScanCode__Content {
     color: #fff;
     height: 100vh;
     position: absolute;
     width: 100vw;
     z-index: 1; }
-    .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__Info {
+    .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__Info,
+    .tablet .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__Info {
       -webkit-transform: translateY(calc(-50% - 125px));
               transform: translateY(calc(-50% - 125px)); }
-    .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__ModeOptions {
+    .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__ModeOptions,
+    .tablet .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__ModeOptions {
       -webkit-transform: translateY(calc(-50% + 125px));
               transform: translateY(calc(-50% + 125px)); }
-  .LayoutScanCode__Logo {
+  .LayoutScanCode__Logo,
+  .tablet .LayoutScanCode__Logo {
     -webkit-box-align: center;
             align-items: center;
     display: -webkit-box;
@@ -29698,25 +29704,32 @@ ul.os-internal-ui-autocomplete {
     font-family: "LatoBold";
     padding: 0 24px;
     padding-top: 12px; }
-    .LayoutScanCode__Logo .icon {
+    .LayoutScanCode__Logo .icon,
+    .tablet .LayoutScanCode__Logo .icon {
       font-size: 2.143em; }
-    .LayoutScanCode__Logo > div {
+    .LayoutScanCode__Logo > div,
+    .tablet .LayoutScanCode__Logo > div {
       margin: 0 16px;
       width: -webkit-min-content;
       width: -moz-min-content;
       width: min-content; }
-  .LayoutScanCode__Info, .LayoutScanCode__ModeOptions {
+  .LayoutScanCode__Info, .LayoutScanCode__ModeOptions,
+  .tablet .LayoutScanCode__Info,
+  .tablet .LayoutScanCode__ModeOptions {
     position: absolute;
     text-align: center;
     top: 50%;
     width: 100vw; }
-  .LayoutScanCode__Info {
+  .LayoutScanCode__Info,
+  .tablet .LayoutScanCode__Info {
     -webkit-transform: translateY(calc(-50% - 210px));
             transform: translateY(calc(-50% - 210px)); }
-    .LayoutScanCode__Info > span.TextLarge {
+    .LayoutScanCode__Info > span.TextLarge,
+    .tablet .LayoutScanCode__Info > span.TextLarge {
       display: inline-block;
       max-width: 400px; }
-  .LayoutScanCode__NumberCode {
+  .LayoutScanCode__NumberCode,
+  .tablet .LayoutScanCode__NumberCode {
     left: 50%;
     position: absolute;
     top: 50%;
@@ -29733,7 +29746,8 @@ ul.os-internal-ui-autocomplete {
     height: 120px;
     padding: 32px 28px;
     width: 275px; }
-    .LayoutScanCode__NumberCode input {
+    .LayoutScanCode__NumberCode input,
+    .tablet .LayoutScanCode__NumberCode input {
       border-color: #777777;
       border-radius: 4px;
       font-family: "LatoBold";
@@ -29743,27 +29757,38 @@ ul.os-internal-ui-autocomplete {
       -webkit-transition: all 0.1s ease-in;
       transition: all 0.1s ease-in;
       width: 100%; }
-      .LayoutScanCode__NumberCode input:focus {
+      .LayoutScanCode__NumberCode input:focus,
+      .tablet .LayoutScanCode__NumberCode input:focus {
         border-color: #00bfa5; }
-      .LayoutScanCode__NumberCode input:not(:first-of-type) {
+      .LayoutScanCode__NumberCode input:not(:first-of-type),
+      .tablet .LayoutScanCode__NumberCode input:not(:first-of-type) {
         margin-left: 8px; }
-      .LayoutScanCode__NumberCode input.ColorAlphaBorder {
+      .LayoutScanCode__NumberCode input.ColorAlphaBorder,
+      .tablet .LayoutScanCode__NumberCode input.ColorAlphaBorder {
         border-color: #00bfa5; }
-  .LayoutScanCode__ModeOptions {
+  .LayoutScanCode__ModeOptions,
+  .tablet .LayoutScanCode__ModeOptions {
     -webkit-transform: translateY(calc(-50% + 210px));
             transform: translateY(calc(-50% + 210px)); }
-    .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button {
+    .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button,
+    .tablet .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button {
       height: 34px;
       min-height: 34px; }
-      .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active {
+      .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active,
+      .tablet .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active {
         background-color: #00bfa5;
         box-shadow: 0 0 0 1px #00bfa5; }
-  .LayoutScanCode #qrreader video {
+  .LayoutScanCode #qrreader video,
+  .tablet .LayoutScanCode #qrreader video {
     height: 100vh;
     -o-object-fit: cover;
        object-fit: cover; }
-  .LayoutScanCode .ModeNumberCode + #qrreader #qr-shaded-region {
+  .LayoutScanCode .ModeNumberCode + #qrreader #qr-shaded-region,
+  .tablet .LayoutScanCode .ModeNumberCode + #qrreader #qr-shaded-region {
     border-width: 100vw !important; }
+    .LayoutScanCode .ModeNumberCode + #qrreader #qr-shaded-region > div,
+    .tablet .LayoutScanCode .ModeNumberCode + #qrreader #qr-shaded-region > div {
+      display: none !important; }
 
 .PrintUIOptions {
   -webkit-box-align: center;
