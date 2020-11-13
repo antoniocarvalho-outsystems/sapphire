@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990019 || Generated: Fri Nov 13 2020 12:00:16 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990020 || Generated: Fri Nov 13 2020 15:34:44 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29684,6 +29684,12 @@ ul.os-internal-ui-autocomplete {
     position: absolute;
     width: 100vw;
     z-index: 1; }
+    .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__Info {
+      -webkit-transform: translateY(calc(-50% - 125px));
+              transform: translateY(calc(-50% - 125px)); }
+    .LayoutScanCode__Content.ModeNumberCode .LayoutScanCode__ModeOptions {
+      -webkit-transform: translateY(calc(-50% + 125px));
+              transform: translateY(calc(-50% + 125px)); }
   .LayoutScanCode__Logo {
     -webkit-box-align: center;
             align-items: center;
@@ -29710,6 +29716,39 @@ ul.os-internal-ui-autocomplete {
     .LayoutScanCode__Info > span.TextLarge {
       display: inline-block;
       max-width: 400px; }
+  .LayoutScanCode__NumberCode {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 120px;
+    padding: 32px 28px;
+    width: 275px; }
+    .LayoutScanCode__NumberCode input {
+      border-color: #777777;
+      border-radius: 4px;
+      font-family: "LatoBold";
+      font-size: 1.714em;
+      height: 56px;
+      text-align: center;
+      -webkit-transition: all 0.1s ease-in;
+      transition: all 0.1s ease-in;
+      width: 100%; }
+      .LayoutScanCode__NumberCode input:focus {
+        border-color: #00bfa5; }
+      .LayoutScanCode__NumberCode input:not(:first-of-type) {
+        margin-left: 8px; }
+      .LayoutScanCode__NumberCode input.ColorAlphaBorder {
+        border-color: #00bfa5; }
   .LayoutScanCode__ModeOptions {
     -webkit-transform: translateY(calc(-50% + 210px));
             transform: translateY(calc(-50% + 210px)); }
@@ -29723,6 +29762,8 @@ ul.os-internal-ui-autocomplete {
     height: 100vh;
     -o-object-fit: cover;
        object-fit: cover; }
+  .LayoutScanCode .ModeNumberCode + #qrreader #qr-shaded-region {
+    border-width: 100vw !important; }
 
 .PrintUIOptions {
   -webkit-box-align: center;
