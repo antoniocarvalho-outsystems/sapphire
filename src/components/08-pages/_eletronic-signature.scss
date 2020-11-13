@@ -93,7 +93,7 @@
 		width: 100vw;
 		z-index: 1;
 
-		&.ModeNumberCode {
+		&.ModeAccessCode {
 			.LayoutScanCode__Info {
 				transform: translateY(calc(-50% - 125px));
 			}
@@ -138,37 +138,54 @@
 		}
 	}
 
-	&__NumberCode {
+	&__AccessCode {
 		@include absolute-center();
-		@include flex-center-total();
 
-		background-color: $regular-white;
 		border-radius: $border-radius-medium;
-		height: 120px;
-		padding: $sapphire-sizes--xlarge 28px;
+		overflow: hidden;
 		width: 275px;
 
-		input {
-			border-color: $regular-grey;
-			border-radius: $border-radius-default;
-			font-family: $font-family-latin-bold;
-			font-size: $font-size-heading1;
-			height: 56px;
-			text-align: center;
-			transition: all 0.1s ease-in;
-			width: 100%;
-
-			&:focus {
-				border-color: $regular-alpha;
+		&.AccessCodeInvalid {
+			div[ui='data-code-validation-message'] {
+				max-height: 500px;
+				transition: max-height 0.25s ease-in;
 			}
+		}
 
-			&:not(:first-of-type) {
-				margin-left: $sapphire-sizes--small;
-			}
+		div[ui='input-code-container'] {
+			@include flex-center-total();
 
-			&.ColorAlphaBorder {
-				border-color: $regular-alpha;
+			background-color: $regular-white;
+			padding: $sapphire-sizes--xlarge 28px;
+
+			input {
+				border-color: $regular-grey;
+				border-radius: $border-radius-default;
+				font-family: $font-family-latin-bold;
+				font-size: $font-size-heading1;
+				height: 56px;
+				text-align: center;
+				transition: all 0.1s ease-in;
+				width: 100%;
+
+				&:focus {
+					border-color: $regular-alpha;
+				}
+
+				&:not(:first-of-type) {
+					margin-left: $sapphire-sizes--small;
+				}
+
+				&.ColorAlphaBorder {
+					border-color: $regular-alpha;
+				}
 			}
+		}
+
+		div[ui='code-validation-message'] {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.15s ease-out;
 		}
 	}
 
@@ -193,7 +210,7 @@
 		}
 	}
 
-	.ModeNumberCode + #qrreader {
+	.ModeAccessCode + #qrreader {
 		#qr-shaded-region {
 			border-width: 100vw !important;
 

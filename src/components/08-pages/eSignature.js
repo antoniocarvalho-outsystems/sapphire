@@ -7,7 +7,7 @@ SapphireWidgets.QRCodeScanner = function() {
 			// App doesn't have access to the camera...
 
 			setTimeout(() => {
-				const $checkbox = $('.NumberCodeOption');
+				const $checkbox = $('.AccessCodeOption');
 
 				$checkbox.attr('checked', true).trigger('click');
 				$('.LayoutScanCode').addClass('LayoutScanCode--modeOnlyCode');
@@ -21,7 +21,7 @@ SapphireWidgets.QRCodeScanner = function() {
 		const config = { fps: 5, qrbox: 250 };
 
 		const successCallback = response => {
-			if ($('.ModeNumberCode').length) return;
+			if ($('.ModeAccessCode').length) return;
 
 			console.log(response);
 		};
@@ -41,12 +41,12 @@ SapphireWidgets.QRCodeScanner = function() {
 	}
 };
 
-SapphireWidgets.GoNextInput = function(field, ui) {
+SapphireWidgets.GoNextInput = function(field, inputClass) {
 	const key = event.keyCode || event.charCode;
 	const isNumber = !isNaN(event.key) && !isNaN(parseFloat(event.key));
 
 	const $curr = $(field);
-	const $next = $(`[ui='${ui}']`);
+	const $next = $(`.${inputClass}`);
 	const $prev = $curr.prevAll('input').first();
 
 	if (key === 8 || key === 46) {
@@ -59,5 +59,11 @@ SapphireWidgets.GoNextInput = function(field, ui) {
 	if (isNumber) {
 		$next.focus();
 		$curr.addClass('ColorAlphaBorder');
+
+		const $accessCodeInput = $('.AccessCode');
+
+		if (($accessCodeInput.val().length = 4)) $accessCodeInput.change();
 	}
+
+	return;
 };
