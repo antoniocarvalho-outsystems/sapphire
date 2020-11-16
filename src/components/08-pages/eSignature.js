@@ -1,4 +1,4 @@
-SapphireWidgets.QRCodeScanner = function() {
+SapphireWidgets.QRCodeScanner = function(config) {
 	Html5Qrcode.getCameras()
 		.then(devices => {
 			if (devices && devices.length) startCamera(devices[0].id);
@@ -23,7 +23,7 @@ SapphireWidgets.QRCodeScanner = function() {
 		const successCallback = response => {
 			if ($('.ModeAccessCode').length) return;
 
-			console.log(response);
+			OsNotifyWidget(config.widgetFakeNotifyId, response);
 		};
 
 		const errorCallback = response => {
