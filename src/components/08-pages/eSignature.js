@@ -23,6 +23,8 @@ SapphireWidgets.QRCodeScanner = function(options) {
 		const successCallback = response => {
 			if ($('.ModeAccessCode').length) return;
 
+			$('#qr-shaded-region').addClass('CodeCorrect');
+
 			OsNotifyWidget(options.widgetFakeNotifyId, response);
 		};
 

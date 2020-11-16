@@ -10,13 +10,13 @@
 		color: $regular-alpha;
 		display: flex;
 		font-family: $font-family-latin-bold;
-		gap: $sapphire-sizes--medium;
 
 		.icon {
 			font-size: $font-size-big;
 		}
 
 		> div {
+			margin: 0 $sapphire-sizes--medium;
 			width: min-content;
 		}
 	}
@@ -219,6 +219,12 @@
 		video {
 			height: 100vh;
 			object-fit: cover;
+		}
+
+		.CodeCorrect {
+			> div {
+				background-color: $regular-alpha !important;
+			}
 		}
 	}
 
