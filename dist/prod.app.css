@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990027 || Generated: Mon Nov 16 2020 14:44:30 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990028 || Generated: Mon Nov 16 2020 18:03:13 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29626,11 +29626,11 @@ ul.os-internal-ui-autocomplete {
     color: #00bfa5;
     display: -webkit-box;
     display: flex;
-    font-family: "LatoBold";
-    gap: 16px; }
+    font-family: "LatoBold"; }
     .LayoutESignature__Logo .icon {
       font-size: 2.143em; }
     .LayoutESignature__Logo > div {
+      margin: 0 16px;
       width: -webkit-min-content;
       width: -moz-min-content;
       width: min-content; }
@@ -29820,6 +29820,9 @@ ul.os-internal-ui-autocomplete {
     height: 100vh;
     -o-object-fit: cover;
        object-fit: cover; }
+  .LayoutScanCode #qrreader .CodeCorrect > div,
+  .tablet .LayoutScanCode #qrreader .CodeCorrect > div {
+    background-color: #00bfa5 !important; }
   .LayoutScanCode .ModeAccessCode + #qrreader #qr-shaded-region,
   .tablet .LayoutScanCode .ModeAccessCode + #qrreader #qr-shaded-region {
     border-width: 100vw !important; }
