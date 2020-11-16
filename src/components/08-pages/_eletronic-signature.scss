@@ -96,6 +96,10 @@
 		&.ModeAccessCode {
 			.LayoutScanCode__Info {
 				transform: translateY(calc(-50% - 125px));
+
+				&.AccessCodeInvalid {
+					transform: translateY(calc(-50% - 160px));
+				}
 			}
 
 			.LayoutScanCode__ModeOptions {
@@ -146,8 +150,14 @@
 		width: 275px;
 
 		&.AccessCodeInvalid {
-			div[ui='data-code-validation-message'] {
+			input[type='tel'],
+			input[type='tel']:focus {
+				border-color: $regular-red;
+			}
+
+			div[ui='code-validation-message'] {
 				max-height: 500px;
+				padding: $sapphire-sizes--small $sapphire-sizes--medium;
 				transition: max-height 0.25s ease-in;
 			}
 		}
@@ -183,8 +193,10 @@
 		}
 
 		div[ui='code-validation-message'] {
+			background-color: $regular-red;
 			max-height: 0;
 			overflow: hidden;
+			text-align: center;
 			transition: max-height 0.15s ease-out;
 		}
 	}

@@ -41,12 +41,12 @@ SapphireWidgets.QRCodeScanner = function() {
 	}
 };
 
-SapphireWidgets.GoNextInput = function(field, inputClass) {
+SapphireWidgets.GoNextInput = function(currentInput, nextInputClass) {
 	const key = event.keyCode || event.charCode;
 	const isNumber = !isNaN(event.key) && !isNaN(parseFloat(event.key));
 
-	const $curr = $(field);
-	const $next = $(`.${inputClass}`);
+	const $curr = $(currentInput);
+	const $next = $(`.${nextInputClass}`);
 	const $prev = $curr.prevAll('input').first();
 
 	if (key === 8 || key === 46) {
@@ -59,11 +59,6 @@ SapphireWidgets.GoNextInput = function(field, inputClass) {
 	if (isNumber) {
 		$next.focus();
 		$curr.addClass('ColorAlphaBorder');
-
-		const $accessCodeInput = $('.AccessCode');
-
-		if (($accessCodeInput.val().length = 4)) $accessCodeInput.change();
+		$curr.change();
 	}
-
-	return;
 };
