@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990028 || Generated: Mon Nov 16 2020 18:03:13 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990029 || Generated: Tue Nov 17 2020 14:39:25 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29711,6 +29711,10 @@ ul.os-internal-ui-autocomplete {
     .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions {
       -webkit-transform: translateY(calc(-50% + 125px));
               transform: translateY(calc(-50% + 125px)); }
+      .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions.AccessCodeInvalid,
+      .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions.AccessCodeInvalid {
+        -webkit-transform: translateY(calc(-50% + 160px));
+                transform: translateY(calc(-50% + 160px)); }
   .LayoutScanCode__Logo,
   .tablet .LayoutScanCode__Logo {
     -webkit-box-align: center;
@@ -29775,6 +29779,10 @@ ul.os-internal-ui-autocomplete {
               justify-content: center;
       background-color: #fff;
       padding: 32px 28px; }
+      .AR .LayoutScanCode__AccessCode div[ui='input-code-container'] input:not(:first-of-type), .AR
+      .tablet .LayoutScanCode__AccessCode div[ui='input-code-container'] input:not(:first-of-type) {
+        margin-left: 0;
+        margin-right: 8px; }
       .LayoutScanCode__AccessCode div[ui='input-code-container'] input,
       .tablet .LayoutScanCode__AccessCode div[ui='input-code-container'] input {
         border-color: #777777;
@@ -29791,7 +29799,8 @@ ul.os-internal-ui-autocomplete {
           border-color: #00bfa5; }
         .LayoutScanCode__AccessCode div[ui='input-code-container'] input:not(:first-of-type),
         .tablet .LayoutScanCode__AccessCode div[ui='input-code-container'] input:not(:first-of-type) {
-          margin-left: 8px; }
+          margin-left: 8px;
+          margin-right: 0; }
         .LayoutScanCode__AccessCode div[ui='input-code-container'] input.ColorAlphaBorder,
         .tablet .LayoutScanCode__AccessCode div[ui='input-code-container'] input.ColorAlphaBorder {
           border-color: #00bfa5; }
