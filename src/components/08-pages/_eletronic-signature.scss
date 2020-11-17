@@ -104,6 +104,10 @@
 
 			.LayoutScanCode__ModeOptions {
 				transform: translateY(calc(-50% + 125px));
+
+				&.AccessCodeInvalid {
+					transform: translateY(calc(-50% + 160px));
+				}
 			}
 		}
 	}
@@ -168,6 +172,13 @@
 			background-color: $regular-white;
 			padding: $sapphire-sizes--xlarge 28px;
 
+			.AR & {
+				input:not(:first-of-type) {
+					margin-left: 0;
+					margin-right: $sapphire-sizes--small;
+				}
+			}
+
 			input {
 				border-color: $regular-grey;
 				border-radius: $border-radius-default;
@@ -184,6 +195,7 @@
 
 				&:not(:first-of-type) {
 					margin-left: $sapphire-sizes--small;
+					margin-right: 0;
 				}
 
 				&.ColorAlphaBorder {
