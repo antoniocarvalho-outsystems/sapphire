@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.990029 || Generated: Tue Nov 17 2020 14:39:25 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.990030 || Generated: Tue Nov 17 2020 14:46:30 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -34770,18 +34770,6 @@ a.Button.Icon:hover,
   display: none; }
 
 /* Responsive Context **************************/
-.phone .Button,
-.tablet .Button,
-.phone a.Button,
-.phone .DropZoneContainer .row .Button,
-.DropZoneContainer .row .phone .Button,
-.tablet a.Button,
-.tablet .DropZoneContainer .row .Button,
-.DropZoneContainer .row .tablet .Button {
-  height: 36px;
-  line-height: 34px;
-  text-decoration: none; }
-
 .phone input.Button:focus,
 .tablet input.Button:focus,
 .phone input.Button,
