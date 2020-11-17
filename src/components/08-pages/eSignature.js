@@ -26,6 +26,8 @@ SapphireWidgets.QRCodeScanner = function(options) {
 			$('#qr-shaded-region').addClass('CodeCorrect');
 
 			OsNotifyWidget(options.widgetFakeNotifyId, response);
+
+			setTimeout(() => html5QrCode.stop(), 1000);
 		};
 
 		const errorCallback = response => {
