@@ -136,7 +136,8 @@
 	}
 
 	&__Info,
-	&__ModeOptions {
+	&__ModeOptions,
+	&__QRCodeInvalid {
 		position: absolute;
 		text-align: center;
 		top: 50%;
@@ -235,6 +236,7 @@
 
 	&__QRCodeInvalid {
 		display: none;
+		transform: translateY(calc(-50% + 210px));
 	}
 
 	#qrreader {

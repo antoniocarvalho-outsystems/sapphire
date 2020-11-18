@@ -28,7 +28,7 @@ SapphireWidgets.QRCodeScanner = function(options) {
 
 			OsNotifyWidget(options.widgetFakeNotifyId, response);
 
-			setTimeout(() => html5QrCode.stop(), 1000);
+			//setTimeout(() => html5QrCode.stop(), 1000);
 		};
 
 		const errorCallback = response => {
