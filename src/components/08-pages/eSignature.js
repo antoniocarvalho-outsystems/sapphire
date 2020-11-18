@@ -21,7 +21,6 @@ SapphireWidgets.QRCodeScanner = function(options) {
 		const config = { fps: 5, qrbox: 250 };
 
 		const successCallback = response => {
-			alert($('.ModeAccessCode').length);
 			if ($('.ModeAccessCode').length) return;
 
 			$('#qr-shaded-region').addClass('CodeCorrect');
