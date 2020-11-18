@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100005 || Generated: Wed Nov 18 2020 16:08:20 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100006 || Generated: Wed Nov 18 2020 16:10:05 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29736,9 +29736,10 @@ ul.os-internal-ui-autocomplete {
       width: -webkit-min-content;
       width: -moz-min-content;
       width: min-content; }
-  .LayoutScanCode__Info, .LayoutScanCode__ModeOptions,
+  .LayoutScanCode__Info, .LayoutScanCode__ModeOptions, .LayoutScanCode__QRCodeInvalid,
   .tablet .LayoutScanCode__Info,
-  .tablet .LayoutScanCode__ModeOptions {
+  .tablet .LayoutScanCode__ModeOptions,
+  .tablet .LayoutScanCode__QRCodeInvalid {
     position: absolute;
     text-align: center;
     top: 50%;
@@ -29829,7 +29830,9 @@ ul.os-internal-ui-autocomplete {
         box-shadow: 0 0 0 1px #00bfa5; }
   .LayoutScanCode__QRCodeInvalid,
   .tablet .LayoutScanCode__QRCodeInvalid {
-    display: none; }
+    display: none;
+    -webkit-transform: translateY(calc(-50% + 210px));
+            transform: translateY(calc(-50% + 210px)); }
   .LayoutScanCode #qrreader video,
   .tablet .LayoutScanCode #qrreader video {
     height: 100vh;
