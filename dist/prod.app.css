@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100004 || Generated: Wed Nov 18 2020 15:16:27 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100005 || Generated: Wed Nov 18 2020 16:08:20 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29715,6 +29715,9 @@ ul.os-internal-ui-autocomplete {
       .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions.AccessCodeInvalid {
         -webkit-transform: translateY(calc(-50% + 160px));
                 transform: translateY(calc(-50% + 160px)); }
+    .LayoutScanCode__Content.QRCodeInvalid .LayoutScanCode__QRCodeInvalid,
+    .tablet .LayoutScanCode__Content.QRCodeInvalid .LayoutScanCode__QRCodeInvalid {
+      display: block; }
   .LayoutScanCode__Logo,
   .tablet .LayoutScanCode__Logo {
     -webkit-box-align: center;
@@ -29824,6 +29827,9 @@ ul.os-internal-ui-autocomplete {
       .tablet .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active {
         background-color: #00bfa5;
         box-shadow: 0 0 0 1px #00bfa5; }
+  .LayoutScanCode__QRCodeInvalid,
+  .tablet .LayoutScanCode__QRCodeInvalid {
+    display: none; }
   .LayoutScanCode #qrreader video,
   .tablet .LayoutScanCode #qrreader video {
     height: 100vh;
