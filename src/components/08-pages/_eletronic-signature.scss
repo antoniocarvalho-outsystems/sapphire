@@ -110,6 +110,12 @@
 				}
 			}
 		}
+
+		&.QRCodeInvalid {
+			.LayoutScanCode__QRCodeInvalid {
+				display: block;
+			}
+		}
 	}
 
 	&__Logo {
@@ -225,6 +231,10 @@
 			height: 34px;
 			min-height: 34px;
 		}
+	}
+
+	&__QRCodeInvalid {
+		display: none;
 	}
 
 	#qrreader {
