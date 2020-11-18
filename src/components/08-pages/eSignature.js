@@ -18,7 +18,7 @@ SapphireWidgets.QRCodeScanner = function(options) {
 
 	function startCamera(cameraID) {
 		const html5QrCode = new Html5Qrcode('qrreader');
-		const config = { fps: 2, qrbox: 250, aspectRatio: 1.777778 };
+		const config = { fps: 5, qrbox: 250, aspectRatio: 1.0 };
 
 		const successCallback = response => {
 			if ($('.ModeAccessCode').length) return;
