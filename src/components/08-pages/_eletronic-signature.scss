@@ -114,6 +114,11 @@
 		&.QRCodeInvalid {
 			.LayoutScanCode__QRCodeInvalid {
 				display: block;
+				padding: $sapphire-sizes--small $sapphire-sizes--medium;
+			}
+
+			.LayoutScanCode__ModeOptions {
+				transform: translateY(calc(-50% + 230px));
 			}
 		}
 	}
@@ -235,8 +240,11 @@
 	}
 
 	&__QRCodeInvalid {
+		background-color: $regular-red;
 		display: none;
-		transform: translateY(calc(-50% + 210px));
+		left: 50%;
+		max-width: 261px;
+		transform: translateY(calc(-50% + 158px)) translateX(-50%);
 	}
 
 	#qrreader {
@@ -258,6 +266,14 @@
 
 			> div {
 				display: none !important;
+			}
+		}
+	}
+
+	.QRCodeInvalid + #qrreader {
+		#qr-shaded-region {
+			> div {
+				background-color: $regular-red !important;
 			}
 		}
 	}
