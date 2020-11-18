@@ -31,7 +31,7 @@ SapphireWidgets.QRCodeScanner = function(options) {
 		};
 
 		const errorCallback = response => {
-			// ?
+			// alert(response);
 		};
 
 		html5QrCode
@@ -41,6 +41,7 @@ SapphireWidgets.QRCodeScanner = function(options) {
 			})
 			.catch(err => {
 				console.error(err);
+				alert(err);
 			});
 	}
 };
