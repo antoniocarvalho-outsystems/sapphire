@@ -1,10 +1,13 @@
 SapphireWidgets.QRCodeScanner = function(options) {
 	Html5Qrcode.getCameras()
 		.then(devices => {
+			$('.LayoutScanCode__Info').text('4');
 			if (devices && devices.length) startCamera(devices[0].id);
 		})
 		.catch(err => {
 			// App doesn't have access to the camera...
+
+			$('.LayoutScanCode__Info').text('2');
 
 			setTimeout(() => {
 				const $checkbox = $('.AccessCodeOption');
@@ -21,13 +24,16 @@ SapphireWidgets.QRCodeScanner = function(options) {
 		const config = { fps: 5, qrbox: 250 };
 
 		const successCallback = response => {
+			alert($('.ModeAccessCode').length);
 			if ($('.ModeAccessCode').length) return;
+
+			$('.LayoutScanCode__Info').text('1');
 
 			$('#qr-shaded-region').addClass('CodeCorrect');
 
 			OsNotifyWidget(options.widgetFakeNotifyId, response);
 
-			//setTimeout(() => html5QrCode.stop(), 1000);
+			setTimeout(() => html5QrCode.stop(), 1000);
 		};
 
 		const errorCallback = response => {
@@ -41,6 +47,7 @@ SapphireWidgets.QRCodeScanner = function(options) {
 			})
 			.catch(err => {
 				console.error(err);
+				$('.LayoutScanCode__Info').text('3');
 			});
 	}
 };
