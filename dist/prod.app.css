@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100011 || Generated: Wed Nov 18 2020 17:41:34 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100012 || Generated: Wed Nov 18 2020 18:20:07 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29661,6 +29661,29 @@ ul.os-internal-ui-autocomplete {
   font-size: 1.286em;
   letter-spacing: 3.2px;
   padding: 8px; }
+
+.SignatureStatusAlert {
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: #c4f0eb;
+  border-radius: 0 0 4px 4px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  font-family: "LatoBold";
+  height: 36px;
+  left: 50%;
+  padding: 0 24px;
+  position: absolute;
+  top: 128px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 9; }
+  .SignatureStatusAlert .icon {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #00bfa5;
+    font-size: 1.286em;
+    margin-right: 8px; }
 
 .LayoutScanCode,
 .tablet .LayoutScanCode {
