@@ -1,7 +1,7 @@
 SapphireWidgets.QRCodeScanner = function(options) {
 	Html5Qrcode.getCameras()
 		.then(devices => {
-			$('.LayoutScanCode__Info').text('4');
+			$('.LayoutScanCode__Info').text(Math.floor(Math.random() * 100));
 			if (devices && devices.length) startCamera(devices[0].id);
 		})
 		.catch(err => {
