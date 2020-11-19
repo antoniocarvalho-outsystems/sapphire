@@ -67,11 +67,19 @@
 	font-family: $font-family-latin-bold;
 	height: 36px;
 	left: 50%;
+	max-height: 0;
+	overflow: hidden;
 	padding: 0 $sapphire-sizes--large;
 	position: absolute;
 	top: 128px;
 	transform: translateX(-50%);
+	transition: max-height 0.15s ease-in;
 	z-index: 9;
+
+	&--visible {
+		max-height: 36px;
+		transition: max-height 0.25s ease-in;
+	}
 
 	.icon {
 		background-color: $regular-white;
