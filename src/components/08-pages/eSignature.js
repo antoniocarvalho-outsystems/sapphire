@@ -63,7 +63,6 @@ SapphireWidgets.GoNextInput = function(currentInput, nextInputClass) {
 	if (isNumber) {
 		$next.focus();
 		$curr.addClass('ColorAlphaBorder');
-	}
-
-	$('.ValidateInputButton').click();
+		$('.ValidateInputButton').click();
+	} else event.preventDefault();
 };
