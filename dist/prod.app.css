@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100014 || Generated: Thu Nov 19 2020 14:54:29 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100015 || Generated: Thu Nov 19 2020 17:31:55 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29859,7 +29859,8 @@ ul.os-internal-ui-autocomplete {
     .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button,
     .tablet .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button {
       height: 34px;
-      min-height: 34px; }
+      min-height: 34px;
+      padding: 0 24px; }
       .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active,
       .tablet .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active {
         background-color: #00bfa5;
