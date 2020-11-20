@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100017 || Generated: Fri Nov 20 2020 11:43:56 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100018 || Generated: Fri Nov 20 2020 16:16:25 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29647,13 +29647,10 @@ ul.os-internal-ui-autocomplete {
     display: flex;
     height: 64px;
     padding: 0 24px; }
-  .LayoutESignature__Content {
-    padding: 32px 24px;
-    padding-bottom: 0; }
-    .LayoutESignature__Content .iframeContainer {
-      height: 100% !important;
-      overflow: hidden !important;
-      width: 100% !important; }
+  .LayoutESignature__Content .iframeContainer {
+    height: 100% !important;
+    overflow: hidden !important;
+    width: 100% !important; }
 
 .AcessCodeBox {
   background-color: #fff;
@@ -29677,7 +29674,7 @@ ul.os-internal-ui-autocomplete {
   overflow: hidden;
   padding: 0 24px;
   position: absolute;
-  top: 128px;
+  top: 96px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-transition: max-height 0.15s ease-in;
