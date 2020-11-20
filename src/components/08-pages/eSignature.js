@@ -44,9 +44,19 @@ SapphireWidgets.QRCodeScanner = function(options) {
 			});
 	}
 
-	// $(window).on('resize.QRCodeScanner', () => {
-	// 	window.location.reload()
-	// });
+	let resizeTimeout;
+	$(window).on('resize.QRCodeScanner', () => {
+		clearTimeout(resizeTimeout);
+
+		resizeTimeout = setTimeout(function() {
+			$('#qrreader video').width(`${window.innerWidth}px`);
+
+			let value = $('#qr-shaded-region').css('borderWidth');
+			value = value.split(' ');
+
+			$('#qr-shaded-region').css('borderWidth', `${value[1]} ${value[0]}`);
+		}, 100);
+	});
 };
 
 SapphireWidgets.GoNextInput = function(currentInput, nextInputClass) {
