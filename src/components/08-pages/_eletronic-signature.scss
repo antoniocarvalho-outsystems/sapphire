@@ -39,9 +39,6 @@
 	}
 
 	&__Content {
-		padding: $sapphire-sizes--xlarge $sapphire-sizes--large;
-		padding-bottom: 0;
-
 		.iframeContainer {
 			height: 100% !important;
 			overflow: hidden !important;
@@ -71,7 +68,7 @@
 	overflow: hidden;
 	padding: 0 $sapphire-sizes--large;
 	position: absolute;
-	top: 128px;
+	top: 96px;
 	transform: translateX(-50%);
 	transition: max-height 0.15s ease-in;
 	z-index: 9;

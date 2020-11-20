@@ -43,6 +43,10 @@ SapphireWidgets.QRCodeScanner = function(options) {
 				console.error(err);
 			});
 	}
+
+	// $(window).on('resize.QRCodeScanner', () => {
+	// 	window.location.reload()
+	// });
 };
 
 SapphireWidgets.GoNextInput = function(currentInput, nextInputClass) {
