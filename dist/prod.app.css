@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100016 || Generated: Fri Nov 20 2020 11:36:08 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100017 || Generated: Fri Nov 20 2020 11:43:56 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21907,7 +21907,8 @@ div.List-Star {
     border-radius: 8px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
     position: relative; }
-    .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup iframe {
+    .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup iframe,
+    .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-content {
       border-radius: 8px; }
     .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar {
       background: none;
