@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100018 || Generated: Fri Nov 20 2020 16:16:25 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100019 || Generated: Fri Nov 20 2020 16:35:30 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29694,12 +29694,6 @@ ul.os-internal-ui-autocomplete {
 .LayoutScanCode,
 .tablet .LayoutScanCode {
   overflow: hidden; }
-  .LayoutScanCode--modeOnlyCode .LayoutScanCode__Content,
-  .tablet .LayoutScanCode--modeOnlyCode .LayoutScanCode__Content, .LayoutScanCode--modeOnlyCode
-  .tablet .LayoutScanCode__Content,
-  .tablet .LayoutScanCode--modeOnlyCode
-  .tablet .LayoutScanCode__Content {
-    background-color: #adadad; }
   .LayoutScanCode--modeOnlyCode .LayoutScanCode__ModeOptions,
   .tablet .LayoutScanCode--modeOnlyCode .LayoutScanCode__ModeOptions, .LayoutScanCode--modeOnlyCode
   .tablet .LayoutScanCode__ModeOptions,
@@ -29728,22 +29722,37 @@ ul.os-internal-ui-autocomplete {
     position: absolute;
     width: 100vw;
     z-index: 1; }
-    .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__Info,
-    .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__Info {
-      -webkit-transform: translateY(calc(-50% - 125px));
-              transform: translateY(calc(-50% - 125px)); }
-      .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__Info.AccessCodeInvalid,
-      .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__Info.AccessCodeInvalid {
-        -webkit-transform: translateY(calc(-50% - 160px));
-                transform: translateY(calc(-50% - 160px)); }
-    .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions,
-    .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions {
-      -webkit-transform: translateY(calc(-50% + 125px));
-              transform: translateY(calc(-50% + 125px)); }
-      .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions.AccessCodeInvalid,
-      .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions.AccessCodeInvalid {
-        -webkit-transform: translateY(calc(-50% + 160px));
-                transform: translateY(calc(-50% + 160px)); }
+    .LayoutScanCode__Content.ModeAccessCode,
+    .tablet .LayoutScanCode__Content.ModeAccessCode {
+      background-image: linear-gradient(135deg, #00bfa5 0%, #068977 100%); }
+      .LayoutScanCode__Content.ModeAccessCode::before,
+      .tablet .LayoutScanCode__Content.ModeAccessCode::before {
+        background-color: #333333;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 0.3;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1; }
+      .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__Info,
+      .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__Info {
+        -webkit-transform: translateY(calc(-50% - 125px));
+                transform: translateY(calc(-50% - 125px)); }
+        .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__Info.AccessCodeInvalid,
+        .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__Info.AccessCodeInvalid {
+          -webkit-transform: translateY(calc(-50% - 160px));
+                  transform: translateY(calc(-50% - 160px)); }
+      .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions,
+      .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions {
+        -webkit-transform: translateY(calc(-50% + 125px));
+                transform: translateY(calc(-50% + 125px)); }
+        .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions.AccessCodeInvalid,
+        .tablet .LayoutScanCode__Content.ModeAccessCode .LayoutScanCode__ModeOptions.AccessCodeInvalid {
+          -webkit-transform: translateY(calc(-50% + 160px));
+                  transform: translateY(calc(-50% + 160px)); }
     .LayoutScanCode__Content.QRCodeInvalid .LayoutScanCode__QRCodeInvalid,
     .tablet .LayoutScanCode__Content.QRCodeInvalid .LayoutScanCode__QRCodeInvalid {
       display: block;
