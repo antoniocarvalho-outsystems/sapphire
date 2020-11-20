@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100015 || Generated: Thu Nov 19 2020 17:31:55 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100016 || Generated: Fri Nov 20 2020 11:36:08 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29619,7 +29619,7 @@ ul.os-internal-ui-autocomplete {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  height: 100vh; }
+  height: 100%; }
   .LayoutESignature__Logo {
     -webkit-box-align: center;
             align-items: center;
