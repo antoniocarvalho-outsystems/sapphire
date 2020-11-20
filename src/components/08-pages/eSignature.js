@@ -51,10 +51,10 @@ SapphireWidgets.QRCodeScanner = function(options) {
 		resizeTimeout = setTimeout(function() {
 			$('#qrreader video').width(`${window.innerWidth}px`);
 
-			let value = $('#qr-shaded-region').css('borderWidth');
-			value = value.split(' ');
+			const y = window.innerHeight / 2 - 125;
+			const x = window.innerWidth / 2 - 125;
 
-			$('#qr-shaded-region').css('borderWidth', `${value[1]} ${value[0]}`);
+			$('#qr-shaded-region').css('borderWidth', `${y}px ${x}px`);
 		}, 100);
 	});
 };
