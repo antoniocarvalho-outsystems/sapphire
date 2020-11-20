@@ -92,10 +92,6 @@
 	overflow: hidden;
 
 	&--modeOnlyCode & {
-		&__Content {
-			background-color: $mid-light-grey;
-		}
-
 		&__ModeOptions {
 			display: none;
 		}
@@ -122,6 +118,21 @@
 		z-index: 1;
 
 		&.ModeAccessCode {
+			background-image: linear-gradient(135deg, $regular-alpha 0%, #068977 100%);
+
+			&::before {
+				background-color: $dark-grey;
+				content: '';
+				display: block;
+				height: 100%;
+				left: 0;
+				opacity: 0.3;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: -1;
+			}
+
 			.LayoutScanCode__Info {
 				transform: translateY(calc(-50% - 125px));
 
