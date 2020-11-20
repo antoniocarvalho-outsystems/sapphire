@@ -51,8 +51,10 @@ SapphireWidgets.QRCodeScanner = function(options) {
 		resizeTimeout = setTimeout(function() {
 			$('#qrreader video').width(`${window.innerWidth}px`);
 
-			const y = document.documentElement.clientHeight / 2 - 125;
-			const x = document.documentElement.clientWidth / 2 - 125;
+			const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+			const y = (iOS ? screen.height : window.innerHeight) / 2 - 125;
+			const x = (iOS ? screen.width : window.innerWidth) / 2 - 125;
 
 			$('#qr-shaded-region').css('borderWidth', `${y}px ${x}px`);
 		}, 100);
