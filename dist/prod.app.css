@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100024 || Generated: Fri Nov 20 2020 18:00:32 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100025 || Generated: Mon Nov 23 2020 12:52:11 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29674,7 +29674,7 @@ ul.os-internal-ui-autocomplete {
   overflow: hidden;
   padding: 0 24px;
   position: absolute;
-  top: 96px;
+  top: 97px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-transition: max-height 0.15s ease-in;
@@ -29875,28 +29875,42 @@ ul.os-internal-ui-autocomplete {
   .LayoutScanCode__QRCodeInvalid,
   .tablet .LayoutScanCode__QRCodeInvalid {
     background-color: #ff3e2d;
+    border-radius: 0 0 8px 8px;
     display: none;
     left: 50%;
-    max-width: 260px;
-    -webkit-transform: translateY(calc(-50% + 158px)) translateX(-50%);
-            transform: translateY(calc(-50% + 158px)) translateX(-50%); }
+    max-width: 256px;
+    -webkit-transform: translateY(calc(-50% + 140px)) translateX(-50%);
+            transform: translateY(calc(-50% + 140px)) translateX(-50%); }
   .LayoutScanCode #qrreader video,
   .tablet .LayoutScanCode #qrreader video {
     height: 100vh;
     -o-object-fit: cover;
        object-fit: cover; }
-  .LayoutScanCode #qrreader .CodeCorrect > div,
-  .tablet .LayoutScanCode #qrreader .CodeCorrect > div {
-    background-color: #00bfa5 !important; }
-  .LayoutScanCode .ModeAccessCode + #qrreader #qr-shaded-region,
-  .tablet .LayoutScanCode .ModeAccessCode + #qrreader #qr-shaded-region {
-    border-width: 100vw !important; }
-    .LayoutScanCode .ModeAccessCode + #qrreader #qr-shaded-region > div,
-    .tablet .LayoutScanCode .ModeAccessCode + #qrreader #qr-shaded-region > div {
-      display: none !important; }
-  .LayoutScanCode .QRCodeInvalid + #qrreader #qr-shaded-region > div,
-  .tablet .LayoutScanCode .QRCodeInvalid + #qrreader #qr-shaded-region > div {
-    background-color: #ff3e2d !important; }
+  .LayoutScanCode #qrreader #qr-shaded-region,
+  .tablet .LayoutScanCode #qrreader #qr-shaded-region {
+    opacity: 0; }
+
+.ScanOverlay {
+  box-shadow: 0 0 0 9999px rgba(51, 51, 51, 0.5);
+  height: 250px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 250px;
+  z-index: 0; }
+  .ScanOverlay::before {
+    border-radius: 8px;
+    box-shadow: 0 0 0 3px #fff;
+    content: '';
+    display: block;
+    height: 250px;
+    width: 250px; }
+  .ScanOverlay--correctCode::before {
+    box-shadow: 0 0 0 3px #00bfa5; }
+  .ScanOverlay--incorrectCode::before {
+    box-shadow: 0 0 0 3px #ff3e2d; }
 
 .PrintUIOptions {
   -webkit-box-align: center;
