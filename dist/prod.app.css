@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100026 || Generated: Mon Nov 23 2020 12:55:38 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100027 || Generated: Mon Nov 23 2020 13:02:48 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29879,8 +29879,8 @@ ul.os-internal-ui-autocomplete {
     display: none;
     left: 50%;
     max-width: 256px;
-    -webkit-transform: translateY(calc(-50% + 140px)) translateX(-50%);
-            transform: translateY(calc(-50% + 140px)) translateX(-50%); }
+    -webkit-transform: translateY(calc(-50% + 135px)) translateX(-50%);
+            transform: translateY(calc(-50% + 135px)) translateX(-50%); }
   .LayoutScanCode #qrreader video,
   .tablet .LayoutScanCode #qrreader video {
     height: 100vh;
