@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100031 || Generated: Mon Nov 23 2020 14:32:04 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100032 || Generated: Mon Nov 23 2020 17:44:27 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -42336,7 +42336,6 @@ div.NoPrompt > span > div.template-item-input-block {
   width: 15%; }
 
 .SectionContainer {
-  float: left;
   width: 85%; }
 
 .SectionFullContainer {
