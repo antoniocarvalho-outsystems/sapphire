@@ -44,18 +44,10 @@ SapphireWidgets.QRCodeScanner = function(options) {
 			});
 	}
 
-	let resizeTimeout;
-	$(window).on('resize.QRCodeScanner', () => {
-		clearTimeout(resizeTimeout);
+	$(window).on('orientationchange', function(event) {
+		if ($('.ModeAccessCode').length) return;
 
-		resizeTimeout = setTimeout(function() {
-			$('#qrreader video').width(`${window.innerWidth}px`);
-
-			/*const y = window.innerHeight / 2 - 125;
-			const x = window.innerWidth / 2 - 125;
-
-			$('#qr-shaded-region').css('borderWidth', `${y}px ${x}px`);*/
-		}, 100);
+		window.location.reload();
 	});
 };
 
