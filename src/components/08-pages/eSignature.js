@@ -31,7 +31,7 @@ SapphireWidgets.QRCodeScanner = function(options) {
 		};
 
 		const errorCallback = response => {
-			// alert(response);
+			// console.error(response);
 		};
 
 		html5QrCode
@@ -44,11 +44,28 @@ SapphireWidgets.QRCodeScanner = function(options) {
 			});
 	}
 
+	let isPortrait = window.matchMedia('(orientation: portrait)').matches;
+	let isOrientarionChanged = false;
+
 	$(window).on('orientationchange', function(event) {
-		if ($('.ModeAccessCode').length) return;
+		if ($('.ModeAccessCode').length) {
+			isOrientarionChanged = window.matchMedia('(orientation: portrait)').matches;
+			SapphireWidgets.IsOrientarionChanged = !(isPortrait ^ isOrientarionChanged);
+
+			return;
+		}
 
 		window.location.reload();
 	});
+};
+
+SapphireWidgets.OnModeChange = function() {
+	$('.ScanOverlay').removeClass('ScanOverlay--correctCode');
+	$('.ScanOverlay').removeClass('ScanOverlay--incorrectCode');
+
+	if (SapphireWidgets.IsOrientarionChanged && !$('.ModeAccessCode').length) {
+		window.location.reload();
+	}
 };
 
 SapphireWidgets.GoNextInput = function(currentInput, nextInputClass) {
