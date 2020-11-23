@@ -68,7 +68,7 @@
 	overflow: hidden;
 	padding: 0 $sapphire-sizes--large;
 	position: absolute;
-	top: 96px;
+	top: 97px;
 	transform: translateX(-50%);
 	transition: max-height 0.15s ease-in;
 	z-index: 9;
@@ -281,10 +281,11 @@
 
 	&__QRCodeInvalid {
 		background-color: $regular-red;
+		border-radius: 0 0 $border-radius-medium $border-radius-medium;
 		display: none;
 		left: 50%;
-		max-width: 260px;
-		transform: translateY(calc(-50% + 158px)) translateX(-50%);
+		max-width: 256px;
+		transform: translateY(calc(-50% + 140px)) translateX(-50%);
 	}
 
 	#qrreader {
@@ -293,28 +294,40 @@
 			object-fit: cover;
 		}
 
-		.CodeCorrect {
-			> div {
-				background-color: $regular-alpha !important;
-			}
+		#qr-shaded-region {
+			opacity: 0;
+		}
+	}
+}
+
+.ScanOverlay {
+	box-shadow: 0 0 0 9999px rgba(51, 51, 51, 0.5);
+	height: 250px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 250px;
+	z-index: 0;
+
+	&::before {
+		border-radius: $border-radius-medium;
+		box-shadow: 0 0 0 3px $regular-white;
+		content: '';
+		display: block;
+		height: 250px;
+		width: 250px;
+	}
+
+	&--correctCode {
+		&::before {
+			box-shadow: 0 0 0 3px $regular-alpha;
 		}
 	}
 
-	.ModeAccessCode + #qrreader {
-		#qr-shaded-region {
-			border-width: 100vw !important;
-
-			> div {
-				display: none !important;
-			}
-		}
-	}
-
-	.QRCodeInvalid + #qrreader {
-		#qr-shaded-region {
-			> div {
-				background-color: $regular-red !important;
-			}
+	&--incorrectCode {
+		&::before {
+			box-shadow: 0 0 0 3px $regular-red;
 		}
 	}
 }
