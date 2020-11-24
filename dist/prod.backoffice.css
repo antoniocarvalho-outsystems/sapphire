@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.100034 || Generated: Tue Nov 24 2020 16:43:56 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.100035 || Generated: Tue Nov 24 2020 16:46:26 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4265,8 +4265,8 @@ body.confirmation-opened {
       font-size: 1em;
       max-width: 15px;
       position: absolute;
-      right: 30px;
-      top: 30px; }
+      right: 16px;
+      top: 22px; }
     .modalPopup.Open .modalPopup_container {
       background-color: #fff;
       border-radius: 8px;
