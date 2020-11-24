@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100032 || Generated: Mon Nov 23 2020 17:44:27 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100033 || Generated: Tue Nov 24 2020 15:58:15 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -798,6 +798,9 @@ span.icon.icon-circle-questionmark {
 
 .icon-scales:before {
   content: '\e94f'; }
+
+.icon-sign:before {
+  content: '\e950'; }
 
 /* makes the font 33% larger relative to the icon container */
 /*Sketch Icon Sizes*/
