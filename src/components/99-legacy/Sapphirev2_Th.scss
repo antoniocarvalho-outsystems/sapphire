@@ -31635,30 +31635,30 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
 /*------------------------------------*\
         $14. Service Studio Css
 \*-------------------------------------*/
-* {
-  -servicestudio-position: relative !important;
-}
+// * {
+//   -servicestudio-position: relative !important;
+// }
 
-.divOverLayout {
-  -servicestudio-display: none !important;
-}
+// .divOverLayout {
+//   -servicestudio-display: none !important;
+// }
 
-.Panel {
-  -servicestudio-display: none !important;
-}
+// .Panel {
+//   -servicestudio-display: none !important;
+// }
 
-.Header {
-  -servicestudio-overflow: hidden;
-  -servicestudio-position: relative;
-}
+// .Header {
+//   -servicestudio-overflow: hidden;
+//   -servicestudio-position: relative;
+// }
 
-.MainContent {
-  -servicestudio-margin-top: 50px;
-}
+// .MainContent {
+//   -servicestudio-margin-top: 50px;
+// }
 
-.PatientHeader {
-  -servicestudio-display: none;
-}
+// .PatientHeader {
+//   -servicestudio-display: none;
+// }
 
 // .TableRecords_Wrapper {
 // 	-servicestudio-display: block;
@@ -31666,58 +31666,58 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
 // 	-servicestudio-width: 100% !important;
 // }
 
-.PatientDetails_Header {
-  -servicestudio-display: inline-block;
-  -servicestudio-height: 100%;
-  -servicestudio-position: relative;
-}
+// .PatientDetails_Header {
+//   -servicestudio-display: inline-block;
+//   -servicestudio-height: 100%;
+//   -servicestudio-position: relative;
+// }
 
-.Height81 {
-  -servicestudio-background-color: #fff;
-  -servicestudio-display: block;
-  -servicestudio-height: auto;
-  -servicestudio-position: relative !important;
-  -servicestudio-width: 100%;
-}
+// .Height81 {
+//   -servicestudio-background-color: #fff;
+//   -servicestudio-display: block;
+//   -servicestudio-height: auto;
+//   -servicestudio-position: relative !important;
+//   -servicestudio-width: 100%;
+// }
 
-.QueueContainer.Height81>div {
-  -servicestudio-display: inline-block !important;
-  -servicestudio-height: 100%;
-  -servicestudio-width: auto !important;
-}
+// .QueueContainer.Height81>div {
+//   -servicestudio-display: inline-block !important;
+//   -servicestudio-height: 100%;
+//   -servicestudio-width: auto !important;
+// }
 
-.SystemWideSidebar {
-  -servicestudio-bottom: 0;
-  -servicestudio-overflow: hidden !important;
-  -servicestudio-position: fixed !important;
-  -servicestudio-right: 0;
-  -servicestudio-top: 0;
-  -servicestudio-width: 40px !important;
-}
+// .SystemWideSidebar {
+//   -servicestudio-bottom: 0;
+//   -servicestudio-overflow: hidden !important;
+//   -servicestudio-position: fixed !important;
+//   -servicestudio-right: 0;
+//   -servicestudio-top: 0;
+//   -servicestudio-width: 40px !important;
+// }
 
-.SystemWideSidebar div {
-  -servicestudio-width: 40px;
-}
+// .SystemWideSidebar div {
+//   -servicestudio-width: 40px;
+// }
 
-.PatientDetails___Menu {
-  -servicestudio-width: 90% !important;
-}
+// .PatientDetails___Menu {
+//   -servicestudio-width: 90% !important;
+// }
 
-.MenuItem * {
-  -servicestudio-background-color: transparent !important;
-  -servicestudio-color: #fff !important;
-  -servicestudio-display: inline-block !important;
-  -servicestudio-position: relative !important;
-}
+// .MenuItem * {
+//   -servicestudio-background-color: transparent !important;
+//   -servicestudio-color: #fff !important;
+//   -servicestudio-display: inline-block !important;
+//   -servicestudio-position: relative !important;
+// }
 
-.SubMenuItem {
-  -servicestudio-display: none !important;
-}
+// .SubMenuItem {
+//   -servicestudio-display: none !important;
+// }
 
-.highcharts-container {
-  -servicestudio-display: inline-block !important;
-  -servicestudio-width: 100% !important;
-}
+// .highcharts-container {
+//   -servicestudio-display: inline-block !important;
+//   -servicestudio-width: 100% !important;
+// }
 
 // .CardBox {
 //     -servicestudio-background-color: #fff !important;
@@ -31751,32 +31751,32 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
 // 	-servicestudio-background-color: #fff !important;
 // }
 
-.QueueContainer {
-  -servicestudio-width: 100%;
-}
+// .QueueContainer {
+//   -servicestudio-width: 100%;
+// }
 
-.QueueInfoColumn,
-.QueueColumn,
-.QueueActions,
-.QueueCallNextDisabled {
-  -servicestudio-display: inline-block !important;
-}
+// .QueueInfoColumn,
+// .QueueColumn,
+// .QueueActions,
+// .QueueCallNextDisabled {
+//   -servicestudio-display: inline-block !important;
+// }
 
-.QueueInfoColumn {
-  -servicestudio-width: 30% !important;
-}
+// .QueueInfoColumn {
+//   -servicestudio-width: 30% !important;
+// }
 
-.QueueColumn {
-  -servicestudio-width: 30% !important;
-}
+// .QueueColumn {
+//   -servicestudio-width: 30% !important;
+// }
 
-.QueueActions {
-  -servicestudio-width: 20% !important;
-}
+// .QueueActions {
+//   -servicestudio-width: 20% !important;
+// }
 
-.QueueCallNextDisabled {
-  -servicestudio-width: 20% !important;
-}
+// .QueueCallNextDisabled {
+//   -servicestudio-width: 20% !important;
+// }
 
 // .SuperCard,
 // .Card_Container {
@@ -31784,86 +31784,86 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
 // 	-servicestudio-min-height: 100px;
 // }
 
-.ServiceStudioDisplayNone {
-  -servicestudio-display: none !important;
-}
+// .ServiceStudioDisplayNone {
+//   -servicestudio-display: none !important;
+// }
 
-.ButtonsWrapper .Button {
-  -servicestudio-display: inline-block;
-  -servicestudio-width: auto;
-}
+// .ButtonsWrapper .Button {
+//   -servicestudio-display: inline-block;
+//   -servicestudio-width: auto;
+// }
 
 // .SuperCard_Left {
 // 	-servicestudio-width: auto !important;
 // }
 
-.modalPopup {
-  -servicestudio-background-color: #fff;
-  -servicestudio-border: 2px solid #aaa;
-  -servicestudio-border-radius: 5px;
-  -servicestudio-box-shadow: 5px 5px 10px 3px #ccc;
-  -servicestudio-height: auto !important;
-  -servicestudio-margin: 20px 10px;
-  -servicestudio-padding: 20px;
-}
+// .modalPopup {
+//   -servicestudio-background-color: #fff;
+//   -servicestudio-border: 2px solid #aaa;
+//   -servicestudio-border-radius: 5px;
+//   -servicestudio-box-shadow: 5px 5px 10px 3px #ccc;
+//   -servicestudio-height: auto !important;
+//   -servicestudio-margin: 20px 10px;
+//   -servicestudio-padding: 20px;
+// }
 
-.modalPopup_container {
-  -servicestudio-display: block;
-  -servicestudio-height: auto !important;
-  -servicestudio-height: 100px !important;
-  -servicestudio-left: auto;
-  -servicestudio-top: auto;
-  -servicestudio-z-index: 0;
-}
+// .modalPopup_container {
+//   -servicestudio-display: block;
+//   -servicestudio-height: auto !important;
+//   -servicestudio-height: 100px !important;
+//   -servicestudio-left: auto;
+//   -servicestudio-top: auto;
+//   -servicestudio-z-index: 0;
+// }
 
-.modalPopup_close {
-  -servicestudio-display: block !important;
-}
+// .modalPopup_close {
+//   -servicestudio-display: block !important;
+// }
 
-.modalPopup.Open .modalPopup_title {
-  -servicestudio-height: auto !important;
-}
+// .modalPopup.Open .modalPopup_title {
+//   -servicestudio-height: auto !important;
+// }
 
-.modalPopup_content {
-  -servicestudio-height: auto !important;
-}
+// .modalPopup_content {
+//   -servicestudio-height: auto !important;
+// }
 
-.modalPopup_actions {
-  -servicestudio-max-height: 100px !important;
-}
+// .modalPopup_actions {
+//   -servicestudio-max-height: 100px !important;
+// }
 
-.modalPopup_div {
-  -servicestudio-display: none;
-}
+// .modalPopup_div {
+//   -servicestudio-display: none;
+// }
 
-.FilterAll {
-  -servicestudio-padding-left: 10px;
-  -servicestudio-padding-right: 10px;
-  -servicestudio-padding-top: 20px;
-}
+// .FilterAll {
+//   -servicestudio-padding-left: 10px;
+//   -servicestudio-padding-right: 10px;
+//   -servicestudio-padding-top: 20px;
+// }
 
-.operationsAll,
-.ListAllOperations {
-  -servicestudio-padding-top: 20px;
-}
+// .operationsAll,
+// .ListAllOperations {
+//   -servicestudio-padding-top: 20px;
+// }
 
 .tablet .ListAllOperations .NoWrap,
 .phone .ListAllOperations .NoWrap {
   white-space: initial;
 }
 
-.modalPopup .modalPopup_content {
-  -servicestudio--webkit-transform: translateY(-50%) !important;
-  -servicestudio-display: block !important;
-  -servicestudio-left: auto !important;
-  -servicestudio-left: auto !important;
-  -servicestudio-position: relative !important;
-  -servicestudio-top: auto !important;
-  -servicestudio-top: auto !important;
-  -servicestudio-transform: translateX(-50%) !important;
-  -servicestudio-width: auto !important;
-  -servicestudio-z-index: 0 !important;
-}
+// .modalPopup .modalPopup_content {
+//   -servicestudio--webkit-transform: translateY(-50%) !important;
+//   -servicestudio-display: block !important;
+//   -servicestudio-left: auto !important;
+//   -servicestudio-left: auto !important;
+//   -servicestudio-position: relative !important;
+//   -servicestudio-top: auto !important;
+//   -servicestudio-top: auto !important;
+//   -servicestudio-transform: translateX(-50%) !important;
+//   -servicestudio-width: auto !important;
+//   -servicestudio-z-index: 0 !important;
+// }
 
 // .CardBox {
 //     -servicestudio-min-height: 100% !important;
