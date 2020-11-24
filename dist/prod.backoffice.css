@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.100033 || Generated: Tue Nov 24 2020 15:58:15 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.100034 || Generated: Tue Nov 24 2020 16:43:56 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4283,8 +4283,8 @@ body.confirmation-opened {
     .modalPopup.Open .modalPopup_title {
       color: #333333;
       font-family: "LatoBold";
-      font-size: 25px;
-      margin-bottom: 20px;
+      font-size: 1.429em;
+      margin-bottom: 16px;
       text-align: center; }
       .modalPopup.Open .modalPopup_title:empty {
         content: '\00a0'; }

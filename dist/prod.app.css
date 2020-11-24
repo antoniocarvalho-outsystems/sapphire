@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100033 || Generated: Tue Nov 24 2020 15:58:15 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100034 || Generated: Tue Nov 24 2020 16:43:56 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19907,8 +19907,8 @@ body.confirmation-opened {
     .modalPopup.Open .modalPopup_title {
       color: #333333;
       font-family: "LatoBold";
-      font-size: 25px;
-      margin-bottom: 20px;
+      font-size: 1.429em;
+      margin-bottom: 16px;
       text-align: center; }
       .modalPopup.Open .modalPopup_title:empty {
         content: '\00a0'; }
@@ -41906,153 +41906,9 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
 /*------------------------------------*\
         $14. Service Studio Css
 \*-------------------------------------*/
-* {
-  -servicestudio-position: relative !important; }
-
-.divOverLayout {
-  -servicestudio-display: none !important; }
-
-.Panel {
-  -servicestudio-display: none !important; }
-
-.Header {
-  -servicestudio-overflow: hidden;
-  -servicestudio-position: relative; }
-
-.MainContent {
-  -servicestudio-margin-top: 50px; }
-
-.PatientHeader {
-  -servicestudio-display: none; }
-
-.PatientDetails_Header {
-  -servicestudio-display: inline-block;
-  -servicestudio-height: 100%;
-  -servicestudio-position: relative; }
-
-.Height81 {
-  -servicestudio-background-color: #fff;
-  -servicestudio-display: block;
-  -servicestudio-height: auto;
-  -servicestudio-position: relative !important;
-  -servicestudio-width: 100%; }
-
-.QueueContainer.Height81 > div {
-  -servicestudio-display: inline-block !important;
-  -servicestudio-height: 100%;
-  -servicestudio-width: auto !important; }
-
-.SystemWideSidebar {
-  -servicestudio-bottom: 0;
-  -servicestudio-overflow: hidden !important;
-  -servicestudio-position: fixed !important;
-  -servicestudio-right: 0;
-  -servicestudio-top: 0;
-  -servicestudio-width: 40px !important; }
-
-.SystemWideSidebar div {
-  -servicestudio-width: 40px; }
-
-.PatientDetails___Menu {
-  -servicestudio-width: 90% !important; }
-
-.MenuItem * {
-  -servicestudio-background-color: transparent !important;
-  -servicestudio-color: #fff !important;
-  -servicestudio-display: inline-block !important;
-  -servicestudio-position: relative !important; }
-
-.SubMenuItem {
-  -servicestudio-display: none !important; }
-
-.highcharts-container {
-  -servicestudio-display: inline-block !important;
-  -servicestudio-width: 100% !important; }
-
-.QueueContainer {
-  -servicestudio-width: 100%; }
-
-.QueueInfoColumn,
-.QueueColumn,
-.QueueActions,
-.QueueCallNextDisabled {
-  -servicestudio-display: inline-block !important; }
-
-.QueueInfoColumn {
-  -servicestudio-width: 30% !important; }
-
-.QueueColumn {
-  -servicestudio-width: 30% !important; }
-
-.QueueActions {
-  -servicestudio-width: 20% !important; }
-
-.QueueCallNextDisabled {
-  -servicestudio-width: 20% !important; }
-
-.ServiceStudioDisplayNone {
-  -servicestudio-display: none !important; }
-
-.ButtonsWrapper .Button {
-  -servicestudio-display: inline-block;
-  -servicestudio-width: auto; }
-
-.modalPopup {
-  -servicestudio-background-color: #fff;
-  -servicestudio-border: 2px solid #aaa;
-  -servicestudio-border-radius: 5px;
-  -servicestudio-box-shadow: 5px 5px 10px 3px #ccc;
-  -servicestudio-height: auto !important;
-  -servicestudio-margin: 20px 10px;
-  -servicestudio-padding: 20px; }
-
-.modalPopup_container {
-  -servicestudio-display: block;
-  -servicestudio-height: auto !important;
-  -servicestudio-height: 100px !important;
-  -servicestudio-left: auto;
-  -servicestudio-top: auto;
-  -servicestudio-z-index: 0; }
-
-.modalPopup_close {
-  -servicestudio-display: block !important; }
-
-.modalPopup.Open .modalPopup_title {
-  -servicestudio-height: auto !important; }
-
-.modalPopup_content {
-  -servicestudio-height: auto !important; }
-
-.modalPopup_actions {
-  -servicestudio-max-height: 100px !important; }
-
-.modalPopup_div {
-  -servicestudio-display: none; }
-
-.FilterAll {
-  -servicestudio-padding-left: 10px;
-  -servicestudio-padding-right: 10px;
-  -servicestudio-padding-top: 20px; }
-
-.operationsAll,
-.ListAllOperations {
-  -servicestudio-padding-top: 20px; }
-
 .tablet .ListAllOperations .NoWrap,
 .phone .ListAllOperations .NoWrap {
   white-space: initial; }
-
-.modalPopup .modalPopup_content {
-  -servicestudio--webkit-transform: translateY(-50%) !important;
-  -servicestudio-display: block !important;
-  -servicestudio-left: auto !important;
-  -servicestudio-left: auto !important;
-  -servicestudio-position: relative !important;
-  -servicestudio-top: auto !important;
-  -servicestudio-top: auto !important;
-  -servicestudio-transform: translateX(-50%) !important;
-  -servicestudio-width: auto !important;
-  -servicestudio-z-index: 0 !important; }
 
 .QueueContainer {
   -servicestudio-display: block !important;
