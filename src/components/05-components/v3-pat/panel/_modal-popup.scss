@@ -48,8 +48,8 @@
 		.modalPopup_title {
 			color: $dark-grey;
 			font-family: $font-family-latin-bold;
-			font-size: 25px;
-			margin-bottom: 20px;
+			font-size: $font-size-heading2;
+			margin-bottom: $sapphire-sizes--medium;
 			text-align: center;
 
 			&:empty {
