@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.100035 || Generated: Tue Nov 24 2020 16:46:26 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.100036 || Generated: Wed Nov 25 2020 14:00:17 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -27811,6 +27811,11 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .control-read-only {
   font-family: "LatoBold";
   font-weight: 400; }
+
+.AR .InputPhone,
+.FA .InputPhone {
+  direction: ltr;
+  text-align: end; }
 
 .Flex, .FlexCenterFull, .FlexCenterVertical, .FlexCenterHorizontal, .FlexSpaceAround, .FlexSpaceBetween, .FlexSpaceEvenly, .FlexStart, .FlexEnd {
   display: -webkit-box;
