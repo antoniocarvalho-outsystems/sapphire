@@ -35,7 +35,7 @@ SapphireWidgets.QRCodeScanner = function(options) {
 		};
 
 		html5QrCode
-			.start(cameraID, config, successCallback, errorCallback)
+			.start({ facingMode: 'environment' }, config, successCallback, errorCallback)
 			.then(() => {
 				setTimeout(() => $('.LayoutScanCode__Splash').fadeOut(500), 500);
 			})

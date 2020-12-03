@@ -11,7 +11,7 @@
 		}
 
 		onInit() {
-			this.$input.on('keyup', () => {
+			this.$input.on('keyup', e => {
 				if (this.$input.val() !== '') this.$clear.show();
 				else this.$clear.show();
 			});

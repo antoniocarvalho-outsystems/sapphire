@@ -67,7 +67,8 @@
 			});
 
 			this.$menuItem.on('click', event => {
-				if (event.target !== event.currentTarget) return;
+				const isIcon = event.target.className === 'icon icon-changedown';
+				if (event.target !== event.currentTarget && !isIcon) return;
 
 				const $target = $(event.currentTarget).parent();
 				const $subItems = $target.find('.MenuItem_subItems');
