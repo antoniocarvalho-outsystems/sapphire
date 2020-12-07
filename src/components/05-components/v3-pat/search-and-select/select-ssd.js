@@ -122,6 +122,8 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 				SearchSelectDefine.SSDSearch.returnToSearch($SSDselectId.closest('.SearchSD'));
 				SearchSelectDefine.SSDSearch.closeSSD($SSDselectId.closest('.SearchSD'));
 			}
+
+			$ComponentSSDinput.val('');
 		});
 
 		$SSDselectId.find('.SelectSD_actionLink').on('click', function(e) {
