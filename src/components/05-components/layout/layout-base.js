@@ -35,7 +35,7 @@
 					const offsetTop = headerHeight + primaryHeight + secondaryHeight + emergencyHeight;
 
 					if (isEmergency & !isFixed) {
-						targetElementOffsetTop -= offsetTop + 44;
+						targetElementOffsetTop -= offsetTop + 60;
 					} else {
 						if (targetElementOffsetTop - offsetTop > 40) targetElementOffsetTop -= offsetTop;
 						else targetElementOffsetTop -= offsetTop - 44;
