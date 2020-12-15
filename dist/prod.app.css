@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.102001 || Generated: Tue Dec 15 2020 13:08:02 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.102002 || Generated: Tue Dec 15 2020 16:54:58 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12507,6 +12507,7 @@ div.ActionsMenu-item {
 .PatientHeaderActions_menuItem {
   background-color: #f3f3f3;
   border-radius: 2px;
+  cursor: pointer;
   font-size: 15px;
   min-height: 47px;
   padding: 0 8px;
