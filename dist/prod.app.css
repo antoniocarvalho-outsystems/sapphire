@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.103001 || Generated: Wed Jan 06 2021 09:19:08 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.103002 || Generated: Wed Jan 06 2021 17:33:16 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22297,7 +22297,8 @@ div.List-Star {
     margin: 10px;
     width: 100% !important; }
   .ScaleList_scaleContent .ButtonGroupScale {
-    padding: 12px; }
+    padding: 12px;
+    width: 155px; }
     .ScaleList_scaleContent .ButtonGroupScale .ButtonGroup_button {
       min-width: 40px; }
   .ScaleList_inputValue {
