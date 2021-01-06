@@ -6,7 +6,7 @@
 	width: 8%;
 
 	&.ScaleImg {
-		width: 10%;
+		width: 12%;
 	}
 
 	&_wrapper {
@@ -85,5 +85,11 @@
 
 	&_image img {
 		height: 94px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.RulerScale.ScaleImg {
+		width: 15%;
 	}
 }
