@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.102002 || Generated: Tue Dec 15 2020 16:54:58 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.103001 || Generated: Wed Jan 06 2021 09:19:08 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22058,7 +22058,7 @@ div.List-Star {
   text-align: center;
   width: 8%; }
   .RulerScale.ScaleImg {
-    width: 10%; }
+    width: 12%; }
   .RulerScale_wrapper {
     position: relative; }
   .RulerScale_line {
@@ -22114,6 +22114,10 @@ div.List-Star {
       display: none; }
   .RulerScale_image img {
     height: 94px; }
+
+@media screen and (max-width: 850px) {
+  .RulerScale.ScaleImg {
+    width: 15%; } }
 
 .ScaleCard {
   -webkit-box-align: center;
