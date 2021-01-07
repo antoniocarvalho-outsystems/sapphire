@@ -15,7 +15,7 @@
 			this.$component = $(`#${this.options.widgetId}`);
 			this.$header = this.$component.find('.CollapsibleSidePanel__Header');
 
-			this.$header.on('click', () => this.openCloseMenu(true));
+			this.$header.on('click', () => this.openCloseSidePanel(true));
 		}
 	}
 
