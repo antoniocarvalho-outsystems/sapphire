@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.103002 || Generated: Wed Jan 06 2021 17:33:16 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.103003 || Generated: Thu Jan 07 2021 17:37:23 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14214,6 +14214,41 @@ div.CircledArrow {
     height: auto;
     -webkit-box-pack: justify;
             justify-content: space-between; } }
+
+.CollapsibleSidePanel__Header {
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 100px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  height: 40px;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 8px 16px; }
+  .CollapsibleSidePanel__Header .icon {
+    color: #777777; }
+
+.CollapsibleSidePanel__Title {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  gap: 8px; }
+  .CollapsibleSidePanel__Title .Counter {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #ffa000;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.786em;
+    height: 20px;
+    line-height: 0.786em;
+    width: 20px; }
 
 .sp-replacer {
   background-color: #fff;
