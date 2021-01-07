@@ -1,0 +1,37 @@
+.CollapsibleSidePanel {
+	&__Header {
+		align-items: center;
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 100px;
+		cursor: pointer;
+		display: flex;
+		height: 40px;
+		justify-content: space-between;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+
+		.icon {
+			color: $regular-grey;
+		}
+	}
+
+	&__Title {
+		display: inline-flex;
+		gap: $sapphire-sizes--small;
+
+		.Counter {
+			@include flex-center-total(inline-flex);
+
+			background-color: $regular-orange;
+			border-radius: 50%;
+			color: $regular-white;
+			font-size: $font-size-tiny;
+			height: 20px;
+			line-height: $font-size-tiny;
+			width: 20px;
+		}
+	}
+
+	&__Content {
+	}
+}
