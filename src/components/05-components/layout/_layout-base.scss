@@ -456,7 +456,6 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 				align-items: stretch;
 				background-color: $body-color;
 				display: flex;
-				padding-left: $sapphire-sizes--medium;
 				width: 100%;
 			}
 
@@ -517,11 +516,6 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 .AR,
 .FA {
-	&.LayoutBase.Page .ClinicianWorkArea-columns {
-		padding-left: 0;
-		padding-right: $sapphire-sizes--medium;
-	}
-
 	&.LayoutBase.Page .ClinicianWorkArea-columns-big {
 	}
 

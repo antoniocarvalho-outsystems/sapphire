@@ -1,11 +1,25 @@
 .CollapsibleSidePanel {
+	position: relative;
+
+	&--open & {
+		&__Content {
+			visibility: visible;
+			width: calc(100% + #{$sapphire-sizes--medium} * 2);
+			z-index: 1;
+
+			* {
+				opacity: 1;
+			}
+		}
+	}
+
 	&__Header {
-		align-items: center;
+		@include flex-center-vertically;
+
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
 		border-radius: 100px;
 		cursor: pointer;
-		display: flex;
 		height: 40px;
 		justify-content: space-between;
 		padding: $sapphire-sizes--small $sapphire-sizes--medium;
@@ -15,7 +29,8 @@
 		}
 	}
 
-	&__Title {
+	&__Title,
+	&__PanelTitle {
 		display: inline-flex;
 		gap: $sapphire-sizes--small;
 
@@ -32,6 +47,71 @@
 		}
 	}
 
+	&__PanelHeader {
+		@include flex-center-vertically;
+
+		border-bottom: 1px solid $light-grey;
+		justify-content: space-between;
+		padding: $sapphire-sizes--medium;
+
+		.icon {
+			cursor: pointer;
+		}
+	}
+
+	&__PanelTitle {
+		align-items: center;
+		gap: $sapphire-sizes--medium;
+	}
+
 	&__Content {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		height: auto;
+		margin: -$sapphire-sizes--medium;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: all 0.4s ease;
+		visibility: hidden;
+		width: 0;
+
+		* {
+			opacity: 0;
+			transition: all 0.5s ease;
+		}
+
+		.PersonCard {
+			.PersonCard_header {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+
+			.PersonCard__headerLeftInfo {
+				max-width: 48px !important;
+			}
+
+			.PersonCard_expandable {
+				background-color: $body-color;
+				padding: $sapphire-sizes--medium;
+
+				.ListRecords > div:not(:last-child) {
+					&::after {
+						background-color: $light-grey;
+						content: '';
+						display: block;
+						height: 1px;
+						margin: $sapphire-sizes--small 0;
+					}
+				}
+			}
+
+			.PersonCardIcon {
+				color: $regular-grey;
+				font-size: $font-size-small;
+				height: 32px;
+				width: 32px;
+			}
+		}
 	}
 }
