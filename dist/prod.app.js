@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.103004 || Generated: Thu Jan 07 2021 17:38:56 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.1.103005 || Generated: Fri Jan 08 2021 17:17:19 GMT+0000 (Western European Standard Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -204,7 +204,7 @@ eval("/* Component CardPatientTable */\r\n(function($, window, SapphireWidgets) 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component CollapsibleSidePanel */\r\n(function($, window, SapphireWidgets) {\r\n\tclass CollapsibleSidePanel {\r\n\t\tconstructor(config) {\r\n\t\t\tthis.options = {\r\n\t\t\t\t...config,\r\n\t\t\t};\r\n\r\n\t\t\tthis.onComponentInit();\r\n\t\t}\r\n\r\n\t\topenCloseSidePanel(toOpen) {}\r\n\r\n\t\tonComponentInit() {\r\n\t\t\tthis.$component = $(`#${this.options.widgetId}`);\r\n\t\t\tthis.$header = this.$component.find('.CollapsibleSidePanel__Header');\r\n\r\n\t\t\tthis.$header.on('click', () => this.openCloseSidePanel(true));\r\n\t\t}\r\n\t}\r\n\r\n\tconst create = config => (window[config.widgetId] = new CollapsibleSidePanel(config));\r\n\r\n\tSapphireWidgets.CollapsibleSidePanel = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js?");
+eval("/* Component CollapsibleSidePanel */\r\n(function($, window, SapphireWidgets) {\r\n\tclass CollapsibleSidePanel {\r\n\t\tconstructor(config) {\r\n\t\t\tthis.options = {\r\n\t\t\t\t...config,\r\n\t\t\t};\r\n\r\n\t\t\tthis.onComponentInit();\r\n\t\t}\r\n\r\n\t\topenCloseSidePanel(toOpen) {\r\n\t\t\tif (toOpen) {\r\n\t\t\t\tconst $clinicianAside = $('.ClinicianWorkArea-columns-small');\r\n\r\n\t\t\t\tif ($clinicianAside.length) this.$content.height($clinicianAside.outerHeight());\r\n\r\n\t\t\t\tthis.$component.addClass('CollapsibleSidePanel--open');\r\n\t\t\t} else {\r\n\t\t\t\tthis.$component.removeClass('CollapsibleSidePanel--open');\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\tonComponentInit() {\r\n\t\t\tthis.$component = $(`#${this.options.widgetId}`);\r\n\t\t\tthis.$header = this.$component.find('.CollapsibleSidePanel__Header');\r\n\t\t\tthis.$content = this.$component.find('.CollapsibleSidePanel__Content');\r\n\t\t\tthis.$close = this.$component.find('.CollapsibleSidePanel__PanelHeader .icon');\r\n\r\n\t\t\tthis.$header.on('click', () => this.openCloseSidePanel(true));\r\n\t\t\tthis.$close.on('click', () => this.openCloseSidePanel(false));\r\n\t\t}\r\n\t}\r\n\r\n\tconst create = config => (window[config.widgetId] = new CollapsibleSidePanel(config));\r\n\r\n\tSapphireWidgets.CollapsibleSidePanel = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js?");
 
 /***/ }),
 

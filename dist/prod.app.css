@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.103004 || Generated: Thu Jan 07 2021 17:38:56 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.103005 || Generated: Fri Jan 08 2021 17:17:19 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11114,7 +11114,6 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   background-color: #f3f3f3;
   display: -webkit-box;
   display: flex;
-  padding-left: 16px;
   width: 100%; }
 
 .LayoutBase.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns {
@@ -11158,11 +11157,6 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 .LayoutBase .select2-container--open .select2-dropdown--below {
   z-index: 101; }
-
-.AR.LayoutBase.Page .ClinicianWorkArea-columns,
-.FA.LayoutBase.Page .ClinicianWorkArea-columns {
-  padding-left: 0;
-  padding-right: 16px; }
 
 .tablet .LayoutBase-padding {
   padding: 32px 16px;
@@ -14215,40 +14209,97 @@ div.CircledArrow {
     -webkit-box-pack: justify;
             justify-content: space-between; } }
 
-.CollapsibleSidePanel__Header {
-  -webkit-box-align: center;
-          align-items: center;
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-radius: 100px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: flex;
-  height: 40px;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  padding: 8px 16px; }
-  .CollapsibleSidePanel__Header .icon {
-    color: #777777; }
-
-.CollapsibleSidePanel__Title {
-  display: -webkit-inline-box;
-  display: inline-flex;
-  gap: 8px; }
-  .CollapsibleSidePanel__Title .Counter {
+.CollapsibleSidePanel {
+  position: relative; }
+  .CollapsibleSidePanel--open .CollapsibleSidePanel__Content {
+    visibility: visible;
+    width: calc(100% + 16px * 2);
+    z-index: 1; }
+    .CollapsibleSidePanel--open .CollapsibleSidePanel__Content * {
+      opacity: 1; }
+  .CollapsibleSidePanel__Header {
     -webkit-box-align: center;
             align-items: center;
+    display: -webkit-box;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 100px;
+    cursor: pointer;
+    height: 40px;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 8px 16px; }
+    .CollapsibleSidePanel__Header .icon {
+      color: #777777; }
+  .CollapsibleSidePanel__Title, .CollapsibleSidePanel__PanelTitle {
     display: -webkit-inline-box;
     display: inline-flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    background-color: #ffa000;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 0.786em;
-    height: 20px;
-    line-height: 0.786em;
-    width: 20px; }
+    gap: 8px; }
+    .CollapsibleSidePanel__Title .Counter, .CollapsibleSidePanel__PanelTitle .Counter {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      background-color: #ffa000;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 0.786em;
+      height: 20px;
+      line-height: 0.786em;
+      width: 20px; }
+  .CollapsibleSidePanel__PanelHeader {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    border-bottom: 1px solid #d6d6d6;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 16px; }
+    .CollapsibleSidePanel__PanelHeader .icon {
+      cursor: pointer; }
+  .CollapsibleSidePanel__PanelTitle {
+    -webkit-box-align: center;
+            align-items: center;
+    gap: 16px; }
+  .CollapsibleSidePanel__Content {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    height: auto;
+    margin: -16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    visibility: hidden;
+    width: 0; }
+    .CollapsibleSidePanel__Content * {
+      opacity: 0;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    .CollapsibleSidePanel__Content .PersonCard .PersonCard_header {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; }
+    .CollapsibleSidePanel__Content .PersonCard .PersonCard__headerLeftInfo {
+      max-width: 48px !important; }
+    .CollapsibleSidePanel__Content .PersonCard .PersonCard_expandable {
+      background-color: #f3f3f3;
+      padding: 16px; }
+      .CollapsibleSidePanel__Content .PersonCard .PersonCard_expandable .ListRecords > div:not(:last-child)::after {
+        background-color: #d6d6d6;
+        content: '';
+        display: block;
+        height: 1px;
+        margin: 8px 0; }
+    .CollapsibleSidePanel__Content .PersonCard .PersonCardIcon {
+      color: #777777;
+      font-size: 0.857em;
+      height: 32px;
+      width: 32px; }
 
 .sp-replacer {
   background-color: #fff;
