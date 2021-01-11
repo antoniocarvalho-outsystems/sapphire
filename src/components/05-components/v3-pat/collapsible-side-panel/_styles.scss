@@ -32,6 +32,12 @@
 		.icon {
 			color: $regular-grey;
 		}
+
+		.AR & {
+			.icon {
+				transform: rotate(180deg);
+			}
+		}
 	}
 
 	&__Title,
@@ -80,10 +86,11 @@
 		transition: all 0.4s ease;
 		visibility: hidden;
 		width: 0;
+		z-index: 1;
 
 		* {
 			opacity: 0;
-			transition: all 0.5s ease;
+			transition: all 0.3s ease;
 		}
 
 		.PersonCard {
@@ -117,6 +124,30 @@
 				height: 32px;
 				width: 32px;
 			}
+		}
+
+		.SectionExpandableInside {
+			border: 1px solid $light-grey;
+			border-radius: $sapphire-sizes--medium;
+			margin-bottom: $sapphire-sizes--medium;
+
+			.SectionExpandableInside_header {
+				padding: $sapphire-sizes--medium $sapphire-sizes--small;
+
+				.HeaderIcon span.icon {
+					border-bottom-color: $dark-grey;
+				}
+			}
+
+			.SectionExpandableInside_content {
+				background-color: $body-color;
+				border-bottom: none !important;
+			}
+		}
+
+		.AR & {
+			left: $sapphire-sizes--medium;
+			right: unset;
 		}
 	}
 }

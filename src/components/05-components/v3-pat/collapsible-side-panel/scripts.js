@@ -14,21 +14,18 @@
 
 			if (toOpen) {
 				if ($clinicianAside.length) {
-					this.$component.addClass('CollapsibleSidePanel--fixedMode');
+					//this.$component.addClass('CollapsibleSidePanel--clinicianMode');
 
 					this.$content.height('98vh');
-					//this.$content.width($clinicianAside.outerWidth());
 				}
 
 				this.$component.addClass('CollapsibleSidePanel--open');
 			} else {
 				this.$component.removeClass('CollapsibleSidePanel--open');
 
-				if ($clinicianAside.length) {
-					this.$component.removeClass('CollapsibleSidePanel--fixedMode');
-
-					//this.$content.width(0);
-				}
+				/*if ($clinicianAside.length) {
+					this.$component.removeClass('CollapsibleSidePanel--clinicianMode');
+				}*/
 			}
 		}
 
