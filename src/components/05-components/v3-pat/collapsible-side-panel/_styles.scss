@@ -1,10 +1,8 @@
 .CollapsibleSidePanel {
-	position: relative;
-
 	&--open & {
 		&__Content {
 			visibility: visible;
-			width: calc(100% + #{$sapphire-sizes--medium} * 2);
+			width: 100%;
 			z-index: 1;
 
 			* {
@@ -12,6 +10,13 @@
 			}
 		}
 	}
+
+	// &--fixedMode & {
+	// 	&__Content {
+	// 		position: fixed;
+	// 		right: 56px;
+	// 	}
+	// }
 
 	&__Header {
 		@include flex-center-vertically;
@@ -70,8 +75,8 @@
 		height: auto;
 		margin: -$sapphire-sizes--medium;
 		position: absolute;
-		right: 0;
-		top: 0;
+		right: $sapphire-sizes--medium;
+		top: $sapphire-sizes--medium;
 		transition: all 0.4s ease;
 		visibility: hidden;
 		width: 0;

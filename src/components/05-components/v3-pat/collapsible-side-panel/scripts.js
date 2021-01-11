@@ -10,14 +10,25 @@
 		}
 
 		openCloseSidePanel(toOpen) {
-			if (toOpen) {
-				const $clinicianAside = $('.ClinicianWorkArea-columns-small');
+			const $clinicianAside = $('.ClinicianWorkArea-columns-small');
 
-				if ($clinicianAside.length) this.$content.height($clinicianAside.outerHeight());
+			if (toOpen) {
+				if ($clinicianAside.length) {
+					this.$component.addClass('CollapsibleSidePanel--fixedMode');
+
+					this.$content.height('98vh');
+					//this.$content.width($clinicianAside.outerWidth());
+				}
 
 				this.$component.addClass('CollapsibleSidePanel--open');
 			} else {
 				this.$component.removeClass('CollapsibleSidePanel--open');
+
+				if ($clinicianAside.length) {
+					this.$component.removeClass('CollapsibleSidePanel--fixedMode');
+
+					//this.$content.width(0);
+				}
 			}
 		}
 
