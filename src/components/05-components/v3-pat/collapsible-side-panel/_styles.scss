@@ -48,7 +48,6 @@
 		.Counter {
 			@include flex-center-total(inline-flex);
 
-			background-color: $regular-orange;
 			border-radius: 50%;
 			color: $regular-white;
 			font-size: $font-size-tiny;
@@ -73,6 +72,10 @@
 	&__PanelTitle {
 		align-items: center;
 		gap: $sapphire-sizes--medium;
+	}
+
+	&__PanelContent {
+		padding: $sapphire-sizes--medium;
 	}
 
 	&__Content {
@@ -130,6 +133,7 @@
 			border: 1px solid $light-grey;
 			border-radius: $sapphire-sizes--medium;
 			margin-bottom: $sapphire-sizes--medium;
+			overflow: hidden;
 
 			.SectionExpandableInside_header {
 				padding: $sapphire-sizes--medium $sapphire-sizes--small;
@@ -142,6 +146,34 @@
 			.SectionExpandableInside_content {
 				background-color: $body-color;
 				border-bottom: none !important;
+				padding: $sapphire-sizes--medium;
+
+				.TimelineDetail {
+					display: flex;
+					gap: $sapphire-sizes--medium;
+					padding: 0;
+				}
+
+				.TimelineDetail_leftContent {
+					margin: unset;
+					min-width: 26px;
+					padding: unset;
+					padding-top: 3px;
+				}
+
+				.TimelineDetail_rightContent {
+					padding: unset;
+				}
+
+				.ListRecords > *:not(:last-child) {
+					display: block;
+					margin-bottom: $sapphire-sizes--medium;
+				}
+			}
+
+			.PlaceHolderActions > div {
+				margin-left: unset !important;
+				padding: unset;
 			}
 		}
 

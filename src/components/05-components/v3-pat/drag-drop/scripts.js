@@ -35,6 +35,8 @@
 	};
 
 	DragDropArea.prototype.setupDraggable = function() {
+		var _this = this;
+
 		this.$area.find('.DragDrop-draggable').draggable({
 			disabled: this.config.disabled,
 			containment: this.$area,
@@ -44,7 +46,21 @@
 			revert: 'invalid',
 			revertDuration: 0,
 			connectToSortable: '.DragDrop-droppable',
-			stop: function(event, ui) {},
+			stop: function(event, ui) {
+				if (ui.helper.hasClass('ui-draggable-dragging')) {
+					const $target = _this.$area.find('.ui-droppable.ui-sortable');
+
+					if (_this.skin === 'Teams') {
+						$(ui.helper).hide();
+						OsNotifyWidget($target.data('fakenotify'), ui.helper.data('itemtype') + '|' + ui.helper.data('itemid'));
+					} else {
+						OsNotifyWidget(
+							$target.data('fakenotify'),
+							_this.$area.find('.DragDrop-draggable-placeholder').index() + '|' + ui.helper.data('itemid')
+						);
+					}
+				}
+			},
 		});
 	};
 
