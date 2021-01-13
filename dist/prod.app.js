@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.103008 || Generated: Tue Jan 12 2021 16:45:24 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.1.103009 || Generated: Wed Jan 13 2021 17:04:51 GMT+0000 (Western European Standard Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -303,7 +303,7 @@ eval("/* Component ExpandableGroup */\r\n(function($, window, document, Sapphire
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component ExpandableLink */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = widgetID => {\r\n\t\tconst $elementWrapper = $(`#${widgetID}`);\r\n\r\n\t\tif ($elementWrapper.parent('.ExpandableList').hasClass('HideWhenEmpty')) {\r\n\t\t\tconst text = $elementWrapper.find('.ExpandableLink__Content').text();\r\n\r\n\t\t\tif (text.length === 0) $elementWrapper.parent('.ExpandableList').hide();\r\n\t\t}\r\n\r\n\t\tbindEvents(widgetID);\r\n\t};\r\n\r\n\tconst bindEvents = widgetID => {\r\n\t\t$(`#${widgetID} .ExpandableLink__Header`).click(() => openClose(`#${widgetID}`));\r\n\t};\r\n\r\n\tconst openClose = elementID => $(elementID).toggleClass('ExpandableLink--expanded');\r\n\r\n\tSapphireWidgets.ExpandableLink = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/expandable-link/scripts.js?");
+eval("/* Component ExpandableLink */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = widgetID => {\r\n\t\tconst $elementWrapper = $(`#${widgetID}`);\r\n\r\n\t\tif ($elementWrapper.parent('.ExpandableList').hasClass('HideWhenEmpty')) {\r\n\t\t\tconst text = $elementWrapper.find('.ExpandableLink__Content').text();\r\n\r\n\t\t\tif (text.length === 0) $elementWrapper.parent('.ExpandableList').hide();\r\n\t\t}\r\n\r\n\t\tbindEvents(widgetID);\r\n\t};\r\n\r\n\tconst bindEvents = widgetID => {\r\n\t\t$(`#${widgetID} .ExpandableLink__Header`).click(() => openClose(`#${widgetID}`));\r\n\t};\r\n\r\n\tconst openClose = elementID => {\r\n\t\t$(elementID).toggleClass('ExpandableLink--expanded');\r\n\r\n\t\tif (SapphireWidgets.ResizeParentIframe) {\r\n\t\t\tSapphireWidgets.ResizeParentIframe.resize();\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.ExpandableLink = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/expandable-link/scripts.js?");
 
 /***/ }),
 

@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.103008 || Generated: Tue Jan 12 2021 16:45:24 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.103009 || Generated: Wed Jan 13 2021 17:04:51 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16319,7 +16319,9 @@ div.CircledArrow {
   display: -webkit-box;
   display: flex;
   flex-basis: 100%;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
   .ExpandableLink--triggerRight .ExpandableLink__Link > div:last-of-type {
     flex-basis: 100%;
     margin-left: 10px; }
@@ -16365,7 +16367,7 @@ div.CircledArrow {
 .ExpandableLink__Link {
   color: #00ac94;
   font-family: "LatoBold";
-  margin-left: 15px; }
+  margin-left: 16px; }
 
 .ExpandableLink__Content {
   margin-top: 10px;
@@ -16374,10 +16376,46 @@ div.CircledArrow {
   -webkit-transition: max-height 500ms;
   transition: max-height 500ms; }
 
+.ExpandableList .ExpandableLink {
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  overflow: hidden; }
+  .ExpandableList .ExpandableLink:not(:first-of-type) {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .ExpandableList .ExpandableLink:not(:last-of-type) {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+    .ExpandableList .ExpandableLink:not(:last-of-type) .ExpandableLink__Header {
+      border-bottom: 1px solid #d6d6d6; }
+  .ExpandableList .ExpandableLink--expanded .ExpandableLink__Header {
+    border-bottom: 1px solid #d6d6d6; }
+  .ExpandableList .ExpandableLink--expanded .ExpandableLink__Content {
+    padding: 16px; }
+  .ExpandableList .ExpandableLink__Header {
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: #f3f3f3;
+    height: 40px;
+    padding: 0 16px; }
+  .ExpandableList .ExpandableLink__Link {
+    color: #777777; }
+  .ExpandableList .ExpandableLink__Icon .icon {
+    border: none;
+    font-size: 1.429em; }
+    .ExpandableList .ExpandableLink__Icon .icon:hover {
+      background-color: transparent; }
+    .ExpandableList .ExpandableLink__Icon .icon::before {
+      color: #777777; }
+  .ExpandableList .ExpandableLink__Content {
+    margin-top: 0; }
+
 .AR .ExpandableLink__Link,
 .FA .ExpandableLink__Link {
   margin-left: 0;
-  margin-right: 15px; }
+  margin-right: 16px; }
 
 .ExpandableServerSide {
   background-color: #fff;
