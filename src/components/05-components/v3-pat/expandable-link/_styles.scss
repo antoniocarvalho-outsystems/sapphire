@@ -26,6 +26,7 @@
 			display: flex;
 			flex-basis: 100%;
 			flex-wrap: nowrap;
+			transform: scale(-1, 1);
 
 			> div:last-of-type {
 				flex-basis: 100%;
@@ -55,7 +56,7 @@
 	&__Link {
 		color: $regular-beta;
 		font-family: $font-family-latin-bold;
-		margin-left: 15px;
+		margin-left: $sapphire-sizes--medium;
 	}
 
 	&__Content {
@@ -66,12 +67,76 @@
 	}
 }
 
+.ExpandableList {
+	.ExpandableLink {
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-medium;
+		overflow: hidden;
+
+		&:not(:first-of-type) {
+			border-top: none;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+
+		&:not(:last-of-type) {
+			border-bottom: none;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+
+			.ExpandableLink__Header {
+				border-bottom: 1px solid $light-grey;
+			}
+		}
+
+		&--expanded {
+			.ExpandableLink__Header {
+				border-bottom: 1px solid $light-grey;
+			}
+
+			.ExpandableLink__Content {
+				padding: $sapphire-sizes--medium;
+			}
+		}
+
+		&__Header {
+			align-items: center;
+			background-color: $body-color;
+			height: 40px;
+			padding: 0 $sapphire-sizes--medium;
+		}
+
+		&__Link {
+			color: $regular-grey;
+		}
+
+		&__Icon {
+			.icon {
+				border: none;
+				font-size: $font-size-heading2;
+
+				&:hover {
+					background-color: transparent;
+				}
+
+				&::before {
+					color: $regular-grey;
+				}
+			}
+		}
+
+		&__Content {
+			margin-top: 0;
+		}
+	}
+}
+
 .AR,
 .FA {
 	.ExpandableLink {
 		&__Link {
 			margin-left: 0;
-			margin-right: 15px;
+			margin-right: $sapphire-sizes--medium;
 		}
 	}
 }

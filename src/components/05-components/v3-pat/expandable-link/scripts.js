@@ -16,7 +16,13 @@
 		$(`#${widgetID} .ExpandableLink__Header`).click(() => openClose(`#${widgetID}`));
 	};
 
-	const openClose = elementID => $(elementID).toggleClass('ExpandableLink--expanded');
+	const openClose = elementID => {
+		$(elementID).toggleClass('ExpandableLink--expanded');
+
+		if (SapphireWidgets.ResizeParentIframe) {
+			SapphireWidgets.ResizeParentIframe.resize();
+		}
+	};
 
 	SapphireWidgets.ExpandableLink = { create };
 })(jQuery, window, SapphireWidgets);
