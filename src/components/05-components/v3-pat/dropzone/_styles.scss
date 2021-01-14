@@ -205,6 +205,45 @@
 	color: $dark-grey;
 }
 
+// Dropzone Button
+.DropZoneButtonThird {
+	display: inline-block;
+
+	.DropZoneWrapper .FileUploadDropZone {
+		@include flex-center-vertically();
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 100px;
+		font-size: 13px;
+		gap: $sapphire-sizes--small;
+		height: 30px;
+		padding: 6px 12px;
+		transition: all 0.1s ease-in-out;
+
+		&:hover {
+			background-color: $sapphire-light;
+		}
+
+		.dropzone.dz-clickable {
+			padding: 0;
+		}
+
+		.dropzone .dz-message {
+			font-size: unset;
+
+			&::before {
+				color: $dark-grey;
+				font-size: 1.1467992em;
+			}
+		}
+
+		.UploadMessageClass {
+			color: $dark-grey;
+		}
+	}
+}
+
 .AR,
 .FA {
 	// Icon + Label Styles
