@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104001 || Generated: Mon Jan 18 2021 17:38:25 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.104002 || Generated: Tue Jan 19 2021 13:16:01 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14247,12 +14247,13 @@ div.CircledArrow {
     display: inline-flex;
     -webkit-box-pack: center;
             justify-content: center;
-    border-radius: 50%;
+    border-radius: 80px;
     color: #fff;
     font-size: 0.786em;
-    height: 20px;
     line-height: 0.786em;
-    width: 20px; }
+    min-height: 20px;
+    min-width: 20px;
+    padding: 3px; }
 
 .CollapsibleSidePanel__PanelHeader {
   -webkit-box-align: center;
@@ -14315,19 +14316,34 @@ div.CircledArrow {
     border-radius: 16px;
     margin-bottom: 16px;
     overflow: hidden; }
+    .CollapsibleSidePanel__Content .SectionExpandableInside.expanded .SectionExpandableInside_content {
+      height: auto !important;
+      padding: 16px; }
     .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_header {
       padding: 16px 8px; }
       .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_header .HeaderIcon span.icon {
         border-bottom-color: #333333; }
+      .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_header .ExapandablePlaceholder .Counter {
+        border-radius: 80px;
+        font-family: "LatoBold";
+        font-size: 11px;
+        line-height: initial;
+        min-width: 20px;
+        padding: 3px;
+        width: auto; }
     .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_content {
       background-color: #f3f3f3;
       border-bottom: none !important;
-      padding: 16px; }
+      height: 0 !important;
+      -webkit-transition: unset;
+      transition: unset; }
       .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_content .TimelineDetail {
         display: -webkit-box;
         display: flex;
         gap: 16px;
         padding: 0; }
+        .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_content .TimelineDetail:not(:last-child) {
+          margin-bottom: 16px; }
       .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_content .TimelineDetail_leftContent {
         margin: unset;
         min-width: 26px;
@@ -14335,9 +14351,6 @@ div.CircledArrow {
         padding-top: 3px; }
       .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_content .TimelineDetail_rightContent {
         padding: unset; }
-      .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_content .ListRecords > *:not(:last-child) {
-        display: block;
-        margin-bottom: 16px; }
     .CollapsibleSidePanel__Content .SectionExpandableInside .PlaceHolderActions > div {
       margin-left: unset !important;
       padding: unset; }
@@ -23733,8 +23746,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .SectionExpandableInside.expanded .ExapandablePlaceholder.HeaderIcon {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
     position: relative; }
   .SectionExpandableInside.expanded .SectionExpandableInside_content {
     border-bottom: 1px solid #d6d6d6;
@@ -23760,13 +23773,13 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .SectionExpandableInside_header .HeaderIcon.open {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg);
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
+      -webkit-transition: height 0.5s;
+      transition: height 0.5s; }
     .SectionExpandableInside_header .HeaderIcon.closed {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
+      -webkit-transition: height 0.5s;
+      transition: height 0.5s; }
   .SectionExpandableInside .RightAllPlaceDiv {
     display: table-cell;
     vertical-align: middle;
@@ -23781,8 +23794,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
+      -webkit-transition: height 0.5s;
+      transition: height 0.5s;
       cursor: pointer;
       font-size: 0.857em;
       margin: 0;
@@ -30360,6 +30373,8 @@ ul.os-internal-ui-autocomplete {
 
 .ClinicianWorkArea____resumeDetails .AppointmentDetails {
   margin-top: 0 !important; }
+  .ClinicianWorkArea____resumeDetails .AppointmentDetails > div:not(:last-of-type) {
+    margin-bottom: 24px; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .ExpandableContent:hover {
     background-color: #f3f3f3; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .SeparatorBorder:first-of-type {
