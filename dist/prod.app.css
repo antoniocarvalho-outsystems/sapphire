@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104002 || Generated: Tue Jan 19 2021 13:16:01 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.104003 || Generated: Tue Jan 19 2021 15:52:13 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7256,6 +7256,19 @@ a.LinkReset:link, a.LinkReset:visited {
 .AR.Page .DropZoneContainer .row .IsDefault.Button,
 .DropZoneContainer .row .AR.Page .IsDefault.Button {
   font-family: "TajawalBold"; }
+
+.CardIcon {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  color: #777777;
+  height: 32px;
+  width: 32px; }
 
 .Circle {
   border-radius: 10px;
@@ -16422,11 +16435,11 @@ div.CircledArrow {
   border-radius: 8px;
   overflow: hidden; }
   .ExpandableList .ExpandableLink:not(:first-of-type) {
-    border-top: none;
+    border-top: 1px solid #f3f3f3;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
   .ExpandableList .ExpandableLink:not(:last-of-type) {
-    border-bottom: none;
+    border-bottom: 1px solid #f3f3f3;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
     .ExpandableList .ExpandableLink:not(:last-of-type) .ExpandableLink__Header {
@@ -16442,7 +16455,8 @@ div.CircledArrow {
     height: 40px;
     padding: 0 16px; }
   .ExpandableList .ExpandableLink__Link {
-    color: #777777; }
+    color: #777777;
+    font-size: 0.857em; }
   .ExpandableList .ExpandableLink__Icon .icon {
     border: none;
     font-size: 1.429em; }
@@ -16451,7 +16465,9 @@ div.CircledArrow {
     .ExpandableList .ExpandableLink__Icon .icon::before {
       color: #777777; }
   .ExpandableList .ExpandableLink__Content {
-    margin-top: 0; }
+    margin-top: 0;
+    -webkit-transition: unset;
+    transition: unset; }
 
 .AR .ExpandableLink__Link,
 .FA .ExpandableLink__Link {
