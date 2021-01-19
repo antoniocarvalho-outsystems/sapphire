@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104003 || Generated: Tue Jan 19 2021 15:52:13 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.104004 || Generated: Tue Jan 19 2021 17:34:52 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16452,6 +16452,7 @@ div.CircledArrow {
     -webkit-box-align: center;
             align-items: center;
     background-color: #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
     height: 40px;
     padding: 0 16px; }
   .ExpandableList .ExpandableLink__Link {
