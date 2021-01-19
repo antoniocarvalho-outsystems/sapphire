@@ -48,12 +48,13 @@
 		.Counter {
 			@include flex-center-total(inline-flex);
 
-			border-radius: 50%;
+			border-radius: 80px;
 			color: $regular-white;
 			font-size: $font-size-tiny;
-			height: 20px;
 			line-height: $font-size-tiny;
-			width: 20px;
+			min-height: 20px;
+			min-width: 20px;
+			padding: 3px;
 		}
 	}
 
@@ -135,23 +136,43 @@
 			margin-bottom: $sapphire-sizes--medium;
 			overflow: hidden;
 
+			&.expanded .SectionExpandableInside_content {
+				height: auto !important;
+				padding: $sapphire-sizes--medium;
+			}
+
 			.SectionExpandableInside_header {
 				padding: $sapphire-sizes--medium $sapphire-sizes--small;
 
 				.HeaderIcon span.icon {
 					border-bottom-color: $dark-grey;
 				}
+
+				.ExapandablePlaceholder .Counter {
+					border-radius: 80px;
+					font-family: $font-family-latin-bold;
+					font-size: 11px;
+					line-height: initial;
+					min-width: 20px;
+					padding: 3px;
+					width: auto;
+				}
 			}
 
 			.SectionExpandableInside_content {
 				background-color: $body-color;
 				border-bottom: none !important;
-				padding: $sapphire-sizes--medium;
+				height: 0 !important;
+				transition: unset;
 
 				.TimelineDetail {
 					display: flex;
 					gap: $sapphire-sizes--medium;
 					padding: 0;
+
+					&:not(:last-child) {
+						margin-bottom: $sapphire-sizes--medium;
+					}
 				}
 
 				.TimelineDetail_leftContent {
@@ -163,11 +184,6 @@
 
 				.TimelineDetail_rightContent {
 					padding: unset;
-				}
-
-				.ListRecords > *:not(:last-child) {
-					display: block;
-					margin-bottom: $sapphire-sizes--medium;
 				}
 			}
 

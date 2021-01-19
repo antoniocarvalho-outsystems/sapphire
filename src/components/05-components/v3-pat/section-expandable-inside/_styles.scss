@@ -1,6 +1,6 @@
 @mixin animation-arrow-button($rotate-degree: 0) {
 	transform: rotate($rotate-degree);
-	transition: all 0.5s;
+	transition: height 0.5s;
 }
 
 .SectionExpandableInside {

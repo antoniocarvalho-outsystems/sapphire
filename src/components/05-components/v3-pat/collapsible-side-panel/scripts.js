@@ -14,7 +14,9 @@
 
 			if (toOpen) {
 				if ($clinicianAside.length) {
-					this.$content.height($clinicianAside.outerHeight());
+					this.$content.css({
+						minHeight: $clinicianAside.outerHeight(),
+					});
 				}
 
 				this.$component.addClass('CollapsibleSidePanel--open');

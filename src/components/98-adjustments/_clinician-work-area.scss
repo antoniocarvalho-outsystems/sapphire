@@ -3,6 +3,10 @@
 		.AppointmentDetails {
 			margin-top: 0 !important;
 
+			> div:not(:last-of-type) {
+				margin-bottom: $sapphire-sizes--large;
+			}
+
 			.ExpandableContent:hover {
 				background-color: $body-color;
 			}
