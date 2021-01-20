@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.104005 || Generated: Wed Jan 20 2021 13:58:16 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.104006 || Generated: Wed Jan 20 2021 14:28:31 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4212,7 +4212,7 @@ body.confirmation-opened {
   display: none;
   left: 50%;
   max-width: 480px;
-  padding: 30px 20px;
+  padding: 32px;
   position: fixed;
   text-align: center;
   top: 50%;
@@ -4274,7 +4274,7 @@ body.confirmation-opened {
       max-height: 80%;
       min-width: 250px;
       overflow: auto;
-      padding: 16px;
+      padding: 32px;
       position: fixed;
       width: auto;
       z-index: 60; }
@@ -4385,7 +4385,7 @@ body.PanelById.PanelOpened {
     background-color: #fff;
     border-radius: 8px;
     display: none;
-    padding: 16px;
+    padding: 32px;
     position: fixed;
     text-align: center;
     width: 100%;
