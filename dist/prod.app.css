@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104006 || Generated: Wed Jan 20 2021 14:28:31 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.104007 || Generated: Wed Jan 20 2021 14:30:35 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20116,7 +20116,7 @@ body.confirmation-opened {
       font-size: 1em;
       max-width: 15px;
       position: absolute;
-      right: 16px;
+      right: 32px;
       top: 22px; }
     .modalPopup.Open .modalPopup_container {
       background-color: #fff;
