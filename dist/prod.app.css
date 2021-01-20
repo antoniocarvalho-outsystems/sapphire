@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104004 || Generated: Tue Jan 19 2021 17:34:52 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.104005 || Generated: Wed Jan 20 2021 13:58:16 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11387,20 +11387,20 @@ html .Page .PatientDetailsLayout {
     width: 250px; }
   .LayoutPopup__header {
     display: block;
-    padding: 30px 30px 0 30px; }
+    padding: 32px 32px 0 32px; }
     .LayoutPopup__header__text {
       width: 100%; }
     .LayoutPopup__header__text__title {
-      margin-bottom: 5px; }
+      margin-bottom: 8px; }
     .LayoutPopup__header__text__subtitle {
       font-size: 1.286em;
       line-height: 20px; }
   .LayoutPopup__intro {
-    padding: 10px 30px; }
+    padding: 10px 32px; }
   .LayoutPopup__body {
     display: -webkit-box;
     display: flex;
-    padding: 30px 20px 30px 30px; }
+    padding: 32px 27px 32px 32px; }
     .LayoutPopup__body__sidebar {
       padding-right: 20px;
       width: 270px; }
@@ -11420,13 +11420,13 @@ html .Page .PatientDetailsLayout {
       .LayoutPopup__body__content > .MinHeightMedium {
         min-height: 500px; }
   .LayoutPopup__footer {
-    padding: 0 30px 30px; }
+    padding: 0 32px 32px; }
   .LayoutPopup_wrapper {
     width: 100%; }
 
 .AR .LayoutPopup__body,
 .FA .LayoutPopup__body {
-  padding: 30px 30px 30px 20px; }
+  padding: 32px 32px 32px 27px; }
   .AR .LayoutPopup__body__content,
   .FA .LayoutPopup__body__content {
     padding-left: 5px;
@@ -23871,6 +23871,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   margin-bottom: 12px; }
   .SegmentedControl.NoMargin {
     margin: 0 0 0 1px !important; }
+  .SegmentedControl.Invalid .SegmentedControlItem:last-child label {
+    border-color: #ff3e2d; }
+  .SegmentedControl.Invalid .SegmentedControlItem label {
+    border-color: #ff3e2d; }
   .SegmentedControl.Vertical .SegmentedControlItem {
     display: block; }
     .SegmentedControl.Vertical .SegmentedControlItem:first-child label {
@@ -28163,6 +28167,30 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .FlexNoWrap {
   flex-wrap: nowrap !important; }
 
+.FormMarginXXSmall > div:not(:first-of-type) {
+  margin-top: 2px; }
+
+.FormMarginXSmall > div:not(:first-of-type) {
+  margin-top: 4px; }
+
+.FormMarginSmall > div:not(:first-of-type) {
+  margin-top: 8px; }
+
+.FormMarginMedium > div:not(:first-of-type) {
+  margin-top: 16px; }
+
+.FormMarginLarge > div:not(:first-of-type) {
+  margin-top: 24px; }
+
+.FormMarginXLarge > div:not(:first-of-type) {
+  margin-top: 32px; }
+
+.FormMarginXXLarge > div:not(:first-of-type) {
+  margin-top: 48px; }
+
+.FormMarginLargest > div:not(:first-of-type) {
+  margin-top: 56px; }
+
 .Rotation45 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg); }
@@ -30610,13 +30638,6 @@ body.PanelOpened .daterangepicker {
   width: 100%; }
   .InputFilter .DateTimeRangePicker .DateTimeRangePicker-displayed:before {
     right: 16px; }
-
-.LayoutPopup .daterangepicker .calendar-table td,
-.ResizeParentIframe .daterangepicker .calendar-table td {
-  font-size: 12px;
-  line-height: 14px;
-  min-width: 25px;
-  padding: 3px; }
 
 .LayoutPopup .daterangepicker select.hourselect,
 .LayoutPopup .daterangepicker select.minuteselect,
