@@ -14,7 +14,7 @@
 	var $overlay = window.parent.$('.os-internal-ui-widget-overlay');
 	var popupSize;
 
-	const BODY_PADDING_TOP_BOTTOM = 60;
+	const BODY_PADDING_TOP_BOTTOM = 72;
 
 	const create = function(config) {
 		SapphireWidgets.LayoutPopup.config = config;
@@ -260,6 +260,9 @@
 		} else if (popupSize === 'Large') {
 			popupMinWidth = parseInt(windowWidth * 0.8);
 			popupMaxHeight = parseInt(windowHeight * 0.9);
+		} else if (popupSize === 'Fixed') {
+			popupWidth = SapphireWidgets.SapphirePopup.popupWidth;
+			popupMinWidth = SapphireWidgets.SapphirePopup.popupWidth;
 		}
 	};
 

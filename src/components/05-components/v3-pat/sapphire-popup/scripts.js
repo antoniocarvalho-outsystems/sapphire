@@ -161,6 +161,8 @@ var RichWidgets_Popup_Editor_notifyWidget;
 			};
 
 			$(linkQuery).click(clickHandler);
+
+			SapphireWidgets.SapphirePopup.popupWidth = config.setWidth || POPUP_INITIAL_WIDTH;
 		});
 	};
 

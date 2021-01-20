@@ -18,14 +18,14 @@
 
 	&__header {
 		display: block;
-		padding: 30px 30px 0 30px;
+		padding: $sapphire-sizes--xlarge $sapphire-sizes--xlarge 0 $sapphire-sizes--xlarge;
 
 		&__text {
 			width: 100%;
 		}
 
 		&__text__title {
-			margin-bottom: 5px;
+			margin-bottom: $sapphire-sizes--small;
 		}
 
 		&__text__subtitle {
@@ -35,12 +35,12 @@
 	}
 
 	&__intro {
-		padding: 10px 30px;
+		padding: 10px $sapphire-sizes--xlarge;
 	}
 
 	&__body {
 		display: flex;
-		padding: 30px 20px 30px 30px;
+		padding: $sapphire-sizes--xlarge 27px $sapphire-sizes--xlarge $sapphire-sizes--xlarge;
 
 		&__sidebar {
 			padding-right: 20px;
@@ -65,7 +65,7 @@
 	}
 
 	&__footer {
-		padding: 0 30px 30px;
+		padding: 0 $sapphire-sizes--xlarge $sapphire-sizes--xlarge;
 	}
 
 	&_wrapper {
@@ -77,7 +77,7 @@
 .FA {
 	.LayoutPopup {
 		&__body {
-			padding: 30px 30px 30px 20px;
+			padding: $sapphire-sizes--xlarge $sapphire-sizes--xlarge $sapphire-sizes--xlarge 27px;
 
 			&__content {
 				padding-left: 5px;

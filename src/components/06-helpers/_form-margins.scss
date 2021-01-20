@@ -1,0 +1,10 @@
+@each $size in $sapphire-sizes {
+	$label: nth($size, 1);
+	$value: nth($size, 2);
+
+	.FormMargin#{$label} {
+		> div:not(:first-of-type) {
+			margin-top: #{$value};
+		}
+	}
+}

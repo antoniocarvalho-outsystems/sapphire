@@ -5,6 +5,18 @@
 		margin: 0 0 0 1px !important;
 	}
 
+	&.Invalid {
+		.SegmentedControlItem {
+			&:last-child label {
+				border-color: $regular-red;
+			}
+
+			label {
+				border-color: $regular-red;
+			}
+		}
+	}
+
 	&.Vertical {
 		.SegmentedControlItem {
 			display: block;
