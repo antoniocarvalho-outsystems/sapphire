@@ -1,6 +1,5 @@
 require('./confirmation-panel');
+require('./modal-popup');
 require('./panel-by-id');
-//require('./panel-by-id-notify');
 require('./popup-menu');
 require('./sapphire-panel');
-
