@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104007 || Generated: Wed Jan 20 2021 14:30:35 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.104008 || Generated: Thu Jan 21 2021 15:50:13 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9262,8 +9262,7 @@ div.LineInfo {
 .PatientSummary {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 2px;
-  margin-left: -16px;
+  border-radius: 4px;
   padding: 18px; }
   .PatientSummary div.ClinicianSecondarySummary_icon {
     color: #d6d6d6;
@@ -20156,7 +20155,7 @@ body.confirmation-opened {
       text-align: right; }
 
 .CustomModalPopup {
-  margin: -16px;
+  margin: -32px;
   text-align: start; }
   .CustomModalPopup__Header, .CustomModalPopup__Footer {
     -webkit-box-align: center;
