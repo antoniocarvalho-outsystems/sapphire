@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.104008 || Generated: Thu Jan 21 2021 15:50:13 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.1.104009 || Generated: Tue Jan 26 2021 18:16:57 GMT+0000 (Western European Standard Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -633,7 +633,7 @@ eval("/* Component SapphirePopup */\r\nvar RichWidgets_Popup_Editor_notifyWidget
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component SapphireRadioButton */\r\nSapphireWidgets.SapphireRadioButton = widgetId => {\r\n\tvar $widget = $('#' + widgetId);\r\n\tvar $control = $widget.find('input[type=\"radio\"]');\r\n\tvar name = $control.prop('name');\r\n\r\n\t$control.click(function() {\r\n\t\t$widget.removeClass('active');\r\n\t\t$('input[type=\"radio\"][name=\"' + name + '\"]').each(function() {\r\n\t\t\t$(this)\r\n\t\t\t\t.closest('.ButtonRadioInp')\r\n\t\t\t\t.removeClass('active');\r\n\t\t});\r\n\t\tif ($(this).is(':checked')) {\r\n\t\t\t$widget.addClass('active');\r\n\t\t} else {\r\n\t\t\t$widget.removeClass('active');\r\n\t\t}\r\n\t});\r\n\r\n\t$widget.find('.ButtonRadioInp_radioText').click(function() {\r\n\t\tif (\r\n\t\t\t$(this)\r\n\t\t\t\t.closest('.ButtonRadioInp')\r\n\t\t\t\t.hasClass('disabled')\r\n\t\t) {\r\n\t\t\treturn false;\r\n\t\t}\r\n\t\t$control.trigger('click');\r\n\t\t$control.trigger('click');\r\n\t\tif ($control.is(':checked')) {\r\n\t\t\t$widget.addClass('active');\r\n\t\t} else {\r\n\t\t\t$widget.removeClass('active');\r\n\t\t}\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js?");
+eval("/* Component SapphireRadioButton */\r\nSapphireWidgets.SapphireRadioButton = widgetId => {\r\n\tconst $widget = $(`#${widgetId}`);\r\n\tconst $input = $widget.find('input[type=\"radio\"]');\r\n\tconst $label = $widget.find('.ButtonRadioInp_radioText');\r\n\tconst name = $input.prop('name');\r\n\r\n\tconst addRemoveClass = ($el, toAdd) => {\r\n\t\tif (toAdd) $el.addClass('active');\r\n\t\telse $el.removeClass('active');\r\n\t};\r\n\r\n\tconst isChecked = $el => {\r\n\t\tif ($el.is(':checked')) addRemoveClass($widget, true);\r\n\t\telse addRemoveClass($widget, false);\r\n\t};\r\n\r\n\t$input.click(function() {\r\n\t\t$widget.removeClass('active');\r\n\r\n\t\t$(`input[type=\"radio\"][name=\"${name}\"]`).each(function() {\r\n\t\t\taddRemoveClass($(this).closest('.ButtonRadioInp'), false);\r\n\t\t});\r\n\r\n\t\tisChecked($(this));\r\n\t});\r\n\r\n\t$label.click(function() {\r\n\t\tconst $closestElement = $(this).closest('.ButtonRadioInp');\r\n\r\n\t\tif ($closestElement.hasClass('disabled')) return false;\r\n\r\n\t\t$input.trigger('click');\r\n\t\tisChecked($input);\r\n\t});\r\n\r\n\tisChecked($input);\r\n};\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js?");
 
 /***/ }),
 

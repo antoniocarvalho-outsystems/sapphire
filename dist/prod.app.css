@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104008 || Generated: Thu Jan 21 2021 15:50:13 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.104009 || Generated: Tue Jan 26 2021 18:16:57 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14306,7 +14306,8 @@ div.CircledArrow {
     transition: all 0.3s ease; }
   .CollapsibleSidePanel__Content .PersonCard .PersonCard_header {
     border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; }
+    border-bottom-right-radius: 0;
+    margin-bottom: 0 !important; }
   .CollapsibleSidePanel__Content .PersonCard .PersonCard__headerLeftInfo {
     max-width: 48px !important; }
   .CollapsibleSidePanel__Content .PersonCard .PersonCard_expandable {
@@ -14319,8 +14320,8 @@ div.CircledArrow {
       height: 1px;
       margin: 8px 0; }
   .CollapsibleSidePanel__Content .PersonCard .PersonCardIcon {
+    border-radius: 4px;
     color: #777777;
-    font-size: 0.857em;
     height: 32px;
     width: 32px; }
   .CollapsibleSidePanel__Content .SectionExpandableInside {
