@@ -101,6 +101,7 @@
 			.PersonCard_header {
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
+				margin-bottom: 0 !important;
 			}
 
 			.PersonCard__headerLeftInfo {
@@ -123,8 +124,8 @@
 			}
 
 			.PersonCardIcon {
+				border-radius: $border-radius-default;
 				color: $regular-grey;
-				font-size: $font-size-small;
 				height: 32px;
 				width: 32px;
 			}

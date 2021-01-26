@@ -1,37 +1,38 @@
 /* Component SapphireRadioButton */
 SapphireWidgets.SapphireRadioButton = widgetId => {
-	var $widget = $('#' + widgetId);
-	var $control = $widget.find('input[type="radio"]');
-	var name = $control.prop('name');
+	const $widget = $(`#${widgetId}`);
+	const $input = $widget.find('input[type="radio"]');
+	const $label = $widget.find('.ButtonRadioInp_radioText');
+	const name = $input.prop('name');
 
-	$control.click(function() {
+	const addRemoveClass = ($el, toAdd) => {
+		if (toAdd) $el.addClass('active');
+		else $el.removeClass('active');
+	};
+
+	const isChecked = $el => {
+		if ($el.is(':checked')) addRemoveClass($widget, true);
+		else addRemoveClass($widget, false);
+	};
+
+	$input.click(function() {
 		$widget.removeClass('active');
-		$('input[type="radio"][name="' + name + '"]').each(function() {
-			$(this)
-				.closest('.ButtonRadioInp')
-				.removeClass('active');
+
+		$(`input[type="radio"][name="${name}"]`).each(function() {
+			addRemoveClass($(this).closest('.ButtonRadioInp'), false);
 		});
-		if ($(this).is(':checked')) {
-			$widget.addClass('active');
-		} else {
-			$widget.removeClass('active');
-		}
+
+		isChecked($(this));
 	});
 
-	$widget.find('.ButtonRadioInp_radioText').click(function() {
-		if (
-			$(this)
-				.closest('.ButtonRadioInp')
-				.hasClass('disabled')
-		) {
-			return false;
-		}
-		$control.trigger('click');
-		$control.trigger('click');
-		if ($control.is(':checked')) {
-			$widget.addClass('active');
-		} else {
-			$widget.removeClass('active');
-		}
+	$label.click(function() {
+		const $closestElement = $(this).closest('.ButtonRadioInp');
+
+		if ($closestElement.hasClass('disabled')) return false;
+
+		$input.trigger('click');
+		isChecked($input);
 	});
+
+	isChecked($input);
 };
