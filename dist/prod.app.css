@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104009 || Generated: Tue Jan 26 2021 18:16:57 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.104010 || Generated: Wed Jan 27 2021 18:01:21 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14304,26 +14304,28 @@ div.CircledArrow {
     opacity: 0;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-  .CollapsibleSidePanel__Content .PersonCard .PersonCard_header {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    margin-bottom: 0 !important; }
-  .CollapsibleSidePanel__Content .PersonCard .PersonCard__headerLeftInfo {
-    max-width: 48px !important; }
-  .CollapsibleSidePanel__Content .PersonCard .PersonCard_expandable {
-    background-color: #f3f3f3;
-    padding: 16px; }
-    .CollapsibleSidePanel__Content .PersonCard .PersonCard_expandable .ListRecords > div:not(:last-child)::after {
-      background-color: #d6d6d6;
-      content: '';
-      display: block;
-      height: 1px;
-      margin: 8px 0; }
-  .CollapsibleSidePanel__Content .PersonCard .PersonCardIcon {
-    border-radius: 4px;
-    color: #777777;
-    height: 32px;
-    width: 32px; }
+  .CollapsibleSidePanel__Content .PersonCard {
+    margin-bottom: 16px; }
+    .CollapsibleSidePanel__Content .PersonCard .PersonCard_header {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: 0 !important; }
+    .CollapsibleSidePanel__Content .PersonCard .PersonCard__headerLeftInfo {
+      max-width: 48px !important; }
+    .CollapsibleSidePanel__Content .PersonCard .PersonCard_expandable {
+      background-color: #f3f3f3;
+      padding: 16px; }
+      .CollapsibleSidePanel__Content .PersonCard .PersonCard_expandable .ListRecords > div:not(:last-child)::after {
+        background-color: #d6d6d6;
+        content: '';
+        display: block;
+        height: 1px;
+        margin: 8px 0; }
+    .CollapsibleSidePanel__Content .PersonCard .PersonCardIcon {
+      border-radius: 4px;
+      color: #777777;
+      height: 32px;
+      width: 32px; }
   .CollapsibleSidePanel__Content .SectionExpandableInside {
     border: 1px solid #d6d6d6;
     border-radius: 16px;
@@ -16446,6 +16448,9 @@ div.CircledArrow {
       border-bottom: 1px solid #d6d6d6; }
   .ExpandableList .ExpandableLink--expanded .ExpandableLink__Header {
     border-bottom: 1px solid #d6d6d6; }
+  .ExpandableList .ExpandableLink--expanded .ExpandableLink__Icon .icon {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
   .ExpandableList .ExpandableLink--expanded .ExpandableLink__Content {
     padding: 16px; }
   .ExpandableList .ExpandableLink__Header {
@@ -16460,7 +16465,9 @@ div.CircledArrow {
     font-size: 0.857em; }
   .ExpandableList .ExpandableLink__Icon .icon {
     border: none;
-    font-size: 1.429em; }
+    font-size: 1.429em;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
     .ExpandableList .ExpandableLink__Icon .icon:hover {
       background-color: transparent; }
     .ExpandableList .ExpandableLink__Icon .icon::before {
