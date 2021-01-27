@@ -1,10 +1,10 @@
 /* Component Dropzone */
 (function($, window, document, SapphireWidgets) {
 	const create = function(config) {
+		window.Dropzone.autoDiscover = false;
+
 		$(document).ready(function() {
 			bindEvents(config);
-
-			window.Dropzone.autoDiscover = false;
 
 			const myDropzone = new window.Dropzone(config.hiddenInputContainer, {
 				...config,

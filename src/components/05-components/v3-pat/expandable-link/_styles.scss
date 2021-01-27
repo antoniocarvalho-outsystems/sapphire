@@ -94,6 +94,10 @@
 				border-bottom: 1px solid $light-grey;
 			}
 
+			.ExpandableLink__Icon .icon {
+				transform: rotate(180deg);
+			}
+
 			.ExpandableLink__Content {
 				padding: $sapphire-sizes--medium;
 			}
@@ -116,6 +120,7 @@
 			.icon {
 				border: none;
 				font-size: $font-size-heading2;
+				transform: rotate(0deg);
 
 				&:hover {
 					background-color: transparent;
