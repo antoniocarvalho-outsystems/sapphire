@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104010 || Generated: Wed Jan 27 2021 18:01:21 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.104011 || Generated: Thu Jan 28 2021 17:34:55 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12462,6 +12462,8 @@ div.ActionsMenu-tooltip {
       min-width: auto; }
       div.ActionsMenu-tooltip .tooltipster-content > section > .ActionsMenu-tooltip > div {
         line-height: 30px; }
+    div.ActionsMenu-tooltip .tooltipster-content .ButtonList a {
+      text-align: start !important; }
   div.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-left span:after {
     left: -13px;
     top: -5px;
