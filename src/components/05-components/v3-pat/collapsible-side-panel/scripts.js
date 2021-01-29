@@ -58,7 +58,16 @@
 		}
 	}
 
+	const updateCounter = (widgetId, counter) => {
+		this.$component = $(`#${widgetId}`);
+		this.counter1 = this.$component.find('.CollapsibleSidePanel__Title span.Counter');
+		this.counter2 = this.$component.find('.CollapsibleSidePanel__PanelTitle span.Counter');
+
+		this.counter1.text(counter);
+		this.counter2.text(counter);
+	};
+
 	const create = config => (window[config.widgetId] = new CollapsibleSidePanel(config));
 
-	SapphireWidgets.CollapsibleSidePanel = { create };
+	SapphireWidgets.CollapsibleSidePanel = { create, updateCounter };
 })(jQuery, window, SapphireWidgets);
