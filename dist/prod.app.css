@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104014 || Generated: Mon Feb 01 2021 17:04:21 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.104015 || Generated: Mon Feb 01 2021 17:10:21 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -28163,7 +28163,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   flex-wrap: wrap;
   gap: 8px; }
   .FlexListSmallGap {
-    gap: 16px; }
+    gap: 8px; }
   .FlexListMediumGap {
     gap: 16px; }
   .FlexListLargeGap {
