@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.104015 || Generated: Mon Feb 01 2021 17:10:21 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.105001 || Generated: Tue Feb 02 2021 16:24:51 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16434,27 +16434,31 @@ div.CircledArrow {
   -webkit-transition: max-height 500ms;
   transition: max-height 500ms; }
 
-.ExpandableList .ExpandableLink {
+.ExpandableList {
   border: 1px solid #d6d6d6;
   border-radius: 8px;
   overflow: hidden; }
   .ExpandableList .ExpandableLink:not(:first-of-type) {
-    border-top: 1px solid #f3f3f3;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
   .ExpandableList .ExpandableLink:not(:last-of-type) {
-    border-bottom: 1px solid #f3f3f3;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
     .ExpandableList .ExpandableLink:not(:last-of-type) .ExpandableLink__Header {
       border-bottom: 1px solid #d6d6d6; }
-  .ExpandableList .ExpandableLink--expanded .ExpandableLink__Header {
+  .ExpandableList .ExpandableLink:last-of-type {
+    border-bottom: none; }
+    .ExpandableList .ExpandableLink:last-of-type .ExpandableLink__Header {
+      display: none; }
+  .ExpandableList .ExpandableLink--expanded {
     border-bottom: 1px solid #d6d6d6; }
-  .ExpandableList .ExpandableLink--expanded .ExpandableLink__Icon .icon {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
-  .ExpandableList .ExpandableLink--expanded .ExpandableLink__Content {
-    padding: 16px; }
+    .ExpandableList .ExpandableLink--expanded .ExpandableLink__Header {
+      border-bottom: 1px solid #d6d6d6; }
+    .ExpandableList .ExpandableLink--expanded .ExpandableLink__Icon .icon {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .ExpandableList .ExpandableLink--expanded .ExpandableLink__Content {
+      padding: 16px; }
   .ExpandableList .ExpandableLink__Header {
     -webkit-box-align: center;
             align-items: center;
