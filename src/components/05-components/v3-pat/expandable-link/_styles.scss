@@ -68,19 +68,17 @@
 }
 
 .ExpandableList {
-	.ExpandableLink {
-		border: 1px solid $light-grey;
-		border-radius: $border-radius-medium;
-		overflow: hidden;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	overflow: hidden;
 
+	.ExpandableLink {
 		&:not(:first-of-type) {
-			border-top: 1px solid $body-color;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 		}
 
 		&:not(:last-of-type) {
-			border-bottom: 1px solid $body-color;
 			border-bottom-left-radius: 0;
 			border-bottom-right-radius: 0;
 
@@ -89,7 +87,17 @@
 			}
 		}
 
+		&:last-of-type {
+			border-bottom: none;
+
+			.ExpandableLink__Header {
+				display: none;
+			}
+		}
+
 		&--expanded {
+			border-bottom: 1px solid $light-grey;
+
 			.ExpandableLink__Header {
 				border-bottom: 1px solid $light-grey;
 			}
