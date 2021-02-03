@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.105005 || Generated: Wed Feb 03 2021 16:53:02 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.105006 || Generated: Wed Feb 03 2021 17:45:17 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7269,6 +7269,23 @@ a.LinkReset:link, a.LinkReset:visited {
   color: #777777;
   height: 32px;
   width: 32px; }
+  .CardIcon.ColorGreen, .CardIcon.ColorOrange {
+    position: relative; }
+    .CardIcon.ColorGreen .icon:last-of-type, .CardIcon.ColorOrange .icon:last-of-type {
+      font-size: 1.429em;
+      left: 16px;
+      position: absolute;
+      top: 16px; }
+  .CardIcon.ColorGreen {
+    background-color: rgba(124, 179, 66, 0.3);
+    color: #578329; }
+    .CardIcon.ColorGreen .icon:last-of-type {
+      color: #7cb342; }
+  .CardIcon.ColorOrange {
+    background-color: rgba(255, 160, 0, 0.3);
+    color: #c37b03; }
+    .CardIcon.ColorOrange .icon:last-of-type {
+      color: #ffa000; }
 
 .Circle {
   border-radius: 10px;
