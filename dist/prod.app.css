@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.105001 || Generated: Tue Feb 02 2021 16:24:51 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.105002 || Generated: Wed Feb 03 2021 09:37:21 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20963,12 +20963,6 @@ body.PanelById.PanelOpened {
   color: #333333;
   -webkit-box-flex: 4;
           flex: 4; }
-
-.PersonCard + .ListRecords .PersonCard a {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-flex: 5;
-          flex: 5; }
 
 .PersonCard__headerLeftInfo .PersonCard____title a:not([disabled='disabled']):hover,
 .PersonCard__headerLeftInfo .PersonCard____title a:link:hover,
