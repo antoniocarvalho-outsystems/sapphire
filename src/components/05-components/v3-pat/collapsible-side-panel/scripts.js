@@ -15,7 +15,7 @@
 			if (toOpen) {
 				if ($clinicianAside.length) {
 					this.$content.css({
-						minHeight: $clinicianAside.outerHeight(),
+						height: $clinicianAside.outerHeight(),
 					});
 				}
 
