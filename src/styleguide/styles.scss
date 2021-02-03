@@ -245,7 +245,6 @@ $styleguide-main-content-padding: 50px;
 
 	&__Content {
 		background-color: $regular-white;
-		/* height: 100vh; */
 		padding: $styleguide-main-content-padding;
 	}
 
@@ -421,7 +420,7 @@ $styleguide-main-content-padding: 50px;
 	&__GreyContainer {
 		background-color: $body-color;
 		border-radius: 1px;
-		margin: 0 -20px;
+		margin: 0 -16px;
 		padding: 10px 20px;
 	}
 

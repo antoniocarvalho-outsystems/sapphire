@@ -6,4 +6,34 @@
 	color: $regular-grey;
 	height: 32px;
 	width: 32px;
+
+	&.ColorGreen,
+	&.ColorOrange {
+		position: relative;
+
+		.icon:last-of-type {
+			font-size: $font-size-heading2;
+			left: $sapphire-sizes--medium;
+			position: absolute;
+			top: $sapphire-sizes--medium;
+		}
+	}
+
+	&.ColorGreen {
+		background-color: rgba($regular-green, 0.3);
+		color: $dark-green;
+
+		.icon:last-of-type {
+			color: $regular-green;
+		}
+	}
+
+	&.ColorOrange {
+		background-color: rgba($regular-orange, 0.3);
+		color: $dark-orange;
+
+		.icon:last-of-type {
+			color: $regular-orange;
+		}
+	}
 }
