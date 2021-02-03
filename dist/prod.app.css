@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.105004 || Generated: Wed Feb 03 2021 16:32:04 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.105005 || Generated: Wed Feb 03 2021 16:53:02 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14294,6 +14294,7 @@ div.CircledArrow {
   border: 1px solid #d6d6d6;
   height: auto;
   margin: -16px;
+  min-height: 100vh;
   position: absolute;
   right: 16px;
   top: 16px;
