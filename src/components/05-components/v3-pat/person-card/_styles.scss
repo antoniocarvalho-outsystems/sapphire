@@ -556,15 +556,6 @@
 	}
 }
 
-.PersonCard + .ListRecords {
-	.PersonCard {
-		a {
-			display: flex;
-			flex: 5;
-		}
-	}
-}
-
 .PersonCard {
 	&__headerLeftInfo &____title a:not([disabled='disabled']):hover,
 	&__headerLeftInfo &____title a:link:hover,
