@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.105002 || Generated: Wed Feb 03 2021 09:37:21 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.105003 || Generated: Wed Feb 03 2021 10:22:41 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17278,8 +17278,6 @@ div.CircledArrow {
   border-bottom: 1px solid #d6d6d6; }
 
 .GenericStructure .GenericStructure-header {
-  -webkit-box-align: center;
-          align-items: center;
   display: -webkit-box;
   display: flex;
   padding-bottom: 16px; }
