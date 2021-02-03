@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.105003 || Generated: Wed Feb 03 2021 10:22:41 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.105004 || Generated: Wed Feb 03 2021 16:32:04 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16455,8 +16455,8 @@ div.CircledArrow {
     .ExpandableList .ExpandableLink--expanded .ExpandableLink__Header {
       border-bottom: 1px solid #d6d6d6; }
     .ExpandableList .ExpandableLink--expanded .ExpandableLink__Icon .icon {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); }
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
     .ExpandableList .ExpandableLink--expanded .ExpandableLink__Content {
       padding: 16px; }
   .ExpandableList .ExpandableLink__Header {
@@ -16472,8 +16472,10 @@ div.CircledArrow {
   .ExpandableList .ExpandableLink__Icon .icon {
     border: none;
     font-size: 1.429em;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: none;
+    transition: none; }
     .ExpandableList .ExpandableLink__Icon .icon:hover {
       background-color: transparent; }
     .ExpandableList .ExpandableLink__Icon .icon::before {
