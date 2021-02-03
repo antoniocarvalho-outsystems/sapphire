@@ -103,7 +103,7 @@
 			}
 
 			.ExpandableLink__Icon .icon {
-				transform: rotate(180deg);
+				transform: rotate(0deg);
 			}
 
 			.ExpandableLink__Content {
@@ -128,7 +128,8 @@
 			.icon {
 				border: none;
 				font-size: $font-size-heading2;
-				transform: rotate(0deg);
+				transform: rotate(180deg);
+				transition: none;
 
 				&:hover {
 					background-color: transparent;
