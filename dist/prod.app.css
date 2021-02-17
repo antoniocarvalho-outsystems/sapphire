@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.105006 || Generated: Wed Feb 03 2021 17:45:17 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.105007 || Generated: Wed Feb 17 2021 11:48:38 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7409,7 +7409,7 @@ a.LinkReset:link, a.LinkReset:visited {
     background-color: #7cb342;
     color: #fff; }
   .Title_Section.LightGreen {
-    background-color: #c2dea8;
+    background-color: #daebca;
     color: #fff; }
   .Title_Section.Turquoise {
     background-color: #039be5;
@@ -7520,7 +7520,7 @@ a.LinkReset:link, a.LinkReset:visited {
     .AvailabilityCardContainer .AvailabilityCardLeftContainer.AvailabilityCardLeftRed {
       background-color: #fad5d5; }
     .AvailabilityCardContainer .AvailabilityCardLeftContainer.AvailabilityCardLeftGreen {
-      background-color: #c2dea8; }
+      background-color: #daebca; }
   .AvailabilityCardContainer .AvailabilityCardRightContainer {
     background-color: #fff;
     border-left: 1px solid #d6d6d6;
@@ -8278,7 +8278,7 @@ a.LinkReset:link, a.LinkReset:visited {
   width: 20px; }
 
 .Counter.Min {
-  background-color: #c2dea8;
+  background-color: #daebca;
   border-top: 2px solid #578329;
   color: #578329; }
 
@@ -8293,7 +8293,7 @@ a.LinkReset:link, a.LinkReset:visited {
   color: #b10100; }
 
 .Counter.Vacant {
-  background: #c2dea8;
+  background: #daebca;
   border-top: 3px solid #578329;
   color: #578329; }
 
@@ -8351,7 +8351,7 @@ a.LinkReset:link, a.LinkReset:visited {
 .Counter.LightGreen,
 .Counter .Tile.LightGreen {
   background-color: #fff;
-  border-bottom-color: #c2dea8; }
+  border-bottom-color: #daebca; }
 
 .Counter.Orange,
 .Counter .Tile.Orange {
@@ -9854,7 +9854,7 @@ div.LineInfo {
     .DesignSystem .SuperCard_Left.BgGreen,
     .LayoutBlank .SuperCard_Left.BgGreen,
     .LayoutBase .SuperCard_Left.BgGreen {
-      background-color: #c2dea8; }
+      background-color: #daebca; }
     .DesignSystem .SuperCard_Left.BgBlue,
     .LayoutBlank .SuperCard_Left.BgBlue,
     .LayoutBase .SuperCard_Left.BgBlue {
@@ -10601,7 +10601,7 @@ div.LineInfo {
       font-size: 1.143em;
       line-height: 1.09; }
     .CounterBox .Counter.Vacant {
-      background-color: #c2dea8;
+      background-color: #daebca;
       color: #578329; }
     .CounterBox .Counter.Reserved {
       background-color: #e6e2aa;
@@ -10610,7 +10610,7 @@ div.LineInfo {
       background-color: #ebebeb;
       color: #777777; }
     .CounterBox .Counter.Min {
-      background-color: #c2dea8;
+      background-color: #daebca;
       color: #578329; }
     .CounterBox .Counter.Med {
       background-color: #f5f4e0;
@@ -12681,7 +12681,7 @@ div.ActionsMenu-item {
   .Page .Appointment_Icon.blueCircle {
     border: 2px solid #039be5; }
   .Page .Appointment_Icon.greenCircle {
-    border: 2px solid #c2dea8; }
+    border: 2px solid #daebca; }
   .Page .Appointment_Icon.nopresence {
     border: none;
     color: #d6d6d6; }
@@ -12853,8 +12853,8 @@ div.ActionsMenu-item {
     .LayoutBlank .StatusBadges.BadgeGreen,
     .LayoutBase .StatusBadges.BadgeGreen,
     .LayoutPopup .StatusBadges.BadgeGreen {
-      border: 1px solid #c2dea8;
-      background-color: #c2dea8;
+      border: 1px solid #daebca;
+      background-color: #daebca;
       border-radius: 2px;
       color: #7cb342; }
     .DesignSystem .StatusBadges.BadgeGrey,
@@ -12880,7 +12880,7 @@ div.ActionsMenu-item {
       border: 1px solid #ffffff;
       background-color: #ffffff;
       border-radius: 2px;
-      color: #c2dea8; }
+      color: #daebca; }
     .DesignSystem .StatusBadges.IconTextRed,
     .LayoutBlank .StatusBadges.IconTextRed,
     .LayoutBase .StatusBadges.IconTextRed,
@@ -13659,7 +13659,7 @@ div.ActionsMenu-item {
     .CardBox.ColorBeige .CardCount {
       color: #928d09; }
   .CardBox.ColorGreen {
-    background-color: #c2dea8;
+    background-color: #daebca;
     border: none; }
     .CardBox.ColorGreen .CardCount {
       color: #578329; }
@@ -19112,7 +19112,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   padding: 8px 16px;
   width: 100%; }
   .RoomStatus.Free {
-    background-color: #c2dea8; }
+    background-color: #daebca; }
   .RoomStatus.Full {
     background-color: #ebebeb; }
 
@@ -20786,7 +20786,7 @@ body.PanelById.PanelOpened {
   .PersonCard__headerLeftInfo.Green {
     color: #333333; }
     .PersonCard__headerLeftInfo.Green .PersonCardIcon {
-      background-color: #c2dea8; }
+      background-color: #daebca; }
     .PersonCard__headerLeftInfo.Green.HasBorder {
       border-left: 2px solid #578329; }
       .PersonCard__headerLeftInfo.Green.HasBorder .icon {
@@ -27885,10 +27885,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   background-color: #7cb342; }
 
 .ColorLightGreenText {
-  color: #c2dea8; }
+  color: #daebca; }
 
 .ColorLightGreenBG {
-  background-color: #c2dea8; }
+  background-color: #daebca; }
 
 .ColorDarkGreenText {
   color: #578329; }
@@ -28445,7 +28445,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   .Page .Text_green_Sapphire {
     color: #00bfa5; }
   .Page .Text_lightGreen {
-    color: #c2dea8; }
+    color: #daebca; }
   .Page .Text_orange {
     color: #ffa000; }
   .Page .Text_orangeDark {
@@ -29433,7 +29433,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   background-color: #7cb342; }
 
 .LightGreen {
-  background-color: #c2dea8; }
+  background-color: #daebca; }
 
 .LightRed {
   background-color: #fad5d5; }
