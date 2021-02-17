@@ -20,7 +20,7 @@
 	}
 
 	&.ColorGreen {
-		background-color: rgba($regular-green, 0.3);
+		background-color: $light-green;
 		color: $dark-green;
 
 		.icon:last-of-type {
@@ -29,7 +29,7 @@
 	}
 
 	&.ColorOrange {
-		background-color: rgba($regular-orange, 0.3);
+		background-color: $light-yellow;
 		color: $dark-orange;
 
 		.icon:last-of-type {
