@@ -67,7 +67,12 @@
 		this.counter2.text(counter);
 	};
 
+	const close = widgetId => {
+		this.$component = $(`#${widgetId}`);
+		this.$component.removeClass('CollapsibleSidePanel--open');
+	};
+
 	const create = config => (window[config.widgetId] = new CollapsibleSidePanel(config));
 
-	SapphireWidgets.CollapsibleSidePanel = { create, updateCounter };
+	SapphireWidgets.CollapsibleSidePanel = { create, close, updateCounter };
 })(jQuery, window, SapphireWidgets);
