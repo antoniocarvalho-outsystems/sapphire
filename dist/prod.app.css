@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106003 || Generated: Fri Feb 19 2021 16:34:31 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.106004 || Generated: Fri Feb 19 2021 18:00:31 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14310,6 +14310,7 @@ div.CircledArrow {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   height: auto;
+  height: 100%;
   margin: -16px;
   min-height: 100vh;
   position: absolute;
@@ -16482,18 +16483,15 @@ div.CircledArrow {
             align-items: center;
     background-color: #f3f3f3;
     border-bottom: 1px solid #f3f3f3;
+    display: -webkit-box;
+    display: flex;
     height: 40px;
     padding: 0 16px; }
   .ExpandableList .ExpandableLink__Link {
     color: #777777;
     font-size: 0.857em; }
   .ExpandableList .ExpandableLink__Icon .icon {
-    border: none;
-    font-size: 1.429em;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    -webkit-transition: none;
-    transition: none; }
+    border-color: #777777; }
     .ExpandableList .ExpandableLink__Icon .icon:hover {
       background-color: transparent; }
     .ExpandableList .ExpandableLink__Icon .icon::before {
