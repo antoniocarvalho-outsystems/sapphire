@@ -115,6 +115,7 @@
 			align-items: center;
 			background-color: $body-color;
 			border-bottom: 1px solid $body-color;
+			display: flex;
 			height: 40px;
 			padding: 0 $sapphire-sizes--medium;
 		}
@@ -126,10 +127,7 @@
 
 		&__Icon {
 			.icon {
-				border: none;
-				font-size: $font-size-heading2;
-				transform: rotate(180deg);
-				transition: none;
+				border-color: $regular-grey;
 
 				&:hover {
 					background-color: transparent;

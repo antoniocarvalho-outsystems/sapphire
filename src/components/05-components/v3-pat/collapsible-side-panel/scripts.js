@@ -10,15 +10,7 @@
 		}
 
 		openCloseSidePanel(toOpen) {
-			const $clinicianAside = $('.ClinicianWorkArea-columns-small');
-
 			if (toOpen) {
-				if ($clinicianAside.length) {
-					this.$content.css({
-						height: $clinicianAside.outerHeight(),
-					});
-				}
-
 				this.$component.addClass('CollapsibleSidePanel--open');
 			} else {
 				this.$component.removeClass('CollapsibleSidePanel--open');
