@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106006 || Generated: Mon Feb 22 2021 10:09:57 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.106007 || Generated: Mon Feb 22 2021 11:59:56 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14285,6 +14285,8 @@ div.CircledArrow {
     min-height: 20px;
     min-width: 20px;
     padding: 3px; }
+    .CollapsibleSidePanel__Title .Counter.ColorLightGreyBG, .CollapsibleSidePanel__PanelTitle .Counter.ColorLightGreyBG {
+      color: #5c5c5c; }
 
 .CollapsibleSidePanel__PanelHeader {
   -webkit-box-align: center;
