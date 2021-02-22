@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106004 || Generated: Fri Feb 19 2021 18:00:31 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.106005 || Generated: Mon Feb 22 2021 10:06:35 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7221,8 +7221,8 @@ a.Button.IsDefault,
 
 .LinkHover {
   color: #333333;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out; }
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out; }
   .LinkHover:link, .LinkHover:visited {
     color: #333333; }
   .LinkHover:hover {
