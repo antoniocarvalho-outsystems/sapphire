@@ -57,6 +57,8 @@
 
 		this.counter1.text(counter);
 		this.counter2.text(counter);
+
+		if ((counter = 0)) this.counter2.addClass('ColorLightGreyBG');
 	};
 
 	const close = widgetId => {

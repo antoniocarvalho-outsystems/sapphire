@@ -55,6 +55,10 @@
 			min-height: 20px;
 			min-width: 20px;
 			padding: 3px;
+
+			&.ColorLightGreyBG {
+				color: $mid-dark-grey;
+			}
 		}
 	}
 
