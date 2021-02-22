@@ -61,8 +61,11 @@
 		if (+counter === 0) this.counter2.addClass('ColorLightGreyBG');
 	};
 
-	const close = widgetId => {
+	const close = (widgetId, hideHeader) => {
 		this.$component = $(`#${widgetId}`).find('.CollapsibleSidePanel');
+
+		if (hideHeader) this.$component.addClass('CollapsibleSidePanel--headerHidden');
+
 		this.$component.removeClass('CollapsibleSidePanel--open');
 	};
 
