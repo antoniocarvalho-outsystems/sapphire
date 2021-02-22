@@ -62,7 +62,7 @@
 	};
 
 	const close = widgetId => {
-		this.$component = $(`#${widgetId}`);
+		this.$component = $(`#${widgetId}`).find('.CollapsibleSidePanel');
 		this.$component.removeClass('CollapsibleSidePanel--open');
 	};
 
