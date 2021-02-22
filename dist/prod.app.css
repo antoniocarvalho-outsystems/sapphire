@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106009 || Generated: Mon Feb 22 2021 12:15:04 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.106010 || Generated: Mon Feb 22 2021 12:27:57 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14247,6 +14247,11 @@ div.CircledArrow {
   z-index: 1; }
   .CollapsibleSidePanel--open .CollapsibleSidePanel__Content * {
     opacity: 1; }
+
+.CollapsibleSidePanel--headerHidden {
+  height: 0;
+  padding: 0;
+  visibility: hidden; }
 
 .CollapsibleSidePanel__Header {
   -webkit-box-align: center;
