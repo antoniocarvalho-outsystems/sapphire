@@ -2,10 +2,6 @@ body.PanelOpened .daterangepicker {
 	z-index: 102;
 }
 
-.ResizeParentIframe .daterangepicker {
-	width: 220px;
-}
-
 /*Iframe exception*/
 @media (min-width: 564px) {
 	iframe .daterangepicker.single .ranges,
