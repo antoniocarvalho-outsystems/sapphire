@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106010 || Generated: Mon Feb 22 2021 12:27:57 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.106011 || Generated: Thu Feb 25 2021 12:12:08 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16668,6 +16668,11 @@ div.CircledArrow {
     display: inline-block;
     font-family: "LatoBold";
     min-width: 80px; }
+  .ExpandableSmaller_header {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex; }
   .ExpandableSmaller__headerIcon {
     cursor: pointer;
     display: -webkit-inline-box;
