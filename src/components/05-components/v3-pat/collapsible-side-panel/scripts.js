@@ -21,8 +21,8 @@
 			this.$component = $(`#${this.options.widgetId}`);
 			this.$header = this.$component.find('.CollapsibleSidePanel__Header');
 			this.$content = this.$component.find('.CollapsibleSidePanel__Content');
-			this.counter1 = this.$component.find('.CollapsibleSidePanel__Title span.Counter');
-			this.counter2 = this.$component.find('.CollapsibleSidePanel__PanelTitle span.Counter');
+			this.$counter1 = this.$component.find('.CollapsibleSidePanel__Title span.Counter');
+			this.$counter2 = this.$component.find('.CollapsibleSidePanel__PanelTitle span.Counter');
 			this.$panelContent = this.$component.find('.CollapsibleSidePanel__PanelContent');
 			this.$close = this.$component.find('.CollapsibleSidePanel__PanelHeader .icon');
 
@@ -30,18 +30,10 @@
 			this.$close.on('click', () => this.openCloseSidePanel(false));
 
 			if (this.options.isAutoCounter) {
-				let total = 0;
-				const counters = this.$panelContent.find('.ExapandablePlaceholder.Counter');
+				calculateCounter(this.$panelContent, this.$counter1, this.$counter2);
 
-				counters.each(function() {
-					total += +$(this).text();
-				});
-
-				this.counter1.text(total);
-				this.counter2.text(total);
-
-				this.counter1.removeClass('Hidden');
-				this.counter2.removeClass('Hidden');
+				this.$counter1.removeClass('Hidden');
+				this.$counter2.removeClass('Hidden');
 			}
 
 			if (this.options.hideWhenEmpty && !this.$panelContent.text()) {
@@ -49,6 +41,18 @@
 			}
 		}
 	}
+
+	const calculateCounter = ($panelContent, $counter1, $counter1) => {
+		let total = 0;
+		const counters = $panelContent.find('.ExapandablePlaceholder.Counter');
+
+		counters.each(function() {
+			total += +$(this).text();
+		});
+
+		$counter1.text(total);
+		$counter2.text(total);
+	};
 
 	const updateCounter = (widgetId, counter) => {
 		this.$component = $(`#${widgetId}`);
@@ -61,7 +65,7 @@
 		if (+counter === 0) this.counter2.addClass('ColorLightGreyBG');
 	};
 
-	const close = (widgetId, hideHeader) => {
+	const close = (widgetId, hideHeader, updateCounter) => {
 		this.$component = $(`#${widgetId}`).find('.CollapsibleSidePanel');
 
 		if (hideHeader) this.$component.addClass('CollapsibleSidePanel--headerHidden');
@@ -69,7 +73,19 @@
 		this.$component.removeClass('CollapsibleSidePanel--open');
 	};
 
+	const checkEmpty = widgetId => {
+		this.$component = $(`#${widgetId}`).find('.CollapsibleSidePanel');
+		this.$panelContent = this.$component.find('.CollapsibleSidePanel__PanelContent');
+		this.$counter1 = this.$component.find('.CollapsibleSidePanel__Title span.Counter');
+		this.$counter2 = this.$component.find('.CollapsibleSidePanel__PanelTitle span.Counter');
+		this.$emptyMessage = this.$component.find('.CollapsibleEmptyMessage');
+
+		this.$emptyMessage.show();
+
+		calculateCounter(this.$panelContent, this.$counter1, this.$counter2);
+	};
+
 	const create = config => (window[config.widgetId] = new CollapsibleSidePanel(config));
 
-	SapphireWidgets.CollapsibleSidePanel = { create, close, updateCounter };
+	SapphireWidgets.CollapsibleSidePanel = { create, close, updateCounter, checkEmpty };
 })(jQuery, window, SapphireWidgets);
