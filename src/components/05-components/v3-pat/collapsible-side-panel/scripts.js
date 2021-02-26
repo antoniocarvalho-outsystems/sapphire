@@ -42,16 +42,16 @@
 		}
 	}
 
-	const calculateCounter = ($panelContent, $counter1, $counter1) => {
+	const calculateCounter = (panelContent, counter1, counter2) => {
 		let total = 0;
-		const counters = $panelContent.find('.ExapandablePlaceholder.Counter');
+		const counters = panelContent.find('.ExapandablePlaceholder.Counter');
 
 		counters.each(function() {
 			total += +$(this).text();
 		});
 
-		$counter1.text(total);
-		$counter2.text(total);
+		counter1.text(total);
+		counter2.text(total);
 	};
 
 	const updateCounter = (widgetId, counter) => {
