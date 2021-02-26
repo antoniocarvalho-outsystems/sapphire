@@ -52,6 +52,8 @@
 
 		counter1.text(total);
 		counter2.text(total);
+
+		if (total === 0) counter2.addClass('ColorLightGreyBG');
 	};
 
 	const updateCounter = (widgetId, counter) => {
