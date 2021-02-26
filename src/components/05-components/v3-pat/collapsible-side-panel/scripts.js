@@ -36,7 +36,10 @@
 				this.$counter2.removeClass('Hidden');
 			}
 
-			if (this.options.hideWhenEmpty && !this.$panelContent.text()) {
+			const hasEmptyMessage = this.$panelContent.find('.CollapsibleEmptyMessage');
+			const contentToVerify = hasEmptyMessage.length ? this.$panelContent.find('>:first-child') : this.$panelContent;
+
+			if (this.options.hideWhenEmpty && !contentToVerify.text()) {
 				this.$component.hide();
 			}
 		}
