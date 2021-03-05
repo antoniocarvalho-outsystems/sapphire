@@ -1,0 +1,494 @@
+.TemplatesWrapper {
+	.SectionFullContainer {
+		width: 100%;
+	}
+
+	.TemplateSectionTitle {
+		display: block;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-heading4;
+		padding: $sapphire-sizes--large 0;
+	}
+
+	.sectionContent {
+		border-bottom: 1px solid $light-grey;
+		padding-bottom: $sapphire-sizes--medium;
+	}
+
+	.table-container {
+		display: table;
+		padding-top: $sapphire-sizes--large;
+
+		.table-row {
+			display: table-row;
+		}
+
+		.table-cell {
+			display: table-cell;
+			padding-right: $sapphire-sizes--medium;
+		}
+
+		.table-header-row {
+			padding-bottom: 3px;
+		}
+	}
+
+	.template-item {
+		padding-bottom: $sapphire-sizes--medium;
+	}
+
+	.groupColumn {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+
+		&.groupColumn6,
+		&.groupColumn5,
+		&.groupColumn4,
+		&.groupColumn3,
+		&.groupColumn2 {
+			padding-right: $sapphire-sizes--medium;
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+
+		&.groupColumn6 {
+			width: calc(calc(100% / 6) - 1px);
+		}
+
+		&.groupColumn5 {
+			width: calc(calc(100% / 5) - 1px);
+		}
+
+		&.groupColumn4 {
+			width: calc(calc(100% / 4) - 1px);
+		}
+
+		&.groupColumn3 {
+			width: calc(calc(100% / 3) - 1px);
+		}
+
+		&.groupColumn2 {
+			width: calc(calc(100% / 2) - 1px);
+		}
+
+		&.groupColumn1 {
+			width: 100%;
+		}
+	}
+}
+
+// WIP
+
+.ButtonCheckboxInput input {
+	margin: 0px 0px 10px 10px;
+}
+
+.template-item-input-block .RadioInput {
+	margin: 10px 0;
+}
+
+.template-item-input-block .RadioInput label {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.ButtonCheckboxInput input {
+	margin: 0px 0px 10px 0px;
+}
+
+.template-item-input-block .RadioInput:not(:first-child) {
+	margin: 10px 0;
+}
+
+.ButtonCheckboxInput {
+	display: block;
+	margin: 0;
+	margin-left: 10px;
+}
+
+.template-item .FormHorizontal > div {
+	margin: 0;
+}
+
+.template-item-input-block .RadioInput {
+	padding-left: 0;
+}
+
+.WellBox-row-content {
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.template-item .FormVertical .VerticalInputLabel + div {
+	padding: 0;
+}
+
+.RadioInput:first-child {
+	margin-top: 0px;
+}
+
+.template-item .FormVertical .VerticalInputLabel,
+.template-item .FormVertical .VerticalInputLabel + div {
+	display: block;
+	margin-top: 10px;
+}
+
+.template-item .FormVertical .VerticalInputLabel:empty {
+	margin-top: 0;
+}
+
+.TemplatesWrapper div.SelectableList-Line > div.LineHeader > div.Icon:empty + div.Label {
+	padding-left: 20px;
+}
+
+.TemplatesWrapper div.SelectableList-Line > span > div.ExpandableContent {
+	padding: 10px 20px;
+}
+
+.template-item .FormHorizontal > div {
+	width: 100%;
+}
+
+/*DE62705*/
+.template-item-aftertext {
+	margin-left: 0 !important;
+}
+
+.Inline .template-item .DateInput_Container.Datetimecontent {
+	width: 100%;
+}
+
+.TextBoxCheckBoxAlign {
+	margin-top: -2cm;
+}
+
+.cke_toolbar {
+	display: block;
+}
+
+.FA .cke_toolbar,
+.AR .cke_toolbar {
+	float: right;
+}
+
+.sectionWrapper {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.sectionTitleLarge {
+	font-size: 130%;
+}
+
+.sectionTitleSmall {
+	font-size: 70%;
+}
+
+.sectionTitleBold {
+	font-weight: bold;
+}
+
+.sectionTitleItalic {
+	font-style: italic;
+}
+
+.sectionHeaderBorder {
+	border-bottom: solid 1px #bdbdbd;
+}
+
+.sectionHeader > *:first-child {
+	margin-top: 0;
+}
+
+.sectionHeader > *:last-child {
+	margin-bottom: 0;
+}
+
+.sectionHeader.sectionHeaderBorderAndBG {
+	background-color: lightgrey;
+}
+
+.SectionFullContainer .SectionTitles.Area {
+	margin-bottom: 0;
+	min-height: 55px;
+}
+
+.itemGroup {
+	box-sizing: border-box;
+	display: block;
+	padding: 0;
+}
+
+.itemGroup.borderLeft {
+	border-left: 1px solid #bdbdbd;
+}
+
+.itemGroup.borderRight {
+	border-right: 1px solid #bdbdbd;
+}
+
+.itemGroup.borderTop {
+	border-top: 1px solid #bdbdbd;
+}
+
+.itemGroup.borderBottom {
+	border-bottom: 1px solid #bdbdbd;
+}
+
+.groupColumn.groupColumn6 div.iconHorizontal_label,
+.groupColumn.groupColumn5 div.iconHorizontal_label,
+.groupColumn.groupColumn4 div.iconHorizontal_label,
+.groupColumn.groupColumn3 div.iconHorizontal_label,
+.groupColumn.groupColumn2 div.iconHorizontal_label {
+	display: none;
+}
+
+div.NoPrompt > span > div.template-item-input-block {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.SectionNavigationBar {
+	float: left;
+	width: 15%;
+}
+
+.SectionContainer {
+	width: 85%;
+}
+
+.Heading4.MultiMarginTop10 {
+	margin-top: 10px;
+}
+
+span.SavedFeedback {
+	background-color: #16979f;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 10px;
+	padding: 0 5px;
+	position: absolute;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.AR span.SavedFeedback {
+	font-size: 15px;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+
+/* END */
+.row-n {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.row-n > span {
+	width: inherit;
+}
+
+.row-n .cell-c {
+	background-color: #fff;
+}
+
+.row-n .ListRecords {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.row-n:not(:last-of-type) {
+	border-bottom: 1px solid #ddd;
+}
+
+.row-n .cell-c:not(:first-of-type) {
+	border-left: 1px solid #ddd;
+	box-sizing: border-box;
+	color: #5d686f;
+	font-size: 1rem;
+	padding: 10px 7px;
+}
+
+.row-n .cell-c:not(:first-of-type).NotCurrent {
+	background-color: #f7f7f7;
+}
+
+.shift-row {
+	width: 100%;
+}
+
+.shift-row > div,
+.shift-row > span > div {
+	background-color: #fff;
+}
+
+.shift-row,
+.shift-row > span {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.shift-row:not(:last-of-type) {
+	border-bottom: 1px solid #ddd;
+}
+
+.shift-row > div:not(:first-of-type),
+.shift-row > span > div:not(:first-of-type) {
+	border-left: 1px solid #ddd;
+	box-sizing: border-box;
+	color: #5d686f;
+	font-size: 1rem;
+	padding: 10px 7px;
+}
+
+.no-medication {
+	background-color: #f5f5f5;
+	color: #c9cdce;
+	font-family: globeregular;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.t-not-given {
+	background-color: #fff0ef;
+}
+
+.t-given {
+	background-color: #e6f5f5;
+}
+
+.t-overdue {
+	background-color: #fff;
+}
+
+.t-not-given,
+.t-given,
+.t-overdue {
+	padding: 15px 10px;
+}
+
+.textsize {
+	font-size: 1.167rem;
+	margin-right: 5px;
+}
+
+div.title-wrapper {
+	vertical-align: top;
+}
+
+div.hr-line {
+	border-bottom: 1px solid #d0d4d6;
+	padding-bottom: 15px;
+}
+
+div.blank-line {
+	clear: both;
+	height: 1em;
+}
+
+div.table-title {
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+div.table-wrapper {
+	display: inline-block;
+}
+
+div.template-item-prompt-block {
+	display: block;
+	vertical-align: baseline;
+}
+
+div.template-item-prompt-inline {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+div.template-item-input-block {
+	display: block;
+	margin-left: 0;
+	margin-top: 0px;
+}
+
+div.template-item-input-inline {
+	display: inline-block;
+	margin-top: 0;
+}
+
+div.template-item-aftertext {
+	display: inline-block;
+	margin-top: 0;
+}
+
+div.template-item .TextInput_Container {
+	margin: 0;
+}
+
+.Inline:not(:first-child) .OSInline .FormVertical,
+.Inline:not(:first-child) .OSInline .formMargintop {
+	margin-left: 20px;
+}
+
+.AR .Inline:not(:first-child) .OSInline .FormVertical,
+.AR .Inline:not(:first-child) .OSInline .formMargintop {
+	margin-right: 20px;
+}
+
+div.NoPrompt > div.template-item-prompt-block,
+div.NoPrompt > div.template-item-prompt-inline,
+div.template-item-aftertext:empty {
+	display: none;
+}
+
+div.NoPrompt > div.template-item-input-block {
+	margin-top: 0;
+}
+
+.table-header-group {
+	display: table-header-group;
+}
+
+.table-row-group {
+	display: table-row-group;
+}
+
+// div.SelectableList-Line > span > div.ExpandableContent {
+// 	background-color: #fff;
+// }
+
+.SizeSmall {
+	height: 10px;
+	width: 10px;
+}
+
+.SizeMedium {
+	height: 40px;
+	width: 40px;
+}
+
+.SizeLarge {
+	height: 80px;
+	width: 80px;
+}
+
+.PopupSmall {
+	background-color: #fff;
+}
+
+.PopupSmall {
+	min-height: 415px;
+	min-width: 350px;
+}
