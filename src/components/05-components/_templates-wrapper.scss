@@ -15,9 +15,15 @@
 		padding-bottom: $sapphire-sizes--medium;
 	}
 
+	// .table-wrapper {
+	//   display: inline-block;
+	//   width: 100%;
+	// }
+
 	.table-container {
 		display: table;
 		padding-top: $sapphire-sizes--large;
+		width: 100%;
 
 		.table-row {
 			display: table-row;
@@ -26,6 +32,10 @@
 		.table-cell {
 			display: table-cell;
 			padding-right: $sapphire-sizes--medium;
+
+			&:last-of-type {
+				padding-right: 0;
+			}
 		}
 
 		.table-header-row {
@@ -35,6 +45,18 @@
 
 	.template-item {
 		padding-bottom: $sapphire-sizes--medium;
+	}
+
+	.template-item-input-block {
+		.RadioInput {
+			padding: $sapphire-sizes--small;
+			padding-left: 0;
+
+			label {
+				display: inline-block;
+				height: 100%;
+			}
+		}
 	}
 
 	.groupColumn {
@@ -87,22 +109,8 @@
 	margin: 0px 0px 10px 10px;
 }
 
-.template-item-input-block .RadioInput {
-	margin: 10px 0;
-}
-
-.template-item-input-block .RadioInput label {
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-
 .ButtonCheckboxInput input {
 	margin: 0px 0px 10px 0px;
-}
-
-.template-item-input-block .RadioInput:not(:first-child) {
-	margin: 10px 0;
 }
 
 .ButtonCheckboxInput {
@@ -115,10 +123,6 @@
 	margin: 0;
 }
 
-.template-item-input-block .RadioInput {
-	padding-left: 0;
-}
-
 .WellBox-row-content {
 	margin-bottom: 10px;
 	padding: 0;
@@ -126,10 +130,6 @@
 
 .template-item .FormVertical .VerticalInputLabel + div {
 	padding: 0;
-}
-
-.RadioInput:first-child {
-	margin-top: 0px;
 }
 
 .template-item .FormVertical .VerticalInputLabel,
@@ -401,10 +401,6 @@ div.blank-line {
 div.table-title {
 	font-size: 1.5em;
 	font-weight: bolder;
-}
-
-div.table-wrapper {
-	display: inline-block;
 }
 
 div.template-item-prompt-block {
