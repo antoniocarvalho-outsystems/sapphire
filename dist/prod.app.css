@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106019 || Generated: Fri Mar 05 2021 14:09:15 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.106020 || Generated: Fri Mar 05 2021 15:17:24 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10287,17 +10287,27 @@ div.LineInfo {
 
 .TemplatesWrapper .table-container {
   display: table;
-  padding-top: 24px; }
+  padding-top: 24px;
+  width: 100%; }
   .TemplatesWrapper .table-container .table-row {
     display: table-row; }
   .TemplatesWrapper .table-container .table-cell {
     display: table-cell;
     padding-right: 16px; }
+    .TemplatesWrapper .table-container .table-cell:last-of-type {
+      padding-right: 0; }
   .TemplatesWrapper .table-container .table-header-row {
     padding-bottom: 3px; }
 
 .TemplatesWrapper .template-item {
   padding-bottom: 16px; }
+
+.TemplatesWrapper .template-item-input-block .RadioInput {
+  padding: 8px;
+  padding-left: 0; }
+  .TemplatesWrapper .template-item-input-block .RadioInput label {
+    display: inline-block;
+    height: 100%; }
 
 .TemplatesWrapper .groupColumn {
   display: inline-block;
@@ -10324,19 +10334,8 @@ div.LineInfo {
 .ButtonCheckboxInput input {
   margin: 0px 0px 10px 10px; }
 
-.template-item-input-block .RadioInput {
-  margin: 10px 0; }
-
-.template-item-input-block .RadioInput label {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle; }
-
 .ButtonCheckboxInput input {
   margin: 0px 0px 10px 0px; }
-
-.template-item-input-block .RadioInput:not(:first-child) {
-  margin: 10px 0; }
 
 .ButtonCheckboxInput {
   display: block;
@@ -10346,18 +10345,12 @@ div.LineInfo {
 .template-item .FormHorizontal > div {
   margin: 0; }
 
-.template-item-input-block .RadioInput {
-  padding-left: 0; }
-
 .WellBox-row-content {
   margin-bottom: 10px;
   padding: 0; }
 
 .template-item .FormVertical .VerticalInputLabel + div {
   padding: 0; }
-
-.RadioInput:first-child {
-  margin-top: 0px; }
 
 .template-item .FormVertical .VerticalInputLabel,
 .template-item .FormVertical .VerticalInputLabel + div {
@@ -10585,9 +10578,6 @@ div.blank-line {
 div.table-title {
   font-size: 1.5em;
   font-weight: bolder; }
-
-div.table-wrapper {
-  display: inline-block; }
 
 div.template-item-prompt-block {
   display: block;
