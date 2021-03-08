@@ -32,9 +32,9 @@ SapphireWidgets.ConfirmationPanel = {
 	},
 
 	setPanelBehavior: function() {
-		$('.Panel[panel-trigger-elementid]').each(function() {
+		$('.Panel[confirmation-panel-trigger-elementid]').each(function() {
 			var this_panel = $(this);
-			$('#' + this_panel.attr('panel-trigger-elementid') + '')
+			$('#' + this_panel.attr('confirmation-panel-trigger-elementid') + '')
 				.off('click')
 				.on('click', function() {
 					SapphireWidgets.ConfirmationPanel.togglePanel(this_panel.attr('id'));
