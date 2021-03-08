@@ -32,6 +32,7 @@
 	@include flex-center-vertically;
 
 	border-bottom: 1px solid $light-grey;
+	gap: $sapphire-sizes--small;
 	justify-content: space-between;
 	padding: $sapphire-sizes--medium;
 
