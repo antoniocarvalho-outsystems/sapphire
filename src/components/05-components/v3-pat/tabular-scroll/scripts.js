@@ -11,6 +11,7 @@
 			osAjaxBackend.BindAfterAjaxRequest(function() {
 				$('.TabularScroll').each(function(i, el) {
 					setupTabularScroll($(el));
+					resizeRows($(el));
 				});
 			});
 		});
@@ -52,6 +53,28 @@
 		} else {
 			$tabularScroll.find('.TopScrollWrapper').css('visibility', 'hidden');
 		}
+	};
+
+	const resizeRows = function($tabularScroll) {
+		let arrrayHeight = [];
+		const $tableCenter = $tabularScroll.find('.TabularScroll-center-table table tbody');
+		const $tableRight = $tabularScroll.find('.TabularScroll-right .ListRecords');
+		const $tableLeft = $tabularScroll.find('.TabularScroll-left .ListRecords');
+
+		arrrayHeight = $tableCenter
+			.children('tr')
+			.map(function() {
+				return $(this).height();
+			})
+			.get();
+
+		$tableRight.children().each(function(index) {
+			$(this).css('height', arrrayHeight[index] + 'px');
+		});
+
+		$tableLeft.children().each(function(index) {
+			$(this).css('height', arrrayHeight[index] + 'px');
+		});
 	};
 
 	SapphireWidgets.TabularScroll = { create };
