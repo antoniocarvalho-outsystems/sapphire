@@ -1,17 +1,13 @@
 .LayoutBlank.Page {
-  background-color: #fff;
-  border: none;
+	background-color: #fff;
+	border: none;
 }
 
 .LayoutBlank.Page.SidebarIframe,
 .LayoutBlank.Page.MainInteractiveCard {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 .LayoutBlank.Page.MainInteractiveCard {
-  padding: 0;
-}
-
-.LayoutBlank.Page.SidemenuIframe {
-  background-color: $sapphire-blue;
+	padding: 0;
 }
