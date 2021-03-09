@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106024 || Generated: Mon Mar 08 2021 15:27:58 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.106025 || Generated: Tue Mar 09 2021 16:32:15 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11746,9 +11746,6 @@ html .Page .PatientDetailsLayout {
 
 .LayoutBlank.Page.MainInteractiveCard {
   padding: 0; }
-
-.LayoutBlank.Page.SidemenuIframe {
-  background-color: #2a5a6e; }
 
 .LayoutEmergency .SideMenu__PageTitle {
   display: block; }
