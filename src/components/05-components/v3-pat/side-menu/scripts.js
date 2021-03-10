@@ -38,6 +38,23 @@
 			}
 		}
 
+		windowClick($component) {
+			$(window)
+				.off('click.SideMenuStructure')
+				.on('click.SideMenuStructure', event => {
+					if ($component.hasClass('SideMenu--tabsTheme')) {
+						const isMenuItem = event.target.offsetParent && $(event.target.offsetParent).hasClass('MenuItem');
+
+						if (!isMenuItem) {
+							$component.find('.SideMenu__MenuItems .active').removeClass('active');
+							$component.find('.SideMenu__MenuItems .show').removeClass('show');
+
+							$(window).off('click.SideMenuStructure');
+						}
+					}
+				});
+		}
+
 		onComponentInit() {
 			this.setMainMenuWidth();
 
@@ -48,11 +65,20 @@
 			this.$tabItem = this.$component.find('.SideMenu__TabItems .MenuItem');
 			this.$menuItem = this.$component.find('.SideMenu__MenuItems .MenuItem__ItemTitle');
 			this.$subItem = this.$component.find('.SideMenu__MenuItems .MenuItem_subItems');
+			this.$department = this.$component.find('.SideMenu__Tabs .DepartmentName');
+
+			this.$trigger.hide();
+			this.$department.hide();
 
 			this.$iframeContainer = this.$component.find('.iframeContainer');
 			this.$iframeContainer.append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>');
 			this.$iframeContainer.find('iframe').load(() => {
 				this.$iframeContainer.find('.lds-ring').fadeOut();
+
+				if (!this.$component.hasClass('SideMenu--tabsTheme')) {
+					this.$trigger.show();
+					this.$department.show();
+				}
 			});
 
 			this.$trigger.on('click', () => this.openCloseMenu(true));
@@ -76,18 +102,25 @@
 
 				if ($link.length) $link.get(0).click();
 
-				this.$component
-					.find('.SideMenu__MenuItems .active')
-					.not($target)
-					.removeClass('active');
+				if ($target.hasClass('active')) {
+					$target.removeClass('active');
+					$subItems.removeClass('show');
+				} else {
+					this.$component
+						.find('.SideMenu__MenuItems .active')
+						.not($target)
+						.removeClass('active');
 
-				this.$component
-					.find('.SideMenu__MenuItems .show')
-					.not($target)
-					.removeClass('show');
+					this.$component
+						.find('.SideMenu__MenuItems .show')
+						.not($target)
+						.removeClass('show');
 
-				$target.toggleClass('active');
-				$subItems.toggleClass('show');
+					$target.toggleClass('active');
+					$subItems.toggleClass('show');
+
+					this.windowClick(this.$component);
+				}
 			});
 
 			this.$subItem.on('click', event => event.stopPropagation());
