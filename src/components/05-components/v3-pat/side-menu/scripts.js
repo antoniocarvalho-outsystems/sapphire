@@ -42,15 +42,13 @@
 			$(window)
 				.off('click.SideMenuStructure')
 				.on('click.SideMenuStructure', event => {
-					if ($component.hasClass('SideMenu--tabsTheme')) {
-						const isMenuItem = event.target.offsetParent && $(event.target.offsetParent).hasClass('MenuItem');
+					const isMenuItem = event.target.offsetParent && $(event.target.offsetParent).hasClass('MenuItem');
 
-						if (!isMenuItem) {
-							$component.find('.SideMenu__MenuItems .active').removeClass('active');
-							$component.find('.SideMenu__MenuItems .show').removeClass('show');
+					if (!isMenuItem) {
+						$component.find('.SideMenu__MenuItems .active').removeClass('active');
+						$component.find('.SideMenu__MenuItems .show').removeClass('show');
 
-							$(window).off('click.SideMenuStructure');
-						}
+						$(window).off('click.SideMenuStructure');
 					}
 				});
 		}
@@ -119,7 +117,9 @@
 					$target.toggleClass('active');
 					$subItems.toggleClass('show');
 
-					this.windowClick(this.$component);
+					if ($component.hasClass('SideMenu--tabsTheme')) {
+						this.windowClick(this.$component);
+					}
 				}
 			});
 
