@@ -117,7 +117,7 @@
 					$target.toggleClass('active');
 					$subItems.toggleClass('show');
 
-					if ($component.hasClass('SideMenu--tabsTheme')) {
+					if (this.$component.hasClass('SideMenu--tabsTheme')) {
 						this.windowClick(this.$component);
 					}
 				}
