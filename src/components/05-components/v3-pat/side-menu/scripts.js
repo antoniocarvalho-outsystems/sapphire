@@ -134,7 +134,5 @@
 
 	const create = config => (window[config.widgetId] = new SideMenu(config));
 
-	SapphireWidgets.SideMenu = {
-		create,
-	};
+	SapphireWidgets.SideMenu = { create };
 })(jQuery, window, SapphireWidgets);
