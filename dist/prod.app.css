@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106025 || Generated: Tue Mar 09 2021 16:32:15 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.106026 || Generated: Wed Mar 10 2021 12:27:53 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -25652,6 +25652,95 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     z-index: 1; }
     .SideMenu--open .SideMenu__Content * {
       opacity: 1; }
+  .SideMenu--tabsTheme {
+    display: -webkit-box;
+    display: flex; }
+  .SideMenu--tabsTheme .SideMenu__Tabs, .SideMenu--tabsTheme .SideMenu__Trigger, .SideMenu--tabsTheme .SideMenu__MoreOptions {
+    display: none; }
+  .SideMenu--tabsTheme .SideMenu__Header {
+    -webkit-box-flex: 0;
+            flex: 0; }
+  .SideMenu--tabsTheme .SideMenu__Content {
+    border-bottom: 1px solid #d6d6d6;
+    height: 64px;
+    padding: 0;
+    position: initial;
+    -webkit-transition: unset;
+    transition: unset;
+    visibility: visible;
+    width: 100%; }
+    .SideMenu--tabsTheme .SideMenu__Content * {
+      opacity: 1;
+      -webkit-transition: unset !important;
+      transition: unset !important; }
+  .SideMenu--tabsTheme .SideMenu__MenuItems {
+    display: -webkit-box;
+    display: flex;
+    gap: 32px;
+    height: 100%;
+    margin-top: 0;
+    overflow: unset; }
+    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem,
+    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem__ItemTitle {
+      height: 100%;
+      overflow: unset;
+      padding: 0;
+      width: auto; }
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem:hover,
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem__ItemTitle:hover {
+        background: transparent !important; }
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem .icon,
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem__ItemTitle .icon {
+        display: none; }
+    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem {
+      border-bottom: 3px solid; }
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem:hover {
+        border-bottom-color: #00ac94; }
+        .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem:hover .MenuItem_label a {
+          color: #00ac94; }
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem.active, .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem.activeIndicator {
+        border-bottom-color: #00ac94; }
+        .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem.active .MenuItem_label a, .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem.activeIndicator .MenuItem_label a {
+          color: #00ac94; }
+    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_label {
+      pointer-events: none; }
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_label a {
+        color: #777777;
+        font-family: "LatoBold";
+        font-size: 1.143em;
+        pointer-events: none; }
+    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems {
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      left: -32px;
+      min-width: 300px;
+      position: absolute;
+      top: 52px; }
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems.show a:first-child {
+        margin-top: 16px; }
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems a,
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems a:link {
+        -webkit-box-align: center;
+                align-items: center;
+        display: -webkit-inline-box;
+        display: inline-flex;
+        font-size: 1.143em;
+        height: 44px;
+        line-height: unset;
+        width: 100%; }
+      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems .ListRecords {
+        max-height: 450px;
+        overflow-y: scroll; }
+        .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems .ListRecords::-webkit-scrollbar {
+          background-color: #fff;
+          height: 7px;
+          width: 7px; }
+        .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems .ListRecords::-webkit-scrollbar-thumb {
+          border: 5px solid #d6d6d6;
+          border-radius: 4px; }
+    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_icon {
+      display: none; }
   .SideMenu__Header {
     -webkit-box-align: center;
             align-items: center;
@@ -25863,8 +25952,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
         visibility: hidden; }
         .SideMenu__MenuItems .MenuItem_subItems.show {
           visibility: visible; }
-          .SideMenu__MenuItems .MenuItem_subItems.show *:last-child {
-            margin-bottom: 15px; }
+          .SideMenu__MenuItems .MenuItem_subItems.show a:last-child {
+            margin-bottom: 16px; }
         .SideMenu__MenuItems .MenuItem_subItems *:empty {
           display: none; }
         .SideMenu__MenuItems .MenuItem_subItems > a,
