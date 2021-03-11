@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106028 || Generated: Wed Mar 10 2021 12:57:39 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.106029 || Generated: Thu Mar 11 2021 16:06:23 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20177,14 +20177,12 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       line-height: 19px;
       margin: 5px 5px;
       padding: 5px 10px;
-      position: relative;
-      -webkit-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in; }
+      position: relative; }
       .MenuItem_subItems > a:hover,
       .MenuItem_subItems > a:link:hover,
       .MenuItem_subItems > .ListRecords > a:hover,
       .MenuItem_subItems > .ListRecords > a:link:hover {
-        color: #00bfa5 !important; }
+        color: #00ac94 !important; }
 
 .AR .Menubar__extraContainer,
 .FA .Menubar__extraContainer {
@@ -22291,7 +22289,8 @@ a .PersonCard {
     text-align: center;
     width: calc(100% / 7);
     z-index: 1;
-    border: none; }
+    border: none;
+    pointer-events: none; }
     .CalendarWidget__days .Calendar_EmptyDay:hover .Calendar_SmallDayLink {
       background-color: #fff; }
 
@@ -22308,7 +22307,7 @@ a .PersonCard {
   width: calc(100% / 7);
   z-index: 1;
   position: relative; }
-  .CalendarWidget__daysNumber:hover .Calendar_SmallDayLink {
+  .CalendarWidget__daysNumber a:hover .Calendar_SmallDayLink {
     background-color: #ebebeb; }
   .CalendarWidget__daysNumber .arrowLeft.green {
     bottom: 0;
@@ -25652,95 +25651,95 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     z-index: 1; }
     .SideMenu--open .SideMenu__Content * {
       opacity: 1; }
-  .SideMenu--tabsTheme {
-    display: -webkit-box;
-    display: flex; }
-  .SideMenu--tabsTheme .SideMenu__Tabs, .SideMenu--tabsTheme .SideMenu__Trigger, .SideMenu--tabsTheme .SideMenu__MoreOptions {
-    display: none; }
   .SideMenu--tabsTheme .SideMenu__Header {
     -webkit-box-flex: 0;
             flex: 0; }
-  .SideMenu--tabsTheme .SideMenu__Content {
-    border-bottom: 1px solid #d6d6d6;
-    height: 64px;
-    padding: 0;
-    position: initial;
-    -webkit-transition: unset;
-    transition: unset;
-    visibility: visible;
-    width: 100%; }
-    .SideMenu--tabsTheme .SideMenu__Content * {
-      opacity: 1;
-      -webkit-transition: unset !important;
-      transition: unset !important; }
-  .SideMenu--tabsTheme .SideMenu__MenuItems {
+  .SideMenu--tabsTheme .SideMenu__Trigger {
+    visibility: hidden; }
+  .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems {
     display: -webkit-box;
     display: flex;
     gap: 32px;
-    height: 100%;
+    height: 63px;
     margin-top: 0;
     overflow: unset; }
-    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem,
-    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem__ItemTitle {
+    .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems > span:empty {
+      display: none; }
+    .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem,
+    .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem__ItemTitle {
+      gap: 6px;
       height: 100%;
       overflow: unset;
       padding: 0;
+      white-space: nowrap;
       width: auto; }
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem:hover,
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem__ItemTitle:hover {
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem:hover,
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem__ItemTitle:hover {
         background: transparent !important; }
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem .icon,
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem__ItemTitle .icon {
-        display: none; }
-    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem {
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem .icon,
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem__ItemTitle .icon {
+        font-size: 10px;
+        margin-top: 3px; }
+    .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem {
       border-bottom: 3px solid; }
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem:hover {
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem:hover {
         border-bottom-color: #00ac94; }
-        .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem:hover .MenuItem_label a {
+        .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem:hover .icon,
+        .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem:hover .MenuItem_label a {
           color: #00ac94; }
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem.active, .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem.activeIndicator {
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.active, .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.activeIndicator {
         border-bottom-color: #00ac94; }
-        .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem.active .MenuItem_label a, .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem.activeIndicator .MenuItem_label a {
+        .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.active .MenuItem_label a, .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.activeIndicator .MenuItem_label a {
           color: #00ac94; }
-    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_label {
+    .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_label {
       pointer-events: none; }
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_label a {
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_label a {
         color: #777777;
         font-family: "LatoBold";
         font-size: 1.143em;
         pointer-events: none; }
-    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems {
+    .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems {
       background-color: #fff;
       border-radius: 4px;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-      left: -32px;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      left: -24px;
       min-width: 300px;
       position: absolute;
-      top: 52px; }
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems.show a:first-child {
+      top: 52px;
+      -webkit-transition: unset;
+      transition: unset; }
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems.show a:first-child {
         margin-top: 16px; }
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems a,
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems a:link {
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems a,
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems a:link {
         -webkit-box-align: center;
                 align-items: center;
-        display: -webkit-inline-box;
-        display: inline-flex;
+        display: -webkit-box;
+        display: flex;
         font-size: 1.143em;
         height: 44px;
         line-height: unset;
+        white-space: break-spaces;
         width: 100%; }
-      .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems .ListRecords {
+      .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems .ListRecords {
         max-height: 450px;
         overflow-y: scroll; }
-        .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems .ListRecords::-webkit-scrollbar {
+        .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems .ListRecords::-webkit-scrollbar {
           background-color: #fff;
           height: 7px;
           width: 7px; }
-        .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_subItems .ListRecords::-webkit-scrollbar-thumb {
+        .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems .ListRecords::-webkit-scrollbar-thumb {
           border: 5px solid #d6d6d6;
           border-radius: 4px; }
-    .SideMenu--tabsTheme .SideMenu__MenuItems .MenuItem_icon {
+    .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_icon {
       display: none; }
+  .SideMenu--tabsTheme .SideMenu__Tabs .iframeContainer {
+    display: none !important; }
   .SideMenu__Header {
     -webkit-box-align: center;
             align-items: center;
@@ -25962,9 +25961,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
           border: none;
           color: #333333;
           font-family: "LatoRegular";
+          font-size: 1em;
           line-height: 36px;
           margin: 0;
-          padding: 0 24px; }
+          padding-left: 60px; }
           .SideMenu__MenuItems .MenuItem_subItems > a:hover,
           .SideMenu__MenuItems .MenuItem_subItems > .ListRecords > a:hover {
             background-color: #f2fffd; }
