@@ -224,10 +224,10 @@
 			margin: 5px 5px;
 			padding: 5px 10px;
 			position: relative;
-			transition: all 0.2s ease-in;
+			// transition: all 0.2s ease-in;
 
 			&:hover {
-				color: $regular-alpha !important;
+				color: $regular-beta !important;
 			}
 		}
 	}

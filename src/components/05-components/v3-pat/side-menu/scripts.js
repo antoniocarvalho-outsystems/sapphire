@@ -65,7 +65,7 @@
 			this.$subItem = this.$component.find('.SideMenu__MenuItems .MenuItem_subItems');
 			this.$department = this.$component.find('.SideMenu__Tabs .DepartmentName');
 
-			this.$trigger.hide();
+			//this.$trigger.hide();
 			this.$department.hide();
 
 			this.$iframeContainer = this.$component.find('.iframeContainer');
@@ -74,7 +74,7 @@
 				this.$iframeContainer.find('.lds-ring').fadeOut();
 
 				if (!this.$component.hasClass('SideMenu--tabsTheme')) {
-					this.$trigger.show();
+					//this.$trigger.show();
 					this.$department.show();
 				}
 			});
@@ -132,7 +132,70 @@
 		}
 	}
 
+	const resizeTabs = ($component, $menuTabs, isRecursive) => {
+		const $menuTrigger = $component.find('.SideMenu__Trigger');
+		const headerWidth = $component.find('.SideMenu__Header').outerWidth();
+		const tabsWidth = $menuTabs.outerWidth();
+
+		const fixedValue = $(window.parent).width() < 1024 ? 180 : 196;
+
+		if (tabsWidth + fixedValue > headerWidth) {
+			const $moreOptions = $component.find('.SideMenu__Content');
+			const $lastItem = $menuTabs
+				.find('.SideMenu__MenuItems .MenuItem')
+				.last()
+				.detach();
+
+			if (!$moreOptions.find('.SideMenu__MenuItems').length) {
+				$('<div class="SideMenu__MenuItems"></div>').appendTo($moreOptions);
+			}
+
+			const $menuItems = $moreOptions.find('.SideMenu__MenuItems');
+			$lastItem.prependTo($menuItems);
+
+			$menuTrigger.css('visibility', 'visible');
+
+			resizeTabs($component, $menuTabs, !!$lastItem.length);
+		} else if (!isRecursive) {
+			const $menuItems = $menuTabs.find('.SideMenu__MenuItems');
+			let $firstItem = $component.find('.SideMenu__Content .SideMenu__MenuItems .MenuItem').first();
+
+			const newLinkWidth = 140 * 1.16 + 16; // Font-size + padding between items (gap)
+			const newItemsWidth = newLinkWidth + $menuItems.outerWidth();
+
+			if (newItemsWidth + fixedValue < headerWidth) {
+				$firstItem = $firstItem.detach();
+				$firstItem.appendTo($menuTabs.find('.SideMenu__MenuItems'));
+
+				if ($component.find('.SideMenu__Content .SideMenu__MenuItems .MenuItem').length) {
+					resizeTabs($component, $menuTabs);
+				} else {
+					$menuTrigger.css('visibility', 'hidden');
+				}
+			}
+		}
+	};
+
+	const setTabsTheme = () => {
+		const $component = $('.SideMenu', window.parent.document);
+		const $menuTabs = $component.find('.SideMenu__Tabs');
+
+		$menuTabs.find('> div:empty').hide();
+
+		const $items = $component.find('.SideMenu__MenuItems').detach();
+		$items.appendTo($menuTabs);
+
+		resizeTabs($component, $menuTabs, true);
+
+		$(window.parent).resize(function() {
+			clearTimeout(window.resizedFinished);
+			window.resizedFinished = setTimeout(function() {
+				resizeTabs($component, $menuTabs);
+			}, 250);
+		});
+	};
+
 	const create = config => (window[config.widgetId] = new SideMenu(config));
 
-	SapphireWidgets.SideMenu = { create };
+	SapphireWidgets.SideMenu = { create, setTabsTheme };
 })(jQuery, window, SapphireWidgets);

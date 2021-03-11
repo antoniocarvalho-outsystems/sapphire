@@ -168,6 +168,7 @@
 			@include common-sapphire-weekdays-style;
 
 			border: none;
+			pointer-events: none;
 
 			&:hover {
 				.Calendar_SmallDayLink {
@@ -181,7 +182,7 @@
 		@include common-sapphire-weekdays-style;
 		position: relative;
 
-		&:hover {
+		a:hover {
 			.Calendar_SmallDayLink {
 				background-color: $sapphire-light;
 			}

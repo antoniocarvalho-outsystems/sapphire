@@ -20,126 +20,123 @@ $side-menu-height: 64px;
 		}
 	}
 
-	&--tabsTheme {
-		display: flex;
-	}
-
 	&--tabsTheme & {
-		&__Tabs,
-		&__Trigger,
-		&__MoreOptions {
-			display: none;
-		}
-
 		&__Header {
 			flex: 0;
 		}
 
-		&__Content {
-			border-bottom: 1px solid $light-grey;
-			height: $side-menu-height;
-			padding: 0;
-			position: initial;
-			transition: unset;
-			visibility: visible;
-			width: 100%;
-
-			* {
-				opacity: 1;
-				transition: unset !important;
-			}
+		&__Trigger {
+			visibility: hidden;
 		}
 
-		&__MenuItems {
-			display: flex;
-			gap: $sapphire-sizes--xlarge;
-			height: 100%;
-			margin-top: 0;
-			overflow: unset;
-
-			.MenuItem,
-			.MenuItem__ItemTitle {
-				height: 100%;
+		&__Tabs {
+			.SideMenu__MenuItems {
+				display: flex;
+				gap: $sapphire-sizes--xlarge;
+				height: $side-menu-height - 1;
+				margin-top: 0;
 				overflow: unset;
-				padding: 0;
-				width: auto;
 
-				&:hover {
-					background: transparent !important;
+				> span:empty {
+					display: none;
 				}
 
-				.icon {
+				.MenuItem,
+				.MenuItem__ItemTitle {
+					gap: 6px;
+					height: 100%;
+					overflow: unset;
+					padding: 0;
+					white-space: nowrap;
+					width: auto;
+
+					&:hover {
+						background: transparent !important;
+					}
+
+					.icon {
+						font-size: 10px;
+						margin-top: 3px;
+					}
+				}
+
+				.MenuItem {
+					border-bottom: 3px solid;
+
+					&:hover {
+						border-bottom-color: $regular-beta;
+
+						.icon,
+						.MenuItem_label a {
+							color: $regular-beta;
+						}
+					}
+
+					&.active,
+					&.activeIndicator {
+						border-bottom-color: $regular-beta;
+
+						.MenuItem_label a {
+							color: $regular-beta;
+						}
+					}
+				}
+
+				.MenuItem_label {
+					pointer-events: none;
+
+					a {
+						color: $regular-grey;
+						font-family: $font-family-latin-bold;
+						font-size: $font-size-heading4;
+						pointer-events: none;
+					}
+				}
+
+				.MenuItem_subItems {
+					background-color: $regular-white;
+					border-radius: $border-radius-default;
+					box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+					display: flex;
+					flex-direction: column;
+					left: -$sapphire-sizes--large;
+					min-width: 300px;
+					position: absolute;
+					top: 52px;
+					transition: unset;
+
+					&.show {
+						a:first-child {
+							margin-top: $sapphire-sizes--medium;
+						}
+					}
+
+					a,
+					a:link {
+						align-items: center;
+						display: flex;
+						font-size: $font-size-heading4;
+						height: 44px;
+						line-height: unset;
+						white-space: break-spaces;
+						width: 100%;
+					}
+
+					.ListRecords {
+						@include component-scroll-root();
+
+						max-height: 450px;
+						overflow-y: scroll;
+					}
+				}
+
+				.MenuItem_icon {
 					display: none;
 				}
 			}
 
-			.MenuItem {
-				border-bottom: 3px solid;
-
-				&:hover {
-					border-bottom-color: $regular-beta;
-
-					.MenuItem_label a {
-						color: $regular-beta;
-					}
-				}
-
-				&.active,
-				&.activeIndicator {
-					border-bottom-color: $regular-beta;
-
-					.MenuItem_label a {
-						color: $regular-beta;
-					}
-				}
-			}
-
-			.MenuItem_label {
-				pointer-events: none;
-
-				a {
-					color: $regular-grey;
-					font-family: $font-family-latin-bold;
-					font-size: $font-size-heading4;
-					pointer-events: none;
-				}
-			}
-
-			.MenuItem_subItems {
-				background-color: $regular-white;
-				border-radius: $border-radius-default;
-				box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-				left: -$sapphire-sizes--xlarge;
-				min-width: 300px;
-				position: absolute;
-				top: 52px;
-
-				&.show {
-					a:first-child {
-						margin-top: $sapphire-sizes--medium;
-					}
-				}
-
-				a,
-				a:link {
-					align-items: center;
-					display: inline-flex;
-					font-size: $font-size-heading4;
-					height: 44px;
-					line-height: unset;
-					width: 100%;
-				}
-
-				.ListRecords {
-					@include component-scroll-root();
-
-					max-height: 450px;
-					overflow-y: scroll;
-				}
-			}
-
-			.MenuItem_icon {
-				display: none;
+			.iframeContainer {
+				display: none !important;
 			}
 		}
 	}
@@ -425,9 +422,10 @@ $side-menu-height: 64px;
 					border: none;
 					color: $dark-grey;
 					font-family: $font-family-latin-regular;
+					font-size: $font-size-normal;
 					line-height: 36px;
 					margin: 0;
-					padding: 0 $sapphire-sizes--large;
+					padding-left: 60px;
 
 					&:hover {
 						background-color: $regular-eta;
