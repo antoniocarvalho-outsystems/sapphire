@@ -76,6 +76,7 @@ $side-menu-height: 64px;
 					&.activeIndicator {
 						border-bottom-color: $regular-beta;
 
+						.icon,
 						.MenuItem_label a {
 							color: $regular-beta;
 						}
@@ -273,6 +274,13 @@ $side-menu-height: 64px;
 			transition: all 0.1s ease;
 		}
 
+		.MenuItem_subItems {
+			> a,
+			> .ListRecords > a {
+				padding-left: 60px;
+			}
+		}
+
 		.iframeContainer {
 			display: none;
 		}
@@ -425,7 +433,7 @@ $side-menu-height: 64px;
 					font-size: $font-size-normal;
 					line-height: 36px;
 					margin: 0;
-					padding-left: 60px;
+					padding: 0 $sapphire-sizes--large;
 
 					&:hover {
 						background-color: $regular-eta;

@@ -76,6 +76,7 @@
 
 		&.notExpandable {
 			width: 262px;
+			z-index: 29;
 		}
 
 		&.notExpandable:before {
