@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106029 || Generated: Thu Mar 11 2021 16:06:23 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.106030 || Generated: Thu Mar 11 2021 16:14:57 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11272,7 +11272,8 @@ div.NoPrompt > div.template-item-input-block {
     top: 0;
     width: 40px; }
   .LayoutBase-iframesidebar.notExpandable {
-    width: 262px; }
+    width: 262px;
+    z-index: 29; }
   .LayoutBase-iframesidebar.notExpandable:before {
     width: 262px; }
   .LayoutBase-iframesidebar.isExpandable {
@@ -25689,7 +25690,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
           color: #00ac94; }
       .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.active, .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.activeIndicator {
         border-bottom-color: #00ac94; }
-        .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.active .MenuItem_label a, .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.activeIndicator .MenuItem_label a {
+        .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.active .icon,
+        .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.active .MenuItem_label a, .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.activeIndicator .icon,
+        .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem.activeIndicator .MenuItem_label a {
           color: #00ac94; }
     .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_label {
       pointer-events: none; }
@@ -25847,6 +25850,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       opacity: 0;
       -webkit-transition: all 0.1s ease;
       transition: all 0.1s ease; }
+    .SideMenu__Content .MenuItem_subItems > a,
+    .SideMenu__Content .MenuItem_subItems > .ListRecords > a {
+      padding-left: 60px; }
     .SideMenu__Content .iframeContainer {
       display: none; }
   .SideMenu__MoreOptions {
@@ -25964,7 +25970,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
           font-size: 1em;
           line-height: 36px;
           margin: 0;
-          padding-left: 60px; }
+          padding: 0 24px; }
           .SideMenu__MenuItems .MenuItem_subItems > a:hover,
           .SideMenu__MenuItems .MenuItem_subItems > .ListRecords > a:hover {
             background-color: #f2fffd; }
