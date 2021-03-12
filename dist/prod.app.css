@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.107003 || Generated: Fri Mar 12 2021 17:00:17 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.107004 || Generated: Fri Mar 12 2021 17:01:49 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -42151,11 +42151,6 @@ html .AR.tablet .ThemeGrid_Width12 {
 .FA .Section__actions,
 .AR .Section__actions {
   float: left; }
-
-.FA .ButtonDropdown .ButtonDropdown_text,
-.AR .ButtonDropdown .ButtonDropdown_text {
-  padding-left: 8px;
-  padding-right: 0; }
 
 .FA span.fa.fa-fw.fa-angle-right,
 .FA span.fa.fa-fw.fa-angle-left,
