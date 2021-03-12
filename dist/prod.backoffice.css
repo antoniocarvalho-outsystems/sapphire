@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.106030 || Generated: Thu Mar 11 2021 16:14:57 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.107001 || Generated: Fri Mar 12 2021 15:46:55 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3316,7 +3316,7 @@ div[onclick] {
 .FA .TableRecords_OddLine div,
 .FA .TableRecords_EvenLine,
 .FA .TableRecords_EvenLine div {
-  text-align: right !important; }
+  text-align: right; }
 
 .AR .TableRecords_Header:last-child, .AR .TableRecords_OddLine:last-child, .AR .TableRecords_EvenLine:last-child,
 .FA .TableRecords_Header:last-child,
@@ -3631,7 +3631,7 @@ div[onclick] {
   .AR .DateTimeRangePicker-input:before, .AR .DateTimeRangePicker-displayed:before,
   .FA .DateTimeRangePicker-input:before,
   .FA .DateTimeRangePicker-displayed:before {
-    left: 9px;
+    left: 16px;
     right: auto; }
   .AR .DateTimeRangePicker-input input[type='text'], .AR .DateTimeRangePicker-displayed input[type='text'],
   .FA .DateTimeRangePicker-input input[type='text'],
@@ -3727,6 +3727,9 @@ div[onclick] {
   .daterangepicker.rtl .calendar-table th.prev span {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
+  .daterangepicker.rtl .calendar-table th.month .yearselect,
+  .daterangepicker.rtl .calendar-table th.month .monthselect {
+    background-position: 8px center; }
   .daterangepicker.rtl .calendar-time {
     direction: ltr; }
   .daterangepicker.rtl .drp-calendar.right {
@@ -4150,6 +4153,10 @@ div.ui-timepicker-container {
 .AR .IconVertical,
 .FA .IconVertical {
   padding: 0 10px 0 5px; }
+
+.AR .iconHorizontal_label,
+.FA .iconHorizontal_label {
+  font-family: "TajawalRegular"; }
 
 .AR .iconHorizontal_icon,
 .FA .iconHorizontal_icon {
@@ -4705,8 +4712,8 @@ body.PanelById.PanelOpened {
   direction: rtl; }
   .AR .select2 .select2-selection:after,
   .FA .select2 .select2-selection:after {
-    left: 15px;
-    right: 0; }
+    left: 16px;
+    right: auto; }
   .AR .select2 .select2-selection.select2-selection--multiple.tagCustom:before,
   .FA .select2 .select2-selection.select2-selection--multiple.tagCustom:before {
     left: unset;

@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.106030 || Generated: Thu Mar 11 2021 16:14:57 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.107001 || Generated: Fri Mar 12 2021 15:46:55 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7987,18 +7987,15 @@ a.LinkReset:link, a.LinkReset:visited {
     margin: 0 2px;
     width: 32px; }
 
-.AR .ClinicalCalendarBigBox .Calendar_Today,
-.AR .ClinicalCalendarBigBox .Calendar_Weekday,
-.AR .ClinicalCalendarBigBox .Calendar_Today_Weekend,
-.AR .ClinicalCalendarBigBox .Calendar_Weekend,
-.AR .ClinicalCalendarBigBox .Calendar_Weekday_Holiday,
-.AR .ClinicalCalendarBigBox .Calendar_Past_Day,
-.AR .ClinicalCalendarBigBox .Calendar_SmallDay,
-.AR .ClinicalCalendarBigBox .Calendar_EmptyDay {
-  float: right; }
-
-.AR .ClinicalCalendarBigBox .Calendar_SmallWeek {
-  width: 139px; }
+.AR .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot,
+.FA .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+          flex-direction: row-reverse; }
+  .AR .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot [ui='data-calendar-day-icons'],
+  .FA .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot [ui='data-calendar-day-icons'] {
+    -webkit-box-pack: start;
+            justify-content: flex-start; }
 
 .ClinicalCalendarBigBox .Calendar_Item {
   font-size: 10px;
@@ -10206,7 +10203,7 @@ div.LineInfo {
 .FA .TableRecords_OddLine div,
 .FA .TableRecords_EvenLine,
 .FA .TableRecords_EvenLine div {
-  text-align: right !important; }
+  text-align: right; }
 
 .AR .TableRecords_Header:last-child, .AR .TableRecords_OddLine:last-child, .AR .TableRecords_EvenLine:last-child,
 .FA .TableRecords_Header:last-child,
@@ -12489,6 +12486,14 @@ html body {
   padding-left: 24px;
   padding-right: 24px; }
 
+.AR .Columns2 > .Column.ColFirst,
+.FA .Columns2 > .Column.ColFirst {
+  padding-left: 24px; }
+
+.AR .Columns2 > .Column.ColLast,
+.FA .Columns2 > .Column.ColLast {
+  padding-right: 24px; }
+
 .CalendarDateTimeInput,
 .CalendarDateInput {
   border: none;
@@ -12608,10 +12613,13 @@ html body {
       .DropdownMenu [ui='data-badge-classifications'] .BadgeClassification .IconBadgeClassification {
         height: 18px; }
 
-.FA .DropdownMenu,
-.AR .DropdownMenu {
+.AR .DropdownMenu,
+.FA .DropdownMenu {
   left: auto;
   right: 0; }
+  .AR .DropdownMenu a,
+  .FA .DropdownMenu a {
+    text-align: right; }
 
 .Feedback_AjaxWait {
   background-color: #00bfa5;
@@ -15495,12 +15503,6 @@ div.CircledArrow {
       color: #333333;
       font-family: "LatoRegular"; }
 
-.AR .DateNavigationContainer .DateNavigation_NextDate, .AR .DateNavigationContainer .DateNavigation_PreviousDate,
-.FA .DateNavigationContainer .DateNavigation_NextDate,
-.FA .DateNavigationContainer .DateNavigation_PreviousDate {
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1); }
-
 .DateTimeRangePicker {
   display: inline-block;
   position: relative;
@@ -15632,7 +15634,7 @@ div.CircledArrow {
   .AR .DateTimeRangePicker-input:before, .AR .DateTimeRangePicker-displayed:before,
   .FA .DateTimeRangePicker-input:before,
   .FA .DateTimeRangePicker-displayed:before {
-    left: 9px;
+    left: 16px;
     right: auto; }
   .AR .DateTimeRangePicker-input input[type='text'], .AR .DateTimeRangePicker-displayed input[type='text'],
   .FA .DateTimeRangePicker-input input[type='text'],
@@ -15728,6 +15730,9 @@ div.CircledArrow {
   .daterangepicker.rtl .calendar-table th.prev span {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
+  .daterangepicker.rtl .calendar-table th.month .yearselect,
+  .daterangepicker.rtl .calendar-table th.month .monthselect {
+    background-position: 8px center; }
   .daterangepicker.rtl .calendar-time {
     direction: ltr; }
   .daterangepicker.rtl .drp-calendar.right {
@@ -16240,7 +16245,6 @@ div.CircledArrow {
   .DragDrop-draggable input[type='checkbox'] {
     display: none;
     left: 12px;
-    pointer-events: none;
     position: absolute;
     top: 20px; }
   .DragDrop-draggable .DragDrop-draggable-select-action a {
@@ -18593,6 +18597,10 @@ div.ui-timepicker-container {
 .AR .IconVertical,
 .FA .IconVertical {
   padding: 0 10px 0 5px; }
+
+.AR .iconHorizontal_label,
+.FA .iconHorizontal_label {
+  font-family: "TajawalRegular"; }
 
 .AR .iconHorizontal_icon,
 .FA .iconHorizontal_icon {
@@ -21367,7 +21375,7 @@ body.PanelById.PanelOpened {
 .AR .PersonCard___icon:not(:empty) + .PersonCard____title,
 .FA .PersonCard___icon:not(:empty) + .PersonCard____title {
   margin-left: 0;
-  margin-right: 10px; }
+  margin-right: 16px; }
 
 .AR .PersonExpandableDiv:before,
 .FA .PersonExpandableDiv:before {
@@ -24346,9 +24354,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .SegmentedControl.Filters .SegmentedControlItem > input[type='radio']:checked ~ label,
     .SegmentedControl.Filters .SegmentedControlItem > input[type='checkbox']:checked ~ label {
       background-color: #5c5c5c;
-      border: none;
-      font-family: "LatoRegular";
-      text-shadow: 0 0 1px #fff; }
+      border: none; }
   .SegmentedControl .SegmentedControlItem {
     display: inline-block;
     font-size: 1em;
@@ -24387,7 +24393,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       background-color: #00bfa5;
       border: 1px solid #00bfa5;
       color: #fff;
-      font-family: "LatoBold"; }
+      text-shadow: 0 0 1px #fff; }
     .SegmentedControl .SegmentedControlItem > input:disabled ~ label,
     .SegmentedControl .SegmentedControlItem > input[disabled] ~ label,
     .SegmentedControl .SegmentedControlItem > input[readonly] ~ label {
@@ -24395,18 +24401,18 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       color: #777777;
       cursor: default; }
 
-.AR .SegmentedControl:not(.Vertical).Round .SegmentedControlItem:first-child,
-.FA .SegmentedControl:not(.Vertical).Round .SegmentedControlItem:first-child {
+.AR .SegmentedControl.Round .SegmentedControlItem:first-child,
+.FA .SegmentedControl.Round .SegmentedControlItem:first-child {
   margin-left: 3px;
   margin-right: 0; }
 
-.AR .SegmentedControl:not(.Vertical).Round .SegmentedControlItem:last-child,
-.FA .SegmentedControl:not(.Vertical).Round .SegmentedControlItem:last-child {
+.AR .SegmentedControl.Round .SegmentedControlItem:last-child,
+.FA .SegmentedControl.Round .SegmentedControlItem:last-child {
   margin-left: 0;
   margin-right: 3px; }
 
-.AR .SegmentedControl:not(.Vertical).Round .SegmentedControlItem label,
-.FA .SegmentedControl:not(.Vertical).Round .SegmentedControlItem label {
+.AR .SegmentedControl.Round .SegmentedControlItem label,
+.FA .SegmentedControl.Round .SegmentedControlItem label {
   border: 1px solid #d6d6d6; }
 
 .AR .SegmentedControl:not(.Vertical) .SegmentedControlItem:last-child label,
@@ -24432,6 +24438,11 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .FA .SegmentedControl:not(.Vertical) .SegmentedControlItem label:hover,
   .FA .SegmentedControl:not(.Vertical) .SegmentedControlItem label:focus {
     border: 1px solid #00bfa5; }
+
+.AR .SegmentedControl.Filters .SegmentedControlItem label[for],
+.FA .SegmentedControl.Filters .SegmentedControlItem label[for] {
+  border: none;
+  border-radius: 100px; }
 
 .select2 {
   width: 100% !important; }
@@ -24689,8 +24700,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   direction: rtl; }
   .AR .select2 .select2-selection:after,
   .FA .select2 .select2-selection:after {
-    left: 15px;
-    right: 0; }
+    left: 16px;
+    right: auto; }
   .AR .select2 .select2-selection.select2-selection--multiple.tagCustom:before,
   .FA .select2 .select2-selection.select2-selection--multiple.tagCustom:before {
     left: unset;
@@ -25741,6 +25752,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
           border-radius: 4px; }
     .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_icon {
       display: none; }
+    .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItemHome {
+      display: block; }
   .SideMenu--tabsTheme .SideMenu__Tabs .iframeContainer {
     display: none !important; }
   .SideMenu__Header {
@@ -25850,8 +25863,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       opacity: 0;
       -webkit-transition: all 0.1s ease;
       transition: all 0.1s ease; }
-    .SideMenu__Content .MenuItem_subItems > a,
-    .SideMenu__Content .MenuItem_subItems > .ListRecords > a {
+    .SideMenu__Content .SideMenu__MenuItems .MenuItem_subItems > a,
+    .SideMenu__Content .SideMenu__MenuItems .MenuItem_subItems > .ListRecords > a {
       padding-left: 60px; }
     .SideMenu__Content .iframeContainer {
       display: none; }
@@ -25996,10 +26009,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   margin-left: 0;
   margin-right: 55px; }
 
-.AR .SideMenu__MenuItems .MenuItem_subItems,
-.FA .SideMenu__MenuItems .MenuItem_subItems {
-  margin-left: auto;
-  margin-right: -16px; }
+.AR .SideMenu__MenuItems .MenuItem_subItems a,
+.FA .SideMenu__MenuItems .MenuItem_subItems a {
+  padding-left: 24px;
+  padding-right: 60px; }
 
 .tablet .SideMenu__Header {
   padding: 0 16px; }
@@ -27061,10 +27074,10 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     -webkit-box-align: center;
             align-items: center;
     display: -webkit-box;
-    display: flex; }
+    display: flex;
+    gap: 8px; }
   .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab .Tabs_extended_badge {
     background-color: #00bfa5;
-    margin-left: 8px;
     position: unset;
     -webkit-transform: unset;
             transform: unset; }
@@ -27206,11 +27219,6 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 .AR .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:first-child:before,
 .FA .Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab:first-child:before {
   display: block; }
-
-.AR .Tabs_Extended .Tabs_extended_badge,
-.FA .Tabs_Extended .Tabs_extended_badge {
-  left: -2px;
-  right: auto; }
 
 .AR .TabsContainer[activetab='0'] .Tabs_body,
 .AR .TabsContainer[activetab='1'] .Tabs_body,
@@ -28838,9 +28846,8 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .TextRegular {
   font-family: "LatoRegular"; }
-
-.TextRegularAR {
-  font-family: "TajawalRegular"; }
+  .AR .TextRegular {
+    font-family: "TajawalRegular"; }
 
 .TextItalic {
   font-style: italic; }
@@ -30090,7 +30097,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .AR .CardAll .DescriptionContainer,
 .FA .CardAll .DescriptionContainer {
   padding-left: 0;
-  padding-right: 8px;
+  padding-right: 16px;
   text-align: right; }
   .AR .CardAll .DescriptionContainer .Description,
   .FA .CardAll .DescriptionContainer .Description {
@@ -30286,18 +30293,20 @@ ul.os-internal-ui-autocomplete {
   bottom: 0;
   content: ' ';
   top: 0;
-  margin-left: 8px !important;
+  margin-left: 8px;
   padding-left: 8px; }
 
 .AR .VerticalSeparatorBefore {
-  border-left: 1.9px solid #d6d6d6;
+  border-right: 1.9px solid #d6d6d6;
   bottom: 0;
   content: ' ';
   top: 0;
-  margin-left: 8px !important;
+  margin-left: 8px;
   padding-left: 8px;
   border-left: none;
-  margin-right: 8px !important;
+  margin-left: 0;
+  margin-right: 8px;
+  padding-left: 0;
   padding-right: 8px; }
 
 .ManageQueueWrapper {
@@ -30378,6 +30387,9 @@ ul.os-internal-ui-autocomplete {
     top: -11px;
     width: 15px;
     z-index: 1; }
+
+.AR .LocationOptGroup {
+  min-width: 170px; }
 
 .tablet .FiltersWrapper {
   -webkit-box-orient: vertical;
@@ -31154,6 +31166,8 @@ body.PanelOpened .daterangepicker {
 
 .InputFilter .DateTimeRangePicker {
   width: 100%; }
+  .AR .InputFilter .DateTimeRangePicker .DateTimeRangePicker-displayed:before {
+    right: auto; }
   .InputFilter .DateTimeRangePicker .DateTimeRangePicker-displayed:before {
     right: 16px; }
 
@@ -40980,14 +40994,6 @@ a.NoLink {
 .FA .Columns2 > .Column,
 .AR .Columns2 > .Column {
   padding: 0 5px; }
-
-.FA .Columns2 > .Column.ColFirst,
-.AR .Columns2 > .Column.ColFirst {
-  padding-right: 0; }
-
-.FA .Columns2 > .Column.ColLast,
-.AR .Columns2 > .Column.ColLast {
-  padding-left: 0; }
 
 .FA.tablet .Columns2.tab_BreakFirst > .Column,
 .FA.tablet .Columns2.tab_BreakLast > .Column,
