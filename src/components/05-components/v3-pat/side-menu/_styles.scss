@@ -445,6 +445,10 @@ $side-menu-height: 64px;
 				}
 			}
 		}
+
+		.MenuItemHome {
+			display: none;
+		}
 	}
 
 	&__TabItems,
