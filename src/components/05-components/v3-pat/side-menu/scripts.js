@@ -135,7 +135,8 @@
 	const resizeTabs = ($component, $menuTabs, isRecursive) => {
 		const $menuTrigger = $component.find('.SideMenu__Trigger');
 		const headerWidth = $component.find('.SideMenu__Header').outerWidth();
-		const tabsWidth = $menuTabs.outerWidth();
+		const $menuItems = $menuTabs.find('.SideMenu__MenuItems');
+		const tabsWidth = $menuItems.length ? $menuItems.outerWidth() : $menuTabs.outerWidth();
 
 		const fixedValue = $(window.parent).width() < 1024 ? 180 : 196;
 

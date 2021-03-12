@@ -95,6 +95,12 @@
 	}
 }
 
+.LocationOptGroup {
+	.AR & {
+		min-width: 170px; // Prevent dropdown menu to be outside the screen
+	}
+}
+
 .tablet {
 	.FiltersWrapper {
 		flex-direction: column-reverse;

@@ -274,22 +274,24 @@
 	}
 }
 
+.AR,
+.FA {
+	.ClinicalCalendar {
+		&.CenteredCalendarBigWrapper {
+			.ClinicalCalendarBigBox {
+				.CalendarDaySlot {
+					flex-direction: row-reverse;
+
+					[ui='data-calendar-day-icons'] {
+						justify-content: flex-start;
+					}
+				}
+			}
+		}
+	}
+}
+
 // WIP BELOW
-
-.AR .ClinicalCalendarBigBox .Calendar_Today,
-.AR .ClinicalCalendarBigBox .Calendar_Weekday,
-.AR .ClinicalCalendarBigBox .Calendar_Today_Weekend,
-.AR .ClinicalCalendarBigBox .Calendar_Weekend,
-.AR .ClinicalCalendarBigBox .Calendar_Weekday_Holiday,
-.AR .ClinicalCalendarBigBox .Calendar_Past_Day,
-.AR .ClinicalCalendarBigBox .Calendar_SmallDay,
-.AR .ClinicalCalendarBigBox .Calendar_EmptyDay {
-	float: right;
-}
-
-.AR .ClinicalCalendarBigBox .Calendar_SmallWeek {
-	width: 139px;
-}
 
 .ClinicalCalendarBigBox .Calendar_Item {
 	font-size: 10px;

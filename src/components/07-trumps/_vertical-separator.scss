@@ -6,12 +6,12 @@
 }
 @mixin verticalSeparator($after: true, $borderDirection: border-left) {
 	@if ($after) {
-		@include defaultSettings();
+		@include defaultSettings($borderDirection);
 		margin: 0px 8px;
 		position: absolute;
 	} @else {
-		@include defaultSettings();
-		margin-left: $sapphire-sizes--small !important;
+		@include defaultSettings($borderDirection);
+		margin-left: $sapphire-sizes--small;
 		padding-left: $sapphire-sizes--small;
 	}
 }
@@ -32,6 +32,8 @@
 	@include verticalSeparator(false, border-right);
 
 	border-left: none;
-	margin-right: $sapphire-sizes--small !important;
+	margin-left: 0;
+	margin-right: $sapphire-sizes--small;
+	padding-left: 0;
 	padding-right: $sapphire-sizes--small;
 }

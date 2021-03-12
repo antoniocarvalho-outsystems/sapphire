@@ -56,13 +56,3 @@
 		}
 	}
 }
-
-.AR,
-.FA {
-	.DateNavigationContainer .DateNavigation {
-		&_NextDate,
-		&_PreviousDate {
-			transform: scale(-1, 1);
-		}
-	}
-}

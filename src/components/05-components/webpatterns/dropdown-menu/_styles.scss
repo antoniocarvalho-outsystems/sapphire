@@ -57,8 +57,14 @@
 	}
 }
 
-.FA .DropdownMenu,
-.AR .DropdownMenu {
-	left: auto;
-	right: 0;
+.AR,
+.FA {
+	.DropdownMenu {
+		left: auto;
+		right: 0;
+
+		a {
+			text-align: right;
+		}
+	}
 }

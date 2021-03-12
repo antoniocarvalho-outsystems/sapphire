@@ -121,11 +121,12 @@
 
 			> div {
 				@include flex-center-vertically;
+
+				gap: $sapphire-sizes--small;
 			}
 
 			.Tabs_extended_badge {
 				background-color: $regular-alpha;
-				margin-left: $sapphire-sizes--small;
 				position: unset;
 				transform: unset;
 			}
@@ -275,26 +276,25 @@
 		font-family: $font-family-arabic-bold;
 	}
 
-	.Tabs_Extended.Tabs_Extended--Primary .Tabs__tab {
-		margin-left: 26px;
-		margin-right: auto;
-	}
+	.Tabs_Extended {
+		&.Tabs_Extended--Primary .Tabs__tab {
+			margin-left: 26px;
+			margin-right: auto;
+		}
 
-	.Tabs_Extended.Tabs_Extended--Secondary .Tabs__tab {
-		&:first-child {
-			&:after {
-				display: none;
-			}
+		&.Tabs_Extended--Secondary {
+			.Tabs__tab {
+				&:first-child {
+					&:after {
+						display: none;
+					}
 
-			&:before {
-				display: block;
+					&:before {
+						display: block;
+					}
+				}
 			}
 		}
-	}
-
-	.Tabs_Extended .Tabs_extended_badge {
-		left: -2px;
-		right: auto;
 	}
 
 	.TabsContainer[activetab='0'],

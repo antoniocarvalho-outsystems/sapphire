@@ -98,8 +98,6 @@
 			> input[type='checkbox']:checked ~ label {
 				background-color: $mid-dark-grey;
 				border: none;
-				font-family: $font-family-latin-regular;
-				text-shadow: 0 0 1px $regular-white;
 			}
 		}
 	}
@@ -153,7 +151,7 @@
 			background-color: $regular-alpha;
 			border: 1px solid $regular-alpha;
 			color: $regular-white;
-			font-family: $font-family-latin-bold;
+			text-shadow: 0 0 1px $regular-white;
 		}
 
 		> input:disabled ~ label,
@@ -168,7 +166,7 @@
 
 .AR,
 .FA {
-	.SegmentedControl:not(.Vertical) {
+	.SegmentedControl {
 		&.Round {
 			.SegmentedControlItem {
 				&:first-child {
@@ -187,7 +185,7 @@
 			}
 		}
 
-		.SegmentedControlItem {
+		&:not(.Vertical) .SegmentedControlItem {
 			&:last-child label {
 				border-bottom-left-radius: $border-radius-default;
 				border-bottom-right-radius: 0;
@@ -212,6 +210,13 @@
 				&:focus {
 					border: 1px solid $regular-alpha;
 				}
+			}
+		}
+
+		&.Filters {
+			.SegmentedControlItem label[for] {
+				border: none;
+				border-radius: 100px;
 			}
 		}
 	}

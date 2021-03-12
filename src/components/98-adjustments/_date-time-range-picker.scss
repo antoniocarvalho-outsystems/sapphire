@@ -21,6 +21,12 @@ body.PanelOpened .daterangepicker {
 .InputFilter .DateTimeRangePicker {
 	width: 100%;
 
+	.AR & {
+		.DateTimeRangePicker-displayed:before {
+			right: auto;
+		}
+	}
+
 	.DateTimeRangePicker-displayed:before {
 		right: $sapphire-sizes--medium;
 	}

@@ -203,7 +203,7 @@ $date-time-size-base: 40px;
 		&-input,
 		&-displayed {
 			&:before {
-				left: 9px;
+				left: $sapphire-sizes--medium;
 				right: auto;
 			}
 
@@ -364,6 +364,13 @@ $date-time-size-base: 40px;
 
 			th.prev span {
 				transform: rotate(-45deg);
+			}
+
+			th.month {
+				.yearselect,
+				.monthselect {
+					background-position: $sapphire-sizes--small center;
+				}
 			}
 		}
 

@@ -535,7 +535,7 @@
 
 		&___icon:not(:empty) + .PersonCard____title {
 			margin-left: 0;
-			margin-right: 10px;
+			margin-right: $sapphire-sizes--medium;
 		}
 	}
 

@@ -1,4 +1,17 @@
-.Columns2>.Column {
-  padding-left: 24px;
-  padding-right: 24px;
+.Columns2 > .Column {
+	padding-left: $sapphire-sizes--large;
+	padding-right: $sapphire-sizes--large;
+}
+
+.AR,
+.FA {
+	.Columns2 > .Column {
+		&.ColFirst {
+			padding-left: $sapphire-sizes--large;
+		}
+
+		&.ColLast {
+			padding-right: $sapphire-sizes--large;
+		}
+	}
 }

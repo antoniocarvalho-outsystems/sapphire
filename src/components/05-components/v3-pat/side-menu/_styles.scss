@@ -134,6 +134,10 @@ $side-menu-height: 64px;
 				.MenuItem_icon {
 					display: none;
 				}
+
+				.MenuItemHome {
+					display: block;
+				}
 			}
 
 			.iframeContainer {
@@ -274,7 +278,7 @@ $side-menu-height: 64px;
 			transition: all 0.1s ease;
 		}
 
-		.MenuItem_subItems {
+		.SideMenu__MenuItems .MenuItem_subItems {
 			> a,
 			> .ListRecords > a {
 				padding-left: 60px;
@@ -487,8 +491,10 @@ $side-menu-height: 64px;
 		&__MenuItems {
 			.MenuItem {
 				&_subItems {
-					margin-left: auto;
-					margin-right: -$sapphire-sizes--medium;
+					a {
+						padding-left: $sapphire-sizes--large;
+						padding-right: 60px;
+					}
 				}
 			}
 		}
