@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.107002 || Generated: Fri Mar 12 2021 16:15:43 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.107003 || Generated: Fri Mar 12 2021 17:00:17 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12324,6 +12324,7 @@ html body {
     .ButtonDropdown_button.Button:focus, .ButtonDropdown_button.Button:active {
       border: 1px solid #00bfa5; }
   .ButtonDropdown_text {
+    line-height: 36px;
     overflow: hidden;
     text-align: start;
     text-overflow: ellipsis;
@@ -12346,6 +12347,11 @@ html body {
   margin: 0;
   padding-left: 0;
   padding-right: 16px; }
+
+.AR .ButtonDropdown_text,
+.FA .ButtonDropdown_text {
+  padding-left: 8px;
+  padding-right: 0; }
 
 .ButtonGroup {
   padding-left: 1px;
@@ -16392,6 +16398,11 @@ div.CircledArrow {
 .AR .AppLine .DragLine .HeadActions,
 .FA .AppLine .DragLine .HeadActions {
   text-align: left; }
+
+.AR .AppLine .MoveLine > .icon,
+.FA .AppLine .MoveLine > .icon {
+  margin-left: 0;
+  margin-right: -10px; }
 
 .DropZoneWrapper {
   display: inline; }
