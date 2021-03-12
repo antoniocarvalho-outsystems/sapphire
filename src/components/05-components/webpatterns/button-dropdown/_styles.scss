@@ -38,6 +38,7 @@
 	}
 
 	&_text {
+		line-height: 36px;
 		overflow: hidden;
 		text-align: start;
 		text-overflow: ellipsis;
@@ -62,6 +63,11 @@
 			margin: 0;
 			padding-left: 0;
 			padding-right: $sapphire-sizes--medium;
+		}
+
+		&_text {
+			padding-left: $sapphire-sizes--small;
+			padding-right: 0;
 		}
 	}
 }
