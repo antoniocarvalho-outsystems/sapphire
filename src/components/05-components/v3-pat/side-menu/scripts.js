@@ -139,8 +139,9 @@
 		const tabsWidth = $menuItems.length ? $menuItems.outerWidth() : $menuTabs.outerWidth();
 
 		const fixedValue = $(window.parent).width() < 1024 ? 180 : 196;
+		let hasItemToRemove = true;
 
-		if (tabsWidth + fixedValue > headerWidth && isRecursive) {
+		if (tabsWidth + fixedValue > headerWidth && hasItemToRemove) {
 			const $moreOptions = $component.find('.SideMenu__Content');
 			const $lastItem = $menuTabs
 				.find('.SideMenu__MenuItems .MenuItem')
@@ -155,6 +156,8 @@
 			$lastItem.prependTo($menuItems);
 
 			$menuTrigger.css('visibility', 'visible');
+
+			hasItemToRemove = !!$lastItem.length;
 
 			resizeTabs($component, $menuTabs, !!$lastItem.length);
 		} else if (!isRecursive) {
@@ -178,21 +181,25 @@
 	};
 
 	const setTabsTheme = () => {
-		const $component = $('.SideMenu', window.parent.document);
-		const $menuTabs = $component.find('.SideMenu__Tabs');
+		$().ready(function($) {
+			$('.SideMenu', window.parent.document).addClass('SideMenu--tabsTheme');
 
-		$menuTabs.find('> div:empty').hide();
+			const $component = $('.SideMenu', window.parent.document);
+			const $menuTabs = $component.find('.SideMenu__Tabs');
 
-		const $items = $component.find('.SideMenu__MenuItems').detach();
-		$items.appendTo($menuTabs);
+			$menuTabs.find('> div:empty').hide();
 
-		resizeTabs($component, $menuTabs, true);
+			const $items = $component.find('.SideMenu__MenuItems').detach();
+			$items.appendTo($menuTabs);
 
-		$(window.parent).resize(function() {
-			clearTimeout(window.resizedFinished);
-			window.resizedFinished = setTimeout(function() {
-				resizeTabs($component, $menuTabs, true);
-			}, 250);
+			resizeTabs($component, $menuTabs, true);
+
+			$(window.parent).resize(function() {
+				clearTimeout(window.resizedFinished);
+				window.resizedFinished = setTimeout(function() {
+					resizeTabs($component, $menuTabs);
+				}, 250);
+			});
 		});
 	};
 
