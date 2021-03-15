@@ -95,7 +95,8 @@
 	}
 }
 
-.LocationOptGroup {
+.LocationOptGroup,
+.SpecialtiesSelect {
 	.AR & {
 		min-width: 170px; // Prevent dropdown menu to be outside the screen
 	}
