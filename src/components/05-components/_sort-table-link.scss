@@ -1,0 +1,31 @@
+.SortTableLink {
+	&--ascending {
+		a:link.LinkSelected::after {
+			content: '\e914';
+			font-family: $font-family-icons;
+		}
+	}
+
+	a {
+		color: $mid-light-grey;
+		font-size: $font-size-small;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $regular-beta;
+		}
+
+		&.LinkSelected {
+			color: $dark-grey;
+
+			&::after {
+				content: '\e913';
+				font-family: $font-family-icons;
+			}
+
+			&:hover {
+				color: $regular-beta;
+			}
+		}
+	}
+}

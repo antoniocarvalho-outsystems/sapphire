@@ -461,17 +461,6 @@
 	}
 }
 
-.IsTransparent {
-	.PersonCard__headerLeftInfo {
-		.PersonCard____title a {
-			&,
-			&:hover {
-				color: $regular-beta;
-			}
-		}
-	}
-}
-
 .PersonExpandableDiv {
 	position: relative;
 
@@ -539,6 +528,12 @@
 		}
 	}
 
+	a {
+		.PersonCard {
+			font-family: $font-family-arabic-regular;
+		}
+	}
+
 	.PersonExpandableDiv:before {
 		left: auto;
 		right: 0px;
@@ -553,14 +548,6 @@
 			color: $dark-grey;
 			flex: 4;
 		}
-	}
-}
-
-.PersonCard {
-	&__headerLeftInfo &____title a:not([disabled='disabled']):hover,
-	&__headerLeftInfo &____title a:link:hover,
-	&__headerLeftInfo &____title a {
-		color: inherit;
 	}
 }
 
@@ -584,6 +571,7 @@
 a {
 	.PersonCard {
 		color: $dark-grey;
+		font-family: $font-family-latin-regular;
 
 		&_expandable {
 			display: none !important;
