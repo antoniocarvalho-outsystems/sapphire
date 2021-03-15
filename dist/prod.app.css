@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108001 || Generated: Mon Mar 15 2021 09:14:18 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108002 || Generated: Mon Mar 15 2021 11:23:19 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9610,10 +9610,18 @@ div.LineInfo {
 .AR .pika-next,
 .FA .pika-next {
   border-right: 1px solid #d6d6d6; }
+  .AR .pika-next::after,
+  .FA .pika-next::after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
 
 .AR .pika-prev,
 .FA .pika-prev {
   border-left: 1px solid #d6d6d6; }
+  .AR .pika-prev::after,
+  .FA .pika-prev::after {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg); }
 
 .popup-wrapper > .popup-menu {
   background-color: #fff;
@@ -11234,7 +11242,7 @@ div.NoPrompt > div.template-item-input-block {
   height: 44px;
   margin-top: 0;
   position: fixed;
-  z-index: 30; }
+  z-index: 29; }
   .LayoutBase-MainMenu:empty, .LayoutBase-MainMenu.PatientDetails_Header:empty {
     display: none;
     height: 0; }
@@ -12597,7 +12605,7 @@ html body {
     font-family: "LatoRegular";
     height: 36px;
     line-height: unset;
-    padding: 8px;
+    padding: 0 8px;
     white-space: nowrap; }
     .DropdownMenu .PH > a:hover,
     .DropdownMenu .PH > span a:hover,
@@ -12613,18 +12621,22 @@ html body {
       display: inline-flex;
       background-color: transparent !important;
       font-size: 1em;
+      gap: 8px;
+      padding: 0;
       width: 100%; }
       .DropdownMenu [ui='data-badge-classifications'] .BadgeClassification > span {
         color: #333333 !important; }
       .DropdownMenu [ui='data-badge-classifications'] .BadgeClassification .IconBadgeClassification {
-        height: 18px; }
+        margin: 0; }
 
 .AR .DropdownMenu,
 .FA .DropdownMenu {
   left: auto;
   right: 0; }
   .AR .DropdownMenu a,
-  .FA .DropdownMenu a {
+  .AR .DropdownMenu div,
+  .FA .DropdownMenu a,
+  .FA .DropdownMenu div {
     text-align: right; }
 
 .Feedback_AjaxWait {
@@ -26016,16 +26028,19 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .FA .SideMenu__Content {
   left: 0;
   right: auto; }
+  .AR .SideMenu__Content .SideMenu__MenuItems .MenuItem_subItems a,
+  .FA .SideMenu__Content .SideMenu__MenuItems .MenuItem_subItems a {
+    padding-left: 24px;
+    padding-right: 60px; }
+
+.AR .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems,
+.FA .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems {
+  right: -24px; }
 
 .AR .SideMenu__TabItems::after,
 .FA .SideMenu__TabItems::after {
   margin-left: 0;
   margin-right: 55px; }
-
-.AR .SideMenu__MenuItems .MenuItem_subItems a,
-.FA .SideMenu__MenuItems .MenuItem_subItems a {
-  padding-left: 24px;
-  padding-right: 60px; }
 
 .tablet .SideMenu__Header {
   padding: 0 16px; }
