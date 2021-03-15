@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.107004 || Generated: Fri Mar 12 2021 17:01:49 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108001 || Generated: Mon Mar 15 2021 09:14:18 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -30401,7 +30401,8 @@ ul.os-internal-ui-autocomplete {
     width: 15px;
     z-index: 1; }
 
-.AR .LocationOptGroup {
+.AR .LocationOptGroup, .AR
+.SpecialtiesSelect {
   min-width: 170px; }
 
 .tablet .FiltersWrapper {
