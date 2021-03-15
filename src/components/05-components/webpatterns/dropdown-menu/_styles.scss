@@ -27,7 +27,7 @@
 		font-family: $font-family-latin-regular;
 		height: 36px;
 		line-height: unset;
-		padding: $sapphire-sizes--small;
+		padding: 0 $sapphire-sizes--small;
 		white-space: nowrap;
 
 		&:hover {
@@ -44,6 +44,8 @@
 
 			background-color: transparent !important;
 			font-size: 1em;
+			gap: $sapphire-sizes--small;
+			padding: 0;
 			width: 100%;
 
 			> span {
@@ -51,7 +53,7 @@
 			}
 
 			.IconBadgeClassification {
-				height: 18px;
+				margin: 0;
 			}
 		}
 	}
@@ -63,7 +65,8 @@
 		left: auto;
 		right: 0;
 
-		a {
+		a,
+		div {
 			text-align: right;
 		}
 	}

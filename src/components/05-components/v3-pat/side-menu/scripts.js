@@ -140,7 +140,7 @@
 
 		const fixedValue = $(window.parent).width() < 1024 ? 180 : 196;
 
-		if (tabsWidth + fixedValue > headerWidth) {
+		if (tabsWidth + fixedValue > headerWidth && isRecursive) {
 			const $moreOptions = $component.find('.SideMenu__Content');
 			const $lastItem = $menuTabs
 				.find('.SideMenu__MenuItems .MenuItem')
@@ -191,7 +191,7 @@
 		$(window.parent).resize(function() {
 			clearTimeout(window.resizedFinished);
 			window.resizedFinished = setTimeout(function() {
-				resizeTabs($component, $menuTabs);
+				resizeTabs($component, $menuTabs, true);
 			}, 250);
 		});
 	};

@@ -485,22 +485,24 @@ $side-menu-height: 64px;
 		&__Content {
 			left: 0;
 			right: auto;
+
+			.SideMenu__MenuItems {
+				.MenuItem_subItems a {
+					padding-left: $sapphire-sizes--large;
+					padding-right: 60px;
+				}
+			}
+		}
+
+		&__Tabs {
+			.SideMenu__MenuItems .MenuItem_subItems {
+				right: -$sapphire-sizes--large;
+			}
 		}
 
 		&__TabItems::after {
 			margin-left: 0;
 			margin-right: 55px;
-		}
-
-		&__MenuItems {
-			.MenuItem {
-				&_subItems {
-					a {
-						padding-left: $sapphire-sizes--large;
-						padding-right: 60px;
-					}
-				}
-			}
 		}
 	}
 }

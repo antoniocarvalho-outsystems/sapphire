@@ -24,8 +24,9 @@
 
 31 .daterangepicker
 
-30 .LayoutBase-MainMenu.PatientDetails_Header
 30 .PanelById .PanelBackground
+
+29 .LayoutBase-MainMenu.PatientDetails_Header
 
 20 .LayoutBase-header
 20 .Header
