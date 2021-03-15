@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108004 || Generated: Mon Mar 15 2021 11:53:17 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108005 || Generated: Mon Mar 15 2021 17:25:19 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9731,6 +9731,24 @@ div.LineInfo {
         .LayoutBlank .SectionExpandable_header .Heading2.SectionExpandable__icon span:hover,
         .LayoutBase .SectionExpandable_header .Heading2.SectionExpandable__icon span:hover {
           background-color: #f2fffd; }
+
+.SortTableLink--ascending a:link.LinkSelected::after {
+  content: '\e914';
+  font-family: "Sapphire-Icon-Font"; }
+
+.SortTableLink a {
+  color: #adadad;
+  font-size: 0.857em;
+  text-transform: uppercase; }
+  .SortTableLink a:hover {
+    color: #00ac94; }
+  .SortTableLink a.LinkSelected {
+    color: #333333; }
+    .SortTableLink a.LinkSelected::after {
+      content: '\e913';
+      font-family: "Sapphire-Icon-Font"; }
+    .SortTableLink a.LinkSelected:hover {
+      color: #00ac94; }
 
 .StructureContainer {
   display: table;
@@ -21346,9 +21364,6 @@ body.PanelById.PanelOpened {
 .PersonCard .PersonExpandableDiv:before {
   content: '\e610'; }
 
-.IsTransparent .PersonCard__headerLeftInfo .PersonCard____title a, .IsTransparent .PersonCard__headerLeftInfo .PersonCard____title a:hover {
-  color: #00ac94; }
-
 .PersonExpandableDiv {
   position: relative; }
   .PersonExpandableDiv:before {
@@ -21400,6 +21415,10 @@ body.PanelById.PanelOpened {
   margin-left: 0;
   margin-right: 16px; }
 
+.AR a .PersonCard,
+.FA a .PersonCard {
+  font-family: "TajawalRegular"; }
+
 .AR .PersonExpandableDiv:before,
 .FA .PersonExpandableDiv:before {
   left: auto;
@@ -21410,11 +21429,6 @@ body.PanelById.PanelOpened {
   color: #333333;
   -webkit-box-flex: 4;
           flex: 4; }
-
-.PersonCard__headerLeftInfo .PersonCard____title a:not([disabled='disabled']):hover,
-.PersonCard__headerLeftInfo .PersonCard____title a:link:hover,
-.PersonCard__headerLeftInfo .PersonCard____title a {
-  color: inherit; }
 
 .ListRecords .PersonCard .PersonCard_header,
 .ListRecords > div:not(:last-of-type) .PersonCard .PersonCard_header,
@@ -21428,7 +21442,8 @@ body.PanelById.PanelOpened {
   border: 1px solid #00ac94; }
 
 a .PersonCard {
-  color: #333333; }
+  color: #333333;
+  font-family: "LatoRegular"; }
   a .PersonCard_expandable {
     display: none !important; }
 
@@ -28877,6 +28892,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   .AR .TextRegular {
     font-family: "TajawalRegular"; }
 
+.TextRegularAR {
+  font-family: "TajawalRegular"; }
+
 .TextItalic {
   font-style: italic; }
 
@@ -30167,11 +30185,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
             justify-content: center; }
   .GraphStructure .Card, .GraphStructure .DashboardWindow {
     height: 100%; }
-
-.IsTransparent .PersonCard__headerLeftInfo .PersonCard____title a,
-.IsTransparent .PersonCard__headerLeftInfo .PersonCard____title .DoubleText,
-.IsTransparent .PersonCard__headerLeftInfo .PersonCard____title .Text_Note {
-  color: #adadad; }
 
 input.os-internal-ui-autocomplete-loading {
   cursor: progress; }
