@@ -183,3 +183,37 @@
 		}
 	}
 }
+
+.AR,
+.FA {
+	.PatientCallCancelStructure {
+		&__ListQueues {
+			padding-left: $sapphire-sizes--medium;
+			padding-right: $sapphire-sizes--xlarge;
+		}
+
+		&__LastCalled {
+			[ui='data-recall-button'] {
+				margin-left: 0;
+				margin-right: $sapphire-sizes--medium;
+			}
+		}
+
+		&__Actions {
+			[ui='data-call-next-button'] {
+				margin-left: 0;
+				margin-right: $sapphire-sizes--small;
+
+				.PatientCallCancel {
+					&__Header {
+
+						[ui='data-button-call'] {
+							margin-left: 0 !important;
+							margin-right: $sapphire-sizes--medium !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
