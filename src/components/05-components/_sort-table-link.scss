@@ -28,4 +28,13 @@
 			}
 		}
 	}
+
+	.FirstLink {
+		margin-left: 64px;
+
+		.AR & {
+			margin-left: 0;
+			margin-right: 64px;
+		}
+	}
 }
