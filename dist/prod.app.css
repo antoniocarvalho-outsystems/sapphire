@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108006 || Generated: Tue Mar 16 2021 09:21:21 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108007 || Generated: Tue Mar 16 2021 09:35:35 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9749,6 +9749,12 @@ div.LineInfo {
       font-family: "Sapphire-Icon-Font"; }
     .SortTableLink a.LinkSelected:hover {
       color: #00ac94; }
+
+.SortTableLink .FirstLink {
+  margin-left: 64px; }
+  .AR .SortTableLink .FirstLink {
+    margin-left: 0;
+    margin-right: 64px; }
 
 .StructureContainer {
   display: table;
