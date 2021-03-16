@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108008 || Generated: Tue Mar 16 2021 09:40:29 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108009 || Generated: Tue Mar 16 2021 18:29:41 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9194,7 +9194,7 @@ div.LineInfo {
     border-top: 1px solid #d6d6d6; }
   .PatientInfo_left {
     display: table-cell;
-    padding: 10px;
+    padding: 8px;
     vertical-align: middle;
     width: 41%; }
     .PatientInfo_left.Female {
@@ -9246,7 +9246,7 @@ div.LineInfo {
       vertical-align: bottom; }
   .PatientInfo_right {
     display: table;
-    padding: 10px;
+    padding: 8px;
     vertical-align: middle;
     width: 100%; }
     .PatientInfo_right > div {
@@ -9756,6 +9756,10 @@ div.LineInfo {
     margin-left: 0;
     margin-right: 64px; }
 
+.SortTableLink .PersonCard .PersonCard__content,
+.SortTableLink .PersonCard .PersonCard_header .PersonCard__headerLeftInfo {
+  height: 36px; }
+
 .StructureContainer {
   display: table;
   vertical-align: middle;
@@ -10083,6 +10087,7 @@ div.LineInfo {
       padding: 16px 8px;
       vertical-align: middle; }
     .TableRecords.CustomTable .TableRecords_Header {
+      height: 20px;
       padding: 0 10px; }
     .TableRecords.CustomTable .TableRecords_ContentExpandable [ui='data-expandable-table-content'] {
       border: 1px solid #d6d6d6;
@@ -10126,7 +10131,7 @@ div.LineInfo {
     color: #adadad;
     font-family: "LatoBold";
     font-size: 0.857em;
-    min-height: 48px;
+    height: 36px;
     padding: 8px 10px;
     text-align: left;
     text-transform: uppercase; }
@@ -12620,7 +12625,8 @@ html body {
     border: 5px solid #d6d6d6;
     border-radius: 2px; }
   .open .DropdownMenu {
-    display: block; }
+    display: block;
+    padding: 8px 0; }
   .DropdownMenu .PH > a,
   .DropdownMenu .PH > span a,
   .DropdownMenu .PH > span > div {
@@ -12629,7 +12635,7 @@ html body {
     font-family: "LatoRegular";
     height: 36px;
     line-height: 36px;
-    padding: 0 8px;
+    padding: 0 16px;
     white-space: nowrap; }
     .DropdownMenu .PH > a:hover,
     .DropdownMenu .PH > span a:hover,
@@ -13961,7 +13967,6 @@ div.ActionsMenu-item {
 .CardPatientInfo {
   background-color: transparent;
   display: table;
-  min-height: 25px;
   width: 100%; }
   .CardPatientInfo + .ListRecords .PatientInfo {
     border-left: none;
@@ -13969,8 +13974,12 @@ div.ActionsMenu-item {
     .CardPatientInfo + .ListRecords .PatientInfo:last-of-type {
       border-bottom: none; }
   .CardPatientInfo_left {
+    color: #adadad;
     display: table-cell;
-    padding: 10px;
+    font-family: "LatoBold";
+    font-size: 0.857em;
+    padding: 8px;
+    text-transform: uppercase;
     vertical-align: middle;
     width: 41%; }
     .CardPatientInfo_left.ExtraTiny {
@@ -14001,8 +14010,12 @@ div.ActionsMenu-item {
       margin-left: 10px;
       margin-right: auto; }
   .CardPatientInfo_right {
+    color: #adadad;
     display: table;
-    padding: 10px;
+    font-family: "LatoBold";
+    font-size: 0.857em;
+    padding: 8px;
+    text-transform: uppercase;
     vertical-align: middle;
     width: 100%; }
     .CardPatientInfo_right > div {
@@ -14603,47 +14616,22 @@ div.CircledArrow {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  height: 50px; }
-
-.ClinicalInformationItem {
-  border-radius: 4px;
-  display: -webkit-box;
-  display: flex;
-  flex-basis: 100%;
-  padding: 2px 6px 2px 2px; }
-  .ClinicalInformationItem:first-child {
-    margin-bottom: 1px; }
-  .ClinicalInformationItem-icon {
-    -webkit-box-align: center;
-            align-items: center;
-    background-color: #fff;
-    border-radius: 2px;
-    color: #333;
+  height: 56px; }
+  .ClinicalInformation > div .ClinicalInformationItem {
     display: -webkit-box;
     display: flex;
-    margin-right: 5px;
-    padding: 0 4px; }
-  .ClinicalInformationItem-text {
-    -webkit-box-align: start;
-            align-items: flex-start;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    font-size: 11px;
-    -webkit-box-pack: center;
-            justify-content: center;
-    line-height: 12px; }
-
-.AR .ClinicalInformationItem,
-.FA .ClinicalInformationItem {
-  padding: 2px 2px 2px 6px; }
-
-.AR .ClinicalInformationItem-icon,
-.FA .ClinicalInformationItem-icon {
-  margin-left: 5px;
-  margin-right: 0; }
+    flex-basis: 100%;
+    gap: 8px;
+    padding: 4px 8px; }
+    .ClinicalInformation > div .ClinicalInformationItem:first-of-type {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px; }
+    .ClinicalInformation > div .ClinicalInformationItem:last-of-type {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px; }
+    .ClinicalInformation > div .ClinicalInformationItem-text {
+      font-size: 0.786em;
+      white-space: nowrap; }
 
 @media (max-width: 1280px) {
   .ClinicalInformationItem {
@@ -15454,15 +15442,15 @@ div.CircledArrow {
 
 .DataTable .dataTables_wrapper table thead th {
   border-bottom-color: #d6d6d6;
-  color: #777777;
+  color: #adadad;
   font-family: "LatoBold";
   font-size: 0.857em;
-  min-height: 48px;
-  padding: 8px 10px;
+  min-height: 36px;
+  padding: 9px 16px;
   text-transform: uppercase; }
 
 .DataTable .dataTables_wrapper table tbody td {
-  padding: 10px 14px; }
+  padding: 9px 16px; }
 
 .DataTable .dataTables_wrapper table tbody tr {
   display: table-row;
@@ -15964,22 +15952,16 @@ div.CircledArrow {
       .daterangepicker .ranges li:hover {
         background-color: #eee; }
 
-.Demographic-item {
-  display: block;
-  text-align: left; }
+.Demographic-item .Demographic-item-label {
+  color: #777777;
+  font-size: 0.857em; }
 
-.AR .Demographic-item {
-  text-align: right; }
+.Demographic-item .Demographic-item-value {
+  font-family: "LatoBold"; }
 
-.Demographic-item-label {
-  color: #5c5c5c;
-  display: block;
-  font-size: 0.9rem; }
-
-.Demographic-item-value {
-  display: block;
-  font-family: "LatoBold";
-  font-size: 1rem; }
+.AR .Demographic-item .Demographic-item-value,
+.FA .Demographic-item .Demographic-item-value {
+  font-family: "TajawalBold"; }
 
 .DietBlock {
   background-color: #f3f3f3;
@@ -16704,7 +16686,8 @@ div.CircledArrow {
     border-bottom: 1px solid #d6d6d6;
     display: -webkit-box;
     display: flex;
-    padding: 10px 16px; }
+    min-height: 36px;
+    padding: 8px 16px; }
   .DynamicTable__RowColumn, .DynamicTable__HeaderColumn, .DynamicTable__RowColumn--main, .DynamicTable__HeaderColumn--main {
     -webkit-box-align: center;
             align-items: center;
@@ -16724,6 +16707,11 @@ div.CircledArrow {
               justify-content: flex-start;
       padding: 0;
       text-align: left; }
+  .DynamicTable__HeaderColumn, .DynamicTable__RowColumn--main, .DynamicTable__HeaderColumn--main, .DynamicTable__HeaderColumn--main {
+    color: #adadad;
+    font-family: "LatoBold";
+    font-size: 0.857em;
+    text-transform: uppercase; }
   .DynamicTable__RowsWrapper {
     border-bottom: 1px solid #d6d6d6;
     position: relative; }
@@ -17878,165 +17866,72 @@ div.CircledArrow {
           align-items: flex-start;
   display: -webkit-box;
   display: flex;
+  gap: 24px;
   -webkit-box-pack: justify;
-          justify-content: space-between;
-  padding-right: 36px; }
+          justify-content: space-between; }
   .HeaderIdentification-photo {
-    background-color: #fafafa;
-    position: relative; }
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    gap: 8px; }
+    .HeaderIdentification-photo .CircledPatient {
+      font-size: 1.714em;
+      height: 56px;
+      line-height: 56px;
+      padding: 0;
+      width: 56px; }
+      .HeaderIdentification-photo .CircledPatient .PatientGender.Male {
+        color: #194968; }
+      .HeaderIdentification-photo .CircledPatient .PatientGender.Female {
+        color: #c892b3; }
+      .HeaderIdentification-photo .CircledPatient .PatientGender img {
+        border-radius: 50%;
+        height: 56px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        width: 100%; }
+    .HeaderIdentification-photo .PatientHeaderPhotoAge {
+      font-family: "LatoBold"; }
   .HeaderIdentification-names {
-    margin-left: 10px;
     white-space: nowrap; }
     .HeaderIdentification-names .HeaderIdentification-primary {
       -webkit-box-align: center;
               align-items: center;
       display: -webkit-box;
-      display: flex; }
+      display: flex;
+      gap: 8px; }
       .HeaderIdentification-names .HeaderIdentification-primary-name {
-        font-family: "LatoBold";
-        font-size: 1.429em; }
+        font-size: 1.429em;
+        line-height: 24px; }
         .HeaderIdentification-names .HeaderIdentification-primary-name .patient-en-fullname span {
           display: inline-block;
+          font-family: "LatoBold";
           line-height: initial;
           max-width: 400px;
           overflow: hidden;
           text-overflow: ellipsis; }
-
-.AR .HeaderIdentification {
-  padding-left: 100px;
-  padding-right: 0; }
-  .AR .HeaderIdentification .HeaderIdentification-names {
-    margin-left: 0;
-    margin-right: 10px; }
-    .AR .HeaderIdentification .HeaderIdentification-names .HeaderIdentification-primary-name {
-      font-family: "TajawalBold"; }
-
-.HeaderIdentification-photo .PhotoFrameMonths {
-  display: -webkit-box;
-  display: flex;
-  height: 50px;
-  position: static;
-  width: 90px; }
-  .HeaderIdentification-photo .PhotoFrameMonths .Canvas .PhotoFrame {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    height: 50px;
-    padding: 0;
-    position: static;
-    width: 90px; }
-    .HeaderIdentification-photo .PhotoFrameMonths .Canvas .PhotoFrame .PatientGender {
-      height: auto;
-      line-height: 30px;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      width: auto; }
-      .HeaderIdentification-photo .PhotoFrameMonths .Canvas .PhotoFrame .PatientGender.Unidentified {
-        background-color: #ededed;
-        color: #d2d2d2; }
-      .HeaderIdentification-photo .PhotoFrameMonths .Canvas .PhotoFrame .PatientGender.Male {
-        background-color: #ccd7dc;
-        color: #11394f; }
-      .HeaderIdentification-photo .PhotoFrameMonths .Canvas .PhotoFrame .PatientGender.Female {
-        background-color: #dcccdb;
-        color: #6f4065; }
-    .HeaderIdentification-photo .PhotoFrameMonths .Canvas .PhotoFrame .PatientGender img {
-      left: 5px;
-      max-height: 45px;
-      max-width: 45px;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
-    .HeaderIdentification-photo .PhotoFrameMonths .Canvas .PhotoFrame .PatientGender .icon {
-      font-size: 30px;
-      left: 15px;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
-  .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
-    font-family: "LatoBold";
-    margin: 0;
-    max-width: none;
-    padding: 0;
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-    .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge .AgeDisplaySingleValue {
-      font-size: 0.8rem;
-      min-width: 30px;
-      text-align: center; }
-    .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge .age-range {
-      font-size: 0.8rem;
-      line-height: normal; }
-
-.HeaderIdentification-primary {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex; }
-  .HeaderIdentification-primary-name {
-    font-family: 'LatoBold';
-    font-size: 1.5rem; }
-    .HeaderIdentification-primary-name .patient-en-fullname {
-      line-height: initial; }
-      .HeaderIdentification-primary-name .patient-en-fullname span {
-        display: inline-block;
-        max-width: 400px;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-
-.HeaderIdentification-primary-otherinformation {
-  margin-left: 5px; }
-
-.AR .HeaderIdentification-primary-otherinformation {
-  margin-left: 0;
-  margin-right: 5px; }
-  .AR .HeaderIdentification-primary-otherinformation .ActionsMenu-label {
-    margin: 0; }
-
-.HeaderIdentification-secondary {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex; }
-
-.HeaderIdentification-secondary-name {
-  flex-basis: 100%;
-  font-size: 15px; }
-  .HeaderIdentification-secondary-name .patient-ar-fullname {
-    line-height: initial; }
-  .HeaderIdentification-secondary-name > div {
-    display: block; }
-
-.HeaderIdentification-secondary .FlagWrapper {
-  margin-left: 5px;
-  vertical-align: middle; }
-  .HeaderIdentification-secondary .FlagWrapper .FlagContainer {
-    height: 16px;
-    line-height: normal;
-    width: 22px; }
-    .HeaderIdentification-secondary .FlagWrapper .FlagContainer .flag {
-      bottom: auto;
-      position: static; }
-
-.AR .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge,
-.FA .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
-  left: 5px;
-  right: auto; }
-
-.AR .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge,
-.FA .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
-  font-family: "TajawalBold"; }
-
-.AR .HeaderIdentification-photo .PatientGender,
-.FA .HeaderIdentification-photo .PatientGender {
-  left: 35px; }
+        .HeaderIdentification-names .HeaderIdentification-primary-name .patient-ar-fullname span {
+          font-family: "TajawalBold"; }
+    .HeaderIdentification-names .HeaderIdentification-secondary {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      color: #777777;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+              flex-direction: row-reverse;
+      gap: 16px;
+      margin: 0 24px; }
+      .HeaderIdentification-names .HeaderIdentification-secondary .HeaderIdentification-secondary-name .patient-ar-fullname {
+        font-family: "TajawalRegular";
+        line-height: initial; }
+    .HeaderIdentification-names .HeaderIdentification-primary-otherinformation .CircleElement {
+      color: #777777;
+      font-size: 1.143em;
+      height: 16px;
+      width: 16px; }
 
 div.Toolbar {
   width: 100%; }
@@ -18811,7 +18706,12 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   color: #6fcdca !important; }
 
 .InputUnitBox__Header {
-  padding: 0 16px; }
+  color: #adadad;
+  font-family: "LatoBold";
+  font-size: 0.857em;
+  line-height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase; }
 
 .InputUnitBox__Body {
   -webkit-box-align: center;
@@ -18882,11 +18782,15 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px; }
   .AddLine_HeaderItems {
-    padding: 6px 0 6px 16px; }
+    line-height: 36px;
+    padding-left: 16px; }
     .AddLine_HeaderItems > div {
+      color: #adadad;
+      font-family: "LatoBold";
+      font-size: 0.857em;
       margin-left: auto;
       margin-right: 16px;
-      vertical-align: middle;
+      text-transform: uppercase;
       white-space: nowrap; }
   .AddLine__ContentContainer {
     padding: 20px 0; }
@@ -18916,7 +18820,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 
 .AR .AddLine_HeaderItems,
 .FA .AddLine_HeaderItems {
-  padding: 6px 16px 6px 0; }
+  padding-left: 0;
+  padding-right: 16px; }
   .AR .AddLine_HeaderItems > div,
   .FA .AddLine_HeaderItems > div {
     margin-left: 16px;
@@ -20957,10 +20862,10 @@ body.PanelById.PanelOpened {
     margin-right: 16px !important; }
 
 .PatientMedicalFile {
-  background-color: #f3f3f3;
-  border-radius: 2px;
-  height: 100%;
-  height: 50px; }
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  height: 56px;
+  padding: 8px; }
   .Multiple .PatientMedicalFile .FileInfo {
     line-height: 32px; }
   .med-file-requested .PatientMedicalFile > div:not(:last-of-type) {
@@ -20968,10 +20873,7 @@ body.PanelById.PanelOpened {
   .PatientMedicalFile > span.icon {
     color: #777777;
     font-size: 1.429em;
-    line-height: 50px;
-    padding-left: 10px; }
-  .PatientMedicalFile > div:not(.RequestFiles-Menu) {
-    padding: 0 5px 0 10px; }
+    line-height: 56px; }
   .PatientMedicalFile > div:not(:last-of-type) {
     height: 100%;
     line-height: 16px; }
@@ -22448,77 +22350,55 @@ a .PersonCard {
 .SapphireHeader {
   background-color: #fff;
   position: relative; }
-
-.SapphireHeader-body {
-  -webkit-box-align: center;
-          align-items: center;
-  border-bottom: solid 1px #ebebeb;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  min-height: 80px;
-  padding: 10px 16px; }
-
-.SapphireHeader-navigation {
-  font-size: 2.249em; }
-  .AR .SapphireHeader-navigation > a {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
-
-.PatientDetails___topPatientHeader.TopPatientHeader .SapphireHeader-body {
-  min-height: 74px; }
-
-.SapphireHeader-identification {
-  height: 50px; }
-
-.SapphireHeader-demographics,
-.SapphireHeader-demographics > div {
-  -webkit-box-flex: 2;
-          flex-grow: 2;
-  text-align: left;
-  white-space: nowrap; }
-
-.AR .SapphireHeader-demographics,
-.AR .SapphireHeader-demographics > div {
-  text-align: right; }
-
-.SapphireHeader-information,
-.SapphireHeader-information > div {
-  display: block; }
-
-.SapphireHeader-information > div .ClinicalInformation {
-  margin-left: 3px;
-  margin-right: 3px; }
-
-.SapphireHeader-actions > div {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
-  white-space: nowrap; }
-
-.SapphireHeader-actions > div > div,
-.SapphireHeader-actions > div > span {
-  display: block;
-  margin: 0;
-  padding: 0; }
-
-.SapphireHeader-actions > div .ClinicalBadge {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center; }
-
-.SapphireHeader-actions > div .PatientMedicalFile {
-  display: inline-block;
-  margin: 0 1px; }
+  .SapphireHeader-body {
+    -webkit-box-align: center;
+            align-items: center;
+    border-bottom: solid 1px #ebebeb;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    min-height: 80px;
+    padding: 0 16px; }
+  .SapphireHeader-navigation {
+    font-size: 2.249em; }
+    .SapphireHeader-navigation a .icon {
+      color: #333333; }
+    .AR .SapphireHeader-navigation > a {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  .SapphireHeader-identification {
+    height: 56px; }
+  .SapphireHeader-demographics {
+    -webkit-box-flex: 2;
+            flex-grow: 2;
+    margin: 0 32px;
+    text-align: left;
+    white-space: nowrap; }
+  .SapphireHeader-information {
+    -webkit-box-flex: 1;
+            flex: 1; }
+  .SapphireHeader-actions {
+    -webkit-box-flex: 1;
+            flex: 1; }
+    .SapphireHeader-actions > div {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      white-space: nowrap; }
+      .SapphireHeader-actions > div .ClinicalBadge {
+        -webkit-box-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; }
 
 .SapphireHeader-actions > div .icon-cashkd {
   margin: 0 1px 0 4px; }
