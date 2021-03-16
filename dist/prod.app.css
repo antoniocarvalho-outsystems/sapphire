@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108005 || Generated: Mon Mar 15 2021 17:25:19 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108006 || Generated: Tue Mar 16 2021 09:21:21 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12622,7 +12622,7 @@ html body {
     display: block;
     font-family: "LatoRegular";
     height: 36px;
-    line-height: unset;
+    line-height: 36px;
     padding: 0 8px;
     white-space: nowrap; }
     .DropdownMenu .PH > a:hover,
@@ -20930,6 +20930,25 @@ body.PanelById.PanelOpened {
           display: none; }
     .tablet .PatientCallCancelStructure__Actions [ui='data-call-next-button'] .PatientCallCancel__Counter {
       min-height: 36px; }
+
+.AR .PatientCallCancelStructure__ListQueues,
+.FA .PatientCallCancelStructure__ListQueues {
+  padding-left: 16px;
+  padding-right: 32px; }
+
+.AR .PatientCallCancelStructure__LastCalled [ui='data-recall-button'],
+.FA .PatientCallCancelStructure__LastCalled [ui='data-recall-button'] {
+  margin-left: 0;
+  margin-right: 16px; }
+
+.AR .PatientCallCancelStructure__Actions [ui='data-call-next-button'],
+.FA .PatientCallCancelStructure__Actions [ui='data-call-next-button'] {
+  margin-left: 0;
+  margin-right: 8px; }
+  .AR .PatientCallCancelStructure__Actions [ui='data-call-next-button'] .PatientCallCancel__Header [ui='data-button-call'],
+  .FA .PatientCallCancelStructure__Actions [ui='data-call-next-button'] .PatientCallCancel__Header [ui='data-button-call'] {
+    margin-left: 0 !important;
+    margin-right: 16px !important; }
 
 .PatientMedicalFile {
   background-color: #f3f3f3;
