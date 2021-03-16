@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108007 || Generated: Tue Mar 16 2021 09:35:35 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108008 || Generated: Tue Mar 16 2021 09:40:29 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9733,8 +9733,7 @@ div.LineInfo {
           background-color: #f2fffd; }
 
 .SortTableLink--ascending a:link.LinkSelected::after {
-  content: '\e914';
-  font-family: "Sapphire-Icon-Font"; }
+  content: '\e914'; }
 
 .SortTableLink a {
   color: #adadad;
@@ -9746,7 +9745,8 @@ div.LineInfo {
     color: #333333; }
     .SortTableLink a.LinkSelected::after {
       content: '\e913';
-      font-family: "Sapphire-Icon-Font"; }
+      font-family: "Sapphire-Icon-Font";
+      margin: 0 4px; }
     .SortTableLink a.LinkSelected:hover {
       color: #00ac94; }
 
