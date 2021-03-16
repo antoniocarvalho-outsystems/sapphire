@@ -37,4 +37,11 @@
 			margin-right: 64px;
 		}
 	}
+
+	.PersonCard {
+		.PersonCard__content,
+		.PersonCard_header .PersonCard__headerLeftInfo {
+				height: 36px;
+		}
+	}
 }

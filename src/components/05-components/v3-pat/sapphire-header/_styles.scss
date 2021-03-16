@@ -1,82 +1,94 @@
 .SapphireHeader {
-	background-color: #fff;
+	background-color: $regular-white;
 	position: relative;
-}
 
-.SapphireHeader-body {
-	align-items: center;
-	border-bottom: solid 1px $sapphire-light-container;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	min-height: 80px;
-	padding: 10px $sapphire-sizes--medium;
-}
+	&-body {
+		align-items: center;
+		border-bottom: solid 1px $sapphire-light-container;
+		display: flex;
+		flex-wrap: wrap;
+		gap: $sapphire-sizes--xsmall;
+		justify-content: space-between;
+		min-height: 80px;
+		padding: 0 $sapphire-sizes--medium;
+	}
 
-.SapphireHeader-navigation {
-	font-size: 2.249em;
+	&-navigation {
+		font-size: 2.249em;
 
-	.AR & {
-		> a {
-			transform: rotate(90deg);
+		a .icon {
+			color: $dark-grey;
+		}
+
+		.AR & {
+			> a {
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+	&-identification {
+		height: $sapphire-sizes--largest;
+	}
+
+	&-demographics {
+		flex-grow: 2;
+		margin: 0 $sapphire-sizes--xlarge;
+		text-align: left;
+		white-space: nowrap;
+	}
+
+	&-information {
+		flex: 1;
+	}
+
+	&-actions {
+		flex: 1;
+
+		> div {
+			align-items: center;
+			display: flex;
+			white-space: nowrap;
+
+			.ClinicalBadge {
+				@include flex-center-total();
+
+				flex-direction: column;
+			}
 		}
 	}
 }
 
-.PatientDetails___topPatientHeader.TopPatientHeader .SapphireHeader-body {
-	min-height: 74px;
-}
+// .PatientDetails___topPatientHeader.TopPatientHeader .SapphireHeader-body {
+// 	min-height: 74px;
+// }
 
-.SapphireHeader-identification {
-	height: 50px;
-}
+// .AR .SapphireHeader-demographics,
+// .AR .SapphireHeader-demographics > div {
+// 	text-align: right;
+// }
 
-.SapphireHeader-demographics,
-.SapphireHeader-demographics > div {
-	flex-grow: 2;
-	text-align: left;
-	white-space: nowrap;
-}
+// .SapphireHeader-information,
+// .SapphireHeader-information > div {
+// 	display: block;
+// }
 
-.AR .SapphireHeader-demographics,
-.AR .SapphireHeader-demographics > div {
-	text-align: right;
-}
+// .SapphireHeader-information > div .ClinicalInformation {
+// 	margin-left: 3px;
+// 	margin-right: 3px;
+// }
 
-.SapphireHeader-information,
-.SapphireHeader-information > div {
-	display: block;
-}
+// .SapphireHeader-actions > div > div,
+// .SapphireHeader-actions > div > span {
+// 	display: block;
+// 	margin: 0;
+// 	padding: 0;
+// }
 
-.SapphireHeader-information > div .ClinicalInformation {
-	margin-left: 3px;
-	margin-right: 3px;
-}
-
-.SapphireHeader-actions > div {
-	align-items: center;
-	display: flex;
-	white-space: nowrap;
-}
-
-.SapphireHeader-actions > div > div,
-.SapphireHeader-actions > div > span {
-	display: block;
-	margin: 0;
-	padding: 0;
-}
-
-.SapphireHeader-actions > div .ClinicalBadge {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.SapphireHeader-actions > div .PatientMedicalFile {
-	display: inline-block;
-	margin: 0 1px;
-}
+// .SapphireHeader-actions > div .PatientMedicalFile {
+// 	display: inline-block;
+// 	margin: 0 1px;
+// }
 
 .SapphireHeader-actions > div .icon-cashkd {
 	margin: 0 1px 0 4px;

@@ -1,217 +1,94 @@
 .HeaderIdentification {
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-between;
-  padding-right: 36px;
+	align-items: flex-start;
+	display: flex;
+	gap: $sapphire-sizes--large;
+	justify-content: space-between;
 
-  &-photo {
-    background-color: #fafafa;
-    position: relative;
-  }
+	&-photo {
+		align-items: center;
+		display: flex;
+		gap: $sapphire-sizes--small;
 
-  &-names {
-    margin-left: 10px;
-    white-space: nowrap;
+		.CircledPatient {
+			font-size: $font-size-heading1;
+			height: $sapphire-sizes--largest;
+			line-height: $sapphire-sizes--largest;
+			padding: 0;
+			width: $sapphire-sizes--largest;
 
-    .HeaderIdentification-primary {
-      align-items: center;
-      display: flex;
+			.PatientGender {
+				&.Male {
+					color: $sapphire-male;
+				}
 
-      &-name {
-        font-family: $font-family-latin-bold;
-        font-size: 1.429em;
+				&.Female {
+					color: $sapphire-female;
+				}
 
-        .patient-en-fullname span {
-          display: inline-block;
-          line-height: initial;
-          max-width: 400px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-      }
-    }
-  }
-}
+				img {
+					border-radius: 50%;
+					height: 56px;
+					object-fit: cover;
+					width: 100%;
+				}
+			}
+		}
 
-.AR .HeaderIdentification {
-  padding-left: 100px;
-  padding-right: 0;
+		.PatientHeaderPhotoAge {
+			font-family: $font-family-latin-bold;
+		}
+	}
 
-  .HeaderIdentification-names {
-    margin-left: 0;
-    margin-right: 10px;
+	&-names {
+		white-space: nowrap;
 
-    .HeaderIdentification-primary-name {
-      font-family: $font-family-arabic-bold;
-    }
-  }
-}
+		.HeaderIdentification-primary {
+			@include flex-center-vertically();
 
-.HeaderIdentification-photo .PhotoFrameMonths {
-  display: flex;
-  height: 50px;
-  position: static;
-  width: 90px;
+			gap: $sapphire-sizes--small;
 
-  .Canvas .PhotoFrame {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    height: 50px;
-    padding: 0;
-    position: static;
-    width: 90px;
+			&-name {
+				font-size: $font-size-heading2;
+				line-height: $sapphire-sizes--large;
 
-    .PatientGender {
-      height: auto;
-      line-height: 30px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: auto;
+				.patient-en-fullname span {
+					display: inline-block;
+					font-family: $font-family-latin-bold;
+					line-height: initial;
+					max-width: 400px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
 
-      &.Unidentified {
-        background-color: #ededed;
-        color: #d2d2d2;
-      }
+				.patient-ar-fullname span {
+					font-family: $font-family-arabic-bold;
+				}
+			}
+		}
 
-      &.Male {
-        background-color: #ccd7dc;
-        color: #11394f;
-      }
+		.HeaderIdentification-secondary {
+			@include flex-center-vertically();
 
-      &.Female {
-        background-color: #dcccdb;
-        color: #6f4065;
-      }
-    }
+			color: $regular-grey;
+			flex-direction: row-reverse;
+			gap: $sapphire-sizes--medium;
+			margin: 0 $sapphire-sizes--large;
 
-    .PatientGender img {
-      left: 5px;
-      max-height: 45px;
-      max-width: 45px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+			.HeaderIdentification-secondary-name {
+				.patient-ar-fullname {
+					font-family: $font-family-arabic-regular;
+					line-height: initial;
+				}
+			}
+		}
 
-    .PatientGender .icon {
-      font-size: 30px;
-      left: 15px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-
-  .PatientHeaderPhotoAge {
-    font-family: $font-family-latin-bold;
-    margin: 0;
-    max-width: none;
-    padding: 0;
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    .AgeDisplaySingleValue {
-      font-size: 0.8rem;
-      min-width: 30px;
-      text-align: center;
-    }
-
-    .age-range {
-      font-size: 0.8rem;
-      line-height: normal;
-    }
-  }
-}
-
-.HeaderIdentification-primary {
-  align-items: center;
-  display: flex;
-
-  &-name {
-    font-family: 'LatoBold';
-    font-size: 1.5rem;
-
-    .patient-en-fullname {
-      line-height: initial;
-
-      span {
-        display: inline-block;
-        max-width: 400px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-  }
-}
-
-.HeaderIdentification-primary-otherinformation {
-  margin-left: 5px;
-}
-
-.AR .HeaderIdentification-primary-otherinformation {
-  margin-left: 0;
-  margin-right: 5px;
-
-  .ActionsMenu-label {
-    margin: 0;
-  }
-}
-
-.HeaderIdentification-secondary {
-  align-items: center;
-  display: flex;
-}
-
-.HeaderIdentification-secondary-name {
-  flex-basis: 100%;
-  font-size: 15px;
-
-  .patient-ar-fullname {
-    line-height: initial;
-  }
-
-  >div {
-    display: block;
-  }
-}
-
-.HeaderIdentification-secondary .FlagWrapper {
-  margin-left: 5px;
-  vertical-align: middle;
-
-  .FlagContainer {
-    height: 16px;
-    line-height: normal;
-    width: 22px;
-
-    .flag {
-      bottom: auto;
-      position: static;
-    }
-  }
-}
-
-.AR,
-.FA {
-  .HeaderIdentification-photo .PhotoFrameMonths .Canvas .PhotoFrame .PatientGender img {
-    //   left: auto;
-    //   right: 5px;
-  }
-
-  .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
-    left: 5px;
-    right: auto;
-  }
-
-  .HeaderIdentification-photo .PhotoFrameMonths .PatientHeaderPhotoAge {
-    font-family: $font-family-arabic-bold;
-  }
-
-  .HeaderIdentification-photo .PatientGender {
-    left: 35px;
-  }
+		.HeaderIdentification-primary-otherinformation {
+			.CircleElement {
+				color: $regular-grey;
+				font-size: $font-size-heading4;
+				height: $sapphire-sizes--medium;
+				width: $sapphire-sizes--medium;
+			}
+		}
+	}
 }

@@ -17,6 +17,7 @@
 
 	.open & {
 		display: block;
+		padding: $sapphire-sizes--small 0;
 	}
 
 	.PH > a,
@@ -27,7 +28,7 @@
 		font-family: $font-family-latin-regular;
 		height: 36px;
 		line-height: 36px;
-		padding: 0 $sapphire-sizes--small;
+		padding: 0 $sapphire-sizes--medium;
 		white-space: nowrap;
 
 		&:hover {

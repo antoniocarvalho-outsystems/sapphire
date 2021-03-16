@@ -1,20 +1,19 @@
 .Demographic-item {
-	display: block;
-	text-align: left;
+	.Demographic-item-label {
+		color: $regular-grey;
+		font-size: $font-size-small;
+	}
+
+	.Demographic-item-value {
+		font-family: $font-family-latin-bold;
+	}
 }
 
-.AR .Demographic-item {
-	text-align: right;
-}
-
-.Demographic-item-label {
-	color: $text-color-light;
-	display: block;
-	font-size: 0.9rem;
-}
-
-.Demographic-item-value {
-	display: block;
-	font-family: $font-family-latin-bold;
-	font-size: 1rem;
+.AR,
+.FA {
+	.Demographic-item {
+		.Demographic-item-value {
+			font-family: $font-family-arabic-bold;
+		}
+	}
 }

@@ -81,6 +81,7 @@
 		}
 
 		.TableRecords_Header {
+			height: 20px;
 			padding: 0 10px;
 		}
 
@@ -155,7 +156,7 @@
 		color: $mid-light-grey;
 		font-family: $font-family-latin-bold;
 		font-size: 0.857em;
-		min-height: 48px;
+		height: 36px;
 		padding: 8px 10px;
 		text-align: left;
 		text-transform: uppercase;

@@ -3,12 +3,16 @@
 	border-bottom-right-radius: 2px;
 
 	&_HeaderItems {
-		padding: 6px 0 6px $sapphire-sizes--medium;
+		line-height: 36px;
+		padding-left: $sapphire-sizes--medium;
 
 		> div {
+			color: $mid-light-grey;
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-small;
 			margin-left: auto;
 			margin-right: $sapphire-sizes--medium;
-			vertical-align: middle;
+			text-transform: uppercase;
 			white-space: nowrap;
 		}
 	}
@@ -60,7 +64,8 @@
 .FA {
 	.AddLine {
 		&_HeaderItems {
-			padding: 6px $sapphire-sizes--medium 6px 0;
+			padding-left: 0;
+			padding-right: $sapphire-sizes--medium;
 
 			> div {
 				margin-left: $sapphire-sizes--medium;

@@ -1,71 +1,46 @@
-.ClinicalInformation>div {
-  display: flex;
-  flex-direction: column;
-  height: 50px;
+.ClinicalInformation > div {
+	display: flex;
+	flex-direction: column;
+	height: $sapphire-sizes--largest;
+
+	.ClinicalInformationItem {
+		display: flex;
+		flex-basis: 100%;
+		gap: $sapphire-sizes--small;
+		padding: $sapphire-sizes--xsmall $sapphire-sizes--small;
+
+		&:first-of-type {
+			border-top-left-radius: $border-radius-default;
+			border-top-right-radius: $border-radius-default;
+		}
+
+		&:last-of-type {
+			border-bottom-left-radius: $border-radius-default;
+			border-bottom-right-radius: $border-radius-default;
+		}
+
+		&-text {
+			font-size: $font-size-tiny;
+			white-space: nowrap;
+		}
+	}
 }
-
-.ClinicalInformationItem {
-  border-radius: 4px;
-  display: flex;
-  flex-basis: 100%;
-  padding: 2px 6px 2px 2px;
-
-  &:first-child {
-    margin-bottom: 1px;
-  }
-
-  &-icon {
-    align-items: center;
-    background-color: #fff;
-    border-radius: 2px;
-    color: #333;
-    display: flex;
-    margin-right: 5px;
-    padding: 0 4px;
-  }
-
-  &-text {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    font-size: 11px;
-    justify-content: center;
-    line-height: 12px;
-  }
-
-}
-
-.AR,
-.FA {
-
-  .ClinicalInformationItem {
-    padding: 2px 2px 2px 6px;
-  }
-
-  .ClinicalInformationItem-icon {
-    margin-left: 5px;
-    margin-right: 0;
-  }
-
-}
-
-
 
 @media (max-width: 1280px) {
-  .ClinicalInformationItem {
-    margin-top: 10px;
-    max-width: 49.5%;
-  }
+	.ClinicalInformationItem {
+		margin-top: 10px;
+		max-width: 49.5%;
+	}
 
-  .SapphireHeader .SapphireHeader-information .ClinicalInformation {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
+	.SapphireHeader .SapphireHeader-information .ClinicalInformation {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
 
-  .ClinicalInformation>div {
-    flex-direction: row;
-    height: auto;
-    justify-content: space-between;
-  }
+	.ClinicalInformation > div {
+		flex-direction: row;
+		height: auto;
+		justify-content: space-between;
+	}
 }

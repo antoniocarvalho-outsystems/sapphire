@@ -11,7 +11,7 @@ SapphireWidgets.PopUpMenu = {
 		var Ww = 0;
 		var Hh = 0;
 
-		_this.children('.button-expand:visible').hide();
+		//_this.children('.button-expand:visible').hide();
 
 		/* Get the menu element. */
 		var _el = _this.next('.popup-menu');
@@ -95,7 +95,7 @@ SapphireWidgets.PopUpMenu = {
 				) {
 					$('.popup-menu:visible').hide();
 					$('.button-collapse:visible').hide();
-					$('.button-expand').show();
+					//$('.button-expand').show();
 				}
 			}
 		}

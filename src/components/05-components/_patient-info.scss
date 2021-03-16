@@ -12,7 +12,7 @@
 
 	&_left {
 		display: table-cell;
-		padding: 10px;
+		padding: $sapphire-sizes--small;
 		vertical-align: middle;
 		width: 41%;
 
@@ -106,7 +106,7 @@
 
 	&_right {
 		display: table;
-		padding: 10px;
+		padding: $sapphire-sizes--small;
 		vertical-align: middle;
 		width: 100%;
 

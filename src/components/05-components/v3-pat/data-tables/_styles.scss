@@ -1,16 +1,16 @@
 .DataTable .dataTables_wrapper {
 	table thead th {
 		border-bottom-color: $light-grey;
-		color: $regular-grey;
+		color: $mid-light-grey;
 		font-family: $font-family-latin-bold;
-		font-size: 0.857em;
-		min-height: 48px;
-		padding: 8px 10px;
+		font-size: $font-size-small;
+		min-height: 36px;
+		padding: 9px $sapphire-sizes--medium;
 		text-transform: uppercase;
 	}
 
 	table tbody td {
-		padding: 10px 14px;
+		padding: 9px $sapphire-sizes--medium;
 	}
 
 	table tbody tr {

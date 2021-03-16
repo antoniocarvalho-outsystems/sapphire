@@ -1,8 +1,8 @@
 .PatientMedicalFile {
-	background-color: $body-color;
-	border-radius: 2px;
-	height: 100%;
-	height: 50px;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-default;
+	height: $sapphire-sizes--largest;
+	padding: $sapphire-sizes--small;
 
 	.Multiple & {
 		& .FileInfo {
@@ -18,14 +18,13 @@
 
 	> span.icon {
 		color: $regular-grey;
-		font-size: 1.429em;
-		line-height: 50px;
-		padding-left: 10px;
+		font-size: $font-size-heading2;
+		line-height: $sapphire-sizes--largest;
 	}
 
-	> div:not(.RequestFiles-Menu) {
-		padding: 0 5px 0 10px;
-	}
+	// > div:not(.RequestFiles-Menu) {
+	// 	padding: 0 5px 0 10px;
+	// }
 
 	> div:not(:last-of-type) {
 		height: 100%;

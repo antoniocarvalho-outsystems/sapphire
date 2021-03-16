@@ -29,7 +29,8 @@
 	&__Header {
 		border-bottom: 1px solid $light-grey;
 		display: flex;
-		padding: 10px $sapphire-sizes--medium;
+		min-height: 36px;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium
 	}
 
 	&__RowColumn,
@@ -53,6 +54,14 @@
 			text-align: left;
 		}
 	}
+
+	&__HeaderColumn,
+	&__HeaderColumn--main {
+		color: $mid-light-grey;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+		text-transform: uppercase;
+	} 
 
 	&__RowsWrapper {
 		border-bottom: 1px solid $light-grey;
