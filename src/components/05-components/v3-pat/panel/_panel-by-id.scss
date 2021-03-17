@@ -9,6 +9,7 @@ body.PanelById.PanelOpened {
 
 		.PanelContainer {
 			max-width: 800px;
+			overflow: unset !important;
 			z-index: 100;
 
 			&.done {
