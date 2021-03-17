@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.108010 || Generated: Wed Mar 17 2021 15:35:32 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.108011 || Generated: Wed Mar 17 2021 17:34:55 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4341,6 +4341,7 @@ body.PanelById.PanelOpened {
   display: none; }
   .PanelById .Panel .PanelContainer {
     max-width: 800px;
+    overflow: unset !important;
     z-index: 100; }
     .PanelById .Panel .PanelContainer.done {
       bottom: 0; }
