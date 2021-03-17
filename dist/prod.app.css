@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108009 || Generated: Tue Mar 16 2021 18:29:41 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108010 || Generated: Wed Mar 17 2021 15:35:32 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14306,7 +14306,7 @@ div.ActionsMenu-item {
           align-items: center;
   background-color: #ffffff;
   border-radius: 50%;
-  color: #00bfa5;
+  color: #777777;
   display: -webkit-box;
   display: flex;
   font-size: 14px;
@@ -14588,24 +14588,31 @@ div.CircledArrow {
   margin-right: 0; }
 
 .ClinicalBadge {
+  border: 1px solid #d6d6d6;
   border-radius: 2px;
   color: #adadad;
   height: 50px;
-  margin: 0 1px;
   padding: 3px 5px;
   position: relative;
   width: 32px; }
   .ClinicalBadge.ColorZetaBG {
+    border: none;
     color: #00ac94; }
   .ClinicalBadge.ColorLightRedBG {
+    border: none;
     color: #ff3e2d; }
+  .ClinicalBadge.ColorLightGreenBG {
+    border: none;
+    color: #7cb342; }
   .ClinicalBadge-label {
-    font-size: 12px; }
+    font-size: 0.857em; }
   .ClinicalBadge .icon {
-    font-size: 18px; }
+    font-size: 1.286em; }
 
 .PatientHabitsContainer {
-  height: 50px; }
+  display: -webkit-box;
+  display: flex;
+  gap: 4px; }
   .PatientHabitsContainer > .OSInline {
     display: inline-block;
     vertical-align: middle; }
@@ -14633,21 +14640,26 @@ div.CircledArrow {
       font-size: 0.786em;
       white-space: nowrap; }
 
-@media (max-width: 1280px) {
-  .ClinicalInformationItem {
-    margin-top: 10px;
-    max-width: 49.5%; }
-  .SapphireHeader .SapphireHeader-information .ClinicalInformation {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%; }
+@media (max-width: 1325px) {
   .ClinicalInformation > div {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
     height: auto;
     -webkit-box-pack: justify;
-            justify-content: space-between; } }
+            justify-content: space-between; }
+  .ClinicalInformation .ClinicalInformationItem {
+    max-width: 49.5%; } }
+
+@media (max-width: 1083px) {
+  .ClinicalInformation {
+    max-width: 260px; }
+    .ClinicalInformation > div {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; }
+    .ClinicalInformation .ClinicalInformationItem {
+      max-width: unset; } }
 
 .CollapsibleSidePanel--open .CollapsibleSidePanel__Content {
   visibility: visible;
@@ -17928,7 +17940,6 @@ div.CircledArrow {
         font-family: "TajawalRegular";
         line-height: initial; }
     .HeaderIdentification-names .HeaderIdentification-primary-otherinformation .CircleElement {
-      color: #777777;
       font-size: 1.143em;
       height: 16px;
       width: 16px; }
@@ -20599,6 +20610,9 @@ body.PanelById.PanelOpened {
   .PanelContainer.Confirm .PanelActions {
     white-space: nowrap; }
 
+.button-collapse {
+  display: none; }
+
 .Panel {
   background-color: transparent;
   border: none;
@@ -20862,50 +20876,62 @@ body.PanelById.PanelOpened {
     margin-right: 16px !important; }
 
 .PatientMedicalFile {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
+  gap: 8px;
   height: 56px;
-  padding: 8px; }
+  padding: 12px;
+  padding-right: 0; }
   .Multiple .PatientMedicalFile .FileInfo {
     line-height: 32px; }
   .med-file-requested .PatientMedicalFile > div:not(:last-of-type) {
     height: 45px; }
   .PatientMedicalFile > span.icon {
+    display: none; }
+  .PatientMedicalFile .FileLocation {
     color: #777777;
-    font-size: 1.429em;
-    line-height: 56px; }
-  .PatientMedicalFile > div:not(:last-of-type) {
-    height: 100%;
-    line-height: 16px; }
-  .PatientMedicalFile > .FileInfo > div > .FileNumber,
-  .PatientMedicalFile > .FileInfo > div > .FileNumber span {
-    font-family: "LatoBold";
-    font-size: 1em; }
-  .PatientMedicalFile > .RequestFiles-Menu div[button-style] {
+    font-size: 0.857em; }
+    .PatientMedicalFile .FileLocation .CircleElement {
+      font-size: 0.857em;
+      margin-top: 2px; }
+  .PatientMedicalFile .FileNumber {
+    font-family: "LatoBold"; }
+  .PatientMedicalFile .RequestFile {
     -webkit-box-align: center;
             align-items: center;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
             justify-content: center;
-    height: 50px;
+    font-size: 1.143em;
+    height: 32px;
+    width: 24px; }
+  .PatientMedicalFile .RequestFiles-Menu div[button-style] {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    height: 56px;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    width: 30px; }
-    .PatientMedicalFile > .RequestFiles-Menu div[button-style] .icon {
+    width: 24px; }
+    .PatientMedicalFile .RequestFiles-Menu div[button-style] .icon {
       border-bottom: 5px solid #00ac94;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       height: 0;
       width: 0; }
-      .PatientMedicalFile > .RequestFiles-Menu div[button-style] .icon:after, .PatientMedicalFile > .RequestFiles-Menu div[button-style] .icon:before {
+      .PatientMedicalFile .RequestFiles-Menu div[button-style] .icon:after, .PatientMedicalFile .RequestFiles-Menu div[button-style] .icon:before {
         content: ''; }
-  .PatientMedicalFile .RequestFile .IconVertical {
-    min-width: 25px; }
-    .PatientMedicalFile .RequestFile .IconVertical .iconVertical_icon {
-      margin-bottom: 0; }
-    .PatientMedicalFile .RequestFile .IconVertical .iconVertical_label {
-      display: none; }
+  .PatientMedicalFile > div:not(:last-of-type) {
+    height: 100%;
+    line-height: 16px; }
 
 .MFile {
   font-size: 18px; }
@@ -22350,6 +22376,13 @@ a .PersonCard {
 .SapphireHeader {
   background-color: #fff;
   position: relative; }
+  .SapphireHeader.isOpen .SapphireHeader-additional-content {
+    display: -webkit-box;
+    display: flex; }
+  .SapphireHeader.isOpen .SapphireHeader-additional-trigger:after {
+    display: inline-block;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
   .SapphireHeader-body {
     -webkit-box-align: center;
             align-items: center;
@@ -22361,7 +22394,7 @@ a .PersonCard {
     -webkit-box-pack: justify;
             justify-content: space-between;
     min-height: 80px;
-    padding: 0 16px; }
+    padding: 11.5px 16px; }
   .SapphireHeader-navigation {
     font-size: 2.249em; }
     .SapphireHeader-navigation a .icon {
@@ -22372,11 +22405,40 @@ a .PersonCard {
   .SapphireHeader-identification {
     height: 56px; }
   .SapphireHeader-demographics {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
     -webkit-box-flex: 2;
             flex-grow: 2;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     margin: 0 32px;
     text-align: left;
     white-space: nowrap; }
+    .SapphireHeader-demographics .Demographic-item {
+      display: none;
+      margin-right: 24px; }
+      .AR .SapphireHeader-demographics .Demographic-item {
+        margin-left: 24px;
+        margin-right: 0; }
+    .SapphireHeader-demographics .SapphireHeader-additional-trigger {
+      border: 1px solid #d6d6d6;
+      border-radius: 100px;
+      cursor: pointer;
+      display: none;
+      font-size: 0.857em;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 16px;
+      position: relative; }
+      .SapphireHeader-demographics .SapphireHeader-additional-trigger:after {
+        color: #777777;
+        content: '\e610';
+        font-family: "Sapphire-Icon-Font";
+        font-size: 9px;
+        line-height: 23px;
+        margin-left: 4px; }
   .SapphireHeader-information {
     -webkit-box-flex: 1;
             flex: 1; }
@@ -22388,6 +22450,7 @@ a .PersonCard {
               align-items: center;
       display: -webkit-box;
       display: flex;
+      gap: 4px;
       white-space: nowrap; }
       .SapphireHeader-actions > div .ClinicalBadge {
         -webkit-box-align: center;
@@ -22398,80 +22461,62 @@ a .PersonCard {
                 justify-content: center;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-                flex-direction: column; }
+                flex-direction: column;
+        height: 56px; }
+    .SapphireHeader-actions .IconDropdown {
+      margin-left: 6px; }
+      .SapphireHeader-actions .IconDropdown .IconDropdown_button {
+        height: 26px;
+        -webkit-box-pack: center;
+                justify-content: center;
+        min-width: 26px;
+        padding: 0; }
+        .SapphireHeader-actions .IconDropdown .IconDropdown_button span.fa {
+          font-family: "Sapphire-Icon-Font"; }
+          .SapphireHeader-actions .IconDropdown .IconDropdown_button span.fa:before {
+            content: '\e627'; }
+      .SapphireHeader-actions .IconDropdown .IconDown {
+        display: none; }
+  .SapphireHeader-additional-content {
+    border-bottom: solid 1px #ebebeb;
+    display: none;
+    gap: 24px;
+    min-height: 50px;
+    padding: 16px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
 
 .SapphireHeader-actions > div .icon-cashkd {
   margin: 0 1px 0 4px; }
 
-.SapphireHeader-actions > div .ActionsMenu .ActionsMenu-label {
-  margin: 0; }
-
-.SapphireHeader-additional-trigger {
-  background-color: #fff;
-  border: solid 1px #eee;
-  border-radius: 20px;
-  cursor: pointer;
-  display: none;
-  font-size: 10px;
-  left: 50%;
-  margin-top: -10px;
-  padding: 3px 20px 3px 6px;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
-
-.SapphireHeader-additional-trigger:after {
-  color: #999;
-  content: '\e610';
-  font-family: "Sapphire-Icon-Font";
-  font-size: 9px;
-  position: absolute;
-  right: 6px;
-  top: 5px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
-.SapphireHeader.isOpen .SapphireHeader-additional-trigger:after {
-  top: 3px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
-
-.SapphireHeader-additional-content {
-  border-bottom: solid 1px #ebebeb;
-  display: none;
-  min-height: 50px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 10px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
-
-.SapphireHeader.isOpen .SapphireHeader-additional-content {
-  display: block; }
-
-.SapphireHeader .Demographic-item {
-  display: inline-block;
-  display: none;
-  margin-right: 24px;
-  vertical-align: middle; }
-
-.AR .SapphireHeader .Demographic-item {
-  margin-left: 24px; }
-
-.SapphireHeader .SapphireHeader-additional-content .Demographic-item {
-  margin-bottom: 10px; }
-
-.SapphireHeader .SapphireHeader-additional-content .Demographic-item:first-child {
-  margin-left: 0; }
-
-@media (max-width: 1280px) {
+@media (max-width: 1325px) {
   .SapphireHeader-information {
-    display: inline-block;
     -webkit-box-ordinal-group: 2;
-            order: 1;
-    width: 100%; }
-  .SapphireHeader-information > div {
-    display: block; } }
+            order: 1; } }
+
+@media (max-width: 1083px) {
+  .SapphireHeader-demographics {
+    margin-right: 0; }
+    .AR .SapphireHeader-demographics {
+      margin-left: 0;
+      margin-right: 32px; }
+  .SapphireHeader-actions,
+  .SapphireHeader-information {
+    border-top: 1px solid #d6d6d6;
+    padding-top: 11.5px; }
+  .SapphireHeader-information {
+    flex-basis: 49%;
+    margin-right: -4px;
+    -webkit-box-ordinal-group: unset;
+            order: unset; }
+    .AR .SapphireHeader-information {
+      margin-left: -4px;
+      margin-right: 0; }
+  .SapphireHeader-actions {
+    flex-basis: 50%; }
+    .SapphireHeader-actions > div {
+      -webkit-box-pack: end;
+              justify-content: flex-end; } }
 
 div.Counter_Message {
   color: #777777; }

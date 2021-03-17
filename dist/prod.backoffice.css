@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.108009 || Generated: Tue Mar 16 2021 18:29:41 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.108010 || Generated: Wed Mar 17 2021 15:35:32 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4366,6 +4366,9 @@ body.PanelById.PanelOpened {
   max-width: 400px; }
   .PanelContainer.Confirm .PanelActions {
     white-space: nowrap; }
+
+.button-collapse {
+  display: none; }
 
 .Panel {
   background-color: transparent;
