@@ -26,21 +26,30 @@
 	}
 }
 
-@media (max-width: 1280px) {
-	.ClinicalInformationItem {
-		margin-top: 10px;
-		max-width: 49.5%;
-	}
+@media (max-width: 1325px) {
+	.ClinicalInformation {
+		> div {
+			flex-direction: row;
+			height: auto;
+			justify-content: space-between;
+		}
 
-	.SapphireHeader .SapphireHeader-information .ClinicalInformation {
-		margin-left: 0;
-		margin-right: 0;
-		width: 100%;
+		.ClinicalInformationItem {
+			max-width: 49.5%;
+		}
 	}
+}
 
-	.ClinicalInformation > div {
-		flex-direction: row;
-		height: auto;
-		justify-content: space-between;
+@media (max-width: 1083px) {
+	.ClinicalInformation {
+		max-width: 260px;
+
+		> div {
+			flex-direction: column;
+		}
+
+		.ClinicalInformationItem {
+			max-width: unset;
+		}
 	}
 }

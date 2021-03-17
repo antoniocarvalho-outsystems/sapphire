@@ -1,8 +1,12 @@
 .PatientMedicalFile {
+	@include flex-center-vertically();
+
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-default;
+	gap: $sapphire-sizes--small;
 	height: $sapphire-sizes--largest;
-	padding: $sapphire-sizes--small;
+	padding: 12px;
+	padding-right: 0;
 
 	.Multiple & {
 		& .FileInfo {
@@ -17,53 +21,73 @@
 	}
 
 	> span.icon {
+		display: none;
+	}
+
+	.FileLocation {
 		color: $regular-grey;
-		font-size: $font-size-heading2;
-		line-height: $sapphire-sizes--largest;
-	}
+		font-size: $font-size-small;
 
-	// > div:not(.RequestFiles-Menu) {
-	// 	padding: 0 5px 0 10px;
-	// }
-
-	> div:not(:last-of-type) {
-		height: 100%;
-		line-height: 16px;
-	}
-
-	> .FileInfo > div > .FileNumber {
-		&,
-		span {
-			font-family: $font-family-latin-bold;
-			font-size: 1em;
+		.CircleElement {
+			font-size: $font-size-small;
+			margin-top: 2px;
 		}
 	}
 
-	> .RequestFiles-Menu div[button-style] {
+	.FileNumber {
+		font-family: $font-family-latin-bold;
+	}
+
+	.RequestFile {
 		@include flex-center-total;
 
-		height: 50px;
+		font-size: $font-size-heading4;
+		height: $sapphire-sizes--xlarge;
+		width: $sapphire-sizes--large;
+	}
+
+	.RequestFiles-Menu div[button-style] {
+		@include flex-center-total;
+
+		height: $sapphire-sizes--largest;
 		transform: rotate(180deg);
-		width: 30px;
+		width: $sapphire-sizes--large;
 
 		.icon {
 			@include arrow-down-simple;
 		}
 	}
 
-	.RequestFile {
-		.IconVertical {
-			min-width: 25px;
-
-			.iconVertical_icon {
-				margin-bottom: 0;
-			}
-
-			.iconVertical_label {
-				display: none;
-			}
-		}
+	> div:not(:last-of-type) {
+		height: 100%;
+		line-height: 16px;
 	}
+
+	// > div:not(.RequestFiles-Menu) {
+	// 	padding: 0 5px 0 10px;
+	// }
+
+	// > .FileInfo > div > .FileNumber {
+	// 	&,
+	// 	span {
+	// 		font-family: $font-family-latin-bold;
+	// 		font-size: 1em;
+	// 	}
+	// }
+
+	// .RequestFile {
+	// 	.IconVertical {
+	// 		min-width: 25px;
+
+	// 		.iconVertical_icon {
+	// 			margin-bottom: 0;
+	// 		}
+
+	// 		.iconVertical_label {
+	// 			display: none;
+	// 		}
+	// 	}
+	// }
 }
 
 .MFile {

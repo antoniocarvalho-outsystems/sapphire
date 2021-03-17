@@ -1,9 +1,13 @@
-ul.os-internal-ui-autocomplete {
-	/* Prevent drop down autocomplete be overriden by the popup menu */
-	z-index: 102 !important;
-}
+// ul.os-internal-ui-autocomplete {
+// 	/* Prevent drop down autocomplete be overriden by the popup menu */
+// 	z-index: 102 !important;
+// }
 
-.blockPadding20px {
-	display: block;
-	padding: 20px;
+// .blockPadding20px {
+// 	display: block;
+// 	padding: 20px;
+// }
+
+.button-collapse {
+	display: none;
 }

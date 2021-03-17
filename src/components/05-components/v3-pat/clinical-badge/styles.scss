@@ -1,33 +1,41 @@
 .ClinicalBadge {
+	border: 1px solid $light-grey;
 	border-radius: 2px;
 	color: $mid-light-grey;
 	height: 50px;
-	margin: 0 1px;
 	padding: 3px 5px;
 	position: relative;
 	width: 32px;
 
 	&.ColorZetaBG {
+		border: none;
 		color: $regular-beta;
 	}
 
 	&.ColorLightRedBG {
+		border: none;
 		color: $regular-red;
 	}
 
+	&.ColorLightGreenBG {
+		border: none;
+		color: $regular-green;
+	}
+
 	&-label {
-		font-size: 12px;
+		font-size: $font-size-small;
 	}
 
 	.icon {
-		font-size: 18px;
+		font-size: $font-size-heading3;
 	}
 }
 
 .PatientHabitsContainer {
-	height: 50px;
+	display: flex;
+	gap: $sapphire-sizes--xsmall;
 
-	>.OSInline {
+	> .OSInline {
 		display: inline-block;
 		vertical-align: middle;
 	}

@@ -2,6 +2,17 @@
 	background-color: $regular-white;
 	position: relative;
 
+	&.isOpen {
+		.SapphireHeader-additional-content {
+			display: flex;
+		}
+
+		.SapphireHeader-additional-trigger:after {
+			display: inline-block;
+			transform: rotate(180deg);
+		}
+	}
+
 	&-body {
 		align-items: center;
 		border-bottom: solid 1px $sapphire-light-container;
@@ -10,7 +21,7 @@
 		gap: $sapphire-sizes--xsmall;
 		justify-content: space-between;
 		min-height: 80px;
-		padding: 0 $sapphire-sizes--medium;
+		padding: 11.5px $sapphire-sizes--medium;
 	}
 
 	&-navigation {
@@ -32,10 +43,44 @@
 	}
 
 	&-demographics {
+		@include flex-center-vertically;
+
 		flex-grow: 2;
+		justify-content: space-between;
 		margin: 0 $sapphire-sizes--xlarge;
 		text-align: left;
 		white-space: nowrap;
+
+		.Demographic-item {
+			display: none;
+			margin-right: $sapphire-sizes--large;
+
+			.AR & {
+				margin-left: $sapphire-sizes--large;
+				margin-right: 0;
+			}
+		}
+
+		.SapphireHeader-additional-trigger {
+			border: 1px solid $light-grey;
+			border-radius: 100px;
+			cursor: pointer;
+			display: none;
+			font-size: $font-size-small;
+			height: 26px;
+			line-height: 26px;
+			padding: 0 $sapphire-sizes--medium;
+			position: relative;
+
+			&:after {
+				color: $regular-grey;
+				content: '\e610';
+				font-family: $font-family-icons;
+				font-size: 9px;
+				line-height: 23px;
+				margin-left: 4px;
+			}
+		}
 	}
 
 	&-information {
@@ -48,127 +93,93 @@
 		> div {
 			align-items: center;
 			display: flex;
+			gap: $sapphire-sizes--xsmall;
 			white-space: nowrap;
 
 			.ClinicalBadge {
 				@include flex-center-total();
 
 				flex-direction: column;
+				height: $sapphire-sizes--largest;
+			}
+		}
+
+		.IconDropdown {
+			margin-left: 6px;
+
+			.IconDropdown_button {
+				height: 26px;
+				justify-content: center;
+				min-width: 26px;
+				padding: 0;
+
+				span.fa {
+					font-family: $font-family-icons;
+
+					&:before {
+						content: '\e627';
+					}
+				}
+			}
+
+			.IconDown {
+				display: none;
 			}
 		}
 	}
+
+	&-additional-content {
+		border-bottom: solid 1px $sapphire-light-container;
+		display: none;
+		gap: $sapphire-sizes--large;
+		min-height: 50px;
+		padding: $sapphire-sizes--medium;
+		transition: all 0.4s ease;
+	}
 }
-
-// .PatientDetails___topPatientHeader.TopPatientHeader .SapphireHeader-body {
-// 	min-height: 74px;
-// }
-
-// .AR .SapphireHeader-demographics,
-// .AR .SapphireHeader-demographics > div {
-// 	text-align: right;
-// }
-
-// .SapphireHeader-information,
-// .SapphireHeader-information > div {
-// 	display: block;
-// }
-
-// .SapphireHeader-information > div .ClinicalInformation {
-// 	margin-left: 3px;
-// 	margin-right: 3px;
-// }
-
-// .SapphireHeader-actions > div > div,
-// .SapphireHeader-actions > div > span {
-// 	display: block;
-// 	margin: 0;
-// 	padding: 0;
-// }
-
-// .SapphireHeader-actions > div .PatientMedicalFile {
-// 	display: inline-block;
-// 	margin: 0 1px;
-// }
 
 .SapphireHeader-actions > div .icon-cashkd {
 	margin: 0 1px 0 4px;
 }
 
-.SapphireHeader-actions > div .ActionsMenu .ActionsMenu-label {
-	margin: 0;
-}
-
-.SapphireHeader-additional-trigger {
-	background-color: #fff;
-	border: solid 1px #eee;
-	border-radius: 20px;
-	cursor: pointer;
-	display: none;
-	font-size: 10px;
-	left: 50%;
-	margin-top: -10px;
-	padding: 3px 20px 3px 6px;
-	position: absolute;
-	transform: translateX(-50%);
-}
-
-.SapphireHeader-additional-trigger:after {
-	color: #999;
-	content: '\e610';
-	font-family: $font-family-icons;
-	font-size: 9px;
-	position: absolute;
-	right: 6px;
-	top: 5px;
-	transition: all 0.5s ease;
-}
-
-.SapphireHeader.isOpen .SapphireHeader-additional-trigger:after {
-	top: 3px;
-	transform: rotate(180deg);
-}
-
-.SapphireHeader-additional-content {
-	border-bottom: solid 1px $sapphire-light-container;
-	display: none;
-	min-height: 50px;
-	padding-left: $sapphire-sizes--medium;
-	padding-right: $sapphire-sizes--medium;
-	padding-top: 10px;
-	transition: all 0.4s ease;
-}
-
-.SapphireHeader.isOpen .SapphireHeader-additional-content {
-	display: block;
-}
-
-.SapphireHeader .Demographic-item {
-	display: inline-block;
-	display: none;
-	margin-right: 24px;
-	vertical-align: middle;
-}
-
-.AR .SapphireHeader .Demographic-item {
-	margin-left: 24px;
-}
-
-.SapphireHeader .SapphireHeader-additional-content .Demographic-item {
-	margin-bottom: 10px;
-}
-
-.SapphireHeader .SapphireHeader-additional-content .Demographic-item:first-child {
-	margin-left: 0;
-}
-
-@media (max-width: 1280px) {
+@media (max-width: 1325px) {
 	.SapphireHeader-information {
-		display: inline-block;
 		order: 1;
-		width: 100%;
+	}
+}
+
+@media (max-width: 1083px) {
+	.SapphireHeader-demographics {
+		margin-right: 0;
+
+		.AR & {
+			margin-left: 0;
+			margin-right: $sapphire-sizes--xlarge;
+		}
 	}
 
-	.SapphireHeader-information > div {
-		display: block;
+	.SapphireHeader-actions,
+	.SapphireHeader-information {
+		border-top: 1px solid $light-grey;
+		padding-top: 11.5px;
+	}
+
+	.SapphireHeader-information {
+		flex-basis: 49%;
+		margin-right: -$sapphire-sizes--xsmall;
+		order: unset;
+
+		.AR & {
+			margin-left: -$sapphire-sizes--xsmall;
+			margin-right: 0;
+		}
+	}
+
+	.SapphireHeader-actions {
+		flex-basis: 50%;
+
+		> div {
+			justify-content: flex-end;
+		}
 	}
 }
