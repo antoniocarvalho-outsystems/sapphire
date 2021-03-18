@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108012 || Generated: Thu Mar 18 2021 09:18:44 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108013 || Generated: Thu Mar 18 2021 17:02:42 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14595,15 +14595,23 @@ div.CircledArrow {
   padding: 3px 5px;
   position: relative;
   width: 32px; }
+  .ClinicalBadge:hover {
+    background-color: #ebebeb; }
   .ClinicalBadge.ColorZetaBG {
     border: none;
     color: #00ac94; }
+    .ClinicalBadge.ColorZetaBG:hover {
+      background-color: #b0ebe4; }
   .ClinicalBadge.ColorLightRedBG {
     border: none;
     color: #ff3e2d; }
+    .ClinicalBadge.ColorLightRedBG:hover {
+      background-color: #f7bebe; }
   .ClinicalBadge.ColorLightGreenBG {
     border: none;
     color: #7cb342; }
+    .ClinicalBadge.ColorLightGreenBG:hover {
+      background-color: #cde4b7; }
   .ClinicalBadge-label {
     font-size: 0.857em; }
   .ClinicalBadge .icon {
@@ -14623,22 +14631,78 @@ div.CircledArrow {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  gap: 4px;
   height: 56px; }
   .ClinicalInformation > div .ClinicalInformationItem {
+    -webkit-box-align: center;
+            align-items: center;
     display: -webkit-box;
     display: flex;
+    border-radius: 4px;
     flex-basis: 100%;
-    gap: 8px;
-    padding: 4px 8px; }
-    .ClinicalInformation > div .ClinicalInformationItem:first-of-type {
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px; }
-    .ClinicalInformation > div .ClinicalInformationItem:last-of-type {
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px; }
+    height: 26px;
+    overflow: hidden; }
+    .ClinicalInformation > div .ClinicalInformationItem-icon {
+      font-size: 0.857em;
+      line-height: 26px;
+      padding: 0 8px;
+      text-align: center;
+      width: 30px; }
     .ClinicalInformation > div .ClinicalInformationItem-text {
+      display: -webkit-box;
+      display: flex;
       font-size: 0.786em;
-      white-space: nowrap; }
+      line-height: 26px;
+      width: 100%; }
+      .ClinicalInformation > div .ClinicalInformationItem-text div:first-of-type {
+        -webkit-box-flex: 1;
+                flex: 1;
+        padding: 0 8px; }
+    .ClinicalInformation > div .ClinicalInformationItem .SubInfo {
+      padding: 0 8px; }
+      .ClinicalInformation > div .ClinicalInformationItem .SubInfo .tooltipstered {
+        padding-left: 4px; }
+      .AR .ClinicalInformation > div .ClinicalInformationItem .SubInfo .tooltipstered {
+        padding-left: 0;
+        padding-right: 4px; }
+  .ClinicalInformation > div .ThemeGrey .ClinicalInformationItem-icon {
+    background-color: #777777; }
+  .ClinicalInformation > div .ThemeGrey .ClinicalInformationItem-text div:first-of-type {
+    background-color: #adadad; }
+  .ClinicalInformation > div .ThemeGrey .ClinicalInformationItem .SubInfo {
+    background-color: #777777; }
+  .ClinicalInformation > div .EmptyGrey .ClinicalInformationItem-text,
+  .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-text {
+    background-color: #fff;
+    color: #777777; }
+  .ClinicalInformation > div .EmptyGrey .ClinicalInformationItem {
+    border: 1px solid #d6d6d6; }
+    .ClinicalInformation > div .EmptyGrey .ClinicalInformationItem-icon {
+      background-color: #d6d6d6; }
+  .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem {
+    overflow: unset; }
+    .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-icon {
+      background-color: #fbc02d;
+      border: 1px solid #fbc02d;
+      border-radius: 4px 0 0 4px;
+      border-right: none;
+      color: #fff;
+      height: 26px; }
+    .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-text {
+      background-color: #fff;
+      border: 1px solid #d6d6d6;
+      border-left: none;
+      border-radius: 0 4px 4px 0;
+      color: #777777;
+      height: 26px; }
+  .AR .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-icon {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    border-right: 1px solid #fbc02d; }
+  .AR .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-text {
+    border-left: 1px solid #d6d6d6;
+    border-radius: 4px 0 0 4px;
+    border-right: none; }
 
 @media (max-width: 1325px) {
   .ClinicalInformation > div {
@@ -17914,7 +17978,7 @@ div.CircledArrow {
       display: flex;
       gap: 8px; }
       .HeaderIdentification-names .HeaderIdentification-primary-name {
-        font-size: 1.429em;
+        font-size: 1.286em;
         line-height: 24px; }
         .HeaderIdentification-names .HeaderIdentification-primary-name .patient-en-fullname span {
           display: inline-block;
@@ -17936,6 +18000,11 @@ div.CircledArrow {
               flex-direction: row-reverse;
       gap: 16px;
       margin: 0 24px; }
+      .AR .HeaderIdentification-names .HeaderIdentification-secondary {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
+        margin: 0; }
       .HeaderIdentification-names .HeaderIdentification-secondary .HeaderIdentification-secondary-name .patient-ar-fullname {
         font-family: "TajawalRegular";
         line-height: initial; }
@@ -20883,16 +20952,15 @@ body.PanelById.PanelOpened {
   display: flex;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
-  gap: 8px;
   height: 56px;
   padding: 12px;
   padding-right: 0; }
   .Multiple .PatientMedicalFile .FileInfo {
     line-height: 32px; }
-  .med-file-requested .PatientMedicalFile > div:not(:last-of-type) {
-    height: 45px; }
   .PatientMedicalFile > span.icon {
     display: none; }
+  .PatientMedicalFile .FileInfo {
+    margin-right: 4px; }
   .PatientMedicalFile .FileLocation {
     color: #777777;
     font-size: 0.857em; }
@@ -20902,15 +20970,24 @@ body.PanelById.PanelOpened {
   .PatientMedicalFile .FileNumber {
     font-family: "LatoBold"; }
   .PatientMedicalFile .RequestFile {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    font-size: 1.143em;
-    height: 32px;
-    width: 24px; }
+    font-size: 1.143em; }
+    .PatientMedicalFile .RequestFile > div {
+      display: -webkit-box;
+      display: flex; }
+    .PatientMedicalFile .RequestFile .RequestFileOption:hover a {
+      background-color: #ebebeb; }
+    .PatientMedicalFile .RequestFile .RequestFileOption a {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      border-radius: 50%;
+      height: 36px;
+      width: 36px; }
+      .PatientMedicalFile .RequestFile .RequestFileOption a > div {
+        height: 20px; }
   .PatientMedicalFile .RequestFiles-Menu div[button-style] {
     -webkit-box-align: center;
             align-items: center;
@@ -20921,18 +20998,26 @@ body.PanelById.PanelOpened {
     height: 56px;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    width: 24px; }
+    width: 36px; }
+    .PatientMedicalFile .RequestFiles-Menu div[button-style]::after {
+      border-radius: 50%;
+      content: '';
+      height: 36px;
+      position: absolute;
+      width: 36px; }
+    .PatientMedicalFile .RequestFiles-Menu div[button-style]:hover::after {
+      background-color: #ebebeb; }
+    .PatientMedicalFile .RequestFiles-Menu div[button-style]:hover .icon {
+      z-index: 1; }
     .PatientMedicalFile .RequestFiles-Menu div[button-style] .icon {
       border-bottom: 5px solid #00ac94;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       height: 0;
-      width: 0; }
+      width: 0;
+      margin-top: -3px; }
       .PatientMedicalFile .RequestFiles-Menu div[button-style] .icon:after, .PatientMedicalFile .RequestFiles-Menu div[button-style] .icon:before {
         content: ''; }
-  .PatientMedicalFile > div:not(:last-of-type) {
-    height: 100%;
-    line-height: 16px; }
 
 .MFile {
   font-size: 18px; }
@@ -20940,14 +21025,14 @@ body.PanelById.PanelOpened {
 .MFileSecond {
   font-size: 1.143em; }
 
-.AR .PatientMedicalFile > span.icon,
-.FA .PatientMedicalFile > span.icon {
+.AR .PatientMedicalFile,
+.FA .PatientMedicalFile {
   padding-left: 0;
-  padding-right: 10px; }
-
-.AR .PatientMedicalFile > div:not(.RequestFiles-Menu),
-.FA .PatientMedicalFile > div:not(.RequestFiles-Menu) {
-  padding: 0 10px 0 5px; }
+  padding-right: 12px; }
+  .AR .PatientMedicalFile .FileInfo,
+  .FA .PatientMedicalFile .FileInfo {
+    margin-left: 4px;
+    margin-right: 0; }
 
 .PersonCardPreInfo {
   background-color: #ffffff;
@@ -22413,7 +22498,6 @@ a .PersonCard {
     -webkit-box-flex: 2;
             flex-grow: 2;
     margin: 0 32px;
-    text-align: left;
     white-space: nowrap; }
     .SapphireHeader-demographics .Demographic-item {
       display: none;
@@ -22426,58 +22510,62 @@ a .PersonCard {
       border-radius: 100px;
       cursor: pointer;
       display: none;
-      font-size: 0.857em;
-      height: 26px;
-      line-height: 26px;
+      height: 36px;
+      line-height: 36px;
       padding: 0 16px;
       position: relative; }
+      .SapphireHeader-demographics .SapphireHeader-additional-trigger:hover {
+        background-color: #ebebeb; }
       .SapphireHeader-demographics .SapphireHeader-additional-trigger:after {
         color: #777777;
         content: '\e610';
         font-family: "Sapphire-Icon-Font";
-        font-size: 9px;
-        line-height: 23px;
-        margin-left: 4px; }
-  .SapphireHeader-information {
-    -webkit-box-flex: 1;
-            flex: 1; }
-  .SapphireHeader-actions {
-    -webkit-box-flex: 1;
-            flex: 1; }
-    .SapphireHeader-actions > div {
+        font-size: 10px;
+        margin-left: 6px; }
+  .SapphireHeader-actions > div {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    gap: 4px;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+    white-space: nowrap; }
+    .SapphireHeader-actions > div .ClinicalBadge {
       -webkit-box-align: center;
               align-items: center;
       display: -webkit-box;
       display: flex;
-      gap: 4px;
-      -webkit-box-pack: end;
-              justify-content: flex-end;
-      white-space: nowrap; }
-      .SapphireHeader-actions > div .ClinicalBadge {
-        -webkit-box-align: center;
-                align-items: center;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-                justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-                flex-direction: column;
-        height: 56px; }
-    .SapphireHeader-actions .IconDropdown {
-      margin-left: 6px; }
-      .SapphireHeader-actions .IconDropdown .IconDropdown_button {
-        height: 26px;
-        -webkit-box-pack: center;
-                justify-content: center;
-        min-width: 26px;
-        padding: 0; }
-        .SapphireHeader-actions .IconDropdown .IconDropdown_button span.fa {
-          font-family: "Sapphire-Icon-Font"; }
-          .SapphireHeader-actions .IconDropdown .IconDropdown_button span.fa:before {
-            content: '\e627'; }
-      .SapphireHeader-actions .IconDropdown .IconDown {
-        display: none; }
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      height: 56px; }
+  .SapphireHeader-actions .IconDropdown {
+    margin-left: 6px; }
+    .AR .SapphireHeader-actions .IconDropdown {
+      margin-left: auto;
+      margin-right: 6px; }
+    .SapphireHeader-actions .IconDropdown.open .IconDropdown_button {
+      background-color: #ebebeb;
+      border: 1px solid #d6d6d6; }
+    .SapphireHeader-actions .IconDropdown .IconDropdown_button {
+      -webkit-box-pack: center;
+              justify-content: center;
+      padding: 0; }
+      .SapphireHeader-actions .IconDropdown .IconDropdown_button:hover {
+        background-color: #ebebeb;
+        border: 1px solid #d6d6d6; }
+      .SapphireHeader-actions .IconDropdown .IconDropdown_button span.fa {
+        font-family: "Sapphire-Icon-Font"; }
+        .SapphireHeader-actions .IconDropdown .IconDropdown_button span.fa:before {
+          content: '\e627'; }
+    .SapphireHeader-actions .IconDropdown .IconDown {
+      display: none; }
+    .AR .SapphireHeader-actions .IconDropdown .DropdownMenu {
+      left: 0;
+      right: auto; }
   .SapphireHeader-additional-content {
     border-bottom: solid 1px #ebebeb;
     display: none;
@@ -22487,8 +22575,12 @@ a .PersonCard {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease; }
 
-.SapphireHeader-actions > div .icon-cashkd {
-  margin: 0 1px 0 4px; }
+.LayoutBase-iframesidebar.notExpandable + .LayoutBase-header .SapphireHeader .DropdownMenu {
+  left: auto;
+  right: 0; }
+  .AR .LayoutBase-iframesidebar.notExpandable + .LayoutBase-header .SapphireHeader .DropdownMenu {
+    left: 0;
+    right: auto; }
 
 @media (max-width: 1325px) {
   .SapphireHeader-information {
