@@ -79,7 +79,7 @@
 			itemsTotal += parseInt($(this).outerWidth(true), 10);
 
 			// 64 -> margins and 99 -> More Info button
-			if (itemsTotal + 64 + 99 < demographicWidth) {
+			if (itemsTotal + 64 + 110 < demographicWidth) {
 				$(this).css('display', 'inline-block');
 			} else {
 				$(this)

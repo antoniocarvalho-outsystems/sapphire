@@ -3,7 +3,6 @@
 
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-default;
-	gap: $sapphire-sizes--small;
 	height: $sapphire-sizes--largest;
 	padding: 12px;
 	padding-right: 0;
@@ -14,14 +13,12 @@
 		}
 	}
 
-	.med-file-requested & {
-		& > div:not(:last-of-type) {
-			height: 45px;
-		}
-	}
-
 	> span.icon {
 		display: none;
+	}
+
+	.FileInfo {
+		margin-right: 4px;
 	}
 
 	.FileLocation {
@@ -39,11 +36,29 @@
 	}
 
 	.RequestFile {
-		@include flex-center-total;
-
 		font-size: $font-size-heading4;
-		height: $sapphire-sizes--xlarge;
-		width: $sapphire-sizes--large;
+
+		> div {
+			display: flex;
+		}
+
+		.RequestFileOption {
+			&:hover a {
+				background-color: $sapphire-light;
+			}
+
+			a {
+				@include flex-center-total(inline-flex);
+
+				border-radius: 50%;
+				height: 36px;
+				width: 36px;
+
+				> div {
+					height: 20px;
+				}
+			}
+		}
 	}
 
 	.RequestFiles-Menu div[button-style] {
@@ -51,43 +66,32 @@
 
 		height: $sapphire-sizes--largest;
 		transform: rotate(180deg);
-		width: $sapphire-sizes--large;
+		width: 36px;
+
+		&::after {
+			border-radius: 50%;
+			content: '';
+			height: 36px;
+			position: absolute;
+			width: 36px;
+		}
+
+		&:hover {
+			&::after {
+				background-color: $sapphire-light;
+			}
+
+			.icon {
+				z-index: 1;
+			}
+		}
 
 		.icon {
 			@include arrow-down-simple;
+
+			margin-top: -3px;
 		}
 	}
-
-	> div:not(:last-of-type) {
-		height: 100%;
-		line-height: 16px;
-	}
-
-	// > div:not(.RequestFiles-Menu) {
-	// 	padding: 0 5px 0 10px;
-	// }
-
-	// > .FileInfo > div > .FileNumber {
-	// 	&,
-	// 	span {
-	// 		font-family: $font-family-latin-bold;
-	// 		font-size: 1em;
-	// 	}
-	// }
-
-	// .RequestFile {
-	// 	.IconVertical {
-	// 		min-width: 25px;
-
-	// 		.iconVertical_icon {
-	// 			margin-bottom: 0;
-	// 		}
-
-	// 		.iconVertical_label {
-	// 			display: none;
-	// 		}
-	// 	}
-	// }
 }
 
 .MFile {
@@ -101,13 +105,12 @@
 .AR,
 .FA {
 	.PatientMedicalFile {
-		> span.icon {
-			padding-left: 0;
-			padding-right: 10px;
-		}
+		padding-left: 0;
+		padding-right: 12px;
 
-		> div:not(.RequestFiles-Menu) {
-			padding: 0 10px 0 5px;
+		.FileInfo {
+			margin-left: 4px;
+			margin-right: 0;
 		}
 	}
 }

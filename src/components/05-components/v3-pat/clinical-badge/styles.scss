@@ -7,19 +7,35 @@
 	position: relative;
 	width: 32px;
 
+	&:hover {
+		background-color: $sapphire-light;
+	}
+
 	&.ColorZetaBG {
 		border: none;
 		color: $regular-beta;
+
+		&:hover {
+			background-color: darken($regular-zeta, 5%);
+		}
 	}
 
 	&.ColorLightRedBG {
 		border: none;
 		color: $regular-red;
+
+		&:hover {
+			background-color: darken($light-red, 5%);
+		}
 	}
 
 	&.ColorLightGreenBG {
 		border: none;
 		color: $regular-green;
+
+		&:hover {
+			background-color: darken($light-green, 5%);
+		}
 	}
 
 	&-label {
