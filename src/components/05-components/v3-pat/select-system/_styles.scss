@@ -1,8 +1,6 @@
 $select-system-height: 36px;
 
 .select2 {
-	width: 100% !important;
-
 	&.select2-container--disabled {
 		.select2-selection[aria-disabled='true'] {
 			background-color: $background-disabled;

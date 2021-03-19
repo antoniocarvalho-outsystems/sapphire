@@ -7,11 +7,17 @@
 
 		if (config.triggerId === 'click') $elementId.addClass('tooltipstered--pointer');
 
-		var extraDataParams = 'data-iframetooltiptriggerid="' + config.elementId + '"';
-		var widgetNotifyDiv = $.find('[data-iframetooltiptriggerid="' + config.elementId + '"]');
+		var extraDataParams = "data-iframetooltiptriggerid='" + config.elementId + "'";
+		let extraDataParams1 = `data-iframetooltiptriggerid='${config.elementId}'`;
+		const widgetNotifyDiv = $.find('[data-iframetooltiptriggerid="' + config.elementId + '"]');
+
 		if (widgetNotifyDiv.length === 1) {
 			extraDataParams += ' data-iframetooltipnotifyid=' + $(widgetNotifyDiv).data('iframetooltipnotifyid');
+			extraDataParams1 += `  data-iframetooltipnotifyid='${$(widgetNotifyDiv).data('iframetooltipnotifyid')}'`;
 		}
+
+		console.log(extraDataParams);
+		console.log(extraDataParams1);
 
 		$elementId.tooltipster({
 			contentAsHTML: true,
