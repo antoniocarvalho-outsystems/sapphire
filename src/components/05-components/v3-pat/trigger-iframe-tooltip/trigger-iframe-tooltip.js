@@ -7,17 +7,12 @@
 
 		if (config.triggerId === 'click') $elementId.addClass('tooltipstered--pointer');
 
-		var extraDataParams = "data-iframetooltiptriggerid='" + config.elementId + "'";
-		let extraDataParams1 = `data-iframetooltiptriggerid='${config.elementId}'`;
 		const widgetNotifyDiv = $.find('[data-iframetooltiptriggerid="' + config.elementId + '"]');
+		let widgetNotifyId = '';
 
 		if (widgetNotifyDiv.length === 1) {
-			extraDataParams += ' data-iframetooltipnotifyid=' + $(widgetNotifyDiv).data('iframetooltipnotifyid');
-			extraDataParams1 += `  data-iframetooltipnotifyid='${$(widgetNotifyDiv).data('iframetooltipnotifyid')}'`;
+			widgetNotifyId = $(widgetNotifyDiv).data('iframetooltipnotifyid');
 		}
-
-		console.log(extraDataParams);
-		console.log(extraDataParams1);
 
 		$elementId.tooltipster({
 			contentAsHTML: true,
@@ -28,7 +23,7 @@
 			minWidth: config.minWidth,
 			maxWidth: config.maxWidth,
 			zindex: config.zindex,
-			content: `<iframe id="tooltipster-frame" data-ui="iframe-tooltip" src="${config.URL}" style="border:none; min-height:${config.minHeight}px; ${extraDataParams}></iframe>`,
+			content: `<iframe id="tooltipster-frame" data-ui="iframe-tooltip" src="${config.URL}" style="border:none; min-height:${config.minHeight}px;" data-iframetooltiptriggerid="${config.elementId}" iframetooltipnotifyid="${widgetNotifyId}"></iframe>`,
 			functionReady: function(instance, helper) {
 				$(helper).css({ visibility: 'hidden' });
 
