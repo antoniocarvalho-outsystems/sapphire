@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108017 || Generated: Mon Mar 22 2021 11:18:26 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108018 || Generated: Mon Mar 22 2021 12:54:09 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10365,6 +10365,9 @@ div.LineInfo {
   .TemplatesWrapper .groupColumn.groupColumn1 {
     width: 100%; }
 
+.SectionFullContainer {
+  width: 100%; }
+
 .ButtonCheckboxInput input {
   margin: 0px 0px 10px 10px; }
 
@@ -14595,6 +14598,8 @@ div.CircledArrow {
   padding: 3px 5px;
   position: relative;
   width: 32px; }
+  .ClinicalBadge--noHover:hover {
+    background-color: inherit !important; }
   .ClinicalBadge:hover {
     background-color: #ebebeb; }
   .ClinicalBadge.ColorZetaBG {
@@ -14643,11 +14648,13 @@ div.CircledArrow {
     height: 26px;
     overflow: hidden; }
     .ClinicalInformation > div .ClinicalInformationItem-icon {
+      color: #fff;
       font-size: 0.857em;
       line-height: 26px;
       text-align: center;
       width: 26px; }
     .ClinicalInformation > div .ClinicalInformationItem-text {
+      color: #fff;
       display: -webkit-box;
       display: flex;
       font-size: 0.786em;
@@ -22565,6 +22572,10 @@ a .PersonCard {
     .AR .SapphireHeader-actions .IconDropdown .DropdownMenu {
       left: 0;
       right: auto; }
+  .SapphireHeader-actions .PatientDataContainer {
+    display: -webkit-box;
+    display: flex;
+    gap: 4px; }
   .SapphireHeader-additional-content {
     border-bottom: solid 1px #ebebeb;
     display: none;
