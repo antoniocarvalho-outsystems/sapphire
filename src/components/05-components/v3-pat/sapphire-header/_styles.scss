@@ -150,6 +150,11 @@
 				}
 			}
 		}
+
+		.PatientDataContainer {
+			display: flex;
+			gap: $sapphire-sizes--xsmall;
+		}
 	}
 
 	&-additional-content {

@@ -7,6 +7,12 @@
 	position: relative;
 	width: 32px;
 
+	&--noHover {
+		&:hover {
+			background-color: inherit !important;
+		}
+	}
+
 	&:hover {
 		background-color: $sapphire-light;
 	}

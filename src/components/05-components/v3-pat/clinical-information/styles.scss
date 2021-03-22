@@ -13,6 +13,7 @@
 		overflow: hidden;
 
 		&-icon {
+			color: $regular-white;
 			font-size: $font-size-small;
 			line-height: 26px;
 			text-align: center;
@@ -20,10 +21,10 @@
 		}
 
 		&-text {
+			color: $regular-white;
 			display: flex;
 			font-size: $font-size-tiny;
 			line-height: 26px;
-			//white-space: nowrap;
 			width: 100%;
 
 			div:first-of-type {
