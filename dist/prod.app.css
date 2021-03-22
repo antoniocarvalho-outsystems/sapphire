@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108018 || Generated: Mon Mar 22 2021 12:54:09 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108019 || Generated: Mon Mar 22 2021 17:24:18 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14598,10 +14598,10 @@ div.CircledArrow {
   padding: 3px 5px;
   position: relative;
   width: 32px; }
-  .ClinicalBadge--noHover:hover {
-    background-color: inherit !important; }
   .ClinicalBadge:hover {
     background-color: #ebebeb; }
+  .ClinicalBadge--noHover {
+    pointer-events: none; }
   .ClinicalBadge.ColorZetaBG {
     border: none;
     color: #00ac94; }
@@ -14654,7 +14654,7 @@ div.CircledArrow {
       text-align: center;
       width: 26px; }
     .ClinicalInformation > div .ClinicalInformationItem-text {
-      color: #fff;
+      color: #333333;
       display: -webkit-box;
       display: flex;
       font-size: 0.786em;
@@ -14673,14 +14673,17 @@ div.CircledArrow {
         padding-right: 4px; }
   .ClinicalInformation > div .ThemeGrey .ClinicalInformationItem-icon {
     background-color: #777777; }
-  .ClinicalInformation > div .ThemeGrey .ClinicalInformationItem-text div:first-of-type {
-    background-color: #adadad; }
+  .ClinicalInformation > div .ThemeGrey .ClinicalInformationItem-text {
+    color: #fff; }
+    .ClinicalInformation > div .ThemeGrey .ClinicalInformationItem-text div:first-of-type {
+      background-color: #adadad; }
   .ClinicalInformation > div .ThemeGrey .ClinicalInformationItem .SubInfo {
     background-color: #777777; }
   .ClinicalInformation > div .EmptyGrey .ClinicalInformationItem-text,
   .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-text {
     background-color: #fff;
-    color: #777777; }
+    color: #777777;
+    line-height: 24px; }
   .ClinicalInformation > div .EmptyGrey .ClinicalInformationItem {
     border: 1px solid #d6d6d6; }
     .ClinicalInformation > div .EmptyGrey .ClinicalInformationItem-icon {
