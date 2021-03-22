@@ -1,6 +1,6 @@
 .ClinicalBadge {
 	border: 1px solid $light-grey;
-	border-radius: 2px;
+	border-radius: $border-radius-default;
 	color: $mid-light-grey;
 	height: 50px;
 	padding: 3px 5px;
