@@ -74,11 +74,6 @@ div.Toolbar {
 			display: inline-flex;
 			width: 100%;
 
-			a .MenuItemWrapper {
-				border: 1px solid transparent;
-				border-bottom: 3px solid transparent;
-			}
-
 			> a:focus .MenuItemWrapper {
 				border-bottom: 3px solid $regular-alpha !important;
 
@@ -161,6 +156,7 @@ div.Toolbar {
 			.Toolbar__MoreOptionsList {
 				display: block;
 				min-width: 200px;
+				padding: $sapphire-sizes--small 0;
 				right: 0;
 				z-index: 2;
 			}
@@ -170,8 +166,8 @@ div.Toolbar {
 	&__MoreOptionsIcon {
 		@include flex-center-total();
 
-		background-color: $regular-eta;
-		color: $regular-beta;
+		background-color: transparent;
+		color: $regular-grey;
 		cursor: pointer;
 		flex-direction: column;
 		height: 100%;
@@ -193,6 +189,8 @@ div.Toolbar {
 		}
 
 		&:hover {
+			color: $regular-beta;
+
 			span[ui='more-options-title'] {
 				color: transparent;
 
@@ -227,7 +225,9 @@ div.Toolbar {
 		}
 
 		span[ui='more-options-icon'] {
-			margin-bottom: 7px;
+			font-size: $font-size-heading2;
+			height: 20px;
+			margin-bottom: 8px;
 		}
 	}
 
@@ -333,8 +333,6 @@ div.Toolbar {
 	white-space: nowrap;
 
 	&:hover {
-		border-bottom: 3px solid $regular-alpha !important;
-
 		.MenuItemWrapper_Container {
 			color: $regular-beta;
 		}
@@ -342,12 +340,42 @@ div.Toolbar {
 
 	&.Active {
 		background-color: $body-color;
-		border-bottom: 3px solid $body-color;
-		border-radius: 4px 4px 0 0;
+		border: 1px solid $light-grey;
+		border-bottom: 3px solid transparent;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
 		color: $regular-black;
+		margin-bottom: -4px;
+
+		&:before,
+		&:after {
+			border: 1px solid $light-grey;
+			bottom: -2px;
+			content: ' ';
+			height: 12px;
+			position: absolute;
+			width: 9.5px;
+		}
+
+		&:before {
+			border-bottom-right-radius: 8px;
+			border-width: 0 1px 1px 0;
+			box-shadow: 3px 2px 0 $body-color;
+			left: -10.5px;
+		}
+
+		&:after {
+			border-bottom-left-radius: 8px;
+			border-width: 0 0 1px 1px;
+			box-shadow: -2px 2px 0 $body-color;
+			right: -10.5px;
+		}
 
 		.MenuItemWrapper_Container {
-			color: $regular-black;
+			color: $regular-beta;
+			font-family: $font-family-latin-bold;
+			height: 64px;
+			margin-bottom: -15px;
 		}
 	}
 
@@ -388,6 +416,8 @@ div.Toolbar {
 		}
 
 		&__MoreOptions {
+			text-align: -webkit-left;
+
 			&--open {
 				.Toolbar__MoreOptionsList {
 					left: 0;

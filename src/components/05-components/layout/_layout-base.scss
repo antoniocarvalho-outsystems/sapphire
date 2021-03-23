@@ -245,7 +245,7 @@
 				margin-top: -11px;
 
 				.Toolbar__MoreOptionsIcon {
-					padding-top: 11px;
+					padding: 18px 20px 6px;
 				}
 			}
 		}
@@ -257,6 +257,7 @@
 
 		.LayoutBase-secondary-aside {
 			background-color: #fff;
+			border-left: 1px solid $light-grey;
 			width: 33%;
 		}
 
@@ -440,6 +441,18 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 	.LayoutBase-header {
 		padding-left: 40px;
 		padding-right: 0;
+	}
+
+	&.LayoutBase.Page {
+		.LayoutBase-secondary-aside {
+			border-left: none;
+			border-right: 1px solid $light-grey;
+		}
+
+		.Toolbar {
+			padding-left: 0;
+			padding-right: $sapphire-sizes--medium;
+		}
 	}
 }
 
