@@ -74,13 +74,13 @@ div.Toolbar {
 			display: inline-flex;
 			width: 100%;
 
-			> a:focus .MenuItemWrapper {
-				border-bottom: 3px solid $regular-alpha !important;
+			// > a:focus .MenuItemWrapper {
+			// 	border-bottom: 3px solid $regular-alpha !important;
 
-				.MenuItemWrapper_Container {
-					color: $regular-beta;
-				}
-			}
+			// 	.MenuItemWrapper_Container {
+			// 		color: $regular-beta;
+			// 	}
+			// }
 
 			a[disabled] {
 				cursor: not-allowed;
@@ -92,7 +92,6 @@ div.Toolbar {
 				.MenuItemWrapper {
 					&:hover {
 						background-color: transparent;
-						border-bottom-color: transparent !important;
 					}
 
 					&_Container {
@@ -143,14 +142,6 @@ div.Toolbar {
 					position: absolute;
 					z-index: 2;
 				}
-
-				span[ui='more-options-title'] {
-					color: transparent;
-
-					&::after {
-						opacity: 1;
-					}
-				}
 			}
 
 			.Toolbar__MoreOptionsList {
@@ -190,38 +181,11 @@ div.Toolbar {
 
 		&:hover {
 			color: $regular-beta;
-
-			span[ui='more-options-title'] {
-				color: transparent;
-
-				&::after {
-					opacity: 1;
-				}
-			}
 		}
 
 		span[ui='more-options-icon'],
 		span[ui='more-options-title'] {
 			transition: all 0.1s ease-in;
-		}
-
-		span[ui='more-options-title'] {
-			position: relative;
-
-			&::after {
-				border-color: $regular-beta;
-				border-left: 8px solid transparent;
-				border-right: 8px solid transparent;
-				border-top: 8px solid;
-				bottom: 0px;
-				color: $regular-beta;
-				content: '';
-				left: 50%;
-				opacity: 0;
-				position: absolute;
-				transform: translateX(-50%);
-				z-index: 2;
-			}
 		}
 
 		span[ui='more-options-icon'] {
@@ -254,12 +218,10 @@ div.Toolbar {
 		}
 
 		.MenuItemWrapper {
-			border-bottom: none !important;
 			padding: 10px 45px 10px 20px;
 
 			&:hover {
 				background-color: $regular-eta;
-				border-bottom: none !important;
 			}
 
 			&_Container {
@@ -324,9 +286,8 @@ div.Toolbar {
 
 .MenuItemWrapper {
 	background-color: transparent;
-	border-bottom: 3px solid transparent;
 	font-family: $font-family-latin-regular;
-	padding: 11px 20px 6px 20px;
+	padding: $sapphire-sizes--small $sapphire-sizes--medium;
 	position: relative;
 	text-align: center;
 	transition: all 0.2s ease-in;
@@ -341,7 +302,7 @@ div.Toolbar {
 	&.Active {
 		background-color: $body-color;
 		border: 1px solid $light-grey;
-		border-bottom: 3px solid transparent;
+		border-bottom: none;
 		border-top-left-radius: 8px;
 		border-top-right-radius: 8px;
 		color: $regular-black;
@@ -350,7 +311,7 @@ div.Toolbar {
 		&:before,
 		&:after {
 			border: 1px solid $light-grey;
-			bottom: -2px;
+			bottom: 0;
 			content: ' ';
 			height: 12px;
 			position: absolute;
@@ -374,8 +335,8 @@ div.Toolbar {
 		.MenuItemWrapper_Container {
 			color: $regular-beta;
 			font-family: $font-family-latin-bold;
-			height: 64px;
-			margin-bottom: -15px;
+			height: 62px;
+			margin-bottom: -16px;
 		}
 	}
 
@@ -385,10 +346,10 @@ div.Toolbar {
 	}
 
 	&__icon {
-		margin-bottom: 8px;
+		margin-bottom: 6px;
 
 		.icon {
-			font-size: 1.429em;
+			font-size: $font-size-heading2;
 		}
 	}
 
@@ -396,7 +357,7 @@ div.Toolbar {
 		background-color: $regular-red;
 		border-radius: 100%;
 		color: $regular-white;
-		font-size: 0.786em;
+		font-size: $font-size-tiny;
 		height: 18px;
 		line-height: 18px;
 		position: absolute;

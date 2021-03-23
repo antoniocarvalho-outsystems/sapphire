@@ -119,7 +119,7 @@
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;
-				border-top: solid 2px $regular-alpha;
+				border-top: solid 2px $light-grey;
 				position: fixed;
 				z-index: 6;
 
@@ -165,7 +165,7 @@
 			}
 
 			&.isFixed .Toolbar {
-				background-color: $regular-white;
+				padding-top: $sapphire-sizes--xsmall;
 			}
 
 			&.isFixed .Toolbar_container {
@@ -187,7 +187,7 @@
 				margin-top: 0;
 
 				.Toolbar__MoreOptionsIcon {
-					padding-top: 0;
+					padding: 0;
 
 					span[ui='more-options-icon'] {
 						margin-bottom: 0;
@@ -224,21 +224,31 @@
 				border-bottom: none;
 			}
 
-			&.isFixed .Toolbar .MenuItemWrapper {
-				padding: 0 10px;
-			}
+			&.isFixed .Toolbar {
+				.Toolbar__Items a {
+					height: 40px;
+				}
 
-			&.isFixed .Toolbar .MenuItemWrapper .MenuItemWrapper__icon {
-				display: none;
-			}
+				.MenuItemWrapper {
+					padding: 0 12px;
 
-			&.isFixed .Toolbar .MenuItemWrapper .MenuItemWrapper_Badge {
-				font-size: 0.7em;
-				height: 15px;
-				line-height: 15px;
-				right: -5px;
-				top: 7px;
-				width: 15px;
+					&.Active .MenuItemWrapper_Container {
+						height: 41px;
+					}
+
+					.MenuItemWrapper__icon {
+						display: none;
+					}
+
+					.MenuItemWrapper_Badge {
+						font-size: 0.7em;
+						height: 15px;
+						line-height: 15px;
+						right: -5px;
+						top: 7px;
+						width: 15px;
+					}
+				}
 			}
 
 			.Toolbar__MoreOptions {

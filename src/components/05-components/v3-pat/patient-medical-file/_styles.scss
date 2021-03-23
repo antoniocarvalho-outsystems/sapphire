@@ -51,8 +51,8 @@
 				@include flex-center-total(inline-flex);
 
 				border-radius: 50%;
-				height: 36px;
-				width: 36px;
+				height: 30px;
+				width: 30px;
 
 				> div {
 					height: 20px;
@@ -71,9 +71,9 @@
 		&::after {
 			border-radius: 50%;
 			content: '';
-			height: 36px;
+			height: 30px;
 			position: absolute;
-			width: 36px;
+			width: 30px;
 		}
 
 		&:hover {
