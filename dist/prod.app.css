@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108019 || Generated: Mon Mar 22 2021 17:24:18 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108020 || Generated: Tue Mar 23 2021 15:18:48 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9172,17 +9172,6 @@ div.LineInfo {
   margin-left: 0;
   margin-right: 10px; }
 
-.PatientCardAction .iconHorizontal_icon {
-  font-size: 0.857em; }
-
-.PatientCardAction .iconHorizontal_label {
-  color: #00ac94;
-  font-family: "LatoBold";
-  font-size: 0.857em; }
-
-.AR .PatientCardAction .iconHorizontal_label {
-  font-family: "TajawalBold"; }
-
 .PatientInfo {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -11329,10 +11318,12 @@ div.NoPrompt > div.template-item-input-block {
   z-index: 20; }
 
 .LayoutBase-Content .LayoutBase-primary-menu {
-  background-color: #00bfa5;
-  padding-left: 16px; }
+  background-color: #fff;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 0 16px; }
 
 .LayoutBase-Content .LayoutBase-secondary {
+  border-bottom: 1px solid #d6d6d6;
   display: -webkit-box;
   display: flex;
   position: static; }
@@ -11705,43 +11696,6 @@ html .Page .PatientDetailsLayout {
   .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
     color: #00ac94; }
 
-.NewNavigation2 .LayoutBase-primary-menu {
-  background-color: #ebebeb; }
-
-.NewNavigation2 .FullScreenTabsWrapper_Container {
-  background-color: #ebebeb; }
-  .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper {
-    border-top-color: #ebebeb; }
-    .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper:hover {
-      background-color: #ebebeb;
-      color: #00ac94; }
-    .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active {
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px; }
-      .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active:before, .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active:after {
-        border: 1px solid #fff;
-        bottom: -1px;
-        content: ' ';
-        height: 6px;
-        position: absolute;
-        width: 6px; }
-      .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active:before {
-        border-bottom-right-radius: 8px;
-        border-width: 0 1px 1px 0;
-        box-shadow: 2px 2px 0 #fff;
-        left: -6px; }
-      .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active:after {
-        border-bottom-left-radius: 8px;
-        border-width: 0 0 1px 1px;
-        box-shadow: -2px 2px 0 #fff;
-        right: -6px; }
-      .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
-        color: #00ac94; }
-      .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_tab a {
-        color: #00ac94; }
-    .NewNavigation2 .FullScreenTabsWrapper_Container .TabWrapper_tab a {
-      color: #777777; }
-
 .NewNavigation2 .Toolbar__MoreOptionsIcon {
   background-color: transparent;
   color: #777777; }
@@ -11752,27 +11706,32 @@ html .Page .PatientDetailsLayout {
   border-bottom: 3px solid transparent !important; }
 
 .NewNavigation2 .Toolbar .MenuItemWrapper.Active {
+  border: 1px solid #d6d6d6;
+  border-bottom: 3px solid transparent;
   border-top-left-radius: 8px;
-  border-top-right-radius: 8px; }
+  border-top-right-radius: 8px;
+  margin-bottom: -4px; }
   .NewNavigation2 .Toolbar .MenuItemWrapper.Active:before, .NewNavigation2 .Toolbar .MenuItemWrapper.Active:after {
-    border: 1px solid #f3f3f3;
-    bottom: -3px;
+    border: 1px solid #d6d6d6;
+    bottom: -4px;
     content: ' ';
     height: 6px;
     position: absolute;
     width: 6px; }
   .NewNavigation2 .Toolbar .MenuItemWrapper.Active:before {
     border-bottom-right-radius: 8px;
-    border-width: 0 1px 1px 0;
+    border-width: 0 1px 0px 0;
     box-shadow: 2px 2px 0 #f3f3f3;
-    left: -6px; }
+    left: -7px; }
   .NewNavigation2 .Toolbar .MenuItemWrapper.Active:after {
     border-bottom-left-radius: 8px;
-    border-width: 0 0 1px 1px;
+    border-width: 0 0 0 1px;
     box-shadow: -2px 2px 0 #f3f3f3;
-    right: -6px; }
+    right: -7px; }
   .NewNavigation2 .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
-    color: #00ac94; }
+    color: #00ac94;
+    height: 64px;
+    margin-bottom: -15px; }
 
 .LayoutBlank.Page {
   background-color: #fff;
@@ -12906,8 +12865,6 @@ div.ActionsMenu-tooltip {
     padding: 0; }
     div.ActionsMenu-tooltip .tooltipster-content > section > .ActionsMenu-tooltip {
       min-width: auto; }
-      div.ActionsMenu-tooltip .tooltipster-content > section > .ActionsMenu-tooltip > div {
-        line-height: 30px; }
     div.ActionsMenu-tooltip .tooltipster-content .ButtonList a {
       text-align: start !important; }
   div.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-left span:after {
@@ -17503,128 +17460,62 @@ div.CircledArrow {
   margin-left: 6px;
   margin-right: 0; }
 
-.FullScreenTabsDashboard .MultiFloatRight {
-  float: right; }
-
-.FA .FullScreenTabsDashboard .MultiFloatRight,
-.AR .FullScreenTabsDashboard .MultiFloatRight {
-  float: left; }
-
-.FullScreenTabsDashboard > div:first-child {
-  background-color: #113041;
-  height: 3.667rem; }
-
-.FullScreenTabsDashboard > div:first-child > div[buttons] {
-  height: 100%; }
-
-.FullScreenTabsDashboard > div:first-child > div[buttons] a.Button[tab], .FullScreenTabsDashboard > div:first-child > div[buttons] .DropZoneContainer .row .Button[tab], .DropZoneContainer .row .FullScreenTabsDashboard > div:first-child > div[buttons] .Button[tab] {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 1.4rem;
-  height: 100%;
-  line-height: 2.4em; }
-
-.FullScreenTabsDashboard > div:first-child > div[tabs] {
-  padding: 0.89rem 5px 0; }
-
-.FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab {
-  color: #fff;
-  display: inline-block;
-  font-size: 1.25rem;
-  min-width: 100px;
-  padding: 0.37rem 25px;
-  text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
-
-.FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab.Active {
-  background-color: #f7f4ef;
-  border-bottom: 1px solid #f7f4ef;
-  pointer-events: none; }
-
-.FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab > div[icon] {
-  margin-left: -10px;
-  margin-right: 10px; }
-
-.FA .FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab > div[icon],
-.AR .FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab > div[icon] {
-  margin-left: 10px;
-  margin-right: -10px; }
-
-.FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab.Active > div[icon] {
-  color: #835478; }
-
-.FullScreenTabsDashboard > div:last-child div.FullScreenTabsDashboard-Content div.TabContentDashboard-Loading {
-  color: rgba(51, 51, 51, 0.2);
-  font-size: 3rem;
-  padding: 60px 10px;
-  text-align: center;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(255, 255, 255, 0.1); }
-
 .FullScreenTabsWrapper_Container {
-  background-color: #00bfa5;
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  background-color: #fff;
+  flex-wrap: wrap;
   height: 44px;
-  padding: 0;
-  position: relative; }
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 0; }
   .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Tabs {
     bottom: 0;
     display: -webkit-inline-box;
     display: inline-flex;
+    gap: 24px;
     position: absolute; }
-  .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions {
-    position: absolute;
-    right: 18px;
-    top: 7px; }
-
-.tablet .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions,
-.desktop.small .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions {
-  float: right;
-  padding-right: 18px;
-  padding-top: 7px;
-  position: static;
-  right: auto;
-  top: auto; }
+  .tablet .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions,
+  .desktop.small .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions {
+    float: right;
+    padding: 8px 16px;
+    position: static; }
 
 .TabWrapper {
   -webkit-box-align: center;
           align-items: center;
   display: -webkit-box;
   display: flex;
-  border-top: solid 3px #00bfa5;
+  border-bottom: 3px solid transparent;
+  gap: 8px;
   height: 44px;
-  min-width: 100px;
   position: relative;
   text-align: center; }
   .TabWrapper:hover {
-    background-color: #00ac94;
-    border-top-color: #00ac94; }
+    border-bottom-color: #00bfa5; }
+    .TabWrapper:hover .TabWrapper_tab a {
+      color: #00ac94; }
   .TabWrapper .TabWrapper_tab a {
-    color: #fff;
+    color: #777777;
     display: block;
-    font-family: "LatoBold";
+    font-family: "LatoRegular";
     font-size: 1rem;
     line-height: calc(44px - 5px);
-    padding-left: 16px;
-    padding-right: 16px;
     white-space: nowrap; }
-  .TabWrapper .TabWrapper_icon {
-    padding-left: 16px; }
-    .TabWrapper .TabWrapper_icon .icon {
-      color: #fff;
-      display: block; }
 
 .TabWrapper.Active {
   background-color: #fff;
-  color: #00bfa5;
+  border-bottom-color: #00bfa5;
   pointer-events: none; }
   .TabWrapper.Active a,
   .TabWrapper.Active a:hover {
-    color: #333333; }
+    color: #00ac94;
+    font-family: "LatoBold"; }
   .TabWrapper.Active .TabWrapper_icon .icon {
-    color: #333333; }
+    color: #00ac94;
+    font-size: 1.143em; }
 
 .FullScreenTabs_tabCounter {
   background-color: #ff3e2d;
@@ -17681,9 +17572,6 @@ div.CircledArrow {
   color: #ff3e2d; }
   .FullScreenTabsWrapper_Container.Emergency .TabWrapper.Active .TabWrapper_tab a {
     color: #ff3e2d; }
-
-.tablet .FullScreenTabsWrapper_Container {
-  height: 43px; }
 
 .GenericGallery .GenericGallery-content {
   display: grid; }
@@ -18056,7 +17944,6 @@ div.Toolbar {
       display: none; }
   div.Toolbar__Items {
     display: block;
-    overflow: hidden;
     padding-top: 11px; }
     div.Toolbar__Items .ListRecords {
       display: -webkit-inline-box;
@@ -18285,6 +18172,7 @@ div.Toolbar {
 .MenuItemWrapper {
   background-color: transparent;
   border-bottom: 3px solid transparent;
+  font-family: "LatoRegular";
   padding: 11px 20px 6px 20px;
   position: relative;
   text-align: center;
@@ -18310,9 +18198,6 @@ div.Toolbar {
     margin-bottom: 8px; }
     .MenuItemWrapper__icon .icon {
       font-size: 1.429em; }
-  .MenuItemWrapper__Label {
-    font-size: 1em;
-    font-weight: 400; }
   .MenuItemWrapper_Badge {
     background-color: #ff3e2d;
     border-radius: 100%;
