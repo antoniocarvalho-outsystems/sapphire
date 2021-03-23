@@ -107,11 +107,13 @@
 
 	&-Content {
 		.LayoutBase-primary-menu {
-			background-color: $regular-alpha;
-			padding-left: $sapphire-sizes--medium;
+			background-color: $regular-white;
+			border-bottom: 1px solid $light-grey;
+			padding: 0 $sapphire-sizes--medium;
 		}
 
 		.LayoutBase-secondary {
+			border-bottom: 1px solid $light-grey;
 			display: flex;
 			position: static;
 
@@ -516,15 +518,6 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 	}
 }
 
-.AR,
-.FA {
-	&.LayoutBase.Page .ClinicianWorkArea-columns-big {
-	}
-
-	&.LayoutBase.Page .ClinicianWorkArea-columns-small {
-	}
-}
-
 .tablet {
 	.LayoutBase {
 		&-padding {
@@ -697,68 +690,6 @@ html .Page .PatientDetailsLayout {
 
 // New Navigation2 - Testing
 .NewNavigation2 {
-	.LayoutBase-primary-menu {
-		background-color: $sapphire-light;
-	}
-
-	.FullScreenTabsWrapper {
-		&_Container {
-			background-color: $sapphire-light;
-
-			.TabWrapper {
-				border-top-color: $sapphire-light;
-
-				&:hover {
-					background-color: $sapphire-light;
-					color: $regular-beta;
-				}
-
-				&.Active {
-					border-top-left-radius: 8px;
-					border-top-right-radius: 8px;
-
-					&:before,
-					&:after {
-						border: 1px solid $regular-white;
-						bottom: -1px;
-						content: ' ';
-						height: 6px;
-						position: absolute;
-						width: 6px;
-					}
-
-					&:before {
-						border-bottom-right-radius: 8px;
-						border-width: 0 1px 1px 0;
-						box-shadow: 2px 2px 0 $regular-white;
-						left: -6px;
-					}
-
-					&:after {
-						border-bottom-left-radius: 8px;
-						border-width: 0 0 1px 1px;
-						box-shadow: -2px 2px 0 $regular-white;
-						right: -6px;
-					}
-
-					.TabWrapper_icon .icon {
-						color: $regular-beta;
-					}
-
-					.TabWrapper_tab a {
-						color: $regular-beta;
-					}
-				}
-
-				&_tab {
-					a {
-						color: $regular-grey;
-					}
-				}
-			}
-		}
-	}
-
 	.Toolbar {
 		&__MoreOptionsIcon {
 			background-color: transparent;
@@ -775,13 +706,16 @@ html .Page .PatientDetailsLayout {
 			}
 
 			&.Active {
+				border: 1px solid $light-grey;
+				border-bottom: 3px solid transparent;
 				border-top-left-radius: 8px;
 				border-top-right-radius: 8px;
+				margin-bottom: -4px;
 
 				&:before,
 				&:after {
-					border: 1px solid $body-color;
-					bottom: -3px;
+					border: 1px solid $light-grey;
+					bottom: -4px;
 					content: ' ';
 					height: 6px;
 					position: absolute;
@@ -790,20 +724,22 @@ html .Page .PatientDetailsLayout {
 
 				&:before {
 					border-bottom-right-radius: 8px;
-					border-width: 0 1px 1px 0;
+					border-width: 0 1px 0px 0;
 					box-shadow: 2px 2px 0 $body-color;
-					left: -6px;
+					left: -7px;
 				}
 
 				&:after {
 					border-bottom-left-radius: 8px;
-					border-width: 0 0 1px 1px;
+					border-width: 0 0 0 1px;
 					box-shadow: -2px 2px 0 $body-color;
-					right: -6px;
+					right: -7px;
 				}
 
 				.MenuItemWrapper_Container {
 					color: $regular-beta;
+					height: 64px;
+					margin-bottom: -15px;
 				}
 			}
 		}

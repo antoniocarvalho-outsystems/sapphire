@@ -67,7 +67,7 @@ div.Toolbar {
 
 	&__Items {
 		display: block;
-		overflow: hidden;
+		//overflow: hidden;
 		padding-top: 11px;
 
 		.ListRecords {
@@ -325,6 +325,7 @@ div.Toolbar {
 .MenuItemWrapper {
 	background-color: transparent;
 	border-bottom: 3px solid transparent;
+	font-family: $font-family-latin-regular;
 	padding: 11px 20px 6px 20px;
 	position: relative;
 	text-align: center;
@@ -361,11 +362,6 @@ div.Toolbar {
 		.icon {
 			font-size: 1.429em;
 		}
-	}
-
-	&__Label {
-		font-size: 1em;
-		font-weight: 400;
 	}
 
 	&_Badge {

@@ -1,151 +1,72 @@
 $tab-height: 44px;
 
-.FullScreenTabsDashboard .MultiFloatRight {
-	float: right;
-}
-
-.FA .FullScreenTabsDashboard .MultiFloatRight,
-.AR .FullScreenTabsDashboard .MultiFloatRight {
-	float: left;
-}
-
-.FullScreenTabsDashboard > div:first-child {
-	background-color: #113041;
-	height: 3.667rem;
-}
-
-.FullScreenTabsDashboard > div:first-child > div[buttons] {
-	height: 100%;
-}
-
-.FullScreenTabsDashboard > div:first-child > div[buttons] a.Button[tab] {
-	border: none;
-	border-radius: 0;
-	box-shadow: none;
-	font-size: 1.4rem;
-	height: 100%;
-	line-height: 2.4em;
-}
-
-.FullScreenTabsDashboard > div:first-child > div[tabs] {
-	padding: 0.89rem 5px 0;
-}
-
-.FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab {
-	color: $regular-white;
-	display: inline-block;
-	font-size: 1.25rem;
-	min-width: 100px;
-	padding: 0.37rem 25px;
-	text-align: center;
-	user-select: none;
-}
-
-.FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab.Active {
-	background-color: #f7f4ef;
-	border-bottom: 1px solid #f7f4ef;
-	pointer-events: none;
-}
-
-.FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab > div[icon] {
-	margin-left: -10px;
-	margin-right: 10px;
-}
-
-.FA .FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab > div[icon],
-.AR .FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab > div[icon] {
-	margin-left: 10px;
-	margin-right: -10px;
-}
-
-.FullScreenTabsDashboard > div:first-child div.FullScreenTabsDashboard-Tab.Active > div[icon] {
-	color: #835478;
-}
-
-.FullScreenTabsDashboard > div:last-child div.FullScreenTabsDashboard-Content div.TabContentDashboard-Loading {
-	color: rgba(51, 51, 51, 0.2);
-	font-size: 3rem;
-	padding: 60px 10px;
-	text-align: center;
-	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(255, 255, 255, 0.1);
-}
-
 .FullScreenTabsWrapper_Container {
-	background-color: $regular-alpha;
+	@include flex-center-vertically();
+
+	background-color: $regular-white;
+	flex-wrap: wrap;
 	height: $tab-height;
+	justify-content: space-between;
 	padding: 0;
-	position: relative;
 
 	.FullScreenTabsWrapper__Tabs {
 		bottom: 0;
 		display: inline-flex;
+		gap: $sapphire-sizes--large;
 		position: absolute;
 	}
 
 	.FullScreenTabsWrapper__Actions {
-		position: absolute;
-		right: 18px;
-		top: 7px;
+		.tablet &,
+		.desktop.small & {
+			float: right;
+			padding: $sapphire-sizes--small $sapphire-sizes--medium;
+			position: static;
+		}
 	}
-}
-
-.tablet .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions,
-.desktop.small .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions {
-	float: right;
-	padding-right: 18px;
-	padding-top: 7px;
-	position: static;
-	right: auto;
-	top: auto;
 }
 
 .TabWrapper {
 	@include flex-center-vertically();
 
-	border-top: solid 3px $regular-alpha;
+	border-bottom: 3px solid transparent;
+	gap: $sapphire-sizes--small;
 	height: $tab-height;
-	min-width: 100px;
 	position: relative;
 	text-align: center;
 
 	&:hover {
-		background-color: $regular-beta;
-		border-top-color: $regular-beta;
+		border-bottom-color: $regular-alpha;
+
+		.TabWrapper_tab a {
+			color: $regular-beta;
+		}
 	}
 
 	.TabWrapper_tab a {
-		color: $regular-white;
+		color: $regular-grey;
 		display: block;
-		font-family: $font-family-latin-bold;
+		font-family: $font-family-latin-regular;
 		font-size: 1rem;
 		line-height: calc(#{$tab-height} - 5px);
-		padding-left: $sapphire-sizes--medium;
-		padding-right: $sapphire-sizes--medium;
 		white-space: nowrap;
-	}
-
-	.TabWrapper_icon {
-		padding-left: $sapphire-sizes--medium;
-
-		.icon {
-			color: $regular-white;
-			display: block;
-		}
 	}
 }
 
 .TabWrapper.Active {
 	background-color: $regular-white;
-	color: $regular-alpha;
+	border-bottom-color: $regular-alpha;
 	pointer-events: none;
 
 	a,
 	a:hover {
-		color: $text-color-regular;
+		color: $regular-beta;
+		font-family: $font-family-latin-bold;
 	}
 
 	.TabWrapper_icon .icon {
-		color: $text-color-regular;
+		color: $regular-beta;
+		font-size: $font-size-heading4;
 	}
 }
 
@@ -220,8 +141,4 @@ $tab-height: 44px;
 			color: $regular-red;
 		}
 	}
-}
-
-.tablet .FullScreenTabsWrapper_Container {
-	height: 43px;
 }
