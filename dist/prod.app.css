@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108021 || Generated: Tue Mar 23 2021 16:25:23 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108022 || Generated: Tue Mar 23 2021 17:58:56 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11329,7 +11329,7 @@ div.NoPrompt > div.template-item-input-block {
   position: static; }
   .LayoutBase-Content .LayoutBase-secondary.isFixed {
     border-bottom: solid 2px #d6d6d6;
-    border-top: solid 2px #00bfa5;
+    border-top: solid 2px #d6d6d6;
     position: fixed;
     z-index: 6; }
     .LayoutBase-Content .LayoutBase-secondary.isFixed.noToolbar {
@@ -11357,7 +11357,7 @@ div.NoPrompt > div.template-item-input-block {
   .LayoutBase-Content .LayoutBase-secondary.isFixed .TopInfo__Actions .SplitButton {
     height: 26px; }
   .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar {
-    background-color: #fff; }
+    padding-top: 4px; }
   .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar_container {
     margin-top: 0;
     padding-top: 0; }
@@ -11370,7 +11370,7 @@ div.NoPrompt > div.template-item-input-block {
   .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar__MoreOptions {
     margin-top: 0; }
     .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar__MoreOptions .Toolbar__MoreOptionsIcon {
-      padding-top: 0; }
+      padding: 0; }
       .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar__MoreOptions .Toolbar__MoreOptionsIcon span[ui='more-options-icon'] {
         margin-bottom: 0; }
       .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar__MoreOptions .Toolbar__MoreOptionsIcon span[ui='more-options-title'] {
@@ -11388,17 +11388,21 @@ div.NoPrompt > div.template-item-input-block {
   .LayoutBase-Content .LayoutBase-secondary.noToolbar .LayoutBase-secondary-menu,
   .LayoutBase-Content .LayoutBase-secondary.isFixed.noToolbar .LayoutBase-secondary-menu {
     border-bottom: none; }
+  .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .Toolbar__Items a {
+    height: 40px; }
   .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .MenuItemWrapper {
-    padding: 0 10px; }
-  .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .MenuItemWrapper .MenuItemWrapper__icon {
-    display: none; }
-  .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .MenuItemWrapper .MenuItemWrapper_Badge {
-    font-size: 0.7em;
-    height: 15px;
-    line-height: 15px;
-    right: -5px;
-    top: 7px;
-    width: 15px; }
+    padding: 0 12px; }
+    .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
+      height: 41px; }
+    .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .MenuItemWrapper .MenuItemWrapper__icon {
+      display: none; }
+    .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .MenuItemWrapper .MenuItemWrapper_Badge {
+      font-size: 0.7em;
+      height: 15px;
+      line-height: 15px;
+      right: -5px;
+      top: 7px;
+      width: 15px; }
   .LayoutBase-Content .LayoutBase-secondary .Toolbar__MoreOptions {
     margin-top: -11px; }
     .LayoutBase-Content .LayoutBase-secondary .Toolbar__MoreOptions .Toolbar__MoreOptionsIcon {
@@ -14617,7 +14621,6 @@ div.CircledArrow {
     overflow: hidden; }
     .ClinicalInformation > div .ClinicalInformationItem-icon {
       color: #fff;
-      font-size: 0.857em;
       line-height: 26px;
       text-align: center;
       width: 26px; }
@@ -17960,17 +17963,12 @@ div.Toolbar {
       display: -webkit-inline-box;
       display: inline-flex;
       width: 100%; }
-      div.Toolbar__Items .ListRecords > a:focus .MenuItemWrapper {
-        border-bottom: 3px solid #00bfa5 !important; }
-        div.Toolbar__Items .ListRecords > a:focus .MenuItemWrapper .MenuItemWrapper_Container {
-          color: #00ac94; }
       div.Toolbar__Items .ListRecords a[disabled] {
         cursor: not-allowed; }
         div.Toolbar__Items .ListRecords a[disabled]:focus .MenuItemWrapper {
           border-color: transparent; }
         div.Toolbar__Items .ListRecords a[disabled] .MenuItemWrapper:hover {
-          background-color: transparent;
-          border-bottom-color: transparent !important; }
+          background-color: transparent; }
         div.Toolbar__Items .ListRecords a[disabled] .MenuItemWrapper_Container {
           color: #d6d6d6; }
   div.Toolbar__leftBtn {
@@ -18055,10 +18053,6 @@ div.Toolbar {
       content: '';
       position: absolute;
       z-index: 2; }
-    div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsIcon span[ui='more-options-title'] {
-      color: transparent; }
-      div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsIcon span[ui='more-options-title']::after {
-        opacity: 1; }
     div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsList {
       display: block;
       min-width: 200px;
@@ -18093,30 +18087,10 @@ div.Toolbar {
       width: 18px; }
     div.Toolbar__MoreOptionsIcon:hover {
       color: #00ac94; }
-      div.Toolbar__MoreOptionsIcon:hover span[ui='more-options-title'] {
-        color: transparent; }
-        div.Toolbar__MoreOptionsIcon:hover span[ui='more-options-title']::after {
-          opacity: 1; }
     div.Toolbar__MoreOptionsIcon span[ui='more-options-icon'],
     div.Toolbar__MoreOptionsIcon span[ui='more-options-title'] {
       -webkit-transition: all 0.1s ease-in;
       transition: all 0.1s ease-in; }
-    div.Toolbar__MoreOptionsIcon span[ui='more-options-title'] {
-      position: relative; }
-      div.Toolbar__MoreOptionsIcon span[ui='more-options-title']::after {
-        border-color: #00ac94;
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        border-top: 8px solid;
-        bottom: 0px;
-        color: #00ac94;
-        content: '';
-        left: 50%;
-        opacity: 0;
-        position: absolute;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
-        z-index: 2; }
     div.Toolbar__MoreOptionsIcon span[ui='more-options-icon'] {
       font-size: 1.429em;
       height: 20px;
@@ -18142,11 +18116,9 @@ div.Toolbar {
     div.Toolbar__MoreOptionsList a:focus .MenuItemWrapper {
       border-color: transparent !important; }
     div.Toolbar__MoreOptionsList .MenuItemWrapper {
-      border-bottom: none !important;
       padding: 10px 45px 10px 20px; }
       div.Toolbar__MoreOptionsList .MenuItemWrapper:hover {
-        background-color: #f2fffd;
-        border-bottom: none !important; }
+        background-color: #f2fffd; }
       div.Toolbar__MoreOptionsList .MenuItemWrapper_Container {
         display: -webkit-box;
         display: flex; }
@@ -18184,9 +18156,8 @@ div.Toolbar {
 
 .MenuItemWrapper {
   background-color: transparent;
-  border-bottom: 3px solid transparent;
   font-family: "LatoRegular";
-  padding: 11px 20px 6px 20px;
+  padding: 8px 16px;
   position: relative;
   text-align: center;
   -webkit-transition: all 0.2s ease-in;
@@ -18197,14 +18168,14 @@ div.Toolbar {
   .MenuItemWrapper.Active {
     background-color: #f3f3f3;
     border: 1px solid #d6d6d6;
-    border-bottom: 3px solid transparent;
+    border-bottom: none;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     color: #131819;
     margin-bottom: -4px; }
     .MenuItemWrapper.Active:before, .MenuItemWrapper.Active:after {
       border: 1px solid #d6d6d6;
-      bottom: -2px;
+      bottom: 0;
       content: ' ';
       height: 12px;
       position: absolute;
@@ -18222,14 +18193,14 @@ div.Toolbar {
     .MenuItemWrapper.Active .MenuItemWrapper_Container {
       color: #00ac94;
       font-family: "LatoBold";
-      height: 64px;
-      margin-bottom: -15px; }
+      height: 62px;
+      margin-bottom: -16px; }
   .MenuItemWrapper_Container {
     color: #777777;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in; }
   .MenuItemWrapper__icon {
-    margin-bottom: 8px; }
+    margin-bottom: 6px; }
     .MenuItemWrapper__icon .icon {
       font-size: 1.429em; }
   .MenuItemWrapper_Badge {
@@ -20914,8 +20885,8 @@ body.PanelById.PanelOpened {
       -webkit-box-pack: center;
               justify-content: center;
       border-radius: 50%;
-      height: 36px;
-      width: 36px; }
+      height: 30px;
+      width: 30px; }
       .PatientMedicalFile .RequestFile .RequestFileOption a > div {
         height: 20px; }
   .PatientMedicalFile .RequestFiles-Menu div[button-style] {
@@ -20932,9 +20903,9 @@ body.PanelById.PanelOpened {
     .PatientMedicalFile .RequestFiles-Menu div[button-style]::after {
       border-radius: 50%;
       content: '';
-      height: 36px;
+      height: 30px;
       position: absolute;
-      width: 36px; }
+      width: 30px; }
     .PatientMedicalFile .RequestFiles-Menu div[button-style]:hover::after {
       background-color: #ebebeb; }
     .PatientMedicalFile .RequestFiles-Menu div[button-style]:hover .icon {
