@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108028 || Generated: Wed Mar 24 2021 17:35:54 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108029 || Generated: Wed Mar 24 2021 17:47:56 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17583,7 +17583,7 @@ div.CircledArrow {
   .TabWrapper.Active a,
   .TabWrapper.Active a:hover {
     color: #00ac94;
-    font-family: "LatoBold"; }
+    text-shadow: 0px 0px 1px #00ac94; }
   .TabWrapper.Active .TabWrapper_icon .icon {
     color: #00ac94;
     font-size: 1.143em; }
@@ -17620,9 +17620,7 @@ div.CircledArrow {
     font-size: 1rem;
     line-height: calc(44px - 5px);
     padding-left: 24px;
-    padding-right: 24px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
+    padding-right: 24px; }
     .FullScreenTabsWrapper_Container.Dashboard .TabWrapper:hover {
       background-color: #ebebeb;
       border-top-color: #00bfa5;
@@ -18146,10 +18144,6 @@ div.Toolbar {
     div.Toolbar__MoreOptionsIcon:hover {
       background-color: #f3f3f3;
       color: #00ac94; }
-    div.Toolbar__MoreOptionsIcon span[ui='more-options-icon'],
-    div.Toolbar__MoreOptionsIcon span[ui='more-options-title'] {
-      -webkit-transition: all 0.1s ease-in;
-      transition: all 0.1s ease-in; }
     div.Toolbar__MoreOptionsIcon span[ui='more-options-icon'] {
       font-size: 1.429em;
       height: 20px;
@@ -18218,12 +18212,10 @@ div.Toolbar {
   padding: 8px 16px;
   position: relative;
   text-align: center;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
   white-space: nowrap; }
   .MenuItemWrapper:hover {
     background-color: #f3f3f3;
-    border-radius: 8px; }
+    border-radius: 8px 8px 0 0; }
     .MenuItemWrapper:hover .MenuItemWrapper_Container {
       color: #00ac94; }
   .MenuItemWrapper.Active {
@@ -18233,7 +18225,8 @@ div.Toolbar {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     color: #131819;
-    margin-bottom: -4px; }
+    margin-bottom: -4px;
+    z-index: 1; }
     .MenuItemWrapper.Active:before, .MenuItemWrapper.Active:after {
       border: 1px solid #d6d6d6;
       bottom: 0;
@@ -18257,9 +18250,7 @@ div.Toolbar {
       height: 62px;
       margin-bottom: -16px; }
   .MenuItemWrapper_Container {
-    color: #777777;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in; }
+    color: #777777; }
   .MenuItemWrapper__icon {
     margin-bottom: 6px; }
     .MenuItemWrapper__icon .icon {
