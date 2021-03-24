@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108024 || Generated: Wed Mar 24 2021 10:31:09 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108025 || Generated: Wed Mar 24 2021 14:41:53 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7235,6 +7235,18 @@ a.Button.IsDefault,
   .IconHover:hover {
     color: #56d3c2; }
 
+.ListButtons {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  .ListButtons a:link {
+    line-height: 36px;
+    padding: 0 16px; }
+    .ListButtons a:link:hover {
+      background-color: #f2fffd; }
+
 a.LinkReset:link, a.LinkReset:visited {
   color: #333333;
   font-family: "LatoRegular"; }
@@ -9154,18 +9166,36 @@ div.LineInfo {
   .MedicalFileOptions_addVolume .CircleElement {
     background-color: transparent; }
 
-.MedicalFileOptions > div:first-child {
-  padding: 15px 20px;
-  text-align: center; }
-  .MedicalFileOptions > div:first-child .EditFileNumber {
+.MedicalFileOptions_header {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  gap: 16px;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 24px 16px; }
+  .MedicalFileOptions_header .EditFileNumber {
     color: #00ac94;
     font-size: 1.143em;
     margin-left: 10px; }
+
+.MedicalFileOptions_options {
+  border-top: 1px solid #d6d6d6;
+  padding: 16px; }
 
 .MedicalFileOptions > .VolumeList {
   max-height: 180px;
   overflow-x: hidden;
   overflow-y: auto; }
+
+.MedicalFileAssignHeader {
+  border-bottom: 1px solid #d6d6d6;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 24px 16px; }
 
 .AR .MedicalFileOptions > div:first-child .EditFileNumber,
 .FA .MedicalFileOptions > div:first-child .EditFileNumber {
@@ -10102,9 +10132,9 @@ div.LineInfo {
   .TableRecords.NoSideBorders > tbody tr td {
     border-left: none !important;
     border-right: none !important; }
-  .TableRecords.NoSideBorders > tbody tr td:first-child,
+  .TableRecords.NoSideBorders > tbody tr td:first-child {
+    padding-left: 0 !important; }
   .TableRecords.NoSideBorders > tbody tr td:last-child {
-    padding-left: 0 !important;
     padding-right: 0 !important; }
   .TableRecords > tbody > tr:first-child td {
     border-top: 1px solid #d6d6d6; }
@@ -14632,9 +14662,14 @@ div.CircledArrow {
     height: 26px;
     overflow: hidden; }
     .ClinicalInformation > div .ClinicalInformationItem-icon {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: center;
+              justify-content: center;
       color: #fff;
-      line-height: 26px;
-      text-align: center;
+      height: 26px;
       width: 26px; }
     .ClinicalInformation > div .ClinicalInformationItem-text {
       color: #333333;
@@ -20876,18 +20911,16 @@ body.PanelById.PanelOpened {
   padding-right: 0; }
   .Multiple .PatientMedicalFile .FileInfo {
     line-height: 32px; }
-  .PatientMedicalFile > span.icon {
-    display: none; }
   .PatientMedicalFile .FileInfo {
     margin-right: 4px; }
-  .PatientMedicalFile .FileLocation {
-    color: #777777;
+  .PatientMedicalFile .FileLocation .CircleElement {
+    background-color: transparent;
     font-size: 0.857em; }
-    .PatientMedicalFile .FileLocation .CircleElement {
-      font-size: 0.857em;
-      margin-top: 2px; }
   .PatientMedicalFile .FileNumber {
-    font-family: "LatoBold"; }
+    display: -webkit-box;
+    display: flex;
+    font-family: "LatoBold";
+    gap: 4px; }
   .PatientMedicalFile .RequestFile {
     font-size: 1.143em; }
     .PatientMedicalFile .RequestFile > div {
