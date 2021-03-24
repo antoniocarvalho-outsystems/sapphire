@@ -22,6 +22,7 @@
 		&-text {
 			color: $text-color-regular;
 			display: flex;
+			font-family: $font-family-latin-bold;
 			font-size: $font-size-tiny;
 			line-height: 26px;
 			width: 100%;
@@ -69,11 +70,12 @@
 	}
 
 	.EmptyGrey,
-	.EmptyOrange {
+	.EmptyGreen {
 		.ClinicalInformationItem {
 			&-text {
 				background-color: $regular-white;
 				color: $regular-grey;
+				font-family: $font-family-latin-regular;
 				line-height: 24px;
 			}
 		}
@@ -89,13 +91,13 @@
 		}
 	}
 
-	.EmptyOrange {
+	.EmptyGreen {
 		.ClinicalInformationItem {
 			overflow: unset;
 
 			&-icon {
-				background-color: $regular-yellow;
-				border: 1px solid $regular-yellow;
+				background-color: $regular-green;
+				border: 1px solid $regular-green;
 				border-radius: $border-radius-default 0 0 $border-radius-default;
 				border-right: none;
 				color: $regular-white;

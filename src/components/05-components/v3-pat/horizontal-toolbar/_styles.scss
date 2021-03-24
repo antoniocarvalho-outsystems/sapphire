@@ -67,27 +67,14 @@ div.Toolbar {
 
 	&__Items {
 		display: block;
-		//overflow: hidden;
 		padding-top: 11px;
 
 		.ListRecords {
 			display: inline-flex;
 			width: 100%;
 
-			// > a:focus .MenuItemWrapper {
-			// 	border-bottom: 3px solid $regular-alpha !important;
-
-			// 	.MenuItemWrapper_Container {
-			// 		color: $regular-beta;
-			// 	}
-			// }
-
 			a[disabled] {
 				cursor: not-allowed;
-
-				&:focus .MenuItemWrapper {
-					border-color: transparent;
-				}
 
 				.MenuItemWrapper {
 					&:hover {
@@ -132,6 +119,9 @@ div.Toolbar {
 
 		&--open {
 			.Toolbar__MoreOptionsIcon {
+				background-color: $body-color;
+				color: $regular-beta;
+
 				&::after {
 					border-bottom: 10px solid;
 					border-color: $regular-white;
@@ -180,6 +170,7 @@ div.Toolbar {
 		}
 
 		&:hover {
+			background-color: $body-color;
 			color: $regular-beta;
 		}
 
@@ -191,7 +182,7 @@ div.Toolbar {
 		span[ui='more-options-icon'] {
 			font-size: $font-size-heading2;
 			height: 20px;
-			margin-bottom: 8px;
+			margin-bottom: 6px;
 		}
 	}
 
@@ -213,11 +204,8 @@ div.Toolbar {
 			width: 4px;
 		}
 
-		a:focus .MenuItemWrapper {
-			border-color: transparent !important;
-		}
-
 		.MenuItemWrapper {
+			border-radius: 0;
 			padding: 10px 45px 10px 20px;
 
 			&:hover {
@@ -294,6 +282,9 @@ div.Toolbar {
 	white-space: nowrap;
 
 	&:hover {
+		background-color: $body-color;
+		border-radius: $border-radius-medium;
+
 		.MenuItemWrapper_Container {
 			color: $regular-beta;
 		}
