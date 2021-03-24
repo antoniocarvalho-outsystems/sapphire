@@ -9,6 +9,9 @@
 		flex-basis: 40%;
 
 		.AppDate {
+			align-items: center;
+			display: flex;
+
 			> div.Clickable {
 				align-items: center;
 				display: flex;
@@ -66,7 +69,7 @@
 	}
 
 	.LineLines {
-		background: $body-color;
+		background: $regular-white;
 		height: 100%;
 		padding: 0 10px;
 	}
