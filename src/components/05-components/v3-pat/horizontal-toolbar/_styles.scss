@@ -174,11 +174,6 @@ div.Toolbar {
 			color: $regular-beta;
 		}
 
-		span[ui='more-options-icon'],
-		span[ui='more-options-title'] {
-			transition: all 0.1s ease-in;
-		}
-
 		span[ui='more-options-icon'] {
 			font-size: $font-size-heading2;
 			height: 20px;
@@ -278,12 +273,11 @@ div.Toolbar {
 	padding: $sapphire-sizes--small $sapphire-sizes--medium;
 	position: relative;
 	text-align: center;
-	transition: all 0.2s ease-in;
 	white-space: nowrap;
 
 	&:hover {
 		background-color: $body-color;
-		border-radius: $border-radius-medium;
+		border-radius: $border-radius-medium $border-radius-medium 0 0;
 
 		.MenuItemWrapper_Container {
 			color: $regular-beta;
@@ -298,6 +292,7 @@ div.Toolbar {
 		border-top-right-radius: 8px;
 		color: $regular-black;
 		margin-bottom: -4px;
+		z-index: 1;
 
 		&:before,
 		&:after {
@@ -333,7 +328,6 @@ div.Toolbar {
 
 	&_Container {
 		color: $regular-grey;
-		transition: all 0.2s ease-in;
 	}
 
 	&__icon {
