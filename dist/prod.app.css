@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108023 || Generated: Wed Mar 24 2021 08:57:12 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108024 || Generated: Wed Mar 24 2021 10:31:09 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10095,6 +10095,17 @@ div.LineInfo {
       border-radius: 8px;
       height: 48px;
       width: 48px; }
+  .TableRecords.NoSideBorders .TableRecords_OddLine:first-child,
+  .TableRecords.NoSideBorders .TableRecords_EvenLine:first-child,
+  .TableRecords.NoSideBorders .TableRecords_Header:first-child {
+    padding-left: 0; }
+  .TableRecords.NoSideBorders > tbody tr td {
+    border-left: none !important;
+    border-right: none !important; }
+  .TableRecords.NoSideBorders > tbody tr td:first-child,
+  .TableRecords.NoSideBorders > tbody tr td:last-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
   .TableRecords > tbody > tr:first-child td {
     border-top: 1px solid #d6d6d6; }
   .TableRecords > tbody tr td:first-child {
@@ -12874,6 +12885,7 @@ div.ActionsMenu-tooltip {
     min-width: auto; }
   div.ActionsMenu-tooltip .tooltipster-content {
     border: none;
+    border-radius: 8px;
     font-size: 1rem;
     line-height: 16px;
     overflow: hidden;
@@ -14628,6 +14640,7 @@ div.CircledArrow {
       color: #333333;
       display: -webkit-box;
       display: flex;
+      font-family: "LatoBold";
       font-size: 0.786em;
       line-height: 26px;
       width: 100%; }
@@ -14651,35 +14664,36 @@ div.CircledArrow {
   .ClinicalInformation > div .ThemeGrey .ClinicalInformationItem .SubInfo {
     background-color: #777777; }
   .ClinicalInformation > div .EmptyGrey .ClinicalInformationItem-text,
-  .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-text {
+  .ClinicalInformation > div .EmptyGreen .ClinicalInformationItem-text {
     background-color: #fff;
     color: #777777;
+    font-family: "LatoRegular";
     line-height: 24px; }
   .ClinicalInformation > div .EmptyGrey .ClinicalInformationItem {
     border: 1px solid #d6d6d6; }
     .ClinicalInformation > div .EmptyGrey .ClinicalInformationItem-icon {
       background-color: #d6d6d6; }
-  .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem {
+  .ClinicalInformation > div .EmptyGreen .ClinicalInformationItem {
     overflow: unset; }
-    .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-icon {
-      background-color: #fbc02d;
-      border: 1px solid #fbc02d;
+    .ClinicalInformation > div .EmptyGreen .ClinicalInformationItem-icon {
+      background-color: #7cb342;
+      border: 1px solid #7cb342;
       border-radius: 4px 0 0 4px;
       border-right: none;
       color: #fff;
       height: 26px; }
-    .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-text {
+    .ClinicalInformation > div .EmptyGreen .ClinicalInformationItem-text {
       background-color: #fff;
       border: 1px solid #d6d6d6;
       border-left: none;
       border-radius: 0 4px 4px 0;
       color: #777777;
       height: 26px; }
-  .AR .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-icon {
+  .AR .ClinicalInformation > div .EmptyGreen .ClinicalInformationItem-icon {
     border-left: none;
     border-radius: 0 4px 4px 0;
     border-right: 1px solid #fbc02d; }
-  .AR .ClinicalInformation > div .EmptyOrange .ClinicalInformationItem-text {
+  .AR .ClinicalInformation > div .EmptyGreen .ClinicalInformationItem-text {
     border-left: 1px solid #d6d6d6;
     border-radius: 4px 0 0 4px;
     border-right: none; }
@@ -17965,8 +17979,6 @@ div.Toolbar {
       width: 100%; }
       div.Toolbar__Items .ListRecords a[disabled] {
         cursor: not-allowed; }
-        div.Toolbar__Items .ListRecords a[disabled]:focus .MenuItemWrapper {
-          border-color: transparent; }
         div.Toolbar__Items .ListRecords a[disabled] .MenuItemWrapper:hover {
           background-color: transparent; }
         div.Toolbar__Items .ListRecords a[disabled] .MenuItemWrapper_Container {
@@ -18044,15 +18056,18 @@ div.Toolbar {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; }
-    div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsIcon::after {
-      border-bottom: 10px solid;
-      border-color: #fff;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      bottom: 0px;
-      content: '';
-      position: absolute;
-      z-index: 2; }
+    div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsIcon {
+      background-color: #f3f3f3;
+      color: #00ac94; }
+      div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsIcon::after {
+        border-bottom: 10px solid;
+        border-color: #fff;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        bottom: 0px;
+        content: '';
+        position: absolute;
+        z-index: 2; }
     div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsList {
       display: block;
       min-width: 200px;
@@ -18086,6 +18101,7 @@ div.Toolbar {
       top: 5px;
       width: 18px; }
     div.Toolbar__MoreOptionsIcon:hover {
+      background-color: #f3f3f3;
       color: #00ac94; }
     div.Toolbar__MoreOptionsIcon span[ui='more-options-icon'],
     div.Toolbar__MoreOptionsIcon span[ui='more-options-title'] {
@@ -18094,7 +18110,7 @@ div.Toolbar {
     div.Toolbar__MoreOptionsIcon span[ui='more-options-icon'] {
       font-size: 1.429em;
       height: 20px;
-      margin-bottom: 8px; }
+      margin-bottom: 6px; }
   div.Toolbar__MoreOptionsList {
     background-color: #fff;
     box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.2);
@@ -18113,9 +18129,8 @@ div.Toolbar {
       background-color: transparent; }
     div.Toolbar__MoreOptionsList::-webkit-scrollbar {
       width: 4px; }
-    div.Toolbar__MoreOptionsList a:focus .MenuItemWrapper {
-      border-color: transparent !important; }
     div.Toolbar__MoreOptionsList .MenuItemWrapper {
+      border-radius: 0;
       padding: 10px 45px 10px 20px; }
       div.Toolbar__MoreOptionsList .MenuItemWrapper:hover {
         background-color: #f2fffd; }
@@ -18163,8 +18178,11 @@ div.Toolbar {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   white-space: nowrap; }
-  .MenuItemWrapper:hover .MenuItemWrapper_Container {
-    color: #00ac94; }
+  .MenuItemWrapper:hover {
+    background-color: #f3f3f3;
+    border-radius: 8px; }
+    .MenuItemWrapper:hover .MenuItemWrapper_Container {
+      color: #00ac94; }
   .MenuItemWrapper.Active {
     background-color: #f3f3f3;
     border: 1px solid #d6d6d6;

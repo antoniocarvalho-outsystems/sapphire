@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.108023 || Generated: Wed Mar 24 2021 08:57:12 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.108024 || Generated: Wed Mar 24 2021 10:31:09 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3183,6 +3183,17 @@ div[onclick] {
       border-radius: 8px;
       height: 48px;
       width: 48px; }
+  .TableRecords.NoSideBorders .TableRecords_OddLine:first-child,
+  .TableRecords.NoSideBorders .TableRecords_EvenLine:first-child,
+  .TableRecords.NoSideBorders .TableRecords_Header:first-child {
+    padding-left: 0; }
+  .TableRecords.NoSideBorders > tbody tr td {
+    border-left: none !important;
+    border-right: none !important; }
+  .TableRecords.NoSideBorders > tbody tr td:first-child,
+  .TableRecords.NoSideBorders > tbody tr td:last-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
   .TableRecords > tbody > tr:first-child td {
     border-top: 1px solid #d6d6d6; }
   .TableRecords > tbody tr td:first-child {
