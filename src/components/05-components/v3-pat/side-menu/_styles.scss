@@ -166,7 +166,7 @@ $side-menu-height: 64px;
 					border-top: none;
 					font-size: $font-size-heading4;
 					gap: $sapphire-sizes--small;
-					height: 100%;
+					height: $side-menu-height - 1px;
 					line-height: $font-size-heading4;
 					min-width: auto;
 					padding: 0;
