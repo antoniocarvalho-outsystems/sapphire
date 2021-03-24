@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108026 || Generated: Wed Mar 24 2021 15:03:30 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108027 || Generated: Wed Mar 24 2021 16:12:35 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16440,16 +16440,21 @@ div.CircledArrow {
   position: relative; }
   .AppLine .AppHeader {
     flex-basis: 40%; }
-    .AppLine .AppHeader .AppDate > div.Clickable {
+    .AppLine .AppHeader .AppDate {
       -webkit-box-align: center;
               align-items: center;
       display: -webkit-box;
       display: flex; }
-    .AppLine .AppHeader .AppDate .DoubleText div {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      width: 110px; }
+      .AppLine .AppHeader .AppDate > div.Clickable {
+        -webkit-box-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: flex; }
+      .AppLine .AppHeader .AppDate .DoubleText div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 110px; }
   .AppLine .AppInfo,
   .AppLine .AppStatus {
     -webkit-box-flex: 1;
@@ -16484,7 +16489,7 @@ div.CircledArrow {
       font-size: 24px;
       margin-left: -12px; }
   .AppLine .LineLines {
-    background: #f3f3f3;
+    background: #fff;
     height: 100%;
     padding: 0 10px; }
   .AppLine .DragBox.Moving {
@@ -31288,9 +31293,6 @@ body.PanelOpened .daterangepicker {
 
 .SurgeriesContainer .AppLine .DragLine > div:first-of-type > div:first-of-type {
   min-height: 53px; }
-
-.SurgeriesContainer .ListRecords .AppLine {
-  border-bottom: none; }
 
 .SurgeriesContainer .SurgeryDetail {
   width: 125px; }
