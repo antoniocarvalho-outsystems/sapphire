@@ -122,9 +122,11 @@
 				border-right: none !important;
 			}
 
-			td:first-child,
-			td:last-child {
+			td:first-child {
 				padding-left: 0 !important;
+			}
+
+			td:last-child {
 				padding-right: 0 !important;
 			}
 		}

@@ -13,9 +13,10 @@
 		overflow: hidden;
 
 		&-icon {
+			@include flex-center-total(inline-flex);
+
 			color: $regular-white;
-			line-height: 26px;
-			text-align: center;
+			height: 26px;
 			width: 26px;
 		}
 

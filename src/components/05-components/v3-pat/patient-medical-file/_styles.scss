@@ -13,26 +13,21 @@
 		}
 	}
 
-	> span.icon {
-		display: none;
-	}
-
 	.FileInfo {
 		margin-right: 4px;
 	}
 
 	.FileLocation {
-		color: $regular-grey;
-		font-size: $font-size-small;
-
 		.CircleElement {
+			background-color: transparent;
 			font-size: $font-size-small;
-			margin-top: 2px;
 		}
 	}
 
 	.FileNumber {
+		display: flex;
 		font-family: $font-family-latin-bold;
+		gap: $sapphire-sizes--xsmall;
 	}
 
 	.RequestFile {

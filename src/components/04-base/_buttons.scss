@@ -254,6 +254,20 @@ a.Button.IsDefault,
 	}
 }
 
+.ListButtons {
+	display: flex;
+	flex-direction: column;
+
+	a:link {
+		line-height: 36px;
+		padding: 0 $sapphire-sizes--medium;
+
+		&:hover {
+			background-color: $regular-eta;
+		}
+	}
+}
+
 a.LinkReset {
 	&:link,
 	&:visited {
