@@ -118,6 +118,21 @@
 	padding: $sapphire-sizes--large $sapphire-sizes--medium;
 }
 
+.AssignFile {
+	&__Button {
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-default;
+		cursor: pointer;
+		height: 56px;
+		line-height: 56px;
+		padding: 0 $sapphire-sizes--small;
+
+		&:hover {
+			background-color: $sapphire-light-container;
+		}
+	}
+}
+
 .AR,
 .FA {
 	.MedicalFileOptions {

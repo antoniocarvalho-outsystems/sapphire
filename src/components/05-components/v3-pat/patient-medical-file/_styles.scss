@@ -4,6 +4,7 @@
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-default;
 	height: $sapphire-sizes--largest;
+	overflow: hidden;
 	padding: 12px;
 	padding-right: 0;
 
@@ -59,7 +60,7 @@
 	.RequestFiles-Menu div[button-style] {
 		@include flex-center-total;
 
-		height: $sapphire-sizes--largest;
+		height: 80px;
 		transform: rotate(180deg);
 		width: 36px;
 

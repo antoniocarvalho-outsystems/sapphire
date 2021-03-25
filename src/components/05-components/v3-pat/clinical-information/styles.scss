@@ -26,9 +26,10 @@
 			font-family: $font-family-latin-bold;
 			font-size: $font-size-tiny;
 			line-height: 26px;
+			max-height: 26px;
 			width: 100%;
 
-			div:first-of-type {
+			> div:first-of-type {
 				flex: 1;
 				padding: 0 $sapphire-sizes--small;
 			}
@@ -36,6 +37,7 @@
 
 		.SubInfo {
 			padding: 0 $sapphire-sizes--small;
+			white-space: nowrap;
 
 			.tooltipstered {
 				padding-left: $sapphire-sizes--xsmall;
@@ -141,9 +143,9 @@
 			justify-content: space-between;
 		}
 
-		.ClinicalInformationItem {
-			max-width: 49.5%;
-		}
+		// .ClinicalInformationItem {
+		// 	max-width: 49.5%;
+		// }
 	}
 }
 
