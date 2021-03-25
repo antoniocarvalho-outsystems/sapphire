@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108031 || Generated: Thu Mar 25 2021 17:11:29 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108032 || Generated: Thu Mar 25 2021 17:36:28 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9195,7 +9195,7 @@ div.LineInfo {
   margin-left: 10px; }
 
 .PatientSummary {
-  padding: 16px; }
+  padding: 24px 16px; }
 
 .SummaryCard {
   background-color: #fff;
