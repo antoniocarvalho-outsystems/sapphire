@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108030 || Generated: Thu Mar 25 2021 10:27:07 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108031 || Generated: Thu Mar 25 2021 17:11:29 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -8167,118 +8167,6 @@ a.LinkReset:link, a.LinkReset:visited {
     font-size: 11px; } }
 
 /* /Responsive Calendar */
-.ClinicianSecondarySummary:not(.CanExpand) .SectionExpandable .SectionExpandable_header .Heading2.SectionExpandable__icon {
-  display: none; }
-
-.ClinicianSecondarySummary:not(.CanExpand) .SectionExpandable__ico {
-  display: none; }
-
-.ClinicianSecondarySummary.BorderTopNone .SectionExpandable .SectionExpandable_header.BorderTopNone {
-  border-top: none; }
-
-.ClinicianSecondarySummary.BorderTopNone .SectionExpandable .SectionExpandable_header {
-  border: none; }
-
-.ClinicianSecondarySummary.CanExpand .SectionExpandable__title.Heading2 {
-  display: inline-block;
-  padding-left: 10px; }
-
-.ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2 {
-  color: #00bfa5;
-  display: inline-block; }
-
-.ClinicianSecondarySummary_content {
-  padding: 0 15px; }
-
-.ClinicianSecondarySummary_selectAll {
-  font-family: "LatoBold";
-  font-size: 1em;
-  position: absolute;
-  right: 0;
-  text-align: right; }
-
-.ClinicianSecondarySummary_icon + .ClinicianSecondarySummary_title {
-  margin-left: 5px; }
-
-.ClinicianSecondarySummary_icon:empty + .ClinicianSecondarySummary_title {
-  margin-left: auto;
-  padding-left: 15px; }
-
-.ClinicianSecondarySummary .SectionExpandable .SectionExpandable_header .Heading2, .ClinicianSecondarySummary .SectionExpandable.expanded .SectionExpandable_header .Heading2 {
-  font-size: 15px;
-  line-height: 46px; }
-
-.ClinicianSecondarySummary .SectionExpandable_header {
-  background-color: transparent;
-  border: none;
-  border-top: 2px solid #00ac94;
-  color: #333333;
-  font-size: 1.143em;
-  height: auto;
-  line-height: 46px;
-  min-height: 46px;
-  padding: 0;
-  position: relative;
-  vertical-align: middle; }
-  .ClinicianSecondarySummary .SectionExpandable_header .Heading2 {
-    font-size: 1em; }
-    .ClinicianSecondarySummary .SectionExpandable_header .Heading2.SectionExpandable__icon {
-      border: none;
-      color: #00bfa5;
-      font-size: 1.143em;
-      line-height: 46px;
-      padding-left: 0;
-      width: auto; }
-      .ClinicianSecondarySummary .SectionExpandable_header .Heading2.SectionExpandable__icon span:before {
-        content: '\e610';
-        font-family: Sapphire-Icon-Font;
-        font-size: 1em; }
-
-.ClinicianSecondarySummary .SectionExpandable_content {
-  padding: 0; }
-
-.AR .ClinicianSecondarySummary.CanExpand .SectionExpandable__title.Heading2,
-.FA .ClinicianSecondarySummary.CanExpand .SectionExpandable__title.Heading2 {
-  padding-left: auto;
-  padding-right: 10px; }
-
-.AR .ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2,
-.FA .ClinicianSecondarySummary.CanExpand .SectionExpandable__icon.Heading2 {
-  float: right; }
-
-.AR .ClinicianSecondarySummary_selectAll,
-.FA .ClinicianSecondarySummary_selectAll {
-  left: 0;
-  right: auto;
-  text-align: left; }
-
-.AR .ClinicianSecondarySummary_icon + .AR .ClinicianSecondarySummary_title,
-.FA .ClinicianSecondarySummary_icon + .AR .ClinicianSecondarySummary_title, .AR .ClinicianSecondarySummary_icon +
-.FA .ClinicianSecondarySummary_title,
-.FA .ClinicianSecondarySummary_icon +
-.FA .ClinicianSecondarySummary_title {
-  margin-left: auto;
-  margin-right: 5px; }
-
-.AR .ClinicianSecondarySummary_icon:empty + .AR .ClinicianSecondarySummary_title,
-.FA .ClinicianSecondarySummary_icon:empty + .AR .ClinicianSecondarySummary_title, .AR .ClinicianSecondarySummary_icon:empty +
-.FA .ClinicianSecondarySummary_title,
-.FA .ClinicianSecondarySummary_icon:empty +
-.FA .ClinicianSecondarySummary_title {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: auto;
-  padding-right: 15px; }
-
-.AR .ClinicianSecondarySummary .SectionExpandable,
-.FA .ClinicianSecondarySummary .SectionExpandable {
-  padding-left: auto;
-  padding-right: 15px; }
-  .AR .ClinicianSecondarySummary .SectionExpandable_content,
-  .FA .ClinicianSecondarySummary .SectionExpandable_content {
-    font-size: 1.143em;
-    position: relative; }
-
 .Counter.Highlight {
   background-color: #ff3e2d;
   border-radius: 50%;
@@ -9307,40 +9195,39 @@ div.LineInfo {
   margin-left: 10px; }
 
 .PatientSummary {
+  padding: 16px; }
+
+.SummaryCard {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 4px;
-  padding: 18px; }
-  .PatientSummary div.ClinicianSecondarySummary_icon {
-    color: #d6d6d6;
-    font-size: 1.143em;
-    margin-right: 18px; }
-  .PatientSummary div.ClinicianSecondarySummary_title {
-    color: #5c5c5c;
-    font-size: 1.143em;
-    margin: 0; }
-  .PatientSummary div.ClinicianSecondarySummary_content {
-    padding: 0; }
-  .PatientSummary div.SectionExpandable {
-    border: none; }
-    .PatientSummary div.SectionExpandable_header {
-      border-bottom: 1px solid #00bfa5;
-      border-top: none;
-      cursor: default;
-      margin-bottom: 24px;
-      padding: 5px 0; }
-    .PatientSummary div.SectionExpandable__title {
-      -webkit-box-align: center;
-              align-items: center;
+  border-radius: 8px; }
+  .SummaryCard__Header {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    border-bottom: 1px solid #d6d6d6;
+    gap: 8px;
+    padding: 16px; }
+  .SummaryCard__HeaderIcon {
+    background-color: transparent;
+    color: #adadad; }
+  .SummaryCard__HeaderTitle {
+    -webkit-box-flex: 1;
+            flex: 1; }
+  .SummaryCard__Content {
+    padding: 16px; }
+    .SummaryCard__Content .ExpandableSmaller {
       display: -webkit-box;
-      display: flex; }
-    .PatientSummary div.SectionExpandable_content .FormField .FormField-caption:empty {
-      display: none; }
-
-.AR .PatientSummary div.ClinicianSecondarySummary_icon,
-.FA .PatientSummary div.ClinicianSecondarySummary_icon {
-  margin-left: 20px;
-  margin-right: 0; }
+      display: flex;
+      flex-wrap: wrap; }
+      .SummaryCard__Content .ExpandableSmaller > div + span {
+        flex-basis: 100%; }
+      .SummaryCard__Content .ExpandableSmaller .ExpandableSmaller_Title {
+        -webkit-box-flex: 1;
+                flex: 1; }
+      .SummaryCard__Content .ExpandableSmaller .ExpandableSmaller__headerIcon {
+        display: none; }
 
 .pika-single {
   background-color: #fff;
@@ -9724,7 +9611,6 @@ div.LineInfo {
   .LayoutBlank .SectionExpandable_header,
   .LayoutBase .SectionExpandable_header {
     border-bottom: none;
-    color: #00ac94;
     font-family: "LatoBold";
     font-size: 1em;
     padding: 15px 20px; }
@@ -11608,17 +11494,20 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 .LayoutBase.Page .LayoutBase-Content {
   position: static; }
 
-.LayoutBase.Page .ClinicianWorkArea .ClinicianWorkArea-columns {
-  -webkit-box-align: stretch;
-          align-items: stretch;
-  background-color: #f3f3f3;
-  display: -webkit-box;
-  display: flex;
-  width: 100%; }
-
-.LayoutBase.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns {
-  background: #fff;
-  background: linear-gradient(180deg, white 0%, rgba(243, 243, 243, 0) 200px); }
+.LayoutBase.Page .ClinicianWorkArea {
+  /*&.FullWidth {
+				.ClinicianWorkArea-columns {
+					background: #fff;
+					background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 0) 200px);
+				}
+			}*/ }
+  .LayoutBase.Page .ClinicianWorkArea .ClinicianWorkArea-columns {
+    -webkit-box-align: stretch;
+            align-items: stretch;
+    background-color: #f3f3f3;
+    display: -webkit-box;
+    display: flex;
+    width: 100%; }
 
 .LayoutBase.Page .ClinicianWorkArea-columns-big {
   display: inline-block;
@@ -17218,7 +17107,6 @@ div.CircledArrow {
   .ExpandableSmaller_Title, .ExpandableSmaller_header {
     color: #333333;
     display: inline-block;
-    font-family: "LatoBold";
     min-width: 80px; }
   .ExpandableSmaller_header {
     -webkit-box-align: center;
@@ -28427,6 +28315,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .ColorLightRedBG {
   background-color: #fad5d5; }
 
+.ColorLightRedTheme {
+  background-color: #fad5d5;
+  color: #ff3e2d; }
+
 .ColorDarkRedText {
   color: #b10100; }
 
@@ -28447,6 +28339,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .ColorLightGreenBG {
   background-color: #daebca; }
+
+.ColorLightGreenTheme {
+  background-color: #daebca;
+  color: #7cb342; }
 
 .ColorDarkGreenText {
   color: #578329; }
@@ -28775,6 +28671,20 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .FormMarginLargest > div:not(:first-of-type) {
   margin-top: 56px; }
+
+.ListRecordsSmallGap > * {
+  margin-bottom: 8px; }
+
+.ListRecordsMediumGap > * {
+  margin-bottom: 16px; }
+
+.ListRecordsLargeGap > * {
+  margin-bottom: 24px; }
+
+.ListRecordsSmallGap > *, .ListRecordsMediumGap > *, .ListRecordsLargeGap > * {
+  display: block; }
+  .ListRecordsSmallGap > *:last-of-type, .ListRecordsMediumGap > *:last-of-type, .ListRecordsLargeGap > *:last-of-type {
+    margin-bottom: 0; }
 
 .Rotation45 {
   -webkit-transform: rotate(45deg);
@@ -30985,24 +30895,6 @@ ul.os-internal-ui-autocomplete {
         width: 250px; }
         .TopSection___Wrapper .TopSection___Container .DropDown___Container .selection .select2-selection.select2-selection--single .select2-selection__arrow b {
           top: 3px; }
-
-.ClinicianSecondarySummary .SectionExpandable_header .SectionExpandable__title {
-  -servicestudio-display: table;
-  -servicestudio-float: right;
-  -servicestudio-text-align: left;
-  -servicestudio-width: 95%; }
-
-.ClinicianSecondarySummary .ClinicianSecondarySummary_icon,
-.ClinicianSecondarySummary .ClinicianSecondarySummary_title,
-.ClinicianSecondarySummary .ClinicianSecondarySummary_action {
-  -servicestudio-display: table-cell;
-  -servicestudio-float: left;
-  -servicestudio-width: 15%; }
-
-.ClinicianSecondarySummary .ClinicianSecondarySummary_selectAll {
-  -servicestudio-display: table-cell;
-  -servicestudio-float: left;
-  -servicestudio-width: 15%; }
 
 .ClinicianWorkArea____resumeDetails .AppointmentDetails {
   margin-top: 0 !important; }
@@ -40260,24 +40152,27 @@ div.ForwardableContainer {
   width: 100%; }
 
 /*Prescriptions_CW*/
-.BadgeNoICD {
+/*.BadgeNoICD {
   background-color: #b1b5b6;
   border: 1px solid #7c7f7f;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   border-radius: 2px;
   color: #f0ffff;
   font-family: globerbold;
   font-size: 12px;
   font-weight: normal;
   padding: 1px 3px;
-  white-space: nowrap; }
+  white-space: nowrap;
+}
 
 .BadgeNoICD:before {
   content: '\e665';
   display: inline-block;
   font-family: Sapphire-Icon-Font;
   font-size: 10px;
-  padding: 0 8px 0 3px; }
-
+  padding: 0 8px 0 3px;
+}*/
 .OutOfStockMsg {
   background-color: #e3e3e3;
   border-radius: 2px;
