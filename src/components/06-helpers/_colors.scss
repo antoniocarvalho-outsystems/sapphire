@@ -138,6 +138,11 @@
 	&BG {
 		background-color: $light-red;
 	}
+
+	&Theme {
+		background-color: $light-red;
+		color: $regular-red;
+	}
 }
 
 .ColorDarkRed {
@@ -171,6 +176,11 @@
 
 	&BG {
 		background-color: $light-green;
+	}
+
+	&Theme {
+		background-color: $light-green;
+		color: $regular-green;
 	}
 }
 

@@ -1,0 +1,31 @@
+.ListRecords {
+	&SmallGap {
+		> * {
+			margin-bottom: $sapphire-sizes--small;
+		}
+	}
+
+	&MediumGap {
+		> * {
+			margin-bottom: $sapphire-sizes--medium;
+		}
+	}
+
+	&LargeGap {
+		> * {
+			margin-bottom: $sapphire-sizes--large;
+		}
+	}
+
+	&SmallGap,
+	&MediumGap,
+	&LargeGap {
+		> * {
+			display: block;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
