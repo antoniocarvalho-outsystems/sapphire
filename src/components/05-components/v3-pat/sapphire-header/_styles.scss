@@ -201,6 +201,7 @@
 	.SapphireHeader-actions,
 	.SapphireHeader-information {
 		border-top: 1px solid $light-grey;
+		margin-top: $sapphire-sizes--small;
 		padding-top: 11.5px;
 	}
 
@@ -212,6 +213,10 @@
 		.AR & {
 			margin-left: -$sapphire-sizes--xsmall;
 			margin-right: 0;
+		}
+
+		&[style*='display: none;'] + .SapphireHeader-actions {
+			flex-basis: 100%;
 		}
 	}
 
