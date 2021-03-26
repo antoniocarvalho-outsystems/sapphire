@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108034 || Generated: Fri Mar 26 2021 13:47:35 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108035 || Generated: Fri Mar 26 2021 14:52:50 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22468,6 +22468,7 @@ a .PersonCard {
   .SapphireHeader-actions,
   .SapphireHeader-information {
     border-top: 1px solid #d6d6d6;
+    margin-top: 8px;
     padding-top: 11.5px; }
   .SapphireHeader-information {
     flex-basis: 50%;
@@ -22477,6 +22478,8 @@ a .PersonCard {
     .AR .SapphireHeader-information {
       margin-left: -4px;
       margin-right: 0; }
+    .SapphireHeader-information[style*='display: none;'] + .SapphireHeader-actions {
+      flex-basis: 100%; }
   .SapphireHeader-actions {
     flex-basis: 50%; }
     .SapphireHeader-actions > div {
