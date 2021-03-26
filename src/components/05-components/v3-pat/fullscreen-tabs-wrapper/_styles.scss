@@ -16,14 +16,14 @@ $tab-height: 44px;
 		position: absolute;
 	}
 
-	.FullScreenTabsWrapper__Actions {
+	/*.FullScreenTabsWrapper__Actions {
 		.tablet &,
 		.desktop.small & {
 			float: right;
 			padding: $sapphire-sizes--small $sapphire-sizes--medium;
 			position: static;
 		}
-	}
+	}*/
 }
 
 .TabWrapper {
