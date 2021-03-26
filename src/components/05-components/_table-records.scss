@@ -83,6 +83,11 @@
 		.TableRecords_Header {
 			height: 20px;
 			padding: 0 10px;
+
+			&:empty {
+				height: 0;
+				padding: 0;
+			}
 		}
 
 		.TableRecords_ContentExpandable {

@@ -1,7 +1,16 @@
 // Used in the Referral Letter Page
 .CustomExpandable {
 	.ExpandableSmaller {
+		display: flex;
+		flex-wrap: wrap;
 		text-align: end;
+
+		&_Title {
+			@include flex-center-vertically();
+
+			flex: 1;
+			text-align: start;
+		}
 
 		&__headerIcon {
 			display: none;
@@ -50,6 +59,10 @@
 		&_area {
 			padding: 10px 1px 1px 1px;
 			text-align: initial;
+		}
+
+		> div + span {
+			flex-basis: 100%;
 		}
 	}
 }
