@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108035 || Generated: Fri Mar 26 2021 14:52:50 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108035 || Generated: Fri Mar 26 2021 14:54:33 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17456,18 +17456,21 @@ div.CircledArrow {
   height: 44px;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  padding: 0; }
+  padding: 0;
+  /*.FullScreenTabsWrapper__Actions {
+		.tablet &,
+		.desktop.small & {
+			float: right;
+			padding: $sapphire-sizes--small $sapphire-sizes--medium;
+			position: static;
+		}
+	}*/ }
   .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Tabs {
     bottom: 0;
     display: -webkit-inline-box;
     display: inline-flex;
     gap: 24px;
     position: absolute; }
-  .tablet .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions,
-  .desktop.small .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Actions {
-    float: right;
-    padding: 8px 16px;
-    position: static; }
 
 .TabWrapper {
   -webkit-box-align: center;
