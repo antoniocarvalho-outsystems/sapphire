@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.108033 || Generated: Fri Mar 26 2021 13:03:29 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.108034 || Generated: Fri Mar 26 2021 13:47:35 GMT+0000 (Western European Standard Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3166,6 +3166,9 @@ div[onclick] {
     .TableRecords.CustomTable .TableRecords_Header {
       height: 20px;
       padding: 0 10px; }
+      .TableRecords.CustomTable .TableRecords_Header:empty {
+        height: 0;
+        padding: 0; }
     .TableRecords.CustomTable .TableRecords_ContentExpandable [ui='data-expandable-table-content'] {
       border: 1px solid #d6d6d6;
       margin-top: -9px;

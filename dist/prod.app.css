@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108033 || Generated: Fri Mar 26 2021 13:03:29 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108034 || Generated: Fri Mar 26 2021 13:47:35 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -8295,7 +8295,18 @@ a.LinkReset:link, a.LinkReset:visited {
   border-bottom-color: #fbc02d; }
 
 .CustomExpandable .ExpandableSmaller {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
   text-align: end; }
+  .CustomExpandable .ExpandableSmaller_Title {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+            flex: 1;
+    text-align: start; }
   .CustomExpandable .ExpandableSmaller__headerIcon {
     display: none; }
   .CustomExpandable .ExpandableSmaller__headerContent div.PrescriptionBadges.Green, .CustomExpandable .ExpandableSmaller__headerContentClose div.PrescriptionBadges.Green {
@@ -8334,6 +8345,8 @@ a.LinkReset:link, a.LinkReset:visited {
   .CustomExpandable .ExpandableSmaller_area {
     padding: 10px 1px 1px 1px;
     text-align: initial; }
+  .CustomExpandable .ExpandableSmaller > div + span {
+    flex-basis: 100%; }
 
 .AR .CustomExpandable .ExpandableSmaller__headerContent div.PrescriptionBadges.Green div:first-child, .AR .CustomExpandable .ExpandableSmaller__headerContentClose div.PrescriptionBadges.Green div:first-child,
 .FA .CustomExpandable .ExpandableSmaller__headerContent div.PrescriptionBadges.Green div:first-child,
@@ -10009,6 +10022,9 @@ div.LineInfo {
     .TableRecords.CustomTable .TableRecords_Header {
       height: 20px;
       padding: 0 10px; }
+      .TableRecords.CustomTable .TableRecords_Header:empty {
+        height: 0;
+        padding: 0; }
     .TableRecords.CustomTable .TableRecords_ContentExpandable [ui='data-expandable-table-content'] {
       border: 1px solid #d6d6d6;
       margin-top: -9px;
