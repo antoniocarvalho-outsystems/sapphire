@@ -6,6 +6,7 @@
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-medium;
+	height: 100%;
 
 	&__Header {
 		@include flex-center-vertically();

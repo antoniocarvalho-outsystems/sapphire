@@ -17,9 +17,15 @@
 			this.$gallery = this.$widget.find('> .GenericGallery-content');
 		}
 
+		let templateColumn = 'repeat(' + this.config.columnSizing + ', minmax(' + this.config.columnMinWidth + ', 1fr))';
+
+		if (this.config.maxItemsRow > 0) {
+			templateColumn = `repeat(${this.config.columnSizing}, minmax(max(${this.config.columnMinWidth}, (100% - (${this.config.maxItemsRow} - 1) * ${this.config.gapColumn}px) / 4), 1fr))`;
+		}
+
 		this.$gallery.css({
 			display: 'grid',
-			gridTemplateColumns: 'repeat(' + this.config.columnSizing + ', minmax(' + this.config.columnMinWidth + ', 1fr))',
+			gridTemplateColumns: templateColumn,
 		});
 
 		this.$galleryItems = this.$gallery.children();
