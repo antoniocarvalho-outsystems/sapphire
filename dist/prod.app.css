@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.108032 || Generated: Thu Mar 25 2021 17:36:28 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.108033 || Generated: Fri Mar 26 2021 13:03:29 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7289,7 +7289,7 @@ a.LinkReset:link, a.LinkReset:visited {
       position: absolute;
       top: 16px; }
   .CardIcon.ColorGreen {
-    background-color: #daebca;
+    background-color: #e7f2dc;
     color: #578329; }
     .CardIcon.ColorGreen .icon:last-of-type {
       color: #7cb342; }
@@ -7425,7 +7425,7 @@ a.LinkReset:link, a.LinkReset:visited {
     background-color: #7cb342;
     color: #fff; }
   .Title_Section.LightGreen {
-    background-color: #daebca;
+    background-color: #e7f2dc;
     color: #fff; }
   .Title_Section.Turquoise {
     background-color: #039be5;
@@ -7534,9 +7534,9 @@ a.LinkReset:link, a.LinkReset:visited {
     padding: 0 16px;
     width: 55px; }
     .AvailabilityCardContainer .AvailabilityCardLeftContainer.AvailabilityCardLeftRed {
-      background-color: #fad5d5; }
+      background-color: #fce3e3; }
     .AvailabilityCardContainer .AvailabilityCardLeftContainer.AvailabilityCardLeftGreen {
-      background-color: #daebca; }
+      background-color: #e7f2dc; }
   .AvailabilityCardContainer .AvailabilityCardRightContainer {
     background-color: #fff;
     border-left: 1px solid #d6d6d6;
@@ -8179,7 +8179,7 @@ a.LinkReset:link, a.LinkReset:visited {
   width: 20px; }
 
 .Counter.Min {
-  background-color: #daebca;
+  background-color: #e7f2dc;
   border-top: 2px solid #578329;
   color: #578329; }
 
@@ -8189,12 +8189,12 @@ a.LinkReset:link, a.LinkReset:visited {
   color: #928d09; }
 
 .Counter.Maj {
-  background-color: #fad5d5;
+  background-color: #fce3e3;
   border-top: 2px solid #b10100;
   color: #b10100; }
 
 .Counter.Vacant {
-  background: #daebca;
+  background: #e7f2dc;
   border-top: 3px solid #578329;
   color: #578329; }
 
@@ -8252,7 +8252,7 @@ a.LinkReset:link, a.LinkReset:visited {
 .Counter.LightGreen,
 .Counter .Tile.LightGreen {
   background-color: #fff;
-  border-bottom-color: #daebca; }
+  border-bottom-color: #e7f2dc; }
 
 .Counter.Orange,
 .Counter .Tile.Orange {
@@ -9200,7 +9200,8 @@ div.LineInfo {
 .SummaryCard {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 8px; }
+  border-radius: 8px;
+  height: 100%; }
   .SummaryCard__Header {
     -webkit-box-align: center;
             align-items: center;
@@ -9794,7 +9795,7 @@ div.LineInfo {
     .DesignSystem .SuperCard_Left.BgDarkRed,
     .LayoutBlank .SuperCard_Left.BgDarkRed,
     .LayoutBase .SuperCard_Left.BgDarkRed {
-      background-color: #fad5d5; }
+      background-color: #fce3e3; }
     .DesignSystem .SuperCard_Left.BgGrey,
     .LayoutBlank .SuperCard_Left.BgGrey,
     .LayoutBase .SuperCard_Left.BgGrey {
@@ -9806,7 +9807,7 @@ div.LineInfo {
     .DesignSystem .SuperCard_Left.BgGreen,
     .LayoutBlank .SuperCard_Left.BgGreen,
     .LayoutBase .SuperCard_Left.BgGreen {
-      background-color: #daebca; }
+      background-color: #e7f2dc; }
     .DesignSystem .SuperCard_Left.BgBlue,
     .LayoutBlank .SuperCard_Left.BgBlue,
     .LayoutBase .SuperCard_Left.BgBlue {
@@ -10940,7 +10941,7 @@ div.NoPrompt > div.template-item-input-block {
       font-size: 1.143em;
       line-height: 1.09; }
     .CounterBox .Counter.Vacant {
-      background-color: #daebca;
+      background-color: #e7f2dc;
       color: #578329; }
     .CounterBox .Counter.Reserved {
       background-color: #e6e2aa;
@@ -10949,13 +10950,13 @@ div.NoPrompt > div.template-item-input-block {
       background-color: #ebebeb;
       color: #777777; }
     .CounterBox .Counter.Min {
-      background-color: #daebca;
+      background-color: #e7f2dc;
       color: #578329; }
     .CounterBox .Counter.Med {
       background-color: #f5f4e0;
       color: #928d09; }
     .CounterBox .Counter.Maj {
-      background-color: #fad5d5;
+      background-color: #fce3e3;
       color: #b10100; }
     .CounterBox .Counter .TextTiny {
       font-size: 0.714em; }
@@ -12852,7 +12853,6 @@ div.ActionsMenu-tooltip {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg); }
   div.ActionsMenu-tooltip .tooltipster-arrow span:after {
-    box-shadow: -1px 1px 0px 0px rgba(13, 29, 34, 0.18);
     content: '';
     display: inline-block;
     height: 10px;
@@ -13027,7 +13027,7 @@ div.ActionsMenu-item {
   .Page .Appointment_Icon.blueCircle {
     border: 2px solid #039be5; }
   .Page .Appointment_Icon.greenCircle {
-    border: 2px solid #daebca; }
+    border: 2px solid #e7f2dc; }
   .Page .Appointment_Icon.nopresence {
     border: none;
     color: #d6d6d6; }
@@ -13191,16 +13191,16 @@ div.ActionsMenu-item {
     .LayoutBlank .StatusBadges.BadgeRed,
     .LayoutBase .StatusBadges.BadgeRed,
     .LayoutPopup .StatusBadges.BadgeRed {
-      border: 1px solid #fad5d5;
-      background-color: #fad5d5;
+      border: 1px solid #fce3e3;
+      background-color: #fce3e3;
       border-radius: 2px;
       color: #ff3e2d; }
     .DesignSystem .StatusBadges.BadgeGreen,
     .LayoutBlank .StatusBadges.BadgeGreen,
     .LayoutBase .StatusBadges.BadgeGreen,
     .LayoutPopup .StatusBadges.BadgeGreen {
-      border: 1px solid #daebca;
-      background-color: #daebca;
+      border: 1px solid #e7f2dc;
+      background-color: #e7f2dc;
       border-radius: 2px;
       color: #7cb342; }
     .DesignSystem .StatusBadges.BadgeGrey,
@@ -13226,7 +13226,7 @@ div.ActionsMenu-item {
       border: 1px solid #ffffff;
       background-color: #ffffff;
       border-radius: 2px;
-      color: #daebca; }
+      color: #e7f2dc; }
     .DesignSystem .StatusBadges.IconTextRed,
     .LayoutBlank .StatusBadges.IconTextRed,
     .LayoutBase .StatusBadges.IconTextRed,
@@ -14002,7 +14002,7 @@ div.ActionsMenu-item {
   .CardBox.FullWidth {
     width: 100%; }
   .CardBox.ColorRed {
-    background-color: #fad5d5;
+    background-color: #fce3e3;
     border: none; }
     .CardBox.ColorRed .CardCount {
       color: #b10100; }
@@ -14012,7 +14012,7 @@ div.ActionsMenu-item {
     .CardBox.ColorBeige .CardCount {
       color: #928d09; }
   .CardBox.ColorGreen {
-    background-color: #daebca;
+    background-color: #e7f2dc;
     border: none; }
     .CardBox.ColorGreen .CardCount {
       color: #578329; }
@@ -14528,12 +14528,12 @@ div.CircledArrow {
     border: none;
     color: #ff3e2d; }
     .ClinicalBadge.ColorLightRedBG:hover {
-      background-color: #f7bebe; }
+      background-color: #facccc; }
   .ClinicalBadge.ColorLightGreenBG {
     border: none;
     color: #7cb342; }
     .ClinicalBadge.ColorLightGreenBG:hover {
-      background-color: #cde4b7; }
+      background-color: #daebc9; }
   .ClinicalBadge-label {
     font-size: 0.857em; }
   .ClinicalBadge .icon {
@@ -17181,7 +17181,7 @@ div.CircledArrow {
   text-align: center; }
 
 .ExpiryCard.Expired {
-  background-color: #fad5d5 !important;
+  background-color: #fce3e3 !important;
   color: #ff3e2d !important; }
 
 .ExpiryCard.NearExpiry {
@@ -17536,7 +17536,7 @@ div.CircledArrow {
     top: 0; }
 
 .FullScreenTabsWrapper_Container.Emergency .TabWrapper.Active {
-  background-color: #fad5d5;
+  background-color: #fce3e3;
   border-top: #ff3e2d;
   color: #ff3e2d; }
   .FullScreenTabsWrapper_Container.Emergency .TabWrapper.Active .TabWrapper_tab a {
@@ -19405,7 +19405,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   padding: 8px 16px;
   width: 100%; }
   .RoomStatus.Free {
-    background-color: #daebca; }
+    background-color: #e7f2dc; }
   .RoomStatus.Full {
     background-color: #ebebeb; }
 
@@ -21072,7 +21072,7 @@ body.PanelById.PanelOpened {
       width: 100%; }
   .PersonCard_header .PersonCard__content.Red,
   .PersonCard_header .PersonCard__actions.Red {
-    background-color: #fad5d5;
+    background-color: #fce3e3;
     color: inherit; }
 
 .PersonCard_expandable {
@@ -21116,7 +21116,7 @@ body.PanelById.PanelOpened {
     background-color: #fff;
     color: #333333; }
     .PersonCard__headerLeftInfo.Red .PersonCardIcon {
-      background-color: #fad5d5; }
+      background-color: #fce3e3; }
     .PersonCard__headerLeftInfo.Red.HasBorder {
       border-left: 2px solid #b10100; }
       .PersonCard__headerLeftInfo.Red.HasBorder .icon {
@@ -21124,7 +21124,7 @@ body.PanelById.PanelOpened {
   .PersonCard__headerLeftInfo.Green {
     color: #333333; }
     .PersonCard__headerLeftInfo.Green .PersonCardIcon {
-      background-color: #daebca; }
+      background-color: #e7f2dc; }
     .PersonCard__headerLeftInfo.Green.HasBorder {
       border-left: 2px solid #578329; }
       .PersonCard__headerLeftInfo.Green.HasBorder .icon {
@@ -21848,7 +21848,7 @@ a .PersonCard {
       background-image: -webkit-gradient(linear, right top, left top, from(#ff3e2d), to(#b10100));
       background-image: linear-gradient(270deg, #ff3e2d 0%, #b10100 100%); }
       .ProgressBarWrap .ProgressBar .Error .Active::after {
-        background: #fad5d5; }
+        background: #fce3e3; }
     .ProgressBarWrap .ProgressBar .Error .ProgressBar_structure.Error .ProgressBar__animation {
       background-color: #ff3e2d; }
   .ProgressBarWrap .ProgressBar.DashedBar div {
@@ -28310,13 +28310,13 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   border-color: #ff3e2d; }
 
 .ColorLightRedText {
-  color: #fad5d5; }
+  color: #fce3e3; }
 
 .ColorLightRedBG {
-  background-color: #fad5d5; }
+  background-color: #fce3e3; }
 
 .ColorLightRedTheme {
-  background-color: #fad5d5;
+  background-color: #fce3e3;
   color: #ff3e2d; }
 
 .ColorDarkRedText {
@@ -28335,13 +28335,13 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   background-color: #7cb342; }
 
 .ColorLightGreenText {
-  color: #daebca; }
+  color: #e7f2dc; }
 
 .ColorLightGreenBG {
-  background-color: #daebca; }
+  background-color: #e7f2dc; }
 
 .ColorLightGreenTheme {
-  background-color: #daebca;
+  background-color: #e7f2dc;
   color: #7cb342; }
 
 .ColorDarkGreenText {
@@ -28915,7 +28915,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   .Page .Text_green_Sapphire {
     color: #00bfa5; }
   .Page .Text_lightGreen {
-    color: #daebca; }
+    color: #e7f2dc; }
   .Page .Text_orange {
     color: #ffa000; }
   .Page .Text_orangeDark {
@@ -29903,10 +29903,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   background-color: #7cb342; }
 
 .LightGreen {
-  background-color: #daebca; }
+  background-color: #e7f2dc; }
 
 .LightRed {
-  background-color: #fad5d5; }
+  background-color: #fce3e3; }
 
 .LightYellow {
   background-color: #ffeab5; }
