@@ -181,7 +181,7 @@
 	};
 
 	const setTabsTheme = () => {
-		$(window.parent.document).ready(function($) {
+		$(top.document).ready(function() {
 			$('.SideMenu', window.parent.document).addClass('SideMenu--tabsTheme');
 
 			const $component = $('.SideMenu', window.parent.document);
