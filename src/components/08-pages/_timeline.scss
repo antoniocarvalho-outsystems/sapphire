@@ -1,0 +1,23 @@
+.TimelinePage {
+	display: flex;
+	gap: $sapphire-sizes--medium;
+	padding-top: $sapphire-sizes--medium;
+
+	&__Left {
+		max-width: 350px;
+	}
+
+	&__Right {
+		flex: 1;
+	}
+
+	&__Filters {
+		@include flex-center-vertically();
+
+		gap: $sapphire-sizes--small;
+
+		.TimeLineSearchHeader {
+			min-width: 420px;
+		}
+	}
+}
