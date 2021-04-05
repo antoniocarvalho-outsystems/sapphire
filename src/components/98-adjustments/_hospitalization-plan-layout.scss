@@ -100,8 +100,16 @@
 }
 
 .ScrollableContent {
+	@include component-scroll-root();
+
 	max-height: 450px;
 	overflow-y: auto;
+	padding-right: $sapphire-sizes--xsmall;
+
+	.AR & {
+		padding-left: $sapphire-sizes--xsmall;
+		padding-right: 0;
+	}
 }
 
 .HospitalizationPlan_Content__Cards___Placeholder *::-webkit-scrollbar {

@@ -28,7 +28,7 @@
 	font-family: 'Arial', sans-serif;
 	font-size: 14px;
 	line-height: 16px;
-	padding: 8px 10px;
+	padding: $sapphire-sizes--small $sapphire-sizes--medium;
 }
 
 /* Use this next selector to style things like font-size and line-height: */
@@ -37,7 +37,7 @@
 	font-size: 14px;
 	line-height: 16px;
 	overflow: hidden;
-	padding: 8px 10px;
+	padding: $sapphire-sizes--small $sapphire-sizes--medium;
 }
 
 /* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
@@ -347,7 +347,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 	font-family: 'Arial', sans-serif;
 	font-size: 1.09rem;
 	line-height: 16px;
-	padding: 8px 10px;
+	padding: $sapphire-sizes--small $sapphire-sizes--medium;
 }
 
 .tooltipster-shadow-red .tooltipster-arrow-top.tooltipster-arrow span {
@@ -399,10 +399,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 }
 
 .tooltipster-shadow-blue .tooltipster-content {
-	font-family: 'Arial', sans-serif;
 	font-size: 14px;
 	line-height: 16px;
-	padding: 8px 10px;
+	padding: $sapphire-sizes--small $sapphire-sizes--medium;
 }
 
 .tooltipster-shadow-blue .tooltipster-arrow-top.tooltipster-arrow span {
