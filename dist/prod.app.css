@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109003 || Generated: Mon Apr 05 2021 14:52:49 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109004 || Generated: Mon Apr 05 2021 15:23:56 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -27554,7 +27554,7 @@ div.TimelineDetail {
   font-size: 14px;
   line-height: 16px;
   overflow: hidden;
-  padding: 8px 10px; }
+  padding: 8px 16px; }
 
 .TooltipContainer {
   display: none; }
@@ -27579,7 +27579,7 @@ div.TimelineDetail {
   font-family: 'Arial', sans-serif;
   font-size: 14px;
   line-height: 16px;
-  padding: 8px 10px; }
+  padding: 8px 16px; }
 
 /* Use this next selector to style things like font-size and line-height: */
 .tooltipster-default .tooltipster-content {
@@ -27587,7 +27587,7 @@ div.TimelineDetail {
   font-size: 14px;
   line-height: 16px;
   overflow: hidden;
-  padding: 8px 10px; }
+  padding: 8px 16px; }
 
 /* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
 .tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {
@@ -27817,7 +27817,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   font-family: 'Arial', sans-serif;
   font-size: 1.09rem;
   line-height: 16px;
-  padding: 8px 10px; }
+  padding: 8px 16px; }
 
 .tooltipster-shadow-red .tooltipster-arrow-top.tooltipster-arrow span {
   border-color: #fff0ef !important;
@@ -27858,10 +27858,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   color: #2c2c2c; }
 
 .tooltipster-shadow-blue .tooltipster-content {
-  font-family: 'Arial', sans-serif;
   font-size: 14px;
   line-height: 16px;
-  padding: 8px 10px; }
+  padding: 8px 16px; }
 
 .tooltipster-shadow-blue .tooltipster-arrow-top.tooltipster-arrow span {
   border-color: #e6f5f5 !important;
@@ -31427,7 +31426,18 @@ span[id*='RelatedVisitsRL'] :not(:first-child) .PersonCard_header {
 
 .ScrollableContent {
   max-height: 450px;
-  overflow-y: auto; }
+  overflow-y: auto;
+  padding-right: 4px; }
+  .ScrollableContent::-webkit-scrollbar {
+    background-color: #fff;
+    height: 7px;
+    width: 7px; }
+  .ScrollableContent::-webkit-scrollbar-thumb {
+    border: 5px solid #d6d6d6;
+    border-radius: 4px; }
+  .AR .ScrollableContent {
+    padding-left: 4px;
+    padding-right: 0; }
 
 .HospitalizationPlan_Content__Cards___Placeholder *::-webkit-scrollbar {
   width: 24px; }
