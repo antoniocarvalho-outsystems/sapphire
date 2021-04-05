@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109002 || Generated: Mon Apr 05 2021 09:33:26 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109003 || Generated: Mon Apr 05 2021 14:52:49 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14589,7 +14589,7 @@ div.CircledArrow {
               justify-content: center;
       color: #fff;
       height: 26px;
-      width: 26px; }
+      min-width: 26px; }
     .ClinicalInformation > div .ClinicalInformationItem-text {
       color: #333333;
       display: -webkit-box;
@@ -22343,7 +22343,7 @@ a .PersonCard {
   .SapphireHeader-body {
     -webkit-box-align: center;
             align-items: center;
-    border-bottom: solid 1px #ebebeb;
+    border-bottom: solid 1px #d6d6d6;
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
@@ -27536,7 +27536,7 @@ div.TimelineDetail {
     font-size: 1em;
     line-height: 1.2;
     overflow: hidden;
-    padding: 8px 10px; }
+    padding: 8px 16px; }
 
 .tooltipstered {
   cursor: default;
