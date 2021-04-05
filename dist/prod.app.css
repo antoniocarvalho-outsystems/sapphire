@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109004 || Generated: Mon Apr 05 2021 15:23:56 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109005 || Generated: Mon Apr 05 2021 17:08:04 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7247,6 +7247,11 @@ a.Button.IsDefault,
     .ListButtons a:link:hover {
       background-color: #f2fffd; }
 
+/*.LinkRed {
+	&:link {
+		color: $regular-red;
+	}
+}*/
 a.LinkReset:link, a.LinkReset:visited {
   color: #333333;
   font-family: "LatoRegular"; }
@@ -30704,6 +30709,53 @@ ul.os-internal-ui-autocomplete {
   display: -webkit-inline-box;
   display: inline-flex;
   gap: 16px; }
+
+.TimelinePage {
+  display: -webkit-box;
+  display: flex;
+  gap: 16px;
+  padding-top: 16px; }
+  .TimelinePage__Left {
+    max-width: 400px;
+    min-width: 300px; }
+  .TimelinePage__Right {
+    -webkit-box-flex: 1;
+            flex: 1; }
+  .TimelinePage__Filters {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    gap: 8px; }
+    .TimelinePage__Filters .TimeLineSearchHeader {
+      min-width: 420px; }
+    .TimelinePage__Filters .FilterByVisitType {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      background-color: #fff;
+      border: 1px solid #d6d6d6;
+      border-radius: 100px;
+      color: #333333;
+      font-family: "LatoRegular";
+      gap: 8px;
+      height: 36px;
+      padding: 0 16px; }
+      .TimelinePage__Filters .FilterByVisitType.Active {
+        background-color: #f2fffd;
+        border-color: #00bfa5; }
+        .TimelinePage__Filters .FilterByVisitType.Active::after {
+          border-bottom: 5px solid #00ac94;
+          border-top: none; }
+      .TimelinePage__Filters .FilterByVisitType::after {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #00ac94;
+        content: ''; }
+      .TimelinePage__Filters .FilterByVisitType:hover {
+        background-color: #f2fffd;
+        border-color: #00bfa5; }
 
 .WhiteContainer.MultiPaddingXSmall,
 .AR .WhiteContainer.MultiPaddingXSmall,
