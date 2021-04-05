@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109001 || Generated: Mon Apr 05 2021 09:13:11 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109002 || Generated: Mon Apr 05 2021 09:33:26 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -31463,6 +31463,7 @@ span[id*='RelatedVisitsRL'] :not(:first-child) .PersonCard_header {
 
 .phone select,
 .tablet select {
+  height: 36px;
   line-height: 18px; }
 
 .isTouch select,
