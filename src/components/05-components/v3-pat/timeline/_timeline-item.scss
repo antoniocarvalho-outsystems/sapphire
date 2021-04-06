@@ -43,9 +43,11 @@
 }
 
 .TimelineItemHeader {
-	margin-bottom: $sapphire-sizes--small;
-	margin-top: $sapphire-sizes--medium;
-	padding: 0 $sapphire-sizes--small;
+	background-color: $body-color;
+	padding: $sapphire-sizes--medium $sapphire-sizes--small $sapphire-sizes--small;
+	position: sticky;
+	top: 132px;
+	width: 100%;
 
 	a:link {
 		@include flex-center-vertically;

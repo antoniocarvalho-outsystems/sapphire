@@ -1,25 +1,85 @@
-.Page .LineTimeLine {
+.LineTimeLine {
 	background-color: $regular-white;
-	border: 1px solid $light-grey;
-	border-bottom: none;
-	border-radius: 2px;
+	border-radius: $border-radius-medium;
+	margin-bottom: $sapphire-sizes--medium;
 
-	&_header {
-		background-color: $body-color;
-		border-bottom: 1px solid $light-grey;
-		color: $dark-grey;
-	}
-
-	&_content {
-		background: $regular-white;
-		height: 100%;
-
-		&:not(.TimeLineHideLogs) > .LineTimeLine__showMore {
-			display: none;
+	&--emptyContent & {
+		&__Header {
+			border-radius: $border-radius-medium;
+			border-top: 1px solid $light-grey;
 		}
 	}
 
-	&__content {
+	&__Header {
+		@include flex-center-vertically;
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-bottom: none;
+		border-radius: $border-radius-medium $border-radius-medium 0 0;
+		gap: $sapphire-sizes--large;
+		min-height: 96px;
+		padding: $sapphire-sizes--medium;
+	}
+
+	&__HeaderContent {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+	}
+
+	&__HeaderTitle {
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-heading4;
+		margin-bottom: $sapphire-sizes--small;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__HeaderDescription {
+		display: flex;
+		gap: $sapphire-sizes--xlarge;
+	}
+
+	&__IconDate {
+		@include flex-center-total;
+
+		background-color: $regular-alpha;
+		border-radius: $border-radius-default;
+		color: $regular-white;
+		flex-direction: column;
+		font-family: $font-family-latin-bold;
+		height: 64px;
+		width: 64px;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__Date {
+		display: flex;
+		gap: $sapphire-sizes--xsmall;
+	}
+
+	&__ContentWrapper {
+		border: 1px solid $light-grey;
+		border-radius: 0 0 $border-radius-medium $border-radius-medium;
+		border-top: none;
+		height: 100%;
+
+		&:not(.TimeLineHideLogs) {
+			> .LineTimeLine__ShowMore {
+				display: none;
+			}
+		}
+	}
+
+	&__Content {
+		border-top: 1px solid $light-grey;
+
 		.ExpandableLink {
 			&__Header {
 				border-bottom: 1px solid $light-grey;
@@ -33,7 +93,6 @@
 			&__Content {
 				@include component-scroll-root();
 
-				border-bottom: 1px solid $light-grey;
 				margin: 0;
 			}
 
@@ -69,13 +128,7 @@
 		}
 	}
 
-	&__row {
-		display: flex;
-		min-height: 80px;
-		position: relative;
-	}
-
-	&__showMore {
+	&__ShowMore {
 		border-bottom: 1px solid $regular-white;
 		color: $regular-beta;
 		font-family: $font-family-latin-bold;
@@ -84,63 +137,22 @@
 		text-align: center;
 	}
 
-	&___date {
-		@include flex-center-total;
-
-		background-color: $regular-alpha;
-		color: $regular-white;
-		flex-direction: column;
-		font-family: $font-family-latin-bold;
-		width: 130px;
-	}
-
-	&___day_month {
-		display: flex;
-		font-size: 1.143em;
-		justify-content: center;
-		width: 100%;
-	}
-
-	&___actions {
+	&__Actions {
 		@include flex-center-vertically;
 
+		justify-content: flex-end;
 		min-width: 80px;
-		padding: 0 15px;
-		text-align: right;
 		white-space: nowrap;
 	}
+}
 
-	&___desktop {
-		@include flex-center-vertically;
-
-		flex: 1;
-	}
-
-	&____day {
-		margin-right: 3px;
-	}
-
-	&____month {
-		//margin-top: 25px;
-	}
-
-	&____desktopIcon {
-		color: $regular-white;
-		font-size: $font-size-heading4;
-	}
-
-	&____desktopLabel {
-		font-family: $font-family-latin-bold;
-		font-size: 1.429em;
-		line-height: 1.429em;
-		max-width: 250px;
-		padding: 0 15px;
-
-		> div {
-			display: flex;
-			flex-wrap: wrap;
-		}
-	}
+.LineTimelineTitle {
+	background-color: $body-color;
+	padding-bottom: $sapphire-sizes--small;
+	padding-top: $sapphire-sizes--medium;
+	position: sticky;
+	top: 132px;
+	z-index: 2;
 }
 
 .LineSubTimeLine {
@@ -213,8 +225,7 @@
 }
 
 .TimelineDescription {
-	font-size: 1em;
-	margin-left: 15px;
+	line-height: 18px;
 
 	&_title {
 		color: $regular-grey;
@@ -223,7 +234,10 @@
 	&_description {
 		color: $dark-grey;
 		font-family: $font-family-latin-bold;
-		margin-top: 3px;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
 	}
 }
 
@@ -236,42 +250,4 @@
 .TimelineShowMore {
 	font-size: 20px;
 	width: 100%;
-}
-
-.AR,
-.FA {
-	.LineTimeLine {
-		&___actions {
-			padding: 5px 0 5px 15px;
-			text-align: left;
-		}
-
-		&___date {
-			border-right: none;
-		}
-
-		&____day {
-			margin-left: 8px;
-			margin-right: 0;
-		}
-
-		&____desktopIcon {
-			right: 55px;
-			width: fit-content;
-		}
-
-		&____desktopLabel {
-			border-right: none;
-			padding: 5px 10px 5px 15px;
-		}
-
-		&____desktopDescription {
-			padding: 0 15px 0 25px;
-		}
-	}
-
-	.TimelineDescription {
-		margin-left: auto;
-		margin-right: 10px;
-	}
 }

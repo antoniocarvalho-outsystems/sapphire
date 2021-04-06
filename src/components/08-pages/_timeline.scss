@@ -1,7 +1,17 @@
 .TimelinePage {
 	display: flex;
 	gap: $sapphire-sizes--large;
-	padding-top: $sapphire-sizes--medium;
+
+	&__Title {
+		background-color: $body-color;
+		box-sizing: content-box;
+		height: 36px;
+		padding: 0 $sapphire-sizes--small;
+		padding-top: $sapphire-sizes--medium;
+		position: sticky;
+		top: 80px;
+		z-index: 1;
+	}
 
 	&__Left {
 		max-width: 400px;
@@ -15,7 +25,12 @@
 	&__Filters {
 		@include flex-center-vertically();
 
+		background-color: $body-color;
 		gap: $sapphire-sizes--small;
+		padding-top: $sapphire-sizes--medium;
+		position: sticky;
+		top: 80px;
+		z-index: 3;
 
 		.TimeLineSearchHeader {
 			min-width: 420px;
@@ -54,6 +69,16 @@
 				background-color: $regular-eta;
 				border-color: $regular-alpha;
 			}
+		}
+	}
+
+	&__Content {
+		overflow: visible;
+
+		.LineTimeLine__Header {
+			position: sticky;
+			top: 174px;
+			z-index: 1;
 		}
 	}
 }
