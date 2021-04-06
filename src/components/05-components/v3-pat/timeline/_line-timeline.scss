@@ -5,8 +5,8 @@
 
 	&--emptyContent & {
 		&__Header {
+			border-bottom: 1px solid $light-grey;
 			border-radius: $border-radius-medium;
-			border-top: 1px solid $light-grey;
 		}
 	}
 
