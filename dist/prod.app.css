@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109009 || Generated: Tue Apr 06 2021 15:22:47 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109010 || Generated: Tue Apr 06 2021 16:17:12 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -27186,12 +27186,13 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   border-right: solid 1px #d6d6d6; }
 
 .LineTimeLine {
-  background-color: #fff;
   border-radius: 8px;
   margin-bottom: 16px; }
   .LineTimeLine--emptyContent .LineTimeLine__Header {
     border-bottom: 1px solid #d6d6d6;
     border-radius: 8px; }
+  .LineTimeLine--emptyContent .LineTimeLine__ContentWrapper {
+    border: none; }
   .LineTimeLine__Header {
     -webkit-box-align: center;
             align-items: center;
@@ -27199,11 +27200,25 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     display: flex;
     background-color: #fff;
     border: 1px solid #d6d6d6;
-    border-bottom: none;
     border-radius: 8px 8px 0 0;
     gap: 24px;
     min-height: 96px;
     padding: 16px; }
+    .LineTimeLine__Header::after, .LineTimeLine__Header::before {
+      background-color: #f3f3f3;
+      content: '';
+      height: 6px;
+      position: absolute;
+      top: -1px;
+      width: 9px; }
+    .LineTimeLine__Header::before {
+      left: -7px;
+      -webkit-transform: rotate(117deg);
+              transform: rotate(117deg); }
+    .LineTimeLine__Header::after {
+      right: -7px;
+      -webkit-transform: rotate(-128deg);
+              transform: rotate(-128deg); }
   .LineTimeLine__HeaderContent {
     display: -webkit-box;
     display: flex;
@@ -27252,7 +27267,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     .LineTimeLine__ContentWrapper:not(.TimeLineHideLogs) > .LineTimeLine__ShowMore {
       display: none; }
   .LineTimeLine__Content {
-    border-top: 1px solid #d6d6d6; }
+    background-color: #fff;
+    border-radius: 0 0 8px 8px; }
     .LineTimeLine__Content .ExpandableLink__Header {
       border-bottom: 1px solid #d6d6d6;
       color: #5c5c5c;
