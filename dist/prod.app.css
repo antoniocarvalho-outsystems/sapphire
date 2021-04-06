@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109007 || Generated: Tue Apr 06 2021 11:59:06 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109008 || Generated: Tue Apr 06 2021 15:16:07 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -8782,214 +8782,6 @@ div.LineInfo {
   .Hint.WarningYellow {
     background-color: #ffeab5;
     border-bottom-color: #ff3e2d; }
-
-.Page .LineTimeLine {
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-bottom: none;
-  border-radius: 2px; }
-  .Page .LineTimeLine_header {
-    background-color: #f3f3f3;
-    border-bottom: 1px solid #d6d6d6;
-    color: #333333; }
-  .Page .LineTimeLine_content {
-    background: #fff;
-    height: 100%; }
-    .Page .LineTimeLine_content:not(.TimeLineHideLogs) > .LineTimeLine__showMore {
-      display: none; }
-  .Page .LineTimeLine__content .ExpandableLink__Header {
-    border-bottom: 1px solid #d6d6d6;
-    color: #5c5c5c;
-    font-family: "LatoBold";
-    height: 55px;
-    line-height: 55px;
-    padding: 0 55px; }
-  .Page .LineTimeLine__content .ExpandableLink__Content {
-    border-bottom: 1px solid #d6d6d6;
-    margin: 0; }
-    .Page .LineTimeLine__content .ExpandableLink__Content::-webkit-scrollbar {
-      background-color: #fff;
-      height: 7px;
-      width: 7px; }
-    .Page .LineTimeLine__content .ExpandableLink__Content::-webkit-scrollbar-thumb {
-      border: 5px solid #d6d6d6;
-      border-radius: 4px; }
-  .Page .LineTimeLine__content .ExpandableLink__Icon {
-    padding: 16px 0; }
-  .Page .LineTimeLine__content .ExpandableLink__Link {
-    font-size: 1.429em;
-    margin-left: 70px; }
-  .Page .LineTimeLine__content .TimelineDetail {
-    padding: 0 22px; }
-    .Page .LineTimeLine__content .TimelineDetail .TimelineDetail_content {
-      padding: 0 16px; }
-    .Page .LineTimeLine__content .TimelineDetail .TimelineDetail_leftContent,
-    .Page .LineTimeLine__content .TimelineDetail .TimelineDetail_rightContent {
-      padding: 10px 0; }
-    .Page .LineTimeLine__content .TimelineDetail .TimelineDetail_rightContent .PrintDocument {
-      min-width: 80px; }
-  .Page .LineTimeLine__content .TimelineLogsList {
-    border-bottom: 1px solid #d6d6d6; }
-  .Page .LineTimeLine__row {
-    display: -webkit-box;
-    display: flex;
-    min-height: 80px;
-    position: relative; }
-  .Page .LineTimeLine__showMore {
-    border-bottom: 1px solid #fff;
-    color: #00ac94;
-    font-family: "LatoBold";
-    font-size: 1em;
-    line-height: 35px;
-    text-align: center; }
-  .Page .LineTimeLine___date {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    background-color: #00bfa5;
-    color: #fff;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    font-family: "LatoBold";
-    width: 130px; }
-  .Page .LineTimeLine___day_month {
-    display: -webkit-box;
-    display: flex;
-    font-size: 1.143em;
-    -webkit-box-pack: center;
-            justify-content: center;
-    width: 100%; }
-  .Page .LineTimeLine___actions {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex;
-    min-width: 80px;
-    padding: 0 15px;
-    text-align: right;
-    white-space: nowrap; }
-  .Page .LineTimeLine___desktop {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-flex: 1;
-            flex: 1; }
-  .Page .LineTimeLine____day {
-    margin-right: 3px; }
-  .Page .LineTimeLine____desktopIcon {
-    color: #fff;
-    font-size: 1.143em; }
-  .Page .LineTimeLine____desktopLabel {
-    font-family: "LatoBold";
-    font-size: 1.429em;
-    line-height: 1.429em;
-    max-width: 250px;
-    padding: 0 15px; }
-    .Page .LineTimeLine____desktopLabel > div {
-      display: -webkit-box;
-      display: flex;
-      flex-wrap: wrap; }
-
-.LineSubTimeLine {
-  min-height: 60px;
-  padding: 0 20px; }
-  .LineSubTimeLine_left {
-    min-width: 140px;
-    width: 200px; }
-  .LineSubTimeLine_right {
-    width: calc(100% - 200px); }
-    .LineSubTimeLine_right.blueText {
-      color: #194968; }
-    .LineSubTimeLine_right.grayText {
-      color: #777777; }
-    .LineSubTimeLine_right.ItalicText {
-      font-size: 1em;
-      font-style: italic; }
-  .LineSubTimeLine__leftContent {
-    color: #333333;
-    font-family: "LatoBold";
-    margin: 10px; }
-  .LineSubTimeLine__rightContent {
-    margin: 10px; }
-  .LineSubTimeLine .TimelineItemLineLeftContent {
-    display: -webkit-inline-box;
-    display: inline-flex;
-    width: 100%; }
-  .LineSubTimeLine .ItemRemoved {
-    color: #777777;
-    text-decoration: line-through; }
-
-.TimelineItemLineLeftContent_icon, .TimelineItemLineLeftContent_title, .TimelineItemLineLeftContent_number {
-  display: inline-block; }
-
-.TimelineItemLineLeftContent___icoLineContent {
-  margin-left: 5px; }
-
-.TimelineItemLineLeftContent__iconBgColor {
-  background-color: #ff3e2d;
-  border-radius: 10%;
-  color: #fff;
-  height: 30px;
-  line-height: 20px;
-  margin-left: 10px;
-  width: 30px; }
-
-.TimelineDescription {
-  font-size: 1em;
-  margin-left: 15px; }
-  .TimelineDescription_title {
-    color: #777777; }
-  .TimelineDescription_description {
-    color: #333333;
-    font-family: "LatoBold";
-    margin-top: 3px; }
-
-.TimeLineHideLogs .LineSubTimeLineHidden {
-  display: none; }
-
-.TimelineShowMore {
-  font-size: 20px;
-  width: 100%; }
-
-.AR .LineTimeLine___actions,
-.FA .LineTimeLine___actions {
-  padding: 5px 0 5px 15px;
-  text-align: left; }
-
-.AR .LineTimeLine___date,
-.FA .LineTimeLine___date {
-  border-right: none; }
-
-.AR .LineTimeLine____day,
-.FA .LineTimeLine____day {
-  margin-left: 8px;
-  margin-right: 0; }
-
-.AR .LineTimeLine____desktopIcon,
-.FA .LineTimeLine____desktopIcon {
-  right: 55px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content; }
-
-.AR .LineTimeLine____desktopLabel,
-.FA .LineTimeLine____desktopLabel {
-  border-right: none;
-  padding: 5px 10px 5px 15px; }
-
-.AR .LineTimeLine____desktopDescription,
-.FA .LineTimeLine____desktopDescription {
-  padding: 0 15px 0 25px; }
-
-.AR .TimelineDescription,
-.FA .TimelineDescription {
-  margin-left: auto;
-  margin-right: 10px; }
 
 .LR_SOPD {
   background-color: white;
@@ -27393,6 +27185,193 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   border-left: none;
   border-right: solid 1px #d6d6d6; }
 
+.LineTimeLine {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 16px; }
+  .LineTimeLine--emptyContent .LineTimeLine__Header {
+    border-radius: 8px;
+    border-top: 1px solid #d6d6d6; }
+  .LineTimeLine__Header {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    gap: 24px;
+    min-height: 96px;
+    padding: 16px; }
+  .LineTimeLine__HeaderContent {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
+  .LineTimeLine__HeaderTitle {
+    font-family: "LatoBold";
+    font-size: 1.143em;
+    margin-bottom: 8px; }
+    .AR .LineTimeLine__HeaderTitle {
+      font-family: "TajawalBold"; }
+  .LineTimeLine__HeaderDescription {
+    display: -webkit-box;
+    display: flex;
+    gap: 32px; }
+  .LineTimeLine__IconDate {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #00bfa5;
+    border-radius: 4px;
+    color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    font-family: "LatoBold";
+    height: 64px;
+    width: 64px; }
+    .AR .LineTimeLine__IconDate {
+      font-family: "TajawalBold"; }
+  .LineTimeLine__Date {
+    display: -webkit-box;
+    display: flex;
+    gap: 4px; }
+  .LineTimeLine__ContentWrapper {
+    border: 1px solid #d6d6d6;
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+    height: 100%; }
+    .LineTimeLine__ContentWrapper:not(.TimeLineHideLogs) > .LineTimeLine__ShowMore {
+      display: none; }
+  .LineTimeLine__Content {
+    border-top: 1px solid #d6d6d6; }
+    .LineTimeLine__Content .ExpandableLink__Header {
+      border-bottom: 1px solid #d6d6d6;
+      color: #5c5c5c;
+      font-family: "LatoBold";
+      height: 55px;
+      line-height: 55px;
+      padding: 0 55px; }
+    .LineTimeLine__Content .ExpandableLink__Content {
+      margin: 0; }
+      .LineTimeLine__Content .ExpandableLink__Content::-webkit-scrollbar {
+        background-color: #fff;
+        height: 7px;
+        width: 7px; }
+      .LineTimeLine__Content .ExpandableLink__Content::-webkit-scrollbar-thumb {
+        border: 5px solid #d6d6d6;
+        border-radius: 4px; }
+    .LineTimeLine__Content .ExpandableLink__Icon {
+      padding: 16px 0; }
+    .LineTimeLine__Content .ExpandableLink__Link {
+      font-size: 1.429em;
+      margin-left: 70px; }
+    .LineTimeLine__Content .TimelineDetail {
+      padding: 0 22px; }
+      .LineTimeLine__Content .TimelineDetail .TimelineDetail_content {
+        padding: 0 16px; }
+      .LineTimeLine__Content .TimelineDetail .TimelineDetail_leftContent,
+      .LineTimeLine__Content .TimelineDetail .TimelineDetail_rightContent {
+        padding: 10px 0; }
+      .LineTimeLine__Content .TimelineDetail .TimelineDetail_rightContent .PrintDocument {
+        min-width: 80px; }
+    .LineTimeLine__Content .TimelineLogsList {
+      border-bottom: 1px solid #d6d6d6; }
+  .LineTimeLine__ShowMore {
+    border-bottom: 1px solid #fff;
+    color: #00ac94;
+    font-family: "LatoBold";
+    font-size: 1em;
+    line-height: 35px;
+    text-align: center; }
+  .LineTimeLine__Actions {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+    min-width: 80px;
+    white-space: nowrap; }
+
+.LineTimelineTitle {
+  background-color: #f3f3f3;
+  padding-bottom: 8px;
+  padding-top: 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 132px;
+  z-index: 2; }
+
+.LineSubTimeLine {
+  min-height: 60px;
+  padding: 0 20px; }
+  .LineSubTimeLine_left {
+    min-width: 140px;
+    width: 200px; }
+  .LineSubTimeLine_right {
+    width: calc(100% - 200px); }
+    .LineSubTimeLine_right.blueText {
+      color: #194968; }
+    .LineSubTimeLine_right.grayText {
+      color: #777777; }
+    .LineSubTimeLine_right.ItalicText {
+      font-size: 1em;
+      font-style: italic; }
+  .LineSubTimeLine__leftContent {
+    color: #333333;
+    font-family: "LatoBold";
+    margin: 10px; }
+  .LineSubTimeLine__rightContent {
+    margin: 10px; }
+  .LineSubTimeLine .TimelineItemLineLeftContent {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    width: 100%; }
+  .LineSubTimeLine .ItemRemoved {
+    color: #777777;
+    text-decoration: line-through; }
+
+.TimelineItemLineLeftContent_icon, .TimelineItemLineLeftContent_title, .TimelineItemLineLeftContent_number {
+  display: inline-block; }
+
+.TimelineItemLineLeftContent___icoLineContent {
+  margin-left: 5px; }
+
+.TimelineItemLineLeftContent__iconBgColor {
+  background-color: #ff3e2d;
+  border-radius: 10%;
+  color: #fff;
+  height: 30px;
+  line-height: 20px;
+  margin-left: 10px;
+  width: 30px; }
+
+.TimelineDescription {
+  line-height: 18px; }
+  .TimelineDescription_title {
+    color: #777777; }
+  .TimelineDescription_description {
+    color: #333333;
+    font-family: "LatoBold"; }
+    .AR .TimelineDescription_description {
+      font-family: "TajawalBold"; }
+
+.TimeLineHideLogs .LineSubTimeLineHidden {
+  display: none; }
+
+.TimelineShowMore {
+  font-size: 20px;
+  width: 100%; }
+
 div.TimelineDetail {
   background-color: transparent;
   display: table;
@@ -27482,9 +27461,12 @@ div.TimelineDetail {
   margin-bottom: 16px; }
 
 .TimelineItemHeader {
-  margin-bottom: 8px;
-  margin-top: 16px;
-  padding: 0 8px; }
+  background-color: #f3f3f3;
+  padding: 16px 8px 8px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 132px;
+  width: 100%; }
   .TimelineItemHeader a:link {
     -webkit-box-align: center;
             align-items: center;
@@ -30698,8 +30680,17 @@ ul.os-internal-ui-autocomplete {
 .TimelinePage {
   display: -webkit-box;
   display: flex;
-  gap: 24px;
-  padding-top: 16px; }
+  gap: 24px; }
+  .TimelinePage__Title {
+    background-color: #f3f3f3;
+    box-sizing: content-box;
+    height: 36px;
+    padding: 0 8px;
+    padding-top: 16px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    z-index: 1; }
   .TimelinePage__Left {
     max-width: 400px;
     min-width: 300px; }
@@ -30711,7 +30702,13 @@ ul.os-internal-ui-autocomplete {
             align-items: center;
     display: -webkit-box;
     display: flex;
-    gap: 8px; }
+    background-color: #f3f3f3;
+    gap: 8px;
+    padding-top: 16px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    z-index: 3; }
     .TimelinePage__Filters .TimeLineSearchHeader {
       min-width: 420px; }
     .TimelinePage__Filters .FilterByVisitType {
@@ -30741,6 +30738,13 @@ ul.os-internal-ui-autocomplete {
       .TimelinePage__Filters .FilterByVisitType:hover {
         background-color: #f2fffd;
         border-color: #00bfa5; }
+  .TimelinePage__Content {
+    overflow: visible; }
+    .TimelinePage__Content .LineTimeLine__Header {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 174px;
+      z-index: 1; }
 
 .WhiteContainer.MultiPaddingXSmall,
 .AR .WhiteContainer.MultiPaddingXSmall,
@@ -31582,48 +31586,6 @@ body .Page.tablet .MainPopup,
 body .Page.desktop .MainPopup {
   min-width: auto;
   padding: 0; }
-
-.desktop .LineTimeLine___mobileDescription {
-  display: none; }
-
-.phone .LineTimeLine____desktopDescription,
-.tablet .LineTimeLine____desktopDescription {
-  display: none; }
-
-.phone .LineTimeLine___mobileDescription,
-.tablet .LineTimeLine___mobileDescription {
-  display: table-cell;
-  padding-left: 10px; }
-
-.phone .LineSubTimeLine .LineSubTimeLine_left,
-.phone .LineSubTimeLine .LineSubTimeLine_right,
-.tablet .LineSubTimeLine .LineSubTimeLine_left,
-.tablet .LineSubTimeLine .LineSubTimeLine_right,
-.desktop.small .LineSubTimeLine .LineSubTimeLine_left,
-.desktop.small .LineSubTimeLine .LineSubTimeLine_right {
-  display: block;
-  width: 100%; }
-
-.tablet .LineTimeLine .TimelineDescription,
-.desktop.small .LineTimeLine .TimelineDescription {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex; }
-  .tablet .LineTimeLine .TimelineDescription_title:empty,
-  .desktop.small .LineTimeLine .TimelineDescription_title:empty {
-    margin-left: -5px; }
-  .tablet .LineTimeLine .TimelineDescription_description,
-  .desktop.small .LineTimeLine .TimelineDescription_description {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 0; }
-
-.AR.phone .LineTimeLine___mobileDescription, .AR.tablet .LineTimeLine___mobileDescription,
-.FA.phone .LineTimeLine___mobileDescription,
-.FA.tablet .LineTimeLine___mobileDescription {
-  padding-left: auto;
-  padding-right: 10px; }
 
 .desktop.small .LineWarns__message {
   width: 66%; }
