@@ -1,5 +1,4 @@
 .LineTimeLine {
-	background-color: $regular-white;
 	border-radius: $border-radius-medium;
 	margin-bottom: $sapphire-sizes--medium;
 
@@ -8,6 +7,10 @@
 			border-bottom: 1px solid $light-grey;
 			border-radius: $border-radius-medium;
 		}
+
+		&__ContentWrapper {
+			border: none;
+		}
 	}
 
 	&__Header {
@@ -15,11 +18,30 @@
 
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
-		border-bottom: none;
 		border-radius: $border-radius-medium $border-radius-medium 0 0;
 		gap: $sapphire-sizes--large;
 		min-height: 96px;
 		padding: $sapphire-sizes--medium;
+
+		&::after,
+		&::before {
+			background-color: $body-color;
+			content: '';
+			height: 6px;
+			position: absolute;
+			top: -1px;
+			width: 9px;
+		}
+
+		&::before {
+			left: -7px;
+			transform: rotate(117deg);
+		}
+
+		&::after {
+			right: -7px;
+			transform: rotate(-128deg);
+		}
 	}
 
 	&__HeaderContent {
@@ -78,7 +100,8 @@
 	}
 
 	&__Content {
-		border-top: 1px solid $light-grey;
+		background-color: $regular-white;
+		border-radius: 0 0 $border-radius-medium $border-radius-medium;
 
 		.ExpandableLink {
 			&__Header {
