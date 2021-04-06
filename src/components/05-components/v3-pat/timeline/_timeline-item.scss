@@ -48,7 +48,10 @@
 	padding: 0 $sapphire-sizes--small;
 
 	a:link {
+		@include flex-center-vertically;
+
 		color: $text-color-regular;
+		gap: $sapphire-sizes--xsmall;
 	}
 }
 
