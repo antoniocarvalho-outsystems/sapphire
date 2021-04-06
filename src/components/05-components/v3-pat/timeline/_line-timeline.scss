@@ -105,40 +105,42 @@
 
 		.ExpandableLink {
 			&__Header {
-				border-bottom: 1px solid $light-grey;
-				color: $mid-dark-grey;
-				font-family: $font-family-latin-bold;
-				height: 55px;
-				line-height: 55px;
-				padding: 0 55px;
+				@include flex-center-vertically;
+
+				padding: $sapphire-sizes--medium;
 			}
 
 			&__Content {
-				@include component-scroll-root();
-
 				margin: 0;
-			}
+				padding: $sapphire-sizes--medium;
+				padding-top: 0;
 
-			&__Icon {
-				padding: $sapphire-sizes--medium 0;
+				.ListRecords .TimelineDetail {
+					margin-bottom: $sapphire-sizes--medium;
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
 			}
 
 			&__Link {
-				font-size: 1.429em;
-				margin-left: 70px;
+				font-family: $font-family-latin-bold;
+
+				.AR & {
+					font-family: $font-family-arabic-bold;
+				}
 			}
 		}
 
 		.TimelineDetail {
-			padding: 0 22px;
+			padding: 0;
 
 			.TimelineDetail_content {
-				padding: 0 $sapphire-sizes--medium;
-			}
-
-			.TimelineDetail_leftContent,
-			.TimelineDetail_rightContent {
-				padding: 10px 0;
+				background-color: $body-color;
+				border-radius: $border-radius-default;
+				padding: $sapphire-sizes--small;
+				width: 100%;
 			}
 
 			.TimelineDetail_rightContent .PrintDocument {
