@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109010 || Generated: Tue Apr 06 2021 16:17:12 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109011 || Generated: Tue Apr 06 2021 17:16:55 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -27270,33 +27270,30 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     background-color: #fff;
     border-radius: 0 0 8px 8px; }
     .LineTimeLine__Content .ExpandableLink__Header {
-      border-bottom: 1px solid #d6d6d6;
-      color: #5c5c5c;
-      font-family: "LatoBold";
-      height: 55px;
-      line-height: 55px;
-      padding: 0 55px; }
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      padding: 16px; }
     .LineTimeLine__Content .ExpandableLink__Content {
-      margin: 0; }
-      .LineTimeLine__Content .ExpandableLink__Content::-webkit-scrollbar {
-        background-color: #fff;
-        height: 7px;
-        width: 7px; }
-      .LineTimeLine__Content .ExpandableLink__Content::-webkit-scrollbar-thumb {
-        border: 5px solid #d6d6d6;
-        border-radius: 4px; }
-    .LineTimeLine__Content .ExpandableLink__Icon {
-      padding: 16px 0; }
+      margin: 0;
+      padding: 16px;
+      padding-top: 0; }
+      .LineTimeLine__Content .ExpandableLink__Content .ListRecords .TimelineDetail {
+        margin-bottom: 16px; }
+        .LineTimeLine__Content .ExpandableLink__Content .ListRecords .TimelineDetail:last-of-type {
+          margin-bottom: 0; }
     .LineTimeLine__Content .ExpandableLink__Link {
-      font-size: 1.429em;
-      margin-left: 70px; }
+      font-family: "LatoBold"; }
+      .AR .LineTimeLine__Content .ExpandableLink__Link {
+        font-family: "TajawalBold"; }
     .LineTimeLine__Content .TimelineDetail {
-      padding: 0 22px; }
+      padding: 0; }
       .LineTimeLine__Content .TimelineDetail .TimelineDetail_content {
-        padding: 0 16px; }
-      .LineTimeLine__Content .TimelineDetail .TimelineDetail_leftContent,
-      .LineTimeLine__Content .TimelineDetail .TimelineDetail_rightContent {
-        padding: 10px 0; }
+        background-color: #f3f3f3;
+        border-radius: 4px;
+        padding: 8px;
+        width: 100%; }
       .LineTimeLine__Content .TimelineDetail .TimelineDetail_rightContent .PrintDocument {
         min-width: 80px; }
     .LineTimeLine__Content .TimelineLogsList {
@@ -27389,39 +27386,31 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   width: 100%; }
 
 div.TimelineDetail {
-  background-color: transparent;
-  display: table;
-  min-height: 40px;
-  padding: 10px 0;
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  gap: 16px;
   width: 100%; }
   div.TimelineDetail_content {
-    color: #333333;
-    font-size: 1.143em;
-    font-weight: 700;
-    line-height: 40px;
-    min-height: 40px;
-    padding-left: 20px; }
+    font-family: "LatoBold"; }
+    .AR div.TimelineDetail_content {
+      font-family: "TajawalBold"; }
   div.TimelineDetail_leftContent {
-    color: #333333;
-    display: table-cell;
-    font-weight: 700;
-    min-width: 90px;
-    text-align: center;
-    width: 1%; }
+    min-width: 80px;
+    text-align: center; }
     div.TimelineDetail_leftContent .icon {
-      font-size: 1.429em; }
+      color: #777777; }
   div.TimelineDetail_rightContent {
-    display: table-cell;
-    margin-top: 0; }
-    div.TimelineDetail_rightContent > div:nth-child(1) > span.lightText-tx {
-      border: 1px solid #333333;
-      border-radius: 1px;
-      font-size: 0.7em;
-      padding: 1px 3px;
-      text-transform: uppercase; }
+    -webkit-box-flex: 1;
+            flex: 1; }
+    div.TimelineDetail_rightContent .ItemLogDetails {
+      display: -webkit-box;
+      display: flex;
+      gap: 4px; }
   div.TimelineDetail__time {
-    font-size: 1em;
-    margin-bottom: 10px; }
+    color: #777777;
+    font-size: 0.786em; }
   div.TimelineDetail__label {
     text-align: center; }
 
