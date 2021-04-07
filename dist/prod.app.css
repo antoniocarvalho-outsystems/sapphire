@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109011 || Generated: Tue Apr 06 2021 17:16:55 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109012 || Generated: Wed Apr 07 2021 11:30:14 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9460,7 +9460,7 @@ div.LineInfo {
           font-size: 0.857em; }
         .LayoutBlank .SectionExpandable_header .Heading2.SectionExpandable__icon span:hover,
         .LayoutBase .SectionExpandable_header .Heading2.SectionExpandable__icon span:hover {
-          background-color: #f2fffd; }
+          background-color: rgba(0, 172, 148, 0.1); }
 
 .SortTableLink--ascending a:link.LinkSelected::after {
   content: '\e914'; }
@@ -14733,7 +14733,7 @@ div.CircledArrow {
       .LayoutPopup .CompLine__pointerIcon span:hover,
       .LayoutBlank .CompLine__pointerIcon span:hover,
       .LayoutBase .CompLine__pointerIcon span:hover {
-        background-color: #f2fffd; }
+        background-color: rgba(0, 191, 165, 0.1); }
   .DesignSystem .CompLine_icon,
   .LayoutPopup .CompLine_icon,
   .LayoutBlank .CompLine_icon,
@@ -16061,7 +16061,7 @@ div.CircledArrow {
         font-family: "Sapphire-Icon-Font";
         font-size: 0.786em; }
       .DragDropExpandable .DragDrop-droppable-header [ui='data-expandable-icon'] span:hover {
-        background-color: #f2fffd; }
+        background-color: rgba(0, 191, 165, 0.1); }
   .DragDropExpandable .DragDrop-droppable-items {
     padding: 16px; }
 
@@ -16601,7 +16601,7 @@ div.CircledArrow {
     font-family: "Sapphire-Icon-Font";
     font-size: 0.7em; }
   .ExpandableLink__Icon .icon:hover {
-    background-color: #f2fffd; }
+    background-color: rgba(0, 172, 148, 0.1); }
 
 .ExpandableLink__Link {
   color: #00ac94;
@@ -17689,7 +17689,7 @@ div.Toolbar {
       font-family: "Sapphire-Icon-Font";
       font-size: 0.857em; }
     div.Toolbar__leftBtn:hover {
-      background-color: #f2fffd; }
+      background-color: rgba(0, 172, 148, 0.1); }
   div.Toolbar__rightBtn {
     -webkit-box-align: center;
             align-items: center;
@@ -17719,7 +17719,7 @@ div.Toolbar {
       font-family: "Sapphire-Icon-Font";
       font-size: 0.857em; }
     div.Toolbar__rightBtn:hover {
-      background-color: #f2fffd; }
+      background-color: rgba(0, 172, 148, 0.1); }
   div.Toolbar__leftBtn.Disabled, div.Toolbar__rightBtn.Disabled {
     border: 1px solid #d6d6d6;
     pointer-events: none; }
@@ -18772,7 +18772,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       font-family: "Sapphire-Icon-Font";
       font-size: 0.857em; }
     .LineDetailsExpandBox div.ExpandableHeader___expandableIcon span:hover {
-      background-color: #f2fffd; }
+      background-color: rgba(0, 191, 165, 0.1); }
 
 .LineDetailsExpandBox div.ExpandableLink {
   border: 1px solid #d6d6d6; }
@@ -21522,7 +21522,7 @@ a .PersonCard {
       font-family: "Sapphire-Icon-Font";
       font-size: 0.8em; }
     .SectionPrescriptionExpandableArea .SectionExpandable__icon .PrescriptionExpandable_header__IconDiv .icon:hover {
-      background-color: #f2fffd; }
+      background-color: rgba(255, 62, 45, 0.1); }
 
 .AR .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header,
 .FA .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
@@ -23805,7 +23805,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       font-family: "Sapphire-Icon-Font";
       font-size: 0.7em; }
     .SectionExpandableCustom .SectionExpandable___icon .icon:hover {
-      background-color: #f2fffd; }
+      background-color: rgba(0, 172, 148, 0.1); }
 
 .SectionExpandableCustom .SectionExpandable_headerCustom {
   background-color: #fff;
@@ -24544,7 +24544,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       .LayoutBlank .ShiftExpandable_header .ShiftExpandable__arrow span.icon:hover,
       .LayoutPOpup .ShiftExpandable_header .ShiftExpandable__arrow span.icon:hover,
       .DesignSystem .ShiftExpandable_header .ShiftExpandable__arrow span.icon:hover {
-        background-color: #f2fffd; }
+        background-color: rgba(0, 172, 148, 0.1); }
 
 .LayoutBase .ShiftExpandable_container,
 .LayoutBlank .ShiftExpandable_container,
@@ -27188,11 +27188,56 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 .LineTimeLine {
   border-radius: 8px;
   margin-bottom: 16px; }
+  .LineTimeLine--disabledExpandable .LineTimeLine__Expandable {
+    border-color: #d6d6d6;
+    pointer-events: none; }
+    .LineTimeLine--disabledExpandable .LineTimeLine__Expandable::before {
+      color: #d6d6d6; }
+  .LineTimeLine--disabledExpandable .LineTimeLine__Header {
+    border-bottom: 1px solid #d6d6d6;
+    border-radius: 8px 8px 0 0; }
+  .LineTimeLine--disabledExpandable .LineTimeLine__ContentWrapper {
+    display: block; }
+  .LineTimeLine--expanded .LineTimeLine__Expandable {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .LineTimeLine--expanded .LineTimeLine__Header {
+    border-radius: 8px 8px 0 0; }
+  .LineTimeLine--expanded .LineTimeLine__ContentWrapper {
+    display: block; }
   .LineTimeLine--emptyContent .LineTimeLine__Header {
     border-bottom: 1px solid #d6d6d6;
     border-radius: 8px; }
   .LineTimeLine--emptyContent .LineTimeLine__ContentWrapper {
     border: none; }
+  .LineTimeLine__Expandable {
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: transparent;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: -webkit-box;
+    display: flex;
+    height: 20px;
+    -webkit-box-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 20px;
+    z-index: 1;
+    margin-right: -8px; }
+    .LineTimeLine__Expandable:before {
+      color: #333333;
+      content: '\e611';
+      font-family: "Sapphire-Icon-Font";
+      font-size: 0.7em; }
+    .LineTimeLine__Expandable:hover {
+      background-color: rgba(51, 51, 51, 0.1); }
+    .AR .LineTimeLine__Expandable {
+      margin-left: -8px;
+      margin-right: 0; }
   .LineTimeLine__Header {
     -webkit-box-align: center;
             align-items: center;
@@ -27200,7 +27245,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     display: flex;
     background-color: #fff;
     border: 1px solid #d6d6d6;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
     gap: 24px;
     min-height: 96px;
     padding: 16px; }
@@ -27263,30 +27308,22 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     border: 1px solid #d6d6d6;
     border-radius: 0 0 8px 8px;
     border-top: none;
+    display: none;
     height: 100%; }
     .LineTimeLine__ContentWrapper:not(.TimeLineHideLogs) > .LineTimeLine__ShowMore {
       display: none; }
   .LineTimeLine__Content {
     background-color: #fff;
-    border-radius: 0 0 8px 8px; }
-    .LineTimeLine__Content .ExpandableLink__Header {
-      -webkit-box-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: flex;
-      padding: 16px; }
-    .LineTimeLine__Content .ExpandableLink__Content {
-      margin: 0;
-      padding: 16px;
-      padding-top: 0; }
-      .LineTimeLine__Content .ExpandableLink__Content .ListRecords .TimelineDetail {
-        margin-bottom: 16px; }
-        .LineTimeLine__Content .ExpandableLink__Content .ListRecords .TimelineDetail:last-of-type {
-          margin-bottom: 0; }
-    .LineTimeLine__Content .ExpandableLink__Link {
-      font-family: "LatoBold"; }
-      .AR .LineTimeLine__Content .ExpandableLink__Link {
-        font-family: "TajawalBold"; }
+    border-radius: 0 0 8px 8px;
+    padding: 16px;
+    padding-left: 52px; }
+    .AR .LineTimeLine__Content {
+      padding-left: 16px;
+      padding-right: 52px; }
+    .LineTimeLine__Content .ListRecords .TimelineDetail {
+      margin-bottom: 16px; }
+      .LineTimeLine__Content .ListRecords .TimelineDetail:last-of-type {
+        margin-bottom: 0; }
     .LineTimeLine__Content .TimelineDetail {
       padding: 0; }
       .LineTimeLine__Content .TimelineDetail .TimelineDetail_content {
@@ -27386,18 +27423,16 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   width: 100%; }
 
 div.TimelineDetail {
-  -webkit-box-align: center;
-          align-items: center;
   display: -webkit-box;
   display: flex;
-  gap: 16px;
+  gap: 24px;
   width: 100%; }
   div.TimelineDetail_content {
     font-family: "LatoBold"; }
     .AR div.TimelineDetail_content {
       font-family: "TajawalBold"; }
   div.TimelineDetail_leftContent {
-    min-width: 80px;
+    min-width: 64px;
     text-align: center; }
     div.TimelineDetail_leftContent .icon {
       color: #777777; }
@@ -27405,12 +27440,11 @@ div.TimelineDetail {
     -webkit-box-flex: 1;
             flex: 1; }
     div.TimelineDetail_rightContent .ItemLogDetails {
-      display: -webkit-box;
-      display: flex;
-      gap: 4px; }
+      margin-bottom: 4px; }
   div.TimelineDetail__time {
     color: #777777;
-    font-size: 0.786em; }
+    font-size: 0.786em;
+    margin-top: 4px; }
   div.TimelineDetail__label {
     text-align: center; }
 
