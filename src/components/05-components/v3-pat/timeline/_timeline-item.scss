@@ -5,10 +5,26 @@
 	gap: $sapphire-sizes--medium;
 	min-height: 56px;
 	padding: 0 $sapphire-sizes--small;
-	//position: relative;
 
 	&:hover {
 		background-color: $regular-eta;
+	}
+
+	&--active {
+		background-color: $regular-alpha;
+
+		&:hover {
+			background-color: $regular-alpha;
+		}
+
+		.TimelineItem__Icon {
+			color: $regular-beta;
+		}
+
+		.TimelineItem__Date,
+		.TimelineItem__Description {
+			color: $regular-white;
+		}
 	}
 
 	&__Icon {
@@ -45,8 +61,6 @@
 .TimelineItemHeader {
 	background-color: $body-color;
 	padding: $sapphire-sizes--medium $sapphire-sizes--small $sapphire-sizes--small;
-	position: sticky;
-	top: 132px;
 	width: 100%;
 
 	a:link {

@@ -13,6 +13,38 @@
 		z-index: 1;
 	}
 
+	&__Navigation {
+		position: sticky;
+		top: 132px;
+
+		.ListRecords {
+			@include component-scroll-root(4px, false, 4px);
+
+			height: calc(100vh - 132px);
+			overflow-y: scroll;
+			padding-right: $sapphire-sizes--small;
+
+			.AR & {
+				padding-left: $sapphire-sizes--small;
+				padding-right: 0;
+			}
+
+			&::-webkit-scrollbar {
+				background-color: transparent;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				border-color: transparent;
+			}
+
+			&:hover {
+				&::-webkit-scrollbar-thumb {
+					border-color: $light-grey;
+				}
+			}
+		}
+	}
+
 	&__Left {
 		max-width: 400px;
 		min-width: 300px;
@@ -80,5 +112,11 @@
 			top: 174px;
 			z-index: 1;
 		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.TimelinePage__Left {
+		display: none;
 	}
 }

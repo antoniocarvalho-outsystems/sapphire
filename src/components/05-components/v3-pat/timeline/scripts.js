@@ -19,5 +19,32 @@ SapphireWidgets.LineTimelineComponent = function(widgetId) {
 
 			return false;
 		});
+
+		$(window).on('scroll', function() {
+			clearTimeout(window.scrollFinished);
+			window.scrollFinished = setTimeout(function() {
+				let id = 0;
+
+				$('.TimelineAnchor').each(function(index) {
+					if ($(window).scrollTop() + 190 >= $(this).offset().top) {
+						id = $(this).attr('id');
+
+						if (index == $('.TimelineAnchor').length - 1) {
+							const $navItem = $(`[data-item=event-${id}] .TimelineItem`);
+
+							$('.TimelineItem.TimelineItem--active').removeClass('TimelineItem--active');
+							$navItem.addClass('TimelineItem--active');
+						}
+					} else {
+						const $navItem = $(`[data-item=event-${id}] .TimelineItem`);
+
+						$('.TimelineItem.TimelineItem--active').removeClass('TimelineItem--active');
+						$navItem.addClass('TimelineItem--active');
+
+						return false;
+					}
+				});
+			}, 150);
+		});
 	});
 };
