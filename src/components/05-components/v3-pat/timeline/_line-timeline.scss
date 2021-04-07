@@ -178,10 +178,6 @@
 				min-width: 80px;
 			}
 		}
-
-		.TimelineLogsList {
-			border-bottom: 1px solid $light-grey;
-		}
 	}
 
 	&__ShowMore {
@@ -289,11 +285,6 @@
 
 	&_description {
 		color: $dark-grey;
-		font-family: $font-family-latin-bold;
-
-		.AR & {
-			font-family: $font-family-arabic-bold;
-		}
 	}
 }
 
