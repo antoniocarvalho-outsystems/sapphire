@@ -2,6 +2,40 @@
 	border-radius: $border-radius-medium;
 	margin-bottom: $sapphire-sizes--medium;
 
+	&--disabledExpandable & {
+		&__Expandable {
+			border-color: $light-grey;
+			pointer-events: none;
+
+			&::before {
+				color: $light-grey;
+			}
+		}
+
+		&__Header {
+			border-bottom: 1px solid $light-grey;
+			border-radius: $border-radius-medium $border-radius-medium 0 0;
+		}
+
+		&__ContentWrapper {
+			display: block;
+		}
+	}
+
+	&--expanded & {
+		&__Expandable {
+			transform: rotate(180deg);
+		}
+
+		&__Header {
+			border-radius: $border-radius-medium $border-radius-medium 0 0;
+		}
+
+		&__ContentWrapper {
+			display: block;
+		}
+	}
+
 	&--emptyContent & {
 		&__Header {
 			border-bottom: 1px solid $light-grey;
@@ -13,12 +47,23 @@
 		}
 	}
 
+	&__Expandable {
+		@include arrow-button($dark-grey, 20px, 0.7em, 90deg);
+
+		margin-right: -$sapphire-sizes--small;
+
+		.AR & {
+			margin-left: -$sapphire-sizes--small;
+			margin-right: 0;
+		}
+	}
+
 	&__Header {
 		@include flex-center-vertically;
 
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
-		border-radius: $border-radius-medium $border-radius-medium 0 0;
+		border-radius: $border-radius-medium;
 		gap: $sapphire-sizes--large;
 		min-height: 96px;
 		padding: $sapphire-sizes--medium;
@@ -90,6 +135,7 @@
 		border: 1px solid $light-grey;
 		border-radius: 0 0 $border-radius-medium $border-radius-medium;
 		border-top: none;
+		display: none;
 		height: 100%;
 
 		&:not(.TimeLineHideLogs) {
@@ -102,34 +148,19 @@
 	&__Content {
 		background-color: $regular-white;
 		border-radius: 0 0 $border-radius-medium $border-radius-medium;
+		padding: $sapphire-sizes--medium;
+		padding-left: 52px;
 
-		.ExpandableLink {
-			&__Header {
-				@include flex-center-vertically;
+		.AR & {
+			padding-left: $sapphire-sizes--medium;
+			padding-right: 52px;
+		}
 
-				padding: $sapphire-sizes--medium;
-			}
+		.ListRecords .TimelineDetail {
+			margin-bottom: $sapphire-sizes--medium;
 
-			&__Content {
-				margin: 0;
-				padding: $sapphire-sizes--medium;
-				padding-top: 0;
-
-				.ListRecords .TimelineDetail {
-					margin-bottom: $sapphire-sizes--medium;
-
-					&:last-of-type {
-						margin-bottom: 0;
-					}
-				}
-			}
-
-			&__Link {
-				font-family: $font-family-latin-bold;
-
-				.AR & {
-					font-family: $font-family-arabic-bold;
-				}
+			&:last-of-type {
+				margin-bottom: 0;
 			}
 		}
 

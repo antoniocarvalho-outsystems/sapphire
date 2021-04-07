@@ -1,7 +1,6 @@
 div.TimelineDetail {
-	@include flex-center-vertically;
-
-	gap: $sapphire-sizes--medium;
+	display: flex;
+	gap: $sapphire-sizes--large;
 	width: 100%;
 
 	&_content {
@@ -13,7 +12,7 @@ div.TimelineDetail {
 	}
 
 	&_leftContent {
-		min-width: 80px;
+		min-width: 64px;
 		text-align: center;
 
 		.icon {
@@ -25,14 +24,14 @@ div.TimelineDetail {
 		flex: 1;
 
 		.ItemLogDetails {
-			display: flex;
-			gap: $sapphire-sizes--xsmall;
+			margin-bottom: $sapphire-sizes--xsmall;
 		}
 	}
 
 	&__time {
 		color: $regular-grey;
 		font-size: $font-size-tiny;
+		margin-top: $sapphire-sizes--xsmall;
 	}
 
 	&__label {

@@ -8,3 +8,16 @@ SapphireWidgets.TimelineCounterItems = function(titleItemID, label) {
 		$title.append($(`<div class='ColorGreyText TextLarge TextRegular'> (${$items.length} ${label})</div>`));
 	});
 };
+
+SapphireWidgets.LineTimelineComponent = function(widgetId) {
+	$(document).ready(function() {
+		const $component = $(`#${widgetId}`);
+		const $expandableLink = $component.find('.LineTimeLine__Expandable');
+
+		$expandableLink.click(() => {
+			$component.toggleClass('LineTimeLine--expanded');
+
+			return false;
+		});
+	});
+};
