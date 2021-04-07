@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109012 || Generated: Wed Apr 07 2021 11:30:14 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109013 || Generated: Wed Apr 07 2021 14:11:33 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -27333,8 +27333,6 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
         width: 100%; }
       .LineTimeLine__Content .TimelineDetail .TimelineDetail_rightContent .PrintDocument {
         min-width: 80px; }
-    .LineTimeLine__Content .TimelineLogsList {
-      border-bottom: 1px solid #d6d6d6; }
   .LineTimeLine__ShowMore {
     border-bottom: 1px solid #fff;
     color: #00ac94;
@@ -27410,10 +27408,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   .TimelineDescription_title {
     color: #777777; }
   .TimelineDescription_description {
-    color: #333333;
-    font-family: "LatoBold"; }
-    .AR .TimelineDescription_description {
-      font-family: "TajawalBold"; }
+    color: #333333; }
 
 .TimeLineHideLogs .LineSubTimeLineHidden {
   display: none; }
