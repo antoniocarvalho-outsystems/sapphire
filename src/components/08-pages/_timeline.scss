@@ -22,6 +22,7 @@
 
 			height: calc(100vh - 132px);
 			overflow-y: scroll;
+			overscroll-behavior: contain;
 			padding-right: $sapphire-sizes--small;
 
 			.AR & {

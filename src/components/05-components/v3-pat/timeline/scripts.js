@@ -13,16 +13,24 @@ SapphireWidgets.ScrollToEvent = function(elementId) {
 	SapphireWidgets.LayoutBase.scrollToElement($(`#${elementId}:first`, window.top.document), 52);
 };
 
-SapphireWidgets.LineTimelineComponent = function(widgetId) {
+SapphireWidgets.LineTimelineComponent = function(widgetId, hasContent, isExpandable) {
 	$(document).ready(function() {
 		const $component = $(`#${widgetId}`);
-		const $expandableLink = $component.find('.LineTimeLine__Expandable');
 
-		$expandableLink.click(() => {
-			$component.toggleClass('LineTimeLine--expanded');
+		if (hasContent && isExpandable) {
+			const $expandableLink = $component.find('.LineTimeLine__Header');
+			const $actions = $component.find('.LineTimeLine__Actions');
 
-			return false;
-		});
+			$expandableLink.click(() => {
+				$component.toggleClass('LineTimeLine--expanded');
+
+				return false;
+			});
+
+			$actions.click(function(e) {
+				e.stopPropagation();
+			});
+		}
 
 		$(window).on('scroll', function() {
 			clearTimeout(window.scrollFinished);
@@ -48,7 +56,7 @@ SapphireWidgets.LineTimelineComponent = function(widgetId) {
 						return false;
 					}
 				});
-			}, 150);
+			}, 100);
 		});
 	});
 };
