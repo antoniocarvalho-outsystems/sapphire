@@ -9,6 +9,10 @@ SapphireWidgets.TimelineCounterItems = function(titleItemID, label) {
 	});
 };
 
+SapphireWidgets.ScrollToEvent = function(elementId) {
+	SapphireWidgets.LayoutBase.scrollToElement($(`#${elementId}:first`, window.top.document), 52);
+};
+
 SapphireWidgets.LineTimelineComponent = function(widgetId) {
 	$(document).ready(function() {
 		const $component = $(`#${widgetId}`);

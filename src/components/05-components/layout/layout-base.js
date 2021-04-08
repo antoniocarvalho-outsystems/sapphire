@@ -13,7 +13,7 @@
 		window[SapphireWidgets.LayoutBase.widgetId].closeSidebarIframe(duration);
 	};
 
-	var scrollToElement = function($element) {
+	var scrollToElement = function($element, offset = 0) {
 		var $targetElement = $element;
 
 		if (!!$targetElement.length) {
@@ -32,7 +32,7 @@
 					const primaryHeight = isFixed ? 0 : $('.LayoutBase-primary-menu').height();
 					const secondaryHeight = $('.LayoutBase-secondary').height();
 					const emergencyHeight = isEmergency ? $('.LayoutBase-emergency').height() : 0;
-					const offsetTop = headerHeight + primaryHeight + secondaryHeight + emergencyHeight;
+					const offsetTop = headerHeight + primaryHeight + secondaryHeight + emergencyHeight + offset;
 
 					if (isEmergency & !isFixed) {
 						targetElementOffsetTop -= offsetTop + 60;

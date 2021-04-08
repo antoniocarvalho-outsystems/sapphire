@@ -6,6 +6,12 @@
 	min-height: 56px;
 	padding: 0 $sapphire-sizes--small;
 
+	&::after {
+		color: transparent;
+		content: '\e69d';
+		font-family: $font-family-icons;
+	}
+
 	&:hover {
 		background-color: $regular-eta;
 	}
@@ -15,8 +21,6 @@
 
 		&::after {
 			color: $regular-white;
-			content: '\e69d';
-			font-family: $font-family-icons;
 		}
 
 		&:hover {
