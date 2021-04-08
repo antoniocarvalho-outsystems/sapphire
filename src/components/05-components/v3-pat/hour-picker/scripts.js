@@ -89,6 +89,7 @@
 			let label = this.convertTimeFormatToMask(this.options.timeFormat);
 
 			if (value && !!value.trim()) {
+				// This condition is correct, model always uses the 24h format
 				model = this.options.is24hFormat ? value : this.convertTime12to24(value);
 				label = value;
 			}
