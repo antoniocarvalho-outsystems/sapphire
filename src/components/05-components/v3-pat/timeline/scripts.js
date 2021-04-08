@@ -5,7 +5,7 @@ SapphireWidgets.TimelineCounterItems = function(titleItemID, label) {
 		const $title = $section.find('.TimelineItemHeader a');
 		const $items = $section.find('.TimelineItem');
 
-		$title.append($(`<div class='ColorGreyText TextLarge TextRegular'> (${$items.length} ${label})</div>`));
+		$title.append($(`<div class='ColorGreyText TextLarge TextRegular'> (${$items.length})</div>`));
 	});
 };
 

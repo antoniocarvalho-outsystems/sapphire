@@ -13,6 +13,12 @@
 	&--active {
 		background-color: $regular-alpha;
 
+		&::after {
+			color: $regular-white;
+			content: '\e69d';
+			font-family: $font-family-icons;
+		}
+
 		&:hover {
 			background-color: $regular-alpha;
 		}
@@ -38,6 +44,7 @@
 	}
 
 	&__Content {
+		flex: 1;
 		font-family: $font-family-latin-regular;
 
 		.AR & {
