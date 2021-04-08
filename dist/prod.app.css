@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109015 || Generated: Thu Apr 08 2021 09:45:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109016 || Generated: Thu Apr 08 2021 11:15:11 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -27468,14 +27468,16 @@ div.TimelineDetail {
   gap: 16px;
   min-height: 56px;
   padding: 0 8px; }
+  .TimelineItem::after {
+    color: transparent;
+    content: '\e69d';
+    font-family: "Sapphire-Icon-Font"; }
   .TimelineItem:hover {
     background-color: #f2fffd; }
   .TimelineItem--active {
     background-color: #00bfa5; }
     .TimelineItem--active::after {
-      color: #fff;
-      content: '\e69d';
-      font-family: "Sapphire-Icon-Font"; }
+      color: #fff; }
     .TimelineItem--active:hover {
       background-color: #00bfa5; }
     .TimelineItem--active .TimelineItem__Icon {
