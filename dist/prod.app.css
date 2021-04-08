@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109014 || Generated: Wed Apr 07 2021 17:16:00 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109015 || Generated: Thu Apr 08 2021 09:45:15 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -27472,6 +27472,10 @@ div.TimelineDetail {
     background-color: #f2fffd; }
   .TimelineItem--active {
     background-color: #00bfa5; }
+    .TimelineItem--active::after {
+      color: #fff;
+      content: '\e69d';
+      font-family: "Sapphire-Icon-Font"; }
     .TimelineItem--active:hover {
       background-color: #00bfa5; }
     .TimelineItem--active .TimelineItem__Icon {
@@ -27492,6 +27496,8 @@ div.TimelineDetail {
     height: 40px;
     width: 40px; }
   .TimelineItem__Content {
+    -webkit-box-flex: 1;
+            flex: 1;
     font-family: "LatoRegular"; }
     .AR .TimelineItem__Content {
       font-family: "TajawalRegular"; }
