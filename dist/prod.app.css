@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109016 || Generated: Thu Apr 08 2021 11:15:11 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109017 || Generated: Thu Apr 08 2021 13:51:33 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -27195,7 +27195,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
       color: #d6d6d6; }
   .LineTimeLine--disabledExpandable .LineTimeLine__Header {
     border-bottom: 1px solid #d6d6d6;
-    border-radius: 8px 8px 0 0; }
+    border-radius: 8px 8px 0 0;
+    cursor: default; }
   .LineTimeLine--disabledExpandable .LineTimeLine__ContentWrapper {
     display: block; }
   .LineTimeLine--expanded .LineTimeLine__Expandable {
@@ -27207,7 +27208,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     display: block; }
   .LineTimeLine--emptyContent .LineTimeLine__Header {
     border-bottom: 1px solid #d6d6d6;
-    border-radius: 8px; }
+    border-radius: 8px;
+    cursor: default; }
   .LineTimeLine--emptyContent .LineTimeLine__ContentWrapper {
     border: none; }
   .LineTimeLine__Expandable {
@@ -27246,6 +27248,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     background-color: #fff;
     border: 1px solid #d6d6d6;
     border-radius: 8px;
+    cursor: pointer;
     gap: 24px;
     min-height: 96px;
     padding: 16px; }
@@ -30746,6 +30749,8 @@ ul.os-internal-ui-autocomplete {
     .TimelinePage__Navigation .ListRecords {
       height: calc(100vh - 132px);
       overflow-y: scroll;
+      -ms-scroll-chaining: none;
+          overscroll-behavior: contain;
       padding-right: 8px; }
       .TimelinePage__Navigation .ListRecords::-webkit-scrollbar {
         background-color: #fff;
