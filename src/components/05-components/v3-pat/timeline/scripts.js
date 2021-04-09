@@ -31,49 +31,56 @@ SapphireWidgets.LineTimelineComponent = function(widgetId, hasContent, isExpanda
 				e.stopPropagation();
 			});
 		}
-
-		$(window).on('scroll', function() {
-			clearTimeout(window.scrollFinished);
-			window.scrollFinished = setTimeout(function() {
-				let id = 0;
-
-				$('.TimelineAnchor').each(function(index) {
-					if ($(window).scrollTop() + 190 >= $(this).offset().top) {
-						id = $(this).attr('id');
-
-						if (index == $('.TimelineAnchor').length - 1) {
-							const $navItem = $(`[data-item=event-${id}] .TimelineItem`);
-
-							$('.TimelineItem.TimelineItem--active').removeClass('TimelineItem--active');
-							$navItem.addClass('TimelineItem--active');
-						}
-					} else {
-						const $navItem = $(`[data-item=event-${id}] .TimelineItem`);
-
-						$('.TimelineItem.TimelineItem--active').removeClass('TimelineItem--active');
-						$navItem.addClass('TimelineItem--active');
-
-						if ($navItem.length) scrollToView($navItem, $(`[data-item=event-${id}] .ListRecords`));
-
-						return false;
-					}
-				});
-			}, 100);
-		});
 	});
 };
 
-/*function scrollToView(element, list) {
-	let offset = element.offset().top + 174;
+SapphireWidgets.TimelinePageEvents = function() {
+	$(document).ready(function() {
+		$(window)
+			.off('scroll.Timeline')
+			.on('scroll.Timeline', function() {
+				if (window.scrollY === 0) {
+					const $item = $('.TimelineAnchor').first();
 
-	const visible_area_start = $(window).scrollTop();
-	var visible_area_end = visible_area_start + window.innerHeight;
+					selectItem($item.attr('id'));
+					clearTimeout(window.scrollFinished);
+				} else {
+					clearTimeout(window.scrollFinished);
+					window.scrollFinished = setTimeout(function() {
+						let id = 0;
 
-	if (offset < visible_area_start || offset > visible_area_end) {
-		list.animate({ scrollTop: offset - window.innerHeight / 3 }, 1000);
+						$('.TimelineAnchor').each(function(index) {
+							if ($(window).scrollTop() + 190 >= $(this).offset().top) {
+								id = $(this).attr('id');
 
-		return false;
-	}
+								if (index == $('.TimelineAnchor').length - 1) selectItem(id);
+							} else {
+								selectItem(id, true);
+
+								return false;
+							}
+						});
+					}, 100);
+				}
+			});
+	});
+};
+
+function selectItem(id, scrollTo) {
+	const $navItem = $(`[data-item=event-${id}] .TimelineItem`);
+
+	$('.TimelineItem.TimelineItem--active').removeClass('TimelineItem--active');
+	$navItem.addClass('TimelineItem--active');
+
+	if (scrollTo && $navItem.length) scrollToView($navItem);
+}
+
+function scrollToView(element) {
+	const $parentDiv = $('.TimelinePage__Navigation .ListRecords');
+
+	$parentDiv.scrollTop(
+		$parentDiv.scrollTop() + element.position().top - $parentDiv.height() / 2 + element.height() / 2
+	);
 
 	return true;
-}*/
+}

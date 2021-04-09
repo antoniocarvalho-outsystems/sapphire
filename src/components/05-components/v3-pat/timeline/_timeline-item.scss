@@ -72,6 +72,8 @@
 .TimelineItemHeader {
 	background-color: $body-color;
 	padding: $sapphire-sizes--medium $sapphire-sizes--small $sapphire-sizes--small;
+	position: sticky;
+	top: 0;
 	width: 100%;
 
 	a:link {

@@ -8,41 +8,47 @@
 		height: 36px;
 		padding: 0 $sapphire-sizes--small;
 		padding-top: $sapphire-sizes--medium;
+		position: sticky;
+		top: 80px;
+		z-index: 1;
 	}
 
 	&__Navigation {
+		position: sticky;
+		top: 132px;
+
+		.ListRecords {
+			@include component-scroll-root(4px, false, 4px);
+
+			height: calc(100vh - 132px);
+			overflow-y: scroll;
+			overscroll-behavior: contain;
+			padding-right: $sapphire-sizes--small;
+
+			.AR & {
+				padding-left: $sapphire-sizes--small;
+				padding-right: 0;
+			}
+
+			&::-webkit-scrollbar {
+				background-color: transparent;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				border-color: transparent;
+			}
+
+			&:hover {
+				&::-webkit-scrollbar-thumb {
+					border-color: $light-grey;
+				}
+			}
+		}
 	}
 
 	&__Left {
-		@include component-scroll-root(4px, false, 4px);
-
-		height: calc(100vh - 80px);
 		max-width: 400px;
 		min-width: 300px;
-		overflow-y: scroll;
-		overscroll-behavior: contain;
-		padding-right: $sapphire-sizes--small;
-		position: sticky;
-		top: 80px;
-
-		.AR & {
-			padding-left: $sapphire-sizes--small;
-			padding-right: 0;
-		}
-
-		&::-webkit-scrollbar {
-			background-color: transparent;
-		}
-
-		&::-webkit-scrollbar-thumb {
-			border-color: transparent;
-		}
-
-		&:hover {
-			&::-webkit-scrollbar-thumb {
-				border-color: $light-grey;
-			}
-		}
 	}
 
 	&__Right {
