@@ -83,6 +83,13 @@
 		$(window).load(function() {
 			$('body').click();
 			$(window).scroll();
+
+			const contentHeight = $('.LayoutBase-Content').height();
+			const windowHeight = $(window).height() + 124;
+
+			if (contentHeight < windowHeight) {
+				$('.LayoutBase-Wrapper').css('marginBottom', '200px');
+			}
 		});
 	};
 

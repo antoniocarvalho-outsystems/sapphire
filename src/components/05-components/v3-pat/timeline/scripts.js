@@ -53,6 +53,8 @@ SapphireWidgets.LineTimelineComponent = function(widgetId, hasContent, isExpanda
 						$('.TimelineItem.TimelineItem--active').removeClass('TimelineItem--active');
 						$navItem.addClass('TimelineItem--active');
 
+						if ($navItem.length) scrollToView($navItem, $(`[data-item=event-${id}] .ListRecords`));
+
 						return false;
 					}
 				});
@@ -60,3 +62,18 @@ SapphireWidgets.LineTimelineComponent = function(widgetId, hasContent, isExpanda
 		});
 	});
 };
+
+/*function scrollToView(element, list) {
+	let offset = element.offset().top + 174;
+
+	const visible_area_start = $(window).scrollTop();
+	var visible_area_end = visible_area_start + window.innerHeight;
+
+	if (offset < visible_area_start || offset > visible_area_end) {
+		list.animate({ scrollTop: offset - window.innerHeight / 3 }, 1000);
+
+		return false;
+	}
+
+	return true;
+}*/
