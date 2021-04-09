@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109018 || Generated: Thu Apr 08 2021 17:03:05 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109019 || Generated: Fri Apr 09 2021 11:34:59 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10917,22 +10917,21 @@ div.NoPrompt > div.template-item-input-block {
   padding: 32px 24px;
   padding-bottom: 24px; }
 
-.LayoutBase-Wrapper {
-  margin-bottom: 200px; }
-  .LayoutBase-Wrapper.hasFixedBottom .LayoutBase-bottomfixedcontent {
-    background-color: #fff;
-    bottom: 0;
-    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
-    left: 0;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: fixed;
-    z-index: 1; }
-  .LayoutBase-Wrapper .LayoutBase-Content .PatientDetails__MainWorkArea,
-  .LayoutBase-Wrapper .LayoutBase-Content .PatientDetails_content,
-  .LayoutBase-Wrapper .LayoutBase-Content .ClinicianWorkArea_wrapper {
-    margin: 0;
-    padding: 0; }
+.LayoutBase-Wrapper.hasFixedBottom .LayoutBase-bottomfixedcontent {
+  background-color: #fff;
+  bottom: 0;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+  left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: fixed;
+  z-index: 1; }
+
+.LayoutBase-Wrapper .LayoutBase-Content .PatientDetails__MainWorkArea,
+.LayoutBase-Wrapper .LayoutBase-Content .PatientDetails_content,
+.LayoutBase-Wrapper .LayoutBase-Content .ClinicianWorkArea_wrapper {
+  margin: 0;
+  padding: 0; }
 
 .LayoutBase-MainMenu, .LayoutBase-MainMenu.PatientDetails_Header {
   height: 44px;
@@ -30737,40 +30736,34 @@ ul.os-internal-ui-autocomplete {
     box-sizing: content-box;
     height: 36px;
     padding: 0 8px;
-    padding-top: 16px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 80px;
-    z-index: 1; }
-  .TimelinePage__Navigation {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 132px; }
-    .TimelinePage__Navigation .ListRecords {
-      height: calc(100vh - 132px);
-      overflow-y: scroll;
-      -ms-scroll-chaining: none;
-          overscroll-behavior: contain;
-      padding-right: 8px; }
-      .TimelinePage__Navigation .ListRecords::-webkit-scrollbar {
-        background-color: #fff;
-        height: 4px;
-        width: 4px; }
-      .TimelinePage__Navigation .ListRecords::-webkit-scrollbar-thumb {
-        border: 5px solid #d6d6d6;
-        border-radius: 4px; }
-      .AR .TimelinePage__Navigation .ListRecords {
-        padding-left: 8px;
-        padding-right: 0; }
-      .TimelinePage__Navigation .ListRecords::-webkit-scrollbar {
-        background-color: transparent; }
-      .TimelinePage__Navigation .ListRecords::-webkit-scrollbar-thumb {
-        border-color: transparent; }
-      .TimelinePage__Navigation .ListRecords:hover::-webkit-scrollbar-thumb {
-        border-color: #d6d6d6; }
+    padding-top: 16px; }
   .TimelinePage__Left {
+    height: calc(100vh - 80px);
     max-width: 400px;
-    min-width: 300px; }
+    min-width: 300px;
+    overflow-y: scroll;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: contain;
+    padding-right: 8px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px; }
+    .TimelinePage__Left::-webkit-scrollbar {
+      background-color: #fff;
+      height: 4px;
+      width: 4px; }
+    .TimelinePage__Left::-webkit-scrollbar-thumb {
+      border: 5px solid #d6d6d6;
+      border-radius: 4px; }
+    .AR .TimelinePage__Left {
+      padding-left: 8px;
+      padding-right: 0; }
+    .TimelinePage__Left::-webkit-scrollbar {
+      background-color: transparent; }
+    .TimelinePage__Left::-webkit-scrollbar-thumb {
+      border-color: transparent; }
+    .TimelinePage__Left:hover::-webkit-scrollbar-thumb {
+      border-color: #d6d6d6; }
   .TimelinePage__Right {
     -webkit-box-flex: 1;
             flex: 1; }
