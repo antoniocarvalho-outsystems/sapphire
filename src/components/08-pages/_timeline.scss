@@ -49,10 +49,15 @@
 	&__Left {
 		max-width: 400px;
 		min-width: 300px;
+		position: relative;
 	}
 
 	&__Right {
 		flex: 1;
+
+		.TimelinePage__LoadingMore {
+			position: unset;
+		}
 	}
 
 	&__Filters {
@@ -112,6 +117,22 @@
 			position: sticky;
 			top: 174px;
 			z-index: 1;
+		}
+	}
+
+	&__LoadingMore {
+		align-items: center;
+		background-color: $body-color;
+		display: none;
+		gap: $sapphire-sizes--small;
+		position: fixed;
+		top: calc(100vh - 32px);
+		width: 350px;
+		z-index: 1;
+
+		.lds-ring {
+			position: unset;
+			transform: unset;
 		}
 	}
 }

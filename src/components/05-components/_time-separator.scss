@@ -2,7 +2,7 @@
 	font-family: $font-family-latin-bold;
 	font-size: 1.429em;
 	overflow: hidden;
-	padding: 15px 0 10px 15px;
+	padding: $sapphire-sizes--medium 0;
 
 	&:after {
 		border-top: 1px solid $light-grey;

@@ -34,16 +34,19 @@ SapphireWidgets.LineTimelineComponent = function(widgetId, hasContent, isExpanda
 	});
 };
 
-SapphireWidgets.TimelinePageEvents = function() {
+SapphireWidgets.TimelinePageEvents = function(showMoreTimelineLink) {
 	$(document).ready(function() {
 		$(window)
 			.off('scroll.Timeline')
 			.on('scroll.Timeline', function() {
 				if (window.scrollY === 0) {
 					const $item = $('.TimelineAnchor').first();
+					const $list = $('.TimelinePage__Navigation .ListRecords');
 
 					selectItem($item.attr('id'));
 					clearTimeout(window.scrollFinished);
+
+					$list.scrollTop(0);
 				} else {
 					clearTimeout(window.scrollFinished);
 					window.scrollFinished = setTimeout(function() {
@@ -60,10 +63,26 @@ SapphireWidgets.TimelinePageEvents = function() {
 								return false;
 							}
 						});
+
+						if ($(document).height() - $(this).height() - 150 < $(this).scrollTop()) {
+							$(`#${showMoreTimelineLink}`).click();
+							$('.TimelinePage__LoadingMore').css('display', 'flex');
+						}
 					}, 100);
 				}
 			});
+
+		infiniteScrollList(showMoreTimelineLink);
 	});
+};
+
+SapphireWidgets.TimelineRestoreEvents = function(showMoreTimelineLink) {
+	$('.TimelinePage__Navigation .ListRecords').scrollTop(window.scrollListPosition);
+
+	$('.TimelinePage__LoadingMore').css('display', 'none');
+
+	window.alreadyClicked = false;
+	infiniteScrollList(showMoreTimelineLink);
 };
 
 function selectItem(id, scrollTo) {
@@ -83,4 +102,24 @@ function scrollToView(element) {
 	);
 
 	return true;
+}
+
+function infiniteScrollList(showMoreNavLink, name) {
+	const $list = $('.TimelinePage__Navigation .ListRecords');
+
+	$list.off('mousewheel.TimelineNav').on('mousewheel.TimelineNav', function() {
+		if ($list.height() + $list.scrollTop() + 100 > $list.prop('scrollHeight') && !window.alreadyClicked) {
+			clearTimeout(window.scrollListFinished);
+			window.scrollListFinished = setTimeout(function() {
+				$(`#${showMoreNavLink}`).click();
+
+				$('.TimelinePage__LoadingMore').css('display', 'flex');
+
+				console.log('Navigation');
+
+				window.scrollListPosition = $list.scrollTop();
+				window.alreadyClicked = true;
+			}, 100);
+		}
+	});
 }
