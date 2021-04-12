@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109020 || Generated: Fri Apr 09 2021 15:42:06 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109021 || Generated: Mon Apr 12 2021 14:34:31 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10429,7 +10429,7 @@ div.NoPrompt > div.template-item-input-block {
   font-family: "LatoBold";
   font-size: 1.429em;
   overflow: hidden;
-  padding: 15px 0 10px 15px; }
+  padding: 16px 0; }
   .TimeSeparator:after {
     border-top: 1px solid #d6d6d6;
     content: '';
@@ -30772,10 +30772,13 @@ ul.os-internal-ui-autocomplete {
         border-color: #d6d6d6; }
   .TimelinePage__Left {
     max-width: 400px;
-    min-width: 300px; }
+    min-width: 300px;
+    position: relative; }
   .TimelinePage__Right {
     -webkit-box-flex: 1;
             flex: 1; }
+    .TimelinePage__Right .TimelinePage__LoadingMore {
+      position: unset; }
   .TimelinePage__Filters {
     -webkit-box-align: center;
             align-items: center;
@@ -30824,6 +30827,20 @@ ul.os-internal-ui-autocomplete {
       position: sticky;
       top: 174px;
       z-index: 1; }
+  .TimelinePage__LoadingMore {
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: #f3f3f3;
+    display: none;
+    gap: 8px;
+    position: fixed;
+    top: calc(100vh - 32px);
+    width: 350px;
+    z-index: 1; }
+    .TimelinePage__LoadingMore .lds-ring {
+      position: unset;
+      -webkit-transform: unset;
+              transform: unset; }
 
 @media (max-width: 1200px) {
   .TimelinePage__Left {
