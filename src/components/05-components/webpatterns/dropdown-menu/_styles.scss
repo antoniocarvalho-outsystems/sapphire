@@ -47,13 +47,28 @@
 
 		.MultipleSelectionButton-label {
 			border: none;
-
+			border-radius: 0;
 			padding-left: 46px;
+
+			&:hover {
+				border: none;
+				border-radius: 0;
+			}
+
+			.AR & {
+				padding-left: 10px;
+				padding-right: 46px;
+			}
 		}
 
 		.ButtonCheckboxInput_CheckBox {
 			left: 12px;
 			top: 6px;
+
+			.AR & {
+				left: 6px;
+				right: 12px;
+			}
 		}
 	}
 
