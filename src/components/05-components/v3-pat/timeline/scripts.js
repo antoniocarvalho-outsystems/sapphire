@@ -115,8 +115,6 @@ function infiniteScrollList(showMoreNavLink, name) {
 
 				$('.TimelinePage__LoadingMore').css('display', 'flex');
 
-				console.log('Navigation');
-
 				window.scrollListPosition = $list.scrollTop();
 				window.alreadyClicked = true;
 			}, 100);
