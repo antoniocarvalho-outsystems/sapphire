@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109024 || Generated: Mon Apr 12 2021 15:59:10 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109025 || Generated: Mon Apr 12 2021 16:16:15 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12305,10 +12305,20 @@ html body {
     margin: 0; }
     .DropdownMenu div.ButtonCheckboxInp .MultipleSelectionButton-label {
       border: none;
+      border-radius: 0;
       padding-left: 46px; }
+      .DropdownMenu div.ButtonCheckboxInp .MultipleSelectionButton-label:hover {
+        border: none;
+        border-radius: 0; }
+      .AR .DropdownMenu div.ButtonCheckboxInp .MultipleSelectionButton-label {
+        padding-left: 10px;
+        padding-right: 46px; }
     .DropdownMenu div.ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
       left: 12px;
       top: 6px; }
+      .AR .DropdownMenu div.ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
+        left: 6px;
+        right: 12px; }
   .DropdownMenu [ui='data-badge-classifications'] {
     width: 100%; }
     .DropdownMenu [ui='data-badge-classifications'] .BadgeClassification {
