@@ -73,41 +73,6 @@
 		.TimeLineSearchHeader {
 			min-width: 420px;
 		}
-
-		.FilterByVisitType {
-			@include flex-center-vertically();
-
-			background-color: $regular-white;
-			border: 1px solid $light-grey;
-			border-radius: 100px;
-			color: $text-color-regular;
-			font-family: $font-family-latin-regular;
-			gap: $sapphire-sizes--small;
-			height: 36px;
-			padding: 0 $sapphire-sizes--medium;
-
-			&.Active {
-				background-color: $regular-eta;
-				border-color: $regular-alpha;
-
-				&::after {
-					border-bottom: 5px solid $regular-beta;
-					border-top: none;
-				}
-			}
-
-			&::after {
-				border-left: 5px solid transparent;
-				border-right: 5px solid transparent;
-				border-top: 5px solid $regular-beta;
-				content: '';
-			}
-
-			&:hover {
-				background-color: $regular-eta;
-				border-color: $regular-alpha;
-			}
-		}
 	}
 
 	&__Content {

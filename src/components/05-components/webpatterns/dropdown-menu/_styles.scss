@@ -35,6 +35,26 @@
 			background-color: $regular-eta;
 			color: $dark-grey;
 		}
+
+		&.Selected {
+			background-color: $regular-alpha;
+			color: $regular-white;
+		}
+	}
+
+	div.ButtonCheckboxInp {
+		margin: 0;
+
+		.MultipleSelectionButton-label {
+			border: none;
+
+			padding-left: 46px;
+		}
+
+		.ButtonCheckboxInput_CheckBox {
+			left: 12px;
+			top: 6px;
+		}
 	}
 
 	[ui='data-badge-classifications'] {
