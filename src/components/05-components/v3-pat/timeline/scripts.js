@@ -66,7 +66,7 @@ SapphireWidgets.TimelinePageEvents = function(showMoreTimelineLink) {
 
 						if ($(document).height() - $(this).height() - 150 < $(this).scrollTop()) {
 							$(`#${showMoreTimelineLink}`).click();
-							$('.TimelinePage__LoadingMore').css('display', 'flex');
+							$('.TimelinePage__Right .TimelinePage__LoadingMore').css('display', 'flex');
 						}
 					}, 100);
 				}
