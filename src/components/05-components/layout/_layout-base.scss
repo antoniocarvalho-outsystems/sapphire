@@ -463,6 +463,11 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 			padding-left: 0;
 			padding-right: $sapphire-sizes--medium;
 		}
+
+		.ClinicianWorkArea-columns-small {
+			border-left: none;
+			border-right: 1px solid $light-grey;
+		}
 	}
 }
 
@@ -502,8 +507,9 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 		.ClinicianWorkArea-columns-small {
 			background-color: $sapphire-light-container;
+			border-left: 1px solid $light-grey;
 			display: inline-block;
-			padding: 15px;
+			padding: 0 $sapphire-sizes--large;
 			position: relative;
 			vertical-align: top;
 			width: 33%;

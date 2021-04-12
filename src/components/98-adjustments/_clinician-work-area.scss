@@ -7,6 +7,10 @@
 				margin-bottom: $sapphire-sizes--large;
 			}
 
+			.SectionExpandableInside {
+				background-color: transparent;
+			}
+
 			.ExpandableContent:hover {
 				background-color: $body-color;
 			}
