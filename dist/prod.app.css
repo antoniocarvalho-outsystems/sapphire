@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109023 || Generated: Mon Apr 12 2021 14:38:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109024 || Generated: Mon Apr 12 2021 15:59:10 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12296,6 +12296,19 @@ html body {
     .DropdownMenu .PH > span > div:hover {
       background-color: #f2fffd;
       color: #333333; }
+    .DropdownMenu .PH > a.Selected,
+    .DropdownMenu .PH > span a.Selected,
+    .DropdownMenu .PH > span > div.Selected {
+      background-color: #00bfa5;
+      color: #fff; }
+  .DropdownMenu div.ButtonCheckboxInp {
+    margin: 0; }
+    .DropdownMenu div.ButtonCheckboxInp .MultipleSelectionButton-label {
+      border: none;
+      padding-left: 46px; }
+    .DropdownMenu div.ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
+      left: 12px;
+      top: 6px; }
   .DropdownMenu [ui='data-badge-classifications'] {
     width: 100%; }
     .DropdownMenu [ui='data-badge-classifications'] .BadgeClassification {
@@ -30793,33 +30806,6 @@ ul.os-internal-ui-autocomplete {
     z-index: 3; }
     .TimelinePage__Filters .TimeLineSearchHeader {
       min-width: 420px; }
-    .TimelinePage__Filters .FilterByVisitType {
-      -webkit-box-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: flex;
-      background-color: #fff;
-      border: 1px solid #d6d6d6;
-      border-radius: 100px;
-      color: #333333;
-      font-family: "LatoRegular";
-      gap: 8px;
-      height: 36px;
-      padding: 0 16px; }
-      .TimelinePage__Filters .FilterByVisitType.Active {
-        background-color: #f2fffd;
-        border-color: #00bfa5; }
-        .TimelinePage__Filters .FilterByVisitType.Active::after {
-          border-bottom: 5px solid #00ac94;
-          border-top: none; }
-      .TimelinePage__Filters .FilterByVisitType::after {
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid #00ac94;
-        content: ''; }
-      .TimelinePage__Filters .FilterByVisitType:hover {
-        background-color: #f2fffd;
-        border-color: #00bfa5; }
   .TimelinePage__Content {
     overflow: visible; }
     .TimelinePage__Content .LineTimeLine__Header {
