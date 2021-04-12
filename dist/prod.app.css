@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109025 || Generated: Mon Apr 12 2021 16:16:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109026 || Generated: Mon Apr 12 2021 18:00:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11220,6 +11220,11 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   padding-left: 0;
   padding-right: 16px; }
 
+.AR.LayoutBase.Page .ClinicianWorkArea-columns-small,
+.FA.LayoutBase.Page .ClinicianWorkArea-columns-small {
+  border-left: none;
+  border-right: 1px solid #d6d6d6; }
+
 .LayoutBase.Page.tablet .PatientDetails_content {
   padding-left: 0;
   padding-right: 0; }
@@ -11250,8 +11255,9 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 .LayoutBase.Page .ClinicianWorkArea-columns-small {
   background-color: #ebebeb;
+  border-left: 1px solid #d6d6d6;
   display: inline-block;
-  padding: 15px;
+  padding: 0 24px;
   position: relative;
   vertical-align: top;
   width: 33%; }
@@ -31059,6 +31065,8 @@ ul.os-internal-ui-autocomplete {
   margin-top: 0 !important; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails > div:not(:last-of-type) {
     margin-bottom: 24px; }
+  .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside {
+    background-color: transparent; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .ExpandableContent:hover {
     background-color: #f3f3f3; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .SeparatorBorder:first-of-type {
