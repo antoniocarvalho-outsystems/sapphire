@@ -1,16 +1,13 @@
 @mixin animation-arrow-button($rotate-degree: 0) {
 	transform: rotate($rotate-degree);
-	transition: height 0.5s;
 }
 
 .SectionExpandableInside {
 	background-color: $regular-white;
 
 	&.expanded {
-		.ExapandablePlaceholder.HeaderIcon {
+		.ExapandablePlaceholder.HeaderIcon .icon {
 			@include animation-arrow-button(180deg);
-
-			position: relative;
 		}
 
 		.SectionExpandableInside_content {
@@ -44,11 +41,11 @@
 			border-bottom: none;
 		}
 
-		.HeaderIcon.open {
+		.HeaderIcon.open .icon {
 			@include animation-arrow-button(180deg);
 		}
 
-		.HeaderIcon.closed {
+		.HeaderIcon.closed .icon {
 			@include animation-arrow-button(90deg);
 		}
 	}
@@ -69,20 +66,15 @@
 		font-size: $font-size-heading4;
 		margin-right: 10px;
 
-		&.HeaderIcon {
+		&.HeaderIcon .icon {
+			@include arrow-down-simple;
 			@include animation-arrow-button(90deg);
 
 			cursor: pointer;
+			display: block;
 			font-size: 0.857em;
 			margin: 0;
-			position: relative;
-
-			span {
-				@include arrow-down-simple;
-
-				display: block;
-				margin: 0 18px;
-			}
+			margin: 0 $sapphire-sizes--medium;
 		}
 	}
 

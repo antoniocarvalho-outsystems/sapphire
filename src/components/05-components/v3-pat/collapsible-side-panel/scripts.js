@@ -42,6 +42,10 @@
 			if (this.options.hideWhenEmpty && !contentToVerify.text()) {
 				this.$component.hide();
 			}
+
+			$('.CollapsibleSidePanel')
+				.first()
+				.addClass('MultiMarginTopLarge');
 		}
 	}
 

@@ -3,12 +3,49 @@
 		.AppointmentDetails {
 			margin-top: 0 !important;
 
-			> div:not(:last-of-type) {
-				margin-bottom: $sapphire-sizes--large;
+			.VisitDetailsContainer {
+				margin-top: $sapphire-sizes--large;
 			}
 
 			.SectionExpandableInside {
 				background-color: transparent;
+
+				.SectionExpandableInside_header {
+					background-color: $body-color;
+					border-bottom: none;
+					border-radius: $border-radius-default;
+					margin-bottom: $sapphire-sizes--medium;
+				}
+
+				.ExapandablePlaceholder {
+					width: $sapphire-sizes--xlarge;
+
+					&.HeaderIcon .icon {
+						border-bottom-color: $dark-grey;
+					}
+				}
+
+				.RightAllPlaceDiv {
+					font-family: $font-family-latin-bold;
+
+					.AR & {
+						font-family: $font-family-arabic-bold;
+					}
+				}
+
+				.TimelineDetail {
+					gap: $sapphire-sizes--medium;
+					margin-bottom: $sapphire-sizes--large;
+				}
+
+				.TimelineDetail_leftContent {
+					padding-left: 38px;
+
+					.AR & {
+						padding-left: 0;
+						padding-right: 38px;
+					}
+				}
 			}
 
 			.ExpandableContent:hover {

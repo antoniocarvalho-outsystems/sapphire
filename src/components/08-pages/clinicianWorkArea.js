@@ -1,6 +1,6 @@
 SapphireWidgets.ClinicianWorkArea = function(containerID) {
 	$(document).ready(function() {
-		const $container = $(`${containerID}`);
+		const $container = $(`#${containerID}`);
 		const $toggler = $container.find('.SectionExpandable-toggler');
 
 		if ($toggler.length === 1) {
