@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109027 || Generated: Tue Apr 13 2021 14:19:56 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.109028 || Generated: Tue Apr 13 2021 16:42:05 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11074,7 +11074,7 @@ div.NoPrompt > div.template-item-input-block {
       font-size: 0.7em;
       height: 15px;
       line-height: 15px;
-      right: -5px;
+      right: 2px;
       top: 7px;
       width: 15px; }
   .LayoutBase-Content .LayoutBase-secondary .Toolbar__MoreOptions {
@@ -16898,39 +16898,6 @@ div.CircledArrow {
     font-family: "LatoBold"; }
   .ExpandableSmaller > div + span {
     display: block !important; }
-
-.ExpandedList {
-  border-bottom: 1px solid #d6d6d6;
-  display: table;
-  height: auto;
-  width: 100%; }
-  .ExpandedList:hover {
-    background-color: rgba(255, 255, 255, 0.3); }
-  .ExpandedList > div > div:not(.Placeholder) {
-    display: table-cell;
-    vertical-align: middle; }
-  .ExpandedList > div > div.Filler {
-    padding: 0 2.083rem; }
-  .ExpandedList > div > div.Label {
-    line-height: 1.4em;
-    padding: 0.5rem 0;
-    padding-left: 50px;
-    white-space: normal;
-    width: 100%; }
-  .ExpandedList > div > div.Label > [description] {
-    color: #777777;
-    font-size: 1rem; }
-  .ExpandedList > div > div.Action {
-    color: #adadad; }
-  .ExpandedList > div:last-child:empty {
-    display: none; }
-  .ExpandedList > div {
-    width: 100%; }
-  .ExpandedList > div.ExpandableContent > span {
-    display: table-row-group;
-    width: 100%; }
-  .ExpandedList > div > div.Action .InvertIconLabel {
-    margin-right: 10px; }
 
 .ExpiryCard {
   border-radius: 4px;
@@ -23896,12 +23863,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .SectionExpandableInside {
   background-color: #fff; }
-  .SectionExpandableInside.expanded .ExapandablePlaceholder.HeaderIcon {
+  .SectionExpandableInside.expanded .ExapandablePlaceholder.HeaderIcon .icon {
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    -webkit-transition: height 0.5s;
-    transition: height 0.5s;
-    position: relative; }
+            transform: rotate(180deg); }
   .SectionExpandableInside.expanded .SectionExpandableInside_content {
     border-bottom: 1px solid #d6d6d6;
     height: auto; }
@@ -23923,16 +23887,12 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     width: 100%; }
     .SectionExpandableInside_header--noBorder {
       border-bottom: none; }
-    .SectionExpandableInside_header .HeaderIcon.open {
+    .SectionExpandableInside_header .HeaderIcon.open .icon {
       -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
-      -webkit-transition: height 0.5s;
-      transition: height 0.5s; }
-    .SectionExpandableInside_header .HeaderIcon.closed {
+              transform: rotate(180deg); }
+    .SectionExpandableInside_header .HeaderIcon.closed .icon {
       -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
-      -webkit-transition: height 0.5s;
-      transition: height 0.5s; }
+              transform: rotate(90deg); }
   .SectionExpandableInside .RightAllPlaceDiv {
     display: table-cell;
     vertical-align: middle;
@@ -23944,25 +23904,21 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     color: #333333;
     font-size: 1.143em;
     margin-right: 10px; }
-    .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon {
+    .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon {
+      border-bottom: 5px solid #00ac94;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      height: 0;
+      width: 0;
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
-      -webkit-transition: height 0.5s;
-      transition: height 0.5s;
       cursor: pointer;
+      display: block;
       font-size: 0.857em;
       margin: 0;
-      position: relative; }
-      .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon span {
-        border-bottom: 5px solid #00ac94;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        height: 0;
-        width: 0;
-        display: block;
-        margin: 0 18px; }
-        .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon span:after, .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon span:before {
-          content: ''; }
+      margin: 0 16px; }
+      .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon:after, .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon:before {
+        content: ''; }
   .SectionExpandableInside .PlaceHolderActions {
     display: table-cell;
     padding-right: 5px;
@@ -31063,10 +31019,31 @@ ul.os-internal-ui-autocomplete {
 
 .ClinicianWorkArea____resumeDetails .AppointmentDetails {
   margin-top: 0 !important; }
-  .ClinicianWorkArea____resumeDetails .AppointmentDetails > div:not(:last-of-type) {
-    margin-bottom: 24px; }
+  .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer {
+    margin-top: 24px; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside {
     background-color: transparent; }
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .SectionExpandableInside_header {
+      background-color: #f3f3f3;
+      border-bottom: none;
+      border-radius: 4px;
+      margin-bottom: 16px; }
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .ExapandablePlaceholder {
+      width: 32px; }
+      .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon {
+        border-bottom-color: #333333; }
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .RightAllPlaceDiv {
+      font-family: "LatoBold"; }
+      .AR .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .RightAllPlaceDiv {
+        font-family: "TajawalBold"; }
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .TimelineDetail {
+      gap: 16px;
+      margin-bottom: 24px; }
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .TimelineDetail_leftContent {
+      padding-left: 38px; }
+      .AR .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .TimelineDetail_leftContent {
+        padding-left: 0;
+        padding-right: 38px; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .ExpandableContent:hover {
     background-color: #f3f3f3; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .SeparatorBorder:first-of-type {
