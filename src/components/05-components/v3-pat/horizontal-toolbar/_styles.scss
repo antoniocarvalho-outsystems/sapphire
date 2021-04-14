@@ -200,11 +200,24 @@ div.Toolbar {
 		}
 
 		.MenuItemWrapper {
+			border: none;
 			border-radius: 0;
 			padding: 10px 45px 10px 20px;
 
+			&::after,
+			&::before {
+				display: none;
+			}
+
 			&:hover {
 				background-color: $regular-eta;
+			}
+
+			&.Active {
+				.MenuItemWrapper_Container {
+					height: unset;
+					margin: 0;
+				}
 			}
 
 			&_Container {
