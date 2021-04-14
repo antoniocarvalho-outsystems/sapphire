@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.109028 || Generated: Tue Apr 13 2021 16:42:05 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110001 || Generated: Wed Apr 14 2021 14:14:02 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17798,10 +17798,16 @@ div.Toolbar {
     div.Toolbar__MoreOptionsList::-webkit-scrollbar {
       width: 4px; }
     div.Toolbar__MoreOptionsList .MenuItemWrapper {
+      border: none;
       border-radius: 0;
       padding: 10px 45px 10px 20px; }
+      div.Toolbar__MoreOptionsList .MenuItemWrapper::after, div.Toolbar__MoreOptionsList .MenuItemWrapper::before {
+        display: none; }
       div.Toolbar__MoreOptionsList .MenuItemWrapper:hover {
         background-color: #f2fffd; }
+      div.Toolbar__MoreOptionsList .MenuItemWrapper.Active .MenuItemWrapper_Container {
+        height: unset;
+        margin: 0; }
       div.Toolbar__MoreOptionsList .MenuItemWrapper_Container {
         display: -webkit-box;
         display: flex; }
