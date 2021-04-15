@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110004 || Generated: Thu Apr 15 2021 16:39:11 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110005 || Generated: Thu Apr 15 2021 17:18:10 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -8615,9 +8615,9 @@ a.LinkReset:link, a.LinkReset:visited {
   -webkit-box-pack: center;
           justify-content: center;
   background-color: transparent;
-  border: 1px dashed #777777;
-  border-radius: 4px;
-  min-height: 72px;
+  border: 1px dashed #adadad;
+  border-radius: 8px;
+  min-height: 56px;
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
   -webkit-transition: all 0.2s;
@@ -8626,6 +8626,7 @@ a.LinkReset:link, a.LinkReset:visited {
     background-color: #f2fffd;
     border: 1px dashed #00bfa5; }
   .FileUpload > div {
+    font-family: "LatoRegular";
     -webkit-transform: scale(-1, 1);
             transform: scale(-1, 1); }
   .FileUpload_Label {
@@ -8633,20 +8634,24 @@ a.LinkReset:link, a.LinkReset:visited {
     font-family: "LatoBold";
     font-size: 1em; }
   .FileUpload_Button .Button {
-    background-color: #5c5c5c;
+    background-color: transparent;
     border: 1px solid transparent;
-    border-radius: 1.286em;
+    color: #00ac94;
     display: -webkit-box;
     display: flex;
     font-family: "LatoBold";
-    height: 2.571em;
-    line-height: 2.4em;
-    padding: 0 15px; }
+    padding: 0; }
     .FileUpload_Button .Button:before {
       content: '\e698';
       font-family: "Sapphire-Icon-Font";
-      font-size: 24px;
+      font-size: 1.286em;
       margin-left: -6px; }
+
+.AR .FileUpload > div,
+.FA .FileUpload > div {
+  font-family: "TajawalRegular";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
 
 .AR .FileUpload_Button .Button:before,
 .FA .FileUpload_Button .Button:before {
@@ -12502,7 +12507,7 @@ html body {
   line-height: 1;
   position: relative; }
   .Page .Search_wrapper:after {
-    color: #00ac94;
+    color: #777777;
     content: '\e690';
     font-family: "Sapphire-Icon-Font";
     font-size: 1.143em;
@@ -12521,13 +12526,13 @@ html body {
     line-height: 36px;
     padding: 0 16px 0 35px; }
 
-.AR .Page .Search_wrapper:after,
-.FA .Page .Search_wrapper:after {
+.AR div.Search_wrapper:after,
+.FA div.Search_wrapper:after {
   left: auto;
   right: 15px; }
 
-.AR .Page .Search_wrapper input[type='text'],
-.FA .Page .Search_wrapper input[type='text'] {
+.AR div.Search_wrapper input[type='text'],
+.FA div.Search_wrapper input[type='text'] {
   border: 1px solid #d6d6d6;
   padding-left: 16px;
   padding-right: 35px; }
@@ -16200,11 +16205,10 @@ div.CircledArrow {
   display: inline; }
   .DropZoneWrapper .dropzone {
     background: #fff;
-    border: 1px dashed #d6d6d6;
-    border-radius: 4px;
-    min-height: 80px;
-    padding: 0;
-    padding-top: 24px; }
+    border: 1px dashed #adadad;
+    border-radius: 8px;
+    min-height: 56px;
+    padding: 0; }
     .DropZoneWrapper .dropzone.dz-started .dz-message {
       display: inline-block;
       height: 100%;
@@ -30973,38 +30977,53 @@ ul.os-internal-ui-autocomplete {
       display: -webkit-box;
       display: flex; }
 
-.ClinicalDocumentSearch__Filter, .ClinicalDocumentSearch__Options {
+.ClinicalDocumentSearch {
   display: -webkit-box;
-  display: flex; }
-  .ClinicalDocumentSearch__Filter .FormField-field .Button.SearchWhite, .ClinicalDocumentSearch__Options .FormField-field .Button.SearchWhite {
-    margin-top: 1px !important; }
+  display: flex;
+  gap: 16px;
+  margin-top: 16px; }
+  .ClinicalDocumentSearch__Filter, .ClinicalDocumentSearch__Options {
+    display: -webkit-box;
+    display: flex; }
+  .ClinicalDocumentSearch__Filter {
+    position: relative;
+    width: 315px; }
+    .ClinicalDocumentSearch__Filter .Search_wrapper {
+      width: 100%; }
+      .ClinicalDocumentSearch__Filter .Search_wrapper input[type='text'] {
+        padding-right: 90px; }
+    .ClinicalDocumentSearch__Filter a.Button, .ClinicalDocumentSearch__Filter .DropZoneContainer .row .Button, .DropZoneContainer .row .ClinicalDocumentSearch__Filter .Button {
+      min-width: 75px;
+      position: absolute;
+      right: 0;
+      z-index: 1; }
+  .ClinicalDocumentSearch__Options .CalendarDateInput {
+    min-width: 120px; }
 
-.ClinicalDocumentSearch__Filter {
-  border-right: 1px solid #d6d6d6;
-  margin-right: 10px;
-  padding-right: 20px; }
+/*.desktop.small {
+	.ClinicalDocumentSearch {
+		&__Filter {
+			border: none;
+			margin: 0;
+			margin-bottom: 12px;
+			padding: 0;
+		}
 
-.ClinicalDocumentSearch__Options .CalendarDateInput {
-  min-width: 120px; }
+		.Columns .Column {
+			padding: 0;
+			width: 100%;
+		}
+	}
+}*/
+.AR .ClinicalDocumentSearch__Filter .Search_wrapper input[type='text'],
+.FA .ClinicalDocumentSearch__Filter .Search_wrapper input[type='text'] {
+  padding-left: 90px;
+  padding-right: 35px; }
 
-.desktop.small .ClinicalDocumentSearch__Filter {
-  border: none;
-  margin: 0;
-  margin-bottom: 12px;
-  padding: 0; }
-
-.desktop.small .ClinicalDocumentSearch .Columns .Column {
-  padding: 0;
-  width: 100%; }
-
-.AR .ClinicalDocumentSearch__Filter,
-.FA .ClinicalDocumentSearch__Filter {
-  border-left: 1px solid #d6d6d6;
-  border-right: none;
-  margin-left: 10px;
-  margin-right: 0;
-  padding-left: 20px;
-  padding-right: 10px; }
+.AR .ClinicalDocumentSearch__Filter .Button,
+.FA .ClinicalDocumentSearch__Filter .Button {
+  left: 0;
+  right: unset; }
 
 .TopSection___Wrapper {
   font-size: 1.429em;
