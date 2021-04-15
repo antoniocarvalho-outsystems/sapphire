@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110001 || Generated: Wed Apr 14 2021 14:14:02 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110002 || Generated: Thu Apr 15 2021 14:19:46 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14399,15 +14399,6 @@ div.CircledArrow {
     border-radius: 4px 0 0 4px;
     border-right: none; }
 
-@media (max-width: 1325px) {
-  .ClinicalInformation > div {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    height: auto;
-    -webkit-box-pack: justify;
-            justify-content: space-between; } }
-
 @media (max-width: 1083px) {
   .ClinicalInformation {
     max-width: 260px; }
@@ -22094,23 +22085,10 @@ a .PersonCard {
       .AR .SapphireHeader-demographics .Demographic-item {
         margin-left: 24px;
         margin-right: 0; }
-    .SapphireHeader-demographics .SapphireHeader-additional-trigger {
-      border: 1px solid #d6d6d6;
-      border-radius: 100px;
-      cursor: pointer;
-      display: none;
-      height: 36px;
-      line-height: 36px;
-      padding: 0 16px;
-      position: relative; }
-      .SapphireHeader-demographics .SapphireHeader-additional-trigger:hover {
-        background-color: #ebebeb; }
-      .SapphireHeader-demographics .SapphireHeader-additional-trigger:after {
-        color: #777777;
-        content: '\e610';
-        font-family: "Sapphire-Icon-Font";
-        font-size: 10px;
-        margin-left: 6px; }
+  .SapphireHeader-right {
+    display: -webkit-box;
+    display: flex;
+    gap: 4px; }
   .SapphireHeader-actions > div {
     -webkit-box-align: center;
             align-items: center;
@@ -22159,6 +22137,29 @@ a .PersonCard {
     display: -webkit-box;
     display: flex;
     gap: 4px; }
+  .SapphireHeader-additional-trigger {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 100px;
+    cursor: pointer;
+    display: none;
+    font-size: 13px;
+    height: 30px;
+    left: 50%;
+    line-height: 30px;
+    margin-top: -15px;
+    padding: 0 16px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .SapphireHeader-additional-trigger:hover {
+      background-color: #ebebeb; }
+    .SapphireHeader-additional-trigger:after {
+      color: #777777;
+      content: '\e610';
+      font-family: "Sapphire-Icon-Font";
+      font-size: 10px;
+      margin-left: 6px; }
   .SapphireHeader-additional-content {
     border-bottom: solid 1px #ebebeb;
     display: none;
@@ -22175,17 +22176,14 @@ a .PersonCard {
     left: 0;
     right: auto; }
 
-@media (max-width: 1325px) {
-  .SapphireHeader-information {
-    -webkit-box-ordinal-group: 2;
-            order: 1; } }
-
 @media (max-width: 1083px) {
   .SapphireHeader-demographics {
     margin-right: 0; }
     .AR .SapphireHeader-demographics {
       margin-left: 0;
       margin-right: 32px; }
+  .SapphireHeader-right {
+    flex-basis: 100%; }
   .SapphireHeader-actions,
   .SapphireHeader-information {
     border-top: 1px solid #d6d6d6;
@@ -22193,9 +22191,7 @@ a .PersonCard {
     padding-top: 11.5px; }
   .SapphireHeader-information {
     flex-basis: 50%;
-    margin-right: -4px;
-    -webkit-box-ordinal-group: unset;
-            order: unset; }
+    margin-right: -4px; }
     .AR .SapphireHeader-information {
       margin-left: -4px;
       margin-right: 0; }
@@ -23908,7 +23904,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       vertical-align: middle; }
   .SectionExpandableInside .ExapandablePlaceholder {
     color: #333333;
-    font-size: 1.143em;
+    font-family: "LatoBold";
     margin-right: 10px; }
     .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon {
       border-bottom: 5px solid #00ac94;
@@ -23937,6 +23933,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .AR .SectionExpandableInside .ExapandablePlaceholder,
 .FA .SectionExpandableInside .ExapandablePlaceholder {
+  font-family: "TajawalBold";
   margin-left: 15px;
   margin-right: auto; }
 
@@ -31025,29 +31022,30 @@ ul.os-internal-ui-autocomplete {
 
 .ClinicianWorkArea____resumeDetails .AppointmentDetails {
   margin-top: 0 !important; }
+  .ClinicianWorkArea____resumeDetails .AppointmentDetails .QuickNotes,
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer {
     margin-top: 24px; }
-  .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside {
+  .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside {
     background-color: transparent; }
-    .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .SectionExpandableInside_header {
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .SectionExpandableInside_header {
       background-color: #f3f3f3;
       border-bottom: none;
       border-radius: 4px;
       margin-bottom: 16px; }
-    .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .ExapandablePlaceholder {
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .ExapandablePlaceholder {
       width: 32px; }
-      .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon {
+      .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon {
         border-bottom-color: #333333; }
-    .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .RightAllPlaceDiv {
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .RightAllPlaceDiv {
       font-family: "LatoBold"; }
-      .AR .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .RightAllPlaceDiv {
+      .AR .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .RightAllPlaceDiv {
         font-family: "TajawalBold"; }
-    .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .TimelineDetail {
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .TimelineDetail {
       gap: 16px;
       margin-bottom: 24px; }
-    .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .TimelineDetail_leftContent {
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .TimelineDetail_leftContent {
       padding-left: 38px; }
-      .AR .ClinicianWorkArea____resumeDetails .AppointmentDetails .SectionExpandableInside .TimelineDetail_leftContent {
+      .AR .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .TimelineDetail_leftContent {
         padding-left: 0;
         padding-right: 38px; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .ExpandableContent:hover {
