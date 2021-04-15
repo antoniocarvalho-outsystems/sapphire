@@ -135,16 +135,6 @@
 	}
 }
 
-@media (max-width: 1325px) {
-	.ClinicalInformation {
-		> div {
-			flex-direction: row;
-			height: auto;
-			justify-content: space-between;
-		}
-	}
-}
-
 @media (max-width: 1083px) {
 	.ClinicalInformation {
 		max-width: 260px;

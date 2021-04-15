@@ -3,11 +3,12 @@
 		.AppointmentDetails {
 			margin-top: 0 !important;
 
+			.QuickNotes,
 			.VisitDetailsContainer {
 				margin-top: $sapphire-sizes--large;
 			}
 
-			.SectionExpandableInside {
+			.VisitDetailsContainer .SectionExpandableInside {
 				background-color: transparent;
 
 				.SectionExpandableInside_header {

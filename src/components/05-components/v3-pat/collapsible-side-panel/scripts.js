@@ -43,9 +43,10 @@
 				this.$component.hide();
 			}
 
-			$('.CollapsibleSidePanel')
-				.first()
-				.addClass('MultiMarginTopLarge');
+			$(document).ready(function() {
+				$('.CollapsibleSidePanel:visible').addClass('MultiMarginTopSmall');
+				$('.CollapsibleSidePanel:visible:first').addClass('MultiMarginTopLarge');
+			});
 		}
 	}
 
@@ -80,6 +81,9 @@
 		if (hideHeader) this.$component.addClass('CollapsibleSidePanel--headerHidden');
 
 		this.$component.removeClass('CollapsibleSidePanel--open');
+
+		$('.CollapsibleSidePanel:visible').removeClass('MultiMarginTopSmall');
+		$('.CollapsibleSidePanel:visible:first').removeClass('MultiMarginTopLarge');
 	};
 
 	const checkEmpty = widgetId => {

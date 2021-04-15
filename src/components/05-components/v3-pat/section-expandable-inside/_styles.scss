@@ -63,7 +63,7 @@
 
 	.ExapandablePlaceholder {
 		color: $dark-grey;
-		font-size: $font-size-heading4;
+		font-family: $font-family-latin-bold;
 		margin-right: 10px;
 
 		&.HeaderIcon .icon {
@@ -97,6 +97,7 @@
 .AR,
 .FA {
 	.SectionExpandableInside .ExapandablePlaceholder {
+		font-family: $font-family-arabic-bold;
 		margin-left: 15px;
 		margin-right: auto;
 	}

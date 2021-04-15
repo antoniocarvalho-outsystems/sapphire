@@ -58,30 +58,11 @@
 				margin-right: 0;
 			}
 		}
+	}
 
-		.SapphireHeader-additional-trigger {
-			border: 1px solid $light-grey;
-			border-radius: 100px;
-			cursor: pointer;
-			display: none;
-			height: 36px;
-			line-height: 36px;
-			padding: 0 $sapphire-sizes--medium;
-			position: relative;
-
-			&:hover {
-				background-color: $sapphire-light;
-			}
-
-			&:after {
-				color: $regular-grey;
-				content: '\e610';
-				font-family: $font-family-icons;
-				font-size: 10px;
-
-				margin-left: 6px;
-			}
-		}
+	&-right {
+		display: flex;
+		gap: $sapphire-sizes--xsmall;
 	}
 
 	&-information {
@@ -157,6 +138,35 @@
 		}
 	}
 
+	&-additional-trigger {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 100px;
+		cursor: pointer;
+		display: none;
+		font-size: 13px; // Same as small button
+		height: 30px;
+		left: 50%;
+		line-height: 30px;
+		margin-top: -15px;
+		padding: 0 $sapphire-sizes--medium;
+		position: absolute;
+		transform: translateX(-50%);
+
+		&:hover {
+			background-color: $sapphire-light;
+		}
+
+		&:after {
+			color: $regular-grey;
+			content: '\e610';
+			font-family: $font-family-icons;
+			font-size: 10px;
+
+			margin-left: 6px;
+		}
+	}
+
 	&-additional-content {
 		border-bottom: solid 1px $sapphire-light-container;
 		display: none;
@@ -182,12 +192,6 @@
 	}
 }
 
-@media (max-width: 1325px) {
-	.SapphireHeader-information {
-		order: 1;
-	}
-}
-
 @media (max-width: 1083px) {
 	.SapphireHeader-demographics {
 		margin-right: 0;
@@ -196,6 +200,10 @@
 			margin-left: 0;
 			margin-right: $sapphire-sizes--xlarge;
 		}
+	}
+
+	.SapphireHeader-right {
+		flex-basis: 100%;
 	}
 
 	.SapphireHeader-actions,
@@ -208,7 +216,6 @@
 	.SapphireHeader-information {
 		flex-basis: 50%;
 		margin-right: -$sapphire-sizes--xsmall;
-		order: unset;
 
 		.AR & {
 			margin-left: -$sapphire-sizes--xsmall;
