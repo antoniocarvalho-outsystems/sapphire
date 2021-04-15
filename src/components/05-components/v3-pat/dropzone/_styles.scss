@@ -3,11 +3,10 @@
 
 	.dropzone {
 		background: $regular-white;
-		border: 1px dashed $light-grey;
-		border-radius: $border-radius-default;
-		min-height: 80px;
+		border: 1px dashed $mid-light-grey;
+		border-radius: $border-radius-medium;
+		min-height: $sapphire-sizes--largest;
 		padding: 0;
-		padding-top: 24px;
 
 		&.dz-started {
 			.dz-message {

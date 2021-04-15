@@ -3,7 +3,7 @@
 	position: relative;
 
 	&:after {
-		color: $regular-beta;
+		color: $regular-grey;
 		content: '\e690';
 		font-family: $font-family-icons;
 		font-size: $font-size-heading4;
@@ -27,7 +27,7 @@
 
 .AR,
 .FA {
-	.Page .Search_wrapper {
+	div.Search_wrapper {
 		&:after {
 			left: auto;
 			right: 15px;

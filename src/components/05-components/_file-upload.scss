@@ -2,9 +2,9 @@
 	@include flex-center-total;
 
 	background-color: transparent;
-	border: 1px dashed $regular-grey;
-	border-radius: $border-radius-default;
-	min-height: 72px;
+	border: 1px dashed $mid-light-grey;
+	border-radius: $border-radius-medium;
+	min-height: $sapphire-sizes--largest;
 	transform: scale(-1, 1);
 	transition: all 0.2s;
 
@@ -14,6 +14,7 @@
 	}
 
 	> div {
+		font-family: $font-family-latin-regular;
 		transform: scale(-1, 1);
 	}
 
@@ -25,19 +26,17 @@
 
 	&_Button {
 		.Button {
-			background-color: $mid-dark-grey;
+			background-color: transparent;
 			border: 1px solid transparent;
-			border-radius: 1.286em;
+			color: $regular-beta;
 			display: flex;
 			font-family: $font-family-latin-bold;
-			height: 2.571em;
-			line-height: 2.4em;
-			padding: 0 15px;
+			padding: 0;
 
 			&:before {
 				content: '\e698';
 				font-family: $font-family-icons;
-				font-size: 24px;
+				font-size: $font-size-heading3;
 				margin-left: -6px;
 			}
 		}
@@ -46,11 +45,18 @@
 
 .AR,
 .FA {
-	.FileUpload_Button {
-		.Button {
-			&:before {
-				margin-left: auto;
-				margin-right: -6px;
+	.FileUpload {
+		> div {
+			font-family: $font-family-arabic-regular;
+			transform: scale(-1, 1);
+		}
+
+		&_Button {
+			.Button {
+				&:before {
+					margin-left: auto;
+					margin-right: -6px;
+				}
 			}
 		}
 	}
