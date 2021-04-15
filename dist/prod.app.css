@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110002 || Generated: Thu Apr 15 2021 14:19:46 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110003 || Generated: Thu Apr 15 2021 15:04:22 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -30710,6 +30710,9 @@ ul.os-internal-ui-autocomplete {
     box-shadow: 0 0 0 3px #00bfa5; }
   .ScanOverlay--incorrectCode::before {
     box-shadow: 0 0 0 3px #ff3e2d; }
+
+.HospitalizationPage .PersonCard .CardAll {
+  min-width: 250px; }
 
 .PrintUIOptions {
   -webkit-box-align: center;
