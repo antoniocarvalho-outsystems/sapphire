@@ -26,6 +26,10 @@
 	}
 
 	&__Content {
+		@include component-scroll-root(4px, false, 4px);
+
+		max-height: 360px;
+		overflow-y: auto;
 		padding: $sapphire-sizes--medium;
 
 		.ExpandableSmaller {

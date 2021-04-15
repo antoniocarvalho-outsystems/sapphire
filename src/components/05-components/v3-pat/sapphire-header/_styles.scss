@@ -144,11 +144,11 @@
 		border-radius: 100px;
 		cursor: pointer;
 		display: none;
-		font-size: 13px; // Same as small button
-		height: 30px;
+		font-size: $font-size-small;
+		height: 24px;
 		left: 50%;
-		line-height: 30px;
-		margin-top: -15px;
+		line-height: 24px;
+		margin-top: -13px;
 		padding: 0 $sapphire-sizes--medium;
 		position: absolute;
 		transform: translateX(-50%);
