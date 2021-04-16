@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110008 || Generated: Fri Apr 16 2021 16:00:13 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110009 || Generated: Fri Apr 16 2021 16:50:44 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -30333,32 +30333,34 @@ ul.os-internal-ui-autocomplete {
   padding-left: 0;
   padding-right: 8px; }
 
-.ClinicalDocumentSearch {
+.ClinicalTabsSearch {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   margin-top: 32px; }
-  .ClinicalDocumentSearch__Filter, .ClinicalDocumentSearch__Options {
+  .ClinicalTabsSearch__Filter, .ClinicalTabsSearch__Options {
     display: -webkit-box;
     display: flex; }
-  .ClinicalDocumentSearch__Filter {
+  .ClinicalTabsSearch__Filter {
     position: relative;
     width: 315px; }
-    .ClinicalDocumentSearch__Filter .Search_wrapper {
+    .ClinicalTabsSearch__Filter .Search_wrapper {
       width: 100%; }
-      .ClinicalDocumentSearch__Filter .Search_wrapper input[type='text'] {
+      .ClinicalTabsSearch__Filter .Search_wrapper input[type='text'] {
         padding-right: 90px; }
-    .ClinicalDocumentSearch__Filter a.Button, .ClinicalDocumentSearch__Filter .DropZoneContainer .row .Button, .DropZoneContainer .row .ClinicalDocumentSearch__Filter .Button {
+    .ClinicalTabsSearch__Filter a.Button, .ClinicalTabsSearch__Filter .DropZoneContainer .row .Button, .DropZoneContainer .row .ClinicalTabsSearch__Filter .Button {
       min-width: 75px;
       position: absolute;
       right: 0;
       z-index: 1; }
-  .ClinicalDocumentSearch__Options {
+  .ClinicalTabsSearch__Options {
+    -webkit-box-align: center;
+            align-items: center;
     display: -webkit-box;
     display: flex;
     gap: 16px; }
-  .ClinicalDocumentSearch__Dates {
+  .ClinicalTabsSearch__Dates {
     -webkit-box-align: center;
             align-items: center;
     display: -webkit-box;
@@ -30366,22 +30368,23 @@ ul.os-internal-ui-autocomplete {
     border-right: 1px solid #d6d6d6;
     gap: 3px;
     padding-right: 16px; }
-    .AR .ClinicalDocumentSearch__Dates {
+    .AR .ClinicalTabsSearch__Dates {
       border-left: 1px solid #d6d6d6;
       border-right: none;
       padding-left: 16px;
       padding-right: 0; }
-    .ClinicalDocumentSearch__Dates .DateTimeRangePicker-displayed {
+    .ClinicalTabsSearch__Dates .DateTimeRangePicker-displayed {
       width: 132px; }
-  .ClinicalDocumentSearch__Dropdown {
+  .ClinicalTabsSearch__Dropdown {
     display: -webkit-box;
     display: flex;
     gap: 8px; }
-  .ClinicalDocumentSearch__Buttons {
+  .ClinicalTabsSearch__Button {
     -webkit-box-align: center;
             align-items: center;
     display: -webkit-box;
-    display: flex; }
+    display: flex;
+    gap: 8px; }
 
 .ClinicalDocumentTable {
   margin-top: 24px;
@@ -30436,13 +30439,13 @@ ul.os-internal-ui-autocomplete {
         margin-left: 0;
         margin-right: -17px; }
 
-.AR .ClinicalDocumentSearch__Filter .Search_wrapper input[type='text'],
-.FA .ClinicalDocumentSearch__Filter .Search_wrapper input[type='text'] {
+.AR .ClinicalTabsSearch__Filter .Search_wrapper input[type='text'],
+.FA .ClinicalTabsSearch__Filter .Search_wrapper input[type='text'] {
   padding-left: 90px;
   padding-right: 35px; }
 
-.AR .ClinicalDocumentSearch__Filter .Button,
-.FA .ClinicalDocumentSearch__Filter .Button {
+.AR .ClinicalTabsSearch__Filter .Button,
+.FA .ClinicalTabsSearch__Filter .Button {
   left: 0;
   right: unset; }
 
