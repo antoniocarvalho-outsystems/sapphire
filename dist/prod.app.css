@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110006 || Generated: Fri Apr 16 2021 14:52:03 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110007 || Generated: Fri Apr 16 2021 14:59:20 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9939,6 +9939,12 @@ div.LineInfo {
     padding-left: 15px; }
   .TableRecords_ContentExpandable {
     display: contents; }
+  .TableRecords_BottomNavigation {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    margin-top: 16px; }
   .TableRecords th.SortColumns_Sorted:hover,
   .TableRecords th.SortColumns_Sortable:hover {
     color: #00ac94;
@@ -30385,7 +30391,7 @@ ul.os-internal-ui-autocomplete {
   .ClinicalDocumentTable .CustomTable.ExpandableRows td .ExpandLink::before {
     content: attr(data-show-text) " ";
     display: inline-block;
-    min-width: 95px; }
+    min-width: 93px; }
   .ClinicalDocumentTable .CustomTable.ExpandableRows td .ExpandLink span.fa {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
@@ -30395,7 +30401,8 @@ ul.os-internal-ui-autocomplete {
       margin: 0; }
   .ClinicalDocumentTable .CustomTable .TableRowExpandable {
     background-color: #f3f3f3; }
-    .ClinicalDocumentTable .CustomTable .TableRowExpandable:hover {
+    .ClinicalDocumentTable .CustomTable .TableRowExpandable:hover,
+    .ClinicalDocumentTable .CustomTable .TableRowExpandable:hover td {
       background-color: #f3f3f3 !important; }
     .ClinicalDocumentTable .CustomTable .TableRowExpandable td {
       border-bottom: 1px solid #d6d6d6;

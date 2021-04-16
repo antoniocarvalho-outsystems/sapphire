@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.110006 || Generated: Fri Apr 16 2021 14:52:03 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.110007 || Generated: Fri Apr 16 2021 14:59:20 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3272,6 +3272,12 @@ div[onclick] {
     padding-left: 15px; }
   .TableRecords_ContentExpandable {
     display: contents; }
+  .TableRecords_BottomNavigation {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    margin-top: 16px; }
   .TableRecords th.SortColumns_Sorted:hover,
   .TableRecords th.SortColumns_Sortable:hover {
     color: #00ac94;
