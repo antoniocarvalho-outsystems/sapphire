@@ -93,11 +93,26 @@
 						margin: 0;
 					}
 				}
+
+				.AR & {
+					&:last-child {
+						border-bottom-right-radius: 0;
+						border-top-right-radius: 0;
+					}
+				}
 			}
 		}
 
-		.TableRowExpandable {
+		tr.TableRowExpandable {
 			background-color: $body-color;
+
+			&.open {
+				.AR & {
+					td {
+						border-bottom: 1px solid $light-grey;
+					}
+				}
+			}
 
 			&:hover,
 			&:hover td {
@@ -116,6 +131,18 @@
 				&:last-child {
 					border-right: 1px solid $light-grey;
 				}
+
+				.AR & {
+					border-bottom: 1px solid $light-grey;
+
+					&:first-child {
+						border-right: 1px solid $light-grey;
+					}
+
+					&:last-child {
+						border-left: 1px solid $light-grey;
+					}
+				}
 			}
 
 			.TableRowExpandable_Content.ColFirst {
@@ -127,6 +154,11 @@
 				margin-top: -17px;
 				position: absolute;
 				width: 100%;
+
+				.AR & {
+					margin-left: 0;
+					margin-right: -17px;
+				}
 			}
 		}
 	}
