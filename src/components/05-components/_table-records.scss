@@ -22,8 +22,8 @@
 		}
 
 		.ActiveRow {
-			.TableRecords_OddLine:first-child span.fa,
-			.TableRecords_EvenLine:first-child span.fa {
+			.TableRecords_OddLine .ExpandLink .fa,
+			.TableRecords_EvenLine .ExpandLink .fa {
 				transform: rotate(0deg);
 			}
 
@@ -40,10 +40,9 @@
 			width: 60px;
 		}
 
-		.TableRecords_OddLine:first-child span.fa,
-		.TableRecords_EvenLine:first-child span.fa {
+		.TableRecords_OddLine .ExpandLink .fa,
+		.TableRecords_EvenLine .ExpandLink .fa {
 			transform: rotate(-90deg);
-			transition: transform 0.5s;
 		}
 	}
 
@@ -82,7 +81,7 @@
 
 		.TableRecords_Header {
 			height: 20px;
-			padding: 0 10px;
+			padding: 0 $sapphire-sizes--small;
 
 			&:empty {
 				height: 0;
@@ -245,8 +244,8 @@
 			}
 
 			.ActiveRow {
-				.TableRecords_OddLine:first-child span.fa,
-				.TableRecords_EvenLine:first-child span.fa {
+				.TableRecords_OddLine .ExpandLink .fa,
+				.TableRecords_EvenLine .ExpandLink .fa {
 					transform: rotate(0deg);
 				}
 			}
@@ -274,7 +273,7 @@
 
 				&_OddLine,
 				&_EvenLine {
-					&:first-child span.fa {
+					.ExpandLink .fa {
 						transform: rotate(-90deg);
 					}
 				}
@@ -292,8 +291,30 @@
 		display: contents;
 	}
 
+	th.SortColumns_Sorted,
 	th.SortColumns_Sortable {
+		&:hover {
+			color: $regular-beta;
+			text-decoration: none;
+		}
+	}
+
+	th.SortColumns_Sorted {
 		color: inherit;
+
+		&::after {
+			content: '\e913';
+			font-family: $font-family-icons;
+			margin: 0 $sapphire-sizes--xsmall;
+		}
+	}
+
+	th.SortColumns {
+		&--ascending {
+			&::after {
+				content: '\e914';
+			}
+		}
 	}
 
 	.LightGreen {

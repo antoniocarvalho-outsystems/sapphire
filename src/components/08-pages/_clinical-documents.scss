@@ -1,0 +1,151 @@
+.ClinicalDocumentSearch {
+	display: flex;
+	flex-wrap: wrap;
+	gap: $sapphire-sizes--large;
+	margin-top: $sapphire-sizes--xlarge;
+
+	&__Filter,
+	&__Options {
+		display: flex;
+	}
+
+	&__Filter {
+		position: relative;
+		width: 315px;
+
+		.Search_wrapper {
+			width: 100%;
+
+			input[type='text'] {
+				padding-right: 90px;
+			}
+		}
+
+		a.Button {
+			min-width: 75px;
+			position: absolute;
+			right: 0;
+			z-index: 1;
+		}
+	}
+
+	&__Options {
+		display: flex;
+		gap: $sapphire-sizes--medium;
+	}
+
+	&__Dates {
+		@include flex-center-vertically();
+
+		border-right: 1px solid $light-grey;
+		gap: 3px;
+		padding-right: $sapphire-sizes--medium;
+
+		.AR & {
+			border-left: 1px solid $light-grey;
+			border-right: none;
+			padding-left: $sapphire-sizes--medium;
+			padding-right: 0;
+		}
+
+		.DateTimeRangePicker-displayed {
+			width: 132px;
+		}
+	}
+
+	&__Dropdown {
+		display: flex;
+		gap: $sapphire-sizes--small;
+	}
+
+	&__Buttons {
+		@include flex-center-vertically();
+	}
+}
+
+.ClinicalDocumentTable {
+	margin-top: $sapphire-sizes--large;
+	position: relative;
+
+	.CustomTable {
+		&.ExpandableRows {
+			tr.ActiveRow .ExpandLink::before {
+				content: attr(data-hide-text) ' ';
+			}
+
+			td {
+				.ExpandLink {
+					&::before {
+						content: attr(data-show-text) ' ';
+						display: inline-block;
+						min-width: 95px;
+					}
+
+					span.fa {
+						transform: rotate(0deg);
+					}
+				}
+
+				&:first-child {
+					width: 44px;
+
+					input[type='checkbox'] {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.TableRowExpandable {
+			background-color: $body-color;
+
+			&:hover {
+				background-color: $body-color !important;
+			}
+
+			td {
+				border-bottom: 1px solid $light-grey;
+				padding: $sapphire-sizes--small;
+				padding-bottom: $sapphire-sizes--medium;
+
+				&:first-child {
+					border-left: 1px solid $light-grey;
+				}
+
+				&:last-child {
+					border-right: 1px solid $light-grey;
+				}
+			}
+
+			.TableRowExpandable_Content.ColFirst {
+				background-color: $body-color;
+				border-left: 1px solid $light-grey;
+				border-right: 1px solid $light-grey;
+				height: 13px;
+				margin-left: -17px;
+				margin-top: -17px;
+				position: absolute;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.ClinicalDocumentSearch {
+		&__Filter {
+			.Search_wrapper {
+				input[type='text'] {
+					padding-left: 90px;
+					padding-right: 35px;
+				}
+			}
+
+			.Button {
+				left: 0;
+				right: unset;
+			}
+		}
+	}
+}
