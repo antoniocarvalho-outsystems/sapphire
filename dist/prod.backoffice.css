@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.110005 || Generated: Thu Apr 15 2021 17:18:10 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.110006 || Generated: Fri Apr 16 2021 14:52:03 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3125,8 +3125,8 @@ div[onclick] {
       display: none; }
     .TableRecords.ExpandableRows .Link.ChangeDown {
       display: inline-block; }
-    .TableRecords.ExpandableRows .ActiveRow .TableRecords_OddLine:first-child span.fa,
-    .TableRecords.ExpandableRows .ActiveRow .TableRecords_EvenLine:first-child span.fa {
+    .TableRecords.ExpandableRows .ActiveRow .TableRecords_OddLine .ExpandLink .fa,
+    .TableRecords.ExpandableRows .ActiveRow .TableRecords_EvenLine .ExpandLink .fa {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg); }
     .TableRecords.ExpandableRows .ActiveRow .Link.ChangeUp {
@@ -3135,14 +3135,10 @@ div[onclick] {
       display: none; }
     .TableRecords.ExpandableRows .TableRecords_OddLine:first-child {
       width: 60px; }
-    .TableRecords.ExpandableRows .TableRecords_OddLine:first-child span.fa,
-    .TableRecords.ExpandableRows .TableRecords_EvenLine:first-child span.fa {
+    .TableRecords.ExpandableRows .TableRecords_OddLine .ExpandLink .fa,
+    .TableRecords.ExpandableRows .TableRecords_EvenLine .ExpandLink .fa {
       -webkit-transform: rotate(-90deg);
-              transform: rotate(-90deg);
-      -webkit-transition: -webkit-transform 0.5s;
-      transition: -webkit-transform 0.5s;
-      transition: transform 0.5s;
-      transition: transform 0.5s, -webkit-transform 0.5s; }
+              transform: rotate(-90deg); }
   .TableRecords.CustomTable {
     border-collapse: separate;
     border-spacing: 0 8px; }
@@ -3165,7 +3161,7 @@ div[onclick] {
       vertical-align: middle; }
     .TableRecords.CustomTable .TableRecords_Header {
       height: 20px;
-      padding: 0 10px; }
+      padding: 0 8px; }
       .TableRecords.CustomTable .TableRecords_Header:empty {
         height: 0;
         padding: 0; }
@@ -3253,8 +3249,8 @@ div[onclick] {
       border-left: 1px solid #00bfa5; }
     .TableRecords_Wrapper.NoResponsive tr.ActiveRow td:last-child {
       border-right: 1px solid #00bfa5; }
-  .TableRecords_Wrapper.NoResponsive .ActiveRow .TableRecords_OddLine:first-child span.fa,
-  .TableRecords_Wrapper.NoResponsive .ActiveRow .TableRecords_EvenLine:first-child span.fa {
+  .TableRecords_Wrapper.NoResponsive .ActiveRow .TableRecords_OddLine .ExpandLink .fa,
+  .TableRecords_Wrapper.NoResponsive .ActiveRow .TableRecords_EvenLine .ExpandLink .fa {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
   .TableRecords_Wrapper.NoResponsive .TableRecords > tbody > tr:hover {
@@ -3269,15 +3265,25 @@ div[onclick] {
     .TableRecords_Wrapper.NoResponsive .TableRecords_Header a:link,
     .TableRecords_Wrapper.NoResponsive .TableRecords_Header a:visited {
       color: #5c5c5c; }
-  .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child span.fa, .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child span.fa {
+  .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine .ExpandLink .fa, .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine .ExpandLink .fa {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
   .TableRecords_Wrapper.NoResponsive .TableRecords_Header:first-child, .TableRecords_Wrapper.NoResponsive .TableRecords_OddLine:first-child, .TableRecords_Wrapper.NoResponsive .TableRecords_EvenLine:first-child {
     padding-left: 15px; }
   .TableRecords_ContentExpandable {
     display: contents; }
-  .TableRecords th.SortColumns_Sortable {
+  .TableRecords th.SortColumns_Sorted:hover,
+  .TableRecords th.SortColumns_Sortable:hover {
+    color: #00ac94;
+    text-decoration: none; }
+  .TableRecords th.SortColumns_Sorted {
     color: inherit; }
+    .TableRecords th.SortColumns_Sorted::after {
+      content: '\e913';
+      font-family: "Sapphire-Icon-Font";
+      margin: 0 4px; }
+  .TableRecords th.SortColumns--ascending::after {
+    content: '\e914'; }
   .TableRecords .LightGreen {
     color: #333333; }
   .TableRecords .TableRowExpandable {
