@@ -78,7 +78,7 @@
 					&::before {
 						content: attr(data-show-text) ' ';
 						display: inline-block;
-						min-width: 95px;
+						min-width: 93px;
 					}
 
 					span.fa {
@@ -99,7 +99,8 @@
 		.TableRowExpandable {
 			background-color: $body-color;
 
-			&:hover {
+			&:hover,
+			&:hover td {
 				background-color: $body-color !important;
 			}
 
