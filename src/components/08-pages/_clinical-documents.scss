@@ -1,4 +1,4 @@
-.ClinicalDocumentSearch {
+.ClinicalTabsSearch {
 	display: flex;
 	flex-wrap: wrap;
 	gap: $sapphire-sizes--large;
@@ -30,7 +30,8 @@
 	}
 
 	&__Options {
-		display: flex;
+		@include flex-center-vertically();
+
 		gap: $sapphire-sizes--medium;
 	}
 
@@ -58,8 +59,10 @@
 		gap: $sapphire-sizes--small;
 	}
 
-	&__Buttons {
+	&__Button {
 		@include flex-center-vertically();
+
+		gap: $sapphire-sizes--small;
 	}
 }
 
@@ -166,7 +169,7 @@
 
 .AR,
 .FA {
-	.ClinicalDocumentSearch {
+	.ClinicalTabsSearch {
 		&__Filter {
 			.Search_wrapper {
 				input[type='text'] {
