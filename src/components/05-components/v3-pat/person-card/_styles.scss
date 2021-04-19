@@ -3,6 +3,10 @@
 		.PersonCard_header {
 			border-bottom-left-radius: 0;
 			border-bottom-right-radius: 0;
+
+			.PersonCard__expandIcon {
+				transform: rotate(180deg);
+			}
 		}
 
 		.PersonCard_expandable {
@@ -26,7 +30,6 @@
 		border-radius: $border-radius-medium;
 		display: flex;
 		min-height: 56px;
-		overflow: hidden;
 
 		&:not(.IsTransparent).PersonCard__content {
 			background-color: $regular-white;
@@ -43,6 +46,18 @@
 			.PersonCard__headerLeftInfo {
 				cursor: pointer;
 				pointer-events: auto;
+			}
+
+			.PersonCard__expandIcon {
+				@include arrow-button($regular-beta, 20px, 0.7em);
+			}
+		}
+
+		&.IsExpandableDisabled {
+			.PersonCard__expandIcon {
+				@include arrow-button($light-grey, 20px, 0.7em);
+
+				pointer-events: none;
 			}
 		}
 
@@ -75,6 +90,7 @@
 
 		&.MediumPadding {
 			.PersonCard__headerLeftInfo {
+				gap: $sapphire-sizes--medium;
 				padding: $sapphire-sizes--medium;
 				padding-right: 0;
 			}
@@ -100,6 +116,7 @@
 		.PersonCard__content {
 			align-items: center;
 			background-color: $regular-white;
+			border-radius: $border-radius-medium;
 			display: flex;
 			flex: auto;
 			flex-basis: 100%;
@@ -188,15 +205,18 @@
 	}
 
 	&_expandable {
-		border: 1px solid $light-grey;
-		border-top: none;
-		display: none;
+		box-sizing: content-box;
+		height: 0;
+		overflow: hidden;
+		visibility: visible;
 
 		&.IsExpanded {
 			background-color: $regular-white;
+			border: 1px solid $light-grey;
 			border-bottom-left-radius: $border-radius-medium;
 			border-bottom-right-radius: $border-radius-medium;
-			display: block;
+			border-top: none;
+			height: auto;
 		}
 	}
 
@@ -204,6 +224,7 @@
 		@include flex-center-vertically;
 
 		background-color: $regular-white;
+		border-radius: $border-radius-medium;
 		padding: 10px $sapphire-sizes--medium;
 
 		&.IsLeftSideHide {
@@ -242,6 +263,7 @@
 		&.Unidentified {
 			.PersonCardIcon {
 				background-color: $body-color;
+				color: $regular-grey;
 			}
 
 			&.HasBorder {
@@ -271,10 +293,12 @@
 		}
 
 		&.Green {
+			background-color: $regular-white;
 			color: $dark-grey;
 
 			.PersonCardIcon {
 				background-color: $light-green;
+				color: $regular-green;
 			}
 
 			&.HasBorder {
@@ -367,6 +391,7 @@
 
 	&__actions {
 		background-color: $regular-white;
+		border-radius: $border-radius-medium;
 		max-width: 300px;
 		padding: 10px $sapphire-sizes--medium;
 
@@ -402,11 +427,11 @@
 		}
 	}
 
-	&___icon {
+	/*&___icon {
 		&:not(:empty) + .PersonCard____title {
 			margin-left: $sapphire-sizes--medium;
 		}
-	}
+	}*/
 
 	.PersonCardIcon {
 		@include flex-center-total(inline-flex);
@@ -475,6 +500,24 @@
 .ColoredBox {
 	height: 100%;
 	padding: 10px;
+}
+
+.CardTableHeader {
+	.PersonCard {
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+		text-transform: uppercase;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+
+		.PersonCard_header .PersonCard__content,
+		.PersonCard_header .PersonCard__headerLeftInfo {
+			color: $mid-light-grey;
+			padding: 9.5px $sapphire-sizes--medium;
+		}
+	}
 }
 
 .AR,

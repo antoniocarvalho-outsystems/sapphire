@@ -7,7 +7,7 @@
 		.IconDropdown {
 			&_button.Button {
 				background-color: $regular-eta;
-				border: 1px solid $regular-alpha;
+				border-color: $regular-alpha;
 			}
 		}
 	}
@@ -25,7 +25,7 @@
 
 		&:hover {
 			background-color: $regular-eta;
-			border: 1px solid $regular-alpha;
+			border-color: $regular-alpha;
 		}
 
 		> span.fa {
@@ -39,6 +39,32 @@
 			color: $regular-alpha;
 			height: 100%;
 			width: 36px;
+		}
+	}
+}
+
+.MoreActions {
+	.IconDropdown {
+		&_button {
+			@include flex-center-total;
+
+			border: none;
+			height: 30px;
+			min-width: 30px;
+			padding: 0;
+
+			span.fa {
+				color: $regular-beta;
+				font-family: $font-family-icons;
+
+				&::before {
+					content: '\e627';
+				}
+			}
+		}
+
+		.IconDown {
+			display: none;
 		}
 	}
 }

@@ -22,7 +22,8 @@
 
 	.PH > a,
 	.PH > span a,
-	.PH > span > div {
+	.PH > span > div,
+	.PH > .MenuLinkItem {
 		color: $text-color-regular;
 		display: block;
 		font-family: $font-family-latin-regular;
