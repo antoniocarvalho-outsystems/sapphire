@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110009 || Generated: Fri Apr 16 2021 16:50:44 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110010 || Generated: Mon Apr 19 2021 16:52:13 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12315,7 +12315,8 @@ html body {
     padding: 8px 0; }
   .DropdownMenu .PH > a,
   .DropdownMenu .PH > span a,
-  .DropdownMenu .PH > span > div {
+  .DropdownMenu .PH > span > div,
+  .DropdownMenu .PH > .MenuLinkItem {
     color: #333333;
     display: block;
     font-family: "LatoRegular";
@@ -12325,12 +12326,14 @@ html body {
     white-space: nowrap; }
     .DropdownMenu .PH > a:hover,
     .DropdownMenu .PH > span a:hover,
-    .DropdownMenu .PH > span > div:hover {
+    .DropdownMenu .PH > span > div:hover,
+    .DropdownMenu .PH > .MenuLinkItem:hover {
       background-color: #f2fffd;
       color: #333333; }
     .DropdownMenu .PH > a.Selected,
     .DropdownMenu .PH > span a.Selected,
-    .DropdownMenu .PH > span > div.Selected {
+    .DropdownMenu .PH > span > div.Selected,
+    .DropdownMenu .PH > .MenuLinkItem.Selected {
       background-color: #00bfa5;
       color: #fff; }
   .DropdownMenu div.ButtonCheckboxInp {
@@ -12442,7 +12445,7 @@ html body {
   width: fit-content; }
   .IconDropdown.open .IconDropdown_button.Button {
     background-color: #f2fffd;
-    border: 1px solid #00bfa5; }
+    border-color: #00bfa5; }
   .IconDropdown_button.Button {
     -webkit-box-align: center;
             align-items: center;
@@ -12457,7 +12460,7 @@ html body {
     padding: 0 0 0 12px; }
     .IconDropdown_button.Button:hover {
       background-color: #f2fffd;
-      border: 1px solid #00bfa5; }
+      border-color: #00bfa5; }
     .IconDropdown_button.Button > span.fa {
       color: #333333;
       font-size: 1.143em; }
@@ -12471,6 +12474,26 @@ html body {
       color: #00bfa5;
       height: 100%;
       width: 36px; }
+
+.MoreActions .IconDropdown_button {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  border: none;
+  height: 30px;
+  min-width: 30px;
+  padding: 0; }
+  .MoreActions .IconDropdown_button span.fa {
+    color: #00ac94;
+    font-family: "Sapphire-Icon-Font"; }
+    .MoreActions .IconDropdown_button span.fa::before {
+      content: '\e627'; }
+
+.MoreActions .IconDropdown .IconDown {
+  display: none; }
 
 .AR .IconDropdown_button.Button,
 .FA .IconDropdown_button.Button {
@@ -20641,6 +20664,7 @@ body.PanelById.PanelOpened {
 
 .PersonCardPreInfo {
   background-color: #ffffff;
+  border-radius: 8px;
   display: -webkit-box;
   display: flex;
   -webkit-box-flex: 1;
@@ -20704,309 +20728,356 @@ body.PanelById.PanelOpened {
 .tablet .PersonCardPreInfo .PersonCardPreInfo_Time.MinWidth600 {
   min-width: auto; }
 
-.PersonCard.IsOpen .PersonCard_header {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0; }
-
-.PersonCard.IsOpen .PersonCard_expandable {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px; }
-
-.PersonCard.IsOpen .PersonCard__content .PersonExpandableDiv {
-  background-color: #f2fffd; }
-
-.PersonCard.IsOpen .PersonExpandableDiv:before {
-  content: '\e611'; }
-
-.PersonCard_header {
-  -webkit-box-align: center;
-          align-items: center;
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: flex;
-  min-height: 56px;
-  overflow: hidden; }
-  .PersonCard_header:not(.IsTransparent).PersonCard__content {
-    background-color: #fff;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 10px 16px;
-    width: 100%; }
-  .PersonCard_header.IsExpandable .PersonCard__title,
-  .PersonCard_header.IsExpandable .PersonCard__content,
-  .PersonCard_header.IsExpandable .PersonCard__headerLeftInfo {
-    cursor: pointer;
-    pointer-events: auto; }
-  .PersonCard_header.IsTransparent {
-    background-color: transparent;
-    border: none;
-    height: unset;
-    min-height: 0px; }
-    .PersonCard_header.IsTransparent .PersonCard__actions a.Button, .PersonCard_header.IsTransparent .PersonCard__actions .DropZoneContainer .row .Button, .DropZoneContainer .row .PersonCard_header.IsTransparent .PersonCard__actions .Button {
-      height: auto;
-      line-height: unset; }
-    .PersonCard_header.IsTransparent .PersonCard__title,
-    .PersonCard_header.IsTransparent .PersonCard__actions,
-    .PersonCard_header.IsTransparent .PersonCard__content,
-    .PersonCard_header.IsTransparent .PersonCard__headerLeftInfo {
-      background-color: transparent; }
-  .PersonCard_header.NonePadding .PersonCard__actions,
-  .PersonCard_header.NonePadding .PersonCard__content,
-  .PersonCard_header.NonePadding .PersonCard__headerLeftInfo {
-    padding: 0; }
-  .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
-    padding: 16px;
-    padding-right: 0; }
-  .PersonCard_header.MediumPadding .PersonCard__content {
-    padding: 16px; }
-  .PersonCard_header.MediumPadding .PersonCard__actions {
-    padding: 16px;
-    padding-left: 0; }
-  .PersonCard_header.SmallPadding .PersonCard__actions,
-  .PersonCard_header.SmallPadding .PersonCard__content,
-  .PersonCard_header.SmallPadding .PersonCard__headerLeftInfo {
-    padding: 6px 16px; }
-  .PersonCard_header .PersonCard__content {
+.PersonCard {
+  /*&___icon {
+		&:not(:empty) + .PersonCard____title {
+			margin-left: $sapphire-sizes--medium;
+		}
+	}*/ }
+  .PersonCard.IsOpen .PersonCard_header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+    .PersonCard.IsOpen .PersonCard_header .PersonCard__expandIcon {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+  .PersonCard.IsOpen .PersonCard_expandable {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; }
+  .PersonCard.IsOpen .PersonCard__content .PersonExpandableDiv {
+    background-color: #f2fffd; }
+  .PersonCard.IsOpen .PersonExpandableDiv:before {
+    content: '\e611'; }
+  .PersonCard_header {
     -webkit-box-align: center;
             align-items: center;
     background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
     display: -webkit-box;
     display: flex;
-    -webkit-box-flex: 1;
-            flex: auto;
-    flex-basis: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 10px 16px; }
-    .PersonCard_header .PersonCard__content .Patient_Info > div {
-      width: 200px; }
-    .PersonCard_header .PersonCard__content.MinWidthXSmall > div:first-of-type {
-      min-width: 200px; }
-    .PersonCard_header .PersonCard__content.MinWidthSmall > div:first-of-type {
-      min-width: 400px; }
-    .PersonCard_header .PersonCard__content.MinWidthMedium > div:first-of-type {
-      min-width: 600px; }
-    .PersonCard_header .PersonCard__content.MinWidthLarge > div:first-of-type {
-      min-width: 800px; }
-    .PersonCard_header .PersonCard__content .MinWidthXSmall {
-      min-width: 50px; }
-    .PersonCard_header .PersonCard__content .MinWidthSmall {
-      min-width: 200px; }
-    .PersonCard_header .PersonCard__content .MinWidth300 {
-      min-width: 300px; }
-    .PersonCard_header .PersonCard__content .MinWidthMedium {
-      min-width: 400px; }
-    .PersonCard_header .PersonCard__content .MinWidthLarge {
-      min-width: 600px; }
-    .PersonCard_header .PersonCard__content .MaxWidthXSmall {
-      max-width: 50px; }
-    .PersonCard_header .PersonCard__content .MaxWidthSmall {
-      max-width: 200px; }
-    .PersonCard_header .PersonCard__content .MaxWidthMedium {
-      max-width: 400px; }
-    .PersonCard_header .PersonCard__content .MaxWidthLarge {
-      max-width: 600px; }
-    .PersonCard_header .PersonCard__content span > div {
-      flex-basis: 100%; }
-    .PersonCard_header .PersonCard__content span.ListRecords {
+    min-height: 56px; }
+    .PersonCard_header:not(.IsTransparent).PersonCard__content {
+      background-color: #fff;
       display: -webkit-box;
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
               flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 10px 16px;
       width: 100%; }
-  .PersonCard_header .PersonCard__content.Red,
-  .PersonCard_header .PersonCard__actions.Red {
-    background-color: #fce3e3;
-    color: inherit; }
-
-.PersonCard_expandable {
-  border: 1px solid #d6d6d6;
-  border-top: none;
-  display: none; }
-  .PersonCard_expandable.IsExpanded {
-    background-color: #fff;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    display: block; }
-
-.PersonCard__headerLeftInfo {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
-  background-color: #fff;
-  padding: 10px 16px; }
-  .PersonCard__headerLeftInfo.IsLeftSideHide {
-    display: none; }
-  .PersonCard__headerLeftInfo.Male .PersonCardIcon {
-    background-color: #f0faf9; }
-  .PersonCard__headerLeftInfo.Male.HasBorder {
-    border-left: 2px solid #194968; }
-    .PersonCard__headerLeftInfo.Male.HasBorder .icon {
-      color: #194968; }
-  .PersonCard__headerLeftInfo.Female .PersonCardIcon {
-    background-color: #feeced; }
-  .PersonCard__headerLeftInfo.Female.HasBorder {
-    border-left: 2px solid #c892b3; }
-    .PersonCard__headerLeftInfo.Female.HasBorder .icon {
-      color: #c892b3; }
-  .PersonCard__headerLeftInfo.Unidentified .PersonCardIcon {
-    background-color: #f3f3f3; }
-  .PersonCard__headerLeftInfo.Unidentified.HasBorder {
-    border-left: 2px solid #777777; }
-    .PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
-      color: #777777; }
-  .PersonCard__headerLeftInfo.Red {
-    background-color: #fff;
-    color: #333333; }
-    .PersonCard__headerLeftInfo.Red .PersonCardIcon {
-      background-color: #fce3e3; }
-    .PersonCard__headerLeftInfo.Red.HasBorder {
-      border-left: 2px solid #b10100; }
-      .PersonCard__headerLeftInfo.Red.HasBorder .icon {
-        color: #b10100; }
-  .PersonCard__headerLeftInfo.Green {
-    color: #333333; }
-    .PersonCard__headerLeftInfo.Green .PersonCardIcon {
-      background-color: #e7f2dc; }
-    .PersonCard__headerLeftInfo.Green.HasBorder {
-      border-left: 2px solid #578329; }
-      .PersonCard__headerLeftInfo.Green.HasBorder .icon {
-        color: #578329; }
-  .PersonCard__headerLeftInfo.Brown {
-    color: #333333; }
-    .PersonCard__headerLeftInfo.Brown .PersonCardIcon {
-      background-color: #e6e2aa; }
-    .PersonCard__headerLeftInfo.Brown.HasBorder {
-      border-left: 2px solid #928d09; }
-      .PersonCard__headerLeftInfo.Brown.HasBorder .icon {
-        color: #928d09; }
-  .PersonCard__headerLeftInfo.XSmall {
-    flex-basis: 9%; }
-    .PersonCard__headerLeftInfo.XSmall .PersonCard____title {
-      flex-basis: 100%; }
-  .PersonCard__headerLeftInfo.Small {
-    flex-basis: 20%; }
-  .PersonCard__headerLeftInfo.Medium {
-    flex-basis: 30%; }
-  .PersonCard__headerLeftInfo.Large {
-    flex-basis: 40%; }
-  .PersonCard__headerLeftInfo.XLarge {
-    flex-basis: 50%; }
-  .PersonCard__headerLeftInfo.Full {
-    flex-basis: 100%; }
-  .PersonCard__headerLeftInfo .PersonCard___flag {
-    margin-left: 8px; }
-    .PersonCard__headerLeftInfo .PersonCard___flag .FlagContainer {
-      height: auto; }
-
-.PersonCard____title > div.Flex, .PersonCard____title > div.FlexCenterFull, .PersonCard____title > div.FlexCenterVertical, .PersonCard____title > div.FlexCenterHorizontal, .PersonCard____title > div.FlexSpaceAround, .PersonCard____title > div.FlexSpaceBetween, .PersonCard____title > div.FlexSpaceEvenly, .PersonCard____title > div.FlexStart, .PersonCard____title > div.FlexEnd {
-  -webkit-box-align: center;
-          align-items: center; }
-
-.PersonCard__content {
-  gap: 16px; }
-  .PersonCard__content > div {
-    flex-basis: 100%;
-    margin: 0; }
-    .PersonCard__content > div:first-of-type {
+    .PersonCard_header.IsExpandable .PersonCard__title,
+    .PersonCard_header.IsExpandable .PersonCard__content,
+    .PersonCard_header.IsExpandable .PersonCard__headerLeftInfo {
+      cursor: pointer;
+      pointer-events: auto; }
+    .PersonCard_header.IsExpandable .PersonCard__expandIcon {
+      -webkit-box-align: center;
+              align-items: center;
+      background-color: transparent;
+      border: 2px solid #00ac94;
+      border-radius: 50%;
+      cursor: pointer;
+      display: -webkit-box;
+      display: flex;
+      height: 20px;
+      -webkit-box-pack: center;
+              justify-content: center;
+      text-align: center;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      width: 20px;
+      z-index: 1; }
+      .PersonCard_header.IsExpandable .PersonCard__expandIcon:before {
+        color: #00ac94;
+        content: '\e611';
+        font-family: "Sapphire-Icon-Font";
+        font-size: 0.7em; }
+      .PersonCard_header.IsExpandable .PersonCard__expandIcon:hover {
+        background-color: rgba(0, 172, 148, 0.1); }
+    .PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon {
+      -webkit-box-align: center;
+              align-items: center;
+      background-color: transparent;
+      border: 2px solid #d6d6d6;
+      border-radius: 50%;
+      cursor: pointer;
+      display: -webkit-box;
+      display: flex;
+      height: 20px;
+      -webkit-box-pack: center;
+              justify-content: center;
+      text-align: center;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      width: 20px;
+      z-index: 1;
+      pointer-events: none; }
+      .PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:before {
+        color: #d6d6d6;
+        content: '\e611';
+        font-family: "Sapphire-Icon-Font";
+        font-size: 0.7em; }
+      .PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:hover {
+        background-color: rgba(214, 214, 214, 0.1); }
+    .PersonCard_header.IsTransparent {
+      background-color: transparent;
+      border: none;
+      height: unset;
+      min-height: 0px; }
+      .PersonCard_header.IsTransparent .PersonCard__actions a.Button, .PersonCard_header.IsTransparent .PersonCard__actions .DropZoneContainer .row .Button, .DropZoneContainer .row .PersonCard_header.IsTransparent .PersonCard__actions .Button {
+        height: auto;
+        line-height: unset; }
+      .PersonCard_header.IsTransparent .PersonCard__title,
+      .PersonCard_header.IsTransparent .PersonCard__actions,
+      .PersonCard_header.IsTransparent .PersonCard__content,
+      .PersonCard_header.IsTransparent .PersonCard__headerLeftInfo {
+        background-color: transparent; }
+    .PersonCard_header.NonePadding .PersonCard__actions,
+    .PersonCard_header.NonePadding .PersonCard__content,
+    .PersonCard_header.NonePadding .PersonCard__headerLeftInfo {
+      padding: 0; }
+    .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
+      gap: 16px;
+      padding: 16px;
+      padding-right: 0; }
+    .PersonCard_header.MediumPadding .PersonCard__content {
+      padding: 16px; }
+    .PersonCard_header.MediumPadding .PersonCard__actions {
+      padding: 16px;
       padding-left: 0; }
-
-.PersonCard__title:empty ~ .PersonCard__content > div {
-  padding: 0; }
-
-.PersonCard__actions {
-  background-color: #fff;
-  max-width: 300px;
-  padding: 10px 16px; }
-  .PersonCard__actions_width_Small {
+    .PersonCard_header.SmallPadding .PersonCard__actions,
+    .PersonCard_header.SmallPadding .PersonCard__content,
+    .PersonCard_header.SmallPadding .PersonCard__headerLeftInfo {
+      padding: 6px 16px; }
+    .PersonCard_header .PersonCard__content {
+      -webkit-box-align: center;
+              align-items: center;
+      background-color: #fff;
+      border-radius: 8px;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-flex: 1;
+              flex: auto;
+      flex-basis: 100%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 10px 16px; }
+      .PersonCard_header .PersonCard__content .Patient_Info > div {
+        width: 200px; }
+      .PersonCard_header .PersonCard__content.MinWidthXSmall > div:first-of-type {
+        min-width: 200px; }
+      .PersonCard_header .PersonCard__content.MinWidthSmall > div:first-of-type {
+        min-width: 400px; }
+      .PersonCard_header .PersonCard__content.MinWidthMedium > div:first-of-type {
+        min-width: 600px; }
+      .PersonCard_header .PersonCard__content.MinWidthLarge > div:first-of-type {
+        min-width: 800px; }
+      .PersonCard_header .PersonCard__content .MinWidthXSmall {
+        min-width: 50px; }
+      .PersonCard_header .PersonCard__content .MinWidthSmall {
+        min-width: 200px; }
+      .PersonCard_header .PersonCard__content .MinWidth300 {
+        min-width: 300px; }
+      .PersonCard_header .PersonCard__content .MinWidthMedium {
+        min-width: 400px; }
+      .PersonCard_header .PersonCard__content .MinWidthLarge {
+        min-width: 600px; }
+      .PersonCard_header .PersonCard__content .MaxWidthXSmall {
+        max-width: 50px; }
+      .PersonCard_header .PersonCard__content .MaxWidthSmall {
+        max-width: 200px; }
+      .PersonCard_header .PersonCard__content .MaxWidthMedium {
+        max-width: 400px; }
+      .PersonCard_header .PersonCard__content .MaxWidthLarge {
+        max-width: 600px; }
+      .PersonCard_header .PersonCard__content span > div {
+        flex-basis: 100%; }
+      .PersonCard_header .PersonCard__content span.ListRecords {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
+        width: 100%; }
+    .PersonCard_header .PersonCard__content.Red,
+    .PersonCard_header .PersonCard__actions.Red {
+      background-color: #fce3e3;
+      color: inherit; }
+  .PersonCard_expandable {
+    box-sizing: content-box;
+    height: 0;
+    overflow: hidden;
+    visibility: visible; }
+    .PersonCard_expandable.IsExpanded {
+      background-color: #fff;
+      border: 1px solid #d6d6d6;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top: none;
+      height: auto; }
+  .PersonCard__headerLeftInfo {
+    -webkit-box-align: center;
+            align-items: center;
     display: -webkit-box;
     display: flex;
-    flex-basis: 10%;
-    -webkit-box-pack: end;
-            justify-content: flex-end; }
-  .PersonCard__actions_width_Medium {
-    display: -webkit-box;
-    display: flex;
-    flex-basis: 15%;
-    -webkit-box-pack: end;
-            justify-content: flex-end; }
-  .PersonCard__actions_width_Large {
-    flex-basis: 30%;
-    max-width: unset; }
-
-.PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
-  padding-left: 0; }
-
-.PersonCard__Complementary:not(:empty) ~ .PersonCard__actions_width_Medium {
-  flex-basis: 20%; }
-
-.PersonCard__Complementary .PersonCardPreInfo {
-  height: 100%; }
-
-.PersonCard___icon:not(:empty) + .PersonCard____title {
-  margin-left: 16px; }
-
-.PersonCard .PersonCardIcon {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: inline-flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  background-color: #ebebeb;
-  border-radius: 8px;
-  height: 48px;
-  max-width: 48px;
-  width: 48px; }
-
-.PersonCard .CardAll {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex; }
-  .PersonCard .CardAll .Description {
-    line-height: inherit;
-    overflow: inherit;
-    text-overflow: inherit;
-    white-space: inherit;
-    width: 100%; }
-  .PersonCard .CardAll .DescriptionContainer {
-    align-self: center;
-    display: -webkit-box;
-    display: flex;
-    font-size: inherit;
-    line-height: inherit; }
-  .PersonCard .CardAll .Small_Description {
-    overflow: inherit;
-    text-overflow: inherit;
-    white-space: inherit;
-    width: 100%; }
-
-.PersonCard .DescriptionContainer {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column; }
-  .PersonCard .DescriptionContainer > .Description,
-  .PersonCard .DescriptionContainer > .Small_Description {
-    align-self: center;
-    -webkit-box-flex: 1;
-            flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 16px; }
+    .PersonCard__headerLeftInfo.IsLeftSideHide {
+      display: none; }
+    .PersonCard__headerLeftInfo.Male .PersonCardIcon {
+      background-color: #f0faf9; }
+    .PersonCard__headerLeftInfo.Male.HasBorder {
+      border-left: 2px solid #194968; }
+      .PersonCard__headerLeftInfo.Male.HasBorder .icon {
+        color: #194968; }
+    .PersonCard__headerLeftInfo.Female .PersonCardIcon {
+      background-color: #feeced; }
+    .PersonCard__headerLeftInfo.Female.HasBorder {
+      border-left: 2px solid #c892b3; }
+      .PersonCard__headerLeftInfo.Female.HasBorder .icon {
+        color: #c892b3; }
+    .PersonCard__headerLeftInfo.Unidentified .PersonCardIcon {
+      background-color: #f3f3f3;
+      color: #777777; }
+    .PersonCard__headerLeftInfo.Unidentified.HasBorder {
+      border-left: 2px solid #777777; }
+      .PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
+        color: #777777; }
+    .PersonCard__headerLeftInfo.Red {
+      background-color: #fff;
+      color: #333333; }
+      .PersonCard__headerLeftInfo.Red .PersonCardIcon {
+        background-color: #fce3e3; }
+      .PersonCard__headerLeftInfo.Red.HasBorder {
+        border-left: 2px solid #b10100; }
+        .PersonCard__headerLeftInfo.Red.HasBorder .icon {
+          color: #b10100; }
+    .PersonCard__headerLeftInfo.Green {
+      background-color: #fff;
+      color: #333333; }
+      .PersonCard__headerLeftInfo.Green .PersonCardIcon {
+        background-color: #e7f2dc;
+        color: #7cb342; }
+      .PersonCard__headerLeftInfo.Green.HasBorder {
+        border-left: 2px solid #578329; }
+        .PersonCard__headerLeftInfo.Green.HasBorder .icon {
+          color: #578329; }
+    .PersonCard__headerLeftInfo.Brown {
+      color: #333333; }
+      .PersonCard__headerLeftInfo.Brown .PersonCardIcon {
+        background-color: #e6e2aa; }
+      .PersonCard__headerLeftInfo.Brown.HasBorder {
+        border-left: 2px solid #928d09; }
+        .PersonCard__headerLeftInfo.Brown.HasBorder .icon {
+          color: #928d09; }
+    .PersonCard__headerLeftInfo.XSmall {
+      flex-basis: 9%; }
+      .PersonCard__headerLeftInfo.XSmall .PersonCard____title {
+        flex-basis: 100%; }
+    .PersonCard__headerLeftInfo.Small {
+      flex-basis: 20%; }
+    .PersonCard__headerLeftInfo.Medium {
+      flex-basis: 30%; }
+    .PersonCard__headerLeftInfo.Large {
+      flex-basis: 40%; }
+    .PersonCard__headerLeftInfo.XLarge {
+      flex-basis: 50%; }
+    .PersonCard__headerLeftInfo.Full {
+      flex-basis: 100%; }
+    .PersonCard__headerLeftInfo .PersonCard___flag {
+      margin-left: 8px; }
+      .PersonCard__headerLeftInfo .PersonCard___flag .FlagContainer {
+        height: auto; }
+  .PersonCard____title > div.Flex, .PersonCard____title > div.FlexCenterFull, .PersonCard____title > div.FlexCenterVertical, .PersonCard____title > div.FlexCenterHorizontal, .PersonCard____title > div.FlexSpaceAround, .PersonCard____title > div.FlexSpaceBetween, .PersonCard____title > div.FlexSpaceEvenly, .PersonCard____title > div.FlexStart, .PersonCard____title > div.FlexEnd {
+    -webkit-box-align: center;
+            align-items: center; }
+  .PersonCard__content {
+    gap: 16px; }
+    .PersonCard__content > div {
+      flex-basis: 100%;
+      margin: 0; }
+      .PersonCard__content > div:first-of-type {
+        padding-left: 0; }
+  .PersonCard__title:empty ~ .PersonCard__content > div {
     padding: 0; }
-
-.PersonCard .PersonExpandableDiv:before {
-  content: '\e610'; }
+  .PersonCard__actions {
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 300px;
+    padding: 10px 16px; }
+    .PersonCard__actions_width_Small {
+      display: -webkit-box;
+      display: flex;
+      flex-basis: 10%;
+      -webkit-box-pack: end;
+              justify-content: flex-end; }
+    .PersonCard__actions_width_Medium {
+      display: -webkit-box;
+      display: flex;
+      flex-basis: 15%;
+      -webkit-box-pack: end;
+              justify-content: flex-end; }
+    .PersonCard__actions_width_Large {
+      flex-basis: 30%;
+      max-width: unset; }
+  .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
+    padding-left: 0; }
+  .PersonCard__Complementary:not(:empty) ~ .PersonCard__actions_width_Medium {
+    flex-basis: 20%; }
+  .PersonCard__Complementary .PersonCardPreInfo {
+    height: 100%; }
+  .PersonCard .PersonCardIcon {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    height: 48px;
+    max-width: 48px;
+    width: 48px; }
+  .PersonCard .CardAll {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex; }
+    .PersonCard .CardAll .Description {
+      line-height: inherit;
+      overflow: inherit;
+      text-overflow: inherit;
+      white-space: inherit;
+      width: 100%; }
+    .PersonCard .CardAll .DescriptionContainer {
+      align-self: center;
+      display: -webkit-box;
+      display: flex;
+      font-size: inherit;
+      line-height: inherit; }
+    .PersonCard .CardAll .Small_Description {
+      overflow: inherit;
+      text-overflow: inherit;
+      white-space: inherit;
+      width: 100%; }
+  .PersonCard .DescriptionContainer {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
+    .PersonCard .DescriptionContainer > .Description,
+    .PersonCard .DescriptionContainer > .Small_Description {
+      align-self: center;
+      -webkit-box-flex: 1;
+              flex: 1;
+      padding: 0; }
+  .PersonCard .PersonExpandableDiv:before {
+    content: '\e610'; }
 
 .PersonExpandableDiv {
   position: relative; }
@@ -21019,6 +21090,17 @@ body.PanelById.PanelOpened {
 .ColoredBox {
   height: 100%;
   padding: 10px; }
+
+.CardTableHeader .PersonCard {
+  font-family: "LatoBold";
+  font-size: 0.857em;
+  text-transform: uppercase; }
+  .AR .CardTableHeader .PersonCard {
+    font-family: "TajawalBold"; }
+  .CardTableHeader .PersonCard .PersonCard_header .PersonCard__content,
+  .CardTableHeader .PersonCard .PersonCard_header .PersonCard__headerLeftInfo {
+    color: #adadad;
+    padding: 9.5px 16px; }
 
 .AR .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo,
 .FA .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
@@ -24293,7 +24375,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .select2-container .select2-dropdown {
   border: 1px solid #d6d6d6;
   border-radius: 4px;
-  min-width: 170px;
+  min-width: 215px;
   overflow: hidden; }
   .select2-container .select2-dropdown--below {
     margin-top: 4px; }
@@ -30373,8 +30455,8 @@ ul.os-internal-ui-autocomplete {
       border-right: none;
       padding-left: 16px;
       padding-right: 0; }
-    .ClinicalTabsSearch__Dates .DateTimeRangePicker-displayed {
-      width: 132px; }
+    .ClinicalTabsSearch__Dates .DateTimeRangePicker {
+      max-width: 130px; }
   .ClinicalTabsSearch__Dropdown {
     display: -webkit-box;
     display: flex;
