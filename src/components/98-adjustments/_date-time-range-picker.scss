@@ -22,11 +22,13 @@ body.PanelOpened .daterangepicker {
 	width: 100%;
 
 	.AR & {
+		.DateTimeRangePicker-input:before,
 		.DateTimeRangePicker-displayed:before {
 			right: auto;
 		}
 	}
 
+	.DateTimeRangePicker-input:before,
 	.DateTimeRangePicker-displayed:before {
 		right: $sapphire-sizes--medium;
 	}

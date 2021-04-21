@@ -49,7 +49,7 @@
 			}
 
 			.PersonCard__expandIcon {
-				@include arrow-button($regular-beta, 20px, 0.7em);
+				@include arrow-button($dark-grey, 20px, 0.7em);
 			}
 		}
 

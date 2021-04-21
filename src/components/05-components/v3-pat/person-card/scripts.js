@@ -8,19 +8,15 @@ $(document).ready(function() {
 				$content = $header.next();
 
 				if ($content.children().length > 0) {
-					//$content.slideToggle(500);
+					const $card = $(this).closest('.PersonCard');
+
 					$content.removeClass('IsExpanded');
 
-					if ($('.PersonCard.IsOpen').length > 0) {
-						$(this)
-							.closest('.PersonCard')
-							.removeClass('IsOpen');
-					} else {
+					if ($card.hasClass('IsOpen')) $card.removeClass('IsOpen');
+					else {
 						$content.addClass('IsExpanded');
 
-						$(this)
-							.closest('.PersonCard')
-							.addClass('IsOpen');
+						$card.addClass('IsOpen');
 					}
 				}
 			});
