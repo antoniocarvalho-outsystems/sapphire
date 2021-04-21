@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110010 || Generated: Mon Apr 19 2021 16:52:13 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110011 || Generated: Wed Apr 21 2021 12:21:39 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20775,7 +20775,7 @@ body.PanelById.PanelOpened {
       -webkit-box-align: center;
               align-items: center;
       background-color: transparent;
-      border: 2px solid #00ac94;
+      border: 2px solid #333333;
       border-radius: 50%;
       cursor: pointer;
       display: -webkit-box;
@@ -20789,12 +20789,12 @@ body.PanelById.PanelOpened {
       width: 20px;
       z-index: 1; }
       .PersonCard_header.IsExpandable .PersonCard__expandIcon:before {
-        color: #00ac94;
+        color: #333333;
         content: '\e611';
         font-family: "Sapphire-Icon-Font";
         font-size: 0.7em; }
       .PersonCard_header.IsExpandable .PersonCard__expandIcon:hover {
-        background-color: rgba(0, 172, 148, 0.1); }
+        background-color: rgba(51, 51, 51, 0.1); }
     .PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon {
       -webkit-box-align: center;
               align-items: center;
@@ -27220,32 +27220,34 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
       border-bottom: solid 1px #d6d6d6;
       min-width: 100px;
       overflow: hidden;
-      padding: 3px; }
+      padding: 4px; }
       .TabularScroll-center td:not(:first-child) {
         border-left: solid 1px #d6d6d6; }
   .TabularScroll-left {
-    font-weight: 700;
+    font-family: "LatoBold";
     min-width: 200px;
-    padding-top: 21px; }
+    padding-top: 22px; }
     .TabularScroll-left .TabularScrollItem {
       border-right: solid thin #d6d6d6; }
   .TabularScroll-right {
-    font-weight: 700;
+    font-family: "LatoBold";
     min-width: 200px;
-    padding-top: 21px; }
+    padding-top: 22px; }
     .TabularScroll-right .TabularScrollItem {
       border-left: solid thin #d6d6d6; }
   .TabularScroll .TabularScrollItem {
     border-bottom: solid thin #d6d6d6;
     box-sizing: border-box;
     display: block;
-    padding: 3px; }
+    padding: 4px; }
+    .TabularScroll .TabularScrollItem > div {
+      line-height: 16px; }
   .TabularScroll .VariationItem-value {
     display: inline-block;
     text-align: left; }
 
 .TopScrollWrapper {
-  height: 20px;
+  height: 18px;
   overflow-x: auto;
   overflow-y: hidden;
   visibility: hidden;
@@ -27263,6 +27265,12 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 .TopScrollWrapper::-webkit-scrollbar-thumb,
 .TabularScroll-center-table::-webkit-scrollbar-thumb {
   border: 5px solid #00bfa5; }
+
+.TabularScrollCenterContent .TabularScroll .TabularScrollItem {
+  line-height: 2.3; }
+
+.TabularScrollCenterContent .TabularScroll-center td {
+  vertical-align: middle; }
 
 .AR .TabularScroll-left .TabularScrollItem,
 .FA .TabularScroll-left .TabularScrollItem {
@@ -30456,7 +30464,8 @@ ul.os-internal-ui-autocomplete {
       padding-left: 16px;
       padding-right: 0; }
     .ClinicalTabsSearch__Dates .DateTimeRangePicker {
-      max-width: 130px; }
+      max-width: 130px;
+      min-width: 130px; }
   .ClinicalTabsSearch__Dropdown {
     display: -webkit-box;
     display: flex;
@@ -31454,8 +31463,10 @@ body.PanelOpened .daterangepicker {
 
 .InputFilter .DateTimeRangePicker {
   width: 100%; }
+  .AR .InputFilter .DateTimeRangePicker .DateTimeRangePicker-input:before,
   .AR .InputFilter .DateTimeRangePicker .DateTimeRangePicker-displayed:before {
     right: auto; }
+  .InputFilter .DateTimeRangePicker .DateTimeRangePicker-input:before,
   .InputFilter .DateTimeRangePicker .DateTimeRangePicker-displayed:before {
     right: 16px; }
 
