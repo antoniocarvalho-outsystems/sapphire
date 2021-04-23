@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110012 || Generated: Fri Apr 23 2021 10:14:09 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110013 || Generated: Fri Apr 23 2021 17:00:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22909,15 +22909,15 @@ div.List-Star {
   .SearchSD .SearchSD___remove {
     -webkit-box-align: center;
             align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
     background-color: #ffffff;
     border: 1px solid #d6d6d6;
     border-radius: 50%;
     cursor: pointer;
-    display: -webkit-box;
-    display: flex;
     height: 28px;
-    -webkit-box-pack: center;
-            justify-content: center;
     position: absolute;
     right: 6px;
     top: 50%;
@@ -22944,6 +22944,12 @@ div.List-Star {
     border-bottom-left-radius: 0;
     border-left-color: transparent;
     border-top-left-radius: 0; }
+    .SearchSD.hasFavorite .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input::before {
+      width: 36px; }
+    .SearchSD.hasFavorite .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text'] {
+      padding: 0 36px; }
+  .SearchSD.hasFavorite .SelectSD_contentWrapper {
+    padding: 0 8px; }
   .SearchSD.hasFavorite .SearchSD__star {
     -webkit-box-align: center;
             align-items: center;
@@ -22951,6 +22957,8 @@ div.List-Star {
     display: flex;
     -webkit-box-pack: center;
             justify-content: center; }
+    .SearchSD.hasFavorite .SearchSD__star .icon {
+      font-size: 1.286em; }
   .SearchSD.hasClone.Open .SearchSD_search .SearchSD__cloneWrapper {
     border-bottom-right-radius: 0; }
   .SearchSD.hasClone .SearchSD_search .SearchSD__inputWrapper {
@@ -22960,40 +22968,33 @@ div.List-Star {
     border-top-right-radius: 0;
     width: 100%; }
   .SearchSD.hasClone .SearchSD_search .SearchSD__cloneWrapper {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
     background-color: #f2fffd;
     border: 1px solid #d6d6d6;
-    border-bottom-right-radius: 23px;
-    border-top-right-radius: 23px;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
     cursor: pointer;
-    display: table-cell;
-    font-size: 1.143em;
-    padding: 0;
-    vertical-align: middle;
+    gap: 16px;
+    padding: 0 16px;
     width: 248px; }
     .SearchSD.hasClone .SearchSD_search .SearchSD__cloneWrapper:before {
       color: #00bfa5;
-      content: '\e615';
+      content: "";
       font-family: "Sapphire-Icon-Font";
-      font-size: 1.143em;
       font-style: normal;
       font-variant: normal;
       font-weight: normal;
-      padding-right: 16px;
-      pointer-events: none;
-      position: absolute;
       text-transform: none;
-      top: 10px;
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg);
-      z-index: 1; }
+      z-index: 1;
+      font-size: 1.143em;
+      pointer-events: none; }
   .SearchSD.hasClone .SearchSD_search .SearchSD___cloneTitle {
-    color: #adadad;
-    display: inline-block;
-    font-size: inherit;
-    height: 100%;
-    line-height: 46px;
-    padding-left: 48px;
-    width: 100%; }
+    color: #adadad; }
   .SearchSD.hasClone.showClone .SearchSD__inputWrapper {
     cursor: pointer; }
     .SearchSD.hasClone.showClone .SearchSD__inputWrapper input {
@@ -23013,6 +23014,10 @@ div.List-Star {
     color: #fff; }
     .SearchSD.showFavorite .SearchSD_search .SearchSD_search_favoriteLink:hover {
       background-color: #00bfa5; }
+    .SearchSD.showFavorite .SearchSD_search .SearchSD_search_favoriteLink .SearchSD__star {
+      gap: 24px; }
+      .SearchSD.showFavorite .SearchSD_search .SearchSD_search_favoriteLink .SearchSD__star::after {
+        content: attr(data-title); }
   .SearchSD.showFavorite .SearchSD__inputWrapper {
     border-right: none; }
   .SearchSD.showFavorite .SearchSD__cloneWrapper {
@@ -23036,25 +23041,27 @@ div.List-Star {
   .SearchSD span.ListRecords > span:not(:first-child) {
     border-top: none; }
   .SearchSD .SearchSD_search {
-    display: table;
+    display: -webkit-box;
+    display: flex;
     height: 48px;
     position: relative;
     width: 100%; }
     .SearchSD .SearchSD_search .SearchSD_search_favoriteLink {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
       background-color: #fff;
       border: 1px solid #d6d6d6;
       border-bottom-left-radius: 24px;
       border-top-left-radius: 24px;
       color: #00bfa5;
       cursor: pointer;
-      display: table-cell;
       min-width: 48px;
-      text-align: center;
-      text-decoration: none;
-      -webkit-transition: all 0.1s ease-in;
-      transition: all 0.1s ease-in;
-      vertical-align: middle;
-      width: 48px; }
+      padding: 0 14px;
+      text-decoration: none; }
       .SearchSD .SearchSD_search .SearchSD_search_favoriteLink:hover {
         background-color: #f2fffd;
         border-color: #00bfa5; }
@@ -23062,11 +23069,11 @@ div.List-Star {
       background-color: #ffffff;
       border: 1px solid #d6d6d6;
       border-radius: 24px;
-      display: table-cell;
+      -webkit-box-flex: 1;
+              flex: 1;
       position: relative;
       -webkit-transition: all 0.1s ease-in;
-      transition: all 0.1s ease-in;
-      vertical-align: middle; }
+      transition: all 0.1s ease-in; }
       .SearchSD .SearchSD_search .SearchSD__inputWrapper:hover {
         background-color: #f2fffd;
         border-color: #00bfa5; }
@@ -23090,7 +23097,6 @@ div.List-Star {
             background-color: transparent !important;
             border: 0;
             box-shadow: none;
-            font-size: 1.143em;
             height: 100%;
             padding: 0 48px;
             width: 95%; }
@@ -23119,32 +23125,36 @@ div.List-Star {
             -webkit-box-pack: center;
                     justify-content: center;
             color: #adadad;
-            content: '\e690';
+            content: "";
             font-family: "Sapphire-Icon-Font";
-            font-size: 1.143em;
             font-style: normal;
             font-variant: normal;
             font-weight: normal;
-            height: 100%;
-            pointer-events: none;
-            position: absolute;
             text-transform: none;
             -webkit-transform: rotateY(180deg);
                     transform: rotateY(180deg);
-            width: 48px;
-            z-index: 1; }
+            z-index: 1;
+            height: 100%;
+            pointer-events: none;
+            position: absolute;
+            width: 48px; }
     .SearchSD .SearchSD_search .SearchSD__FavoriteCounter {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
       color: #adadad;
-      display: table-cell;
-      font-size: 1.143em;
-      padding-left: 16px;
-      vertical-align: middle;
-      width: 30%; }
+      -webkit-box-flex: 1;
+              flex: 1;
+      padding-left: 8px; }
     .SearchSD .SearchSD_search .SearchSD__FavoriteActions {
-      display: table-cell;
-      padding: 0 16px;
-      text-align: right;
-      vertical-align: middle; }
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: end;
+              justify-content: flex-end;
+      padding: 0 16px; }
       .SearchSD .SearchSD_search .SearchSD__FavoriteActions > div {
         opacity: 0;
         -webkit-transition: visibility 0.3s, opacity 0.3s linear;
@@ -23153,49 +23163,36 @@ div.List-Star {
     .SearchSD .SearchSD_search .SearchSD__FavoriteActionsCancel,
     .SearchSD .SearchSD_search .SearchSD__FavoriteActionsAdd {
       display: inline-block; }
-    .SearchSD .SearchSD_search .SearchSD__FavoriteActionsCancel {
-      line-height: 36px; }
-      .SearchSD .SearchSD_search .SearchSD__FavoriteActionsCancel a,
-      .SearchSD .SearchSD_search .SearchSD__FavoriteActionsCancel a:link {
-        color: #00bfa5;
-        font-family: "LatoBold"; }
     .SearchSD .SearchSD_search .SearchSD___BackToSearch {
       border-bottom-right-radius: 24px;
       border-top-right-radius: 24px;
       color: #adadad;
-      height: 100%;
-      line-height: 46px;
-      padding-left: 48px;
-      padding-right: 16px;
-      white-space: nowrap;
-      width: 100%; }
+      white-space: nowrap; }
     .SearchSD .SearchSD_search .SearchSD__FavoriteRemove {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
       background-color: #f2fffd;
       border: 1px solid #d6d6d6;
       border-top-right-radius: 24px;
       color: #adadad;
-      display: table-cell;
       font-family: "LatoRegular";
-      font-size: 1.143em;
-      padding: 0;
-      vertical-align: middle;
+      gap: 16px;
+      padding: 0 16px;
       width: 248px; }
       .SearchSD .SearchSD_search .SearchSD__FavoriteRemove:before {
         color: #00bfa5;
-        content: '\e690';
+        content: "";
         font-family: "Sapphire-Icon-Font";
-        font-size: 1.143em;
         font-style: normal;
         font-variant: normal;
         font-weight: normal;
-        padding-right: 16px;
-        pointer-events: none;
-        position: absolute;
         text-transform: none;
-        top: 10px;
         -webkit-transform: rotateY(180deg);
                 transform: rotateY(180deg);
-        z-index: 1; }
+        z-index: 1;
+        pointer-events: none; }
   .SearchSD .SearchSD_content {
     border: 1px solid #d6d6d6;
     border-bottom-left-radius: 24px;
@@ -23258,33 +23255,35 @@ div.List-Star {
       .SearchSD .SearchSD_content .SearchSD_showMore a {
         display: inline-block;
         width: 100%; }
+  .SearchSD .SearchSD_contentList {
+    padding: 8px 0; }
   .SearchSD .SearchSD_filterfavorites {
     display: none; }
     .SearchSD .SearchSD_filterfavorites > span:after {
-      font-size: 1.286em;
       padding-right: 16px;
       top: 16px; }
     .SearchSD .SearchSD_filterfavorites > span:before {
       color: #adadad;
-      content: '\e690';
+      content: "";
       font-family: "Sapphire-Icon-Font";
-      font-size: 1.286em;
-      left: 16px;
-      position: absolute;
-      top: 12px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      text-transform: none;
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg);
-      z-index: 1; }
+      z-index: 1;
+      left: 16px;
+      position: absolute;
+      top: 13px; }
     .SearchSD .SearchSD_filterfavorites > span input[type='text'] {
       border-bottom-color: #d6d6d6;
       border-left: none;
       border-radius: 0;
       border-right: none;
       border-top: none;
-      font-size: 1.143em;
       height: 48px;
-      line-height: 48px;
-      padding: 0 64px;
+      padding: 0 56px;
       position: relative;
       width: 100%; }
       .SearchSD .SearchSD_filterfavorites > span input[type='text']:hover, .SearchSD .SearchSD_filterfavorites > span input[type='text']:focus {
@@ -23312,6 +23311,41 @@ div.List-Star {
                   transform: rotate(0); }
   .SearchSD .highlight {
     background-color: transparent; }
+  .SearchSD--small.hasFavorite a.SelectSD__starLink {
+    width: 36px; }
+    .SearchSD--small.hasFavorite a.SelectSD__starLink .SelectSD__starWrapper .icon {
+      font-size: 1em; }
+  .SearchSD--small.hasFavorite .SearchSD_search .SearchSD_search_favoriteLink {
+    min-width: 36px;
+    padding: 0 8px; }
+    .SearchSD--small.hasFavorite .SearchSD_search .SearchSD_search_favoriteLink .SearchSD__star .icon {
+      font-size: 1em; }
+  .SearchSD--small.hasFavorite .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input::before {
+    width: 32px; }
+  .SearchSD--small.hasFavorite .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text'] {
+    padding: 0 32px; }
+  .SearchSD--small.hasFavorite .SearchSD_search .SearchSD__FavoriteRemove {
+    gap: 8px;
+    padding: 0 8px; }
+  .SearchSD--small.hasClone .SearchSD_search .SearchSD__cloneWrapper {
+    gap: 8px;
+    padding: 0 8px; }
+  .SearchSD--small.showFavorite .SearchSD_search .SearchSD_search_favoriteLink {
+    padding: 0 12px; }
+    .SearchSD--small.showFavorite .SearchSD_search .SearchSD_search_favoriteLink .SearchSD__star {
+      gap: 18px; }
+  .SearchSD--small .SearchSD_search {
+    height: 36px; }
+    .SearchSD--small .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input::before {
+      width: 36px; }
+    .SearchSD--small .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text'] {
+      padding: 0 36px; }
+  .SearchSD--small .SearchSD_content .SearchSD_filterfavorites > span:before {
+    left: 12px;
+    top: 8px; }
+  .SearchSD--small .SearchSD_content .SearchSD_filterfavorites > span input[type='text'] {
+    height: 36px;
+    padding: 0 46px; }
 
 /**
 * ListRecords inside SearchSD_content must have EmptySelectableList class
@@ -23359,7 +23393,6 @@ div.List-Star {
   100% {
     max-width: 150px; } }
 
-/*AR and FA*/
 .AR .SearchSD .SearchSD___remove,
 .FA .SearchSD .SearchSD___remove {
   left: 33px;
@@ -23445,9 +23478,12 @@ div.List-Star {
   right: unset; }
 
 .SelectSD {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
   background-color: #ffffff;
-  display: table;
-  min-height: 58px;
+  min-height: 48px;
   width: 100%; }
   .SelectSD .SelectSD--disabled {
     pointer-events: none; }
@@ -23456,37 +23492,36 @@ div.List-Star {
     .SelectSD .SelectSD--disabled .SelectSD__starLink {
       pointer-events: all; }
   .SelectSD.hasFavorite .SelectSD__starLink {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
     color: #d6d6d6;
-    display: table-cell;
-    padding: 16px 0;
-    text-align: center;
-    vertical-align: middle;
     width: 48px; }
-    .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper {
-      height: 100%;
-      width: 100%; }
-      .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper.starActive .icon {
-        color: #d6d6d6; }
-        .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper.starActive .icon:hover {
-          color: #00bfa5; }
-      .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper.starDisabled .icon {
-        color: #d6d6d6; }
-      .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper.starSelected .icon {
+    .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper .icon {
+      font-size: 1.286em; }
+    .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper.starActive .icon {
+      color: #d6d6d6; }
+      .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper.starActive .icon:hover {
         color: #00bfa5; }
+    .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper.starDisabled .icon {
+      color: #d6d6d6; }
+    .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper.starSelected .icon {
+      color: #00bfa5; }
   .SelectSD .SelectSD_contentWrapper {
-    display: table-cell;
+    -webkit-box-flex: 1;
+            flex: 1;
+    margin: 0;
     padding: 0 16px;
-    text-align: left;
-    vertical-align: middle; }
+    text-align: left; }
     .SelectSD .SelectSD_contentWrapper .SelectSD__contentTitle {
       color: #333333;
       font-size: 1em;
-      line-height: 25px;
-      margin-right: 10px; }
+      margin-right: 8px; }
       .SelectSD .SelectSD_contentWrapper .SelectSD__contentTitle .Text_Note {
         color: #adadad; }
-    .SelectSD .SelectSD_contentWrapper .SelectSD__contentTags {
-      line-height: 22px; }
     .SelectSD .SelectSD_contentWrapper .SelectSD__contentICD {
       color: #adadad;
       font-size: 14px;
