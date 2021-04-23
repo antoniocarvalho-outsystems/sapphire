@@ -152,7 +152,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 
 			if ($SSDComponent.hasClass('hasClone')) {
 				$SSDComponent.addClass('hasClone');
-				$SSDComponent.find('.SearchSD__cloneWrapper').show();
+				$SSDComponent.find('.SearchSD__cloneWrapper').css('display', 'flex');
 			}
 			if ($SSDComponent.hasClass('hasFavorite')) {
 				$SSDComponent.addClass('hasFavorite');
@@ -314,7 +314,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 */
 		if (hasClone === 'True') {
 			$SSDComponent.addClass('hasClone');
-			$SSDComponent.find('.SearchSD__cloneWrapper').show();
+			$SSDComponent.find('.SearchSD__cloneWrapper').css('display', 'flex');
 		}
 
 		if (hasFavorite === 'True') {

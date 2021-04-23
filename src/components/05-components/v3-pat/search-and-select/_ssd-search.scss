@@ -1,5 +1,18 @@
 $searchsd-border-radius: 24px;
 $searchsd-size-base: 48px;
+$searchsd-small-size-base: 36px;
+
+@mixin icon-style($color, $content) {
+	color: $color;
+	content: $content;
+	font-family: $font-family-icons;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-transform: none;
+	transform: rotateY(180deg);
+	z-index: 1;
+}
 
 .SearchSD {
 	position: relative;
@@ -11,14 +24,13 @@ $searchsd-size-base: 48px;
 	}
 
 	.SearchSD___remove {
-		align-items: center;
+		@include flex-center-total();
+
 		background-color: $sapphire-white;
 		border: 1px solid $light-grey;
 		border-radius: 50%;
 		cursor: pointer;
-		display: flex;
 		height: 28px;
-		justify-content: center;
 		position: absolute;
 		right: 6px;
 		top: 50%;
@@ -64,11 +76,29 @@ $searchsd-size-base: 48px;
 				border-bottom-left-radius: 0;
 				border-left-color: transparent;
 				border-top-left-radius: 0;
+
+				.SearchSD__actionInput .SearchSD___input {
+					&::before {
+						width: 36px;
+					}
+
+					input[type='text'] {
+						padding: 0 36px;
+					}
+				}
 			}
+		}
+
+		.SelectSD_contentWrapper {
+			padding: 0 $sapphire-sizes--small;
 		}
 
 		.SearchSD__star {
 			@include flex-center-total;
+
+			.icon {
+				font-size: $font-size-heading3;
+			}
 		}
 	}
 
@@ -91,43 +121,27 @@ $searchsd-size-base: 48px;
 			}
 
 			.SearchSD__cloneWrapper {
+				@include flex-center-vertically();
+
 				background-color: $regular-eta;
 				border: 1px solid $light-grey;
-				border-bottom-right-radius: 23px;
-				border-top-right-radius: 23px;
+				border-bottom-right-radius: $searchsd-border-radius;
+				border-top-right-radius: $searchsd-border-radius;
 				cursor: pointer;
-				display: table-cell;
-				font-size: $font-size-heading4;
-				padding: 0;
-				vertical-align: middle;
+				gap: $sapphire-sizes--medium;
+				padding: 0 $sapphire-sizes--medium;
 				width: 248px;
 
 				&:before {
-					color: $regular-alpha;
-					content: '\e615';
-					font-family: $font-family-icons;
+					@include icon-style($regular-alpha, '\e615');
+
 					font-size: $font-size-heading4;
-					font-style: normal;
-					font-variant: normal;
-					font-weight: normal;
-					padding-right: $sapphire-sizes--medium;
 					pointer-events: none;
-					position: absolute;
-					text-transform: none;
-					top: 10px;
-					transform: rotateY(180deg);
-					z-index: 1;
 				}
 			}
 
 			.SearchSD___cloneTitle {
 				color: $mid-light-grey;
-				display: inline-block;
-				font-size: inherit;
-				height: 100%;
-				line-height: 46px;
-				padding-left: $sapphire-sizes--xxlarge;
-				width: 100%;
 			}
 		}
 
@@ -170,6 +184,14 @@ $searchsd-size-base: 48px;
 
 				&:hover {
 					background-color: $regular-alpha;
+				}
+
+				.SearchSD__star {
+					gap: $sapphire-sizes--large;
+
+					&::after {
+						content: attr(data-title);
+					}
 				}
 			}
 		}
@@ -221,25 +243,23 @@ $searchsd-size-base: 48px;
 	}
 
 	.SearchSD_search {
-		display: table;
+		display: flex;
 		height: $searchsd-size-base;
 		position: relative;
 		width: 100%;
 
 		.SearchSD_search_favoriteLink {
+			@include flex-center-total();
+
 			background-color: $regular-white;
 			border: 1px solid $light-grey;
 			border-bottom-left-radius: $searchsd-border-radius;
 			border-top-left-radius: $searchsd-border-radius;
 			color: $regular-alpha;
 			cursor: pointer;
-			display: table-cell;
 			min-width: $searchsd-size-base;
-			text-align: center;
+			padding: 0 14px;
 			text-decoration: none;
-			transition: all 0.1s ease-in;
-			vertical-align: middle;
-			width: $searchsd-size-base;
 
 			&:hover {
 				background-color: $regular-eta;
@@ -251,10 +271,9 @@ $searchsd-size-base: 48px;
 			background-color: $sapphire-white;
 			border: 1px solid $light-grey;
 			border-radius: $searchsd-border-radius;
-			display: table-cell;
+			flex: 1;
 			position: relative;
 			transition: all 0.1s ease-in;
-			vertical-align: middle;
 
 			&:hover {
 				background-color: $regular-eta;
@@ -285,7 +304,6 @@ $searchsd-size-base: 48px;
 						background-color: transparent !important;
 						border: 0;
 						box-shadow: none;
-						font-size: $font-size-heading4;
 						height: 100%;
 						padding: 0 $searchsd-size-base;
 						width: 95%;
@@ -304,42 +322,30 @@ $searchsd-size-base: 48px;
 
 					&:before {
 						@include flex-center-total;
+						@include icon-style($mid-light-grey, '\e690');
 
-						color: $mid-light-grey;
-						content: '\e690';
-						font-family: $font-family-icons;
-						font-size: $font-size-heading4;
-						font-style: normal;
-						font-variant: normal;
-						font-weight: normal;
 						height: 100%;
 						pointer-events: none;
 						position: absolute;
-						text-transform: none;
-						transform: rotateY(180deg);
 						width: $searchsd-size-base;
-						z-index: 1;
 					}
 				}
 			}
 		}
 
 		.SearchSD__FavoriteCounter {
+			@include flex-center-vertically();
+
 			color: $mid-light-grey;
-			display: table-cell;
-			font-size: $font-size-heading4;
-			padding-left: $sapphire-sizes--medium;
-			vertical-align: middle;
-			width: 30%;
+			flex: 1;
+			padding-left: $sapphire-sizes--small;
 		}
 
 		.SearchSD__FavoriteActions {
-			display: table-cell;
+			@include flex-center-vertically();
 
+			justify-content: flex-end;
 			padding: 0 $sapphire-sizes--medium;
-			text-align: right;
-
-			vertical-align: middle;
 
 			> div {
 				opacity: 0;
@@ -353,55 +359,29 @@ $searchsd-size-base: 48px;
 			display: inline-block;
 		}
 
-		.SearchSD__FavoriteActionsCancel {
-			line-height: 36px;
-
-			a,
-			a:link {
-				color: $regular-alpha;
-				font-family: $font-family-latin-bold;
-			}
-		}
-
 		.SearchSD___BackToSearch {
 			border-bottom-right-radius: $searchsd-border-radius;
 			border-top-right-radius: $searchsd-border-radius;
 			color: $mid-light-grey;
-			height: 100%;
-			line-height: 46px;
-			padding-left: $sapphire-sizes--xxlarge;
-			padding-right: $sapphire-sizes--medium;
 			white-space: nowrap;
-			width: 100%;
 		}
 
 		.SearchSD__FavoriteRemove {
+			@include flex-center-vertically();
+
 			background-color: $regular-eta;
 			border: 1px solid $light-grey;
 			border-top-right-radius: $searchsd-border-radius;
 			color: $mid-light-grey;
-			display: table-cell;
 			font-family: $font-family-latin-regular;
-			font-size: 1.143em;
-			padding: 0;
-			vertical-align: middle;
+			gap: $sapphire-sizes--medium;
+			padding: 0 $sapphire-sizes--medium;
 			width: 248px;
 
 			&:before {
-				color: $regular-alpha;
-				content: '\e690';
-				font-family: $font-family-icons;
-				font-size: 1.143em;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: normal;
-				padding-right: $sapphire-sizes--medium;
+				@include icon-style($regular-alpha, '\e690');
+
 				pointer-events: none;
-				position: absolute;
-				text-transform: none;
-				top: 10px;
-				transform: rotateY(180deg);
-				z-index: 1;
 			}
 		}
 	}
@@ -493,26 +473,25 @@ $searchsd-size-base: 48px;
 		}
 	}
 
+	.SearchSD_contentList {
+		padding: $sapphire-sizes--small 0;
+	}
+
 	.SearchSD_filterfavorites {
 		display: none;
 
 		> span {
 			&:after {
-				font-size: $font-size-heading3;
 				padding-right: $sapphire-sizes--medium;
 				top: $sapphire-sizes--medium;
 			}
 
 			&:before {
-				color: $mid-light-grey;
-				content: '\e690';
-				font-family: $font-family-icons;
-				font-size: $font-size-heading3;
+				@include icon-style($mid-light-grey, '\e690');
+
 				left: 16px;
 				position: absolute;
-				top: 12px;
-				transform: rotateY(180deg);
-				z-index: 1;
+				top: 13px;
 			}
 
 			input[type='text'] {
@@ -521,10 +500,8 @@ $searchsd-size-base: 48px;
 				border-radius: 0;
 				border-right: none;
 				border-top: none;
-				font-size: $font-size-heading4;
 				height: $searchsd-size-base;
-				line-height: $searchsd-size-base;
-				padding: 0 64px;
+				padding: 0 $sapphire-sizes--largest;
 				position: relative;
 				width: 100%;
 
@@ -563,6 +540,97 @@ $searchsd-size-base: 48px;
 	.highlight {
 		background-color: transparent;
 	}
+
+	&--small {
+		&.hasFavorite {
+			a.SelectSD__starLink {
+				width: $searchsd-small-size-base;
+
+				.SelectSD__starWrapper .icon {
+					font-size: $font-size-normal;
+				}
+			}
+
+			.SearchSD_search {
+				.SearchSD_search_favoriteLink {
+					min-width: $searchsd-small-size-base;
+					padding: 0 $sapphire-sizes--small;
+
+					.SearchSD__star .icon {
+						font-size: $font-size-normal;
+					}
+				}
+
+				.SearchSD__inputWrapper {
+					.SearchSD__actionInput .SearchSD___input {
+						&::before {
+							width: 32px;
+						}
+
+						input[type='text'] {
+							padding: 0 32px;
+						}
+					}
+				}
+
+				.SearchSD__FavoriteRemove {
+					gap: $sapphire-sizes--small;
+					padding: 0 $sapphire-sizes--small;
+				}
+			}
+		}
+
+		&.hasClone {
+			.SearchSD_search {
+				.SearchSD__cloneWrapper {
+					gap: $sapphire-sizes--small;
+					padding: 0 $sapphire-sizes--small;
+				}
+			}
+		}
+
+		&.showFavorite {
+			.SearchSD_search {
+				.SearchSD_search_favoriteLink {
+					padding: 0 12px;
+
+					.SearchSD__star {
+						gap: 18px;
+					}
+				}
+			}
+		}
+
+		.SearchSD_search {
+			height: $searchsd-small-size-base;
+
+			.SearchSD__inputWrapper {
+				.SearchSD__actionInput .SearchSD___input {
+					&::before {
+						width: $searchsd-small-size-base;
+					}
+
+					input[type='text'] {
+						padding: 0 $searchsd-small-size-base;
+					}
+				}
+			}
+		}
+
+		.SearchSD_content {
+			.SearchSD_filterfavorites > span {
+				&:before {
+					left: 12px;
+					top: $sapphire-sizes--small;
+				}
+
+				input[type='text'] {
+					height: $searchsd-small-size-base;
+					padding: 0 46px;
+				}
+			}
+		}
+	}
 }
 
 /**
@@ -572,7 +640,6 @@ $searchsd-size-base: 48px;
 * 
 * 
 */
-
 .SSDPopupWrapper {
 	display: none;
 
@@ -600,7 +667,6 @@ $searchsd-size-base: 48px;
 		}
 	}
 }
-
 /*********************************************************************************************/
 
 @keyframes loading {
@@ -612,8 +678,6 @@ $searchsd-size-base: 48px;
 		max-width: 150px;
 	}
 }
-
-/*AR and FA*/
 
 .AR,
 .FA {

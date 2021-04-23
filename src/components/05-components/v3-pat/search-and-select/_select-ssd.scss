@@ -1,7 +1,8 @@
 .SelectSD {
+	@include flex-center-vertically;
+
 	background-color: $sapphire-white;
-	display: table;
-	min-height: 58px;
+	min-height: 48px;
 	width: 100%;
 
 	.SelectSD--disabled {
@@ -18,16 +19,15 @@
 
 	&.hasFavorite {
 		.SelectSD__starLink {
+			@include flex-center-total();
+
 			color: $light-grey;
-			display: table-cell;
-			padding: $sapphire-sizes--medium 0;
-			text-align: center;
-			vertical-align: middle;
 			width: 48px;
 
 			.SelectSD__starWrapper {
-				height: 100%;
-				width: 100%;
+				.icon {
+					font-size: $font-size-heading3;
+				}
 
 				&.starActive {
 					.icon {
@@ -55,24 +55,19 @@
 	}
 
 	.SelectSD_contentWrapper {
-		display: table-cell;
+		flex: 1;
+		margin: 0;
 		padding: 0 $sapphire-sizes--medium;
 		text-align: left;
-		vertical-align: middle;
 
 		.SelectSD__contentTitle {
 			color: $dark-grey;
 			font-size: $font-size-normal;
-			line-height: 25px;
-			margin-right: 10px;
+			margin-right: $sapphire-sizes--small;
 
 			.Text_Note {
 				color: $mid-light-grey;
 			}
-		}
-
-		.SelectSD__contentTags {
-			line-height: 22px;
 		}
 
 		.SelectSD__contentICD {
