@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110011 || Generated: Wed Apr 21 2021 12:21:39 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110012 || Generated: Fri Apr 23 2021 10:14:09 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9032,16 +9032,23 @@ div.LineInfo {
     -webkit-box-flex: 1;
             flex: 1; }
   .SummaryCard__Content {
+    margin-right: 4px;
     max-height: 360px;
     overflow-y: auto;
-    padding: 16px; }
+    padding: 16px;
+    padding-right: 12px; }
     .SummaryCard__Content::-webkit-scrollbar {
       background-color: #fff;
-      height: 4px;
-      width: 4px; }
+      height: 6px;
+      width: 6px; }
     .SummaryCard__Content::-webkit-scrollbar-thumb {
       border: 5px solid #d6d6d6;
       border-radius: 4px; }
+    .AR .SummaryCard__Content {
+      margin-left: 4px;
+      margin-right: 0;
+      padding-left: 12px;
+      padding-right: 16px; }
     .SummaryCard__Content .ExpandableSmaller {
       display: -webkit-box;
       display: flex;
