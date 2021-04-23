@@ -26,11 +26,20 @@
 	}
 
 	&__Content {
-		@include component-scroll-root(4px, false, 4px);
+		@include component-scroll-root(4px, false, 6px);
 
+		margin-right: $sapphire-sizes--xsmall;
 		max-height: 360px;
 		overflow-y: auto;
 		padding: $sapphire-sizes--medium;
+		padding-right: $sapphire-sizes--medium - $sapphire-sizes--xsmall;
+
+		.AR & {
+			margin-left: $sapphire-sizes--xsmall;
+			margin-right: 0;
+			padding-left: $sapphire-sizes--medium - $sapphire-sizes--xsmall;
+			padding-right: $sapphire-sizes--medium;
+		}
 
 		.ExpandableSmaller {
 			display: flex;
