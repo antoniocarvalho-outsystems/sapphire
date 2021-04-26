@@ -1,9 +1,103 @@
-$MainInteractiveCard-color-active: $regular-alpha;
-$MainInteractiveCard-color-caption: $mid-light-grey;
-$MainInteractiveCard-color-disabled: $mid-light-grey;
-$MainInteractiveCard-color-header: $dark-grey;
-$MainInteractiveCard-color-subtitle: $mid-dark-grey;
-$MainInteractiveCard-color-text-regular: $text-color-regular;
+$card-color-active: $regular-alpha;
+$card-color-caption: $mid-light-grey;
+$card-color-disabled: $mid-light-grey;
+$card-color-header: $dark-grey;
+$card-color-subtitle: $mid-dark-grey;
+$card-color-text-regular: $text-color-regular;
+
+.MainInteractiveCard {
+	background-color: $background-disabled;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	position: relative;
+
+	&.isEnabled {
+		background-color: $regular-white;
+		border-color: $light-grey;
+	}
+
+	&.isOpen {
+		border-color: $regular-alpha;
+
+		.MainInteractiveCard-header {
+			border-bottom: 1px solid $light-grey;
+		}
+
+		// To avoid change any nested card
+		> div > .MainInteractiveCard-body {
+			.MainInteractiveCard-absolute-actions {
+				display: block;
+			}
+		}
+	}
+
+	&.isSelectable {
+		> .MainInteractiveCard-header {
+			gap: $sapphire-sizes--medium;
+		}
+	}
+
+	.MainInteractiveCard-header {
+		@include flex-center-vertically();
+
+		flex-direction: row;
+		padding: $sapphire-sizes--medium;
+		pointer-events: none;
+		position: relative;
+
+		.MainInteractiveCard-header-selectable-trigger {
+			cursor: pointer;
+			pointer-events: all;
+
+			.icon-star {
+				color: $regular-grey;
+			}
+
+			.icon-star-full {
+				color: $regular-alpha;
+			}
+		}
+
+		.MainInteractiveCard-header-text-title {
+			max-height: 24px;
+			max-width: 99%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 100%;
+		}
+
+		.MainInteractiveCard-header-text-subtitle,
+		.MainInteractiveCard-header-text-caption {
+			color: $regular-grey;
+			// display: contents;
+		}
+	}
+
+	.MainInteractiveCard-intro {
+		padding: $sapphire-sizes--medium;
+	}
+
+	.MainInteractiveCard-body {
+		padding: $sapphire-sizes--medium;
+
+		/* To be used on an embedded Web Block page inside the card */
+		.MainInteractiveCard-absolute-actions {
+			display: none;
+			line-height: $sapphire-sizes--largest - 4px;
+			position: absolute;
+			right: $sapphire-sizes--medium;
+			top: 0;
+
+			.AR & {
+				left: $sapphire-sizes--medium;
+				right: 0;
+			}
+		}
+	}
+}
+
+// WIP -------------------------->
 
 .MainInteractiveCard-iframe-actions {
 	margin-bottom: 30px;
@@ -44,25 +138,6 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 }
 
 .MainInteractiveCard {
-	background-color: $background-disabled;
-	border: 1px solid $light-grey;
-	border-radius: $border-radius-default;
-	padding: $sapphire-sizes--medium;
-	position: relative;
-}
-
-.MainInteractiveCard.isEnabled {
-	background-color: $regular-white;
-	border-color: $light-grey;
-	margin-top: -2px;
-}
-
-.MainInteractiveCard.isOpen {
-	border-color: $regular-alpha;
-	margin-top: -2px;
-}
-
-.MainInteractiveCard {
 	&:not(.isOpen) {
 		&.ColorLightGreyBorder {
 			border-color: $light-grey;
@@ -77,25 +152,6 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 	}
 }
 
-.MainInteractiveCard:before {
-	background: $MainInteractiveCard-color-active;
-	content: '';
-	height: 3px;
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	transition: all 0.5s ease;
-	width: 100%;
-}
-
-.MainInteractiveCard-header {
-	display: flex;
-	flex-direction: row;
-	pointer-events: none;
-	position: relative;
-}
-
 .MainInteractiveCard--ellipsis {
 	display: inline-block;
 	max-width: 100%;
@@ -104,17 +160,9 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 	white-space: nowrap;
 }
 
-.MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
-	padding-left: 30px;
-}
-
 .AR .MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
 	padding-left: 0;
 	padding-right: 30px;
-}
-
-.MainInteractiveCard.isOpen > .MainInteractiveCard-header {
-	padding-bottom: 10px;
 }
 
 .MainInteractiveCard.isOpen.XSmallHeader > .MainInteractiveCard-header {
@@ -141,30 +189,8 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 	width: 5px;
 }
 
-.MainInteractiveCard-header-selectable {
-	left: 0;
-	position: absolute;
-	top: 4px;
-}
-
-.AR .MainInteractiveCard-header-selectable {
-	left: auto;
-	right: 4px;
-}
-
 .MainInteractiveCard-header-selectable.icon-disabled span.icon {
-	color: $MainInteractiveCard-color-disabled;
-}
-
-.MainInteractiveCard-header-selectable-trigger {
-	color: $MainInteractiveCard-color-active;
-	cursor: pointer;
-	display: block;
-	pointer-events: all;
-}
-
-.MainInteractiveCard-header-selectable-trigger span.icon {
-	font-size: 1.5em;
+	color: $card-color-disabled;
 }
 
 .MainInteractiveCard-header-selectable-placeholder a {
@@ -183,17 +209,6 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 	overflow: hidden;
 }
 
-.MainInteractiveCard-header-text-title {
-	color: $MainInteractiveCard-color-text-regular;
-	font-size: 1.143em;
-	max-height: 24px;
-	max-width: 99%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	width: 100%;
-}
-
 .MainInteractiveCard-header-text-title .OSInline {
 	vertical-align: middle;
 }
@@ -208,17 +223,6 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	width: 100%;
-}
-
-.MainInteractiveCard-header-text-subtitle {
-	color: $MainInteractiveCard-color-subtitle;
-	display: contents;
-	font-size: 1em;
-}
-
-.MainInteractiveCard-header-text-caption {
-	color: $regular-grey;
-	font-size: 1em;
 }
 
 .MainInteractiveCard-header-actions {
@@ -370,20 +374,6 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 	text-overflow: ellipsis;
 }
 
-/* To be used on an embedded Web Block page inside the card */
-.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-	display: none;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-}
-
-.AR .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-	left: 10px;
-	right: 0;
-	text-align: left;
-}
-
 @media screen and (max-width: 1024px) {
 	.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
 		margin-bottom: $sapphire-sizes--medium;
@@ -437,11 +427,6 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 	margin-right: 8px;
 }
 
-.MainInteractiveCard.isOpen > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-	display: block;
-	font-size: 1rem;
-}
-
 /* Specific overrides */
 
 .MainInteractiveCard-header .ActionsMenu .icon {
@@ -449,7 +434,7 @@ $MainInteractiveCard-color-text-regular: $text-color-regular;
 }
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline {
-	border-top: 1px solid $MainInteractiveCard-color-active;
+	border-top: 1px solid $card-color-active;
 	padding-top: $sapphire-sizes--medium;
 }
 
