@@ -59,7 +59,6 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 			$SSDComponent.find('.SearchSD__inputWrapper').show();
 			$SSDComponent.find('.SearchSD_search_favoriteLink').hide();
 			$SSDComponent.find('.SearchSD___goToFavorite').hide();
-			$SSDComponent.find('.SearchSD__FavoriteCounter').hide();
 			$SSDComponent.find('.SearchSD__FavoriteActions').hide();
 			$SSDComponent.find('.SearchSD__FavoriteRemove').hide();
 			$SSDComponent.find('.SearchSD__cloneWrapper').hide();
@@ -89,10 +88,11 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 			$SSDComponent.removeClass('Open');
 			$SSDComponent.find('.SearchSD__return').hide();
 			$SSDComponent.find('.SearchSD__inputWrapper').hide();
+
 			if ($SSDComponent.hasClass('showClone')) {
 				$SSDComponent.removeClass('showClone');
 			}
-			$SSDComponent.find('.SearchSD__FavoriteCounter').show();
+
 			$SSDComponent.find('.SearchSD_search_favoriteLink ').show();
 			$SSDComponent.find('.SearchSD__FavoriteRemove ').show();
 			$SSDComponent.find('.SearchSD__FavoriteActions').show();

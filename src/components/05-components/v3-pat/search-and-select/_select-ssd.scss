@@ -58,7 +58,6 @@
 		flex: 1;
 		margin: 0;
 		padding: 0 $sapphire-sizes--medium;
-		text-align: left;
 
 		.SelectSD__contentTitle {
 			color: $dark-grey;
@@ -87,10 +86,7 @@
 	}
 
 	.SelectSD__multiple {
-		display: table-cell;
-		text-align: center;
-		vertical-align: middle;
-		width: 48px;
+		padding: 0 $sapphire-sizes--small;
 
 		> input[type='checkbox'] {
 			margin-right: 0;
@@ -129,20 +125,8 @@
 			width: 100%;
 
 			.icon {
-				background-color: $sapphire-white;
-				border: 1px solid $light-grey;
-				border-radius: $border-radius-default;
-				box-sizing: border-box;
 				color: $regular-alpha;
 				text-align: center;
-
-				&::before {
-					position: relative;
-				}
-
-				&:hover {
-					border-color: $regular-alpha;
-				}
 			}
 		}
 
@@ -166,8 +150,6 @@
 .FA,
 .AR {
 	.SelectSD_contentWrapper {
-		text-align: right;
-
 		.SelectSD__contentTitle {
 			margin-left: 10px;
 			margin-right: auto;

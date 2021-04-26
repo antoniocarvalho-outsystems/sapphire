@@ -14,33 +14,23 @@ $searchsd-small-size-base: 36px;
 	z-index: 1;
 }
 
+@mixin favorite-actions-container() {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-top-right-radius: $searchsd-border-radius;
+	color: $mid-light-grey;
+	flex: 1;
+}
+
+@mixin reset-style() {
+	border: 0;
+	max-width: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
 .SearchSD {
 	position: relative;
-
-	&--shield {
-		position: absolute;
-		width: 100%;
-		z-index: 2;
-	}
-
-	.SearchSD___remove {
-		@include flex-center-total();
-
-		background-color: $sapphire-white;
-		border: 1px solid $light-grey;
-		border-radius: 50%;
-		cursor: pointer;
-		height: 28px;
-		position: absolute;
-		right: 6px;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		width: 28px;
-
-		&:hover {
-			border: 1px solid $regular-alpha;
-		}
-	}
 
 	&.Open {
 		.SearchSD_search {
@@ -114,7 +104,6 @@ $searchsd-small-size-base: 36px;
 		.SearchSD_search {
 			.SearchSD__inputWrapper {
 				border-bottom-right-radius: 0;
-				border-right: 1px solid $light-grey;
 				border-right-color: transparent;
 				border-top-right-radius: 0;
 				width: 100%;
@@ -123,25 +112,18 @@ $searchsd-small-size-base: 36px;
 			.SearchSD__cloneWrapper {
 				@include flex-center-vertically();
 
-				background-color: $regular-eta;
+				background-color: $regular-white;
 				border: 1px solid $light-grey;
 				border-bottom-right-radius: $searchsd-border-radius;
 				border-top-right-radius: $searchsd-border-radius;
+				color: $regular-alpha;
 				cursor: pointer;
-				gap: $sapphire-sizes--medium;
 				padding: 0 $sapphire-sizes--medium;
-				width: 248px;
 
-				&:before {
-					@include icon-style($regular-alpha, '\e615');
-
-					font-size: $font-size-heading4;
-					pointer-events: none;
+				&:hover {
+					background-color: $regular-eta;
+					border-color: $regular-alpha;
 				}
-			}
-
-			.SearchSD___cloneTitle {
-				color: $mid-light-grey;
 			}
 		}
 
@@ -169,18 +151,12 @@ $searchsd-small-size-base: 36px;
 
 	&.showFavorite {
 		.SearchSD_search {
-			.SearchSD__FavoriteCounter,
-			.SearchSD__FavoriteActions {
-				background-color: $regular-white;
-				border-bottom: 1px solid $light-grey;
-				border-top: 1px solid $light-grey;
-			}
-
 			.SearchSD_search_favoriteLink {
 				background-color: $regular-alpha;
 				border-color: $regular-alpha;
 				border-right: none;
 				color: $regular-white;
+				padding-right: $sapphire-sizes--xlarge;
 
 				&:hover {
 					background-color: $regular-alpha;
@@ -210,35 +186,23 @@ $searchsd-small-size-base: 36px;
 	}
 
 	&.MultiSelectActive {
-		.SearchSD_search .SearchSD__FavoriteActions > div {
-			opacity: 1;
-			transition: visibility 0.3s, opacity 0.3s linear;
-			visibility: visible;
+		.SearchSD_search {
+			.SearchSD__FavoriteRemove {
+				@include reset-style();
+			}
+
+			.SearchSD__FavoriteActions {
+				@include favorite-actions-container();
+
+				justify-content: flex-end;
+				max-width: unset;
+				padding: 0 $sapphire-sizes--medium;
+			}
 		}
 
 		.SelectSD_contentWrapper + a {
 			filter: alpha(opacity=30);
 			opacity: 0.3;
-		}
-	}
-
-	span.ListRecords {
-		> span {
-			> span {
-				.SelectSD {
-					border-bottom: 1px solid $light-grey;
-					display: table;
-					width: 100%;
-				}
-			}
-
-			&:last-child {
-				border: 0;
-			}
-		}
-
-		> span:not(:first-child) {
-			border-top: none;
 		}
 	}
 
@@ -306,7 +270,7 @@ $searchsd-small-size-base: 36px;
 						box-shadow: none;
 						height: 100%;
 						padding: 0 $searchsd-size-base;
-						width: 95%;
+						// width: 95%;
 
 						&::placeholder {
 							color: $mid-light-grey;
@@ -333,25 +297,9 @@ $searchsd-small-size-base: 36px;
 			}
 		}
 
-		.SearchSD__FavoriteCounter {
-			@include flex-center-vertically();
-
-			color: $mid-light-grey;
-			flex: 1;
-			padding-left: $sapphire-sizes--small;
-		}
-
 		.SearchSD__FavoriteActions {
+			@include reset-style();
 			@include flex-center-vertically();
-
-			justify-content: flex-end;
-			padding: 0 $sapphire-sizes--medium;
-
-			> div {
-				opacity: 0;
-				transition: visibility 0.3s, opacity 0.3s linear;
-				visibility: hidden;
-			}
 		}
 
 		.SearchSD__FavoriteActionsCancel,
@@ -368,20 +316,21 @@ $searchsd-small-size-base: 36px;
 
 		.SearchSD__FavoriteRemove {
 			@include flex-center-vertically();
+			@include favorite-actions-container();
 
-			background-color: $regular-eta;
-			border: 1px solid $light-grey;
-			border-top-right-radius: $searchsd-border-radius;
-			color: $mid-light-grey;
 			font-family: $font-family-latin-regular;
-			gap: $sapphire-sizes--medium;
-			padding: 0 $sapphire-sizes--medium;
-			width: 248px;
+			gap: $sapphire-sizes--small;
+			padding: 0 $sapphire-sizes--small;
 
 			&:before {
-				@include icon-style($regular-alpha, '\e690');
+				@include icon-style($mid-light-grey, '\e690');
 
 				pointer-events: none;
+			}
+
+			&:hover {
+				background-color: $regular-eta;
+				border-color: $regular-alpha;
 			}
 		}
 	}
@@ -450,11 +399,6 @@ $searchsd-small-size-base: 36px;
 			text-align: center;
 			width: 100%;
 
-			a {
-				font-family: $font-family-latin-bold;
-				font-size: $font-size-heading4;
-			}
-
 			> span {
 				display: table-cell;
 				height: 44px;
@@ -491,7 +435,7 @@ $searchsd-small-size-base: 36px;
 
 				left: 16px;
 				position: absolute;
-				top: 13px;
+				top: 8px;
 			}
 
 			input[type='text'] {
@@ -500,7 +444,6 @@ $searchsd-small-size-base: 36px;
 				border-radius: 0;
 				border-right: none;
 				border-top: none;
-				height: $searchsd-size-base;
 				padding: 0 $sapphire-sizes--largest;
 				position: relative;
 				width: 100%;
@@ -537,8 +480,33 @@ $searchsd-small-size-base: 36px;
 		}
 	}
 
+	.SearchSD___remove {
+		@include flex-center-total();
+
+		background-color: $sapphire-white;
+		border: 1px solid $light-grey;
+		border-radius: 50%;
+		cursor: pointer;
+		height: 28px;
+		position: absolute;
+		right: 6px;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 28px;
+
+		&:hover {
+			border: 1px solid $regular-alpha;
+		}
+	}
+
 	.highlight {
 		background-color: transparent;
+	}
+
+	&--shield {
+		position: absolute;
+		width: 100%;
+		z-index: 2;
 	}
 
 	&--small {
@@ -571,11 +539,6 @@ $searchsd-small-size-base: 36px;
 							padding: 0 32px;
 						}
 					}
-				}
-
-				.SearchSD__FavoriteRemove {
-					gap: $sapphire-sizes--small;
-					padding: 0 $sapphire-sizes--small;
 				}
 			}
 		}
@@ -625,7 +588,6 @@ $searchsd-small-size-base: 36px;
 				}
 
 				input[type='text'] {
-					height: $searchsd-small-size-base;
 					padding: 0 46px;
 				}
 			}
@@ -687,6 +649,29 @@ $searchsd-small-size-base: 36px;
 			right: unset;
 		}
 
+		&.hasClone {
+			.SearchSD_search {
+				.SearchSD__inputWrapper {
+					border-left-color: transparent;
+					border-radius: 0 $searchsd-border-radius $searchsd-border-radius 0;
+					border-right-color: $light-grey;
+
+					&:hover {
+						border-color: $regular-alpha;
+					}
+				}
+			}
+
+			.SearchSD__cloneWrapper {
+				border-radius: $searchsd-border-radius 0 0 $searchsd-border-radius;
+
+				&:before {
+					padding-left: $sapphire-sizes--medium;
+					padding-right: 0;
+				}
+			}
+		}
+
 		&.hasFavorite {
 			.SearchSD_search {
 				.SearchSD__inputWrapper {
@@ -702,34 +687,14 @@ $searchsd-small-size-base: 36px;
 			}
 		}
 
-		&.hasClone {
+		&.hasClone.hasFavorite {
 			.SearchSD_search {
 				.SearchSD__inputWrapper {
+					border-left-color: transparent;
 					border-radius: 0;
-				}
-			}
 
-			.SearchSD__cloneWrapper {
-				border-radius: $searchsd-border-radius 0 0 $searchsd-border-radius;
-
-				&:before {
-					padding-left: $sapphire-sizes--medium;
-					padding-right: 0;
-				}
-			}
-
-			.SearchSD___cloneTitle {
-				padding-left: 0;
-				padding-right: $sapphire-sizes--xxlarge;
-			}
-		}
-
-		&.showFavorite {
-			.SearchSD {
-				.SearchSD_search {
-					.SearchSD__FavoriteCounter {
-						padding-left: 0;
-						padding-right: $sapphire-sizes--medium;
+					&:hover {
+						border-color: $regular-alpha;
 					}
 				}
 			}
@@ -743,10 +708,19 @@ $searchsd-small-size-base: 36px;
 
 				.SearchSD_search_favoriteLink {
 					border-bottom-right-radius: 0;
+					padding-left: $sapphire-sizes--xlarge;
+					padding-right: 14px;
 				}
 
 				.SearchSD__cloneWrapper {
 					border-bottom-left-radius: 0;
+				}
+			}
+
+			.SearchSD_filterfavorites > span {
+				&:before {
+					left: auto;
+					right: $sapphire-sizes--medium;
 				}
 			}
 		}
@@ -764,16 +738,6 @@ $searchsd-small-size-base: 36px;
 					padding-left: $sapphire-sizes--medium;
 					padding-right: 0;
 				}
-			}
-
-			.SearchSD__FavoriteCounter {
-				padding-left: 0;
-				padding-right: $sapphire-sizes--medium;
-			}
-
-			.SearchSD___BackToSearch {
-				padding-left: $sapphire-sizes--medium;
-				padding-right: $sapphire-sizes--xxlarge;
 			}
 		}
 	}
