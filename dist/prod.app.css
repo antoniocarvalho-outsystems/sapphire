@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110014 || Generated: Mon Apr 26 2021 15:33:58 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110015 || Generated: Mon Apr 26 2021 15:49:18 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23154,16 +23154,9 @@ div.List-Star {
     width: 100%;
     z-index: 2; }
     .SearchSD .SearchSD_content .EmptySelectableList {
-      background-color: #fff;
-      border-bottom: 1px solid #d6d6d6;
       color: #777777;
-      display: block;
-      font-size: 1.143em;
-      height: 50px;
-      line-height: 30px;
-      padding: 10px; }
-      .SearchSD .SearchSD_content .EmptySelectableList > span {
-        font-size: inherit; }
+      line-height: 32px;
+      padding: 16px; }
       .SearchSD .SearchSD_content .EmptySelectableList.NoMessage {
         height: auto;
         padding: 0; }
