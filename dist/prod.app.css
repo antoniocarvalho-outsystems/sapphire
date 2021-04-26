@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110016 || Generated: Mon Apr 26 2021 16:12:02 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110017 || Generated: Mon Apr 26 2021 17:19:26 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19202,6 +19202,65 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   position: absolute;
   width: 100%; }
 
+.MainInteractiveCard {
+  background-color: #ebebeb;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  position: relative; }
+  .MainInteractiveCard.isEnabled {
+    background-color: #fff;
+    border-color: #d6d6d6; }
+  .MainInteractiveCard.isOpen {
+    border-color: #00bfa5; }
+    .MainInteractiveCard.isOpen .MainInteractiveCard-header {
+      border-bottom: 1px solid #d6d6d6; }
+    .MainInteractiveCard.isOpen > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
+      display: block; }
+  .MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
+    gap: 16px; }
+  .MainInteractiveCard .MainInteractiveCard-header {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    padding: 16px;
+    pointer-events: none;
+    position: relative; }
+    .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-selectable-trigger {
+      cursor: pointer;
+      pointer-events: all; }
+      .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-selectable-trigger .icon-star {
+        color: #777777; }
+      .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-selectable-trigger .icon-star-full {
+        color: #00bfa5; }
+    .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
+      max-height: 24px;
+      max-width: 99%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%; }
+    .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-subtitle,
+    .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-caption {
+      color: #777777; }
+  .MainInteractiveCard .MainInteractiveCard-intro {
+    padding: 16px; }
+  .MainInteractiveCard .MainInteractiveCard-body {
+    padding: 16px;
+    /* To be used on an embedded Web Block page inside the card */ }
+    .MainInteractiveCard .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
+      display: none;
+      line-height: 52px;
+      position: absolute;
+      right: 16px;
+      top: 0; }
+      .AR .MainInteractiveCard .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
+        left: 16px;
+        right: 0; }
+
 .MainInteractiveCard-iframe-actions {
   margin-bottom: 30px;
   padding-top: 3px;
@@ -19235,49 +19294,12 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   margin: 0 9px;
   vertical-align: middle; }
 
-.MainInteractiveCard {
-  background-color: #ebebeb;
-  border: 1px solid #d6d6d6;
-  border-radius: 4px;
-  padding: 16px;
-  position: relative; }
-
-.MainInteractiveCard.isEnabled {
-  background-color: #fff;
-  border-color: #d6d6d6;
-  margin-top: -2px; }
-
-.MainInteractiveCard.isOpen {
-  border-color: #00bfa5;
-  margin-top: -2px; }
-
 .MainInteractiveCard:not(.isOpen).ColorLightGreyBorder {
   border-color: #d6d6d6; }
 
 .MainInteractiveCard:not(.isOpen).ShowEntireTitle .MainInteractiveCard-header-text-title {
   max-height: initial;
   white-space: unset; }
-
-.MainInteractiveCard:before {
-  background: #00bfa5;
-  content: '';
-  height: 3px;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  width: 100%; }
-
-.MainInteractiveCard-header {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  pointer-events: none;
-  position: relative; }
 
 .MainInteractiveCard--ellipsis {
   display: inline-block;
@@ -19286,15 +19308,9 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
-  padding-left: 30px; }
-
 .AR .MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
   padding-left: 0;
   padding-right: 30px; }
-
-.MainInteractiveCard.isOpen > .MainInteractiveCard-header {
-  padding-bottom: 10px; }
 
 .MainInteractiveCard.isOpen.XSmallHeader > .MainInteractiveCard-header {
   height: 45px; }
@@ -19315,26 +19331,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   top: 0;
   width: 5px; }
 
-.MainInteractiveCard-header-selectable {
-  left: 0;
-  position: absolute;
-  top: 4px; }
-
-.AR .MainInteractiveCard-header-selectable {
-  left: auto;
-  right: 4px; }
-
 .MainInteractiveCard-header-selectable.icon-disabled span.icon {
   color: #adadad; }
-
-.MainInteractiveCard-header-selectable-trigger {
-  color: #00bfa5;
-  cursor: pointer;
-  display: block;
-  pointer-events: all; }
-
-.MainInteractiveCard-header-selectable-trigger span.icon {
-  font-size: 1.5em; }
 
 .MainInteractiveCard-header-selectable-placeholder a {
   display: none;
@@ -19350,16 +19348,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .MainInteractiveCard.isOpen .MainInteractiveCard-header-text {
   overflow: hidden; }
 
-.MainInteractiveCard-header-text-title {
-  color: #333333;
-  font-size: 1.143em;
-  max-height: 24px;
-  max-width: 99%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%; }
-
 .MainInteractiveCard-header-text-title .OSInline {
   vertical-align: middle; }
 
@@ -19372,15 +19360,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%; }
-
-.MainInteractiveCard-header-text-subtitle {
-  color: #5c5c5c;
-  display: contents;
-  font-size: 1em; }
-
-.MainInteractiveCard-header-text-caption {
-  color: #777777;
-  font-size: 1em; }
 
 .MainInteractiveCard-header-actions {
   -webkit-box-align: center;
@@ -19543,18 +19522,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   overflow: hidden;
   text-overflow: ellipsis; }
 
-/* To be used on an embedded Web Block page inside the card */
-.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-  display: none;
-  position: absolute;
-  right: 10px;
-  top: 10px; }
-
-.AR .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-  left: 10px;
-  right: 0;
-  text-align: left; }
-
 @media screen and (max-width: 1024px) {
   .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
     margin-bottom: 16px;
@@ -19629,10 +19596,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .AR .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions > *:last-child {
   margin-left: 0;
   margin-right: 8px; }
-
-.MainInteractiveCard.isOpen > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-  display: block;
-  font-size: 1rem; }
 
 /* Specific overrides */
 .MainInteractiveCard-header .ActionsMenu .icon {
