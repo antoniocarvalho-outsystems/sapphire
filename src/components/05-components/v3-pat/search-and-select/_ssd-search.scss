@@ -346,18 +346,9 @@ $searchsd-small-size-base: 36px;
 		z-index: 2;
 
 		.EmptySelectableList {
-			background-color: $regular-white;
-			border-bottom: 1px solid $light-grey;
 			color: $regular-grey;
-			display: block;
-			font-size: $font-size-heading4;
-			height: 50px;
-			line-height: 30px;
-			padding: 10px;
-
-			> span {
-				font-size: inherit;
-			}
+			line-height: $sapphire-sizes--xlarge;
+			padding: $sapphire-sizes--medium;
 
 			&.NoMessage {
 				height: auto;
