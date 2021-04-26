@@ -43,6 +43,7 @@ $searchsd-small-size-base: 36px;
 			.SearchSD__inputWrapper {
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
+				border-color: $regular-alpha;
 
 				.icon {
 					color: $regular-beta;
@@ -129,6 +130,8 @@ $searchsd-small-size-base: 36px;
 
 		&.showClone {
 			.SearchSD__inputWrapper {
+				border-bottom-color: $light-grey;
+				border-top-color: $light-grey;
 				cursor: pointer;
 
 				input {
@@ -182,6 +185,17 @@ $searchsd-small-size-base: 36px;
 
 		.SearchSD_filterfavorites {
 			display: block;
+		}
+	}
+
+	&.Open.hasClone,
+	&.Open.hasFavorite {
+		&:not(.showClone) {
+			.SearchSD_search {
+				.SearchSD__inputWrapper {
+					border-color: $regular-alpha;
+				}
+			}
 		}
 	}
 
@@ -679,6 +693,14 @@ $searchsd-small-size-base: 36px;
 		}
 
 		&.hasClone.hasFavorite {
+			&.Open:not(.showClone) {
+				.SearchSD_search {
+					.SearchSD__inputWrapper {
+						border-color: $regular-alpha;
+					}
+				}
+			}
+
 			.SearchSD_search {
 				.SearchSD__inputWrapper {
 					border-left-color: transparent;
@@ -691,6 +713,15 @@ $searchsd-small-size-base: 36px;
 			}
 		}
 
+		&.showFavorite {
+			.SearchSD_search {
+				.SearchSD_search_favoriteLink {
+					padding-left: $sapphire-sizes--xlarge;
+					padding-right: 14px;
+				}
+			}
+		}
+
 		&.Open {
 			.SearchSD_search {
 				.SearchSD__inputWrapper {
@@ -699,8 +730,6 @@ $searchsd-small-size-base: 36px;
 
 				.SearchSD_search_favoriteLink {
 					border-bottom-right-radius: 0;
-					padding-left: $sapphire-sizes--xlarge;
-					padding-right: 14px;
 				}
 
 				.SearchSD__cloneWrapper {
