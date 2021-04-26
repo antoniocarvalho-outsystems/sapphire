@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110015 || Generated: Mon Apr 26 2021 15:49:18 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110016 || Generated: Mon Apr 26 2021 16:12:02 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22908,7 +22908,8 @@ div.List-Star {
       border-bottom-left-radius: 0; }
     .SearchSD.Open .SearchSD_search .SearchSD__inputWrapper {
       border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0; }
+      border-bottom-right-radius: 0;
+      border-color: #00bfa5; }
       .SearchSD.Open .SearchSD_search .SearchSD__inputWrapper .icon {
         color: #00ac94; }
     .SearchSD.Open .SearchSD_search > a:first-child {
@@ -22958,6 +22959,8 @@ div.List-Star {
       background-color: #f2fffd;
       border-color: #00bfa5; }
   .SearchSD.hasClone.showClone .SearchSD__inputWrapper {
+    border-bottom-color: #d6d6d6;
+    border-top-color: #d6d6d6;
     cursor: pointer; }
     .SearchSD.hasClone.showClone .SearchSD__inputWrapper input {
       background-color: #ffffff;
@@ -22982,6 +22985,8 @@ div.List-Star {
     display: none; }
   .SearchSD.showFavorite .SearchSD_filterfavorites {
     display: block; }
+  .SearchSD.Open.hasClone:not(.showClone) .SearchSD_search .SearchSD__inputWrapper, .SearchSD.Open.hasFavorite:not(.showClone) .SearchSD_search .SearchSD__inputWrapper {
+    border-color: #00bfa5; }
   .SearchSD.MultiSelectActive .SearchSD_search .SearchSD__FavoriteRemove {
     border: 0;
     max-width: 0;
@@ -23385,6 +23390,10 @@ div.List-Star {
     background-color: #f2fffd;
     border-color: #00bfa5; }
 
+.AR .SearchSD.hasClone.hasFavorite.Open:not(.showClone) .SearchSD_search .SearchSD__inputWrapper,
+.FA .SearchSD.hasClone.hasFavorite.Open:not(.showClone) .SearchSD_search .SearchSD__inputWrapper {
+  border-color: #00bfa5; }
+
 .AR .SearchSD.hasClone.hasFavorite .SearchSD_search .SearchSD__inputWrapper,
 .FA .SearchSD.hasClone.hasFavorite .SearchSD_search .SearchSD__inputWrapper {
   border-left-color: transparent;
@@ -23393,15 +23402,18 @@ div.List-Star {
   .FA .SearchSD.hasClone.hasFavorite .SearchSD_search .SearchSD__inputWrapper:hover {
     border-color: #00bfa5; }
 
+.AR .SearchSD.showFavorite .SearchSD_search .SearchSD_search_favoriteLink,
+.FA .SearchSD.showFavorite .SearchSD_search .SearchSD_search_favoriteLink {
+  padding-left: 32px;
+  padding-right: 14px; }
+
 .AR .SearchSD.Open .SearchSD_search .SearchSD__inputWrapper,
 .FA .SearchSD.Open .SearchSD_search .SearchSD__inputWrapper {
   border-bottom-left-radius: 0; }
 
 .AR .SearchSD.Open .SearchSD_search .SearchSD_search_favoriteLink,
 .FA .SearchSD.Open .SearchSD_search .SearchSD_search_favoriteLink {
-  border-bottom-right-radius: 0;
-  padding-left: 32px;
-  padding-right: 14px; }
+  border-bottom-right-radius: 0; }
 
 .AR .SearchSD.Open .SearchSD_search .SearchSD__cloneWrapper,
 .FA .SearchSD.Open .SearchSD_search .SearchSD__cloneWrapper {
