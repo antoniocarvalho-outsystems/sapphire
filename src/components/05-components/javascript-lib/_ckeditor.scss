@@ -1,0 +1,20 @@
+.cke_1 {
+	&.cke,
+	&.cke_chrome {
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-medium;
+		overflow: hidden;
+	}
+
+	.cke_bottom {
+		background-color: transparent;
+		border: none;
+	}
+
+	.cke_toolbar.cke_toolbar--sapphire {
+		.cke_button {
+			border-radius: $border-radius-default;
+			padding: $sapphire-sizes--xsmall;
+		}
+	}
+}

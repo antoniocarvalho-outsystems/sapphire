@@ -3,6 +3,21 @@
 	position: relative;
 	width: 100%;
 
+	.ButtonDropdownSmall & {
+		&_button.Button {
+			height: 30px;
+		}
+
+		&_text {
+			font-size: 13px;
+			line-height: 30px;
+		}
+
+		&_icon {
+			min-width: 30px;
+		}
+	}
+
 	&.open {
 		.ButtonDropdown {
 			&_button.Button {

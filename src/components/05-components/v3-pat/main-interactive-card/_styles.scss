@@ -202,7 +202,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		/* To be used on an embedded Web Block page inside the card */
 	}
 
-	// To avoid changes in nested cards
+	/* To avoid changes in nested cards */
 	> div > .MainInteractiveCard-body {
 		display: none;
 		width: auto;
@@ -216,6 +216,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 			padding-top: 0;
 		}
 	}
+	/* To avoid changes in nested cards */
 
 	.iframe-loading {
 		padding-top: $sapphire-sizes--xlarge;
@@ -238,6 +239,73 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 	&.Medium {
 		height: $card-medium-size-base;
+	}
+}
+
+.CardsWrapper {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	overflow: hidden;
+
+	&__Header,
+	&__HeaderCustom {
+		@include flex-center-vertically();
+
+		background-color: $regular-eta;
+		border-bottom: 1px solid $light-grey;
+		gap: $sapphire-sizes--large;
+		padding: $sapphire-sizes--medium;
+	}
+
+	&__HeaderCustom {
+		background-color: $regular-white;
+		border: none;
+	}
+
+	&__HeaderTitle {
+		flex: 1;
+	}
+
+	&__Content {
+		padding: $sapphire-sizes--medium;
+
+		.MainInteractiveCard {
+			&.isOpen {
+				&::after,
+				&::before {
+					background-color: $regular-white;
+					content: '';
+					display: block;
+					height: 1px;
+					position: absolute;
+					width: 100%;
+					z-index: 1;
+				}
+
+				&::before {
+					top: -2px;
+				}
+
+				&::after {
+					bottom: -2px;
+				}
+			}
+
+			&:not(.isOpen) {
+				border-left-color: transparent;
+				border-radius: 0;
+				border-right-color: transparent;
+			}
+		}
+
+		.ListRecords {
+			> *:not(:last-child) {
+				.MainInteractiveCard:not(.isOpen) {
+					border-bottom: none;
+				}
+			}
+		}
 	}
 }
 
