@@ -247,7 +247,6 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-medium;
-	overflow: hidden;
 
 	&__Header,
 	&__HeaderCustom {
@@ -255,6 +254,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 		background-color: $regular-eta;
 		border-bottom: 1px solid $light-grey;
+		border-radius: $border-radius-medium $border-radius-medium 0 0;
 		gap: $sapphire-sizes--medium;
 		padding: $sapphire-sizes--medium;
 	}
