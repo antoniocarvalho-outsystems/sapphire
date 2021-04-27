@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110019 || Generated: Tue Apr 27 2021 17:24:33 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110020 || Generated: Tue Apr 27 2021 17:37:41 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19316,6 +19316,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       -webkit-box-align: center;
               align-items: center;
       display: inherit;
+      gap: 12px;
       height: -webkit-fit-content;
       height: -moz-fit-content;
       height: fit-content;
@@ -19376,7 +19377,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     display: flex;
     background-color: #f2fffd;
     border-bottom: 1px solid #d6d6d6;
-    gap: 24px;
+    gap: 16px;
     padding: 16px; }
   .CardsWrapper__HeaderCustom {
     background-color: #fff;
@@ -19404,22 +19405,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       border-right-color: transparent; }
     .CardsWrapper__Content .ListRecords > *:not(:last-child) .MainInteractiveCard:not(.isOpen) {
       border-bottom: none; }
-
-.MainInteractiveCard-iframe-actions > a,
-.MainInteractiveCard-iframe-actions > span,
-.MainInteractiveCard-iframe-actions > div {
-  display: inline-block;
-  margin: 0;
-  vertical-align: middle; }
-
-.MainInteractiveCard-iframe-actions div.iconHorizontal.OSInline,
-.MainInteractiveCard-iframe-actions a.Button.Small,
-.MainInteractiveCard-iframe-actions .DropZoneContainer .row .Small.Button,
-.DropZoneContainer .row .MainInteractiveCard-iframe-actions .Small.Button,
-.MainInteractiveCard-iframe-actions a.ButtonLink,
-.MainInteractiveCard-iframe-actions a.ButtonSquare span.icon {
-  margin: 0 9px;
-  vertical-align: middle; }
 
 .MainInteractiveCard:not(.isOpen).ColorLightGreyBorder {
   border-color: #d6d6d6; }
@@ -19449,89 +19434,9 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   display: none;
   pointer-events: all; }
 
-.MainInteractiveCard-header-text-title .OSInline {
-  vertical-align: middle; }
-
-.GenericGallery-item .MainInteractiveCard-header-actions {
-  margin-left: -10px; }
-
-.MainInteractiveCard-header-actions .OSInline {
-  vertical-align: middle; }
-
 .MainInteractiveCard-header-actions label[for] {
   font-size: 1.1em;
   line-height: 1.1em; }
-
-.MainInteractiveCard-header-actions > a,
-.MainInteractiveCard-header-actions > a.ButtonSquare,
-.MainInteractiveCard-header-actions > span,
-.MainInteractiveCard-header-actions > div {
-  margin: 0;
-  vertical-align: middle; }
-  .MainInteractiveCard-header-actions > a [class$='icon-2x'],
-  .MainInteractiveCard-header-actions > a.ButtonSquare [class$='icon-2x'],
-  .MainInteractiveCard-header-actions > span [class$='icon-2x'],
-  .MainInteractiveCard-header-actions > div [class$='icon-2x'] {
-    position: relative;
-    top: 2px; }
-  .MainInteractiveCard-header-actions > a:last-child,
-  .MainInteractiveCard-header-actions > a.ButtonSquare:last-child,
-  .MainInteractiveCard-header-actions > span:last-child,
-  .MainInteractiveCard-header-actions > div:last-child {
-    margin-right: 0; }
-    .MainInteractiveCard-header-actions > a:last-child div.iconHorizontal.OSInline,
-    .MainInteractiveCard-header-actions > a:last-child a.Button.Small,
-    .MainInteractiveCard-header-actions > a:last-child .DropZoneContainer .row .Small.Button,
-    .DropZoneContainer .row .MainInteractiveCard-header-actions > a:last-child .Small.Button,
-    .MainInteractiveCard-header-actions > a:last-child a.ButtonLink,
-    .MainInteractiveCard-header-actions > a:last-child a.ButtonSquare,
-    .MainInteractiveCard-header-actions > a:last-child div.PatientHeaderActions,
-    .MainInteractiveCard-header-actions > a:last-child > div.OSInline,
-    .MainInteractiveCard-header-actions > a.ButtonSquare:last-child div.iconHorizontal.OSInline,
-    .MainInteractiveCard-header-actions > a.ButtonSquare:last-child a.Button.Small,
-    .MainInteractiveCard-header-actions > a.ButtonSquare:last-child .DropZoneContainer .row .Small.Button,
-    .DropZoneContainer .row .MainInteractiveCard-header-actions > a.ButtonSquare:last-child .Small.Button,
-    .MainInteractiveCard-header-actions > a.ButtonSquare:last-child a.ButtonLink,
-    .MainInteractiveCard-header-actions > a.ButtonSquare:last-child a.ButtonSquare,
-    .MainInteractiveCard-header-actions > a.ButtonSquare:last-child div.PatientHeaderActions,
-    .MainInteractiveCard-header-actions > a.ButtonSquare:last-child > div.OSInline,
-    .MainInteractiveCard-header-actions > span:last-child div.iconHorizontal.OSInline,
-    .MainInteractiveCard-header-actions > span:last-child a.Button.Small,
-    .MainInteractiveCard-header-actions > span:last-child .DropZoneContainer .row .Small.Button,
-    .DropZoneContainer .row .MainInteractiveCard-header-actions > span:last-child .Small.Button,
-    .MainInteractiveCard-header-actions > span:last-child a.ButtonLink,
-    .MainInteractiveCard-header-actions > span:last-child a.ButtonSquare,
-    .MainInteractiveCard-header-actions > span:last-child div.PatientHeaderActions,
-    .MainInteractiveCard-header-actions > span:last-child > div.OSInline,
-    .MainInteractiveCard-header-actions > div:last-child div.iconHorizontal.OSInline,
-    .MainInteractiveCard-header-actions > div:last-child a.Button.Small,
-    .MainInteractiveCard-header-actions > div:last-child .DropZoneContainer .row .Small.Button,
-    .DropZoneContainer .row .MainInteractiveCard-header-actions > div:last-child .Small.Button,
-    .MainInteractiveCard-header-actions > div:last-child a.ButtonLink,
-    .MainInteractiveCard-header-actions > div:last-child a.ButtonSquare,
-    .MainInteractiveCard-header-actions > div:last-child div.PatientHeaderActions,
-    .MainInteractiveCard-header-actions > div:last-child > div.OSInline {
-      margin-right: 0; }
-
-.MainInteractiveCard-header-actions div.iconHorizontal.OSInline,
-.MainInteractiveCard-header-actions a.Button.Small,
-.MainInteractiveCard-header-actions .DropZoneContainer .row .Small.Button,
-.DropZoneContainer .row .MainInteractiveCard-header-actions .Small.Button,
-.MainInteractiveCard-header-actions a.ButtonLink,
-.MainInteractiveCard-header-actions a.ButtonSquare,
-.MainInteractiveCard-header-actions div.PatientHeaderActions,
-.MainInteractiveCard-header-actions > div.OSInline:not(.NoWrap) {
-  margin: 0 6px;
-  vertical-align: middle; }
-
-.MainInteractiveCard-header-actions > div.OSInline.NoWrap div.iconHorizontal.OSInline,
-.MainInteractiveCard-header-actions > div.OSInline.NoWrap a.Button.Small,
-.MainInteractiveCard-header-actions > div.OSInline.NoWrap .DropZoneContainer .row .Small.Button,
-.DropZoneContainer .row .MainInteractiveCard-header-actions > div.OSInline.NoWrap .Small.Button,
-.MainInteractiveCard-header-actions > div.OSInline.NoWrap a.ButtonLink,
-.MainInteractiveCard-header-actions > div.OSInline.NoWrap a.ButtonSquare {
-  margin: 0 6px;
-  vertical-align: middle; }
 
 .tablet .MainInteractiveCard:not(.SmallHeader) .MainInteractiveCard-header,
 .phone .MainInteractiveCard:not(.SmallHeader) .MainInteractiveCard-header {
@@ -19570,68 +19475,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     position: static;
     text-align: right; } }
 
-.MainInteractiveCard-absolute-actions > a,
-.MainInteractiveCard-absolute-actions > a.ButtonSquare,
-.MainInteractiveCard-absolute-actions > span,
-.MainInteractiveCard-absolute-actions > div {
-  margin: 0;
-  vertical-align: middle; }
-  .MainInteractiveCard-absolute-actions > a [class$='icon-2x'],
-  .MainInteractiveCard-absolute-actions > a.ButtonSquare [class$='icon-2x'],
-  .MainInteractiveCard-absolute-actions > span [class$='icon-2x'],
-  .MainInteractiveCard-absolute-actions > div [class$='icon-2x'] {
-    position: relative;
-    top: 2px; }
-  .MainInteractiveCard-absolute-actions > a:last-child,
-  .MainInteractiveCard-absolute-actions > a.ButtonSquare:last-child,
-  .MainInteractiveCard-absolute-actions > span:last-child,
-  .MainInteractiveCard-absolute-actions > div:last-child {
-    margin-right: 0; }
-    .MainInteractiveCard-absolute-actions > a:last-child div.iconHorizontal.OSInline,
-    .MainInteractiveCard-absolute-actions > a:last-child a.Button.Small,
-    .MainInteractiveCard-absolute-actions > a:last-child .DropZoneContainer .row .Small.Button,
-    .DropZoneContainer .row .MainInteractiveCard-absolute-actions > a:last-child .Small.Button,
-    .MainInteractiveCard-absolute-actions > a:last-child a.ButtonLink,
-    .MainInteractiveCard-absolute-actions > a:last-child a.ButtonSquare,
-    .MainInteractiveCard-absolute-actions > a:last-child div.PatientHeaderActions,
-    .MainInteractiveCard-absolute-actions > a:last-child > div.OSInline,
-    .MainInteractiveCard-absolute-actions > a.ButtonSquare:last-child div.iconHorizontal.OSInline,
-    .MainInteractiveCard-absolute-actions > a.ButtonSquare:last-child a.Button.Small,
-    .MainInteractiveCard-absolute-actions > a.ButtonSquare:last-child .DropZoneContainer .row .Small.Button,
-    .DropZoneContainer .row .MainInteractiveCard-absolute-actions > a.ButtonSquare:last-child .Small.Button,
-    .MainInteractiveCard-absolute-actions > a.ButtonSquare:last-child a.ButtonLink,
-    .MainInteractiveCard-absolute-actions > a.ButtonSquare:last-child a.ButtonSquare,
-    .MainInteractiveCard-absolute-actions > a.ButtonSquare:last-child div.PatientHeaderActions,
-    .MainInteractiveCard-absolute-actions > a.ButtonSquare:last-child > div.OSInline,
-    .MainInteractiveCard-absolute-actions > span:last-child div.iconHorizontal.OSInline,
-    .MainInteractiveCard-absolute-actions > span:last-child a.Button.Small,
-    .MainInteractiveCard-absolute-actions > span:last-child .DropZoneContainer .row .Small.Button,
-    .DropZoneContainer .row .MainInteractiveCard-absolute-actions > span:last-child .Small.Button,
-    .MainInteractiveCard-absolute-actions > span:last-child a.ButtonLink,
-    .MainInteractiveCard-absolute-actions > span:last-child a.ButtonSquare,
-    .MainInteractiveCard-absolute-actions > span:last-child div.PatientHeaderActions,
-    .MainInteractiveCard-absolute-actions > span:last-child > div.OSInline,
-    .MainInteractiveCard-absolute-actions > div:last-child div.iconHorizontal.OSInline,
-    .MainInteractiveCard-absolute-actions > div:last-child a.Button.Small,
-    .MainInteractiveCard-absolute-actions > div:last-child .DropZoneContainer .row .Small.Button,
-    .DropZoneContainer .row .MainInteractiveCard-absolute-actions > div:last-child .Small.Button,
-    .MainInteractiveCard-absolute-actions > div:last-child a.ButtonLink,
-    .MainInteractiveCard-absolute-actions > div:last-child a.ButtonSquare,
-    .MainInteractiveCard-absolute-actions > div:last-child div.PatientHeaderActions,
-    .MainInteractiveCard-absolute-actions > div:last-child > div.OSInline {
-      margin-right: 0; }
-
-.MainInteractiveCard-absolute-actions div.iconHorizontal.OSInline,
-.MainInteractiveCard-absolute-actions a.Button.Small,
-.MainInteractiveCard-absolute-actions .DropZoneContainer .row .Small.Button,
-.DropZoneContainer .row .MainInteractiveCard-absolute-actions .Small.Button,
-.MainInteractiveCard-absolute-actions a.ButtonLink,
-.MainInteractiveCard-absolute-actions a.ButtonSquare,
-.MainInteractiveCard-absolute-actions div.PatientHeaderActions,
-.MainInteractiveCard-absolute-actions > div.OSInline {
-  margin: 0 6px;
-  vertical-align: middle; }
-
 .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions > *:last-child {
   margin-right: 0; }
 
@@ -19640,18 +19483,12 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   margin-right: 8px; }
 
 /* Specific overrides */
-.MainInteractiveCard-header .ActionsMenu .icon {
-  font-size: 1.2em; }
-
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline {
   border-top: 1px solid #00bfa5;
   padding-top: 16px; }
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline:first-child {
   border-top: none; }
-
-.MainInteractiveCard-header .OutOfStockMsg {
-  padding: 2px 10px; }
 
 .MainInteractiveCard-header .BadgeClassification,
 .MainInteractiveCard-header .OutOfStockMsg,
