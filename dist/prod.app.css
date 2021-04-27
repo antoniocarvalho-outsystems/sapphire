@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110018 || Generated: Tue Apr 27 2021 14:25:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110019 || Generated: Tue Apr 27 2021 17:24:33 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12029,6 +12029,13 @@ html body {
   cursor: pointer;
   position: relative;
   width: 100%; }
+  .ButtonDropdownSmall .ButtonDropdown_button.Button {
+    height: 30px; }
+  .ButtonDropdownSmall .ButtonDropdown_text {
+    font-size: 13px;
+    line-height: 30px; }
+  .ButtonDropdownSmall .ButtonDropdown_icon {
+    min-width: 30px; }
   .ButtonDropdown.open .ButtonDropdown_button.Button {
     background-color: #f2fffd;
     border: 1px solid #00bfa5;
@@ -12580,6 +12587,19 @@ html body {
   padding-right: 35px; }
 
 /* Javascript_Lib Components */
+.cke_1.cke, .cke_1.cke_chrome {
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  overflow: hidden; }
+
+.cke_1 .cke_bottom {
+  background-color: transparent;
+  border: none; }
+
+.cke_1 .cke_toolbar.cke_toolbar--sapphire .cke_button {
+  border-radius: 4px;
+  padding: 4px; }
+
 .lasa-term b {
   font-weight: 900; }
 
@@ -19206,7 +19226,9 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   background-color: #ebebeb;
   border: 1px solid #d6d6d6;
   border-radius: 8px;
-  position: relative; }
+  position: relative;
+  /* To avoid changes in nested cards */
+  /* To avoid changes in nested cards */ }
   .MainInteractiveCard.isEnabled {
     background-color: #fff;
     border-color: #d6d6d6; }
@@ -19341,6 +19363,47 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     height: 76px; }
   .MainInteractiveCard-iframe-actions.Medium {
     height: 86px; }
+
+.CardsWrapper {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  overflow: hidden; }
+  .CardsWrapper__Header, .CardsWrapper__HeaderCustom {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    background-color: #f2fffd;
+    border-bottom: 1px solid #d6d6d6;
+    gap: 24px;
+    padding: 16px; }
+  .CardsWrapper__HeaderCustom {
+    background-color: #fff;
+    border: none; }
+  .CardsWrapper__HeaderTitle {
+    -webkit-box-flex: 1;
+            flex: 1; }
+  .CardsWrapper__Content {
+    padding: 16px; }
+    .CardsWrapper__Content .MainInteractiveCard.isOpen::after, .CardsWrapper__Content .MainInteractiveCard.isOpen::before {
+      background-color: #fff;
+      content: '';
+      display: block;
+      height: 1px;
+      position: absolute;
+      width: 100%;
+      z-index: 1; }
+    .CardsWrapper__Content .MainInteractiveCard.isOpen::before {
+      top: -2px; }
+    .CardsWrapper__Content .MainInteractiveCard.isOpen::after {
+      bottom: -2px; }
+    .CardsWrapper__Content .MainInteractiveCard:not(.isOpen) {
+      border-left-color: transparent;
+      border-radius: 0;
+      border-right-color: transparent; }
+    .CardsWrapper__Content .ListRecords > *:not(:last-child) .MainInteractiveCard:not(.isOpen) {
+      border-bottom: none; }
 
 .MainInteractiveCard-iframe-actions > a,
 .MainInteractiveCard-iframe-actions > span,
