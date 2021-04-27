@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110020 || Generated: Tue Apr 27 2021 17:37:41 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110021 || Generated: Tue Apr 27 2021 17:42:20 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19368,8 +19368,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .CardsWrapper {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  overflow: hidden; }
+  border-radius: 8px; }
   .CardsWrapper__Header, .CardsWrapper__HeaderCustom {
     -webkit-box-align: center;
             align-items: center;
@@ -19377,6 +19376,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     display: flex;
     background-color: #f2fffd;
     border-bottom: 1px solid #d6d6d6;
+    border-radius: 8px 8px 0 0;
     gap: 16px;
     padding: 16px; }
   .CardsWrapper__HeaderCustom {
