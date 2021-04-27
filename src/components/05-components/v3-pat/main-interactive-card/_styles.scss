@@ -1,9 +1,6 @@
-$card-color-active: $regular-alpha;
-$card-color-caption: $mid-light-grey;
-$card-color-disabled: $mid-light-grey;
-$card-color-header: $dark-grey;
-$card-color-subtitle: $mid-dark-grey;
-$card-color-text-regular: $text-color-regular;
+$card-xsmall-size-base: $sapphire-sizes--largest;
+$card-small-size-base: $sapphire-sizes--largest + 20px;
+$card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 .MainInteractiveCard {
 	background-color: $background-disabled;
@@ -21,9 +18,13 @@ $card-color-text-regular: $text-color-regular;
 
 		.MainInteractiveCard-header {
 			border-bottom: 1px solid $light-grey;
+
+			.MainInteractiveCard-header-text {
+				overflow: hidden;
+			}
 		}
 
-		// To avoid change any nested card
+		// To avoid changes in nested cards
 		> div > .MainInteractiveCard-body {
 			.MainInteractiveCard-absolute-actions {
 				display: block;
@@ -37,13 +38,108 @@ $card-color-text-regular: $text-color-regular;
 		}
 	}
 
+	&.hasFloater {
+		&.isOpen {
+			> .MainInteractiveCard-header {
+				.MainInteractiveCard-header-text {
+					max-width: 70%;
+				}
+
+				.MainInteractiveCard-header-text-title {
+					max-height: 32px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&.XSmallHeader {
+		&.isOpen {
+			> .MainInteractiveCard-header {
+				height: $card-xsmall-size-base;
+			}
+
+			> .MainInteractiveCard-floater {
+				margin-bottom: -$card-xsmall-size-base;
+			}
+		}
+
+		> .MainInteractiveCard-floater {
+			top: -$card-xsmall-size-base;
+		}
+
+		.iframe-loading {
+			margin-top: $card-xsmall-size-base;
+		}
+	}
+
+	&.SmallHeader {
+		&.isOpen {
+			> .MainInteractiveCard-header {
+				height: $card-small-size-base;
+			}
+
+			> .MainInteractiveCard-floater {
+				margin-bottom: -($card-small-size-base);
+			}
+		}
+
+		> .MainInteractiveCard-floater {
+			top: -($card-small-size-base);
+		}
+
+		.iframe-loading {
+			margin-top: $card-small-size-base;
+		}
+	}
+
+	&.MediumHeader {
+		&.isOpen {
+			> .MainInteractiveCard-header {
+				height: $card-medium-size-base;
+			}
+
+			> .MainInteractiveCard-floater {
+				margin-bottom: -$card-medium-size-base;
+			}
+		}
+
+		> .MainInteractiveCard-floater {
+			top: -$card-medium-size-base;
+		}
+
+		.MainInteractiveCard.MediumHeader.isOpen .iframe-loading {
+			margin-top: $card-medium-size-base;
+		}
+	}
+
+	&.NoneHeader {
+		&.isOpen {
+			> .MainInteractiveCard-header {
+				height: auto;
+			}
+		}
+	}
+
 	.MainInteractiveCard-header {
 		@include flex-center-vertically();
 
 		flex-direction: row;
+		gap: $sapphire-sizes--xlarge;
+		min-height: $sapphire-sizes--largest;
 		padding: $sapphire-sizes--medium;
 		pointer-events: none;
 		position: relative;
+
+		.MainInteractiveCard-header-text {
+			cursor: auto;
+			display: grid;
+			flex-grow: 2;
+			pointer-events: all;
+		}
 
 		.MainInteractiveCard-header-selectable-trigger {
 			cursor: pointer;
@@ -72,6 +168,15 @@ $card-color-text-regular: $text-color-regular;
 			color: $regular-grey;
 			// display: contents;
 		}
+
+		.MainInteractiveCard-header-actions {
+			align-items: center;
+			display: inherit;
+			height: fit-content;
+			justify-content: flex-end;
+			pointer-events: all;
+			white-space: nowrap;
+		}
 	}
 
 	.MainInteractiveCard-intro {
@@ -94,32 +199,49 @@ $card-color-text-regular: $text-color-regular;
 				right: 0;
 			}
 		}
+		/* To be used on an embedded Web Block page inside the card */
+	}
+
+	// To avoid changes in nested cards
+	> div > .MainInteractiveCard-body {
+		display: none;
+		width: auto;
+	}
+
+	> .MainInteractiveCard-floater {
+		position: relative;
+		z-index: 0;
+
+		.MainInteractiveCard-body {
+			padding-top: 0;
+		}
+	}
+
+	.iframe-loading {
+		padding-top: $sapphire-sizes--xlarge;
+	}
+}
+
+.MainInteractiveCard-iframe-actions {
+	@include flex-center-vertically();
+
+	justify-content: flex-end;
+	margin-bottom: $sapphire-sizes--medium;
+
+	&.XSmall {
+		height: $card-xsmall-size-base;
+	}
+
+	&.Small {
+		height: $card-small-size-base;
+	}
+
+	&.Medium {
+		height: $card-medium-size-base;
 	}
 }
 
 // WIP -------------------------->
-
-.MainInteractiveCard-iframe-actions {
-	margin-bottom: 30px;
-	padding-top: 3px;
-	text-align: right;
-}
-
-.AR .MainInteractiveCard-iframe-actions {
-	text-align: left;
-}
-
-.MainInteractiveCard-iframe-actions.xsmallHeader {
-	margin-bottom: 40px;
-}
-
-.MainInteractiveCard-iframe-actions.smallHeader {
-	margin-bottom: 60px;
-}
-
-.MainInteractiveCard-iframe-actions.mediumHeader {
-	margin-bottom: 85px;
-}
 
 .MainInteractiveCard-iframe-actions > a,
 .MainInteractiveCard-iframe-actions > span,
@@ -160,27 +282,6 @@ $card-color-text-regular: $text-color-regular;
 	white-space: nowrap;
 }
 
-.AR .MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
-	padding-left: 0;
-	padding-right: 30px;
-}
-
-.MainInteractiveCard.isOpen.XSmallHeader > .MainInteractiveCard-header {
-	height: 45px;
-}
-
-.MainInteractiveCard.isOpen.SmallHeader > .MainInteractiveCard-header {
-	height: 60px;
-}
-
-.MainInteractiveCard.isOpen.MediumHeader > .MainInteractiveCard-header {
-	height: 85px;
-}
-
-.MainInteractiveCard.isOpen.NoneHeader > .MainInteractiveCard-header {
-	height: auto;
-}
-
 .MainInteractiveCard-header-triggerAction-placeholder {
 	height: 5px;
 	left: 0;
@@ -190,7 +291,7 @@ $card-color-text-regular: $text-color-regular;
 }
 
 .MainInteractiveCard-header-selectable.icon-disabled span.icon {
-	color: $card-color-disabled;
+	color: $mid-light-grey;
 }
 
 .MainInteractiveCard-header-selectable-placeholder a {
@@ -198,51 +299,12 @@ $card-color-text-regular: $text-color-regular;
 	pointer-events: all;
 }
 
-.MainInteractiveCard-header-text {
-	cursor: auto;
-	display: grid;
-	flex-grow: 2;
-	pointer-events: all;
-}
-
-.MainInteractiveCard.isOpen .MainInteractiveCard-header-text {
-	overflow: hidden;
-}
-
 .MainInteractiveCard-header-text-title .OSInline {
 	vertical-align: middle;
 }
 
-.MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text {
-	max-width: 70%;
-}
-
-.MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
-	max-height: 32px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	width: 100%;
-}
-
-.MainInteractiveCard-header-actions {
-	align-items: center;
-	display: inherit;
-	height: fit-content;
-	margin-left: 40px;
-	pointer-events: all;
-	text-align: right;
-	white-space: nowrap;
-}
-
 .GenericGallery-item .MainInteractiveCard-header-actions {
 	margin-left: -10px;
-}
-
-.AR .MainInteractiveCard-header-actions {
-	margin-left: 0;
-	margin-right: 40px;
-	text-align: left;
 }
 
 .MainInteractiveCard-header-actions .OSInline {
@@ -322,48 +384,6 @@ $card-color-text-regular: $text-color-regular;
 	}
 }
 
-.MainInteractiveCard > div > .MainInteractiveCard-body {
-	display: none;
-	width: auto;
-}
-
-.MainInteractiveCard > .MainInteractiveCard-floater .MainInteractiveCard-body {
-	padding-top: 0;
-}
-
-.MainInteractiveCard > .MainInteractiveCard-floater {
-	position: relative;
-	z-index: 0;
-}
-
-.MainInteractiveCard.XSmallHeader > .MainInteractiveCard-floater {
-	top: -40px;
-}
-
-.MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-floater {
-	margin-bottom: -40px;
-}
-
-.MainInteractiveCard.SmallHeader > .MainInteractiveCard-floater {
-	top: -60px;
-}
-
-.MainInteractiveCard.SmallHeader.isOpen > .MainInteractiveCard-floater {
-	margin-bottom: -60px;
-}
-
-.MainInteractiveCard.MediumHeader > .MainInteractiveCard-floater {
-	top: -85px;
-}
-
-.MainInteractiveCard.MediumHeader.isOpen > .MainInteractiveCard-floater {
-	margin-bottom: -85px;
-}
-
-.MainInteractiveCard.isOpen:before {
-	opacity: 1;
-}
-
 .MainInteractiveCard.allowOpening > .MainInteractiveCard-header .MainInteractiveCard-header-text {
 	cursor: pointer;
 }
@@ -434,7 +454,7 @@ $card-color-text-regular: $text-color-regular;
 }
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline {
-	border-top: 1px solid $card-color-active;
+	border-top: 1px solid $regular-alpha;
 	padding-top: $sapphire-sizes--medium;
 }
 
