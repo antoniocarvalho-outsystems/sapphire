@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110021 || Generated: Tue Apr 27 2021 17:42:20 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110022 || Generated: Tue Apr 27 2021 17:52:00 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19250,6 +19250,12 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%; }
+  .MainInteractiveCard.allowOpening > .MainInteractiveCard-header .MainInteractiveCard-header-text {
+    cursor: pointer; }
+  .MainInteractiveCard.forceOpen > div > .MainInteractiveCard-body {
+    display: block !important;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-header {
     height: 56px; }
   .MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-floater {
@@ -19350,6 +19356,13 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .MainInteractiveCard .iframe-loading {
     padding-top: 32px; }
 
+.MainInteractiveCard--ellipsis {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .MainInteractiveCard-iframe-actions {
   -webkit-box-align: center;
           align-items: center;
@@ -19406,19 +19419,9 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     .CardsWrapper__Content .ListRecords > *:not(:last-child) .MainInteractiveCard:not(.isOpen) {
       border-bottom: none; }
 
-.MainInteractiveCard:not(.isOpen).ColorLightGreyBorder {
-  border-color: #d6d6d6; }
-
 .MainInteractiveCard:not(.isOpen).ShowEntireTitle .MainInteractiveCard-header-text-title {
   max-height: initial;
   white-space: unset; }
-
-.MainInteractiveCard--ellipsis {
-  display: inline-block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
 
 .MainInteractiveCard-header-triggerAction-placeholder {
   height: 5px;
@@ -19461,26 +19464,11 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   text-align: right;
   width: 100%; }
 
-.MainInteractiveCard.allowOpening > .MainInteractiveCard-header .MainInteractiveCard-header-text {
-  cursor: pointer; }
-
-.MainInteractiveCard.forceOpen > div > .MainInteractiveCard-body {
-  display: block !important;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
 @media screen and (max-width: 1024px) {
   .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
     margin-bottom: 16px;
     position: static;
     text-align: right; } }
-
-.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions > *:last-child {
-  margin-right: 0; }
-
-.AR .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions > *:last-child {
-  margin-left: 0;
-  margin-right: 8px; }
 
 /* Specific overrides */
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline {
@@ -19489,15 +19477,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline:first-child {
   border-top: none; }
-
-.MainInteractiveCard-header .BadgeClassification,
-.MainInteractiveCard-header .OutOfStockMsg,
-.MainInteractiveCard-header .StatusBadges {
-  display: inline-block;
-  height: auto;
-  margin: 0 8px;
-  vertical-align: middle;
-  width: auto; }
 
 .MainInteractiveCard-header .PatientHeaderActions__subMenu {
   right: -5px;
