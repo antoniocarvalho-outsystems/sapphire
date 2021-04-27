@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110017 || Generated: Mon Apr 26 2021 17:19:26 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110018 || Generated: Tue Apr 27 2021 14:25:01 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19214,10 +19214,46 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     border-color: #00bfa5; }
     .MainInteractiveCard.isOpen .MainInteractiveCard-header {
       border-bottom: 1px solid #d6d6d6; }
+      .MainInteractiveCard.isOpen .MainInteractiveCard-header .MainInteractiveCard-header-text {
+        overflow: hidden; }
     .MainInteractiveCard.isOpen > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
       display: block; }
   .MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
     gap: 16px; }
+  .MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text {
+    max-width: 70%; }
+  .MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
+    max-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%; }
+  .MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-header {
+    height: 56px; }
+  .MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-floater {
+    margin-bottom: -56px; }
+  .MainInteractiveCard.XSmallHeader > .MainInteractiveCard-floater {
+    top: -56px; }
+  .MainInteractiveCard.XSmallHeader .iframe-loading {
+    margin-top: 56px; }
+  .MainInteractiveCard.SmallHeader.isOpen > .MainInteractiveCard-header {
+    height: 76px; }
+  .MainInteractiveCard.SmallHeader.isOpen > .MainInteractiveCard-floater {
+    margin-bottom: -76px; }
+  .MainInteractiveCard.SmallHeader > .MainInteractiveCard-floater {
+    top: -76px; }
+  .MainInteractiveCard.SmallHeader .iframe-loading {
+    margin-top: 76px; }
+  .MainInteractiveCard.MediumHeader.isOpen > .MainInteractiveCard-header {
+    height: 86px; }
+  .MainInteractiveCard.MediumHeader.isOpen > .MainInteractiveCard-floater {
+    margin-bottom: -86px; }
+  .MainInteractiveCard.MediumHeader > .MainInteractiveCard-floater {
+    top: -86px; }
+  .MainInteractiveCard.MediumHeader .MainInteractiveCard.MediumHeader.isOpen .iframe-loading {
+    margin-top: 86px; }
+  .MainInteractiveCard.NoneHeader.isOpen > .MainInteractiveCard-header {
+    height: auto; }
   .MainInteractiveCard .MainInteractiveCard-header {
     -webkit-box-align: center;
             align-items: center;
@@ -19226,9 +19262,17 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
+    gap: 32px;
+    min-height: 56px;
     padding: 16px;
     pointer-events: none;
     position: relative; }
+    .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text {
+      cursor: auto;
+      display: grid;
+      -webkit-box-flex: 2;
+              flex-grow: 2;
+      pointer-events: all; }
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-selectable-trigger {
       cursor: pointer;
       pointer-events: all; }
@@ -19246,10 +19290,22 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-subtitle,
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-caption {
       color: #777777; }
+    .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-actions {
+      -webkit-box-align: center;
+              align-items: center;
+      display: inherit;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      -webkit-box-pack: end;
+              justify-content: flex-end;
+      pointer-events: all;
+      white-space: nowrap; }
   .MainInteractiveCard .MainInteractiveCard-intro {
     padding: 16px; }
   .MainInteractiveCard .MainInteractiveCard-body {
     padding: 16px;
+    /* To be used on an embedded Web Block page inside the card */
     /* To be used on an embedded Web Block page inside the card */ }
     .MainInteractiveCard .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
       display: none;
@@ -19260,23 +19316,31 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       .AR .MainInteractiveCard .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
         left: 16px;
         right: 0; }
+  .MainInteractiveCard > div > .MainInteractiveCard-body {
+    display: none;
+    width: auto; }
+  .MainInteractiveCard > .MainInteractiveCard-floater {
+    position: relative;
+    z-index: 0; }
+    .MainInteractiveCard > .MainInteractiveCard-floater .MainInteractiveCard-body {
+      padding-top: 0; }
+  .MainInteractiveCard .iframe-loading {
+    padding-top: 32px; }
 
 .MainInteractiveCard-iframe-actions {
-  margin-bottom: 30px;
-  padding-top: 3px;
-  text-align: right; }
-
-.AR .MainInteractiveCard-iframe-actions {
-  text-align: left; }
-
-.MainInteractiveCard-iframe-actions.xsmallHeader {
-  margin-bottom: 40px; }
-
-.MainInteractiveCard-iframe-actions.smallHeader {
-  margin-bottom: 60px; }
-
-.MainInteractiveCard-iframe-actions.mediumHeader {
-  margin-bottom: 85px; }
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 16px; }
+  .MainInteractiveCard-iframe-actions.XSmall {
+    height: 56px; }
+  .MainInteractiveCard-iframe-actions.Small {
+    height: 76px; }
+  .MainInteractiveCard-iframe-actions.Medium {
+    height: 86px; }
 
 .MainInteractiveCard-iframe-actions > a,
 .MainInteractiveCard-iframe-actions > span,
@@ -19308,22 +19372,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.AR .MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
-  padding-left: 0;
-  padding-right: 30px; }
-
-.MainInteractiveCard.isOpen.XSmallHeader > .MainInteractiveCard-header {
-  height: 45px; }
-
-.MainInteractiveCard.isOpen.SmallHeader > .MainInteractiveCard-header {
-  height: 60px; }
-
-.MainInteractiveCard.isOpen.MediumHeader > .MainInteractiveCard-header {
-  height: 85px; }
-
-.MainInteractiveCard.isOpen.NoneHeader > .MainInteractiveCard-header {
-  height: auto; }
-
 .MainInteractiveCard-header-triggerAction-placeholder {
   height: 5px;
   left: 0;
@@ -19338,48 +19386,11 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   display: none;
   pointer-events: all; }
 
-.MainInteractiveCard-header-text {
-  cursor: auto;
-  display: grid;
-  -webkit-box-flex: 2;
-          flex-grow: 2;
-  pointer-events: all; }
-
-.MainInteractiveCard.isOpen .MainInteractiveCard-header-text {
-  overflow: hidden; }
-
 .MainInteractiveCard-header-text-title .OSInline {
   vertical-align: middle; }
 
-.MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text {
-  max-width: 70%; }
-
-.MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
-  max-height: 32px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%; }
-
-.MainInteractiveCard-header-actions {
-  -webkit-box-align: center;
-          align-items: center;
-  display: inherit;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-left: 40px;
-  pointer-events: all;
-  text-align: right;
-  white-space: nowrap; }
-
 .GenericGallery-item .MainInteractiveCard-header-actions {
   margin-left: -10px; }
-
-.AR .MainInteractiveCard-header-actions {
-  margin-left: 0;
-  margin-right: 40px;
-  text-align: left; }
 
 .MainInteractiveCard-header-actions .OSInline {
   vertical-align: middle; }
@@ -19481,38 +19492,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   margin-left: 0;
   text-align: right;
   width: 100%; }
-
-.MainInteractiveCard > div > .MainInteractiveCard-body {
-  display: none;
-  width: auto; }
-
-.MainInteractiveCard > .MainInteractiveCard-floater .MainInteractiveCard-body {
-  padding-top: 0; }
-
-.MainInteractiveCard > .MainInteractiveCard-floater {
-  position: relative;
-  z-index: 0; }
-
-.MainInteractiveCard.XSmallHeader > .MainInteractiveCard-floater {
-  top: -40px; }
-
-.MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-floater {
-  margin-bottom: -40px; }
-
-.MainInteractiveCard.SmallHeader > .MainInteractiveCard-floater {
-  top: -60px; }
-
-.MainInteractiveCard.SmallHeader.isOpen > .MainInteractiveCard-floater {
-  margin-bottom: -60px; }
-
-.MainInteractiveCard.MediumHeader > .MainInteractiveCard-floater {
-  top: -85px; }
-
-.MainInteractiveCard.MediumHeader.isOpen > .MainInteractiveCard-floater {
-  margin-bottom: -85px; }
-
-.MainInteractiveCard.isOpen:before {
-  opacity: 1; }
 
 .MainInteractiveCard.allowOpening > .MainInteractiveCard-header .MainInteractiveCard-header-text {
   cursor: pointer; }
