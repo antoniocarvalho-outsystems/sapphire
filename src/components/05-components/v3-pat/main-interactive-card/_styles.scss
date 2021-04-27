@@ -56,6 +56,20 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		}
 	}
 
+	&.allowOpening {
+		> .MainInteractiveCard-header .MainInteractiveCard-header-text {
+			cursor: pointer;
+		}
+	}
+
+	&.forceOpen {
+		> div > .MainInteractiveCard-body {
+			display: block !important;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+
 	&.XSmallHeader {
 		&.isOpen {
 			> .MainInteractiveCard-header {
@@ -224,6 +238,14 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	}
 }
 
+.MainInteractiveCard--ellipsis {
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 .MainInteractiveCard-iframe-actions {
 	@include flex-center-vertically();
 
@@ -314,10 +336,6 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 .MainInteractiveCard {
 	&:not(.isOpen) {
-		&.ColorLightGreyBorder {
-			border-color: $light-grey;
-		}
-
 		&.ShowEntireTitle {
 			.MainInteractiveCard-header-text-title {
 				max-height: initial;
@@ -325,14 +343,6 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 			}
 		}
 	}
-}
-
-.MainInteractiveCard--ellipsis {
-	display: inline-block;
-	max-width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 }
 
 .MainInteractiveCard-header-triggerAction-placeholder {
@@ -381,31 +391,12 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	}
 }
 
-.MainInteractiveCard.allowOpening > .MainInteractiveCard-header .MainInteractiveCard-header-text {
-	cursor: pointer;
-}
-
-.MainInteractiveCard.forceOpen > div > .MainInteractiveCard-body {
-	display: block !important;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
 @media screen and (max-width: 1024px) {
 	.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
 		margin-bottom: $sapphire-sizes--medium;
 		position: static;
 		text-align: right;
 	}
-}
-
-.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions > *:last-child {
-	margin-right: 0;
-}
-
-.AR .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions > *:last-child {
-	margin-left: 0;
-	margin-right: 8px;
 }
 
 /* Specific overrides */
@@ -417,16 +408,6 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 .ListRecords.MainInteractiveCards .MainInteractiveCard-textline:first-child {
 	border-top: none;
-}
-
-.MainInteractiveCard-header .BadgeClassification,
-.MainInteractiveCard-header .OutOfStockMsg,
-.MainInteractiveCard-header .StatusBadges {
-	display: inline-block;
-	height: auto;
-	margin: 0 8px;
-	vertical-align: middle;
-	width: auto;
 }
 
 .MainInteractiveCard-header .PatientHeaderActions__subMenu {
