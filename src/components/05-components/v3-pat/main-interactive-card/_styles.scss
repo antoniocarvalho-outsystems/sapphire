@@ -444,11 +444,3 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		}
 	}
 }
-
-@media screen and (max-width: 1024px) {
-	.MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-		margin-bottom: $sapphire-sizes--medium;
-		position: static;
-		text-align: right;
-	}
-}
