@@ -158,7 +158,7 @@ div.Toolbar {
 		&--notification {
 			&::before {
 				background-color: $regular-red;
-				border: 4px solid $regular-eta;
+				border: 4px solid $body-color;
 				border-radius: 50%;
 				content: '';
 				height: 18px;
