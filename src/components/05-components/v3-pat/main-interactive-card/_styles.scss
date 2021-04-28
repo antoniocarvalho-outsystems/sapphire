@@ -265,6 +265,41 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	}
 }
 
+@mixin card-adjustments() {
+	.MainInteractiveCard {
+		&.isOpen {
+			margin: $sapphire-sizes--small 0;
+
+			&::after,
+			&::before {
+				content: '';
+				display: block;
+				height: 1px;
+				position: absolute;
+				width: 100%;
+			}
+
+			&::before {
+				background-color: $light-grey;
+				top: -($sapphire-sizes--small + 1px);
+				z-index: 1;
+			}
+
+			&::after {
+				background-color: $regular-white;
+				bottom: -2px;
+				z-index: 2;
+			}
+		}
+
+		&:not(.isOpen) {
+			border-left-color: transparent;
+			border-radius: 0;
+			border-right-color: transparent;
+		}
+	}
+}
+
 .CardsWrapper {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
@@ -279,6 +314,11 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		border-radius: $border-radius-medium $border-radius-medium 0 0;
 		gap: $sapphire-sizes--medium;
 		padding: $sapphire-sizes--medium;
+
+		.CardIcon {
+			height: 40px;
+			width: 40px;
+		}
 	}
 
 	&__HeaderCustom {
@@ -293,41 +333,49 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	&__Content {
 		padding: $sapphire-sizes--medium;
 
-		.MainInteractiveCard {
-			&.isOpen {
-				&::after,
-				&::before {
-					background-color: $regular-white;
-					content: '';
-					display: block;
-					height: 1px;
-					position: absolute;
-					width: 100%;
-					z-index: 1;
-				}
-
-				&::before {
-					top: -2px;
-				}
-
-				&::after {
-					bottom: -2px;
-				}
-			}
-
-			&:not(.isOpen) {
-				border-left-color: transparent;
-				border-radius: 0;
-				border-right-color: transparent;
-			}
-		}
+		@include card-adjustments();
 
 		.ListRecords {
-			> *:not(:last-child) {
+			> * {
 				.MainInteractiveCard:not(.isOpen) {
 					border-bottom: none;
 				}
 			}
+
+			> *:first-child {
+				.MainInteractiveCard.isOpen::before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.CardsWrapperList {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	display: block;
+	padding: $sapphire-sizes--medium;
+
+	@include card-adjustments();
+
+	.CardsWrapper {
+		border: none;
+
+		&__HeaderCustom {
+			padding: 0;
+			padding-bottom: $sapphire-sizes--medium;
+		}
+
+		&__Content {
+			padding: 0;
+		}
+	}
+
+	> * {
+		.MainInteractiveCard:not(.isOpen) {
+			border-bottom: none;
 		}
 	}
 }
