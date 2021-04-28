@@ -1880,25 +1880,25 @@ a.Header_ButtonSidebar {
 }
 
 
-.PatientHeaderActions_SubMenu a {
-  display: block;
-  font-size: 12px;
-  padding: 10px;
-  text-align: left;
-}
+// .PatientHeaderActions_SubMenu a {
+//   display: block;
+//   font-size: 12px;
+//   padding: 10px;
+//   text-align: left;
+// }
 
-.PatientHeaderActions_SubMenu a .iconHorizontal {
-  display: block;
-}
+// .PatientHeaderActions_SubMenu a .iconHorizontal {
+//   display: block;
+// }
 
-.PatientHeaderActions_SubMenu a .iconHorizontal .iconHorizontal_icon,
-.PatientHeaderActions_SubMenu a .iconHorizontal .iconHorizontal_label {
-  width: auto;
-}
+// .PatientHeaderActions_SubMenu a .iconHorizontal .iconHorizontal_icon,
+// .PatientHeaderActions_SubMenu a .iconHorizontal .iconHorizontal_label {
+//   width: auto;
+// }
 
-.PatientHeaderActions_SubMenu a div {
-  padding-right: 10px;
-}
+// .PatientHeaderActions_SubMenu a div {
+//   padding-right: 10px;
+// }
 
 .PatientResume+div .PatientDetails>.PatientDetailsToggler div[image] {
   border: 1px solid #a6a5a5;
@@ -28813,38 +28813,38 @@ a.NoLink {
   text-align: center;
 }
 
-.PatientHeaderActions_SubMenuDivArrow {
-  border: solid 10px transparent;
-  border-bottom: solid 10px #ccc;
-  display: block;
-  height: 1px;
-  left: 125px;
-  position: absolute;
-  top: -21px;
-  width: 1px;
-}
+// .PatientHeaderActions_SubMenuDivArrow {
+//   border: solid 10px transparent;
+//   border-bottom: solid 10px #ccc;
+//   display: block;
+//   height: 1px;
+//   left: 125px;
+//   position: absolute;
+//   top: -21px;
+//   width: 1px;
+// }
 
-.PlanHospitalizationActionsSubMenu .PatientHeaderActions_SubMenuItems:after,
-.PatientHeaderActions_SubMenuItems:before {
-  border: solid transparent;
-  content: ' ';
-  height: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 3%;
-  top: -18px;
-  width: 0;
-}
+// .PlanHospitalizationActionsSubMenu .PatientHeaderActions_SubMenuItems:after,
+// .PatientHeaderActions_SubMenuItems:before {
+//   border: solid transparent;
+//   content: ' ';
+//   height: 0;
+//   pointer-events: none;
+//   position: absolute;
+//   right: 3%;
+//   top: -18px;
+//   width: 0;
+// }
 
-.PlanHospitalizationActionsSubMenu .PatientHeaderActions_SubMenuItems:after {
-  border-bottom-color: #fff;
-  border-width: 10px;
-}
+// .PlanHospitalizationActionsSubMenu .PatientHeaderActions_SubMenuItems:after {
+//   border-bottom-color: #fff;
+//   border-width: 10px;
+// }
 
-.PlanHospitalizationActionsSubMenu .PatientHeaderActions_SubMenu>div {
-  text-align: center;
-  white-space: nowrap;
-}
+// .PlanHospitalizationActionsSubMenu .PatientHeaderActions_SubMenu>div {
+//   text-align: center;
+//   white-space: nowrap;
+// }
 
 // .EditContainerDiv {
 //     background-color: #E3DFD9;

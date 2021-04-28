@@ -105,6 +105,12 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 			top: -($card-small-size-base);
 		}
 
+		> div > .MainInteractiveCard-body {
+			.MainInteractiveCard-absolute-actions {
+				line-height: $card-small-size-base;
+			}
+		}
+
 		.iframe-loading {
 			margin-top: $card-small-size-base;
 		}
@@ -445,46 +451,4 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		position: static;
 		text-align: right;
 	}
-}
-
-/* Specific overrides */
-
-.ListRecords.MainInteractiveCards .MainInteractiveCard-textline {
-	border-top: 1px solid $regular-alpha;
-	padding-top: $sapphire-sizes--medium;
-}
-
-.ListRecords.MainInteractiveCards .MainInteractiveCard-textline:first-child {
-	border-top: none;
-}
-
-.MainInteractiveCard-header .PatientHeaderActions__subMenu {
-	right: -5px;
-	top: 40px;
-}
-
-.MainInteractiveCard-header .PatientHeaderActions__actions {
-	height: 25px;
-	min-width: 25px;
-	padding-right: 0;
-	text-align: center;
-}
-
-.MainInteractiveCard-header .PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover {
-	height: 25px;
-	min-width: 25px;
-}
-
-.MainInteractiveCard-header .PatientHeaderActions_menuItem {
-	min-height: auto;
-	padding: 0;
-}
-
-.MainInteractiveCard-header .PatientHeaderActions__subMenu > div {
-	margin-bottom: 10px;
-	margin-top: 0;
-}
-
-.MainInteractiveCard-header .PatientHeaderActions__subMenu > div:last-child {
-	margin-bottom: 0;
 }
