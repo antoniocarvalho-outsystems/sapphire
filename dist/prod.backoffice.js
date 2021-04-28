@@ -1,4 +1,4 @@
-/*! prod.backoffice.js || Version: 5.1.110023 || Generated: Wed Apr 28 2021 11:54:48 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.js || Version: 5.1.110024 || Generated: Wed Apr 28 2021 16:28:06 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

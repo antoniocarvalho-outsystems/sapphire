@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110023 || Generated: Wed Apr 28 2021 11:54:48 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110024 || Generated: Wed Apr 28 2021 16:28:06 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11371,11 +11371,6 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 html .Page .PatientDetailsLayout {
   padding-top: 0; }
 
-.LayoutBase-Content .LayoutBase-secondary.isFixed .PatientHeaderActions .PatientHeaderActions_menuItem .PatientHeaderActions__actions .WhiteContainer {
-  height: 25px;
-  padding: 4px;
-  width: 25px; }
-
 .LayoutBase-Content .LayoutBase-secondary .LayoutBase-secondary-aside > a .DisplayInlineBlock {
   display: block; }
 
@@ -12709,140 +12704,6 @@ div.ActionsMenu-item {
 
 .tooltipster-content > section > .ActionsMenu-tooltip {
   display: block; }
-
-.PatientHeaderActions {
-  position: relative; }
-
-.PatientHeaderActions_menuItem {
-  background-color: #f3f3f3;
-  border-radius: 2px;
-  cursor: pointer;
-  font-size: 15px;
-  min-height: 47px;
-  padding: 0 8px;
-  position: relative;
-  text-align: right;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content; }
-
-.PatientHeaderActions_menuItem.NoBorder {
-  background-color: transparent;
-  border: 0; }
-
-.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions {
-  line-height: 30px; }
-
-.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions {
-  padding-top: 0px; }
-
-.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__menuPlaceholder {
-  min-height: 0; }
-
-.PatientHeaderActions__actions {
-  color: #00bfa5;
-  cursor: pointer;
-  height: 30px;
-  min-width: 30px;
-  padding-right: 7px;
-  padding-top: 5px;
-  vertical-align: middle;
-  white-space: nowrap; }
-
-.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover {
-  background-color: #f2fffd;
-  border-radius: 100px;
-  height: 30px;
-  min-width: 30px; }
-
-.PatientHeaderActions__actions .WhiteContainer {
-  height: 36px;
-  line-height: 0;
-  padding: 9px;
-  width: 36px; }
-
-.PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover .icon {
-  color: #00bfa5; }
-
-.Page .PatientHeaderActions__subMenu {
-  background-color: #fff;
-  border: 1px solid #e0e1e3;
-  border-radius: 3px;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-  display: none;
-  min-width: 180px;
-  padding: 16px 20px;
-  position: absolute;
-  right: 5px;
-  text-align: left;
-  top: 56px;
-  white-space: nowrap;
-  z-index: 2; }
-  .Page .PatientHeaderActions__subMenu.SubMenuBlock {
-    display: block; }
-
-.PatientHeaderActions__subMenu .iconHorizontal {
-  cursor: pointer;
-  display: block; }
-
-.SubMenuBlock {
-  display: block; }
-
-.PatientHeaderActions__subMenu > div:not(:first-child) {
-  margin-top: 10px; }
-
-.PatientHeaderActions__subMenu .iconHorizontal_label {
-  font-size: 12px; }
-
-.PatientHeaderActions__subMenu .iconHorizontal_icon {
-  font-size: 16px;
-  margin-right: 10px; }
-
-.PatientHeaderActions__subMenu:before {
-  border: solid 10px transparent;
-  border-bottom: solid 10px #ccc;
-  content: '';
-  display: block;
-  height: 1px;
-  left: 83%;
-  position: absolute;
-  top: -21px;
-  width: 1px; }
-
-.PatientHeaderActions__subMenu:after {
-  border: solid 10px transparent;
-  border-bottom: solid 10px #fff;
-  content: '';
-  display: block;
-  height: 1px;
-  left: 83%;
-  position: absolute;
-  top: -20px;
-  width: 1px; }
-
-.PatientHeaderActions__menuPlaceholder .icon-medicalfile {
-  color: #c9d8dd;
-  font-size: 24px;
-  vertical-align: middle; }
-
-.PatientHeaderActions__menuPlaceholder {
-  line-height: 45px;
-  min-height: 45px;
-  padding-right: 5px;
-  vertical-align: middle; }
-
-.PatientHeaderActions__menuPlaceholder.borderRight {
-  border-right: 1px solid #c8d8dc; }
-
-.FA .PatientHeaderActions__menuPlaceholder.borderRight,
-.AR .PatientHeaderActions__menuPlaceholder.borderRight {
-  border-left: 1px solid #c8d8dc;
-  border-right: none; }
-
-.FA .PatientHeaderActions__menuPlaceholder,
-.AR .PatientHeaderActions__menuPlaceholder {
-  padding-left: 5px;
-  padding-right: 0; }
 
 .Page .Appointment_Icon {
   border-radius: 50%;
@@ -14924,19 +14785,6 @@ div.CircledArrow {
     .LayoutBlank .CompLine_actions > .MultiAlignRight,
     .LayoutBase .CompLine_actions > .MultiAlignRight {
       text-align: right; }
-    .DesignSystem .CompLine_actions .PatientHeaderActions_menuItem,
-    .LayoutPopup .CompLine_actions .PatientHeaderActions_menuItem,
-    .LayoutBlank .CompLine_actions .PatientHeaderActions_menuItem,
-    .LayoutBase .CompLine_actions .PatientHeaderActions_menuItem {
-      min-height: unset;
-      width: unset; }
-    .DesignSystem .CompLine_actions .PatientHeaderActions__subMenu div,
-    .LayoutPopup .CompLine_actions .PatientHeaderActions__subMenu div,
-    .LayoutBlank .CompLine_actions .PatientHeaderActions__subMenu div,
-    .LayoutBase .CompLine_actions .PatientHeaderActions__subMenu div {
-      line-height: 26px;
-      margin: 0;
-      text-align: left; }
   .DesignSystem .CompLine_moreActions,
   .LayoutPopup .CompLine_moreActions,
   .LayoutBlank .CompLine_moreActions,
@@ -19270,6 +19118,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     margin-bottom: -76px; }
   .MainInteractiveCard.SmallHeader > .MainInteractiveCard-floater {
     top: -76px; }
+  .MainInteractiveCard.SmallHeader > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
+    line-height: 76px; }
   .MainInteractiveCard.SmallHeader .iframe-loading {
     margin-top: 76px; }
   .MainInteractiveCard.MediumHeader.isOpen > .MainInteractiveCard-header {
@@ -19382,6 +19232,13 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 8px; }
+  .CardsWrapper--custom {
+    margin-bottom: 8px;
+    padding: 16px;
+    padding-top: 0; }
+    .CardsWrapper--custom .CardsWrapper__HeaderCustom {
+      padding-left: 0;
+      padding-right: 0; }
   .CardsWrapper__Header, .CardsWrapper__HeaderCustom {
     -webkit-box-align: center;
             align-items: center;
@@ -19402,67 +19259,35 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     -webkit-box-flex: 1;
             flex: 1; }
   .CardsWrapper__Content {
-    padding: 16px; }
-    .CardsWrapper__Content .MainInteractiveCard.isOpen {
-      margin: 8px 0; }
-      .CardsWrapper__Content .MainInteractiveCard.isOpen::after, .CardsWrapper__Content .MainInteractiveCard.isOpen::before {
-        content: '';
-        display: block;
-        height: 1px;
-        position: absolute;
-        width: 100%; }
-      .CardsWrapper__Content .MainInteractiveCard.isOpen::before {
-        background-color: #d6d6d6;
-        top: -9px;
-        z-index: 1; }
-      .CardsWrapper__Content .MainInteractiveCard.isOpen::after {
-        background-color: #fff;
-        bottom: -2px;
-        z-index: 2; }
-    .CardsWrapper__Content .MainInteractiveCard:not(.isOpen) {
-      border-left-color: transparent;
-      border-radius: 0;
-      border-right-color: transparent; }
-    .CardsWrapper__Content .ListRecords > * .MainInteractiveCard:not(.isOpen) {
-      border-bottom: none; }
-    .CardsWrapper__Content .ListRecords > *:first-child .MainInteractiveCard.isOpen::before {
-      display: none; }
-
-.CardsWrapperList {
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  display: block;
-  padding: 16px; }
-  .CardsWrapperList .MainInteractiveCard.isOpen {
+    padding: 16px;
+    /*.ListRecords {
+			> *:first-child {
+				.MainInteractiveCard.isOpen::before {
+					display: none;
+				}
+			}
+		}*/ }
+  .CardsWrapper .MainInteractiveCard.isOpen {
     margin: 8px 0; }
-    .CardsWrapperList .MainInteractiveCard.isOpen::after, .CardsWrapperList .MainInteractiveCard.isOpen::before {
+    .CardsWrapper .MainInteractiveCard.isOpen::after, .CardsWrapper .MainInteractiveCard.isOpen::before {
       content: '';
       display: block;
       height: 1px;
       position: absolute;
       width: 100%; }
-    .CardsWrapperList .MainInteractiveCard.isOpen::before {
+    .CardsWrapper .MainInteractiveCard.isOpen::before {
       background-color: #d6d6d6;
       top: -9px;
       z-index: 1; }
-    .CardsWrapperList .MainInteractiveCard.isOpen::after {
+    .CardsWrapper .MainInteractiveCard.isOpen::after {
       background-color: #fff;
       bottom: -2px;
       z-index: 2; }
-  .CardsWrapperList .MainInteractiveCard:not(.isOpen) {
+  .CardsWrapper .MainInteractiveCard:not(.isOpen) {
+    border-bottom: none;
     border-left-color: transparent;
     border-radius: 0;
     border-right-color: transparent; }
-  .CardsWrapperList .CardsWrapper {
-    border: none; }
-    .CardsWrapperList .CardsWrapper__HeaderCustom {
-      padding: 0;
-      padding-bottom: 16px; }
-    .CardsWrapperList .CardsWrapper__Content {
-      padding: 0; }
-  .CardsWrapperList > * .MainInteractiveCard:not(.isOpen) {
-    border-bottom: none; }
 
 .MainInteractiveCard:not(.isOpen).ShowEntireTitle .MainInteractiveCard-header-text-title {
   max-height: initial;
@@ -19508,45 +19333,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   margin-left: 0;
   text-align: right;
   width: 100%; }
-
-@media screen and (max-width: 1024px) {
-  .MainInteractiveCard > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
-    margin-bottom: 16px;
-    position: static;
-    text-align: right; } }
-
-/* Specific overrides */
-.ListRecords.MainInteractiveCards .MainInteractiveCard-textline {
-  border-top: 1px solid #00bfa5;
-  padding-top: 16px; }
-
-.ListRecords.MainInteractiveCards .MainInteractiveCard-textline:first-child {
-  border-top: none; }
-
-.MainInteractiveCard-header .PatientHeaderActions__subMenu {
-  right: -5px;
-  top: 40px; }
-
-.MainInteractiveCard-header .PatientHeaderActions__actions {
-  height: 25px;
-  min-width: 25px;
-  padding-right: 0;
-  text-align: center; }
-
-.MainInteractiveCard-header .PatientHeaderActions_menuItem.NoBorder .PatientHeaderActions__actions:hover {
-  height: 25px;
-  min-width: 25px; }
-
-.MainInteractiveCard-header .PatientHeaderActions_menuItem {
-  min-height: auto;
-  padding: 0; }
-
-.MainInteractiveCard-header .PatientHeaderActions__subMenu > div {
-  margin-bottom: 10px;
-  margin-top: 0; }
-
-.MainInteractiveCard-header .PatientHeaderActions__subMenu > div:last-child {
-  margin-bottom: 0; }
 
 .Menubar {
   background-color: #2a5a6e;
@@ -31153,9 +30939,6 @@ div.EditContainerDiv {
   background-color: transparent;
   padding: 0; }
 
-.CompLine_actions .PatientHeaderActions__subMenu > div:not(:first-child) {
-  margin-top: 0; }
-
 .AdmitPatiePopUp .CompLine_headLine .verticalAlignHelper {
   display: none; }
 
@@ -31195,9 +30978,6 @@ span:not(:last-of-type) .CompLine {
 
 .tablet.portrait .CompLine_doctor {
   padding: 10px 16px; }
-
-.tablet .CompLine_actions .PatientHeaderActions__menuPlaceholder:empty {
-  display: none; }
 
 .tablet .ComplineForInvestig .CompLine_doctor .ThemeGrid_Width3,
 .tablet .ComplineForInvestig .CompLine_doctor .ThemeGrid_Width9 {
@@ -33834,22 +33614,6 @@ a.Header_ButtonSidebar {
 
 .PatientDetailsLayout.header div.more-actions div.TopRightComponent div.action-label {
   font-size: 15px; }
-
-.PatientHeaderActions_SubMenu a {
-  display: block;
-  font-size: 12px;
-  padding: 10px;
-  text-align: left; }
-
-.PatientHeaderActions_SubMenu a .iconHorizontal {
-  display: block; }
-
-.PatientHeaderActions_SubMenu a .iconHorizontal .iconHorizontal_icon,
-.PatientHeaderActions_SubMenu a .iconHorizontal .iconHorizontal_label {
-  width: auto; }
-
-.PatientHeaderActions_SubMenu a div {
-  padding-right: 10px; }
 
 .PatientResume + div .PatientDetails > .PatientDetailsToggler div[image] {
   border: 1px solid #a6a5a5;
@@ -41026,35 +40790,6 @@ a.NoLink {
   font-size: 1.332rem;
   padding: 5px 0;
   text-align: center; }
-
-.PatientHeaderActions_SubMenuDivArrow {
-  border: solid 10px transparent;
-  border-bottom: solid 10px #ccc;
-  display: block;
-  height: 1px;
-  left: 125px;
-  position: absolute;
-  top: -21px;
-  width: 1px; }
-
-.PlanHospitalizationActionsSubMenu .PatientHeaderActions_SubMenuItems:after,
-.PatientHeaderActions_SubMenuItems:before {
-  border: solid transparent;
-  content: ' ';
-  height: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 3%;
-  top: -18px;
-  width: 0; }
-
-.PlanHospitalizationActionsSubMenu .PatientHeaderActions_SubMenuItems:after {
-  border-bottom-color: #fff;
-  border-width: 10px; }
-
-.PlanHospitalizationActionsSubMenu .PatientHeaderActions_SubMenu > div {
-  text-align: center;
-  white-space: nowrap; }
 
 .PendingInvestigationsCounter {
   background-color: red;
