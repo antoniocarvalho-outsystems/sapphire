@@ -271,45 +271,21 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	}
 }
 
-@mixin card-adjustments() {
-	.MainInteractiveCard {
-		&.isOpen {
-			margin: $sapphire-sizes--small 0;
-
-			&::after,
-			&::before {
-				content: '';
-				display: block;
-				height: 1px;
-				position: absolute;
-				width: 100%;
-			}
-
-			&::before {
-				background-color: $light-grey;
-				top: -($sapphire-sizes--small + 1px);
-				z-index: 1;
-			}
-
-			&::after {
-				background-color: $regular-white;
-				bottom: -2px;
-				z-index: 2;
-			}
-		}
-
-		&:not(.isOpen) {
-			border-left-color: transparent;
-			border-radius: 0;
-			border-right-color: transparent;
-		}
-	}
-}
-
 .CardsWrapper {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-medium;
+
+	&--custom {
+		margin-bottom: $sapphire-sizes--small;
+		padding: $sapphire-sizes--medium;
+		padding-top: 0;
+
+		.CardsWrapper__HeaderCustom {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 
 	&__Header,
 	&__HeaderCustom {
@@ -339,49 +315,46 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	&__Content {
 		padding: $sapphire-sizes--medium;
 
-		@include card-adjustments();
-
-		.ListRecords {
-			> * {
-				.MainInteractiveCard:not(.isOpen) {
-					border-bottom: none;
-				}
-			}
-
+		/*.ListRecords {
 			> *:first-child {
 				.MainInteractiveCard.isOpen::before {
 					display: none;
 				}
 			}
-		}
-	}
-}
-
-.CardsWrapperList {
-	background-color: $regular-white;
-	border: 1px solid $light-grey;
-	border-radius: $border-radius-medium;
-	display: block;
-	padding: $sapphire-sizes--medium;
-
-	@include card-adjustments();
-
-	.CardsWrapper {
-		border: none;
-
-		&__HeaderCustom {
-			padding: 0;
-			padding-bottom: $sapphire-sizes--medium;
-		}
-
-		&__Content {
-			padding: 0;
-		}
+		}*/
 	}
 
-	> * {
-		.MainInteractiveCard:not(.isOpen) {
+	.MainInteractiveCard {
+		&.isOpen {
+			margin: $sapphire-sizes--small 0;
+
+			&::after,
+			&::before {
+				content: '';
+				display: block;
+				height: 1px;
+				position: absolute;
+				width: 100%;
+			}
+
+			&::before {
+				background-color: $light-grey;
+				top: -($sapphire-sizes--small + 1px);
+				z-index: 1;
+			}
+
+			&::after {
+				background-color: $regular-white;
+				bottom: -2px;
+				z-index: 2;
+			}
+		}
+
+		&:not(.isOpen) {
 			border-bottom: none;
+			border-left-color: transparent;
+			border-radius: 0;
+			border-right-color: transparent;
 		}
 	}
 }
