@@ -47,7 +47,8 @@
 	}
 
 	.ButtonCheckboxInput_CheckBox {
-		left: 6px;
+		left: $sapphire-sizes--small;
+		margin: 0;
 		position: absolute;
 		top: 7px;
 
@@ -55,18 +56,22 @@
 			margin: 0;
 			transition: all 0.1s ease-in-out;
 		}
+
+		.AR & {
+			left: auto;
+			right: $sapphire-sizes--small;
+		}
 	}
 
 	.MultipleSelectionButton-label {
+		@include flex-center-vertically();
+
 		background-color: $regular-white;
 		border: 1px solid $light-grey;
 		border-radius: $border-radius-default;
 		cursor: pointer;
-		display: block;
-		font-size: 1em;
 		height: 36px;
-		line-height: 36px;
-		padding: 0 10px 0 32px;
+		padding: 0 $sapphire-sizes--medium 0 $sapphire-sizes--xlarge;
 		transition: all 0.1s ease-in-out;
 
 		&:hover {
@@ -76,6 +81,10 @@
 			+ .ButtonCheckboxInput_CheckBox input[type='checkbox']::before {
 				border: 1px solid $regular-alpha;
 			}
+		}
+
+		.AR & {
+			padding: 0 $sapphire-sizes--xlarge 0 $sapphire-sizes--medium;
 		}
 	}
 }
@@ -90,24 +99,20 @@
 .MultipleSelectionFilterSmall {
 	.ButtonCheckboxInp .MultipleSelectionButton-label {
 		height: 30px;
-		line-height: 30px;
+		padding: 0 $sapphire-sizes--medium 0 40px;
+
+		.AR & {
+			padding: 0 40px 0 $sapphire-sizes--medium;
+		}
 	}
 
 	.ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
+		left: 12px;
 		top: 4px;
-	}
-}
 
-.AR,
-.FA {
-	.ButtonCheckboxInp {
-		.ButtonCheckboxInput_CheckBox {
+		.AR & {
 			left: auto;
-			right: 6px;
-		}
-
-		.MultipleSelectionButton-label {
-			padding: 0 32px 0 10px;
+			right: 12px;
 		}
 	}
 }
