@@ -1,4 +1,5 @@
 .LineWarns {
+	border-radius: $border-radius-default;
 	min-height: 48px;
 
 	&--withBorder & {
@@ -21,34 +22,31 @@
 		}
 	}
 
-	&_list {
-		border-collapse: separate;
-		border-radius: $border-radius-default;
-		display: table;
-		min-height: 48px;
-		overflow: hidden;
-		padding: $sapphire-sizes--xsmall $sapphire-sizes--medium;
-		width: 100%;
+	.LineWarns_list {
+		@include flex-center-vertically();
 
-		> div {
-			display: table-cell;
-			vertical-align: middle;
-		}
+		border-radius: $border-radius-default;
+		gap: $sapphire-sizes--medium;
+		height: 100%;
+		padding: $sapphire-sizes--xsmall $sapphire-sizes--medium;
 	}
 
-	&__icon {
-		font-size: initial;
-		width: 35px;
+	.LineWarns__icon {
+		@include flex-center-total();
+
+		width: $sapphire-sizes--large;
+	}
+
+	.LineWarns__message {
+		flex: 1;
 	}
 
 	&__buttonContainer {
-		text-align: right;
 		width: 11%;
 	}
 
 	.LineWarningActions {
 		min-width: 10%;
-		text-align: right;
 	}
 }
 
