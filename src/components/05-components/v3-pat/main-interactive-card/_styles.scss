@@ -278,8 +278,8 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 	&--custom {
 		margin-bottom: $sapphire-sizes--small;
-		padding: $sapphire-sizes--medium;
-		padding-top: 0;
+		padding-left: $sapphire-sizes--medium;
+		padding-right: $sapphire-sizes--medium;
 
 		.CardsWrapper__HeaderCustom {
 			padding-left: 0;
@@ -314,6 +314,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 	&__Content {
 		padding: $sapphire-sizes--medium;
+		padding-bottom: 0;
 
 		/*.ListRecords {
 			> *:first-child {
