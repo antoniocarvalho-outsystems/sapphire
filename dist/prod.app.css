@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110025 || Generated: Wed Apr 28 2021 17:14:30 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110026 || Generated: Thu Apr 29 2021 09:39:20 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19234,8 +19234,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   border-radius: 8px; }
   .CardsWrapper--custom {
     margin-bottom: 8px;
-    padding: 16px;
-    padding-top: 0; }
+    padding-left: 16px;
+    padding-right: 16px; }
     .CardsWrapper--custom .CardsWrapper__HeaderCustom {
       padding-left: 0;
       padding-right: 0; }
@@ -19260,6 +19260,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
             flex: 1; }
   .CardsWrapper__Content {
     padding: 16px;
+    padding-bottom: 0;
     /*.ListRecords {
 			> *:first-child {
 				.MainInteractiveCard.isOpen::before {
