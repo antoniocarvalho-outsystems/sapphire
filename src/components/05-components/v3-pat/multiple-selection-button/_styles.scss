@@ -18,7 +18,6 @@
 			&:hover {
 				background-color: $regular-alpha;
 				border: 1px solid $regular-alpha;
-				border-radius: $border-radius-default;
 				color: $regular-white;
 
 				+ .ButtonCheckboxInput_CheckBox input[type='checkbox'] {
@@ -78,6 +77,24 @@
 				border: 1px solid $regular-alpha;
 			}
 		}
+	}
+}
+
+.MultipleSelectionFilter,
+.MultipleSelectionFilterSmall {
+	.ButtonCheckboxInp .MultipleSelectionButton-label {
+		border-radius: 80px;
+	}
+}
+
+.MultipleSelectionFilterSmall {
+	.ButtonCheckboxInp .MultipleSelectionButton-label {
+		height: 30px;
+		line-height: 30px;
+	}
+
+	.ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
+		top: 4px;
 	}
 }
 

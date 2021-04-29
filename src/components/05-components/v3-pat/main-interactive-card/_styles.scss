@@ -308,6 +308,18 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		border: none;
 	}
 
+	&__HeaderCounter {
+		@include flex-center-total(inline-flex);
+
+		background-color: $regular-red;
+		border-radius: 80px;
+		color: $regular-white;
+		font-size: $font-size-tiny;
+		height: 20px;
+		line-height: $font-size-tiny;
+		width: 20px;
+	}
+
 	&__HeaderTitle {
 		flex: 1;
 	}
