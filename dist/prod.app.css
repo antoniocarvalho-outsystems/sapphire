@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110029 || Generated: Thu Apr 29 2021 17:14:02 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110030 || Generated: Thu Apr 29 2021 17:31:05 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -18857,6 +18857,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   text-align: left; }
 
 .LineWarns {
+  border-radius: 4px;
   min-height: 48px; }
   .LineWarns--withBorder .LineWarns_list {
     border: 1px solid #d6d6d6; }
@@ -18864,26 +18865,30 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     color: #c19323; }
   .LineWarns.ColorRedBG .LineWarns__icon, .LineWarns.ColorLightRedBG .LineWarns__icon {
     color: #b10100; }
-  .LineWarns_list {
-    border-collapse: separate;
+  .LineWarns .LineWarns_list {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
     border-radius: 4px;
-    display: table;
-    min-height: 48px;
-    overflow: hidden;
-    padding: 4px 16px;
-    width: 100%; }
-    .LineWarns_list > div {
-      display: table-cell;
-      vertical-align: middle; }
-  .LineWarns__icon {
-    font-size: initial;
-    width: 35px; }
+    gap: 16px;
+    height: 100%;
+    padding: 4px 16px; }
+  .LineWarns .LineWarns__icon {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    width: 24px; }
+  .LineWarns .LineWarns__message {
+    -webkit-box-flex: 1;
+            flex: 1; }
   .LineWarns__buttonContainer {
-    text-align: right;
     width: 11%; }
   .LineWarns .LineWarningActions {
-    min-width: 10%;
-    text-align: right; }
+    min-width: 10%; }
 
 .AR .LineWarns__buttonContainer,
 .FA .LineWarns__buttonContainer {
