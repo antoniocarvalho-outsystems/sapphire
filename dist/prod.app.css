@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110027 || Generated: Thu Apr 29 2021 15:47:04 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110028 || Generated: Thu Apr 29 2021 16:05:25 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19587,23 +19587,28 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     pointer-events: none;
     white-space: nowrap; }
   .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
-    left: 6px;
+    left: 8px;
+    margin: 0;
     position: absolute;
     top: 7px; }
     .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox input[type='checkbox'] {
       margin: 0;
       -webkit-transition: all 0.1s ease-in-out;
       transition: all 0.1s ease-in-out; }
+    .AR .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
+      left: auto;
+      right: 8px; }
   .ButtonCheckboxInp .MultipleSelectionButton-label {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
     background-color: #fff;
     border: 1px solid #d6d6d6;
     border-radius: 4px;
     cursor: pointer;
-    display: block;
-    font-size: 1em;
     height: 36px;
-    line-height: 36px;
-    padding: 0 10px 0 32px;
+    padding: 0 16px 0 32px;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out; }
     .ButtonCheckboxInp .MultipleSelectionButton-label:hover {
@@ -19611,6 +19616,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       border: 1px solid #00bfa5; }
       .ButtonCheckboxInp .MultipleSelectionButton-label:hover + .ButtonCheckboxInput_CheckBox input[type='checkbox']::before {
         border: 1px solid #00bfa5; }
+    .AR .ButtonCheckboxInp .MultipleSelectionButton-label {
+      padding: 0 32px 0 16px; }
 
 .MultipleSelectionFilter .ButtonCheckboxInp .MultipleSelectionButton-label,
 .MultipleSelectionFilterSmall .ButtonCheckboxInp .MultipleSelectionButton-label {
@@ -19618,19 +19625,16 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 
 .MultipleSelectionFilterSmall .ButtonCheckboxInp .MultipleSelectionButton-label {
   height: 30px;
-  line-height: 30px; }
+  padding: 0 16px 0 40px; }
+  .AR .MultipleSelectionFilterSmall .ButtonCheckboxInp .MultipleSelectionButton-label {
+    padding: 0 40px 0 16px; }
 
 .MultipleSelectionFilterSmall .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
+  left: 12px;
   top: 4px; }
-
-.AR .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox,
-.FA .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
-  left: auto;
-  right: 6px; }
-
-.AR .ButtonCheckboxInp .MultipleSelectionButton-label,
-.FA .ButtonCheckboxInp .MultipleSelectionButton-label {
-  padding: 0 32px 0 10px; }
+  .AR .MultipleSelectionFilterSmall .ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
+    left: auto;
+    right: 12px; }
 
 .navigation-control {
   display: -webkit-inline-box;
