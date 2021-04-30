@@ -4841,7 +4841,7 @@ a+a.Button {
 
 .Button+.Button,
 .Button+a.Button {
-  margin-left: 26px;
+  margin-left: 16px;
 }
 
 .ButtonGroup_button.Button+.ButtonGroup_button.Button {
@@ -7669,6 +7669,10 @@ a.cke_dialog_ui_button_ok:hover {
 
 .MultiMarginBottomSmall {
   margin-bottom: 10px;
+}
+
+.MultiMarginTopXSmall {
+  margin-top: 4px;
 }
 
 
