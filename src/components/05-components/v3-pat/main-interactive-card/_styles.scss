@@ -72,6 +72,8 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 	&.XSmallHeader {
 		&.isOpen {
+			min-height: $card-xsmall-size-base;
+
 			> .MainInteractiveCard-header {
 				height: $card-xsmall-size-base;
 			}
@@ -92,6 +94,8 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 	&.SmallHeader {
 		&.isOpen {
+			min-height: $card-small-size-base;
+
 			> .MainInteractiveCard-header {
 				height: $card-small-size-base;
 			}
@@ -118,6 +122,8 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 	&.MediumHeader {
 		&.isOpen {
+			min-height: $card-medium-size-base;
+
 			> .MainInteractiveCard-header {
 				height: $card-medium-size-base;
 			}
