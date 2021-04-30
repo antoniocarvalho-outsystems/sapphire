@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110030 || Generated: Thu Apr 29 2021 17:31:05 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110031 || Generated: Fri Apr 30 2021 13:50:03 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19109,28 +19109,34 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     display: block !important;
     overflow: hidden;
     text-overflow: ellipsis; }
-  .MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-header {
-    height: 56px; }
-  .MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-floater {
-    margin-bottom: -56px; }
+  .MainInteractiveCard.XSmallHeader.isOpen {
+    min-height: 56px; }
+    .MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-header {
+      height: 56px; }
+    .MainInteractiveCard.XSmallHeader.isOpen > .MainInteractiveCard-floater {
+      margin-bottom: -56px; }
   .MainInteractiveCard.XSmallHeader > .MainInteractiveCard-floater {
     top: -56px; }
   .MainInteractiveCard.XSmallHeader .iframe-loading {
     margin-top: 56px; }
-  .MainInteractiveCard.SmallHeader.isOpen > .MainInteractiveCard-header {
-    height: 76px; }
-  .MainInteractiveCard.SmallHeader.isOpen > .MainInteractiveCard-floater {
-    margin-bottom: -76px; }
+  .MainInteractiveCard.SmallHeader.isOpen {
+    min-height: 76px; }
+    .MainInteractiveCard.SmallHeader.isOpen > .MainInteractiveCard-header {
+      height: 76px; }
+    .MainInteractiveCard.SmallHeader.isOpen > .MainInteractiveCard-floater {
+      margin-bottom: -76px; }
   .MainInteractiveCard.SmallHeader > .MainInteractiveCard-floater {
     top: -76px; }
   .MainInteractiveCard.SmallHeader > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
     line-height: 76px; }
   .MainInteractiveCard.SmallHeader .iframe-loading {
     margin-top: 76px; }
-  .MainInteractiveCard.MediumHeader.isOpen > .MainInteractiveCard-header {
-    height: 86px; }
-  .MainInteractiveCard.MediumHeader.isOpen > .MainInteractiveCard-floater {
-    margin-bottom: -86px; }
+  .MainInteractiveCard.MediumHeader.isOpen {
+    min-height: 86px; }
+    .MainInteractiveCard.MediumHeader.isOpen > .MainInteractiveCard-header {
+      height: 86px; }
+    .MainInteractiveCard.MediumHeader.isOpen > .MainInteractiveCard-floater {
+      margin-bottom: -86px; }
   .MainInteractiveCard.MediumHeader > .MainInteractiveCard-floater {
     top: -86px; }
   .MainInteractiveCard.MediumHeader .MainInteractiveCard.MediumHeader.isOpen .iframe-loading {
