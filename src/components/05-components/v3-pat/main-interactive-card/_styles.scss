@@ -333,14 +333,24 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	&__Content {
 		padding: $sapphire-sizes--medium;
 		padding-bottom: 0;
+	}
 
-		/*.ListRecords {
+	&__ContentCustom {
+		padding: 0 $sapphire-sizes--medium;
+
+		.ListRecords {
 			> *:first-child {
-				.MainInteractiveCard.isOpen::before {
-					display: none;
+				.MainInteractiveCard {
+					&.isOpen::before {
+						display: none;
+					}
+
+					&:not(.isOpen) {
+						border-top-color: transparent;
+					}
 				}
 			}
-		}*/
+		}
 	}
 
 	.MainInteractiveCard {

@@ -73,6 +73,14 @@
 	transition: max-height 0.15s ease-in;
 	z-index: 9;
 
+	.icon {
+		background-color: $regular-white;
+		border-radius: 50%;
+		color: $regular-alpha;
+		font-size: $font-size-heading3;
+		margin-right: $sapphire-sizes--small;
+	}
+
 	&--visible {
 		max-height: 36px;
 		transition: max-height 0.25s ease-in;
@@ -84,14 +92,6 @@
 		.icon {
 			color: $regular-orange;
 		}
-	}
-
-	.icon {
-		background-color: $regular-white;
-		border-radius: 50%;
-		color: $regular-alpha;
-		font-size: $font-size-heading3;
-		margin-right: $sapphire-sizes--small;
 	}
 }
 

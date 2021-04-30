@@ -2,10 +2,12 @@
 	.Demographic-item-label {
 		color: $regular-grey;
 		font-size: $font-size-small;
+		margin-bottom: $sapphire-sizes--xsmall;
 	}
 
 	.Demographic-item-value {
 		font-family: $font-family-latin-bold;
+		line-height: $font-size-normal;
 	}
 }
 
