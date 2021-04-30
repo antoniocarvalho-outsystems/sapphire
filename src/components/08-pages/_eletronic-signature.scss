@@ -78,6 +78,14 @@
 		transition: max-height 0.25s ease-in;
 	}
 
+	&--pending {
+		background-color: $light-yellow;
+
+		.icon {
+			color: $regular-orange;
+		}
+	}
+
 	.icon {
 		background-color: $regular-white;
 		border-radius: 50%;
