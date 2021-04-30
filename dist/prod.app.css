@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110031 || Generated: Fri Apr 30 2021 13:50:03 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110032 || Generated: Fri Apr 30 2021 14:22:58 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -30406,6 +30406,10 @@ ul.os-internal-ui-autocomplete {
     max-height: 36px;
     -webkit-transition: max-height 0.25s ease-in;
     transition: max-height 0.25s ease-in; }
+  .SignatureStatusAlert--pending {
+    background-color: #ffeab5; }
+    .SignatureStatusAlert--pending .icon {
+      color: #ffa000; }
   .SignatureStatusAlert .icon {
     background-color: #fff;
     border-radius: 50%;
