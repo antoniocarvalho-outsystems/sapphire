@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.110032 || Generated: Fri Apr 30 2021 14:22:58 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.110033 || Generated: Fri Apr 30 2021 14:38:30 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -8996,7 +8996,7 @@ a + a.Button {
 
 .Button + .Button,
 .Button + a.Button {
-  margin-left: 26px; }
+  margin-left: 16px; }
 
 .ButtonGroup_button.Button + .ButtonGroup_button.Button {
   margin-left: 0; }
@@ -11290,6 +11290,9 @@ a.cke_dialog_ui_button_ok:hover {
 
 .MultiMarginBottomSmall {
   margin-bottom: 10px; }
+
+.MultiMarginTopXSmall {
+  margin-top: 4px; }
 
 /** multPaddingSmall **/
 .MultiPaddingSmall {
