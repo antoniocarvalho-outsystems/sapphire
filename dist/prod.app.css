@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110033 || Generated: Fri Apr 30 2021 14:38:30 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.110034 || Generated: Fri Apr 30 2021 15:44:14 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -15638,10 +15638,12 @@ div.CircledArrow {
 
 .Demographic-item .Demographic-item-label {
   color: #777777;
-  font-size: 0.857em; }
+  font-size: 0.857em;
+  margin-bottom: 4px; }
 
 .Demographic-item .Demographic-item-value {
-  font-family: "LatoBold"; }
+  font-family: "LatoBold";
+  line-height: 1em; }
 
 .AR .Demographic-item .Demographic-item-value,
 .FA .Demographic-item .Demographic-item-value {
@@ -19285,14 +19287,13 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
             flex: 1; }
   .CardsWrapper__Content {
     padding: 16px;
-    padding-bottom: 0;
-    /*.ListRecords {
-			> *:first-child {
-				.MainInteractiveCard.isOpen::before {
-					display: none;
-				}
-			}
-		}*/ }
+    padding-bottom: 0; }
+  .CardsWrapper__ContentCustom {
+    padding: 0 16px; }
+    .CardsWrapper__ContentCustom .ListRecords > *:first-child .MainInteractiveCard.isOpen::before {
+      display: none; }
+    .CardsWrapper__ContentCustom .ListRecords > *:first-child .MainInteractiveCard:not(.isOpen) {
+      border-top-color: transparent; }
   .CardsWrapper .MainInteractiveCard.isOpen {
     margin: 8px 0; }
     .CardsWrapper .MainInteractiveCard.isOpen::after, .CardsWrapper .MainInteractiveCard.isOpen::before {
@@ -30402,6 +30403,12 @@ ul.os-internal-ui-autocomplete {
   -webkit-transition: max-height 0.15s ease-in;
   transition: max-height 0.15s ease-in;
   z-index: 9; }
+  .SignatureStatusAlert .icon {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #00bfa5;
+    font-size: 1.286em;
+    margin-right: 8px; }
   .SignatureStatusAlert--visible {
     max-height: 36px;
     -webkit-transition: max-height 0.25s ease-in;
@@ -30410,12 +30417,6 @@ ul.os-internal-ui-autocomplete {
     background-color: #ffeab5; }
     .SignatureStatusAlert--pending .icon {
       color: #ffa000; }
-  .SignatureStatusAlert .icon {
-    background-color: #fff;
-    border-radius: 50%;
-    color: #00bfa5;
-    font-size: 1.286em;
-    margin-right: 8px; }
 
 .LayoutScanCode,
 .tablet .LayoutScanCode {
