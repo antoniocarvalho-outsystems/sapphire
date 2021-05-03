@@ -1,42 +1,55 @@
 .RelatedOrdersTable {
-	background-color: $body-color;
+	background-color: rgba($regular-white, 0.5);
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
 	display: table;
+	overflow: hidden;
 	width: 100%;
 
 	.RelatedOrders {
 		&_content {
-			border-bottom: 1px solid $light-grey;
-			border-bottom: 1px solid $light-grey;
 			border-left: 1px solid $light-grey;
 			display: table-cell;
 
-			&:last-child {
+			&:first-child {
+				border-left-color: transparent;
+			}
+
+			.AR & {
+				border-left-color: transparent;
 				border-right: 1px solid $light-grey;
+
+				&:first-child {
+					border-right-color: transparent;
+				}
 			}
 		}
 
 		&__title {
-			border-top: 1px solid $light-grey;
-			font-size: 16px;
-			font-weight: bold;
-			padding: 10px $sapphire-sizes--medium;
+			color: $mid-light-grey;
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-small;
+			padding: 9.5px $sapphire-sizes--medium;
+			text-transform: uppercase;
+
+			.AR & {
+				font-family: $font-family-arabic-bold;
+			}
 		}
 
 		&__value {
 			border-top: 1px solid $light-grey;
-			padding: 10px $sapphire-sizes--medium;
+			padding: 9.5px $sapphire-sizes--medium;
 
 			&.NoValue {
 				color: $regular-grey;
-				font-size: 0.857em;
-				font-style: italic;
 			}
 		}
 
 		&___info {
 			color: $regular-grey;
-			font-size: 0.857em;
-			margin-top: 10px;
+			font-size: $font-size-small;
+			margin-top: $sapphire-sizes--small;
 		}
 	}
 }
