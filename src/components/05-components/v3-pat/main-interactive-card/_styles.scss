@@ -216,7 +216,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		/* To be used on an embedded Web Block page inside the card */
 		.MainInteractiveCard-absolute-actions {
 			display: none;
-			line-height: $sapphire-sizes--largest - 4px;
+			line-height: $sapphire-sizes--largest;
 			position: absolute;
 			right: $sapphire-sizes--medium;
 			top: 0;
