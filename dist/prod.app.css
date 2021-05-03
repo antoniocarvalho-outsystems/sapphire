@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111001 || Generated: Mon May 03 2021 09:33:27 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111002 || Generated: Mon May 03 2021 15:49:57 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9400,32 +9400,39 @@ div.LineInfo {
       width: 1px; }
 
 .RelatedOrdersTable {
-  background-color: #f3f3f3;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
   display: table;
+  overflow: hidden;
   width: 100%; }
   .RelatedOrdersTable .RelatedOrders_content {
-    border-bottom: 1px solid #d6d6d6;
-    border-bottom: 1px solid #d6d6d6;
     border-left: 1px solid #d6d6d6;
     display: table-cell; }
-    .RelatedOrdersTable .RelatedOrders_content:last-child {
+    .RelatedOrdersTable .RelatedOrders_content:first-child {
+      border-left-color: transparent; }
+    .AR .RelatedOrdersTable .RelatedOrders_content {
+      border-left-color: transparent;
       border-right: 1px solid #d6d6d6; }
+      .AR .RelatedOrdersTable .RelatedOrders_content:first-child {
+        border-right-color: transparent; }
   .RelatedOrdersTable .RelatedOrders__title {
-    border-top: 1px solid #d6d6d6;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 16px; }
+    color: #adadad;
+    font-family: "LatoBold";
+    font-size: 0.857em;
+    padding: 9.5px 16px;
+    text-transform: uppercase; }
+    .AR .RelatedOrdersTable .RelatedOrders__title {
+      font-family: "TajawalBold"; }
   .RelatedOrdersTable .RelatedOrders__value {
     border-top: 1px solid #d6d6d6;
-    padding: 10px 16px; }
+    padding: 9.5px 16px; }
     .RelatedOrdersTable .RelatedOrders__value.NoValue {
-      color: #777777;
-      font-size: 0.857em;
-      font-style: italic; }
+      color: #777777; }
   .RelatedOrdersTable .RelatedOrders___info {
     color: #777777;
     font-size: 0.857em;
-    margin-top: 10px; }
+    margin-top: 8px; }
 
 .LayoutBlank .SectionExpandable,
 .LayoutBase .SectionExpandable {
@@ -19172,12 +19179,15 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-selectable-trigger .icon-star-full {
         color: #00bfa5; }
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
+      font-family: "LatoBold";
       max-height: 24px;
       max-width: 99%;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       width: 100%; }
+      .AR .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
+        font-family: "TajawalBold"; }
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-subtitle,
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-caption {
       color: #777777; }
@@ -19573,7 +19583,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     z-index: -1; }
 
 .ButtonCheckboxInp {
-  margin-right: 8px;
   padding: 0;
   position: relative; }
   .ButtonCheckboxInp.isFullWidth {
@@ -31195,13 +31204,15 @@ body.PanelOpened .daterangepicker {
   padding: 4px; }
 
 /* Used only in the Diagnoses Page*/
-.DiagnosisMainInteractiveCard {
-  margin-left: 32px;
-  margin-top: -40px; }
+.ListRelatedOrder .MainInteractiveCard {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
 
-.NewDiagnosisMainInteractiveCard {
-  margin-left: 2px;
-  margin-top: -38px; }
+.ListRelatedOrder .RelatedOrdersTable {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 8px;
+  margin-top: -9px; }
 
 @media all and (max-width: 900px) {
   .PrescriptionContainer .ToggleItemControl {
