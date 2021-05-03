@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.110034 || Generated: Fri Apr 30 2021 15:44:14 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111001 || Generated: Mon May 03 2021 09:33:27 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19201,7 +19201,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     /* To be used on an embedded Web Block page inside the card */ }
     .MainInteractiveCard .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
       display: none;
-      line-height: 52px;
+      line-height: 56px;
       position: absolute;
       right: 16px;
       top: 0; }
