@@ -1,22 +1,14 @@
 /* Component PrescriptionCard */
 (function($, window, SapphireWidgets) {
 	const create = config => {
-		$(`#${config.widgetId}`).click(() => {
-			showMore($(`#${config.widgetId}`));
-		});
-	};
+		const $component = $(`#${config.widgetId} .PrescriptionCard`);
 
-	const showMore = element => {
-		const parents = element.parents('.PrescriptionCard');
+		if (config.isExpandable) {
+			const $expandLink = $component.find('.PrescriptionCard__ExpandIcon');
 
-		if (parents.find('.ExpanDiv').hasClass('IsOpen')) {
-			parents.find('.ExpanDiv').removeClass('IsOpen');
-
-			element.text('See More');
-		} else {
-			parents.find('.ExpanDiv').addClass('IsOpen');
-
-			element.text('See Less');
+			$expandLink.click(() => {
+				$component.toggleClass('PrescriptionCard--expanded');
+			});
 		}
 	};
 

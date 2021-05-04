@@ -320,14 +320,14 @@ div.Toolbar {
 		&:before {
 			border-bottom-right-radius: 8px;
 			border-width: 0 1px 1px 0;
-			box-shadow: 3px 2px 0 $body-color;
+			box-shadow: 6px 0 0 $body-color;
 			left: -10.5px;
 		}
 
 		&:after {
 			border-bottom-left-radius: 8px;
 			border-width: 0 0 1px 1px;
-			box-shadow: -2px 2px 0 $body-color;
+			box-shadow: -6px 0 0 $body-color;
 			right: -10.5px;
 		}
 

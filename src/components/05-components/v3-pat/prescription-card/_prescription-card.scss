@@ -1,193 +1,213 @@
-.PrescriptionCard {
-	background-color: $regular-white;
-	border-radius: $border-radius-medium;
-	color: $text-color-regular;
-	display: table;
-	padding: $sapphire-sizes--medium;
+$color-critical-dark: lighten($dark-red, 5%);
+$color-critical-medium: lighten($dark-red, 60%);
+$color-critical-light: lighten($dark-red, 64%);
 
-	&.Critical {
-		border: 1px solid $dark-red;
+$color-high-dark: $regular-red;
+$color-high-medium: lighten($regular-red, 35%);
+$color-high-light: lighten($regular-red, 40%);
+
+$color-moderate-dark: $regular-orange;
+$color-moderate-medium: lighten($regular-orange, 40%);
+$color-moderate-light: lighten($regular-orange, 48%);
+
+$color-low-dark: darken($regular-yellow, 10%);
+$color-low-medium: lighten($regular-yellow, 33%);
+$color-low-light: lighten($regular-yellow, 40%);
+
+$color-low-dark: darken($regular-yellow, 10%);
+$color-low-medium: lighten($regular-yellow, 33%);
+$color-low-light: lighten($regular-yellow, 40%);
+
+$color-info-dark: $regular-blue;
+$color-info-medium: lighten($regular-blue, 48%);
+$color-info-light: lighten($regular-blue, 53%);
+
+$color-unknown-dark: $regular-grey;
+$color-unknown-medium: $body-color;
+$color-unknown-light: lighten($body-color, 3%);
+
+@mixin content-themed($dark-color, $medium-color, $light-color) {
+	background-color: $light-color;
+
+	.PrescriptionCard__Icon {
+		background-color: $medium-color;
+		color: $dark-color;
 	}
 
-	&.High {
-		border: 1px solid $regular-red;
+	.PrescriptionCard__InteractionInfo {
+		color: $dark-color;
 	}
 
-	&.Moderate {
-		border: 1px solid $dark-orange;
-	}
-
-	&.Low {
-		border: 1px solid $regular-yellow;
-	}
-
-	&.Information {
-		border: 1px solid $regular-blue;
-	}
-
-	&.Unknown {
-		border: 1px solid $mid-dark-grey;
-	}
-
-	.PH:empty {
-		display: none;
-	}
-
-	.ExpanDiv {
-		display: block;
-		height: 0px;
-		overflow-y: hidden;
-
-		&.IsOpen {
-			height: auto;
-			overflow-y: hidden;
+	.PrescriptionCard__Actions {
+		.BadgeCustom {
+			background-color: $dark-color;
 		}
-	}
-
-	.PrescriptionIcons {
-		color: $mid-dark-grey;
-		padding-right: 20px;
-
-		> div,
-		> div > span {
-			vertical-align: middle;
-		}
-
-		.PrescriptionIconRight {
-			vertical-align: bottom;
-		}
-	}
-
-	.PrescriptionIconsNoBorder {
-		border: none;
-	}
-
-	.ActionsAndTextContent {
-		> div {
-			text-align: right;
-		}
-
-		a {
-			text-decoration: underline !important;
-		}
-
-		.InteractionText {
-			color: $regular-red;
-			font-family: $font-family-latin-bold;
-			text-align: right;
-			text-transform: uppercase;
-			width: 100%;
-		}
-
-		.SeeMore,
-		.ActionsPlaceholder {
-			color: $regular-beta;
-			cursor: pointer;
-			font-family: $font-family-latin-bold;
-		}
-	}
-
-	.RiskPlaceholder {
-		.DoubleText .FirstLine_Mutitext {
-			font-family: $font-family-latin-bold;
-			line-height: 20px;
-		}
-
-		.DoubleText .SecondLine_Multitext {
-			line-height: 20px;
-		}
-	}
-
-	.PrescriptionText {
-		margin-left: 10px;
-	}
-
-	.InformationContent {
-		display: block;
-		margin-top: 10px;
-	}
-
-	.InformationText {
-		font-size: 1em;
-		line-height: 20px;
-
-		&.Critical {
-			color: $dark-red;
-		}
-
-		&.High {
-			color: $regular-red;
-		}
-
-		&.Moderate {
-			color: $dark-orange;
-		}
-
-		&.Low {
-			color: $dark-yellow;
-		}
-
-		&.Information {
-			color: $dark-blue;
-		}
-
-		&.Unknown {
-			color: $regular-grey;
-		}
-	}
-
-	.PrescriptionContent,
-	.ActionsAndTextContent {
-		display: table-cell;
-	}
-
-	.RiskPlaceholder,
-	.InteracTypePlaceholder {
-		margin-top: 0px;
-	}
-
-	.InteractionText,
-	.PrescriptionText {
-		font-family: $font-family-latin-bold;
-		font-size: 1.143em;
-	}
-
-	.HideDiv {
-		visibility: hidden;
-
-		.PrescriptionIconRight {
-			width: 1.3857142857142858em;
-		}
-	}
-
-	&___Compare {
-		font-size: 0.786em;
-		margin: 0 10px;
-		vertical-align: middle;
 	}
 }
 
-.AR,
-.FA {
-	.PrescriptionIcons {
-		border-right: 1px solid transparent;
-		padding-left: 20px;
-		padding-right: 0;
+.PrescriptionCard {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	display: flex;
+	gap: $sapphire-sizes--medium;
+	padding: $sapphire-sizes--medium;
+
+	&__Icon {
+		@include flex-center-total();
+
+		background-color: $sapphire-light;
+		border-radius: $border-radius-default;
+		color: $regular-grey;
+		height: $sapphire-sizes--xxlarge;
+		position: relative;
+		width: $sapphire-sizes--xxlarge;
+
+		.PrescriptionIcon1 {
+			font-size: $font-size-heading3;
+		}
 	}
 
-	.PrescriptionCard .ActionsAndTextContent .InteractionText {
-		text-align: left;
+	&__Content {
+		flex: 1;
 	}
 
-	.MedicationInteractionContainer {
-		text-align: right;
+	&__InteractionInfo {
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
 	}
 
-	.ActionsAndTextContent > div {
-		text-align: left;
+	&__Title {
+		@include flex-center-vertically();
+
+		font-family: $font-family-latin-bold;
+		height: 22px;
+
+		.PrescriptionCard___CompareIcon {
+			padding: 0 $sapphire-sizes--small;
+
+			.icon-changeleft,
+			.icon-changeright {
+				font-size: 10px;
+			}
+		}
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
 	}
 
-	.PrescriptionText {
-		margin-right: 20px;
+	&__ExpandableContent {
+		color: $regular-grey;
+		display: none;
+	}
+
+	&__Actions {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.PrescriptionCard__Badge {
+			text-align: end;
+		}
+
+		.PrescriptionCard__ExpandIcon {
+			color: $regular-beta;
+			cursor: pointer;
+
+			&::before {
+				content: attr(data-title-open);
+				font-family: $font-family-latin-bold;
+				padding: 0 $sapphire-sizes--small;
+
+				.AR & {
+					font-family: $font-family-arabic-bold;
+				}
+			}
+
+			&::after {
+				content: '\e610';
+				font-family: $font-family-icons;
+				font-size: 10px;
+			}
+		}
+	}
+
+	&--expanded {
+		.PrescriptionCard__Actions .PrescriptionCard__ExpandIcon {
+			&::before {
+				content: attr(data-title-close);
+			}
+
+			&::after {
+				transform: rotate(90deg);
+			}
+		}
+
+		.PrescriptionCard__ExpandableContent {
+			display: block;
+		}
+	}
+
+	&--hasInteraction {
+		.PrescriptionCard__Icon {
+			.PrescriptionIcon1,
+			.PrescriptionIcon2 {
+				font-size: 13px;
+				height: 1em;
+				line-height: 1em;
+				position: absolute;
+				width: 1em;
+			}
+
+			.PrescriptionIcon1 {
+				left: 6px;
+				top: 6px;
+			}
+
+			.PrescriptionIcon2 {
+				bottom: 6px;
+				right: 6px;
+			}
+
+			.PrescriptionCard___CompareIcon {
+				@include flex-center-total();
+
+				direction: initial;
+
+				.icon-changeleft,
+				.icon-changeright {
+					font-size: 9px;
+				}
+			}
+		}
+	}
+
+	&.Critical {
+		@include content-themed($color-critical-dark, $color-critical-medium, $color-critical-light);
+	}
+
+	&.High {
+		@include content-themed($color-high-dark, $color-high-medium, $color-high-light);
+	}
+
+	&.Moderate {
+		@include content-themed($color-moderate-dark, $color-moderate-medium, $color-moderate-light);
+	}
+
+	&.Low {
+		@include content-themed($color-low-dark, $color-low-medium, $color-low-light);
+	}
+
+	&.Information {
+		@include content-themed($color-info-dark, $color-info-medium, $color-info-light);
+	}
+
+	&.Unknown {
+		@include content-themed($color-unknown-dark, $color-unknown-medium, $color-unknown-light);
 	}
 }

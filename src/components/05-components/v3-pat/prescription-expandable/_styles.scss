@@ -29,20 +29,6 @@
 				display: block;
 				height: auto;
 				overflow: visible;
-
-				.PrescriptionCardList {
-					.PrescriptionCard {
-						&:last-of-type {
-							border-radius: 0 0 $border-radius-default $border-radius-default;
-							border-top: none;
-						}
-
-						&:not(:last-of-type) {
-							border-top: none;
-							padding: 20px 25px;
-						}
-					}
-				}
 			}
 		}
 

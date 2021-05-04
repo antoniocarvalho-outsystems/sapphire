@@ -305,6 +305,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		border-bottom: 1px solid $light-grey;
 		border-radius: $border-radius-medium $border-radius-medium 0 0;
 		gap: $sapphire-sizes--medium;
+		min-height: 70px;
 		padding: $sapphire-sizes--medium;
 
 		.CardIcon {

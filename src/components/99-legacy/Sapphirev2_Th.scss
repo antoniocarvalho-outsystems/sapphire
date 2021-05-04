@@ -19612,52 +19612,52 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 /* 9.118 Sapphire WebBlock > MedPrescriptionCard *********/
 /*------------------------------------------------------------*/
 
-.PrescriptionCardPadding {
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
-}
+// .PrescriptionCardPadding {
+//   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+// }
 
-.PrescriptionCardPadding .PrescriptionCard {
-  background-color: white;
-  border: none;
-  padding: 60px 80px;
-}
+// .PrescriptionCardPadding .PrescriptionCard {
+//   background-color: white;
+//   border: none;
+//   padding: 60px 80px;
+// }
 
-.PrescriptionCardPadding .PrescriptionCard .PrescriptionIcons {
-  border: none;
-}
+// .PrescriptionCardPadding .PrescriptionCard .PrescriptionIcons {
+//   border: none;
+// }
 
-.MedsPrescriptionCard .PrescriptionCard {
-  background-color: #fffafb;
-  border: 1px solid rgba(222, 0, 61, 0.4);
-  border-radius: 8px;
-  padding: 12px 20px;
-}
+// .MedsPrescriptionCard .PrescriptionCard {
+//   background-color: #fffafb;
+//   border: 1px solid rgba(222, 0, 61, 0.4);
+//   border-radius: 8px;
+//   padding: 12px 20px;
+// }
 
-.MedsPrescriptionCard .PrescriptionCard .PrescriptionIcons {
-  border: none;
-}
+// .MedsPrescriptionCard .PrescriptionCard .PrescriptionIcons {
+//   border: none;
+// }
 
-.MedsPrescriptionCard .PrescriptionCard .InformationContent {
-  font-size: 16px;
-  line-height: 23px;
-  margin-top: 5px;
-}
+// .MedsPrescriptionCard .PrescriptionCard .InformationContent {
+//   font-size: 16px;
+//   line-height: 23px;
+//   margin-top: 5px;
+// }
 
 /*Prescription Card Expandable Div*/
 
-.PrescriptionCardExpandDiv .PrescriptionCard:first-of-type {
-  border-top: 1px solid #c9cdce;
-}
+// .PrescriptionCardExpandDiv .PrescriptionCard:first-of-type {
+//   border-top: 1px solid #c9cdce;
+// }
 
-.PrescriptionCardExpandDiv .PrescriptionCard {
-  border-radius: 0;
-  border-top: 1px solid #c9cdce;
-  padding: 20 20px;
-}
+// .PrescriptionCardExpandDiv .PrescriptionCard {
+//   border-radius: 0;
+//   border-top: 1px solid #c9cdce;
+//   padding: 20 20px;
+// }
 
-.PrescriptionCardExpandDiv .PrescriptionCard:last-of-type {
-  border-bottom: 1px solid #c9cdce;
-}
+// .PrescriptionCardExpandDiv .PrescriptionCard:last-of-type {
+//   border-bottom: 1px solid #c9cdce;
+// }
 
 /*------------------------------------------------------------*/
 /* 9.119 Sapphire Patterns  > ListSelectedBlock *********/
