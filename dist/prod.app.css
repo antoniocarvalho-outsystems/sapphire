@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111003 || Generated: Mon May 03 2021 16:29:43 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111004 || Generated: Tue May 04 2021 17:34:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17797,12 +17797,12 @@ div.Toolbar {
     .MenuItemWrapper.Active:before {
       border-bottom-right-radius: 8px;
       border-width: 0 1px 1px 0;
-      box-shadow: 3px 2px 0 #f3f3f3;
+      box-shadow: 6px 0 0 #f3f3f3;
       left: -10.5px; }
     .MenuItemWrapper.Active:after {
       border-bottom-left-radius: 8px;
       border-width: 0 0 1px 1px;
-      box-shadow: -2px 2px 0 #f3f3f3;
+      box-shadow: -6px 0 0 #f3f3f3;
       right: -10.5px; }
     .MenuItemWrapper.Active .MenuItemWrapper_Container {
       color: #00ac94;
@@ -19270,6 +19270,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     border-bottom: 1px solid #d6d6d6;
     border-radius: 8px 8px 0 0;
     gap: 16px;
+    min-height: 70px;
     padding: 16px; }
     .CardsWrapper__Header .CardIcon, .CardsWrapper__HeaderCustom .CardIcon {
       height: 40px;
@@ -20977,191 +20978,160 @@ a .PersonCard {
 
 .PrescriptionCard {
   background-color: #fff;
+  border: 1px solid #d6d6d6;
   border-radius: 8px;
-  color: #333333;
-  display: table;
+  display: -webkit-box;
+  display: flex;
+  gap: 16px;
   padding: 16px; }
-  .PrescriptionCard.Critical {
-    border: 1px solid #b10100; }
-  .PrescriptionCard.High {
-    border: 1px solid #ff3e2d; }
-  .PrescriptionCard.Moderate {
-    border: 1px solid #c37b03; }
-  .PrescriptionCard.Low {
-    border: 1px solid #fbc02d; }
-  .PrescriptionCard.Information {
-    border: 1px solid #039be5; }
-  .PrescriptionCard.Unknown {
-    border: 1px solid #5c5c5c; }
-  .PrescriptionCard .PH:empty {
+  .PrescriptionCard__Icon {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #ebebeb;
+    border-radius: 4px;
+    color: #777777;
+    height: 48px;
+    position: relative;
+    width: 48px; }
+    .PrescriptionCard__Icon .PrescriptionIcon1 {
+      font-size: 1.286em; }
+  .PrescriptionCard__Content {
+    -webkit-box-flex: 1;
+            flex: 1; }
+  .PrescriptionCard__InteractionInfo {
+    font-family: "LatoBold";
+    font-size: 0.857em; }
+    .AR .PrescriptionCard__InteractionInfo {
+      font-family: "TajawalBold"; }
+  .PrescriptionCard__Title {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    font-family: "LatoBold";
+    height: 22px; }
+    .PrescriptionCard__Title .PrescriptionCard___CompareIcon {
+      padding: 0 8px; }
+      .PrescriptionCard__Title .PrescriptionCard___CompareIcon .icon-changeleft,
+      .PrescriptionCard__Title .PrescriptionCard___CompareIcon .icon-changeright {
+        font-size: 10px; }
+    .AR .PrescriptionCard__Title {
+      font-family: "TajawalBold"; }
+  .PrescriptionCard__ExpandableContent {
+    color: #777777;
     display: none; }
-  .PrescriptionCard .ExpanDiv {
-    display: block;
-    height: 0px;
-    overflow-y: hidden; }
-    .PrescriptionCard .ExpanDiv.IsOpen {
-      height: auto;
-      overflow-y: hidden; }
-  .PrescriptionCard .PrescriptionIcons {
-    color: #5c5c5c;
-    padding-right: 20px; }
-    .PrescriptionCard .PrescriptionIcons > div,
-    .PrescriptionCard .PrescriptionIcons > div > span {
-      vertical-align: middle; }
-    .PrescriptionCard .PrescriptionIcons .PrescriptionIconRight {
-      vertical-align: bottom; }
-  .PrescriptionCard .PrescriptionIconsNoBorder {
-    border: none; }
-  .PrescriptionCard .ActionsAndTextContent > div {
-    text-align: right; }
-  .PrescriptionCard .ActionsAndTextContent a {
-    text-decoration: underline !important; }
-  .PrescriptionCard .ActionsAndTextContent .InteractionText {
-    color: #ff3e2d;
-    font-family: "LatoBold";
-    text-align: right;
-    text-transform: uppercase;
-    width: 100%; }
-  .PrescriptionCard .ActionsAndTextContent .SeeMore,
-  .PrescriptionCard .ActionsAndTextContent .ActionsPlaceholder {
-    color: #00ac94;
-    cursor: pointer;
-    font-family: "LatoBold"; }
-  .PrescriptionCard .RiskPlaceholder .DoubleText .FirstLine_Mutitext {
-    font-family: "LatoBold";
-    line-height: 20px; }
-  .PrescriptionCard .RiskPlaceholder .DoubleText .SecondLine_Multitext {
-    line-height: 20px; }
-  .PrescriptionCard .PrescriptionText {
-    margin-left: 10px; }
-  .PrescriptionCard .InformationContent {
-    display: block;
-    margin-top: 10px; }
-  .PrescriptionCard .InformationText {
-    font-size: 1em;
-    line-height: 20px; }
-    .PrescriptionCard .InformationText.Critical {
-      color: #b10100; }
-    .PrescriptionCard .InformationText.High {
-      color: #ff3e2d; }
-    .PrescriptionCard .InformationText.Moderate {
-      color: #c37b03; }
-    .PrescriptionCard .InformationText.Low {
-      color: #c19323; }
-    .PrescriptionCard .InformationText.Information {
-      color: #194968; }
-    .PrescriptionCard .InformationText.Unknown {
-      color: #777777; }
-  .PrescriptionCard .PrescriptionContent,
-  .PrescriptionCard .ActionsAndTextContent {
-    display: table-cell; }
-  .PrescriptionCard .RiskPlaceholder,
-  .PrescriptionCard .InteracTypePlaceholder {
-    margin-top: 0px; }
-  .PrescriptionCard .InteractionText,
-  .PrescriptionCard .PrescriptionText {
-    font-family: "LatoBold";
-    font-size: 1.143em; }
-  .PrescriptionCard .HideDiv {
-    visibility: hidden; }
-    .PrescriptionCard .HideDiv .PrescriptionIconRight {
-      width: 1.3857142857142858em; }
-  .PrescriptionCard___Compare {
-    font-size: 0.786em;
-    margin: 0 10px;
-    vertical-align: middle; }
-
-.AR .PrescriptionIcons,
-.FA .PrescriptionIcons {
-  border-right: 1px solid transparent;
-  padding-left: 20px;
-  padding-right: 0; }
-
-.AR .PrescriptionCard .ActionsAndTextContent .InteractionText,
-.FA .PrescriptionCard .ActionsAndTextContent .InteractionText {
-  text-align: left; }
-
-.AR .MedicationInteractionContainer,
-.FA .MedicationInteractionContainer {
-  text-align: right; }
-
-.AR .ActionsAndTextContent > div,
-.FA .ActionsAndTextContent > div {
-  text-align: left; }
-
-.AR .PrescriptionText,
-.FA .PrescriptionText {
-  margin-right: 20px; }
-
-.PrescriptionCardList {
-  border-radius: 4px; }
-  .PrescriptionCardList.Critical {
-    border: 1px solid #b10100; }
-    .PrescriptionCardList.Critical .PrescriptionCard {
-      background-color: #fffafb; }
-  .PrescriptionCardList.High {
-    border: 1px solid #ff3e2d; }
-    .PrescriptionCardList.High .PrescriptionCard {
-      background-color: #fffafa; }
-  .PrescriptionCardList.Moderate {
-    border: 1px solid #c37b03; }
-    .PrescriptionCardList.Moderate .PrescriptionCard {
-      background-color: #fffdfa; }
-  .PrescriptionCardList.Low {
-    border: 1px solid #c19323; }
-    .PrescriptionCardList.Low .PrescriptionCard {
-      background-color: #fffefa; }
-  .PrescriptionCardList.Information {
-    border: 1px solid #194968; }
-    .PrescriptionCardList.Information .PrescriptionCard {
-      background-color: #fafbff; }
-  .PrescriptionCardList.Unknown {
-    border: 1px solid #777777; }
-    .PrescriptionCardList.Unknown .PrescriptionCard {
-      background-color: #fcfcfc; }
-  .PrescriptionCardList .PrescriptionCard {
-    border-bottom: 0;
-    border-left: 0;
-    border-radius: 0;
-    border-right: 0; }
-    .PrescriptionCardList .PrescriptionCard:first-of-type {
-      border: 0;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px; }
-    .PrescriptionCardList .PrescriptionCard:last-of-type {
-      border: 0;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px; }
-    .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-      border-top: 1px solid rgba(77, 92, 102, 0.2); }
-    .PrescriptionCardList .PrescriptionCard_ShowMore {
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-top: 1px solid rgba(77, 92, 102, 0.2);
-      padding: 15px 0px;
-      text-align: center;
-      width: 100%; }
-      .PrescriptionCardList .PrescriptionCard_ShowMore.Critical {
-        background-color: #fffafb; }
-      .PrescriptionCardList .PrescriptionCard_ShowMore.High {
-        background-color: #fffafa; }
-      .PrescriptionCardList .PrescriptionCard_ShowMore.Moderate {
-        background-color: #fffdfa; }
-      .PrescriptionCardList .PrescriptionCard_ShowMore.Low {
-        background-color: #fffefa; }
-      .PrescriptionCardList .PrescriptionCard_ShowMore.Information {
-        background-color: #fafbff; }
-      .PrescriptionCardList .PrescriptionCard_ShowMore.Unknown {
-        background-color: #fcfcfc; }
-      .PrescriptionCardList .PrescriptionCard_ShowMore.hidden {
-        display: none; }
-      .PrescriptionCardList .PrescriptionCard_ShowMore a {
-        color: #00bfa5;
+  .PrescriptionCard__Actions {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
+    .PrescriptionCard__Actions .PrescriptionCard__Badge {
+      text-align: end; }
+    .PrescriptionCard__Actions .PrescriptionCard__ExpandIcon {
+      color: #00ac94;
+      cursor: pointer; }
+      .PrescriptionCard__Actions .PrescriptionCard__ExpandIcon::before {
+        content: attr(data-title-open);
         font-family: "LatoBold";
-        font-size: 1em;
-        line-height: 20px; }
-    .PrescriptionCardList .PrescriptionCard .InformationText {
+        padding: 0 8px; }
+        .AR .PrescriptionCard__Actions .PrescriptionCard__ExpandIcon::before {
+          font-family: "TajawalBold"; }
+      .PrescriptionCard__Actions .PrescriptionCard__ExpandIcon::after {
+        content: '\e610';
+        font-family: "Sapphire-Icon-Font";
+        font-size: 10px; }
+  .PrescriptionCard--expanded .PrescriptionCard__Actions .PrescriptionCard__ExpandIcon::before {
+    content: attr(data-title-close); }
+  .PrescriptionCard--expanded .PrescriptionCard__Actions .PrescriptionCard__ExpandIcon::after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .PrescriptionCard--expanded .PrescriptionCard__ExpandableContent {
+    display: block; }
+  .PrescriptionCard--hasInteraction .PrescriptionCard__Icon .PrescriptionIcon1,
+  .PrescriptionCard--hasInteraction .PrescriptionCard__Icon .PrescriptionIcon2 {
+    font-size: 13px;
+    height: 1em;
+    line-height: 1em;
+    position: absolute;
+    width: 1em; }
+  .PrescriptionCard--hasInteraction .PrescriptionCard__Icon .PrescriptionIcon1 {
+    left: 6px;
+    top: 6px; }
+  .PrescriptionCard--hasInteraction .PrescriptionCard__Icon .PrescriptionIcon2 {
+    bottom: 6px;
+    right: 6px; }
+  .PrescriptionCard--hasInteraction .PrescriptionCard__Icon .PrescriptionCard___CompareIcon {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    direction: initial; }
+    .PrescriptionCard--hasInteraction .PrescriptionCard__Icon .PrescriptionCard___CompareIcon .icon-changeleft,
+    .PrescriptionCard--hasInteraction .PrescriptionCard__Icon .PrescriptionCard___CompareIcon .icon-changeright {
+      font-size: 9px; }
+  .PrescriptionCard.Critical {
+    background-color: #fff8f8; }
+    .PrescriptionCard.Critical .PrescriptionCard__Icon {
+      background-color: #ffe4e4;
+      color: #cb0100; }
+    .PrescriptionCard.Critical .PrescriptionCard__InteractionInfo {
+      color: #cb0100; }
+    .PrescriptionCard.Critical .PrescriptionCard__Actions .BadgeCustom {
+      background-color: #cb0100; }
+  .PrescriptionCard.High {
+    background-color: #fff9f9; }
+    .PrescriptionCard.High .PrescriptionCard__Icon {
+      background-color: #ffe2e0;
       color: #ff3e2d; }
+    .PrescriptionCard.High .PrescriptionCard__InteractionInfo {
+      color: #ff3e2d; }
+    .PrescriptionCard.High .PrescriptionCard__Actions .BadgeCustom {
+      background-color: #ff3e2d; }
+  .PrescriptionCard.Moderate {
+    background-color: #fffbf5; }
+    .PrescriptionCard.Moderate .PrescriptionCard__Icon {
+      background-color: #ffeccc;
+      color: #ffa000; }
+    .PrescriptionCard.Moderate .PrescriptionCard__InteractionInfo {
+      color: #ffa000; }
+    .PrescriptionCard.Moderate .PrescriptionCard__Actions .BadgeCustom {
+      background-color: #ffa000; }
+  .PrescriptionCard.Low {
+    background-color: #fffcf5; }
+    .PrescriptionCard.Low .PrescriptionCard__Icon {
+      background-color: #fef2d2;
+      color: #f0ad05; }
+    .PrescriptionCard.Low .PrescriptionCard__InteractionInfo {
+      color: #f0ad05; }
+    .PrescriptionCard.Low .PrescriptionCard__Actions .BadgeCustom {
+      background-color: #f0ad05; }
+  .PrescriptionCard.Information {
+    background-color: #f7fcff; }
+    .PrescriptionCard.Information .PrescriptionCard__Icon {
+      background-color: #def4ff;
+      color: #039be5; }
+    .PrescriptionCard.Information .PrescriptionCard__InteractionInfo {
+      color: #039be5; }
+    .PrescriptionCard.Information .PrescriptionCard__Actions .BadgeCustom {
+      background-color: #039be5; }
+  .PrescriptionCard.Unknown {
+    background-color: #fbfbfb; }
+    .PrescriptionCard.Unknown .PrescriptionCard__Icon {
+      background-color: #f3f3f3;
+      color: #777777; }
+    .PrescriptionCard.Unknown .PrescriptionCard__InteractionInfo {
+      color: #777777; }
+    .PrescriptionCard.Unknown .PrescriptionCard__Actions .BadgeCustom {
+      background-color: #777777; }
 
 .SectionPrescriptionExpandableArea.expanded:not(.isLinkEpandable) .PrescriptionExpandable_content {
   border: 1px solid #ff3e2d;
@@ -21184,12 +21154,6 @@ a .PersonCard {
   display: block;
   height: auto;
   overflow: visible; }
-  .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-    border-radius: 0 0 4px 4px;
-    border-top: none; }
-  .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:last-of-type) {
-    border-top: none;
-    padding: 20px 25px; }
 
 .SectionPrescriptionExpandableArea.expanded .SectionExpandable__icon .PrescriptionExpandable_header__IconDiv .icon {
   -webkit-transform: rotate(-180deg);
@@ -31873,183 +31837,360 @@ body .Page.desktop .MainPopup {
 .phone .pika-next:after {
   left: -20px; }
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCardList {
-  border-color: #ff3e2d;
-  border-radius: 0px; }
+/*.SectionPrescriptionExpandableArea {
+	&.expanded {
+		.PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCardList {
+			border-color: $regular-red;
+			border-radius: 0px;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_content {
-  display: block;
-  height: auto;
-  overflow: visible;
-  visibility: visible; }
+		.PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard
+			.SectionPrescriptionExpandableArea.expanded
+			.PrescriptionExpandable_content {
+			display: block;
+			height: auto;
+			overflow: visible;
+			visibility: visible;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate + .PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #c37b03; }
+		.PrescriptionExpandable_header.NotExpandable.Moderate
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList {
+			border: 1px solid $dark-orange;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fff; }
+		.PrescriptionExpandable_header.NotExpandable.Moderate,
+		.PrescriptionExpandable_header.NotExpandable.Moderate
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			background-color: $regular-white;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #c37b03; }
+		.PrescriptionExpandable_header.NotExpandable.Moderate
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:not(:first-of-type) {
+			border-top: 1px solid $dark-orange;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #c37b03; }
+		.PrescriptionExpandable_header.NotExpandable.Moderate
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard
+			.InformationText {
+			color: $dark-orange;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none; }
+		.PrescriptionExpandable_header.NotExpandable.Moderate
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			border-left: none;
+			border-right: none;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Moderate + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0; }
+		.PrescriptionExpandable_header.NotExpandable.Moderate
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:last-of-type {
+			border-bottom: none;
+			border-radius: 0;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical + .PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #ff3e2d; }
+		.SectionPrescriptionExpandableArea.expanded
+			.PrescriptionExpandable_header.NotExpandable.Critical
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList {
+			border: 1px solid $regular-red;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical,
-.SectionPrescriptionExpandableArea.expanded .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fff; }
+		.SectionPrescriptionExpandableArea.expanded
+			.PrescriptionExpandable_header.NotExpandable.Critical,
+		.SectionPrescriptionExpandableArea.expanded
+			.PrescriptionExpandable_header.NotExpandable.Critical
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			background-color: $regular-white;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical {
-  border: 1px solid #ff3e2d;
-  border-bottom: none;
-  border-radius: 0; }
+		.SectionPrescriptionExpandableArea.expanded
+			.PrescriptionExpandable_header.NotExpandable.Critical {
+			border: 1px solid $regular-red;
+			border-bottom: none;
+			border-radius: 0;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #ff3e2d; }
+		.SectionPrescriptionExpandableArea.expanded
+			.PrescriptionExpandable_header.NotExpandable.Critical
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:not(:first-of-type) {
+			border-top: 1px solid $regular-red;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #ff3e2d; }
+		.PrescriptionExpandable_header.NotExpandable.Critical
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard
+			.InformationText {
+			color: $regular-red;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none; }
+		.PrescriptionExpandable_header.NotExpandable.Critical
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			border-left: none;
+			border-right: none;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Critical + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0; }
+		.PrescriptionExpandable_header.NotExpandable.Critical
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:last-of-type {
+			border-bottom: none;
+			border-radius: 0;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High + .PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #c37b03; }
+		.PrescriptionExpandable_header.NotExpandable.High
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList {
+			border: 1px solid $dark-orange;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fff; }
+		.PrescriptionExpandable_header.NotExpandable.High,
+		.PrescriptionExpandable_header.NotExpandable.High
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			background-color: $regular-white;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .SectionPrescriptionExpandableArea.expanded.CursorPointerNone .PrescriptionExpandable_header.High {
-  border: 1px solid #c37b03;
-  border-bottom: none;
-  border-radius: 0; }
+		.SectionPrescriptionExpandableArea.expanded.CursorPointerNone
+			.PrescriptionExpandable_header.High {
+			border: 1px solid $dark-orange;
+			border-bottom: none;
+			border-radius: 0;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #c37b03; }
+		.PrescriptionExpandable_header.NotExpandable.High
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:not(:first-of-type) {
+			border-top: 1px solid $dark-orange;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #c37b03; }
+		.PrescriptionExpandable_header.NotExpandable.High
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard
+			.InformationText {
+			color: $dark-orange;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none; }
+		.PrescriptionExpandable_header.NotExpandable.High
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			border-left: none;
+			border-right: none;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.High + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0; }
+		.PrescriptionExpandable_header.NotExpandable.High
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:last-of-type {
+			border-bottom: none;
+			border-radius: 0;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low + .PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #fbc02d; }
+		.PrescriptionExpandable_header.NotExpandable.Low
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList {
+			border: 1px solid $regular-yellow;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fff; }
+		.PrescriptionExpandable_header.NotExpandable.Low,
+		.PrescriptionExpandable_header.NotExpandable.Low
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			background-color: $regular-white;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low {
-  border: 1px solid #fbc02d;
-  border-bottom: none;
-  border-radius: 0; }
+		.PrescriptionExpandable_header.NotExpandable.Low {
+			border: 1px solid $regular-yellow;
+			border-bottom: none;
+			border-radius: 0;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #fbc02d; }
+		.PrescriptionExpandable_header.NotExpandable.Low
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:not(:first-of-type) {
+			border-top: 1px solid $regular-yellow;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #fbc02d; }
+		.PrescriptionExpandable_header.NotExpandable.Low
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard
+			.InformationText {
+			color: $regular-yellow;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none; }
+		.PrescriptionExpandable_header.NotExpandable.Low
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			border-left: none;
+			border-right: none;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Low + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0; }
+		.PrescriptionExpandable_header.NotExpandable.Low
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:last-of-type {
+			border-bottom: none;
+			border-radius: 0;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information + .PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #194968; }
+		.PrescriptionExpandable_header.NotExpandable.Information
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList {
+			border: 1px solid $dark-blue;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #fff; }
+		.PrescriptionExpandable_header.NotExpandable.Information,
+		.PrescriptionExpandable_header.NotExpandable.Information
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			background-color: $regular-white;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information {
-  border: 1px solid #194968;
-  border-bottom: none;
-  border-radius: 0; }
+		.PrescriptionExpandable_header.NotExpandable.Information {
+			border: 1px solid $dark-blue;
+			border-bottom: none;
+			border-radius: 0;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #194968; }
+		.PrescriptionExpandable_header.NotExpandable.Information
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:not(:first-of-type) {
+			border-top: 1px solid $dark-blue;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #194968; }
+		.PrescriptionExpandable_header.NotExpandable.Information
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard
+			.InformationText {
+			color: $dark-blue;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none; }
+		.PrescriptionExpandable_header.NotExpandable.Information
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			border-left: none;
+			border-right: none;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Information + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0; }
+		.PrescriptionExpandable_header.NotExpandable.Information
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:last-of-type {
+			border-bottom: none;
+			border-radius: 0;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown + .PrescriptionExpandable_content .PrescriptionCardList {
-  border: 1px solid #adadad; }
+		.PrescriptionExpandable_header.NotExpandable.Unknown
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList {
+			border: 1px solid $mid-light-grey;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown,
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  background-color: #d6d6d6; }
+		.PrescriptionExpandable_header.NotExpandable.Unknown,
+		.PrescriptionExpandable_header.NotExpandable.Unknown
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			background-color: $light-grey;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown {
-  border: 1px solid #adadad;
-  border-bottom: none;
-  border-radius: 0; }
+		.PrescriptionExpandable_header.NotExpandable.Unknown {
+			border: 1px solid $mid-light-grey;
+			border-bottom: none;
+			border-radius: 0;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:not(:first-of-type) {
-  border-top: 1px solid #adadad; }
+		.PrescriptionExpandable_header.NotExpandable.Unknown
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:not(:first-of-type) {
+			border-top: 1px solid $mid-light-grey;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationText {
-  color: #adadad; }
+		.PrescriptionExpandable_header.NotExpandable.Unknown
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard
+			.InformationText {
+			color: $mid-light-grey;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard {
-  border-left: none;
-  border-right: none; }
+		.PrescriptionExpandable_header.NotExpandable.Unknown
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard {
+			border-left: none;
+			border-right: none;
+		}
 
-.SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable.Unknown + .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard:last-of-type {
-  border-bottom: none;
-  border-radius: 0; }
+		.PrescriptionExpandable_header.NotExpandable.Unknown
+			+ .PrescriptionExpandable_content
+			.PrescriptionCardList
+			.PrescriptionCard:last-of-type {
+			border-bottom: none;
+			border-radius: 0;
+		}
+	}
+}
 
-.phone .SectionPrescriptionExpandableArea:not(isLinkEpandable) .PrescriptionExpandable_header {
-  height: auto; }
+.phone {
+	.SectionPrescriptionExpandableArea {
+		&:not(isLinkEpandable) .PrescriptionExpandable_header {
+			height: auto;
+		}
 
-.phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header {
-  height: auto;
-  padding: 0; }
+		&.isLinkEpandable {
+			.PrescriptionExpandable_header {
+				height: auto;
+				padding: 0;
+			}
 
-.phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header > div:not(.PrescriptionExpandable_icon) {
-  height: auto;
-  line-height: 20px;
-  padding: 5px 20px; }
+			.PrescriptionExpandable_header > div:not(.PrescriptionExpandable_icon) {
+				height: auto;
+				line-height: 20px;
+				padding: 5px 20px;
+			}
 
-.phone .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_icon {
-  text-align: center;
-  width: 100%; }
-
+			.PrescriptionExpandable_icon {
+				text-align: center;
+				width: 100%;
+			}
+		}
+	}
+}
+*/
 .PrescriptionContainer__Header_Statement {
   -webkit-box-align: center;
           align-items: center;
@@ -38473,43 +38614,7 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 /*------------------------------------------------------------*/
 /* 9.118 Sapphire WebBlock > MedPrescriptionCard *********/
 /*------------------------------------------------------------*/
-.PrescriptionCardPadding {
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2); }
-
-.PrescriptionCardPadding .PrescriptionCard {
-  background-color: white;
-  border: none;
-  padding: 60px 80px; }
-
-.PrescriptionCardPadding .PrescriptionCard .PrescriptionIcons {
-  border: none; }
-
-.MedsPrescriptionCard .PrescriptionCard {
-  background-color: #fffafb;
-  border: 1px solid rgba(222, 0, 61, 0.4);
-  border-radius: 8px;
-  padding: 12px 20px; }
-
-.MedsPrescriptionCard .PrescriptionCard .PrescriptionIcons {
-  border: none; }
-
-.MedsPrescriptionCard .PrescriptionCard .InformationContent {
-  font-size: 16px;
-  line-height: 23px;
-  margin-top: 5px; }
-
 /*Prescription Card Expandable Div*/
-.PrescriptionCardExpandDiv .PrescriptionCard:first-of-type {
-  border-top: 1px solid #c9cdce; }
-
-.PrescriptionCardExpandDiv .PrescriptionCard {
-  border-radius: 0;
-  border-top: 1px solid #c9cdce;
-  padding: 20 20px; }
-
-.PrescriptionCardExpandDiv .PrescriptionCard:last-of-type {
-  border-bottom: 1px solid #c9cdce; }
-
 /*------------------------------------------------------------*/
 /* 9.119 Sapphire Patterns  > ListSelectedBlock *********/
 /*------------------------------------------------------------*/

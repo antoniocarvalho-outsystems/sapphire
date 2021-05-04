@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.111003 || Generated: Mon May 03 2021 16:29:43 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.1.111004 || Generated: Tue May 04 2021 17:34:23 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -578,7 +578,7 @@ eval("/* Component PersonCard */\r\n$(document).ready(function() {\r\n\tvar Pers
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component PrescriptionCard */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\t$(`#${config.widgetId}`).click(() => {\r\n\t\t\tshowMore($(`#${config.widgetId}`));\r\n\t\t});\r\n\t};\r\n\r\n\tconst showMore = element => {\r\n\t\tconst parents = element.parents('.PrescriptionCard');\r\n\r\n\t\tif (parents.find('.ExpanDiv').hasClass('IsOpen')) {\r\n\t\t\tparents.find('.ExpanDiv').removeClass('IsOpen');\r\n\r\n\t\t\telement.text('See More');\r\n\t\t} else {\r\n\t\t\tparents.find('.ExpanDiv').addClass('IsOpen');\r\n\r\n\t\t\telement.text('See Less');\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.PrescriptionCard = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/prescription-card/scripts.js?");
+eval("/* Component PrescriptionCard */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\tconst $component = $(`#${config.widgetId} .PrescriptionCard`);\r\n\r\n\t\tif (config.isExpandable) {\r\n\t\t\tconst $expandLink = $component.find('.PrescriptionCard__ExpandIcon');\r\n\r\n\t\t\t$expandLink.click(() => {\r\n\t\t\t\t$component.toggleClass('PrescriptionCard--expanded');\r\n\t\t\t});\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.PrescriptionCard = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/prescription-card/scripts.js?");
 
 /***/ }),
 
