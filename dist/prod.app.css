@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111004 || Generated: Tue May 04 2021 17:34:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111005 || Generated: Thu May 06 2021 10:34:57 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19295,6 +19295,15 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .CardsWrapper__HeaderTitle {
     -webkit-box-flex: 1;
             flex: 1; }
+  .CardsWrapper__Content .CardWarning, .CardsWrapper__ContentCustom .CardWarning {
+    color: #777777;
+    display: -webkit-box;
+    display: flex;
+    gap: 16px; }
+    .CardsWrapper__Content .CardWarning .icon, .CardsWrapper__ContentCustom .CardWarning .icon {
+      color: #ffa000;
+      font-size: 1.143em;
+      margin: 0 2px; }
   .CardsWrapper__Content {
     padding: 16px;
     padding-bottom: 0; }
@@ -21132,6 +21141,37 @@ a .PersonCard {
       color: #777777; }
     .PrescriptionCard.Unknown .PrescriptionCard__Actions .BadgeCustom {
       background-color: #777777; }
+
+.PrescriptionCardList .PrescriptionCard {
+  border-bottom-color: transparent;
+  border-radius: 0; }
+
+.PrescriptionCardList > *:first-child .PrescriptionCard {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; }
+
+.PrescriptionCardList > *:last-child .PrescriptionCard {
+  border-bottom-color: #d6d6d6;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+.SegmentedControl.Filters .SegmentedControlItem.Critical > input[type='radio']:checked ~ label {
+  background-color: #cb0100; }
+
+.SegmentedControl.Filters .SegmentedControlItem.High > input[type='radio']:checked ~ label {
+  background-color: #ff3e2d; }
+
+.SegmentedControl.Filters .SegmentedControlItem.Moderate > input[type='radio']:checked ~ label {
+  background-color: #ffa000; }
+
+.SegmentedControl.Filters .SegmentedControlItem.Low > input[type='radio']:checked ~ label {
+  background-color: #f0ad05; }
+
+.SegmentedControl.Filters .SegmentedControlItem.Info > input[type='radio']:checked ~ label {
+  background-color: #039be5; }
+
+.SegmentedControl.Filters .SegmentedControlItem.Unknown > input[type='radio']:checked ~ label {
+  background-color: #777777; }
 
 .SectionPrescriptionExpandableArea.expanded:not(.isLinkEpandable) .PrescriptionExpandable_content {
   border: 1px solid #ff3e2d;
