@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111006 || Generated: Thu May 06 2021 10:49:48 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111007 || Generated: Thu May 06 2021 13:07:06 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19932,31 +19932,42 @@ body.confirmation-opened {
       max-width: 15px;
       position: absolute;
       right: 32px;
-      top: 22px; }
+      top: 32px; }
     .modalPopup.Open .modalPopup_container {
       background-color: #fff;
       border-radius: 8px;
       display: block;
       max-height: 80%;
       min-width: 250px;
-      overflow: auto;
-      padding: 32px;
+      padding: 24px 32px;
       position: fixed;
       width: auto;
       z-index: 60; }
     .modalPopup.Open .modalPopup_close {
       display: none; }
     .modalPopup.Open .modalPopup_title {
-      color: #333333;
+      border-bottom: 1px solid #d6d6d6;
       font-family: "LatoBold";
       font-size: 1.429em;
-      margin-bottom: 16px;
-      text-align: center; }
+      margin-left: -32px;
+      margin-right: -32px;
+      padding: 0 32px 24px 32px; }
       .modalPopup.Open .modalPopup_title:empty {
         content: '\00a0'; }
+      .AR .modalPopup.Open .modalPopup_title {
+        font-family: "TajawalBold"; }
     .modalPopup.Open .modalPopup_content {
-      height: 100%;
-      text-align: center; }
+      height: 100%; }
+      .modalPopup.Open .modalPopup_content .Scrollable {
+        margin-bottom: -24px;
+        margin-right: -16px;
+        margin-top: 24px;
+        padding-right: 8px; }
+        .AR .modalPopup.Open .modalPopup_content .Scrollable {
+          margin-left: -16px;
+          margin-right: 0;
+          padding-left: 8px;
+          padding-right: 0; }
     .modalPopup.Open .modalPopup_div {
       background: rgba(0, 0, 0, 0.3);
       height: 100%;
@@ -19971,7 +19982,7 @@ body.confirmation-opened {
       text-align: right; }
 
 .CustomModalPopup {
-  margin: -32px;
+  margin: -24px -32px;
   text-align: start; }
   .CustomModalPopup__Header, .CustomModalPopup__Footer {
     -webkit-box-align: center;
