@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111007 || Generated: Thu May 06 2021 13:07:06 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111008 || Generated: Thu May 06 2021 14:20:59 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21034,7 +21034,7 @@ a .PersonCard {
     font-family: "LatoBold";
     height: 22px; }
     .PrescriptionCard__Title .PrescriptionCard___CompareIcon {
-      padding: 0 8px; }
+      padding: 0 4px; }
       .PrescriptionCard__Title .PrescriptionCard___CompareIcon .icon-changeleft,
       .PrescriptionCard__Title .PrescriptionCard___CompareIcon .icon-changeright {
         font-size: 10px; }
