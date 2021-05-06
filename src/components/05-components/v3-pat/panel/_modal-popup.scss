@@ -22,7 +22,7 @@
 				max-width: 15px;
 				position: absolute;
 				right: $sapphire-sizes--xlarge;
-				top: 22px;
+				top: $sapphire-sizes--xlarge;
 			}
 		}
 
@@ -34,8 +34,7 @@
 			display: block;
 			max-height: 80%;
 			min-width: 250px;
-			overflow: auto;
-			padding: $sapphire-sizes--xlarge;
+			padding: $sapphire-sizes--large $sapphire-sizes--xlarge;
 			position: fixed;
 			width: auto;
 			z-index: 60;
@@ -46,20 +45,38 @@
 		}
 
 		.modalPopup_title {
-			color: $dark-grey;
+			border-bottom: 1px solid $light-grey;
 			font-family: $font-family-latin-bold;
 			font-size: $font-size-heading2;
-			margin-bottom: $sapphire-sizes--medium;
-			text-align: center;
+			margin-left: -$sapphire-sizes--xlarge;
+			margin-right: -$sapphire-sizes--xlarge;
+			padding: 0 $sapphire-sizes--xlarge $sapphire-sizes--large $sapphire-sizes--xlarge;
 
 			&:empty {
 				content: '\00a0';
+			}
+
+			.AR & {
+				font-family: $font-family-arabic-bold;
 			}
 		}
 
 		.modalPopup_content {
 			height: 100%;
-			text-align: center;
+
+			.Scrollable {
+				margin-bottom: -$sapphire-sizes--large;
+				margin-right: -$sapphire-sizes--medium;
+				margin-top: $sapphire-sizes--large;
+				padding-right: $sapphire-sizes--small;
+
+				.AR & {
+					margin-left: -$sapphire-sizes--medium;
+					margin-right: 0;
+					padding-left: $sapphire-sizes--small;
+					padding-right: 0;
+				}
+			}
 		}
 
 		.modalPopup_div {
@@ -81,7 +98,7 @@
 }
 
 .CustomModalPopup {
-	margin: -$sapphire-sizes--xlarge;
+	margin: -$sapphire-sizes--large (-$sapphire-sizes--xlarge);
 	text-align: start;
 
 	&__Header,
