@@ -334,21 +334,6 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		flex: 1;
 	}
 
-	&__Content,
-	&__ContentCustom {
-		.CardWarning {
-			color: $regular-grey;
-			display: flex;
-			gap: $sapphire-sizes--medium;
-
-			.icon {
-				color: $regular-orange;
-				font-size: $font-size-heading4;
-				margin: 0 2px;
-			}
-		}
-	}
-
 	&__Content {
 		padding: $sapphire-sizes--medium;
 		padding-bottom: 0;
@@ -404,6 +389,18 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 			border-radius: 0;
 			border-right-color: transparent;
 		}
+	}
+}
+
+.CardWarning {
+	color: $regular-grey;
+	display: flex;
+	gap: $sapphire-sizes--medium;
+
+	.icon {
+		color: $regular-orange;
+		font-size: $font-size-heading4;
+		margin: 0 2px;
 	}
 }
 

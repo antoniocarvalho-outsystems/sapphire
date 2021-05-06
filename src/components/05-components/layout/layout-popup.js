@@ -14,7 +14,7 @@
 	var $overlay = window.parent.$('.os-internal-ui-widget-overlay');
 	var popupSize;
 
-	const BODY_PADDING_TOP_BOTTOM = 72;
+	const BODY_PADDING_TOP_BOTTOM = 64;
 
 	const create = function(config) {
 		SapphireWidgets.LayoutPopup.config = config;
