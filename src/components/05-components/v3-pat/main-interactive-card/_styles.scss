@@ -301,7 +301,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	&__HeaderCustom {
 		@include flex-center-vertically();
 
-		background-color: $regular-eta;
+		background-color: $regular-white;
 		border-bottom: 1px solid $light-grey;
 		border-radius: $border-radius-medium $border-radius-medium 0 0;
 		gap: $sapphire-sizes--medium;
@@ -315,7 +315,6 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	}
 
 	&__HeaderCustom {
-		background-color: $regular-white;
 		border: none;
 	}
 
