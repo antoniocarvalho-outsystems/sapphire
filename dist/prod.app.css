@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111005 || Generated: Thu May 06 2021 10:34:57 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111006 || Generated: Thu May 06 2021 10:49:48 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19266,7 +19266,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
             align-items: center;
     display: -webkit-box;
     display: flex;
-    background-color: #f2fffd;
+    background-color: #fff;
     border-bottom: 1px solid #d6d6d6;
     border-radius: 8px 8px 0 0;
     gap: 16px;
@@ -19276,7 +19276,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       height: 40px;
       width: 40px; }
   .CardsWrapper__HeaderCustom {
-    background-color: #fff;
     border: none; }
   .CardsWrapper__HeaderCounter {
     -webkit-box-align: center;
