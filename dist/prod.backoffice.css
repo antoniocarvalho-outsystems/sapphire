@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.111009 || Generated: Thu May 06 2021 14:22:51 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.111010 || Generated: Thu May 06 2021 17:22:06 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4482,7 +4482,7 @@ body.PanelById.PanelOpened {
       cursor: pointer;
       height: 20px;
       right: 30px;
-      top: 30px;
+      top: 16px;
       width: 14px; }
       .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close:after {
         color: #333333;

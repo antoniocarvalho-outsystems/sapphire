@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111009 || Generated: Thu May 06 2021 14:22:51 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111010 || Generated: Thu May 06 2021 17:22:06 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11501,15 +11501,13 @@ html .Page .PatientDetailsLayout {
     margin-top: -10px;
     width: 250px; }
   .LayoutPopup__header {
+    border-bottom: 1px solid #d6d6d6;
     display: block;
-    padding: 32px 32px 0 32px; }
-    .LayoutPopup__header__text {
+    padding: 16px 32px; }
+    .LayoutPopup__header .LayoutPopup__header__text {
       width: 100%; }
-    .LayoutPopup__header__text__title {
-      margin-bottom: 8px; }
-    .LayoutPopup__header__text__subtitle {
-      font-size: 1.286em;
-      line-height: 20px; }
+    .LayoutPopup__header .LayoutPopup__header__text__subtitle {
+      margin-top: 8px; }
   .LayoutPopup__intro {
     padding: 10px 32px; }
   .LayoutPopup__body {
@@ -11535,7 +11533,7 @@ html .Page .PatientDetailsLayout {
       .LayoutPopup__body__content > .MinHeightMedium {
         min-height: 500px; }
   .LayoutPopup__footer {
-    padding: 0 32px 32px; }
+    padding: 0 32px 16px 32px; }
   .LayoutPopup_wrapper {
     width: 100%; }
 
@@ -19294,15 +19292,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .CardsWrapper__HeaderTitle {
     -webkit-box-flex: 1;
             flex: 1; }
-  .CardsWrapper__Content .CardWarning, .CardsWrapper__ContentCustom .CardWarning {
-    color: #777777;
-    display: -webkit-box;
-    display: flex;
-    gap: 16px; }
-    .CardsWrapper__Content .CardWarning .icon, .CardsWrapper__ContentCustom .CardWarning .icon {
-      color: #ffa000;
-      font-size: 1.143em;
-      margin: 0 2px; }
   .CardsWrapper__Content {
     padding: 16px;
     padding-bottom: 0; }
@@ -19333,6 +19322,16 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     border-left-color: transparent;
     border-radius: 0;
     border-right-color: transparent; }
+
+.CardWarning {
+  color: #777777;
+  display: -webkit-box;
+  display: flex;
+  gap: 16px; }
+  .CardWarning .icon {
+    color: #ffa000;
+    font-size: 1.143em;
+    margin: 0 2px; }
 
 .MainInteractiveCard:not(.isOpen).ShowEntireTitle .MainInteractiveCard-header-text-title {
   max-height: initial;
@@ -22083,7 +22082,7 @@ div.List-Star {
       cursor: pointer;
       height: 20px;
       right: 30px;
-      top: 30px;
+      top: 16px;
       width: 14px; }
       .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close:after {
         color: #333333;
