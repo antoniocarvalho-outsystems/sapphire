@@ -14,10 +14,6 @@ $color-low-dark: darken($regular-yellow, 10%);
 $color-low-medium: lighten($regular-yellow, 33%);
 $color-low-light: lighten($regular-yellow, 40%);
 
-$color-low-dark: darken($regular-yellow, 10%);
-$color-low-medium: lighten($regular-yellow, 33%);
-$color-low-light: lighten($regular-yellow, 40%);
-
 $color-info-dark: $regular-blue;
 $color-info-medium: lighten($regular-blue, 48%);
 $color-info-light: lighten($regular-blue, 53%);
@@ -209,5 +205,50 @@ $color-unknown-light: lighten($body-color, 3%);
 
 	&.Unknown {
 		@include content-themed($color-unknown-dark, $color-unknown-medium, $color-unknown-light);
+	}
+}
+
+.PrescriptionCardList {
+	.PrescriptionCard {
+		border-bottom-color: transparent;
+		border-radius: 0;
+	}
+
+	> *:first-child .PrescriptionCard {
+		border-top-left-radius: $border-radius-medium;
+		border-top-right-radius: $border-radius-medium;
+	}
+
+	> *:last-child .PrescriptionCard {
+		border-bottom-color: $light-grey;
+		border-bottom-left-radius: $border-radius-medium;
+		border-bottom-right-radius: $border-radius-medium;
+	}
+}
+
+// Segmented Control Custom
+.SegmentedControl.Filters .SegmentedControlItem {
+	&.Critical > input[type='radio']:checked ~ label {
+		background-color: $color-critical-dark;
+	}
+
+	&.High > input[type='radio']:checked ~ label {
+		background-color: $color-high-dark;
+	}
+
+	&.Moderate > input[type='radio']:checked ~ label {
+		background-color: $color-moderate-dark;
+	}
+
+	&.Low > input[type='radio']:checked ~ label {
+		background-color: $color-low-dark;
+	}
+
+	&.Info > input[type='radio']:checked ~ label {
+		background-color: $color-info-dark;
+	}
+
+	&.Unknown > input[type='radio']:checked ~ label {
+		background-color: $color-unknown-dark;
 	}
 }
