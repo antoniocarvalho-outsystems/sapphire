@@ -22,7 +22,7 @@
 				max-width: 15px;
 				position: absolute;
 				right: $sapphire-sizes--xlarge;
-				top: $sapphire-sizes--xlarge;
+				top: 20px;
 			}
 		}
 
@@ -34,7 +34,7 @@
 			display: block;
 			max-height: 80%;
 			min-width: 250px;
-			padding: $sapphire-sizes--large $sapphire-sizes--xlarge;
+			padding: $sapphire-sizes--medium $sapphire-sizes--xlarge;
 			position: fixed;
 			width: auto;
 			z-index: 60;
@@ -50,7 +50,7 @@
 			font-size: $font-size-heading2;
 			margin-left: -$sapphire-sizes--xlarge;
 			margin-right: -$sapphire-sizes--xlarge;
-			padding: 0 $sapphire-sizes--xlarge $sapphire-sizes--large $sapphire-sizes--xlarge;
+			padding: 0 $sapphire-sizes--xlarge $sapphire-sizes--medium $sapphire-sizes--xlarge;
 
 			&:empty {
 				content: '\00a0';
@@ -98,7 +98,7 @@
 }
 
 .CustomModalPopup {
-	margin: -$sapphire-sizes--large (-$sapphire-sizes--xlarge);
+	margin: -$sapphire-sizes--medium (-$sapphire-sizes--xlarge);
 	text-align: start;
 
 	&__Header,
