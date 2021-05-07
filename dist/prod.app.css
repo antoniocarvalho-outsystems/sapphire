@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111010 || Generated: Thu May 06 2021 17:22:06 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111011 || Generated: Fri May 07 2021 11:12:27 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19931,14 +19931,14 @@ body.confirmation-opened {
       max-width: 15px;
       position: absolute;
       right: 32px;
-      top: 32px; }
+      top: 20px; }
     .modalPopup.Open .modalPopup_container {
       background-color: #fff;
       border-radius: 8px;
       display: block;
       max-height: 80%;
       min-width: 250px;
-      padding: 24px 32px;
+      padding: 16px 32px;
       position: fixed;
       width: auto;
       z-index: 60; }
@@ -19950,7 +19950,7 @@ body.confirmation-opened {
       font-size: 1.429em;
       margin-left: -32px;
       margin-right: -32px;
-      padding: 0 32px 24px 32px; }
+      padding: 0 32px 16px 32px; }
       .modalPopup.Open .modalPopup_title:empty {
         content: '\00a0'; }
       .AR .modalPopup.Open .modalPopup_title {
@@ -19981,7 +19981,7 @@ body.confirmation-opened {
       text-align: right; }
 
 .CustomModalPopup {
-  margin: -24px -32px;
+  margin: -16px -32px;
   text-align: start; }
   .CustomModalPopup__Header, .CustomModalPopup__Footer {
     -webkit-box-align: center;
