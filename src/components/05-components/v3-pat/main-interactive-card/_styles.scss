@@ -328,6 +328,10 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		height: 20px;
 		line-height: $font-size-tiny;
 		width: 20px;
+
+		&--grey {
+			background-color: $mid-light-grey;
+		}
 	}
 
 	&__HeaderTitle {

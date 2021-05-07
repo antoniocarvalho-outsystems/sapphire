@@ -72,7 +72,7 @@
 			color: $regular-grey;
 			flex-direction: row-reverse;
 			gap: $sapphire-sizes--medium;
-			margin: 0 $sapphire-sizes--large;
+			margin-right: $sapphire-sizes--large;
 
 			.AR & {
 				flex-direction: row;

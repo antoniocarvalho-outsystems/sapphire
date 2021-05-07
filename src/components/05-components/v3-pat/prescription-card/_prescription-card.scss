@@ -84,7 +84,7 @@ $color-unknown-light: lighten($body-color, 3%);
 		height: 22px;
 
 		.PrescriptionCard___CompareIcon {
-			padding: 0 $sapphire-sizes--small;
+			padding: 0 $sapphire-sizes--xxsmall;
 
 			.icon-changeleft,
 			.icon-changeright {
@@ -112,6 +112,8 @@ $color-unknown-light: lighten($body-color, 3%);
 		}
 
 		.PrescriptionCard__ExpandIcon {
+			@include flex-center-vertically(inline-flex);
+
 			color: $regular-beta;
 			cursor: pointer;
 
@@ -140,7 +142,8 @@ $color-unknown-light: lighten($body-color, 3%);
 			}
 
 			&::after {
-				transform: rotate(90deg);
+				display: inline-block;
+				transform: rotate(180deg);
 			}
 		}
 

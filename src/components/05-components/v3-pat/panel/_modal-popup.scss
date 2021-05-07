@@ -32,7 +32,7 @@
 			background-color: $regular-white;
 			border-radius: $border-radius-medium;
 			display: block;
-			max-height: 80%;
+			max-height: 80vh;
 			min-width: 250px;
 			padding: $sapphire-sizes--medium $sapphire-sizes--xlarge;
 			position: fixed;
@@ -45,9 +45,9 @@
 		}
 
 		.modalPopup_title {
+			@extend .Heading2;
+
 			border-bottom: 1px solid $light-grey;
-			font-family: $font-family-latin-bold;
-			font-size: $font-size-heading2;
 			margin-left: -$sapphire-sizes--xlarge;
 			margin-right: -$sapphire-sizes--xlarge;
 			padding: 0 $sapphire-sizes--xlarge $sapphire-sizes--medium $sapphire-sizes--xlarge;
@@ -64,10 +64,22 @@
 		.modalPopup_content {
 			height: 100%;
 
+			> div {
+				display: flex;
+				flex-direction: column;
+				max-height: calc(80vh - 60px);
+			}
+
 			.Scrollable {
 				margin-right: -$sapphire-sizes--medium;
-				margin-top: $sapphire-sizes--large;
+
+				max-width: 900px;
+				overscroll-behavior: contain;
 				padding-right: $sapphire-sizes--small;
+
+				.ListRecords > *:first-child {
+					margin-top: $sapphire-sizes--large;
+				}
 
 				.AR & {
 					margin-left: -$sapphire-sizes--medium;
