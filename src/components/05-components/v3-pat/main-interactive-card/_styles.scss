@@ -173,6 +173,10 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 			.icon-star {
 				color: $regular-grey;
+
+				&:hover {
+					color: $regular-alpha;
+				}
 			}
 
 			.icon-star-full {
@@ -335,6 +339,8 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	}
 
 	&__HeaderTitle {
+		@extend .Heading3;
+
 		flex: 1;
 	}
 

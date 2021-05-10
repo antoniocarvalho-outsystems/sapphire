@@ -1,5 +1,5 @@
 .PatientSummary {
-	padding: $sapphire-sizes--large $sapphire-sizes--medium;
+	padding: $sapphire-sizes--large;
 }
 
 .SummaryCard {
@@ -52,10 +52,11 @@
 			.ExpandableSmaller_Title {
 				flex: 1;
 			}
+		}
 
-			.ExpandableSmaller__headerIcon {
-				display: none;
-			}
+		.ListRecordsMediumGap > *:not(:last-child) {
+			border-bottom: 1px solid $light-grey;
+			padding-bottom: $sapphire-sizes--medium;
 		}
 	}
 }

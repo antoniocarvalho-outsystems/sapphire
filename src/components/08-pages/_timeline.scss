@@ -1,6 +1,7 @@
 .TimelinePage {
 	display: flex;
 	gap: $sapphire-sizes--large;
+	padding: $sapphire-sizes--small $sapphire-sizes--large;
 
 	&__Title {
 		background-color: $body-color;
