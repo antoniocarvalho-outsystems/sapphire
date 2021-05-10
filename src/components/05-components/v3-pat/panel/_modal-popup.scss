@@ -71,8 +71,7 @@
 			}
 
 			.Scrollable {
-				margin-right: -$sapphire-sizes--medium;
-
+				margin-right: -$sapphire-sizes--small;
 				max-width: 900px;
 				overscroll-behavior: contain;
 				padding-right: $sapphire-sizes--small;
@@ -82,7 +81,7 @@
 				}
 
 				.AR & {
-					margin-left: -$sapphire-sizes--medium;
+					margin-left: -$sapphire-sizes--small;
 					margin-right: 0;
 					padding-left: $sapphire-sizes--small;
 					padding-right: 0;

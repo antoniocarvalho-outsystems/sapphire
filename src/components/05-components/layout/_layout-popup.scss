@@ -46,9 +46,14 @@
 		&__content {
 			@include component-scroll-root;
 
+			margin-top: -$sapphire-sizes--xlarge;
 			overflow-y: scroll;
 			padding-right: 5px;
 			width: 100%;
+
+			> *:first-child {
+				margin-top: $sapphire-sizes--xlarge;
+			}
 
 			> .MinHeightSmall {
 				min-height: 420px;
