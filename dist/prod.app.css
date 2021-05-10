@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111015 || Generated: Mon May 10 2021 14:17:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111016 || Generated: Mon May 10 2021 17:15:57 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4458,7 +4458,7 @@ a.Button.ArrowDrop:before,
   font-weight: normal;
   line-height: 1.2; }
 
-.Heading3 {
+.Heading3, .CardsWrapper__HeaderTitle {
   font-family: "LatoBold";
   font-size: 1.286em;
   font-weight: normal;
@@ -4476,6 +4476,7 @@ a.Button.ArrowDrop:before,
 .AR .modalPopup.Open .modalPopup_title,
 .modalPopup.Open .AR .modalPopup_title,
 .AR .Heading3,
+.AR .CardsWrapper__HeaderTitle,
 .AR .Heading4,
 .AR .Heading5 {
   font-family: "TajawalBold"; }
@@ -4488,7 +4489,7 @@ a.Button.ArrowDrop:before,
   font-size: 1.286em;
   line-height: 1.11; }
 
-.tablet .Heading3 {
+.tablet .Heading3, .tablet .CardsWrapper__HeaderTitle {
   font-size: 1.143em;
   line-height: 1.12; }
 
@@ -9012,7 +9013,7 @@ div.LineInfo {
   margin-left: 10px; }
 
 .PatientSummary {
-  padding: 24px 16px; }
+  padding: 24px; }
 
 .SummaryCard {
   background-color: #fff;
@@ -9060,8 +9061,9 @@ div.LineInfo {
       .SummaryCard__Content .ExpandableSmaller .ExpandableSmaller_Title {
         -webkit-box-flex: 1;
                 flex: 1; }
-      .SummaryCard__Content .ExpandableSmaller .ExpandableSmaller__headerIcon {
-        display: none; }
+    .SummaryCard__Content .ListRecordsMediumGap > *:not(:last-child) {
+      border-bottom: 1px solid #d6d6d6;
+      padding-bottom: 16px; }
 
 .pika-single {
   background-color: #fff;
@@ -15952,7 +15954,7 @@ div.CircledArrow {
     padding: 16px; }
   .DragDrop-droppable-items {
     display: none; }
-    .DragDrop-droppable-items .Heading3 {
+    .DragDrop-droppable-items .Heading3, .DragDrop-droppable-items .CardsWrapper__HeaderTitle {
       padding-left: 16px; }
 
 .DragDrop-draggable {
@@ -19195,6 +19197,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       pointer-events: all; }
       .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-selectable-trigger .icon-star {
         color: #777777; }
+        .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-selectable-trigger .icon-star:hover {
+          color: #00bfa5; }
       .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-selectable-trigger .icon-star-full {
         color: #00bfa5; }
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
@@ -19677,6 +19681,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .MultipleSelectionFilterSmall .ButtonCheckboxInp .MultipleSelectionButton-label {
   font-size: 13px;
   height: 30px;
+  line-height: 30px;
   padding: 0 16px 0 40px; }
   .AR .MultipleSelectionFilterSmall .ButtonCheckboxInp .MultipleSelectionButton-label {
     padding: 0 40px 0 16px; }
@@ -26319,7 +26324,7 @@ div.SSD_ListLine {
       padding-left: 18px;
       white-space: normal;
       width: 73%; }
-      div.SSD_ListLine > div.LineHeader > div.Label span.Heading3 {
+      div.SSD_ListLine > div.LineHeader > div.Label span.Heading3, div.SSD_ListLine > div.LineHeader > div.Label span.CardsWrapper__HeaderTitle {
         display: inline; }
     div.SSD_ListLine > div.LineHeader > div.Icon:empty + div.Label {
       padding-left: 10px;
@@ -26381,7 +26386,7 @@ div.SSD_ListLine {
       color: #0c1d22;
       font-size: 1.4rem;
       padding: 5px; }
-      div.SSD_ListLine > div.LineHeader > div.Label span.Heading3 {
+      div.SSD_ListLine > div.LineHeader > div.Label span.Heading3, div.SSD_ListLine > div.LineHeader > div.Label span.CardsWrapper__HeaderTitle {
         display: inline; }
     div.SSD_ListLine > div.LineHeader > div.Icon:empty + div.Label {
       padding-left: 10px; }
@@ -28876,7 +28881,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
     font-size: 12px; }
   .Page .Text_Size13 {
     font-size: 13px; }
-  .Page .Text_Size14 {
+  .Page .TextSize14, .Page .Text_Size14 {
     font-size: 14px; }
   .Page .Text_Size15 {
     font-size: 15px; }
@@ -30271,11 +30276,11 @@ ul.os-internal-ui-autocomplete {
       background-color: #f3f3f3;
       border-left: 1px solid #d6d6d6;
       border-right: 1px solid #d6d6d6;
-      height: 13px;
+      height: 20px;
       margin-left: -17px;
-      margin-top: -17px;
+      margin-top: -20px;
       position: absolute;
-      width: 100%; }
+      width: calc(100% - 1px); }
       .AR .ClinicalDocumentTable .CustomTable tr.TableRowExpandable .TableRowExpandable_Content.ColFirst {
         margin-left: 0;
         margin-right: -17px; }
@@ -30710,7 +30715,8 @@ ul.os-internal-ui-autocomplete {
 .TimelinePage {
   display: -webkit-box;
   display: flex;
-  gap: 24px; }
+  gap: 24px;
+  padding: 8px 24px; }
   .TimelinePage__Title {
     background-color: #f3f3f3;
     box-sizing: content-box;
@@ -31483,6 +31489,7 @@ span[id*='RelatedVisitsRL'] :not(:first-child) .PersonCard_header {
 /*Layout AR*/
 .AR .HospitalizationPlan_Content .ScrollableContent,
 .AR .HospitalizationPlan_Content span .Heading3,
+.AR .HospitalizationPlan_Content span .CardsWrapper__HeaderTitle,
 .AR .HospitalizationPlan_Content .SelectableList-EmptyMessage,
 .AR .HospitalizationPlan_Content .InstructionContainer,
 .AR .HospitalizationPlan_Content .PatientInstructor_Accelerator,
@@ -42239,8 +42246,9 @@ html .AR.tablet .ThemeGrid_Width12 {
 .AR .Buttons_Right {
   text-align: left; }
 
-.FA .Panel__title.Heading3,
-.AR .Panel__title.Heading3 {
+.FA .Panel__title.Heading3, .FA .Panel__title.CardsWrapper__HeaderTitle,
+.AR .Panel__title.Heading3,
+.AR .Panel__title.CardsWrapper__HeaderTitle {
   text-align: right; }
 
 .FA .Panel__actions,
