@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111016 || Generated: Mon May 10 2021 17:15:57 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111017 || Generated: Mon May 10 2021 17:24:56 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -31006,10 +31006,10 @@ ul.os-internal-ui-autocomplete {
       gap: 16px;
       margin-bottom: 24px; }
     .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .TimelineDetail_leftContent {
-      padding-left: 38px; }
+      padding-left: 8px; }
       .AR .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .TimelineDetail_leftContent {
         padding-left: 0;
-        padding-right: 38px; }
+        padding-right: 8px; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .ExpandableContent:hover {
     background-color: #f3f3f3; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .SeparatorBorder:first-of-type {
