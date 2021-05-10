@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.111014 || Generated: Fri May 07 2021 17:12:11 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.111015 || Generated: Mon May 10 2021 14:17:59 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -4334,7 +4334,7 @@ body.confirmation-opened {
                 flex-direction: column;
         max-height: calc(80vh - 60px); }
       .modalPopup.Open .modalPopup_content .Scrollable {
-        margin-right: -16px;
+        margin-right: -8px;
         max-width: 900px;
         -ms-scroll-chaining: none;
             overscroll-behavior: contain;
@@ -4342,7 +4342,7 @@ body.confirmation-opened {
         .modalPopup.Open .modalPopup_content .Scrollable .ListRecords > *:first-child {
           margin-top: 24px; }
         .AR .modalPopup.Open .modalPopup_content .Scrollable {
-          margin-left: -16px;
+          margin-left: -8px;
           margin-right: 0;
           padding-left: 8px;
           padding-right: 0; }

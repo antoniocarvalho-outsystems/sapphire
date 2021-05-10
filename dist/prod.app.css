@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111014 || Generated: Fri May 07 2021 17:12:11 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111015 || Generated: Mon May 10 2021 14:17:59 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11528,6 +11528,7 @@ html .Page .PatientDetailsLayout {
       padding-right: 20px;
       width: 270px; }
     .LayoutPopup__body__content {
+      margin-top: -32px;
       overflow-y: scroll;
       padding-right: 5px;
       width: 100%; }
@@ -11538,6 +11539,8 @@ html .Page .PatientDetailsLayout {
       .LayoutPopup__body__content::-webkit-scrollbar-thumb {
         border: 5px solid #d6d6d6;
         border-radius: 4px; }
+      .LayoutPopup__body__content > *:first-child {
+        margin-top: 32px; }
       .LayoutPopup__body__content > .MinHeightSmall {
         min-height: 420px; }
       .LayoutPopup__body__content > .MinHeightMedium {
@@ -19984,7 +19987,7 @@ body.confirmation-opened {
                 flex-direction: column;
         max-height: calc(80vh - 60px); }
       .modalPopup.Open .modalPopup_content .Scrollable {
-        margin-right: -16px;
+        margin-right: -8px;
         max-width: 900px;
         -ms-scroll-chaining: none;
             overscroll-behavior: contain;
@@ -19992,7 +19995,7 @@ body.confirmation-opened {
         .modalPopup.Open .modalPopup_content .Scrollable .ListRecords > *:first-child {
           margin-top: 24px; }
         .AR .modalPopup.Open .modalPopup_content .Scrollable {
-          margin-left: -16px;
+          margin-left: -8px;
           margin-right: 0;
           padding-left: 8px;
           padding-right: 0; }
