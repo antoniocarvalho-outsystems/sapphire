@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111019 || Generated: Tue May 11 2021 12:10:17 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111020 || Generated: Tue May 11 2021 12:12:49 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -28886,7 +28886,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
     font-size: 14px; }
   .Page .Text_Size15 {
     font-size: 15px; }
-  .Page .Text_Size16 {
+  .Page .TextSize16, .Page .Text_Size16 {
     font-size: 16px; }
   .Page .Text_Size17 {
     font-size: 17px; }
