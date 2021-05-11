@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111017 || Generated: Mon May 10 2021 17:24:56 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111018 || Generated: Tue May 11 2021 10:08:36 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11309,7 +11309,7 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   background-color: #ebebeb;
   border-left: 1px solid #d6d6d6;
   display: inline-block;
-  padding: 0 24px;
+  padding: 0 16px;
   position: relative;
   vertical-align: top;
   width: 33%; }
@@ -14390,7 +14390,7 @@ div.CircledArrow {
   height: 40px;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  padding: 8px 16px; }
+  padding: 8px 12px; }
   .CollapsibleSidePanel__Header .icon {
     color: #777777; }
   .AR .CollapsibleSidePanel__Header .icon {
@@ -14440,7 +14440,6 @@ div.CircledArrow {
 
 .CollapsibleSidePanel__Content {
   background-color: #fff;
-  border: 1px solid #d6d6d6;
   height: auto;
   height: 100%;
   margin: -16px;
@@ -14481,7 +14480,7 @@ div.CircledArrow {
       width: 32px; }
   .CollapsibleSidePanel__Content .SectionExpandableInside {
     border: 1px solid #d6d6d6;
-    border-radius: 16px;
+    border-radius: 8px;
     margin-bottom: 16px;
     overflow: hidden; }
     .CollapsibleSidePanel__Content .SectionExpandableInside.expanded .SectionExpandableInside_content {
@@ -14522,6 +14521,8 @@ div.CircledArrow {
     .CollapsibleSidePanel__Content .SectionExpandableInside .PlaceHolderActions > div {
       margin-left: unset !important;
       padding: unset; }
+    .CollapsibleSidePanel__Content .SectionExpandableInside .RightAllPlaceDiv > div:empty {
+      display: none; }
   .AR .CollapsibleSidePanel__Content {
     left: 16px;
     right: unset; }
@@ -23767,7 +23768,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .SectionExpandableInside .ExapandablePlaceholder {
     color: #333333;
     font-family: "LatoBold";
-    margin-right: 10px; }
+    margin-right: 8px; }
     .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon {
       border-bottom: 5px solid #00ac94;
       border-left: 5px solid transparent;
