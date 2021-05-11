@@ -33,6 +33,8 @@
 20 .PanelBackground.ConfirmWB
 20 .modalPopup
 
+19 .LayoutBase-secondary
+
 6 .LayoutBase-Content .LayoutBase-secondary.isFixed
 
 5 body.LayoutBase .tooltipster-base.tooltipster-location--Content

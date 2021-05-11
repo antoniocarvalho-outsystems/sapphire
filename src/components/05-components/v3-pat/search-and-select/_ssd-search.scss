@@ -306,6 +306,7 @@ $searchsd-small-size-base: 36px;
 						pointer-events: none;
 						position: absolute;
 						width: $searchsd-size-base;
+						z-index: 0;
 					}
 				}
 			}

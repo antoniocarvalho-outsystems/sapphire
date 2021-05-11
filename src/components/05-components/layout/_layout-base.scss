@@ -115,13 +115,13 @@
 		.LayoutBase-secondary {
 			border-bottom: 1px solid $light-grey;
 			display: flex;
-			position: static;
+			position: sticky;
+			top: 50px;
+			z-index: 19;
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;
 				border-top: solid 2px $light-grey;
-				position: fixed;
-				z-index: 6;
 
 				&.noToolbar {
 					background: none;
@@ -230,7 +230,8 @@
 				}
 
 				.MenuItemWrapper {
-					padding: 0 12px;
+					padding-bottom: 0;
+					padding-top: 0;
 
 					&.Active .MenuItemWrapper_Container {
 						height: 41px;
@@ -266,17 +267,19 @@
 		}
 
 		.LayoutBase-secondary-aside {
-			background-color: #fff;
+			background-color: $regular-white;
 			border-left: 1px solid $light-grey;
 			width: 33%;
 		}
 
 		.LayoutBase-emergency {
 			background-color: $sapphire-light-container;
+			position: sticky;
+			top: 80px;
+			z-index: 19;
 
-			&.isFixed {
-				position: fixed;
-				z-index: 7;
+			&:not(:empty) + .LayoutBase-secondary {
+				top: 150px;
 			}
 		}
 	}
@@ -291,9 +294,10 @@
 			height: 100%;
 
 			> div.ContextButtons {
-				align-items: center;
-				display: flex;
+				@include flex-center-vertically();
+
 				height: 100%;
+				overflow: visible;
 
 				&.FlexColumn {
 					flex-direction: column;
@@ -306,6 +310,11 @@
 					div:first-child {
 						margin-bottom: 5px;
 					}
+				}
+
+				.TopInfo__OrderSet {
+					position: sticky;
+					top: 90px;
 				}
 			}
 

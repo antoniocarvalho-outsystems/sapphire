@@ -29,19 +29,13 @@
 					const isEmergency = !!$('.LayoutBase-emergency').text();
 
 					const headerHeight = $('.SapphireHeader').height();
-					const primaryHeight = isFixed ? 0 : $('.LayoutBase-primary-menu').height();
-					const secondaryHeight = $('.LayoutBase-secondary').height();
+					const secondaryHeight = $('.LayoutBase-secondary').outerHeight();
 					const emergencyHeight = isEmergency ? $('.LayoutBase-emergency').height() : 0;
-					const offsetTop = headerHeight + primaryHeight + secondaryHeight + emergencyHeight + offset;
 
-					if (isEmergency & !isFixed) {
-						targetElementOffsetTop -= offsetTop + 60;
-					} else {
-						if (targetElementOffsetTop - offsetTop > 40) targetElementOffsetTop -= offsetTop;
-						else targetElementOffsetTop -= offsetTop - 44;
-					}
+					const secondaryFixed = isFixed ? secondaryHeight : secondaryHeight - 26;
+					targetElementOffsetTop = targetElementOffsetTop - (headerHeight + secondaryFixed + emergencyHeight);
 
-					$('body, html').scrollTop(targetElementOffsetTop - 8);
+					$('body, html').scrollTop(targetElementOffsetTop);
 				}
 			}, 250);
 		}
@@ -120,88 +114,17 @@
 	};
 
 	LayoutBase.prototype.handleOptionalContainers = function() {
-		var scrollTop = $(window).scrollTop();
+		const scrollTop = $(window).scrollTop();
+		const isEmergency = !!$('.LayoutBase-emergency').text();
 
-		if (this.$emergency.length === 1) {
-			if (scrollTop + this.contentThreshold > this.emergencyThreshold) {
-				this.$emergency.addClass('isFixed');
-				this.$emergency.css({
-					top: this.contentThreshold,
-					width: this.$header.width(),
-				});
-				this.extraPaddingEmergency = this.$emergency.outerHeight(true);
-			} else {
-				this.$emergency.removeClass('isFixed');
-				this.$emergency.css({
-					top: 'auto',
-					width: '100%',
-				});
-				this.extraPaddingEmergency = 0;
-			}
-		}
+		if (scrollTop >= 80) {
+			this.$secondary.addClass('isFixed');
 
-		if (this.$secondary.length === 1 && this.$secondary.text().length > 0) {
-			const eventToolbar = new CustomEvent('ToolbarFixed');
-			const hasClass = this.$secondary.hasClass('isFixed');
+			this.$secondary.css('top', isEmergency ? '150px' : '80px');
+		} else {
+			this.$secondary.removeClass('isFixed');
 
-			if (this.$secondaryMenu.text().length === 0) {
-				this.$secondary.addClass('noToolbar');
-			}
-
-			if (scrollTop + this.contentThreshold + (this.$emergency.outerHeight(true) || 0) > this.secondaryThreshold) {
-				this.$secondary.addClass('isFixed').css({
-					top: this.contentThreshold + (this.$emergency.outerHeight(true) || 0),
-					width: this.$header.width(),
-				});
-				this.$secondary
-					.find('.Button.Second, .Button.Third, .Button.Link')
-					.not('.Panel .Button.Small, .Panel .Button.Third')
-					.addClass('Small');
-				if (this.$secondary.find('.Toolbar').length === 1) {
-					var targetToolbarWidth = $('.SapphireHeader').outerWidth(true) * 0.66;
-					this.$secondary.find('.Toolbar').width(targetToolbarWidth);
-				}
-				if (this.$secondaryMenu.text().length === 0) {
-					this.$secondary.addClass('noToolbar');
-				}
-				this.$primaryMenu.css('opacity', 0);
-				this.extraPaddingSecondary = this.$secondary.outerHeight(true);
-
-				if (!hasClass) window.dispatchEvent(eventToolbar);
-
-				// //
-				// var currentHeight = $('body')[0].scrollHeight;
-				// var compensation = this.referenceHeight - currentHeight;
-
-				// if (compensation <= 0) {
-				// 	// this.$layoutBaseContent.css('padding-bottom', '');
-				// } else {
-				// 	this.$layoutBaseContent.css('padding-bottom', compensation);
-				// }
-			} else {
-				// this.$layoutBaseContent.css('padding-bottom', '');
-
-				this.$secondary.removeClass('isFixed').css({
-					top: 'auto',
-					width: '100%',
-				});
-				this.$secondary.find('.Button.Second, .Button.Third, .Button.Link').removeClass('Small');
-				this.$primaryMenu.css('opacity', 1);
-				this.$secondary.css({
-					height: 'unset',
-				});
-				this.$secondary.find('.Toolbar').css('width', '100%');
-				this.extraPaddingSecondary = 0;
-
-				window.dispatchEvent(eventToolbar);
-			}
-
-			if (this.$secondaryMenu.text().length > 0) {
-				this.$widget.find('.ClinicianWorkArea-columns-big').css('margin-top', 'unset');
-			} else {
-				this.$widget.find('.ClinicianWorkArea-columns-big').css('margin-top', -this.$secondary.outerHeight(true));
-				this.$secondaryMenu.css('background-color', 'transparent');
-			}
+			this.$secondary.css('top', isEmergency ? '150px' : '50px');
 		}
 	};
 

@@ -21,7 +21,7 @@
 
 				setTimeout(() => {
 					$('.CollapsibleSidePanel__Content').css('display', 'none');
-				}, 800);
+				}, 500);
 			}
 		}
 
