@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111020 || Generated: Tue May 11 2021 12:12:49 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111021 || Generated: Tue May 11 2021 13:05:51 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14439,7 +14439,7 @@ div.CircledArrow {
 
 .CollapsibleSidePanel__Content {
   background-color: #fff;
-  height: auto;
+  display: none;
   height: 100%;
   margin: -16px;
   min-height: 100vh;
