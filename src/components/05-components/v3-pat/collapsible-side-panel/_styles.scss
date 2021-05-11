@@ -9,6 +9,11 @@
 				opacity: 1;
 			}
 		}
+
+		&__PanelHeader,
+		&__PanelContent {
+			padding: $sapphire-sizes--medium;
+		}
 	}
 
 	&--headerHidden {
@@ -16,13 +21,6 @@
 		padding: 0;
 		visibility: hidden;
 	}
-
-	// &--fixedMode & {
-	// 	&__Content {
-	// 		position: fixed;
-	// 		right: 56px;
-	// 	}
-	// }
 
 	&__Header {
 		@include flex-center-vertically;
@@ -73,7 +71,6 @@
 
 		border-bottom: 1px solid $light-grey;
 		justify-content: space-between;
-		padding: $sapphire-sizes--medium;
 
 		.icon {
 			cursor: pointer;
@@ -83,10 +80,6 @@
 	&__PanelTitle {
 		align-items: center;
 		gap: $sapphire-sizes--medium;
-	}
-
-	&__PanelContent {
-		padding: $sapphire-sizes--medium;
 	}
 
 	&__Content {

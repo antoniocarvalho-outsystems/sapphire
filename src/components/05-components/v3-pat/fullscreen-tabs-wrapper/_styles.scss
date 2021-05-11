@@ -38,7 +38,8 @@ $tab-height: 44px;
 	&:hover {
 		border-bottom-color: $regular-alpha;
 
-		.TabWrapper_tab a {
+		.TabWrapper_tab a,
+		.TabWrapper_icon .icon {
 			color: $regular-beta;
 		}
 	}
