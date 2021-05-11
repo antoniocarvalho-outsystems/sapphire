@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111018 || Generated: Tue May 11 2021 10:08:36 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111019 || Generated: Tue May 11 2021 12:10:17 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -9062,7 +9062,7 @@ div.LineInfo {
         -webkit-box-flex: 1;
                 flex: 1; }
     .SummaryCard__Content .ListRecordsMediumGap > *:not(:last-child) {
-      border-bottom: 1px solid #d6d6d6;
+      border-bottom: 1px solid #ebebeb;
       padding-bottom: 16px; }
 
 .pika-single {
@@ -14373,6 +14373,9 @@ div.CircledArrow {
   .CollapsibleSidePanel--open .CollapsibleSidePanel__Content * {
     opacity: 1; }
 
+.CollapsibleSidePanel--open .CollapsibleSidePanel__PanelHeader, .CollapsibleSidePanel--open .CollapsibleSidePanel__PanelContent {
+  padding: 16px; }
+
 .CollapsibleSidePanel--headerHidden {
   height: 0;
   padding: 0;
@@ -14425,8 +14428,7 @@ div.CircledArrow {
   display: flex;
   border-bottom: 1px solid #d6d6d6;
   -webkit-box-pack: justify;
-          justify-content: space-between;
-  padding: 16px; }
+          justify-content: space-between; }
   .CollapsibleSidePanel__PanelHeader .icon {
     cursor: pointer; }
 
@@ -14434,9 +14436,6 @@ div.CircledArrow {
   -webkit-box-align: center;
           align-items: center;
   gap: 16px; }
-
-.CollapsibleSidePanel__PanelContent {
-  padding: 16px; }
 
 .CollapsibleSidePanel__Content {
   background-color: #fff;
@@ -17141,7 +17140,8 @@ div.CircledArrow {
   text-align: center; }
   .TabWrapper:hover {
     border-bottom-color: #00bfa5; }
-    .TabWrapper:hover .TabWrapper_tab a {
+    .TabWrapper:hover .TabWrapper_tab a,
+    .TabWrapper:hover .TabWrapper_icon .icon {
       color: #00ac94; }
   .TabWrapper .TabWrapper_tab a {
     color: #777777;
