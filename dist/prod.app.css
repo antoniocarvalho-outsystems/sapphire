@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111021 || Generated: Tue May 11 2021 13:05:51 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111022 || Generated: Tue May 11 2021 16:51:39 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11052,12 +11052,13 @@ div.NoPrompt > div.template-item-input-block {
   border-bottom: 1px solid #d6d6d6;
   display: -webkit-box;
   display: flex;
-  position: static; }
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  z-index: 19; }
   .LayoutBase-Content .LayoutBase-secondary.isFixed {
     border-bottom: solid 2px #d6d6d6;
-    border-top: solid 2px #d6d6d6;
-    position: fixed;
-    z-index: 6; }
+    border-top: solid 2px #d6d6d6; }
     .LayoutBase-Content .LayoutBase-secondary.isFixed.noToolbar {
       background: none;
       border-bottom: none; }
@@ -11117,7 +11118,8 @@ div.NoPrompt > div.template-item-input-block {
   .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .Toolbar__Items a {
     height: 40px; }
   .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .MenuItemWrapper {
-    padding: 0 12px; }
+    padding-bottom: 0;
+    padding-top: 0; }
     .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
       height: 41px; }
     .LayoutBase-Content .LayoutBase-secondary.isFixed .Toolbar .MenuItemWrapper .MenuItemWrapper__icon {
@@ -11144,10 +11146,13 @@ div.NoPrompt > div.template-item-input-block {
   width: 33%; }
 
 .LayoutBase-Content .LayoutBase-emergency {
-  background-color: #ebebeb; }
-  .LayoutBase-Content .LayoutBase-emergency.isFixed {
-    position: fixed;
-    z-index: 7; }
+  background-color: #ebebeb;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  z-index: 19; }
+  .LayoutBase-Content .LayoutBase-emergency:not(:empty) + .LayoutBase-secondary {
+    top: 150px; }
 
 .LayoutBase-secondary-aside .ResumeDetails {
   height: 100%;
@@ -11160,7 +11165,8 @@ div.NoPrompt > div.template-item-input-block {
             align-items: center;
     display: -webkit-box;
     display: flex;
-    height: 100%; }
+    height: 100%;
+    overflow: visible; }
     .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumn, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterFull, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterVertical, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterHorizontal, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceAround, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceBetween, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceEvenly, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnStart, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnEnd {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -11170,6 +11176,10 @@ div.NoPrompt > div.template-item-input-block {
         width: 100%; }
       .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumn div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterFull div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterVertical div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterHorizontal div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceAround div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceBetween div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceEvenly div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnStart div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnEnd div:first-child {
         margin-bottom: 5px; }
+    .LayoutBase-secondary-aside .TopInfo > div.ContextButtons .TopInfo__OrderSet {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 90px; }
   .LayoutBase-secondary-aside .TopInfo__Actions {
     -webkit-box-flex: 1;
             flex: 1;
@@ -22859,7 +22869,8 @@ div.List-Star {
             height: 100%;
             pointer-events: none;
             position: absolute;
-            width: 48px; }
+            width: 48px;
+            z-index: 0; }
     .SearchSD .SearchSD_search .SearchSD__FavoriteActions {
       border: 0;
       max-width: 0;
