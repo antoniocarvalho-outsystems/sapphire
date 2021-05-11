@@ -33,7 +33,7 @@
 		cursor: pointer;
 		height: 40px;
 		justify-content: space-between;
-		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+		padding: $sapphire-sizes--small 12px;
 
 		.icon {
 			color: $regular-grey;
@@ -91,7 +91,6 @@
 
 	&__Content {
 		background-color: $regular-white;
-		border: 1px solid $light-grey;
 		height: auto;
 		height: 100%;
 		margin: -$sapphire-sizes--medium;
@@ -147,7 +146,7 @@
 
 		.SectionExpandableInside {
 			border: 1px solid $light-grey;
-			border-radius: $sapphire-sizes--medium;
+			border-radius: $sapphire-sizes--small;
 			margin-bottom: $sapphire-sizes--medium;
 			overflow: hidden;
 
@@ -205,6 +204,10 @@
 			.PlaceHolderActions > div {
 				margin-left: unset !important;
 				padding: unset;
+			}
+
+			.RightAllPlaceDiv > div:empty {
+				display: none;
 			}
 		}
 

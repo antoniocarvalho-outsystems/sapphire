@@ -64,7 +64,7 @@
 	.ExapandablePlaceholder {
 		color: $dark-grey;
 		font-family: $font-family-latin-bold;
-		margin-right: 10px;
+		margin-right: $sapphire-sizes--small;
 
 		&.HeaderIcon .icon {
 			@include arrow-down-simple;
