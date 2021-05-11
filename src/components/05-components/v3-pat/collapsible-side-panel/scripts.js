@@ -11,9 +11,17 @@
 
 		openCloseSidePanel(toOpen) {
 			if (toOpen) {
-				this.$component.addClass('CollapsibleSidePanel--open');
+				this.$content.css('display', 'block');
+
+				setTimeout(() => {
+					this.$component.addClass('CollapsibleSidePanel--open');
+				}, 50);
 			} else {
 				this.$component.removeClass('CollapsibleSidePanel--open');
+
+				setTimeout(() => {
+					$('.CollapsibleSidePanel__Content').css('display', 'none');
+				}, 800);
 			}
 		}
 

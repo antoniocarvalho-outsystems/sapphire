@@ -84,7 +84,7 @@
 
 	&__Content {
 		background-color: $regular-white;
-		height: auto;
+		display: none;
 		height: 100%;
 		margin: -$sapphire-sizes--medium;
 		min-height: 100vh;
