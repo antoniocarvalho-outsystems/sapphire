@@ -116,7 +116,7 @@
 			border-bottom: 1px solid $light-grey;
 			display: flex;
 			position: sticky;
-			top: 50px;
+			top: 0;
 			z-index: 19;
 
 			&.isFixed {
@@ -312,10 +312,10 @@
 					}
 				}
 
-				.TopInfo__OrderSet {
+				/*.TopInfo__OrderSet {
 					position: sticky;
 					top: 90px;
-				}
+				}*/
 			}
 
 			&__Actions {

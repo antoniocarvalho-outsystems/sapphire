@@ -117,14 +117,17 @@
 		const scrollTop = $(window).scrollTop();
 		const isEmergency = !!$('.LayoutBase-emergency').text();
 
-		if (scrollTop >= 80) {
+		if (scrollTop >= 120) {
 			this.$secondary.addClass('isFixed');
 
-			this.$secondary.css('top', isEmergency ? '150px' : '80px');
-		} else {
+			//this.$secondary.css('top', isEmergency ? '150px' : '80px');
+
+			this.$secondary.animate({ top: '80px' }, 500);
+		} else if (scrollTop === 0) {
 			this.$secondary.removeClass('isFixed');
 
-			this.$secondary.css('top', isEmergency ? '150px' : '50px');
+			//this.$secondary.css('top', isEmergency ? '150px' : '0');
+			this.$secondary.animate({ top: '0' }, 500);
 		}
 	};
 
