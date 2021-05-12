@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111022 || Generated: Tue May 11 2021 16:51:39 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111023 || Generated: Wed May 12 2021 15:23:04 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11054,7 +11054,7 @@ div.NoPrompt > div.template-item-input-block {
   display: flex;
   position: -webkit-sticky;
   position: sticky;
-  top: 50px;
+  top: 0;
   z-index: 19; }
   .LayoutBase-Content .LayoutBase-secondary.isFixed {
     border-bottom: solid 2px #d6d6d6;
@@ -11166,7 +11166,11 @@ div.NoPrompt > div.template-item-input-block {
     display: -webkit-box;
     display: flex;
     height: 100%;
-    overflow: visible; }
+    overflow: visible;
+    /*.TopInfo__OrderSet {
+					position: sticky;
+					top: 90px;
+				}*/ }
     .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumn, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterFull, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterVertical, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterHorizontal, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceAround, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceBetween, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceEvenly, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnStart, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnEnd {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -11176,10 +11180,6 @@ div.NoPrompt > div.template-item-input-block {
         width: 100%; }
       .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumn div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterFull div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterVertical div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterHorizontal div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceAround div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceBetween div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceEvenly div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnStart div:first-child, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnEnd div:first-child {
         margin-bottom: 5px; }
-    .LayoutBase-secondary-aside .TopInfo > div.ContextButtons .TopInfo__OrderSet {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 90px; }
   .LayoutBase-secondary-aside .TopInfo__Actions {
     -webkit-box-flex: 1;
             flex: 1;
