@@ -1,27 +1,30 @@
+$timeline-sticky-top-primary: 125px;
+$timeline-sticky-top-secondary: 185px;
+
 .TimelinePage {
 	display: flex;
 	gap: $sapphire-sizes--large;
-	padding: $sapphire-sizes--small $sapphire-sizes--large;
+	padding: 0 $sapphire-sizes--large $sapphire-sizes--large;
 
 	&__Title {
 		background-color: $body-color;
 		box-sizing: content-box;
 		height: 36px;
 		padding: 0 $sapphire-sizes--small;
-		padding-top: $sapphire-sizes--medium;
+		padding-top: $sapphire-sizes--large;
 		position: sticky;
-		top: 80px;
+		top: $timeline-sticky-top-primary;
 		z-index: 1;
 	}
 
 	&__Navigation {
 		position: sticky;
-		top: 132px;
+		top: $timeline-sticky-top-secondary;
 
 		.ListRecords {
 			@include component-scroll-root(4px, false, 4px);
 
-			height: calc(100vh - 132px);
+			height: calc(100vh - $timeline-sticky-top-secondary);
 			overflow-y: scroll;
 			overscroll-behavior: contain;
 			padding-right: $sapphire-sizes--small;
@@ -66,9 +69,9 @@
 
 		background-color: $body-color;
 		gap: $sapphire-sizes--small;
-		padding-top: $sapphire-sizes--medium;
+		padding-top: $sapphire-sizes--large;
 		position: sticky;
-		top: 80px;
+		top: $timeline-sticky-top-primary;
 		z-index: 3;
 
 		.TimeLineSearchHeader {
@@ -81,7 +84,7 @@
 
 		.LineTimeLine__Header {
 			position: sticky;
-			top: 174px;
+			top: 227px;
 			z-index: 1;
 		}
 	}

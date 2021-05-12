@@ -110,6 +110,16 @@
 			background-color: $regular-white;
 			border-bottom: 1px solid $light-grey;
 			padding: 0 $sapphire-sizes--medium;
+
+			&.isFixed {
+				position: sticky;
+				top: 80px;
+				z-index: 19;
+
+				~ .LayoutBase-secondary {
+					display: none;
+				}
+			}
 		}
 
 		.LayoutBase-secondary {
@@ -118,9 +128,6 @@
 			position: sticky;
 			top: 80px;
 			z-index: 19;
-
-			&.isFixedTest {
-			}
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;
