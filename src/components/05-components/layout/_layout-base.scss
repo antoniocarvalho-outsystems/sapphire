@@ -116,8 +116,11 @@
 			border-bottom: 1px solid $light-grey;
 			display: flex;
 			position: sticky;
-			top: 0;
+			top: 80px;
 			z-index: 19;
+
+			&.isFixedTest {
+			}
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;
@@ -279,7 +282,7 @@
 			z-index: 19;
 
 			&:not(:empty) + .LayoutBase-secondary {
-				top: 150px;
+				top: 149px;
 			}
 		}
 	}
