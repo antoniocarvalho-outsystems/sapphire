@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111024 || Generated: Wed May 12 2021 16:48:45 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111025 || Generated: Wed May 12 2021 17:46:17 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11047,6 +11047,13 @@ div.NoPrompt > div.template-item-input-block {
   background-color: #fff;
   border-bottom: 1px solid #d6d6d6;
   padding: 0 16px; }
+  .LayoutBase-Content .LayoutBase-primary-menu.isFixed {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    z-index: 19; }
+    .LayoutBase-Content .LayoutBase-primary-menu.isFixed ~ .LayoutBase-secondary {
+      display: none; }
 
 .LayoutBase-Content .LayoutBase-secondary {
   border-bottom: 1px solid #d6d6d6;
@@ -27228,7 +27235,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   padding-top: 16px;
   position: -webkit-sticky;
   position: sticky;
-  top: 132px;
+  top: 185px;
   z-index: 2; }
 
 .LineSubTimeLine {
@@ -30728,23 +30735,23 @@ ul.os-internal-ui-autocomplete {
   display: -webkit-box;
   display: flex;
   gap: 24px;
-  padding: 8px 24px; }
+  padding: 0 24px 24px; }
   .TimelinePage__Title {
     background-color: #f3f3f3;
     box-sizing: content-box;
     height: 36px;
     padding: 0 8px;
-    padding-top: 16px;
+    padding-top: 24px;
     position: -webkit-sticky;
     position: sticky;
-    top: 80px;
+    top: 125px;
     z-index: 1; }
   .TimelinePage__Navigation {
     position: -webkit-sticky;
     position: sticky;
-    top: 132px; }
+    top: 185px; }
     .TimelinePage__Navigation .ListRecords {
-      height: calc(100vh - 132px);
+      height: calc(100vh - $timeline-sticky-top-secondary);
       overflow-y: scroll;
       -ms-scroll-chaining: none;
           overscroll-behavior: contain;
@@ -30781,10 +30788,10 @@ ul.os-internal-ui-autocomplete {
     display: flex;
     background-color: #f3f3f3;
     gap: 8px;
-    padding-top: 16px;
+    padding-top: 24px;
     position: -webkit-sticky;
     position: sticky;
-    top: 80px;
+    top: 125px;
     z-index: 3; }
     .TimelinePage__Filters .TimeLineSearchHeader {
       min-width: 420px; }
@@ -30793,7 +30800,7 @@ ul.os-internal-ui-autocomplete {
     .TimelinePage__Content .LineTimeLine__Header {
       position: -webkit-sticky;
       position: sticky;
-      top: 174px;
+      top: 227px;
       z-index: 1; }
   .TimelinePage__LoadingMore {
     -webkit-box-align: center;
