@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111023 || Generated: Wed May 12 2021 15:23:04 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111024 || Generated: Wed May 12 2021 16:48:45 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11054,7 +11054,7 @@ div.NoPrompt > div.template-item-input-block {
   display: flex;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 80px;
   z-index: 19; }
   .LayoutBase-Content .LayoutBase-secondary.isFixed {
     border-bottom: solid 2px #d6d6d6;
@@ -11152,7 +11152,7 @@ div.NoPrompt > div.template-item-input-block {
   top: 80px;
   z-index: 19; }
   .LayoutBase-Content .LayoutBase-emergency:not(:empty) + .LayoutBase-secondary {
-    top: 150px; }
+    top: 149px; }
 
 .LayoutBase-secondary-aside .ResumeDetails {
   height: 100%;
