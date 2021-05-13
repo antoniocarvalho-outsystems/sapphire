@@ -102,6 +102,12 @@
 	}
 }
 
+// Used in the patient visit context (e.g. Progress Notes)
+.PageButtonAction {
+	margin-top: -58px;
+	min-height: 36px;
+}
+
 .tablet {
 	.FiltersWrapper {
 		flex-direction: column-reverse;

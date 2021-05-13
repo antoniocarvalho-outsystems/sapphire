@@ -19,6 +19,10 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		.MainInteractiveCard-header {
 			border-bottom: 1px solid $light-grey;
 
+			.MainInteractiveCard-expand-icon {
+				transform: rotate(180deg);
+			}
+
 			.MainInteractiveCard-header-text {
 				overflow: hidden;
 			}
@@ -32,11 +36,11 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		}
 	}
 
-	&.isSelectable {
-		> .MainInteractiveCard-header {
-			gap: $sapphire-sizes--medium;
-		}
-	}
+	// &.isSelectable {
+	// 	> .MainInteractiveCard-header {
+	// 		gap: $sapphire-sizes--medium;
+	// 	}
+	// }
 
 	&.hasFloater {
 		&.isOpen {
@@ -150,15 +154,23 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		}
 	}
 
+	&.InitialBorderColor {
+		border-color: $light-grey;
+	}
+
 	.MainInteractiveCard-header {
 		@include flex-center-vertically();
 
 		flex-direction: row;
-		gap: $sapphire-sizes--xlarge;
+		gap: $sapphire-sizes--medium;
 		min-height: $sapphire-sizes--largest;
 		padding: $sapphire-sizes--medium;
 		pointer-events: none;
 		position: relative;
+
+		.MainInteractiveCard-expand-icon {
+			@include arrow-button($dark-grey, 20px, 0.7em);
+		}
 
 		.MainInteractiveCard-header-text {
 			cursor: auto;
@@ -235,6 +247,24 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 			}
 		}
 		/* To be used on an embedded Web Block page inside the card */
+
+		.TextClickable {
+			cursor: text;
+			display: flex;
+			gap: $sapphire-sizes--medium;
+
+			&::before {
+				color: transparent;
+				content: '\e60f';
+				font-family: $font-family-icons;
+				font-size: $font-size-heading3;
+				padding: 0 2px;
+			}
+
+			&:hover::before {
+				color: $mid-light-grey;
+			}
+		}
 	}
 
 	/* To avoid changes in nested cards */

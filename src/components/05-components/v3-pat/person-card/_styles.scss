@@ -50,6 +50,8 @@
 
 			.PersonCard__expandIcon {
 				@include arrow-button($dark-grey, 20px, 0.7em);
+
+				min-width: 20px;
 			}
 		}
 
@@ -57,6 +59,7 @@
 			.PersonCard__expandIcon {
 				@include arrow-button($light-grey, 20px, 0.7em);
 
+				min-width: 20px;
 				pointer-events: none;
 			}
 		}
