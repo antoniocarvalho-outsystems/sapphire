@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111027 || Generated: Thu May 13 2021 12:04:42 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111028 || Generated: Thu May 13 2021 17:18:47 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -1706,8 +1706,7 @@ a.Button.ReopenVisit:before,
 
 a.Button.Plus:before,
 .DropZoneContainer .row .Plus.Button:before {
-  content: '\e698';
-  font-size: 24px; }
+  content: '\e698'; }
 
 
 a.Button.Minus:before,
@@ -19135,12 +19134,13 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     border-color: #00bfa5; }
     .MainInteractiveCard.isOpen .MainInteractiveCard-header {
       border-bottom: 1px solid #d6d6d6; }
+      .MainInteractiveCard.isOpen .MainInteractiveCard-header .MainInteractiveCard-expand-icon {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
       .MainInteractiveCard.isOpen .MainInteractiveCard-header .MainInteractiveCard-header-text {
         overflow: hidden; }
     .MainInteractiveCard.isOpen > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
       display: block; }
-  .MainInteractiveCard.isSelectable > .MainInteractiveCard-header {
-    gap: 16px; }
   .MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text {
     max-width: 70%; }
   .MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
@@ -19189,6 +19189,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     margin-top: 86px; }
   .MainInteractiveCard.NoneHeader.isOpen > .MainInteractiveCard-header {
     height: auto; }
+  .MainInteractiveCard.InitialBorderColor {
+    border-color: #d6d6d6; }
   .MainInteractiveCard .MainInteractiveCard-header {
     -webkit-box-align: center;
             align-items: center;
@@ -19197,11 +19199,35 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
-    gap: 32px;
+    gap: 16px;
     min-height: 56px;
     padding: 16px;
     pointer-events: none;
     position: relative; }
+    .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon {
+      -webkit-box-align: center;
+              align-items: center;
+      background-color: transparent;
+      border: 2px solid #333333;
+      border-radius: 50%;
+      cursor: pointer;
+      display: -webkit-box;
+      display: flex;
+      height: 20px;
+      -webkit-box-pack: center;
+              justify-content: center;
+      text-align: center;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      width: 20px;
+      z-index: 1; }
+      .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon:before {
+        color: #333333;
+        content: '\e611';
+        font-family: "Sapphire-Icon-Font";
+        font-size: 0.7em; }
+      .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon:hover {
+        background-color: rgba(51, 51, 51, 0.1); }
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text {
       cursor: auto;
       display: grid;
@@ -19256,6 +19282,19 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       .AR .MainInteractiveCard .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
         left: 16px;
         right: 0; }
+    .MainInteractiveCard .MainInteractiveCard-body .TextClickable {
+      cursor: text;
+      display: -webkit-box;
+      display: flex;
+      gap: 16px; }
+      .MainInteractiveCard .MainInteractiveCard-body .TextClickable::before {
+        color: transparent;
+        content: '\e60f';
+        font-family: "Sapphire-Icon-Font";
+        font-size: 1.286em;
+        padding: 0 2px; }
+      .MainInteractiveCard .MainInteractiveCard-body .TextClickable:hover::before {
+        color: #adadad; }
   .MainInteractiveCard > div > .MainInteractiveCard-body {
     display: none;
     width: auto; }
@@ -20567,7 +20606,8 @@ body.PanelById.PanelOpened {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
       width: 20px;
-      z-index: 1; }
+      z-index: 1;
+      min-width: 20px; }
       .PersonCard_header.IsExpandable .PersonCard__expandIcon:before {
         color: #333333;
         content: '\e611';
@@ -20592,6 +20632,7 @@ body.PanelById.PanelOpened {
               transform: rotate(90deg);
       width: 20px;
       z-index: 1;
+      min-width: 20px;
       pointer-events: none; }
       .PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:before {
         color: #d6d6d6;
@@ -30394,6 +30435,10 @@ ul.os-internal-ui-autocomplete {
 .AR .LocationOptGroup, .AR
 .SpecialtiesSelect {
   min-width: 170px; }
+
+.PageButtonAction {
+  margin-top: -58px;
+  min-height: 36px; }
 
 .tablet .FiltersWrapper {
   -webkit-box-orient: vertical;
