@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111026 || Generated: Thu May 13 2021 10:00:58 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111027 || Generated: Thu May 13 2021 12:04:42 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11509,11 +11509,9 @@ html .Page .PatientDetailsLayout {
 .LayoutEmergency .SideMenu__PageTitle {
   display: block; }
 
-.LayoutEmergency .SideMenu__Tabs {
-  -webkit-box-pack: center;
-          justify-content: center; }
-  .LayoutEmergency .SideMenu__Tabs > div:first-of-type {
-    display: none; }
+.LayoutEmergency .SideMenu__Tabs .iframeContainer,
+.LayoutEmergency .SideMenu__Tabs > div :first-of-type {
+  display: none; }
 
 .LayoutPopup {
   width: 100%; }
