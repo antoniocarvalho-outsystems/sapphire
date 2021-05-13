@@ -5,12 +5,9 @@
 		}
 
 		&__Tabs {
-			justify-content: center;
-
-			> div {
-				&:first-of-type {
-					display: none;
-				}
+			.iframeContainer,
+			> div :first-of-type {
+				display: none;
 			}
 		}
 	}
