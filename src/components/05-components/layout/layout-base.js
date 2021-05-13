@@ -84,10 +84,6 @@
 			if (contentHeight < windowHeight) {
 				$('.LayoutBase-Wrapper').css('marginBottom', '200px');
 			}
-
-			const hasSecondaryMenu = !!$('.LayoutBase-secondary').text();
-
-			if (!hasSecondaryMenu) $('.LayoutBase-primary-menu').addClass('isFixed');
 		});
 	};
 
