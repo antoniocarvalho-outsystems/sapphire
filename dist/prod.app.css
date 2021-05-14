@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111030 || Generated: Fri May 14 2021 11:36:42 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111031 || Generated: Fri May 14 2021 11:40:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -12621,6 +12621,9 @@ html body {
   border-radius: 8px;
   overflow: hidden; }
 
+.cke .cke_editable {
+  font-size: 14px; }
+
 .cke .cke_bottom {
   background-color: transparent;
   border: none; }
@@ -19287,6 +19290,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       cursor: text;
       display: -webkit-box;
       display: flex;
+      font-size: 1.143em;
       gap: 14px; }
       .MainInteractiveCard .MainInteractiveCard-body .TextClickable::before {
         color: transparent;
