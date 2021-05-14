@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111031 || Generated: Fri May 14 2021 11:40:32 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111032 || Generated: Fri May 14 2021 15:33:41 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -4445,7 +4445,7 @@ a.Button.ArrowDrop:before,
   float: left;
   margin-right: 10px; }
 
-.Heading1 {
+.Heading1, .LayoutPopup__header .LayoutPopup__header__text__title {
   font-family: "LatoBold";
   font-size: 1.714em;
   font-weight: normal;
@@ -4470,7 +4470,7 @@ a.Button.ArrowDrop:before,
   font-weight: normal;
   line-height: 1.13; }
 
-.AR .Heading1,
+.AR .Heading1, .AR .LayoutPopup__header .LayoutPopup__header__text__title, .LayoutPopup__header .AR .LayoutPopup__header__text__title,
 .AR .Heading2,
 .AR .modalPopup.Open .modalPopup_title,
 .modalPopup.Open .AR .modalPopup_title,
@@ -4480,7 +4480,7 @@ a.Button.ArrowDrop:before,
 .AR .Heading5 {
   font-family: "TajawalBold"; }
 
-.tablet .Heading1 {
+.tablet .Heading1, .tablet .LayoutPopup__header .LayoutPopup__header__text__title, .LayoutPopup__header .tablet .LayoutPopup__header__text__title {
   font-size: 1.571em;
   line-height: 1.18; }
 
@@ -12621,9 +12621,6 @@ html body {
   border-radius: 8px;
   overflow: hidden; }
 
-.cke .cke_editable {
-  font-size: 14px; }
-
 .cke .cke_bottom {
   background-color: transparent;
   border: none; }
@@ -16620,56 +16617,32 @@ div.CircledArrow {
     border-bottom: none; }
     .ExpandableList > *:last-of-type .ExpandableLink__Header {
       display: none; }
-  .ExpandableList .ExpandableLink {
-    /*&:not(:first-of-type) {
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-		}
-
-		&:not(:last-of-type) {
-			border-bottom-left-radius: 0;
-			border-bottom-right-radius: 0;
-
-			.ExpandableLink__Header {
-				border-bottom: 1px solid $light-grey;
-			}
-		}
-
-		&:last-of-type {
-			border-bottom: none;
-
-			.ExpandableLink__Header {
-				display: none;
-			}
-		}*/ }
-    .ExpandableList .ExpandableLink--expanded {
-      border-bottom: 1px solid #d6d6d6; }
-      .ExpandableList .ExpandableLink--expanded .ExpandableLink__Header {
-        border-bottom: 1px solid #d6d6d6; }
-      .ExpandableList .ExpandableLink--expanded .ExpandableLink__Content {
-        padding: 16px; }
-    .ExpandableList .ExpandableLink__Header {
-      -webkit-box-align: center;
-              align-items: center;
-      background-color: #f3f3f3;
-      border-bottom: 1px solid #f3f3f3;
-      display: -webkit-box;
-      display: flex;
-      height: 40px;
-      padding: 0 16px; }
-    .ExpandableList .ExpandableLink__Link {
-      color: #777777;
-      font-size: 0.857em; }
-    .ExpandableList .ExpandableLink__Icon .icon {
-      border-color: #777777; }
-      .ExpandableList .ExpandableLink__Icon .icon:hover {
-        background-color: transparent; }
-      .ExpandableList .ExpandableLink__Icon .icon::before {
-        color: #777777; }
-    .ExpandableList .ExpandableLink__Content {
-      margin-top: 0;
-      -webkit-transition: unset;
-      transition: unset; }
+  .ExpandableList .ExpandableLink--expanded .ExpandableLink__Header {
+    border-bottom: 1px solid #d6d6d6; }
+  .ExpandableList .ExpandableLink--expanded .ExpandableLink__Content {
+    padding: 16px; }
+  .ExpandableList .ExpandableLink__Header {
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    display: -webkit-box;
+    display: flex;
+    height: 40px;
+    padding: 0 16px; }
+  .ExpandableList .ExpandableLink__Link {
+    color: #777777;
+    font-size: 0.857em; }
+  .ExpandableList .ExpandableLink__Icon .icon {
+    border-color: #777777; }
+    .ExpandableList .ExpandableLink__Icon .icon:hover {
+      background-color: transparent; }
+    .ExpandableList .ExpandableLink__Icon .icon::before {
+      color: #777777; }
+  .ExpandableList .ExpandableLink__Content {
+    margin-top: 0;
+    -webkit-transition: unset;
+    transition: unset; }
 
 .AR .ExpandableLink__Link,
 .FA .ExpandableLink__Link {
@@ -19291,7 +19264,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       display: -webkit-box;
       display: flex;
       font-size: 1.143em;
-      gap: 14px; }
+      gap: 14px;
+      line-height: 1.5; }
       .MainInteractiveCard .MainInteractiveCard-body .TextClickable::before {
         color: transparent;
         content: '\e60f';
@@ -42202,8 +42176,10 @@ html .AR.tablet .ThemeGrid_Width12 {
 .AR .HeaderPage .BreadcrumbsContainer {
   margin-right: 20px; }
 
-.FA .Title.Heading1,
-.AR .Title.Heading1 {
+.FA .Title.Heading1, .FA .LayoutPopup__header .Title.LayoutPopup__header__text__title, .LayoutPopup__header .FA .Title.LayoutPopup__header__text__title,
+.AR .Title.Heading1,
+.AR .LayoutPopup__header .Title.LayoutPopup__header__text__title,
+.LayoutPopup__header .AR .Title.LayoutPopup__header__text__title {
   padding-right: 20px; }
 
 .FA .Actions,
@@ -42539,8 +42515,10 @@ html .AR.tablet .ThemeGrid_Width12 {
   margin-left: auto;
   margin-right: 20px; }
 
-.FA .Title.Heading1,
-.AR .Title.Heading1 {
+.FA .Title.Heading1, .FA .LayoutPopup__header .Title.LayoutPopup__header__text__title, .LayoutPopup__header .FA .Title.LayoutPopup__header__text__title,
+.AR .Title.Heading1,
+.AR .LayoutPopup__header .Title.LayoutPopup__header__text__title,
+.LayoutPopup__header .AR .Title.LayoutPopup__header__text__title {
   padding-left: auto;
   padding-right: 20px; }
 
