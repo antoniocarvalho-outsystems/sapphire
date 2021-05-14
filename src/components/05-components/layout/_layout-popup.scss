@@ -25,6 +25,10 @@
 			width: 100%;
 		}
 
+		.LayoutPopup__header__text__title {
+			@extend .Heading1;
+		}
+
 		.LayoutPopup__header__text__subtitle {
 			margin-top: $sapphire-sizes--small;
 		}

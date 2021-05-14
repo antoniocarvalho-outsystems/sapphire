@@ -97,31 +97,7 @@
 	}
 
 	.ExpandableLink {
-		/*&:not(:first-of-type) {
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-		}
-
-		&:not(:last-of-type) {
-			border-bottom-left-radius: 0;
-			border-bottom-right-radius: 0;
-
-			.ExpandableLink__Header {
-				border-bottom: 1px solid $light-grey;
-			}
-		}
-
-		&:last-of-type {
-			border-bottom: none;
-
-			.ExpandableLink__Header {
-				display: none;
-			}
-		}*/
-
 		&--expanded {
-			border-bottom: 1px solid $light-grey;
-
 			.ExpandableLink__Header {
 				border-bottom: 1px solid $light-grey;
 			}

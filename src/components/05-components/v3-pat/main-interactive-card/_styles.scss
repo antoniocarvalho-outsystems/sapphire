@@ -255,6 +255,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 			display: flex;
 			font-size: $font-size-heading4;
 			gap: 14px;
+			line-height: 1.5;
 
 			&::before {
 				color: transparent;
