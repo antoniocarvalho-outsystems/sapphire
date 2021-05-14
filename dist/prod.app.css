@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111028 || Generated: Thu May 13 2021 17:18:47 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.111029 || Generated: Fri May 14 2021 11:02:25 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19220,7 +19220,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
       width: 20px;
-      z-index: 1; }
+      z-index: 1;
+      pointer-events: all; }
       .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon:before {
         color: #333333;
         content: '\e611';
