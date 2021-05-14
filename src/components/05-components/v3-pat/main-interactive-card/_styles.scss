@@ -170,6 +170,8 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 		.MainInteractiveCard-expand-icon {
 			@include arrow-button($dark-grey, 20px, 0.7em);
+
+			pointer-events: all;
 		}
 
 		.MainInteractiveCard-header-text {

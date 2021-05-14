@@ -45,6 +45,7 @@
 		this.$card = this.$widget.find('> .MainInteractiveCard');
 		this.$header = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header');
 		this.$headerText = this.$header.find('.MainInteractiveCard-header-text');
+		this.$expandIcon = this.$header.find('.MainInteractiveCard-expand-icon');
 		this.$body = this.$widget.find('> .MainInteractiveCard > div > .MainInteractiveCard-body');
 		this.$actions = this.$widget.find(
 			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-actions'
@@ -147,7 +148,7 @@
 				_this.close();
 			});
 		if (this.allowOpening) {
-			this.$headerText.off('click').on('click', function(evt) {
+			const clickAction = function(evt) {
 				if ($(evt.target).hasClass('Button')) {
 					// the user clicked on a Button inside the header, nothing to do here
 				} else {
@@ -166,6 +167,13 @@
 						_this.open(true);
 					}
 				}
+			};
+
+			this.$headerText.off('click').on('click', function(e) {
+				clickAction(e);
+			});
+			this.$expandIcon.off('click').on('click', function(e) {
+				clickAction(e);
 			});
 		}
 		if (this.isSelectable) {
