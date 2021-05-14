@@ -253,7 +253,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		.TextClickable {
 			cursor: text;
 			display: flex;
-			gap: $sapphire-sizes--medium;
+			gap: 14px;
 
 			&::before {
 				color: transparent;
