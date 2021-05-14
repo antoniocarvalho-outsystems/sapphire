@@ -253,6 +253,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		.TextClickable {
 			cursor: text;
 			display: flex;
+			font-size: $font-size-heading4;
 			gap: 14px;
 
 			&::before {
