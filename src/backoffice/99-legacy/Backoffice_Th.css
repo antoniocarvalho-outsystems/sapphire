@@ -8042,12 +8042,16 @@ a.cke_dialog_ui_button_ok:hover {
   padding: 0 10px;
   position: relative;
   width: 100%;
+  text-align: center;
 }
 
 .Sidebar_logo .icon {
   color: #5c5c5c;
   font-size: 45px;
-  margin-left: 20px;
+}
+
+.Sidebar_logo .SapphireUserRole {
+  display: none;
 }
 
 .Sidebar_logo>.LoginInfo {
