@@ -2,12 +2,14 @@
 	&.Mandatory {
 		border-left: 3px solid $regular-alpha;
 
-		&.Not_Valid {
-			border-left: 3px solid $regular-red;
-		}
-
 		&:focus {
 			border-left: 3px solid $regular-alpha;
+			padding: $sapphire-sizes--medium;
+		}
+
+		&.Not_Valid {
+			border-left: 3px solid $regular-red;
+			padding: $sapphire-sizes--medium;
 		}
 	}
 }
