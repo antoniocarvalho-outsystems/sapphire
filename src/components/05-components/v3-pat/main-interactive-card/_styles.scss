@@ -158,6 +158,20 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		border-color: $light-grey;
 	}
 
+	&.GreyHeader {
+		.MainInteractiveCard-header {
+			background-color: $sapphire-light;
+			border-radius: $border-radius-medium;
+		}
+
+		&.isOpen {
+			.MainInteractiveCard-header {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+		}
+	}
+
 	.MainInteractiveCard-header {
 		@include flex-center-vertically();
 

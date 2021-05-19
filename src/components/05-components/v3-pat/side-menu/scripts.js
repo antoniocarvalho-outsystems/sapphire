@@ -193,7 +193,9 @@
 			const $items = $component.find('.SideMenu__MenuItems').detach();
 			$items.appendTo($menuTabs);
 
-			resizeTabs($component, $menuTabs, true);
+			$(document).ready(function() {
+				resizeTabs($component, $menuTabs, true);
+			});
 
 			$(window.parent).resize(function() {
 				clearTimeout(window.resizedFinished);

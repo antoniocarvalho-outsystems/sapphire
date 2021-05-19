@@ -32,8 +32,8 @@
 					const secondaryHeight = $('.LayoutBase-secondary').outerHeight();
 					const emergencyHeight = isEmergency ? $('.LayoutBase-emergency').height() : 0;
 
-					const secondaryFixed = isFixed ? secondaryHeight : secondaryHeight - 26;
-					targetElementOffsetTop = targetElementOffsetTop - (headerHeight + secondaryFixed + emergencyHeight);
+					//const secondaryFixed = isFixed ? secondaryHeight : secondaryHeight - 26;
+					targetElementOffsetTop = targetElementOffsetTop - (headerHeight + secondaryHeight + emergencyHeight);
 
 					$('body, html').scrollTop(targetElementOffsetTop);
 				}
