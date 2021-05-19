@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.111033 || Generated: Mon May 17 2021 10:24:25 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112001 || Generated: Wed May 19 2021 15:43:09 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19167,6 +19167,12 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     height: auto; }
   .MainInteractiveCard.InitialBorderColor {
     border-color: #d6d6d6; }
+  .MainInteractiveCard.GreyHeader .MainInteractiveCard-header {
+    background-color: #ebebeb;
+    border-radius: 8px; }
+  .MainInteractiveCard.GreyHeader.isOpen .MainInteractiveCard-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
   .MainInteractiveCard .MainInteractiveCard-header {
     -webkit-box-align: center;
             align-items: center;
