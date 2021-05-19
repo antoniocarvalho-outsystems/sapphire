@@ -18,11 +18,9 @@
 			border-left: 3px solid $regular-red !important;
 			border-top-right-radius: 0;
 
-			+ .SelectSystem {
-				.select2-selection {
-					border: solid 1px $regular-red;
-					border-left: 3px solid $regular-red !important;
-				}
+			+ .SelectSystem .select2-selection {
+				border: solid 1px $regular-red;
+				border-left: 3px solid $regular-red !important;
 			}
 		}
 	}
