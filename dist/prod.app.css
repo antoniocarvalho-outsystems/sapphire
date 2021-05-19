@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112001 || Generated: Wed May 19 2021 15:43:09 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112002 || Generated: Wed May 19 2021 16:18:00 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7385,10 +7385,12 @@ a.LinkReset:link, a.LinkReset:visited {
 
 .TextInput.Mandatory {
   border-left: 3px solid #00bfa5; }
-  .TextInput.Mandatory.Not_Valid {
-    border-left: 3px solid #ff3e2d; }
   .TextInput.Mandatory:focus {
-    border-left: 3px solid #00bfa5; }
+    border-left: 3px solid #00bfa5;
+    padding: 16px; }
+  .TextInput.Mandatory.Not_Valid {
+    border-left: 3px solid #ff3e2d;
+    padding: 16px; }
 
 .Title_Section {
   background-color: #fff;
@@ -8433,6 +8435,9 @@ a.LinkReset:link, a.LinkReset:visited {
       border-bottom-right-radius: 0;
       border-left: 3px solid #ff3e2d !important;
       border-top-right-radius: 0; }
+      .Dropdown.Mandatory.Not_Valid + .SelectSystem .select2-selection, .Page .FormField select.Mandatory.Not_Valid + .SelectSystem .select2-selection, .LayoutPopup .FormField select.Mandatory.Not_Valid + .SelectSystem .select2-selection, .LayoutBlank .FormField select.Mandatory.Not_Valid + .SelectSystem .select2-selection, .LayoutBase .FormField select.Mandatory.Not_Valid + .SelectSystem .select2-selection {
+        border: solid 1px #ff3e2d;
+        border-left: 3px solid #ff3e2d !important; }
 
 .AR .Dropdown, .AR .Page .FormField select, .Page .FormField .AR select,
 .AR .LayoutPopup .FormField select, .LayoutPopup .FormField .AR select,
