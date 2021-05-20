@@ -65,7 +65,7 @@
 		this.extraPaddingEmergency = 0;
 		this.extraPaddingSecondary = 0;
 		this.setupWindowEvents();
-		this.$iframeSidebar.append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>');
+		this.$iframeSidebar.append('<div class="lds-ring 1"><div></div><div></div><div></div><div></div></div>');
 
 		$(function() {
 			$('body').addClass('LayoutBase');
@@ -78,12 +78,7 @@
 			$('body').click();
 			$(window).scroll();
 
-			const contentHeight = $('.LayoutBase-Content').height();
-			const windowHeight = $(window).height() + 124;
-
-			if (contentHeight < windowHeight) {
-				$('.LayoutBase-Wrapper').css('marginBottom', '200px');
-			}
+			_this.$iframeSidebar.find('.lds-ring').fadeOut();
 		});
 	};
 

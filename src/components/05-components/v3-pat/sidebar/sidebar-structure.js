@@ -33,7 +33,6 @@
 			}
 
 			window.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();
-			console.log('fadeOut 1');
 
 			if (!this.isExpandable) {
 				$('input[type="text"]:visible')
@@ -44,7 +43,6 @@
 
 		$(window).unload(function() {
 			window.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();
-			console.log('fadeOut 2');
 		});
 	};
 

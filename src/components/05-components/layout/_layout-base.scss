@@ -18,11 +18,16 @@
 			z-index: 1;
 		}
 
-		.LayoutBase-Content .PatientDetails__MainWorkArea,
 		.LayoutBase-Content .PatientDetails_content,
-		.LayoutBase-Content .ClinicianWorkArea_wrapper {
+		.LayoutBase-Content .PatientDetails__MainWorkArea {
 			margin: 0;
 			padding: 0;
+		}
+
+		.LayoutBase-Content .ClinicianWorkArea_wrapper {
+			display: flex;
+			flex-direction: column;
+			min-height: calc(100vh - 80px);
 		}
 	}
 
@@ -506,6 +511,7 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 				align-items: stretch;
 				background-color: $body-color;
 				display: flex;
+				flex: 1;
 				width: 100%;
 			}
 

@@ -69,7 +69,7 @@
 			this.$department.hide();
 
 			this.$iframeContainer = this.$component.find('.iframeContainer');
-			this.$iframeContainer.append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>');
+			this.$iframeContainer.append('<div class="lds-ring OI"><div></div><div></div><div></div><div></div></div>');
 			this.$iframeContainer.find('iframe').load(() => {
 				this.$iframeContainer.find('.lds-ring').fadeOut();
 				console.log('fadeOut 3');
@@ -142,7 +142,7 @@
 		const fixedValue = $(window.parent).width() < 1024 ? 180 : 196;
 		let hasItemToRemove = true;
 
-		if (tabsWidth + fixedValue > headerWidth && hasItemToRemove) {
+		if (tabsWidth > 0 && tabsWidth + fixedValue > headerWidth && hasItemToRemove) {
 			const $moreOptions = $component.find('.SideMenu__Content');
 			const $lastItem = $menuTabs
 				.find('.SideMenu__MenuItems .MenuItem')

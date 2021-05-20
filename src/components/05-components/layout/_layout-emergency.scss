@@ -12,3 +12,153 @@
 		}
 	}
 }
+
+.CTTASLevelAssessmentMainContainer.Fix {
+	position: fixed;
+	width: 100%;
+	z-index: 4;
+}
+
+.tablet.portrait .CTTASLevelAssessmentMainContainer.Fix {
+	position: fixed;
+	top: 50px !important;
+	width: 100%;
+	z-index: 4;
+}
+
+.CTTASLevelAssessmentMainContainer {
+	border-bottom: 1px solid #cac6c0;
+	display: table;
+	width: 100%;
+}
+
+.CTTASLevelAssessmentMainContainer.Fixed {
+	border-top: 1px solid #cac6c0;
+	padding-right: 40px;
+	position: fixed;
+	z-index: 4;
+}
+
+html.rtl div.CTTASLevelAssessmentMainContainer.Fixed {
+	padding-left: 40px;
+}
+
+.CTTASLevelsMainContainer {
+	display: table;
+	width: 100%;
+}
+
+span > div.CTTASLevelContainer {
+	border-bottom: 2px solid #c9cdce;
+	border-left: 2px solid #c9cdce;
+	border-top: 2px solid #c9cdce;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+span:first-child > div.CTTASLevelContainer {
+	border-bottom-left-radius: 5px;
+	border-left: 2px solid #c9cdce;
+	border-top-left-radius: 5px;
+}
+
+span:last-child > div.CTTASLevelContainer {
+	border-bottom-right-radius: 5px;
+	border-right: 2px solid #c9cdce;
+	border-top-right-radius: 5px;
+}
+
+.LevelsContainer {
+	display: table-cell;
+	margin: 0;
+	padding: 10px;
+}
+
+.ForwardableContainer {
+	display: table-cell;
+	margin: 0;
+	padding: 10px;
+	text-align: right;
+	width: 32.9%;
+}
+
+div.CTTASLevelAssessmentMainContainer {
+	border-bottom: 1px solid #cac6c0;
+	display: table;
+	width: 100%;
+}
+
+div.CTTASLevelAssessmentMainContainer.Fixed {
+	border-top: 1px solid #cac6c0;
+	padding-right: 40px;
+	position: fixed;
+	z-index: 2;
+}
+
+html.rtl div.CTTASLevelAssessmentMainContainer.Fixed {
+	padding-left: 40px;
+}
+
+.CTTASLevelsMainContainer {
+	display: table;
+	width: 100%;
+}
+
+span > div.CTTASLevelContainer {
+	border-bottom: 2px solid #c9cdce;
+	border-left: 2px solid #c9cdce;
+	border-top: 2px solid #c9cdce;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+span:first-child > div.CTTASLevelContainer {
+	border-bottom-left-radius: 5px;
+	border-left: 2px solid #c9cdce;
+	border-top-left-radius: 5px;
+}
+
+span:last-child > div.CTTASLevelContainer {
+	border-bottom-right-radius: 5px;
+	border-right: 2px solid #c9cdce;
+	border-top-right-radius: 5px;
+}
+
+div.LevelsContainer {
+	display: table-cell;
+	margin: 0;
+	padding: 10px;
+}
+
+div.ForwardableContainer {
+	display: table-cell;
+	margin: 0;
+	padding: 10px;
+	text-align: right;
+	width: 33.3%;
+}
+
+@media only screen and (max-width: 1024px) {
+	div.ForwardableContainer {
+		display: block;
+		margin-top: -10px;
+		width: 100%;
+	}
+
+	div.LevelsContainer {
+		display: block;
+		margin-top: 0;
+	}
+
+	div.CTTASLevelAssessmentMainContainer {
+		display: block;
+	}
+}
