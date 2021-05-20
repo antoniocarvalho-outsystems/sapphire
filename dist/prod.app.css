@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112003 || Generated: Wed May 19 2021 16:55:45 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112004 || Generated: Thu May 20 2021 16:49:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -10983,11 +10983,18 @@ div.NoPrompt > div.template-item-input-block {
   position: fixed;
   z-index: 1; }
 
-.LayoutBase-Wrapper .LayoutBase-Content .PatientDetails__MainWorkArea,
 .LayoutBase-Wrapper .LayoutBase-Content .PatientDetails_content,
-.LayoutBase-Wrapper .LayoutBase-Content .ClinicianWorkArea_wrapper {
+.LayoutBase-Wrapper .LayoutBase-Content .PatientDetails__MainWorkArea {
   margin: 0;
   padding: 0; }
+
+.LayoutBase-Wrapper .LayoutBase-Content .ClinicianWorkArea_wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  min-height: calc(100vh - 80px); }
 
 .LayoutBase-MainMenu, .LayoutBase-MainMenu.PatientDetails_Header {
   height: 44px;
@@ -11318,6 +11325,8 @@ body.LayoutBase .os-internal-ui-widget-overlay {
     background-color: #f3f3f3;
     display: -webkit-box;
     display: flex;
+    -webkit-box-flex: 1;
+            flex: 1;
     width: 100%; }
 
 .LayoutBase.Page .ClinicianWorkArea-columns-big {
@@ -11516,6 +11525,130 @@ html .Page .PatientDetailsLayout {
 .LayoutEmergency .SideMenu__Tabs .iframeContainer,
 .LayoutEmergency .SideMenu__Tabs > div :first-of-type {
   display: none; }
+
+.CTTASLevelAssessmentMainContainer.Fix {
+  position: fixed;
+  width: 100%;
+  z-index: 4; }
+
+.tablet.portrait .CTTASLevelAssessmentMainContainer.Fix {
+  position: fixed;
+  top: 50px !important;
+  width: 100%;
+  z-index: 4; }
+
+.CTTASLevelAssessmentMainContainer {
+  border-bottom: 1px solid #cac6c0;
+  display: table;
+  width: 100%; }
+
+.CTTASLevelAssessmentMainContainer.Fixed {
+  border-top: 1px solid #cac6c0;
+  padding-right: 40px;
+  position: fixed;
+  z-index: 4; }
+
+html.rtl div.CTTASLevelAssessmentMainContainer.Fixed {
+  padding-left: 40px; }
+
+.CTTASLevelsMainContainer {
+  display: table;
+  width: 100%; }
+
+span > div.CTTASLevelContainer {
+  border-bottom: 2px solid #c9cdce;
+  border-left: 2px solid #c9cdce;
+  border-top: 2px solid #c9cdce;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center; }
+
+span:first-child > div.CTTASLevelContainer {
+  border-bottom-left-radius: 5px;
+  border-left: 2px solid #c9cdce;
+  border-top-left-radius: 5px; }
+
+span:last-child > div.CTTASLevelContainer {
+  border-bottom-right-radius: 5px;
+  border-right: 2px solid #c9cdce;
+  border-top-right-radius: 5px; }
+
+.LevelsContainer {
+  display: table-cell;
+  margin: 0;
+  padding: 10px; }
+
+.ForwardableContainer {
+  display: table-cell;
+  margin: 0;
+  padding: 10px;
+  text-align: right;
+  width: 32.9%; }
+
+div.CTTASLevelAssessmentMainContainer {
+  border-bottom: 1px solid #cac6c0;
+  display: table;
+  width: 100%; }
+
+div.CTTASLevelAssessmentMainContainer.Fixed {
+  border-top: 1px solid #cac6c0;
+  padding-right: 40px;
+  position: fixed;
+  z-index: 2; }
+
+html.rtl div.CTTASLevelAssessmentMainContainer.Fixed {
+  padding-left: 40px; }
+
+.CTTASLevelsMainContainer {
+  display: table;
+  width: 100%; }
+
+span > div.CTTASLevelContainer {
+  border-bottom: 2px solid #c9cdce;
+  border-left: 2px solid #c9cdce;
+  border-top: 2px solid #c9cdce;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center; }
+
+span:first-child > div.CTTASLevelContainer {
+  border-bottom-left-radius: 5px;
+  border-left: 2px solid #c9cdce;
+  border-top-left-radius: 5px; }
+
+span:last-child > div.CTTASLevelContainer {
+  border-bottom-right-radius: 5px;
+  border-right: 2px solid #c9cdce;
+  border-top-right-radius: 5px; }
+
+div.LevelsContainer {
+  display: table-cell;
+  margin: 0;
+  padding: 10px; }
+
+div.ForwardableContainer {
+  display: table-cell;
+  margin: 0;
+  padding: 10px;
+  text-align: right;
+  width: 33.3%; }
+
+@media only screen and (max-width: 1024px) {
+  div.ForwardableContainer {
+    display: block;
+    margin-top: -10px;
+    width: 100%; }
+  div.LevelsContainer {
+    display: block;
+    margin-top: 0; }
+  div.CTTASLevelAssessmentMainContainer {
+    display: block; } }
 
 .LayoutPopup {
   width: 100%; }
@@ -34917,10 +35050,6 @@ html .PatientDetailsLayout {
   margin-right: -20px;
   margin-top: -14px !important; }
 
-.ClinicianWorkArea_wrapper {
-  margin-left: -10px;
-  margin-right: 0; }
-
 .ClinicianWorkArea > .MediumRightColumns > .Column.ColLast {
   background-color: #eeeae3;
   padding-right: 10px;
@@ -38961,17 +39090,6 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
   position: relative; }
 
 /* 9.130 Sapphire Patterns > HorizontalToolbar_MenuItem ****/
-.CTTASLevelAssessmentMainContainer.Fix {
-  position: fixed;
-  width: 100%;
-  z-index: 4; }
-
-.tablet.portrait .CTTASLevelAssessmentMainContainer.Fix {
-  position: fixed;
-  top: 50px !important;
-  width: 100%;
-  z-index: 4; }
-
 /* 9.131 Sapphire Patterns > HorizontalToolbar ****/
 /* 9.132 Sapphire Patterns > ActionsSubMenu ****/
 /* 9.133 Sapphire Patterns > FullScreenTabs ****/
@@ -39967,58 +40085,6 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
   width: 55%; }
 
 /**Emergency**/
-.CTTASLevelAssessmentMainContainer {
-  background-color: #eee3e3;
-  border-bottom: 1px solid #cac6c0;
-  display: table;
-  width: 100%; }
-
-.CTTASLevelAssessmentMainContainer.Fixed {
-  border-top: 1px solid #cac6c0;
-  padding-right: 40px;
-  position: fixed;
-  z-index: 4; }
-
-html.rtl div.CTTASLevelAssessmentMainContainer.Fixed {
-  padding-left: 40px; }
-
-.CTTASLevelsMainContainer {
-  display: table;
-  width: 100%; }
-
-span > div.CTTASLevelContainer {
-  border-bottom: 2px solid #c9cdce;
-  border-left: 2px solid #c9cdce;
-  border-top: 2px solid #c9cdce;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 5px;
-  text-align: center; }
-
-span:first-child > div.CTTASLevelContainer {
-  border-bottom-left-radius: 5px;
-  border-left: 2px solid #c9cdce;
-  border-top-left-radius: 5px; }
-
-span:last-child > div.CTTASLevelContainer {
-  border-bottom-right-radius: 5px;
-  border-right: 2px solid #c9cdce;
-  border-top-right-radius: 5px; }
-
-.LevelsContainer {
-  display: table-cell;
-  margin: 0;
-  padding: 10px; }
-
-.ForwardableContainer {
-  display: table-cell;
-  margin: 0;
-  padding: 10px;
-  text-align: right;
-  width: 32.9%; }
-
 /**WBForwardLocation**/
 div.ForwardLocContainer {
   cursor: pointer; }
@@ -40289,69 +40355,6 @@ a.SpecialityButtonForward {
   display: table;
   margin-top: 20px;
   width: 100%; }
-
-div.CTTASLevelAssessmentMainContainer {
-  background-color: #eee3e3;
-  border-bottom: 1px solid #cac6c0;
-  display: table;
-  width: 100%; }
-
-div.CTTASLevelAssessmentMainContainer.Fixed {
-  border-top: 1px solid #cac6c0;
-  padding-right: 40px;
-  position: fixed;
-  z-index: 2; }
-
-html.rtl div.CTTASLevelAssessmentMainContainer.Fixed {
-  padding-left: 40px; }
-
-.CTTASLevelsMainContainer {
-  display: table;
-  width: 100%; }
-
-span > div.CTTASLevelContainer {
-  border-bottom: 2px solid #c9cdce;
-  border-left: 2px solid #c9cdce;
-  border-top: 2px solid #c9cdce;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 5px;
-  text-align: center; }
-
-span:first-child > div.CTTASLevelContainer {
-  border-bottom-left-radius: 5px;
-  border-left: 2px solid #c9cdce;
-  border-top-left-radius: 5px; }
-
-span:last-child > div.CTTASLevelContainer {
-  border-bottom-right-radius: 5px;
-  border-right: 2px solid #c9cdce;
-  border-top-right-radius: 5px; }
-
-div.LevelsContainer {
-  display: table-cell;
-  margin: 0;
-  padding: 10px; }
-
-div.ForwardableContainer {
-  display: table-cell;
-  margin: 0;
-  padding: 10px;
-  text-align: right;
-  width: 33.3%; }
-
-@media only screen and (max-width: 1024px) {
-  div.ForwardableContainer {
-    display: block;
-    margin-top: -10px;
-    width: 100%; }
-  div.LevelsContainer {
-    display: block;
-    margin-top: 0; }
-  div.CTTASLevelAssessmentMainContainer {
-    display: block; } }
 
 /**Planned Admissions**/
 .LineThrough {
