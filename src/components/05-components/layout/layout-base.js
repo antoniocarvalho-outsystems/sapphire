@@ -109,14 +109,8 @@
 	};
 
 	LayoutBase.prototype.handleOptionalContainers = function() {
-		const scrollTop = $(window).scrollTop();
-		const isEmergency = !!$('.LayoutBase-emergency').text();
-
-		if (scrollTop >= 80) {
-			this.$secondary.addClass('isFixedTest');
-		} else if (scrollTop === 0) {
-			this.$secondary.removeClass('isFixedTest');
-		}
+		/*const scrollTop = $(window).scrollTop();
+		const isEmergency = !!$('.LayoutBase-emergency').text();*/
 	};
 
 	LayoutBase.prototype.handleLayoutTopPadding = function() {

@@ -288,13 +288,13 @@
 		}
 
 		.LayoutBase-emergency {
-			background-color: $sapphire-light-container;
+			background-color: $regular-white;
 			position: sticky;
-			top: 80px;
+			top: 79px;
 			z-index: 19;
 
 			&:not(:empty) + .LayoutBase-secondary {
-				top: 149px;
+				top: 132px;
 			}
 		}
 	}
