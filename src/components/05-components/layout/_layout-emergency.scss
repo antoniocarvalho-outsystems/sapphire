@@ -121,7 +121,7 @@
 				@include flex-center-vertically();
 
 				background-color: $sapphire-light;
-				border: 1px solid $light-grey;
+				// border: 1px solid $light-grey;
 				color: $mid-dark-grey;
 				font-size: $font-size-heading4;
 				justify-content: space-between;
@@ -132,11 +132,15 @@
 				&:hover {
 					background-color: darken($sapphire-light, 5%);
 				}
+
+				&.NoHover:hover {
+					background-color: $sapphire-light;
+				}
 			}
 
 			.ObservationRoomCounters {
 				background-color: rgba($sapphire-light, 0.5);
-				border: 1px solid $light-grey;
+				// border: 1px solid $light-grey;
 				border-radius: 0 0 $border-radius-default $border-radius-default;
 				border-top: transparent;
 				padding: $sapphire-sizes--medium;
@@ -146,16 +150,47 @@
 				background-color: $sapphire-light;
 				border-radius: $border-radius-default;
 				color: $regular-white;
-				display: inline-block;
-				font-weight: bold;
+				font-family: $font-family-latin-bold;
+				font-size: $font-size-small;
 				height: $sapphire-sizes--large;
 				line-height: $sapphire-sizes--large;
 				text-align: center;
 				width: $sapphire-sizes--large;
+
+				.AR & {
+					font-family: $font-family-arabic-bold;
+				}
 			}
 		}
 
-		.ForwardContainer_Content .Badge {
+		.ForwardList {
+			display: flex;
+			flex-direction: column;
+			margin: 0 (-$sapphire-sizes--medium);
+
+			.FowardListItem {
+				@include flex-center-vertically();
+
+				border-bottom: 1px solid $light-grey;
+				height: 36px;
+				justify-content: space-between;
+				padding: 0 $sapphire-sizes--medium;
+
+				&:hover {
+					background-color: darken($sapphire-light, 5%);
+				}
+
+				&:last-of-type {
+					border-bottom: none;
+				}
+
+				.icon {
+					font-size: $font-size-heading4;
+				}
+			}
+		}
+
+		/*.ForwardContainer_Content .Badge {
 			border-radius: 5px;
 			color: white;
 			display: inline-block;
@@ -166,7 +201,7 @@
 			text-align: center;
 			vertical-align: middle;
 			width: 25px;
-		}
+		}*/
 	}
 }
 

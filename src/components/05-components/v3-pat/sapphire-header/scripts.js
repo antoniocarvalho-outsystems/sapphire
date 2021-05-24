@@ -50,8 +50,10 @@
 		this.$additionalTrigger.on('click', function() {
 			if (_this.$header.hasClass('isOpen')) {
 				_this.$header.removeClass('isOpen');
+				$('.LayoutBase-header').css('z-index', 2);
 			} else {
 				_this.$header.addClass('isOpen');
+				$('.LayoutBase-header').css('z-index', 3);
 			}
 		});
 	};

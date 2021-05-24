@@ -21,7 +21,9 @@ SapphireWidgets.SapphireRadioButton = widgetId => {
 		$(`input[type="radio"][name="${name}"]`).each(function() {
 			addRemoveClass($(this).closest('.ButtonRadioInp'), false);
 		});
+	});
 
+	$input.on('change', function() {
 		isChecked($(this));
 	});
 
@@ -30,8 +32,8 @@ SapphireWidgets.SapphireRadioButton = widgetId => {
 
 		if ($closestElement.hasClass('disabled')) return false;
 
-		$input.trigger('click');
-		isChecked($input);
+		$input[0].click();
+		//isChecked($input);
 	});
 
 	isChecked($input);
