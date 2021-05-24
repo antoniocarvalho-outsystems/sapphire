@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112006 || Generated: Mon May 24 2021 12:15:08 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112007 || Generated: Mon May 24 2021 17:25:20 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11052,7 +11052,7 @@ div.NoPrompt > div.template-item-input-block {
   position: fixed;
   top: 44px;
   width: 100%;
-  z-index: 20; }
+  z-index: 2; }
 
 .LayoutBase-Content .LayoutBase-primary-menu {
   background-color: #fff;
@@ -11073,7 +11073,7 @@ div.NoPrompt > div.template-item-input-block {
   position: -webkit-sticky;
   position: sticky;
   top: 80px;
-  z-index: 18; }
+  z-index: 1; }
   .LayoutBase-Content .LayoutBase-secondary.isFixed {
     border-bottom: solid 2px #d6d6d6;
     border-top: solid 2px #d6d6d6; }
@@ -11168,7 +11168,7 @@ div.NoPrompt > div.template-item-input-block {
   position: -webkit-sticky;
   position: sticky;
   top: 79px;
-  z-index: 19; }
+  z-index: 2; }
   .LayoutBase-Content .LayoutBase-emergency:not(:empty) + .LayoutBase-secondary {
     top: 132px; }
 
@@ -11558,7 +11558,19 @@ html .Page .PatientDetailsLayout {
           font-family: "TajawalBold"; }
   .CTTASLevelAssessmentMainContainer .ForwardableContainer {
     padding: 8px 16px;
-    width: 33%; }
+    width: 33%;
+    /*.ForwardContainer_Content .Badge {
+			border-radius: 5px;
+			color: white;
+			display: inline-block;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 25px;
+			padding: 0;
+			text-align: center;
+			vertical-align: middle;
+			width: 25px;
+		}*/ }
     .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer {
       height: 36px;
       width: 100%; }
@@ -11620,7 +11632,6 @@ html .Page .PatientDetailsLayout {
         display: -webkit-box;
         display: flex;
         background-color: #ebebeb;
-        border: 1px solid #d6d6d6;
         color: #5c5c5c;
         font-size: 1.143em;
         -webkit-box-pack: justify;
@@ -11631,9 +11642,11 @@ html .Page .PatientDetailsLayout {
         .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocContainer:hover,
         .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocObservationContainer:hover {
           background-color: #dedede; }
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocContainer.NoHover:hover,
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocObservationContainer.NoHover:hover {
+          background-color: #ebebeb; }
       .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ObservationRoomCounters {
         background-color: rgba(235, 235, 235, 0.5);
-        border: 1px solid #d6d6d6;
         border-radius: 0 0 4px 4px;
         border-top: transparent;
         padding: 16px; }
@@ -11641,23 +11654,37 @@ html .Page .PatientDetailsLayout {
         background-color: #ebebeb;
         border-radius: 4px;
         color: #fff;
-        display: inline-block;
-        font-weight: bold;
+        font-family: "LatoBold";
+        font-size: 0.857em;
         height: 24px;
         line-height: 24px;
         text-align: center;
         width: 24px; }
-    .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer_Content .Badge {
-      border-radius: 5px;
-      color: white;
-      display: inline-block;
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 25px;
-      padding: 0;
-      text-align: center;
-      vertical-align: middle;
-      width: 25px; }
+        .AR .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ObservationCounter {
+          font-family: "TajawalBold"; }
+    .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardList {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      margin: 0 -16px; }
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardList .FowardListItem {
+        -webkit-box-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: flex;
+        border-bottom: 1px solid #d6d6d6;
+        height: 36px;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+        padding: 0 16px; }
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardList .FowardListItem:hover {
+          background-color: #dedede; }
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardList .FowardListItem:last-of-type {
+          border-bottom: none; }
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardList .FowardListItem .icon {
+          font-size: 1.143em; }
 
 .pain-level {
   -webkit-box-align: center;
