@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112005 || Generated: Fri May 21 2021 17:13:41 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112006 || Generated: Mon May 24 2021 12:15:08 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11062,7 +11062,7 @@ div.NoPrompt > div.template-item-input-block {
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
-    z-index: 19; }
+    z-index: 18; }
     .LayoutBase-Content .LayoutBase-primary-menu.isFixed ~ .LayoutBase-secondary {
       display: none; }
 
@@ -11073,7 +11073,7 @@ div.NoPrompt > div.template-item-input-block {
   position: -webkit-sticky;
   position: sticky;
   top: 80px;
-  z-index: 19; }
+  z-index: 18; }
   .LayoutBase-Content .LayoutBase-secondary.isFixed {
     border-bottom: solid 2px #d6d6d6;
     border-top: solid 2px #d6d6d6; }
@@ -11560,10 +11560,7 @@ html .Page .PatientDetailsLayout {
     padding: 8px 16px;
     width: 33%; }
     .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer {
-      border: 1px solid #00bfa5;
-      border-radius: 20px;
       height: 36px;
-      position: relative;
       width: 100%; }
       .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .SingleLocation,
       .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsDiv {
@@ -11571,6 +11568,8 @@ html .Page .PatientDetailsLayout {
                 align-items: center;
         display: -webkit-box;
         display: flex;
+        border: 1px solid #00bfa5;
+        border-radius: 20px;
         color: #00ac94;
         cursor: pointer;
         height: 36px;
@@ -11581,16 +11580,19 @@ html .Page .PatientDetailsLayout {
            -moz-user-select: none;
             -ms-user-select: none;
                 user-select: none; }
-      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .MultipleLocation {
-        left: -2px;
-        position: absolute;
-        right: -2px;
-        top: -2px;
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .SingleLocation:hover,
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsDiv:hover {
+          background-color: #f2fffd; }
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsContent {
+        background-color: #fff;
+        border: 1px solid #d6d6d6;
+        border-radius: 4px;
+        margin-top: 7px;
+        padding: 16px;
         -webkit-user-select: none;
            -moz-user-select: none;
             -ms-user-select: none;
-                user-select: none;
-        z-index: 1; }
+                user-select: none; }
       .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .LocationLabel {
         -webkit-box-align: center;
                 align-items: center;
@@ -11600,6 +11602,51 @@ html .Page .PatientDetailsLayout {
         font-size: 1.143em; }
         .AR .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .LocationLabel {
           font-family: "TajawalBold"; }
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardPadding {
+        overflow-y: auto; }
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocContainer {
+        border-radius: 4px;
+        cursor: pointer; }
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocName {
+        font-family: "LatoBold"; }
+        .AR .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocName {
+          font-family: "TajawalBold"; }
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocObservationContainer {
+        border-radius: 4px 4px 0 0; }
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocContainer,
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocObservationContainer {
+        -webkit-box-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: flex;
+        background-color: #ebebeb;
+        border: 1px solid #d6d6d6;
+        color: #5c5c5c;
+        font-size: 1.143em;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+        min-height: 36px;
+        padding: 0 16px;
+        width: 100%; }
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocContainer:hover,
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocObservationContainer:hover {
+          background-color: #dedede; }
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ObservationRoomCounters {
+        background-color: rgba(235, 235, 235, 0.5);
+        border: 1px solid #d6d6d6;
+        border-radius: 0 0 4px 4px;
+        border-top: transparent;
+        padding: 16px; }
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ObservationCounter {
+        background-color: #ebebeb;
+        border-radius: 4px;
+        color: #fff;
+        display: inline-block;
+        font-weight: bold;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        width: 24px; }
     .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer_Content .Badge {
       border-radius: 5px;
       color: white;
@@ -11612,149 +11659,42 @@ html .Page .PatientDetailsLayout {
       vertical-align: middle;
       width: 25px; }
 
-div.ForwardLocContainer {
-  cursor: pointer; }
-
-div.ForwardLocContainer,
-div.ForwardLocObservationContainer {
-  background-color: #d6d8d9;
-  border: 1px solid #bdc0c2;
-  color: #414d55;
-  display: table;
-  font-size: 17px;
-  font-weight: bold;
-  padding: 10px;
-  width: 100%; }
-
-div.ForwardLocContainer > div,
-div.ForwardLocObservationContainer > div {
-  font-family: globeregular;
-  font-weight: 700; }
-
-div.ObservationRoomCounters {
-  background-color: rgba(214, 216, 217, 0.5);
-  border: 1px solid rgba(214, 216, 217, 0.5);
-  border-radius: 0 0 5px 5px;
-  font-size: 1.16rem;
-  padding: 10px 20px; }
-
-.ObservationRoomCounters .bed-icon {
-  color: #b1b5b6; }
-
-div.ForwardLocContainer {
-  border-radius: 5px; }
-
-div.ForwardLocObservationContainer {
-  border-radius: 5px 5px 0 0; }
-
-div.ForwardLocAction {
-  display: table-cell;
-  width: 99%; }
-
-div.ForwardAction {
-  cursor: pointer;
-  display: table-cell;
-  text-align: center;
-  width: 20px; }
-
-/**WBForwardOption**/
-div.ForwardLocContainer,
-div.ForwardLocObservationContainer {
-  background-color: #d6d8d9;
-  border: 1px solid #bdc0c2;
-  color: #414d55;
-  cursor: pointer;
-  display: table;
-  font-size: 17px;
-  font-weight: bold;
-  padding: 10px;
-  width: 100%; }
-
-div.ForwardLocContainer > div,
-div.ForwardLocObservationContainer > div {
-  font-family: globeregular; }
-
-div.ObservationRoomCounters {
-  background-color: rgba(214, 216, 217, 0.5);
-  border: 1px solid rgba(214, 216, 217, 0.5);
-  border-radius: 0 0 5px 5px;
-  font-size: 1.16rem;
-  padding: 10px 20px; }
+.pain-level {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  background-color: rgba(255, 160, 0, 0.2);
+  border-radius: 4px;
+  color: #ffa000;
+  font-size: 1.143em;
+  overflow: hidden; }
+  .pain-level .pain-level-icon {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #ffa000;
+    color: #fff;
+    font-size: 1.286em;
+    height: 36px;
+    width: 36px; }
+  .pain-level .pain-level-text {
+    -webkit-box-flex: 1;
+            flex: 1;
+    font-family: "LatoBold";
+    text-align: center; }
+    .AR .pain-level .pain-level-text {
+      font-family: "TajawalBold"; }
 
 .ObservationRoomCounters .bed-icon {
   color: #b1b5b6; }
 
-div.ForwardLocContainer {
-  border-radius: 5px; }
-
-div.ForwardLocObservationContainer {
-  border-radius: 5px 5px 0 0; }
-
 div.ForwardLocAction {
   display: table-cell;
   width: 99%; }
-
-div.ForwardAction {
-  cursor: pointer;
-  display: table-cell;
-  text-align: center;
-  width: 20px; }
-
-div.ObservationCounter {
-  background-color: #38444d;
-  border-radius: 5px;
-  color: white;
-  display: inline-block;
-  font-weight: bold;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  width: 25px; }
-
-/**WBPutOnHold**/
-div.ForwardLocContainer {
-  cursor: pointer; }
-
-div.ForwardLocContainer,
-div.ForwardLocObservationContainer {
-  background-color: #d6d8d9;
-  border: 1px solid #bdc0c2;
-  color: #414d55;
-  display: table;
-  font-size: 17px;
-  font-weight: bold;
-  padding: 10px;
-  width: 100%; }
-
-div.ForwardLocContainer > div,
-div.ForwardLocObservationContainer > div {
-  font-family: globeregular; }
-
-div.ObservationRoomCounters {
-  background-color: rgba(214, 216, 217, 0.5);
-  border: 1px solid rgba(214, 216, 217, 0.5);
-  border-radius: 0 0 5px 5px;
-  font-size: 1.16rem;
-  padding: 10px 20px; }
-
-.ObservationRoomCounters .bed-icon {
-  color: #b1b5b6; }
-
-div.ForwardLocContainer {
-  border-radius: 5px; }
-
-div.ForwardLocObservationContainer {
-  border-radius: 5px 5px 0 0; }
-
-div.ForwardLocAction {
-  display: table-cell;
-  width: 99%; }
-
-div.ForwardAction {
-  cursor: pointer;
-  display: table-cell;
-  text-align: center;
-  width: 20px; }
 
 .LocationSelectorAction {
   display: inline-block;
@@ -11767,16 +11707,6 @@ div.ForwardAction {
   min-width: 215px;
   text-align: left; }
 
-.ForwardLocationsDiv {
-  cursor: pointer;
-  display: table;
-  margin: 0;
-  width: 100%; }
-
-.ForwardPadding {
-  overflow-y: auto;
-  padding: 20px 45px; }
-
 .ForwardSplitter {
   border: 1px solid #e9ebeb;
   height: 0;
@@ -11788,19 +11718,6 @@ a.SpecialityButtonForward {
 
 .CursorPointer {
   cursor: pointer; }
-
-.CursorPointer.rotate90 span.icon.icon-fw.icon-expandarrow:before {
-  display: inline-block;
-  text-align: center;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  vertical-align: middle; }
-
-.ListRecords.table-container {
-  width: 100%; }
-
-.ListRecords.table-container > .SegmentedControlItem.table-cell {
-  display: table-cell; }
 
 .flex-block {
   display: -webkit-inline-box;
@@ -28463,7 +28380,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .shadow--xsmall {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-.ShadowSmall, .DropdownMenu, .sp-container, .daterangepicker, div.ui-timepicker-container, .PatientCallCancelStructure, .select2-container .select2-dropdown,
+.ShadowSmall, .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsContent, .DropdownMenu, .sp-container, .daterangepicker, div.ui-timepicker-container, .PatientCallCancelStructure, .select2-container .select2-dropdown,
 .shadow--small {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
@@ -40977,14 +40894,6 @@ a.NoLink {
 
 .desktop.small .AdmissionDateTo .DateInput_Container {
   margin-left: 65px; }
-
-.pain-level {
-  background-color: #ee8918;
-  color: #fff;
-  display: block;
-  font-size: 1.332rem;
-  padding: 5px 0;
-  text-align: center; }
 
 .PendingInvestigationsCounter {
   background-color: red;
