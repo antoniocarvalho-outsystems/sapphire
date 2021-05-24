@@ -33,7 +33,7 @@
 20 .PanelBackground.ConfirmWB
 20 .modalPopup
 
-19 .LayoutBase-secondary
+18 .LayoutBase-secondary
 
 6 .LayoutBase-Content .LayoutBase-secondary.isFixed
 
