@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112007 || Generated: Mon May 24 2021 17:25:20 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112008 || Generated: Tue May 25 2021 11:26:45 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11174,7 +11174,7 @@ div.NoPrompt > div.template-item-input-block {
 
 .LayoutBase-secondary-aside .ResumeDetails {
   height: 100%;
-  padding: 5px 10px !important; }
+  padding: 5px 10px; }
 
 .LayoutBase-secondary-aside .TopInfo {
   height: 100%; }
@@ -11358,13 +11358,6 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 .LayoutBase.Page .Toolbar.Fix {
   margin-left: 0;
   padding-right: 8px; }
-
-.LayoutBase .ClinicianWorkArea____painLevel {
-  display: block;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 210px;
-  z-index: 1; }
 
 .LayoutBase .select2-container--open .select2-dropdown--below {
   z-index: 101; }
@@ -11685,6 +11678,25 @@ html .Page .PatientDetailsLayout {
           border-bottom: none; }
         .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardList .FowardListItem .icon {
           font-size: 1.143em; }
+
+.EmergencySecondaryAside {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  padding: 0 16px; }
+  .EmergencySecondaryAside .ResumeDetails {
+    padding: 0 !important; }
+  .EmergencySecondaryAside .PainLevel {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+            flex: 1;
+    -webkit-box-pack: end;
+            justify-content: flex-end; }
+    .EmergencySecondaryAside .PainLevel .pain-level {
+      width: 200px; }
 
 .pain-level {
   -webkit-box-align: center;
