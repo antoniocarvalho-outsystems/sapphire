@@ -42,8 +42,8 @@
 4 .Menubar__extraContainer
 4 .MenuItem_subItems
 
+3 .LayoutBase-header (previous value: 20)
 
-2 .LayoutBase-header (previous value: 20)
 2 .LayoutBase-emergency (previous value: 18)
 
 1 .LayoutBase-secondary (previous value: 18)
