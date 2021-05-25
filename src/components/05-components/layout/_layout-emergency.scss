@@ -127,14 +127,22 @@
 				justify-content: space-between;
 				min-height: 36px;
 				padding: 0 $sapphire-sizes--medium;
+				position: relative;
 				width: 100%;
 
-				&:hover {
-					background-color: darken($sapphire-light, 5%);
+				&:hover::before {
+					background-color: rgba(158, 158, 158, 0.1);
+					border-radius: $border-radius-default;
+					content: '';
+					display: block;
+					height: 100%;
+					left: 0;
+					position: absolute;
+					width: 100%;
 				}
 
-				&.NoHover:hover {
-					background-color: $sapphire-light;
+				&.NoHover::before {
+					display: none;
 				}
 			}
 
@@ -177,7 +185,7 @@
 				padding: 0 $sapphire-sizes--medium;
 
 				&:hover {
-					background-color: darken($sapphire-light, 5%);
+					background-color: rgba(158, 158, 158, 0.1);
 				}
 
 				&:last-of-type {
