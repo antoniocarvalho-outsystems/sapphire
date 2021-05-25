@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112009 || Generated: Tue May 25 2021 11:34:41 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112010 || Generated: Tue May 25 2021 13:01:35 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11052,7 +11052,7 @@ div.NoPrompt > div.template-item-input-block {
   position: fixed;
   top: 44px;
   width: 100%;
-  z-index: 2; }
+  z-index: 3; }
 
 .LayoutBase-Content .LayoutBase-primary-menu {
   background-color: #fff;
