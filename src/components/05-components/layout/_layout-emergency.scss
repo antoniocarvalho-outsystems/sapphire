@@ -73,6 +73,10 @@
 				}
 			}
 
+			.ForwardLocationsDiv {
+				background-color: $regular-eta;
+			}
+
 			.ForwardLocationsContent {
 				@extend .ShadowSmall;
 
@@ -155,15 +159,8 @@
 			}
 
 			.ObservationCounter {
-				background-color: $sapphire-light;
-				border-radius: $border-radius-default;
-				color: $regular-white;
 				font-family: $font-family-latin-bold;
-				font-size: $font-size-small;
-				height: $sapphire-sizes--large;
 				line-height: $sapphire-sizes--large;
-				text-align: center;
-				width: $sapphire-sizes--large;
 
 				.AR & {
 					font-family: $font-family-arabic-bold;
@@ -197,19 +194,6 @@
 				}
 			}
 		}
-
-		/*.ForwardContainer_Content .Badge {
-			border-radius: 5px;
-			color: white;
-			display: inline-block;
-			font-size: 14px;
-			font-weight: bold;
-			line-height: 25px;
-			padding: 0;
-			text-align: center;
-			vertical-align: middle;
-			width: 25px;
-		}*/
 	}
 }
 
@@ -227,10 +211,6 @@
 		display: flex;
 		flex: 1;
 		justify-content: flex-end;
-
-		.pain-level {
-			width: 200px;
-		}
 	}
 }
 
@@ -239,8 +219,6 @@
 
 	background-color: rgba($regular-orange, 0.2);
 	border-radius: $border-radius-default;
-	color: $regular-orange;
-	font-size: $font-size-heading4;
 	overflow: hidden;
 
 	.pain-level-icon {
@@ -254,9 +232,15 @@
 	}
 
 	.pain-level-text {
+		@include flex-center-vertically();
+
 		flex: 1;
 		font-family: $font-family-latin-bold;
-		text-align: center;
+		padding: 0 $sapphire-sizes--medium;
+
+		span {
+			font-size: $font-size-heading4;
+		}
 
 		.AR & {
 			font-family: $font-family-arabic-bold;
