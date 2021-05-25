@@ -205,6 +205,27 @@
 	}
 }
 
+.EmergencySecondaryAside {
+	@include flex-center-vertically();
+
+	height: 100%;
+	padding: 0 $sapphire-sizes--medium;
+
+	.ResumeDetails {
+		padding: 0 !important;
+	}
+
+	.PainLevel {
+		display: flex;
+		flex: 1;
+		justify-content: flex-end;
+
+		.pain-level {
+			width: 200px;
+		}
+	}
+}
+
 .pain-level {
 	@include flex-center-vertically();
 

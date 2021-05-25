@@ -302,7 +302,7 @@
 	&-secondary-aside {
 		.ResumeDetails {
 			height: 100%;
-			padding: 5px 10px !important;
+			padding: 5px 10px;
 		}
 
 		.TopInfo {
@@ -558,13 +558,6 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 			margin-left: 0;
 			padding-right: 8px;
 		}
-	}
-
-	.ClinicianWorkArea____painLevel {
-		display: block;
-		position: sticky;
-		top: 210px;
-		z-index: 1;
 	}
 
 	.select2-container--open .select2-dropdown--below {
