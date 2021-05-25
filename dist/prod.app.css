@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112010 || Generated: Tue May 25 2021 13:01:35 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112011 || Generated: Tue May 25 2021 16:06:52 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11551,19 +11551,7 @@ html .Page .PatientDetailsLayout {
           font-family: "TajawalBold"; }
   .CTTASLevelAssessmentMainContainer .ForwardableContainer {
     padding: 8px 16px;
-    width: 33%;
-    /*.ForwardContainer_Content .Badge {
-			border-radius: 5px;
-			color: white;
-			display: inline-block;
-			font-size: 14px;
-			font-weight: bold;
-			line-height: 25px;
-			padding: 0;
-			text-align: center;
-			vertical-align: middle;
-			width: 25px;
-		}*/ }
+    width: 33%; }
     .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer {
       height: 36px;
       width: 100%; }
@@ -11588,6 +11576,8 @@ html .Page .PatientDetailsLayout {
         .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .SingleLocation:hover,
         .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsDiv:hover {
           background-color: #f2fffd; }
+      .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsDiv {
+        background-color: #f2fffd; }
       .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsContent {
         background-color: #fff;
         border: 1px solid #d6d6d6;
@@ -11652,15 +11642,8 @@ html .Page .PatientDetailsLayout {
         border-top: transparent;
         padding: 16px; }
       .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ObservationCounter {
-        background-color: #ebebeb;
-        border-radius: 4px;
-        color: #fff;
         font-family: "LatoBold";
-        font-size: 0.857em;
-        height: 24px;
-        line-height: 24px;
-        text-align: center;
-        width: 24px; }
+        line-height: 24px; }
         .AR .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ObservationCounter {
           font-family: "TajawalBold"; }
     .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardList {
@@ -11703,8 +11686,6 @@ html .Page .PatientDetailsLayout {
             flex: 1;
     -webkit-box-pack: end;
             justify-content: flex-end; }
-    .EmergencySecondaryAside .PainLevel .pain-level {
-      width: 200px; }
 
 .pain-level {
   -webkit-box-align: center;
@@ -11713,8 +11694,6 @@ html .Page .PatientDetailsLayout {
   display: flex;
   background-color: rgba(255, 160, 0, 0.2);
   border-radius: 4px;
-  color: #ffa000;
-  font-size: 1.143em;
   overflow: hidden; }
   .pain-level .pain-level-icon {
     -webkit-box-align: center;
@@ -11729,10 +11708,16 @@ html .Page .PatientDetailsLayout {
     height: 36px;
     width: 36px; }
   .pain-level .pain-level-text {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
     -webkit-box-flex: 1;
             flex: 1;
     font-family: "LatoBold";
-    text-align: center; }
+    padding: 0 16px; }
+    .pain-level .pain-level-text span {
+      font-size: 1.143em; }
     .AR .pain-level .pain-level-text {
       font-family: "TajawalBold"; }
 
