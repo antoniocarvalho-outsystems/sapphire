@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112008 || Generated: Tue May 25 2021 11:26:45 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112009 || Generated: Tue May 25 2021 11:34:41 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11631,13 +11631,21 @@ html .Page .PatientDetailsLayout {
                 justify-content: space-between;
         min-height: 36px;
         padding: 0 16px;
+        position: relative;
         width: 100%; }
-        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocContainer:hover,
-        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocObservationContainer:hover {
-          background-color: #dedede; }
-        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocContainer.NoHover:hover,
-        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocObservationContainer.NoHover:hover {
-          background-color: #ebebeb; }
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocContainer:hover::before,
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocObservationContainer:hover::before {
+          background-color: rgba(158, 158, 158, 0.1);
+          border-radius: 4px;
+          content: '';
+          display: block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          width: 100%; }
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocContainer.NoHover::before,
+        .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocObservationContainer.NoHover::before {
+          display: none; }
       .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ObservationRoomCounters {
         background-color: rgba(235, 235, 235, 0.5);
         border-radius: 0 0 4px 4px;
@@ -11673,7 +11681,7 @@ html .Page .PatientDetailsLayout {
                 justify-content: space-between;
         padding: 0 16px; }
         .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardList .FowardListItem:hover {
-          background-color: #dedede; }
+          background-color: rgba(158, 158, 158, 0.1); }
         .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardList .FowardListItem:last-of-type {
           border-bottom: none; }
         .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardList .FowardListItem .icon {
