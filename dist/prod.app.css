@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112011 || Generated: Tue May 25 2021 16:06:52 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112012 || Generated: Wed May 26 2021 16:21:21 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14634,8 +14634,7 @@ div.CircledArrow {
 
 .CollapsibleSidePanel--open .CollapsibleSidePanel__Content {
   visibility: visible;
-  width: 100%;
-  z-index: 1; }
+  width: 100%; }
   .CollapsibleSidePanel--open .CollapsibleSidePanel__Content * {
     opacity: 1; }
 
@@ -14706,7 +14705,6 @@ div.CircledArrow {
 .CollapsibleSidePanel__Content {
   background-color: #fff;
   display: none;
-  height: 100%;
   margin: -16px;
   min-height: 100vh;
   position: absolute;
@@ -14715,8 +14713,7 @@ div.CircledArrow {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   visibility: hidden;
-  width: 0;
-  z-index: 1; }
+  width: 0; }
   .CollapsibleSidePanel__Content * {
     opacity: 0;
     -webkit-transition: all 0.3s ease;
@@ -24042,7 +24039,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     display: table;
     height: 35px;
     padding: 0;
-    position: relative;
     width: 100%; }
     .SectionExpandableInside_header--noBorder {
       border-bottom: none; }
