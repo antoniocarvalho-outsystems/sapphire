@@ -72,7 +72,6 @@
 			this.$iframeContainer.append('<div class="lds-ring OI"><div></div><div></div><div></div><div></div></div>');
 			this.$iframeContainer.find('iframe').load(() => {
 				this.$iframeContainer.find('.lds-ring').fadeOut();
-				console.log('fadeOut 3');
 
 				if (!this.$component.hasClass('SideMenu--tabsTheme')) {
 					//this.$trigger.show();

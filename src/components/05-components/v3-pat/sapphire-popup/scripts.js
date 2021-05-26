@@ -366,12 +366,12 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 		popupToClose.data(POPUP_CLOSING_TAG, POPUP_CLOSING_VALUE);
 
-		setTimeout(function() {
-			popupToClose.dialog('close');
+		//setTimeout(function() {
+		if (popupToClose.length) popupToClose.dialog('close');
 
-			popupToClose.remove();
-			popupContainer.remove();
-		}, 0);
+		popupToClose.remove();
+		popupContainer.remove();
+		//}, 0);
 	};
 
 	const getLinkHREF = widget => {
@@ -408,7 +408,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 		close(null);
 
 		if (isInsideIframe) {
-			const $jParent = window.top.jQuery;
+			const $jParent = window.top.$;
 			$jParent('.os-internal-Popup').remove();
 		}
 
@@ -437,7 +437,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 			window.top.document.body.appendChild(popupContainer);
 
-			_dialog = window.top.jQuery(divToPopup);
+			_dialog = window.top.$(divToPopup);
 		} else {
 			$('<div class="SapphirePopup"></div>').appendTo('body');
 
