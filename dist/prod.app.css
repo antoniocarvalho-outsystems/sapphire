@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112012 || Generated: Wed May 26 2021 16:21:21 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.112013 || Generated: Thu May 27 2021 16:39:18 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -31006,6 +31006,86 @@ ul.os-internal-ui-autocomplete {
   display: -webkit-inline-box;
   display: inline-flex;
   gap: 16px; }
+
+.RemoteAppointment {
+  background-color: #f3f3f3;
+  border: 1px #00bfa5 solid;
+  border-radius: 8px;
+  bottom: 30%;
+  height: 260px;
+  overflow: hidden;
+  position: absolute;
+  right: 22%;
+  width: 33%; }
+  .RemoteAppointment__Header {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    background-color: #00bfa5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 50px;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 0 16px; }
+  .RemoteAppointment__Controls {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    gap: 16px; }
+    .RemoteAppointment__Controls .Minimize,
+    .RemoteAppointment__Controls .Maximize,
+    .RemoteAppointment__Controls .FullScreen {
+      cursor: pointer;
+      height: 20px;
+      width: 20px;
+      z-index: 1; }
+    .RemoteAppointment__Controls .Minimize {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex; }
+      .RemoteAppointment__Controls .Minimize::before {
+        background-color: white;
+        content: '';
+        display: block;
+        height: 1px;
+        width: 20px; }
+    .RemoteAppointment__Controls .Maximize {
+      border: 1px solid white;
+      height: 16px; }
+    .RemoteAppointment__Controls .FullScreen {
+      border: 1px solid white;
+      display: none;
+      position: relative; }
+      .RemoteAppointment__Controls .FullScreen::before, .RemoteAppointment__Controls .FullScreen::after {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        background-color: #00bfa5;
+        content: '';
+        display: block;
+        position: absolute; }
+      .RemoteAppointment__Controls .FullScreen::before {
+        height: 22px;
+        width: 8px; }
+      .RemoteAppointment__Controls .FullScreen::after {
+        height: 8px;
+        width: 22px; }
+  .RemoteAppointment__Content {
+    height: calc(100% - 50px);
+    width: 100%; }
+    .RemoteAppointment__Content > iframe {
+      border: none;
+      height: 100% !important;
+      overflow: hidden;
+      width: 100%; }
+  .RemoteAppointment--callStarted .RemoteAppointment__Controls .FullScreen {
+    display: block; }
 
 .TimelinePage {
   display: -webkit-box;
