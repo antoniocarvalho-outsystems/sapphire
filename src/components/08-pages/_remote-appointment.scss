@@ -1,0 +1,106 @@
+$remote-appt-header-size: 50px;
+
+.RemoteAppointment {
+	background-color: $body-color;
+	border: 1px #00bfa5 solid;
+	border-radius: $border-radius-medium;
+	bottom: 30%;
+	height: 260px;
+	overflow: hidden;
+	position: absolute;
+	right: 22%;
+	width: 33%;
+
+	&__Header {
+		@include flex-center-vertically();
+
+		background-color: #00bfa5;
+		border-top-left-radius: $border-radius-medium;
+		border-top-right-radius: $border-radius-medium;
+		height: $remote-appt-header-size;
+		justify-content: space-between;
+		padding: 0 $sapphire-sizes--medium;
+	}
+
+	&__Controls {
+		@include flex-center-vertically();
+
+		gap: $sapphire-sizes--medium;
+
+		.Minimize,
+		.Maximize,
+		.FullScreen {
+			cursor: pointer;
+			height: 20px;
+			width: 20px;
+			z-index: 1;
+		}
+
+		.Minimize {
+			@include flex-center-vertically();
+
+			&::before {
+				background-color: white;
+				content: '';
+				display: block;
+				height: 1px;
+				width: 20px;
+			}
+		}
+
+		.Maximize {
+			border: 1px solid white;
+			height: $sapphire-sizes--medium;
+		}
+
+		.FullScreen {
+			border: 1px solid white;
+			display: none;
+			position: relative;
+
+			&::before,
+			&::after {
+				@include absolute-center();
+
+				background-color: #00bfa5;
+				content: '';
+				display: block;
+
+				position: absolute;
+			}
+
+			&::before {
+				height: 22px;
+				width: $sapphire-sizes--small;
+			}
+
+			&::after {
+				height: $sapphire-sizes--small;
+				width: 22px;
+			}
+		}
+	}
+
+	&__Content {
+		height: calc(100% - #{$remote-appt-header-size});
+		width: 100%;
+
+		> iframe {
+			border: none;
+			height: 100% !important;
+			overflow: hidden;
+			width: 100%;
+		}
+	}
+
+	&--minimized {
+	}
+
+	&--callStarted {
+		.RemoteAppointment__Controls {
+			.FullScreen {
+				display: block;
+			}
+		}
+	}
+}
