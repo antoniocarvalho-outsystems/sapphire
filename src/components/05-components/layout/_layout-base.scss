@@ -119,7 +119,7 @@
 			&.isFixed {
 				position: sticky;
 				top: 80px;
-				z-index: 18;
+				// z-index: 18;
 
 				~ .LayoutBase-secondary {
 					display: none;
