@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.113002 || Generated: Tue Jun 01 2021 15:20:54 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.113003 || Generated: Tue Jun 01 2021 17:37:24 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -31022,8 +31022,7 @@ ul.os-internal-ui-autocomplete {
     display: -webkit-box;
     display: flex;
     background-color: #5c5c5c;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    cursor: all-scroll;
     height: 50px;
     -webkit-box-pack: justify;
             justify-content: space-between;
