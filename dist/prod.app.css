@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.112014 || Generated: Thu May 27 2021 18:14:00 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.113001 || Generated: Tue Jun 01 2021 12:51:14 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -31010,11 +31010,11 @@ ul.os-internal-ui-autocomplete {
   background-color: #f3f3f3;
   border: 1px #00bfa5 solid;
   border-radius: 8px;
-  bottom: 30%;
   height: 260px;
   overflow: hidden;
   position: absolute;
   right: 22%;
+  top: 30%;
   width: 33%; }
   .RemoteAppointment__Header {
     -webkit-box-align: center;
@@ -31028,6 +31028,13 @@ ul.os-internal-ui-autocomplete {
     -webkit-box-pack: justify;
             justify-content: space-between;
     padding: 0 16px; }
+  .RemoteAppointment__Title {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    color: #fff;
+    gap: 4px; }
   .RemoteAppointment__Controls {
     -webkit-box-align: center;
             align-items: center;
@@ -31035,7 +31042,8 @@ ul.os-internal-ui-autocomplete {
     display: flex;
     gap: 16px; }
     .RemoteAppointment__Controls .Minimize,
-    .RemoteAppointment__Controls .Maximize,
+    .RemoteAppointment__Controls .Small,
+    .RemoteAppointment__Controls .Medium,
     .RemoteAppointment__Controls .FullScreen {
       cursor: pointer;
       height: 20px;
@@ -31052,9 +31060,13 @@ ul.os-internal-ui-autocomplete {
         display: block;
         height: 1px;
         width: 20px; }
-    .RemoteAppointment__Controls .Maximize {
+    .RemoteAppointment__Controls .Small,
+    .RemoteAppointment__Controls .Medium {
       border: 1px solid white;
+      display: none;
       height: 16px; }
+    .RemoteAppointment__Controls .Small {
+      width: 12px; }
     .RemoteAppointment__Controls .FullScreen {
       border: 1px solid white;
       display: none;
@@ -31083,6 +31095,36 @@ ul.os-internal-ui-autocomplete {
       height: 100% !important;
       overflow: hidden;
       width: 100%; }
+  .RemoteAppointment__RestoreWindow {
+    display: none; }
+  .RemoteAppointment--minimized.RemoteAppointment--callStarted {
+    border-color: transparent; }
+    .RemoteAppointment--minimized.RemoteAppointment--callStarted .RemoteAppointment__Header {
+      display: none; }
+    .RemoteAppointment--minimized.RemoteAppointment--callStarted .RemoteAppointment__Content {
+      height: 100%;
+      position: relative; }
+    .RemoteAppointment--minimized.RemoteAppointment--callStarted .RemoteAppointment__RestoreWindow {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      color: #dcdcdc;
+      cursor: pointer;
+      font-size: 20px;
+      height: 50px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 56px; }
+      .RemoteAppointment--minimized.RemoteAppointment--callStarted .RemoteAppointment__RestoreWindow:hover {
+        background-color: #424345; }
+      .RemoteAppointment--minimized.RemoteAppointment--callStarted .RemoteAppointment__RestoreWindow .icon {
+        margin-top: -5px; }
+  .RemoteAppointment--callStarted .RemoteAppointment__Controls .Small {
+    display: block; }
   .RemoteAppointment--callStarted .RemoteAppointment__Controls .FullScreen {
     display: block; }
 
