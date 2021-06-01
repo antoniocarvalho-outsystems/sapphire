@@ -51,7 +51,7 @@
 				top: '50%',
 				right: '50%',
 				left: '50%',
-				width: isCallStarted ? '45vw' : '33%',
+				width: isCallStarted ? '45vw' : '450px',
 				height: isCallStarted ? '45vh' : '260px',
 			});
 		});
@@ -93,22 +93,32 @@
 	};
 
 	const resizeWhenJoin = () => {
-		$('.RemoteAppointment').addClass('RemoteAppointment--callStarted');
+		const $widget = $('.RemoteAppointment');
+		const $smallSize = $widget.find('.Small');
 
-		$('.RemoteAppointment').css({
+		$smallSize.show();
+		$widget.addClass('RemoteAppointment--callStarted');
+
+		$widget.css({
 			height: '45vh',
 			width: '45vw',
 		});
 	};
 
 	const setInitialState = () => {
-		$('.RemoteAppointment').removeClass('RemoteAppointment--callStarted');
+		const $widget = $('.RemoteAppointment');
+		const $smallSize = $widget.find('.Small');
+		const $mediumSize = $widget.find('.Medium');
+
+		$smallSize.hide();
+		$mediumSize.hide();
+		$widget.removeClass('RemoteAppointment--callStarted');
 
 		$('.RemoteAppointment').css({
 			right: '22%',
 			top: '30%',
 			height: '260px',
-			width: '33%',
+			width: '450px',
 		});
 	};
 

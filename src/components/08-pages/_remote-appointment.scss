@@ -2,7 +2,7 @@ $remote-appt-header-size: 50px;
 
 .RemoteAppointment {
 	background-color: $body-color;
-	border: 1px #00bfa5 solid;
+	border: 1px solid $mid-dark-grey;
 	border-radius: $border-radius-medium;
 	height: 260px;
 	overflow: hidden;
@@ -14,7 +14,7 @@ $remote-appt-header-size: 50px;
 	&__Header {
 		@include flex-center-vertically();
 
-		background-color: #00bfa5;
+		background-color: $mid-dark-grey;
 		border-top-left-radius: $border-radius-medium;
 		border-top-right-radius: $border-radius-medium;
 		height: $remote-appt-header-size;
@@ -26,7 +26,7 @@ $remote-appt-header-size: 50px;
 		@include flex-center-vertically();
 
 		color: $regular-white;
-		gap: $sapphire-sizes--xsmall;
+		gap: $sapphire-sizes--small;
 	}
 
 	&__Controls {
@@ -68,7 +68,7 @@ $remote-appt-header-size: 50px;
 		}
 
 		.FullScreen {
-			border: 1px solid white;
+			border: 1px solid $regular-white;
 			display: none;
 			position: relative;
 
@@ -76,7 +76,7 @@ $remote-appt-header-size: 50px;
 			&::after {
 				@include absolute-center();
 
-				background-color: #00bfa5;
+				background-color: $mid-dark-grey;
 				content: '';
 				display: block;
 
