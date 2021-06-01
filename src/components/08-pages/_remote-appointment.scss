@@ -15,8 +15,7 @@ $remote-appt-header-size: 50px;
 		@include flex-center-vertically();
 
 		background-color: $mid-dark-grey;
-		border-top-left-radius: $border-radius-medium;
-		border-top-right-radius: $border-radius-medium;
+		cursor: all-scroll;
 		height: $remote-appt-header-size;
 		justify-content: space-between;
 		padding: 0 $sapphire-sizes--medium;

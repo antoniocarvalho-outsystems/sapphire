@@ -13,7 +13,7 @@
 		$minimize.click(() => {
 			isPreviousSmall = $mediumSize.is(':visible');
 
-			$widget.draggable({ disabled: true });
+			//$widget.draggable({ disabled: true });
 
 			$widget.addClass('RemoteAppointment--minimized');
 			$minimize.hide();
@@ -40,7 +40,7 @@
 		$mediumSize.click(() => {
 			const isCallStarted = $widget.hasClass('RemoteAppointment--callStarted');
 
-			$widget.draggable('enable');
+			//$widget.draggable('enable');
 
 			$widget.removeClass('RemoteAppointment--minimized');
 			$minimize.show();
