@@ -75,7 +75,6 @@
 		const informationWidth = this.$information.width();
 		const actionsWidth = this.$actions.width();
 
-		//debugger;
 
 		this.$demographic.find('.Demographic-item').each(function(index) {
 			itemsTotal += parseInt($(this).outerWidth(true), 10);

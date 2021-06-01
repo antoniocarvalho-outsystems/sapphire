@@ -3,26 +3,56 @@
 		const $widget = $('.RemoteAppointment');
 		const $header = $widget.find('.RemoteAppointment__Header');
 		const $minimize = $header.find('.Minimize');
-		const $maximize = $header.find('.Maximize');
+		const $smallSize = $header.find('.Small');
+		const $mediumSize = $header.find('.Medium');
 		const $fullScreen = $header.find('.FullScreen');
+		const $restoreWindow = $widget.find('.RemoteAppointment__RestoreWindow');
+
+		let isPreviousSmall = $smallSize.is(':visible');
 
 		$minimize.click(() => {
+			isPreviousSmall = $mediumSize.is(':visible');
+
 			$widget.draggable({ disabled: true });
+
 			$widget.addClass('RemoteAppointment--minimized');
+			$minimize.hide();
+			$mediumSize.show();
 
 			$widget.animate(minimizedPosition($header));
 		});
 
-		$maximize.click(() => {
-			$widget.draggable('enable');
+		$smallSize.click(() => {
 			$widget.removeClass('RemoteAppointment--minimized');
+			$minimize.show();
+			$smallSize.hide();
+			$mediumSize.show();
 
 			$widget.animate({
 				top: '50%',
 				right: '50%',
 				left: '50%',
-				width: '30vw',
-				height: '30vh',
+				width: '280px',
+				height: '380px',
+			});
+		});
+
+		$mediumSize.click(() => {
+			const isCallStarted = $widget.hasClass('RemoteAppointment--callStarted');
+
+			$widget.draggable('enable');
+
+			$widget.removeClass('RemoteAppointment--minimized');
+			$minimize.show();
+			$mediumSize.hide();
+			if (isCallStarted) $smallSize.show();
+
+			$widget.animate({
+				top: '50%',
+				right: '50%',
+				left: '50%',
+				width: isCallStarted ? '45vw' : '33%',
+				height: isCallStarted ? '45vh' : '260px',
 			});
 		});
 
@@ -36,22 +66,18 @@
 			}
 		});
 
+		$restoreWindow.click(() => {
+			if (isPreviousSmall) $smallSize.click();
+			else $mediumSize.click();
+		});
+
 		$(document).ready(function() {
-			/*$widget.addClass('RemoteAppointment--minimized');
-
-			$widget.css(minimizedPosition($header));*/
-
 			$widget.draggable({
 				containment: 'window',
 				handle: $header,
 				scroll: false,
 				snap: true,
 				iframeFix: true,
-				/*stop: function(event, ui) {
-					$(event.toElement).one('click', function(e) {
-						e.stopImmediatePropagation();
-					});
-				},*/
 			});
 		});
 	};
@@ -59,9 +85,9 @@
 	const minimizedPosition = $header => {
 		return {
 			top: $(window).height() - $header.height() - 16,
-			right: '56px',
-			left: $(window).width() - 350 - 40 - 16,
-			width: '350px',
+			right: '76px',
+			left: $(window).width() - 280 - 60 - 16,
+			width: '275px',
 			height: '50px',
 		};
 	};
@@ -75,7 +101,18 @@
 		});
 	};
 
+	const setInitialState = () => {
+		$('.RemoteAppointment').removeClass('RemoteAppointment--callStarted');
+
+		$('.RemoteAppointment').css({
+			right: '22%',
+			top: '30%',
+			height: '260px',
+			width: '33%',
+		});
+	};
+
 	const setCallStarted = () => {};
 
-	SapphireWidgets.RemoteAppointment = { create, resizeWhenJoin, setCallStarted };
+	SapphireWidgets.RemoteAppointment = { create, resizeWhenJoin, setCallStarted, setInitialState };
 })(jQuery, window, SapphireWidgets);
