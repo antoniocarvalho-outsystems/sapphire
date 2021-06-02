@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.113003 || Generated: Tue Jun 01 2021 17:37:24 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.113004 || Generated: Wed Jun 02 2021 15:03:14 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17351,14 +17351,7 @@ div.CircledArrow {
   -webkit-box-pack: justify;
           justify-content: space-between;
   padding: 0;
-  /*.FullScreenTabsWrapper__Actions {
-		.tablet &,
-		.desktop.small & {
-			float: right;
-			padding: $sapphire-sizes--small $sapphire-sizes--medium;
-			position: static;
-		}
-	}*/ }
+  position: relative; }
   .FullScreenTabsWrapper_Container .FullScreenTabsWrapper__Tabs {
     bottom: 0;
     display: -webkit-inline-box;
