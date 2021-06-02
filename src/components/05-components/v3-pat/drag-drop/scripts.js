@@ -51,7 +51,7 @@
 					const $target = _this.$area.find('.ui-droppable.ui-sortable');
 
 					if (_this.skin === 'Teams') {
-						$(ui.helper).hide();
+						//$(ui.helper).hide();
 						OsNotifyWidget($target.data('fakenotify'), ui.helper.data('itemtype') + '|' + ui.helper.data('itemid'));
 					} else {
 						OsNotifyWidget(
