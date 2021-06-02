@@ -103,6 +103,33 @@
 			height: '45vh',
 			width: '45vw',
 		});
+
+		var timeout;
+
+		function warning(e) {
+			timeout = setTimeout(function() {
+				// Hack to keep the current tab selected if user doesn't go to another page
+				const iframeContents = window.top.$('.MainContent > iframe').contents();
+				const tabItems = iframeContents.find('.TabWrapper');
+
+				tabItems.removeClass('Active');
+				tabItems.first().addClass('Active');
+			}, 1000);
+
+			return (e.returnValue = 'You are leaving the page');
+		}
+
+		function noTimeout() {
+			clearTimeout(timeout);
+		}
+
+		window.top.onbeforeunload = warning;
+		window.top.unload = noTimeout;
+
+		/*window.top.addEventListener('beforeunload', function(e) {
+			e.preventDefault();
+			e.returnValue = 'Oi mo';
+		});*/
 	};
 
 	const setInitialState = () => {
