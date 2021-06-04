@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.113005 || Generated: Wed Jun 02 2021 15:54:49 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.113006 || Generated: Fri Jun 04 2021 11:47:45 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -30563,7 +30563,7 @@ ul.os-internal-ui-autocomplete {
       margin-left: -17px;
       margin-top: -20px;
       position: absolute;
-      width: calc(100% - 1px); }
+      width: 100%; }
       .AR .ClinicalDocumentTable .CustomTable tr.TableRowExpandable .TableRowExpandable_Content.ColFirst {
         margin-left: 0;
         margin-right: -17px; }
