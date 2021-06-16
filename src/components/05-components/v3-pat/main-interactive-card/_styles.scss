@@ -462,6 +462,23 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	}
 }
 
+.CardsListGeneric {
+	.MainInteractiveCard {
+		margin-bottom: $sapphire-sizes--small;
+
+		.MainInteractiveCard-header {
+			.MainInteractiveCard-header-text-title {
+				max-height: unset;
+			}
+		}
+
+		.CardIcon {
+			height: 40px;
+			width: 40px;
+		}
+	}
+}
+
 // WIP -------------------------->
 
 .MainInteractiveCard {
