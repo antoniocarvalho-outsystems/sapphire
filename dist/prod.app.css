@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.113007 || Generated: Tue Jun 15 2021 16:37:35 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.113008 || Generated: Wed Jun 16 2021 17:48:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19640,6 +19640,14 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     color: #ffa000;
     font-size: 1.143em;
     margin: 0 2px; }
+
+.CardsListGeneric .MainInteractiveCard {
+  margin-bottom: 8px; }
+  .CardsListGeneric .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
+    max-height: unset; }
+  .CardsListGeneric .MainInteractiveCard .CardIcon {
+    height: 40px;
+    width: 40px; }
 
 .MainInteractiveCard:not(.isOpen).ShowEntireTitle .MainInteractiveCard-header-text-title {
   max-height: initial;
