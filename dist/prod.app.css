@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.113008 || Generated: Wed Jun 16 2021 17:48:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.113009 || Generated: Fri Jun 18 2021 17:07:06 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19643,11 +19643,15 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 
 .CardsListGeneric .MainInteractiveCard {
   margin-bottom: 8px; }
+  .CardsListGeneric .MainInteractiveCard.SmallHeader > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
+    line-height: 75px; }
   .CardsListGeneric .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
     max-height: unset; }
+  .CardsListGeneric .MainInteractiveCard .MainInteractiveCard-absolute-actions {
+    background-color: #fff; }
   .CardsListGeneric .MainInteractiveCard .CardIcon {
     height: 40px;
-    width: 40px; }
+    min-width: 40px; }
 
 .MainInteractiveCard:not(.isOpen).ShowEntireTitle .MainInteractiveCard-header-text-title {
   max-height: initial;
@@ -22078,6 +22082,15 @@ a .PersonCard {
     .CalendarWidget__days .Calendar_Weekday a:link,
     .CalendarWidget__days .Calendar_Weekday a:visited {
       font-family: "LatoBold"; }
+    .CalendarWidget__days .Calendar_Weekday > .Calendar_SmallDayLink {
+      color: #adadad;
+      text-decoration: line-through; }
+    .CalendarWidget__days .Calendar_Weekday.CalendarWidget__Selected:hover span.Calendar_SmallDayLink {
+      background-color: #56d3c2; }
+    .CalendarWidget__days .Calendar_Weekday.CalendarWidget__Selected span.Calendar_SmallDayLink {
+      background-color: #00bfa5;
+      color: #ffffff !important;
+      font-family: "LatoBold"; }
   .CalendarWidget__days .Calendar_Weekday_Holiday {
     -webkit-box-align: center;
             align-items: center;
@@ -22136,20 +22149,29 @@ a .PersonCard {
   position: relative; }
   .CalendarWidget__daysNumber a:hover .Calendar_SmallDayLink {
     background-color: #ebebeb; }
-  .CalendarWidget__daysNumber .arrowLeft.green {
+  .CalendarWidget__daysNumber .arrowLeft {
     bottom: 0;
     display: contents;
-    position: absolute; }
-    .CalendarWidget__daysNumber .arrowLeft.green:after {
-      background-color: #7cb342;
-      bottom: 2px;
+    position: absolute;
+    /*&.green {
+				&:after {
+					background-color: $regular-green;
+				}
+			}*/ }
+    .CalendarWidget__daysNumber .arrowLeft:after {
+      border-radius: 4px;
+      bottom: 7px;
       content: ' ';
-      height: 3px;
+      height: 4px;
       left: 50%;
       position: absolute;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
-      width: 20px; }
+      width: 4px; }
+    .CalendarWidget__daysNumber .arrowLeft.orange:after {
+      background-color: #ffa000; }
+    .CalendarWidget__daysNumber .arrowLeft.red:after {
+      background-color: #ff3e2d; }
   .CalendarWidget__daysNumber > a span {
     height: 44px;
     width: 65px; }
@@ -22157,7 +22179,7 @@ a .PersonCard {
     background-color: #ffffff !important;
     border: none !important; }
     .CalendarWidget__daysNumber.CalendarWidget__Selected:hover span.Calendar_SmallDayLink {
-      background-color: #56d3c2; }
+      background-color: #56d3c2 !important; }
     .CalendarWidget__daysNumber.CalendarWidget__Selected .arrowLeft.green {
       display: none; }
     .CalendarWidget__daysNumber.CalendarWidget__Selected span.Calendar_SmallDayLink {
@@ -22177,6 +22199,22 @@ a .PersonCard {
 
 .CalendarWidget .ListRecords {
   text-align: left; }
+  .CalendarWidget .ListRecords > a > .CalendarWidget__daysNumber {
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: #fff;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    padding: 4px;
+    text-align: center;
+    width: calc(100% / 7);
+    z-index: 1;
+    color: #333333;
+    font-family: "LatoBold"; }
+    .CalendarWidget .ListRecords > a > .CalendarWidget__daysNumber:hover .Calendar_SmallDayLink {
+      background-color: #ebebeb; }
 
 .CalendarWidget .CalendarWidget__Selected {
   background-color: #ffffff !important;
@@ -26315,6 +26353,72 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   left: 0%;
   margin-right: 0px;
   right: 100%; }
+
+.SmallBoxSelectable {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 8px;
+  padding: 8px; }
+  .SmallBoxSelectable:hover {
+    background-color: #f2fffd;
+    border-color: #00bfa5; }
+    .SmallBoxSelectable:hover .SmallBoxSelectable__SelectableIcon {
+      background-color: #f2fffd;
+      border-color: #00bfa5; }
+  .SmallBoxSelectable__SelectableIcon {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px; }
+  .SmallBoxSelectable__TitleContainer {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    gap: 8px; }
+  .SmallBoxSelectable__IconTitle {
+    display: -webkit-box;
+    display: flex; }
+  .SmallBoxSelectable__Title {
+    font-family: "LatoBold"; }
+    .AR .SmallBoxSelectable__Title {
+      font-family: "TajawalBold"; }
+  .SmallBoxSelectable__Subtitle {
+    color: #777777;
+    font-size: 0.857em; }
+  .SmallBoxSelectable--selected {
+    background-color: #f2fffd;
+    border-color: #00bfa5; }
+    .SmallBoxSelectable--selected:hover .SmallBoxSelectable__SelectableIcon {
+      background-color: #00bfa5; }
+    .SmallBoxSelectable--selected .SmallBoxSelectable__SelectableIcon {
+      background-color: #00bfa5;
+      border-color: #00bfa5; }
+      .SmallBoxSelectable--selected .SmallBoxSelectable__SelectableIcon::before {
+        background-color: #fff;
+        border-radius: 50%;
+        content: '';
+        display: block;
+        height: 8px;
+        width: 8px; }
+  .SmallBoxSelectable--disabled {
+    background-color: #f3f3f3;
+    pointer-events: none; }
+    .SmallBoxSelectable--disabled .SmallBoxSelectable__SelectableIcon {
+      background-color: #f3f3f3; }
 
 .SpinnerInput_Container > a {
   background-color: #fff;
@@ -31264,7 +31368,9 @@ ul.os-internal-ui-autocomplete {
   grid-template-columns: repeat(auto-fill, 170px);
   -webkit-box-pack: justify;
           justify-content: space-between;
-  row-gap: 6px; }
+  row-gap: 8px; }
+  .SlotContainer .ListRecords .tooltip {
+    width: 100%; }
   .SlotContainer .ListRecords a[id='selected'] {
     display: none; }
 
@@ -36702,26 +36808,6 @@ a.Button.Icon:hover,
   padding: 0px 10px 10px 10px;
   padding-bottom: 6px;
   text-align: center; }
-
-.arrowLeft {
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid #d4e8ef;
-  border-top: 0px solid transparent;
-  height: 0px;
-  left: -1px;
-  pointer-events: none;
-  position: absolute;
-  top: -1px;
-  width: 0px; }
-
-.arrowLeft.orange {
-  border-left: 15px solid #eabe29; }
-
-.arrowLeft.green {
-  border-left: 15px solid #b7d14a; }
-
-.arrowLeft.red {
-  border-left: 15px solid #d8423c; }
 
 .ButtonDisabled {
   filter: alpha(opacity=50);
