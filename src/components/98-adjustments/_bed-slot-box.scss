@@ -2,7 +2,11 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 170px);
 	justify-content: space-between;
-	row-gap: 6px;
+	row-gap: 8px;
+
+	.tooltip {
+		width: 100%;
+	}
 
 	a[id='selected'] {
 		display: none;

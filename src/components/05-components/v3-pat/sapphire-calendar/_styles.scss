@@ -151,6 +151,25 @@
 			a:visited {
 				font-family: $font-family-latin-bold;
 			}
+
+			> .Calendar_SmallDayLink {
+				color: $mid-light-grey;
+				text-decoration: line-through;
+			}
+
+			&.CalendarWidget__Selected {
+				&:hover {
+					span.Calendar_SmallDayLink {
+						background-color: $regular-epsilon;
+					}
+				}
+
+				span.Calendar_SmallDayLink {
+					background-color: $regular-alpha;
+					color: $sapphire-white !important;
+					font-family: $font-family-latin-bold;
+				}
+			}
 		}
 
 		.Calendar_Weekday_Holiday {
@@ -188,20 +207,38 @@
 			}
 		}
 
-		.arrowLeft.green {
+		.arrowLeft {
 			bottom: 0;
 			display: contents;
 			position: absolute;
 
 			&:after {
-				background-color: $regular-green;
-				bottom: 2px;
+				border-radius: 4px;
+				bottom: 7px;
 				content: ' ';
-				height: 3px;
+				height: 4px;
 				left: 50%;
 				position: absolute;
 				transform: translateX(-50%);
-				width: 20px;
+				width: 4px;
+			}
+
+			/*&.green {
+				&:after {
+					background-color: $regular-green;
+				}
+			}*/
+
+			&.orange {
+				&:after {
+					background-color: $regular-orange;
+				}
+			}
+
+			&.red {
+				&:after {
+					background-color: $regular-red;
+				}
 			}
 		}
 
@@ -216,7 +253,7 @@
 
 			&:hover {
 				span.Calendar_SmallDayLink {
-					background-color: $regular-epsilon;
+					background-color: $regular-epsilon !important;
 				}
 			}
 
@@ -246,6 +283,19 @@
 
 	.ListRecords {
 		text-align: left;
+
+		> a > .CalendarWidget__daysNumber {
+			@include common-sapphire-weekdays-style;
+
+			color: $dark-grey;
+			font-family: $font-family-latin-bold;
+
+			&:hover {
+				.Calendar_SmallDayLink {
+					background-color: $sapphire-light;
+				}
+			}
+		}
 	}
 
 	.CalendarWidget__Selected {

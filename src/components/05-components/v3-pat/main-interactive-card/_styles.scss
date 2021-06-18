@@ -466,15 +466,27 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	.MainInteractiveCard {
 		margin-bottom: $sapphire-sizes--small;
 
+		&.SmallHeader {
+			> div > .MainInteractiveCard-body {
+				.MainInteractiveCard-absolute-actions {
+					line-height: $card-small-size-base - 1px;
+				}
+			}
+		}
+
 		.MainInteractiveCard-header {
 			.MainInteractiveCard-header-text-title {
 				max-height: unset;
 			}
 		}
 
+		.MainInteractiveCard-absolute-actions {
+			background-color: $regular-white;
+		}
+
 		.CardIcon {
 			height: 40px;
-			width: 40px;
+			min-width: 40px;
 		}
 	}
 }

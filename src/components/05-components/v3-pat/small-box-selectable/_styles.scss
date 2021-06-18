@@ -1,0 +1,87 @@
+.SmallBoxSelectable {
+	@include flex-center-vertically();
+
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-default;
+	cursor: pointer;
+	gap: $sapphire-sizes--small;
+	padding: $sapphire-sizes--small;
+
+	&:hover {
+		background-color: $regular-eta;
+		border-color: $regular-alpha;
+
+		.SmallBoxSelectable__SelectableIcon {
+			background-color: $regular-eta;
+			border-color: $regular-alpha;
+		}
+	}
+
+	&__SelectableIcon {
+		@include flex-center-total();
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 50%;
+		height: $sapphire-sizes--medium;
+		width: $sapphire-sizes--medium;
+	}
+
+	&__TitleContainer {
+		@include flex-center-vertically();
+
+		gap: $sapphire-sizes--small;
+	}
+
+	&__IconTitle {
+		display: flex;
+	}
+
+	&__Title {
+		font-family: $font-family-latin-bold;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__Subtitle {
+		color: $regular-grey;
+		font-size: $font-size-small;
+	}
+
+	&--selected {
+		background-color: $regular-eta;
+		border-color: $regular-alpha;
+
+		&:hover {
+			.SmallBoxSelectable__SelectableIcon {
+				background-color: $regular-alpha;
+			}
+		}
+
+		.SmallBoxSelectable__SelectableIcon {
+			background-color: $regular-alpha;
+			border-color: $regular-alpha;
+
+			&::before {
+				background-color: $regular-white;
+				border-radius: 50%;
+				content: '';
+				display: block;
+				height: $sapphire-sizes--small;
+				width: $sapphire-sizes--small;
+			}
+		}
+	}
+
+	&--disabled {
+		background-color: $body-color;
+		pointer-events: none;
+
+		.SmallBoxSelectable__SelectableIcon {
+			background-color: $body-color;
+		}
+	}
+}
