@@ -45,7 +45,7 @@
 3 .LayoutBase-header (previous value: 20)
 
 2 .LayoutBase-emergency (previous value: 18)
+2 .LayoutBase-secondary (previous value: 18)
 
-1 .LayoutBase-secondary (previous value: 18)
 1 .LayoutBase-topfixedcontent
 1 .LayoutBase-Wrapper.hasFixedBottom .LayoutBase-bottomfixedcontent
