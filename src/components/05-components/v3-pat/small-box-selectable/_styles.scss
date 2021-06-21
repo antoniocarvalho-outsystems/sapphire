@@ -85,3 +85,63 @@
 		}
 	}
 }
+
+.SmallBoxList {
+	.SmallBoxSelectable {
+		border-color: transparent;
+		border-radius: 0;
+		border-top-color: $light-grey;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+		position: relative;
+
+		&::before {
+			color: $mid-light-grey;
+			content: '\e69d';
+			font-family: $font-family-icons;
+			position: absolute;
+			right: $sapphire-sizes--medium;
+		}
+
+		&:last-of-type {
+			border-bottom-color: $light-grey;
+		}
+
+		&:hover {
+			border-color: $regular-alpha;
+			border-radius: $border-radius-default;
+
+			&::after {
+				background-color: $regular-white;
+				bottom: -2px;
+				content: '';
+				display: block;
+				height: 1px;
+				left: 0;
+				position: absolute;
+				width: 100%;
+				z-index: 1;
+			}
+		}
+
+		.SmallBoxSelectable__SelectableIcon {
+			display: none;
+		}
+
+		&--selected {
+			border-color: $regular-alpha;
+			border-radius: $border-radius-default;
+
+			&::before {
+				color: $regular-alpha;
+			}
+		}
+
+		.AR & {
+			&::before {
+				content: '\e69c';
+				left: $sapphire-sizes--medium;
+				right: auto;
+			}
+		}
+	}
+}
