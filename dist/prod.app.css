@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114002 || Generated: Mon Jun 21 2021 14:42:25 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114003 || Generated: Mon Jun 21 2021 17:11:24 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -26420,6 +26420,45 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     pointer-events: none; }
     .SmallBoxSelectable--disabled .SmallBoxSelectable__SelectableIcon {
       background-color: #f3f3f3; }
+
+.SmallBoxList .SmallBoxSelectable {
+  border-color: transparent;
+  border-radius: 0;
+  border-top-color: #d6d6d6;
+  padding: 8px 16px;
+  position: relative; }
+  .SmallBoxList .SmallBoxSelectable::before {
+    color: #adadad;
+    content: '\e69d';
+    font-family: "Sapphire-Icon-Font";
+    position: absolute;
+    right: 16px; }
+  .SmallBoxList .SmallBoxSelectable:last-of-type {
+    border-bottom-color: #d6d6d6; }
+  .SmallBoxList .SmallBoxSelectable:hover {
+    border-color: #00bfa5;
+    border-radius: 4px; }
+    .SmallBoxList .SmallBoxSelectable:hover::after {
+      background-color: #fff;
+      bottom: -2px;
+      content: '';
+      display: block;
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 1; }
+  .SmallBoxList .SmallBoxSelectable .SmallBoxSelectable__SelectableIcon {
+    display: none; }
+  .SmallBoxList .SmallBoxSelectable--selected {
+    border-color: #00bfa5;
+    border-radius: 4px; }
+    .SmallBoxList .SmallBoxSelectable--selected::before {
+      color: #00bfa5; }
+  .AR .SmallBoxList .SmallBoxSelectable::before {
+    content: '\e69c';
+    left: 16px;
+    right: auto; }
 
 .SpinnerInput_Container > a {
   background-color: #fff;
