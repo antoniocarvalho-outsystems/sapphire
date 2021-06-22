@@ -80,6 +80,19 @@
 		background-color: $body-color;
 		pointer-events: none;
 
+		&.SmallBoxSelectable--selected {
+			border-color: $light-grey;
+
+			.SmallBoxSelectable__SelectableIcon {
+				background-color: $body-color;
+				border-color: $light-grey;
+
+				&::before {
+					background-color: $light-grey;
+				}
+			}
+		}
+
 		.SmallBoxSelectable__SelectableIcon {
 			background-color: $body-color;
 		}
@@ -128,11 +141,23 @@
 		}
 
 		&--selected {
-			border-color: $regular-alpha;
+			border-color: $regular-alpha !important;
 			border-radius: $border-radius-default;
 
 			&::before {
 				color: $regular-alpha;
+			}
+
+			&::after {
+				background-color: $regular-white;
+				bottom: -2px;
+				content: '';
+				display: block;
+				height: 1px;
+				left: 0;
+				position: absolute;
+				width: 100%;
+				z-index: 1;
 			}
 		}
 
