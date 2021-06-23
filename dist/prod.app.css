@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114004 || Generated: Tue Jun 22 2021 17:45:52 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114005 || Generated: Wed Jun 23 2021 12:27:35 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11052,7 +11052,7 @@ div.NoPrompt > div.template-item-input-block {
   position: fixed;
   top: 44px;
   width: 100%;
-  z-index: 3; }
+  z-index: 20; }
 
 .LayoutBase-Content .LayoutBase-primary-menu {
   background-color: #fff;
@@ -11167,7 +11167,7 @@ div.NoPrompt > div.template-item-input-block {
   position: -webkit-sticky;
   position: sticky;
   top: 79px;
-  z-index: 2; }
+  z-index: 3; }
   .LayoutBase-Content .LayoutBase-emergency:not(:empty) + .LayoutBase-secondary {
     top: 132px; }
 
