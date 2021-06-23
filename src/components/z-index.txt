@@ -28,6 +28,7 @@
 
 29 .LayoutBase-MainMenu.PatientDetails_Header
 
+20 .LayoutBase-header
 20 .Header
 20 .PanelBackground.ConfirmWB
 20 .modalPopup
@@ -42,9 +43,8 @@
 4 .Menubar__extraContainer
 4 .MenuItem_subItems
 
-3 .LayoutBase-header (previous value: 20)
+3 .LayoutBase-emergency (previous value: 18)
 
-2 .LayoutBase-emergency (previous value: 18)
 2 .LayoutBase-secondary (previous value: 18)
 
 1 .LayoutBase-topfixedcontent
