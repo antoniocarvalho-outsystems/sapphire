@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114006 || Generated: Wed Jun 23 2021 14:56:13 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114007 || Generated: Wed Jun 23 2021 15:47:53 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16195,9 +16195,8 @@ div.CircledArrow {
     display: block;
     width: 100%; }
   .DragDrop-area .PersonCard .PersonCard_header {
-    border-radius: 4px;
     overflow: hidden;
-    padding-right: 15px; }
+    padding-right: 16px; }
 
 .DragDrop-droppable {
   min-height: 100px;
@@ -20765,11 +20764,8 @@ body.PanelById.PanelOpened {
               justify-content: center;
       height: 100%;
       width: 100%; }
-  .PersonCardPreInfo .PersonCardPreInfo_Time .ColoredBox {
-    padding: 0 8px;
-    width: auto; }
   .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoXSmall {
-    min-width: 165px; }
+    min-width: 125px; }
   .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoSmall {
     min-width: 200px; }
   .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoMedium {
