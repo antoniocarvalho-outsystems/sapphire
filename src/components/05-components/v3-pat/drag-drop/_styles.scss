@@ -63,9 +63,8 @@
 		}
 
 		.PersonCard .PersonCard_header {
-			border-radius: $border-radius-default;
 			overflow: hidden;
-			padding-right: 15px;
+			padding-right: $sapphire-sizes--medium;
 		}
 	}
 
