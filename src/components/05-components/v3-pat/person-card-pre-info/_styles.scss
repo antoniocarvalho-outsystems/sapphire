@@ -42,8 +42,13 @@
 		}
 	}
 
+	.PersonCardPreInfo_Time .ColoredBox {
+		padding: 0 $sapphire-sizes--small;
+		width: auto;
+	}
+
 	.PersonCardPreInfo_Time.PreInfoXSmall {
-		min-width: 125px;
+		min-width: 165px;
 	}
 
 	.PersonCardPreInfo_Time.PreInfoSmall {
