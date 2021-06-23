@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114007 || Generated: Wed Jun 23 2021 15:47:53 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114008 || Generated: Wed Jun 23 2021 15:57:40 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -20765,7 +20765,7 @@ body.PanelById.PanelOpened {
       height: 100%;
       width: 100%; }
   .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoXSmall {
-    min-width: 125px; }
+    min-width: 156px; }
   .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoSmall {
     min-width: 200px; }
   .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoMedium {
