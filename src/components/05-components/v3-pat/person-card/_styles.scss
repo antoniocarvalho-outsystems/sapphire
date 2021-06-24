@@ -524,6 +524,16 @@
 	}
 }
 
+.GenericCardEmergency {
+	.PersonCard {
+		.PersonCardPreInfo,
+		.PersonCard_header,
+		.PersonCard__headerLeftInfo {
+			background-color: $light-red;
+		}
+	}
+}
+
 .AR,
 .FA {
 	.PersonCard {
