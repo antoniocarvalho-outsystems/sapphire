@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114009 || Generated: Wed Jun 23 2021 16:13:08 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114010 || Generated: Thu Jun 24 2021 09:44:51 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21159,6 +21159,11 @@ body.PanelById.PanelOpened {
   .CardTableHeader .PersonCard .PersonCard_header .PersonCard__headerLeftInfo {
     color: #adadad;
     padding: 9.5px 16px; }
+
+.GenericCardEmergency .PersonCard .PersonCardPreInfo,
+.GenericCardEmergency .PersonCard .PersonCard_header,
+.GenericCardEmergency .PersonCard .PersonCard__headerLeftInfo {
+  background-color: #fce3e3; }
 
 .AR .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo,
 .FA .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
