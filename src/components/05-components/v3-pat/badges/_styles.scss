@@ -264,10 +264,13 @@ $prescriptionRadius: 18px;
 	line-height: 12px;
 	max-height: 20px;
 	padding: 2px $border-radius-default;
-	position: relative;
 
 	&--autoHeight {
 		max-height: unset;
+	}
+
+	&--hasNotification {
+		position: relative;
 	}
 
 	&__Notification {
