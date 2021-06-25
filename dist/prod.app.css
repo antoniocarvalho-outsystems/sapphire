@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114015 || Generated: Fri Jun 25 2021 12:01:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114016 || Generated: Fri Jun 25 2021 16:56:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -31374,7 +31374,7 @@ ul.os-internal-ui-autocomplete {
     gap: 8px;
     position: fixed;
     top: calc(100vh - 32px);
-    width: 350px;
+    width: 320px;
     z-index: 1; }
     .TimelinePage__LoadingMore .lds-ring {
       position: unset;
