@@ -108,7 +108,11 @@ function infiniteScrollList(showMoreNavLink, name) {
 	const $list = $('.TimelinePage__Navigation .ListRecords');
 
 	$list.off('mousewheel.TimelineNav').on('mousewheel.TimelineNav', function() {
-		if ($list.height() + $list.scrollTop() + 100 > $list.prop('scrollHeight') && !window.alreadyClicked) {
+		const listHeight = $list.height();
+		const scrollTop = $list.scrollTop();
+		const scrollHeight = $list.prop('scrollHeight');
+
+		if (listHeight + scrollTop + 100 > scrollHeight && scrollTop > 0 && !window.alreadyClicked) {
 			clearTimeout(window.scrollListFinished);
 			window.scrollListFinished = setTimeout(function() {
 				$(`#${showMoreNavLink}`).click();
