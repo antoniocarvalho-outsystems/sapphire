@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114010 || Generated: Thu Jun 24 2021 09:44:51 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114011 || Generated: Fri Jun 25 2021 10:03:27 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13568,10 +13568,11 @@ div.ActionsMenu-item {
   gap: 4px;
   line-height: 12px;
   max-height: 20px;
-  padding: 2px 4px;
-  position: relative; }
+  padding: 2px 4px; }
   .BadgeCustom--autoHeight {
     max-height: unset; }
+  .BadgeCustom--hasNotification {
+    position: relative; }
   .BadgeCustom__Notification {
     position: absolute;
     right: 0;
@@ -20764,7 +20765,7 @@ body.PanelById.PanelOpened {
       height: 100%;
       width: 100%; }
   .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoXSmall {
-    min-width: 156px; }
+    min-width: 160px; }
   .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoSmall {
     min-width: 200px; }
   .PersonCardPreInfo .PersonCardPreInfo_Time.PreInfoMedium {
