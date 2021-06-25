@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114011 || Generated: Fri Jun 25 2021 10:03:27 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114012 || Generated: Fri Jun 25 2021 10:05:57 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11057,7 +11057,8 @@ div.NoPrompt > div.template-item-input-block {
 .LayoutBase-Content .LayoutBase-primary-menu {
   background-color: #fff;
   border-bottom: 1px solid #d6d6d6;
-  padding: 0 16px; }
+  padding: 0 16px;
+  z-index: 1; }
   .LayoutBase-Content .LayoutBase-primary-menu.isFixed {
     position: -webkit-sticky;
     position: sticky;
