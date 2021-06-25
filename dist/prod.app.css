@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114014 || Generated: Fri Jun 25 2021 10:19:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114015 || Generated: Fri Jun 25 2021 12:01:15 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -31316,7 +31316,7 @@ ul.os-internal-ui-autocomplete {
     position: sticky;
     top: 185px; }
     .TimelinePage__Navigation .ListRecords {
-      height: calc(100vh - $timeline-sticky-top-secondary);
+      height: calc(100vh - 185px);
       overflow-y: scroll;
       -ms-scroll-chaining: none;
           overscroll-behavior: contain;
