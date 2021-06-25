@@ -1,9 +1,9 @@
 .CollapsibleSidePanel {
 	&--open & {
 		&__Content {
+			height: 100%;
 			visibility: visible;
 			width: 100%;
-			// z-index: 1;
 
 			* {
 				opacity: 1;
