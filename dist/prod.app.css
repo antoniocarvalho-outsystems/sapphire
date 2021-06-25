@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114013 || Generated: Fri Jun 25 2021 10:13:35 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114014 || Generated: Fri Jun 25 2021 10:19:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -31365,8 +31365,7 @@ ul.os-internal-ui-autocomplete {
     .TimelinePage__Content .LineTimeLine__Header {
       position: -webkit-sticky;
       position: sticky;
-      top: 227px;
-      z-index: 1; }
+      top: 227px; }
   .TimelinePage__LoadingMore {
     -webkit-box-align: center;
             align-items: center;
