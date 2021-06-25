@@ -115,6 +115,7 @@
 			background-color: $regular-white;
 			border-bottom: 1px solid $light-grey;
 			padding: 0 $sapphire-sizes--medium;
+			z-index: 1;
 
 			&.isFixed {
 				position: sticky;
