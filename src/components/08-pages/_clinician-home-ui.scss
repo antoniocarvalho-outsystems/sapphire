@@ -2,6 +2,7 @@
 	@include flex-center-vertically;
 
 	flex-direction: column;
+	margin-top: $sapphire-sizes--xxlarge;
 
 	> * {
 		width: 80%;
