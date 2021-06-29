@@ -140,6 +140,10 @@
 			display: none;
 		}
 
+		.SmallBoxSelectable__Subtitle {
+			font-size: $font-size-normal;
+		}
+
 		&--selected {
 			border-color: $regular-alpha !important;
 			border-radius: $border-radius-default;
