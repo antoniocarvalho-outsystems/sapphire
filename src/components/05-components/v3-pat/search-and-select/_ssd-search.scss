@@ -81,7 +81,13 @@ $searchsd-small-size-base: 36px;
 		}
 
 		.SelectSD_contentWrapper {
+			margin-left: $sapphire-sizes--xxlarge;
 			padding: 0 $sapphire-sizes--small;
+
+			.AR & {
+				margin-left: 0;
+				margin-right: $sapphire-sizes--xxlarge;
+			}
 		}
 
 		.SearchSD__star {
