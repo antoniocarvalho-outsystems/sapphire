@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114018 || Generated: Mon Jun 28 2021 10:39:26 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114019 || Generated: Tue Jun 29 2021 11:36:26 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7285,7 +7285,6 @@ a.LinkReset:link, a.LinkReset:visited {
           justify-content: center;
   background-color: #f3f3f3;
   border-radius: 4px;
-  color: #777777;
   height: 32px;
   width: 32px; }
   .CardIcon.ColorGreen, .CardIcon.ColorOrange {
@@ -12943,7 +12942,7 @@ div.ActionsMenu-tooltip {
     overflow: hidden;
     padding: 0; }
     div.ActionsMenu-tooltip .tooltipster-content > section > .ActionsMenu-tooltip {
-      min-width: auto; }
+      min-width: 130px; }
     div.ActionsMenu-tooltip .tooltipster-content .ButtonList a {
       text-align: start !important; }
   div.ActionsMenu-tooltip .tooltipster-arrow.tooltipster-arrow-left span:after {
@@ -14740,7 +14739,7 @@ div.CircledArrow {
         margin: 8px 0; }
     .CollapsibleSidePanel__Content .PersonCard .PersonCardIcon {
       border-radius: 4px;
-      color: #777777;
+      color: #333333;
       height: 32px;
       width: 32px; }
   .CollapsibleSidePanel__Content .SectionExpandableInside {
@@ -28573,23 +28572,23 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .ShadowXSmall,
 .shadow--xsmall {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.16); }
 
 .ShadowSmall, .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsContent, .DropdownMenu, .sp-container, .daterangepicker, div.ui-timepicker-container, .PatientCallCancelStructure, .select2-container .select2-dropdown,
 .shadow--small {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.16); }
 
 .ShadowMedium, .popup-wrapper > .popup-menu, div.ActionsMenu-tooltip, .tooltip_style, .tooltipster-shadow,
 .shadow--medium {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.16); }
 
 .ShadowLarge, .confirm-container.confirm-wb, .modalPopup.Open .modalPopup_container, .Panel .PanelContainer,
 .shadow--large {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08), 0 10px 16px rgba(0, 0, 0, 0.16); }
 
 .ShadowXLarge,
 .shadow--xlarge {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.16), 0 15px 11px rgba(0, 0, 0, 0.08); }
 
 .ColorAlphaText {
   color: #00bfa5; }
