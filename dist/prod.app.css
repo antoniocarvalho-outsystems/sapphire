@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114024 || Generated: Tue Jun 29 2021 15:31:07 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114025 || Generated: Tue Jun 29 2021 16:13:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -26485,14 +26485,14 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border-color: transparent;
   border-radius: 0;
   border-top-color: #d6d6d6;
-  padding: 8px 16px;
+  padding: 8px;
   position: relative; }
   .SmallBoxList .SmallBoxSelectable::before {
     color: #adadad;
     content: '\e69d';
     font-family: "Sapphire-Icon-Font";
     position: absolute;
-    right: 16px; }
+    right: 8px; }
   .SmallBoxList .SmallBoxSelectable:last-of-type {
     border-bottom-color: #d6d6d6; }
   .SmallBoxList .SmallBoxSelectable:hover {
@@ -26529,7 +26529,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       z-index: 1; }
   .AR .SmallBoxList .SmallBoxSelectable::before {
     content: '\e69c';
-    left: 16px;
+    left: 8px;
     right: auto; }
 
 .SpinnerInput_Container > a {
