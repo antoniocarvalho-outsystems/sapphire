@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114020 || Generated: Tue Jun 29 2021 11:54:16 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114021 || Generated: Tue Jun 29 2021 14:09:48 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11816,6 +11816,32 @@ a.SpecialityButtonForward {
     padding: 0 32px 16px 32px; }
   .LayoutPopup_wrapper {
     width: 100%; }
+
+.LayoutPopupCustom .LayoutPopup .LayoutPopup__body {
+  padding: 0; }
+
+.LayoutPopupCustom .LayoutPopup .LayoutPopup__body__content {
+  margin-top: 0;
+  padding: 0; }
+  .LayoutPopupCustom .LayoutPopup .LayoutPopup__body__content::-webkit-scrollbar {
+    background-color: #f3f3f3; }
+
+.LayoutPopupCustom .LayoutPopup .LayoutPopup__footer {
+  border-top: 1px solid #d6d6d6; }
+  .LayoutPopupCustom .LayoutPopup .LayoutPopup__footer > div {
+    margin-bottom: -32px;
+    padding-top: 16px; }
+
+.LayoutPopupCustom .ContentTwoColumns {
+  display: -webkit-box;
+  display: flex;
+  margin-top: -32px; }
+  .LayoutPopupCustom .ContentTwoColumns > div {
+    -webkit-box-flex: 1;
+            flex: 1;
+    padding: 24px 32px; }
+    .LayoutPopupCustom .ContentTwoColumns > div:last-of-type {
+      background-color: #f3f3f3; }
 
 .AR .LayoutPopup__body,
 .FA .LayoutPopup__body {
@@ -31387,6 +31413,23 @@ ul.os-internal-ui-autocomplete {
   .TimelinePage__Left {
     display: none; } }
 
+.ResultDataCard {
+  border: 1px solid #adadad;
+  border-radius: 4px;
+  min-width: 150px;
+  overflow: hidden; }
+  .ResultDataCard__Header {
+    background-color: #adadad;
+    color: #fff;
+    line-height: 36px;
+    min-height: 36px;
+    padding: 0 16px; }
+  .ResultDataCard__Content {
+    background-color: #fff;
+    line-height: 36px;
+    min-height: 36px;
+    padding: 0 16px; }
+
 .WhiteContainer.MultiPaddingXSmall,
 .AR .WhiteContainer.MultiPaddingXSmall,
 .FA .WhiteContainer.MultiPaddingXSmall {
@@ -41154,16 +41197,6 @@ a.NoLink {
   padding: 5px 0; }
 
 /** 10.9.1 Sapphire Custom Classes > LineNote **/
-.Note_line {
-  background-color: #f2f2f2;
-  border: none;
-  color: #252525;
-  font-size: 12px;
-  height: auto;
-  line-height: 22px;
-  padding: 5px;
-  width: 100%; }
-
 .WR_ReportButtons a {
   margin-top: 0; }
 
