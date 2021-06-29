@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114022 || Generated: Tue Jun 29 2021 15:04:54 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114023 || Generated: Tue Jun 29 2021 15:24:52 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17770,6 +17770,14 @@ div.CircledArrow {
     .HeaderIdentification-photo .PatientHeaderPhotoAge {
       font-family: "LatoBold"; }
   .HeaderIdentification-names {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    height: 56px;
+    -webkit-box-pack: center;
+            justify-content: center;
     white-space: nowrap; }
     .HeaderIdentification-names .HeaderIdentification-primary {
       -webkit-box-align: center;
@@ -17789,6 +17797,9 @@ div.CircledArrow {
           text-overflow: ellipsis; }
         .HeaderIdentification-names .HeaderIdentification-primary-name .patient-ar-fullname span {
           font-family: "TajawalBold"; }
+        .HeaderIdentification-names .HeaderIdentification-primary-name .Ellipsis {
+          display: -webkit-box;
+          display: flex; }
     .HeaderIdentification-names .HeaderIdentification-secondary {
       -webkit-box-align: center;
               align-items: center;
@@ -17808,10 +17819,12 @@ div.CircledArrow {
       .HeaderIdentification-names .HeaderIdentification-secondary .HeaderIdentification-secondary-name .patient-ar-fullname {
         font-family: "TajawalRegular";
         line-height: initial; }
-    .HeaderIdentification-names .HeaderIdentification-primary-otherinformation .CircleElement {
-      font-size: 1.143em;
-      height: 16px;
-      width: 16px; }
+    .HeaderIdentification-names .HeaderIdentification-primary-otherinformation {
+      height: 16px; }
+      .HeaderIdentification-names .HeaderIdentification-primary-otherinformation .CircleElement {
+        font-size: 1.143em;
+        height: 16px;
+        width: 16px; }
 
 div.Toolbar {
   width: 100%; }
