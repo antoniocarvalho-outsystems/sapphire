@@ -52,12 +52,27 @@
 				}
 			}
 		}
+
+		.SelectSD_contentWrapper {
+			margin-left: 0;
+
+			.AR & {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
 	}
 
 	.SelectSD_contentWrapper {
 		flex: 1;
 		margin: 0;
+		margin-left: $sapphire-sizes--xxlarge;
 		padding: 0 $sapphire-sizes--medium;
+
+		.AR & {
+			margin-left: 0;
+			margin-right: $sapphire-sizes--xxlarge;
+		}
 
 		.SelectSD__contentTitle {
 			color: $dark-grey;
