@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114025 || Generated: Tue Jun 29 2021 16:13:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114026 || Generated: Tue Jun 29 2021 17:06:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23056,7 +23056,11 @@ div.List-Star {
     .SearchSD.hasFavorite .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text'] {
       padding: 0 36px; }
   .SearchSD.hasFavorite .SelectSD_contentWrapper {
+    margin-left: 48px;
     padding: 0 8px; }
+    .AR .SearchSD.hasFavorite .SelectSD_contentWrapper {
+      margin-left: 0;
+      margin-right: 48px; }
   .SearchSD.hasFavorite .SearchSD__star {
     -webkit-box-align: center;
             align-items: center;
@@ -23622,11 +23626,7 @@ div.List-Star {
     -webkit-box-flex: 1;
             flex: 1;
     margin: 0;
-    margin-left: 48px;
     padding: 0 16px; }
-    .AR .SelectSD .SelectSD_contentWrapper {
-      margin-left: 0;
-      margin-right: 48px; }
     .SelectSD .SelectSD_contentWrapper .SelectSD__contentTitle {
       color: #333333;
       font-size: 1em;
