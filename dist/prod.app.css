@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114021 || Generated: Tue Jun 29 2021 14:09:48 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114022 || Generated: Tue Jun 29 2021 15:04:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -29180,6 +29180,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .MaxWidthLarge {
   max-width: 70%; }
+
+.MaxWidth1000 {
+  max-width: 1000px; }
 
 .FullWidth {
   width: 100% !important; }
