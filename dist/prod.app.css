@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114019 || Generated: Tue Jun 29 2021 11:36:26 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114020 || Generated: Tue Jun 29 2021 11:54:16 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -26462,6 +26462,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       z-index: 1; }
   .SmallBoxList .SmallBoxSelectable .SmallBoxSelectable__SelectableIcon {
     display: none; }
+  .SmallBoxList .SmallBoxSelectable .SmallBoxSelectable__Subtitle {
+    font-size: 1em; }
   .SmallBoxList .SmallBoxSelectable--selected {
     border-color: #00bfa5 !important;
     border-radius: 4px; }
