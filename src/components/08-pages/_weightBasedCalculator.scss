@@ -1,0 +1,21 @@
+.ResultDataCard {
+	border: 1px solid $mid-light-grey;
+	border-radius: $border-radius-default;
+	min-width: 150px;
+	overflow: hidden;
+
+	&__Header {
+		background-color: $mid-light-grey;
+		color: $regular-white;
+		line-height: 36px;
+		min-height: 36px;
+		padding: 0 $sapphire-sizes--medium;
+	}
+
+	&__Content {
+		background-color: $regular-white;
+		line-height: 36px;
+		min-height: 36px;
+		padding: 0 $sapphire-sizes--medium;
+	}
+}
