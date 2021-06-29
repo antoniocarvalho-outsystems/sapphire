@@ -40,6 +40,10 @@
 	}
 
 	&-names {
+		display: flex;
+		flex-direction: column;
+		height: 56px;
+		justify-content: center;
 		white-space: nowrap;
 
 		.HeaderIdentification-primary {
@@ -62,6 +66,10 @@
 
 				.patient-ar-fullname span {
 					font-family: $font-family-arabic-bold;
+				}
+
+				.Ellipsis {
+					display: flex;
 				}
 			}
 		}
@@ -88,6 +96,8 @@
 		}
 
 		.HeaderIdentification-primary-otherinformation {
+			height: 16px;
+
 			.CircleElement {
 				font-size: $font-size-heading4;
 				height: $sapphire-sizes--medium;
