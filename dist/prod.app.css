@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114023 || Generated: Tue Jun 29 2021 15:24:52 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114024 || Generated: Tue Jun 29 2021 15:31:07 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23613,11 +23613,20 @@ div.List-Star {
       color: #d6d6d6; }
     .SelectSD.hasFavorite .SelectSD__starLink .SelectSD__starWrapper.starSelected .icon {
       color: #00bfa5; }
+  .SelectSD.hasFavorite .SelectSD_contentWrapper {
+    margin-left: 0; }
+    .AR .SelectSD.hasFavorite .SelectSD_contentWrapper {
+      margin-left: 0;
+      margin-right: 0; }
   .SelectSD .SelectSD_contentWrapper {
     -webkit-box-flex: 1;
             flex: 1;
     margin: 0;
+    margin-left: 48px;
     padding: 0 16px; }
+    .AR .SelectSD .SelectSD_contentWrapper {
+      margin-left: 0;
+      margin-right: 48px; }
     .SelectSD .SelectSD_contentWrapper .SelectSD__contentTitle {
       color: #333333;
       font-size: 1em;
