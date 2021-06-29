@@ -104,7 +104,7 @@
 		border-color: transparent;
 		border-radius: 0;
 		border-top-color: $light-grey;
-		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+		padding: $sapphire-sizes--small;
 		position: relative;
 
 		&::before {
@@ -112,7 +112,7 @@
 			content: '\e69d';
 			font-family: $font-family-icons;
 			position: absolute;
-			right: $sapphire-sizes--medium;
+			right: $sapphire-sizes--small;
 		}
 
 		&:last-of-type {
@@ -168,7 +168,7 @@
 		.AR & {
 			&::before {
 				content: '\e69c';
-				left: $sapphire-sizes--medium;
+				left: $sapphire-sizes--small;
 				right: auto;
 			}
 		}
