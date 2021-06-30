@@ -277,6 +277,15 @@
 		width: 100%;
 	}
 
+	&__MonthYearPicker {
+		display: flex;
+		gap: $sapphire-sizes--small;
+
+		select {
+			padding: 0 $sapphire-sizes--small;
+		}
+	}
+
 	> div {
 		width: 100%;
 	}
