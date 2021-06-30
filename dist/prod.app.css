@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114026 || Generated: Tue Jun 29 2021 17:06:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114027 || Generated: Wed Jun 30 2021 09:43:10 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23086,7 +23086,7 @@ div.List-Star {
     border: 1px solid #d6d6d6;
     border-bottom-right-radius: 24px;
     border-top-right-radius: 24px;
-    color: #00bfa5;
+    color: #00ac94;
     cursor: pointer;
     padding: 0 16px; }
     .SearchSD.hasClone .SearchSD_search .SearchSD__cloneWrapper:hover {
