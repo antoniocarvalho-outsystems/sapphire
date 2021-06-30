@@ -1,55 +1,352 @@
-.TabularScroll-left {
-	max-width: 230px;
-}
-
-.TabularScroll-center {
-	overflow-x: hidden;
-}
-
-.TopScrollWrapper {
-	height: 20px;
-	overflow-x: scroll;
-	overflow-y: hidden;
+.hideprefix {
+	height: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
 	visibility: hidden;
-	width: 0;
+	width: 0px;
+}
+.SSHidden {
+	-servicestudio-display: none !important;
 }
 
-.TabularScroll-center-table {
-	overflow-x: scroll;
-	overflow-y: hidden;
-	width: fit-content;
+.RightColumn {
+	align-items: center;
+	display: inline-flex;
+	flex-direction: column;
+	margin-left: 0px;
+	width: 495px;
 }
 
-table - > remove the inline width .TabularScroll .TabularScroll-center td {
-	display: inline-block;
-	padding: 3px 6px;
-	width: 125px;
+@font-face {
+	font-family: 'globerbold';
+	font-style: normal;
+	font-weight: normal;
+	src: url('/SapphireStyleGuide/fonts/glober_bold-webfont.eot');
+	src: url('/SapphireStyleGuide/fonts/glober_bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/SapphireStyleGuide/fonts/glober_bold-webfont.woff') format('woff'),
+		url('/SapphireStyleGuide/fonts/glober_bold-webfont.ttf') format('truetype'),
+		url('/SapphireStyleGuide/fonts/glober_bold-webfont.svg#globerbold') format('svg');
 }
 
-.TabularScroll-left,
-.TabularScroll-right {
-	flex-basis: 100%;
+@font-face {
+	font-family: 'DroidSansMono';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/DroidSansMono.ttf');
+}
+
+body {
+	overflow: hidden;
+}
+
+.AR {
+	font-size: 150%;
+}
+
+.MainPopup {
+	padding: 0;
+}
+
+.DisplayBackground {
+	background-color: #133f60;
+	background-image: url(./img/fundo.png);
+	background-size: cover;
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;
+}
+
+.LatestList {
+	position: relative;
+	width: 470px;
+}
+
+div.LatestTicket {
+	color: whitesmoke;
+	font-family: DroidSansMono;
+	/*font-size: 180px;*/
 	font-weight: 700;
-	min-width: 200px;
-	padding-top: 21px;
+	height: 259px;
+	letter-spacing: 4.74px;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+	width: 100%;
 }
 
-.TabularScroll table {
-	width: auto !important;
+div.LatestLocation {
+	color: whitesmoke;
+	font-family: 'globerbold';
+	font-size: 90px;
+	font-weight: 700;
+	height: 260px;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+	vertical-align: text-top;
+	width: 100%;
 }
 
-.TabularScroll tr {
-	width: 100px;
+/*****************BEGIN ER *******************/
+.LogoER {
+	margin-left: 20px;
+	margin-top: 10px;
 }
 
-.TabularScroll .TabularScroll-center td {
-	width: 100px;
+div.LatestTicketER {
+	font-family: DroidSansMono;
+	/*font-size: 180px;*/
+	font-weight: 700;
+	height: 168px;
+	/*color: orange;*/
+	letter-spacing: 4.74px;
+	line-height: 150px;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+	width: 100%;
 }
 
-.TabularScroll-center {
-	flex-basis: unset;
+div.LatestLocationER {
+	font-family: 'globerbold';
+	font-size: 80px;
+	font-weight: 700;
+	height: 90px;
+	line-height: 90px;
+	max-width: 55rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+	/*color: orange;*/
+	vertical-align: text-top;
+	white-space: nowrap;
+	width: 100%;
 }
 
-.TabularScroll-left {
-	max-width: 230px;
+.LatestBlockER {
+	background-color: #ff9700;
+	border: 5px solid #fff;
+	border-radius: 1%;
+	color: #000;
+	max-width: 390px;
+}
+
+/*This class is applied in the extended properties*/
+.ClockER {
+	line-height: 60px;
+}
+
+div.LatestBlockER .NowCalling {
+	font-family: DroidSansMono;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 47px;
+	text-align: center;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+/***********************END ER ***********************/
+.LatestBlock:nth-child(2) {
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 300px;
+	transform: scale(0.5);
+}
+
+.QueueCard {
+	background-color: white;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+	float: left;
+	height: 230px;
+	margin: 20px 20px 0 0;
+	opacity: 0.9;
+	width: 455px;
+}
+
+div.QueueTicket {
+	border-bottom: 4px solid #ddd;
+	height: 133px;
+	letter-spacing: 5px;
+	line-height: 130px;
+	width: 100%;
+}
+
+div.QeueText {
+	color: #133f60;
+	font-family: DroidSansMono;
+	font-size: 120px;
+	font-weight: 700;
+}
+
+div.QueueLocation {
+	color: #133f60;
+	font-family: 'globerbold';
+	font-size: 70px;
+	font-weight: 700;
+	height: 101px;
+	line-height: 90px;
+	max-width: 55rem;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+
+	white-space: nowrap;
+	width: 100%;
+}
+
+div.JcarouselContainer {
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	width: 1920px;
+}
+
+div.BackgroundEmergency {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 1080px;
+	position: absolute;
+	width: 1920px;
+	z-index: 100;
+}
+
+div.BackgroundEmergencyCenter {
+	background-color: rgba(203, 32, 32, 0.9);
+	-servicestudio-display: none !important;
+	height: 100%;
+}
+
+div.BackgroundEmergencyMessage {
+	color: white;
+	font-family: 'globerbold';
+	font-size: 100px;
+	font-weight: 600;
+	height: 230px;
+	line-height: 115px;
+	margin-top: 100px;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+	width: 1312px;
+}
+
+div.BackgroundEmergencyIcon {
+	height: 86px;
+	height: 29px;
+	height: 255px;
+	/* Style for "Fill 2" */
+	width: 23px;
+
+	/* Style for "Fill 3" */
+	width: 29px;
+
+	/* Style for "Fill 1" */
+	width: 256px;
+}
+
+.Jcarousel {
+	display: block;
+	height: 230px;
+	position: relative;
+	width: 20000em;
+}
+
+.warn-message {
+	left: 0;
+	position: absolute;
+	right: 0;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.show {
+}
+
+.locationEnglish {
+}
+
+.locationArabic {
+}
+
+/* Example of how to make a screen printable
+@media print {
+    .testPrint {
+        background-color: white;
+        color: black;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 15px;
+        font-size: 20px;
+        line-height: 18px;
+    }
+}
+*/
+
+div.FontSize62 {
+	color: white;
+	font-size: 62px;
+}
+
+.FontSizeTL5 {
+	font-size: 150px;
+}
+
+.FontSizeTL6 {
+	font-size: 125px;
+}
+
+.FontSizeTL4 {
+	font-size: 115px;
+}
+
+.FontSizeNT {
+	font-size: 180px;
+}
+
+.FontSizeLL5 {
+}
+
+.FontSizeLL6 {
+}
+
+.FontSizeLLN {
+}
+.FontSizeBoxTL5 {
+}
+
+.FontSizeBoxTL6 {
+}
+
+.FontSizeBoxTLN {
+}
+
+.FontSizeNowCallingLen8 {
+	font-size: 77px;
+}
+
+.FontSizeNowCallingLen5 {
+	font-size: 125px;
+}
+
+.FontSizeNowCallingLen6 {
+	font-size: 102px;
+}
+
+@keyframes blinking {
+	0% {
+		background-color: #ff9700;
+		border: 5px solid #fff;
+		border-radius: 1%;
+		color: #000;
+		max-width: 390px;
+	}
+	100% {
+		background-color: #000;
+		border: 5px solid #fff;
+		border-radius: 1%;
+		color: #ff9700;
+		max-width: 390px;
+	}
+}
+.blink {
+	/* NAME | TIME | ITERATION */
+	animation: blinking 1s 10;
 }
