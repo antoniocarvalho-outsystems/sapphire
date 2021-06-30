@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114028 || Generated: Wed Jun 30 2021 14:22:12 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114029 || Generated: Wed Jun 30 2021 15:47:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -22241,6 +22241,13 @@ a .PersonCard {
   font-family: "LatoBold";
   padding-top: 8px;
   width: 100%; }
+
+.CalendarWidget__MonthYearPicker {
+  display: -webkit-box;
+  display: flex;
+  gap: 8px; }
+  .CalendarWidget__MonthYearPicker select {
+    padding: 0 8px; }
 
 .CalendarWidget > div {
   width: 100%; }
