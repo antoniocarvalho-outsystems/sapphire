@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114032 || Generated: Fri Jul 02 2021 14:32:05 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114033 || Generated: Fri Jul 02 2021 16:20:48 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7773,12 +7773,17 @@ a.LinkReset:link, a.LinkReset:visited {
     transition: all 0.2s; }
 
 .CircledPatient {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+          justify-content: center;
   background-color: #ebebeb;
   border-radius: 50%;
   color: #5c5c5c;
   font-size: 14px;
   height: 48px;
-  line-height: 48px;
   padding: 3px 0px;
   text-align: center;
   width: 48px; }
@@ -31569,6 +31574,15 @@ ul.os-internal-ui-autocomplete {
 
 .Button.Icon {
   min-width: inherit !important; }
+
+.Card .Button, .DashboardWindow .Button,
+.Card a.Button,
+.DashboardWindow a.Button,
+.Card .DropZoneContainer .row .Button,
+.DropZoneContainer .row .Card .Button,
+.DashboardWindow .DropZoneContainer .row .Button,
+.DropZoneContainer .row .DashboardWindow .Button {
+  margin-right: 0; }
 
 .CardBox {
   -servicestudio-background-color: #fff !important;
