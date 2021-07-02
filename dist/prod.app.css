@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114029 || Generated: Wed Jun 30 2021 15:47:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114030 || Generated: Fri Jul 02 2021 09:37:03 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -24910,7 +24910,11 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .LayoutBlank .ShiftContainer_Wrapper,
   .LayoutPOpup .ShiftContainer_Wrapper,
   .DesignSystem .ShiftContainer_Wrapper {
-    border-top: 1px solid #d6d6d6; }
+    border-top: 1px solid #d6d6d6;
+    min-width: -webkit-fill-available;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important; }
   .LayoutBase .ShiftContainer .FlagLine,
   .LayoutBlank .ShiftContainer .FlagLine,
   .LayoutPOpup .ShiftContainer .FlagLine,
@@ -30901,6 +30905,7 @@ ul.os-internal-ui-autocomplete {
   min-width: 170px; }
 
 .PageButtonAction {
+  line-height: 36px;
   margin-top: -58px;
   min-height: 36px; }
 
