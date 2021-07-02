@@ -1,3 +1,8 @@
 .Button.Icon {
 	min-width: inherit !important;
 }
+
+.Card .Button,
+.Card a.Button {
+	margin-right: 0;
+}
