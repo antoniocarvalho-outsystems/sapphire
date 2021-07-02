@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114031 || Generated: Fri Jul 02 2021 14:27:55 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.114032 || Generated: Fri Jul 02 2021 14:32:05 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -17760,16 +17760,14 @@ div.CircledArrow {
       line-height: 56px;
       padding: 0;
       width: 56px; }
-      .HeaderIdentification-photo .CircledPatient .PatientGender.Male {
-        color: #1ba5ec; }
-      .HeaderIdentification-photo .CircledPatient .PatientGender.Female {
-        color: #ec62ce; }
-      .HeaderIdentification-photo .CircledPatient .PatientGender img {
-        border-radius: 50%;
-        height: 56px;
-        -o-object-fit: cover;
-           object-fit: cover;
-        width: 100%; }
+      .HeaderIdentification-photo .CircledPatient .PatientGender {
+        color: #fff; }
+        .HeaderIdentification-photo .CircledPatient .PatientGender img {
+          border-radius: 50%;
+          height: 56px;
+          -o-object-fit: cover;
+             object-fit: cover;
+          width: 100%; }
     .HeaderIdentification-photo .PatientHeaderPhotoAge {
       font-family: "LatoBold"; }
   .HeaderIdentification-names {
