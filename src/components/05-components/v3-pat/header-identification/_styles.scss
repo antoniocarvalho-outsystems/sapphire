@@ -17,13 +17,7 @@
 			width: $sapphire-sizes--largest;
 
 			.PatientGender {
-				&.Male {
-					color: $regular-blue;
-				}
-
-				&.Female {
-					color: $regular-pink;
-				}
+				color: $regular-white;
 
 				img {
 					border-radius: 50%;
