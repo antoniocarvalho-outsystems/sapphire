@@ -42,7 +42,7 @@
 	}
 
 	&.Planned {
-		background: $regular-silver;
+		background: $light-grey;
 		border-top: 3px solid $regular-grey;
 		color: $regular-grey;
 	}
@@ -75,7 +75,7 @@
 	&.DarkPlum,
 	.Tile.DarkPlum {
 		background-color: $regular-white;
-		border-bottom-color: $dark-plum;
+		border-bottom-color: $dark-pink;
 	}
 
 	&.DarkRed,
@@ -111,7 +111,7 @@
 	&.Plum,
 	.Tile.Plum {
 		background-color: $regular-white;
-		border-bottom-color: $regular-plum;
+		border-bottom-color: $regular-pink;
 	}
 
 	&.Red,
@@ -123,7 +123,7 @@
 	&.Silver,
 	.Tile.Silver {
 		background-color: $regular-white;
-		border-bottom-color: $regular-silver;
+		border-bottom-color: $light-grey;
 	}
 
 	&.Transparent,
@@ -135,7 +135,7 @@
 	&.Turquoise,
 	.Tile.Turquoise {
 		background-color: $regular-white;
-		border-bottom-color: $regular-turquoise;
+		border-bottom-color: $regular-blue;
 	}
 
 	&.White,

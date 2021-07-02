@@ -1,7 +1,7 @@
 .SelectSD {
 	@include flex-center-vertically;
 
-	background-color: $sapphire-white;
+	background-color: $regular-white;
 	min-height: 48px;
 	width: 100%;
 
@@ -150,7 +150,7 @@
 	}
 
 	.SelectableList-EmptyMessage {
-		background-color: $sapphire-white;
+		background-color: $regular-white;
 	}
 }
 

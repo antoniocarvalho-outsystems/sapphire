@@ -23,7 +23,7 @@
 				&:active,
 				&.active {
 					background-color: $regular-alpha;
-					color: $sapphire-white;
+					color: $regular-white;
 					font-weight: bold;
 				}
 
@@ -114,7 +114,7 @@
 			margin: 4px 0 2px 0;
 
 			.UserLink {
-				color: $sapphire-white;
+				color: $regular-white;
 
 				&:hover {
 					color: $regular-alpha;
@@ -420,7 +420,7 @@
 		}
 
 		.BadgeNotifications {
-			background-color: $sapphire-warning;
+			background-color: $regular-red;
 			border: 3px solid $sapphire-grey-blue;
 			border-radius: 50%;
 			box-shadow: none;

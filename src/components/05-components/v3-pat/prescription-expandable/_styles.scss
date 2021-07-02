@@ -70,7 +70,7 @@
 			&_header {
 				@include flex-custom-align(center, unset);
 
-				background-color: $light-pink-2;
+				background-color: $light-pink;
 				border: none;
 				border-radius: $border-radius-default;
 				cursor: default;
@@ -125,7 +125,7 @@
 			height: 49px;
 
 			&.Critical {
-				background-color: $light-pink-2;
+				background-color: $light-pink;
 			}
 
 			&.High {

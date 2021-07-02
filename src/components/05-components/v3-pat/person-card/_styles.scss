@@ -238,28 +238,28 @@
 		// Colors
 		&.Male {
 			.PersonCardIcon {
-				background-color: $light-blue-2;
+				background-color: $regular-blue;
 			}
 
 			&.HasBorder {
-				border-left: 2px solid $sapphire-male;
+				border-left: 2px solid $regular-blue;
 
 				.icon {
-					color: $sapphire-male;
+					color: $regular-white;
 				}
 			}
 		}
 
 		&.Female {
 			.PersonCardIcon {
-				background-color: $light-pink-2;
+				background-color: $regular-pink;
 			}
 
 			&.HasBorder {
-				border-left: 2px solid $sapphire-female;
+				border-left: 2px solid $regular-pink;
 
 				.icon {
-					color: $sapphire-female;
+					color: $regular-white;
 				}
 			}
 		}
@@ -554,12 +554,12 @@
 		&__headerLeftInfo {
 			&.Male.HasBorder {
 				border-left: none;
-				border-right: 2px solid $sapphire-male;
+				border-right: 2px solid $regular-blue;
 			}
 
 			&.Female.HasBorder {
 				border-left: none;
-				border-right: 2px solid $sapphire-female;
+				border-right: 2px solid $regular-pink;
 			}
 
 			&.Unidentified.HasBorder {

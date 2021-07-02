@@ -125,7 +125,7 @@
 }*/
 
 .SSD-Bar {
-	background-color: $sapphire-white;
+	background-color: $regular-white;
 	border: 1px solid $light-grey;
 	border-radius: 23px;
 	display: table;
@@ -235,7 +235,7 @@
 			z-index: 1;
 
 			> div {
-				background-color: $sapphire-white;
+				background-color: $regular-white;
 				border: 1px solid $light-grey;
 				border-radius: 50%;
 				color: $regular-beta;
@@ -356,7 +356,7 @@
 }
 
 .SSD-List {
-	background-color: $sapphire-white;
+	background-color: $regular-white;
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
 	height: 0;
 	overflow: hidden;
@@ -476,7 +476,7 @@
 // width: 100%;
 
 // .icon {
-// 	background-color: $sapphire-white;
+// 	background-color: $regular-white;
 // 	border: 1px solid $light-grey;
 // 	border-radius: 2px;
 // 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
@@ -494,7 +494,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div {
 	// margin-right: 12px;
 	// width: 100%;
 	.icon {
-		background-color: $sapphire-white;
+		background-color: $regular-white;
 		border: 1px solid $light-grey;
 		border-radius: 2px;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);

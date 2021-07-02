@@ -51,12 +51,12 @@ $searchsd-small-size-base: 36px;
 			}
 
 			> a:first-child {
-				background-color: $sapphire-white;
+				background-color: $regular-white;
 			}
 		}
 
 		.SearchSD_content {
-			background-color: $sapphire-white;
+			background-color: $regular-white;
 			display: block;
 		}
 	}
@@ -141,7 +141,7 @@ $searchsd-small-size-base: 36px;
 				cursor: pointer;
 
 				input {
-					background-color: $sapphire-white;
+					background-color: $regular-white;
 					pointer-events: none;
 				}
 			}
@@ -252,7 +252,7 @@ $searchsd-small-size-base: 36px;
 		}
 
 		.SearchSD__inputWrapper {
-			background-color: $sapphire-white;
+			background-color: $regular-white;
 			border: 1px solid $light-grey;
 			border-radius: $searchsd-border-radius;
 			flex: 1;
@@ -300,7 +300,7 @@ $searchsd-small-size-base: 36px;
 						&:hover,
 						&:focus,
 						&:focus {
-							background-color: $sapphire-white;
+							background-color: $regular-white;
 						}
 					}
 
@@ -382,7 +382,7 @@ $searchsd-small-size-base: 36px;
 		}
 
 		span.ListRecords span.selected .SelectSD {
-			background-color: $sapphire-white;
+			background-color: $regular-white;
 			box-shadow: inset 0px 0px 0px 1px $regular-beta, 0px 0px 5px 0px $regular-beta;
 			position: relative;
 		}
@@ -405,7 +405,7 @@ $searchsd-small-size-base: 36px;
 		}
 
 		.SearchSD_showMore {
-			background-color: $sapphire-white;
+			background-color: $regular-white;
 			border-radius: 0 0 4px 4px;
 			display: table;
 			text-align: center;
@@ -495,7 +495,7 @@ $searchsd-small-size-base: 36px;
 	.SearchSD___remove {
 		@include flex-center-total();
 
-		background-color: $sapphire-white;
+		background-color: $regular-white;
 		border: 1px solid $light-grey;
 		border-radius: 50%;
 		cursor: pointer;
@@ -633,7 +633,7 @@ $searchsd-small-size-base: 36px;
 		z-index: 20;
 
 		.SSDConfirmBox {
-			background-color: $sapphire-white;
+			background-color: $regular-white;
 			border: solid 1px $light-grey;
 			border-radius: 5px;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);

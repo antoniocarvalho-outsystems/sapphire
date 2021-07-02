@@ -166,7 +166,7 @@
 
 				span.Calendar_SmallDayLink {
 					background-color: $regular-alpha;
-					color: $sapphire-white !important;
+					color: $regular-white !important;
 					font-family: $font-family-latin-bold;
 				}
 			}
@@ -248,7 +248,7 @@
 		}
 
 		&.CalendarWidget__Selected {
-			background-color: $sapphire-white !important;
+			background-color: $regular-white !important;
 			border: none !important;
 
 			&:hover {
@@ -263,7 +263,7 @@
 
 			span.Calendar_SmallDayLink {
 				background-color: $regular-alpha;
-				color: $sapphire-white !important;
+				color: $regular-white !important;
 				font-family: $font-family-latin-bold;
 			}
 		}
@@ -308,7 +308,7 @@
 	}
 
 	.CalendarWidget__Selected {
-		background-color: $sapphire-white !important;
+		background-color: $regular-white !important;
 		border: none !important;
 	}
 }

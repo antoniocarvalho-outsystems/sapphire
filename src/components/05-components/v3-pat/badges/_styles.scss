@@ -1,4 +1,4 @@
-@mixin badges($bgColor: $sapphire-white, $textColor: $regular-blue, $notInverted: true, $borderRadius: 2px) {
+@mixin badges($bgColor: $regular-white, $textColor: $regular-blue, $notInverted: true, $borderRadius: 2px) {
 	@if ($notInverted) {
 		border: 1px solid $bgColor;
 	} @else {
@@ -16,7 +16,7 @@
 	border-radius: $prescriptionRadius;
 
 	&.IsSelected {
-		@include badges($color, $sapphire-white, $borderRadius: $prescriptionRadius);
+		@include badges($color, $regular-white, $borderRadius: $prescriptionRadius);
 	}
 }
 
@@ -53,11 +53,11 @@ $prescriptionRadius: 18px;
 		}
 
 		&.BadgeBlue {
-			@include badges($dark-blue, $sapphire-white);
+			@include badges($dark-blue, $regular-white);
 		}
 
 		&.BadgeWhite {
-			@include badges($sapphire-white, $light-green);
+			@include badges($regular-white, $light-green);
 		}
 
 		&.IconTextRed {
@@ -109,7 +109,7 @@ $prescriptionRadius: 18px;
 
 	.BadgeClassification {
 		border-radius: 4px;
-		color: $sapphire-white;
+		color: $regular-white;
 		display: inline-block;
 		font-family: $font-family-latin-bold;
 		font-size: $font-size-small;
@@ -135,7 +135,7 @@ $prescriptionRadius: 18px;
 
 	.StatusTag {
 		border-radius: 4px 0 4px 4px;
-		color: $sapphire-white;
+		color: $regular-white;
 		font-family: $font-family-latin-bold;
 		font-size: $font-size-small;
 		line-height: 15px;
@@ -206,7 +206,7 @@ $prescriptionRadius: 18px;
 	}
 
 	.BadgeArrow.IsSelected {
-		color: $sapphire-white;
+		color: $regular-white;
 	}
 
 	.BadgeArrow.IsSmallBadge.IsSelected {

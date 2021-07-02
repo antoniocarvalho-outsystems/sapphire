@@ -15,7 +15,7 @@
 	}
 
 	&--disabled {
-		background-color: $sapphire-light-container;
+		background-color: $sapphire-light;
 		color: $light-grey;
 
 		&:focus {
@@ -24,7 +24,7 @@
 
 		&:hover,
 		&:active {
-			background-color: $sapphire-light-container;
+			background-color: $sapphire-light;
 		}
 	}
 

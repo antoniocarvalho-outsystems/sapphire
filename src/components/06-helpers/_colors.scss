@@ -97,12 +97,13 @@
 }
 
 .ColorLightBlue2 {
+	// Deprecated
 	&Text {
-		color: $light-blue-2;
+		color: $light-blue;
 	}
 
 	&BG {
-		background-color: $light-blue-2;
+		background-color: $light-blue;
 	}
 }
 
@@ -279,12 +280,13 @@
 }
 
 .ColorLightPink2 {
+	// Deprecated
 	&Text {
-		color: $light-pink-2;
+		color: $light-pink;
 	}
 
 	&BG {
-		background-color: $light-pink-2;
+		background-color: $light-pink;
 	}
 }
 

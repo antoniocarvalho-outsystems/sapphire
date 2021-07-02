@@ -514,11 +514,11 @@ $date-time-size-base: 40px;
 		}
 
 		td.in-range {
-			background-color: $light-blue-2;
+			background-color: $regular-eta;
 			color: $dark-grey;
 
 			&::before {
-				background-color: $light-blue-2;
+				background-color: $regular-eta;
 			}
 		}
 
@@ -534,7 +534,7 @@ $date-time-size-base: 40px;
 
 		td.start-date {
 			&::before {
-				background-color: $light-blue-2;
+				background-color: $regular-eta;
 				border-bottom-left-radius: 100px;
 				border-top-left-radius: 100px;
 			}
@@ -542,7 +542,7 @@ $date-time-size-base: 40px;
 
 		td.end-date {
 			&::before {
-				background-color: $light-blue-2;
+				background-color: $regular-eta;
 				border-bottom-right-radius: 100px;
 				border-top-right-radius: 100px;
 			}

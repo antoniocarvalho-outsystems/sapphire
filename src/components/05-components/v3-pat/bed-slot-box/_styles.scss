@@ -17,31 +17,31 @@
 	}
 
 	&.Male {
-		background-color: $light-blue-2;
+		background-color: $regular-blue;
 
 		&.Occupied,
 		&.Reserved {
 			.SlotStatus {
-				@include bed-box-status-style($sapphire-male);
+				@include bed-box-status-style($regular-blue);
 			}
 
 			span {
-				color: $sapphire-male;
+				color: $regular-white;
 			}
 		}
 	}
 
 	&.Female {
-		background-color: $light-pink-2;
+		background-color: $regular-pink;
 
 		&.Occupied,
 		&.Reserved {
 			.SlotStatus {
-				@include bed-box-status-style($sapphire-female);
+				@include bed-box-status-style($regular-pink);
 			}
 
 			span {
-				color: $sapphire-female;
+				color: $regular-white;
 			}
 		}
 	}

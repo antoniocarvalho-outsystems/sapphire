@@ -10,13 +10,13 @@
 	width: 48px;
 
 	&.Male {
-		background-color: $light-blue-2;
-		color: $sapphire-male;
+		background-color: $regular-blue;
+		color: $regular-white;
 	}
 
 	&.Female {
-		background-color: $light-pink-2;
-		color: $sapphire-female;
+		background-color: $regular-pink;
+		color: $regular-white;
 	}
 }
 

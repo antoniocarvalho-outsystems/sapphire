@@ -7,7 +7,7 @@
 		width: 100%;
 
 		.ProgressBar_structure {
-			background-color: $sapphire-white;
+			background-color: $regular-white;
 			border: 1px solid $regular-alpha;
 			border-radius: 2px;
 			overflow: hidden;
@@ -112,7 +112,7 @@
 				border-radius: 4px;
 				bottom: 150%;
 				box-shadow: none;
-				color: $sapphire-white;
+				color: $regular-white;
 				content: attr(data-tooltip);
 				font-size: $font-size-normal;
 				margin-bottom: 14px;

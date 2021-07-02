@@ -57,14 +57,14 @@
 
 		&:hover,
 		&:active:hover {
-			background-color: $sapphire-dark-blue2;
+			background-color: $sapphire-dark-blue;
 			color: $regular-white;
 			transition: all 0.2s ease-in;
 		}
 	}
 
 	&__extraContainer {
-		background-color: $sapphire-dark-blue2;
+		background-color: $sapphire-dark-blue;
 		line-height: 40px;
 		max-height: 0;
 		min-width: 206px;
@@ -148,7 +148,7 @@
 	&.active,
 	&:active {
 		&:hover {
-			background-color: $sapphire-dark-blue2;
+			background-color: $sapphire-dark-blue;
 			color: $regular-white;
 		}
 	}
@@ -161,7 +161,7 @@
 
 	&.active,
 	&.activeIndicator {
-		background-color: $sapphire-dark-blue2;
+		background-color: $sapphire-dark-blue;
 		color: $regular-white;
 	}
 
@@ -188,7 +188,7 @@
 	}
 
 	&_subItems {
-		background: $sapphire-dark-blue2;
+		background: $sapphire-dark-blue;
 		border-bottom-left-radius: 3px;
 		border-bottom-right-radius: inherit fvdescsadcv 3px;
 		box-shadow: rgba(14, 64, 86, 0.2) 0 2px 2px;
@@ -213,8 +213,8 @@
 		> a:link,
 		> .ListRecords > a,
 		> .ListRecords > a:link {
-			background-color: $sapphire-dark-blue2;
-			border: 1px solid $sapphire-dark-blue2;
+			background-color: $sapphire-dark-blue;
+			border: 1px solid $sapphire-dark-blue;
 			color: $regular-white;
 			display: block;
 			font-size: 0.857em;
