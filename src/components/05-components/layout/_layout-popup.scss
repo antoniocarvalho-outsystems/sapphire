@@ -26,7 +26,7 @@
 		}
 
 		.LayoutPopup__header__text__title {
-			@extend .Heading1;
+			@extend .Heading2;
 		}
 
 		.LayoutPopup__header__text__subtitle {
@@ -116,6 +116,16 @@
 			}
 		}
 	}
+}
+
+.CustomFooter {
+	background-color: $regular-white;
+	border-top: 1px solid $light-grey;
+	bottom: 0;
+	margin-left: -$sapphire-sizes--xlarge;
+	padding: $sapphire-sizes--medium $sapphire-sizes--xlarge;
+	position: absolute;
+	width: 100%;
 }
 
 .AR,
