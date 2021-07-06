@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115002 || Generated: Tue Jul 06 2021 15:48:29 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115003 || Generated: Tue Jul 06 2021 17:03:04 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19683,21 +19683,27 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     .CardsWrapper__ContentCustom .ListRecords > *:first-child .MainInteractiveCard:not(.isOpen) {
       border-top-color: transparent; }
   .CardsWrapper .MainInteractiveCard.isOpen {
-    margin: 8px 0; }
-    .CardsWrapper .MainInteractiveCard.isOpen::after, .CardsWrapper .MainInteractiveCard.isOpen::before {
-      content: '';
-      display: block;
-      height: 1px;
-      position: absolute;
-      width: 100%; }
-    .CardsWrapper .MainInteractiveCard.isOpen::before {
-      background-color: #d6d6d6;
-      top: -9px;
-      z-index: 1; }
-    .CardsWrapper .MainInteractiveCard.isOpen::after {
-      background-color: #fff;
-      bottom: -2px;
-      z-index: 2; }
+    margin: 8px 0;
+    /*&::after,
+			&::before {
+				content: '';
+				display: block;
+				height: 1px;
+				position: absolute;
+				width: 100%;
+			}
+
+			&::before {
+				background-color: $light-grey;
+				top: -($sapphire-sizes--small + 1px);
+				z-index: 1;
+			}
+
+			&::after {
+				background-color: $regular-white;
+				bottom: -2px;
+				z-index: 2;
+			}*/ }
   .CardsWrapper .MainInteractiveCard:not(.isOpen) {
     border-bottom: none;
     border-left-color: transparent;
