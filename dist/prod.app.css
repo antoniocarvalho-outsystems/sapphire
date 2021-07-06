@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.114034 || Generated: Mon Jul 05 2021 17:32:04 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115001 || Generated: Tue Jul 06 2021 15:24:24 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19726,6 +19726,9 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     height: 40px;
     min-width: 40px; }
 
+.CardResetLineHeightTitle .MainInteractiveCard-header-text-title {
+  max-height: unset; }
+
 .MainInteractiveCard:not(.isOpen).ShowEntireTitle .MainInteractiveCard-header-text-title {
   max-height: initial;
   white-space: unset; }
@@ -21077,11 +21080,11 @@ body.PanelById.PanelOpened {
         color: #fff; }
     .PersonCard__headerLeftInfo.Unidentified .PersonCardIcon {
       background-color: #f3f3f3;
-      color: #777777; }
+      color: #333333; }
     .PersonCard__headerLeftInfo.Unidentified.HasBorder {
       border-left: 2px solid #777777; }
       .PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
-        color: #777777; }
+        color: #333333; }
     .PersonCard__headerLeftInfo.Red {
       background-color: #fff;
       color: #333333; }
@@ -24057,7 +24060,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .SectionExpandableCustom .PlaceHolderTitle {
   font-family: "LatoBold";
-  font-size: 1.143em; }
+  font-size: 1.143em;
+  width: 100%; }
 
 .SectionExpandableCustom .AR .PlaceHolderTitle {
   font-family: "TajawalBold"; }
