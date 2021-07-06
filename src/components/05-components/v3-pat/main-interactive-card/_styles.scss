@@ -493,7 +493,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 .CardResetLineHeightTitle {
 	.MainInteractiveCard-header-text-title {
-		max-height: unset;
+		max-height: unset !important;
 	}
 }
 
