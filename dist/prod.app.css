@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115001 || Generated: Tue Jul 06 2021 15:24:24 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115002 || Generated: Tue Jul 06 2021 15:48:29 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -19727,7 +19727,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     min-width: 40px; }
 
 .CardResetLineHeightTitle .MainInteractiveCard-header-text-title {
-  max-height: unset; }
+  max-height: unset !important; }
 
 .MainInteractiveCard:not(.isOpen).ShowEntireTitle .MainInteractiveCard-header-text-title {
   max-height: initial;
