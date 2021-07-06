@@ -272,14 +272,14 @@
 		&.Unidentified {
 			.PersonCardIcon {
 				background-color: $body-color;
-				color: $regular-grey;
+				color: $dark-grey;
 			}
 
 			&.HasBorder {
 				border-left: 2px solid $regular-grey;
 
 				.icon {
-					color: $regular-grey;
+					color: $dark-grey;
 				}
 			}
 		}

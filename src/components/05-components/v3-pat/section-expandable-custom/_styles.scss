@@ -62,7 +62,8 @@
 
 	.PlaceHolderTitle {
 		font-family: $font-family-latin-bold;
-		font-size: 1.143em;
+		font-size: $font-size-heading4;
+		width: 100%;
 	}
 
 	.AR .PlaceHolderTitle {
