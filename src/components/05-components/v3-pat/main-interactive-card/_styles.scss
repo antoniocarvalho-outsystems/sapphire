@@ -419,7 +419,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		&.isOpen {
 			margin: $sapphire-sizes--small 0;
 
-			&::after,
+			/*&::after,
 			&::before {
 				content: '';
 				display: block;
@@ -438,7 +438,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 				background-color: $regular-white;
 				bottom: -2px;
 				z-index: 2;
-			}
+			}*/
 		}
 
 		&:not(.isOpen) {
