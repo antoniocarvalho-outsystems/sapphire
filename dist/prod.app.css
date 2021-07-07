@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115003 || Generated: Tue Jul 06 2021 17:03:04 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115004 || Generated: Wed Jul 07 2021 17:08:15 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16003,166 +16003,6 @@ div.CircledArrow {
 .FA .Demographic-item .Demographic-item-value {
   font-family: "TajawalBold"; }
 
-.DietBlock {
-  background-color: #f3f3f3;
-  border-right: 1px solid #d6d6d6;
-  display: table;
-  vertical-align: middle;
-  width: 250px; }
-  .DietBlock.IsSelected, .DietBlock.Active {
-    background-color: #fff; }
-  .DietBlock.IsOnEdit {
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.1);
-    margin-top: -16px; }
-    .DietBlock.IsOnEdit .DietBlock_title {
-      display: block; }
-    .DietBlock.IsOnEdit .DietBlock_title,
-    .DietBlock.IsOnEdit .DietBlock_titleEdit {
-      height: 51px;
-      line-height: 51px;
-      width: webkit-fill-available; }
-    .DietBlock.IsOnEdit .DietBlock_edit {
-      display: inline-block;
-      height: 55px;
-      line-height: 50px;
-      vertical-align: middle;
-      width: 100%; }
-    .DietBlock.IsOnEdit .pickerPositionDateTime {
-      position: static; }
-  .DietBlock:not(.IsOnEdit) .DietBlock_title, .DietBlock:not(.IsOnEdit) .DietBlock_titleEdit {
-    line-height: 36px; }
-  .DietBlock:first-of-type {
-    border-left: none; }
-  .DietBlock_title {
-    display: inline-block; }
-  .DietBlock_titleEdit {
-    float: right;
-    padding: 0 10px 0 10px; }
-    .DietBlock_titleEdit:empty {
-      display: none; }
-  .DietBlock_title, .DietBlock_titleEdit {
-    color: #333333;
-    font-family: "LatoBold";
-    height: 35px;
-    line-height: 45px;
-    padding: 0 10px;
-    vertical-align: middle; }
-  .DietBlock_Header {
-    border-top: 1px solid #d6d6d6; }
-  .DietBlock_info {
-    border-top: 1px solid #d6d6d6;
-    color: #333333;
-    display: block;
-    font-size: 1em;
-    height: 50px;
-    line-height: 44px;
-    overflow: hidden;
-    padding: 0 10px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 250px; }
-    .DietBlock_info:nth-child(10) {
-      border-bottom: 1px solid #d6d6d6; }
-    .DietBlock_info .ButtonGroup {
-      vertical-align: -webkit-baseline-middle; }
-    .DietBlock_info .Dropdown, .DietBlock_info .Page .FormField select, .Page .FormField .DietBlock_info select,
-    .DietBlock_info .LayoutPopup .FormField select, .LayoutPopup .FormField .DietBlock_info select,
-    .DietBlock_info .LayoutBlank .FormField select, .LayoutBlank .FormField .DietBlock_info select,
-    .DietBlock_info .LayoutBase .FormField select, .LayoutBase .FormField .DietBlock_info select {
-      border: none;
-      box-shadow: none;
-      width: 100%; }
-      .DietBlock_info .Dropdown:hover, .DietBlock_info .Page .FormField select:hover, .Page .FormField .DietBlock_info select:hover,
-      .DietBlock_info .LayoutPopup .FormField select:hover, .LayoutPopup .FormField .DietBlock_info select:hover,
-      .DietBlock_info .LayoutBlank .FormField select:hover, .LayoutBlank .FormField .DietBlock_info select:hover,
-      .DietBlock_info .LayoutBase .FormField select:hover, .LayoutBase .FormField .DietBlock_info select:hover {
-        background-color: transparent;
-        border: none; }
-      .DietBlock_info .Dropdown:disabled, .DietBlock_info .Page .FormField select:disabled, .Page .FormField .DietBlock_info select:disabled,
-      .DietBlock_info .LayoutPopup .FormField select:disabled, .LayoutPopup .FormField .DietBlock_info select:disabled,
-      .DietBlock_info .LayoutBlank .FormField select:disabled, .LayoutBlank .FormField .DietBlock_info select:disabled,
-      .DietBlock_info .LayoutBase .FormField select:disabled, .LayoutBase .FormField .DietBlock_info select:disabled {
-        cursor: not-allowed; }
-  .DietBlock_edit {
-    display: none; }
-    .DietBlock_edit > div:first-child:empty {
-      display: none; }
-    .DietBlock_edit > div:first-child:empty + div {
-      line-height: 58px;
-      margin: 0;
-      text-align: center;
-      width: 100%; }
-  .DietBlock .Button {
-    margin: 0;
-    padding: 0; }
-
-.FA .DietBlock_titleEdit,
-.AR .DietBlock_titleEdit {
-  float: left; }
-
-.DietWrapper {
-  display: -webkit-box;
-  display: flex;
-  height: 580px;
-  margin: 0;
-  max-width: 100%;
-  overflow: auto;
-  padding-top: 20px; }
-  .DietWrapper::-webkit-scrollbar {
-    height: 6px; }
-  .DietWrapper::-webkit-scrollbar-track {
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px transparent; }
-  .DietWrapper::-webkit-scrollbar-thumb {
-    background-color: #777777;
-    border-radius: 10px; }
-  .DietWrapper::-webkit-scrollbar-thumb:hover {
-    background-color: #777777; }
-  .DietWrapper__field {
-    background-color: #fff;
-    color: #333333;
-    display: block;
-    font-size: 1em;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 10px;
-    width: 174px; }
-  .DietWrapper_blocks,
-  .DietWrapper_blocks > span {
-    display: -webkit-inline-box;
-    display: inline-flex;
-    display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    margin: 0;
-    vertical-align: middle; }
-  .DietWrapper_fields {
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    left: 0;
-    position: -webkit-sticky;
-    position: sticky;
-    vertical-align: middle;
-    width: 174px;
-    z-index: 1; }
-    .DietWrapper_fields > div {
-      border-left: 1px solid #d6d6d6;
-      border-right: 1px solid #d6d6d6;
-      border-top: 1px solid #d6d6d6;
-      white-space: nowrap; }
-      .DietWrapper_fields > div:last-child {
-        border-bottom: 1px solid #d6d6d6; }
-  .DietWrapper__title {
-    background-color: #fff;
-    height: 36px;
-    width: 174px; }
-
 .DoctorBox {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -27092,6 +26932,162 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     font-size: 1em;
     padding-bottom: 32px; }
 
+.TableForm {
+  display: -webkit-box;
+  display: flex;
+  max-width: 100%;
+  overflow: auto;
+  padding-bottom: 8px;
+  padding-top: 24px; }
+  .TableForm::-webkit-scrollbar {
+    background-color: #fff;
+    height: 7px;
+    width: 7px; }
+  .TableForm::-webkit-scrollbar-thumb {
+    border: 5px solid #d6d6d6;
+    border-radius: 4px; }
+  .TableForm__Properties {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    vertical-align: middle;
+    z-index: 2; }
+    .TableForm__Properties > div {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      background-color: #ebebeb;
+      border-left: 1px solid #d6d6d6;
+      border-right: 1px solid #d6d6d6;
+      border-top: 1px solid #d6d6d6;
+      height: 48px;
+      padding: 0 16px;
+      white-space: nowrap;
+      width: 223px; }
+      .TableForm__Properties > div:first-child {
+        border-top-left-radius: 8px; }
+      .TableForm__Properties > div:last-child {
+        border-bottom: 1px solid #d6d6d6;
+        border-bottom-left-radius: 8px; }
+      .AR .TableForm__Properties > div:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 8px; }
+      .AR .TableForm__Properties > div:last-child {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 8px; }
+    .AR .TableForm__Properties {
+      left: unset; }
+  .TableForm__Columns,
+  .TableForm__Columns > span {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row; }
+  .TableForm__Columns > span > *:last-child .TableFormColumn__Header,
+  .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Header {
+    border-top-right-radius: 8px; }
+    .AR .TableForm__Columns > span > *:last-child .TableFormColumn__Header, .AR
+    .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Header {
+      border-left: 1px solid #d6d6d6;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 0; }
+  .TableForm__Columns > span > *:last-child .TableFormColumn__Fields,
+  .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields {
+    border-right: none; }
+    .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > div,
+    .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > div {
+      border-right: 1px solid #d6d6d6; }
+      .AR .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > div, .AR
+      .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > div {
+        border-left: 1px solid #d6d6d6; }
+    .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > div:last-child,
+    .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > div:last-child {
+      border-bottom-right-radius: 8px; }
+      .AR .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > div:last-child, .AR
+      .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > div:last-child {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 0; }
+
+.TableFormColumn--editMode {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: -16px;
+  overflow: hidden;
+  z-index: 1; }
+  .TableFormColumn--editMode .TableFormColumn__Header {
+    height: 64px; }
+  .TableFormColumn--editMode .TableFormColumn__Actions {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid #d6d6d6;
+    gap: 16px;
+    height: 64px;
+    padding: 0 16px;
+    width: 100%; }
+  .TableFormColumn--editMode .pickerPositionDateTime {
+    position: static; }
+
+.TableFormColumn--disabled .TableFormColumn__Header,
+.TableFormColumn--disabled .TableFormColumn__Fields > div {
+  background-color: #f3f3f3;
+  pointer-events: none; }
+
+.TableFormColumn__Header {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  background-color: #fff;
+  border-right: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
+  gap: 8px;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  min-height: 48px;
+  padding: 0 16px; }
+
+.TableFormColumn__Title {
+  -webkit-box-flex: 1;
+          flex: 1; }
+
+.TableFormColumn__Fields {
+  border-right: 1px solid #d6d6d6; }
+  .TableFormColumn__Fields > div {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    background-color: #fff;
+    border-top: 1px solid #d6d6d6;
+    height: 48px;
+    overflow: hidden;
+    padding: 0 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 240px; }
+    .TableFormColumn__Fields > div:last-child {
+      border-bottom: 1px solid #d6d6d6; }
+
+.TableFormColumn__Actions {
+  display: none; }
+
+.TableFormColumn .Button {
+  margin: 0; }
+
+.TableFormColumn input {
+  width: 100%; }
+
 .Tabs_Extended:not(.isClosed) .Tabs__tab.active {
   font-family: "LatoBold"; }
 
@@ -28682,7 +28678,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .shadow--xsmall {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.16); }
 
-.ShadowSmall, .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsContent, .DropdownMenu, .sp-container, .daterangepicker, div.ui-timepicker-container, .PatientCallCancelStructure, .select2-container .select2-dropdown,
+.ShadowSmall, .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsContent, .DropdownMenu, .sp-container, .daterangepicker, div.ui-timepicker-container, .PatientCallCancelStructure, .select2-container .select2-dropdown, .TableFormColumn--editMode,
 .shadow--small {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.16); }
 
