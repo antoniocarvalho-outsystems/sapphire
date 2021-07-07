@@ -1,0 +1,185 @@
+.TableForm {
+	@include component-scroll-root;
+
+	display: flex;
+	max-width: 100%;
+	overflow: auto;
+	padding-bottom: $sapphire-sizes--small;
+	padding-top: $sapphire-sizes--large;
+
+	&__Properties {
+		display: inline-flex;
+		flex-direction: column;
+		left: 0;
+		position: sticky;
+		vertical-align: middle;
+		z-index: 2;
+
+		> div {
+			@include flex-center-vertically(inline-flex);
+
+			background-color: $sapphire-light;
+			border-left: 1px solid $light-grey;
+			border-right: 1px solid $light-grey;
+			border-top: 1px solid $light-grey;
+			height: $sapphire-sizes--xxlarge;
+			padding: 0 $sapphire-sizes--medium;
+			white-space: nowrap;
+			width: 223px;
+
+			&:first-child {
+				border-top-left-radius: $border-radius-medium;
+			}
+
+			&:last-child {
+				border-bottom: 1px solid $light-grey;
+				border-bottom-left-radius: $border-radius-medium;
+			}
+
+			.AR & {
+				&:first-child {
+					border-top-left-radius: 0;
+					border-top-right-radius: $border-radius-medium;
+				}
+
+				&:last-child {
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: $border-radius-medium;
+				}
+			}
+		}
+
+		.AR & {
+			left: unset;
+		}
+	}
+
+	&__Columns {
+		&,
+		> span {
+			display: inline-flex;
+			flex-direction: row;
+		}
+
+		> span > *:last-child,
+		> .TableFormColumn:last-child {
+			.TableFormColumn__Header {
+				border-top-right-radius: $border-radius-medium;
+
+				.AR & {
+					border-left: 1px solid $light-grey;
+					border-top-left-radius: $border-radius-medium;
+					border-top-right-radius: 0;
+				}
+			}
+
+			.TableFormColumn__Fields {
+				border-right: none;
+
+				> div {
+					border-right: 1px solid $light-grey;
+
+					.AR & {
+						border-left: 1px solid $light-grey;
+					}
+				}
+
+				> div:last-child {
+					border-bottom-right-radius: $border-radius-medium;
+
+					.AR & {
+						border-bottom-left-radius: $border-radius-medium;
+						border-bottom-right-radius: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.TableFormColumn {
+	&--editMode {
+		@include shadow-small;
+
+		background-color: $regular-white;
+		border-radius: $border-radius-medium;
+		margin-top: -$sapphire-sizes--medium;
+		overflow: hidden;
+		z-index: 1;
+
+		.TableFormColumn__Header {
+			height: 64px;
+		}
+
+		.TableFormColumn__Actions {
+			@include flex-center-total(inline-flex);
+
+			border-bottom: 1px solid $light-grey;
+			gap: $sapphire-sizes--medium;
+			height: 64px;
+			padding: 0 $sapphire-sizes--medium;
+			width: 100%;
+		}
+
+		.pickerPositionDateTime {
+			position: static;
+		}
+	}
+
+	&--disabled {
+		.TableFormColumn__Header,
+		.TableFormColumn__Fields > div {
+			background-color: $body-color;
+			pointer-events: none;
+		}
+	}
+
+	&__Header {
+		@include flex-center-vertically();
+
+		background-color: $regular-white;
+		border-right: 1px solid $light-grey;
+		border-top: 1px solid $light-grey;
+		gap: $sapphire-sizes--small;
+		justify-content: space-between;
+		min-height: $sapphire-sizes--xxlarge;
+		padding: 0 $sapphire-sizes--medium;
+	}
+
+	&__Title {
+		flex: 1;
+	}
+
+	&__Fields {
+		border-right: 1px solid $light-grey;
+
+		> div {
+			@include flex-center-vertically();
+
+			background-color: $regular-white;
+			border-top: 1px solid $light-grey;
+			height: $sapphire-sizes--xxlarge;
+			overflow: hidden;
+			padding: 0 $sapphire-sizes--medium;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 240px;
+
+			&:last-child {
+				border-bottom: 1px solid $light-grey;
+			}
+		}
+	}
+
+	&__Actions {
+		display: none;
+	}
+
+	.Button {
+		margin: 0;
+	}
+
+	input {
+		width: 100%;
+	}
+}
