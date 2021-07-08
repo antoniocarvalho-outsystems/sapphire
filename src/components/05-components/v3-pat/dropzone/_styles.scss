@@ -26,7 +26,8 @@
 		}
 
 		.dz-message {
-			font-size: 1.429em;
+			font-size: $font-size-heading2;
+			line-height: $sapphire-sizes--largest;
 			margin: 0;
 			text-align: center;
 			width: 100%;
