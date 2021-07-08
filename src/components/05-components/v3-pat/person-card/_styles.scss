@@ -675,10 +675,6 @@ a {
 		}
 	}
 
-	.PersonCard.IsShowTitles .PersonCard_header.IsTransparent {
-		display: none;
-	}
-
 	.PersonCard_header .PersonCard__content {
 		.MinWidthLarge,
 		.MinWidthSmall,
@@ -696,21 +692,11 @@ a {
 	}
 }
 
-.tablet .PersonCard.IsShowTitles .PersonCard__content.IsShowTitles .PersonCard__content__title,
-.phone .PersonCard.IsShowTitles .PersonCard__content.PersonCard__content__title {
-	display: block;
-}
-
 .desktop.hd .PersonCard__content__title,
 .desktop.small .PersonCard__content__title,
 .desktop .PersonCard__content__title,
 .tablet:not(.landscape) .PersonCard__content__title,
 .tablet:not(.portrait) .PersonCard__content__title {
-	display: none;
-}
-
-.tablet .PersonCard .ColLast > div > div:not(:first-child) .PersonCard__content__title,
-.tablet .PersonCard_header.IsShowTitles.IsTransparent {
 	display: none;
 }
 
