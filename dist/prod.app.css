@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115007 || Generated: Thu Jul 08 2021 14:18:37 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115008 || Generated: Thu Jul 08 2021 15:28:21 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -21195,10 +21195,6 @@ a .PersonCard {
   max-width: none;
   text-align: right; }
 
-.tablet .PersonCard.IsShowTitles .PersonCard_header.IsTransparent,
-.desktop.small .SideBarOpen .PersonCard.IsShowTitles .PersonCard_header.IsTransparent {
-  display: none; }
-
 .tablet .PersonCard_header .PersonCard__content .MinWidthLarge,
 .tablet .PersonCard_header .PersonCard__content .MinWidthSmall,
 .tablet .PersonCard_header .PersonCard__content .MinWidthMedium,
@@ -21219,19 +21215,11 @@ a .PersonCard {
 .desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MaxWidthXSmall {
   max-width: auto; }
 
-.tablet .PersonCard.IsShowTitles .PersonCard__content.IsShowTitles .PersonCard__content__title,
-.phone .PersonCard.IsShowTitles .PersonCard__content.PersonCard__content__title {
-  display: block; }
-
 .desktop.hd .PersonCard__content__title,
 .desktop.small .PersonCard__content__title,
 .desktop .PersonCard__content__title,
 .tablet:not(.landscape) .PersonCard__content__title,
 .tablet:not(.portrait) .PersonCard__content__title {
-  display: none; }
-
-.tablet .PersonCard .ColLast > div > div:not(:first-child) .PersonCard__content__title,
-.tablet .PersonCard_header.IsShowTitles.IsTransparent {
   display: none; }
 
 .phone .PersonCard_header {

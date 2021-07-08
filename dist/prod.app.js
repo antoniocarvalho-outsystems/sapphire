@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.115007 || Generated: Thu Jul 08 2021 14:18:37 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.1.115008 || Generated: Thu Jul 08 2021 15:28:21 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -578,7 +578,7 @@ eval("/* Component PatientCallCancel */\r\n(function($, window, document, Sapphi
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component PersonCard */\r\n$(document).ready(function() {\r\n\tvar PersonCardEvent = function() {\r\n\t\t$('.IsExpandable .PersonCard__headerLeftInfo, .IsExpandable .PersonCard__content')\r\n\t\t\t.off('click')\r\n\t\t\t.on('click', function() {\r\n\t\t\t\t$header = $(this).closest('.PersonCard_header');\r\n\t\t\t\t$content = $header.next();\r\n\r\n\t\t\t\tif ($content.children().length > 0) {\r\n\t\t\t\t\tconst $card = $(this).closest('.PersonCard');\r\n\r\n\t\t\t\t\t$content.removeClass('IsExpanded');\r\n\r\n\t\t\t\t\tif ($card.hasClass('IsOpen')) $card.removeClass('IsOpen');\r\n\t\t\t\t\telse {\r\n\t\t\t\t\t\t$content.addClass('IsExpanded');\r\n\r\n\t\t\t\t\t\t$card.addClass('IsOpen');\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t};\r\n\r\n\t$('.StopPropagation').click(function(event) {\r\n\t\tevent.stopPropagation();\r\n\t});\r\n\r\n\tPersonCardEvent();\r\n\r\n\tosAjaxBackend.BindAfterAjaxRequest(PersonCardEvent);\r\n});\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/person-card/scripts.js?");
+eval("/* Component PersonCard */\r\n$(document).ready(function() {\r\n\tvar PersonCardEvent = function() {\r\n\t\t$('.IsExpandable .PersonCard__headerLeftInfo, .IsExpandable .PersonCard__content')\r\n\t\t\t.off('click')\r\n\t\t\t.on('click', function() {\r\n\t\t\t\tconst $header = $(this).closest('.PersonCard_header');\r\n\t\t\t\tconst $onCardOpenLink = $header.find('.PersonCard__OnCardOpenLink');\r\n\t\t\t\tconst $onCardCloseLink = $header.find('.PersonCard__OnCardCloseClick');\r\n\t\t\t\tconst $content = $header.next();\r\n\r\n\t\t\t\tif ($content.children().length > 0) {\r\n\t\t\t\t\tconst $card = $(this).closest('.PersonCard');\r\n\r\n\t\t\t\t\t$content.removeClass('IsExpanded');\r\n\r\n\t\t\t\t\tif ($card.hasClass('IsOpen')) {\r\n\t\t\t\t\t\t$onCardCloseLink.triggerHandler('click');\r\n\t\t\t\t\t\t$card.removeClass('IsOpen');\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\t$onCardOpenLink.triggerHandler('click');\r\n\r\n\t\t\t\t\t\t$content.addClass('IsExpanded');\r\n\r\n\t\t\t\t\t\t$card.addClass('IsOpen');\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t};\r\n\r\n\t$('.StopPropagation').click(function(event) {\r\n\t\tevent.stopPropagation();\r\n\t});\r\n\r\n\tPersonCardEvent();\r\n\r\n\tosAjaxBackend.BindAfterAjaxRequest(PersonCardEvent);\r\n});\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/person-card/scripts.js?");
 
 /***/ }),
 
