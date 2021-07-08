@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115004 || Generated: Wed Jul 07 2021 17:08:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115005 || Generated: Thu Jul 08 2021 10:22:18 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -16307,6 +16307,10 @@ div.CircledArrow {
 
 .DropZoneWrapper {
   display: inline; }
+  .DropZoneWrapper--horizontal .FileUploadDropZone {
+    display: -webkit-box;
+    display: flex;
+    gap: 8px; }
   .DropZoneWrapper .dropzone {
     background: #fff;
     border: 1px dashed #adadad;
