@@ -13,9 +13,20 @@
 		left: 0;
 		position: sticky;
 		vertical-align: middle;
-		z-index: 2;
+		z-index: 1;
 
-		> div {
+		> .ListRecords {
+			display: contents;
+		}
+
+		> div + .ListRecords > div {
+			&:first-child {
+				border-radius: 0;
+			}
+		}
+
+		> div,
+		> .ListRecords > div {
 			@include flex-center-vertically(inline-flex);
 
 			background-color: $sapphire-light;
@@ -76,7 +87,8 @@
 			.TableFormColumn__Fields {
 				border-right: none;
 
-				> div {
+				> div,
+				> .ListRecords > div {
 					border-right: 1px solid $light-grey;
 
 					.AR & {
@@ -84,7 +96,8 @@
 					}
 				}
 
-				> div:last-child {
+				> div:last-child,
+				> .ListRecords > div:last-child {
 					border-bottom-right-radius: $border-radius-medium;
 
 					.AR & {
@@ -105,9 +118,9 @@
 		border-radius: $border-radius-medium;
 		margin-top: -$sapphire-sizes--medium;
 		overflow: hidden;
-		z-index: 1;
 
 		.TableFormColumn__Header {
+			background-color: $regular-white;
 			height: 64px;
 		}
 
@@ -134,10 +147,25 @@
 		}
 	}
 
+	&__ColumnTag {
+		background-color: $white-grey;
+		border: 1px solid $light-grey;
+		border-bottom: none;
+		color: $regular-grey;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-tiny;
+		margin-top: -20px;
+		padding: $sapphire-sizes--xxsmall $sapphire-sizes--medium;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
 	&__Header {
 		@include flex-center-vertically();
 
-		background-color: $regular-white;
+		background-color: $white-grey;
 		border-right: 1px solid $light-grey;
 		border-top: 1px solid $light-grey;
 		gap: $sapphire-sizes--small;
@@ -153,7 +181,8 @@
 	&__Fields {
 		border-right: 1px solid $light-grey;
 
-		> div {
+		> div,
+		> .ListRecords > div {
 			@include flex-center-vertically();
 
 			background-color: $regular-white;
@@ -179,7 +208,9 @@
 		margin: 0;
 	}
 
-	input {
+	input,
+	.DateTimeRangePicker,
+	.DateTimeRangePicker-input {
 		width: 100%;
 	}
 }
