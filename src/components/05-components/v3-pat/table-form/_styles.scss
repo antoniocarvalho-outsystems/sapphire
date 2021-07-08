@@ -129,8 +129,8 @@
 
 			border-bottom: 1px solid $light-grey;
 			gap: $sapphire-sizes--medium;
-			height: 64px;
-			padding: 0 $sapphire-sizes--medium;
+			min-height: 64px;
+			padding: $sapphire-sizes--small $sapphire-sizes--medium;
 			width: 100%;
 		}
 
