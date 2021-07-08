@@ -1,6 +1,11 @@
 .DropZoneWrapper {
 	display: inline;
 
+	&--horizontal .FileUploadDropZone {
+		display: flex;
+		gap: 8px;
+	}
+
 	.dropzone {
 		background: $regular-white;
 		border: 1px dashed $mid-light-grey;
