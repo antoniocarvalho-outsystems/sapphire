@@ -1,3 +1,5 @@
+$table-form-header-height-edit: 43px;
+
 .TableForm {
 	@include component-scroll-root;
 
@@ -5,7 +7,7 @@
 	max-width: 100%;
 	overflow: auto;
 	padding-bottom: $sapphire-sizes--small;
-	padding-top: $sapphire-sizes--large;
+	padding-top: $table-form-header-height-edit;
 
 	&__Properties {
 		display: inline-flex;
@@ -72,8 +74,8 @@
 			flex-direction: row;
 		}
 
-		> span > *:last-child,
-		> .TableFormColumn:last-child {
+		> .TableFormColumn:last-child,
+		> .ListRecords > .TableFormColumn:last-child {
 			.TableFormColumn__Header {
 				border-top-right-radius: $border-radius-medium;
 
@@ -116,21 +118,18 @@
 
 		background-color: $regular-white;
 		border-radius: $border-radius-medium;
-		margin-top: -$sapphire-sizes--medium;
+		margin-top: -$table-form-header-height-edit;
 		overflow: hidden;
 
 		.TableFormColumn__Header {
-			background-color: $regular-white;
-			height: 64px;
+			min-height: 40px;
+			padding: $sapphire-sizes--small;
 		}
 
 		.TableFormColumn__Actions {
-			@include flex-center-total(inline-flex);
-
 			border-bottom: 1px solid $light-grey;
-			gap: $sapphire-sizes--medium;
-			min-height: 64px;
-			padding: $sapphire-sizes--small $sapphire-sizes--medium;
+			display: block;
+			padding: $sapphire-sizes--small;
 			width: 100%;
 		}
 
@@ -147,15 +146,12 @@
 		}
 	}
 
-	&__ColumnTag {
-		background-color: $white-grey;
-		border: 1px solid $light-grey;
-		border-bottom: none;
+	&__TextTag {
 		color: $regular-grey;
+		display: block;
 		font-family: $font-family-latin-bold;
-		font-size: $font-size-tiny;
-		margin-top: -20px;
-		padding: $sapphire-sizes--xxsmall $sapphire-sizes--medium;
+		font-size: 10px;
+		min-height: 15px;
 
 		.AR & {
 			font-family: $font-family-arabic-bold;
@@ -170,8 +166,8 @@
 		border-top: 1px solid $light-grey;
 		gap: $sapphire-sizes--small;
 		justify-content: space-between;
-		min-height: $sapphire-sizes--xxlarge;
-		padding: 0 $sapphire-sizes--medium;
+		min-height: 52px;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
 	}
 
 	&__Title {
@@ -192,7 +188,7 @@
 			padding: 0 $sapphire-sizes--medium;
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			width: 240px;
+			width: 200px;
 
 			&:last-child {
 				border-bottom: 1px solid $light-grey;
@@ -204,13 +200,54 @@
 		display: none;
 	}
 
+	&__FakeItem {
+		@include flex-center-vertically();
+
+		border-bottom: 1px solid $light-grey;
+		height: $sapphire-sizes--xxlarge;
+		margin-bottom: $sapphire-sizes--small;
+		margin-left: -$sapphire-sizes--small;
+		margin-right: -$sapphire-sizes--small;
+		margin-top: -$sapphire-sizes--small;
+		padding: 0 $sapphire-sizes--small;
+	}
+
+	&__EmptyItem {
+		background-color: $white-grey !important;
+	}
+
 	.Button {
 		margin: 0;
+	}
+
+	input {
+		padding: 0 $sapphire-sizes--small;
 	}
 
 	input,
 	.DateTimeRangePicker,
 	.DateTimeRangePicker-input {
 		width: 100%;
+	}
+}
+
+.VitalSignsTable {
+	.TableFormColumn--editMode {
+		margin-top: -23px;
+
+		.TableFormColumn__Fields > div,
+		.TableFormColumn__Fields > .ListRecords > div {
+			overflow: unset;
+			padding: 0 $sapphire-sizes--small;
+			width: 226px;
+
+			.ValidationMessageContainer .ValidationMessage,
+			.ValidationMessageContainer span.ValidationMessage {
+				font-size: 11px;
+				margin-top: 0;
+				text-align: center;
+				width: 100%;
+			}
+		}
 	}
 }
