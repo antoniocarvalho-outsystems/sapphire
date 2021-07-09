@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115009 || Generated: Thu Jul 08 2021 17:21:41 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115010 || Generated: Fri Jul 09 2021 17:07:28 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -18505,9 +18505,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     border: 1px solid #d6d6d6;
     border-left: none;
     border-radius: 0 4px 4px 0;
-    height: 36px;
-    line-height: 35px;
-    padding: 0 10px; }
+    line-height: 34px;
+    padding: 0 8px; }
 
 .AR .InputUnitWrapper_input input,
 .FA .InputUnitWrapper_input input {
@@ -26931,7 +26930,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   max-width: 100%;
   overflow: auto;
   padding-bottom: 8px;
-  padding-top: 24px; }
+  padding-top: 43px; }
   .TableForm::-webkit-scrollbar {
     background-color: #fff;
     height: 7px;
@@ -26992,58 +26991,51 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row; }
-  .TableForm__Columns > span > *:last-child .TableFormColumn__Header,
-  .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Header {
+  .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Header,
+  .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Header {
     border-top-right-radius: 8px; }
-    .AR .TableForm__Columns > span > *:last-child .TableFormColumn__Header, .AR
-    .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Header {
+    .AR .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Header, .AR
+    .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Header {
       border-left: 1px solid #d6d6d6;
       border-top-left-radius: 8px;
       border-top-right-radius: 0; }
-  .TableForm__Columns > span > *:last-child .TableFormColumn__Fields,
-  .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields {
+  .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields,
+  .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Fields {
     border-right: none; }
-    .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > div,
-    .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > .ListRecords > div,
     .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > div,
-    .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div {
+    .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div,
+    .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Fields > div,
+    .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div {
       border-right: 1px solid #d6d6d6; }
-      .AR .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > div, .AR
-      .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > .ListRecords > div, .AR
-      .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > div, .AR
-      .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div {
+      .AR .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > div, .AR
+      .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div, .AR
+      .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Fields > div, .AR
+      .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div {
         border-left: 1px solid #d6d6d6; }
-    .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > div:last-child,
-    .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > .ListRecords > div:last-child,
     .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > div:last-child,
-    .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div:last-child {
+    .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div:last-child,
+    .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Fields > div:last-child,
+    .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div:last-child {
       border-bottom-right-radius: 8px; }
-      .AR .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > div:last-child, .AR
-      .TableForm__Columns > span > *:last-child .TableFormColumn__Fields > .ListRecords > div:last-child, .AR
-      .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > div:last-child, .AR
-      .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div:last-child {
+      .AR .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > div:last-child, .AR
+      .TableForm__Columns > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div:last-child, .AR
+      .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Fields > div:last-child, .AR
+      .TableForm__Columns > .ListRecords > .TableFormColumn:last-child .TableFormColumn__Fields > .ListRecords > div:last-child {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 0; }
 
 .TableFormColumn--editMode {
   background-color: #fff;
   border-radius: 8px;
-  margin-top: -16px;
+  margin-top: -43px;
   overflow: hidden; }
   .TableFormColumn--editMode .TableFormColumn__Header {
-    background-color: #fff;
-    height: 64px; }
+    min-height: 40px;
+    padding: 8px; }
   .TableFormColumn--editMode .TableFormColumn__Actions {
-    -webkit-box-align: center;
-            align-items: center;
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-pack: center;
-            justify-content: center;
     border-bottom: 1px solid #d6d6d6;
-    gap: 16px;
-    min-height: 64px;
-    padding: 8px 16px;
+    display: block;
+    padding: 8px;
     width: 100%; }
   .TableFormColumn--editMode .pickerPositionDateTime {
     position: static; }
@@ -27053,16 +27045,13 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   background-color: #f3f3f3;
   pointer-events: none; }
 
-.TableFormColumn__ColumnTag {
-  background-color: #f9f9f9;
-  border: 1px solid #d6d6d6;
-  border-bottom: none;
+.TableFormColumn__TextTag {
   color: #777777;
+  display: block;
   font-family: "LatoBold";
-  font-size: 0.786em;
-  margin-top: -20px;
-  padding: 2px 16px; }
-  .AR .TableFormColumn__ColumnTag {
+  font-size: 10px;
+  min-height: 15px; }
+  .AR .TableFormColumn__TextTag {
     font-family: "TajawalBold"; }
 
 .TableFormColumn__Header {
@@ -27076,8 +27065,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   gap: 8px;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  min-height: 48px;
-  padding: 0 16px; }
+  min-height: 52px;
+  padding: 8px 16px; }
 
 .TableFormColumn__Title {
   -webkit-box-flex: 1;
@@ -27098,7 +27087,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     padding: 0 16px;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 240px; }
+    width: 200px; }
     .TableFormColumn__Fields > div:last-child,
     .TableFormColumn__Fields > .ListRecords > div:last-child {
       border-bottom: 1px solid #d6d6d6; }
@@ -27106,13 +27095,48 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 .TableFormColumn__Actions {
   display: none; }
 
+.TableFormColumn__FakeItem {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  border-bottom: 1px solid #d6d6d6;
+  height: 48px;
+  margin-bottom: 8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  padding: 0 8px; }
+
+.TableFormColumn__EmptyItem {
+  background-color: #f9f9f9 !important; }
+
 .TableFormColumn .Button {
   margin: 0; }
+
+.TableFormColumn input {
+  padding: 0 8px; }
 
 .TableFormColumn input,
 .TableFormColumn .DateTimeRangePicker,
 .TableFormColumn .DateTimeRangePicker-input {
   width: 100%; }
+
+.VitalSignsTable .TableFormColumn--editMode {
+  margin-top: -23px; }
+  .VitalSignsTable .TableFormColumn--editMode .TableFormColumn__Fields > div,
+  .VitalSignsTable .TableFormColumn--editMode .TableFormColumn__Fields > .ListRecords > div {
+    overflow: unset;
+    padding: 0 8px;
+    width: 226px; }
+    .VitalSignsTable .TableFormColumn--editMode .TableFormColumn__Fields > div .ValidationMessageContainer .ValidationMessage,
+    .VitalSignsTable .TableFormColumn--editMode .TableFormColumn__Fields > div .ValidationMessageContainer span.ValidationMessage,
+    .VitalSignsTable .TableFormColumn--editMode .TableFormColumn__Fields > .ListRecords > div .ValidationMessageContainer .ValidationMessage,
+    .VitalSignsTable .TableFormColumn--editMode .TableFormColumn__Fields > .ListRecords > div .ValidationMessageContainer span.ValidationMessage {
+      font-size: 11px;
+      margin-top: 0;
+      text-align: center;
+      width: 100%; }
 
 .Tabs_Extended:not(.isClosed) .Tabs__tab.active {
   font-family: "LatoBold"; }
