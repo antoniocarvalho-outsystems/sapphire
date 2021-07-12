@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115012 || Generated: Mon Jul 12 2021 13:54:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115013 || Generated: Mon Jul 12 2021 16:06:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -26980,6 +26980,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   .TableForm::-webkit-scrollbar-thumb {
     border: 5px solid #d6d6d6;
     border-radius: 4px; }
+  .TableForm--scrollDisabled {
+    overflow: hidden; }
   .TableForm__Properties {
     display: -webkit-inline-box;
     display: inline-flex;
@@ -26995,7 +26997,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
       display: contents; }
     .TableForm__Properties > div + .ListRecords > div:first-child {
       border-radius: 0; }
-    .TableForm__Properties > div,
+    .TableForm__Properties > div:not(.TableForm__Properties),
     .TableForm__Properties > .ListRecords > div {
       -webkit-box-align: center;
               align-items: center;
@@ -27009,18 +27011,18 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
       padding: 0 16px;
       white-space: nowrap;
       width: 223px; }
-      .TableForm__Properties > div:first-child,
+      .TableForm__Properties > div:not(.TableForm__Properties):first-child,
       .TableForm__Properties > .ListRecords > div:first-child {
         border-top-left-radius: 8px; }
-      .TableForm__Properties > div:last-child,
+      .TableForm__Properties > div:not(.TableForm__Properties):last-child,
       .TableForm__Properties > .ListRecords > div:last-child {
         border-bottom: 1px solid #d6d6d6;
         border-bottom-left-radius: 8px; }
-      .AR .TableForm__Properties > div:first-child, .AR
+      .AR .TableForm__Properties > div:not(.TableForm__Properties):first-child, .AR
       .TableForm__Properties > .ListRecords > div:first-child {
         border-top-left-radius: 0;
         border-top-right-radius: 8px; }
-      .AR .TableForm__Properties > div:last-child, .AR
+      .AR .TableForm__Properties > div:not(.TableForm__Properties):last-child, .AR
       .TableForm__Properties > .ListRecords > div:last-child {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 8px; }
@@ -27070,12 +27072,17 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   background-color: #fff;
   border-radius: 8px;
   margin-top: -43px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
   .TableFormColumn--editMode .TableFormColumn__Header {
+    border: none;
+    border-radius: 8px 8px 0 0;
     min-height: 40px;
     padding: 8px; }
+  .TableFormColumn--editMode .TableFormColumn__Fields {
+    border: none; }
   .TableFormColumn--editMode .TableFormColumn__Actions {
-    border-bottom: 1px solid #d6d6d6;
     display: block;
     padding: 8px;
     width: 100%; }
