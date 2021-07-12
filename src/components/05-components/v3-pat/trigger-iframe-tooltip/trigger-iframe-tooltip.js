@@ -27,6 +27,8 @@
 			functionReady: function(instance, helper) {
 				$(helper).css({ visibility: 'hidden' });
 
+				if (config.noPadding) $('.tooltipster-content').addClass('tooltipster--noPadding');
+
 				setTimeout(function() {
 					$('.tooltipster-base').css({
 						visibility: 'visible',

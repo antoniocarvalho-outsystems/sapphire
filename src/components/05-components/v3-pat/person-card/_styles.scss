@@ -641,6 +641,12 @@ a {
 .desktop.small .SideBarOpen {
 	.PersonCard:not(.LeftSideHidden) {
 		.PersonCard {
+			&.IsExpandable {
+				.PersonCard__content {
+					margin-left: 54px;
+				}
+			}
+
 			&__Complementary {
 				&:empty ~ .PersonCard__headerLeftInfo {
 					flex-basis: 100%;
@@ -654,22 +660,38 @@ a {
 
 			&_header {
 				flex-wrap: wrap;
+
+				.ColoredBox,
+				.PersonCardIcon,
+				.CircledPatient {
+					height: 40px;
+					width: 40px;
+				}
 			}
 
 			&__headerLeftInfo {
 				flex: 1;
+				padding-bottom: $sapphire-sizes--small;
+				padding-top: $sapphire-sizes--small;
 			}
 
 			&__content {
+				border-radius: 0;
 				border-top: 1px solid $light-grey;
 				flex-basis: 100% !important;
-				margin-left: 80px;
+				margin-left: 70px;
+				padding-bottom: $sapphire-sizes--small;
 				padding-left: 0 !important;
+				padding-top: $sapphire-sizes--small;
 			}
 
 			&__actions {
+				background-color: $body-color;
+				border-radius: 0;
 				flex-basis: 100% !important;
 				max-width: none;
+				padding-bottom: $sapphire-sizes--small;
+				padding-top: $sapphire-sizes--small;
 				text-align: right;
 			}
 		}
