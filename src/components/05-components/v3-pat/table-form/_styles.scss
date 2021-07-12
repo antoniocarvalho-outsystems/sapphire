@@ -9,6 +9,10 @@ $table-form-header-height-edit: 43px;
 	padding-bottom: $sapphire-sizes--small;
 	padding-top: $table-form-header-height-edit;
 
+	&--scrollDisabled {
+		overflow: hidden;
+	}
+
 	&__Properties {
 		display: inline-flex;
 		flex-direction: column;
@@ -27,7 +31,7 @@ $table-form-header-height-edit: 43px;
 			}
 		}
 
-		> div,
+		> div:not(.TableForm__Properties),
 		> .ListRecords > div {
 			@include flex-center-vertically(inline-flex);
 
@@ -120,14 +124,21 @@ $table-form-header-height-edit: 43px;
 		border-radius: $border-radius-medium;
 		margin-top: -$table-form-header-height-edit;
 		overflow: hidden;
+		position: relative;
+		z-index: 1;
 
 		.TableFormColumn__Header {
+			border: none;
+			border-radius: $border-radius-medium $border-radius-medium 0 0;
 			min-height: 40px;
 			padding: $sapphire-sizes--small;
 		}
 
+		.TableFormColumn__Fields {
+			border: none;
+		}
+
 		.TableFormColumn__Actions {
-			border-bottom: 1px solid $light-grey;
 			display: block;
 			padding: $sapphire-sizes--small;
 			width: 100%;
