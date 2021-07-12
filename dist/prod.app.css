@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115011 || Generated: Mon Jul 12 2021 12:15:47 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115012 || Generated: Mon Jul 12 2021 13:54:15 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -7281,7 +7281,7 @@ a.LinkReset:link, a.LinkReset:visited {
 .DropZoneContainer .row .AR.Page .IsDefault.Button {
   font-family: "TajawalBold"; }
 
-.CardIcon {
+.CardIcon, .CardIconAlert {
   -webkit-box-align: center;
           align-items: center;
   display: -webkit-box;
@@ -7292,27 +7292,45 @@ a.LinkReset:link, a.LinkReset:visited {
   border-radius: 4px;
   height: 32px;
   width: 32px; }
-  .CardIcon.ColorGreen, .CardIcon.ColorOrange {
+  .CardIcon.ColorGreen, .ColorGreen.CardIconAlert, .CardIcon.ColorOrange, .ColorOrange.CardIconAlert {
     position: relative; }
-    .CardIcon.ColorGreen .icon:last-of-type, .CardIcon.ColorOrange .icon:last-of-type {
+    .CardIcon.ColorGreen .icon:last-of-type, .ColorGreen.CardIconAlert .icon:last-of-type, .CardIcon.ColorOrange .icon:last-of-type, .ColorOrange.CardIconAlert .icon:last-of-type {
       font-size: 1.429em;
       left: 16px;
       position: absolute;
       top: 16px; }
-  .CardIcon.ColorGreen {
+  .CardIcon.ColorGreen, .ColorGreen.CardIconAlert {
     background-color: #e7f2dc;
     color: #578329; }
-    .CardIcon.ColorGreen .icon:last-of-type {
+    .CardIcon.ColorGreen .icon:last-of-type, .ColorGreen.CardIconAlert .icon:last-of-type {
       color: #7cb342; }
-  .CardIcon.ColorOrange {
+  .CardIcon.ColorOrange, .ColorOrange.CardIconAlert {
     background-color: #ffeab5;
     color: #c37b03; }
-    .CardIcon.ColorOrange .icon:last-of-type {
+    .CardIcon.ColorOrange .icon:last-of-type, .ColorOrange.CardIconAlert .icon:last-of-type {
       color: #ffa000; }
-  .CardIcon.ColorTransparent {
+  .CardIcon.ColorTransparent, .ColorTransparent.CardIconAlert {
     background-color: transparent;
     border: 1px solid #d6d6d6;
     color: #adadad; }
+  .CardIconAlert {
+    position: relative; }
+    .CardIconAlert:before {
+      background-color: #ff3e2d;
+      bottom: -2px;
+      -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+              clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      color: #fff;
+      content: '!';
+      display: block;
+      font-size: 11px;
+      height: 15px;
+      line-height: 16px;
+      position: absolute;
+      right: -2px;
+      text-align: center;
+      width: 15px;
+      z-index: 1; }
 
 .Circle {
   border-radius: 10px;
@@ -19496,7 +19514,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     gap: 16px;
     min-height: 70px;
     padding: 16px; }
-    .CardsWrapper__Header .CardIcon, .CardsWrapper__HeaderCustom .CardIcon {
+    .CardsWrapper__Header .CardIcon, .CardsWrapper__Header .CardIconAlert, .CardsWrapper__HeaderCustom .CardIcon, .CardsWrapper__HeaderCustom .CardIconAlert {
       height: 40px;
       width: 40px; }
   .CardsWrapper__HeaderCustom {
@@ -19575,7 +19593,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     max-height: unset; }
   .CardsListGeneric .MainInteractiveCard .MainInteractiveCard-absolute-actions {
     background-color: #fff; }
-  .CardsListGeneric .MainInteractiveCard .CardIcon {
+  .CardsListGeneric .MainInteractiveCard .CardIcon, .CardsListGeneric .MainInteractiveCard .CardIconAlert {
     height: 40px;
     min-width: 40px; }
 
