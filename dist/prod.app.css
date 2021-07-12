@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115010 || Generated: Fri Jul 09 2021 17:07:28 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115011 || Generated: Mon Jul 12 2021 12:15:47 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -11886,6 +11886,9 @@ a.SpecialityButtonForward {
 .ResizeIframeTooltip.NoPadding .MainPopup {
   padding: 0; }
 
+div.tooltipster-content.tooltipster--noPadding {
+  padding: 0; }
+
 html,
 body,
 form,
@@ -21163,6 +21166,10 @@ a .PersonCard {
   a .PersonCard_expandable {
     display: none !important; }
 
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard.IsExpandable .PersonCard__content,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard.IsExpandable .PersonCard__content {
+  margin-left: 54px; }
+
 .tablet .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo,
 .desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo {
   flex-basis: 100%; }
@@ -21175,23 +21182,40 @@ a .PersonCard {
 .tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header,
 .desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header {
   flex-wrap: wrap; }
+  .tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header .ColoredBox,
+  .tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header .PersonCardIcon,
+  .tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header .CircledPatient,
+  .desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header .ColoredBox,
+  .desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header .PersonCardIcon,
+  .desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header .CircledPatient {
+    height: 40px;
+    width: 40px; }
 
 .tablet .PersonCard:not(.LeftSideHidden) .PersonCard__headerLeftInfo,
 .desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__headerLeftInfo {
   -webkit-box-flex: 1;
-          flex: 1; }
+          flex: 1;
+  padding-bottom: 8px;
+  padding-top: 8px; }
 
 .tablet .PersonCard:not(.LeftSideHidden) .PersonCard__content,
 .desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__content {
+  border-radius: 0;
   border-top: 1px solid #d6d6d6;
   flex-basis: 100% !important;
-  margin-left: 80px;
-  padding-left: 0 !important; }
+  margin-left: 70px;
+  padding-bottom: 8px;
+  padding-left: 0 !important;
+  padding-top: 8px; }
 
 .tablet .PersonCard:not(.LeftSideHidden) .PersonCard__actions,
 .desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__actions {
+  background-color: #f3f3f3;
+  border-radius: 0;
   flex-basis: 100% !important;
   max-width: none;
+  padding-bottom: 8px;
+  padding-top: 8px;
   text-align: right; }
 
 .tablet .PersonCard_header .PersonCard__content .MinWidthLarge,
