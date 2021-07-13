@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115013 || Generated: Mon Jul 12 2021 16:06:54 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115014 || Generated: Tue Jul 13 2021 15:43:50 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13084,7 +13084,7 @@ div.ActionsMenu-item {
   .Page .Appointment_Icon.blueCircle {
     border: 2px solid #1ba5ec; }
   .Page .Appointment_Icon.greenCircle {
-    border: 2px solid #e7f2dc; }
+    border: 2px solid #7cb342; }
   .Page .Appointment_Icon.nopresence {
     border: none;
     color: #d6d6d6; }
@@ -15608,7 +15608,7 @@ div.CircledArrow {
       visibility: visible; }
     .DateTimeRangePicker.textTrigger .DateTimeRangePicker-clear {
       line-height: unset; }
-  .DateTimeRangePicker.rangeDates .DateTimeRangePicker-displayed input[type] {
+  .DateTimeRangePicker.rangeDates .DateTimeRangePicker-input input[type] {
     min-width: 218px;
     width: 100%; }
   .DateTimeRangePicker-input {
