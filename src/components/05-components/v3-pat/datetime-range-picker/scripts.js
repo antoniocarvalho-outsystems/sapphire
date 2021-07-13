@@ -25,16 +25,13 @@
 
 		if (this.config.attachToInput) {
 			this.$widget.addClass('attachedInput');
-			this.$input = this.$widget.find('.DateTimeRangePicker-placeholder input[type="text"]');
-			this.$displayed = this.$widget.find('.DateTimeRangePicker-displayed input[type="text"]');
-			if (!this.config.allowsTyping) {
-				this.$displayed.prop('readonly', true);
-			}
-		} else {
-			this.$input = $('#' + config.inputId);
-			if (!this.config.allowsTyping) {
-				this.$input.prop('readonly', true);
-			}
+			this.$model = this.$widget.find('.DateTimeRangePicker-placeholder input[type="text"]');
+		}
+
+		this.$input = $('#' + config.inputId);
+
+		if (!this.config.allowsTyping) {
+			this.$input.prop('readonly', true);
 		}
 
 		if (this.currentLocale === 'AR') {
@@ -57,7 +54,7 @@
 
 		if (config.timePicker) {
 			if (this.config.attachToInput) {
-				this.$displayed.prop('placeholder', 'DD-MM-YYYY HH:MM');
+				//this.$displayed.prop('placeholder', 'DD-MM-YYYY HH:MM');
 			} else {
 				this.$input.prop('placeholder', 'DD-MM-YYYY HH:MM');
 			}
@@ -75,7 +72,7 @@
 		} else {
 			this.$widget.addClass('onlyDate');
 			if (this.config.attachToInput) {
-				this.$displayed.prop('placeholder', 'DD-MM-YYYY');
+				//this.$displayed.prop('placeholder', 'DD-MM-YYYY');
 			} else {
 				this.$input.prop('placeholder', 'DD-MM-YYYY');
 			}
@@ -123,8 +120,19 @@
 			};
 		}
 
+		var _this = this;
+
 		this.$input.daterangepicker(options, function(startDate, endDate, label) {
 			// after a selection is made
+			if (_this.config.attachToInput) {
+				if (_this.config.timePicker) {
+					_this.$model.val(startDate.format('DD-MM-YYYY [00:00:00]'));
+				} else {
+					_this.$model.val(startDate.format('DD-MM-YYYY'));
+				}
+
+				_this.$model.trigger('change');
+			}
 		});
 
 		// now we have a proper instance
@@ -166,17 +174,7 @@
 	};
 
 	DateTimeRangePicker.prototype.handleCustomValidation = function() {
-		var errorMessage = this.$input.next().text();
-		if (!!errorMessage.length) {
-			this.$displayed.addClass('Not_Valid');
-			this.$displayed
-				.next()
-				.show()
-				.text(errorMessage);
-		} else {
-			this.$displayed.removeClass('Not_Valid');
-			this.$displayed.next().hide();
-		}
+		// TO DO
 	};
 
 	DateTimeRangePicker.prototype.nativeEvents = function() {
@@ -295,22 +293,7 @@
 			_this.sendNotification();
 		});
 		if (this.config.attachToInput) {
-			this.$displayed.on('click focus', function() {
-				_this.$input.trigger('click');
-			});
-			this.$displayed.on('keyup', function(evt) {
-				_this.$input.val(_this.$displayed.val()).trigger('keyup');
-			});
-
-			this.$displayed.on('keydown', function(evt) {
-				_this.$input.val(_this.$displayed.val()).trigger('keydown');
-			});
-
-			if (this.config.attachToInput && this.config.allowsTyping) {
-				this.$input.on('keyup', function(evt) {
-					_this.$displayed.val(_this.$input.val());
-				});
-			}
+			// Nothing
 		} else {
 			this.$input.on('click', function() {
 				window.setTimeout(function() {
@@ -348,9 +331,6 @@
 				}
 			} else {
 				this.$input.val(this.picker.startDate.format('DD-MM-YYYY [00:00:00]'));
-				if (this.config.attachToInput) {
-					this.$displayed.val(this.picker.startDate.format(inputMask));
-				}
 			}
 		} else {
 			if (this.config.hasTextTrigger) {
@@ -363,8 +343,6 @@
 			} else {
 				if (this.config.attachToInput) {
 					if (this.config.singleDatePicker) {
-						this.$displayed.val(this.picker.startDate.format(this.config.formatInput));
-
 						if (this.config.timePicker) {
 							this.$input.val(this.picker.startDate.format('DD-MM-YYYY HH:mm:ss'));
 						} else {
@@ -373,8 +351,6 @@
 					} else {
 						let startDate = this.picker.startDate.format(this.config.formatInput);
 						let endDate = this.picker.endDate.format(this.config.formatInput);
-
-						this.$displayed.val(`${startDate}  ·  ${endDate}`);
 
 						if (this.config.timePicker) {
 							startDate = this.picker.startDate.format('DD-MM-YYYY HH:mm:ss');
@@ -443,9 +419,6 @@
 			this.$label.html('-- -- --');
 		} else {
 			this.$input.val('');
-			if (this.config.attachToInput) {
-				this.$displayed.val('');
-			}
 		}
 		if (sendNotification || sendNotification == undefined) {
 			this.sendNotification(false);
