@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115014 || Generated: Tue Jul 13 2021 15:43:50 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115015 || Generated: Wed Jul 14 2021 11:47:39 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -18320,6 +18320,17 @@ div.ui-timepicker-container {
 
 .icon:after {
   content: 'N/A'; }
+
+a:link .IconVertical_label,
+a:link .iconVertical_label,
+a:link .IconHorizontal_label,
+a:link .iconHorizontal_label {
+  font-family: "LatoBold"; }
+  .AR a:link .IconVertical_label, .AR
+  a:link .iconVertical_label, .AR
+  a:link .IconHorizontal_label, .AR
+  a:link .iconHorizontal_label {
+    font-family: "TajawalBold"; }
 
 .AR .IconVertical,
 .FA .IconVertical {
