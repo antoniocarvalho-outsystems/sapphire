@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115018 || Generated: Wed Jul 14 2021 12:53:53 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115019 || Generated: Wed Jul 14 2021 12:55:36 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14605,14 +14605,14 @@ div.CircledArrow {
 .ClinicalBadgeWarning {
   display: block;
   position: relative; }
-  .ClinicalBadgeWarning::before {
+  .ClinicalBadgeWarning::after {
     color: #ff3e2d;
     content: '\e939';
     font-family: "Sapphire-Icon-Font";
     position: absolute;
     right: -3px;
     top: -6px; }
-    .AR .ClinicalBadgeWarning::before {
+    .AR .ClinicalBadgeWarning::after {
       left: -3px;
       right: auto; }
 
