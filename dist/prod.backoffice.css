@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.115015 || Generated: Wed Jul 14 2021 11:47:39 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.115016 || Generated: Wed Jul 14 2021 12:26:45 GMT+0100 (Western European Summer Time) */
 /* Font base: 14px */
 /* Header */
 /* SapphireIcon */
@@ -3547,9 +3547,11 @@ div[onclick] {
       visibility: visible; }
     .DateTimeRangePicker.textTrigger .DateTimeRangePicker-clear {
       line-height: unset; }
-  .DateTimeRangePicker.rangeDates .DateTimeRangePicker-input input[type] {
-    min-width: 218px;
-    width: 100%; }
+  .DateTimeRangePicker.rangeDates {
+    min-width: 218px; }
+    .DateTimeRangePicker.rangeDates .DateTimeRangePicker-input input[type] {
+      min-width: 218px;
+      width: 100%; }
   .DateTimeRangePicker-input {
     position: relative; }
     .DateTimeRangePicker-input input[type='text'] {
