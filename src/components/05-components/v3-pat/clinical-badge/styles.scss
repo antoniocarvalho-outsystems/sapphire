@@ -64,7 +64,7 @@
 	display: block;
 	position: relative;
 
-	&::before {
+	&::after {
 		color: $regular-red;
 		content: '\e939';
 		font-family: $font-family-icons;
