@@ -185,6 +185,19 @@ $IconLabel-color-text: $dark-grey;
 	content: 'N/A';
 }
 
+a:link {
+	.IconVertical_label,
+	.iconVertical_label,
+	.IconHorizontal_label,
+	.iconHorizontal_label {
+		font-family: $font-family-latin-bold;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+}
+
 .AR,
 .FA {
 	.IconVertical {

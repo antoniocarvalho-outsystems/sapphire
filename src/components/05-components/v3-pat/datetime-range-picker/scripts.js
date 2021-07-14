@@ -125,10 +125,21 @@
 		this.$input.daterangepicker(options, function(startDate, endDate, label) {
 			// after a selection is made
 			if (_this.config.attachToInput) {
-				if (_this.config.timePicker) {
-					_this.$model.val(startDate.format('DD-MM-YYYY [00:00:00]'));
+				if (_this.config.singleDatePicker) {
+					if (_this.config.timePicker) _this.$model.val(startDate.format('DD-MM-YYYY [00:00:00]'));
+					else _this.$model.val(startDate.format('DD-MM-YYYY'));
 				} else {
-					_this.$model.val(startDate.format('DD-MM-YYYY'));
+					let start, end;
+
+					if (_this.config.timePicker) {
+						start = startDate.format('DD-MM-YYYY [00:00:00]');
+						end = endDate.format('DD-MM-YYYY [00:00:00]');
+					} else {
+						start = startDate.format('DD-MM-YYYY');
+						end = endDate.format('DD-MM-YYYY');
+					}
+
+					_this.$model.val(`${start}  ·  ${end}`);
 				}
 
 				_this.$model.trigger('change');
