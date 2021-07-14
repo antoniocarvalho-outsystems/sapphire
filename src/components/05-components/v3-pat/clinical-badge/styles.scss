@@ -42,12 +42,40 @@
 		}
 	}
 
+	&.ColorLightBlueBG {
+		border: none;
+		color: $regular-blue;
+
+		&:hover {
+			background-color: darken($light-blue, 5%);
+		}
+	}
+
 	&-label {
 		font-size: $font-size-small;
 	}
 
 	.icon {
 		font-size: $font-size-heading3;
+	}
+}
+
+.ClinicalBadgeWarning {
+	display: block;
+	position: relative;
+
+	&::before {
+		color: $regular-red;
+		content: '\e939';
+		font-family: $font-family-icons;
+		position: absolute;
+		right: -3px;
+		top: -6px;
+
+		.AR & {
+			left: -3px;
+			right: auto;
+		}
 	}
 }
 
