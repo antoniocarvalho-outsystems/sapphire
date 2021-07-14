@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115019 || Generated: Wed Jul 14 2021 12:55:36 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115020 || Generated: Wed Jul 14 2021 17:32:03 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23047,6 +23047,7 @@ div.List-Star {
     border-top-right-radius: 24px;
     color: #00ac94;
     cursor: pointer;
+    gap: 8px;
     padding: 0 16px; }
     .SearchSD.hasClone .SearchSD_search .SearchSD__cloneWrapper:hover {
       background-color: #f2fffd;
@@ -27204,7 +27205,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   width: 100%; }
 
 .VitalSignsTable .TableFormColumn--editMode {
-  margin-top: -23px; }
+  margin-top: -22px; }
   .VitalSignsTable .TableFormColumn--editMode .TableFormColumn__Fields > div,
   .VitalSignsTable .TableFormColumn--editMode .TableFormColumn__Fields > .ListRecords > div {
     overflow: unset;
