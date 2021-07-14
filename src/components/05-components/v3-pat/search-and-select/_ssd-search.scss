@@ -125,6 +125,7 @@ $searchsd-small-size-base: 36px;
 				border-top-right-radius: $searchsd-border-radius;
 				color: $regular-beta;
 				cursor: pointer;
+				gap: $sapphire-sizes--small;
 				padding: 0 $sapphire-sizes--medium;
 
 				&:hover {
