@@ -40,6 +40,8 @@ $date-time-size-base: 40px;
 	}
 
 	&.rangeDates {
+		min-width: 218px;
+
 		.DateTimeRangePicker {
 			&-input {
 				input[type] {
