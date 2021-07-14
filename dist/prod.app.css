@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115017 || Generated: Wed Jul 14 2021 12:31:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115018 || Generated: Wed Jul 14 2021 12:53:53 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -14592,10 +14592,29 @@ div.CircledArrow {
     color: #7cb342; }
     .ClinicalBadge.ColorLightGreenBG:hover {
       background-color: #daebc9; }
+  .ClinicalBadge.ColorLightBlueBG {
+    border: none;
+    color: #1ba5ec; }
+    .ClinicalBadge.ColorLightBlueBG:hover {
+      background-color: #bfe6fa; }
   .ClinicalBadge-label {
     font-size: 0.857em; }
   .ClinicalBadge .icon {
     font-size: 1.286em; }
+
+.ClinicalBadgeWarning {
+  display: block;
+  position: relative; }
+  .ClinicalBadgeWarning::before {
+    color: #ff3e2d;
+    content: '\e939';
+    font-family: "Sapphire-Icon-Font";
+    position: absolute;
+    right: -3px;
+    top: -6px; }
+    .AR .ClinicalBadgeWarning::before {
+      left: -3px;
+      right: auto; }
 
 .PatientHabitsContainer {
   display: -webkit-box;
