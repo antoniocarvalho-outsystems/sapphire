@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115016 || Generated: Wed Jul 14 2021 12:26:45 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115017 || Generated: Wed Jul 14 2021 12:31:23 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -30892,6 +30892,8 @@ ul.os-internal-ui-autocomplete {
     .ClinicalTabsSearch__Dates .DateTimeRangePicker {
       max-width: 130px;
       min-width: 130px; }
+      .ClinicalTabsSearch__Dates .DateTimeRangePicker.rangeDates {
+        min-width: 218px; }
   .ClinicalTabsSearch__Dropdown {
     display: -webkit-box;
     display: flex;
