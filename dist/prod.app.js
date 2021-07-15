@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.115022 || Generated: Thu Jul 15 2021 15:16:54 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.1.115023 || Generated: Thu Jul 15 2021 17:56:37 GMT+0100 (Western European Summer Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -831,7 +831,7 @@ eval("/* Component SSDListLine */\r\nSapphireWidgets.SSDListLine = {\r\n\ttoggle
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component TableForm */\r\n(function($, window, SapphireWidgets) {\r\n\tconst addEmptyLine = config => {\r\n\t\tconst $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields .ListRecords');\r\n\r\n\t\t$list.append('<div class=\"TableFormColumn__EmptyItem\"></div>');\r\n\t};\r\n\r\n\tconst removeEmptyLine = config => {\r\n\t\tconst $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields .ListRecords .TableFormColumn__EmptyItem');\r\n\t\t$list.remove();\r\n\t};\r\n\r\n\tconst onComponentReload = widgetId => {\r\n\t\tconst $table = $(`#${widgetId}`);\r\n\t\tconst $editing = $table.find('.TableFormColumn--editMode');\r\n\r\n\t\tif ($editing.length) {\r\n\t\t\t$table.addClass('TableForm--scrollDisabled');\r\n\t\t} else {\r\n\t\t\t$table.removeClass('TableForm--scrollDisabled');\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.TableForm = { addEmptyLine, onComponentReload, removeEmptyLine };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/table-form/scripts.js?");
+eval("/* Component TableForm */\r\n(function($, window, SapphireWidgets) {\r\n\tconst addEmptyLine = config => {\r\n\t\tconst $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields .ListRecords');\r\n\r\n\t\t$list.append('<div class=\"TableFormColumn__EmptyItem\"></div>');\r\n\t};\r\n\r\n\tconst removeEmptyLine = config => {\r\n\t\tconst $list = $(\r\n\t\t\t'.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields .ListRecords .TableFormColumn__EmptyItem'\r\n\t\t);\r\n\t\t$list.remove();\r\n\t};\r\n\r\n\tconst onComponentReload = widgetId => {\r\n\t\tconst $table = $(`#${widgetId}`);\r\n\t\tconst $editing = $table.find('.TableFormColumn--editMode');\r\n\r\n\t\tif ($editing.length) {\r\n\t\t\t$table.addClass('TableForm--scrollDisabled');\r\n\t\t} else {\r\n\t\t\t$table.removeClass('TableForm--scrollDisabled');\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.TableForm = { addEmptyLine, onComponentReload, removeEmptyLine };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/v3-pat/table-form/scripts.js?");
 
 /***/ }),
 
