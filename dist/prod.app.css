@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115021 || Generated: Thu Jul 15 2021 10:53:13 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115022 || Generated: Thu Jul 15 2021 15:16:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -23545,12 +23545,7 @@ div.List-Star {
   right: unset; }
 
 .SelectSD {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
   background-color: #fff;
-  min-height: 48px;
   width: 100%; }
   .SelectSD .SelectSD--disabled {
     pointer-events: none; }
@@ -23558,6 +23553,12 @@ div.List-Star {
       opacity: 0.5; }
     .SelectSD .SelectSD--disabled .SelectSD__starLink {
       pointer-events: all; }
+  .SelectSD .SelectSD__Header {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    min-height: 48px; }
   .SelectSD.hasFavorite .SelectSD__starLink {
     -webkit-box-align: center;
             align-items: center;
@@ -23631,6 +23632,49 @@ div.List-Star {
     .SelectSD .SelectSD_actionLink:focus .SelectSD__action .icon {
       border: none;
       box-shadow: inset 0px 0px 0px 1px #00ac94, 0px 0px 8px 0px #00ac94; }
+  .SelectSD .SelectSD__ExpandableLink {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 20px;
+    font-family: "LatoBold";
+    font-size: 13px;
+    gap: 8px;
+    height: 30px;
+    padding: 0 16px; }
+    .AR .SelectSD .SelectSD__ExpandableLink {
+      font-family: "TajawalBold"; }
+    .SelectSD .SelectSD__ExpandableLink::after {
+      content: '\e610';
+      display: block;
+      font-family: "Sapphire-Icon-Font";
+      font-size: 0.786em; }
+    .SelectSD .SelectSD__ExpandableLink--expanded {
+      background-color: #ebebeb; }
+      .SelectSD .SelectSD__ExpandableLink--expanded::after {
+        content: '\e611'; }
+  .SelectSD .SelectSD__ExpandableContent {
+    background-color: #f9f9f9;
+    display: none;
+    flex-basis: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
+    .SelectSD .SelectSD__ExpandableContent .SelectSD {
+      background-color: transparent;
+      padding-left: 48px; }
+      .SelectSD .SelectSD__ExpandableContent .SelectSD:hover {
+        background-color: #f2fffd;
+        cursor: pointer; }
+      .AR .SelectSD .SelectSD__ExpandableContent .SelectSD {
+        padding-left: 0;
+        padding-right: 48px; }
+    .SelectSD .SelectSD__ExpandableContent--visible {
+      display: -webkit-box;
+      display: flex; }
   .SelectSD .SelectableList-EmptyMessage {
     background-color: #fff; }
 
@@ -27026,6 +27070,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     position: sticky;
     vertical-align: middle;
     z-index: 1; }
+    .AR .TableForm__Properties {
+      left: unset; }
     .TableForm__Properties > .ListRecords {
       display: contents; }
     .TableForm__Properties > div + .ListRecords > div:first-child {
@@ -27059,8 +27105,13 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
       .TableForm__Properties > .ListRecords > div:last-child {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 8px; }
-    .AR .TableForm__Properties {
-      left: unset; }
+    .TableForm__Properties .PropertiesTitle {
+      white-space: break-spaces;
+      text-transform: uppercase;
+      font-family: "LatoBold";
+      font-family: 0.857em; }
+      .AR .TableForm__Properties .PropertiesTitle {
+        font-family: "TajawalBold"; }
   .TableForm__Columns,
   .TableForm__Columns > span {
     display: -webkit-inline-box;
@@ -27192,14 +27243,6 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 
 .TableFormColumn__EmptyItem {
   background-color: #f9f9f9 !important; }
-
-.TableFormColumn .PropertiesTitle {
-  white-space: break-spaces;
-  text-transform: uppercase;
-  font-family: "LatoBold";
-  font-family: 0.857em; }
-  .AR .TableFormColumn .PropertiesTitle {
-    font-family: "TajawalBold"; }
 
 .TableFormColumn .Button {
   margin: 0; }
