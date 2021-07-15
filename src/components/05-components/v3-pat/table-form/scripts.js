@@ -6,6 +6,11 @@
 		$list.append('<div class="TableFormColumn__EmptyItem"></div>');
 	};
 
+	const removeEmptyLine = config => {
+		const $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields .ListRecords .TableFormColumn__EmptyItem');
+		$list.remove();
+	};
+
 	const onComponentReload = widgetId => {
 		const $table = $(`#${widgetId}`);
 		const $editing = $table.find('.TableFormColumn--editMode');
@@ -17,5 +22,5 @@
 		}
 	};
 
-	SapphireWidgets.TableForm = { addEmptyLine, onComponentReload };
+	SapphireWidgets.TableForm = { addEmptyLine, onComponentReload, removeEmptyLine };
 })(jQuery, window, SapphireWidgets);

@@ -227,12 +227,32 @@ $table-form-header-height-edit: 43px;
 		background-color: $white-grey !important;
 	}
 
+	.PropertiesTitle {
+		white-space: break-spaces;
+		text-transform: uppercase;
+		font-family: $font-family-latin-bold;
+		font-family: $font-size-small;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
 	.Button {
 		margin: 0;
 	}
 
 	input {
 		padding: 0 $sapphire-sizes--small;
+	}
+
+	.InputUnitWrapper {
+		width: 100%;
+		display: flex;
+
+		.InputUnitWrapper_input {
+			flex: 1;
+		}
 	}
 
 	input,
