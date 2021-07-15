@@ -7,7 +7,9 @@
 	};
 
 	const removeEmptyLine = config => {
-		const $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields .ListRecords .TableFormColumn__EmptyItem');
+		const $list = $(
+			'.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields .ListRecords .TableFormColumn__EmptyItem'
+		);
 		$list.remove();
 	};
 

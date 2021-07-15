@@ -46,7 +46,7 @@ $table-form-header-height-edit: 43px;
 			height: $sapphire-sizes--xxlarge;
 			padding: 0 $sapphire-sizes--medium;
 			white-space: nowrap;
-			width: 223px;
+			width: 230px;
 
 			&:first-child {
 				border-top-left-radius: $border-radius-medium;
@@ -71,17 +71,15 @@ $table-form-header-height-edit: 43px;
 		}
 
 		.PropertiesTitle {
-			white-space: break-spaces;
-			text-transform: uppercase;
 			font-family: $font-family-latin-bold;
 			font-family: $font-size-small;
-	
+			text-transform: uppercase;
+			white-space: break-spaces;
+
 			.AR & {
 				font-family: $font-family-arabic-bold;
 			}
 		}
-
-		
 	}
 
 	&__Columns {
@@ -240,8 +238,6 @@ $table-form-header-height-edit: 43px;
 		background-color: $white-grey !important;
 	}
 
-	
-
 	.Button {
 		margin: 0;
 	}
@@ -251,8 +247,8 @@ $table-form-header-height-edit: 43px;
 	}
 
 	.InputUnitWrapper {
-		width: 100%;
 		display: flex;
+		width: 100%;
 
 		.InputUnitWrapper_input {
 			flex: 1;
