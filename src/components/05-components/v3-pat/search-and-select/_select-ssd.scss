@@ -1,8 +1,5 @@
 .SelectSD {
-	@include flex-center-vertically;
-
 	background-color: $regular-white;
-	min-height: 48px;
 	width: 100%;
 
 	.SelectSD--disabled {
@@ -15,6 +12,12 @@
 		.SelectSD__starLink {
 			pointer-events: all;
 		}
+	}
+
+	.SelectSD__Header {
+		@include flex-center-vertically;
+
+		min-height: 48px;
 	}
 
 	&.hasFavorite {
@@ -146,6 +149,64 @@
 					box-shadow: inset 0px 0px 0px 1px $regular-beta, 0px 0px 8px 0px $regular-beta;
 				}
 			}
+		}
+	}
+
+	.SelectSD__ExpandableLink {
+		@include flex-center-vertically();
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 20px;
+		font-family: $font-family-latin-bold;
+		font-size: 13px;
+		gap: $sapphire-sizes--small;
+		height: 30px;
+		padding: 0 $sapphire-sizes--medium;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+
+		&::after {
+			content: '\e610';
+			display: block;
+			font-family: $font-family-icons;
+			font-size: $font-size-tiny;
+		}
+
+		&--expanded {
+			background-color: $sapphire-light;
+
+			&::after {
+				content: '\e611';
+			}
+		}
+	}
+
+	.SelectSD__ExpandableContent {
+		background-color: $white-grey;
+		display: none;
+		flex-basis: 100%;
+		flex-direction: column;
+
+		.SelectSD {
+			background-color: transparent;
+			padding-left: $sapphire-sizes--xxlarge;
+
+			&:hover {
+				background-color: $regular-eta;
+				cursor: pointer;
+			}
+
+			.AR & {
+				padding-left: 0;
+				padding-right: $sapphire-sizes--xxlarge;
+			}
+		}
+
+		&--visible {
+			display: flex;
 		}
 	}
 

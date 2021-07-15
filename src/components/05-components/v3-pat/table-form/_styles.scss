@@ -21,6 +21,10 @@ $table-form-header-height-edit: 43px;
 		vertical-align: middle;
 		z-index: 1;
 
+		.AR & {
+			left: unset;
+		}
+
 		> .ListRecords {
 			display: contents;
 		}
@@ -66,9 +70,18 @@ $table-form-header-height-edit: 43px;
 			}
 		}
 
-		.AR & {
-			left: unset;
+		.PropertiesTitle {
+			white-space: break-spaces;
+			text-transform: uppercase;
+			font-family: $font-family-latin-bold;
+			font-family: $font-size-small;
+	
+			.AR & {
+				font-family: $font-family-arabic-bold;
+			}
 		}
+
+		
 	}
 
 	&__Columns {
@@ -227,16 +240,7 @@ $table-form-header-height-edit: 43px;
 		background-color: $white-grey !important;
 	}
 
-	.PropertiesTitle {
-		white-space: break-spaces;
-		text-transform: uppercase;
-		font-family: $font-family-latin-bold;
-		font-family: $font-size-small;
-
-		.AR & {
-			font-family: $font-family-arabic-bold;
-		}
-	}
+	
 
 	.Button {
 		margin: 0;
