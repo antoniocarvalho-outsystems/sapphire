@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.115023 || Generated: Thu Jul 15 2021 17:56:37 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.115024 || Generated: Fri Jul 16 2021 17:28:49 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* Font base: 14px */
 /* Header */
@@ -13061,6 +13061,12 @@ div.ActionsMenu-item {
     margin-bottom: none;
     padding-bottom: none; }
 
+.ListBorder > * {
+  min-width: 250px;
+  padding: 16px 0; }
+  .ListBorder > *:not(:last-of-type) {
+    border-bottom: 1px solid #d6d6d6; }
+
 .tooltipster-content > section > .ActionsMenu-tooltip {
   display: block; }
 
@@ -22575,15 +22581,7 @@ div.List-Star {
   margin-right: 9px; }
 
 .ButtonGroupScale {
-  border-right: 1px solid #d6d6d6;
   padding: 12px 20px; }
-  .ButtonGroupScale:first-child {
-    border-left: 1px solid #d6d6d6; }
-
-.AR .ButtonGroupScale:first-child,
-.FA .ButtonGroupScale:first-child {
-  border-left: 0;
-  border-left: 1px solid #d6d6d6; }
 
 .RulerScale {
   display: inline-block;
@@ -22765,9 +22763,10 @@ div.List-Star {
 
 .ScaleList {
   background: none;
+  border-bottom: 1px solid #d6d6d6;
   display: -webkit-box;
   display: flex;
-  padding-left: 15px;
+  padding-left: 16px;
   width: 100%; }
   .ScaleList::only-of-type {
     background: none; }
@@ -22779,14 +22778,16 @@ div.List-Star {
             flex-direction: row;
     -webkit-box-pack: end;
             justify-content: flex-end; }
-  .ScaleList.PrimaryBackground {
-    background: #f2fffd; }
   .ScaleList.SecondaryBackground {
     background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(29%, #fff), color-stop(30%, #f2fffd), color-stop(70%, #f2fffd), color-stop(71%, #fff), to(#fff));
     background: linear-gradient(to top, #fff 0%, #fff 29%, #f2fffd 30%, #f2fffd 70%, #fff 71%, #fff 100%); }
+  .ScaleList.Ruler {
+    border-bottom: none; }
   .ScaleList.MultipleScale.SecondaryBackground {
     background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(11%, #fff), color-stop(3%, #f2fffd), color-stop(85%, #f2fffd), color-stop(90%, #fff), to(#fff));
     background: linear-gradient(to top, #fff 0%, #fff 11%, #f2fffd 3%, #f2fffd 85%, #fff 90%, #fff 100%); }
+  .ScaleList.MultipleScale.isTitle, .ScaleList.MultipleScale.Ruler {
+    border-bottom: none; }
   .ScaleList.MultipleScale.isTitle .ButtonGroupScale {
     color: #333333;
     font-family: "LatoBold";
@@ -22838,6 +22839,9 @@ div.List-Star {
   .ScaleList_inputValue {
     display: none; }
 
+.ScaleMainStructure_content .ListRecords > .ScaleList:last-of-type {
+  border-bottom: none; }
+
 .ScaleMainStructure {
   display: -webkit-box;
   display: flex;
@@ -22845,25 +22849,17 @@ div.List-Star {
   -webkit-box-direction: normal;
           flex-direction: column;
   height: 100%;
-  padding-bottom: 20px;
   padding-right: 10px; }
-  .ScaleMainStructure_totalScore {
-    display: inline-block;
-    line-height: 1.4;
-    margin-left: 5px; }
   .ScaleMainStructure_hiddingLink {
     display: none; }
-  .ScaleMainStructure_options {
-    margin-bottom: 20px;
-    text-align: center; }
-    .ScaleMainStructure_options .ToggleItemControl {
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
-      width: fit-content; }
-      .ScaleMainStructure_options .ToggleItemControl.disabled {
-        pointer-events: none; }
-      .ScaleMainStructure_options .ToggleItemControl:last-child {
-        margin-right: 0px; }
+  .ScaleMainStructure_options .ToggleItemControl {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+    .ScaleMainStructure_options .ToggleItemControl.disabled {
+      pointer-events: none; }
+    .ScaleMainStructure_options .ToggleItemControl:last-child {
+      margin-right: 0px; }
   .ScaleMainStructure_menu:empty + .ScaleMainStructure_options:empty {
     margin-bottom: 0; }
   .ScaleMainStructure_content {
@@ -22892,8 +22888,21 @@ div.List-Star {
     padding-top: 10px;
     position: relative;
     width: 100%; }
-  .ScaleMainStructure_footerResult span.TotalLabel.Heading2, .ScaleMainStructure_footerResult .LayoutPopup__header span.TotalLabel.LayoutPopup__header__text__title, .LayoutPopup__header .ScaleMainStructure_footerResult span.TotalLabel.LayoutPopup__header__text__title, .ScaleMainStructure_footerResult .modalPopup.Open span.TotalLabel.modalPopup_title, .modalPopup.Open .ScaleMainStructure_footerResult span.TotalLabel.modalPopup_title {
-    display: inline-block; }
+  .ScaleMainStructure_footerResult {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    min-width: 200px;
+    padding: 16px; }
+    .ScaleMainStructure_footerResult .TotalLabel {
+      font-family: "LatoBold";
+      font-size: 1.714em; }
+    .ScaleMainStructure_footerResult .ScaleMainStructure_totalScore {
+      font-family: "LatoBold"; }
 
 .ToggleItemControl {
   cursor: pointer;
@@ -27107,7 +27116,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
         border-bottom-right-radius: 8px; }
     .TableForm__Properties .PropertiesTitle {
       font-family: "LatoBold";
-      font-family: 0.857em;
+      font-size: 0.857em;
       text-transform: uppercase;
       white-space: break-spaces; }
       .AR .TableForm__Properties .PropertiesTitle {
@@ -27177,6 +27186,10 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 .TableFormColumn--disabled .TableFormColumn__Fields > div {
   background-color: #f3f3f3;
   pointer-events: none; }
+
+.TableFormColumn--greyBackground:not(.TableFormColumn--editMode) .TableFormColumn__Fields > div,
+.TableFormColumn--greyBackground:not(.TableFormColumn--editMode) .TableFormColumn__Fields > .ListRecords > div {
+  background-color: #f9f9f9; }
 
 .TableFormColumn__TextTag {
   color: #777777;
