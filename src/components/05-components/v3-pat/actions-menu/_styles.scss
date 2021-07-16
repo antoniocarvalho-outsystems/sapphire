@@ -141,6 +141,17 @@ div.ActionsMenu {
 	}
 }
 
+.ListBorder {
+	> * {
+		min-width: 250px;
+		padding: $sapphire-sizes--medium 0;
+
+		&:not(:last-of-type) {
+			border-bottom: 1px solid $light-grey;
+		}
+	}
+}
+
 .tooltipster-content > section > .ActionsMenu-tooltip {
 	display: block;
 }

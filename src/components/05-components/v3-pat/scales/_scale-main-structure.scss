@@ -2,23 +2,13 @@
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	padding-bottom: 20px;
 	padding-right: 10px;
-
-	&_totalScore {
-		display: inline-block;
-		line-height: 1.4;
-		margin-left: 5px;
-	}
 
 	&_hiddingLink {
 		display: none;
 	}
 
 	&_options {
-		margin-bottom: 20px;
-		text-align: center;
-
 		.ToggleItemControl {
 			width: fit-content;
 
@@ -61,8 +51,20 @@
 	}
 
 	&_footerResult {
-		span.TotalLabel.Heading2 {
-			display: inline-block;
+		background-color: $body-color;
+		border-radius: $border-radius-medium;
+		display: flex;
+		flex-direction: column;
+		min-width: 200px;
+		padding: $sapphire-sizes--medium;
+
+		.TotalLabel {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-heading1;
+		}
+
+		.ScaleMainStructure_totalScore {
+			font-family: $font-family-latin-bold;
 		}
 	}
 }

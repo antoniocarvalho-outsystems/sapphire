@@ -1,16 +1,19 @@
 /* Component TableForm */
 (function($, window, SapphireWidgets) {
 	const addEmptyLine = config => {
-		const $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields .ListRecords');
+		const $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields > .ListRecords');
 
 		$list.append('<div class="TableFormColumn__EmptyItem"></div>');
 	};
 
 	const removeEmptyLine = config => {
-		const $list = $(
-			'.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields .ListRecords .TableFormColumn__EmptyItem'
-		);
-		$list.remove();
+		const $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields > .ListRecords');
+
+		$list.each(function(index) {
+			$(this)
+				.find('> .TableFormColumn__EmptyItem:first')
+				.remove();
+		});
 	};
 
 	const onComponentReload = widgetId => {

@@ -72,7 +72,7 @@ $table-form-header-height-edit: 43px;
 
 		.PropertiesTitle {
 			font-family: $font-family-latin-bold;
-			font-family: $font-size-small;
+			font-size: $font-size-small;
 			text-transform: uppercase;
 			white-space: break-spaces;
 
@@ -165,6 +165,15 @@ $table-form-header-height-edit: 43px;
 		.TableFormColumn__Fields > div {
 			background-color: $body-color;
 			pointer-events: none;
+		}
+	}
+
+	&--greyBackground {
+		&:not(.TableFormColumn--editMode) {
+			.TableFormColumn__Fields > div,
+			.TableFormColumn__Fields > .ListRecords > div {
+				background-color: $white-grey;
+			}
 		}
 	}
 

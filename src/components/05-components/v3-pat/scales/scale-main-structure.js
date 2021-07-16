@@ -145,9 +145,10 @@
 				}
 				if (!isNaN(totalMultipleScale) && !isNaN(totalCardScale) && !isNaN(totalRulerScale)) {
 					var totalAbsoluteScore = totalCardScale + totalMultipleScale + totalRulerScale;
-					var totalAbsoluteLabel = totalAbsoluteScore > 11 ? ' (High)' : ' (Low)';
+					var totalAbsoluteLabel = totalAbsoluteScore > 11 ? ' High' : ' Low';
 
-					$('.ScaleMainStructure_totalScore.Heading2').text(totalAbsoluteScore + totalAbsoluteLabel);
+					$('.ScaleMainStructure_totalScore').text(totalAbsoluteLabel);
+					$('.ScaleMainStructure_footerResult  .TotalLabel').text(totalAbsoluteScore);
 
 					if ($('.ScaleMainStructure_hiddingLink a').length > 0) {
 						$('.ScaleMainStructure_hiddingLink a').click();
@@ -229,7 +230,7 @@
 
 		if ($('.ScaleMainStructure_options .ToggleItemControl').length > 0) {
 			$('.ScaleMainStructure_options .ToggleItemControl').click(function() {
-				$('.ScaleMainStructure_totalScore.Heading2').text('');
+				$('.ScaleMainStructure_totalScore').text('');
 			});
 		}
 	};
@@ -238,7 +239,7 @@
 		$('.ScaleMainStructure_content').css('visibility', 'hidden');
 		$('.ScaleMainStructure_options .ToggleItemControl').addClass('disabled');
 		setTimeout(function() {
-			$('.ScaleMainStructure_totalScore.Heading2').text('');
+			$('.ScaleMainStructure_totalScore').text('');
 			setupScale();
 		}, 600);
 		setTimeout(function() {
